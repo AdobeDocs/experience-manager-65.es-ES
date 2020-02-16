@@ -1,0 +1,143 @@
+---
+title: Operaciones de desarrollo empresarial
+seo-title: Operaciones de desarrollo empresarial
+description: Obtenga información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y simplificar la colaboración.
+seo-description: Obtenga información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y simplificar la colaboración.
+uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
+contentOwner: msm-service
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+topic-tags: managing
+content-type: reference
+discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# Operaciones de desarrollo empresarial{#enterprise-devops}
+
+DevOps abarca los procesos, métodos y comunicaciones necesarios para:
+
+* Facilite la implementación de su software en los distintos entornos.
+* Simplifique la colaboración entre los equipos de desarrollo, prueba e implementación.
+
+DevOps tiene como objetivo evitar problemas como:
+
+* Errores manuales.
+* Elementos olvidados; por ejemplo, archivos, detalles de configuración.
+* Discrepancias; por ejemplo, entre el entorno local de un desarrollador y otros entornos.
+
+## Entornos {#environments}
+
+Una implementación de Adobe Experience Manager (AEM) suele consistir en varios entornos, que se utilizan para diferentes propósitos en diferentes niveles:
+
+* [Desarrollo](#development)
+* [Garantía de calidad](#quality-assurance)
+* [Ensayo](#staging)
+* [Producción](#production-author-and-publish)
+
+>[!NOTE]
+>
+>El entorno de producción debe tener al menos un autor y un entorno de publicación.
+>
+>Se recomienda que todos los demás entornos también consten de un entorno de creación y publicación para reflejar el entorno de producción y permitir las pruebas tempranas.
+
+### Desarrollo {#development}
+
+Los desarrolladores son responsables de desarrollar y personalizar el proyecto propuesto (ya sea sitio web, aplicaciones móviles, implementación de DAM, etc.), con toda la funcionalidad requerida. Estos procedimientos:
+
+* desarrollar y personalizar los elementos necesarios; por ejemplo, plantillas, componentes, flujos de trabajo, aplicaciones
+* realizar el diseño
+* desarrollar los servicios y secuencias de comandos necesarios para implementar la funcionalidad requerida
+
+La configuración del entorno de [desarrollo](/help/sites-developing/best-practices.md) puede depender de varios factores, aunque suele estar compuesta de:
+
+* Un sistema de desarrollo integrado con control de versiones para proporcionar una base de código integrada. Se utiliza para combinar y consolidar código de los entornos de desarrollo individuales utilizados por cada desarrollador.
+* Un entorno personal para cada desarrollador; normalmente residen en su equipo local. A intervalos adecuados, el código se sincroniza con el sistema de control de versiones
+
+Según la escala del sistema, el entorno de desarrollo puede tener instancias de creación y publicación.
+
+### Garantía de calidad {#quality-assurance}
+
+Este entorno es utilizado por el equipo de control de calidad para [probar](/help/sites-developing/test-plan.md) de forma exhaustiva su nuevo sistema; diseño y función. Debe tener entornos de creación y publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto completo de pruebas.
+
+### Ensayo {#staging}
+
+El entorno de ensayo debe ser un reflejo del entorno de producción: configuración, código y contenido:
+
+* Se utiliza para probar las secuencias de comandos utilizadas para implementar la implementación real.
+* Puede utilizarse para pruebas finales (diseño, funcionalidad e interfaces) antes de implementarse en los entornos de producción.
+* Aunque no siempre es posible que el entorno de ensayo sea idéntico al entorno de producción, debería ser lo más parecido posible para permitir las pruebas de carga y rendimiento.
+
+### Producción: creación y publicación {#production-author-and-publish}
+
+El entorno de producción consiste en los entornos necesarios para [crear y publicar](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) realmente la implementación.
+
+Un entorno de producción consta de al menos una instancia de autor y una instancia de publicación:
+
+* Instancia de [creación](#author) para la entrada de contenido.
+* Una instancia de [publicación](#publish) para el contenido disponible para los visitantes y usuarios.
+
+Según la escala del proyecto, a menudo consta de varias instancias de autor y/o publicación. En un nivel inferior, el repositorio también se puede agrupar en varios casos.
+
+#### Creación {#author}
+
+Las instancias de autor generalmente se encuentran detrás del servidor de seguridad interno. Este es el entorno en el que usted y sus colegas realizarán tareas de creación como:
+
+* administrar todo el sistema
+* introducir el contenido
+* configurar el diseño y el diseño del contenido
+* activar el contenido en el entorno de publicación
+
+El contenido que se activó se empaqueta y se coloca en la cola de replicación del entorno de creación. A continuación, el proceso de replicación transporta ese contenido al entorno de publicación.
+
+Para volver a replicar datos generados en un entorno de publicación en el entorno de creación, un detector de replicación en el entorno de creación sondeará el entorno de publicación y recuperará dicho contenido del entorno de publicación como salida de replicación inversa.
+
+#### Publicación {#publish}
+
+Un entorno de publicación se encuentra generalmente en la zona desmilitarizada (DMZ). Es el entorno en el que los visitantes accederán al contenido (por ejemplo, a través de un sitio web o en forma de aplicación móvil) e interactuarán con él; ya sea pública o dentro de la intranet. Un entorno de publicación:
+
+* contiene el contenido replicado desde el entorno de creación
+* pone ese contenido a disposición de los visitantes
+* almacena datos de usuario generados por los visitantes, como comentarios u otros envíos de formularios
+* puede configurarse para agregar esos datos de usuario a una bandeja de salida, para la replicación inversa en el entorno de creación
+
+El entorno de publicación genera el contenido dinámicamente en tiempo real y el contenido se puede personalizar para cada usuario individual.
+
+## Movimiento de código {#code-movement}
+
+El código siempre debe propagarse de abajo a arriba:
+
+* el código se desarrolla inicialmente en entornos de desarrollo locales y luego integrados
+* seguido de pruebas exhaustivas en los entornos de control de calidad
+* luego se probó nuevamente en los entornos de ensayo
+* sólo entonces debe implementarse el código en los entornos de producción
+
+El código (por ejemplo, las plantillas de diseño y la funcionalidad personalizada de la aplicación Web) se transfiere generalmente mediante la exportación e importación de paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
+
+Los proyectos de AEM suelen activar la implementación de código:
+
+* Automáticamente: para su transferencia a los entornos de desarrollo y control de calidad.
+* Manualmente: las implementaciones en los entornos de ensayo y producción se realizan de manera más controlada, a menudo de forma manual; aunque la automatización es posible si es necesario.
+
+![chlimage_1](assets/chlimage_1.png)
+
+## Movimiento de contenido {#content-movement}
+
+El contenido que se esté creando para la producción **siempre** se debe crear en la instancia de creación de producción.
+
+El contenido no debe seguir el movimiento del código de los entornos más bajos a los más altos, ya que hacer que los autores creen contenido en máquinas locales o entornos más bajos y luego moverlo al entorno de producción no es una buena práctica y es probable que introduzca errores e incoherencias.
+
+El contenido de producción debe trasladarse del entorno de producción al entorno de ensayo para garantizar que el entorno de ensayo proporcione un entorno de prueba eficaz y preciso.
+
+>[!NOTE]
+>
+>Esto no significa que el contenido de ensayo tenga que sincronizarse continuamente con la producción; las actualizaciones regulares son suficientes, pero especialmente antes de probar una nueva iteración de código. El contenido en los entornos de control de calidad y desarrollo no necesita actualizarse con tanta frecuencia, solo debe ser una buena representación del contenido de producción.
+
+El contenido se puede transferir:
+
+* Entre los distintos entornos: mediante la exportación e importación de paquetes.
+* Entre diferentes instancias: replicando directamente (replicación[de](/help/sites-deploying/replication.md)AEM) el contenido (mediante una conexión HTTP o HTTPS).
+
+![chlimage_1-1](assets/chlimage_1-1.png)
