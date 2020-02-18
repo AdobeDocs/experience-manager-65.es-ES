@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 9532c1fb8af37b29285007bc72e86d42d5eb9c4d
+source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
 
 ---
 
@@ -27,7 +27,7 @@ Se puede crear un componente de recuento personalizado ampliando la clase de rec
 
 [La clasificación](rating-basics.md) es una implementación del recuento que utiliza un sistema de estrellas para expresar una gama de opiniones desde positivas a negativas.
 
-A partir de AEM 6.1, el componente de [encuesta](poll-basics.md) ya no está disponible.
+A partir de AEM 6.1, el componente de encuesta ya no está disponible.
 
 [Revistas](reviews-basics.md) es un componente SCF que es un híbrido de [comentarios](essentials-comments.md) y [clasificación](rating-basics.md).
 
