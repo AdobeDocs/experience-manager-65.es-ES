@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0b8e1605f6d8f6cc04a4173731351df002a67d
+source-git-commit: 37d0225f69800225e82f253ad9dbab8b2b30ac5e
 
 ---
 
@@ -51,7 +51,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 ### Lista de cambios {#list-of-changes}
 
-#### Recursos {#assets-6530-enhancements}
+#### Assets {#assets-6530-enhancements}
 
 **Mejoras del producto**
 
@@ -163,7 +163,9 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Se muestra una excepción en AEM mientras se sondea para obtener los detalles del trabajo de un recurso (CQ-4283569).
 
-#### Sitios {#sites}
+* Vulnerabilidad XSS en DAM (NPR-31654).
+
+#### Sites {#sites}
 
 * Si la herencia de LiveCopy está dañada, las páginas de Live Copy muestran vínculos de copia de idioma en lugar de vínculos de LiveCopy (NPR-30980).
 * Para un nuevo modelo, si el número de registros es superior a 40, solo se muestran los primeros 40 registros. El modelo muestra líneas en blanco para el resto de los registros (NPR-31182).
@@ -175,6 +177,9 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * La API ResponsiveGridExporter no devuelve la interfaz com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter. El paquete com.day.cq.wcm.foundation.model.impl se declara como paquete privado (NPR-31398).
 * Cuando se abre una página que contiene algunos fragmentos de experiencia en modo que no es de editor (ya sea en Autor sin el `editor.html` prefijo y `wcmmode=disabled`o en Editor), la solicitud termina en el código de error de estado HTTP 500 (NPR-30743).
 * Los usuarios no pueden cambiar su contraseña ni acceder a su página de perfil (NPR-31161).
+* En el servidor se genera un archivo JavaScript con datos de usuario (NPR-30822).
+* La interfaz de usuario de creación de AEM permite la suplantación de identidad con contenido externo (NPR-29745).
+* Vulnerabilidad de inyección de lenguaje de expresión en el editor de metadatos de AEM 6.5 (NPR-31017).
 
 #### Búsqueda e interfaz de usuario {#search-ui-interface}
 
