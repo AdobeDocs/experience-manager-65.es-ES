@@ -185,7 +185,7 @@ Si hay un modelo de flujo de trabajo en la IU clásica, pero falta en el menú e
 
 1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. Seleccione **[!UICONTROL Solicitud de activación]** y, a continuación, seleccione **[!UICONTROL Editar]**.
 
-1. Seleccione **[!UICONTROL Editar]**, abra el menú Información **[!UICONTROL de]** página y, desde allí, seleccione **[UICONTROL Abrir propiedades]** y vaya a la ficha **[!UICONTROL Básico]** (si no está abierta).
+1. Seleccione **[!UICONTROL Editar]**, abra el menú Información **[!UICONTROL de]** página y, desde allí, seleccione **[!UICONTROL Abrir propiedades]** y vaya a la ficha **[!UICONTROL Básico]** (si no está abierto).
 
 1. Agregar `Workflow : DAM` al campo **[!UICONTROL Etiquetas]** . Confirme la selección con la marca de verificación (visto).
 
