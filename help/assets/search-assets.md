@@ -2,12 +2,9 @@
 title: Buscar recursos e imágenes digitales en AEM
 description: Obtenga información sobre cómo encontrar los recursos necesarios en AEM mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
-docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
+source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
 
 ---
 
@@ -62,11 +59,15 @@ Puede descubrir los recursos deseados más rápido desde la página de resultado
 
 Puede ejecutar búsquedas de palabras clave desde el campo OmniSearch. La búsqueda de palabras clave no distingue entre mayúsculas y minúsculas y es una búsqueda de texto completo (en todos los campos de metadatos populares). Si se busca más de una palabra clave, el operador predeterminado entre las palabras clave es `AND` para la búsqueda predeterminada y es `OR` cuando los recursos están etiquetados de forma inteligente.
 
-Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas. Para varias palabras clave, los resultados más relevantes son los recursos que contienen ambos términos en sus metadatos. Dentro de los metadatos, las palabras clave que aparecen como etiquetas inteligentes se clasifican más que las palabras clave que aparecen en otros campos de metadatos. AEM permite asignar una ponderación mayor a un término de búsqueda concreto. Además, es posible [aumentar la clasificación](#searchrank) de unos pocos recursos objetivo para términos de búsqueda específicos.
+Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas. Para varias palabras clave, los resultados más relevantes son los recursos que contienen ambos términos en sus metadatos. Dentro de los metadatos, las palabras clave que aparecen como etiquetas inteligentes se clasifican más que las palabras clave que aparecen en otros campos de metadatos. AEM permite dar mayor peso a un término de búsqueda concreto. Además, es posible [aumentar la clasificación](#searchrank) de unos pocos recursos objetivo para términos de búsqueda específicos.
 
-Para encontrar rápidamente los recursos relevantes, la interfaz enriquecida proporciona mecanismos de filtrado, clasificación y selección. Puede filtrar los resultados en función de varios criterios y ver el número de recursos buscados para varios filtros. De lo contrario, puede volver a ejecutar la búsqueda cambiando la consulta en el campo Omniture Search. Al cambiar los términos o filtros de búsqueda, los demás filtros permanecen aplicados para preservar el contexto de la búsqueda. Cuando los resultados son superiores a 1000, AEM no muestra todos los recursos buscados y muestra más de 1000 como el número de recursos buscados. Esto sirve para mejorar el rendimiento de la búsqueda. A medida que se desplaza para ver más recursos, más allá de 1000, el número aumenta gradualmente en los pasos de 200.
+Para encontrar rápidamente los recursos relevantes, la interfaz enriquecida proporciona mecanismos de filtrado, clasificación y selección. Puede filtrar los resultados en función de varios criterios y ver el número de recursos buscados para varios filtros. De lo contrario, puede volver a ejecutar la búsqueda cambiando la consulta en el campo Omniture Search. Al cambiar los términos o filtros de búsqueda, los demás filtros permanecen aplicados para preservar el contexto de la búsqueda.
 
-A veces, puede ver algunos recursos inesperados en los resultados de búsqueda. Para obtener más información, consulte Resultados [inesperados](#unexpectedresults).
+Cuando los resultados son muchos recursos, AEM muestra los primeros 100 en la vista de tarjeta y los 200 en la vista de lista. A medida que los usuarios se desplazan, se cargan más recursos. Esto sirve para mejorar el rendimiento.
+
+>[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+
+A veces, puede ver algunos recursos inesperados en los resultados de búsqueda. Para obtener más información, consulte Resultados [inesperados](#troubleshoot-unexpected-search-results-and-issues).
 
 AEM puede buscar muchos formatos de archivo y los filtros de búsqueda se pueden personalizar para adaptarlos a sus necesidades comerciales. Póngase en contacto con el administrador para saber qué opciones de búsqueda están disponibles para el repositorio de DAM y qué restricciones tiene su cuenta.
 
@@ -243,7 +244,7 @@ Puede pasar los siguientes parámetros de solicitud en una URL para iniciar el s
 | assettype (S) | imágenes, documentos, multimedia, archivos | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Utilice esta opción para filtrar los tipos de recursos en función del valor pasado. |
 | raíz | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Utilice esta opción para especificar la carpeta raíz del selector de recursos. En este caso, el selector de recursos permite seleccionar solo recursos secundarios (directos/indirectos) en la carpeta raíz. |
 
-Para acceder a la interfaz del selector de recursos, vaya a `https://[AEM server]:[port]/aem/assetpicker`. Vaya a la carpeta que desee y seleccione uno o varios recursos. También puede buscar el recurso deseado en el cuadro Omniture, aplicar el filtro según sea necesario y luego seleccionarlo.
+Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server]:[port]/aem/assetpicker`. Vaya a la carpeta que desee y seleccione uno o varios recursos. También puede buscar el recurso deseado en el cuadro Omniture, aplicar el filtro según sea necesario y luego seleccionarlo.
 
 ![Examinar y seleccionar recursos en el selector de recursos](assets/assetpicker.png)
 
@@ -258,7 +259,7 @@ La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
 * AEM puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso de los resultados de búsqueda y, a continuación, cancelar la búsqueda. <!-- (CQ-4273540) -->
 * Al buscar carpetas o archivos y carpetas, los resultados de la búsqueda no se pueden ordenar según ningún parámetro.
 * Si presiona return sin escribir nada en la barra de Omniture, AEM devuelve una lista de sólo archivos y no carpetas. Si busca carpetas de forma específica sin utilizar una palabra clave, AEM no devuelve ningún resultado.
-* Con la casilla de verificación [!UICONTROL Seleccionar todo] , solo puede seleccionar los primeros 100 recursos buscados en la vista de tarjeta y los primeros 200 recursos buscados en la vista de lista.
+* Con la casilla de verificación [!UICONTROL Seleccionar todo] , solo puede seleccionar los primeros 100 recursos buscados en la vista de tarjeta y los primeros 200 recursos buscados en la vista de lista. Si desplaza y carga más recursos en la interfaz de usuario, puede seleccionar más mediante la opción [!UICONTROL Seleccionar todo] .
 
 La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitaciones:
 
@@ -454,10 +455,10 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 | Resultados de búsqueda no relacionados o parcialmente relacionados | El comportamiento de búsqueda cambia con el etiquetado inteligente. | Comprender [cómo cambia la búsqueda después del etiquetado](#withsmarttags)inteligente. |
 | No hay sugerencias de autocompletar para los recursos | Los recursos recién cargados no se han indizado todavía. Los metadatos no están disponibles inmediatamente como sugerencias cuando comienza a escribir una palabra clave de búsqueda en la barra de Omniture. | Recursos AEM espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados o actualizados y, a continuación, agrega los metadatos a la lista de sugerencias. |
 | No hay resultados de la búsqueda | <ul><li>No existen recursos que coincidan con la consulta.</li><li>Ha agregado un espacio en blanco antes de la consulta de búsqueda.</li><li>Un campo de metadatos no admitido contiene la palabra clave que busca.</li><li>Tiempo de activación y tiempo de inactividad se configura para el recurso y la búsqueda se realizó durante el tiempo de inactividad del recurso.</li></ul> | <ul><li>Buscar usando una palabra clave diferente. También puede utilizar el etiquetado (inteligente) para mejorar los resultados de la búsqueda.</li><li>Es una limitación [conocida](#limitations).</li><li>No todos los campos de metadatos se consideran para las búsquedas. Consulte [ámbito](#scope).</li><li>Busque más tarde o modifique los tiempos de activación y desactivación de los recursos necesarios.</li></ul> |
-| El filtro de búsqueda o predicado no está disponible | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no están personalizadas en la implementación que esté utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene el privilegio o los permisos necesarios para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para la implementación de Recursos AEM que está utilizando.</li></ul> |
+| El filtro de búsqueda o predicado no está disponible | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no están personalizadas en la implementación que esté utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene los privilegios y permisos necesarios para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para la implementación de Recursos AEM que está utilizando.</li></ul> |
 | Al buscar imágenes visualmente similares, falta una imagen esperada | <ul><li>La imagen no está disponible en AEM.</li><li>La imagen no está indizada. Normalmente, cuando se carga recientemente.</li><li>La imagen no está etiquetada de forma inteligente.</li></ul> | <ul><li>Agregue la imagen a Recursos AEM.</li><li>Póngase en contacto con el administrador para volver a indexar el repositorio. Además, asegúrese de que está utilizando el índice adecuado.</li><li>Póngase en contacto con el administrador para etiquetar los recursos relevantes de forma inteligente.</li></ul> |
 | Al buscar imágenes visualmente similares, se muestra una imagen irrelevante | Comportamiento de búsqueda visual. | AEM muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se agregan a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen a medida que se desplaza hacia abajo por los resultados de la búsqueda. |
-| Cuando se seleccionan y operan los recursos buscados, no se utilizan todos los recursos buscados | La opción [!UICONTROL Seleccionar todo] sólo selecciona los primeros 100 resultados de búsqueda en la vista de tarjeta y los primeros 200 resultados de búsqueda en la vista de lista. |  |
+| Al seleccionar y operar en los resultados de búsqueda, no se aplican todos los recursos buscados | La opción [!UICONTROL Seleccionar todo] sólo selecciona los primeros 100 resultados de búsqueda en la vista de tarjeta y los primeros 200 resultados de búsqueda en la vista de lista. |  |
 
 >[!MORELIKETHIS]
 >
