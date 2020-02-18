@@ -3,7 +3,7 @@ title: Adición de mapas de imagen con hipervínculos a imágenes digitales
 description: Aprenda a añadir mapas de imagen con hipervínculos a una imagen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: e547dde53011003a2db4814916c3e923da947cce
 
 ---
 
