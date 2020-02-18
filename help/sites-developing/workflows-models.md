@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
 
 ---
 
@@ -174,19 +174,25 @@ Al ejecutar un flujo de trabajo en modo [transitorio](/help/sites-developing/wor
 
 ## Hacer que los modelos de flujo de trabajo estén disponibles en la IU táctil {#classic2touchui}
 
-Si un modelo de flujo de trabajo que está presente en la IU clásica pero no se encuentra en el menú emergente de selección en el carril Línea de tiempo de la IU táctil, siga la configuración para que esté disponible. Los siguientes pasos ilustran el uso de los modelos de flujo de trabajo de Recursos AEM, llamados **[!UICONTROL Solicitud de activación]** y **[!UICONTROL Solicitud de desactivación]**.
+Si hay un modelo de flujo de trabajo en la IU clásica, pero falta en el menú emergente de selección en el carril **[!UICONTROL Línea de tiempo]** de la IU táctil, siga la configuración para que esté disponible. Los siguientes pasos ilustran el uso del modelo de flujo de trabajo llamado **[!UICONTROL Solicitud de activación]**.
 
-1. Confirme que el modelo no está disponible en la IU táctil. Acceda a un recurso mediante `/assets.html/content/dam` la ruta. Seleccione el recurso. Abra **[!UICONTROL Línea de tiempo]** en el carril izquierdo. Haga clic en **[!UICONTROL Iniciar flujo de trabajo]** y observe que los modelos de **[!UICONTROL Solicitud de activación]** y **[!UICONTROL Solicitud de desactivación]** no están presentes en la lista emergente.
-1. Haga clic en **[!UICONTROL Herramientas > General > Etiquetado]**. Seleccione **[!UICONTROL Flujo de trabajo]**.
-1. Haga clic en **[!UICONTROL Crear > Crear etiqueta]**. Defina **[!UICONTROL Título]** como `DAM` y **[!UICONTROL Nombre]** como `dam`. Haga clic en **[!UICONTROL Enviar]**.
+1. Confirme que el modelo no está disponible en la IU táctil. Acceda a un recurso mediante `/assets.html/content/dam` la ruta. Seleccione un recurso. Abra **[!UICONTROL Línea de tiempo]** en el carril izquierdo. Haga clic en **[!UICONTROL Iniciar flujo de trabajo]** y confirme que el modelo de **[!UICONTROL solicitud de activación]** no está presente en la lista emergente.
 
+1. Vaya a **[!UICONTROL Herramientas > General > Etiquetado]**. Seleccione **[!UICONTROL Flujo de trabajo]**.
+
+1. Seleccione **[!UICONTROL Crear > Crear etiqueta]**. Defina **[!UICONTROL Título]** como `DAM` y **[!UICONTROL Nombre]** como `dam`. Seleccione **[!UICONTROL Enviar]**.
    ![Crear etiqueta en modelo de flujo de trabajo](assets/workflow_create_tag.png)
 
-1. Haga clic en **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. Seleccione **[!UICONTROL Solicitud de activación]** (o **[!UICONTROL Solicitud de desactivación]**). Haga clic en **[!UICONTROL Editar]**.
-1. En la barra de tareas, vaya a la ficha **[!UICONTROL Página]** . Open **[!UICONTROL Page Properties]**.
-1. Agregar `Workflow : DAM` al campo **[!UICONTROL Etiquetas/Palabras clave]** . Haga clic en **[!UICONTROL Aceptar]**. Haga clic en **[!UICONTROL Guardar]**.
+1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. Seleccione **[!UICONTROL Solicitud de activación]** y, a continuación, seleccione **[!UICONTROL Editar]**.
 
+1. Seleccione **[!UICONTROL Editar]**, abra el menú Información **[!UICONTROL de]** página y, desde allí, seleccione **[UICONTROL Abrir propiedades]** y vaya a la ficha **[!UICONTROL Básico]** (si no está abierta).
+
+1. Agregar `Workflow : DAM` al campo **[!UICONTROL Etiquetas]** . Confirme la selección con la marca de verificación (visto).
+
+1. Confirme la adición de la etiqueta con **[!UICONTROL Guardar y cerrar]**.
    ![Editar propiedades de página del modelo](assets/workflow_model_edit_activation1.png)
+
+1. Complete el proceso con la **[!UICONTROL sincronización]**. El flujo de trabajo ya está disponible en la IU táctil.
 
 ### Configuración de un flujo de trabajo para compatibilidad con varios recursos {#configuring-a-workflow-for-multi-resource-support}
 
