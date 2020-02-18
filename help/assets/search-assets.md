@@ -7,7 +7,7 @@ discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
 
 ---
 
@@ -18,7 +18,7 @@ Recursos Adobe Experience Manager (AEM) proporciona métodos sólidos de detecci
 
 AEM admite los siguientes casos de uso y en este artículo se describen el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas de estos casos de uso.
 
-| Buscar recursos | Configuración y administración | Trabajar con resultados de búsqueda |
+| Búsqueda de recursos | Configuración y administración | Trabajar con resultados de búsqueda |
 |---|---|---|
 | [Búsquedas básicas](#searchbasics) | [Índice de búsqueda](#searchindex) | [Ordenar resultados](#sort) |
 | [Comprender la IU de búsqueda](#searchui) | [Búsqueda visual o de similitudes](#configvisualsearch) | [Comprobar propiedades y metadatos de un recurso](#checkinfo) |
@@ -459,7 +459,7 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 | Al buscar imágenes visualmente similares, se muestra una imagen irrelevante | Comportamiento de búsqueda visual. | AEM muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se agregan a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen a medida que se desplaza hacia abajo por los resultados de la búsqueda. |
 | Cuando se seleccionan y operan los recursos buscados, no se utilizan todos los recursos buscados | La opción [!UICONTROL Seleccionar todo] sólo selecciona los primeros 100 resultados de búsqueda en la vista de tarjeta y los primeros 200 resultados de búsqueda en la vista de lista. |  |
 
->[!MORE COMO ESTO]
+>[!MORELIKETHIS]
 >
 >* [Guía de implementación de búsquedas de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuración avanzada de predicados de búsqueda de etiquetas y varios valores](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
