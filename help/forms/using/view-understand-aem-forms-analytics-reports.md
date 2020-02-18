@@ -10,12 +10,12 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
 
-# Visualización y comprensión de los informes de análisis de AEM Forms{#view-and-understand-aem-forms-analytics-reports}
+# Visualización y comprensión de los informes de análisis de AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms se integra con Adobe Analytics, que le permite capturar y rastrear métricas de rendimiento para los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
