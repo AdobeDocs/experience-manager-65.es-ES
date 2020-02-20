@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 3ba9308f7a6252f7ea6ae0de6455ab3e97e3b8dd
+source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
 
 ---
 
@@ -174,6 +174,22 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
 
 1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de muestra que se muestra a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
 1. [Cree e implemente un proyecto de AEM con Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) en su instancia de AEM.
+1. Agregue el SDK de cliente de [AEM Forms versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior y la lista de dependencias de [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) en la lista de archivos de POm de su proyecto AEM. Por ejemplo,
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aemfd</groupId>
+           <artifactId>aemfd-client-sdk</artifactId>
+           <version>6.0.122</version>
+       </dependency>
+       <dependency>
+          <groupId>com.adobe.aem</groupId>
+          <artifactId>uber-jar</artifactId>
+          <version>6.5.0</version>
+          <classifier>apis</classifier>
+          <scope>provided</scope>
+       </dependency>
+   ```
 1. Abra el proyecto Java, cree un archivo .java, por ejemplo, CCMBatchServlet.java. Agregue el siguiente código al archivo:
 
    ```java
@@ -271,7 +287,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
                            throw new Exception("Invalid JSON Data. File name : " + filePath, ex);
                        }
                    }
-                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/testsample/mediumic").build();
+                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/[path of the interactive communcation]").build();
                    BatchConfig batchConfig = batchBuilderFactory.getBatchConfigBuilder().setBatchType(BatchType.WEB_AND_PRINT).build();
                    BatchResult batchResult = batchGeneratorService.generateBatch(batchInput, batchConfig);
                    List<RecordResult> recordList = batchResult.getRecordResults();
@@ -338,9 +354,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
    * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
 
 1. [Utilice el comando muven para implementar el código actualizado en su instancia](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)de AEM.
-1. Invoque la API por lotes para generar la comunicación interactiva. La API por lotes imprime una secuencia de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
-
-   Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. Si utiliza la comunicación interactiva de ejemplo proporcionada en el paso 1, puede utilizar [records.json](assets/records.json) para generar una comunicación interactiva. Por ejemplo, `http://localhost:4502/bin/batchServlet?filePath=C:/aem/records.json>.` imprime y devuelve una secuencia de un archivo PDF y un archivo JSON.
+1. Invoque la API por lotes para generar la comunicación interactiva. La API por lotes imprime una secuencia de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web. Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve una secuencia de archivos PDF y JSON.
 
 ### Rellenar previamente una plantilla web {#web-template}
 
