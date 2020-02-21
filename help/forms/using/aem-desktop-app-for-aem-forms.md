@@ -34,7 +34,7 @@ Puede utilizar la aplicación para sincronizar archivos binarios de AEM Forms de
 AEM Desktop App utiliza el protocolo WebDAV en Microsoft Windows y SMB1 en Mac OS X para conectarse a un servidor de AEM Forms. De forma predeterminada, el servidor de AEM Forms no está habilitado para sincronizar archivos binarios y otros recursos con un cliente WebDAV o SMB. Siga estos pasos para activar AEM Forms para la aplicación de escritorio de AEM:
 
 1. Inicie sesión en AEM Forms como administrador.
-1. En la instancia de autor, haga clic en ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Herramientas **![martillo](assets/hammer.png)**> Implementación > Operaciones > Consola]**web. La consola web se abre en una ventana nueva.
+1. En la instancia de autor, haga clic en ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Herramientas**] ![martillo](assets/hammer.png) **[!UICONTROL > Implementación > Operaciones > Consola web]**. La consola web se abre en una ventana nueva.
 1. En la ventana de la consola web, busque y abra la opción de configuración **[!UICONTROL de]** FormsManager AddOn.
 1. En el cuadro de diálogo Configuración de FormsManager AddOn, desactive la casilla de verificación Sincronizar recursos **** asincrónicamente y haga clic en **[!UICONTROL Guardar]**.
 1. Reinicie el servidor de AEM Forms. Tras el reinicio, el servidor de AEM Forms está habilitado para aceptar y compartir contenido con la aplicación de escritorio de AEM.
