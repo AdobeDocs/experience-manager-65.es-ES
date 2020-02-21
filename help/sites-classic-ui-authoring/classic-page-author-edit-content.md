@@ -1,6 +1,6 @@
 ---
 title: Edición del contenido de una página
-seo-title: Editar el contenido de una página
+seo-title: Edición del contenido de una página
 description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar in situ, mover o eliminar.
 seo-description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar in situ, mover o eliminar.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 ---
 
 
-# Editar el contenido de una página{#editing-page-content}
+# Edición del contenido de una página{#editing-page-content}
 
 Después de crear una página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
 
@@ -154,7 +154,6 @@ Para eliminar un párrafo:
 >Si estableció las [Propiedades del usuario para mostrar la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md), también puede realizar ciertas acciones en los párrafos con los botones disponibles: **Copiar**, **Cortar**, **Pegar** y **Eliminar**.
 >
 >También hay varios [métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) disponibles.
->
 
 ## Cortar/copiar/pegar un componente {#cut-copy-paste-a-component}
 
