@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90d69ef0ed0fb38bec75a3d36982f80b85dd43af
+source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
 
 ---
 
@@ -576,16 +576,16 @@ Para lograr la eliminación de las clases compiladas desde los JSP, configuramos
 >
 >Por ejemplo: si incluye `/libs/foundation/global.jsp`, puede utilizar la siguiente configuración para el `maven-resources-plugin` en lugar de la configuración anterior, que se salta por completo `/libs`.
 >
->```
-> <resource>  
->      <directory>src/main/content/jcr_root</directory>  
->      <includes>  
->          <include>apps/**</include>  
->          <include>libs/foundation/global.jsp</include>
->    </includes>  
->  </resource>  
->```
 >
+```
+> <resource>  
+>           <directory>src/main/content/jcr_root</directory>  
+>           <includes>  
+>                   <include>apps/**</include>  
+>                   <include>libs/foundation/global.jsp</include>
+>       </includes>  
+>   </resource>  
+>```
 
 ### Cómo trabajar con sistemas SCM {#how-to-work-with-scm-systems}
 
