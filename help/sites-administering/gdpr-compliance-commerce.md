@@ -1,6 +1,6 @@
 ---
-title: 'Comercio AEM: preparación para RGPD'
-seo-title: 'Comercio AEM: preparación para RGPD'
+title: 'Comercio AEM - preparación para RGPD'
+seo-title: 'Comercio AEM - preparación para RGPD'
 description: nulo
 seo-description: nulo
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
