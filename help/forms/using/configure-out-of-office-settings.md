@@ -48,7 +48,7 @@ Realice los siguientes pasos para activar la configuración fuera de la oficina 
 
    Repita el paso para agregar más usuarios asignados. <br>
 
-   [!NOTE]
+   >[!NOTE]
    >El orden de los cesionarios es importante. Cuando se asigna un elemento a un usuario que ha habilitado la configuración fuera de la oficina, el elemento se evalúa en relación con la lista de destinatarios especificada en el orden en que se agregan los usuarios asignados. Cuando un elemento coincide con los criterios, se asigna al usuario asignado y el siguiente usuario asignado no se comprueba.
 
 1. Toque **[!UICONTROL Guardar]**. La configuración surte efecto en la fecha y hora de inicio especificadas. Si inicia sesión mientras está fuera de la oficina, no se le considerará en la oficina hasta que cambie la configuración.
@@ -56,9 +56,10 @@ Realice los siguientes pasos para activar la configuración fuera de la oficina 
 Ahora, los elementos asignados durante el período de tiempo fuera de la oficina se asignan automáticamente al usuario asignado especificado.\
 ![Fuera de la oficina](assets/out-of-office.png)
 
-[!NOTE]
->(Solo para elementos de flujo de trabajo centrados en formularios) Active la opción **Permitir que el usuario asignado delegue mediante la opción** de configuración &#39;Fuera de la oficina&#39; del paso de tarea **** Asignar en el flujo de trabajo. Solo se delegan a otros usuarios los elementos que tengan habilitada la opción mencionada.
-> 
+>[!NOTE]
+>
+> (Solo para elementos de flujo de trabajo centrados en formularios) Active la opción **Permitir que el usuario asignado delegue mediante la opción** de configuración &#39;Fuera de la oficina&#39; del paso de tarea **** Asignar en el flujo de trabajo. Solo se delegan a otros usuarios los elementos que tengan habilitada la opción mencionada.
+
 ## Restricciones {#limitations}
 
 * No se admite la asignación de elementos a un grupo.

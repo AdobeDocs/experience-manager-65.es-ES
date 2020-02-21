@@ -423,15 +423,16 @@ Para crear la clase `HelloWorld` Java dentro del paquete de prueba:
 1. El `HelloWorld.java` archivo se abre en el panel Editar.
 1. Agregue las siguientes líneas a `HelloWorld.java`:
 
-   ```
-     package com.mycompany.test;
-   
-     public class HelloWorld {
-     public String getString(){
-     return "Hello World!";
-     }
-     }
-   ```
+    ```
+      package com.mycompany.test;
+
+      public class HelloWorld {
+      public String getString(){
+      return "Hello World!";
+      }
+      }
+    ```
+
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
 ### Creación de un paquete {#building-a-bundle}

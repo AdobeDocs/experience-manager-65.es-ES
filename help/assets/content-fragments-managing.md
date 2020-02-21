@@ -138,12 +138,9 @@ Para abrir el fragmento y editarlo:
    >[!NOTE]
    >
    >1. Se mostrará un mensaje cuando ya se haga referencia al fragmento en una página de contenido.
-      >
-      >
-      >
-
-   2. El panel lateral puede ocultarse o mostrarse mediante el icono **Alternar panel** lateral.
-
+   >
+   >
+   >2. El panel lateral puede ocultarse o mostrarse mediante el icono **Alternar panel** lateral.
 
 1. Navegue por los tres modos utilizando los iconos del panel lateral:
 

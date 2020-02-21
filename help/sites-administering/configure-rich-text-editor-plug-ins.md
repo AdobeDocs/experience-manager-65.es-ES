@@ -282,19 +282,19 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 >
 >El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID `CQrte` que puede utilizarse para proporcionar diferentes estilos de visualización y edición:
 >
->
-```>
+
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
-
-
+>```
+>
 
 ### Especifique los estilos disponibles en la lista emergente {#stylesindropdown}
 

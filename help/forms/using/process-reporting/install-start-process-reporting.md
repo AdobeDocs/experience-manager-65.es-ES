@@ -52,7 +52,7 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 >Si ejecuta la implementación de AEM Forms en un clúster, lleve a cabo los siguientes pasos en cada nodo del clúster.
 
 1. Detenga la instancia de servidor de AEM Forms.
-1. 
+1. &#x200B;
 
    * (Para Windows) Abra el `[JBoss root]/bin/run.conf.bat` archivo en un editor.
    * (Para Linux, AIX y Solaris) `[JBoss root]/bin/run.conf.sh` en un editor.

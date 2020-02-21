@@ -86,7 +86,7 @@ Por ejemplo: una solicitud para una página Web puede tener el siguiente aspecto
 
 * C significa que esta entrada proviene del cliente (es una solicitud para una página Web)
 * 0 es el número de conexión (el contador de conexiones comienza en 0)
-* # 00000 el desplazamiento en el flujo de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
+* &#x200B;# 00000 el desplazamiento en el flujo de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
 * `[GET <?>]` es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:

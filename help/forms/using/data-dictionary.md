@@ -423,7 +423,7 @@ Si desea enviar la misma carta en distintos idiomas a sus clientes, puede locali
 1. Toque **Aceptar** en la alerta. Correspondence Management descarga un archivo zip en el equipo con el nombre DataDictionary-&lt;Nombre_de_documento>.zip.
 1. El archivo Zip contiene un archivo .properties. Este archivo define el diccionario de datos descargado. El contenido del archivo de propiedades es similar al siguiente:
 
-   # Miércoles 20 de mayo 16:06:23 BST 2015
+   &#x200B;# Miércoles 20 de mayo 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=DataDictionary.EmployeeDD.displayName=EmployeeDataDictionaryDataDictionaryElement.name.description=DataDictionaryElement.name.displayName=nameDataDictionaryElement.persona.description=DataDictionaryElement.persona.displayName=persona
 
    La estructura del archivo de propiedades define una línea para la descripción y el nombre para mostrar del diccionario de datos y cada elemento del diccionario de datos en el diccionario de datos. Además, el archivo de propiedades define una línea para un valor de enumeración establecido para cada elemento del diccionario de datos. Al igual que con un diccionario de datos, el archivo de propiedades correspondiente puede tener varias definiciones de elementos del diccionario de datos. Además, el archivo puede contener las definiciones de uno o varios conjuntos de valores enum.

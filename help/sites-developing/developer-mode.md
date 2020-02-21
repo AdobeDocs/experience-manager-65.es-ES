@@ -36,16 +36,13 @@ Esto ayuda a los desarrolladores a:
 >
 >* Solo está disponible en la IU táctil (al editar páginas).
 >* No está disponible en dispositivos móviles o ventanas pequeñas en el escritorio (debido a restricciones de espacio).
-   >
-   >    
-   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
 >
-* Requiere los permisos/privilegios adecuados:
-
-   * El acceso al modo de desarrollador se otorga a los usuarios que tienen acceso de escritura en `/apps`.
-
-
-
+>    * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
+>
+>* Requiere los permisos/privilegios adecuados:
+>
+>    * El acceso al modo de desarrollador se otorga a los usuarios que tienen acceso de escritura en `/apps`.
+>
 
 >[!CAUTION]
 >

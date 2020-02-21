@@ -152,7 +152,7 @@ Para eliminar un párrafo:
 >[!NOTE]
 >
 >Si estableció las [Propiedades del usuario para mostrar la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md), también puede realizar ciertas acciones en los párrafos con los botones disponibles: **Copiar**, **Cortar**, **Pegar** y **Eliminar**.
-
+>
 >También hay varios [métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) disponibles.
 >
 ## Cortar/copiar/pegar un componente {#cut-copy-paste-a-component}
@@ -160,8 +160,9 @@ Para eliminar un párrafo:
 Al igual que cuando [elimina un componente](#deleting-a-component), puede utilizar el menú contextual para copiar, cortar o pegar un componente.
 
 >[!NOTE]
-Si estableció las [Propiedades del usuario para mostrar la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md), también puede realizar ciertas acciones en los párrafos con los botones disponibles: **Copiar**, **Cortar**, **Pegar** y **Eliminar**.
-
+>
+>Si estableció las [Propiedades del usuario para mostrar la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md), también puede realizar ciertas acciones en los párrafos con los botones disponibles: **Copiar**, **Cortar**, **Pegar** y **Eliminar**.
+>
 >También hay varios [métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) disponibles.
 
 >[!NOTE]

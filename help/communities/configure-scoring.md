@@ -183,16 +183,16 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
 * agregar propiedades de puntuación y de marca
 
-   ```
-       scoringRules = [/etc/community/scoring/rules/comments-scoring,
-        /etc/community/scoring/rules/forums-scoring]
-       ```
-   
-       ```
-       badgingRules =[/etc/community/badging/rules/comments-scoring,
-        /etc/community/badging/rules/forums-scoring]
-       ```
-   
+  ```
+  scoringRules = [/etc/community/scoring/rules/comments-scoring,
+  /etc/community/scoring/rules/forums-scoring]
+  ```
+
+  ```
+  badgingRules =[/etc/community/badging/rules/comments-scoring,
+  /etc/community/badging/rules/forums-scoring]
+  ```
+
 * localice el nodo del componente del foro
 
    * `/content/community-components/en/forum/jcr:content/content/forum`

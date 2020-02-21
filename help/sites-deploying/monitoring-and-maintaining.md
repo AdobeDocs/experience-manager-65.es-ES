@@ -358,27 +358,33 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
          Valor: especificar según sea necesario para controlar la rotación de archivos por tamaño/fecha; por ejemplo, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro configurando:
-   * un tamaño máximo de archivo
-   * una programación de fecha y hora
-   para indicar cuándo se creará un nuevo archivo (y se cambiará el nombre del archivo existente según el patrón de nombre).
-   * Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
-   * Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
-   El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
-   Por ejemplo, a la medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esto sea preciso), ../logs/error.log cambiará su nombre a ../logs/error.log.2010-01-20. El registro para el 21 de enero se enviará a (nuevo y vacío) ../logs/error.log hasta que se pase a la siguiente modificación del día.
-       | `&#39;.&#39;
-    aaaa-MM`|Rotación al comienzo de cada mes|
- |—|—|     | `&#39;.&#39;aaaa-ww`|La rotación al primer día de cada semana (depende de la configuración regional). |
-       | `&#39;.&#39;aaaa-MM-dd`|Rotación diaria a medianoche. |
-       | `&#39;.&#39;aaaa-MM-dd-a`|Rotación a medianoche y mediodía de cada día. |
-       | `&#39;.&#39;aaaa-MM-dd-HH`|Rotación en la parte superior de cada hora. |
-       | `&#39;.&#39;aaaa-MM-dd-HH-mm`|Rotación al principio de cada minuto. 
- |    
-      
-Nota: Al especificar una fecha/hora:       1. 
- Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);       esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
-       1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
-   
+   >
+   >`org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro configurando:
+   >
+   >* un tamaño máximo de archivo
+   >* una programación de fecha y hora
+   >
+   >para indicar cuándo se creará un nuevo archivo (y se cambiará el nombre del archivo existente según el patrón de nombre).
+   >
+   >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
+   >* Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
+   >
+   >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
+   >
+   >Por ejemplo, a la medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esto sea preciso), ../logs/error.log cambiará su nombre a ../logs/error.log.2010-01-20. El registro para el 21 de enero se enviará a (nuevo y vacío) ../logs/error.log hasta que se pase a la siguiente modificación del día.
+   >
+   >| `&#39;.&#39;aaaa-MM`|Rotación al comienzo de cada mes|
+   >|---|---|
+   >| `&#39;.&#39;aaaa-ww`|La rotación al primer día de cada semana (depende de la configuración regional). |
+   >| `&#39;.&#39;aaaa-MM-dd`|Rotación diaria a medianoche. |
+   >| `&#39;.&#39;aaaa-MM-dd-a`|Rotación a medianoche y mediodía de cada día. |
+   >| `&#39;.&#39;aaaa-MM-dd-HH`|Rotación en la parte superior de cada hora. |
+   >| `&#39;.&#39;aaaa-MM-dd-HH-mm`|Rotación al principio de cada minuto. |
+   >
+   >Nota: Al especificar una fecha/hora:
+   >1. Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
+   >   esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
+   >1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
 
 1. Lea el nuevo archivo de registro con la herramienta elegida.
 

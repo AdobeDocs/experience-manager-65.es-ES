@@ -415,6 +415,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Guarde y cierre el archivo.
 
 ### Configuración del servicio de administración de fuentes {#configuring-the-font-manager-service}

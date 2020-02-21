@@ -1318,11 +1318,11 @@ Para ilustrar estos pasos, el siguiente ejemplo define un informe que enumera to
    >
    >Es lo mismo que las definiciones:
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >Donde la función simplemente devuelve el valor que recibe.
 
 1. Defina el diseño del informe. Por ejemplo, `osgireport[cq:Page]` en `/etc/designs/reports`.
@@ -1389,13 +1389,13 @@ Ahora se puede crear una instancia del nuevo informe:
    >
    >Como este ejemplo no tiene columnas agrupables, los gráficos no estarán disponibles. Para ver gráficos, establezca `groupable` en `true`:
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Configuración de los servicios del marco de informes {#configuring-the-report-framework-services}
 
