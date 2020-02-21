@@ -155,6 +155,7 @@ Para eliminar un párrafo:
 >
 >También hay varios [métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) disponibles.
 >
+
 ## Cortar/copiar/pegar un componente {#cut-copy-paste-a-component}
 
 Al igual que cuando [elimina un componente](#deleting-a-component), puede utilizar el menú contextual para copiar, cortar o pegar un componente.
