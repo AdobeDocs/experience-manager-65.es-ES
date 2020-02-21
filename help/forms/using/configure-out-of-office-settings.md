@@ -4,7 +4,7 @@ seo-title: Configuración de la configuración de fuera de la oficina
 description: Configuración de RConfiguración fuera de la oficina
 seo-description: Configuración de la configuración de fuera de la oficina
 translation-type: tm+mt
-source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
+source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
 
 ---
 
@@ -57,8 +57,7 @@ Ahora, los elementos asignados durante el período de tiempo fuera de la oficina
 ![Fuera de la oficina](assets/out-of-office.png)
 
 >[!NOTE]
->
-> (Solo para elementos de flujo de trabajo centrados en formularios) Active la opción **Permitir que el usuario asignado delegue mediante la opción** de configuración &#39;Fuera de la oficina&#39; del paso de tarea **** Asignar en el flujo de trabajo. Solo se delegan a otros usuarios los elementos que tengan habilitada la opción mencionada.
+>(Solo para elementos de flujo de trabajo centrados en formularios) Active la opción **Permitir que el usuario asignado delegue mediante la opción** de configuración &#39;Fuera de la oficina&#39; del paso de tarea **** Asignar en el flujo de trabajo. Solo se delegan a otros usuarios los elementos que tengan habilitada la opción mencionada.
 
 ## Restricciones {#limitations}
 
