@@ -138,7 +138,7 @@ Representar un formulario por valor mediante la API de Forms (Java):
 
 **Consulte también**
 
-[Representación de formularios por valor](/help/forms/develop/procesando-formularios-procesando-formularios-procesando-formularios-formulario-valor-procesando-formularios.md#procesando-formularios-por-valor)
+[Representación de formularios por valor](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
 
 [Inicio rápido (modo SOAP): Representación por valor mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
