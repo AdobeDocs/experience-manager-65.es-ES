@@ -3,7 +3,7 @@ title: Uso de recursos conectados para compartir recursos DAM en el flujo de tra
 description: Utilice los recursos disponibles en una implementación remota de Recursos Adobe Experience Manager al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a107f3d3f10e2f5b5aed7722aee467a838f9d13d
+source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
 
 ---
 
@@ -27,9 +27,9 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 * Los usuarios forman parte de los grupos de usuarios correspondientes en cada implementación.
 * Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. Recursos AEM 6.5 funciona con AEM como un servicio de nube. Para obtener más información, consulte Funcionalidad de Recursos [conectados en AEM como un servicio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)de nube.
 
-   |  | AEM Sites como servicio de nube | Sitios de AEM 6.5 en AMS | Sitios AEM 6.5 in situ |
+   |  | AEM Sites como Cloud Service | Sitios de AEM 6.5 en AMS | Sitios AEM 6.5 in situ |
    |---|---|---|---|
-   | **AEM Assets como servicio de nube** | Admitido | Admitido | Admitido |
+   | **AEM Assets como Cloud Service** | Admitido | Admitido | Admitido |
    | **AEM 6.5 Assets en AMS** | No admitido | Admitido | Admitido |
    | **Recursos AEM 6.5 in situ** | No admitido | No admitido | No admitido |
 
@@ -159,7 +159,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, excepto que los metadatos asociados no se pueden editar.
 
-## Restricciones {#limitations}
+## Restricciones  {#limitations}
 
 **Permisos y administración de recursos**
 
@@ -171,7 +171,7 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, excep
 * Todos los autores de sitios tienen permisos de lectura en las copias recuperadas, incluso si no tienen acceso a la implementación de DAM remota.
 * No hay compatibilidad con API para personalizar la integración.
 * La funcionalidad admite la búsqueda y el uso ininterrumpidos de recursos remotos. Para que muchos recursos remotos estén disponibles en la implementación local en un solo uso, considere la posibilidad de migrar los recursos. Consulte Guía [de migración de](assets-migration-guide.md)recursos.
-* No es posible utilizar un recurso remoto como miniatura para una página web en la ficha [!UICONTROL Miniatura] de Propiedades [!UICONTROL de] página haciendo clic en [!UICONTROL Seleccionar imagen].
+* No es posible utilizar un recurso remoto como miniatura de página en la interfaz de usuario Propiedades [!UICONTROL de la] página. Puede establecer una miniatura de una página web en la interfaz de usuario Propiedades [!UICONTROL de] página desde la [!UICONTROL miniatura] haciendo clic en [!UICONTROL Seleccionar imagen].
 
 **Configuración y licencia**
 
