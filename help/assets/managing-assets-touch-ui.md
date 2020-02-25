@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
 
 ---
 
@@ -354,13 +354,11 @@ Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/prev
 
    ![chlimage_1-218](assets/chlimage_1-13.png)
 
-1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en AEM.
-
-   YouTube requiere que las etiquetas publiquen y tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
+1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en AEM. YouTube requiere que las etiquetas se publiquen. Consulte [Publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >Para crear etiquetas, necesita permisos de escritura para `/content/cq:tags/default` en el repositorio de CRX.
+   >Para crear etiquetas, necesita permisos de escritura en `/content/cq:tags/default` el repositorio de CRX.
 
 1. Para proporcionar una clasificación al recurso, toque o haga clic en la ficha **[!UICONTROL Avanzado]** y, a continuación, toque o haga clic en la estrella en la posición adecuada para asignar la clasificación deseada.
 
@@ -532,7 +530,7 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
 ## Descargar recursos {#downloading-assets}
 
-Consulte [Descargar recursos de AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
@@ -602,7 +600,7 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Aparece una pantalla de inicio de sesión.
 1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM le autentique.
 
-## Search assets {#assetsearch}
+## Búsqueda de recursos {#assetsearch}
 
 La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM.
 
