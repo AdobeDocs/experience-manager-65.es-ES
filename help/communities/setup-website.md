@@ -37,11 +37,9 @@ El código de este tutorial dependerá de que el nombre de la carpeta principal 
 >* Los nombres que se ven en CRXDE son nombres de nodo que forman la ruta al contenido direccionable
 >* Los nombres de nodo pueden contener espacios, pero cuando se utilizan en un URI, el espacio debe codificarse como &#39;%20&#39; o &#39;+&#39;
 >* Los nombres de nodo pueden contener guiones y guiones bajos, pero deben codificarse cuando se hace referencia a ellos como un nombre de paquete dentro de un archivo Java. Tanto los guiones como los guiones bajos se escapan con un guión bajo seguido de su valor Unicode:
-   >
-   >   
-   * el guión se convierte en &#39;_002d&#39;
-   >   * el guión bajo se convierte en &#39;_005f&#39;
-
+>
+>   * el guión se convierte en &#39;_002d&#39;
+>   * el guión bajo se convierte en &#39;_005f&#39;
 
 ## Configuración del directorio de aplicaciones (/apps) {#setup-the-application-directory-apps}
 
