@@ -60,10 +60,8 @@ Para casos de uso más avanzados, también se puede usar MSM en los maestros de 
 >En todos los casos de uso se recomienda leer las siguientes optimizaciones:
 >
 >* [Prácticas recomendadas para MSM](/help/sites-administering/msm-best-practices.md); particularmente:
-   >
-   >   
-   * [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Prácticas recomendadas para la traducción](/help/sites-administering/tc-bp.md)
-
