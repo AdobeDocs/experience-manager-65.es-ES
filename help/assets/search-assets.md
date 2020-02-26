@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
+source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
 
 ---
 
@@ -42,7 +42,7 @@ Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
 *Figura: Explicación de partes de la interfaz de resultados de búsqueda de recursos*
 
-**** A. Guarde la búsqueda como una colección inteligente. **** B. Filtros (predicados) para reducir los resultados de búsqueda. **C.** Mostrar archivos, carpetas o ambos en los resultados de la búsqueda. **** D. Haga clic en Filtros para abrir o cerrar el carril izquierdo. **** E. La ubicación de búsqueda es DAM. **** F. Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **** G. Casilla de verificación para seleccionar todos los resultados de búsqueda. **** H. Número de resultados de búsqueda mostrados del total de resultados de búsqueda. ******I. Cierre la búsqueda** J. Cambie entre la vista de tarjeta y la vista de lista.
+**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros (predicados) para reducir los resultados de búsqueda. **C.** Muestre archivos, carpetas o ambos en los resultados de la búsqueda. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. ************ F. Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G. Casilla de verificación para seleccionar todos los resultados de búsqueda.** H. Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **Yo. Cierre la búsqueda** J. Cambie entre la vista de tarjeta y la vista de lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
@@ -113,7 +113,7 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 
 Puede mejorar la relevancia de las palabras clave para los recursos en particular a fin de mejorar las búsquedas basadas en las palabras clave. En otras palabras, las imágenes para las que promociona palabras clave específicas aparecen en la parte superior de los resultados de búsqueda cuando realiza una búsqueda en base a estas palabras clave.
 
-1. En la interfaz de usuario de Recursos, abra la página de propiedades del recurso. Haga clic en **[!UICONTROL Avanzadas]** y toque o haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para las palabras clave]** de búsqueda.
+1. En la interfaz de usuario de Assets, abra la página de propiedades del recurso. Haga clic en **[!UICONTROL Avanzadas]** y pulse o haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para las palabras clave de búsqueda]**.
 1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, toque o haga clic en **[!UICONTROL Agregar]**. Puede especificar varias palabras clave de la misma manera.
 1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
@@ -138,7 +138,7 @@ AEM proporciona varios métodos, como filtros que se aplican a los recursos busc
 
 ### Buscar imágenes similares {#visualsearch}
 
-Para buscar imágenes que sean visualmente similares a una imagen seleccionada por el usuario, haga clic en la opción **[!UICONTROL Buscar similares]** en la vista de tarjeta de una imagen o en la barra de herramientas. AEM muestra las imágenes etiquetadas inteligentes del repositorio de DAM similares a una imagen que seleccionó el usuario. Consulte [cómo configurar la búsqueda](#configvisualsearch)por similitudes.
+Para buscar imágenes que sean visualmente similares a una imagen seleccionada por el usuario, haga clic en la opción **[!UICONTROL Buscar similares]** en la vista de tarjeta de una imagen o en la barra de herramientas. AEM muestra las imágenes con etiquetas inteligentes del repositorio de DAM similares a una imagen seleccionada por el usuario. Consulte [cómo configurar la búsqueda por similitudes](#configvisualsearch).
 
 ![Buscar imágenes similares con la opción en la vista de tarjeta](assets/search_find_similar.png)
 
@@ -151,7 +151,7 @@ Desde la interfaz de usuario de AEM, los usuarios pueden buscar recursos [de](/h
 
 ### Recursos de Dynamic Media {#dmassets}
 
-Puede filtrar imágenes de Dynamic Media seleccionando Medios **[!UICONTROL dinámicos > Conjuntos]** en el panel **[!UICONTROL Filtros]** . Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
+Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media > Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
 
 ### Buscar con valores específicos en campos de metadatos {#gqlsearch}
 
@@ -217,7 +217,7 @@ Desde la interfaz de usuario de AEM, los usuarios pueden buscar recursos de Adob
 
 ### Buscar recursos de Dynamic Media {#dynamicmedia}
 
-Puede filtrar imágenes de Dynamic Media seleccionando Medios **[!UICONTROL dinámicos]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]** . Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros. Durante la creación de páginas web, los autores pueden buscar conjuntos desde el Buscador de contenido. Un filtro para conjuntos está disponible en un menú emergente.
+Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros. Durante la creación de páginas web, los autores pueden buscar conjuntos desde el Buscador de contenido. Los filtros para conjuntos están disponibles en un menú emergente.
 
 ### Buscar recursos en Content Finder al crear páginas Web {#contentfinder}
 
@@ -251,7 +251,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 *Figura:Examinar y seleccionar recursos en el selector de recursos*
 
-## Restricciones {#limitations}
+## Restricciones  {#limitations}
 
 La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
 
@@ -408,7 +408,7 @@ Una vez que vea algunos recursos buscados que coinciden con sus criterios, puede
 
 ### Ordenar resultados de búsqueda {#sort}
 
-La ordenación de los resultados de búsqueda ayuda a descubrir los recursos necesarios con mayor rapidez. La ordenación de los resultados de búsqueda funciona en la vista de lista y solo cuando se selecciona **[!UICONTROL [Archivos](#searchui)]**en el panel**[!UICONTROL  Filtros ]**. Recursos AEM utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean numerosos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
+La ordenación de los resultados de búsqueda ayuda a descubrir los recursos necesarios con mayor rapidez. La ordenación de los resultados de búsqueda funciona en la vista de lista y solo cuando se selecciona **[!UICONTROL [Archivos](#searchui)]**en el panel**[!UICONTROL  Filtros ]**. AEM Assets utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
 En la vista de lista, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, dimensiones, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
 
@@ -420,7 +420,7 @@ Puede comprobar la información detallada de los recursos buscados desde la pág
 
 Para ver todos los metadatos de un recurso, selecciónelo y haga clic en **[!UICONTROL las propiedades]** de la barra de herramientas.
 
-Para comprobar los comentarios de un recurso o del historial de versiones de un recurso, haga clic en el recurso para abrir una vista previa de gran tamaño. Abra la línea de tiempo en el carril izquierdo y seleccione **[!UICONTROL Comentarios]** o **[!UICONTROL Versiones]**. También puede ordenar la actividad de la línea de tiempo como comentarios o versiones en un orden cronológico.
+Para comprobar los comentarios de un recurso o del historial de versiones de un recurso, haga clic en el recurso y abrirá una vista previa de gran tamaño. Abra la cronología en el carril izquierdo y seleccione **[!UICONTROL Comentarios]** o **[!UICONTROL Versiones]**. También puede ordenar la actividad de la cronología como comentarios o versiones en orden cronológico.
 
 ![Ordenar entradas de línea de tiempo para un recurso de búsqueda](assets/sort_timeline_search_results.gif)
 
@@ -435,7 +435,7 @@ Puede descargar los recursos buscados y sus representaciones del mismo modo que 
 
 Es posible realizar actualizaciones masivas en los campos de metadatos comunes de varios recursos. En los resultados de la búsqueda, seleccione uno o varios recursos. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas y actualice los metadatos según sea necesario. Haga clic en **[!UICONTROL Guardar y cerrar]** cuando termine. Los metadatos existentes anteriormente en los campos actualizados se sobrescriben.
 
-Para los recursos disponibles en una única carpeta o colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/managing-multiple-assets.md). Para los recursos disponibles en varias carpetas o que cumplen un criterio común, es más rápido actualizar los metadatos de forma masiva mediante la búsqueda.
+Para los recursos disponibles en una sola carpeta o colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/managing-multiple-assets.md) sin utilizar la funcionalidad de búsqueda. Para los recursos disponibles en varias carpetas o que cumplen un criterio común, es más rápido actualizar los metadatos de forma masiva mediante la búsqueda.
 
 ### Colecciones inteligentes {#collections-1}
 
@@ -444,7 +444,7 @@ Una colección es un conjunto ordenado de recursos que puede incluir recursos de
 * Una lista de referencia estática de recursos, carpetas y otras colecciones.
 * Lista dinámica (colección inteligente) que rellena los recursos de la colección en función de criterios de búsqueda.
 
-Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]** , seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección]** inteligente. Consulte [Gestión de colecciones](/help/assets/managing-collections-touch-ui.md).
+Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/managing-collections-touch-ui.md).
 
 ## Solución de problemas y resultados de búsqueda inesperados {#troubleshoot-unexpected-search-results-and-issues}
 
