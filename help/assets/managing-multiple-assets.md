@@ -3,7 +3,7 @@ title: Administrar varios recursos y colecciones
 description: Descubra cómo editar los metadatos de varios recursos y colecciones simultáneamente para propagar rápidamente los cambios comunes de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
 
 ---
 
@@ -44,31 +44,11 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
 
 1. Para seleccionar un esquema de metadatos diferente para los recursos, toque o haga clic en el icono **[!UICONTROL Configuración]** de la barra de herramientas y seleccione el esquema deseado.
 1. Guarde los cambios.
-1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el modo **** Anexar. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Toque o haga clic en **[!UICONTROL Enviar]**.
+1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el **[!UICONTROL modo Anexar]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Pulse o haga clic en **[!UICONTROL Enviar]**.
 
    >[!CAUTION]
    >
-   >En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **** Anexar.
-
-## Editar propiedades de metadatos de varias colecciones {#editing-metadata-properties-of-multiple-collections}
-
-1. En la consola Colecciones, seleccione las colecciones que desee editar.
-1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Propiedades]** para abrir la página de propiedades de las colecciones seleccionadas.
-1. Modifique las propiedades de metadatos de las colecciones seleccionadas en las distintas fichas.
-
-   >[!NOTE]
-   >
-   >Los metadatos que se agregan para las colecciones seleccionadas sobrescriben los metadatos anteriores para estas colecciones, excepto para las etiquetas. Las etiquetas que agregue al campo **[!UICONTROL Etiquetas]** se anexan a la lista de etiquetas existente en los metadatos.
-
-1. Para ver las propiedades de metadatos de una colección específica, anule la selección de las colecciones restantes en la lista de colecciones. Los campos del editor de metadatos se rellenan con los metadatos de la colección en particular.
-
-   >[!NOTE]
-   >
-   >* En la página de propiedades de la colección, puede quitar colecciones de la lista de colecciones anulándolas. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. Los metadatos de las colecciones que elimine no se actualizarán.
-   >* En la parte superior de la lista, active la casilla de verificación situada cerca de **[!UICONTROL Título]** para alternar entre seleccionar las colecciones y borrar la lista.
-
-
-1. Guarde los cambios.
+   >En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
 
 ## Configurar límite para la actualización masiva de metadatos {#configlimit}
 
@@ -76,4 +56,9 @@ Para evitar situaciones similares a las de DOS, AEM limita el número de paráme
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para cambiar el límite, acceda a la consola web ( **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web) y cambie el valor de **[!UICONTROL Máximo de parámetros]** POST en la configuración OSGi del parámetro de solicitud Sling de **** Apache.
+Para cambiar el límite, acceda a la consola web ( **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**) y cambie el valor de **[!UICONTROL Máximo de parámetros POST]** en la configuración OSGi de la **[!UICONTROL administración de parámetros de solicitud Apache Sling]**.
+
+>[!MORELIKETHIS]
+>
+>* [Editar propiedades de metadatos de varias colecciones](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
