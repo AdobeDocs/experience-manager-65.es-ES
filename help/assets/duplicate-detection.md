@@ -3,7 +3,7 @@ title: Habilitar la detección de recursos duplicados
 description: Obtenga información sobre cómo activar la detección de recursos duplicados en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -17,7 +17,6 @@ Si intenta cargar un recurso que existe en Recursos Adobe Experience Manager (AE
 1. Seleccione la opción **[!UICONTROL Detectar duplicados]** y toque o haga clic en **[!UICONTROL Guardar]**.
 
    ![Seleccione la opción detectar duplicados en el servlet](assets/chlimage_1-377.png)
-
 
    *Figura:Seleccione la opción detectar duplicados en el servlet*
 
