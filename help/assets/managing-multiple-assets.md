@@ -57,3 +57,8 @@ Para evitar situaciones similares a las de DOS, AEM limita el número de paráme
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 Para cambiar el límite, acceda a la consola web ( **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**) y cambie el valor de **[!UICONTROL Máximo de parámetros POST]** en la configuración OSGi de la **[!UICONTROL administración de parámetros de solicitud Apache Sling]**.
+
+>[!MORELIKETHIS]
+>
+>* [Editar propiedades de metadatos de varias colecciones](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
