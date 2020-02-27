@@ -1,14 +1,14 @@
 ---
-title: Revisar los recursos y las colecciones de carpetas
+title: Revisión de los recursos y las colecciones de carpetas
 description: Configure flujos de trabajo de revisión para recursos dentro de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# Revisar los recursos y las colecciones de carpetas {#review-folder-assets-and-collections}
+# Revisión de los recursos y las colecciones de carpetas {#review-folder-assets-and-collections}
 
 Configure flujos de trabajo de revisión para recursos dentro de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
 
@@ -23,7 +23,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 ## Crear una tarea de revisión para carpetas {#creating-a-review-task-for-folders}
 
 1. En la interfaz de usuario de Recursos, seleccione la carpeta para la que desea crear una tarea de revisión.
-1. En la barra de herramientas, toque **[!UICONTROL Crear tarea]** de revisión para abrir la página **[!UICONTROL Revisar tarea]** . Si no puede ver la opción en la barra de herramientas, toque o haga clic en **[!UICONTROL Más]** y, a continuación, seleccione la opción.
+1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, tap/click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -47,13 +47,13 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 
    ![review_name](assets/review_name.png)
 
-1. Toque o haga clic en **[!UICONTROL Enviar]** y, a continuación, toque o haga clic en **[!UICONTROL Hecho]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
+1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
 1. Inicie sesión en Recursos AEM como aprobador y vaya a la interfaz de usuario de Recursos. Para aprobar recursos, toque **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
 
    ![Notificación de activos](assets/aemAssetsNotification.png)
 
-1. En la página **[!UICONTROL Revisar tarea]** , examine los detalles de la tarea de revisión y, a continuación, toque o haga clic en **[!UICONTROL Revisar]**.
-1. En la página **[!UICONTROL Revisar tarea]** , seleccione los recursos y toque **[!UICONTROL Aprobar/Rechazar]** para aprobarlos o rechazarlos, según corresponda.
+1. En la página **[!UICONTROL Revisar tarea]**, examine los detalles de la tarea de revisión y, a continuación, pulse o haga clic en **[!UICONTROL Revisar]**.
+1. In the **[!UICONTROL Review Task]** page, select assets, and tap **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
 
    ![review_task](assets/review_task.png)
 
@@ -71,7 +71,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 ## Crear una tarea de revisión para colecciones {#creating-a-review-task-for-collections}
 
 1. En la página Colecciones, seleccione la colección para la que desea crear una tarea de revisión.
-1. En la barra de herramientas, toque **[!UICONTROL Crear tarea]** de revisión para abrir la página **[!UICONTROL Revisar tarea]** . Si no puede ver la opción en la barra de herramientas, toque **[!UICONTROL Más]** y, a continuación, seleccione la opción.
+1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, tap **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -91,9 +91,9 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Toque o haga clic en **[!UICONTROL Enviar]** y, a continuación, toque o haga clic en **[!UICONTROL Hecho]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
+1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
 1. Inicie sesión en Recursos AEM como aprobador y vaya a la consola Recursos. Para aprobar recursos, toque **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
-1. En la página **[!UICONTROL Revisar tarea]** , examine los detalles de la tarea de revisión y, a continuación, toque o haga clic en **[!UICONTROL Revisar]**.
+1. En la página **[!UICONTROL Revisar tarea]**, examine los detalles de la tarea de revisión y, a continuación, pulse o haga clic en **[!UICONTROL Revisar]**.
 1. Todos los recursos de la colección están visibles en la página de revisión. Seleccione los recursos y toque **[!UICONTROL Aprobar/Rechazar]** para aprobarlos o rechazarlos, según corresponda.
 
    ![review_task_collection](assets/review_task_collection.png)
@@ -102,7 +102,9 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 1. Vaya a la consola Colecciones y abra la colección. Los iconos de estado de aprobación de los recursos aparecen en las vistas Tarjeta y Lista.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
+
    *Figura:Vista de tarjeta*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
+
    *Figura:Vista de lista*
