@@ -3,7 +3,7 @@ title: Generación de una URL para los recursos compartidos
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos AEM como una URL para terceros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -54,7 +54,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    * instancias de publicación
    Para las propiedades local y de autor, proporcione la URL para la instancia local y de autor respectivamente. Tanto las propiedades locales como las de autor tienen el mismo valor si se ejecuta una única instancia de autor de AEM. Para la publicación, especifique la URL de la instancia de publicación.
 
-1. En el cuadro de dirección de correo electrónico del cuadro de diálogo Uso compartido **[!UICONTROL de]** vínculos, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. También puede compartir el vínculo con varios usuarios.
+1. En el apartado de la dirección de correo electrónico del cuadro de diálogo **[!UICONTROL Uso compartido de vínculos]**, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. También puede compartir el vínculo con varios usuarios.
 
    Si el usuario es miembro de su organización, seleccione el ID de correo electrónico del usuario en los ID de correo electrónico sugeridos que aparecen en la lista debajo del área de escritura. Para un usuario externo, escriba el ID de correo electrónico completo y selecciónelo en la lista.
 
@@ -85,7 +85,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
    Para cambiar a la vista de lista, toque o haga clic en la opción de diseño en la barra de herramientas.
 
-1. Para generar una vista previa del recurso, toque o haga clic en el recurso compartido. Para cerrar la vista previa y volver a la página de **[!UICONTROL Marketing Cloud]** , toque o haga clic en **[!UICONTROL Atrás]** en la barra de herramientas. Si ha compartido una carpeta, toque o haga clic en **[!UICONTROL Carpeta]** principal para volver a la carpeta principal.
+1. Para generar una vista previa del recurso, pulse o haga clic en el recurso compartido. Para cerrar la vista previa y volver a la página de **[!UICONTROL Experience Cloud]**, pulse o haga clic en **[!UICONTROL Atrás]** en la barra de herramientas. Si ha compartido una carpeta, pulse o haga clic en **[!UICONTROL Carpeta principal]** para regresar a la carpeta principal.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
@@ -97,14 +97,14 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
 1. Para ver los recursos que ha compartido como vínculos, vaya a la interfaz de usuario de Recursos y toque el logotipo de Experience Manager. Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
-1. En el panel Navegación, elija Vínculos **** compartidos para mostrar una lista de recursos compartidos.
+1. En el panel Navegación, seleccione **[!UICONTROL Vínculos compartidos]** para mostrar una lista de recursos compartidos.
 1. Para dejar de compartir un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Dejar de compartir]** en la barra de herramientas. A continuación se muestra un mensaje de confirmación. La entrada del recurso se elimina de la lista.
 
 ## Configurar el servicio de correo CQ Day {#configmailservice}
 
 1. En la página de inicio de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 1. En la lista de servicios, busque **[!UICONTROL Day CQ Mail Service]**.
-1. Toque **[!UICONTROL Editar]** al lado del servicio y configure los siguientes parámetros para **[!UICONTROL Day CQ Mail Service]** con los detalles mencionados en relación con sus nombres:
+1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * Nombre de host del servidor SMTP: nombre de host del servidor de correo electrónico
    * Puerto del servidor SMTP: puerto del servidor de correo electrónico
@@ -118,9 +118,9 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
 Al descargar recursos del vínculo compartido mediante la función de uso compartido de vínculos, AEM comprime la jerarquía de recursos del repositorio y, a continuación, devuelve el recurso en un archivo ZIP. Sin embargo, a falta de límites a la cantidad de datos que se pueden comprimir en un archivo ZIP, grandes cantidades de datos están sujetas a compresión, lo que causa errores de memoria insuficiente en JVM. Para proteger el sistema de un posible ataque de denegación de servicio debido a esta situación, configure el tamaño máximo usando el parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** para el servlet proxy [!UICONTROL Day CQ DAM Adhoc Asset Share] en Configuration Manager. Si el tamaño sin comprimir del recurso supera el valor configurado, se rechazan las solicitudes de descarga de recursos. El valor predeterminado es 100 MB.
 
-1. Haga clic o toque el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. Haga clic o pulse el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 1. Desde la consola web, localice la configuración del servlet **[!UICONTROL proxy de uso compartido de recursos ad hoc CQ DAM]** Day.
-1. Abra la configuración del servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** en modo de edición y modifique el valor del parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** .
+1. Abra la configuración del servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** en modo de edición y modifique el valor del parámetro **[!UICONTROL Tamaño de contenido máximo (sin comprimir)]**.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 
