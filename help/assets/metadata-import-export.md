@@ -3,7 +3,7 @@ title: Importación y exportación masiva de metadatos de recursos
 description: Importación y exportación masiva de metadatos de recursos
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -22,7 +22,7 @@ La importación de metadatos es asincrónica y no impide el rendimiento del sist
 
 1. Vaya a la interfaz de usuario de Recursos y toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. En el menú, seleccione **[!UICONTROL Metadatos]**.
-1. En la página Importación **[!UICONTROL de]** metadatos, toque o haga clic en **[!UICONTROL Seleccionar archivo]**. Seleccione el archivo CSV con los metadatos.
+1. En la página **[!UICONTROL Importación de metadatos]**, pulse o haga clic en **[!UICONTROL Seleccionar archivo]**. Seleccione el archivo CSV con los metadatos.
 1. Especifique los siguientes parámetros:
 
    | Parámetros de importación de metadatos | Descripción |
@@ -56,9 +56,10 @@ Algunos casos de uso para exportar metadatos de forma masiva son:
 1. En el campo **[!UICONTROL Propiedades que exportar]** , especifique si desea exportar todas las propiedades o determinadas. Si selecciona Propiedades selectivas para exportar, agregue las propiedades que desee.
 
 1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Exportar]**. Un mensaje confirma que se exportan los metadatos. Cierre el mensaje.
-1. Abra la notificación de bandeja de entrada para el trabajo de exportación. Seleccione el trabajo y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas. Para descargar el archivo CSV con los metadatos, toque o haga clic en Descarga **** CSV desde la barra de herramientas. Click **[!UICONTROL Close]**.
+1. Abra la notificación de la bandeja de entrada para el trabajo de exportación. Seleccione el trabajo y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas. Para descargar el archivo CSV con los metadatos, pulse o haga clic en **[!UICONTROL Descargar CSV]** desde la barra de herramientas. Haga clic en **[!UICONTROL Cerrar]**.
 
    ![Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados de forma masiva](assets/csv_download.png)
+
    *Figura: Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados de forma masiva*
 
 >[!MORELIKETHIS]
