@@ -3,7 +3,7 @@ title: Metadatos en cascada
 description: En este artículo se describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -32,8 +32,8 @@ Imagine un escenario en el que desee mostrar metadatos en cascada en función de
 
 Independientemente del tipo de recurso elegido, muestre la información de copyright como campo requerido.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos]**.
-1. En la página Formularios **[!UICONTROL de]** esquema, seleccione un formulario de esquema y, a continuación, toque o haga clic en **[!UICONTROL Editar]** en la barra de herramientas para editar el esquema.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
+1. En la página **[!UICONTROL Formularios de esquema]**, seleccione un formulario de esquema y, a continuación, pulse o haga clic en **[!UICONTROL Editar]** en la barra de herramientas para editar el esquema.
 
    ![select_form](assets/select_form.png)
 
@@ -74,8 +74,8 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    ![select_Depenentfield](assets/select_dependentfield.png)
 
-1. En **[!UICONTROL Requisito]**, elija la opción **[!UICONTROL Requerido, según la nueva regla]** .
-1. Toque o haga clic en **[!UICONTROL Agregar regla]** y elija el campo Tipo **[!UICONTROL de]** recurso para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, elija **[!UICONTROL Vídeo]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Pulse o haga clic en **[!UICONTROL Agregar regla]** y elija el campo **[!UICONTROL Tipo de recurso]** para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Pulse o haga clic en **[!UICONTROL Listo]** para guardar los cambios.
 
    ![define_rule](assets/define_rule.png)
 
@@ -83,9 +83,9 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
    >
    >La lista desplegable con valores predefinidos manualmente se puede utilizar con las reglas. Los menús desplegables con una ruta JSON configurada no se pueden utilizar con reglas que utilicen valores predefinidos para aplicar condiciones. Si los valores se cargan desde JSON en tiempo de ejecución, no es posible aplicar una regla predefinida.
 
-1. En **[!UICONTROL Visibilidad]**, elija la opción **[!UICONTROL Visible, según la nueva regla]** .
+1. En **[!UICONTROL Visibilidad]**, seleccione la opción **[!UICONTROL Visible, según la nueva regla]**.
 
-1. Toque o haga clic en **[!UICONTROL Agregar regla]** y elija el campo Tipo **[!UICONTROL de]** recurso para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, elija **[!UICONTROL Vídeo]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Pulse o haga clic en **[!UICONTROL Agregar regla]** y elija el campo **[!UICONTROL Tipo de recurso]** para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Pulse o haga clic en **[!UICONTROL Listo]** para guardar los cambios.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -104,7 +104,9 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 1. Vaya a la carpeta a la que ha aplicado el esquema de metadatos y abra la página de propiedades de un recurso. Según lo que elija en el campo Tipo de recurso, se muestran los campos de metadatos correspondientes en cascada.
 
    ![Metadatos en cascada para un recurso de vídeo](assets/video_asset.png)
+
    *Figura: Metadatos en cascada para un vídeo*
 
    ![Metadatos en cascada para el recurso de documento](assets/doc_type_fields.png)
+
    *Figura: Metadatos en cascada para un documento*
