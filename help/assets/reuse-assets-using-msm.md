@@ -4,7 +4,7 @@ description: Utilice recursos en varias páginas o carpetas que se deriven de lo
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -68,6 +68,7 @@ Para crear copias en vivo con el primer método, siga estos pasos:
 1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear > Live Copy]**.
 
    ![Creación de una Live Copy desde la interfaz de AEM](assets/create_lc1.png)
+
    *Figura:Creación de una Live Copy desde la interfaz de AEM*
 
 1. Seleccione una carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
@@ -79,6 +80,7 @@ Para crear copias en vivo con el segundo método, siga estos pasos:
 1. En la interfaz de AEM, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
 
    ![Creación de una Live Copy desde la interfaz de AEM](assets/create_lc2.png)
+
    *Figura:Creación de una Live Copy desde la interfaz de AEM*
 
 1. Seleccione el recurso o la carpeta de origen. Haga clic en **[!UICONTROL Siguiente]**. 
@@ -101,16 +103,17 @@ Los dos métodos siguientes funcionan para los recursos y las carpetas:
 
 >[!TIP]
 >
-> Para comprobar el estado de unas pocas copias en vivo independientes, utilice el primer método que se muestra en la página Propiedades. Para comprobar los estados de muchas copias en vivo, utilice el segundo método, es decir, consulte la página Estado **[!UICONTROL de]** relación.
+> Para comprobar el estado de unas pocas copias en vivo independientes, utilice el primer método que se muestra en la página Propiedades. Para comprobar los estados de muchas Live Copies, utilice el segundo método, es decir, consulte la página **[!UICONTROL Estado de relación]**.
 
 ### Información y estado de una Live Copy {#statuslcasset}
 
 Para comprobar la información y los estados de un recurso de Live Copy o una carpeta, siga estos pasos.
 
 1. Seleccione un recurso de Live Copy o una carpeta. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
-1. Haga clic en **[!UICONTROL Live Copy]**. Puede comprobar la ruta del origen, el estado de la suspensión, el estado de la sincronización, la fecha de la última implementación y el usuario que realizó la última implementación.
+1. Click **[!UICONTROL Live Copy]**. Puede comprobar la ruta del origen, el estado de la suspensión, el estado de la sincronización, la fecha de la última implementación y el usuario que realizó la última implementación.
 
    ![La información y los estados de la Live Copy se muestran en una consola en Propiedades](assets/lcfolder_info_properties.png)
+
    *Figura:Información y estados de Live Copy*
 
 1. Puede habilitar o deshabilitar si los recursos secundarios toman en préstamo la configuración de Live Copy.
@@ -122,12 +125,13 @@ Para comprobar la información y los estados de un recurso de Live Copy o una ca
 AEM proporciona una consola para comprobar las estatuas de todas las copias activas de una carpeta de origen. Esta consola muestra el estado de todos los recursos secundarios.
 
 1. Seleccione una carpeta de origen. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
-1. Haga clic en **[!UICONTROL Live Copy Source]**. Para abrir la consola, haga clic en **[!UICONTROL Live Copy Overview]**. Este tablero proporciona un estado de nivel superior de todos los recursos secundarios.
+1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**. Este tablero proporciona un estado de nivel superior de todos los recursos secundarios.
 
    ![Ver estados de las copias en vivo en la consola de Live Copy del origen](assets/livecopy-statuses.png)
+
    *Figura:Ver estados de las copias en vivo en la consola de Live Copy del origen*
 
-1. Para ver la información detallada sobre cada recurso en la carpeta Live Copy, seleccione un recurso y haga clic en Estado de **[!UICONTROL relación]** en la barra de herramientas.
+1. Para ver la información detallada sobre cada recurso en la carpeta Live Copy, seleccione un recurso y haga clic en **[!UICONTROL Estado de relación]** en la barra de herramientas.
 
    ![Información detallada y estado de un recurso secundario de Live Copy en una carpeta](assets/livecopy_relationship_status.png)
 
@@ -147,13 +151,17 @@ Para un recurso o una carpeta de origen, puede ver la siguiente información y r
 * Suspenda la relación o cambie la configuración de implementación para una Live Copy específica.
 * Acceda a la consola de información general de Live Copy.
 
-Seleccione el recurso o la carpeta de origen, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`.
+Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
 
-![Acciones e información disponibles en el carril Referencias para la](assets/referencerail_source.png)figura de origen *seleccionada:Acciones e información disponibles en el carril Referencias del origen seleccionado*
+![Acciones e información disponibles en el carril Referencias del origen seleccionado](assets/referencerail_source.png)
+
+*Figura:Acciones e información disponibles en el carril Referencias del origen seleccionado*
 
 Para una Live Copy específica, haga clic en **[!UICONTROL Editar Live Copy]** para suspender la relación o cambiar la configuración de la implementación.
 
-![Para una Live Copy específica, se puede acceder a la opción de suspender la relación o cambiar la configuración de la implementación desde el carril Referencias cuando se selecciona](assets/referencerail_editlc_options.png)el recurso de origen *Figura:Suspender la relación o cambiar la configuración de implementación de una Live Copy específica*
+![Para una Live Copy específica, se puede acceder a la opción de suspender la relación o cambiar la configuración de la implementación desde el carril Referencias cuando se selecciona el recurso de origen](assets/referencerail_editlc_options.png)
+
+*Figura:Suspender la relación o cambiar la configuración de implementación de una Live Copy específica*
 
 ### Acciones rápidas del carril Referencias para la Live Copy {#refraillc}
 
@@ -163,9 +171,11 @@ Para una carpeta o un recurso de Live Copy, puede ver la siguiente información 
 * Abra o revele una copia concreta en directo en la interfaz de usuario de AEM.
 * Despliegue las actualizaciones.
 
-Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`.
+Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
 
-![Acciones disponibles en el carril Referencias para la Live Copy](assets/referencerail_livecopy.png)*Figura seleccionada:Acciones disponibles en el carril Referencias para la Live Copy seleccionada*
+![Acciones disponibles en el carril Referencias para la Live Copy seleccionada](assets/referencerail_livecopy.png)
+
+*Figura:Acciones disponibles en el carril Referencias para la Live Copy seleccionada*
 
 ## Propagación de modificaciones de copias de origen a Live Copy {#rolloutsync}
 
@@ -176,10 +186,11 @@ Una vez modificado un origen, los cambios se pueden propagar a las copias en viv
 Puede iniciar una acción de despliegue desde el recurso de origen y actualizar todas o algunas copias activas seleccionadas.
 
 1. Seleccione un recurso de Live Copy o una carpeta. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
-1. Haga clic en **[!UICONTROL Live Copy Source]**. Haga clic en **[!UICONTROL Despliegue]** en la barra de herramientas de la parte superior.
+1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Haga clic en **[!UICONTROL Despliegue]** en la barra de herramientas de la parte superior.
 1. Seleccione las copias activas que desee actualizar. Haga clic en **[!UICONTROL Despliegue]**. Para desplegar las actualizaciones realizadas en los recursos secundarios, seleccione Origen de **[!UICONTROL despliegue y Todos los elementos secundarios]**.
 
    ![Despliegue las modificaciones del origen en unas pocas o todas las Live Copies](assets/livecopy_rollout_page.png)
+
    *Figura:Despliegue las modificaciones del origen en unas pocas o todas las Live Copies*
 
 >[!NOTE]
@@ -188,7 +199,9 @@ Puede iniciar una acción de despliegue desde el recurso de origen y actualizar 
 
 Como alternativa, puede iniciar una acción de despliegue desde el carril Referencias después de seleccionar una Live Copy específica. Para obtener más información, consulte Acciones [rápidas desde el carril Referencias para la Live Copy](#refraillc). En este método de implementación, solo se actualizan la Live Copy seleccionada y, opcionalmente, sus elementos secundarios.
 
-![Despliegue las modificaciones del origen en la Live Copy](assets/livecopy_rollout_dialog.png)*Figura seleccionada:Despliegue las modificaciones del origen en la Live Copy seleccionada*
+![Despliegue las modificaciones del origen en la Live Copy seleccionada](assets/livecopy_rollout_dialog.png)
+
+*Figura:Despliegue las modificaciones del origen en la Live Copy seleccionada*
 
 ### Acerca de la acción de sincronización {#aboutsync}
 
@@ -202,11 +215,13 @@ Una acción de sincronización extrae las modificaciones de un origen únicament
 
 ### Sincronizar una Live Copy {#synclc}
 
-Para iniciar una acción de sincronización, abra la página **[!UICONTROL Propiedades]** de una Live Copy, haga clic en **[!UICONTROL Live Copy]** y, a continuación, haga clic en la acción que desee en la barra de herramientas.
+Para iniciar una acción de sincronización, abra la página **[!UICONTROL Propiedades]** de una Live Copy, haga clic en **[!UICONTROL Live Copy]** y, a continuación, seleccione la acción que desee en la barra de herramientas.
 
 Para ver los estados y la información relacionados con una acción de sincronización, consulte [Información y estado de una Live Copy](#statuslcasset) e [Información y estados de todas las Live Copy de una carpeta](#statuslcfolder).
 
-![La acción Sincronizar extrae los cambios realizados en la](assets/livecopy_sync.png)Figura de origen *:La acción Sincronizar extrae los cambios realizados en el origen*
+![La acción Sincronizar extrae los cambios realizados en el origen](assets/livecopy_sync.png)
+
+*Figura:La acción Sincronizar extrae los cambios realizados en el origen*
 
 >[!NOTE]
 >
@@ -216,9 +231,9 @@ Para ver los estados y la información relacionados con una acción de sincroniz
 
 Puede suspender temporalmente la relación para evitar que una Live Copy reciba las modificaciones realizadas en el recurso o la carpeta de origen. La relación también se puede reanudar para que Live Copy empiece a recibir las modificaciones del origen.
 
-Para suspender o reanudar, abra la página **[!UICONTROL Propiedades]** de una Live Copy, haga clic en **[!UICONTROL Live Copy]** y haga clic en la acción que desee en la barra de herramientas.
+Para suspender o reanudar, abra la página **[!UICONTROL Propiedades]** de una Live Copy, haga clic en **[!UICONTROL Live Copy]** y seleccione la acción que desee en la barra de herramientas.
 
-También puede suspender o reanudar rápidamente las relaciones de varios recursos en una carpeta de Live Copy desde la consola Información general **[!UICONTROL de]** Live Copy. Consulte [Realizar acciones en varios recursos de las carpetas](#bulkactions)de Live Copy.
+También puede suspender o reanudar rápidamente las relaciones de varios recursos en una carpeta de Live Copy desde la consola **[!UICONTROL Información general de Live Copy]**. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulkactions).
 
 ## Realizar modificaciones locales en una Live Copy {#localmods}
 
@@ -229,6 +244,7 @@ Sin embargo, tiene la flexibilidad de realizar modificaciones locales en una Liv
 Puede deshacer todas las modificaciones locales y revertir el recurso al estado de su origen. La acción Restablecer anula de forma irrevocable e instantánea todas las modificaciones locales y restablece la herencia en todos los campos de metadatos. Para revertir, en la página **[!UICONTROL Propiedades]** de un recurso de Live Copy, haga clic en **[!UICONTROL Restablecer]** en la barra de herramientas.
 
 ![La acción Restablecer sobrescribe las ediciones locales y trae la Live Copy en parte con su origen.](assets/livecopy_reset.png)
+
 *Figura: La acción Restablecer sobrescribe las ediciones locales y trae la Live Copy en parte con su origen*
 
 ## Eliminar la relación en directo {#detach}
@@ -237,26 +253,28 @@ Puede eliminar completamente la relación entre un origen y una Live Copy median
 
 1. Seleccione una carpeta o un recurso de Live Copy. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
 
-1. Haga clic en **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Desasociar]** en la barra de herramientas. Haga clic en **[!UICONTROL Separar]** en el cuadro de diálogo presentado.
+1. Click **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Desasociar]** en la barra de herramientas. Haga clic en **[!UICONTROL Separar]** en el cuadro de diálogo presentado.
 
    ![La acción Separar elimina completamente la relación entre la copia original y la Live Copy](assets/livecopy_detach.png)
+
    *Figura:La acción Separar elimina completamente la relación entre la copia original y la Live Copy*
 
    >[!CAUTION]
    >
    >La relación se elimina inmediatamente cuando se hace clic en **[!UICONTROL Separar]** en el cuadro de diálogo. No se puede deshacer haciendo clic en **[!UICONTROL Cancelar]** en la página Propiedades.
 
-Como alternativa, puede separar rápidamente varios recursos de una carpeta de Live Copy desde la consola Información general **[!UICONTROL de]** Live Copy. Consulte [Realizar acciones en varios recursos de las carpetas](#bulkactions)de Live Copy.
+Alternatively, you can quickly detach multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulkactions).
 
 ## Realizar acciones en varios recursos de una carpeta de Live Copy {#bulkactions}
 
 Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada recurso puede resultar tedioso. Puede iniciar rápidamente las acciones básicas en muchos recursos desde la consola de Live Copy. Los métodos anteriores siguen funcionando para activos individuales.
 
 1. Seleccione una carpeta de origen. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
-1. Haga clic en **[!UICONTROL Live Copy Source]**. Para abrir la consola, haga clic en **[!UICONTROL Live Copy Overview]**.
+1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**.
 1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desconectar]**. Puede iniciar rápidamente estas acciones en cualquier recurso en cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
 
    ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
+
    *Figura:Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy*
 
 ## Ampliar MSM para recursos {#extendapi}
