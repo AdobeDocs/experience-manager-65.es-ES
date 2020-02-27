@@ -3,7 +3,7 @@ title: Esquemas de metadatos
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar un esquema de metadatos y aplicar un esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
 
 ---
 
@@ -28,27 +28,26 @@ Puede utilizar el editor de formularios de esquemas de metadatos para modificar 
 
    Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar formularios](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de esquema de metadatos para obtener más información. Si modifica el esquema de metadatos de un tipo MIME determinado, se modificará el diseño de página de propiedades de los recursos con el tipo MIME actual y todos los subtipos de recursos. Por ejemplo, la modificación de un esquema jpeg en `default/image` solo modifica el diseño de metadatos (propiedades de recurso) de los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modifican el diseño de metadatos de todos los tipos de recursos.
 
-1. Para ver una lista de formularios/plantillas, haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos]**.
+1. Para ver una lista de formularios/plantillas, haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
    AEM proporciona las siguientes plantillas listas para usar:
-
    * **predeterminado**: Formulario de esquema de metadatos base para recursos.
-   Los siguientes formularios secundarios heredan las propiedades del formulario predeterminado:
-i. **imagen**: Formulario de esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo `image/jpeg`, `image/png`, etc.
-El formulario &quot;imagen&quot; tiene las siguientes plantillas de formulario secundarias:a. **jpeg**: Formulario de esquema para recursos con subtipo `jpeg`.
-b. **tiff**: Formulario de esquema para los recursos con subtipo `tiff`.
 
-   ii. **aplicación**: Formulario de esquema para recursos con tipo MIME `application`, por ejemplo `application/pdf`, `application/zip`, etc.
-a. **pdf**: Formulario de esquema para recursos con subtipo `pdf`.
+      Los siguientes formularios secundarios heredan las propiedades del formulario predeterminado:
 
-   iii. **video**: Formulario de esquema para recursos con tipo MIME `video`, como `video/avi`, `video/mp4`, etc.
+      1. **imagen**: Formulario de esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo `image/jpeg`, `image/png`, etc.
 
+         El formulario &quot;imagen&quot; tiene las siguientes plantillas de formulario secundarias:
+         * **jpeg**: Formulario de esquema para recursos con subtipo `jpeg`.
+         * **tiff**: Formulario de esquema para los recursos con subtipo `tiff`.
+      1. **aplicación**: Formulario de esquema para recursos con tipo MIME `application`, por ejemplo `application/pdf`, `application/zip`, etc.
+         * **pdf**: Formulario de esquema para recursos con subtipo `pdf`.
+      1. **video**: Formulario de esquema para recursos con tipo MIME `video`, como `video/avi`, `video/mp4`, etc.
    * **colección**: Formulario de esquema para colecciones.
    * **** contentfragment: Formulario de esquema para fragmentos de contenido.
    * **formularios**: Este formulario de esquema está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager.
-
 
 >[!NOTE]
 >
@@ -81,7 +80,7 @@ Puede agregar nuevas fichas o elementos de formulario al formulario de esquema d
 
    ![chlimage_1-39](assets/chlimage_1-175.png)
 
-1. En la página Editor **[!UICONTROL de esquemas de]** metadatos, personalice la página de propiedades del recurso arrastrando uno o varios componentes de la lista de tipos de componentes de la ficha **[!UICONTROL Generar formulario]** a la ficha **[!UICONTROL Básico]** .
+1. En la página **[!UICONTROL Editor de esquemas de metadatos]**, personalice la página de propiedades del recurso arrastrando uno o varios componentes de la lista de tipos de componentes de la pestaña **[!UICONTROL Generar formulario]** a **[!UICONTROL Básico]**.
 
    ![chlimage_1-40](assets/chlimage_1-176.png)
 
@@ -120,9 +119,9 @@ Los siguientes son los valores válidos para esta propiedad:
 
 Los siguientes son los valores válidos para esta propiedad:
 
-* `./jcr:content/metadata/dc:title`:: Almacena el valor en el nodo de metadatos del recurso como propiedad `dc:title`.
+* `./jcr:content/metadata/dc:title`: Almacena el valor en el nodo de metadatos del recurso como propiedad `dc:title`.
 
-* `./jcr:created`:: Muestra la propiedad JCR en el nodo del recurso. Si configura estas propiedades en propiedades de vista, le recomendamos que las marque como Deshabilitar edición, ya que están protegidas. De lo contrario, los [!UICONTROL recursos con error no pueden modificar] los resultados al guardar las propiedades del recurso.
+* `./jcr:created`:: Muestra la propiedad JCR en el nodo del recurso. Si configura estas propiedades en propiedades de vista, le recomendamos que las marque como Deshabilitar edición, ya que están protegidas. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
 
 Para asegurarse de que el componente se muestra correctamente en el formulario de esquema de metadatos, la ruta de la propiedad no debe incluir espacios.
 
@@ -140,7 +139,7 @@ Para asegurarse de que el componente se muestra correctamente en el formulario d
 >
 >El componente Campo oculto no incluye estos atributos. En su lugar, incluye propiedades, como los atributos Nombre, Valor, Etiqueta de campo y Descripción. Los valores del componente Campo oculto se envían como parámetro POST cada vez que se guarda el recurso. No se guarda como metadatos para el recurso.
 
-Si selecciona la opción **[!UICONTROL Obligatorio]** , puede buscar recursos que no tengan metadatos obligatorios. En el panel **[!UICONTROL Filtros]** , expanda el predicado Validación **[!UICONTROL de]** metadatos y seleccione la opción **[!UICONTROL No válido]** . Los resultados de la búsqueda muestran los recursos que carecen de metadatos obligatorios configurados a través del formulario de esquema.
+Si selecciona la opción **[!UICONTROL Obligatorio]**, puede buscar recursos que no tengan metadatos obligatorios. En el panel **[!UICONTROL Filtros]**, expanda el predicado **[!UICONTROL Validación de metadatos]** y seleccione la opción **[!UICONTROL No válido]**. Los resultados de la búsqueda muestran los recursos que carecen de metadatos obligatorios configurados a través del formulario de esquema.
 
 ![chlimage_1-42](assets/chlimage_1-178.png)
 
@@ -154,11 +153,11 @@ Para incluir cualquier ficha en la página de propiedades, además de la ficha d
 
 ### Especificar propiedades en el archivo JSON {#specify-properties-in-json-file}
 
-En lugar de especificar propiedades para las opciones de la ficha **[!UICONTROL Configuración]** , puede definir las opciones de un archivo JSON especificando los pares de clave-valor correspondientes. Especifique la ruta del archivo JSON en el campo Ruta **[!UICONTROL de]** JSON.
+En lugar de especificar propiedades para las opciones de la pestaña **[!UICONTROL Configuración]**, puede definir las opciones de un archivo JSON especificando los pares de clave-valor correspondientes. Especifique la ruta del archivo JSON en el campo **[!UICONTROL Ruta de JSON]**.
 
 #### Agregar o eliminar una ficha del formulario de esquema {#adding-deleting-a-tab-in-the-schema-form}
 
-El editor de esquemas permite agregar o eliminar una ficha. El formulario de esquema predeterminado incluye las fichas **[!UICONTROL Básico]**, **[!UICONTROL Avanzado]** , **[!UICONTROL IPTC]** y Extensión **[!UICONTROL IPTC]** de forma predeterminada.
+El editor de esquemas permite agregar o eliminar una pestaña. El formulario de esquema predeterminado incluye las pestañas **[!UICONTROL Básico]**, **[!UICONTROL Avanzado]**, **[!UICONTROL IPTC]** y **[!UICONTROL Extensión IPTC]** de forma predeterminada.
 
 ![chlimage_1-45](assets/chlimage_1-181.png)
 
@@ -190,7 +189,7 @@ Recursos AEM proporciona formularios predeterminados para varios tipos MIME de f
 
 ### Agregar nuevos formularios para tipos MIME {#add-new-forms-for-mime-types}
 
-Cree un nuevo formulario bajo el tipo de formulario correspondiente. Por ejemplo, para agregar una nueva plantilla para el subtipo **imagen/png** , cree el formulario en los formularios de &quot;imagen&quot;. El título del formulario de esquema es el nombre del subtipo. En este caso, el título es &quot;png.**&quot;**
+Cree un nuevo formulario bajo el tipo de formulario correspondiente. Por ejemplo, para agregar una nueva plantilla para el subtipo **imagen/png**, cree el formulario en los formularios de “imagen”. El título del formulario de esquema es el nombre del subtipo. En este caso, el título es “png.**”**
 
 #### Usar una plantilla de esquema existente para varios tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -237,7 +236,7 @@ La herencia de metadatos por recursos se basa en el esquema aplicado a la carpet
 
 Si la carpeta tiene una subcarpeta, los recursos de la subcarpeta heredarán los metadatos del esquema aplicado en el nivel de subcarpeta si se aplica un esquema diferente en el nivel de subcarpeta. Sin embargo, si no se aplica ningún esquema o el mismo esquema en el nivel de subcarpeta, los recursos de subcarpeta heredarán los metadatos del esquema aplicado en el nivel de carpeta principal.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos]**. Se muestra la página Formularios **[!UICONTROL de esquema de]** metadatos.
+1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Seleccione la casilla de verificación situada antes de un formulario, por ejemplo el formulario de metadatos predeterminado, y toque o haga clic en el icono de copia y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo `my_default`. También puede crear un formulario personalizado.
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -270,7 +269,7 @@ Puede definir campos obligatorios en un nivel de carpeta, que se aplican a los r
 >
 >Un campo de metadatos puede definirse como obligatorio en función del valor de otro campo. En la vista Tarjetas, AEM no muestra el mensaje de advertencia sobre los metadatos que faltan en estos campos obligatorios de metadatos.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos]**. Se muestra la página Formularios **[!UICONTROL de esquema de]** metadatos.
+1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Guarde el formulario de metadatos predeterminado como un formulario personalizado. Por ejemplo, guárdelo como `my_default`.
 
    ![chlimage_1-53](assets/chlimage_1-189.png)
