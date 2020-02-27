@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ---
 
@@ -361,6 +361,8 @@ Además, se puede recuperar la información de hasta 10 clientes (instancias en 
 * `TransferredSegmentBytes:`el número total de bytes transferidos a este cliente.
 
 ## Mantenimiento del repositorio en espera en frío {#cold-standby-repository-maintenance}
+
+### Limpieza de revisión {#revision-clean}
 
 >[!NOTE]
 Si ejecuta la limpieza de revisión [en línea](/help/sites-deploying/revision-cleanup.md) en la instancia principal, no es necesario el procedimiento manual que se presenta a continuación. Además, si utiliza la limpieza de revisión en línea, la operación en la instancia de espera se realizará `cleanup ()` automáticamente.
