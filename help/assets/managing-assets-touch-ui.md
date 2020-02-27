@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -689,7 +689,9 @@ También puede agregar mapas de imagen mediante el editor de imágenes. Para obt
 
 La línea de tiempo le permite ver varios eventos para un elemento seleccionado, como flujos de trabajo activos para un recurso, comentarios/anotaciones, registros de actividades y versiones.
 
-![Ordenar entradas de línea de tiempo para un recurso](assets/sort_timeline.gif)*Figura: Ordenar entradas de línea de tiempo para un recurso*
+![Ordenar entradas de línea de tiempo para un recurso](assets/sort_timeline.gif)
+
+*Figura: Ordenar entradas de línea de tiempo para un recurso*
 
 >[!NOTE]
 >
