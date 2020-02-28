@@ -3,7 +3,7 @@ title: Formatos admitidos para los recursos
 description: Lista de formatos de archivo compatibles con Recursos AEM y funciones compatibles con cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1e70a1a0f82bcdf698dec378df1c3d59815e692b
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -93,26 +93,26 @@ La biblioteca de Adobe Camera Raw permite que Recursos AEM ingrese imágenes sin
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes:
 
-| Formato | Almacenamiento | Administración de metadatos<br> | Metadata<br> extraction | Generación de miniaturas<br> | Edición interactiva<br> | Reescritura de metadatos<br> | Perspectivas |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
-| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| ODT | ✓ | ✓ | ✓ |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |  |  |  |  |
-| RTF | ✓ | ✓ | ✓ |  |  |  |  |
-| TXT | ✓ | ✓ | ✓ |  |  |  |  |
-| XLS | ✓ | ✓ | ✓ |  |  |  |  |
-| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| ODS | ✓ | ✓ | ✓ |  |  |  |  |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ODP | ✓ | ✓ | ✓ |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
-| PS | ✓ | ✓ |  |  |  |  |  |
-| QXP | ✓ | ✓ |  |  |  |  |  |
-| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| Formato | Almacenamiento | Administración de metadatos<br> | Metadata<br> extraction | Generación de miniaturas<br> | Edición interactiva<br> | Reescritura de metadatos<br> | Perspectivas | Recursos de red |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
+| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| ODT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| RTF | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| TXT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| XLS | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| ODS | ✓ | ✓ | ✓ |  |  |  |  |  |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| ODP | ✓ | ✓ | ✓ |  |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
+| PS | ✓ | ✓ |  |  |  |  |  |  |
+| QXP | ✓ | ✓ |  |  |  |  |  |  |
+| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
 Los formatos de documento compatibles con las funciones de Dynamic Media son los siguientes:
 
@@ -272,5 +272,4 @@ Consulte también [Activación de la compatibilidad](/help/sites-administering/s
 >[!MORELIKETHIS]
 >
 >* [Habilite la compatibilidad](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)con los parámetros de trabajo de carga de recursos basados en tipos MIME/Scene7.
->* [Formatos admitidos para la función Recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md)
 
