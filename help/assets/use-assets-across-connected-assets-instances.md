@@ -3,7 +3,7 @@ title: Uso de recursos conectados para compartir recursos DAM en el flujo de tra
 description: Utilice los recursos disponibles en una implementación remota de Recursos Adobe Experience Manager al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -29,22 +29,13 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
    |  | AEM Sites como Cloud Service | Sitios de AEM 6.5 en AMS | Sitios AEM 6.5 in situ |
    |---|---|---|---|
-   | **AEM Assets como Cloud Service** | Admitido | Admitido | Admitido |
+   | **AEM Assets as a Cloud Service** | Admitido | Admitido | Admitido |
    | **AEM 6.5 Assets en AMS** | No admitido | Admitido | Admitido |
    | **Recursos AEM 6.5 in situ** | No admitido | No admitido | No admitido |
 
 ### Formatos de archivo admitidos {#mimetypes}
 
-Los autores pueden buscar imágenes y los siguientes tipos de documentos en Content Finder y utilizar los recursos buscados en el Editor de páginas. Se pueden añadir documentos al componente y `Download` imágenes al `Image` componente. Los autores también pueden añadir recursos remotos en cualquier componente personalizado de AEM que extienda los componentes predeterminados `Download` o `Image` .
-
-* Microsoft Word (DOC y DOCX)
-* Microsoft Excel (XLS y XLSX)
-* Microsoft PowerPoint (PPT y PPTX)
-* Adobe PDF (PDF)
-* Texto OpenDocument (ODT)
-* Formato de texto enriquecido (RTF)
-* Texto sin formato (TXT)
-* Páginas Web (HTML)
+Los autores pueden buscar imágenes y los siguientes tipos de documentos en Content Finder y utilizar los recursos buscados en el Editor de páginas. Se pueden añadir documentos al componente y `Download` imágenes al `Image` componente. Los autores también pueden añadir recursos remotos en cualquier componente personalizado de AEM que extienda los componentes predeterminados `Download` o `Image` . Para obtener una lista de los formatos admitidos, consulte Formatos [admitidos de Recursos](assets-formats.md#supported-document-formats)conectados.
 
 ### Users and groups involved {#users-and-groups-involved}
 
