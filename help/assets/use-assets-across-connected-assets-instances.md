@@ -3,7 +3,7 @@ title: Uso de recursos conectados para compartir recursos DAM en el flujo de tra
 description: Utilice los recursos disponibles en una implementación remota de Recursos Adobe Experience Manager al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
 
 ---
 
@@ -35,7 +35,10 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 ### Formatos de archivo admitidos {#mimetypes}
 
-Los autores pueden buscar imágenes y los siguientes tipos de documentos en Content Finder y utilizar los recursos buscados en el Editor de páginas. Se pueden añadir documentos al componente y `Download` imágenes al `Image` componente. Los autores también pueden añadir recursos remotos en cualquier componente personalizado de AEM que extienda los componentes predeterminados `Download` o `Image` . Para obtener una lista de los formatos admitidos, consulte Formatos [admitidos de Recursos](assets-formats.md#supported-document-formats)conectados.
+Los autores pueden buscar imágenes y los siguientes tipos de documentos en Content Finder y utilizar los recursos buscados en el Editor de páginas. Se pueden añadir documentos al componente y `Download` imágenes al `Image` componente. Los autores también pueden añadir recursos remotos en cualquier componente personalizado de AEM que extienda los componentes predeterminados `Download` o `Image` . La lista de formatos admitidos es la siguiente:
+
+* **Formatos** de imagen: Recursos conectados admiten los formatos de imagen admitidos por el componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagen. Los componentes de Dynamic Media no son compatibles.
+* **Formatos** de documento: Consulte Formatos [de documento compatibles con Recursos](assets-formats.md#supported-document-formats)conectados.
 
 ### Users and groups involved {#users-and-groups-involved}
 
