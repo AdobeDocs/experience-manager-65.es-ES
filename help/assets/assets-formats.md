@@ -3,7 +3,7 @@ title: Formatos admitidos para los recursos
 description: Lista de formatos de archivo compatibles con Recursos AEM y funciones compatibles con cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
 
 ---
 
@@ -87,13 +87,13 @@ Consulte Biblioteca [de transcodificación de imágenes](imaging-transcoding-lib
 
 ## RAW de cámara compatible {#supported-camera-raw}
 
-La biblioteca de Adobe Camera Raw permite que Recursos AEM ingrese imágenes sin procesar. See [Camera Raw Support](camera-raw.md).
+La biblioteca de Adobe Camera Raw permite que Recursos AEM ingrese imágenes sin procesar. See [Camera Raw support](camera-raw.md).
 
 ## Formatos de documento admitidos {#supported-document-formats}
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes:
 
-| Formato | Almacenamiento | Administración de metadatos<br> | Metadata<br> extraction | Generación de miniaturas<br> | Edición interactiva<br> | Reescritura de metadatos<br> | Perspectivas | Recursos de red |
+| Formato | Almacenamiento | Administración de metadatos<br> | Metadata<br> extraction | Generación de miniaturas<br> | Edición interactiva<br> | Reescritura de metadatos<br> | [Perspectivas](touch-ui-asset-insights.md) | [Recursos de red](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
