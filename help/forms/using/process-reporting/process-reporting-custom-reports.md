@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -32,7 +32,7 @@ Antes de agregar un informe personalizado, realice el siguiente procedimiento de
 
 La interfaz CRX QueryBuilder REST expone la funcionalidad del Creador de consultas de uso compartido de recursos a través de una API de Java y una API de REST. Obtenga información sobre cómo utilizar la interfaz [](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder REST antes de realizar los siguientes pasos:
 
-1. Vaya a la URL https://[server]:[port]/lc/bin/querybuilder.json
+1. Navegue hasta la dirección URL `https://[server]:[port]/lc/bin/querybuilder.json`
 1. Cree una consulta basada en la estructura de nodos de almacenamiento de Process Reporting y en las propiedades de nodo.
 
    Puede especificar parámetros opcionales para especificar el desplazamiento, el límite, las visitas y las propiedades. Puede codificar los argumentos de los informes estáticos y recuperar los parámetros de la interfaz de usuario para los informes dinámicos.
