@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -189,22 +189,22 @@ Esta sección describe la instalación y configuración del software NetWorker d
 
 1. Establezca la contraseña del archivo de configuración de la siguiente manera:
 
-   * Abra un símbolo del sistema y cambie a *[NetWorker_root]*\Legato\nsr\bin.
+   * Abra un símbolo del sistema y cambie a `[NetWorker_root]\Legato\nsr\bin`.
    * Ejecute el siguiente comando: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;contraseña>*
 
 1. Cree los archivos ejecutables por lotes (.bat) que se utilizan para realizar una copia de seguridad de la base de datos. (Consulte la documentación de NetWorker). Configure los detalles en los archivos por lotes según la instalación.
 
    * Copia de seguridad de base de datos completa (nsrnmdbf.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nombre de usuario`-U`*[]*contraseña`-P`*[]*`-l full`*&lt;nombre_de_base de datos>*
+      `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]`contraseña`-P`*[]*`-l full`*&lt;nombre_de_base de datos>*
 
    * Backup incremental de la base de datos (nsrnmdbi.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nombre de usuario`-U`*[]*contraseña`-P`*[]*`-l 1 -R`*&lt;nombre_de_base de datos>*
+      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;nombre_base_de_datos>*
 
    * Copia de seguridad del registro de la base de datos (nsrnmdbl.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nombre de usuario`-U`*[]*contraseña`-P`*[]*`-l incr -R`*&lt;nombre_de_base de datos>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nombre_de_base de datos>*
 
       Donde:
 
@@ -240,7 +240,7 @@ Realice las siguientes tareas después de completar una copia de seguridad compl
 >
 >Las secuencias de comandos requieren la ruta completa al archivo nsrnmd_win.cfg que creó al [preparar EMC Document Content Server para backup y recuperación](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Abra un símbolo del sistema y cambie a *[NetWorker_root]*\Legato\nsr\bin.
+1. Abra un símbolo del sistema y cambie a `[NetWorker_root]\Legato\nsr\bin`.
 1. Ejecute el siguiente comando:
 
    ```as3
@@ -266,4 +266,3 @@ Realice las siguientes tareas antes de restaurar los datos de los formularios de
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-
