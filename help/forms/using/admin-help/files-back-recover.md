@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -154,7 +154,7 @@ El directorio raíz de almacenamiento de contenido contiene el repositorio de Co
 
 El directorio raíz del almacenamiento de contenido se crea cuando se instala Content Services (obsoleto). La ubicación del directorio raíz de almacenamiento de contenido se determina durante el proceso de instalación de formularios de AEM.
 
-La ubicación predeterminada para el directorio raíz de almacenamiento de contenido es *[aem-forms root]*/lccs_data.
+La ubicación predeterminada para el directorio raíz de almacenamiento de contenido es `[aem-forms root]/lccs_data`.
 
 Realice una copia de seguridad de los siguientes directorios ubicados en el directorio raíz de almacenamiento de contenido:
 
@@ -176,7 +176,7 @@ Al instalar Content Services (obsoleto) en un entorno en clúster, el directorio
 
 **** Directorio raíz de índice: Directorio que se crea en cada nodo del clúster, siempre con la misma ruta y nombre de directorio
 
-La ubicación predeterminada para el directorio raíz de almacenamiento de contenido es *[GDS root]*/lccs_data, donde *[GDS root]* es la ubicación descrita en la ubicación [de](files-back-recover.md#gds-location)GDS. Realice una copia de seguridad de los siguientes directorios ubicados en el directorio raíz de almacenamiento de contenido:
+La ubicación predeterminada para el directorio raíz de almacenamiento de contenido es `[GDS root]/lccs_data`, donde `[GDS root]` es la ubicación descrita en la ubicación [de](files-back-recover.md#gds-location)GDS. Realice una copia de seguridad de los siguientes directorios ubicados en el directorio raíz de almacenamiento de contenido:
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ La ubicación predeterminada para el directorio raíz de almacenamiento de conte
 
 Si el directorio /backup-lucene-indexes no está presente, haga una copia de seguridad del directorio /lucene-indexes, también ubicado en el directorio Raíz de almacenamiento de contenido. Si el directorio /backup-lucene-indexes está presente, no realice una copia de seguridad del directorio /lucene-indexes porque puede causar errores.
 
-La ubicación predeterminada para el directorio raíz de índice es *[aem-forms root]*/lucene-indexes en cada nodo.
+La ubicación predeterminada para el directorio raíz de índice está `[aem-forms root]/lucene-indexes` en cada nodo.
 
 ## Fuentes instaladas por el cliente {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ Si ha instalado fuentes adicionales en el entorno de formularios AEM, debe reali
 
 >[!NOTE]
 >
->De forma predeterminada, las fuentes de Adobe instaladas con formularios AEM se encuentran en el directorio raíz [/fuentes de]aem-forms.
+>De forma predeterminada, las fuentes de Adobe instaladas con los formularios AEM se encuentran en el `[aem-forms root]/fonts` directorio.
 
 Si está reinicializando el sistema operativo en el equipo host y desea utilizar fuentes del sistema operativo anterior, también se debe realizar una copia de seguridad del contenido del directorio de fuentes del sistema. (Para obtener instrucciones específicas, consulte la documentación del sistema operativo).
