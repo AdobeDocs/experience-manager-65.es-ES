@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -53,7 +53,7 @@ La ruta a un recurso ubicado en el repositorio de AEM Forms es:
 
 >[!NOTE]
 >
->Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web https://[server name]:[server port]/repository. Puede verificar los resultados de inicio rápido mediante un navegador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede ver el contenido en un navegador web.
+>Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web `https://[server name]:[server port]/repository`. Puede verificar los resultados de inicio rápido mediante un navegador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede ver el contenido en un navegador web.
 
 >[!NOTE]
 >
