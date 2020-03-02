@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -156,7 +156,7 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
    * Un `com.adobe.idp.Document` objeto que representa el archivo que se va a convertir.
    * Un `java.lang.String` objeto que contiene la extensión de archivo.
    * Un `java.lang.String` objeto que contiene la configuración del tipo de archivo que se va a utilizar en la conversión. La configuración del tipo de archivo proporciona la configuración de conversión para distintos tipos de archivo, como .doc o .xls.
-   * Un `java.lang.String` objeto que contiene el nombre de la configuración de PDF que se va a utilizar. Por ejemplo, puede especificar `Standard`.
+   * Un `java.lang.String` objeto que contiene el nombre de la configuración de PDF que se va a utilizar. For example, you can specify `Standard`.
    * Un `java.lang.String` objeto que contiene el nombre de la configuración de seguridad que se va a utilizar.
    * Un `com.adobe.idp.Document` objeto opcional que contiene la configuración que se va a aplicar al generar el documento PDF.
    * Objeto opcional `com.adobe.idp.Document` que contiene información de metadatos que se aplicará al documento PDF.
@@ -713,7 +713,7 @@ Si planea trabajar en archivos XML de cuadros de diálogo o secuencias de comand
 Los archivos de cuadro de diálogo y de secuencia de comandos residen en el archivo appmondata.jar. Para poder modificar cualquiera de estos archivos o agregar nuevos archivos de script o de diálogo, debe desempaquetar este archivo JAR. Por ejemplo, supongamos que desea agregar compatibilidad con la aplicación EditPlus. Puede crear dos archivos XML, denominados appmon.editplus.script.en_US.xml y appmon.editplus.script.addis.es_ES.xml. Estas secuencias de comandos XML deben agregarse al archivo adobe-appmondata.jar en dos ubicaciones, tal como se especifica a continuación:
 
 * adobe-livecycle-native-jleader-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. El archivo adobe-livecycle-native-jpatrón-x86_win32.ear se encuentra en la carpeta de exportación de `[AEM forms install directory]\configurationManager`. (si AEM Forms se implementa en otro servidor de aplicaciones J2EE, sustituya el archivo adobe-livecycle-native-jpatrón-x86_win32.ear por el archivo EAR que corresponde a su servidor de aplicaciones J2EE).
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (el archivo adobe-appmondata.jar se encuentra en el archivo adobe-generatepdf-dsc.jar). El archivo adobe-generatepdf-dsc.jar se encuentra en la carpeta *[AEM Forms install directory]*\deploy.
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (el archivo adobe-appmondata.jar se encuentra en el archivo adobe-generatepdf-dsc.jar). El archivo adobe-generatepdf-dsc.jar está en la `[AEM forms install directory]\deploy` carpeta.
 
 Después de agregar estos archivos XML al archivo adobe-appmondata.jar, debe volver a implementar el componente GeneratePDF. Para agregar archivos XML de cuadro de diálogo y secuencia de comandos al archivo adobe-appmondata.jar, lleve a cabo las siguientes tareas:
 
@@ -741,7 +741,7 @@ Después de agregar estos archivos XML al archivo adobe-appmondata.jar, debe vol
 
 Si desea dirigir archivos a una nueva aplicación nativa, debe crear un archivo XML de secuencia de comandos para esa aplicación. Si desea modificar la forma en que el servicio Generar PDF interactúa con una aplicación nativa que ya se admite, debe modificar la secuencia de comandos para esa aplicación.
 
-La secuencia de comandos contiene instrucciones para desplazarse por los elementos de ventana de la aplicación nativa y proporcionar respuestas específicas a dichos elementos. El archivo que contiene esta información es aproximadamente.*[appname]*.script.*[locale]*.xml. Un ejemplo es appmon.notepad.script.en_US.xml.
+La secuencia de comandos contiene instrucciones para desplazarse por los elementos de ventana de la aplicación nativa y proporcionar respuestas específicas a dichos elementos. El archivo que contiene esta información es `appmon.[appname]``.script.[locale].xml`. Un ejemplo es appmon.notepad.script.en_US.xml.
 
 #### Identificación de los pasos que debe ejecutar la secuencia de comandos {#identifying-steps-the-script-must-execute}
 
@@ -836,16 +836,16 @@ Si crea una secuencia de comandos para una aplicación nativa que no se admitía
 
 >[!NOTE]
 >
->En este contexto, el término adicional se refiere al contenido del icono.[applicationName].addis.[locale].xml. Este archivo especifica las anulaciones y adiciones al archivo XML de cuadro de diálogo.
+>En este contexto, el término adicional significa el contenido del `appmon.[applicationname].addition.[locale].xml` archivo. Este archivo especifica las anulaciones y adiciones al archivo XML de cuadro de diálogo.
 
 También puede modificar el archivo XML de cuadro de diálogo adicional para una aplicación nativa con estos fines:
 
 * Anulación del archivo XML de cuadro de diálogo para una aplicación con una respuesta diferente
 * Adición de una respuesta a un cuadro de diálogo al que no se dirige en el archivo XML de cuadro de diálogo para esa aplicación
 
-Se muestra el nombre de archivo que identifica un archivo dialogXML adicional.*[appname]*.addis.*[locale]*.xml. Un ejemplo es appmon.excel.add.en_US.xml.
+El nombre de archivo que identifica un archivo dialogXML adicional es `appmon.[appname].addition.[locale].xml`. Un ejemplo es appmon.excel.add.en_US.xml.
 
-El nombre del archivo XML de cuadro de diálogo adicional debe utilizar el formato appmon.*[applicationName]*.addis.*[locale]*.xml, donde *application_name* debe coincidir exactamente con el nombre de la aplicación utilizado en el archivo de configuración XML y en la secuencia de comandos.
+El nombre del archivo XML de cuadro de diálogo adicional debe utilizar el formato `appmon.[applicationname].addition.[locale].xml`, donde *application name* debe coincidir exactamente con el nombre de la aplicación utilizado en el archivo de configuración XML y en la secuencia de comandos.
 
 >[!NOTE]
 >
@@ -898,7 +898,7 @@ En este ejemplo, los datos de configuración predeterminados suministrados con e
 
 #### Creación de una variable de entorno para localizar la aplicación nativa {#creating-an-environment-variable-to-locate-the-native-application}
 
-Cree una variable de entorno que especifique la ubicación del ejecutable de la aplicación nativa. La variable debe utilizar el formato *[applicationname]*_PATH, donde *applicationname* debe coincidir exactamente con el nombre de la aplicación utilizado en el archivo de configuración XML y en la secuencia de comandos, y donde la ruta contiene la ruta de acceso al archivo ejecutable entre comillas dobles. Un ejemplo de esta variable de entorno es `Photoshop_PATH`.
+Cree una variable de entorno que especifique la ubicación del ejecutable de la aplicación nativa. La variable debe utilizar el formato `[applicationname]_PATH`, donde *application_name* debe coincidir exactamente con el nombre de la aplicación utilizado en el archivo de configuración XML y en la secuencia de comandos, y donde la ruta contiene la ruta de acceso al archivo ejecutable entre comillas dobles. Un ejemplo de esta variable de entorno es `Photoshop_PATH`.
 
 Después de crear la nueva variable de entorno, debe reiniciar el servidor en el que se implementa el servicio Generar PDF.
 
@@ -907,7 +907,7 @@ Después de crear la nueva variable de entorno, debe reiniciar el servidor en el
 1. Seleccione **Panel de control > Sistema**.
 1. En el cuadro de diálogo Propiedades del sistema, haga clic en la ficha **Avanzadas** y, a continuación, haga clic en Variables **de entorno**.
 1. En Variables del sistema en el cuadro de diálogo Variables de entorno, haga clic en **Nuevo**.
-1. En el cuadro de diálogo Nueva variable del sistema, en el cuadro Nombre **de** variable, escriba un nombre que utilice el formato *[applicationname]*_PATH.
+1. En el cuadro de diálogo Nueva variable del sistema, en el cuadro Nombre **de** variable, escriba un nombre que utilice el formato `[applicationname]_PATH`.
 1. En el cuadro Valor **** variable, escriba la ruta completa y el nombre del archivo ejecutable de la aplicación y, a continuación, haga clic en **Aceptar**. For example, type: `c:\windows\Notepad.exe`
 1. En el cuadro de diálogo Variables de entorno, haga clic en **Aceptar**.
 
