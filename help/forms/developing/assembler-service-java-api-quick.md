@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -191,7 +191,7 @@ El siguiente ejemplo de código Java combina dos documentos de origen PDF llamad
 
 ## Inicio rápido (modo SOAP): Desmontaje de un documento PDF mediante la API de Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java desmonta un documento PDF denominado *AssemblerResultPDF.pdf*. Observe que el nombre del documento DDX es *shell_disassembly.xml*. Cada documento PDF desmontado se denomina *[ResultPDFNumber].pdf*. Es decir, el primer documento PDF desmontado se llama *ResultPDF1.pdf.* Para obtener información sobre el documento DDX *shell_disassembly.xml* utilizado en este ejemplo de código, consulte Desmontaje [programático de documentos](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
+El siguiente ejemplo de código Java desmonta un documento PDF denominado *AssemblerResultPDF.pdf*. Observe que el nombre del documento DDX es *shell_disassembly.xml*. Se asigna un nombre a cada documento PDF desmontado `ResultPDF[Number].pdf`. Es decir, el primer documento PDF desmontado se llama *ResultPDF1.pdf.* Para obtener información sobre el documento DDX *shell_disassembly.xml* utilizado en este ejemplo de código, consulte Desmontaje [programático de documentos](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
 
 ```as3
  /*
