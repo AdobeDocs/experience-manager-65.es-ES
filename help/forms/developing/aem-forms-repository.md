@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -43,7 +43,7 @@ Los siguientes valores muestran algunos ejemplos de valores URI:
 
 >[!NOTE]
 >
->Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web https://[server name]:[server port]/repository. Puede comprobar los resultados de inicio rápido asociados a la sección Uso del repositorio de AEM Forms mediante un navegador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede ver el contenido en un navegador web. (Consulte Inicio [rápido (modo SOAP): Escritura de un recurso mediante la API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)de Java).
+>Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicio rápido asociados a la sección Uso del repositorio de AEM Forms mediante un navegador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede ver el contenido en un navegador web. (Consulte Inicio [rápido (modo SOAP): Escritura de un recurso mediante la API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)de Java).
 
 La API de repositorio proporciona una serie de operaciones que puede utilizar para almacenar y recuperar información del repositorio. Por ejemplo, puede obtener una lista de recursos o recuperar recursos específicos almacenados en el repositorio cuando se necesita un recurso como parte del procesamiento de una aplicación.
 
