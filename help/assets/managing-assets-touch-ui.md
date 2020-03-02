@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
 
 ---
 
@@ -384,7 +384,7 @@ Al copiar un recurso o una carpeta, se copia todo el recurso o la carpeta, junto
 
 Algunos atributos que son exclusivos de una copia concreta de un activo no se arrastran. Algunos ejemplos son:
 
-* Ruta relativa, ID del recurso, fecha y hora de creación, e historial de versiones y versiones. Algunas de estas propiedades están indicadas por las propiedades `dam:relativePath`, `jcr:uuid`, `jcr:created`y `cq:name`.
+* ID del recurso, fecha y hora de creación, y versiones e historial de versiones. Algunas de estas propiedades están indicadas por las propiedades `jcr:uuid`, `jcr:created`y `cq:name`.
 
 * El tiempo de creación y las rutas a las que se hace referencia son únicos para cada recurso y cada una de sus representaciones.
 
