@@ -1,6 +1,6 @@
 ---
-title: Su bandeja de entrada
-seo-title: Su bandeja de entrada
+title: 'Su bandeja de entrada '
+seo-title: 'Su bandeja de entrada '
 description: Administración de las tareas con la bandeja de entrada
 seo-description: Administración de las tareas con la bandeja de entrada
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,12 +10,12 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
 
-# Su bandeja de entrada{#your-inbox}
+# Su bandeja de entrada {#your-inbox}
 
 Puede recibir notificaciones desde varias áreas de AEM, incluidos flujos de trabajo y proyectos. Por ejemplo, acerca de:
 
@@ -69,22 +69,22 @@ De fábrica, AEM incluye cuatro tareas asignadas al grupo de usuarios administra
 * Activar recopilación de estadísticas de uso agregadas
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Apertura de la bandeja de entrada {#opening-the-inbox}
+## Apertura de la bandeja de entrada  {#opening-the-inbox}
 
 Para abrir la bandeja de entrada de notificaciones AEM:
 
 1. Toque o haga clic en el indicador de la barra de herramientas.
 
 1. Seleccione **Ver todo**. Se abrirá la **bandeja de entrada AEM.** La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
-1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se lleva a cabo con el selector de vista (barra de herramientas, en la parte superior derecha).
+1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
    Para ambas vistas también puede definir una [Configuración de vista](#inbox-view-settings); las opciones disponibles dependen de la vista actual.
 
-   ![wf-79](assets/wf-79.png)
+   ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>La bandeja de entrada actúa como una consola, por lo que se aconseja utilizar [Navegación global](/help/sites-authoring/basic-handling.md#global-navigation) o [Buscar](/help/sites-authoring/search.md) para desplazarse a otra ubicación cuando haya terminado.
 
 ### Bandeja de entrada: Vista de lista {#inbox-list-view}
 
@@ -109,7 +109,7 @@ Puede hacer lo siguiente:
 
 ![wf-91](assets/wf-91.png)
 
-### Bandeja de entrada: Configuración de vista {#inbox-view-settings}
+### Inbox - Settings {#inbox-view-settings}
 
 Puede definir la configuración para ambas vistas (lista y calendario):
 
@@ -126,9 +126,29 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
    En **Vista de lista** puede configurar el mecanismo de ordenación:
 
-   * **Ordenar en**
+   * **Campo de ordenación**
    * **Orden**
-   ![wf-83](assets/wf-83.png)
+   ![wf-83](assets/inbox-settings.png)
+
+### Bandeja de entrada - Control de administración {#inbox-admin-control}
+
+Los usuarios que formen parte del grupo **de administradores** del flujo de trabajo pueden ver la opción Control de administración en la lista. Con esta opción, los administradores pueden:
+
+* Defina las personalizaciones para el texto y el logotipo disponibles en el encabezado.
+
+* Controle la visualización de las opciones de navegación disponibles en el encabezado y restrinja a los usuarios el cambio al modo de creación de flujo de trabajo o navegue a la Ayuda u otros vínculos de soluciones.
+
+![admin-control](assets/admin-control.png)
+
+* **Personalización de promoción de la marca**
+
+   * **Personalizar el texto del encabezado:** Especifique el texto de este campo para reemplazar el texto existente de **Adobe Experience Manager** que se muestra en el encabezado.
+
+   * **Personalizar logotipo:** Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen con este campo para reemplazar el logotipo de Adobe Experience Manager que se muestra en el encabezado.
+
+* **Navegación del usuario**
+   * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado, como la opción de navegar a otras soluciones, el vínculo de ayuda y las opciones que se muestran al tocar el logotipo o el texto de Adobe Experience Manager.
+* **Guardar:** Toque o haga clic en esta opción para guardar la configuración.
 
 ## Acción en un elemento {#taking-action-on-an-item}
 
@@ -138,7 +158,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
    Las acciones son apropiadas para el elemento y entre ellas se incluyen:
 
-   * Acción **Completar**; por ejemplo, una tarea o un elemento del flujo de trabajo.
+   * Acción **Completar**.; por ejemplo, una tarea o un elemento de flujo de trabajo.
    * **Reasignar**/**Delegar** un elemento.
    * **Abrir** un elemento; en función del tipo de elemento, esta acción puede:
 
@@ -164,7 +184,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
    ![wf-85](assets/wf-85.png)
 
-   En función de si ha abierto un cuadro de diálogo, un asistente o una página de documentación, podrá:
+   En función de si ha abierto un cuadro de diálogo, un asistente o una página de documentación, puede:
 
    * Confirmar la acción adecuada; por ejemplo, Reasignar.
    * Cancelar la acción.
@@ -197,7 +217,7 @@ Desde la bandeja de entrada, puede crear tareas:
 
 1. Seleccione **Enviar**.
 
-## Creación de un proyecto {#creating-a-project}
+## Creación de un proyecto  {#creating-a-project}
 
 Para determinadas tareas, puede crear un [proyecto](/help/sites-authoring/projects.md) basado en dicha tarea:
 
@@ -205,7 +225,7 @@ Para determinadas tareas, puede crear un [proyecto](/help/sites-authoring/projec
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >Para crear un proyecto, solo se pueden utilizar las tareas que se crearon con la opción **Crear** de la **bandeja de entrada**.
    >
    >Los elementos de trabajo (de un flujo de trabajo) no se puede utilizar para crear un proyecto.
 
@@ -229,7 +249,7 @@ Para determinadas tareas, puede crear un [proyecto](/help/sites-authoring/projec
 
 1. Seleccione **Crear** para confirmar la acción.
 
-## Filtrado de elementos en la bandeja de entrada AEM {#filtering-items-in-the-aem-inbox}
+## Filtrado de elementos en la bandeja de entrada AEM  {#filtering-items-in-the-aem-inbox}
 
 Puede filtrar los elementos enumerados:
 
