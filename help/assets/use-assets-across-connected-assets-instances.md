@@ -3,14 +3,14 @@ title: Uso de recursos conectados para compartir recursos DAM en el flujo de tra
 description: Utilice los recursos disponibles en una implementación remota de Recursos Adobe Experience Manager al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
+source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
 
 ---
 
 
 # Uso de recursos conectados para compartir recursos de DAM en sitios de AEM {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web pueden residir en diferentes implementaciones. Pueden darse algunas razones por las que las implementaciones distribuidas geográficamente son necesarias para trabajar en conjunto; las adquisiciones que conducen a una infraestructura heterogénea que la empresa matriz desea consolidar; crecimiento que conduce a tal escala que la instancia dedicada es necesaria para la administración de activos.
+En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web pueden residir en diferentes implementaciones. Pueden darse algunas razones por las que las implementaciones distribuidas geográficamente son necesarias para trabajar en conjunto; las adquisiciones que conducen a una infraestructura heterogénea que la empresa matriz desea consolidar; crecimiento que conduce a tal escala que se requiere una instancia dedicada para la administración de activos.
 
 AEM Sites ofrece capacidades de crear páginas web, y AEM Assets es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web. AEM ahora es compatible con el caso de uso anterior mediante la integración de AEM Sites y AEM Assets.
 
@@ -27,10 +27,10 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 * Los usuarios forman parte de los grupos de usuarios correspondientes en cada implementación.
 * Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. Recursos AEM 6.5 funciona con AEM como un servicio de nube. Para obtener más información, consulte Funcionalidad de Recursos [conectados en AEM como un servicio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)de nube.
 
-   |  | AEM Sites como Cloud Service | Sitios de AEM 6.5 en AMS | Sitios AEM 6.5 in situ |
+   |  | AEM Sites as a Cloud Service | Sitios de AEM 6.5 en AMS | Sitios AEM 6.5 in situ |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Admitido | Admitido | Admitido |
-   | **AEM 6.5 Assets en AMS** | No admitido | Admitido | Admitido |
+   | **AEM 6.5 Assets en AMS** | Admitido | Admitido | Admitido |
    | **Recursos AEM 6.5 in situ** | No admitido | No admitido | No admitido |
 
 ### Formatos de archivo admitidos {#mimetypes}
@@ -74,11 +74,11 @@ Para configurar la conectividad de los recursos conectados y los sitios locales,
    1. Credenciales de un distribuidor DAM (usuario técnico).
    1. En el campo Punto **[!UICONTROL de]** montaje, introduzca la ruta de AEM local donde AEM obtiene los recursos. Por ejemplo, `remoteassets` carpeta.
 
-   1. Ajuste los valores del Umbral **[!UICONTROL de optimización de transferencia binaria]** original en función de la red. Una representación de recursos con un tamaño mayor que este umbral se transfiere asincrónicamente.
+   1. Ajuste los valores del Umbral **[!UICONTROL de optimización de transferencia binaria]** original en función de la red. Una representación de recursos con un tamaño bueno que supera este umbral se transfiere de forma asíncrona.
    1. Seleccione Almacén **[!UICONTROL de datos compartido con recursos]** conectados, si utiliza un almacén de datos para almacenar los recursos y el almacén de datos es el almacenamiento común entre ambas implementaciones de AEM. En este caso, el límite de umbral no importa, ya que los binarios de activos reales residen en el almacén de datos y no se transfieren.
-   ![Una configuración típica para recursos conectados](assets/connected-assets-typical-config.png)
+   ![Una configuración típica para los recursos conectados](assets/connected-assets-typical-config.png)
 
-   *Figura: Una configuración típica para recursos conectados*
+   *Figura: Una configuración típica para los recursos conectados*
 
 1. Como los recursos ya se han procesado y se han recuperado las representaciones, deshabilite los iniciadores de flujo de trabajo. Ajuste las configuraciones del iniciador en la implementación local (AEM Sites) para excluir la `connectedassets` carpeta en la que se recuperan los recursos remotos.
 
@@ -133,13 +133,13 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
    ![Opciones para filtrar tipos de documentos e imágenes al buscar recursos en DAM remoto](assets/filetypes_filter_connected_assets.png)
 
-   *Figura:Opciones para filtrar tipos de documentos e imágenes al buscar recursos en DAM remoto*
+   *Figura: Opciones para filtrar tipos de documentos e imágenes al buscar recursos en DAM remoto*
 
 1. Se notifica al autor del sitio si se busca un recurso de forma asincrónica y si falla alguna tarea de recuperación. Durante la creación o incluso después de la creación, los autores pueden ver información detallada sobre las tareas de recuperación y los errores en la interfaz de usuario de trabajos [](/help/assets/asynchronous-jobs.md) asincrónicos.
 
    ![Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.](assets/assets_async_transfer_fails.png)
 
-   *Figura:Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.*
+   *Figura: Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.*
 
 1. Al publicar una página, AEM muestra una lista completa de los recursos que se utilizan en ella. Asegúrese de que los recursos remotos se recuperan correctamente en el momento de la publicación. Para comprobar el estado de cada recurso buscado, consulte la interfaz de usuario de trabajos [asincrónicos](/help/assets/asynchronous-jobs.md) .
 
