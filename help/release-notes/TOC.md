@@ -4,7 +4,7 @@ product: experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Release Notes
 translation-type: tm+mt
-source-git-commit: b1bcf4ebbb027ace7042a905376f9a9f1906e7d2
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: b1bcf4ebbb027ace7042a905376f9a9f1906e7d2
 + [Descripción general de AEM 6.5](home.md)
 + [Notas de revisión generales](release-notes.md)
 + Service Pack Release Notes {#service-pack}
+   + [Nuevas funciones: Service Pack más reciente](new-features-latest-service-pack.md)
    + [Revisiones y paquetes de funciones incluidos en el Service Pack más reciente](sp-release-notes.md)
    + [Revisiones y paquetes de funciones incluidos en los Service Packs anteriores](previous-hotfixes-featurepacks.md)
 + [Notas de la versión de Sitios AEM](sites.md)
