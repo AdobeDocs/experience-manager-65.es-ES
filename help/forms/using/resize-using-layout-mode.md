@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cc4b667bb20622949c71eee64b07d679109482c1
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -42,8 +42,8 @@ Seleccione **Presentación** en la lista desplegable que aparece en la parte sup
 
    La barra de herramientas que se muestra después de tocar componentes consta de las siguientes opciones:
 
-   * **** Principal: Seleccione el elemento principal de un componente.
-   * **** Flotar a nueva línea: Mueva el componente a la línea siguiente si hay varios componentes dentro de la misma línea.
+   * **Principal:** Seleccione el elemento principal de un componente.
+   * **Flotar a nueva línea:** Mueva el componente a la línea siguiente si hay varios componentes dentro de la misma línea.
    Puede deshacer todos los cambios de tamaño y aplicar el diseño predeterminado al panel que contiene los componentes cuyo tamaño ha cambiado mediante la opción **[!UICONTROL Revertir diseño]** de punto de interrupción ( ![Revertir punto de interrupción](assets/reverttopreviouslypublishedversion.png)). Toque el elemento principal del componente cuyo tamaño ha cambiado para ver la opción.
 
    >[!NOTE]
@@ -52,7 +52,7 @@ Seleccione **Presentación** en la lista desplegable que aparece en la parte sup
 
 ### Ejemplo {#example}
 
-**** Objetivo: Desea insertar un componente de tabla y un componente Imagen y colocarlos en paralelo en una comunicación interactiva.
+**Objetivo:** Desea insertar un componente de tabla y un componente Imagen y colocarlos en paralelo en una comunicación interactiva.
 
 1. Inserte los componentes de tabla e imagen mediante el modo de edición en el canal web. El componente de imagen se muestra después del componente de tabla.
 1. Cambie al modo Diseño y toque el componente Tabla. Los puntos azules para cambiar el tamaño del componente se muestran en las columnas 1 y 12.
@@ -76,6 +76,20 @@ Realice los siguientes pasos si desea cambiar el tamaño del panel completo en l
 
 1. Arrastre y suelte los puntos azules para definir la posición del panel en la cuadrícula interactiva.
 Puede repetir los pasos 1 y 2 y seleccionar ![Seleccionar principal](assets/float_to_new_line_icon.svg) para cambiar el panel cuyo tamaño ha cambiado a la línea siguiente.
+
+## Definición del diseño de varias columnas para un panel
+
+Siga los pasos siguientes para definir el número de columnas de un panel:
+
+1. En el modo de **[!UICONTROL edición]** , toque el panel, seleccione ![Configurar](assets/configure_icon.png)y seleccione **[!UICONTROL Responsable: todo en la página sin la opción de navegación]** .
+
+1. Toque ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+
+1. En el modo **[!UICONTROL Diseño]** , toque cualquiera de los componentes del panel cuyo tamaño desee cambiar, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y, si el panel es el elemento principal inmediato del componente, seleccione la primera opción de la lista desplegable.
+
+1. Toque ![varias columnas](assets/multi-column.svg) y seleccione el número de columnas en la lista desplegable. El número de columnas puede oscilar entre 1 y 12. El panel se divide en un diseño de varias columnas.
+
+![varias columnas en modo de diseño](assets/multi-column-layout.png)
 
 ## Activar la nueva cuadrícula adaptable para los diseños interactivos antiguos {#enableresponsivegrid}
 
