@@ -4,7 +4,7 @@ description: Aprenda las tareas para administrar colecciones de recursos, como c
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 27fdeaf50255379fd6e5bb45eaf593cec895cd04
 
 ---
 
@@ -119,7 +119,7 @@ Puede agregar recursos a una colección que contenga una lista de recursos o car
 
 ## Edición de una colección inteligente {#editing-a-smart-collection}
 
-Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la búsqueda [](#editing-saved-searches)guardada.
+Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la búsqueda [](#saved-searches)guardada.
 
 1. En la interfaz de usuario de Recursos, toque o haga clic en el icono de búsqueda de la barra de herramientas.
 
@@ -209,7 +209,7 @@ Puede editar la configuración de la colección, como título y descripción, o 
 
    >[!NOTE]
    >
-   >También puede eliminar colecciones inteligentes [eliminando las búsquedas](#deleting-saved-searches)guardadas.
+   >También puede eliminar colecciones inteligentes [eliminando las búsquedas](#saved-searches)guardadas.
 
 ## Descargar una colección {#downloading-a-collection}
 
