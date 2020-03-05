@@ -101,7 +101,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Error de memoria insuficiente cuando se carga un archivo PDF grande (de varios gigabytes) en DAM y se procesan sus subrecursos (NPR-30614).
 
-* El movimiento masivo de recursos falla y muestra un mensaje de advertencia (NPR-30610).
+* El movimiento masivo de recursos está fallando y mostrando un mensaje de advertencia (NPR-30610).
 
 * Los nombres de los recursos se cambian a minúsculas al mover recursos de una carpeta a otra en AEM que se ejecuta en el modo de ejecución de Dynamic Media Scene 7 (NPR-31630).
 
@@ -143,7 +143,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El migrador de Scene7 establece el estado de publicación de forma incorrecta (CQ-4263492).
 
-* La página de resultados de la búsqueda por IU táctil (realizada a través de Omniture) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario en los fragmentos de contenido (CQ-4282898).
+* La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente y pierde la posición de desplazamiento del usuario en los fragmentos de contenido (CQ-4282898).
 
 * Los archivos PDF no se indexan y el contenido dentro de no se puede buscar (CQ-4278916).
 
