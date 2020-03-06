@@ -4,14 +4,14 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d867ee46ca9cd5945c7413d42fc002b90332c3c
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
 
 # Novedades de Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-En 2020, para Adobe Experience Manager (AEM) 6.5, las nuevas funciones y mejoras se entregan en Service Packs trimestrales. Los clientes se benefician de este nuevo enfoque a medida que adoptan las innovaciones con mayor rapidez.
+En 2020, Adobe Experience Manager (AEM) 6.5 ofrece funciones y mejoras continuas en los Service Packs trimestrales. Los clientes se benefician de este nuevo enfoque a medida que adoptan las innovaciones con mayor rapidez.
 
 El último Service Pack 4 de AEM (6.5.4.0) está disponible el 5 **de marzo de 2020**. En este artículo se destacan las funciones que ofrece el Service Pack más reciente para enriquecer el viaje de AEM.
 
@@ -19,15 +19,16 @@ El último Service Pack 4 de AEM (6.5.4.0) está disponible el 5 **de marzo de 2
 
 ### Mejoras en el rendimiento en diversas esferas {#performance-improvements}
 
-* Reduzca el tiempo para cargar e inicializar ContextHub dentro de un sitio (contexthub.kernel.js). Genera una carga más rápida de la primera página durante una visita al sitio.
+* Se ha reducido el tiempo para cargar e inicializar ContextHub en un sitio (contexthub.kernel.js). Esto resulta en cargar una página más rápido durante una visita al sitio.
 
-* En el Editor de páginas, reduzca el tiempo que se actualiza la página después de arrastrar y soltar fragmentos de experiencia en el lienzo de la página.
+* Se ha reducido el tiempo para actualizar una página después de arrastrar y soltar fragmentos de experiencia en el lienzo de un editor de páginas.
 
-* En Live Copy Overview, reduzca el tiempo de carga de las entradas cuando el sitio tenga muchas Live Copies (+200).
+* En Live Copy Overview, se redujo el tiempo para cargar entradas cuando un sitio tiene más de 200 copias en vivo.
 
-* En el Editor de plantillas, mejore el manejo de las direcciones URL incompletas o no válidas que podrían activar el Editor de plantillas para que se ralentice.
+* En el Editor de plantillas, se ha mejorado el manejo de direcciones URL incompletas o no válidas que pueden hacer que el Editor de plantillas se ralentice.
 
-Además, a partir de AEM 6.5 SP4, el sistema de estilos se ha mejorado, los estilos también se pueden seleccionar dentro de un cuadro de diálogo de componentes.
+Además, AEM 6.5 SP4 incluye mejoras en el sistema de estilos. Ahora también puede seleccionar estilos en un cuadro de diálogo de componentes.
+
 
 ## AEM Assets {#aem-assets}
 
