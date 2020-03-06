@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 translation-type: tm+mt
-source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
+source-git-commit: 42a08dca17df382b875c5326a64b5584028741d8
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
 + Notas de la versión {#release-notes-new-features}
    + [Notas de la versión](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
    + [Resumen de las nuevas funciones](using/whats-new.md)
-   + [Funciones obsoletas](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [Funciones en desuso](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Introducción {#getting-started}
    + [Introducción a AEM Forms](using/introduction-aem-forms.md)
    + [Introducción a la creación de formularios adaptables](using/introduction-forms-authoring.md)
@@ -25,16 +25,16 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + Tutorial: Crear el primer formulario adaptable {#create-first-adaptive-form}
       + [Tutorial: Crear el primer formulario adaptable](using/create-your-first-adaptive-form.md)
       + [Tutorial: Creación de un formulario adaptable](using/create-adaptive-form.md)
-      + [Tutorial:Crear modelo de datos de formulario](using/create-form-data-model.md)
+      + [Tutorial: Crear modelo de datos de formulario](using/create-form-data-model.md)
       + [Tutorial: Aplicar reglas a los campos de formulario adaptables l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo del formulario adaptable](using/style-your-adaptive-form.md)
       + [Tutorial: Publicación del formulario adaptable](/help/forms/using/publish-your-adaptive-form.md)
       + [Tutorial: Prueba del formulario adaptable](/help/forms/using/testing-your-adaptive-form.md)
    + Tutorial: Crear la primera comunicación interactiva {#create-first-interactive-communication}
-      + [Tutorial:Cree su primera comunicación interactiva](using/create-your-first-interactive-communication.md)
+      + [Tutorial: Cree su primera comunicación interactiva](using/create-your-first-interactive-communication.md)
       + [Tutorial: Planificar la comunicación interactiva](using/planning-interactive-communications.md)
-      + [Tutorial:Crear modelo de datos de formulario](using/create-form-data-model0.md)
-      + [Tutorial:Creación de fragmentos de documento](using/create-document-fragments.md)
+      + [Tutorial: Crear modelo de datos de formulario](using/create-form-data-model0.md)
+      + [Tutorial: Creación de fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Creación de plantillas](using/create-templates-print-web.md)
       + [Tutorial: Crear comunicación interactiva](using/create-interactive-communication0.md)
    + Materiales de referencia de formularios AEM {#aem-forms-reference-collaterals}
@@ -62,7 +62,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Instalar y configurar el servicio Conversión automatizada de formularios](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [Plataformas compatibles con formularios AEM en JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Instalación e implementación de AEM Forms en JEE con la llave en mano de JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+      + [Instalación e implementación de AEM Forms en JEE con la llave en mano de JBoss](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [Instalación y configuración de AEM Forms Document Security Server](using/installing-and-configuring-the-document-security-server.md)
       + [Preparación de la instalación del servidor único de AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
       + [Instalación e implementación de AEM Forms en JEE para JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
@@ -302,6 +302,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Información general sobre la administración de correspondencias](using/cm-overview.md)
    + [Diseño de maquetación](using/layout-design-details.md)
    + [Diccionario de datos](using/data-dictionary.md)
+   + [Fragmentos de documento](using/document-fragments.md)
    + [Crear carta](using/create-letter.md)
    + [Crear correspondencia](using/create-correspondence.md)
    + [Funciones remotas en el Generador de expresiones](using/expression-builder.md)
@@ -312,7 +313,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Adición de propiedades personalizadas a los recursos de Correspondencia](using/add-custom-properties-cm-assets.md)
    + [Personalizar la interfaz de usuario para crear correspondencia](using/customize-create-correspondence-ui.md)
    + [Personalizar editor de texto](using/customize-text-editor.md)
-   + [Administración de correspondencia:Resolución de problemas](using/cm-troubleshooting.md)
+   + [Administración de correspondencia: Resolución de problemas](using/cm-troubleshooting.md)
    + [API para acceder a instancias de letras](using/cm-apis-to-access-letter-instances.md)
    + [Integración de la interfaz de usuario Crear correspondencia con su portal personalizado](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Caracteres especiales personalizados en la administración de correspondencias](using/custom-special-characters.md)
