@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -21,7 +21,7 @@ Puede mover formularios y recursos, temas, diccionarios de datos, fragmentos de 
 
 >[!NOTE]
 >
->* En AEM 6.4 Forms, la estructura y las rutas del repositorio de crx han cambiado. Si importa recursos de una versión anterior a AEM 6.4 Forms y el formulario depende en parte de la estructura anterior, deberá exportar manualmente las dependencias. Para obtener más información sobre los cambios en la estructura y las rutas del repositorio, consulte Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+>* En AEM 6.4 Forms, la estructura y las rutas del repositorio de crx han cambiado. Si importa recursos de una versión anterior a AEM 6.4 Forms y el formulario depende en parte de la estructura anterior, deberá exportar manualmente las dependencias. Para obtener más información sobre los cambios en la estructura y las rutas del repositorio, consulte Reestructuración [del repositorio en AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 
@@ -43,10 +43,10 @@ Para descargar recursos de Forms &amp; Documents:
 1. Seleccione los recursos de formulario y toque el icono **Descargar** .
 1. En los recursos de descarga, elija una de las siguientes opciones y toque **Descargar**.
 
-   * **** Descargar como paquete CRX: Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como paquete crx. Todos los recursos de formulario, incluidos los formularios creados en AEM (formularios adaptables, comunicaciones interactivas y fragmentos de formulario adaptables), conjuntos de formularios, plantillas de formulario, documentos PDF y recursos (XSD, XFS, imágenes) se pueden descargar como paquete desde la interfaz de usuario de AEM Forms.
+   * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como paquete crx. Todos los recursos de formulario, incluidos los formularios creados en AEM (formularios adaptables, comunicaciones interactivas y fragmentos de formulario adaptables), conjuntos de formularios, plantillas de formulario, documentos PDF y recursos (XSD, XFS, imágenes) se pueden descargar como paquete desde la interfaz de usuario de AEM Forms.
 La ventaja de descargar recursos como paquete es que también descarga los recursos que ha utilizado el recurso seleccionado para la descarga. Por ejemplo, si tiene un formulario adaptable que utiliza una plantilla de formulario, XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
-   * **** Descargar recursos como archivos binarios: Utilice la opción para descargar solo plantillas de formulario (XDP), formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que tienen binarios, como XSD, XDP, imágenes, PDF y XDP como archivo .zip.
+   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que tienen binarios, como XSD, XDP, imágenes, PDF y XDP como archivo .zip.
 No puede descargar formularios adaptables, comunicaciones interactivas, fragmentos de formularios adaptables, temas ni conjuntos de formularios con la opción **Descargar recursos como archivos** binarios. Para descargar estos recursos, debe utilizar la opción **Descargar como paquete** CRX.
    Los recursos seleccionados se descargan como un archivo (archivo .zip).
 
@@ -191,7 +191,7 @@ Puede utilizar el administrador de paquetes AEM para exportar aplicaciones de fl
 
 ## Carpetas y organización de recursos {#folders-and-organizing-assets}
 
- La interfaz de usuario de AEM Forms utiliza carpetas para organizar los recursos. Estas carpetas se utilizan para organizar recursos creados en la interfaz de usuario de AEM Forms. Puede cambiar el nombre de las subcarpetas, crearlas y almacenarlas en ellas. La organización de documentos y recursos en una carpeta le permite agrupar los archivos para facilitar la gestión. Puede seleccionar una carpeta y elegir descargarla o eliminarla.
+La interfaz de usuario de AEM Forms utiliza carpetas para organizar los recursos. Estas carpetas se utilizan para organizar recursos creados en la interfaz de usuario de AEM Forms. Puede cambiar el nombre de las subcarpetas, crearlas y almacenarlas en ellas. La organización de documentos y recursos en una carpeta le permite agrupar los archivos para facilitar la gestión. Puede seleccionar una carpeta y elegir descargarla o eliminarla.
 
 Para crear una carpeta, complete los siguientes pasos:
 
@@ -202,8 +202,8 @@ Para crear una carpeta, complete los siguientes pasos:
 1. Toque Crear > Carpeta.
 1. Introduzca los siguientes detalles:
 
-   * **** Título: Nombre para mostrar de la carpeta
-   * **** Nombre: *(Obligatorio)* El nombre del nodo en el que desea almacenar la carpeta en el repositorio
+   * **Título:** Nombre para mostrar de la carpeta
+   * **Nombre:** *(Obligatorio)* El nombre del nodo en el que desea almacenar la carpeta en el repositorio
    >[!NOTE]
    >
    >De forma predeterminada, el valor del campo de nombre se rellena automáticamente desde el título. El nombre sólo puede contener caracteres alfanuméricos o caracteres especiales de guión (-) y subrayado (_). Cualquier otro carácter especial introducido en el título se sustituye automáticamente por un guión y se le solicita que confirme el nuevo nombre. Puede elegir continuar con el nombre sugerido o editarlo más adelante.
@@ -223,7 +223,7 @@ Puede utilizar recursos y letras existentes para crear rápidamente recursos y l
 Complete los siguientes pasos para crear copias de recursos y letras:
 
 1. En la página correspondiente Recursos o Cartas, seleccione uno o varios recursos o letras. La interfaz de usuario muestra el icono Copiar.
-1. Toque Copiar. La interfaz de usuario muestra el icono Pegar. También puede elegir ir o navegar dentro de una carpeta antes de pegarla. Las distintas carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](#folders-and-organizing-assets).
+1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar. También puede elegir ir o navegar dentro de una carpeta antes de pegarla. Las distintas carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](#folders-and-organizing-assets).
 1. Toque Pegar. Aparecerá el cuadro de diálogo Pegar. El sistema genera automáticamente nombres y títulos para las nuevas copias de recursos/letras, pero puede editar los títulos y nombres de los recursos/letras.
 
    Si copia y pega los recursos o letras en el mismo lugar, se agrega un sufijo &quot;-CopyXX&quot; al nombre existente del recurso o la letra. Si no existe ningún título para el recurso o la carta copiados, el campo de título generado automáticamente permanece en blanco.
@@ -239,7 +239,7 @@ Al buscar recursos, AEM Forms muestra el panel lateral. También puede tocar ![a
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Buscar** B. Filtro
+**A.** Buscar **B.** Filtro
 
 ![Panel lateral: Filtros](assets/search_sidepanel.png)
 
