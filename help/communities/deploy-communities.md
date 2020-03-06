@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -130,7 +130,7 @@ Los pasos necesarios son:
 
 1. repita los pasos 3 y 4 en todas las instancias de creación y publicación
 
-Encontrará más información sobre la instalación de paquetes en la página Consola [](/help/sites-deploying/configuring-web-console.md#bundles) web.
+Encontrará más información sobre la instalación de paquetes en la página Consola [](/help/sites-deploying/web-console.md) web.
 
 #### Ejemplo: Paquete de conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
@@ -170,7 +170,7 @@ La descarga avanzada de MLS (también conocida como &#39;phasetwo&#39;) está di
    * versión 1.2.40, 6 de abril de 2016
    * descargue AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
-Para obtener más información sobre la instalación y los detalles, visite [Solr Configuration](/help/communities/solr.md) for SRP.
+Para obtener información detallada y sobre la instalación, visite [Solr Configuration](/help/communities/solr.md) for SRP.
 
 ### Acerca de los vínculos para compartir paquetes {#about-links-to-package-share}
 
@@ -328,7 +328,7 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
 
 #### Replicación del repositorio {#repository-replication}
 
-El hecho de que el material clave esté almacenado en el repositorio, como ocurrió con AEM 6.2 y versiones anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
+El hecho de tener el material clave almacenado en el repositorio, como ocurrió con AEM 6.2 y versiones anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
