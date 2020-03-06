@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -128,7 +128,7 @@ Revise los requisitos técnicos de AEM 6.5 y asegúrese de que el hardware y el 
 
 **Backup/Restore y Recuperación ante Desastres:**
 
-[Backup y Restore](/help/sites-administering/backup-and-restore.md)
+[Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md)
 
 [Rendimiento y escalabilidad](/help/sites-deploying/performance.md)
 
@@ -136,7 +136,7 @@ Revise los requisitos técnicos de AEM 6.5 y asegúrese de que el hardware y el 
 
 #### Consideraciones sobre la reestructuración de contenido {#content-restructuring-considerations}
 
-AEM ha introducido cambios en la estructura del repositorio que ayudarán a realizar las actualizaciones de forma más fluida. Los cambios implican mover el contenido de la carpeta /etc a carpetas como /libs, /apps y /content, en función de si Adobe o un cliente son propietarios del contenido, lo que limita las posibilidades de sobrescribir el contenido durante las versiones. La reestructuración del repositorio se ha realizado de tal manera que no debe requerir cambios en el código en el momento de la actualización a la versión 6.5, aunque se recomienda revisar los detalles de la reestructuración del [repositorio en AEM](/help/sites-deploying/repository-restructuring-in-aem65.md) mientras se planifica una actualización.
+AEM ha introducido cambios en la estructura del repositorio que ayudarán a realizar las actualizaciones de forma más fluida. Los cambios implican mover el contenido de la carpeta /etc a carpetas como /libs, /apps y /content, en función de si Adobe o un cliente son propietarios del contenido, lo que limita las posibilidades de sobrescribir el contenido durante las versiones. La reestructuración del repositorio se ha realizado de tal manera que no debe requerir cambios en el código en el momento de la actualización a la versión 6.5, aunque se recomienda revisar los detalles de la reestructuración del [repositorio en AEM](/help/sites-deploying/repository-restructuring.md) mientras se planifica una actualización.
 
 ### Evaluación de la complejidad de la actualización {#assessing-upgrade-complexity}
 
