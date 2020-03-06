@@ -12,7 +12,7 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -31,7 +31,7 @@ En esta sección tratamos la actualización de una instalación de AEM a AEM 6.5
 * [Comprobaciones posteriores a la actualización y resolución de problemas](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Upgrades sostenibles](/help/sites-deploying/sustainable-upgrades.md)
 * [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md)
-* [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring-in-aem65.md)
+* [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md)
 
 Para facilitar la referencia a las instancias de AEM implicadas en estos procedimientos, se utilizan los siguientes términos en todos estos artículos:
 
