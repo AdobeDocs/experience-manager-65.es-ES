@@ -3,7 +3,7 @@ title: Activos relacionados
 description: Obtenga información sobre cómo relacionar recursos que comparten determinados atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
 
 ---
 
@@ -13,6 +13,9 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 Recursos Adobe Experience Manager (AEM) le permite relacionar recursos manualmente en función de las necesidades de su organización mediante la función de recursos relacionados. Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen o vídeo en un tema similar. Puede relacionar recursos que comparten determinados atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF que se genera a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
 
 Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja resolución o un archivo JPG con proveedores o agencias y de hacer que el archivo INDD de alta resolución solo esté disponible bajo petición.
+
+>[!NOTE] Los usuarios con permisos de edición pueden relacionar y desrelacionar recursos.
+>
 
 ## Relate assets {#relating-assets}
 
