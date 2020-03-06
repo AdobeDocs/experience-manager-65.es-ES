@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f191f90f7a417387930d2d4cf7b9482aabbd6156
+source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
 
 ---
 
@@ -331,6 +331,24 @@ Para obtener una vista previa de un recurso, siga estos pasos.
    Toque **[!UICONTROL Restablecer]** para restablecer el tamaño original de la vista.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
+
+**Vista previa de recursos solo con teclas del teclado**
+
+Para obtener una vista previa de un recurso mediante el teclado, siga estos pasos:
+
+1. En la interfaz de usuario de Recursos, navegue hasta la ubicación del recurso cuya vista previa desee obtener, utilizando `Tab` y teclas de flecha.
+
+1. Abra el recurso que desee.
+
+   En el modo de vista previa, las opciones de zoom y restablecimiento están disponibles para los tipos [de imagen](/help/assets/assets-formats.md#supported-raster-image-formats) admitidos (con edición interactiva).
+1. Para acercar el recurso:
+   1. Utilice la `Tab` tecla para mover el enfoque al icono de acercamiento.
+   1. Utilice la `Enter` tecla para acercar la imagen.
+   Para alejar, utilice `Tab` la tecla para desplazar el enfoque al icono de alejamiento y pulse `Enter`.
+
+1. Utilice las teclas `Shift` + `Tab` para volver a centrar la atención en la imagen.
+
+1. Utilice las teclas de flecha para desplazarse por la imagen ampliada.
 
 Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/previewing-assets.md)
 
