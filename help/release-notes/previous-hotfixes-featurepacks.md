@@ -1,18 +1,290 @@
 ---
-title: Notas de la versión de Service Pack de AEM 6.5
-description: Notas de versión específicas de Service Pack 3 de Adobe Experience Manager 6.5.
+title: Notas de la versión anterior de AEM 6.5 Service Pack
+description: Notas de la versión específicas de Adobe Experience Manager 6.5 Service Pack 3 y versiones anteriores.
 uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 95d9ed8a0ccfa7651b83058d337511dd6b15665f
+source-git-commit: 7ae0055e09c3ae2ff2898ac4f6c537a825dc0cf0
 
 ---
 
 
 # Revisiones y paquetes de funciones incluidos en instancias de Service Pack anteriores {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+
+## AEM 6.5.3.0
+
+Adobe Experience Manager 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. Se puede instalar sobre Adobe Experience Manager (AEM) 6.5.
+
+Algunos aspectos destacados de esta versión del Service Pack son:
+
+* El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.10.6.
+
+* Experience Manager Assets ahora admite archivos ZIP creados con el algoritmo Deflate 64.
+
+* Se ha añadido una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de lista.
+
+* La clasificación de recursos basada en la columna Nombre se ha activado en la vista de lista.
+
+* Los medios dinámicos ahora admiten recursos de vídeo de recorte inteligente. Smart Crop es una función de aprendizaje automático que vuelve a recortar un vídeo mientras mueve el fotograma para seguir el punto focal de la escena.
+
+* Dynamic Media admite imágenes inteligentes.
+
+* Posibilidad de [establecer preferencias fuera de Office](../forms/using/configure-out-of-office-settings.md) en flujos de trabajo de AEM.
+
+* Posibilidad de [compartir elementos](../forms/using/configure-shared-queues-osgi.md) de bandeja de entrada o bandeja de entrada con otros usuarios en flujos de trabajo de AEM.
+
+* Capacidad para [generar comunicaciones interactivas en modo](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)por lotes.
+
+* Se ha actualizado la versión de jQuery incluida en ContextHub a 3.4.1.
+
+### Assets {#assets-6530-enhancements}
+
+**Mejoras del producto**
+
+* Experience Manager Assets ahora admite archivos ZIP creados con el algoritmo Deflate 64 (NPR-27573).
+
+* Se ha agregado una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de lista (NPR-31312).
+
+* La clasificación de recursos basada en la columna Nombre se permite en la vista de lista (NPR-31299).
+
+* Los archivos de recursos GLB, GLTF, OBJ y STL admiten la vista previa de recursos en la página Detalles de recursos de DAM (CQ-4282277).
+
+* El evento ReplicationOnModifyListener se activa para nodos de fragmento durante la carga de fragmentos en Dynamic Media (CQ-4281279).
+
+* Los medios dinámicos ahora admiten recursos de vídeo de recorte inteligente. Smart Crop es una función de aprendizaje automático que vuelve a recortar un vídeo mientras mueve el fotograma para seguir el punto focal de la escena (CQ-4278995).
+
+* Dynamic Media admite imágenes inteligentes (CQ-422249).
+
+* La vista de búsqueda y exploración se ha configurado como vista predeterminada en el selector de base si se pasan parámetros de consulta en la solicitud (NPR-31601).
+
+**Correcciones**
+
+* Los metadatos de algunos documentos PDF no se actualizan ni guardan en el PDF al modificar su título (NPR-31629).
+
+* El uso compartido de recursos no funciona para los recursos que tienen el carácter más &#39;+&#39; en sus nombres (NPR-31547).
+
+* Las ediciones en el formulario de búsqueda predeterminado Administración de recursos * El carril de búsqueda no funciona de la forma esperada (NPR-31502).
+
+* No se muestran sugerencias al utilizar Omniture en la vista Recursos para buscar recursos (NPR-31496).
+
+* Las referencias de recursos dentro de las colecciones no se actualizan cuando los recursos a los que se hace referencia se mueven a otra ubicación, en casos en los que diferentes usuarios hacen referencia a los mismos recursos (NPR-31486).
+
+* Se agregan etiquetas IPTC duplicadas a los metadatos de los recursos (NPR-31328).
+
+* El recuento de resultados de búsqueda en la esquina superior derecha no se actualiza con precisión cuando la búsqueda se activa desde el carril de filtros (NPR-31316).
+
+* Todas las casillas de verificación se desactivan al desactivar las casillas de verificación de segundo nivel en el filtro Tipo de archivo y el texto de la barra de búsqueda no está sincronizado con las propiedades seleccionadas o no seleccionadas (NPR-31287).
+
+* No se pueden quitar todos los miembros (usuarios/grupos) de la sección Miembros de una carpeta; al intentar eliminar todos los usuarios, el usuario que ha iniciado sesión se agrega a la lista (NPR-31171).
+
+* Los recursos con el símbolo más &#39;+&#39; en el nombre del archivo no se pueden eliminar (NPR-31162).
+
+* El menú desplegable Crear, que está visible en el menú superior al seleccionar una carpeta, no muestra &#39;Carpeta&#39; como opción de creación (NPR-30877).
+
+* Selección de carpetas Crear > Elemento de acción FileUpload falta cuando se aplica ACL para Deny jcr:removeChildNodes y jcr:removeNode en la ruta a un usuario (NPR-30840).
+
+* Los flujos de trabajo DAM pasan a un estado antiguo cuando se cargan determinados recursos mp4, lo que provoca que todos los flujos de trabajo restantes pasen a un estado antiguo (NPR-30662).
+
+* Error de memoria insuficiente cuando se carga un archivo PDF grande (de varios gigabytes) en DAM y se procesan sus subrecursos (NPR-30614).
+
+* El movimiento masivo de recursos está fallando y mostrando un mensaje de advertencia (NPR-30610).
+
+* Los nombres de los recursos se cambian a minúsculas al mover recursos de una carpeta a otra en AEM que se ejecuta en el modo de ejecución de Dynamic Media Scene 7 (NPR-31630).
+
+* Se observa un error al editar un conjunto de imágenes remoto para la imagen que reside en la carpeta con el mismo nombre que el nombre de empresa de Scene7 (NPR-31340).
+
+* Los recursos de Dynamic Media que contienen referencias no se publican (NPR-31180).
+
+* Las cargas del modo de ejecución de AEM Dynamic Media - Scene 7 a Scene7 tardan demasiado en completarse (NPR-31048).
+
+* La zona interactiva añadida a un recurso de imagen no es visible a través del visor de imágenes interactivo en la página de detalles de recursos (NPR-30979).
+
+* Se crean enormes trabajos de sling y vuelve a aparecer la pancarta de procesamiento cuando las acciones realizadas en recursos de AEM Assets se pasan a la escena 7 (NPR-30947).
+
+* El conflicto se produce al crear una copia de idioma de los recursos y no se carga en Scene7 (NPR-30932).
+
+* Las representaciones dinámicas descargadas de AEM que se ejecutan en el modo híbrido de Dynamic Media están dañadas (son de tipo de texto con contenido &quot;no se puede encontrar la imagen&quot; en lugar de contenido de imagen) (NPR-30876).
+
+* El flujo de trabajo de codificación de vídeo de Dynamic Media no puede generar miniaturas para el vídeo que se migra de Scene7 al modo de ejecución Dynamic Media - Scene 7 (CQ-4282011).
+
+* Se ha observado una excepción IpsApiException al migrar recursos de una instancia a otra mediante distintos ID de empresa de Scene7 (CQ-4280548).
+
+* La miniatura de un recurso 3D no es informativa cuando se ingesta un modelo 3D compatible en AEM (CQ-4283701).
+
+* Los botones de desplazamiento se muestran en el visor si un recurso 3D tiene pocas vistas de cámara (CQ-4283322).
+
+* Altura incorrecta del contenedor de un modelo 3D cargado previsualizado en la página de detalles de recursos de Dimensional Viewer (CQ-4283309).
+
+* Los vídeos no se pueden reproducir con SmartCropVideoViewer en Internet Explorer 11 y Safari (CQ-4281422).
+
+* El uso del botón Mover para mover varios recursos, de una carpeta a otra, falla en AEM que se ejecuta en Dynamic Media - modo de ejecución scene7 (CQ-4280384).
+
+* El vídeo distorsionado se ve en los detalles del recurso cuando el tipo MIME no es MP4 (CQ-4279704).
+
+* Los vídeos recientemente ingestados en carpetas con perfil de vídeo permanecen en estado de procesamiento incluso después de que el porcentaje de codificación se complete al 100 % (CQ-4279389).
+
+* Al mover recursos desde una carpeta, se crea un gran número de trabajos de sling (llamadas a la API de Scene7) que lo que se necesita de forma ideal (CQ-4278664).
+
+* Los nombres del conjunto de imágenes se cambian a minúsculas en la escena 7, cuando se crea un conjunto de imágenes (o conjunto de medios) y se les asigna un nombre con la convención de nombres adecuada en DAM (CQ-4281112).
+
+* El migrador de Scene7 establece el estado de publicación de forma incorrecta (CQ-4263492).
+
+* La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente y pierde la posición de desplazamiento del usuario en los fragmentos de contenido (CQ-4282898).
+
+* Los archivos PDF no se indexan y el contenido dentro de no se puede buscar (CQ-4278916).
+
+* Error &quot;Grupo no enumerado por selector de usuario: &quot;se espera que false sea igual a true&quot; se observa al agregar un grupo de usuarios cerrado con diferente `principalName` y `authorizableId` (CQ-4278177).
+
+* La vista de columna de la interfaz de usuario de recursos muestra todas las rutas, independientemente de la ruta raíz de la represa específica del inquilino (CQ-4278175).
+
+* La búsqueda del selector de recursos no funciona correctamente (CQ-4275886).
+
+* Los flujos de trabajo de representación fallan (CQ-4271928).
+
+* Depuración de eventos DAM elimina los últimos datos del evento (maxSavedActivities) y contiene los datos creados anteriormente (NPR-31336).
+
+* La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario (NPR-31307).
+
+* La barra de acciones y el recuento de recursos no se actualizan al seleccionar todo y, a continuación, anular la selección de algunos elementos (carpetas/recursos individuales) en la IU táctil (NPR-31118).
+
+* Se muestra una excepción en AEM mientras se sondea para obtener los detalles del trabajo de un recurso (CQ-4283569).
+
+### Sites {#sites}
+
+* Si la herencia de LiveCopy está dañada, las páginas de Live Copy muestran vínculos de copia de idioma en lugar de vínculos de LiveCopy (NPR-30980).
+* Para un nuevo modelo, si el número de registros es superior a 40, solo se muestran los primeros 40 registros. El modelo muestra líneas en blanco para el resto de los registros (NPR-31182).
+* Cuando un usuario agrega caracteres japoneses o coreanos en la propiedad description de un menú, el menú muestra caracteres distorsionados para texto en japonés y coreano. (NPR-31331).
+* El editor de texto enriquecido (RTE) no permite insertar una tabla incrustada como elemento de lista (NPR-30879).
+* Fuera de la casilla, scaffolding Rich Text Editor (RTE). aplica tamaño de fuente en línea a los elementos de forma inesperada (NPR-31284).
+* Cuando un usuario se centra en los campos del carril izquierdo y utiliza un método abreviado de teclado para pegar contenido, pega el contenido del portapapeles del editor de páginas en lugar del contenido copiado de los campos del carril izquierdo (NPR-31172).
+* Cuando un usuario agrega un campo Carga de archivo a un campo múltiple, la ruta de la imagen se almacena en el nodo del componente en lugar del nodo de varios campos (NPR-30882).
+* La API ResponsiveGridExporter no devuelve la interfaz com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter. El paquete com.day.cq.wcm.foundation.model.impl se declara como paquete privado (NPR-31398).
+* Cuando se abre una página que contiene algunos fragmentos de experiencia en modo que no es de editor (ya sea en Autor sin el `editor.html` prefijo y `wcmmode=disabled`o en Editor), la solicitud termina en el código de error de estado HTTP 500 (NPR-30743).
+* Los usuarios no pueden cambiar su contraseña ni acceder a su página de perfil (NPR-31161).
+
+### Búsqueda e interfaz de usuario {#search-ui-interface}
+
+* Al pasar de la vista de tarjeta a la vista de lista en una página de resultados de búsqueda, hay un retraso antes de que se pueda desplazar la página (NPR-31286).
+
+* La casilla de verificación Seleccionar todo está oculta en la vista de lista de la interfaz de usuario Sitios (NPR-31614).
+
+* El recuento Seleccionar todo en una página de resultados de búsqueda es incorrecto (NPR-31120).
+
+* El editor de metadatos muestra etiquetas que no existen (NPR-31119).
+
+### Traducción {#translation}
+
+* Aparecen dos ventanas emergentes de calendario al seleccionar la opción Fecha de vencimiento en un trabajo de traducción (NPR-31270).
+
+### Plataforma {#platform}
+
+* La opción Tipo de MIME en la consola web no funciona (NPR-31108).
+
+* El certificado de cliente no se acepta al configurar el inicio de sesión único (NPR-31165).
+
+* Las actualizaciones en la configuración del tamaño del búfer para el servicio HTTP basado en Jetty no se guardan (NPR-30925).
+
+* QueryBuilder ahora admite pedidos ``fn:name()`` en consultas xpath (NPR-31322).
+
+* Se crea un árbol de activación duplicado al actualizar desde AEM 6.3 (NPR-31513).
+
+* Las solicitudes reenviadas no conservan los encabezados de respuesta establecidos durante la autenticación sling (NPR-30013).
+
+* La búsqueda dentro de los componentes del selector no funciona (NPR-31692).
+
+* Se muestra un error al adjuntar un archivo ZIP a una publicación de AEM Communities debido a diferentes versiones del paquete Apache POI y Apache Tika (NPR-31018).
+
+* El ``org.apache.sling.distribution.api`` paquete está oculto en el administrador de configuración y, por lo tanto, no está disponible para paquetes personalizados (NPR-31720).
+
+### Proyectos {#projects}
+
+* El cambio de vistas de calendario no funciona (NPR-31271).
+
+### Brand Portal {#assets-brand-portal}
+
+**Mejoras del producto**
+
+* El flujo de trabajo de importación de Asset Sourcing en Recursos AEM se ha modificado para recuperar solo los recursos recién creados de Brand Portal a AEM y omitir los recursos que ya existen en la nueva carpeta para evitar la replicación (CQ-4278527).
+
+**Correcciones**
+
+* Aparece un icono incorrecto al crear una nueva carpeta de contribución en la función de fuentes de recursos (CQ-4282825).
+* Al crear una nueva carpeta Contribution, una o ambas subcarpetas (NUEVAS y COMPARTIDAS) no aparece dentro de la carpeta Contribution (CQ-4282424).
+* El sistema genera una excepción si el usuario intenta volver a publicar la carpeta Contribution de AEM en Brand Portal después de recibir nuevos recursos en la carpeta Contribution desde Brand Portal end (CQ-4279740).
+* La creación de la carpeta Contribution dentro de una carpeta Contribution (carpeta anidada) está prohibida para evitar la complejidad (CQ-4278391).
+* El sistema emite una excepción al cargar la lista de usuarios de Brand Portal (archivo .csv) importada desde la Consola de administración de AEM. Solo son obligatorios los campos Correo electrónico, Nombre y Apellido del archivo .csv (CQ-4278390).
+
+### Communities {#communities}
+
+**Correcciones**
+
+* Los vínculos rápidos para administrar grupos (Abrir/Editar/Publicar/Eliminar grupos) no son visibles para los administradores de la comunidad (administrador del grupo/administrador del sitio) (NPR-31627).
+* Un blog enviado no se muestra a menos que la página se actualice o recargue manualmente (NPR-31599).
+* La consulta JCR utilizada por la función &quot;Menciones&quot; distingue entre mayúsculas y minúsculas y tarda demasiado en devolver resultados (NPR-31475).
+* El archivo UberJar de AEM 6.5 emite una excepción, pero falta el paquete en el archivo UberJar de AEM 6.5 (NPR-31186). `cq-social-translation`
+* Las bibliotecas del enlace de datos Jackson se actualizaron a la versión 2.9.9.3 para abordar nuevas vulnerabilidades (NPR-30967).
+* Los títulos de las actividades y las notificaciones son incoherentes (NPR-30941).
+* La paginación no funciona correctamente en los blogs de Communities (NPR-30914).
+* Los informes de Analytics no se completan en el entorno de creación de AEM; aparece una página en blanco (NPR-30913).
+
+### Oak {#oak}
+
+* Las actualizaciones del índice de Lucene hacen que el servidor de creación se ralentice (NPR-31548).
+
+### Formularios {#forms-6530}
+
+>[!NOTE]
+>
+>Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+
+#### Paquete de complemento de Forms {#forms-add-on-package-6530}
+
+**Formularios adaptables**
+
+* Las cadenas contienen la clave del diccionario al localizar formularios adaptables (NPR-31110).
+
+**Comunicación interactiva**
+
+* **MissingNode.toString()** devuelve resultados inexactos después de actualizar las bibliotecas de Jackson a 2.10.0 (NPR-31549).
+
+* El editor de texto elimina aleatoriamente los caracteres de espacio del texto copiado de Microsoft Word (NPR-31113).
+
+**Administración de correspondencia**
+
+* Los rótulos y la información sobre herramientas no se muestran al migrar letras de LiveCycle ES4SP1 a AEM 6.5 (NPR-31615).
+
+* **El formato de flujo de texto ya no se muestra** en los mensajes de error al guardar las letras como borradores (NPR-30463).
+
+**Flujo de trabajo**
+
+* El flujo de trabajo de OSGi falla debido a la utilización del 100% de la CPU (NPR-31233).
+
+**HTML5 Forms**
+
+* Al generar la vista previa HTML5 de un formulario XDP, se muestra un parpadeo al agregar instancias de un subformulario (NPR-30909).
+
+#### Forms on JEE installer {#forms-jee-installer-6530}
+
+**Forms: servicios de documentos**
+
+* El servicio web SOAP que utiliza MTOM en un proyecto .NET muestra excepciones para los métodos AssemblerServiceClient invoke y HtmlToPDF2 (NPR-4281771).
+
+**Base JEE**
+
+* La configuración de la acción no carga los nombres de proceso para la acción de envío Invocar un flujo de trabajo de formularios (NPR-31478).
+
+### Paquetes de funciones incluidos {#feature-packs-included-6530}
+
+>[!NOTE]
+>
+>Para los clientes de AEM Forms, es esencial instalar el paquete de complementos de AEM Forms después de instalar cualquier paquete de servicio, paquete acumulativo o paquete de funciones de AEM.
+
+#### Forms: base JEE {#forms-foundation-jee-feature}
+
+* Compatibilidad de AEM Forms con Oracle 18c (NPR-29155).
 
 ## AEM 6.5.2.0
 
@@ -22,7 +294,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.10.3.
 * Se agregó una propiedad de configuración para permitir la exportación de fragmentos de experiencia directamente a espacios de trabajo que haya definido el usuario en Adobe Target.
-* Los usuarios de recursos pueden buscar imágenes visualmente similares. AEM muestra las imágenes etiquetadas inteligentes del repositorio de DAM similares a una imagen que seleccionó el usuario. Consulte [Búsqueda visual](../assets/search-assets.md#visualsearch).
+* Los usuarios de recursos pueden buscar imágenes visualmente similares. AEM muestra las imágenes con etiquetas inteligentes del repositorio de DAM similares a una imagen seleccionada por el usuario. Consulte [Búsqueda visual](../assets/search-assets.md#visualsearch).
 
 * Se mejoró la funcionalidad de los recursos conectados para añadir la compatibilidad con la recuperación de documentos desde implementaciones de DAM remotas. Los autores del sitio pueden buscar y filtrar los tipos de documentos admitidos en el Buscador de contenido. Los documentos remotos se pueden agregar al componente Descargar en páginas web. Consulte [Uso de activos conectados](../assets/use-assets-across-connected-assets-instances.md).
 
@@ -34,13 +306,13 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Se ha introducido una corrección para garantizar que la vista de columnas de la IU de recursos muestre solo contenido específico del usuario.
 * Se ha introducido una corrección para permitir que los cambios de acordeón de estilo se reflejen en los resultados de búsqueda.
 
-### Recursos {#assets}
+### Assets {#assets}
 
 **Mejoras del producto**
 
 * Se mejoró la funcionalidad de los recursos conectados para añadir la compatibilidad con la recuperación de documentos desde implementaciones de DAM remotas. Los autores del sitio pueden buscar y filtrar los tipos de documentos admitidos en el Buscador de contenido. Los documentos remotos se pueden agregar al componente Descargar en páginas web. Revisión para CQ-4270245. Consulte [Uso de activos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Los usuarios de recursos pueden buscar imágenes visualmente similares. AEM muestra las imágenes etiquetadas inteligentes del repositorio de DAM similares a una imagen que seleccionó el usuario. Consulte [Búsqueda visual](../assets/search-assets.md#visualsearch).
+* Los usuarios de recursos pueden buscar imágenes visualmente similares. AEM muestra las imágenes con etiquetas inteligentes del repositorio de DAM similares a una imagen seleccionada por el usuario. Consulte [Búsqueda visual](../assets/search-assets.md#visualsearch).
 
 **Correcciones**
 
@@ -92,7 +364,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * La carga de archivos JPG devuelve varias instancias del mensaje &quot;Replicación del elemento ReplicateOnModifyWorker ACTUALIZADA&quot; en cada recurso, lo que provoca una degradación del rendimiento.
 * Si se descomprime el archivo zip mediante la función Extraer archivo se producen problemas con las carpetas cuyo nombre contiene el símbolo de porcentaje (%) en el título. NPR-29990: revisión para CQ-4270467
 
-### Sitios {#sites-6520}
+### Sites {#sites-6520}
 
 * Si la herencia de LiveCopy está dañada, las páginas de Live Copy muestran vínculos de copia de idioma en lugar de vínculos de LiveCopy. (NPR-30980)
 * Para un nuevo modelo, si el número de registros es superior a 40, solo se muestran los primeros 40 registros. El modelo muestra líneas en blanco para el resto de los registros. (NPR-31182)
@@ -207,7 +479,7 @@ Los aspectos destacados de los formularios de AEM 6.5.2.0 son:
 >
 >Para los clientes de AEM Forms, es esencial instalar el paquete de complementos de AEM Forms después de instalar cualquier paquete de servicio, paquete acumulativo o paquete de funciones de AEM.
 
-#### Sitios {#sites-feature-packs-included}
+#### Sites {#sites-feature-packs-included}
 
 * Se agregó una propiedad de configuración para permitir la exportación de fragmentos de experiencia directamente a espacios de trabajo que haya definido el usuario en Adobe Target. NPR-29189: revisión para CQ-4249782
 
@@ -225,7 +497,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Se ha incluido la compatibilidad con la entrega de recursos de vídeo de 360 grados en Dynamic Media Scene 7.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Recursos
+### Assets
 
 * Se ha actualizado la interfaz DAM DMGgateway para que sea compatible con varias partes de S3. NPR-29740: revisión para CQ-4226303
 * La vista previa de las representaciones genera `Only empty tenantId is currently supported` un error después de actualizar a AEM 6.5\. NPR-29986: revisión para CQ-4272353
@@ -437,7 +709,7 @@ Los aspectos destacados de los formularios de AEM 6.5.1.0 son:
 
 ### Paquetes de funciones incluidos
 
-#### Recursos - Incluido
+#### Recursos: incluidos
 
 * Se habilitó la compatibilidad con el administrador de varios sitios para los recursos. For more information, see [Reuse assets using MSM for Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: revisión para CQ-4259922
 
