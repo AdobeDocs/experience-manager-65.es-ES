@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -88,7 +88,7 @@ La creación de IU clásica aún está disponible en AEM 6.5, pero ya no se util
 
 Para facilitar las actualizaciones y garantizar que las configuraciones no se sobrescriban durante una actualización, el repositorio se reestructura en 6.4 para separar el contenido de la configuración.
 
-Por lo tanto, se debe mover una serie de configuraciones para que ya no residan en `/etc` el país, como en el pasado. Para revisar el conjunto completo de problemas de reestructuración de repositorios que deben revisarse y tenerse en cuenta en la actualización a AEM 6.4, consulte Reestructuración [de repositorios en AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+Por lo tanto, se debe mover una serie de configuraciones para que ya no residan en `/etc` el país, como en el pasado. Para revisar el conjunto completo de problemas de reestructuración de repositorios que deben revisarse y adaptarse en la actualización a AEM 6.4, consulte Reestructuración [de repositorios en AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## Personalizaciones de AEM {#aem-customizations}
 
@@ -187,7 +187,7 @@ A continuación se indican las áreas críticas de cualquier implementación de 
    <td>Prueba de la implementación de AEM y del código asociado en el nivel<br /> de publicación mediante el despachante. Debe incluir criterios para las actualizaciones de página y la invalidación de la caché<br /> .</td>
   </tr>
   <tr>
-   <td>Creación</td>
+   <td>Creación  </td>
    <td>Prueba de la implementación de AEM y del código asociado en el nivel Autor. Debe incluir la creación de páginas, componentes y cuadros de diálogo.</td>
   </tr>
   <tr>
