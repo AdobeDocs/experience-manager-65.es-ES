@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 | Versión | 6.5.4.0 |
 | Tipo | Versión de Service Pack |
 | Fecha | 05 de marzo de 2020 |
-| Descargar URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| Descargar URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), distribución [de software (Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Novedades de Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -128,8 +128,6 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Al mover el contenido dentro de la misma carpeta, se desactiva la opción de mover la página (NPR-31840).
 
-* Cuando se accede a las direcciones URL que finalizan con /_jcr_content/.html o /jcr:content/.html, los picos de CPU y AEM dejan de responder (NPR-31837).
-
 * En el modo de estructura de plantillas editables, la lista de componentes permitidos en el contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
 
 * Cuando una página tiene permisos de solo lectura para un usuario, la opción Abrir propiedades está visible en sites.html pero no en editor.html (NPR-31770).
@@ -179,8 +177,6 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 ### Editor de plantillas WCM {#wcm-template-editor-6540}
 
 * En el modo de estructura de plantillas editables, la lista de componentes permitidos en el contenedor de diseños no muestra el componente de botón de vínculo (CQ-4282099).
-
-* Picos de CPU y Experience Manager se torna inadaptable cuando se accede a las direcciones URL que finalizan con `/_jcr_content/.html` o `/jcr:content/.html` (CQ-4280770).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
