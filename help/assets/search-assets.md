@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c491b77dac1bf25b9e348ed12d16ed7894e5493e
 
 ---
 
@@ -42,7 +42,7 @@ Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
 *Figura: Explicación de partes de la interfaz de resultados de búsqueda de recursos*
 
-**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros (predicados) para reducir los resultados de búsqueda. **C.** Muestre archivos, carpetas o ambos en los resultados de la búsqueda. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. ************ F. Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G. Casilla de verificación para seleccionar todos los resultados de búsqueda.** H. Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **Yo. Cierre la búsqueda** J. Cambie entre la vista de tarjeta y la vista de lista.
+**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros (predicados) para reducir los resultados de búsqueda. **C.** Muestre archivos, carpetas o ambos en los resultados de la búsqueda. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Casilla de verificación para seleccionar todos los resultados de búsqueda. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **Yo.** Cierre la búsqueda **J.** Cambie entre la vista de tarjeta y la vista de lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
@@ -50,7 +50,7 @@ Puede descubrir los recursos deseados más rápido desde la página de resultado
 
 ![Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura:Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.*
+*Figura: Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.*
 
 ## Comprender los resultados y el comportamiento de la búsqueda {#searchbehavior}
 
@@ -99,7 +99,7 @@ Para recibir sugerencias para más de una palabra clave de búsqueda, siga escri
 
 ![Escriba varias palabras clave para ver las sugerencias que se ajustan a todas ellas](assets/search_suggestionsmanykeywords.gif)
 
-*Figura:Escriba varias palabras clave para ver las sugerencias que se ajustan a todas ellas*
+*Figura: Escriba varias palabras clave para ver las sugerencias que se ajustan a todas ellas*
 
 ### Clasificación de búsqueda y aumento {#searchrank}
 
@@ -131,7 +131,7 @@ AEM proporciona varios métodos, como filtros que se aplican a los recursos busc
 
 ![Limitar los resultados de búsqueda a una carpeta agregando una ruta de carpeta en el panel Filtros](assets/search_folder_select.gif)
 
-*Figura:Limitar los resultados de búsqueda a una carpeta agregando una ruta de carpeta en el panel Filtros*
+*Figura: Limitar los resultados de búsqueda a una carpeta agregando una ruta de carpeta en el panel Filtros*
 
 ### Buscar imágenes similares {#visualsearch}
 
@@ -139,7 +139,7 @@ Para buscar imágenes que sean visualmente similares a una imagen seleccionada p
 
 ![Buscar imágenes similares con la opción en la vista de tarjeta](assets/search_find_similar.png)
 
-*Figura:Buscar imágenes similares con la opción en la vista de tarjeta*
+*Figura: Buscar imágenes similares con la opción en la vista de tarjeta*
 
 ### Imágenes de Adobe Stock {#adobestock}
 
@@ -244,9 +244,9 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 ![Examinar y seleccionar recursos en el selector de recursos](assets/assetpicker.png)
 
-*Figura:Examinar y seleccionar recursos en el selector de recursos*
+*Figura: Examinar y seleccionar recursos en el selector de recursos*
 
-## Restricciones  {#limitations}
+## Restricciones   {#limitations}
 
 La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
 
@@ -285,7 +285,7 @@ Utilice comillas dobles alrededor de las palabras clave para encontrar recursos 
 
 ![Comportamiento de búsqueda con y sin comillas](assets/search_with_quotes.gif)
 
-*Figura:Comportamiento de búsqueda con y sin comillas*
+*Figura: Comportamiento de búsqueda con y sin comillas*
 
 **Buscar con comodín** asterisco: Para ampliar la búsqueda, utilice un asterisco antes o después de la palabra de búsqueda para que coincida con cualquier número de caracteres. Por ejemplo, al buscar una ejecución sin un asterisco, no se devuelven recursos que contengan ninguna variación de la palabra (incluidos los metadatos). Un asterisco sustituye a cualquier número de caracteres. Por ejemplo,
 
@@ -296,7 +296,7 @@ Utilice comillas dobles alrededor de las palabras clave para encontrar recursos 
 
 ![Ilustración del uso de un comodín de asterisco en la búsqueda de recursos mediante un ejemplo](assets/search_with_asterisk_run.gif)
 
-*Figura:Ilustración del uso de un comodín de asterisco en la búsqueda de recursos mediante un ejemplo*
+*Figura: Ilustración del uso de un comodín de asterisco en la búsqueda de recursos mediante un ejemplo*
 
 **Buscar con comodín** de signo de interrogación: Para ampliar la búsqueda, utilice uno o varios &#39;?&#39; caracteres para que coincidan con el número exacto de caracteres. Por ejemplo, en la siguiente ilustración,
 
@@ -308,13 +308,13 @@ Utilice comillas dobles alrededor de las palabras clave para encontrar recursos 
 
 ![Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo](assets/search_with_questionmark_run.gif)
 
-*Figura:Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo*
+*Figura: Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo*
 
 **Excluir una palabra clave**: Utilice dash para buscar recursos que no contengan una palabra clave. Por ejemplo, `running -shoe` la consulta devuelve recursos que contienen `running`, pero no `shoe`. Del mismo modo, `camp -night` la consulta devuelve recursos que contienen `camp` pero no `night`. Tenga en cuenta que `camp-night` la consulta devuelve recursos que contienen tanto `camp` como `night`.
 
 ![Uso del guión para buscar recursos que no contengan una palabra clave excluida](assets/search_dash_exclude_keyword.gif)
 
-*Figura:Uso del guión para buscar recursos que no contengan una palabra clave excluida*
+*Figura: Uso del guión para buscar recursos que no contengan una palabra clave excluida*
 
 ## Tareas de configuración y administración relacionadas con la funcionalidad de búsqueda {#configadmin}
 
@@ -415,7 +415,7 @@ Para comprobar los comentarios de un recurso o del historial de versiones de un 
 
 ![Ordenar entradas de línea de tiempo para un recurso de búsqueda](assets/sort_timeline_search_results.gif)
 
-*Figura:Ordenar entradas de línea de tiempo para un recurso de búsqueda*
+*Figura: Ordenar entradas de línea de tiempo para un recurso de búsqueda*
 
 ### Descargar recursos buscados {#download}
 
@@ -425,7 +425,7 @@ Puede descargar los recursos buscados y sus representaciones del mismo modo que 
 
 Es posible realizar actualizaciones masivas en los campos de metadatos comunes de varios recursos. En los resultados de la búsqueda, seleccione uno o varios recursos. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas y actualice los metadatos según sea necesario. Haga clic en **[!UICONTROL Guardar y cerrar]** cuando termine. Los metadatos existentes anteriormente en los campos actualizados se sobrescriben.
 
-Para los recursos disponibles en una sola carpeta o colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/managing-multiple-assets.md) sin utilizar la funcionalidad de búsqueda. Para los recursos disponibles en varias carpetas o que cumplen un criterio común, es más rápido actualizar los metadatos de forma masiva mediante la búsqueda.
+Para los recursos disponibles en una sola carpeta o colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/managing-multiple-assets.md) sin utilizar la funcionalidad de búsqueda. Para los recursos que están disponibles en varias carpetas o que cumplen un criterio común, es más rápido actualizar los metadatos de forma masiva mediante la búsqueda.
 
 ### Colecciones inteligentes {#collections-1}
 
@@ -440,7 +440,7 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 
 | Error, problemas, síntomas | Motivo posible | Posible solución o comprensión del problema |
 |---|---|---|
-| Resultados incorrectos al buscar recursos con metadatos que faltan |  Al buscar recursos que no tienen los metadatos obligatorios, AEM puede mostrar algunos recursos que tienen metadatos válidos. Los resultados se basan en la propiedad de metadatos indexados. | Una vez actualizados los metadatos, es necesario volver a indexar para reflejar el estado correcto de los metadatos de los recursos. Consulte metadatos [](metadata-schemas.md#define-mandatory-metadata)obligatorios. |
+| Resultados incorrectos al buscar recursos con metadatos que faltan | Al buscar recursos que no tienen los metadatos obligatorios, AEM puede mostrar algunos recursos que tienen metadatos válidos. Los resultados se basan en la propiedad de metadatos indexados. | Una vez actualizados los metadatos, es necesario volver a indexar para reflejar el estado correcto de los metadatos de los recursos. Consulte metadatos [](metadata-schemas.md#define-mandatory-metadata)obligatorios. |
 | Demasiados resultados de búsqueda | Parámetro de búsqueda amplia. | Considere limitar el [alcance de la búsqueda](#scope). El uso de etiquetas inteligentes puede proporcionarle más resultados de búsqueda de los esperados. Consulte Comportamiento [de búsqueda con etiquetas](#withsmarttags)inteligentes. |
 | Resultados de búsqueda no relacionados o parcialmente relacionados | El comportamiento de búsqueda cambia con el etiquetado inteligente. | Comprender [cómo cambia la búsqueda después del etiquetado](#withsmarttags)inteligente. |
 | No hay sugerencias de autocompletar para los recursos | Los recursos recién cargados no se han indizado todavía. Los metadatos no están disponibles inmediatamente como sugerencias cuando comienza a escribir una palabra clave de búsqueda en la barra de Omniture. | Recursos AEM espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados o actualizados y, a continuación, agrega los metadatos a la lista de sugerencias. |
