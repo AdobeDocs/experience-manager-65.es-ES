@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -42,7 +42,7 @@ Si no existe una biblioteca de cliente para la configuración regional solicitad
 
 ## Adición de asistencia para la localización en configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
-Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-br), chino (zh-tn), chino-Taiwán (zh-tw) y coreano (ko-kr).
+Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR).
 
 Para añadir compatibilidad con una nueva configuración regional en tiempo de ejecución de formularios adaptables:
 
@@ -93,12 +93,12 @@ LogMessages.js
 
 ### Agregar compatibilidad con la configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
 
-Realice este paso sólo si el `<locale>` que está agregando no es `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw``ja``ko-kr`.
+Realice este paso sólo si el `<locale>` que está agregando no es `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw``ja``ko-kr`.
 
 1. Cree un `nt:unstructured` nodo `languages` en `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena con varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los `<locale>` valores de configuración regional predeterminados `de``es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja``ko-kr`, si no están presentes.
+1. Agregue los `<locale>` valores de configuración regional predeterminados `de``es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja``ko-kr`, si no están presentes.
 
 1. Agregue el `<locale>` a los valores de la `languages` propiedad de `/etc/languages`.
 
