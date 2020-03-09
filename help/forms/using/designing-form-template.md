@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -41,6 +41,6 @@ El destino clave para los formularios HTML5 son los dispositivos táctiles. Por 
 
 #### Rich text format {#rich-text-format}
 
-Para agregar una lista de opciones de formato a un campo de texto en el formulario HTML5 procesado, puede definir un formato de campo para el campo de texto en Forms Designer. Puntee en el campo de texto en la vista **[!UICONTROL Diseño]**. En la ficha **[!UICONTROL Campo]** , seleccione Texto **** enriquecido en la lista desplegable Formato **[!UICONTROL de]** campo para aplicar la configuración. El campo de texto muestra las opciones de formato cuando se procesa en un formulario HTML5.
+Defina un formato de campo de texto enriquecido para el campo de texto en Forms Designer para agregar una lista de opciones de formato al campo en el formulario HTML5 procesado. Para aplicar la configuración, toque el campo de texto en la vista **[!UICONTROL Diseño]**. En la ficha **[!UICONTROL Campo]** , seleccione Texto **** enriquecido en la lista desplegable Formato **[!UICONTROL de]** campo. El campo de texto muestra las opciones de formato cuando se procesa en un formulario HTML5.
 
 [Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
