@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -81,11 +81,11 @@ Puede repetir los pasos 1 y 2 y seleccionar ![Seleccionar principal](assets/floa
 
 Siga los pasos siguientes para definir el número de columnas de un panel:
 
-1. En el modo de **[!UICONTROL edición]** , toque el panel, seleccione ![Configurar](assets/configure_icon.png)y seleccione **[!UICONTROL Responsable: todo en la página sin la opción de navegación]** .
+1. En el modo de **[!UICONTROL edición]** , toque el panel, seleccione ![Configurar](assets/configure_icon.png)y, a continuación, **[!UICONTROL Responder: todo en la página sin la opción de navegación]** en la lista desplegable Diseño **[!UICONTROL del]** panel.
 
 1. Toque ![Guardar](assets/save_icon.svg) para guardar las propiedades.
 
-1. En el modo **[!UICONTROL Diseño]** , toque cualquiera de los componentes del panel cuyo tamaño desee cambiar, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y, si el panel es el elemento principal inmediato del componente, seleccione la primera opción de la lista desplegable.
+1. En el modo **[!UICONTROL Diseño]** , toque cualquiera de los componentes del panel, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y seleccione el panel.
 
 1. Toque ![varias columnas](assets/multi-column.svg) y seleccione el número de columnas en la lista desplegable. El número de columnas puede oscilar entre 1 y 12. El panel se divide en un diseño de varias columnas.
 
