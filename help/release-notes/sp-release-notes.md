@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
+source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
 
 ---
 
@@ -32,7 +32,7 @@ Algunas de las funciones y mejoras clave introducidas en AEM 6.5.4.0 son:
 
 * Recursos AEM ahora se configura con Brand Portal a través de la consola de Adobe I/O.
 
-* Ya hay disponible un nuevo paso [Generar salida](../forms/using/aem-forms-workflow-step-reference.md) imprimible para los flujos de trabajo de AEM.
+* Ya hay disponible un nuevo paso [Generar salida](../forms/using/aem-forms-workflow-step-reference.md) imprimible para los flujos de trabajo de AEM Forms.
 
 * [Compatibilidad](../forms/using/resize-using-layout-mode.md) con varias columnas para el modo de presentación de formularios adaptables y comunicaciones interactivas.
 
@@ -43,6 +43,50 @@ Algunas de las funciones y mejoras clave introducidas en AEM 6.5.4.0 son:
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.10.8.
 
 Para obtener una lista completa de las funciones, los aspectos más destacados y las funciones clave introducidas en los Service Pack anteriores de AEM 6.5, consulte [Novedades de Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
+
+### Sites {#sites-fixes}
+
+* Cuando una dirección URL de una página de AEM Sites contiene dos puntos (: ) o símbolo de porcentaje (%), el explorador subyacente deja de responder y los ciclos de CPU muestran un pico (NPR-32369, NPR-31918).
+
+* Cuando se abre una página de AEM Sites para editarla y se copia un componente, la acción de pegado permanece indisponible para algunos marcadores de posición (NPR-32317).
+
+* Cuando se abre el asistente Administrar publicación, un fragmento de experiencia vinculado a un componente principal no se muestra en las listas de referencias publicadas (NPR-32233).
+
+* La descripción general de la Live Copy en la IU táctil tarda mucho más que la IU clásica en procesarse (NPR-32149).
+
+* Cuando la hora del servidor y la hora del equipo están en diferentes zonas horarias, la hora de publicación programada muestra la hora del servidor en la IU táctil, mientras que en la IU clásica se muestra la hora del equipo (NPR-32077).
+
+* AEM Sites no puede abrir una página con un sufijo en la URL (NPR-32072).
+
+* Cuando un usuario edita un fragmento de contenido, se restaura una variación eliminada del fragmento de contenido (NPR-32062).
+
+* Los usuarios pueden guardar un fragmento de contenido sin proporcionar información en los campos requeridos (NPR-31988).
+
+* kernel.js y ui.js no se cumplimentan ni se almacenan en caché. Esto lleva a tiempo adicional en el procesamiento de páginas (NPR-31891).
+
+* Cuando PageEventAuditListener está habilitado, la longitud de la cola de confirmación aumenta. Afecta al rendimiento de muchas operaciones, como la publicación masiva, la navegación y el movimiento masivo de recursos (NPR-31890).
+
+* Cuando se arrastran fragmentos de experiencia, se observa un tiempo de respuesta alto (NPR-31878).
+
+* Cuando selecciona la opción Arrastrar componente aquí en el marcador de posición de una cuadrícula adaptable, se envía una solicitud GET y la solicitud da como resultado un error HTTP 403 (NPR-31845).
+
+* Al mover el contenido dentro de la misma carpeta, se desactiva la opción de mover la página (NPR-31840).
+
+* En el modo de estructura de plantillas editables, la lista de componentes permitidos en el contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
+
+* Cuando una página tiene permisos de solo lectura para un usuario, la opción Abrir propiedades está visible en sites.html pero no en editor.html (NPR-31770).
+
+* Cuando un usuario hace clic en el botón Crear, la opción de página no está disponible (NPR-31756).
+
+* No se puede sincronizar la campaña en la campaña de Adobe que contenga el componente importador de diseños OOTB (predeterminado) (NPR-31728).
+
+* Cuando se intenta cambiar una lista de viñetas a una lista numerada, solo se cambian los dos primeros elementos de la lista (NPR-31636).
+
+* Cuando se anula la creación de una página y se selecciona el nodo secundario, el cuadro de diálogo de selección aún muestra el nodo inicial. Cuando se crea la página y el usuario hace clic en Examinar, la página se redirige al nodo raíz en lugar del nodo creado (NPR-31618).
+
+* El cuadro de diálogo de configuración de la vista no funciona correctamente para la función de flujo de trabajo de personalización de la Bandeja de entrada (NPR-32503 y NPR-32492).
+
+* Aparece un mensaje de error al ver la información del flujo de trabajo mediante la Bandeja de entrada (CQ-4282168).
 
 ### Assets {#assets-6540-enhancements}
 
@@ -100,57 +144,13 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * La casilla de verificación Sincronizar todo el contenido no está habilitada de forma predeterminada al intentar agregar la configuración de nube de DM en AEM (CQ-4288533).
 
-### Sites {#sites-fixes}
-
-* Cuando una dirección URL de una página de AEM Sites contiene dos puntos (: ) o símbolo de porcentaje (%), el explorador subyacente deja de responder y los ciclos de CPU muestran un pico (NPR-32369, NPR-31918).
-
-* Cuando se abre una página de AEM Sites para editarla y se copia un componente, la acción de pegado permanece indisponible para algunos marcadores de posición (NPR-32317).
-
-* Cuando se abre el asistente Administrar publicación, un fragmento de experiencia vinculado a un componente principal no se muestra en las listas de referencias publicadas (NPR-32233).
-
-* La descripción general de la Live Copy en la IU táctil tarda mucho más que la IU clásica en procesarse (NPR-32149).
-
-* Cuando la hora del servidor y la hora del equipo están en diferentes zonas horarias, la hora de publicación programada muestra la hora del servidor en la IU táctil, mientras que en la IU clásica se muestra la hora del equipo (NPR-32077).
-
-* AEM Sites no puede abrir una página con un sufijo en la URL (NPR-32072).
-
-* Cuando un usuario edita un fragmento de contenido, se restaura una variación eliminada del fragmento de contenido (NPR-32062).
-
-* Los usuarios pueden guardar un fragmento de contenido sin proporcionar información en los campos requeridos (NPR-31988).
-
-* kernel.js y ui.js no se cumplimentan ni se almacenan en caché. Esto lleva a tiempo adicional en el procesamiento de páginas (NPR-31891).
-
-* Cuando PageEventAuditListener está habilitado, la longitud de la cola de confirmación aumenta. Afecta al rendimiento de muchas operaciones, como la publicación masiva, la navegación y el movimiento masivo de recursos (NPR-31890).
-
-* Cuando se arrastran fragmentos de experiencia, se observa un tiempo de respuesta alto (NPR-31878).
-
-* Cuando selecciona la opción Arrastrar componente aquí en el marcador de posición de una cuadrícula adaptable, se envía una solicitud GET y la solicitud da como resultado un error HTTP 403 (NPR-31845).
-
-* Al mover el contenido dentro de la misma carpeta, se desactiva la opción de mover la página (NPR-31840).
-
-* En el modo de estructura de plantillas editables, la lista de componentes permitidos en el contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
-
-* Cuando una página tiene permisos de solo lectura para un usuario, la opción Abrir propiedades está visible en sites.html pero no en editor.html (NPR-31770).
-
-* Cuando un usuario hace clic en el botón Crear, la opción de página no está disponible (NPR-31756).
-
-* No se puede sincronizar la campaña en la campaña de Adobe que contenga el componente importador de diseños OOTB (predeterminado) (NPR-31728).
-
-* Cuando se intenta cambiar una lista de viñetas a una lista numerada, solo se cambian los dos primeros elementos de la lista (NPR-31636).
-
-* Cuando se anula la creación de una página y se selecciona el nodo secundario, el cuadro de diálogo de selección aún muestra el nodo inicial. Cuando se crea la página y el usuario hace clic en Examinar, la página se redirige al nodo raíz en lugar del nodo creado (NPR-31618).
-
-* El cuadro de diálogo de configuración de la vista no funciona correctamente para la función de flujo de trabajo de personalización de la Bandeja de entrada (NPR-32503 y NPR-32492).
-
-* Aparece un mensaje de error al ver la información del flujo de trabajo mediante la Bandeja de entrada (CQ-4282168).
-
 ### Interfaz de usuario de Foundation {#foundation-ui-6540}
 
 * El control del ratón cambia al campo de filtro anterior en lugar de permanecer en el campo de filtro existente al buscar recursos con el panel Filtro (NPR-32538).
 
-* [O Etiquetado] de plataforma Al escribir en los campos de etiqueta se muestran etiquetas fuera de los límites raíz y no se respeta la propiedad `rootPath` de los campos de etiqueta (NPR-31895).
+* Etiquetado de plataforma: Para buscar etiquetas, escriba en los campos de etiqueta, se muestran las etiquetas que están fuera de los límites raíz y no se respeta la `rootPath` propiedad de los campos de etiqueta (NPR-31895).
 
-* [El navegador de ruta de la interfaz de usuario] de la plataforma se interrumpe si se agrega una ruta no válida en el campo de texto (NPR-31884).
+* Interfaz de usuario de plataforma: El navegador de rutas se interrumpe si se agrega una ruta no válida en el campo de texto (NPR-31884).
 
 * La notificación se oculta detrás de un menú adhesivo en la selección de página (NPR-31628).
 
@@ -240,9 +240,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Document Security: Un archivo PDF protegido no se puede abrir sin conexión con la opción DisableGlobalOfflineSynchronizationData establecida en True (NPR-32078).
 
-* Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32547).
-
-* Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-31983, NPR-31950).
+* Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer: Si hay celdas combinadas en una tabla, la prueba de accesibilidad falla para el archivo PDF de salida convertido desde un formulario XDP mediante el servicio de salida (CQ-4285372).
 
