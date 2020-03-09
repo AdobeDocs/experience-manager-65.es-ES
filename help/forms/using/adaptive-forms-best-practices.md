@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -53,7 +53,7 @@ Una vez configurado el proyecto de AEM, defina una estrategia para la creación 
 * AEM Forms permite crear formularios adaptables basados en los siguientes modelos de formulario. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Asimismo, los modelos de formulario imponen reglas y restricciones a los formularios adaptables en forma de restricciones de esquema y XFA.
 
    * **Ninguno**: Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
-   * **Esquema** XML o JSON:Los esquemas XML y JSON representan la estructura en la que el sistema back-end de la organización produce o consume los datos. Puede asociar un esquema a un formulario adaptable y utilizar sus elementos para agregar contenido dinámico al formulario adaptable. Los elementos del esquema están disponibles en la ficha Objeto del modelo de datos del navegador de contenido para la creación de formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
+   * **Esquema** XML o JSON: Los esquemas XML y JSON representan la estructura en la que el sistema back-end de la organización produce o consume los datos. Puede asociar un esquema a un formulario adaptable y utilizar sus elementos para agregar contenido dinámico al formulario adaptable. Los elementos del esquema están disponibles en la ficha Objeto del modelo de datos del navegador de contenido para la creación de formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
    * **Plantilla** de formulario XFA: Es un modelo de formulario ideal si tiene inversiones en formularios HTML5 basados en XFA. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Las reglas XFA existentes se conservan en los formularios adaptables asociados. Los formularios adaptables resultantes admiten construcciones XFA, como validaciones, eventos, propiedades y patrones.
    * **Modelo** de datos de formulario: Se trata de un modelo de formulario preferido si desea integrar sus sistemas de back-end como bases de datos, servicios Web y perfiles de usuario de AEM para rellenar previamente formularios adaptables y volver a escribir datos de formulario enviados en los sistemas de back-end. Un editor del modelo de datos de formulario permite definir y configurar entidades y servicios en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Para obtener más información, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM.
 
@@ -166,7 +166,7 @@ Puede rellenar previamente los campos de formulario adaptables con datos recuper
 
 * AEM Forms proporciona un servicio de rellenado previo para leer datos de un archivo XML de datos predefinido y rellenar los campos de un formulario adaptable con el contenido del archivo XML de relleno previo.
 * El XML de datos de relleno previo debe ser compatible con el esquema del modelo de formulario asociado al formulario adaptable.
-* Incluya `afBoundedData` y `afUnBoundedData` secciones en el XML de relleno previo para rellenar previamente los campos enlazados y no enlazados en un formulario adaptable.
+* Incluya `afBoundedData` y `afUnBoundedData` secciones en el archivo XML de relleno previo para rellenar campos enlazados y no enlazados en un formulario adaptable.
 
 * Para los formularios adaptables basados en el modelo de datos de formulario, AEM Forms proporciona un servicio de cumplimentación previa del modelo de datos de formulario integrado. El servicio de relleno previo consulta los orígenes de datos de los objetos del modelo de datos en el formulario adaptable y preestablece los valores de los campos al procesar el formulario.
 * También puede utilizar los protocolos file, crx, service o http para rellenar formularios adaptables.
@@ -245,7 +245,7 @@ Algunas prácticas recomendadas para localizar formularios adaptables son las si
 
    `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-br), chino (zh-tn), chino-Taiwán (zh-tw) y coreano (ko-kr). Sin embargo, puede añadir compatibilidad con nuevas configuraciones regionales para formularios adaptables en tiempo de ejecución. Para obtener más información, consulte [Compatibilidad con nuevas configuraciones regionales para la localización](/help/forms/using/supporting-new-language-localization.md)de formularios adaptables.
+* Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR). Sin embargo, puede añadir compatibilidad con nuevas configuraciones regionales para formularios adaptables en tiempo de ejecución. Para obtener más información, consulte [Compatibilidad con nuevas configuraciones regionales para la localización](/help/forms/using/supporting-new-language-localization.md)de formularios adaptables.
 
 ## Preparar proyecto de formularios para producción {#prepare-forms-project-for-production}
 
