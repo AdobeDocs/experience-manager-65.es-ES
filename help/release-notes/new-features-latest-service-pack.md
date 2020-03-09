@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
+source-git-commit: 93521f102596a7f5cb247ddc430626d352338ce8
 
 ---
 
@@ -112,7 +112,7 @@ Para obtener más información, consulte [Diseño de plantillas de formulario pa
 
 Además de las nuevas funciones, AEM 6.5 Service Pack 4 incluye los siguientes aspectos destacados:
 
-* Ahora solo se pueden sincronizar subárboles de contenido selectivo con Scene7 en lugar de todo `content/dam`.
+* Ahora solo se pueden sincronizar subárboles de contenido selectivo con el modo *Medios* dinámicos: Scene7 en lugar de todo `content/dam`.
 
 * La integración del modelo de datos de formulario mediante el servicio web SOAP ahora admite grupos de opciones o atributos en los elementos.
 
