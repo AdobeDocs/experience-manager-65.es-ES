@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c9e8e1f2ebb72efc2f54c13c3ddae525ec55349f
+source-git-commit: d0038181326037ab71f4df9b509d2f0827191c86
 
 ---
 
@@ -109,7 +109,7 @@ Para obtener más información, consulte [Diseño de plantillas de formulario pa
 
 Además de las nuevas funciones, AEM 6.5 Service Pack 4 incluye los siguientes aspectos destacados:
 
-* Ahora puede sincronizar subárboles de contenido selectivo con Scene7 en lugar de todos los subárboles disponibles en `content/dam`.
+* Ahora puede sincronizar subárboles de contenido selectivo con el modo *Medios* dinámicos - Scene7 en lugar de todo lo disponible en `content/dam`.
 
 * La integración del modelo de datos de formulario con el servicio web SOAP ahora admite grupos de opciones o atributos en los elementos.
 
@@ -157,7 +157,7 @@ Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las sigui
 
 * Sitios AEM: Sitio de referencia de WKND Todos los [nuevos proyectos](https://www.wknd.site/) de referencia, acompañados de las prácticas recomendadas para crear sitios con AEM. Obtenga más información leyendo el tutorial [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) WKND completamente actualizado y tomando el código de [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
 
-* Sitios AEM: Commerce CIF Core Components 0.7.0 y 0.9.0Integración de AEM Sites y Magento Commerce. Estamos [extendiendo continuamente componentes principales dedicados y un arquetipo de proyecto con énfasis en el comercio](https://github.com/adobe/aem-core-cif-components/releases).
+* Sitios AEM: Commerce CIF Core Components 0.7.0 y 0.9.0Integración de AEM Sites y Magento Commerce. Estamos [extendiendo continuamente componentes principales dedicados y un arquetipo de proyecto con énfasis en comercio](https://github.com/adobe/aem-core-cif-components/releases).
 
 * Recursos AEM: Desktop App 2.0.1.1
    [Obtener acceso de escritorio a los recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)
