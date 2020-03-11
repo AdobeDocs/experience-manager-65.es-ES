@@ -3,7 +3,7 @@ title: Revisión de los recursos y las colecciones de carpetas
 description: Configure flujos de trabajo de revisión para recursos dentro de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -103,8 +103,8 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figura:Vista de tarjeta*
+   *Figura: Vista de tarjeta*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figura:Vista de lista*
+   *Figura: Vista de lista*
