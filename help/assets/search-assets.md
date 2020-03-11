@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d09e02c451c01955b93bc3149fc663754435fdf
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -52,7 +52,7 @@ Puede descubrir los recursos deseados más rápido desde la página de resultado
 
 ![Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura: Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.*
+*Figura: Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda*
 
 ## Comprender los resultados y el comportamiento de la búsqueda {#searchbehavior}
 
