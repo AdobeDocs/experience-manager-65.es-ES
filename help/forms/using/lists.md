@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -20,10 +20,10 @@ source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
 
 Los fragmentos de documento son partes/componentes reutilizables de una correspondencia mediante los cuales se pueden componer cartas/correspondencia. Los fragmentos de documento son de los siguientes tipos:
 
-* **Texto**:Un recurso de texto es un fragmento de contenido que consta de uno o varios párrafos de texto. Un párrafo puede ser estático o dinámico.
+* **Texto**: Un recurso de texto es un fragmento de contenido que consta de uno o varios párrafos de texto. Un párrafo puede ser estático o dinámico.
 * **Lista**: La lista es un grupo de fragmentos de documento, incluidos texto, listas, condiciones e imágenes. El orden de los elementos de la lista puede ser fijo o editable. Al crear una carta, puede utilizar algunos o todos los elementos de la lista para replicar un patrón reutilizable de elementos.
-* **Condición**:Las condiciones le permiten definir qué contenido se incluye en el momento de la creación de la correspondencia, en función de los datos suministrados. La condición se describe en términos de variables de control. Una variable de control puede ser un elemento de diccionario de datos o un marcador de posición.
-* **Fragmento** de diseño:Un fragmento de diseño es un diseño que se puede utilizar en una o varias letras. Un fragmento de diseño se utiliza para crear patrones repetibles, especialmente tablas dinámicas. La presentación puede contener campos de formulario típicos como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas objetivo. Los diseños (XDP) se crean en Designer y, a continuación, se cargan en AEM Forms.
+* **Condición**: Las condiciones le permiten definir qué contenido se incluye en el momento de la creación de la correspondencia, en función de los datos suministrados. La condición se describe en términos de variables de control. Una variable de control puede ser un elemento de diccionario de datos o un marcador de posición.
+* **Fragmento** de diseño: Un fragmento de diseño es un diseño que se puede utilizar en una o varias letras. Un fragmento de diseño se utiliza para crear patrones repetibles, especialmente tablas dinámicas. La presentación puede contener campos de formulario típicos como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas objetivo. Los diseños (XDP) se crean en Designer y, a continuación, se cargan en AEM Forms.
 
 ## Texto {#text}
 
@@ -41,11 +41,11 @@ La solución de administración de correspondencia admite dos tipos de elementos
 ### Create text {#create-text}
 
 1. Seleccione **Formularios** > Fragmentos **de documento**.
-1. Puntee **Crear** > **Texto** O seleccione un recurso de texto y toque **Editar**.
+1. Toque **Crear** > **Texto** o seleccione un recurso de texto y toque **Editar**.
 1. Especifique la siguiente información para el texto:
 
    * **Título: (Opcional)** Introduzca el título del recurso de texto. Los títulos no tienen que ser únicos y pueden tener caracteres especiales y caracteres no ingleses. Los textos se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
-   * **** Nombre: Nombre exclusivo del recurso de texto. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
+   * **Nombre:** Nombre exclusivo del recurso de texto. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
    * **Descripción**: Escriba una descripción del recurso.
    * **Diccionario** de datos: De forma opcional, seleccione el diccionario de datos en el que desea realizar la asignación. Este atributo permite agregar referencias a elementos del diccionario de datos en el recurso de texto.
    * **Etiquetas**: De forma opcional, para crear un valor de introducción de etiquetas personalizado en el campo de texto y pulse Intro. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas recientemente agregadas.
@@ -60,11 +60,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
 
    [ ![Barra de herramientas](assets/advancedediting.png)
 
-   (Haga clic para abrir una imagen de tamaño completo)
-
-   ](assets/advancedediting-1.png)
-
-   * **Vínculo**: Inserte un vínculo de hipertexto en el texto.
+   * **Vínculo**: Inserte un vínculo de hipertexto en el texto. Toque **[!UICONTROL Vínculo]**, especifique el vínculo en el campo **[!UICONTROL URL]** , quite el nombre de objeto predeterminado del campo Texto **** alternativo y toque ![Guardar](assets/save_icon.svg).
    * **Repetir**: Repita el elemento de recopilación de impresiones en el diccionario de datos con un delimitador.
    * **Condición**: Toque para insertar una condición. Inserte texto basado en una condición. Si la condición es verdadera, el texto está visible en letra; de lo contrario, no.
    * **Agregar descripción**: Agregue una anotación a un fragmento de texto. Se trata de metadatos visibles para el autor, pero no de una parte de la carta que se crea.
@@ -158,13 +154,13 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
 #### Opciones de búsqueda {#search-options}
 
-**** Coincidir mayúsculas y minúsculas: La búsqueda devuelve resultados con el mismo caso solamente.
+**Coincidir mayúsculas y minúsculas:** La búsqueda devuelve resultados con el mismo caso solamente.
 
-**** Palabra completa: La búsqueda sólo devuelve palabras completas.
+**Palabra completa:** La búsqueda sólo devuelve palabras completas.
 
-**** Nota: Si introduce caracteres especiales en el cuadro de texto Buscar, se desactivará la opción Palabra completa.
+**Nota:** Si introduce caracteres especiales en el cuadro de texto Buscar, se desactivará la opción Palabra completa.
 
-**** Reg ex: Buscar con expresiones regulares. Por ejemplo, la siguiente expresión regular busca direcciones de correo electrónico en un módulo de texto:
+**Reg ex:** Buscar con expresiones regulares. Por ejemplo, la siguiente expresión regular busca direcciones de correo electrónico en un módulo de texto:
 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}`
 
@@ -188,10 +184,10 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 * Utilice el enlace de diccionario de datos adecuado en los módulos de texto.
 * Las siguientes reglas se aplican al utilizar el Editor de texto al cambiar un recurso de texto:
 
-   * **** Adición de variable: Permitido
-   * **** Eliminación de la variable: Permitido
-   * **** Actualización de propiedades: Permitido
-   * **** Cambio del diccionario de datos: Se permite hasta que no se utilice el elemento del diccionario de datos. No se puede cambiar el diccionario de datos al actualizar.
+   * **Adición de variable:** Permitido
+   * **Eliminación de la variable:** Permitido
+   * **Actualización de propiedades:** Permitido
+   * **Cambio del diccionario de datos:** Se permite hasta que no se utilice el elemento del diccionario de datos. No se puede cambiar el diccionario de datos al actualizar.
 
 ## Lista {#list}
 
@@ -224,7 +220,7 @@ Una lista es un grupo de contenido relacionado que se puede utilizar en una plan
 1. Especifique la siguiente información para la lista:
 
    * **Título (opcional): Escriba** el título de la lista. El título no tiene que ser único y puede tener caracteres especiales y caracteres no ingleses. Las listas se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
-   * **** Nombre: Nombre exclusivo de la lista. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente con el valor en el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
+   * **Nombre:** Nombre exclusivo de la lista. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente con el valor en el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
    * **Descripción (opcional)**: Escriba una descripción del recurso.
    * **Diccionario de datos (opcional)**: De forma opcional, seleccione el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista los recursos que utilicen el mismo diccionario de datos que la lista, o los recursos que no tengan asignado ningún diccionario de datos. Asignar un diccionario de datos a una lista facilita que la persona que crea una plantilla de letras encuentre la lista adecuada.
    * **Etiquetas (opcional)**: Seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una nueva etiqueta y crearla. (La nueva etiqueta se crea al tocar **Guardar**).
@@ -252,14 +248,14 @@ Para cambiar el orden de los recursos dentro de la lista, toque y mantenga pulsa
 
 1. Puede seleccionar las siguientes opciones para especificar el comportamiento de cada recurso en la lista durante la ejecución:
 
-   * **** Editable: Cuando se selecciona esta opción, el contenido se puede editar en la interfaz de usuario Crear correspondencia. (Esta opción no está disponible para los módulos Lista e Imagen).
-   * **** Obligatorio: Cuando se selecciona esta opción, el contenido se requiere en la interfaz de usuario Crear correspondencia.
-   * **** Seleccionado: Cuando se selecciona esta opción, el contenido se preselecciona en la interfaz de usuario Crear correspondencia.
-   * **** Saltar estilo: Cuando se selecciona esta opción, el contenido omite las viñetas y la numeración en la interfaz de usuario Crear correspondencia. (Esta opción no está disponible para los módulos de imagen. Además, entre Omitir estilo, Compuesto y Omitir estilo de lista, solo se puede aplicar una de las opciones a un módulo. Una de estas opciones se puede utilizar para un módulo cuando se selecciona Agregar viñetas para un módulo).
-   * **** Sangría: Puede cambiar el nivel de sangría de cada módulo o contenido seleccionado como parte de la lista. La sangría se especifica en términos de Niveles (empezando por cero), de modo que cada nivel de sangría corresponde a un relleno de 36 puntos.
-   * **** Compuesto: Cuando se selecciona, la numeración compuesta se aplica como una combinación del estilo de la lista exterior (principal) y su propio estilo. La numeración compuesta de esta lista anidada se basa en el orden en que esta lista anidada aparece en la lista externa.
-   * **** Ignorar estilo de lista: Si la opción Numeración compuesta no está seleccionada, se activa la opción Ignorar estilo de lista. Esta selección ignora el estilo de la lista anidada y la numeración continúa desde la lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista exterior, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista anidada tienen su propio estilo de numeración.
-   * **** Mantener con siguiente: Define el salto de página para los recursos contenidos en una lista. Si establece la propiedad Mantener con siguiente de un recurso de una lista en **Activado**, ese recurso y el siguiente recurso permanecerán en la misma página. Esto implica que el contenido del recurso seleccionado y el siguiente no se dividirán en las páginas.
+   * **Editable:** Cuando se selecciona esta opción, el contenido se puede editar en la interfaz de usuario Crear correspondencia. (Esta opción no está disponible para los módulos Lista e Imagen).
+   * **Obligatorio:** Cuando se selecciona esta opción, el contenido se requiere en la interfaz de usuario Crear correspondencia.
+   * **Seleccionado:** Cuando se selecciona esta opción, el contenido se preselecciona en la interfaz de usuario Crear correspondencia.
+   * **Saltar estilo:** Cuando se selecciona esta opción, el contenido omite las viñetas y la numeración en la interfaz de usuario Crear correspondencia. (Esta opción no está disponible para los módulos de imagen. Además, entre Omitir estilo, Compuesto y Omitir estilo de lista, solo se puede aplicar una de las opciones a un módulo. Una de estas opciones se puede utilizar para un módulo cuando se selecciona Agregar viñetas para un módulo).
+   * **Sangría:** Puede cambiar el nivel de sangría de cada módulo o contenido seleccionado como parte de la lista. La sangría se especifica en términos de Niveles (empezando por cero), de modo que cada nivel de sangría corresponde a un relleno de 36 puntos.
+   * **Compuesto:** Cuando se selecciona, la numeración compuesta se aplica como una combinación del estilo de la lista exterior (principal) y su propio estilo. La numeración compuesta de esta lista anidada se basa en el orden en que esta lista anidada aparece en la lista externa.
+   * **Ignorar estilo de lista:** Si la opción Numeración compuesta no está seleccionada, se activa la opción Ignorar estilo de lista. Esta selección ignora el estilo de la lista anidada y la numeración continúa desde la lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista exterior, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista anidada tienen su propio estilo de numeración.
+   * **Mantener con siguiente:** Define el salto de página para los recursos contenidos en una lista. Si establece la propiedad Mantener con siguiente de un recurso de una lista en **Activado**, ese recurso y el siguiente recurso permanecerán en la misma página. Esto implica que el contenido del recurso seleccionado y el siguiente no se dividirán en las páginas.
 
 1. Toque **Guardar**.
 
@@ -270,7 +266,7 @@ Para cambiar el orden de los recursos dentro de la lista, toque y mantenga pulsa
 * Las siguientes reglas se aplican al utilizar el Editor de listas para cambiar una lista:
 
    * Actualización de propiedades: Permitido
-   * **** Cambio del diccionario de datos: Se permite hasta que no esté asociado ningún elemento que utilice el diccionario de datos. No se puede cambiar el diccionario de datos al actualizar.
+   * **Cambio del diccionario de datos:** Se permite hasta que no esté asociado ningún elemento que utilice el diccionario de datos. No se puede cambiar el diccionario de datos al actualizar.
 
 ## Condiciones {#conditions}
 
@@ -294,8 +290,8 @@ El editor Condición permite especificar una condición predeterminada. Si el va
 1. Seleccione **Crear > Condición**.
 1. Especifique la siguiente información para la lista:
 
-   * **** Título (opcional): Escriba el título de la condición. El título no tiene que ser único y puede tener caracteres especiales y caracteres no ingleses. Las condiciones se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
-   * **** Nombre: Nombre exclusivo de la condición. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
+   * **Título (opcional):** Escriba el título de la condición. El título no tiene que ser único y puede tener caracteres especiales y caracteres no ingleses. Las condiciones se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
+   * **Nombre:** Nombre exclusivo de la condición. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
    * **Descripción (Opcional)** Escriba una descripción de la condición.
    * **Diccionario de datos (opcional)**: De forma opcional, seleccione el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista los recursos que utilicen el mismo diccionario de datos que la condición o los recursos que no tengan asignado ningún diccionario de datos. Asignar un diccionario de datos a una lista facilita que la persona que crea una plantilla de letras encuentre la condición adecuada.
    * **Etiquetas (opcional)**: De forma opcional, seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una nueva etiqueta y crearla. (La nueva etiqueta se crea al tocar **Guardar**).
@@ -325,10 +321,10 @@ El editor Condición permite especificar una condición predeterminada. Si el va
 * Usar enlace de diccionario de datos adecuado
 * Las siguientes reglas se aplican al usar el Editor de condiciones para editar una condición:
 
-   * **** Adición de variable: Permitido
-   * **** Eliminación de la variable: Permitido
-   * **** Actualización de propiedades: Permitido
-   * **** Cambio del diccionario de datos: Se permite hasta que no se utilice el elemento del diccionario de datos.
+   * **Adición de variable:** Permitido
+   * **Eliminación de la variable:** Permitido
+   * **Actualización de propiedades:** Permitido
+   * **Cambio del diccionario de datos:** Se permite hasta que no se utilice el elemento del diccionario de datos.
 
 ## Fragmentos de diseños {#layoutfragments}
 
@@ -340,7 +336,7 @@ Un caso de uso común es localizar patrones de diseño reutilizables en Cartas y
 
 Puede crear un fragmento de diseño basado en un XDP existente. Un fragmento de diseño puede estar formado por campos y áreas de destino o por una o varias tablas. Las tablas de un diseño pueden ser estáticas o dinámicas. Se crea un XDP en Designer y se [carga en AEM Forms](/help/forms/using/import-export-forms-templates.md). Un XDP puede formar la estructura de un fragmento de diseño o de una letra. Más información sobre el diseño [de maquetación](/help/forms/using/layout-design-details.md).
 
-El uso de fragmentos enlazados a áreas de destino permite cambiar la letra en el momento de la creación. Se puede crear un fragmento de diseño con diferentes dimensiones y se puede enlazar el fragmento correspondiente al área de destino. Los fragmentos de diseño también permiten personalizar algunas de las propiedades de la tabla:
+El uso de fragmentos enlazados a áreas de destino permite cambiar la letra en el momento de la creación. Se puede crear un fragmento de diseño con diferentes dimensiones y el fragmento adecuado se puede enlazar al área de destino. Los fragmentos de diseño también permiten personalizar algunas de las propiedades de la tabla:
 
 1. Puede aumentar el recuento de filas y columnas.
 1. Puede especificar el texto del encabezado y pie de página para más filas y columnas.
@@ -354,7 +350,7 @@ Tenga en cuenta los siguientes puntos al diseñar tablas:
 
 1. Las tablas se pueden personalizar en el momento de crear el fragmento de diseño. Sin embargo, la opción de personalización solo se activa cuando se ajusta el subformulario principal de la tabla.
 1. Para las tablas dinámicas, todos los campos, las filas y las tablas que se pueden repetir utilizan el enlace &quot;use name&quot; para que los datos se combinen correctamente.
-1. En las tablas dinámicas, todos los DDE repetitivos enlazados a los campos de tabla forman parte de la misma jerarquía. En el caso de los DDE no repetitivos, no existe tal restricción.
+1. Para las tablas dinámicas, todos los DDE repetitivos enlazados a los campos de tabla forman parte de la misma jerarquía. En el caso de los DDE no repetitivos, no existe tal restricción.
 1. En el momento de combinar el fragmento de diseño en tablas de área de destino principales, se cambia el tamaño según el espacio disponible; sin embargo, el cambio de tamaño solo se produce cuando el fragmento de diseño no contiene ningún área o campo de destino directamente dentro del subformulario de nivel superior. Se permiten el área de destino y los campos dentro de la tabla.
 1. Puede crear tablas de marcador de posición. Las tablas de marcador de posición tienen una sola celda en blanco.
 
@@ -383,8 +379,8 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
 1. La Administración de correspondencia muestra los XDP disponibles. Seleccione el XDP en el que desea basar el fragmento de diseño y toque **Siguiente**.
 1. Especifique la siguiente información para el diseño:
 
-   * **** Título (opcional): Introduzca el título del fragmento de diseño. El título no tiene que ser único y puede tener caracteres especiales y caracteres no ingleses. Los fragmentos de diseño se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
-   * **** Nombre: Nombre exclusivo del fragmento de diseño. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo. Este nombre aparece en la lista de la interfaz de usuario Administrar recursos.
+   * **Título (opcional):** Introduzca el título del fragmento de diseño. El título no tiene que ser único y puede tener caracteres especiales y caracteres no ingleses. Los fragmentos de diseño se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
+   * **Nombre:** Nombre exclusivo del fragmento de diseño. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo. Este nombre aparece en la lista de la interfaz de usuario Administrar recursos.
    * **Descripción (opcional)**: Descripción que aparece en la lista en la interfaz de usuario Administrar recursos.
    * **Etiquetas (opcional)**: De forma opcional, seleccione las etiquetas que desee aplicar a la condición. También puede escribir el nombre de una nueva etiqueta y crearla.
 
@@ -392,14 +388,14 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
 
    * **Configuración para**: Seleccione la tabla que se está configurando.Como sufijo del nombre de la tabla en el menú desplegable es (Estático) si la tabla es estática o (Dinámica) si la tabla es dinámica. Las tablas estáticas contienen un número fijo de filas. Las tablas estáticas pueden contener campos y áreas de destino. Estos campos y áreas de destino no se pueden enlazar a DDEs repetitivos. Los datos enlazados a las celdas de la tabla determinan el número de filas para las tablas dinámicas.
 
-   * **Filas**: Seleccione el número de filas para el diseño. El recuento de filas configurado debe ser mayor o igual que el recuento de filas original.
-   * **Columnas**: seleccione el número de columnas para el diseño. El recuento de columnas configurado debe ser mayor o igual que el recuento de columnas original.
+   * **Filas**: Seleccione el número de filas para el diseño. El recuento de filas configurado debe ser bueno o igual al recuento de filas original.
+   * **Columnas**: seleccione el número de columnas para el diseño. El recuento de columnas configurado debe ser bueno o igual al recuento de columnas original.
    Para cada columna se requieren los siguientes detalles:
 
    * **Encabezado**: texto para mostrar en el encabezado
    * **Pie de página**: texto para mostrar para el pie de página
-   * **Tipo**: tipo de columna adicional. Campo o Área de destino. El tipo está habilitado para tablas de marcador de posición estático. El tipo se puede definir a nivel de columna y no a nivel de celda. Todas las celdas de una columna extendida serían del mismo tipo. Para una tabla dinámica, todas las columnas son del tipo Campo. Para las tablas que no son marcadores de posición, no se puede definir el tipo de columnas adicionales. En este caso, el tipo de celdas adicionales en la columna extendida es el mismo que el tipo de la última columna de esa fila; y el tipo de celda en fila adicional es el mismo que el tipo de última celda de esa columna.
-   * **** Proporción de anchura: proporción de los anchos de columna de la tabla.
+   * **Tipo**: tipo de columna adicional. Campo o Área de destino. El tipo está habilitado para tablas de marcador de posición estático. El tipo se puede definir en el nivel de columna y no en el nivel de celda. Todas las celdas de una columna extendida serían del mismo tipo. Para una tabla dinámica, todas las columnas son del tipo Campo. Para las tablas que no son marcadores de posición, no se puede definir el tipo de columnas adicionales. En este caso, el tipo de celdas adicionales en la columna extendida es el mismo que el tipo de la última columna de esa fila; y el tipo de celda en fila adicional es el mismo que el tipo de última celda de esa columna.
+   * **Proporción de anchura:** proporción de los anchos de columna de la tabla.
    Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una letra](#main-pars-header-28).
 
 1. Toque **Guardar**.
@@ -530,7 +526,7 @@ Para obtener más información sobre el diseño de maquetaciones, consulte la Ay
 Para crear rápidamente un fragmento de documento con propiedades y contenido similares a un fragmento de documento existente, puede copiarlo y pegarlo.
 
 1. En la lista de fragmentos de documento, seleccione uno o varios fragmentos de documento. La interfaz de usuario muestra el icono Copiar.
-1. Toque Copiar. La interfaz de usuario muestra el icono Pegar. También puede elegir ir dentro de una carpeta antes de pegarla. Las distintas carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar. También puede elegir ir dentro de una carpeta antes de pegarla. Las distintas carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Toque Pegar. Aparecerá el cuadro de diálogo Pegar. Si copia y pega los fragmentos de documento en el mismo lugar, el sistema asigna automáticamente nombres y títulos a las nuevas copias de letras, pero puede editar los títulos y nombres de las letras.
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia del fragmento de documento.
 1. Toque Pegar. Se crea la copia del fragmento de documento.
