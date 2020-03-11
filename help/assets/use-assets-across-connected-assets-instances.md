@@ -3,7 +3,7 @@ title: Uso de recursos conectados para compartir recursos DAM en el flujo de tra
 description: Utilice los recursos disponibles en una implementación remota de Recursos Adobe Experience Manager al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -139,7 +139,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
    ![Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.](assets/assets_async_transfer_fails.png)
 
-   *Figura: Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.*
+   *Figura: Notificación sobre la captura asincrónica de recursos que se produce en segundo plano*
 
 1. Al publicar una página, AEM muestra una lista completa de los recursos que se utilizan en ella. Asegúrese de que los recursos remotos se recuperan correctamente en el momento de la publicación. Para comprobar el estado de cada recurso buscado, consulte la interfaz de usuario de trabajos [asincrónicos](/help/assets/asynchronous-jobs.md) .
 
@@ -153,7 +153,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, excepto que los metadatos asociados no se pueden editar.
 
-## Restricciones  {#limitations}
+## Restricciones   {#limitations}
 
 **Permisos y administración de recursos**
 
