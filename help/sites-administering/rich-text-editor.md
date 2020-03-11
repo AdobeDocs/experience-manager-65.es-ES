@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
 
-# Configuración del editor de texto enriquecido {#configure-the-rich-text-editor}
+# Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 El editor de texto enriquecido (RTE) ofrece a los autores una amplia gama de funciones para editar su contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG.
 
@@ -20,15 +20,21 @@ RTE se puede configurar para habilitar, deshabilitar y ampliar las funciones dis
 
 El flujo de trabajo siguiente ilustra el orden recomendado para completar las tareas de configuración RTE.
 
-![Secuencia de pasos para obtener información sobre cómo configurar la tasa](assets/rte_workflow_v1.png)*Figura: Secuencia de pasos para aprender a configurar RTE*
+![Secuencia de pasos para aprender a configurar la velocidad](assets/rte_workflow_v1.png)
+
+*Figura: Secuencia de pasos para aprender a configurar RTE*
 
 ## Comprender la IU táctil y la IU clásica {#understand-touch-enabled-ui-and-classic-ui}
 
 La IU táctil es la interfaz de usuario estándar para AEM. Adobe ha introducido la IU táctil con un diseño [](/help/sites-authoring/responsive-layout.md) interactivo para el entorno de creación. La IU táctil está diseñada para dispositivos táctiles y de escritorio. La IU difiere considerablemente de la IU clásica original.
 
-![Barra de herramientas del Editor de texto enriquecido en la IU](assets/chlimage_1-35.png)*táctil: Barra de herramientas del Editor de texto enriquecido en la IU táctil*
+![Barra de herramientas del Editor de texto enriquecido en la IU táctil](assets/chlimage_1-35.png)
 
-![Barra de herramientas del Editor de texto enriquecido en la IU](assets/rtedefault.png)clásica *Figura: Barra de herramientas del Editor de texto enriquecido en la IU clásica*
+*Figura: Barra de herramientas del Editor de texto enriquecido en la IU táctil*
+
+![Barra de herramientas del Editor de texto enriquecido en la IU clásica](assets/rtedefault.png)
+
+*Figura: Barra de herramientas del Editor de texto enriquecido en la IU clásica*
 
 >[!MORELIKETHIS]
 >
@@ -57,25 +63,33 @@ Los autores pueden crear y editar contenido textual en AEM utilizando los distin
 
 Cuando se abre (con un doble toque o clic lento), el contenido se puede editar dentro de la página. Se presenta una barra de herramientas compacta con opciones muy básicas.
 
-![Edición en línea con la barra de herramientas básica en la IU](assets/chlimage_1-36.png)táctil *Figura: Edición en línea con la barra de herramientas básica en la IU táctil*
+![Edición en línea con la barra de herramientas básica en la IU táctil](assets/chlimage_1-36.png)
+
+*Figura: Edición en línea con la barra de herramientas básica en la IU táctil*
 
 En la IU clásica, un doble clic lento en el componente permite la edición en línea y un contorno naranja resalta el contenido. Si Content Finder está abierto, se muestra una barra de herramientas con las opciones de formato RTE disponibles en la parte superior de la ventana. Si Content Finder no está abierto, las opciones de formato no se muestran y solo puede realizar ediciones básicas de texto.
 
-### Edición en pantalla completa {#full-screen-editing}
+### Full screen editing {#full-screen-editing}
 
 Los componentes de AEM se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar en pantalla completa una versión detallada de la edición en línea, ya que ofrece la mayor cantidad de opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
 
 En el modo de pantalla completa del cuadro de diálogo, junto con una barra de herramientas RTE detallada, también están disponibles las opciones y los componentes disponibles en un cuadro de diálogo. Solo se aplica a un cuadro de diálogo que contenga RTE junto con otros componentes.
 
-![Barra de herramientas RTE detallada al editar en modo de pantalla completa en la IU](assets/chlimage_1-37.png)táctil *Figura: Barra de herramientas RTE detallada al editar en modo de pantalla completa en la IU táctil*
+![Barra de herramientas RTE detallada al editar en modo de pantalla completa en la IU táctil](assets/chlimage_1-37.png)
+
+*Figura: Barra de herramientas RTE detallada al editar en modo de pantalla completa en la IU táctil*
 
 ### Edición de cuadro de diálogo {#dialog-editing}
 
 Cuando se hace doble clic en un componente, se abre un cuadro de diálogo para editar el contenido. El cuadro de diálogo se abre sobre la página existente. En algunos casos específicos, el cuadro de diálogo se abre como una ventana emergente. Por ejemplo, cuando un componente Texto forma parte de una columna en un diseño de página con varias columnas y el área disponible para el cuadro de diálogo es menor.
 
-![Modo de edición de cuadro de diálogo en la IU](assets/dialog_editing_modetouchui.png)*táctil: Modo de edición de cuadro de diálogo en la IU táctil*
+![Modo de edición de cuadro de diálogo en la IU táctil](assets/dialog_editing_modetouchui.png)
 
-![Cuadro de diálogo en la IU clásica que contiene una barra de herramientas detallada para editar](assets/chlimage_1-38.png)*Figura: Cuadro de diálogo en la IU clásica que contiene una barra de herramientas detallada para la edición*
+*Figura: Modo de edición de cuadro de diálogo en la IU táctil*
+
+![Cuadro de diálogo en la IU clásica que contiene una barra de herramientas detallada para la edición](assets/chlimage_1-38.png)
+
+*Figura: Cuadro de diálogo en la IU clásica que contiene una barra de herramientas detallada para la edición*
 
 ## Acerca de los complementos RTE y las funciones asociadas {#aboutplugins}
 
@@ -282,7 +296,7 @@ En una página, puede incluir la clientlib CoralUI 2 RTE o la clientlib CoralUI 
 
 >[!NOTE]
 >
->Adobe no lo recomienda como práctica recomendada. Cambie a CoralUI 2 RTE como último recurso. Los complementos personalizados para CoralUI 2 RTE funcionan con CoralUI 3 RTE si los complementos no dependen de los elementos internos de RTE, como las clases.
+>Adobe no lo recomienda como práctica recomendada. Cambie a CoralUI 2 RTE como último recurso. Los complementos personalizados para CoralUI 2 RTE funcionan con CoralUI 3 RTE si los complementos no dependen de elementos internos RTE, como clases.
 >
 >Si utiliza complementos personalizados para CoralUI3 RTE, utilice `rte.coralui3` library.
 
