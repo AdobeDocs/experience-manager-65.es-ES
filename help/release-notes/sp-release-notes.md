@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -243,6 +243,8 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 * Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer: Si hay celdas combinadas en una tabla, la prueba de accesibilidad falla para el archivo PDF de salida convertido desde un formulario XDP mediante el servicio de salida (CQ-4285372).
+
+* Foundation JEE: El servidor que se desconecta de un clúster no puede volver a conectarse debido a problemas de caché (NPR-32412).
 
 ## Install 6.5.4.0 {#install}
 
