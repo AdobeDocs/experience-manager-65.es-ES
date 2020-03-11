@@ -3,7 +3,7 @@ title: Administración de derechos digitales en recursos
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,7 +20,7 @@ Puede ver el estado de caducidad de un recurso en la consola Recursos, tanto en 
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figura: En la vista de tarjeta, un indicador de la tarjeta indica que el recurso ha caducado.*
+*Figura: En la vista de tarjeta, un indicador de la tarjeta indica que el recurso ha caducado*
 
 **Vista de lista**
 
@@ -28,11 +28,11 @@ Puede ver el estado de caducidad de un recurso en la consola Recursos, tanto en 
 
 *Figura: En la vista de lista, la columna[!UICONTROL Estado]muestra la pancarta[!UICONTROL Caducado].*
 
- Puede ver el estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo en el menú GlobalNav.
+Puede ver el estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo en el menú GlobalNav.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
- También puede ver el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
+También puede ver el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
 1. Vaya al recurso para el que desea ver las páginas Web de referencia y los recursos compuestos.
 1. Seleccione el recurso y el logotipo de Experience Manager.
