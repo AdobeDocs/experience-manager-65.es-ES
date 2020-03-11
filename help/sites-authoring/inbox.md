@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -138,15 +138,15 @@ La opción Control de administración permite a los administradores:
 
 * Controlar la visualización de los vínculos de navegación disponibles en el encabezado
 
-La opción Control de administración se muestra en la lista desplegable del selector de vista solo si es miembro del grupo de administradores o administradores de flujo de trabajo.
+La opción Control de administración solo está visible para los miembros del grupo de administradores o administradores de flujo de trabajo.
 
 ![admin-control](assets/admin-control.png)
 
 * **Personalización de promoción de la marca**
 
-   * **Personalizar el texto del encabezado:** Especifique el texto que se mostrará en el encabezado.
+   * **Personalizar el texto del encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el texto predeterminado de **Adobe Experience Manager** .
 
-   * **Personalizar logotipo:** Cargue una imagen en Administración de recursos digitales (DAM) y consulte esa imagen para mostrarla en el encabezado.
+   * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Administración de recursos digitales (DAM) y consulte esa imagen en el campo.
 
 * **Navegación del usuario**
    * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones, vínculo de ayuda y las opciones de creación disponibles al tocar el texto o el logotipo de Adobe Experience Manager.
