@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 4f5f6cc88bc0408af117ad5760d4313c9f7d54b9
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 Los conjuntos de imágenes proporcionan a los usuarios una experiencia de visualización integrada, en la que pueden ver distintas vistas de un elemento haciendo clic en una imagen en miniatura. Los conjuntos de imágenes le permiten presentar vistas alternativas de un elemento y el visor ofrece herramientas de zoom para examinar las imágenes de cerca.
 
-Los conjuntos de imágenes se designan mediante una pancarta con la palabra `IMAGESET`. Además, si se publica el conjunto de imágenes, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]** , junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]** .
+Los conjuntos de imágenes se designan mediante una pancarta con la palabra `IMAGESET`. Además, si se publica el conjunto de imágenes, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]**, junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
 ![chlimage_1-133](assets/chlimage_1-339.png)
 
@@ -38,7 +38,9 @@ Para ayudarle a ponerse en marcha rápidamente:
 
 1. [Cargue las imágenes principales para varias vistas.](#uploading-assets-in-image-sets)
 
-   Comience por cargar las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. AEM Assets admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
+   Comience por cargar las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande para obtener un detalle de zoom óptimo. Dynamic Media puede procesar imágenes de hasta 25 megapíxeles cada una. Por ejemplo, puede usar una imagen de 5000 x 5000 megapíxeles o cualquier otra combinación de tamaño de hasta 25 megapíxeles.
+
+   AEM Assets admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
 1. [Crear conjuntos de imágenes.](#creating-image-sets)
 
@@ -46,10 +48,10 @@ Para ayudarle a ponerse en marcha rápidamente:
 
    Para crear un conjunto de imágenes en Recursos, toque o haga clic en **[!UICONTROL Crear > Conjuntos]** de imágenes. A continuación, agregue imágenes y haga clic en **[!UICONTROL Guardar]**.
 
-   También puede crear conjuntos de imágenes automáticamente mediante ajustes preestablecidos [de conjuntos de](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)lotes.
+   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
    >[!IMPORTANT]
    >
-   > Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
+   >Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
 
    Consulte [Preparación de recursos de conjuntos de imágenes para cargar y Carga de archivos](#uploading-assets-in-image-sets).
 
@@ -57,7 +59,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
 1. Agregue los ajustes preestablecidos [del visor de conjuntos de](/help/assets/managing-viewer-presets.md)imágenes según sea necesario.
 
-   Los administradores pueden crear o modificar ajustes preestablecidos de visor de conjuntos de imágenes. Para ver el conjunto de imágenes con un ajuste preestablecido de visor, seleccione el conjunto de imágenes y, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visores]**.
+   Los administradores pueden crear o modificar ajustes preestablecidos de visor de conjuntos de imágenes. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
 
    Consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos]** de visor para crear o editar ajustes preestablecidos de visor.
 
@@ -74,9 +76,9 @@ Para ayudarle a ponerse en marcha rápidamente:
 
    Recursos AEM crea llamadas mediante URL para conjuntos de imágenes y los activa después de publicar los conjuntos de imágenes. Puede copiar estas direcciones URL al obtener una vista previa de los recursos. Como alternativa, puede incrustarlos en su sitio Web.
 
-   Seleccione el conjunto de imágenes y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visores]**.
+   Seleccione el conjunto de imágenes y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visualizadores]**.
 
-   Consulte [Vinculación de un conjunto de imágenes a una página](/help/assets/linking-urls-to-yourwebapplication.md) web e [Incrustación del visor](/help/assets/embed-code.md)de imágenes o vídeos.
+   Consulte [Vinculación de un conjunto de imágenes a una página web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/embed-code.md).
 
 Para editar conjuntos de imágenes, consulte [Edición de conjuntos de imágenes.](#editing-image-sets) Además, puede ver y editar las propiedades [del conjunto](/help/assets/managing-assets-touch-ui.md#editing-properties)de imágenes.
 
@@ -84,7 +86,7 @@ Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Resolu
 
 ## Carga de recursos en conjuntos de imágenes {#uploading-assets-in-image-sets}
 
-Comience por cargar las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
+Comience por cargar las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
 Puede cargar imágenes para los conjuntos de imágenes como lo haría con cualquier otro [recurso en Recursos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
@@ -112,8 +114,8 @@ Puede crear conjuntos de imágenes a través de la interfaz de usuario o de la A
 
 >[!NOTE]
 >
->También puede crear conjuntos de imágenes automáticamente mediante ajustes preestablecidos [de conjuntos de](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets)lotes.
->****Importante: Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
+>You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+>**Importante:**Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
 
 Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alfanumérico. Puede volver a ordenar o ordenar manualmente los recursos después de agregarlos.
 
@@ -123,7 +125,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
 **Para crear un conjunto de imágenes**
 
-1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global y, a continuación, toque **[!UICONTROL Navegación > Recursos]**. Vaya a donde desee crear un conjunto de imágenes y, a continuación, toque **[!UICONTROL Crear > Conjunto]** de imágenes para abrir la página Editor de conjuntos de imágenes.
+1. En AEM, pulse el logotipo de AEM para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Navegación > Assets]**. Vaya a donde desee crear un conjunto de imágenes y, a continuación, pulse **[!UICONTROL Crear > Conjunto de imágenes]** para abrir la página Editor de conjuntos de imágenes.
 
    También puede crear el conjunto desde una carpeta que contenga los recursos.
 
@@ -138,9 +140,9 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de imágenes, toque **[!UICONTROL Agregar recurso]**.
 
    * Cerca del centro de la página Editor de conjuntos de imágenes, toque **[!UICONTROL Tocar para abrir el Selector]** de recursos.
-   Toque para seleccionar los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
+   Toque para seleccionar los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y tocando o haciendo clic en **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, toque el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, toque el icono Ver y seleccione Vista **[!UICONTROL de]** columna, Vista **[!UICONTROL de]** tarjeta o Vista **[!UICONTROL de]** lista.
+   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando o haciendo clic en **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
    See [Working with Selectors.](/help/assets/working-with-selectors.md)
 
@@ -158,10 +160,10 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
    * Para eliminar una imagen, selecciónela y toque **[!UICONTROL Eliminar recurso]**.
 
-   * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, toque **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicar a todos los recursos a la vez.
+   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
    >[!NOTE]
    >
-   >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes o permitir que AEM seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, toque **[!UICONTROL Cambiar miniatura]** sobre el campo Título en la página Editor de conjuntos de imágenes y, a continuación, seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que desea que AEM genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** miniatura **** automática.
+   >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes o permitir que AEM seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, pulse **[!UICONTROL Cambiar miniatura]** sobre el campo Título en la página Editor de conjuntos de imágenes y, a continuación, seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que sea AEM quien genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** **[!UICONTROL Miniatura automática]**.
 
 1. Haga clic en **[!UICONTROL Guardar.]** El conjunto de imágenes recién creado aparece en la carpeta en la que lo creó.
 
@@ -179,11 +181,11 @@ Sin embargo, los conjuntos creados con ajustes preestablecidos de conjunto de lo
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
-* Desde una imagen de miembro de cualquier conjunto. Seleccione el menú **[!UICONTROL Sets** para mostrar los conjuntos de los que es miembro el recurso.
+* Desde una imagen de miembro de cualquier conjunto. Seleccione el menú **[!UICONTROL Conjuntos** para mostrar los conjuntos de los que es miembro el recurso.
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Desde la búsqueda, puede seleccionar **[!Filtro** UICONTROL, luego expandir **[!UICONTROL Dynamic Media** y seleccionar **[!UICONTROL Conjuntos]**.
+* Desde la búsqueda, puede seleccionar **[!UICONTROL Filtro** y, a continuación, expanda **[!UICONTROL Dynamic Media** y seleccione **[!UICONTROL Conjuntos]**.
 
    La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. Para los conjuntos automatizados, la consulta de búsqueda se realiza utilizando criterios de búsqueda &quot;Comienza con&quot; diferentes de la búsqueda de AEM, que se basa en el uso de criterios de búsqueda &quot;Contiene&quot;. Definir el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
@@ -220,12 +222,12 @@ Puede realizar diversas tareas de edición en conjuntos de imágenes, como las s
       >
       >Si elimina la imagen que AEM utiliza para la miniatura sustituyéndola por otra imagen, el recurso original seguirá apareciendo.
    * Para eliminar un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Eliminar recurso]**.
-   * Para aplicar un ajuste preestablecido, toque **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido de visor cerca de la esquina superior derecha de la página.
+   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya al nuevo recurso de miniatura o muestra, selecciónelo y toque **[!UICONTROL Seleccionar]**.
    * Para eliminar un conjunto de imágenes completo, desplácese hasta el conjunto de imágenes, selecciónelo y toque **[!UICONTROL Eliminar]**.
    >[!NOTE]
    >
-   >Para editar las imágenes de un conjunto de imágenes, vaya al conjunto, toque **[!UICONTROL Establecer miembros]** en el carril izquierdo y, a continuación, toque el icono Lápiz en un recurso individual para abrir la ventana de edición.
+   >Para editar las imágenes de un conjunto de imágenes, vaya al conjunto, pulse **[!UICONTROL Establecer miembros]** en el carril izquierdo y, a continuación, seleccione el icono Lápiz en un recurso individual para abrir la ventana de edición.
 
 1. Toque **[!UICONTROL Guardar]** cuando haya terminado de editar.
 
