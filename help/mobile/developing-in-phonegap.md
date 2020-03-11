@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -35,7 +35,7 @@ Los siguientes recursos le ayudarán a iniciarse en AEM Mobile mediante Adobe Ph
 * [Servicios de contenido de AEM Mobile: Información general](/help/mobile/develop-content-as-a-service.md)
 
    * Para habilitar los Servicios de contenido y los Modelos de datos, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
-   * Para obtener más información sobre la creación de modelos, consulte [Desarrollo de modelos](/help/mobile/models-in-repository.md)
+   * Para obtener más información sobre la creación de modelos, consulte [Desarrollo de modelos](/help/mobile/administer-mobile-apps.md)
    * Para obtener más información sobre Representación y envío, consulte [Representación y envío de servicios de contenido](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
