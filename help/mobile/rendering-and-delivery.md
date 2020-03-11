@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -157,7 +157,7 @@ La tabla siguiente muestra las propiedades:
    <td>Cadena[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Para los siguientes tipos de recursos de sling, no devuelva la exportación predeterminada de JavaScript de CaaS.<br /><br /> Devolver una exportación de json de cliente mediante el procesamiento del recurso como; &lt;RECURSO&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Para los siguientes tipos de recursos de sling, no devuelva la exportación predeterminada de JavaScript de CaaS.<br /> Devolver una exportación de json de cliente mediante el procesamiento del recurso como;<br /> &lt;RECURSO&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -226,7 +226,7 @@ Esta configuración amplía el valor predeterminado para incluir elementos secun
 
 Consulte los recursos siguientes para obtener información sobre temas adicionales en Content Services:
 
-* [Desarrollo de modelos](/help/mobile/models-in-repository.md)
+* [Desarrollo de modelos](/help/mobile/administer-mobile-apps.md)
 * [Creación de Content Services](/help/mobile/develop-content-as-a-service.md)
 * [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
 
