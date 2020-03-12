@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 
 ---
 
@@ -14,37 +14,38 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + [Descripción general de la Guía del usuario de creación](home.md)
 + Tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
+   + [Creación de páginas](page-authoring.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
    + [Concepto de creación](author.md)
    + [Gestión básica](basic-handling.md)
    + [Buscar](search.md)
    + [Configuración del entorno de cuenta](user-properties.md)
    + [Su bandeja de entrada](inbox.md)
-   + [Métodos abreviados de teclado para las consolas](keyboard-shortcuts.md)
+   + [Métodos abreviados del teclado para las consolas](keyboard-shortcuts.md)
    + [Selección de la IU](select-ui.md)
 + Creación {#authoring}
    + [Herramientas y entorno de creación](author-environment-tools.md)
    + [Anotaciones al editar una página](annotations.md)
-   + [Crear y organizar páginas](managing-pages.md)
-   + [Editar el contenido de una página](editing-content.md)
+   + [Creación y organización de páginas](managing-pages.md)
+   + [Edición del contenido de una página](editing-content.md)
    + [Uso del editor de texto enriquecido para crear contenido](rich-text-editor.md)
-   + [Edición de las propiedades de página](editing-page-properties.md)
-   + [Publicar páginas](publishing-pages.md)
+   + [Edición de las propiedades de página  ](editing-page-properties.md)
+   + [Publicación de páginas](publishing-pages.md)
    + [Creación de páginas con fragmentos de contenido](content-fragments.md)
    + [Fragmentos de experiencias](experience-fragments.md)
    + [Exportar a CSV](csv-export.md)
    + [Componentes](default-components.md)
-   + [Creación de una página para dispositivos móviles](mobile.md)
+   + [Creación de una página para dispositivos móviles  ](mobile.md)
    + [Resolución de problemas de AEM durante la creación](troubleshooting.md)
    + [Métodos abreviados de teclado al editar páginas](page-authoring-keyboard-shortcuts.md)
-   + [Recomendaciones](best-practices.md)
+   + [Prácticas recomendadas  ](best-practices.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Uso de etiquetas](tags.md)
-   + [Creación de plantillas de página](templates.md)
+   + [Creación de plantillas de página  ](templates.md)
    + [Sistema de estilos](style-system.md)
-   + [Uso de versiones de página](working-with-page-versions.md)
+   + [Uso de versiones de página  ](working-with-page-versions.md)
    + [Diferencias de página](page-diff.md)
-   + [La consola Componentes](default-components-console.md)
+   + [Consola Componentes](default-components-console.md)
    + [Diseño adaptable](responsive-layout.md)
    + [Perspectiva de contenido](content-insights.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](creating-accessible-content.md)
@@ -79,7 +80,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Vista previa de páginas mediante datos de ContextHub](ch-previewing.md) 
    + [Creación de contenido de destino con el modo Targeting](content-targeting-touch.md) 
    + [Uso del contenido de destino de varios sitios](multisite-support-targeted-content.md)
-   + [Cómo se estructura la administración de diversos sitios para el contenido objetivo](technical-multisite-targeted.md)
+   + [Estructurar la administración de diversos sitios para el contenido segmentado](technical-multisite-targeted.md)
    + [Administración de actividades](activitylib.md)
    + [Administrar audiencias](managing-audiences.md) 
    + [Creación y administración de ofertas](offerlib.md)
