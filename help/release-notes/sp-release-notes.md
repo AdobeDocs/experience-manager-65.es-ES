@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 7cc22c6558394c5e12ea2477bb07ff02dabc8dbc
 
 ---
 
@@ -72,7 +72,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Al mover el contenido dentro de la misma carpeta, se desactiva la opción de mover la página (NPR-31840).
 
-* En el modo de estructura de plantillas editables, la lista de componentes permitidos en el contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
+* En el modo de estructura de plantillas editables, la lista de componentes permitidos del contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
 
 * Cuando una página tiene permisos de solo lectura para un usuario, la opción Abrir propiedades está visible en sites.html pero no en editor.html (NPR-31770).
 
@@ -244,7 +244,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Designer: Si hay celdas combinadas en una tabla, la prueba de accesibilidad falla para el archivo PDF de salida convertido desde un formulario XDP mediante el servicio de salida (CQ-4285372).
 
-* Foundation JEE: El servidor que se desconecta de un clúster no puede volver a conectarse debido a problemas de caché (NPR-32412).
+* Foundation JEE: Si un servidor de AEM Forms está desconectado de un clúster, los problemas de almacenamiento en caché impiden que se vuelva a conectar al servidor (NPR-32412).
 
 ## Install 6.5.4.0 {#install}
 
