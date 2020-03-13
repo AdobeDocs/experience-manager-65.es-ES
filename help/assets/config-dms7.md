@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
+source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
 
 ---
 
@@ -100,7 +100,7 @@ A menos que tenga un acuerdo especial para utilizar el servidor de su propia emp
    * **[!UICONTROL Sincronizar todo el contenido]** : <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:
 
    * **[!UICONTROL Modo de sincronización de medios dinámicos]**
-      * **[!UICONTROL Habilitado de forma predeterminada]** : la configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específica para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL Habilitado de forma predeterminada]** : la configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Deshabilitado de forma predeterminada]** : la configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
 Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, haga clic en **[!UICONTROL Propiedades]**. En la lista desplegable del modo **[!UICONTROL de sincronización de medios]** dinámicos de la ficha **[!UICONTROL Detalles]** , elija una de las tres opciones siguientes. Cuando haya terminado, toque **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**Sincronizar todo el contenido**antes.*
          * **[!UICONTROL Heredado]** : no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.
