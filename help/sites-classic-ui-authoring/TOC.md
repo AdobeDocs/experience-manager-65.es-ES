@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 
 ---
 
@@ -21,25 +21,25 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Selección de la IU](author-env-select-ui.md)
    + [Buscar](author-env-search.md)
    + [Su bandeja de entrada](author-env-inbox.md)
-   + [Métodos abreviados de teclado para las consolas](author-env-keyboard-shortcuts.md)
+   + [Métodos abreviados del teclado para las consolas](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
    + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
-   + [Crear y organizar páginas](classic-page-author-manage-pages.md)
-   + [Editar el contenido de una página](classic-page-author-edit-content.md)
+   + [Creación y organización de páginas](classic-page-author-manage-pages.md)
+   + [Edición del contenido de una página](classic-page-author-edit-content.md)
    + [Editor de texto enriquecido](classic-page-author-rich-text-editor.md)
-   + [Publicar páginas](classic-page-author-publish-pages.md)
-   + [Edición de las propiedades de página](classic-page-author-edit-page-properties.md)
+   + [Publicación de páginas](classic-page-author-publish-pages.md)
+   + [Edición de las propiedades de página  ](classic-page-author-edit-page-properties.md)
    + [Anotaciones al editar una página](classic-page-author-annotations.md)
    + [Resolución de problemas de AEM durante la creación](classic-page-author-troubleshooting.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Creación de una página para dispositivos móviles](classic-feature-mobile.md)
+   + [Creación de una página para dispositivos móviles  ](classic-feature-mobile.md)
    + [Componentes para la creación de páginas](classic-page-author-edit-mode.md)
    + [Métodos abreviados de teclado al editar páginas](classic-page-author-keyboard-shortcuts.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Creación de páginas con fragmentos de contenido](classic-page-author-content-fragments.md)
    + [Diseño adaptable](classic-page-author-responsive-layout.md)
-   + [Uso de versiones de página](classic-page-author-work-with-versions.md)
+   + [Uso de versiones de página  ](classic-page-author-work-with-versions.md)
    + [Uso de etiquetas](classic-feature-tags.md)
    + [Andamiaje](classic-feature-scaffolding.md)
    + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
@@ -74,6 +74,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Trabajo con Adobe Campaign](classic-personalization-ac.md)
    + [Componentes de Adobe Campaign](classic-personalization-ac-components.md)
    + [Orientación de Adobe Campaign](classic-personalization-ac-target.md)
+   + [Creación de formularios de Adobe Campaign en AEM](classic-personalization-ac-forms.md)
 + Creación de recursos en la IU clásica {#assets}
    + [Uso de recursos](classicui-assets.md)
    + [Envío de recursos de Dynamic Media](dynamic-media-assets-delivering.md)
