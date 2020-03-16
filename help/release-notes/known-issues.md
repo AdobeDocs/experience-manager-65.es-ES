@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 0ae42d9f81df89a7e1c08fac5cce5240f14e8c60
 
 ---
 
 
-# Problemas conocidos{#known-issues}
+# Problemas conocidos {#known-issues}
 
 Esta página contiene una lista de problemas conocidos de Adobe Experience Manager 6.5 que se publicó en abril de 2019.
 
@@ -30,9 +30,9 @@ En cada una de estas acciones, asegúrese de que la propiedad &quot;*htmllibmana
 
 Hay disponible un artículo de la Base [de](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) conocimiento con más detalles y la solución alternativa para este problema.
 
-## Recursos {#assets}
+## Assets {#assets}
 
-* **** Buscar: La búsqueda no devuelve ningún resultado si la cadena de búsqueda contiene espacios iniciales ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
+* **Buscar:** La búsqueda no devuelve ningún resultado si la cadena de búsqueda contiene espacios iniciales ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Esquema de metadatos de carpeta**: después de añadir un botón de opciones, los campos Id. y Valor no se procesan como se esperaba y la funcionalidad de eliminación no funciona. (CQ-4261144)
 * Al cambiar el nombre de un recurso, no se puede utilizar un espacio en blanco en el nombre del recurso. (CQ-4266403)
 
