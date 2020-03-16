@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -60,7 +60,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
 
    [ ![Barra de herramientas](assets/advancedediting.png)
 
-   * **Vínculo**: Inserte un vínculo de hipertexto en el texto. Toque **[!UICONTROL Vínculo]**, especifique el vínculo en el campo **[!UICONTROL URL]** , quite el nombre de objeto predeterminado del campo Texto **** alternativo y toque ![Guardar](assets/save_icon.svg).
+   * **Vínculo**: Inserte un vínculo de [hipertexto](#insert-hyperlink) en el texto.
    * **Repetir**: Repita el elemento de recopilación de impresiones en el diccionario de datos con un delimitador.
    * **Condición**: Toque para insertar una condición. Inserte texto basado en una condición. Si la condición es verdadera, el texto está visible en letra; de lo contrario, no.
    * **Agregar descripción**: Agregue una anotación a un fragmento de texto. Se trata de metadatos visibles para el autor, pero no de una parte de la carta que se crea.
@@ -131,6 +131,18 @@ La solución de administración de correspondencia admite dos tipos de elementos
 
 1. Puede usar condiciones en línea y repetir para hacer que su carta sea muy contextual y esté bien estructurada. Para obtener más información sobre la condición en línea y la repetición, consulte Condiciones [en línea y repita en letras](/help/forms/using/cm-inline-condition.md).
 1. Toque **Guardar**.
+
+#### Insertar hipervínculo en un texto {#insert-hyperlink}
+
+Siga los pasos siguientes para crear un hipervínculo en un recurso de texto:
+
+1. Seleccione el texto o el objeto del modelo de datos en el editor de texto.
+
+2. Toque **[!UICONTROL Vínculo]**. Toque **[!UICONTROL Texto]** alternativo para quitar el nombre o el texto del objeto del modelo de datos existente.
+
+3. Especifique la URL y toque ![Guardar](assets/save_icon.svg).
+
+![Crear hipervínculo en un recurso de texto](assets/text-create-hyperlink.png)
 
 #### Búsqueda y reemplazo de texto {#searching-and-replacing-text}
 
