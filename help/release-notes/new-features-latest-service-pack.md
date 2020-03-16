@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
+source-git-commit: ed756d785864131c2e031aec4331388bc057576b
 
 ---
 
@@ -39,15 +39,17 @@ Puede crear una nueva integración o actualizar la configuración de integració
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-* Las casillas de verificación de estado mixto ahora tienen un atributo de marcado con aria con un valor &quot;mixto&quot;, para exponer su estado mixto a los lectores de pantalla.
+Experience Manager Assets incluye las siguientes mejoras de accesibilidad:
 
-* Ahora se admiten controles basados en el teclado, aparte de gestos basados en rutas, para desplazarse por imágenes con zoom.
+* Las teclas de flecha del teclado se pueden utilizar para mover y recorrer áreas dentro de imágenes con zoom. Para obtener más información, consulte [Vista previa de recursos utilizando únicamente](../assets/managing-assets-touch-ui.md#previewing-assets)teclas de teclado.
 
-* Se han proporcionado restricciones de formato de fecha en etiquetas de campo para que los usuarios que utilizan sólo el teclado introduzcan manualmente la fecha.
+* Las casillas de verificación de estado mixto (en las que, a menos que seleccione todos los predicados anidados, las casillas de verificación de primer nivel no se seleccionan y se rompen) en el panel Filtros son legibles por los lectores de pantalla.
 
-* El atributo Alt se ha agregado a los iconos decorativos y se ha eliminado el atributo role=img, de modo que dichos iconos e imágenes no se exponen a los usuarios del lector de pantalla.
+* Las restricciones de formato de fecha y hora se proporcionan en las etiquetas de campo de los campos de fecha, para permitir que los usuarios introduzcan la fecha en el formato correcto mediante el teclado.
 
-* Se ha agregado el atributo Alt a los iconos de cierre para indicar a los usuarios del lector de pantalla que deben pasar el tabulador por encima.
+   Por ejemplo, `On Time (MM-DD-YYYY HH:mm)`. Aquí MM es el mes en formato de dos dígitos, AAAA es el año, DD es el día en formato de dos dígitos, HH es la hora en formato militar de 24 horas y mm es el minuto.
+
+* El símbolo `X` del botón para eliminar las etiquetas seleccionadas actualmente lo anuncian los lectores de pantalla junto con el número de etiquetas seleccionadas.
 
 ## Formularios AEM {#aem-forms}
 
