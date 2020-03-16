@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ded190d4fee4e4ef9849dc34372774c529844f
+source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
 
 ---
 
@@ -38,7 +38,7 @@ Algunas de las funciones y mejoras clave introducidas en AEM 6.5.4.0 son:
 
 * Compatibilidad con texto [](../forms/using/designing-form-template.md) enriquecido en formularios HTML5.
 
-* Mejoras de accesibilidad en Recursos.
+* [Mejoras](new-features-latest-service-pack.md#accessibility-enhancements) de accesibilidad en Experience Manager Assets.
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.10.8.
 
@@ -72,7 +72,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Al mover el contenido dentro de la misma carpeta, se desactiva la opción de mover la página (NPR-31840).
 
-* En el modo de estructura de plantillas editables, la lista de componentes permitidos en el contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
+* En el modo de estructura de plantillas editables, la lista de componentes permitidos del contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
 
 * Cuando una página tiene permisos de solo lectura para un usuario, la opción Abrir propiedades está visible en sites.html pero no en editor.html (NPR-31770).
 
