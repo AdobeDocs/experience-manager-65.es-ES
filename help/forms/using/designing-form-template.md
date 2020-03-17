@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 14169510083a46fb3ab3ee36ea6abf3b0cc19de1
 
 ---
 
@@ -41,6 +41,6 @@ El destino clave para los formularios HTML5 son los dispositivos táctiles. Por 
 
 #### Rich text format {#rich-text-format}
 
-Puede convertir un campo de texto en un campo de texto enriquecido. Agrega una lista de opciones de formato al campo de texto. Para convertir, abra el Diseñador de formularios, toque el campo de texto en la vista **[!UICONTROL Diseño]**. En la ficha **[!UICONTROL Campo]** , seleccione Texto **** enriquecido en la lista desplegable Formato **[!UICONTROL de]** campo. Ahora, cuando el formulario XFA se procesa como un formulario HTML5, el campo se procesa como un campo de texto enriquecido.
+Puede convertir un campo de texto en un campo de texto enriquecido. Agrega una lista de opciones de formato al campo de texto. Para convertir, abra el Diseñador de formularios, toque el campo de texto en la vista **[!UICONTROL Diseño]**. En la ficha **[!UICONTROL Campo]** , seleccione Texto **** enriquecido en la lista desplegable Formato **[!UICONTROL de]** campo. Ahora, cuando el formulario XFA se procesa como un formulario HTML5, el campo se procesa como un campo de texto enriquecido. Toque ![Maximizar](assets/maximize_icon.svg) para ver opciones de formato adicionales.
 
 [Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
