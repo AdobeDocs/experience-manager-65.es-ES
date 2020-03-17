@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d607217e3d66998a8463db3f527a626beaca769
+source-git-commit: 86dbd52d44a78401aa50cce299850469c51b691c
 
 ---
 
@@ -20,15 +20,33 @@ Esta página contiene una lista de problemas conocidos de Adobe Experience Manag
 
 ## Plataforma {#platform}
 
-Se informa de un problema en el que se eliminan CRX-Quickstart y su contenido.
+* Se informa de un problema en el que se eliminan CRX-Quickstart y su contenido.
 
-En cada una de estas acciones, asegúrese de que la propiedad &quot;*htmllibmanager.fileSystemOutputCacheLocation*&quot; nunca sea una cadena vacía:
+   En cada una de estas acciones, asegúrese de que la propiedad &quot;*htmllibmanager.fileSystemOutputCacheLocation*&quot; nunca sea una cadena vacía:
 
-1. Llamando a &quot;*/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true*&quot;.
-2. Actualización a AEM 6.5.
-3. Ejecución de la &quot;migración de contenido flotante&quot; en AEM 6.5.
+   1. Llamando a &quot;*/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true*&quot;.
+   2. Actualización a AEM 6.5.
+   3. Ejecución de la &quot;migración de contenido flotante&quot; en AEM 6.5.
+   Hay disponible un artículo de la Base [de](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) conocimiento con más detalles y la solución alternativa para este problema.
 
-Hay disponible un artículo de la Base [de](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) conocimiento con más detalles y la solución alternativa para este problema.
+* Si utiliza JDK 11 con la instancia de AEM 6.5, algunas de las páginas podrían aparecer en blanco después de implementar algunos paquetes. El siguiente mensaje de error aparece en el archivo de registro:
+
+   ```
+   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+   ```
+
+Para resolver este error:
+
+1. Detenga la instancia de AEM. Vaya a `<aem_server_path_on_server>crx-quickstart\conf` y abra el `sling.properties` archivo. Adobe recomienda realizar una copia de seguridad de este archivo.
+
+2. Buscar `org.osgi.framework.bootdelegation=`. Agregue `jdk.internal.reflect,jdk.internal.reflect.*` propiedades para mostrar el resultado como:
+
+   ```
+   org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
+   ```
+
+3. Guarde el archivo y reinicie la instancia de AEM.
 
 ## Assets {#assets}
 
@@ -39,7 +57,7 @@ Hay disponible un artículo de la Base [de](https://helpx.adobe.com/experience-m
 ## Formularios {#forms}
 
 * Cuando se instala AEM Forms en el sistema operativo de Linux, la firma digital con el módulo de seguridad de hardware no funciona. (CQ-4266721)
-* (AEM Forms on WebSphere only) The **Forms Workflow **> **Task Search** option does not return any result if you search for an **Administrator** with **Username** as the search criteria. (CQ-4266457)
+* (AEM Forms solo en WebSphere) La opción **Forms Workflow**> **Task Search** (Búsqueda de tareas) no devuelve ningún resultado si se busca un **administrador** con el **nombre de usuario** como criterio de búsqueda. (CQ-4266457)
 
 * AEM Forms no puede convertir archivos .tif ni .tiff con la opción de compresión JPEG en documentos PDF. (CQ-4265972)
 * Las opciones **AEM Forms Assets Scanner** (Escáner de recursos de AEM Forms) y **Letter to Interactive Communication Migration** (Carta para la migración de comunicaciones interactiva) no funcionan en la página de **migración de AEM Forms**. (CQ-4266572)
