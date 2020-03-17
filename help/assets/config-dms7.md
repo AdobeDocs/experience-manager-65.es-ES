@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
+source-git-commit: 64fe2634bae6289aa313dd1e5a135d1bdd654dbe
 
 ---
 
@@ -92,8 +92,9 @@ Consulte [Instalación del paquete de funciones 18912 para obtener más informac
 
    * **[!UICONTROL Ruta de carpeta raíz de la empresa]**
 
-   * **[!UICONTROL Publicación de recursos]** : la opción **[!UICONTROL Inmediatamente]** significa que, cuando se cargan recursos, el sistema los ingesta y proporciona la URL o incrustación al instante. No es necesaria la intervención del usuario para publicar recursos. La opción **[!UICONTROL Al activar]** significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar.
-
+   * **[!UICONTROL Publicación de recursos]** : puede elegir entre las tres opciones siguientes:
+      * **[!UICONTROL Inmediatamente]** significa que, cuando se cargan recursos, el sistema los ingiere y proporciona la URL o incrustación al instante. No es necesaria la intervención del usuario para publicar recursos.
+      * **[!UICONTROL Tras la activación]** , significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar.
    * **[!UICONTROL Servidor]** de previsualización segura: permite especificar la ruta de URL del servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM puede acceder a las representaciones de Dynamic Media remotas y obtener una vista previa de ellas de forma segura (no se devuelven los binarios a la instancia de AEM).
 A menos que tenga un acuerdo especial para utilizar el servidor de su propia empresa o un servidor especial, Adobe Systems le recomienda que deje esta configuración como se especificó.
 
