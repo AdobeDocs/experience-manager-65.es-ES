@@ -3,7 +3,7 @@ title: Formatos admitidos para los recursos
 description: Lista de formatos de archivo compatibles con Recursos AEM y funciones compatibles con cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
+source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
 
 ---
 
@@ -18,7 +18,7 @@ Utilice la leyenda para comprender el nivel de asistencia.
 
 | Nivel de asistencia | Descripción |
 |:---:|---|
-| ✓ | Admitido |
+| ✓ | Compatible |
 | * | Compatible con funciones de complemento |
 | - | No aplicable |
 
@@ -55,7 +55,7 @@ Los formatos de imagen rasterizados compatibles con las funciones de Dynamic Med
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
- &amp;ast; La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
+&amp;ast; La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
 Además de la información anterior, considere lo siguiente:
 
@@ -188,18 +188,17 @@ Los formatos de archivo admitidos y la aplicabilidad de los flujos de trabajo DA
 
 ## Otros formatos admitidos {#other-supported-formats}
 
-La aplicabilidad de los flujos de trabajo DAM comunes para algunos otros formatos de archivo se describe en la siguiente tabla.
+La aplicabilidad de los flujos de trabajo DAM comunes para algunos otros formatos de archivo se describe en la siguiente tabla. La funcionalidad DAM habitual, excepto la entrega de Dynamic Media, es compatible con todos los archivos.
 
 | Formatos | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Distribución dinámica de medios |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (cuando se configura con su propio dominio de entrega) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Los otros formatos son compatibles con DAM para almacenamiento, control de versiones, ACL, flujo de trabajo, publicación y administración de metadatos.
+**&amp;ast;** Los otros formatos son compatibles con DAM para almacenamiento, control de versiones, ACL, flujo de trabajo, publicación y administración de metadatos.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -247,7 +246,7 @@ Consulte también [Activación de la compatibilidad](/help/sites-administering/s
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
