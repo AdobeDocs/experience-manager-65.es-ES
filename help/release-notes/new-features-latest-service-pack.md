@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed756d785864131c2e031aec4331388bc057576b
+source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
 
 ---
 
@@ -31,11 +31,12 @@ Además, AEM 6.5.4.0 incluye mejoras en el sistema de estilos. Ahora puede selec
 
 ## AEM Assets {#aem-assets}
 
-### Integración con Brand Portal a través de la consola de Adobe I/O {#assets-integration-bp}
+### Configuración de AEM Assets con Brand Portal {#configure-assets-bp}
 
-Ahora puede configurar Recursos AEM con Brand Portal a través de la consola de Adobe I/O. La consola de Adobe I/O obtiene un testigo IMS para la autorización del inquilino de Brand Portal. Anteriormente, Recursos AEM se configuraba con Brand Portal en la IU clásica mediante OAuth Gateway heredado. Las configuraciones que utilizan OAuth Gateway heredado serán compatibles hasta el 6 de abril de 2020. Si no modifica la integración, las configuraciones existentes seguirán funcionando.
+Se ha cambiado el canal de autorización entre AEM Assets y Brand Portal. Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un token de acceso IMS para la autorización. Recursos AEM ahora se configura con Brand Portal a través de Adobe I/O, que proporciona un distintivo IMS para la autorización del inquilino de Brand Portal.
 
-Puede crear una nueva integración o actualizar la configuración de integración a la consola de Adobe I/O.
+Los pasos para configurar Recursos AEM con Brand Portal son diferentes en función de la versión de AEM y de si está configurando por primera vez o actualizando las configuraciones existentes. Consulte [Configuración de AEM Assets con Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) para obtener más información.
+
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
@@ -159,7 +160,7 @@ Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las sigui
 
 * Sitios AEM: Sitio de referencia de WKND Todos los [nuevos proyectos](https://www.wknd.site/) de referencia, acompañados de las prácticas recomendadas para crear sitios con AEM. Obtenga más información leyendo el tutorial [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) WKND completamente actualizado y tomando el código de [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
 
-* Sitios AEM: Commerce CIF Core Components 0.7.0 y 0.9.0Integración de AEM Sites y Magento Commerce. Estamos [extendiendo continuamente componentes principales dedicados y un arquetipo de proyecto con énfasis en comercio](https://github.com/adobe/aem-core-cif-components/releases).
+* Sitios AEM: Commerce CIF Core Components 0.7.0 y 0.9.0Integración de AEM Sites y Magento Commerce. Estamos [extendiendo continuamente componentes principales dedicados y un arquetipo de proyecto con énfasis en el comercio](https://github.com/adobe/aem-core-cif-components/releases).
 
 * Recursos AEM: Desktop App 2.0.1.1
    [Obtener acceso de escritorio a los recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)
