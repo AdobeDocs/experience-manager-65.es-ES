@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
@@ -39,7 +39,7 @@ El directorio /apps es el primer lugar en el que se busca para resolver solicitu
 
 El componente predeterminado en el directorio /libs nunca debe modificarse, ya que los parches futuros y las actualizaciones son libres de alterar el directorio /libs de cualquier manera necesaria mientras se mantienen las interfaces públicas.
 
-Esto es diferente de [ampliar](#extensions) un componente predeterminado donde el deseo es realizar modificaciones para un uso específico, crear una ruta única al componente y confiar en hacer referencia al componente predeterminado original en el directorio /libs como tipo de recurso superior.
+Esto es diferente a [ampliar](#extensions) un componente predeterminado donde el deseo es realizar modificaciones para un uso específico, crear una ruta única al componente y confiar en hacer referencia al componente predeterminado original en el directorio /libs como tipo de recurso superior.
 
 Para ver un ejemplo rápido de superposición del componente de comentarios, pruebe el tutorial [](overlay-comments.md)Overlay Comments Component.
 
@@ -102,9 +102,9 @@ Los estilos personalizados ahora anularán los estilos de marco predeterminados 
 
 >[!CAUTION]
 >
->Cualquier nombre de clase CSS con el prefijo** scf-js-&amp;ast;**tiene un uso específico en el código javascript. Estas clases afectan al estado de un componente (por ejemplo, alternar entre oculto y visible) y no deben superarse ni eliminarse.
+>Cualquier nombre de clase CSS con el prefijo `scf-js` tiene un uso específico en el código javascript. Estas clases afectan al estado de un componente (por ejemplo, alternar entre oculto y visible) y no deben superarse ni eliminarse.
 >
->Mientras que scf-js-&amp;ast; las clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, puede haber efectos secundarios.
+>Aunque las `scf-js` clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, puede haber efectos secundarios.
 
 ## Ampliación de Javascript {#extending-javascript}
 
@@ -145,7 +145,7 @@ Para ampliar una implementación de componentes Javascript, solo necesita
 
 Las etiquetas de script son una parte inherente del entorno de cliente. Son el pegamento que ayuda a enlazar el marcado generado en el servidor con los modelos y las vistas del lado del cliente.
 
-Las etiquetas de script de los scripts SCF no deben eliminarse al superponer o anular componentes. Las etiquetas de script SCF creadas automáticamente para insertar JSON en el HTML se identifican con el atributo `data-scf-json=`true.
+Las etiquetas de script de los scripts SCF no deben eliminarse al superponer o anular componentes. Las etiquetas de script SCF creadas automáticamente para insertar JSON en el HTML se identifican con el atributo `data-scf-json=true`.
 
 ## Clientlibs para SCF {#clientlibs-for-scf}
 
@@ -164,12 +164,12 @@ Los clientlibs completos (no autores) incluyen dependencias y son convenientes p
 
 Estas versiones se encuentran en:
 
-* /etc/clientlibs/social/hbs/&lt;nombre del componente>
+* `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
 Por ejemplo:
 
-* Nodo de carpeta de cliente: /etc/clientlibs/social/hbs/forum
-* Propiedad Categories: cq.social.hbs.forum
+* Nodo de carpeta de cliente: `/etc/clientlibs/social/hbs/forum`
+* Propiedad Categories: `cq.social.hbs.forum`
 
 La guía [Componentes](components-guide.md) comunitarios enumera los clientlibs completos requeridos para cada componente SCF.
 
@@ -183,12 +183,12 @@ Estos clientes no deberían incluirse nunca directamente, sino que están dispon
 
 Estas versiones se encuentran en la carpeta de bibliotecas de SCF:
 
-* /libs/social/&lt;feature>/components/hbs/&lt;nombre del componente>/clientlibs
+* `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
 Por ejemplo:
 
-* Nodo de carpeta de cliente: /libs/social/forum/hbs/forum/clientlibs
-* Propiedad Categories: cq.social.author.hbs.forum
+* Nodo de carpeta de cliente: `/libs/social/forum/hbs/forum/clientlibs`
+* Propiedad Categories: `cq.social.author.hbs.forum`
 
 Nota: aunque los clientlibs de autor nunca incorporan otras bibliotecas, sí enumeran sus dependencias. Cuando se incrustan en otras bibliotecas, las dependencias no se extraen automáticamente y también se deben incrustar.
 
