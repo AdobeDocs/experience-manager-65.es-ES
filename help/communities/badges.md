@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Consola de distintivos{#badges-console}
+# Consola de distintivos {#badges-console}
 
 ## Acerca de los distintivos {#about-badges}
 
@@ -26,15 +26,15 @@ La consola Distintivos de comunidades permite agregar distintivos personalizados
 
 Actualmente, las insignias que un miembro de la comunidad gana o se asigna aparecerán junto con su nombre y avatar en las siguientes ubicaciones:
 
-* perfiles
-* [foros](/help/communities/forum.md)
+* Perfiles
+* [Foros](/help/communities/forum.md)
 * [P y R](/help/communities/working-with-qna.md)
-* [marcadores](/help/communities/enabling-leaderboard.md)
-* [ideación](/help/communities/ideation-feature.md)
+* [Foros](/help/communities/enabling-leaderboard.md)
+* [Ideación](/help/communities/ideation-feature.md)
 
 En el entorno de creación, para acceder a la consola Badges
 
-* desde la navegación global: **Herramientas, Comunidades, Distintivos**
+* Desde la navegación global, vaya a Herramientas de control **[UIC > Comunidades > Distintivos]**
 
 Esta consola muestra las insignias disponibles actualmente y desde las cuales se pueden agregar nuevas insignias.
 
@@ -48,13 +48,21 @@ Si el entorno de publicación es un conjunto de editores, es necesario configura
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-* **Cargar imagen**(*requerido*) Una imagen de insignia con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
+* **Cargar imagen**
 
-* **Nombre**(*obligatorio*) El nombre del distintivo. Es el nombre predeterminado `Display Name` así como el nombre del nodo del repositorio. Si el nombre `Name` no es un nombre de nodo de repositorio válido, se modificará.
+   (*Requerido*) Imagen de un distintivo con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
 
-* **Nombre** para mostrar (*opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para el `Name`.
+* **Nombre**
 
-* **Descripción**(*opcional*) Descripción del distintivo.
+   (*Requerido*) El nombre del distintivo. Es el nombre predeterminado `Display Name` así como el nombre del nodo del repositorio. Si el nombre `Name` no es un nombre de nodo de repositorio válido, se modificará.
+
+* **Nombre para mostrar**
+
+   (*Opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para el `Name`.
+
+* **Descripción**
+
+   (*Opcional*) Descripción del distintivo.
 
 ## Información adicional {#additional-information}
 
