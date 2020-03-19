@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -30,9 +30,9 @@ El primer paso es agregar una propiedad super type de recurso al `/apps/an-scf-s
 Uso de CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nombre: `sling:resourceSuperType`
-    * Tipo: `String`
-    * Valor: &quot;foundation/components/page&quot;
+    Nombre: `sling:resourceSuperType`
+    Type: `String`
+    Value: &quot;foundation/components/page&quot;
 
 1. Haga clic en verde **[!UICONTROL [+]Agregar]**
 1. Haga clic en **[!UICONTROL Guardar todo]**
@@ -86,9 +86,9 @@ Uso de CRXDE Lite:
 
    Para configurar la creación, superponga `body.jsp` con una secuencia de comandos local e incluya un sistema de párrafos (parsys) en el cuerpo:
 
-   1. navigate to `/apps/an-scf-sandbox/components`
-   1. seleccionar el `playpage`nodo
-   1. haga clic con el botón derecho y seleccione `Create > Create File...`
+   1. Ir a `/apps/an-scf-sandbox/components`
+   1. Seleccione el `playpage`nodo
+   1. Haga clic con el botón derecho y seleccione `Create > Create File...`
 
       * Nombre: **body.jsp**
    1. Haga clic en **[!UICONTROL Guardar todo]**
@@ -174,4 +174,4 @@ Cambie la dirección URL del explorador a la página raíz: [http://localhost:45
 
 Una vez que se publique el sitio, la búsqueda en la página raíz de una instancia de publicación se redirigirá a la página en inglés.
 
-El último paso antes de jugar con los componentes SCF de las comunidades es agregar una carpeta de biblioteca de clientes (clientlibs)... .  **[](add-clientlibs.md)**
+El último paso antes de jugar con los componentes SCF de las comunidades es agregar una carpeta de biblioteca de clientes (clientlibs).... [Agregar clientes](add-clientlibs.md)
