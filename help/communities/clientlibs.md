@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Componentes Clientlibs for Communities{#clientlibs-for-communities-components}
+# Componentes Clientlibs for Communities {#clientlibs-for-communities-components}
 
 ## Introducción {#introduction}
 
-Esta sección de la documentación describe cómo agregar bibliotecas de cliente (clientlibs) a una página para componentes de Comunidades.
+En esta sección de la documentación se describe cómo agregar bibliotecas del lado del cliente (clientlibs) a una página para componentes de Communities.
 
 Para obtener información básica, visite :
 
@@ -65,22 +65,22 @@ Utilice [CRXDE|Lite](#using-crxde-lite) para modificar una lista de clientes exi
 
 Para agregar una clientlib para un sitio de comunidad mediante [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* vaya a [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* localice el `clientlibslist` nodo de la página en la que desea agregar el componente
+* Vaya a [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
+* Busque el nodo de la `clientlibslist` página en la que desea agregar el componente
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* con `clientlibslist` nodo seleccionado
+* Con `clientlibslist` nodo seleccionado
 
-   * buscar la propiedad String[]`scg:requiredClientLibs`
-   * seleccione su `Value` para acceder al cuadro de diálogo de la matriz String
+   * Localizar la propiedad String[]`scg:requiredClientLibs`
+   * Seleccione su `Value` para acceder al cuadro de diálogo de la matriz String
 
-      * desplácese hacia abajo si es necesario
-      * seleccionar + para introducir una nueva biblioteca de cliente
+      * Desplácese hacia abajo si es necesario
+      * Seleccione + para introducir una nueva biblioteca de cliente
 
-         * repetir para agregar más bibliotecas de cliente
-      * select** OK*
-   * seleccione **Guardar todo**
+         * Repetir para agregar más bibliotecas de cliente
+      * Seleccione **Aceptar**
+   * Seleccione **Guardar todo**
 
 
 
