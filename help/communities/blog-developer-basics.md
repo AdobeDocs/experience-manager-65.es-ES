@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Elementos esenciales del blog{#blog-essentials}
+# Elementos esenciales del blog {#blog-essentials}
 
-Desde AEM 6.1 Communities, un blog es una actividad comunitaria. Los artículos de blog ahora se publican desde el entorno de publicación, donde anteriormente los artículos de blog solo podían crearse en el entorno de creación y publicarse.
+Desde AEM 6.1 Communities, un blog es una actividad comunitaria. Los artículos de blog ahora se publican desde el entorno de publicación, donde anteriormente solo se podían crear y publicar artículos de blog en el entorno de creación.
 
 Los artículos de blog ahora pueden ser creados por cualquier miembro de la comunidad, a menos que estén restringidos a miembros privilegiados.
 
