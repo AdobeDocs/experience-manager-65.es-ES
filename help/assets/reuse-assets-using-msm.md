@@ -4,7 +4,7 @@ description: Utilice recursos en varias páginas o carpetas que se deriven de lo
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: dc1a9eb4c02c7751b99ed074e0f3250193957c59
 
 ---
 
@@ -34,25 +34,25 @@ MSM mantiene una relación activa entre el recurso de origen y sus copias activa
 
 ### Glosario de términos de MSM para recursos {#glossary}
 
-**Origen** Los recursos o carpetas originales. Copia maestra de la que se derivan las copias en vivo.
+**Fuente:** Recursos o carpetas originales. Copia maestra de la que se derivan las copias en vivo.
 
-**Live Copy** Copia de los recursos o carpetas de origen que están en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte cómo crear LC.
+**Live Copy:** Copia de los recursos o carpetas de origen que están en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte cómo crear LC.
 
-**Herencia** Un vínculo/referencia entre un recurso/carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe en un nivel granular para los campos de metadatos. La herencia se puede eliminar para los campos de metadatos selectivos, al tiempo que se conserva la relación activa entre el origen y su Live Copy.
+**Herencia:** Vínculo/referencia entre un recurso/carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe en un nivel granular para los campos de metadatos. La herencia se puede eliminar para los campos de metadatos selectivos, al tiempo que se conserva la relación activa entre el origen y su Live Copy.
 
-**Despliegue** Acción que inserta las modificaciones realizadas en el flujo de salida de origen en sus copias en vivo. Es posible actualizar una o varias copias en directo de una sola vez mediante la acción de implementación. Consulte despliegue.
+**Despliegue:** Acción que impulsa las modificaciones realizadas en el flujo de salida de origen a sus copias en vivo. Es posible actualizar una o varias copias en directo de una sola vez mediante la acción de implementación. Consulte despliegue.
 
-**Despliegue las reglas de configuración** que determinan qué propiedades se sincronizan, cómo y cuándo. Estas configuraciones se aplican al crear copias en directo; se puede editar más tarde; y un elemento secundario puede heredar la configuración de implementación de su recurso principal. Para MSM para recursos, utilice únicamente la configuración de implementación estándar. Las demás configuraciones de implementación no están disponibles para MSM para Recursos.
+**Configuración de despliegue:** Reglas que determinan qué propiedades se sincronizan, cómo y cuándo. Estas configuraciones se aplican al crear copias en directo; se puede editar más tarde; y un elemento secundario puede heredar la configuración de implementación de su recurso principal. Para MSM para recursos, utilice únicamente la configuración de implementación estándar. Las demás configuraciones de implementación no están disponibles para MSM para Recursos.
 
-**Sincronizar** otra acción, además de la implementación, que trae paridad entre el origen y su Live Copy, enviando las actualizaciones desde el origen a las Live Copies. Se inicia una sincronización para una copia en vivo concreta y la acción extrae los cambios del origen. Con esta acción, solo es posible actualizar una de las copias activas. Consulte Sincronizar acción.
+**Sincronizar:** Otra acción, además de la implementación, que trae paridad entre la fuente y su Live Copy, enviando las actualizaciones de la fuente a las Live Copies. Se inicia una sincronización para una copia en vivo concreta y la acción extrae los cambios del origen. Con esta acción, solo es posible actualizar una de las copias activas. Consulte Sincronizar acción.
 
-**Suspender** temporalmente la relación activa entre una Live Copy y su recurso o carpeta de origen. Puede reanudar la relación. Consulte acción de suspensión.
+**Suspender:** Elimine temporalmente la relación activa entre una Live Copy y su recurso o carpeta de origen. Puede reanudar la relación. Consulte acción de suspensión.
 
-**Reanudar** Reanudar la relación activa para que una Live Copy empiece a recibir las actualizaciones desde el origen. Consulte la acción de reanudación.
+**Reanudar:** Reanude la relación activa para que una Live Copy vuelva a empezar a recibir las actualizaciones del origen. Consulte la acción de reanudación.
 
-**La acción Restablecer** hace que la Live Copy vuelva a ser una réplica del origen sobrescribiendo los cambios locales. También elimina las cancelaciones de herencia y restablece la herencia en todos los campos de metadatos. Para realizar modificaciones locales en el futuro, debe cancelar de nuevo la herencia de campos específicos. Consulte las modificaciones locales a la LC.
+**Restablecer:** La acción Restaurar hace que la Live Copy vuelva a ser una réplica del origen sobrescribiendo los cambios locales. También elimina las cancelaciones de herencia y restablece la herencia en todos los campos de metadatos. Para realizar modificaciones locales en el futuro, debe cancelar de nuevo la herencia de campos específicos. Consulte las modificaciones locales a la LC.
 
-**Separe** de forma irrevocable la relación activa de una carpeta o un recurso de Live Copy. Después de realizar la acción de separar, las copias en vivo nunca pueden recibir actualizaciones del origen y deja de ser una Live Copy. Consulte Eliminar relación.
+**Desasociar:** Elimine irrevocablemente la relación activa de una carpeta o recurso de Live Copy. Después de realizar la acción de separar, las copias en vivo nunca pueden recibir actualizaciones del origen y deja de ser una Live Copy. Consulte Eliminar relación.
 
 ## Creación de una Live Copy de un recurso {#createlc}
 
@@ -69,7 +69,7 @@ Para crear copias en vivo con el primer método, siga estos pasos:
 
    ![Creación de una Live Copy desde la interfaz de AEM](assets/create_lc1.png)
 
-   *Figura:Creación de una Live Copy desde la interfaz de AEM*
+   *Figura: Creación de una Live Copy desde la interfaz de AEM*
 
 1. Seleccione una carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Proporcione el título y el nombre. Los recursos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede optar por incluir o excluir elementos secundarios.
@@ -81,7 +81,7 @@ Para crear copias en vivo con el segundo método, siga estos pasos:
 
    ![Creación de una Live Copy desde la interfaz de AEM](assets/create_lc2.png)
 
-   *Figura:Creación de una Live Copy desde la interfaz de AEM*
+   *Figura: Creación de una Live Copy desde la interfaz de AEM*
 
 1. Seleccione el recurso o la carpeta de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Seleccione la carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
@@ -103,7 +103,7 @@ Los dos métodos siguientes funcionan para los recursos y las carpetas:
 
 >[!TIP]
 >
-> Para comprobar el estado de unas pocas copias en vivo independientes, utilice el primer método que se muestra en la página Propiedades. Para comprobar los estados de muchas Live Copies, utilice el segundo método, es decir, consulte la página **[!UICONTROL Estado de relación]**.
+>Para comprobar el estado de unas pocas copias en vivo independientes, utilice el primer método que se muestra en la página Propiedades. Para comprobar los estados de muchas Live Copies, utilice el segundo método, es decir, consulte la página **[!UICONTROL Estado de relación]**.
 
 ### Información y estado de una Live Copy {#statuslcasset}
 
@@ -114,7 +114,7 @@ Para comprobar la información y los estados de un recurso de Live Copy o una ca
 
    ![La información y los estados de la Live Copy se muestran en una consola en Propiedades](assets/lcfolder_info_properties.png)
 
-   *Figura:Información y estados de Live Copy*
+   *Figura: Información y estados de Live Copy*
 
 1. Puede habilitar o deshabilitar si los recursos secundarios toman en préstamo la configuración de Live Copy.
 
@@ -129,7 +129,7 @@ AEM proporciona una consola para comprobar las estatuas de todas las copias acti
 
    ![Ver estados de las copias en vivo en la consola de Live Copy del origen](assets/livecopy-statuses.png)
 
-   *Figura:Ver estados de las copias en vivo en la consola de Live Copy del origen*
+   *Figura: Ver estados de las copias en vivo en la consola de Live Copy del origen*
 
 1. Para ver la información detallada sobre cada recurso en la carpeta Live Copy, seleccione un recurso y haga clic en **[!UICONTROL Estado de relación]** en la barra de herramientas.
 
@@ -139,7 +139,7 @@ AEM proporciona una consola para comprobar las estatuas de todas las copias acti
 
 >[!TIP]
 >
-> Puede ver rápidamente los estados de las copias en vivo de otras carpetas sin tener que examinar demasiado. Simplemente cambie la carpeta en la lista emergente de la parte superior central de la interfaz de **[!UICONTROL Live Copy Overview]** .
+>Puede ver rápidamente los estados de las copias en vivo de otras carpetas sin tener que examinar demasiado. Simplemente cambie la carpeta en la lista emergente de la parte superior central de la interfaz de **[!UICONTROL Live Copy Overview]** .
 
 ### Acciones rápidas del carril Referencias para el origen {#refrailsource}
 
@@ -155,13 +155,13 @@ Select the source asset or folder, open the left rail, and click **[!UICONTROL R
 
 ![Acciones e información disponibles en el carril Referencias del origen seleccionado](assets/referencerail_source.png)
 
-*Figura:Acciones e información disponibles en el carril Referencias del origen seleccionado*
+*Figura: Acciones e información disponibles en el carril Referencias del origen seleccionado*
 
 Para una Live Copy específica, haga clic en **[!UICONTROL Editar Live Copy]** para suspender la relación o cambiar la configuración de la implementación.
 
 ![Para una Live Copy específica, se puede acceder a la opción de suspender la relación o cambiar la configuración de la implementación desde el carril Referencias cuando se selecciona el recurso de origen](assets/referencerail_editlc_options.png)
 
-*Figura:Suspender la relación o cambiar la configuración de implementación de una Live Copy específica*
+*Figura: Suspender la relación o cambiar la configuración de implementación de una Live Copy específica*
 
 ### Acciones rápidas del carril Referencias para la Live Copy {#refraillc}
 
@@ -175,7 +175,7 @@ Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y hag
 
 ![Acciones disponibles en el carril Referencias para la Live Copy seleccionada](assets/referencerail_livecopy.png)
 
-*Figura:Acciones disponibles en el carril Referencias para la Live Copy seleccionada*
+*Figura: Acciones disponibles en el carril Referencias para la Live Copy seleccionada*
 
 ## Propagación de modificaciones de copias de origen a Live Copy {#rolloutsync}
 
@@ -191,7 +191,7 @@ Puede iniciar una acción de despliegue desde el recurso de origen y actualizar 
 
    ![Despliegue las modificaciones del origen en unas pocas o todas las Live Copies](assets/livecopy_rollout_page.png)
 
-   *Figura:Despliegue las modificaciones del origen en unas pocas o todas las Live Copies*
+   *Figura: Despliegue las modificaciones del origen en unas pocas o todas las Live Copies*
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Como alternativa, puede iniciar una acción de despliegue desde el carril Refere
 
 ![Despliegue las modificaciones del origen en la Live Copy seleccionada](assets/livecopy_rollout_dialog.png)
 
-*Figura:Despliegue las modificaciones del origen en la Live Copy seleccionada*
+*Figura: Despliegue las modificaciones del origen en la Live Copy seleccionada*
 
 ### Acerca de la acción de sincronización {#aboutsync}
 
@@ -221,7 +221,7 @@ Para ver los estados y la información relacionados con una acción de sincroniz
 
 ![La acción Sincronizar extrae los cambios realizados en el origen](assets/livecopy_sync.png)
 
-*Figura:La acción Sincronizar extrae los cambios realizados en el origen*
+*Figura: La acción Sincronizar extrae los cambios realizados en el origen*
 
 >[!NOTE]
 >
@@ -257,7 +257,7 @@ Puede eliminar completamente la relación entre un origen y una Live Copy median
 
    ![La acción Separar elimina completamente la relación entre la copia original y la Live Copy](assets/livecopy_detach.png)
 
-   *Figura:La acción Separar elimina completamente la relación entre la copia original y la Live Copy*
+   *Figura: La acción Separar elimina completamente la relación entre la copia original y la Live Copy*
 
    >[!CAUTION]
    >
@@ -275,7 +275,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
    ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
 
-   *Figura:Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy*
+   *Figura: Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy*
 
 ## Ampliar MSM para recursos {#extendapi}
 
