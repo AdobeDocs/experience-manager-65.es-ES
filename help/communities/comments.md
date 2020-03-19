@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Uso de comentarios{#using-comments}
+# Uso de comentarios {#using-comments}
 
 ## Introducción {#introduction}
 
@@ -24,8 +24,8 @@ La función de comentarios se utiliza para permitir que los visitantes (miembros
 
 El documento describe:
 
-* agregar `Comments`a una página.
-* configuración del `Comments`componente.
+* Adición `Comments`a una página.
+* Configuración del `Comments`componente.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ En la ficha **Comentarios** , especifique cómo los visitantes introducen los co
 
 * **Tipos de archivo permitidos**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. Una lista separada por comas de extensiones de nombre de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
+   Solo es relevante si está activada la opción Permitir cargas de archivos. Una lista separada por comas de extensiones de nombre de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Editor de texto enriquecido**
 
@@ -101,9 +101,11 @@ En la ficha **Comentarios** , especifique cómo los visitantes introducen los co
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha **Moderación del usuario **, especifique cómo se administran los comentarios publicados. Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+En la ficha Moderación **** del usuario, especifique cómo se administran los comentarios publicados. Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
 
-* **Premoderación** Si está activada, los comentarios deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está seleccionado.
+* **Moderación previa**
+
+   Si se selecciona, los comentarios deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está seleccionado.
 
 * **Eliminar comentarios**
 
@@ -135,11 +137,11 @@ En la ficha **Moderación del usuario **, especifique cómo se administran los c
 
 * **Límite de indicación**
 
-   Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo en la vista pública. Este número debe ser mayor o igual que el umbral **de moderación**. El valor predeterminado es 5.
+   Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo en la vista pública. Este número debe ser bueno o igual al umbral **de moderación**. El valor predeterminado es 5.
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
-En la ficha **Ordenar configuración **, especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **Ordenar configuración** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **Campo de ordenación**
 
@@ -151,11 +153,11 @@ En la ficha **Ordenar configuración **, especifique cómo se ordenan los coment
 
 ### Cambio a un tipo de comentario personalizado {#changing-to-a-custom-comment-type}
 
-Al cambiar el tipo de recurso de comentario, el sistema de comentarios ya no genera una instancia de un comentario usando el valor predeterminado, sino una instancia personalizada (ampliada) por los desarrolladores.
+Al cambiar el tipo de recurso de comentarios, el sistema de comentarios ya no genera una instancia de un comentario usando el valor predeterminado, sino una instancia personalizada (ampliada) por los desarrolladores.
 
 Una vez conocidos los tipos de recursos personalizados, introduzca el modo [de](/help/sites-authoring/default-components-designmode.md) diseño y haga doble clic en el componente `Comments` colocado para abrir un cuadro de diálogo con una ficha adicional.
 
-En la ficha **Tipos de recursos **, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting`componentes:
+En la ficha Tipos **de** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting`componentes:
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -185,10 +187,10 @@ Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o admin
 
 Cuando el visitante del sitio ha iniciado sesión, según la configuración, es posible que
 
-* publicar un nuevo comentario
-* editar sus propios comentarios
-* eliminar su propio comentario
-* marcar los comentarios de otros
+* Publicar un nuevo comentario
+* Editar su propio comentario
+* Eliminar sus propios comentarios
+* Marcar comentarios de otros
 
 #### Anónimo {#anonymous}
 
