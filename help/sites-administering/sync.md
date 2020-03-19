@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
 
 ---
 
@@ -44,7 +44,7 @@ Los beneficios de la sincronización de usuarios mediante la distribución Sling
 
 >[!NOTE]
 >
->Si se requieren sesiones, se recomienda usar una solución SSO o una sesión adhesiva y hacer que los clientes inicien sesión si se cambian a otro editor.
+>Si se requieren sesiones, se recomienda utilizar una solución SSO o utilizar una sesión adhesiva y hacer que los clientes inicien sesión si pasan a otro editor.
 
 >[!CAUTION]
 >
@@ -77,7 +77,7 @@ Una vez habilitada la sincronización de usuarios, solo se sincronizan los usuar
 * [Actualizaciones de la plataforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [Actualizaciones de AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
-### 1.Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory}
+### 1. Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Habilitar sincronización de usuario**
 
@@ -174,7 +174,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
 
 ![](assets/chlimage_1-22.png)
 
-### 4.Agente de distribución Apache Sling: fábrica de agentes de cola {#apache-sling-distribution-agent-queue-agents-factory}
+### 4. Agente de distribución Apache Sling: fábrica de agentes de cola {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Habilitar sincronización de usuario**
 
@@ -218,7 +218,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
 
 ![](assets/screen-shot_2019-05-24at090809.png)
 
-### 6.Activador de distribución de Apache Sling: fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### 6. Activador de distribución de Apache Sling: fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Opcional) modificar el intervalo de sondeo**
 
@@ -246,7 +246,7 @@ De forma predeterminada, el autor sondeará los cambios cada 30 segundos. Para m
 
 La configuración predeterminada es para una sola instancia de publicación. Dado que el motivo para habilitar la sincronización de usuarios es sincronizar varias instancias de publicación, como en un conjunto de publicaciones, las instancias de publicación adicionales deberán agregarse a la fábrica de agentes de sincronización.
 
-### 7.Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory-1}
+### 7. Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Agregar instancias de publicación:**
 
@@ -275,7 +275,7 @@ La configuración predeterminada es para una sola instancia de publicación. Dad
 
 * select `Save`
 
-### 8.Escucha de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
+### 8. Escucha de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
 
 **(Opcional) Sincronizar nodos JCR adicionales**
 
@@ -318,7 +318,7 @@ Carpetas predeterminadas para sincronizar
    * social/relaciones
    * actividades
 
-### 9.ID de Sling único {#unique-sling-id}
+### 9. ID de Sling único {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -328,7 +328,7 @@ Si el ID de Sling es el mismo para varias instancias de publicación en un conju
 
 Para validar que todos los valores de ID de Sling difieran, en cada instancia de publicación:
 
-1. vaya a [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. buscar `http://<host>:<port>/system/console/status-slingsettings`
 1. comprobar el valor de **Sling ID**
 
 ![](assets/chlimage_1-27.png)
