@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
+source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
 
 ---
 
@@ -39,7 +39,7 @@ Para empezar a usar VLT, debe hacer lo siguiente:
 
 Para utilizar la herramienta VLT, primero debe instalarla. No está instalado de forma predeterminada, ya que es una herramienta adicional. Además, debe configurar la variable de entorno del sistema.
 
-1. Descargue el archivo FileVault del sitio web [Apache Jackrabbit.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Descargue el archivo de archivo FileVault del repositorio de artefactos de [Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >La fuente de la herramienta VLT está [disponible en GitHub.](https://github.com/apache/jackrabbit-filevault)
@@ -351,7 +351,7 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 | `-t (--type) <arg>` | especifica el tipo de exportación, ya sea plataforma o jar. |
 | `-p (--prune-missing)` | especifica si se deben eliminar los archivos locales que faltan |
 | `<uri>` | URI de punto de montaje |
-| `<jcrPath>` |  Ruta JCR |
+| `<jcrPath>` | Ruta JCR |
 | `<localPath>` | ruta local |
 
 #### Ejemplos {#examples}
@@ -377,7 +377,7 @@ import -v|-s <uri> <local-path> <jcr-path>
 | `-v (--verbose)` | salida detallada |
 | `-s (-- sync)` | coloca los archivos locales bajo control vault |
 | `<uri>` | URI de punto de montaje |
-| `<jcrPath>` |  Ruta JCR |
+| `<jcrPath>` | Ruta JCR |
 | `<localPath>` | ruta local |
 
 #### Ejemplos {#examples-1}
