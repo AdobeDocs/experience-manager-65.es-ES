@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -35,7 +35,7 @@ Instalación de:
 
 Configuración de:
 
-* **Administradores** de comunidad Para comunidades de habilitación, solo se puede asignar la función de `Community Enablement Managers` a los miembros del grupo de `*Community Site* Enablement Manager`usuarios, cuyos permisos pueden incluir la creación de contenido, las asignaciones y la administración de miembros en el entorno de publicación.
+* **Administradores** de comunidad Para comunidades de habilitación, solo se puede asignar la función de `Community Enablement Managers` a los miembros del grupo de `Community Site Enablement Manager`usuarios, cuyos permisos pueden incluir la creación de contenido, las asignaciones y la administración de miembros en el entorno de publicación.
 
 Configuración opcional de:
 
@@ -51,37 +51,37 @@ Cada paso enlaza a la documentación que proporciona los detalles necesarios.
 
 **En todas las instancias de autor/publicación:**
 
-1. **[instalar controlador JDBC para MySQL](deploy-communities.md#jdbc-driver-for-mysql)**Usar consola web (paquetes):*http://localhost:4502/system/console/bundles*Instalar *antes*de instalar el paquete SCORM
+1. **[Instalar el controlador JDBC para MySQL](deploy-communities.md#jdbc-driver-for-mysql)**Usar consola web (paquetes):*http://localhost:4502/system/console/bundles*Instalar *antes*de instalar el paquete SCORM
 
-1. **[instalar paquete](deploy-communities.md#scorm-package)**SCORM Usar administrador de paquetes:*http://localhost:4502/crx/packmgr/*
+1. **[Instalación del paquete](deploy-communities.md#scorm-package)**SCORM Uso del administrador de paquetes:*http://localhost:4502/crx/packmgr/*
 
 **En cualquier servidor:**
 
-1. **[instalar MySQL, MySQL Workbench](mysql.md)**
+1. **[Instalar MySQL, MySQL Workbench](mysql.md)**
 
-1. **[instalar bases de datos](mysql.md#database-setup)**MySQL Ejecutar secuencias de comandos SQL descargadas de la instancia de autorUsar MySQL Workbench
+1. **[Instalación de bases de datos](mysql.md#database-setup)**MySQL Ejecución de secuencias de comandos SQL descargadas de la instancia de creación Uso de MySQL Workbench
 
 **En la misma instancia de autor de alojamiento de servidor:**
 
-1. **[instalar FFmpeg](ffmpeg.md)**
+1. **[Instalar FFmpeg](ffmpeg.md)**
 
 **En todas las instancias de autor/publicación:**
 
-1. **[configurar el grupo](mysql.md#configure-jdbc-connections)**Conexiones JDBCusar la consola Web (configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[Configurar grupo](mysql.md#configure-jdbc-connections)**de conexiones JDBCusar consola web (configMgr):*http://localhost:4502/system/console/configMgr*
 
-1. **[configurar el servicio](mysql.md#aem-communities-scormengine-service)**de motor SCORM Usar consola web (configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[Configurar el servicio](mysql.md#aem-communities-scormengine-service)**de motor SCORM Usar consola web (configMgr):*http://localhost:4502/system/console/configMgr*
 
-1. **[configurar filtros](mysql.md#adobe-granite-csrf-filter)**CSRF Usar consola web (configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[Configurar filtros](mysql.md#adobe-granite-csrf-filter)**CSRF Usar consola web (configMgr):*http://localhost:4502/system/console/configMgr*
 
 **En la instancia de autor:**
 
-1. (*opcional*) **[configure el servicio](analytics.md)**de AnalyticsUtilice las herramientas, la implementación y la consola de servicios de nube:*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+1. (*Opcional*) **[Configurar el servicio](analytics.md)**de Analytics Usar herramientas, implementación y consola de servicios de nube:*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[configurar la consola Fumpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**Usar flujo de trabajo/modelos
+1. **[Configurar la consola Flujo de trabajo/Modelos de FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**Use
 
-1. **[habilitar servicio](deploy-communities.md#tunnel-service-on-author)**de túnel Usar consola web (configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[Habilitar servicio](deploy-communities.md#tunnel-service-on-author)**de túnel Usar consola web (configMgr):*http://localhost:4502/system/console/configMgr*
 
-1. **[crear administradores](users.md#creating-community-members)**de comunidad Para entorno de creación, utilice la consola de seguridad clásica-UI:*http://localhost:4502/useradmin*crear usuarios con ruta = /home/users/community
+1. **[Crear administradores](users.md#creating-community-members)**de comunidad Para el entorno de creación, utilice la consola de seguridad clásica-UI:*http://localhost:4502/useradmin*crear usuarios con ruta = /home/users/community
 
    * Agregue miembros a los siguientes grupos:
 
@@ -90,4 +90,4 @@ Cada paso enlaza a la documentación que proporciona los detalles necesarios.
 
 ## Dispatcher {#dispatcher}
 
-Cuando la implementación incluye Dispatcher [de](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, para que las funciones de habilitación funcionen correctamente, es necesario modificar las `clientheader`secciones `filter`y . Consulte [Configuración de Dispatcher para Comunidades](dispatcher.md#enablement).
+Cuando la implementación incluye Dispatcher [de](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, para que las funciones de habilitación funcionen correctamente, es necesario modificar las secciones `clientheader` y `filter` . Consulte [Configuración de Dispatcher para Comunidades](dispatcher.md#enablement).
