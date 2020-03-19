@@ -10,14 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Consolas de comunidades {#communities-consoles}
 
-Las consolas Comunidades de AEM, disponibles en el entorno de creación desde el panel de navegación global, permiten acceder a tareas administrativas como
+Las consolas Comunidades de AEM, disponibles en el entorno de creación desde el panel de navegación global, permiten acceder a tareas administrativas como:
 
 * [Creación de un sitio de comunidad](sites-console.md)
 * Adición de [grupos](groups.md) anidados dentro del sitio
@@ -33,7 +33,7 @@ En el entorno de creación, tras iniciar sesión con privilegios de administrado
 
 >[!NOTE]
 >
->En el entorno de publicación, un sitio [de](sites-console.md) comunidad mostrará un elemento de `Administration`menú cuando el miembro que haya iniciado sesión tenga los privilegios adecuados.
+>En el entorno de publicación, un sitio [de](sites-console.md) comunidad mostrará un elemento de `Administration` menú cuando el miembro que haya iniciado sesión tenga los privilegios adecuados.
 
 ## Panel de navegación global {#global-navigation-panel}
 
