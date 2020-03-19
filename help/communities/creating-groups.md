@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Grupos de la comunidad{#community-groups}
+# Grupos de la comunidad {#community-groups}
 
 La función de grupos de comunidad es la capacidad para que una subcomunidad sea creada dinámicamente dentro de un sitio de comunidad por usuarios autorizados (miembros de la comunidad y autores) desde los entornos de publicación y creación.
 
@@ -26,39 +26,51 @@ Una plantilla [de grupo de](/help/communities/tools-groups.md) comunidad proporc
 
 Se seleccionan una o varias plantillas de grupo para la función de grupo cuando la función se agrega a la estructura de un sitio de comunidad o a una plantilla de sitio de comunidad. Esta lista de plantillas de grupo se presenta al miembro o autor que crea dinámicamente un nuevo grupo desde el sitio de la comunidad.
 
-## Creación de un nuevo grupo {#creating-a-new-group}
+## Creating a New Group {#creating-a-new-group}
 
 La capacidad de crear un nuevo grupo de comunidad depende de la existencia de un sitio de comunidad que incluya la función de grupos, como uno creado a partir del ` [Reference Site Template](/help/communities/sites.md)`.
 
 Los ejemplos que siguen utilizan el sitio de comunidad creado a partir del `Reference Site Template` informe, tal como se describe en el tutorial [Introducción a las comunidades](/help/communities/getting-started.md) de AEM.
 
-Esta es la página que se carga al publicar cuando se selecciona el elemento de menú **Groups **menu:
+Esta es la página que se carga al publicar cuando se selecciona el elemento de menú **Grupos** :
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 Al seleccionar el icono **Nuevo grupo** , se abre un cuadro de diálogo de edición.
 
-En la ficha **Configuración **, se proporcionan las funciones básicas del grupo:
+En la ficha **Configuración** , se proporcionan las funciones básicas del grupo:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-* **Nombre** del grupo El título del grupo que se mostrará en el sitio de la comunidad.
+* **Nombre del grupo**
 
-* **Descripción** Una descripción del grupo que se mostrará en el sitio de la comunidad.
+   Título del grupo que se mostrará en el sitio de la comunidad.
 
-* **Invitar** una lista de miembros para invitar a unirse al grupo. La búsqueda de tipo por adelantado proporcionará sugerencias de los miembros de la comunidad que invitar.
+* **Descripción**
 
-* **Nombre** de la dirección URL del grupo El nombre de la página del grupo que forma parte de la dirección URL.
+   Descripción del grupo que se va a mostrar en el sitio de la comunidad.
 
-* **Abrir grupo** Al seleccionar `Open Group` se indica que cualquier visitante anónimo del sitio puede ver el contenido y se anula la selección `Member Only Group`.
+* **Invitar**
 
-* **La opción Grupo** de solo miembros `Member Only Group` indica que solo los miembros del grupo pueden ver el contenido y se anula la selección `Open Group`.
+   Lista de miembros a los que se invitará a unirse al grupo. La búsqueda de tipo por adelantado proporcionará sugerencias de los miembros de la comunidad que invitar.
 
-En la **Plantilla **ficha es la capacidad de seleccionar de la lista de plantillas de grupo de comunidad que se especificaron cuando la función de grupo se incluyó en la estructura del sitio de comunidad o en una plantilla de sitio de comunidad.
+* **Nombre de URL del grupo**
+
+   Nombre de la página de grupo que forma parte de la dirección URL.
+
+* **Abrir grupo**
+
+   La selección `Open Group` indica que cualquier visitante anónimo del sitio puede ver el contenido y se anula la selección `Member Only Group`.
+
+* **Grupo de solo miembros**
+
+   Si selecciona `Member Only Group` se indica que solo los miembros del grupo pueden ver el contenido y se anula la selección `Open Group`.
+
+En la ficha **Plantilla** se encuentra la capacidad de seleccionar de la lista de plantillas de grupo de comunidad que se especificaron cuando la función de grupo se incluyó en la estructura del sitio de comunidad o en una plantilla de sitio de comunidad.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-En la **Imagen **ficha se muestra la capacidad de cargar una imagen para que se muestre en el grupo en la página Grupos del sitio de la comunidad. La hoja de estilo predeterminada ajustará el tamaño de la imagen a 170 x 90 píxeles.
+En la ficha **Imagen** se encuentra la posibilidad de cargar una imagen para que se muestre en el grupo en la página Grupos del sitio de la comunidad. La hoja de estilo predeterminada ajustará el tamaño de la imagen a 170 x 90 píxeles.
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
