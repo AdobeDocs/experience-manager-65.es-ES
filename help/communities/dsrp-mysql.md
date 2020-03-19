@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -125,8 +125,8 @@ La secuencia de comandos SQL se obtiene del repositorio de AEM:
 
 Un método para descargar el esquema es
 
-* Seleccione el `jcr:content`nodo para el archivo sql
-* Observe que el valor de la `jcr:data`propiedad es un vínculo de vista
+* Seleccione el `jcr:content` nodo para el archivo sql
+* Observe que el valor de la `jcr:data` propiedad es un vínculo de vista
 
 * Seleccione el vínculo de vista para guardar los datos en un archivo local
 
@@ -155,7 +155,7 @@ En la siguiente imagen, el `init_schema.sql` archivo está listo para ejecutarse
 
 #### Actualizar {#refresh}
 
-Una vez ejecutada la secuencia de comandos, es necesario actualizar la `SCHEMAS`sección de la `Navigator` para poder ver la nueva base de datos. Utilice el icono de actualización a la derecha de &#39;SCHEMAS&#39;:
+Una vez ejecutada la secuencia de comandos, es necesario actualizar la `SCHEMAS` sección de la `Navigator` para ver la nueva base de datos. Utilice el icono de actualización a la derecha de &#39;SCHEMAS&#39;:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
