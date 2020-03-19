@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -69,7 +69,7 @@ Esto iniciará un servidor MongoDB utilizando el puerto predeterminado 27017.
 
 >[!NOTE]
 >
->Si MongoDB se inicia *después de *AEM, **reiniciar **todo **AEM **instancias para que se conecten correctamente a MongoDB.
+>Si MongoDB se inicia *después* de AEM, **reinicie** todas las instancias de **AEM** para que se conecten correctamente a MongoDB.
 
 ### Opción de producción de demostración: Configurar conjunto de réplicas de MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -97,7 +97,7 @@ Los siguientes comandos son un ejemplo de configuración de un conjunto de répl
 
    * Adecuado para cualquier SO
    * Utilice la versión 4.10 o la versión 5
-   * Solr requiere Java 1.7 o superior
+   * Solr requiere Java 1.7 o bueno
 
 * Configuración básica
 
