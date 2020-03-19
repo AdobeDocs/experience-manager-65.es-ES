@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Función Flujos de actividad{#activity-streams-feature}
+# Función Flujos de actividad {#activity-streams-feature}
 
 ## Introducción {#introduction}
 
@@ -26,8 +26,8 @@ La capacidad de seguir agrega otra visión de las actividades cuando los miembro
 
 El documento describe:
 
-* adición del componente Flujos de actividad a un sitio de AEM
-* configuración del componente Flujos de actividad
+* Adición del componente Flujos de actividad a un sitio de AEM
+* Configuración del componente Flujos de actividad
 
 ### Adición de flujos de actividad a una página {#adding-activity-streams-to-a-page}
 
@@ -53,15 +53,25 @@ En la ficha Actividades **** del usuario, especifique qué actividades mostrar:
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-* **Número máximo de actividades** Número máximo de actividades para mostrar
+* **Número máximo de actividades**
 
-* **Ruta** de recursos de flujo Deje en blanco para establecer de forma predeterminada el sitio de comunidad o el grupo de comunidad. La ruta del recurso de flujo identifica el origen de las actividades. El valor predeterminado está en blanco.
+   El número de actividades que se van a mostrar
 
-* **Mostrar vista** de actividades del usuario si está activada, la página de actividades incluirá una ficha que filtra las actividades en función de las generadas en la comunidad por el miembro actual. El valor predeterminado está marcado.
+* **Ruta de medio de flujo**
 
-* **Mostrar todas las actividades** si se activa, la página de actividades incluirá una ficha que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
+   Déjelo en blanco para acceder de forma predeterminada al sitio de comunidad o al grupo de comunidad. La ruta del recurso de flujo identifica el origen de las actividades. El valor predeterminado está en blanco.
 
-* **Mostrar vista** siguiente si está activada, la página de actividades incluirá una ficha que filtra las actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
+* **Mostrar vista de actividades de usuario**
+
+   Si se selecciona, la página de actividades incluirá una ficha que filtra las actividades en función de las generadas en la comunidad por el miembro actual. El valor predeterminado está marcado.
+
+* **Mostrar vista de todas las actividades**
+
+   Si se selecciona, la página de actividades incluirá una ficha que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
+
+* **Mostrar la vista siguiente**
+
+   Si se selecciona, la página de actividades incluirá una ficha que filtra las actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
 
 ### Vista siguiente {#following-view}
 
@@ -69,11 +79,11 @@ Los componentes deben configurarse para habilitar lo siguiente. Las funciones qu
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-El botón **Seguir **proporciona un medio para seguir las entradas como actividades, [notificaciones](/help/communities/notifications.md)o [suscripciones](/help/communities/subscriptions.md). Cada vez que se selecciona el botón **Seguir **se puede activar o desactivar una selección. La `Email Subscriptions` selección solo está presente cuando está configurada.
+El botón **Seguir** proporciona un medio para seguir las entradas como actividades, [notificaciones](/help/communities/notifications.md)o [suscripciones](/help/communities/subscriptions.md). Cada vez que se selecciona el botón **Seguir** , es posible activar o desactivar una selección. La `Email Subscriptions` selección solo está presente cuando está configurada.
 
 Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguiente**. Para mayor comodidad, es posible seleccionar `Unfollow All` desactivar todos los métodos.
 
-Aparecerá el botón **Seguir **
+Aparecerá el botón **Seguir** .
 
 * al ver el perfil de otro miembro
 * en una página de características principal, como foros, QnA y blogs
