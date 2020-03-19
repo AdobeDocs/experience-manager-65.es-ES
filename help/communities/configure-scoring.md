@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d522c5ec6c72a9fd391d021f2fac37f88c686bd9
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Esenciales de puntuación y distintivos{#scoring-and-badges-essentials}
+# Esenciales de puntuación y distintivos {#scoring-and-badges-essentials}
 
 La función de puntuación y distintivos de comunidades de AEM permite identificar y premiar a los miembros de la comunidad.
 
@@ -26,9 +26,9 @@ Los detalles de la configuración de la función se describen en
 
 Esta página contiene detalles técnicos adicionales:
 
-* cómo [mostrar un distintivo](#displaying-badges) como imagen o texto
-* cómo activar el registro [de depuración extenso](#debug-log-for-scoring-and-badging)
-* cómo [acceder a UGC](#ugc-for-scoring-and-badging) en relación con la puntuación y la insignia
+* Cómo [mostrar un distintivo](#displaying-badges) como imagen o texto
+* Cómo activar el registro [de depuración extenso](#debug-log-for-scoring-and-badging)
+* Cómo [acceder a UGC](#ugc-for-scoring-and-badging) en relación con la puntuación y la insignia
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ Esta página contiene detalles técnicos adicionales:
 
 Indica si un distintivo se muestra como texto o como imagen y se controla en el lado del cliente en la plantilla HBS.
 
-Por ejemplo: buscar `this.isAssigned` en `/libs/social/forum/components/hbs/topic/list-item.hbs`, :
+Por ejemplo, busque `this.isAssigned` en `/libs/social/forum/components/hbs/topic/list-item.hbs`:
 
 ```
 {{#each author.badges}}
@@ -80,40 +80,40 @@ Para obtener instrucciones detalladas, visite [Crear un archivo](/help/sites-dep
 
 Para configurar rápidamente un archivo de registro de inclinación:
 
-1. acceder, por ejemplo, a la compatibilidad **de registro de la consola web de** Adobe Experience Manager
+1. Acceda, por ejemplo, a la compatibilidad **del registro de la consola web de** Adobe Experience Manager
 
    * https://localhost:4502/system/console/slinglog
 
-1. seleccionar **Agregar nuevo registrador**
+1. Seleccione **Agregar nuevo registrador**
 
-   1. seleccionar `DEBUG`para el nivel **de registro**
+   1. Seleccionar `DEBUG` para nivel **de registro**
 
-   1. escriba un nombre para el archivo **de registro**, por ejemplo
+   1. Escriba un nombre para el archivo **de registro**, por ejemplo
 
       * logs/scoring-debug.log
-   1. introduzca dos entradas **Logger **(clase) (con `+` icono)
+   1. Introduzca dos entradas **Logger** (clase) (mediante `+` icono)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
-   1. select **Save**
+   1. Seleccione **Guardar**
 
 
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-Para ver las entradas de registro
+Para ver las entradas de registro:
 
-* desde la consola web
+* Desde la consola web
 
-   * en el menú **Estado **menú
-   * seleccionar archivos **de registro**
-   * busque el nombre del archivo de registro, como `scoring-debug`
+   * En el menú **Estado**
+   * Seleccionar archivos **de registro**
+   * Busque el nombre del archivo de registro, como `scoring-debug`
 
-* en el disco local del servidor
+* En el disco local del servidor
 
-   * el archivo de registro se encuentra en &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+   * El archivo de registro se encuentra en &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * for example, `.../crx-quickstart/logs/scoring-debug.log`
+   * Por ejemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -123,9 +123,9 @@ Es posible ver el UGC relacionado con la puntuación y la insignia cuando el SRP
 
 Las descripciones para acceder a los datos de puntuación y marca utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP en el autor** : experimentar en el entorno de creación resulta en UGC que solo es visible desde el entorno de creación.
+**JSRP del autor**: experimentar en el entorno de creación resulta en UGC que solo es visible desde el entorno de creación.
 
-**JSRP al publicar** : del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios administrativos en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](/help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios administrativos en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](/help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 La ubicación de base de UGC en el JSRP es `/content/usergenerated/asi/jcr/`.
 
@@ -146,12 +146,12 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
 1. Un sitio de AEM *con* un identificador único (sitio de comunidad creado con el asistente):
 
-* uso del sitio Tutorial de introducción (participación) creado durante el tutorial de [introducción](/help/communities/getting-started.md)
-* localice el nodo de la página del foro
+   * Uso del sitio Tutorial de introducción (participación) creado durante el tutorial de [introducción](/help/communities/getting-started.md)
+   * Localizar el nodo de la página del foro
 
-   * `/content/sites/engage/en/forum/jcr:content`
+      `/content/sites/engage/en/forum/jcr:content`
 
-* agregar propiedades de puntuación y de marca
+   * Adición de propiedades de puntuación y de marca
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -163,25 +163,26 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* localice el nodo del componente del foro
+   * Localización del nodo del componente del foro
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* agregar propiedad para mostrar distintivos
+   * Agregar propiedad para mostrar distintivos
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* un usuario inicia sesión, crea un tema del foro y recibe una insignia de bronce
+   * Un usuario inicia sesión, crea un tema del foro y recibe una insignia de bronce
+
 
 1. Un sitio de AEM *sin* una identificación única:
 
-* uso de la guía Componentes [de comunidad](/help/communities/components-guide.md)
-* localice el nodo de la página del foro
+   * Uso de la guía Componentes [de comunidad](/help/communities/components-guide.md)
+   * Localizar el nodo de la página del foro
 
-   * `/content/community-components/en/forum/jcr:content`
+      `/content/community-components/en/forum/jcr:content`
 
-* agregar propiedades de puntuación y de marca
+   * Adición de propiedades de puntuación y de marca
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -193,24 +194,25 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* localice el nodo del componente del foro
+   * Localización del nodo del componente del foro
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+      `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* agregar propiedad para mostrar distintivos
+   * Agregar propiedad para mostrar distintivos
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* un usuario inicia sesión, crea un tema del foro y recibe una insignia de bronce
+   * Un usuario inicia sesión, crea un tema del foro y recibe una insignia de bronce
 
-1. a un usuario se le asigna una insignia de moderador mediante cURL:
 
-```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
-```
+1. A un usuario se le asigna una insignia de moderador mediante cURL:
 
-Como un usuario ha ganado dos insignias de bronce y ha recibido una insignia de moderador, así es como aparece el usuario con su entrada en el foro :
+   ```shell
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   ```
+
+   Como un usuario ha ganado dos insignias de bronce y ha recibido una insignia de moderador, así es como aparece el usuario con su entrada en el foro.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -218,13 +220,13 @@ Como un usuario ha ganado dos insignias de bronce y ha recibido una insignia de 
 >
 >Este ejemplo no sigue estas optimizaciones:
 >
->* los nombres de las reglas de puntuación deben ser globalmente únicos; no deben terminar con el mismo nombre.
-   >  Un ejemplo de lo que *no *hacer :
+>* Los nombres de las reglas de puntuación deben ser únicos globalmente; no deben terminar con el mismo nombre.
+   >  Un ejemplo de lo que *no* hay que hacer:
    >  /etc/community/scoring/rules/site1/forums-scoring
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
    >
-* creación de imágenes de distintivo únicas para distintos sitios de AEM
+* Creación de imágenes de distintivo únicas para distintos sitios de AEM
 >
 
 
@@ -237,7 +239,7 @@ Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-El nodo secundario de `scoring`es el nombre de la regla de puntuación. Por lo tanto, una práctica recomendada es que los nombres de las reglas de puntuación en un servidor sean globalmente únicos.
+El nodo secundario de `scoring` es el nombre de la regla de puntuación. Por lo tanto, una práctica recomendada es que los nombres de las reglas de puntuación en un servidor sean globalmente únicos.
 
 Para el sitio de participación de Geometrixx, el usuario y su puntuación se encuentran en una ruta con el nombre de la regla de puntuación, la identificación del sitio de la comunidad ( `engage-ba81p`), una identificación única y la identificación del usuario:
 
@@ -257,17 +259,17 @@ Se prefiere el uso de las [API](#scoring-and-badging-apis) .
 
 Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene información sobre las insignias asignadas o adjudicadas es
 
-* /content/usergenerate/asi/jcr
+* `/content/usergenerated/asi/jcr`
 
 Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distintivos, como
 
-* /home/users/community/w271OOup2Z4DjnOQrviv/profile/badges
+* `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
-#### distintivo galardonado {#awarded-badge}
+#### Distintivo concedido {#awarded-badge}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-#### distintivo asignado {#assigned-badge}
+#### Distintivo asignado {#assigned-badge}
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
