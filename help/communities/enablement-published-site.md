@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -27,7 +27,7 @@ Ahora que el sitio de la comunidad recién creado y sus recursos de habilitació
 
 Comience navegando hasta la dirección URL que se muestra al crear el sitio, pero en el servidor de publicación, p. ej.
 
-* URL de autor = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
+* URL del autor = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL de publicación = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
 Si la página principal [predeterminada estaba configurada](enablement-create-site.md#changethedefaulthomepage), entonces simplemente navegando a [http://localhost:4503/](http://localhost:4503/) debería iniciar el sitio.
@@ -36,7 +36,7 @@ Al llegar por primera vez al sitio publicado, el visitante del sitio no suele ha
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-432](assets/chlimage_1-433.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ## Visitante anónimo del sitio {#anonymous-site-visitor}
 
@@ -153,7 +153,7 @@ Iniciar sesión con
 * `Username: quinn`
 * `Password: password`
 
-Una vez que haya iniciado sesión, observe que hay un nuevo elemento de menú, que aparece `Administration`porque se le ha dado al miembro la función de moderador.
+Una vez que haya iniciado sesión, observe que hay un nuevo elemento de menú, que `Administration`aparece porque se le ha dado al miembro la función de moderador.
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
@@ -161,7 +161,7 @@ La página principal se identifica mediante el primer elemento de menú, Asignac
 
 ### Administración {#administration}
 
-Lo que hay, es la actividad de los dos alumnos `Riley Taylor` y `Sidney Croft. By s`al seleccionar el `Administration`vínculo para acceder a la consola de moderación, Quinn puede utilizar la consola [de moderación](moderation.md) masiva para moderar sus publicaciones.
+Lo que hay es la actividad de los dos alumnos `Riley Taylor` y `Sidney Croft`. Al seleccionar el `Administration` vínculo para acceder a la consola de moderación, Quinn puede utilizar la consola [de moderación](moderation.md) masiva para moderar sus publicaciones.
 
 Al seleccionar el icono del panel lateral, se abren los filtros utilizados para buscar contenido de comunidad.
 
@@ -203,8 +203,8 @@ Con un poco de actividad e interacción con los recursos al publicar, vale la pe
 * Iniciar sesión con privilegios administrativos
 * Vaya del menú principal a **[!UICONTROL Comunidades > Recursos]**
 * Seleccionar el `Enablement Tutorial` sitio
-* Seleccione el `Report`icono para ver un resumen de todos los recursos
-* Seleccione un recurso y, a continuación, el `Report`icono de un informe sobre ese recurso
+* Seleccione el icono `Report` para ver un resumen de todos los recursos
+* Seleccione un recurso y, a continuación, el icono `Report` de un informe sobre ese recurso
 
 Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, que pueden tardar de 1 a 12 horas en aparecer. Sin embargo, los informes SCORM básicos ya están disponibles.
 
@@ -218,7 +218,7 @@ Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, qu
 
 * Abrir tarjeta `Enablement Tutorial`
 * Abrir tarjeta `Ski Lessons`
-* `select Report, User Report`
+* Seleccione `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
