@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# ASRP - Proveedor de recursos de almacenamiento de Adobe{#asrp-adobe-storage-resource-provider}
+# ASRP - Proveedor de recursos de almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Acerca de ASRP {#about-asrp}
 
@@ -45,26 +45,28 @@ La consola [Configuración](/help/communities/srp-config.md) de almacenamiento p
 
 **En la instancia de AEM Author:**
 
-* En la navegación global (Herramientas, Comunidades, Configuración de almacenamiento), seleccione** Proveedor de recursos de almacenamiento de Adobe (ASRP).**
+* En la navegación global, vaya a Herramientas de control **[UIC > Comunidades > Configuración]** de almacenamiento y seleccione **[Control de usuarios de Adobe Storage Resource Provider (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
 La siguiente información proviene del proceso de aprovisionamiento:
 
-* **URL del centro de datos. **Desplegable para seleccionar el centro de datos de producción identificado por el representante de cuentas.
-* **Grupo de informes predeterminado. **Escriba el nombre del grupo de informes predeterminado.
-* **Clave de consumidor**. Introduzca la clave de consumidor.
-* **Secreto. **Escribe el secreto.
-* Seleccione **Enviar.**
+* **Dirección URL** del centro de datos: Despliegue para seleccionar el centro de datos de producción identificado por el representante de cuentas.
+* **Grupo** de informes predeterminado: Escriba el nombre del grupo de informes predeterminado.
+* **Clave** de consumidor: Introduzca la clave de consumidor.
+* **Secreto**: Escribe el secreto.
+* Seleccione **Enviar**.
 
 Prepare las instancias de publicación:
 
-* [replicar la clave criptográfica](#replicate-the-crypto-key)
-* [replicar la configuración](#publishing-the-configuration)
+* [Replicar la clave criptográfica](#replicate-the-crypto-key)
+* [Replicar la configuración](#publishing-the-configuration)
 
 Después de enviar la configuración, pruebe la conexión:
 
-* Seleccione **Probar configuración**. Para cada instancia de creación y publicación, pruebe la conexión al centro de datos desde la consola de configuración de almacenamiento.
+* Seleccione **Probar configuración**.
+
+   Para cada instancia de creación y publicación, pruebe la conexión al centro de datos desde la consola de configuración de almacenamiento.
 
 * Asegúrese de que las direcciones URL del sitio para los datos de perfil se pueden enrutar desde el centro de datos [externalizando los vínculos](#externalize-links).
 
@@ -92,20 +94,19 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 
 En la instancia de AEM Author:
 
-* Vaya del menú principal a `Tools > Operations > Replication.`
-* Seleccione **Activar árbol.**
-* **Ruta de inicio:
-**examinar /etc/socialconfig/srpc/
-* Anule la selección de **Solo modificado.**
-* Seleccione **Activar.**
+* Vaya del menú principal a Herramientas de control **[UIC > Operaciones > Replicación]**.
+* Seleccione **Activar árbol**
+* **Ruta** de inicio: buscar `/etc/socialconfig/srpc/`
+* Anular selección de **sólo modificado**
+* Seleccionar **activar**
 
 ## Actualización desde AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
->Si habilita ASRP en un sitio de comunidad publicado, ya no se podrá ver ningún UGC almacenado en [](/help/communities/jsrp.md)JCR, ya que no hay sincronización de datos entre el almacenamiento local y el almacenamiento en la nube.
+>Si habilita ASRP en un sitio de comunidad publicado, ya no se podrá ver ningún UGC almacenado en [JCR](/help/communities/jsrp.md) , ya que no hay sincronización de datos entre el almacenamiento local y el almacenamiento en la nube.
 
-**`AEM Communities Extension`**Se introdujo anteriormente en las comunidades sociales de AEM 6.0 como servicio de nube. A partir de AEM 6.1 Communities, no es necesaria ninguna configuración de nube, simplemente seleccione ASRP en la consola [de configuración de](/help/communities/srp-config.md)almacenamiento.
+**`AEM Communities Extension`** anteriormente se introdujo en las comunidades sociales de AEM 6.0 como un servicio en la nube. A partir de AEM 6.1 Communities, no es necesaria ninguna configuración de nube, simplemente seleccione ASRP en la consola [de configuración de](/help/communities/srp-config.md)almacenamiento.
 
 Debido a la nueva estructura de almacenamiento, es necesario seguir las instrucciones de [actualización](/help/communities/upgrade.md#adobe-cloud-storage) al actualizar de comunidades sociales a comunidades.
 
@@ -142,6 +143,6 @@ En todas las instancias de AEM de creación y publicación, vuelva a la consola 
 
 En JCR, si [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* no contiene un nodo [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa que el proveedor de almacenamiento es JSRP.
+* No contiene un nodo [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa que el proveedor de almacenamiento es JSRP.
 * Si el nodo srpc existe y contiene la configuración [predeterminada](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)del nodo, las propiedades de configuración predeterminada definen ASRP como el proveedor predeterminado.
 
