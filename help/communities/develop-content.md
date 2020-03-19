@@ -10,15 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Desarrollar contenido de Simulador para pruebas {#develop-sandbox-content}
 
-**[⇐ Agregar Clientlibs](add-clientlibs.md)**
+**[Agregar Clientlibs](add-clientlibs.md)**
 
 En este punto, es posible explorar las características de la comunidad en el simulador de pruebas junto con el uso de [We-Retail Community](../../help/sites-developing/we-retail.md), la Guía [de componentes de la](components-guide.md) comunidad y los elementos esenciales [de](essentials.md) las funciones.
 
-**[⇐ Agregar Clientlibs](add-clientlibs.md)**
+
