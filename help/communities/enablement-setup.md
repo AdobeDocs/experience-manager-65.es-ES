@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -23,8 +23,8 @@ Para fines de desarrollo y demostración, será necesario ejecutar un autor y un
 
 Siga las instrucciones básicas de [introducción](../../help/sites-deploying/deploy.md#getting-started) de AEM que resultarán en
 
-* entorno de creación en [localhost:4502](http://localhost:4502/)
-* entorno de publicación en [localhost:4503](http://localhost:4503/)
+* Entorno de creación en [localhost:4502](http://localhost:4502/)
+* Entorno de publicación en [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
 
@@ -123,10 +123,10 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 
 [Cree un miembro](members.md#create-new-member) que se agregará a un grupo de alumnos: el grupo Clase de esquí de la comunidad.
 
-* **ID**:riley
+* **ID**: riley
 * **Correo electrónico**: riley.taylor@mailinator.com
-* **Contraseña**:password
-* **Confirmar contraseña**:password
+* **Contraseña**: password
+* **Confirmar contraseña**: password
 * **Nombre**: Riley
 * **Apellido**: Taylor
 
@@ -136,8 +136,8 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 
 * **ID**: sidney
 * **Correo electrónico**: sidney.croft@mailinator.com
-* **Contraseña**:password
-* **Confirmar contraseña**:password
+* **Contraseña**: password
+* **Confirmar contraseña**: password
 * **Nombre**: Sidney
 * **Apellido**: Recortar
 
@@ -147,8 +147,8 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 
 * **ID**: quinn
 * **Correo electrónico**: quinn.harper@mailinator.com
-* **Contraseña**:password
-* **Confirmar contraseña**:password
+* **Contraseña**: password
+* **Confirmar contraseña**: password
 * **Nombre**: Quinn
 * **Apellido**: Harper
 
@@ -162,7 +162,7 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 * **Agregar miembros al grupo** &#39;agregar&#39;:
 
    * riley
-   *  sidney
+   * sidney
 
 * Seleccione **[!UICONTROL Guardar]**
 
@@ -197,8 +197,8 @@ Cree un usuario en el *autor*, al que se le asigna la función de administrador 
 
    * **ID&amp;Último;**: sirius
    * **Dirección** de correo electrónico: sirius.nilson@mailinator.com
-   * **Contraseña&amp;Último;**:password
-   * **Confirmar contraseña&amp;Último;**:password
+   * **Contraseña&amp;Último;**: password
+   * **Confirmar contraseña&amp;Último;**: password
    * **Nombre**: Sirius
    * **Apellido&amp;ma;Último;**: Nilson
 
