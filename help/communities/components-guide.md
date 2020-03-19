@@ -10,12 +10,12 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Guía de componentes de comunidad {#community-components-guide}
+# Guía de componentes de comunidad  {#community-components-guide}
 
 La guía de componentes comunitarios es una herramienta de desarrollo interactiva para el marco de componentes [sociales (SCF)](scf.md). Proporciona una lista de los componentes de comunidades AEM disponibles o de las funciones más complejas creadas con varios componentes.
 
@@ -118,7 +118,7 @@ Al utilizar la guía en una instancia de publicación, es posible experimentar l
 
 >[!NOTE]
 >
->Tenga en cuenta que, si el SRP se deja como predeterminado en [JSRP](jsrp.md), el UGC introducido en la instancia de publicación solo será visible durante la publicación y *no será visible desde la consola de [moderación](moderate-ugc.md) en la instancia de autor.
+>Tenga en cuenta que, si el SRP se deja como predeterminado en [JSRP](jsrp.md), el UGC introducido en la instancia de publicación solo será visible durante la publicación y *no será* visible desde la consola de [moderación](moderate-ugc.md) en la instancia de autor.
 
 ## Bibliotecas del cliente {#client-side-libraries}
 
