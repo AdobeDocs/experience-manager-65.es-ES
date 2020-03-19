@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e776d1f7a9433e80633cdcfdf5ffed37b29da
+source-git-commit: 4f3928558641af89d138bfbf85ba099a4286b2f3
 
 ---
 
@@ -203,7 +203,6 @@ Asegúrese de que ha realizado los siguientes pasos:
 >
 > Asegúrese de que la configuración esté correcta. En caso de que la configuración no esté en buen estado, elimínela y cree una nueva configuración en buen estado.
 
-<br/> <br/>
 
 ### Configurar servicio de nube {#configure-the-cloud-service}
 
