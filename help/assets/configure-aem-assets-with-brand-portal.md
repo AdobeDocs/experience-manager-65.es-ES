@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 36e9743b8b41d53e735dce4ba13c986ea22e612b
+source-git-commit: f63e776d1f7a9433e80633cdcfdf5ffed37b29da
 
 ---
 
@@ -190,9 +190,6 @@ Asegúrese de que ha realizado los siguientes pasos:
 
    ![Configuración de cuenta de IMS](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >Cree una sola configuración de IMS. No cree varias configuraciones de IMS.
 
 1. Seleccione la configuración de IMS y haga clic en **[!UICONTROL Comprobar estado]**. Aparecerá un cuadro de diálogo.
 
@@ -200,7 +197,13 @@ Asegúrese de que ha realizado los siguientes pasos:
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+>
+>Cree sólo una configuración IMS válida. No cree varias configuraciones de IMS.
+>
+> Asegúrese de que la configuración esté correcta. En caso de que la configuración no esté en buen estado, elimínela y cree una nueva configuración en buen estado.
+
+<br/> <br/>
 
 ### Configurar servicio de nube {#configure-the-cloud-service}
 
