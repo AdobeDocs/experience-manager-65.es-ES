@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 2de88b55-dda9-4ccf-ad4d-dd67943ef610
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Función Asignaciones{#assignments-feature}
+# Función Asignaciones {#assignments-feature}
 
 Los componentes Asignaciones de habilitación y Catálogo [de](/help/communities/catalog.md) habilitación que se encuentran en el grupo Comunidades en el navegador de componentes son componentes de una comunidad [de](/help/communities/overview.md#enablement-community)habilitación.
 
