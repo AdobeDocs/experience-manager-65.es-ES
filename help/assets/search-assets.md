@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -30,9 +30,7 @@ AEM admite los siguientes casos de uso y en este artículo se describen el uso, 
 
 Busque recursos utilizando el campo Omniture en la parte superior de la interfaz web de AEM. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en AEM, haga clic en el icono de búsqueda de la barra superior, introduzca la palabra clave de búsqueda y pulse Retorno. Alternativamente, utilice el método abreviado de palabra clave / (barra diagonal) para abrir el campo Omniture Search. Ubicación:Recursos está preseleccionado para limitar las búsquedas a recursos DAM. AEM proporciona sugerencias para empezar a escribir una palabra clave de búsqueda.
 
-Utilice el panel **[!UICONTROL Filtros]** para limitar la búsqueda filtrando los resultados de la búsqueda según las distintas opciones (predicados), como el tipo de archivo, el tamaño de archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Los administradores pueden personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas de búsqueda.
-
-Tenga en cuenta que el filtro Tipo [!UICONTROL de] archivo del panel [!UICONTROL Filtros] tiene casillas de verificación de estados mixtos, lo que significa que, a menos que seleccione todos los predicados anidados (o formatos), las casillas de verificación de primer nivel no están seleccionadas y, en su lugar, están marcadas.
+Utilice el panel **[!UICONTROL Filtros]** para limitar la búsqueda filtrando los resultados de la búsqueda según las distintas opciones (predicados), como el tipo de archivo, el tamaño de archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Los administradores pueden personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas de búsqueda. El filtro Tipo [!UICONTROL de] archivo del panel [!UICONTROL Filtros] tiene casillas de verificación de varios estados. Por lo tanto, a menos que seleccione todos los predicados anidados (o formatos), las casillas de verificación de primer nivel no se seleccionan y, en su lugar, se rompen.
 
 La función de búsqueda de AEM admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/managing-collections-touch-ui.md).
 
@@ -248,7 +246,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 *Figura: Examinar y seleccionar recursos en el selector de recursos*
 
-## Restricciones   {#limitations}
+## Restricciones    {#limitations}
 
 La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
 
