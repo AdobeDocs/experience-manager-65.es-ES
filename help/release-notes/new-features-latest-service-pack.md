@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
+source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
 
 ---
 
@@ -17,6 +17,8 @@ El último Service Pack 4 de AEM (6.5.4.0) está disponible el 5 **de marzo de 2
 
 ## AEM Sites {#aem-sites}
 
+AEM 6.5.4.0 incluye mejoras en el sistema de estilos. Ahora puede seleccionar estilos en el cuadro de diálogo del componente.
+
 ### Mejoras en el rendimiento en diversas esferas {#performance-improvements}
 
 * Se ha reducido el tiempo para cargar e inicializar ContextHub en un sitio (`contexthub.kernel.js`). Esto resulta en cargas de página más rápidas durante una visita al sitio.
@@ -26,8 +28,6 @@ El último Service Pack 4 de AEM (6.5.4.0) está disponible el 5 **de marzo de 2
 * Se ha reducido el tiempo de carga de las entradas en una página Sitios con más de 200 copias activas en **[!UICONTROL Live Copy Overview]**.
 
 * Se mejoró la administración de direcciones URL incompletas o no válidas. Estas direcciones URL pueden ralentizar el Editor de plantillas.
-
-Además, AEM 6.5.4.0 incluye mejoras en el sistema de estilos. Ahora puede seleccionar estilos en el cuadro de diálogo del componente.
 
 ## AEM Assets {#aem-assets}
 
@@ -116,16 +116,19 @@ Tiene la opción de especificar una fecha y hora de inicio y una fecha y hora de
 
 Puede utilizar la API por lotes para generar varias comunicaciones interactivas a partir de una plantilla. La plantilla es una comunicación interactiva sin datos. La API de lote combina datos con una plantilla para generar una comunicación interactiva. La API es útil en la producción masiva de comunicaciones interactivas. Por ejemplo: facturas telefónicas, extractos de tarjetas de crédito para varios clientes. Consulte [Generación de varias comunicaciones interactivas mediante la API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)por lotes.
 
-
-
 ## Versiones clave desde AEM 6.5 SP3
 
 Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las siguientes funciones que están fuera del producto principal de AEM:
 
-* AEM Cloud Manager 2020.1.0 y 2020.2.0Las actualizaciones de la versión mejoran el estado de la canalización y la capacidad de descargar registros para varios pasos. Para obtener más información, consulte:
+* AEM Cloud Manager 2020.1.0 y 2020.2.0
+
+   Las actualizaciones de la versión mejoran el estado de la canalización y la capacidad de descargar registros para varios pasos. Para obtener más información, consulte:
+
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * Actualizaciones de CLI de AEM Cloud Manager
 
