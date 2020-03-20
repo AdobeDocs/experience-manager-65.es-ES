@@ -3,7 +3,7 @@ title: Cómo editar o agregar metadatos
 description: Obtenga información sobre los metadatos de los recursos en Recursos AEM y las distintas formas de editar los metadatos de los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
 
 ---
 
@@ -24,11 +24,15 @@ Para editar metadatos:
    * En la miniatura del recurso, seleccione la acción rápida **[!UICONTROL Ver propiedades]** .
    * En la página de recursos, toque o haga clic en el icono **[!UICONTROL Ver propiedades]** de la barra de herramientas.
       ![chlimage_1-168](assets/chlimage_1-168.png)
+      *Figura: Icono Propiedades*
    La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extrajeron automáticamente al cargarse (ingeridos) en Recursos AEM.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![seleccione Propiedades del recurso para ver los metadatos](assets/asset-metadata.png)
 
-1. Realice ediciones en los metadatos de las distintas fichas, según sea necesario, y cuando termine, toque o haga clic en **[!UICONTROL Guardar]** en la barra de herramientas para guardar los cambios. Toque o haga clic en **[!UICONTROL Cerrar]** para volver a la interfaz web de Recursos.
+
+   *Figura: Editar o agregar metadatos en la página Propiedades del recurso*
+
+1. Edite los metadatos de las distintas pestañas, según sea necesario, y cuando termine, pulse o haga clic en **[!UICONTROL Guardar]** en la barra de herramientas para guardar los cambios. Pulse o haga clic en **[!UICONTROL Cerrar]** para volver a la interfaz web de Assets.
 
    >[!NOTE]
    >
