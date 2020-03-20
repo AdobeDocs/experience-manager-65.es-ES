@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -336,11 +336,10 @@ Para obtener una vista previa de un recurso, siga estos pasos.
 
 Para obtener una vista previa de un recurso mediante el teclado, siga estos pasos:
 
-1. En la interfaz de usuario de Recursos, navegue hasta la ubicación del recurso cuya vista previa desee obtener, utilizando `Tab` y teclas de flecha.
+1. Desde la interfaz de usuario de Recursos, desplácese hasta el recurso que desee utilizando las teclas `Tab` de flecha y flecha.
 
-1. Abra el recurso que desee.
+1. Pulse `Enter` la tecla del recurso deseado para abrirlo. Puede acercar recursos en el modo de vista previa.
 
-   En el modo de vista previa, las opciones de zoom y restablecimiento están disponibles para los tipos [de imagen](/help/assets/assets-formats.md#supported-raster-image-formats) admitidos (con edición interactiva).
 1. Para acercar el recurso:
    1. Utilice la `Tab` tecla para mover el enfoque al icono de acercamiento.
    1. Utilice la `Enter` tecla para acercar la imagen.
@@ -368,11 +367,15 @@ Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/prev
 
 1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo de activación]**.
 
-   ![chlimage_1-217](assets/chlimage_1-12.png)
+   ![utilice el selector de fecha y hora o las teclas del teclado en el campo Tiempo de activación para agregar fecha y hora a la activación de recursos](assets/schedule-activation.png)
+
+   *Figura: Programar activación de recursos*
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo Tiempo de **[!UICONTROL desactivación]** . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web de Recursos ni a través de la API HTTP.
 
-   ![chlimage_1-218](assets/chlimage_1-13.png)
+   ![utilice el selector de fecha y hora o las teclas del teclado en el campo Tiempo de inactividad para agregar la fecha y hora de desactivación de recursos](assets/schedule-deactivation.png)
+
+   *Figura: Programar desactivación de recursos*
 
 1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en AEM. YouTube requiere que las etiquetas se publiquen. Consulte [Publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
 
