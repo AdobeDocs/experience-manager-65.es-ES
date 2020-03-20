@@ -3,7 +3,7 @@ title: Activos relacionados
 description: Obtenga información sobre cómo relacionar recursos que comparten determinados atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,14 +14,16 @@ Recursos Adobe Experience Manager (AEM) le permite relacionar recursos manualmen
 
 Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja resolución o un archivo JPG con proveedores o agencias y de hacer que el archivo INDD de alta resolución solo esté disponible bajo petición.
 
->[!NOTE] Solo los usuarios con permisos de edición pueden relacionar y desrelacionar recursos.
+>[!NOTE] Solo los usuarios con permisos de edición de recursos pueden relacionar y desrelacionar los recursos.
 >
 
 ## Relate assets {#relating-assets}
 
-1. En la interfaz de AEM, abra la página [!UICONTROL Propiedades] de un recurso que desee relacionar.
+1. En la interfaz de AEM, abra la página **[!UICONTROL Propiedades]** de un recurso que desee relacionar.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![abrir la página Propiedades de un recurso para relacionarlo](assets/asset-properties-relate-assets.png)
+
+   *Figura: Página de propiedades de recursos para relacionar recursos*
 
    Como alternativa, seleccione el recurso en la vista de lista.
 
@@ -63,15 +65,18 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
 ## Traducción de recursos relacionados {#translating-related-assets}
 
-La creación de relaciones de origen y derivadas entre recursos mediante la función Recursos relacionados también resulta útil en los flujos de trabajo de traducción. Al ejecutar un flujo de trabajo de traducción en un recurso derivado, Recursos AEM obtiene automáticamente cualquier recurso al que hace referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el recurso de origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen como se muestra.
+La creación de relaciones de origen o derivadas entre recursos mediante la función Recursos relacionados también resulta útil en los flujos de trabajo de traducción. Al ejecutar un flujo de trabajo de traducción en un recurso derivado, Recursos AEM obtiene automáticamente cualquier recurso al que hace referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el recurso de origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen como se muestra.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Si el archivo de origen está relacionado con otro recurso, AEM Assets obtiene el recurso al que se hace referencia y lo incluye para su traducción.
+Si el archivo de origen está relacionado con otro recurso, Experience Manager Assets obtiene el recurso al que se hace referencia e lo incluye para su traducción.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![la página Propiedades del recurso muestra el archivo de origen del recurso relacionado para incluirlo en la traducción](assets/asset-properties-source-asset.png)
+
+*Figura: Recurso de origen de los recursos relacionados que se van a incluir para la traducción*
 
 1. Traduzca los recursos de la carpeta de origen a un idioma de destino siguiendo los pasos de [Creación de un nuevo proyecto](translation-projects.md#create-a-new-translation-project)de traducción. Por ejemplo, en este caso, traduzca sus recursos al francés.
+
 1. En la página [!UICONTROL Proyectos] , abra la carpeta de traducción.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
