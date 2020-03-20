@@ -3,7 +3,7 @@ title: Gestión de recursos compuestos con referencias y recursos de varias pág
 description: Aprenda a crear referencias a recursos de AEM desde InDesign, Illustrator y Photoshop. Utilice la función Visor de páginas para ver páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b13fe70c4b67b27e0f18bdb557c52e25d21e7f75
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,9 @@ Puede hacer referencia a recursos de AEM existentes desde un archivo de Adobe Il
 
 1. Con la aplicación [de escritorio de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM, monte el repositorio de AEM Assets como una unidad en el equipo local. En la unidad montada, navegue a la ubicación del recurso al que desee hacer referencia.
 1. Arrastre el recurso desde la unidad montada al archivo de Illustrator.
+
 1. Guarde el archivo de Illustrator en la unidad montada o [cárguelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) en el repositorio de AEM.
+
 1. Una vez finalizado el flujo de trabajo, vaya a la página de detalles del recurso. Las referencias a los recursos de AEM existentes se enumeran en **[!UICONTROL Dependencias]** en la columna **[!UICONTROL Referencias]** .
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
@@ -35,7 +37,9 @@ Puede hacer referencia a recursos de AEM existentes desde un archivo de Adobe Il
 
 1. Haga clic en **[!UICONTROL Ver propiedades]** en la barra de herramientas. En la página [!UICONTROL Propiedades] , la lista de archivos que hacen referencia al recurso actual aparece en la columna **[!UICONTROL Referencias]** de la ficha **[!UICONTROL Básico]** .
 
-   ![chlimage_1-86](assets/chlimage_1-260.png)
+   ![ver las referencias de Recursos de Experience Manager en la columna Referencias de los detalles del recurso](assets/asset-references.png)
+
+   *Figura: Referencias de recursos en detalles de recursos*
 
 ## Adición de recursos de AEM como referencias en Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
 
