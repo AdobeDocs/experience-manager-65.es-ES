@@ -3,7 +3,7 @@ title: Esquemas de metadatos
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar un esquema de metadatos y aplicar un esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,10 @@ Puede utilizar el editor de formularios de esquemas de metadatos para modificar 
 
 1. Edite varias propiedades de metadatos en las distintas fichas. Sin embargo, no puede modificar el tipo de recurso en la página de propiedades.
 
-   ![chlimage_1-36](assets/chlimage_1-172.png)
+   ![no puede cambiar el tipo de recurso en la ficha básica de Propiedades del recurso](assets/asset-properties-basic-tab.png)
+
+   *Figura: Ficha Básico de Propiedades del recurso*
+
 
    Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar formularios](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de esquema de metadatos para obtener más información. Si modifica el esquema de metadatos de un tipo MIME determinado, se modificará el diseño de página de propiedades de los recursos con el tipo MIME actual y todos los subtipos de recursos. Por ejemplo, la modificación de un esquema jpeg en `default/image` solo modifica el diseño de metadatos (propiedades de recurso) de los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modifican el diseño de metadatos de todos los tipos de recursos.
 
@@ -46,7 +49,7 @@ Puede utilizar el editor de formularios de esquemas de metadatos para modificar 
          * **pdf**: Formulario de esquema para recursos con subtipo `pdf`.
       1. **video**: Formulario de esquema para recursos con tipo MIME `video`, como `video/avi`, `video/mp4`, etc.
    * **colección**: Formulario de esquema para colecciones.
-   * **** contentfragment: Formulario de esquema para fragmentos de contenido.
+   * **contentfragment:** Formulario de esquema para fragmentos de contenido.
    * **formularios**: Este formulario de esquema está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager.
 
 >[!NOTE]
@@ -82,7 +85,10 @@ Puede agregar nuevas fichas o elementos de formulario al formulario de esquema d
 
 1. En la página **[!UICONTROL Editor de esquemas de metadatos]**, personalice la página de propiedades del recurso arrastrando uno o varios componentes de la lista de tipos de componentes de la pestaña **[!UICONTROL Generar formulario]** a **[!UICONTROL Básico]**.
 
-   ![chlimage_1-40](assets/chlimage_1-176.png)
+   ![agregar componentes de Formulario de compilación al editor de esquemas de metadatos para personalizar las propiedades del recurso](assets/metadata-schema-editor.png)
+
+
+   *Figura: Ficha básica del editor de esquemas de metadatos*
 
 1. Para configurar un componente, selecciónelo y modifique sus propiedades en la ficha **Configuración** .
 
@@ -113,7 +119,7 @@ Para editar las propiedades de un componente de metadatos en el formulario, haga
 
 **Etiqueta** de campo: Nombre de la propiedad de metadatos que se muestra en la página de propiedades del recurso.
 
-**Asignar a propiedad**: Esta propiedad especifica la ruta/nombre relativos al nodo del recurso donde se guarda en el repositorio de CRX. Comienza con `./` porque indica que la ruta está debajo del nodo del recurso.
+**Asignar a propiedad**: Esta propiedad especifica la ruta/nombre relativos al nodo del recurso en el que se guarda en el repositorio de CRX. Comienza con `./` porque indica que la ruta está debajo del nodo del recurso.
 
 Los siguientes son los valores válidos para esta propiedad:
 
@@ -147,9 +153,11 @@ Si agrega el componente Metadatos contextuales a cualquier ficha de cualquier fo
 
 ![chlimage_1-43](assets/chlimage_1-179.png)
 
-Para incluir cualquier ficha en la página de propiedades, además de la ficha donde se aplica el componente Metadatos contextuales, seleccione la ficha en la lista. La ficha se agrega a la página de propiedades.
+Para mostrar cualquier ficha en la página de propiedades, además de la ficha donde se aplica el componente Metadatos contextuales, seleccione la ficha en la lista. La ficha se agrega a la página de propiedades.
 
-![chlimage_1-44](assets/chlimage_1-180.png)
+![seleccione una ficha de la lista de metadatos contextuales para mostrarla en la página de propiedades](assets/contextual-metadata-asset-properties.png)
+
+*Figura: Metadatos contextuales en la página de propiedades de recursos*
 
 ### Especificar propiedades en el archivo JSON {#specify-properties-in-json-file}
 
@@ -199,7 +207,7 @@ En este caso, cree un nuevo nodo en `/etc/dam/metadataeditor/mimetypemappings` e
 
 | Nombre | Descripción | Tipo | Value |
 |---|---|---|---|
-| `exposedmimetype` |  Nombre del formulario existente que se va a asignar | `String` | `image/jpeg` |
+| `exposedmimetype` | Nombre del formulario existente que se va a asignar | `String` | `image/jpeg` |
 | `mimetypes` | Lista de tipos MIME que utilizan el formulario definido en el `exposedmimetype` atributo | `String` | `image/png` |
 
 AEM Assets asigna los siguientes tipos MIME y formularios de esquema:
@@ -246,7 +254,9 @@ Si la carpeta tiene una subcarpeta, los recursos de la subcarpeta heredarán los
 
 1. En la página Editor **[!UICONTROL de esquemas de]** metadatos, agregue un campo de texto al formulario de esquema. Por ejemplo, agregue un campo con la etiqueta **[!UICONTROL Categoría]**.
 
-   ![chlimage_1-50](assets/chlimage_1-186.png)
+   ![agregar un campo de texto al editor de formularios de esquemas de metadatos](assets/text-field-metadata-schema-editor.png)
+
+   *Figura: Campo de texto agregado al editor de formularios de esquema de metadatos*
 
 1. Haga clic en **[!UICONTROL Guardar.]** El formulario modificado aparece en la página Formularios **[!UICONTROL de esquema de]** metadatos.
 1. Toque o haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
@@ -276,7 +286,9 @@ Puede definir campos obligatorios en un nivel de carpeta, que se aplican a los r
 
 1. Edite el formulario personalizado. Agregue un campo obligatorio. Por ejemplo, agregue un campo **[!UICONTROL Categoría]** y convierta el campo en obligatorio.
 
-   ![chlimage_1-54](assets/chlimage_1-190.png)
+   ![agregar campo al formulario de metadatos y seleccione Obligatorio en la ficha Reglas para que sea obligatorio](assets/mandatory-field-metadata-schema-editor.png)
+
+   *Figura: Campo obligatorio en el editor de formularios de esquema de metadatos*
 
 1. Haga clic en **[!UICONTROL Guardar.]** El formulario modificado aparece en la página Formularios **[!UICONTROL de esquema de]** metadatos. Seleccione el formulario y, a continuación, toque o haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
 
