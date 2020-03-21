@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
+source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
 
 ---
 
@@ -16,6 +16,8 @@ Adobe Experience Manager (AEM) 6.5 ofrece funciones y mejoras continuas mediante
 El último Service Pack 4 de AEM (6.5.4.0) está disponible el 5 **de marzo de 2020**. En este artículo se destacan las funciones que ofrece el Service Pack más reciente para enriquecer el viaje de AEM.
 
 ## AEM Sites {#aem-sites}
+
+### Mejoras del sistema de estilos
 
 AEM 6.5.4.0 incluye mejoras en el sistema de estilos. Ahora puede seleccionar estilos en el cuadro de diálogo del componente.
 
@@ -122,7 +124,7 @@ Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las sigui
 
 * AEM Cloud Manager 2020.1.0 y 2020.2.0
 
-   Las actualizaciones de la versión mejoran el estado de la canalización y la capacidad de descargar registros para varios pasos. Para obtener más información, consulte:
+   Mejore el estado de la canalización y la capacidad de descargar registros para varios pasos. Consulte:
 
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
@@ -132,7 +134,7 @@ Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las sigui
 
 * Actualizaciones de CLI de AEM Cloud Manager
 
-   Las actualizaciones de la versión incluyen la automatización de tareas de Cloud Manager mediante la herramienta de línea de comandos. Consulte [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+   Automatice las tareas de Cloud Manager con la herramienta de línea de comandos. Consulte [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * Sitios AEM: Arquetipo de proyecto 23
 
@@ -148,7 +150,7 @@ Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las sigui
 
 * Recursos AEM: Desktop App 2.0.1.1
 
-   Para obtener más información, consulte [Obtener acceso de escritorio a los recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+   Consulte [Obtener acceso de escritorio a los recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens: Feature Pack 202001
 
