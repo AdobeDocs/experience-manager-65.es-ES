@@ -83,7 +83,7 @@ Visite el tutorial [Introducción a Comunidades de AEM para la habilitación](/h
 Marcar todas las casillas de verificación para Administración [de usuarios](/help/communities/sites-console.md#user-management)
 
 * Para permitir que los visitantes del sitio se automatriculen
-* Para permitir que los visitantes del sitio vean el sitio sin iniciar sesión
+* Permitir que los visitantes del sitio vean el sitio sin iniciar sesión
 * Permitir a los miembros enviar y recibir mensajes de otros miembros de la comunidad
 * Permitir el inicio de sesión con Facebook en lugar de registrar y crear un perfil
 * Permitir el inicio de sesión con Twitter en lugar de registrar y crear un perfil
