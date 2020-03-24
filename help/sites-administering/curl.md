@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 7ee76afa11384aedc79b17e823c8dc9594662388
 
 ---
 
@@ -355,7 +355,7 @@ Consulte [Interacción con flujos de trabajo mediante programación](/help/sites
 
 ### Contenido de Sling {#sling-content}
 
-#### Crear una carpeta {#create-a-folder}
+#### Create a Folder {#create-a-folder}
 
 ```shell
 curl -u admin:admin -F jcr:primaryType=sling:Folder http://localhost:4502/etc/test
@@ -370,13 +370,13 @@ curl -u admin:admin -F :operation=delete http://localhost:4502/etc/test/test.pro
 #### Mover un nodo {#move-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Copiar un nodo {#copy-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Carga de archivos con Sling PostServlet {#upload-files-using-sling-postservlet}
