@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
@@ -40,8 +40,6 @@ Una comunicación interactiva incluye los siguientes elementos:
 ## Anatomía de la comunicación interactiva {#anatomy-of-the-interactive-communication}
 
 Una vez que haya finalizado el contenido y los elementos utilizados para crear la comunicación interactiva, puede crear una anatomía de la comunicación interactiva. La anatomía debe tener los detalles enumerados en la sección Consideraciones [de](/help/forms/using/planning-interactive-communications.md#planning-considerations) planificación. Según nuestro caso de uso, el siguiente es un ejemplo de anatomía de la factura mensual que un operador de telecomunicaciones envía a sus clientes.
-
-Marcador de posición para el vídeo de anatomía
 
 La anatomía incluye datos con los siguientes modos de entrada:
 
