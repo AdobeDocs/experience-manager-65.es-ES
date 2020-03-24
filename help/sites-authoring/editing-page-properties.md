@@ -1,6 +1,6 @@
 ---
-title: Edición de las propiedades de página
-seo-title: Edición de las propiedades de página
+title: 'Edición de las propiedades de página  '
+seo-title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 seo-description: Permite definir las propiedades de una página
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
+source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
 ---
 
@@ -22,13 +22,13 @@ Puede definir las propiedades para una página. Estas pueden variar en función 
 
 ## Propiedades de página {#page-properties}
 
-Las propiedades se distribuyen entre varias fichas.
+Las propiedades se distribuyen entre varias pestañas.
 
 ### Básico {#basic}
 
 * **Título**
 
-   El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la ficha **Sitios web** y las vistas de lista o tarjeta **Sitios**.
+   El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
 
    Es un campo obligatorio.
 
@@ -81,7 +81,7 @@ Las propiedades se distribuyen entre varias fichas.
 
    Permite introducir una URL de vanidad para esta página, que le permitirá disponer de una URL más corta y/o descriptiva.
 
-   Por ejemplo, si la URL de vanidad está configurada en `welcome`la página identificada por la ruta `/v1.0/startpage`del sitio web `http://example.com,` , entonces `http://example.com/welcome`será la URL de vanidad de `http://example.com/content/v1.0/startpage`
+   For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -98,7 +98,7 @@ Las propiedades se distribuyen entre varias fichas.
 
    Indica si desea que la página use la URL de vanidad.
 
-### Avanzado {#advanced}
+### Avanzado   {#advanced}
 
 * **Idioma**
 
@@ -122,11 +122,11 @@ Las propiedades se distribuyen entre varias fichas.
 
    >[!NOTE]
    >
-   >Alias establece la `sling:alias` propiedad para definir un nombre de alias para el recurso (esto solo afecta al recurso, no a la ruta).
+   >Alias establece la propiedad `sling:alias` para definir un nombre de alias para el recurso (esto solo afecta al recurso, no a la ruta).
    >
-   >Por ejemplo: si define un alias de `latin-lang` para el nodo `/content/we-retail/spanish` nodo, se puede acceder a esta página mediante `/content/we-retail/latin-language`
+   >Por ejemplo: si define un alias de `latin-lang` para el nodo `/content/we-retail/spanish`, se puede acceder a esta página mediante `/content/we-retail/latin-language`.
    >
-   >Para obtener más información, consulte Nombres de páginas [localizados en Optimizaciones](/help/managing/seo-and-url-management.md#localized-page-names)para la administración de direcciones URL y SEO.
+   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Heredado de &lt;*path*>**
 
@@ -146,7 +146,7 @@ Las propiedades se distribuyen entre varias fichas.
 
    >[!NOTE]
    >
-   >Los grupos de usuarios cerrados para la página se definen en la ficha **[Permisos](/help/sites-authoring/editing-page-properties.md#permissions)**.
+   >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](/help/sites-authoring/editing-page-properties.md#permissions)**.
 
    >[!CAUTION]
    >
@@ -163,7 +163,7 @@ Las propiedades se distribuyen entre varias fichas.
 
    Especificar una configuración de exportación.
 
-### Miniatura {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
@@ -191,11 +191,12 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
    * **Permitir al usuario que comparta en Facebook**
    * **Permitir al usuario que comparta en Pinterest**
-   * **Variación de XF preferida** Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página
+   * **Variación de XF preferida**
+Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página.
 
-### Servicios de nube {#cloud-services}
+### Cloud Services{#cloud-services}
 
-* **Servicios de nube**
+* **Cloud Services**
 
    Defina propiedades para [servicios de nube](/help/sites-developing/extending-cloud-config.md).
 
@@ -209,7 +210,10 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
    Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-authoring/target-adobe-campaign.md).
 
-### Permisos {#permissions}
+   >[!NOTE]
+   >Esta opción requiere que la cuenta de usuario esté en el `Target Adminstrators`grupo.
+
+### Permisos   {#permissions}
 
 * **Permisos**
 
@@ -234,15 +238,15 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * **Modelo**
 
-   Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones a Live Copy.
+   Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio {#site-structure}
+### Estructura del sitio   {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
@@ -254,26 +258,26 @@ Puede definir propiedades de página:
 
    * [Creando una página nueva](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un subconjunto de las propiedades)
 
-   * Clicking or tapping **Properties**
+   * Pulsando o haciendo clic en **Propiedades**
 
       * Para una sola página
       * Para varias páginas (solo se pueden editar en masa un subconjunto de las propiedades)
 
 * Desde el editor de páginas:
 
-   * Using **Page Information** (then **Open Properties**)
+   * Utilizando **Información de página** (a continuación, **Abrir propiedades**)
 
 ### Desde la consola Sitios: página individual {#from-the-sites-console-single-page}
 
 Tocando o haciendo clic en **Propiedades** para definir las propiedades de la página:
 
-1. Mediante la consola **Sitios**, desplácese a la ubicación de la página para la que desee ver y editar las propiedades.
+1. Mediante la consola **Sitios**, desplácese hasta la ubicación de la página para la que desee ver y editar las propiedades.
 
-1. Select the **Properties** option for the required page using either:
+1. Seleccione la opción **Propiedades** de la página requerida mediante:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-authoring/basic-handling.md#selectionmode)
-   Las propiedades de página se mostrarán mediante las fichas adecuadas.
+   Las propiedades de página se mostrarán mediante las pestañas adecuadas.
 
 1. Visualice o edite las propiedades según sea oportuno. 
 
@@ -289,7 +293,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. También están disponibles los botones siguientes en la parte derecha de la barra de herramientas:
+1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
 
    * **Cancelar**
    * **Guardar y cerrar**
@@ -298,7 +302,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
 ### Desde la consola Sitios: varias páginas {#from-the-sites-console-multiple-pages}
 
-Desde la consola **Sitios** puede seleccionar varias páginas y usar **Ver propiedades** para ver o editar las propiedades de las páginas. Esta acción recibe el nombre de edición de propiedades de páginas por lotes.
+Desde la consola **Sites** puede seleccionar varias páginas y luego utilizar **Ver propiedades** para ver o editar las propiedades de la página. Esto se conoce como edición masiva de propiedades de página.
 
 >[!NOTE]
 >
@@ -313,7 +317,7 @@ Puede seleccionar varias páginas para editarlas por lotes utilizando distintos 
 
 ![epp-01](assets/epp-01.png)
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Después de seleccionar las páginas y hacer clic o pulsar en la opción **Propiedades**, se muestran las propiedades por lotes:
 
 ![epp-02](assets/epp-02.png)
 
@@ -335,7 +339,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
       * Si lo desea, puede seleccionarlas o deseleccionarlas.
    * Pestañas
 
-      * Las propiedades se ordenan en fichas, al igual que cuando se visualizan las propiedades de una página.
+      * Las propiedades se ordenan en pestañas, al igual que cuando se visualizan las propiedades de una página.
    * Un subconjunto de propiedades
 
       * Se pueden ver las propiedades que están disponibles en todas las páginas seleccionadas (deben haberse marcado específicamente como disponibles para la edición por lotes).
@@ -354,7 +358,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 
       * Los nuevos valores se aplicarán a todas las páginas seleccionadas al activar **Listo**.
       * Si el campo admite varios valores (por ejemplo, Etiquetas), puede agregar un valor nuevo o eliminar un valor común.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. Se debe tener cuidado al editar estos campos para evitar la pérdida de datos.
+   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se señalizarán con un valor especial; por ejemplo, el texto `<Mixed Entries>`. Se debe tener cuidado al editar estos campos para evitar la pérdida de datos.
 
 
 >[!NOTE]
