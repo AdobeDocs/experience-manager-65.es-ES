@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
+source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
 
 ---
 
@@ -88,7 +88,7 @@ Además, si los ajustes preestablecidos de imagen se utilizan para devolver `fmt
 
 ## ¿Tendré que cambiar direcciones URL, ajustes preestablecidos de imagen o implementar código nuevo en mi sitio para las imágenes inteligentes? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Las imágenes inteligentes funcionan perfectamente con las URL de imágenes y los ajustes preestablecidos de imagen existentes. Además, las imágenes inteligentes no requieren que agregue ningún código en el sitio web para detectar el explorador de un usuario. Todo esto se gestiona automáticamente.
+No. Las imágenes inteligentes funcionan perfectamente con las URL de imágenes y los ajustes preestablecidos de imagen existentes. Además, las imágenes inteligentes no requieren que agregue ningún código en el sitio web para detectar el explorador de un usuario. Todo esto se gestiona automáticamente.
 
 Como se mencionó anteriormente, Smart Imaging solo admite formatos de imagen JPEG y PNG. Para otros formatos, debe anexar el `bfc=off` modificador a la dirección URL como se ha descrito anteriormente.
 
@@ -115,11 +115,11 @@ El primer dominio personalizado no tiene costo adicional con una licencia de Dyn
 
 Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita automáticamente.
 
-1. Iniciar una solicitud de asistencia técnica (correo electrónico: s7support@adobe.com).
+1. Iniciar una solicitud de asistencia técnica (correo electrónico: `s7support@adobe.com`).
 1. Proporcione la siguiente información en su solicitud de asistencia:
 
    1. Nombre de contacto principal, correo electrónico, teléfono.
-   1. Todos los dominios que se van a habilitar para las imágenes inteligentes (es decir, imágenes.compañía.com o miempresa.escena7.com).
+   1. Todos los dominios que se habilitarán para la creación de imágenes inteligentes (es decir, `images.company.com` o `mycompany.scene7.com`).
 
       Para encontrar los dominios, inicie sesión en la cuenta o cuentas de compañía.
 
