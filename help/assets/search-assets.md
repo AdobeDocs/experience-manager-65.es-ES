@@ -246,7 +246,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 *Figura: Examinar y seleccionar recursos en el selector de recursos*
 
-## Restricciones    {#limitations}
+## Restricciones     {#limitations}
 
 La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
 
