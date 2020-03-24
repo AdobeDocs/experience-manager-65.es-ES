@@ -250,7 +250,7 @@ Hay dos agentes de replicación en el entorno de creación que necesitan que la 
 * Siga el mismo procedimiento para ambos agentes:
 
    * **Agente predeterminado (publicación)**
-   * **Agente de replicación inversa (publicar inversa)**
+   * **Agente de replicación inversa (publicar en sentido inverso)**
 
       1. Seleccione el agente
       1. Select **edit**
