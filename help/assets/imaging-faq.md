@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 9807bd4366315ad470128911cb67a31e7e9fd288
+source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 9807bd4366315ad470128911cb67a31e7e9fd288
 
 ## ¿Qué es &quot;Imágenes inteligentes&quot;? {#what-is-smart-imaging}
 
-La tecnología de imágenes inteligentes aprovecha las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento de la entrega de imágenes optimizando automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del navegador del cliente.
+La tecnología de imágenes inteligentes aprovecha las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento del envío de imágenes optimizando automáticamente el formato, el tamaño y la calidad de las imágenes en función de las capacidades del navegador del cliente.
 
 Smart Imaging también se beneficia del aumento de rendimiento añadido de la integración total con el servicio CDN Premium de Adobe. Este servicio encuentra la ruta de Internet óptima entre servidores, redes y puntos de interrelación que tiene la latencia y/o la tasa de pérdida de paquetes más baja que la ruta predeterminada en Internet.
 
@@ -44,7 +44,7 @@ Mejoras en la versión más reciente de Imágenes inteligentes:
 * Las imágenes inteligentes se pueden desactivar con el parámetro de URL &quot;bfc&quot;.
 * TTL (Tiempo de vivir) independiente. Anteriormente, era obligatorio un TTL mínimo de 12 horas para que funcionara la imagen inteligente.
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y era un proceso de dos pasos para invalidar la caché. En las últimas imágenes inteligentes, solo los derivados se almacenan en caché, lo que permite un proceso de invalidación de caché de un solo paso.
-* Los clientes que utilicen encabezados personalizados en su conjunto de reglas (por ejemplo, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; como se sugiere en [Adición de un valor de encabezado personalizado a las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarán de la última imagen inteligente, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de Smart Imaging.
+* Los clientes que utilicen encabezados personalizados en su conjunto de reglas (por ejemplo, &quot;Origen de permitir temporización&quot; o &quot;Robot X&quot;, como se sugiere al [Añadir un valor de encabezado personalizado en las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarán de la última imagen inteligente, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de la imagen inteligente.
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -100,12 +100,12 @@ Las imágenes inteligentes funcionan con imágenes enviadas a través de HTTP o 
 
 ## ¿Puedo usar imágenes inteligentes? {#am-i-eligible-to-use-smart-imaging}
 
-Para utilizar las imágenes inteligentes, la cuenta de AEM de Dynamic Media Classic o Dynamic Media de su empresa debe cumplir los siguientes requisitos:
+Para utilizar las imágenes inteligentes, la cuenta de AEM de Dynamic Media Classic o Dynamic Media de su compañía debe cumplir los siguientes requisitos:
 
-* Utilice la CDN (Red de entrega de contenido) incluida en Adobe como parte de su licencia.
+* Use la CDN (Red de Envío de contenido) incluida en Adobe como parte de su licencia.
 * Utilice un dominio dedicado (por ejemplo, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico (por ejemplo, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
 
-Para encontrar los dominios, inicie sesión en la cuenta o cuentas de la empresa.
+Para encontrar los dominios, inicie sesión en la cuenta o cuentas de compañía.
 
 Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Busque el campo con la etiqueta Nombre **[!UICONTROL del servidor]** publicado. Si actualmente está utilizando un dominio genérico, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
 
@@ -119,9 +119,9 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
 1. Proporcione la siguiente información en su solicitud de asistencia:
 
    1. Nombre de contacto principal, correo electrónico, teléfono.
-   1. Todos los dominios que se van a habilitar para las imágenes inteligentes (es decir, imágenes.empresa.com o miempresa.escena7.com).
+   1. Todos los dominios que se van a habilitar para las imágenes inteligentes (es decir, imágenes.compañía.com o miempresa.escena7.com).
 
-      Para encontrar los dominios, inicie sesión en la cuenta o cuentas de la empresa.
+      Para encontrar los dominios, inicie sesión en la cuenta o cuentas de compañía.
 
       Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**.
 
@@ -129,15 +129,15 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
    1. Compruebe que está utilizando la CDN a través de Adobe y que no se administra con una relación directa.
    1. Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com`, y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para encontrar los dominios, inicie sesión en la cuenta o cuentas de la empresa.
+      Para encontrar los dominios, inicie sesión en la cuenta o cuentas de compañía.
 
       Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**.
 
       Busque el campo con la etiqueta Nombre **[!UICONTROL del servidor]** publicado. Si actualmente está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición.
    1. Indique si también necesita que esto funcione con HTTP/2.
 
-1. La asistencia técnica le agregará a la lista de espera de clientes de Smart Imaging en función del orden en que se enviaron las solicitudes.
-1. Cuando Adobe esté preparado para gestionar su solicitud, el servicio de asistencia técnica se pondrá en contacto con usted para coordinar y establecer una fecha objetivo.
+1. La asistencia técnica le agregará a la Lista de espera del cliente de Smart Imaging en función del orden en que se enviaron las solicitudes.
+1. Cuando Adobe esté preparado para gestionar su solicitud, el servicio de asistencia técnica se pondrá en contacto con usted para coordinar y establecer una fecha de destinatario.
 1. **Opcional**: Tiene la opción de probar las imágenes inteligentes en Ensayo antes de que Adobe implemente la nueva función en producción.
 1. Se le notifica después de completarlo mediante soporte técnico.
 1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el Tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo los recursos se almacenan en caché en la CDN. Para cambiar esta configuración:
@@ -147,21 +147,21 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
 
 ## ¿Cuándo puedo esperar que mi cuenta esté habilitada con Imágenes inteligentes? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Las solicitudes se procesan en el orden en que son recibidas por la asistencia técnica, según la lista de espera.
+Las solicitudes se procesan en el orden en que son recibidas por la asistencia técnica, según la Lista de espera.
 
 >[!NOTE]
-Puede haber un largo tiempo de espera, ya que la activación de las imágenes inteligentes implica que Adobe borre la caché. Por lo tanto, solo se pueden gestionar algunas transiciones de cliente en un momento dado.
+Puede haber un largo tiempo de espera, ya que la activación de las imágenes inteligentes implica que Adobe borre la caché. Por lo tanto, sólo se pueden gestionar unas pocas transiciones de clientes en un momento dado.
 
 ## ¿Cuáles son los riesgos de pasar a utilizar las imágenes inteligentes? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 No hay riesgo para una página web del cliente. Sin embargo, debe tener en cuenta que la transición a Imágenes inteligentes borra la caché en CDN porque implica pasar a una nueva configuración de Dynamic Media Classic o Dynamic Media en AEM.
 
-Durante la transición inicial, las imágenes no almacenadas en caché llegan directamente a los servidores de origen de Adobe hasta que se vuelve a crear la caché. Debido a esto, Adobe tiene previsto gestionar algunas transiciones de clientes a la vez, de modo que se mantenga un rendimiento aceptable al extraer solicitudes de nuestro origen. Para la mayoría de los clientes, la caché se vuelve a crear completamente en la CDN en ~1 a 2 días.
+Durante la transición inicial, las imágenes no almacenadas en caché llegan directamente a los servidores de origen de Adobe hasta que se vuelve a crear la caché. Debido a esto, Adobe planea gestionar algunas transiciones de clientes a la vez, de modo que se mantenga un rendimiento aceptable al extraer solicitudes de nuestro origen. Para la mayoría de los clientes, la caché se vuelve a crear completamente en la CDN en ~1 a 2 días.
 
 ## ¿Cómo puedo verificar si las imágenes inteligentes funcionan correctamente?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Una vez configurada la cuenta con imágenes inteligentes, cargue una URL de imagen de Dynamic Media Classic (Scene7)/Dynamic Media en el navegador.
-1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL Ver > Desarrollador > Herramientas]** para desarrolladores en el navegador. O bien, elija la herramienta de desarrollo de navegador que desee.
+1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL Vista > Desarrollador > Herramientas]** para desarrolladores en el navegador. O bien, elija la herramienta de desarrollo de navegador que desee.
 
 1. Asegúrese de que la caché está deshabilitada cuando las herramientas de desarrollo están abiertas.
 
