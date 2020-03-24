@@ -5,7 +5,7 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: dc625b31b5f4d0db0941de2da0e869b3af177551
 
 ---
 
@@ -21,6 +21,23 @@ En este boletín de noticias de una sola empresa, descubra valiosos recursos par
 [Regístrese](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para recibir el boletín de Dynamic Media mensualmente en su bandeja de entrada.
 
 ## ¿Ha perdido un número del boletín de Dynamic Media?
+
+* **[Febrero de 2020, edición 2](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**En este número:
+
+   * Asista a los nuevos seminarios web de Skill Builder y conviértase en un experto de Dynamic Media Classic.
+   * Descubra dónde encontrará Dynamic Media en Adobe Summit 2020.
+   * Descubra cómo usar la magia de recorte de Dynamic Media.
+   * Aproveche una auditoría gratuita para obtener más valor de Dynamic Media Classic.
+   * Obtenga información sobre la nueva interfaz de usuario de Dynamic Media Classic.
+   * Conozca a Georgia Myers, responsable del éxito del cliente para Adobe Experience Cloud.
+
+* **[Enero de 2020, edición 1](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**En este número:
+
+   * Cinco nuevos seminarios web de Skill Builder para perfeccionar sus conocimientos de Dynamic Media Classic.
+   * Una auditoría gratuita para ayudarle a obtener más valor de Dynamic Media Classic.
+   * Una temporada de compras festivas récord para nuestros clientes de medios enriquecidos.
+   * Su guía práctica para seleccionar un DAM (Digital Asset Manager) que satisfaga sus necesidades de hoy y le prepara para las novedades de los medios enriquecidos de mañana.
+   * Conozca a Mark Dean, especialista en medios digitales.
 
 * **[Noviembre de 2019, edición 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**En este número:
 
@@ -74,7 +91,7 @@ En este boletín de noticias de una sola empresa, descubra valiosos recursos par
    * Obtenga más información sobre el próximo Adobe Insider Tour.
    * Obtenga información sobre cómo proteger los recursos digitales contra la piratería.
    * Obtenga información sobre el recorte inteligente impulsado por AI para imágenes.
-   * Conozca a Alex Thiers, uno de los factores que impulsan muchas de las grandes características e innovaciones de Dynamic Media y Dynamic Media Classic.
+   * Conozca a Alex Thiers, uno de los factores que impulsan muchas de las buenas características e innovaciones de Dynamic Media y Dynamic Media Classic.
 
 * **[Mayo de 2019, número 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**En este número:
 
