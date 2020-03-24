@@ -4,22 +4,22 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
+source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
 
 ---
 
 
 # Novedades de Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 ofrece funciones y mejoras continuas mediante Service Packs trimestrales. El nuevo enfoque beneficia a nuestros clientes a medida que adoptan las innovaciones más rápidamente.
+Adobe Experience Manager (AEM) 6.5 ofrece funciones y mejoras continuas mediante Service Packs trimestrales. El enfoque le beneficia a medida que las innovaciones son más fáciles de adoptar.
 
-El último Service Pack 4 de AEM (6.5.4.0) está disponible el 5 **de marzo de 2020**. En este artículo se destacan las funciones que ofrece el Service Pack más reciente para enriquecer el viaje de AEM.
+AEM Service Pack 4 (6.5.4.0) está disponible el 5 **de marzo de 2020**. Este artículo destaca las funciones clave que ofrecen los Service Packs 6.5 para enriquecer el viaje de AEM.
 
 ## AEM Sites {#aem-sites}
 
 ### Mejoras del sistema de estilos
 
-AEM 6.5.4.0 incluye mejoras en el sistema de estilos. Ahora puede seleccionar estilos en el cuadro de diálogo del componente.
+Ahora puede seleccionar estilos dentro del cuadro de diálogo de componentes mediante el sistema de estilos mejorado.
 
 ### Mejoras en el rendimiento en diversas esferas {#performance-improvements}
 
@@ -58,7 +58,7 @@ Experience Manager Assets incluye las siguientes mejoras de accesibilidad:
 
 ### Generar resultados imprimibles en flujos de trabajo de AEM Forms {#generate-printable-output}
 
-El nuevo paso de flujo de trabajo Generar salida imprimible le permite integrar un archivo de plantilla de origen con un archivo de datos. Esta integración le permite imprimir o guardar diferentes copias del archivo de plantilla. Por ejemplo, puede imprimir un formulario de origen con un nombre diferente cada vez que se imprima. Guarde los nombres en el archivo de datos e integre el archivo de datos con un archivo de plantilla estándar. Para obtener más información sobre esta función, consulte Flujo de trabajo centrado en [formularios en OSGi - Referencia](../forms/using/aem-forms-workflow-step-reference.md)de pasos.
+El paso de flujo de trabajo Generar salida imprimible permite integrar un archivo de plantilla de origen con un archivo de datos. Esta integración le permite imprimir o guardar diferentes copias del archivo de plantilla. El paso genera una salida PCL, PostScript, ZPL, IPL, TPCL o DPL. Para obtener más información sobre esta función, consulte Flujo de trabajo centrado en [formularios en OSGi - Referencia](../forms/using/aem-forms-workflow-step-reference.md)de pasos.
 
 ![Generar salida imprimible](assets/generate-print-output-demo.gif)
 
@@ -66,10 +66,7 @@ El nuevo paso de flujo de trabajo Generar salida imprimible le permite integrar 
 
 Ahora puede definir el número de columnas para un panel en formularios adaptables y comunicaciones interactivas. Cambie al modo de diseño para utilizar la nueva opción de varias columnas. Para obtener más información, consulte [Uso del modo Diseño para cambiar el tamaño de los componentes](../forms/using/resize-using-layout-mode.md).
 
-
 ![Diseño de varias columnas](assets/multi-column-layout.gif)
-
-
 
 ### Personalizaciones de la bandeja de entrada de AEM {#aem-inbox}
 
@@ -83,7 +80,7 @@ La opción Control de administración solo está visible para los miembros del g
 
 ### Compatibilidad con texto enriquecido en formularios HTML5 {#rich-text-support}
 
-Ahora puede convertir un campo de texto de un formulario XFA en un campo de texto enriquecido cuando se procesa en un formulario HTML5. Como resultado, el campo de texto muestra una lista de otras opciones de formato en un formulario HTML5. Para obtener más información, consulte [Diseño de plantillas de formulario para formularios](../forms/using/designing-form-template.md)HTML5.
+Conversión de un campo de texto en un formulario XFA en un campo de texto enriquecido en un formulario HTML5. Para obtener más información, consulte [Diseño de plantillas de formulario para formularios](../forms/using/designing-form-template.md)HTML5.
 
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
@@ -105,16 +102,16 @@ Las imágenes inteligentes utilizan las características de visualización únic
 
 Los usuarios de recursos pueden buscar imágenes visualmente similares. AEM muestra las imágenes con etiquetas inteligentes del repositorio de DAM similares a una imagen seleccionada por el usuario. See [Visual search](../assets/search-assets.md).
 
-### Compartir y solicitar acceso a los elementos de la Bandeja de entrada de un usuario (6.5.3.0) {#share-request-access}
+### Uso compartido y solicitud de acceso a elementos de la bandeja de entrada de un usuario de AEM Forms (6.5.3.0) {#share-request-access}
 
 Puede compartir los elementos de la Bandeja de entrada con otro usuario. Una vez que otro usuario obtiene acceso a los elementos de la Bandeja de entrada, el usuario puede reclamar y realizar las acciones correspondientes en los elementos compartidos. Del mismo modo, puede solicitar acceso a los elementos de la Bandeja de entrada a otros usuarios. Consulte [Uso compartido y solicitud de acceso a elementos de la Bandeja de entrada de un usuario](../forms/using/configure-shared-queues-osgi.md).
 
-### Configurar la configuración externa de los elementos de la Bandeja de entrada (6.5.3.0) {#configure-out-of-office}
+### Configuración de la configuración externa de los elementos de la Bandeja de entrada de un usuario de AEM Forms (6.5.3.0) {#configure-out-of-office}
 
 Si planea salir de la oficina, puede especificar lo que sucede con los artículos que se le han asignado para ese período.
 Tiene la opción de especificar una fecha y hora de inicio y una fecha y hora de finalización para que la configuración fuera de la oficina esté en vigor. Puede establecer una persona predeterminada a la que se enviarán todos los elementos. Consulte [Configuración fuera de la oficina](../forms/using/configure-out-of-office-settings.md).
 
-### Generar varias comunicaciones interactivas mediante la API por lotes (6.5.3.0) {#generate-multiple-ic}
+### Generar varias comunicaciones interactivas mediante la API por lotes para AEM Forms (6.5.3.0) {#generate-multiple-ic}
 
 Puede utilizar la API por lotes para generar varias comunicaciones interactivas a partir de una plantilla. La plantilla es una comunicación interactiva sin datos. La API de lote combina datos con una plantilla para generar una comunicación interactiva. La API es útil en la producción masiva de comunicaciones interactivas. Por ejemplo: facturas telefónicas, extractos de tarjetas de crédito para varios clientes. Consulte [Generación de varias comunicaciones interactivas mediante la API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)por lotes.
 
