@@ -533,7 +533,7 @@ La asignación de eVars y eventos de Analytics a variables de AEM es visible des
 
 Después de habilitar Analytics y antes de publicar el sitio de la comunidad, la asignación se puede modificar en el marco arrastrando la eVar o evento de Analytics desde el carril izquierdo y colocándolo en la fila pertinente de la tabla de asignación.
 
-Para evitar asignaciones duplicadas, asegúrese de eliminar la evar o el evento de Analytics reemplazados de la fila pasando el ratón sobre él y seleccionando la &quot;X&quot; que aparece a la derecha del elemento de la variable de Analytics.
+Para evitar asignaciones duplicadas, asegúrese de quitar la evar o el evento de Analytics reemplazados de la fila pasando el ratón sobre él y seleccionando la &quot;X&quot; que aparece a la derecha del elemento de la variable de Analytics.
 
 Si las eVars y los eventos de Communities sobrescriben las asignaciones que existían previamente en el grupo de informes y, a continuación, para evitar la pérdida de datos, asigne las variables de AEM para las funciones de Communities a otras eVars o eventos de Analytics y restaure las asignaciones originales.
 
