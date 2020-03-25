@@ -3,7 +3,7 @@ title: Acerca de Recursos AEM
 description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta de recursos AEM de Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
 
 ---
 
@@ -14,7 +14,7 @@ Assets es una herramienta de gestión de recursos digitales (DAM) totalmente int
 
 ## What is Digital Asset Management? {#what-is-digital-asset-management}
 
-Assets proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales como imágenes, gráficos, audio, vídeo y documentos a través de una interfaz Web (o una carpeta CIFS o WebDAV).
+Assets proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales como imágenes, gráficos, audio, vídeo y documentos a través de una interfaz web (o una carpeta CIFS o WebDAV).
 
 AEM Assets, bien integrado en AEM, le permite hacer lo siguiente:
 
@@ -72,15 +72,15 @@ Cuando se trabaja con activos digitales en AEM, debe conocer los siguientes tér
 
 * **Representaciones** Una representación es la representación binaria de un recurso. Los recursos siempre tienen una representación principal, que es la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
 
-* **Versiones** Al generar una versión se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. Consulte Creación de versiones en AEM Assets.
+* **Versiones** Al generar una versión se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **Los subrecursos** son recursos que componen un recurso, por ejemplo, capas en un archivo de Adobe Photoshop o páginas en un archivo PDF. En AEM Assets, puede administrar los subactivos igual que los activos.
 
 ### How to work with assets {#how-to-work-with-assets}
 
-Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) desencadenan flujos de trabajo preconfigurados. Estos se activan automáticamente en AEM Assets y se describen en detalle en los controladores de medios de AEM Assets.
+Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) activan flujos de trabajo preconfigurados. Estos se activan automáticamente en AEM Assets y se describen en detalle en los controladores de medios de AEM Assets.
 
-Tareas que puede realizar con estos flujos de trabajo preconfigurados:
+Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
 * Guardar el activo en el repositorio o eliminarlo de él.
 * Extraer y guardar los metadatos del activo; cada elemento de metadatos se guarda como XMP.
