@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7ae0055e09c3ae2ff2898ac4f6c537a825dc0cf0
+source-git-commit: 7345d629aa628c2e2e094a8194d9306d7c3d2d60
 
 ---
 
@@ -22,19 +22,19 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.10.6.
 
-* Experience Manager Assets ahora admite archivos ZIP creados con el algoritmo Deflate 64.
+* Recursos Adobe Experience Manager ahora admite archivos ZIP creados con el algoritmo Deflate64.
 
-* Se ha añadido una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de lista.
+* Se ha agregado una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de listas.
 
-* La clasificación de recursos basada en la columna Nombre se ha activado en la vista de lista.
+* La clasificación de recursos basada en la columna Nombre se ha activado en la vista de Listas.
 
 * Los medios dinámicos ahora admiten recursos de vídeo de recorte inteligente. Smart Crop es una función de aprendizaje automático que vuelve a recortar un vídeo mientras mueve el fotograma para seguir el punto focal de la escena.
 
 * Dynamic Media admite imágenes inteligentes.
 
-* Posibilidad de [establecer preferencias fuera de Office](../forms/using/configure-out-of-office-settings.md) en flujos de trabajo de AEM.
+* Posibilidad de [establecer preferencias fuera de Office](../forms/using/configure-out-of-office-settings.md) en flujos de trabajo AEM.
 
-* Posibilidad de [compartir elementos](../forms/using/configure-shared-queues-osgi.md) de bandeja de entrada o bandeja de entrada con otros usuarios en flujos de trabajo de AEM.
+* Posibilidad de [compartir elementos](../forms/using/configure-shared-queues-osgi.md) de bandeja de entrada o bandeja de entrada con otros usuarios en flujos de trabajo AEM.
 
 * Capacidad para [generar comunicaciones interactivas en modo](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)por lotes.
 
@@ -46,11 +46,11 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Experience Manager Assets ahora admite archivos ZIP creados con el algoritmo Deflate 64 (NPR-27573).
 
-* Se ha agregado una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de lista (NPR-31312).
+* Se ha agregado una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de listas (NPR-31312).
 
-* La clasificación de recursos basada en la columna Nombre se permite en la vista de lista (NPR-31299).
+* Se ha permitido la ordenación de recursos basada en la columna Nombre en la vista de Listas (NPR-31299).
 
-* Los archivos de recursos GLB, GLTF, OBJ y STL admiten la vista previa de recursos en la página Detalles de recursos de DAM (CQ-4282277).
+* Los archivos de recursos GLB, GLTF, OBJ y STL admiten la previsualización de recursos en la página Detalles de recursos de DAM (CQ-4282277).
 
 * El evento ReplicationOnModifyListener se activa para nodos de fragmento durante la carga de fragmentos en Dynamic Media (CQ-4281279).
 
@@ -58,7 +58,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Dynamic Media admite imágenes inteligentes (CQ-422249).
 
-* La vista de búsqueda y exploración se ha configurado como vista predeterminada en el selector de base si se pasan parámetros de consulta en la solicitud (NPR-31601).
+* La vista de búsqueda y exploración se ha establecido como vista predeterminada en el selector de base si se pasan parámetros de consulta en la solicitud (NPR-31601).
 
 **Correcciones**
 
@@ -68,11 +68,11 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Las ediciones en el formulario de búsqueda predeterminado Administración de recursos * El carril de búsqueda no funciona de la forma esperada (NPR-31502).
 
-* No se muestran sugerencias al utilizar Omniture en la vista Recursos para buscar recursos (NPR-31496).
+* No se muestran sugerencias al utilizar la vista de recursos de Omniture para buscar recursos (NPR-31496).
 
 * Las referencias de recursos dentro de las colecciones no se actualizan cuando los recursos a los que se hace referencia se mueven a otra ubicación, en casos en los que diferentes usuarios hacen referencia a los mismos recursos (NPR-31486).
 
-* Se agregan etiquetas IPTC duplicadas a los metadatos de los recursos (NPR-31328).
+* Las etiquetas IPTC de Duplicado se agregan a los metadatos de los recursos (NPR-31328).
 
 * El recuento de resultados de búsqueda en la esquina superior derecha no se actualiza con precisión cuando la búsqueda se activa desde el carril de filtros (NPR-31316).
 
@@ -90,11 +90,11 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Error de memoria insuficiente cuando se carga un archivo PDF grande (de varios gigabytes) en DAM y se procesan sus subrecursos (NPR-30614).
 
-* El movimiento masivo de recursos está fallando y mostrando un mensaje de advertencia (NPR-30610).
+* El movimiento masivo de recursos falla y muestra un mensaje de advertencia (NPR-30610).
 
 * Los nombres de los recursos se cambian a minúsculas al mover recursos de una carpeta a otra en AEM que se ejecuta en el modo de ejecución de Dynamic Media Scene 7 (NPR-31630).
 
-* Se observa un error al editar un conjunto de imágenes remoto para la imagen que reside en la carpeta con el mismo nombre que el nombre de empresa de Scene7 (NPR-31340).
+* Se observa un error al editar un conjunto de imágenes remoto para la imagen que reside en la carpeta con el mismo nombre de compañía de Scene7 (NPR-31340).
 
 * Los recursos de Dynamic Media que contienen referencias no se publican (NPR-31180).
 
@@ -110,7 +110,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El flujo de trabajo de codificación de vídeo de Dynamic Media no puede generar miniaturas para el vídeo que se migra de Scene7 al modo de ejecución Dynamic Media - Scene 7 (CQ-4282011).
 
-* Se ha observado una excepción IpsApiException al migrar recursos de una instancia a otra mediante distintos ID de empresa de Scene7 (CQ-4280548).
+* Se ha observado una excepción IpsApiException al migrar recursos de una instancia a otra mediante distintos ID de compañía de Scene7 (CQ-4280548).
 
 * La miniatura de un recurso 3D no es informativa cuando se ingesta un modelo 3D compatible en AEM (CQ-4283701).
 
@@ -132,19 +132,19 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El migrador de Scene7 establece el estado de publicación de forma incorrecta (CQ-4263492).
 
-* La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente y pierde la posición de desplazamiento del usuario en los fragmentos de contenido (CQ-4282898).
+* La página de resultados de la búsqueda por IU táctil (realizada a través de Omniture) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario en los fragmentos de contenido (CQ-4282898).
 
 * Los archivos PDF no se indexan y el contenido dentro de no se puede buscar (CQ-4278916).
 
 * Error &quot;Grupo no enumerado por selector de usuario: &quot;se espera que false sea igual a true&quot; se observa al agregar un grupo de usuarios cerrado con diferente `principalName` y `authorizableId` (CQ-4278177).
 
-* La vista de columna de la interfaz de usuario de recursos muestra todas las rutas, independientemente de la ruta raíz de la represa específica del inquilino (CQ-4278175).
+* La Vista de columna de la interfaz de usuario de recursos muestra todas las rutas, independientemente de la ruta raíz de la presa específica del inquilino (CQ-4278175).
 
 * La búsqueda del selector de recursos no funciona correctamente (CQ-4275886).
 
-* Los flujos de trabajo de representación fallan (CQ-4271928).
+* Los Flujos de trabajo de representación fallan (CQ-4271928).
 
-* Depuración de eventos DAM elimina los últimos datos del evento (maxSavedActivities) y contiene los datos creados anteriormente (NPR-31336).
+* Depuración de Evento DAM elimina los datos de evento más recientes (maxSavedActivities) y contiene los datos creados anteriormente (NPR-31336).
 
 * La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario (NPR-31307).
 
@@ -167,9 +167,9 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 ### Búsqueda e interfaz de usuario {#search-ui-interface}
 
-* Al pasar de la vista de tarjeta a la vista de lista en una página de resultados de búsqueda, hay un retraso antes de que se pueda desplazar la página (NPR-31286).
+* Al cambiar de la vista de tarjeta a la vista de Lista en una página de resultados de búsqueda, hay un retraso antes de que se pueda desplazar la página (NPR-31286).
 
-* La casilla de verificación Seleccionar todo está oculta en la vista de lista de la interfaz de usuario Sitios (NPR-31614).
+* La casilla de verificación Seleccionar todo está oculta en la vista de Lista de la interfaz de usuario de Sitios (NPR-31614).
 
 * El recuento Seleccionar todo en una página de resultados de búsqueda es incorrecto (NPR-31120).
 
@@ -189,7 +189,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * QueryBuilder ahora admite pedidos ``fn:name()`` en consultas xpath (NPR-31322).
 
-* Se crea un árbol de activación duplicado al actualizar desde AEM 6.3 (NPR-31513).
+* El árbol de activación de Duplicado se crea al actualizar desde AEM 6.3 (NPR-31513).
 
 * Las solicitudes reenviadas no conservan los encabezados de respuesta establecidos durante la autenticación sling (NPR-30013).
 
@@ -215,7 +215,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Al crear una nueva carpeta Contribution, una o ambas subcarpetas (NUEVAS y COMPARTIDAS) no aparece dentro de la carpeta Contribution (CQ-4282424).
 * El sistema genera una excepción si el usuario intenta volver a publicar la carpeta Contribution de AEM en Brand Portal después de recibir nuevos recursos en la carpeta Contribution desde Brand Portal end (CQ-4279740).
 * La creación de la carpeta Contribution dentro de una carpeta Contribution (carpeta anidada) está prohibida para evitar la complejidad (CQ-4278391).
-* El sistema emite una excepción al cargar la lista de usuarios de Brand Portal (archivo .csv) importada desde la Consola de administración de AEM. Solo son obligatorios los campos Correo electrónico, Nombre y Apellido del archivo .csv (CQ-4278390).
+* El sistema genera una excepción al cargar la lista de usuario de Brand Portal (archivo .csv) importada desde la Consola de administración de AEM. Solo son obligatorios los campos Correo electrónico, Nombre y Apellido del archivo .csv (CQ-4278390).
 
 ### Communities {#communities}
 
@@ -298,7 +298,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Se mejoró la funcionalidad de los recursos conectados para añadir la compatibilidad con la recuperación de documentos desde implementaciones de DAM remotas. Los autores del sitio pueden buscar y filtrar los tipos de documentos admitidos en el Buscador de contenido. Los documentos remotos se pueden agregar al componente Descargar en páginas web. Consulte [Uso de activos conectados](../assets/use-assets-across-connected-assets-instances.md).
 
-* Mejore los filtros de tipo de documento con más tipos MIME para admitir opciones de varios valores.
+* Mejorarfiltros de tipo de documento con más tipos MIME para admitir opciones de varios valores.
 * Se ha introducido un flujo de trabajo de reprocesamiento externo para la compatibilidad con varios recursos
 * Se ha optimizado el rendimiento de Dynamic Media mediante el uso de filtros de recursos predeterminados para la replicación.
 * Se han restaurado las opciones de edición de los recursos de recorte o rotación para DMS7.
@@ -338,7 +338,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * La función Compartir vínculo no funciona en la instancia de AEM con la configuración de DMS7. NPR-30080, NPR-30492: revisión para CQ-4273651
 * Cuando se agrega el componente de Dynamic Media Scene7 a la página y esta se publica, la configuración de dmscene7 no siempre se activa. NPR-30641: revisión para CQ-4275962
 * Se agregó un elemento IPSJobJournal en AEM para crear solo un trabajo de sistemas de prevención de intrusiones (IPS) por perfil de procesamiento. NPR-30490: revisión para CQ-4273614
-* Medios dinámicos: Se han agregado filtros predeterminados para excluir recursos de la replicación en el nodo de publicación de AEM. NPR-30538: revisión para CQ-4274678
+* Medios dinámicos: Se han Añadido filtros predeterminados para excluir recursos de la replicación en el nodo de publicación de AEM. NPR-30538: revisión para CQ-4274678
 * Se ha introducido un flujo de trabajo de reprocesamiento externo para la compatibilidad con varios recursos a fin de permitir que la carpeta sea una carga útil. El flujo de trabajo consta de dos pasos: vuelve a procesar los recursos sin controladores mediante el mapa de metadatos al paso siguiente y vuelve a cargar todos los recursos sin el control de recursos en S7 en un solo trabajo de IPS. Para obtener más información, consulte la configuración de los servicios de Dynamic Media Cloud. NPR-30489: revisión para CQ-4272903
 * Al cargar un archivo CSV incorrecto después de uno correcto, se elimina el archivo CSV correcto. Revisión para CQ-4277694, CQ-4277814
 * Se va a eliminar el icono incorrecto específico de las carpetas de contribución. Revisión para CQ-4277580
@@ -369,7 +369,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Si la herencia de LiveCopy está dañada, las páginas de Live Copy muestran vínculos de copia de idioma en lugar de vínculos de LiveCopy. (NPR-30980)
 * Para un nuevo modelo, si el número de registros es superior a 40, solo se muestran los primeros 40 registros. El modelo muestra líneas en blanco para el resto de los registros. (NPR-31182)
 * El complemento Editor de texto enriquecido (RTE) del componente de texto muestra caracteres distorsionados para texto en japonés y coreano. (NPR-31331)
-* El editor de texto enriquecido (RTE) no permite insertar una tabla incrustada como elemento de lista. (NPR-30879)
+* El Editor de texto enriquecido (RTE) no permite insertar una tabla incrustada como elemento de lista. (NPR-30879)
 * El Editor de texto enriquecido (RTE) de scaffolding de fuera del cuadro se aplica de forma inesperada al tamaño de fuente en línea a los elementos. (NPR-31284)
 * Cuando un usuario se centra en los campos del carril izquierdo y utiliza combinaciones de teclas para pegar contenido, pega el contenido del portapapeles del editor de páginas en lugar del contenido copiado de los campos del carril izquierdo. (NPR-31172)
 * Cuando un usuario agrega un campo Carga de archivo a un campo múltiple, la ruta de la imagen se almacena en el nodo del componente en lugar del nodo de varios campos. (NPR-30882)
@@ -380,7 +380,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 **Mejoras del producto**
 
-* Mejore los filtros de tipo de documento con más tipos MIME para admitir opciones de varios valores. Revisión para CQ-4270694
+* Mejorarfiltros de tipo documento con más tipos MIME para admitir opciones de varios valores. Revisión para CQ-4270694
 
 ### Administración de fragmentos de contenido {#content-fragment-management-6520}
 
@@ -471,7 +471,7 @@ Los aspectos destacados de los formularios de AEM 6.5.2.0 son:
 **Forms: base JEE**
 
 * El servicio HTMLtoPDF no muestra maxReuseCount en la consola JMX. NPR-30134, NPR-30304: revisión para CQ-4273763
-* La adición o edición de una conexión de servicio Web invocando servicios Web desde AEM Forms Workbench genera un error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: revisión para CQ-4273217
+* Añadir o editar una conexión de servicio Web invocando servicios Web desde AEM Forms Workbench genera un error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: revisión para CQ-4273217
 
 ### Paquetes de funciones incluidos {#feature-packs-included}
 
@@ -497,10 +497,10 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Se ha incluido la compatibilidad con la entrega de recursos de vídeo de 360 grados en Dynamic Media Scene 7.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Assets
+### Recursos
 
 * Se ha actualizado la interfaz DAM DMGgateway para que sea compatible con varias partes de S3. NPR-29740: revisión para CQ-4226303
-* La vista previa de las representaciones genera `Only empty tenantId is currently supported` un error después de actualizar a AEM 6.5\. NPR-29986: revisión para CQ-4272353
+* La previsualización de representaciones genera `Only empty tenantId is currently supported` un error tras actualizar a AEM 6.5\. NPR-29986: revisión para CQ-4272353
 * El cuadro de diálogo Eliminar no está visible para permitir la eliminación de trabajos. NPR-29720: revisión para CQ-4271074
 * Después de añadir el título del recurso en la página de propiedades, cuando un usuario intenta cerrar la página, AEM vuelve a abrir la página de propiedades. NPR-29627: revisión para CQ-4264929
 * El elemento VersioningTimelineEventProvider debe proporcionar la versión raíz junto con el nodo de tipo nt: versión. Revisión para GRANITE-26063
@@ -537,7 +537,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 ### Fragmentos de experiencias
 
 * Exportar fragmentos de experiencias de AEM a Adobe Target. Revisión para CQ-4265469
-* La exportación de fragmentos de experiencia a destino falla con la imagen inteligente. Revisión para CQ-4269606
+* La exportación de fragmentos de experiencia a destinatario falla con la imagen inteligente. Revisión para CQ-4269606
 
 * El usuario llega a un callejón sin salida cuando intenta mover los fragmentos de experiencia a través de la omnibúsqueda de la vista de tarjeta. Revisión para CQ-4263848
 
@@ -641,7 +641,7 @@ Los aspectos destacados de los formularios de AEM 6.5.1.0 son:
 * La plantilla de comunicación interactiva no enumera los componentes del encabezado y pie de página en la lista de componentes permitidos. Revisión para CQ-4237895
 * Cuando se crea una plantilla de impresión de comunicación interactiva que contiene un campo de imagen, el título del gráfico se define en blanco. Revisión para CQ-4264772
 * Color de línea de un gráfico que, al eliminarse, se establece como no definido. Revisión para CQ-4264762
-* Los cambios realizados en la capa de diseño en el fragmento de documento desaparecen al realizar los cambios para mantener sincronizados. Revisión para CQ-4266054
+* Los cambios realizados en la capa de diseño en el fragmento de Documento desaparecen al realizar los cambios para mantener la sincronización. Revisión para CQ-4266054
 * El elemento del modelo de datos de formulario de un fragmento de documento vinculado a un campo de texto no muestra el icono de herencia y permite el enlace. Revisión para CQ-4261089
 * La API de procesamiento del canal de impresión no tiene la opción de pasar datos como parámetro en la API. Revisión para CQ-4263540
 * La configuración del agente no está visible, ya que la casilla de verificación Editar por agente se desactiva cuando se cambia el tipo de enlace de fragmento de texto a Ninguno/Objeto del modelo de datos para campo o variable de cadena. Revisión para CQ-4261953
@@ -719,7 +719,7 @@ Los aspectos destacados de los formularios de AEM 6.5.1.0 son:
 
 #### Forms: servicios de documentos - Incluido
 
-* Solo OSGi: Se ha agregado un nuevo atributo PAGECOUNT en Output y Forms Service. NPR-28922: revisión para CQ-4270870
+* Solo OSGi: Se Añadió un nuevo atributo PAGECOUNT en Output y Forms Service. NPR-28922: revisión para CQ-4270870
 * Solo OSGi: Se ha habilitado la compatibilidad para crear archivos PDF estáticos mediante Forms Service. NPR-28572: revisión para CQ-4270869
 * Permisos activados en XMLForm.exe para usuarios raíz y administradores. NPR-29237: revisión para CQ-4267080
 
