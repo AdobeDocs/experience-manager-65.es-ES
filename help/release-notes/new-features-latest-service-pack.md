@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
+source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
 
 Adobe Experience Manager (AEM) 6.5 ofrece funciones y mejoras continuas mediante Service Packs trimestrales. El enfoque le beneficia a medida que las innovaciones son más fáciles de adoptar.
 
-AEM Service Pack 4 (6.5.4.0) está disponible el 5 **de marzo de 2020**. Este artículo destaca las funciones clave que ofrecen los Service Packs 6.5 para enriquecer el viaje de AEM.
+AEM Service Pack 4 (6.5.4.0) está disponible el 5 **de marzo de 2020**. En este artículo se destacan las funciones clave de la oferta Service Packs 6.5 para enriquecer el viaje de AEM.
 
 ## AEM Sites {#aem-sites}
 
@@ -35,7 +35,7 @@ Ahora puede seleccionar estilos dentro del cuadro de diálogo de componentes med
 
 ### Configuración de AEM Assets con Brand Portal {#configure-assets-bp}
 
-Se ha cambiado el canal de autorización entre AEM Assets y Brand Portal. Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un token de acceso IMS para la autorización. Recursos AEM ahora se configura con Brand Portal a través de Adobe I/O, que proporciona un distintivo IMS para la autorización del inquilino de Brand Portal.
+Se ha cambiado el canal de autorización entre AEM Assets y Brand Portal. Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un Token de acceso IMS para la autorización. Recursos AEM ahora se configura con Brand Portal a través de Adobe I/O, que proporciona un distintivo IMS para la autorización del inquilino de Brand Portal.
 
 Los pasos para configurar Recursos AEM con Brand Portal son diferentes en función de la versión de AEM y de si está configurando por primera vez o actualizando las configuraciones existentes. Consulte [Configuración de AEM Assets con Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) para obtener más información.
 
@@ -44,9 +44,9 @@ Los pasos para configurar Recursos AEM con Brand Portal son diferentes en funci�
 
 Experience Manager Assets incluye las siguientes mejoras de accesibilidad:
 
-* Las teclas de flecha del teclado se pueden utilizar para mover y recorrer áreas dentro de imágenes con zoom. Para obtener más información, consulte [Vista previa de recursos utilizando únicamente](../assets/managing-assets-touch-ui.md#previewing-assets)teclas de teclado.
+* Las teclas de flecha del teclado se pueden utilizar para mover y recorrer áreas dentro de imágenes con zoom. Para obtener más información, consulte Recursos de [previsualización utilizando únicamente](../assets/managing-assets-touch-ui.md#previewing-assets)teclas de teclado.
 
-* Las casillas de verificación de estado mixto (en las que, a menos que seleccione todos los predicados anidados, las casillas de verificación de primer nivel no se seleccionan y se rompen) en el panel Filtros son legibles por los lectores de pantalla.
+* Los lectores de pantalla pueden leer las casillas de verificación de estado mixto (en las que, a menos que seleccione todos los predicados anidados, las casillas de verificación de primer nivel no se seleccionan y se rompen) en el panel Filtros.
 
 * Las restricciones de formato de fecha y hora se proporcionan en las etiquetas de campo de los campos de fecha, para permitir que los usuarios introduzcan la fecha en el formato correcto mediante el teclado.
 
@@ -56,7 +56,7 @@ Experience Manager Assets incluye las siguientes mejoras de accesibilidad:
 
 ## Formularios AEM {#aem-forms}
 
-### Generar resultados imprimibles en flujos de trabajo de AEM Forms {#generate-printable-output}
+### Generar salida imprimible en flujos de trabajo de AEM Forms {#generate-printable-output}
 
 El paso de flujo de trabajo Generar salida imprimible permite integrar un archivo de plantilla de origen con un archivo de datos. Esta integración le permite imprimir o guardar diferentes copias del archivo de plantilla. El paso genera una salida PCL, PostScript, ZPL, IPL, TPCL o DPL. Para obtener más información sobre esta función, consulte Flujo de trabajo centrado en [formularios en OSGi - Referencia](../forms/using/aem-forms-workflow-step-reference.md)de pasos.
 
@@ -86,8 +86,6 @@ Conversión de un campo de texto en un formulario XFA en un campo de texto enriq
 
 Los formularios de Experience Manager incluyen las siguientes mejoras de accesibilidad:
 
-* Los usuarios pueden cambiar el enfoque de tabulación sin ningún problema para el tema de referencia Ultramarina-Accesible de un formulario adaptable.
-
 * Los lectores de pantalla anuncian los campos de casillas de verificación, vínculos, selector de fecha e introducción de fecha correctamente en un formulario adaptable.
 
 * Cada página de un formulario adaptable ahora incluye un título y una etiqueta de punto de referencia principal.
@@ -96,7 +94,7 @@ Los formularios de Experience Manager incluyen las siguientes mejoras de accesib
 
 ### Imágenes inteligentes para Dynamic Media (6.5.3.0) {#smart-imaging}
 
-Las imágenes inteligentes utilizan las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes correctas optimizadas para su experiencia, lo que mejora el rendimiento y la participación. Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de la publicación para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](../assets/imaging-faq.md).
+Las imágenes inteligentes utilizan las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes correctas optimizadas para su experiencia, lo que mejora el rendimiento y la participación. Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](../assets/imaging-faq.md).
 
 ### Búsqueda visual de AEM Assets (6.5.2.0) {#visual-search}
 
@@ -135,7 +133,7 @@ Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las sigui
 
 * Sitios AEM: Arquetipo de proyecto 23
 
-   La mejor manera de iniciar un nuevo proyecto de AEM. Archetype 23 combina el arquetipo del [proyecto para SPA y sitios regulares en uno](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23) y proporciona un tema predeterminado para poner en marcha su desarrollo de front-end.
+   La mejor forma de inicio de un nuevo proyecto de AEM. Archetype 23 combina el arquetipo [del proyecto para SPA y sitios regulares en uno](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23) y proporciona un tema predeterminado para dar inicio a su desarrollo front-end.
 
 * Sitios AEM: Sitio de referencia WKND
 
