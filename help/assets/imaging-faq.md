@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
+source-git-commit: 582b7e9f36d3b9599058b4cfbe83897822b26d05
 
 ---
 
@@ -24,7 +24,7 @@ Smart Imaging también se beneficia del aumento de rendimiento añadido de la in
 Los siguientes ejemplos de recursos de imagen muestran la optimización de imágenes inteligentes añadida:
 
 | Image<br>(URL) | Miniatura   | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes ***inteligentes***) | % de reducción |
-|---|:---:|:---:|:---:|:---:|:---:|
+|---|---|---|---|---|
 | [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
 | [Imagen 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
