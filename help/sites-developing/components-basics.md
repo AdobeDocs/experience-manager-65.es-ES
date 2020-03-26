@@ -1,8 +1,8 @@
 ---
 title: 'Componentes de AEM: conceptos básicos'
 seo-title: 'Componentes de AEM: conceptos básicos'
-description: Cuando comience a desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración
-seo-description: Cuando comience a desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración
+description: Cuando inicio desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración
+seo-description: Cuando inicio desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración
 uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 00c98c4c1178f88844f6bec8a214d096205c58cd
 
 ---
 
 
 # Componentes de AEM: conceptos básicos{#aem-components-the-basics}
 
-Cuando comience a desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración.
+Cuando inicio desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración.
 
 Este proceso implica leer la teoría y observar la amplia gama de implementaciones de componentes en una instancia estándar de AEM. Este último enfoque se complica ligeramente por el hecho de que, aunque AEM ha cambiado a una nueva IU estándar, moderna y táctil, sigue admitiendo la IU clásica.
 
@@ -44,7 +44,7 @@ Antes de empezar a configurar o codificar realmente el componente, debe pregunta
 
 ### IU táctil frente a clásica {#touch-enabled-vs-classic-ui}
 
-Antes de iniciar un debate serio sobre el desarrollo de componentes, debe saber qué IU utilizarán los autores:
+Antes de cualquier inicio de debate serio sobre el desarrollo de componentes, debe saber qué IU usarán los autores:
 
 * **IU táctil**
    [La interfaz](/help/sites-developing/touch-ui-concepts.md) de usuario estándar se basa en la experiencia de usuario unificada de Adobe Marketing Cloud, con las tecnologías subyacentes de la IU [de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU de [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
@@ -101,17 +101,17 @@ Utilice las siguientes herramientas para mover los componentes a la instancia de
 >
 >Estos mecanismos también se pueden utilizar para transferir el componente entre otras instancias, por ejemplo, del desarrollo a la instancia de prueba.
 
-### Componentes que se deben tener en cuenta desde el inicio {#components-to-be-aware-of-from-the-start}
+### Componentes que se deben tener en cuenta en el Inicio {#components-to-be-aware-of-from-the-start}
 
 * Página:
 
    * AEM tiene el componente de *página* ( `cq:Page`).
-   * Es un tipo específico de recurso que es importante para la administración de contenido.
+   * Es un tipo específico de recurso que es importante para el gestor de contenido.
       * Una página corresponde a una página web que contiene contenido para el sitio web.
 
 * Sistemas de párrafos:
 
-   * El sistema de párrafos es una parte clave de un sitio web, ya que gestiona una lista de párrafos. Se utiliza para retener y estructurar los componentes individuales que contienen el contenido real.
+   * El sistema de párrafos es una parte fundamental de un sitio web, ya que gestiona una lista de párrafos. Se utiliza para retener y estructurar los componentes individuales que contienen el contenido real.
    * Puede crear, mover, copiar y eliminar párrafos en el sistema de párrafos.
    * También puede seleccionar los componentes que estarán disponibles para su uso en un sistema de párrafos específico.
    * Hay varios sistemas de párrafos disponibles en una instancia estándar (por ejemplo `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
@@ -153,15 +153,15 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
    * `/apps/<myApp>/components`
 
-* Los componentes estándar de AEM se definen como `cq:Component` y tienen elementos clave:
+* Los componentes estándar de AEM se definen como `cq:Component` y tienen los elementos clave:
 
    * propiedades de jcr:
 
-      Una lista de propiedades jcr; son variables y algunas pueden ser opcionales a través de la estructura básica de un nodo de componente, sus propiedades y subnodos están definidos por la `cq:Component` definición
+      lista de las propiedades jcr; son variables y algunas pueden ser opcionales a través de la estructura básica de un nodo de componente, sus propiedades y subnodos están definidos por la `cq:Component` definición
 
    * Medios:
 
-      Definen los elementos estáticos utilizados por el componente.
+      Definen elementos estáticos utilizados por el componente.
 
    * Secuencias de comandos:
    Se utilizan para implementar el comportamiento de la instancia resultante del componente.
@@ -270,7 +270,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>cq:isContainer</code></td>
    <td><code>Boolean</code></td>
-   <td>Indica si el componente es un componente contenedor y, por tanto, puede contener otros componentes, como un sistema de párrafos.</td>
+   <td>Indica si el componente es un componente de contenedor y, por tanto, puede contener otros componentes, como un sistema de párrafos.</td>
   </tr>
   <tr>
    <td> </td>
@@ -397,8 +397,8 @@ Si vemos el componente **Texto** (cualquiera de las dos versiones), podemos ver 
 
 Entre las propiedades de particular interés se incluyen:
 
-* `jcr:title` - título del componente; esto se puede utilizar para identificar el componente; por ejemplo, aparece en la lista de componentes del navegador de componentes o la barra de tareas
-* `jcr:description` - descripción del componente; se puede utilizar como sugerencia para pasar el ratón por encima en la lista de componentes de la barra de tareas
+* `jcr:title` - título del componente; esto se puede utilizar para identificar el componente; por ejemplo, aparece en la lista del componente en el navegador de componentes o en la barra de tareas
+* `jcr:description` - descripción del componente; se puede utilizar como indicio de desplazamiento del ratón en la lista del componente dentro de la barra de tareas
 * `sling:resourceSuperType`:: esto indica la ruta de herencia al ampliar un componente (anulando una definición)
 
 Los nodos secundarios de interés particular incluyen:
@@ -474,12 +474,12 @@ Los diálogos de diseño son muy similares a los que se utilizan para editar y c
 
 El cuadro de diálogo de diseño para el sistema de párrafos (por ejemplo, parsys) es un caso especial ya que permite al usuario seleccionar otros componentes específicos para seleccionarlos (desde el navegador de componentes o la barra de tareas) en la página.
 
-### Adición del componente al sistema de párrafos {#adding-your-component-to-the-paragraph-system}
+### Añadir el componente al sistema de párrafos {#adding-your-component-to-the-paragraph-system}
 
-Una vez definido un componente, debe estar disponible para su uso. Para que un componente esté disponible para su uso en un sistema de párrafos, puede realizar una de las acciones siguientes:
+Una vez definido un componente, debe estar disponible para su uso. Para hacer que un componente esté disponible para su uso en un sistema de párrafos, puede:
 
 1. Abra el modo [de](/help/sites-authoring/default-components-designmode.md) diseño de una página y habilite el componente requerido.
-1. Agregue los componentes necesarios a la `components` propiedad de la definición de plantilla en:
+1. Añada los componentes necesarios a la `components` propiedad de la definición de plantilla en:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
 
@@ -528,7 +528,7 @@ Los componentes de AEM están sujetos a tres jerarquías diferentes:
    * cuadros de diálogo
    * descripciones (incluidas imágenes en miniatura, iconos, etc.)
 
-* **Jerarquía de contenedores**
+* **Jerarquía de Contenedor**
 
    Se utiliza para rellenar los ajustes de configuración del componente secundario y se utiliza con mayor frecuencia en un escenario parsys.
 
@@ -553,7 +553,7 @@ El comportamiento de edición de un componente se configura agregando un `cq:edi
 * [ Propiedades `cq:editConfig` del nodo](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` ( `String array`): define las acciones que se pueden realizar en el componente.
-   * `cq:layout` ( `String`)::: define cómo se edita el componente en la IU clásica.
+   * `cq:layout` ( `String`): :: define cómo se edita el componente en la IU clásica.
    * `cq:dialogMode` ( `String`): define cómo se abre el cuadro de diálogo del componente en la IU clásica
 
       * En la IU táctil, los cuadros de diálogo siempre flotan en modo de escritorio y se abren automáticamente como pantalla completa en dispositivos móviles.
@@ -564,11 +564,11 @@ El comportamiento de edición de un componente se configura agregando un `cq:edi
 
 * [ `cq:editConfig` nodos](#configuring-with-cq-editconfig-child-nodes)secundarios:
 
-   * `cq:dropTargets` (tipo de nodo `nt:unstructured`): define una lista de destinos de colocación que pueden aceptar una colocación desde un recurso del buscador de contenido
+   * `cq:dropTargets` (tipo de nodo `nt:unstructured`): define una lista de destinatarios de colocación que pueden aceptar una colocación desde un recurso del buscador de contenido
 
-      * Los destinos de colocación múltiples solo están disponibles en la IU clásica.
-      * En la IU táctil se permite un solo destino de colocación.
-   * `cq:actionConfigs` (tipo de nodo `nt:unstructured`): define una lista de acciones nuevas que se anexan a la lista cq:actions.
+      * Los destinatarios de colocación múltiples solo están disponibles en la IU clásica.
+      * En la IU táctil se permite un solo destinatario de colocación.
+   * `cq:actionConfigs` (tipo de nodo `nt:unstructured`): define una lista de nuevas acciones que se anexan a la lista cq:actions.
    * `cq:formParameters` (tipo de nodo `nt:unstructured`): define parámetros adicionales que se agregan al formulario de diálogo.
    * `cq:inplaceEditing` (tipo de nodo `cq:InplaceEditingConfig`): define una configuración de edición in situ para el componente.
    * `cq:listeners` (tipo de nodo `cq:EditListenersConfig`): define lo que sucede antes o después de que se produzca una acción en el componente.
@@ -618,23 +618,27 @@ La `cq:actions` propiedad ( `String array`) define una o varias acciones que se 
   </tr>
   <tr>
    <td>-</td>
-   <td>Agrega un espaciador.<br /> Solo visible en la IU clásica. La IU táctil no muestra acciones en un menú contextual, por lo que esto no es aplicable.</td>
+   <td>Añade un espaciador.<br /> Solo visible en la IU clásica. La IU táctil no muestra acciones en un menú contextual, por lo que esto no es aplicable.</td>
   </tr>
   <tr>
    <td><code>edit</code></td>
-   <td>Agrega un botón para editar el componente.</td>
+   <td>Añade un botón para editar el componente.</td>
   </tr>
+      <tr>
+    <td><code>editannotate</code></td>
+    <td>Añade un botón para editar el componente y permitir <a href="/help/sites-authoring/annotations.md">anotaciones</a>.</td>
+   </tr>
   <tr>
    <td><code>delete</code></td>
-   <td>Agrega un botón para eliminar el componente</td>
+   <td>Añade un botón para eliminar el componente</td>
   </tr>
   <tr>
    <td><code>insert</code></td>
-   <td>Agrega un botón para insertar un componente nuevo antes del actual</td>
+   <td>Añade un botón para insertar un componente nuevo antes del actual</td>
   </tr>
   <tr>
    <td><code>copymove</code></td>
-   <td>Agrega un botón para copiar y cortar el componente.</td>
+   <td>Añade un botón para copiar y cortar el componente.</td>
   </tr>
  </tbody>
 </table>
@@ -669,7 +673,7 @@ La `cq:layout` propiedad ( `String`) define cómo se puede editar el componente 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td> Valor predeterminado. Se puede acceder a la edición de componentes "al pasar el ratón sobre" mediante clics o menús contextuales.<br /> Para uso avanzado, tenga en cuenta que el objeto de cliente correspondiente es: <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Valor predeterminado. Se puede acceder a la edición de componentes "al pasar el ratón sobre" mediante clics o menús contextuales.<br /> Para uso avanzado, tenga en cuenta que el objeto de cliente correspondiente es: <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
@@ -757,15 +761,15 @@ La `dialogLayout` propiedad define cómo se debe abrir un cuadro de diálogo de 
 
 ### cq:dropTargets {#cq-droptargets}
 
-El `cq:dropTargets` nodo (tipo de nodo `nt:unstructured`) define una lista de destinos de colocación que pueden aceptar una colocación de un recurso arrastrado desde el buscador de contenido. Sirve como una colección de nodos de tipo `cq:DropTargetConfig`.
+El `cq:dropTargets` nodo (tipo de nodo `nt:unstructured`) define una lista de destinatarios de colocación que pueden aceptar una colocación de un recurso arrastrado desde el buscador de contenido. Sirve como una colección de nodos de tipo `cq:DropTargetConfig`.
 
 >[!NOTE]
 >
->Los destinos de colocación múltiples solo están disponibles en la IU clásica.
+>Los destinatarios de colocación múltiples solo están disponibles en la IU clásica.
 >
->En la IU táctil solo se utilizará el primer destino.
+>En la IU táctil solo se utilizará el primer destinatario.
 
-Cada nodo secundario del tipo `cq:DropTargetConfig` define un destino de colocación en el componente. El nombre del nodo es importante porque debe usarse en JSP, como se indica a continuación, para generar el nombre de clase CSS asignado al elemento DOM que es el destino de colocación efectivo:
+Cada nodo secundario del tipo `cq:DropTargetConfig` define un destinatario de colocación en el componente. El nombre del nodo es importante porque debe usarse en JSP, como se indica a continuación, para generar el nombre de clase CSS asignado al elemento DOM que es el destinatario de colocación efectivo:
 
 ```
 <drop target css class> = <drag and drop prefix> +
@@ -776,7 +780,7 @@ La propiedad Java `<drag and drop prefix>` define:
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-Por ejemplo, el nombre de clase se define de la siguiente manera en el JSP del componente de descarga ( `/libs/foundation/components/download/download.jsp`), donde `file` es el nombre de nodo del destino de colocación en la configuración de edición del componente de descarga:
+Por ejemplo, el nombre de clase se define de la siguiente manera en el JSP del componente de descarga ( `/libs/foundation/components/download/download.jsp`), donde `file` es el nombre de nodo del destinatario de colocación en la configuración de edición del componente de descarga:
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
@@ -794,7 +798,7 @@ El nodo de tipo `cq:DropTargetConfig` debe tener las siguientes propiedades:
   </tr>
   <tr>
    <td><code>groups</code></td>
-   <td>Matriz de grupos de destino de colocación. Cada grupo debe coincidir con el tipo de grupo definido en la extensión de Content Finder y que se adjunta a los recursos.</td>
+   <td>Matriz de grupos destinatarios de colocación. Cada grupo debe coincidir con el tipo de grupo definido en la extensión de Content Finder y que se adjunta a los recursos.</td>
   </tr>
   <tr>
    <td><code>propertyName</code></td>
@@ -846,7 +850,7 @@ La siguiente configuración de ejemplo define un botón nuevo (con un separador 
 
 >[!NOTE]
 >
->Consulte [Agregar nueva acción a una barra de herramientas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) de componentes como ejemplo para la IU táctil.
+>Consulte [Añadir nueva acción en una barra de herramientas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) de componentes como ejemplo para la IU táctil.
 
 ### cq:formParameters {#cq-formparameters}
 
@@ -967,7 +971,7 @@ El `cq:listeners` nodo (tipo de nodo `cq:EditListenersConfig`) define lo que suc
   </tr>
   <tr>
    <td><code>afterchildinsert</code></td>
-   <td>El controlador se activa después de insertar el componente dentro de otro componente (sólo contenedores).</td>
+   <td>El controlador se activa después de insertar el componente dentro de otro componente (solo contenedores).</td>
    <td> </td>
   </tr>
  </tbody>
@@ -990,7 +994,7 @@ El `cq:listeners` nodo (tipo de nodo `cq:EditListenersConfig`) define lo que suc
 * `aftercopy`
 
 
-El controlador de eventos se puede implementar con una implementación personalizada. Por ejemplo (donde `project.customerAction` es un método estático):
+El controlador de evento se puede implementar con una implementación personalizada. Por ejemplo (donde `project.customerAction` es un método estático):
 
 `afteredit = "project.customerAction"`
 
@@ -999,7 +1003,7 @@ El siguiente ejemplo equivale a la configuración `REFRESH_INSERTED` :
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Para ver qué parámetros se pueden utilizar en la IU clásica, consulte la sección `before<action>` y `after<action>` eventos de la documentación de la [ utilidad y la utilidad `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) y [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) la documentación de la utilidad.
+Para ver qué parámetros se pueden utilizar en la IU clásica, consulte la sección `before<action>` y `after<action>` eventos de la documentación de la [ y la `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) utilidad.
 
 Con la siguiente configuración, la página se actualiza después de eliminar, editar, insertar o mover el componente:
 
