@@ -1,8 +1,8 @@
 ---
 title: Función de tabla de clasificación
 seo-title: Función de tabla de clasificación
-description: Adición de un componente Leadboard a una página
-seo-description: Adición de un componente Leadboard a una página
+description: Añadir un componente de tabla de clasificación en una página
+seo-description: Añadir un componente de tabla de clasificación en una página
 uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Función de tabla de clasificación{#leaderboard-feature}
+# Función de tabla de clasificación {#leaderboard-feature}
 
 ## Introducción {#introduction}
 
@@ -26,8 +26,8 @@ Antes de incluir el componente de la tabla de clasificación en una página, es 
 
 Esta sección de la documentación describe
 
-* adición del `Leaderboard` componente a un sitio [de comunidad](/help/communities/overview.md#community-sites)
-* configuración del `Leaderboard` componente
+* Añadir el `Leaderboard` componente en un sitio [de comunidad](/help/communities/overview.md#community-sites)
+* Configuración del `Leaderboard` componente
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -51,7 +51,7 @@ Seleccione el componente colocado al que desea acceder y seleccione el `Leaderbo
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **Configuración **, especifique qué información relacionada con el miembro se muestra:
+En la ficha **Configuración** , especifique qué información relacionada con el miembro se muestra:
 
 * **Nombre para mostrar**
 
@@ -70,7 +70,7 @@ El valor predeterminado no está marcado.
 
 * **Usar avatar**
 
-   Si se selecciona, la imagen de avatar del miembro se incluye en la tabla de clasificación, junto al vínculo de nombre de su perfil de miembro.
+   Si se selecciona, la imagen de avatar del miembro se incluye en la tabla de clasificación, junto al vínculo de nombre del perfil del miembro.
 El valor predeterminado no está marcado.
 
 #### Ficha Reglas {#rules-tab}
@@ -79,21 +79,19 @@ Bajo la ficha **Reglas** , el sitio de la comunidad y sus reglas de puntuación 
 
 * **Ubicación de la regla**
 
-   (obligatorio) Ubicación en la que está configurada la regla de Puntuación/Insignia.
+   (Requerido) Ubicación en la que está configurada la regla de Puntuación/Insignia.
 
 * **Regla de puntuación**
 
-   (obligatorio) Regla específica que genera las puntuaciones que se van a mostrar.
+   (Requerido) Regla específica que genera las puntuaciones que se van a mostrar.
 
 * **Regla de creación de distintivos**
 
-   (obligatorio) Regla específica que genera el distintivo para mostrar.
+   (Requerido) Regla específica que genera el distintivo para mostrar.
 
 * **Límite de visualización**
 
-   Número de miembros que se mostrarán por página.
-
-   El valor predeterminado es 10.
+   Número de miembros que mostrar por página.El valor predeterminado es 10.
 
 ### Ejemplo: Mesa de liderazgo de los participantes {#example-participants-leaderboard}
 
