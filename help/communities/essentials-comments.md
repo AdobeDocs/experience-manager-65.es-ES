@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -34,7 +34,7 @@ El componente de comentarios establece un sistema de comentarios de modo que cad
    <td>Sí: las propiedades se pueden editar en <i>el </i>modo de diseño</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.vote</td>
   </tr>
   <tr>
@@ -69,9 +69,9 @@ Otras funciones ya incluyen el sistema de comentarios. Estos son:
 
 ### Lista de motivos de indicación {#flag-reason-list}
 
-La lista de motivos de marcado se puede personalizar agregando flagreasonlist.hbs a la aplicación para sobrescribir lo que se encuentra en
+La lista del motivo de marcado se puede personalizar agregando flagreasonlist.hbs a la aplicación para sobrescribir lo que se encuentra en
 
-* /libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs
+* `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
 Esto se aplica a cualquier componente que extienda un sistema de comentarios.
 
@@ -88,13 +88,13 @@ Esto se aplica a cualquier componente que extienda un sistema de comentarios.
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
 Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso mediante programación a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general](srp.md) del proveedor de recursos de almacenamiento de información: Introducción y uso del repositorio
+* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: Introducción y uso del repositorio
 * [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación
 * [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
