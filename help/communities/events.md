@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 Cuando los miembros interactúan con las funciones de Communities, se envían eventos OSGi que pueden activar oyentes asincrónicos, como notificaciones o gamificación (puntuación y distintivo).
 
-La instancia [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de un componente registra los eventos `actions`que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb`asociado a la acción. Hay una relación *n-1* entre `actions`y `verbs`.
+La instancia [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de un componente registra los eventos `actions` que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb` asociado a la acción. Hay una relación *n-1* entre `actions` y `verbs`.
 
-Para los componentes Communities entregados en la versión, las tablas siguientes describen los `verbs`definidos para cada uno de los `topic`disponibles para su uso.
+Para los componentes Communities entregados en la versión, en las tablas siguientes se describe la `verbs` definición de cada uno de los componentes disponibles para `topic` su uso.
 
 ## Temas y verbos {#topics-and-verbs}
 
@@ -33,8 +33,8 @@ Para los componentes Communities entregados en la versión, las tablas siguiente
 |---|---|
 | POST | miembro crea un evento de calendario |
 | AÑADIR | comentarios de miembros en un evento de calendario |
-| ACTUALIZAR | se edita el evento de calendario o comentario del miembro |
-| ELIMINAR | se elimina el evento de calendario o comentario del miembro |
+| ACTUALIZAR | se edita el evento o comentario del calendario del miembro |
+| ELIMINAR | se elimina el evento o comentario del calendario del miembro |
 
 [Componente](essentials-comments.md)ComentariosSocialEvent `topic`= com/adobe/cq/social/comment
 
@@ -63,7 +63,7 @@ Para los componentes Communities entregados en la versión, las tablas siguiente
 | ACTUALIZAR | se edita el tema o la respuesta del foro del miembro |
 | ELIMINAR | se elimina el tema o la respuesta del foro del miembro |
 
-[Journal Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/journal
+[Componente](blog-developer-basics.md)HistorialSocialEvent `topic`= com/adobe/cq/social/historial
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -95,14 +95,14 @@ Para los componentes Communities entregados en la versión, las tablas siguiente
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AGREGAR CLASIFICACIÓN | el contenido del miembro se ha valorado |
+| AÑADIR CLASIFICACIÓN | el contenido del miembro se ha valorado |
 | QUITAR CLASIFICACIÓN | el contenido del miembro se ha reducido |
 
 [Componente](essentials-voting.md)de votaciónSocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AGREGAR VOTACIÓN | el contenido de los miembros ha sido votado |
+| AÑADIR VOTACIÓN | el contenido de los miembros ha sido votado |
 | ELIMINAR VOTACIÓN | el contenido de los miembros ha sido rechazado |
 
 **Componentes** habilitados para moderaciónSocialEvent `topic`= com/adobe/cq/social/moderation
@@ -126,9 +126,9 @@ El evento personalizado anularía el método `getVerb()` para que `verb`se devue
 >
 >Asegúrese de que una extensión personalizada esté registrada con una clasificación inferior a cualquier implementación existente en el producto.
 
-### Pseudocódigo para el evento de componente personalizado {#pseudo-code-for-custom-component-event}
+### Pseudocódigo para el Evento de componentes personalizados {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
+[org.osgi.service.evento.Evento](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
 [com.adobe.granite.activitystream.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
 [com.adobe.granite.activitystream.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
@@ -227,11 +227,11 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 }
 ```
 
-## Ejemplo de EventListener para filtrar datos de flujo de actividad {#sample-eventlistener-to-filter-activity-stream-data}
+## Ejemplo de EventListener para filtrar datos de flujo de Actividad {#sample-eventlistener-to-filter-activity-stream-data}
 
-Es posible escuchar eventos para modificar lo que aparece en el flujo de actividades.
+Es posible escuchar eventos para modificar lo que aparece en el flujo de actividad.
 
-El siguiente ejemplo de pseudocódigo eliminará los eventos DELETE para el componente Comentarios del flujo de actividades.
+El siguiente ejemplo de pseudocódigo eliminará los eventos ELIMINAR para el componente Comentarios del flujo de actividad.
 
 ### Pseudocódigo para EventListener {#pseudo-code-for-eventlistener}
 
