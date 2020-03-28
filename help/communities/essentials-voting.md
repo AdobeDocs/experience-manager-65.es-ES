@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -21,7 +21,7 @@ El componente de voto, una subclase [de recuento](tally.md) , es una herramienta
 
 Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con una `tally name` propiedad única.
 
-No se admite la publicación anónima de un voto. Los visitantes del sitio deben registrarse e iniciar sesión para participar en la votación una sola vez. El visitante (miembro) que ha iniciado sesión puede cambiar su voto en cualquier momento.
+No se admite la publicación anónima de un voto. Los visitantes del sitio deben registrarse e iniciar sesión para participar en la votación una sola vez. El visitante firmado (miembro) puede cambiar su voto en cualquier momento.
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -49,7 +49,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td><p>Consulte <a href="voting.md">Uso de la votación</a></p> </td>
+   <td><p>Consulte, <a href="voting.md">Uso de la votación</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -69,13 +69,13 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
 Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso mediante programación a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general](srp.md) del proveedor de recursos de almacenamiento de información: introducción y uso del repositorio
+* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
 * [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
 * [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
