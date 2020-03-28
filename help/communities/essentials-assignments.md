@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Ascripciones esenciales{#assignments-essentials}
+# Ascripciones esenciales {#assignments-essentials}
 
 Siga leyendo para conocer la información esencial para trabajar con la función de asignaciones de los sitios de comunidad [de](/help/communities/overview.md#enablement-community) habilitación.
 
@@ -48,7 +48,7 @@ La función de asignaciones es la capacidad de asignar recursos de habilitación
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>consulte Función <a href="/help/communities/assignments.md">de asignaciones</a></td>
+   <td>Consulte Función <a href="/help/communities/assignments.md">Asignaciones</a></td>
   </tr>
  </tbody>
 </table>
@@ -89,7 +89,7 @@ Una estructura de sitio de comunidad que incluye la función [](/help/communitie
 
 * [API de habilitación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API de Sistema de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API de informes de Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [API de Sistema de informes Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 
