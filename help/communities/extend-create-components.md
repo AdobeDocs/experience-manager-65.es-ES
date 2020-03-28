@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -148,7 +148,7 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
    * **Nombre**: `clientlibs`
    * **Tipo**: `cq:ClientLibraryFolder`
-   * Agregar a la ficha **[!UICONTROL Propiedades]** :
+   * Añadir a la ficha **[!UICONTROL Propiedades]** :
 
       * **Nombre** `categories` Tipo **** Valor `String` **** `cq.social.author.hbs.comments``Multi`
       * **Nombre** `dependencies` Tipo **** Valor `String` **** `cq.social.scf``Multi`
@@ -165,9 +165,9 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-## Registrar el modelo y la vista de SCF {#register-the-scf-model-view}
+## Registrar el modelo y la Vista de SCF {#register-the-scf-model-view}
 
-Al ampliar (anular) un componente SCF, resourceType es diferente (al superponer se utiliza el mecanismo de búsqueda relativo que busca `/apps` antes `/libs` para que resourceType siga siendo el mismo). Por este motivo, es necesario escribir JavaScript (en la biblioteca del cliente) para registrar el modelo JS SCF y ver el resourceType personalizado.
+Al ampliar (anular) un componente SCF, resourceType es diferente (al superponer se utiliza el mecanismo de búsqueda relativo que busca `/apps` antes `/libs` para que resourceType siga siendo el mismo). Por este motivo, es necesario escribir JavaScript (en la biblioteca del cliente) para registrar el modelo y la vista JS de SCF para resourceType personalizado.
 
 Escriba el siguiente texto como contenido de `customcommentsystem.js`:
 
@@ -193,7 +193,7 @@ Escriba el siguiente texto como contenido de `customcommentsystem.js`:
 
 ## Publicar la aplicación {#publish-the-app}
 
-Para poder experimentar el componente extendido en el entorno de publicación, es necesario replicar el componente personalizado.
+Para experimentar el componente extendido en el entorno de publicación, es necesario replicar el componente personalizado.
 
 Una manera de hacerlo es
 
