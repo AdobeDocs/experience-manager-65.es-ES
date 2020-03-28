@@ -1,8 +1,8 @@
 ---
-title: Agregar comentario a la página de muestra
-seo-title: Agregar comentario a la página de muestra
-description: Agregar comentarios personalizados a una página
-seo-description: Agregar comentarios personalizados a una página
+title: Añadir comentario a página de muestra
+seo-title: Añadir comentario a página de muestra
+description: Añadir comentarios personalizados a una página
+seo-description: Añadir comentarios personalizados a una página
 uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Agregar comentario a la página de muestra {#add-comment-to-sample-page}
+# Añadir comentario a página de muestra {#add-comment-to-sample-page}
 
 Ahora que los componentes del sistema de comentarios personalizados están en su lugar en el directorio de la aplicación (/apps), es posible utilizar el componente extendido. La instancia del sistema de comentarios de un sitio web que se verá afectado debe establecer resourceType como el sistema de comentarios personalizado e incluir todas las bibliotecas de cliente necesarias.
 
@@ -24,7 +24,7 @@ Ahora que los componentes del sistema de comentarios personalizados están en su
 
 Las bibliotecas de cliente necesarias para el estilo y funcionamiento de los comentarios predeterminados también son necesarias para los comentarios extendidos.
 
-La Guía [de componentes de comunidad](/help/communities/components-guide.md) identifica las bibliotecas de cliente necesarias. Vaya a la Guía del componente y vea el componente Comentarios, por ejemplo:
+La Guía [de componentes de comunidad](/help/communities/components-guide.md) identifica las bibliotecas de cliente necesarias. Vaya a la Guía del componente y vista del componente Comentarios, por ejemplo:
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
@@ -32,7 +32,7 @@ Tenga en cuenta las tres bibliotecas de cliente necesarias para que Comentarios 
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-### Agregar comentarios personalizados a una página {#add-custom-comments-to-a-page}
+### Añadir comentarios personalizados a una página {#add-custom-comments-to-a-page}
 
 Como sólo puede haber un sistema de comentarios por página, es más sencillo crear una página de muestra como se describe en el breve tutorial [Crear una página](/help/communities/create-sample-page.md) de muestra.
 
