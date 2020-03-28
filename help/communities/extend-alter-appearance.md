@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Modificar el aspecto (HBS){#alter-the-appearance-hbs}
+# Modificar el aspecto (HBS) {#alter-the-appearance-hbs}
 
-Ahora que los componentes del sistema de comentarios personalizados del directorio de aplicaciones (/apps) están implementados, con un resourceSuperType que hace referencia al sistema de comentarios predeterminado y el modelo/vista personalizado registrado, es posible modificar la implementación.
+Ahora que los componentes del sistema de comentarios personalizados del directorio de aplicaciones (/apps) están implementados, con un resourceSuperType que hace referencia al sistema de comentarios predeterminado y el modelo/Vista personalizado registrado, es posible modificar la implementación.
 
 Para una demostración sencilla, se elimina una característica visual, el avatar que se muestra del usuario que ha iniciado sesión y que publica un comentario.
 
@@ -30,9 +30,9 @@ Para una demostración sencilla, se elimina una característica visual, el avata
 
 Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* open [/apps/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Abra [/apps/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * comente la etiqueta que incluye el avatar para un comentario publicado (~ línea 21):
+   * comente la etiqueta que incluye el avatar de un comentario publicado (~ línea 21):
 
       ```
       <!--
@@ -40,7 +40,7 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* open [/apps/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Abrir [/aplicaciones/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * comente la etiqueta que incluye el avatar de la siguiente entrada de comentario (~ línea 44):
 
@@ -50,7 +50,7 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* seleccione **Guardar todo**
+* Seleccione **Guardar todo**
 
 ### Replicar aplicación personalizada {#replicate-custom-app}
 
@@ -58,7 +58,7 @@ Una vez modificada la aplicación, es necesario volver a replicar el componente 
 
 Una manera de hacerlo es
 
-* del menú principal
+* Desde el menú principal
 
    * seleccione **Herramientas > Operaciones > Replicación**
    * select `Activate Tree`
@@ -66,9 +66,9 @@ Una manera de hacerlo es
    * deselect `Only Modified`
    * seleccionar `Activate`botón
 
-### Ver comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
+### Vista Comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuando con la experiencia](/help/communities/extend-sample-page.md#publish-sample-page) en la instancia de publicación, que aún ha iniciado sesión como el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para ver la modificación y eliminar el avatar:
+[Continuando la experiencia](/help/communities/extend-sample-page.md#publish-sample-page) en la instancia de publicación, que aún ha iniciado sesión como el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para realizar la vista de la modificación para eliminar el avatar:
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
 
