@@ -1,8 +1,8 @@
 ---
 title: Mejora del rendimiento del servidor de aplicaciones
 seo-title: Mejora del rendimiento del servidor de aplicaciones
-description: En este documento se describen los ajustes opcionales que se pueden configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
-seo-description: En este documento se describen los ajustes opcionales que se pueden configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
+description: Este documento describe los ajustes opcionales que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
+seo-description: Este documento describe los ajustes opcionales que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
 uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a26bc4e4ea10370dd2fc3403500004b9e378c418
 
 ---
 
@@ -81,39 +81,39 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
 1. En la pantalla siguiente, en Propiedades adicionales, haga clic en Propiedades del grupo de conexiones e introduzca un valor en el cuadro Número máximo de conexiones y en el cuadro Conexiones mínimas:
 1. Haga clic en Aceptar o Aplicar y, a continuación, haga clic en Guardar directamente en configuración maestra.
 
-## Optimización de documentos integrados e impacto en la memoria JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
+## Optimización de documentos en línea e impacto en la memoria JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
 
-Si suele procesar documentos de un tamaño relativamente pequeño, puede mejorar el rendimiento asociado con la velocidad de transferencia de documentos y el espacio de almacenamiento. Para ello, implemente las siguientes configuraciones de producto de formularios AEM:
+Si normalmente procesa documentos de un tamaño relativamente pequeño, puede mejorar el rendimiento asociado con la velocidad de transferencia de documento y el espacio de almacenamiento. Para ello, implemente las siguientes configuraciones de producto de formularios AEM:
 
 * Aumente el tamaño de línea máximo del documento predeterminado para los formularios AEM de modo que sea mayor que el tamaño de la mayoría de los documentos.
-* Para procesar archivos más grandes, especifique los directorios de almacenamiento que se encuentran en un sistema de disco de alta velocidad o un disco RAM.
+* Para procesar archivos más grandes, especifique los directorios de almacenamiento que se encuentran en un sistema de discos de alta velocidad o un disco RAM.
 
 El tamaño de línea máximo y los directorios de almacenamiento (el directorio de archivos temporales de formularios AEM y el directorio GDS) se configuran en la consola de administración.
 
-### Tamaño del documento y tamaño máximo en línea {#document-size-and-maximum-inline-size}
+### Tamaño de Documento y tamaño de línea máximo {#document-size-and-maximum-inline-size}
 
-Cuando un documento enviado para su procesamiento por formularios AEM es menor o igual al tamaño en línea máximo del documento predeterminado, el documento se almacena en línea en el servidor y el documento se serializa como un objeto de Adobe Document. El almacenamiento de documentos en línea puede tener importantes ventajas de rendimiento. Sin embargo, si utiliza el flujo de trabajo de formularios, el contenido también puede almacenarse en la base de datos para realizar un seguimiento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
+Cuando un documento enviado para su procesamiento por formularios AEM es menor o igual al tamaño en línea máximo de documento predeterminado, el documento se almacena en línea en el servidor y el documento se serializa como un objeto de Documento de Adobe. El almacenamiento de documentos en línea puede tener importantes beneficios de rendimiento. Sin embargo, si utiliza el flujo de trabajo de formularios, el contenido también puede almacenarse en la base de datos para realizar un seguimiento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
 
-Un documento que supera el tamaño máximo en línea se almacena en el sistema de archivos local. El objeto Adobe Document que se transfiere desde y hacia el servidor es sólo un puntero a ese archivo.
+Un documento mayor que el tamaño máximo en línea se almacena en el sistema de archivos local. El objeto Adobe Documento que se transfiere desde y hacia el servidor es sólo un puntero a ese archivo.
 
-Cuando el contenido del documento está alineado (es decir, es menor que el tamaño en línea máximo), el contenido se almacena en la base de datos como parte de la carga útil de serialización del documento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
+Cuando el contenido de documento está alineado (es decir, es menor que el tamaño en línea máximo), el contenido se almacena en la base de datos como parte de la carga útil de serialización del documento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
 
 **Cambiar el tamaño de línea máximo**
 
 1. En la consola de administración, haga clic en Configuración > Configuración del sistema principal > Configuraciones.
-1. Introduzca un valor en el cuadro Tamaño en línea máximo del documento predeterminado y haga clic en Aceptar.
+1. Introduzca un valor en el cuadro Tamaño en línea máximo de Documento predeterminado y haga clic en Aceptar.
 
    >[!NOTE]
    >
-   >El valor de la propiedad Tamaño en línea máximo de documento debe ser idéntico para AEM Forms en entorno JEE y AEM Forms en paquete OSGi incluye AEM Forms en entorno JEE. Este paso actualiza el valor solo para AEM Forms en el entorno JEE y no para AEM Forms en el paquete OSGi incluía AEM Forms en el entorno JEE.
+   >El valor de la propiedad Tamaño en línea máximo de Documento debe ser idéntico para AEM Forms en el entorno JEE y AEM Forms en el paquete OSGi incluido en AEM Forms en el entorno JEE. Este paso actualiza el valor solo para AEM Forms en el entorno JEE y no para AEM Forms en el paquete OSGi incluía AEM Forms en el entorno JEE.
 
 1. Reinicie el servidor de aplicaciones con la siguiente propiedad del sistema:
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=[*valor especificado en el paso 2*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
-   >La propiedad de sistema mencionada anteriormente anula el valor de la propiedad Tamaño en línea máximo de documento establecida para AEM Forms en entorno JEE y AEM Forms en paquete OSGi incluye AEM Forms en entorno JEE.
+   >La propiedad de sistema mencionada anteriormente anula el valor de la propiedad Tamaño en línea máximo de Documento establecida para AEM Forms en entorno JEE y AEM Forms en paquete OSGi incluía AEM Forms en entorno JEE.
 
 >[!NOTE]
 >
@@ -121,11 +121,11 @@ Cuando el contenido del documento está alineado (es decir, es menor que el tama
 
 ### Tamaño máximo del montón JVM {#jvm-maximum-heap-size}
 
-Un aumento en el tamaño máximo en línea requiere más memoria para almacenar los documentos serializados. Por lo tanto, generalmente también requiere un aumento en el tamaño máximo del montón JVM.
+Un aumento en el tamaño de línea máximo requiere más memoria para almacenar los documentos serializados. Por lo tanto, generalmente también requiere un aumento en el tamaño máximo del montón JVM.
 
-Un sistema muy cargado que procesa muchos documentos puede saturar rápidamente la memoria de montón JVM. Para evitar un OutOfMemoryError, aumente el tamaño máximo del montón JVM en una cantidad que corresponda al tamaño de los documentos en línea multiplicados por el número de documentos que se ejecutan normalmente en un momento dado.
+Un sistema muy cargado que procesa muchos documentos puede saturar rápidamente la memoria de montón JVM. Para evitar un OutOfMemoryError, aumente el tamaño máximo del montón JVM en una cantidad correspondiente al tamaño de los documentos en línea multiplicados por el número de documentos que se ejecutan normalmente en un momento dado.
 
-Aumento máximo del tamaño del montón JVM = (tamaño de documentos en línea) x (número medio de documentos procesados).
+Aumento del tamaño máximo del montón JVM = (tamaño de documentos en línea) x (número medio de documentos procesados).
 
 **Calcular el tamaño máximo del montón de JVM**
 
@@ -141,7 +141,7 @@ El tamaño máximo del montón JVM debe aumentarse en 50 MB para un total de 562
 
 **Consideración de la fragmentación del montón**
 
-La configuración del tamaño de los documentos en línea en valores grandes aumenta el riesgo de que se produzca un error OutOfMemoryError en sistemas propensos a la fragmentación del montón. Para almacenar un documento en línea, la memoria de pila JVM debe tener suficiente espacio contiguo. Algunos sistemas operativos, JVM y algoritmos de recolección de elementos no utilizados son propensos a la fragmentación del montón. La fragmentación reduce la cantidad de espacio de montón contiguo y puede generar un OutOfMemoryError incluso cuando existe suficiente espacio libre total.
+La configuración del tamaño de los documentos en línea en valores grandes aumenta el riesgo de que se produzca un error OutOfMemoryError en los sistemas que son propensos a la fragmentación del montón. Para almacenar un documento en línea, la memoria de pila JVM debe tener suficiente espacio contiguo. Algunos sistemas operativos, JVM y algoritmos de recolección de elementos no utilizados son propensos a la fragmentación del montón. La fragmentación reduce la cantidad de espacio de montón contiguo y puede generar un OutOfMemoryError incluso cuando existe suficiente espacio libre total.
 
 Por ejemplo, las operaciones anteriores en el servidor de aplicaciones dejaron el montón JVM en un estado fragmentado y el recolector de elementos no utilizados no puede compactar el montón lo suficiente para recuperar grandes bloques de espacio libre. Se puede producir un OutOfMemoryError aunque el tamaño máximo del montón JVM se haya ajustado para aumentar el tamaño máximo en línea.
 
@@ -149,7 +149,7 @@ Para tener en cuenta la fragmentación del montón, el tamaño del documento en 
 
 ## Mejoras en el servidor de aplicaciones WebSphere {#websphere-application-server-enhancements}
 
-Esta sección describe la configuración específica de un entorno WebSphere Application Server.
+Esta sección describe la configuración específica de un entorno de servidor de aplicaciones WebSphere.
 
 ### Aumento de la memoria máxima asignada a la JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
@@ -166,13 +166,13 @@ Si está ejecutando Configuration Manager o está intentando generar código de 
 
 ## Mejora del rendimiento de Windows Server 2003 con LDAP {#improving-windows-server-2003-performance-with-ldap}
 
-Este contenido describe la configuración específica de un entorno de sistema operativo Microsoft Windows Server 2003.
+Este contenido describe la configuración específica de un entorno del sistema operativo Microsoft Windows Server 2003.
 
 El uso de la agrupación de conexiones en la conexión de búsqueda puede reducir el número de puertos necesarios hasta en un 50%. Esto se debe a que la conexión siempre utiliza las mismas credenciales para un dominio determinado y el contexto y los objetos relacionados se cierran explícitamente.
 
 ### Configuración de Windows Server para el agrupamiento de conexiones {#configure-your-windows-server-for-connection-pooling}
 
-1. Haga clic en Inicio > Ejecutar para iniciar el editor del Registro y, en el cuadro Abrir, escriba `regedit` y haga clic en Aceptar.
+1. Haga clic en Inicio > Ejecutar para inicio del editor del Registro y, en el cuadro Abrir, escriba `regedit` y haga clic en Aceptar.
 1. Ir a la clave del Registro `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. En el panel derecho del editor del Registro, busque el nombre del valor TcpTimedWaitDelay. Si el nombre no aparece, seleccione Editar > Nuevo > Valor DWORD en la barra de menús para agregar el nombre.
 1. En el cuadro Nombre, escriba `TcpTimedWaitDelay`
@@ -182,10 +182,10 @@ El uso de la agrupación de conexiones en la conexión de búsqueda puede reduci
    >Si no ve un cursor parpadeante y `New Value #` dentro del cuadro, haga clic con el botón derecho en el panel derecho, seleccione Cambiar nombre y, en el cuadro Nombre, escriba `TcpTimedWaitDelay`*.*
 
 1. Repita el paso 4 para los nombres de valor MaxUserPort, MaxHashTableSize y MaxFreeTcbs.
-1. Haga doble clic dentro del panel derecho para establecer el valor TcpTimedWaitDelay. En Base, seleccione Decimal y, en el cuadro Valor, escriba `30`.
-1. Haga doble clic dentro del panel derecho para establecer el valor de MaxUserPort. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65534`.
-1. Haga doble clic dentro del panel derecho para establecer el valor de MaxHashTableSize. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65536`.
-1. Haga doble clic dentro del panel derecho para establecer el valor de MaxFreeTcbs. En Base, seleccione Decimal y, en el cuadro Valor, escriba `16000`.
+1. Haga clic con el Doble en el panel derecho para establecer el valor TcpTimedWaitDelay. En Base, seleccione Decimal y, en el cuadro Valor, escriba `30`.
+1. Haga clic con el Doble en el panel derecho para establecer el valor de MaxUserPort. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65534`.
+1. Haga clic con el Doble dentro del panel derecho para establecer el valor de MaxHashTableSize. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65536`.
+1. Haga clic con el Doble dentro del panel derecho para establecer el valor de MaxFreeTcbs. En Base, seleccione Decimal y, en el cuadro Valor, escriba `16000`.
 
 >[!NOTE]
 >
