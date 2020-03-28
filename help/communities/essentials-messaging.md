@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Esenciales de mensajería{#messaging-essentials}
+# Esenciales de mensajería {#messaging-essentials}
 
-Esta página documenta los detalles del trabajo con el componente Mensajería para incluir una función de mensajería en un sitio web.
+Esta página documentos los detalles de cómo trabajar con el componente Mensajería para incluir una función de mensajería en un sitio web.
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -98,18 +98,21 @@ Consulte también Personalizaciones del lado del [cliente](/help/communities/cli
 
 >[!CAUTION]
 >
->El parámetro String *no debe *contener una barra diagonal final &quot;/&quot; para los siguientes métodos de MessageBuilder:
+>El parámetro String *no debe* contener una barra diagonal final &quot;/&quot; para los siguientes métodos de MessageBuilder:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
 >
->Por ejemplo:
 >
->```
+Por ejemplo:
+>
+>
+```>
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```
->
+>```>
+
+
 
 ### Sitio de la comunidad {#community-site}
 
@@ -117,28 +120,28 @@ Una estructura de sitio de comunidad, creada con el asistente, incluye la funci�
 
 ### Código de muestra: Notificación de mensaje recibido {#sample-code-message-received-notification}
 
-La función Mensajería social genera eventos para operaciones, por ejemplo `send`, `marking read``marking delete`. Estos eventos se pueden capturar y realizar acciones en los datos contenidos en el evento.
+La función Mensajería social emite eventos para operaciones, por ejemplo `send`, `marking read``marking delete`. Estos eventos se pueden capturar y se pueden tomar medidas sobre los datos contenidos en el evento.
 
-El ejemplo siguiente es el de un controlador de eventos que escucha el `message sent` evento y envía un correo electrónico a todos los destinatarios del mensaje mediante el `Day CQ Mail Service`.
+El siguiente ejemplo es un controlador de evento que escucha el `message sent` evento y envía un correo electrónico a todos los destinatarios de mensajes que utilizan el `Day CQ Mail Service`.
 
-Para probar la secuencia de comandos de ejemplo del lado del servidor, necesita un entorno de desarrollo y la capacidad de crear un paquete OSGi:
+Para probar el script de ejemplo del lado del servidor, necesita un entorno de desarrollo y la capacidad de crear un paquete OSGi:
 
-1. Inicie sesión como administrador para ` [CRXDE|Lite](https://localhost:4502/crx/de).`
+1. Inicie sesión como administrador para ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
 1. Cree una `bundle node`entrada `/apps/engage/install` con nombres arbitrarios, como:
 
-   * Nombre simbólico: com.engagement.media.social.messaging.MessagingNotification
+   * Nombre simbólico: `com.engage.media.social.messaging.MessagingNotification`
    * Nombre: Notificación de mensajes de tutoriales de introducción
-   * Descripción: un servicio de muestra para enviar una notificación por correo electrónico a los usuarios cuando reciben un mensaje
-   * Paquete: com.engagement.media.social.messaging.notification
+   * Descripción: Un servicio de muestra para enviar una notificación por correo electrónico a los usuarios cuando reciben un mensaje
+   * Paquete: `com.engage.media.social.messaging.notification`
 
-1. Vaya a /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engagement/media/social/messaging/notification y, a continuación:
+1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`y, a continuación:
 
-   1. Elimine la clase Activator.java creada automáticamente.
-   1. Cree la clase MessageEventHandler.java.
-   1. Copie y pegue el código siguiente en MessageEventHandler.java.
+   1. Elimine la `Activator.java` clase creada automáticamente.
+   1. Crear clase `MessageEventHandler.java`.
+   1. Copie y pegue el código siguiente en `MessageEventHandler.java`.
 
-1. Haga clic en **Guardar todo.**
-1. Vaya a /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd y agregue todas las sentencias de importación tal como están escritas en el código MessageEventHandler.java.
+1. Haga clic en **Guardar todo**.
+1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`y agregue todas las instrucciones de importación tal como están escritas en el `MessageEventHandler.java` código.
 1. Cree el paquete.
 1. Asegúrese de que el servicio `Day CQ Mail Service`OSGi está configurado.
 1. Inicie sesión como usuario de demostración y envíe un correo electrónico a otro usuario.
