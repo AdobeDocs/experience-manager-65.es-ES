@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f3928558641af89d138bfbf85ba099a4286b2f3
+source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
 
 ---
 
@@ -23,13 +23,18 @@ Los recursos de Adobe Experience Manager (AEM) se configuran con Brand Portal a 
 >
 >La configuración de AEM Assets con Brand Portal mediante Adobe I/O es compatible con AEM 6.5.4.0 y versiones posteriores.
 >
->Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un token de acceso IMS para la autorización.
+>Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un Token de acceso IMS para la autorización.
 >
 >La configuración mediante OAuth heredado ya no se admite a partir del 6 de abril de 2020 y se cambia a la configuración mediante Adobe I/O.
+
+
+>[!TIP]
 >
->Si ya es un usuario de Brand Portal con configuración en OAuth Gateway heredado, se recomienda eliminar las configuraciones existentes y crear una nueva configuración en Adobe I/O.
+>***Solo para clientes existentes***
 >
->Sin embargo, la configuración existente seguirá funcionando si no modifica las configuraciones.
+>Se recomienda seguir utilizando la configuración heredada de OAuth Gateway. En caso de que surjan problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una nueva configuración mediante Adobe I/O.
+
+
 
 Esta ayuda describe los dos casos de uso siguientes:
 * [Nueva configuración](#configure-new-integration-65): Si es un usuario nuevo de Brand Portal y desea configurar su instancia de autor de AEM Assets con Brand Portal, puede crear una nueva configuración en Adobe I/O.
@@ -60,7 +65,7 @@ Se recomienda disponer de AEM 6.5 para configurar una instancia de creación de 
 
 * Si ya es cliente de AEM, descargue AEM 6.5 del sitio web [de licencias de](http://licensing.adobe.com)Adobe.
 
-* Si es un socio de Adobe, utilice [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
+* Si es un socio de Adobe, utilice [Adobe Partner Training Programa](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
 
 Después de descargar AEM, para obtener instrucciones sobre cómo configurar una instancia de autor de AEM, consulte [Implementación y mantenimiento](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
@@ -153,9 +158,9 @@ La integración de Adobe I/O genera la clave de API, el secreto del cliente y la
 
 1. Seleccione el perfil de su organización.
 
-   O bien, seleccione el perfil predeterminado **[!UICONTROL Recursos Brand Portal]** y haga clic en **[!UICONTROL Crear integración]**. Se crea la integración.
+   O bien, seleccione el portal **[!UICONTROL de marca perfil]** Assets y haga clic en **[!UICONTROL Crear integración]**. Se crea la integración.
 
-1. Haga clic en **[!UICONTROL Continuar para ver los detalles]** de la integración.
+1. Haga clic en **[!UICONTROL Continuar para ver los detalles]** de la integración y vista de la información de integración.
 
    Copiar la clave de **[!UICONTROL API]**
 
