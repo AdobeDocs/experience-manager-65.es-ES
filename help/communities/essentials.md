@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
-source-git-commit: 941ffeb40805c991eec6a601d01796cfc2cc95e4
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -61,7 +61,7 @@ A continuación encontrará enlaces a información esencial para los componentes
 * [Puntuación y distintivos](configure-scoring.md)
 * [Buscar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Proveedor](srp-and-ugc.md) de recursos de almacenamiento `(SRP)`
+* [Proveedor](srp-and-ugc.md) de recursos de Almacenamiento `(SRP)`
 
 * [Etiquetado](tag.md)
 
@@ -78,7 +78,7 @@ Para cada [paquete](deploy-communities.md#latestfeaturepack)de funciones, hay di
 
    * [Personalizaciones del lado del cliente](client-customize.md)
    * [Personalizaciones del lado del servidor](server-customize.md)
-   * [Información general del proveedor de recursos de almacenamiento](srp.md)
+   * [Información general del proveedor de recursos de Almacenamiento](srp.md)
 
 * [Directrices de codificación](code-guide.md)
 * [Tutoriales](tutorials.md)
