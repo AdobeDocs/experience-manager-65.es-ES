@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -43,21 +43,21 @@ Para obtener más información, consulte [Cómo crear proyectos de AEM con Apach
 
 * La herramienta FileVault o VLT le ayuda a asignar el contenido de una instancia de CRX o AEM al sistema de archivos. Proporciona operaciones de gestión del control de cambios, como el ingreso y la salida del contenido del proyecto de AEM. Consulte [Cómo utilizar la herramienta](/help/sites-developing/ht-vlttool.md)VLT.
 
-* Si utiliza un entorno de desarrollo integrado por Eclipse, puede utilizar las herramientas de AEM Developer para la integración sin fisuras del IDE de Eclipse con instancias de AEM a fin de crear aplicaciones de AEM. Para obtener más información, consulte Herramientas para desarrolladores de [AEM para Eclipse](/help/sites-developing/aem-eclipse.md).
+* Si utiliza el entorno de desarrollo integrado por Eclipse, puede utilizar las herramientas de AEM Developer para la integración sin fisuras del IDE de Eclipse con las instancias de AEM a fin de crear aplicaciones de AEM. Para obtener más información, consulte Herramientas para desarrolladores de [AEM para Eclipse](/help/sites-developing/aem-eclipse.md).
 
 ### Planificación del entorno de creación {#planning-for-authoring-environment}
 
 Una vez configurado el proyecto de AEM, defina una estrategia para la creación y personalización de plantillas y componentes de formularios adaptables.
 
 * Una plantilla de formulario adaptable es una página especializada de AEM que define la estructura y la información de encabezado y pie de página de un formulario adaptable. Una plantilla tiene diseños, estilos y estructura básicos preconfigurados para un formulario adaptable. AEM Forms proporciona plantillas integradas y componentes que puede utilizar para crear formularios adaptables. Sin embargo, puede crear plantillas y componentes personalizados según sus necesidades. Se recomienda recopilar requisitos para plantillas y componentes adicionales que necesitará en los formularios adaptables. Para obtener más información, consulte [Personalización de formularios y componentes](/help/forms/using/adaptive-forms-best-practices.md#customize-components)adaptables.
-* AEM Forms permite crear formularios adaptables basados en los siguientes modelos de formulario. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Asimismo, los modelos de formulario imponen reglas y restricciones a los formularios adaptables en forma de restricciones de esquema y XFA.
+* AEM Forms permite crear formularios adaptables basados en los siguientes modelos de formulario. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Además, los modelos de formulario imponen reglas y restricciones a los formularios adaptables en forma de restricciones de esquema y XFA.
 
    * **Ninguno**: Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
-   * **Esquema** XML o JSON: Los esquemas XML y JSON representan la estructura en la que el sistema back-end de la organización produce o consume los datos. Puede asociar un esquema a un formulario adaptable y utilizar sus elementos para agregar contenido dinámico al formulario adaptable. Los elementos del esquema están disponibles en la ficha Objeto del modelo de datos del navegador de contenido para la creación de formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
+   * **esquema** XML o JSON: Los esquemas XML y JSON representan la estructura en la que el sistema back-end de la organización produce o consume los datos. Puede asociar un esquema a un formulario adaptable y utilizar sus elementos para agregar contenido dinámico al formulario adaptable. Los elementos del esquema están disponibles en la ficha Objeto del modelo de datos del navegador de contenido para la creación de formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
    * **Plantilla** de formulario XFA: Es un modelo de formulario ideal si tiene inversiones en formularios HTML5 basados en XFA. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Las reglas XFA existentes se conservan en los formularios adaptables asociados. Los formularios adaptables resultantes admiten construcciones XFA, como validaciones, eventos, propiedades y patrones.
-   * **Modelo** de datos de formulario: Se trata de un modelo de formulario preferido si desea integrar sus sistemas de back-end como bases de datos, servicios Web y perfiles de usuario de AEM para rellenar previamente formularios adaptables y volver a escribir datos de formulario enviados en los sistemas de back-end. Un editor del modelo de datos de formulario permite definir y configurar entidades y servicios en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Para obtener más información, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM.
+   * **Modelo** de datos de formulario: Es un modelo de formulario preferido si desea integrar sus sistemas de back-end como bases de datos, servicios Web y perfil de usuarios de AEM para rellenar previamente formularios adaptables y escribir datos de formulario enviados en los sistemas de back-end. Un editor del modelo de datos de formulario permite definir y configurar entidades y servicios en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Para obtener más información, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM.
 
-Es importante elegir cuidadosamente el modelo de datos que no sólo se adapte a sus necesidades, sino que amplíe sus inversiones existentes en activos XFA y XSD, si los hay. Se recomienda utilizar el modelo XSD para crear plantillas de formulario porque el XML generado contiene datos según XPATH definido por el esquema. El uso del modelo XSD como opción predeterminada para el modelo de datos de formulario también ayuda porque desvincula el diseño de formulario del sistema back-end que procesa y consume datos y mejora el rendimiento del formulario debido a la asignación de uno a uno del campo de formulario. Además, BindRef del campo puede convertirse en XPATH de su valor de datos en XML.
+Es importante elegir cuidadosamente el modelo de datos que no sólo se adapte a sus necesidades, sino que amplíe sus inversiones existentes en activos XFA y XSD, si los hay. Se recomienda utilizar el modelo XSD para crear plantillas de formulario porque el XML generado contiene datos según XPATH definido por esquema. El uso del modelo XSD como opción predeterminada para el modelo de datos de formulario también ayuda porque desvincula el diseño de formulario del sistema back-end que procesa y consume datos y mejora el rendimiento del formulario debido a la asignación de uno a uno del campo de formulario. Además, BindRef del campo puede convertirse en XPATH de su valor de datos en XML.
 
 Para obtener más información, consulte [Creación de un formulario](/help/forms/using/creating-adaptive-form.md)adaptable.
 
@@ -72,8 +72,8 @@ Para obtener más información, consulte [Creación de un formulario](/help/form
 
 * Para aplicar estilo a un campo o una instancia de panel específicos, utilice el estilo [en línea](/help/forms/using/inline-style-adaptive-forms.md). También puede definir una clase en un archivo CSS y especificar el nombre de la clase en la propiedad Clase CSS del componente.
 * Incluya una biblioteca de cliente en un componente para aplicar estilos de forma coherente en todos los formularios adaptables o fragmentos que utilicen dicho componente. Para obtener más información, consulte [Creación de un componente](/help/forms/using/custom-adaptive-forms-templates.md)de página de formulario adaptable.
-* Aplique estilos definidos en una biblioteca de cliente para seleccionar formularios adaptables especificando la ruta a la biblioteca de cliente en el campo de ruta del archivo CSS en las propiedades del contenedor de formularios adaptables.
-* Para crear una biblioteca de cliente de sus estilos, puede configurar el archivo CSS personalizado en la clientlib base del Editor de temas o en las propiedades del contenedor de formularios.
+* Aplique estilos definidos en una biblioteca de cliente para seleccionar formularios adaptables especificando la ruta de acceso a la biblioteca de cliente en el campo de ruta del archivo CSS en las propiedades del contenedor de formulario adaptable.
+* Para crear una biblioteca de cliente de sus estilos, puede configurar el archivo CSS personalizado en la clientlib base del Editor de temas o en las propiedades del Contenedor de formularios.
 * Los formularios adaptables proporcionan diseños de panel, como interactivos, tabuladores, acordeones y asistentes, para controlar cómo se distribuyen los componentes de un formulario en un panel. Puede crear diseños de panel personalizados y hacerlos disponibles para su uso por los autores de formularios. Para obtener más información, consulte [Creación de componentes de diseño personalizados para formularios](/help/forms/using/custom-layout-components-forms.md)adaptables.
 * También puede personalizar componentes de formulario adaptables específicos, como campos y presentación del panel.
 
@@ -88,7 +88,7 @@ Para obtener más información, consulte [Creación de un formulario](/help/form
 ### Uso de la IU táctil para la creación {#using-touch-optimized-ui-for-authoring}
 
 * Utilice el navegador de objetos de la barra lateral para acceder rápidamente a los campos de la jerarquía del formulario. Puede utilizar el cuadro de búsqueda para buscar objetos en el formulario o en el árbol de objetos y desplazarse de un objeto a otro.
-* Para ver y editar las propiedades de un componente en el navegador de componentes de la barra lateral, seleccione el componente y haga clic en ![cmppr-1](assets/cmppr-1.png). También puede hacer doble clic en un componente para ver sus propiedades en el navegador de propiedades.
+* Para vista y edición de las propiedades de un componente en el navegador de componentes de la barra lateral, seleccione el componente y haga clic en ![cmppr-1](assets/cmppr-1.png). También puede hacer clic con el botón doble en un componente para vista de sus propiedades en el navegador de propiedades.
 * Utilice los métodos abreviados de teclado para realizar acciones rápidas en los formularios. Consulte Métodos abreviados de teclado de [AEM Forms](/help/forms/using/keyboard-shortcuts.md).
 
 * Se recomienda utilizar componentes de formulario adaptables solo en páginas de formulario adaptables. Los componentes dependen de su jerarquía principal. Por lo tanto, no los utilice en una página de AEM.
@@ -97,12 +97,12 @@ Consulte también las descripciones de los componentes y las prácticas recomend
 
 ### Uso de reglas en formularios adaptables {#using-rules-in-adaptive-forms}
 
-AEM Forms proporciona un editor [de](/help/forms/using/rule-editor.md) reglas que le permite crear reglas para agregar un comportamiento dinámico a los componentes de formulario adaptables. Con estas reglas, puede evaluar condiciones y activar acciones en componentes, como mostrar u ocultar campos, calcular valores, cambiar la lista desplegable dinámicamente, etc.
+AEM Forms proporciona un editor [de](/help/forms/using/rule-editor.md) reglas que le permite crear reglas para agregar un comportamiento dinámico a los componentes de formulario adaptables. Mediante estas reglas, puede evaluar condiciones y activar acciones en componentes, como mostrar u ocultar campos, calcular valores, cambiar dinámicamente la lista desplegable, etc.
 
 El editor de reglas proporciona un editor visual y un editor de código para escribir reglas. Tenga en cuenta lo siguiente al escribir reglas con el modo de editor de código:
 
 * Utilice nombres significativos y únicos para los campos y componentes de formulario para evitar posibles conflictos al escribir reglas.
-* Utilice `this` operador para que un componente se refiera a sí mismo en una expresión de regla. Garantiza que la regla siga siendo válida incluso si cambia el nombre del componente. Por ejemplo, `field1.valueCommit script: this.value > 10`.
+* Utilice `this` el operador para que un componente haga referencia a sí mismo en una expresión de regla. Garantiza que la regla siga siendo válida incluso si cambia el nombre del componente. Por ejemplo, `field1.valueCommit script: this.value > 10`.
 
 * Utilice los nombres de componentes al hacer referencia a otros componentes del formulario. Utilice la `value` propiedad para recuperar el valor de un campo o componente. Por ejemplo, `field1.value`.
 
@@ -125,15 +125,15 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
       * `field.visible` para cambiar la visibilidad de un campo.
 
 * Es posible que los autores de formularios adaptables necesiten escribir código JavaScript para generar lógica empresarial en un formulario. Aunque JavaScript es potente y eficaz, es probable que pueda comprometer las expectativas de seguridad. Por lo tanto, debe asegurarse de que el autor del formulario es una persona de confianza y de que existen procesos para revisar y aprobar el código JavaScript antes de que un formulario se ponga en producción. El administrador puede restringir el acceso al editor de reglas a los grupos de usuarios en función de su función o función. Consulte [Otorgar acceso al editor de reglas para seleccionar grupos](/help/forms/using/rule-editor-access-user-groups.md)de usuarios.
-* Puede utilizar expresiones en reglas para hacer dinámicos los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener más información sobre las expresiones y las prácticas recomendadas que las rodean, consulte Expresiones [de formulario](/help/forms/using/adaptive-form-expressions.md)adaptables.
+* Puede utilizar expresiones en las reglas para hacer dinámicos los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener más información sobre expresiones y prácticas recomendadas a su alrededor, consulte expresiones [de formularios](/help/forms/using/adaptive-form-expressions.md)adaptables.
 
-### Trabajar con temas {#working-with-themes}
+### Uso de temáticas {#working-with-themes}
 
-Adaptable para temas le permite crear estilos reutilizables que se pueden aplicar en todos los formularios para obtener un aspecto y un estilo coherentes. Se recomienda utilizar Temas para definir el estilo de los paneles y componentes del formulario. Algunas prácticas recomendadas en torno a los temas son las siguientes:
+Adaptable para temáticas le permite crear estilos reutilizables que se pueden aplicar en todos los formularios para obtener un aspecto y un estilo coherentes. Se recomienda utilizar Temáticas para definir el estilo de los componentes y paneles de formularios. Algunas de las prácticas recomendadas en relación con las temáticas son las siguientes:
 
-* Utilice la biblioteca de recursos para aplicar rápidamente estilos de texto, fondo e imágenes. Cuando se agrega un estilo a la biblioteca de recursos, está disponible para otros temas y en el modo de estilo del editor de formularios.
+* Utilice la biblioteca de recursos para aplicar rápidamente estilos de texto, fondo e imágenes. Cuando se agrega un estilo a la biblioteca de recursos, está disponible para otras temáticas y en el modo de estilo del editor de formularios.
 * Aplique la configuración global como fuente y fondo de página mediante el selector de nivel de página.
-* Utilice las bibliotecas cliente para importar estilos existentes o avanzados en los temas.
+* Utilice las bibliotecas cliente para importar estilos existentes o avanzados en sus temáticas.
 * Puede anular el estilo de campos, paneles o botones específicos en una capa de estilo de formulario.
 * Si un tema no cumple los requisitos de estilo, puede utilizar clases predefinidas como guideFieldNode, guideFieldLabel, guideFieldWidget y guidePanelNode para aplicar un estilo común a todos los formularios.
 
@@ -141,7 +141,7 @@ For more information, see [Themes](/help/forms/using/themes.md).
 
 ### Optimización del rendimiento de formularios grandes y complejos {#optimizing-performance-of-large-and-complex-forms}
 
-Los autores de formularios y los usuarios finales suelen tener problemas de rendimiento al cargar formularios grandes en modo de creación o en tiempo de ejecución. A medida que aumenta el número de objetos (campos y paneles) en el formulario, la experiencia de creación y ejecución comienza a degradarse. También evita que varios autores colaboren y creen un formulario simultáneamente.
+Los autores de formularios y los usuarios finales suelen tener problemas de rendimiento al cargar formularios grandes en modo de creación o en tiempo de ejecución. A medida que aumenta el número de objetos (campos y paneles) en el formulario, la creación y la experiencia en tiempo de ejecución resultan inicios degradantes. También evita que varios autores colaboren y creen un formulario simultáneamente.
 
 Considere las siguientes optimizaciones para superar problemas de rendimiento con formularios grandes:
 
@@ -166,9 +166,9 @@ Puede rellenar previamente los campos de formulario adaptables con datos recuper
 
 * AEM Forms proporciona un servicio de rellenado previo para leer datos de un archivo XML de datos predefinido y rellenar los campos de un formulario adaptable con el contenido del archivo XML de relleno previo.
 * El XML de datos de relleno previo debe ser compatible con el esquema del modelo de formulario asociado al formulario adaptable.
-* Incluya `afBoundedData` y `afUnBoundedData` secciones en el archivo XML de relleno previo para rellenar campos enlazados y no enlazados en un formulario adaptable.
+* Incluya `afBoundedData` y `afUnBoundedData` secciones en el XML de relleno previo para rellenar previamente los campos enlazados y no enlazados en un formulario adaptable.
 
-* Para los formularios adaptables basados en el modelo de datos de formulario, AEM Forms proporciona un servicio de cumplimentación previa del modelo de datos de formulario integrado. El servicio de relleno previo consulta los orígenes de datos de los objetos del modelo de datos en el formulario adaptable y preestablece los valores de los campos al procesar el formulario.
+* Para los formularios adaptables basados en el modelo de datos de formulario, AEM Forms proporciona un servicio de cumplimentación previa del modelo de datos de formulario integrado. El servicio de cumplimentación previa consulta orígenes de datos para objetos del modelo de datos en el formulario adaptable y prefiere valores de campo al procesar el formulario.
 * También puede utilizar los protocolos file, crx, service o http para rellenar formularios adaptables.
 * AEM Forms admite servicios de cumplimentación previa personalizados que puede utilizar como servicio OSGi para rellenar formularios adaptables.
 
@@ -176,7 +176,7 @@ Para obtener más información, consulte [Rellenar campos](/help/forms/using/pre
 
 ### Firma y envío de formularios adaptables {#signing-and-submitting-adaptive-forms}
 
-Los formularios adaptables requieren acciones de envío para procesar los datos especificados por el usuario. Una acción Enviar determina la tarea realizada en los datos que se envían mediante un formulario adaptable.
+Los formularios adaptables requieren acciones de envío para procesar los datos especificados por el usuario. Una acción Enviar determina la tarea que se realiza en los datos que se envían mediante un formulario adaptable.
 
 * Existen varias acciones de envío listas para usar en formularios adaptables. Para obtener más información, consulte [Configuración de la acción](/help/forms/using/configuring-submit-actions.md)Enviar.
 * Puede escribir una acción de envío personalizada si las acciones de envío predeterminadas no cumplen con su caso de uso. Para obtener más información, consulte [Escritura de una acción Enviar personalizada para formularios](/help/forms/using/custom-submit-action-form.md)adaptables.
@@ -188,20 +188,20 @@ Puede aprovechar la experiencia con varios signos de Adobe Sign en formularios a
 * Puede configurar la experiencia de firma en el formulario o redirigir a los firmantes a una página de firma en el momento del envío.
 * Configure la experiencia de firma secuencial o paralela, según corresponda.
 
-### Generando documento de registro {#generating-document-of-record}
+### Generación de documentos de registros {#generating-document-of-record}
 
 Un documento de registro (DoR) es una versión PDF acoplada de un formulario adaptable que se puede imprimir, firmar o archivar.
 
 * Según el modelo de datos de formulario en el que se base un formulario adaptable, puede configurar una plantilla para el documento de trabajo de la siguiente manera:
 
    * **Plantilla** de formulario XFA: Utilice el archivo XDP asociado como plantilla de DoR.
-   * **Esquema** XSD: Utilice la plantilla XFA asociada que utiliza el mismo esquema XML que utiliza el formulario adaptable.
+   * **esquema** XSD: Utilice la plantilla XFA asociada que utilice el mismo esquema XML que utiliza el formulario adaptable.
    * **Ninguno**: Usar DoR generado automáticamente.
 
-* Configure el encabezado, pie de página, imágenes, color, fuente, etc. a la derecha de la ficha Documento de registro del editor de formularios adaptables.
+* Configure el encabezado, pie de página, imágenes, color, fuente, etc. a la derecha desde la ficha Documento de registro del editor de formularios adaptables.
 * Utilícelo `DoRService` para generar el DoR mediante programación.
 * Excluir campos ocultos del documento de trabajo.
-* Utilice el parámetro `afAcceptLang` de solicitud para ver DoR en otra configuración regional.
+* Utilice el parámetro de `afAcceptLang` solicitud para vista de DoR en otra configuración regional.
 
 ### Depuración y prueba de formularios adaptables {#debugging-and-testing-adaptive-forms}
 
@@ -220,7 +220,7 @@ Calvin SDK es una API de utilidad para que los desarrolladores de formularios ad
 * Experiencia de representación de un formulario adaptable
 * Experiencia de cumplimentación previa de un formulario adaptable
 * Enviar experiencia de un formulario adaptable
-* Reglas de expresión
+* Reglas de Expresión
 * Validaciones
 * Carga diferida
 
@@ -243,17 +243,17 @@ Algunas prácticas recomendadas para localizar formularios adaptables son las si
 * Las modificaciones como la adición de un componente nuevo o la aplicación de una secuencia de comandos en un formulario localizado no se localizan automáticamente. Por lo tanto, debe finalizar un formulario antes de localizarlo para evitar varios ciclos de localización.
 * Utilice el parámetro `afAcceptLang` request para anular la configuración regional del explorador y procesar el formulario en la configuración regional especificada. Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa, independientemente de la configuración regional especificada en la configuración del explorador:
 
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR). Sin embargo, puede añadir compatibilidad con nuevas configuraciones regionales para formularios adaptables en tiempo de ejecución. Para obtener más información, consulte [Compatibilidad con nuevas configuraciones regionales para la localización](/help/forms/using/supporting-new-language-localization.md)de formularios adaptables.
 
 ## Preparar proyecto de formularios para producción {#prepare-forms-project-for-production}
 
-### Adición de un servidor de procesamiento de formularios {#adding-forms-processing-server}
+### Añadir servidor de procesamiento de formularios {#adding-forms-processing-server}
 
 Puede configurar una instancia adicional del servidor de AEM Forms que resida detrás del servidor de seguridad en una zona segura. Puede utilizar esta instancia para:
 
-* **Procesamiento** por lotes: trabajos que se repiten o programan en lotes con una carga pesada. Por ejemplo, imprima sentencias, genere correspondencias y utilice servicios de documentos como PDF Generator, Output y Ensamblador.
+* **Procesamiento** por lotes: trabajos que se repiten o programan en lotes con una carga pesada. Por ejemplo, imprima sentencias, genere correspondencias y utilice servicios de documento como PDF Generator, Output y Ensamblador.
 * **Almacenamiento de datos** PII: Guarde los datos PII en el servidor de procesamiento. No es necesario si ya está utilizando un proveedor de almacenamiento personalizado para almacenar datos PII.
 
 ### Mover proyecto a otro entorno {#moving-project-to-another-environment}
@@ -291,11 +291,11 @@ Algunas de las prácticas recomendadas para configurar AEM para mejorar el rendi
 
 En un entorno de producción, se recomienda no almacenar los datos de formulario enviados en el repositorio de AEM. La implementación predeterminada de las acciones de envío de Forms Portal Store, Store Content y Store PDF almacena datos de formulario en el repositorio de AEM. Estas acciones de envío están destinadas únicamente a fines de demostración. Además, las funciones Guardar y reanudar y Guardar automáticamente utilizan el almacenamiento del portal de forma predeterminada. Por lo tanto, considere las siguientes recomendaciones:
 
-* **Almacenamiento de datos** de borrador: Si está utilizando la función Borrador de formularios adaptables, debe implementar una interfaz de proveedor de servicios (SPI) personalizada para almacenar datos de borrador en un almacenamiento más seguro, como la base de datos. Para obtener más información, consulte [Ejemplo para integrar el componente de borradores y envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md).
+* **Almacenamiento de datos** de borrador: Si está utilizando la función Borrador de formularios adaptables, debe implementar una interfaz de proveedor de servicios (SPI) personalizada para almacenar los datos borrador en almacenamientos más seguros como la base de datos. Para obtener más información, consulte [Ejemplo para integrar el componente de borradores y envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md).
 
 * **Almacenamiento de datos** de envío: Si utiliza el almacén de envío de Form Portal, debe implementar un SPI personalizado para almacenar los datos de envío en una base de datos. Consulte [Ejemplo para integrar los borradores y el componente de envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md) para obtener una integración de muestra.
 
-   También puede escribir una acción de envío personalizada que almacene datos de formulario y datos adjuntos en almacenamiento seguro. Consulte [Escritura de acción Enviar personalizada para formularios](/help/forms/using/custom-submit-action-form.md) adaptables para obtener más información.
+   También puede escribir una acción de envío personalizada que almacene datos de formulario y datos adjuntos en un almacenamiento seguro. Consulte [Escritura de acción Enviar personalizada para formularios](/help/forms/using/custom-submit-action-form.md) adaptables para obtener más información.
 
 ### Gestión de información personal {#handling-personally-identifiable-information}
 
