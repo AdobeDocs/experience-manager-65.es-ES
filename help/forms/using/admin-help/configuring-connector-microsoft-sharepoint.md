@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,13 +22,13 @@ Connector for Microsoft SharePoint permite la comunicación entre formularios AE
 1. En la consola de administración, haga clic en Servicios > Conector para Microsoft SharePoint.
 1. Especifique la siguiente configuración para el servidor de SharePoint:
 
-   **** Nombre de host de SharePoint Server: El número de puerto del nombre de host de la aplicación web en el servidor de SharePoint, en formato `[hostname]:[port]`.
+   **Nombre de host de SharePoint Server:** El número de puerto del nombre de host de la aplicación web en el servidor de SharePoint, en formato `[hostname]:'port'`.
 
-   **** Nombre de usuario: Cuenta de usuario utilizada para conectarse al servidor de SharePoint.
+   **Nombre de usuario:** Cuenta de usuario utilizada para conectarse al servidor de SharePoint.
 
-   **** Contraseña: Contraseña de la cuenta de usuario utilizada para conectarse al servidor de SharePoint
+   **Contraseña:** Contraseña de la cuenta de usuario utilizada para conectarse al servidor de SharePoint
 
-   **** Nombre de dominio: Dominio donde se encuentra el servidor de SharePoint.
+   **Nombre de dominio:** Dominio donde se encuentra el servidor de SharePoint.
 
 1. Haga clic en Guardar.
 
