@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
+source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
 
 ---
 
@@ -22,7 +22,7 @@ Este tutorial es un paso en la [serie Crear una primera comunicación](/help/for
 
 ## Acerca del tutorial {#about-the-tutorial}
 
-El módulo de integración de datos de AEM Forms le permite crear un modelo de datos de formulario a partir de orígenes de datos de back-end dispares, como perfil de usuario de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Puede configurar objetos y servicios de modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formulario adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos del formulario enviados en el objeto del modelo de datos.
+El módulo de integración de datos de AEM Forms le permite crear un modelo de datos de formulario a partir de orígenes de datos de back-end dispares, como perfil de usuarios de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Puede configurar objetos y servicios de modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formulario adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos del formulario enviados en el objeto del modelo de datos.
 
 Para obtener más información sobre la integración de datos de formularios y el modelo de datos de formularios, consulte Integración [de datos de formularios de](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)AEM.
 
@@ -38,7 +38,7 @@ El modelo de datos de formulario tiene un aspecto similar al siguiente:
 
 ![Modelo de datos de formulario](assets/form_data_model_callouts_new.png)
 
-**A.** Fuentes de datos **B configuradas.** Esquemas de fuentes de datos **C.** Servicios disponibles **D.** Objetos del modelo de datos **E.** Servicios configurados
+**A.** Fuentes de datos **B configuradas.** esquemas de fuentes de datos **C.** Servicios disponibles **D.** Objetos del modelo de datos **E.** Servicios configurados
 
 ## Requisitos previos {#prerequisites}
 
@@ -121,7 +121,7 @@ Haga lo siguiente para configurar su base de datos MySQL:
    1. Inicie sesión en la instancia de creación de AEM Forms como administrador y vaya a los paquetes de la consola web de AEM. La dirección URL predeterminada es [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
    1. Toque **Instalar/Actualizar**. Aparece el cuadro de diálogo **Cargar e instalar paquetes** .
 
-   1. Toque **Elegir archivo** para buscar y seleccionar el paquete OSGi del controlador JDBC de MySQL. Seleccione **Iniciar paquete** y **Actualizar paquetes**, y toque **Instalar** o **Actualizar**. Asegúrese de que el controlador JDBC de Oracle Corporation para MySQL está activo. El controlador está instalado.
+   1. Toque **Elegir archivo** para buscar y seleccionar el paquete OSGi del controlador JDBC de MySQL. Seleccione Paquete **Inicio** y **Actualizar paquetes**, y toque **Instalar** o **Actualizar**. Asegúrese de que el controlador JDBC de Oracle Corporation para MySQL está activo. El controlador está instalado.
 
 1. Configure la base de datos MySQL como una fuente de datos:
 
@@ -135,14 +135,14 @@ Haga lo siguiente para configurar su base de datos MySQL:
 
       * **Clase** de controlador JDBC: Especifique el nombre de clase Java del controlador JDBC. Para la base de datos MySQL, especifique **com.mysql.jdbc.Driver**.
 
-      * **URI** de conexión JDBC: Especifique la dirección URL de conexión de la base de datos. Para la base de datos MySQL que se ejecuta en el puerto 3306 y en el esquema teleca, la dirección URL es: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI** de conexión JDBC: Especifique la dirección URL de conexión de la base de datos. Para la base de datos MySQL que se ejecuta en el puerto 3306 y esquema teleca, la dirección URL es: `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Nombre de usuario:** Nombre de usuario de la base de datos. Es necesario habilitar el controlador JDBC para establecer una conexión con la base de datos.
       * **Contraseña:** Contraseña de la base de datos. Es necesario habilitar el controlador JDBC para establecer una conexión con la base de datos.
       * **Prueba a tomar prestado:** Habilite la opción **Probar en préstamo** .
 
       * **Prueba al regresar:** Active la opción **Prueba al regresar** .
 
-      * **Consulta de validación:** Especifique una consulta SQL SELECT para validar conexiones desde el grupo. La consulta debe devolver al menos una fila. Por ejemplo, **seleccione * del cliente**.
+      * **Consulta de validación:** Especifique una consulta SQL SELECT para validar las conexiones del grupo. La consulta debe devolver al menos una fila. Por ejemplo, **seleccione * del cliente**.
 
       * **Aislamiento** de transacciones: Establezca el valor en **READ_COMMITTED**.
    Deje otras propiedades con [los valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) predeterminados y toque **Guardar**.
@@ -160,7 +160,7 @@ Para crear el modelo de datos de formulario, haga lo siguiente:
 1. En la instancia de creación de AEM, vaya a **Formularios** > Integraciones **de datos**.
 1. Tap **Create** > **Form Data Model**.
 1. En el asistente Crear modelo de datos de formulario, especifique un **nombre** para el modelo de datos de formulario. Por ejemplo, **FDM_Create_First_IC**. Puntee **Siguiente**.
-1. La pantalla Seleccionar fuente de datos muestra todas las fuentes de datos configuradas. Seleccione el origen de datos **MySQL** y toque **Crear**.
+1. La pantalla Seleccionar origen de datos lista todas las fuentes de datos configuradas. Seleccione el origen de datos **MySQL** y toque **Crear**.
 
    ![Origen de datos MYSQL](assets/fdm_mysql_data_source_new.png)
 
@@ -176,7 +176,7 @@ La configuración del modelo de datos de formulario incluye:
 * [edición de propiedades del objeto del modelo de datos](#edit-data-model-object-properties)
 * [configuración de servicios para objetos de modelo de datos](#configure-services)
 
-### Agregar objetos y servicios de modelos de datos {#add-data-model-objects-and-services}
+### Añadir objetos y servicios del modelo de datos {#add-data-model-objects-and-services}
 
 1. En la instancia de creación de AEM, vaya a **Formularios** > Integraciones **de datos**. La dirección URL predeterminada es [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. El modelo de datos de formulario **FDM_Create_First_IC** que creó anteriormente se muestra aquí. Selecciónelo y toque **Editar**.
@@ -185,7 +185,7 @@ La configuración del modelo de datos de formulario incluye:
 
    ![Origen de datos MYSQL para FDM](assets/mysql_fdm_new.png)
 
-1. Expanda el árbol de fuentes de datos **MySQL** . Seleccione los siguientes objetos y servicios del modelo de datos del esquema de **telecomunicaciones** :
+1. Expanda el árbol de fuentes de datos **MySQL** . Seleccione los siguientes objetos y servicios del modelo de datos desde el esquema de **telecomunicaciones** :
 
    * **Objetos** del modelo de datos:
 
@@ -196,7 +196,7 @@ La configuración del modelo de datos de formulario incluye:
 
       * get
       * actualizar
-   Toque **Agregar selección** para agregar objetos y servicios del modelo de datos seleccionado al modelo de datos de formulario.
+   Toque **Añadir seleccionados** para agregar objetos y servicios del modelo de datos seleccionado al modelo de datos de formulario.
 
    ![Seleccionar servicios de objetos del modelo de datos](assets/select_data_model_object_services_new.png)
 
@@ -208,7 +208,7 @@ La configuración del modelo de datos de formulario incluye:
 
 Una propiedad calculada es aquella cuyo valor se calcula en función de una regla o una expresión. Mediante una regla, puede establecer el valor de una propiedad calculada en una cadena literal, un número, un resultado de una expresión matemática o el valor de otra propiedad en el modelo de datos de formulario.
 
-En función del caso de uso, cree la propiedad **usagecharges** secundario computed en el objeto del modelo de datos de **facturas** utilizando la siguiente expresión matemática:
+En función del caso de uso, cree la propiedad **usagecharges** secundario computed en el objeto del modelo de datos de **facturas** con la siguiente expresión matemática:
 
 * cargos por uso = cargos por llamada + cargos por llamada de conferencia + cargos por SMS + cargos por Internet móvil + roaming nacional + itinerancia internacional + VAS (todas estas propiedades existen en el objeto de modelo de datos de facturas)Para obtener más información sobre la propiedad **calculada para niños con recargos de uso** , consulte [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md).
 
@@ -228,7 +228,7 @@ Ejecute los siguientes pasos para crear propiedades secundarias calculadas para 
 
    ![Editor de reglas de cargos de uso](assets/usage_charges_rule_editor_new.png)
 
-1. En la expresión matemática, seleccione **callloads** y **confcallloads** como primer y segundo objeto, respectivamente. Seleccione **más** como operador. Toque dentro de la expresión matemática y **Ampliar expresión** para agregar **smsloads**, **internetfees**, **roamingnational**, **roamingintnl****** y objetos vas a la expresión.
+1. En la expresión matemática, seleccione **Llamadas** y **Cargos** de Confrontación como primer y segundo objeto, respectivamente. Seleccione **más** como operador. Toque dentro de la expresión matemática y toque **Ampliar Expresión** para agregar **smsloads**, **internetfees**, **roamingnational**, **roamingintnl****** , y objetos vas a la expresión.
 
    La siguiente imagen muestra la expresión matemática en el editor de reglas:
 
@@ -237,7 +237,7 @@ Ejecute los siguientes pasos para crear propiedades secundarias calculadas para 
 1. Puntee **Listo**. La regla se crea en el Editor de reglas.
 1. Toque **Cerrar** para cerrar la ventana Editor de reglas.
 
-### Adición de asociaciones entre objetos de modelo de datos {#add-associations-between-data-model-objects}
+### Añadir asociaciones entre objetos del modelo de datos {#add-associations-between-data-model-objects}
 
 Una vez definidos los objetos del modelo de datos, puede crear asociaciones entre ellos. La asociación puede ser uno a uno o uno a varios. Por ejemplo, puede haber varios dependientes asociados a un empleado. Se denomina asociación de uno a varios y se describe con 1:n en la línea que conecta objetos del modelo de datos asociados. Sin embargo, si una asociación devuelve un nombre de empleado único para un ID de empleado determinado, se denomina asociación uno a uno.
 
@@ -252,8 +252,8 @@ En función del caso de uso, cree las siguientes asociaciones entre los objetos 
 
 Realice los siguientes pasos para crear asociaciones entre objetos del modelo de datos:
 
-1. Seleccione la casilla de verificación situada en la parte superior del objeto del modelo de datos del **cliente** para seleccionarlo y tocar **Agregar asociación**. Se abre el panel de propiedades **Agregar asociación** .
-1. En el panel **Agregar asociación** :
+1. Seleccione la casilla de verificación situada en la parte superior del objeto del modelo de datos del **cliente** para seleccionarlo y tocar **Añadir asociación**. Se abre el panel de propiedades **Añadir asociación** .
+1. En el panel **Añadir asociación** :
 
    * Especifique un título para la asociación. Es un campo opcional.
    * Seleccione **Uno a Muchos** en la lista desplegable **Tipo** .
@@ -262,10 +262,10 @@ Realice los siguientes pasos para crear asociaciones entre objetos del modelo de
 
    * Seleccione **Obtener** en la lista desplegable **Servicio** .
 
-   * Toque **Agregar** para vincular el objeto del modelo de datos del **cliente** al objeto del modelo de datos de **llamadas** mediante una propiedad. En función del caso de uso, el objeto del modelo de datos de llamadas debe estar vinculado a la propiedad de número móvil en el objeto del modelo de datos del cliente. Se abre el cuadro de diálogo **Agregar argumento** .
-   ![Agregar asociación](assets/add_association_new.png)
+   * Toque **Añadir** para vincular el objeto del modelo de datos del **cliente** al objeto del modelo de datos de **llamadas** mediante una propiedad. En función del caso de uso, el objeto del modelo de datos de llamadas debe estar vinculado a la propiedad de número móvil en el objeto del modelo de datos del cliente. Se abre el cuadro de diálogo **Añadir argumento** .
+   ![Añadir asociación](assets/add_association_new.png)
 
-1. En el cuadro de diálogo **Agregar argumento** :
+1. En el cuadro de diálogo **Añadir argumento** :
 
    * Seleccione **mobilenum** en la lista desplegable **Nombre** . La propiedad mobile number es una propiedad común que está disponible en el cliente y llama a objetos del modelo de datos. Como resultado, se utiliza para crear una asociación entre el cliente y los objetos del modelo de datos de llamadas.
 Para cada número móvil disponible en el objeto del modelo de datos del cliente, hay varios registros de llamadas disponibles en la tabla de llamadas.
@@ -275,19 +275,19 @@ Para cada número móvil disponible en el objeto del modelo de datos del cliente
 
    * Seleccione **mobilenum** en la lista desplegable Valor **de** enlace.
 
-   * Toque **Agregar**.
-   ![Agregar asociación para un argumento](assets/add_association_argument_new.png)
+   * Toque **Añadir**.
+   ![Añadir asociación para un argumento](assets/add_association_argument_new.png)
 
    La propiedad mobilenum se muestra en la sección **Argumentos** .
 
-   ![Agregar asociación de argumentos](assets/add_argument_association_new.png)
+   ![Añadir asociación de argumentos](assets/add_argument_association_new.png)
 
 1. Puntee **Listo** para crear una asociación 1:n entre los objetos del modelo de datos de cliente y de llamada.
 
    Una vez que haya creado una asociación entre los objetos del modelo de datos cliente y las llamadas, cree una asociación 1:1 entre el cliente y los objetos del modelo de datos de facturación.
 
-1. Seleccione la casilla de verificación situada en la parte superior del objeto del modelo de datos del **cliente** para seleccionarlo y tocar **Agregar asociación**. Se abre el panel de propiedades **Agregar asociación** .
-1. En el panel **Agregar asociación** :
+1. Seleccione la casilla de verificación situada en la parte superior del objeto del modelo de datos del **cliente** para seleccionarlo y tocar **Añadir asociación**. Se abre el panel de propiedades **Añadir asociación** .
+1. En el panel **Añadir asociación** :
 
    * Especifique un título para la asociación. Es un campo opcional.
    * Seleccione **Uno a Uno** en la lista desplegable **Tipo** .
@@ -302,7 +302,7 @@ Los objetos del modelo de datos de clientes y facturas se vinculan mediante las 
    * Seleccione **customerplan** en la lista desplegable Valor **de** enlace.
 
    * Puntee **Listo** para crear un enlace entre las propiedades de plan de facturación y plan del cliente.
-   ![Agregar asociación para la factura de cliente](assets/add_association_customer_bills_new.png)
+   ![Añadir asociación para factura de cliente](assets/add_association_customer_bills_new.png)
 
    La siguiente imagen muestra las asociaciones entre los objetos del modelo de datos y las propiedades utilizadas para crear asociaciones entre ellos:
 
