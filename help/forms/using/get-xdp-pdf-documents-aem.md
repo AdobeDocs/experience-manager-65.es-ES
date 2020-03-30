@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,11 +33,11 @@ Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. 
 
 ## Carga de formularios {#uploading-forms}
 
-1. Para iniciar sesión en la interfaz de usuario de AEM Forms, acceda a `https://[server]:[port]/aem/forms.html`.
+1. Para iniciar sesión en la interfaz de usuario de AEM Forms, acceda a `https://'[server]:[port]'/aem/forms.html`.
 1. Vaya a la carpeta en la que desea cargar el formulario o la carpeta que contiene los formularios.
 1. En la barra de herramientas de acciones, toque **Crear > Carga** de archivos.
 
-   ![Archivos de almacenamiento local, opción en Crear](assets/step.png)
+   ![Archivos de la opción de almacenamiento local en Crear](assets/step.png)
 
 1. El cuadro de diálogo Cargar formularios o paquetes le permite examinar y elegir el archivo que desea cargar. El explorador de archivos solo muestra los formatos de archivo admitidos (ZIP, XDP y PDF).
 
@@ -45,7 +45,7 @@ Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. 
    >
    >Un nombre de archivo solo puede contener caracteres alfanuméricos, guiones o guiones bajos.
 
-1. Haga clic en Cargar después de seleccionar el archivo para cargar los archivos o haga clic en &#39;Cancelar&#39; para cancelar la carga. Una ventana emergente muestra los recursos que se han agregado y los recursos que se han actualizado en la ubicación actual.
+1. Haga clic en Cargar después de seleccionar el archivo para cargar los archivos o haga clic en &#39;Cancelar&#39; para cancelar la carga. Una ventana emergente lista los recursos que se agregan y los recursos que se actualizan en la ubicación actual.
 
    >[!NOTE]
    >
@@ -57,7 +57,7 @@ Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. 
 
    ![Mensaje de error al cargar un formulario XFA](assets/upload-scr-err.png)
 
-Una vez completada la carga, un flujo de trabajo en segundo plano genera miniaturas para cada recurso, según la vista previa del recurso. Las versiones más recientes de los recursos, si se cargan, anulan los recursos existentes.
+Una vez completada la carga, un flujo de trabajo en segundo plano genera miniaturas para cada recurso, según la previsualización del recurso. Las versiones más recientes de los recursos, si se cargan, anulan los recursos existentes.
 
 ### Modo protegido {#protected-mode}
 
@@ -65,7 +65,7 @@ El servidor de AEM Forms permite ejecutar código JavaScript. Un código JavaScr
 
 El modo protegido está activado de forma predeterminada. Si es necesario, puede desactivar el modo protegido:
 
-1. Inicie sesión en AEM Web Console como administrador. La dirección URL es https://[server]:[port]/system/console/configMgr
+1. Inicie sesión en AEM Web Console como administrador. La dirección URL es https://&#39;[server]:[port]&#39;/system/console/configMgr
 1. Abra Configuraciones de formularios móviles para editarlas.
 1. Anule la selección de la opción Modo protegido y haga clic en **Guardar**. El modo protegido está desactivado.
 
