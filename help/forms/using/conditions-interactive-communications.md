@@ -1,7 +1,7 @@
 ---
 title: Condiciones de las comunicaciones interactivas
 seo-title: Condiciones de las comunicaciones interactivas
-description: 'Creación y edición de fragmentos de condición para su uso en Interactive Communications: la condición es uno de los cuatro tipos de fragmentos de documento que se utilizan para crear comunicaciones interactivas. Los otros tres son textos, listas y fragmentos de diseño.'
+description: 'Creación y edición de fragmentos de condición para su uso en Interactive Communications: la condición es uno de los cuatro tipos de fragmentos de documento utilizados para crear comunicaciones interactivas. Los otros tres son textos, listas y fragmentos de maquetación.'
 seo-description: Creación y edición de condiciones para utilizar en Interactive Communications
 uuid: c98f02d5-1769-46dd-ab35-6e8145a24939
 topic-tags: interactive-communications
@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Condiciones de las comunicaciones interactivas{#conditions-in-interactive-communications}
 
-Creación y edición de fragmentos de condición para su uso en Interactive Communications: la condición es uno de los cuatro tipos de fragmentos de documento que se utilizan para crear comunicaciones interactivas. Los otros tres son textos, listas y fragmentos de diseño.
+Creación y edición de fragmentos de condición para su uso en Interactive Communications: la condición es uno de los cuatro tipos de fragmentos de documento utilizados para crear comunicaciones interactivas. Los otros tres son textos, listas y fragmentos de maquetación.
 
 ## Información general {#overview}
 
@@ -33,12 +33,12 @@ Los recursos en las condiciones que se procesan según las reglas aplicadas y lo
 * Todas las variables que cree en la condición
 * Cadenas
 * Números
-* Expresiones matemáticas
+* expresiones matemáticas
 * Fechas
 
 ## Create condition {#createcondition}
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de documento]**.
+1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
 1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Condición]**.
 1. Especifique la siguiente información:
 
@@ -56,7 +56,7 @@ Los recursos en las condiciones que se procesan según las reglas aplicadas y lo
 
    ![createcondition](assets/createcondition.png)
 
-1. Toque **[!UICONTROL Agregar recursos]**.
+1. Toque **[!UICONTROL Añadir recursos]**.
 
    Aparece la página Seleccionar recursos y muestra los textos, listas, condiciones e imágenes disponibles para agregar en la condición.
 
@@ -66,7 +66,7 @@ Los recursos en las condiciones que se procesan según las reglas aplicadas y lo
 
 1. Toque los recursos correspondientes para seleccionarlos para incluirlos en la condición y, a continuación, toque **[!UICONTROL Listo]**.
 
-   Se abre la página Crear condición y se enumeran los recursos agregados.
+   Aparece la página Crear condición y lista los recursos agregados.
 
    ![createconditionassetsadd](assets/createconditionassetsadd.png)
 
@@ -74,7 +74,7 @@ Los recursos en las condiciones que se procesan según las reglas aplicadas y lo
 
    ![createconditionscreenassetsadadenotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Un]Cambio De Rechazo.**Toque este icono para rechazar los cambios que haya realizado en el recurso y en la regla de la condición.   **[B]Aceptar cambio.**Toque este icono para aceptar los cambios realizados en el recurso y la regla de la condición.   **[C]Recurso duplicado.**Toque este icono para crear una copia del recurso junto con la regla aplicada, si la hay, en la condición. A continuación, puede continuar editando la regla y el recurso para el recurso duplicado. Duplicar un recurso resulta útil para crear reglas similares que muestren recursos alternativos basados en un contexto concreto.   **[D]Mostrar vista previa.**Toque este icono para mostrar una vista previa del recurso en la página Crear/Editar condición.   **[Reordenar]electrónicamente.**Mantenga pulsado este icono para arrastrar y soltar recursos para reordenarlos dentro de una condición.
+   **[Un]Cambio De Rechazo.**Toque este icono para rechazar los cambios que haya realizado en el recurso y en la regla de la condición.   **[B]Aceptar cambio.**Toque este icono para aceptar los cambios realizados en el recurso y la regla de la condición.   **[C]Recurso de Duplicado.**Toque este icono para crear una copia del recurso junto con la regla aplicada, si la hay, en la condición. A continuación, puede continuar editando la regla y el recurso para el recurso duplicado. Duplicar un recurso resulta útil para crear reglas similares que muestren recursos alternativos basados en un contexto concreto.   **[D]Mostrar Previsualización.**Toque este icono para mostrar una previsualización del recurso en la página Crear/Editar condición.   **Reordenar &#39;servidor&#39;.** Mantenga pulsado este icono para arrastrar y soltar recursos para reordenarlos dentro de una condición.
 
    Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición en tiempo de ejecución:
 
@@ -82,7 +82,7 @@ Los recursos en las condiciones que se procesan según las reglas aplicadas y lo
 
    * **Salto** de página: Seleccione esta opción ( ![salto](assets/break.png)) para agregar un salto de página entre los recursos de las condiciones. Si esta opción no está seleccionada ( ![no está seleccionada](assets/nobreak.png)), si una condición se está desbordando a la página siguiente en la salida de impresión, toda la condición se pasa a la página siguiente en lugar de saltarse la página entre los recursos de la condición.
 
-1. Toque **[!UICONTROL Crear regla]** para agregar reglas para mostrar u ocultar los recursos, según sea necesario. Para utilizar variables en las reglas, consulte [Creación de variables](#variables). Para obtener más información, consulte [Adición de reglas a una condición](#ruleeditor).
+1. Toque **[!UICONTROL Crear regla]** para agregar reglas para mostrar u ocultar los recursos, según sea necesario. Para utilizar variables en las reglas, consulte [Creación de variables](#variables). Para obtener más información, consulte [Añadir reglas a condición](#ruleeditor).
 
    Las reglas creadas aparecen en la columna REGLA de la pantalla Crear condición.
 
@@ -104,7 +104,7 @@ Los recursos en las condiciones que se procesan según las reglas aplicadas y lo
 
 Puede editar una condición siguiendo los pasos siguientes. También puede elegir editar una condición desde una comunicación interactiva seleccionando Editar fragmento en el menú emergente.
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de documento]**.
+1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
 1. Vaya a la condición y selecciónela.
 1. Toque **[!UICONTROL Editar]**.
 1. Realice los cambios necesarios en la condición. Para obtener más información sobre la información que puede cambiar en una condición, consulte [Crear condición](#createcondition).
@@ -116,7 +116,7 @@ Con el editor de reglas en una condición, puede crear reglas para mostrar u ocu
 
 * Cadenas
 * Números
-* Expresiones matemáticas
+* expresiones matemáticas
 * Fechas
 * Propiedades del modelo de datos de formulario asociado
 * Cualquier [variable](#variables) que haya creado
@@ -125,7 +125,7 @@ Con el editor de reglas en una condición, puede crear reglas para mostrar u ocu
 
 1. Durante la creación o edición de una condición, toque el icono ![ruleeditoricon](assets/ruleeditoricon.png) (Editor de reglas) del recurso correspondiente.
 
-   Aparece el cuadro de diálogo Crear regla. Además de la cadena, el número, la expresión matemática y la fecha, también están disponibles en el Editor de reglas los siguientes elementos para crear instrucciones de las reglas:
+   Aparece el cuadro de diálogo Crear regla. Además de la cadena, el número, la expresión matemática y la fecha, en el Editor de reglas también se encuentran disponibles las siguientes opciones para crear instrucciones de las reglas:
 
    * Propiedades del modelo de datos de formulario asociado
    * Cualquier [variable](#variables) que haya creado.
@@ -137,7 +137,7 @@ Con el editor de reglas en una condición, puede crear reglas para mostrar u ocu
    >
    >La propiedad Collection no se admite para crear reglas para mostrar recursos.
 
-1. Seleccione el operador apropiado para evaluar la regla, como Es igual a, Contiene y Comienza por.
+1. Seleccione el operador apropiado para evaluar la regla, como Es igual a, Contiene y Inicios con.
 1. Inserte la expresión, cadena, propiedad del modelo de datos, variable o fecha de evaluación.
 
    ![Regla para mostrar un recurso cuando el tipo de directiva es estándar](assets/ruleincondition.png)
