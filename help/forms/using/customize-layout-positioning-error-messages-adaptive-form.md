@@ -1,8 +1,8 @@
 ---
 title: Personalización de la presentación y colocación de los mensajes de error de un formulario adaptable
 seo-title: Personalización de la presentación y colocación de los mensajes de error de un formulario adaptable
-description: 'Puede personalizar el diseño y la posición de los mensajes de error de una adaptación para. '
-seo-description: 'Puede personalizar el diseño y la posición de los mensajes de error de una adaptación para. '
+description: 'Puede personalizar el diseño y la posición de los mensajes de error de un adaptador para. '
+seo-description: 'Puede personalizar el diseño y la posición de los mensajes de error de un adaptador para. '
 uuid: 6d3490f6-c867-44c9-a527-55f6d7221f99
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ Siga estos pasos para aplicar un diseño personalizado a un solo campo:
 
 ### Personalización de la presentación de todos los campos de un formulario {#customize-layout-of-all-the-fields-of-a-form}
 
-Con AEM Forms, ahora puede crear un tema y aplicarlo al formulario. El editor de temas permite especificar el estilo de los componentes del formulario en un solo lugar. Al crear un tema, se especifica el estilo en un nivel de componente. Para obtener más información sobre los temas, consulte [Temas en AEM Forms](../../forms/using/themes.md).
+Con AEM Forms, ahora puede crear un tema y aplicarlo al formulario. El editor de temas permite especificar el estilo de los componentes del formulario en un solo lugar. Al crear un tema, se especifica el estilo en un nivel de componente. Para obtener más información sobre temáticas, consulte [Temáticas en AEM Forms](../../forms/using/themes.md).
 
 Cree un tema con el Editor de temas para personalizar la presentación de todos los campos del formulario. Después de crear un tema, realice los siguientes pasos para aplicarlo a un formulario:
 
@@ -50,7 +50,7 @@ Cree un tema con el Editor de temas para personalizar la presentación de todos 
 
 ## Creación de un diseño de campo personalizado {#create-a-custom-field-layout}
 
-1. Abra la lista CRXDE. La dirección URL predeterminada es https://[Server]:[Port]/crx/de.
+1. Abra la lista CRXDE. La dirección URL predeterminada es https://&#39;[server]:[port]&#39;/crx/de.
 1. Copie un diseño de campo del nodo /libs/fd/af/layouts/field (por ejemplo, defaultFieldLayout) al nodo /apps (por ejemplo, /apps/af-field-layout).
 1. Cambie el nombre del nodo copiado y el archivo defaultFieldLayout.jsp. Por ejemplo, errorOnRight.jsp.
 
@@ -58,7 +58,7 @@ Cree un tema con el Editor de temas para personalizar la presentación de todos 
 
 1. Para agregar nuevos estilos y comportamiento, cree una biblioteca de cliente en el nodo /etc.
 
-   Por ejemplo, en la ubicación /etc/af-field-layout-clientlib, cree el nodo client-library. Agregue la propiedad categories con el valor af.field.errorOnRight y el archivo style.less con el siguiente código:
+   Por ejemplo, en la ubicación /etc/af-field-layout-clientlib, cree el nodo client-library. Añada la propiedad categorías con el valor af.field.errorOnRight y el archivo style.less con el siguiente código:
 
    ```css
    .widgetErrorWrapper {
