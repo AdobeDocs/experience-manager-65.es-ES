@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -49,7 +49,7 @@ El comando keytool generalmente se encuentra en el directorio jre/bin de Java y 
   <tr>
    <td><p>-keyalg</p></td>
    <td><p>El algoritmo que se va a usar para generar el par de claves.</p></td>
-   <td><p>RSA</p><p>Puede utilizar un algoritmo diferente, según la política de su empresa.</p></td>
+   <td><p>RSA</p><p>Puede utilizar un algoritmo diferente, según la política de su compañía.</p></td>
   </tr>
   <tr>
    <td><p>-keystore</p></td>
@@ -68,7 +68,7 @@ El comando keytool generalmente se encuentra en el directorio jre/bin de Java y 
   <tr>
    <td><p>-valid</p></td>
    <td><p>Número de días que el certificado se considera válido.</p></td>
-   <td><p>3650</p><p>Puede usar un valor diferente, según la política de su empresa.</p></td>
+   <td><p>3650</p><p>Puede utilizar un valor diferente, según la política de su compañía.</p></td>
   </tr>
   <tr>
    <td><p>-storepass</p></td>
@@ -111,7 +111,7 @@ Para obtener más información sobre el uso del comando keytool, consulte el arc
 
    >[!NOTE]
    >
-   >Reemplace `[JAVA_HOME]`*con el directorio donde está instalado JDK y reemplace el texto en cursiva por valores que correspondan con su entorno.*
+   >Reemplace `[JAVA_HOME]`*con el directorio donde está instalado el JDK y reemplace el texto en cursiva por valores que correspondan con su entorno.*
 
    Por ejemplo:
 
@@ -156,15 +156,15 @@ Para obtener más información sobre el uso del comando keytool, consulte el arc
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-El archivo del almacén de claves de confianza personalizado denominado &quot;ads-ca.jks&quot; se crea en el directorio [appserverdomain]/adobe/[server] .
+El archivo del almacén de claves de confianza personalizado denominado &quot;ads-ca.jks&quot; se crea en el directorio [appserverdomain]/adobe/&#39;server&#39;.
 
 Configure WebLogic para que utilice el almacén de claves de identidad personalizada y el almacén de claves de confianza personalizada que ha creado. Además, deshabilite la función de verificación del nombre de host de WebLogic porque el nombre distintivo utilizado para crear los archivos del almacén de claves no incluía el nombre del equipo que aloja el servidor WebLogic.
 
 ## Configurar WebLogic para utilizar SSL {#configure-weblogic-to-use-ssl}
 
-1. Inicie la consola de administración de WebLogic Server escribiendo el nombre `https://`*[de ]*host`:7001/console`en la línea URL de un explorador Web.
-1. En Entorno, en Configuraciones de dominio, seleccione **Servidores >[Servidor]> Configuración > General**.
-1. En General, en Configuración, asegúrese de que estén activadas **el puerto de** escucha y el puerto de escucha **SSL habilitado** . Si no está habilitado, haga lo siguiente:
+1. Inicio la consola de administración de WebLogic Server escribiendo el nombre `https://`*[de ]*host`:7001/console`en la línea URL de un explorador Web.
+1. En Entorno, en Configuraciones de dominio, seleccione **Servidores > &#39;Servidor&#39; > Configuración > General**.
+1. En General, en Configuración, asegúrese de que **Escuchar puerto habilitado** y Puerto de escucha **SSL habilitado** están seleccionados. Si no está habilitado, haga lo siguiente:
 
    1. En el Centro de cambios, haga clic en **Bloquear y editar** para modificar las selecciones y los valores.
    1. Marque las casillas de verificación Puerto de **escucha habilitado** y Puerto de escucha **SSL habilitado** .
@@ -174,40 +174,40 @@ Configure WebLogic para que utilice el almacén de claves de identidad personali
 1. En Entorno, en Configuraciones de dominio, haga clic en **Servidores > Servidor [**]administrado > Configuración > General**.
 1. En General, en Configuración, seleccione **Palabras clave**.
 1. En el Centro de cambios, haga clic en **Bloquear y editar** para modificar las selecciones y los valores.
-1. Haga clic en **Cambiar** para obtener la lista desplegable almacén de claves como y seleccione Identidad **personalizada y Confianza** personalizada.
+1. Haga clic en **Cambiar** para obtener la lista del almacén de claves como lista desplegable y seleccione Identidad **personalizada y Confianza** personalizada.
 1. En Identidad, especifique los siguientes valores:
 
-   **Almacén** de claves de identidad personalizado: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, donde *[appserverdomain] *es la ruta de acceso real y *[server name]* es el nombre del servidor de aplicaciones.
+   **Custom Identity Keystore**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, where *[appserverdomain] *is the actual path and *[server name]* is the name of the application server.
 
    **Tipo** de almacén de claves de identidad personalizada: JKS
 
-   **Frase de contraseña** del almacén de claves de identidad personalizada: *mypassword* (contraseña personalizada del almacén de claves de identidad)
+   **Custom Identity Keystore Passphrase**: *mypassword* (custom identity keystore password)
 
-1. En Confianza, especifique los siguientes valores:
+1. Under Trust, specify the following values:
 
-   **Nombre** del archivo de almacén de claves de confianza personalizado: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, donde `*[appserverdomain]*` es la ruta real
+   **Custom Trust Keystore File Name**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, where `*[appserverdomain]*` is the actual path
 
-   **Tipo** de almacén de claves de confianza personalizada: JKS
+   **Custom Trust Keystore Type**: JKS
 
-   **Frase** de paso de almacén de claves de confianza personalizada: *mypassword* (contraseña de clave de confianza personalizada)
+   **Custom Trust Keystore Pass Phrase**: *mypassword* (custom trust key password)
 
-1. En General, en Configuración, seleccione **SSL**.
-1. De forma predeterminada, Keystore está seleccionado para Ubicaciones de identidad y de confianza. Si no es así, cámbiela a keystore.
-1. En Identidad, especifique los siguientes valores:
+1. Under General, in Configuration, select **SSL**.
+1. By default, Keystore is selected for Identity and Trust Locations. If not, change it to keystore.
+1. Under Identity, specify the following values:
 
-   **Alias** de clave privada: ads-dentials
+   **Private Key Alias**: ads-credentials
 
-   **Frase de contraseña**: *mypassword*
+   **Passphrase**: *mypassword*
 
-1. Haga clic en **Versión de configuración**.
+1. Click **Release Configuration**.
 
-## Deshabilitar la función de verificación de nombre de host {#disable-the-hostname-verification-feature}
+## Disable the Hostname Verification feature {#disable-the-hostname-verification-feature}
 
-1. En la ficha Configuración, haga clic en SSL.
-1. En Avanzada, seleccione Ninguno en la lista Verificación del nombre de host.
+1. On the Configuration tab, click SSL.
+1. Under Advanced, select None from the Hostname Verification list.
 
-   Si la verificación del nombre de host no está deshabilitada, el nombre común (CN) debe contener el nombre de host del servidor.
+   If Hostname Verification is not disabled, the Common Name (CN) must contain the server host name.
 
-1. En Centro de cambios, haga clic en Bloquear y editar para modificar las selecciones y los valores.
+1. Under Change Center, click Lock &amp; Edit to modify selections and values.
 1. Reinicie el servidor de aplicaciones.
 
