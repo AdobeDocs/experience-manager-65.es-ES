@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Inicio rápido de la API de Java del Registro de extremos (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Inicio rápido de la API de Java de Endpoint Registry (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) está disponible para el Registro de Extremos.
+El Inicio rápido de la API de Java (SOAP) está disponible para el Registro de Extremos.
 
-[Inicio rápido: Adición de un extremo EJB mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo EJB mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[Inicio rápido: Adición de un extremo SOAP mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo SOAP mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[Inicio rápido: Adición de un extremo de carpeta vigilada mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo de carpeta vigilada mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[Inicio rápido: Adición de un extremo de correo electrónico mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo de correo electrónico mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[Inicio rápido: Adición de un extremo remoto mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo remoto mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[Inicio rápido: Adición de un extremo de TaskManager mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo de TaskManager mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
 [Inicio rápido: Modificación de un extremo mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
@@ -37,15 +37,15 @@ Java API Quick Start (SOAP) está disponible para el Registro de Extremos.
 
 [Inicio rápido: Recuperación de información del conector del extremo mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: Inicio rápido ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+***Nota **: El inicio rápido ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
 
 **Nota**: No se puede trabajar con extremos mediante un servicio Web.
 
-## Inicio rápido: Adición de un extremo EJB mediante la API de Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+## Inicio rápido: Añadir un extremo EJB mediante la API de Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-En el siguiente ejemplo de código Java se agrega un extremo EJB a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Adición de extremos](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)de EJB).
+En el siguiente ejemplo de código Java se agrega un extremo EJB a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)de EJB).
 
 ```as3
  /*
@@ -109,7 +109,7 @@ En el siguiente ejemplo de código Java se agrega un extremo EJB a un servicio l
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -142,9 +142,9 @@ En el siguiente ejemplo de código Java se agrega un extremo EJB a un servicio l
  
 ```
 
-## Inicio rápido: Adición de un extremo SOAP mediante la API de Java {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## Inicio rápido: Añadir un extremo SOAP mediante la API de Java {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Adición de extremos](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
+El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
 
 ```as3
  /*
@@ -208,7 +208,7 @@ El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio llamad
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -242,9 +242,9 @@ El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio llamad
  
 ```
 
-## Inicio rápido: Adición de un extremo de carpeta vigilada mediante la API de Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
+## Inicio rápido: Añadir un extremo de carpeta vigilada mediante la API de Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo de carpeta vigilada a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Adición de extremos](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilados).
+El siguiente ejemplo de código Java agrega un extremo de carpeta vigilada a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilados).
 
 >[!NOTE]
 >
@@ -311,7 +311,7 @@ El siguiente ejemplo de código Java agrega un extremo de carpeta vigilada a un 
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -377,9 +377,9 @@ El siguiente ejemplo de código Java agrega un extremo de carpeta vigilada a un 
  
 ```
 
-## Inicio rápido: Adición de un extremo de correo electrónico mediante la API de Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
+## Inicio rápido: Añadir un extremo de correo electrónico mediante la API de Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo de correo electrónico a un servicio llamado *MyApplication/* EncryptDocument. (Consulte [Adición de extremos](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)de correo electrónico).
+El siguiente ejemplo de código Java agrega un extremo de correo electrónico a un servicio llamado *MyApplication/* EncryptDocument. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)de correo electrónico).
 
 >[!NOTE]
 >
@@ -446,7 +446,7 @@ El siguiente ejemplo de código Java agrega un extremo de correo electrónico a 
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -520,9 +520,9 @@ El siguiente ejemplo de código Java agrega un extremo de correo electrónico a 
  
 ```
 
-## Inicio rápido: Adición de un extremo remoto mediante la API de Java {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
+## Inicio rápido: Añadir un extremo remoto mediante la API de Java {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Adición de puntos](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)finales remotos).
+El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)remotos).
 
 ```as3
  /*
@@ -590,7 +590,7 @@ El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio ll
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -625,9 +625,9 @@ El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio ll
  
 ```
 
-## Inicio rápido: Adición de un extremo de TaskManager mediante la API de Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
+## Inicio rápido: Añadir un extremo de TaskManager mediante la API de Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo de TaskManager a un servicio llamado *MyApplication/EncryptDocument*. Observe que el nombre de la categoría es *EncryptProcess*. (Consulte [Adición de extremos](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)de TaskManager).
+El siguiente ejemplo de código Java agrega un extremo de TaskManager a un servicio llamado *MyApplication/EncryptDocument*. Observe que el nombre de la categoría es *EncryptProcess*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)de TaskManager).
 
 ```as3
  /*
@@ -693,7 +693,7 @@ El siguiente ejemplo de código Java agrega un extremo de TaskManager a un servi
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -804,7 +804,7 @@ El siguiente ejemplo de código Java modifica un extremo de carpeta vigilada. El
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -956,7 +956,7 @@ El siguiente código Java elimina un punto final de EJB de un servicio llamado *
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1005,7 +1005,7 @@ El siguiente código Java elimina un punto final de EJB de un servicio llamado *
 
 ## Inicio rápido: Recuperación de información del conector del extremo mediante la API de Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-El siguiente código Java recupera información sobre un extremo de carpeta vigilada. Se recupera y se muestra información sobre cada valor de configuración. Esta lista de códigos especifica si cada valor de configuración es obligatorio u opcional. Además, se muestra el nombre y el valor de cada valor de configuración. (Consulte [Recuperación de la información](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)del conector de extremo).
+El siguiente código Java recupera información sobre un extremo de carpeta vigilada. Se recupera y se muestra información sobre cada valor de configuración. Esta lista de código especifica si cada valor de configuración es obligatorio u opcional. Además, se muestra el nombre y el valor de cada valor de configuración. (Consulte [Recuperación de la información](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)del conector de extremo).
 
 ```as3
  /*
@@ -1070,7 +1070,7 @@ El siguiente código Java recupera información sobre un extremo de carpeta vigi
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
