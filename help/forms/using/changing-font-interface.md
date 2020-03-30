@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,11 +24,11 @@ Siga los pasos [genéricos para personalizar](../../forms/using/generic-steps-ht
 
 1. Cambie o agregue la familia de fuentes en un estilo existente.
 1. Cambie o agregue la familia de fuentes en línea para el elemento HTML.
-1. Agregue un estilo y úselo para el elemento HTML.
+1. Añada un estilo y úselo para el elemento HTML.
 
 Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegación superior a Courier New, siga estos pasos:
 
-1. Inicie sesión en CRXDE Lite accediendo `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Inicie sesión en CRXDE Lite accediendo `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Realice una de las acciones siguientes:
 
    1. Para cambiar la familia de fuentes en un estilo existente, agregue lo siguiente en el archivo newStyle.css en /apps/ws/css.
