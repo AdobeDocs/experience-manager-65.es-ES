@@ -1,22 +1,22 @@
 ---
 title: API para trabajar con formularios enviados en el portal de formularios
 seo-title: API para trabajar con formularios enviados en el portal de formularios
-description: AEM Forms proporciona API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
-seo-description: AEM Forms proporciona API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
+description: AEM Forms proporciona API que se pueden utilizar para realizar consultas y acciones en los datos de formularios enviados en el portal de formularios.
+seo-description: AEM Forms proporciona API que se pueden utilizar para realizar consultas y acciones en los datos de formularios enviados en el portal de formularios.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # API para trabajar con formularios enviados en el portal de formularios {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms proporciona API que se pueden utilizar para consultar datos de formularios enviados a través del portal de formularios. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
+AEM Forms proporciona API que se pueden utilizar para la consulta de datos de formularios enviados a través del portal de formularios. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (opcional)</td>
-   <td>Especifica una lista separada por comas de las propiedades del formulario que se incluirán en los resultados. <br /> Las propiedades predeterminadas son: <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Especifica una lista separada por comas de las propiedades del formulario que se incluirán en los resultados. Las propiedades predeterminadas son:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (opcional)</td>
@@ -128,7 +128,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 ## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
-Agrega un comentario a la instancia de envío especificada.
+Añade un comentario en la instancia de envío especificada.
 
 ### URL parameters {#url-parameters-2}
 
@@ -148,7 +148,7 @@ Devuelve un ID de comentario al publicar correctamente un comentario.
 **URL de solicitud**
 
 ```
-https://[host:[port]/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
+https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
 **Respuesta**
@@ -186,7 +186,7 @@ El objeto response contiene una matriz JSON que incluye todos los comentarios as
 **URL de solicitud**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
+https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
 **Respuesta**
@@ -218,7 +218,7 @@ Devuelve un objeto JSON con información sobre la actualización publicada.
 **URL de solicitud**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
+https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
 **Respuesta**
