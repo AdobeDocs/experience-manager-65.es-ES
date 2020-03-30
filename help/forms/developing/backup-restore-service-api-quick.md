@@ -1,6 +1,6 @@
 ---
-title: APIQuick Starts del servicio de copia de seguridad y restauración
-seo-title: APIQuick Starts del servicio de copia de seguridad y restauración
+title: APIQ del servicio de backup y restauraciónInicios rápidos
+seo-title: APIQ del servicio de backup y restauraciónInicios rápidos
 description: nulo
 seo-description: nulo
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Inicio rápido de la API de servicio de copia de seguridad y restauración {#backup-and-restore-service-apiquick-starts}
+# Inicios rápidos de la API de servicio de copia de seguridad y restauración {#backup-and-restore-service-apiquick-starts}
 
-Java API Quick Start (SOAP) está disponible para la API de servicio de copia de seguridad y restauración.
+El Inicio rápido de la API de Java (SOAP) está disponible para la API de servicio de copia de seguridad y restauración.
 
 [Inicio rápido: Entrada al modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
 [Inicio rápido: Salida del modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-* ***Nota **: Los inicios rápidos que se encuentran en Programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.*
+* ***Nota **: Los Inicios rápidos ubicados en Programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.*
 
 ## Inicio rápido (modo SOAP): Entrada al modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java entra en el modo de copia de seguridad con una etiqueta única durante dos horas. Una vez que caduca el tiempo de copia de seguridad o si el modo de copia de seguridad se cierra explícitamente, el servidor de formularios vuelve a depurar archivos desde Global Document Storage. (Consulte [Introducción del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)de formularios.)
+El siguiente ejemplo de código Java entra en el modo de copia de seguridad con una etiqueta única durante dos horas. Una vez que caduca el tiempo de copia de seguridad o si el modo de copia de seguridad se cierra explícitamente, el servidor de formularios vuelve a depurar archivos desde el Almacenamiento de Documento global. (Consulte [Introducción del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)de formularios.)
 
 ```as3
  /*
@@ -95,7 +95,7 @@ El siguiente ejemplo de código Java entra en el modo de copia de seguridad con 
          {
              // Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME,"administrator");
@@ -144,7 +144,7 @@ El siguiente ejemplo de código Java entra en el modo de copia de seguridad con 
 
 ## Inicio rápido (modo SOAP): Salida del modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java hace que Forms Server salga explícitamente del modo de copia de seguridad y vuelva a depurar archivos de Global Document Storage. (Consulte [Salida del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formularios.)
+El siguiente ejemplo de código Java hace que Forms Server salga explícitamente del modo de copia de seguridad y vuelva a depurar archivos del Almacenamiento de Documento global. (Consulte [Salida del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formularios.)
 
 ```as3
  /*
@@ -211,7 +211,7 @@ El siguiente ejemplo de código Java hace que Forms Server salga explícitamente
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[host]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'server':`port`");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME,"administrator");
