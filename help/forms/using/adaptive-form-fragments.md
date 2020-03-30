@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
    * **Plantilla** de formulario: Especifica la creación del fragmento mediante una plantilla XDP cargada en AEM Forms. Seleccione la plantilla XDP adecuada como modelo de formulario para el fragmento.
    ![Creación de un formulario adaptable mediante una plantilla de formulario como modelo](assets/form-template-model.png)
 
-   También se muestran los subformularios marcados como fragmentos en la plantilla de formulario seleccionada. Puede seleccionar un subformulario para el fragmento de formulario adaptable en la lista desplegable.
+   También se muestran los subformularios marcados como fragmentos en la plantilla de formulario seleccionada. Puede seleccionar un subformulario para el fragmento de formulario adaptable desde la lista desplegable.
 
    ![Seleccionar subformularios de la plantilla de formulario especificada](assets/fragment-subform.png)
 
@@ -71,7 +71,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 1. En el cuadro de diálogo Creación de fragmentos, especifique la siguiente información:
 
    * **Nombre**: Nombre del fragmento. El valor predeterminado es el nombre del elemento del panel. Es un campo obligatorio.
-      ***Nota **:Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, no se puede crear el fragmento.*
+      ***Nota **: Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, no se puede crear el fragmento.*
 
    * **Título**: Título del fragmento. El valor predeterminado es el título del panel.
 
@@ -79,9 +79,9 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 
    * **Etiquetas**: Etiqueta metadatos para el fragmento.
 
-   * **Ruta** de destino: Ruta del repositorio donde se guardará el fragmento. Si no especifica una ruta, se crea un nodo con el mismo nombre que el del fragmento junto al nodo que contiene el formulario adaptable. El fragmento se guarda en este nodo.
+   * **Ruta** de Destinatario: Ruta del repositorio donde se guardará el fragmento. Si no especifica una ruta, se crea un nodo con el mismo nombre que el del fragmento junto al nodo que contiene el formulario adaptable. El fragmento se guarda en este nodo.
 
-   * **Modelo** de formulario: Según el modelo de formulario para el formulario adaptable, este campo muestra el esquema **** XML, la plantilla **de** formulario o **Ninguno**. Es un campo no editable.
+   * **Modelo** de formulario: Según el modelo de formulario para el formulario adaptable, este campo muestra el Esquema **** XML, la plantilla **de** formulario o **Ninguno**. Es un campo no editable.
 
    * **Raíz** del modelo de fragmento: Solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo de complejo XSD en la lista desplegable. Tenga en cuenta que sólo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
 Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz estará visible en la ficha del modelo de datos de formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado están visibles en la ficha del modelo de datos de formulario adaptable.
@@ -163,7 +163,7 @@ Puede cambiar el recurso de fragmento y sus enlaces desde el cuadro de diálogo 
 
 Puede realizar varias operaciones en fragmentos de formulario adaptables mediante la interfaz de usuario de AEM Forms.
 
-1. Ir a `https://[hostname]:[port]/aem/forms.html`.
+1. Ir a `https://[hostname]:'port'/aem/forms.html`.
 
 1. Haga clic en **Seleccionar** en la barra de herramientas de la interfaz de usuario de AEM Forms y seleccione un fragmento de formulario adaptable. La barra de herramientas muestra las siguientes operaciones que puede realizar en el fragmento de formulario adaptable seleccionado.
 
@@ -175,39 +175,39 @@ Puede realizar varias operaciones en fragmentos de formulario adaptables mediant
   </tr>
   <tr>
    <td><p>Abra</p> </td>
-   <td><p><br /> Abre el fragmento de formulario adaptable seleccionado en modo de edición. <br /> </p> </td>
+   <td><p>Abre el fragmento de formulario adaptable seleccionado en modo de edición.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Ver propiedades</p> </td>
-   <td><p>Abre el panel Propiedades. Desde el panel Propiedades, puede ver y editar propiedades, generar una vista previa y cargar una imagen en miniatura para el fragmento seleccionado. <a href="../../forms/using/manage-form-metadata.md" target="_blank"> Para obtener más información, consulte </a>Administración de metadatos<br />. <br /> </p> </td>
+   <td><p>Abre el panel Propiedades. Desde el panel Propiedades, puede realizar vistas y editar propiedades, generar una previsualización y cargar una imagen en miniatura para el fragmento seleccionado. For more information, see <a href="../../forms/using/manage-form-metadata.md" target="_blank">Managing metadata</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Copiar</p> </td>
-   <td><p>Copia el fragmento seleccionado. <br /> El botón Pegar aparece en la barra de herramientas. <br /> </p> </td>
+   <td><p>Copia el fragmento seleccionado. El botón Pegar aparece en la barra de herramientas.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Descargar</p> </td>
-   <td><p><br /> Descarga el fragmento seleccionado. <br /> </p> </td>
+   <td><p>Descarga el fragmento seleccionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Vista previa</p> </td>
-   <td><p>Proporciona opciones para obtener una vista previa del fragmento como HTML o una vista previa personalizada mediante la combinación de datos de un archivo XML con el fragmento. <a href="/help/forms/using/previewing-forms.md" target="_blank"> Para obtener más información, consulte </a>Vista previa de un formulario<br />. <br /> </p> </td>
+   <td><p>Proporciona opciones para la previsualización del fragmento como HTML o una previsualización personalizada mediante la combinación de datos de un archivo XML con el fragmento. Para obtener más información, consulte <a href="/help/forms/using/previewing-forms.md" target="_blank">Vista previa de un formulario</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Iniciar revisión/Administrar revisión</p> </td>
-   <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado. <a href="../../forms/using/create-reviews-forms.md" target="_blank"> Para obtener más información, consulte </a>Creación y administración de revisiones<br />. <br /> </p> </td>
+   <td><p>Revisión/Administrar revisión de Inicio</p> </td>
+   <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado. Para obtener más información, consulte <a href="../../forms/using/create-reviews-forms.md" target="_blank">Creación y administración de revisiones</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Crear diccionario</p> </td>
-   <td><p>Genera un diccionario para localizar el fragmento seleccionado. <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank"> Para obtener más información, consulte </a>Localización de formularios<br />adaptables. <br /> </p> </td>
+   <td><p>Genera un diccionario para localizar el fragmento seleccionado. Para obtener más información, consulte <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localización de formularios</a>adaptables.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publicar / Cancelar la publicación</p> </td>
-   <td><p><br /> Publica o anula la publicación del fragmento seleccionado. <br /> </p> </td>
+   <td><p>Publicar o cancelar la publicación</p> </td>
+   <td><p>Publica o anula la publicación del fragmento seleccionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Eliminar</p> </td>
-   <td><p><br /> Elimina el fragmento seleccionado. <br /> </p> </td>
+   <td><p>Elimina el fragmento seleccionado.<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
