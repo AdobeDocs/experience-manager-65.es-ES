@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -72,14 +72,14 @@ Para obtener información detallada sobre la firma de código y la adición de d
 1. Extraiga el archivo en el `[User_Home]/Projects/[your-project]`directorio.
 1. Vaya al directorio del ` [User_Home]/Projects/ `[proyecto]`/adobe-lc-mobileworkspace-src-[version]/ios` .
 1. Abra el `AEM Forms.xcodeproj` proyecto en Xcode.
-1. Haga clic en **AEM Forms**, en **TARGET**, seleccione **AEM Forms**. Seleccione la ficha **Configuración de compilación **, localice la sección Asignación de derechos **de firma de** código y, en los campos Depurar y liberar, realice una de las siguientes acciones:
+1. Haga clic en **AEM Forms** y, en **DESTINATARIOS**, seleccione **AEM Forms**. Seleccione la ficha **Configuración de compilación **, localice la sección Asignación de derechos **de firma de** código y, en los campos Depurar y liberar, realice una de las siguientes acciones:
 
    * Deje los campos sin especificar para crear una aplicación estándar de Mobile Workspace
    * Especifique los campos a los que se explica en [Creación de una aplicación segura de AEM Forms para iOS](/help/forms/using/building-secure-mobile-workspace-app.md) para crear una aplicación segura de AEM Forms.
 
 1. En la ficha **Configuración** de compilación, haga clic en **Todo** y, a continuación, en **Combinado**.
 1. En la lista **Configuración** , expanda Firma **de código**.
-1. Para Identidad **de firma de** código, seleccione la firma adecuada. Para obtener información detallada sobre la creación de nuevas firmas, consulte [Creación y descarga de perfiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)de aprovisionamiento de desarrollo.
+1. Para Identidad **de firma de** código, seleccione la firma adecuada. Para obtener información detallada sobre la creación de nuevas firmas, consulte [Creación y descarga de Perfiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)de provisión de desarrollo.
 1. Asegúrese de que la misma firma está seleccionada para **Depurar**, **Versión** y **Cualquier SDK** de iOS.
 1. Reemplace el siguiente código en el `AEM Forms-info.plist` archivo:
 
@@ -134,9 +134,9 @@ Para obtener información detallada sobre la firma de código y la adición de d
 
 ## Creación del instalador para la aplicación de AEM Forms {#build-the-installer-for-the-mobile-workspace-app}
 
-Debe archivar el proyecto Xcode para crear el archivo de instalación (archivo .ipa) y una lista de propiedades (archivo .plist). El archivo de lista de propiedades contiene información de configuración de la aplicación interna alojada, como el nombre y la ubicación de alojamiento de la aplicación. Para obtener más información sobre el archivo de lista de propiedades, consulte [Acerca de los archivos](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)de lista de propiedades de información.
+Debe archivar el proyecto Xcode para crear el archivo de instalación (archivo .ipa) y una lista de propiedades (archivo .plist). El archivo de lista de propiedades contiene información de configuración de la aplicación interna alojada, como el nombre y la ubicación de alojamiento de la aplicación. Para obtener más información sobre el archivo de lista de propiedades, consulte [Acerca de los archivos](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)de Lista de propiedades de información.
 
-1. Conecte un iPad aprovisionado a un ordenador Mac. Para obtener información detallada sobre el aprovisionamiento de un iPad, consulte [Creación y descarga de perfiles de aprovisionamiento de desarrollo](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
+1. Conecte un iPad aprovisionado a un ordenador Mac. Para obtener información detallada sobre el aprovisionamiento de un iPad, consulte [Creación y descarga de Perfiles de aprovisionamiento de desarrollo](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
 1. Seleccione el dispositivo aprovisionado para el proyecto de **AEM Forms** .
 
    ![ipad-1](assets/ipad-1.png)
@@ -150,11 +150,11 @@ Debe archivar el proyecto Xcode para crear el archivo de instalación (archivo .
 1. Seleccione **Guardar para la implementación** empresarial o ad-hoc como método de distribución y haga clic en **Siguiente**.
 1. Seleccione la identidad **de firma** de código adecuada y haga clic en **Siguiente**. Haga clic en **Permitir** para aplicar la firma.
 1. Proporcione el nombre de la aplicación y seleccione **Guardar para distribución** empresarial.
-1. Proporcione la URL **de la** aplicación para la aplicación. Por ejemplo, para alojar la aplicación en un servidor CRX, proporcione la URL `https://[LC_host]:[port]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Proporcione la URL **de la** aplicación para la aplicación. Por ejemplo, para alojar la aplicación en un servidor CRX, proporcione la URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. En el campo **Título** , especifique AEM Forms.
 1. Haga clic en **Guardar** y cierre Xcode.
 
-   En la ubicación especificada se crea un archivo de instalación `AEM Forms.ipa`y un archivo de lista de propiedades `AEM Forms-info.plist`.
+   Se crea un archivo de instalación `AEM Forms.ipa`y un archivo de lista de propiedades `AEM Forms-info.plist`en la ubicación especificada.
 
 1. Abra el `AEM Forms-info.plist` archivo en un editor.
 1. Reemplace todos los espacios en la dirección URL del archivo .ipa con %20.
