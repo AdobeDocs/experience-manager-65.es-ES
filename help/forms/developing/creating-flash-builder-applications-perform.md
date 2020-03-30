@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -66,7 +66,7 @@ El servlet de seguridad configurado en `/um/login` responde usando el `URLVariab
 
 **Proceso de inicio de sesión**
 
-Cuando se inicia una aplicación cliente, puede realizar una solicitud POST en el servlet de `/um/login` seguridad. Por ejemplo, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Cuando la solicitud llega al servlet de seguridad del Administrador de usuarios, realiza los siguientes pasos:
+Cuando una aplicación cliente inicio, puede realizar una solicitud POST en el servlet de `/um/login` seguridad. Por ejemplo, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Cuando la solicitud llega al servlet de seguridad del Administrador de usuarios, realiza los siguientes pasos:
 
 1. Busca una cookie llamada `lcAuthToken`. Si el usuario ya ha iniciado sesión en otra aplicación de Forms, esta cookie está presente. Si se encuentra la cookie, se valida su contenido.
 1. Si SSO basado en encabezado está habilitado, el servlet busca encabezados configurados para determinar la identidad del usuario.
@@ -97,7 +97,7 @@ Para mostrar cómo crear una aplicación cliente que realiza la autenticación S
 
 ![cf_cf_flexsso](assets/cf_cf_flexsso.png)
 
-La ilustración anterior describe el flujo de aplicaciones que se produce cuando se inicia la aplicación cliente.
+En la ilustración anterior se describe el flujo de aplicaciones que se produce cuando se inicio la aplicación cliente.
 
 1. La aplicación cliente activa el `applicationComplete` evento.
 1. Se hace la llamada a `ISSOManager.singleSignOn` . La aplicación cliente envía una solicitud al servlet de seguridad de User Manager.
@@ -117,7 +117,7 @@ La aplicación cliente consta de los siguientes archivos:
 * `views/login.mxml`:: Representa la pantalla de inicio de sesión. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)login.mxml.)
 * `views/logout.mxml`:: Representa la pantalla de cierre de sesión. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)logout.mxml.)
 * `views/progress.mxml`:: Representa una vista de progreso. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)progress.mxml.)
-* `views/remoting.mxml`:: Representa la vista que invoca el proceso de corta duración de AEM Forms denominado MyApplication/EncryptDocument mediante la comunicación remota. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)remoting.mxml.)
+* `views/remoting.mxml`:: Representa la vista que invoca el proceso de corta duración de AEM Forms denominado MyApplication/EncryptDocument mediante el uso de remoting. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)remoting.mxml.)
 
 La siguiente ilustración proporciona una representación visual de la aplicación cliente.
 
@@ -125,7 +125,7 @@ La siguiente ilustración proporciona una representación visual de la aplicaci�
 
 >[!NOTE]
 >
->Observe que hay dos paquetes denominados um y views. Al crear la aplicación cliente, asegúrese de colocar los archivos en los paquetes adecuados. Además, asegúrese de agregar el archivo adobe-remoting-provider.swc a la ruta de clases del proyecto. (Consulte [Inclusión del archivo](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)de biblioteca Flex de AEM Forms).
+>Observe que hay dos paquetes denominados um y vistas. Al crear la aplicación cliente, asegúrese de colocar los archivos en los paquetes adecuados. Además, asegúrese de agregar el archivo adobe-remoting-provider.swc a la ruta de clases del proyecto. (Consulte [Inclusión del archivo](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)de biblioteca Flex de AEM Forms).
 
 ### Creación del archivo SSOStandalone.mxml {#creating-the-ssostandalone-mxml-file}
 
@@ -667,7 +667,7 @@ El siguiente código representa el archivo progress.mxml.
 
 ### Creación del archivo remoting.mxml {#creating-the-remoting-mxml-file}
 
-El siguiente código representa el archivo remoting.mxml que invoca el `MyApplication/EncryptDocument` proceso. Dado que un documento se pasa al proceso, la lógica de aplicación responsable de pasar un documento seguro a AEM Forms se encuentra en este archivo. (Consulte [Paso de documentos seguros para invocar procesos mediante Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+El siguiente código representa el archivo remoting.mxml que invoca el `MyApplication/EncryptDocument` proceso. Dado que se pasa un documento al proceso, la lógica de la aplicación responsable de pasar un documento seguro a AEM Forms se encuentra en este archivo. (Consulte [Paso de documentos seguros para invocar procesos mediante Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?>
@@ -697,8 +697,8 @@ El siguiente código representa el archivo remoting.mxml que invoca el `MyApplic
              private var fileRef:FileReference = new FileReference();
              private var docRef:DocumentReference = new DocumentReference();
              private var parentResourcePath:String = "/";
-             //private var serverPort:String = "[server]:[port]";
-             private var serverPort:String = "[server]:[port]";
+             //private var serverPort:String = "'[server]:[port]'";
+             private var serverPort:String = "'[server]:[port]'";
              private var now1:Date;
              private var userManager:UserManager;
  
