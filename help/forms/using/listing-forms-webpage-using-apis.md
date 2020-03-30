@@ -1,24 +1,24 @@
 ---
 title: Lista de formularios en una página web mediante API
 seo-title: Lista de formularios en una página web mediante API
-description: Consulte mediante programación Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas Web.
-seo-description: Consulte mediante programación Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas Web.
+description: consulta mediante programación de Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas web.
+seo-description: consulta mediante programación de Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas web.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Lista de formularios en una página web mediante API {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms proporciona una API de búsqueda basada en REST que los desarrolladores web pueden utilizar para consultar y recuperar un conjunto de formularios que cumplen los criterios de búsqueda. Las API se pueden utilizar para buscar formularios basados en distintos filtros. El objeto response contiene atributos de formulario, propiedades y puntos finales de procesamiento de los formularios.
+AEM Forms proporciona una API de búsqueda basada en REST que los desarrolladores web pueden utilizar para consulta y recuperación de un conjunto de formularios que cumplen los criterios de búsqueda. Las API se pueden utilizar para buscar formularios basados en diversos filtros. El objeto response contiene atributos de formulario, propiedades y puntos finales de procesamiento de los formularios.
 
-Para buscar formularios con la API de REST, envíe una solicitud GET al servidor en `https://[server]:[port]/libs/fd/fm/content/manage.json` los parámetros de consulta que se describen a continuación.
+Para buscar formularios con la API de REST, envíe una solicitud GET al servidor en `https://'[server]:[port]'/libs/fd/fm/content/manage.json` los parámetros de consulta que se describen a continuación.
 
 ## Query parameters {#query-parameters}
 
@@ -32,7 +32,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
    <td>func<br /> </td>
    <td><p>Especifica la función que se va a llamar. Para buscar formularios, establezca el valor del <code>func </code>atributo en <code>searchForms</code>.</p> <p>Por ejemplo, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong></strong> Nota: <em>Este parámetro es obligatorio.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Este parámetro es obligatorio.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -61,7 +61,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
   </tr>
   <tr>
    <td>desplazamiento</td>
-   <td>Especifica el número de formularios que se omitirán desde el inicio.</td>
+   <td>Especifica el número de formularios que se omitirán en el inicio.</td>
   </tr>
   <tr>
    <td>returnCount</td>
@@ -69,7 +69,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
   </tr>
   <tr>
    <td>sentencias</td>
-   <td><p>Especifica la lista de instrucciones. Las consultas se ejecutan en la lista de instrucciones especificadas en el formato JSON. </p> <p>Por ejemplo,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Especifica la lista de las sentencias. Las consultas se ejecutan en la lista de las instrucciones especificadas en el formato JSON. </p> <p>Por ejemplo,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -81,17 +81,17 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
       <ul>
        <li>EQ: igual a </li>
        <li>NEQ - No es igual a</li>
-       <li>GT - Mayor que</li>
+       <li>GT - Bueno que</li>
        <li>LT - Menor que</li>
-       <li>GTEQ: mayor o igual que</li>
+       <li>GTEQ: Bueno o igual que</li>
        <li>LTEQ: menor o igual que</li>
        <li>CONTIENE: A contiene B si B es parte de A</li>
        <li>FULLTEXT: búsqueda de texto completo</li>
-       <li>INTERRUPTOR DE ESTANQUEIDAD: A empieza por B si B es la parte inicial de A</li>
+       <li>STARTSWITCH: inicios con B si B es la parte inicial de A</li>
        <li>INTERRUPTOR DE ENCENDIDO: A termina con B si B es la parte final de A</li>
        <li>LIKE - Implementa el operador LIKE</li>
        <li>AND - Combinar varias afirmaciones</li>
-      </ul> <p><strong></strong> Nota: Los operadores <em>GT, LT, GTEQ y LTEQ son aplicables a propiedades de tipo lineal como LONG, DOUBLE y DATE.</em></p> </li>
+      </ul> <p><strong>Nota:</strong> Los operadores <em>GT, LT, GTEQ y LTEQ son aplicables a propiedades de tipo lineal como LONG, DOBLE y DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
