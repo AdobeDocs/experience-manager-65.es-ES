@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: a7ef7682df1dc627565f1cc30047ed775d2dbd13
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -423,7 +423,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
 
    >[!NOTE]
    >
-   >Su derecho a utilizar fuentes proporcionadas por terceros distintos de Adobe se rige por los acuerdos de licencia que dichas partes le proporcionen con dichas fuentes y no está cubierto por su licencia para utilizar software de Adobe. Adobe recomienda revisar y asegurarse de que cumple todos los acuerdos de licencia aplicables que no sean de Adobe antes de utilizar fuentes que no sean de Adobe con el software de Adobe, en particular con respecto al uso de fuentes en un entorno de servidor.
+   >Su derecho a utilizar fuentes proporcionadas por terceros distintos de Adobe se rige por los acuerdos de licencia que dichas partes le proporcionan con dichas fuentes y no está cubierto por su licencia para utilizar software de Adobe. Adobe recomienda revisar y asegurarse de que cumple todos los acuerdos de licencia aplicables que no sean de Adobe antes de utilizar fuentes que no sean de Adobe con el software de Adobe, en particular con respecto al uso de fuentes en un entorno de servidor.
    > Cuando instale nuevas fuentes en la carpeta de fuentes, reinicie la instancia de AEM Forms.
 
 ### Configure una cuenta de usuario local para ejecutar el servicio de generador de PDF {#configure-a-local-user-account-to-run-the-pdf-generator-service}
@@ -554,7 +554,7 @@ Para utilizar el cifrado AES 256 para archivos PDF, obtenga e instale los archiv
 
 El servicio Ensamblador depende del servicio Reader Extensions, el servicio Signature, el servicio Forms y el servicio Output. Realice los siguientes pasos para comprobar que los servicios necesarios están en funcionamiento:
 
-1. Inicie sesión en la URL `https://[server]:[port]/system/console/bundles` como administrador.
+1. Inicie sesión en la URL `https://'[server]:[port]'/system/console/bundles` como administrador.
 1. Busque el servicio siguiente y asegúrese de que los servicios están en funcionamiento:
 
 <table> 
