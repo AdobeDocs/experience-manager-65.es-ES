@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,10 +20,10 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 Los pasos genéricos para realizar cualquier personalización son:
 
-1. Inicie sesión en CRXDE Lite accediendo `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Inicie sesión en CRXDE Lite accediendo `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Cree una carpeta denominada `ws`at `/apps`, si no existe. Haga clic en **[!UICONTROL Guardar todo]**.
-1. Vaya a `/apps/ws`la ficha Control **[!UICONTROL de]** acceso y desplácese hasta ella.
-1. En la lista Control **[!UICONTROL de]** acceso, haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Haga clic **[!UICONTROL +]** nuevamente.
+1. Vaya a `/apps/ws`la ficha **[!UICONTROL Control de acceso]** y desplácese hasta ella.
+1. En la lista **[!UICONTROL Control de acceso]** , haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Haga clic **[!UICONTROL +]** nuevamente.
 1. Busque y seleccione la entidad **PERM_WORKSPACE_USER** Principal.
 
    ![Seleccione el principal PERM_WORKSPACE_USER como parte de los pasos genéricos para personalizar HTML Workspace](assets/perm_workspace_user.png)
@@ -97,6 +97,6 @@ Los pasos genéricos para realizar cualquier personalización son:
 
 1. Haga clic en **[!UICONTROL Guardar todo]**, borre la caché y actualice el espacio de trabajo de AEM Forms.
 
-   Acceda a la URL `https://[server]:[port]/lc/ws` e inicie sesión con credenciales de administrador/contraseña. El explorador redirige a `https://[server]:[port]/lc/apps/ws/index.html`.
+   Acceda a la URL `https://'[server]:[port]'/lc/ws` e inicie sesión con credenciales de administrador/contraseña. El explorador redirige a `https://'[server]:[port]'/lc/apps/ws/index.html`.
 
 [Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
