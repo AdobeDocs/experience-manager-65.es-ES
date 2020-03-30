@@ -1,8 +1,8 @@
 ---
 title: Configuración de análisis e informes
 seo-title: Configuración de análisis e informes
-description: Obtenga información sobre cómo configurar Adobe Analytics para detectar patrones de interacción y problemas a los que se enfrentan los usuarios al utilizar formularios adaptables, documentos adaptables y formularios HTML5.
-seo-description: Obtenga información sobre cómo configurar Adobe Analytics para detectar patrones de interacción y problemas a los que se enfrentan los usuarios al utilizar formularios adaptables, documentos adaptables y formularios HTML5.
+description: Obtenga información sobre cómo configurar Adobe Analytics para detectar patrones de interacción y problemas que enfrentan los usuarios al utilizar formularios adaptables, documentos adaptables y formularios HTML5.
+seo-description: Obtenga información sobre cómo configurar Adobe Analytics para detectar patrones de interacción y problemas que enfrentan los usuarios al utilizar formularios adaptables, documentos adaptables y formularios HTML5.
 uuid: ac5d1300-f303-40e8-a33e-4859a54ac10d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,14 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Configuración de análisis e informes{#configuring-analytics-and-reports}
 
-AEM Forms se integra con Adobe Analytics, lo que le permite capturar y rastrear métricas de rendimiento para los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
+AEM Forms se integra con Adobe Analytics, lo que le permite capturar y rastrear métricas de rendimiento para los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas en base a los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
 >[!NOTE]
 >
@@ -55,13 +55,13 @@ Realice los siguientes pasos para crear un grupo de informes.
 
    Crear nuevo grupo de informes
 
-1. Asegúrese de que la primera lista desplegable está establecida en **Crear desde una plantilla** y, a continuación, seleccione **Comercio**.
-1. Busque el campo ID del grupo **de informes** y agregue una nueva ID del grupo de informes. Por ejemplo, JJEsquire. Debajo del campo ID del grupo de informes aparece una ID del grupo de informes. Incluye un prefijo automático, que suele ser el nombre de la empresa.
-1. Agregar nuevo título **del** sitio. Por ejemplo, Grupo de introducción de JJEsquire. Este título se utiliza en la interfaz de usuario de Analytics. Utilice la ID del grupo de informes en su código.
+1. Asegúrese de que la primera lista desplegable esté configurada en **Crear desde una plantilla** y, a continuación, seleccione **Comercio**.
+1. Busque el campo ID del grupo **de informes** y agregue una nueva ID del grupo de informes. Por ejemplo, JJEsquire. Debajo del campo ID del grupo de informes aparece una ID del grupo de informes. Incluye un prefijo automático, que suele ser el nombre de la compañía.
+1. Añadir nuevo título **del** sitio. Por ejemplo, Grupo de introducción de JJEsquire. Este título se utiliza en la interfaz de usuario de Analytics. Utilice la ID del grupo de informes en su código.
 1. Seleccione un **Huso horario** en el menú desplegable. Todos los datos que llegan a este grupo de informes se registran en función de la zona horaria definida.
 1. Deje vacíos los campos Dirección URL **** base y Página **** predeterminada. Estos dos valores solo se utilizan desde la interfaz de Adobe Marketing Cloud para crear vínculos a su sitio web.
 1. Deje la **Fecha** de lanzamiento establecida en hoy. La Fecha de lanzamiento determina el día en que se activa el grupo de informes.
-1. En el campo Vistas de página **estimadas por día** , escriba 100. Utilice este campo para calcular la cantidad de vistas de página que espera para el sitio web por día. Esta estimación permite a Adobe implementar la cantidad adecuada de hardware para procesar los datos que va a recopilar.
+1. En el campo Vistas de página **estimadas por día** , escriba 100. Utilice este campo para calcular el número de vistas de página que espera para el sitio web por día. Esta estimación permite a Adobe implementar la cantidad adecuada de hardware para procesar los datos que va a recopilar.
 1. Seleccione una moneda **** base en el menú desplegable. Todos los datos de moneda que ingresan a este grupo de informes se convierten y almacenan en este formato de moneda.
 1. Haga clic en **Crear grupo de informes** . Debe ver la actualización de la página con un mensaje que indica que el grupo de informes se ha creado correctamente.
 1. Seleccione el grupo de informes recién creado. Vaya a **Editar configuración** > **General** > Configuración **general de cuenta**.
@@ -70,7 +70,7 @@ Realice los siguientes pasos para crear un grupo de informes.
 
    Configuración general de cuenta
 
-1. En la pantalla Configuración general de cuenta, active Informes **** geográficos y haga clic en **Guardar.**
+1. En la pantalla Configuración general de cuenta, active Sistema de informes **** geográfico y haga clic en **Guardar.**
 1. Vaya a **Editar configuración** > **Tráfico** > Variables **de tráfico**.
 1. En el grupo de informes, configure y habilite las siguientes variables de tráfico.
 
@@ -83,7 +83,7 @@ Realice los siguientes pasos para crear un grupo de informes.
    * **panelTitle**: Título del panel Formulario.
    * **analyticsVersion**: Versión de análisis de formularios.
 
-1. Vaya a **Editar configuración** > **Conversión** > **Eventos** de éxito. Defina y habilite los siguientes eventos de éxito:
+1. Vaya a **Editar configuración** > **Conversión** > Eventos **de**&#x200B;éxito. Defina y habilite los siguientes eventos de éxito:
 
    | Evento de éxito | Tipo |
    |---|---|
@@ -113,11 +113,11 @@ La configuración del servicio de nube es información sobre su cuenta de Adobe 
 
    Si es la primera vez que utiliza la aplicación, haga clic en **Configurar ahora**.
 
-1. Agregue un Título a la nueva configuración (rellenar el campo Nombre es opcional). Por ejemplo, Configuración de Mis análisis. Haga clic en **Crear**.
+1. Añada un Título a la nueva configuración (rellenar el campo Nombre es opcional). Por ejemplo, Configuración de Mis análisis. Haga clic en **Crear**.
 
 1. Cuando se abra el panel Editar en la página de configuración, rellene los campos:
 
-   * **Empresa**: El nombre de su empresa aparece en Adobe Analytics.
+   * **Compañía**: El nombre de su compañía aparece en Adobe Analytics.
    * **Nombre de usuario**: Nombre utilizado para iniciar sesión en Adobe Analytics.
    * **Contraseña**: La contraseña de Adobe Analytics para la cuenta anterior.
    * **Centro** de datos: Centro de datos de su cuenta de Adobe Analytics.
@@ -136,12 +136,12 @@ Un marco de trabajo de Adobe Analytics es un conjunto de asignaciones entre vari
    Configuración de Adobe Analytics
 
 1. Escriba un **título** y un **nombre** para la estructura, seleccione **Adobe Analytics** Framework y haga clic en **Crear**. El marco se abre para la edición.
-1. En la sección Grupos de informes del pod lateral, haga clic en **Agregar elemento** y, a continuación, utilice la lista desplegable para seleccionar la ID del grupo de informes (por ejemplo, JJEsquire) con la que interactuará la estructura.
+1. En la sección Grupos de informes del pod lateral, haga clic en **Añadir elemento** y, a continuación, utilice la lista desplegable para seleccionar la ID del grupo de informes (por ejemplo, JJEsquire) con la que interactuará la estructura.
 1. Junto a la ID del grupo de informes, seleccione las instancias de servidor que desee enviar información al grupo de informes.
 
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
-1. Arrastre un componente **Análisis de** formulario desde **otra** categoría de SideKick al marco.
+1. Arrastre un componente **Análisis de** formulario desde **otra** categoría desde SideKick hasta el módulo.
 1. Para asignar variables de Analytics con variables definidas en el componente, arrastre una variable desde AEM Content Finder a un campo del componente de seguimiento.
 
    ![Asignación de variables de AEM con variables de Adobe Analytics](assets/analytics_new.png)
@@ -160,11 +160,11 @@ Un marco de trabajo de Adobe Analytics es un conjunto de asignaciones entre vari
 1. Especifique los valores adecuados para los campos siguientes y haga clic en **Guardar**.
 
    * **Marco** de SiteCatalyst: Seleccione el marco o la configuración que definió en la sección Configurar un marco para el seguimiento.
-   * **Base** de seguimiento de tiempo de campo: Especifique la duración, en segundos, después de la cual se debe realizar el seguimiento de la visita al campo. El valor predeterminado es 0. Cuando el valor es mayor que 0 (cero), se envían dos eventos de seguimiento independientes al servidor de Adobe Analytics. El primer evento indica al servidor de Analytics que deje de realizar el seguimiento del campo de salida. El segundo evento se envía una vez transcurrida la duración especificada. El segundo suceso indica al servidor de análisis que comience a realizar el seguimiento del campo visitado. El uso de dos eventos independientes ayuda a medir con precisión el tiempo empleado en un campo. Cuando el valor es 0 (cero), se envía un solo evento de seguimiento al servidor de Adobe Analytics.
+   * **Base** de seguimiento de tiempo de campo: Especifique la duración, en segundos, después de la cual se debe realizar el seguimiento de la visita al campo. El valor predeterminado es 0. Cuando el valor es bueno a 0 (cero), se envían dos eventos de seguimiento independientes al servidor de Adobe Analytics. El primer evento indica al servidor de Analytics que deje de realizar el seguimiento del campo de salida. El segundo evento se envía una vez transcurrida la duración especificada. El segundo evento indica al servidor de análisis que realice un seguimiento de inicios del campo visitado. El uso de dos eventos independientes ayuda a medir con precisión el tiempo empleado en un campo. Cuando el valor es 0 (cero), se envía un solo evento de seguimiento al servidor de Adobe Analytics.
 
    * **Cron** de sincronización de informes de Analytics: Especifique la expresión cron para recuperar informes de Adobe Analytics. El valor predeterminado es 0 0 2 ? * *.
 
-   * **** Tiempo de espera del informe de captura: Especifique la duración, en segundos, para esperar a que el servidor responda al informe de análisis. El tiempo predeterminado es de 120 segundos.
+   * **Tiempo de espera del informe de captura:** Especifique la duración, en segundos, para esperar a que el servidor responda al informe de análisis. El tiempo predeterminado es de 120 segundos.
    >[!NOTE]
    >
    >Puede tardar hasta 10 segundos más en la operación de recuperación de informes de tiempo de espera que el número de segundos especificado.
@@ -175,14 +175,14 @@ Ahora puede activar los análisis para los formularios y generar un informe de a
 
 ## Activación del análisis para un formulario o documento {#enabling-analytics-for-a-form-or-document}
 
-1. Inicie sesión en el portal de AEM en `https://[hostname]:[port]`.
-1. Haga clic en **Formularios > Formularios y documentos**, seleccione un formulario o documento y haga clic en **Habilitar Analytics**. El análisis está habilitado.
+1. Inicie sesión en el portal de AEM en `https://[hostname]:'port'`.
+1. Haga clic en **Formularios > Formularios y Documentos**, seleccione un formulario o documento y haga clic en **Habilitar Analytics**. El análisis está habilitado.
 
    ![Activación del análisis para un formulario o documento](assets/enable-analytics-1.png)
 
    Activación del análisis para un formulario
 
-   ******A. Botón Activar Analytics** B. Formulario seleccionado
+   **A.** Botón Activar Analytics **B.** Formulario seleccionado
 
    Para obtener información detallada sobre la visualización de informes de análisis de formularios, consulte [Visualización y comprensión de informes de análisis de AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md)
 
