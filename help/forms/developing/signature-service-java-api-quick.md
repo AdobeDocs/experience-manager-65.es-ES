@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: 9678b4979580bab23dea8ca7493b48b63d5bcfa6
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Inicio rápido de la API de Java del servicio de firma (SOAP) {#signature-service-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) está disponible para el servicio Signature:
+El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Signature:
 
-[Inicio rápido (modo SOAP): Adición de un campo de firma a un documento PDF mediante la API de Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
+[Inicio rápido (modo SOAP): Añadir un campo de firma en un documento PDF mediante la API de Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Recuperación de nombres de campo de firma mediante la API de Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
@@ -37,13 +37,13 @@ Java API Quick Start (SOAP) está disponible para el servicio Signature:
 
 [Inicio rápido (modo SOAP): Eliminación de una firma digital mediante la API de Java](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: Inicio rápido ubicado en Programación con AEM Forms se basa en Forms Server implementado en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+***Nota **: El Inicio rápido ubicado en Programación con AEM Forms se basa en el servidor de Forms que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
 
-## Inicio rápido (modo SOAP): Adición de un campo de firma a un documento PDF mediante la API de Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
+## Inicio rápido (modo SOAP): Añadir un campo de firma en un documento PDF mediante la API de Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un campo de firma llamado *SignatureField1* a un documento PDF basado en un archivo PDF *llamado Loan.pdf*. El documento PDF que contiene el nuevo campo de firma se guarda como un archivo PDF denominado *LoanSig.pdf*. (Consulte [Adición de campos](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)de firma).
+El siguiente ejemplo de código Java agrega un campo de firma llamado *SignatureField1* a un documento PDF basado en un archivo PDF *llamado Loan.pdf*. El documento PDF que contiene el nuevo campo de firma se guarda como un archivo PDF denominado *LoanSig.pdf*. (Consulte [Añadir campos](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)de firma).
 
 ```as3
  /*
@@ -107,7 +107,7 @@ El siguiente ejemplo de código Java agrega un campo de firma llamado *Signature
          {
           //Set connection properties required to invoke AEM Forms using SOAP mode
           Properties connectionProps = new Properties();
-          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -224,7 +224,7 @@ El siguiente ejemplo de código Java recupera los nombres de los campos de firma
      {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -265,7 +265,7 @@ El siguiente ejemplo de código Java recupera los nombres de los campos de firma
 
 ## Inicio rápido (modo SOAP): Modificación de un campo de firma mediante la API de Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-El siguiente ejemplo de código Java modifica un campo de firma llamado SignatureField1 bloqueando todos los campos del formulario cuando se aplica una firma al campo de firma y asegurándose de que no se permiten cambios. Una vez que el servicio de firma devuelve el documento PDF que contiene el campo de firma modificado, el documento PDF se guarda como un archivo PDF denominado LoanSig.pdf. (Este ejemplo sobrescribe el archivo PDF que se pasa al servicio Signature). (Consulte [Modificación de campos](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)de firma).
+El siguiente ejemplo de código Java modifica un campo de firma llamado SignatureField1 bloqueando todos los campos del formulario cuando se aplica una firma al campo de firma y asegurándose de que no se permiten cambios. Una vez que el servicio Signature devuelve el documento PDF que contiene el campo de firma modificado, el documento PDF se guarda como un archivo PDF denominado LoanSig.pdf. (Este ejemplo sobrescribe el archivo PDF que se pasa al servicio Signature). (Consulte [Modificación de campos](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)de firma).
 
 ```as3
  /*
@@ -333,7 +333,7 @@ El siguiente ejemplo de código Java modifica un campo de firma llamado Signatur
      {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -393,7 +393,7 @@ El siguiente ejemplo de código Java modifica un campo de firma llamado Signatur
 
 ## Inicio rápido (modo SOAP): Firma digital de un documento PDF mediante la API de Java {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java firma digitalmente un documento PDF basado en un archivo PDF llamado *LoanSig.pdf*. El alias especificado para la credencial de seguridad es seguro y se realiza la comprobación de revocación. Dado que no se especifica ninguna CRL ni información de servidor OCSP, la información de servidor se obtiene del certificado utilizado para firmar digitalmente el documento PDF. El documento firmado se guarda como un archivo PDF denominado *LoanSigned.pdf*. (Consulte Firma [digital de documentos](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF).
+El siguiente ejemplo de código Java firma digitalmente un documento PDF basado en un archivo PDF llamado *LoanSig.pdf*. El alias especificado para la credencial de seguridad es seguro y se realiza la comprobación de revocación. Dado que no se especifica ninguna CRL ni información de servidor OCSP, la información de servidor se obtiene del certificado utilizado para firmar digitalmente el documento PDF. El documento firmado se guarda como un archivo PDF denominado *LoanSigned.pdf*. (Consulte Firma [digital de Documentos](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF).
 
 ```as3
  /*
@@ -461,7 +461,7 @@ El siguiente ejemplo de código Java firma digitalmente un documento PDF basado 
      {
        //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -615,7 +615,7 @@ En el siguiente ejemplo de código Java se firma un formulario interactivo proce
  
       //Set connection properties required to invoke AEM Forms using SOAP mode
       Properties connectionProps = new Properties();
-      connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+      connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -754,7 +754,7 @@ En el siguiente ejemplo de código Java se firma un formulario interactivo proce
 
 ## Inicio rápido (modo SOAP): Certificación de un documento PDF mediante la API de Java {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java certifica un documento PDF basado en un archivo PDF llamado *LoanSig.pdf*. El alias especificado para la credencial de seguridad es seguro y no se realiza la comprobación de revocación. El documento certificado se guarda como un archivo PDF denominado *LoanCertified.pdf*. (Consulte [Certificación de documentos](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents)PDF).
+El siguiente ejemplo de código Java certifica un documento PDF basado en un archivo PDF llamado *LoanSig.pdf*. El alias especificado para la credencial de seguridad es seguro y no se realiza la comprobación de revocación. El documento certificado se guarda como un archivo PDF denominado *LoanCertified.pdf*. (Consulte [Certificación de Documentos](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents)PDF).
 
 ```as3
  /*
@@ -821,7 +821,7 @@ El siguiente ejemplo de código Java certifica un documento PDF basado en un arc
      {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -966,7 +966,7 @@ El siguiente ejemplo de código Java comprueba una firma digital ubicada en un d
      {
        //Set connection properties required to invoke AEM Forms using SOAP mode
        Properties connectionProps = new Properties();
-       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1067,7 +1067,7 @@ El siguiente ejemplo de código Java comprueba una firma digital ubicada en un d
 
 ## Inicio rápido (modo SOAP): Verificación de varias firmas digitales mediante la API de Java {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-El siguiente ejemplo de código Java comprueba varias firmas digitales que se encuentran en un documento PDF firmado basado en un archivo PDF llamado LoanAllSigs.pdf. El tiempo de verificación se establece en la hora actual y la opción de comprobación de revocación se establece con el mejor esfuerzo. (Consulte [Verificación de varias firmas](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)digitales).
+En el siguiente ejemplo de código Java se verifican varias firmas digitales que están ubicadas en un documento PDF firmado basado en un archivo PDF llamado LoanAllSigs.pdf. El tiempo de verificación se establece en la hora actual y la opción de comprobación de revocación se establece con el mejor esfuerzo. (Consulte [Verificación de varias firmas](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)digitales).
 
 ```as3
  /*
@@ -1134,7 +1134,7 @@ El siguiente ejemplo de código Java comprueba varias firmas digitales que se en
      {
        //Set connection properties required to invoke AEM Forms using SOAP mode
        Properties connectionProps = new Properties();
-       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1296,7 +1296,7 @@ El siguiente ejemplo de código Java elimina una firma digital de un campo de fi
      {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
