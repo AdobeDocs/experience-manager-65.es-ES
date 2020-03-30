@@ -1,15 +1,15 @@
 ---
 title: Servicio ConvertPDF
 seo-title: Servicio ConvertPDF
-description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos de imagen o PostScript.
-seo-description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos de imagen o PostScript.
+description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos PostScript o de imagen.
+seo-description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos PostScript o de imagen.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Información general {#overview}
 
-El servicio Convertir PDF convierte documentos PDF en archivos PostScript o de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento PDF en un archivo TIFF de varias páginas resulta práctico al archivar documentos en sistemas de administración de contenido que no admiten documentos PDF.
+El servicio Convertir archivos PDF convierte documentos PDF en archivos PostScript o de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento PDF en un archivo TIFF de varias páginas resulta práctico al archivar documentos en sistemas gestoras de contenido que no admiten documentos PDF.
 
 Puede realizar lo siguiente con el servicio Convertir PDF:
 
@@ -27,7 +27,7 @@ Puede realizar lo siguiente con el servicio Convertir PDF:
 
 ## Configurar propiedades del servicio {#properties}
 
-Puede utilizar el servicio **** AEMFD ConvertPDF en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola de AEM es `https://[host]:[port]/system/console/configMgr`.
+Puede utilizar el servicio **** AEMFD ConvertPDF en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola de AEM es `https://[host]:'port'/system/console/configMgr`.
 
 ## Uso del servicio {#using-the-service}
 
@@ -128,11 +128,11 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Uso del servicio ConvertPDF con flujos de trabajo de AEM {#using-convertpdf-service-with-aem-workflows}
+### Uso del servicio ConvertPDF con flujos de trabajo AEM {#using-convertpdf-service-with-aem-workflows}
 
 La ejecución del servicio ConvertPDF desde un flujo de trabajo es similar a la ejecución desde JSP/Servlet.
 
-La única diferencia estriba en ejecutar el servicio desde JSP/Servlet, el objeto document recupera automáticamente una instancia del objeto ResourceResolver desde el objeto ResourceResolverHelper. Este mecanismo automático no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Document. A continuación, el objeto Document utiliza el objeto ResourceResolver proporcionado para leer contenido del repositorio.
+La única diferencia estriba en ejecutar el servicio desde JSP/Servlet, el objeto documento recupera automáticamente una instancia del objeto ResourceResolver desde el objeto ResourceResolverHelper. Este mecanismo automático no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Documento utiliza el objeto ResourceResolver proporcionado para leer contenido del repositorio.
 
 El siguiente proceso de flujo de trabajo de muestra convierte el documento de entrada en un documento PostScript. El código se escribe en ECMAScript y el documento se pasa como carga útil del flujo de trabajo:
 
