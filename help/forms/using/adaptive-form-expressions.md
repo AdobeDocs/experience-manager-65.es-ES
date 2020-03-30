@@ -1,39 +1,39 @@
 ---
-title: Expresiones de formulario adaptables
-seo-title: Expresiones de formulario adaptables
-description: Utilice expresiones de formularios adaptables para activar o desactivar la validación, el cálculo y la visibilidad automática de una sección.
-seo-description: Utilice expresiones de formularios adaptables para activar o desactivar la validación, el cálculo y la visibilidad automática de una sección.
+title: Expresiones de formularios adaptables
+seo-title: Expresiones de formularios adaptables
+description: Utilice expresiones de formularios adaptables para activar o desactivar la validación automática, el cálculo y la visibilidad de una sección.
+seo-description: Utilice expresiones de formularios adaptables para activar o desactivar la validación automática, el cálculo y la visibilidad de una sección.
 uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Expresiones de formulario adaptables{#adaptive-form-expressions}
+# Expresiones de formularios adaptables{#adaptive-form-expressions}
 
-Los formularios adaptables proporcionan una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con capacidades de secuencias de comandos dinámicas. Le permite escribir expresiones para agregar varios comportamientos, como mostrar/ocultar dinámicos campos y paneles. También permite agregar campos calculados, convertir campos en de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
+Los formularios adaptables proporcionan una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con capacidades de secuencias de comandos dinámicas. Le permite escribir expresiones para agregar varios comportamientos, como mostrar/ocultar campos y paneles dinámicos. También permite agregar campos calculados, convertir campos en de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
 
 JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptables.
 
 ## Prácticas recomendadas para escribir expresiones {#best-practices-for-writing-expressions}
 
-* Al escribir expresiones, para acceder a campos y paneles, puede utilizar el nombre del campo o del panel. Para acceder al valor de un campo, utilice la propiedad value. Por ejemplo, `field1.value`
+* Al escribir expresiones, para acceder a los campos y paneles, puede utilizar el nombre del campo o del panel. Para acceder al valor de un campo, utilice la propiedad value. Por ejemplo, `field1.value`
 * Utilice nombres únicos para los campos y paneles de todo el formulario. Ayuda a evitar posibles conflictos con los nombres de campo utilizados al escribir expresiones.
 * Al escribir expresiones multilínea, utilice un punto y coma para finalizar una instrucción.
 
-## Prácticas recomendadas para expresiones que impliquen un panel de repetición {#best-practices-for-expressions-involving-repeating-panel}
+## Prácticas recomendadas para expresiones que involucran un panel de repetición {#best-practices-for-expressions-involving-repeating-panel}
 
 Los paneles de repetición son instancias de un panel que se agregan o eliminan dinámicamente, mediante API de secuencias de comandos o datos previamente rellenados. Para obtener información detallada sobre el uso del panel de repetición, consulte [Creación de formularios con secciones](/help/forms/using/creating-forms-repeatable-sections.md)repetibles.
 
 * Para crear un panel de repetición, en el cuadro de diálogo del panel, abra la configuración y defina el valor del campo de recuento máximo en más de 1.
 * El valor de recuento mínimo de la configuración de repetición del panel puede ser uno o más, pero no puede ser superior al valor de recuento máximo.
 * Cuando una expresión hace referencia a un campo de panel de repetición, los nombres de campo de la expresión se resuelven en el elemento de repetición más cercano.
-* Los formularios adaptables proporcionan algunas funciones especiales para simplificar el cálculo de los paneles repetitivos, como suma, recuento, mínimo, máximo, filtro y muchas más. Para obtener la lista completa de funciones, consulte Referencia de la API de la biblioteca [JavaScript para formularios adaptables](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* Los formularios adaptables proporcionan algunas funciones especiales para simplificar el cálculo de los paneles repetitivos, como suma, recuento, mínimo, máximo, filtro y muchas más. Para obtener la lista completa de las funciones, consulte Referencia de la API de la biblioteca [JavaScript para formularios adaptables](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * Las API para manipular instancias de panel de repetición son:
 
    * Para agregar una instancia de panel: `panel1.instanceManager.addInstance()`
@@ -41,45 +41,45 @@ Los paneles de repetición son instancias de un panel que se agregan o eliminan 
    * Para obtener instanceManager de un panel: `_panel1 or panel1.instanceManager`
    * Para quitar una instancia de un panel: `_panel1.removeInstance(panel1.instanceIndex)`
 
-## Tipos de expresiones {#expression-types}
+## Tipos de Expresión {#expression-types}
 
-En los formularios adaptables, puede escribir expresiones para agregar comportamientos como mostrar/ocultar dinámicos campos y paneles. También puede escribir expresiones para agregar campos calculados, hacer que los campos sean de solo lectura, lógica de validación y mucho más. Los formularios adaptables admiten las expresiones siguientes:
+En los formularios adaptables, puede escribir expresiones para agregar comportamientos como mostrar/ocultar dinámicos campos y paneles. También puede escribir expresiones para agregar campos calculados, hacer que los campos sean de solo lectura, lógica de validación y mucho más. Los formularios adaptables admiten las siguientes expresiones:
 
-* **[Expresiones](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**de acceso: para activar o desactivar un campo.
+* **[expresiones](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**de acceso: para activar o desactivar un campo.
 * **[Calcular expresiones](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: para calcular automáticamente el valor de un campo.
-* **[Expresión](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**de clic: para controlar las acciones al hacer clic en el suceso de un botón.
-* **[](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p)Secuencia de comandos **de inicialización: realizar una acción al inicializar un campo.
-* **[Expresión](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**de opciones: para rellenar dinámicamente una lista desplegable.
-* **[Expresión](#summary)**de resumen: para calcular dinámicamente el título de un acordeón.
+* **[Haga clic en expresión](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**: para gestionar acciones al hacer clic en el evento de un botón.
+* **[Secuencia de comandos](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p)de inicialización:**realizar una acción al inicializar un campo.
+* **[expresión](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**de opciones: para rellenar dinámicamente una lista desplegable.
+* **[expresión](#summary)**de resumen: para calcular dinámicamente el título de un acordeón.
 * **[Validar expresiones](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: para validar un campo.
-* **[](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)Secuencia de comandos **de confirmación de valor: para cambiar los componentes de un formulario después de cambiar el valor de un campo.
-* **[Expresión](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**de visibilidad: para controlar la visibilidad de un campo y un panel.
-* **[Expresión](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**de finalización de paso: para evitar que un usuario vaya al paso siguiente de un asistente.
+* **[Secuencia de comandos](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)de confirmación de valor:**para cambiar los componentes de un formulario después de cambiar el valor de un campo.
+* **[expresión](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**de visibilidad: para controlar la visibilidad de un campo y un panel.
+* **[expresión](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**de finalización de pasos: para evitar que un usuario vaya al paso siguiente de un asistente.
 
-### Expresión de acceso (expresión de habilitación) {#access-expression-enablement-expression}
+### Expresión de acceso (Expresión de habilitación) {#access-expression-enablement-expression}
 
-Puede utilizar la expresión de acceso para habilitar o deshabilitar un campo. Si la expresión utiliza el valor de un campo, siempre que cambie el valor del campo, se recuperará la expresión.
+Puede utilizar la expresión de acceso para habilitar o deshabilitar un campo. Si la expresión utiliza el valor de un campo, siempre que el valor del campo cambie se recuperará la expresión.
 
 **Se aplica a**: campos
 
-**Tipo** de devolución: La expresión devuelve un valor booleano, que representa si el campo está activado o desactivado. **true** representa que el campo está habilitado y **false** representa que el campo está deshabilitado.
+**Tipo** de devolución: La expresión devuelve un valor booleano que indica si el campo está activado o desactivado. **true** representa que el campo está habilitado y **false** representa que el campo está deshabilitado.
 
 **Ejemplo**: Para habilitar un campo únicamente cuando el valor de **field1** se establece en **X**, la expresión de acceso es: `field1.value == "X"`
 
-### Calcular expresión {#calculate-expression}
+### Calcular Expresión {#calculate-expression}
 
-La expresión calculate se utiliza para calcular automáticamente el valor de un campo mediante una expresión. Normalmente, dicha expresión utiliza la propiedad value de otros campos. Por ejemplo, `field2.value + field3.value`. Siempre que el valor del `field2`o `field3`cambia, se recupera la expresión y se vuelve a calcular el valor.
+La expresión calculate se utiliza para calcular automáticamente el valor de un campo mediante una expresión. Normalmente, esta expresión utiliza la propiedad value de otros campos. Por ejemplo, `field2.value + field3.value`. Siempre que el valor del `field2`o `field3`cambia, se recupera la expresión y se vuelve a calcular el valor.
 
 **Se aplica a**: campos
 
 **Tipo** de devolución: La expresión devuelve un valor compatible con el campo en el que se muestra el resultado de la expresión (por ejemplo, decimal).
 
-**Ejemplo**: La expresión calculate para mostrar la suma de dos campos en **field1** es:
+**Ejemplo**: La expresión de cálculo para mostrar la suma de dos campos en **field1** es:
 `field2.value + field3.value`
 
-### Expresión de clic {#click-expression}
+### Expresión de clics {#click-expression}
 
-La expresión click controla las acciones realizadas en el suceso click de un botón. De forma predeterminada, GuideBridge proporciona API para realizar diversas funciones, como enviar y validar, que se utilizan junto con la expresión de clic. Para obtener una lista completa de las API, consulte [GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+La expresión de clic gestiona las acciones realizadas en el evento de clic de un botón. De forma predeterminada, GuideBridge proporciona API para realizar diversas funciones, como enviar y validar, que se utilizan junto con la expresión de clic. Para obtener una lista completa de las API, consulte [GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Se aplica a**: Campos de botón
 
@@ -95,11 +95,11 @@ La secuencia de comandos de inicialización se activa cuando se inicializa un fo
 * Cuando se procesa un formulario adaptable con un relleno previo de datos, la secuencia de comandos se ejecuta una vez finalizada la operación de rellenado previo.
 * Cuando se activa la revalidación de un formulario adaptable por parte del servidor, se ejecuta la secuencia de comandos de inicialización.
 
-**** Se aplica a: campos y panel
+**Se aplica a:** campos y panel
 
-**** Tipo de devolución: La expresión de secuencia de comandos de inicialización no devuelve ningún valor. Si alguna expresión devuelve un valor, se ignora el valor.
+**Tipo de devolución:** La expresión de secuencia de comandos de inicialización no devuelve ningún valor. Si alguna expresión devuelve un valor, se ignora el valor.
 
-**** Ejemplo: En un escenario de relleno previo de datos, para rellenar campos con valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión de secuencia de comandos de inicialización es:
+**Ejemplo:** En un escenario de rellenado previo de datos, para rellenar los campos con el valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión de la secuencia de comandos de inicialización es:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expresión de opciones {#options-expression}
@@ -110,31 +110,31 @@ La expresión de opciones se utiliza para rellenar dinámicamente las opciones d
 
 **Tipo** de devolución: La expresión options devuelve una matriz de valores de cadena. Cada valor puede ser una cadena simple, como **Masculino**, o en un formato de par clave=valor, como **1=Masculino**
 
-**Ejemplo**: Para rellenar el valor de un campo, en función del valor de otro campo, proporcione una expresión de opciones simple. Por ejemplo, para rellenar un campo, **Número de niños**, según el estado **** civil expresado en otro campo, la expresión es:
+**Ejemplo**: Para rellenar el valor de un campo, en función del valor de otro campo, proporcione una expresión de opciones sencilla. Por ejemplo, para rellenar un campo, **Número de niños**, según el estado **** civil expresado en otro campo, la expresión es:
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Siempre que cambie el valor del campo **marital_status** , se recuperará la expresión. También puede rellenar el menú desplegable desde un servicio REST. Para obtener información detallada, consulte [Desgloses](../../forms/using/dynamically-populate-dropdowns.md)de relleno dinámico.
+Cada vez que cambia el valor del campo **marital_status** , se recupera la expresión. También puede rellenar el menú desplegable desde un servicio REST. Para obtener información detallada, consulte [Desgloses](../../forms/using/dynamically-populate-dropdowns.md)de relleno dinámico.
 
 ### Expresión de resumen {#summary}
 
-La expresión Resumen calcula dinámicamente el título de un panel secundario de un panel de diseño de acordeón. Puede especificar la expresión Resumen en una regla, que utiliza un campo de formulario o una lógica personalizada para evaluar el título. La expresión se ejecuta cuando se inicializa el formulario. Si va a incluir un formulario como prefijo, la expresión se ejecuta después de que los datos se hayan rellenado previamente o cuando cambie el valor de los campos dependientes utilizados en la expresión.
+La expresión Resumen calcula dinámicamente el título de un panel secundario de un panel de diseño de acordeón. Puede especificar la expresión Resumen en una regla, que utiliza un campo de formulario o una lógica personalizada para evaluar el título. La expresión se ejecuta cuando se inicializa el formulario. Si va a incluir un formulario como prefijo, la expresión se ejecuta después de rellenar previamente los datos o cuando cambia el valor de los campos dependientes utilizados en la expresión.
 
 La expresión Resumen se utiliza generalmente para repetir elementos secundarios de un panel de diseño de acordeón para proporcionar un título significativo a cada panel secundario.
 
-**** Se aplica a: Paneles que son elementos secundarios directos de un panel cuyo diseño está configurado como acordeón.
+**Se aplica a:** Paneles que son elementos secundarios directos de un panel cuyo diseño está configurado como acordeón.
 
-**** Tipo de devolución: La expresión devuelve un valor de tipo String que se convierte en el título del acordeón.
+**Tipo de devolución:** La expresión devuelve un valor de tipo String que se convierte en el título del acordeón.
 
-**** Ejemplo: &quot;Número de cuenta: &quot;+ textbox1.value
+**Ejemplo:** &quot;Número de cuenta: &quot;+ textbox1.value
 
-### Validar expresión {#validate-expression}
+### Validar Expresión {#validate-expression}
 
 La expresión validate se utiliza para validar los campos mediante la expresión dada. Normalmente, estas expresiones utilizan expresiones regulares junto con el valor del campo para validar un campo. Se recupera la expresión y se vuelve a calcular el estado de validación del campo en caso de que se produzca algún cambio en el valor de un campo.
 
 **Se aplica a**: campos
 
-**Tipo** de devolución: La expresión devuelve un valor booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
+**Tipo** de devolución: La expresión devuelve un valor booleano que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
 **Ejemplo**: Para un campo que representa el código postal del Reino Unido, la expresión de validación es:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -152,16 +152,16 @@ La secuencia de comandos Commit de valores se activa cuando:
 * Un usuario cambia el valor de un campo de la interfaz de usuario.
 * El valor de un campo cambia programáticamente debido a cambios en otro campo.
 
-**** Se aplica a: campos
+**Se aplica a:** campos
 
-**** Tipo de devolución: La expresión de secuencia de comandos value commit no devuelve ningún valor. Si alguna expresión devuelve un valor, se ignora el valor.
+**Tipo de devolución:** La expresión de secuencia de comandos value commit no devuelve ningún valor. Si alguna expresión devuelve un valor, se ignora el valor.
 
-**** Ejemplo: Para convertir las mayúsculas y minúsculas de los alfabetos introducidos en el campo en mayúsculas al confirmar, la expresión de valor commit es:
+**Ejemplo:** Para convertir las mayúsculas y minúsculas de los alfabetos introducidos en el campo en mayúsculas al confirmar, la expresión de valor commit es:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
 >
->Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a https://[server]:[port]/system/console/configMgr y cambie la versión de los formularios **adaptables para su compatibilidad** a **AEM Forms 6.1**. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
+>Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a https://&#39;[server]:[port]&#39;/system/console/configMgr y cambie la versión de los formularios **adaptables para su compatibilidad** a **AEM Forms 6.1**. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
 
 ### Expresión de visibilidad {#visibility-expression}
 
@@ -169,19 +169,19 @@ La expresión Visibilidad se utiliza para controlar la visibilidad del campo o p
 
 **Se aplica a**: campos y panel
 
-**Tipo** de devolución: Expression devuelve un valor booleano, que representa el campo o panel que está visible o no. **false** representa que el campo o panel no está visible y true representa que el campo o panel está visible.
+**Tipo** de devolución: Expresión devuelve un valor booleano, que representa el campo o panel que está visible o no. **false** representa que el campo o panel no está visible y true representa que el campo o panel está visible.
 
-**Ejemplo**: Para un panel que se vuelve visible solo si el valor de **field1** se establece en **Masculino**, la expresión de visibilidad es: `field1.value == "Male"`
+**Ejemplo**: Para un panel que solo se muestra visible si el valor de **field1** se ha definido como **Masculino**, la expresión de visibilidad es: `field1.value == "Male"`
 
-### Expresión de finalización de paso {#step-completion-expression}
+### Expresión de finalización de pasos {#step-completion-expression}
 
 La expresión de finalización de pasos se utiliza para evitar que un usuario vaya al siguiente paso de un diseño de asistente. Estas expresiones se utilizan cuando los paneles tienen una presentación de asistente (formularios de varios pasos que muestran un paso a la vez). El usuario puede pasar al siguiente paso, panel o subsección solo si se han rellenado y son válidos todos los valores necesarios de la sección actual.
 
 **Se aplica a**: Paneles con diseño de elemento definido en asistente.
 
-**Tipo** de devolución: Expression devuelve un valor booleano, que representa el panel actual es válido o no. **True** representa que el panel actual es válido y el usuario puede desplazarse al panel siguiente.
+**Tipo** de devolución: Expresión devuelve un valor booleano, que representa el panel actual como válido o no. **True** representa que el panel actual es válido y el usuario puede desplazarse al panel siguiente.
 
-**Ejemplo**: En un formulario organizado en varios paneles, antes de desplazarse al siguiente panel se valida el panel actual. En estos casos, se utilizan las expresiones de finalización de pasos. En general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión de finalización de paso es:
+**Ejemplo**: En un formulario organizado en varios paneles, antes de desplazarse al siguiente panel se valida el panel actual. En estos casos, se utilizan las expresiones de finalización de pasos. En general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión de finalización de pasos es:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validaciones en formulario adaptable {#validations-in-adaptive-form}
@@ -200,7 +200,7 @@ Hay varios patrones de validación predeterminados disponibles para un campo. Pa
 
 ### Expresiones de validación {#validation-expressions}
 
-La validación de un campo también se puede calcular mediante expresiones en diferentes campos. Estas expresiones se escriben en el campo Secuencia de comandos **de** validación de la ficha **Secuencia de comandos** del cuadro de diálogo **Editar** del componente. El estado de validación de un campo depende del valor que devuelve la expresión. Para obtener información sobre cómo escribir estas expresiones, consulte [Validar expresión](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+La validación de un campo también se puede calcular mediante expresiones en diferentes campos. Estas expresiones se escriben en el campo Secuencia de comandos **de** validación de la ficha **Secuencia de comandos** del cuadro de diálogo **Editar** del componente. El estado de validación de un campo depende del valor que devuelve la expresión. Para obtener información sobre cómo escribir estas expresiones, consulte [Validar Expresión](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
 
 ## Información adicional {#additional-information}
 
@@ -208,13 +208,13 @@ La validación de un campo también se puede calcular mediante expresiones en di
 
 El formato de visualización puede utilizarse para mostrar los datos en diferentes formatos. Por ejemplo, puede utilizar el formato de visualización para mostrar un número de teléfono con guiones, código postal de formato o selector de fecha. Estos patrones de visualización se pueden seleccionar en la sección **Patrones** del cuadro de diálogo Editar de un componente. Puede escribir patrones de visualización personalizados similares a los patrones de validación mencionados anteriormente.
 
-### GuideBridge: API y eventos {#guidebridge-apis-and-events}
+### GuideBridge: API y Eventos {#guidebridge-apis-and-events}
 
 GuideBridge es una colección de API que se puede utilizar para interactuar con formularios adaptables en un modelo de memoria en un navegador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/aem-forms/6/javascript-api/)adaptables.
 
 >[!NOTE]
 >
->Se recomienda no utilizar los oyentes de eventos GuideBridge en expresiones.
+>Se recomienda no utilizar los oyentes de evento de GuideBridge en expresiones.
 
 #### Uso de GuideBridge en varias expresiones {#guidebridge-usage-in-various-expressions}
 
@@ -224,11 +224,11 @@ GuideBridge es una colección de API que se puede utilizar para interactuar con 
 
 * Para validar un formulario adaptable o sus paneles específicos, utilice `guideBridge.validate(errorList, somExpression).`
 
-#### Uso de GuideBridge fuera de las expresiones {#using-guidebridge-outside-expressions-nbsp}
+#### Uso de GuideBridge fuera de Expresiones {#using-guidebridge-outside-expressions-nbsp}
 
 También puede utilizar las API de GuideBridge fuera de las expresiones. Por ejemplo, puede utilizar la API de GuideBridge para establecer la comunicación entre el HTML de la página que aloja el formulario adaptable y el Modelo de formulario. Además, puede establecer el valor que proviene del elemento principal de Iframe que aloja el formulario.
 
-Para utilizar la API de GuideBridge en el ejemplo mencionado anteriormente, capture una instancia de GuideBridge. Para capturar la instancia, escuche el `bridgeInitializeStart`suceso de un `window`objeto:
+Para utilizar la API de GuideBridge en el ejemplo mencionado anteriormente, capture una instancia de GuideBridge. Para capturar la instancia, escuche el `bridgeInitializeStart`evento de un `window`objeto:
 
 ```
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -252,11 +252,11 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 >
 >En AEM, es recomendable escribir código en clientLib e incluirlo en la página (header.jsp o Football.jsp de la página)
 
-Para utilizar GuideBridge después de inicializar el formulario (se distribuye el `bridgeInitializeComplete` suceso), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la `guideBride.isConnected` API.
+Para utilizar GuideBridge después de inicializar el formulario (se envía el `bridgeInitializeComplete` evento), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la `guideBride.isConnected` API.
 
 #### Eventos de GuideBridge {#guidebridge-events}
 
-GuideBridge también proporciona determinados eventos para secuencias de comandos externas en la página de alojamiento. Las secuencias de comandos externas pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)adaptables.
+GuideBridge también proporciona determinados eventos para scripts externos en la página de alojamiento. Los scripts externos pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)adaptables.
 
 Utilice el siguiente código para registrar controladores:
 
@@ -276,10 +276,11 @@ Realice los siguientes pasos para crear un patrón personalizado para un tipo de
 
 1. Vaya a CRXDE Lite en la instancia de creación.
 1. Cree una carpeta para mantener los patrones personalizados. En el directorio /apps, cree un nodo de tipo sling:folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. En este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos patrones personalizados que desea agregar.
-1. Abra la ficha Propiedades del nodo creado. Por ejemplo, abra la ficha Propiedades de `textboxpatterns`. Agregue la `guideComponentType` propiedad a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
+1. Abra la ficha Propiedades del nodo creado. Por ejemplo, abra la ficha Propiedades de `textboxpatterns`. Añada la propiedad `guideComponentType` a este nodo y defina su valor en *fd/af/components/formatter/guideTextBox*.
 
-1. El valor de esta propiedad varía en función del campo para el que desee definir los patrones. Para el campo numérico, el valor de la `guideComponentType` propiedad es *fd/af/components/formatter/guideNumericBox*. El valor del campo Selector de datos es *fd/af/components/formatter/guideDatepicker*. &quot;
-1. Puede agregar un patrón personalizado asignando una propiedad al `textboxpatterns` nodo. Agregue una propiedad con un nombre (por ejemplo `pattern1`) y defina su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El patrón está disponible para todos los cuadros de texto que se utilizan en formularios adaptables.
+1. El valor de esta propiedad varía en función del campo para el que desee definir los patrones. Para el campo numérico, el valor de la `guideComponentType` propiedad es *fd/af/components/formatter/guideNumericBox*. El valor del campo Selector de datos es *fd/af/components/formatter/guideDatepicker*.
+&quot;
+1. Puede agregar un patrón personalizado asignando una propiedad al `textboxpatterns` nodo. Añada una propiedad con un nombre (por ejemplo `pattern1`) y defina su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El patrón está disponible para todos los cuadros de texto que se utilizan en formularios adaptables.
 
    ![Creación de patrones personalizados para campos en CrxDe](assets/creating-custom-patterns.png)
 
