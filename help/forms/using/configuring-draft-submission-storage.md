@@ -1,15 +1,15 @@
 ---
 title: Configuración de los servicios de almacenamiento para borradores y envíos
 seo-title: Configuración de los servicios de almacenamiento para borradores y envíos
-description: Obtenga información sobre cómo configurar el almacenamiento para borradores y envíos
-seo-description: Obtenga información sobre cómo configurar el almacenamiento para borradores y envíos
+description: Obtenga información sobre cómo configurar almacenamientos para borradores y envíos
+seo-description: Obtenga información sobre cómo configurar almacenamientos para borradores y envíos
 uuid: 2f4efc07-312c-4908-8c91-84f4e6c5ad25
 topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,17 +28,17 @@ Los servicios de metadatos y datos de AEM Forms Portal permiten crear borradores
 
 La preocupación con el enfoque ya existente es que almacena todos los datos en la instancia de publicación, incluidos los datos que pueden ser Información personal identificable (PII).
 
-Además del método predeterminado mencionado anteriormente, también hay una implementación alternativa disponible para insertar directamente los datos del formulario en el procesamiento en lugar de guardarlos localmente. Los clientes que tengan problemas con el almacenamiento de datos potencialmente confidenciales en una instancia de publicación pueden elegir la implementación alternativa en la que los datos se envían a un servidor de procesamiento. Dado que el procesamiento ocurre en la instancia de autor, suele permanecer en una zona segura.
+Además del método predeterminado mencionado anteriormente, también hay una implementación alternativa disponible para insertar directamente los datos del formulario en el procesamiento en lugar de guardarlos localmente. Los clientes que tengan dudas sobre el almacenamiento de datos potencialmente confidenciales en una instancia de publicación pueden elegir la implementación alternativa en la que los datos se envían a un servidor de procesamiento. Dado que el procesamiento ocurre en la instancia de autor, suele permanecer en una zona segura.
 
 >[!NOTE]
 >
->Cuando se utiliza la acción de envío de Forms Portal o se activa la opción Almacenar datos en el portal de formularios en un formulario adaptable, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar datos de formulario enviados o borrador en el repositorio de AEM. En su lugar, debe integrar los borradores y el componente de envío con un almacenamiento seguro como la base de datos empresarial para almacenar borradores y datos de formularios enviados.
+>Cuando se utiliza la acción de envío de Forms Portal o se activa la opción Almacenar datos en el portal de formularios en un formulario adaptable, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar los datos de formulario en borrador o enviados en el repositorio de AEM. En su lugar, debe integrar los borradores y el componente de envío con un almacenamiento seguro como la base de datos de empresa para almacenar borradores y datos de formularios enviados.
 >
 >Para obtener más información, consulte [Ejemplo para integrar el componente de borradores y envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md).
 
 ## Configuración de los servicios de borradores y envíos de Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-En Configuración de la consola web de AEM ( `https://[host]:[port]/system/console/configMgr`), haga clic para abrir el borrador del portal de **formularios y la configuración** de envío en modo de edición.
+En Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir el borrador del portal de **formularios y la configuración** de envío en modo de edición.
 
 Especifique los valores de las propiedades en función de sus requisitos, tal como se describe a continuación:
 
@@ -102,7 +102,7 @@ Los datos se insertan directamente en la instancia remota configurada
 
 Aparte de la configuración especificada arriba, proporcione información sobre la instancia de procesamiento remoto configurada.
 
-En Configuración de la consola web de AEM ( `https://[host]:[port]/system/console/configMgr`), haga clic para abrir el servicio **de configuración de** AEM DS en modo de edición. En el cuadro de diálogo Servicio de configuración de AEM DS, proporcione información sobre el procesamiento de la URL del servidor, el nombre de usuario del servidor de procesamiento y la contraseña.
+En Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir el servicio **de configuración de** AEM DS en modo de edición. En el cuadro de diálogo Servicio de configuración de AEM DS, proporcione información sobre el procesamiento de la URL del servidor, el nombre de usuario del servidor de procesamiento y la contraseña.
 
 >[!NOTE]
 >
