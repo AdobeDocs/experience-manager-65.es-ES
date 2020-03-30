@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,17 +25,17 @@ Una aplicación HTML existente puede aprovechar la API de FormBridge para intera
 
 ## Integración de formularios HTML5 en una página web {#integrating-html-forms-to-a-web-page}
 
-1. **Elija un perfil o cree un perfil**
+1. **Elija un Perfil o cree un Perfil**
 
-   1. En la interfaz CRX DE, navegue a: `https://[server]:[port]/crx/de`.
+   1. En la interfaz CRX DE, navegue a: `https://'[server]:[port]'/crx/de`.
    1. Inicie sesión con credenciales de administrador.
    1. Cree un perfil o elija un perfil existente.
 
-      Para obtener más información sobre cómo crear un perfil, consulte [Creación de un nuevo perfil](/help/forms/using/custom-profile.md).
+      Para obtener más información sobre cómo crear un perfil, consulte [Creación de un nuevo Perfil](/help/forms/using/custom-profile.md).
 
-1. **Modificación del perfil HTML**
+1. **Modificación del Perfil HTML**
 
-   Incluya el tiempo de ejecución XFA, la biblioteca de configuración regional XFA y el fragmento de código HTML de formulario XFA en el procesador de perfiles, diseñe la página web y coloque el formulario dentro de la página web.
+   Incluya el tiempo de ejecución XFA, la biblioteca de configuración regional XFA y el fragmento de código HTML de formulario XFA en el procesador de perfil, diseñe la página web y coloque el formulario dentro de la página web.
 
    Por ejemplo, utilice el siguiente fragmento de código para crear una aplicación con dos campos de entrada y un formulario para mostrar la interacción entre el formulario y una aplicación externa.
 
@@ -77,7 +77,7 @@ Una aplicación HTML existente puede aprovechar la API de FormBridge para intera
    >
    >
    >La etiqueta &lt;div id=&quot;rightdiv&quot;> de la **línea 18** contiene el fragmento HTML del formulario XFA.
-   La página tiene un estilo de dos contenedores: **izquierda** y **derecha**. El contenedor derecho tiene el formulario. El contenedor izquierdo tiene dos campos de entrada y parte de la página HTML externa.
+   La página tiene dos contenedores: **izquierda** y **derecha**. El contenedor correcto tiene el formulario. El contenedor izquierdo tiene dos campos de entrada y parte de la página HTML externa.
    La siguiente captura de pantalla muestra cómo se muestra el formulario en un explorador.
 
    ![portal](assets/portal.jpg)
