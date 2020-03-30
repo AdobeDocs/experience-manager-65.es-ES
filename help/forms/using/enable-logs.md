@@ -11,20 +11,20 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Habilitar el registro para formularios HTML5{#enable-logging-for-html-forms}
 
-Puede configurar la utilidad de registro para empezar a crear registros para formularios HTML5. La utilidad del registrador tiene varios niveles, puede establecer un nivel según sus necesidades. Los formularios HTML5 tienen componentes de servidor y de cliente. Puede configurar registros para ambos componentes.
+Puede configurar la utilidad del registrador para crear inicios para los registros de formularios HTML5. La utilidad del registrador tiene varios niveles, puede establecer un nivel según sus necesidades. Los formularios HTML5 tienen componentes de servidor y de cliente. Puede configurar registros para ambos componentes.
 
 ## Configuración del registro en el lado del servidor {#configuring-server-side-logging}
 
 Siga los pasos siguientes para configurar los registros del lado del servidor:
 
-1. Ir a `https://[server]:[port]/system/console/configMgr`. Busque y abra la opción de configuración *del registrador de registros de* Apple Sling. Aparece un cuadro de diálogo:
+1. Ir a `https://'[server]:[port]'/system/console/configMgr`. Busque y abra la opción de configuración *del registrador de registros de* Apple Sling. Aparece un cuadro de diálogo:
 
    ![ Cuadro de diálogo de la opción de configuración del registrador de registros de Apple](assets/logconfig.png)
 
@@ -112,7 +112,7 @@ La configuración del registro está formada por el nivel de registro y la categ
   </tr>
   <tr>
    <td>6</td>
-   <td> TRACE<br type="_moz" /> </td>
+   <td>TRACE<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>7</td>
@@ -121,7 +121,7 @@ La configuración del registro está formada por el nivel de registro y la categ
  </tbody>
 </table>
 
-#### Categorías de registrador {#logger-categories}
+#### Categorías de registro {#logger-categories}
 
 <table>
  <tbody>
@@ -146,7 +146,7 @@ La configuración del registro está formada por el nivel de registro y la categ
 
 #### Configuración de registro {#log-configuration}
 
-En la dirección URL del registro, el parámetro de cadena de consulta de configuración del registro se define de la siguiente manera:
+En la URL del registro, el parámetro de cadena de consulta de configuración del registro se define de la siguiente manera:
 
 `{destination}-{a level}-{b level}-{c level}`
 
@@ -176,7 +176,7 @@ Por ejemplo:
 
 Si utiliza Configuration Manager para habilitar el registro, los registros se generan para cada solicitud de procesamiento hasta que se deshabilita de nuevo el registro.
 
-1. Inicie sesión en CQ Configuration Manager en `https://[server]:[port]/system/console/configMgr` y luego inicie sesión con las credenciales de administrador.
+1. Inicie sesión en CQ Configuration Manager en `https://'[server]:[port]'/system/console/configMgr` y luego inicie sesión con las credenciales de administrador.
 1. Busque y haga clic en Configuración de formularios **móviles**.
 1. En el cuadro de texto Opciones de depuración, introduzca las configuraciones de registro como se describe en la sección anterior, por ejemplo, **2-a4-b5-c6**
 
@@ -186,13 +186,13 @@ Si utiliza Configuration Manager para habilitar el registro, los registros se ge
 
 ## Carga de registros {#uploading-logs}
 
-Si el destino se establece como 1, todos los mensajes de registro de secuencias de comandos de cliente se dirigen a la consola. Si un administrador requiere estos registros junto con los registros del servidor, establezca el nivel de destino en 2. En este nivel, todos los registros se recopilan en un objeto JS del lado del cliente y, si el formulario se procesa con el perfil predeterminado, aparece un botón **Enviar registros** a la izquierda del botón **Resaltar campos** existentes en la barra de herramientas. Cuando el usuario hace clic en el vínculo, todos los registros recopilados se anuncian en el servidor y se registran en el archivo de registro de errores configurado en el servidor.
+Si el destino se establece como 1, todos los mensajes de registro de secuencias de comandos de cliente se dirigen a la consola. Si un administrador requiere estos registros junto con los registros del servidor, establezca el nivel de destino en 2. En este nivel, todos los registros se recopilan en un objeto JS del lado del cliente y, si el formulario se procesa con el Perfil predeterminado, aparece un botón **Enviar registros** a la izquierda del botón **Resaltar campos** existentes en la barra de herramientas. Cuando el usuario hace clic en el vínculo, todos los registros recopilados se anuncian en el servidor y se registran en el archivo de registro de errores configurado en el servidor.
 
 De forma predeterminada, toda la información se agrega al archivo error.log en el directorio /crx-repository/logs/.
 
 Para cambiar la ubicación y el nombre del archivo de registro:
 
-1. Inicie sesión en Configuration Manager como administrador. La dirección URL predeterminada de Configuration Manager es `https://[Server]:[Port]/system/console/configMgr`.
+1. Inicie sesión en Configuration Manager como administrador. La dirección URL predeterminada de Configuration Manager es `https://'[server]:[port]'/system/console/configMgr`.
 1. Haga clic en Configuración **del registrador Sling de** Apache. Aparecerá un cuadro de diálogo.
 
    ![logconfig-1](assets/logconfig-1.png)
