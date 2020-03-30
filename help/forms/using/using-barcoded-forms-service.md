@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -97,7 +97,7 @@ Los autores de formularios crean formularios interactivos con códigos de barras
 
 El servicio Barcoded Forms resulta útil para convertir datos que existen en papel a formato electrónico. Por ejemplo, cuando se rellena e imprime un formulario con códigos de barras, la copia impresa se puede digitalizar y utilizar como entrada en el servicio de formularios con códigos de barras.
 
-Los extremos de carpeta observados generalmente se utilizan para iniciar aplicaciones que utilizan el servicio de formularios con códigos de barras. Por ejemplo, los escáneres de documentos pueden guardar imágenes TIFF o PDF de formularios codificados con barras en una carpeta vigilada. El extremo de la carpeta vigilada pasa las imágenes al servicio para su descodificación.
+Los extremos de carpeta observados generalmente se utilizan para inicio de aplicaciones que utilizan el servicio de formularios con códigos de barras. Por ejemplo, los escáneres de documento pueden guardar imágenes TIFF o PDF de formularios codificados con barras en una carpeta vigilada. El extremo de la carpeta vigilada pasa las imágenes al servicio para su descodificación.
 
 ### Formatos de codificación y descodificación recomendados {#recommended-encoding-and-decoding-formats}
 
@@ -123,14 +123,14 @@ Cuando utilice las API de BCF, tenga en cuenta las siguientes limitaciones:
 
 Además, tenga en cuenta las siguientes limitaciones al utilizar el servicio de formularios con códigos de barras:
 
-* El servicio admite totalmente AcroForms y formularios estáticos que contienen códigos de barras 2D guardados con Adobe Reader o Acrobat. Sin embargo, para los códigos de barras 1D, acople el formulario o suministre el formulario como documento PDF o TIFF digitalizado.
-* Los formularios XFA dinámicos no son totalmente compatibles. Para descodificar correctamente códigos de barras 1D y 2D en un formulario dinámico, aplane el formulario o suministre el formulario como documento PDF o TIFF digitalizado.
+* El servicio es totalmente compatible con AcroForms y formularios estáticos que contienen códigos de barras 2D guardados con Adobe Reader o Acrobat. Sin embargo, para los códigos de barras 1D, acople el formulario o suministre el formulario como PDF digitalizado o documento TIFF.
+* Los formularios XFA dinámicos no son totalmente compatibles. Para descodificar correctamente códigos de barras 1D y 2D en un formulario dinámico, aplane el formulario o suministre el formulario como PDF digitalizado o documento TIFF.
 
 Además, el servicio puede descodificar cualquier código de barras que utilice simbología admitida si se observan las limitaciones anteriores. Para obtener más información sobre cómo crear formularios con códigos de barras interactivos, consulte la Ayuda [de](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.
 
 ## Configurar propiedades del servicio {#configureproperties}
 
-Puede utilizar el servicio **de formularios con códigos de barras** AEMFD en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola de AEM es `https://[host]:[port]/system/console/configMgr`.
+Puede utilizar el servicio **de formularios con códigos de barras** AEMFD en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola de AEM es `https://[host]:'port'/system/console/configMgr`.
 
 ## Uso del servicio {#using}
 
@@ -142,7 +142,7 @@ Barcoded Forms Service proporciona las dos API siguientes:
 
 ### Uso del servicio BCF con JSP o Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
-El siguiente código de ejemplo descodifica un código de barras de un documento y guarda el XML de salida en el disco.
+El siguiente código de ejemplo descodifica un código de barras en un documento y guarda el XML de salida en el disco.
 
 ```java
 <%@ page import="java.util.List,
@@ -229,13 +229,13 @@ El siguiente código de ejemplo descodifica un código de barras de un documento
 %>
 ```
 
-### Uso del servicio BCF con flujos de trabajo AEM {#using-the-bcf-service-with-aem-workflows}
+### Uso del servicio BCF con Flujos de trabajo AEM {#using-the-bcf-service-with-aem-workflows}
 
-La ejecución del servicio Barcoded Forms desde un flujo de trabajo es similar a la ejecución del servicio desde JSP/Servlet. La única diferencia estriba en ejecutar el servicio desde JSP/Servlet, el objeto document recupera automáticamente una instancia del objeto ResourceResolver desde el objeto ResourceResolverHelper. Este mecanismo automático no funciona cuando se llama al código desde un flujo de trabajo.
+La ejecución del servicio Barcoded Forms desde un flujo de trabajo es similar a la ejecución del servicio desde JSP/Servlet. La única diferencia estriba en ejecutar el servicio desde JSP/Servlet, el objeto documento recupera automáticamente una instancia del objeto ResourceResolver desde el objeto ResourceResolverHelper. Este mecanismo automático no funciona cuando se llama al código desde un flujo de trabajo.
 
-Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Document. A continuación, el objeto Document utiliza el objeto ResourceResolver proporcionado para leer el contenido del repositorio.
+Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Documento utiliza el objeto ResourceResolver proporcionado para leer el contenido del repositorio.
 
-El siguiente proceso de flujo de trabajo de ejemplo descodifica un código de barras de un documento y guarda el resultado en el disco. El código se escribe en ECMAScript y el documento se pasa como carga útil del flujo de trabajo:
+El siguiente proceso de flujo de trabajo de ejemplo descodifica un código de barras en un documento y guarda el resultado en el disco. El código se escribe en ECMAScript y el documento se pasa como carga útil del flujo de trabajo:
 
 ```
 /*
