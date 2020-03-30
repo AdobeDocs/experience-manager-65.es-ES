@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -45,13 +45,13 @@ Para cualquier personalización, cree una estructura de carpetas paralela, como 
 
 La rama /apps (estructura de carpetas):
 
-* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o una corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
+* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
 * Le ayuda a no perturbar el sistema o ramificación actual, que posiblemente pueda desestabilizarse por error si utiliza las ubicaciones predeterminadas para almacenar los archivos personalizados.
 * Ayuda a sus recursos a obtener una mayor prioridad cuando AEM busca recursos. AEM está configurado para buscar primero la rama /apps y luego la rama /libs para buscar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas en ella).
 
 Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps:
 
-1. Vaya a `https://[server]:[port]/[ContextPath]/crx/de` e inicie sesión como administrador.
+1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta con un nombre `css` con una ruta/estructura similar a la carpeta css (ubicada en la carpeta ccrui).
 
    Pasos para crear la carpeta css:
@@ -62,11 +62,11 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Ruta:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Ubicación de superposición: /apps/
+      **Ubicación de superposición:** /apps/
 
-      **** Coincidir tipos de nodo: Verificado
+      **Coincidir tipos de nodo:** Verificado
 
       ![Ruta del nodo de superposición](assets/0_1_5ioverlaynodedialog.png)
 
@@ -90,11 +90,11 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
    1. Haga clic con el botón derecho en la carpeta **imgs** de la siguiente ruta y seleccione **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Ruta:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Ubicación de superposición: /apps/
+      **Ubicación de superposición:** /apps/
 
-      **** Coincidir tipos de nodo: Verificado
+      **Coincidir tipos de nodo:** Verificado
 
    1. Haga clic en **Aceptar**.
 
@@ -114,7 +114,7 @@ Cargue el archivo de logotipo personalizado en CRX. Las reglas HTML estándar ri
 
 Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
-1. Ir a `https://[server]:[port]/[contextpath]/crx/de`. Si es necesario, inicie sesión como Administrador.
+1. Ir a `https://'[server]:[port]'/[contextpath]/crx/de`. Si es necesario, inicie sesión como Administrador.
 1. En CRXDE, haga clic con el botón derecho en la carpeta **imgs** en la siguiente ruta y seleccione **Crear > Crear archivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -135,11 +135,11 @@ Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Haga doble clic en la propiedad **jcr:data** .
+1. Haga clic con el Doble en la propiedad **jcr:data** .
 
    Aparecerá el cuadro de diálogo Editar jcr:datos.
 
-   Ahora haga clic en la carpeta newlogo.png, haga doble clic en jcr:content (opción dim) y defina type nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
+   Ahora haga clic en la carpeta newlogo.png, doble haga clic en jcr:content (opción dim) y defina type nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
 
 1. En el cuadro de diálogo Editar jcr:datos, haga clic en **Examinar** y seleccione el archivo de imagen que desee utilizar como logotipo (aquí CustomLogo.png).
 
@@ -157,7 +157,7 @@ La imagen del logotipo personalizado requiere que se cargue una hoja de estilo a
 
 Siga los pasos siguientes para configurar la hoja de estilo para procesar el logotipo:
 
-1. Ir a `https://[server]:[port]/[contextpath]/crx/de`. Si es necesario, inicie sesión como Administrador.
+1. Ir a `https://'[server]:[port]'/[contextpath]/crx/de`. Si es necesario, inicie sesión como Administrador.
 1. Cree un archivo llamado customcss.css (no puede utilizar otro nombre de archivo) en la siguiente ubicación:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -166,7 +166,7 @@ Siga los pasos siguientes para configurar la hoja de estilo para procesar el log
 
    1. Haga clic con el botón derecho en la carpeta **css** y seleccione **Crear > Crear archivo**.
    1. En el cuadro de diálogo Nuevo archivo, especifique el nombre del CSS como `customcss.css`(no puede utilizar otro nombre de archivo) y haga clic en **Aceptar**.
-   1. Agregue el siguiente código al archivo css recién creado. En content:url, en el código, especifique el nombre de la imagen que ha cargado en la carpeta imgs en CRXDE.
+   1. Añada el siguiente código al archivo css recién creado. En content:url, en el código, especifique el nombre de la imagen que ha cargado en la carpeta imgs en CRXDE.
 
       ```css
       .logo, .logo:after {
