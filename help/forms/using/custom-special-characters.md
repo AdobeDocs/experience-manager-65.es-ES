@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 08e53eec26e29c2403cdfc3239da3ea23da3f321
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -36,11 +36,11 @@ Puede insertar caracteres especiales en letras:
 
 El administrador puede añadir compatibilidad con más caracteres especiales personalizados personalizándolos. Este artículo proporciona las instrucciones sobre cómo agregar compatibilidad para caracteres especiales personalizados adicionales.
 
-## Agregar o modificar la compatibilidad con caracteres especiales personalizados en Administración de correspondencia {#creatingfolderstructure}
+## Añadir o modificar la compatibilidad con caracteres especiales personalizados en la Administración de correspondencia {#creatingfolderstructure}
 
 Siga estos pasos para añadir compatibilidad con caracteres especiales personalizados:
 
-1. Vaya a `https://[server]:[port]/[ContextPath]/crx/de` e inicie sesión como administrador.
+1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta con el nombre de **[!UICONTROL caracteres]** especiales con una ruta/estructura similar a la carpeta de caracteres especiales (ubicada en la carpeta textEditorConfig en libs):
 
    1. Haga clic con el botón derecho en la carpeta de **caracteres** especiales de la siguiente ruta y seleccione **Overlay Node**:
@@ -49,11 +49,11 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter
+      **Ruta:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter
 
-      **** Ubicación de superposición: /apps/
+      **Ubicación de superposición:** /apps/
 
-      **** Coincidir tipos de nodo: Verificado
+      **Coincidir tipos de nodo:** Verificado
 
       >[!NOTE]
       >
@@ -83,7 +83,7 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter/&lt;YourChildNode>
 
-1. Actualice la página Editor de texto\Crear interfaz de usuario de correspondencia. El nodo que ha agregado es el último de la lista de caracteres especiales de la interfaz de usuario.
+1. Actualice la página Editor de texto\Crear interfaz de usuario de correspondencia. El nodo que ha agregado es el último de la lista de caracteres especiales en la interfaz de usuario.
 1. Haga clic en **Guardar todo**.
 1. Realice los cambios necesarios en los caracteres especiales:
 
@@ -94,10 +94,10 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
    <td><strong>Complete los siguientes pasos</strong></td>
   </tr>
   <tr>
-   <td>Agregar un carácter especial personalizado</td>
+   <td>Añadir un carácter especial personalizado</td>
    <td>
     <ol>
-     <li>Agregue un nodo secundario en "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter" con propiedades obligatorias.</li>
+     <li>Añada un nodo secundario en "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter" con propiedades obligatorias.</li>
      <li>Haga clic en Guardar todo</li>
      <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.</li>
     </ol> </td>
@@ -117,7 +117,7 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
    <td>
     <ol>
      <li>Superponga el nodo que se va a ocultar en "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter"</li>
-     <li>Agregue la propiedad sling:hideResource (Boolean) al nodo (debajo de las aplicaciones) que se va a ocultar. </li>
+     <li>Añada la propiedad sling:hideResource (Boolean) en el nodo (debajo de las aplicaciones) que se va a ocultar. </li>
      <li>Haga clic en Guardar todo. </li>
      <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.<br /> </li>
     </ol> </td>
@@ -126,8 +126,8 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
    <td>Ocultar varios caracteres especiales</td>
    <td>
     <ol>
-     <li>Agregue la propiedad "sling:hideChildren (String o String[])" a "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter". </li>
-     <li>Agregue nombres de nodo (caracteres especiales que se ocultarán) como valores para la propiedad "sling:hideChildren". </li>
+     <li>Añada la propiedad "sling:hideChildren (String o String[])" a "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter". </li>
+     <li>Añada nombres de nodo (caracteres especiales que se ocultarán) como valores para la propiedad "sling:hideChildren". </li>
      <li>Haga clic en Guardar todo. </li>
      <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.<br /> </li>
     </ol> </td>
@@ -136,9 +136,9 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
    <td>Ordenar caracteres especiales</td>
    <td>
     <ol>
-     <li>Agregue un nodo secundario en "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter" con propiedades obligatorias. </li>
-     <li>Agregue la propiedad "sling:orderBefore (String)" al nodo secundario recién creado. </li>
-     <li>Agregue el nombre del nodo como valor antes del cual se mostrará el nuevo carácter especial agregado. </li>
+     <li>Añada un nodo secundario en "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter" con propiedades obligatorias. </li>
+     <li>Añada la propiedad "sling:orderBefore (String)" en el nodo secundario recién creado. </li>
+     <li>Añada el nombre del nodo como valor antes del cual se mostrará el carácter especial recientemente agregado. </li>
      <li>Haga clic en Guardar todo. </li>
      <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.<br /> </li>
     </ol> </td>
