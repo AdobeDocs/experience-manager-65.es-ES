@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -35,23 +35,23 @@ Complete este procedimiento mediante la página web Aplicaciones y servicios de 
 1. Inicie sesión en la Consola de administración escribiendo la siguiente URL en un explorador Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Haga clic en **Servicios > Aplicaciones y servicios > Preferencias**.
-1. Configure las preferencias para ver hasta 200 servicios y extremos en la misma página.
+1. Configure las preferencias para que la vista alcance un máximo de 200 servicios y extremos en la misma página.
 1. Haga clic en **Servicios** > **Aplicaciones y servicios** > Administración de **extremos**.
 1. Seleccione **EJB** en la lista **Proveedor** y, a continuación, haga clic en **Filtro**.
-1. Para desactivar todos los extremos de EJB, active la casilla de verificación situada junto a cada uno de la lista y haga clic en **Deshabilitar**.
+1. Para desactivar todos los extremos de EJB, active la casilla de verificación situada junto a cada uno de los extremos de la lista y haga clic en **Deshabilitar**.
 1. Haga clic en **Siguiente** y repita el paso anterior para todos los extremos de EJB. Asegúrese de que EJB aparece en la columna Proveedor antes de deshabilitar los extremos.
-1. Seleccione **SOAP** en la lista **Proveedor** y, a continuación, haga clic en **Filtro**.
-1. Para eliminar los puntos finales de SOAP, active la casilla de verificación situada junto a cada uno de la lista y haga clic en **Eliminar**. No elimine los puntos finales siguientes:
+1. Seleccione **SOAP** en la lista de **proveedor** y, a continuación, haga clic en **Filtro**.
+1. Para eliminar los puntos finales de SOAP, active la casilla de verificación situada junto a cada uno de los puntos de la lista y haga clic en **Eliminar**. No elimine los puntos finales siguientes:
 
    * AuthenticationManagerService
    * DirectoryManagerService
    * JobManager
-   * event_management_service
-   * event_configuration_service
+   * evento_management_service
+   * evento_configuration_service
    * ProcessManager
    * TemplateManager
    * RepositoryService
@@ -61,7 +61,7 @@ Complete este procedimiento mediante la página web Aplicaciones y servicios de 
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Haga clic en **Siguiente** y repita el paso anterior para los extremos de SOAP que no están en la lista anterior. Asegúrese de que SOAP aparece en la columna Proveedor antes de eliminar los extremos.
+1. Haga clic en **Siguiente** y repita el paso anterior para los extremos de SOAP que no se encuentran en la lista anterior. Asegúrese de que SOAP aparece en la columna Proveedor antes de eliminar los extremos.
 
 ## Desactivación del acceso anónimo no esencial a los servicios {#disabling-non-essential-anonymous-access-to-services}
 
@@ -70,7 +70,7 @@ Algunos servicios de servidor de formularios permiten la invocación no autentic
 1. Inicie sesión en la consola de administración escribiendo la siguiente URL en un explorador Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Haga clic en **Servicios > Aplicaciones y servicios > Administración** de servicios.
@@ -112,7 +112,7 @@ Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, ap
 1. Inicie sesión en la consola de administración escribiendo la siguiente URL en un explorador Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Haga clic en **Configuración > Administración de usuarios > Configuración > Importar y exportar archivos** de configuración.
@@ -121,7 +121,7 @@ Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, ap
 
    `<entry key=”assertionValidityInMinutes” value=”120”/>`
 
-1. Cambie el valor a cualquier número mayor que 5 (en minutos) y guarde el archivo.
+1. Cambie el valor a cualquier número bueno de 5 (en minutos) y guarde el archivo.
 1. En la consola de administración, vaya a la página Importar y exportar archivos de configuración.
 1. Introduzca la ruta al archivo config.xml modificado o haga clic en Examinar para ir a él.
 1. Haga clic en **Importar** para cargar el archivo config.xml modificado y, a continuación, haga clic en **Aceptar**.
