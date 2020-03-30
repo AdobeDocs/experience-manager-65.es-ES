@@ -1,8 +1,8 @@
 ---
 title: Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms
 seo-title: Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms
-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas en la interfaz.
-seo-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas en la interfaz.
+description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas de la interfaz.
+seo-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas de la interfaz.
 uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ El espacio de trabajo de AEM Forms ofrece compatibilidad inmediata con los idiom
 Para localizar la interfaz de usuario del espacio de trabajo de AEM Forms en el idioma que elija:
 
 * Localización del texto del espacio de trabajo de AEM Forms.
-* Localice las categorías contraídas, las colas y los procesos.
+* Localice categorías contraídas, colas y procesos.
 * Localizar selector de fechas
 
 Antes de realizar los pasos anteriores, asegúrese de seguir los pasos que se indican en Pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
@@ -37,7 +37,7 @@ Antes de realizar los pasos anteriores, asegúrese de seguir los pasos que se in
 Realice los siguientes pasos para agregar compatibilidad con un idioma *Nuevo* y el código de configuración regional del explorador *ahora*.
 
 1. Inicie sesión en CRXDE Lite.
-La dirección URL predeterminada de CRXDE Lite es `https://[server]:[port]/lc/crx/de/index.jsp`.
+La dirección URL predeterminada de CRXDE Lite es `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Vaya a la ubicación `apps/ws/locales` y cree una nueva carpeta `nw.`
 1. Copie el archivo `translation.json`de la ubicación `/apps/ws/locales/en-US` a la ubicación `/apps/ws/locales/nw` .
 1. Vaya a `/apps/ws/locales/nw` y abra `translation.json` para editarlo. Realice cambios específicos de la configuración regional en el archivo translate.json.
@@ -46,15 +46,15 @@ La dirección URL predeterminada de CRXDE Lite es `https://[server]:[port]/lc/cr
 
    ![translate_json_in_es](assets/translation_json_in_en.png) ![Translation_json_in_fr](assets/translation_json_in_fr.png)
 
-## Localización de categorías, colas y procesos contraídos {#localizing-collapsed-categories-queues-and-processes}
+## Localización de categorías contraídas, colas y procesos {#localizing-collapsed-categories-queues-and-processes}
 
 El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
 
-En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categories_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
+En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categorías_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
 
 >[!NOTE]
 >
->Para buscar el código de configuración regional del idioma del explorador. Abra `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>Para buscar el código de configuración regional del idioma del explorador. Abra `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![contraer_paneles_imagen](assets/collapsing_panels_image.png)
 
