@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
-seo-title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
+title: Inicio rápido de la API de Java del servicio Administrador de Tareas (SOAP)
+seo-title: Inicio rápido de la API de Java del servicio Administrador de Tareas (SOAP)
 description: nulo
 seo-description: nulo
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
@@ -10,36 +10,36 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP) {#task-manager-service-java-api-quickstart-soap}
+# Inicio rápido de la API de Java del servicio Tarea Manager (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
-Los siguientes inicios rápidos están disponibles para el servicio Administrador de tareas.
+Los siguientes Inicios rápidos están disponibles para el servicio Administrador de Tareas.
 
 [Inicio rápido (modo SOAP): Asignación de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Bloqueo de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Quick Start (SOAP mode): Locking tasks using the Java API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Recuperación de tareas asignadas a usuarios mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Recuperación de datos de formulario de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
+[Quick Start (SOAP mode): Retrieving form data from tasks using the Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Modificación de datos de formulario mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Quick Start (SOAP mode): Modifying form data using the Java API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Recuperación de archivos adjuntos de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Recuperación de información de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
+[Inicio rápido (modo SOAP): Recuperación de información de tarea mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: No puede buscar tareas asignadas a usuarios mediante la API de servicio Web. El motivo es que no se puede invocar el`taskList`método, que es una llamada de método necesaria para realizar esta tarea.*
+***Note **: You cannot search for tasks assigned to users by using the web service API. The reason is because you cannot invoke the`taskList`method, which is a necessary method call to perform this task.*
 
-***Nota **: Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor de Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+***Note **: Quick Start located in Programming with AEM Forms are based on the Forms server operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
 
-## Inicio rápido (modo SOAP): Asignación de tareas mediante la API de Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
+## Quick Start (SOAP mode): Assigning tasks using the Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony Blue.
 
@@ -110,7 +110,7 @@ El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony 
          try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -172,9 +172,9 @@ El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony 
  
 ```
 
-## Inicio rápido (modo SOAP): Bloqueo de tareas mediante la API de Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Quick Start (SOAP mode): Locking tasks using the Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
-El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor de identificador de tarea de 2.
+The following Java code example locks a task that corresponds to the task identifier value of 2.
 
 ```as3
  /*
@@ -236,7 +236,7 @@ El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor 
      try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -263,7 +263,7 @@ El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor 
 
 ## Inicio rápido (modo SOAP): Recuperación de tareas asignadas a usuarios mediante la API de Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas asignadas a un usuario con el nombre *tony blue*. Tenga en cuenta que este usuario se especifica en las propiedades de conexión. Se muestra información sobre las tareas devueltas, como su valor de identificador y su descripción.
+El siguiente ejemplo de código Java recupera todas las tareas asignadas a un usuario con el nombre *tony blue*. Notice that this user is specified in the connection properties. Se muestra información sobre las tareas devueltas, como su valor de identificador y su descripción.
 
 ```as3
  /*
@@ -327,7 +327,7 @@ El siguiente ejemplo de código Java recupera todas las tareas asignadas a un us
          try{
               //Set connection properties required to invoke AEM Forms
                Properties connectionProps = new Properties();
-               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -455,7 +455,7 @@ El siguiente ejemplo de código Java recupera datos de formulario de una tarea c
          try{
               //Set connection properties required to invoke AEM Forms
                Properties connectionProps = new Properties();
-               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -562,7 +562,7 @@ El siguiente ejemplo de código Java actualiza un formulario con datos que se en
      try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -670,7 +670,7 @@ El siguiente ejemplo de código Java recupera archivos adjuntos. Cada archivo ad
          try{
               //Set connection properties required to invoke AEM Forms
                Properties connectionProps = new Properties();
-               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -707,9 +707,9 @@ El siguiente ejemplo de código Java recupera archivos adjuntos. Cada archivo ad
  
 ```
 
-## Inicio rápido (modo SOAP): Recuperación de información de tareas mediante la API de Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Inicio rápido (modo SOAP): Recuperación de información de tarea mediante la API de Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas que se basan en un proceso denominado *MortgageLoan - Prebuild*. Se comprueba el estado de cada tarea devuelta para asegurarse de que se ha completado. Información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea se recupera y se muestra.
+El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *MortgageLoan - Prebuild*. Se comprueba el estado de cada tarea devuelta para asegurarse de que se trata de una tarea completada. Se recupera y se muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea.
 
 ```as3
  /*
@@ -776,7 +776,7 @@ El siguiente ejemplo de código Java recupera todas las tareas que se basan en u
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
