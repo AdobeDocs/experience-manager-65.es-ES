@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de la API de invocación
-seo-title: Inicio rápido de la API de invocación
+title: Inicios rápidos de la API de invocación
+seo-title: Inicios rápidos de la API de invocación
 description: nulo
 seo-description: nulo
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Inicio rápido de la API de invocación {#invocation-api-quick-starts}
+# Inicios rápidos de la API de invocación {#invocation-api-quick-starts}
 
-Los siguientes inicios rápidos están disponibles para invocar mediante programación los servicios de AEM Forms:
+Los siguientes Inicios rápidos están disponibles para invocar mediante programación los servicios de AEM Forms:
 
 <table>
  <thead>
@@ -36,7 +36,7 @@ Los siguientes inicios rápidos están disponibles para invocar mediante program
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">Inicio rápido: Invocación de un proceso de larga duración mediante la API de servicio Web</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api"> Invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">Invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
    <td><p>N/D</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Inicio rápido: Invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
    <td><p>N/D</p></td>
@@ -104,9 +104,9 @@ Los siguientes inicios rápidos están disponibles para invocar mediante program
  </tbody>
 </table>
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: Los inicios rápidos ubicados en Programación con formularios AEM se basan en el servidor de Forms que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+***Nota **: Los Inicios rápidos ubicados en Programación con formularios AEM se basan en el servidor de Forms que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
 
 ## Inicio rápido: Invocación de un proceso de corta duración mediante la API de invocación {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
@@ -175,7 +175,7 @@ El siguiente ejemplo de código Java invoca un proceso de corta duración llamad
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -307,7 +307,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
 
 El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` mediante archivos proxy Java creados con codificación JAX-WS y Base64. (Consulte [Invocación de formularios AEM mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64).
 
-Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento PDF con contraseña que se guarda como archivo PDF con el nombre *EncryptedDocument.pdf*.
+Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento PDF cifrado con contraseña que se guarda como archivo PDF denominado *EncryptedDocument.pdf*.
 
 ```as3
  /**
@@ -334,7 +334,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
              MyApplicationEncryptDocument encryptDocClient = encClient.getEncryptDocument();
  
              //Set connection values required to invoke AEM Forms
-             String url = "[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=base64";
+             String url = "'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=base64";
              String username = "administrator";
              String password = "password";
              ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
@@ -395,7 +395,7 @@ El siguiente ejemplo de código Flex invoca un proceso de corta duración llamad
 
 >[!NOTE]
 >
->Este inicio rápido invoca un proceso de AEM Forms y carga un documento no seguro. Para ejecutar este inicio rápido, AEM Forms debe configurarse para cargar documentos no seguros. Para obtener información sobre cómo configurar AEM Forms para aceptar documentos no seguros, consulte [Configuración de AEM Forms para aceptar documentos](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)seguros y no seguros.
+>Este inicio rápido invoca un proceso de AEM Forms y carga un documento no seguro. Para ejecutar este inicio rápido, AEM Forms debe configurarse para cargar documentos no seguros. Para obtener información sobre cómo configurar AEM Forms para que acepte documentos no seguros, consulte [Configuración de AEM Forms para aceptar documentos](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)seguros y no seguros.
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?>
@@ -419,7 +419,7 @@ El siguiente ejemplo de código Flex invoca un proceso de corta duración llamad
       private var fileRef:FileReference = new FileReference();
       private var docRef:DocumentReference = new DocumentReference();
       private var parentResourcePath:String = "/";
-      private var serverPort:String = "[server]:[port]";
+      private var serverPort:String = "'[server]:[port]'";
       private var now1:Date;
       private  var cs:ChannelSet
  
@@ -455,7 +455,7 @@ El siguiente ejemplo de código Flex invoca un proceso de corta duración llamad
      private function authTokenReceived(event:ResultEvent):void
              {
              var token:String = event.result as String;
-             var request:URLRequest = DocumentReference.constructRequestForUpload("https://[server]:[port]", token);
+             var request:URLRequest = DocumentReference.constructRequestForUpload("https://'[server]:[port]'", token);
  
              try
              {
@@ -550,7 +550,7 @@ El siguiente ejemplo de código Flex invoca un proceso de corta duración llamad
 
 En el siguiente ejemplo de código C# se invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET con Dime. (Consulte [Invocación de formularios AEM mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64).
 
-Un documento PDF no seguro basado en un archivo PDF denominado *map.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento PDF con contraseña que se guarda como archivo PDF denominado *mapEncrypt.pdf*.
+Un documento PDF no seguro basado en un archivo PDF denominado *map.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento PDF con contraseña cifrada que se guarda como archivo PDF denominado *mapEncrypt.pdf*.
 
 ```as3
  /**
@@ -655,7 +655,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *map.pdf* se pasa
 
 El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` mediante DIME. (Consulte [Invocación de formularios AEM mediante DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)).
 
-Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento PDF con contraseña que se guarda como archivo PDF denominado *EncryptLoan.pdf*.
+Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento PDF con contraseña cifrada que se guarda como archivo PDF denominado *EncryptLoan.pdf*.
 
 ```as3
  /**
@@ -684,7 +684,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
          MyApplicationEncryptDocumentServiceLocator locate = new MyApplicationEncryptDocumentServiceLocator ();
  
          //specify the service target URL and object type
-         URL serviceURL = new URL("https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=dime");
+         URL serviceURL = new URL("https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=dime");
  
          //Use the binding stub with the locator
          EncryptDocumentSoapBindingStub encryptionClientStub = new EncryptDocumentSoapBindingStub(serviceURL,locate);
@@ -756,7 +756,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
 
 El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` mediante datos a través de HTTP. (Consulte [Invocación de formularios AEM mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)).
 
-Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante SOAP a través de HTTP. El archivo PDF se encuentra en la siguiente URL: `https://[server]:[port]/FormsQS`. El proceso devuelve un documento PDF con contraseña que se guarda como archivo PDF con el nombre *EncryptedDocument.pdf*.
+Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante SOAP a través de HTTP. El archivo PDF se encuentra en la siguiente URL: `https://'[server]:[port]'/FormsQS`. El proceso devuelve un documento PDF cifrado con contraseña que se guarda como archivo PDF denominado *EncryptedDocument.pdf*.
 
 ```as3
  /**
@@ -783,7 +783,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
              MyApplicationEncryptDocument encryptDocClient = encClient.getEncryptDocument();
  
              //Set connection values required to invoke AEM Forms using BLOB over HTTP
-             String url = "https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=http";
+             String url = "https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=http";
              String username = "administrator";
              String password = "password";
              ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
@@ -792,7 +792,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
  
              //Create a BLOB object and populate it by invoking the setRemoteURL method
              BLOB inDoc = new BLOB();
-             inDoc.setRemoteURL("https://[server]:[port]/FormsQS/Loan.pdf");
+             inDoc.setRemoteURL("https://'[server]:[port]'/FormsQS/Loan.pdf");
  
                 //invoke the short-lived process named MyApplication/EncryptDocument
              BLOB outDoc = encryptDocClient.invoke(inDoc);
@@ -829,7 +829,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
 
 ## Inicio rápido: Invocación de un servicio mediante datos BLOB a través de HTTP en un proyecto .NET {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
-En el siguiente ejemplo de código C# se invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET que utiliza datos a través de HTTP. (Consulte [Invocación de formularios AEM mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)).
+En el siguiente ejemplo de código C# se invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET mediante datos a través de HTTP. (Consulte [Invocación de formularios AEM mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)).
 
 Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante BLOB a través de HTTP. El proceso devuelve un documento PDF con contraseña que se guarda como archivo PDF con el nombre *EncryptedPDF.pdf*.
 
@@ -862,7 +862,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
  
                 try
                 {
-                    String urlData = "https://[server]:[port]/FormsQS/Loan.pdf";
+                    String urlData = "https://'[server]:[port]'/FormsQS/Loan.pdf";
  
                     //Create a MyApplication_EncryptDocumentService object and set authentication values
                     MyApplication_EncryptDocumentService encryptClient = new MyApplication_EncryptDocumentService();
@@ -931,7 +931,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
 
 El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET que utiliza MTOM. (Consulte [Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)).
 
-Un documento PDF no seguro basado en un archivo PDF denominado *loan.pdf* se pasa al proceso de AEM Forms mediante MTOM. El proceso devuelve un documento PDF con contraseña que se guarda como archivo PDF con el nombre *EncryptedDocument.pdf*.
+Un documento PDF no seguro basado en un archivo PDF denominado *loan.pdf* se pasa al proceso de AEM Forms mediante MTOM. El proceso devuelve un documento PDF cifrado con contraseña que se guarda como archivo PDF denominado *EncryptedDocument.pdf*.
 
 ```as3
  ???/**
@@ -964,7 +964,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *loan.pdf* se pas
  
                     //Create an EncryptDocumentClient object
                     MyApplication_EncryptDocumentClient encryptProcess = new MyApplication_EncryptDocumentClient();
-                    encryptProcess.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=mtom");
+                    encryptProcess.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=mtom");
                     BasicHttpBinding b = (BasicHttpBinding)encryptProcess.Endpoint.Binding;
                     b.MessageEncoding = WSMessageEncoding.Mtom;
  
@@ -1050,7 +1050,7 @@ Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pas
  
          //Specify connection values required to invoke the MyApplication/EncryptDocument process
          //using SwaRef
-         String url = "https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=swaref";
+         String url = "https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=swaref";
          String username = "administrator";
          String password = "password";
          String pdfFile = "C:\\Adobe\Loan.pdf";
