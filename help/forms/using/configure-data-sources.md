@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -21,18 +21,18 @@ source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
 La integración de datos de AEM Forms le permite configurar y conectar orígenes de datos dispares. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
 
 * Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y Oracle RDBMS
-* Perfil de usuario de AEM
+* perfil del usuario de AEM
 * Servicios web RESTful
 * Servicios Web basados en SOAP
 * Servicios OData
 
-La integración de datos admite los tipos de autenticación OAuth2.0, Basic Authentication y API Key predeterminados, y permite implementar la autenticación personalizada para acceder a los servicios Web. Aunque los servicios RESTful, SOAP y OData están configurados en los servicios de nube de AEM, JDBC para bases de datos relacionales y conector para el perfil de usuario de AEM están configurados en la consola web de AEM.
+La integración de datos admite los tipos de autenticación OAuth2.0, Basic Authentication y API Key predeterminados, y permite implementar la autenticación personalizada para acceder a los servicios Web. Aunque los servicios RESTful, SOAP y OData están configurados en los servicios de nube de AEM, JDBC para bases de datos relacionales y conectores para el perfil de usuarios de AEM están configurados en la consola web de AEM.
 
 ## Configurar base de datos relacional {#configure-relational-database}
 
 Puede configurar bases de datos relacionales mediante la configuración de la consola web de AEM. Haga lo siguiente:
 
-1. Vaya a la consola web de AEM en https://[server]:[host]/system/console/configMgr.
+1. Vaya a la consola web de AEM en https://server:host/system/console/configMgr.
 1. Busque la configuración de **[!UICONTROL Apache Sling Connection Pooled DataSource]** . Toque para abrir la configuración en modo de edición.
 1. En el cuadro de diálogo de configuración, especifique los detalles de la base de datos que desea configurar, como:
 
@@ -47,7 +47,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    >
    >    
    >    
-   >    1. Vaya a https://[server]:[port]/system/console/crypto.
+   >    1. Vaya a https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. En el campo **[!UICONTROL Texto]** sin formato, especifique la contraseña o cualquier cadena que desee cifrar y haga clic en **[!UICONTROL Proteger]**.
    >    
    >    
@@ -55,7 +55,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    >El texto cifrado aparece en el campo Texto protegido que puede especificar en la configuración.
 
 1. Habilite **[!UICONTROL Prueba a la Obtención]** o **[!UICONTROL Prueba a la Devolución]** para especificar que los objetos se validen antes de ser tomados en préstamo o devueltos al grupo, respectivamente.
-1. Especifique una consulta SQL SELECT en el campo Consulta **[!UICONTROL de]** validación para validar conexiones desde el grupo. La consulta debe devolver al menos una fila. En función de la base de datos, especifique una de las siguientes opciones:
+1. Especifique una consulta SQL SELECT en el campo Consulta **[!UICONTROL de]** validación para validar las conexiones del grupo. La consulta debe devolver al menos una fila. En función de la base de datos, especifique una de las siguientes opciones:
 
    * SELECT 1 (MySQL y MS SQL)
    * SELECT 1 from dual (Oracle)
@@ -64,11 +64,11 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
 
 ## Configuración del perfil de usuario de AEM {#configure-aem-user-profile}
 
-Puede configurar el perfil de usuario de AEM mediante la configuración del conector de perfil de usuario en la consola web de AEM. Haga lo siguiente:
+Puede configurar el perfil de usuario de AEM mediante la configuración del conector de Perfil de usuario en la consola web de AEM. Haga lo siguiente:
 
-1. Vaya a la consola web de AEM en https://[server]:[host]/system/console/configMgr.
-1. Busque Integraciones de datos de **[!UICONTROL AEM Forms: Configuración]** del conector de perfil de usuario y toque para abrir la configuración en modo de edición.
-1. En el cuadro de diálogo Configuración del conector de perfil de usuario, puede agregar, quitar o actualizar propiedades de perfil de usuario. Las propiedades especificadas estarán disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades del perfil de usuario:
+1. Vaya a la consola web de AEM en https://&#39;[server]:[port]&#39;system/console/configMgr.
+1. Busque Integraciones de datos de **[!UICONTROL AEM Forms: Configuración]** del conector de Perfil de usuario y toque para abrir la configuración en modo de edición.
+1. En el cuadro de diálogo Configuración del conector de Perfil de usuario, puede agregar, quitar o actualizar las propiedades del perfil de usuario. Las propiedades especificadas estarán disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades de perfil del usuario:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
