@@ -9,20 +9,20 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Plantillas de carta de referencia {#reference-letter-templates}
 
-En Administración de correspondencia, una plantilla de carta contiene campos de formulario típicos, funciones de presentación como encabezado y pie de página y &quot;áreas de destino&quot; vacías para la colocación del contenido.
+In Correspondence Management, a letter template contains typical form fields, layout features such as a header and footer, and empty &quot;target areas&quot; for the placement of content.
 
-Correspondence Management proporciona plantillas de letras en el paquete de AEM Forms [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Para instalar un paquete, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md). Puede personalizar las plantillas en Designer según sus necesidades comerciales y de marca. El paquete incluye las siguientes plantillas:
+Correspondence Management provides letter templates in the AEM Forms package [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md). You can customize the templates in Designer according to your branding and business needs. The package includes the following templates:
 
 * Clásica
-* Clásico simple
-* Equilibrado a la izquierda
+* Classic Simple
+* Balanced Left
 * Equilibrado a la derecha
 * Visual Left
 * Visual Top
@@ -30,7 +30,7 @@ Correspondence Management proporciona plantillas de letras en el paquete de AEM 
 
 Después de instalar el paquete, las plantillas de diseño (XDP) se muestran en la carpeta de plantillas en la siguiente ubicación:
 
-`https://[server]:[port]/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
+`https://'[server]:[port]'/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
 
 A continuación se muestran los campos comunes de todas las plantillas de este paquete:
 
@@ -45,57 +45,57 @@ Después de instalar el paquete AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES, las pl
 
 ## Clásica {#classic}
 
-Con un logotipo en la parte superior, la plantilla clásica es adecuada para una carta profesional simple.
+With a logo on top, Classic template is suitable for a plain professional letter.
 
 ![clásica](assets/classic.png)
 
-Vista previa en PDF de una carta creada con la plantilla Classic
+PDF preview of a letter created using the Classic template
 
-## Clásico simple {#classic-simple}
+## Classic Simple {#classic-simple}
 
-Incluye campos para capturar el número de teléfono y la dirección de correo electrónico. Una plantilla clásica simple es similar a la plantilla clásica, con la diferencia de que no tiene campos en los que se pueda introducir la dirección del destinatario.
+Includes fields to capture phone number and email address. A Classic Simple template is similar to the Classic template except that it does not have fields where you could enter the address of the recipient.
 
-![Fragmento de información de contacto](assets/classicsimple.png)
+![Contact information fragment](assets/classicsimple.png)
 
-Vista previa en PDF de una carta creada con la plantilla Classic Simple
+previsualización en PDF de una carta creada con la plantilla Classic Simple
 
-## Equilibrado a la izquierda {#balanced-left}
+## Balanced Left {#balanced-left}
 
 La plantilla Equilibrada izquierda incluye un logotipo a la izquierda de la letra.
 
 ![balancedleft](assets/balancedleft.png)
 
-Vista previa en PDF de una carta creada con la plantilla Izquierda equilibrada
+previsualización PDF de una carta creada con la plantilla Izquierda equilibrada
 
 ## Equilibrado a la derecha {#balanced-right}
 
-La plantilla Equilibrada a la derecha tiene el logotipo de la empresa a la izquierda y proporciona espacio para introducir la dirección de los destinatarios en la propia carta. La plantilla Equilibrada a la derecha también incluye un pie de página que se reorganiza cuando la carta tiene varias páginas.
+La plantilla Equilibrada a la derecha tiene el logotipo de compañía a la izquierda y proporciona espacio para introducir la dirección de destinatarios en la propia carta. La plantilla Equilibrada a la derecha también incluye un pie de página que se reorganiza cuando la carta tiene varias páginas.
 
 ![balancedright](assets/balancedright.png)
 
-Vista previa en PDF de una carta creada con la plantilla Derecha equilibrada
+previsualización PDF de una carta creada con la plantilla Derecha equilibrada
 
 ## Visual Left {#visual-left}
 
-La plantilla Izquierda visual tiene un encabezado lateral a la izquierda de la página con el logotipo de la empresa colocado sobre el encabezado lateral. La plantilla de Visual Left tiene un campo de asunto pero no un pie de página.
+La plantilla Izquierda visual tiene un encabezado lateral a la izquierda de la página con el logotipo de compañía colocado sobre el encabezado lateral. La plantilla de Visual Left tiene un campo de asunto pero no un pie de página.
 
 ![visualleft](assets/visualleft.png)
 
-Vista previa en PDF de una carta creada con la plantilla Izquierda visual
+PDF preview of a letter created using the Visual Left template
 
 ## Visual Top {#visual-top}
 
-La plantilla Visual Top tiene un margen visual en la parte superior. La plantilla Visual Top tiene un campo para introducir la dirección del destinatario en la propia página. La plantilla Principio visual tiene el campo de asunto y un pie de página que se reajusta para las letras que se extienden a varias páginas.
+Visual Top template has visual margin on the top. The Visual Top template has a field for entering recipient&#39;s address on the page itself. The Visual Top template has the subject field and a footer that reflows for letters that extend to multiple pages.
 
 ![visualtop](assets/visualtop.png)
 
-Vista previa en PDF de una carta creada con la plantilla Visual Top
+PDF preview of a letter created using the Visual Top template
 
 ## Visual Top - Classic {#visual-top-classic}
 
-La plantilla Visual Top - Classic tiene un encabezado en la parte superior de la página con el logotipo de la empresa. La plantilla Visual Top - Classic tiene un campo para introducir un asunto, pero no un pie de página.
+The Visual Top - Classic template has a header on top of the page with the company logo. The Visual Top - Classic template has a field to enter a subject but no footer.
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-Vista previa en PDF de una carta creada con la plantilla Visual Top - Classic
+PDF preview of a letter created using the Visual Top - Classic template
 
