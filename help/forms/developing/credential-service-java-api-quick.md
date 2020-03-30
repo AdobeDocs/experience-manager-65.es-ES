@@ -10,20 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Inicio rápido de la API de Java del servicio de credenciales (SOAP) {#credential-service-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) está disponible para el servicio de credenciales.
+El Inicio rápido de la API de Java (SOAP) está disponible para el servicio de credenciales.
 
 [Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Eliminación de credenciales mediante la API de Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 ***Nota **: Los inicios rápidos ubicados en Programación con formularios AEM se basan en FormsServer que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si utiliza otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
 
@@ -31,7 +31,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-El siguiente ejemplo de código importa una credencial basada en un archivo llamado *cred.p12*. El valor de alias utilizado para importar las credenciales es `Secure`. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del administrador de confianza).
+El siguiente ejemplo de código importa una credencial basada en un archivo llamado *cred.p12*. El valor de alias utilizado para importar las credenciales es `Secure`. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del Administrador de confianza).
 
 ```as3
  /*
@@ -95,7 +95,7 @@ El siguiente ejemplo de código importa una credencial basada en un archivo llam
  
           //Set connection properties required to invoke AEM Forms using SOAP mode
               Properties connectionProps = new Properties();
-              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -197,7 +197,7 @@ En el siguiente ejemplo de código se elimina una credencial basada en un valor 
  
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
