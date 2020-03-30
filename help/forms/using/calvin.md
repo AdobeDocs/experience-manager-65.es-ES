@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -52,7 +52,7 @@ Con Calvin, puede crear casos de prueba en CRXDE y ejecutar pruebas de interfaz 
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Reglas de expresión</p> <p> </p> </td>
+   <td><p>Reglas de Expresión</p> <p> </p> </td>
    <td>
     <ul>
      <li>¿Las expresiones asociadas con objetos de formulario, como calculate, visible, ejecutan secuencias de comandos después de salir de un campo, y se ejecutan después de realizar las operaciones de interfaz de usuario correspondientes?<br /> </li>
@@ -94,7 +94,7 @@ Antes de utilizar este artículo para crear los casos de prueba, debe saber lo s
 
 El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas para probar varios formularios adaptables. Debe crear un caso de prueba independiente para cada formulario que necesite probar. Si sigue pasos similares a los siguientes y modifica el código JavaScript en el paso 11, puede crear su propio grupo de pruebas para probar los formularios adaptables.
 
-1. Vaya a CRXDE Lite en el navegador web: `https://[server]:[port]/crx/de`.
+1. Vaya a CRXDE Lite en el navegador web: `https://'[server]:[port]'/crx/de`.
 1. Haga clic con el botón derecho en la subcarpeta /etc/clientlibs y haga clic en **Crear** > **Crear nodo**. Escriba un nombre (aquí afTestRegistration), especifique el tipo de nodo como cq:ClientLibraryFolder y haga clic en **Aceptar.**
 
    La carpeta clientlibs contiene el aspecto de registro de la aplicación (JS e Init). Se recomienda registrar todos los objetos de los grupos de pruebas Hobbes específicos de un formulario en la carpeta clientlibs.
@@ -123,7 +123,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
 
 >[!NOTE]
 >
->La clientlib granite.testing.calvin.af contiene todas las API de formularios adaptables. Estas API forman parte del espacio de nombres de llamada.
+>La clientlib granite.testing.calvin.af contiene todas las API de formularios adaptables. Estas API forman parte de la Área de nombres de cálculo.
 
 ![1_post_registration](assets/1_aftestregistration.png)
 
@@ -136,7 +136,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    ```
 
 1. Haga clic en **Guardar todo** y, a continuación, cierre el archivo js.txt.
-1. Haga clic con el botón secundario en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **Crear** > **Crear archivo**. Asigne un nombre al archivo init.js y haga clic en **Aceptar**.
+1. Haga clic con el botón derecho en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **Crear** > **Crear archivo**. Asigne un nombre al archivo init.js y haga clic en **Aceptar**.
 1. Copie el siguiente código en el archivo init.js y haga clic en **Guardar todo**:
 
    ```
@@ -160,7 +160,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    * Nombre: testForm (su nombre de formulario)
    * Tipo: cq:ClientLibraryFolder
 
-1. Agregue las siguientes propiedades al nodo recién creado (aquí testForm) para probar un formulario adaptable:
+1. Añada las siguientes propiedades en el nodo recién creado (aquí testForm) para probar un formulario adaptable:
 
    | **Propiedad** | **Tipo** | **Value** |
    |---|---|---|
@@ -313,7 +313,7 @@ Los pasos para probar los formularios adaptables de AEM son similares a los paso
 <table>
  <tbody>
   <tr>
-   <td><strong>Term</strong></td>
+   <td><strong>Término</strong></td>
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
@@ -322,7 +322,7 @@ Los pasos para probar los formularios adaptables de AEM son similares a los paso
   </tr>
   <tr>
    <td><p>Caso de prueba</p> </td>
-   <td><p>Un caso de prueba representa una tarea que un usuario realiza mediante su interfaz de usuario. Agregue casos de prueba a su grupo de pruebas para probar las actividades que realizan los usuarios.</p> </td>
+   <td><p>Un caso de prueba representa una tarea que un usuario realiza mediante su interfaz de usuario. Añada casos de prueba a su grupo de pruebas para probar las actividades que realizan los usuarios.</p> </td>
   </tr>
   <tr>
    <td><p>Acciones</p> </td>
@@ -330,7 +330,7 @@ Los pasos para probar los formularios adaptables de AEM son similares a los paso
   </tr>
   <tr>
    <td><p>Crear o publicar entorno</p> </td>
-   <td><p>En general, los formularios se pueden probar en el entorno de creación o publicación. En el caso del entorno de publicación, de forma predeterminada, el acceso para ejecutar la prueba está restringido. Esto se debe a que todas las bibliotecas de cliente relacionadas con el ejecutor de pruebas se encuentran dentro de /libs en la estructura JCR.</p> </td>
+   <td><p>En general, los formularios se pueden probar en el entorno de creación o publicación. En caso de publicación, de forma predeterminada, el acceso para ejecutar la prueba está restringido. Esto se debe a que todas las bibliotecas de cliente relacionadas con el ejecutor de pruebas se encuentran dentro de /libs en la estructura JCR.</p> </td>
   </tr>
  </tbody>
 </table>
