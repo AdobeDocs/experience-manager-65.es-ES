@@ -1,8 +1,8 @@
 ---
-title: Directorio global de almacenamiento de documentos
-seo-title: Directorio global de almacenamiento de documentos
-description: El directorio global de almacenamiento de documentos (GDS) es un directorio utilizado para almacenar archivos de larga duración que se utilizan en un proceso.
-seo-description: El directorio global de almacenamiento de documentos (GDS) es un directorio utilizado para almacenar archivos de larga duración que se utilizan en un proceso.
+title: Directorio de almacenamientos de documento global
+seo-title: Directorio de almacenamientos de documento global
+description: El directorio global de almacenamiento de documento (GDS) es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan en un proceso.
+seo-description: El directorio global de almacenamiento de documento (GDS) es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan en un proceso.
 uuid: 7681672c-a0dc-4445-8004-1b1e2ed3d301
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Directorio global de almacenamiento de documentos{#global-document-storage-directory}
+# Directorio de almacenamientos de documento global{#global-document-storage-directory}
 
-El directorio *global de almacenamiento de documentos (GDS)* es un directorio utilizado para almacenar archivos de larga duración que se utilizan en un proceso. Estos archivos incluyen archivos PDF, políticas y plantillas de formulario. Los archivos de larga duración son una parte fundamental del estado general de muchas implementaciones de formularios AEM. Si se pierden o dañan algunos o todos los documentos de larga duración, el servidor de formularios puede volverse inestable. Los documentos de entrada para invocaciones asincrónicas de trabajos también se almacenan en el directorio GDS y deben estar disponibles para procesar solicitudes. Es importante que considere la fiabilidad del sistema de archivos que aloja el directorio GDS. Utilice una matriz redundante de discos independientes (RAID) u otra tecnología según sus necesidades de calidad y nivel de servicio.
+El directorio *global de almacenamiento de documento (GDS)* es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan en un proceso. Estos archivos incluyen archivos PDF, políticas y plantillas de formulario. Los archivos de larga duración son una parte fundamental del estado general de muchas implementaciones de formularios AEM. Si se pierden o dañan algunos o todos los documentos de larga duración, el servidor de formularios puede volverse inestable. Los documentos de entrada para invocaciones de trabajos asincrónicas también se almacenan en el directorio GDS y deben estar disponibles para procesar solicitudes. Es importante que considere la fiabilidad del sistema de archivos que aloja el directorio GDS. Utilice una matriz redundante de discos independientes (RAID) u otra tecnología según sus necesidades de calidad y nivel de servicio.
 
 Los archivos de larga duración pueden contener información confidencial del usuario. Esta información puede requerir credenciales especiales cuando se accede a ella mediante las API de formularios AEM o las interfaces de usuario. Es importante que el directorio GDS esté correctamente asegurado a través del sistema operativo. Solo la cuenta de administrador que se utiliza para ejecutar el servidor de aplicaciones debe tener acceso de lectura y escritura al directorio GDS.
 
-Además de seleccionar un directorio seguro y de alta disponibilidad para GDS, también puede activar el almacenamiento de documentos en la base de datos. Tenga en cuenta que, incluso con el uso de la base de datos de formularios AEM para el almacenamiento de documentos, los formularios AEM siguen requiriendo el directorio GDS. (Consulte Opciones [de copia de seguridad cuando se utiliza la base de datos para el almacenamiento](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)de documentos).
+Además de seleccionar un directorio seguro y de alta disponibilidad para GDS, también puede activar el almacenamiento de documento en la base de datos. Tenga en cuenta que, incluso con el uso de la base de datos de formularios AEM para documento almacenamiento, los formularios AEM siguen requiriendo el directorio GDS. (Consulte Opciones [de copia de seguridad cuando se utiliza la base de datos para el almacenamiento](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)de documento).
 
 Los datos de la aplicación de formularios AEM residen en el directorio GDS y en la base de datos de formularios AEM. En la tabla siguiente se describen los datos y sus ubicaciones.
 
@@ -40,12 +40,12 @@ Los datos de la aplicación de formularios AEM residen en el directorio GDS y en
    <td><p>No</p></td>
   </tr>
   <tr>
-   <td><p>Contenedores de servicio implementados</p></td>
+   <td><p>contenedores de servicio implementados</p></td>
    <td><p>Sí</p></td>
    <td><p>No</p></td>
   </tr>
   <tr>
-   <td><p>Administrador de documentos </p></td>
+   <td><p>Administrador de Documentos </p></td>
    <td><p>No</p></td>
    <td><p>Sí</p></td>
   </tr>
@@ -72,8 +72,8 @@ Los datos de la aplicación de formularios AEM residen en el directorio GDS y en
 La ubicación del directorio GDS se puede configurar manualmente durante el proceso de instalación de formularios AEM. Si la configuración de ubicación permanece vacía durante la instalación, la ubicación predeterminada es un directorio en la instalación del servidor de aplicaciones, como se indica a continuación:
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/DocumentServer/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 ## Cambiar la ubicación GDS predeterminada {#change-the-default-gds-location}
 
@@ -84,7 +84,7 @@ Puede cambiar la ubicación de GDS en la consola de administración una vez que 
 >Migrar los datos de la siguiente manera o se producirá la pérdida de datos.
 
 1. Inicie sesión en la consola de administración y haga clic en Configuración > Configuración del sistema principal > Configuraciones.
-1. En el cuadro Directorio global de almacenamiento de documentos, introduzca la ruta completa al nuevo directorio GDS y, a continuación, haga clic en Aceptar.
+1. En el cuadro Directorio de Almacenamientos de Documento global, introduzca la ruta completa al nuevo directorio GDS y, a continuación, haga clic en Aceptar.
 1. Cierre inmediatamente el servidor de aplicaciones.
 1. Mueva todos los archivos desde el directorio GDS anterior a la nueva ubicación, manteniendo la estructura de directorios interna.
 1. Reinicie el servidor de aplicaciones.
