@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -26,29 +26,29 @@ El servicio de registro de extremos permite administrar los extremos mediante pr
 * Carpeta vigilada
 * Correo electrónico
 * (obsoleto para formularios AEM) Remoting
-* Administrador de tareas
+* Administrador de Tareas
 
    ***Nota **: SOAP, EJB y (obsoleto para formularios AEM en JEE) Los extremos de reubicación se crean automáticamente para cada servicio activado. Los extremos SOAP y EJB habilitan SOAP y EJB para todas las operaciones de servicio.*
 
    Un extremo remoto permite a los clientes de Flex invocar operaciones en el servicio de AEM Forms al que se agrega el extremo. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
 
-   Los extremos Correo electrónico, Administrador de tareas y Carpeta vigilada exponen solo una operación específica del servicio. La adición de estos extremos requiere un segundo paso de configuración para seleccionar un método para invocar, definir parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.
+   Los extremos Correo electrónico, Administrador de Tareas y Carpeta vigilada exponen solo una operación específica del servicio. Para Añadir estos extremos se requiere un segundo paso de configuración para seleccionar un método que se invocará, definir parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.
 
-   Puede organizar los extremos de TaskManager en grupos denominados *categorías*. A continuación, estas categorías se exponen a Workspace a través de TaskManager. Los usuarios finales ven los extremos de TaskManager a medida que se clasifican. En Workspace, los usuarios finales ven estas categorías en el panel de navegación. Los extremos de cada categoría se muestran como tarjetas de proceso en la página Iniciar procesos de Workspace.
+   Puede organizar los extremos de TaskManager en grupos llamados *categorías*. A continuación, estas categorías se exponen a Workspace a través de TaskManager. Los usuarios finales ven los extremos de TaskManager a medida que se clasifican. En Workspace, los usuarios finales ven estas categorías en el panel de navegación. Los extremos de cada categoría se muestran como tarjetas de proceso en la página Procesos de Inicio de Workspace.
 
    Puede realizar estas tareas mediante el servicio Endpoint Registry:
 
-* Agregue extremos de EJB. (Consulte [Adición de extremos](programmatically-endpoints.md#adding-ejb-endpoints)de EJB).
-* Agregar extremos SOAP. (Consulte [Adición de extremos](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
-* Agregar extremos de carpetas vigiladas (consulte [Adición de extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpetas vigiladas).
-* Agregar extremos de correo electrónico.  (Consulte [Adición de extremos](programmatically-endpoints.md#adding-email-endpoints)de correo electrónico).
-* Agregar extremos de Remoting. (Consulte [Adición de puntos](programmatically-endpoints.md#adding-remoting-endpoints)finales remotos).
-* Agregar extremos de TaskManager (consulte [Adición de extremos](programmatically-endpoints.md#adding-taskmanager-endpoints)de TaskManager).
+* Añadir extremos de EJB. (Consulte [Añadir extremos](programmatically-endpoints.md#adding-ejb-endpoints)de EJB).
+* Añada los extremos de SOAP. (Consulte [Añadir extremos](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
+* Añadir extremos de carpetas vigiladas (consulte [Añadir extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpetas vigiladas).
+* Añadir los extremos de correo electrónico. (Consulte [Añadir extremos](programmatically-endpoints.md#adding-email-endpoints)de correo electrónico).
+* Añadir los extremos de Remoting. (Consulte [Añadir extremos](programmatically-endpoints.md#adding-remoting-endpoints)remotos).
+* Añadir extremos de TaskManager (consulte [Añadir extremos](programmatically-endpoints.md#adding-taskmanager-endpoints)de TaskManager).
 * Modifique los puntos finales (consulte [Modificación de los puntos finales](programmatically-endpoints.md#modifying-endpoints)).
 * Eliminar extremos (consulte [Eliminación de extremos](programmatically-endpoints.md#removing-endpoints)).
 * Recuperar información del conector del extremo (consulte [Recuperación de información](programmatically-endpoints.md#retrieving-endpoint-connector-information)del conector del extremo).
 
-## Adición de extremos de EJB {#adding-ejb-endpoints}
+## Añadir extremos de EJB {#adding-ejb-endpoints}
 
 Puede agregar mediante programación un punto final de EJB a un servicio mediante la API de Java de AEM Forms. Al agregar un punto final de EJB a un servicio, está habilitando una aplicación cliente para que invoque el servicio mediante el modo EJB. Es decir, al establecer las propiedades de conexión necesarias para invocar AEM Forms, puede seleccionar el modo EJB. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
 
@@ -62,7 +62,7 @@ Puede agregar mediante programación un punto final de EJB a un servicio mediant
 
 ### Resumen de los pasos {#summary-of-steps}
 
-Para agregar un punto final de EJB a un servicio, realice las siguientes tareas:
+Para agregar un extremo EJB a un servicio, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Cree un `EndpointRegistry Client` objeto.
@@ -101,19 +101,19 @@ Después de definir los atributos de extremo de EJB, puede crear un extremo de E
 
 **Habilitar el extremo**
 
-Después de crear un nuevo extremo, debe habilitarlo. Después de habilitar el extremo, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo dentro de la consola de administración.
+Después de crear un nuevo extremo, debe habilitarlo. Después de habilitar el extremo, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede vista dentro de la consola de administración.
 
 **Consulte también**
 
-[Adición de un extremo EJB mediante la API de Java](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
+[Añadir un extremo EJB mediante la API de Java](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Adición de un extremo EJB mediante la API de Java {#adding-an-ejb-endpoint-using-the-java-api}
+### Añadir un extremo EJB mediante la API de Java {#adding-an-ejb-endpoint-using-the-java-api}
 
-Agregue un punto final de EJB mediante la API de Java:
+Añada un punto final de EJB mediante la API de Java:
 
 1. Incluir archivos de proyecto.
 
@@ -145,13 +145,13 @@ Agregue un punto final de EJB mediante la API de Java:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[Inicio rápido: Adición de un extremo EJB mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo EJB mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adición de extremos SOAP {#adding-soap-endpoints}
+## Añadir extremos SOAP {#adding-soap-endpoints}
 
 Puede agregar mediante programación un extremo SOAP a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo SOAP, se habilita una aplicación cliente para invocar el servicio mediante el modo SOAP. Es decir, al establecer las propiedades de conexión necesarias para invocar AEM Forms, puede seleccionar el modo SOAP.
 
@@ -206,19 +206,19 @@ Después de definir atributos de extremo SOAP, puede crear un extremo SOAP.
 
 **Habilitar el extremo**
 
-Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo en la consola de administración.
+Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede ver la vista dentro de la consola de administración.
 
 **Consulte también**
 
-[Agregar un extremo SOAP mediante la API de Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[Añadir un extremo SOAP mediante la API de Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Agregar un extremo SOAP mediante la API de Java {#add-a-soap-endpoint-using-the-java-api}
+### Añadir un extremo SOAP mediante la API de Java {#add-a-soap-endpoint-using-the-java-api}
 
-Agregue un extremo SOAP a un servicio mediante la API de Java:
+Añada un extremo SOAP a un servicio mediante la API de Java:
 
 1. Incluir archivos de proyecto.
 
@@ -250,13 +250,13 @@ Agregue un extremo SOAP a un servicio mediante la API de Java:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[Inicio rápido: Adición de un extremo SOAP mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo SOAP mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adición de extremos de carpeta vigilada {#adding-watched-folder-endpoints}
+## Añadir extremos de carpeta vigilada {#adding-watched-folder-endpoints}
 
 Puede agregar mediante programación un extremo de carpeta vigilada a un servicio mediante la API Java de AEM Forms. Al agregar un punto final Carpeta vigilada, se permite a los usuarios colocar un archivo (como un archivo PDF) en una carpeta. Cuando el archivo se coloca en la carpeta, se invoca el servicio configurado y se manipula el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada. Una carpeta vigilada está configurada para analizarse con un intervalo de velocidad fijo o con un cronograma crónico, como todos los lunes, miércoles y viernes al mediodía.
 
@@ -264,7 +264,7 @@ Para agregar mediante programación un extremo de carpeta vigilada a un servicio
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Este proceso acepta un documento PDF no seguro como valor de entrada y, a continuación, pasa el documento PDF no seguro a la operación del servicio `EncryptPDFUsingPassword` de cifrado. El documento PDF se cifra con una contraseña y el documento PDF con contraseña cifrada es el valor de salida de este proceso. El nombre del valor de entrada (el documento PDF no seguro) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento PDF con contraseña cifrada) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
+Este proceso acepta un documento PDF no seguro como valor de entrada y, a continuación, pasa el documento PDF no seguro a la `EncryptPDFUsingPassword` operación del servicio de cifrado. El documento PDF se cifra con una contraseña y el documento PDF con contraseña cifrada es el valor de salida de este proceso. El nombre del valor de entrada (el documento PDF no seguro) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento PDF con contraseña cifrada) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -319,16 +319,16 @@ La siguiente lista especifica los valores de configuración que se establecen al
 * **url**: Especifica la ubicación de la carpeta vigilada. En un entorno agrupado, este valor debe apuntar a una carpeta de red compartida a la que se pueda acceder desde todos los equipos del clúster.
 * **asincrónico**: Identifica el tipo de invocación como asíncrono o sincrónico. Los procesos transitorios y sincrónicos sólo se pueden invocar sincrónicamente. El valor predeterminado es true. Se recomienda asincrónico.
 * **cronExpression**: Utilizado por cuarzo para programar el sondeo del directorio de entrada. Para obtener más información sobre la configuración de la expresión cron, consulte [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
-* **purgeDuration**: Se trata de un atributo obligatorio.  Los archivos y carpetas de la carpeta de resultados se purgan cuando son anteriores a este valor. Este valor se mide en días. Este atributo es útil para garantizar que la carpeta de resultados no esté llena. Un valor de -1 días indica que nunca se elimina la carpeta de resultados. El valor predeterminado es -1.
+* **purgeDuration**: Se trata de un atributo obligatorio. Los archivos y carpetas de la carpeta de resultados se purgan cuando son anteriores a este valor. Este valor se mide en días. Este atributo es útil para garantizar que la carpeta de resultados no esté llena. Un valor de -1 días indica que nunca se elimina la carpeta de resultados. El valor predeterminado es -1.
 * **repeatInterval**: Intervalo, en segundos, para analizar la carpeta vigilada para obtener información. A menos que la limitación esté habilitada, este valor debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría estar sobrecargado. El valor predeterminado es 5.
 * **repeatCount**: Número de veces que una carpeta vigilada explora la carpeta o el directorio. Un valor de -1 indica la digitalización indefinida. El valor predeterminado es -1.
 * **throttleOn**: Limita el número de trabajos de carpetas vigiladas que se pueden procesar en un momento dado. El número máximo de trabajos viene determinado por el valor batchSize.
-* **userName**: El nombre de usuario utilizado al invocar un servicio de destino desde la carpeta vigilada. Este valor es obligatorio. El valor predeterminado es SuperAdmin.
+* **userName**: El nombre de usuario utilizado al invocar un servicio de destinatario desde la carpeta vigilada. Este valor es obligatorio. El valor predeterminado es SuperAdmin.
 * **domainName**: Dominio del usuario. Este valor es obligatorio. El valor predeterminado es DefaultDom.
 * **batchSize**: Número de archivos o carpetas que se van a buscar por análisis. Utilice este valor para evitar una sobrecarga en el sistema; si se analizan demasiados archivos al mismo tiempo, se puede producir un bloqueo. El valor predeterminado es 2.
 * **waitTime**: Tiempo, en milisegundos, que se debe esperar antes de analizar una carpeta o archivo después de la creación. Por ejemplo, si el tiempo de espera es de 36.000.000 milisegundos (una hora) y el archivo se creó hace un minuto, este archivo se recoge después de que hayan transcurrido 59 minutos o más. Este atributo es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y el archivo tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esta configuración evita que la carpeta vigilada analice el archivo si no ha estado esperando durante diez minutos. El valor predeterminado es 0.
-* **excludeFilePattern**: Patrón que utiliza una carpeta vigilada para determinar qué archivos y carpetas deben analizarse y captarse. No se analizará el procesamiento de ningún archivo o carpeta que tenga este patrón. Esta configuración resulta útil cuando la entrada es una carpeta que contiene varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que la carpeta vigilada recogerá. Este paso evita que la carpeta vigilada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. Por ejemplo, si el valor excludeFilePattern es `data*`, no se recogen todos los archivos y carpetas que coinciden `data*` . Esto incluye archivos y carpetas con nombres `data1`, `data2`etc. Además, el patrón se puede complementar con patrones comodín para especificar patrones de archivo. La carpeta observada modifica la expresión regular para admitir patrones comodín como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín.
-* **includeFilePattern**: Patrón que utiliza la carpeta vigilada para determinar qué carpetas y archivos se deben analizar y recoger. Por ejemplo, si este valor es `*`, se recogen todos los archivos y carpetas que coinciden `input*` . Esto incluye archivos y carpetas con nombres `input1`, `input2`etc. El valor predeterminado es `*`. Este valor indica todos los archivos y carpetas. Además, el patrón se puede complementar con patrones comodín para especificar patrones de archivo. La carpeta observada modifica la expresión regular para admitir patrones comodín como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín. Este valor es obligatorio.
+* **excludeFilePattern**: Patrón que utiliza una carpeta vigilada para determinar qué archivos y carpetas deben analizarse y captarse. No se analizará el procesamiento de ningún archivo o carpeta que tenga este patrón. Esta configuración resulta útil cuando la entrada es una carpeta que contiene varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que la carpeta vigilada recogerá. Este paso evita que la carpeta vigilada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. Por ejemplo, si el valor excludeFilePattern es `data*`, no se recogen todos los archivos y carpetas que coinciden `data*` . Esto incluye archivos y carpetas con nombres `data1`, `data2`etc. Además, el patrón se puede complementar con patrones comodín para especificar patrones de archivo. La carpeta observada modifica la expresión normal para admitir patrones comodín como `*.*` y `*.pdf`. Estos patrones comodín no son compatibles con expresiones regulares.
+* **includeFilePattern**: Patrón que utiliza la carpeta vigilada para determinar qué carpetas y archivos se deben analizar y recoger. Por ejemplo, si este valor es `*`, se recogen todos los archivos y carpetas que coinciden `input*` . Esto incluye archivos y carpetas con nombres `input1`, `input2`etc. El valor predeterminado es `*`. Este valor indica todos los archivos y carpetas. Además, el patrón se puede complementar con patrones comodín para especificar patrones de archivo. La carpeta observada modifica la expresión normal para admitir patrones comodín como `*.*` y `*.pdf`. Estos patrones comodín no son compatibles con expresiones regulares. Este valor es obligatorio.
 * **resultFolderName**: Carpeta donde se almacenan los resultados guardados. Esta ubicación puede ser una ruta de directorio absoluta o relativa. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de sólo lectura no se procesan y se guardarán en la carpeta de errores. El valor predeterminado es `result/%Y/%M/%D/`. Esta es la carpeta de resultados dentro de la carpeta vigilada.
 * **preserveFolderName**: Ubicación en la que se almacenan los archivos después de realizar correctamente el análisis y la recogida. Esta ubicación puede ser absoluta, relativa o nula. El valor predeterminado es `preserve/%Y/%M/%D/`.
 * **failFolderName**: Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Los archivos de sólo lectura no se procesan y se guardarán en la carpeta de errores. El valor predeterminado es `failure/%Y/%M/%D/`.
@@ -374,19 +374,19 @@ Después de definir los atributos, los valores de configuración y los valores d
 
 **Habilitar el extremo**
 
-Después de crear un extremo de carpeta vigilada, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo dentro de la consola de administración.
+Después de crear un extremo de carpeta vigilada, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede vista dentro de la consola de administración.
 
 **Consulte también**
 
-[Agregar un extremo de carpeta vigilada mediante la API de Java](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
+[Añadir un extremo de carpeta vigilada mediante la API de Java](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Agregar un extremo de carpeta vigilada mediante la API de Java {#add-a-watched-folder-endpoint-using-the-java-api}
+### Añadir un extremo de carpeta vigilada mediante la API de Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Agregue un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
+Añada un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
 
 1. Incluir archivos de proyecto.
 
@@ -414,7 +414,7 @@ Agregue un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
    * Un valor de cadena que especifica el valor del valor de configuración. Al establecer el valor de configuración, especifique la ubicación de la carpeta controlada. `url`
    >[!NOTE]
    >
-   >Para ver todos los valores de configuración establecidos para el servicio EncryptDocument, consulte el ejemplo de código Java ubicado en [QuickStart: Adición de un extremo de carpeta vigilada mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)de Java.
+   >Para ver todos los valores de configuración establecidos para el servicio EncryptDocument, consulte el ejemplo de código Java ubicado en [QuickStart: Añadir un extremo de carpeta vigilada mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)de Java.
 
 1. Defina los valores de parámetro de entrada.
 
@@ -422,7 +422,7 @@ Agregue un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
 
    * Un valor de cadena que especifica el nombre del parámetro de entrada. Por ejemplo, el nombre del parámetro de entrada para el servicio EncryptDocument es `InDoc`.
    * Un valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de `InDoc` entrada es `com.adobe.idp.Document`.
-   * Un valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `variable`.
+   * Un valor de cadena que especifica el tipo de asignación. For example, you can specify `variable`.
    * Un valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
    >[!NOTE]
    >
@@ -434,7 +434,7 @@ Agregue un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
 
    * Un valor de cadena que especifica el nombre del parámetro de salida. Por ejemplo, el nombre del parámetro de salida para el servicio EncryptDocument es `SecuredDoc`.
    * Un valor de cadena que especifica el tipo de datos del parámetro de salida. Por ejemplo, el tipo de datos del `SecuredDoc` parámetro de salida es `com.adobe.idp.Document`.
-   * Un valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `%F.pdf`.
+   * Un valor de cadena que especifica el tipo de asignación. For example, you can specify `%F.pdf`.
 
 1. Crear un punto final de carpeta vigilada.
 
@@ -448,7 +448,7 @@ Agregue un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[Inicio rápido: Adición de un extremo de carpeta vigilada mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo de carpeta vigilada mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -456,7 +456,7 @@ Agregue un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
 
 ### Archivo constante de valores de configuración de carpetas vigiladas {#watched-folder-configuration-values-constant-file}
 
-Inicio [rápido: Al agregar un extremo de carpeta vigilada mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) de Java, se utiliza un archivo constante que debe formar parte del proyecto de Java para compilar el inicio rápido. Este archivo constante representa los valores de configuración que deben establecerse al agregar un extremo de carpeta vigilada. El siguiente código Java representa el archivo constante.
+Inicio [rápido: Añadir un extremo de carpeta vigilada mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) de Java utiliza un archivo constante que debe formar parte del proyecto de Java para compilar el inicio rápido. Este archivo constante representa los valores de configuración que deben establecerse al agregar un extremo de carpeta vigilada. El siguiente código Java representa el archivo constante.
 
 ```as3
  /**
@@ -487,7 +487,7 @@ Inicio [rápido: Al agregar un extremo de carpeta vigilada mediante la API](/hel
         }
 ```
 
-## Adición de extremos de correo electrónico {#adding-email-endpoints}
+## Añadir extremos de correo electrónico {#adding-email-endpoints}
 
 Puede agregar mediante programación un extremo de correo electrónico a un servicio mediante la API Java de AEM Forms. Al agregar un extremo de correo electrónico, se permite a los usuarios enviar un mensaje de correo electrónico con uno o varios archivos adjuntos a una cuenta de correo electrónico específica. A continuación, se invoca la operación del servicio de configuración y se manipulan los archivos. Una vez que el servicio realiza la operación especificada, envía un mensaje de correo electrónico al remitente con los archivos modificados como archivos adjuntos.
 
@@ -495,7 +495,7 @@ Para agregar mediante programación un extremo de correo electrónico a un servi
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Este proceso acepta un documento PDF no seguro como valor de entrada y, a continuación, pasa el documento PDF no seguro a la operación del servicio `EncryptPDFUsingPassword` de cifrado. Este proceso codifica el documento PDF con una contraseña y devuelve el documento PDF cifrado con contraseña como valor de salida. El nombre del valor de entrada (el documento PDF no seguro) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento PDF con contraseña cifrada) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
+Este proceso acepta un documento PDF no seguro como valor de entrada y, a continuación, pasa el documento PDF no seguro a la `EncryptPDFUsingPassword` operación del servicio de cifrado. Este proceso codifica el documento PDF con una contraseña y devuelve el documento PDF cifrado con contraseña como valor de salida. El nombre del valor de entrada (el documento PDF no seguro) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento PDF con contraseña cifrada) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -547,19 +547,19 @@ Debe especificar los valores de configuración para un extremo de correo electr�
 
 >[!NOTE]
 >
->La cuenta de correo electrónico que se monitorea es una cuenta especial que se utiliza solamente para el extremo de correo electrónico. Esta cuenta no es una cuenta de correo electrónico de un usuario normal. La cuenta de correo electrónico de un usuario normal no debe configurarse como la cuenta que utiliza el proveedor de correo electrónico porque este elimina los mensajes de correo electrónico de la bandeja de entrada después de que hayan finalizado con los mensajes.
+>La cuenta de correo electrónico que se supervisa es una cuenta especial que se utiliza solamente para el extremo de correo electrónico. Esta cuenta no es una cuenta de correo electrónico de un usuario normal. La cuenta de correo electrónico de un usuario normal no debe configurarse como la cuenta que utiliza el proveedor de correo electrónico porque este elimina los mensajes de correo electrónico de la bandeja de entrada después de que hayan finalizado con los mensajes.
 
 Los siguientes valores de configuración se establecen al agregar mediante programación un extremo de correo electrónico a un servicio:
 
-* **cronExpression**: Expresión cron si el correo electrónico debe programarse mediante una expresión cron.
+* **cronExpression**: Una expresión cron si el correo electrónico debe programarse mediante una expresión cron.
 * **repeatCount**: Número de veces que el extremo de correo electrónico explora la carpeta o el directorio. Un valor de -1 indica la digitalización indefinida. El valor predeterminado es -1.
 * **repeatInterval**: Frecuencia de análisis en segundos que utiliza el receptor para comprobar si hay correo entrante. El valor predeterminado es 10.
-* **startDelay**: Tiempo de espera para el análisis después de que se inicie el programador. La hora predeterminada es 0.
+* **startDelay**: Tiempo de espera para analizar después de los inicios del Planificador. La hora predeterminada es 0.
 * **batchSize**: Número de mensajes de correo electrónico que procesa el receptor por escaneo para obtener un rendimiento óptimo. Un valor de -1 indica todos los correos electrónicos. El valor predeterminado es 2.
-* **userName**: El nombre de usuario utilizado al invocar un servicio de destino desde un correo electrónico. El valor predeterminado es `SuperAdmin`.
+* **userName**: El nombre de usuario que se utiliza al invocar un servicio de destinatario desde el correo electrónico. El valor predeterminado es `SuperAdmin`.
 * **domainName**: Un valor de configuración obligatorio. El valor predeterminado es `DefaultDom`.
 * **domainPattern**: Especifica los patrones de dominio del correo electrónico entrante que acepta el proveedor. Por ejemplo, si `adobe.com` se utiliza, solo se procesa el correo electrónico de adobe.com, se ignora el correo electrónico de otros dominios.
-* **filePattern**: Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos con extensiones de nombre de archivo específicas (&amp;ast;.dat, &amp;ast;.xml), archivos con nombres (datos) específicos y archivos con expresiones compuestas en el nombre y la extensión (&amp;ast;..[dD][aA][Tt]). El valor predeterminado es `*`.
+* **filePattern**: Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones de nombre de archivo específicas (&amp;ast;.dat, &amp;ast;.xml), archivos con nombres (datos) específicos y archivos con expresiones compuestas en el nombre y la extensión (&amp;ast;..[dD][aA]&#39;puerto&#39;). El valor predeterminado es `*`.
 * **destinationSuccessfulJob**: Dirección de correo electrónico a la que se envían mensajes para indicar los trabajos que se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. En algunos casos, es posible que desee activar un proceso y no desee recibir una notificación por correo electrónico del resultado. El valor predeterminado es `sender`.
 * **destinationFailedJob**: Dirección de correo electrónico a la que se envían mensajes para indicar que se han producido errores en los trabajos. De forma predeterminada, siempre se envía un mensaje de trabajo fallido al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. El valor predeterminado es `sender`.
 * **inboxHost**: El nombre de host o la dirección IP de la bandeja de entrada que debe analizar el proveedor de correo electrónico.
@@ -576,7 +576,7 @@ Los siguientes valores de configuración se establecen al agregar mediante progr
 * **charSet**: Conjunto de caracteres utilizado por el proveedor de correo electrónico. El valor predeterminado es `UTF-8`.
 * **smtpSSLEnabled**: Establezca este valor para obligar al proveedor de correo electrónico a utilizar SSL al enviar mensajes de notificación de resultados o errores. Asegúrese de que el host SMTP admita SSL.
 * **failedJobFolder**: Especifica un directorio en el que almacenar los resultados cuando el servidor de correo SMTP no está operativo.
-* **asincrónico**: Cuando se establece en sincrónico, se procesan todos los documentos de entrada y se devuelve una sola respuesta. Cuando se establece en asincrónico, se envía una respuesta por cada documento de entrada que se procesa. Por ejemplo, se crea un extremo de correo electrónico para el proceso introducido en este tema y se envía un mensaje de correo electrónico a la bandeja de entrada del extremo que contiene varios documentos PDF no seguros. Cuando todos los documentos PDF se cifran con una contraseña y si el extremo se configura como sincrónico, se envía un único mensaje de correo electrónico de respuesta con todos los documentos PDF protegidos adjuntos. Si el punto final está configurado como asincrónico, se envía un mensaje de correo electrónico de respuesta independiente para cada documento PDF protegido. Cada mensaje de correo electrónico contiene un solo documento PDF como archivo adjunto. El valor predeterminado es asincrónico.
+* **asincrónico**: Cuando se establece en sincrónico, se procesan todos los documentos de entrada y se devuelve una sola respuesta. Cuando se establece en asincrónico, se envía una respuesta por cada documento de entrada que se procesa. Por ejemplo, se crea un extremo de correo electrónico para el proceso introducido en este tema y se envía un mensaje de correo electrónico a la bandeja de entrada del extremo que contiene varios documentos PDF no seguros. Cuando todos los documentos PDF se cifran con una contraseña y si el extremo se configura como sincrónico, se envía un único mensaje de correo electrónico de respuesta con todos los documentos PDF protegidos adjuntos. Si el extremo está configurado como asincrónico, se envía un mensaje de correo electrónico de respuesta independiente para cada documento PDF protegido. Cada mensaje de correo electrónico contiene un único documento PDF como archivo adjunto. El valor predeterminado es asincrónico.
 
 **Definir valores de parámetro de entrada**
 
@@ -593,7 +593,7 @@ Para definir los valores de parámetro de entrada necesarios para un extremo de 
 
 **Valor** de asignación: Especifica el valor del tipo de asignación. Por ejemplo, si selecciona un tipo de asignación Variable, puede especificar `*.pdf` como patrón de archivo.
 
-**Tipo** de datos: Especifica el tipo de datos de los valores de entrada. Por ejemplo, el tipo de datos del valor de entrada del proceso introducido en esta sección es com.adobe.idp.Document.
+**Tipo** de datos: Especifica el tipo de datos de los valores de entrada. Por ejemplo, el tipo de datos del valor de entrada del proceso introducido en esta sección es com.adobe.idp.Documento.
 
 **Definir un valor de parámetro de salida**
 
@@ -617,19 +617,19 @@ Después de definir los atributos de extremo de correo electrónico y los valore
 
 **Habilitar el extremo**
 
-Después de crear un extremo de correo electrónico, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo dentro de la consola de administración.
+Después de crear un extremo de correo electrónico, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede vista dentro de la consola de administración.
 
 **Consulte también**
 
-[Agregar un extremo de correo electrónico mediante la API de Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
+[Añadir un extremo de correo electrónico mediante la API de Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Agregar un extremo de correo electrónico mediante la API de Java {#add-an-email-endpoint-using-the-java-api}
+### Añadir un extremo de correo electrónico mediante la API de Java {#add-an-email-endpoint-using-the-java-api}
 
-Agregue un extremo de correo electrónico mediante la API de Java:
+Añada un extremo de correo electrónico mediante la API de Java:
 
 1. Incluir archivos de proyecto.
 
@@ -657,7 +657,7 @@ Agregue un extremo de correo electrónico mediante la API de Java:
    * Un valor de cadena que especifica el valor del valor de configuración. Al establecer el valor de configuración, especifique un valor de cadena que especifique el nombre del servidor SMTP. `smtpHost`
    >[!NOTE]
    >
-   >Para ver todos los valores de configuración establecidos para el servicio EncryptDocument introducido en esta sección, consulte el ejemplo de código Java ubicado en [QuickStart: Adición de un extremo de correo electrónico mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)de Java.
+   >Para ver todos los valores de configuración establecidos para el servicio EncryptDocument introducido en esta sección, consulte el ejemplo de código Java ubicado en [QuickStart: Añadir un extremo de correo electrónico mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)de Java.
 
 1. Defina los valores de parámetro de entrada.
 
@@ -665,7 +665,7 @@ Agregue un extremo de correo electrónico mediante la API de Java:
 
    * Un valor de cadena que especifica el nombre del parámetro de entrada. Por ejemplo, el nombre del parámetro de entrada para el servicio EncryptDocument es `InDoc`.
    * Un valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de `InDoc` entrada es `com.adobe.idp.Document`.
-   * Un valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `variable`.
+   * Un valor de cadena que especifica el tipo de asignación. For example, you can specify `variable`.
    * Un valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
    >[!NOTE]
    >
@@ -677,7 +677,7 @@ Agregue un extremo de correo electrónico mediante la API de Java:
 
    * Un valor de cadena que especifica el nombre del parámetro de salida. Por ejemplo, el nombre del parámetro de salida para el servicio EncryptDocument es `SecuredDoc`.
    * Un valor de cadena que especifica el tipo de datos del parámetro de salida. Por ejemplo, el tipo de datos del `SecuredDoc` parámetro de salida es `com.adobe.idp.Document`.
-   * Un valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `%F.pdf`.
+   * Un valor de cadena que especifica el tipo de asignación. For example, you can specify `%F.pdf`.
 
 1. Cree el extremo de correo electrónico.
 
@@ -691,7 +691,7 @@ Agregue un extremo de correo electrónico mediante la API de Java:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[Inicio rápido: Adición de un extremo de carpeta vigilada mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo de carpeta vigilada mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -699,7 +699,7 @@ Agregue un extremo de correo electrónico mediante la API de Java:
 
 ### Archivo constante de valores de configuración de correo electrónico {#email-configuration-values-constant-file}
 
-Inicio [rápido: Al agregar un extremo de correo electrónico mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) de Java, se utiliza un archivo constante que debe formar parte del proyecto de Java para compilar el inicio rápido. Este archivo constante representa los valores de configuración que deben establecerse al agregar un extremo de correo electrónico. El siguiente código Java representa el archivo constante.
+Inicio [rápido: Añadir un extremo de correo electrónico mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) de Java utiliza un archivo constante que debe formar parte del proyecto de Java para compilar el inicio rápido. Este archivo constante representa los valores de configuración que deben establecerse al agregar un extremo de correo electrónico. El siguiente código Java representa el archivo constante.
 
 ```as3
  /**
@@ -737,7 +737,7 @@ Inicio [rápido: Al agregar un extremo de correo electrónico mediante la API](/
  }
 ```
 
-## Adición de puntos finales remotos {#adding-remoting-endpoints}
+## Añadir extremos remotos {#adding-remoting-endpoints}
 
 >[!NOTE]
 >
@@ -749,7 +749,7 @@ Para agregar mediante programación un extremo Remoting a un servicio, considere
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Este proceso acepta un documento PDF no seguro como valor de entrada y, a continuación, pasa el documento PDF no seguro a la operación del servicio `EncryptPDFUsingPassword` de cifrado. El documento PDF se cifra con una contraseña y el documento PDF con contraseña cifrada es el valor de salida de este proceso. El nombre del valor de entrada (el documento PDF no seguro) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento PDF con contraseña cifrada) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
+Este proceso acepta un documento PDF no seguro como valor de entrada y, a continuación, pasa el documento PDF no seguro a la `EncryptPDFUsingPassword` operación del servicio de cifrado. El documento PDF se cifra con una contraseña y el documento PDF con contraseña cifrada es el valor de salida de este proceso. El nombre del valor de entrada (el documento PDF no seguro) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento PDF con contraseña cifrada) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
 
 Para mostrar cómo agregar un extremo Remoting a un servicio, en esta sección se agrega un extremo Remoting a un servicio llamado EncryptDocument.
 
@@ -759,7 +759,7 @@ Para mostrar cómo agregar un extremo Remoting a un servicio, en esta sección s
 
 ### Resumen de los pasos {#summary_of_steps-4}
 
-Para quitar un punto final de un servicio, realice las siguientes tareas:
+Para eliminar un extremo de un servicio, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Cree un `EndpointRegistryClient` objeto.
@@ -804,15 +804,15 @@ Después de crear un nuevo extremo, debe habilitarlo. Cuando se habilita un extr
 
 **Consulte también**
 
-[Agregar un extremo remoto mediante la API de Java](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
+[Añadir un extremo remoto mediante la API de Java](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Agregar un extremo remoto mediante la API de Java {#add-a-remoting-endpoint-using-the-java-api}
+### Añadir un extremo remoto mediante la API de Java {#add-a-remoting-endpoint-using-the-java-api}
 
-Agregue un extremo Remoting mediante la API de Java:
+Añada un extremo Remoting mediante la API de Java:
 
 1. Incluir archivos de proyecto.
 
@@ -844,13 +844,13 @@ Agregue un extremo Remoting mediante la API de Java:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[Inicio rápido: Adición de un extremo remoto mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo remoto mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adición de extremos de TaskManager {#adding-taskmanager-endpoints}
+## Añadir extremos de TaskManager {#adding-taskmanager-endpoints}
 
 Puede agregar mediante programación un extremo de TaskManager a un servicio mediante la API Java de AEM Forms. Al agregar un extremo de TaskManager a un servicio, se habilita a un usuario de Workspace para que invoque el servicio. Es decir, un usuario que trabaja en Workspace puede invocar un proceso que tiene un extremo de TaskManager correspondiente.
 
@@ -888,7 +888,7 @@ Para poder agregar mediante programación un extremo de TaskManager, debe crear 
 
 **Crear una categoría para el extremo**
 
-Las categorías se utilizan para organizar servicios dentro de Workspace. Es decir, un usuario de Workspace puede invocar un servicio que tiene un extremo de TaskManager seleccionando una categoría dentro de Workspace. Al crear un extremo de TaskManager, puede hacer referencia a una categoría existente o crear una nueva categoría mediante programación.
+Las Categorías se utilizan para organizar servicios dentro de Workspace. Es decir, un usuario de Workspace puede invocar un servicio que tiene un extremo de TaskManager seleccionando una categoría dentro de Workspace. Al crear un extremo de TaskManager, puede hacer referencia a una categoría existente o crear una categoría nueva mediante programación.
 
 >[!NOTE]
 >
@@ -911,19 +911,19 @@ Después de establecer los atributos de extremo de TaskManager, puede crear un e
 
 **Habilitar el extremo**
 
-Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio desde Workspace. Después de habilitar el punto final, puede verlo dentro de la consola de administración.
+Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio desde Workspace. Después de habilitar el punto final, puede vista dentro de la consola de administración.
 
 **Consulte también**
 
-[Agregar un extremo de TaskManager mediante la API de Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
+[Añadir un extremo de TaskManager mediante la API de Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Agregar un extremo de TaskManager mediante la API de Java {#add-a-taskmanager-endpoint-using-the-java-api}
+### Añadir un extremo de TaskManager mediante la API de Java {#add-a-taskmanager-endpoint-using-the-java-api}
 
-Agregue un extremo de TaskManager mediante la API de Java:
+Añada un extremo de TaskManager mediante la API de Java:
 
 1. Incluir archivos de proyecto.
 
@@ -940,7 +940,7 @@ Agregue un extremo de TaskManager mediante la API de Java:
 
       * Un valor de cadena que especifica el valor de identificador de la categoría
       * Un valor de cadena que especifica la descripción de la categoría
-   * Cree la categoría invocando el `EndpointRegistryClient` método del `createEndpointCategory` objeto y pasando el `CreateEndpointCategoryInfo` objeto. Este método devuelve un `EndpointCategory` objeto que representa la nueva categoría.
+   * Cree la categoría invocando el `EndpointRegistryClient` método `createEndpointCategory` del objeto y pasando el `CreateEndpointCategoryInfo` objeto. Este método devuelve un `EndpointCategory` objeto que representa la nueva categoría.
 
 
 1. Definir atributos de extremo de TaskManager.
@@ -950,7 +950,7 @@ Agregue un extremo de TaskManager mediante la API de Java:
    * Especifique la descripción del punto final invocando el `CreateEndpointInfo` método del `setDescription` objeto y pasando un valor de cadena que describa el punto final.
    * Especifique el nombre del extremo invocando el `CreateEndpointInfo` método del `setName` objeto y pasando un valor de cadena que especifica el nombre.
    * Especifique el servicio al que pertenece el extremo invocando el `CreateEndpointInfo` método del `setServiceId` objeto y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la categoría a la que pertenece el extremo invocando el `CreateEndpointInfo` método `setCategoryId` del objeto y pasando un valor de cadena que especifica el valor del identificador de la categoría. Puede invocar el `EndpointCategory` método del `getId` objeto para obtener el valor de identificador de esta categoría.
+   * Especifique la categoría a la que pertenece el extremo invocando el `CreateEndpointInfo` método `setCategoryId` del objeto y pasando un valor de cadena que especifica el valor del identificador de categoría. Puede invocar el `EndpointCategory` método del `getId` objeto para obtener el valor de identificador de esta categoría.
    * Especifique la operación que se invoca invocando el `CreateEndpointInfo` método del `setOperationName` objeto y pasando un valor de cadena que especifica el nombre de la operación. Normalmente, al crear un `TaskManager` extremo para un servicio que se originó a partir de un proceso creado en Workbench, el nombre de la operación es `invoke`.
 
 1. Cree un extremo de TaskManager.
@@ -965,7 +965,7 @@ Agregue un extremo de TaskManager mediante la API de Java:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[Inicio rápido: Adición de un extremo de TaskManager mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un extremo de TaskManager mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -973,7 +973,7 @@ Agregue un extremo de TaskManager mediante la API de Java:
 
 ## Modificación de los puntos finales {#modifying-endpoints}
 
-Puede modificar mediante programación un punto final existente mediante la API Java de AEM Forms. Al modificar un punto final, puede cambiar el comportamiento del punto final. Considere, por ejemplo, un punto final Carpeta vigilada que especifica una carpeta que se utiliza como carpeta vigilada. Puede modificar mediante programación los valores de configuración que pertenecen al punto final Carpeta vigilada, lo que resulta en que otra carpeta funcione como la carpeta vigilada. Para obtener información sobre los valores de configuración que pertenecen a un extremo de carpeta vigilada, consulte [Adición de extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilada.
+Puede modificar mediante programación un punto final existente mediante la API Java de AEM Forms. Al modificar un punto final, puede cambiar el comportamiento del punto final. Considere, por ejemplo, un punto final Carpeta vigilada que especifica una carpeta que se utiliza como carpeta vigilada. Puede modificar mediante programación los valores de configuración que pertenecen al punto final Carpeta vigilada, lo que resulta en que otra carpeta funcione como la carpeta vigilada. Para obtener información sobre los valores de configuración que pertenecen a un extremo de carpeta vigilada, consulte [Añadir extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilada.
 
 Para mostrar cómo modificar un extremo, esta sección modifica un extremo de carpeta vigilada cambiando la carpeta que se comporta como la carpeta vigilada.
 
@@ -1011,15 +1011,15 @@ Para modificar un extremo mediante programación, debe crear un `EndpointRegistr
 
 Para poder modificar un punto final, debe recuperarlo. Para recuperar un punto final, debe conectarse como usuario que puede acceder a un punto final. Se recomienda que se conecte como administrador. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
 
-Puede recuperar un punto final recuperando una lista de puntos finales. A continuación, puede iterar por la lista, buscando el punto final específico que desea eliminar. Por ejemplo, puede ubicar un extremo determinando el servicio que corresponde al extremo y el tipo de extremo. Cuando localice el punto final, puede modificarlo.
+Puede recuperar un punto final recuperando una lista de puntos finales. A continuación, puede iterar a través de la lista, buscando el punto final específico que desea eliminar. Por ejemplo, puede ubicar un extremo determinando el servicio que corresponde al extremo y el tipo de extremo. Cuando localice el punto final, puede modificarlo.
 
 **Especificar nuevos valores de configuración**
 
-Al modificar un extremo, especifique nuevos valores de configuración. Por ejemplo, para modificar un extremo de carpeta vigilada, restablezca todos los valores de configuración del extremo de carpeta vigilada, no solo los que desea modificar. Para obtener información sobre los valores de configuración que pertenecen a un extremo de carpeta vigilada, consulte [Adición de extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilada.
+Al modificar un extremo, especifique nuevos valores de configuración. Por ejemplo, para modificar un extremo de carpeta vigilada, restablezca todos los valores de configuración del extremo de carpeta vigilada, no solo los que desea modificar. Para obtener información sobre los valores de configuración que pertenecen a un extremo de carpeta vigilada, consulte [Añadir extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilada.
 
 >[!NOTE]
 >
->Para obtener información sobre los valores de configuración que pertenecen a un extremo de correo electrónico, consulte [Adición de extremos](programmatically-endpoints.md#adding-email-endpoints)de correo electrónico.
+>Para obtener información sobre los valores de configuración que pertenecen a un extremo de correo electrónico, consulte [Añadir extremos](programmatically-endpoints.md#adding-email-endpoints)de correo electrónico.
 
 >[!NOTE]
 >
@@ -1033,7 +1033,7 @@ Al modificar un extremo, especifique nuevos valores de configuración. Por ejemp
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Modificación de un extremo mediante la API de Java {#modifying-an-endpoint-using-the-java-api}
+### Modificación de un extremo mediante la API de Java {#modifying-an-endpoint-using-the-java-api}
 
 Modifique un punto final mediante la API de Java:
 
@@ -1048,7 +1048,7 @@ Modifique un punto final mediante la API de Java:
 
 1. Recupere el punto final que desea modificar.
 
-   * Recupere una lista de todos los extremos a los que puede acceder el usuario actual (especificada en las propiedades de conexión) invocando el `EndpointRegistryClient` método del `getEndpoints` objeto y pasando un `PagingFilter` objeto que actúa como filtro. Puede pasar un `(PagingFilter)null` valor para devolver todos los extremos. Este método devuelve un `java.util.List` objeto en el que cada elemento es un `Endpoint` objeto. Para obtener más información sobre un `PagingFilter` objeto, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Recuperar una lista de todos los extremos a los que puede acceder el usuario actual (especificada en las propiedades de conexión) invocando el `EndpointRegistryClient` método del `getEndpoints` objeto y pasando un `PagingFilter` objeto que actúa como filtro. Puede pasar un `(PagingFilter)null` valor para devolver todos los extremos. Este método devuelve un `java.util.List` objeto en el que cada elemento es un `Endpoint` objeto. Para obtener más información sobre un `PagingFilter` objeto, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Repita el `java.util.List` objeto para determinar si tiene puntos finales. Si existen extremos, cada elemento es una `EndPoint` instancia.
    * Determine el servicio que corresponde a un punto final invocando el `EndPoint` método `getServiceId` del objeto. Este método devuelve un valor de cadena que especifica el nombre del servicio.
    * Determine el tipo de extremo invocando el `EndPoint` método `getConnectorId` del objeto. Este método devuelve un valor de cadena que especifica el tipo de extremo. Por ejemplo, si el extremo es una carpeta vigilada, este método devuelve `WatchedFolder`.
@@ -1077,7 +1077,7 @@ Modifique un punto final mediante la API de Java:
 
 Puede eliminar mediante programación un punto final de un servicio mediante la API de Java de AEM Forms. Después de quitar un punto final, no se puede invocar el servicio mediante el método de invocación que habilitó el punto final. Por ejemplo, si elimina un extremo SOAP de un servicio, no podrá invocar el servicio mediante el modo SOAP.
 
-Para demostrar cómo eliminar un punto final de un servicio, esta sección elimina un punto final de EJB de un servicio llamado *EncryptDocument*.
+Para mostrar cómo quitar un punto final de un servicio, esta sección elimina un punto final de EJB de un servicio llamado *EncryptDocument*.
 
 >[!NOTE]
 >
@@ -1085,7 +1085,7 @@ Para demostrar cómo eliminar un punto final de un servicio, esta sección elimi
 
 ### Resumen de los pasos {#summary_of_steps-7}
 
-Para quitar un punto final de un servicio, realice las siguientes tareas:
+Para eliminar un extremo de un servicio, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Cree un `EndpointRegistryClient` objeto.
@@ -1113,11 +1113,11 @@ Para eliminar un punto final mediante programación, debe crear un `EndpointRegi
 
 Antes de eliminar un punto final, debe recuperarlo. Para recuperar un punto final, debe conectarse como usuario que puede acceder a un punto final. Se recomienda que se conecte como administrador. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
 
-Puede recuperar un punto final recuperando una lista de puntos finales. A continuación, puede iterar por la lista, buscando el punto final específico que desea eliminar. Por ejemplo, puede ubicar un extremo determinando el servicio que corresponde al extremo y el tipo de extremo. Cuando encuentre el punto final, puede eliminarlo.
+Puede recuperar un punto final recuperando una lista de puntos finales. A continuación, puede iterar a través de la lista, buscando el punto final específico que desea eliminar. Por ejemplo, puede ubicar un extremo determinando el servicio que corresponde al extremo y el tipo de extremo. Cuando encuentre el punto final, puede eliminarlo.
 
 **Eliminar el punto final**
 
-Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo dentro de la consola de administración.
+Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede vista dentro de la consola de administración.
 
 **Consulte también**
 
@@ -1127,7 +1127,7 @@ Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está ha
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Eliminación de un extremo mediante la API de Java {#removing-an-endpoint-using-the-java-api}
+### Eliminación de un extremo mediante la API de Java {#removing-an-endpoint-using-the-java-api}
 
 Elimine un punto final mediante la API de Java:
 
@@ -1165,7 +1165,7 @@ Elimine un punto final mediante la API de Java:
 
 Puede recuperar mediante programación información sobre los conectores de extremo mediante la API de AEM Forms. Un conector permite que un punto final invoque un servicio mediante varios métodos de invocación. Por ejemplo, un conector de carpeta vigilada permite que un extremo invoque un servicio mediante carpetas vigiladas. Al recuperar mediante programación la información sobre los conectores de punto final, puede recuperar los valores de configuración asociados con un conector, como los valores de configuración necesarios y los opcionales.
 
-Para mostrar cómo recuperar información sobre los conectores de punto final, esta sección recupera información sobre un conector de carpeta vigilada. (Consulte [Adición de extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilados).
+Para mostrar cómo recuperar información sobre los conectores de punto final, esta sección recupera información sobre un conector de carpeta vigilada. (Consulte [Añadir extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilados).
 
 >[!NOTE]
 >
