@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Puede utilizar [componentes](/help/forms/using/description-reusable-components.md) del espacio de trabajo de AEM Forms en su propia aplicación web. La siguiente implementación de ejemplo utiliza componentes de un paquete de desarrollo de espacio de trabajo de AEM Forms instalado en una instancia de CRX™ para crear una aplicación web. Personalice la siguiente solución para adaptarla a sus necesidades específicas. La implementación de muestra reutiliza `UserInfo``FilterList`y `TaskList`componentes dentro de un portal web.
 
-1. Inicie sesión en el entorno CRXDE Lite en `https://[server]:[port]/lc/crx/de/`. Asegúrese de tener instalado un paquete de desarrollo de espacio de trabajo de AEM Forms.
+1. Inicie sesión en el entorno CRXDE Lite en `https://'[server]:[port]'/lc/crx/de/`. Asegúrese de tener instalado un paquete de desarrollo de espacio de trabajo de AEM Forms.
 1. Cree una ruta `/apps/sampleApplication/wscomponents`.
 1. Copiar css, imágenes, js/libs, js/Runtime y js/registry.js
 
@@ -40,9 +40,9 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
        });
    ```
 
-1. Cree un nodo en /content por nombre `sampleApplication` y escriba `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` el tipo String y value `sampleApplication`. En la lista de control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read. Además, en la Lista de control de acceso de `/apps/sampleApplication` agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read.
+1. Cree un nodo en /content por nombre `sampleApplication` y escriba `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` el tipo String y value `sampleApplication`. En la Lista de Control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read. Además, en la Lista de Control de acceso de `/apps/sampleApplication` agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read.
 1. En `/apps/sampleApplication/wscomponents/js/registry.js` las rutas de actualización de `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` para los valores de plantilla.
-1. En el archivo JSP de la página principal del portal en `/apps/sampleApplication/GET.jsp`, agregue el siguiente código para incluir los componentes necesarios dentro del portal.
+1. En el archivo JSP de página de inicio de portal en `/apps/sampleApplication/GET.jsp`, agregue el siguiente código para incluir los componentes necesarios dentro del portal.
 
    ```as3
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -55,7 +55,7 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
 
    >[!NOTE]
    >
-   >Cada componente se agrega a la etiqueta de componente (con componente de clase) durante el procesamiento. Asegúrese de que la página principal contenga estas etiquetas. Consulte el archivo `html.jsp` del espacio de trabajo de AEM Forms para obtener más información sobre estas etiquetas de control base.
+   >Cada componente se agrega a la etiqueta de componente (con componente de clase) durante el procesamiento. Asegúrese de que la página de inicio contenga estas etiquetas. Consulte el archivo `html.jsp` del espacio de trabajo de AEM Forms para obtener más información sobre estas etiquetas de control base.
 
 1. Para personalizar los componentes, puede ampliar las vistas existentes para el componente requerido de la siguiente manera:
 
@@ -79,7 +79,7 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
    });
    ```
 
-1. Modifique la CSS del portal para configurar el diseño, la posición y el estilo de los componentes necesarios en el portal. Por ejemplo, desea mantener el color de fondo como negro para que este portal pueda ver bien el componente userInfo. Para ello, cambie el color de fondo de la `/apps/sampleApplication/wscomponents/css/style.css` siguiente manera:
+1. Modifique la CSS del portal para configurar el diseño, la posición y el estilo de los componentes necesarios en el portal. Por ejemplo, desea mantener el color de fondo como negro para que este portal pueda realizar una vista correcta del componente userInfo. Para ello, cambie el color de fondo de la `/apps/sampleApplication/wscomponents/css/style.css` siguiente manera:
 
    ```as3
    body {
