@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de Application Manager Service JavaAPI (SOAP)
-seo-title: Inicio rápido de Application Manager Service JavaAPI (SOAP)
+title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
+seo-title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
 description: nulo
 seo-description: nulo
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Inicio rápido de JavaAPI (SOAP) del servicio Application Manager {#application-manager-service-javaapi-quick-start-soap}
 
-El inicio rápido de la API de Java (SOAP) está disponible para el servicio Application Manager.
+El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Application Manager.
 
 [Inicio rápido: Implementación de aplicaciones mediante la API de Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
@@ -29,7 +29,7 @@ El inicio rápido de la API de Java (SOAP) está disponible para el servicio App
 
 Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
-* ***Nota **: El inicio rápido de la API de Java (SOAP) ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+* ***Nota **: El Inicio rápido de la API de Java (SOAP) ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
 
 ## Inicio rápido (modo SOAP): Implementación de aplicaciones mediante la API de Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
@@ -98,7 +98,7 @@ El siguiente ejemplo de código Java importa una aplicación basada en un archiv
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -202,7 +202,7 @@ El siguiente ejemplo de código Java elimina una aplicación denominada *Encrypt
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
