@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Administración de correspondencia:Resolución de problemas {#correspondence-management-troubleshooting}
+# Administración de correspondencia: Resolución de problemas {#correspondence-management-troubleshooting}
 
 ## Errores al guardar una carta {#errors-when-saving-a-letter}
 
@@ -46,7 +46,7 @@ Al obtener la vista previa de una carta, aparece el error &quot;Error en la cart
 
 Restaure la caché de letras en la instancia de publicación siguiendo los pasos siguientes y vuelva a intentar ver la letra:
 
-1. Vaya a **`https://[server]:[port]/[contextPath]/system/console/configMgr`** e inicie sesión como administrador.
+1. Vaya a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e inicie sesión como administrador.
 1. Seleccione Configuraciones **de administración de correspondencia**.
 1. En Configuraciones **de administración de** correspondencia, deshabilite **Habilitar caché de letras** y haga clic **en Guardar.**
 1. Active **Activar caché** de letras y, a continuación, haga clic en **Guardar**.
