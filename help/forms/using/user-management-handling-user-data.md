@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,15 +27,15 @@ La administración de usuarios es un componente JEE de AEM Forms que permite a l
 
 ## Almacenes de datos y datos de usuarios {#user-data-and-data-stores}
 
-La administración de usuarios almacena datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, cualquier usuario que haya iniciado sesión al menos una vez en las aplicaciones de Forms en AEM `https://[server]:[host]/lc`, el usuario se creará en el repositorio de AEM. Por lo tanto, la administración de usuarios se almacena en los siguientes almacenes de datos:
+La administración de usuarios almacena datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, cualquier usuario que haya iniciado sesión al menos una vez en las aplicaciones de Forms en AEM `https://'[server]:[port]'lc`, el usuario se creará en el repositorio de AEM. Por lo tanto, la administración de usuarios se almacena en los siguientes almacenes de datos:
 
 * Base de datos
 * Repositorio de AEM
-* Almacenamiento de terceros como directorio LDAP
+* almacenamientos de terceros como directorio LDAP
 
 >[!NOTE]
 >
->Los datos almacenados en almacenamiento de terceros están fuera del alcance de este documento. Póngase en contacto directamente con el proveedor de terceros para administrar los datos de usuario en dichos almacenes.
+>Los datos almacenados en almacenamientos de terceros están fuera del ámbito de este documento. Póngase en contacto directamente con el proveedor de terceros para administrar los datos de usuario en dichos almacenamientos.
 
 ### Base de datos {#database}
 
@@ -86,7 +86,7 @@ La administración de usuarios almacena datos de usuario en las siguientes tabla
 
 ### Repositorio de AEM {#aem-repository}
 
-Los datos de administración de usuarios para los usuarios que al menos una vez accedieron a las aplicaciones de Forms en `https://[server]:[host]/lc` se almacenan también en el repositorio de AEM.
+Los datos de administración de usuarios para los usuarios que al menos una vez accedieron a las aplicaciones de Forms en `https://'[server]:[port]'lc` se almacenan también en el repositorio de AEM.
 
 ## Acceso y eliminación de datos de usuario {#access-and-delete-user-data}
 
@@ -170,7 +170,7 @@ Haga lo siguiente para eliminar los datos de administración de usuarios de un I
    Delete from EdcPrincipalEntity where id='<principal_id>';
    ```
 
-1. Inicie el servidor de AEM Forms.
+1. Inicio del servidor de AEM Forms.
 
 ### Repositorio de AEM {#aem-repository-1}
 
@@ -178,14 +178,14 @@ Los usuarios de JEE de Forms tienen sus datos en el repositorio de AEM si han ac
 
 #### Acceso a los datos de usuario {#access-user-data}
 
-Para ver el usuario creado en el repositorio de AEM, inicie sesión `https://[server]:[port]/lc/useradmin` con las credenciales de administrador de AEM. Tenga en cuenta que `server` y `port` en la URL son las de la instancia de creación de AEM. Aquí puede buscar usuarios con su nombre de usuario. Haga doble clic en un usuario para ver información como propiedades, permisos y grupos para el usuario. La `Path` propiedad de un usuario especifica la ruta al nodo de usuario creado en el repositorio de AEM.
+Para vista de usuarios creados en el repositorio de AEM, inicie sesión `https://'[server]:[port]'/lc/useradmin` con las credenciales de administrador de AEM. Tenga en cuenta que `server` y `port` en la URL son las de la instancia de creación de AEM. Aquí puede buscar usuarios con su nombre de usuario. Haga clic con el botón Doble en un usuario para vista de información como propiedades, permisos y grupos para el usuario. La `Path` propiedad de un usuario especifica la ruta al nodo de usuario creado en el repositorio de AEM.
 
 #### Eliminar datos de usuario {#delete-aem}
 
 Para eliminar un usuario:
 
-1. Vaya a `https://[server]:[port]/lc/useradmin` con las credenciales de administrador de AEM.
-1. Busque un usuario y haga doble clic en el nombre de usuario para abrir las propiedades del usuario. Copie la `Path` propiedad.
-1. Vaya a AEM CRX DELite en `https://[server]:[port]/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
+1. Vaya a `https://'[server]:[port]'/lc/useradmin` con las credenciales de administrador de AEM.
+1. Busque un usuario y haga clic con el botón doble en el nombre de usuario para abrir las propiedades del usuario. Copie la `Path` propiedad.
+1. Vaya a AEM CRX DELite en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
 1. Elimine la ruta y haga clic en **[!UICONTROL Guardar todo]** para eliminar de forma permanente al usuario del repositorio de AEM.
 
