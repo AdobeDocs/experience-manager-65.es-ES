@@ -11,20 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Introducción al trabajo con PDF Generator {#introduction-to-working-with-pdf-generator}
 
-PDF Generator convierte varios formatos de archivo a PDF. También convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF. Para obtener una lista de los formatos de archivo admitidos, consulte Compatibilidad con [software para PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator convierte varios formatos de archivo a PDF. También convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF. Para obtener una lista de los formatos de archivo admitidos, consulte Compatibilidad [de software con PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
 **Envío de archivos a PDF Generator para su procesamiento**
 
 Existen tres formas de enviar archivos a PDF Generator para su procesamiento:
 
 * Los administradores pueden acceder a las páginas de PDFG en la Consola de administración. (Consulte [Conversión de archivos con PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
-* Los usuarios pueden acceder a las páginas del usuario final del PDFG iniciando sesión en `http(s)://[server]:[port]/pdfgui.` Desde allí pueden acceder a las páginas de la impresora de red PDFG, Crear archivos PDF, HTML a PDF, Exportar archivos PDF y Optimizar archivos PDF.
+* Los usuarios pueden acceder a las páginas del usuario final del PDFG iniciando sesión en `http(s)://'[server]:[port]'/pdfgui.` Desde allí pueden acceder a las páginas de la impresora de red PDFG, Crear archivos PDF, HTML a PDF, Exportar archivos PDF y Optimizar archivos PDF.
 * Puede configurar los extremos de los servicios. (Consulte <!--Fix broken link to Managing Endpoints --> y [Generar recomendaciones](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)de servicio PDF). [](/help/forms/using/admin-help/overview-5.md#main-pars-header)
 
