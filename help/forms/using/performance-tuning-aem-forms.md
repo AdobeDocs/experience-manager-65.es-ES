@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,8 +23,8 @@ En este artículo se analizan las estrategias y prácticas recomendadas que pued
 
 Puede configurar y controlar la estrategia de almacenamiento en caché para AEM Forms mediante el componente Configuración **de formularios** móviles en la consola de configuración web de AEM en:
 
-* (AEM Forms en OSGi) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* (AEM Forms en OSGi) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 Las opciones disponibles para el almacenamiento en caché son las siguientes:
 
@@ -34,7 +34,7 @@ Las opciones disponibles para el almacenamiento en caché son las siguientes:
 
 Es posible que la configuración de caché predeterminada para AEM Forms no sea lo suficientemente buena como para lograr un rendimiento óptimo. Por lo tanto, se recomienda utilizar la siguiente configuración:
 
-* **Estrategia** de caché:Agresivo
+* **Estrategia** de caché: Agresivo
 * **Tamaño** de caché (en términos de número de formularios): Como requerido
 * **Tamaño** máximo del objeto: Como requerido
 
@@ -88,14 +88,14 @@ Apache puede comunicarse con CRX mediante el protocolo HTTP. Las configuraciones
    >Para Linux, el valor predeterminado `APACHE_HOME` es `/etc/httpd/`.
 
 1. Configure el proxy en el puerto 4502 de crx.
-Agregue la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
+Añada la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Habilite Compresión. Agregue la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
+1. Habilite Compresión. Añada la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
 
    **Para formularios HTML5**
 
@@ -131,7 +131,7 @@ Agregue la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` 
    </Location>
    ```
 
-   Para acceder al servidor crx, utilice `https://[server]:80`, donde `server` es el nombre del servidor en el que se ejecuta el servidor Apache.
+   Para acceder al servidor crx, utilice `https://'server':80`, donde `server` es el nombre del servidor en el que se ejecuta el servidor Apache.
 
 ## Uso de un antivirus en un servidor que ejecuta AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -149,13 +149,13 @@ Para mejorar el rendimiento, puede ordenar al software antivirus que excluya los
 
    * (Jleader) Directorio de instalación de [AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (Websphere) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+   * (Websphere) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(Solo AEM Forms en JEE)** Directorio Global Document Storage (GDS). La ubicación predeterminada es:
+* **(Solo AEM Forms en JEE)** Directorio de Almacenamiento de Documento global (GDS). La ubicación predeterminada es:
 
-   * (JBoss) [appserver raíz]/server/[server]/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver raíz]/installApps/adobe/[server]/DocumentStorage
+   * (JBoss) [appserver raíz]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+   * (WebSphere) [appserver raíz]/installApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(Solo AEM Forms en JEE)** Registros de servidor y directorio temporal de AEM Forms. La ubicación predeterminada es:
 
@@ -164,7 +164,7 @@ Para mejorar el rendimiento, puede ordenar al software antivirus que excluya los
 
 >[!NOTE]
 >
->* Si está utilizando una ubicación diferente para GDS y un directorio temporal, abra AdminUI en `https://[server]:[port]/adminui`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones** principales para confirmar la ubicación en uso.
+>* Si está utilizando una ubicación diferente para GDS y un directorio temporal, abra AdminUI en `https://'[server]:[port]'/adminui`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones** principales para confirmar la ubicación en uso.
 
 * Si el servidor de AEM Forms funciona lentamente incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable Java (java.exe).
 
