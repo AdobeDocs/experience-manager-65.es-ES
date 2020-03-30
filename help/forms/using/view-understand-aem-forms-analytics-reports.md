@@ -1,6 +1,6 @@
 ---
-title: Visualización y comprensión de los informes de análisis de AEM Forms
-seo-title: Visualización y comprensión de los informes de análisis de AEM Forms
+title: Vista y comprensión de los informes de análisis de AEM Forms
+seo-title: Vista y comprensión de los informes de análisis de AEM Forms
 description: AEM Forms se integra con Adobe Analytics y le proporciona un resumen y análisis detallado de los formularios adaptables publicados.
 seo-description: AEM Forms se integra con Adobe Analytics y le proporciona un resumen y análisis detallado de los formularios adaptables publicados.
 uuid: b15ba5f3-aea7-40f5-893e-aaf3834cbc33
@@ -10,14 +10,14 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Visualización y comprensión de los informes de análisis de AEM Forms {#view-and-understand-aem-forms-analytics-reports}
+# Vista y comprensión de los informes de análisis de AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms se integra con Adobe Analytics, que le permite capturar y rastrear métricas de rendimiento para los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
+Adobe Experience Manager Forms se integra con Adobe Analytics, que le permite capturar y rastrear métricas de rendimiento para los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas en base a los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
 ## Configuración de análisis {#setting-up-analytics}
 
@@ -25,11 +25,11 @@ La función de análisis de AEM Forms está disponible como parte del paquete de
 
 Además del paquete de complemento, necesita una cuenta de Adobe Analytics. Para obtener información sobre la solución, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Una vez que tenga el paquete de complementos de AEM Forms y una cuenta de Adobe Analytics, integre la cuenta de Adobe Analytics con AEM Forms y habilite el seguimiento de los formularios o documentos como se describe en [Configuración de análisis e informes](../../forms/using/configure-analytics-forms-documents.md).
+Una vez que tenga el paquete de complementos de AEM Forms y una cuenta de Adobe Analytics, integre la cuenta de Adobe Analytics con AEM Forms y habilite el seguimiento de sus formularios o documentos como se describe en [Configuración de análisis e informes](../../forms/using/configure-analytics-forms-documents.md).
 
 ### Cómo se registra la información de interacción del usuario {#how-user-interaction-information-is-recorded}
 
-Cuando un usuario interactúa con el formulario, las interacciones se registran y envían al servidor de Analytics. La siguiente lista indica las llamadas al servidor para diversas actividades de usuario:
+Cuando un usuario interactúa con el formulario, las interacciones se registran y envían al servidor de Analytics. La siguiente lista indica las llamadas al servidor para varias actividades de usuario:
 
 * 2 llamadas por campo por visita
 * 1 para la visita al panel
@@ -47,24 +47,24 @@ Cuando un usuario interactúa con el formulario, las interacciones se registran 
 
 ### Visualización de informes de análisis {#summary-report}
 
-Siga estos pasos para ver los informes de análisis:
+Realice los siguientes pasos para los informes de análisis de vista:
 
-1. Inicie sesión en el portal de AEM en `https://[hostname]:[port]`
-1. Haga clic en **Formularios > Formularios y documentos**.
-1. Seleccione el formulario para el que desea ver los informes de análisis.
+1. Inicie sesión en el portal de AEM en `https://[hostname]:'port'`
+1. Haga clic en **Formularios > Formularios y Documentos**.
+1. Seleccione el formulario para el que desea realizar la vista de los informes de análisis.
 1. Seleccione **Más > Informes** de Analytics.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**** A. Informe de Analytics, comando
+**A.** Informe de Analytics, comando
 
 AEM Forms muestra informes de análisis para el formulario y para cada panel del formulario, como se muestra a continuación.
 
 ![Informe de resumen de un formulario adaptable](assets/analyticsdashboard_callout.png)
 
-************ A. Conversiones **B. Resumen a nivel de formulario** C.**Resumen a nivel de panel** D. Exploradores de visitantes: filtro **E. SO de visitantes: filtro** F. Idioma de los visitantes: filtro
+**A.** Conversiones **B.** Resumen a nivel de formulario **C.** Resumen a nivel de panel **D.** Exploradores de visitantes - filtro **E.** SO de visitantes - filtro **F.** Idioma de los visitantes: filtrar
 
-De forma predeterminada, se muestra el informe de análisis de los últimos siete días. Puede ver los informes de los últimos 15 días, el último mes, etc., o especificar un intervalo de fechas.
+De forma predeterminada, se muestra el informe de análisis de los últimos siete días. Puede vista de informes de los últimos 15 días, de un último mes, etc., o especificar un intervalo de fechas.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ La sección de resumen de nivel de formulario proporciona una visión detallada 
 * **Borradores**: Número de veces que el formulario se ha guardado como borrador
 * **Envíos**: Número de veces que se ha enviado el formulario
 * **Anular**: Número de veces que los usuarios empezaron a rellenar el formulario y luego se fueron sin cumplimentar el formulario
-* **Visitantes**&#x200B;únicos: Número de veces que los visitantes únicos representan el formulario. Para obtener más información sobre los visitantes únicos, consulte Visitantes [únicos, Visitas y Comportamiento](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)del cliente.
+* **Visitantes**&#x200B;únicos: Número de veces que el formulario se &quot;procesa mediante visitantes únicos. Para obtener más información sobre visitantes únicos, consulte Visitantes [únicos, Visitas y comportamiento](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)del cliente.
 
 ![Informe de análisis de resumen de nivel de formulario ampliado](assets/analytics-report.png)
 
@@ -105,7 +105,7 @@ La sección de resumen de nivel de panel proporciona la siguiente información s
 
 #### Informe detallado del panel {#detailed-panel-report}
 
-También puede ver los detalles de cada panel haciendo clic en el nombre de un panel en el informe de panel.
+También puede hacer clic en el nombre de un panel en Informe de panel para ver los detalles de vista de cada panel.
 
 ![Informe detallado del panel](assets/panel-report-detailed.png)
 
@@ -121,13 +121,13 @@ Puede desplazarse entre los paneles si hay varios paneles disponibles.
 
 ### Filtros: Explorador, sistema operativo e idioma {#filters-browser-os-and-language}
 
-Las tablas Distribución del explorador, Distribución del sistema operativo y Distribución de idioma muestran las representaciones, los visitantes y los envíos según los exploradores, el sistema operativo y el idioma de los usuarios del formulario. De forma predeterminada, estas tablas muestran un máximo de cinco entradas. Puede hacer clic en Mostrar más para mostrar más entradas y hacer clic en Mostrar menos para volver a las cinco entradas normales o menos.
+Las tablas Distribución del explorador, Distribución del sistema operativo y Distribución de idioma muestran las representaciones, visitantes y envíos según los exploradores, el sistema operativo y el idioma de los usuarios del formulario. De forma predeterminada, estas tablas muestran un máximo de cinco entradas. Puede hacer clic en Mostrar más para mostrar más entradas y hacer clic en Mostrar menos para volver a las cinco entradas normales o menos.
 
-Para filtrar más los datos de análisis, puede hacer clic en una entrada de cualquiera de las tablas. Por ejemplo, si hace clic en Google Chrome en la tabla de distribución del explorador, el informe se procesa nuevamente con datos relevantes para el explorador Google Chrome de la siguiente manera:
+Para filtrar más los datos de análisis, puede hacer clic en una entrada de cualquiera de las tablas. Por ejemplo: si hace clic en Google Chrome en la tabla de distribución del explorador, el informe se procesa nuevamente con datos relevantes para el explorador Google Chrome de la siguiente manera:
 
 ![Filtro aplicado al informe de Analytics - Google Chrome ](assets/filter-1.png)
 
-Si ve el informe del panel después de aplicar un filtro, los datos del informe del panel también se muestran según el filtro aplicado.
+Si vista el informe del panel después de aplicar un filtro, los datos del informe del panel también se muestran según el filtro aplicado.
 
 Una vez aplicado el filtro:
 
