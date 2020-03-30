@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,7 +24,7 @@ Para obtener información sobre cómo habilitar el modo de copia de seguridad se
 
 >[!NOTE]
 >
->Los archivos del directorio temporal y los documentos de larga duración del directorio raíz global de almacenamiento de documentos (GDS) pueden contener información confidencial del usuario, como información que requiere credenciales especiales cuando se accede mediante las API o las interfaces de usuario. Por lo tanto, es importante que este directorio esté asegurado correctamente utilizando los métodos disponibles para el sistema operativo. Se recomienda que solo la cuenta del sistema operativo que se utiliza para ejecutar el servidor de aplicaciones tenga acceso de lectura y escritura a este directorio.
+>Los archivos del directorio temporal y los documentos de larga duración del directorio raíz del almacenamiento de documento global (GDS) pueden contener información confidencial del usuario, como información que requiere credenciales especiales cuando se accede mediante API o interfaces de usuario. Por lo tanto, es importante que este directorio esté asegurado correctamente utilizando los métodos disponibles para el sistema operativo. Se recomienda que solo la cuenta del sistema operativo que se utiliza para ejecutar el servidor de aplicaciones tenga acceso de lectura y escritura a este directorio.
 
 
 1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Configuración del sistema principal > Configuraciones]**.
@@ -37,12 +37,12 @@ Para obtener información sobre cómo habilitar el modo de copia de seguridad se
 
 ***nota **: Asegúrese de que el directorio temporal está en el sistema de archivos local. Los formularios AEM no admiten un directorio temporal en una ubicación remota.*
 
-**Directorio** raíz de almacenamiento de documentos global El directorio raíz de almacenamiento de documentos global (GDS) se utiliza para los siguientes fines:
+**Directorio** raíz del almacenamiento de documento global El directorio raíz del almacenamiento de documento global (GDS) se utiliza para los siguientes fines:
 
-* Almacenamiento de documentos de larga duración. Los documentos de larga duración no tienen un tiempo de caducidad y persisten hasta que se eliminan (por ejemplo, los archivos PDF utilizados en un proceso de flujo de trabajo). Los documentos de larga duración son una parte crítica del estado general del sistema. Si algunos o todos estos documentos se pierden o se dañan, el servidor de formularios puede volverse inestable. Por lo tanto, es importante que este directorio se almacene en un dispositivo RAID.
+* Conservar documentos de larga vida. Los documentos de larga duración no tienen un tiempo de caducidad y persisten hasta que se eliminan (por ejemplo, los archivos PDF utilizados en un proceso de flujo de trabajo). Los documentos de larga duración son una parte crítica del estado general del sistema. Si algunos o todos estos documentos se pierden o se dañan, el servidor de formularios puede volverse inestable. Por lo tanto, es importante que este directorio se almacene en un dispositivo RAID.
 * Almacenamiento de documentos temporales necesarios durante el procesamiento.
 
-   ***Nota **: También puede activar el almacenamiento de documentos en la base de datos de formularios de AEM. Sin embargo, el rendimiento del sistema es mejor cuando se utiliza el GDS.*
+   ***Nota **: También puede activar el almacenamiento de documento en la base de datos de formularios de AEM. Sin embargo, el rendimiento del sistema es mejor cuando se utiliza el GDS.*
 
 * Transferencia de documentos entre nodos de un clúster. Si ejecuta formularios AEM en un entorno agrupado, este directorio debe ser accesible desde todos los nodos del clúster.
 * Recibir parámetros entrantes de llamadas de API remotas.
@@ -50,8 +50,8 @@ Para obtener información sobre cómo habilitar el modo de copia de seguridad se
 Si no especifica un directorio raíz GDS, el directorio se establece de forma predeterminada en un directorio de servidor de aplicaciones:
 
 * `[JBOSS_HOME]/server/<server>/svcnative/DocumentStorage`
-* `[WEBSPHERE_HOME]/installedApps/adobe/[server]/DocumentStorage`
-* `[WEBLOGIC_HOME]/user_projects/<domain>/[server]/adobe/AEMformsserver/DocumentStorage`
+* `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
+* `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
 ***Nota **: El cambio del valor del directorio raíz GDS debe realizarse con especial cuidado. El directorio GDS se utiliza para almacenar tanto archivos de larga duración utilizados en un proceso como componentes de producto de formularios AEM críticos. Cambiar la ubicación del directorio GDS es un cambio importante del sistema. Si se configura incorrectamente la ubicación del directorio GDS, los formularios AEM no estarán operativos y es posible que se requiera una reinstalación completa de los formularios AEM. Si especifica una nueva ubicación para el directorio GDS, el servidor de aplicaciones debe cerrarse y los datos migrados antes de poder reiniciar el servidor. El administrador del sistema debe mover todos los archivos de la ubicación antigua a la nueva ubicación, pero conservar la estructura de directorio interno.*
 
@@ -63,7 +63,7 @@ Para obtener información adicional sobre el directorio GDS, consulte [Preparaci
 
 **Ubicación del directorio** Fuentes del cliente Escriba la ruta a un directorio que contenga fuentes adicionales que desee utilizar.
 
-***nota **:Las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes del cliente, asegúrese de reiniciar el sistema en el que están instalados los formularios AEM.*
+***nota **: Las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes del cliente, asegúrese de reiniciar el sistema en el que están instalados los formularios AEM.*
 
 **Ubicación del directorio** Fuentes del sistema Escriba la ruta al directorio de fuentes que proporcionó el sistema operativo. Se pueden agregar varios directorios, separados por punto y coma **;**.
 
@@ -73,15 +73,15 @@ El archivo de configuración de Data Services permite personalizar la configurac
 
 Esta configuración está vacía de forma predeterminada.
 
-**Tamaño en línea máximo del documento predeterminado (bytes)** El número máximo de bytes guardados en memoria al pasar documentos entre varios componentes de formularios AEM. Utilice esta configuración para ajustar el rendimiento. Los documentos que son menores que este número se almacenan en la memoria y se conservan en la base de datos. Los documentos que superen este máximo se almacenarán en el disco duro.
+**Tamaño de línea máximo de documento predeterminado (bytes)** El número máximo de bytes guardados en memoria al pasar documentos entre varios componentes de formularios AEM. Utilice esta configuración para ajustar el rendimiento. Los Documentos que son menores que este número se almacenan en la memoria y se conservan en la base de datos. Los Documentos que excedan este máximo se almacenan en el disco duro.
 
 Esta configuración es obligatoria. El valor predeterminado es 65536 bytes.
 
-**Tiempo de espera predeterminado de eliminación de documentos (segundos)** La cantidad máxima de tiempo, en segundos, durante el cual se considera activo un documento que se pasa entre varios componentes de formularios AEM. Una vez transcurrido este tiempo, los archivos que se utilizan para almacenar este documento están sujetos a eliminación. Utilice esta configuración para controlar el uso del espacio en disco.
+**Tiempo de espera de eliminación de documentos predeterminado (segundos)** La cantidad máxima de tiempo, en segundos, durante el cual se considera activo un documento que se pasa entre varios componentes de formularios AEM. Una vez transcurrido este tiempo, los archivos que se utilizan para almacenar este documento están sujetos a eliminación. Utilice esta configuración para controlar el uso del espacio en disco.
 
 Esta configuración es obligatoria. El valor predeterminado es 600 segundos.
 
-**Intervalo de barrido del documento (segundos)** La cantidad de tiempo, en segundos, entre los intentos de eliminar archivos que ya no son necesarios y se utilizaron para pasar datos del documento entre servicios.
+**Intervalo de barrido de Documento (segundos)** La cantidad de tiempo, en segundos, entre los intentos de eliminar archivos que ya no son necesarios y se utilizaron para pasar datos de documento entre servicios.
 
 Esta configuración es obligatoria. El valor predeterminado es 30 segundos.
 
@@ -89,7 +89,7 @@ Esta configuración es obligatoria. El valor predeterminado es 30 segundos.
 
 El modo FIPS no admite algoritmos de codificación que se utilizan en versiones de Adobe Acrobat® anteriores a la 7.0. Si el modo FIPS está activado y utiliza el servicio Cifrado para cifrar el PDF mediante una contraseña con un nivel de compatibilidad establecido en Acrobat 5, el intento de codificación generará un error.
 
-En general, cuando FIPS está activado, el servicio Ensamblador no aplicará cifrado de contraseña a ningún documento. Si se intenta esto, se genera una excepción FIPSModeException que indica que &quot;No se permite el cifrado de contraseña en el modo FIPS&quot;. Además, el elemento PDFsFromBookmarks de la descripción del documento XML (DDX) no se admite en el modo FIPS cuando el documento base está cifrado con contraseña.
+En general, cuando FIPS está habilitado, el servicio Ensamblador no aplicará cifrado de contraseña a ningún documento. Si se intenta esto, se genera una excepción FIPSModeException que indica que &quot;No se permite el cifrado de contraseña en el modo FIPS&quot;. Además, el elemento PDFsFromBookmarks de la descripción de Documento (DDX) no se admite en el modo FIPS cuando el documento base está cifrado con contraseña.
 
 ***Nota **: El software de formularios AEM no valida el código para garantizar la compatibilidad con FIPS. Proporciona un modo de operación FIPS para que los algoritmos aprobados por FIPS se utilicen para servicios criptográficos de las bibliotecas aprobadas por FIPS (RSA).*
 
@@ -97,7 +97,7 @@ En general, cuando FIPS está activado, el servicio Ensamblador no aplicará cif
 
 Active esta opción en entornos de desarrollo, donde los desarrolladores utilizan la generación WSDL para crear sus aplicaciones cliente. Puede desactivar la generación WSDL en un entorno de producción para evitar exponer los detalles internos de un servicio.
 
-**Habilitar el almacenamiento de documentos en la base de datos** Seleccione esta opción para almacenar documentos de larga duración en la base de datos de formularios de AEM. Al habilitar esta opción no se elimina la necesidad de un directorio GDS. Sin embargo, si elige esta opción, se simplificarán las copias de seguridad de formularios AEM. Si solo utiliza el GDS, una copia de seguridad implica poner el sistema de formularios AEMs en modo de copia de seguridad y, a continuación, completar las copias de seguridad de la base de datos y del GDS. Si selecciona la opción de base de datos, la copia de seguridad implica completar la copia de seguridad de la base de datos para una nueva instalación o completar la copia de seguridad de la base de datos y la única copia de seguridad del GDS para una actualización. Es posible que se requiera una administración adicional de la base de datos para depurar trabajos y datos, en comparación con una configuración de GDS solamente. (Consulte Opciones de copia de seguridad cuando se utiliza la base de datos para el almacenamiento de documentos).
+**Activar almacenamiento de documento en la base de datos** Seleccione esta opción para almacenar documentos de larga duración en la base de datos de formularios de AEM. Al habilitar esta opción no se elimina la necesidad de un directorio GDS. Sin embargo, si elige esta opción, se simplificarán las copias de seguridad de formularios AEM. Si solo utiliza el GDS, una copia de seguridad implica poner el sistema de formularios AEMs en modo de copia de seguridad y, a continuación, completar las copias de seguridad de la base de datos y del GDS. Si selecciona la opción de base de datos, la copia de seguridad implica completar la copia de seguridad de la base de datos para una nueva instalación o completar la copia de seguridad de la base de datos y la única copia de seguridad del GDS para una actualización. Es posible que se requiera una administración adicional de la base de datos para depurar trabajos y datos, en comparación con una configuración de GDS solamente. (Consulte Opciones de copia de seguridad cuando se utiliza la base de datos para el almacenamiento de documento).
 
 **Activar estadística** de invocación de DSC Cuando se selecciona esta opción, los formularios de AEM realizan un seguimiento de las estadísticas de invocación, como el número de invocaciones, la cantidad de tiempo que se tarda en invocar y el número de errores en las invocaciones. Esta información se almacena en un archivo frigorífico JMX para que pueda utilizar Java™ JConsole o software de terceros para ver las estadísticas. Si no desea ver estas estadísticas, anule la selección de esta opción para mejorar el rendimiento de los formularios AEM.
 
@@ -105,6 +105,6 @@ Active esta opción en entornos de desarrollo, donde los desarrolladores utiliza
 
 **Permitir solicitud** RDS no segura Cuando se selecciona esta opción, las solicitudes RDS no necesitan utilizar https. De forma predeterminada, esta opción no está seleccionada y todas las comunicaciones a los servicios de datos deben ser solicitudes https.
 
-**** Permitir la carga de documentos no seguros desde aplicaciones de Flex: El servlet de carga de archivos utilizado para cargar documentos de aplicaciones Adobe Flex® en formularios AEM requiere que los usuarios se autentiquen y autoricen antes de poder cargar documentos. Se debe asignar al usuario la función de usuario de la aplicación de carga de documento u otra función que incluya el permiso de carga de documento. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de formularios AEM. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo o para la compatibilidad con versiones anteriores de formularios AEM. De forma predeterminada, está opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de formularios AEM mediante AEM Forms Remoting&quot; en Programación con formularios AEM.
+**Permitir la carga de documento no segura desde aplicaciones de Flex:** El servlet de carga de archivos utilizado para cargar documentos de aplicaciones Adobe Flex® en formularios AEM requiere que los usuarios se autentiquen y autoricen antes de poder cargar documentos. Se debe asignar al usuario la función de usuario de la aplicación de carga de Documento u otra función que incluya el permiso de carga de Documento. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de formularios AEM. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo o para la compatibilidad con versiones anteriores de formularios AEM. De forma predeterminada, está opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de formularios AEM mediante AEM Forms Remoting&quot; en Programación con formularios AEM.
 
-**** Permitir la carga de documentos no seguros desde aplicaciones de Java SDK: Las cargas HTTP de DocumentManager deben estar seguras. De forma predeterminada, las cargas HTTP requieren que los usuarios se autentiquen y autoricen antes de poder cargar documentos. Se debe asignar al usuario la función de usuario de servicios u otra función que contenga el permiso Invocar servicio. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de formularios. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo, para la compatibilidad con versiones anteriores de formularios AEM o en función de la configuración del cortafuegos. De forma predeterminada, está opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de formularios AEM mediante la API de Java&quot; en Programación con formularios AEM.
+**Permitir la carga de documento no segura desde las aplicaciones de Java SDK:** Las cargas HTTP de DocumentManager deben estar seguras. De forma predeterminada, las cargas HTTP requieren que los usuarios estén autenticados y autorizados para poder cargar documentos. Se debe asignar al usuario la función de usuario de servicios u otra función que contenga el permiso Invocar servicio. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de formularios. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo, para la compatibilidad con versiones anteriores de formularios AEM o en función de la configuración del cortafuegos. De forma predeterminada, está opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de formularios AEM mediante la API de Java&quot; en Programación con formularios AEM.
