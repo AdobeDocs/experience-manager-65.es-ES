@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Configuración de una impresora de red PDFG (solo Windows) {#setting-up-a-pdfg-network-printer-windows-only}
 
-La impresora de red PDFG permite a los usuarios generar un documento PDF desde cualquier aplicación que admita la impresión. Después de que un usuario instale la impresora de red PDFG, aparece una nueva impresora denominada generador ** PDF en la sección Impresoras del Panel de control de Windows. Si ya existe una impresora con el mismo nombre, se solicita al usuario que proporcione otro nombre.
+La impresora de red PDFG permite a los usuarios generar un documento PDF desde cualquier aplicación compatible con la impresión. Después de que un usuario instale la impresora de red PDFG, aparece una nueva impresora denominada generador ** PDF en la sección Impresoras del Panel de control de Windows. Si ya existe una impresora con el mismo nombre, se solicita al usuario que proporcione otro nombre.
 
 La impresión en esta impresora desde cualquier aplicación envía el documento (en formato PostScript) a PDF Generator, que convierte el archivo PostScript a PDF. Según la configuración de PDF Generator, envía el documento PDF al usuario como datos adjuntos a un mensaje de correo electrónico, reenvía el documento PDF a un proceso o servicio de formularios AEM especificado o realiza ambas acciones.
 
@@ -60,7 +60,7 @@ Los usuarios que tengan la función de administrador PDFG o de usuario PDFG pued
 
 1. (Administradores de PDFG) En la consola de administración, haga clic en Servicios > Generador de PDF > Impresora de red PDFG.
 
-   (Usuarios de PDFG) Vaya a `http(s)://[host]:[port]/pdfgui` y haga clic en el vínculo en Instalación de impresora de red PDFG.
+   (Usuarios de PDFG) Vaya a `http(s)://[host]:'port'/pdfgui` y haga clic en el vínculo en Instalación de impresora de red PDFG.
 
 1. En Instalación de impresora de red PDFG, haga clic en el vínculo. Cuando se le solicite información sobre la cuenta de usuario, especifique el nombre de usuario y la contraseña que utilizó en el paso 1 para iniciar sesión. Aparece un mensaje que indica que la impresora se ha instalado correctamente.
 
