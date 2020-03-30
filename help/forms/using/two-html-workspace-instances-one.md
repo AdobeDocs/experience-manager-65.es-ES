@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,12 +18,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 La instalación y configuración predeterminadas de AEM Forms permiten que solo haya un espacio de trabajo de AEM Forms disponible en el servidor. Sin embargo, es posible que tenga que alojar dos instancias diferentes del espacio de trabajo de AEM Forms en un único servidor de AEM Forms. Las dos instancias son accesibles mediante distintas direcciones URL.
 
-Los administradores de AEM Forms personalizan el espacio de trabajo para crear dos direcciones URL diferentes y hacer que dos espacios de trabajo estén disponibles en el mismo servidor. En este artículo de personalización, suponemos que los dos espacios de trabajo son accesibles en `https://[server]:[port]/lc/ws` y `https://[server]:[port]:/lc/ws2`.
+Los administradores de AEM Forms personalizan el espacio de trabajo para crear dos direcciones URL diferentes y hacer que dos espacios de trabajo estén disponibles en el mismo servidor. En este artículo de personalización, suponemos que los dos espacios de trabajo son accesibles en `https://'[server]:[port]'/lc/ws` y `https://'[server]:[port]':/lc/ws2`.
 
 Siga estos pasos para configurar el espacio de trabajo de AEM Forms.
 
 1. Instale el paquete dev del espacio de trabajo de AEM Forms en su servidor. Consulte [dev package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)para obtener instrucciones para crearlo.
-1. Inicie sesión en CRXDE Lite como administrador, accediendo a `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Inicie sesión en CRXDE Lite como administrador, accediendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copie el nodo ws en /content y péguelo en /content. Cambie el nombre del nodo a ws2. Haga clic en **[!UICONTROL Guardar todo]**. En las propiedades de este nodo, cambie el valor de `sling:resourceType` a ws2. Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Copie las carpetas de /libs y péguelas en /apps. Cambie el nombre de la carpeta a ws2. Haga clic en **[!UICONTROL Guardar todo]**.
