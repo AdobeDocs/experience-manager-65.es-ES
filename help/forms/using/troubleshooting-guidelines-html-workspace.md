@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,12 +25,12 @@ Después de instalar el parche, abra el espacio de trabajo de AEM Forms. Si apar
 
 Durante la instalación del paquete, si se produce un error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, lleve a cabo los siguientes pasos:
 
-1. Inicie sesión en CRX DE lite. La dirección URL predeterminada es `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Inicie sesión en CRX DE lite. La dirección URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimine el nodo siguiente:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Vaya al Administrador de paquetes. La dirección URL predeterminada es `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Vaya al Administrador de paquetes. La dirección URL predeterminada es `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Busque e instale el `adobe-lc-workspace-pkg-[version].zip` paquete.
 1. Reinicie el servidor de aplicaciones.
 
@@ -146,7 +146,7 @@ En el espacio de trabajo de AEM Forms:
 * AVISAR
 * INFORMACIÓN
 * DEPURACIONES
-*  TRACE
+* TRACE
 * DESACTIVADO
 
 ## Depuración de información para navegadores {#debugging-information-for-browsers}
@@ -155,21 +155,21 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 
 * **Depuración en IE**: Para depurar el espacio de trabajo de AEM Forms en IE, consulte: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I.Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **Depuración en Firefox**: Hay varios complementos disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
+* **Depuración en Firefox**: Hay varios Añadas disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Preguntas más frecuentes {#faqs}
 
 1. El formulario PDF no se procesa ni se envía en Google Chrome.
 
    1. Instale el complemento Adobe® Reader®.
-   1. En Chrome, abra chrome://plugins para ver los complementos disponibles.
+   1. En Chrome, abra chrome://plugins para vista de los complementos disponibles.
    1. Desactive el complemento Chrome PDF Viewer y habilite el complemento Adobe Reader.
 
 1. El formulario SWF o la guía no se procesan en Google Chrome.
 
-   1. En Chrome, abra chrome://plugins para ver los complementos disponibles.
+   1. En Chrome, abra chrome://plugins para vista de los complementos disponibles.
    1. Consulte los detalles del complemento Adobe Flash® Player.
    1. Desactive PepperFlash en el complemento Adobe Flash Player.
 
@@ -183,7 +183,7 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 
 1. Los datos adjuntos no se muestran cuando se hace clic en ellos.
 
-   Para ver los archivos adjuntos, active las ventanas emergentes en el explorador.
+   Para vista de datos adjuntos, active las ventanas emergentes en el explorador.
 
 1. Un usuario ha iniciado sesión en una aplicación de formularios. Si el usuario intenta iniciar sesión en el espacio de trabajo, es posible que no se cargue si no tiene permisos de espacio de trabajo.
 
