@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,13 +31,13 @@ Puede personalizar para cambiar lo siguiente en la configuración de fuente:
 Para ello, debe:
 
 1. [Personalice las fuentes editando el archivo tbxeditor-config.xml en CRX](#customizefonts)
-1. [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts)
+1. [Añadir fuentes personalizadas al equipo cliente](#addcustomfonts)
 
 ## Personalice las fuentes editando el archivo tbxeditor-config.xml en CRX {#customizefonts}
 
 Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo siguiente:
 
-1. Vaya a `https://[server]:[port]/[ContextPath]/crx/de` e inicie sesión como administrador.
+1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta denominada config con una ruta/estructura similar a la carpeta de configuración, que se encuentra en libs/fd/cm/config, siguiendo los pasos siguientes:
 
    1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
@@ -48,11 +48,11 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/config
+      **Ruta:** /libs/fd/cm/config
 
-      **** Ubicación: /apps/
+      **Ubicación:** /apps/
 
-      **** Coincidir tipos de nodo: Seleccionado
+      **Coincidir tipos de nodo:** Seleccionado
 
       ![Nodo Overlay](assets/2.png)
 
@@ -71,7 +71,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
 1. Abra el archivo tbxeditor-config.xml en apps/fd/cm/config y, a continuación, realice los cambios necesarios.
 
-   1. Haga doble clic en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abre el archivo.
+   1. Haga clic con el botón Doble en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abre el archivo.
 
       ```xml
       <editorConfig>
@@ -160,18 +160,18 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
    1. Realice los cambios necesarios en el archivo para cambiar lo siguiente en la configuración de fuente:
 
-      * Agregar o quitar familia y tamaño de fuente
+      * Añadir o quitar la familia y el tamaño de fuente
       * Propiedades como altura y espaciado entre letras
       * Valores predeterminados de familia y tamaño de fuente, altura, espaciado entre letras y formato de fecha
       * Sangrías de viñeta
-      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el ordenador cliente para acceder a la personalización de fuentes y trabajar con ella. Para obtener más información, consulte [Adición de fuentes personalizadas al equipo](#addcustomfonts)cliente.
+      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el ordenador cliente para acceder a la personalización de fuentes y trabajar con ella. Para obtener más información, consulte [Añadir fuentes personalizadas al equipo](#addcustomfonts)cliente.
 
       También puede cambiar los valores predeterminados para varios aspectos del texto y, al eliminar las entradas, quitar las fuentes del editor de texto.
 
    1. Haga clic en **Guardar todo**.
 
 
-## Agregar fuentes personalizadas al equipo cliente {#addcustomfonts}
+## Añadir fuentes personalizadas al equipo cliente {#addcustomfonts}
 
 Al acceder a una fuente en el editor de texto de Correspondence Management, debe estar presente en el ordenador cliente que está utilizando para acceder a Correspondence Management. Para poder usar una fuente personalizada en el editor de texto, primero debe instalar la misma en el ordenador cliente.
 
