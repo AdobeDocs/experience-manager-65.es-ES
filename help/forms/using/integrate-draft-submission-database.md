@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,14 +18,14 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 ## Información general de muestra {#sample-overview}
 
-Los borradores y el componente de envíos del portal de AEM Forms permiten a los usuarios guardar los formularios como borradores y enviarlos posteriormente desde cualquier dispositivo. Además, los usuarios pueden ver los formularios enviados en el portal. Para habilitar esta funcionalidad, AEM Forms proporciona servicios de datos y metadatos para almacenar los datos rellenados por un usuario en el formulario y los metadatos del formulario asociados a borradores y formularios enviados. De forma predeterminada, estos datos se almacenan en el repositorio de CRX. Sin embargo, como los usuarios interactúan con los formularios a través de la instancia de publicación de AEM, que generalmente está fuera del servidor de seguridad de la empresa, es posible que las organizaciones deseen personalizar el almacenamiento de datos para que sea más seguro y fiable.
+Los borradores y el componente de envíos del portal de AEM Forms permiten a los usuarios guardar los formularios como borradores y enviarlos posteriormente desde cualquier dispositivo. Además, los usuarios pueden vista los formularios enviados en el portal. Para habilitar esta funcionalidad, AEM Forms proporciona servicios de datos y metadatos para almacenar los datos rellenados por un usuario en el formulario y los metadatos del formulario asociados a borradores y formularios enviados. De forma predeterminada, estos datos se almacenan en el repositorio de CRX. Sin embargo, como los usuarios interactúan con los formularios a través de la instancia de publicación de AEM, que generalmente está fuera del servidor de seguridad de la empresa, es posible que las organizaciones deseen personalizar el almacenamiento de datos para que sea más seguro y fiable.
 
-El ejemplo, analizado en este documento, es una implementación de referencia de servicios personalizados de metadatos y datos para integrar borradores y componentes de envíos con una base de datos. La base de datos utilizada en la implementación de muestra es **MySQL 5.6.24**. Sin embargo, puede integrar el componente de borradores y envíos con cualquier base de datos que desee.
+La muestra, analizada en este documento, es una implementación de referencia de servicios personalizados de metadatos y datos para integrar borradores y componentes de envíos con una base de datos. La base de datos utilizada en la implementación de muestra es **MySQL 5.6.24**. Sin embargo, puede integrar el componente de borradores y envíos con cualquier base de datos que desee.
 
 >[!NOTE]
 >
->* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos adecuadamente por su sistema de bases de datos.
->* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para obtener la lista de paquetes disponibles, consulte el artículo de la versión [de](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+>* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos apropiadamente por su sistema de base de datos.
+>* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo de la versión [de](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 >
 
 
@@ -77,7 +77,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
    * En Configuración de consola web, busque y haga clic en Implementación de muestra del servicio de metadatos de Forms Portal. Puede cambiar los valores del origen de datos, los metadatos o el nombre de tabla de metadatos adicional.
    Para proporcionar un nombre diferente para la tabla de datos:
 
-   * En Configuración de la consola web, busque y haga clic en Implementación de muestra del servicio de datos de Forms Portal. Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
+   * En Configuración de consola web, busque y haga clic en Forms Portal Data Service Sample Implementation (Implementación de muestra de Forms Portal Data Service). Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
    **Nota**: Si cambia los nombres de tabla, indíquelos en la configuración de Form Portal.
 
 1. Deje otras configuraciones tal cual y haga clic en **[!UICONTROL Guardar]**.
@@ -148,7 +148,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
    <td>Los valores de ejemplo son SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
   </tr>
   <tr>
-   <td>Tiempo de espera de consulta de validación</td>
+   <td>Tiempo de espera de Consulta de validación</td>
    <td>10 000</td>
   </tr>
  </tbody>
@@ -164,9 +164,9 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
 
 1. Deje otras configuraciones tal cual y haga clic en **[!UICONTROL Guardar]**.
 
-1. Si ya tiene una tabla en el esquema de base de datos, vaya al paso siguiente.
+1. Si ya tiene una tabla en el esquema de la base de datos, vaya al paso siguiente.
 
-   De lo contrario, si no tiene una tabla en el esquema de la base de datos, ejecute las siguientes sentencias SQL para crear tablas independientes para datos, metadatos y metadatos adicionales en el esquema de la base de datos:
+   De lo contrario, si aún no tiene una tabla en el esquema de la base de datos, ejecute las siguientes sentencias SQL para crear tablas independientes para datos, metadatos y metadatos adicionales en el esquema de la base de datos:
 
    >[!NOTE]
    >
@@ -247,7 +247,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
    `time` varchar(255) DEFAULT NULL);
    ```
 
-1. Si ya tiene las tablas (datos, metadatos y metadatos adicionales) en el esquema de base de datos, ejecute las siguientes consultas de tabla de modificación:
+1. Si ya tiene las tablas (datos, metadatos y metadatos adicionales) en el esquema de la base de datos, ejecute las siguientes consultas de tabla de modificación:
 
    **Instrucción SQL para modificar la tabla de datos**
 
@@ -296,19 +296,19 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-La implementación de muestra ya está configurada, que puede utilizar para enumerar los borradores y los envíos mientras almacena todos los datos y metadatos en una base de datos. Ahora veremos cómo se configuran los servicios de metadatos y datos en el ejemplo.
+La implementación de muestra ya está configurada, que puede utilizar para lista de borradores y envíos mientras almacena todos los datos y metadatos en una base de datos. Ahora veremos cómo se configuran los servicios de metadatos y datos en el ejemplo.
 
 ## Instale el archivo mysql-Connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
 Realice los siguientes pasos, en todas las instancias de creación y publicación, para instalar el archivo mysql-Connector-java-5.1.39-bin.jar:
 
-1. Busque `https://[server]:[port]/system/console/depfinder` y busque el paquete com.mysql.jdbc.
+1. Busque `https://'[server]:[port]'/system/console/depfinder` y busque el paquete com.mysql.jdbc.
 1. En la columna Exportado por, compruebe si el paquete lo exporta cualquier paquete.
 
    Proceda si el paquete no se exporta mediante ningún paquete.
 
-1. Vaya a `https://[server]:[port]/system/console/bundles` y haga clic en **[!UICONTROL Instalar/Actualizar]**.
-1. Haga clic en **[!UICONTROL Elegir archivo]** y busque para seleccionar el archivo mysql-Connector-java-5.1.39-bin.jar. Además, seleccione las casillas de verificación **[!UICONTROL Iniciar paquete]** y **[!UICONTROL Actualizar paquetes]** .
+1. Vaya a `https://'[server]:[port]'/system/console/bundles` y haga clic en **[!UICONTROL Instalar/Actualizar]**.
+1. Haga clic en **[!UICONTROL Elegir archivo]** y busque para seleccionar el archivo mysql-Connector-java-5.1.39-bin.jar. Además, seleccione las casillas de verificación Paquete de **[!UICONTROL Inicio]** y **[!UICONTROL Actualizar paquetes]** .
 1. Haga clic en **[!UICONTROL Instalar o Actualizar]**. Una vez finalizado, reinicie el servidor.
 1. (Solo *Windows*) Desactive el cortafuegos del sistema para su sistema operativo.
 
@@ -329,7 +329,7 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
 
    Haga clic en **[!UICONTROL Guardar todo]**.
 
-1. Haga clic con el botón secundario en el nodo, haga clic en **[!UICONTROL crear un nuevo archivo]** y cree un archivo con la extensión .txt. Por ejemplo, `js.txt`agregue el siguiente código al archivo .txt recién creado y haga clic en **[!UICONTROL Guardar todo]**.
+1. Haga clic con el botón secundario en el nodo, haga clic en **[!UICONTROL crear un nuevo archivo]** y cree un archivo con la extensión .txt. Por ejemplo, `js.txt`Añada el siguiente código al archivo .txt recién creado y haga clic en **[!UICONTROL Guardar todo]**.
 
    ```
    #base=util
@@ -340,7 +340,7 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
 
 1. Haga clic con el botón derecho en el nodo creado en el paso 2 y seleccione Crear > Crear carpeta. `cq:ClientLibraryFolder` Cree una carpeta con el nombre `util`. Haga clic en **[!UICONTROL Guardar todo]**. Haga clic con el botón derecho en la `util` carpeta y seleccione Crear > Crear archivo. Cree un archivo llamado `util.js`. Haga clic en **[!UICONTROL Guardar todo]**.
 
-1. Agregue el siguiente código al archivo util.js y haga clic en **[!UICONTROL Guardar todo]**. El código valida la longitud del nombre del archivo.
+1. Añada el siguiente código al archivo util.js y haga clic en **[!UICONTROL Guardar todo]**. El código valida la longitud del nombre del archivo.
 
    ```
    /*
@@ -397,15 +397,15 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
    >
    >La secuencia de comandos está diseñada para el componente del widget de datos adjuntos (OOTB) listo para usar. Si ha personalizado la utilidad de datos adjuntos OOTB, cambie la secuencia de comandos anterior para incorporar los cambios correspondientes.
 
-1. Agregue la siguiente propiedad a la carpeta creada en el paso 2 y haga clic en **[!UICONTROL Guardar todo]**.
+1. Añada la siguiente propiedad en la carpeta creada en el paso 2 y haga clic en **[!UICONTROL Guardar todo]**.
 
-   * **** Nombre: categorías
+   * **[!UICONTROL Nombre:]** categorías
 
-   * **** Tipo: Cadena
+   * **[!UICONTROL Tipo:]** Cadena
 
-   * **** Valor: fp.validation
+   * **[!UICONTROL Valor:]** fp.validation
 
-   * **** opción múltiple: Habilitado
+   * **[!UICONTROL opción múltiple:]** Habilitado
 
 1. Vaya a la propiedad embed `/libs/fd/af/runtime/clientlibs/guideRuntime`y anexe el `fp.validation` valor.
 
@@ -413,7 +413,7 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
 
    >[!NOTE]
    >
-   >Si utiliza bibliotecas de cliente personalizadas en lugar de las bibliotecas de cliente guideRuntime y guideRuntimeWithXfa, utilice el nombre de la categoría para incrustar la biblioteca de cliente creada en este procedimiento en las bibliotecas personalizadas cargadas durante la ejecución.
+   >Si utiliza bibliotecas de cliente personalizadas en lugar de las bibliotecas de cliente guideRuntime y guideRuntimeWithXfa, utilice el nombre de categoría para incrustar la biblioteca de cliente creada en este procedimiento en las bibliotecas personalizadas cargadas durante la ejecución.
 
 1. Haga clic en **[!UICONTROL Guardar todo.]** Ahora, cuando el nombre de archivo es mayor que 150 caracteres (incluida la extensión), se muestra un mensaje.
 
