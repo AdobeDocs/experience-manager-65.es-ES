@@ -1,6 +1,6 @@
 ---
-title: Flujos de trabajo centrados en formularios en OSGi| Gestión de datos de usuario
-seo-title: Flujos de trabajo centrados en formularios en OSGi| Gestión de datos de usuario
+title: flujos de trabajo centrados en formularios en OSGi| Gestión de datos de usuario
+seo-title: flujos de trabajo centrados en formularios en OSGi| Gestión de datos de usuario
 description: nulo
 seo-description: nulo
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
@@ -8,14 +8,14 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Flujos de trabajo centrados en formularios en OSGi| Gestión de datos de usuario {#forms-centric-workflows-on-osgi-handling-user-data}
+# flujos de trabajo centrados en formularios en OSGi| Gestión de datos de usuario {#forms-centric-workflows-on-osgi-handling-user-data}
 
-Los flujos de trabajo de AEM centrados en formularios le permiten automatizar procesos empresariales reales centrados en Forms. Los flujos de trabajo constan de una serie de pasos que se ejecutan en un orden especificado en el modelo de flujo de trabajo asociado. Cada paso realiza una acción específica, como asignar una tarea a un usuario o enviar un mensaje de correo electrónico. Los flujos de trabajo pueden interactuar con recursos del repositorio, cuentas de usuario y servicios. Por lo tanto, los flujos de trabajo pueden coordinar actividades complejas que involucran cualquier aspecto de Experience Manager.
+Los flujos de trabajo de AEM centrados en los formularios le permiten automatizar procesos empresariales reales centrados en los formularios. Los Flujos de trabajo constan de una serie de pasos que se ejecutan en un orden especificado en el modelo de flujo de trabajo asociado. Cada paso realiza una acción específica, como asignar una tarea a un usuario o enviar un mensaje de correo electrónico. Los Flujos de trabajo pueden interactuar con los recursos del repositorio, las cuentas de usuario y los servicios. Por lo tanto, los flujos de trabajo pueden coordinar actividades complicadas que involucran cualquier aspecto de Experience Manager.
 
 Se puede activar o iniciar un flujo de trabajo centrado en formularios mediante cualquiera de los siguientes métodos:
 
@@ -25,7 +25,7 @@ Se puede activar o iniciar un flujo de trabajo centrado en formularios mediante 
 * Uso de una carpeta vigilada
 * Envío de una comunicación interactiva o una carta
 
-Para obtener más información sobre los flujos de trabajo y las funciones de AEM centrados en formularios, consulte Flujo de trabajo centrado en [formularios en OSGi](/help/forms/using/aem-forms-workflow.md).
+Para obtener más información sobre las funciones y flujos de trabajo de AEM centrados en formularios, consulte Flujo de trabajo centrado en [formularios en OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Almacenes de datos y datos de usuarios {#user-data-and-data-stores}
 
@@ -51,18 +51,18 @@ Las ubicaciones de repositorio predeterminadas donde residen la carga útil, los
   </tr>
   <tr>
    <td><strong>Carga útil</strong></td>
-   <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
-   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
+   <td>/var/fd/panel/payload/[server_id]/[date]/<br /> [payload-id]/</td>
+   <td>/etc/fd/panel/payload/[server_id]/[date]/<br /> [payload-id]/</td>
   </tr>
   <tr>
    <td><strong>Borradores</strong></td>
-   <td>/var/fd/dashboard/instance/[server_id]/<br /> [date]/[workflow-instance]/Draft/[elemento de trabajo]/</td>
-   <td>/etc/fd/dashboard/instance/[server_id]/<br /> [date]/[workflow-instance]/draft/[elemento de trabajo]/</td>
+   <td>/var/fd/panel/instance/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
+   <td>/etc/fd/panel/instance/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
   </tr>
   <tr>
    <td><strong>Historia</strong></td>
-   <td>/var/fd/dashboard/instance/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
-   <td>/etc/fd/dashboard/instance/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
+   <td>/var/fd/panel/instance/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
+   <td>/etc/fd/panel/instance/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
   </tr>
  </tbody>
 </table>
@@ -71,7 +71,7 @@ Las ubicaciones de repositorio predeterminadas donde residen la carga útil, los
 
 Puede acceder a los datos de usuario y eliminarlos de una instancia de flujo de trabajo del repositorio. Para conseguirlo, debe conocer el ID de instancia de la instancia de flujo de trabajo asociada al usuario. Puede encontrar el ID de instancia de una instancia de flujo de trabajo utilizando el nombre de usuario del usuario que inició la instancia de flujo de trabajo o que es el usuario asignado actual de la instancia de flujo de trabajo.
 
-Sin embargo, no puede identificar o los resultados pueden ser ambiguos al identificar flujos de trabajo asociados con un iniciador en los siguientes casos:
+Sin embargo, no puede identificar o los resultados pueden ser ambiguos al identificar flujos de trabajo asociados con un iniciador en los siguientes escenarios:
 
 * **Flujo de trabajo desencadenado mediante una carpeta** vigilada: No se puede identificar una instancia de flujo de trabajo con su iniciador si el flujo de trabajo se activa mediante una carpeta vigilada. En este caso, la información del usuario se codifica en los datos almacenados.
 * **Flujo de trabajo iniciado desde la instancia** de AEM de publicación: Todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables, comunicaciones interactivas o cartas desde una instancia de publicación de AEM. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de instancia del flujo de trabajo.
@@ -80,7 +80,7 @@ Sin embargo, no puede identificar o los resultados pueden ser ambiguos al identi
 
 Para identificar y acceder a los datos de usuario almacenados para una instancia de flujo de trabajo, lleve a cabo los siguientes pasos:
 
-1. En la instancia de creación de AEM, vaya a `https://[server]:[port]/crx/de` y vaya a **[!UICONTROL Herramientas > Consulta]**.
+1. En la instancia de creación de AEM, vaya a `https://'[server]:[port]'/crx/de` Herramientas > **[!UICONTROL Consulta]** y vaya a.
 
    Seleccione **[!UICONTROL SQL2]** en la lista desplegable **[!UICONTROL Tipo]** .
 
@@ -133,7 +133,7 @@ Debe ser administrador de AEM para eliminar los datos de usuario de las instanci
 
 1. Siga este paso para las instancias de flujo de trabajo en **EJECUCIÓN**, **SUSPENDIDO** o **ESTADO** :
 
-   1. Vaya a `https://[server]:[port]/aem/start.html` e inicie sesión con las credenciales del administrador.
+   1. Vaya a `https://'[server]:[port]'/aem/start.html` e inicie sesión con las credenciales del administrador.
    1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Instancias]**.
    1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y toque **[!UICONTROL Finalizar]** para finalizar las instancias en ejecución.
    Para obtener más información sobre cómo trabajar con instancias de flujo de trabajo, consulte [Administración de instancias](/help/sites-administering/workflows-administering.md)de flujo de trabajo.
