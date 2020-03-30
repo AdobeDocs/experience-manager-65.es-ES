@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -61,15 +61,15 @@ La recopilación de las estadísticas del sistema que rellenan el Monitor de est
  </tbody>
 </table>
 
-## Agregar opciones de Java a JBoss {#add-java-options-to-jboss}
+## Añadir las opciones de Java a JBoss {#add-java-options-to-jboss}
 
 1. Detenga el servidor de aplicaciones JBoss.
 1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java que necesite.
 1. Reinicie el servidor.
 
-## Agregar opciones de Java a WebLogic {#add-java-options-to-weblogic}
+## Añadir las opciones de Java a WebLogic {#add-java-options-to-weblogic}
 
-1. Inicie la consola de administración WebLogic escribiendo https://[nombre]de host:[puerto]/consola en la línea URL de un explorador Web.
+1. Inicio la consola de administración WebLogic escribiendo https://[nombre]de host:&#39;puerto&#39;/consola en la línea URL de un explorador Web.
 1. Escriba el nombre de usuario y la contraseña que creó para el dominio de WebLogic Server y haga clic en Registro en Centro de cambios, haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
 1. En la pantalla siguiente, haga clic en la ficha Configuración > Inicio del servidor.
@@ -77,7 +77,7 @@ La recopilación de las estadísticas del sistema que rellenan el Monitor de est
 1. Haga clic en Guardar y, a continuación, en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
-## Agregar opciones de Java a WebSphere {#add-java-options-to-websphere}
+## Añadir las opciones de Java a WebSphere {#add-java-options-to-websphere}
 
 1. En el árbol de navegación de la Consola administrativa de WebSphere, haga lo siguiente para el servidor de aplicaciones:
 
