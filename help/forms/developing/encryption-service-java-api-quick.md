@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -29,13 +29,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 [Inicio rápido (modo SOAP): Determinación del tipo de codificación mediante la API de Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: Los inicios rápidos ubicados en Programación con formularios AEM se basan en Forms Server que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+***Nota **: Los Inicios rápidos ubicados en Programación con AEM Forms se basan en Forms Server que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
 
 ## Inicio rápido (modo SOAP): Cifrado de un documento PDF mediante la API de Java {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* con un valor de contraseña de `OpenPassword`. La contraseña maestra es `PermissionPassword`. El documento PDF protegido se guarda como un archivo PDF denominado *EncryptLoan.pdf*. (Consulte [Codificación de documentos PDF con una contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
+El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* con un valor de contraseña de `OpenPassword`. La contraseña maestra es `PermissionPassword`. El documento PDF seguro se guarda como un archivo PDF denominado *EncryptLoan.pdf*. (Consulte [Codificación de Documentos PDF con una contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
 
 ```as3
  /*
@@ -102,7 +102,7 @@ El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* c
      try{
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -155,7 +155,7 @@ El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* c
 
 ## Inicio rápido (modo SOAP): Eliminación del cifrado basado en contraseña mediante la API de Java {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-El siguiente ejemplo de código Java elimina la codificación basada en contraseña de un documento PDF llamado *EncryptLoan.pdf*. El valor de contraseña principal utilizado para eliminar el cifrado basado en contraseña es *PermissionPassword*. El documento PDF no seguro se guarda como un archivo PDF con el nombre *noEncryptionLoan.pdf*. (Consulte [Eliminación del cifrado](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)de contraseña).
+El siguiente ejemplo de código Java elimina la codificación basada en contraseña de un documento PDF denominado *EncryptLoan.pdf*. El valor de contraseña principal utilizado para eliminar el cifrado basado en contraseña es *PermissionPassword*. El documento PDF no seguro se guarda como un archivo PDF con el nombre *noEncryptionLoan.pdf*. (Consulte [Eliminación del cifrado](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)de contraseña).
 
 ```as3
  /*
@@ -220,7 +220,7 @@ El siguiente ejemplo de código Java elimina la codificación basada en contrase
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -252,7 +252,7 @@ El siguiente ejemplo de código Java elimina la codificación basada en contrase
 
 ## Inicio rápido (modo SOAP): Codificación de un documento PDF con un certificado mediante la API de Java {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* con un certificado llamado *Encryption.cer*. El documento PDF cifrado se guarda como un archivo PDF denominado *EncryptLoanCert.pdf*. (Consulte [Codificación de documentos PDF con certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)).
+El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* con un certificado llamado *Encryption.cer*. El documento PDF cifrado se guarda como un archivo PDF denominado *EncryptLoanCert.pdf*. (Consulte [Codificación de Documentos PDF con certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)).
 
 ```as3
  /*
@@ -320,7 +320,7 @@ El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* c
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -446,7 +446,7 @@ El siguiente ejemplo de código Java elimina la codificación basada en certific
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -478,7 +478,7 @@ El siguiente ejemplo de código Java elimina la codificación basada en certific
 
 ## Inicio rápido (modo SOAP): Desbloqueo de un documento PDF cifrado mediante la API de Java {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-En el siguiente ejemplo de código Java se desbloquea un documento PDF con contraseña cifrada denominado *EncryptLoan.pdf*. (Consulte [Desbloqueo de documentos](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF cifrados).
+El siguiente ejemplo de código Java desbloquea un documento PDF con contraseña cifrada llamado *EncryptLoan.pdf*. (Consulte [Desbloqueo de Documentos](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF cifrados).
 
 ```as3
  /*
@@ -542,7 +542,7 @@ En el siguiente ejemplo de código Java se desbloquea un documento PDF con contr
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -638,7 +638,7 @@ El siguiente ejemplo de código Java determina el tipo de codificación que prot
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
