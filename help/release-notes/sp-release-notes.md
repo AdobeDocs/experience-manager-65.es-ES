@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
+source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
 
 ---
 
@@ -32,7 +32,7 @@ Algunas de las funciones y mejoras clave introducidas en AEM 6.5.4.0 son:
 
 * Recursos AEM ahora se configura con Brand Portal a través de la consola de Adobe I/O.
 
-* Ya hay disponible un nuevo paso [Generar salida](../forms/using/aem-forms-workflow-step-reference.md) imprimible para los flujos de trabajo de AEM Forms.
+* Ahora hay disponible un nuevo paso [Generar salida](../forms/using/aem-forms-workflow-step-reference.md) imprimible para los flujos de trabajo de AEM Forms.
 
 * [Compatibilidad](../forms/using/resize-using-layout-mode.md) con varias columnas para el modo de presentación de formularios adaptables y comunicaciones interactivas.
 
@@ -56,7 +56,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Cuando se abre una página de AEM Sites para editarla y se copia un componente, la acción de pegado permanece indisponible para algunos marcadores de posición (NPR-32317).
 
-* Cuando se abre el asistente Administrar publicación, un fragmento de experiencia vinculado a un componente principal no se muestra en las listas de referencias publicadas (NPR-32233).
+* Cuando se abre el asistente Administrar publicación, no se muestra un fragmento de experiencia vinculado a un componente principal en las listas de referencias publicadas (NPR-32233).
 
 * La descripción general de la Live Copy en la IU táctil tarda mucho más que la IU clásica en procesarse (NPR-32149).
 
@@ -78,19 +78,19 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Al mover el contenido dentro de la misma carpeta, se desactiva la opción de mover la página (NPR-31840).
 
-* En el modo de estructura de plantillas editables, la lista de componentes permitidos del contenedor de diseños muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
+* En el modo de estructura de plantillas editables, la lista de componentes permitida en el contenedor de diseño muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
 
 * Cuando una página tiene permisos de solo lectura para un usuario, la opción Abrir propiedades está visible en sites.html pero no en editor.html (NPR-31770).
 
 * Cuando un usuario hace clic en el botón Crear, la opción de página no está disponible (NPR-31756).
 
-* No se puede sincronizar la campaña en la campaña de Adobe que contenga el componente importador de diseños OOTB (predeterminado) (NPR-31728).
+* No se puede sincronizar la campaña en la campaña de Adobe que contiene el componente importador de diseños OOTB (listo para usar) (NPR-31728).
 
 * Cuando se intenta cambiar una lista de viñetas a una lista numerada, solo se cambian los dos primeros elementos de la lista (NPR-31636).
 
 * Cuando se anula la creación de una página y se selecciona el nodo secundario, el cuadro de diálogo de selección aún muestra el nodo inicial. Cuando se crea la página y el usuario hace clic en Examinar, la página se redirige al nodo raíz en lugar del nodo creado (NPR-31618).
 
-* El cuadro de diálogo de configuración de la vista no funciona correctamente para la función de flujo de trabajo de personalización de la Bandeja de entrada (NPR-32503 y NPR-32492).
+* El cuadro de diálogo de configuración de vista no funciona correctamente para la función de flujo de trabajo de personalización de la Bandeja de entrada (NPR-32503 y NPR-32492).
 
 * Aparece un mensaje de error al ver la información del flujo de trabajo mediante la Bandeja de entrada (CQ-4282168).
 
@@ -122,7 +122,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * La búsqueda de archivos y carpetas mediante facetas de Omnisearch ofrece una excepción (NPR-31872).
 
-* El resaltado de campos para la selección obligatoria de campos en el editor de metadatos no se elimina ni siquiera después de seleccionar el campo requerido, cuando las reglas de dependencia se establecen en el formulario de esquema de metadatos correspondiente (NPR-31834).
+* El resaltado de campos para la selección obligatoria de campos en el editor de metadatos no se elimina ni siquiera después de seleccionar el campo requerido, cuando las reglas de dependencia se establecen en el correspondiente formulario de esquema de metadatos (NPR-31834).
 
 * Los nombres completos de las etiquetas de nivel de hoja (de la jerarquía de etiquetas) no se muestran en la página Propiedades del recurso (NPR-31820).
 
@@ -130,7 +130,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario (NPR-31307).
 
-* La página de detalles de recursos de los recursos PDF no muestra botones de acción excepto los botones Para colección y Añadir representación en Experience Manager que se ejecutan en el modo de ejecución de Dynamic Media Scene7 (CQ-4286705).
+* La página de detalles de recursos de los recursos PDF no muestra botones de acción, excepto los botones Para colección y Añadir representación de Experience Manager, que se ejecutan en el modo de ejecución de Dynamic Media Scene7 (CQ-4286705).
 
 * Los recursos buenos de más de 2 GB ahora se pueden cargar en Dynamic Media-Scene7 (CQ-4286561).
 
@@ -142,7 +142,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * El estado sin procesar del ajuste preestablecido de visor de vídeo de recorte inteligente aparece dos veces en el texto de la pancarta junto con el nombre del ajuste preestablecido (CQ-4283517).
 
-* En la página de detalles del recurso (CQ-4283309) se observa una altura incorrecta del contenedor de un modelo 3D cargado con vista previa en el visor 3D.
+* En la página de detalles del recurso (CQ-4283309) se observa una altura de contenedor incorrecta de un modelo 3D cargado con vista previa en el visor 3D.
 
 * El Editor de carrusel no se abre en IE 11 en el modo híbrido de Dynamic Media de Experience Manager (CQ-4255590).
 
@@ -182,7 +182,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 ### Editor de plantillas WCM {#wcm-template-editor-6540}
 
-* En el modo de estructura de plantillas editables, la lista de componentes permitidos en el contenedor de diseños no muestra el componente de botón de vínculo (CQ-4282099).
+* En el modo de estructura de plantillas editables, la lista de componentes permitida en el contenedor de diseño no muestra el componente de botón de vínculo (CQ-4282099).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
@@ -190,17 +190,24 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 ### Campaign Targeting {#campaign-targeting-6540}
 
-* La configuración de la nube de destino falla con el error al obtener la solicitud de mboxes (CQ-4279880).
+* La configuración de la nube de Destinatario falla con el error al obtener la solicitud de mboxes (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
 
-* Los valores desplegables del esquema de metadatos no están visibles en las propiedades del recurso (CQ-4283287).
+* Los usuarios de Brand Portal no pueden publicar recursos de carpetas de contribución en Recursos AEM al actualizar a Adobe I/O en AEM 6.5.4 (CQDOC-15655).
+
+   Este problema se solucionará en el próximo Service Pack AEM 6.5.5.
+
+   Para una corrección inmediata en AEM 6.5.4, se recomienda [descargar la revisión](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalarla en la instancia de creación.
+
+
+* Los valores desplegables del esquema de metadatos no están visibles en las propiedades de los recursos (CQ-4283287).
 
 * El subesquema de metadatos no muestra fichas basadas en mimetype en propiedades de recursos (CQ-4283288).
 
-* El esquema de metadatos de cancelación de publicación rellena un mensaje de error, aunque el esquema se elimina al final.
+* El esquema Cancelar la publicación de metadatos rellena un mensaje de error aunque el esquema se elimina al final.
 
-* La imagen de vista previa no se muestra para un recurso publicado (CQ-4285886).
+* La imagen de Previsualización no se muestra para un recurso publicado (CQ-4285886).
 
 * El usuario no puede publicar ni cancelar la publicación de recursos que contengan una sola cotización en el nombre (CQ-4272686).
 
@@ -212,9 +219,9 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * El formulario Crear miembro se muestra como una página en blanco (NPR-31997).
 
-* El usuario no puede ver el informe de Analytics en la instancia de autor (NPR-30913).
+* El usuario no puede realizar la vista del informe de Analytics en la instancia de autor (NPR-30913).
 
-### Indexación de roble y consultas {#oak-indexing-6540}
+### Consultas e indización de robles {#oak-indexing-6540}
 
 * Los documentos de Microsoft Word y MS Excel, que contienen imágenes JPEG, cuando se analizan con el analizador Tika no se analizan y se observa un error de clase no encontrada (NPR-31952).
 
@@ -224,17 +231,17 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 >
 >Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
-* Administración de correspondencia: Las cartas muestran caracteres adicionales después del envío a los flujos de trabajo del proceso de publicación (NPR-32626).
+* Administración de correspondencia: Las letras muestran caracteres adicionales después del envío a los flujos de trabajo del proceso de publicación (NPR-32626).
 
 * Administración de correspondencia: Las letras muestran un marcador de posición desplegable como un componente de texto después de enviarlo a flujos de trabajo posteriores al proceso (NPR-32539).
 
-* Administración de correspondencia: Los valores predeterminados definidos en la plantilla de letras no se muestran en el modo de vista previa (NPR-32511).
+* Administración de correspondencia: Los valores predeterminados definidos en la plantilla de letras no se muestran en el modo de Previsualización (NPR-32511).
 
 * Formularios móviles: El botón de envío se muestra con un tamaño ampliado mientras se procesa un formulario XDP en una versión HTML (NPR-32514).
 
-* Document Services: Problemas de acceso a URL para cartas y otras páginas después de aplicar Service Pack 2 (NPR-32508, NPR-32509).
+* Servicios de Documento: Problemas de acceso a URL para cartas y otras páginas después de aplicar Service Pack 2 (NPR-32508, NPR-32509).
 
-* Document Services: Si el número de transacciones en un servidor supera un límite específico, la conversión de HTML a PDF falla y la configuración del tipo de archivo se elimina del servidor de AEM Forms (NPR-32204).
+* Servicios de Documento: Si el número de transacciones en un servidor supera un límite específico, la conversión de HTML a PDF falla y la configuración del tipo de archivo se elimina del servidor de AEM Forms (NPR-32204).
 
 * Formularios adaptables: La herramienta de accesibilidad de navegadores informa de errores en formularios adaptables según las directrices WCAG2 de nivel AA (NPR-32312, NPR-32309, CQ-4285439).
 
@@ -244,7 +251,7 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 
 * Área de trabajo: Aparece un mensaje de error al utilizar la operación Obtener propiedades de PDF para el servicio Utilidades de PDF (NPR-32150).
 
-* Document Security: Un archivo PDF protegido no se puede abrir sin conexión con la opción DisableGlobalOfflineSynchronizationData establecida en True (NPR-32078).
+* Seguridad de Documento: Un archivo PDF protegido no se puede abrir sin conexión con la opción DisableGlobalOfflineSynchronizationData establecida en True (NPR-32078).
 
 * Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32547, NPR-31983, NPR-31950).
 
@@ -345,13 +352,13 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 
 ## Funciones en desuso {#removed-deprecated-features}
 
-Esta sección enumera las funciones y funciones que se han marcado como obsoletas con AEM 6.5.4.0. Las funciones que se planea eliminar en una versión futura se definen como obsoletas en primer lugar, con una opción alternativa para su uso.
+Esta sección lista las funciones y funciones que se han marcado como obsoletas en AEM 6.5.4.0. Las funciones que se planea eliminar en una versión futura se definen como obsoletas en primer lugar, con una opción alternativa para su uso.
 
 Se aconseja a los clientes que revisen si utilizan la función o la capacidad en su implementación actual y que planifiquen cambiar su implementación para utilizar la opción alternativa.
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integraciones | The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. Con la integración de AEM y Target actualizada en AEM 6.5 para admitir la API de Target Standard, que utiliza la autenticación mediante Adobe IMS y E/S, y el creciente papel de Adobe Launch en la instrumentación de páginas de AEM para el análisis y la personalización, el asistente para la selección de contenido se ha vuelto funcionalmente irrelevante. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones de Adobe E/S a través de los respectivos servicios de nube de AEM |
+| Integraciones | The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. Con la integración de AEM y Destinatario actualizada en AEM 6.5 para admitir la API de Destinatario Standard, que utiliza la autenticación mediante Adobe IMS y E/S, y la función cada vez mayor de Adobe Launch para instrumentar las páginas de AEM para el análisis y la personalización, el asistente para la selección se ha vuelto funcionalmente irrelevante. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones de Adobe E/S a través de los respectivos servicios de nube de AEM |
 
 ## Problemas conocidos {#known-issues}
 
@@ -359,7 +366,7 @@ Se aconseja a los clientes que revisen si utilizan la función o la capacidad en
 * Durante la instalación de AEM 6.5.x.x pueden aparecer los siguientes errores y mensajes de advertencia:
    * &quot;Cuando la integración de Target se configura en AEM mediante la API de Target Standard (autenticación IMS), la exportación de fragmentos de experiencia a Target provoca la creación de tipos de ofertas incorrectos. En lugar de tener que escribir &quot;Fragmento de experiencias&quot;/origen &quot;Adobe Experience Manager&quot;, Destino, se crean varias ofertas con el tipo &quot;HTML&quot;/origen &quot;Adobe Target Classic&quot;.
    * com.adobe.granite.maintenance.impl.TaskScheduler: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
-   * La validación del lado del servidor de Formulario adaptable falla cuando se utilizan funciones de agregado como SUM, MAX y MIN. CQ-4274424
+   * La validación del lado del servidor de Formulario adaptable falla cuando se utilizan funciones acumuladas como SUM, MAX y MIN. CQ-4274424
    * com.adobe.granite.maintenance.impl.TaskScheduler: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
    * La zona interactiva de una imagen interactiva de Dynamic Media no está visible al obtener una vista previa del recurso a través del visor de banners a la venta.
 
