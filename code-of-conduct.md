@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6cd417e3607eee30fb250b5f5af99acbc2e644e3
+source-git-commit: 352924b29ba145177482c1ceb0ce3b685c10d363
 translation-type: tm+mt
 
 ---
@@ -7,7 +7,7 @@ translation-type: tm+mt
 
 ## Nuestra promesa
 
-En aras de fomentar un entorno abierto y acogedor, nosotros como colaboradores y mantenedores nos comprometemos a hacer de la participación en nuestro proyecto y en nuestra comunidad una experiencia libre de acoso para todos, sin importar la edad, tamaño corporal, discapacidad, etnia, identidad y expresión de género, nivel de experiencia, nacionalidad, apariencia personal, raza, religión o identidad y orientación sexual.
+En aras de fomentar un entorno abierto y acogedor, nosotros como colaboradores y mantenedores nos comprometemos a hacer de la participación en nuestro proyecto y en nuestra comunidad una experiencia libre de acoso para todos, sin importar la edad, tamaño corporal, discapacidad, etnia, identidad de género y expresión, nivel de experiencia, nacionalidad, apariencia personal, raza, religión o identidad y orientación sexual.
 
 ## Nuestros estándares
 
@@ -31,7 +31,7 @@ Algunos ejemplos de comportamiento inaceptable de los participantes son:
 
 Los encargados de la gestión de proyectos son responsables de aclarar las normas de comportamiento aceptable y se espera que adopten medidas correctivas apropiadas y justas en respuesta a cualquier caso de comportamiento inaceptable.
 
-Los responsables del proyecto tienen el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, comisiones, códigos, ediciones wiki, problemas y otras contribuciones que no estén alineados con este Código de Conducta, o de prohibir temporal o permanentemente a cualquier colaborador por otros comportamientos que consideren inapropiados, amenazadores, ofensivos o perjudiciales.
+Los mantenedores de proyectos tienen el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, comisiones, códigos, ediciones wiki, problemas y otras contribuciones que no estén alineados con este Código de Conducta, o de prohibir temporal o permanentemente a cualquier colaborador por otros comportamientos que consideren inapropiados, amenazadores, ofensivos o perjudiciales.
 
 ## Ámbito
 
