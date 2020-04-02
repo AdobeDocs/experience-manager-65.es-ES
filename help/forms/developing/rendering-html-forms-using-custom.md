@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
 
 ---
 
@@ -80,13 +80,13 @@ Cuando el servicio Forms procesa un formulario HTML, devuelve una secuencia de d
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Representación de formularios como HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Representar un formulario HTML que utiliza un archivo CSS mediante la API de Java {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
 
@@ -163,7 +163,7 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
    * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un valor `TransformTo` enum que especifica el tipo de preferencia HTML. Por ejemplo, para procesar un formulario HTML compatible con HTML dinámico para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
-   * Un `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`. (Consulte [Rellenado previo de formularios con diseños]de posición variable (/help/forms/develop/renderizado-formularios cumplimentación previa de formularios-presentación-presentación-presentación-formularios-rellenado previo.md#prerellating-forms-with-flowable-layouts).
+   * Un `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`. (Consulte [Rellenado previo de formularios con diseños](/help/forms/developing/prepopulating-forms-flowable-layouts.md)de posición variable).
    * El `HTMLRenderSpec` objeto que almacena las opciones de tiempo de ejecución HTML.
    * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Puede pasar una cadena vacía si no desea establecer este valor.
    * Un `URLSpec` objeto que almacena valores URI necesarios para procesar un formulario HTML.
