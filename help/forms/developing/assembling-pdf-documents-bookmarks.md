@@ -1,6 +1,6 @@
 ---
-title: Compilación de documentos PDF con marcadores
-seo-title: Compilación de documentos PDF con marcadores
+title: Compilación de Documentos PDF con marcadores
+seo-title: Compilación de Documentos PDF con marcadores
 description: nulo
 seo-description: nulo
 uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
@@ -11,19 +11,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e3f700b52446505224fa4b4688d439750a66f471
 
 ---
 
 
-# Compilación de documentos PDF con marcadores {#assembling-pdf-documents-with-bookmarks}
+# Compilación de Documentos PDF con marcadores {#assembling-pdf-documents-with-bookmarks}
 
-Puede montar un documento PDF que contenga marcadores. Por ejemplo, supongamos que tiene un documento PDF que no contiene marcadores y que desea modificarlo proporcionando marcadores. Con el servicio Ensamblador, puede pasarle un documento PDF que no contenga marcadores y recuperar un documento PDF que contenga marcadores.
+Puede montar un documento PDF que contenga marcadores. Por ejemplo, supongamos que tiene un documento PDF que no contiene marcadores y que desea modificarlo proporcionando marcadores. Con el servicio Compilador, puede pasarle un documento PDF que no contenga marcadores y recuperar un documento PDF que contenga marcadores.
 
 Los marcadores contienen las siguientes propiedades:
 
 * Título que aparece como texto en la pantalla.
-* Acción que especifica lo que sucede cuando un usuario hace clic en el marcador. La acción habitual de un marcador es moverse a otra ubicación del documento actual o abrir otro documento PDF, aunque se pueden especificar otras acciones.
+* Acción que especifica lo que sucede cuando un usuario hace clic en el marcador. La acción típica de un marcador es moverse a otra ubicación en el documento actual o abrir otro documento PDF, aunque se pueden especificar otras acciones.
 
 A los efectos de este análisis, supongamos que se utiliza el siguiente documento DDX.
 
@@ -38,9 +38,9 @@ A los efectos de este análisis, supongamos que se utiliza el siguiente document
  </DDX>
 ```
 
-En este documento DDX, observe que el atributo de origen está asignado al valor `Loan.pdf`. Este documento DDX especifica que se pasa un solo documento PDF al servicio Ensamblador. Al montar un documento PDF con marcadores, debe especificar un documento XML de marcadores que describa los marcadores en el documento de resultados. Para especificar un documento XML de marcador, asegúrese de que el `Bookmarks` elemento está especificado en el documento DDX.
+En este documento DDX, observe que al atributo de origen se le asigna el valor `Loan.pdf`. Este documento DDX especifica que se pasa un solo documento PDF al servicio de ensamblador. Al montar un documento PDF con marcadores, debe especificar un documento XML de marcadores que describa los marcadores en el documento de resultados. Para especificar un documento XML de marcador, asegúrese de que el `Bookmarks` elemento está especificado en el documento DDX.
 
-En este documento DDX de ejemplo, el `Bookmarks` elemento especifica `doc2` como valor. Este valor indica que el mapa de entrada pasado al servicio de ensamblador contiene una clave denominada `doc2`. El valor de la `doc2` clave es un `com.adobe.idp.Document` valor que representa el documento XML de marcador. (Consulte &quot;Lenguaje de marcadores&quot; en el servicio [Ensamblador y la referencia](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX).
+En este documento DDX de ejemplo, el `Bookmarks` elemento especifica `doc2` como valor. Este valor indica que el mapa de entrada pasado al servicio de ensamblador contiene una clave denominada `doc2`. El valor de la `doc2` clave es un `com.adobe.idp.Document` valor que representa el documento XML del marcador. (Consulte &quot;Lenguaje de marcadores&quot; en el servicio [Ensamblador y la referencia](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX).
 
 En este tema se utiliza el siguiente lenguaje de marcadores XML para crear un documento PDF que contenga marcadores.
 
@@ -80,7 +80,7 @@ Cuando un usuario hace clic en el marcador *Abrir los detalles* del préstamo, s
 
 >[!NOTE]
 >
->Antes de leer esta sección, se recomienda familiarizarse con el ensamblado de documentos PDF mediante el servicio Ensamblador. En esta sección no se analizan conceptos como la creación de un objeto de colección que contenga documentos de entrada o el aprendizaje de cómo extraer los resultados del objeto de recopilación devuelto. (Consulte Compilación [programática de documentos]PDF (/help/forms/develop/programmaticamente-assembling-pdf-documents-programáticamente-ensamblar-pdf-documentos-programáticamente.md#programmatical-ensamblar-pdf-documentos).)
+>Antes de leer esta sección, se recomienda familiarizarse con el ensamblado de documentos PDF mediante el servicio Ensamblador. En esta sección no se analizan los conceptos, como la creación de un objeto de colección que contiene documentos de entrada o el aprendizaje de cómo extraer los resultados del objeto de colección devuelto. (Consulte Compilación [programada de Documentos](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)PDF).
 
 >[!NOTE]
 >
@@ -98,8 +98,8 @@ Para montar un documento PDF que contenga marcadores, realice las siguientes tar
 1. Cree un cliente de ensamblador de PDF.
 1. Haga referencia a un documento DDX existente.
 1. Haga referencia a un documento PDF al que se han agregado marcadores.
-1. Haga referencia al documento XML de marcador.
-1. Agregue el documento PDF y el documento XML de marcador a una colección Map.
+1. Haga referencia al documento XML del marcador.
+1. Añada el documento PDF y el documento XML de marcador en una colección Map.
 1. Configure las opciones de tiempo de ejecución.
 1. Monte el documento PDF.
 1. Guarde el documento PDF que contiene marcadores.
@@ -124,7 +124,7 @@ Antes de realizar una operación de ensamblador mediante programación, debe cre
 
 **Hacer referencia a un documento DDX existente**
 
-Se debe hacer referencia a un documento DDX para ensamblar un documento PDF. Este documento DDX debe contener el `Bookmarks` elemento , que indica al servicio Ensamblador que cree un PDF que contenga marcadores. (Consulte el documento DDX que se muestra anteriormente en esta sección para ver un ejemplo).
+Se debe hacer referencia a un documento DDX para montar un documento PDF. Este documento DDX debe contener el `Bookmarks` elemento , que indica al servicio Ensamblador que cree un PDF que contenga marcadores. (Consulte el documento DDX que se muestra anteriormente en esta sección para ver un ejemplo).
 
 **Hacer referencia a un documento PDF al que se han agregado marcadores**
 
@@ -137,7 +137,7 @@ Haga referencia a un documento PDF al que se han agregado marcadores. No importa
  </PDF>
 ```
 
-**Hacer referencia al documento XML de marcador**
+**Hacer referencia al documento XML del marcador**
 
 Para compilar un PDF que contenga nuevos marcadores, debe hacer referencia a un documento XML de marcador. El documento XML de marcador se pasa al servicio Ensamblador dentro del objeto de colección Map. (Consulte el documento XML de marcador que se muestra anteriormente en esta sección para ver un ejemplo).
 
@@ -145,9 +145,9 @@ Para compilar un PDF que contenga nuevos marcadores, debe hacer referencia a un 
 >
 >Consulte &quot;Lenguaje de marcadores&quot; en el servicio [Ensamblador y la referencia](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
 
-**Agregar el documento PDF y el documento XML de marcador a una colección Map**
+**Añadir el documento PDF y el documento XML de marcador en una colección Map**
 
-Debe agregar el documento PDF al que se han agregado marcadores y el documento XML de marcadores a la colección Map. Por lo tanto, el objeto de colección Map contiene dos elementos: un documento PDF y el documento XML con marcador.
+Debe agregar el documento PDF al que se agregan los marcadores y el documento XML de marcador a la colección Map. Por lo tanto, el objeto de colección Map contiene dos elementos: un documento PDF y el documento de marcador XML.
 
 **Definición de opciones de tiempo de ejecución**
 
@@ -159,7 +159,7 @@ Para montar un documento PDF que contenga nuevos marcadores, utilice la operaci�
 
 **Guardar el documento PDF que contiene marcadores**
 
-Debe extraer los resultados del objeto de mapa devuelto y guardar el documento PDF correspondiente. (Consulte &quot;Extraer los resultados&quot; en [Compilación programada de documentos](/help/forms/developing/programmatically-assembling-pdf-documents.md)PDF).
+Debe extraer los resultados del objeto de mapa devuelto y guardar el documento PDF correspondiente. (Consulte &quot;Extracción de los resultados&quot; en Documentos [PDF de ensamblaje](/help/forms/developing/programmatically-assembling-pdf-documents.md)programático).
 
 **Consulte también**
 
@@ -167,7 +167,7 @@ Debe extraer los resultados del objeto de mapa devuelto y guardar el documento P
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Compilación de documentos PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[Compilación programada de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## Compilación de documentos PDF con marcadores mediante la API de Java {#assemble-pdf-documents-with-bookmarks-using-the-java-api}
 
@@ -192,19 +192,19 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
    * Cree un `java.io.FileInputStream` objeto utilizando su constructor y pasando la ubicación del documento PDF.
    * Cree un `com.adobe.idp.Document` objeto con su constructor y pase el `java.io.FileInputStream` objeto que contiene el documento PDF.
 
-1. Haga referencia al documento XML de marcador.
+1. Haga referencia al documento XML del marcador.
 
    * Cree un `java.io.FileInputStream` objeto utilizando su constructor y pasando la ubicación del archivo XML que representa el documento XML de marcador.
    * Cree un `com.adobe.idp.Document` objeto y pase el `java.io.FileInputStream` objeto que contiene el documento PDF.
 
-1. Agregue el documento PDF y el documento XML de marcador a una colección Map.
+1. Añada el documento PDF y el documento XML de marcador en una colección Map.
 
-   * Cree un `java.util.Map` objeto que se utilice para almacenar el documento PDF de entrada y el documento XML de marcador.
-   * Agregue el documento PDF de entrada invocando el `java.util.Map` método `put` del objeto y pasando los siguientes argumentos:
+   * Cree un `java.util.Map` objeto que se utilice para almacenar el documento de entrada de PDF y el documento XML de marcador.
+   * Añada el documento PDF de entrada invocando el `java.util.Map` método `put` del objeto y pasando los siguientes argumentos:
 
       * Un valor de cadena que representa el nombre de la clave. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX.
       * Un `com.adobe.idp.Document` objeto que contiene el documento PDF de entrada.
-   * Agregue el documento XML de marcador invocando el `java.util.Map` método del `put` objeto y pasando los siguientes argumentos:
+   * Añada el documento XML de marcador invocando el `java.util.Map` método `put` del objeto y pasando los siguientes argumentos:
 
       * Un valor de cadena que representa el nombre de la clave. Este valor debe coincidir con el valor del elemento de origen Marcadores especificado en el documento DDX.
       * Un `com.adobe.idp.Document` objeto que contiene el documento XML de marcador.
@@ -220,7 +220,7 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
    Invoque el `AssemblerServiceClient` método del `invokeDDX` objeto y pase los siguientes valores obligatorios:
 
    * Un `com.adobe.idp.Document` objeto que representa el documento DDX que se va a utilizar
-   * Un `java.util.Map` objeto que contiene tanto el documento PDF de entrada como el documento XML de marcador.
+   * Un `java.util.Map` objeto que contiene el documento PDF de entrada y el documento XML de marcador.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos
    El `invokeDDX` método devuelve un `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contiene los resultados del trabajo y las excepciones que se hayan producido.
 
@@ -281,21 +281,21 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
    * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
    * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
 
-1. Haga referencia al documento XML de marcador.
+1. Haga referencia al documento XML del marcador.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento XML con marcador.
+   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento XML del marcador.
    * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF de entrada y el modo en que se abre el archivo.
    * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
    * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
    * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
 
-1. Agregue el documento PDF y el documento XML de marcador a una colección Map.
+1. Añada el documento PDF y el documento XML de marcador en una colección Map.
 
    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Este objeto de colección se utiliza para almacenar los documentos PDF de entrada y el documento XML de marcador.
    * Para cada documento PDF de entrada y el documento XML de marcador, cree un `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto.
    * Asigne un valor de cadena que represente el nombre clave al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `key` objeto. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX.
    * Asigne el `BLOB` objeto que almacena el documento PDF al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `value` objeto.
-   * Agregue el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto al `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invoque el `MyMapOf_xsd_string_To_xsd_anyType` método del `Add` objeto y pase el `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Realice esta tarea para cada documento PDF de entrada y el documento XML de marcador).
+   * Añada el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto al `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invoque el `MyMapOf_xsd_string_To_xsd_anyType` método del `Add` objeto y pase el `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Realice esta tarea para cada documento PDF de entrada y el documento XML de marcador).
 
 1. Configure las opciones de tiempo de ejecución.
 
@@ -317,7 +317,7 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
 
    * Acceda al `AssemblerResult` campo del `documents` objeto, que es un `Map` objeto que contiene los documentos PDF resultantes.
    * Repita el `Map` objeto hasta que encuentre la clave que coincida con el nombre del documento resultante. A continuación, convierta los elementos del miembro `value` de la matriz en un `BLOB`.
-   * Extraiga los datos binarios que representan el documento PDF accediendo al campo del `BLOB` objeto `MTOM` . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
+   * Extraiga los datos binarios que representan el documento PDF accediendo al campo de su `BLOB` objeto `MTOM` . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
 **Consulte también**
 
