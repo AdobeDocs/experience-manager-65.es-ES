@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
 
 ---
 
@@ -70,7 +70,7 @@ Cuando se procesa un formulario por valor, hay que crear un `com.adobe.idp.Docum
 
 **Representar un formulario por valor**
 
-Para procesar un formulario por valor, pase una `com.adobe.idp.Document` instancia que contenga el diseño de formulario al parámetro `inDataDoc` del método de procesamiento (puede ser cualquiera de los métodos de procesamiento del `FormsServiceClient` objeto, como `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Normalmente, este valor de parámetro se reserva a los datos que se combinan con el formulario. Del mismo modo, pase un valor de cadena vacío al `formQuery` parámetro. Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario.
+Para procesar un formulario por valor, pase una `com.adobe.idp.Document` instancia que contenga el diseño de formulario al parámetro `inDataDoc` del método de procesamiento (puede ser cualquiera de los métodos de procesamiento del `FormsServiceClient` objeto, como `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Normalmente, este valor de parámetro está reservado para los datos que se combinan con el formulario. Del mismo modo, pase un valor de cadena vacío al `formQuery` parámetro. Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario.
 
 >[!NOTE]
 >
@@ -90,11 +90,11 @@ Cuando el servicio Forms procesa un formulario por valor, devuelve una secuencia
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Pasar documentos al servicio Forms](/help/forms/developing/passing-documents-forms-service.md)
+[Pasar Documentos al servicio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Representar un formulario por valor mediante la API de Java {#render-a-form-by-value-using-the-java-api}
 
@@ -138,7 +138,7 @@ Representar un formulario por valor mediante la API de Forms (Java):
 
 **Consulte también**
 
-[Representación de formularios por valor](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
+[Representación de formularios por valor](/help/forms/developing/rendering-forms.md)
 
 [Inicio rápido (modo SOAP): Representación por valor mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
