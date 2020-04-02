@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
 
 ---
 
@@ -39,7 +39,7 @@ Permite a su organización compartir fácilmente documentos PDF interactivos med
 Permite trabajar con firmas digitales y documentos en el servidor AEM. Por ejemplo, el servicio Signature se suele utilizar en las siguientes situaciones:
 
 * El servidor de AEM certifica un formulario antes de enviarlo a un usuario para que lo abra con Acrobat o Adobe Reader.
-* El servidor AEM valida una firma que se agregó a un formulario mediante Acrobat o Adobe Reader.
+* El servidor de AEM valida una firma que se agregó a un formulario mediante Acrobat o Adobe Reader.
 * El servidor de AEM firma un formulario en nombre de un notario público.
 
 El servicio de firma accede a los certificados y las credenciales almacenados en el almacén de confianza. Para obtener más información, consulte Servicio [de firmas](/help/forms/using/aem-document-services-programmatically.md).
@@ -414,6 +414,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Guarde y cierre el archivo.
 
 ### Configuración del servicio de administración de fuentes {#configuring-the-font-manager-service}
@@ -569,15 +570,15 @@ El servicio Ensamblador depende del servicio Reader Extensions, el servicio Sign
   </tr> 
   <tr> 
    <td>Servicio Reader Extensions</td> 
-   <td>com.adobe.aemfd.adobe-aemfd-readerextension<br /> </td> 
+   <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td> 
   </tr> 
   <tr> 
    <td>Servicio de Forms</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-rockll-Connector<br /> </td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
   </tr> 
   <tr> 
    <td>Servicio de salida</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-rockll-Connector</td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
   </tr> 
  </tbody> 
 </table>
