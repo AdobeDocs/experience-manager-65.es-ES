@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ebb60e79aa7fb45e059e2d2451f6d549cd24b8b0
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Rellenado previo de formularios con diseños de posición variable {#prepopulating-forms-with-flowable-layouts2}
 
-Al rellenar previamente los formularios, se muestran datos a los usuarios de un formulario procesado. Por ejemplo, supongamos que un usuario inicia sesión en un sitio web con un nombre de usuario y una contraseña. Si la autenticación se realiza correctamente, la aplicación cliente consulta una base de datos para obtener información del usuario. Los datos se combinan en el formulario y luego se procesa al usuario. Como resultado, el usuario puede ver datos personalizados dentro del formulario.
+Al rellenar previamente los formularios, se muestran datos a los usuarios de un formulario procesado. Por ejemplo, supongamos que un usuario inicia sesión en un sitio web con un nombre de usuario y una contraseña. Si la autenticación se realiza correctamente, la aplicación cliente consulta una base de datos para obtener información del usuario. Los datos se combinan en el formulario y luego se procesa al usuario. Como resultado, el usuario puede vista datos personalizados dentro del formulario.
 
 Rellenar un formulario de antemano tiene las siguientes ventajas:
 
@@ -36,7 +36,7 @@ Debe existir un elemento XML para cada campo de formulario que desee rellenar pr
 
 Cuando se rellena previamente un formulario que ya contiene datos, se deben especificar los datos que ya se muestran en el origen de datos XML. Supongamos que un formulario que contiene 10 campos tiene datos en cuatro campos. A continuación, supongamos que desea rellenar previamente los seis campos restantes. En este caso, debe especificar 10 elementos XML en el origen de datos XML que se utiliza para rellenar previamente el formulario. Si sólo especifica seis elementos, los cuatro campos originales están vacíos.
 
-Por ejemplo, puede rellenar previamente un formulario, como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Representación de formularios]PDF interactivos(/help/forms/develop/procesing-forms-procesing-forms-interactive-pdf-forms-renderizado.md#procesado-interactivo-pdf-formularios).)
+Por ejemplo, puede rellenar previamente un formulario, como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Representación de formularios](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interactivos.)
 
 Para rellenar previamente el formulario de confirmación de ejemplo, debe crear un origen de datos XML que contenga tres elementos XML que coincidan con los tres campos del formulario. Este formulario contiene los tres campos siguientes: `FirstName`, `LastName`, y `Amount`. El primer paso es crear un origen de datos XML que contenga elementos XML que coincidan con los campos ubicados en el diseño de formulario. El paso siguiente es asignar valores de datos a los elementos XML, como se muestra en el siguiente código XML.
 
@@ -209,7 +209,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una 
 
 **Crear un origen de datos XML en memoria**
 
-Puede utilizar `org.w3c.dom` clases para crear un origen de datos XML en memoria para rellenar previamente un formulario con una presentación flexible. Debe colocar los datos en un origen de datos XML que se ajuste al formulario. Para obtener información sobre la relación entre un formulario con presentación flexible y el origen de datos XML, consulte [Explicación de los subgrupos]de datos (/help/forms/develop/procesing-forms-renderizado-formularios cumplimentados previamente-formularios-presentación-formularios-rellenados-formularios-variable-presentación-presentación-prerellenado.md#Understanding-data-subgrupos).
+Puede utilizar `org.w3c.dom` clases para crear un origen de datos XML en memoria para rellenar previamente un formulario con una presentación flexible. Debe colocar los datos en un origen de datos XML que se ajuste al formulario. Para obtener información sobre la relación entre un formulario con presentación flexible y el origen de datos XML, consulte [Explicación de los subgrupos](#understanding-data-subgroups)de datos.
 
 **Convertir el origen de datos XML**
 
@@ -229,11 +229,11 @@ Un formulario precumplimentado se procesa como cualquier otro formulario. La ún
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Rellenado previo de formularios mediante la API de Java {#prepopulating-forms-using-the-java-api}
 
@@ -261,7 +261,7 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso de cada campo que aparezca en la parte estática del formulario (en el diagrama de origen de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos](#understanding-data-subgroups)de datos).
+   * Añada todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparece en la parte estática del formulario (en el diagrama de origen de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos](#understanding-data-subgroups)de datos).
    * Cree el elemento detalle del origen de datos XML llamando al `Document` método del `createElement` objeto. Pase un valor de cadena que represente el nombre del elemento al `createElement` método. Convierta el valor devuelto a `Element`. A continuación, anexe el elemento detalle al elemento raíz llamando al `root` método `appendChild` del objeto y pase el objeto de elemento detalle como argumento. Los elementos XML que se anexan al elemento detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -337,7 +337,7 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso de cada campo que aparezca en la parte estática del formulario (en el diagrama de origen de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos](#understanding-data-subgroups)de datos).
+   * Añada todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparece en la parte estática del formulario (en el diagrama de origen de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos](#understanding-data-subgroups)de datos).
    * Cree el elemento detalle del origen de datos XML llamando al `Document` método del `createElement` objeto. Pase un valor de cadena que represente el nombre del elemento al `createElement` método. Convierta el valor devuelto a `Element`. A continuación, anexe el elemento detalle al elemento raíz llamando al `root` método `appendChild` del objeto y pase el objeto de elemento detalle como argumento. Los elementos XML que se anexan al elemento detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
