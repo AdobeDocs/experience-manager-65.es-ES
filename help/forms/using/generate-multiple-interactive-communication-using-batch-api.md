@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
+source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
 
 ---
 
@@ -98,8 +98,8 @@ Para crear una comunicación interactiva a partir de registros guardados en un a
 1. Utilice la carpeta controlada para generar una comunicación interactiva:
    1. Abra la carpeta vigilada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada y coloque el archivo JSON en la carpeta recién creada.
-   1. Espere a que la carpeta vigilada procese el archivo. Cuando se inicia el procesamiento, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta de ensayo.
-   1. Abra la carpeta de salida para ver el resultado:
+   1. Espere a que la carpeta vigilada procese el archivo. Cuando se procesan inicios, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta de ensayo.
+   1. Abra la carpeta de salida para vista de la salida:
       * Al especificar la opción IMPRIMIR en Configuración de carpetas vigiladas, se genera la salida PDF para la comunicación interactiva.
       * Cuando especifica la opción WEB en Configuración de carpetas vigiladas, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
       * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
@@ -160,8 +160,8 @@ Los datos (registros) guardados en un origen de datos externo se combinan con un
 1. Utilice la carpeta controlada para generar una comunicación interactiva:
    1. Abra la carpeta vigilada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada. Coloque el archivo JSON creado en el paso 2 en la carpeta recién creada.
-   1. Espere a que la carpeta vigilada procese el archivo. Cuando se inicia el procesamiento, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta de ensayo.
-   1. Abra la carpeta de salida para ver el resultado:
+   1. Espere a que la carpeta vigilada procese el archivo. Cuando se procesan inicios, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta de ensayo.
+   1. Abra la carpeta de salida para vista de la salida:
       * Al especificar la opción IMPRIMIR en Configuración de carpetas vigiladas, se genera la salida PDF para la comunicación interactiva.
       * Cuando especifica la opción WEB en Configuración de carpetas vigiladas, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
       * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
@@ -174,7 +174,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
 
 1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de muestra que se muestra a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
 1. [Cree e implemente un proyecto de AEM con Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) en su instancia de AEM.
-1. Agregue el SDK de cliente de [AEM Forms versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior y la lista de dependencias de [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) en la lista de archivos de POm de su proyecto AEM. Por ejemplo,
+1. Añada [AEM Forms Client SDK versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior y la versión más reciente de [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) en la lista de dependencias del archivo POm de su proyecto AEM. Por ejemplo,
 
    ```XML
        <dependency>
@@ -191,7 +191,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
        </dependency>
    ```
 
-1. Abra el proyecto Java, cree un archivo .java, por ejemplo, CCMBatchServlet.java. Agregue el siguiente código al archivo:
+1. Abra el proyecto Java, cree un archivo .java, por ejemplo, CCMBatchServlet.java. Añada el siguiente código al archivo:
 
    ```java
            package com.adobe.fd.ccm.multichannel.batch.integration;
@@ -359,13 +359,13 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
 
 ### Rellenar previamente una plantilla web {#web-template}
 
-Cuando establece batchType para procesar el canal Web, la API genera un archivo JSON para cada registro de datos. Puede utilizar la siguiente sintaxis para combinar el archivo JSON con el canal Web correspondiente para generar una comunicación interactiva:
+Cuando establece batchType para procesar el Canal Web, la API genera un archivo JSON para cada registro de datos. Puede utilizar la siguiente sintaxis para combinar el archivo JSON con el Canal Web correspondiente para generar una comunicación interactiva:
 
 **Sintaxis**`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Ejemplo**: si el archivo JSON está en `C:\batch\mergedJsonPath.json` y utiliza la siguiente plantilla de comunicación interactiva: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-A continuación, la siguiente URL del nodo de publicación muestra el canal Web de la comunicación interactiva`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
+A continuación, la siguiente URL del nodo de publicación muestra el Canal Web de la comunicación interactiva`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Además de guardar los datos en el sistema de archivos, los archivos JSON se almacenan en el repositorio de CRX, el sistema de archivos, el servidor web o se pueden acceder a los datos a través del servicio de cumplimentación previa de OSGI. La sintaxis para combinar datos mediante varios protocolos es:
 
@@ -380,7 +380,7 @@ Además de guardar los datos en el sistema de archivos, los archivos JSON se alm
 
    SERVICE_NAME hace referencia al nombre del servicio de cumplimentación previa OSGI. Consulte Crear y ejecutar un servicio de relleno previo.
 
-   IDENTIFIER se refiere a cualquier metadato que requiera el servicio de rellenado previo OSGI para recuperar los datos de relleno previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
+   IDENTIFIER se refiere a cualquier metadato requerido por el servicio de rellenado previo OSGI para recuperar los datos de relleno previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
 
 * **Protocolo HTTP**
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
