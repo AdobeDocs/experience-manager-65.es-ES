@@ -8,7 +8,7 @@ discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 mini-toc-levels: 1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ac4c5ec920ed768002da1b4598590bfd9ca301f6
+source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
 
 ---
 
@@ -69,7 +69,9 @@ Después de activar un complemento, siga estas instrucciones para configurar la 
 
 ## Comprender el complemento Findreplace {#findreplace}
 
-El `findreplace` complemento no necesita ninguna configuración. Funciona como se espera, fuera de lugar.
+El `findreplace` complemento no necesita ninguna configuración. Funciona de la caja.
+
+Al utilizar la funcionalidad de reemplazo, la cadena de reemplazo que se va a reemplazar debe introducirse al mismo tiempo que la cadena de búsqueda. Sin embargo, puede seguir haciendo clic en buscar para buscar la cadena antes de reemplazarla. Si se introduce la cadena de reemplazo después de hacer clic en Buscar, la búsqueda se restablece al principio del texto.
 
 El cuadro de diálogo Buscar y reemplazar se vuelve transparente cuando se hace clic en Buscar y se vuelve opaco cuando se hace clic en reemplazar. Esto permite al autor revisar el texto que sustituirá. Si los usuarios hacen clic en reemplazar todo, el cuadro de diálogo se cierra y muestra el número de reemplazos realizados.
 
