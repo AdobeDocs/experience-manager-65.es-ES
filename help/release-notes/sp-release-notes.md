@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
+source-git-commit: a83def358e026b516add577f968dcc709357e458
 
 ---
 
@@ -131,8 +131,6 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 * La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario (NPR-31307).
 
 * La página de detalles de recursos de los recursos PDF no muestra botones de acción, excepto los botones Para colección y Añadir representación de Experience Manager, que se ejecutan en el modo de ejecución de Dynamic Media Scene7 (CQ-4286705).
-
-* Los recursos buenos de más de 2 GB ahora se pueden cargar en Dynamic Media-Scene7 (CQ-4286561).
 
 * Los recursos tardan demasiado en procesarse mediante el proceso de carga por lotes de Scene7 (CQ-4286445).
 
