@@ -1,8 +1,8 @@
 ---
-title: API de Query Builder
-seo-title: API de Query Builder
-description: La funcionalidad del Generador de consultas de uso compartido de recursos se expone mediante una API de Java y una API de REST.
-seo-description: La funcionalidad del Generador de consultas de uso compartido de recursos se expone mediante una API de Java y una API de REST.
+title: API de Consulta Builder
+seo-title: API de Consulta Builder
+description: La funcionalidad del Generador de Consultas de uso compartido de recursos se expone mediante una API de Java y una API de REST.
+seo-description: La funcionalidad del Generador de Consultas de uso compartido de recursos se expone mediante una API de Java y una API de REST.
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,18 +12,18 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
 
 ---
 
 
-# API de Query Builder{#query-builder-api}
+# API de Consulta Builder{#query-builder-api}
 
-La funcionalidad del Generador [de consultas de uso compartido de](/help/assets/assets-finder-editor.md) recursos se expone mediante una API de Java y una API de REST. Esta sección describe estas API.
+La funcionalidad del Generador [de Consultas de uso compartido de](/help/assets/assets-finder-editor.md) recursos se expone mediante una API de Java y una API de REST. Esta sección describe estas API.
 
-El generador de consultas del lado del servidor ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) aceptará una descripción de consulta, creará y ejecutará una consulta XPath, opcionalmente filtrará el conjunto de resultados y también extraerá facetas, si lo desea.
+El generador de consultas del lado del servidor ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) aceptará una descripción de la consulta, creará y ejecutará una consulta XPath, opcionalmente filtrará el conjunto de resultados y también extraerá facetas, si lo desea.
 
-La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos son un predicado de texto completo, que corresponde a la `jcr:contains()` función en XPath, y un predicado de tamaño de imagen que busca propiedades de ancho y alto en el subárbol de recursos DAM.
+La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos incluyen un predicado de texto completo, que corresponde a la `jcr:contains()` función en XPath.
 
 Para cada tipo de predicado, hay un componente ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) de evaluador que sabe cómo manejar ese predicado específico para XPath, filtrado y extracción de facetas. Es muy fácil crear evaluadores personalizados, que se conectan a través del tiempo de ejecución del componente OSGi.
 
@@ -31,15 +31,15 @@ La API de REST proporciona acceso a exactamente las mismas funciones a través d
 
 >[!NOTE]
 >
->La API de QueryBuilder se crea mediante la API de JCR. También puede consultar el JCR de Adobe Experience Manager mediante la API de JCR desde un paquete OSGi. Para obtener más información, consulte [Consulta de datos de Adobe Experience Manager mediante la API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)de JCR.
+>La API de QueryBuilder se crea mediante la API de JCR. También puede realizar la consulta del JCR de Adobe Experience Manager mediante la API de JCR desde un paquete OSGi. Para obtener más información, consulte [Consulta de datos de Adobe Experience Manager mediante la API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)de JCR.
 
 ## Sesión de Gem {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) es una serie de inmersiones técnicas en Adobe Experience Manager realizadas por expertos de Adobe. Esta sesión dedicada al creador de consultas es muy útil para una visión general y el uso de la herramienta.
+[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) es una serie de inmersiones técnicas en Adobe Experience Manager realizadas por expertos de Adobe. Esta sesión dedicada al generador de consultas es muy útil para una visión general y el uso de la herramienta.
 
 >[!NOTE]
 >
->Consulte la sesión de AEM Gem [Buscar formularios fácilmente con el querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) de AEM para obtener una descripción general detallada del generador de consultas.
+>Consulte la sesión de AEM Gem [Buscar formularios fácilmente con el querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) de AEM para obtener una descripción detallada del generador de consultas.
 
 ## Consultas de muestra {#sample-queries}
 
@@ -51,17 +51,17 @@ Para el servlet `QueryBuilder` JSON, cada ejemplo incluye un vínculo a la insta
 >
 >De forma predeterminada, el servlet json del generador de consultas muestra un máximo de 10 visitas.
 >
->La adición del siguiente parámetro permite que el servlet muestre todos los resultados de la consulta:
+>Añadir el siguiente parámetro permite que el servlet muestre todos los resultados de la consulta:
 >
 >**`p.limit=-1`**
 
 >[!NOTE]
 >
->Para ver los datos de JSON devueltos en el explorador, puede que desee utilizar un complemento como JSONView para Firefox.
+>Para vista de los datos JSON devueltos en el navegador, puede que desee utilizar un complemento como JSONView para Firefox.
 
 ### Devolución de todos los resultados {#returning-all-results}
 
-**La siguiente consulta** devolverá diez resultados **(o, para ser precisos, un máximo de diez), pero le informará del** número de visitas: que están realmente disponibles:
+La siguiente consulta **devolverá diez resultados** (o para ser precisos, un máximo de diez), pero le informará del **número de visitas:** que están realmente disponibles:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
 
@@ -73,7 +73,7 @@ path=/content
 orderby=path
 ```
 
-La misma consulta (con el parámetro `p.limit=-1`) **devolverá todos los resultados** (puede ser un número alto en función de la instancia):
+La misma consulta (con el parámetro `p.limit=-1`) **devolverá todos los resultados** (puede ser un número elevado en función de la instancia):
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.limit=-1&orderby=path`
 
@@ -92,7 +92,7 @@ El propósito del `p.guessTotal` parámetro es devolver el número apropiado de 
 
 La desventaja del parámetro es que los usuarios no ven el total exacto. Pero se puede establecer un número mínimo como p.adivinenTotal=1000 para que siempre se lea hasta 1000, así se obtienen los totales exactos para los conjuntos de resultados más pequeños, pero si es mayor que eso, solo se puede mostrar &quot;y más&quot;.
 
-Agregue `p.guessTotal=true` a la siguiente consulta para ver cómo funciona:
+Añada `p.guessTotal=true` a la consulta siguiente para ver cómo funciona:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=true&orderby=path`
 
@@ -131,19 +131,19 @@ Devolverá un número con el mismo límite predeterminado de 10 resultados con u
 
 ### Implementación de paginación {#implementing-pagination}
 
-De forma predeterminada, el Generador de consultas también proporciona el número de visitas. Dependiendo del tamaño del resultado, esto puede llevar mucho tiempo ya que determinar el recuento exacto implica comprobar cada resultado para el control de acceso. Principalmente, el total se utiliza para implementar la paginación para la interfaz de usuario del usuario final. Dado que determinar el recuento exacto puede ser lento, se recomienda utilizar la función adivinar total para implementar la paginación.
+De forma predeterminada, el Generador de Consultas también proporciona el número de visitas. Dependiendo del tamaño del resultado, esto puede llevar mucho tiempo ya que determinar el recuento exacto implica comprobar cada resultado en busca de controles de acceso. Principalmente, el total se utiliza para implementar la paginación para la interfaz de usuario del usuario final. Dado que determinar el recuento exacto puede ser lento, se recomienda utilizar la función adivinar total para implementar la paginación.
 
 Por ejemplo, la interfaz de usuario puede adaptar el siguiente método:
 
 * Obtener y mostrar el recuento preciso del número total de visitas ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) o total en la respuesta querybuilder.json) es menor o igual a 100;
-* Establezca `guessTotal` en 100 mientras realiza la llamada al Generador de consultas.
+* Establezca `guessTotal` en 100 mientras realiza la llamada al Generador de Consultas.
 
 * La respuesta puede tener el siguiente resultado:
 
    * `total=43`, `more=false` : indica que el número total de visitas es de 43. La interfaz de usuario puede mostrar hasta diez resultados como parte de la primera página y proporcionar paginación para las tres páginas siguientes. También puede utilizar esta implementación para mostrar un texto descriptivo como **&quot;43 resultados encontrados&quot;**.
-   * `total=100`, `more=true` : indica que el número total de visitas es mayor que 100 y que no se conoce el recuento exacto. La interfaz de usuario puede mostrar hasta diez como parte de la primera página y proporcionar paginación para las diez páginas siguientes. También puede utilizarla para mostrar un texto como **&quot;se encontraron más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de consultas aumentarán el límite de `guessTotal` y también de los parámetros `offset` y `limit` .
+   * `total=100`, `more=true` : indica que el número total de visitas es bueno a más de 100 y que no se conoce el recuento exacto. La interfaz de usuario puede mostrar hasta diez como parte de la primera página y proporcionar paginación para las diez páginas siguientes. También puede utilizarla para mostrar un texto como **&quot;se encontraron más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de Consultas aumentarán el límite de `guessTotal` y también de los parámetros `offset` y `limit` .
 
-`guessTotal` también debe utilizarse en casos en los que la interfaz de usuario necesite utilizar el desplazamiento infinito, para evitar que el Generador de consultas determine el recuento exacto de visitas.
+`guessTotal` también debe utilizarse en casos en los que la interfaz de usuario necesite utilizar el desplazamiento infinito, para evitar que el Generador de Consultas determine el recuento exacto de visitas.
 
 ### Buscar archivos jar y ordenarlos, los más recientes primero {#find-jar-files-and-order-them-newest-first}
 
@@ -212,7 +212,7 @@ group.1_path=/content/geometrixx/en/company/management
 group.2_path=/content/geometrixx/en/company/bod
 ```
 
-Esta consulta utiliza un *grupo* (denominado &quot; `group`&quot;), que actúa para delimitar las subexpresiones dentro de una consulta, de manera similar a como lo hacen los paréntesis en las notaciones más estándar. Por ejemplo, la consulta anterior podría expresarse en un estilo más familiar como:
+Esta consulta utiliza un *grupo* (denominado &quot; `group`&quot;), que actúa para delimitar subexpresiones dentro de una consulta, de manera similar a como lo hacen los paréntesis en las anotaciones más estándar. Por ejemplo, la consulta anterior podría expresarse con un estilo más familiar:
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
@@ -224,7 +224,7 @@ Si no `p.or` se proporciona ningún predicado, entonces todos los predicados son
 
 >[!NOTE]
 >
->No puede utilizar el mismo prefijo numérico en una sola consulta, ni siquiera para predicados diferentes.
+>No se puede utilizar el mismo prefijo numérico en una sola consulta, ni siquiera para predicados diferentes.
 
 ### Buscar propiedades {#search-for-properties}
 
@@ -357,15 +357,15 @@ p.nodedepth=5
 
 ## Más predicados {#morepredicates}
 
-Para obtener más predicados, consulte la página [Referencia del predicado del generador de](/help/sites-developing/querybuilder-predicate-reference.md)consultas.
+Para obtener más predicados, consulte la página [Referencia de predicado del generador de](/help/sites-developing/querybuilder-predicate-reference.md)Consultas.
 
 También puede consultar el [Javadoc para las `PredicateEvaluator` clases](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). El Javadoc de estas clases contiene la lista de propiedades que puede utilizar.
 
-El prefijo del nombre de clase (por ejemplo, &quot; `similar`&quot; en [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es la propiedad ** principal de la clase. Esta propiedad es también el nombre del predicado que se va a utilizar en la consulta (en minúscula).
+El prefijo del nombre de clase (por ejemplo, &quot; `similar`&quot; en [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es la propiedad ** principal de la clase. Esta propiedad también es el nombre del predicado que se va a usar en la consulta (en minúscula).
 
 Para estas propiedades principales, puede abreviar la consulta y utilizar &quot; `similar=/content/en`&quot; en lugar de la variante completa &quot; `similar.similar=/content/en`&quot;. El formulario completo debe utilizarse para todas las propiedades no principales de una clase.
 
-## Ejemplo de uso de API de Query Builder {#example-query-builder-api-usage}
+## Ejemplo de uso de la API del Generador de Consultas {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "Geometrixx";
@@ -423,15 +423,15 @@ Para estas propiedades principales, puede abreviar la consulta y utilizar &quot;
 
 >[!NOTE]
 >
->Para obtener información sobre cómo crear un paquete OSGi que utilice la API de QueryBuilder y ese paquete OSGi en una aplicación de Adobe Experience Manager, consulte [Creación de paquetes OSGi de Adobe CQ que utilicen la](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API de Query Builder.
+>Para obtener información sobre cómo crear un paquete OSGi que utilice la API de QueryBuilder y ese paquete OSGi en una aplicación de Adobe Experience Manager, consulte [Creación de paquetes OSGi de Adobe CQ que utilicen la](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API de Consulta Builder.
 
-La misma consulta ejecutada a través de HTTP mediante el servlet Query Builder (JSON):
+La misma consulta ejecutada a través de HTTP mediante el servlet Consulta Builder (JSON):
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=Geometrixx&group.1_fulltext.relPath=jcr:content&group.2_fulltext=Geometrixx&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
 ## Almacenamiento y carga de consultas {#storing-and-loading-queries}
 
-Las consultas se pueden almacenar en el repositorio para que pueda usarlas más adelante. El `QueryBuilder` proporciona el &quot; `storeQuery` método con la siguiente firma:
+Las Consultas se pueden almacenar en el repositorio para que pueda usarlas más adelante. El `QueryBuilder` proporciona el &quot; `storeQuery` método con la siguiente firma:
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
@@ -471,52 +471,52 @@ o bien el servlet json querybuilder en
 
 ### Obtención de XPath explicable mediante registro {#obtain-explain-able-xpath-via-logging}
 
-Explicar **todas** las consultas durante el ciclo de desarrollo en relación con el conjunto de índices objetivo.
+Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al conjunto de índices de destinatario.
 
-* Habilitar los registros DEBUG para QueryBuilder para obtener una consulta XPath subyacente y explicable
+* Habilitar los registros DEBUG para QueryBuilder para obtener la consulta XPath subyacente y explicable
 
    * Vaya a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Cree un nuevo registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
 
-* Una vez DEBUG se haya habilitado para la clase anterior, los registros mostrarán el XPath generado por Query Builder.
-* Copie la consulta XPath de la entrada de registro para la consulta asociada de QueryBuilder. Por ejemplo:
+* Una vez que DEBUG se haya habilitado para la clase anterior, los registros mostrarán el XPath generado por el Generador de Consultas.
+* Copie la consulta XPath de la entrada de registro de la consulta asociada de QueryBuilder. Por ejemplo:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Pegue la consulta XPath en [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para observar el plan de consulta
+* Pegue la consulta XPath en [Explicar Consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para cumplir el plan de consulta
 
-### Obtención de XPath explicable mediante el depurador Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Obtenga XPath explicable mediante el depurador de Consulta Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
 * Utilice el depurador de AEM QueryBuilder para generar una consulta XPath explicable:
 
-Explicar **todas** las consultas durante el ciclo de desarrollo en relación con el conjunto de índices objetivo.
+Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al conjunto de índices de destinatario.
 
 **Obtención de XPath explicable mediante registro**
 
-* Habilitar los registros DEBUG para QueryBuilder para obtener una consulta XPath subyacente y explicable
+* Habilitar los registros DEBUG para QueryBuilder para obtener la consulta XPath subyacente y explicable
 
    * Vaya a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Cree un nuevo registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
 
-* Una vez DEBUG se haya habilitado para la clase anterior, los registros mostrarán el XPath generado por Query Builder.
-* Copie la consulta XPath de la entrada de registro para la consulta asociada de QueryBuilder. Por ejemplo:
+* Una vez que DEBUG se haya habilitado para la clase anterior, los registros mostrarán el XPath generado por Consulta Builder.
+* Copie la consulta XPath de la entrada de registro de la consulta asociada de QueryBuilder. Por ejemplo:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Pegue la consulta XPath en [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obtener el plan de consulta
+* Pegue la consulta XPath en [Explicar Consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obtener el plan de consulta
 
-**Obtención de XPath explicable mediante el depurador Query Builder**
+**Obtenga XPath explicable mediante el depurador de Consulta Builder**
 
 * Utilice el depurador de AEM QueryBuilder para generar una consulta XPath explicable:
 
 ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. Proporcione la consulta Query Builder en el depurador Query Builder
+1. Proporcione la consulta Consulta Builder en el depurador del Generador de Consultas
 1. Ejecutar la búsqueda
 1. Obtenga el XPath generado
-1. Pegue la consulta XPath en Explicar consulta como XPath para obtener el plan de consulta
+1. Pegue la consulta XPath en Explicar Consulta como XPath para obtener el plan de consulta
 
 >[!NOTE]
 >
->Las consultas que no son de querybuilder (XPath, JCR-SQL2) se pueden proporcionar directamente a Explicar consulta.
+>Las consultas que no son de querybuilder (XPath, JCR-SQL2) se pueden proporcionar directamente para explicar la Consulta.
 
 Para ver un resumen de cómo depurar consultas con QueryBuilder, consulte el siguiente vídeo.
 
@@ -524,13 +524,13 @@ Para ver un resumen de cómo depurar consultas con QueryBuilder, consulte el sig
 >
 >[https://www.youtube.com/watch?v=BnyXjhRKYKc](https://www.youtube.com/watch?v=BnyXjhRKYKc)
 
-## Depuración de consultas con registro {#debugging-queries-with-logging}
+## Depuración de Consultas con registro {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
 >La configuración de los registradores se describe en la sección [Creación de sus propios registradores y escritores](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
 
-El resultado del registro (nivel INFO) de la implementación del generador de consultas al ejecutar la consulta descrita en Pruebas y depuración:
+Salida de registro (nivel INFO) de la implementación del generador de consultas al ejecutar la consulta descrita en Pruebas y depuración:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -547,7 +547,7 @@ com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
 
-Si tiene una consulta que utiliza evaluadores predicados que filtran o que utilizan un orden personalizado por comparador, esto también se anotará en la consulta:
+Si tiene una consulta que utiliza evaluadores predicados que filtren o que utilizan un orden personalizado por comparador, esto también se anotará en la consulta:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -566,7 +566,7 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Descripción** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder básico y API de consulta |
+| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | API básica de QueryBuilder y Consulta |
 | [com.day.cq.search.result](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | API de resultado |
 | [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
 | [com.day.cq.search.facets.bucket](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Cubos (contenidos en facetas) |
