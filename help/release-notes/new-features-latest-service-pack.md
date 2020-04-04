@@ -4,16 +4,18 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
+source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
 
 ---
 
 
 # Novedades de Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 ofrece funciones y mejoras continuas mediante Service Packs trimestrales. El enfoque le beneficia a medida que las innovaciones son más fáciles de adoptar.
+Adobe Experience Manager (6.5) le permite acceder a nuevas funciones y mejoras continuas mediante las versiones trimestrales de Service Pack. Con este enfoque, se pueden adoptar las innovaciones fácilmente.
 
-AEM Service Pack 4 (6.5.4.0) está disponible el 5 **de marzo de 2020**. En este artículo se destacan las funciones clave de la oferta Service Packs 6.5 para enriquecer el viaje de AEM.
+Experience Manager Service Pack 4 (6.5.4.0) se publicará el 5 de marzo de 2020. Se trata de una actualización importante que incluye nuevas funciones, mejoras clave solicitadas por el cliente y mejoras de rendimiento, estabilidad y seguridad, publicadas desde la disponibilidad general de la versión 6.5 en abril de 2019. Experience Manager 6.5.4.0 se puede instalar sobre Adobe Experience Manager 6.5.
+
+En este artículo se destacan las funciones incluidas en el último Service Pack 6.5, las funciones [clave incluidas en los Service Pack](#key-features-previous-service-packs)6.5 anteriores y algunas de las versiones [clave desde Experience Manager 6.5.3.0](#key-features-sice-sp3).
 
 ## AEM Sites {#aem-sites}
 
@@ -94,7 +96,7 @@ Los formularios de Experience Manager incluyen las siguientes mejoras de accesib
 
 * Cada página de un formulario adaptable ahora incluye un título y una etiqueta de punto de referencia principal.
 
-## Funciones principales de los Service Packs anteriores de AEM 6.5
+## Funciones principales de los Service Packs anteriores de AEM 6.5 {#key-features-previous-service-packs}
 
 ### Imágenes inteligentes para Dynamic Media (6.5.3.0) {#smart-imaging}
 
@@ -117,7 +119,7 @@ Tiene la opción de especificar una fecha y hora de inicio y una fecha y hora de
 
 Puede utilizar la API por lotes para generar varias comunicaciones interactivas a partir de una plantilla. La plantilla es una comunicación interactiva sin datos. La API de lote combina datos con una plantilla para generar una comunicación interactiva. La API es útil en la producción masiva de comunicaciones interactivas. Por ejemplo: facturas telefónicas, extractos de tarjetas de crédito para varios clientes. Consulte [Generación de varias comunicaciones interactivas mediante la API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)por lotes.
 
-## Versiones clave desde AEM 6.5 SP3
+## Versiones clave desde AEM 6.5 SP3 {#key-features-sice-sp3}
 
 Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las siguientes funciones que están fuera del producto principal de AEM:
 
