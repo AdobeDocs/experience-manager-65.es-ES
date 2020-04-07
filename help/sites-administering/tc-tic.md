@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: 98dd2d3e7445ceda6d96f0dd11b39d8361f1f402
+source-git-commit: d01b36770ea1cc7f8d780c49bf8c2af70915c553
 
 ---
 
@@ -77,7 +77,7 @@ Después de configurar un marco de integración de traducción, puede [asociarlo
 **Nota:** Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios](/help/sites-administering/translation.md)multilingües.
 
 Una sola configuración del marco controla cómo traducir el contenido de la página, el contenido de la comunidad y los recursos.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-65.jpg)
 
 ### Propiedades de configuración de sitios {#sites-configuration-properties}
 
