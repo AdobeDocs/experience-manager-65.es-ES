@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a83def358e026b516add577f968dcc709357e458
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -317,7 +317,7 @@ In order to see what platforms are certified to run with this release, please re
 >AEM 6.5.4.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y la actualiza a AEM 6.5.4.0, instale la versión más reciente del paquete de compatibilidad de AEM Forms después de la instalación del paquete de complemento de Forms.
 
 1. Asegúrese de que ha instalado el Service Pack de AEM.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 ### Install AEM Forms on JEE {#install-aem-forms-jee-installer}
@@ -335,6 +335,8 @@ Como es un instalador completo, el tamaño del archivo es mayor que el de la ver
 ### UberJar {#uber-jar}
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
+
+La versión actualizada de UberJar para 6.5.4.0 que incluye el paquete **com.fasterxml.jackson.core.async** está disponible en el repositorio [de](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe Public Maven.
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
