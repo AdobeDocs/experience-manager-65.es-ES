@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
+source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
 
 ---
 
@@ -81,7 +81,7 @@ Permite arrastrar y soltar elementos del modelo de formulario en el formulario a
 
    Permite editar las propiedades de un componente. Las propiedades cambian según un componente. Para ver las propiedades del contenedor de formulario adaptable:
 
-   Seleccione un componente, toque ![campo](assets/field-level.png) > Contenedor **de formulario** adaptable y, a continuación, toque ![cmppr](assets/cmppr.png).
+   Seleccione un componente, toque ![campo](assets/field-level.png) > Contenedor **[!UICONTROL de formulario]** adaptable y, a continuación, toque ![cmppr](assets/cmppr.png).
 
 * **Navegador de recursos**
 
@@ -288,9 +288,9 @@ Algunas prácticas recomendadas y puntos clave que hay que recordar al trabajar 
 * Especifique los valores de los elementos Botón de radio y Casilla de verificación con `{value}={text}` formato en las propiedades del componente.
 * El componente Archivo adjunto, de forma predeterminada, permite al usuario adjuntar un solo archivo. Sin embargo, puede configurar las propiedades del componente para que admitan varios archivos adjuntos. Además, si un usuario adjunta varios archivos con el mismo nombre de archivo, los archivos adjuntos pueden provocar algunos problemas. Por lo tanto, se recomienda asociar un identificador único para cada archivo adjunto enviado en el envío del formulario. Para ello:
 
-   1. En el servidor de AEM Forms, vaya a **Adobe Experience Manager > Herramientas > Operaciones > Consola** web.
-   1. Busque y toque el servicio **de configuración de formularios** adaptables.
-   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, active **Convertir nombres de archivo en únicos**. De forma predeterminada, está desactivado.
+   1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+   1. Busque y toque el servicio **[!UICONTROL de configuración de formularios]** adaptables.
+   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, active **[!UICONTROL Convertir nombres de archivo en únicos]**. De forma predeterminada, está desactivado.
 
 * Para permitir que los usuarios adjunten un PDF mediante el navegador Safari, asegúrese de que **application/pdf** se agrega a la propiedad Tipos de archivo admitidos del componente Archivo adjunto. Los formularios adaptables creados con la versión anterior de AEM Forms pueden contener **.pdf** en lugar de **application/pdf** en la propiedad Tipos de archivo admitidos.
 
@@ -310,7 +310,7 @@ La barra de herramientas de la página de la parte superior ofrece opciones que 
 
 * **** Regla ![](assets/ruler.png)del emulador: Permite emular el aspecto del formulario para diferentes tamaños de visualización, como tablets y teléfonos.
 
-* **Editar**: Permite seleccionar otros modos como: **Editar, Estilo, Desarrollador y Diseño**.
+* **Editar**: Permite seleccionar otros modos como: **[!UICONTROL Editar]**, **[!UICONTROL Estilo]**, **[!UICONTROL Desarrollador]** y **[!UICONTROL Diseño]**.
 
    * **Editar**: Permite editar las propiedades del formulario y sus componentes. Por ejemplo, agregar un componente, soltar una imagen y especificar campos obligatorios.
    * **Estilo**: Permite aplicar estilo al aspecto de los componentes del formulario. Por ejemplo, en el modo de estilo, puede seleccionar un panel y especificar su color de fondo.
@@ -330,7 +330,7 @@ La barra de herramientas de la página de la parte superior ofrece opciones que 
 
 Al seleccionar un componente, verá una barra de herramientas que le permite trabajar con él. Se obtienen opciones para cortar, pegar, mover y especificar propiedades de los componentes. Sus opciones son:
 
-A.**Configure**: Al tocar **Configurar**, las propiedades de los componentes están visibles en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se gestionan los datos introducidos por el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y usarlos para un procesamiento posterior. Las propiedades del contenedor de formulario adaptable permiten especificar las bibliotecas de cliente, los diseños, las Temáticas, el Documento de la configuración de registro, la configuración de guardado, la configuración de envío y la configuración de metadatos.
+A.**Configure**: Al tocar **[!UICONTROL Configurar]**, las propiedades de los componentes están visibles en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se gestionan los datos introducidos por el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y usarlos para un procesamiento posterior. Las propiedades del contenedor de formulario adaptable permiten especificar las bibliotecas de cliente, los diseños, las Temáticas, el Documento de la configuración de registro, la configuración de guardado, la configuración de envío y la configuración de metadatos.
 
 B.**Copy**: Puede utilizar la opción de copia para copiar un componente y pegarlo en otros lugares del formulario. Al pegar un componente, el componente pegado obtiene un nuevo nombre de elemento pero conserva las propiedades del componente copiado.
 
@@ -348,7 +348,7 @@ H. **Grupo**: Permite seleccionar varios componentes si desea cortar, copiar o p
 
 I. **Principal**: Permite seleccionar el elemento principal de un componente. Por ejemplo, un campo de texto se encuentra dentro de una subsección, que reside en una sección. La sección reside en el panel raíz de la guía y el contenedor de formulario adaptable es el principal de un panel raíz de guía. Para un componente, puede ver todas las opciones con la jerarquía ordenada en la parte inferior.
 
-Por ejemplo, si toca **Principal** para un cuadro de texto, puede ver:
+Por ejemplo, si toca **[!UICONTROL Principal]** para un cuadro de texto, puede ver:
 
 * Subsección
 * Sección
@@ -371,7 +371,7 @@ La página de formulario adaptable es el formulario real. Es como cualquier otra
 
 La estructura de contenido suele contener los siguientes componentes principales:
 
-* **guideContainer**: Raíz de un formulario adaptable, que se marca como **Inicio de un formulario** adaptable en la interfaz de usuario del formulario adaptable. En este componente, puede especificar:
+* **guideContainer**: Raíz de un formulario adaptable, que se marca como **[!UICONTROL Inicio de un formulario]** adaptable en la interfaz de usuario del formulario adaptable. En este componente, puede especificar:
 
    * *Diseño móvil del formulario* adaptable: Define el aspecto del formulario en dispositivos móviles.
    * *Página* de agradecimiento: Define la página a la que se redirige al usuario después de enviar el formulario.
@@ -380,7 +380,7 @@ La estructura de contenido suele contener los siguientes componentes principales
 
 * **rootPanel:** Panel raíz de un formulario adaptable. Puede contener subpaneles en el nodo items. Cada panel, incluido el panel raíz, puede tener un diseño asociado. La presentación del panel dicta el diseño del formulario. Por ejemplo, en la maquetación Acordeón, sus elementos están dispuestos como pasos de Acordeón.
 
-* **barra de herramientas:** Un contenedor de formulario adaptable tiene una barra de herramientas global asociada, que es global para el formulario. Esta barra de herramientas se puede agregar mediante la acción **Añadir barra de herramientas** de la barra de edición, que permite a los autores agregar acciones como Enviar, Guardar, Restablecer, etc.
+* **barra de herramientas:** Un contenedor de formulario adaptable tiene una barra de herramientas global asociada, que es global para el formulario. Esta barra de herramientas se puede agregar mediante la acción **[!UICONTROL Añadir barra de herramientas]** de la barra de edición, que permite a los autores agregar acciones como Enviar, Guardar, Restablecer, etc.
 
 * **recursos:** Este nodo contiene información adicional utilizada para la creación de formularios. Por ejemplo, detalles del modelo de formulario, detalles de localización, etc.).
 
