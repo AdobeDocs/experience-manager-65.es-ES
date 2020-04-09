@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
+source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
 
 ---
 
@@ -151,8 +151,8 @@ Además, la consola proporciona información útil sobre las versiones:
 
 En el siguiente ejemplo:
 
-* Las versiones de **Camisas** se purgan porque su edad de versión es buena a 2 días.
-* ¡La moda **Tonga!** las versiones se purgan porque el número de versiones es bueno a 5.
+* Las **[!DNL Shirts]** versiones se purgan porque su edad de versión es buena en 2 días.
+* Las **[!DNL Tonga Fashions!]** versiones se purgan porque su número de versiones es bueno a 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -361,7 +361,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    `org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro configurando:
    * un tamaño máximo de archivo
    * una programación de fecha y hora
-   para indicar cuándo se creará un nuevo archivo (y se cambiará el nombre del archivo existente según el patrón de nombre).
+   para indicar cuándo se creará un archivo nuevo (y se cambiará el nombre del archivo existente según el patrón de nombre).
    * Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
    * Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
    El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
@@ -1034,7 +1034,7 @@ Si el sistema se está quedando sin memoria, esto se puede ver de varias maneras
 
 En estos casos, compruebe:
 
-* la configuración de JVM utilizada para [inicio de AEM](/help/sites-deploying/deploy.md#getting-started)
+* La configuración de JVM utilizada para [inicio de AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
    * [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
