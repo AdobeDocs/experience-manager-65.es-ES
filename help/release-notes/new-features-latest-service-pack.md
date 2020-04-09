@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -98,9 +98,13 @@ Los formularios de Experience Manager incluyen las siguientes mejoras de accesib
 
 ## Funciones principales de los Service Packs anteriores de AEM 6.5 {#key-features-previous-service-packs}
 
-### Imágenes inteligentes para Dynamic Media (6.5.3.0) {#smart-imaging}
+### Imágenes inteligentes para Dynamic Media {#smart-imaging}
 
 Las imágenes inteligentes utilizan las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes correctas optimizadas para su experiencia, lo que mejora el rendimiento y la participación. Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](../assets/imaging-faq.md).
+
+### Recorte inteligente en perfiles de vídeo para medios dinámicos (6.5.3.0) {#smart-crop-video}
+
+El recorte inteligente para vídeo, una función opcional disponible en Perfiles de vídeo, es una herramienta que utiliza la potencia de la inteligencia artificial en Adobe Sensei para detectar y recortar automáticamente el punto focal en cualquier vídeo adaptable o vídeo progresivo que haya cargado, independientemente del tamaño. Consulte [Acerca del uso de recortes inteligentes en perfiles](../assets/video-profiles.md)de vídeo.
 
 ### Búsqueda visual de AEM Assets (6.5.2.0) {#visual-search}
 
@@ -151,7 +155,7 @@ Entre el 12 de diciembre de 2019 y el 5 de marzo de 2020, Adobe lanzó las sigui
 
 * Recursos AEM: Desktop App 2.0.1.1
 
-   Consulte [Obtener acceso de escritorio a los recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+   Consulte [Obtener acceso de escritorio a los recursos](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens: Feature Pack 202001
 
