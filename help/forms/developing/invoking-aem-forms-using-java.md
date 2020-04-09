@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 3fe5f243c3e39029c1605a1a1977a48dba595d64
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -64,7 +64,9 @@ Para invocar mediante programación un servicio de AEM Forms mediante la API de 
 * El servicio AEM Forms que se va a invocar. Una aplicación cliente puede invocar uno o más servicios.
 * Modo en el que desea invocar un servicio de AEM Forms. Puede utilizar el modo EJB o SOAP. (Consulte [Configuración de propiedades](invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
 
->[!NOTE] (Solo llave en mano) Inicio el servidor de AEM Forms con el comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` para especificar una IP de servidor para EJB
+>[!NOTE]
+>
+>(Solo llave en mano) Inicio el servidor de AEM Forms con el comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` para especificar una IP de servidor para EJB
 
 * Servidor de aplicaciones J2EE en el que se implementa AEM Forms.
 
@@ -97,7 +99,7 @@ La siguiente tabla lista los archivos JAR necesarios para invocar los servicios 
    <td><p>&lt;directorio<i>de</i>instalación&gt;/sdk//client-libs/&lt;servidor de aplicaciones&gt;</p></td>
   </tr>
   <tr>
-   <td><p>adobe-application-manager-client-sdk.jar</p></td>
+   <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Necesario para invocar el servicio Application Manager.</p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -137,7 +139,7 @@ La siguiente tabla lista los archivos JAR necesarios para invocar los servicios 
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-encoding-client.jar</p></td>
+   <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Necesario para invocar el servicio de cifrado.</p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -177,7 +179,7 @@ La siguiente tabla lista los archivos JAR necesarios para invocar los servicios 
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-reader-Extensions-client.jar</p></td>
+   <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>Necesario para invocar el servicio de extensiones de Acrobat Reader DC.</p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -190,12 +192,12 @@ La siguiente tabla lista los archivos JAR necesarios para invocar los servicios 
    <td>
     <ul>
      <li><p>adobe-rightsmanagement-client.jar</p></li>
-     <li><p>Área de nombres.jar</p></li>
+     <li><p>namespace.jar</p></li>
      <li><p>jaxb-api.jar</p></li>
      <li><p>jaxb-impl.jar</p></li>
      <li><p>jaxb-libs.jar</p></li>
      <li><p>jaxb-xjc.jar</p></li>
-     <li><p>relajngDataType.jar</p></li>
+     <li><p>relaxngDatatype.jar</p></li>
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>Necesario para invocar el servicio Rights Management.</p><p>Si AEM Forms se implementa en JBoss, incluya todos estos archivos. </p></td>
@@ -212,7 +214,7 @@ La siguiente tabla lista los archivos JAR necesarios para invocar los servicios 
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-trust-store-client.jar</p></td>
+   <td><p>adobe-truststore-client.jar</p></td>
    <td><p>Necesario para invocar el servicio de almacén de confianza. </p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -235,11 +237,11 @@ La siguiente tabla lista los archivos JAR que dependen del modo de conexión y d
   <tr>
    <td>
     <ul>
-     <li><p>activación.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collection-3.1.jar</p> </li>
-     <li><p>commons-discover.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
      <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
      <li><p>jaxen-1.1-beta-9.jar</p> </li>
@@ -259,7 +261,7 @@ La siguiente tabla lista los archivos JAR que dependen del modo de conexión y d
    <td><p>&lt;<em>install directory</em>&gt;/sdk/client-libs/thirdparty</p> </td>
   </tr>
   <tr>
-   <td><p> jpatrón-client.jar</p> </td>
+   <td><p> jboss-client.jar</p> </td>
    <td><p>si AEM Forms se implementa en JBoss Application Server, incluya este archivo JAR.</p> <p>Las clases requeridas no serán encontradas por el cargador de clase si jpatrón-client.jar y las tarros a las que se hace referencia no están ubicadas de manera conjunta.</p> </td>
    <td><p>Directorio de biblioteca de cliente JBoss</p> <p>Si implementa la aplicación cliente en el mismo servidor de aplicaciones J2EE, no es necesario incluir este archivo.</p> </td>
   </tr>
@@ -308,7 +310,7 @@ En la tabla siguiente se especifican los escenarios de invocación y se lista lo
      <li><p>adobe-usermanager-client.jar</p> </li>
     </ul>
     <ul>
-     <li>jpatrón-client.jar</li>
+     <li>jboss-client.jar</li>
     </ul>
     <ul>
      <li>adobe-forms-client.jar<br /> </li>
@@ -325,12 +327,12 @@ En la tabla siguiente se especifican los escenarios de invocación y se lista lo
      <li><p>adobe-usermanager-client.jar</p> </li>
     </ul>
     <ul>
-     <li>jpatrón-client.jar<br /> </li>
+     <li>jboss-client.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul>
     <ul>
      <li><p>adobe-forms-client.jar</p> </li>
-     <li><p>adobe-reader-Extensions-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
      <li><p>adobe-signatures-client.jar</p> </li>
     </ul> </td>
   </tr>
@@ -343,11 +345,11 @@ En la tabla siguiente se especifican los escenarios de invocación y se lista lo
      <li><p>adobe-livecycle-client.jar</p> </li>
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
-     <li><p>activación.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collection-3.1.jar</p> </li>
-     <li><p>commons-discover.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
      <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
      <li><p>jai_imageio.jar</p> </li>
@@ -372,11 +374,11 @@ En la tabla siguiente se especifican los escenarios de invocación y se lista lo
      <li><p>adobe-livecycle-client.jar</p> </li>
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
-     <li><p>activación.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collection-3.1.jar</p> </li>
-     <li><p>commons-discover.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
      <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
      <li><p>jai_imageio.jar</p> </li>
@@ -390,7 +392,7 @@ En la tabla siguiente se especifican los escenarios de invocación y se lista lo
      <li><p>xbean.jar</p> </li>
      <li><p>xercesImpl.jar</p> </li>
      <li><p>adobe-forms-client.jar</p> </li>
-     <li><p>adobe-reader-Extensions-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
      <li><p>adobe-signatures-client.jar</p> </li>
     </ul> </td>
   </tr> xmp-uti
