@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -87,7 +87,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
    El componente de asignación de tarea asigna la tarea, creada por el flujo de trabajo, a un usuario o grupo. Junto con la asignación de la tarea, puede utilizar el componente para especificar un formulario adaptable o un PDF no interactivo para la tarea. El formulario adaptable es necesario para aceptar datos introducidos por los usuarios y se utiliza un PDF no interactivo o un formulario adaptable de sólo lectura para flujos de trabajo solo de revisión.
 
-   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asigne la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso de asignación de tarea, consulte Flujo de trabajo centrado en [formularios en OSGi - documento de referencia](../../forms/using/aem-forms-workflow.md) de pasos.
+   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asigne la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso de asignación de tareas, consulte Flujo de trabajo centrado en [formularios en OSGi - documento de referencia](../../forms/using/aem-forms-workflow.md) de pasos.
 
    ![workflow-editor](assets/workflow-editor.png)
 
@@ -101,13 +101,13 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
    Utilice el editor de expresiones para crear expresiones de enrutamiento para las ramas 1 y 2. Estas expresiones de enrutamiento ayudan a elegir una rama en función de la acción del usuario en la Bandeja de entrada de AEM.
 
-   **expresión de Enrutamiento para la ramificación 1**
+   **expresión de Enrutamiento para la ramificación 2**
 
    Cuando un usuario toca **Aprobar** en la bandeja de entrada de AEM, se activa la rama 1.
 
    ![Ejemplo de división OR](assets/orsplit_branch1_active_new.png)
 
-   **expresión de Enrutamiento para la ramificación 1**
+   **expresión de Enrutamiento para la ramificación 2**
 
    Cuando un usuario toca **Rechazar** en la bandeja de entrada de AEM, se activa la rama 2.
 
@@ -251,7 +251,7 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
 
    | Campo | Descripción |
    |---|---|
-   | Filtro de asignador de cargas útiles | Cuando se crea una carpeta vigilada, se crea una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir una secuencia de comandos para asignar un flujo de trabajo de AEM para aceptar entradas de la estructura de carpetas observada. Hay una implementación lista para usar disponible que se muestra en el filtro del asignador de carga útil. Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
+   | Filtro de asignador de cargas útiles | Cuando se crea una carpeta vigilada, se crea una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir una secuencia de comandos para asignar un flujo de trabajo de AEM y aceptar entradas de la estructura de carpetas observada. Hay una implementación lista para usar disponible que se muestra en el filtro del asignador de carga útil. Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
 
    La ficha Avanzado contiene más campos. La mayoría de estos campos contienen un valor predeterminado. Para obtener más información sobre todos los campos, consulte el artículo [Crear o configurar una carpeta](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) vigilada.
 
@@ -271,4 +271,4 @@ Puede utilizar los pasos Asignar Tarea y Enviar correo electrónico de los Flujo
 
 ### Purgar instancias de flujo de trabajo {#purge-workflow-instances}
 
-Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, de modo que puede depurar regularmente instancias de flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte Depuración [regular de instancias]de flujo de trabajo (/help/sites-administering/workflows-administering.md#normal purgar instancias de flujo de trabajo).
+Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, de modo que puede depurar regularmente instancias de flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte Depuración [regular de instancias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de flujo de trabajo.
