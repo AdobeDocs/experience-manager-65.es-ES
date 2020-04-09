@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -231,7 +231,7 @@ Puede utilizar un tema en varios formularios adaptables y comunicaciones interac
 
 ![Componentes estabilizables en la barra lateral](assets/stylable-components.png)
 
-Opciones en la barra lateral que permiten seleccionar y aplicar estilo a diferentes componentes.
+Opciones de la barra lateral que permiten seleccionar y aplicar estilo a diferentes componentes.
 
 Al hacer clic en el botón de edición de un componente en la barra lateral, se selecciona el componente en Lienzo y se le permite aplicar estilo al componente mediante las opciones de la barra lateral.
 
@@ -415,7 +415,7 @@ Las opciones para personalizar estilos de estado varían para los diferentes com
    <td><p>Permite agregar efectos especiales a los componentes, como opacidad, modo de mezcla y sombras. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzado  </p> </td>
+   <td><p>Avanzado   </p> </td>
    <td><p>Permite agregar:</p>
     <ul>
      <li>Propiedades para <code>::before</code> y <code>::after</code> pseudoelementos para agregar contenido después o antes del contenido predeterminado en el selector y aplicarle estilo.<br /> Consulte <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudoelementos</a>CSS.</li>
@@ -564,7 +564,7 @@ Para aplicar un tema a una comunicación interactiva:
 
    Puede editar las propiedades del formulario en la barra lateral.
 
-1. En la barra lateral, debajo de** Básico**, seleccione el tema en la lista desplegable **Tema** y haga clic en el botón de **verificación** Listo ![.](assets/check-button.png)
+1. En la barra lateral, en **Básico**, seleccione el tema en la lista desplegable **Tema** y haga clic en el botón de **verificación** Listo ![.](assets/check-button.png)
 
 ### Cambiar el tema de un formulario en tiempo de ejecución {#change-theme-of-a-form-at-runtime}
 
