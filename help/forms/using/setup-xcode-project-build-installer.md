@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -72,7 +72,7 @@ Para obtener información detallada sobre la firma de código y la adición de d
 1. Extraiga el archivo en el `[User_Home]/Projects/[your-project]`directorio.
 1. Vaya al directorio del ` [User_Home]/Projects/ `[proyecto]`/adobe-lc-mobileworkspace-src-[version]/ios` .
 1. Abra el `AEM Forms.xcodeproj` proyecto en Xcode.
-1. Haga clic en **AEM Forms** y, en **DESTINATARIOS**, seleccione **AEM Forms**. Seleccione la ficha **Configuración de compilación **, localice la sección Asignación de derechos **de firma de** código y, en los campos Depurar y liberar, realice una de las siguientes acciones:
+1. Haga clic en **AEM Forms** y, en **DESTINATARIOS**, seleccione **AEM Forms**. Seleccione la ficha **Generar configuración** , busque la sección Asignación de derechos **de firma de** código y, en los campos Depurar y liberar, realice una de las siguientes acciones:
 
    * Deje los campos sin especificar para crear una aplicación estándar de Mobile Workspace
    * Especifique los campos a los que se explica en [Creación de una aplicación segura de AEM Forms para iOS](/help/forms/using/building-secure-mobile-workspace-app.md) para crear una aplicación segura de AEM Forms.
