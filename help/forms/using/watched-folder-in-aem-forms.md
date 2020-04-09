@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,8 +23,7 @@ Un administrador puede configurar una carpeta de red, conocida como carpeta vigi
 
 Puede utilizar uno de los siguientes métodos para crear una carpeta vigilada en el sistema de archivos:
 
-* Mientras configura las propiedades de un nodo de configuración Carpeta vigilada, escriba la ruta completa del directorio principal en la propiedad folderPath y anexe el nombre de la Carpeta vigilada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`\
-   La `MyWatchedFolder`carpeta no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
+* Mientras configura las propiedades de un nodo de configuración Carpeta vigilada, escriba la ruta completa del directorio principal en la propiedad folderPath y anexe el nombre de la Carpeta vigilada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`La `MyWatchedFolder`carpeta no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un extremo de Carpeta vigilada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte Propiedades [de carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
 
@@ -82,7 +81,7 @@ Puede configurar las siguientes propiedades para una carpeta vigilada.
 
 * **outputFilePattern (String)**: Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivos. Si se especifica un patrón de carpetas, los archivos de salida tienen nombres como se describe en flujos de trabajo. Si se especifica un patrón de archivos, los archivos de salida tienen nombres como se describe en el patrón de archivos. [El patrón](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) de archivos y carpetas también puede especificar una estructura de directorio para los archivos de salida. Es una propiedad obligatoria.
 
-* **stageFileExpirationDuration (Long, predeterminado -1)**: El número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se ha seleccionado para el procesamiento se considere como si se hubiera agotado el tiempo de espera y se hubiera marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
+* **stageFileExpirationDuration (Long, predeterminado -1)**: El número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se ha seleccionado para su procesamiento se considere que se ha agotado el tiempo de espera y se ha marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
 
    **Nota:** *Incluso cuando una entrada se marca como si se hubiera agotado el tiempo de espera con este mecanismo, puede que se esté procesando en segundo plano pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento podría incluso completarse más tarde y la salida se volcaría a la carpeta de resultados. Si el contenido no se consumió antes de que se agotara el tiempo de espera, es muy probable que se produzca un error en el procesamiento al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otra parte, si el procesamiento de la entrada nunca se activó debido a un error intermitente en el trabajo o el flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces, por supuesto, no se producirá ninguna de estas dos eventualidades. Por lo tanto, para todas las entradas de la carpeta de errores que se marcaron como errores debido a un tiempo de espera (busque los mensajes del formulario &quot;Archivo no procesado después de un tiempo significativo, marcando como error!&quot; en el registro de errores), es aconsejable analizar la carpeta de resultados (y también la propia carpeta de errores para buscar otra entrada para la misma entrada) a fin de comprobar si se ha producido alguna de las eventualidades descritas anteriormente.*
 
@@ -90,8 +89,8 @@ Puede configurar las siguientes propiedades para una carpeta vigilada.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, valor predeterminado true):** Indica si el mecanismo de caducidad solo debe activarse cuando se ha acelerado la carpeta de inspección. El mecanismo es más relevante para las carpetas de inspección con limitación, ya que un pequeño número de archivos que permanecen en un estado no procesado (debido a errores intermitentes en el trabajo o el flujo de trabajo) pueden dificultar el procesamiento de todo el lote cuando se habilita la limitación. Si esta propiedad se mantiene como true (valor predeterminado), el mecanismo de caducidad no se activará para las carpetas de inspección que no estén restringidas. Si la propiedad se mantiene como false, el mecanismo siempre se activará siempre que la propiedad stageFileExpirationDuration sea un número positivo.
 
 * **pollInterval (Long)**: Intervalo en segundos para analizar la información de la carpeta vigilada. A menos que se habilite la configuración de aceleración, el intervalo de encuesta debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría estar sobrecargado. El valor predeterminado es 5. Consulte la descripción del tamaño del lote para obtener más información. El valor del intervalo de encuesta debe ser bueno o igual a uno.
-* **excludeFilePattern (String)**: Una lista delimitada por punto y coma (;) de patrones que utiliza una carpeta vigilada para determinar qué archivos y carpetas se deben analizar y recoger. Ningún archivo o carpeta con este patrón se analiza para su procesamiento. Esta opción resulta útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que la carpeta vigilada recoge. Esto evita que la carpeta vigilada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. El valor predeterminado es null.\
-   Puede utilizar patrones [](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) de archivo para excluir:
+* **excludeFilePattern (String)**: Una lista delimitada por punto y coma (;) de patrones que utiliza una carpeta vigilada para determinar qué archivos y carpetas se deben analizar y recoger. Ningún archivo o carpeta con este patrón se analiza para su procesamiento. Esta opción resulta útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que la carpeta vigilada recoge. Esto evita que la carpeta vigilada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. El valor predeterminado es null.
+Puede utilizar patrones [](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) de archivo para excluir:
 
    * Archivos con extensiones de nombre de archivo específicas; por ejemplo, *.dat, *.xml, .pdf, *.*
    * Archivos con nombres específicos; por ejemplo, data* excluiría archivos y carpetas con el nombre data1, data2, etc.
@@ -216,16 +215,13 @@ Un servicio es una implementación personalizada de la `com.adobe.aemfd.watchfol
 
 #### Implementación personalizada de la interfaz ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-La implementación personalizada acepta un contexto de procesamiento (un objeto de tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lee documentos de entrada y parámetros de configuración desde el contexto, procesa las entradas y agrega el resultado nuevamente al\
-contexto. ProcessorContext tiene las siguientes API:
+La implementación personalizada acepta un contexto de procesamiento (un objeto de tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lee documentos de entrada y parámetros de configuración desde el contexto, procesa las entradas y agrega el resultado nuevamente al contexto. ProcessorContext tiene las siguientes API:
 
 * **getWatchFolderId**: Devuelve el ID de la carpeta vigilada.
 * **getInputMap**: Devuelve un mapa de tipo Map. Las claves del mapa son el nombre del archivo de entrada y un objeto documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
-* **getConfigParameters**: Devuelve un mapa inmutable de tipo Map. El mapa contiene\
-   los parámetros de configuración de una carpeta vigilada.
+* **getConfigParameters**: Devuelve un mapa inmutable de tipo Map. El mapa contiene los parámetros de configuración de una carpeta vigilada.
 
-* **setResult**: Implementación de ContentProcessor\
-   utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida a la API setResult. La API puede elegir usar o ignorar el archivo proporcionado según el patrón de carpeta o archivo de salida especificado. Si se especifica un patrón de carpetas, los archivos de salida tienen nombres como se describe en flujos de trabajo. Si se especifica un patrón de archivos, los archivos de salida tienen nombres como se describe en el patrón de archivos.
+* **setResult**: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida a la API setResult. La API puede elegir usar o ignorar el archivo proporcionado según el patrón de carpeta o archivo de salida especificado. Si se especifica un patrón de carpetas, los archivos de salida tienen nombres como se describe en flujos de trabajo. Si se especifica un patrón de archivos, los archivos de salida tienen nombres como se describe en el patrón de archivos.
 
 Por ejemplo, el siguiente código es una implementación personalizada de la interfaz ContentProcessor con una propiedad foo=bar personalizada.
 
@@ -276,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -298,8 +294,8 @@ Ahora puede utilizar la ubicación personalizada configurada para guardar las se
 Los Flujos de trabajo le permiten automatizar las actividades de Experience Manager. Los Flujos de trabajo constan de una serie de pasos que se ejecutan en un orden específico. Cada paso realiza una actividad distinta, como activar una página o enviar un mensaje de correo electrónico. Los Flujos de trabajo pueden interactuar con los recursos del repositorio, las cuentas de usuario y los servicios de Experience Manager. Por lo tanto, los flujos de trabajo pueden coordinarse de forma complicada.
 
 * Antes de crear un flujo de trabajo, tenga en cuenta los siguientes puntos:
-* El resultado de un paso debe estar disponible para todos los pasos subsiguientes.\
-   Los pasos deben poder actualizar (o incluso eliminar) los productos existentes generados por los pasos anteriores.
+* El resultado de un paso debe estar disponible para todos los pasos subsiguientes.
+Los pasos deben poder actualizar (o incluso eliminar) los productos existentes generados por los pasos anteriores.
 * Las variables múltiples se utilizan para el flujo de datos dinámicos personalizados entre los pasos.
 
 Realice los siguientes pasos para procesar archivos mediante flujos de trabajo:
@@ -347,7 +343,7 @@ Consideración de la API setResult cuando se utiliza en flujos de trabajo:
 >
 >Si se llama a la API setResult con contenido nulo en cualquier otro escenario, se producirá un error.
 
-El siguiente ejemplo se implementa como un paso del flujo de trabajo. En el ejemplo, ECMAscript utiliza una variable stepCount para rastrear el número de veces que se llama a un paso en la instancia de flujo de trabajo actual.\
+El siguiente ejemplo se implementa como un paso del flujo de trabajo. En el ejemplo, ECMAscript utiliza una variable stepCount para rastrear el número de veces que se llama a un paso en la instancia de flujo de trabajo actual.
 El nombre de la carpeta de salida es una combinación del número de paso actual, el nombre del archivo original y el prefijo especificado en el parámetro outPrefix.
 
 ECMAScript obtiene una referencia del servicio de contexto de flujo de trabajo y crea una implementación de la interfaz WorkflowContextProcessor. La implementación WorkflowContextProcessor acepta archivos de entrada, los copia en una ubicación temporal y devuelve un documento que representa el archivo copiado. En función del valor de la variable booleana purgePrevious, el paso actual elimina el resultado generado por última vez en el mismo paso cuando se inició el paso en la instancia de flujo de trabajo actual. Al final, se invoca el método wfSvc.execute para ejecutar la implementación WorkflowContextProcessor. El contenido del documento de salida se guarda en la carpeta de resultados en la ruta de acceso física mencionada en el nodo de configuración Carpeta vigilada.
@@ -366,8 +362,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +374,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -631,8 +627,8 @@ ECMAScript utilizaría la API createPDF del generador de PDF para convertir docu
 
 ### Crear un flujo de trabajo {#create-a-workflow}
 
-1. Abra la interfaz de usuario de flujo de trabajo de AEM en una ventana del navegador.\
-   https://[nombredeservidor]:&#39;puerto&#39;/workflow
+1. Abra la interfaz de usuario de flujo de trabajo de AEM en una ventana del navegador.
+https://[nombredeservidor]:&#39;puerto&#39;/workflow
 
 1. En la vista Modelos, haga clic en **Nuevo**. En el cuadro de diálogo Nuevo flujo de trabajo, especifique **Título** y haga clic en **Aceptar**.
 
@@ -642,7 +638,7 @@ ECMAScript utilizaría la API createPDF del generador de PDF para convertir docu
 
 1. Elimine el paso predeterminado del flujo de trabajo. Arrastre y suelte el paso de proceso desde la barra de tareas hasta el flujo de trabajo.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Haga clic con el botón derecho en el paso de proceso y seleccione **Editar**. Aparece la ventana Propiedades del paso.
 
@@ -660,8 +656,8 @@ ECMAScript utilizaría la API createPDF del generador de PDF para convertir docu
 
 1. Añada las siguientes propiedades en el nodo:
 
-   * folderPath (String): Ruta de la carpeta que se va a analizar en intervalos de tiempo definidos. La carpeta debe estar en una ubicación compartida con todos los servidores con acceso completo al servidor.\
-      inputProcessorType (String): Tipo de proceso que se va a inicio. En este tutorial, especifique el flujo de trabajo.
+   * folderPath (String): Ruta de la carpeta que se va a analizar en intervalos de tiempo definidos. La carpeta debe estar en una ubicación compartida con todos los servidores con acceso completo al servidor.
+inputProcessorType (String): Tipo de proceso que se va a inicio. En este tutorial, especifique el flujo de trabajo.
 
    * inputProcessorId (String): El comportamiento de la propiedad inputProcessorId se basa en el valor especificado para la propiedad inputProcessorType. En este ejemplo, el valor de la propiedad inputProcessorType es workflow. Por lo tanto, para la propiedad inputProcessorId, especifique la siguiente ruta del flujo de trabajo del PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
