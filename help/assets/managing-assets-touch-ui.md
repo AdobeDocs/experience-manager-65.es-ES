@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
 
 ---
 
@@ -27,7 +27,7 @@ Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágen
 1. En el campo **[!UICONTROL Título]** , especifique un nombre de carpeta. De forma predeterminada, DAM utiliza el título que ha proporcionado como nombre de carpeta. Una vez creada la carpeta, puede anular el valor predeterminado y especificar otro nombre de carpeta.
 1. Haga clic en **[!UICONTROL Crear]**. La carpeta se muestra en la carpeta de recursos digitales.
 
-No se admiten los siguientes caracteres (lista de caracteres separados por espacios):
+No se admiten los siguientes caracteres (lista separada por espacios):
 
 * Un nombre de archivo de recurso no puede contener ninguno de estos caracteres: `* / : [ \\ ] | # % { } ? &`
 * El nombre de una carpeta de recursos no puede contener ninguno de estos caracteres: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -47,7 +47,7 @@ Puede cargar varios tipos de recursos (como imágenes, archivos PDF, archivos RA
 
 Puede elegir cargar recursos en carpetas con o sin un perfil de procesamiento asignado a ellas.
 
-Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **de procesamiento** . Consulte Perfiles [de procesamiento](/help/assets/processing-profiles.md).
+Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **de** procesamiento. Consulte Perfiles [de procesamiento](/help/assets/processing-profiles.md).
 
 Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/assets-formats.md) compatible con Recursos AEM.
 
@@ -60,7 +60,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-   Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Toque el icono **[!UICONTROL Pausa]** junto a la barra de progreso que aparece cuando se inicia una carga.
+   Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Puntee en el icono **[!UICONTROL Pausa]** situado junto a la barra de progreso que aparece cuando se produce un inicio de carga.
 
    ![chlimage_1-211](assets/chlimage_1-5.png)
 
@@ -76,7 +76,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, AEM Assets elimina la parte parcialmente cargada del recurso.
 
-   La capacidad de reanudar la carga resulta especialmente útil en situaciones de bajo ancho de banda y problemas de red, donde la carga de un recurso de gran tamaño tarda mucho tiempo. Puede pausar la operación de carga y continuar más tarde cuando mejore la situación. Cuando se reanuda, la carga comienza desde el punto en el que se detuvo.
+   La capacidad de reanudar la carga resulta especialmente útil en situaciones de bajo ancho de banda y problemas de red, donde la carga de un recurso de gran tamaño tarda mucho tiempo. Puede pausar la operación de carga y continuar más tarde cuando mejore la situación. Cuando se reanuda, se cargan inicios desde el punto en el que se detuvo.
 
    Durante la operación de carga, AEM guarda las partes del recurso que se cargan como fragmentos de datos en el repositorio de CRX. Una vez completada la carga, AEM consolida estos fragmentos en un solo bloque de datos en el repositorio.
 
@@ -98,17 +98,17 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    >[!NOTE]
    >
-   >El cuadro de diálogo [!UICONTROL Duplicados detectados] solo aparece cuando la función de detección de duplicados está activada. Para habilitar la función de detección de duplicados, consulte [Habilitar detección](/help/assets/duplicate-detection.md)de duplicados.
+   >El cuadro de diálogo [!UICONTROL Duplicados detectados] solo aparece cuando la función de detección de duplicados está activada. Para habilitar la función de detección de duplicado, consulte [Activar detección](/help/assets/duplicate-detection.md)de Duplicado.
 
    ![chlimage_1-214](assets/chlimage_1-8.png)
 
-   Para conservar el recurso duplicado en Recursos AEM, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
+   Para conservar el recurso de duplicado en Recursos AEM, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
 
    Recursos AEM evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, Recursos AEM muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la carga con un nombre permitido.
 
    Para adaptarse a las convenciones de nombres de archivo específicas de su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que cargue.
 
-   Sin embargo, no se admiten los siguientes caracteres (lista de) separados por espacios:
+   Sin embargo, no se admiten los siguientes caracteres (lista separada por espacios):
 
    * el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
    * el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -138,7 +138,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->Para cargar recursos mediante FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las instancias de creación de AEM. Póngase en contacto con el Servicio de atención al cliente [de](https://helpx.adobe.com/contact/enterprise-support.ec.html) Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
+>Para cargar recursos mediante FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las instancias de creación de AEM. Póngase en contacto con el Servicio de atención al cliente [de](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
 >
 >Si utiliza FTP para cargar recursos, se ignora la configuración de carga especificada en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
@@ -160,7 +160,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 1. En la esquina inferior derecha del cuadro de diálogo Opciones de trabajo de carga, toque **[!UICONTROL Guardar]**.
 1. En la esquina inferior derecha de la página Cargar, toque **[!UICONTROL Enviar carga]**.
 
-   Para ver el progreso de la carga, en la barra de navegación global, toque **[!UICONTROL Trabajos]**. La página Trabajos muestra el progreso de la carga. Puede continuar trabajando en AEM y volver a la página Trabajos de Dynamic Media Classic en cualquier momento para revisar un trabajo en curso.
+   Para vista del progreso de la carga, en la barra de navegación global, toque **[!UICONTROL Trabajos]**. La página Trabajos muestra el progreso de la carga. Puede continuar trabajando en AEM y volver a la página Trabajos de Dynamic Media Classic en cualquier momento para revisar un trabajo en curso.
 Para cancelar un trabajo de carga en curso, toque **[!UICONTROL Cancelar]** junto al tiempo de duración.
 
 #### Opciones de trabajo de carga {#upload-job-options}
@@ -175,7 +175,7 @@ Para cancelar un trabajo de carga en curso, toque **[!UICONTROL Cancelar]** junt
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas que cargue se introducirán automáticamente en Recursos AEM. |
 |  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
-|  | Opciones de perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para la entrega:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes actuales ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
+|  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
 |  | Opciones de Photoshop | Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las capas, especificar el nombre de las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> Tenga en cuenta que las plantillas no son compatibles con AEM.<br> Consulte [Configuración de las opciones](#setting-photoshop-upload-options)de carga de Photoshop. |
@@ -227,11 +227,11 @@ Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede darles f
 
 #### Definición de las opciones de carga de Photoshop {#setting-photoshop-upload-options}
 
-Los archivos de documento de Photoshop (PSD) se utilizan con mayor frecuencia para crear plantillas de imagen. Al cargar un archivo PSD, puede crear una plantilla de imagen automáticamente a partir del archivo (seleccione la opción [!UICONTROL Crear plantilla] en la pantalla Cargar).
+Los archivos Documento de Photoshop (PSD) se utilizan con mayor frecuencia para crear plantillas de imagen. Al cargar un archivo PSD, puede crear una plantilla de imagen automáticamente a partir del archivo (seleccione la opción [!UICONTROL Crear plantilla] en la pantalla Cargar).
 
 Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si se utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
 
-Utilice las opciones [!UICONTROL de] recorte y las opciones [!UICONTROL de perfil de]color descritas anteriormente con las opciones de carga de Photoshop.
+Utilice las opciones [!UICONTROL de recorte] y de Perfil [!UICONTROL de color descritas anteriormente con las opciones]de carga de Photoshop.
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Utilice las opciones [!UICONTROL de] recorte y las opciones [!UICONTROL de perfi
 
 | Opción | Subopción | Descripción |
 |---|---|---|
-| Mantener capas |  | Extrae las capas del PSD, si las hay, en recursos individuales. Las capas de recursos permanecen asociadas al PSD. Puede verlos abriendo el archivo PSD en la vista de detalles y seleccionando el panel de capas. |
+| Mantener capas |  | Extrae las capas del PSD, si las hay, en recursos individuales. Las capas de recursos permanecen asociadas al PSD. Puede realizar la vista abriendo el archivo PSD en la vista de detalles y seleccionando el panel de capas. |
 | Crear plantilla |  | Crea una plantilla a partir de las capas del archivo PSD. |
 | Extraer texto |  | Extrae el texto para que los usuarios puedan buscar texto en un visor. |
 | Extender las capas al tamaño de fondo |  | Extiende el tamaño de las capas de imagen extraídas al tamaño de la capa de fondo. |
@@ -278,11 +278,11 @@ Para transcodificar un archivo de vídeo mediante la selección de varios ajuste
 
 | Opción | Subopción | Descripción |
 |---|---|---|
-| Vídeo adaptable |  | Un ajuste preestablecido de codificación único que funciona con cualquier proporción de aspecto para crear vídeos para su distribución en dispositivos móviles, tablets y de escritorio. Los vídeos de origen cargados que se codifican con este ajuste preestablecido se definen con una altura fija. Sin embargo, la anchura se escala automáticamente para conservar la proporción de aspecto del vídeo. <br>Se recomienda utilizar la codificación de vídeo adaptable. |
+| Vídeo adaptable |  | Un ajuste preestablecido de codificación único que funciona con cualquier proporción de aspecto para crear vídeos de envío a móvil, tablet y escritorio. Los vídeos de origen cargados que se codifican con este ajuste preestablecido se definen con una altura fija. Sin embargo, la anchura se escala automáticamente para conservar la proporción de aspecto del vídeo. <br>Se recomienda utilizar la codificación de vídeo adaptable. |
 | Ajustes preestablecidos de codificación única | Ordenar ajustes preestablecidos de codificación | Seleccione Nombre o Tamaño para ordenar los ajustes preestablecidos de codificación en Escritorio, Móvil y Tablet por nombre o por tamaño de resolución. |
-|  | Escritorio | Cree un archivo MP4 para ofrecer una experiencia de vídeo progresivo o de flujo continuo a equipos de escritorio.Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
-|  | Móvil | Cree un archivo MP4 para su envío a dispositivos móviles iPhone o Android.Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
-|  | Tablet | Cree un archivo MP4 para la publicación en dispositivos iPad o tablet Android.Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
+|  | Escritorio | Cree un archivo MP4 para ofrecer una experiencia de vídeo progresivo o de flujo continuo a equipos de escritorio.Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destinatario que desee. |
+|  | Móvil | Cree un archivo MP4 para envío en dispositivos móviles iPhone o Android.Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destinatario que desee. |
+|  | Tablet | Cree un archivo MP4 para envío en dispositivos iPad o tablet Android.Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destinatario que desee. |
 
 #### Definir ajustes preestablecidos de conjunto por lotes al cargar {#setting-batch-set-presets-at-upload}
 
@@ -292,7 +292,7 @@ Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para g
 
 ### Cargas de flujo continuo {#streamed-uploads}
 
-Si carga muchos recursos en AEM, las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede hacer que se agote el tiempo de espera de alguna tarea de carga. Recursos AEM admite la carga de recursos por flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarlo en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está activada de forma predeterminada en Recursos AEM.
+Si carga muchos recursos en AEM, las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede provocar que se agote el tiempo de espera de alguna tarea de carga. Recursos AEM admite la carga de recursos por flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarla en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está activada de forma predeterminada en Recursos AEM.
 
 >[!NOTE]
 >
@@ -315,30 +315,30 @@ Algunas limitaciones de la función son:
 * No puede seleccionar dos archivos ZIP al mismo tiempo y extraerlos. Sólo puede extraer un archivo ZIP a la vez.
 * Al cargar un archivo ZIP, si el cuadro de diálogo de carga muestra un error de servidor de 500, vuelva a intentarlo después de instalar el Service Pack más reciente.
 
-## Vista previa de recursos {#previewing-assets}
+## Recursos de Previsualización {#previewing-assets}
 
-Para obtener una vista previa de un recurso, siga estos pasos.
+Para realizar la previsualización de un recurso, siga estos pasos.
 
-1. En la interfaz de usuario de Recursos, navegue hasta la ubicación del recurso cuya vista previa desee obtener.
+1. En la interfaz de usuario de Recursos, navegue a la ubicación del recurso que desee previsualización.
 1. Toque el recurso que desee para abrirlo.
 
-1. En el modo de vista previa, las opciones de zoom están disponibles para los tipos [de imagen](/help/assets/assets-formats.md#supported-raster-image-formats) admitidos (con edición interactiva).
+1. En el modo de previsualización, las opciones de zoom están disponibles para los tipos [de imagen](/help/assets/assets-formats.md#supported-raster-image-formats) admitidos (con edición interactiva).
 
    Para acercar un recurso, toque o haga clic en `+` (o toque o haga clic en la lupa del recurso). Para alejar, toque o haga clic en `-`. Al acercar, puede ver con detenimiento cualquier área de la imagen. La flecha para restablecer el zoom le lleva de nuevo a la vista original.
 
    ![upload adicon](assets/uploadicon.png)
 
-   Toque **[!UICONTROL Restablecer]** para restablecer el tamaño original de la vista.
+   Toque **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
 
-**Vista previa de recursos solo con teclas del teclado**
+**Previsualización de recursos utilizando solo teclas de teclado**
 
-Para obtener una vista previa de un recurso mediante el teclado, siga estos pasos:
+Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 1. Desde la interfaz de usuario de Recursos, desplácese hasta el recurso que desee utilizando las teclas `Tab` de flecha y flecha.
 
-1. Pulse `Enter` la tecla del recurso deseado para abrirlo. Puede acercar recursos en el modo de vista previa.
+1. Pulse `Enter` la tecla del recurso deseado para abrirlo. Puede acercar los recursos al modo de previsualización.
 
 1. Para acercar el recurso:
    1. Utilice la `Tab` tecla para mover el enfoque al icono de acercamiento.
@@ -349,13 +349,13 @@ Para obtener una vista previa de un recurso mediante el teclado, siga estos paso
 
 1. Utilice las teclas de flecha para desplazarse por la imagen ampliada.
 
-Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/previewing-assets.md)
+Consulte también [Previsualización de recursos de medios dinámicos.](/help/assets/previewing-assets.md)
 
 ## Editar propiedades y metadatos {#editing-properties}
 
 1. Navegue a la ubicación del recurso cuyos metadatos desee editar.
 
-1. Seleccione el recurso y toque o haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas para ver sus propiedades. También puede seleccionar la acción rápida **[!UICONTROL Propiedades]** en la tarjeta de recursos.
+1. Seleccione el recurso y toque o haga clic en **[!UICONTROL Propiedades]** desde la barra de herramientas hasta las propiedades del recurso de vista. También puede seleccionar la acción rápida **[!UICONTROL Propiedades]** en la tarjeta de recursos.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -363,7 +363,7 @@ Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/prev
 
    >[!NOTE]
    >
-   >El diseño de la página [!UICONTROL Propiedades] y las propiedades de metadatos disponibles dependen del esquema de metadatos subyacente. Para obtener información sobre cómo modificar el diseño de la página [!UICONTROL Propiedades] , consulte Esquemas [de metadatos](/help/assets/metadata-schemas.md).
+   >La presentación de la página [!UICONTROL Propiedades] y las propiedades de metadatos disponibles dependen del esquema de metadatos subyacente. Para obtener información sobre cómo modificar la presentación de la página [!UICONTROL Propiedades] , consulte Esquemas [](/help/assets/metadata-schemas.md)de metadatos.
 
 1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo de activación]**.
 
@@ -373,7 +373,7 @@ Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/prev
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo Tiempo de **[!UICONTROL desactivación]** . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web de Recursos ni a través de la API HTTP.
 
-   ![utilice el selector de fecha y hora o las teclas del teclado en el campo Tiempo de inactividad para agregar la fecha y hora de desactivación de recursos](assets/schedule-deactivation.png)
+   ![utilice el selector de fecha y hora o las teclas del teclado en el campo Tiempo de inactividad para agregar la fecha y la hora de la activación de recursos](assets/schedule-deactivation.png)
 
    *Figura: Programar desactivación de recursos*
 
@@ -389,7 +389,7 @@ Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/prev
 
    La puntuación de clasificación que asigne al recurso se muestra en **[!UICONTROL Sus clasificaciones]**. La puntuación media de clasificación que el recurso recibió de los usuarios que clasificaron el recurso se muestra en **[!UICONTROL Clasificación]**. Además, el desglose de las puntuaciones de clasificación que contribuyen a la puntuación de clasificación promedio se muestra en Desglose de **[!UICONTROL clasificación]**. Puede buscar recursos en función de las puntuaciones de clasificación promedio.
 
-1. Para ver las estadísticas de uso del recurso, toque o haga clic en la ficha **[!UICONTROL Perspectivas]** .
+1. Para vista de las estadísticas de uso del recurso, toque o haga clic en la ficha **[!UICONTROL Perspectivas]** .
 
    Las estadísticas de uso incluyen lo siguiente:
 
@@ -399,11 +399,11 @@ Consulte también [Vista previa de recursos de Dynamic Media.](/help/assets/prev
    Para obtener más información, consulte Perspectivas [de recursos](/help/assets/touch-ui-asset-insights.md).
 
 1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**.
-1. Vaya a la interfaz de usuario de Recursos. Las propiedades de metadatos editadas, como título, descripción, clasificaciones, etc., se muestran en la tarjeta del recurso en la vista de tarjeta y en las columnas relevantes de la vista de lista.
+1. Vaya a la interfaz de usuario de Recursos. Las propiedades de metadatos editadas, como título, descripción, clasificaciones, etc., se muestran en la tarjeta del recurso en la vista de tarjetas y en las columnas relevantes de la vista de Lista.
 
 ## Copiar recursos {#copying-assets}
 
-Al copiar un recurso o una carpeta, se copia todo el recurso o la carpeta, junto con su estructura de contenido. Un recurso copiado o una carpeta se duplica en la ubicación de destino. El recurso en la ubicación de origen no se modifica.
+Al copiar un recurso o una carpeta, se copia todo el recurso o la carpeta, junto con su estructura de contenido. Un recurso copiado o una carpeta se duplica en la ubicación del destinatario. El recurso en la ubicación de origen no se modifica.
 
 Algunos atributos que son exclusivos de una copia concreta de un activo no se arrastran. Algunos ejemplos son:
 
@@ -482,15 +482,15 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. En el panel **[!UICONTROL Representaciones]** , consulte la lista de representaciones generadas para el recurso.
+1. En el panel **[!UICONTROL Representaciones]** , vista la lista de las representaciones generadas para el recurso.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >De forma predeterminada, Recursos AEM no muestra la representación original del recurso en el modo de vista previa. Si es un administrador, puede utilizar superposiciones para configurar Recursos AEM para que muestren las representaciones originales en el modo de vista previa.
+   >De forma predeterminada, Recursos AEM no muestra la representación original del recurso en el modo de previsualización. Si es un administrador, puede utilizar superposiciones para configurar Recursos AEM para que muestren las representaciones originales en el modo de previsualización.
 
-1. Seleccione una representación para verla o eliminarla.
+1. Seleccione una representación para vista o eliminarla.
 
    **Eliminar una representación**
 
@@ -636,21 +636,21 @@ Los iconos de acción rápida están disponibles para un único recurso a la vez
 
 ### Navegación y selección de recursos {#navigating-and-selecting-assets}
 
-Puede ver, navegar y seleccionar recursos con cualquiera de las vistas disponibles (Tarjeta, Columna y Lista) mediante la opción **[!UICONTROL Seleccionar]** .
+Puede realizar la vista, navegar y seleccionar recursos con cualquiera de las vistas disponibles (Tarjeta, Columna y Lista) mediante la opción **[!UICONTROL Seleccionar]** .
 
-En la vista de lista y de columna, aparece la opción **[!UICONTROL Seleccionar]** al pasar el puntero sobre la miniatura del recurso.
+En la vista de columnas y vistas de lista, aparece la opción **[!UICONTROL Seleccionar]** cuando pasa el puntero sobre la miniatura del recurso.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
-En la vista de tarjeta, la opción **[!UICONTROL Seleccionar]** se muestra como una acción rápida.
+En la vista de tarjetas, la opción **[!UICONTROL Seleccionar]** se muestra como una acción rápida.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Si no se desplaza hacia abajo, solo se cargan 100 recursos en la vista de tarjeta y 200 en la vista de lista. La opción Seleccionar todo selecciona solo estos muchos recursos.
+Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Si no se desplaza hacia abajo, solo se cargan 100 recursos en la vista de tarjetas y 200 en la vista de listas. La opción Seleccionar todo selecciona solo estos muchos recursos.
 
-Para obtener más información, consulte [Ver y seleccionar los recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+Para obtener más información, consulte [vista y selección de recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Edición de imágenes {#editing-images}
 
@@ -663,7 +663,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
 1. Realice una de las siguientes acciones para abrir un recurso en modo de edición:
 
    * Seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
-   * Toque o haga clic en el icono **[!UICONTROL Editar]** que aparece en un recurso en la vista de tarjeta.
+   * Toque o haga clic en el icono **[!UICONTROL Editar]** que aparece en un recurso de la vista de tarjetas.
    * En la página de recursos, toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
    ![edit_icon](assets/edit_icon.png)
 
@@ -700,7 +700,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
 >
 >La edición de imágenes es compatible con los formatos de archivos BMP, GIF, PNG y JPEG.
 
-También puede agregar mapas de imagen mediante el editor de imágenes. Para obtener más información, consulte [Adición de mapas](/help/assets/image-maps.md)de imagen.
+También puede agregar mapas de imagen mediante el editor de imágenes. Para obtener más información, consulte [Añadir mapas](/help/assets/image-maps.md)de imagen.
 
 >[!NOTE]
 >
@@ -708,7 +708,7 @@ También puede agregar mapas de imagen mediante el editor de imágenes. Para obt
 
 ## Escala de tiempo {#timeline}
 
-La línea de tiempo le permite ver varios eventos para un elemento seleccionado, como flujos de trabajo activos para un recurso, comentarios/anotaciones, registros de actividades y versiones.
+La línea de tiempo permite la vista de varios eventos para un elemento seleccionado, como flujos de trabajo activos para un recurso, comentarios/anotaciones, registros de actividades y versiones.
 
 ![Ordenar entradas de línea de tiempo para un recurso](assets/sort_timeline.gif)
 
@@ -716,7 +716,7 @@ La línea de tiempo le permite ver varios eventos para un elemento seleccionado,
 
 >[!NOTE]
 >
->En la consola [](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console)Colecciones, la lista **[!UICONTROL Mostrar todo]** proporciona opciones para ver solo comentarios y flujos de trabajo. Además, la línea de tiempo solo se muestra para las colecciones de nivel superior que aparecen en la consola. No se muestra si se desplaza por alguna de las colecciones.
+>En la consola [](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console)Colecciones, la lista **[!UICONTROL Mostrar todo]** proporciona opciones solo para flujos de trabajo y comentarios de vista. Además, la línea de tiempo solo se muestra para las colecciones de nivel superior que aparecen en la consola. No se muestra si se desplaza por alguna de las colecciones.
 
 >[!NOTE]
 >
@@ -751,7 +751,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    ![chlimage_1-235](assets/chlimage_1-31.png)
 
-1. Después de agregar la anotación, haga clic en **[!UICONTROL Agregar]** para guardarla. Se envía una notificación para la anotación a Aaron.
+1. Después de agregar la anotación, haga clic en **[!UICONTROL Añadir]** para guardarla. Se envía una notificación para la anotación a Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-32.png)
 
@@ -760,15 +760,15 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >Puede agregar varias anotaciones antes de guardarlas.
 
 1. Toque o haga clic en **[!UICONTROL Cerrar]** para salir del modo de anotación.
-1. Para ver la notificación, inicie sesión en Recursos AEM con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para ver la notificación.
+1. Para vista de la notificación, inicie sesión en Recursos AEM con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
 
    >[!NOTE]
    >
    >Las anotaciones también se pueden agregar a los recursos de vídeo. Al realizar anotaciones en vídeos, el reproductor se pausa para permitirle realizar anotaciones en un marco. Para obtener más información, consulte [Gestión de recursos](/help/assets/managing-video-assets.md)de vídeo.
 
-1. Para elegir un color diferente y diferenciarlo de los usuarios, toque o haga clic en el icono Perfil y toque o haga clic en **[!UICONTROL Mis preferencias]**.
+1. Para elegir un color diferente y diferenciarlo de los usuarios, toque o haga clic en el icono de Perfil y toque o haga clic en **[!UICONTROL Mis preferencias]**.
 
-   ![Seleccione el icono de perfil de usuario y, a continuación, Mis preferencias para abrir las preferencias de usuario](assets/User-profile-preferences.png)
+   ![Seleccione el icono de perfil del usuario y, a continuación, Mis preferencias para abrir las preferencias del usuario](assets/User-profile-preferences.png)
 
    Especifique el color que desee en el cuadro **[!UICONTROL Color de anotación]** y pulse o haga clic en **[!UICONTROL Aceptar]**.
 
@@ -778,11 +778,11 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 >
 >También puede agregar anotaciones a una colección. Sin embargo, si una colección contiene colecciones secundarias, solo puede agregar anotaciones/comentarios a la colección principal. La opción Anotar no está disponible para colecciones secundarias.
 
-### Ver anotaciones guardadas {#viewing-saved-annotations}
+### Anotaciones guardadas en la Vista {#viewing-saved-annotations}
 
-1. Para ver las anotaciones guardadas de un recurso, vaya a la ubicación del recurso y abra la página del recurso.
+1. Para vista de anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
-1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Línea de tiempo]** en la lista.
+1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Cronología]** en la lista.
 
    ![chlimage_1-239](assets/chlimage_1-35.png)
 
@@ -790,7 +790,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    ![chlimage_1-240](assets/chlimage_1-36.png)
 
-   Toque o haga clic en un comentario del panel **[!UICONTROL Línea de tiempo]** para ver la anotación correspondiente en la imagen.
+   Toque o haga clic en un comentario del panel **[!UICONTROL Línea de tiempo]** para vista de la anotación correspondiente en la imagen.
 
    ![chlimage_1-241](assets/chlimage_1-37.png)
 
@@ -804,7 +804,7 @@ También puede imprimir solo las anotaciones o el estado de la revisión.
 
 Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. El icono **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene al menos una anotación o estado de revisión asignado.
 
-1. En la interfaz de usuario de Recursos, abra la página de vista previa de un recurso.
+1. En la interfaz de usuario de Recursos, abra la página de previsualización de un recurso.
 1. Realice una de las acciones siguientes:
 
    * Para imprimir todas las anotaciones y el estado de la revisión, omita el paso 3 y vaya directamente al paso 4.
@@ -893,7 +893,7 @@ También puede activar el control automático de versiones mediante un flujo de 
 La funcionalidad de versiones le permite hacer lo siguiente:
 
 * Cree una versión de un recurso.
-* Ver la revisión actual de un recurso.
+* Vista de la revisión actual de un recurso.
 * Restaure el recurso a una versión anterior.
 
 1. Vaya a la ubicación del recurso para el que desea crear una versión y toque o haga clic en él para abrir su página de recursos.
@@ -902,7 +902,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![línea de tiempo](assets/timeline.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Acciones]** (flecha) de la parte inferior para ver las acciones disponibles que puede realizar en el recurso.
+1. Toque o haga clic en el icono de **[!UICONTROL Acciones]** (flecha) de la parte inferior para vista de las acciones disponibles que puede realizar en el recurso.
 
    ![chlimage_1-249](assets/chlimage_1-45.png)
 
@@ -910,7 +910,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![chlimage_1-250](assets/chlimage_1-46.png)
 
-1. Agregue una etiqueta y un comentario y, a continuación, haga clic en **[!UICONTROL Crear]** para crear una versión. También puede tocar o hacer clic en **Cancelar** para salir de la operación.
+1. Añada una etiqueta y un comentario y, a continuación, haga clic en **[!UICONTROL Crear]** para crear una versión. También puede tocar o hacer clic en **Cancelar** para salir de la operación.
 
    ![chlimage_1-251](assets/chlimage_1-47.png)
 
@@ -918,15 +918,15 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![versions_option](assets/versions_option.png)
 
-1. Seleccione una versión específica para el recurso para previsualizarlo o habilitarlo para que aparezca en la interfaz de usuario de Recursos.
+1. Seleccione una versión específica para el recurso para realizar la previsualización o habilite su aparición en la interfaz de usuario de Recursos.
 
    ![select_version](assets/select_version.png)
 
    >[!NOTE]
    >
-   >También puede seleccionar el recurso en la vista [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Lista o en la vista [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)Columna.
+   >También puede seleccionar el recurso en la vista [de](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Lista o en la vista [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)Columna.
 
-1. Agregue una etiqueta y un comentario para que la versión vuelva a la versión concreta de la interfaz de usuario de Recursos.
+1. Añada una etiqueta y un comentario para que la versión vuelva a la versión concreta de la interfaz de usuario de Recursos.
 
    ![save_version](assets/save_version.png)
 
@@ -942,30 +942,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
 ### Inicio de un flujo de trabajo en un recurso {#starting-a-workflow-on-an-asset}
 
-1. Vaya a la ubicación del recurso para el que desea iniciar un flujo de trabajo y toque o haga clic en él para abrir la página del recurso.
-1. Puntee en el icono de GlobalNav y, a continuación, seleccione **[!UICONTROL Línea de tiempo]** en el menú para mostrar la línea de tiempo.
-
-   ![línea de tiempo-1](assets/timeline.png)
-
-1. Toque el icono **[!UICONTROL Acciones]** (flecha) de la parte inferior para abrir la lista de acciones disponibles para el recurso.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. Toque **[!UICONTROL Iniciar flujo de trabajo]** en la lista.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (Opcional) Especifique un título para el flujo de trabajo, que se puede utilizar para hacer referencia a la instancia de flujo de trabajo.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Cada paso del flujo de trabajo se muestra en la cronología como un evento.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+Para aplicar un flujo de trabajo para procesar un recurso, consulte Flujo de trabajo de [inicio en un recurso](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Colecciones {#collections}
 
