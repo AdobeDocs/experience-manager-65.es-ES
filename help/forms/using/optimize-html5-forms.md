@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -44,7 +44,7 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
 
 1. Configure el proxy en el puerto 8080 de JBoss.
 
-   Agregue la siguiente configuración al archivo de configuración *APACHE_HOME/conf/httpd.conf* .
+   Añada la siguiente configuración en el archivo de configuración *APACHE_HOME/conf/httpd.conf* .
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -56,13 +56,13 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
    >Cuando se utiliza un proxy, se requieren los siguientes cambios de configuración:
    >
    >* Acceso: *https://&lt;servidor>:&lt;puerto>/system/console/configMgr*
-   * Editar la configuración del filtro de referente de Sling de Apache
+   * Editar la configuración del filtro Remitente del reenvío Sling de Apache
    * En Permitir hosts, agregue la entrada para el servidor proxy
 
 
 1. Habilite Compresión.
 
-   Agregue la siguiente configuración al archivo de configuración *APACHE_HOME/conf/httpd.conf* .
+   Añada la siguiente configuración en el archivo de configuración *APACHE_HOME/conf/httpd.conf* .
 
    ```java
    <Location /content/xfaforms>
@@ -81,5 +81,3 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
    ```
 
 1. Para acceder al servidor AEM, utilice https://[Apache_server]:80.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
