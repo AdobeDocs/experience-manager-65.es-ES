@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -38,7 +38,7 @@ Las siguientes son las opciones globales definidas. Estas opciones están dispon
   </tr>
   <tr>
    <td>name</td>
-   <td>Identificador utilizado para especificar este objeto o suceso en expresiones de secuencia de comandos. Por ejemplo, esta propiedad especifica el nombre de la aplicación host.</td>
+   <td>Identificador utilizado para especificar este objeto o evento en expresiones de secuencias de comandos. Por ejemplo, esta propiedad especifica el nombre de la aplicación host.</td>
   </tr>
   <tr>
    <td>seleccionado</td>
@@ -70,7 +70,7 @@ Las siguientes son las opciones globales definidas. Estas opciones están dispon
   </tr>
   <tr>
    <td>access</td>
-   <td>Controles utilizados para acceder al contenido de un objeto contenedor, como un subformulario.</td>
+   <td>Controles utilizados para acceder al contenido de un objeto de contenedor, como un subformulario.</td>
   </tr>
   <tr>
    <td>paraStyles</td>
@@ -87,7 +87,7 @@ Aparte de estas opciones, la estructura ofrece otras opciones que varían según
 
 ### Interacción con el marco de formularios {#interaction-with-forms-framework}
 
-Para interactuar con el marco de formularios, una utilidad desencadena algunos sucesos para permitir que funcione la secuencia de comandos del formulario. Si la utilidad no emite estos sucesos, algunas de las secuencias de comandos escritas en el formulario para ese campo no funcionan.
+Para interactuar con la estructura de formularios, una utilidad activa algunos eventos para permitir que funcione la secuencia de comandos del formulario. Si la utilidad no emite estos eventos, algunas de las secuencias de comandos escritas en el formulario para ese campo no funcionan.
 
 #### Eventos activados por la utilidad {#events-triggered-by-widget}
 
@@ -98,20 +98,20 @@ Para interactuar con el marco de formularios, una utilidad desencadena algunos s
    <th>Descripción</th>
   </tr>
   <tr>
-   <td>XFA_ENTER_EVENT</td>
-   <td>Este evento se activa cada vez que el campo está activo. Permite que la secuencia de comandos "enter" se ejecute en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>XFA_ENTER_EVENTO</td>
+   <td>Este evento se activa cada vez que el campo está activo. Permite que la secuencia de comandos "enter" se ejecute en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENTO)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_EXIT_EVENT</td>
-   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su secuencia de comandos "exit". La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>XFA_EXIT_EVENTO</td>
+   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su secuencia de comandos "exit". La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENTO)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_CHANGE_EVENT</td>
-   <td>Este suceso se activa para permitir al motor ejecutar la secuencia de comandos de "cambio" escrita en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>XFA_CHANGE_EVENTO</td>
+   <td>Este evento se activa para permitir que el motor ejecute la secuencia de comandos de "cambio" escrita en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENTO)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_CLICK_EVENT</td>
-   <td>Este evento se activa cada vez que se hace clic en el campo. permite al motor ejecutar la secuencia de comandos de "clic" escrita en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>XFA_CLICK_EVENTO</td>
+   <td>Este evento se activa cada vez que se hace clic en el campo. permite al motor ejecutar la secuencia de comandos de "clic" escrita en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENTO)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -132,7 +132,7 @@ La estructura de apariencia llama a algunas funciones de la utilidad que se impl
   </tr>
   <tr>
    <td>haga clic en: function()</td>
-   <td>Centra la atención en el campo y llama a XFA_CLICK_EVENT.</td>
+   <td>Centra la atención en el campo y llama a XFA_CLICK_EVENTO.</td>
   </tr>
   <tr>
    <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: cadena </em>que representa el error<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Nota</strong>: Aplicable solo para formularios HTML5.</p> </td>
@@ -186,7 +186,7 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Matriz de objetos que se mostrarán como opciones. <br /> Cada objeto contiene dos propiedades -<br /> save: valor para guardar, mostrar: para mostrar. <br /> </td>
+   <td>Matriz de objetos que se mostrarán como opciones. Cada objeto contiene dos propiedades -<br /> save: valor para guardar, mostrar: para mostrar.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>editable</p> <p><strong>Nota</strong>: Aplicable solo para formularios HTML5.<br /> </p> </td>
@@ -212,8 +212,8 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><p><em> addItem: function(itemValues)<br /> itemValues: objeto que contiene el valor de visualización y guardado <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;guardar valor&gt;}</em></p> </td>
-   <td>Agrega un elemento a la lista.</td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contiene el valor de visualización y guardado <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;guardar valor&gt;}</em></p> </td>
+   <td>Añade un elemento a la lista.</td>
   </tr>
   <tr>
    <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice del elemento que se va a eliminar de la lista<br /> </em><br /><br /> </td>
@@ -267,5 +267,3 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
 | meses | Nombres de mes localizados para ese campo. |
 | zero | Texto localizado para el número 0. |
 | clearText | Texto localizado para el botón borrar. |
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
