@@ -1,15 +1,15 @@
 ---
 title: Lectores de pantalla para formularios HTML5
 seo-title: Lectores de pantalla para formularios HTML5
-description: Enumera los lectores de pantalla admitidos en los formularios HTML5.
-seo-description: Enumera los lectores de pantalla admitidos en los formularios HTML5.
+description: Lista los lectores de pantalla compatibles con los formularios HTML5.
+seo-description: Lista los lectores de pantalla compatibles con los formularios HTML5.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,5 +43,3 @@ Los formularios HTML5 admiten todas las pulsaciones de teclas y gestos predeterm
 * **(Solo en el Explorador interno 9)** El control Selector de fecha de los formularios HTML5 no es totalmente accesible con el teclado. En el control Selector de fecha, si presiona varias veces las teclas de dirección Subir/Bajar, el control Selector de fecha se cierra y el enfoque se mueve al campo siguiente/último.
 
 * VoiceOver no puede detectar las teclas de flecha en la utilidad de fecha en iPad safari.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
