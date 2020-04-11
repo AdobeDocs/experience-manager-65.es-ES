@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Visualización del avatar del usuario {#displaying-the-user-avatar}
 
-El avatar del usuario que ha iniciado sesión se muestra en la esquina superior derecha del espacio de trabajo de AEM Forms. Además, los avatares de los informes directos de la jerarquía organizativa se muestran en la vista Administrador. Puede configurar el espacio de trabajo de AEM Forms para que seleccione las imágenes de usuario de la base de datos, por ejemplo, el servidor LDAP.
+El avatar del usuario que ha iniciado sesión se muestra en la esquina superior derecha del espacio de trabajo de AEM Forms. Además, los avatares de los informes directos de la jerarquía organizativa se muestran en la Vista del Administrador. Puede configurar el espacio de trabajo de AEM Forms para que seleccione las imágenes de usuario de la base de datos, por ejemplo, el servidor LDAP.
 
 >[!NOTE]
 >
@@ -83,5 +83,3 @@ El avatar del usuario que ha iniciado sesión se muestra en la esquina superior 
 
 1. Implementar DSC a través de Workbench. Reinicie `ProcessManagementClientSessionService` el servicio.
 1. Es posible que tenga que actualizar el explorador o cerrar la sesión o volver a iniciarla con el usuario.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
