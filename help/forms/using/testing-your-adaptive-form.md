@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,7 +21,7 @@ Este tutorial es un paso de la serie [Crear su primer formulario](https://helpx.
 
 Una vez que el formulario adaptable esté listo, es importante probar el adaptador antes de extenderlo a los usuarios finales. Puede probar manualmente (pruebas funcionales) cada campo o automatizar la prueba del formulario adaptable. Cuando tiene varios formularios adaptables, la prueba manual de cada campo de todos los formularios adaptables se convierte en una tarea de enormes proporciones.
 
-AEM Forms proporciona un marco de pruebas, Calvin, para automatizar las pruebas de los formularios adaptables. Con el marco, las pruebas de interfaz de usuario se escriben y ejecutan directamente en un navegador web. El marco proporciona API de JavaScript para crear pruebas. La prueba automatizada le permite probar la experiencia de cumplimentación previa de un formulario adaptable, enviar la experiencia de un formulario adaptable, las reglas de expresión, las validaciones, la carga diferida y las interacciones con la interfaz de usuario. Este tutorial le guía por los pasos para crear y ejecutar pruebas automatizadas en un formulario adaptable. Al final de este tutorial, podrá:
+AEM Forms proporciona un marco de pruebas, Calvin, para automatizar las pruebas de los formularios adaptables. Con el marco, las pruebas de interfaz de usuario se escriben y ejecutan directamente en un navegador web. El marco proporciona API de JavaScript para crear pruebas. La prueba automatizada le permite probar la experiencia de cumplimentación previa de un formulario adaptable, enviar la experiencia de un formulario adaptable, reglas de expresión, validaciones, carga diferida e interacciones con la interfaz de usuario. Este tutorial le guía por los pasos para crear y ejecutar pruebas automatizadas en un formulario adaptable. Al final de este tutorial, podrá:
 
 * [Crear un grupo de pruebas para el formulario adaptable](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Crear pruebas para el formulario adaptable](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -34,7 +34,7 @@ Los grupos de pruebas tienen una colección de casos de prueba. Puede tener vari
 1. Inicie sesión en la instancia de creación de AEM Forms como administrador. Abra CRXDE Lite. Puede tocar Logotipo de AEM > **Herramientas** > **General** > **CRXDE Lite** o abrir la [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) URL en un navegador para abrir CRXDE Lite.
 
 1. Vaya a /etc/clientlibs en CRXDE Lite. Haga clic con el botón derecho en la subcarpeta /etc/clientlibs y haga clic en **Crear** > **Crear nodo.** En el campo Nombre, escriba **WeRetailFormTestCases**. Seleccione el tipo como **cq:ClientLibraryFolder** y haga clic en **Aceptar**. Crea un nodo. Puede utilizar cualquier nombre en lugar de WeRetailFormTestCases.
-1. Agregue las siguientes propiedades al nodo WeRetailFormTestCases y toque **Guardar todo**.
+1. Añada las siguientes propiedades al nodo WeRetailFormTestCases y toque **Guardar todo**.
 
 <table>
  <tbody>
@@ -50,8 +50,8 @@ Los grupos de pruebas tienen una colección de casos de prueba. Puede tener vari
    <td>Activado</td>
    <td>
     <ul>
-     <li>granite.testing.hobbes.testing<br /> </li>
-     <li>granite.testing.calvin.testing</li>
+     <li>granite.testing.hobbes.tests<br /> </li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
   <tr>
@@ -80,7 +80,7 @@ Asegúrese de que cada propiedad se agrega a un cuadro independiente como se mue
     init.js
    ```
 
-1. Cree un archivo, init.js, en el `WeRetailFormTestCases`nodo. Agregue el código siguiente al archivo y toque **[!UICONTROL Guardar todo]**.
+1. Cree un archivo, init.js, en el `WeRetailFormTestCases`nodo. Añada el código siguiente en el archivo y toque **[!UICONTROL Guardar todo]**.
 
    ```
    (function(window, hobs) {
@@ -108,7 +108,7 @@ Un caso de prueba es un conjunto de acciones para probar una funcionalidad espec
 
 Una acción es una actividad específica de un formulario adaptable, como hacer clic en un botón. Para crear un caso de prueba y acciones para validar los datos introducidos por el usuario para cada campo de formulario adaptable:
 
-1. En la lista CRXDE, vaya a la `/content/forms/af/create-first-adaptive-form` carpeta. Haga clic con el botón derecho en el nodo de la carpeta **[!UICONTROL create-first-adaptive-form]** y haga clic en **[!UICONTROL Crear]**> **[!UICONTROL Crear archivo]**. En el campo Nombre, escriba `prefill.xml` y haga clic en **[!UICONTROL Aceptar]**. Agregue el siguiente código al archivo:
+1. En la lista CRXDE, vaya a la `/content/forms/af/create-first-adaptive-form` carpeta. Haga clic con el botón derecho en el nodo de la carpeta **[!UICONTROL create-first-adaptive-form]** y haga clic en **[!UICONTROL Crear]**> **[!UICONTROL Crear archivo]**. En el campo Nombre, escriba `prefill.xml` y haga clic en **[!UICONTROL Aceptar]**. Añada el siguiente código al archivo:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -131,7 +131,7 @@ Una acción es una actividad específica de un formulario adaptable, como hacer 
 
    En el campo **[!UICONTROL Nombre]** , escriba `WeRetailFormTests`. Seleccione el tipo como `cq:ClientLibraryFolder` y haga clic en **[!UICONTROL Aceptar]**.
 
-1. Agregue las siguientes propiedades al nodo **[!UICONTROL WeRetailFormTests]** .
+1. Añada las siguientes propiedades al nodo **[!UICONTROL WeRetailFormTests]** .
 
 <table>
  <tbody>
@@ -147,8 +147,8 @@ Una acción es una actividad específica de un formulario adaptable, como hacer 
    <td>Activado</td>
    <td>
     <ul>
-     <li>granite.testing.hobbes.testing<br /> </li>
-     <li>granite.testing.hobbes.testing.testForm</li>
+     <li>granite.testing.hobbes.tests<br /> </li>
+     <li>granite.testing.hobbes.tests.testForm</li>
     </ul> </td>
   </tr>
   <tr>
@@ -157,13 +157,13 @@ Una acción es una actividad específica de un formulario adaptable, como hacer 
    <td>Activado</td>
    <td>
     <ul>
-     <li>granite.testing.calvin.testing</li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-1. Cree un archivo, js.txt, en el nodo **[!UICONTROL WeRetailFormTests]** . Agregue lo siguiente al archivo:
+1. Cree un archivo, js.txt, en el nodo **[!UICONTROL WeRetailFormTests]** . Añada lo siguiente en el archivo:
 
    ```shell
    #base=.
@@ -172,7 +172,7 @@ Una acción es una actividad específica de un formulario adaptable, como hacer 
 
    Haga clic en **[!UICONTROL Guardar todo]**.
 
-1. Cree un archivo `prefillTest.js`en el nodo **[!UICONTROL WeRetailFormTests]** . Agregue el código siguiente al archivo. El código crea un caso de prueba. El caso de prueba antepone todos los campos de un formulario y valida algunos campos para asegurarse de que se introducen los valores correctos.
+1. Cree un archivo `prefillTest.js`en el nodo **[!UICONTROL WeRetailFormTests]** . Añada el código siguiente en el archivo. El código crea un caso de prueba. El caso de prueba antepone todos los campos de un formulario y valida algunos campos para asegurarse de que se introducen los valores correctos.
 
    ```
    (function (window, hobs) {
@@ -210,22 +210,22 @@ Una acción es una actividad específica de un formulario adaptable, como hacer 
 
 Un grupo de pruebas puede tener varios casos de prueba. Puede ejecutar todos los casos de prueba en un grupo de pruebas a la vez o individualmente. Al ejecutar una prueba, los iconos indican los resultados:
 
-* Un icono de marca de verificación indica una prueba pasada: ![](https://helpx.adobe.com/content/dam/help/icons/Checkmark.png)
-* El icono &quot;X&quot; indica que la prueba ha fallado: ![](https://helpx.adobe.com/content/dam/help/icons/Cross.png)
+* Un icono de marca de verificación indica una prueba pasada: ![](assets/save_icon.svg)
+* El icono &quot;X&quot; indica que la prueba ha fallado: ![](assets/close-icon.svg)
 
 1. Vaya al icono de AEM > **[!UICONTROL Herramientas]**> **[!UICONTROL Operaciones]**> **[!UICONTROL Pruebas]**
 1. Para ejecutar todas las pruebas de Test Suite:
 
-   1. En el panel Pruebas, toque **[!UICONTROL We Retail - Tests (1)]**. Se expande el grupo para mostrar la lista de pruebas.
+   1. En el panel Pruebas, toque **[!UICONTROL We Retail - Tests (1)]**. Se expande el conjunto para mostrar la lista de la prueba.
    1. Puntee en el botón **[!UICONTROL Ejecutar pruebas]** . El área en blanco a la derecha de la pantalla se sustituye por un formulario adaptable a medida que se ejecuta la prueba.
    ![run-all-test](assets/run-all-test.png)
 
 1. Para ejecutar una sola prueba desde Test Suite:
 
-   1. En el panel Pruebas, toque **[!UICONTROL We Retail - Tests (1)]**. Se expande el grupo para mostrar la lista de pruebas.
+   1. En el panel Pruebas, toque **[!UICONTROL We Retail - Tests (1)]**. Se expande el conjunto para mostrar la lista de la prueba.
    1. Toque la **[!UICONTROL Prueba]** de relleno previo y toque el botón **[!UICONTROL Ejecutar pruebas]** . El área en blanco a la derecha de la pantalla se sustituye por un formulario adaptable a medida que se ejecuta la prueba.
 
-1. Toque el nombre de la prueba, Prueba de relleno previo, para revisar los resultados del caso de prueba. Se abre el panel Resultado. Toque el nombre del caso de prueba en el panel Resultado para ver todos los detalles de la prueba.
+1. Toque el nombre de la prueba, Prueba de relleno previo, para revisar los resultados del caso de prueba. Se abre el panel Resultado. Toque el nombre del caso de prueba en la vista del panel Resultado para ver todos los detalles de la prueba.
 
    ![review-results](assets/review-results.png)
 
