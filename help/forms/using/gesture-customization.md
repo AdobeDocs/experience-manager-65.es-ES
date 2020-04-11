@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,7 +21,7 @@ Puede personalizar los gestos de la aplicación AEM Forms para proporcionar un m
 
 ## Personalización de gestos en la aplicación de AEM Forms {#to-customize-gestures-in-aem-forms-app}
 
-En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o un punto de inicio, mientras que el barrido derecho no hace nada. En el ejemplo siguiente se proporcionan pasos para abrir una nueva tarea o un punto de inicio al realizar los gestos de barrido derecho en la aplicación de AEM Forms.
+En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o punto de inicio, mientras que el barrido derecho no hace nada. En el ejemplo siguiente se proporcionan pasos para abrir una nueva tarea o un punto de inicio al realizar los gestos de barrido derecho en la aplicación de AEM Forms.
 
 1. Abra el proyecto.
 
@@ -29,22 +29,22 @@ En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o un p
    * Para Android, abra el proyecto de Android en Eclipse.
    * Para Windows, abra `MWSWindows.sln` en Visual Studio.
 
-1. Vaya a la carpeta de vistas y abra el `task.js` archivo para editarlo.
+1. Vaya a la carpeta vistas y abra el `task.js` archivo para editarlo.
 
    * En Xcode, vaya a la carpeta **Captura > www > wsmobile > js > tiempo de ejecución > vistas** .
    * En Eclipse, vaya a la carpeta **assets > www > wsmobile > js > tiempo de ejecución > vistas** .
    * En Visual Studio, vaya a la carpeta **MWSWinwindows > www > wsmobile > js > tiempo de ejecución > vistas** .
    >[!NOTE]
    >
-   >El archivo task.js contiene la vista de red troncal asociada a cada tarea o punto de inicio enumerada en las listas de tareas o puntos de inicio.
+   >El archivo tarea.js contiene la vista de red troncal asociada a cada tarea o punto de inicio que se enumera en las listas de tarea o punto de inicio.
 
-1. En el `task.js` archivo, busque la propiedad events de la vista.
+1. En el `task.js` archivo, busque la propiedad eventos de la vista.
 
-   La propiedad events es un mapa con cada entrada en el formato:
+   La propiedad eventos es un mapa con cada entrada en el formato:
 
    `"EventName Selector": "Function"`
 
-   Cuando se activa un evento de Javascript denominado `EventName`en un elemento HTML especificado por `Selector`, `Function`se llama a.
+   Cuando se activa un evento de JavaScript denominado `EventName`en un elemento HTML especificado por `Selector`, `Function`se llama a.
 
 1. Buscar
 
@@ -52,7 +52,7 @@ En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o un p
 
       &quot;toque .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;toque .task-content&quot; : &quot;onTaskClick&quot;,
+      &quot;toque .tarea-contenido&quot; : &quot;onTaskClick&quot;,
 
       &quot;toque .last_empty_div&quot; : &quot;onTaskClick&quot;,
    y reemplazar por
@@ -61,7 +61,7 @@ En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o un p
 
       &quot;swipe.taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;barrido.task-content&quot;: &quot;onTaskClick&quot;,
+      &quot;barrido .tarea-contenido&quot;: &quot;onTaskClick&quot;,
 
       &quot;swipe.last_empty_div&quot; : &quot;onTaskClick&quot;,
 
@@ -70,5 +70,3 @@ En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o un p
 1. Cree y ejecute la aplicación de AEM Forms. Ahora puede abrir una ventana con barrido izquierdo y barrido derecho.
 
 Del mismo modo, puede realizar cambios en otras vistas para diversas combinaciones de gestos, elementos HTML y funciones.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
