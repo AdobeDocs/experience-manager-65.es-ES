@@ -10,24 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Iniciando procesos {#starting-processes}
 
-El espacio de trabajo de AEM Forms organiza los procesos según las categorías configuradas por el administrador o el diseñador de procesos. También puede colocar procesos que utilice con frecuencia en la categoría Favoritos para que pueda encontrarlos rápidamente.
+El espacio de trabajo de AEM Forms organiza los procesos según las categorías que el administrador o el diseñador del proceso configuran. También puede colocar procesos que utilice con frecuencia en la categoría Favoritos para que pueda encontrarlos rápidamente.
 
-Al iniciar un proceso, es posible que deba rellenar un formulario para iniciar un proceso empresarial que controla el flujo de trabajo de AEM Forms. Si un formulario utiliza Preparar proceso de datos, parte de la información se puede rellenar previamente en un formulario en blanco cuando se inicia un nuevo proceso.
+Cuando inicio un proceso, es posible que deba rellenar un formulario para inicio de un proceso empresarial que controla el flujo de trabajo de AEM Forms. Si un formulario utiliza Preparar proceso de datos, parte de la información se puede rellenar previamente en un formulario en blanco cuando se inicia un nuevo proceso.
 
-Por ejemplo, desea comprar un nuevo monitor de equipo y, por lo tanto, iniciar un proceso denominado Orden *de compra*. Cuando se inicia el proceso, se abre un formulario y se le solicita información detallada sobre el elemento que se va a ordenar. Es posible que el nombre, el número de empleado y el nombre del administrador ya estén rellenados previamente en el formulario. Al enviar la solicitud, se inicia un proceso comercial. En función de la definición del proceso, el servidor redirecciona automáticamente la solicitud a su administrador. La tarea empieza a aparecer en la lista de tareas pendientes del administrador. Cuando el administrador aprueba la solicitud, el flujo de trabajo de formularios envía la solicitud al departamento de compras y le envía una notificación por correo electrónico.
+Por ejemplo, desea comprar un nuevo monitor de equipo y, por lo tanto, inicio un proceso denominado Orden ** de compra. Cuando se inicio el proceso, se abre un formulario y se le solicita información detallada sobre el elemento que se va a ordenar. Es posible que el nombre, el número de empleado y el nombre del administrador ya estén rellenados previamente en el formulario. Al enviar la solicitud, se inicia un proceso comercial. En función de la definición del proceso, el servidor redirecciona automáticamente la solicitud a su administrador. inicios de tarea que aparecen en la lista de tareas pendientes del administrador. Cuando el administrador aprueba la solicitud, el flujo de trabajo de formularios envía la solicitud al departamento de compras y le envía una notificación por correo electrónico.
 
-## Selección de procesos para iniciar {#selecting-processes-to-start}
+## Selección de procesos para inicio {#selecting-processes-to-start}
 
-Puede seleccionar un proceso para iniciarlo o para ver más información al respecto.
+Puede seleccionar un proceso para inicio o para vista de más información sobre él.
 
-Al seleccionar un proceso para iniciar, es posible que deba rellenar un formulario asociado a dicho proceso. Al enviar el formulario, se inicia el proceso.
+Al seleccionar un proceso de inicio, es posible que deba rellenar un formulario asociado a dicho proceso. El envío del formulario inicio el proceso.
 
 Se admiten formularios en varios tipos de formatos de archivo, incluidos archivos PDF, HTML y SWF de Adobe. Un formulario puede parecer un formulario tradicional imprimible o basado en Web o puede guiarlo a través de una serie de paneles de estilo asistente para recopilar información.
 
@@ -35,13 +35,13 @@ Si el formulario y el proceso lo permiten, también puede guardarlo sin conexió
 
 Al seleccionar un proceso, aparecen la ficha Formulario y la ficha Detalles. Si el proceso le permite agregar notas o archivos adjuntos, también aparecen la ficha Archivos adjuntos y la ficha Notas. Si también ha configurado la URL de resumen con el proceso, también aparecerá la ficha Resumen. La ficha Formularios muestra el formulario asociado y la ficha Detalles muestra información sobre la tarea actual y el proceso del que forma parte.
 
-### Iniciar un proceso comercial {#start-a-business-process}
+### Inicio de un proceso comercial {#start-a-business-process}
 
-1. En la lista de la izquierda de la página Iniciar proceso, seleccione una categoría. Todos los procesos a los que tiene acceso en la categoría aparecen a la derecha.
+1. En la página Proceso de Inicio, en la lista de la izquierda, seleccione una categoría. Todos los procesos a los que tiene acceso en la categoría aparecen a la derecha.
 
    >[!NOTE]
    >
-   >Si el panel Categorías está contraído, haga clic en &#39;Abrir categorías&#39;, en el área superior izquierda del espacio de trabajo de AEM Forms, para abrir el panel.
+   >Si el panel Categorías está contraído, haga clic en &#39;Abrir Categorías, en el área superior izquierda del espacio de trabajo de AEM Forms, para abrir el panel.
 
 1. Seleccione un proceso haciendo clic en una tarea. El formulario asociado al proceso se abre en la ficha Formulario.
 
@@ -54,7 +54,7 @@ Al seleccionar un proceso, aparecen la ficha Formulario y la ficha Detalles. Si 
 
    * Haga clic en el botón Enviar del formulario, si el formulario tiene un botón Enviar.
    * Haga clic en Completar debajo del formulario, si éste no tiene un botón Enviar.
-   Process Management inicia el proceso y enruta el formulario a las listas de tareas pendientes de las personas adecuadas que necesiten completar la siguiente tarea del proceso.
+   Process Management inicio el proceso y enruta el formulario a las listas de tareas pendientes de las personas adecuadas que necesiten completar la siguiente tarea del proceso.
 
    Si debe cerrar un formulario antes de enviarlo y sin perder los datos introducidos, guarde un borrador y rellénelo más tarde si el proceso lo permite. Si el formulario y el proceso lo permiten, también puede hacer clic en **Sin conexión** y enviarlo posteriormente desde Adobe® Reader® o Adobe® Acrobat® Professional o Acrobat Standard.
 
@@ -62,11 +62,11 @@ Al seleccionar un proceso, aparecen la ficha Formulario y la ficha Detalles. Si 
    >
    >La opción sin conexión solo está disponible para formularios PDF.
 
-## Adición de notas y archivos adjuntos {#adding-notes-and-attachments}
+## Añadir notas y anexos {#adding-notes-and-attachments}
 
-Puede agregar notas y archivos adjuntos a un proceso si el proceso lo permite. Puede proporcionar permisos a otros usuarios que participen en el proceso para ver, actualizar y eliminar las notas o los archivos adjuntos.
+Puede agregar notas y archivos adjuntos a un proceso si el proceso lo permite. Puede proporcionar permisos a otros usuarios que participen en el proceso para la vista, actualización y eliminación de notas o archivos adjuntos.
 
-### Agregar una nota {#add-a-note}
+### Añadir una nota {#add-a-note}
 
 Puede agregar varias notas, editarlas y eliminarlas. Cada nota tiene un título, una descripción y un permiso de acceso asociado. Puede definir uno de los siguientes permisos de acceso en una nota:
 
@@ -81,7 +81,7 @@ Puede agregar varias notas, editarlas y eliminarlas. Cada nota tiene un título,
 1. Seleccione el nivel de **permisos** de la nota para otros usuarios que participen en el proceso.
 1. Haga clic en **Aceptar**. Se adjunta al formulario un archivo de texto que contiene la nota. Puede actualizar una nota haciendo clic en ella y modificando directamente el texto. Puede eliminar una nota haciendo clic en el botón **Eliminar** ![Imagen de una papelera](assets/icondelete.png) al lado de la nota.
 
-### Agregar un archivo adjunto {#add-an-attachment}
+### Añadir un archivo adjunto {#add-an-attachment}
 
 También puede agregar sus comentarios sobre el archivo adjunto. Puede definir uno de los siguientes permisos de acceso en un archivo adjunto:
 
@@ -100,7 +100,7 @@ También puede agregar sus comentarios sobre el archivo adjunto. Puede definir u
 
 Si debe completar y enviar un formulario más adelante, puede guardar una copia borrador de un formulario para que no pierda el trabajo existente. Los borradores se agregan a la categoría Borradores de la página Tareas pendientes.
 
-Después de volver a abrir y enviar un formulario de borrador, el borrador se elimina de la categoría Borradores.
+Después de volver a abrir y enviar un borrador de formulario, el borrador se elimina de la categoría Borradores.
 
 Además, puede configurar el espacio de trabajo para guardar automáticamente la información introducida por un usuario como borrador. Para obtener más información, consulte [Administración de preferencias](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
@@ -118,14 +118,12 @@ Además, puede configurar el espacio de trabajo para guardar automáticamente la
 
    Si el formulario contiene una serie de paneles, es posible que tenga que ir al panel donde finalizó la última sesión.
 
-## Adición de procesos a la categoría Favoritos {#adding-processes-to-the-favorites-category}
+## Añadir procesos a la categoría Favoritos {#adding-processes-to-the-favorites-category}
 
-Puede agregar cualquier proceso a la categoría Favoritos. Al establecer favoritos, puede agrupar todos los procesos que inicia con frecuencia en una sola categoría para que pueda encontrarlos rápidamente.
+Puede agregar cualquier proceso a la categoría Favoritos. Al configurar los favoritos, puede agrupar todos los procesos que inicio con frecuencia en una sola categoría para que pueda encontrarlos rápidamente.
 
 >[!NOTE]
 >
->Si normalmente inicia procesos al utilizar el espacio de trabajo de AEM Forms, puede definir la preferencia de Ubicación de inicio para que se muestre automáticamente la categoría Favoritos al iniciar el espacio de trabajo de AEM Forms. Para obtener más información, consulte Administración de preferencias en [Introducción al espacio de trabajo](/help/forms/using/getting-started-livecycle-html-workspace.md)de AEM Forms.
+>Si normalmente realiza inicios en los procesos al utilizar el espacio de trabajo de AEM Forms, puede definir la preferencia Ubicación de Inicio para que muestre automáticamente la categoría Favoritos al inicio del espacio de trabajo de AEM Forms. Para obtener más información, consulte Administración de preferencias en [Introducción al espacio de trabajo](/help/forms/using/getting-started-livecycle-html-workspace.md)de AEM Forms.
 
-Para marcar un proceso como favorito, seleccione la tarea en su categoría y haga clic en la estrella vacía. La estrella se vuelve dorada. Para desmarcar un proceso como favorito, vuelva a hacer clic en la estrella dorada.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+Para marcar un proceso como favorito, seleccione la tarea en su categoría y haga clic en la estrella hueca. La estrella se vuelve dorada. Para desmarcar un proceso como favorito, vuelva a hacer clic en la estrella dorada.
