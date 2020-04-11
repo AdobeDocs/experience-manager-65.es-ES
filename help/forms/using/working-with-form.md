@@ -1,15 +1,15 @@
 ---
 title: Uso de un formulario
 seo-title: Uso de un formulario
-description: Visualización y actualización del formulario asociado a una tarea o punto de inicio en la aplicación de AEM Forms
-seo-description: Visualización y actualización del formulario asociado a una tarea o punto de inicio en la aplicación de AEM Forms
+description: Vista y actualización del formulario asociado a una tarea o punto de inicio en la aplicación de AEM Forms
+seo-description: Vista y actualización del formulario asociado a una tarea o punto de inicio en la aplicación de AEM Forms
 uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -22,7 +22,7 @@ Los formularios se descargan en la aplicación y están disponibles sin conexió
 
 Para sincronizar el formulario en la aplicación de AEM Forms:
 
-1. En la instancia de autor, seleccione un formulario y haga clic en **Ver propiedades**.
+1. En la instancia de autor, seleccione un formulario y haga clic en Propiedades **de Vista**.
 1. En la página de propiedades, haga clic en **Avanzadas.**
 1. En Avanzadas, active la opción: **Sincronizar con la aplicación** AEM Forms y tocar **Guardar**.
 
@@ -41,6 +41,4 @@ Los archivos adjuntos de nivel de formulario no se admiten en los formularios ad
 **Para abrir y actualizar un formulario**
 
 1. Para abrir un formulario, toque el formulario en la pantalla de inicio.
-1. Puede actualizar los campos del formulario, agregar archivos adjuntos, guardarlos como borrador y enviarlos.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+1. Puede actualizar los campos del formulario, agregar datos adjuntos, guardarlos como borrador y enviarlos.
