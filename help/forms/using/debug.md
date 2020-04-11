@@ -1,8 +1,8 @@
 ---
 title: Depuración de formularios HTML5
 seo-title: Depuración de formularios HTML5
-description: La lista de documentos muestra los pasos para solucionar varios problemas conocidos.
-seo-description: La lista de documentos muestra los pasos para solucionar varios problemas conocidos.
+description: La lista de documento realiza pasos para solucionar varios problemas conocidos.
+seo-description: La lista de documento realiza pasos para solucionar varios problemas conocidos.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -75,8 +75,8 @@ Compruebe los siguientes parámetros:
 
 ## Problema: El formulario se procesa sin estilos {#problem-form-renders-without-styles}
 
-1. En el explorador, abra Herramientas **para desarrolladores**. Asegúrese de que profile.css está disponible.
-1. Si el archivo profile.css no está disponible, inicie sesión en CRX DE en https://&lt;server>:&lt;port>/crx/de.
+1. En el explorador, abra Herramientas **para desarrolladores**. Asegúrese de que perfil.css está disponible.
+1. Si el archivo perfil.css no está disponible, inicie sesión en CRX DE en https://&lt;server>:&lt;port>/crx/de.
 1. En la jerarquía de carpetas de la izquierda, navegue a /etc/clientlibs/fd/xfaforms/. Abra los archivos css.txt que aparecen en las carpetas.
 
    * El perfil.
@@ -118,7 +118,7 @@ Compruebe los siguientes parámetros:
 
 ## Problema: Los mensajes de error localizados no se muestran {#problem-localized-error-messages-do-not-display}
 
-1. Procese el formulario con el parámetro de consulta adicional **debugClientLibs=true** en el navegador de escritorio y, a continuación, vaya a Herramientas de desarrollador -> Recursos y compruebe el archivo I18N.css.
+1. Procese el formulario con el parámetro de consulta adicional **debugClientLibs=true** en el navegador de escritorio y, a continuación, vaya a Herramientas de desarrollo -> Recursos y compruebe el archivo I18N.css.
 1. Si el archivo no está disponible, inicie sesión en CRX DE en https://&lt;server>:&lt;port>/crx/de.
 1. En la jerarquía de carpetas de la izquierda, vaya a /libs/fd/xfaforms/clientlibs/I18N y asegúrese de que existen los siguientes archivos y carpetas:
 
@@ -179,5 +179,3 @@ Texto del paso
 1. En el navegador de escritorio, vaya a Herramientas para desarrolladores -> Recursos.
 
    Si se muestra la imagen, marque la casilla de verificación situada en el lado izquierdo de Marcos.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
