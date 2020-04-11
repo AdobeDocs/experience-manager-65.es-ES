@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -29,11 +29,11 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
 1. **Elija un perfil para agregar estilos personalizados**
 
-   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un perfil nuevo](/help/forms/using/custom-profile.md)
+   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un nuevo Perfil](/help/forms/using/custom-profile.md)
 
 1. **Creación de una hoja de estilo CSS para aplicar estilo a los formularios HTML5**
 
-   Vaya a la carpeta en la que ha creado el procesador de perfiles y cree un archivo de hoja de estilo CSS. Los pasos a seguir son
+   Vaya a la carpeta en la que ha creado el procesador de perfil y cree un archivo de hoja de estilo CSS. Los pasos a seguir son
 
    1. Haga clic con el botón derecho en la carpeta y seleccione **crear** > **crear archivo** en el menú
 
@@ -42,18 +42,16 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
    1. Defina las clases CSS de los componentes a los que desea aplicar estilo y agregue estilos en dichas clases.
    Para saber qué clases CSS crear para un componente concreto en los formularios HTML5, consulte [Introducción a los estilos](/help/forms/using/css-styles.md).
 
-1. **Incluir la hoja de estilo en el procesador de perfiles**
+1. **Incluir la hoja de estilo en el procesador de Perfil**
 
-   Abra la página Procesador de perfiles (archivo jsp) en CRX DE e incluya el archivo CSS en la página que hay justo debajo de la biblioteca de cliente XFA. Siga estos pasos para incluir el archivo CSS en el perfil.
+   Abra la página Perfil Renderer (archivo jsp) en CRX DE e incluya el archivo CSS en la página que se encuentra justo debajo de la biblioteca de cliente XFA. Siga estos pasos para incluir el archivo CSS en perfil.
 
    1. Busque la línea siguiente en la página del procesador:
 
-      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categorías=&quot;xfaforms.perfil&quot; />
 
    1. Inserte lo siguiente debajo de la línea anterior para incluir la hoja de estilo:
 
       &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
 
    1. Guarde el archivo.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
