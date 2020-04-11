@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -24,7 +24,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 1. Inicie sesión en `/lc/crx/de` con permisos de administrador.
 1. Realice las siguientes acciones:
 
-   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/content` en `/apps/livecycle/core/content`. Mantenga las mismas propiedades (nodo/carpeta) y control de acceso.
+   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/content` en `/apps/livecycle/core/content`. Mantenga las mismas propiedades (nodo/carpeta) y el mismo control de acceso.
 
    1. Copie la carpeta de contenido: de `/libs/livecycle/core` a `/apps/livecycle/core`.
 
@@ -32,13 +32,13 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 
 1. Realice estas acciones:
 
-   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/components/login` en `/apps/livecycle/core/components/login`. Mantenga las mismas propiedades (nodo/carpeta) y control de acceso.
+   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/components/login` en `/apps/livecycle/core/components/login`. Mantenga las mismas propiedades (nodo/carpeta) y el mismo control de acceso.
 
    1. Copie la carpeta components: de `/libs/livecycle/core` a `/apps/livecycle/core`.
 
    1. Elimine el contenido de la carpeta: `/apps/livecycle/core/components/login`.
 
-### Adición de una nueva configuración regional {#adding-a-new-locale}
+### Añadir una nueva configuración regional {#adding-a-new-locale}
 
 1. Copie la `i18n` carpeta:
 
@@ -181,7 +181,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
    for(int i=0; i<locales.length; i++)
    ```
 
-### Adición de texto nuevo o modificación de texto existente {#adding-new-text-or-modifying-existing-text}
+### Añadir texto nuevo o modificar texto existente {#adding-new-text-or-modifying-existing-text}
 
 1. Copiar `i18n` carpeta:
 
@@ -198,7 +198,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 
       * hasta `/apps/livecycle/core/components/login`
    1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar el texto recientemente agregado.
-   ![Agregar nuevo par clave-valor](assets/capture_new.png)
+   ![Añadir nuevo par clave-valor](assets/capture_new.png)
 
    ```
    div class="loginContent">
@@ -217,7 +217,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
                        <% if (loginFailed) {%>
    ```
 
-### Adición de un estilo nuevo o modificación de un estilo existente {#adding-new-style-or-modifying-existing-style}
+### Añadir estilo nuevo o modificar estilo existente {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
 
@@ -228,7 +228,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 1. Modifique los estilos del archivo CSS.
 1. Para agregar nuevos estilos:
 
-   1. Agregar nuevos estilos a `/apps/livecycle/core/content/login/login.css`
+   1. Añadir nuevos estilos a `/apps/livecycle/core/content/login/login.css`
    1. Copiar `login.jsp`
 
       * from `/libs/livecycle/core/components/login`
@@ -239,7 +239,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 
 1. Por ejemplo:
 
-   * Agregue lo siguiente a `/apps/livecycle/core/content/login/login.css`.
+   * Añada lo siguiente a `/apps/livecycle/core/content/login/login.css`.
 
    ```css
    .newLoginContentArea {
@@ -262,21 +262,21 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 >
 >Si se eliminan las imágenes existentes en `/apps/livecycle/core/content/login` (copiadas de `/libs/livecycle/core/content/login`), elimine las referencias correspondientes en CSS.
 
-### Agregar nuevas imágenes {#add-new-images}
+### Añadir nuevas imágenes {#add-new-images}
 
-1. Siga los pasos para añadir un nuevo estilo o modificar un estilo existente (documentados anteriormente).
-1. Agregue nuevas imágenes en `/apps/livecycle/core/content/login`. Para agregar una imagen:
+1. Siga los pasos para Añadir un nuevo estilo o modificar un estilo existente (documentados anteriormente).
+1. Añada imágenes nuevas en `/apps/livecycle/core/content/login`. Para agregar una imagen:
 
    1. Instale el cliente WebDAV.
    1. Navegue a `/apps/livecycle/core/content/login` la carpeta mediante el cliente webDAV. Para obtener más información, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
-   1. Agregue nuevas imágenes.
+   1. Añadir imágenes nuevas.
 
-1. Agregue nuevos estilos en `/apps/livecycle/core/content/login/login.css,` correspondiente a las nuevas imágenes agregadas en `/apps/livecycle/core/content/login`.
+1. Añada nuevos estilos en `/apps/livecycle/core/content/login/login.css,` relación con las nuevas imágenes agregadas en `/apps/livecycle/core/content/login`.
 1. Utilice los nuevos estilos en `login.jsp` at `/apps/livecycle/core/components`.
 1. Por ejemplo:
 
-   * Agregue lo siguiente a `/apps/livecycle/core/content/login/login.css`
+   * Añada lo siguiente a `/apps/livecycle/core/content/login/login.css`
 
    ```css
    .newLoginContainerBkg {
@@ -296,5 +296,3 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
    
    <div class="newLginContainerBkg">
    ```
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
