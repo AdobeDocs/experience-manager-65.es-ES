@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -56,55 +56,55 @@ Para personalizar el espacio de trabajo, se recomienda familiarizarse con la hoj
   </tr>
   <tr>
    <td><p>.categoryList</p> </td>
-   <td><p>Lista de categorías</p> </td>
+   <td><p>lista de Categoría</p> </td>
   </tr>
   <tr>
    <td><p>.categoryList.header</p> </td>
-   <td><p>Encabezado de la lista de categorías</p> </td>
+   <td><p>Encabezado de lista de categoría</p> </td>
   </tr>
   <tr>
-   <td><p>.categories, .filters</p> </td>
-   <td><p>Espacio debajo de la lista de categorías</p> </td>
+   <td><p>.categorías, .filtros</p> </td>
+   <td><p>Espacio debajo de la lista de categoría</p> </td>
   </tr>
   <tr>
-   <td><p>.category, .filter</p> </td>
+   <td><p>.categoría, .filter</p> </td>
    <td><p>Categoría</p> </td>
   </tr>
   <tr>
-   <td><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td>
-   <td><p>Categoría seleccionada y pasar el ratón sobre el estilo de la categoría</p> </td>
+   <td><p>.categoría:pasar el ratón por encima, .categoría.seleccionada, .filter:pasar el ratón, .filter.selected</p> </td>
+   <td><p>categoría seleccionada y pasar el ratón sobre el estilo de categoría</p> </td>
   </tr>
   <tr>
    <td><p>categoryListBar.tool, categoryListBar.content</p> </td>
-   <td><p>Página de inicio del proceso (lista de categorías cerradas)</p> </td>
+   <td><p>Página de proceso de Inicio (lista de Categoría cerrada)</p> </td>
   </tr>
   <tr>
    <td><p>filterListBar.tool, filterListBar.content</p> </td>
-   <td><p>Página Tareas pendientes (lista de filtros cerrados)</p> </td>
+   <td><p>Página Tareas pendientes (lista de filtro cerrada)</p> </td>
   </tr>
   <tr>
    <td><p>processNameListBar.tool, processNameListBar.content</p> </td>
-   <td><p>Página de seguimiento (lista de nombres de proceso cerrada)</p> </td>
+   <td><p>Página de seguimiento (lista de nombre de proceso cerrada)</p> </td>
   </tr>
   <tr>
    <td><p>.startPointList, .tasklist</p> </td>
-   <td><p>La lista de puntos de partida o la lista de tareas</p> </td>
+   <td><p>La lista de punto de partida o la lista de tarea</p> </td>
   </tr>
   <tr>
    <td><p>.startPointList.header, .tasklist.header</p> </td>
-   <td><p>El encabezado de una lista de puntos de inicio o una lista de tareas</p> </td>
+   <td><p>El encabezado de una lista de punto de inicio o una lista de tarea</p> </td>
   </tr>
   <tr>
-   <td><p>.startpoint.selected, .task.selected</p> </td>
+   <td><p>.startpoint.selected, .tarea.selected</p> </td>
    <td><p>El punto de inicio o la tarea seleccionados</p> </td>
   </tr>
   <tr>
-   <td><p>.startpoint.selected.description, .task.selected.description</p> </td>
+   <td><p>.startpoint.selected.description, .tarea.selected.description</p> </td>
    <td><p>Descripción del punto de inicio o la tarea seleccionados</p> </td>
   </tr>
   <tr>
    <td><p>#taskarea</p> </td>
-   <td><p>El área Tarea</p> </td>
+   <td><p>La Tarea</p> </td>
   </tr>
   <tr>
    <td><p>#header.dropdown</p> </td>
@@ -112,7 +112,7 @@ Para personalizar el espacio de trabajo, se recomienda familiarizarse con la hoj
   </tr>
   <tr>
    <td><p>.sortDrop dd ul</p> </td>
-   <td><p>Lista desplegable de tareas de ordenación</p> </td>
+   <td><p>Lista desplegable Ordenar tarea</p> </td>
   </tr>
  </tbody>
 </table>
@@ -124,7 +124,7 @@ El aspecto del espacio de trabajo de AEM Forms se obtiene a partir de una CSS. A
 Los pasos de nivel superior para la personalización de CSS son:
 
 * Cree un archivo CSS.
-* Agregue elementos de estilo a esta CSS. Consulte Explicación de los estilos CSS para obtener más información.
+* Añada elementos de estilo a esta CSS. Consulte Explicación de los estilos CSS para obtener más información.
 * Actualice sus referencias en `html.jsp`.
 
 Para ver los pasos exactos para realizar estas personalizaciones, consulte Pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms. El archivo CSS enviado con el espacio de trabajo de AEM Forms se encuentra en /libs/ws/css/. Para las personalizaciones relacionadas con CSS, utilice el [paquete](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)de envío. Para ver ejemplos específicos de personalizaciones relacionadas con CSS, consulte los temas de ayuda relacionados al final de este artículo.
@@ -136,8 +136,8 @@ Puede personalizar el espacio de trabajo de AEM Forms para agregar avatares de u
 Los pasos de nivel superior para personalizar las imágenes son:
 
 * Instale y configure WebDAV.
-* Agregue nuevas imágenes.
-* Agregue nuevos estilos correspondientes a las imágenes agregadas.
+* Añadir imágenes nuevas.
+* Añada los nuevos estilos correspondientes a las imágenes agregadas.
 * Vínculo al nuevo archivo CSS del `html.jsp` archivo.
 
 Para empezar a personalizar las imágenes en el espacio de trabajo de AEM Forms, siga los pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms. Para ver ejemplos específicos de personalizaciones relacionadas con imágenes, consulte los temas de ayuda relacionados al final de este artículo.
@@ -149,20 +149,20 @@ Las plantillas HTML ayudan a definir el aspecto y el diseño de la interfaz de u
 Los pasos de nivel superior para las personalizaciones de la plantilla HTML son:
 
 * En una carpeta creada por el usuario, realice copias de los archivos predeterminados necesarios.
-* Agregue nuevas plantillas en la carpeta definida por el usuario.
+* Añada nuevas plantillas en la carpeta definida por el usuario.
 * Realice las actualizaciones pertinentes a los archivos copiados como, por ejemplo, la ruta de la nueva plantilla.
 
 Para ver ejemplos específicos de dichas personalizaciones, consulte los temas de ayuda que se proporcionan al final de este artículo. Elija entre el paquete [de](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) envío o el paquete [de](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)desarrolladores, según la plantilla que desee personalizar.
 
 ### Cambios semánticos {#semantic-changes}
 
-Para modificar la funcionalidad del espacio de trabajo de AEM Forms, cambie el código fuente JavaScript. Las modificaciones en la funcionalidad principal se etiquetan como cambios semánticos. Los modelos, las vistas y las plantillas se modifican como parte del código fuente del espacio de trabajo de AEM Forms.
+Para modificar la funcionalidad del espacio de trabajo de AEM Forms, cambie el código fuente JavaScript. Las modificaciones en la funcionalidad principal se etiquetan como cambios semánticos. Los modelos, la vista y las plantillas se modifican como parte del código fuente del espacio de trabajo de AEM Forms.
 
 Los pasos de nivel superior para realizar cambios semánticos con el fin de modificar la funcionalidad del espacio de trabajo de AEM Forms son:
 
 * En una carpeta creada por el usuario, realice copias de los archivos predeterminados correspondientes.
-* Agregue nuevos modelos y vistas en la carpeta definida por el usuario.
-* Realice actualizaciones relevantes como la actualización de rutas de modelos y vistas recientemente agregados en los archivos JavaScript predeterminados.
+* Añada nuevos modelos y vistas en la carpeta definida por el usuario.
+* Realice actualizaciones relevantes como la actualización de rutas de modelos y vistas recién añadidos en los archivos JavaScript predeterminados.
 * Minimice el paquete para optimizar el rendimiento.
 
 Para obtener más información conceptual sobre los componentes que forman parte del código fuente, consulte la [Descripción de los componentes](/help/forms/using/description-reusable-components.md)reutilizables. Para estas personalizaciones, utilice el paquete Dev.
@@ -181,7 +181,7 @@ El paquete contiene el código fuente del espacio de trabajo de AEM Forms. El pa
 
 Está pensado principalmente para personalizaciones, ya que proporciona la capacidad de generar:
 
-* Paquetes CRX para perfiles de Envío, Depuración y Dev (mencionados a continuación en los paquetes [](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)CRX).
+* Paquetes CRX para perfiles de Envío, Depuración y Desarrollo (mencionados a continuación en los paquetes [](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)CRX).
 * Versión minimizada de código personalizado (para cambios semánticos).
 
 #### Contenido de WS {#ws-content}
@@ -189,7 +189,7 @@ Está pensado principalmente para personalizaciones, ya que proporciona la capac
 * client-pkg:
 
    * src: contiene artefactos necesarios para crear nodos CRX.
-   * pom.xml: secuencia de comandos para crear paquetes de implementación para varios perfiles Paquete WS-Deploy
+   * pom.xml: secuencia de comandos para crear paquetes de implementación para varios paquetes de perfiles WS-Deploy
 
 * client-html:
 
@@ -207,10 +207,10 @@ Está pensado principalmente para personalizaciones, ya que proporciona la capac
          * resource_generator: se utiliza para generar register.js y modelcontrollerpath.js.
          * tiempo de ejecución:
 
-            * inicializer: contiene inicializer.js utilizado para inicializar vistas de red troncal y modelos utilizados en el espacio de trabajo de AEM Forms.
+            * inicializer: contiene inicializer.js utilizado para inicializar vistas y modelos de red troncal utilizados en el espacio de trabajo de AEM Forms.
             * modelos: contiene modelos de red troncal de todos los componentes presentes en el espacio de trabajo de AEM Forms.
-            * rutas: contiene archivos JavaScript y archivos HTML que cargan el proceso de inicio, la realización de tareas, el seguimiento y las preferencias en el espacio de trabajo de AEM Forms.
-            * services: contiene service.js utilizados en el espacio de trabajo de AEM Forms. Todas las llamadas al servidor se realizan a través de service.js.
+            * rutas: contiene archivos JavaScript y archivos HTML que cargan procesos de inicio, tareas de realización, seguimiento y preferencias en el espacio de trabajo de AEM Forms.
+            * services: contiene service.js que se utiliza en el espacio de trabajo de AEM Forms. Todas las llamadas al servidor se realizan a través de service.js.
             * plantillas: contiene todas las plantillas, es decir, archivos HTML de todas las vistas del espacio de trabajo de AEM Forms.
             * util: contiene todos los archivos de utilidad (javascript) que se utilizan en el espacio de trabajo de AEM Forms.
             * vistas: contiene vistas de red troncal de todos los componentes del espacio de trabajo de AEM Forms.
@@ -238,16 +238,16 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
 
 | **Perfil** | **Descripción** | **Uso** |
 |---|---|---|
-| Perfil de envío | Este perfil crea un paquete CRX del menor tamaño posible mediante la minimización. Este paquete es el más eficiente. Todos los archivos JavaScript™ se combinan y minimizan en un solo archivo JS. | Utilice este perfil cuando no se requieran más cambios semánticos en los archivos JS. |
-| Perfil de depuración | Este perfil crea un paquete CRX moderadamente eficiente. El tamaño del paquete es ligeramente superior al del paquete creado con el perfil de envío. Este paquete tiene la mayoría de los archivos JavaScript combinados en un solo archivo JS. | Utilice este perfil para la depuración. |
-| Perfil de desarrollador | Este perfil crea un paquete CRX del mayor tamaño posible. Todos los archivos JavaScript están disponibles por separado, como en el paquete SDK. | Utilice este perfil al incorporar cambios semánticos. |
+| perfil de envío | Este perfil crea un paquete CRX del tamaño más pequeño posible mediante la minimización. Este paquete es el más eficiente. Todos los archivos JavaScript™ se combinan y minimizan en un solo archivo JS. | Utilice este perfil cuando no se requieran más cambios semánticos en los archivos JS. |
+| perfil de depuración | Este perfil crea un paquete CRX moderadamente eficiente. El tamaño del paquete es ligeramente superior al del paquete creado mediante el perfil de envío. Este paquete tiene la mayoría de los archivos JavaScript combinados en un solo archivo JS. | Utilice este perfil para la depuración. |
+| perfil Dev | Este perfil crea un paquete CRX del mayor tamaño posible. Todos los archivos JavaScript están disponibles por separado, como en el paquete SDK. | Utilice este perfil al incorporar cambios semánticos. |
 
 #### Perfil de envío {#ship-profile}
 
 #### Comando {#command}
 
 * mvn clean -P Se envía la instalación en la carpeta client-pkg del paquete de origen enviado al cliente.
-* La ejecución del comando de perfil de envío solo funciona en un JVM de 64 bits.
+* La ejecución de comandos de perfil de envío solo funciona en un JVM de 64 bits.
 
 #### Contenido de WS {#ws-content-1}
 
@@ -263,7 +263,7 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
 
       * plantillas: contiene todas las plantillas, es decir, archivos HTML de todos los componentes del espacio de trabajo de AEM Forms.
    * main.js (combinado, minimizado y desacreditado).
-   * Registry.js
+   * registry.js
 
 
 
@@ -281,18 +281,18 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
    * html.jsp: contiene código para averiguar la configuración regional actual del explorador.
 
 * Índice: contiene .content.xml
-* profile - Contiene offline.jsp.
+* perfil: contiene offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml
 * _rep_policy.xml
 
-#### Depurar perfil {#debug-profile}
+#### Perfil de depuración {#debug-profile}
 
 #### Comando {#command-1}
 
 * mvn clean -P Instalación de depuración en client-pkg
-* La ejecución del comando de perfil de depuración solo funciona en JVM de 64 bits.
+* La ejecución del comando Debug perfil solo funciona en JVM de 64 bits.
 
 #### Contenido de WS {#ws-content-2}
 
@@ -308,7 +308,7 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
 
       * plantillas: contiene todas las plantillas, es decir, archivos HTML de todos los componentes del espacio de trabajo de AEM Forms.
    * main.js (combinado).
-   * Registry.js
+   * registry.js
 
 
 
@@ -326,13 +326,13 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
    * html.jsp: contiene código para averiguar la configuración regional actual del explorador.
 
 * Índice: contiene .content.xml
-* profile - Contiene offline.jsp.
+* perfil: contiene offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml
 * _rep_policy.xml
 
-#### Perfil de desarrollador {#dev-profile}
+#### Perfil Dev {#dev-profile}
 
 #### Comando {#command-2}
 
@@ -351,13 +351,13 @@ mvn clean -P Instalación de Dev en client-pkg
 
       * inicializer: contiene inicializer.js y modelcontrollerpath.js.
       * modelos: contiene modelos de todos los componentes del espacio de trabajo de AEM Forms.
-      * rutas: contiene archivos JavaScript y archivos HTML que cargan el proceso de inicio, la realización de tareas, el seguimiento y las preferencias en el espacio de trabajo de AEM Forms.
-      * services: contiene service.js utilizados en el espacio de trabajo de AEM Forms.
+      * rutas: contiene archivos JavaScript y archivos HTML que cargan procesos de inicio, tareas de realización, seguimiento y preferencias en el espacio de trabajo de AEM Forms.
+      * services: contiene service.js que se utiliza en el espacio de trabajo de AEM Forms.
       * plantillas: contiene todas las plantillas, es decir, archivos HTML de todos los componentes del espacio de trabajo de AEM Forms.
       * util: contiene todos los archivos de utilidad (JavaScript) que se utilizan en el espacio de trabajo de AEM Forms.
       * vistas: contiene vistas de todos los componentes del espacio de trabajo de AEM Forms.
    * main.js
-   * Registry.js
+   * registry.js
    * router.js
 
 
@@ -375,10 +375,8 @@ mvn clean -P Instalación de Dev en client-pkg
    * html.jsp: contiene código para averiguar la configuración regional actual del explorador.
 
 * Índice: contiene .content.xml
-* profile - Contiene offline.jsp.
+* perfil: contiene offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
