@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -123,5 +123,3 @@ El informe Volumen del flujo de trabajo muestra el número de instancias que se 
    * **Actualizar**: Actualiza el informe con los datos más recientes en el almacenamiento
    * **Cambiar el color** de la leyenda: Seleccionar y cambiar el color de la leyenda del informe
    * **Exportar a CSV**: Exportar y descargar los datos del informe en un archivo separado por comas
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
