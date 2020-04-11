@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -31,5 +31,3 @@ AEM Forms Designer incluye varias opciones de Texto hablado que se pueden pasar 
 ![accesibilidad](assets/accessibility.png)
 
 Cuando hay varias opciones disponibles en un control Formulario, como información del objeto, Texto del lector de pantalla y Rótulo, el lector de pantalla solo utiliza una de estas propiedades. El orden predeterminado es Texto personalizado del lector de pantalla, información del objeto, Rótulo y Nombre. You can override the default order using the Screen Reader **Precedence** option in the Accessibility palette.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
