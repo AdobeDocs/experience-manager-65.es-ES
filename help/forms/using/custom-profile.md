@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -81,5 +81,3 @@ Después de crear un perfil personalizado, agregue información de procesamiento
 1. Para comprobar que se ha creado el perfil, abra la dirección URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 Para comprobar los formularios, [importe los formularios](/help/forms/using/get-xdp-pdf-documents-aem.md) del sistema de archivos local a AEM Forms y [previsualización el formulario](/help/forms/using/previewing-forms.md) en la instancia de creación del servidor AEM.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
