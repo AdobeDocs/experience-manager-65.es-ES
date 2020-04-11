@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -19,12 +19,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 El espacio de trabajo de AEM Forms es el nuevo espacio de trabajo. A continuación se indican algunas de las funciones del espacio de trabajo basado en Flex que no están disponibles en el espacio de trabajo de AEM Forms.
 
-* La página de bienvenida no está disponible. Puede definir las páginas Inicio, Procedimiento de trabajo, Seguimiento y Favoritos como la primera página que aparecerá al iniciar sesión en el espacio de trabajo.
-* Los mensajes y las notificaciones de eventos del sistema no se muestran en el espacio de trabajo de AEM Forms. Todas las opciones de configuración correspondientes a mensajes (como &quot;Hora de vista de notificación de mensajes&quot;) tampoco son aplicables al espacio de trabajo de AEM Forms.
-* La vista se ha reorganizado y ahora no hay distinción entre la vista de tarjeta y la vista de lista, para los puntos de inicio y las tareas.
-* Como no hay distinción entre la vista de tarjeta y la vista de lista en el espacio de trabajo de AEM Forms, no está disponible la configuración de Administrar encabezados de columna en Tareas pendientes, Historial y Preferencias.
+* La página de bienvenida no está disponible. Puede definir las páginas Proceso de Inicio, Tareas pendientes, Seguimiento y Favoritos como la primera página que aparecerá al iniciar sesión en el espacio de trabajo.
+* Los mensajes y las notificaciones para eventos del sistema no se muestran en el espacio de trabajo de AEM Forms. Todas las opciones de configuración correspondientes a mensajes (como &quot;Tiempo de Vista de notificación de mensajes&quot;) tampoco son aplicables al espacio de trabajo de AEM Forms.
+* La vista se ha reorganizado y ahora no hay distinción entre vista de tarjetas y listas, para puntos de inicio y tareas.
+* Como no hay distinción entre la vista de tarjetas y listas en el espacio de trabajo de AEM Forms, no está disponible la configuración de Administrar encabezados de columna en Tareas pendientes, Historial y Preferencias.
 * La opción para administrar encabezados de columna para la página Seguimiento no está disponible en el espacio de trabajo de AEM Forms.
-* La configuración de un contenedor de aprobación o un contenedor personalizado para una tarea de usuario no se respeta en el espacio de trabajo de AEM Forms.
+* No se respeta la configuración de un contenedor de aprobación o un contenedor personalizado para una tarea de usuario en el espacio de trabajo de AEM Forms.
 * Hay una opción disponible para buscar plantillas en la ficha Seguimiento, pero no en la ficha Tareas pendientes.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
