@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -296,7 +296,7 @@ El botón más de la biblioteca de recursos le permite guardar de forma permanen
 
 Cuando se proporciona un nombre personalizado para un estilo, este se asocia a un tema y ya no está disponible para otras temáticas. Para eliminar un estilo guardado:
 
-1. En la barra de herramientas CANVAS, haga clic en Opciones **de** tema ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) > **Administrar estilos**.
+1. En la barra de herramientas CANVAS, haga clic en Opciones **de** tema ![](assets/theme-options.png) > **Administrar estilos**.
 1. En el cuadro de diálogo Administrar estilos, seleccione un estilo guardado y haga clic en **Eliminar**.
 
    ![Eliminar el estilo guardado](assets/manage-styles.png)
