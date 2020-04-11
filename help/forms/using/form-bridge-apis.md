@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 8f90dc4865126d52e04effc9197ef7145b1a167e
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -58,7 +58,7 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
 
 * **Entrada**:
 
-   * **handler**: Función que se ejecutará después de que se haya conectado el puente de formulario
+   * **handler**: Función que se ejecuta después de que se haya conectado el puente de formulario
    * **contexto**: El objeto en el que se establece el contexto (esto) de la función de *controlador* .
 
 * **Salida**: Ninguno
@@ -68,32 +68,32 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
 
 * **Entrada:**
 
-   * **** opciones: Objeto JavaScript que contiene las siguientes propiedades:
+   * **opciones:** Objeto JavaScript que contiene las siguientes propiedades:
 
       * **Error**: Función del controlador de errores
       * **success**: Función de controlador de éxito. Esta función se pasa a un objeto que contiene XML en la propiedad *data* .
       * **contexto**: El objeto en el que se establece el contexto (esto) de la función de *éxito*
       * **validationChecker**: Función para llamar para comprobar los errores de validación recibidos del servidor. La función de validación se pasa a una matriz de cadenas de error.
-      * **formState**: Estado JSON del formulario XFA para el que se debe devolver el XML de datos. Si no se especifica, devuelve el XML de datos del formulario procesado actualmente.
+      * **formState**: Estado JSON del formulario XFA para el que se debe devolver el XML de datos. Si no se especifica, devuelve el XML de datos para el formulario procesado actualmente.
 
-* **** Salida: Ninguno
-* **** Error: Ninguno
+* **Salida:** Ninguno
+* **Error:** Ninguno
 
 **registerConfig(configName, config)** Registra configuraciones específicas de usuario/portal con FormBridge. Estas configuraciones anulan las configuraciones predeterminadas. Las configuraciones admitidas se especifican en la sección de configuración.
 
 * **Entrada:**
 
-   * **** configName: Nombre de la configuración que se va a omitir
+   * **configName:** Nombre de la configuración que se va a omitir
 
-      * **** widgetConfig: Permite al usuario anular los widgets predeterminados del formulario con widgets personalizados. La configuración se sobrescribe de la siguiente manera:
+      * **widgetConfig:** Permite al usuario anular los widgets predeterminados del formulario con widgets personalizados. La configuración se sobrescribe de la siguiente manera:
 
          *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **** pagingConfig: Permite que el usuario anule el comportamiento predeterminado de procesar solo la primera página. La configuración se sobrescribe de la siguiente manera:
+      * **pagingConfig:** Permite que el usuario anule el comportamiento predeterminado de procesar solo la primera página. La configuración se sobrescribe de la siguiente manera:
 
          *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true| false>, shrinkPageDisabled: &lt;true| false> }).*
 
-      * **** LoggingConfig: Permite al usuario anular el nivel de registro, deshabilitar el registro de una categoría o mostrar la consola de registros o enviar al servidor. La configuración se puede anular de la siguiente manera:
+      * **LoggingConfig:** Permite al usuario anular el nivel de registro, deshabilitar el registro de una categoría, o bien mostrar la consola de registros o enviar al servidor. La configuración se puede anular de la siguiente manera:
 
       ```JavaScript
       formBridge.registerConfig{
@@ -107,7 +107,7 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
         }
       ```
 
-      * **** SubmitServiceProxyConfig: Permita que los usuarios registren los servicios proxy de envío y de registro.
+      * **SubmitServiceProxyConfig:** Permita que los usuarios registren los servicios proxy de envío y de registro.
 
          ```JavaScript
          window.formBridge.registerConfig("submitServiceProxyConfig",
@@ -117,31 +117,31 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
          "submitUrl" : "`<submitUrl>`"
          });
          ```
-   * **** config: Valor de la configuración
+   * **config:** Valor de la configuración
 
 
 
-* **** Salida: Objeto que contiene el valor original de la configuración en la propiedad *data* .
+* **Salida:** Objeto que contiene el valor original de la configuración en la propiedad *data* .
 
-* **** Error: Ninguno
+* **Error:** Ninguno
 
 **hideFields(fieldArray)** Oculta los campos cuyas expresiones Som se proporcionan en fieldArray. Establece la propiedad presence de los campos especificados como invisible
 
 * **Entrada:**
 
-   * **** fieldArray: Matriz de expresiones Som para los campos que se van a ocultar
+   * **fieldArray:** Matriz de expresiones de algunos para que los campos se oculten
 
-* **** Salida: Ninguno
-* **** Error: Ninguno
+* **Salida:** Ninguno
+* **Error:** Ninguno
 
 **showFields(fieldArray)** Muestra los campos cuyas expresiones Som se proporcionan en fieldArray. Define la propiedad presence de los campos proporcionados como visible
 
 * **Entrada:**
 
-   * **** fieldArray: Matriz de expresiones Som para los campos que se van a mostrar
+   * **fieldArray:** Matriz de expresiones de algunos para que se muestren los campos
 
-* **** Salida: Ninguno
-* **** Error: Ninguno
+* **Salida:** Ninguno
+* **Error:** Ninguno
 
 **hideSubmitButtons()** Oculta todos los botones de envío del formulario
 
@@ -151,47 +151,47 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
 
 **getFormState()** Devuelve el JSON que representa el estado del formulario
 
-* **** Entrada: Ninguno
-* **** Salida: Objeto que contiene JSON que representa el estado de formulario actual en la propiedad *data* .
+* **Entrada:** Ninguno
+* **Salida:** Objeto que contiene JSON que representa el estado de formulario actual en la propiedad *data* .
 
-* **** Error: Ninguno
+* **Error:** Ninguno
 
 **restoreFormState(options)** Restaura el estado del formulario a partir del estado JSON proporcionado en el objeto options. Se aplica el estado y se llaman a los controladores de éxito o error una vez finalizada la operación
 
 * **Entrada:**
 
-   * **** Opciones: Objeto JavaScript que contiene las siguientes propiedades:
+   * **Opciones:** Objeto JavaScript que contiene las siguientes propiedades:
 
       * **Error**: Función del controlador de errores
       * **success**: Función de controlador de éxito
       * **contexto**: El objeto en el que se establece el contexto (esto) de la función de *éxito*
       * **formState**: Estado JSON del formulario. El formulario se restaura al estado JSON.
 
-* **** Salida: Ninguno
-* **** Error: Ninguno
+* **Salida:** Ninguno
+* **Error:** Ninguno
 
 **setFocus (som)** Define el enfoque en el campo especificado en la expresión Som
 
-* **** Entrada: Una expresión del campo en el que se va a definir el enfoque
-* **** Salida: Ninguno
-* **** Error: Emite una excepción en caso de una expresión Som incorrecta
+* **Entrada:** expresión del campo en el que se va a definir el enfoque
+* **Salida:** Ninguno
+* **Error:** Emite una excepción en caso de expresión Som incorrecta
 
-**setFieldValue (som, value)** Establece el valor de los campos de las expresiones Som determinadas
+**setFieldValue (som, value)** Establece el valor de los campos para las expresiones Som determinadas
 
 * **Entrada:**
 
-   * **** som: Matriz que contiene expresiones de tipo &quot;Som&quot; del campo. Expresión som para establecer el valor de los campos.
-   * **** value: Matriz que contiene los valores correspondientes a expresiones Som proporcionadas en una **** matriz. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
+   * **som:** Matriz que contiene Algunas expresiones del campo. expresión som para establecer el valor de los campos.
+   * **value:** Matriz que contiene los valores correspondientes a expresiones de algunos proporcionadas en una **** matriz. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
 
-* **** Salida: Ninguno
-* **** Error: Emite una excepción en el caso de una expresión Som incorrecta
+* **Salida:** Ninguno
+* **Error:** Emite una excepción en el caso de una expresión Som incorrecta
 
 **getFieldValue (som)** Devuelve el valor de los campos de las expresiones Som determinadas
 
-* **** Entrada: Matriz que contiene expresiones de tipo de los campos cuyo valor se debe recuperar
-* **** Salida: Objeto que contiene el resultado como matriz en la propiedad **data** .
+* **Entrada:** Matriz que contiene algunas expresiones de los campos cuyo valor debe recuperarse
+* **Salida:** Objeto que contiene el resultado como matriz en la propiedad **data** .
 
-* **** Error: Ninguno
+* **Error:** Ninguno
 
 ### Ejemplo de la API getFieldValue() {#example-of-nbsp-getfieldvalue-api}
 
@@ -206,27 +206,27 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, property)** Recupere la lista de valores de la propiedad dada de los campos especificados en las expresiones Som
+**getFieldProperties(som, property)** Recupere la lista de valores para la propiedad dada de los campos especificados en expresiones Som
 
 * **Entrada:**
 
-   * **** som: Matriz que contiene expresiones Som para los campos
+   * **som:** Matriz que contiene algunas expresiones para los campos
    * **propiedad**: Nombre de la propiedad cuyo valor es obligatorio
 
-* **** Salida: Objeto que contiene el resultado como matriz en la propiedad *data*
+* **Salida:** Objeto que contiene el resultado como matriz en la propiedad *data*
 
-* **** Error: Ninguno
+* **Error:** Ninguno
 
 **setFieldProperties(som, property, values)** Establece el valor de la propiedad dada para todos los campos especificados en las expresiones Som
 
 * **Entrada:**
 
-   * **** som: Matriz que contiene expresiones Som de los campos cuyo valor se debe definir
+   * **som:** Matriz que contiene algunas expresiones de los campos cuyo valor debe establecerse
    * **propiedad**: Propiedad cuyo valor debe establecerse
-   * **** value: Matriz que contiene valores de la propiedad dada para los campos especificados en expresiones Som
+   * **value:** Matriz que contiene los valores de la propiedad dada para los campos especificados en expresiones Som
 
-* **** Salida: Ninguno
-* **** Error: Ninguno
+* **Salida:** Ninguno
+* **Error:** Ninguno
 
 ## Ejemplo de uso de la API de Form Bridge {#sample-usage-of-form-bridge-api}
 
@@ -261,5 +261,3 @@ if(a.errors) {
     formBridge.submitForm({success:suc,error:err}); // not passing a context means that this will be formBridge itself. Validation errors will be checked.
   }
 ```
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
