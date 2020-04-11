@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -33,23 +33,23 @@ Para familiarizarse con el proceso completo de creación de una aplicación de f
 
 Puede utilizar el espacio de trabajo de AEM Forms para realizar las siguientes tareas:
 
-**** Iniciar un proceso comercial: El espacio de trabajo de AEM Forms clasifica los procesos tal como los diseñó y configuró su organización. Puede marcar como favoritas las categorías que se utilizan con frecuencia para acceder a ellas rápidamente. Cuando se inicia un proceso, normalmente se rellena un formulario para iniciar un proceso empresarial que formulario controles de flujo de trabajo. Para obtener más información, consulte [Inicio de procesos](/help/forms/using/starting-processes.md).
+**Inicio de un proceso comercial:** El espacio de trabajo de AEM Forms categoría los procesos tal como los diseñó y configuró su organización. Puede marcar como favoritas las categorías usadas con frecuencia para acceder rápidamente a las categorías. Cuando se inicio un proceso, normalmente se rellena un formulario para inicio de un proceso empresarial que realiza controles de flujo de trabajo de formularios. Para obtener más información, consulte [Inicio de procesos](/help/forms/using/starting-processes.md).
 
-**** Ver y actuar según las tareas: Cuando ve las listas de tareas pendientes, ve las tareas de un proceso empresarial que están asignadas a usted, a cualquier grupo al que pertenezca o que sean tareas compartidas de otros usuarios. Puede abrir, trabajar y completar las tareas según sea necesario. Normalmente, completar una tarea implica proporcionar información, aprobar un formulario o rechazar un formulario. Para obtener más información, consulte [Uso de listas](/help/forms/using/todo-lists.md)de tareas pendientes.
+**Vista y adopción de medidas sobre la base de tareas:** Cuando vista sus listas de tareas pendientes, verá tareas de un proceso empresarial que se le han asignado, o de cualquier grupo al que pertenezca o que sean tareas compartidas de otros usuarios. Puede abrir, trabajar y completar las tareas según sea necesario. Normalmente, completar una tarea implica proporcionar información, aprobar un formulario o rechazar un formulario. Para obtener más información, consulte [Uso de listas](/help/forms/using/todo-lists.md)de tareas pendientes.
 
-**Tareas** de seguimiento: Para realizar el seguimiento de las tareas, utilice la ficha Seguimiento del espacio de trabajo de AEM Forms. Puede buscar los procesos activos o completados que inició o en los que participó. Puede ver las tareas, las asignaciones y los formularios que formaban parte del proceso. También puede iniciar nuevos procesos utilizando datos de formulario de un proceso que haya iniciado anteriormente. Para obtener más información, consulte [Seguimiento de procesos](/help/forms/using/tracking-processes.md).
+**tareas** de seguimiento: Para realizar el seguimiento de sus tareas, utilice la ficha Seguimiento del espacio de trabajo de AEM Forms. Puede buscar los procesos activos o completados que inició o en los que participó. Puede realizar la vista de las tareas, asignaciones y formularios que formaban parte del proceso. También puede inicio nuevos procesos mediante datos de formulario de un proceso que haya iniciado anteriormente. Para obtener más información, consulte [Seguimiento de procesos](/help/forms/using/tracking-processes.md).
 
 ## Nueva oferta de espacio de trabajo de AEM Forms {#new-offering-of-aem-forms-workspace}
 
-**Compatibilidad con la aprobación masiva de tareas**:
+**Compatibilidad para la aprobación masiva de tareas**:
 
-Puede aprobar varias tareas del mismo tipo. Una vez seleccionada una tarea para aprobación, solo permanecerán habilitadas las tareas con el mismo proceso, con los mismos nombres de tareas y las mismas opciones de ruta. Consulte [Uso de listas](/help/forms/using/todo-lists.md) de tareas pendientes para obtener detalles de implementación.
+Puede aprobar varias tareas del mismo tipo. Una vez seleccionada una tarea para aprobación, solo permanecerán habilitadas las tareas con el mismo proceso, con los mismos nombres de tarea y las mismas opciones de ruta. Consulte [Uso de listas](/help/forms/using/todo-lists.md) pendientes para obtener detalles de implementación.
 
 ## Migración de Flex Workspace al espacio de trabajo de AEM Forms {#migrating-from-flex-workspace-to-aem-forms-workspace}
 
 Flex Workspace no es compatible con los clientes de AEM Forms. Todos los clientes que utilicen Flex Workspace deben pasar a AEM Forms Workspace.
 
-En el espacio de trabajo de AEM Forms, los servicios de procesamiento y envío predeterminados, en el perfil de acción predeterminado, asociados a formularios XDP, han cambiado y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio](/help/forms/using/new-render-submit-service.md)de procesamiento y envío. Para migrar los procesos existentes, que funcionan con formularios XDP, y utilizar estos servicios, puede seguir [estos pasos](/help/forms/using/new-render-submit-service.md#main-pars-faq).
+En el espacio de trabajo de AEM Forms, los servicios predeterminados de procesamiento y envío, en el perfil de acciones predeterminado, asociados a formularios XDP, han cambiado y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio](/help/forms/using/new-render-submit-service.md)de procesamiento y envío. Para migrar los procesos existentes, que funcionan con formularios XDP, y utilizar estos servicios, puede seguir [estos pasos](/help/forms/using/new-render-submit-service.md#main-pars-faq).
 
 **Asignación de las personalizaciones de Flex Workspace con el espacio de trabajo de AEM Forms**
 
@@ -63,7 +63,7 @@ La asignación entre varios tipos de personalizaciones en ambos espacios de trab
    <td><strong>Escenario de personalización del espacio de trabajo de AEM Forms correspondiente</strong></td>
   </tr>
   <tr>
-   <td>Personalización de la localización</td>
+   <td>Personalización de Localizaciones</td>
    <td>
     <ol>
      <li>Cambio de la configuración regional de Workspace</li>
@@ -92,13 +92,13 @@ La asignación entre varios tipos de personalizaciones en ambos espacios de trab
     <ol>
      <li>Simplificación de la interfaz de usuario de Workspace<br /> </li>
      <li>Creación de una nueva pantalla de inicio de sesión</li>
-     <li>Creación de un contenedor de aprobación personalizado</li>
+     <li>Creación de un Contenedor de aprobación personalizado</li>
     </ol> </td>
    <td>
     <ol>
      <li><a href="/help/forms/using/description-reusable-components.md">Uso de componentes reutilizables</a></li>
      <li><a href="/help/forms/using/creating-new-login-screen.md">Creación de una nueva pantalla de inicio de sesión</a></li>
-     <li>El contenedor de aprobación está obsoleto.</li>
+     <li>El Contenedor de aprobación está obsoleto.</li>
     </ol> </td>
   </tr>
  </tbody>
@@ -122,20 +122,18 @@ El espacio de trabajo de AEM Forms admite una amplia variedad de personalizacion
 
 El artículo de [personalización](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) explica los tipos de personalizaciones.
 
-### Configuración del entorno de desarrollo {#set-up-the-developer-environment}
+### Set up the developer environment {#set-up-the-developer-environment}
 
-Los elementos que se pueden entregar en el espacio de trabajo de AEM Forms incluyen un paquete CRX implementado en CRX, un archivo SDK que contiene el código fuente completo, bibliotecas JavaScript de terceros y secuencias de comandos de compilación del espacio de trabajo de AEM Forms. Utilícelos para configurar el entorno de desarrollo para realizar las personalizaciones mencionadas anteriormente. Para obtener más información, consulte [Creación del código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)del espacio de trabajo de AEM Forms.
+Los elementos que se pueden entregar en el espacio de trabajo de AEM Forms incluyen un paquete CRX implementado en CRX, un archivo SDK que contiene el código fuente completo, bibliotecas JavaScript de terceros y secuencias de comandos de compilación del espacio de trabajo de AEM Forms. Utilícelos para configurar el entorno del desarrollador para realizar las personalizaciones mencionadas anteriormente. Para obtener más información, consulte [Creación del código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)del espacio de trabajo de AEM Forms.
 
-Puede personalizar una parte importante de la interfaz y la funcionalidad básica, como fuentes, combinación de colores, logotipo, pantalla de inicio de sesión, diálogos de error, integración con aplicaciones de terceros y reutilización de componentes en aplicaciones de terceros. También puede mejorar el contenido mostrado en la página Resumen de tareas, mostrar imágenes para acciones de ruta de tareas e incluso modificar las vistas y los modelos de red troncal de bajo nivel que crean la aplicación de espacio de trabajo de AEM Forms.
+Puede personalizar una parte importante de la interfaz y la funcionalidad básica, como fuentes, combinación de colores, logotipo, pantalla de inicio de sesión, diálogos de error, integración con aplicaciones de terceros y reutilización de componentes en aplicaciones de terceros. También puede mejorar el contenido que se muestra en la página Resumen de Tarea, mostrar imágenes para acciones de ruta de tarea e incluso modificar los modelos de red troncal de bajo nivel y las Vistas que crean la aplicación de espacio de trabajo de AEM Forms.
 
 ### Representación HTML de formularios XDP {#html-rendering-of-xdp-forms}
 
 De forma predeterminada, para un nuevo proceso, un formulario XDP se procesa en formato PDF en un escritorio y en formato HTML en una tablet. Siempre es posible procesar un formulario XDP en formato HTML. Para obtener más información, consulte [Nuevo servicio](/help/forms/using/new-render-submit-service.md)de procesamiento y envío.
 
-[La función de formularios](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) móviles, que funciona con [perfiles](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), activa la representación HTML de formularios XDP. De forma predeterminada, &#39;Representar nuevo formulario HTML&#39; utiliza `default.html` un perfil que puede cambiar. También puede agregar cambios personalizados que se producen antes de procesar un formulario XDP en formato HTML.
+[La función de formularios](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) móviles, que funciona con [perfiles](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), habilita la representación HTML de formularios XDP. De forma predeterminada, &#39;Representar nuevo formulario HTML&#39; utiliza `default.html` perfil, que puede cambiar. También puede agregar cambios personalizados que se producen antes de procesar un formulario XDP en formato HTML.
 
 ## Aplicación del espacio de trabajo de AEM Forms {#aem-forms-workspace-app}
 
 Para trabajar en los procesos empresariales en un dispositivo móvil, puede utilizar la aplicación de espacio de trabajo de AEM Forms que ofrece AEM Forms. Para obtener más información, consulte Descripción general [de la aplicación del espacio de trabajo de](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)AEM Forms.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
