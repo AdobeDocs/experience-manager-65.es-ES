@@ -9,7 +9,7 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -47,7 +47,7 @@ Cuando el formulario adaptable se publica como una página de AEM, toda la pági
 
 AEM Forms permite a los desarrolladores de formularios incrustar formularios adaptables sin problemas en una página Sitios de AEM. El formulario adaptable incrustado es totalmente funcional y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 
-AEM Forms proporciona un componente, AEM Forms Container, para incrustar un formulario adaptable en una página de AEM Sites. De forma predeterminada, el componente no está visible en el contenedor Sitios de AEM. Siga estos pasos para activar el componente Contenedor de AEM Forms e incrustar el formulario adaptable en una página Sitios de AEM:
+AEM Forms proporciona un componente, AEM Forms Contenedor, para incrustar un formulario adaptable en una página de AEM Sites. De forma predeterminada, el componente no está visible en AEM Sites contenedor. Siga estos pasos para activar el componente Contenedor de AEM Forms e incrustar el formulario adaptable en una página de sitios de AEM:
 
 1. Cree y abra una página en el sitio de We.Retail para editarla. Por ejemplo, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). El formulario adaptable se incrusta en la página de sitios.
 
@@ -56,10 +56,10 @@ AEM Forms proporciona un componente, AEM Forms Container, para incrustar un form
    El sitio Web de We.Retail se envía con AEM. Si no tiene instalado el sitio Web de We.Retail, consulte Implementación [de referencia de](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) We.Retail para instalar el sitio.
 
 1. Toque ![propiedades](assets/properties.png) de la información de la página y seleccione la opción **Editar plantilla** en la página del sitio Web We.Retail recientemente creada. La plantilla de la página se abre en una nueva ficha del explorador.
-1. Toque dentro del cuadro contenedor **de** diseño y toque ![Administración de fuentes](assets/feedmanagement.png). En la ficha Componentes **** permitidos, expanda el acordeón **General** , seleccione la opción Formulario **** AEM y toque ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). El componente Contenedor de AEM Forms está habilitado para la página.
+1. Toque dentro del cuadro de contenedor **de** diseño y toque ![Administración de fuentes](assets/feedmanagement.png). En la ficha Componentes **** permitidos, expanda el acordeón **General** , seleccione la opción Formulario **** AEM y toque ![](assets/save_icon.svg). El componente Contenedor de AEM Forms está habilitado para la página.
 
-1. Abra la ficha del navegador que contiene la página Sitios AEM abierta en el paso 1. Puntee en el cuadro **Arrastrar componentes aquí** y toque **+.** En el cuadro **Insertar nuevo componente** , toque Formulario **AEM.** El componente Contenedor **de formularios** AEM se agrega a la página.
-1. Toque el componente contenedor **de formularios** AEM y toque ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/cmppr.png). Aparece un cuadro de diálogo con las propiedades de AEM Forms Container. En el campo Ruta **del** recurso, busque y seleccione el formulario adaptable Shipping-address-add-update-form. Tocar ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). El formulario adaptable se incrusta en la página.
+1. Abra la ficha del navegador que contiene la página Sitios AEM abierta en el paso 1. Puntee en el cuadro **Arrastrar componentes aquí** y toque **+.** En el cuadro **Insertar nuevo componente** , toque Formulario **AEM.** El componente Contenedor **de** AEM Forms se agrega a la página.
+1. Toque el componente contenedor **de** AEM Forms y toque ![](assets/configure-icon.svg). Aparece un cuadro de diálogo con las propiedades de AEM Forms Contenedor. En el campo Ruta **del** recurso, busque y seleccione el formulario adaptable Shipping-address-add-update-form. Tocar ![](assets/save_icon.svg). El formulario adaptable se incrusta en la página.
 1. Publique el formulario adaptable y la página de sitios. Tenga en cuenta lo siguiente:
 
    * Si publica la página Sitios de AEM por primera vez e incluye un formulario incrustado, publique la página Sitios y el formulario incrustado.
