@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -42,7 +42,7 @@ Para actualizar la barra de navegación en la parte superior del espacio de trab
 
 ### Uso de la propiedad color en CSS {#using-color-property-in-css}
 
-1. Agregue el siguiente estilo en newStyle.css en /apps/ws/css
+1. Añada el siguiente estilo en newStyle.css en /apps/ws/css
 
    ```css
    #header {
@@ -51,12 +51,10 @@ Para actualizar la barra de navegación en la parte superior del espacio de trab
    }
    ```
 
-## Componente de categoría {#category-component}
+## Componente de Categoría {#category-component}
 
-El componente Categoría muestra las distintas categorías de las tareas en el panel izquierdo. Para cambiar su color, defina el color de fondo en `.category` el elemento del archivo CSS.
+El componente Categoría muestra las distintas categorías de sus tareas en el panel izquierdo. Para cambiar su color, defina el color de fondo en `.category` el elemento del archivo CSS.
 
-## Componente de tarea {#task-component}
+## Componente de Tarea {#task-component}
 
-Las tareas se muestran en el panel central denominado Componente TaskList. Para cambiar el color, modifique el estilo asociado con el selector .task en la hoja de estilo.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+Las Tareas se muestran en el panel central denominado Componente TaskList. Para cambiar el color, modifique el estilo asociado con el selector de tarea .en la hoja de estilo.
