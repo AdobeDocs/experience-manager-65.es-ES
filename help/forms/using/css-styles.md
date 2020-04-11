@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -224,7 +224,7 @@ Cada campo tiene una utilidad asociada que representa el elemento UI. A continua
 
 ## Clases CSS para diferentes elementos de dibujo {#css-classes-for-different-draw-elements}
 
-Puede insertar elementos de dibujo estáticos como texto e imágenes mediante AEM Forms Designer. Para cada elemento de dibujo, se asocia una clase CSS independiente a ese elemento. A continuación se muestra la lista de clases CSS para elementos de dibujo. Cada elemento de dibujo tiene una clase de dibujo asociada.
+Puede insertar elementos de dibujo estáticos como texto e imágenes mediante AEM Forms Designer. Para cada elemento de dibujo, se asocia una clase CSS independiente a ese elemento. La lista de clases CSS para elementos de dibujo se muestra a continuación. Cada elemento de dibujo tiene una clase de dibujo asociada.
 
 | **Dibujar tipo** | **Clase de CSS** |
 |---|---|
@@ -248,5 +248,3 @@ Cuando la validación de un campo da como resultado una advertencia, se muestra 
 `Styling Fields with Validation Errors`
 
 Cuando falla la validación de un campo, cambia el estilo de la utilidad. Este cambio de estilo se realiza aplicando un **widgetError** de clase CSS en el componente de la utilidad. Para modificar el estilo predeterminado, anule la clase **widgetError** .
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
