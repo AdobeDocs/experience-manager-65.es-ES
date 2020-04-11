@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -192,5 +192,3 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 1. Los formularios HTML, mediante Propiedades de proceso en su diseño, se muestran en el espacio de trabajo de AEM Forms con el botón Enviar dentro del formulario.
 
    Al diseñar formularios, cuando se utilizan propiedades de proceso, se agrega un botón Enviar dentro del formulario. Cuando se procesa como un PDF en el espacio de trabajo de AEM Forms, el usuario final no ve el botón Enviar. Sin embargo, cuando se procesa como un formulario HTML en el espacio de trabajo de AEM Forms, el usuario final puede ver el botón Enviar. Al hacer clic en este botón Enviar dentro del formulario, no se inicia ninguna acción. Al hacer clic en el botón Enviar en la parte inferior del espacio de trabajo de AEM Forms, fuera del formulario, se completa la tarea.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
