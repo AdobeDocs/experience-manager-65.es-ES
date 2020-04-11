@@ -1,6 +1,6 @@
 ---
-title: Uso de listas de tareas pendientes
-seo-title: Uso de listas de tareas pendientes
+title: Uso de listas pendientes
+seo-title: Uso de listas pendientes
 description: Cómo abrir, trabajar y completar las tareas según sea necesario, como aprobar o rechazar una solicitud o agregar más información.
 seo-description: Cómo abrir, trabajar y completar las tareas según sea necesario, como aprobar o rechazar una solicitud o agregar más información.
 uuid: f9cfad8e-5d0c-4a30-8153-2a03bf7dd986
@@ -11,22 +11,22 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Uso de listas de tareas pendientes{#working-with-to-do-lists}
+# Uso de listas pendientes{#working-with-to-do-lists}
 
-Al ver las listas de tareas pendientes, puede ver las tareas de un proceso empresarial que se le han asignado, o de cualquier grupo al que pertenezca o que sean tareas compartidas de otros usuarios. Puede abrir, trabajar y completar las tareas según sea necesario, como aprobar o rechazar una solicitud o agregar más información. Después de completar una tarea, se envía a la siguiente persona del proceso comercial,
+Cuando vista sus listas de tareas pendientes, es posible que vea tareas de un proceso empresarial que se le han asignado, o de cualquier grupo al que pertenezca o que sean tareas compartidas de otros usuarios. Puede abrir, trabajar y completar las tareas según sea necesario, como aprobar o rechazar una solicitud o agregar más información. Después de completar una tarea, se envía a la persona siguiente en el proceso comercial,
 
-## Acerca de las listas de tareas pendientes {#about-todo-lists}
+## Acerca de las listas pendientes {#about-todo-lists}
 
-El espacio de trabajo de AEM Forms tiene los tres tipos siguientes de listas de tareas pendientes:
+El espacio de trabajo de AEM Forms tiene los tres tipos siguientes de listas pendientes:
 
-* Listas individuales, que contienen tareas que se le asignan directamente.
-* Listas de grupos, que contienen tareas asignadas a un grupo. Cualquier miembro del grupo puede abrir y completar las tareas. Para abrir una tarea, un miembro de un grupo debe reclamar primero la tarea.
-* Listas compartidas, que contienen tareas asignadas a un usuario que ha compartido su lista de tareas pendientes con usted y posiblemente con otros usuarios. Cualquiera de los usuarios que comparte una lista puede reclamar, abrir y completar tareas compartidas.
+* listas individuales, que contienen tareas que se le asignan directamente.
+* listas de grupo, que contienen tareas asignadas a un grupo. Cualquier miembro del grupo puede abrir y completar las tareas. Para abrir una tarea, un miembro de un grupo debe reclamar primero la tarea.
+* listas compartidas, que contienen tareas asignadas a un usuario que ha compartido su lista de tareas pendientes con usted y posiblemente con otros usuarios. Cualquiera de los usuarios que comparte una lista puede solicitar, abrir y completar tareas compartidas.
 
 Puede realizar algunas acciones sin abrir la tarea haciendo clic en los iconos que aparecen cuando pasa el puntero sobre una tarea.
 
@@ -34,20 +34,20 @@ Puede realizar algunas acciones sin abrir la tarea haciendo clic en los iconos q
 >
 >Un icono de exclamación indica que la tarea es de alta prioridad.
 
-## Tareas habituales {#typical-tasks}
+## tareas típicas {#typical-tasks}
 
-Al abrir y trabajar en una tarea, las herramientas disponibles dependen de la tarea. Las distintas tareas requieren que realice diferentes acciones y, por este motivo, es posible que algunas herramientas estén o no disponibles para usted. Las tareas típicas que puede recibir se describen a continuación.
+Al abrir y trabajar en una tarea, las herramientas disponibles dependen de la tarea. Diferentes tareas requieren que realice diferentes acciones y, por este motivo, es posible que algunas herramientas estén o no disponibles para usted. Las tareas típicas que puede recibir se describen a continuación.
 
 **Proporcione información**: Recibirá una tarea que requiere que complete y envíe un formulario.
 
 **Información** de revisión: Recibirá una tarea que requiere revisar la información y cerrar sesión en el contenido.
 
-**Revisión** multiusuario: Recibirá una tarea al mismo tiempo que otros usuarios la recibirán. Usted y los demás usuarios deben proporcionar información o revisar el contenido, o ambos. Con este tipo de tarea pueden estar disponibles las siguientes herramientas:
+**Revisión** multiusuario: Recibirá una tarea al mismo tiempo que otros usuarios recibirán la tarea. Usted y los demás usuarios deben proporcionar información o revisar el contenido, o ambos. Con este tipo de tarea pueden estar disponibles las siguientes herramientas:
 
-* Ver las instrucciones de la tarea
+* Visualización de las instrucciones para la tarea
 * Visualización del estado de finalización de todos los usuarios asignados a la tarea
 * Visualización de los comentarios de todos los usuarios asignados a la tarea
-* Adición de comentarios a la tarea usted mismo
+* Añadiendo comentarios a la tarea usted mismo
 
 Las herramientas adicionales que pueden estar disponibles con cualquiera de las tareas anteriores incluyen:
 
@@ -60,69 +60,69 @@ Las herramientas adicionales que pueden estar disponibles con cualquiera de las 
 
 ## Abrir tareas {#opening-tasks}
 
-Puede abrir y bloquear tareas desde la lista de tareas pendientes o reclamar y abrir tareas desde un grupo o una lista de tareas pendientes compartidas. Al abrir una tarea, ésta se muestra en el panel principal. Las demás tareas se muestran en la lista de tareas junto a la lista Tareas pendientes.
+Puede abrir y bloquear tareas desde la lista de tareas pendientes o reclamar y abrir tareas desde un grupo o una lista de tareas pendientes compartida. Al abrir una tarea, ésta se muestra en el panel principal. Las demás tareas se muestran en la lista de tarea junto a la lista Tareas pendientes.
 
-Si existe una URL de resumen de tareas, la vista Resumen de tareas se abre de forma predeterminada, en lugar del formulario asociado a una tarea. Incluso cuando un usuario activa la opción &quot;Abrir el formulario en modo maximizado&quot; en Asignar tarea, el formulario no se abre en modo maximizado.
+Si existe una URL de resumen de Tarea, la vista de resumen de Tarea se abre de forma predeterminada, en lugar del formulario asociado a una tarea. Incluso cuando un usuario activa la opción &quot;Abrir el formulario en modo maximizado&quot; en Asignar Tarea, el formulario no se abre en modo maximizado.
 
 >[!NOTE]
 >
->Cuando se abre una tarea, según los valores predeterminados de la tarea, el formulario asociado puede mostrarse en la vista completa.
+>Cuando se abre una tarea, según los valores predeterminados de tarea, el formulario asociado puede mostrarse en vista completa.
 
-### Abrir y bloquear una tarea de la lista {#open-and-lock-a-task-from-your-list}
+### Abrir y bloquear una tarea de su lista {#open-and-lock-a-task-from-your-list}
 
-Al abrir una tarea desde la lista de tareas pendientes, si se comparte la lista, puede bloquearla para evitar que otro usuario que tenga acceso a la lista trabaje en la tarea.
+Al abrir una tarea desde la lista Tareas pendientes, si se comparte la lista, puede bloquear la tarea para evitar que otro usuario que tenga acceso a la lista trabaje en la tarea.
 
-1. En la página Tareas pendientes, en el panel izquierdo, seleccione su lista de tareas individuales. Todas las tareas se muestran en el panel central.
+1. En la página Tareas pendientes, en el panel izquierdo, seleccione la lista de tareas individuales. Todas las tareas se muestran en el panel central.
 
    >[!NOTE]
    >
-   >Puede filtrar las tareas seleccionando el tipo de proceso en la lista Tareas pendientes. Puede seleccionar la lista de tareas pendientes para volver a ver todas las tareas de la lista de tareas pendientes.
+   >Puede filtrar las tareas seleccionando el tipo de proceso en la lista Tareas pendientes. Puede seleccionar la lista Tareas pendientes para volver a realizar la vista de todas las tareas de la lista Tareas pendientes.
 
-1. Si es necesario, bloquee la tarea. Para bloquear una tarea, haga clic en el icono Todas las opciones de la tarea y seleccione Bloquear. Sitúe el puntero sobre la tarea para que la opción esté disponible.
+1. Si es necesario, bloquee su tarea. Para bloquear una tarea, haga clic en el icono Todas las opciones de la tarea y seleccione Bloquear. Pase el puntero sobre la tarea para que la opción esté disponible.
 
    >[!NOTE]
    >
    >También puede bloquear o desbloquear una tarea en cualquier ficha cuando la tarea esté abierta.
 
-   ![lock_task](assets/lock_task.png)
+   ![lock_tarea](assets/lock_task.png)
 
-   Todas las opciones del menú de una tarea
+   Menú Todas las opciones de una tarea
 
 1. Haga clic en la tarea para abrirla.
 
-### Abrir y reclamar una tarea de una lista de grupos o compartidos {#open-and-claim-a-task-from-a-shared-or-group-list}
+### Abrir y reclamar una tarea de una lista compartida o de grupo {#open-and-claim-a-task-from-a-shared-or-group-list}
 
-Al abrir y reclamar una tarea de un grupo o una lista compartida, la tarea se mueve del grupo o lista compartida a la lista de tareas individuales. A otros usuarios con acceso a la lista se les impide trabajar en la tarea.
+Al abrir y reclamar una tarea de un grupo o una lista compartida, la tarea se mueve del grupo o la lista compartida a la lista de tareas individuales. A otros usuarios con acceso a la lista se les impide trabajar en la tarea.
 
 1. En la página Tareas pendientes, en el panel izquierdo, seleccione un grupo o una lista de tareas compartidas. Todas las tareas se muestran en el panel central.
 1. Realice uno de estos pasos:
 
-   * Para reclamar una tarea, sin abrirla, desde una lista de tareas pendientes compartida o de grupo, haga clic en **Reclamar** pasando el puntero sobre la tarea. Como alternativa, cuando la tarea está abierta, el botón Reclamar está disponible en la barra de acciones debajo del panel de tareas. Una vez realizada la solicitud, una tarea pasa de la lista de tareas del grupo o compartida a la lista de tareas pendientes.
-   * Para reclamar y abrir una tarea desde un grupo o una lista de tareas pendientes compartidas, haga clic en **Reclamar y abra**.
+   * Para reclamar una tarea, sin abrirla, de un grupo o de una lista de tareas pendientes compartida, haga clic en **Reclamar** pasando el puntero sobre la tarea. Como alternativa, cuando la tarea está abierta, el botón Reclamar está disponible en la barra de acciones debajo del panel tarea. Al reclamar, una tarea pasa del grupo o de la lista de tareas pendientes compartida a la lista.
+   * Para reclamar y abrir una tarea de un grupo o de una lista de tareas pendientes compartida, haga clic en **Reclamar y abra**.
 
 ## Working with tasks {#working-with-tasks}
 
 Después de abrir una tarea, las fichas que se muestran en el panel principal y las herramientas disponibles dependen de la tarea. Las fichas que puede ver se describen a continuación:
 
-**Resumen** de tareas: Cuando se abre una tarea, el panel Resumen de tareas permite mostrar información sobre la tarea, si existe, mediante una dirección URL especificada en el proceso en el paso Asignar tarea. Al utilizar el panel Resumen de tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Esta ficha no está disponible si la URL de resumen de tareas no existe.
+**Resumen** de Tarea: Cuando se abre una tarea, el panel Resumen de Tarea permite mostrar información sobre la tarea, si existe, mediante una URL especificada en el proceso en el paso Asignar Tarea. Al utilizar el panel Resumen de Tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Esta ficha no está disponible si la URL de resumen de Tarea no existe.
 
-**Detalles**: Proporciona información sobre la tarea y el proceso actuales al que pertenece.
+**Detalles**: Proporciona información sobre la tarea actual y el proceso al que pertenece.
 
 **Formulario**: Muestra el formulario asociado a la tarea. El formulario puede ser de varios tipos de archivo, incluidos archivos PDF, HTML, Guide y SWF. El formulario puede tener el aspecto de un formulario normal imprimible o basado en Web o guiarlo por una serie de paneles de estilo asistente para recopilar información.
 
-**Historial**: Enumera las tareas que forman parte de la instancia de proceso y el formulario, las asignaciones de tareas y los archivos adjuntos asociados para cada tarea.
+**Historial**: Lista las tareas que forman parte de la instancia de proceso y el formulario asociado, las asignaciones de tarea y los archivos adjuntos para cada tarea.
 
 **Datos adjuntos**: Muestra los datos adjuntos existentes asociados a la tarea y los datos adjuntos, si es necesario.
 
 **Notas**: Muestra las notas existentes asociadas con la tarea y agrega notas, si es necesario.
 
-Al trabajar en una tarea, a continuación se describen las herramientas que puede ver y las acciones que puede realizar.
+Al trabajar en una tarea, las herramientas que puede ver y las acciones que puede realizar se describen a continuación.
 
 ### Reenviar, compartir o consultar una tarea {#forward-share-or-consult-on-a-task}
 
-Puede reenviar una tarea junto con cualquier nota o archivo adjunto a otro usuario, compartir la tarea o consultar la tarea con otro usuario. Si cambia los datos de formulario asociados a una tarea, guarde el formulario como borrador antes de reenviar, compartir o consultar la tarea. De lo contrario, la tarea se envía sin el formulario actualizado. Después de reenviar y compartir una tarea, el usuario que la reciba puede reclamarla y completarla o devolverla. Si consulta una tarea, el usuario sólo puede devolverle la tarea.
+Puede reenviar una tarea junto con cualquier nota o archivo adjunto a otro usuario, compartir la tarea o consultar la tarea con otro usuario. Si cambia los datos de formulario asociados a una tarea, guarde el formulario como borrador antes de reenviar, compartir o consultar la tarea. De lo contrario, la tarea se envía sin el formulario actualizado. Después de reenviar y compartir una tarea, el usuario que recibe la tarea puede reclamarla y completarla o devolverla. Si consulta una tarea, el usuario solo puede devolverle la tarea.
 
-1. Si cambia un formulario asociado a una tarea que desea mantener, haga clic en **Guardar**. La opción Guardar está disponible en la barra de acciones de la parte inferior de cada ficha. De lo contrario, la tarea se envía sin el formulario actualizado.
+1. Si cambia un formulario asociado a una tarea que desea conservar, haga clic en **Guardar**. La opción Guardar está disponible en la barra de acciones de la parte inferior de cada ficha. De lo contrario, la tarea se envía sin el formulario actualizado.
 
    >[!NOTE]
    >
@@ -141,9 +141,9 @@ Puede reenviar una tarea junto con cualquier nota o archivo adjunto a otro usuar
 
 ### Devolver una tarea {#return-a-task}
 
-1. En cualquier ficha, haga clic en **Regresar**. La tarea se devuelve a la lista de tareas pendientes del usuario que le ha enviado previamente la tarea o que le ha compartido o consultado con usted.
+1. En cualquier ficha, haga clic en **Regresar**. La tarea se devuelve a la lista de tareas pendientes del usuario que le ha enviado previamente la tarea o que ha compartido o consultado la tarea con usted.
 
-### Realizar una tarea sin conexión {#take-a-task-offline}
+### Desconectar una tarea {#take-a-task-offline}
 
 Es posible que pueda trabajar en una tarea sin conexión y enviar su formulario desde Adobe® Reader® o Adobe® Acrobat® Professional o Adobe® Acrobat® Standard. Cuando se envía el formulario, el cliente de correo electrónico se inicia con la dirección de correo electrónico del servidor correspondiente. A continuación, puede enviar el formulario completado al servidor por correo electrónico.
 
@@ -154,7 +154,7 @@ Es posible que pueda trabajar en una tarea sin conexión y enviar su formulario 
 
 Es posible que pueda agregar, actualizar, eliminar o guardar archivos adjuntos localmente.
 
-**Agregar un archivo adjunto**
+**Añadir un archivo adjunto**
 
 1. En la ficha **Archivos adjuntos** , haga clic en **Examinar** para seleccionar el archivo que desea adjuntar.
 1. Seleccione el nivel de **permisos** para los datos adjuntos de otros usuarios que participen en el proceso. Si selecciona **Leer**, otros usuarios pueden guardar el archivo localmente. Si selecciona uno de los permisos de edición, otros usuarios también pueden cargar un nuevo archivo para reemplazar los datos adjuntos.
@@ -165,9 +165,9 @@ Es posible que pueda agregar, actualizar, eliminar o guardar archivos adjuntos l
 
 1. Click **Upload**. El archivo se adjunta al formulario.
 
-**Ver un archivo adjunto**
+**Vista de datos adjuntos**
 
-1. En la ficha **Archivos adjuntos** , haga clic en el nombre de archivo del archivo adjunto para verlo.
+1. En la ficha **Archivos adjuntos** , haga clic en el nombre de archivo del archivo adjunto a la vista.
 
 **Guardar un archivo adjunto localmente**
 
@@ -181,11 +181,11 @@ Es posible que pueda agregar, actualizar, eliminar o guardar archivos adjuntos l
 
 1. Haga clic en **Eliminar** para ver un archivo adjunto.
 
-### Guarde el trabajo sin completar la tarea {#save-your-work-without-completing-the-task}
+### Guarde su trabajo sin completar la tarea {#save-your-work-without-completing-the-task}
 
 1. En cualquier ficha, toque **Guardar**.
 
-   Aparecerá el cuadro de diálogo Guardar como borrador. El nombre predeterminado del borrador es el nombre de la tarea de la plantilla de tareas.
+   Aparecerá el cuadro de diálogo Guardar como borrador. El nombre predeterminado del borrador es el nombre de la tarea de la plantilla de tarea.
 
    ![saveasreclutdialog](assets/saveasdraftdialog.png)
 
@@ -200,13 +200,13 @@ Es posible que pueda agregar, actualizar, eliminar o guardar archivos adjuntos l
 
    ![saveasreclutdialog_name](assets/saveasdraftdialog_name.png)
 
-   El borrador se guarda con el nombre especificado. La tarea permanece en la lista de tareas pendientes y los cambios realizados en el formulario se guardan en la carpeta Borradores. Además, en la lista Tareas pendientes, puede buscar el borrador con el nombre del borrador para reanudar el trabajo en él.
+   El borrador se guarda con el nombre especificado. La tarea permanece en la lista Tareas pendientes y los cambios realizados en el formulario se guardan en la carpeta Borradores. Además, en la lista Tareas pendientes, puede buscar el borrador con el nombre del borrador para reanudar el trabajo en él.
 
    ![searchfortarea](assets/searchfortask.png)
 
-## Tareas de finalización {#completing-tasks}
+## Finalización de tareas {#completing-tasks}
 
-La forma en que se realiza una tarea depende de la propia tarea y de su función en el proceso. Se le puede pedir que apruebe o rechace una solicitud, proporcione contenido, revise y verifique la información o indique que ha actuado.
+El modo de completar una tarea depende de la propia tarea y de su papel en el proceso. Se le puede pedir que apruebe o rechace una solicitud, proporcione contenido, revise y verifique la información o indique que ha actuado.
 
 Puede completar una tarea de varias formas:
 
@@ -215,7 +215,7 @@ Puede completar una tarea de varias formas:
 * Desde la lista de tareas pendientes, sin abrir la tareaNota: Esta opción está disponible si `isMustOpenToComplete` el campo no está seleccionado en el `Assign Task` paso de Workbench durante el diseño de un proceso.
 * Por correo electrónico, si recibe notificaciones por correo electrónico
 
-Cuando complete una tarea, según la tarea, puede aparecer un cuadro de diálogo de confirmación que reafirme la acción. Por ejemplo, puede ver un cuadro de diálogo que le solicita que confirme la validez de la información proporcionada.
+Al completar una tarea, según la tarea, puede aparecer un cuadro de diálogo de confirmación que reafirme la acción. Por ejemplo, puede ver un cuadro de diálogo que le solicita que confirme la validez de la información proporcionada.
 
 >[!NOTE]
 >
@@ -233,28 +233,28 @@ Cuando complete una tarea, según la tarea, puede aparecer un cuadro de diálogo
 1. Si aparece un cuadro de diálogo de confirmación, realice una de estas acciones:
 
    * Haga clic en **Aceptar** si ha completado la tarea y está listo para cerrar la sesión.
-   * Haga clic en **Cancelar** si desea volver a la tarea y no está listo para iniciarla.
+   * Haga clic en **Cancelar** si desea volver a la tarea y no está listo para cerrar sesión en ella.
 
 >[!NOTE]
 >
 >Puede ver un botón Enviar dentro de los formularios HTML cuando se utilizan propiedades de proceso en un formulario. Este botón no está visible cuando el mismo formulario se procesa como PDF. Para completar una tarea, haga clic en el botón Enviar disponible en la parte inferior del espacio de trabajo de AEM Forms, fuera del formulario y no en el botón Enviar dentro del formulario.
 
-### Tareas de aprobación masiva {#bulk-approve-tasks}
+### tareas de aprobación masiva {#bulk-approve-tasks}
 
-Puede enviar varias tareas desde la lista Tareas pendientes. Solo se pueden enviar juntos las tareas del mismo proceso, con los mismos nombres de tareas y las mismas opciones de ruta.
+Puede enviar varias tareas desde la lista Tareas pendientes. Sólo se pueden enviar juntos tareas del mismo proceso, con los mismos nombres de tarea, y las mismas opciones de ruta.
 
 >[!NOTE]
 >
->Esta opción está disponible si el campo isMustOpenToComplete no está seleccionado en el paso Asignar tarea en Workbench mientras se diseña un proceso.
+>Esta opción está disponible si el campo isMustOpenToComplete no está seleccionado en el paso Asignar Tarea en Workbench mientras se diseña un proceso.
 
-1. En la página Tareas pendientes, en el panel izquierdo, seleccione su lista de tareas individuales. Todas las tareas se muestran en el panel central.
+1. En la página Tareas pendientes, en el panel izquierdo, seleccione la lista de tareas individuales. Todas las tareas se muestran en el panel central.
 1. Seleccione **Activar modo** masivo. Las casillas de verificación aparecen delante de las tareas de la lista.
 
    >[!NOTE]
    >
-   >Esta opción no está disponible para tareas para las que el campo isMustOpenToComplete está seleccionado en el paso Asignar tarea en Workbench, mientras se diseña un proceso. Las casillas de verificación de dichas tareas en la lista de tareas pendientes de ejecución permanecen siempre desactivadas.
+   >Esta opción no está disponible para tareas para las que el campo isMustOpenToComplete está seleccionado en el paso Asignar Tarea en Workbench, mientras se diseña un proceso. Las casillas de verificación de dichas tareas en la lista TO-DO permanecen siempre desactivadas.
 
-1. Seleccione tareas para aprobación masiva. Se pueden seleccionar varias tareas del mismo proceso, con los mismos nombres de tareas y las mismas opciones de ruta. Una vez seleccionada una tarea para aprobación, solo permanecerán habilitadas las tareas con el mismo proceso, con los mismos nombres de tareas y las mismas opciones de ruta. El resto están desactivados.
+1. Seleccione tareas para la aprobación masiva. Se pueden seleccionar varias tareas del mismo proceso, con los mismos nombres de tarea, y las mismas opciones de ruta. Una vez seleccionada una tarea para aprobación, solo permanecerán habilitadas las tareas con el mismo proceso, con los mismos nombres de tarea y las mismas opciones de ruta. El resto están desactivados.
 
    ![1_bulkapproved](assets/1_bulkapproval.png)
 
@@ -264,9 +264,9 @@ Puede enviar varias tareas desde la lista Tareas pendientes. Solo se pueden envi
 
 ## Participación en tareas a través del correo electrónico {#participating-in-tasks-through-email}
 
-Puede recibir y completar tareas por correo electrónico. La participación en tareas a través de correos electrónicos elimina la necesidad de comprobar rutinariamente en la lista de tareas pendientes nuevas o comprobar el estado de una tarea en la página de seguimiento.
+Puede recibir y completar tareas por correo electrónico. La participación en tareas mediante correos electrónicos elimina la necesidad de comprobar rutinariamente la lista de tareas pendientes en busca de nuevas tareas o comprobar el estado de una tarea en la página de seguimiento.
 
-En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms para recibir notificaciones por correo electrónico. El espacio de trabajo de AEM Forms puede enviar notificaciones por correo electrónico para tareas de la lista de tareas pendientes o de cualquier lista de tareas pendientes de grupo a la que pertenezca. El administrador determina cuándo se envían los mensajes de notificación por correo electrónico y quién los recibe.
+En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms para recibir notificaciones por correo electrónico. El espacio de trabajo de AEM Forms puede enviar notificaciones por correo electrónico para tareas en la lista de tareas pendientes o en cualquier lista de trabajo de grupo al que pertenezca. El administrador determina cuándo se envían los mensajes de notificación por correo electrónico y quién los recibe.
 
 Los mensajes de correo electrónico pueden contener un vínculo que abre la tarea en el espacio de trabajo de AEM Forms, un archivo adjunto del formulario que se utiliza para la tarea o acciones para completar la tarea por correo electrónico. Si se incluye un formulario en el mensaje de correo electrónico, puede abrirlo y completar la tarea si los botones para completar la tarea están creados en el formulario. Si las acciones para completar la tarea se incluyen en el mensaje de correo electrónico, puede completar la tarea haciendo clic en las acciones del correo electrónico o respondiendo al correo electrónico con la acción escrita como primera línea en el cuerpo del correo electrónico.
 
@@ -276,7 +276,7 @@ Cuando se completa una tarea por correo electrónico, la tarea se elimina de la 
 
 >[!NOTE]
 >
->Si el usuario no ha iniciado sesión en el espacio de trabajo de AEM Forms en el navegador y abre un vínculo a una tarea pendiente, el vínculo directo de tareas pendientes no se abre y muestra una excepción. Inicie sesión en el espacio de trabajo de AEM Forms antes de hacer clic en los vínculos de los correos electrónicos.
+>Si el usuario no ha iniciado sesión en el espacio de trabajo de AEM Forms en el navegador y abre un vínculo a una tarea de tareas pendientes, el vínculo de tareas pendientes directo no se abre y muestra una excepción. Inicie sesión en el espacio de trabajo de AEM Forms antes de hacer clic en los vínculos de los correos electrónicos.
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Cuando se completa una tarea por correo electrónico, la tarea se elimina de la 
 ### Recibir mensajes de notificación por correo electrónico {#receive-email-notification-messages}
 
 1. Haga clic en **Preferencias**.
-1. En la lista **Notificar eventos de tarea por correo electrónico** , seleccione **Sí**.
+1. En la lista **Notificar Eventos de Tarea por correo electrónico** , seleccione **Sí**.
 1. Para incluir el formulario y los datos con el mensaje de correo electrónico, en la lista **Adjuntar formularios en correo electrónico** , seleccione **Sí**.
 
 ## Participación en tareas a través de dispositivos móviles {#participating-in-tasks-through-mobile-devices}
@@ -294,39 +294,39 @@ Puede utilizar la aplicación de espacio de trabajo de AEM Forms para participar
 
 ## Acerca de los plazos y los recordatorios {#about-deadlines-and-reminders}
 
-Una *fecha límite* determina la fecha y la hora en que debe completar una tarea. Cuando se supera una fecha límite, el servidor enruta la tarea al siguiente paso del proceso (que puede ser la lista de tareas pendientes de otro usuario) y, a continuación, aparece el icono de fecha límite en la tarea. El icono de fecha límite aparece independientemente de las reglas asociadas al proceso.
+Una *fecha límite* determina la fecha y la hora en que debe completar una tarea. Cuando se supera una fecha límite, el servidor enruta la tarea al siguiente paso del proceso (que puede ser la lista de otro usuario) y, a continuación, aparece el icono de fecha límite en la tarea. El icono de fecha límite aparece independientemente de las reglas asociadas al proceso.
 
 Un *recordatorio* le notifica de una tarea que requiere su atención. Los recordatorios se producen en un momento predeterminado y, a continuación, a intervalos regulares hasta que se completa la tarea asociada. Cuando recibe un recordatorio, aparece el icono de recordatorio en la tarea.
 
 El proceso comercial determina el comportamiento y el momento de los plazos y los recordatorios. No todos los procesos tienen plazos y recordatorios. El administrador especifica si se envían notificaciones por correo electrónico para los plazos y recordatorios. Puede establecer sus preferencias para recibir notificaciones por correo electrónico.
 
-## Trabajo con tareas de grupos y colas compartidas {#working-with-tasks-from-group-and-shared-queues}
+## Trabajo con tareas de colas de grupo y compartidas {#working-with-tasks-from-group-and-shared-queues}
 
-Todas las tareas asignadas aparecerán en la lista de tareas pendientes (cola).
+Todas las tareas asignadas aparecerán en la lista Tareas pendientes (cola).
 
-Todas las listas de tareas pendientes compartidas y de grupo a las que tenga acceso también aparecerán en el panel izquierdo de la página de tareas pendientes. Puede completar tareas desde cualquier lista de tareas pendientes a la que tenga acceso.
+Cualquier grupo y listas de tareas pendientes compartidas a las que tenga acceso también aparecerán en el panel izquierdo de la página Tareas pendientes. Puede completar tareas desde cualquier lista de tareas pendientes a la que tenga acceso.
 
-Una lista de tareas pendientes de grupo puede tener más de un miembro. Un administrador configura listas de tareas pendientes de grupo en función de los requisitos específicos de su organización. Las listas de tareas de grupo proporcionan una manera de distribuir el trabajo entre varias personas que comparten responsabilidades similares.
+Una lista de grupo de tareas pendientes puede tener más de un miembro. Un administrador configura listas de tareas pendientes de grupo en función de los requisitos específicos de su organización. Las listas de trabajo grupal proporcionan una manera de distribuir el trabajo entre varias personas que comparten responsabilidades similares.
 
-Por ejemplo, cada miembro del equipo procesa los formularios de solicitud de préstamo. Todas estas tareas se envían a una lista de tareas pendientes de grupo a la que todos los miembros del grupo tienen acceso. Cada miembro del grupo puede acceder a las tareas desde esa lista de tareas pendientes.
+Por ejemplo, cada miembro del equipo procesa los formularios de solicitud de préstamo. Todas estas tareas se envían a una lista de grupo de tareas a las que todos los miembros del grupo tienen acceso. Cada miembro del grupo puede acceder a las tareas desde esa lista de tareas pendientes.
 
-Aparece una lista de tareas pendientes compartidas cuando otro usuario comparte su lista de tareas pendientes con usted o comparte explícitamente una tarea con usted. A continuación, puede ver las tareas en la lista de tareas pendientes de ese usuario y completarlas en su nombre. Por ejemplo, si está de vacaciones, puede optar por compartir la lista de tareas pendientes con un compañero de trabajo que complete sus tareas mientras no está.
+Aparece una lista de tareas pendientes compartida cuando otro usuario comparte su lista de tareas pendientes con usted o comparte explícitamente una tarea con usted. A continuación, puede realizar la vista de las tareas en la lista de tareas de ese usuario y completarlas en su nombre. Por ejemplo: si está tomando unas vacaciones, puede elegir compartir su lista de tareas pendientes con un colega que complete sus tareas mientras está fuera.
 
 >[!NOTE]
 >
->También puede especificar la configuración externa para reenviar las tareas a otros usuarios mientras no esté en la oficina.
+>También puede especificar opciones de configuración fuera de la oficina para reenviar tareas a otros usuarios mientras no esté en la oficina.
 
-Para trabajar en una tarea desde un grupo o desde una lista de tareas pendientes compartidas, primero debe reclamar la tarea. A continuación, pasará a ser el propietario de la tarea hasta que la complete o la envíe a otro usuario.
+Para trabajar en una tarea de un grupo o en una lista de tareas pendientes compartida, primero debe reclamar la tarea. A continuación, se convertirá en el propietario de la tarea hasta que la complete o la envíe a otro usuario.
 
 ### Colocación de colas {#sharing-queues}
 
-Puede compartir la lista de tareas pendientes con otro usuario, que podrá ver las nuevas tareas en la lista de tareas pendientes y actuar en consecuencia. Si existen tareas en la lista de tareas pendientes antes de compartir la lista de tareas pendientes, el otro usuario no podrá verlas. El usuario solo puede ver y reclamar las tareas que llegan a la lista de tareas pendientes después de conceder acceso a la lista de tareas pendientes.
+Puede compartir su lista de tareas pendientes con otro usuario, que podrá realizar la vista de las nuevas tareas en su lista de tareas pendientes y actuar en consecuencia por usted. Si existe alguna tarea en la lista de tareas pendientes antes de compartir la lista de tareas pendientes, el otro usuario no puede realizar la vista. El usuario puede vista y reclamar únicamente las tareas que llegan a su lista de tareas pendientes después de conceder acceso a su lista de tareas pendientes.
 
-Tenga en cuenta que para que un usuario vea una tarea en una cola compartida, el diseñador del proceso debe habilitar la opción Agregar ACL para la cola compartida en la ficha Lista de control de acceso a tareas (ACL) del Servicio de usuario.
+Tenga en cuenta que para que un usuario pueda ver una tarea en una cola compartida, el diseñador del proceso debe habilitar la opción Añadir ACL para cola compartida en la ficha Lista de Control de acceso de Tarea (ACL) del Servicio de usuario.
 
 >[!NOTE]
 >
->Si planea estar fuera de la oficina, también puede especificar la configuración fuera de la oficina para reenviar tareas a otros usuarios mientras se encuentra fuera en lugar de compartir toda la lista de tareas pendientes.
+>Si planea estar fuera de la oficina, también puede especificar la configuración externa para reenviar tareas a otros usuarios mientras se encuentra fuera en lugar de compartir toda la lista de tareas pendientes.
 
 **Compartir la cola**
 
@@ -341,11 +341,11 @@ Tenga en cuenta que para que un usuario vea una tarea en una cola compartida, el
 
 ### Acceso a otras colas {#accessing-other-queues}
 
-Puede solicitar acceso a la lista de tareas pendientes de otro usuario para ver y reclamar cualquier tarea nueva en la lista de tareas pendientes del usuario.
+Puede solicitar acceso a la lista de tareas pendientes de otro usuario para la vista y solicitar cualquier tarea nueva en la lista de tareas pendientes del usuario.
 
-Cuando se solicita el acceso a la lista de tareas pendientes de otro usuario, el usuario recibe una tarea en la lista de tareas pendientes para aprobar o rechazar la solicitud. Una vez que el usuario complete la tarea, recibirá una notificación en la lista de tareas pendientes.
+Cuando se solicita el acceso a la lista de tareas pendientes de otro usuario, el usuario recibe una tarea en su lista de tareas pendientes para aprobar o rechazar la solicitud. Una vez que el usuario complete la tarea, recibirá una notificación en la lista de tareas pendientes.
 
-Si se le concede acceso a la lista de tareas pendientes de otro usuario, no podrá ver ninguna tarea que existiera en la lista de tareas pendientes del usuario antes de que se le concediera acceso. Solo puede ver las tareas que llegan a la lista de tareas pendientes del usuario después de que se le haya concedido acceso a la lista de tareas pendientes.
+Si se le concede acceso a la lista de tareas pendientes de otro usuario, no podrá realizar vistas de ninguna tarea que existiera en la lista de tareas pendientes del usuario antes de que se le concediera acceso. Solo puede realizar la vista de las tareas que llegan a la lista de tareas pendientes del usuario después de que se le haya concedido acceso a la lista de tareas pendientes.
 
 **Acceso a otra cola**
 
@@ -355,7 +355,7 @@ Si se le concede acceso a la lista de tareas pendientes de otro usuario, no podr
 
    >[!NOTE]
    >
-   >Puede eliminar el acceso a otra lista de tareas pendientes seleccionando el nombre de usuario en la lista Colas de usuarios a las que tengo acceso y haciendo clic en **X** al final de la fila que menciona el nombre del usuario. No puede quitar el acceso a otra lista de tareas pendientes cuando la solicitud de acceso a la lista de tareas pendientes sigue pendiente.
+   >Puede eliminar el acceso a otra lista de tareas pendientes seleccionando el nombre de usuario en las colas de usuarios a las que tengo acceso a lista y haciendo clic en **X** al final de la fila que menciona el nombre del usuario. No puede quitar el acceso a otra lista de tareas pendientes cuando la solicitud de acceso a la lista de tareas pendientes sigue pendiente.
 
 ## Configuración de las preferencias fuera de la oficina {#setting-out-of-office-preferences}
 
@@ -363,7 +363,7 @@ Si planea estar fuera de la oficina, puede especificar lo que sucede con las tar
 
 Tiene la opción de especificar una fecha y hora de inicio y una fecha y hora de finalización para que la configuración fuera de la oficina esté en vigor. Si se encuentra en un huso horario distinto del servidor, el huso horario utilizado es el del servidor.
 
-Puede establecer una persona predeterminada a la que se envíen todas las tareas. También puede especificar excepciones para las tareas de procesos específicos que se enviarán a un usuario diferente o para permanecer en la lista de tareas pendientes hasta que vuelva. Si la persona designada también está fuera de la oficina, la tarea se dirige al usuario que designó. Si la tarea no se puede asignar a un usuario que no está fuera de la oficina, la tarea permanece en la lista Tareas pendientes.
+Puede establecer una persona predeterminada a la que se envíen todas sus tareas. También puede especificar excepciones para tareas de procesos específicos que se enviarán a un usuario diferente o para permanecer en la lista de tareas pendientes hasta que vuelva. Si la persona designada también está fuera de la oficina, la tarea se dirige al usuario que designaron. Si la tarea no se puede asignar a un usuario que no está fuera de la oficina, la tarea permanece en la lista de tareas pendientes.
 
 >[!NOTE]
 >
@@ -374,20 +374,18 @@ Puede establecer una persona predeterminada a la que se envíen todas las tareas
 1. Haga clic en **Preferencias** y en **Fuera de la oficina**.
 1. Para especificar cuándo está fuera de la oficina, realice uno de estos pasos:
 
-   * Para especificar que está fuera de la oficina ahora por un período de tiempo indefinido, en la lista **Estoy actualmente** , seleccione **Fuera de la oficina** pero no agregue un intervalo de fechas.
-   * Para especificar una fecha y hora de inicio que no esté en la oficina y hacer clic en &#39;+&#39; en Programación **** fuera de la oficina. Utilice el calendario y la lista de horas para especificar la fecha y hora de inicio. Si no especifica una fecha y hora de finalización, se le considerará fuera de la oficina indefinidamente desde la fecha y hora de inicio hasta que cambie sus preferencias.
+   * Para especificar que está fuera de la oficina ahora por un período de tiempo indefinido, en la lista **que estoy** , seleccione **Fuera de la oficina** pero no agregue un intervalo de fechas.
+   * Para especificar una fecha y hora de inicio que se encuentra fuera de la oficina y hacer clic en &#39;+&#39; en Programación **** fuera de la oficina. Utilice la lista de calendario y hora para especificar la fecha y hora del inicio. Si no especifica una fecha y hora de finalización, se le considerará fuera de la oficina indefinidamente desde la fecha y hora de inicio hasta que cambie sus preferencias.
 
-1. Para especificar cómo se deben gestionar las tareas de forma predeterminada, seleccione una de estas opciones en **Cuando esté fuera de Office: Usuario predeterminado para la lista de tareas** fuera de la oficina:
+1. Para especificar cómo se deben gestionar las tareas de forma predeterminada, seleccione una de estas opciones en **Cuando esté fuera de la oficina: Usuario predeterminado para la lista de tareas** fuera de la oficina:
 
-   * Seleccione **No asignar** para mantener las tareas en la lista de tareas pendientes hasta que vuelva.
-   * Seleccione **Buscar usuario** para buscar un usuario al que asignar las tareas. Al seleccionar un usuario, también puede ver su programación fuera de la oficina.
+   * Seleccione **No asignar** para mantener tareas en la lista de tareas pendientes hasta que vuelva.
+   * Seleccione **Buscar usuario** para buscar un usuario al que asignar sus tareas. Al seleccionar un usuario, también puede realizar la vista de su programación fuera de la oficina.
 
-1. Para establecer excepciones al valor predeterminado, haga clic en + para Excepciones **de** proceso, seleccione el proceso para el que desea crear una excepción y, a continuación, seleccione otro usuario o seleccione **No asignar** en la lista **está asignado** .
+1. Para establecer excepciones a la opción predeterminada, haga clic en + para Excepciones **de** proceso, seleccione el proceso para el que desea crear una excepción y, a continuación, seleccione otro usuario o seleccione **No asignar** de la lista **está asignado a la** lista.
 
    >[!NOTE]
    >
    >El diseñador de procesos puede especificar que las tareas de algunos procesos siempre se mantengan privadas y no se reenvíen a otros usuarios. Esta configuración anula cualquier configuración que realice.
 
 1. Cuando termine de establecer las preferencias, haga clic en **Guardar**. Si la configuración indica que se encuentra fuera de la oficina, los cambios surtirán efecto inmediatamente. De lo contrario, surtirán efecto en la fecha y hora de inicio especificadas. Si inicia sesión mientras está fuera de la oficina, no se le considerará en la oficina hasta que cambie la configuración.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
