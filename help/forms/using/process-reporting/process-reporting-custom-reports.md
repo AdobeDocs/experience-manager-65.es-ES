@@ -1,8 +1,8 @@
 ---
 title: Informes personalizados en proceso Sistema de informes
 seo-title: Informes personalizados en proceso Sistema de informes
-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de Sistema de informes de procesos JEE.
-seo-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de Sistema de informes de procesos JEE.
+description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de JEE Process Sistema de informes.
+seo-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de JEE Process Sistema de informes.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -658,4 +658,4 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
 
 Importe el `sample-report-pkg-1.zip` paquete para integrar los informes personalizados y la interfaz de usuario analizados en el artículo en la interfaz de usuario de administración de procesos.
 
-[Obtener compatibilidad con archivos](assets/sample-report-pkg-1.zip)[de contacto](https://www.adobe.com/account/sign-in.supportportal.html)
+[Obtener archivo](assets/sample-report-pkg-1.zip)
