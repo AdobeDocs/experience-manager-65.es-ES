@@ -1,22 +1,22 @@
 ---
 title: Conexión de AEM Forms con Adobe LiveCycle
 seo-title: Conexión de AEM Forms con Adobe LiveCycle
-description: El conector de AEM LiveCycle le permite iniciar LiveCycle ES4 Document Services desde las aplicaciones y los flujos de trabajo de AEM.
-seo-description: El conector de AEM LiveCycle le permite iniciar LiveCycle ES4 Document Services desde las aplicaciones y los flujos de trabajo de AEM.
+description: El conector de AEM LiveCycle le permite inicio de los servicios de Documento de LiveCycle ES4 desde las aplicaciones y flujos de trabajo de AEM.
+seo-description: El conector de AEM LiveCycle le permite inicio de los servicios de Documento de LiveCycle ES4 desde las aplicaciones y flujos de trabajo de AEM.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Conexión de AEM Forms con Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
-El conector LiveCycle de Adobe Experience Manager (AEM) permite una invocación sin problemas de Adobe LiveCycle ES4 Document Services desde las aplicaciones web y los flujos de trabajo de AEM. LiveCycle proporciona un SDK de cliente enriquecido que permite a las aplicaciones cliente iniciar servicios de LiveCycle mediante API de Java. AEM LiveCycle Connector simplifica el uso de estas API en el entorno OSGi.
+El conector LiveCycle de Adobe Experience Manager (AEM) permite una invocación sin problemas de los servicios de Documento de Adobe LiveCycle ES4 desde las aplicaciones web y los flujos de trabajo de AEM. LiveCycle proporciona un SDK de cliente enriquecido, que permite a las aplicaciones cliente inicio los servicios de LiveCycle mediante las API de Java. AEM LiveCycle Connector simplifica el uso de estas API dentro del entorno OSGi.
 
 ## Conexión de AEM Server a Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
@@ -28,38 +28,38 @@ AEM LiveCycle Connector forma parte del paquete [de complementos de](/help/forms
 
 Aunque las propiedades son autoexplicativas, las importantes son las siguientes:
 
-* **URL** del servidor: especifica la URL del servidor de LiveCycle. Si desea que LiveCycle y AEM se comuniquen a través de https, inicie AEM con la siguiente JVM
+* **URL** del servidor: especifica la URL del servidor de LiveCycle. Si desea que LiveCycle y AEM se comuniquen a través de https, inicio AEM con el siguiente JVM
 
    ```
    argument
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
 
-    , seleccione una opción.
+   , seleccione una opción.
 
-* **Nombre de usuario**: especifica el nombre de usuario de la cuenta que se utiliza para establecer la comunicación entre AEM y LiveCycle. La cuenta es una cuenta de usuario de LiveCycle que tiene permisos para iniciar Document Services.
+* **Nombre de usuario**: especifica el nombre de usuario de la cuenta que se utiliza para establecer la comunicación entre AEM y LiveCycle. La cuenta es una cuenta de usuario de LiveCycle que tiene permisos para acceder a los servicios de inicio Documento.
 * **Contraseña**: especifica la contraseña.
 * **Nombre** del servicio: especifica los servicios que se inician con las credenciales de usuario proporcionadas en los campos Nombre de usuario y Contraseña. De forma predeterminada, no se pasan credenciales al iniciar LiveCycle Services.
 
-## Inicio de servicios de documentos {#starting-document-services}
+## Inicio de servicios de documento {#starting-document-services}
 
-Las aplicaciones cliente pueden iniciar los servicios de LiveCycle mediante programación mediante una API de Java, servicios Web, Remoting y REST. Para los clientes de Java, la aplicación puede utilizar LiveCycle SDK. El SDK de LiveCycle proporciona una API de Java para iniciar estos servicios de forma remota. Por ejemplo, para convertir un documento de Microsoft Word a PDF, el cliente inicia GeneratePDFService. El flujo de invocación consta de los siguientes pasos:
+Las aplicaciones cliente pueden inicio mediante programación los servicios de LiveCycle mediante una API de Java, servicios Web, Remoting y REST. Para los clientes de Java, la aplicación puede utilizar LiveCycle SDK. El SDK de LiveCycle proporciona una API de Java para iniciar estos servicios de forma remota. Por ejemplo, para convertir un Documento de Microsoft Word a PDF, el cliente inicio GeneratePDFService. El flujo de invocación consta de los siguientes pasos:
 
 1. Cree una instancia de ServiceClientFactory.
-1. Cada servicio proporciona una clase de cliente. Para iniciar un servicio, cree una instancia de cliente del servicio.
-1. Inicie el servicio y procese el resultado.
+1. Cada servicio proporciona una clase de cliente. Para inicio de un servicio, cree una instancia de cliente del servicio.
+1. Inicio el servicio y procese el resultado.
 
 AEM LiveCycle Connector simplifica el flujo al exponer estas instancias de cliente como servicios de OSGi a los que se puede acceder con medios OSGi estándar. El conector LiveCycle proporciona las siguientes funciones:
 
-* Instancias de cliente como servicio OSGi: Los clientes empaquetados como paquetes OSGI se enumeran en la sección de lista [de](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) Document Services. Cada jar cliente registra la instancia de cliente como servicio OSGi con el Registro de servicio OSGi.
+* Instancias de cliente como servicio OSGi: Los clientes empaquetados como paquetes OSGI se enumeran en la sección lista [de servicios de](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) Documento. Cada jar cliente registra la instancia de cliente como servicio OSGi con el Registro de servicio OSGi.
 * Propagación de credenciales de usuario: Los detalles de conexión necesarios para conectarse al servidor LiveCycle se administran en un lugar central.
-* Servicio ServiceClientFactory: Para iniciar los procesos, la aplicación cliente puede acceder a la instancia de ServiceClientFactory.
+* Servicio ServiceClientFactory: Para inicio de los procesos, la aplicación cliente puede acceder a la instancia de ServiceClientFactory.
 
 ### Inicio mediante Referencias de Servicio desde el Registro de Servicios de OSGi {#starting-via-service-references-from-osgi-service-registry}
 
-Para iniciar un servicio expuesto desde AEM, realice los siguientes pasos:
+Para inicio de un servicio expuesto desde AEM, lleve a cabo los siguientes pasos:
 
-1. Determinar las dependencias múltiples. Agregue dependencia al archivo jar cliente requerido en el archivo pom.xml. Como mínimo, agregue dependencia a las taras adobe-livecycle-client y adobe-usermanager-client.
+1. Determinar las dependencias múltiples. Añada la dependencia al archivo jar cliente requerido en el archivo pom.xml. Como mínimo, agregue dependencia a las taras adobe-livecycle-client y adobe-usermanager-client.
 
    ```xml
    <dependency>
@@ -79,7 +79,7 @@ Para iniciar un servicio expuesto desde AEM, realice los siguientes pasos:
    </dependency>
    ```
 
-   Para iniciar un servicio, agregue la dependencia Maven correspondiente para el servicio. Para obtener la lista de dependencias, consulte Lista [de](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)Document Service. Por ejemplo, para el servicio Generar PDF, agregue la dependencia siguiente:
+   Para inicio de un servicio, agregue la dependencia Maven correspondiente para el servicio. Para obtener información sobre la lista de dependencias, consulte Lista [del servicio de](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)Documento. Por ejemplo, para el servicio Generar PDF, agregue la dependencia siguiente:
 
    ```xml
    <dependency>
@@ -113,7 +113,7 @@ Para iniciar un servicio expuesto desde AEM, realice los siguientes pasos:
                );
    ```
 
-   El fragmento de código anterior inicia la API createPDF de GeneratePdfServiceClient para convertir un documento a PDF. Puede realizar una invocación similar en un JSP utilizando el siguiente código. La diferencia principal es que el código siguiente utiliza Sling ScriptHelper para acceder a GeneratePdfServiceClient.
+   El fragmento de código anterior inicio la API createPDF de GeneratePdfServiceClient para convertir un documento a PDF. Puede realizar una invocación similar en un JSP utilizando el siguiente código. La diferencia principal es que el código siguiente utiliza Sling ScriptHelper para acceder a GeneratePdfServiceClient.
 
    ```java
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
@@ -151,7 +151,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 ## Compatibilidad con RunAs {#runas-support}
 
-Casi todos los servicios de documentos de LiveCycle requieren autenticación. Puede utilizar cualquiera de las siguientes opciones para iniciar estos servicios sin proporcionar credenciales explícitas en el código:
+Casi todos los servicios de Documento de LiveCycle requieren autenticación. Puede utilizar cualquiera de las siguientes opciones para el inicio de estos servicios sin proporcionar credenciales explícitas en el código:
 
 ### Configuración de lista blanca {#whitelist-configuration}
 
@@ -210,7 +210,7 @@ ir.setProperty(InvocationProperties.INVOKER_TYPE,InvocationProperties.INVOKER_TY
 InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir);
 ```
 
-## Lista de servicios de documentos {#document-services-list}
+## lista de servicios de Documento {#document-services-list}
 
 ### Paquete de API de Adobe LiveCycle Client SDK {#adobe-livecycle-client-sdk-api-bundle}
 
@@ -219,8 +219,8 @@ Están disponibles los siguientes servicios:
 * com.adobe.idp.um.api.AuthenticationManager
 * com.adobe.idp.um.api.DirectoryManager
 * com.adobe.idp.um.api.AuthorizationManager
-* com.adobe.idp.dsc.registration.service.ServiceRegistry
-* com.adobe.idp.dsc.registration.component.ComponentRegistry
+* com.adobe.idp.dsc.registry.service.ServiceRegistry
+* com.adobe.idp.dsc.registry.component.ComponentRegistry
 
 #### Dependencias de muevos {#maven-dependencies}
 
@@ -262,7 +262,7 @@ Están disponibles los siguientes servicios:
 * com.adobe.idp.taskmanager.dsc.client.TaskManagerQueryService
 * com.adobe.idp.taskmanager.dsc.client.queuemanager.QueueManager
 * com.adobe.idp.taskmanager.dsc.client.emailsettings.EmailSettingService
-* com.adobe.idp.taskmanager.dsc.client.end.TaskManagerEndpointClient
+* com.adobe.idp.taskmanager.dsc.client.endpoint.TaskManagerEndpointClient
 * com.adobe.idp.taskmanager.dsc.client.userlist.UserlistService
 
 #### Dependencias de muevos {#maven-dependencies-2}
@@ -311,8 +311,8 @@ El siguiente servicio está disponible:
 
 Están disponibles los siguientes servicios:
 
-* com.adobe.idp.applicationManager.service.ApplicationManager
-* com.adobe.livecycle.applicationManager.client.ApplicationManager
+* com.adobe.idp.applicationmanager.service.ApplicationManager
+* com.adobe.livecycle.applicationmanager.client.ApplicationManager
 * com.adobe.livecycle.design.service.DesigntimeService
 
 #### Dependencias de muevos {#maven-dependencies-5}
@@ -393,7 +393,7 @@ El siguiente servicio está disponible:
 
 El siguiente servicio está disponible:
 
-* com.adobe.livecycle.readerExtensions.client.ReaderExtensionsServiceClient
+* com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
 
 #### Dependencias de muevos {#maven-dependencies-10}
 
@@ -448,9 +448,9 @@ El siguiente servicio está disponible:
 Están disponibles los siguientes servicios:
 
 * com.adobe.truststore.dsc.TrustConfigurationService
-* com.adobe.trustStore.dsc.CRLService
-* com.adobe.trustStore.dsc.CredentialService
-* com.adobe.trustStore.dsc.CertificateService
+* com.adobe.truststore.dsc.CRLService
+* com.adobe.truststore.dsc.CredentialService
+* com.adobe.truststore.dsc.CertificateService
 
 #### Dependencias de muevos {#maven-dependencies-13}
 
@@ -466,8 +466,8 @@ Están disponibles los siguientes servicios:
 
 Están disponibles los siguientes servicios:
 
-* com.adobe.repositorio.bindings.ResourceRepository
-* com.adobe.repositorio.bindings.ResourceSynchronizer
+* com.adobe.repository.bindings.ResourceRepository
+* com.adobe.repository.bindings.ResourceSynchronizer
 
 #### Dependencias de muevos {#maven-dependencies-14}
 
@@ -478,5 +478,3 @@ Están disponibles los siguientes servicios:
   <version>11.0.0</version>
 </dependency>
 ```
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
