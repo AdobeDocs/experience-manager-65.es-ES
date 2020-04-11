@@ -1,6 +1,6 @@
 ---
-title: Personalización de acciones de tarea
-seo-title: Personalización de acciones de tarea
+title: Personalización de acciones de Tarea
+seo-title: Personalización de acciones de Tarea
 description: Puede personalizar el aspecto de las acciones de tarea, utilizar solo imágenes para las acciones y personalizar las imágenes utilizadas en las acciones de ruta.
 seo-description: Puede personalizar el aspecto de las acciones de tarea, utilizar solo imágenes para las acciones y personalizar las imágenes utilizadas en las acciones de ruta.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Personalización de acciones de tarea {#customizing-task-actions}
+# Personalización de acciones de Tarea {#customizing-task-actions}
 
-El espacio de trabajo de AEM Forms permite a los usuarios personalizar las acciones de tarea. Antes de personalizar las acciones de tareas, asegúrese de seguir los pasos que se indican en Pasos [genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
+El espacio de trabajo de AEM Forms permite a los usuarios personalizar las acciones de tarea. Antes de personalizar las acciones de tarea, asegúrese de seguir los pasos que se indican en Pasos [genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
 
 ## Personalización del estilo de texto {#customizing-text-style}
 
@@ -118,7 +118,7 @@ Para personalizar las imágenes, agregue el siguiente fragmento de código en el
 
 >[!NOTE]
 >
->Agregue estilos independientes para mostrar diferentes imágenes o imágenes de diferente resolución para la lista de tareas y las acciones de detalles de tareas. Por ejemplo, para cambiar la acción &#39;lock&#39;:
+>Añada estilos independientes para mostrar diferentes imágenes o imágenes de diferente resolución para las acciones de detalles de Tarea y lista de Tarea. Por ejemplo, para cambiar la acción &#39;lock&#39;:
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -133,9 +133,9 @@ Para personalizar las imágenes, agregue el siguiente fragmento de código en el
 
 Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas en las acciones de ruta. Para obtener información detallada, consulte [Imágenes para acciones](/help/forms/using/images-route-actions.md)de ruta.
 
-### Menú emergente de acción de tarea Lista de tareas {#task-list-task-action-nbsp-pop-up-menu}
+### Menú emergente de acción de tarea de Lista de Tarea {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Es necesario un paquete de desarrollo para personalizar los elementos del menú emergente de tareas de lista de tareas del espacio de trabajo de AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. Es necesario un paquete de desarrollo para personalizar los elementos del menú emergente de acción de tarea de lista de Tarea del espacio de trabajo de AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
 
 1. Copie /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`reemplazar el siguiente fragmento de código:
 
@@ -260,9 +260,9 @@ Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas 
    }
    ```
 
-### Menú emergente de acción de tarea Detalles de la tarea {#task-details-task-action-pop-up-menu}
+### Menú emergente de acción de tarea Detalles de Tarea {#task-details-task-action-pop-up-menu}
 
-Siga estos pasos para personalizar el menú emergente Acciones de tareas Detalles:
+Siga estos pasos para personalizar el menú emergente Acciones de tarea de detalles:
 
 * Copie el archivo /libs/ws/js/runtime/templates/taskdetails.html en la `/apps/ws/js/runtime/templates/` carpeta:
 * Encapsular etiqueta de icono dentro de la etiqueta de anclaje en lugar de texto. Por ejemplo, el *nuevo código* que se muestra a continuación encapsula la etiqueta de icono dentro de la etiqueta de anclaje:
@@ -359,5 +359,3 @@ Siga estos pasos para personalizar el menú emergente Acciones de tareas Detalle
 * Abra el archivo /apps/ws/js/registry.js para editarlo.
 * Busque el siguiente texto: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Reemplace el texto que se encuentra con el siguiente texto: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
