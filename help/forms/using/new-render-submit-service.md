@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 
 ## Introducción {#introduction}
 
-En Workbench, cuando defina una `AssignTask` operación, especifique un formulario concreto (formulario XDP o PDF). Además, especifique un conjunto de servicios de procesamiento y envío mediante un perfil de acción.
+En Workbench, cuando defina una `AssignTask` operación, especifique un formulario concreto (formulario XDP o PDF). Además, especifique un conjunto de servicios de procesamiento y envío mediante el perfil de acciones.
 
 Un XDP se puede procesar como formulario PDF o HTML. Las nuevas funciones incluyen la capacidad de:
 
@@ -53,7 +53,7 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
 ```
 
-Para obtener más información sobre los perfiles de formulario móvil, consulte [Creación de un perfil](/help/forms/using/custom-profile.md)personalizado.
+Puede encontrar más información sobre los perfiles de formularios móviles en [Creación de un perfil](/help/forms/using/custom-profile.md)personalizado.
 
 ## Nuevos procesos de envío y procesamiento de formularios HTML {#new-html-form-render-amp-submit-processes}
 
@@ -114,19 +114,19 @@ Los navegadores están retirando gradualmente la compatibilidad con los compleme
 
 1. Seleccione las aplicaciones para las que desea cambiar la representación del formulario móvil y haga clic en **Aceptar**.
 1. Abra el proceso para el que desea cambiar la representación.
-1. Abra el punto de inicio o la tarea de destino, vaya a la sección Presentación y datos y haga clic en **Administrar perfiles** de acción.
+1. Abra el punto de inicio o la tarea de destino, vaya a la sección Presentación y datos y haga clic en **Administrar Perfiles** de acción.
 
-   Aparece el cuadro de diálogo Administrar perfiles de acción.
-1. Cambie las configuraciones de perfil de procesamiento predeterminadas de PDF a HTML y haga clic en **Aceptar**.
+   Aparece el cuadro de diálogo Administrar Perfiles de acción.
+1. Cambie las configuraciones de perfil de procesamiento predeterminado de PDF a HTML y haga clic en **Aceptar**.
 1. Compruebe el proceso.
 1. Repita los pasos para cambiar el procesamiento de otros procesos.
 1. Implemente la aplicación relevante para los procesos que haya cambiado.
 
 ### Perfil de acción predeterminado {#default-action-profile}
 
-El perfil de acción predeterminado procesaba el formulario XDP como PDF. Este comportamiento se ha cambiado para utilizar los procesos Formulario de procesamiento predeterminado y Formulario de envío predeterminado.
+El Perfil de acción predeterminado procesó el formulario XDP como PDF. Este comportamiento se ha cambiado para utilizar los procesos Formulario de procesamiento predeterminado y Formulario de envío predeterminado.
 
-Algunas de las preguntas más frecuentes sobre los perfiles de acción son las siguientes:
+Algunas de las preguntas más frecuentes sobre perfiles de acción son las siguientes:
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué procesos de procesamiento y envío estarán disponibles de forma predeterminada?**
 
@@ -139,7 +139,7 @@ Algunas de las preguntas más frecuentes sobre los perfiles de acción son las s
 
 Y, procesos de envío equivalentes.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué perfiles de acción estarán disponibles de forma predeterminada?**
+![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué Perfiles de acción estarán disponibles de forma predeterminada?**
 
 Para formularios XDP:
 
@@ -147,17 +147,17 @@ Para formularios XDP:
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué debe hacer el diseñador de procesos para permitir que el formulario se procese en HTML en un dispositivo y en PDF en un escritorio?**
 
-Nada. El perfil de acción predeterminado se elige automáticamente y el modo de procesamiento también se toma en consideración automáticamente.
+Nada. El Perfil de acción predeterminado se elige automáticamente y el modo de procesamiento también se cuida automáticamente.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué se debe hacer para permitir que el formulario se procese en HTML en un escritorio?**
 
 El usuario debe seleccionar el botón de opción HTML para el perfil predeterminado.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **¿Tendrá algún impacto de actualización en el cambio del comportamiento predeterminado del perfil de acción?**
+![gen_question_b_20](assets/gen_question_b_20.png) **¿Tendrá algún impacto de actualización en el cambio del comportamiento de perfil de acción predeterminado?**
 
 Sí, dado que los servicios de procesamiento y envío anteriores asociados al perfil de acción predeterminado eran diferentes, se tratan como una personalización de los formularios existentes. Al hacer clic en **Restaurar valores predeterminados**, se establecen los servicios predeterminados de procesamiento y envío.
 
-Si ha modificado los servicios de procesamiento o envío de formulario PDF existentes o ha creado servicios personalizados (por ejemplo, personalizado1) y desea utilizar la misma funcionalidad para la representación HTML. Debe replicar el nuevo servicio de procesamiento o envío (como custom2) y aplicar personalizaciones similares a ellas. Ahora, modifique el perfil de acción del XDP para que comience a utilizar servicios personalizados2, en lugar del custom1 para procesar o enviar.
+Si ha modificado los servicios de procesamiento o envío de formulario PDF existentes o ha creado servicios personalizados (por ejemplo, personalizado1) y desea utilizar la misma funcionalidad para la representación HTML. Debe replicar el nuevo servicio de procesamiento o envío (como custom2) y aplicar personalizaciones similares a ellas. Ahora, modifique el perfil de acción de su XDP a inicio mediante servicios personalizados2, en lugar de custom1 para procesar o enviar.
 
 ¿Qué debe hacer el diseñador de procesos para permitir que el formulario se procese en HTML en un dispositivo y en PDF en un escritorio?
-¿Qué debe hacer el diseñador de procesos para permitir que el formulario se procese en HTML en un dispositivo y en PDF en un escritorio?  [Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+¿Qué debe hacer el diseñador de procesos para permitir que el formulario se procese en HTML en un dispositivo y en PDF en un escritorio?
