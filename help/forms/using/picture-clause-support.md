@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Compatibilidad con la cláusula Picture para formularios HTML5 {#picture-clause-support-for-html-forms}
 
-Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor con formato para los símbolos numéricos, de texto y de fecha. Se admiten las expresiones de cláusula de imagen siguientes:
+Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor con formato para los símbolos numéricos, de texto y de fecha. Se admiten las siguientes Expresiones de cláusula Picture:
 
-* category(locale){picture-provision}| category(locale){picture-provision}| category(locale){picture-provision}
+* categoría(configuración regional){cláusula-imagen}| categoría(configuración regional){cláusula-imagen}| categoría(configuración regional){cláusula-imagen}
 * category.subcategory{}
 
 >[!NOTE]
@@ -28,7 +28,7 @@ Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visual
 
 ## Símbolos de campo de fecha admitidos {#supported-date-field-symbols}
 
-Expresión admitida para la cláusula Date Picture:
+Cláusula de expresión admitida para la imagen de fecha:
 
 * date.long{}
 * date.short{}
@@ -210,5 +210,3 @@ Los formularios HTML5 admiten las siguientes expresiones de cláusula de imagen 
 | O | Carácter alfanumérico sencillo. |
 | 0 (cero) | Carácter alfanumérico sencillo. |
 | 9 | Dígito sencillo. |
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
