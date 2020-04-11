@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -47,5 +47,3 @@ Si la aplicación está sin conexión, el formulario y sus datos se guardan en l
 Si la aplicación está en línea, la tarea se sincroniza con el servidor de AEM Forms y se asigna al usuario especificado en el proceso.
 
 Para trabajar con la tarea en la lista de tarea, consulte [Apertura de una tarea](/help/forms/using/open-task.md).
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
