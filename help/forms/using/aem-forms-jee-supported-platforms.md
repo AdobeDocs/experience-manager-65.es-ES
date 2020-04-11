@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b41060207a1fb522905259a0d33df690d606929d
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -709,10 +709,8 @@ Adobe admite parches urgentes o recomendados emitidos por proveedores de tercero
 
 En algunos casos, Adobe no admite actualizaciones de terceros que cambien la funcionalidad principal y, por tanto, no admite compatibilidad total con versiones anteriores. Para obtener más información sobre las actualizaciones admitidas, consulte Definiciones [de parches](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) admitidas para productos de proveedores específicos y los tipos de parches que admite Adobe.
 
-En circunstancias ajenas al control de Adobe, los parches de terceros que reclaman compatibilidad con versiones anteriores pueden tener un impacto negativo en los productos o entornos de los clientes de Adobe. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe trabajará con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea a través de programas de asistencia de Adobe normales o de terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que será compatible con Adobe funcione tal como lo ha documentado el proveedor o con AEM Forms en JEE.
+En circunstancias ajenas al control de Adobe, los parches de terceros que reclaman compatibilidad con versiones anteriores pueden tener un impacto negativo en los productos o entornos de los clientes de Adobe. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe trabajará con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea a través de programas de asistencia de Adobe normales o de terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que sea compatible con Adobe funcione tal como lo ha documentado el proveedor o con AEM Forms en JEE.
 
 Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros admitidas por una versión de AEM Forms en JEE y sus definiciones de parches admitidas en cualquier momento.
 
 También puede encontrar información adicional sobre los parches de terceros si busca artículos de la base de conocimiento relacionados con su producto en el sitio de asistencia técnica de Adobe Enterprise.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
