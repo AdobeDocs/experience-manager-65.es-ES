@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -82,9 +82,9 @@ La siguiente imagen muestra la estructura de directorio de la `android`carpeta e
 1. En Android™ Studio, seleccione **[!UICONTROL Importar proyecto (Eclipse ADT, Gradle, Etc.)]**.
 1. En el explorador de proyectos, seleccione el directorio raíz del proyecto que desea generar en el cuadro de texto Directorio **raíz** :
 
-   **** Para usuarios de Mac: [User_Home]/Projects/MobileWorkspace/src/android
+   **Para usuarios de Mac:** [User_Home]/Projects/MobileWorkspace/src/android
 
-   **** Para usuarios de Windows®: %HOMEPATH%\Projects\MobileWorkspace\src\android
+   **Para usuarios de Windows®:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
 1. Después de importar el proyecto, aparece una ventana emergente con la opción de actualizar el complemento Android™ Gradle. Haga clic en el botón correspondiente según sus necesidades.
 
@@ -107,5 +107,3 @@ Puede instalar la aplicación en un dispositivo Android™ mediante el puente [d
 **Para usuarios** de MAC: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Para usuarios** de Windows®: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
