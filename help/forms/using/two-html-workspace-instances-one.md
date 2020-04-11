@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -92,5 +92,3 @@ Siga estos pasos para configurar el espacio de trabajo de AEM Forms.
 1. En las propiedades de `ws2`, cambie el valor de `sling:redirect` a `content/ws2`.
 
 1. Cambiar el valor de `sling:match` a `^[^/\||]/[^/\||]/ws2$`.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
