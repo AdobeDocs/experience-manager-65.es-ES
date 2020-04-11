@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Personalización de la lista de instancias de proceso {#customizing-the-listing-of-process-instances}
 
-La lista de instancias de proceso se muestra en la ficha Seguimiento del espacio de trabajo de AEM Forms.
+La lista de la instancia de proceso se muestra en la ficha Seguimiento del espacio de trabajo de AEM Forms.
 
-En la lista de instancias de proceso, en cada instancia de proceso, el espacio de trabajo de AEM Forms muestra algunas propiedades de esa instancia. Las siguientes propiedades están disponibles para cada instancia de proceso. Estas propiedades se almacenan como atributos en el modelo de componentes de instancia de proceso y están disponibles para su uso en la vista y plantilla.
+En la lista de instancias de proceso, en cada instancia de proceso, el espacio de trabajo de AEM Forms muestra algunas propiedades de esa instancia. Las siguientes propiedades están disponibles para cada instancia de proceso. Estas propiedades se almacenan como atributos en el modelo de componentes de instancia de proceso y están disponibles para su uso en su vista y plantilla.
 
 <table>
  <tbody>
@@ -73,7 +73,7 @@ Para mostrar la `description` propiedad de la instancia de proceso en la tarjeta
 1. Haga lo siguiente:
 
    1. Copie /libs/ws/js/runtime/templates/processinstance.html a/apps/ws/js/Runtime/templates/, si no existe. Haga clic en **Guardar todo**.
-   1. Agregue div de descripción del proceso con class = &#39;processDescription&#39; inprocessinstance.html.
+   1. Añada div de descripción del proceso con class = &#39;processDescription&#39; inprocessinstance.html.
 
    ```
    <div class="processDescription" title="<%= description%>"><%= description%></div>
@@ -94,5 +94,3 @@ Para mostrar la `description` propiedad de la instancia de proceso en la tarjeta
        padding : 2px;
    }
    ```
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
