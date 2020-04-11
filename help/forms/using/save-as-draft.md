@@ -1,15 +1,15 @@
 ---
 title: Guardar una tarea o un formulario como borrador
 seo-title: Guardar una tarea o un formulario como borrador
-description: Pasos para guardar una copia de borrador de una tarea o un formulario en la aplicación de AEM Forms
-seo-description: Pasos para guardar una copia de borrador de una tarea o un formulario en la aplicación de AEM Forms
+description: Pasos para guardar una copia borrador de una tarea o un formulario en la aplicación de AEM Forms
+seo-description: Pasos para guardar una copia borrador de una tarea o un formulario en la aplicación de AEM Forms
 uuid: 1192d2c2-05a4-4a96-9015-e56111aa2646
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -27,13 +27,13 @@ Para crear un borrador, abra el formulario y toque **Guardar como borrador** par
 
 Si actualiza el formulario correspondiente posteriormente, los cambios se reflejan inmediatamente. Al sincronizar la aplicación de AEM Forms con el servidor de AEM Forms, el borrador se carga en el servidor de AEM Forms. Además, el borrador se mueve de la Bandeja de salida a la carpeta Tareas o Borradores. Aparece un icono de edición junto a él.
 
-A medida que continúa trabajando en varias tareas y puntos de inicio y guardado, los borradores se guardan. Cada vez que la aplicación se sincroniza con el servidor de AEM Forms, el borrador se guarda en el servidor. Garantiza que en cualquier momento pueda recuperar los borradores en función de la última fecha y hora guardadas. Por ejemplo, si vuelve a instalar la aplicación o cambia el dispositivo móvil, puede descargar el borrador del servidor.
+Mientras continúa trabajando en varias tareas y puntos de inicio y los guarda, los borradores se guardan. Cada vez que la aplicación se sincroniza con el servidor de AEM Forms, el borrador se guarda en el servidor. Garantiza que en cualquier momento pueda recuperar los borradores en función de la última fecha y hora guardadas. Por ejemplo, si vuelve a instalar la aplicación o cambia el dispositivo móvil, puede descargar el borrador del servidor.
 
 ## Eliminar un borrador {#delete-a-draft}
 
-La carpeta Borradores muestra todos los borradores. Puede utilizar la opción Eliminar borrador para eliminar permanentemente los borradores del dispositivo móvil y del servidor.
+La carpeta Borradores lista todos los borradores. Puede utilizar la opción Eliminar borrador para eliminar permanentemente los borradores del dispositivo móvil y del servidor.
 
-La opción para eliminar borradores creados a partir de una tarea no está disponible. Al eliminar un borrador creado a partir de una tarea, la tarea se abandona.
+La opción para eliminar borradores creados a partir de una tarea no está disponible. Al eliminar un borrador creado a partir de una tarea, se abandona la tarea.
 
 Puede descartar los borradores tanto en modo sin conexión como en modo en línea. Al descartar los borradores en modo sin conexión, los borradores se eliminan del servidor únicamente cuando se restaura la conexión con el servidor.
 
@@ -43,5 +43,3 @@ Siga los pasos siguientes para eliminar un borrador:
 1. Seleccione **Borradores** en la lista desplegable situada junto a Buscar.
 1. Un formulario con el icono de edición ![edit-draft-app](assets/edit-draft-app.png) indica un borrador. Puntee en las elipsis horizontales junto al borrador.
 1. En las opciones que aparecen cuando toca los puntos suspensivos horizontales, toque **Eliminar borrador**.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
