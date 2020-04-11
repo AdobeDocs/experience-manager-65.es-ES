@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -31,7 +31,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr>
    <td><code>prevText</code></td>
    <td>Especifica el contenido del campo antes de los cambios determinados por las acciones de un usuario. Este valor se puede recuperar, similar a una función de deshacer.</td>
-   <td><p>No funciona para listas desplegables y cuadros de lista. <code>PrevText </code>no funciona correctamente en los siguientes casos:</p>
+   <td><p>No funciona con cuadros desplegables y de lista. <code>PrevText </code>no funciona correctamente en los siguientes casos:</p>
     <ul>
      <li>Al escribir algunas teclas de caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos Numéricos del iPad y </li>
      <li>Para el campo Fecha (cuando la fecha se introduce a través del calendario).<br /> </li>
@@ -185,7 +185,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td><code>name</code></td>
-   <td>Identificador que se utiliza para identificar este elemento en expresiones de secuencia de comandos.</td>
+   <td>Identificador que se utiliza para identificar este elemento en expresiones de secuencias de comandos.</td>
    <td>Los formularios HTML5 no permiten establecer la propiedad name para los objetos. Es una propiedad de solo lectura para formularios HTML5.</td>
   </tr>
   <tr>
@@ -240,12 +240,12 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td><code>length</code></td>
-   <td>El número de elementos de la lista.</td>
+   <td>Número de elementos de la lista.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
    <td><code>addItem</code></td>
-   <td>Agrega nuevos elementos al campo actual.</td>
+   <td>Añade nuevos elementos al campo actual.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
@@ -315,12 +315,12 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td>x</td>
-   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con una posición fija.</td>
+   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición fija.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con una posición fija.</td>
+   <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición fija.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
@@ -356,13 +356,13 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
 
 | Propiedad | Descripción |
 |---|---|
-| `name` | Identificador que se utiliza para identificar este elemento en expresiones de secuencia de comandos. |
-| `occur` | Describe las restricciones sobre el número de instancias permitidas para su contenedor. |
+| `name` | Identificador que se utiliza para identificar este elemento en expresiones de secuencias de comandos. |
+| `occur` | Describe las restricciones sobre el número de instancias permitidas para el contenedor que lo rodea. |
 | `min` | Especifica el número mínimo de instancias que se pueden crear. |
 | `max` | Especifica el número máximo de instancias que se pueden crear. |
 | `count` | Especifica el número actual de instancias creadas. |
-| `setInstances` | Agrega o quita los subformularios o conjuntos de subformularios especificados de este nodo. |
-| `addInstance` | Agrega una nueva instancia de un subformulario o conjunto de subformularios a este nodo. |
+| `setInstances` | Añade o quita de este nodo los subformularios o conjuntos de subformularios especificados. |
+| `addInstance` | Añade una nueva instancia de un subformulario o conjunto de subformularios en este nodo. |
 | `removeInstance` | Quita un subformulario o conjunto de subformularios de este nodo. |
 | `moveInstance` | Mueve un objeto secundario de un objeto de modelo de formulario a otra ubicación especificada dentro del modelo de formulario. La información del modelo de datos correspondiente para el objeto también se reubica dentro del modelo de datos. |
 | `insertInstance` | Inserta una nueva instancia de un subformulario o conjunto de subformularios en este nodo. |
@@ -443,12 +443,12 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td>x</td>
-   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con una posición fija.</td>
+   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición fija.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con una posición fija.</td>
+   <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición fija.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
@@ -458,7 +458,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td>name</td>
-   <td>Identificador que se utiliza para identificar este elemento en expresiones de secuencia de comandos.</td>
+   <td>Identificador que se utiliza para identificar este elemento en expresiones de secuencias de comandos.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
@@ -816,7 +816,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td>name<br /> </td>
-   <td>Identificador que se utiliza para identificar este elemento en expresiones de secuencia de comandos.</td>
+   <td>Identificador que se utiliza para identificar este elemento en expresiones de secuencias de comandos.</td>
    <td>Ninguno</td>
   </tr>
  </tbody>
@@ -936,12 +936,12 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td>x</td>
-   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con una posición fija.</td>
+   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición fija.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con una posición fija.</td>
+   <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición fija.</td>
    <td>Ninguna</td>
   </tr>
   <tr>
@@ -1114,7 +1114,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
 
 ### Funciones admitidas por FormCalc {#formcalc-supported-functions}
 
-### Compatibilidad con expresiones FormCalc {#formcalc-expression-support}
+### Compatibilidad con la Expresión de FormCalc {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1125,7 +1125,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   </tr>
   <tr>
    <td>Expresión simple</td>
-   <td>Agregar, restar, multiplicar, dividir y paréntesis</td>
+   <td>Añadir, restar, multiplicar, dividir y paréntesis</td>
    <td>(a+b)*3</td>
   </tr>
   <tr>
@@ -1134,16 +1134,16 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
    <td>var a<br /> var a=3<br /> a=3</td>
   </tr>
   <tr>
-   <td>Expresión lógica</td>
+   <td>expresión lógica</td>
    <td>
     <ul>
      <li>Lógica (y/o)</li>
-     <li>Comparación (mayor/menor/igual)</li>
+     <li>Comparación (buena/menor/igual)</li>
     </ul> </td>
    <td>A o 1<br /> 1 &lt;&gt; 2<br /> A NE B<br /> A o 1<br /> 1 &lt;&gt; 2<br /> A NE B</td>
   </tr>
   <tr>
-   <td>Expresión If</td>
+   <td>Si expresión</td>
    <td><br type="_moz" /> </td>
    <td>if (a&gt;b) then 2 endif</td>
   </tr>
@@ -1213,7 +1213,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. Term()
+   1. Término()
 
 1. **Funciones lógicas**
 
@@ -1284,7 +1284,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Especifica una secuencia de comandos de JavaScript y un período de tiempo. La secuencia de comandos se ejecuta una sola vez, después de que transcurra el período. El valor devuelto de este método debe mantenerse en una variable de JavaScript. De lo contrario, el objeto timeout está sujeto a la recolección de elementos no utilizados, lo que provocaría que se detuviera el reloj. Para cancelar el evento timeout, pase el objeto timeout devuelto a clearTimeOut.</td>
+   <td>Especifica una secuencia de comandos de JavaScript y un período de tiempo. La secuencia de comandos se ejecuta una sola vez, después de que transcurra el período. El valor devuelto de este método debe mantenerse en una variable de JavaScript. De lo contrario, el objeto timeout está sujeto a la recolección de elementos no utilizados, lo que provocaría que se detuviera el reloj. Para cancelar el evento de tiempo de espera, pase el objeto de tiempo de espera devuelto a clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1304,7 +1304,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   </tr>
   <tr>
    <td>app.activeDocs</td>
-   <td>Matriz que contiene el objeto Doc para cada documento activo. Si no hay ningún documento activo, activeDocs no devuelve nada; es decir, tiene el mismo comportamiento que d = new Array(0) en JavaScript principal.</td>
+   <td>Matriz que contiene el objeto Doc para cada documento activo. Si no hay documentos activos, activeDocs no devuelve nada; es decir, tiene el mismo comportamiento que d = new Array(0) en JavaScript principal.</td>
    <td>Devuelve una matriz vacía para formularios HTMl5.</td>
   </tr>
   <tr>
@@ -1313,7 +1313,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
    <td>Siempre es true para formularios HTMl5.</td>
   </tr>
   <tr>
-   <td>app.constantes</td>
+   <td>app.constants</td>
    <td>Un objeto envolvente para mantener varios valores constantes. Actualmente, esta propiedad devuelve un objeto con una sola propiedad, align.</td>
    <td>Los formularios HTML5 devuelven un objeto de alineación vacío.</td>
   </tr>
@@ -1335,9 +1335,9 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
  </tbody>
 </table>
 
-## Eventos XFA admitidos {#supported-xfa-events}
+## eventos XFA admitidos {#supported-xfa-events}
 
-Se admiten los siguientes eventos XFA de lado del cliente:
+Se admiten los siguientes eventos XFA del lado del cliente:
 
 * Inicializar
 * Validar
@@ -1351,5 +1351,3 @@ Se admiten los siguientes eventos XFA de lado del cliente:
 >[!NOTE]
 >
 >Los formularios HTML5 se representan en el lado del cliente (navegador). Se recomienda utilizar secuencias de comandos de **validación** y **cálculo** del lado del cliente en lugar de secuencias de comandos del lado del servidor.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
