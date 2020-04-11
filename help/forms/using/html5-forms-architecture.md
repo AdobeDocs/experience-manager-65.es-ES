@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -142,7 +142,7 @@ Para obtener más información sobre las utilidades y los contratos correspondie
 
 #### Estilo {#styling}
 
-El estilo asociado con los elementos HTML se agrega en línea o en función de bloques CSS incrustados. Algunos estilos comunes que no dependen del formulario forman parte de CQ Client Lib con el nombre de categoría xfaforms.perfil.
+El estilo asociado con los elementos HTML se agrega en línea o en función de un bloque CSS incrustado. Algunos estilos comunes que no dependen del formulario forman parte de CQ Client Lib con el nombre de categoría xfaforms.perfil.
 
 Además de las propiedades de estilo predeterminadas, cada elemento de formulario también contiene ciertas clases CSS basadas en el tipo de elemento, el nombre y otras propiedades. Con estas clases, se pueden volver a aplicar estilo a los elementos especificando su propia CSS.
 
@@ -185,4 +185,3 @@ Como se ha descrito anteriormente, el procesador de perfil JSP llama a Forms Ser
 
 Los formularios HTML5 permiten a los desarrolladores crear un procesador de Perfil y Perfil para personalizar el aspecto de los formularios. Por ejemplo, los formularios HTML permiten a los desarrolladores integrar formularios en un panel o en la sección &lt;div> de un portal HTML existente.
 Para obtener más información sobre la creación de perfiles personalizados, consulte [Creación de un Perfil](/help/forms/using/custom-profile.md)personalizado.
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
