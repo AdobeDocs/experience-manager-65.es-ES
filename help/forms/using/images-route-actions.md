@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -20,11 +20,11 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, realice los 
 
 ## Imágenes para acciones de ruta {#images-for-route-actions}
 
-1. Agregue los estilos que definen imágenes en la CSS en la siguiente ubicación para las nuevas acciones de ruta:
+1. Añada los estilos que definen las imágenes en la CSS en la siguiente ubicación para las nuevas acciones de ruta:
 
    `/apps/ws/css/newStyle.css`
 
-   Por ejemplo: Agregue un nuevo estilo llamado `myStyle1`como se muestra a continuación y cargue el archivo de imagen `myStyleIcon1.png` en la carpeta `/apps/ws/image`s mediante un cliente WebDAV.
+   Por ejemplo: Añada un nuevo estilo llamado `myStyle1`como se muestra a continuación y cargue el archivo de imagen `myStyleIcon1.png` en la carpeta `/apps/ws/image`s mediante un cliente WebDAV.
 
    >[!NOTE]
    >
@@ -42,9 +42,9 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, realice los 
        }
    ```
 
-## Ventana emergente de acción de tarea Lista de tareas {#task-list-task-action-popup}
+## Ventana emergente de acción de tarea de Lista de Tarea {#task-list-task-action-popup}
 
-1. Cree una ventana emergente de acción de lista de tareas, consulte [Creación del código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)del espacio de trabajo de AEM Forms. Requiere usar el paquete dev.
+1. Crear una ventana emergente de acción de lista de tarea, consulte [Creación del código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)del espacio de trabajo de AEM Forms. Requiere usar el paquete dev.
 
 1. Copiar `/libs/ws/js/runtime/templates/task.html` a `/apps/ws/js/runtime/templates/task.html`.
 
@@ -114,7 +114,7 @@ To
             <%}%>
 ```
 
-## Ventana emergente de acción de tarea Detalles de tarea {#task-details-task-action-popup}
+## Ventana emergente de acción de tarea Detalles de Tarea {#task-details-task-action-popup}
 
 1. Copiar `/libs/ws/js/runtime/templates/taskdetails.html` a `/apps/ws/js/runtime/templates/taskdetails.html`.
 
@@ -171,5 +171,3 @@ To
 
 1. Sustitúyase el texto por el siguiente:
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
