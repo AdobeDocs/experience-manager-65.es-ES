@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -116,5 +116,3 @@ Al probar su formulario mediante el uso de datos de ejemplo le garantiza la asig
 ## Formularios de Previsualización ubicados en un repositorio {#html-preview-of-forms-in-forms-manager}
 
 En AEM Forms, puede previsualización de formularios y documentos en un repositorio. La Previsualización ayuda a saber exactamente cómo se ven y se comportan los formularios cuando se utilizan para los usuarios finales.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
