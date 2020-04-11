@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Personalización de las tablas de seguimiento{#customize-tracking-tables}
 
-La ficha de seguimiento del espacio de trabajo de AEM Forms se utiliza para mostrar los detalles de las instancias de proceso en las que participa el usuario que ha iniciado sesión. Para ver las tablas de seguimiento, primero seleccione un nombre de proceso en el panel izquierdo para ver su lista de instancias en el panel medio. Seleccione una instancia de proceso para ver una tabla de tareas generada por esta instancia en el panel derecho. De forma predeterminada, las columnas de la tabla muestran los atributos de tarea siguientes (el atributo correspondiente del modelo de tareas se proporciona entre paréntesis):
+La ficha de seguimiento del espacio de trabajo de AEM Forms se utiliza para mostrar los detalles de las instancias de proceso en las que participa el usuario que ha iniciado sesión. Para realizar la vista de las tablas de seguimiento, primero seleccione un nombre de proceso en el panel izquierdo para ver su lista de instancias en el panel medio. Seleccione una instancia de proceso para ver una tabla de tareas generadas por esta instancia en el panel derecho. De forma predeterminada, las columnas de la tabla muestran los atributos de tarea siguientes (el atributo correspondiente del modelo de tarea se indica entre paréntesis):
 
 * ID ( `taskId`)
 * Nombre ( `stepName`)
@@ -26,7 +26,7 @@ La ficha de seguimiento del espacio de trabajo de AEM Forms se utiliza para most
 * Tiempo de finalización ( `completeTime`)
 * Propietario ( `currentAssignment.queueOwner`)
 
-Los atributos restantes del modelo de tareas disponibles para mostrar en la tabla de tareas son:
+Los atributos restantes del modelo de tarea disponibles para su visualización en la tabla de tareas son:
 
 <table>
  <tbody>
@@ -113,11 +113,11 @@ Los atributos restantes del modelo de tareas disponibles para mostrar en la tabl
  </tbody>
 </table>
 
-Para las siguientes personalizaciones en la tabla de tareas, debe realizar cambios semánticos en el código fuente. Consulte [Introducción a la personalización del espacio de trabajo](/help/forms/using/introduction-customizing-html-workspace.md) de AEM Forms para ver cómo se pueden realizar cambios semánticos mediante el SDK de espacio de trabajo y crear un paquete reducido a partir del origen modificado.
+Para las siguientes personalizaciones en la tabla de tarea, debe realizar cambios semánticos en el código fuente. Consulte [Introducción a la personalización del espacio de trabajo](/help/forms/using/introduction-customizing-html-workspace.md) de AEM Forms para ver cómo se pueden realizar cambios semánticos mediante el SDK de espacio de trabajo y crear un paquete reducido a partir del origen modificado.
 
 ## Cambio de las columnas de la tabla y su orden {#changing-table-columns-and-their-order}
 
-1. Para modificar los atributos de tarea que se muestran en la tabla y su orden, configure el archivo /ws/js/runtime/templates/processinstancehistory.html :
+1. Para modificar los atributos de tarea mostrados en la tabla y su orden, configure el archivo /ws/js/runtime/templates/processinstancehistory.html :
 
    ```as3
    <table>
@@ -153,7 +153,7 @@ Para las siguientes personalizaciones en la tabla de tareas, debe realizar cambi
 
 ## Clasificación de una tabla de seguimiento {#sorting-a-tracking-table}
 
-Para ordenar la tabla de la lista de tareas al hacer clic en el encabezado de la columna:
+Para ordenar la tabla de lista de tareas al hacer clic en el encabezado de columna:
 
 1. Registre un controlador de clics para `.fixedTaskTableHeader th` el archivo `js/runtime/views/processinstancehistory.js`.
 
@@ -175,7 +175,7 @@ Para ordenar la tabla de la lista de tareas al hacer clic en el encabezado de la
 
 1. Exponga el `TaskTableHeaderClick` método en `js/runtime/util/history.js`.
 
-   El método busca el atributo de tarea desde el suceso click, ordena la lista de tareas de ese atributo y procesa la tabla de tareas con la lista de tareas ordenada.
+   El método busca el atributo de tarea desde el evento de clic, ordena la lista de tareas de ese atributo y procesa la tabla de tareas con la lista de tareas ordenada.
 
    La ordenación se realiza mediante la función de ordenación de la red troncal de la colección de listas de tareas, proporcionando una función de comparación.
 
@@ -210,5 +210,3 @@ Para ordenar la tabla de la lista de tareas al hacer clic en el encabezado de la
            render();
        };
    ```
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**
