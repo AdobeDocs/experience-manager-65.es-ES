@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -38,7 +38,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
       ![recuento inicial](assets/intial-count.png)
 
-   1. Utilice el suceso initialize del formulario para ocultar la instancia principal del subformulario. Por ejemplo, el código siguiente oculta la instancia principal del subformulario al inicializarlo. También verifica el tipo de aplicación para asegurarse de que la secuencia de comandos se ejecuta únicamente en el lado del cliente:
+   1. Utilice el evento initialize del formulario para ocultar la instancia principal del subformulario. Por ejemplo, el código siguiente oculta la instancia principal del subformulario al inicializarlo. También verifica el tipo de aplicación para asegurarse de que la secuencia de comandos se ejecuta únicamente en el lado del cliente:
 
       ```
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
@@ -46,7 +46,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
       }
       ```
 
-   1. Abra la secuencia de comandos para agregar una instancia del subformulario para editarlo. Agregue el código siguiente para agregar una instancia de la secuencia de comandos de Subformulario.
+   1. Abra la secuencia de comandos para agregar una instancia del subformulario para editarlo. Añada el código como el de abajo para agregar una instancia de la secuencia de comandos de Subformulario.
 
       El código siguiente comprueba la instancia oculta del subformulario. Si se encuentra la instancia oculta del subformulario, elimine la instancia oculta del subformulario e inserte una nueva instancia del subformulario. Si no se encuentra la instancia oculta del subformulario, simplemente inserte una nueva instancia del subformulario.
 
@@ -62,7 +62,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
       }
       ```
 
-   1. Abra la secuencia de comandos para quitar una instancia del subformulario para editarlo. Agregue el código siguiente para quitar una instancia de la secuencia de comandos de Subformulario.
+   1. Abra la secuencia de comandos para quitar una instancia del subformulario para editarlo. Añada el código siguiente para eliminar una instancia de la secuencia de comandos de Subformulario.
 
       Recuento de comprobaciones de código de los subformularios. Si el recuento del subformulario alcanza 1, el código oculta el subformulario en lugar de eliminarlo.
 
@@ -74,7 +74,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
       }
       ```
 
-   1. Abra el suceso de envío previo del formulario para editarlo. Agregue la siguiente secuencia de comandos al suceso para eliminar la instancia oculta de la secuencia de comandos antes de editarla. Evita el envío de datos del subformulario oculto al enviarlo.
+   1. Abra el evento de envío previo del formulario para editarlo. Añada la siguiente secuencia de comandos al evento para eliminar la instancia oculta de la secuencia de comandos antes de editarla. Evita el envío de datos del subformulario oculto al enviarlo.
 
       ```
       if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
@@ -88,11 +88,11 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Por qué parte del texto se trunca o se muestra incorrectamente en HTML5?
 
-   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista Diseño de AEM Forms Designer. Aunque este truncamiento se puede gestionar en los archivos PDF, no se puede gestionar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño de AEM Forms Designer.
+   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista de diseño de AEM Forms Designer. Aunque este truncamiento se puede gestionar en los archivos PDF, no se puede gestionar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño de AEM Forms Designer.
 
 1. Estoy observando problemas de diseño relacionados con la falta de contenido o la superposición de contenido. ¿Cuál es la razón?
 
-   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se produce más adelante en el orden del documento (en la vista Jerarquía de AEM Forms Designer). PDF admite capas transparentes, pero los navegadores/HTML no admiten capas transparentes.
+   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se produce más adelante en el orden de documento (en la vista Jerarquía de AEM Forms Designer). PDF admite capas transparentes, pero los navegadores/HTML no admiten capas transparentes.
 
 1. ¿Por qué se muestran algunas fuentes en el formulario HTML diferentes de las utilizadas al diseñar el formulario?
 
@@ -135,7 +135,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
    * Los encabezados solo se admiten para las columnas superior o izquierda de la tabla. Los encabezados no son compatibles con los elementos de la tabla intermedia. Puede aplicar encabezados a varios encabezados de columna y fila siempre que todas estas filas y columnas estén junto con la fila superior o la columna situada más a la izquierda de la tabla.
    * `Rowspan`y `colspan`desde una ubicación aleatoria dentro de la tabla no se admite.
 
-   * No se puede agregar o quitar dinámicamente una instancia de filas que contenga elementos con un valor de envergadura mayor que 1.
+   * No se puede agregar o quitar dinámicamente una instancia de filas que contenga elementos con un valor de envergadura bueno a 1.
 
 1. ¿Cuál es el orden de lectura de la información del objeto y del rótulo para los lectores de pantalla?
 
@@ -172,7 +172,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
    Respuesta:
 
    * La compatibilidad con la secuencia de comandos xfa.connectionSet es limitada. Para connectionSet, solo se admite la invocación del servicio Web por parte del servidor. Para obtener información detallada, consulte Compatibilidad con [secuencias de comandos](/help/forms/using/scripting-support.md).
-   * No se admite $record y $data en scripts del lado del cliente. Sin embargo, si las secuencias de comandos se escriben en un bloque formReady, layoutReady, las secuencias de comandos seguirán funcionando porque estos sucesos se ejecutan en el servidor.
+   * No se admite $record y $data en scripts del lado del cliente. Sin embargo, si las secuencias de comandos se escriben en un bloque formReady, layoutReady, las secuencias de comandos seguirán funcionando porque estos eventos se ejecutan en el servidor.
    * No se admiten secuencias de comandos específicas de elementos XFA Draw, como cambiar el texto Dibujar (o el texto Rótulo en caso de campos).
 
 1. ¿Hay alguna limitación en el uso de formCalc?
@@ -182,7 +182,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 1. ¿Existe alguna convención de nombres recomendada y hay palabras clave reservadas que evitar?
 
    * En AEM Forms Designer, se recomienda no empezar el nombre de un objeto (como un subformulario o un campo de texto) con un subrayado (_). Para utilizar subrayado al principio del nombre, agregue un prefijo después del subrayado, _&lt;prefix>&lt;objectname>.
-   *  Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md).
+   * Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md).
 
 1. ¿Los formularios HTML5 admiten campos flotantes?
 
@@ -193,21 +193,19 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
    >De forma predeterminada, los campos no están habilitados para flotar. Puede utilizar Forms Designer para establecer la propiedad flotante de los campos.
 
    1. Abra la lista CRXde y navegue hasta el `/content/xfaforms/profiles/default` nodo.
-   1. Agregue una propiedad `mfDataDependentFloatingField`de tipo String y defina el valor de la propiedad en `true`.
+   1. Añada una propiedad `mfDataDependentFloatingField`de tipo String y defina el valor de la propiedad en `true`.
    1. Haga clic en **Guardar todo**. Ahora los campos flotantes están activados para los formularios HTML mediante el perfil de procesamiento actualizado.
 
       >[!NOTE]
       >
       >Para habilitar campos flotantes para un formulario específico sin actualizar el perfil de procesamiento, pase la propiedad mfDataDependentFloatingField=true como parámetro de URL.
 
-1. ¿Ejecutan los formularios HTML5 la secuencia de comandos de inicialización y el suceso de formulario listo varias veces?
+1. ¿Los formularios HTML5 ejecutan la secuencia de comandos de inicialización y el evento listo para el formulario varias veces?
 
-   Sí, las secuencias de comandos de inicialización y los sucesos preparados para el formulario se ejecutan varias veces, al menos una vez en el servidor y otra en el cliente. Se recomienda escribir secuencias de comandos como sucesos initialize o form:ready basados en alguna lógica empresarial (datos de campo o formulario) para que la acción se realice en función del estado de los datos y del potencial (si los datos son los mismos).
+   Sí, las secuencias de comandos de inicialización y los eventos listos para el formulario se ejecutan varias veces, al menos una vez en el servidor y otra en el cliente. Se recomienda escribir secuencias de comandos como initialize o form:ready en función de una lógica empresarial (datos de campo o formulario) para que la acción se realice en función del estado de los datos y del potencial (si los datos son los mismos).
 
 ### Diseño de XDP {#designing-xdp}
 
 1. ¿Hay palabras clave reservadas en los formularios HTML5?
 
-   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comienzan con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. La adición de un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comienzan con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. Añadir un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`
