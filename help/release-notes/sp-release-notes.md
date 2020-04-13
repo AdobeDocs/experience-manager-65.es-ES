@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
+source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
 
 ---
 
@@ -177,6 +177,8 @@ Para obtener una lista completa de las funciones, los aspectos más destacados y
 * La generación de direcciones URL de la biblioteca de inicio se basa únicamente en `path` y `library_name` los valores de la API de inicio, y no se basa en el `library_path` valor (NPR-31550).
 
 * Aparece un mensaje de error al procesar los elementos relacionados con LiveFile (FYR-12420).
+
+* ReportSuitesServlet es vulnerable a SSRF (NPR-32156).
 
 ### Editor de plantillas WCM {#wcm-template-editor-6540}
 
