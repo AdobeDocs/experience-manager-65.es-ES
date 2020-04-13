@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
+source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ---
 
@@ -902,9 +902,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![línea de tiempo](assets/timeline.png)
 
-1. Toque o haga clic en el icono de **[!UICONTROL Acciones]** (flecha) de la parte inferior para vista de las acciones disponibles que puede realizar en el recurso.
-
-   ![chlimage_1-249](assets/chlimage_1-45.png)
+1. Haga clic en **[!UICONTROL Acciones]** en la parte inferior para vista de las acciones disponibles que puede realizar en el recurso.
 
 1. Toque o haga clic en **[!UICONTROL Guardar como versión]** para crear una versión para el recurso.
 
