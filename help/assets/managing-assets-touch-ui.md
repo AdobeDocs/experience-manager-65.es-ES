@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
+source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
 
 ---
 
@@ -880,7 +880,7 @@ A continuación se muestra un ejemplo de cómo configurar AEM para que imprima a
 
 ## Crear, administrar, previsualización y revertir versiones de recursos {#asset-versioning}
 
-Al generar una versión se crea una instantánea de activos digitales en un punto específico en el tiempo. La creación de versiones ayuda a restaurar los recursos a un estado anterior posteriormente. Por ejemplo, si desea deshacer un cambio realizado en un recurso, restaure la versión sin editar del recurso.
+Al generar una versión se crea una instantánea de activos digitales en un punto específico en el tiempo. La creación de versiones ayuda a restaurar los recursos a un estado anterior posteriormente. Por ejemplo, si desea deshacer un cambio realizado en un recurso, restaure la versión sin editar del recurso. En Experience Manager, puede crear una versión, vista de la revisión actual, vista paralela de diferencias entre dos versiones de imágenes y restauración de un recurso a su versión anterior.
 
 Puede crear versiones en Experience Manager en los siguientes casos:
 
@@ -891,17 +891,11 @@ Puede crear versiones en Experience Manager en los siguientes casos:
 
 También puede activar el control automático de versiones mediante un flujo de trabajo. Al crear una versión para un recurso, los metadatos y las representaciones se guardan junto con la versión. Las representaciones son alternativas representadas de las mismas imágenes, por ejemplo, una representación PNG de un archivo JPEG cargado.
 
-En Experience Manager puede:
-
-* Cree una versión de un recurso.
-* Vista de la revisión actual de un recurso.
-* Restaure el recurso a una versión anterior.
-
 1. Vaya a la ubicación del recurso para el que desea crear una versión y haga clic en él para abrir su previsualización. En la esquina superior izquierda de la página, abra el menú y seleccione **[!UICONTROL Línea de tiempo]**.
 
    ![En el menú de navegación de la izquierda, seleccione la opción de línea de tiempo](assets/timeline.png)
 
-*Figura: Abra el menú desde el área superior izquierda de la página y seleccione la opción[!UICONTROL Línea de tiempo].*
+   *Figura: Abra el menú desde el área superior izquierda de la página y seleccione la opción[!UICONTROL Línea de tiempo].*
 
 1. Para crear una versión del recurso:
 
@@ -910,6 +904,8 @@ En Experience Manager puede:
    * Haga clic en **[!UICONTROL Crear]** para crear una versión.
 
       ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+
+      *Figura: Cree una versión de un recurso desde la barra lateral izquierda de la[!UICONTROL línea de tiempo].*
 
 1. Para vista de una versión de un recurso:
 
@@ -926,6 +922,8 @@ En Experience Manager puede:
    * Click **[!UICONTROL Revert to this Version]**.
 
       ![select_version](assets/select_version.png)
+
+      *Figura: Seleccione una versión y vuelva a ella. Se convierte en la versión actual que luego está disponible para los usuarios de DAM.*
 
 1. Para comparar dos versiones de una imagen, siga estos pasos:
    * Haga clic en la versión que se va a comparar con la versión actual.
