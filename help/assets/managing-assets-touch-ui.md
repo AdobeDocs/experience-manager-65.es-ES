@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
 
 ---
 
@@ -878,65 +878,61 @@ A continuación se muestra un ejemplo de cómo configurar AEM para que imprima a
 1. Configure el archivo PDF de anotación estableciendo el parámetro font-family en `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Esta configuración está disponible de forma predeterminada y funciona para todos los idiomas europeos y CJK.
 1. Si el idioma de su elección es distinto de los idiomas mencionados en el paso 2, anexe una entrada adecuada (separada por comas) a la familia de fuentes predeterminada.
 
-## Versiones de recursos {#asset-versioning}
+## Crear, administrar, previsualización y revertir versiones de recursos {#asset-versioning}
 
 Al generar una versión se crea una instantánea de activos digitales en un punto específico en el tiempo. La creación de versiones ayuda a restaurar los recursos a un estado anterior posteriormente. Por ejemplo, si desea deshacer un cambio realizado en un recurso, restaure la versión sin editar del recurso.
 
-A continuación se muestran los escenarios en los que se crean versiones:
+Puede crear versiones en Experience Manager en los siguientes casos:
 
-* Puede modificar una imagen en una aplicación diferente y cargarla en Recursos AEM. Se crea una versión de la imagen para que no se sobrescriba la imagen original.
-* Los metadatos de un recurso se editan.
-* La aplicación de escritorio de AEM se utiliza para extraer un recurso existente y guardar los cambios. Se crea una nueva versión cada vez que se guarda el recurso.
+* Cargue un recurso con el mismo nombre de archivo que existe en la misma ubicación. Puede ser un recurso nuevo o una versión modificada del mismo recurso.
+* Edite una imagen en Experience Manager y guarde los cambios.
+* Edite los metadatos de un recurso.
+* Utilice la aplicación de escritorio de AEM para retirar un recurso existente, editarlo y [cargar los cambios](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 También puede activar el control automático de versiones mediante un flujo de trabajo. Al crear una versión para un recurso, los metadatos y las representaciones se guardan junto con la versión. Las representaciones son alternativas representadas de las mismas imágenes, por ejemplo, una representación PNG de un archivo JPEG cargado.
 
-La funcionalidad de versiones le permite hacer lo siguiente:
+En Experience Manager puede:
 
 * Cree una versión de un recurso.
 * Vista de la revisión actual de un recurso.
 * Restaure el recurso a una versión anterior.
 
-1. Vaya a la ubicación del recurso para el que desea crear una versión y toque o haga clic en él para abrir su página de recursos.
+1. Vaya a la ubicación del recurso para el que desea crear una versión y haga clic en él para abrir su previsualización. En la esquina superior izquierda de la página, abra el menú y seleccione **[!UICONTROL Línea de tiempo]**.
 
-1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Cronología]** en el menú.
+   ![En el menú de navegación de la izquierda, seleccione la opción de línea de tiempo](assets/timeline.png)
 
-   ![línea de tiempo](assets/timeline.png)
+*Figura: Abra el menú desde el área superior izquierda de la página y seleccione la opción[!UICONTROL Línea de tiempo].*
 
-1. Haga clic en **[!UICONTROL Acciones]** en la parte inferior para vista de las acciones disponibles que puede realizar en el recurso.
+1. Para crear una versión del recurso:
 
-1. Toque o haga clic en **[!UICONTROL Guardar como versión]** para crear una versión para el recurso.
+   * Haga clic en **[!UICONTROL Acciones]** en la parte inferior.
+   * Haga clic en **[!UICONTROL Guardar como versión]** para crear una versión para el recurso. De forma opcional, agregue una etiqueta y un comentario.
+   * Haga clic en **[!UICONTROL Crear]** para crear una versión.
 
-   ![chlimage_1-250](assets/chlimage_1-46.png)
+      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
 
-1. Añada una etiqueta y un comentario y, a continuación, haga clic en **[!UICONTROL Crear]** para crear una versión. También puede tocar o hacer clic en **Cancelar** para salir de la operación.
+1. Para vista de una versión de un recurso:
 
-   ![chlimage_1-251](assets/chlimage_1-47.png)
+   * Haga clic en **[!UICONTROL Mostrar todo]** en la [!UICONTROL línea de tiempo].
+   * Haga clic en **[!UICONTROL Versiones]**. Todas las versiones creadas para un recurso aparecen en la barra lateral izquierda.
 
-1. Para ver la nueva versión, abra la lista **[!UICONTROL Mostrar todo]** en la cronología de la página de detalles de recursos o de la interfaz de usuario de recursos y elija **[!UICONTROL Versiones]**. Todas las versiones creadas para un recurso se muestran en la pestaña de cronología. Puede filtrar la lista para mostrar Versiones, haciendo clic en la flecha de colocación y seleccionando **[!UICONTROL Versiones]** en la lista.
+      ![versions_option](assets/versions_option.png)
 
-   ![versions_option](assets/versions_option.png)
+   * Seleccione una versión específica del recurso y haga clic en Versión **[!UICONTROL de]** Previsualización.
 
-1. Seleccione una versión específica para el recurso para realizar la previsualización o habilite su aparición en la interfaz de usuario de Recursos.
+1. Para volver a una versión anterior del recurso, haga lo siguiente. Después de revertir, esta versión se muestra en la [!DNL Assets] interfaz y está disponible para su uso.
 
-   ![select_version](assets/select_version.png)
+   * Haga clic en una versión del recurso. De forma opcional, agregue una etiqueta y un comentario.
+   * Click **[!UICONTROL Revert to this Version]**.
 
-   >[!NOTE]
-   >
-   >También puede seleccionar el recurso en la vista [de](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Lista o en la vista [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)Columna.
+      ![select_version](assets/select_version.png)
 
-1. Añada una etiqueta y un comentario para que la versión vuelva a la versión concreta de la interfaz de usuario de Recursos.
+1. Para comparar dos versiones de una imagen, siga estos pasos:
+   * Haga clic en la versión que se va a comparar con la versión actual.
+   * Arrastre el control deslizante hacia la izquierda para superponer esta versión sobre la versión actual y comparar.
+   ![Utilice el control deslizante para comparar las versiones seleccionadas de un recurso con la versión actual](assets/version-slider.gif)
 
-   ![save_version](assets/save_version.png)
-
-1. Para generar una vista previa de la versión, pulse o haga clic en **[!UICONTROL Vista previa de la versión]**.
-1. Para mostrar esta versión en la interfaz de usuario de Recursos, seleccione **[!UICONTROL Revertir a esta versión]**.
-1. Para comparar dos versiones, vaya a la página de recursos del recurso y toque o haga clic en la versión que se va a comparar con la versión actual.
-
-   ![select_version_tocompare](assets/select_version_tocompare.png)
-
-1. En la línea de tiempo, seleccione la versión que desee comparar y arrastre el deslizador hacia la izquierda para superponer esta versión sobre la versión actual y comparar.
-
-   ![compare_versions](assets/compare_versions.png)
+   *Figura: Utilice el control deslizante para comparar sin esfuerzo las versiones seleccionadas de un recurso con la versión actual.*
 
 ### Inicio de un flujo de trabajo en un recurso {#starting-a-workflow-on-an-asset}
 
