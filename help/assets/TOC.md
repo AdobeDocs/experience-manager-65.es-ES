@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Assets User Guide
+user-guide-title: Guía del usuario de AEM 6.5 Assets
 translation-type: tm+mt
-source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
+source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisión de los recursos y las colecciones de carpetas](bulk-approval.md)
    + [Flujo de Actividad en la línea de tiempo](activity-stream.md)
-   + [Aplicar flujos de trabajo a los recursos](assets-workflow.md)
+   + [Procesar recursos](assets-workflow.md)
    + [Añadir mapas de imagen](image-maps.md)
    + [Reutilización de recursos mediante MSM](reuse-assets-using-msm.md)
    + [Recursos conectados con sitios AEM](use-assets-across-connected-assets-instances.md)
