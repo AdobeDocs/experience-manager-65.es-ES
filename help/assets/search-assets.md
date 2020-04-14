@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 25acffc6a0101be4ea6811b92c40bc76f554f5f0
+source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
 
 ---
 
@@ -147,7 +147,7 @@ Desde la interfaz de usuario de AEM, los usuarios pueden buscar recursos [de](/h
 
 ### Recursos de Dynamic Media {#dmassets}
 
-Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media > Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
+Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
 
 ### Buscar con valores específicos en campos de metadatos {#gqlsearch}
 
@@ -225,7 +225,7 @@ La función de búsqueda de AEM admite la búsqueda de colecciones y la búsqued
 
 ## Selector de recursos {#assetselector}
 
-El selector de recursos le permite buscar, filtrar y examinar los recursos DAM de forma especial. El selector de recursos está disponible en `https://[aem-server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante esta funcionalidad. Puede iniciarla con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y se mantienen intactos durante toda la selección.
+El selector de recursos le permite buscar, filtrar y examinar los recursos DAM de una forma especial. El selector de recursos está disponible en `https://[aem-server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante esta funcionalidad. Puede iniciarla con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y se mantienen intactos durante toda la selección.
 
 El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. El Selector de recursos solo funciona en el modo de exploración y solo funciona con la página de resultados de Omniture.
 
