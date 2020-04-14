@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -54,23 +54,23 @@ Utilice Configuration Manager para agregar la dirección URL de la instancia de 
 
 ## Configuración de lanzadores de flujo de trabajo en la instancia de líder {#configure-workflow-launchers-on-the-leader-instance}
 
-Configure los iniciadores de flujo de trabajo para utilizar el flujo de trabajo de descarga **de recursos de actualización de** DAM en la instancia de encabezado en lugar del flujo de trabajo de actualización de recursos **de** DAM.
+Configure los iniciadores de flujo de trabajo para utilizar el flujo de trabajo de descarga [!UICONTROL de recursos de actualización de] DAM en la instancia de encabezado en lugar del flujo de trabajo de actualización de recursos **de** DAM.
 
 1. Toque o haga clic en el logotipo de AEM y elija **Herramientas** > **Flujo de trabajo** > **Iniciadores** para abrir la consola **de iniciadores** de flujo de trabajo.
 
    ![chlimage_1-50](assets/chlimage_1-50a.png)
 
-1. Busque las dos configuraciones del iniciador con el tipo de evento **Nodo creado** y **Nodo modificado** respectivamente, que ejecutan el flujo de trabajo de recursos **de actualización de** DAM.
-1. Para cada configuración, seleccione la casilla de verificación que hay antes y toque o haga clic en el icono **Ver propiedades** de la barra de herramientas para mostrar el cuadro de diálogo Propiedades **del** iniciador.
+1. Busque las dos configuraciones del iniciador con el **nodo de tipo de evento creado** y el **nodo modificado** respectivamente, que ejecutan el flujo de trabajo de recursos **de actualización de** DAM.
+1. Para cada configuración, seleccione la casilla de verificación que hay antes y toque o haga clic en el icono Propiedades **de la** Vista de la barra de herramientas para mostrar el cuadro de diálogo Propiedades **del** iniciador.
 
    ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-1. En la lista **Flujo de trabajo** , seleccione Descarga **de recursos de actualización de** DAM y toque o haga clic en **Guardar**.
+1. En la lista **Flujo de trabajo** , seleccione Descarga [!UICONTROL de recursos de actualización de] DAM y toque o haga clic en **Guardar**.
 
    ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 1. Toque o haga clic en el logotipo de AEM y elija **Herramientas** > **Flujo de trabajo** > **Modelos** para abrir la página Modelos **de** flujo de trabajo.
-1. Seleccione el flujo de trabajo de descarga **de recursos de actualización de** DAM y toque o haga clic en **Editar** en la barra de herramientas para mostrar sus detalles.
+1. Seleccione el flujo de trabajo de descarga [!UICONTROL de recursos de actualización de] DAM y toque o haga clic en **Editar** en la barra de herramientas para mostrar sus detalles.
 
    ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -86,8 +86,8 @@ Desactive los iniciadores de flujo de trabajo que ejecutan el flujo de trabajo d
 
    ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-1. Busque las dos configuraciones del iniciador con el tipo de evento **Nodo creado** y **Nodo modificado** respectivamente, que ejecutan el flujo de trabajo de recursos **de actualización de** DAM.
-1. Para cada configuración, seleccione la casilla de verificación que hay antes y toque o haga clic en el icono **Ver propiedades** de la barra de herramientas para mostrar el cuadro de diálogo Propiedades **del** iniciador.
+1. Busque las dos configuraciones del iniciador con el **nodo de tipo de evento creado** y el **nodo modificado** respectivamente, que ejecutan el flujo de trabajo de recursos **de actualización de** DAM.
+1. Para cada configuración, seleccione la casilla de verificación que hay antes y toque o haga clic en el icono Propiedades **de la** Vista de la barra de herramientas para mostrar el cuadro de diálogo Propiedades **del** iniciador.
 
    ![chlimage_1-56](assets/chlimage_1-56a.png)
 
