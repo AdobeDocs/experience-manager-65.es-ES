@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -61,11 +61,11 @@ Al navegar por el espacio de trabajo de AEM Forms mediante un teclado, la navega
 
 Puede definir las distintas preferencias del espacio de trabajo de AEM Forms en las siguientes categorías:
 
-**Fuera de la oficina:** Configure las preferencias para controlar cómo se asignan las tareas a otras personas mientras se encuentra fuera de la oficina. Consulte [Configuración de las preferencias](/help/forms/using/todo-lists.md#main-pars-heading-22)fuera de la oficina.
+**Fuera de la oficina:** Configure las preferencias para controlar cómo se asignan las tareas a otras personas mientras se encuentra fuera de la oficina. Consulte [Configuración de las preferencias](todo-lists.md#setting-out-of-office-preferences)fuera de la oficina.
 
-**Colas:** Defina las preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Uso de tareas de colas](/help/forms/using/todo-lists.md#main-pars-heading-19)compartidas y de grupos.
+**Colas:** Defina las preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Uso de tareas de colas](todo-lists.md#working-with-tasks-from-group-and-shared-queues)compartidas y de grupos.
 
-**Configuración de la interfaz de usuario:** Defina las preferencias para la forma en que interactúa con el espacio de trabajo de AEM Forms. Consulte [Configuración de las preferencias](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5)de la interfaz de usuario.
+**Configuración de la interfaz de usuario:** Defina las preferencias para la forma en que interactúa con el espacio de trabajo de AEM Forms. Consulte [Configuración de las preferencias](#set-user-interface-preferences)de la interfaz de usuario.
 
 ### Configuración de las preferencias de la interfaz de usuario {#set-user-interface-preferences}
 
