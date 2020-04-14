@@ -1,32 +1,32 @@
 ---
 title: Métodos abreviados de teclado de AEM Forms
 seo-title: Métodos abreviados de teclado de AEM Forms
-description: En este artículo se enumeran los métodos abreviados de teclado que se pueden utilizar con el Editor de formularios adaptables, el Editor de temas, el Navegador de contenido y la Administración de correspondencia para los sistemas operativos Windows y Macintosh.
-seo-description: En este artículo se enumeran los métodos abreviados de teclado que se pueden utilizar con el Editor de formularios adaptables, el Editor de temas, el Navegador de contenido y la Administración de correspondencia.
+description: Este artículo lista los métodos abreviados de teclado que se pueden utilizar con el Editor de formularios adaptables, el Editor de temas, el Navegador de contenido y la Administración de correspondencia para los sistemas operativos Windows y Macintosh.
+seo-description: Este artículo lista los métodos abreviados de teclado que se pueden utilizar con el Editor de formularios adaptables, el Editor de temas, el Navegador de contenido y la Administración de correspondencia.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
 
 # Métodos abreviados de teclado de AEM Forms {#aem-forms-keyboard-shortcuts}
 
-En este artículo se enumeran los métodos abreviados de teclado que se pueden utilizar con el Editor de formularios adaptables, el Editor de temas, el Navegador de contenido y la Administración de correspondencia para los sistemas operativos Windows y Macintosh.
+Este artículo lista los métodos abreviados de teclado que se pueden utilizar con el Editor de formularios adaptables, el Editor de temas, el Navegador de contenido y la Administración de correspondencia para los sistemas operativos Windows y Macintosh.
 
 ## Editor de formularios adaptable {#adaptiveformeditor}
 
 | **Acción** | **Método abreviado en Windows** | **Método abreviado en Mac OS** |
 |---|---|---|
 | Abrir el navegador de propiedades para el componente de formulario adaptable seleccionado | Alt + Intro | Alt + Retorno |
-| Cerrar navegador de propiedades para el componente de formulario adaptable seleccionado | Ctrl+Alt+W | Comando+Alt+W |
+| Cerrar navegador de propiedades para el componente de formulario adaptable seleccionado | Ctrl + Alt + W | Comando+Alt+W |
 | Guardar cambios en el navegador de propiedades para el componente de formulario adaptable seleccionado | Ctrl + S | Comando+S |
 | Editar regla para el componente de formulario adaptable seleccionado | Ctrl + Alt + Intro | Comando+Alt+Retorno |
-| Alternar entre Vista previa y el modo seleccionado actualmente (por ejemplo, Editar, Andamiaje, etc.) | Ctrl + Mayús + M | Ctrl+Mayús+M&amp;ast; |
+| Alternar entre la Previsualización y el modo seleccionado actualmente (por ejemplo, Editar, Andamiaje, etc.) | Ctrl + Mayús + M | Ctrl+Mayús+M&amp;ast; |
 | Deshacer el último cambio | Ctrl + Z | Ctrl+Z&amp;ast; |
 | Rehacer el último cambio | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Seleccionar varios componentes | Mayús + clic | Mayús + clic |
@@ -35,9 +35,9 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 | Pegar componentes | Ctrl + V | Ctrl + V |
 | Eliminar componentes seleccionados | Ctrl + Supr | Ctrl+Supr&amp;ast; |
 | Eliminar componentes seleccionados | Ctrl + Retroceso | Ctrl+Retroceso&amp;Último; |
-| Poner el texto en negrita mientras se utiliza el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + N | Ctrl+B&amp;ast; |
-| Aplicar cursiva al texto mientras se utiliza el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + C | Ctrl+I&amp;ast; |
-| Poner el texto en negrita mientras se utiliza el componente Editor de texto enriquecido en el modo de vista previa | Ctrl + S | Ctrl+U&amp;ast; |
+| Poner el texto en negrita mientras se utiliza el componente Editor de texto enriquecido en el modo de Previsualización | Ctrl + N | Ctrl+B&amp;ast; |
+| Aplicar cursiva al texto mientras se utiliza el componente Editor de texto enriquecido en el modo de Previsualización | Ctrl + C | Ctrl+I&amp;ast; |
+| Poner el texto en negrita mientras se utiliza el componente Editor de texto enriquecido en el modo de Previsualización | Ctrl + S | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 | **Acción** | **Método abreviado en Windows** | **Método abreviado en Mac OS** |
 |---|---|---|
 | Abrir el navegador de propiedades del componente seleccionado en un tema | Alt + Intro | Alt + Retorno |
-| Cerrar el navegador de propiedades del componente seleccionado en un tema | Ctrl+Alt+W | Comando+Alt+W |
+| Cerrar el navegador de propiedades del componente seleccionado en un tema | Ctrl + Alt + W | Comando+Alt+W |
 | Deshacer el último cambio | Ctrl + Z | Ctrl+Z&amp;ast; |
 | Rehacer el último cambio | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Guardar cambios en el navegador de propiedades para el componente seleccionado en un tema | Ctrl + S | Ctrl+S&amp;ast; |
@@ -83,9 +83,9 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 
 ## Administración de correspondencia {#correspondence-management}
 
-Esta sección enumera varios teclados y accesos directos de accesibilidad que puede utilizar en el editor de texto de la Administración de correspondencia. Puede utilizar estos métodos abreviados mientras:
+Esta sección lista varios teclados y accesos directos de accesibilidad que puede utilizar en el editor de texto de la Administración de correspondencia. Puede utilizar estos métodos abreviados mientras:
 
-* Creación o edición de un recurso de [texto](/help/forms/using/document-fragments.md#main-pars-header-0)
+* Creación o edición de un recurso de [texto](texts-interactive-communications.md)
 * Edición de un módulo de texto después de tocar el icono Editar correspondiente ( ![edittextmodule](assets/edittextmodule.png)) al [crear una correspondencia](/help/forms/using/create-correspondence.md).
 
 ### Selección de texto y desplazamiento del cursor {#text-selection-and-moving-the-cursor-around}
@@ -105,7 +105,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <td><p>Seleccionar palabra anterior</p> </td> 
    <td><p>Ctrl + Mayús + flecha izquierda</p> </td> 
-   <td>Comando+Mayús+Flecha izquierda</td> 
+   <td>Comando + Mayús + flecha izquierda</td> 
   </tr>
   <tr>
    <td><p>Ampliar una selección al principio de un párrafo</p> </td> 
