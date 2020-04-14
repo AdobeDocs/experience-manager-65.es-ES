@@ -10,7 +10,7 @@ topic-tags: interactive-communications
 discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -25,19 +25,19 @@ La interfaz de usuario para la creación de comunicación [](/help/forms/using/i
 Al [crear una comunicación](../../forms/using/create-interactive-communication.md)interactiva nueva o editar una existente, se utilizan los siguientes elementos de la interfaz de usuario:
 
 * [Barra lateral](#sidebar)
-* [Barra de herramientas Página](#page-toolbar)
+* [Barra de herramientas de página](#page-toolbar)
 * [Barra de herramientas Componente](#component-toolbar)
 * Área de contenido
 
 ![interfaz de usuario de creación de comunicación interactiva](assets/form-editor.png)
 
-******A. Barra lateral** B. Barra de herramientas de página **C.** Área de contenido
+**A.** Barra lateral **B.** Barra de herramientas de página **C.** Área de contenido
 
 ## Barra lateral {#sidebar}
 
 ![Barra lateral](assets/sidebar-comps-2.png)
 
-**************A. Explorador de canales** B. Navegador de contenido **C.** Navegador de propiedades **D. Navegador de recursos** E. Navegador de componentes **F. Explorador de fuentes de datos: Modelo de datos** G. Explorador de fuentes de datos: contenido principal
+**A.** Explorador **B de Canal.** Navegador de contenido **C.** Navegador de propiedades **D.** Navegador de recursos **E.** Navegador de componentes **F.** Explorador de fuentes de datos: Modelo de datos **G.** Explorador de fuentes de datos: contenido principal
 
 <!-- Click to enlarge
 
@@ -45,34 +45,34 @@ Al [crear una comunicación](../../forms/using/create-interactive-communication.
 
 La barra lateral incluye lo siguiente:
 
-* **Explorador de canales**
+* **Navegador de Canal**
 
-El navegador de canal le ayuda a cambiar entre los canales de impresión y web de la Comunicación interactiva. Según el canal seleccionado en el navegador de canal, los navegadores, como Contenido y Componentes, muestran las opciones.
+El navegador de Canal le ayuda a cambiar entre los canales de impresión y web de la Comunicación interactiva. En función del canal seleccionado en el navegador de canal, los navegadores, como Contenido y Componentes, muestran las opciones.
 
-* **Navegador** de contenido En el navegador de contenido, puede ver la jerarquía de objetos del documento para el canal seleccionado. El autor puede desplazarse a un componente específico tocando ese elemento en el árbol de objetos del documento. El autor puede buscar objetos en el canal web y reorganizarlos desde este árbol.
+* **Navegador** de contenido En el navegador de contenido, puede ver la jerarquía de objetos del documento para el canal seleccionado. El autor puede desplazarse a un componente específico tocando ese elemento en el árbol de objetos de Documento. El autor puede buscar objetos en el canal web y reorganizarlos desde este árbol.
 
 * **Navegador de propiedades**
 
-   Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Por ejemplo, para ver las propiedades del contenedor de documentos:
-Seleccione un componente, toque ![campo](assets/field-level.png) > Contenedor **de** documento y, a continuación, toque ![cmppr](assets/cmppr.png).
+   Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Por ejemplo, para ver las propiedades del contenedor de documento:
+Seleccione un componente, toque ![campo](assets/field-level.png) > Contenedor **de** Documento y, a continuación, toque ![cmppr](assets/cmppr.png).
 
 * **Navegador** de recursosSegmenta distintos tipos de contenido, como fragmentos de diseño, imágenes, documentos, páginas y vídeos. El autor puede arrastrar y soltar recursos en la comunicación interactiva.
 
-* **Navegador** de componentes Incluye componentes que puede utilizar para generar los canales web e impresos de un documento. Puede arrastrar componentes a la comunicación interactiva para agregar elementos y configurar el elemento agregado según los requisitos. En la tabla siguiente se describen los componentes enumerados en el navegador de componentes para la impresión y los canales Web:
+* **Navegador** de componentes Incluye componentes que se pueden utilizar para generar los canales de impresión y Web de un documento. Puede arrastrar componentes a la comunicación interactiva para agregar elementos y configurar el elemento agregado según los requisitos. En la tabla siguiente se describen los componentes enumerados en el navegador de componentes para impresión y canales web:
 
 | **Componente** | **Canal de impresión** | **Canal web** | **Funcionalidad** |
 |---|---|---|---|
-| Gráfico | ✓ | ✓ | Agrega un gráfico que puede utilizar en una comunicación interactiva para la representación visual de datos bidimensionales recuperados de un elemento de recopilación del modelo de datos de formulario. |
+| Gráfico | ✓ | ✓ | Añade un gráfico que puede utilizar en una comunicación interactiva para la representación visual de datos bidimensionales recuperados de un elemento de recopilación del modelo de datos de formulario. |
 | Fragmento de documento | ✓ | ✓ | Permite agregar un componente, texto, lista o condición reutilizables a una comunicación interactiva. El componente reutilizable que se agrega a una comunicación interactiva puede estar basado en modelos de datos de formulario o sin modelo de datos de formulario. |
 | Imagen | ✓ | ✓ | Permite insertar una imagen. |
 | Panel | - | ✓ | El componente Panel es un marcador de posición para agrupar otros componentes y controla cómo se distribuye un grupo de componentes en una comunicación interactiva. Un componente de panel también permite hacer que un grupo de componentes se pueda repetir para el usuario final, como en varias entradas necesarias para rellenar las credenciales educativas. También es recomendable utilizar un panel para cada ficha de una comunicación interactiva con varias fichas. |
 | Tabla | * | ✓ | Agrega una tabla que le permite organizar los datos en filas y columnas. |
-| Área de destino | ** | ✓ | Inserta un área de destino en un canal web para organizar los componentes específicos del canal web. |
-| Texto | - | ✓ | Agrega texto al canal web de una comunicación interactiva. El texto puede utilizar objetos del modelo de datos de formulario para hacer que el contenido sea dinámico. |
+| Área de destino | ** | ✓ | Inserta un área de destinatario en un canal web para organizar los componentes específicos del canal web. |
+| Texto | - | ✓ | Añade texto al canal web de una comunicación interactiva. El texto puede utilizar objetos del modelo de datos de formulario para hacer que el contenido sea dinámico. |
 
 * Utilice Fragmentos de diseño en el canal Imprimir para agregar tablas.
 
-** En el canal de impresión, las áreas de destino están predefinidas en la plantilla XDP/print. No puede agregar nuevas áreas de destino mediante la interfaz de usuario de creación de Interactive Communication.
+** En el canal de impresión, las áreas de destinatario están predefinidas en la plantilla XDP/print. No puede agregar nuevas áreas de destinatario mediante la interfaz de usuario de creación de Interactive Communication.
 
 * **Fuentes de datos El explorador de fuentes de datos del explorador** muestra los orígenes de datos disponibles en el modelo de datos de formulario seleccionado al crear la comunicación interactiva.
 
@@ -113,22 +113,22 @@ H. **Grupo**: Permite seleccionar varios componentes si desea cortar, copiar o p
 
 I. **Principal**: Permite seleccionar el elemento principal de un componente.
 
-**J.** Ver expresión SOM: Permite ver la expresión [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM del componente.
+J. Expresión SOM **Vista:** Permite la vista de la expresión [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM para el componente.
 
-**K:** Agrupar objetos en el panel: Permite agrupar los componentes en un panel para poder realizar operaciones en dichos componentes simultáneamente. Para obtener más información, consulte Objetos [de grupo en Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576).
+K: **Agrupar objetos en el panel:** Permite agrupar los componentes en un panel para poder realizar operaciones en dichos componentes simultáneamente. Para obtener más información, consulte Objetos [de grupo en Panel](create-interactive-communication.md#groupobjectspanel).
 
-L. **Agregar panel** secundario (solo para paneles): Permite agregar un panel secundario al panel.
+L. **Añadir panel** secundario (solo para paneles): Permite agregar un panel secundario al panel.
 
-M: **Agregar barra de herramientas** del panel (solo para paneles):Permite agregar la barra de herramientas para el componente Panel. A continuación, puede realizar más acciones en la barra de herramientas.
+M: **Añadir barra de herramientas** del panel (solo para paneles):Permite agregar la barra de herramientas para el componente Panel. A continuación, puede realizar más acciones en la barra de herramientas.
 
 Además, la opción **Reemplazar** de la barra de herramientas permite reemplazar el componente existente por un componente alternativo. La opción no está disponible para el componente Panel.
 
-## Page toolbar {#page-toolbar}
+## Barra de herramientas de página {#page-toolbar}
 
-La barra de herramientas Página de la parte superior ofrece opciones que le permiten obtener una vista previa de la comunicación interactiva y cambiar sus propiedades. Puede obtener una vista previa de la comunicación interactiva al crearla y realizar los cambios correspondientes. En la barra de herramientas de la página, verá:
+La barra de herramientas Página de la parte superior ofrece opciones que le permiten realizar previsualizaciones de la comunicación interactiva y cambiar sus propiedades. Puede realizar la previsualización de la comunicación interactiva al crearla y realizar los cambios correspondientes. En la barra de herramientas de la página, verá:
 
 * Alternar panel lateral ![con panel](assets/toggle-side-panel.png)lateral: Permite mostrar u ocultar la barra lateral.
-* Información de la página ![pageInformationad](assets/pageinformationad.png): Permite ver las propiedades de la página.
+* Información de la página ![pageInformationad](assets/pageinformationad.png): Permite la vista de propiedades de página.
 * Regla ![del emulador](assets/ruler.png): Permite emular el aspecto de la comunicación interactiva para diferentes tamaños de pantalla, como tablets y teléfonos.
 * Editar: Permite seleccionar otros modos como: Editar, Estilo, Desarrollador y Diseño.
 
@@ -138,8 +138,8 @@ La barra de herramientas Página de la parte superior ofrece opciones que le per
 
       * Descubra de qué se compone Interactive Communication.
       * Depurar lo que está sucediendo donde y cuando, lo que a su vez ayuda a resolver problemas.
-   * Objetivo: Permite habilitar o deshabilitar componentes personalizados o componentes predeterminados que no aparecen en la barra lateral.
+   * Destinatario: Permite habilitar o deshabilitar componentes personalizados o componentes predeterminados que no aparecen en la barra lateral.
 
 
-* Vista previa: Permite obtener una vista previa del aspecto de la comunicación interactiva al publicarla.
+* Previsualización: Le permite realizar previsualizaciones del aspecto de la comunicación interactiva al publicarla.
 
