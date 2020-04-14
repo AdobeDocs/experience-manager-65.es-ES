@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Para obtener información sobre cómo configurar y utilizar los informes de tran
 
 **Definir patrones de visualización de datos**
 
-Los autores de comunicación interactiva ahora pueden definir patrones [de visualización de](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) datos para campos, variables y elementos del modelo de datos de formulario. Por ejemplo, formatos de fecha, moneda o teléfono.
+Los autores de comunicación interactiva ahora pueden definir patrones [de visualización de](create-interactive-communication.md#datadisplaypatterns) datos para campos, variables y elementos del modelo de datos de formulario. Por ejemplo, formatos de fecha, moneda o teléfono.
 
 **Usar nuevos tipos de gráficos**
 
@@ -44,7 +44,7 @@ Ahora puede [ordenar columnas de una tabla](../../forms/using/create-interactive
 
 **Uso de nuevos componentes en un canal web**
 
-Ahora puede agregar componentes Botón y Separador al canal web. Para obtener más información, consulte [Agregar componente Botón al canal](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) web y componente [Separador en el canal](../../forms/using/create-interactive-communication.md#separatorcomponent)web.
+Ahora puede agregar componentes Botón y Separador al canal web. Para obtener más información, consulte [Añadir el componente Botón en el canal](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) web y el componente [Separador en el canal](../../forms/using/create-interactive-communication.md#separatorcomponent)web.
 
 **Modo de diseño para cambiar el tamaño de los componentes**
 
@@ -52,11 +52,11 @@ Ahora puede cambiar al modo [](../../forms/using/resize-using-layout-mode.md) Di
 
 **Mejoras de uso**
 
-Los autores de comunicación interactiva ahora pueden utilizar varias operaciones fáciles de usar al crear correspondencias. La lista de operaciones incluye:
+Los autores de comunicación interactiva ahora pueden utilizar varias operaciones fáciles de usar al crear correspondencias. La lista de las operaciones incluye:
 
-* [Realizar acciones de deshacer-rehacer en canales web e impresos](../../forms/using/create-interactive-communication.md#undoredoactions)
-* [Adición de variables en un fragmento de documento mediante el símbolo @](../../forms/using/texts-interactive-communications.md#searchvariables)
-* [Adición de elementos del modelo de datos en un fragmento de documento mediante el símbolo @](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
+* [Realizar acciones de deshacer-rehacer en canales de impresión y Web](../../forms/using/create-interactive-communication.md#undoredoactions)
+* [Añadir variables en un fragmento de documento mediante el símbolo @](../../forms/using/texts-interactive-communications.md#searchvariables)
+* [Añadir elementos del modelo de datos en un fragmento de documento mediante el símbolo @](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
 * [Eliminar o agregar un canal web a una comunicación interactiva existente](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
 * [Enlazar elementos de origen de datos con campos y variables mediante acciones de arrastrar y soltar](../../forms/using/create-interactive-communication.md#binddatasourceelements)
 * [Resalte los campos y variables no enlazados durante la creación de Interactive Communication](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
@@ -64,7 +64,7 @@ Los autores de comunicación interactiva ahora pueden utilizar varias operacione
 
 **Mejoras en el proceso de sincronización**
 
-Hay varias mejoras en el diseño de canal Web autogeneradas mediante el canal Imprimir.
+Hay varias mejoras en el diseño de canal web que se generan automáticamente con el canal de impresión.
 
 ![Gráficos interactivos de comunicaciones](assets/interactive-communication-charts.png)
 
@@ -86,13 +86,13 @@ Puede [ordenar cualquier columna de una tabla](../../forms/using/adaptive-forms-
 
 Los formularios adaptables han agregado compatibilidad con la propiedad cq:allowPaths. La propiedad [restringe la disponibilidad de plantillas de formularios adaptables a rutas](../../forms/using/creating-adaptive-form.md#main-pars-text)específicas.
 
-#### Adición dinámica de casillas de verificación al formulario adaptable {#add-check-boxes-to-the-adaptive-form-dynamically}
+#### Añadir casillas de verificación en el formulario adaptable de forma dinámica {#add-check-boxes-to-the-adaptive-form-dynamically}
 
 Ahora puede definir reglas para [agregar casillas de verificación al formulario adaptable dinámicamente](../../forms/using/rule-editor.md#setpropertyrule) basadas en una función personalizada, un objeto de formulario o una propiedad de objeto.
 
 ## Flujos de trabajo de AEM {#aem-workflows}
 
-### Uso de variables en flujos de trabajo de AEM {#use-variables-in-aem-workflows}
+### Uso de variables en Flujos de trabajo AEM {#use-variables-in-aem-workflows}
 
 Las variables permiten que los pasos del flujo de trabajo retengan y pasen metadatos en todos los pasos del flujo de trabajo durante la ejecución. Puede crear diferentes tipos de variables para almacenar diferentes tipos de datos. Por ejemplo, instancias de enteros, cadenas, documentos o modelos de datos de formulario. Normalmente, se utiliza una variable o una colección de variables cuando se necesita tomar una decisión en función del valor que contiene o para almacenar la información que se necesita más adelante en un proceso.
 
@@ -100,15 +100,15 @@ Las variables son una extensión de la interfaz de [MetaDataMap](https://helpx.a
 
 * Almacene, actualice y utilice de forma dinámica los valores almacenados en una variable en todo el flujo de trabajo sin depender del código personalizado
 * Recuperar y actualizar valores directamente en un modelo de datos de formulario y en un archivo de datos (XML/JSON) de un formulario enviado
-* Almacenar documentos completos en una variable para realizar el procesamiento del documento
+* Almacenar documentos completos en una variable para realizar el procesamiento de documentos
 
-El paso Ir a, O Dividir y todos los pasos del flujo de trabajo de AEM Forms admiten variables. Puede utilizar la interfaz MetaDataMap para acceder a variables en los pasos del flujo de trabajo que no tengan una compatibilidad nativa con variables. Para obtener más información, consulte [Variables en flujos de trabajo](../../forms/using/variable-in-aem-workflows.md)de AEM.
+El paso Ir a, O Dividir y todos los pasos del flujo de trabajo de AEM Forms admiten variables. Puede utilizar la interfaz MetaDataMap para acceder a variables en los pasos del flujo de trabajo que no tengan una compatibilidad nativa con variables. Para obtener más información, consulte [Variables en Flujos de trabajo](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 ![Configuración de una variable para en un flujo de trabajo](assets/variable.png)
 
 #### Uso de un flujo de trabajo con distintos formularios adaptables {#use-a-workflow-with-different-adaptive-forms}
 
-Puede [especificar un formulario adaptable para la tarea](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) de asignación y el documento del paso de registro de los flujos de trabajo centrados en el formulario en tiempo de ejecución. Permite que un flujo de trabajo funcione con distintos formularios adaptables. Puede decidir el método para seleccionar un formulario adaptable mientras diseña el flujo de trabajo. El formulario adaptable puede ubicarse en una ruta absoluta, enviarse como carga útil al flujo de trabajo o estar disponible en una ruta calculada mediante una variable.
+Puede [especificar un formulario adaptable para la asignación de la tarea](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) y el documento del paso de registro de flujos de trabajo centrados en el formulario en tiempo de ejecución. Permite que un flujo de trabajo funcione con distintos formularios adaptables. Puede decidir el método para seleccionar un formulario adaptable mientras diseña el flujo de trabajo. El formulario adaptable puede ubicarse en una ruta absoluta, enviarse como carga útil al flujo de trabajo o estar disponible en una ruta calculada mediante una variable.
 
 #### Uso de funciones de registro mejoradas en los pasos del flujo de trabajo centrados en formularios {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
@@ -118,7 +118,7 @@ Las capacidades de registro de los pasos de flujo de trabajo centrados en formul
 
 Ahora puede:
 
-* [Valide los datos](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) de entrada según una lista de restricciones. Ayuda a garantizar que solo se envían datos válidos a la fuente de datos.
+* [Valide los datos](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) de entrada en función de una lista de restricciones. Ayuda a garantizar que solo se envían datos válidos a la fuente de datos.
 * [Omitir el extremo](../../forms/using/configure-data-sources.md#configure-soap-web-services) predeterminado definido en un archivo WSDL (Lenguaje de descripción de servicios Web).
 
 * [Anule el](../../forms/using/configure-data-sources.md#configure-restful-web-services) esquema, host y ruta [base predeterminados](../../forms/using/configure-data-sources.md#configure-restful-web-services) definidos en el archivo de definición Swagger.
@@ -204,7 +204,7 @@ Los formularios AEM se pueden configurar con cualquier combinación de sistemas 
 
 #### Nuevas IU basadas en HTML5 {#new-html-based-uis}
 
-En línea con el EOL planificado de Adobe Flash Player y la dirección general de la migración de contenido basado en Flash a estándares abiertos, AEM 6.5 Forms ha sustituido la IU basada en Flash de Health Monitor, Process Management, Reader Extension y Category Management UI de AEM Forms en la consola de administración JEE con la IU basada en HTML5.
+En línea con el EOL planificado de Adobe Flash Player y la dirección general de la migración de contenido basado en Flash a estándares abiertos, AEM 6.5 Forms ha sustituido la IU basada en Flash de la interfaz de usuario de Health Monitor, Process Management, Reader Extension y Categoría Management de AEM Forms en la consola de administración de JEE con la IU basada en HTML5.
 
 #### Mejoras de seguridad {#security-improvements}
 
