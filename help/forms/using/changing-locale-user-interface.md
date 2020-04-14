@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -48,7 +48,7 @@ La dirección URL predeterminada de CRXDE Lite es `https://'[server]:[port]'/lc/
 
 ## Localización de categorías contraídas, colas y procesos {#localizing-collapsed-categories-queues-and-processes}
 
-El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categorías_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
 
@@ -107,7 +107,7 @@ Siga estos pasos para localizar las imágenes:
 
 ## Localización del selector de fechas {#localizing-date-picker}
 
-Se requiere un paquete de desarrollo para localizar la API de *datepicker* . Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)de espacio de trabajo de AEM Forms.
+Se requiere un paquete de desarrollo para localizar la API de *datepicker* . Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espacio de trabajo de AEM Forms.
 
 1. Descargue y extraiga el paquete [de IU de](https://jqueryui.com/download/all/)jQuery, vaya a *&lt;paquete de IU de jquery extraído>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copie el archivo jquery.ui.datepicker-nw.js para el código de configuración regional ahora en las aplicaciones/ws/js/libs/jqueryui y realice cambios específicos de configuración regional en el archivo.
