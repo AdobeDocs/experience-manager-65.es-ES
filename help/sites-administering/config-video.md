@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -82,11 +82,11 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
    >[!NOTE]
    >
-   >Superponga y edite todo el nodo de perfil y no solo la propiedad que necesita modificación. Estos recursos no se resuelven mediante SlingResourceMerger.
+   >Superponga y edite todo el nodo de perfil y no sólo la propiedad que necesita modificación. Estos recursos no se resuelven mediante SlingResourceMerger.
 
 1. If you changed either of the properties, click **[!UICONTROL Save All]**.
 
 >[!NOTE]
 >
->Los modelos de flujo de trabajo de OOTB no se conservan al actualizar la instancia de AEM. Adobe recomienda copiar modelos de flujo de trabajo de OOTB antes de editarlos. Por ejemplo, copie el modelo de activos de actualización de DAM de OOTB antes de editar el paso de transcodificación de FFmpeg en el modelo de recursos de actualización de DAM para elegir los nombres de perfil de vídeo que existían antes de la actualización. A continuación, puede superponer el `/apps` nodo para permitir que AEM recupere los cambios personalizados del modelo OOTB.
+>Los modelos de flujo de trabajo de OOTB no se conservan al actualizar la instancia de AEM. Adobe recomienda copiar modelos de flujo de trabajo de OOTB antes de editarlos. Por ejemplo, copie el modelo [!UICONTROL DAM Update Asset] OOTB antes de editar el paso Transcodificación FFmpeg en el modelo [!UICONTROL DAM Update Asset] para elegir los nombres de perfiles de vídeo que existían antes de la actualización. A continuación, puede superponer el `/apps` nodo para permitir que AEM recupere los cambios personalizados del modelo OOTB.
 
