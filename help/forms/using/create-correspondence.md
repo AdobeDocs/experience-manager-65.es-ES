@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -83,7 +83,7 @@ En la ficha de contenido, administre el contenido como fragmentos de documento y
 
    En la ficha Contenido o Datos, al tocar Resaltar módulos seleccionados ( ![resaltado, selectedmodulos incontentcr](assets/highlightselectedmodulesincontentccr.png)) en la parte superior izquierda de la previsualización de letras HTML, puede desactivar o habilitar la funcionalidad para ir al módulo de contenido/datos cuando el texto, párrafo o campo de datos relevante esté seleccionado en la previsualización de letras.
 
-   Para obtener más información sobre las acciones disponibles para varios módulos en la interfaz de usuario Crear correspondencia, consulte [Acciones e información disponible en la interfaz](../../forms/using/create-letter.md#main-pars-header-9)de usuario Crear correspondencia.
+   Para obtener más información sobre las acciones disponibles para varios módulos en la interfaz de usuario Crear correspondencia, consulte [Acciones e información disponible en la interfaz](#actions-and-info-available-in-the-create-correspondence-content-tab)de usuario Crear correspondencia.
 
 1. Para localizar módulos de contenido, utilice el campo Buscar. Escriba el nombre o título completo o parcial del módulo de contenido para buscarlo en la correspondencia.
 1. Toque el icono Mostrar ( ![mostrar](assets/display.png)) delante de una lista, texto, condición o área de destinatario para mostrarlo u ocultarlo en la letra.
@@ -230,7 +230,7 @@ Puede realizar cambios en el diseño y en el contenido para asegurarse de que la
 
    Al tocar Resaltar los módulos seleccionados en el contenido ( ![resaltado, seleccionar módulos, incontencicr](assets/highlightselectedmodulesincontentccr.png)), puede desactivar o habilitar la funcionalidad para resaltar el módulo de contenido en la ficha Contenido cuando se toca el texto, el párrafo o el campo de datos correspondiente en la previsualización de letras.
 
-   Para obtener más información sobre las acciones disponibles para varios módulos en la interfaz de usuario Crear correspondencia, consulte [Acciones e información disponible en la interfaz](../../forms/using/create-letter.md#main-pars-header-9)de usuario Crear correspondencia.
+   Para obtener más información sobre las acciones disponibles para varios módulos en la interfaz de usuario Crear correspondencia, consulte [Acciones e información disponible en la interfaz](#actions-and-info-available-in-the-create-correspondence-content-tab)de usuario Crear correspondencia.
 
 1. Para agregar un salto de página a la letra, toque donde desee insertar un salto de página y seleccione Salto de página antes o Salto de página después de ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
@@ -246,7 +246,7 @@ Puede realizar cambios en el diseño y en el contenido para asegurarse de que la
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   El cuadro de diálogo Nombre de la letra provisional aparece con la identificación de la instancia de la letra. Opcionalmente, puede editar este ID. Anote el Id de la letra y toque **Listo**. Posteriormente, puede utilizar este ID para [volver a cargar el borrador de la letra](../../forms/using/submit-letter-topostprocess.md#main-pars-header-1).
+   El cuadro de diálogo Nombre de la letra provisional aparece con la identificación de la instancia de la letra. Opcionalmente, puede editar este ID. Anote el Id de la letra y toque **Listo**. Posteriormente, puede utilizar este ID para [volver a cargar el borrador de la letra](submit-letter-topostprocess.md#reloaddraft).
 
 1. Para previsualización de la carta como un PDF acoplado con la presentación exacta y los saltos de página a medida que se vaya enviando, toque la Previsualización ( ![previsualización](assets/preview.png)).
 
@@ -321,7 +321,7 @@ Esta opción existe para las personas que tienen problemas con el almacenamiento
 
 ## Modos de representación de la previsualización de letras: previsualización de formularios móviles y previsualización PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-La administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la reversión a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre el cambio entre el modo de previsualización HTML y PDF, consulte [Cambio del modo de letra](#changerenditionmode)de representación.
+La administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la revertir a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre el cambio entre el modo de previsualización HTML y PDF, consulte [Cambio del modo de letra](#changerenditionmode)de representación.
 
 A continuación se describen las ventajas y la funcionalidad disponibles en la previsualización de HTML y PDF.
 
