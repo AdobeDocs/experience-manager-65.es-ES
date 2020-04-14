@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -19,7 +19,7 @@ Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágen
 
 >[!NOTE]
 >
->* Compartir una carpeta de recursos del tipo `sling:OrderedFolder`, no se admite al compartir en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
+>* No se puede compartir una carpeta de recursos del tipo `sling:OrderedFolder` al compartirla en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
 >* Experience Manager no permite usar `subassets` palabras como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subrecursos para los recursos compuestos.
 
 
@@ -56,13 +56,13 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
    * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario de Recursos. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
-   ![crear opción en aem](assets/create-options.png)
+   ![Opción Crear para cargar recursos](assets/create-options.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
    Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Puntee en el icono **[!UICONTROL Pausa]** situado junto a la barra de progreso que aparece cuando se produce un inicio de carga.
 
-   ![chlimage_1-211](assets/chlimage_1-5.png)
+   ![Barra de progreso de carga de recursos](assets/chlimage_1-5.png)
 
    Se puede configurar el tamaño por encima del cual un recurso se considera un recurso grande. Por ejemplo, puede configurar el sistema para que considere los recursos superiores a 1000 MB (en lugar de 500 MB) como recursos grandes. En este caso, **[!UICONTROL Pausa]** aparece en la barra de progreso cuando se cargan recursos de tamaño bueno superior a 1000 MB.
 
@@ -72,7 +72,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Al hacer clic en el icono **[!UICONTROL Pausa]** , se desplaza al icono **[!UICONTROL Reproducir]** . Para reanudar la carga, haga clic en el icono **[!UICONTROL Reproducir]** .
 
-   ![chlimage_1-212](assets/chlimage_1-6.png)
+   ![Reanudar la carga de recursos en pausa mediante el icono Reproducir](assets/chlimage_1-6.png)
 
    Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, AEM Assets elimina la parte parcialmente cargada del recurso.
 
@@ -86,7 +86,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Puede elegir reemplazar un recurso existente, crear otra versión o mantener ambos cambiando el nombre del nuevo recurso que se carga. Si sustituye un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, realizar anotaciones o recortes) que haya realizado en el recurso existente. Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso por el número `1` que se añadirá al nombre.
 
-   ![chlimage_1-213](assets/chlimage_1-7.png)
+   ![Cuadro de diálogo de conflicto de nombres para resolver conflictos de nombres de recursos](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
    >
    >El cuadro de diálogo [!UICONTROL Duplicados detectados] solo aparece cuando la función de detección de duplicados está activada. Para habilitar la función de detección de duplicado, consulte [Activar detección](/help/assets/duplicate-detection.md)de Duplicado.
 
-   ![chlimage_1-214](assets/chlimage_1-8.png)
+   ![Cuadro de diálogo Recurso Duplicado detectado](assets/chlimage_1-8.png)
 
    Para conservar el recurso de duplicado en Recursos AEM, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
 
@@ -112,7 +112,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    * el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
    * el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-   ![chlimage_1-215](assets/chlimage_1-10.png)
+   ![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/chlimage_1-10.png)
 
    Además, la interfaz de usuario de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero.
 
