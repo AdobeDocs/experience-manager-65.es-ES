@@ -1,5 +1,5 @@
 ---
-title: El vídeo
+title: Vídeo
 seo-title: Vídeo
 description: Assets proporciona un sistema de administración de recursos de vídeo centralizada en que puede cargar vídeos directamente en Assets para autocodificarlos en Scene7 y acceder directamente a los vídeos de Scene7 desde Assets para la creación de páginas.
 seo-description: Assets proporciona un sistema de administración de recursos de vídeo centralizada en que puede cargar vídeos directamente en Assets para autocodificarlos en Scene7 y acceder directamente a los vídeos de Scene7 desde Assets para la creación de páginas.
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,14 +26,14 @@ La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo
 
 ## Acerca de FFMPEG y Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-El proceso de codificación de vídeo predeterminado se basa en el uso de la integración basada en FFMPEG con los perfiles de vídeo. Por tanto, el flujo de trabajo de Actualizar recurso de DAM listo para usar contiene los dos pasos siguientes de flujo de trabajo basados en FFMPEG:
+El proceso de codificación de vídeo predeterminado se basa en el uso de la integración basada en FFMPEG con los perfiles de vídeo. Therefore, the out-of-the-box [!UICONTROL DAM Update Asset] workflow contains the following two ffmpeg-based workflow steps:
 
 * Miniaturas de FFMPEG
 * Codificación de FFMPEG
 
-Tenga en cuenta que al habilitar y configurar la integración de Dynamic Media Classic no se eliminan ni se desactivan automáticamente estos dos pasos del flujo de trabajo de inserción de recursos de actualización de DAM incorporado. Si ya utiliza codificación de vídeo basada en FFMPEG en AEM, es probable que tenga FFMPEG instalado en sus entornos de creación. En este caso, un nuevo vídeo ingestado con Recursos se codificaría dos veces: una vez desde el codificador FFMPEG y otra desde la integración de Dynamic Media Classic.
+Be aware that enabling and configuring the Dynamic Media Classic integration does not automatically remove or deactivate these two workflow steps from the out-of-the-box [!UICONTROL DAM Update Asset] ingestion workflow. Si ya utiliza codificación de vídeo basada en FFMPEG en AEM, es probable que tenga FFMPEG instalado en sus entornos de creación. En este caso, un nuevo vídeo ingestado con Recursos se codificaría dos veces: una vez desde el codificador FFMPEG y otra desde la integración de Dynamic Media Classic.
 
-Si tiene la codificación de vídeo basada en FFMPEG configurada en AEM y FFMPEG instalado, Adobe recomienda quitar los dos flujos de trabajo de FFMPEG de los flujos de trabajo de Actualizar recurso de DAM.
+If you have the FFMPEG-based video encoding in AEM configured and FFMPEG installed, Adobe recommends that you remove the two FFMPEG workflows from your [!UICONTROL DAM Update Asset] workflows.
 
 ### Formatos admitidos {#supported-formats}
 
@@ -86,7 +86,7 @@ Si no necesita un flujo de trabajo o una versión para los recursos, debe cargar
    >
    >Adobe recomienda que seleccione ambos conjuntos de vídeos adaptables al configurar los ajustes preestablecidos universales o que seleccione la opción **[!UICONTROL Codificación de vídeo adaptable]**.
 
-1. Los perfiles de codificación seleccionados se aplican automáticamente a todos los vídeos cargados en la carpeta de destino de CQ DAM configurada para esta configuración de nube de Dynamic Media Classic. Puede configurar varias configuraciones de nube de Dynamic Media Classic con distintas carpetas de destino para aplicar distintos perfiles de codificación según sea necesario.
+1. Los perfiles de codificación seleccionados se aplican automáticamente a todos los vídeos cargados en la carpeta de destinatario CQ DAM que configure para esta configuración de nube de Dynamic Media Classic. Puede configurar varias configuraciones de nube de Dynamic Media Classic con diferentes carpetas de destinatario para aplicar diferentes perfiles de codificación según sea necesario.
 
 ### Actualizar los ajustes preestablecidos del visor y de codificación {#updating-viewer-and-encoding-presets}
 
@@ -98,7 +98,7 @@ If you need to update the viewer and encoding presets for video in AEM because t
 
 Para cargar el vídeo principal en Dynamic Media Classic desde Adobe DAM:
 
-1. Vaya a la carpeta de destino de CQ DAM donde ha configurado la configuración de nube con perfiles de codificación de Dynamic Media Classic.
+1. Vaya a la carpeta de destinatario de CQ DAM donde ha configurado la configuración de la nube con perfiles de codificación de Dynamic Media Classic.
 1. Haga clic en **[!UICONTROL Cargar]** para cargar el vídeo maestro. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Dynamic Media Classic]** has a checkmark.
 
    >[!NOTE]
@@ -142,14 +142,14 @@ En la tabla siguiente se proporciona una comparación de alto nivel de capacidad
 
 #### Creación de perfiles de vídeo {#creating-video-profiles}
 
-Las distintas codificaciones de vídeo se crean según los ajustes preestablecidos de codificación de Dynamic Media Classic seleccionados en la configuración de nube de Dynamic Media Classic. Para que el componente de vídeo de base pueda utilizarlos, se debe crear un perfil de vídeo para cada ajuste preestablecido de codificación de Dynamic Media Classic seleccionado. Esto permite que el componente de vídeo seleccione las representaciones de DAM según corresponda.
+Las distintas codificaciones de vídeo se crean según los ajustes preestablecidos de codificación de Dynamic Media Classic seleccionados en la configuración de nube de Dynamic Media Classic. Para que el componente de vídeo básico pueda utilizarlos, se debe crear un perfil de vídeo para cada ajuste preestablecido de codificación de Dynamic Media Classic seleccionado. Esto permite que el componente de vídeo seleccione las representaciones de DAM según corresponda.
 
 >[!NOTE]
 >
 >Los perfiles de vídeo nuevos, así como los cambios que se realicen en ellos, deben activarse para publicarse.
 
 1. En AEM, vaya a **[!UICONTROL Herramientas]** y seleccione **[!UICONTROL Consola de configuración]**. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Cree un nuevo perfil de vídeo de Dynamic Media Classic. **[!UICONTROL En el]** Nuevo... , seleccione **[!UICONTROL Crear página]** y, a continuación, la plantilla Perfil de vídeo de Dynamic Media Classic. Asigne un nombre a la página nueva del perfil de vídeo y haga clic en **[!UICONTROL Crear]**.
+1. Cree un nuevo Perfil de vídeo de Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Asigne un nombre a la página nueva del perfil de vídeo y haga clic en **[!UICONTROL Crear]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -177,7 +177,7 @@ El componente de vídeo base debe saber qué perfiles de vídeo se van a utiliza
 >
 >Los cambios realizados en el diseño requieren la activación del diseño para que surtan efecto en la publicación.
 
-1. Abra el cuadro de diálogo de diseño del componente de vídeo base y cambie a la pestaña **[!UICONTROL Perfiles]**. A continuación, elimine los perfiles predeterminados y agregue los nuevos perfiles de vídeo de Dynamic Media Classic. El orden de la lista de perfiles en el cuadro de diálogo de diseño también define el orden del elemento de orígenes de vídeo al realizar el procesamiento.
+1. Abra el cuadro de diálogo de diseño del componente de vídeo base y cambie a la pestaña **[!UICONTROL Perfiles]**. A continuación, elimine los perfiles listos para usar y agregue los nuevos perfiles de vídeo de Dynamic Media Classic. El orden de la lista de perfil en el cuadro de diálogo de diseño también define el orden del elemento de orígenes de vídeo al realizar el procesamiento.
 1. Para los navegadores que no admiten HTML5, el componente de vídeo permite configurar una alternativa flash. Abra el cuadro de diálogo de diseño de los componentes de vídeo y cambie a la pestaña **[!UICONTROL Flash]**. Configure las opciones de configuración de Flash Player y asigne un perfil alternativo para Flash Player.
 
 #### Lista de comprobación {#checklist}
