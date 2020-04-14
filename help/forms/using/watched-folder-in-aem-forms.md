@@ -10,14 +10,14 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
 
 # Carpeta vigilada en AEM Forms{#watched-folder-in-aem-forms}
 
-Un administrador puede configurar una carpeta de red, conocida como carpeta vigilada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie una operación de flujo de trabajo, servicio o secuencia de comandos preconfigurada para procesar el archivo agregado. Una vez que el servicio realiza la operación especificada, guarda el archivo de resultados en una carpeta de salida especificada. Para obtener más información sobre el flujo de trabajo, el servicio y la secuencia de comandos, consulte [Varios métodos para procesar archivos](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
+Un administrador puede configurar una carpeta de red, conocida como carpeta vigilada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie una operación de flujo de trabajo, servicio o secuencia de comandos preconfigurada para procesar el archivo agregado. Una vez que el servicio realiza la operación especificada, guarda el archivo de resultados en una carpeta de salida especificada. Para obtener más información sobre el flujo de trabajo, el servicio y la secuencia de comandos, consulte [Varios métodos para procesar archivos](#variousmethodsforprocessingfiles).
 
 ## Crear una carpeta vigilada {#create-a-watched-folder}
 
@@ -25,7 +25,7 @@ Puede utilizar uno de los siguientes métodos para crear una carpeta vigilada en
 
 * Mientras configura las propiedades de un nodo de configuración Carpeta vigilada, escriba la ruta completa del directorio principal en la propiedad folderPath y anexe el nombre de la Carpeta vigilada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`La `MyWatchedFolder`carpeta no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
 
-* Cree una carpeta en el sistema de archivos antes de configurar un extremo de Carpeta vigilada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte Propiedades [de carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+* Cree una carpeta en el sistema de archivos antes de configurar un extremo de Carpeta vigilada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte Propiedades [de carpeta vigilada](#watchedfolderproperties).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Para configurar una carpeta vigilada, cree un nodo de configuración Carpeta vig
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   Para obtener una lista completa de las propiedades admitidas, consulte Propiedades de la carpeta [vigilada](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   Para obtener una lista completa de las propiedades admitidas, consulte Propiedades de la carpeta [vigilada](#watchedfolderproperties).
 
 1. Haga clic en **Guardar todo**. Después de crear el nodo y guardar las propiedades. Las `input`, `result`, `failure`, `preserve`y `stage`carpetas se crean en la ruta especificada en la `folderPath` propiedad.
 
@@ -662,5 +662,5 @@ inputProcessorType (String): Tipo de proceso que se va a inicio. En este tutoria
    * inputProcessorId (String): El comportamiento de la propiedad inputProcessorId se basa en el valor especificado para la propiedad inputProcessorType. En este ejemplo, el valor de la propiedad inputProcessorType es workflow. Por lo tanto, para la propiedad inputProcessorId, especifique la siguiente ruta del flujo de trabajo del PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivos. Si se especifica un patrón de carpetas, los archivos de salida tienen nombres como se describe en flujos de trabajo. Si se especifica un patrón de archivos, los archivos de salida tienen nombres como se describe en el patrón de archivos.
-   Aparte de las propiedades obligatorias mencionadas anteriormente, las carpetas vigiladas también admiten algunas propiedades opcionales. Para obtener una lista y una descripción completas de las propiedades opcionales, consulte Propiedades de la carpeta [vigilada](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   Aparte de las propiedades obligatorias mencionadas anteriormente, las carpetas vigiladas también admiten algunas propiedades opcionales. Para obtener una lista y una descripción completas de las propiedades opcionales, consulte Propiedades de la carpeta [vigilada](#watchedfolderproperties).
 
