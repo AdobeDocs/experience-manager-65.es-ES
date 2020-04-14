@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -25,21 +25,21 @@ source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
 >
 >Además, puede revisar un artículo de la Base de conocimiento sobre sugerencias de ajuste de [rendimiento.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
-Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes. Aunque este valor variará para cada solicitud, se puede definir un valor de objetivo promedio. Una vez que se ha demostrado que este valor es alcanzable y sostenible, puede utilizarse para monitorear el rendimiento del sitio web e indicar el desarrollo de posibles problemas.
+Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de visitante. Aunque este valor variará para cada solicitud, se puede definir un valor de destinatario promedio. Una vez que se ha demostrado que este valor es alcanzable y sostenible, puede utilizarse para monitorear el rendimiento del sitio web e indicar el desarrollo de posibles problemas.
 
-Los tiempos de respuesta que perseguirá serán diferentes en los entornos de creación y publicación, lo que refleja las diferentes características de la audiencia de destino:
+Los tiempos de respuesta que va a buscar serán diferentes en los entornos de creación y publicación, lo que refleja las diferentes características de la audiencia de destinatario:
 
 ## Entorno de creación {#author-environment}
 
-Los autores que introducen y actualizan contenido utilizan este entorno. Debe atender a un pequeño número de usuarios, cada uno de los cuales genera un gran número de solicitudes de rendimiento al actualizar las páginas de contenido y los elementos individuales de esas páginas.
+Este entorno lo utilizan los autores que introducen y actualizan contenido. Debe atender a un pequeño número de usuarios, cada uno de los cuales genera un gran número de solicitudes de rendimiento al actualizar las páginas de contenido y los elementos individuales de esas páginas.
 
 ## Entorno de publicación {#publish-environment}
 
-Este entorno contiene contenido que pone a disposición de los usuarios. En este caso, el número de solicitudes es aún mayor y la velocidad es igualmente vital, pero dado que la naturaleza de las solicitudes es menos dinámica, se pueden aplicar mecanismos adicionales de mejora del rendimiento; como almacenar en caché el contenido o el equilibrio de carga.
+Este entorno contiene contenido que puede poner a disposición de los usuarios. En este caso, el número de solicitudes es incluso bueno y la velocidad es igualmente vital, pero dado que la naturaleza de las solicitudes es menos dinámica, se pueden aplicar mecanismos adicionales de mejora del rendimiento; como almacenar en caché el contenido o el equilibrio de carga.
 
 >[!NOTE]
 >
->* Después de configurar la optimización del rendimiento, siga los procedimientos en [Días](/help/sites-developing/tough-day.md) difíciles para probar el entorno con una carga pesada.
+>* Después de configurar para la optimización del rendimiento, siga los procedimientos en Día [](/help/sites-developing/tough-day.md) duro para probar el entorno con una carga pesada.
 >* Consulte también Consejos [de ajuste de](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)rendimiento.
 >
 
@@ -47,7 +47,7 @@ Este entorno contiene contenido que pone a disposición de los usuarios. En este
 
 ## Metodología de optimización del rendimiento {#performance-optimization-methodology}
 
-Una metodología de optimización del rendimiento para proyectos de CQ se puede resumir en cinco reglas muy sencillas que se pueden seguir para evitar problemas de rendimiento desde el principio:
+Una metodología de optimización del rendimiento para proyectos de CQ se puede resumir en cinco reglas muy sencillas que se pueden seguir para evitar problemas de rendimiento del inicio:
 
 1. [Planificación para la optimización](#planning-for-optimization)
 1. [Simular realidad](#simulate-reality)
@@ -63,11 +63,11 @@ Estas reglas, en gran medida, se aplican a los proyectos Web en general y son pe
 
 Alrededor del 10% del esfuerzo del proyecto debe planificarse para la fase de optimización del rendimiento. Por supuesto, los requisitos reales de optimización del rendimiento dependerán del nivel de complejidad de un proyecto y de la experiencia del equipo de desarrollo. Si bien el proyecto puede (en última instancia) no requerir todo el tiempo asignado, es recomendable planificar siempre la optimización del rendimiento en la región sugerida.
 
-Siempre que sea posible, un proyecto debe ser lanzado en forma suave a una audiencia limitada para reunir experiencia en la vida real y realizar optimizaciones adicionales, sin la presión adicional que sigue a un anuncio completo.
+Siempre que sea posible, un proyecto debe lanzarse en forma suave a una audiencia limitada para reunir experiencia en la vida real y realizar más optimizaciones, sin la presión adicional que sigue a un anuncio completo.
 
 Una vez que esté &quot;activo&quot;, la optimización del rendimiento no finaliza. Este es el momento en el que experimenta la carga &quot;real&quot; en su sistema. Es importante planificar ajustes adicionales después del lanzamiento.
 
-Dado que la carga del sistema cambia y que los perfiles de rendimiento del sistema cambian con el paso del tiempo, se debe programar una &quot;optimización&quot; o &quot;comprobación de estado&quot; del rendimiento a intervalos de 6 a 12 meses.
+Dado que la carga del sistema cambia y que los perfiles de rendimiento del sistema cambian con el tiempo, se debe programar una &quot;optimización&quot; o &quot;comprobación de estado&quot; del rendimiento a intervalos de 6 a 12 meses.
 
 ### Simular realidad {#simulate-reality}
 
@@ -95,7 +95,7 @@ Es importante optimizar un cuello de botella a la vez. Si intenta hacer cosas en
 
 ![climage_1-7](assets/chlimage_1-7.jpeg)
 
-El ajuste del rendimiento es un proceso iterativo que implica, medir, analizar, optimizar y validar hasta que se alcance el objetivo. Para tener debidamente en cuenta este aspecto, implemente un proceso de validación ágil en la fase de optimización en lugar de un proceso de prueba más pesado después de cada iteración.
+El ajuste del rendimiento es un proceso iterativo que implica, mide, análisis, optimización y validación hasta que se alcance el objetivo. Para tener debidamente en cuenta este aspecto, implemente un proceso de validación ágil en la fase de optimización en lugar de un proceso de prueba de peso más intenso después de cada iteración.
 
 Esto significa en gran medida que el desarrollador que implementa la optimización debe tener una manera rápida de saber si la optimización ya ha alcanzado el objetivo. Esta información es valiosa, ya que cuando se alcanza el objetivo, la optimización finaliza.
 
@@ -111,7 +111,7 @@ En general, mantenga las solicitudes HTML sin almacenar en caché a menos de 100
 
 Los números anteriores asumen las siguientes condiciones:
 
-* medidas en la publicación (sin gastos generales relacionados con un entorno de creación)
+* medido en la publicación (sin gastos generales relacionados con un entorno de creación)
 * medida en el servidor (sin sobrecarga de red)
 * no almacenado en caché (sin caché de salida CQ, sin caché de Dispatcher)
 * solo para elementos complejos con muchas dependencias (HTML, JS, PDF, ...)
@@ -120,7 +120,7 @@ Los números anteriores asumen las siguientes condiciones:
 Hay una serie de problemas que con frecuencia contribuyen a los problemas de rendimiento. Estos giran principalmente en torno a:
 
 * ineficiencia en la caché del despachante
-* el uso de consultas en plantillas de visualización normales.
+* el uso de consultas en las plantillas de visualización normales.
 
 El ajuste de nivel de JVM y SO no suele dar lugar a grandes saltos en el rendimiento y, por lo tanto, debe realizarse al final del ciclo de optimización.
 
@@ -163,7 +163,7 @@ Para obtener información sobre cómo realizar la supervisión del rendimiento, 
 
 Los problemas que causan problemas de rendimiento suelen ser difíciles de rastrear, incluso cuando sus efectos son fáciles de ver.
 
-Un punto de partida básico es un buen conocimiento de su sistema cuando funciona de la manera normal. A menos que sepa cómo se &quot;ve&quot; y &quot;se comporta&quot; su entorno cuando su rendimiento es correcto, puede resultar difícil localizar el problema cuando el rendimiento se deteriore. Esto significa que debe dedicar algún tiempo a investigar el sistema cuando se está ejecutando sin problemas y asegurarse de que la recopilación de información de rendimiento es una tarea constante. Esto le proporcionará una base para la comparación en caso de que el rendimiento sufra.
+Un punto de partida básico es un buen conocimiento de su sistema cuando funciona de la manera normal. A menos que sepa cómo se &quot;ve&quot; y &quot;se comporta&quot; su entorno cuando se desempeña correctamente, puede resultar difícil localizar el problema cuando se deteriora el rendimiento. Esto significa que debe dedicar algún tiempo a investigar el sistema cuando se está ejecutando sin problemas y asegurarse de que la recopilación de información de rendimiento es una tarea constante. Esto le proporcionará una base para la comparación en caso de que el rendimiento sufra.
 
 El diagrama siguiente ilustra la ruta que puede tomar una solicitud de contenido de CQ y, por lo tanto, el número de diferentes elementos que pueden afectar al rendimiento.
 
@@ -214,27 +214,27 @@ A partir de AEM 6.0, Adobe Experience Manager utiliza una arquitectura de reposi
 
 Puede encontrar la información de indexación actualizada aquí:
 
-* [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
+* [Prácticas recomendadas para Consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [Consultas e indexación](/help/sites-deploying/queries-and-indexing.md)
 
 ### Procesamiento de flujo de trabajo simultáneo {#concurrent-workflow-processing}
 
-Limite el número de procesos de flujo de trabajo que se ejecutan simultáneamente para mejorar el rendimiento. De forma predeterminada, el motor de flujo de trabajo procesa tantos flujos de trabajo en paralelo como procesadores disponibles para la VM de Java. Cuando los pasos del flujo de trabajo requieren grandes cantidades de recursos de procesamiento (RAM o CPU), la ejecución de varios de estos flujos de trabajo en paralelo puede generar grandes demandas en los recursos disponibles del servidor.
+Limite el número de procesos de flujo de trabajo que se ejecutan simultáneamente para mejorar el rendimiento. De forma predeterminada, el motor de flujos de trabajo procesa tantos flujos de trabajo en paralelo como hay procesadores disponibles para la VM de Java. Cuando los pasos del flujo de trabajo requieren grandes cantidades de recursos de procesamiento (RAM o CPU), la ejecución de varios de estos flujos de trabajo en paralelo puede generar grandes demandas en los recursos disponibles del servidor.
 
 Por ejemplo, cuando se cargan imágenes (o recursos DAM en general), los flujos de trabajo importan automáticamente las imágenes a DAM. Las imágenes suelen ser de alta resolución y pueden consumir fácilmente cientos de MB de pila para su procesamiento. La administración de estas imágenes en paralelo coloca una carga alta en el subsistema de memoria y en el recolector de elementos no utilizados.
 
-El motor de flujo de trabajo utiliza colas de trabajos de Apache Sling para gestionar y programar el procesamiento de elementos de trabajo. Los siguientes servicios de cola de trabajos se han creado de forma predeterminada desde la fábrica del servicio de configuración de cola de trabajos de Apache Sling para procesar los trabajos de flujo de trabajo:
+El motor de flujos de trabajo utiliza colas de trabajos de Apache Sling para gestionar y programar el procesamiento de elementos de trabajo. Los siguientes servicios de cola de trabajos se han creado de forma predeterminada desde la fábrica del servicio de configuración de cola de trabajos de Apache Sling para procesar los trabajos de flujo de trabajo:
 
 * Cola de flujo de trabajo de granito: La mayoría de los pasos del flujo de trabajo, como los que procesan recursos DAM, utilizan el servicio de cola de flujo de trabajo de Granite.
-* Cola de trabajos de proceso externo de Granite Workflow: Este servicio se utiliza para pasos especiales del flujo de trabajo externo que se utilizan normalmente para contactar con un sistema externo y realizar encuestas para obtener resultados. Por ejemplo, el paso Proceso de extracción de medios de InDesign se implementa como un proceso externo. El motor de flujo de trabajo utiliza la cola externa para procesar la encuesta. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)).
+* Cola de trabajos de proceso externo de Granite Workflow: Este servicio se utiliza para pasos especiales del flujo de trabajo externo que se utilizan normalmente para comunicarse con un sistema externo y realizar encuestas para obtener resultados. Por ejemplo, el paso Proceso de Extracción de medios de InDesign se implementa como un proceso externo. El motor de flujos de trabajo utiliza la cola externa para procesar la encuesta. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)).
 
 Configure estos servicios para limitar el número máximo de procesos de flujo de trabajo que se ejecutan simultáneamente.
 
-**** Nota: La configuración de estas colas de trabajos afecta a todos los flujos de trabajo a menos que haya creado una cola de trabajos para un modelo de flujo de trabajo específico (consulte [Configuración de la cola para un modelo](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) de flujo de trabajo específico más abajo).
+**Nota:** La configuración de estas colas de trabajos afecta a todos los flujos de trabajo a menos que haya creado una cola de trabajos para un modelo de flujo de trabajo específico (consulte [Configuración de la cola para un modelo](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) de flujo de trabajo específico más abajo).
 
 **Configuración en el repositorio**
 
-Si está configurando los servicios [mediante un nodo](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)sling:OsgiConfig, debe buscar el PID de los servicios existentes, por ejemplo: org.apache.sling.event.job.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Puede descubrir el PID mediante la consola web.
+Si está configurando los servicios [mediante un nodo](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)sling:OsgiConfig, debe buscar el PID de los servicios existentes, por ejemplo: org.apache.sling.evento.job.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Puede descubrir el PID mediante la consola web.
 
 Debe configurar la propiedad denominada queue.maxparalelo.
 
@@ -253,15 +253,15 @@ Cuando se ejecutan los modelos de flujo de trabajo, crean trabajos de Sling para
 * com/adobe/granite/workflow/job&amp;ast;
 * com/adobe/granite/workflow/external/job&amp;ast;
 
-Los temas de trabajo reales que generan los modelos de flujo de trabajo incluyen el sufijo específico del modelo. Por ejemplo, el modelo de flujo de trabajo de recursos de actualización de DAM genera trabajos con el tema siguiente:
+Los temas de trabajo reales que generan los modelos de flujo de trabajo incluyen el sufijo específico del modelo. Por ejemplo, el modelo de flujo de trabajo de recursos [!UICONTROL de actualización de] DAM genera trabajos con el siguiente tema:
 
 com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
 
 Por lo tanto, puede crear una cola de trabajos para el tema que coincida con los temas del trabajo del modelo de flujo de trabajo. La configuración de las propiedades relacionadas con el rendimiento de la cola afecta únicamente al modelo de flujo de trabajo que genera los trabajos que coinciden con el tema de la cola.
 
-El siguiente procedimiento crea una cola de trabajos para un flujo de trabajo, utilizando como ejemplo el flujo de trabajo de recursos de actualización de DAM.
+El siguiente procedimiento crea una cola de trabajos para un flujo de trabajo, utilizando como ejemplo el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM.
 
-1. Ejecute el modelo de flujo de trabajo para el que desea crear la cola de trabajos, de modo que se generen estadísticas de temas. Por ejemplo, agregue una imagen a Recursos para ejecutar el flujo de trabajo de recursos de actualización de DAM.
+1. Ejecute el modelo de flujo de trabajo para el que desea crear la cola de trabajos, de modo que se generen estadísticas de temas. Por ejemplo, agregue una imagen a Recursos para ejecutar el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM.
 1. Abra la consola Trabajos de Sling. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
 1. Descubra los temas relacionados con el flujo de trabajo en la consola. Para DAM Update Asset, se encuentran los siguientes temas:
 
@@ -283,17 +283,17 @@ Esto se realiza [configurando el servicio](/help/sites-deploying/configuring-osg
 
 La implementación de varias instancias de DAM puede ayudar al rendimiento cuando, por ejemplo:
 
-* tiene una carga alta debido a la carga regular de un gran número de recursos para el entorno de creación; aquí se puede dedicar una instancia de DAM independiente a la prestación de servicios al autor.
+* tiene una carga elevada debido a la carga regular de un gran número de recursos para el entorno de creación; aquí se puede dedicar una instancia de DAM independiente a la prestación de servicios al autor.
 * tiene varios equipos en ubicaciones mundiales (por ejemplo, EE.UU., Europa, Asia).
 
 Otras consideraciones son:
 
 * separar &quot;trabajo en curso&quot; en el autor de &quot;final&quot; en la publicación
-* separar los usuarios internos del autor de los visitantes/usuarios externos en la publicación (por ejemplo, agentes, representantes de prensa, clientes, estudiantes, etc.).
+* separar los usuarios internos de los usuarios/visitantes externos en la publicación (por ejemplo, agentes, representantes de prensa, clientes, estudiantes, etc.).
 
 ## Prácticas recomendadas para garantizar la calidad {#best-practices-for-quality-assurance}
 
-El rendimiento es de gran importancia para el entorno de publicación. Por lo tanto, debe planificar y analizar cuidadosamente las pruebas de rendimiento que realizará para el entorno de publicación mientras implementa el proyecto.
+El rendimiento es muy importante para el entorno de publicación. Por lo tanto, debe planificar y analizar cuidadosamente las pruebas de rendimiento que realizará para el entorno de publicación durante la implementación del proyecto.
 
 Esta sección tiene como objetivo proporcionar una visión general estandarizada de los problemas relacionados con la definición de un concepto de prueba específicamente para pruebas de rendimiento en el entorno de *publicación* . Esto es de interés primordial para los ingenieros de control de calidad, los directores de proyectos y los administradores de sistemas.
 
@@ -309,22 +309,22 @@ El control es un proceso adicional y abarcador, necesario pero no limitado a las
 
 ### Verificación del conocimiento {#verification-of-knowledge}
 
-Un primer paso es documentar la información básica que necesita conocer antes de empezar a probar:
+Un primer paso es el documento de la información básica que necesita conocer antes de poder realizar pruebas de inicio:
 
 * la arquitectura de su entorno de prueba
 * un mapa de la aplicación en el que se detallan los elementos internos que deberán someterse a pruebas (tanto aisladas como combinadas)
 
 #### Arquitectura de prueba {#test-architecture}
 
-Debe documentar claramente la arquitectura del entorno de prueba que se utiliza para las pruebas de rendimiento.
+Debe realizar un documento claro de la arquitectura del entorno de prueba que se utiliza para las pruebas de rendimiento.
 
 Necesitará una reproducción del entorno de publicación de producción planificado, junto con Dispatcher y Load Balancer.
 
 #### Mapa de aplicaciones {#application-map}
 
-Para obtener una descripción general clara, puede crear un mapa de toda la aplicación (puede que lo tenga de las pruebas en el entorno Autor).
+Para obtener una descripción general clara, puede crear un mapa de toda la aplicación (puede que lo tenga de las pruebas en el entorno de creación).
 
-Una representación de diagrama de los elementos internos de la aplicación puede proporcionar una visión general de los requisitos de ensayo; con la codificación de color también puede servir de base para los informes.
+Una representación de diagrama de los elementos internos de la aplicación puede proporcionar una visión general de los requisitos de ensayo; con la codificación de color también puede servir de base para el sistema de informes.
 
 ### Definición de ámbito {#scope-definition}
 
@@ -372,7 +372,7 @@ Basado en los siguientes principios.
 
 ### Definición de los Objetivos de Rendimiento {#defining-the-performance-goals}
 
-Una vez definido el ámbito y los KPI relacionados, se pueden establecer los objetivos de rendimiento específicos. Esto implica el diseño de escenarios de prueba, junto con los valores objetivo.
+Una vez definido el ámbito y los KPI relacionados, se pueden establecer los objetivos de rendimiento específicos. Esto implica diseñar escenarios de prueba, junto con valores de destinatario.
 
 Tendrá que probar el rendimiento en condiciones de media y pico. Además, necesitará pruebas de escenario de Going Live para asegurarse de que puede satisfacer el mayor interés en su sitio web cuando esté disponible por primera vez.
 
@@ -398,24 +398,24 @@ Al probar los componentes en combinación, se refleja mejor el comportamiento de
 | Escenario | Componente | #Usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Media mixta | Página principal | 10 | 1 |  |  |
-|  | Búsqueda | 10 | 1 |  |  |
+|  | Búsqueda   | 10 | 1 |  |  |
 |  | Noticias | 10 | 2 |  |  |
 |  | Sucesos | 10 | 1 |  |  |
 |  | Activaciones | 10 | 3 |  | Simulación del comportamiento del autor. |
 | Pico mixto | Página principal | 100 | 5 |  |  |
-|  | Búsqueda | 50 | 5 |  |  |
+|  | Búsqueda   | 50 | 5 |  |  |
 |  | Noticias | 100 | 10 |  |  |
 |  | Sucesos | 100 | 10 |  |  |
 |  | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
 
 #### Pruebas en directo {#going-live-tests}
 
-Durante los primeros días después de que su sitio web esté disponible, puede esperar un mayor nivel de interés. Probablemente esto será incluso mayor que los valores máximos para los que ha estado probando. Se recomienda encarecidamente probar los escenarios de Going Live para asegurarse de que el sistema pueda ocuparse de esta situación.
+Durante los primeros días después de que su sitio web esté disponible, puede esperar un mayor nivel de interés. Probablemente esto será incluso bueno con respecto a los valores máximos que ha estado probando. Se recomienda encarecidamente probar los escenarios de Going Live para asegurarse de que el sistema pueda ocuparse de esta situación.
 
 | Escenario | Tipo de prueba | #Usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Llegar al pico en directo | Página principal | 200 | 20 |  |  |
-|  | Búsqueda | 100 | 10 |  |  |
+|  | Búsqueda   | 100 | 10 |  |  |
 |  | Noticias | 200 | 20 |  |  |
 |  | Sucesos | 200 | 20 |  |  |
 |  | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
@@ -443,7 +443,7 @@ Algunos problemas sólo se encontrarán después de que el sistema haya estado f
 | Escenario | Tipo de prueba | #Usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Ensayo de resistencia (72 horas) | Página principal | 10 | 1 |  |  |
-|  | Búsqueda | 10 | 1 |  |  |
+|  | Búsqueda   | 10 | 1 |  |  |
 |  | Noticias | 20 | 2 |  |  |
 |  | Sucesos | 10 | 1 |  |  |
 |  | Activaciones | 1 | 3 |  | Simulación del comportamiento del autor. |
@@ -457,20 +457,20 @@ Todas las optimizaciones realizadas deberán probarse para garantizar que:
 * no afecta a la funcionalidad
 * se verificó con las pruebas de carga antes de liberarse
 
-Hay una selección de herramientas disponibles para ayudarle con la generación de carga, la supervisión del rendimiento y/o el análisis de resultados:
+Hay una selección de herramientas disponibles para ayudarle con la generación de carga, la supervisión del rendimiento y/o la análisis de resultados:
 
 * [JMeter](https://jakarta.apache.org/jmeter/)
 * [Cargar ejecutor](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 * [Definición](https://www.determyne.com/) de las aplicaciones internas
 * [InfraRED](https://www.infraredsoftware.com/)
-* [Perfil interactivo Java](https://jiprof.sourceforge.net/)
+* [Perfil interactivo de Java](https://jiprof.sourceforge.net/)
 * Muchas más...
 
 Después de la optimización, tendrá que volver a realizar pruebas para confirmar el impacto.
 
 ### Informes {#reporting}
 
-Se necesitarán informes continuos para mantener a todos informados de la situación; como se mencionó anteriormente con la codificación de color, el mapa de arquitectura puede utilizarse para esto.
+Se necesitarán sistemas de informes continuos para mantener a todos informados de la situación; como se mencionó anteriormente con la codificación de color, el mapa de arquitectura puede utilizarse para esto.
 
 Una vez completadas todas las pruebas, debe informar sobre:
 
@@ -489,7 +489,7 @@ El [despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/dis
 >
 >Es posible que se le haya redirigido a esta página si ha seguido un vínculo a la documentación de Dispatcher insertado en la documentación de una versión anterior de AEM.
 
-Dispatcher ofrece una serie de mecanismos integrados que puede utilizar para optimizar el rendimiento si el sitio web los aprovecha. Esta sección le explica cómo diseñar su sitio Web para maximizar los beneficios del almacenamiento en caché.
+Dispatcher oferta una serie de mecanismos integrados que puede utilizar para optimizar el rendimiento si el sitio web los aprovecha. Esta sección le explica cómo diseñar su sitio Web para maximizar los beneficios del almacenamiento en caché.
 
 >[!NOTE]
 >
@@ -592,7 +592,7 @@ Por ejemplo, puede almacenar el título de la página myPage.html en el archivo 
 
 #### Invalidación De Archivos De Imagen Utilizados Para La Navegación {#invalidating-image-files-used-for-navigation}
 
-Si utiliza imágenes para las entradas de navegación, el método es básicamente el mismo que con los títulos, un poco más complejo. Almacene todas las imágenes de navegación con las páginas de destino. Si utiliza dos imágenes para normal y activo, puede utilizar los siguientes scripts:
+Si utiliza imágenes para las entradas de navegación, el método es básicamente el mismo que con los títulos, un poco más complejo. Almacene todas las imágenes de navegación con las páginas de destinatario. Si utiliza dos imágenes para normal y activo, puede utilizar los siguientes scripts:
 
 * Secuencia de comandos que muestra la página, como de costumbre.
 * Una secuencia de comandos que procesa solicitudes &quot;.normal&quot; y devuelve la imagen normal.
@@ -607,7 +607,7 @@ En el caso de las páginas que no se modifican, las imágenes permanecen en la c
 El despachante no puede almacenar en caché datos personalizados, por lo que se recomienda limitar la personalización a donde sea necesaria. Para ilustrar por qué:
 
 * Si utiliza una página de inicio personalizable libremente, esa página debe estar compuesta cada vez que un usuario la solicite.
-* Si, por el contrario, ofrece una selección de 10 páginas de inicio diferentes, puede almacenar en caché cada una de ellas, lo que mejora el rendimiento.
+* Si, por el contrario, oferta una selección de 10 páginas de inicio diferentes, puede almacenar en caché cada una de ellas, lo que mejora el rendimiento.
 
 >[!NOTE]
 >
@@ -623,7 +623,7 @@ El despachante no puede almacenar en caché datos personalizados, por lo que se 
 
 #### Conexiones adhesivas {#sticky-connections}
 
-[Las conexiones](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) adhesivas garantizan que los documentos de un usuario están compuestos en el mismo servidor. Si un usuario abandona esta carpeta y luego regresa a ella, la conexión se mantendrá. Defina una carpeta para guardar todos los documentos que requieran conexiones adhesivas para el sitio web. Trata de no tener otros documentos. Esto afecta al equilibrio de carga si utiliza páginas personalizadas y datos de sesión.
+[Las conexiones](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) adhesivas garantizan que los documentos de un usuario están compuestos en el mismo servidor. Si un usuario abandona esta carpeta y luego regresa a ella, la conexión se mantendrá. Defina una carpeta para albergar todos los documentos que requieran conexiones adhesivas para el sitio web. Trata de no tener otros documentos. Esto afecta al equilibrio de carga si utiliza páginas personalizadas y datos de sesión.
 
 #### MIME Types {#mime-types}
 
@@ -632,7 +632,7 @@ Existen dos maneras en que un explorador puede determinar el tipo de archivo:
 1. Por su extensión (p. ej. .html, .gif, .jpg, etc.)
 1. Por el tipo MIME que el servidor envía con el archivo.
 
-Para la mayoría de los archivos, el tipo MIME está implícito en la extensión del archivo. es decir:
+Para la mayoría de los archivos, el tipo MIME está implícito en la extensión del archivo. i.e.:
 
 1. Por su extensión (p. ej. .html, .gif, .jpg, etc.)
 1. Por el tipo MIME que el servidor envía con el archivo.
@@ -648,7 +648,7 @@ Para asegurarse de que los archivos se almacenan correctamente en la caché, sig
 
 ## Rendimiento de backup {#backup-performance}
 
-Esta sección presenta una serie de pruebas de referencia utilizadas para evaluar el rendimiento de los backups de CQ y los efectos de la actividad de backup en el performance de las aplicaciones. La copia de seguridad de CQ presenta una carga significativa en el sistema mientras se ejecuta, y la medimos, así como los efectos de la configuración de demora de copia de seguridad que intenta modular estos efectos. El objetivo es ofrecer algunos datos de referencia sobre el rendimiento esperado de los backups en configuraciones realistas y cantidades de datos de producción, así como proporcionar orientación sobre cómo calcular los tiempos de backup para los sistemas planificados.
+Esta sección presenta una serie de pruebas de referencia utilizadas para evaluar el performance de los backups de CQ y los efectos de la actividad de backup en el performance de las aplicaciones. La copia de seguridad de CQ presenta una carga significativa en el sistema mientras se ejecuta, y la medimos, así como los efectos de la configuración de demora de copia de seguridad que intenta modular estos efectos. El objetivo es la oferta de algunos datos de referencia sobre el rendimiento esperado de los backups en configuraciones realistas y cantidades de datos de producción, así como proporcionar una guía sobre cómo calcular los tiempos de backup para los sistemas planificados.
 
 ### Entorno de referencia {#reference-environment}
 
@@ -663,9 +663,9 @@ Los resultados obtenidos en el presente documento se obtuvieron a partir de punt
 * RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
 * Instancia de Single Author que ejecuta CQ 5.5 GM.
 
-El subsistema de disco de este servidor es bastante rápido, representativo de una configuración RAID de alto rendimiento que podría utilizarse en un servidor de producción. El rendimiento del backup puede ser sensible al rendimiento del disco, y los resultados en este entorno reflejan el rendimiento en una configuración RAID muy rápida. La imagen VMWare está configurada para tener un solo volumen de disco grande que reside físicamente en almacenamiento de disco local, en el arreglo RAID.
+El subsistema de disco de este servidor es bastante rápido, representativo de una configuración RAID de alto rendimiento que podría utilizarse en un servidor de producción. El rendimiento del backup puede ser sensible al rendimiento del disco y los resultados de este entorno reflejan el rendimiento en una configuración RAID muy rápida. La imagen VMWare está configurada para tener un solo volumen de disco grande que reside físicamente en el almacenamiento de disco local, en el arreglo RAID.
 
-La configuración de CQ coloca el repositorio y el almacén de datos en el mismo volumen lógico, junto con todo el sistema operativo y el software de CQ. El directorio de destino para copias de seguridad también reside en este sistema de archivos lógico.
+La configuración de CQ coloca el repositorio y el almacén de datos en el mismo volumen lógico, junto con todo el sistema operativo y el software de CQ. El directorio destinatario para copias de seguridad también reside en este sistema de archivos lógico.
 
 #### Volúmenes de datos {#data-volumes}
 
@@ -716,7 +716,7 @@ Los análisis de rendimiento de backup cubren dos escenarios principales: realiz
 
 Los tiempos de copia de seguridad y el tamaño del backup resultante se obtienen de los registros del servidor de CQ. Normalmente, se recomienda que los backups se programen para tiempos de inactividad cuando CQ esté inactivo, como en mitad de la noche. Este escenario es representativo del enfoque recomendado.
 
-La carga consistirá en creaciones/eliminaciones de página, transmisiones y consultas, con la mayoría de la carga proveniente de las transiciones y consultas de página. Agregar y eliminar demasiadas páginas aumenta continuamente el tamaño del espacio de trabajo e impide que las copias de seguridad se completen. La distribución de la carga que utilizará la secuencia de comandos es del 75 % de las conversiones de página, del 24 % de las consultas y del 1 % de las creaciones de páginas (un solo nivel sin subpáginas anidadas). Las transacciones medias máximas por segundo en un sistema inactivo se alcanzan con 4 subprocesos simultáneos, que es lo que se utilizará al probar las copias de seguridad en carga.
+La carga consistirá en creaciones/eliminaciones de página, recorridos y consultas, con la mayoría de la carga proveniente de las consultas y los recorridos de página. Añadir y eliminar demasiadas páginas aumenta continuamente el tamaño del espacio de trabajo e impide que las copias de seguridad se completen. La distribución de la carga que utilizará la secuencia de comandos es del 75 % de las conversiones de página, del 24 % de las consultas y del 1 % de las creaciones de página (nivel único sin subpáginas anidadas). Las transacciones medias máximas por segundo en un sistema inactivo se alcanzan con 4 subprocesos simultáneos, que es lo que se utilizará al probar las copias de seguridad en carga.
 
 El impacto de la carga en el performance del backup se puede estimar por la diferencia entre el performance con y sin esta carga de la aplicación. El impacto del backup en el rendimiento de las aplicaciones se encuentra comparando el rendimiento del escenario en transacciones por hora con y sin un backup simultáneo en curso, y con backups que funcionan con diferentes configuraciones de &quot;retraso de backup&quot;.
 
@@ -738,7 +738,7 @@ El tamaño de la copia de seguridad producida es el principal determinante del t
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-Este gráfico ilustra que tanto los backups incrementales como los completos siguen un patrón de tamaño y tiempo simple que podemos medir como rendimiento. Los tiempos de backup en una instancia inactiva son bastante consistentes, con un promedio de 0,61 MB/s independientemente de los backups completos o incrementales en el entorno de referencia.
+Este gráfico ilustra que tanto los backups incrementales como los completos siguen un patrón de tamaño y tiempo simple que podemos medir como rendimiento. Los tiempos de backup en una instancia inactiva son bastante coherentes, con un promedio de 0,61 MB/s independientemente de los backups completos o incrementales en el entorno de referencia.
 
 #### Retraso de copia de seguridad {#backup-delay}
 
@@ -752,7 +752,7 @@ El parámetro de demora de copia de seguridad se proporciona para limitar la med
 
 Para comparar el rendimiento obtenido usando un backup del filesystem (usando &#39;tar&#39;) para hacer backup de los mismos archivos del repositorio. El rendimiento del tar es comparable, pero ligeramente superior al del backup con el retraso establecido en cero. La configuración de incluso un pequeño retraso reduce en gran medida el rendimiento de backup y el retraso predeterminado de 10 ms da como resultado un rendimiento mucho menor. En situaciones en las que las copias de seguridad pueden programarse cuando el uso general de la aplicación es muy bajo o la aplicación puede estar completamente inactiva, probablemente sea conveniente reducir el retraso por debajo del valor predeterminado para permitir que la copia de seguridad se realice más rápidamente.
 
-El impacto real del rendimiento de las aplicaciones de un backup en curso depende de los detalles de la infraestructura y la aplicación. La elección del valor de retraso debe realizarse mediante un análisis empírico de la aplicación, pero debe elegirse lo más pequeño posible, de manera que las copias de seguridad puedan completarse lo más rápido posible. Dado que sólo existe una correlación débil entre la elección del valor de retraso y el impacto en el rendimiento de la aplicación, la elección del retraso debería favorecer tiempos de backup generales más cortos, a fin de minimizar el impacto general de los backups. Un backup que tarda 8 horas en completarse, pero que afecta el rendimiento en -20%, probablemente tenga un impacto general mayor que uno que tarde 2 horas en completarse pero afecta el rendimiento en -30%.
+El impacto real del rendimiento de las aplicaciones de un backup en curso depende de los detalles de la infraestructura y la aplicación. La elección del valor de retraso debe realizarse por análisis empírica de la aplicación, pero debe elegirse lo más pequeño posible, de modo que las copias de seguridad puedan completarse lo más rápido posible. Dado que sólo existe una correlación débil entre la elección del valor de retraso y el impacto en el rendimiento de la aplicación, la elección del retraso debería favorecer tiempos de backup generales más cortos, a fin de minimizar el impacto general de los backups. Un backup que tarda 8 horas en completarse, pero que afecta al rendimiento en -20%, probablemente tendrá un bueno impacto total que uno que tarde 2 horas en completarse pero afecta al rendimiento en -30%.
 
 ### Referencias {#references}
 
