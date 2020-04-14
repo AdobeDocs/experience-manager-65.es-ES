@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -145,7 +145,7 @@ Además, puede utilizar el editor de plantillas para crear sus propias plantilla
 
 >[!NOTE]
 >
->Cuando se abre un formulario adaptable creado con la plantilla avanzada para edición, aparece un mensaje de error. La plantilla avanzada tiene un componente Paso de firma y Adobe Sign está habilitado para ella de forma predeterminada. Cree y seleccione una configuración [de nube de](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign y [configure un firmante](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) para resolver el error.
+>Cuando se abre un formulario adaptable creado con la plantilla avanzada para edición, aparece un mensaje de error. La plantilla avanzada tiene un componente Paso de firma y Adobe Sign está habilitado para ella de forma predeterminada. Cree y seleccione una configuración [de nube de](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign y [configure un firmante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver el error.
 
 ## Editar propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
