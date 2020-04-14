@@ -3,7 +3,7 @@ title: Utilice los recursos conectados para compartir recursos DAM en el flujo d
 description: Utilice los recursos disponibles en una implementación remota de recursos de Adobe Experience Manager al crear sus páginas web en otra implementación de Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -37,7 +37,7 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 Los creadores pueden buscar imágenes y los siguientes tipos de documentos en el buscador de contenido y utilizar los recursos buscados en el editor de páginas. Se pueden añadir documentos al componente `Download` e imágenes al componente `Image`. Los creadores también pueden agregar recursos remotos en cualquier componente personalizado de AEM que extienda los componentes predeterminados `Download` o `Image`. La lista de los formatos admitidos es:
 
-* **Formatos** de imagen: Recursos conectados admiten los formatos de imagen admitidos por el componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagen. Las imágenes de Dynamic Media no se admiten.
+* **Formatos** de imagen: Recursos conectados admiten los formatos de imagen admitidos por el componente [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) Imagen. Las imágenes de Dynamic Media no se admiten.
 * **Formatos de documento**: Consulte [Formatos de documento admitidos con recursos conectados](assets-formats.md#supported-document-formats).
 
 ### Usuarios y grupos implicados {#users-and-groups-involved}
@@ -45,7 +45,7 @@ Los creadores pueden buscar imágenes y los siguientes tipos de documentos en el
 A continuación se describen las distintas funciones que se usan para configurar y utilizar la capacidad y sus grupos de usuarios correspondientes. El ámbito local se utiliza para el caso de uso en el que un autor crea una página web. El ámbito remoto se utiliza para la implementación de DAM que aloja los recursos necesarios. El creador de Sites recupera los recursos remotos.
 
 | Función | Ámbito | Grupo de usuarios | Nombre de usuario en la introducción | Requisito |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|
 | Administrador de AEM Sites | Local | Administrador de AEM | `admin` | Establezca AEM y configure la integración con la implementación remota de recursos. |
 | Usuario DAM | Local | Creación | `ksaner` | Se utiliza para ver y duplicar los recursos recuperados en `/content/DAM/connectedassets/`. |
 | Creador de AEM Sites | Local | Creador (con acceso de lectura en el DAM remoto y acceso de creador en el Sites local) | `ksaner` | Los usuarios finales son creadores de Sites que utilizan esta integración para mejorar la velocidad de contenido. Los creadores buscan y exploran recursos en el DAM remoto mediante el buscador de contenido y utilizando las imágenes necesarias en las páginas web locales. Se utilizan las credenciales del usuario de DAM `ksaner`. |
@@ -73,11 +73,9 @@ Para configurar la conectividad de los recursos conectados y los sitios locales,
    1. La ubicación de AEM Assets es `https://[assets_servername_ams]:[port]`.
    1. Credenciales de un distribuidor DAM (usuario técnico).
    1. En el campo **[!UICONTROL Punto de montaje]**, introduzca la ruta local de AEM donde AEM recupera los recursos. Por ejemplo, la carpeta `remoteassets`.
-
    1. Ajuste los valores del **[!UICONTROL umbral de optimización de transferencia binaria original]** en función de la red. Las representaciones de recursos superiores a este umbral se transfieren de forma asíncrona.
    1. Seleccione **[!UICONTROL almacén de datos compartido con recursos conectados]**, si utiliza un almacén de datos para almacenar los recursos y este es el almacenamiento común entre ambas implementaciones de AEM. En este caso, el límite de umbral no importa, ya que los binarios de activos reales se encuentran en el almacén de datos y no se transfieren.
-   ![Una configuración típica para los recursos conectados](assets/connected-assets-typical-config.png)
-
+      ![Una configuración típica para los recursos conectados](assets/connected-assets-typical-config.png)
    *Figura: Una configuración típica para los recursos conectados*
 
 1. Dado que los recursos ya se han procesado y se han recuperado las representaciones, deshabilite los iniciadores del flujo de trabajo. Ajuste las configuraciones del iniciador en la implementación local (AEM Sites) para excluir la carpeta `connectedassets`, en la que se recuperan los recursos remotos.
@@ -153,7 +151,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
-## Restricciones     {#limitations}
+## Restricciones      {#limitations}
 
 **Permisos y administración de recursos**
 
