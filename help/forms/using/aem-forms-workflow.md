@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -101,13 +101,13 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
    Utilice el editor de expresiones para crear expresiones de enrutamiento para las ramas 1 y 2. Estas expresiones de enrutamiento ayudan a elegir una rama en función de la acción del usuario en la Bandeja de entrada de AEM.
 
-   **expresión de Enrutamiento para la ramificación 2**
+   **expresión de Enrutamiento para la ramificación 1**
 
    Cuando un usuario toca **Aprobar** en la bandeja de entrada de AEM, se activa la rama 1.
 
    ![Ejemplo de división OR](assets/orsplit_branch1_active_new.png)
 
-   **expresión de Enrutamiento para la ramificación 2**
+   **expresión de Enrutamiento para la ramificación 1**
 
    Cuando un usuario toca **Rechazar** en la bandeja de entrada de AEM, se activa la rama 2.
 
@@ -121,7 +121,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
    Para el conjunto completo de valores de todos los campos de los pasos de tarea de asignación, el documento del paso de registro y el paso de documento de firma configurados, por ejemplo, la aplicación de hipoteca, importe el paquete de ejemplo, disponible para su descarga al comienzo de esta sección.
 
-   El modelo de flujo de trabajo está listo. Puede iniciar el flujo de trabajo mediante varios métodos. Para obtener más información, consulte [Iniciar un flujo de trabajo centrado en formularios en OSGi](../../forms/using/aem-forms-workflow.md#main-pars-header).
+   El modelo de flujo de trabajo está listo. Puede iniciar el flujo de trabajo mediante varios métodos. Para obtener más información, consulte [Iniciar un flujo de trabajo centrado en formularios en OSGi](#launch).
 
    ![workflow-editor-hipoteca](assets/workflow-editor-mortgage.png)
 
