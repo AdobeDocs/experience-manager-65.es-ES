@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -150,7 +150,7 @@ Las configuraciones de ContextHub se ven afectadas por una actualización. Las i
 
 ### Personalizaciones del flujo de trabajo {#workflow-customizations}
 
-Es una práctica común actualizar los flujos de trabajo de modificación inmediata para agregar o eliminar funciones no necesarias. Un flujo de trabajo común personalizado es el flujo de trabajo de recursos de actualización de DAM. Todos los flujos de trabajo requeridos para una implementación personalizada deben ser respaldados y almacenados en el control de versiones, ya que se pueden sobrescribir durante una actualización.
+Es una práctica común actualizar los flujos de trabajo de modificación inmediata para agregar o eliminar funciones no necesarias. Un flujo de trabajo común personalizado es el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM. Todos los flujos de trabajo requeridos para una implementación personalizada deben ser respaldados y almacenados en el control de versiones, ya que se pueden sobrescribir durante una actualización.
 
 ### Plantillas editables {#editable-templates}
 
