@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos en AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez que instale el paquete [de complementos de formularios](../../forms/using/installing-configuring-aem-forms-osgi.md)AEM, los grupos mencionados en este artículo, como el usuario de formularios y el usuario que puede utilizar formularios, estarán disponibles automáticamente para su asignación. En la tabla siguiente se enumeran las tareas que un usuario puede realizar para AEM Forms en OSGi según las asignaciones de grupo:
+Una vez que instale el paquete [de complementos de formularios](../../forms/using/installing-configuring-aem-forms-osgi.md)AEM, los grupos mencionados en este artículo, como el usuario de formularios y el usuario que puede utilizar formularios, estarán disponibles automáticamente para su asignación. La tabla siguiente lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
@@ -29,24 +29,24 @@ Una vez que instale el paquete [de complementos de formularios](../../forms/usin
    <td>Tareas</td> 
   </tr>
   <tr>
-   <td>form-user <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>form-user <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Creación, vista previa, publicación y envío de formularios adaptables</li> 
-     <li>Creación, vista previa y publicación de comunicaciones interactivas y fragmentos de documentos</li> 
+     <li>Creación, previsualización, publicación y envío de formularios adaptables</li> 
+     <li>Creación, previsualización y publicación de comunicaciones interactivas y fragmentos de documento</li> 
      <li>Carga de recursos en una instancia de AEM</li> 
-     <li>Creación de temas</li> 
+     <li>Crear temáticas</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>forms-power-user</td> 
    <td>
     <ul> 
-     <li>Creación, vista previa, publicación y envío de formularios adaptables</li> 
-     <li>Creación, vista previa y publicación de comunicaciones interactivas y fragmentos de documentos</li> 
+     <li>Creación, previsualización, publicación y envío de formularios adaptables</li> 
+     <li>Creación, previsualización y publicación de comunicaciones interactivas y fragmentos de documento</li> 
      <li>Creación de secuencias de comandos para formularios adaptables mediante el editor de código</li> 
      <li>Carga de recursos, incluidas secuencias de comandos</li> 
-     <li>Creación de temas</li> 
+     <li>Crear temáticas</li> 
      <li>Importar paquetes que contengan XDP</li> 
     </ul> </td> 
   </tr>
@@ -59,17 +59,17 @@ Una vez que instale el paquete [de complementos de formularios](../../forms/usin
     </ul> </td> 
   </tr>
   <tr>
-   <td>templates-author <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>templates-author <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Creación y vista previa de formularios adaptables o plantillas de comunicaciones interactivas</li> 
+     <li>Creación y previsualización de formularios adaptables o plantillas de comunicaciones interactivas</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>template-power-user</td> 
    <td>
     <ul> 
-     <li>Creación y vista previa de formularios adaptables o plantillas de comunicaciones interactivas</li> 
+     <li>Creación y previsualización de formularios adaptables o plantillas de comunicaciones interactivas</li> 
      <li>Creación de secuencias de comandos para formularios adaptables o plantillas de comunicaciones interactivas mediante el editor de código</li> 
     </ul> </td> 
   </tr>
