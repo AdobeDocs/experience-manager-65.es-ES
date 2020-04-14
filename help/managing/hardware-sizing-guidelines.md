@@ -1,8 +1,8 @@
 ---
 title: 'Pautas para configurar el tamaño del hardware '
 seo-title: 'Pautas para configurar el tamaño del hardware '
-description: Estas directrices de tamaño ofrecen una aproximación de los recursos de hardware necesarios para implementar un proyecto de AEM.
-seo-description: Estas directrices de tamaño ofrecen una aproximación de los recursos de hardware necesarios para implementar un proyecto de AEM.
+description: Estas directrices de tamaño oferta una aproximación de los recursos de hardware necesarios para implementar un proyecto de AEM.
+seo-description: Estas directrices de tamaño oferta una aproximación de los recursos de hardware necesarios para implementar un proyecto de AEM.
 uuid: 395f9869-17c4-4b9b-99f8-d35a44dd6256
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
 
 # Pautas para configurar el tamaño del hardware{#hardware-sizing-guidelines} 
 
-Estas directrices de tamaño ofrecen una aproximación de los recursos de hardware necesarios para implementar un proyecto de AEM. Las estimaciones de tamaño dependen de la arquitectura del proyecto, la complejidad de la solución, el tráfico previsto y los requisitos del proyecto. Esta guía le ayuda a determinar las necesidades de hardware para una solución específica o a encontrar una estimación superior e inferior de los requisitos de hardware.
+Estas directrices de tamaño oferta una aproximación de los recursos de hardware necesarios para implementar un proyecto de AEM. Las estimaciones de tamaño dependen de la arquitectura del proyecto, la complejidad de la solución, el tráfico previsto y los requisitos del proyecto. Esta guía le ayuda a determinar las necesidades de hardware para una solución específica o a encontrar una estimación superior e inferior de los requisitos de hardware.
 
 Los factores básicos a tener en cuenta son (en este orden):
 
@@ -37,7 +37,7 @@ Los factores básicos a tener en cuenta son (en este orden):
 
 * **Rendimiento de E/S**
 
-   * Rendimiento y eficiencia del almacenamiento de archivos o bases de datos
+   * Rendimiento y eficacia del almacenamiento de archivos o bases de datos
 
 * **Disco duro**
 
@@ -50,21 +50,21 @@ Los factores básicos a tener en cuenta son (en este orden):
 
 ## Arquitectura {#architecture}
 
-Una configuración típica de AEM consiste en un autor y un entorno de publicación. Estos entornos tienen diferentes requisitos con respecto al tamaño de hardware subyacente y la configuración del sistema. Las consideraciones detalladas para ambos entornos se describen en las secciones Entorno [de](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) creación y Entorno [de](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) publicación.
+Una configuración típica de AEM consiste en un autor y un entorno de publicación. Estos entornos tienen diferentes requerimientos en cuanto al tamaño del hardware subyacente y a la configuración del sistema. Las consideraciones detalladas para ambos entornos se describen en las secciones entorno [de](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) creación y entorno [de](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) publicación.
 
 En una configuración de proyecto típica, tiene varios entornos en los que realizar la etapa de proyecto:
 
-* **Entorno** de desarrollo Desarrollar nuevas características o realizar cambios significativos. Lo mejor es trabajar con un entorno de desarrollo por desarrollador (generalmente instalaciones locales en sus sistemas personales).
+* **entorno** de desarrollo Desarrollar nuevas características o realizar cambios significativos. Lo mejor es trabajar con un entorno de desarrollo por desarrollador (generalmente instalaciones locales en sus sistemas personales).
 
-* **Entorno** de prueba de creación Para comprobar los cambios. El número de entornos de prueba puede variar en función de los requisitos del proyecto (por ejemplo, por separado para control de calidad, pruebas de integración o pruebas de aceptación del usuario).
+* **entorno** de prueba del autor Para comprobar los cambios. El número de entornos de prueba puede variar en función de los requisitos del proyecto (por ejemplo, por separado para control de calidad, pruebas de integración o pruebas de aceptación del usuario).
 
-* **Entorno** de prueba de publicación principalmente para probar casos de uso de colaboración social o la interacción entre el autor y varias instancias de publicación.
+* **Publicar entorno** de prueba principalmente para probar casos de uso de colaboración social o la interacción entre el autor y varias instancias de publicación.
 
-* **Entorno** de producción de creaciónPara que los autores editen contenido.
+* **entorno** de producción de creación Para que los autores editen contenido.
 
-* **Entorno** de producción de publicaciónPara ofrecer contenido publicado.
+* **Publicar entorno** de producción Para mostrar contenido publicado.
 
-Además, los entornos pueden variar, desde un sistema de un solo servidor que ejecuta AEM y un servidor de aplicaciones, hasta un conjunto de instancias agrupadas de varios servidores y varias CPU de gran escala. Le recomendamos que utilice un equipo independiente para cada sistema de producción y que no ejecute otras aplicaciones en estos equipos.
+Además, los entornos pueden variar, desde un sistema de un solo servidor que ejecute AEM y un servidor de aplicaciones, hasta un conjunto de instancias agrupadas de varios servidores y varias CPU con gran escala. Le recomendamos que utilice un equipo independiente para cada sistema de producción y que no ejecute otras aplicaciones en estos equipos.
 
 ## Consideraciones genéricas sobre el tamaño del hardware {#generic-hardware-sizing-considerations}
 
@@ -107,22 +107,22 @@ Se implementa un sitio web seguro contra fallos en al menos dos sistemas indepen
 
 **Capacidad de ampliación de los recursos del sistema**
 
-Aunque todos los sistemas están en funcionamiento, hay un mayor rendimiento computacional disponible. Que el rendimiento adicional no es necesariamente lineal con el número de nodos de clúster, ya que la relación depende en gran medida del entorno técnico; consulte la documentación [del](/help/sites-deploying/recommended-deploys.md) clúster para obtener más información.
+Mientras todos los sistemas están en funcionamiento, hay disponible un mayor rendimiento computacional. Que el rendimiento adicional no es necesariamente lineal con el número de nodos de clúster, ya que la relación depende en gran medida del entorno técnico; consulte la documentación [del](/help/sites-deploying/recommended-deploys.md) clúster para obtener más información.
 
 La estimación de cuántos nodos de clúster son necesarios se basa en los requisitos básicos y casos de uso específicos del proyecto web en particular:
 
 * Desde el punto de vista de la seguridad frente a fallos, es necesario determinar, para todos los entornos, la gravedad del fallo y el tiempo de compensación del fallo en función del tiempo que tarde en recuperarse un nodo de clúster.
-* Para el aspecto de la escalabilidad, el número de operaciones de escritura es básicamente el factor más importante; consulte [Autores que trabajan en paralelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) para el entorno de creación y Colaboración [](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) social para el entorno de publicación. Se puede establecer el equilibrio de carga para operaciones que accedan al sistema únicamente para procesar operaciones de lectura; consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) para obtener más información.
+* Para el aspecto de la escalabilidad, el número de operaciones de escritura es básicamente el factor más importante; consulte [Autores que trabajan en paralelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) para el entorno del autor y Colaboración [](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) social para el entorno de publicación. Se puede establecer el equilibrio de carga para operaciones que accedan al sistema únicamente para procesar operaciones de lectura; consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) para obtener más información.
 
-## Crear cálculos específicos del entorno {#author-environment-specific-calculations}
+## Crear cálculos específicos de entorno {#author-environment-specific-calculations}
 
 Con fines de referencia, Adobe ha desarrollado algunas pruebas de referencia para instancias de creación independientes.
 
-* **Prueba comparativa 1** Calcule el rendimiento máximo de un perfil de carga donde los usuarios realizan un simple ejercicio de creación de página sobre una carga base de 300 páginas existentes de naturaleza similar. Los pasos necesarios eran iniciar sesión en el sitio, crear una página con un SWF y una imagen o texto, agregar una nube de etiquetas y, a continuación, activar la página.
+* **Prueba comparativa 1** Calcule el rendimiento máximo de un perfil de carga en el que los usuarios realizan un simple ejercicio de creación de página sobre una carga base de 300 páginas existentes de naturaleza similar. Los pasos necesarios eran iniciar sesión en el sitio, crear una página con un SWF y una imagen o texto, agregar una nube de etiquetas y, a continuación, activar la página.
 
    * **Resultado** El rendimiento máximo para un ejercicio de creación de página simple como el anterior (considerado como una transacción) se encontró en 1730 transacciones/hora.
 
-* **Prueba comparativa 2** Calcule el rendimiento máximo cuando el perfil de carga tiene una combinación de creación de página nueva (10%), modificación de una página existente (80%) y creación y posterior modificación de una página en sucesión (10%). La complejidad de las páginas sigue siendo la misma que en el perfil de la prueba de referencia 1. La modificación básica de la página se realiza agregando una imagen y modificando el contenido del texto. De nuevo, el ejercicio se realizó sobre una carga base de 300 páginas de la misma complejidad definida en la prueba de referencia 1.
+* **Prueba comparativa 2** Calcule el rendimiento máximo cuando el perfil de carga tiene una combinación de creación de página nueva (10%), modificación de una página existente (80%) y posterior modificación de una página en sucesión (10%). La complejidad de las páginas sigue siendo la misma que en el perfil de la prueba de referencia 1. La modificación básica de la página se realiza agregando una imagen y modificando el contenido del texto. De nuevo, el ejercicio se realizó sobre una carga base de 300 páginas de la misma complejidad definida en la prueba de referencia 1.
 
    * **Resultado** El rendimiento máximo para este escenario de operación de mezcla fue de 3252 transacciones por hora.
 
@@ -130,23 +130,23 @@ Con fines de referencia, Adobe ha desarrollado algunas pruebas de referencia par
 >
 >La tasa de rendimiento no distingue entre tipos de transacciones dentro de un perfil de carga. El método utilizado para medir el rendimiento garantiza que se incluya una proporción fija de cada tipo de transacción en la carga de trabajo.
 
-Las dos pruebas anteriores destacan claramente que el rendimiento varía según el tipo de operación. Utilice las actividades de su entorno como base para ajustar el tamaño del sistema. Obtendrá un mejor rendimiento con acciones menos intensivas como la modificación (que también es más común).
+Las dos pruebas anteriores destacan claramente que el rendimiento varía según el tipo de operación. Utilice las actividades del entorno como base para ajustar el tamaño del sistema. Obtendrá un mejor rendimiento con acciones menos intensivas como la modificación (que también es más común).
 
 ### Almacenamiento en caché {#caching}
 
-En el entorno de creación, la eficacia de almacenamiento en caché suele ser mucho menor, ya que los cambios en el sitio web son más frecuentes y el contenido es muy interactivo y personalizado. Con el despachante, puede almacenar en caché bibliotecas de AEM, JavaScript, archivos CSS e imágenes de diseño. Esto acelera algunos aspectos del proceso de creación. Si configura el servidor web para que establezca además encabezados para el almacenamiento en caché del navegador en estos recursos, se reducirá el número de solicitudes HTTP y se mejorará la capacidad de respuesta del sistema según la experiencia de los autores.
+En el entorno del autor, la eficacia de almacenamiento en caché suele ser mucho menor, ya que los cambios en el sitio web son más frecuentes y el contenido es muy interactivo y personalizado. Con el despachante, puede almacenar en caché bibliotecas de AEM, JavaScript, archivos CSS e imágenes de diseño. Esto acelera algunos aspectos del proceso de creación. Si configura el servidor web para que establezca además encabezados para el almacenamiento en caché del navegador en estos recursos, se reducirá el número de solicitudes HTTP y se mejorará la capacidad de respuesta del sistema según la experiencia de los autores.
 
 ### Autores que trabajan en paralelo {#authors-working-in-parallel}
 
-En el entorno de creación, el número de autores que trabajan en paralelo y la carga que sus interacciones agregan al sistema son los principales factores limitantes. Por lo tanto, le recomendamos que escale su sistema en función del rendimiento compartido de los datos.
+En el entorno del autor, el número de autores que trabajan en paralelo y la carga que sus interacciones añaden al sistema son los principales factores limitantes. Por lo tanto, le recomendamos que escale su sistema en función del rendimiento compartido de los datos.
 
 En estos casos, Adobe ejecutó pruebas de referencia en un clúster de instancias de autor de dos nodos compartido sin nada.
 
-* **Prueba de referencia 1a** Con un clúster activo-activo-no compartido de 2 instancias de creación, calcule el rendimiento máximo con un perfil de carga en el que los usuarios realizan un simple ejercicio de creación de página sobre una carga base de 300 páginas existentes, todo de naturaleza similar.
+* **Prueba de referencia 1a** Con un clúster activo-activo de no compartir-nada de 2 instancias de creación, calcule el rendimiento máximo con un perfil de carga en el que los usuarios realizan un simple ejercicio de creación de página sobre una carga base de 300 páginas existentes, todo de naturaleza similar.
 
    * **Resultado** El rendimiento máximo para un ejercicio de creación de página simple, como por ejemplo, anterior (considerado como una transacción), se encuentra en transacciones de 2016/hora. Se trata de un aumento de aproximadamente un 16 % en comparación con una instancia de autor independiente para la misma prueba de referencia.
 
-* **Prueba de referencia 2b** Con un clúster activo-activo-no compartido-nada de 2 instancias de autor, calcule el rendimiento máximo cuando el perfil de carga tenga una combinación de creación de página nueva (10%), modificación de páginas existentes (80%) y creación y modificación de una página en sucesión (10%). La complejidad de la página sigue siendo la misma que en el perfil de la prueba de referencia 1. La modificación básica de la página se realiza agregando una imagen y modificando el contenido del texto. Nuevamente, el ejercicio se realizó sobre una carga base de 300 páginas de complejidad, tal como se define en la prueba de referencia 1.
+* **Prueba comparativa 2b** Con un clúster activo-activo de contenido compartido sin uso compartido de 2 instancias de autor, calcule el rendimiento máximo cuando el perfil de carga tenga una combinación de creación de página nueva (10%), modificación de páginas existentes (80%) y creación y modificación de una página en sucesión (10%). La complejidad de la página sigue siendo la misma que en el perfil de la prueba de referencia 1. La modificación básica de la página se realiza agregando una imagen y modificando el contenido del texto. Nuevamente, el ejercicio se realizó sobre una carga base de 300 páginas de complejidad, tal como se define en la prueba de referencia 1.
 
    * **Resultado** El rendimiento máximo para este escenario de operación mixta fue de 6288 transacciones/hora. Se trata de un aumento de aproximadamente el 93 % en comparación con una instancia de autor independiente para la misma prueba de referencia.
 
@@ -168,7 +168,7 @@ Consulte también los comentarios adicionales sobre [Paralelización](/help/mana
 
 ### Recomendaciones de hardware {#hardware-recommendations}
 
-Normalmente puede utilizar el mismo hardware para su entorno de creación que se recomienda para su entorno de publicación. Normalmente, el tráfico de sitios web es mucho menor en los sistemas de creación, pero la eficiencia de la caché también es menor. Sin embargo, el factor fundamental aquí es el número de autores que trabajan en paralelo, junto con el tipo de acciones que se están realizando en el sistema. En general, la agrupación en clústeres AEM (del entorno de creación) es más eficaz para escalar las operaciones de lectura; en otras palabras, un clúster de AEM se escala bien con los autores que realizan operaciones de edición básicas.
+Normalmente puede utilizar el mismo hardware para el entorno de creación que se recomienda para el entorno de publicación. Normalmente, el tráfico de sitios web es mucho menor en los sistemas de creación, pero la eficiencia de la caché también es menor. Sin embargo, el factor fundamental aquí es el número de autores que trabajan en paralelo, junto con el tipo de acciones que se están realizando en el sistema. En general, la agrupación en clústeres de AEM (del entorno de creación) es más eficaz para escalar las operaciones de lectura; en otras palabras, un clúster de AEM se escala bien con los autores que realizan operaciones de edición básicas.
 
 Las pruebas de referencia de Adobe se realizaron utilizando el sistema operativo RedHat 5.5, que se ejecuta en una plataforma de hardware Hewlett-Packard ProLiant DL380 G5 con la siguiente configuración:
 
@@ -181,7 +181,7 @@ Las pruebas de referencia de Adobe se realizaron utilizando el sistema operativo
 
 Las instancias de AEM se ejecutaban con un tamaño mínimo de pila de 256M, un tamaño máximo de pila de 1024M.
 
-## Publicar cálculos específicos del entorno {#publish-environment-specific-calculations}
+## Publicar cálculos específicos de entorno {#publish-environment-specific-calculations}
 
 ### Eficacia del almacenamiento en caché y tráfico {#caching-efficiency-and-traffic}
 
@@ -229,9 +229,9 @@ Las variables de la ecuación son las siguientes:
    <td><p>Utilice 1 para una aplicación sencilla, 2 para una aplicación compleja o un valor intermedio:</p>
     <ul>
      <li>1: sitio completamente anónimo y orientado al contenido</li>
-     <li>1.1: sitio completamente anónimo y orientado al contenido con personalización de cliente/destino</li>
-     <li>1.5: un sitio orientado al contenido con secciones anónimas e iniciadas, personalización de cliente/Target</li>
-     <li>1.7: para un sitio orientado al contenido con secciones anónimas e iniciadas, personalización de cliente/Target y contenido generado por el usuario</li>
+     <li>1.1: sitio completamente anónimo y orientado al contenido con personalización de cliente/Destinatario</li>
+     <li>1.5: sitio orientado al contenido con secciones anónimas e iniciadas, personalización de cliente/Destinatario</li>
+     <li>1.7: para un sitio orientado al contenido con secciones anónimas e iniciadas, personalización de cliente/Destinatario y contenido generado por el usuario</li>
      <li>2: donde todo el sitio requiere iniciar sesión, con un uso extensivo del contenido generado por el usuario y una variedad de técnicas de personalización</li>
     </ul> </td>
   </tr>
@@ -244,8 +244,8 @@ Las variables de la ecuación son las siguientes:
    <td>Utilice un valor entre 1 y 10 para indicar la complejidad de las plantillas. Los números más altos indican plantillas más complejas, utilizando el valor 1 para sitios con un promedio de 10 componentes por página, el valor 5 para un promedio de página de 40 componentes y 10 para un promedio de más de 100 componentes.</td>
   </tr>
   <tr>
-   <td>activations</td>
-   <td>Número de activaciones promedio (replicación de páginas y recursos de tamaño medio del autor al nivel de publicación) por hora dividido por x, donde x es el número de activaciones realizadas en un sistema sin efectos secundarios de rendimiento para otras tareas procesadas por el sistema. También puede predefinir un valor inicial pesimista como x = 100.<br /> </td>
+   <td>activaciones</td>
+   <td>Número de activaciones promedio (replicación de páginas y recursos de tamaño medio desde el autor al nivel de publicación) por hora dividido por x, donde x es el número de activaciones realizadas en un sistema sin efectos secundarios de rendimiento para otras tareas procesadas por el sistema. También puede predefinir un valor inicial pesimista como x = 100.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -273,10 +273,10 @@ Además del cálculo para una aplicación Web predeterminada, es posible que deb
 
 El procesamiento extensivo de recursos digitales requiere recursos de hardware optimizados, los factores más relevantes son el tamaño de la imagen y el rendimiento máximo de las imágenes procesadas.
 
-Asigne al menos 16 GB de pila y configure el flujo de trabajo de recursos de actualización de DAM para utilizar el paquete [de](/help/assets/camera-raw.md) Camera Raw para la ingestión de imágenes sin procesar.
+Asigne al menos 16 GB de pila y configure el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM para utilizar el paquete [de](/help/assets/camera-raw.md) Camera Raw para la ingestión de imágenes sin procesar.
 
 >[!NOTE]
-Un mayor rendimiento de las imágenes significa que los recursos informáticos deben ser capaces de mantener el ritmo de la E/S del sistema y viceversa. Por ejemplo, si los flujos de trabajo se inician mediante la importación de imágenes, la carga de muchas imágenes a través de WebDAV podría causar un retraso en los flujos de trabajo.
+Un mayor rendimiento de las imágenes significa que los recursos informáticos deben ser capaces de mantener el ritmo de la E/S del sistema y viceversa. Por ejemplo, si la importación de imágenes inicia flujos de trabajo, cargar muchas imágenes a través de WebDAV podría causar un retraso de flujos de trabajo.
 El uso de discos separados para TarPM, almacén de datos e índice de búsqueda puede ayudar a optimizar el comportamiento de E/S del sistema (sin embargo, generalmente tiene sentido mantener el índice de búsqueda localmente).
 
 >[!NOTE]
@@ -297,7 +297,7 @@ Tenga en cuenta también que los autores que trabajen en paralelo percibirán ef
 
 ### Consideraciones sobre el tamaño de Comunidades de AEM {#aem-communities-sizing-considerations}
 
-Los sitios de AEM que incluyen funciones de comunidades de AEM (sitios de la comunidad) experimentan un alto nivel de interacción de los visitantes del sitio (miembros) en el entorno de publicación.
+Los sitios de AEM que incluyen funciones de comunidades de AEM (sitios de la comunidad) experimentan un alto nivel de interacción con los visitantes del sitio (miembros) en el entorno de publicación.
 
 Las consideraciones de tamaño de un sitio de comunidad dependen de la interacción esperada de los miembros de la comunidad y de si el rendimiento óptimo del contenido de la página es de mayor importancia.
 
