@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
+source-git-commit: 28354bd9785fa83939f9e3b051aac195d7706633
 
 ---
 
@@ -204,7 +204,7 @@ Asegúrese de que ha realizado los siguientes pasos:
 
 >[!CAUTION]
 >
->Cree sólo una configuración IMS válida. No cree varias configuraciones de IMS.
+>Cree sólo una configuración IMS válida.
 >
 > Asegúrese de que la configuración esté correcta. En caso de que la configuración no esté en buen estado, elimínela y cree una nueva configuración en buen estado.
 
@@ -290,7 +290,7 @@ Brand Portal se ha configurado correctamente con la instancia de creación de AE
 * [Publicación de recursos de AEM Assets en Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Publicación de carpetas de AEM Assets en Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publicación de colecciones de AEM Assets en Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configure Asset Sourcing](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) para que los usuarios de Brand Portal puedan contribuir y publicar recursos en Recursos AEM.
+* [Configure Asset Sourcing](https://docs.adobe.com/content/help/es-ES/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) para que los usuarios de Brand Portal puedan contribuir y publicar recursos en Recursos AEM.
 
 ## Configuración de actualización {#upgrade-integration-65}
 
