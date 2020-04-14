@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -20,21 +20,21 @@ source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
 Las plantillas de formulario XFA o XDP son las plantillas para:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Canal](/help/forms/using/web-channel-print-channel.md#printchannel) de impresión de comunicaciones [interactivas](/help/forms/using/interactive-communications-overview.md)
+* [Imprimir canal](/help/forms/using/web-channel-print-channel.md#printchannel) de comunicaciones [interactivas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de diseños
 
-Un XDP está diseñado en Adobe Forms Designer. Este artículo proporciona detalles sobre cómo diseñar los XDP para crear correspondencias/comunicaciones interactivas eficaces, como dónde utilizar campos de formulario o áreas de destino y cuándo utilizar fragmentos de diseño.
+Un XDP está diseñado en Adobe Forms Designer. Este artículo proporciona detalles sobre cómo diseñar los XDP para crear correspondencias/comunicaciones interactivas eficaces, como dónde utilizar campos de formulario o áreas de destinatario y cuándo utilizar fragmentos de diseño.
 
 ## Creación de un diseño para letras o para el canal de impresión de Interactive Communications {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Un diseño define el diseño gráfico de un canal de letras e impresiones de una comunicación interactiva. La presentación puede contener campos de formulario típicos como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas objetivo. Cree la presentación en el diseñador de formularios y, una vez completada, el especialista en aplicaciones la carga en el servidor AEM. Desde allí, puede seleccionar el diseño al crear una plantilla de correspondencia o un canal de impresión de una comunicación interactiva.
+Un diseño define el diseño gráfico de un canal de letras e impresiones de una comunicación interactiva. La presentación puede contener campos de formulario típicos como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas de destinatario. Cree la presentación en el diseñador de formularios y, una vez completada, el especialista en aplicaciones la carga en el servidor AEM. Desde allí, puede seleccionar el diseño al crear una plantilla de correspondencia o un canal de impresión de una comunicación interactiva.
 
 ![Designer: crear un diseño](assets/claimsubrogationlayout.png)
 
-Siga estos pasos para crear diseños para letras/canales de impresión de Interactive Communications:
+Siga estos pasos para crear diseños para letras/canal de impresión de Interactive Communications:
 
-1. Analizar el diseño y determinar el contenido que se repite en todas las páginas; generalmente el encabezado y pie de página encajan en esta categoría. Este contenido se coloca en las páginas de formato del diseño. El contenido restante va a las páginas de trabajo del diseño. En una chaqueta de política, el logotipo y la dirección de empresa se pueden agregar al encabezado y al pie de página de la página de formato. Por ejemplo, la Notificación de cancelación utiliza la misma presentación.
+1. Analizar el diseño y determinar el contenido que se repite en todas las páginas; generalmente el encabezado y pie de página encajan en esta categoría. Este contenido se coloca en las páginas de formato del diseño. El contenido restante va a las páginas de trabajo del diseño. En una chaqueta de política, el logotipo y la dirección de compañía se pueden agregar al encabezado y al pie de página de la página de formato. Por ejemplo, la Notificación de cancelación utiliza la misma presentación.
 1. Al diseñar páginas de trabajo, divida el contenido de la página en secciones. Cada sección está diseñada como un subformulario incrustado en la propia presentación o como una presentación de fragmento. Si la sección contiene una tabla, modele la sección como un fragmento de diseño.
 1. Un diseño se puede diseñar de la siguiente manera:
 
@@ -44,16 +44,16 @@ Siga estos pasos para crear diseños para letras/canales de impresión de Intera
    1. Sección Los detalles de interés adicionales contienen sólo dos elementos colocados uno debajo de otro, pueden contener datos grandes y están diseñados como de posición variable.
    1. Otras secciones contienen elementos en posiciones específicas, por lo que están diseñadas como maquetaciones colocadas.
    1. Si la sección contiene elementos en posiciones específicas, divida una sección en subformularios y estos elementos contienen grandes cantidades de datos. A continuación, organice los subformularios para lograr el comportamiento deseado.
-   1. En la sección de residencia principal, agregue un área de destino de marcador de posición. Este marcador de posición está enlazado a la residencia principal de fragmento en el momento del diseño de la carta/comunicación interactiva.
+   1. En la sección de residencia principal, agregue un área de destinatario de marcador de posición. Este marcador de posición está enlazado a la residencia principal de fragmento en el momento del diseño de la carta/comunicación interactiva.
    1. Cargue el diseño (y el fragmento, si lo hay, que utiliza el diseño) en el servidor de AEM Forms.
 
 ### Usar subformulario en una plantilla XDP {#usesubformxdp}
 
-Una vez analizada la presentación necesaria para crear la comunicación interactiva, puede crear subformularios en la plantilla XDP con Forms Designer. Los componentes de subformulario en blanco que se utilizan en la plantilla XDP resultan en la visualización de áreas de destino en el canal Imprimir de la comunicación interactiva.
+Una vez analizada la presentación necesaria para crear la comunicación interactiva, puede crear subformularios en la plantilla XDP con Forms Designer. Los componentes de subformulario en blanco que se utilizan en la plantilla XDP dan como resultado la visualización de áreas de destinatario en el canal Imprimir de la Comunicación interactiva.
 
 >[!NOTE]
 >
->Agregue contenido al canal Imprimir de la comunicación interactiva en lugar de agregar contenido al componente de subformulario en la plantilla XDP. Agregue contenido a las áreas de destino en el canal Imprimir mediante fragmentos de [documento, gráficos, imágenes](../../forms/using/create-interactive-communication.md#main-pars-header-741471925)y fragmentos de diseño.
+>Añada contenido en el canal de impresión de la comunicación interactiva en lugar de agregar contenido al componente de subformulario en la plantilla XDP. Añada contenido en las áreas de destinatario del canal Imprimir mediante fragmentos de [documento, gráficos, imágenes](create-interactive-communication.md#step2)y fragmentos de diseño.
 
 Siga estos pasos para utilizar subformulario en una plantilla XDP:
 
@@ -83,7 +83,7 @@ Siga estos pasos para utilizar subformulario en una plantilla XDP:
 
    1. Especifique un nombre para el subformulario en el campo **Nombre** .
    1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
-   Repita los pasos del 2 al 5 para agregar más subformularios a la plantilla XDP. Agregue [texto, fragmentos de documento, imágenes y gráficos](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) a las áreas de destino solo durante la creación de la comunicación interactiva.
+   Repita los pasos del 2 al 5 para agregar más subformularios a la plantilla XDP. Añada [texto, fragmentos de documento, imágenes y gráficos](create-interactive-communication.md#step2) en las áreas de destinatario solo durante la creación de la comunicación interactiva.
 
 1. Seleccione **Archivo** > **Guardar como** para guardar el archivo en el sistema de archivos local:
 
@@ -98,7 +98,7 @@ Utilice el componente Campo de imagen o Subformulario en la plantilla XDP y agre
 
 >[!NOTE]
 >
->Agregue una imagen al canal Imprimir de la comunicación interactiva en lugar de agregar una imagen al componente Campo de imagen o Subformulario en la plantilla XDP. Para obtener más información, consulte [Adición de contenido a la comunicación](../../forms/using/create-interactive-communication.md#step2)interactiva.
+>Añada la imagen en el canal de impresión de la comunicación interactiva en lugar de agregar la imagen al campo de imagen o al componente Subformulario en la plantilla XDP. Para obtener más información, consulte [Añadir contenido a la comunicación](../../forms/using/create-interactive-communication.md#step2)interactiva.
 
 Siga estos pasos para utilizar el componente Campo de imagen en una plantilla XDP:
 
@@ -111,11 +111,11 @@ Siga estos pasos para utilizar el componente Campo de imagen en una plantilla XD
 
 ### Creación de una plantilla XDP para fragmentos de diseño {#xdplayoutfragments}
 
-Utilice el componente Tabla de Forms Designer para crear fragmentos de diseño y, a continuación, utilizarlos para crear tablas mientras se crea el canal Imprimir de Comunicación interactiva. El uso de fragmentos de diseño para crear tablas garantiza que el contenido de la tabla conserva la estructura cuando el canal web se genera automáticamente mediante el canal de impresión.
+Utilice el componente Tabla de Forms Designer para crear fragmentos de diseño y, a continuación, utilizarlos para crear tablas mientras crea el canal Imprimir de Comunicación interactiva. El uso de fragmentos de diseño para crear tablas garantiza que el contenido de la tabla conserva la estructura cuando el canal web se genera automáticamente mediante el canal de impresión.
 
 >[!NOTE]
 >
->Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) del modelo de datos del formulario únicamente durante la creación de la comunicación interactiva.
+>Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos](create-interactive-communication.md#step2) del modelo de datos del formulario únicamente durante la creación de la comunicación interactiva.
 
 Siga estos pasos para utilizar el componente Tabla en la plantilla XDP con Forms Designer:
 
@@ -127,14 +127,14 @@ Siga estos pasos para utilizar el componente Tabla en la plantilla XDP con Forms
    1. Toque **Aceptar**.
 
 1. Toque **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón derecho en los nombres de celda incluidos en el encabezado y otras filas y seleccione **Cambiar nombre de objeto** para cambiar el nombre de las celdas de la tabla.
-1. Haga clic en los campos de texto del encabezado de tabla en la vista **** Diseño y cámbieles el nombre.
-1. Arrastre y suelte el componente Campo **de** texto de la biblioteca **de** objetos en cada celda de la tabla de la vista **** Diseño. Siga este paso para poder enlazar celdas de tabla con los objetos del modelo de datos de formulario durante la creación de la comunicación interactiva.
+1. Haga clic en los campos de texto del encabezado de tabla de la Vista **** Diseño y cámbieles el nombre.
+1. Arrastre y suelte el componente Campo **de** texto de la biblioteca **de** objetos en cada celda de la tabla de la Vista **** Diseño. Siga este paso para poder enlazar celdas de tabla con los objetos del modelo de datos de formulario durante la creación de la comunicación interactiva.
 
    ![Campos de texto en una tabla](assets/text_fields_table_new.png)
 
 1. Seleccione el nombre de la fila en el panel izquierdo y seleccione **Objeto** > **Enlace** > **Repetir fila para cada elemento** de datos. Realice este paso para asegurarse de que si se crea un enlace entre las celdas de tabla de esta fila con objetos del modelo de datos de formulario de tipo colección, la fila de tabla se repite automáticamente para cada elemento de datos disponible en la base de datos.
 
-   Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) del modelo de datos del formulario únicamente durante la creación de la comunicación interactiva.
+   Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos](create-interactive-communication.md#step2) del modelo de datos del formulario únicamente durante la creación de la comunicación interactiva.
 
 1. Seleccione **Archivo** > **Guardar como** para guardar el archivo en el sistema de archivos local:
 
@@ -147,15 +147,15 @@ Siga estos pasos para utilizar el componente Tabla en la plantilla XDP con Forms
 
 Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
 
-1. Seleccione **Formularios** > **Formularios y documentos**.
+1. Seleccione **Formularios** > **Formularios y Documentos**.
 1. Toque **Crear** > Cargar **archivo**.
 1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y toque **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
-## Uso del esquema {#using-schema}
+## Uso de esquema {#using-schema}
 
-Puede utilizar un esquema en un fragmento de diseño o diseño, pero no es necesario. Si utiliza un esquema, asegúrese de lo siguiente:
+Puede utilizar un esquema en un fragmento de diseño o diseño, pero no es obligatorio. Si utiliza un esquema, asegúrese de lo siguiente:
 
-1. El diseño y todos los diseños de fragmento utilizados en una carta o comunicación interactiva utilizan el mismo esquema que la letra o la comunicación interactiva.
+1. El diseño y todos los diseños de fragmento utilizados en una carta/Comunicación interactiva utilizan el mismo esquema que la letra/Comunicación interactiva.
 1. Todos los campos necesarios para rellenarse con datos están enlazados al esquema.
 
 ## Creación de campos relacionados {#creating-relatable-fields}
@@ -180,13 +180,13 @@ Un campo relativo no debe:
 
 Siempre que un campo relativo cumpla los criterios descritos anteriormente, puede estar en cualquier ubicación y en cualquier profundidad de anidación del diseño. Puede utilizar campos relacionados dentro de las páginas de formato.
 
-Los campos son más flexibles en su configuración de presentación que los subformularios de área de destino; sin embargo, están ligadas a un solo tipo de valor. Puede hacer que un campo sea grande o establecer su anchura y altura fijas, etc. El resultado de la regla o módulo resuelto se inserta en el campo.
+Los campos son más flexibles en su configuración de presentación que los subformularios de área de destinatario; sin embargo, están ligadas a un solo tipo de valor. Puede hacer que un campo sea grande o establecer su anchura y altura fijas, etc. El resultado de la regla o módulo resuelto se inserta en el campo.
 
 ## Decidir cuándo utilizar subformularios y campos de texto {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
-Utilice un subformulario si desea capturar contenido de varios módulos en una presentación vertical de arriba hacia abajo (varios párrafos o imágenes). La presentación debe tener en cuenta el hecho de que el subformulario crece en altura para adaptarse a su contenido. Si no puede estar seguro de que la longitud del contenido asociado al subformulario o destino nunca exceda el espacio reservado para el subformulario en la presentación, cree el subformulario como un elemento secundario dentro de un contenedor de subformulario de posición variable. Este proceso garantiza que los objetos de presentación situados debajo del subformulario fluyan hacia abajo a medida que crece el subformulario.
+Utilice un subformulario si desea capturar contenido de varios módulos en una presentación vertical de arriba hacia abajo (varios párrafos o imágenes). La presentación debe tener en cuenta el hecho de que el subformulario crece en altura para adaptarse a su contenido. Si no puede estar seguro de que la longitud del contenido asociado al subformulario o destinatario nunca exceda el espacio reservado para el subformulario en la presentación, cree el subformulario como secundario en un contenedor de subformulario de posición variable. Este proceso garantiza que los objetos de presentación situados debajo del subformulario fluyan hacia abajo a medida que crece el subformulario.
 
-Utilice un campo si desea capturar datos de módulos o datos de elementos de diccionario de datos en el esquema del diseño (porque los campos están enlazados a datos) o para mostrar contenido de módulos en una página de formato. Recuerde que el contenido de una página de formato no puede fluir con el contenido de la página de trabajo, por lo que debe asegurarse de que el campo de imagen se utiliza como logotipo de encabezado. Esta tabla proporciona más criterios para decidir cuándo utilizar un subformulario o un campo en una presentación.
+Utilice un campo si desea capturar datos de módulos o datos de elementos de diccionario de datos en el esquema de la maquetación (porque los campos están enlazados a datos) o para mostrar contenido de módulos en una página de formato. Recuerde que el contenido de una página de formato no puede fluir con el contenido de la página de trabajo, por lo que debe asegurarse de que el campo de imagen se utiliza como logotipo de encabezado. Esta tabla proporciona más criterios para decidir cuándo utilizar un subformulario o un campo en una presentación.
 
 <table>
  <tbody>
@@ -204,11 +204,11 @@ Utilice un campo si desea capturar datos de módulos o datos de elementos de dic
   </tr>
   <tr>
    <td><p>Los grupos de datos repetitivos, opcionales y condicionales están enlazados a subformularios para reducir el riesgo de errores de diseño que podrían producirse si se utilizan secuencias de comandos para obtener los mismos resultados</p> </td>
-   <td><p>Los elementos como el logotipo y la dirección de su organización aparecen en todas las páginas de una carta o comunicación interactiva. En este caso, cree campos de formulario para esos elementos y colóquelos en la página de formato. Si establece el enlace de campo en "Sin enlace de datos", los campos no aparecerán como campos relacionados en el Editor de cartas/comunicaciones interactivas. Si desea relacionar algún tipo de contenido con estos campos, deben tener enlace.</p> <p>Si la dirección de su empresa contiene más de una línea de datos, utilice el campo de texto con la opción "Permitir líneas múltiples" para representar la dirección en la presentación.</p> <p>Si el tipo de datos de un campo de texto se define como texto sin formato, se utiliza la versión de texto sin formato de la salida del módulo en lugar de la versión de texto enriquecido (se descarta todo el formato). Para conservar el formato, defina el tipo de datos del campo de texto en texto enriquecido.</p> </td>
+   <td><p>Los elementos como el logotipo y la dirección de su organización aparecen en todas las páginas de una carta o comunicación interactiva. En este caso, cree campos de formulario para esos elementos y colóquelos en la página de formato. Si establece el enlace de campo en "Sin enlace de datos", los campos no aparecerán como campos relacionados en el Editor de cartas/comunicaciones interactivas. Si desea relacionar algún tipo de contenido con estos campos, deben tener enlace.</p> <p>Si la dirección de compañía contiene más de una línea de datos, utilice el campo de texto con la opción "Permitir líneas múltiples" para representar la dirección en la presentación.</p> <p>Si el tipo de datos de un campo de texto se define como texto sin formato, se utiliza la versión de texto sin formato de la salida del módulo en lugar de la versión de texto enriquecido (se descarta todo el formato). Para conservar el formato, defina el tipo de datos del campo de texto en texto enriquecido.</p> </td>
   </tr>
   <tr>
    <td><p>El texto tiene posición variable</p> </td>
-   <td><p>Los campos de texto y los campos de imagen se utilizan en las páginas de formato. Las páginas de formato no pueden utilizar subformularios como áreas de destino.</p> </td>
+   <td><p>Los campos de texto y los campos de imagen se utilizan en las páginas de formato. Las páginas de formato no pueden utilizar subformularios como áreas de destinatario.</p> </td>
   </tr>
   <tr>
    <td><p>Los objetos se agrupan y organizan sin enlazar el subformulario a un elemento de datos</p> </td>
