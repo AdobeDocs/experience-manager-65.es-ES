@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -26,5 +26,5 @@ Existen tres formas de enviar archivos a PDF Generator para su procesamiento:
 
 * Los administradores pueden acceder a las páginas de PDFG en la Consola de administración. (Consulte [Conversión de archivos con PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
 * Los usuarios pueden acceder a las páginas del usuario final del PDFG iniciando sesión en `http(s)://'[server]:[port]'/pdfgui.` Desde allí pueden acceder a las páginas de la impresora de red PDFG, Crear archivos PDF, HTML a PDF, Exportar archivos PDF y Optimizar archivos PDF.
-* Puede configurar los extremos de los servicios. (Consulte <!--Fix broken link to Managing Endpoints --> y [Generar recomendaciones](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)de servicio PDF). [](/help/forms/using/admin-help/overview-5.md#main-pars-header)
+* Puede configurar los extremos de los servicios. Consulte <!--Fix broken link to Managing Endpoints --> [Generar recomendaciones](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)de servicio PDF.
 
