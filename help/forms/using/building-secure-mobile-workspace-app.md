@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -38,4 +38,4 @@ Debe archivar el proyecto Xcode para la aplicación de AEM Forms para crear el a
 1. En la lista **[!UICONTROL Configuración]** , expanda Firma **[!UICONTROL de código]**.
 1. Para Identidad **[!UICONTROL de firma de]** código, seleccione la firma adecuada. Asegúrese de que la misma firma está seleccionada para **[!UICONTROL Depurar]**, **[!UICONTROL Versión]** y **[!UICONTROL Cualquier SDK]** de iOS.
 1. En **[!UICONTROL PROJECT]**, seleccione **[!UICONTROL AEM Forms]** y asegúrese de que la firma adecuada está seleccionada para Identidad **[!UICONTROL de firma de]** código, **[!UICONTROL Depurar]**, **[!UICONTROL Liberar]** **** y Cualquier SDK de iOS.
-1. Compilación y distribución de aplicaciones de AEM Forms. Para obtener instrucciones detalladas sobre cómo crear y distribuir la aplicación de AEM Forms, consulte [Compilación del instalador para la aplicación](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12)de AEM Forms.
+1. Compilación y distribución de aplicaciones de AEM Forms. Para obtener instrucciones detalladas sobre cómo crear y distribuir la aplicación de AEM Forms, consulte [Compilación del instalador para la aplicación](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)de AEM Forms.
