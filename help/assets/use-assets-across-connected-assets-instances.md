@@ -3,7 +3,7 @@ title: Utilice los recursos conectados para compartir recursos DAM en el flujo d
 description: Utilice los recursos disponibles en una implementación remota de recursos de Adobe Experience Manager al crear sus páginas web en otra implementación de Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
 
 ---
 
@@ -95,7 +95,7 @@ Para configurar la conectividad de los recursos conectados y los sitios locales,
 
    >[!NOTE]
    >
-   >Todas las representaciones disponibles en la implementación remota de AEM se buscan cuando los creadores recuperan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. El flujo de trabajo del recurso de actualización DAM se activa y crea más representaciones. Estas representaciones solo están disponibles en la implementación local de Sites y no en la implementación remota de DAM.
+   >Todas las representaciones disponibles en la implementación remota de AEM se buscan cuando los creadores recuperan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Agregue la instancia de AEM Sites como uno de los **[!UICONTROL orígenes permitidos]** en la configuración CORS de AEM Assets remota.
 
@@ -111,7 +111,7 @@ Los creadores del sitio web utilizan el buscador de contenido para conectarse a 
 
 Los creadores pueden utilizar los recursos disponibles en las instancias DAM local y DAM remota en una sola página web. Utilice el buscador de contenido para decidir si buscar en el DAM local o en el DAM remoto.
 
-Solo se buscan las etiquetas de recursos remotos que tienen una etiqueta correspondiente exacta (con la misma jerarquía de taxonomía) disponible en la instancia local de Sites. Todas las demás etiquetas se descartan. Los creadores pueden buscar recursos remotos utilizando todas las etiquetas presentes en la implementación remota de AEM, ya que ofrece una búsqueda de texto completo.
+Solo se buscan las etiquetas de recursos remotos que tienen una etiqueta correspondiente exacta junto con la misma jerarquía de taxonomía, disponible en la instancia de sitios local. Todas las demás etiquetas se descartan. Los creadores pueden buscar recursos remotos utilizando todas las etiquetas presentes en la implementación remota de AEM, ya que ofrece una búsqueda de texto completo.
 
 ### Introducción al uso {#walk-through-of-usage}
 
