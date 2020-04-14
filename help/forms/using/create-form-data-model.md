@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -84,7 +84,7 @@ Haga lo siguiente para configurar su base de datos MySQL:
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms proporciona una interfaz de usuario intuitiva para [crear un](../../forms/using/data-integration.md#main-pars-header-1524967585)modelo de datos de formulario a partir de orígenes de datos configurados. Puede utilizar varios orígenes de datos en un modelo de datos de formulario. Para nuestro caso de uso, usaremos la fuente de datos MySQL configurada.
+AEM Forms proporciona una interfaz de usuario intuitiva para [crear un modelo](data-integration.md) de datos de formulario a partir de orígenes de datos configurados. Puede utilizar varios orígenes de datos en un modelo de datos de formulario. Para nuestro caso de uso, usaremos la fuente de datos MySQL configurada.
 
 Para crear el modelo de datos de formulario, haga lo siguiente:
 
