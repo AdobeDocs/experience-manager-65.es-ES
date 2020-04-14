@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -45,16 +45,16 @@ Los paneles de repetición son instancias de un panel que se agregan o eliminan 
 
 En los formularios adaptables, puede escribir expresiones para agregar comportamientos como mostrar/ocultar dinámicos campos y paneles. También puede escribir expresiones para agregar campos calculados, hacer que los campos sean de solo lectura, lógica de validación y mucho más. Los formularios adaptables admiten las siguientes expresiones:
 
-* **[expresiones](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**de acceso: para activar o desactivar un campo.
-* **[Calcular expresiones](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: para calcular automáticamente el valor de un campo.
-* **[Haga clic en expresión](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**: para gestionar acciones al hacer clic en el evento de un botón.
-* **[Secuencia de comandos](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p)de inicialización:**realizar una acción al inicializar un campo.
-* **[expresión](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**de opciones: para rellenar dinámicamente una lista desplegable.
+* **[expresiones](#access-expression-enablement-expression)**de acceso: para activar o desactivar un campo.
+* **[Calcular expresiones](#calculate-expression)**: para calcular automáticamente el valor de un campo.
+* **[Haga clic en expresión](#click-expression)**: para gestionar acciones al hacer clic en el evento de un botón.
+* **[Secuencia de comandos](#initialization-script)de inicialización:**realizar una acción al inicializar un campo.
+* **[expresión](#options-expression)**de opciones: para rellenar dinámicamente una lista desplegable.
 * **[expresión](#summary)**de resumen: para calcular dinámicamente el título de un acordeón.
-* **[Validar expresiones](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: para validar un campo.
-* **[Secuencia de comandos](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)de confirmación de valor:**para cambiar los componentes de un formulario después de cambiar el valor de un campo.
-* **[expresión](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**de visibilidad: para controlar la visibilidad de un campo y un panel.
-* **[expresión](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**de finalización de pasos: para evitar que un usuario vaya al paso siguiente de un asistente.
+* **[Validar expresiones](#validate-expression)**: para validar un campo.
+* **[Secuencia de comandos](#value-commit-script)de confirmación de valor:**para cambiar los componentes de un formulario después de cambiar el valor de un campo.
+* **[expresión](#visibility-expression)**de visibilidad: para controlar la visibilidad de un campo y un panel.
+* **[expresión](#step-completion-expression)**de finalización de pasos: para evitar que un usuario vaya al paso siguiente de un asistente.
 
 ### Expresión de acceso (Expresión de habilitación) {#access-expression-enablement-expression}
 
@@ -134,7 +134,7 @@ La expresión validate se utiliza para validar los campos mediante la expresión
 
 **Se aplica a**: campos
 
-**Tipo** de devolución: La expresión devuelve un valor booleano que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
+**Tipo** de devolución: La expresión devuelve un valor booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
 **Ejemplo**: Para un campo que representa el código postal del Reino Unido, la expresión de validación es:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
