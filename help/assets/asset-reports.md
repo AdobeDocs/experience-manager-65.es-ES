@@ -1,24 +1,24 @@
 ---
 title: Informes sobre sus recursos digitales
-description: Conozca los informes sobre sus recursos en Recursos AEM que le ayudarán a comprender el uso, la actividad y el uso compartido de sus recursos digitales.
+description: Conozca los informes sobre sus recursos en Recursos AEM que le ayudarán a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: a839ec71e02ee5d92f054a686b7bb52142058ae9
 
 ---
 
 
 # Informes del recurso {#asset-reports}
 
-Los informes de recursos son una herramienta clave para evaluar la utilidad de la implementación de Recursos Adobe Experience Manager (AEM). Con Recursos AEM, puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
+El sistema de informes de recursos es una herramienta clave para evaluar la utilidad de la implementación de Recursos Adobe Experience Manager (AEM). Con Recursos AEM, puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
 
 Utilice la información de los informes para derivar métricas de éxito clave a fin de medir la adopción de Recursos AEM en su empresa y por parte de los clientes.
 
-El marco de informes de AEM Assets utiliza trabajos de Sling para procesar de forma asíncrona las solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
+La estructura de sistema de informes de AEM Assets utiliza trabajos de Sling para procesar de forma asíncrona solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
 
-La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a los informes archivados y ver los estados de ejecución de los informes (exitosos, fallidos y en cola).
+La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a los informes archivados y a los estados de ejecución de los informes de vista (exitosos, fallidos y en cola).
 
-Cuando se genera un informe, se le notifica mediante un mensaje de correo electrónico (opcional) y una notificación de bandeja de entrada. Puede ver, descargar o eliminar un informe desde la página con la lista de informes, donde se muestran todos los informes generados previamente.
+Cuando se genera un informe, se le notifica mediante un mensaje de correo electrónico (opcional) y una notificación de bandeja de entrada. Puede vista, descargar o eliminar un informe desde la página con la lista de informes, donde se muestran todos los informes generados previamente.
 
 ## Generar informes {#generate-reports}
 
@@ -36,18 +36,18 @@ Recursos AEM genera los siguientes informes estándar:
 
 Los administradores de AEM pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
 
-![Navegar por el informe de activos](assets/AssetsReportNavigation.png)
+![Página Herramientas para navegar por el informe de recursos](assets/AssetsReportNavigation.png)
 
 1. En la página Informes de recursos, toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas.
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y toque o haga clic en **[!UICONTROL Siguiente]**.
 
-   ![select_report](assets/choose_report.png)
+   ![Seleccionar tipo de informe](assets/choose_report.png)
 
    >[!NOTE]
    >
-   >Antes de generar un informe de descarga **[!UICONTROL de]** recursos, asegúrese de que el servicio de descarga de recursos está habilitado. En la consola web (`https://[aem_server]:[port]/system/console/configMgr`), abra la configuración del grabador **[!UICONTROL de eventos de CQ DAM]** de **[!UICONTROL día y seleccione la opción]** Recurso descargado (DESCARGADO)en Tipos de eventos si no está seleccionada.
+   >Antes de generar un informe de **[!UICONTROL descarga de recursos]**, compruebe que el servicio de descarga de recursos está habilitado. En la consola web (`https://[aem_server]:[port]/system/console/configMgr`), abra la configuración del **[!UICONTROL grabador de eventos de CQ DAM de día]** y seleccione la opción **[!UICONTROL Recurso descargado (DESCARGADO)]** en Tipos de eventos si no está seleccionada.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
 1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta, en el repositorio de CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es */content/dam*. Puede especificar una ruta diferente.
 
-   ![report_configuration](assets/report_configuration.png)
+   ![Página para agregar detalles del informe](assets/report_configuration.png)
 
    Elija el intervalo de fechas del informe.
 
@@ -69,38 +69,38 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
    >[!NOTE]
    >
-   >El informe Uso del **[!UICONTROL disco]** no incluye campos de intervalo de fechas porque sólo indica el uso actual del espacio en disco.
+   >El informe **[!UICONTROL Uso del disco]** no incluye campos de intervalo de fechas porque solo indica el uso actual del espacio en disco.
 
-   ![disk_usage_configuration](assets/disk_usage_configuration.png)
+   ![Página de detalles del informe Uso del disco](assets/disk_usage_configuration.png)
 
    Al crear el informe **[!UICONTROL Archivos]** , puede incluir o excluir subcarpetas. Sin embargo, no puede incluir representaciones de recursos para este informe.
 
-   ![files_report](assets/files_report.png)
+   ![Página de detalles del informe Archivos](assets/files_report.png)
 
-   El informe Compartir **** vínculos muestra las direcciones URL de los recursos que se comparten con usuarios externos desde Recursos AEM. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
+   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde AEM Assets. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
 
-   El informe Compartir **** vínculos no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en `/var/dam/share`.
+   The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![link_share](assets/link_share.png)
+   ![Página de detalles del informe Uso compartido de vínculos](assets/link_share.png)
 
 1. Toque o haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 
 1. En la página **[!UICONTROL Configurar columnas]** , se seleccionan algunas columnas para que aparezcan en el informe de forma predeterminada. Puede seleccionar más columnas. Anule la selección de una columna seleccionada para excluirla del informe.
 
-   ![configure_columns](assets/configure_columns.png)
+   ![Seleccionar o anular la selección de las columnas del informe](assets/configure_columns.png)
 
    Para mostrar un nombre de columna personalizado o una ruta de propiedad, configure las propiedades del binario de recursos en el nodo jcr:content en CRX. También puede agregarla mediante el selector de rutas de propiedad.
 
-   ![custom_columns](assets/custom_columns.png)
+   ![Crear columnas personalizadas para el informe](assets/custom_columns.png)
 
-1. Toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
-1. En la página Informes de recursos, el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo, Éxito, Fallido, En cola o Programado. El mismo estado aparece en la bandeja de entrada de notificaciones.Para ver la página del informe, toque o haga clic en el vínculo del informe. Como alternativa, seleccione el informe y toque **[!UICONTROL Ver]** en la barra de herramientas.
+1. Tap/click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
+1. En la página Informes de recursos, el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo, Éxito, Fallido, En cola o Programado. El mismo estado aparece en la bandeja de entrada de notificaciones.Para vista de la página del informe, toque o haga clic en el vínculo del informe. Como alternativa, seleccione el informe y toque la **[!UICONTROL Vista]** en la barra de herramientas.
 
-   ![report_page](assets/report_page.png)
+   ![Un informe generado](assets/report_page.png)
 
    Toque **[!UICONTROL Descargar]** desde la barra de herramientas para descargar el informe en formato CSV.
 
-## Agregar columnas personalizadas {#add-custom-columns}
+## Añadir columnas personalizadas {#add-custom-columns}
 
 Puede agregar columnas personalizadas a los siguientes informes para mostrar más datos según sus requisitos personalizados:
 
@@ -112,24 +112,23 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * Publicación de Brand Portal
 * Archivos
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
 1. En la página Informes de recursos, toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas.
 
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y toque o haga clic en **[!UICONTROL Siguiente]**.
 1. Configure los detalles del informe, como título, descripción, miniatura, ruta de carpeta e intervalo de fechas, según corresponda.
 
-1. Para mostrar una columna personalizada, especifique el nombre de la columna en debajo de Columnas **** personalizadas.
+1. Para mostrar una columna personalizada, especifique el nombre de la columna debajo de **[!UICONTROL Columnas personalizadas]**.
 
-   ![custom_columns-1](assets/custom_columns-1.png)
+   ![Especificar el nombre de la columna personalizada del informe](assets/custom_columns-1.png)
 
-1. Agregue la ruta de acceso de propiedad debajo del `jcr:content` nodo en CRXDE mediante el selector de rutas de propiedad. 
-También puede escribir la ruta en el campo de ruta de la propiedad.
+1. Añada la ruta de la propiedad bajo el `jcr:content` nodo en CRXDE mediante el selector de rutas de propiedad. También puede escribir la ruta en el campo de ruta de la propiedad.
 
-   ![property_picker](assets/property_picker.png)
+   ![Asignación de la ruta de la propiedad desde las rutas en jcr:content](assets/property_picker.png)
 
-   Para agregar más columnas personalizadas, toque o haga clic en **[!UICONTROL Agregar]** y repita los pasos 5 y 6.
+   Para agregar más columnas personalizadas, toque o haga clic en **[!UICONTROL Añadir]** y repita los pasos 5 y 6.
 
-1. Toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
+1. Tap/click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 
 ## Configurar el servicio de depuración {#configure-purging-service}
 
