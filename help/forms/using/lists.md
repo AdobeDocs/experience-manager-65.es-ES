@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -148,7 +148,7 @@ Siga los pasos siguientes para crear un hipervínculo en un recurso de texto:
 
 Cuando se trabaja con elementos de texto que contienen un gran cuerpo de texto, es necesario buscar una cadena de texto específica. También es posible que tenga que reemplazar una cadena de texto específica por una cadena alternativa.
 
-La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena de texto en un elemento de texto. La función también incluye una potente búsqueda de expresiones regular.
+La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena de texto en un elemento de texto. La función también incluye una potente búsqueda de expresión regular.
 
 #### Búsqueda de texto en un módulo de texto {#to-search-text-in-a-text-module}
 
@@ -408,7 +408,7 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
    * **Pie de página**: texto para mostrar para el pie de página
    * **Tipo**: tipo de columna adicional. Campo o Área de Destinatario. El tipo está habilitado para tablas de marcador de posición estático. El tipo se puede definir en el nivel de columna y no en el nivel de celda. Todas las celdas de una columna extendida serían del mismo tipo. Para una tabla dinámica, todas las columnas son del tipo Campo. Para las tablas que no son marcadores de posición, no se puede definir el tipo de columnas adicionales. En este caso, el tipo de celdas adicionales en la columna extendida es el mismo que el tipo de la última columna de esa fila; y el tipo de celda en fila adicional es el mismo que el tipo de última celda de esa columna.
    * **Proporción de anchura:** proporción de los anchos de columna de la tabla.
-   Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una letra](#main-pars-header-28).
+   Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una letra](#examplewithsamplefiles).
 
 1. Toque **Guardar**.
 
