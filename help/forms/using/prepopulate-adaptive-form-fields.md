@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -339,7 +339,7 @@ Puede utilizar el servicio de cumplimentación previa personalizado para los esc
 El servicio de prerfill es un servicio OSGi y se empaqueta a través del paquete OSGi. Puede crear el paquete OSGi, cargarlo e instalarlo en paquetes de AEM Forms. Antes de empezar a crear el paquete:
 
 * [Descargar el SDK del cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
-* [Descargar el paquete repetitivo](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
+* Descargar el paquete repetitivo
 
 * Coloque el archivo de datos (rellene previamente los datos) en el repositorio crx. Puede colocar el archivo en cualquier ubicación de la carpeta \contents de crx-repository.
 
