@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -84,7 +84,7 @@ Puede [ordenar cualquier columna de una tabla](../../forms/using/adaptive-forms-
 
 #### Restringir la disponibilidad de plantillas de formularios adaptables a rutas específicas {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-Los formularios adaptables han agregado compatibilidad con la propiedad cq:allowPaths. La propiedad [restringe la disponibilidad de plantillas de formularios adaptables a rutas](../../forms/using/creating-adaptive-form.md#main-pars-text)específicas.
+Los formularios adaptables han agregado compatibilidad con la propiedad cq:allowPaths. La propiedad [restringe la disponibilidad de plantillas de formularios adaptables a rutas](creating-adaptive-form.md#adaptive-form-templates)específicas.
 
 #### Añadir casillas de verificación en el formulario adaptable de forma dinámica {#add-check-boxes-to-the-adaptive-form-dynamically}
 
