@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -306,7 +306,7 @@ Para definir una regla basada en una función personalizada, seleccione Salida *
 
 ![Funciones personalizadas](assets/custom_functions_set_options_new.png)
 
-Para crear una función personalizada, consulte Funciones [personalizadas en el editor](../../forms/using/rule-editor.md#main-pars-header-296220653)de reglas.
+Para crear una función personalizada, consulte Funciones [personalizadas en el editor](#custom-functions)de reglas.
 
 Para definir una regla basada en un modelo de datos de formulario:
 
@@ -339,7 +339,7 @@ Para iniciar la interfaz de usuario del editor de reglas:
 
 ### A. Pantalla de regla de componente {#a-component-rule-display}
 
-Muestra el título del objeto de formulario adaptable a través del cual se inició el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
+Muestra el título del objeto de formulario adaptable a través del cual se ha iniciado el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
@@ -349,7 +349,7 @@ La ficha Objetos de formulario muestra una vista jerárquica de todos los objeto
 
 Los objetos de formulario que tienen una o varias reglas válidas aplicadas se marcan con un punto verde. Si alguna de las reglas aplicadas a un objeto de formulario no es válida, el objeto de formulario se marca con un punto amarillo.
 
-La ficha Funciones incluye un conjunto de funciones integradas, como Suma de, Mínimo de, Máx de, Media de, Número de y Validar formulario. Puede utilizar estas funciones para calcular valores en paneles repetitivos y filas de tabla y usarlos en instrucciones de acción y condición al escribir reglas. Sin embargo, también puede crear funciones [](../../forms/using/rule-editor.md#custom-functions) personalizadas.
+La ficha Funciones incluye un conjunto de funciones integradas, como Suma de, Mínimo de, Máx de, Media de, Número de y Validar formulario. Puede utilizar estas funciones para calcular valores en paneles repetitivos y filas de tabla y usarlos en instrucciones de acción y condición al escribir reglas. Sin embargo, también puede crear funciones [](#custom-functions) personalizadas.
 
 ![Ficha Funciones](assets/functions.png)
 
@@ -752,7 +752,7 @@ Cuando el usuario indica que ha vivido en su domicilio actual durante menos de 3
 
 En las versiones de AEM Forms anteriores al paquete de funciones 1 de AEM 6.1 Forms, los creadores y desarrolladores de formularios solían escribir expresiones en la ficha Secuencias de comandos del cuadro de diálogo Editar componente para añadir un comportamiento dinámico a los formularios adaptables. La ficha Secuencias de comandos ahora se reemplaza por el editor de reglas.
 
-Las secuencias de comandos o expresiones que debe haber escrito en la ficha Secuencias de comandos están disponibles en el editor de reglas. Aunque no puede realizar vistas ni editarlas en un editor visual, si forma parte del grupo de usuarios avanzados de formularios puede editar las secuencias de comandos en el editor de código.
+Las secuencias de comandos o expresiones que debe haber escrito en la ficha Secuencias de comandos están disponibles en el editor de reglas. Aunque no puede realizar vistas ni editarlas en un editor visual, si forma parte del grupo de usuarios avanzados de formularios, puede editar las secuencias de comandos en el editor de código.
 
 ## Reglas de ejemplo {#example}
 
