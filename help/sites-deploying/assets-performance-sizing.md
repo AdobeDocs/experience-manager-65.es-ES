@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -24,15 +24,15 @@ La gestión de activos digitales se utiliza con frecuencia en los casos en que e
 
 ## Problemas de rendimiento {#performance-issues}
 
-El rendimiento deficiente en la administración de recursos digitales puede afectar a la experiencia del usuario de tres maneras: rendimiento interactivo, procesamiento de recursos y velocidad de descarga. Para mejorar el rendimiento, es importante medir el rendimiento observado correctamente y establecer métricas objetivo.
+El rendimiento deficiente en la administración de recursos digitales puede afectar a la experiencia del usuario de tres maneras: rendimiento interactivo, procesamiento de recursos y velocidad de descarga. Para mejorar el rendimiento, es importante medir el rendimiento observado correctamente y establecer métricas de destinatario.
 
 **1. Búsqueda y exploración** interactivas Los usuarios buscan recursos o exploran el buscador de DAM y se quejan de los tiempos de respuesta lentos o de que los resultados de búsqueda no se muestran inmediatamente. Se trata de un problema de rendimiento interactivo.
 
-El rendimiento interactivo se mide en términos del tiempo de respuesta de la página. Este es el tiempo que transcurre desde la recepción de la solicitud HTTP hasta el cierre de la respuesta HTTP, que se puede determinar a partir de los archivos de registro de la solicitud. El rendimiento de destino habitual es un tiempo de respuesta de página inferior a dos segundos.
+El rendimiento interactivo se mide en términos del tiempo de respuesta de la página. Este es el tiempo que transcurre desde la recepción de la solicitud HTTP hasta el cierre de la respuesta HTTP, que se puede determinar a partir de los archivos de registro de la solicitud. El rendimiento de destinatario típico es un tiempo de respuesta de página inferior a dos segundos.
 
 **2. Procesamiento** de recursos Un problema de procesamiento de recursos se produce cuando los usuarios cargan recursos y tarda unos minutos en convertirlos e ingerirlos fácilmente en AEM DAM.
 
-El rendimiento del procesamiento de recursos se mide en términos del tiempo medio de finalización del proceso de flujo de trabajo. Este es el tiempo que tarda desde invocar el proceso de flujo de trabajo de actualización de recursos hasta su finalización, que se puede determinar desde la interfaz de usuario de los informes de flujo de trabajo. El rendimiento de destino típico depende del tamaño y el tipo de recursos procesados y del número de representaciones. Los ejemplos de rendimiento objetivo podrían ser los siguientes:
+El rendimiento del procesamiento de recursos se mide en términos del tiempo medio de finalización del proceso de flujo de trabajo. Este es el tiempo que tarda desde invocar el proceso de flujo de trabajo de actualización de recursos hasta su finalización, que se puede determinar desde la interfaz de usuario de los informes de flujo de trabajo. El rendimiento típico del destinatario depende del tamaño y el tipo de recursos procesados y del número de representaciones. Los ejemplos de rendimiento de destinatarios podrían ser los siguientes:
 
 * menos de diez segundos para imágenes menores de 1280 x 1280 píxeles que utilizan representaciones estándar
 * menos de un minuto para imágenes menores de 100 MB que utilizan representaciones estándar
@@ -40,7 +40,7 @@ El rendimiento del procesamiento de recursos se mide en términos del tiempo med
 
 **3. Velocidad** de descarga Un problema de rendimiento se produce al descargar desde AEM DAM y las miniaturas no se muestran inmediatamente al explorar DAM Admin o DAM Finder.
 
-El rendimiento del rendimiento del rendimiento se mide en términos de velocidad de descarga en kilobits por segundo. El rendimiento objetivo típico es de 300 kilobits por segundo para 100 descargas simultáneas.
+El rendimiento del rendimiento del rendimiento se mide en términos de velocidad de descarga en kilobits por segundo. El rendimiento típico del destinatario es de 300 kilobits por segundo para 100 descargas simultáneas.
 
 **4. Factores que influyen en el rendimiento del procesamiento de recursos**
 
@@ -60,11 +60,11 @@ Los procesos DAM están bien adaptados para ser ejecutados en paralelo en grande
 
 El procesamiento extensivo de recursos digitales requiere recursos de hardware optimizados, los factores más relevantes son el tamaño de la imagen y el rendimiento máximo de las imágenes procesadas.
 
-Asigne al menos 16 GB de pila y configure el flujo de trabajo de recursos de actualización de DAM para utilizar el paquete [de](/help/assets/camera-raw.md) Camera Raw para la ingestión de imágenes sin procesar.
+Asigne al menos 16 GB de pila y configure el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM para utilizar el paquete [de](/help/assets/camera-raw.md) Camera Raw para la ingestión de imágenes sin procesar.
 
 ## Explicación del sistema {#understanding-the-system}
 
-Una configuración DAM típica consiste en usuarios finales que acceden a DAM mediante un equilibrador de carga. La instancia de DAM puede formar parte de una configuración agrupada, donde cada instancia de DAM se ejecuta en un proceso de máquina virtual Java en una máquina física o una máquina virtual. El almacenamiento DAM lo proporciona un disco RAID en casos de configuración de una sola máquina o de almacenamiento de red administrado en caso de configuración en clúster.
+Una configuración DAM típica consiste en usuarios finales que acceden a DAM mediante un equilibrador de carga. La instancia de DAM puede formar parte de una configuración agrupada, donde cada instancia de DAM se ejecuta en un proceso de máquina virtual Java en una máquina física o una máquina virtual. El almacenamiento DAM lo proporciona un disco RAID en casos de configuración de una sola máquina o un almacenamiento de conexión de red administrado en caso de configuración en clúster.
 
 La leyenda siguiente describe las posibles áreas de riesgo de rendimiento con algunas soluciones, según corresponda.
 
@@ -80,7 +80,7 @@ La leyenda siguiente describe las posibles áreas de riesgo de rendimiento con a
 
 Las razones para una mala latencia y rendimiento en un NAS son generalmente la topología de red o la sobreutilización de NAS por parte de otros servicios.
 
-**Almacenamiento** conectado en red Los sistemas de almacenamiento de información conectado en red excesivamente utilizados pueden causar una serie de problemas:
+**Almacenamiento** conectado a la red Los sistemas de almacenamiento conectado a la red sobreutilizados pueden causar una serie de problemas:
 
 * El espacio en disco reducido es un problema que se puede evitar con frecuencia a través del tamaño adecuado de un proyecto DAM.
 * La latencia de disco alto se propagará a los tiempos de acceso lento para CRX y puede provocar problemas de rendimiento interactivos.
@@ -102,7 +102,7 @@ Para cada proyecto DAM, asegúrese de establecer un régimen de pruebas de rendi
 
 Hasta ahora, se han utilizado los siguientes ajustes de rendimiento en los proyectos:
 
-* Generación selectiva de representaciones: solo genere las representaciones que necesite agregando condiciones al flujo de trabajo de procesamiento de recursos, de modo que solo se generen representaciones más costosas para los recursos seleccionados.
+* Generación selectiva de representaciones: solo genere las representaciones que necesite agregando condiciones al flujo de trabajo de procesamiento de recursos, de modo que las representaciones más costosas solo se generen para los recursos seleccionados.
 * Almacén de datos compartidos entre instancias: cuando el espacio en disco es reducido, esto puede reducir considerablemente la cantidad de espacio en disco necesario a costa de mayores esfuerzos de configuración y perder la limpieza automática del almacén de datos.
 
 ## Lectura adicional {#further-reading}
