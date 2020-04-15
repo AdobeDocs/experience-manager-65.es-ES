@@ -1,24 +1,24 @@
 ---
-title: Ampliación de la funcionalidad de búsqueda de Recursos AEM
-description: Extienda las capacidades de búsqueda de Recursos AEM más allá de los valores predeterminados.
+title: Ampliar la funcionalidad de búsqueda de Recursos Adobe Experience Manager
+description: Extienda las capacidades de búsqueda de Recursos Adobe Experience Manager más allá de los valores predeterminados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
 # Ampliar búsqueda de recursos {#extending-assets-search}
 
-Puede ampliar las capacidades de búsqueda de recursos de Adobe Experience Manager (AEM). De forma predeterminada, Recursos AEM busca recursos por cadenas.
+Puede ampliar las capacidades [!DNL Adobe Experience Manager Assets] de búsqueda. De forma predeterminada, [!DNL Experience Manager Assets] busca recursos por cadenas.
 
 La búsqueda se realiza a través de la interfaz de QueryBuilder para que la búsqueda se pueda personalizar con varios predicados. Puede superponer el conjunto predeterminado de predicados en el siguiente directorio: `/apps/dam/content/search/searchpanel/facets`.
 
-También puede añadir fichas adicionales al panel de administración de Recursos AEM.
+También puede agregar fichas adicionales al panel [!DNL Assets] de administración.
 
 >[!CAUTION]
 >
->A partir de AEM 6.4, la IU clásica ya no se utiliza. Para ver el anuncio, consulte Funciones [obsoletas y eliminadas](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Se le recomienda utilizar la IU táctil. Para personalizar, consulte Facetas [de búsqueda](/help/assets/search-facets.md).
+>A partir de [!DNL Experience Manager] 6.4, la IU clásica está obsoleta. Para ver el anuncio, consulte Funciones [obsoletas y eliminadas](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recomienda utilizar la IU táctil. Para personalizar, consulte Facetas [de búsqueda](/help/assets/search-facets.md).
 
 ## Superposición {#overlaying}
 
@@ -30,8 +30,7 @@ Para superponer los predicados preconfigurados, copie el `facets` nodo de `/libs
 >
 >De forma predeterminada, la estructura de directorio bajo / `apps` no existe y debe crearse. Asegúrese de que los tipos de nodo coinciden con los de / `libs`.
 
-
-## Agregar fichas {#adding-tabs}
+## Añadir fichas {#adding-tabs}
 
 Puede agregar fichas de búsqueda adicionales configurándolas en el administrador de AEM Assets. Para crear fichas adicionales:
 
@@ -44,9 +43,9 @@ Puede agregar fichas de búsqueda adicionales configurándolas en el administrad
 
 ## Crear predicados personalizados {#creating-custom-predicates}
 
-Recursos AEM incluye un conjunto de predicados predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en [Creación y configuración de una página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de uso compartido de recursos.
+[!DNL Assets] viene con un conjunto de predicados predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en la [creación y configuración de una página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de recurso compartido.
 
-Además de utilizar predicados preexistentes, los desarrolladores de AEM también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Query Builder.
+Además de usar predicados preexistentes, los desarrolladores de AEM también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Consulta Builder.
 
 La creación de predicados personalizados requiere conocimientos básicos sobre el marco [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)utilidades.
 
@@ -57,7 +56,7 @@ Se recomienda copiar un predicado existente y ajustarlo. Los predicados de muest
 Para generar un predicado de propiedad:
 
 1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo **/apps/geometrixx/components/titlepredicate**.
-1. Agregar **content.xml**:
+1. Añadir **content.xml**:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -136,10 +135,10 @@ Para generar un predicado de propiedad:
    </script>
    ```
 
-1. Para que el componente esté disponible, debe poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
+1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
 1. Vaya al navegador y, en la página de muestra (por ejemplo, **press.html**), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos de predicado (por ejemplo, **izquierda**).
 
-1. En el modo **Editar** , el nuevo componente ahora está disponible en la barra de tareas (que se encuentra en el grupo **Buscar** ). Inserte el componente en la columna **Predicados** y escriba una palabra de búsqueda, por ejemplo, **Diamante** y haga clic en la lupa para iniciar la búsqueda.
+1. En el modo **Editar** , el nuevo componente ahora está disponible en la barra de tareas (que se encuentra en el grupo **Buscar** ). Inserte el componente en la columna **Predicados** y escriba una palabra de búsqueda, por ejemplo, **Diamante** y haga clic en la lupa para inicio de la búsqueda.
 
    >[!NOTE]
    >
@@ -150,7 +149,7 @@ Para generar un predicado de propiedad:
 Para crear un predicado de grupo:
 
 1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo **/apps/geometrixx/components/picspredicate.**
-1. Agregar **content.xml**:
+1. Añadir **content.xml**:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -162,7 +161,7 @@ Para crear un predicado de grupo:
        componentGroup="Search"/>
    ```
 
-1. Agregar **titlepredicate.jsp**:
+1. Añadir **titlepredicate.jsp**:
 
    ```xml
    <%--
@@ -240,7 +239,7 @@ Para crear un predicado de grupo:
        });
    ```
 
-1. Para que el componente esté disponible, debe poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
+1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
 1. Vaya al navegador y, en la página de muestra (por ejemplo, **press.html**), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos de predicado (por ejemplo, **izquierda**).
 1. En el modo **Editar** , el nuevo componente ahora está disponible en la barra de tareas (que se encuentra en el grupo **Buscar** ). Inserte el componente en la columna **Predicados** .
 
@@ -253,7 +252,7 @@ Los siguientes predicados están disponibles como utilidades preconfiguradas de 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `fulltext` |
-| searchCallback | Función | Llamada de retorno para activar la búsqueda en el evento `keyup`. El valor predeterminado es `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Función | Llamada de retorno para activar la búsqueda en evento `keyup`. El valor predeterminado es `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
@@ -284,7 +283,7 @@ Los siguientes predicados están disponibles como utilidades preconfiguradas de 
 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
-| el título | Cadena | Agrega un título superior adicional |
+| el título | Cadena | Añade un título superior adicional |
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `daterange` |
 | propertyname | Cadena | Nombre de la propiedad JCR. El valor predeterminado es `jcr:content/metadata/cq:tags` |
 | contraer | Cadena | Contraer nivel. El valor predeterminado es `level1` |
