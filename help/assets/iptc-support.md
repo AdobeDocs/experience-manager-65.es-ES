@@ -3,7 +3,7 @@ title: Compatibilidad con metadatos IPTC
 description: Descubra cómo Adobe Experience Manager (AEM) Assets admite los metadatos IPTC, las clasificaciones creativas y las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,21 +19,21 @@ El esquema de metadatos predeterminado para los recursos ahora incorpora los esq
 La página Propiedades de los recursos ahora incluye fichas independientes para mostrar los metadatos IPTC Core y Extensión IPTC en campos editables.
 
 1. En la interfaz de usuario de Recursos, seleccione una imagen.
-1. Tap **[!UICONTROL Properties]** from the toolbar.
-1. Toque la ficha **[!UICONTROL IPTC]** para ver los metadatos IPTC del recurso.
+1. Click **[!UICONTROL Properties]** from the toolbar.
+1. Haga clic en la ficha **[!UICONTROL IPTC]** para vista de los metadatos IPTC del recurso.
 1. Edite las propiedades de metadatos IPTC, según sea necesario.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Toque o haga clic en la ficha **[!UICONTROL IPTC Extension]** para ver los metadatos de IPTC Extension para el recurso.
+1. Click the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
 1. Edite las propiedades de metadatos de IPTC Extension, según sea necesario.
-1. Tap/click **[!UICONTROL Save &amp; Close]** to save the changes.
+1. Click **[!UICONTROL Save &amp; Close]** to save the changes.
 
 ## Compatibilidad con la clasificación creativa {#creative-rating-support}
 
-Además de mostrar las clasificaciones de usuarios individuales y las clasificaciones agregadas, la página Propiedades ahora muestra las clasificaciones asignadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas
+Además de mostrar clasificaciones de usuarios individuales y clasificaciones acumuladas, la página Propiedades ahora muestra las clasificaciones asignadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas
 
-Estas clasificaciones están disponibles en la sección Clasificación **[!UICONTROL creativa]** de la ficha **[!UICONTROL Avanzadas]** .
+Estas clasificaciones están disponibles en la sección **[!UICONTROL Clasificación creativa]** de la pestaña **[!UICONTROL Avanzado]**.
 
 Esta clasificación es una propiedad de sólo lectura e incluye entre 1 y 5. Puede buscar recursos en función de su clasificación creativa desde el panel de búsqueda.
 
