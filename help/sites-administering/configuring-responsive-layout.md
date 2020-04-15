@@ -1,8 +1,8 @@
 ---
-title: Configuración del contenedor de diseño y el modo de diseño
-seo-title: Configuración del contenedor de diseño y el modo de diseño
-description: Obtenga información sobre cómo configurar el contenedor de diseño y el modo de diseño.
-seo-description: Obtenga información sobre cómo configurar el contenedor de diseño y el modo de diseño.
+title: Configuración del Contenedor de diseño y el modo de diseño
+seo-title: Configuración del Contenedor de diseño y el modo de diseño
+description: Obtenga información sobre cómo configurar el Contenedor de diseño y el modo de diseño.
+seo-description: Obtenga información sobre cómo configurar el Contenedor de diseño y el modo de diseño.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 710958ceecc8bbbbdae5e836ec0571a9eeaf6a9a
 
 ---
 
 
-# Configuración del contenedor de diseño y el modo de diseño{#configuring-layout-container-and-layout-mode}
+# Configuración del Contenedor de diseño y el modo de diseño{#configuring-layout-container-and-layout-mode}
 
 [Diseño](/help/sites-authoring/responsive-layout.md) interactivo es un mecanismo para realizar diseños [web](https://en.wikipedia.org/wiki/Responsive_web_design)interactivos. Esto permite al usuario crear páginas web con un diseño y unas dimensiones que dependen de los dispositivos que utilizan los usuarios.
 
@@ -26,11 +26,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
-* [**Contenedor **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)de diseño, componente
+* Componente [**Contenedor de diseño **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
    Este componente proporciona un sistema de párrafos de cuadrícula que le permite añadir y colocar componentes en una cuadrícula interactiva. Se puede utilizar como parsys predeterminado para la página y/o ponerlo a disposición de los autores en el navegador de componentes.
 
-   * El componente **Contenedor** de diseño predeterminado se define en:
+   * El componente **Diseño predeterminado de Contenedor** se define en:
 
       /libs/wcm/foundation/components/responsivegrid
 
@@ -40,9 +40,9 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
       * Como parámetro predeterminado para la página.
       * Ambas.
 
-         Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esto; por ejemplo, para obtener el control de columna.
+         Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de este; por ejemplo, para obtener el control de columna.
 
-* **[Modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de diseño Una vez que el contenedor de diseño se coloca en la página, puede utilizar el modo **Diseño**para colocar el contenido en la cuadrícula adaptable.
+* **[Modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de diseño Una vez colocado el contenedor de diseño en la página, puede utilizar el modo **Diseño**para colocar el contenido en la cuadrícula adaptable.
 
 * [**Emulador **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Esta opción le permite crear y editar sitios web adaptables que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
@@ -67,7 +67,7 @@ Estas tareas le permiten ver el **emulador** interactivo en su sitio.
 
 ### Registrar los componentes de la página para emulación {#register-your-page-components-for-emulation}
 
-Para habilitar el emulador para admitir las páginas, debe registrar los componentes de la página. Consulte [Registro de componentes de página para simulación](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+Para habilitar el emulador para admitir las páginas, debe registrar los componentes de la página. Consulte [Registro de componentes de página para obtener Simulaciones](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
 
 ### Especificar los grupos de dispositivos {#specify-the-device-groups}
 
@@ -75,7 +75,7 @@ Para especificar los grupos de dispositivos que aparecen en la lista Dispositivo
 
 ### Vincular el sitio a los grupos de dispositivos especificados {#link-your-site-to-the-specified-device-groups}
 
-Para incluir el administrador, debe vincular el sitio a los grupos de dispositivos. Consulte [Adición de la lista](/help/sites-developing/responsive.md#adding-the-devices-list) de dispositivos (tanto para la IU clásica como la táctil).
+Para incluir el administrador, debe vincular el sitio a los grupos de dispositivos. Consulte [Añadir la Lista](/help/sites-developing/responsive.md#adding-the-devices-list) Dispositivos (tanto para la IU clásica como la táctil).
 
 ## Activar el modo de diseño del sitio {#activate-layout-mode-for-your-site}
 
@@ -157,7 +157,7 @@ Una definición de ejemplo:
 </cq:responsive>
 ```
 
-### Agregar un proveedor de información adaptable {#add-a-responsive-information-provider}
+### Añadir un proveedor de información adaptable {#add-a-responsive-information-provider}
 
 >[!NOTE]
 >
@@ -171,9 +171,9 @@ Copie la siguiente estructura de `cq:infoProviders` nodos en el componente de p�
 
 Estos procedimientos son necesarios para poder cambiar el tamaño de los componentes en el modo **Diseño** .
 
-### Definir contenedor de diseño como parsys principal {#set-layout-container-as-main-parsys}
+### Definir Contenedor de diseño como Parsys principal {#set-layout-container-as-main-parsys}
 
-Para que el parámetro principal de la página sea un contenedor de diseño, debe definir el parámetro como:
+Para que el parámetro principal de la página sea un contenedor de diseño, debe definir parsys como:
 
 `wcm/foundation/components/responsivegrid`
 
@@ -236,7 +236,7 @@ La definición de cuadrícula base se encuentra en:
 
 #### Consideraciones sobre el estilo {#styling-considerations}
 
-Se cambiará el tamaño de los componentes contenidos en un contenedor interactivo (junto con sus respectivos elementos DOM HTML) según el tamaño de cuadrícula adaptable. Por lo tanto, en estas circunstancias, se recomienda evitar (o actualizar) definiciones de elementos DOM de ancho fijo (contenidos).
+Los componentes contenidos en un contenedor interactivo se cambiarán de tamaño (junto con sus respectivos elementos DOM HTML) según el tamaño de cuadrícula adaptable. Por lo tanto, en estas circunstancias, se recomienda evitar (o actualizar) definiciones de elementos DOM de ancho fijo (contenidos).
 
 Por ejemplo:
 
@@ -280,13 +280,13 @@ Para permitir que los autores agreguen cuadrículas adaptables adicionales a las
 
 * **Entorno de creación**
 
-   Utilice el modo [](/help/sites-authoring/default-components-designmode.md) Diseño para activar el componente Contenedor **de** capas para una página.
+   Utilice el modo [](/help/sites-authoring/default-components-designmode.md) Diseño para activar el componente **Contenedor** de capa para una página.
 
 * **Definición de componente**
 
    Utilice `allowedComponent` o una inclusión estática al definir el componente.
 
-### Configuración de la cuadrícula del contenedor de diseños {#configure-the-grid-of-the-layout-container}
+### Configuración de la cuadrícula del Contenedor Diseño {#configure-the-grid-of-the-layout-container}
 
 Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño:
 
@@ -294,7 +294,7 @@ Puede configurar el número de columnas disponibles para cada instancia específ
 
    Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño.
 
-   Para ello, utilice el modo [](/help/sites-authoring/default-components-designmode.md)Diseño y, a continuación, abra el cuadro de diálogo de diseño del contenedor requerido. Aquí puede especificar cuántas columnas estarán disponibles para la colocación y el tamaño. El valor predeterminado es 12.
+   Para ello, utilice el modo [](/help/sites-authoring/default-components-designmode.md)Diseño y, a continuación, abra el cuadro de diálogo de diseño para el contenedor requerido. Aquí puede especificar cuántas columnas estarán disponibles para la colocación y el tamaño. El valor predeterminado es 12.
 
 1. **XML**
 
