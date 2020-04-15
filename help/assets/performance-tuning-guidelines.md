@@ -4,12 +4,12 @@ description: Sugerencias y directrices sobre la configuración de AEM, cambios e
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-<!-- TBD: Formatting using backticks. Add UICONTROL tag. Redundant info as reviewed by engineering. -->
+<!-- TBD: Get reviewed by engineering. -->
 
 # Guía de ajuste del rendimiento de los recursos {#assets-performance-tuning-guide}
 
@@ -29,11 +29,11 @@ Aunque AEM es compatible con varias plataformas, Adobe ha encontrado la buena co
 
 ### Carpeta temporal {#temp-folder}
 
-Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede utilizar una unidad RAM o SSD. En los entornos basados en la nube, se puede utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad [&#39;efímera&#39;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) para la carpeta temporal.
+Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede utilizar una unidad RAM o SSD. En los entornos basados en la nube, se puede utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad de [disco](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) efímero para la carpeta temporal.
 
 Si el servidor tiene una memoria amplia, configure una unidad de RAM. En Linux, ejecute estos comandos para crear una unidad de 8 GB de RAM:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -58,7 +58,7 @@ Adobe recomienda implementar Recursos AEM en Java 8 para lograr un rendimiento �
 
 ### Parámetros de JVM {#jvm-parameters}
 
-Debe establecer los siguientes parámetros de JVM:
+Defina los siguientes parámetros de JVM:
 
 * `-XX:+UseConcMarkSweepGC`
 * `-Doak.queryLimitInMemory`=500000
@@ -88,7 +88,7 @@ La implementación de un almacén de datos de archivos compartidos o S3 puede ay
 
 La siguiente configuración del almacén de datos S3 ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ayudó a Adobe a extraer 12,8 TB de objetos binarios grandes (BLOB) de un almacén de datos de archivos existente en un almacén de datos S3 en un sitio del cliente:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -126,18 +126,17 @@ Principalmente, la estrategia de optimización de red depende de la cantidad de 
 
 Siempre que sea posible, establezca el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM en Temporal. La configuración reduce considerablemente los gastos generales necesarios para procesar flujos de trabajo porque, en este caso, los flujos de trabajo no necesitan pasar por los procesos normales de seguimiento y archivo.
 
->[!NOTE]
->
->De forma predeterminada, el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM se establece en Temporal en AEM 6.3. En este caso, puede omitir el siguiente procedimiento.
-
 1. Vaya a `/miscadmin` la instancia de AEM en `https://[aem_server]:[port]/miscadmin`.
+
 1. Expanda **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL presa]**.
+
 1. Abra **[!UICONTROL DAM Update Asset]**. En el panel de herramientas flotante, cambie a la ficha **[!UICONTROL Página]** y, a continuación, haga clic en Propiedades **[!UICONTROL de página]**.
+
 1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Algunas funciones no admiten flujos de trabajo transitorios. Si la implementación de AEM Assets requiere estas funciones, no configure flujos de trabajo transitorios.
+   >Algunas funciones no admiten flujos de trabajo transitorios. Si la implementación [!DNL Assets] requiere estas funciones, no configure flujos de trabajo transitorios.
 
 En los casos en los que no se pueden usar flujos de trabajo transitorios, ejecute la depuración regular del flujo de trabajo para eliminar flujos de trabajo de recursos [!UICONTROL de actualización de] DAM archivados para garantizar que el rendimiento del sistema no se deteriore.
 
@@ -153,8 +152,10 @@ Por ejemplo, después de ejecutar numerosos flujos de trabajo no transitorios (q
 
 De forma predeterminada, AEM ejecuta un número máximo de trabajos paralelos igual al número de procesadores del servidor. El problema con esta configuración es que durante los períodos de carga pesada, todos los procesadores están ocupados por flujos de trabajo de recursos [!UICONTROL de actualización de] DAM, lo que ralentiza la capacidad de respuesta de la interfaz de usuario e impide que AEM ejecute otros procesos que salvaguardan el rendimiento y la estabilidad del servidor. Como práctica recomendada, ajuste este valor a la mitad de los procesadores disponibles en el servidor realizando los siguientes pasos:
 
-1. En AEM Author, vaya a `https://[aem_server]:[port]/system/console/slingevent`.
+1. En Experience Manager Author, vaya a `https://[aem_server]:[port]/system/console/slingevent`.
+
 1. Haga clic en **[!UICONTROL Editar]** en cada cola de flujo de trabajo que sea relevante para la implementación, por ejemplo, **[!UICONTROL Granite Transient Workflow Queue]**.
+
 1. Actualice el valor de **[!UICONTROL Número máximo de trabajos]** paralelos y haga clic en **[!UICONTROL Guardar]**.
 
 Establecer una cola en la mitad de los procesadores disponibles es una solución viable para el inicio. Sin embargo, es posible que tenga que aumentar o disminuir este número para lograr el máximo rendimiento y ajustarlo por entorno. Hay colas independientes para flujos de trabajo transitorios y no transitorios, así como para otros procesos, como flujos de trabajo externos. Si varias colas configuradas en el 50% de los procesadores están activas simultáneamente, el sistema puede sobrecargarse rápidamente. Las colas que se utilizan con frecuencia varían considerablemente según las implementaciones de los usuarios. Por lo tanto, es posible que tenga que configurarlas cuidadosamente para lograr la máxima eficacia sin sacrificar la estabilidad del servidor.
@@ -238,7 +239,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 >[!NOTE]
 >
->Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que esto sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
+>Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que este paso sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
 
 ## Índices de búsqueda {#search-indexes}
 
@@ -256,11 +257,15 @@ Se pueden realizar algunas optimizaciones en las configuraciones de índice Oak 
 1. Vaya a `/oak:index/damAssetLucene`. Añada una `String[]` propiedad `includedPaths` con valor `/content/dam`.
 1. Guardar.
 
-(Solo AEM6.1 y 6.2) Actualice el índice ntBaseLucene para mejorar el rendimiento de eliminación y movimiento de recursos:
+<!-- TBD: Review by engineering if required in 6.5 docs or not.
 
-1. Vaya a `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Añadir dos nodos nt:no estructurados `slingResource` y `damResolvedPath` en `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Defina las propiedades siguientes en los nodos (donde `ordered` y `propertyIndex` las propiedades son del tipo `Boolean`:
+(AEM6.1 and 6.2 only) Update the `ntBaseLucene` index to improve asset delete and move performance:
+
+1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
    ```
    slingResource
@@ -275,25 +280,24 @@ Se pueden realizar algunas optimizaciones en las configuraciones de índice Oak 
    type="String"
    ```
 
-1. En el `/oak:index/ntBaseLucene` nodo, establezca la propiedad `reindex=true`. Haga clic en **[!UICONTROL Guardar todo]**.
-1. Supervise el error.log para ver cuándo se completa la indexación:
-Reindexación completada para índices: [/roak:index/ntBaseLucene]
-1. También puede ver que la indexación se completa actualizando el nodo /oak:index/ntBaseLucene en CRXDe, ya que la propiedad reindex volvería a false
-1. Una vez completada la indexación, vuelva a CRXDe y establezca la propiedad &quot;type&quot; en disabled en estos dos índices
+1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Click **[!UICONTROL Save All]**.
+1. Monitor the error.log to see when indexing is completed:
+   Reindexing completed for indexes: [/oak:index/ntBaseLucene]
+1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
+1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes
 
-   * */oak:index/slingResource*
-   * */oak:index/damResolvedPath*
+    * */oak:index/slingResource*
+    * */oak:index/damResolvedPath*
 
-1. Haga clic en &quot;Guardar todo&quot;
+1. Click "Save All"
+-->
 
 Deshabilitar Extracción de texto de Lucene:
 
-Si los usuarios no necesitan poder buscar el contenido de los recursos, por ejemplo, buscando el texto contenido en documentos PDF, puede mejorar el rendimiento del índice desactivando esta función.
+Si los usuarios no necesitan realizar una búsqueda de texto completo de recursos, por ejemplo, buscando texto en documentos PDF, desactívelo. Para mejorar el rendimiento del índice, deshabilite la indexación de texto completo.
 
-1. Vaya al administrador de paquetes de AEM /crx/packmgr/index.jsp
-1. Cargar e instalar el paquete siguiente
-
-[Obtener archivo](assets/disable_indexingbinarytextextraction-10.zip)
+1. Vaya al administrador de paquetes de AEM `/crx/packmgr/index.jsp`.
+1. Cargue e instale el paquete disponible en [disable_indexingbinarytextextract-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Total de asistentes {#guess-total}
 
