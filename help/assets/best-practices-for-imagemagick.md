@@ -3,7 +3,7 @@ title: Instalación y configuración de ImageMagick para trabajar con Recursos A
 description: Obtenga información sobre el software ImageMagick, cómo instalarlo, cómo configurar el paso del proceso de la línea de comandos y cómo utilizarlo para editar, componer y generar miniaturas de imágenes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -27,14 +27,14 @@ Hay disponibles varias versiones de los archivos de instalación de ImageMagic p
 1. Descargue los archivos [de instalación](https://www.imagemagick.org/script/download.php) ImageMagick correspondientes para su sistema operativo.
 1. Para instalar ImageMagick en el disco que aloja el servidor AEM, inicie el archivo de instalación.
 
-1. Configure la variable de ruta Environment en el directorio de instalación de ImageMagic.
+1. Establezca la variable de Entorno de ruta en el directorio de instalación de ImageMagic.
 1. Para comprobar si la instalación se ha realizado correctamente, ejecute el `identify -version` comando.
 
 ## Configurar el paso del proceso de la línea de comandos {#set-up-the-command-line-process-step}
 
 Puede configurar el paso del proceso de la línea de comandos para un caso de uso concreto. Siga estos pasos para generar una imagen y unas miniaturas volteadas (140 x 100, 48 x 48, 319 x 319 y 1280 x 1280) cada vez que agregue un archivo de imagen JPEG a `/content/dam` en el servidor AEM:
 
-1. En el servidor AEM, vaya a la consola Flujo de trabajo ( `https://[*AEM server*]:[*Port*]/workflow`) y abra el modelo de flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM.
+1. En el servidor AEM, vaya a la consola Flujo de trabajo (`https://[aem_server]:[port]/workflow`) y abra el modelo de flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM.
 1. En el modelo de flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM, abra el paso de miniaturas **[!UICONTROL EPS (con tecnología ImageMagick)]** .
 1. En la ficha **** Argumentos, agregue `image/jpeg` a la lista **[!UICONTROL Tipos]** de MIME.
 
@@ -48,11 +48,11 @@ Puede configurar el paso del proceso de la línea de comandos para un caso de us
 
    ![select_flag](assets/select_flags.png)
 
-1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, especifique los detalles de la representación con dimensiones de 1280 x 1280 píxeles. Además, especifique *image/jpeg* en el cuadro **[!UICONTROL Tipo]** de mimetilo.
+1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, especifique los detalles de la representación con dimensiones de 1280 x 1280 píxeles. Además, especifique `image/jpeg` en el cuadro **[!UICONTROL Mimetype]** .
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tap/click **[!UICONTROL OK]** to save the changes.
+1. Haga clic en **[!UICONTROL Aceptar]** para guardar los cambios.
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Puede configurar el paso del proceso de la línea de comandos para un caso de us
 
    ![Ski_mime_types](assets/skip_mime_types.png)
 
-1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, agregue el tipo MIME `image/jpeg` en **[!UICONTROL Omitir lista]**. Tap/click **[!UICONTROL OK]** to save the changes.
+1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, agregue el tipo MIME `image/jpeg` en la Lista **** Omitir. Haga clic en **[!UICONTROL Aceptar]** para guardar los cambios.
 
    ![web_enabled](assets/web_enabled.png)
 
