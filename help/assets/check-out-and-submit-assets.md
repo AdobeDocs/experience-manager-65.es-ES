@@ -3,7 +3,7 @@ title: Proteja y desproteja los recursos digitales para editarlos
 description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,7 +19,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 ## Comprobación de recursos {#checking-out-assets}
 
 1. En la interfaz de usuario de Recursos, seleccione el recurso que desee desproteger. También puede seleccionar varios recursos para retirarlos.
-1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Cierre de compra]**.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**.
 La opción **[!UICONTROL Cierre]** de compra cambia a **[!UICONTROL Proteger]**.
 Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inicie sesión como un usuario diferente. Aparece un símbolo de bloqueo en la miniatura del recurso que ha extraído.
 
@@ -29,9 +29,9 @@ Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inic
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Sin embargo, puede tocar **[!UICONTROL Ver propiedades]** para editar los metadatos del recurso bloqueado.
+   Puede hacer clic en Propiedades de **[!UICONTROL Vista]** para editar los metadatos del recurso bloqueado.
 
-1. Toque **[!UICONTROL Editar]** para abrir el recurso en modo de edición.
+1. Haga clic en **[!UICONTROL Editar]** para abrir el recurso en modo de edición.
 
    ![chlimage_1-473](assets/chlimage_1-473.png)
 
@@ -41,7 +41,7 @@ Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inic
 
    También puede elegir anotar o publicar el recurso.
 
-1. Seleccione el recurso editado en la interfaz de usuario de Recursos y toque **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en Recursos AEM y está disponible para su edición para otros usuarios.
+1. Seleccione el recurso editado en la [!DNL Assets] interfaz y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en Recursos AEM y está disponible para su edición para otros usuarios.
 
 ## Registro forzado {#forced-check-in}
 
@@ -52,7 +52,7 @@ Los administradores pueden proteger recursos que otros usuarios han extraído.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. En la barra de herramientas, toque **[!UICONTROL Soltar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Soltar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
 
 >[!MORELIKETHIS]
 >
