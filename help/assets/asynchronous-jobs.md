@@ -1,9 +1,9 @@
 ---
 title: Operaciones asincrónicas
-description: Recursos AEM optimiza el rendimiento completando de forma asíncrona algunas tareas que requieren muchos recursos.
+description: Recursos AEM optimiza el rendimiento completando de forma asíncrona algunas tareas que consumen muchos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -21,7 +21,7 @@ Estas operaciones incluyen:
 
 El procesamiento asincrónico implica poner en cola varios trabajos y, finalmente, ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
 
-Puede ver el estado de los trabajos asincrónicos desde la página Estado **[!UICONTROL del trabajo]** asincrónico.
+Puede vista el estado de los trabajos asincrónicos desde la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
 >[!NOTE]
 >
@@ -31,9 +31,10 @@ Puede ver el estado de los trabajos asincrónicos desde la página Estado **[!UI
 
 Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico.
 
-Para ver el estado de las operaciones asincrónicas en detalle, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
+Para realizar una vista detallada del estado de las operaciones asincrónicas, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Operaciones]** > **[!UICONTROL Trabajos]**.
+1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Operaciones]** > **[!UICONTROL Trabajos]**.
+
 1. En la página Estado **[!UICONTROL del trabajo]** asincrónico, revise los detalles de las operaciones.
 
    ![Estado y detalles de las operaciones asincrónicas](assets/AsyncOperation-status.png)
@@ -44,15 +45,15 @@ Para ver el estado de las operaciones asincrónicas en detalle, vaya a la págin
 
    * **[!UICONTROL Correcto]**: Se completó la operación
 
-   * **[!UICONTROL Error]** o **[!UICONTROL error]**: No se pudo procesar la operación
+   * **[!UICONTROL Fallo]** o **[!UICONTROL Error]**: No se pudo procesar la operación
 
    * **[!UICONTROL Programado]**: La operación está programada para procesarse más tarde
 
-1. Para detener una operación activa, selecciónela en la lista y toque **[!UICONTROL Detener]** en la barra de herramientas.
+1. Para detener una operación activa, selecciónela en la lista y haga clic en **[!UICONTROL Detener]** en la barra de herramientas.
 
    ![stop_icon](assets/stop_icon.png)
 
-1. Para ver detalles adicionales, por ejemplo descripción y registros, seleccione la operación y toque **[!UICONTROL Abrir]** en la barra de herramientas.
+1. Para vista de detalles adicionales, como descripción y registros, seleccione la operación y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas.
 
    ![open_icon](assets/open_icon.png)
 
@@ -60,7 +61,7 @@ Para ver el estado de las operaciones asincrónicas en detalle, vaya a la págin
 
    ![job_details](assets/job_details.png)
 
-1. Para eliminar la operación de la lista, seleccione **[!UICONTROL Eliminar]** en la barra de herramientas. Para descargar los detalles en un archivo CSV, toque **[!UICONTROL Descargar]**.
+1. Para eliminar la operación de la lista, seleccione **[!UICONTROL Eliminar]** en la barra de herramientas. Para descargar los detalles en un archivo CSV, haga clic en **[!UICONTROL Descargar]**.
 
    >[!NOTE]
    >
@@ -72,7 +73,7 @@ Recursos AEM ejecuta un trabajo de depuración todos los días a la 1:00 a.m. pa
 
 Puede modificar la programación del trabajo de depuración y la duración durante la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 1. Abra el trabajo programado de depuración de trabajos asincrónicos de **[!UICONTROL Adobe CQ DAM]** .
 1. Especifique el número de umbral de días después de los cuales se eliminarán los trabajos completados y el número máximo de trabajos para los que se conservarán los detalles en el historial.
 
@@ -88,7 +89,7 @@ Puede configurar el número de umbral de recursos o referencias para que Recurso
 
 Si el número de recursos o carpetas que se van a eliminar supera el número de umbral, la operación de eliminación se realiza de forma asíncrona.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 1. En la consola web, abra la configuración de Procesamiento **[!UICONTROL de trabajos de eliminación]** asincrónica.
 1. En el cuadro **[!UICONTROL Umbral de número de recursos]** , especifique el número de umbral de recursos/carpetas para el procesamiento asincrónico de las operaciones de eliminación.
 
@@ -100,7 +101,7 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 
 Si el número de recursos/carpetas o referencias que se van a mover supera el número de umbral, la operación de movimiento se realiza de forma asíncrona.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 1. Desde la consola web, abra la configuración Procesamiento **[!UICONTROL de trabajos de operación de movimiento]** asincrónico.
 1. En el cuadro **[!UICONTROL Umbral número de recursos/referencias]** , especifique el número de umbral de recursos/carpetas o referencias para el procesamiento asincrónico de operaciones de movimiento.
 
