@@ -3,14 +3,14 @@ title: Organizar sus recursos digitales
 description: Organice sus recursos digitales, imágenes, archivos, carpetas, etc. mediante Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
 # Organizar sus recursos digitales {#organize-digital-assets}
 
-Todos los recursos digitales, los metadatos y el contenido de Microsoft Office y los documentos PDF se extraen y permiten realizar búsquedas. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Administración de activos digitales.
+Todos los recursos digitales, los metadatos y el contenido de los documentos de Microsoft Office y PDF se extraen y permiten realizar búsquedas. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Administración de activos digitales.
 
 Recursos AEM admite varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad-hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
 
@@ -19,16 +19,16 @@ Recursos AEM admite varias formas de organizar el contenido. Puede organizarlas 
 La forma más básica de organizar los recursos es guardarlos en carpetas. Es similar a organizar archivos en carpetas en nuestro sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Gestión de recursos](managing-assets-touch-ui.md). La forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos dentro de estas carpetas puede tener un impacto significativo en la forma en que se procesan dichos recursos. Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con buenas prácticas de metadatos, puede aprovechar al máximo el repositorio de recursos digitales.
 
 * En la mayoría de los casos, el repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de metadatos, la estructura de carpetas y la nominación de archivos al principio del ciclo de creación de contenido.
-* Utilice las carpetas únicamente para imponer una estructura de almacenamiento uniforme para los recursos digitales. Esta coherencia ayuda a procesar y administrar mejor los recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar [perfiles adecuados para el procesamiento](processing-profiles.md)de recursos:
+* Utilice las carpetas únicamente para imponer una estructura de almacenamiento uniforme a los recursos digitales. Esta coherencia ayuda a procesar y administrar mejor los recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar [perfiles adecuados para el procesamiento](processing-profiles.md)de recursos:
 
    * **Carpetas** de desarrollo: contiene recursos digitales en los que está trabajando.
    * **Carpetas** de cliente: contiene recursos digitales basados en nombres de clientes o proyectos.
    * **Carpetas** maestras: contiene recursos digitales originales.
    * **Carpetas** de representación: contiene representaciones y copias de los recursos digitales originales.
-   * **Carpetas** de tamaño de archivo: contiene recursos digitales basados en tamaños de archivo pequeños, medios o grandes.
+   * **Carpetas** de tamaño de archivo: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
    * **Carpetas** de ensayo: contiene recursos digitales que están listos para publicarse en directo en el sitio web.
    * **Carpetas** de tipo MIME: contiene recursos digitales específicos de tipos MIME como imágenes, documentos y multimedia.
-   * **Carpetas** de archivo: contiene recursos digitales retirados.
+   * **Archivar carpetas**: contiene activos digitales retirados.
    * **Carpetas** basadas en fecha: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no es probable que cambien para que la personalización o la automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
@@ -59,13 +59,13 @@ Add back links to blog posts by marketing?
 
 ## Organizar los recursos para utilizar perfiles {#organize-to-use-profiles}
 
-Un perfil de procesamiento contiene comandos de procesamiento de recursos que se aplican a recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos que se han cargado recientemente. Puede aprovechar los perfiles para organizar mejor los recursos.
+Un perfil de procesamiento contiene comandos de procesamiento de recursos que se aplican a los recursos que se cargan en carpetas predefinidas. Los Perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos que se han cargado recientemente. Puede aprovechar los perfiles para organizar mejor los recursos.
 
-La estandarización del uso de metadatos, la nominación de archivos y la estructura de carpetas garantiza que, a medida que crezca el grupo de recursos digitales, podrá aplicar perfiles de procesamiento a las carpetas con mayor precisión y coherencia.
+La estandarización del uso de metadatos, la nominación de archivos y la estructura de carpetas garantiza que, a medida que crezca el grupo de recursos digitales, podrá aplicar perfiles de procesamiento a las carpetas con buena precisión y coherencia.
 
 Para obtener más información sobre los distintos perfiles que puede crear y administrar para procesar recursos, consulte
 
 * [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md)
 * [Perfiles de metadatos](metadata-profiles.md)
-* [Perfiles de vídeo](video-profiles.md)
-* [Perfiles de imagen de Dynamic Media](image-profiles.md)
+* [perfiles de vídeo](video-profiles.md)
+* [perfiles de imagen de Dynamic Media](image-profiles.md)
