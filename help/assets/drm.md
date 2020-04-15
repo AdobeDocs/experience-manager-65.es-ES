@@ -3,7 +3,7 @@ title: Administración de derechos digitales en recursos
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -16,25 +16,25 @@ Los recursos digitales suelen estar asociados a una licencia, que especifica sus
 
 La caducidad de los activos es una forma eficaz de aplicar los requisitos de licencia de los activos. Garantiza que el recurso publicado no se publique cuando caduque, lo que evita la posibilidad de cualquier infracción de licencia. Un usuario sin derechos de administrador no puede editar, copiar, mover, publicar ni descargar un recurso caducado.
 
-Puede ver el estado de caducidad de un recurso en la consola Recursos, tanto en la vista de tarjeta como en la de lista.
+Puede vista del estado de caducidad de un recurso en la consola Recursos, tanto en las vistas de tarjeta como de Lista.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figura: En la vista de tarjeta, un indicador de la tarjeta indica que el recurso ha caducado*
+*Figura: En la vista de tarjetas, un indicador de la tarjeta indica que el recurso ha caducado*
 
 **Vista de lista**
 
-![expired_flag_list](assets/expired_flag_list.png)
+![expired_flag_lista](assets/expired_flag_list.png)
 
 *Figura: En la vista de lista, la columna[!UICONTROL Estado]muestra la pancarta[!UICONTROL Caducado].*
 
-Puede ver el estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo en el menú GlobalNav.
+Puede vista del estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo en el menú GlobalNav.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
-También puede ver el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
+También puede vista el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
-1. Vaya al recurso para el que desea ver las páginas Web de referencia y los recursos compuestos.
+1. Desplácese al recurso para el que desea realizar una vista haciendo referencia a páginas web y recursos compuestos.
 1. Seleccione el recurso y el logotipo de Experience Manager.
 
 1. Elija **[!UICONTROL Referencias]** en el menú.
@@ -63,7 +63,7 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Pulse o haga clic en la opción **[!UICONTROL Estado de caducidad]** para expandirla.
+1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -71,16 +71,16 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
-Al elegir la opción **Caducado** , la consola Recursos solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que Recursos AEM detecte que hacen referencia a subrecursos caducados la próxima vez que se ejecute el programador.
+Al elegir la opción **Caducado** , la consola Recursos solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que Recursos AEM detecte que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
 
-Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo del programador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado en consecuencia.
+Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo de Planificador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado de forma acorde.
 
-Además, si un fallo o error impide que el programador detecte los recursos caducados en el ciclo actual, el programador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado caducado.
+Además, si un fallo o error impide que el Planificador detecte los recursos caducados en el ciclo actual, el Planificador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado de caducidad.
 
 Para permitir que la consola de Assets muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo de **notificación de caducidad de Adobe CQ DAM** en AEM Configuration Manager.
 
 1. Abra AEM Configuration Manager.
-1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado Programador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
+1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado el Planificador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -105,7 +105,7 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Toque **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve **Publicar** en la barra de herramientas, toque **[!UICONTROL Más]** en la barra de herramientas y la opción Buscar **[!UICONTROL publicación]** .
+1. Haga clic en **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** .
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -114,7 +114,7 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. En la interfaz de usuario de Recursos, seleccione un recurso y toque **[!UICONTROL Propiedades]** para mostrar la página de detalles del recurso.
+1. En la interfaz de Recursos, seleccione un recurso y haga clic en **[!UICONTROL Propiedades]** para mostrar la página de detalles del recurso.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -130,22 +130,22 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-1. En la consola Recursos, seleccione una carpeta y cree una tarea de revisión en la carpeta.
+1. En la consola Recursos, seleccione una carpeta y cree una tarea de revisión en ella.
 1. Revise y apruebe/rechace los recursos de la tarea de revisión y haga clic en **[!UICONTROL Completar]**.
-1. Vaya a la carpeta para la que creó la tarea de revisión. El estado de los recursos aprobados/rechazados se muestra en la parte inferior de la vista de tarjeta. En la vista de lista, los estados de aprobación y caducidad se muestran en las columnas correspondientes.
+1. Vaya a la carpeta para la que creó la tarea de revisión. El estado de los recursos aprobados/rechazados se muestra en la parte inferior de la vista de tarjetas. En la vista de lista, los estados de aprobación y caducidad se muestran en las columnas correspondientes.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Para buscar recursos en función de su estado, toque **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
+1. Para buscar recursos según su estado, haga clic en **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Pulse Volver y, a continuación, toque **[!UICONTROL GlobalNav]** para mostrar el panel Buscar.
-1. En el panel Buscar, pulse o haga clic en **[!UICONTROL Estado de publicación]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en AEM Assets.
+1. Pulse Volver y, a continuación, haga clic en **[!UICONTROL GlobalNav]** para mostrar el panel Buscar.
+1. In the Search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Pulse o haga clic en **[!UICONTROL Estado de aprobación]** y haga clic en la opción correspondiente para buscar recursos aprobados o rechazados.
+1. Click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -159,15 +159,15 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 
 ## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
 
-Esta función fuerza la aceptación del contrato de licencia antes de poder descargar un recurso con licencia desde Recursos Adobe Experience Manager (AEM).
+Esta función fuerza la aceptación del contrato de licencia antes de poder descargar un recurso con licencia desde Recursos Adobe Experience Manager.
 
-Si selecciona un recurso protegido y toca **[!UICONTROL Descargar]**, se le redirigirá a una página de licencia en la que acepte el contrato de licencia. Si no acepta el contrato de licencia, se desactiva el botón **[!UICONTROL Descargar]** .
+Si selecciona un recurso protegido y hace clic en **[!UICONTROL Descargar]**, se le redirigirá a una página de licencia en la que acepta el contrato de licencia. Si no acepta el contrato de licencia, se desactiva el botón **[!UICONTROL Descargar]** .
 
 Si la selección contiene varios recursos protegidos, selecciónelos de uno en uno, acepte el contrato de licencia y continúe con la descarga del recurso.
 
 Un recurso se considera protegido si se cumple cualquiera de estas condiciones:
 
-* La propiedad de metadatos del recurso `xmpRights:WebStatement` apunta a la ruta de la página de CQ que contiene el contrato de licencia del recurso.
+* La propiedad de metadatos del recurso `xmpRights:WebStatement` apunta a la ruta de la página que contiene el contrato de licencia del recurso.
 * El valor de la propiedad de metadatos del recurso `adobe_dam:restrictions` es un HTML sin procesar que especifica el contrato de licencia.
 
 >[!NOTE]
@@ -178,9 +178,9 @@ Un recurso se considera protegido si se cumple cualquiera de estas condiciones:
 
 ### Descargar recursos protegidos con DRM {#downloading-drm-assets}
 
-1. En la vista de tarjeta, seleccione los recursos que desea descargar y haga clic en **[!UICONTROL Descargar]**.
+1. En la vista de tarjetas, seleccione los recursos que desea descargar y haga clic en **[!UICONTROL Descargar]**.
 1. En la página **[!UICONTROL Administración de derechos de autor]**, seleccione el recurso que desee descargar de la lista.
-1. En el panel Licencia, elija **[!UICONTROL Aceptar]**. Aparece una marca de graduación junto al recurso para el que acepta el contrato de licencia. Toque o haga clic en el botón **[!UICONTROL Descargar]** .
+1. En el panel Licencia, elija **[!UICONTROL Aceptar]**. Aparece una marca de graduación junto al recurso para el que acepta el contrato de licencia. Haga clic en el botón **[!UICONTROL Descargar]** .
 
    >[!NOTE]
    >
@@ -188,4 +188,4 @@ Un recurso se considera protegido si se cumple cualquiera de estas condiciones:
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Descargar]** para descargar el recurso o sus representaciones.
+1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]** para descargar el recurso o sus representaciones.
