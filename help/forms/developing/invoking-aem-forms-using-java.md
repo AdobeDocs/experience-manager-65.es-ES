@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -444,7 +444,9 @@ Para invocar correctamente un servicio de AEM Forms, defina las siguientes propi
    * Si establece esta propiedad de conexión en `WebLogic`, el `java.naming.factory.initial` valor se establece en `weblogic.jndi.WLInitialContextFactory`.
    * Del mismo modo, si establece esta propiedad de conexión en `JBoss`, el `java.naming.factory.initial` valor se establece en `org.jnp.interfaces.NamingContextFactory`.
    * Puede establecer la `java.naming.factory.initial` propiedad en un valor que cumpla sus requisitos si no desea utilizar los valores predeterminados.
-   ***Nota**: En lugar de utilizar una cadena para establecer la propiedad de `DSC_SERVER_TYPE` conexión, puede utilizar un miembro estático de la `ServiceClientFactoryProperties` clase. Se pueden utilizar los siguientes valores: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`o `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+   >[!NOTE]
+   >
+   >En lugar de utilizar una cadena para establecer la propiedad de `DSC_SERVER_TYPE` conexión, puede utilizar un miembro estático de la `ServiceClientFactoryProperties` clase. Se pueden utilizar los siguientes valores: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`o `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Especifica el nombre de usuario de los formularios AEM. Para que un usuario invoque correctamente un servicio de AEM Forms, necesita la función de usuario de servicios. Un usuario también puede tener otra función que incluya el permiso Invocar servicio. De lo contrario, se genera una excepción cuando intentan invocar un servicio. Si la seguridad del servicio está deshabilitada, no es necesario especificar esta propiedad de conexión.
 * **DSC_CREDENTIAL_PASSWORD:** Especifica el valor de contraseña correspondiente. Si la seguridad del servicio está deshabilitada, no es necesario especificar esta propiedad de conexión.
