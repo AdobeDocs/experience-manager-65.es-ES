@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,15 +28,17 @@ El servicio de registro de extremos permite administrar los extremos mediante pr
 * (obsoleto para formularios AEM) Remoting
 * Administrador de Tareas
 
-   ***Nota **: SOAP, EJB y (obsoleto para formularios AEM en JEE) Los extremos de reubicación se crean automáticamente para cada servicio activado. Los extremos SOAP y EJB habilitan SOAP y EJB para todas las operaciones de servicio.*
+>[!NOTE]
+>
+>SOAP, EJB y (obsoleto para formularios AEM en JEE) Los extremos de reubicación se crean automáticamente para cada servicio activado. Los extremos SOAP y EJB habilitan SOAP y EJB para todas las operaciones de servicio.
 
-   Un extremo remoto permite a los clientes de Flex invocar operaciones en el servicio de AEM Forms al que se agrega el extremo. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
+Un extremo remoto permite a los clientes de Flex invocar operaciones en el servicio de AEM Forms al que se agrega el extremo. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
 
-   Los extremos Correo electrónico, Administrador de Tareas y Carpeta vigilada exponen solo una operación específica del servicio. Para Añadir estos extremos se requiere un segundo paso de configuración para seleccionar un método que se invocará, definir parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.
+Los extremos Correo electrónico, Administrador de Tareas y Carpeta vigilada exponen solo una operación específica del servicio. Para Añadir estos extremos se requiere un segundo paso de configuración para seleccionar un método que se invocará, definir parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.
 
-   Puede organizar los extremos de TaskManager en grupos llamados *categorías*. A continuación, estas categorías se exponen a Workspace a través de TaskManager. Los usuarios finales ven los extremos de TaskManager a medida que se clasifican. En Workspace, los usuarios finales ven estas categorías en el panel de navegación. Los extremos de cada categoría se muestran como tarjetas de proceso en la página Procesos de Inicio de Workspace.
+Puede organizar los extremos de TaskManager en grupos llamados *categorías*. A continuación, estas categorías se exponen a Workspace a través de TaskManager. Los usuarios finales ven los extremos de TaskManager a medida que se clasifican. En Workspace, los usuarios finales ven estas categorías en el panel de navegación. Los extremos de cada categoría se muestran como tarjetas de proceso en la página Procesos de Inicio de Workspace.
 
-   Puede realizar estas tareas mediante el servicio Endpoint Registry:
+Puede realizar estas tareas mediante el servicio Endpoint Registry:
 
 * Añadir extremos de EJB. (Consulte [Añadir extremos](programmatically-endpoints.md#adding-ejb-endpoints)de EJB).
 * Añada los extremos de SOAP. (Consulte [Añadir extremos](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
