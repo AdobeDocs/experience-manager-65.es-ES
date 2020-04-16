@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -25,7 +25,9 @@ Los siguientes Inicios rápidos están disponibles para el servicio de integraci
 
 Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: El Inicio rápido ubicado en Programación con formularios AEM se basa en Forms Server que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+>[!NOTE]
+>
+> El Inicio rápido ubicado en Programación con formularios AEM se basa en Forms Server que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 ## Inicio rápido (modo SOAP): Importación de datos de formulario mediante la API de Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
