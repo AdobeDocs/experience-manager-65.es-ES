@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -21,13 +21,13 @@ Los siguientes Inicios rápidos están disponibles para el servicio Administrado
 
 [Inicio rápido (modo SOAP): Asignación de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Quick Start (SOAP mode): Locking tasks using the Java API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Inicio rápido (modo SOAP): Bloqueo de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Recuperación de tareas asignadas a usuarios mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
-[Quick Start (SOAP mode): Retrieving form data from tasks using the Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
+[Inicio rápido (modo SOAP): Recuperación de datos de formulario de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Quick Start (SOAP mode): Modifying form data using the Java API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Inicio rápido (modo SOAP): Modificación de datos de formulario mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Recuperación de archivos adjuntos de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
@@ -35,11 +35,15 @@ Los siguientes Inicios rápidos están disponibles para el servicio Administrado
 
 Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Note **: You cannot search for tasks assigned to users by using the web service API. The reason is because you cannot invoke the`taskList`method, which is a necessary method call to perform this task.*
+>[!NOTE]
+>
+>No puede buscar tareas asignadas a usuarios mediante la API de servicio Web. El motivo es que no se puede invocar el `taskList` método, que es una llamada de método necesaria para realizar esta tarea.
 
-***Note **: Quick Start located in Programming with AEM Forms are based on the Forms server operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+>[!NOTE]
+>
+>El Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor de Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
-## Quick Start (SOAP mode): Assigning tasks using the Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
+## Inicio rápido (modo SOAP): Asignación de tareas mediante la API de Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony Blue.
 
@@ -172,9 +176,9 @@ El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony 
  
 ```
 
-## Quick Start (SOAP mode): Locking tasks using the Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Inicio rápido (modo SOAP): Bloqueo de tareas mediante la API de Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
-The following Java code example locks a task that corresponds to the task identifier value of 2.
+El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor del identificador de tarea de 2.
 
 ```as3
  /*
@@ -263,7 +267,7 @@ The following Java code example locks a task that corresponds to the task identi
 
 ## Inicio rápido (modo SOAP): Recuperación de tareas asignadas a usuarios mediante la API de Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas asignadas a un usuario con el nombre *tony blue*. Notice that this user is specified in the connection properties. Se muestra información sobre las tareas devueltas, como su valor de identificador y su descripción.
+El siguiente ejemplo de código Java recupera todas las tareas asignadas a un usuario con el nombre *tony blue*. Tenga en cuenta que este usuario se especifica en las propiedades de conexión. Se muestra información sobre las tareas devueltas, como su valor de identificador y su descripción.
 
 ```as3
  /*
