@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -51,9 +51,11 @@ Los siguientes Inicios rápidos están disponibles para el servicio Forms:
 
 La lógica de aplicación que utiliza la API de servicio de Forms se implementa como servlets de Java. Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-* **Nota**: Los inicios rápidos que se encuentran en Programación con v se basan en el servidor de formularios que está utilizando otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows con las rutas admitidas por el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
+>[!NOTE]
+>
+>Los inicios rápidos que se encuentran en Programación con v se basan en el servidor de formularios que está utilizando otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows con las rutas admitidas por el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
-   **Sugerencia**: El sitio web de desarrolladores de Adobe contiene el siguiente artículo que explica cómo crear una aplicación ASP.NET que invoque el servicio Forms y procese formularios. Consulte [Creación de aplicaciones](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET de procesamiento de formularios.
+**Sugerencia**: El sitio web de desarrolladores de Adobe contiene el siguiente artículo que explica cómo crear una aplicación ASP.NET que invoque el servicio Forms y procese formularios. Consulte [Creación de aplicaciones](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET de procesamiento de formularios.
 
 ## Inicio rápido (modo SOAP): Representación de un formulario PDF interactivo mediante la API de Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
