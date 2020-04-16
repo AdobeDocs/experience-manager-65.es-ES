@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -25,17 +25,23 @@ El servicio Generar PDF utiliza aplicaciones nativas para convertir los siguient
 
 * Microsoft Office 2003 y 2007 para convertir DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS y PUB (solo Windows)
 
-   **Nota**: Se requiere Acrobat® 9.2 o posterior para convertir el formato de Microsoft XPS a PDF.*
+>[!NOTE]
+>
+>Se requiere Acrobat® 9.2 o posterior para convertir el formato de Microsoft XPS a PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 y 2009 para convertir DWF, DWG y DXW (solo en inglés)
 * Corel WordPerfect 12 y X4 para convertir WPD, QPW, SHW (solo en inglés)
 * OpenOffice 2.0, 2.4, 3.0.1 y 3.1 para convertir ODT, ODS, ODP, ODG, ODF, SXW, SXI, SXC, SXD, DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX y PUB
 
-   ***Nota **: El servicio Generar PDF no admite las versiones de 64 bits de OpenOffice.*
+>[!NOTE]
+>
+>El servicio Generar PDF no admite las versiones de 64 bits de OpenOffice.
 
 * Adobe Photoshop® CS2 para convertir PSD (solo Windows)
 
-   ***Nota**: Photoshop CS3 y CS4 no son compatibles porque no son compatibles con Windows Server 2003 o Windows Server 2008. *
+>[!NOTE]
+>
+>Photoshop CS3 y CS4 no son compatibles porque no son compatibles con Windows Server 2003 o Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 y 8 para convertir FM (solo Windows)
 * Adobe PageMaker® 7.0 para convertir PMD, PM6, P65 y PM (solo Windows)
