@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,7 +28,9 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
    * empid
    * reason
    * duration
-   **Nota**: Este procesador es la plantilla de página de resumen.
+   >[!NOTE]
+   >
+   >Este procesador es la plantilla de página de resumen.
 
    El siguiente código de muestra para este procesador se encuentra en:
 
