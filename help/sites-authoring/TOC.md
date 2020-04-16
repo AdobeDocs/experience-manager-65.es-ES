@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Authoring User Guide
+user-guide-title: Guía del usuario de creación de AEM 6.5
 translation-type: tm+mt
-source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
+source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Descripción general de la Guía del usuario de creación](home.md)
-+ Tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
++ tareas, herramientas y conceptos básicos para la creación de AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Creación de páginas](page-authoring.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
@@ -29,7 +29,7 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [Creación y organización de páginas](managing-pages.md)
    + [Edición del contenido de una página](editing-content.md)
    + [Uso del editor de texto enriquecido para crear contenido](rich-text-editor.md)
-   + [Edición de las propiedades de página  ](editing-page-properties.md)
+   + [Edición de las propiedades de página](editing-page-properties.md)
    + [Publicación de páginas](publishing-pages.md)
    + [Creación de páginas con fragmentos de contenido](content-fragments.md)
    + [Fragmentos de experiencias](experience-fragments.md)
@@ -85,7 +85,7 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [Administrar audiencias](managing-audiences.md) 
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
-+ AEM y Adobe Campaign {aem-adobe-campaign}
++ AEM y Adobe Campaign {#aem-adobe-campaign}
    + [Trabajo con Adobe Campaign](adobe-campaign.md)
    + [Trabajo con Adobe Campaign Classic y Adobe Campaign Standard](campaign.md)
    + [Orientación de Adobe Campaign](target-adobe-campaign.md)
