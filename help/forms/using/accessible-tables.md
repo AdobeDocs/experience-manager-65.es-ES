@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -33,7 +33,9 @@ Para utilizar el nuevo formato en formularios HTML5, marque la tabla como comple
 
 Las tablas marcadas como *complejaTable* siguen la representación HTML nativa y proporcionan una mejor compatibilidad de accesibilidad para determinados lectores de pantalla.  Para crear un intervalo de filas, seleccione celdas consecutivas de una tabla en la misma columna, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Combinar celdas]**.
 
-*****Nota: La creación de un lapso de filas solo funciona para las celdas situadas más a la izquierda.*
+>[!NOTE]
+>
+>La creación de un lapso de filas solo funciona para las celdas situadas más a la izquierda.
 
 Para marcar una fila como encabezado de fila, seleccione todas las celdas de la fila, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
 
