@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
 
 ---
 
@@ -306,7 +306,7 @@ Seleccione un archivo ZIP a la vez, haga clic en **[!UICONTROL Extraer archivo]*
 
 Una vez finalizada la extracción, AEM le notifica en el área de notificación. Mientras AEM extrae el ZIP, puede volver a su trabajo sin interrumpir la extracción.
 
-![Notificación de extracción ZIP](assets/Zip-extraction-notification.png)
+![Notificación de la extracción del archivo ZIP](assets/Zip-extraction-notification.png)
 
 Algunas limitaciones de la función son:
 
@@ -326,11 +326,9 @@ Para realizar la previsualización de un recurso, siga estos pasos.
 
    Para acercar un recurso, toque o haga clic en `+` (o toque o haga clic en la lupa del recurso). Para alejar, toque o haga clic en `-`. Al acercar, puede ver con detenimiento cualquier área de la imagen. La flecha para restablecer el zoom le lleva de nuevo a la vista original.
 
-   ![upload adicon](assets/uploadicon.png)
-
    Toque **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Icono Restablecer para devolver al usuario a la vista original](assets/chlimage_1-11.png)
 
 **Previsualización de recursos utilizando solo teclas de teclado**
 
@@ -353,11 +351,11 @@ Consulte también [Previsualización de recursos de medios dinámicos.](/help/as
 
 ## Editar propiedades y metadatos {#editing-properties}
 
-1. Navegue a la ubicación del recurso cuyos metadatos desee editar.
+1. Vaya a la ubicación del recurso para editar sus metadatos.
 
 1. Seleccione el recurso y toque o haga clic en **[!UICONTROL Propiedades]** desde la barra de herramientas hasta las propiedades del recurso de vista. También puede seleccionar la acción rápida **[!UICONTROL Propiedades]** en la tarjeta de recursos.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Acciones rápidas de propiedades en la vista de tarjetas de recursos](assets/properties_quickaction.png)
 
 1. En la página [!UICONTROL Propiedades] , edite las propiedades de metadatos en varias fichas. Por ejemplo, en la ficha **[!UICONTROL Básico]** , edite el título, la descripción, etc.
 
@@ -367,13 +365,13 @@ Consulte también [Previsualización de recursos de medios dinámicos.](/help/as
 
 1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo de activación]**.
 
-   ![utilice el selector de fecha y hora o las teclas del teclado en el campo Tiempo de activación para agregar fecha y hora a la activación de recursos](assets/schedule-activation.png)
+   ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de activación para agregar fecha y hora a la activación de recursos](assets/schedule-activation.png)
 
    *Figura: Programar activación de recursos*
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo Tiempo de **[!UICONTROL desactivación]** . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web de Recursos ni a través de la API HTTP.
 
-   ![utilice el selector de fecha y hora o las teclas del teclado en el campo Tiempo de inactividad para agregar la fecha y la hora de la activación de recursos](assets/schedule-deactivation.png)
+   ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de inactividad para agregar fecha y hora a la activación de recursos](assets/schedule-deactivation.png)
 
    *Figura: Programar desactivación de recursos*
 
@@ -385,7 +383,7 @@ Consulte también [Previsualización de recursos de medios dinámicos.](/help/as
 
 1. Para clasificar el recurso, pulse o haga clic en la pestaña **[!UICONTROL Avanzado]** y, a continuación, pulse o haga clic en la estrella adecuada para asignar la clasificación que está buscando.
 
-   ![clasificaciones](assets/ratings.png)
+   ![Ficha Avanzado en Propiedades del recurso para asignar una clasificación](assets/ratings.png)
 
    La puntuación de clasificación que asigne al recurso se muestra en **[!UICONTROL Sus clasificaciones]**. La puntuación media de clasificación que el recurso recibió de los usuarios que clasificaron el recurso se muestra en **[!UICONTROL Clasificación]**. Además, el desglose de las puntuaciones de clasificación que contribuyen a la puntuación de clasificación promedio se muestra en Desglose de **[!UICONTROL clasificación]**. Puede buscar recursos en función de las puntuaciones de clasificación promedio.
 
@@ -414,7 +412,7 @@ Algunos atributos que son exclusivos de una copia concreta de un activo no se ar
 El resto de las propiedades y la información de metadatos se conservan. No se crea una copia parcial al copiar un recurso.
 
 1. En la interfaz de usuario de Recursos, seleccione uno o varios recursos y, a continuación, toque o haga clic en el icono **[!UICONTROL Copiar]** de la barra de herramientas. También puede seleccionar la acción rápida **[!UICONTROL Copiar]** en la tarjeta de recursos.
-   ![copy_icon](assets/copy_icon.png)
+   ![Icono de Copiar en la barra de herramientas de la interfaz de usuario de los recursos](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -428,7 +426,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
 1. Toque o haga clic en el icono **[!UICONTROL Pegar]** recurso de la barra de herramientas.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)Los recursos se copian en esta ubicación.
+   ![Icono de Pegar en los recursos](assets/chlimage_1-14.png)La barra de herramientas de la interfaz de usuario se copia en esta ubicación.
 
    >[!NOTE]
    >
@@ -439,7 +437,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 1. Navegue hasta la ubicación del recurso que desee mover.
 
 1. Seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Mover]** de la barra de herramientas.
-   ![move_icon](assets/move_icon.png)
+   ![Icono de movimiento en la barra de herramientas de la interfaz de usuario del recurso](assets/move_icon.png)
 
 1. En el asistente Mover recursos, realice una de las siguientes acciones:
 
@@ -621,7 +619,7 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Aparece una pantalla de inicio de sesión.
 1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM le autentique.
 
-## Búsqueda de recursos {#assetsearch}
+## Buscar recursos {#assetsearch}
 
 La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM.
 
