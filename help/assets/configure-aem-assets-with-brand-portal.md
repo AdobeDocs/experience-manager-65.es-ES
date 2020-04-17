@@ -1,6 +1,6 @@
 ---
-title: Configuración de AEM Assets con Brand Portal
-seo-title: Configuración de AEM Assets con Brand Portal
+title: Configurar AEM Assets con Brand Portal
+seo-title: Configurar AEM Assets con Brand Portal
 description: Obtenga información sobre cómo configurar Recursos AEM con Brand Portal para publicar recursos y colecciones en Brand Portal.
 seo-description: Obtenga información sobre cómo configurar Recursos AEM con Brand Portal para publicar recursos y colecciones en Brand Portal.
 uuid: b95c046e-9988-444c-b50e-ff5ec8cafe14
@@ -10,12 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 28354bd9785fa83939f9e3b051aac195d7706633
+source-git-commit: e5e918c0b971159bc99bdcf604c89439c2b08244
 
 ---
 
 
-# Configuración de AEM Assets con Brand Portal {#configure-integration-65}
+# Configurar AEM Assets con Brand Portal {#configure-integration-65}
 
 Los recursos de Adobe Experience Manager (AEM) se configuran con Brand Portal a través de Adobe I/O, que proporciona un distintivo IMS para la autorización del inquilino de Brand Portal.
 
@@ -48,7 +48,7 @@ La información proporcionada se basa en el supuesto de que cualquiera que lea e
 
 ## Requisitos previos {#prerequisites}
 
-Para configurar Recursos AEM con Brand Portal, es necesario lo siguiente:
+Para configurar AEM Assets con Brand Portal, es necesario lo siguiente:
 
 * Una instancia de creación de Recursos AEM activa y en ejecución con el último Service Pack.
 * URL del inquilino de Brand Portal.
@@ -77,30 +77,30 @@ Para obtener instrucciones detalladas, consulte
 
 **Póngase en contacto con la asistencia** si no puede encontrar el paquete de AEM o el Service Pack más recientes.
 
-## Create configuration {#configure-new-integration-65}
+## Crear configuración {#configure-new-integration-65}
 
 Realice los siguientes pasos en la secuencia mostrada si va a configurar Recursos AEM con Brand Portal por primera vez:
-1. [Obtener certificado público](#public-certificate)
-1. [Creación de la integración de Adobe I/O](#createnewintegration)
-1. [Crear configuración de cuenta IMS](#create-ims-account-configuration)
-1. [Configurar servicio de nube](#configure-the-cloud-service)
-1. [Configuración de prueba](#test-integration)
+1. [Obtenga un certificado público](#public-certificate)
+1. [Cree la integración de Adobe I/O](#createnewintegration)
+1. [Cree la configuración de cuenta IMS](#create-ims-account-configuration)
+1. [Configure el servicio en la nube](#configure-the-cloud-service)
+1. [Pruebe la configuración](#test-integration)
 
-### Crear configuración de IMS {#create-ims-configuration}
+### Crear la configuración de IMS {#create-ims-configuration}
 
 La configuración de IMS autentica el inquilino de Brand Portal con la instancia de creación de AEM Assets.
 
 La configuración de IMS incluye dos pasos:
 
-* [Obtener certificado público](#public-certificate)
-* [Crear configuración de cuenta IMS](#create-ims-account-configuration)
+* [Obtener un certificado público](#public-certificate)
+* [Crear la configuración de cuenta IMS](#create-ims-account-configuration)
 
-### Obtener certificado público {#public-certificate}
+### Obtener un certificado público {#public-certificate}
 
-El certificado público le permite autenticar su perfil en Adobe I/O.
+El certificado público permite autenticar el perfil en Adobe I/O.
 
 1. Inicie sesión en la instancia de creación de AEM AssetsDirección URL predeterminada: http:// localhost:4502/aem/start.html
-1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a **[!UICONTROL Seguridad]** >> Configuraciones de **[!UICONTROL Adobe IMS]**.
+1. En el panel **Herramientas** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Seguridad]** >> Configuraciones de **[!UICONTROL Adobe IMS]**.
 
    ![Interfaz de usuario de configuración de cuenta de Adobe IMS](assets/ims-config1.png)
 
@@ -108,9 +108,9 @@ El certificado público le permite autenticar su perfil en Adobe I/O.
 
    Haga clic en **[!UICONTROL Crear]**.
 
-   Esto le llevará a la página de configuración **[!UICONTROL de la cuenta técnica de]** Adobe IMS.
+   Esto lo llevará a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**.
 
-1. De forma predeterminada, se abre la ficha **Certificado** .
+1. De forma predeterminada, se abre la pestaña **Certificado** .
 
    En **Cloud Solution**, seleccione **[!UICONTROL Adobe Brand Portal]**.
 
@@ -120,17 +120,17 @@ El certificado público le permite autenticar su perfil en Adobe I/O.
 
    ![Crear certificado](assets/ims-config2.png)
 
-1. Haga clic en **[!UICONTROL Descargar clave]** pública y guarde el archivo de certificado *AEM-Adobe-IMS.crt* en el equipo. El archivo de certificado se utiliza para [crear la integración](#createnewintegration)de Adobe I/O.
+1. Haga clic en **[!UICONTROL Descargar clave pública]** y guarde el archivo de certificado *AEM-Adobe-IMS.crt* en el equipo. El archivo de certificado se utiliza para [crear la integración](#createnewintegration) de Adobe I/O.
 
    ![Descargar certificado](assets/ims-config3.png)
 
 1. Haga clic en **[!UICONTROL Siguiente]**. 
 
-   En la ficha **Cuenta** , cree la cuenta de Adobe IMS, pero para ello necesitará los detalles de integración. Mantenga esta página abierta por ahora.
+   En la pestaña **Cuenta**, cree la cuenta de Adobe IMS, pero para ello necesitará los detalles de integración. Mantenga esta página abierta por ahora.
 
    Abra una pestaña nueva y [cree la integración](#createnewintegration) de Adobe I/O para obtener los detalles de integración de las configuraciones de cuenta de IMS.
 
-### Creación de la integración de Adobe I/O {#createnewintegration}
+### Crear la integración de Adobe I/O {#createnewintegration}
 
 La integración de Adobe I/O genera la clave de API, el secreto del cliente y la carga útil (JWT), que es necesaria para configurar las configuraciones de cuenta de IMS.
 
@@ -154,40 +154,40 @@ La integración de Adobe I/O genera la clave de API, el secreto del cliente y la
 
    ![Crear integración](assets/create-new-integration2.png)
 
-1. Especifique un nombre y una descripción para la integración. Haga clic en **[!UICONTROL Seleccionar un archivo del equipo]** y cargue el `AEM-Adobe-IMS.crt` archivo descargado en la sección [Obtener certificados](#public-certificate) públicos.
+1. Especifique un nombre y una descripción para la integración. Haga clic en **[!UICONTROL Seleccionar un archivo del equipo]** y cargue el `AEM-Adobe-IMS.crt` archivo descargado en la sección [Obtener certificados públicos](#public-certificate).
 
 1. Seleccione el perfil de su organización.
 
-   O bien, seleccione el portal **[!UICONTROL de marca perfil]** Assets y haga clic en **[!UICONTROL Crear integración]**. Se crea la integración.
+   O bien, seleccione el perfil predeterminado **[!UICONTROL Assets Brand Portal]** y haga clic en **[!UICONTROL Crear integración]**. Se crea la integración.
 
-1. Haga clic en **[!UICONTROL Continuar para ver los detalles]** de la integración y vista de la información de integración.
+1. Haga clic en **[!UICONTROL Continuar a los detalles de la integración]** para visualizar la información de integración.
 
-   Copiar la clave de **[!UICONTROL API]**
+   Copiar la **[!UICONTROL clave de API]**
 
-   Haga clic en **[!UICONTROL Recuperar secreto]** de cliente y copie la clave Secreto de cliente.
+   Haga clic en **[!UICONTROL Recuperar secreto del cliente]** y copie la clave del Secreto del cliente.
 
-   ![Clave de API, Secreto de cliente e información de carga útil de una integración](assets/create-new-integration3.png)
+   ![Clave de API, Secreto del cliente e información de carga útil de una integración](assets/create-new-integration3.png)
 
-1. Vaya a la ficha **[!UICONTROL JWT]** y copie la carga útil **[!UICONTROL JWT]**.
+1. Vaya a la pestaña **[!UICONTROL JWT]** y copie la carga útil **[!UICONTROL JWT]**.
 
    La clave de API, la clave secreta del cliente y la información de carga útil de JWT se utilizarán para crear la configuración de la cuenta de IMS.
 
-### Crear configuración de cuenta IMS {#create-ims-account-configuration}
+### Crear la configuración de cuenta IMS {#create-ims-account-configuration}
 
-Asegúrese de que ha realizado los siguientes pasos:
+Asegúrese de haber realizado los siguientes pasos:
 
-* [Obtener certificado público](#public-certificate)
-* [Creación de la integración de Adobe I/O](#createnewintegration)
+* [Obtener un certificado público](#public-certificate)
+* [Crear la integración de Adobe I/O](#createnewintegration)
 
 **Pasos para crear la configuración de cuenta de IMS:**
 
-1. Abra la página Configuración de IMS, ficha **[!UICONTROL Cuentas]** . La página se ha mantenido abierta al final de la sección, [Obtención de un certificado](#public-certificate)público.
+1. Abra la página Configuración de IMS, pestaña **[!UICONTROL Cuentas]** . La página se ha mantenido abierta al final de la sección, [Obtener un certificado público](#public-certificate).
 
 1. Especifique un **[!UICONTROL Título]** para la cuenta de IMS.
 
-   En **[!UICONTROL Servidor]** de autorización, introduzca la dirección URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+   En **[!UICONTROL Servidor de autorización]**, introduzca la dirección URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   Pegue la clave de API, el secreto del cliente y la carga útil JWT que ha copiado al final de [Crear integración](#createnewintegration)de Adobe I/O.
+   Pegue la clave de API, el Secreto del cliente y la carga útil JWT que ha copiado al final de [Crear integración de Adobe I/O](#createnewintegration).
 
    Haga clic en **[!UICONTROL Crear]**.
 
@@ -198,25 +198,25 @@ Asegúrese de que ha realizado los siguientes pasos:
 
 1. Seleccione la configuración de IMS y haga clic en **[!UICONTROL Comprobar estado]**. Aparecerá un cuadro de diálogo.
 
-   Haga clic en **[!UICONTROL Comprobar]**. Cuando la conexión se ha realizado correctamente, aparece el mensaje *Token recuperado correctamente* .
+   Haga clic en **[!UICONTROL Comprobar]**. Cuando la conexión se realiza correctamente, aparece el mensaje *Token recuperado correctamente* .
 
    ![](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
->Cree sólo una configuración IMS válida.
+>Sólo debe tener una configuración IMS. No cree varias configuraciones de IMS.
 >
-> Asegúrese de que la configuración esté correcta. En caso de que la configuración no esté en buen estado, elimínela y cree una nueva configuración en buen estado.
+>Asegúrese de que la configuración de IMS pasa la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarlo y crear una configuración nueva y válida.
 
 
-### Configurar servicio de nube {#configure-the-cloud-service}
+### Configurar el servicio en la nube {#configure-the-cloud-service}
 
 Siga estos pasos para crear la configuración del servicio en la nube de Brand Portal:
 
 1. Inicie sesión en la instancia de creación de Recursos AEM
 
    Dirección URL predeterminada: http:// localhost:4502/aem/start.html
-1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a Servicios de **[!UICONTROL nube >> AEM Brand Portal]**.
+1. En el panel **Herramientas** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Cloud Services >> AEM Brand Portal]**.
 
    Se abre la página Configuraciones de Brand Portal.
 
@@ -224,21 +224,21 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
 1. Especifique un **[!UICONTROL Título]** para la configuración.
 
-   Seleccione la configuración de IMS que ha creado en el paso, [cree la configuración](#create-ims-account-configuration)de la cuenta de IMS.
+   Seleccione la configuración de IMS que creó en el paso, [cree la configuración](#create-ims-account-configuration) de la cuenta de IMS.
 
    En la URL **** del servicio, introduzca la URL del inquilino de Brand Portal.
 
    ![](assets/create-cloud-service.png)
 
-1. Click **[!UICONTROL Save and Close]**. Se crea la configuración de nube. La instancia de creación de Recursos AEM ahora está integrada con el inquilino de Brand Portal.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de nube. La instancia de creación de Recursos AEM ahora está integrada con el inquilino de Brand Portal.
 
-### Test configuration {#test-integration}
+### Pruebe la configuración{#test-integration}
 
 1. Inicie sesión en la instancia de creación de Recursos AEM
 
    Dirección URL predeterminada: http:// localhost:4502/aem/start.html
 
-1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a **[!UICONTROL Implementación >> Replicación]**.
+1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
    ![](assets/test-integration1.png)
 
@@ -266,7 +266,7 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    >Evite desactivar cualquiera de los agentes de replicación, ya que puede provocar errores en la replicación de algunos de los recursos.
 
 
-1. Para comprobar la conexión entre el autor de Recursos AEM y Brand Portal, haga clic en **[!UICONTROL Probar conexión]**.
+1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
    ![](assets/test-integration4.png)
 
@@ -287,9 +287,9 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
 Brand Portal se ha configurado correctamente con la instancia de creación de AEM Assets. Ahora puede:
 
-* [Publicación de recursos de AEM Assets en Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publicación de carpetas de AEM Assets en Brand Portal](../assets/brand-portal-publish-folder.md)
-* [Publicación de colecciones de AEM Assets en Brand Portal](../assets/brand-portal-publish-collection.md)
+* [Publicar recursos desde AEM Assets en Brand Portal](../assets/brand-portal-publish-assets.md)
+* [Publicar carpetas desde AEM Assets en Brand Portal](../assets/brand-portal-publish-folder.md)
+* [Publicar colecciones desde AEM Assets en Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Configure Asset Sourcing](https://docs.adobe.com/content/help/es-ES/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) para que los usuarios de Brand Portal puedan contribuir y publicar recursos en Recursos AEM.
 
 ## Configuración de actualización {#upgrade-integration-65}
@@ -307,7 +307,7 @@ Asegúrese de que no se esté ejecutando ningún trabajo de publicación en la i
 
    Dirección URL predeterminada: http:// localhost:4502/aem/start.html
 
-1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a **[!UICONTROL Implementación >> Replicación]**.
+1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
 1. Se abre la página Replicación.
 
@@ -363,6 +363,6 @@ Ahora puede [crear la configuración](#configure-new-integration-65) en la insta
 
 Después de que la replicación se realice correctamente, puede publicar recursos, carpetas y colecciones en Brand Portal. Para obtener más información, consulte:
 
-* [Publicación de recursos en Brand Portal](/help/assets/brand-portal-publish-assets.md)
+* [Publicar recursos en Brand Portal](/help/assets/brand-portal-publish-assets.md)
 * [Publicar carpetas en Brand Portal](/help/assets/brand-portal-publish-folder.md)
 * [Publicar colecciones en Brand Portal](/help/assets/brand-portal-publish-collection.md)
