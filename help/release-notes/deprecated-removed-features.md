@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
 
 ---
 
 
 # Funciones en desuso y eliminadas {#deprecated-and-removed-features}
 
-Adobe evalúa constantemente las capacidades del producto para reinventar o reemplazar con el tiempo las funciones antiguas con alternativas más modernas a fin de mejorar el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores.
+Adobe evalúa constantemente las capacidades de los productos para renovar o sustituir las funciones más antiguas con alternativas modernas que mejoren el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores.
 
 Para comunicar la eliminación o el reemplazo inminente de las capacidades de AEM, se aplican las siguientes reglas:
 
@@ -151,21 +151,27 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
    <td><p>Editor de diálogos estándar de interfaz de usuario en CRXDE Lite</p> <p>Adobe no tiene previsto mejorar el editor de diálogos estándar de interfaz de usuario incluido como parte de la distribución (Quickstart)</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>La integración de AEM Forms con AEM Mobile&lt; está en desuso </p> </td>
+   <td>Sin reemplazo </td>
+  </tr>
  </tbody>
 </table>
 
 ## Funciones eliminadas {#removed-features}
 
-Esta sección enumera las funciones y funciones que se han eliminado de AEM 6.5. Las versiones anteriores tenían estas capacidades marcadas como obsoletas.
+Esta sección lista las funciones y funciones que se han eliminado de AEM 6.5. Las versiones anteriores tenían estas capacidades marcadas como obsoletas.
 
 | Área | Función | Reemplazo |
 |--- |--- |--- |
-| Activity Map de Analytics | Versión del Activity Map que se incluye en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. Utilice el complemento [ActivityMap proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Mapa de Actividad de Analytics | Versión del mapa de Actividad que se incluye en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. Utilice el complemento [ActivityMap proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html). |
 | Integraciones | La integración de ExactTarget se ha eliminado de la distribución predeterminada (QuickStart) y ya no está disponible. | Sin reemplazo |
 | Integraciones | Se ha eliminado la integración de Salesforce Force API de la distribución predeterminada (Quickstart) y ahora es un paquete adicional para instalar desde PackageShare. | Esta función aún se encuentra disponible. |
 | Formularios | Se ha eliminado la compatibilidad con el servicio Adobe Central Migration Bridge, ya que el producto Adobe Central ya no es compatible. | Sin reemplazo |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Sin reemplazo |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Sin reemplazo |
+| Forms | La actualización de un solo salto de LiveCycle ES4 SP1 a AEM 6.5 Forms en JEE no está disponible | Consulte las rutas [de actualización](../forms/using/upgrade.md) disponibles en la documentación de actualización de AEM Forms. |
 | Desarrolladores | Se ha eliminado Firebug Lite de la distribución predeterminada (Quickstart) | Usar las consolas de desarrollador incorporadas en el navegador |
 | Desarrolladores | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Sin reemplazo |
 | Recursos | La función de descarga de recursos se ha eliminado en AEM 6.5 | Sin reemplazo |
