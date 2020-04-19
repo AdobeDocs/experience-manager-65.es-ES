@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -347,7 +347,11 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 1. Utilice las teclas de flecha para desplazarse por la imagen ampliada.
 
-Consulte también [Previsualización de recursos de medios dinámicos.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Previsualización de recursos](/help/assets/previewing-assets.md)de medios dinámicos.
+>* [Subrecursos](managing-linked-subassets.md#viewing-subassets)de Vista.
+
 
 ## Editar propiedades y metadatos {#editing-properties}
 
