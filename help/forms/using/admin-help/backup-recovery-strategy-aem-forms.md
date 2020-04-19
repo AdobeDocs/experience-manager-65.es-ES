@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -23,33 +23,37 @@ Después de identificar cómo se utilizan los formularios AEM, determine los arc
 
 >[!NOTE]
 >
->Al igual que con cualquier otro aspecto de la implementación de formularios AEM, su estrategia de copia de seguridad y recuperación debe desarrollarse y probarse en un entorno de desarrollo o ensayo antes de utilizarse en producción para garantizar que toda la solución funcione según lo esperado sin pérdida de datos.
+>Al igual que con cualquier otro aspecto de la implementación de formularios AEM, la estrategia de copia de seguridad y recuperación debe desarrollarse y probarse en un entorno de desarrollo o ensayo antes de utilizarse en producción para garantizar que toda la solución funcione según lo esperado sin pérdida de datos.
 
-Adobe Experience Manager (AEM) es una parte integral de los formularios AEM. Por lo tanto, es necesario realizar una copia de seguridad de AEM en sincronización con la copia de seguridad de formularios AEM, ya que la solución y los servicios de gestión de correspondencia, como el administrador de formularios, se basan en datos almacenados en AEM como parte de los formularios AEM.Para evitar cualquier pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios AEM de forma que GDS y AEM (repositorio) se correlacionen con referencias de base de datos.Se deben restaurar los directorios raíz de la base de datos, GDS, AEM, AEM y GDS, equipo con el mismo nombre DNS que el original.
+Adobe Experience Manager (AEM) es una parte integral de los formularios AEM. Por lo tanto, es necesario realizar una copia de seguridad de AEM en sincronización con la copia de seguridad de formularios AEM, ya que la solución y los servicios de gestión de correspondencia, como el administrador de formularios, se basan en datos almacenados en AEM como parte de los formularios AEM.Para evitar cualquier pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios AEM de forma que GDS y AEM (repositorio) se correlacionen con referencias de base de datos.Se deben restaurar los directorios raíz de base de datos, GDS, AEM, AEM y GDS, un equipo con el mismo nombre DNS que el original.
 
 ## Tipos de copias de seguridad {#types-of-backups}
 
 La estrategia de copia de seguridad de formularios AEM incluye dos tipos de copias de seguridad:
 
-**** Imagen del sistema: Una copia de seguridad completa del sistema que puede utilizar para restaurar el contenido de su equipo si el disco duro o todo el equipo deja de funcionar. Solo es necesario realizar una copia de seguridad de la imagen del sistema antes de la implementación de producción de formularios AEM. Las políticas corporativas internas dictan la frecuencia con la que se requieren los backups de imágenes del sistema.
+**Imagen del sistema:** Una copia de seguridad completa del sistema que puede utilizar para restaurar el contenido de su equipo si el disco duro o todo el equipo deja de funcionar. Solo es necesario realizar una copia de seguridad de la imagen del sistema antes de la implementación de producción de formularios AEM. Las políticas corporativas internas dictan la frecuencia con la que se requieren los backups de imágenes del sistema.
 
-**** Datos específicos de formularios de AEM: Los datos de las aplicaciones existen en la base de datos, Global Document Storage (GDS) y el repositorio de AEM, y se debe realizar una copia de seguridad en tiempo real. GDS es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan en un proceso. Estos archivos pueden incluir archivos PDF, políticas o plantillas de formulario.
+**Datos específicos de formularios de AEM:** Los datos de la aplicación existen en la base de datos, el Almacenamiento de Documento global (GDS) y el repositorio de AEM, y se debe realizar una copia de seguridad en tiempo real. GDS es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan en un proceso. Estos archivos pueden incluir archivos PDF, políticas o plantillas de formulario.
 
-***Nota **: Si está instalado Content Services (obsoleto), también realice una copia de seguridad del directorio raíz del almacenamiento de contenido. (Consulte Directorio raíz[de almacenamiento de contenido (solo Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only)).*
+>[!NOTE]
+>
+>Si está instalado Content Services (obsoleto), también realice una copia de seguridad del directorio raíz de Content Almacenamiento. Consulte Directorio raíz [de Almacenamiento de contenido (solo Servicios de contenido)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
-La base de datos se utiliza para almacenar artefactos de formulario, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos GDS. Si ha activado el almacenamiento de documentos en la base de datos, los datos y documentos persistentes del GDS también se almacenan en la base de datos. La base de datos se puede hacer backup y recuperar mediante los siguientes métodos:
+La base de datos se utiliza para almacenar artefactos de formulario, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos GDS. Si ha activado el almacenamiento de documentos en la base de datos, los datos y documentos persistentes en el GDS también se almacenan en la base de datos. La base de datos se puede hacer backup y recuperar mediante los siguientes métodos:
 
 * **El modo de copia de seguridad** de instantáneas indica que el sistema de formularios AEM está en modo de copia de seguridad indefinidamente o durante un número especificado de minutos, tras lo cual el modo de copia de seguridad ya no está activado. Para entrar o salir del modo de copia de seguridad instantánea, puede utilizar una de las siguientes opciones. Después de un escenario de recuperación, el modo de copia de seguridad instantánea no debe estar habilitado.
 
    * Utilice la página Configuración de copia de seguridad de la Consola de administración. Para acceder al modo de instantánea, seleccione la casilla de verificación Operar en modo de copia de seguridad segura. Anule la selección de la casilla de verificación para salir del modo de instantánea.
-   * Utilice la secuencia de comandos LCBackupMode (consulte [Copia de seguridad de la base de datos, GDS y directorios](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)raíz de almacenamiento de contenido). Para salir del modo de copia de seguridad de instantáneas, en el argumento de secuencia de comandos, establezca el `continuousCoverage` parámetro en `false` o use la `leaveContinuousCoverage` opción.
+   * Utilice la secuencia de comandos LCBackupMode (consulte [Copia de seguridad de la base de datos, GDS y directorios](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)raíz de Almacenamiento de contenido). Para salir del modo de copia de seguridad de instantáneas, en el argumento de secuencia de comandos, establezca el `continuousCoverage` parámetro en `false` o use la `leaveContinuousCoverage` opción.
    * Utilice la API de copia de seguridad y recuperación proporcionada. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * **El modo de copia de seguridad** móvil indica que el sistema siempre está en modo de copia de seguridad y se inicia una nueva sesión en modo de copia de seguridad en cuanto se libera la sesión anterior. No hay tiempo de espera asociado con el modo de copia de seguridad móvil. Cuando se llama a la secuencia de comandos o las API de LCBackupMode para que dejen el modo de copia de seguridad móvil, se inicia una nueva sesión del modo de copia de seguridad móvil. Este modo es útil para admitir copias de seguridad continuas, pero aún así permite limpiar documentos antiguos e innecesarios del directorio GDS. El modo de copia de seguridad móvil no se admite a través de la página Backup and Recovery. Después de un escenario de recuperación, el modo de copia de seguridad móvil aún está habilitado. Puede dejar el modo de copia de seguridad continua (modo de copia de seguridad móvil) utilizando la secuencia de comandos LCBackupMode con la `leaveContinuousCoverage` opción.
 
-***Nota**: Si se deja el modo de copia de seguridad móvil inmediatamente, se inicia una nueva sesión de modo de copia de seguridad. Para desactivar completamente el modo de copia de seguridad móvil, utilice la `leaveContinuousCoverage` opción de la secuencia de comandos, que sobrescribe la sesión de copia de seguridad móvil existente. En el modo de copia de seguridad instantánea, puede salir del modo de copia de seguridad como suele hacer. *
+>[!NOTE]
+>
+>Si se deja el modo de copia de seguridad móvil inmediatamente, se inicia una nueva sesión de modo de copia de seguridad. Para desactivar completamente el modo de copia de seguridad móvil, utilice la `leaveContinuousCoverage` opción de la secuencia de comandos, que sobrescribe la sesión de copia de seguridad móvil existente. En el modo de copia de seguridad instantánea, puede salir del modo de copia de seguridad como suele hacer.
 
-Para evitar la pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios de AEM de forma que los documentos de directorio raíz de almacenamiento de contenido y GDS se correlacionen con las referencias de la base de datos.
+Para evitar la pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios de AEM de forma que los documentos de directorio raíz de GDS y Almacenamiento de contenido se correlacionen con las referencias de base de datos.
 
 >[!NOTE]
 >
@@ -57,7 +61,7 @@ Para evitar la pérdida de datos, se debe realizar una copia de seguridad de los
 
 ## Consideraciones especiales para backup y recuperación {#special-considerations-for-backup-and-recovery}
 
-Utilice las siguientes directrices si debe recuperar formularios AEM en un entorno diferente debido a los siguientes cambios:
+Utilice las siguientes directrices si debe recuperar formularios AEM en otro entorno debido a los siguientes cambios:
 
 * Cambio en la dirección IP, el nombre de host o el puerto del servidor de formularios AEM
 * Cambio en las letras de la unidad o en la ruta del directorio
@@ -73,15 +77,15 @@ Aunque puede cambiar el servidor de la base de datos y muchos otros parámetros,
 
 Antes de reiniciar el servidor de formularios después de una recuperación, haga lo siguiente:
 
-1. Inicie el sistema en modo de mantenimiento.
+1. Inicio el sistema en modo de mantenimiento.
 1. Para asegurarse de que el Administrador de formularios se sincroniza con los formularios AEM en el modo de mantenimiento, haga lo siguiente:
 
    1. Vaya a https://&lt;*server*>:&lt;*port*>/lc/fm e inicie sesión con las credenciales de administrador/contraseña.
    1. Haga clic en el nombre del usuario (Super Administrator en este caso) en la esquina superior derecha.
    1. Haga clic en Opciones **de administración**.
-   1. Haga clic en **Iniciar** para sincronizar recursos desde el repositorio.
+   1. Haga clic en **Inicio** para sincronizar los recursos del repositorio.
 
-1. En un entorno agrupado, el nodo maestro (con respecto a AEM) debe estar activo antes que los nodos esclavos.
+1. En un entorno agrupado, el nodo maestro (con respecto a AEM) debe estar arriba antes que los nodos esclavos.
 1. Asegúrese de que no se inicien procesos desde fuentes internas o externas como los iniciadores de procesos Web, SOAP o EJB hasta que se valide el funcionamiento normal del sistema.
 
 Si la base de datos de formularios AEM principal se mueve o cambia, revise las guías de instalación relevantes para su servidor de aplicaciones para obtener información sobre la actualización de la información de conexión de la base de datos para los orígenes de datos de formularios AEM IDP_DS y EDC_DS.
@@ -92,14 +96,14 @@ En un clúster, si utiliza el almacenamiento en caché TCP en lugar de UDP, debe
 
 ### Cambio de las rutas del sistema de archivos de nodo de formularios AEM {#changing-the-aem-forms-node-file-system-paths}
 
-Si cambia las rutas del sistema de archivos para un nodo independiente, debe actualizar las referencias adecuadas en las preferencias, otras configuraciones del sistema, aplicaciones personalizadas y aplicaciones de formularios AEM implementadas. Por otro lado, para un clúster, todos los nodos deben utilizar la misma configuración de ruta del sistema de archivos. Debe configurar el directorio raíz de Global Document Storage (GDS) y asegurarse de que señala a una copia del GDS recuperado que está sincronizada con la base de datos recuperada. La configuración de la ruta de GDS es importante porque el GDS puede contener datos que se pretenden que persistan en los reinicios del servidor de aplicaciones.
+Si cambia las rutas del sistema de archivos para un nodo independiente, debe actualizar las referencias adecuadas en las preferencias, otras configuraciones del sistema, aplicaciones personalizadas y aplicaciones de formularios AEM implementadas. Por otro lado, para un clúster, todos los nodos deben utilizar la misma configuración de ruta del sistema de archivos. Debe configurar el directorio raíz del Almacenamiento de Documento global (GDS) y asegurarse de que señala a una copia del GDS recuperado que está sincronizada con la base de datos recuperada. La configuración de la ruta de GDS es importante porque el GDS puede contener datos que se pretenden que persistan en los reinicios del servidor de aplicaciones.
 
 En un entorno agrupado, la configuración de la ruta del sistema de archivos del repositorio debe ser la misma para todos los nodos del clúster antes de la copia de seguridad y después de la recuperación.
 
-Utilice la `LCSetGDS`secuencia de comandos de la `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` carpeta para definir la ruta de GDS después de cambiar las rutas del sistema de archivos. Consulte el `ReadMe.txt` archivo de la misma carpeta para obtener más información. Si no se puede utilizar la ruta del directorio GDS anterior, se debe utilizar la secuencia de comandos para definir la nueva ruta del GDS antes de iniciar los formularios AEM. `LCSetGDS`
+Utilice la `LCSetGDS`secuencia de comandos de la `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` carpeta para definir la ruta de GDS después de cambiar las rutas del sistema de archivos. Consulte el `ReadMe.txt` archivo de la misma carpeta para obtener más información. Si no se puede utilizar la ruta del directorio GDS anterior, se debe utilizar la secuencia de comandos para definir la nueva ruta del GDS antes de inicio de los formularios AEM. `LCSetGDS`
 
 >[!NOTE]
 >
 >Esta circunstancia es la única en la que debe utilizar esta secuencia de comandos para cambiar la ubicación del GDS. Para cambiar la ubicación de GDS mientras se ejecutan formularios AEM, utilice la Consola de administración. (Consulte [Configuración general de los](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)formularios de AEM*.) *
 
-Después de definir la ruta GDS, inicie el servidor de formularios en modo de mantenimiento y utilice la consola de administración para actualizar las rutas restantes del sistema de archivos para el nuevo nodo. Después de comprobar que se han actualizado todas las configuraciones necesarias, reinicie y pruebe los formularios de AEM.
+Después de definir la ruta GDS, inicio el servidor de formularios en modo de mantenimiento y utilice la consola de administración para actualizar las rutas restantes del sistema de archivos para el nuevo nodo. Después de comprobar que se han actualizado todas las configuraciones necesarias, reinicie y pruebe los formularios de AEM.
