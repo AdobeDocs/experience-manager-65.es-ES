@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -170,7 +170,9 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
 **Palabra completa:** La búsqueda sólo devuelve palabras completas.
 
-**Nota:** Si introduce caracteres especiales en el cuadro de texto Buscar, se desactivará la opción Palabra completa.
+>[!NOTE]
+>
+>Si introduce caracteres especiales en el cuadro de texto Buscar, se desactivará la opción Palabra completa.
 
 **Reg ex:** Buscar con expresiones regulares. Por ejemplo, la siguiente expresión regular busca direcciones de correo electrónico en un módulo de texto:
 
