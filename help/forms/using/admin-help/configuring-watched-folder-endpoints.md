@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -52,7 +52,7 @@ El resultado de la primera conversión iría a \path\result. La entrada para la 
 
 ## Cómo interactúan los usuarios con las carpetas vigiladas {#how-users-interact-with-watched-folders}
 
-Para un extremo de carpeta vigilada, los usuarios pueden invocar copiando o arrastrando archivos de entrada o carpetas de sus escritorios a una carpeta vigilada. Los archivos se procesarán en el orden en que lleguen.
+Para un punto final de carpeta vigilada, los usuarios pueden invocar copiando o arrastrando archivos de entrada o carpetas de sus escritorios a una carpeta vigilada. Los archivos se procesarán en el orden en que lleguen.
 
 Para los extremos de carpeta vigilados, si el trabajo solo requiere un archivo de entrada, el usuario puede copiar ese archivo en la raíz de la carpeta vigilada.
 
@@ -201,7 +201,9 @@ Por ejemplo, si es el 17 de julio de 2009 a las 20.00 horas y usted especifica `
 
 Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta controlada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Result dentro de la carpeta observada. Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones](configuring-watched-folder-endpoints.md#about-file-patterns)de archivo.
 
-***Nota **: Cuanto menor sea el tamaño de las carpetas resultantes, mejor será el rendimiento de la carpeta vigilada. Por ejemplo, si la carga estimada de la carpeta vigilada es de 1000 archivos por hora, pruebe un patrón como`result/%Y%M%D%H`para que se cree una nueva subcarpeta cada hora. Si la carga es más pequeña (por ejemplo, 1000 archivos por día), puede usar un patrón como`result/%Y%M%D`.*
+>[!NOTE]
+>
+>Cuanto menor sea el tamaño de las carpetas resultantes, mejor será el rendimiento de la carpeta vigilada. Por ejemplo, si la carga estimada de la carpeta vigilada es de 1000 archivos por hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es más pequeña (por ejemplo, 1000 archivos por día), puede usar un patrón como `result/%Y%M%D`.
 
 **Conservar carpeta:** Ubicación en la que se almacenan los archivos después de realizar correctamente el análisis y la recogida. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, como se describe en Carpeta de resultados. El valor predeterminado es preserve/%Y/%M/%D/.
 
@@ -231,7 +233,9 @@ Un valor de -1 días indica que nunca se elimina la carpeta de resultados. El va
 
 El resultado de la carpeta vigilada puede ser un solo documento, una lista de documentos o un mapa de documentos. Estos documentos de salida se guardan en la carpeta de resultados, utilizando el patrón especificado en Asignación de parámetros de salida.
 
-**Nota**: La *especificación de nombres que resulten en nombres de archivo de salida únicos mejora el rendimiento. Por ejemplo, piense en el caso en que el servicio devuelve un documento de salida y la Asignación de parámetros de salida lo asigna a`%F.%E`(el nombre de archivo y la extensión del archivo de entrada). En este caso, si los usuarios sueltan archivos con el mismo nombre cada minuto y la carpeta resultante se configura en`result/%Y/%M/%D`y la opción Sobrescribir nombre de archivo Duplicado está desactivada, la carpeta vigilada intentará resolver los nombres de archivo duplicado. El proceso de resolución de nombres de archivos duplicado puede afectar al rendimiento. En este caso, cambiar la asignación de parámetros de salida a`%F_%h_%m_%s_%l`para agregar horas, minutos, segundos y milisegundos al nombre, o garantizar que los archivos eliminados tengan nombres únicos puede mejorar el rendimiento.*
+>[!NOTE]
+>
+>La especificación de nombres que resulten en nombres de archivo de salida únicos mejora el rendimiento. Por ejemplo, piense en el caso en que el servicio devuelve un documento de salida y la Asignación de parámetros de salida lo asigna a `%F.%E` (el nombre de archivo y la extensión del archivo de entrada). En este caso, si los usuarios sueltan archivos con el mismo nombre cada minuto y la carpeta resultante se configura en `result/%Y/%M/%D`y la opción Sobrescribir nombre de archivo Duplicado está desactivada, la carpeta vigilada intentará resolver los nombres de archivo duplicado. El proceso de resolución de nombres de archivos duplicado puede afectar al rendimiento. En este caso, cambiar la asignación de parámetros de salida a `%F_%h_%m_%s_%l` para agregar horas, minutos, segundos y milisegundos al nombre, o garantizar que los archivos eliminados tengan nombres únicos puede mejorar el rendimiento.
 
 ## Acerca de los patrones de archivo {#about-file-patterns}
 
