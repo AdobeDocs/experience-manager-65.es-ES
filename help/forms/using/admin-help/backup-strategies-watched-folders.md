@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -33,7 +33,7 @@ Puede realizar una copia de seguridad de las carpetas vigiladas haciendo una cop
 
 >[!NOTE]
 >
->Esta copia de seguridad es independiente del proceso de backup y recuperación de la base de datos o del almacenamiento de documentos.
+>Este backup es independiente del proceso de backup y recuperación de la base de datos o el almacenamiento de documento.
 
 ## Funcionamiento de las carpetas vigiladas {#how-watched-folders-work}
 
@@ -110,19 +110,19 @@ La siguiente tabla describe la manipulación de archivos de cinco archivos de ej
 
 El siguiente texto describe la manipulación de archivos para cada vez:
 
-**** T1: Los cuatro archivos de ejemplo se colocan en la carpeta de entrada.
+**T1:** Los cuatro archivos de ejemplo se colocan en la carpeta de entrada.
 
-**** T2: La operación de servicio mueve el archivo1 a la carpeta stage para su manipulación.
+**T2:** La operación de servicio mueve el archivo1 a la carpeta stage para su manipulación.
 
-**** T3: La operación de servicio mueve el archivo2 a la carpeta stage para su manipulación. Coloca los resultados de file1 en la carpeta de salida y mueve file1 a la carpeta preserve.
+**T3:** La operación de servicio mueve el archivo2 a la carpeta stage para su manipulación. Coloca los resultados de file1 en la carpeta de salida y mueve file1 a la carpeta preserve.
 
-**** T4: La operación de servicio coloca file3 en la carpeta stage para su manipulación. Coloca los resultados de file2 en la carpeta de salida y coloca file2 en la carpeta preserve.
+**T4:** La operación de servicio coloca file3 en la carpeta stage para su manipulación. Coloca los resultados de file2 en la carpeta de salida y coloca file2 en la carpeta preserve.
 
-**** T5: La operación de servicio coloca file4 en la carpeta de etapa para su manipulación. La manipulación de file3 falla y la operación de servicio la coloca en la carpeta de errores.
+**T5:** La operación de servicio coloca file4 en la carpeta de etapa para su manipulación. La manipulación de file3 falla y la operación de servicio la coloca en la carpeta de errores.
 
-**** T6: La operación de servicio coloca file5 en la carpeta de entrada. Coloca los resultados de file4 en la carpeta de salida y coloca file4 en la carpeta preserve.
+**T6:** La operación de servicio coloca file5 en la carpeta de entrada. Coloca los resultados de file4 en la carpeta de salida y coloca file4 en la carpeta preserve.
 
-**** T7: La operación de servicio coloca el archivo5 en la carpeta stage para su manipulación.
+**T7:** La operación de servicio coloca el archivo5 en la carpeta stage para su manipulación.
 
 ## Copia de seguridad de carpetas vigiladas {#backing-up-watched-folders}
 
@@ -136,15 +136,15 @@ Por ejemplo, si se realiza una copia de seguridad en el momento T1 y el servidor
 
 Si se realizó una copia de seguridad más reciente, puede restaurar los archivos. Al restaurar los archivos, tenga en cuenta en qué carpeta de jerarquía de carpetas vigiladas reside el archivo actual:
 
-**** Fase: Los archivos de esta carpeta se procesan de nuevo una vez restaurada la carpeta vigilada.
+**Fase:** Los archivos de esta carpeta se procesan de nuevo una vez restaurada la carpeta vigilada.
 
-**** Entrada: Los archivos de esta carpeta se procesan de nuevo una vez restaurada la carpeta vigilada.
+**Entrada:** Los archivos de esta carpeta se procesan de nuevo una vez restaurada la carpeta vigilada.
 
-**** Resultado: Los archivos de esta carpeta no se procesan.
+**Resultado:** Los archivos de esta carpeta no se procesan.
 
-**** Salida: Los archivos de esta carpeta no se procesan.
+**Salida:** Los archivos de esta carpeta no se procesan.
 
-**** Conservar: Los archivos de esta carpeta no se procesan.
+**Conservar:** Los archivos de esta carpeta no se procesan.
 
 ## Estrategias para minimizar la pérdida de datos {#strategies-to-minimize-data-loss}
 
@@ -158,14 +158,16 @@ Las siguientes estrategias pueden minimizar la pérdida de datos de carpeta de e
 * Si la copia de seguridad de la carpeta vigilada disponible es anterior al tiempo necesario para procesar el trabajo, debe permitir que el sistema cree una nueva carpeta vigilada y coloque automáticamente los archivos en la carpeta de entrada.
 * Si la copia de seguridad disponible más reciente no es lo suficientemente reciente, el tiempo de copia de seguridad es menor que el tiempo necesario para procesar los archivos y se restaura la carpeta vigilada, el archivo se manipuló en una de las siguientes etapas:
 
-   * **** Etapa 1: En la carpeta de entrada
-   * **** Etapa 2: Se ha copiado en la carpeta del escenario, pero el proceso aún no se ha invocado
-   * **** Etapa 3: Se copia en la carpeta de etapa y se invoca el proceso
-   * **** Fase 4: Manipulación en curso
-   * **** Etapa 5: Resultados devueltos
+   * **Etapa 1:** En la carpeta de entrada
+   * **Etapa 2:** Se ha copiado en la carpeta del escenario, pero el proceso aún no se ha invocado
+   * **Etapa 3:** Se copia en la carpeta de etapa y se invoca el proceso
+   * **Fase 4:** Manipulación en curso
+   * **Etapa 5:** Resultados devueltos
    Si los archivos están en la fase 1, se manipularán. Si los archivos se encuentran en la fase 2 o 3, colóquelos en la carpeta de entrada para que la manipulación vuelva a producirse.
 
-   **Nota**: Si la manipulación de un archivo se produce más de una vez, se evitará la pérdida de datos, pero los resultados pueden duplicarse. *
+   >[!NOTE]
+   >
+   >Si la manipulación de un archivo se produce más de una vez, se evitará la pérdida de datos, pero los resultados pueden duplicarse.
 
 ## Conclusión {#conclusion}
 
