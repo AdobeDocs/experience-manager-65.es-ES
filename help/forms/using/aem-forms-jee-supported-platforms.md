@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -491,7 +491,7 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
  </tbody>
 </table>
 
-Para obtener información adicional, consulte:
+Para obtener más información, consulte:
 
 * [Requisitos del sistema para una implementación de AEM Forms en JEE de un solo servidor](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
 * [Requisitos del sistema para una implementación agrupada de AEM Forms en JEE
@@ -528,7 +528,9 @@ Para obtener información adicional, consulte:
 
 ### Diseñador {#designer}
 
-**Nota:** Para instalar Designer en Windows, ejecute el programa de instalación con privilegios administrativos.
+>[!NOTE]
+>
+>Para instalar Designer en Windows, ejecute el programa de instalación con privilegios administrativos.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 
