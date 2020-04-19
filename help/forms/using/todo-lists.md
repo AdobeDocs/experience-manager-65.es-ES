@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -212,7 +212,12 @@ Puede completar una tarea de varias formas:
 
 * Uso de las acciones disponibles en cualquiera de las fichas
 * Uso de las acciones generadas en el propio formulario
-* Desde la lista de tareas pendientes, sin abrir la tareaNota: Esta opción está disponible si `isMustOpenToComplete` el campo no está seleccionado en el `Assign Task` paso de Workbench durante el diseño de un proceso.
+* Desde la lista de tareas pendientes, sin abrir la tarea
+
+>[!NOTE]
+>
+>Esta opción está disponible si `isMustOpenToComplete` el campo no está seleccionado en el `Assign Task` paso de Workbench durante el diseño de un proceso.
+
 * Por correo electrónico, si recibe notificaciones por correo electrónico
 
 Al completar una tarea, según la tarea, puede aparecer un cuadro de diálogo de confirmación que reafirme la acción. Por ejemplo, puede ver un cuadro de diálogo que le solicita que confirme la validez de la información proporcionada.
@@ -270,7 +275,9 @@ En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms par
 
 Los mensajes de correo electrónico pueden contener un vínculo que abre la tarea en el espacio de trabajo de AEM Forms, un archivo adjunto del formulario que se utiliza para la tarea o acciones para completar la tarea por correo electrónico. Si se incluye un formulario en el mensaje de correo electrónico, puede abrirlo y completar la tarea si los botones para completar la tarea están creados en el formulario. Si las acciones para completar la tarea se incluyen en el mensaje de correo electrónico, puede completar la tarea haciendo clic en las acciones del correo electrónico o respondiendo al correo electrónico con la acción escrita como primera línea en el cuerpo del correo electrónico.
 
-**Nota**: Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la Guía [de administración de JEE de](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms.
+>[!NOTE]
+>
+>Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la Guía [de administración de JEE de](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms.
 
 Cuando se completa una tarea por correo electrónico, la tarea se elimina de la lista de tareas pendientes en el espacio de trabajo de AEM Forms.
 
