@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -26,7 +26,9 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Si utiliza IPv6, introduzca la URL base como nombre de equipo o nombre DNS. Si utiliza una dirección IP numérica, Acrobat no podrá abrir los archivos protegidos por políticas. También puede utilizar URL HTTP segura (HTTPS) para el servidor.
 
-***Nota **: La dirección URL base está incrustada en los archivos protegidos por políticas. Las aplicaciones cliente utilizan la dirección URL base para volver a conectarse al servidor. Los archivos protegidos seguirán conteniendo la dirección URL base, aunque se cambie más tarde. Si cambia la dirección URL base, la información de configuración deberá actualizarse para todos los clientes que se conecten.*
+>[!NOTE]
+>
+>La dirección URL base está incrustada en los archivos protegidos por políticas. Las aplicaciones cliente utilizan la dirección URL base para volver a conectarse al servidor. Los archivos protegidos seguirán conteniendo la dirección URL base, aunque se cambie más tarde. Si cambia la dirección URL base, la información de configuración deberá actualizarse para todos los clientes que se conecten.
 
 **Período de arrendamiento sin conexión predeterminado:** El período de tiempo predeterminado que un usuario puede utilizar un documento protegido sin conexión. Esta configuración determina el valor inicial del período de concesión sin conexión automática al crear una política. (Consulte Creación y edición de políticas). Cuando caduca el período de concesión, el destinatario debe volver a sincronizar el documento para continuar utilizándolo.
 
@@ -419,7 +421,7 @@ Esta configuración controla el texto mostrado en el cuadro de diálogo de auten
 
 ## Configurar marcas de agua dinámicas {#configure-dynamic-watermarks}
 
-Con la seguridad de documento, puede configurar los valores predeterminados de la opción de marca de agua dinámica que puede aplicar al crear políticas. Una *marca de agua* es una imagen que se superpone sobre el texto del documento. Es útil para rastrear el contenido de un documento y puede ayudar a identificar el uso ilegal del contenido.
+Mediante la seguridad de documento, puede configurar los valores predeterminados de la opción de marca de agua dinámica que puede aplicar al crear políticas. Una *marca de agua* es una imagen que se superpone sobre el texto del documento. Es útil para rastrear el contenido de un documento y puede ayudar a identificar el uso ilegal del contenido.
 
 Una marca de agua dinámica puede consistir en texto compuesto por variables definidas como ID de usuario y fecha y texto personalizado, o contenido enriquecido dentro de un PDF. Puede configurar marcas de agua con varios elementos, cada uno con su propio posicionamiento y formato.
 
@@ -655,7 +657,7 @@ La siguiente configuración se encuentra en el área Configuración de correo el
 
 **Tiempo de espera:** Número de días después de los cuales caduca la invitación de activación si el usuario no activa la cuenta. El valor predeterminado es 30 días.
 
-**Mensaje:** El texto que aparece en el cuerpo del mensaje es un mensaje que indica que es necesario activar la cuenta de usuario del destinatario. También puede incluir información como cómo comunicarse con un administrador para obtener una nueva contraseña.
+**Mensaje:** El texto que aparece en el cuerpo del mensaje es un mensaje que indica que es necesario activar la cuenta de usuario del destinatario. También es posible que desee incluir información como cómo comunicarse con un administrador para obtener una nueva contraseña.
 
 ### Configurar un correo electrónico de restablecimiento de contraseña {#configure-a-password-reset-email}
 
