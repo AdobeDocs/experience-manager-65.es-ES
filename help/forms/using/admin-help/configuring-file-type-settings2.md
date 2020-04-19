@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ Las siguientes opciones determinan cómo se convierten los archivos de imagen a 
 
 **Probar convertidor de reserva:** PDF Generator puede utilizar Java™ o Acrobat para convertir archivos de imagen a PDF. Cuando se selecciona esta opción y una conversión falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante el método alternativo. Si el método alternativo falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
-***Nota **: Los archivos JPEG 2000 solo se pueden convertir con Acrobat.*
+>[!NOTE]
+>
+>Los archivos JPEG 2000 solo se pueden convertir con Acrobat.
 
 **Usar OCR:** Especifica si se aplica OCR (reconocimiento óptico de caracteres) al PDF. El software OCR le permite buscar, corregir y copiar el texto en el PDF.
 
@@ -595,7 +597,7 @@ También puede especificar cómo se envían los formularios. Las opciones son XM
 * HTML
 * XML
 
-**PDF** con etiquetas: Permite la creación de archivos PDF con etiquetas desde documentos de OpenOffice. El PDF etiquetado contiene información sobre la estructura del contenido del documento. Esto puede ayudar a mostrar el documento en dispositivos con diferentes pantallas y al utilizar software de lector de pantalla. También ayuda al software de accesibilidad a realizar varias operaciones útiles con el documento PDF, como leer en voz alta el contenido del documento PDF.
+**PDF** con etiquetas: Permite la creación de archivos PDF con etiquetas desde documentos de OpenOffice. El PDF etiquetado contiene información sobre la estructura del contenido del documento. Esto puede ayudar a mostrar el documento en dispositivos con pantallas diferentes y al utilizar software de lector de pantalla. También ayuda al software de accesibilidad a realizar varias operaciones útiles con el documento PDF, como leer en voz alta el contenido del documento PDF.
 
 **Notas** de exportación: Convierte las notas de los documentos de OpenOffice en notas del documento PDF generado.
 
