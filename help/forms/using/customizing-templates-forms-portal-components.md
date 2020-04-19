@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -35,7 +35,7 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
 
 1. Creación de un nodo sling:Folder en /apps
 
-   Agregue una propiedad &quot;fpContentType&quot;. Especifique los valores adecuados para la propiedad en función del componente para el que esté definiendo la plantilla personalizada.
+   Añada una propiedad &quot;fpContentType&quot;. Especifique los valores adecuados para la propiedad en función del componente para el que esté definiendo la plantilla personalizada.
 
    * Componente Búsqueda y listado: &quot;/libs/fd/fp/formTemplate&quot;
    * Componente Borradores y envíos:
@@ -43,10 +43,14 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
       * Sección Borradores: /libs/fd/fp/DraftTemplate
       * Sección de Envíos: /libs/fd/fp/submitTemplate
    * Componente de vínculo: /libs/fd/fp/linkTemplate
-   Agregue un título que desee mostrar al seleccionar plantillas de diseño.
+   Añada un título que desee que se muestre al seleccionar plantillas de diseño.
 
-   *Nota: El título puede ser diferente del nombre de nodo de sling:Folder que ha creado.*
-   *La siguiente imagen muestra la configuración del componente Buscar y listado.* ![Creación de un sling:Folder](assets/1.png)
+   >[!NOTE]
+   >
+   >El título puede ser diferente del nombre de nodo de sling:Folder que ha creado.
+
+   La siguiente imagen muestra la configuración del componente Buscar y listado.
+   ![Creación de una sling:Folder](assets/1.png)
 
 1. Cree un archivo template.html en esta carpeta para que sirva de plantilla personalizada.
 1. Escriba la plantilla personalizada y utilice los metadatos personalizados como se describe a continuación.
@@ -81,7 +85,7 @@ Forms Portal proporciona una sintaxis para que los marcadores de posición muest
 
 Para incluir una entrada repetible, configure el valor del atributo **data-repetible** en **true**.
 
-*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. La primera, con la clase CSS &quot;__FP_boxes-container&quot;, funciona como un elemento contenedor para los formularios que se muestran. El segundo, con la clase CSS &quot;__FP_boxes&quot;, es una plantilla para las entidades básicas, en este caso un formulario. El atributo **de datos repetitivos**presente en el elemento Div tiene el valor **true**.*
+*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. La primera, con la clase CSS &quot;__FP_boxes-contenedor&quot;, funciona como un elemento de contenedor para los formularios que se muestran. El segundo, con la clase CSS &quot;__FP_boxes&quot;, es una plantilla para las entidades básicas, en este caso un formulario. El atributo **de datos repetitivos**presente en el elemento Div tiene el valor **true**.*
 
 Cada marcador de posición tiene un conjunto exclusivo de metadatos OTB. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la propiedad **** ${metadata_prop} al lugar.
 
@@ -93,7 +97,7 @@ Varios componentes de Forms Portal proporcionan conjuntos exclusivos de metadato
 
 ### Componente Búsqueda y listado {#search-amp-lister-component}
 
-* **** Título: Título del formulario
+* **Título:** Título del formulario
 * **name**: Nombre del formulario (en su mayoría es el mismo que el título)
 * **descripción**: Descripción del formulario
 * **formUrl**: URL para procesar el formulario como HTML
@@ -102,13 +106,15 @@ Varios componentes de Forms Portal proporcionan conjuntos exclusivos de metadato
 
 * **htmlStyle** y **pdfStyle**: Estilo de visualización para los iconos HTML y PDF, respectivamente, utilizados para la representación. Los valores válidos son &quot;**__FP_display_none**&quot; o en blanco.
 
-   **** Nota: Recuerde utilizar la clase __FP_display_none en la hoja de estilo personalizada
+>[!NOTE]
+>
+>Recuerde utilizar la clase __FP_display_none en la hoja de estilo personalizada.
 
 * **downloadUrl**: URL para descargar un recurso.
 
 Compatibilidad con la localización, clasificación y uso de las propiedades de configuración en la interfaz de usuario (solo Search &amp; Lister):
 
-1. **Asistencia** para la localización: Para localizar cualquier texto estático, utilice el atributo `${localize-YOUR_TEXT}` y haga que el valor localizado esté disponible, si no existe ya.
+1. **Compatibilidad** con Localizaciones: Para localizar cualquier texto estático, utilice el atributo `${localize-YOUR_TEXT}` y haga que el valor localizado esté disponible, si no existe ya.
    *En el ejemplo analizado, los atributos`${localize-Apply}`y`${localize-Download}`se utilizan para localizar el texto Aplicar y Descargar.*
 
 1. **Compatibilidad con la ordenación**: Haga clic en el elemento HTML para ordenar los resultados de búsqueda. Para implementar la ordenación en un diseño tabulado, agregue el atributo &quot;data-sortKey&quot; en el encabezado de tabla concreto. Además, añada su valor como metadatos para los que desea ordenar.
@@ -118,9 +124,9 @@ Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, 
 
 ### Componente de vínculo {#link-component}
 
-* **** Título: Título del formulario
+* **Título:** Título del formulario
 * **formUrl**: URL para procesar el formulario como HTML
-* **target**: Atributo objetivo del vínculo. Los valores válidos son &quot;_blank&quot; y &quot;_self&quot;.
+* **destinatario**: Destinatario del vínculo. Los valores válidos son &quot;_blank&quot; y &quot;_self&quot;.
 * **linkText**: Rótulo de vínculo
 
 ### Componente Borradores y envíos {#drafts-amp-submissions-component}
@@ -147,17 +153,17 @@ Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, 
 
 ![Nodo Borradores y envío](assets/raw-image-with-index.png)
 
-**A**. Elemento contenedor
+**A**. Elemento Contenedor
 
-**** B. metadatos de &quot;ruta&quot; con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
+**B.** metadatos de &quot;ruta&quot; con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
 
 **C.** Atributo repetible de datos utilizado para la sección de plantilla para cada formulario
 
-**** D. Para localizar la cadena &quot;Aplicar&quot;
+**D.** Para localizar la cadena &quot;Aplicar&quot;
 
-**** E. Uso de la propiedad de configuración pdfLinkText
+**E.** Uso de la propiedad de configuración pdfLinkText
 
-**** F. Uso de los metadatos &quot;pdfUrl&quot;
+**F.** Uso de los metadatos &quot;pdfUrl&quot;
 
 ## Sugerencias, trucos y problemas conocidos {#tips-tricks-and-known-issues}
 
