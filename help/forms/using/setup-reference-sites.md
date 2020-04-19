@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -43,7 +43,7 @@ Los sitios de referencia proporcionan recursos reutilizables que puede utilizar 
 
 Antes de configurar el sitio de referencia, asegúrese de que dispone de lo siguiente:
 
-* **AEM Essentials** AEM QuickStart, AEM Forms Add-on package y paquetes de sitios de referencia. Consulte las versiones [de](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms para obtener información detallada sobre los paquetes de complementos y sitios de referencia.
+* **AEM Essentials** AEM QuickStart, AEM Forms Add-on package y paquetes de sitios de referencia. Consulte las versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms para obtener información detallada sobre los paquetes de complementos y sitios de referencia.
 
 * **Un servicio** SMTP Puede utilizar cualquier servicio SMTP.
 
@@ -88,12 +88,12 @@ Realice los siguientes pasos en la secuencia recomendada para configurar y confi
   </tr>
   <tr>
    <td><a href="#aemds">Configuración de la configuración de AEM DS</a></td>
-   <td>Creación</td>
+   <td>Autor</td>
    <td>Configure AEM DS para el envío de formularios en la instancia de publicación y en los flujos de trabajo de procesamiento de la instancia de autor.</td>
   </tr>
   <tr>
    <td><a href="#refsite">Implementación de paquetes de sitios de referencia</a></td>
-   <td>Creación</td>
+   <td>Autor</td>
    <td>Implemente paquetes de sitios de referencia en la instancia de creación de AEM Forms.</td>
   </tr>
   <tr>
@@ -263,7 +263,7 @@ Configure el servicio de nube OAuth en AEM Forms para habilitar la comunicación
 1. En la instancia de creación de AEM, vaya a **Herramientas** > Servicios **de** nube > Fuentes **** de datos > **global**. Toque el icono **Refsite Dynamics Integration** y Propiedades.
 1. Vaya a la cuenta de Microsoft Azure Active Directory. Añada la URL de configuración del servicio en la nube copiada en la configuración de URL **de** respuesta para la aplicación registrada. Guarde la configuración.
 1. En la ficha Ajustes de autenticación, especifique la raíz **** del servicio, el ID **** del cliente, el secreto **** del cliente y la URL **** del recurso para la instancia de Microsoft Dynamics. Haga clic en **Conectar con OAuth** que redirige a la página de inicio de sesión de Microsoft Dynamics.
-1. Proporcione sus credenciales de inicio de sesión. Una vez que haya iniciado sesión, se le redirigirá a la página de configuración del servicio en la nube de AEM Forms. Haga clic en **Guardar y cerrar**. Se guardó la configuración del servicio de nube.
+1. Proporcione sus credenciales de inicio de sesión. Una vez que haya iniciado sesión, se le redirigirá a la página de configuración del servicio en la nube de AEM Forms. Click **Save &amp; Close**. Se guardó la configuración del servicio de nube.
 1. Vaya a **Formularios** > Integraciones **de datos** > **We.Finance**. Seleccione Auto Insurance (Dynamics) y haga clic en Editar. Las entidades de Microsoft Dynamics se muestran en la ficha Fuentes de datos. Espere hasta que se recuperen todas las entidades de Microsoft Dynamics y se incluyan en la ficha de orígenes de datos.
 1. Seleccione la entidad **AutoInsuranceRenewal y haga clic en Objeto** del modelo **** de prueba. En la sección de solicitud de entrada, especifique el valor del ID de cliente como &quot;900001&quot; y haga clic en **Prueba**. La sección Salida muestra los registros recuperados de Microsoft Dynamics para el ID de cliente 900001.
 1. En la sección de solicitud de entrada, especifique el valor del ID de cliente como &quot;900001&quot; y haga clic en **Prueba**. La sección Salida muestra los registros recuperados de Microsoft Dynamics para el ID de cliente 900001.
@@ -355,7 +355,10 @@ El sitio de referencia muestra la integración de AEM Forms con Adobe Destinatar
 Para disfrutar de la integración en el sitio de referencia, haga lo siguiente para configurar Destinatario en AEM:
 
 1. Inicio el inicio rápido del autor con el argumento jvm `-Dabtesting.enabled=true` para habilitar la prueba A/B en el servidor.
-   **Nota**: Si la instancia de AEM se está ejecutando en JBoss, que se inicia como un servicio desde la instalación de Turnkey, agregue el `-Dabtesting.enabled=true` parámetro en la siguiente entrada del `jboss\bin\standalone.conf.bat` archivo:
+
+   >[!NOTE]
+   >
+   >Si la instancia de AEM se está ejecutando en JBoss, que se inicia como un servicio desde la instalación de Turnkey, agregue el `-Dabtesting.enabled=true` parámetro en la siguiente entrada del `jboss\bin\standalone.conf.bat` archivo:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Acceso `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
