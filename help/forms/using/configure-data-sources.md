@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -84,7 +84,8 @@ Puede configurar el perfil de usuario de AEM mediante la configuración del cone
 
 ## Configurar carpeta para configuraciones de servicio en la nube {#cloud-folder}
 
-**Nota**: La configuración de la carpeta de servicios en la nube es necesaria para configurar los servicios en la nube para los servicios RESTful, SOAP y OData.
+>[!NOTE]
+La configuración de la carpeta de servicios en la nube es necesaria para configurar los servicios en la nube para los servicios RESTful, SOAP y OData.
 
 Todas las configuraciones de servicios en la nube de AEM se consolidan en la `/conf` carpeta del repositorio de AEM. De forma predeterminada, la `conf` carpeta contiene la `global` carpeta en la que puede crear configuraciones de servicio en la nube. Sin embargo, debe habilitarlo manualmente para las configuraciones de nube. También puede crear carpetas adicionales en `conf` para crear y organizar configuraciones de servicios en la nube.
 
