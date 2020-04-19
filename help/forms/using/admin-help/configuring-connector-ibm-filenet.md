@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -40,8 +40,8 @@ IBM FileNet P8 Content Engine proporciona servicios de software para administrar
 
 1. En la lista Esquema de protección de credenciales, seleccione uno de estos niveles de protección:
 
-   * **** Borrar: Envía credenciales a través de la red en un modo no protegido
-   * **** Simétrico: Envía credenciales cifradas a través de la red
+   * **Borrar:** Envía credenciales a través de la red en un modo no protegido
+   * **Simétrico:** Envía credenciales cifradas a través de la red
 
 1. En el cuadro Ubicación del archivo de codificación, introduzca la ruta del archivo de codificación:
 
@@ -69,23 +69,24 @@ Connector for IBM FileNet contiene el servicio Process Engine Connector para IBM
 
 Si introduce un nombre de usuario o una contraseña incorrectos al configurar la conexión con el motor de contenido o la configuración del motor de proceso, obtendrá los siguientes resultados, según si los servicios se están ejecutando en ese momento:
 
-* Si se detienen tanto el servicio Proveedor de Repositorios para IBM FileNet como el conector de repositorio de contenido para IBM FileNet, al guardar la información de configuración de servicio no aparece ningún error. Sin embargo, la próxima vez que inicie el servicio, se generará una excepción y el servicio no se iniciará.
+* Si se detienen tanto el servicio Proveedor de Repositorios para IBM FileNet como el conector de repositorio de contenido para IBM FileNet, al guardar la información de configuración de servicio no aparece ningún error. Sin embargo, la próxima vez que inicio el servicio, se generará una excepción y el servicio no se inicio.
 * Si se inicia el servicio Proveedor del repositorio para IBM FileNet o el conector del repositorio de contenido para IBM FileNet, al guardar la información de configuración del servicio, el servicio intenta validar la información de las credenciales inmediatamente. En este caso, se produce un error y la información de configuración no se guarda.
 
-## Cambiar el proveedor de servicios de repositorio {#change-the-repository-service-provider}
+## Cambiar el proveedor de servicio del repositorio {#change-the-repository-service-provider}
 
-Puede configurar qué proveedor de servicios de repositorio utilizar con FileNet. Las llamadas al servicio de repositorio se delegan al proveedor que configure.
+Puede configurar qué proveedor de servicio de repositorio utilizar con FileNet. Las llamadas al servicio de repositorio se delegan al proveedor que configure.
 
 Las opciones disponibles son las siguientes:
 
-**** Nombre actual del proveedor del repositorio: El nombre del proveedor de servicios de repositorio actual
+**Nombre actual del proveedor del repositorio:** Nombre del proveedor de servicio de repositorio actual
 
-**** Proveedor de repositorio de IBM FileNet: Convierte al proveedor de repositorio de FileNet en el proveedor del repositorio.  Esta opción está en desuso.
+**Proveedor de repositorio de IBM FileNet:** Convierte al proveedor de repositorio de FileNet en el proveedor del repositorio. Esta opción está en desuso.
 
-**** proveedor de repositorio: Convierte al proveedor de repositorio nativo en el proveedor del repositorio
+**proveedor de repositorio:** Convierte al proveedor de repositorio nativo en el proveedor del repositorio
 
-***Nota **: Para seleccionar un proveedor de servicios de repositorio distinto de los enumerados, configure RepositoryService en Aplicaciones y servicios.<!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>Para seleccionar un proveedor de servicio de repositorio distinto de los enumerados, configure RepositoryService en Aplicaciones y servicios. <!-- Fix broken link(See Managing Services) -->
 
 1. En la consola de administración, haga clic en Servicios > Conector para IBM FileNet.
-1. En el área Información del proveedor de servicios de repositorio, seleccione el proveedor de servicios de repositorio alternativo y, a continuación, haga clic en Guardar.
-
+1. En el área Información del Proveedor de servicio del repositorio, seleccione el proveedor de servicio del repositorio alternativo y, a continuación, haga clic en Guardar.
