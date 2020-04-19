@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
 
 Una acción de envío se activa cuando un usuario hace clic en el botón Enviar de un formulario adaptable. Puede configurar la acción de envío en un formulario adaptable. Los formularios adaptables proporcionan algunas acciones de envío predeterminadas. Puede copiar y ampliar las acciones de envío predeterminadas para crear su propia acción de envío. Sin embargo, según sus necesidades, puede escribir y registrar su propia acción de envío para procesar los datos en el formulario enviado. La acción de envío puede utilizar el envío [](../../forms/using/asynchronous-submissions-adaptive-forms.md)sincrónico o asincrónico.
 
-Puede configurar una acción de envío en la sección **Envío** de las propiedades del contenedor de formulario adaptable, en la barra lateral.
+Puede configurar una acción de envío en la sección **Envío** de las propiedades del Contenedor de formulario adaptable, en la barra lateral.
 
 ![Configurar acción de envío](assets/thank-you-setting.png)
 
@@ -47,7 +47,7 @@ Las acciones de envío predeterminadas disponibles con formularios adaptables so
 
 >[!CAUTION]
 >
->Si rellena [previamente](../../forms/using/prepopulate-adaptive-form-fields.md) un formulario de plantilla de formulario, modelo de datos de formulario o formulario adaptable basado en esquema con una queja de datos XML o JSON a un esquema (esquema XML, esquema JSON, plantilla de formulario o modelo de datos de formulario) que sea datos que no contenga etiquetas &lt;afData>, &lt;afBoundData> y &lt;/afUnboundData>, los datos de los campos sin límite (los campos sin límite son campos de formulario adaptables sin campos de formulario sin campos de formulario [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) ) del formulario adaptable se pierde.
+>Si [rellena](../../forms/using/prepopulate-adaptive-form-fields.md) previamente una plantilla de formulario, un modelo de datos de formulario o un formulario adaptable basado en esquema con una queja de datos XML o JSON a una esquema (esquema XML, esquema JSON, plantilla de formulario o modelo de datos de formulario) que sea datos que no contenga etiquetas &lt;afData>, &lt;afBoundData> y &lt;/afUnboundData>, los datos de los campos sin límite (los campos sin límite se adaptan campos de formulario con propiedades [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) ) del formulario adaptable se pierden.
 
 Puede escribir una acción de envío personalizada para los formularios adaptables a fin de que se cumpla el caso de uso. Para obtener más información, consulte [Escritura de una acción Enviar personalizada para formularios](../../forms/using/custom-submit-action-form.md)adaptables.
 
@@ -100,21 +100,22 @@ Todos los campos de formulario deben tener nombres de elementos diferentes, incl
 
 ## Send PDF via Email {#send-pdf-via-email}
 
-La acción **Enviar archivo PDF por correo electrónico** envía un mensaje de correo electrónico con un PDF que contiene datos del formulario a uno o varios destinatarios una vez que el formulario se ha enviado correctamente.
+La acción **Enviar archivo PDF por correo electrónico** envía un mensaje de correo electrónico con un PDF que contiene datos del formulario a uno o varios destinatarios una vez enviado correctamente el formulario.
 
-**** Nota: Esta acción de envío está disponible para formularios adaptables basados en XFA y formularios de adaptación basados en XSD que tienen la plantilla Documento de registro.
+>[!NOTE]
+Esta acción de envío está disponible para formularios adaptables basados en XFA y formularios de adaptación basados en XSD que tienen el Documento de plantilla de registro.
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
 La opción de envío del flujo de trabajo **** Enviar a formularios envía un archivo xml de datos y archivos adjuntos (si los hay) a un proceso existente de Adobe LiveCycle o AEM Forms en JEE.
 
-Para obtener información sobre cómo configurar la acción Enviar a un flujo de trabajo de formularios, consulte [Envío y procesamiento de los datos del formulario mediante flujos de trabajo](../../forms/using/submit-form-data-livecycle-process.md)de formularios.
+Para obtener información sobre cómo configurar la acción Enviar a un flujo de trabajo de formularios, consulte [Envío y procesamiento de los datos del formulario mediante flujos de trabajo](../../forms/using/submit-form-data-livecycle-process.md)de formulario.
 
 ## Enviar mediante modelo de datos de formulario {#submit-using-form-data-model}
 
 La acción de envío **Enviar mediante el modelo** de datos de formulario escribe los datos de formulario adaptables enviados para el objeto de modelo de datos especificado en un modelo de datos de formulario en su origen de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su origen de datos.
 
-Además, puede enviar un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR) al origen de datos.
+Además, puede enviar un archivo adjunto de formulario mediante un modelo de datos de formulario y un Documento de registro (DoR) al origen de datos.
 
 Para obtener información sobre el modelo de datos de formulario, consulte Integración [de datos de formularios](../../forms/using/data-integration.md)AEM.
 
@@ -126,9 +127,9 @@ Para obtener más información sobre Forms Portal y enviar acciones, consulte [B
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-La **acción de envío Invocar un flujo de trabajo** de AEM asocia un formulario adaptable a un flujo de trabajo de AEM. Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en el nodo de procesamiento. Además, coloca el archivo de datos, los archivos adjuntos y el documento de registro, si corresponde, en la ubicación de carga útil del flujo de trabajo.
+La **acción de envío Invocar un flujo de trabajo** de AEM asocia un formulario adaptable a un flujo de trabajo de AEM. Cuando se envía un formulario, el flujo de trabajo asociado se inicio automáticamente en el nodo de procesamiento. Además, coloca el archivo de datos, los archivos adjuntos y el documento de registro, si corresponde, en la ubicación de carga útil del flujo de trabajo.
 
-Antes de usar la acción de envío **Invocar un flujo de trabajo** de AEM, [configure](../../forms/using/configuring-the-processing-server-url-.md)AEM DS. Para obtener información sobre la creación de un flujo de trabajo de AEM, consulte Flujos de trabajo centrados en [formularios en OSGi](../../forms/using/aem-forms-workflow.md).
+Antes de usar la acción de envío **Invocar un flujo de trabajo** de AEM, [configure](../../forms/using/configuring-the-processing-server-url-.md)AEM DS. Para obtener información sobre la creación de un flujo de trabajo de AEM, consulte flujos de trabajo centrados en [formularios en OSGi](../../forms/using/aem-forms-workflow.md).
 
 ## Revalidación del lado del servidor en formulario adaptable {#server-side-revalidation-in-adaptive-form}
 
@@ -154,13 +155,13 @@ Activación de la validación del lado del servidor
 
 Si el usuario final omite esas validaciones y envía los formularios, el servidor volverá a realizar la validación. Si la validación falla al finalizar el servidor, se detiene la transacción de envío. Al usuario final se le presenta de nuevo el formulario original. Los datos capturados y enviados se presentan al usuario como un error.
 
-### Compatibilidad con funciones personalizadas en expresiones de validación {#supporting-custom-functions-in-validation-expressions-br}
+### Compatibilidad con funciones personalizadas en Expresiones de validación {#supporting-custom-functions-in-validation-expressions-br}
 
-En ocasiones, en el caso de reglas **de validación** complejas, la secuencia de comandos de validación exacta reside en funciones personalizadas y el autor llama a estas funciones personalizadas desde la expresión de validación del campo. Para que esta biblioteca de funciones personalizada se conozca y esté disponible mientras realiza validaciones en el servidor, el autor del formulario puede configurar el nombre de la biblioteca del cliente de AEM en la ficha **Básico** de las propiedades del contenedor de formularios adaptable, como se muestra a continuación.
+En ocasiones, en el caso de reglas **de validación** complejas, la secuencia de comandos de validación exacta reside en funciones personalizadas y el autor llama a estas funciones personalizadas desde la expresión de validación del campo. Para que esta biblioteca de funciones personalizada se conozca y esté disponible mientras realiza validaciones en el servidor, el autor del formulario puede configurar el nombre de la biblioteca del cliente de AEM en la ficha **Básico** de las propiedades del Contenedor de formularios adaptables, como se muestra a continuación.
 
-![Compatibilidad con funciones personalizadas en expresiones de validación](assets/clientlib-cat.png)
+![Compatibilidad con funciones personalizadas en Expresiones de validación](assets/clientlib-cat.png)
 
-Compatibilidad con funciones personalizadas en expresiones de validación
+Compatibilidad con funciones personalizadas en Expresiones de validación
 
 El autor puede configurar una biblioteca de javascript personalizada por formulario adaptable. En la biblioteca, solo mantenga las funciones reutilizables, que dependen de bibliotecas de terceros jquery y underscore.js.
 
