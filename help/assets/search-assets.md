@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -15,7 +15,7 @@ Recursos Adobe Experience Manager (AEM) proporciona métodos sólidos de detecci
 
 AEM admite los siguientes casos de uso y en este artículo se describen el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas de estos casos de uso.
 
-| Búsqueda de recursos | Configuración y administración | Trabajar con resultados de búsqueda |
+| Buscar recursos | Configuración y administración | Trabajar con resultados de búsqueda |
 |---|---|---|
 | [Búsquedas básicas](#searchbasics) | [Índice de búsqueda](#searchindex) | [Ordenar resultados](#sort) |
 | [Comprender la IU de búsqueda](#searchui) | [Búsqueda visual o de similitudes](#configvisualsearch) | [Comprobar propiedades y metadatos de un recurso](#checkinfo) |
@@ -38,11 +38,11 @@ La función de búsqueda de AEM admite la búsqueda de colecciones y la búsqued
 
 Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
-![Explicación de partes de la interfaz de resultados de búsqueda de recursos](assets/aem_search_results.png)
+![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem_search_results.png)
 
-*Figura: Explicación de partes de la interfaz de resultados de búsqueda de recursos*
+*Figura: Comprender la interfaz de resultados de búsqueda de Experience Manager Assets*
 
-**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros (predicados) para reducir los resultados de búsqueda. **C.** Muestre archivos, carpetas o ambos en los resultados de la búsqueda. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Casilla de verificación para seleccionar todos los resultados de búsqueda. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **Yo.** Cierre la búsqueda **J.** Cambie entre la vista de la tarjeta y la vista de la lista.
+**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Mostrar archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda **J.** Cambie entre la vista de la tarjeta y la vista de la lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
@@ -246,7 +246,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 *Figura: Examinar y seleccionar recursos en el selector de recursos*
 
-## Restricciones      {#limitations}
+## Restricciones        {#limitations}
 
 La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
 
@@ -254,7 +254,7 @@ La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
 * AEM puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso de los resultados de búsqueda y, a continuación, cancelar la búsqueda. <!-- (CQ-4273540) -->
 * Al buscar carpetas o archivos y carpetas, los resultados de la búsqueda no se pueden ordenar según ningún parámetro.
 * Si presiona return sin escribir nada en la barra de Omniture, AEM devuelve una lista de sólo archivos y no carpetas. Si busca carpetas de forma específica sin utilizar una palabra clave, AEM no devuelve ningún resultado.
-* Con la casilla de verificación [!UICONTROL Seleccionar todo] , solo puede seleccionar los primeros 100 recursos buscados en la vista de tarjetas y los primeros 200 recursos buscados en la vista de listas. Si desplaza y carga más recursos en la interfaz de usuario, puede seleccionar más mediante la opción [!UICONTROL Seleccionar todo] .
+* Utilice la opción **[!UICONTROL Seleccionar todo]** en la esquina superior derecha de la página de búsqueda para seleccionar los recursos buscados. Experience Manager muestra inicialmente 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos a medida que se desplazan los resultados de la búsqueda. Puede seleccionar más recursos que los recursos cargados. El recuento de los recursos seleccionados se muestra en la esquina superior derecha de la página de resultados de la búsqueda. Puede operar en la selección, por ejemplo, descargar los recursos seleccionados, actualizar las propiedades de metadatos de forma masiva para los recursos seleccionados o agregar los recursos seleccionados a una colección. Cuando se seleccionan más recursos de los que se muestran, se aplica una acción a todos los recursos seleccionados o aparece un cuadro de diálogo con el número de recursos en los que se aplica. Para aplicar una acción a los recursos que no se han cargado, asegúrese de que todos los recursos están explícitamente seleccionados.
 
 La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitaciones:
 
@@ -269,7 +269,7 @@ La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los sig
 
 * Cuando supervise el estado de revisión de los recursos, utilice la opción adecuada para encontrar los recursos aprobados o los que están pendientes de aprobación.
 * Use el predicado de perspectivas para buscar recursos admitidos en función de las estadísticas de uso obtenidas de varias aplicaciones de Creative. Los datos de uso se agrupan en Puntuación de uso, Impresiones, Clics y canales de medios, donde los recursos aparecen como categorías.
-* Utilice la casilla de verificación **[!UICONTROL Seleccionar todo]** para seleccionar los recursos buscados. Selecciona los primeros 100 recursos en la vista de tarjetas y los primeros 200 en la vista de listas. Puede operar en la selección, por ejemplo, descargar los recursos seleccionados, actualizar las propiedades de metadatos de forma masiva para los recursos seleccionados o agregar los recursos seleccionados a una colección.
+* Utilice la casilla de verificación **[!UICONTROL Seleccionar todo]** para seleccionar los recursos buscados. Experience Manager muestra inicialmente 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos a medida que se desplazan los resultados de la búsqueda. Puede seleccionar más recursos que los recursos cargados. El recuento de los recursos seleccionados se muestra en la esquina superior derecha de la página de resultados de la búsqueda. Puede operar en la selección, por ejemplo, descargar los recursos seleccionados, actualizar las propiedades de metadatos de forma masiva para los recursos seleccionados o agregar los recursos seleccionados a una colección. Cuando se seleccionan más recursos de los que se muestran, se aplica una acción a todos los recursos seleccionados o aparece un cuadro de diálogo con el número de recursos en los que se aplica. Para aplicar una acción a los recursos que no se han cargado, asegúrese de que todos los recursos están explícitamente seleccionados.
 * Para buscar recursos que no contengan los metadatos obligatorios, consulte Metadatos [](#mandatorymetadata)obligatorios.
 * La búsqueda utiliza todos los campos de metadatos. Una búsqueda genérica, como la búsqueda de 12, generalmente devuelve muchos resultados. Para obtener mejores resultados, utilice comillas de doble (no simples) o asegúrese de que el número esté contiguo a una palabra sin carácter especial (por ejemplo, *shoe12*).
 * La búsqueda de texto completo admite operadores como -, ^, etc. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice &quot;Portátil - Belleza&quot; en lugar de Portátil - Belleza.
