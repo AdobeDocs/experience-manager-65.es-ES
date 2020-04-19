@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -306,7 +306,9 @@ Realice los siguientes pasos para experimentar la creación de una prueba A/B pa
 1. Abra CRXDE Lite y realice una copia de seguridad del siguiente archivo: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Reemplace la definición de función `onReportLoadSuccess` en el archivo mencionado anteriormente con la definición de función en el archivo siguiente: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Nota: Estos cambios solo sirven para fines de demostración. Asegúrese de restaurar el contenido del archivo después de completar este procedimiento.
+   >[!NOTE]
+   >
+   >Estos cambios solo sirven para fines de demostración. Asegúrese de restaurar el contenido del archivo después de completar este procedimiento.
 
 1. Actualice el informe que ha generado y verá algo como lo siguiente. Revise el panel del sistema de informes.
 
@@ -555,7 +557,9 @@ Realice los siguientes pasos en la instancia de autor para experimentar la creac
 1. Abra CRXDE Lite y realice una copia de seguridad del siguiente archivo: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Reemplace la definición de la `onReportLoadSuccess` función en el archivo mencionado anteriormente con la definición de la función en el archivo siguiente: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Nota: Estos cambios solo sirven para fines de demostración. Asegúrese de restaurar el contenido del archivo después de completar este procedimiento.
+   >[!NOTE]
+   >
+   >Estos cambios solo sirven para fines de demostración. Asegúrese de restaurar el contenido del archivo después de completar este procedimiento.
 
 1. Actualice el informe que ha generado y verá algo como lo siguiente. Revise el panel del sistema de informes.
 
