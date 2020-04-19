@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -77,15 +77,18 @@ Puede configurar las siguientes propiedades para una carpeta vigilada.
 
    * publicar, autor
 
-**Nota**: *Si el servidor que aloja la carpeta vigilada no tiene ninguno de los modos de ejecución especificados, la carpeta vigilada siempre se activa independientemente de los modos de ejecución del servidor.*
+>[!NOTE]
+>
+>Si el servidor que aloja la carpeta vigilada no tiene ninguno de los modos de ejecución especificados, la carpeta vigilada siempre se activa independientemente de los modos de ejecución del servidor.
 
 * **outputFilePattern (String)**: Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivos. Si se especifica un patrón de carpetas, los archivos de salida tienen nombres como se describe en flujos de trabajo. Si se especifica un patrón de archivos, los archivos de salida tienen nombres como se describe en el patrón de archivos. [El patrón](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) de archivos y carpetas también puede especificar una estructura de directorio para los archivos de salida. Es una propiedad obligatoria.
 
-* **stageFileExpirationDuration (Long, predeterminado -1)**: El número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se ha seleccionado para su procesamiento se considere que se ha agotado el tiempo de espera y se ha marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
+* **stageFileExpirationDuration (Long, predeterminado -1)**: El número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se ha seleccionado para el procesamiento se considere como si se hubiera agotado el tiempo de espera y se hubiera marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
 
-   **Nota:** *Incluso cuando una entrada se marca como si se hubiera agotado el tiempo de espera con este mecanismo, puede que se esté procesando en segundo plano pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento podría incluso completarse más tarde y la salida se volcaría a la carpeta de resultados. Si el contenido no se consumió antes de que se agotara el tiempo de espera, es muy probable que se produzca un error en el procesamiento al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otra parte, si el procesamiento de la entrada nunca se activó debido a un error intermitente en el trabajo o el flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces, por supuesto, no se producirá ninguna de estas dos eventualidades. Por lo tanto, para todas las entradas de la carpeta de errores que se marcaron como errores debido a un tiempo de espera (busque los mensajes del formulario &quot;Archivo no procesado después de un tiempo significativo, marcando como error!&quot; en el registro de errores), es aconsejable analizar la carpeta de resultados (y también la propia carpeta de errores para buscar otra entrada para la misma entrada) a fin de comprobar si se ha producido alguna de las eventualidades descritas anteriormente.*
+>[!NOTE]
+>
+>Incluso cuando una entrada se marca como si se hubiera agotado el tiempo de espera con este mecanismo, puede que se esté procesando en segundo plano pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento podría incluso completarse más tarde y la salida se volcaría a la carpeta de resultados. Si el contenido no se consumió antes de que se agotara el tiempo de espera, es muy probable que se produzca un error en el procesamiento al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otra parte, si el procesamiento de la entrada nunca se activó debido a un error intermitente en el trabajo o el flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces, por supuesto, no se producirá ninguna de estas dos eventualidades. Por lo tanto, para todas las entradas de la carpeta de errores que se marcaron como errores debido a un tiempo de espera (busque los mensajes del formulario &quot;Archivo no procesado después de un tiempo significativo, marcando como error!&quot; en el registro de errores), es aconsejable analizar la carpeta de resultados (y también la propia carpeta de errores para buscar otra entrada para la misma entrada) a fin de comprobar si se ha producido alguna de las eventualidades descritas anteriormente.
 
-* 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, valor predeterminado true):** Indica si el mecanismo de caducidad solo debe activarse cuando se ha acelerado la carpeta de inspección. El mecanismo es más relevante para las carpetas de inspección con limitación, ya que un pequeño número de archivos que permanecen en un estado no procesado (debido a errores intermitentes en el trabajo o el flujo de trabajo) pueden dificultar el procesamiento de todo el lote cuando se habilita la limitación. Si esta propiedad se mantiene como true (valor predeterminado), el mecanismo de caducidad no se activará para las carpetas de inspección que no estén restringidas. Si la propiedad se mantiene como false, el mecanismo siempre se activará siempre que la propiedad stageFileExpirationDuration sea un número positivo.
 
 * **pollInterval (Long)**: Intervalo en segundos para analizar la información de la carpeta vigilada. A menos que se habilite la configuración de aceleración, el intervalo de encuesta debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría estar sobrecargado. El valor predeterminado es 5. Consulte la descripción del tamaño del lote para obtener más información. El valor del intervalo de encuesta debe ser bueno o igual a uno.
@@ -177,7 +180,9 @@ Junto con las propiedades de configuración de la carpeta vigilada que se muestr
 1. Inicie sesión en CRXDE-Lite y vaya al nodo de configuración Carpeta vigilada.
 1. Añada un parámetro de propiedad.&lt;property_name> al nodo de configuración Carpeta vigilada. El tipo de propiedad solo puede ser Boolean, Date, Decimal, Doble, Long y String. Puede especificar propiedades de uno o varios valores.
 
-**Nota:** Si el tipo de datos de la propiedad es Doble, especifique un punto decimal en el valor de dichas propiedades. Para todas las propiedades, donde el tipo de datos es Doble y no se especifica ninguna coma decimal en el valor, el tipo se convierte a Long.
+>[!NOTE]
+>
+>Si el tipo de datos de la propiedad es Doble, especifique un punto decimal en el valor de dichas propiedades. Para todas las propiedades, donde el tipo de datos es Doble y no se especifica ninguna coma decimal en el valor, el tipo se convierte a Long.
 
 Estas propiedades se pasan como un mapa inmutable de tipo Map&lt;String, Object> al código de procesamiento. El código de procesamiento puede ser un ECMAScript, un flujo de trabajo o un servicio. Los valores proporcionados para las propiedades están disponibles como pares clave-valor en el mapa. Key es el nombre de la propiedad y value es el valor de la propiedad. Para obtener más información sobre los parámetros de configuración personalizados, consulte la siguiente imagen:
 
