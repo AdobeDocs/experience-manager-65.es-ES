@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ Aya responde algunas preguntas para confirmar su elegibilidad rellenando un brev
 
 1. Realice una selección en cada campo desplegable.
 
-   1. Nota: Si el usuario gana más de $200.000 al año, no es elegible.
+   >[!NOTE]
+   >
+   >Si el usuario gana más de $200.000 al año, no es elegible.
 
 1. Haga clic en &quot;¿**Soy elegible?**” botón.
 1. Haga clic en el botón &quot;**Aplicar ahora**&quot; para continuar.
