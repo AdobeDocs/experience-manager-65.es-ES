@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -55,7 +55,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Nota**: Los ajustes recomendados son para Windows 2008 R2 8 Core y JDK de Oracle HotSpot 1.7 (64 bits) y deben ampliarse o reducirse según la configuración del sistema.
+>[!NOTE]
+>
+>Los ajustes recomendados son para Windows 2008 R2 8 Core y JDK de Oracle HotSpot 1.7 (64 bits) y deben ampliarse o reducirse según la configuración del sistema.
 
 ## Uso de un servidor web {#using-a-web-server}
 
@@ -63,7 +65,9 @@ Los formularios adaptables y HTML5 se representan en formato HTML5. El resultado
 
 Por ejemplo, realice los siguientes pasos para habilitar la compresión en Apache Web Server 2.0 de 32 bits con JBoss:
 
-***Nota **: Las siguientes instrucciones no se aplican a ningún servidor que no sea Apache Web Server 2.0 de 32 bits. Para ver los pasos específicos de cualquier otro servidor, consulte la documentación del producto correspondiente.*
+>[!NOTE]
+>
+>Las siguientes instrucciones no se aplican a ningún servidor que no sea Apache Web Server 2.0 de 32 bits. Para ver los pasos específicos de cualquier otro servidor, consulte la documentación del producto correspondiente.
 
 Los siguientes pasos muestran los cambios necesarios para habilitar la compresión con Apache Web Server
 
