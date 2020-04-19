@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -25,7 +25,7 @@ La muestra, analizada en este documento, es una implementación de referencia de
 >[!NOTE]
 >
 >* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos apropiadamente por su sistema de base de datos.
->* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo de la versión [de](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+>* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo de la versión [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 >
 
 
@@ -77,8 +77,10 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
    * En Configuración de consola web, busque y haga clic en Implementación de muestra del servicio de metadatos de Forms Portal. Puede cambiar los valores del origen de datos, los metadatos o el nombre de tabla de metadatos adicional.
    Para proporcionar un nombre diferente para la tabla de datos:
 
-   * En Configuración de consola web, busque y haga clic en Forms Portal Data Service Sample Implementation (Implementación de muestra de Forms Portal Data Service). Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
-   **Nota**: Si cambia los nombres de tabla, indíquelos en la configuración de Form Portal.
+   * En Configuración de la consola web, busque y haga clic en Implementación de muestra del servicio de datos de Forms Portal. Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
+   >[!NOTE]
+   >
+   >Si cambia los nombres de tabla, indíquelos en la configuración de Form Portal.
 
 1. Deje otras configuraciones tal cual y haga clic en **[!UICONTROL Guardar]**.
 
