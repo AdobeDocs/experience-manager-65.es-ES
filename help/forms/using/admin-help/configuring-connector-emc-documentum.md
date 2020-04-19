@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -27,7 +27,7 @@ Configurar Connector para Documentum de EMC implica configurar la conexión al s
 
 ## Configuración de la conexión con el servidor {#configuring-the-server-connection}
 
-En este tema se describen las tareas para Connector for EMC Documentum que puede realizar en la página Configuración.
+En este tema se describen las tareas de Connector para Documentum de EMC que puede realizar en la página Configuración.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Al configurar las credenciales principales, el nombre del repositorio que propor
 
 Si introduce un nombre de usuario o una contraseña incorrectos, obtendrá los siguientes resultados, según si el servicio se está ejecutando en ese momento:
 
-* Si se detienen el servicio Proveedor de Repositorios de Documentum de EMC y el servicio Conector de Repositorio de Contenido de Documentum de EMC, cuando se guarda la información de configuración del servicio, no aparece ningún error. Sin embargo, la próxima vez que inicie el servicio, se generará una excepción y el servicio no se iniciará.
+* Si se detienen el servicio Proveedor de Repositorios de Documentum de EMC y el servicio Conector de Repositorio de Contenido de Documentum de EMC, cuando se guarda la información de configuración del servicio, no aparece ningún error. Sin embargo, la próxima vez que inicio el servicio, se generará una excepción y el servicio no se inicio.
 * Si se inicia el servicio Proveedor de Repositorios de Documentum de EMC o el servicio Conector de Repositorio de Contenido de Documentum de EMC, al guardar la información de configuración de servicio, el servicio intenta validar la información de credenciales inmediatamente. En este caso, se produce un error y la información de configuración no se guarda.
 
 1. En la consola de administración, haga clic en Servicios > Conector para Documentum de EMC > Configuración.
@@ -55,27 +55,29 @@ Si introduce un nombre de usuario o una contraseña incorrectos, obtendrá los s
 1. Si no se proporciona un nombre de repositorio explícito durante el inicio de sesión, introduzca el nombre de repositorio con el que están asociadas las credenciales.
 1. Haga clic en Guardar.
 
-### Cambiar el proveedor de servicios de repositorio {#change-the-repository-service-provider}
+### Cambiar el proveedor de servicio del repositorio {#change-the-repository-service-provider}
 
-Puede configurar qué proveedor de servicios de repositorio utilizar con Documentum. Las llamadas al servicio de repositorio se delegan al proveedor que configure. Las opciones disponibles son las siguientes:
+Puede configurar qué proveedor de servicio de repositorio utilizar con Documentum. Las llamadas al servicio de repositorio se delegan al proveedor que configure. Las opciones disponibles son las siguientes:
 
-**** Nombre actual del proveedor de servicios de repositorio: El nombre del proveedor de servicios de repositorio actual
+**Nombre actual del Proveedor de servicio del repositorio:** Nombre del proveedor de servicio de repositorio actual
 
-**** Proveedor de repositorio de Documentum de ECM: Convierte al proveedor de repositorio de Documentum en el proveedor del repositorio. Esta opción está en desuso
+**Proveedor de repositorio de Documentum de ECM:** Convierte al proveedor de repositorio de Documentum en el proveedor del repositorio. Esta opción está en desuso
 
-**** proveedor de repositorio: Convierte al proveedor de repositorio nativo en el proveedor del repositorio
+**proveedor de repositorio:** Convierte al proveedor de repositorio nativo en el proveedor del repositorio
 
-***Nota **: Para seleccionar un proveedor de servicios de repositorio que no esté en la lista, configure RepositoryService en Aplicaciones y servicios > Service Management.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>Para seleccionar un proveedor de servicio de repositorio distinto de los enumerados, configure RepositoryService en Aplicaciones y servicios > Administración de servicios. <!-- Fix broken link (See Managing Services) -->.
 
 1. En la consola de administración, haga clic en Servicios > Conector para Documentum de EMC > Configuración.
-1. En el área Información del proveedor de servicios de repositorio, seleccione el proveedor de servicios de repositorio alternativo.
+1. En el área Información del Proveedor de servicio del repositorio, seleccione el proveedor de servicio del repositorio alternativo.
 1. Haga clic en Guardar.
 
 ## Configuración de las credenciales del repositorio {#configuring-repository-credentials}
 
 La información de credenciales de Documentum se utiliza en el contexto del sistema de formularios AEM. Las credenciales del repositorio son específicas de repositorios concretos de Documentum. Puede proporcionar credenciales para cualquier número de repositorios; sin embargo, solo puede especificar un conjunto de credenciales por repositorio.
 
-### Agregar una credencial de repositorio {#add-a-repository-credential}
+### Añadir una credencial de repositorio {#add-a-repository-credential}
 
 1. En la consola de administración, haga clic en Servicios > Conector para Documentum de EMC > Configuración de credenciales de repositorio.
 1. Haga clic en Agregar. Aparece la página Información de Credenciales del Sistema de Documentum.
@@ -101,15 +103,15 @@ Si se están ejecutando el Servicio de Repositorio de Contenido para Documentum 
 
 ## Habilitar la solicitud para compartir colas de tareas de Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
 
-Se requieren algunos pasos manuales para garantizar que la función Solicitud de uso compartido de colas de tareas en Workspace funcione correctamente con Connector for EMC Documentum.
+Se requieren algunos pasos manuales para garantizar que la función Solicitud de uso compartido de cola de Tarea en Workspace funcione correctamente con Connector for EMC Documentum.
 
-1. Una vez implementados los formularios AEM y instalado Workbench, inicie sesión en Workbench y abra la vista Recursos. Determinará desde esta vista dónde se encuentra el archivo QueueSharing.swf.
-1. Arrastre el archivo QueueSharing.swf desde la vista Recursos hasta el escritorio de Windows o una ubicación equivalente, según el sistema operativo.
+1. Una vez implementados los formularios AEM y instalado Workbench, inicie sesión en Workbench y abra la vista Recursos. Determinará la ubicación del archivo QueueSharing.swf desde esta vista.
+1. Arrastre el archivo QueueSharing.swf desde la Vista Recursos hasta el escritorio de Windows o una ubicación equivalente, según el sistema operativo.
 1. En la consola de administración, haga clic en Servicios > Conector para Documentum de EMC > Configuración.
-1. En Información del proveedor de servicios de repositorio, cambie el proveedor de repositorio configurado a Proveedor de repositorio de Documentum de EMC.
-1. Inicie Workbench y copie el archivo QueueSharing.swf desde la ubicación en la que lo copió originalmente (por ejemplo, el escritorio de Windows u otra ubicación) en un directorio existente dentro del repositorio de Documentum de EMC.
+1. En Información del Proveedor de servicio de Repositorios, cambie el proveedor de repositorios configurado a Proveedor de Repositorios de Documentum de EMC.
+1. Inicio Workbench y copie el archivo QueueSharing.swf desde la ubicación donde originalmente lo copió (por ejemplo, el escritorio de Windows u otra ubicación) en un directorio existente dentro del repositorio de Documentum de EMC.
 1. En la vista Procesos de Workbench, abra el proceso de uso compartido de colas.
-1. En la vista Variables, abra las propiedades de la variable &quot;theForm&quot; y cambie el URI para que coincida con la ruta en la que colocó el archivo QueueSharing.swf en el paso 5.
+1. En la vista Variables, abra las propiedades de la variable &quot;theForm&quot; y cambie el URI para que coincida con la ruta de acceso donde colocó el archivo QueueSharing.swf en el paso 5.
 1. Guarde el proceso.
 1. Migrar el proceso al entorno de producción según la política de su organización.
 
