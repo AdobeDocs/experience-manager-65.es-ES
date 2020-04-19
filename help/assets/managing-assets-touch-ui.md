@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -646,7 +646,7 @@ En la vista de tarjetas, la opción **[!UICONTROL Seleccionar]** se muestra como
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Si no se desplaza hacia abajo, solo se cargan 100 recursos en la vista de tarjetas y 200 en la vista de listas. La opción Seleccionar todo selecciona solo estos muchos recursos.
+Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Inicialmente, solo se cargan 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos en vista a medida que se desplaza por la página de resultados de la búsqueda. La opción [!UICONTROL Seleccionar todo] selecciona solo los recursos cargados.
 
 Para obtener más información, consulte [vista y selección de recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
