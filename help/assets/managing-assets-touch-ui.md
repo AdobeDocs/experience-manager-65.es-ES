@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
 
 ---
 
@@ -174,7 +174,7 @@ Para cancelar un trabajo de carga en curso, toque **[!UICONTROL Cancelar]** junt
 | Opciones de trabajo |  | Toque o haga clic en Opciones **[!UICONTROL de]** trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Toque el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas que cargue se introducirán automáticamente en Recursos AEM. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
@@ -478,15 +478,15 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
 1. Toque o haga clic en el recurso para abrir su página de recursos.
 
-   ![chlimage_1-220](assets/chlimage_1-15.png)
+   ![Página Detalles de recursos para administrar representaciones](assets/chlimage_1-15.png)
 
 1. Toque o haga clic en el icono de GlobalNav y seleccione **[!UICONTROL Representaciones]** en la lista.
 
-   ![renditions_menu](assets/renditions_menu.png)
+   ![Barra izquierda para abrir el menú y seleccionar la opción Representaciones](assets/renditions_menu.png)
 
 1. En el panel **[!UICONTROL Representaciones]** , vista la lista de las representaciones generadas para el recurso.
 
-   ![renditions_panel](assets/renditions_panel.png)
+   ![Panel Representaciones de la página Detalles de recursos](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    Vaya a la página de detalles del recurso y pulse o haga clic en el icono **[!UICONTROL Agregar representación]** de la barra de herramientas para cargar una nueva representación para el recurso.
 
-   ![chlimage_1-221](assets/chlimage_1-16.png)
+   ![Añadir icono de representación para cargar una nueva representación](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    Del mismo modo, puede personalizar la imagen de la página Anotación superponiendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-17.png)
+   ![Superponer nodo de selector de representación en CRXDE para personalizar la imagen de la página de anotación](assets/chlimage_1-17.png)
 
    Para configurar las dimensiones de representación de un recurso de vídeo, navegue hasta el `videopicker` nodo del repositorio de CRX en la ubicación `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, superponga el nodo y, a continuación, edite la propiedad adecuada.
 
@@ -536,7 +536,7 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
 1. Seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Eliminar]** de la barra de herramientas.
 
-   ![delete_icon](assets/delete_icon.png)
+   ![Icono Eliminar](assets/delete_icon.png)
 
 1. En el cuadro de diálogo de confirmación, haga clic en:
 
@@ -584,11 +584,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Seleccione el recurso o la carpeta que desea cancelar la publicación y toque o haga clic en el icono **[!UICONTROL Administrar publicación]** de la barra de herramientas.
 
-   ![manage_publication](assets/manage_publication.png)
+   ![Icono Administrar publicación](assets/manage_publication.png)
 
 1. Seleccione la acción **[!UICONTROL Cancelar publicación]** en la lista.
 
-   ![unpublish_action](assets/unpublish_action.png)
+   ![Cancelar publicación, acción](assets/unpublish_action.png)
 
 1. Para cancelar la publicación del recurso posteriormente, seleccione **[!UICONTROL Cancelar publicación posteriormente]** y, a continuación, seleccione una fecha para cancelar la publicación del recurso.
 1. Programe una fecha para que el recurso no esté disponible desde el entorno de publicación.
@@ -610,11 +610,11 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
 1. Seleccione una carpeta en la interfaz de usuario de Recursos y toque o haga clic en el icono Propiedades en la barra de herramientas para mostrar la página de propiedades.
 1. En la ficha **[!UICONTROL Permisos]** , agregue miembros o grupos en Grupo **[!UICONTROL de usuarios]** cerrado.
 
-   ![add_user](assets/add_user.png)
+   ![Añadir usuario en un grupo de usuarios cerrado](assets/add_user.png)
 
 1. Para mostrar una pantalla de inicio de sesión cuando los usuarios acceden a la carpeta, seleccione la opción **[!UICONTROL Activar]** . A continuación, seleccione la ruta a una página de inicio de sesión en AEM y guarde los cambios.
 
-   ![login_page](assets/login_page.png)
+   ![Habilitar y seleccionar la página de inicio de sesión para que se muestre cuando el usuario acceda a la carpeta](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -642,13 +642,13 @@ Puede realizar la vista, navegar y seleccionar recursos con cualquiera de las vi
 
 En la vista de columnas y vistas de lista, aparece la opción **[!UICONTROL Seleccionar]** cuando pasa el puntero sobre la miniatura del recurso.
 
-![select_quick_in_listview](assets/select_quick_in_listview.png)
+![Seleccionar recursos en la vista de lista](assets/select_quick_in_listview.png)
 
-![select_quick_in_columnview](assets/select_quick_in_columnview.png)
+![Seleccionar recursos en la vista de columnas](assets/select_quick_in_columnview.png)
 
 En la vista de tarjetas, la opción **[!UICONTROL Seleccionar]** se muestra como una acción rápida.
 
-![select_quick_action](assets/select_quick_action.png)
+![Seleccione una acción rápida en la vista de la tarjeta](assets/select_quick_action.png)
 
 Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Inicialmente, solo se cargan 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos en vista a medida que se desplaza por la página de resultados de la búsqueda. La opción [!UICONTROL Seleccionar todo] selecciona solo los recursos cargados.
 
@@ -667,36 +667,36 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
    * Seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
    * Toque o haga clic en el icono **[!UICONTROL Editar]** que aparece en un recurso de la vista de tarjetas.
    * En la página de recursos, toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
-   ![edit_icon](assets/edit_icon.png)
+   ![Icono Editar en la barra de herramientas](assets/edit_icon.png)
 
 1. Para recortar la imagen, toque o haga clic en el icono **Recortar** .
 
-   ![chlimage_1-226](assets/chlimage_1-22.png)
+   ![Icono de recorte](assets/chlimage_1-22.png)
 
 1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción **Mano libre** permite recortar la imagen sin restricciones de proporción de aspecto.
 
-   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
+   ![Opciones de recorte](/help/assets/assets/chlimage_1-23.png)
 
 1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
 1. Utilice el icono **Finalizar** (esquina superior derecha) para recortar la imagen. Al hacer clic en el icono **Finalizar** también se desencadena la regeneración de las representaciones.
 
-   ![chlimage_1-228](assets/chlimage_1-24.png)
+   ![Icono Finalizar](assets/chlimage_1-24.png)
 
 1. Utilice los iconos **Deshacer** y **Rehacer** de la parte superior derecha para revertir a la imagen sin recortar o conservar la imagen recortada, respectivamente.
 
-   ![chlimage_1-229](assets/chlimage_1-25.png)
+   ![Iconos de Deshacer y Rehacer](assets/chlimage_1-25.png)
 
 1. Toque o haga clic en el icono Girar correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
 
-   ![chlimage_1-230](assets/chlimage_1-26.png)
+   ![Iconos de rotación hacia la derecha y hacia la izquierda](assets/chlimage_1-26.png)
 
 1. Toque o haga clic en el icono Voltear correspondiente para voltear la imagen horizontal o verticalmente.
 
-   ![chlimage_1-231](assets/chlimage_1-27.png)
+   ![Iconos para voltear la imagen horizontal o verticalmente](assets/chlimage_1-27.png)
 
 1. Toque o haga clic en el icono **Finalizar** para guardar los cambios.
 
-   ![chlimage_1-232](assets/chlimage_1-28.png)
+   ![Icono Finalizar](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -739,11 +739,11 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    * [Acciones rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
-   ![chlimage_1-233](assets/chlimage_1-29.png)
+   ![Icono Anotar](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 
-   ![chlimage_1-234](assets/chlimage_1-30.png)
+   ![Cuadro Comentario del cuadro de diálogo Añadir anotación](assets/chlimage_1-30.png)
 
 1. Para notificar a un usuario sobre una anotación, especifique la dirección de correo electrónico del usuario y agregue el comentario. Por ejemplo, para notificar a Aaron MacDonald sobre una anotación, escriba @aa. Las sugerencias para todos los usuarios coincidentes se muestran en una lista. Seleccione la dirección de correo electrónico de Aaron en la lista para etiquetarla con el comentario. Del mismo modo, puede etiquetar a más usuarios en cualquier lugar dentro de la anotación o antes o después de ella.
 
@@ -751,11 +751,11 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >
    >Para un usuario que no es administrador, las sugerencias solo aparecen si el usuario tiene permisos de lectura en */inicio* en Crx-de.
 
-   ![chlimage_1-235](assets/chlimage_1-31.png)
+   ![Especifique la dirección de correo electrónico del usuario y agregue un comentario para notificar al usuario](assets/chlimage_1-31.png)
 
 1. Después de agregar la anotación, haga clic en **[!UICONTROL Añadir]** para guardarla. Se envía una notificación para la anotación a Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-32.png)
+   ![Botón Añadir para guardar una anotación](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -786,15 +786,15 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Cronología]** en la lista.
 
-   ![chlimage_1-239](assets/chlimage_1-35.png)
+   ![Opciones disponibles en el icono de GlobalNav](assets/chlimage_1-35.png)
 
 1. En la lista **[!UICONTROL Mostrar todo]** de la cronología, seleccione **[!UICONTROL Comentarios]** para filtrar los resultados según las anotaciones.
 
-   ![chlimage_1-240](assets/chlimage_1-36.png)
+   ![Mostrar toda la lista en la línea de tiempo](assets/chlimage_1-36.png)
 
    Toque o haga clic en un comentario del panel **[!UICONTROL Línea de tiempo]** para vista de la anotación correspondiente en la imagen.
 
-   ![chlimage_1-241](assets/chlimage_1-37.png)
+   ![Panel Línea de tiempo para vista de anotaciones en la imagen](assets/chlimage_1-37.png)
 
    Toque o haga clic en **[!UICONTROL Eliminar]** para eliminar un comentario concreto.
 
@@ -814,15 +814,15 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
 1. Para imprimir anotaciones específicas, seleccione las anotaciones en la línea de tiempo.
 
-   ![chlimage_1-242](assets/chlimage_1-38.png)
+   ![Seleccione una anotación de la línea de tiempo para imprimirla](assets/chlimage_1-38.png)
 
    Para imprimir solo el estado de la revisión, selecciónelo en la línea de tiempo.
 
-   ![chlimage_1-243](assets/chlimage_1-39.png)
+   ![Para imprimir solo el estado de revisión de la anotación, selecciónelo en la línea de tiempo](assets/chlimage_1-39.png)
 
 1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
-   ![chlimage_1-244](assets/chlimage_1-40.png)
+   ![Icono Imprimir en la barra de herramientas](assets/chlimage_1-40.png)
 
 1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de anotaciones/revisión en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, utilice la configuración **Superior izquierda** . Se selecciona de forma predeterminada.
 
@@ -836,11 +836,11 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
 1. Pulse o haga clic en **[!UICONTROL Imprimir]**. Según la opción elegida en el paso 2, el PDF generado muestra las anotaciones/el estado en la posición especificada. Por ejemplo, si elige imprimir las anotaciones y el estado de la revisión mediante la configuración **Superior izquierda**, la salida generada se parece al archivo PDF que se muestra aquí.
 
-   ![chlimage_1-246](assets/chlimage_1-42.png)
+   ![Anotación y estado de revisión en el PDF generado](assets/chlimage_1-42.png)
 
 1. Descargue o imprima el PDF con las opciones de la parte superior derecha.
 
-   ![chlimage_1-247](assets/chlimage_1-43.png)
+   ![Opciones de descarga e impresión en PDF](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -848,7 +848,7 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la configuración **[!UICONTROL de PDF de]** anotación desde Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-44.png)
+   ![Configuración para imprimir anotaciones de recursos en documento PDF](assets/chlimage_1-44.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
@@ -905,7 +905,7 @@ También puede activar el control automático de versiones mediante un flujo de 
    * Haga clic en **[!UICONTROL Guardar como versión]** para crear una versión para el recurso. De forma opcional, agregue una etiqueta y un comentario.
    * Haga clic en **[!UICONTROL Crear]** para crear una versión.
 
-      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+      ![Crear versión de recurso desde la barra lateral](assets/create-new-version-from-timeline.png)
 
       *Figura: Cree una versión de un recurso desde la barra lateral izquierda de la[!UICONTROL línea de tiempo].*
 
@@ -914,7 +914,7 @@ También puede activar el control automático de versiones mediante un flujo de 
    * Haga clic en **[!UICONTROL Mostrar todo]** en la [!UICONTROL línea de tiempo].
    * Haga clic en **[!UICONTROL Versiones]**. Todas las versiones creadas para un recurso aparecen en la barra lateral izquierda.
 
-      ![versions_option](assets/versions_option.png)
+      ![ Opción Seleccionar versiones de la línea de tiempo](assets/versions_option.png)
 
    * Seleccione una versión específica del recurso y haga clic en Versión **[!UICONTROL de]** Previsualización.
 
@@ -923,7 +923,7 @@ También puede activar el control automático de versiones mediante un flujo de 
    * Haga clic en una versión del recurso. De forma opcional, agregue una etiqueta y un comentario.
    * Click **[!UICONTROL Revert to this Version]**.
 
-      ![select_version](assets/select_version.png)
+      ![Seleccione una versión para revertirla](assets/select_version.png)
 
       *Figura: Seleccione una versión y vuelva a ella. Se convierte en la versión actual que luego está disponible para los usuarios de DAM.*
 
