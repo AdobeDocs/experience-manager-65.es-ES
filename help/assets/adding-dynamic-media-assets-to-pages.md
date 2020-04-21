@@ -9,24 +9,24 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 202e4d5d0e3fa285b9973e4709a02ca77ccb6e71
 
 ---
 
 
 # Adición de recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. Para ello, introduzca el modo Diseño y active los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
+Para añadir la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar directamente en la página el componente **Dynamic Media**, **Interactive Media**, **Panoramic Media** o **Video 360 Media**. Para ello, indique el modo Diseño y active los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
 
-Puede añadir recursos de Dynamic Media directamente a la página si utiliza AEM como WCM. Si utiliza un tercero para WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio](/help/assets/responsive-site.md)interactivo.
+Puede añadir recursos de Dynamic Media directamente a la página si utiliza AEM como WCM. Si utiliza un tercero para su WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->Debe publicar recursos antes de agregarlos a páginas en AEM. Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md)de Dynamic Media.
+>Debe publicar recursos antes de agregarlos a páginas en AEM. See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-Agregar un componente de Dynamic Media, Interactive Media, Panoramic Media o Video 360 Media a una página es lo mismo que agregar un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
+Añadir un componente Medios dinámicos, Medios interactivos, Medios panorámicas o Medios de vídeo 360 a una página es lo mismo que agregar un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
 1. En el panel izquierdo, toque el icono **[!UICONTROL Componentes]** y, a continuación, filtre para Medios dinámicos.
@@ -59,7 +59,7 @@ Agregar un componente de Dynamic Media, Interactive Media, Panoramic Media o Vid
 
 Puede localizar los componentes de Dynamic Media de una de las dos formas siguientes:
 
-* En una página web de Sitios, abra **[!UICONTROL Propiedades]** y seleccione la ficha **[!UICONTROL Avanzadas]** . Seleccione el idioma que desee para la localización.
+* En una página web de Sites, abra **[!UICONTROL Propiedades]** y seleccione la pestaña **[!UICONTROL Avanzadas]**. Seleccione el idioma que desee para la localización.
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
@@ -75,7 +75,7 @@ Los componentes de Dynamic Media están disponibles cuando toca el icono **[!UIC
 
 Los componentes de Dynamic Media disponibles son los siguientes:
 
-* **[!UICONTROL Medios]** dinámicos: se utiliza para recursos como imágenes, vídeos, catálogos electrónicos y conjuntos de giros.
+* **[!UICONTROL Dynamic Media:]** Se utiliza para recursos como imágenes, vídeos, catálogos electrónicos y conjuntos de giros.
 * **[!UICONTROL Medios]** interactivos: se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel.
 * **[!UICONTROL Medios]** panorámicos: utiliza para imágenes panorámicas o imágenes panorámicas VR.
 * **[!UICONTROL Medios]** de vídeo 360: se utilizan para recursos de vídeo de 360 y 360 VR.
@@ -113,13 +113,13 @@ El componente de Dynamic Media permite añadir imágenes dinámicas, como conjun
 
 También puede configurar el ajuste preestablecido de visor, el ajuste preestablecido de imagen o el formato de imagen directamente en el componente. Para hacer que en una imagen sea interactiva, puede establecer puntos de interrupción o aplicar un ajuste preestablecido de imagen interactiva.
 
-You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->De forma predeterminada, el componente de imagen de Dynamic Media es adaptable. Si desea convertirlo en un tamaño fijo, configúrelo en el componente en la ficha **[!UICONTROL Avanzado]** con los valores de **[!UICONTROL Anchura]** y **[!UICONTROL Altura]**.
+>De forma predeterminada, el componente de imagen Dynamic Media es adaptable. Si desea que tenga un tamaño fijo, configúrelo en el componente de la pestaña **[!UICONTROL Avanzado]** con la **[!UICONTROL anchura]** y la **[!UICONTROL altura]** apropiadas.
 
 * **[!UICONTROL Ajuste preestablecido]** de visor: seleccione un ajuste preestablecido de visor existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
 
@@ -143,7 +143,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 * **[!UICONTROL Título]**: permite cambiar el título de la imagen.
 
-* **[!UICONTROL Texto]** alternativo: Agregue un título a la imagen para los usuarios que tienen gráficos desactivados.
+* **[!UICONTROL Texto]** alternativo: Añada un título a la imagen para aquellos usuarios que tengan los gráficos desactivados.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -162,7 +162,7 @@ Utilice el componente Dynamic Media para añadir vídeo dinámico a las páginas
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -192,11 +192,11 @@ Consulte también Perfiles [de imagen](/help/assets/image-profiles.md).
 
 ![dm-settings-smart-cut](assets/dm-settings-smart-crop.png)
 
-You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
->De forma predeterminada, el componente de imagen de Dynamic Media es adaptable. Si desea convertirlo en un tamaño fijo, configúrelo en el componente en la ficha **[!UICONTROL Avanzado]** con los valores de **[!UICONTROL Anchura]** y **[!UICONTROL Altura]**.
+>De forma predeterminada, el componente de imagen Dynamic Media es adaptable. Si desea que tenga un tamaño fijo, configúrelo en el componente de la pestaña **[!UICONTROL Avanzado]** con la **[!UICONTROL anchura]** y la **[!UICONTROL altura]** apropiadas.
 
 * **[!UICONTROL Modificadores]** de imagen: se pueden aplicar efectos de imagen mediante comandos de imagen adicionales. Estos se describen en Ajustes preestablecidos de imagen y en la referencia de comandos de servicio de imágenes.
 
@@ -206,7 +206,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL Título]**: cambie el título de la imagen de recorte inteligente.
 
-* **[!UICONTROL Texto]** alternativo: Agregue un título a la imagen de recorte inteligente para los usuarios que tienen gráficos desactivados.
+* **[!UICONTROL Texto]** alternativo: Añada un título a la imagen de recorte inteligente para los usuarios que tienen gráficos desactivados.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -263,7 +263,7 @@ El componente de medios panorámicos es para aquellos recursos que son imágenes
 * Proporción de aspecto de 2:1.
 * Se etiqueta con las palabras clave `equirectangular` o (`spherical` + `panorama`) o (`spherical` + `panoramic`). Consulte [Uso de etiquetas](/help/sites-authoring/tags.md).
 
-Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM de medios **[!UICONTROL panorámicas]** .
+Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM de **[!UICONTROL medios panorámicas]**.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Tanto la proporción de aspecto como los criterios de palabra clave se aplican a
 >* Cada instancia utiliza el mismo tipo de recurso.
 >
 >
-Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visor diferente a cada componente de medios **** panorámicas de esa página.
+Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visualizador diferente a cada componente de **[!UICONTROL medios panorámicos]** de esa página.
 >
 >Sin embargo, puede utilizar el mismo ajuste preestablecido de visor para todos los componentes de medios panorámicas que utilicen recursos del mismo tipo en la página.
 
@@ -291,7 +291,7 @@ Utilice el componente **[!UICONTROL Vídeo de medios]** 360 para procesar vídeo
 
 Durante la reproducción en una pantalla plana, el usuario controla el ángulo de visualización; la reproducción en dispositivos móviles suele aprovechar los controles giroscópicos integrados.
 
-El visor incluye compatibilidad nativa con la entrega de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.
+El visor incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.
 
 ![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
@@ -301,9 +301,9 @@ Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en 
 
 Si el ajuste preestablecido de visor que está buscando no está visible, asegúrese de que se ha publicado. Debe publicar ajustes preestablecidos de visor para poder utilizarlos. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
 
-### Uso de HTTP/2 para enviar recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Uso de HTTP/2 para envío de recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora puede realizarse a través de HTTP/2, lo que proporciona mejores tiempos de respuesta y carga.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el Envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
 Consulte Envío de contenido [](/help/assets/http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
 
