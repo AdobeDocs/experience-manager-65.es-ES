@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -22,17 +22,17 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 La función de foro proporciona un área para los visitantes del sitio con sesión iniciada (miembros de la comunidad) en el entorno de publicación para:
 
-* crear nuevos temas
-* ver y responder a temas
-* seguir un tema
-* buscar en un foro
-* ayudar a moderar el contenido del foro
-* mover temas de foro de una página a otra
+* Crear nuevos temas
+* Vista y respuesta a los temas
+* Seguir un tema
+* Buscar en un foro
+* Ayudar a moderar el contenido del foro
+* Mover temas de foro de una página a otra
 
-Esta sección de la documentación describe
+Esta sección de la documentación describe:
 
-* adición de la función de foro a un sitio de AEM
-* configuración del `Forum`componente
+* Añadir la función de foro en un sitio de AEM.
+* Configuración del `Forum`componente.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
@@ -56,107 +56,191 @@ Seleccione el componente colocado al que desea acceder y seleccione el `Forum` `
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **Configuración **, especifique la configuración de los temas y las respuestas:
+En la ficha **Configuración** , especifique la configuración de los temas y las respuestas:
 
-* **Permitir miniatura de datos adjuntos**Si está activada, se crea una miniatura de la imagen adjunta.
-* **Tamaño** máximo de la miniatura de adiciónTamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
+* **Permitir la miniatura del archivo adjunto**
+
+   Si se selecciona, se crea una miniatura de la imagen adjunta.
+
+* **Tamaño máximo de la miniatura del archivo adjunto**
+
+   Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
 
 * **Tamaño mínimo de imagen para miniatura**
-* **Tamaño** máximo de miniatura Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen en línea. El valor predeterminado es 800 x 800.
+* **Tamaño máximo de la miniatura**
 
-* **Temas por página**Define el número de temas/publicaciones que se muestran por página. El valor predeterminado es 10.
-* **Moderado** Si se selecciona, la publicación de temas y comentarios debe aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está marcado.
+   Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen en línea. El valor predeterminado es 800 x 800.
 
-* **Cerrado** Si está marcado, el foro está cerrado a nuevos temas y comentarios. El valor predeterminado no está marcado.
+* **Temas por página**
 
-* **Editor** de texto enriquecido Si está marcado, los temas y comentarios se pueden introducir con marcado. El valor predeterminado no está marcado.
+   Define el número de temas/entradas que se muestran por página. El valor predeterminado es 10.
 
-* **Permitir etiquetado** Si está activado, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha Campo **** de etiqueta). El valor predeterminado no está marcado.
+* **Moderado**
 
-* **Permitir cargas** de archivos Si está activada, permita que los archivos adjuntos se agreguen al tema o comentario. El valor predeterminado no está marcado.
+   Si se selecciona, la publicación de temas y comentarios debe aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está marcado.
 
-* **Permitir lo siguiente** Si está marcado, incluya la siguiente función para las publicaciones del foro, que permite que se [notifique](/help/communities/notifications.md) a los miembros de las nuevas publicaciones. El valor predeterminado no está marcado.
+* **Cerrado**
 
-* **Permitir fijar** si se selecciona, los temas del foro pueden fijarse en la parte superior de la lista de temas. El valor predeterminado no está marcado.
+   Si se selecciona, el foro se cierra a nuevos temas y comentarios. El valor predeterminado no está marcado.
 
-* **Si se selecciona Permitir contenido** destacado, la idea se puede identificar como contenido [](/help/communities/featured.md)destacado. El valor predeterminado no está marcado.
+* **Editor de texto enriquecido**
 
-* **Permitir suscripciones** por correo electrónico Si está activada, permita que se notifique a los miembros de las nuevas publicaciones por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se marque y se configure [el](/help/communities/email.md)correo electrónico. El valor predeterminado no está marcado.
+   Si se selecciona, los temas y comentarios se pueden introducir con marcado. El valor predeterminado no está marcado.
 
-* **Tamaño** máximo del archivo relevante solo si `Allow File Uploads` está marcado. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+* **Permitir etiquetado**
 
-* **Tipos** de archivo permitidos solo si `Allow File Uploads` está marcado. Una lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
+   Si está activada, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha Campo **** de etiqueta). El valor predeterminado no está marcado.
 
-* **El tamaño** máximo del archivo de imagen adjunto solo es relevante si se ha marcado Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152*** **(2 Mb).
+* **Permitir cargas de archivos**
 
-* **Permitir respuestas** por hilos Si está activada, permita respuestas a comentarios publicados en el tema. El valor predeterminado no está marcado.
+   Si está activada, permita que los archivos adjuntos se agreguen al tema o comentario. El valor predeterminado no está marcado.
 
-* **Permitir voto** Si está activada, incluya la función de voto con un tema. El valor predeterminado no está marcado.
+* **Permitir seguimiento**
 
-* **Permitir que los usuarios eliminen comentarios y temas** Si se selecciona esta opción, permita que los miembros eliminen los comentarios y temas que han publicado. El valor predeterminado no está marcado.
+   Si se selecciona, incluya la siguiente función para las publicaciones en el foro, que permite que se [notifique](/help/communities/notifications.md) a los miembros de las nuevas publicaciones. El valor predeterminado no está marcado.
 
-* **Mostrar rutas de exploración** Si está activada, muestre las rutas de navegación en las páginas de temas. El valor predeterminado está marcado.
+* **Permitir fijación**
 
-* **Mostrar distintivos** Si está activada, muestre [distintivos](/help/communities/implementing-scoring.md) obtenidos y asignados con una entrada de blog de miembro. El valor predeterminado no está marcado.
+   Si se selecciona, los temas del foro pueden fijarse en la parte superior de la lista de temas. El valor predeterminado no está marcado.
 
-* **Permitir miembros** privilegiados Si está activada, solo los miembros privilegiados pueden crear contenido.
+* **Permitir contenido destacado**
 
-* **Permitidos miembros privilegiados**Añada los miembros privilegiados con permiso para crear contenido.
-* **Bloquear contenido generado por el usuario en modo** de edición de autor Si está activado, bloquea el contenido generado por el usuario mientras se edita en modo de autor.
+   Si se selecciona, la idea se puede identificar como contenido [](/help/communities/featured.md)destacado. El valor predeterminado no está marcado.
 
-* **Habilitar mención** Si está habilitada, permite que los usuarios registrados de la comunidad identifiquen a otros miembros registrados (con el nombre, apellidos y nombre de usuario) y los etiqueten con la sintaxis común @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
+* **Permitir suscripciones por correo electrónico**
 
-* **Menciones** máximasRestringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
+   Si está activada, permita que se notifique a los miembros de los anuncios nuevos por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se marque y se configure [el](/help/communities/email.md)correo electrónico. El valor predeterminado no está marcado.
 
-* **Patrón** de mención de la interfaz de usuarioEspecifique la cadena de patrón permitida para etiquetar (@mención) al usuario registrado en una publicación. Por ejemplo `~{{familyName}}{{givenName}}`.
+* **Tamaño máximo de archivo**
+
+   Solo es pertinente si `Allow File Uploads` está marcado. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+
+* **Tipos de archivo permitidos**
+
+   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+
+* **El tamaño** máximo del archivo de imagen adjunto solo es relevante si se ha marcado Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
+
+* **Permitir respuestas de debate**
+
+   Si está activada, permita respuestas a los comentarios publicados en el tema. El valor predeterminado no está marcado.
+
+* **Habilitar la votación**
+
+   Si está activada, incluya la función de voto con un tema. El valor predeterminado no está marcado.
+
+* **Permitir que los usuarios eliminen comentarios y temas**
+
+   Si está activada, permita que los miembros eliminen los comentarios y temas que han publicado. El valor predeterminado no está marcado.
+
+* **Mostrar rutas**
+
+   Si se selecciona, muestre las rutas de exploración en las páginas de temas. El valor predeterminado está marcado.
+
+* **Mostrar insignias**
+
+   Si está activada, muestre [los distintivos](/help/communities/implementing-scoring.md) obtenidos y asignados con una entrada de blog de miembro. El valor predeterminado no está marcado.
+
+* **Permitir miembros privilegiados**
+
+   Si se selecciona, solo los miembros con privilegios pueden crear contenido.
+
+* **Miembros privilegiados permitidos**
+
+   Añada los miembros privilegiados con permiso para crear contenido.
+
+* **Bloquee el contenido que haya creado el usuario en el modo de edición de autor**
+
+   Si está activada, bloquea el contenido generado por el usuario mientras edita en modo de autor.
+
+* **Habilitar la mención**
+
+   Si está habilitada, permite que los usuarios registrados de la comunidad identifiquen a otros miembros registrados (con el nombre, apellidos y nombre de usuario) y los etiqueten con la sintaxis común @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
+
+* **Menciones máximas**
+
+   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
+
+* **Patrón de menciones en la interfaz de usuario**
+
+   Especifique la cadena de patrón permitida para etiquetar (@mención) al usuario registrado en una publicación. Por ejemplo `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >
 >Puede que sea necesario comprobar `AllowThreaded Replies` y `Allow users to Delete Comments and Topics` activar los comentarios sobre un tema.
 
+
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha **Moderación del usuario **, especifique cómo se administran los temas publicados y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+En la ficha Moderación **del** usuario, especifique cómo se administran los temas y las respuestas publicados (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
 
-* **Denegar publicaciones** Si se selecciona, los moderadores miembros de confianza podrán denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado no está marcado.
+* **Denegar entradas**
 
-* **Cerrar o volver a abrir temas** Si se selecciona, los moderadores de miembros de confianza pueden cerrar un tema para realizar más ediciones y comentarios, y también pueden volver a abrir un tema. El valor predeterminado no está marcado.
+   Si se selecciona, los moderadores miembros de confianza podrán denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado no está marcado.
 
-* **Mover temas** Si está activado, permita que los moderadores del lado de publicación muevan los temas. El valor predeterminado está marcado.
+* **Cerrar/abrir de nuevo los temas**
 
-* **Marcar anuncios** Si está activada, permite a los miembros marcar los temas o comentarios de otros como inapropiados. El valor predeterminado no está marcado.
+   Si se selecciona, los moderadores de miembros de confianza pueden cerrar un tema para realizar más ediciones y comentarios, y también pueden volver a abrir un tema. El valor predeterminado no está marcado.
 
-* **Marcar lista** de motivos Si está activada, permita que los miembros elijan, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
+* **Mover temas**
 
-* **Razón** de marca personalizada Si está activada, permita que los miembros introduzcan su propio motivo para marcar un tema o comentario como inapropiado. El valor predeterminado no está marcado.
+   Si está activada, permita que los moderadores del lado de publicación muevan los temas. El valor predeterminado está marcado.
 
-* **Umbral** de moderaciónIntroduzca el número de veces que los miembros deben marcar un tema o comentario antes de que se notifique a los moderadores. El valor predeterminado es 1 ( una vez).
+* **Marcar entradas**
 
-* **Límite** de marcado Escriba el número de veces que se debe marcar un tema o comentario antes de que se oculte en la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta en la vista pública. De lo contrario, este número debe ser mayor o igual que el umbral de moderación. El valor predeterminado es 5.
+   Si se selecciona, permita que los miembros marquen los temas o comentarios de otros como inapropiados. El valor predeterminado no está marcado.
+
+* **Lista de motivos de indicación**
+
+   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
+
+* **Motivo de indicación personalizado**
+
+   Si se selecciona, permita que los miembros especifiquen su propio motivo para marcar un tema o comentario como inapropiado. El valor predeterminado no está marcado.
+
+* **Umbral de moderación**
+
+   Escriba el número de veces que los miembros deben marcar un tema o comentario antes de que se notifique a los moderadores. El valor predeterminado es 1 (una vez).
+
+* **Límite de indicación**
+
+   Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo en la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta en la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
-En la ficha Campo **** Etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración **ficha, están limitadas según los espacios de nombres elegidos.
+En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración** , están limitadas según las Áreas de nombres elegidas.
 
-* **Espacios de nombres** permitidos relevantes si `Allow Tagging` se marca en la ficha **Configuración **ficha. Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de espacio de nombres seleccionadas. La lista de espacios de nombres incluye &quot;Etiquetas estándar&quot; (el espacio de nombres predeterminado) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todos los espacios de nombres.
+* **Espacios de nombres permitidos**
 
-* **Límite** de sugerencias Introduzca el número de etiquetas que se mostrarán como una sugerencia para el miembro que se publica en el foro. El valor predeterminado es **-**1 (sin límites).
+   Relevante si `Allow Tagging` se marca en la ficha **Configuración** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
+
+* **Límite de sugerencias**
+
+   Escriba el número de etiquetas que se mostrarán como una sugerencia para el miembro que se publica en el foro. El valor predeterminado es **-**1 (sin límites).
 
 #### Ficha Traducción {#translation-tab}
 
-En la **Traducción **ficha, si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir el tema completo o los anuncios seleccionados.
+En la ficha **Traducción** , si la traducción está habilitada para el sitio de la comunidad, la traducción se puede configurar para traducir el tema completo o los anuncios seleccionados.
 
-* **Traducir todo** si está marcado, el hilo del foro se traduce al idioma preferido del usuario. El valor predeterminado no está marcado.
+* **Traducir todos**
+
+   Si se selecciona, el hilo del foro se traduce al idioma preferido del usuario. El valor predeterminado no está marcado.
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
-En la ficha **Ordenar configuración **, especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **Ordenar configuración** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
-* **Ordenar por** Marcar todas las selecciones de clasificación permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. El valor predeterminado es `Newest, Oldest, Last Updated`.
+* **Ordenar por**
 
-* **Configure la opción Desplegable predeterminada** para seleccionar una de las opciones de ordenación seleccionadas para que aparezca como opción predeterminada. El valor predeterminado es `Newest`.
+   Comprobar todas las selecciones de clasificación permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. El valor predeterminado es `Newest, Oldest, Last Updated`.
 
-* **Seleccione Opciones de tiempo para** Desplegar clasificación de Analytics para seleccionar una de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. El valor predeterminado es `All`.
+* **Establecer como predeterminado**
+
+   Despliegue para seleccionar una de las opciones de ordenación seleccionadas para que aparezcan como predeterminadas. El valor predeterminado es `Newest`.
+
+* **Seleccione las opciones de hora para la clasificación de Analytics**
+
+   Despliegue para seleccionar uno de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. El valor predeterminado es `All`.
 
 ### Información adicional {#additional-information}
 
