@@ -1,8 +1,8 @@
 ---
 title: Función de la biblioteca de archivos
 seo-title: Función de la biblioteca de archivos
-description: La función Biblioteca de archivos permite a los visitantes del sitio que inician sesión cargar, administrar y descargar archivos
-seo-description: La función Biblioteca de archivos permite a los visitantes del sitio que inician sesión cargar, administrar y descargar archivos
+description: La función Biblioteca de archivos permite que los visitantes del sitio iniciados en sesión carguen, gestionen y descarguen archivos
+seo-description: La función Biblioteca de archivos permite que los visitantes del sitio iniciados en sesión carguen, gestionen y descarguen archivos
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -22,12 +22,12 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 La función de biblioteca de archivos proporciona un lugar para que los visitantes del sitio que han iniciado sesión (miembros de la comunidad) carguen, gestionen y descarguen archivos dentro del sitio de la comunidad.
 
-Esta sección de la documentación describe
+Esta sección de la documentación describe:
 
-* adición de la función de biblioteca de archivos a un sitio de AEM
-* configuración del `File Library` componente
+* Añadir la función de biblioteca de archivos en un sitio de AEM.
+* Configuración del `File Library` componente.
 
-### Adición de una biblioteca de archivos a una página {#adding-a-file-library-to-a-page}
+### Añadir una biblioteca de archivos en una página {#adding-a-file-library-to-a-page}
 
 Para agregar un `File Library` componente a una página en modo de autor, ubique el componente
 
@@ -49,61 +49,111 @@ Seleccione el componente colocado al que desea acceder y seleccione el `File Lib
 
 #### Ficha Comentarios {#comments-tab}
 
-En la ficha **Comments **tab, especifique si los comentarios de los archivos cargados aparecen y cómo aparecerán:
+En la ficha **Comentarios** , especifique si se mostrarán los comentarios de los archivos cargados y cómo se mostrarán:
 
-* **Permitir comentarios en archivos** Si está activada, permita comentarios en los archivos cargados. El valor predeterminado no está marcado.
+* **Permitir comentarios sobre los archivos**
 
-* **Comentarios por página** Limita el número de comentarios que se muestran por página, así como el número de respuestas que se muestran. El valor predeterminado es **10**.
+   Si está activada, permita comentarios en los archivos cargados. El valor predeterminado no está marcado.
 
-* **Tamaño** máximo del archivoEste valor limitará el tamaño del archivo cargado. El límite predeterminado es 104857600 (10 Mb).
+* **Comentarios por página**
 
-* **Longitud** máxima del mensaje Número máximo de caracteres que se pueden introducir en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
+   Limita el número de comentarios mostrados por página, así como el número de respuestas mostradas. El valor predeterminado es **10**.
 
-* **Tipos** de archivo permitidos Una lista de extensiones de archivo separadas por coma con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
+* **Tamaño máximo de archivo**
 
-* **Editor** de texto enriquecido Si está marcado, los comentarios se pueden introducir con marcado. El valor predeterminado no está marcado.
+   Este valor limitará el tamaño del archivo cargado. El límite predeterminado es 104857600 (10 Mb).
 
-* **Eliminar comentarios** Si se selecciona, los usuarios pueden eliminar sus propios comentarios. El valor predeterminado está marcado.
+* **Longitud máxima del mensaje**
 
-* **Permitir etiquetado** Si se selecciona, se habilitará la capacidad de agregar una etiqueta al archivo. El valor predeterminado no está marcado.
+   Número máximo de caracteres que se pueden introducir en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
 
-* **Espacios** de nombres permitidos Si se selecciona Permitir etiquetado, las etiquetas disponibles se limitarán a los espacios de nombres marcados. Si no se marca ninguna, se permite todo. El valor predeterminado es todos los espacios de nombres.
+* **Tipos de archivo permitidos**
 
-* **Límite** de sugerencias Si se selecciona Permitir etiquetado, esta configuración limita el número de etiquetas sugeridas para mostrar. Si se establece en -1, no hay límite. El valor predeterminado es -1.
+   lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
-* **Permitir voto** Si se selecciona, se habilitará la capacidad de votar para un archivo. El valor predeterminado no está marcado.
+* **Editor de texto enriquecido**
 
-* **Permitir lo siguiente** Si está activado, incluya la siguiente función para los artículos de blog, que permite que se [notifique](/help/communities/notifications.md) a los miembros de los nuevos anuncios. El valor predeterminado no está marcado.
+   Si se selecciona, los comentarios se pueden introducir con marcado. El valor predeterminado no está marcado.
 
-* **Habilitar mención** Si está habilitada, permite que los usuarios registrados de la comunidad identifiquen a otros miembros registrados (con el nombre, apellidos y nombre de usuario) y los etiqueten con la sintaxis común @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
+* **Eliminar comentarios**
 
-* **Menciones** máximasRestringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
+   Si se selecciona, los usuarios pueden eliminar sus propios comentarios. El valor predeterminado está marcado.
 
-* **Patrón** de mención de la interfaz de usuarioEspecifique la cadena de patrón permitida para etiquetar (@mención) al usuario registrado en una publicación. Por ejemplo, ~{{familyName}}{{givenName}}.
+* **Permitir etiquetado**
 
-* **Permitir respuestas por subprocesos** Si está activada, permita respuestas a los comentarios publicados. El valor predeterminado no está marcado.
+   Si se selecciona, se habilitará la capacidad de agregar una etiqueta al archivo. El valor predeterminado no está marcado.
+
+* **Espacios de nombres permitidos**
+
+   Si se selecciona Permitir etiquetado, las etiquetas disponibles se limitarán a las Áreas de nombres seleccionadas. Si no se marca ninguna, se permite todo. El valor predeterminado es todas las Áreas de nombres.
+
+* **Límite de sugerencias**
+
+   Si la opción Permitir etiquetado está activada, esta opción limita el número de etiquetas sugeridas para mostrar. Si se establece en -1, no hay límite. El valor predeterminado es -1.
+
+* **Habilitar la votación**
+
+   Si se selecciona, se habilitará la capacidad de votar por un archivo. El valor predeterminado no está marcado.
+
+* **Permitir seguimiento**
+
+   Si está activada, incluya la siguiente función para los artículos de blog, que permite que se [notifique](/help/communities/notifications.md) a los miembros de los nuevos anuncios. El valor predeterminado no está marcado.
+
+* **Habilitar la mención**
+
+   Si está habilitada, permite que los usuarios registrados de la comunidad identifiquen a otros miembros registrados (con el nombre, apellidos y nombre de usuario) y los etiqueten con la sintaxis común @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
+
+* **Menciones máximas**
+
+   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
+
+* **Patrón de menciones en la interfaz de usuario**
+
+   Especifique la cadena de patrón permitida para etiquetar (@mención) al usuario registrado en una publicación. Por ejemplo, ~{{familyName}}{{givenName}}.
+
+* **Permitir respuestas de debate**
+
+   Si está activada, permita respuestas a los comentarios publicados. El valor predeterminado no está marcado.
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
 En la ficha Moderación **** del usuario, configure la moderación de los comentarios si se permiten los comentarios:
 
-* **Premoderación** Si está activada, los comentarios deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está marcado.
+* **Moderación previa**
 
-* **Eliminar comentarios** Si se selecciona, el visitante que publicó el comentario puede eliminarlo. El valor predeterminado está marcado.
+   Si se selecciona, los comentarios deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está marcado.
 
-* **Denegar comentarios** Si se selecciona, permita que los moderadores de miembros de confianza rechacen los comentarios. El valor predeterminado no está marcado.
+* **Eliminar comentarios**
 
-* **Cerrar/volver a abrir Comentarios** Si está activado, permita que los moderadores de miembros de confianza cierren y vuelvan a abrir los comentarios. El valor predeterminado no está marcado.
+   Si se selecciona, el visitante que publicó el comentario puede eliminarlo. El valor predeterminado está marcado.
 
-* **Marcar comentarios** Si se selecciona, permita a los visitantes marcar los comentarios como inapropiados. El valor predeterminado no está marcado.
+* **Denegar comentarios**
 
-* **Indicar lista** de motivos Si está activada, permita que los visitantes elijan, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está marcado.
+   Si está activada, permita que los moderadores de miembros de confianza rechacen los comentarios. El valor predeterminado no está marcado.
 
-* **Razón** de marca personalizada Si se selecciona, permita que los visitantes introduzcan su propio motivo para marcar un comentario como inapropiado. El valor predeterminado no está marcado.
+* **Cerrar/abrir de nuevo los comentarios**
 
-* **Umbral** de moderaciónEspecifique el número de veces que los visitantes deben marcar un comentario antes de que se notifique a los moderadores. El valor predeterminado es una vez (**1**).
+   Si está activada, permita que los moderadores de miembros de confianza cierren y vuelvan a abrir comentarios. El valor predeterminado no está marcado.
 
-* **Límite** de marcado Escriba el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser mayor o igual que el umbral **de moderación**. El valor predeterminado es 5.
+* **Marcar comentarios**
+
+   Si se selecciona, permita que los visitantes marquen los comentarios como inapropiados. El valor predeterminado no está marcado.
+
+* **Lista de motivos de indicación**
+
+   Si se selecciona, permita que los visitantes elijan, desde una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está marcado.
+
+* **Motivo de indicación personalizado**
+
+   Si se selecciona, permita que los visitantes especifiquen su propio motivo para marcar un comentario como inapropiado. El valor predeterminado no está marcado.
+
+* **Umbral de moderación**
+
+   Escriba el número de veces que los visitantes deben marcar un comentario antes de que se notifique a los moderadores. El valor predeterminado es una vez (**1**).
+
+* **Límite de indicación**
+
+   Especifique el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al umbral **de moderación**. El valor predeterminado es 5.
 
 ### Ficha Ordenar configuración {#sort-settings-tab}
 
