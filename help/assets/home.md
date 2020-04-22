@@ -1,17 +1,17 @@
 ---
 title: Guía del usuario de AEM 6.5 Assets
 seo-title: Guía del usuario de AEM 6.5 Assets
-description: Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión, entrega y optimización de recursos digitales.
+description: Esta guía cubre todas las tareas de Recursos AEM, como la creación, gestión, entrega y optimización de recursos digitales.
 seo-description: Abarca todas las tareas de Recursos AEM, como la creación, gestión, entrega y optimización de recursos digitales.
 translation-type: tm+mt
-source-git-commit: b90343874d5afd9858d8a6d82828eabdfa1d3ccd
+source-git-commit: 5ac60acb5869d261f8d25c69ce89a24384a1f699
 
 ---
 
 
 # Guía del usuario de AEM 6.5 Assets
 
-Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión, entrega y optimización de recursos digitales.
+Esta guía cubre todas las tareas de Recursos AEM, como la creación, gestión, entrega y optimización de recursos digitales.
 
 ## Artículos clave de AEM
 
@@ -25,17 +25,17 @@ Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión,
 | Guía del usuario | Descripción |
 |--- |---|
 | [Notas de la versión](/help/release-notes/home.md) | Proporciona información importante sobre la última versión de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas y los problemas conocidos |
-| [Guía del usuario de formularios](/help/forms/home.md) | En esta guía se describe cómo crear, administrar, publicar y actualizar formularios digitales. |
-| [Guía del usuario de comunidades](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
+| [Guía del usuario de [!DNL Forms]](/help/forms/home.md) | En esta guía se describe cómo crear, administrar, publicar y actualizar formularios digitales. |
+| [Guía del usuario de [!DNL Communities]](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en AEM. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación en AEM en la interfaz de usuario clásica. |
-| [Guía del usuario de Pantallas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario de [!DNL Screens]](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario de implementación](/help/sites-deploying/home.md) | Esta guía le muestra los conceptos básicos de AEM. |
 | [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Descubra cómo crear su instancia de AEM. |
 | [Administración de la guía del usuario](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario móvil](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
+| [AEM [!DNL Livefyre]](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con [!DNL Livefyre]. |
 
 ## Recursos clave de AEM
 
@@ -44,6 +44,6 @@ Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión,
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Foro de la comunidad de AEM Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guía del usuario de Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [Guía del usuario de HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guía del usuario de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
+* [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
+* [DNL Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
