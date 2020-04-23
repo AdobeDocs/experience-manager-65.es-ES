@@ -1,6 +1,6 @@
 ---
-title: Exportar a CSV
-seo-title: Exportar a CSV
+title: 'Exportar a CSV  '
+seo-title: 'Exportar a CSV  '
 description: Permite exportar información sobre las páginas a un archivo CSV en el sistema local
 seo-description: Permite exportar información sobre las páginas a un archivo CSV en el sistema local
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
 
 ---
 
 
-# Exportar a CSV{#export-to-csv}
+# Exportar a CSV  {#export-to-csv}
 
 **Al crear un informe de CSV** puede exportar información sobre las páginas a un archivo CSV en el sistema local.
 
@@ -51,7 +51,7 @@ El asistente para **crear exportaciones de CSV** permite seleccionar lo siguient
 
 El archivo `export.csv` resultante se puede abrir en Excel o en cualquier otra aplicación compatible.
 
-![]() ![etc-01](assets/etc-01.png)
+![etc-01](assets/etc-01.png)
 
 The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
 
@@ -60,7 +60,7 @@ The create **CSV Report** option is available when browsing the **Sites** consol
 Para crear una exportación de CSV: 
 
 1. Abra la consola **Sitios** y vaya hasta la ubicación deseada.
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. Para abrir el asistente, en la barra de herramientas seleccione **Crear** y, a continuación, **Informe de CSV**:
 
    ![etc-03](assets/etc-03.png)
 
