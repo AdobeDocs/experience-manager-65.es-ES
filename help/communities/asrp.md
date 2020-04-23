@@ -1,6 +1,6 @@
 ---
-title: ASRP - Proveedor de recursos de almacenamiento de Adobe
-seo-title: ASRP - Proveedor de recursos de almacenamiento de Adobe
+title: ASRP - Proveedor de recursos de Almacenamiento de Adobe
+seo-title: ASRP - Proveedor de recursos de Almacenamiento de Adobe
 description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
 seo-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
 uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# ASRP - Proveedor de recursos de almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP - Proveedor de recursos de Almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Acerca de ASRP {#about-asrp}
 
@@ -35,17 +35,17 @@ Para configurar el sitio de comunidades de AEM para que utilice ASRP para UGC, p
 * Clave secreta
 * ID del grupo de informes
 
-Las claves de consumidor y clave secreta se comparten en todos los grupos de informes de una empresa. Hay un grupo de informes por inquilino.
+Las claves de consumidor y clave secreta se comparten en todos los grupos de informes de una compañía. Hay un grupo de informes por inquilino.
 
 ## Configuración {#configuration}
 
 ### Seleccionar ASRP {#select-asrp}
 
-La consola [Configuración](/help/communities/srp-config.md) de almacenamiento permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
+La consola [Configuración de](/help/communities/srp-config.md) Almacenamiento permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
 
 **En la instancia de AEM Author:**
 
-* En la navegación global, vaya a Herramientas de control **[UIC > Comunidades > Configuración]** de almacenamiento y seleccione **[Control de usuarios de Adobe Storage Resource Provider (ASRP)]**.
+* En la navegación global, vaya a **[!UICONTROL Herramientas > Comunidades > Configuración]** de Almacenamiento y seleccione Proveedor de recursos de Almacenamiento de **[!UICONTROL Adobe (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -53,7 +53,7 @@ La siguiente información proviene del proceso de aprovisionamiento:
 
 * **Dirección URL** del centro de datos: Despliegue para seleccionar el centro de datos de producción identificado por el representante de cuentas.
 * **Grupo** de informes predeterminado: Escriba el nombre del grupo de informes predeterminado.
-* **Clave** de consumidor: Introduzca la clave de consumidor.
+* **Clave del cliente**: Introduzca la clave del cliente.
 * **Secreto**: Escribe el secreto.
 * Seleccione **Enviar**.
 
@@ -66,19 +66,19 @@ Después de enviar la configuración, pruebe la conexión:
 
 * Seleccione **Probar configuración**.
 
-   Para cada instancia de creación y publicación, pruebe la conexión al centro de datos desde la consola de configuración de almacenamiento.
+   Para cada instancia de creación y publicación, pruebe la conexión al centro de datos desde la consola de configuración de Almacenamiento.
 
 * Asegúrese de que las direcciones URL del sitio para los datos de perfil se pueden enrutar desde el centro de datos [externalizando los vínculos](#externalize-links).
 
 ### Replicar la clave de cifrado {#replicate-the-crypto-key}
 
-La clave de consumidor y la clave secreta están cifradas. Para que las claves se cifren o descifren correctamente, la clave de cifrado de granito principal debe ser la misma en todas las instancias de AEM.
+La Clave del cliente y la clave secreta están cifradas. Para que las claves se cifren o descifren correctamente, la clave de cifrado de granito principal debe ser la misma en todas las instancias de AEM.
 
 Siga las instrucciones de [Replicar la clave](/help/communities/deploy-communities.md#replicate-the-crypto-key)de cifrado.
 
 ### Externalizar vínculos {#externalize-links}
 
-Para que los vínculos de perfil y de imagen de perfil sean correctos, asegúrese de [configurar correctamente el Externalizador](/help/sites-developing/externalizer.md)de vínculos.
+Para los vínculos de imagen de perfil y perfil correctos, asegúrese de [configurar correctamente el Externalizador](/help/sites-developing/externalizer.md)de vínculos.
 
 Asegúrese de establecer los dominios como direcciones URL que se pueden enrutar desde la dirección URL del centro de datos (extremo ASRP).
 
@@ -94,9 +94,9 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 
 En la instancia de AEM Author:
 
-* Vaya del menú principal a Herramientas de control **[UIC > Operaciones > Replicación]**.
+* Vaya del menú principal a **[!UICONTROL Herramientas > Operaciones > Replicación]**.
 * Seleccione **Activar árbol**
-* **Ruta** de inicio: buscar `/etc/socialconfig/srpc/`
+* **Ruta** de Inicio: buscar `/etc/socialconfig/srpc/`
 * Anular selección de **sólo modificado**
 * Seleccionar **activar**
 
@@ -108,11 +108,11 @@ En la instancia de AEM Author:
 
 **`AEM Communities Extension`** anteriormente se introdujo en las comunidades sociales de AEM 6.0 como un servicio en la nube. A partir de AEM 6.1 Communities, no es necesaria ninguna configuración de nube, simplemente seleccione ASRP en la consola [de configuración de](/help/communities/srp-config.md)almacenamiento.
 
-Debido a la nueva estructura de almacenamiento, es necesario seguir las instrucciones de [actualización](/help/communities/upgrade.md#adobe-cloud-storage) al actualizar de comunidades sociales a comunidades.
+Debido a la nueva estructura de almacenamientos, es necesario seguir las instrucciones de [actualización](/help/communities/upgrade.md#adobe-cloud-storage) al pasar de las comunidades sociales a las comunidades.
 
 ## Administración de datos de usuario {#managing-user-data}
 
-Para obtener información sobre *usuarios*, perfiles *de* usuario y grupos *de* usuarios, que a menudo se introducen en el entorno de publicación, visite
+Para obtener información sobre *usuarios*, perfiles *de* usuarios y grupos *de* usuarios, que se especifican a menudo en el entorno de publicación, visite
 
 * [Sincronización de usuarios](/help/communities/sync.md)
 * [Administración de usuarios y grupos de usuarios](/help/communities/users.md)
@@ -131,15 +131,15 @@ Utilice una herramienta como el Protocolo de tiempo de [red (NTP)](https://www.n
 
 ### El nuevo contenido no aparece en las búsquedas {#new-content-does-not-appear-in-searches}
 
-La infraestructura de almacenamiento en la nube de Adobe utiliza la consistencia ** final para lograr sus objetivos de escalabilidad y rendimiento. Por este motivo, el nuevo contenido no está disponible al instante y tarda varios segundos en aparecer en los resultados de búsqueda.
+La infraestructura de almacenamiento en la nube de Adobe utiliza *la coherencia* para lograr sus objetivos de rendimiento y escala. Por este motivo, el nuevo contenido no está disponible al instante y tarda varios segundos en aparecer en los resultados de búsqueda.
 
 Mientras se supervisa el intervalo que afecta a la coherencia final, póngase en contacto con el representante de la cuenta si el contenido nuevo tarda más de unos segundos en aparecer en las búsquedas.
 
 ### UGC no visible en ASRP {#ugc-not-visible-in-asrp}
 
-Asegúrese de que el ASRP se haya configurado para ser el proveedor predeterminado mediante la comprobación de la configuración de la opción de almacenamiento. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP, no ASRP.
+Asegúrese de que el ASRP se haya configurado para que sea el proveedor predeterminado mediante la comprobación de la configuración de la opción de almacenamiento. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP, no ASRP.
 
-En todas las instancias de AEM de creación y publicación, vuelva a la consola de configuración de almacenamiento o compruebe el repositorio de AEM.
+En todas las instancias de AEM de creación y publicación, vuelva a la consola de configuración de Almacenamiento o compruebe el repositorio de AEM.
 
 En JCR, si [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
