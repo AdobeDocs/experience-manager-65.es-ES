@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
@@ -29,22 +29,22 @@ Con la consola Miembros, un administrador de comunidad puede eliminar de forma p
 
 ## Configuración de límites de contribución de contenido generado por usuarios de AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-Esta configuración OSGi
+Esta configuración OSGi:
 
-* Define las características de los límites de contribución (número de puestos dentro de un período de tiempo)
-* Identifica a quién puede enviar un mensaje el miembro cuando se alcance el límite
-* Identifica los dominios que nunca deben restringirse
+* Define las características de los límites de contribución (número de puestos dentro de un período de tiempo).
+* Identifica a quién puede enviar un mensaje el miembro cuando se alcance el límite.
+* Identifica los dominios que nunca deben restringirse.
 
 Para alcanzar esta configuración OSGi:
 
-* En el editor principal
-* Iniciar sesión con privilegios de administrador
-* Acceso a la consola [web](../../help/sites-deploying/configuring-osgi.md)
+* En el editor principal:
+* Inicie sesión con privilegios de administrador.
+* Acceda a la consola [web](../../help/sites-deploying/configuring-osgi.md).
 
    * Por ejemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localizar `AEM Communities User Generated Content Contribution Limits Configuration`
-* Seleccione el icono de edición
+* Localizar `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Seleccione el icono de edición.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -68,7 +68,7 @@ Para alcanzar esta configuración OSGi:
 
 * **[!UICONTROL Dominios]**
 
-   Lista blanca de uno o varios dominios de correo electrónico. Seleccione el icono + para realizar entradas adicionales.
+   lista blanca de uno o varios dominios de correo electrónico. Seleccione el icono + para realizar entradas adicionales.
 
    Los usuarios con direcciones de correo electrónico en los dominios de la lista blanca no se ven afectados cuando se aplican automáticamente los límites de contribución UGC. Por ejemplo, si `mycompany.com` se agrega un dominio a la lista de dominios, nunca se restringirá la publicación de un miembro con dirección de correo electrónico `me@mycompany.com` .
 
