@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
 
-# Introducción a Comunidades de AEM{#getting-started-with-aem-communities}
+# Introducción a Comunidades de AEM {#getting-started-with-aem-communities}
 
-Las comunidades AEM permiten a las empresas crear experiencias de comunidad con marca específicas a partir de una biblioteca de plantillas de sitio. Los foros, grupos, blogs, el uso compartido de archivos, calendarios, fuentes de actividad y perfiles de usuario ampliados se pueden integrar en el sitio web para fomentar las interacciones entre posibles clientes y empresas.
+Las comunidades AEM permiten a las compañías crear experiencias de comunidad con marca exclusiva a partir de una biblioteca de plantillas de sitio. Los foros, grupos, blogs, el uso compartido de archivos, calendarios, fuentes de actividad y perfiles de usuarios ampliados se pueden integrar en el sitio web para fomentar las interacciones entre posibles clientes y compañías.
 
 A continuación se muestra un tutorial sobre la configuración rápida de una comunidad [de](/help/communities/overview.md#engagement-community) participación con fines de demostración o desarrollo.
 
