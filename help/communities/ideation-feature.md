@@ -1,8 +1,8 @@
 ---
 title: Función de la idea
 seo-title: Función de la idea
-description: Adición y configuración de la función Ideación
-seo-description: Adición y configuración de la función Ideación
+description: Añadir y configurar la función Ideación
+seo-description: Añadir y configurar la función Ideación
 uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,26 +11,26 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Función de la idea{#ideation-feature}
+# Función de la idea {#ideation-feature}
 
 ## Introducción {#introduction}
 
-La función de ideación proporciona un área para que los visitantes del sitio que han iniciado sesión (miembros de la comunidad) en el entorno de publicación puedan:
+La función de ideación proporciona un área para los visitantes del sitio con sesión iniciada (miembros de la comunidad) en el entorno de publicación para:
 
-* crear ideas para compartir con la comunidad
-* ver y comentar ideas
-* seguir una idea
-* votación de una idea
+* Cree ideas para compartir con la comunidad.
+* Vista y comentarios sobre ideas.
+* Sigue una idea.
+* Votar sobre una idea.
 
-Esta sección de la documentación describe
+Esta sección de la documentación describe:
 
-* adición de la función de ideación a un sitio de AEM
-* configuración del componente Ideación
+* Añadir la función de ideación en un sitio de AEM.
+* Configuración del componente Ideación.
 
 ### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
 
@@ -42,7 +42,7 @@ y arrástrelo a su lugar en una página donde debería aparecer la idea.
 
 Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/ideation.md#essentials-for-client-side) necesarias, así es como aparecerá el `Ideation`componente:
+Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/ideation.md#essentials-for-client-side) necesarias, así es como aparecerá el `Ideation` componente:
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -54,7 +54,7 @@ Seleccione el componente colocado al que desea acceder y seleccione el `Ideation
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **Configuración **, especifique la configuración de las ideas y los comentarios :
+En la ficha **[!UICONTROL Configuración]** , especifique la configuración de las ideas y los comentarios:
 
 * **Permitir la miniatura del archivo adjunto**
 * **Tamaño máximo de la miniatura del archivo adjunto**
@@ -100,11 +100,11 @@ En la ficha **Configuración **, especifique la configuración de las ideas y lo
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Una lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152*** **(2 Mb).
+   Solo es relevante si está activada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
 
 * **Permitir respuestas**
 
@@ -146,7 +146,7 @@ En la ficha **Configuración **, especifique la configuración de las ideas y lo
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha **Moderación del usuario **, especifique cómo se administran las ideas y los comentarios publicados (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+En la ficha Moderación **** del usuario, especifique cómo se administran las ideas y los comentarios publicados (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
 
 * **Denegar entradas**
 
@@ -162,7 +162,7 @@ En la ficha **Moderación del usuario **, especifique cómo se administran las i
 
 * **Lista de motivos de indicación**
 
-   Si se selecciona, permita que los miembros elijan, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
+   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
 
 * **Motivo de indicación personalizado**
 
@@ -174,23 +174,23 @@ En la ficha **Moderación del usuario **, especifique cómo se administran las i
 
 * **Límite de indicación**
 
-   Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo en la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta en la vista pública. De lo contrario, este número debe ser mayor o igual que el umbral de moderación. El valor predeterminado es 5.
+   Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo en la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta en la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
-En la ficha Campo **** Etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración **ficha, están limitadas según los espacios de nombres elegidos.
+En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **[!UICONTROL Configuración]** , están limitadas según las Áreas de nombres elegidas.
 
 * **Espacios de nombres permitidos**
 
-   Relevante si `Allow Tagging` se marca en la ficha **Configuración** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de espacio de nombres seleccionadas. La lista de espacios de nombres incluye &quot;Etiquetas estándar&quot; (el espacio de nombres predeterminado) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todos los espacios de nombres.
+   Relevante si `Allow Tagging` se marca en la ficha **[!UICONTROL Configuración]** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
 
 * **Límite de sugerencias**
 
-   Escriba el número de etiquetas que se mostrarán como una sugerencia para el miembro que se publica en el foro. Un valor de **-**1 significa que no hay límite. El valor predeterminado es 0.
+   Escriba el número de etiquetas que se mostrarán como una sugerencia para el miembro que se publica en el foro. Un valor de **-1** significa que no hay límite. El valor predeterminado es 0.
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
-En la ficha **Ordenar configuración **, especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **[!UICONTROL Ordenar configuración]** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **Ordenar por**
 
@@ -204,11 +204,11 @@ En la ficha **Ordenar configuración **, especifique cómo se ordenan los coment
 
    Despliegue para seleccionar uno de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. El valor predeterminado es `All`.
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
 ### Creación de ideas {#creating-idea}
 
-Al igual que con todas las funciones de Comunidades, si no se ha iniciado sesión, el visitante del sitio solo puede leer ideas y ver otras opiniones (mediante comentarios y votaciones/preferencias).
+Al igual que con todas las características de las Comunidades, si no se ha iniciado sesión, un visitante del sitio solo puede leer ideas y vista otras opiniones (a través de comentarios y votaciones/preferencias).
 
 Una vez que haya iniciado sesión, un miembro puede crear una nueva idea.
 
@@ -226,7 +226,7 @@ Cuando visualice borradores guardados en la `My Drafts` ficha, seleccione `Read 
 
 #### Proporcionar comentarios {#providing-feedback}
 
-Una vez publicada la idea, otros miembros pueden iniciar sesión, abrir la idea ( `Read More`) y darle &quot;me gusta&quot;, añadiendo así al recuento de votos, y hacer comentarios.
+Una vez publicada la idea, otros miembros pueden iniciar sesión, abrir la idea ( `Read More`) y darle gusto, añadiendo así al recuento de votos, y hacer comentarios.
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
