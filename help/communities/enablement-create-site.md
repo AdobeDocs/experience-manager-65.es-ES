@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -27,7 +27,7 @@ Para empezar a crear un nuevo sitio de comunidad:
 Uso de la instancia de [autor](https://localhost:4502/)
 
 * Inicio de sesión con privilegios de administrador
-* Vaya a Comunidades de control **[UIC > Sitios]**
+* Vaya a **[!UICONTROL Comunidades > Sitios]**
 
 * Seleccione **Crear**
 
@@ -80,12 +80,12 @@ En el paso Configuración, antes de seleccionar `Next`, fíjese en que hay siete
 
 Se recomienda que las comunidades [de](/help/communities/overview.md#enablement-community) habilitación sean privadas.
 
-Un sitio de comunidad es privado cuando se deniega el acceso a los visitantes anónimos del sitio, es posible que no se registre por sí mismo y que no utilice el inicio de sesión en redes sociales.
+Un sitio de la comunidad es privado cuando se deniega el acceso a los visitantes anónimos del sitio, es posible que no se registre por sí mismo y que no utilice el inicio de sesión en redes sociales.
 
 Asegúrese de que la mayoría de las casillas de verificación no están seleccionadas para Administración [de usuarios](/help/communities/sites-console.md#user-management) :
 
 * NO permitir que los visitantes del sitio se automatriculen
-* NO permitir que los visitantes anónimos del sitio vean el sitio
+* NO permitir que visitantes anónimos del sitio realicen vistas en el sitio
 * Opcional si se permite o no la mensajería entre los miembros de la comunidad
 * NO permitir el inicio de sesión con Facebook
 * NO permitir el inicio de sesión con Twitter
@@ -94,11 +94,11 @@ Asegúrese de que la mayoría de las casillas de verificación no están selecci
 
 #### TAGGING {#tagging}
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando los espacios de nombres de AEM definidos previamente mediante la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como el espacio de nombres [Tutorial](/help/communities/enablement-setup.md#create-tutorial-tags)).
+Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando Áreas de nombres de AEM previamente definidas a través de la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](/help/communities/enablement-setup.md#create-tutorial-tags)Tutorial).
 
-Además, si se seleccionan Espacios de nombres de etiquetas para el sitio de la comunidad, se limita la selección presentada al definir los catálogos y los recursos de habilitación. Consulte [Etiquetado de recursos](/help/communities/tag-resources.md) de habilitación para obtener información importante.
+Además, la selección de Áreas de nombres de etiquetas para el sitio de la comunidad limita la selección presentada al definir los catálogos y los recursos de habilitación. Consulte [Etiquetado de recursos](/help/communities/tag-resources.md) de habilitación para obtener información importante.
 
-La búsqueda de espacios de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
+La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
 
 * Tipo `tut`
 * Seleccione `Tutorial`
@@ -154,7 +154,7 @@ Para una comunidad de habilitación, es necesario identificar uno o varios admin
    * Tipo `s`
    * Seleccione `Sirius Nilson`
 
-* **ID** de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) en los informes de habilitación.
+* **ID** de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) en el sistema de informes de activación.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -237,7 +237,7 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 * Vaya a la consola **Comunidades y grupos**
 * Seleccionar grupo de miembros de activación *de comunidad*
-* Escriba &#39;ski&#39; en el cuadro de búsqueda **Agregar miembros al grupo**
+* Escriba &#39;ski&#39; en el cuadro de búsqueda **Añadir miembros al grupo**
 * Seleccionar clase *de esquí de* comunidad (grupo de alumnos)
 * Escriba &#39;quinn&#39; en el cuadro de búsqueda
 * Seleccionar *Quinn Harper* (contacto de recursos de habilitación)
@@ -256,13 +256,13 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](/help/communities/sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación volverá a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
-Agregar un `Login Page Mapping` como
+Añadir un `Login Page Mapping` como
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
-### (Opcional) Cambiar la página principal predeterminada {#optional-change-the-default-home-page}
+### (Opcional) Cambiar la Página de inicio predeterminada {#optional-change-the-default-home-page}
 
-Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página principal predeterminada al nuevo sitio.
+Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página de inicio predeterminada al nuevo sitio.
 
 Para ello, es necesario utilizar [CRX|DE](https://localhost:4503/crx/de) Lite para editar la tabla de asignación [de](/help/sites-deploying/resource-mapping.md) recursos al realizar la publicación.
 
@@ -285,14 +285,14 @@ Para empezar
 
 1. Con el nodo recién creado `localhost.4503` seleccionado
 
-   * Agregar propiedad
+   * Añadir propiedad
 
       * **Nombre** sling:match
       * **Cadena de tipo**
       * **Valor** localhost.4503/$
    (debe terminar con &#39;$&#39; char)
 
-   * Agregar propiedad
+   * Añadir propiedad
 
       * **Nombre** sling:internalRedirect
       * **Cadena de tipo**
@@ -313,13 +313,13 @@ Para empezar
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
-Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador &#39;punto&#39; y no `localhost:4503` con un separador &#39;dos puntos&#39;, ya que no `localhost` es un prefijo de espacio de nombres válido.
+Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador de &#39;puntos&#39; y no `localhost:4503` con un separador de &#39;dos puntos&#39;, ya que no `localhost` es un prefijo de Área de nombres válido.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
-El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión regular es crucial, por lo que solo `https://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
+El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión normal es crucial, por lo que solo `https://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
 
 ## Modificación del sitio de comunidad {#modifying-the-community-site}
 
@@ -331,9 +331,9 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](/help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre la gestión [](/help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
-### Agregar un catálogo {#add-a-catalog}
+### Añadir un catálogo {#add-a-catalog}
 
 La plantilla de sitio de comunidad elegida para este sitio de comunidad debe contener la función de catálogo.
 
@@ -349,7 +349,7 @@ Seleccione el panel ESTRUCTURA para añadir un catálogo o modificar uno existen
 
 * **URL**: `catalog`
 
-* **Seleccionar todos los espacios** de nombres: dejar como predeterminado.
+* **Seleccionar todas las Áreas de nombres**: dejar como predeterminado.
 * select **Save**
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
