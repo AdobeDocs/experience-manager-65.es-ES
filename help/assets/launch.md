@@ -1,5 +1,5 @@
 ---
-title: Integración de visores de Dynamic Media con Adobe Analytics y Adobe Launch
+title: Integrar visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch
 description: La extensión de visores de Dynamic Media para Adobe Launch, junto con la versión 5.13 de visores de Dynamic Media, permite a los clientes de Dynamic Media, Adobe Analytics y Adobe Launch utilizar eventos y datos específicos para los visores de Dynamic Media en su configuración de Adobe Launch.
 uuid: d218ee1c-cd2c-40c3-a3d4-b95719ae8e98
 contentOwner: Rick Brough
@@ -9,12 +9,12 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e8f97f6164a5021609917b99feb0608bcea59553
 
 ---
 
 
-# Integración de visores de Dynamic Media con Adobe Analytics y Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrar visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## ¿Qué es la integración de los visores de medios dinámicos con Adobe Analytics y Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -22,9 +22,9 @@ The new *Dynamic Media Viewers* extension for Adobe Launch, along with the recen
 
 Esta integración significa que puede realizar el seguimiento del uso de los visores de medios dinámicos en su sitio web con Adobe Analytics. Al mismo tiempo, puede utilizar los eventos y datos expuestos por los visores con cualquier otra extensión de Launch que provenga de Adobe o de un tercero.
 
-Consulte [Adobe Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/overview.html) en la Guía del usuario de inicio de la plataforma de experiencia para obtener más información sobre las extensiones.
+Consulte [Adobe Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/overview.html) en la Guía del usuario de Experience Platform Launch para obtener más información sobre las extensiones.
 
-**** Quién debe leer esta documentación: Administradores de sitio, desarrolladores de la plataforma AEM y los de Operaciones.
+**Quién debe leer esta documentación:** Administradores de sitio, desarrolladores de la plataforma AEM y los integrantes del equipo de Operaciones.
 
 ### Limitaciones de la integración {#limitations-of-the-integration}
 
@@ -32,7 +32,7 @@ Consulte [Adobe Extension](https://docs.adobe.com/content/help/en/launch/using/e
 * La integración de Adobe Launch para visores de medios dinámicos no se admite en el modo de operación &quot;emergente&quot;, donde la URL del visor se obtiene mediante el botón &quot;URL&quot; de la página Detalles del recurso.
 * La integración de Adobe Launch no se puede utilizar de forma simultánea con la integración de Analytics de visores heredados (a través del `config2=` parámetro ).
 * La compatibilidad con el seguimiento de vídeo está limitada al seguimiento de reproducción principal únicamente, tal como se describe en Información general [de seguimiento](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). En concreto, no se admite el seguimiento de QoS, anuncios, capítulos/segmentos o errores.
-* La configuración de duración del almacenamiento para elementos de datos no es compatible con elementos de datos mediante la extensión Visores *de medios* dinámicos. La duración del almacenamiento debe establecerse en **[!UICONTROL Ninguno]**.
+* La configuración de duración de Almacenamiento para elementos de datos no es compatible con elementos de datos mediante la extensión Visores *de medios* dinámicos. La duración del Almacenamiento debe establecerse en **[!UICONTROL Ninguno]**.
 
 ### Casos de uso para la integración {#use-cases-for-the-integration}
 
@@ -58,7 +58,7 @@ En Adobe Launch, los conceptos de Elementos *de* datos y *Reglas* funcionan junt
 
 Un elemento de datos en Adobe Launch es una propiedad con nombre cuyo valor se define de forma estática o se calcula de forma dinámica en función del estado de una página web o de los datos de los visores de Dynamic Media.
 
-Las opciones disponibles para una definición de elemento de datos dependen de la lista de extensiones instaladas en la propiedad Adobe Launch. La extensión &quot;Core&quot; está preinstalada y está disponible de forma predeterminada en cualquier configuración. Esta extensión &quot;Core&quot; permite definir un elemento de datos que proviene de una cookie, código JavaScript, cadena de consulta y muchas otras fuentes.
+Las opciones disponibles para una definición de elemento de datos dependen de la lista de extensiones instaladas en la propiedad Adobe Launch. La extensión &quot;Core&quot; está preinstalada y está disponible de forma predeterminada en cualquier configuración. Esta extensión &quot;Core&quot; permite definir un elemento de datos cuyo valor proviene de una cookie, código JavaScript, cadena de consulta y muchas otras fuentes.
 
 Para realizar el seguimiento de Adobe Analytics es necesario instalar varias extensiones adicionales, tal como se describe en [Instalación y configuración de extensiones](#installing-and-setup-of-extensions). La extensión de visores de medios dinámicos permite definir un elemento de datos que es un argumento del evento de visor dinámico. Por ejemplo, es posible hacer referencia al tipo de visor, o al nombre del recurso que el visor ha informado al cargar, al nivel de zoom que se registra cuando el usuario final amplía y mucho más.
 
@@ -66,33 +66,33 @@ La extensión del visor de Dynamic Media mantiene los valores de sus elementos d
 
 Después de definirlo, se puede utilizar un elemento de datos en otros lugares de la interfaz de usuario de Adobe Launch mediante el widget de selector de elementos de datos. En concreto, la acción Definir variables de la extensión Adobe Analytics en Regla hará referencia a los elementos de datos definidos para el seguimiento de los visores de medios dinámicos (consulte a continuación).
 
-Consulte Elementos [de](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html) datos en la Guía del usuario de inicio de la plataforma de experiencia para obtener más información.
+Consulte Elementos [](https://docs.adobe.com/content/help/es-ES/launch/using/reference/manage-resources/data-elements.html) de datos en la Guía del usuario del Experience Platform Launch para obtener más información.
 
 #### Acerca de las reglas en Adobe Launch {#about-rules-in-adobe-launch}
 
 Una regla en Adobe Launch es una configuración agnóstica que define tres áreas que conforman una regla: *Eventos*, *condiciones* y *acciones*:
 
-* *Los eventos* (si) indican a Adobe Launch cuándo activar una regla.
+* *Los Eventos* (si es) indican a Adobe Launch cuándo activar una regla.
 * *Las condiciones* (si es) indican a Adobe Launch qué restricciones adicionales se permiten o no al activar una regla.
 * *Las acciones* (entonces) indican a Adobe Launch qué hacer cuando se activa una regla.
 
-Las opciones disponibles en la sección Eventos, condiciones y acciones dependen de las extensiones instaladas en la propiedad Adobe Launch. La extensión *Core* está preinstalada y está disponible de forma predeterminada en cualquier configuración. La extensión proporciona varias opciones para Eventos, como acciones básicas a nivel de explorador que incluyen cambios de enfoque, pulsaciones clave, envíos de formularios, etc. También incluye opciones para Condiciones, como el valor de la cookie, el tipo de explorador y mucho más. Para Acciones, solo está disponible la opción Código personalizado.
+Las opciones disponibles en la sección Eventos, condiciones y acciones dependen de las extensiones instaladas en la propiedad Adobe Launch. La extensión *Core* está preinstalada y está disponible de forma predeterminada en cualquier configuración. La extensión proporciona varias opciones para Eventos, como acciones básicas a nivel de explorador que incluyen cambios de enfoque, pulsaciones de teclas, envíos de formularios, etc. También incluye opciones para Condiciones, como el valor de la cookie, el tipo de explorador y mucho más. Para Acciones, solo está disponible la opción Código personalizado.
 
 Para el seguimiento de Adobe Analytics, se deben instalar varias extensiones adicionales, tal como se describe en [Instalación y configuración de extensiones](#installing-and-setup-of-extensions). Específicamente:
 
-* La extensión de los visores de medios dinámicos amplía la lista de eventos admitidos a los eventos específicos de los visores de medios dinámicos, como la carga del visor, el intercambio de recursos, el zoom y la reproducción de vídeo.
+* La extensión de visores de medios dinámicos amplía la lista de Eventos admitidos a eventos específicos de visores de medios dinámicos, como la carga del visor, el intercambio de recursos, el zoom y la reproducción de vídeo.
 * La extensión Adobe Analytics amplía la lista de acciones admitidas con dos acciones necesarias para enviar datos a los servidores de seguimiento: *Configure las variables* y *envíe la señalización*.
 
 Para rastrear los visores de Dynamic Media es posible utilizar cualquiera de los siguientes tipos:
 
-* Eventos de la extensión de visores de Dynamic Media, la extensión Core o cualquier otra extensión.
+* Eventos de la extensión de visores de medios dinámicos, la extensión Core o cualquier otra extensión.
 * Condiciones de la definición de regla. O bien, puede dejar el área de condiciones vacío.
 
 En la sección Acciones, es necesario que tenga una acción *Establecer variables* . Esta acción indica a Adobe Analytics cómo rellenar las variables de seguimiento con datos. Al mismo tiempo, la acción *Establecer variables* no envía nada al servidor de seguimiento.
 
 La acción *Establecer variables* debe ir seguida de una acción *Enviar señalización* . La acción *Enviar señalización* realmente envía datos al servidor de seguimiento de Analytics. Ambas acciones, *Establecer variables* y *Enviar señalización*, proceden de la extensión Adobe Analytics.
 
-Consulte [Reglas](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html) en la Guía del usuario de inicio de la plataforma de experiencia para obtener más información.
+Consulte [Reglas](https://docs.adobe.com/content/help/es-ES/launch/using/reference/manage-resources/rules.html) en la Guía del usuario del Experience Platform Launch para obtener más información.
 
 #### Configuración de muestra {#sample-configuration}
 
@@ -104,7 +104,7 @@ La siguiente configuración de ejemplo de Adobe Launch muestra cómo rastrear un
 
 1. En la ficha **[!UICONTROL Reglas]** , defina una regla *TrackAssetOnLoad*.
 
-   En esta regla, el campo **[!UICONTROL Evento]** utiliza el evento **[!UICONTROL LOAD]** de la extensión Visores de medios dinámicos.
+   En esta regla, el campo **[!UICONTROL Evento]** utiliza el evento **[!UICONTROL CARGAR]** de la extensión Visores de medios dinámicos.
 
    ![image2019-22](assets/image2019-22.png)
 
@@ -138,17 +138,17 @@ Para realizar el seguimiento de los visores de Dynamic Media en los sitios AEM, 
 
 Tras una configuración adecuada, cualquier visor de Dynamic Media que agregue a una página Sitios mediante un componente WCM admitido por Dynamic Media, rastreará automáticamente los datos en Adobe Analytics, Adobe Analytics para vídeo o ambos.
 
-Consulte [Adición de recursos de Dynamic Media a páginas mediante sitios](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)de Adobe.
+Consulte [Añadir recursos de Dynamic Media en páginas que usan sitios](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)de Adobe.
 
 ### Seguimiento de visores de Dynamic Media mediante código incrustado {#tracking-dynamic-media-viewers-using-embed-code}
 
 Los clientes que no utilicen AEM Sites o los visores de Dynamic Media incrustados en páginas web fuera de AEM Sites, o en ambas, pueden seguir utilizando la integración de Adobe Launch.
 
-Debe completar los pasos de configuración desde las secciones [Configuración de Adobe Analytics](#configuringadobeanalytics) y [Configuración de Adobe Launch](#configuringadobelaunch) . Sin embargo, no es necesario realizar pasos de configuración relacionados con AEM.
+Debe completar los pasos de configuración desde las secciones [Configuración de Adobe Analytics](#configuringadobeanalytics) y [Configuración de Adobe Launch](#configuringadobelaunch). Sin embargo, no es necesario realizar pasos de configuración relacionados con AEM.
 
 Después de realizar la configuración adecuada, puede añadir compatibilidad con Adobe Launch a una página web con un visor de Dynamic Media.
 
-Consulte [Agregar el código](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) de incrustación de lanzamiento para obtener más información sobre cómo utilizar el código incrustado de la biblioteca Adobe Launch.
+Consulte [Añadir el código](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) de incrustación de Launch para obtener más información sobre cómo utilizar el código incrustado de la biblioteca Adobe Launch.
 
 Consulte [Incrustación del visor de vídeos o imágenes en una página](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) web para obtener más información sobre cómo utilizar la función de código incrustado de AEM Dynamic Media.
 
@@ -157,7 +157,7 @@ Consulte [Incrustación del visor de vídeos o imágenes en una página](https:/
 1. Tenga una página web lista para incrustar un visor de Dynamic Media.
 1. Obtenga el código incrustado de la biblioteca Adobe Launch iniciando sesión en Adobe Launch (consulte [Configuración de Adobe Launch](#configuringadobelaunch)).
 1. Haga clic en **[!UICONTROL Propiedad]** y, a continuación, en la ficha **[!UICONTROL Entornos]** .
-1. Recoge el nivel de entorno que es relevante para el entorno de la página web. A continuación, en la columna **[!UICONTROL Instalar]** , haga clic en el icono del cuadro.
+1. Recoge el nivel de Entorno relevante para el entorno de la página web. A continuación, en la columna **[!UICONTROL Instalar]** , haga clic en el icono del cuadro.
 1. **[!UICONTROL En el cuadro de diálogo Instrucciones]** de instalación web, copie el código incrustado completo de la biblioteca Adobe Launch, junto con las `<script/>` etiquetas que lo rodean.
 
 ## Guía de referencia para la extensión Visores de medios dinámicos {#reference-guide-for-the-dynamic-media-viewers-extension}
@@ -185,30 +185,30 @@ Tenga en cuenta que si activa esta opción *sin* tener instalada la extensión A
 
 ### Acerca de los elementos de datos en la extensión Visores de medios dinámicos {#about-data-elements-in-the-dynamic-media-viewers-extension}
 
-El único tipo de elemento de datos que proporciona la extensión Visores de medios dinámicos es el evento **[!UICONTROL de]** visor de la lista desplegable Tipo **[!UICONTROL de elemento de]** datos.
+El único tipo de elemento de datos que proporciona la extensión Visualizadores de Dynamic Media es el **[!UICONTROL Evento de visualizador]** de la lista desplegable **[!UICONTROL Tipo de elemento de datos]**.
 
 Cuando se selecciona, el editor de elementos de datos procesa un formulario con dos campos:
 
-* **[!UICONTROL Tipo]** de datos de evento de visores de DM: una lista desplegable que identifica todos los eventos de visor admitidos por la extensión de visores de medios dinámicos que tienen argumentos, además de un elemento especial **[!UICONTROL COMÚN]** . Un elemento **[!UICONTROL COMÚN]** representa una lista de parámetros de evento que son comunes a todos los tipos de eventos enviados por los visores.
-* **[!UICONTROL Parámetro]** de seguimiento: argumento del evento de visor de Dynamic Media seleccionado.
+* **[!UICONTROL Tipo de datos de evento de visualizadores de DM]**: Una lista desplegable que identifica todos los eventos de visualizador admitidos por la extensión de visualizadores de Dynamic Media que tienen argumentos, además de un elemento especial **[!UICONTROL COMÚN]**. Un elemento **[!UICONTROL COMÚN]** representa una lista de parámetros de evento que son comunes a todos los tipos de eventos enviados por los visualizadores.
+* **[!UICONTROL Parámetro]** de seguimiento: un argumento del evento del visor de Dynamic Media seleccionado.
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Consulte la guía [de referencia de los visores de medios](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) dinámicos para ver la lista de eventos admitidos por cada tipo de visor; vaya a una sección específica del visor y, a continuación, haga clic en la subsección Compatibilidad con el seguimiento de Adobe Analytics. Actualmente, la guía de referencia de los visores de medios dinámicos no documenta los argumentos de eventos.
+Consulte la guía [de referencia de los visores de medios](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) dinámicos para ver la lista de los eventos admitidos por cada tipo de visor; vaya a una sección específica del visor y, a continuación, haga clic en la subsección Compatibilidad con el seguimiento de Adobe Analytics. Actualmente, la guía de referencia de los visores de medios dinámicos no documento los argumentos de evento.
 
-Consideremos ahora el ciclo de vida del elemento *de* datos de los visores de medios dinámicos. El valor de dicho elemento de datos se rellena después de que se produzca el evento de visor de Dynamic Media correspondiente en la página. Por ejemplo, si el elemento de datos apunta al evento **[!UICONTROL LOAD]** y su argumento &quot;asset&quot;, el valor de dicho elemento de datos recibirá datos válidos después de que el visor ejecute el evento LOAD por primera vez. Si el elemento de datos apunta al evento **[!UICONTROL ZOOM]** y su argumento de &quot;escala&quot;, el valor de dicho elemento de datos permanecerá vacío hasta que el visor envíe un evento **[!UICONTROL ZOOM]** por primera vez.
+Consideremos ahora el ciclo de vida del elemento *de* datos de los visores de medios dinámicos. El valor de dicho elemento de datos se rellena después de que se produzca el evento correspondiente del visor de Dynamic Media en la página. Por ejemplo, si el elemento de datos apunta al evento **[!UICONTROL LOAD]** y su argumento &quot;asset&quot;, el valor de dicho elemento de datos recibirá datos válidos después de que el visor ejecute el evento LOAD por primera vez. Si el elemento de datos apunta al evento **[!UICONTROL ZOOM]** y su argumento de &quot;escala&quot;, el valor de dicho elemento de datos permanecerá vacío hasta que el visor envíe por primera vez un evento **[!UICONTROL ZOOM]** .
 
-Del mismo modo, los valores de los elementos de datos se actualizan automáticamente cuando el visor envía un evento correspondiente a la página. La actualización de valor se produce incluso si el evento concreto no se especifica en la configuración de regla. Por ejemplo, si **[!UICONTROL ZoomScale]** de elemento de datos está definido para el parámetro &quot;scale&quot; del evento ZOOM, pero la única regla presente en la configuración de regla se activa mediante el evento **[!UICONTROL LOAD]** , el valor de **[!UICONTROL ZoomScale]** se actualiza cada vez que un usuario ejecuta zoom dentro del visor.
+Del mismo modo, los valores de los elementos de datos se actualizan automáticamente cuando el visor envía un evento correspondiente a la página. La actualización de valor se produce incluso si el evento concreto no se especifica en la configuración de regla. Por ejemplo, si **[!UICONTROL ZoomScale]** de elemento de datos está definido para el parámetro “scale” del evento ZOOM, pero la única regla presente en la configuración de regla se activa mediante el evento **[!UICONTROL LOAD]**, el valor de **[!UICONTROL ZoomScale]** se actualiza cada vez que un usuario ejecuta zoom dentro del visualizador.
 
-Cualquier visor de Dynamic Media tiene un identificador único en la página web. El elemento de datos realiza un seguimiento del valor mismo y del visor que lo ha rellenado. Esto significa que si hay varios visores en la misma página y hay un elemento de datos **[!UICONTROL AssetName]** que señala al evento **[!UICONTROL LOAD]** y su argumento &quot;asset&quot;, el elemento de datos **[!UICONTROL AssetName]** mantiene una colección de nombres de recursos asociados a cada visor cargado en la página.
+Cualquier visualizador de Dynamic Media tiene un identificador único en la página web. El elemento de datos realiza un seguimiento del valor mismo y del visualizador que lo ha propagado. Esto significa que si hay varios visualizadores en la misma página y un elemento de datos **[!UICONTROL AssetName]** que señala al evento **[!UICONTROL LOAD]** y a su argumento “asset”; el elemento de datos **[!UICONTROL AssetName]** mantiene una colección de nombres de recursos asociados a cada visualizador cargado en la página.
 
-El valor exacto que devuelve el elemento de datos depende del contexto. Si el elemento de datos se solicita en una regla que se activó con un evento de visor de Dynamic Media, se devuelve el valor del elemento de datos para el visor que inició la regla. Y, si el elemento de datos se solicita en una regla que se activó con un evento desde otra extensión de Adobe Launch, el valor del elemento de datos es el valor del visor que fue el último en actualizar este elemento de datos.
+El valor exacto que devuelve el elemento de datos depende del contexto. Si el elemento de datos se solicita en una regla que se activó con un evento del visor de Dynamic Media, se devuelve el valor del elemento de datos para el visor que inició la regla. Y, si el elemento de datos se solicita en una regla que se activó con un Evento de otra extensión de Adobe Launch, el valor del elemento de datos es el valor del visor que fue el último en actualizar este elemento de datos.
 
 **Considere la siguiente configuración** de muestra:
 
 * Una página web con dos visores de zoom de Dynamic Media; se referirán a ellos como *viewer1* y *viewer2*.
 
-* **[!UICONTROL El elemento de datos ZoomScale]** señala al evento **[!UICONTROL ZOOM]** y su argumento &quot;scale&quot;.
+* **[!UICONTROL El elemento de datos ZoomScale]** apunta al evento **[!UICONTROL ZOOM]** y su argumento de &quot;escala&quot;.
 * **[!UICONTROL Regla TrackPan]** con lo siguiente:
 
    * Utiliza el evento **[!UICONTROL PAN]** del visor de Dynamic Media como activador.
@@ -222,51 +222,51 @@ El valor exacto que devuelve el elemento de datos depende del contexto. Si el el
 
 Ahora, supongamos que el usuario final carga la página web con los dos visores. En *viewer1*, se amplía al 50 % de la escala; a continuación, en *viewer2*, se amplía al 25 % de la escala. En *viewer1*, recorren la imagen y finalmente presionan una tecla en el teclado.
 
-La actividad del usuario final provoca que se realicen las dos llamadas de seguimiento siguientes a Adobe Analytics:
+La actividad del usuario final da como resultado que se realicen las dos llamadas de seguimiento siguientes a Adobe Analytics:
 
-* La primera llamada se produce porque la regla **[!UICONTROL TrackPan]** se activa cuando el usuario se desplaza en *viewer1*. Esa llamada envía el 50 % como valor del elemento de datos **[!UICONTROL ZoomScale]** porque el elemento de datos sabrá que la regla se activa con *viewer1* y obtiene el valor de escala correspondiente;
+* La primera llamada se produce porque la regla **[!UICONTROL TrackPan]** se activa cuando el usuario se desplaza a *viewer1*. Esa llamada envía el 50 % como valor del elemento de datos **[!UICONTROL ZoomScale]** porque el elemento de datos sabrá que la regla se activa con *viewer1* y obtiene el valor de escala correspondiente;
 * La segunda llamada se produce porque **[!UICONTROL TrackKey]** Rule se activa cuando el usuario pulsa una tecla en el teclado. Esa llamada envía el 25 % como valor del elemento de datos **[!UICONTROL ZoomScale]** porque el visor no activó la regla. Como tal, el elemento de datos devuelve el valor más actualizado.
 
 El ejemplo configurado arriba también afecta a la duración del valor del elemento de datos. El valor del elemento de datos administrado por el visor de medios dinámicos se almacena en el código de biblioteca de Adobe Launch incluso después de que el propio visor se haya eliminado de la página web. Esto significa que si hay una regla que se activa con una extensión que no es de Dynamic Media Viewer y hace referencia a dicho elemento de datos, el elemento de datos devuelve el último valor conocido, incluso si el visor ya no está presente en la página web.
 
 En cualquier caso, los valores de los elementos de datos impulsados por los visores de medios dinámicos no se almacenan en el almacenamiento local ni en el servidor; en su lugar, solo se conservan en la biblioteca de Adobe Launch del lado del cliente. Los valores de dicho elemento de datos desaparecen cuando se vuelve a cargar la página web.
 
-Generalmente, el editor de elementos de datos admite la selección [de duración](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)de almacenamiento. Sin embargo, los elementos de datos que utilizan la extensión Visores de medios dinámicos solo admiten la opción de duración de almacenamiento **[!UICONTROL Ninguno]**. En la interfaz de usuario es posible establecer cualquier otro valor, pero en este caso no se define el comportamiento de los elementos de datos. La extensión administra por sí sola el valor del elemento de datos: el elemento de datos que mantiene el valor del argumento de evento de visor durante todo el ciclo de vida del visor.
+Generalmente, el editor de elementos de datos admite la selección [de duración del](https://docs.adobe.com/content/help/es-ES/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)almacenamiento. Sin embargo, los elementos de datos que utilizan la extensión Visores de medios dinámicos solo admiten la opción de duración de almacenamiento **[!UICONTROL Ninguno]**. En la interfaz de usuario es posible establecer cualquier otro valor, pero en este caso no se define el comportamiento de los elementos de datos. La extensión administra por sí sola el valor del elemento de datos: el elemento de datos que mantiene el valor del argumento de evento del visor durante todo el ciclo de vida del visor.
 
 ### Acerca de las reglas de la extensión Visores de medios dinámicos {#about-rules-in-the-dynamic-media-viewers-extension}
 
-En el editor de reglas, la extensión agrega nuevas opciones de configuración para el editor de eventos. También proporciona una opción para hacer referencia manualmente a los parámetros de evento en el editor de acciones como una opción de mano corta en lugar de utilizar elementos de datos preconfigurados.
+En el editor de reglas, la extensión agrega nuevas opciones de configuración para el editor de Eventos. También proporciona una opción para hacer referencia manualmente a los parámetros de evento en el editor de acciones como una opción de mano corta en lugar de utilizar elementos de datos preconfigurados.
 
-#### Acerca del editor de eventos {#about-the-events-editor}
+#### Acerca del editor de Eventos {#about-the-events-editor}
 
-En el editor de eventos, la extensión Visores de medios dinámicos agrega un nuevo tipo **[!UICONTROL de]** evento denominado Evento **** de visor.
+En el editor de eventos, la extensión Visualizadores de medios dinámicos agrega un nuevo **[!UICONTROL Tipo de evento]** denominado **[!UICONTROL Evento de visualizador]**.
 
-Cuando se selecciona, el editor de eventos procesa los eventos **[!UICONTROL desplegables del visor de medios]** dinámicos, enumerando todos los eventos disponibles que admiten los visores de medios dinámicos.
+Cuando se selecciona, el editor de Evento procesa la lista desplegable de eventos **[!UICONTROL del visor de medios]** dinámicos, que enumera todos los eventos disponibles que admiten los visores de medios dinámicos.
 
 ![image2019-8-2_15-13-1](assets/image2019-8-2_15-13-1.png)
 
 #### Acerca del editor Acciones {#about-the-actions-editor}
 
-La extensión de visores de medios dinámicos permite utilizar parámetros de eventos de visores de medios dinámicos para asignarlos a variables de análisis en el editor de conjuntos de variables de la extensión Adobe Analytics.
+La extensión de visores de medios dinámicos permite utilizar parámetros de evento de visores de medios dinámicos para asignarlos a variables de análisis en el editor de conjuntos de variables de la extensión de Adobe Analytics.
 
 El método más sencillo para hacerlo es completar el siguiente proceso de dos pasos:
 
-* En primer lugar, defina uno o varios elementos de datos, donde cada elemento de datos representa un parámetro de un evento de visor de medios dinámicos.
+* En primer lugar, defina uno o varios elementos de datos, donde cada elemento de datos representa un parámetro de un evento de visor de Dynamic Media.
 * Por último, en el editor Definir variables de la extensión Adobe Analytics, haga clic en el icono Selector de elementos de datos (tres discos apilados) para abrir el cuadro de diálogo Seleccionar elemento de datos y, a continuación, seleccione un elemento de datos en él.
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Sin embargo, es posible utilizar un enfoque alternativo y evitar la creación de elementos de datos. Puede hacer referencia directamente a un argumento de un evento de visor de medios dinámicos introduciendo el nombre completo del argumento de evento en el campo de entrada de **[!UICONTROL valor]** de la asignación de variables de Analytics, rodeado de signos de porcentaje (%). Por ejemplo,
+Sin embargo, es posible utilizar un enfoque alternativo y evitar la creación de elementos de datos. Puede hacer referencia directamente a un argumento de un evento de visualizador de Dynamic Media introduciendo el nombre completo del argumento de evento en el campo de entrada de **[!UICONTROL valor]** de la asignación de variables de Analytics, rodeado de signos de porcentaje (%). Por ejemplo,
 
 `%event.detail.dm.LOAD.asset%`
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-Tenga en cuenta que existe una diferencia importante entre el uso de elementos de datos y la referencia directa de argumentos de eventos. Para el elemento de datos, no importa qué evento desencadene la acción Establecer variables, el evento que activa la regla puede no estar relacionado con el visor dinámico (como un clic del ratón en la página web desde la extensión Core). Sin embargo, al utilizar una referencia de argumento directa es importante asegurarse de que el evento que activa la regla corresponde al argumento de evento al que hace referencia.
+Tenga en cuenta que existe una diferencia importante entre el uso de elementos de datos y la referencia directa de argumentos de evento. Para el elemento de datos, no importa qué evento desencadene la acción Definir variables, el evento que activa la regla puede no estar relacionado con el visor dinámico (como un clic del ratón en la página web desde la extensión Core). Sin embargo, al utilizar una referencia de argumento directa es importante asegurarse de que el evento que activa la regla corresponde al argumento de evento al que hace referencia.
 
-Por ejemplo, la referencia `%event.detail.dm.LOAD.asset%` devuelve el nombre de recurso correcto si la regla se activa mediante el evento **[!UICONTROL LOAD]** de la extensión del visor de medios dinámicos. Sin embargo, devuelve un valor vacío para cualquier otro evento.
+Por ejemplo, la referencia `%event.detail.dm.LOAD.asset%` devuelve el nombre de recurso correcto si la regla se activa mediante el evento **[!UICONTROL LOAD]** de la extensión del visualizador de Dynamic Media. Sin embargo, devuelve un valor vacío para cualquier otro evento.
 
-En la tabla siguiente se muestran los eventos del visor de Dynamic Media y sus argumentos admitidos:
+La tabla siguiente lista eventos del visor de Dynamic Media y sus argumentos admitidos:
 
 <table>
  <tbody>
@@ -415,7 +415,7 @@ Además, si esta solución de integración se utiliza con AEM Sites, también de
 * Adobe I/O Console: la integración se crea para Adobe Launch.
 * Nodo de creación de AEM: configuración de IMS y configuración de nube de Adobe Launch.
 
-Como parte de la configuración, asegúrese de tener acceso a una empresa de Adobe Experience Cloud que ya tenga Adobe Analytics y Adobe Launch activados.
+Como parte de la configuración, asegúrese de tener acceso a una compañía de Adobe Experience Cloud que ya tenga Adobe Analytics y Adobe Launch activados.
 
 ## Configuración de Adobe Analytics para la integración {#configuring-adobe-analytics-for-the-integration}
 
@@ -423,13 +423,13 @@ Después de configurar Adobe Analytics, se configurará lo siguiente para la int
 
 * Se ha seleccionado un grupo de informes.
 * Las variables de Analytics están disponibles para recibir datos de seguimiento.
-* Los informes están disponibles para ver los datos recopilados dentro de Adobe Analytics.
+* Los informes están disponibles para la vista de datos recopilados dentro de Adobe Analytics.
 
 Consulte también Guía [de implementación de Analytics](https://docs.adobe.com/content/help/en/analytics/implementation/home.html).
 
 **Para configurar Adobe Analytics para la integración**:
 
-1. Comience por acceder a Adobe Analytics desde la página [principal](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)de Experience Cloud. En la barra de menús, haga clic en el icono Soluciones (una tabla de puntos de tres por tres) cerca de la esquina superior derecha de la página y, a continuación, haga clic en **[!UICONTROL Analytics]**.
+1. Inicio accediendo a Adobe Analytics desde la [página de inicio](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)de Experience Cloud. En la barra de menús, haga clic en el icono Soluciones (una tabla de puntos de tres por tres) cerca de la esquina superior derecha de la página y, a continuación, haga clic en **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -437,7 +437,7 @@ Consulte también Guía [de implementación de Analytics](https://docs.adobe.com
 
 ### Selección de un grupo de informes {#selecting-a-report-suite}
 
-1. Cerca de la esquina superior derecha de la página Adobe Analytics, a la derecha del campo **[!UICONTROL Buscar informes]** , seleccione el grupo de informes correcto en la lista desplegable. Si hay varios grupos de informes disponibles y no está seguro de cuál usar, póngase en contacto con el administrador de Adobe Analytics, que le ayudará a seleccionar qué grupo de informes utilizar.
+1. Cerca de la esquina superior derecha de la página Adobe Analytics, a la derecha del campo **[!UICONTROL Buscar informes]**, seleccione el grupo de informes correcto en la lista desplegable. Si hay varios grupos de informes disponibles y no está seguro de cuál usar, póngase en contacto con el administrador de Adobe Analytics, que le ayudará a seleccionar qué grupo de informes utilizar.
 
    En la siguiente ilustración, un usuario creó un grupo de informes denominado *DynamicMediaViewersExtensionDoc* y lo seleccionó en la lista desplegable. El nombre del grupo de informes se muestra únicamente con fines ilustrativos; el nombre del grupo de informes que seleccione en última instancia será distinto.
 
@@ -463,7 +463,7 @@ Consulte también Guía [de implementación de Analytics](https://docs.adobe.com
 
    Para habilitar una nueva variable de tráfico personalizado, en Adobe Analytics, en la barra de herramientas, haga clic en **[!UICONTROL Administración > Grupos]** de informes.
 
-1. En la página Administrador **[!UICONTROL de grupos de]** informes, seleccione el informe correcto y, en la barra de herramientas, haga clic en **[!UICONTROL Editar configuración > Tráfico > Variables]** de tráfico.
+1. En la página **[!UICONTROL Administrador de grupos de informes]**, seleccione el informe correcto y, en la barra de herramientas, haga clic en **[!UICONTROL Editar configuración > Tráfico > Variables de tráfico]**.
 1. Allí, tome la variable no utilizada, asígnele un nombre descriptivo (recurso **[!UICONTROL del visor (prop 30)]**) y cambie el cuadro combinado a &quot;Habilitado&quot; en la columna Habilitado.
 
    La siguiente captura de pantalla es un ejemplo de una variable de tráfico personalizado ( **[!UICONTROL prop30]**) para rastrear el nombre de un recurso utilizado por el visor:
@@ -478,9 +478,9 @@ Consulte también Guía [de implementación de Analytics](https://docs.adobe.com
 
    Sin embargo, basta con saber que los informes de tráfico personalizado estarán disponibles automáticamente en Adobe Analytics después de configurar las variables de tráfico personalizado en la **[configuración de las variables](#setting-up-adobe-analytics-variables)**de Adobe Analytics.
 
-   Por ejemplo: el informe para la variable de recurso **[!UICONTROL del visor (prop 30)]** está disponible en el menú Informes en Tráfico **[!UICONTROL personalizado > Tráfico personalizado 21-30 > Recurso del visor (prop 30)]**.
+   Por ejemplo: el informe para la variable de **[!UICONTROL recurso del visualizador (prop 30)]** está disponible en el menú Informes en **[!UICONTROL Tráfico personalizado > Tráfico personalizado 21-30 > Recurso del visualizador (prop 30)]**.
 
-   Al visitar este informe justo después de la creación **[!UICONTROL de recursos del visor (prop 30)]** , no se muestra ningún dato; esto se espera en este punto de la integración.
+   Al visitar este informe justo después de la creación de **[!UICONTROL Recursos del visualizador (prop 30)]**, no se muestra ningún dato; esto se espera en este punto de la integración.
 
    ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
 
@@ -495,7 +495,7 @@ Después de configurar Adobe Launch, se configurará lo siguiente para la integr
 
 **Para configurar Adobe Launch para la integración**:
 
-1. Comience por acceder a Adobe Launch desde la página [principal](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)de Experience Cloud. En la barra de menús, haga clic en el icono Soluciones (tres por tres puntos de tabla) cerca de la esquina superior derecha de la página y, a continuación, haga clic en **[!UICONTROL Iniciar]**.
+1. Inicio accediendo a Adobe Launch desde la [página de inicio](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)de Experience Cloud. En la barra de menús, haga clic en el icono Soluciones (tres por tres puntos de tabla) cerca de la esquina superior derecha de la página y, a continuación, haga clic en **[!UICONTROL Iniciar]**.
 
    También puede [abrir Adobe Launch directamente](https://launch.adobe.com/).
 
@@ -503,14 +503,14 @@ Después de configurar Adobe Launch, se configurará lo siguiente para la integr
 
 ### Creación de una propiedad en Adobe Launch {#creating-a-property-in-adobe-launch}
 
-Una propiedad de Adobe Launch es una configuración con nombre que mantiene unidas todas las opciones de configuración. Se genera y publica una biblioteca de los ajustes de configuración en diferentes niveles de entorno (desarrollo, ensayo y producción).
+Una propiedad de Adobe Launch es una configuración con nombre que mantiene unidas todas las opciones de configuración. Se genera una biblioteca de los ajustes de configuración que se publica en diferentes niveles de entorno (desarrollo, ensayo y producción).
 
 Consulte también [Creación de una propiedad](https://docs.adobe.com/content/help/en/launch/using/implement/configure/create-a-property.html).
 
 1. En Adobe Launch, haga clic en **[!UICONTROL Nueva propiedad]**.
-1. En el cuadro de diálogo **[!UICONTROL Crear propiedad]** , en el campo **[!UICONTROL Nombre]** , escriba un nombre descriptivo, como el título del sitio web. Por ejemplo, `DynamicMediaViewersProp.`
+1. En el cuadro de diálogo **[!UICONTROL Crear propiedad]**, dentro del campo **[!UICONTROL Nombre]**, escriba un nombre descriptivo, como el título del sitio web. Por ejemplo, `DynamicMediaViewersProp.`
 1. En el campo **[!UICONTROL Dominios]** , introduzca el dominio del sitio web.
-1. En la lista desplegable Opciones **** avanzadas, habilite **[!UICONTROL Configurar para el desarrollo de extensiones (no se puede modificar posteriormente)]** en caso de que la extensión que desee utilizar (en este caso, los visores *de medios* dinámicos) aún no se haya publicado.
+1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use--in this case, *Dynamic Media Viewers*--is not yet released.
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
@@ -534,13 +534,13 @@ Consulte Extensión [del servicio de ID de Experience Cloud](https://docs.adobe.
 
 * (Requerido) Extensión de *Adobe Analytics*
 
-Para configurar esta extensión, primero necesitará la ID del grupo de informes que se encuentra en Adobe Analytics, en **[!UICONTROL Administración > Grupo]** de informes, en el encabezado de la columna ID del grupo de **[!UICONTROL informes]** .
+Para configurar esta extensión, primero necesitará la ID del grupo de informes que se encuentra en Adobe Analytics, en **[!UICONTROL Administración > Grupode informes]**, en el encabezado de la columna **[!UICONTROL ID del grupo de informes]**.
 
-(Solo con fines de demostración, la ID del grupo de informes del grupo de informes **[!UICONTROL DynamicMediaViewersExtensionDoc]** se utilizará en las siguientes capturas de pantalla. Esta ID se creó y utilizó en [Selección de un grupo](#selecting-a-report-suite) de informes anteriormente).
+(Solo con fines de demostración, el ID del grupo de informes **[!UICONTROL DynamicMediaViewersExtensionDoc]** se utilizará en las siguientes capturas de pantalla. Este ID se creó y utilizó en [Selección de un grupo](#selecting-a-report-suite) de informes anteriormente).
 
 ![image2019-7-8_16-45-34](assets/image2019-7-8_16-45-34.png)
 
-En la página Instalar extensión, introduzca la ID del grupo de informes en el campo Grupos **[!UICONTROL de informes de]** desarrollo, en el campo Grupos **[!UICONTROL de informes de]** ensayo y en el campo Grupos **[!UICONTROL de informes de]** producción.
+En la página Instalar extensión, introduzca la ID del grupo de informes en el campo **[!UICONTROL Grupos de informes de desarrollo]**, en el campo **[!UICONTROL Grupos de informes de ensayo]** y en el campo **[!UICONTROL Grupos de informes de producción]**.
 
 ![image2019-7-8_16-47-40](assets/image2019-7-8_16-47-40.png)
 
@@ -562,7 +562,7 @@ Consulte [Adobe Media Analytics para la extensión](https://docs.adobe.com/conte
 
 * (Requerido) Extensión de visores *de medios* dinámicos
 
-Seleccione **[!UICONTROL habilitar Adobe Analytics para vídeo]** para habilitar (activar) el seguimiento de Video Heartbeat.
+Seleccione **[!UICONTROL habilitar Adobe Analytics para vídeo]** para activar el seguimiento de Video Heartbeat.
 
 Tenga en cuenta que, en el momento de escribir esto, la extensión de los visores *de medios* dinámicos solo está disponible si se ha creado la propiedad Adobe Launch para el desarrollo.
 
@@ -586,20 +586,20 @@ Consulte [Configuración de la extensión](#configuring-the-dynamic-media-viewer
 
 Para realizar cambios en la configuración de Adobe Launch (incluida la configuración de propiedades, extensiones, reglas y elementos de datos), debe *publicar* dichos cambios*.* La publicación en Adobe Launch se realiza desde la ficha Publicación, en la configuración Propiedad.
 
-Adobe Launch puede tener varios entornos de desarrollo, un entorno de ensayo y un entorno de producción. De forma predeterminada, la configuración de Adobe Launch Cloud en AEM dirige el nodo de creación de AEM al entorno de fase de Adobe Launch y el nodo de publicación de AEM al entorno de producción de Adobe Launch. Esta disposición significa que, con la configuración predeterminada de AEM, es necesario publicar la biblioteca Adobe Launch en el entorno de ensayo para utilizarla en el autor de AEM y, a continuación, publicarla en el entorno de producción para que se pueda utilizar en la publicación de AEM.
+Adobe Launch puede tener varios entornos de desarrollo, un entorno de ensayo y un entorno de producción. De forma predeterminada, la configuración de Adobe Launch Cloud en AEM dirige el nodo de creación de AEM al entorno de fase de Adobe Launch y el nodo de publicación de AEM al entorno de producción de Adobe Launch. Esta disposición significa que con la configuración predeterminada de AEM, es necesario publicar la biblioteca de Adobe Launch en el entorno de ensayo para utilizarla en el autor de AEM y, a continuación, publicarla en el entorno de producción para que se pueda utilizar en la publicación de AEM.
 
 Consulte [Entornos](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) para obtener más información sobre los entornos de Adobe Launch.
 
 La publicación de una biblioteca implica los dos pasos siguientes:
 
-* Agregar y crear una nueva biblioteca incluyendo todos los cambios necesarios (nuevos y actualizaciones) en la biblioteca.
-* Subir la biblioteca a través de los diferentes niveles de entorno (de desarrollo a ensayo y producción)
+* Añadir y crear una nueva biblioteca incluyendo todos los cambios necesarios (nuevos y actualizaciones) en la biblioteca.
+* Subir la biblioteca por los diferentes niveles de entorno (de desarrollo a ensayo y producción)
 
-#### Adición y creación de una nueva biblioteca {#adding-and-building-a-new-library}
+#### Añadir y crear una nueva biblioteca {#adding-and-building-a-new-library}
 
-1. La primera vez que abra la ficha Publicación en Adobe Launch, la lista de la biblioteca estará vacía.
+1. La primera vez que abra la ficha Publicación en Adobe Launch, la lista de biblioteca estará vacía.
 
-   En la columna izquierda, haga clic en **[!UICONTROL Agregar nueva biblioteca]**.
+   En la columna izquierda, haga clic en **[!UICONTROL Añadir nueva biblioteca]**.
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
@@ -607,11 +607,11 @@ La publicación de una biblioteca implica los dos pasos siguientes:
 
    *DynamicMediaViewersLib*
 
-   En la lista desplegable Entorno, seleccione el nivel Entorno. Inicialmente, solo el nivel de desarrollo está disponible para selección. Cerca de la parte inferior izquierda de la página, haga clic en **[!UICONTROL Agregar todos los recursos]** modificados.
+   En la lista desplegable Entorno, elija el nivel de Entorno. Inicialmente, solo el nivel de desarrollo está disponible para selección. Cerca de la parte inferior izquierda de la página, haga clic en **[!UICONTROL Añadir todos los recursos]** modificados.
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
-1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Guardar y crear para desarrollo]**.
+1. Near the upper-right corner of the page, click **[!UICONTROL Save &amp; Build for Development]**.
 
    En pocos minutos, la biblioteca se crea y está lista para usarse.
 
@@ -619,12 +619,12 @@ La publicación de una biblioteca implica los dos pasos siguientes:
 
    >[!NOTE]
    >
-   >La próxima vez que realice cambios en la configuración de Adobe Launch, vaya a la ficha **[!UICONTROL Publicación]** en la configuración de la **[!UICONTROL propiedad]** y, a continuación, haga clic en la biblioteca creada anteriormente.
+   >La próxima vez que realice cambios en la configuración de Adobe Launch, vaya a la pestaña **[!UICONTROL Publicación]** en la configuración de la **[!UICONTROL propiedad]** y, a continuación, haga clic en la biblioteca creada anteriormente.
    >
    >
-   >En la pantalla de publicación de la biblioteca, haga clic en **[!UICONTROL Agregar todos los recursos]** modificados y, a continuación, haga clic en **[!UICONTROL Guardar y crear para desarrollo]**.
+   >En la pantalla de publicación de la biblioteca, haga clic en **[!UICONTROL Añadir todos los recursos]** modificados y, a continuación, haga clic en **[!UICONTROL Guardar y crear para desarrollo]**.
 
-#### Subir una biblioteca a través de los niveles de entorno {#moving-a-library-up-through-environment-levels}
+#### Subir una biblioteca por niveles de entorno {#moving-a-library-up-through-environment-levels}
 
 1. Después de agregar una nueva biblioteca, se encuentra inicialmente en el entorno de desarrollo. Para moverlo al nivel de entorno Ensayo (que corresponde a la columna Enviado), en el menú desplegable de la biblioteca, haga clic en **[!UICONTROL Enviar para aprobación]**.
 
@@ -636,7 +636,7 @@ La publicación de una biblioteca implica los dos pasos siguientes:
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
-1. Siga un proceso similar para mover la biblioteca del entorno de ensayo al entorno de producción (que es la columna Publicado).
+1. Siga un proceso similar para mover la biblioteca del entorno Ensayo al entorno Producción (que es la columna Publicado).
 
    En primer lugar, en el menú desplegable, haga clic en **[!UICONTROL Aprobar para publicación]**.
 
@@ -668,12 +668,12 @@ La configuración de AEM consta de los dos pasos principales siguientes:
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. En la página Configuración de Adobe IMC, cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Crear]**.
-1. En la lista desplegable Solución **[!UICONTROL de]** nube de la página Configuración **[!UICONTROL de cuenta técnica de]** Adobe IMS, haga clic en Inicio **[!UICONTROL de]** Adobe.
+1. En la página **[!UICONTROL Configuración técnica de la cuenta de Adobe IMD]**, en la lista desplegable **[!UICONTROL Soluciones de nube]**, haga clic en **[!UICONTROL Adobe Launch]**.
 1. Active **[!UICONTROL Crear nuevo certificado]** y, a continuación, en el campo de texto, introduzca cualquier valor significativo para el certificado. Por ejemplo, *AdobeLaunchIMSCert*. Haga clic en **[!UICONTROL Crear certificado]**.
 
    Se muestra el siguiente mensaje de información:
 
-   *Para recuperar un autentificador de acceso válido, la clave pública del nuevo certificado debe agregarse a la cuenta técnica de Adobe I/O!*.
+   *Para recuperar un token de acceso válido, la clave pública del nuevo certificado debe agregarse a la cuenta técnica de Adobe I/O!*.
 
    Click **[!UICONTROL OK]** to dismiss the Info dialog box.
 
@@ -683,18 +683,18 @@ La configuración de AEM consta de los dos pasos principales siguientes:
 
    >[!NOTE]
    >
-   >En este punto, ***deje abierta*** la página Configuración **[!UICONTROL de cuenta técnica de]** Adobe IMS; ***no*** cierre la página y ***no haga*** clic en Siguiente. Volverá a esta página más adelante en los pasos.
+   >En este punto, ***deje abierta*** la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**; ***no*** cierre la página y ***no*** haga clic en Siguiente. Volverá a esta página más adelante en los pasos.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
 1. En una nueva ficha del explorador, desplácese hasta la consola [de E/S de](https://console.adobe.io/integrations)Adobe.
 
 1. En la página Integraciones **[!UICONTROL de la consola de E/S de]** Adobe, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Nueva integración]**.
-1. En el cuadro de diálogo **[!UICONTROL Crear una nueva integración]** , asegúrese de que está seleccionado el botón de opción **[!UICONTROL Acceder a una API]** y, a continuación, haga clic en **[!UICONTROL Continuar]**.
+1. En el cuadro de diálogo **[!UICONTROL Crear una nueva integración]**, compruebe que está seleccionado la opción **[!UICONTROL Acceder a una API]** y, a continuación, haga clic en **[!UICONTROL Continuar]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. En la segunda página **[!UICONTROL Crear una nueva página de integración]** , habilite (active) el botón de radio API **[!UICONTROL de inicio de la plataforma de]** experiencia. En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Continuar]**.
+1. En la segunda página **[!UICONTROL Crear una nueva página de integración]**, active el botón de radio **[!UICONTROL API Experience Platform Launch]**. En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Continuar]**.
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -706,29 +706,29 @@ La configuración de AEM consta de los dos pasos principales siguientes:
 
    * En el área Certificados **[!UICONTROL de clave]** pública, cargue el archivo de clave pública (*.crt) que descargó anteriormente en estos pasos.
 
-   * En el encabezado **[!UICONTROL Seleccionar una función para la API]** de inicio de la plataforma de experiencia, seleccione **[!UICONTROL Administrador]**.
+   * Under the **[!UICONTROL Select a role for Experience Platform Launch API]** heading, select **[!UICONTROL Admin]**.
 
-   * En el encabezado **[!UICONTROL Seleccionar uno o varios perfiles de producto para la API]** de inicio de la plataforma de experiencia, seleccione el perfil de producto denominado **[!UICONTROL Launch - &lt;your_company_name>]**.
+   * En el encabezado **[!UICONTROL Seleccionar uno o varios perfiles de producto para la API]** de Experience Platform Launch, seleccione el perfil de producto llamado **[!UICONTROL Launch - &lt;your_compañía_name>]**.
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. Haga clic en **[!UICONTROL Crear integración]**.
+1. Click **[!UICONTROL Create integration]**.
 1. En la página **[!UICONTROL Integración creada]** , haga clic en **[!UICONTROL Continuar a los detalles]** de integración.
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Aparece una página de detalles de integraciones, ****similar a la siguiente:
+1. Aparece una página de detalles de Integraciones, **** similar a la siguiente:
 
    >[!NOTE]
    >
-   >***Deje abierta esta página*** de detalles de integración. En un momento necesitarás información de las fichas **[!UICONTROL Información general]** y **[!UICONTROL JWT]** .
+   >***Deje abierta esta página de detalles de integración***. En un momento necesitarás información de las pestañas **[!UICONTROL Información general]** y **[!UICONTROL JWT]**.
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
 
    Detalles de la integración.
 
-1. Vuelva a la página Configuración **[!UICONTROL de cuenta técnica de]** Adobe IMS que dejó abierta anteriormente. En la esquina superior derecha de la página, haga clic en **[!UICONTROL Siguiente]** para abrir la página **[!UICONTROL Cuenta]** en la ventana Configuración **[!UICONTROL de cuenta técnica de IMS de]** Adobe.
+1. Vuelva a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** que dejó abierta anteriormente. En la esquina superior derecha de la página, haga clic en **[!UICONTROL Siguiente]** para abrir la página **[!UICONTROL Cuenta]** en la ventana **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**.
 
-   (Si ha cerrado la página por error anteriormente, regrese al autor de AEM y, a continuación, haga clic en **[!UICONTROL Herramientas > Seguridad > Configuraciones]** de Adobe IMS. Haga clic en **[!UICONTROL Crear]**. En la lista desplegable Solución **[!UICONTROL de]** Cloud, seleccione **[!UICONTROL Adobe Launch]**. En la lista desplegable **[!UICONTROL Certificado]** , seleccione el nombre del certificado creado anteriormente).
+   (Si ha cerrado la página por error anteriormente, regrese a AEM Author y, a continuación, haga clic en **[!UICONTROL Herramientas > Seguridad > Configuraciones de Adobe IMS]**. Haga clic en **[!UICONTROL Crear]**. En la lista desplegable **[!UICONTROL Solución de nube]**, seleccione **[!UICONTROL Adobe Launch]**. En la lista desplegable **[!UICONTROL Certificado]**, seleccione el nombre del certificado creado anteriormente.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
@@ -751,15 +751,15 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`(el nombre del servidor de ejemplo
 
    Página de detalles de integración: ficha JWT
 
-1. **[!UICONTROL Clave]** de API: vuelva a la página de detalles de la integración. Haga clic en la ficha **[!UICONTROL Información general]** y, a continuación, a la derecha del campo Clave de **[!UICONTROL API (ID de cliente)]** , haga clic en **[!UICONTROL Copiar]**.
+1. **[!UICONTROL Clave de API]**: Vuelva a la página de detalles de la integración. Haga clic en la pestaña **[!UICONTROL Información general]** y, a continuación, a la derecha del campo **[!UICONTROL Clave de API (ID de cliente)]**, haga clic en **[!UICONTROL Copiar]**.
 
-   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue la clave en el campo correspondiente ****.
+   Return to the **[!UICONTROL Account]** page, then paste the key into the respective ****field.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
 
    Detalles de la integración.
 
-1. **[!UICONTROL Secreto]** del cliente: regrese a la página de detalles de la integración. En la ficha **[!UICONTROL Información general]** , haga clic en **[!UICONTROL Recuperar secreto]** de cliente. A la derecha del campo Secreto **[!UICONTROL de]** cliente, haga clic en **[!UICONTROL Copiar]**.
+1. **[!UICONTROL Secreto del cliente]**: Regrese a la página de detalles de la integración. En la pestaña **[!UICONTROL Información general]**, haga clic en **[!UICONTROL Recuperar secreto de cliente]**. A la derecha del campo **[!UICONTROL Secreto de cliente]**, haga clic en **[!UICONTROL Copiar]**.
 
    Vuelva a la página **[!UICONTROL Cuenta]** y pegue la clave en el campo correspondiente.
 
@@ -775,7 +775,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`(el nombre del servidor de ejemplo
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. Cerca de la esquina superior derecha de la página **[!UICONTROL Cuenta]** , haga clic en **[!UICONTROL Crear]**.
+1. Near the upper-right corner of the **[!UICONTROL Account]** page, click **[!UICONTROL Create]**.
 
    Con AEM IMS configurado, ahora tiene una nueva cuenta IMSAccount en Configuraciones **[!UICONTROL Adobe IMS]**.
 
@@ -794,13 +794,13 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`(el nombre del servidor de ejemplo
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
 1. Cerca de la esquina superior izquierda de la página, haga clic en **[!UICONTROL Crear]**.
-1. En la página **[!UICONTROL General]** (1/3 páginas) de la ventana **[!UICONTROL Crear configuración]** de Adobe Launch, rellene los campos siguientes:
+1. En la página **[!UICONTROL General]** (1/3 páginas) de la ventana **[!UICONTROL Crear configuración de Adobe Launch]**, rellene los campos siguientes:
 
    * **[!UICONTROL Título]** : introduzca un título de configuración descriptivo. Por ejemplo, `We.Retail Launch cloud configuration`.
 
    * **[!UICONTROL Configuración]** de Adobe IMS asociada: seleccione la configuración de IMS que creó anteriormente en [Configuración de AEM IMS](#configuring-aem-ims).
 
-   * **[!UICONTROL Empresa]** : en la lista desplegable **[!UICONTROL Empresa]** , seleccione su empresa de Experience Cloud. La lista se rellena automáticamente.
+   * **[!UICONTROL Compañía]** : en la lista desplegable **[!UICONTROL Compañía]** , seleccione la compañía de Experience Cloud. La lista se rellena automáticamente.
 
    * **[!UICONTROL Propiedad]** : en la lista desplegable Propiedad, seleccione la propiedad Adobe Launch que creó anteriormente. La lista se rellena automáticamente.
    Después de completar todos los campos, la página **[!UICONTROL General]** tendrá un aspecto similar al siguiente:
@@ -808,30 +808,28 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`(el nombre del servidor de ejemplo
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. Cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Siguiente]**.
-1. En la página **[!UICONTROL Ensayo]** (2/3 páginas) de la ventana **[!UICONTROL Crear configuración]** de Adobe Launch, rellene el siguiente campo:
+1. En la página **[!UICONTROL Ensayo]** (2/3 páginas) de la ventana **[!UICONTROL Crear configuración de Adobe Launch]**, rellene el siguiente campo:
 
-   En el campo URI **[!UICONTROL de]** biblioteca, compruebe la ubicación de la versión de ensayo de la biblioteca de Adobe Launch. AEM rellena este campo automáticamente.
+   En el campo **[!UICONTROL URI de biblioteca]**, compruebe la ubicación de la versión de ensayo de la biblioteca de Adobe Launch. AEM rellena este campo automáticamente.
 
    Solo para fines ilustrativos, este paso utilizará las bibliotecas de Adobe Launch implementadas en Adobe CDN.
 
    >[!NOTE]
    >
-   >Compruebe que el URI de la biblioteca rellenado automáticamente (identificador uniforme de recursos) no esté mal formado. Si es necesario, corríjalo para que el URI represente un URI relativo al protocolo. Es decir, empieza con una doble barra diagonal.
+   >Compruebe que el URI de la biblioteca rellenado automáticamente (identificador uniforme de recursos) no esté mal formado. Si es necesario, corríjalo para que el URI represente un URI relativo al protocolo. Es decir, inicio de una barra diagonal de doble.
    >
    >
    >Por ejemplo: `//assets.adobetm.com/launch-xxxx`.
 
-   La página **[!UICONTROL Ensayo]** debe tener un aspecto similar al siguiente. Tenga en cuenta que las opciones **[!UICONTROL Archivar]** y **[!UICONTROL Cargar biblioteca de forma asincrónica]** ***no están*** definidas:
+   La página **[!UICONTROL Ensayo]** debe tener un aspecto similar al siguiente. Tenga en cuenta que las opciones **[!UICONTROL Archivar]** y **[!UICONTROL Cargar biblioteca de forma asincrónica]** ***no*** están definidas:
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
 1. Cerca de la esquina superior derecha, haga clic en **[!UICONTROL Siguiente]**.
-1. En la página **[!UICONTROL Producción]** (3/3 páginas) de la ventana **[!UICONTROL Crear configuración]** de Adobe Launch, si es necesario, corrija el URI de producción rellenado automáticamente de forma similar a como se hizo en la página **[!UICONTROL Ensayo]** anterior.
+1. En la página **[!UICONTROL Producción]** (3/3 páginas) de la ventana **[!UICONTROL Crear configuración de Adobe Launch]**, si es necesario, corrija el URI de producción rellenado automáticamente de forma similar a como se hizo en la página anterior **[!UICONTROL Ensayo]**.
 1. Cerca de la esquina superior derecha, haga clic en **[!UICONTROL Crear]**.
 
    La nueva configuración de Adobe Launch Cloud ahora se crea y se muestra junto a su sitio web de forma similar al siguiente ejemplo:
-
-   ![]()
 
 1. Seleccione la nueva configuración de Adobe Launch Cloud (cuando está seleccionada, aparece una marca de verificación a la izquierda del título de configuración). En la barra de herramientas, haga clic en **[!UICONTROL Publicar]**.
 
@@ -839,7 +837,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`(el nombre del servidor de ejemplo
 
 Actualmente, el autor de AEM no admite la integración de visores de medios dinámicos con Adobe Launch.
 
-Sin embargo, es compatible con el nodo de publicación de AEM. Con la configuración predeterminada de Adobe Launch Cloud Configuration, AEM Publish utiliza el entorno de producción de Adobe Launch. Como tal, es necesario insertar las actualizaciones de la biblioteca Adobe Launch desde Desarrollo hasta el entorno Producción cada vez que se realiza la prueba.
+Sin embargo, es compatible con el nodo de publicación de AEM. Con la configuración predeterminada de Adobe Launch Cloud Configuration, AEM Publish utiliza el entorno de producción de Adobe Launch. Como tal, es necesario insertar las actualizaciones de la biblioteca Adobe Launch desde Desarrollo hasta el entorno de producción cada vez que se realiza la prueba.
 
 Es posible solucionar esta limitación especificando la URL de desarrollo o ensayo de la biblioteca Adobe Launch en la configuración de Adobe Launch Cloud para la publicación de AEM que se muestra más arriba. Al hacer esto, el nodo de publicación de AEM utiliza la versión de desarrollo o ensayo de la biblioteca de Adobe Launch.
 
