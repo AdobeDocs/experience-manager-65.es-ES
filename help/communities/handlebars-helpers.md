@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
@@ -27,11 +27,12 @@ La implementación incluye una definición de cliente y de servidor. También es
 
 Los asistentes personalizados de SCF entregados con comunidades AEM se definen en la biblioteca [del cliente](../../help/sites-developing/clientlibs.md):
 
-* /etc/clientlibs/social/commons/scf/helpers.js
+* `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
 >Asegúrese de instalar el paquete [de funciones de Comunidades](deploy-communities.md#latestfeaturepack)más reciente.
+
 
 ## Abreviar {#abbreviate}
 
@@ -47,19 +48,19 @@ Si safeString se establece en true, la cadena devuelta es SafeString.
 
 * **contexto**: Cadena
 
-   (opcional) El valor predeterminado es la cadena vacía
+   (Opcional) El valor predeterminado es la cadena vacía
 
 * **maxLength**: Número
 
-   (opcional) El valor predeterminado es la longitud del contexto.
+   (Opcional) El valor predeterminado es la longitud del contexto.
 
 * **maxWords**: Número
 
-   (opcional) El valor predeterminado es el número de palabras de la cadena recortada.
+   (Opcional) El valor predeterminado es el número de palabras de la cadena recortada.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
-   (opcional) Devuelve Handlebars.SafeString() si es true. El valor predeterminado es false.
+   (Opcional) Devuelve Handlebars.SafeString() si es true. El valor predeterminado es false.
 
 ### Ejemplos {#examples}
 
@@ -95,23 +96,23 @@ Un ayudante para agregar dos grupos debajo de un div, uno para el texto completo
 
 * **contexto**: Cadena
 
-   (opcional) El valor predeterminado es la cadena vacía.
+   (Opcional) El valor predeterminado es la cadena vacía.
 
 * **numChars**: Número
 
-   (opcional) El número de caracteres que se mostrarán cuando no se muestre texto completo. El valor predeterminado es 100.
+   (Opcional) El número de caracteres que se mostrarán cuando no se muestre texto completo. El valor predeterminado es 100.
 
 * **moreText**: Cadena
 
-   (opcional) El texto que se va a mostrar, que indica que hay más texto que mostrar. El valor predeterminado es &quot;more&quot;.
+   (Opcional) El texto que se va a mostrar que indica que hay más texto para mostrar. El valor predeterminado es &quot;more&quot;.
 
 * **elipsesText**: Cadena
 
-   (opcional) El texto que se va a mostrar y que indica que hay texto oculto. El valor predeterminado es &quot;...&quot;.
+   (Opcional) El texto que se va a mostrar y que indica que hay texto oculto. El valor predeterminado es &quot;...&quot;.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
-   (opcional) Valor booleano que indica si se deben aplicar o no Handlebars.SafeString() antes de devolver el resultado. El valor predeterminado es false.
+   (Opcional) Valor booleano que indica si se deben aplicar o no Handlebars.SafeString() antes de devolver el resultado. El valor predeterminado es false.
 
 ### Ejemplo {#example}
 
@@ -135,11 +136,11 @@ Un asistente para devolver una cadena de fecha con formato.
 
 * **contexto**: Número
 
-   (opcional) un valor de milisegundos compensado con respecto al 1 de enero de 1970 (epoch). El valor predeterminado es la fecha actual.
+   (Opcional) un valor de milisegundos compensado con respecto al 1 de enero de 1970 (epoch). El valor predeterminado es la fecha actual.
 
 * **formato**: Cadena
 
-   (opcional) El formato de fecha que se va a aplicar. El valor predeterminado es &quot;AAAA-MM-DDTHH:mm:ss.sssZ&quot; y el resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
+   (Opcional) El formato de fecha que se va a aplicar. El valor predeterminado es &quot;AAAA-MM-DDTHH:mm:ss.sssZ&quot; y el resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Ejemplos {#examples-1}
 
@@ -163,11 +164,11 @@ Un asistente para devolver contenido según una condición de igualdad.
 
 * **lvalue**: Cadena
 
-   El valor que se va a comparar a la izquierda
+   El valor que se va a comparar a la izquierda.
 
 * **rvalue**: Cadena
 
-   El valor de la derecha que se va a comparar
+   El valor de la derecha que se va a comparar.
 
 ### Ejemplo {#example-1}
 
@@ -181,17 +182,17 @@ Un asistente para devolver contenido según una condición de igualdad.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Asistente de bloque que prueba el valor actual del modo [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM con una lista de modos separados por cadenas.
+Asistente de bloque que prueba el valor actual del modo [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM con una lista de modos separada por cadenas.
 
 ### Parámetros {#parameters-4}
 
 * **contexto**: Cadena
 
-   (opcional) La cadena que se va a traducir. Necesario si no se proporciona ningún valor predeterminado.
+   (Opcional) La cadena que se va a traducir. Necesario si no se proporciona ningún valor predeterminado.
 
 * **modo**: Cadena
 
-   (opcional) Una lista separada por comas de los modos [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM que se van a probar si están configurados.
+   (Opcional) Una lista separada por comas de los modos [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM que se van a probar si están configurados.
 
 ### Ejemplo {#example-2}
 
@@ -213,15 +214,15 @@ Consulte también [Internacionalización de cadenas en código](../../help/sites
 
 * **contexto**: Cadena
 
-   (opcional) La cadena que se va a traducir. Necesario si no se proporciona ningún valor predeterminado.
+   (Opcional) La cadena que se va a traducir. Necesario si no se proporciona ningún valor predeterminado.
 
 * **predeterminado**: Cadena
 
-   (opcional) La cadena predeterminada que se va a traducir. Necesario si no se proporciona ningún contexto.
+   (Opcional) La cadena predeterminada que se va a traducir. Necesario si no se proporciona ningún contexto.
 
 * **comentario**: Cadena
 
-   (opcional) Una sugerencia de traducción
+   (Opcional) Una sugerencia de traducción
 
 ### Ejemplo {#example-3}
 
@@ -234,7 +235,7 @@ Consulte también [Internacionalización de cadenas en código](../../help/sites
 
 Un asistente para incluir un componente como recurso no existente en una plantilla.
 
-Esto permite que el recurso se personalice mediante programación más fácilmente de lo que es posible para un recurso agregado como nodo JCR. Consulte [Agregar o incluir un componente](scf.md#add-or-include-a-communities-component)de comunidades.
+Esto permite que el recurso se personalice mediante programación más fácilmente de lo que es posible para un recurso agregado como nodo JCR. Consulte [Añadir o incluir un componente](scf.md#add-or-include-a-communities-component)de comunidades.
 
 Solo se pueden incluir algunos componentes de Comunidades. Para AEM 6.1, los que son incluyentes son [comentarios](essentials-comments.md), [clasificación](rating-basics.md), [revisiones](reviews-basics.md)y [votación](essentials-voting.md).
 
@@ -244,27 +245,27 @@ Este asistente, adecuado solo en el servidor, proporciona una funcionalidad simi
 
 * **contexto**: Cadena u objeto
 
-   (opcional, a menos que se proporcione una ruta relativa)
+   (Opcional, a menos que se proporcione una ruta relativa)
 
-   usar `this`para pasar el contexto actual
+   Se utiliza `this` para pasar el contexto actual.
 
-   se utiliza `this.id` para obtener el recurso en `id` para procesar el resourceType solicitado
+   Se utiliza `this.id` para obtener el recurso en `id` para procesar el resourceType solicitado.
 
 * **resourceType**: Cadena
 
-   (opcional) el tipo de recurso predeterminado será el tipo de recurso del contexto
+   (Opcional) El tipo de recurso predeterminado será el tipo de recurso de contexto.
 
 * **plantilla**: Cadena
 
-   path to component script
+   Ruta al script de componente.
 
 * **path**: Cadena
 
-   (obligatorio) La ruta al recurso. Si la ruta es relativa, se debe proporcionar un contexto; de lo contrario, se devuelve la cadena vacía.
+   (Requerido) La ruta al recurso. Si la ruta es relativa, se debe proporcionar un contexto; de lo contrario, se devuelve la cadena vacía.
 
-* **authoringDisabled**:Booleano
+* **authoringDisabled**: Booleano
 
-   (opcional) El valor predeterminado es false. Solo para uso interno.
+   (Opcional) El valor predeterminado es false. Solo para uso interno.
 
 ### Ejemplo {#example-4}
 
@@ -272,7 +273,7 @@ Este asistente, adecuado solo en el servidor, proporciona una funcionalidad simi
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Esto incluirá un nuevo componente de comentarios en `this.id` + /comments
+Esto incluirá un nuevo componente de comentarios en `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -284,19 +285,19 @@ Este asistente, adecuado solo en el servidor, proporciona una funcionalidad simi
 
 * **categorías**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+   (Opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS de las categorías determinadas. El nombre del tema se extrae de la solicitud.
 
 * **tema**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con temas (CSS y JS) para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+   (Opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con el tema (CSS y JS) para las categorías dadas. El nombre del tema se extrae de la solicitud.
 
 * **js**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript para las categorías determinadas.
+   (Opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript de las categorías dadas.
 
 * **css**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS para las categorías determinadas.
+   (Opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS de las categorías dadas.
 
 ### Ejemplos {#examples-2}
 
@@ -383,7 +384,7 @@ NOTA: no es un validador y no se utiliza para escribir valores de atributos.
 
 * **contexto**: object
 
-   HTML que codificar
+   El HTML que se va a codificar.
 
 ### Ejemplo {#example-6}
 
@@ -395,13 +396,13 @@ NOTA: no es un validador y no se utiliza para escribir valores de atributos.
 
 Un asistente que codifica una cadena de origen para escribir en un valor de atributo HTML para ayudar a protegerse de XSS.
 
-NOTA: no es un validador y no se utiliza para escribir atributos procesables (href, src, controladores de eventos).
+NOTA: no es un validador y no se utiliza para escribir atributos procesables (href, src, controladores de evento).
 
 ### Parámetros {#parameters-10}
 
 * **contexto**: Objeto
 
-   El HTML que se va a codificar
+   El HTML que se va a codificar.
 
 ### Ejemplo {#example-7}
 
@@ -419,7 +420,7 @@ NOTA: no es un validador y no se utiliza para escribir en JavaScript arbitrario.
 
 * **contexto**: Objeto
 
-   El HTML que se va a codificar
+   El HTML que se va a codificar.
 
 ### Ejemplo {#example-8}
 
@@ -437,7 +438,7 @@ NOTA: esto puede devolver una cadena vacía
 
 * **contexto**: Objeto
 
-   La dirección URL que se va a sanear
+   Dirección URL que se va a sanear.
 
 ### Ejemplo {#example-9}
 
@@ -449,7 +450,7 @@ NOTA: esto puede devolver una cadena vacía
 
 Información general rápida sobre las funciones de ayuda de la documentación [de](https://handlebarsjs.com/expressions.html)Handlebars.js:
 
-* Una llamada de ayuda de Handlebars es un identificador simple (el *nombre *del asistente), seguido de cero o más parámetros separados por espacios.
+* Una llamada de ayuda de Handlebars es un identificador simple (el *nombre* del asistente), seguido de cero o más parámetros separados por espacios.
 * Los parámetros pueden ser un objeto String, number, booleano o JSON sencillo, así como una secuencia opcional de pares de clave-valor (argumentos hash) como los últimos parámetros.
 * Las claves de los argumentos hash deben ser identificadores simples.
 * Los valores de los argumentos hash son expresiones Handlebars: identificadores simples, rutas o cadenas.
@@ -567,6 +568,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >El componente se vuelve a procesar en el lado del cliente para el usuario que ha iniciado sesión y, si no se encuentra el asistente del lado del cliente, el componente desaparece.
 
+
 ### Ayudantes personalizados del lado del cliente {#client-side-custom-helpers}
 
 Los ayudantes del lado del cliente son scripts Handlebars registrados mediante invocación `Handlebars.registerHelper()`.
@@ -590,9 +592,9 @@ function(Handlebars, SCF, $CQ) {
 Los asistentes personalizados del lado del cliente deben agregarse a una biblioteca de cliente personalizada.
 La clientlib debe:
 
-* Incluir una dependencia de `cq.social.scf`
-* Cargar después de cargar las barras de controladores
-* Se [incluye](clientlibs.md)
+* Incluya una dependencia de `cq.social.scf`.
+* Cargue después de cargar las barras de controladores.
+* Esté [incluido](clientlibs.md).
 
 Nota: los ayudantes de SCF están definidos en `/etc/clientlibs/social/commons/scf/helpers.js`.
 
