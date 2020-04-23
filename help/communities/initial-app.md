@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,8 +19,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 En esta sección, creará lo siguiente:
 
-* La **[plantilla](#createthepagetemplate)**que se utilizará para crear páginas de contenido en el sitio web de ejemplo
-* El **[componente y la secuencia de comandos](#create-the-template-s-rendering-component)**que se utilizarán para procesar las páginas del sitio web
+* La **[plantilla](#createthepagetemplate)**que se utilizará para crear páginas de contenido en el sitio web de ejemplo.
+* El **[componente y la secuencia de comandos](#create-the-template-s-rendering-component)**que se utilizarán para procesar las páginas del sitio web.
 
 ## Creación de la plantilla de contenido {#create-the-content-template}
 
@@ -28,10 +28,10 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
 En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
-1. En el panel del explorador de CRXDE Lite
+1. En el panel del explorador de CRXDE Lite:
 
-   * select `/apps/an-scf-sandbox/templates`
-   * **[!UICONTROL Crear > Crear plantilla]**
+   * Seleccione `/apps/an-scf-sandbox/templates`
+   * **[!UICONTROL Crear]** > **[!UICONTROL Crear plantilla]**
 
 1. En el cuadro de diálogo Crear plantilla, escriba los valores siguientes y haga clic en **[!UICONTROL Siguiente]**:
 
@@ -44,7 +44,7 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
    El tipo de recurso aparece en el nodo jcr:content `playpage`de la propiedad `sling:resourceType`. Identifica el componente (recurso) que procesa el contenido cuando lo solicita un explorador.
 
-   En este caso, todas las páginas creadas con la `playpage`plantilla son representadas por el `an-scf-sandbox/components/playpage` componente. Por convención, la ruta del componente es relativa, lo que permite a Sling buscar el recurso primero en la `/apps` carpeta y, si no se encuentra, en la `/libs` carpeta.
+   En este caso, el componente procesa todas las páginas creadas con la `playpage` plantilla `an-scf-sandbox/components/playpage` . Por convención, la ruta del componente es relativa, lo que permite a Sling buscar el recurso primero en la `/apps` carpeta y, si no se encuentra, en la `/libs` carpeta.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -56,11 +56,11 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
    Para agregar una ruta, haga clic en el botón más `+` y escriba `/content(/.&ast;)?` en el cuadro de texto que aparece. Si utiliza copiar/pegar, asegúrese de que no hay espacios al inicio o al final.
 
-   Nota: El valor de la propiedad path permitida es una expresión *regular.* Las páginas de contenido que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de la carpeta **/content** y todas sus subpáginas.
+   Nota: El valor de la propiedad path permitida es una expresión *normal.* Las páginas de contenido que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión normal coincide con la ruta de la carpeta **/content** y todas sus subpáginas.
 
-   Cuando un autor crea una página a continuación `/content`, la `playpage`plantilla titulada &quot;Plantilla de página de Simulador para pruebas de SCF&quot; aparece en una lista de plantillas disponibles para usar.
+   Cuando un autor crea una página a continuación `/content`, la `playpage` plantilla titulada &quot;Plantilla de página de Simulador para pruebas SCF&quot; aparece en una lista de las plantillas disponibles para usar.
 
-   Después de crear la página raíz a partir de la plantilla, el acceso a la plantilla se puede restringir a este sitio Web modificando la propiedad para incluir la ruta raíz en la expresión regular, es decir,
+   Una vez creada la página raíz a partir de la plantilla, el acceso a la plantilla se puede restringir a este sitio Web modificando la propiedad para incluir la ruta raíz en la expresión normal, es decir,
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -74,7 +74,7 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
    Haga clic en **[!UICONTROL Aceptar]**.
 
-1. Una vez que haga clic en Aceptar y termine de crear la plantilla, observará que aparecen triángulos rojos en las esquinas de los valores de la ficha Propiedades para la nueva `playpage`plantilla. Estos triángulos rojos indican ediciones que no se han guardado.
+1. Una vez que haga clic en Aceptar y termine de crear la plantilla, observará que aparecen triángulos rojos en las esquinas de los valores de la ficha Propiedades para la nueva `playpage` plantilla. Estos triángulos rojos indican ediciones que no se han guardado.
 
    Haga clic en **[!UICONTROL Guardar todo]** para guardar la nueva plantilla en el repositorio.
 
@@ -100,7 +100,7 @@ Cree el *componente* que define el contenido y procesa todas las páginas creada
    * Agrupar:
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Haga clic en **[!UICONTROL Siguiente]** hasta que aparezca el panel Elementos secundarios **** permitidos del cuadro de diálogo
+1. Haga clic en **[!UICONTROL Siguiente]** hasta que aparezca el panel Elementos secundarios **** permitidos del cuadro de diálogo:
 
    * Haga clic en **[!UICONTROL Aceptar]**
    * Haga clic en **[!UICONTROL Guardar todo]**
