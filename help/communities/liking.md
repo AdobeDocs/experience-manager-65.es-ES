@@ -1,8 +1,8 @@
 ---
 title: Uso de "Me gusta"
 seo-title: Uso de "Me gusta"
-description: Adición y configuración del componente "Me gusta"
-seo-description: Adición y configuración del componente "Me gusta"
+description: Añadir y configurar el componente "Me gusta"
+seo-description: Añadir y configurar el componente "Me gusta"
 uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
 # Uso de &quot;Me gusta&quot; {#using-liking}
 
-El `Liking`componente es una herramienta útil que permite a los usuarios expresar una opinión sobre un contenido determinado, como un comentario dentro de un foro. Con el `Liking`componente, los miembros seleccionan el icono del corazón para indicar una opinión positiva.
+El `Liking` componente es una herramienta útil que permite a los usuarios expresar una opinión sobre un contenido determinado, como un comentario dentro de un foro. Con el `Liking` componente, los miembros seleccionan el icono del corazón para indicar una opinión positiva.
 
-## Adición de &quot;Me gusta&quot; a una página {#adding-liking-to-a-page}
+## Añadir &quot;Me gusta&quot; a una página {#adding-liking-to-a-page}
 
-Para agregar un `Liking` componente a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un `Liking` componente a una página en modo de autor, utilice el navegador de componentes para localizar:
 
 * `Communities / Liking`
 
@@ -43,13 +43,19 @@ En la ficha **[!UICONTROL Textos y etiquetas]** , especifique las propiedades ut
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Etiqueta]** de respuesta positiva (*obligatoria*) El nombre de la propiedad para una respuesta positiva.
+* **[!UICONTROL Etiqueta de respuesta positiva]**
 
-* **[!UICONTROL Etiqueta]** de respuesta negativa (*obligatoria*) El nombre de la propiedad para una respuesta negativa.
+   (*Requerido*) El nombre de la propiedad para una respuesta positiva.
 
-* **[!UICONTROL Tally Name]**(*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
+* **[!UICONTROL Etiqueta de respuesta negativa]**
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+   (*Requerido*) El nombre de la propiedad para una respuesta negativa.
+
+* **[!UICONTROL Nombre de recuento]**
+
+   (*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
+
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 
