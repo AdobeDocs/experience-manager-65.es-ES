@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -29,11 +29,11 @@ Visite la información general de moderación para ver una descripción de las a
 
 La interfaz de usuario presentada al moderador en la instancia de publicación está incluida en el cuadro de diálogo para publicar y administrar el contenido generado por el usuario (UGC). Los elementos de la interfaz de usuario están determinados por el estado del visitante del sitio, independientemente de si lo están...
 
-1. El miembro que publicó el contenido
-1. Un moderador de miembros de confianza
-1. Un administrador
-1. Ha iniciado sesión, pero no es administrador, moderador ni autor del contenido
-1. No ha iniciado sesión
+1. El miembro que publicó el contenido.
+1. Un moderador de miembros de confianza.
+1. Un administrador.
+1. Ha iniciado sesión, pero no es administrador, moderador ni autor del contenido.
+1. No ha iniciado sesión.
 
 ## Ejemplo {#example}
 
@@ -87,7 +87,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
 
 A continuación se muestra una vista del foro vista por un visitante del sitio que no ha iniciado sesión (5).
 
-Un visitante anónimo del sitio solo puede ver el foro, pero no puede publicar contenido ni realizar acciones de moderación.
+Un visitante anónimo del sitio solo puede realizar vistas en el foro, pero no puede publicar contenido ni realizar acciones de moderación.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -97,11 +97,11 @@ En el momento del autor, inicie sesión como administrador y agregue Boyd Larsen
 
 Al publicar, inicie sesión como Boyd Larsen y acceda al subproceso seleccionando `Forum`y, a continuación, `Read more` para el anuncio de colibrí.
 
-Aviso
+Aviso:
 
-* Boyd no ha participado en el foro
-* Boyd no puede eliminar nada
-* Boyd ha iniciado sesión y puede responder o marcar el contenido
+* Boyd no ha participado en el foro.
+* Boyd no puede eliminar nada.
+* Boyd ha iniciado sesión y puede responder o marcar el contenido.
 
 Haga que Boyd seleccione Marcar para marcar el contenido publicado por Andrew.
 
@@ -113,10 +113,10 @@ Cerrar sesión
 
 Inicie sesión como administrador (administrador) y acceda al subproceso seleccionando Foro y, a continuación, Leer más para un anuncio.
 
-Aviso
+Aviso:
 
-* El administrador puede marcar, eliminar, editar, denegar, cortar, cerrar, fijar, función
-* El administrador puede seleccionar Administración para acceder a la consola de moderación
+* El administrador puede marcar, eliminar, editar, denegar, cortar, cerrar, fijar, función.
+* El administrador puede seleccionar Administración para acceder a la consola de moderación.
 
 ![community-admin-forum](assets/communityadmin-forum.png)
 
@@ -134,12 +134,12 @@ Cerrar sesión.
 
 Inicie sesión como Aaron McDonald (aaron.mcdonal@mailinator.com), un moderador de la comunidad, y acceda al hilo seleccionando Foro y, a continuación, lea más para la publicación de comingbird.
 
-Aviso
+Aviso:
 
-* Aaron puede responder, eliminar, editar o denegar su propia publicación
-* Aaron también puede marcar/permitir, responder, eliminar, editar y denegar otro contenido
-* Aaron puede cortar el tema del foro para trasladarlo a otro foro del que él modera
-* Aaron puede seleccionar Administración para acceder a la consola de moderación
+* Aaron puede responder, eliminar, editar o denegar su propia publicación.
+* Aaron también puede marcar/permitir, responder, eliminar, editar y denegar otro contenido.
+* Aaron puede cortar el tema del foro para trasladarlo a otro foro del que él modera.
+* Aaron puede seleccionar Administración para acceder a la consola de moderación.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -157,11 +157,11 @@ Cerrar sesión.
 
 Inicie sesión como Rebekah Larsen (rebekah.larsen@mailinator.com), un miembro de la comunidad que inició el subproceso, y acceda al subproceso seleccionando Foro y, a continuación, lea más para el anuncio de comingbird.
 
-Aviso
+Aviso:
 
-* Rebekah puede eliminar o editar su propio post
-* Rebekah también puede responder o marcar otro contenido
-* Rebekah no puede acceder a la consola de moderación
+* Rebekah puede eliminar o editar su propio post.
+* Rebekah también puede responder o marcar otro contenido.
+* Rebekah no puede acceder a la consola de moderación.
 
 ![climage_1-3](assets/chlimage_1-3.png)
 
