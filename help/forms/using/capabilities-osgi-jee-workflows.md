@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
+source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
 
 ---
 
@@ -79,12 +79,17 @@ Puede utilizar la Bandeja de entrada de AEM para ejecutar y supervisar Flujos de
   </tr>
   <tr>
    <td>Colas (cola personal compartida, reclamar tareas de la cola)</td>
-   <td>No compatible</td>
+   <td>Compatible</td>
    <td>Compatible</td>
   </tr>
   <tr>
    <td>Notificación fuera de la oficina</td>
-   <td>No compatible</td>
+   <td>Compatible</td>
+   <td>Compatible</td>
+  </tr>
+    <tr>
+   <td>Personalización de elementos de la interfaz de usuario</td>
+   <td>Compatible</td>
    <td>Compatible</td>
   </tr>
   <tr>
@@ -303,6 +308,11 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y Flujos de trabaj
   </tr>
   <tr>
    <td>Gateways, SIN ESPERANZA </td>
+   <td>Compatible</td>
+   <td>Compatible</td>
+  </tr>
+   <tr>
+   <td>Variables para almacenar datos </td>
    <td>Compatible</td>
    <td>Compatible</td>
   </tr>
