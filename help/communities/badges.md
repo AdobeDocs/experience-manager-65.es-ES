@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -32,9 +32,9 @@ Actualmente, las insignias que un miembro de la comunidad gana o se asigna apare
 * [Foros](/help/communities/enabling-leaderboard.md)
 * [Ideación](/help/communities/ideation-feature.md)
 
-En el entorno de creación, para acceder a la consola Badges
+En el entorno del autor, para llegar a la consola Badges
 
-* Desde la navegación global, vaya a Herramientas de control **[UIC > Comunidades > Distintivos]**
+* Desde la navegación global, vaya a **[!UICONTROL Herramientas > Comunidades > Distintivos]**
 
 Esta consola muestra las insignias disponibles actualmente y desde las cuales se pueden agregar nuevas insignias.
 
