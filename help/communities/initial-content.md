@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 En esta sección, se crean las páginas siguientes que utilizan la plantilla [de](initial-app.md#createthepagetemplate)página:
 
-* Sitio de Simulador para pruebas SCF, que redireccionará a la versión en inglés de la página principal
+* Sitio de Simulador para pruebas SCF, que redireccionará a la versión en inglés de la página principal.
 
-   * Simulador para pruebas SCF: la página principal de la versión en inglés del sitio
+   * Simulador para pruebas SCF: la página principal de la versión en inglés del sitio.
 
-      * Reproducción SCF - Elemento secundario de la página principal en la que se debe reproducir
+      * Reproducción SCF - Elemento secundario de la página principal en la que se va a reproducir.
 
 Aunque este tutorial no profundiza en las copias [de](../../help/sites-administering/tc-prep.md)idioma, está diseñado para que la página raíz pueda implementar la detección del idioma preferido para el usuario a través del encabezado HTML y redireccionar a la página principal correspondiente para el idioma. La convención es utilizar el código de país de dos letras para el nombre de nodo de la página, por ejemplo, &quot;en&quot; para inglés, &quot;fr&quot; para francés, etc.
 
@@ -45,7 +45,7 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
 
    También puede acceder directamente a la IU clásica para sitios web navegando hasta [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. En el panel del explorador, seleccione **[!UICONTROL Sitios]** web y, a continuación, en la barra de herramientas, seleccione **[!UICONTROL Nuevo > Nueva página]**.
+1. En el panel del explorador, seleccione **[!UICONTROL Sitios]** web y, a continuación, en la barra de herramientas, seleccione **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
 
    En el cuadro de diálogo **[!UICONTROL Crear página]** , escriba lo siguiente:
 
@@ -55,14 +55,14 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
    * Haga clic en **[!UICONTROL Crear]**
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo > Nueva página]**:
+1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**:
 
    * Título: `SCF Sandbox`
    * Nombre: `en`
    * Seleccionar **una plantilla de reproducción de Simulador para pruebas SCF **
    * Haga clic en **Crear **
 
-1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site/SCF Sandbox`y haga clic en **[!UICONTROL Nuevo > Nueva página]**
+1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site/SCF Sandbox`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**
 
    * Título: `SCF Play`
    * Nombre: `play`
@@ -77,9 +77,9 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-## Agregar la ruta de diseño {#add-the-design-path}
+## Añadir la ruta de diseño {#add-the-design-path}
 
-Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` se creó mediante la sección de diseños de la consola Herramientas, la propiedad &quot;
+Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` se creó con la sección de diseños de la consola Herramientas, la propiedad &quot;
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
@@ -105,4 +105,5 @@ El texto del repositor será el siguiente:
 >[!NOTE]
 >
 >El uso de cq:designPath es opcional y no está relacionado con el [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que son esencialmente obligatorios, ya que los componentes de SCF utilizan [clientlibs](client-customize.md#clientlibs-for-scf) para administrar sus JS y CSS.
+
 
