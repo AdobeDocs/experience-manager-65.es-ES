@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -47,7 +47,7 @@ En el paso [Plantilla de](/help/communities/sites-console.md#step2013asitetempla
 
 * **Nombre** del sitio de la comunidad: participar
 
-   * Verifique dos veces el nombre, ya que no es fácil cambiarlo después de crear el sitio
+   * Compruebe el Doble del nombre, ya que no es fácil cambiarlo después de crear el sitio
    * La dirección URL inicial se mostrará debajo del nombre del sitio de la comunidad
    * Para una dirección URL válida, anexe un código de idioma base + &quot;.html&quot;
    * *Por ejemplo*, https://localhost:4502/content/sites/ `engage/en.html`
@@ -83,7 +83,7 @@ Visite el tutorial [Introducción a Comunidades de AEM para la habilitación](/h
 Marcar todas las casillas de verificación para Administración [de usuarios](/help/communities/sites-console.md#user-management)
 
 * Para permitir que los visitantes del sitio se automatriculen
-* Permitir que los visitantes del sitio vean el sitio sin iniciar sesión
+* Permitir que los visitantes del sitio realicen la vista del sitio sin iniciar sesión
 * Permitir a los miembros enviar y recibir mensajes de otros miembros de la comunidad
 * Permitir el inicio de sesión con Facebook en lugar de registrar y crear un perfil
 * Permitir el inicio de sesión con Twitter en lugar de registrar y crear un perfil
@@ -96,9 +96,9 @@ Marcar todas las casillas de verificación para Administración [de usuarios](/h
 
 #### TAGGING {#tagging}
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando los espacios de nombres de AEM definidos previamente mediante la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como el espacio de nombres [Tutorial](/help/communities/setup.md#create-tutorial-tags)).
+Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando Áreas de nombres de AEM previamente definidas a través de la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](/help/communities/setup.md#create-tutorial-tags)Tutorial).
 
-La búsqueda de espacios de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
+La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
 
 * Tipo `tut`
 * Seleccione `Tutorial`
@@ -200,7 +200,7 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 
 * **Eliminar sitio**
 
-   Seleccione el icono Eliminar para eliminar el sitio de la comunidad desde la consola **[UIControl Communities > Sites]**. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, recursos y registros de bases de datos.
+   Seleccione el icono Eliminar para eliminar el sitio de comunidad desde la consola **** Comunidades > Sitios. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, recursos y registros de bases de datos.
 
 ![siteacciones](assets/siteactions.png)
 
@@ -210,17 +210,17 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 >
 >En la instancia de creación, en el menú principal:
 >
->1. Vaya al menú **[Herramientas de control de UIC > Operaciones > Replicación]** .
->1. Seleccione Agentes **[UIControl en el autor]**.
->1. Seleccione **[Agente predeterminado de UIControl (publicación)]**.
->1. Junto a Configuración **[de]** UIControl, seleccione Editar **[]** UIControl.
->1. En el cuadro de diálogo emergente Configuración del agente, seleccione la ficha Transporte **[de]** UIControl.
+>1. Vaya al menú **[!UICONTROL Herramientas > Operaciones > Replicación]** .
+>1. Seleccione **[!UICONTROL Agentes en el autor]**.
+>1. Seleccione Agente **[!UICONTROL predeterminado (publicación)]**.
+>1. Junto a **[!UICONTROL Configuración]**, seleccione **[!UICONTROL Editar]**.
+>1. En el cuadro de diálogo emergente Configuración del agente, seleccione la ficha **[!UICONTROL Transporte]** .
 >1. En URI, cambie el número de puerto, 4503, al número de puerto deseado >
    >    * Por ejemplo, para utilizar el puerto 6103:
       >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
-1. Seleccione **[UIControl OK]**.
-1. (Opcional) Seleccione **[UIControl Clear]** o **[UIControl Force Retry]** para restablecer la cola de replicación.
+1. Seleccione **[!UICONTROL Aceptar]**.
+1. (Opcional) Seleccione **[!UICONTROL Borrar]** o **[!UICONTROL Forzar reintento]** para restablecer la cola de replicación.
 
 
 
@@ -264,15 +264,15 @@ Tenga en cuenta que [Aaron McDonald](/help/communities/tutorials.md#demo-users) 
 
 Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](/help/communities/sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación volverá a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
-Agregar un `Login Page Mapping` como
+Añadir un `Login Page Mapping` como
 
 * `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 ## Pasos opcionales {#optional-steps}
 
-### Cambiar la página principal predeterminada {#change-the-default-home-page}
+### Cambiar la Página de inicio predeterminada {#change-the-default-home-page}
 
-Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página principal predeterminada al nuevo sitio.
+Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página de inicio predeterminada al nuevo sitio.
 
 Para ello, es necesario utilizar [CRXDE](https://localhost:4503/crx/de) Lite para editar la tabla de asignación [de](/help/sites-deploying/resource-mapping.md) recursos al realizar la publicación.
 
@@ -291,12 +291,12 @@ Para empezar:
 
 1. Con `localhost.4503` nodo recién creado seleccionado:
 
-   * Agregar propiedad:
+   * Añadir propiedad:
 
       * **Nombre** sling:match
       * **Cadena de tipo**
       * **Valor** localhost.4503/$(debe terminar con &#39;$&#39; char)
-   * Agregar propiedad:
+   * Añadir propiedad:
 
       * **Nombre** sling:internalRedirect
       * **Cadena de tipo**
@@ -317,13 +317,13 @@ Para empezar:
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
-Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo está `localhost.4503`separado por un separador de puntos y no `localhost:4503` por un separador de dos puntos, ya que no `localhost`es un prefijo de espacio de nombres válido.
+Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo está `localhost.4503`separado por un separador de puntos y no `localhost:4503` por un separador de puntos, ya que no `localhost`es un prefijo de Área de nombres válido.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
-El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión regular es crucial, por lo que solo `https://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
+El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión normal es crucial, por lo que solo `https://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
 
 ### Modificar el sitio {#modify-the-site}
 
@@ -335,5 +335,5 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](/help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre la gestión [](/help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
