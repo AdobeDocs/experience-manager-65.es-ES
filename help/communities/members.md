@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -23,28 +23,30 @@ Las funciones de comunidades AEM suelen requerir que los visitantes del sitio se
 
 ### Miembros (usuarios) en la publicación {#members-users-on-publish}
 
-Mediante las consolas Miembros y grupos de comunidades, los miembros y grupos miembros registrados en el entorno de *publicación* pueden crearse y gestionarse desde el entorno de *creación* . Esto solo es posible cuando el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel está habilitado.
+Mediante las consolas Miembros y Grupos de Comunidades, los miembros y grupos miembros registrados en el entorno de *publicación* podrán crearse y gestionarse desde el entorno de *creación* . Esto solo es posible cuando el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel está habilitado.
 
 ### Usuarios en el autor {#users-on-author}
 
 Para administrar usuarios y grupos registrados en el entorno de *creación* , es necesario utilizar la consola de seguridad de la plataforma:
 
-* Desde la navegación global seleccione `Tools, Security, Users`
-* Desde la navegación global seleccione `Tools, Security, Groups`
+* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
+* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Grupos]**.
 
 >[!NOTE]
 >
->Con el contenido de muestra implementado y habilitado, muchos usuarios de muestra existen tanto en los entornos de autor como de publicación. Estos usuarios no estarán presentes cuando se ejecuten con [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
+>Con el contenido de muestra implementado y activado, muchos usuarios de muestra existen tanto en los entornos de autor como de publicación. Estos usuarios no estarán presentes cuando se ejecuten con [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
+
 
 ## Consola de miembros {#members-console}
 
-En el entorno de creación, para acceder a la consola Miembros para administrar miembros registrados en el entorno de publicación:
+En el entorno de creación, para llegar a la consola Miembros para administrar los miembros registrados en el entorno de publicación:
 
-* Desde la navegación global: **[!UICONTROL Navegación > Comunidades > Miembros]**
+* En la navegación global, seleccione **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Miembros]**
 
 >[!CAUTION]
 >
 >No será posible utilizar la consola Miembros si el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel no está habilitado.
+
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -58,11 +60,11 @@ Seleccione el icono de búsqueda en la parte izquierda del encabezado para `Memb
 
 ### Estadísticas de los miembros {#member-statistics}
 
-Las columnas que se muestran `Views`, `Posts`y `Follows`se actualizan cuando el usuario es miembro de uno o varios sitios de la comunidad con Adobe Analytics `Likes` habilitado [](sites-console.md#analytics).
+Las columnas que se muestran `Views`, `Posts``Follows` y `Likes` se actualizan cuando el usuario es miembro de uno o varios sitios de comunidad con Adobe Analytics [habilitado](sites-console.md#analytics).
 
 ### Exportar CSV {#export-csv}
 
-Al seleccionar el `Export CSV` vínculo, se descargan todos los miembros como una lista de valores separados por comas, adecuados para la importación en una hoja de cálculo.
+Si selecciona el `Export CSV` vínculo, se descargarán todos los miembros como una lista de valores separados por comas, lo cual resulta adecuado para importarlos a una hoja de cálculo.
 
 Los encabezados de columna son
 
@@ -78,26 +80,38 @@ Seleccione esta opción `Create Member` para crear un usuario en el entorno de p
 
 La mayoría de los campos son campos opcionales que el miembro puede rellenar posteriormente en su perfil.
 
-* **[!UICONTROL ID]**(*obligatorio*) El ID de inicio de sesión del miembro es el ID de autorización.
+* **[!UICONTROL ID]**
+
+(*Requerido*) El ID autorizable es el ID de inicio de sesión del miembro.
 De forma predeterminada, el ID se establece en el valor de la dirección de correo electrónico requerida.
-   *Una vez creado, el ID no puede modificarse.*
+*Una vez creado, el ID no puede modificarse*.
 
-* **[!UICONTROL Dirección]** de correo electrónico (*obligatoria*) La dirección de correo electrónico del miembro.
-El miembro puede cambiar su dirección de correo electrónico al actualizar su perfil. Si el ID es predeterminado en la dirección de correo electrónico, el ID *no cambiará* cuando se cambie la dirección de correo electrónico.
+* **[!UICONTROL Dirección de correo electrónico]**
 
-* **[!UICONTROL Contraseña]**(*obligatoria*) La contraseña de inicio de sesión.
+(*Requerido*) La dirección de correo electrónico del miembro.
+El miembro puede cambiar su dirección de correo electrónico al actualizar su perfil.Si el ID predeterminado es la dirección de correo electrónico, el ID *no cambiará* cuando se cambie la dirección de correo electrónico.
 
-* **[!UICONTROL Vuelva a escribir la contraseña]**(*obligatoria*) Vuelva a escribir la contraseña para la verificación.
+* **[!UICONTROL Contraseña]**
 
-* **[!UICONTROL Agregar miembro a sitios]**(*opcional*) Seleccione uno de los sitios de comunidad existentes para agregar el miembro al grupo de miembros del sitio de la comunidad.
+   (*Requerido*) La contraseña de inicio de sesión.
 
-* **[!UICONTROL Agregar miembro a grupos]**(*opcional*) Seleccione entre los grupos de miembros existentes para agregar el miembro a ese grupo.
+* **[!UICONTROL Repetir contraseña]**
+
+   (*Obligatorio*) Vuelva a introducir la contraseña para la verificación.
+
+* **[!UICONTROL Añadir miembro a los sitios]**
+
+   (*Opcional*) Seleccione uno de los sitios de comunidad existentes para agregar el miembro al grupo de miembros del sitio de comunidad.
+
+* **[!UICONTROL Añadir miembro a los grupos]**
+
+   (*Opcional*) Seleccione uno de los grupos de miembros existentes para agregar el miembro a ese grupo.
 
 * Seleccione **[!UICONTROL Guardar]**
 
 ### GENERAL: Configuración de la cuenta {#general-account-settings}
 
-En Configuración de cuenta, un administrador de la comunidad puede
+En Configuración de cuenta, un administrador de la comunidad puede:
 
 * **[!UICONTROL Estado]**
    * ProhibidoUn miembro no puede iniciar sesión, lo que les impide ver páginas o participar en actividades que requieren iniciar sesión. Pueden seguir visitando anónimamente un sitio de la comunidad abierta.
@@ -105,11 +119,15 @@ En Configuración de cuenta, un administrador de la comunidad puede
    * No prohibidoUn miembro tiene acceso completo al sitio de la comunidad.
    El valor predeterminado es `Not Banned`.
 
-* **[!UICONTROL Límites]**de contribución Si se selecciona, la capacidad del miembro para anunciar contenido es limitada.
+* **[!UICONTROL Límites de contribución]**
+
+   Si se selecciona, la capacidad del miembro para publicar contenido es limitada.
 El valor predeterminado depende de la configuración de los límites de contribución.
 Consulte Límites [de contribución de miembros](limits.md).
 
-* **[!UICONTROL Cambiar contraseña]** Vínculo que está presente al modificar un miembro existente. Proporciona a un administrador de la comunidad la capacidad de restablecer una contraseña para un miembro.
+* **[!UICONTROL Cambiar contraseña]**
+
+   Vínculo que está presente al modificar un miembro existente. Proporciona a un administrador de la comunidad la capacidad de restablecer una contraseña para un miembro.
 
 ### GENERAL - Foto {#general-photo}
 
@@ -131,24 +149,25 @@ Consulte también [Puntuación y distintivos](implementing-scoring.md).
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
-* **[!UICONTROL Agregar distintivos]**
+* **[!UICONTROL Añadir distintivos]**
    * Empiece a escribir para seleccionar los distintivos [](badges.md)disponibles. Una vez seleccionado un distintivo, elija cada sitio, o todos los sitios, en los que el distintivo debe mostrarse junto con el avatar del miembro.
    * Se pueden elegir varios distintivos y sitios.
 * **[!UICONTROL Eliminar distintivos]**
-   * Seleccione el icono de papelera situado junto a un distintivo para eliminarlo
+   * Seleccione el icono de papelera situado junto a un distintivo para eliminarlo.
 
 ## Consola Grupos {#groups-console}
 
-La consola Grupos, disponible desde el entorno de creación, permite la creación y administración de grupos de miembros registrados en el entorno de publicación. Resulta especialmente útil para:
+La consola Grupos, disponible desde el entorno de creación, permite crear y administrar grupos de miembros registrados en el entorno de publicación. Resulta especialmente útil para:
 * [Grupos de miembros privilegiados](users.md#privilegedmembersgroups)
 * Asignación de recursos de [habilitación basada en grupos](resources.md)
 
 Para acceder a la consola Grupos:
-* Desde la navegación global: **[!UICONTROL Navegación > Comunidades > Grupos]**
+* En la navegación global, seleccione **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Grupos]**.
 
 >[!CAUTION]
 >
 >No será posible utilizar la consola Grupos si el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel no está habilitado.
+
 
 ### Crear un grupo nuevo {#create-new-group}
 
@@ -158,16 +177,25 @@ Seleccione esta opción `Add Group` para crear un grupo en el entorno de publica
 
 Los campos necesarios para crear un nuevo grupo de miembros del lado de publicación son:
 
-* **[!UICONTROL ID]**(*requerido*) El ID único del grupo.
+* **[!UICONTROL ID]**
+
+   (*Requerido*) El ID exclusivo del grupo.
+
    *Una vez creado, el ID no puede modificarse.*
 
-* **[!UICONTROL Nombre]**(*opcional*) El nombre para mostrar del grupo.
+* **[!UICONTROL Nombre]**
+
+   (*Opcional*) El nombre para mostrar del grupo.
 
    El valor predeterminado es el ID.
 
-* **[!UICONTROL Descripción]**(*opcional*) Una descripción del propósito y los permisos del grupo.
+* **[!UICONTROL Descripción]**
 
-* **[!UICONTROL Agregar miembros al grupo]**(*opcional*) Seleccione los miembros del lado de publicación que se incluirán como miembros iniciales del grupo.
+   (*Opcional*) Una descripción del propósito y los permisos del grupo.
+
+* **[!UICONTROL Añadir miembros al grupo]**
+
+   (*Opcional*) Seleccione los miembros del lado de publicación que se incluirán como miembros iniciales del grupo.
 
 * Seleccione **[!UICONTROL Guardar]**
 
