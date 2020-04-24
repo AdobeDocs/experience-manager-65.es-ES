@@ -3,7 +3,7 @@ title: Procesar recursos con controladores de medios y flujos de trabajo
 description: Obtenga información sobre los controladores de medios y cómo utilizar flujos de trabajo para realizar tareas en los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -39,7 +39,7 @@ Los siguientes controladores de medios están disponibles en Recursos AEM y cont
 | [!UICONTROL MSOfficeHandler] | `com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler` | application/msword |
 | [!UICONTROL MSPowerPointHandler] | `com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler` | application/vnd.ms-powerpoint |
 | [!UICONTROL OpenOfficeHandler] | `com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler` | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
-| [!UICONTROL EPubHandler] | `com.day.cq.dam.handler.standard.epub.EPubHandler` | aplicación/epub+zip |
+| [!UICONTROL EPubHandler] | `com.day.cq.dam.handler.standard.epub.EPubHandler` | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | `com.day.cq.dam.core.impl.handler.GenericAssetHandler` | alternativa en caso de que no se encontrara ningún otro controlador para extraer datos de un recurso |
 
 Todos los controladores realizan las siguientes tareas:
@@ -496,7 +496,7 @@ A continuación, agregue el paso del proceso de la línea de comandos al flujo d
 
 Para probar el flujo de trabajo modificado, agregue un recurso a `/content/dam`.
 
-1. En el sistema de archivos, obtenga una imagen .tiff de su elección. Cambie su nombre `myImage.tiff` y cópielo en `/content/dam`, por ejemplo, mediante WebDAV.
+1. En el sistema de archivos, obtenga una imagen TIFF de su elección. Cambie su nombre `myImage.tiff` y cópielo en `/content/dam`, por ejemplo, mediante WebDAV.
 1. Vaya a la consola **[!UICONTROL CQ5 DAM]** , por ejemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra el recurso **[!UICONTROL myImage.tiff]** y compruebe que se hayan creado la imagen volteada y las tres miniaturas.
 
@@ -516,7 +516,7 @@ Por ejemplo, si ImageMagick está instalado en el disco que aloja el servidor AE
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-a continuación, cuando se ejecuta el flujo de trabajo, el paso solo se aplica a los recursos que tienen tipo mime/gif o mime:image/tiff, crea una imagen al revés del original, la convierte en .jpg y crea tres miniaturas con las dimensiones siguientes: 140 x 100, 48 x 48 y 10 x 250.
+a continuación, cuando se ejecuta el flujo de trabajo, el paso solo se aplica a los recursos que tienen `image/gif` o `mime:image/tiff` como `mime-types`, crea una imagen volteada del original, la convierte en JPG y crea tres miniaturas con las dimensiones siguientes: 140 x 100, 48 x 48 y 10 x 250.
 
 Utilice los siguientes argumentos [!UICONTROL de proceso] para crear las tres miniaturas estándar con ImageMagick:
 
