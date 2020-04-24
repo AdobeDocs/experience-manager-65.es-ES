@@ -1,14 +1,14 @@
 ---
-title: API HTTP de recursos
+title: API de HTTP de Assets
 description: Obtenga información sobre la implementación, el modelo de datos y las características de la API HTTP de Assets. Utilice la API HTTP de Assets para realizar varias tareas en torno a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# API HTTP de recursos {#assets-http-api}
+# API de HTTP de Assets {#assets-http-api}
 
 ## Información general {#overview}
 
@@ -54,7 +54,7 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 * `parent`:: Vínculo a la carpeta principal
 * `thumbnail`:: (Opcional) vínculo a una imagen en miniatura de la carpeta
 
-### Recursos {#assets}
+### Assets {#assets}
 
 En AEM, los recursos contienen los siguientes elementos:
 
@@ -118,9 +118,9 @@ La clase de la entidad devuelta es assets/folder.
 
 Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la URL señalada por el vínculo con un `rel` de `self`.
 
-## Crear una carpeta {#create-a-folder}
+## Create a Folder {#create-a-folder}
 
-Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si se da un * en lugar de un nombre de nodo, el servlet utilizará el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta de URL.
+Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si se da un * en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
 
 La operación fallará con un código de `500` respuesta si el nodo principal de la ruta dada no existe. Si la carpeta ya existe, se devuelve un código de `409` respuesta.
 
@@ -200,7 +200,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @
 
 ## Actualización de metadatos de recursos {#update-asset-metadata}
 
-Actualiza las propiedades de metadatos de recurso. Si actualiza cualquier propiedad del `dc:` espacio de nombres, la API actualiza la misma propiedad en el `jcr` espacio de nombres. La API no sincroniza las propiedades de los dos espacios de nombres.
+Actualiza las propiedades de metadatos de recurso. Si actualiza cualquier propiedad de la `dc:` Área de nombres, la API actualiza la misma propiedad en la `jcr` Área de nombres. La API no sincroniza las propiedades de las dos Áreas de nombres.
 
 **Solicitar**
 
