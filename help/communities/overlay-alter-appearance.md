@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -24,25 +24,25 @@ La secuencia de comandos comment.hbs es responsable de crear el HTML general par
 
 Para no mostrar el avatar al lado de cada comentario publicado:
 
-1. copiar `comment.hbs`de `libs`a `apps`
+1. Copiar `comment.hbs`de `libs`a `apps`
 
-   1. select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. seleccionar **Copiar**
-   1. select `/apps/social/commons/components/hbs/comments/comment`
-   1. seleccionar **Pegar**
+   1. Seleccione `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Seleccionar **copia**
+   1. Seleccione `/apps/social/commons/components/hbs/comments/comment`
+   1. Seleccionar **pegar**
 
-1. abrir las superposiciones `comment.hbs`
+1. Abrir las superposiciones `comment.hbs`
 
-   * haga doble clic en el nodo `comment.hbs`en `/apps/social/commons/components/hbs/comments/comment folder`
+   * Doble-clic en el nodo `comment.hbs` en `/apps/social/commons/components/hbs/comments/comment folder`
 
-1. busque las líneas siguientes y elimínelas o coméntelas:
+1. Busque las líneas siguientes y elimínelas o coméntelas:
 
 ```xml
   <aside class="scf-comment-author">
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Elimine las líneas o rodearlas con &#39;&lt;!—&#39; y &#39;—>&#39; para comentarlos. Además, los caracteres &#39;xxx&#39; se están agregando como un indicador visual de dónde se habría encontrado el avatar.
+Elimine las líneas o rodeándolas con `<!--` y `-->` comentándolas. Además, los caracteres &#39;xxx&#39; se están agregando como un indicador visual de dónde se habría encontrado el avatar.
 
 ```xml
    xxx
@@ -59,13 +59,14 @@ Inserte el componente de comentarios superpuestos en la instancia de publicació
 >
 >Una forma más sólida de replicación sería crear un paquete en el Administrador de paquetes y [activarlo](/help/sites-administering/package-manager.md#replicating-packages) . Se puede exportar y archivar un paquete.
 
-En la navegación global, seleccione **Herramientas, Implementación, Replicación** y, a continuación, **Activar árbol**.
 
-Para la ruta de inicio, introduzca `/apps/social/commons`** **y seleccione **Activar**.
+En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** y haga clic en **[!UICONTROL Activar árbol]**.
+
+Para la Ruta de Inicio, introduzca `/apps/social/commons` y seleccione **[!UICONTROL Activar]**.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Ver resultados {#view-results}
+### Resultados de Vista {#view-results}
 
 Si inicia sesión en la instancia de publicación como administrador, por ejemplo: https://localhost:4503/crx/de como administrador/administrador, puede comprobar que los componentes superpuestos están allí.
 
