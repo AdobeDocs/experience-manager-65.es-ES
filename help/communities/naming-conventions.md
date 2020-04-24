@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ---
 
@@ -23,7 +23,7 @@ Al crear una ubicación para una clase Java, tenga en cuenta que el nombre del p
 
 Aunque el uso de guiones en los nombres de los elementos del repositorio es una práctica recomendada en el desarrollo de AEM, los guiones no son válidos en los nombres de paquetes de Java.
 
-La plataforma CRX subyacente debe poder distinguir entre un guión bajo &#39;_&#39; real y un guión &#39;-&#39;. Por lo tanto, en JCR, el guión debe reemplazarse por su valor Unicode (u002d) y escaparse con un guión bajo &#39;_&#39;.
+La plataforma CRX subyacente debe poder distinguir entre un guión bajo real `_ `y un guión `-`. Por lo tanto, en JCR, el guión debe reemplazarse por su valor Unicode (u002d) y escaparse con un guión bajo `_`.
 
 Por ejemplo, si la ruta del repositorio es **/apps/my-example/component/info/Info.java**, el nombre del paquete debe ser `java package apps.my_002dexample.component.info;`
 
