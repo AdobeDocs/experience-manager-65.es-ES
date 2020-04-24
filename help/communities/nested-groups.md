@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ---
 
@@ -22,9 +22,9 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 En la instancia de AEM Author, desde la navegación global:
 
-* Seleccione** Comunidades, Sitios.**
-* Seleccione **la carpeta** de participación para abrirla.
-* Seleccione la tarjeta para el sitio **Tutorial** de introducción en inglés.
+* Seleccione **[!UICONTROL Comunidades] > **[!UICONTROL Sitios]**.
+* Seleccione **[!UICONTROL la carpeta]** de participación para abrirla.
+* Seleccione la tarjeta para el sitio **[!UICONTROL Tutorial]** de introducción en inglés.
 
    * Seleccione la imagen de la tarjeta.
    * No *seleccione* ningún icono.
@@ -43,43 +43,43 @@ Este grupo se puede crear porque la estructura del sitio para la participación 
 
 Estas consolas son similares a la consola Sitios de comunidades.
 
-* Seleccione **Crear grupo.**
+* Seleccione **[!UICONTROL Crear grupo]**.
+
 * **Plantilla del grupo de la comunidad**:
 
-   * Título del grupo de la comunidad: Artes.
-   * Descripción del grupo de la comunidad: Un grupo de padres para varios grupos de artes.
-   * Raíz del grupo de la comunidad: *dejar como predeterminado.*
-   * Idioma(s) adicional(s) disponible(s) del grupo de la comunidad: utilice el menú desplegable para seleccionar los idiomas de grupo de comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los respectivos sitios de la comunidad.
-   * Nombre del grupo de la comunidad: Artículos 10
-   * Plantilla: desplegable para seleccionar `Reference Group.`
-   * `Select Next.`
+   * **[!UICONTROL Título]** del grupo de la comunidad: Artes.
+   * **[!UICONTROL Descripción]** del grupo de la comunidad: Un grupo de padres para varios grupos de artes.
+   * **[!UICONTROL Raíz]** del grupo de la comunidad: *dejar como predeterminado*.
+   * **[!UICONTROL Idioma(s)]** adicional(s) disponible(s) del grupo de la comunidad: utilice el menú desplegable para seleccionar los idiomas de grupo de comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los respectivos sitios de la comunidad.
+   * **[!UICONTROL Nombre]** del grupo de la comunidad: Artículos 10
+   * **[!UICONTROL Plantilla]**: desplegable para seleccionar `Reference Group.`
+   * Seleccione **[!UICONTROL Siguiente]**.
 
 ![Grupos de comunidades anidadas](assets/parent-to-nestedgroup.png)
 
 Continúe por los demás paneles con esta configuración:
 
-* **Diseño**
+* **[!UICONTROL Diseño]**
 
    * Cambie el diseño o permita el diseño predeterminado del sitio principal.
-   * Seleccione **Siguiente.**
+   * Seleccione **[!UICONTROL Siguiente]**.
 
-* **Configuración**
+* **[!UICONTROL Configuración]**
 
-   * **Moderación**
+   * **[!UICONTROL Moderación]**
 
-      * dejar vacío (heredar del sitio principal).
-   * **Suscripción**
+      * Deje vacío (herede del sitio principal).
+   * **[!UICONTROL Suscripción]**
 
-      * use default `Optional Membership.`
-   * **Miniatura**
+      * Use default `Optional Membership.`
 
-      * `*optional.*`
-   * `Select Next.`
-
-
+      * **[!UICONTROL Miniatura]**
+         * `optional.*`
+      * **[!UICONTROL Seleccione Siguiente]**.
 
 
-* Seleccione **Crear.**
+
+* Seleccione **[!UICONTROL Crear]**.
 
 ### Grupos de anidación dentro del grupo de artes {#nesting-groups-within-arts-group}
 
@@ -89,7 +89,7 @@ La `groups` carpeta ahora contiene dos grupos (actualice la página).
 
 #### Publicar grupo {#publish-group}
 
-Antes de crear grupos anidados dentro del `arts``arts` grupo, coloque el puntero sobre la tarjeta y seleccione el icono de publicación para publicarla.
+Antes de crear grupos anidados dentro del `arts` grupo, coloque el puntero sobre la `arts` tarjeta y seleccione el icono de publicación para publicarla.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -99,36 +99,36 @@ Espere a que se confirme que se publicó el grupo.
 
 El `arts` grupo también debe contener una `groups` carpeta, pero una que esté vacía y en la que se puedan crear nuevos grupos. Vaya a la carpeta del grupo de artes y cree 3 grupos anidados, cada uno con una configuración de pertenencia diferente:
 
-1. Visual
+1. **[!UICONTROL Visual]**
 
    * Título: `Visual Arts`
    * Nombre: `visual`
    * Plantilla: `Reference Group`
-   * Membresía: seleccionar `Optional Membership`un grupo público, abierto a todos los miembros
+   * Membresía: seleccione `Optional Membership`, un grupo público, abierto a todos los miembros.
 
-1. Auditorio
+1. **[!UICONTROL Auditorio]**
 
    * Título: `Auditory Arts`
    * Nombre: `auditory`
    * Plantilla: `Reference Group`
-   * Membresía: seleccionar `Required Membership`un grupo abierto, disponible para que los miembros se unan
+   * Membresía: seleccione `Required Membership`, un grupo abierto, disponible para que los miembros se unan.
 
-1. Historia
+1. **[!UICONTROL Historia]**
 
    * Título: `Art History`
    * Nombre: `history`
    * Plantilla: `Reference Group`
-   * Membresía: seleccione `Restricted Membership`un grupo secreto, visible sólo para los miembros invitados como ejemplo, invite a un usuario [de](/help/communities/tutorials.md#demo-users) demostración `emily.andrews@mailinator.com`
+   * Membresía: seleccionar `Restricted Membership`, un grupo secreto, visible solo para los miembros invitados. Por ejemplo, invite a un usuario [de](/help/communities/tutorials.md#demo-users) demostración `emily.andrews@mailinator.com`.
 
 Actualice la página para ver los tres grupos anidados (subcomunidades).
 
 Para desplazarse a los grupos anidados desde la consola Sitios de comunidades:
 
-* seleccionar carpeta de participación
-* seleccionar la tarjeta de tutoriales de introducción
-* seleccionar la carpeta Grupos
-* seleccionar tarjeta de artes
-* seleccionar la carpeta Grupos
+* Seleccionar carpeta **[!UICONTROL de participación]**
+* Seleccione la tarjeta de tutoriales de **[!UICONTROL introducción]**
+* Seleccionar carpeta **[!UICONTROL de grupos]**
+* Seleccionar tarjeta **[!UICONTROL de artes]**
+* Seleccionar carpeta **[!UICONTROL de grupos]**
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -138,31 +138,30 @@ Para desplazarse a los grupos anidados desde la consola Sitios de comunidades:
 
 Después de publicar el sitio principal de la comunidad:
 
-* publicar cada grupo individualmente
+* Publicar cada grupo individualmente:
 
-   * esperando confirmación de que se publicó el grupo
+   * Esperando confirmación de que se publicó el grupo.
 
-* publicar grupo principal antes de publicar cualquier grupo anidado en
+* Publicar grupo principal antes de publicar cualquier grupo anidado en:
 
-   * todos los grupos deben publicarse de manera descendente.
+   * Todos los grupos deben publicarse de manera vertical.
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
 ## Experiencia en la publicación {#experience-on-publish}
 
-Es posible experimentar los diferentes grupos al iniciar sesión, por ejemplo con los usuarios [de](/help/communities/tutorials.md#demo-users) demostración utilizados para
+Es posible experimentar los diferentes grupos al iniciar sesión, por ejemplo con los usuarios [de](/help/communities/tutorials.md#demo-users) demostración utilizados para:
 
 * Miembro del grupo Arte/Historia: emily.andrews@mailinator.com/password
-
-   * el grupo restringido (secreto), arte/historia, es visible
-   * puede ver grupos opcionales (públicos)
-   * puede unirse a grupos restringidos (abiertos)
+   * El grupo restringido (secreto), arte/historia, es visible:
+   * Puede ver grupos opcionales (públicos).
+   * Puede unirse a grupos restringidos (abiertos).
 
 * Administrador de grupos: aaron.mcdonald@mailinator.com/password
 
-   * puede ver grupos opcionales (públicos)
-   * puede unirse a grupos restringidos (abiertos)
-   * no se pueden ver los grupos restringidos (secretos)
+   * Puede ver grupos opcionales (públicos).
+   * Puede unirse a grupos restringidos (abiertos).
+   * No se pueden ver los grupos restringidos (secretos).
 
 Acceda a las consolas [Miembros y Grupos de comunidades](/help/communities/members.md) del autor para agregar otros usuarios a varios grupos de miembros que se correspondan con los grupos de la comunidad.
 
