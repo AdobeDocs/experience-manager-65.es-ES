@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
 
-# Información general sobre comunidades AEM{#aem-communities-overview}
+# Información general sobre comunidades AEM {#aem-communities-overview}
 
 Las comunidades de Adobe Experience Manager (AEM) ofrecen la posibilidad de crear rápidamente un sitio de comunidad local que tenga un rendimiento y una gestión mejorados, y que anime a los visitantes a convertirse en miembros valiosos de la comunidad.
 
@@ -26,17 +26,16 @@ Póngase en contacto con el representante de cuentas para obtener información s
 
 Las comunidades AEM permiten el desarrollo de una relación con los visitantes del sitio, que:
 
-* **información** a través de blogs, preguntas y respuestas y calendarios de eventos,
-* mientras que **obtener perspectivas **a través de foros, comentarios y otro contenido de la comunidad, a menudo denominado contenido generado por el usuario (UGC).
-* Permite** moderación **por miembros de confianza en el entorno de publicación,
-* **inicio de sesión social **con Twitter y Facebook,
-* **traducción** en línea del contenido de la comunidad,
-* **creación de grupos comunitarios **desde el sitio comunitario publicado,
-* **anotar **conceder insignias,
-* **uso compartido** de archivos,
-* **notificaciones **y flujos **de** actividad,
-
-* permite **etiquetar** (@mención) a otros miembros registrados en Contenido generado por el usuario, para atraer su atención.
+* **Información** a través de blogs, preguntas y respuestas y calendarios de evento,
+* A la vez que **obtiene perspectivas** a través de foros, comentarios y otro contenido de la comunidad, a menudo denominado contenido generado por el usuario (UGC).
+* Permite la **moderación** de miembros de confianza en el entorno de publicación,
+* **Inicio de sesión** social con Twitter y Facebook,
+* **Traducción** en línea del contenido de la comunidad,
+* **Creación** de grupos comunitarios a partir del sitio de la comunidad publicado,
+* **Puntuación** para asignar distintivos,
+* **Uso compartido** de archivos,
+* **Notificaciones** y flujos **de** actividad,
+* Permite **etiquetar** a otros miembros registrados en Contenido generado por el usuario, para atraer su atención.
 * Admite la navegación **mediante** teclado en componentes de habilitación (por ejemplo, Reproducción de catálogo y curso, Asignaciones, Biblioteca de archivos).
 
 Las características de las comunidades se pueden demostrar con la [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponible públicamente en GitHub.com o con la nueva implementación de referencia de We.Retail.
@@ -47,44 +46,36 @@ Un sitio de comunidad es un sitio de AEM creado mediante un sencillo asistente q
 
 Asistente para la creación [del sitio](/help/communities/sites-console.md):
 
-* ensambla las características del sitio, según la plantilla [del sitio de](/help/communities/sites.md) comunidad seleccionada, que es:
+* Ensamble las características del sitio, según la plantilla [del sitio de](/help/communities/sites.md) comunidad seleccionada, que es:
 
    * creado a partir de funciones [comunitarias](#community-functions)
    * función opcional de grupos [de](#communitygroups) comunidad
 
-* utiliza la configuración:
+* Utiliza la configuración para configurar:
 
    * moderación
    * login
    * traducción
 
-* proporciona funciones esenciales:
+* Proporciona funciones esenciales:
 
-   * diseño interactivo:
-usa temas de [Twitter Bootstrap](https://getbootstrap.com)
+   * Diseño adaptable: usa temáticas de [Twitter Bootstrap](https://getbootstrap.com)
 
-   * login :
-autorregistro, inicio de sesión [](/help/communities/social-login.md)social, perfiles de usuario
+   * Inicio de sesión: autorregistro, inicio de sesión [](/help/communities/social-login.md)social, perfiles de usuario
 
-   * notificaciones:
-los miembros ven los eventos que les interesan y el contenido generado por el usuario donde se [@mencionan](/help/communities/overview.md#mentionssupport).
+      * Notificaciones:
+los miembros ven eventos de relevancia para ellos y contenido generado por el usuario donde se [@han mencionado](/help/communities/overview.md#mentionssupport).
 
-   * mensajería:
-los miembros pueden enviar o recibir mensajes dentro del sitio de la comunidad
-   * search:
-capacidad de búsqueda dentro del sitio de la comunidad
-   * cambio de idioma:
-capacidad para seleccionar un idioma para un sitio [multilingüe](/help/sites-administering/translation.md)
+      * Mensajería: los miembros pueden enviar o recibir mensajes dentro del sitio de la comunidad.
+      * Buscar: capacidad para realizar búsquedas dentro del sitio de la comunidad.
+      * Cambio de idioma: capacidad para seleccionar un idioma para un sitio [](/help/sites-administering/translation.md)multilingüe.
 
-   * administración:
-acceso para miembros autorizados a moderar y administrar usuarios dentro del sitio de la comunidad
+      * Administración: acceso para miembros autorizados a moderar y administrar usuarios dentro del sitio de la comunidad.
 
-* elimina muchos pasos de creación a nivel de página:
+* Elimina muchos pasos de creación a nivel de página:
 
-   * marca:
-carga opcional de una imagen de pancarta para mostrarla en todas las páginas del sitio de la comunidad
-   * menú de navegación:
-se proporcionan vínculos de navegación para las funciones incluidas en la plantilla de sitio de comunidad
+   * Marca: carga opcional de una imagen de pancarta para mostrarla en todas las páginas del sitio de la comunidad
+      * Menú de navegación: se proporcionan vínculos de navegación para las funciones incluidas en la plantilla de sitio de la comunidad.
 
 Para disfrutar de la facilidad de crear rápidamente un nuevo sitio de comunidad, visite [Introducción a las comunidades](/help/communities/getting-started.md)de AEM.
 
@@ -96,7 +87,7 @@ Se puede acceder fácilmente al contenido de la comunidad a través del proveedo
 
 Para obtener más información sobre la persistencia del contenido de la comunidad y las implementaciones recomendadas, consulte:
 
-* [Almacenamiento](/help/communities/working-with-srp.md)de contenido de comunidad, que analiza las opciones de almacenamiento SRP disponibles para UGC.
+* [Community Content Almacenamiento](/help/communities/working-with-srp.md), que analiza las opciones de almacenamiento de SRP disponibles para UGC.
 * [Topologías](/help/communities/topologies.md)recomendadas, que analiza las topologías basadas en el caso de uso y la elección de SRP.
 * [Actualización a AEM 6.5 Communities](/help/communities/upgrade.md), que proporciona información útil sobre UGC al pasar a AEM 6.5.
 
@@ -104,54 +95,54 @@ Para obtener más información sobre la persistencia del contenido de la comunid
 
 En el entorno de creación, la consola de navegación global proporciona acceso a la consola [](/help/communities/consoles.md)Comunidades, que contiene:
 
-* [Consola Sitios](/help/communities/sites-console.md)
+* consola [Sitios](/help/communities/sites-console.md)
 
-   * creación de sitios
-   * edición del sitio
-   * administración del sitio
+   * Creación de sitios
+   * Edición del sitio
+   * Administración de sitios
    * [Consola de grupos](/help/communities/groups.md) de comunidad
 
 * [Consola de moderación](/help/communities/moderation.md)
 
-   * IU de moderación masiva común para entornos de creación y publicación
-   * nuevos criterios de filtrado
+   * IU común de moderación masiva para entornos de creación y publicación.
+   * Nuevos criterios de filtrado.
 
 * [Consolas de administración de miembros y grupos](/help/communities/members.md)
 
-   * permite crear y administrar usuarios de publicación (miembros) desde el entorno de creación
-   * permite prohibir miembros
-   * permite crear y administrar grupos de usuarios del lado de la publicación (grupos de miembros) desde el entorno de creación
+   * Proporciona la capacidad de crear y administrar usuarios de publicación (miembros) desde el entorno de creación.
+   * Permite prohibir miembros.
+   * Proporciona la capacidad de crear y administrar grupos de usuarios del lado de la publicación (grupos de miembros) desde el entorno de creación.
 
 * [Consola de informes](/help/communities/reports.md)
 
-   * permite generar informes sobre asignaciones, anuncios y vistas
+   * Proporciona la capacidad de generar informes sobre asignaciones, publicaciones y vistas.
 
 * [Consola de recursos](/help/communities/resources.md)
 
-   * permite crear recursos de habilitación y rutas de aprendizaje
-   * proporciona acceso a informes sobre recursos de habilitación y rutas de aprendizaje
+   * Proporciona la capacidad de crear recursos de habilitación y rutas de aprendizaje.
+   * Proporciona acceso a informes sobre recursos de habilitación y rutas de aprendizaje.
 
-La consola de herramientas globales proporciona acceso a las siguientes herramientas de Communities:
+La consola de herramientas globales proporciona acceso a las siguientes herramientas de Comunidades:
 
 * [Consola Plantillas](/help/communities/tools.md#sitetemplatesconsole) de sitio
 
-   * crear y administrar plantillas de sitio de comunidad
+   * Cree y administre plantillas de sitio de comunidad.
 
 * [Consola Plantillas](/help/communities/tools.md#grouptemplatesconsole) de grupo
 
-   * crear y administrar plantillas de grupo de comunidad
+   * Cree y administre plantillas de grupo de comunidad.
 
 * [Consola de funciones](/help/communities/tools.md#communityfunctionsconsole) de comunidad
 
-   * crear y administrar funciones de comunidad
+   * Cree y administre funciones de comunidad.
 
-* [Consola de configuración](/help/communities/tools.md#storageconfiguratonconsole) de almacenamiento
+* [Consola de configuración](/help/communities/tools.md#storageconfiguratonconsole) de Almacenamiento
 
-   * seleccionar y configurar el almacén [](/help/communities/working-with-srp.md) común para el sitio
+   * Seleccione y configure el almacén [](/help/communities/working-with-srp.md) común para el sitio.
 
 * [Guía de componentes](/help/communities/components-guide.md)
 
-   * un sitio de muestra, [Community Components](https://localhost:4502/editor.html/content/community-components/en.html), que proporciona una muestra de todos los componentes de Communities con su configuración predeterminada y la capacidad de experimentar con ellos
+   * Un sitio de muestra, [Community Components](https://localhost:4502/editor.html/content/community-components/en.html), que proporciona una muestra de todos los componentes de Communities con su configuración predeterminada y la capacidad de experimentar con ellos.
 
 ## Plantillas de sitio de la comunidad {#community-site-templates}
 
@@ -173,15 +164,15 @@ Consulte la consola [Funciones de](/help/communities/functions.md)comunidad.
 
 La función de grupos de comunidad es la capacidad para que una subcomunidad sea creada dinámicamente dentro de un sitio de comunidad por usuarios autorizados y miembros de la comunidad desde los entornos de creación y publicación.
 
-Desde el entorno de creación, los grupos de comunidad (subcomunidades) pueden crearse dentro de un sitio de comunidad existente o anidarse dentro de un grupo existente, cuando la estructura de la plantilla contenga la función [](/help/communities/functions.md#groups-function)Grupos.
+Desde el entorno de creación, se pueden crear grupos de comunidad (subcomunidades) dentro de un sitio de comunidad existente o anidados dentro de un grupo existente, cuando la estructura de la plantilla contenga la función [](/help/communities/functions.md#groups-function)Grupos.
 
 La creación de un grupo de comunidad requiere la selección de una plantilla de grupo de comunidad que proporcione el diseño de las páginas de grupo de la comunidad. Cuando se agrega una función Grupos a una estructura de plantilla, se configura para especificar una plantilla de grupo o para proporcionar una selección de plantillas en el momento en que se crea un nuevo grupo de comunidad.
 
 Consulte también:
 
-* [Consola](/help/communities/groups.md) Grupos del sitio para crear subcomunidades en el entorno de creación
-* [Consola](/help/communities/tools-groups.md) Plantillas de grupo para crear la estructura de sitio para grupos
-* [Introducción a Comunidades](/help/communities/getting-started.md) AEM para ver un tutorial sobre la creación rápida de un sitio de comunidad que incluya grupos anidados
+* [Consola](/help/communities/groups.md) Grupos del sitio para crear subcomunidades en el entorno de creación.
+* [Consola](/help/communities/tools-groups.md) Plantillas de grupo para crear la estructura de sitio para grupos.
+* [Introducción a las comunidades](/help/communities/getting-started.md) AEM para ver un tutorial sobre la creación rápida de un sitio de comunidad que incluya grupos anidados.
 
 ## Componentes de comunidad {#community-components}
 
@@ -197,21 +188,21 @@ Una comunidad de participación es un sitio de la comunidad dedicado a atraer cl
 
 Las características de una comunidad de participación pueden incluir:
 
-* login
-* mensajería
-* foros
-* comentarios
-* críticas
-* clasificaciones
-* votación
-* blogs
-* grupos
-* calendarios
-* traducción
-* moderación
-* notificaciones
-* puntuación y distintivos
-* informes de análisis
+* Inicio de sesión
+* Mensajes
+* Foros
+* Comentarios
+* Críticas
+* Clasificaciones
+* Votación
+* Blogs
+* Grupos
+* Calendarios
+* Traducción
+* Moderación
+* Notificaciones
+* Puntuación y distintivos
+* sistema de informes de Analytics
 
 Para disfrutar de la facilidad de crear rápidamente una nueva comunidad de participación, visite [Introducción a las comunidades](/help/communities/getting-started.md)de AEM.
 
@@ -221,12 +212,12 @@ Una comunidad de habilitación es un sitio de la comunidad que incluye funciones
 
 Las características de una comunidad de habilitación pueden incluir:
 
-* todas las características de una comunidad de [participación](#engagement-community)
-* capacidad para asignar contenido y recursos de aprendizaje a miembros y grupos de miembros
-* admite contenido SCORM, como cuestionarios y pruebas
-* seguimiento de la finalización de asignaciones
-* acceso a informes y análisis
-* la capacidad de tener una conversación sobre un recurso de aprendizaje a través de foros, mensajes, comentarios y valoraciones
+* Todas las características de una comunidad [de](#engagement-community)participación.
+* capacidad para asignar contenido y aprendizaje. recursos para miembros y grupos miembros.
+* Admite contenido SCORM, como cuestionarios y pruebas.
+* Seguimiento de la finalización de asignaciones.
+* Acceso a sistema de informes y análisis.
+* La capacidad de tener una conversación sobre un recurso de aprendizaje a través de foros, mensajes, comentarios y valoraciones.
 
 Se puede crear una comunidad de habilitación cuando se configura [el complemento](/help/communities/enablement.md)Habilitación, que requiere licencias adicionales para su uso en un entorno de producción. Un sitio de comunidad de habilitación incluirá la función [](#community-functions)asignaciones.
 
@@ -238,10 +229,10 @@ El equipo [de demostración de](https://github.com/Adobe-Marketing-Cloud/aem-dem
 
 AEM Demo Machine incluye:
 
-* una interfaz de usuario [gráfica](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface)
-* Secuencias de comandos Apache ANT con [propiedades](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) y [destinos configurables](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line)
+* Una interfaz [gráfica de usuario](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
+* Secuencias de comandos Apache ANT con [propiedades](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) y [destinatarios](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line)configurables.
 
-* paquetes para instalar
+* Paquetes para instalar.
 
 AEM Demo Machine se probó correctamente con CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 y AEM 6.4 en Windows, MacOS y Linux.
 
@@ -249,12 +240,13 @@ AEM Demo Machine requiere una licencia de AEM válida.
 
 >[!NOTE]
 >
->Vea una introducción [en](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) vídeo a AEM Demo Machine (13:26).
+>Vista de una introducción [en](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) vídeo a AEM Demo Machine (13:26).
+
 
 ## Documentación de AEM Communities {#aem-communities-documentation}
 
-* Visite [Implementar comunidades](/help/communities/deploy-communities.md) para conocer las implementaciones recomendadas.
-* Visite [Administración de sitios](/help/communities/administer-landing.md) de comunidades para obtener información sobre cómo crear un sitio de comunidad, agregar grupos de la comunidad, configurar plantillas de sitio de la comunidad, moderar contenido de la comunidad, administrar miembros, etiquetado, notificaciones, puntuación y distintivos.
-* Visite [Desarrollar comunidades](/help/communities/communities.md) para conocer el marco de componentes sociales (SCF) y personalizar componentes y características de Comunidades.
-* Visite [Creación de componentes](/help/communities/author-communities.md) de comunidades para obtener información sobre cómo crear y configurar componentes de comunidades.
+* Visite [Implementar comunidades](deploy-communities.md) para conocer las implementaciones recomendadas.
+* Visite [Administración de sitios](administer-landing.md) de comunidades para obtener información sobre cómo crear un sitio de comunidad, agregar grupos de la comunidad, configurar plantillas de sitio de la comunidad, moderar contenido de la comunidad, administrar miembros, etiquetado, notificaciones, puntuación y distintivos.
+* Visite [Desarrollar comunidades](communities.md) para conocer el marco de componentes sociales (SCF) y personalizar componentes y características de Comunidades.
+* Visite [Creación de componentes](author-communities.md) de comunidades para obtener información sobre cómo crear y configurar componentes de comunidades.
 
