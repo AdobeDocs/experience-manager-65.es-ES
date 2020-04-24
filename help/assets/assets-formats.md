@@ -3,7 +3,7 @@ title: Formatos admitidos para los recursos
 description: Lista de los formatos de archivo compatibles con AEM Assets y Dynamic Media y funciones compatibles con cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 5304d956161ee7edce2ad5c058eec3ac7e200abf
 
 ---
 
@@ -111,8 +111,33 @@ La biblioteca de Adobe Camera Raw permite que Recursos AEM ingrese imágenes sin
 
 Los formatos de Documento admitidos para las funciones de administración de recursos son los siguientes:
 
-| Formato | Almacenamiento | Administración de metadatos<br> | Metadata<br> extraction | Generación de miniaturas<br> | Edición interactiva<br> | Reescritura de metadatos<br> | [Perspectivas](touch-ui-asset-insights.md) | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
+<!--
+DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
+
+| Format | Storage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
+| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| ODT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| HTML | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| RTF | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| TXT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| XLS | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| ODS | &#10003; | &#10003; | &#10003; | | | | | |
+| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
+| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
+| ODP | &#10003; | &#10003; | &#10003; | | | | | |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
+| PS | &#10003; | &#10003; | | | | | | |
+| QXP | &#10003; | &#10003; | | | | | | |
+| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
+-->
+
+| Formato | Almacenamiento | [Gestión de metadatos](metadata.md) | extracción de texto<br> completo | [Extracción de metadatos](metadata.md) | Generación de miniaturas<br> | [extracción de subbase](managing-linked-subassets.md) | [Reescritura de metadatos](xmp-writeback.md) | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
+|---|---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
