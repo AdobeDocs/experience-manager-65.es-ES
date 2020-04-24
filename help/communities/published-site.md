@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 Ahora que se ha publicado el sitio de comunidades recién creado, busque la dirección URL que se muestra al crear el sitio, pero en el servidor de publicación, por ejemplo:
 
-* author URL = https://localhost:4502/content/sites/engage/en.html
+* A\uthor URL = https://localhost:4502/content/sites/engage/en.html
 * URL de publicación = https://localhost:4503/content/sites/engage/en.html
 
 Para minimizar la confusión sobre qué miembro ha iniciado sesión en el autor y la publicación, se recomienda utilizar distintos navegadores para cada instancia.
@@ -33,9 +33,9 @@ Al llegar por primera vez al sitio publicado, el visitante del sitio no suele ha
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-## Visitante anónimo del sitio {#anonymous-site-visitor}
+## Visitante de sitio anónimo {#anonymous-site-visitor}
 
-Un visitante anónimo del sitio ve lo siguiente en la interfaz de usuario:
+Un visitante de sitio anónimo ve lo siguiente en la interfaz de usuario:
 
 * Título del sitio. Tutorial de introducción
 * sin vínculo de perfil
@@ -69,7 +69,7 @@ Para proteger el contenido del sitio de la comunidad del acceso de usuarios anó
    ![page-properties](assets/page-properties.png)
 
 1. Enable **Authentication Requirement**.
-1. Agregue la ruta de la página de inicio de sesión. Por ejemplo,**/content/...... ./GetStarted**.
+1. Añada la ruta de la página de inicio de sesión. Por ejemplo,**/content/......./GetStarted**.
 1. Publique la página.
 
 ## Miembro de la comunidad de confianza {#trusted-community-member}
@@ -82,18 +82,18 @@ En la esquina superior derecha, seleccione `Log in`y firme con el nombre de usua
 
 Una vez que haya iniciado sesión como miembro de la comunidad registrado, observe los siguientes elementos de menú para hacer clic y explorar el sitio de la comunidad:
 
-* **La opción Perfil** permite ver y editar el perfil.
+* **La opción Perfil** le permite realizar vistas y editar el perfil.
 * [La opción Mensajes](/help/communities/configure-messaging.md) le dirige a la sección de mensajes directos, donde puede:
 
-1. Vea los mensajes directos que ha recibido (Bandeja de entrada), enviado (Elementos enviados) y eliminado (Papelera).
+1. Vista los mensajes directos recibidos (Bandeja de entrada), enviados (Elementos enviados) y eliminados (Papelera).
 1. Redacte nuevos mensajes directos para enviarlos a personas y grupos.
 
-* [La opción Notificaciones](/help/communities/notifications.md) le dirige a la sección de notificaciones, donde puede ver los eventos de interés y editar la configuración de las notificaciones.
+* [La opción Notificaciones](/help/communities/notifications.md) le dirige a la sección de notificaciones, donde puede realizar la vista de sus eventos de interés y editar la configuración de las notificaciones.
 * [La administración](/help/communities/published-site.md#moderationlink) le dirige a la página de moderación de comunidades de AEM, si tiene privilegios de moderación.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-Observe que la página Calendario es la página principal porque la plantilla de sitio de referencia elegida incluía primero la función Calendario, seguida de la función Flujo de actividad, la función Foro, etc. Esta estructura está visible desde la consola Plantilla [](/help/communities/sites.md#edit-site-template) del sitio o al modificar las propiedades del sitio en el entorno de creación:
+Observe que la página Calendario es la página de inicio porque la plantilla de sitio de referencia elegida incluía primero la función Calendario, seguida de la función Flujo de Actividad, la función Foro, etc. Esta estructura está visible desde la consola Plantilla [](/help/communities/sites.md#edit-site-template) del sitio o al modificar las propiedades del sitio en el entorno de creación:
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
@@ -109,11 +109,11 @@ Observe que la página Calendario es la página principal porque la plantilla de
 
 ### Vínculo de foro {#forum-link}
 
-Para ver la función básica del foro, seleccione el vínculo Foro.
+Para Vista de la función básica de foro, seleccione el vínculo Foro.
 
 Los miembros pueden publicar un tema nuevo o seguir un tema.
 
-Los visitantes del sitio pueden ver los anuncios y ordenarlos de diversas maneras.
+Los visitantes del sitio pueden realizar vistas de anuncios y ordenarlos de diversas maneras.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
@@ -123,7 +123,7 @@ Como Aaron es administrador de grupos, si selecciona el vínculo Grupos, Aaron p
 
 Este es un ejemplo en el que se crea un grupo en el entorno de publicación.
 
-Los grupos también se pueden crear en el entorno de creación y administrar dentro del sitio de la comunidad en el entorno de creación (la consola [Grupos de](/help/communities/groups.md)comunidad). La experiencia de [crear grupos en el autor](/help/communities/nested-groups.md) es la siguiente en este tutorial.
+Los grupos también pueden crearse en el entorno del autor y gestionarse dentro del sitio de la comunidad en el entorno del autor (la consola [Grupos](/help/communities/groups.md)de la comunidad). La experiencia de [crear grupos en el autor](/help/communities/nested-groups.md) es la siguiente en este tutorial.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -149,7 +149,7 @@ Una vez creado el nuevo grupo, **seleccione el nuevo grupo** Deportes para crear
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
-El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports`grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes. `Groups`
+El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports`grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes `Groups` .
 
 Como ejemplo, agregue dos n `ew groups.`
 
@@ -179,9 +179,9 @@ Los vínculos del grupo se muestran debajo de los vínculos del sitio principal 
 
 En el caso del autor: con privilegios administrativos, vaya a la consola [Grupos de](/help/communities/members.md) comunidades y agregue Weston McCall al `Community Engage Gymnastics <uid> Members` grupo.
 
-Continuando con la publicación, cierre la sesión como Aaron McDonald y vea los grupos del grupo de deportes como un visitante anónimo del sitio :
+Continuando con la publicación, cierre la sesión como Aaron McDonald, y vista los grupos en el grupo de deportes como un visitante anónimo en el sitio :
 
-* desde la página principal
+* desde página de inicio
 * select `Groups`link
 * select `Sports`link
 * seleccione el `Groups`vínculo Deportes
@@ -194,15 +194,15 @@ Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y nav
 
 ### Vínculo de página Web {#web-page-link}
 
-Para ver la página Web básica incluida en el sitio, seleccione el vínculo Página Web. Las herramientas de creación de AEM estándar pueden utilizarse para añadir contenido a esta página en el entorno de creación.
+Vista la página Web básica incluida en el sitio seleccionando el vínculo Página Web. Las herramientas de creación de AEM estándar pueden utilizarse para añadir contenido a esta página en el entorno de creación.
 
-Por ejemplo, vaya a la instancia de **autor** , abra la `engage` carpeta en la consola [Sitios de](/help/communities/sites-console.md)comunidades, seleccione el icono **Abrir sitio** para entrar al modo de edición de autor. A continuación, seleccione el modo de vista previa para seleccionar el `Web Page`vínculo y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
+Por ejemplo, vaya a la instancia de **autor** , abra la `engage` carpeta en la consola [Sitios de](/help/communities/sites-console.md)comunidades, seleccione el icono **Abrir sitio** para entrar al modo de edición de autor. A continuación, seleccione el modo de previsualización para seleccionar el `Web Page`vínculo y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
 ### Vínculo de moderación {#moderationlink}
 
-Cuando el miembro de la comunidad tiene privilegios de moderación, el vínculo Moderación estará visible y, al seleccionarlo, se mostrará el contenido de la comunidad publicado y se podrá [moderar](/help/communities/moderate-ugc.md) de forma similar a la consola [de](/help/communities/moderation.md) moderación en el entorno de creación.
+Cuando el miembro de la comunidad tiene privilegios de moderación, el vínculo Moderación estará visible y, al seleccionarlo, se mostrará el contenido de la comunidad publicado y se podrá [moderar](/help/communities/moderate-ugc.md) de forma similar a la consola [de](/help/communities/moderation.md) moderación del entorno de creación.
 
 Utilice el botón Atrás del explorador para volver al sitio publicado. La mayoría de las consolas no son accesibles desde la navegación global en el entorno de publicación. [](/help/communities/moderate-ugc.md)
 
