@@ -3,7 +3,7 @@ title: Configuración del etiquetado de recursos mediante el servicio de conteni
 description: Obtenga información sobre cómo configurar el etiquetado inteligente y el etiquetado inteligente mejorado en AEM mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 Puede integrar Adobe Experience Manager (AEM) con Smart Content Service mediante Adobe I/O. Utilice esta configuración para acceder al servicio de contenido inteligente desde AEM.
 
-En el artículo se detallan las siguientes tareas clave necesarias para configurar el servicio de contenido inteligente. En el back-end, el servidor AEM autentica las credenciales de servicio con la puerta de enlace de E/S de Adobe antes de reenviar la solicitud al servicio de contenido inteligente.
+En el artículo se detallan las siguientes tareas clave necesarias para configurar el servicio de contenido inteligente. En el back-end, el servidor AEM autentica las credenciales de servicio con la puerta de enlace de Adobe I/O antes de reenviar la solicitud al servicio de contenido inteligente.
 
 * Cree una configuración de Smart Content Service en AEM para generar una clave pública. Obtenga un certificado público para la integración de OAuth.
 * Cree una integración en Adobe I/O y cargue la clave pública generada.
