@@ -1,86 +1,86 @@
 ---
-title: Utilice los recursos conectados para compartir recursos DAM en el flujo de trabajo de Adobe Experience Manager Sites
-description: Utilice los recursos disponibles en una implementación remota de recursos de Adobe Experience Manager al crear sus páginas web en otra implementación de Experience Manager Sites.
+title: Utilice Recursos conectados para compartir recursos DAM en el flujo de trabajo de creación de [!DNL Adobe Experience Manager Sites].
+description: Utilice los recursos disponibles en una implementación remota de [!DNL Adobe Experience Manager Assets] al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7628b5edd52a144aa4f92f8145493b9b927aeda0
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Utilice los recursos conectados para compartir recursos de DAM en AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Utilice los recursos conectados para compartir recursos de DAM en [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Algunas razones pueden ser la distribución geográfica de implementaciones existentes que se requieren para trabajar en conjunto, o las adquisiciones que conducen a una infraestructura heterogénea que la compañía principal desea utilizar en conjunto.
 
-AEM Sites ofrece capacidades de crear páginas web y AEM Assets es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web. AEM ahora es compatible con el caso de uso anterior mediante la integración de AEM Sites y AEM Assets.
+[!DNL Adobe Experience Manager Sites] ofrece capacidades de crear páginas web y es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web.[!DNL Adobe Experience Manager Assets] [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración [!DNL Experience Manager Sites] y [!DNL Experience Manager Assets].
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
-Al editar páginas en el Editor de páginas, los creadores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación diferente de AEM Assets. Para hacer esto, un administrador de AEM debe llevar a cabo una integración única de una implementación local de AEM Sites con una implementación diferente (remota) de AEM Assets.
+When editing pages in Page Editor, the authors can seamlessly search, browse, and embed assets from a different [!DNL Experience Manager Assets] deployment. To do an [!DNL Experience Manager] administrator do a one-time integration of a local deployment of [!DNL Experience Manager Sites] with a different (remote) deployment of [!DNL Experience Manager Assets].
 
-Para los creadores de Sites, los recursos remotos están disponibles como recursos locales de solo lectura. La funcionalidad admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. Para que varios recursos remotos estén disponibles en la implementación local en un solo uso, considere migrar los recursos de forma masiva. Consulte [Guía de migración de recursos](/help/assets/assets-migration-guide.md).
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. La funcionalidad admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. Para que varios recursos remotos estén disponibles en la implementación local en un solo uso, considere migrar los recursos de forma masiva. Consulte la guía [de migración de recursos de Experience Manager](/help/assets/assets-migration-guide.md).
 
 ### Requisitos previos e implementaciones admitidas {#prerequisites}
 
 Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 * Los usuarios forman parte de los grupos correspondientes en cada implementación.
-* Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. Recursos AEM 6.5 funciona con AEM como un servicio de nube. Para obtener más información, consulte Funcionalidad de Recursos [conectados en AEM como un servicio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)de nube.
+* Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. [!DNL Experience Manager] 6.5 [!DNL Assets] funciona [!DNL Experience Manager] como un servicio de nube. Para obtener más información, consulte la funcionalidad Recursos [conectados en Experience Manager como un servicio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)de nube.
 
-   |  | AEM Sites as a Cloud Service | AEM 6.5 Sites en AMS | AEM 6.5 Sites local |
+   |  | [!DNL Experience Manager Sites] como servicio de nube | Experience Manager 6.5 [!DNL Sites] en AMS | Experience Manager 6.5 [!DNL Sites] in situ |
    |---|---|---|---|
-   | **AEM Assets as a Cloud Service** | Compatible | Compatible | Compatible |
-   | **AEM 6.5 Assets en AMS** | Compatible | Compatible | Compatible |
-   | **AEM 6.5 Assets local** | No compatible | No compatible | No compatible |
+   | **[!DNL Experience Manager Assets]como servicio de nube ** | Compatible | Compatible | Compatible |
+   | **Experience Manager 6.5[!DNL Assets]en AMS** | Compatible | Compatible | Compatible |
+   | **Experience Manager 6.5[!DNL Assets]in situ** | No compatible | No compatible | No compatible |
 
 ### Formatos de archivo compatibles {#mimetypes}
 
-Los creadores pueden buscar imágenes y los siguientes tipos de documentos en el buscador de contenido y utilizar los recursos buscados en el editor de páginas. Se pueden agregar documentos al `Download` componente y se pueden agregar imágenes al `Image` componente. Los creadores también pueden agregar recursos remotos en cualquier componente personalizado de AEM que amplía los componentes predeterminados `Download` o los componentes `Image`. La lista de los formatos admitidos es:
+Los creadores pueden buscar imágenes y los siguientes tipos de documentos en el buscador de contenido y utilizar los recursos buscados en el editor de páginas. Se pueden agregar documentos al `Download` componente y se pueden agregar imágenes al `Image` componente. Authors can also add the remote assets in any custom Experience Manager component that extends the default `Download` or `Image` components. La lista de los formatos admitidos es:
 
-* **Formatos** de imagen: Recursos conectados admiten los formatos de imagen admitidos por el componente [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) Imagen. Las imágenes de Dynamic Media no son compatibles.
+* **Formatos** de imagen: Recursos conectados admiten los formatos de imagen admitidos por el componente [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) Imagen. [!DNL Dynamic Media] las imágenes no son compatibles.
 * **Formatos de documento**: Consulte [Formatos de documento compatibles con recursos conectados](assets-formats.md#supported-document-formats).
 
 ### Usuarios y grupos implicados {#users-and-groups-involved}
 
-A continuación se describen las distintas funciones que se usan para configurar y utilizar la capacidad y sus grupos de usuarios correspondientes. El ámbito local se utiliza para el caso de uso en el que un autor crea una página web. El ámbito remoto se utiliza para la implementación de DAM que aloja los recursos necesarios. El creador de Sites recupera los recursos remotos.
+A continuación se describen las distintas funciones que se usan para configurar y utilizar la capacidad y sus grupos de usuarios correspondientes. El ámbito local se utiliza para el caso de uso en el que un autor crea una página web. El ámbito remoto se utiliza para la implementación de DAM que aloja los recursos necesarios. The [!DNL Sites] author fetches these remote assets.
 
 | Función | Ámbito | Grupo de usuarios | Nombre de usuario en la introducción | Requisito |
 |---|---|---|---|---|
-| Administrador de AEM Sites | Local | Administrador de AEM | `admin` | Establezca AEM y configure la integración con la implementación remota de recursos. |
+| [!DNL Sites] administrador | Local | Administrador de Experience Manager | `admin` | Configure Experience Manager y configure la integración con la implementación remota [!DNL Assets] . |
 | Usuario DAM | Local | Autor | `ksaner` | Se utiliza para ver y duplicar los recursos recuperados en `/content/DAM/connectedassets/`. |
-| Autor de AEM Sites | Local | Autor (con acceso de lectura en el DAM remoto y acceso de autor en el Sites local) | `ksaner` | Los usuarios finales son autores de Sites que utilizan esta integración para mejorar la velocidad de contenido. Los autores buscan y exploran recursos en el DAM remoto mediante el buscador de contenido y utilizando las imágenes necesarias en las páginas web locales. Se utilizan las credenciales del usuario de DAM `ksaner`. |
-| Administrador de AEM Assets | Remoto | Administrador de AEM | `admin` en AEM remoto | Configurar el intercambio de recursos de origen cruzado (CORS). |
-| Usuario DAM | Remoto | Autor | `ksaner` en AEM remoto | Función de autor en la implementación remota de AEM. Buscar y examinar recursos en recursos conectados con el buscador de contenido. |
-| Distribuidor DAM (usuario técnico) | Remoto | creadores de paquetes y autores de sitios | `ksaner` en AEM remoto | El servidor local de AEM (no la función de autor del sitio) utiliza al usuario presente en la implementación remota para recuperar los recursos remotos, en nombre del autor de Sites. Esta función no es la misma que las dos funciones `ksaner` anteriores y pertenece a un grupo de usuarios diferente. |
+| [!DNL Sites] author | Local | Author (with read access on the remote DAM and author access on local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Los autores buscan y exploran recursos en el DAM remoto mediante el buscador de contenido y utilizando las imágenes necesarias en las páginas web locales. Se utilizan las credenciales del usuario de DAM `ksaner`. |
+| [!DNL Assets] administrador | Remoto | Administrador de Experience Manager | `admin` en Experience Manager remoto | Configurar el intercambio de recursos de origen cruzado (CORS). |
+| Usuario DAM | Remoto | Autor | `ksaner` en Experience Manager remoto | Función de autor en la implementación remota de Experience Manager. Buscar y examinar recursos en recursos conectados con el buscador de contenido. |
+| Distribuidor DAM (usuario técnico) | Remoto | creadores de paquetes y autores de sitios | `ksaner` en Experience Manager remoto | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Esta función no es la misma que las dos funciones `ksaner` anteriores y pertenece a un grupo de usuarios diferente. |
 
-## Configurar una conexión entre las implementaciones de Sites y Assets {#configure-a-connection-between-sites-and-assets-deployments}
+## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
-Un administrador de AEM puede crear esta integración. Una vez creada, los permisos necesarios para utilizarla se establecen mediante grupos de usuarios definidos en la implementación de Sites y en la implementación de DAM.
+Un administrador de Experience Manager puede crear esta integración. Once created, the permissions required to use it are established via user groups that are defined on the [!DNL Sites] deployment and on the DAM deployment.
 
-Para configurar la conectividad de los recursos conectados y los sitios locales, siga estos pasos.
+To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps.
 
-1. Acceda a una implementación existente de AEM Sites o cree una implementación con el siguiente comando:
+1. Access an existing [!DNL Experience Manager Sites] deployment or create a deployment using the following command:
 
-   1. En la carpeta del archivo JAR, ejecute el siguiente comando en un terminal para crear cada servidor AEM.
+   1. En la carpeta del archivo JAR, ejecute el siguiente comando en un terminal para crear cada servidor de Experience Manager.
       `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
-   1. Tras unos minutos, el servidor AEM se inicia correctamente. Piense en la implementación de AEM Sites como el equipo local para la creación de páginas web, por ejemplo, en `https://[local_sites]:4502`.
+   1. Tras unos minutos, el servidor de Experience Manager inicio correctamente. Consider this [!DNL Experience Manager Sites] deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
 
-1. Asegúrese de que los usuarios y las funciones con ámbito local existan en la implementación de AEM Sites y en la implementación de AEM Assets en AMS. Cree un usuario técnico sobre la implementación de Assets y añádalo al grupo de usuarios mencionado en los [usuarios y grupos involucrados](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
+1. Ensure that the users and roles with local scope exist on the Experience Manager Sites deployment and on the [!DNL Experience Manager Assets] deployment on AMS. Create a technical user on [!DNL Assets] deployment and add to the user group mentioned in [users and groups involved](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
-1. Acceda a la implementación local de AEM Sites en `https://[local_sites]:4502`. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de recursos conectados]** y proporcione los siguientes valores:
+1. Access the local [!DNL Experience Manager Sites] deployment at `https://[local_sites]:4502`. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de recursos conectados]** y proporcione los siguientes valores:
 
-   1. La ubicación de AEM Assets es `https://[assets_servername_ams]:[port]`.
+   1. [!DNL Experience Manager Assets] la ubicación es `https://[assets_servername_ams]:[port]`.
    1. Credenciales de un distribuidor DAM (usuario técnico).
-   1. En el campo **[!UICONTROL Punto de montaje]**, introduzca la ruta local de AEM donde AEM recupera los recursos. Por ejemplo, la carpeta `remoteassets`.
+   1. In **[!UICONTROL Mount Point]** field, enter the local Experience Manager path where Experience Manager fetches the assets. Por ejemplo, la carpeta `remoteassets`.
    1. Ajuste los valores del **[!UICONTROL umbral de optimización de transferencia binaria original]** en función de la red. Las representaciones de recursos superiores a este umbral se transfieren de forma asíncrona.
-   1. Seleccione **[!UICONTROL almacén de datos compartido con recursos conectados]**, si utiliza un almacén de datos para almacenar los recursos y este es el almacenamiento común entre ambas implementaciones de AEM. En este caso, el límite de umbral no importa, ya que los binarios de activos reales se encuentran en el almacén de datos y no se transfieren.
+   1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both Experience Manager deployments. En este caso, el límite de umbral no importa, ya que los binarios de activos reales se encuentran en el almacén de datos y no se transfieren.
       ![Una configuración típica para los recursos conectados](assets/connected-assets-typical-config.png)
-   *Figura: Una configuración típica para los recursos conectados*
+   *Figura: Una configuración típica para los recursos conectados.*
 
-1. Dado que los recursos ya se han procesado y se han recuperado las representaciones, deshabilite los iniciadores del flujo de trabajo. Ajuste las configuraciones del iniciador en la implementación local (AEM Sites) para excluir la carpeta `connectedassets`, en la que se recuperan los recursos remotos.
+1. Dado que los recursos ya se han procesado y se han recuperado las representaciones, deshabilite los iniciadores del flujo de trabajo. Adjust the launcher configurations on the local ([!DNL Experience Manager Sites]) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.
 
-   1. En la implementación de AEM Sites, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Iniciadores]**.
+   1. On [!DNL Experience Manager Sites] deployment, click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 
    1. Busque iniciadores con flujos de trabajo como **[!UICONTROL Recurso de actualización DAM]** y **[!UICONTROL Reescritura de metadatos DAM]**.
 
@@ -95,15 +95,15 @@ Para configurar la conectividad de los recursos conectados y los sitios locales,
 
    >[!NOTE]
    >
-   >Todas las representaciones disponibles en la implementación remota de AEM se recuperan cuando los autores recuperan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
+   >Todas las representaciones disponibles en la implementación remota de Experience Manager se buscan cuando los autores buscan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
-1. Agregue la instancia de AEM Sites como uno de los **[!UICONTROL orígenes permitidos]** en la configuración CORS de AEM Assets remota.
+1. Add the [!DNL Experience Manager Sites] instance as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Experience Manager Assets] CORS configuration.
 
-   1. Inicie sesión con las credenciales del administrador. Busque Origen cruzado. Acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+   1. Inicie sesión con las credenciales del administrador. Buscar `Cross-Origin`. Acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
-   1. Para crear una configuración CORS para una instancia de AEM Sites, haga clic en el icono ![aem_assets_add_icon](assets/aem_assets_add_icon.png) junto a la **[!UICONTROL política de uso compartido de recursos de origen cruzado de Adobe Granite]**.
+   1. To create a CORS configuration for [!DNL Experience Manager Sites] instance, click ![aem_assets_add_icon](assets/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
-   1. En el campo **[!UICONTROL Orígenes permitidos]**, introduzca la dirección URL local de Sites, es decir, `https://[local_sites]:[port]`. Guarde la configuración.
+   1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Guarde la configuración.
 
 ## Usar recursos remotos {#use-remote-assets}
 
@@ -111,39 +111,39 @@ Los creadores del sitio web utilizan el buscador de contenido para conectarse a 
 
 Los autores pueden utilizar los recursos disponibles en las instancias DAM local y DAM remota en una sola página web. Utilice el buscador de contenido para decidir si buscar en el DAM local o en el DAM remoto.
 
-Solo se buscan las etiquetas de recursos remotos que tienen una etiqueta correspondiente exacta junto con la misma jerarquía de taxonomía, disponible en la instancia de sitios local. Todas las demás etiquetas se descartan. Los autores pueden buscar recursos remotos utilizando todas las etiquetas presentes en la implementación remota de AEM, ya que ofrece una búsqueda de texto completo.
+Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] instance. Todas las demás etiquetas se descartan. Los autores pueden buscar recursos remotos utilizando todas las etiquetas presentes en la implementación remota de Experience Manager, ya que Experience Manager oferta una búsqueda de texto completo.
 
 ### Introducción al uso {#walk-through-of-usage}
 
 Utilice la configuración anterior para probar la experiencia de creación y comprender cómo se utiliza la funcionalidad. Utilice documentos o imágenes de su elección en la implementación remota de DAM.
 
-1. Vaya a la interfaz de usuario de Recursos en la implementación remota accediendo a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** desde el espacio de trabajo de AEM. También puede acceder a `https://[assets_servername_ams]:[port]/assets.html/content/dam` en un explorador. Cargue los recursos que desee.
-1. En la instancia Sites, en el activador de perfil en la esquina superior derecha, haga clic en **[!UICONTROL Suplantar como]**. Utilice `ksaner` como nombre de usuario, seleccione la opción proporcionada y haga clic en **[!UICONTROL Aceptar]**.
+1. Navigate to the [!DNL Assets] user interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. También puede acceder a `https://[assets_servername_ams]:[port]/assets.html/content/dam` en un explorador. Cargue los recursos que desee.
+1. On the [!DNL Sites] instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Utilice `ksaner` como nombre de usuario, seleccione la opción proporcionada y haga clic en **[!UICONTROL Aceptar]**.
 1. Abra una página web de We.Retail en **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` en un navegador para editar una página.
 
    Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda de la página.
 
-1. Abra la pestaña Recursos y haga clic en **[!UICONTROL Iniciar sesión en recursos conectados]**.
-1. Proporcione las credenciales (`ksaner` como nombre de usuario y `password` como contraseña). El usuario tiene permisos de creación en ambas implementaciones de AEM.
+1. Open the [!UICONTROL Assets] tab and click **[!UICONTROL Log in to Connected Assets]**.
+1. Proporcione las credenciales (`ksaner` como nombre de usuario y `password` como contraseña). This user has authoring permissions on both the [!DNL Experience Manager] deployments.
 1. Busque el recurso que agregó a DAM. Los recursos remotos se muestran en el panel izquierdo. Filtre por imágenes o documentos y por tipos de documentos compatibles. Arrastre las imágenes a un componente `Image` y los documentos a un componente `Download`.
 
-   Los recursos recuperados son de solo lectura en la implementación local de AEM Sites. Puede seguir utilizando las opciones proporcionadas por los componentes de AEM Sites para editar el recurso buscado. La edición por componentes no es destructiva.
+   The fetched assets are read-only on the local [!DNL Experience Manager Sites] deployment. You can still use the options provided by your [!DNL Experience Manager Sites] components to edit the fetched asset. La edición por componentes no es destructiva.
 
    ![Opciones para filtrar tipos de documentos e imágenes al buscar recursos en DAM remoto](assets/filetypes_filter_connected_assets.png)
 
-   *Figura: Opciones para filtrar tipos de documentos e imágenes al buscar recursos en DAM remoto*
+   *Figura: Opciones para filtrar tipos de documentos e imágenes al buscar recursos en DAM remoto.*
 
 1. Se notifica al creador del sitio si se busca un recurso de forma asincrónica y si falla alguna tarea de recuperación. Durante la creación o incluso después de esta, los autores pueden ver información detallada sobre las tareas de recuperación y los errores en la interfaz de usuario de [trabajos asincrónicos](/help/assets/asynchronous-jobs.md).
 
    ![Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.](assets/assets_async_transfer_fails.png)
 
-   *Figura: Notificación sobre la captura asincrónica de recursos que se produce en segundo plano*
+   *Figura: Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.*
 
-1. Al publicar una página, AEM muestra una lista completa de los recursos que se utilizan en ella. Asegúrese de que los recursos remotos se recuperan correctamente en el momento de la publicación. Para comprobar el estado de cada recurso recuperado, consulte la interfaz de usuario de [trabajos asincrónicos](/help/assets/asynchronous-jobs.md) .
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Asegúrese de que los recursos remotos se recuperan correctamente en el momento de la publicación. Para comprobar el estado de cada recurso recuperado, consulte la interfaz de usuario de [trabajos asincrónicos](/help/assets/asynchronous-jobs.md) .
 
    >[!NOTE]
    >
-   >Aunque no se recuperen uno o varios recursos remotos, la página se publicará. El componente que utiliza el recurso remoto se publica en blanco. El área de notificación de AEM muestra notificaciones de errores que se muestran en la página de trabajos asincrónicos.
+   >Aunque no se recuperen uno o varios recursos remotos, la página se publicará. El componente que utiliza el recurso remoto se publica en blanco. The [!DNL Experience Manager] notification area displays notification for errors that show in async jobs page.
 
 >[!CAUTION]
 >
@@ -156,27 +156,27 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 **Permisos y administración de recursos**
 
 * Los recursos locales no se sincronizan con los recursos originales en la implementación remota. Las ediciones, eliminaciones o revocaciones de permisos en la implementación de DAM no se propagan de forma descendente.
-* Los recursos locales son copias de solo lectura. Los componentes de AEM realizan ediciones no destructivas en los recursos. No se permiten otras ediciones.
+* Los recursos locales son copias de solo lectura. Los componentes de Experience Manager realizan ediciones no destructivas en los recursos. No se permiten otras ediciones.
 * Los recursos recuperados localmente solo están disponibles para la creación. Los flujos de trabajo de actualización de recursos no se pueden aplicar y los metadatos no se pueden editar.
-* Solo se admiten las imágenes y los formatos de documento enumerados. Los recursos de Dynamic Media, los fragmentos de contenido y los fragmentos de experiencia no son admitidos.
+* Solo se admiten las imágenes y los formatos de documento enumerados. [!DNL Dynamic Media]Los recursos de , los fragmentos de contenido y los fragmentos de experiencia no son admitidos.
 * No se recuperan los esquemas de metadatos.
-* Todos los autores de Sites tienen permisos de lectura en las copias recuperadas, incluso si no tienen acceso a la implementación de DAM remota.
+* All [!DNL Sites] authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * No se admiten las API para personalizar la integración.
 * La funcionalidad admite la búsqueda y el uso ininterrumpidos de recursos remotos. Para que varios recursos remotos estén disponibles en la implementación local, considere migrar los recursos. Consulte [Guía de migración de recursos](assets-migration-guide.md).
 * No es posible utilizar un recurso remoto como miniatura de página en la interfaz de usuario Propiedades [!UICONTROL de la] página. Puede establecer una miniatura de una página web en la interfaz de usuario Propiedades [!UICONTROL de] página desde la [!UICONTROL miniatura] haciendo clic en [!UICONTROL Seleccionar imagen].
 
 **Configuración y licencia**
 
-* Se admite la implementación de AEM Assets en AMS.
-* AEM Sites puede conectarse a un único repositorio de AEM Assets a la vez.
-* Licencia de AEM Assets como repositorio remoto.
-* Una o varias licencias de AEM Sites que funcionan como una implementación de creación local.
+* [!DNL Experience Manager Assets] se admite la implementación en AMS.
+* [!DNL Experience Manager Sites] Puede conectarse a un único [!DNL Experience Manager Assets] repositorio a la vez.
+* A license of [!DNL Experience Manager Assets] working as remote repository.
+* One or more licenses of [!DNL Experience Manager Sites] working as local authoring deployment.
 
 **Uso**
 
 * Solo se admite la funcionalidad de buscar recursos remotos y arrastrarlos a la página local para crear contenido.
 * La operación de recuperación expira al cabo de 5 segundos. Los autores pueden tener problemas para recuperar recursos, por ejemplo, si hay problemas de red. Los autores pueden volver a intentarlo arrastrando el recurso remoto desde [!UICONTROL Buscador de contenido] al [!UICONTROL Editor de páginas].
-* Las ediciones simples que no son destructivas y que se admiten mediante el componente AEM `Image`, se pueden realizar en los recursos recuperados. Los recursos son de solo lectura.
+* Las ediciones simples que no son destructivas y que se admiten mediante el componente [!DNL Experience Manager], se pueden realizar en los recursos recuperados. `Image` Los recursos son de solo lectura.
 
 ## Solución de problemas {#troubleshoot}
 
