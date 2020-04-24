@@ -3,7 +3,7 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -44,7 +44,7 @@ Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguien
 
 ## Integración {#onboarding}
 
-El servicio de contenido inteligente está disponible para su compra como complemento de Experience Manager. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a la E/S de Adobe.
+El servicio de contenido inteligente está disponible para su compra como complemento de Experience Manager. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a Adobe I/O.
 
 El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con Experience Manager. Para integrar el servicio con Experience Manager Assets, consulte [Configuración de etiquetas](config-smart-tagging.md)inteligentes.
 
