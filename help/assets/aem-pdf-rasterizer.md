@@ -3,7 +3,7 @@ title: Usar rasterizador de PDF para generar representaciones
 description: En este artículo se describe cómo generar miniaturas y representaciones de alta calidad con la biblioteca Rasterizer de Adobe PDF.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -14,13 +14,13 @@ A veces, cuando se cargan archivos PDF o AI de gran tamaño con mucho contenido 
 
 Adobe recomienda utilizar la biblioteca Rasterizer de PDF para lo siguiente:
 
-* Archivos AI/PDF intensos y con gran contenido
-* Archivos AI/PDF con miniaturas no generados de forma predeterminada
-* Archivos AI con colores Pantone Matching System (PMS)
+* Archivos AI/PDF intensos y con gran contenido.
+* Los archivos AI y PDF con miniaturas no se generan de forma predeterminada.
+* Archivos AI con colores Pantone Matching System (PMS).
 
 Las miniaturas y previsualizaciones que se generan con el rasterizador de PDF tienen una mejor calidad en comparación con la salida lista para usar y, por lo tanto, proporcionan una experiencia de visualización uniforme en todos los dispositivos. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacio de color. Siempre se envía a RGB independientemente del espacio de color del archivo de origen.
 
-1. Instale el paquete Rasterizer PDF en su instancia de AEM desde Uso compartido de [paquetes](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Instale el paquete Rasterizer de PDF en la implementación de AEM desde Uso compartido de [paquetes](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
