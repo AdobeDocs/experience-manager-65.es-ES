@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Esta sección de la documentación de Comunidades de AEM se suma a:
 
-* [Cómo crear proyectos de AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md)
+* [Creación de proyectos de AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Ahora hay dos artefactos &quot;uber&quot; que reemplazan a artefactos individuales:
 
@@ -44,18 +44,19 @@ A continuación se muestra un ejemplo de un archivo GAV para AEM Communities API
 Asegúrese de que la versión especificada corresponde a la versión del paquete Communities instalada para las comunidades AEM. Para verificar el número de versión instalada:
 
 1. Inicie sesión con privilegios administrativos.
-2. Vaya al Administrador [de paquetes](../../help/sites-administering/package-manager.md). Por ejemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Vaya al Administrador [de paquetes](../../help/sites-administering/package-manager.md). Por ejemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-3. ubique el paquete *cq-socialcommunities-pkg-1.x.xxx*
-4. extraer la versión del nombre del paquete
-   * La primera versión de AEM 6.3 es la versión 1.11.170
-   * los paquetes de funciones serán versiones 1.12.xxx
+1. Busque el paquete *cq-socialcommunities-pkg-1.x.xxx*
+1. Extraiga la versión del nombre del paquete:
+   * La primera versión de AEM 6.3 es la versión 1.11.170.
+   * Los paquetes de funciones serán las versiones 1.12.xxx.
 
 >[!NOTE]
 >
 >Se recomienda mantenerse al día con la última versión de Comunidades.
 >
 >Visite la sección [Últimas versiones](deploy-communities.md#latest-releases) para identificar la versión más reciente.
+
 
 ## Ejemplo de dependencia de Maven {#maven-dependency-example}
 
