@@ -1,16 +1,16 @@
 ---
-title: Descarga de recursos de AEM
-description: Obtenga información sobre cómo descargar recursos de AEM y activar o desactivar la funcionalidad de descarga.
+title: Descargue recursos digitales de [!DNL Adobe Experience Manager].
+description: Obtenga información sobre cómo descargar recursos de [!DNL Adobe Experience Manager] y activar o desactivar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Descarga de recursos de AEM {#download-assets-from-aem}
+# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Puede descargar recursos, incluidas las representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde Recursos AEM. Los recursos descargados se incluyen en un archivo ZIP. El archivo ZIP comprimido tiene un tamaño máximo de 1 GB para el trabajo de exportación. Se permite un máximo de 500 recursos totales por trabajo de exportación.
+Puede descargar recursos, incluidas las representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde [!DNL Adobe Experience Manager Assets]. Los recursos descargados se incluyen en un archivo ZIP. El archivo ZIP comprimido tiene un tamaño máximo de 1 GB para el trabajo de exportación. Se permite un máximo de 500 recursos totales por trabajo de exportación.
 
 >[!NOTE]
 >
@@ -20,9 +20,9 @@ Para descargar recursos, navegue hasta un recurso, selecciónelo y toque **[!UIC
 
 No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de medios mixtos y Conjuntos de carrusel.
 
-![Opciones disponibles al descargar recursos de Recursos AEM](assets/asset_download_dialog.png)
+![Opciones disponibles al descargar recursos de Experience Manager Assets](assets/asset_download_dialog.png)
 
-*Figura: Opciones disponibles al descargar recursos de Recursos AEM*
+*Figura: Opciones disponibles al descargar recursos de[!DNL Experience Manager Assets].*
 
 Las siguientes son las opciones de exportación y descarga. Las representaciones dinámicas son exclusivas de Dynamic Media y permiten generar representaciones sobre la marcha además del recurso seleccionado; esta opción solo está disponible si tiene Dynamic Media activado.
 
@@ -40,7 +40,7 @@ Cuando selecciona una carpeta para descargar, se descarga la jerarquía completa
 
 ## Habilitar servlet de descarga de recursos {#enable-asset-download-servlet}
 
-El servlet predeterminado de AEM permite a los usuarios autenticados emitir solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos visibles para ellos que pueden sobrecargar el servidor y la red. Para mitigar los posibles riesgos de DoS causados por esta función, el componente `AssetDownloadServlet` OSGi está deshabilitado de forma predeterminada para las instancias de publicación.
+El servlet predeterminado en [!DNL Experience Manager] permite a los usuarios autenticados emitir solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos visibles para ellos que pueden sobrecargar el servidor y la red. Para mitigar los posibles riesgos de DoS causados por esta función, el componente `AssetDownloadServlet` OSGi está deshabilitado de forma predeterminada para las instancias de publicación.
 
 Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza algo como Asset Share Commons u otra implementación similar al portal, habilite manualmente el servlet mediante una configuración OSGi. Adobe recomienda que el tamaño de descarga permitido sea lo más bajo posible sin afectar a los requisitos de descarga diaria. Un valor alto puede afectar al rendimiento.
 
@@ -53,14 +53,14 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza 
 1. En la carpeta config, cree un nuevo archivo de tipo `nt:file` denominado `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Rellene `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` con lo siguiente. Define un tamaño máximo (en bytes) para la descarga como valor de `asset.download.prezip.maxcontentsize`. El ejemplo siguiente configura el tamaño máximo de la descarga ZIP para que no supere los 100 kB.
 
-   ```
+   ```conf
    enabled=B"true"
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
 ## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
 
-El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish actualizando la configuración del despachante para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
+El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experience Manager] publicación actualizando la configuración del despachante para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
 
 1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una nueva regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtros.
 
@@ -71,6 +71,6 @@ El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish act
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos protegidos DRM](drm.md)
->* [Descargar recursos con la aplicación de escritorio AEM en Windows o Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+>* [Descargar recursos con la aplicación de escritorio de Experience Manager en Windows o Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
 >* [Descargar recursos mediante Adobe Assets Link desde las aplicaciones compatibles de Adobe Creative Cloud](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
