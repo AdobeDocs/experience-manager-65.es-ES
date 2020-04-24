@@ -4,7 +4,7 @@ description: Sugerencias y directrices sobre la configuración de AEM, cambios e
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -111,7 +111,7 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se saturará rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](/help/assets/assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)recursos.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](/help/assets/assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)recursos.
 
 Principalmente, la estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de AEM. Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
@@ -267,7 +267,7 @@ Se pueden realizar algunas optimizaciones en las configuraciones de índice Oak 
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false
