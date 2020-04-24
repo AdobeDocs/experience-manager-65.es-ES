@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: dee9f9c9d3dfb916d1feaa0d258c883686e1a1dc
 
 ---
 
@@ -38,7 +38,7 @@ No debe instalar ni configurar AEM Forms en JEE con un shell raíz. De forma pre
 
 **Instalación y configuración en Windows**
 
-Debe realizar la instalación en Windows como administrador si va a instalar AEM Forms en JEE en JBoss mediante el método llave en mano o si va a instalar PDF Generator. Además, al instalar PDF Generator en Windows con compatibilidad con aplicaciones nativas, debe ejecutar la instalación como el mismo usuario de Windows que instaló Microsoft Office. Para obtener más información sobre los privilegios de instalación, consulte el documento **Instalación e implementación de AEM Forms en JEE** para su servidor de aplicaciones.
+Debe realizar la instalación en Windows como administrador si va a instalar AEM Forms en JEE en JBoss mediante el método llave en mano o si va a instalar PDF Generator. Además, al instalar PDF Generator en Windows con compatibilidad con aplicaciones nativas, debe ejecutar la instalación como el mismo usuario de Windows que instaló Microsoft Office. Para obtener más información sobre los privilegios de instalación, consulte el documento* Instalación e implementación de AEM Forms en JEE* para su servidor de aplicaciones.
 
 ### Seguridad de capa de red {#network-layer-security}
 
@@ -184,7 +184,7 @@ Para ejecutar el servidor de aplicaciones en el que se implementa AEM Forms en J
    * Denegar inicio de sesión localmente
    * Iniciar sesión como servicio (debe estar ya establecido)
 
-1. Proporcione a la nueva cuenta de usuario los permisos Leer y ejecutar, Contenido de la carpeta de Lista y Leer para el elemento de directorios de contenido web de AEM Forms en JEE.
+1. Conceda a la nueva cuenta de usuario permisos de lectura y ejecución, escritura, modificación, contenido de la carpeta de Lista y lectura para completar AEM Forms en el directorio de instalación JEE y en el directorio de Almacenamiento de Documento global (GDS). La ubicación del directorio GDS se configura manualmente durante el proceso de instalación de AEM Forms. Si la configuración de ubicación permanece vacía durante la instalación, la ubicación predeterminada es un directorio bajo la instalación del servidor de aplicaciones en [JBoss root]/server/[type]/svcnative/DocumentStorage.
 1. Inicio del servidor de aplicaciones.
 
 **Desactivación del servlet de arranque de Configuration Manager**
@@ -258,7 +258,7 @@ Cuando se instala AEM Forms en JEE, se configura una única cuenta de usuario pr
 1. Escriba la siguiente dirección URL en un navegador web:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
    El número de puerto predeterminado es uno de estos:
@@ -278,7 +278,7 @@ Cuando se instala AEM Forms en JEE, se configura una única cuenta de usuario pr
 
 Además, se recomienda cambiar la contraseña predeterminada del administrador de CRX siguiendo estos pasos:
 
-1. Inicie sesión `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` con el nombre de usuario/contraseña predeterminados.
+1. Inicie sesión `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` con el nombre de usuario/contraseña predeterminados.
 1. Escriba Administrador en el campo de búsqueda y haga clic en **Ir**.
 1. Seleccione **Administrador** en el resultado de la búsqueda y haga clic en el icono **Editar** en la parte inferior derecha de la interfaz de usuario.
 1. Especifique la nueva contraseña en el campo **Nueva contraseña** y la contraseña antigua en el campo **Contraseña** .
@@ -291,7 +291,7 @@ La generación del lenguaje de definición de servicios Web (WSDL) solo debe hab
 1. Escriba la siguiente dirección URL en un navegador web:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
 1. Haga clic en **Configuración > Configuración del sistema principal > Configuraciones**.
@@ -676,7 +676,7 @@ Al instalar por primera vez Documento Services, la lista Remitente del reenvío 
 
 **Administración de la lista de Remitentes del reenvío permitidos**
 
-Puede administrar la lista Remitente del reenvío permitido desde la interfaz de administración de usuarios de la Consola de administración. La interfaz de administración de usuarios le proporciona la funcionalidad de crear, editar o eliminar la lista. Consulte la sección *[Prevención de ataques](/help/forms/using/admin-help/preventing-csrf-attacks.md)*de CSRF de la ayuda *de la*administración para obtener más información sobre cómo trabajar con la lista de Remitente del reenvío permitido.
+Puede administrar la lista Remitente del reenvío permitido desde la interfaz de administración de usuarios de la Consola de administración. La interfaz de administración de usuarios le proporciona la funcionalidad de crear, editar o eliminar la lista. Consulte la sección * [Prevención de ataques](/help/forms/using/admin-help/preventing-csrf-attacks.md)CSRF* de la ayuda *de la* administración para obtener más información sobre cómo trabajar con la lista Remitente del reenvío permitido.
 
 **Administración de excepciones de Remitente del reenvío permitidas y listas de URI permitidas**
 
@@ -691,7 +691,7 @@ AEM Forms en JEE proporciona API para administrar la lista de excepciones de Rem
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Consulte la Referencia *de API de* AEM Forms en JEE para obtener más información sobre las API.
+Consulte los* formularios de AEM en Referencia de API de JEE* para obtener más información sobre las API.
 
 Utilice la lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para las excepciones de Remitente del reenvío permitidas a nivel global, es decir, para definir las excepciones aplicables a todas las aplicaciones. Esta lista solo contiene URI con una ruta absoluta (p. ej. `/index.html`) o una ruta relativa (p. ej. `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo: `/sample/(.)*`.
 
@@ -711,7 +711,7 @@ Incluya el argumento `-Dlc.um.csrffilter.disabled=true` JAVA en la secuencia de 
 
 **Filtrado de Remitentes del reenvío para archivos WAR personalizados**
 
-Es posible que haya creado archivos WAR personalizados para trabajar con AEM Forms en JEE con el fin de cumplir los requisitos comerciales. Para habilitar el filtrado de Remitentes del reenvío para los archivos WAR personalizados, incluya ***adobe-usermanager-client.jar*** en la ruta de clases de WAR e incluya una entrada de filtro en el archivo *web.xml* con los siguientes parámetros:
+Es posible que haya creado archivos WAR personalizados para trabajar con AEM Forms en JEE con el fin de cumplir los requisitos comerciales. Para habilitar el filtrado de Remitentes del reenvío para sus archivos WAR personalizados, incluya ***adobe-usermanager-client.jar*** en la ruta de clases de la WAR e incluya una entrada de filtro en el archivo web.xml* con los siguientes parámetros:
 
 **CSRF_CHECK_GETS** controla la comprobación de Remitentes del reenvío en las solicitudes GET. Si no se define este parámetro, el valor predeterminado se establece en false. Incluya este parámetro solo si desea filtrar las solicitudes GET.
 
@@ -970,10 +970,11 @@ La instalación llave en mano de AEM Forms en JEE configura una cuenta de servic
 1. En la ventana Configuración de seguridad local, en Asignación de derechos de usuario, otorgue los siguientes derechos a la cuenta de usuario en la que se ejecuta el servidor de formularios:
 
    * Denegar el inicio de sesión a través de Servicios de Terminal Server
-   * Denegar inicio de sesión localmente
+   * Denegar el inicio de sesión localmente
    * Iniciar sesión como servicio (debe estar ya establecido)
 
-1. Conceda a la nueva cuenta de usuario permisos de lectura y ejecución, contenido de la carpeta de Lista y lectura para AEM Forms en directorios de contenido web JEE.
+1. Conceda a la nueva cuenta de usuario permisos de lectura y ejecución, escritura, modificación, contenido de la carpeta de Lista y lectura para completar AEM Forms en el directorio de instalación JEE y en el directorio de Almacenamiento de Documento global (GDS). La ubicación del directorio GDS se configura manualmente durante el proceso de instalación de AEM Forms. Si la configuración de ubicación permanece vacía durante la instalación, la ubicación predeterminada es un directorio bajo la instalación del servidor de aplicaciones en [JBoss root]/server/[type]/svcnative/DocumentStorage.
+
 1. Inicio del servicio del servidor de aplicaciones.
 
 ### Seguridad del sistema de archivos {#file-system-security}
@@ -1038,4 +1039,3 @@ Establezca la `directoryBrowsingEnabled` propiedad en el archivo ibm-web-ext.xml
 1. Anule la selección de **Activar la seguridad** de la aplicación y **Usar seguridad** de Java 2.
 1. Haga clic en **Aceptar** o en **Aplicar**.
 1. En el cuadro **Mensajes** , haga clic en **Guardar directamente en la configuración** maestra.
-
