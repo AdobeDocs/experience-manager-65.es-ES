@@ -3,7 +3,7 @@ title: Prácticas recomendadas para procesar los distintos formatos de archivo c
 description: Prácticas recomendadas para procesar los distintos tipos de archivos admitidos mediante Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -16,7 +16,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->Si utiliza Experience Manager en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de asistencia técnica de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe.
+>Si utiliza Experience Manager en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de asistencia técnica de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. Es posible que Experience Manager no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ## Biblioteca Adobe Camera Raw {#adobe-camera-raw-library}
 
@@ -34,15 +34,15 @@ Para obtener los mejores resultados, Adobe recomienda utilizar la biblioteca Ras
 * Archivos AI con miniaturas no generados de forma predeterminada
 * Para archivos AI con colores SPOT (PMS)
 
-Las miniaturas y las vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con la salida de rasterizado lista para usar. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer solo genera salida RGB.
+Las miniaturas y previsualizaciones que se generan con el rasterizador de PDF son de mejor calidad en comparación con la salida de rasterizado lista para usar. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer solo genera salida RGB.
 
 ## Adobe InDesign Server {#adobe-indesign-server}
 
-Adobe recomienda utilizar Adobe InDesign Server para extraer representaciones específicas de Adobe InDesign, como IDML y HTML. Para obtener más información, consulte [AEM assets as reference in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+Adobe recomienda utilizar Adobe InDesign Server para extraer representaciones específicas de Adobe InDesign, como IDML y HTML. Para obtener más información, consulte [Añadir recursos de AEM como referencias en Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## Dynamic Media  {#dynamic-media}
 
-Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Ofrece experiencias de visualización interactivas y optimiza el proceso de administración de campañas digitales. Para obtener más información sobre cómo activar Dynamic Media, consulte [Configuración de Dynamic Media](/help/assets/config-dynamic.md).
+Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Ofrece experiencias de visualización interactivas y optimiza el proceso de gestión de la campaña digital. Para obtener más información sobre cómo activar Dynamic Media, consulte [Configuración de Dynamic Media](/help/assets/config-dynamic.md).
 
 Actualmente, Dynamic Media puede admitir vídeos de hasta 20 GB de contenido por archivo.
 
@@ -51,7 +51,7 @@ Actualmente, Dynamic Media puede admitir vídeos de hasta 20 GB de contenido por
 Adobe recomienda utilizar la biblioteca ImageMagick en los siguientes casos:
 
 * Generación de representaciones en miniatura para archivos EPS
-* Para conservar la información del perfil de imagen
+* Conservación de la información del perfil de imagen
 * Para preservar la transparencia
 * Para procesar archivos PSD y PSB
 
