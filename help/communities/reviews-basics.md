@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
@@ -21,7 +21,7 @@ Esta función consta de dos componentes que funcionan juntos: revisa y revisa el
 
 Las revisiones son un componente compuesto basado en un sistema [de](essentials-comments.md) comentarios que contiene uno o más componentes de [clasificación](rating-basics.md) (tally).
 
-No se admite la publicación anónima de una revisión. Los visitantes del sitio deben registrarse e iniciar sesión para agregar una revisión. El visitante (miembro) que ha iniciado sesión puede actualizar su revisión en cualquier momento.
+No se admite la publicación anónima de una revisión. Los visitantes del sitio deben registrarse e iniciar sesión para agregar una revisión. El visitante firmado (miembro) puede actualizar su revisión en cualquier momento.
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -39,7 +39,7 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.reseñas</td>
+   <td>cq.social.hbs.reviews</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -61,7 +61,7 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 | **resourceType** | social/revisiones/componentes/hbs/resumen |
 |---|---|
 | [**inclusible **](scf.md#add-or-include-a-communities-component) | Sí: las propiedades se pueden editar en *design *mode |
-| [**clientllibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reseñas |
+| [**clientllibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
 | **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **propiedades** | Consulte [Uso de las revisiones](reviews.md) |
@@ -81,14 +81,14 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
 Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso mediante programación a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general](srp.md) del proveedor de recursos de almacenamiento de información: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
+* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
