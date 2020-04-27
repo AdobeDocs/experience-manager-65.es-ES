@@ -4,7 +4,7 @@ description: Sugerencias y directrices sobre la configuración de AEM, cambios e
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -111,7 +111,7 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](/help/assets/assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)recursos.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se saturará rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](/help/assets/assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)recursos.
 
 Principalmente, la estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de AEM. Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
@@ -203,17 +203,13 @@ Además, establezca la ruta de la carpeta temporal de ImageMagick en el `configu
 
 >[!CAUTION]
 >
->Una configuración incorrecta puede hacer que el servidor sea inestable si ImageMagick utiliza todo el espacio disponible en el disco.
->
->Los cambios de política necesarios para procesar archivos de gran tamaño con ImageMagick pueden afectar al rendimiento de AEM. Para obtener más información, consulte [Instalación y configuración de ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Una configuración incorrecta puede hacer que el servidor sea inestable si ImageMagick utiliza todo el espacio disponible en el disco. Los cambios de política necesarios para procesar archivos de gran tamaño con ImageMagick pueden afectar al rendimiento de AEM. Para obtener más información, consulte [Instalación y configuración de ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
 >ImageMagick `policy.xml` y `configure.xml` los archivos están disponibles en `/usr/lib64/ImageMagick-&#42;/config/` lugar de `/etc/ImageMagick/`.Consulte la documentación [de](https://www.imagemagick.org/script/resources.php) ImageMagick para la ubicación de los archivos de configuración.
 
->[!TIP]
->
->Si utiliza Experience Manager en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de asistencia técnica de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe.
+Si utiliza Experience Manager en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. Es posible que Experience Manager no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -239,7 +235,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 >[!NOTE]
 >
->Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que este paso sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
+>Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que esto sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
 
 ## Índices de búsqueda {#search-indexes}
 
