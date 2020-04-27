@@ -3,7 +3,7 @@ title: Instalación y configuración de ImageMagick para trabajar con Recursos A
 description: Obtenga información sobre el software ImageMagick, cómo instalarlo, cómo configurar el paso del proceso de la línea de comandos y cómo utilizarlo para editar, componer y generar miniaturas de imágenes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -18,7 +18,7 @@ Para procesar archivos de gran tamaño con ImageMagick, considere la posibilidad
 
 >[!NOTE]
 >
->Si utiliza AEM en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de asistencia técnica de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño.
+>Si utiliza AEM en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si piensa procesar muchos archivos PSD o PSB de alta resolución. Es posible que Experience Manager no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ## Instalación de ImageMagick {#installing-imagemagick}
 
