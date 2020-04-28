@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
+source-git-commit: b6c013a31b70166cba80fea53dffc3794ffee5b8
 
 ---
 
@@ -32,7 +32,7 @@ Generalmente, un formulario XFA tiene varios elementos. Por ejemplo, tabla, camp
 
 Es más fácil para los navegadores procesar un DOM más delgado. Por lo tanto, puede realizar las siguientes optimizaciones en un formulario XFA para reducir el número de nodos. Por lo tanto, genere una estructura DOM delgada:
 
-* Utilice la propiedad caption para agregar una etiqueta a un campo. No utilice un elemento Texto independiente para agregar una etiqueta. Ayuda a eliminar el peso adicional, lo que lleva a un aumento del rendimiento. También ayuda a evitar problemas de diseño.
+* Utilice la propiedad caption para agregar una etiqueta a un campo. No utilice un elemento Texto independiente para agregar una etiqueta. Ayuda a eliminar pesos adicionales, lo que lleva a mejoras en el rendimiento. También ayuda a evitar problemas de diseño.
 * Mantenga el número mínimo de elementos de texto Dibujar en un formulario. Los elementos de dibujo son útiles para mejorar la legibilidad y la apariencia, pero no tienen ninguna capacidad de almacenamiento de información. Se recomienda combinar varios elementos de texto Dibujar en un solo elemento de texto Dibujar. No deje ninguna piedra sin girar para hacer un formulario más delgado.
 
 ## Los formularios Lite funcionan mejor, los recursos se mantienen comprimidos {#lite-forms-perform-better-keep-the-resources-compressed}
@@ -43,7 +43,7 @@ Por lo tanto, reducir el tamaño de los recursos externos y utilizar únicamente
 
 * Utilice imágenes [](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)comprimidas. Reduce la actividad de red y la cantidad de memoria necesaria para procesar un formulario. Por lo tanto, el tiempo de carga del formulario disminuye sustancialmente.
 * Utilice la opción Minify en AEM Configuration Manager (Day CQ HTML Library Manager) para comprimir archivos JavaScript y CSS. Para obtener más información, consulte Configuración de [OSGi](/help/sites-deploying/osgi-configuration-settings.md).
-* Habilite la compresión web. Reduce el tamaño de las solicitudes y respuestas originadas en un formulario. Para obtener más información, consulte Ajuste [del rendimiento del servidor](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)de formularios AEM.
+* Habilite la compresión web. Reduce el tamaño de las solicitudes y respuestas originadas en un formulario. Para obtener más información, consulte Ajuste [del rendimiento del servidor](https://helpx.adobe.com/es/aem-forms/6-3/performance-tuning-aem-forms.html)de formularios AEM.
 
 ## Mantener vivo el interés, mostrar solo los campos obligatorios {#keep-the-interest-alive-show-only-required-fields}
 
@@ -57,14 +57,14 @@ Un formulario HTML5 se puede ejecutar en cientos de páginas. Un formulario con 
 
 Los formularios HTML5 pueden contener campos basados en datos (tablas y subformularios). Estos campos expanden el tamaño del formulario en tiempo de ejecución. Por ejemplo, una tabla basada en datos en un formulario HTML5 puede abarcar miles de filas. Estas tablas pueden causar una degradación del diseño y del rendimiento. Las optimizaciones sugeridas a continuación pueden ayudarle a reducir el tiempo de carga de los formularios HTML5 con campos basados en datos:
 
-* Utilice secuencias de comandos XFA para lograr la navegación por páginas y mostrar campos basados en datos (tablas y subformularios). En la navegación por páginas, solo se muestran datos específicos en una página. Limita la operación de pintura del navegador a los campos que se muestran a la vez y facilita la navegación por un formulario. Además, los usuarios de dispositivos móviles solo están interesados en un subconjunto de datos. Le ayuda a ofrecer una excelente experiencia al usuario y reduce el tiempo necesario para cargar los datos necesarios. Se obtienen dos soluciones por el precio de una.  Además, tenga en cuenta que la navegación por páginas no está disponible de forma predeterminada. Puede utilizar secuencias de comandos XFA para desarrollar la navegación por páginas.
+* Utilice secuencias de comandos XFA para lograr la navegación por páginas y mostrar campos basados en datos (tablas y subformularios). En la navegación por páginas, solo se muestran datos específicos en una página. Limita la operación de pintura del navegador a los campos que se muestran a la vez y facilita la navegación por un formulario. Además, los usuarios de dispositivos móviles solo están interesados en un subconjunto de datos. Le ayuda a ofrecer una buena experiencia de usuario y reduce el tiempo necesario para cargar los datos necesarios. Se obtienen dos soluciones por el precio de una.  Además, tenga en cuenta que la navegación por páginas no está disponible de forma predeterminada. Puede utilizar secuencias de comandos XFA para desarrollar la navegación por páginas.
 
 * Evalúe la combinación de varias columnas de solo lectura en una sola columna. Reduce la memoria necesaria para mostrar el formulario. Además, evite mostrar las columnas que no requieran ninguna entrada de los usuarios.
 * Evaluar la división del formulario basado en datos en un conjunto [de](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)formularios, si las sugerencias anteriores no producen muchas mejoras. Por ejemplo, si una tabla tiene más de 1000 filas, mueva cada 100 filas a un formulario diferente. Ayudaría a mejorar el tiempo de carga y el rendimiento de los formularios.  Además, tenga en cuenta que un conjunto de formularios produce un archivo XML de envío consolidado para todos los formularios. Para diferenciar los datos de cada formulario, utilice orígenes de datos diferentes. Para obtener más información, consulte Conjunto [de formularios en AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 
-## Potencia de dos para el documento de registro (DOR) {#power-of-two-for-document-of-record-dor}
+## Potencia de dos para el Documento de registros (DOR) {#power-of-two-for-document-of-record-dor}
 
-Un formulario XFA puede tener un gran número de secciones dedicadas únicamente al documento de registro (DOR). Para reducir el número de nodos y mejorar el rendimiento de un formulario de este tipo, puede mantener diferentes copias del formulario: una copia para rellenar el formulario y otra para generar el documento de registro en el servidor. En la copia para rellenar el formulario XFA, se muestran los campos requeridos solamente para capturar datos. En el formulario Generar documento de registro XFA desde, mantenga los campos requeridos solamente en la salida impresa del formulario. Antes de elegir el enfoque sugerido, evalúe la ganancia de rendimiento y la sobrecarga de mantenimiento.
+Un formulario XFA puede tener un gran número de secciones dedicadas únicamente al Documento de registros (DOR). Para reducir el número de nodos y mejorar el rendimiento de un formulario de este tipo, puede mantener diferentes copias del formulario: una copia para rellenar el formulario y otra para generar Documento de registro en el servidor. En la copia para rellenar el formulario XFA, se muestran los campos requeridos solamente para capturar datos. En el Documento de generación de registros XFA desde, mantenga los campos requeridos solamente en el resultado impreso del formulario. Antes de elegir el enfoque sugerido, evalúe la ganancia de rendimiento y la sobrecarga de mantenimiento.
 
 ## Lecturas recomendadas {#recommended-reads}
 
@@ -75,6 +75,7 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
 * [Prácticas recomendadas para la administración de AEM](/help/sites-administering/administer-best-practices.md)
 * [Prácticas recomendadas para desarrollar soluciones](/help/sites-developing/best-practices.md)
 * [Prácticas recomendadas para usar formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md) 
+* [El servidor de AEM Forms no incrusta fuentes en un formulario PDF dinámico](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Tarjeta de referencia rápida {#quick-reference-card}
 
