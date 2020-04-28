@@ -3,7 +3,7 @@ title: Reescritura XMP en representaciones
 description: Descubra cómo la función de reescritura XMP propaga los cambios de metadatos de un recurso en todas las representaciones del recurso o en determinadas representaciones.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 33ab9845f7800c80a6beb5db06f3fadf582122d0
 
 ---
 
@@ -44,16 +44,16 @@ Para permitir que la función de reescritura XMP propague los cambios de metadat
 
 Para que la función de reescritura XMP propague metadatos a las miniaturas de representación 140.100.png y 319.319.png, lleve a cabo estos pasos.
 
-1. Toque o haga clic en el logotipo de AEM y, a continuación, vaya a **Herramientas** > **Flujo de trabajo** > **Modelos**.
+1. Pulse o haga clic en el logotipo de AEM y, a continuación, vaya a **Herramientas** > **Flujo de trabajo** > **Modelos**.
 1. En la página Modelos, abra el modelo de flujo de trabajo de reescritura de metadatos **DAM** .
-1. En la página de propiedades de escritura **de metadatos** DAM, abra el paso Proceso **de escritura** XMP.
-1. En el cuadro de diálogo Propiedades del paso, toque o haga clic en la ficha **Proceso** .
+1. En la página de **propiedades de escritura de metadatos DAM**, abra el paso **Proceso de escritura XMP**.
+1. En el cuadro de diálogo Propiedades del paso, pulse o haga clic en la pestaña **Proceso**.
 1. En el cuadro **Argumentos** , agregue `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`y toque o haga clic en **Aceptar**.
 
    ![step_properties](assets/step_properties.png)
 
 1. Guarde los cambios.
-1. Para volver a generar las representaciones TIF piramidales para imágenes de Dynamic Media con los nuevos atributos, agregue el paso Recursos **de imagen de proceso de medios** dinámicos al flujo de trabajo de reescritura de metadatos DAM.
+1. To regenerate the pyramid TIF renditions for Dynamic Media images with the new attributes, add the **Dynamic Media Process Image Assets** step to the DAM Metadata Writeback workflow.
 
    Las representaciones PTIFF solo se crean y almacenan localmente en una implementación híbrida de Dynamic Media.
 
@@ -77,15 +77,15 @@ El filtrado de la lista blanca de metadatos XMP resuelve este problema permitié
 
 >[!NOTE]
 >
->El filtrado solo funciona para las propiedades derivadas de orígenes XMP en los binarios de recursos. Para las propiedades derivadas de orígenes no XMP, como los formatos EXIF e IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación de recursos se almacena en la propiedad denominada `CreateDate` en TIFF EXIF. AEM registra este valor en el campo de metadatos denominado `exif:DateTimeOriginal`. Como el origen es un origen que no es XMP, el filtrado no funciona en esta propiedad.
+>El filtrado solo funciona para las propiedades derivadas de orígenes XMP en los binarios de recursos. Para las propiedades derivadas de orígenes no XMP, como los formatos EXIF e IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación de recursos se almacena en la propiedad denominada `CreateDate` en TIFF EXIF. AEM almacena este valor en un campo de metadatos denominado `exif:DateTimeOriginal`. Como el origen es un origen que no es XMP, el filtrado no funciona en esta propiedad.
 
 1. Para abrir Configuration Manager, acceda a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra la configuración de **Adobe CQ DAM XmpFilter** .
-1. Para aplicar el filtrado de listas blancas, seleccione **Aplicar lista blanca a las propiedades** XMP y especifique las propiedades que desea importar en el cuadro de filtrado **Nombres XML** admitidos para XMP.
+1. Para aplicar el filtrado de listas blancas, seleccione **Aplicar lista blanca a las propiedades XMP** y especifique las propiedades que desea importar en el cuadro de filtrado **Nombres XML admitidos para XMP**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Para filtrar las propiedades XMP bloqueadas después de aplicar el filtro de la lista blanca, especifíquelas en el cuadro de filtrado **Nombres XML** bloqueados para XMP.
+1. Para filtrar las propiedades XMP bloqueadas después de aplicar el filtro de la lista blanca, especifíquelas en el cuadro de **filtrado Nombres XML bloqueados para XMP**.
 
    >[!NOTE]
    >
