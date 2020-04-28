@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 844d42ed50da153077423190684aa85265bce12f
 
 ---
 
@@ -27,7 +27,11 @@ Un autor puede encontrar las siguientes limitaciones funcionales al utilizar el 
 
 Al [editar una página](/help/sites-authoring/editing-content.md), los vínculos no están activos.
 
-* [Cambie al modo **Vista previa**](/help/sites-authoring/editing-content.md#preview-mode) para navegar con los vínculos del contenido.
+* [Cambie al modo **Previsualización**](/help/sites-authoring/editing-content.md#preview-mode) para navegar con los vínculos del contenido.
+
+### Páginas de estructura {#structure-pages}
+
+No se pueden asignar nombres a las páginas `structure`. Las páginas con nombre `structure` no se podrán editar en el editor de páginas.
 
 ## Limitaciones de CSS {#css-limitations}
 
@@ -47,7 +51,7 @@ Los elementos con posición absoluta pueden causar problemas en la posición de 
 
 Es posible que las imágenes de fondo fijas no se muestren como fijas al desplazarse debido a que se incrustan en un iframe.
 
-* Si selecciona **Ver página como publicada** en las acciones de la barra de encabezado, se muestra la página correctamente.
+* Si selecciona **Vista de página como Publicada** en las acciones de la barra de encabezado, se muestra la página correctamente.
 
 ### 100% Height {#height}
 
