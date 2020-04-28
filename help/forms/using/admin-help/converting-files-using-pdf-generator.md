@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 68cd1c13fff94ac485865e50bc955548cd285b14
 
 ---
 
@@ -61,11 +61,22 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de la je
 
 >[!NOTE]
 >
->La función de HTML a PDF requiere ciertas fuentes en el directorio de fuentes del sistema. En sistemas Linux, Solaris y AIX, el directorio de fuentes del sistema debe contener la fuente Courier. En sistemas Windows, el directorio de fuentes del sistema debe contener Times New Roman.
+>* La función de HTML a PDF requiere ciertas fuentes en el directorio de fuentes del sistema. En sistemas Linux, Solaris y AIX, el directorio de fuentes del sistema debe contener la fuente Courier. En sistemas Windows, el directorio de fuentes del sistema debe contener Times New Roman.
+   >
+   > 
+* Las siguientes son fuentes japonesas predeterminadas en AEM Forms en Linux. Al menos >una de estas fuentes debería estar disponible para convertir fuentes japonesas en el sistema >.
+   >
+   >   
+   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Gothic Pro-VI&quot;
+   >   * &quot;Kozuka Mincho Pro-VI&quot;
+   >   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Mincho Pr6N&quot;
+   >   * &quot;Sazanami Mincho&quot;
+   >   * &quot;Adobe Heiti Std&quot;
+   >   * &quot;Adobe Song Std&quot;
+>* Para cargar un archivo desde el sistema de archivos local, utilice la opción Cargar archivo en la página HTML a PDF.
 
->[!NOTE]
->
->Para cargar un archivo desde el sistema de archivos local, utilice la opción Cargar archivo en la página HTML a PDF.
 
 1. En la consola de administración, haga clic en Servicios > Generador de PDF > HTML a PDF.
 1. Especifique el archivo que desea convertir realizando una de las siguientes tareas:
