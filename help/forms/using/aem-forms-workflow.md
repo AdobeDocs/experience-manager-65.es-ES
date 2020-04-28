@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
 
 ---
 
@@ -65,7 +65,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
 [Obtener archivo](assets/example-mortgage-loan-application.zip)
 
-1. Abra la consola Modelos de flujo de trabajo. La dirección URL predeterminada es https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Abra la consola Modelos de flujo de trabajo. La dirección URL predeterminada es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Select **Create**, then **Create Model**. Aparecerá el cuadro de diálogo Añadir modelo de flujo de trabajo.
 1. Introduzca el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud de hipoteca. Puntee **Listo**.
 1. Seleccione el modelo de flujo de trabajo recién creado y toque **Editar**. Ahora puede agregar pasos de flujo de trabajo para generar lógica empresarial. Cuando se crea un modelo de flujo de trabajo por primera vez, contiene:
@@ -75,7 +75,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
 1. Habilite las notificaciones por correo electrónico. Puede configurar el flujo de trabajo centrado en formularios en OSGi para enviar notificaciones por correo electrónico a los usuarios o a los usuarios asignados. Realice las siguientes configuraciones para habilitar las notificaciones por correo electrónico:
 
-   1. Vaya al administrador de configuración de AEM en https://&#39;[server]:[port]&#39;/system/console/configMgr.
+   1. Vaya al administrador de configuración de AEM en `https://[server]:[port]/system/console/configMgr`.
    1. Abra la configuración **[!UICONTROL Día del servicio]** de correo de CQ. Especifique un valor para los campos de nombre **[!UICONTROL de host del servidor]** SMTP, **[!UICONTROL puerto del servidor]** SMTP y dirección **** &quot;De&quot;. Haga clic en **[!UICONTROL Guardar]**.
    1. Abra la configuración **[!UICONTROL Day CQ Link Externalizer]** . En el campo **[!UICONTROL Dominios]** , especifique el nombre de host/dirección IP real y el número de puerto para las instancias locales, de autor y de publicación. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -87,7 +87,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
    El componente de asignación de tarea asigna la tarea, creada por el flujo de trabajo, a un usuario o grupo. Junto con la asignación de la tarea, puede utilizar el componente para especificar un formulario adaptable o un PDF no interactivo para la tarea. El formulario adaptable es necesario para aceptar datos introducidos por los usuarios y se utiliza un PDF no interactivo o un formulario adaptable de sólo lectura para flujos de trabajo solo de revisión.
 
-   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asigne la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso de asignación de tareas, consulte Flujo de trabajo centrado en [formularios en OSGi - documento de referencia](../../forms/using/aem-forms-workflow.md) de pasos.
+   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asigne la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso de asignación de tarea, consulte Flujo de trabajo centrado en [formularios en OSGi - documento de referencia](../../forms/using/aem-forms-workflow.md) de pasos.
 
    ![workflow-editor](assets/workflow-editor.png)
 
@@ -107,7 +107,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
    ![Ejemplo de división OR](assets/orsplit_branch1_active_new.png)
 
-   **expresión de Enrutamiento para la ramificación 1**
+   **expresión de Enrutamiento para la ramificación 2**
 
    Cuando un usuario toca **Rechazar** en la bandeja de entrada de AEM, se activa la rama 2.
 
@@ -251,7 +251,7 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
 
    | Campo | Descripción |
    |---|---|
-   | Filtro de asignador de cargas útiles | Cuando se crea una carpeta vigilada, se crea una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir una secuencia de comandos para asignar un flujo de trabajo de AEM y aceptar entradas de la estructura de carpetas observada. Hay una implementación lista para usar disponible que se muestra en el filtro del asignador de carga útil. Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
+   | Filtro de asignador de cargas útiles | Cuando se crea una carpeta vigilada, se crea una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir una secuencia de comandos para asignar un flujo de trabajo de AEM para aceptar entradas de la estructura de carpetas observada. Hay una implementación lista para usar disponible que se muestra en el filtro del asignador de carga útil. Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
 
    La ficha Avanzado contiene más campos. La mayoría de estos campos contienen un valor predeterminado. Para obtener más información sobre todos los campos, consulte el artículo [Crear o configurar una carpeta](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) vigilada.
 
@@ -265,10 +265,10 @@ Puede asociar y ejecutar un flujo de trabajo centrado en formularios en OSGi al 
 
 Puede utilizar los pasos Asignar Tarea y Enviar correo electrónico de los Flujos de trabajo de AEM para enviar un correo electrónico. Realice los siguientes pasos para especificar los servidores de correo electrónico y otras configuraciones necesarias para enviar correo electrónico:
 
-1. Vaya al administrador de configuración de AEM en https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Vaya al administrador de configuración de AEM en `https://[server]:[port]/system/console/configMgr`.
 1. Abra la configuración **[!UICONTROL Día del servicio]** de correo de CQ. Especifique un valor para los campos de nombre **[!UICONTROL de host del servidor]** SMTP, **[!UICONTROL puerto del servidor]** SMTP y dirección **** &quot;De&quot;. Haga clic en **[!UICONTROL Guardar]**.
 1. Abra la configuración **[!UICONTROL Day CQ Link Externalizer]** . En el campo **[!UICONTROL Dominios]** , especifique el nombre de host/dirección IP real y el número de puerto para las instancias locales, de autor y de publicación. Haga clic en **[!UICONTROL Guardar]**.
 
 ### Purgar instancias de flujo de trabajo {#purge-workflow-instances}
 
-Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, de modo que puede depurar regularmente instancias de flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte Depuración [regular de instancias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de flujo de trabajo.
+Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, de modo que puede depurar regularmente instancias de flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte Depuración [regular de instancias](/help/sites-administering/workflows-administering.md#regular) de flujo de trabajo Depuración de instancias de flujo de trabajo
