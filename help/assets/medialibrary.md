@@ -3,16 +3,16 @@ title: Compare las ofertas de AEM Assets y AEM Media Library
 description: Compare las ofertas de AEM Assets y AEM Media Library y conozca las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 569c552686e6312ecae0d500147a8b65354c303d
+source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
 
 ---
 
 
 # AEM Assets y AEM Media Library {#aem-assets-vs-aem-medialibrary}
 
-Recursos Adobe Experience Manager (AEM) es una parte integral de la plataforma AEM. Esta integración suave se considera una ventaja importante de AEM y garantiza la coherencia en la administración de contenido y una alta productividad para los creadores de contenido.
+Recursos Adobe Experience Manager (AEM) es una parte integral de la plataforma AEM. Esta integración suave se considera una ventaja importante de AEM y garantiza la coherencia en el gestor de contenido y la alta productividad de los creadores de contenido.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Preguntas frecuentes {#frequently-asked-questions}
 
 ### ¿Qué es AEM Assets? {#what-is-aem-assets}
 
@@ -28,7 +28,7 @@ Las funciones únicas que solo están disponibles para los clientes de Recursos 
 
 * la capacidad para extraer y editar metadatos que no sean título, etiquetas y descripción.
 * el administrador de AEM Assets, disponible en la pantalla de bienvenida seleccionando el segundo botón junto al administrador del sitio.
-* todos los pasos del flujo de trabajo relacionados con la administración de recursos digitales, a saber, AEM Assets Ingestion, AEM Assets Delete, AEM Assets Sub-Asset-Handling y AEM Assets extraiga metadatos.
+* todos los pasos del flujo de trabajo relacionados con la administración de recursos digitales, a saber, AEM Assets Ingestion, AEM Assets Delete, AEM Assets Sub-Asset-Handling, extracción de metadatos de AEM Assets.
 * bibliotecas incluyendo el espacio del paquete im &quot;dam&quot;.
 
 El uso de estas funciones requiere una licencia válida de Recursos AEM.
@@ -78,12 +78,12 @@ En este caso de uso no es necesario comprar Recursos AEM, incluso el uso de la b
 * Rights Management
 * Compatibilidad con RAW de cámara
 * Administración y configuración de facetas de búsqueda
-* Flujos de trabajo DAM pregenerados (por ejemplo, sesión fotográfica)
-* Informes y análisis de recursos: Perspectivas de recursos
+* flujos de trabajo DAM previamente compilados (por ejemplo, sesión fotográfica)
+* Sistema de informes de recursos y análisis: Perspectivas de recursos
 * Administración de activos 3D
-* Recursos de red
+* Recursos conectados
 * Brand Portal
-* Acceso de autoservicio
+* Acceso a autoservicio
 * Explorar, buscar y descargar
 * Colecciones y uso compartido de carpetas
 * Herramientas de administración
@@ -97,9 +97,9 @@ En este caso de uso no es necesario comprar Recursos AEM, incluso el uso de la b
 * Administración de etiquetas
 * Control de versión
 * Representaciones estáticas
-* Proyectos, tareas, creación de flujos de trabajo
-* Flujo de actividad (escala de tiempo)
-* Generador de consultas (API)
+* Proyectos, Tareas, creación de flujos de trabajo
+* Flujo de Actividad (escala de tiempo)
+* Consulta Builder (API)
 * Integración de Marketing Cloud
 * Personalización y extensión de la interfaz de usuario
 * Comentarios y anotaciones
