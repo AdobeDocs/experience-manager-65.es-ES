@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -27,9 +27,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >La ubicación del paquete de las API de Communities está sujeta a cambios al actualizar de una versión principal a otra.
 
+
 ### Interfaz de SocialComponent {#socialcomponent-interface}
 
-SocialComponents son POJO que representan un recurso para una función de comunidades AEM. Lo ideal es que cada componente de Social represente un resourceType específico con GETters expuestos que proporcionen datos al cliente para que el recurso se represente con precisión. Toda la lógica empresarial y la lógica de vista se encapsulan en el componente Social, incluida la información de la sesión del visitante del sitio, si es necesario.
+SocialComponents son POJO que representan un recurso para una función de comunidades AEM. Lo ideal es que cada componente de Social represente un resourceType específico con GETters expuestos que proporcionen datos al cliente para que el recurso se represente con precisión. Toda la lógica empresarial y la lógica de vista se encapsulan en SocialComponent, incluida la información de la sesión del visitante del sitio, si es necesario.
 
 La interfaz define un conjunto básico de GETters que son necesarios para representar un recurso. Es importante destacar que la interfaz estipula los métodos Map&lt;String, Object> getAsMap() y String toJSONString() que son necesarios para procesar las plantillas Handlebars y exponer los extremos GET JSON para los recursos.
 
@@ -43,7 +44,7 @@ Todas las clases de SocialCollectionComponent deben implementar la interfaz com.
 
 ### Interfaz de SocialComponentFactory {#socialcomponentfactory-interface}
 
-SocialComponentFactory (fábrica) registra un componente de Social con el marco. La fábrica proporciona un medio para permitir que la estructura sepa qué componentes de Social están disponibles para un recursoType determinado y su prioridad de clasificación&amp;ast; cuando se identifican varios componentes de Social.
+SocialComponentFactory (fábrica) registra un componente de Social con el marco. La fábrica proporciona una manera de permitir que la estructura sepa qué componentes de Social están disponibles para un recursoType determinado y su clasificación de prioridad cuando se identifican varios componentes de Social.
 
 SocialComponentFactory es responsable de crear una instancia del componente SocialComponent seleccionado, lo que permite inyectar todas las dependencias necesarias para el componente Social desde la fábrica mediante prácticas de ID.
 
@@ -65,29 +66,29 @@ Se obtiene un identificador del servicio OSGi invocando `com.adobe.cq.social.scf
 
 #### Clase PostOperation {#postoperation-class}
 
-Los extremos POST de la API HTTP son clases PostOperation definidas mediante la implementación de la `SlingPostOperation`interfaz (paquete `org.apache.sling.servlets.post`).
+Los extremos POST de la API HTTP son clases PostOperation definidas mediante la implementación de la `SlingPostOperation` interfaz (paquete `org.apache.sling.servlets.post`).
 
-La implementación de `PostOperation`extremo establece `sling.post.operation`un valor al que responderá la operación. Todas las solicitudes POST con un parámetro:operation establecido en ese valor se delegarán en esta clase de implementación.
+La implementación del `PostOperation` extremo se establece `sling.post.operation` en un valor al que responderá la operación. Todas las solicitudes POST con un parámetro:operation establecido en ese valor se delegarán en esta clase de implementación.
 
-El `PostOperation`invoca el `SocialOperation`que realiza las acciones necesarias para la operación.
+El `PostOperation` invoca el `SocialOperation` que realiza las acciones necesarias para la operación.
 
-El `PostOperation`recibe el resultado del `SocialOperation`y devuelve la respuesta adecuada al cliente.
+El `PostOperation` recibe el resultado del cliente `SocialOperation` y devuelve la respuesta adecuada al cliente.
 
 #### Clase SocialOperation {#socialoperation-class}
 
-Cada `SocialOperation`extremo amplía la clase AbstractSocialOperation y anula el método. `performOperation().`Este método realiza todas las acciones necesarias para completar la operación y devolver un error `SocialOperationResult`o, de lo contrario, emitir un `OperationException`, en cuyo caso se devuelve un estado de error HTTP con un mensaje, si está disponible, en lugar de la respuesta JSON normal o el código de estado HTTP de éxito.
+Cada `SocialOperation` extremo extiende la clase AbstractSocialOperation y anula el método `performOperation()`. Este método realiza todas las acciones necesarias para completar la operación y devolver un `SocialOperationResult` o, de lo contrario, emitir un `OperationException`, en cuyo caso se devuelve un estado de error HTTP con un mensaje, si está disponible, en lugar de la respuesta JSON normal o el código de estado HTTP de éxito.
 
-La extensión `AbstractSocialOperation`permite reutilizar `SocialComponents`para enviar respuestas JSON.
+La extensión `AbstractSocialOperation` permite reutilizar el envío de `SocialComponents` respuestas JSON.
 
 #### Clase SocialOperationResult {#socialoperationresult-class}
 
-La `SocialOperationResult`clase se devuelve como resultado del `SocialOperation`y se compone de un `SocialComponent`, código de estado HTTP y mensaje de estado HTTP.
+La `SocialOperationResult` clase se devuelve como resultado del `SocialOperation` y está compuesta por un `SocialComponent`, código de estado HTTP y un mensaje de estado HTTP.
 
-El `SocialComponent`representa el recurso afectado por la operación.
+El `SocialComponent` representa el recurso afectado por la operación.
 
-Para una operación de creación, el `SocialComponent`incluido en la `SocialOperationResult`representa el recurso que se acaba de crear y, para una operación de actualización, representa el recurso modificado por la operación. No `SocialComponent`se devuelve ningún valor para una operación de eliminación.
+Para una operación de creación, el `SocialComponent` incluido en la `SocialOperationResult` representa el recurso que se acaba de crear y, para una operación de actualización, representa el recurso que la operación alteró. No `SocialComponent` se devuelve ningún valor para una operación de eliminación.
 
-Los códigos de estado HTTP de éxito utilizados son
+Los códigos de estado HTTP utilizados son:
 
 * 201 para operaciones de creación
 * 200 para operaciones de actualización
@@ -95,32 +96,34 @@ Los códigos de estado HTTP de éxito utilizados son
 
 #### Clase OperationException {#operationexception-class}
 
-Se `OperationExcepton`puede generar un error al realizar una operación si la solicitud no es válida o se produce algún otro error, como errores internos, valores de parámetro incorrectos, permisos incorrectos, etc. Un `OperationException`se compone de un código de estado HTTP y un mensaje de error, que se devuelven al cliente como respuesta al `PostOperatoin`.
+Se `OperationExcepton` puede generar un error al realizar una operación si la solicitud no es válida o se produce algún otro error, como errores internos, valores de parámetro incorrectos, permisos incorrectos, etc. Un `OperationException` se compone de un código de estado HTTP y un mensaje de error, que se devuelven al cliente como respuesta al `PostOperatoin`.
 
 #### Clase OperationService {#operationservice-class}
 
-El marco de componentes sociales recomienda que la lógica empresarial responsable de realizar la operación no se implemente dentro de la `SocialOperation`clase, sino que se delegue en un servicio OSGi. El uso de un servicio OSGi para la lógica empresarial permite que un `SocialComponent`producto, actuado por un `SocialOperation`punto final, se integre con otro código y se aplique una lógica comercial diferente.
+El marco de componentes sociales recomienda que la lógica empresarial responsable de realizar la operación no se implemente dentro de la `SocialOperation` clase, sino que se delegue a un servicio OSGi. El uso de un servicio OSGi para la lógica empresarial permite que un `SocialComponent`, actuado por un `SocialOperation` punto final, se integre con otro código y se aplique una lógica comercial diferente.
 
-Todas `OperationService`las clases se extienden `AbstractOperationService`, permitiendo extensiones adicionales que pueden engancharse en la operación que se está realizando. Cada operación del servicio está representada por una `SocialOperation`clase. La `OperationExtensions`clase se puede invocar durante la ejecución de la operación llamando a los métodos
+Todas `OperationService` las clases se extienden `AbstractOperationService`, permitiendo extensiones adicionales que pueden engancharse en la operación que se está realizando. Cada operación del servicio está representada por una `SocialOperation` clase. La clase `OperationExtensions` se puede invocar durante la ejecución de la operación llamando a los métodos
 
 * `performBeforeActions()`
-Permite realizar comprobaciones previas/preprocesamiento y validaciones
+
+   Permite realizar comprobaciones previas/preprocesamiento y validaciones
 * `performAfterActions()`
-Permite una mayor modificación de los recursos o invocar eventos personalizados, flujos de trabajo, etc.
+
+   Permite una mayor modificación de los recursos o invocar eventos personalizados, flujos de trabajo, etc.
 
 #### Clase OperationExtension {#operationextension-class}
 
-`OperationExtension`son piezas de código personalizadas que se pueden insertar en una operación que permite personalizar las operaciones para satisfacer las necesidades comerciales. Los consumidores del componente pueden añadir funcionalidad de forma dinámica e incremental al componente. El patrón de extensión/gancho permite a los desarrolladores centrarse exclusivamente en las propias extensiones y elimina la necesidad de copiar y anular operaciones y componentes completos.
+`OperationExtension` son piezas de código personalizadas que se pueden insertar en una operación que permite personalizar las operaciones para satisfacer las necesidades comerciales. Los consumidores del componente pueden añadir funcionalidad de forma dinámica e incremental al componente. El patrón de extensión/gancho permite a los desarrolladores centrarse exclusivamente en las propias extensiones y elimina la necesidad de copiar y anular operaciones y componentes completos.
 
 ## Código de muestra {#sample-code}
 
 El código de muestra está disponible en el repositorio de [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Busque proyectos con el prefijo `aem-communities` o `aem-scf`.
 
-## Prácticas recomendadas {#best-practices}
+## Prácticas recomendadas   {#best-practices}
 
-Consulte la sección [Directrices](code-guide.md) de codificación para conocer las distintas directrices de codificación y prácticas recomendadas para los desarrolladores de AEM Communities.
+Vista de la sección [Directrices](code-guide.md) de codificación para conocer las distintas directrices de codificación y prácticas recomendadas para desarrolladores de AEM Communities.
 
-Consulte también Proveedor [de recursos de almacenamiento (SRP) para obtener información sobre cómo acceder al contenido generado por el usuario](srp.md) .
+Consulte también Proveedor [de recursos de Almacenamiento (SRP) para obtener información sobre cómo acceder al contenido generado por el usuario](srp.md) .
 
 | **[Elementos básicos de las funciones de ⇐](essentials.md)** | **[Personalización del cliente](client-customize.md)** |
 |---|---|
