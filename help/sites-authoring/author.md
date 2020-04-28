@@ -1,6 +1,6 @@
 ---
-title: Creación
-seo-title: Creación
+title: 'Creación  '
+seo-title: 'Creación  '
 description: Conceptos sobre la creación de contenido en AEM
 seo-description: Conceptos sobre la creación de contenido en AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 AEM le ofrece dos entornos:
 
-* Creación
+* Autor
 * Publicación
 
 Interactúan para permitirle ofrecer contenido en su sitio web para que los visitantes puedan leerlo.
@@ -38,13 +38,11 @@ En el entorno de creación, las funciones de AEM están disponibles mediante dos
 
 >[!NOTE]
 >
->AEM se utiliza para crear la documentación de AEM.
->
->Junto con el Dispatcher, se utiliza para la publicación.
+>AEM y Dispatcher se utilizan para publicar esta documentación de AEM.
 
 ### Entorno de creación {#author-environment}
 
-The author works in what is known as the **author environment**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+El creador trabaja en lo que se conoce como **entorno de creación**. Esto proporciona una interfaz fácil de usar (interfaz gráfica de usuario (GUI o IU)) para crear el contenido. Normalmente está detrás del cortafuegos de la empresa, que ofrece protección total y requiere que el autor inicie sesión con una cuenta que tenga los derechos de acceso apropiados.
 
 >[!NOTE]
 >
@@ -82,15 +80,15 @@ Cuando el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.
 >
 >Por desgracia, a veces la terminología utilizada se superpone. Esto puede pasar con:
 >
->* **Publicar / Cancelar la publicación**
-   >  Estos son los términos principales para las acciones que hacen que el contenido esté disponible para el público en su entorno de publicación (o no).
+>* **Publicar o cancelar la publicación**
+   >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
    >
    >
-* **Activar/Desactivar**
-   >  Estos términos son sinónimos de Publicar/Cancelar la publicación.
+* **Activar o desactivar**
+   >  Estos términos son sinónimos de publicar y cancelar la publicación.
    >
    >
-* **Replicar / Replicación**
+* **Replicar o replicación**
    >  Son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de la página, archivos, código o comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar a la inversa los comentarios de los usuarios.
 >
 
@@ -98,4 +96,4 @@ Cuando el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.
 
 #### Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)implementa almacenamiento en caché y equilibrio de carga.**
