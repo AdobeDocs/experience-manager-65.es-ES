@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -23,9 +23,10 @@ La consola Plantillas de sitio es muy similar a la consola Plantillas [de](tools
 >
 >Las consolas para la creación de sitios [de](sites-console.md)comunidad, plantillas [de sitio de](sites.md)comunidad, plantillas [de grupo de](tools-groups.md) comunidad y funciones [de](functions.md) comunidad solo se pueden usar en el entorno de creación.
 
+
 ## Consola Plantillas del sitio {#site-templates-console}
 
-En el entorno de creación, para llegar a la consola de sitios de comunidad
+En el entorno de creación, para llegar a la consola de sitios de comunidad:
 
 * Desde la navegación global: **[!UICONTROL Herramientas > Comunidades > Plantillas de sitio]**
 
@@ -45,13 +46,19 @@ Esto mostrará el panel Editor del sitio, que contiene 3 subpaneles:
 
 En el panel Información básica, se configura un nombre, una descripción y si la plantilla está habilitada o deshabilitada:
 
-* **[!UICONTROL Nombre]** de plantilla de sitio de la comunidad El ID del nombre de la plantilla
+* **[!UICONTROL Nombre de la plantilla del sitio de la comunidad]**
 
-* **[!UICONTROL Descripción]** de la plantilla de sitio de la comunidadDescripción de la plantilla
+   ID del nombre de la plantilla.
 
-* **[!UICONTROL Deshabilitado/Habilitado]** Un conmutador que controla si se puede hacer referencia a la plantilla
+* **[!UICONTROL Descripción de la plantilla del sitio de la comunidad]**
 
-### Miniatura {#thumbnail}
+   Descripción de la plantilla.
+
+* **[!UICONTROL Deshabilitado/Habilitado]**
+
+   Un conmutador que controla si se puede hacer referencia a la plantilla.
+
+### Miniatura  {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -75,6 +82,7 @@ La función de página proporciona una página vacía. La función de grupos per
 >
 >Cualquier otra función, como la función [de](functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
 
+
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 ### Funciones de plantillas de grupo para grupos {#group-templates-for-groups-function}
@@ -84,6 +92,7 @@ Al incluir una función de grupos en la plantilla de sitio, la configuración re
 >[!CAUTION]
 >
 >La función Grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
+
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
