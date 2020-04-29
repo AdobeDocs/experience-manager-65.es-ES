@@ -3,7 +3,7 @@ title: Configure el Editor de texto enriquecido para que cree contenido en Adobe
 description: Aprenda a configurar el Editor de texto enriquecido de Adobe Experience Manager para que cree contenido en Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
+source-git-commit: 430994c8e9951500378e0a4d56c8004e7e81c24f
 
 ---
 
@@ -160,6 +160,15 @@ Configure las siguientes propiedades que se aplican en el modo de edición de cu
 * `rte-start`:: Activar este evento en la `contenteditable-div` parte de RTE, cuándo editar inicio RTE. Esto solo funciona si `customStart` se ha establecido en true.
 
 Cuando se utiliza RTE en el cuadro de diálogo táctil, es obligatorio establecer la propiedad `useFixedInlineToolbar` en true para evitar problemas.
+
+## Personalización de la edición in situ {#customizing-in-place-editing}
+
+Puede definir en qué selector HTML inicio el editor de texto configurando las siguientes propiedades:
+
+* **`editElementQuery`** - Definida en `cq:InplaceEditingConfig`, esta propiedad se utiliza para especificar un selector del elemento HTML en el que se iniciará la edición en línea del componente de texto. Si no se especifica, la edición en línea se inicia directamente en el HTML del componente de texto.
+* **`textPropertyName`** - Definida en `cq:InplaceEditingConfig`, esta propiedad se utiliza para especificar el nombre de la propiedad que se guardará en el nodo de contenido donde el valor HTML del componente de texto se mantendrá tras la edición en línea.
+
+La propiedad correspondiente para el modo de diálogo es `name`.
 
 ## Activar las funcionalidades RTE mediante la activación de complementos {#enable-rte-functionalities-by-activating-plug-ins}
 
