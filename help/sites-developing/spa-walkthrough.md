@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
 
 ---
 
 
 # Introducción y tutoriales de SPA{#spa-introduction-and-walkthrough}
 
-Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios del sitio web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido dentro de AEM sin problemas para un sitio creado con dichos marcos.
+Las aplicaciones de una sola página (SPA) pueden oferta experiencias atractivas para los usuarios de sitios web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido dentro de AEM sin problemas para un sitio creado con dichos marcos.
 
-El Editor de SPA ofrece una solución completa para admitir SPA dentro de AEM. En este artículo se explica cómo se relaciona con el Editor de SPA de AEM subyacente mediante una aplicación de SPA básica para la creación.
+El Editor de SPA oferta una solución completa para admitir SPA dentro de AEM. En este artículo se explica cómo se relaciona con el Editor de SPA de AEM subyacente mediante una aplicación de SPA básica para la creación.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ Este artículo introduce los conceptos básicos de las SPA antes de guiar al lec
 
 El objetivo de esta introducción y este tutorial es demostrar a un desarrollador de AEM por qué los SPA son relevantes, cómo funcionan en general, cómo gestiona un SPA el Editor de AEM SPA y cómo difiere de una aplicación estándar de AEM.
 
-El tutorial se basa en la funcionalidad estándar de AEM y en la aplicación de muestra We.Retail Journal. Deben cumplirse los siguientes requisitos:
+El tutorial se basa en la funcionalidad estándar de AEM y en la aplicación de Historial We.Retail de muestra. Deben cumplirse los siguientes requisitos:
 
 * [AEM versión 6.4 con Service Pack 2 o posterior
    ](/help/release-notes/sp-release-notes.md)
-* [Instale la aplicación de muestra We.Retail Journal disponible en GitHub aquí.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+* [Instale la aplicación de Historial We.Retail de muestra disponible en GitHub aquí.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 ### ¿Qué es un SPA? {#what-is-a-spa}
 
@@ -56,24 +56,24 @@ Al ser más rápido, fluido y más parecido a una aplicación nativa, un SPA se 
 
 **Visitantes**
 
-* Los visitantes desean experiencias nativas cuando interactúan con el contenido.
+* Los Visitantes desean experiencias nativas cuando interactúan con el contenido.
 * Hay datos claros de que cuanto más rápida sea una página, más probabilidad habrá de producirse una conversión.
 
 **Especialistas en mercadotecnia**
 
-* Los especialistas en mercadotecnia desean ofrecer experiencias ricas y nativas para atraer visitantes a fin de que se involucren plenamente con el contenido.
+* Los especialistas en marketing desean oferta de experiencias ricas y nativas para atraer a visitantes a fin de que se comprometan plenamente con el contenido.
 * La personalización puede hacer que estas experiencias sean aún más atractivas.
 
 **Desarrolladores**
 
 * Los desarrolladores quieren una clara separación de las preocupaciones entre el contenido y la presentación.
-* La separación limpia hace que el sistema sea más extensible y permite el desarrollo independiente del front-end.
+* La separación limpia hace que el sistema sea más extensible y permite un desarrollo frontal independiente.
 
 ### ¿Cómo funciona un SPA? {#how-does-a-spa-work}
 
 La idea principal de un SPA es que las llamadas y la dependencia de un servidor se reducen para minimizar los retrasos causados por las llamadas al servidor de modo que el SPA se aproxime a la capacidad de respuesta de una aplicación nativa.
 
-En una página web secuencial tradicional, solo se cargan los datos necesarios para la página inmediata. Esto significa que cuando el visitante se mueve a otra página, se llama al servidor para obtener los recursos adicionales. Es posible que sea necesario realizar llamadas adicionales a medida que el visitante interactúa con los elementos de la página. Estas llamadas múltiples pueden dar una sensación de retraso o retraso, ya que la página tiene que ponerse al día con las solicitudes del visitante.
+En una página web secuencial tradicional, solo se cargan los datos necesarios para la página inmediata. Esto significa que cuando el visitante se mueve a otra página, se llama al servidor para obtener los recursos adicionales. Es posible que sean necesarias llamadas adicionales a medida que el visitante interactúa con los elementos de la página. Estas llamadas múltiples pueden dar una sensación de retraso o retraso, ya que la página tiene que responder a las solicitudes del visitante.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
@@ -93,15 +93,15 @@ Cuando se crea un SPA para aprovechar el Editor de SPA de AEM, el autor del cont
 
 >[!NOTE]
 >
->El tutorial se basa en la funcionalidad estándar de AEM y en la aplicación de muestra We.Retail Journal. Deben cumplirse los siguientes requisitos:
+>El tutorial se basa en la funcionalidad estándar de AEM y en la aplicación de Historial We.Retail de muestra. Deben cumplirse los siguientes requisitos:
 >
 >* [AEM versión 6.4 con Service Pack 2](/help/release-notes/sp-release-notes.md)
->* [Instale la aplicación de muestra We.Retail Journal disponible en GitHub aquí.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+>* [Instale la aplicación de Historial We.Retail de muestra disponible en GitHub aquí.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 >
 
 
 
-1. Edite la aplicación We.Retail Journal en AEM.
+1. Edite la aplicación de Historial We.Retail en AEM.
 
    `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
@@ -114,6 +114,9 @@ Cuando se crea un SPA para aprovechar el Editor de SPA de AEM, el autor del cont
 1. Edite el contenido como de costumbre en AEM y tenga en cuenta que los cambios se mantienen.
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
+
+   >[!NOTE]
+   >Consulte la Información general [del editor de](spa-overview.md#requirements-limitations) SPA para obtener más información sobre el editor de texto y los SPA.
 
 1. Utilice el navegador de recursos para arrastrar y soltar una imagen nueva en un componente de imagen.
 
@@ -137,7 +140,7 @@ La experiencia de cómo se comporta un SPA para el usuario final y, a continuaci
 
 ### Uso de una aplicación SPA {#using-an-spa-application}
 
-1. Cargue la aplicación We.Retail Journal en el servidor de publicación o con la opción **Ver como publicado** del menú Información **de** página del editor de páginas.
+1. Cargue la aplicación de Historial We.Retail en el servidor de publicación o mediante la **Vista de opciones tal como se ha publicado** desde el menú Información **de** página del editor de páginas.
 
    `/content/we-retail-journal/react.html`
 
@@ -149,7 +152,7 @@ La experiencia de cómo se comporta un SPA para el usuario final y, a continuaci
 
    ![screen_shot_2018-06-08at102815](assets/screen_shot_2018-06-08at102815.png)
 
-1. Abra las herramientas de desarrollador integradas de su navegador y supervise la actividad de la red a medida que navega por las páginas secundarias.
+1. Abra las herramientas de desarrollador integradas de su navegador y supervise la actividad de red a medida que navega por las páginas secundarias.
 
    ![screen_shot_2018-06-08at103922](assets/screen_shot_2018-06-08at103922.png)
 
@@ -163,13 +166,13 @@ La siguiente sección, [Carga de una aplicación](/help/sites-developing/spa-wal
 
 ### Carga de una aplicación SPA {#loading-an-spa-application}
 
-1. Si aún no se ha cargado, cargue la aplicación We.Retail Journal en el servidor de publicación o con la opción **Ver como publicado** del menú Información **de** página del editor de páginas.
+1. Si aún no se ha cargado, cargue la aplicación de Historial We.Retail en el servidor de publicación o mediante la **Vista de opciones tal como se ha publicado** desde el menú Información **de** página del editor de páginas.
 
    `/content/we-retail-journal/react.html`
 
    ![screen_shot_2018-06-07at144736](assets/screen_shot_2018-06-07at144736.png)
 
-1. Utilice la herramienta integrada de su navegador para ver el origen de la página.
+1. Utilice la herramienta integrada de su navegador para vista del origen de la página.
 1. Tenga en cuenta que el contenido de la fuente es extremadamente limitado.
 
    ```
@@ -224,13 +227,13 @@ La siguiente sección, [Carga de una aplicación](/help/sites-developing/spa-wal
 
 1. El modelo también puede agrupar las páginas para que se carguen sincrónicamente, reduciendo el número de recargas de página necesarias.
 
-   En el ejemplo de We.Retail Journal, las páginas `home`, `blog`y `aboutus` se cargan sincrónicamente, ya que los visitantes suelen visitar todas esas páginas. Sin embargo, la página `weather` se carga asincrónicamente, ya que es menos probable que los visitantes la visiten.
+   En el ejemplo de Historial We.Retail, las páginas `home`, `blog`y `aboutus` se cargan sincrónicamente, ya que los visitantes suelen visitar todas esas páginas. Sin embargo, la página `weather` se carga asincrónicamente, ya que es menos probable que los visitantes la visiten.
 
    Este comportamiento no es obligatorio y es totalmente definible.
 
    ![screen_shot_2018-06-07at153945](assets/screen_shot_2018-06-07at153945.png)
 
-1. Para ver esta diferencia de comportamiento, vuelva a cargar la página y borre la actividad de red del inspector. Vaya al blog y a las páginas de uso en el menú de la página y vea que no se ha informado de ninguna actividad de red.
+1. Para vista de esta diferencia de comportamiento, vuelva a cargar la página y borre la actividad de red del inspector. Navegue al blog y a las páginas de acerca de nosotros en el menú de la página y vea que no hay ningún informe de actividad de red.
 
    Vaya a la página del tiempo y vea que la llamada `weather.model.json` se realiza de forma asíncrona.
 
@@ -238,17 +241,17 @@ La siguiente sección, [Carga de una aplicación](/help/sites-developing/spa-wal
 
 ### Interacción con el Editor de SPA {#interaction-with-the-spa-editor}
 
-Con la aplicación de muestra We.Retail Journal, queda claro cómo se comporta y se carga la aplicación cuando se publica, aprovechando los servicios de contenido para la entrega de contenido JSON, así como la carga asincrónica de recursos.
+Con la aplicación de Historial We.Retail de muestra, queda claro cómo se comporta y se carga la aplicación cuando se publica, aprovechando los servicios de contenido para el envío de contenido JSON así como la carga asincrónica de recursos.
 
 Además, para el autor del contenido, la creación de contenido mediante un editor de SPA es perfecta dentro de AEM.
 
 En la siguiente sección analizaremos el contrato que permite al Editor de SPA relacionar componentes dentro de SPA con componentes de AEM y lograr esta experiencia de edición sin problemas.
 
-1. Cargue la aplicación We.Retail Journal en el editor y cambie al modo de **vista previa** .
+1. Cargue la aplicación de Historial We.Retail en el editor y cambie al modo de **Previsualización** .
 
    `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
-1. Con las herramientas de desarrollador integradas del explorador, inspeccione el contenido de la página. Con la herramienta de selección, seleccione un componente editable en la página y vea los detalles del elemento.
+1. Con las herramientas de desarrollador integradas del explorador, inspeccione el contenido de la página. Con la herramienta de selección, seleccione un componente editable en la página y vista los detalles del elemento.
 
    Tenga en cuenta que el componente tiene un nuevo atributo de datos `data-cq-data-path`.
 
