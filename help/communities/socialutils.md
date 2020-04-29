@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Paquete SocialUtils obsoleto {#socialutils-package-deprecated}
 
-El paquete **com.adobe.cq.social.ugcbase.SocialUtils** quedó obsoleto en AEM 6.1.
+El paquete `com.adobe.cq.social.ugcbase.SocialUtils` quedó obsoleto en AEM 6.1.
 
-En las tablas siguientes se enumeran los métodos que se deben utilizar en lugar de los métodos de SocialUtils.
+Las siguientes tablas lista los métodos que se deben utilizar en lugar de los métodos de SocialUtils.
 
 ## Paquete SocialResourceUtilities {#socialresourceutilities-package}
 
@@ -36,7 +36,7 @@ En las tablas siguientes se enumeran los métodos que se deben utilizar en lugar
 | Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | boolean hasModeratePermissions(recurso de recurso) |  |
 | String resourceToACLPath(recurso de recurso) |  |
-| String resourceToUGCStoragePath(recurso de recurso) | reemplaza a String resourceToUGCPath(Resource resource) |
+| String resourceToUGCStoragePath(recurso de recurso) | reemplaza String resourceToUGCPath(Resource resource) |
 | String UGCToResourcePath(recurso de recurso) |  |
 | String UGCToResourcePath(String ugcPath) | firma de método cambiada |
 | String UGCToResourcePath(String ugcPath, resolver ResourceResolver) | nuevo |
