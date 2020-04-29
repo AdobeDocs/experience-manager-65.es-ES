@@ -1,6 +1,6 @@
 ---
-title: Suscripciones a comunidades
-seo-title: Suscripciones a comunidades
+title: Suscripciones de comunidades
+seo-title: Suscripciones de comunidades
 description: Los miembros de la comunidad interactúan con otros miembros a través del correo electrónico
 seo-description: Los miembros de la comunidad interactúan con otros miembros a través del correo electrónico
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
@@ -10,24 +10,24 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
 
-# Suscripciones a comunidades {#communities-subscriptions}
+# Suscripciones de comunidades {#communities-subscriptions}
 
 ## Información general {#overview}
 
 A partir de Communities [FP1](deploy-communities.md#latestfeaturepack), los miembros de la comunidad pueden interactuar con la comunidad a través del correo electrónico mediante una función denominada suscripciones.
 
-Las suscripciones son similares a [las notificaciones](notifications.md) , ya que los miembros pueden suscribirse a continuación de artículos de blog, temas de foro o preguntas de control de calidad.
+Las Suscripciones son similares a [las notificaciones](notifications.md) , ya que los miembros pueden suscribirse a continuación de artículos de blog, temas de foro o preguntas de control de calidad.
 
 Lo que distingue las suscripciones de las notificaciones es:
 
-* Los Miembros no podrán suscribirse cuando sigan a otros miembros
-* La única acción que deben realizar los miembros es seleccionar `Email Subscriptions` al
-* Cuando se configura la respuesta por correo electrónico, los miembros pueden publicar contenido de forma eficaz simplemente respondiendo al correo electrónico recibido
+* Los miembros no podrán suscribirse cuando sigan a otros miembros.
+* La única acción que deben realizar los miembros es seleccionar `Email Subscriptions` al realizar lo siguiente.
+* Cuando se configura la respuesta por correo electrónico, los miembros pueden publicar contenido simplemente respondiendo al correo electrónico recibido.
 
 ### Requisitos {#requirements}
 
@@ -37,11 +37,11 @@ El correo electrónico debe configurarse para que las suscripciones funcionen y 
 
 Para obtener instrucciones sobre cómo configurar el correo electrónico, consulte [Configuración del correo electrónico](email.md).
 
-**Habilitar suscripciones y seguir**
+**Habilitar Suscripciones y seguir**
 
 Los componentes deben configurarse para habilitar las suscripciones *y las* siguientes. Las funciones que permiten suscripciones son [blog](blog-feature.md), [foro](forum.md) y [QnA](working-with-qna.md).
 
-## Suscripciones desde: {#subscriptions-from-following}
+## Suscripciones de lo siguiente {#subscriptions-from-following}
 
 ![climage_1-5](assets/chlimage_1-5.png)
 
@@ -49,15 +49,11 @@ El botón **Seguir** proporciona un medio para seguir las entradas como activida
 
 Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguiente**. Para mayor comodidad, es posible seleccionar `Unfollow All` desactivar todos los métodos.
 
-El botón **Seguir** incluirá la `Email Subscriptions` opción solo cuando se configure un foro, un control de calidad o un blog para habilitar las suscripciones por correo electrónico. Aparecerá este botón
+El botón **Seguir** incluirá la `Email Subscriptions` opción solo cuando se configure un foro, un control de calidad o un blog para habilitar las suscripciones por correo electrónico. Aparecerá este botón:
 
-* En la página de características principal del foro, control de calidad o blog habilitado
+* En la página de características principal del foro habilitado, QnA o blog Enviará un mensaje de correo electrónico para todas las actividades de esa función.
 
-   * Enviará un mensaje de correo electrónico para todas las actividades de esa función
-
-* Para una entrada específica, como un tema del foro, una pregunta de preguntas y respuestas o un artículo del blog
-
-   * Enviará un correo electrónico cuando haya actividad para esa entrada específica
+* Para una entrada específica, como un tema del foro, una pregunta de QnA o un artículo del blog Enviará un correo electrónico cuando haya actividad para esa entrada específica.
 
 ## Responder por correo electrónico {#reply-by-email}
 
