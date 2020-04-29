@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -21,36 +21,42 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Se puede especificar una plantilla de sitio personalizada por separado para cada copia de idioma de un sitio de comunidad.
 
-Para ello,
+Para ello:
 
-* Creación de una plantilla personalizada
-* Superponer la ruta predeterminada de la plantilla del sitio
-* Agregar la plantilla personalizada a la ruta de superposición
-* Especifique la plantilla personalizada agregando una `page-template` propiedad al `configuration` nodo
+* Cree una plantilla personalizada.
+* Superponga la ruta de la plantilla de sitio predeterminada.
+* Añada la plantilla personalizada en la ruta de superposición.
+* Especifique la plantilla personalizada agregando una `page-template` propiedad al `configuration` nodo.
 
 **Plantilla** predeterminada:
 
-/**libs**/social/console/components/hbs/sitepage/**sitepage**.hbs
+`/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
 **Plantilla personalizada en ruta** de superposición:
 
-/es/**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
+`/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Propiedad**: page-template **Type**: String **Value**: &lt;*template-name*> (sin extensión)
+**Propiedad**: page-template
+
+**Tipo**: Cadena
+
+**Valor**: `template-name` (sin extensión)
 
 **Nodo** de configuración:
 
-/content/&lt;ruta *del sitio* de la comunidad>/&lt;*lang*>/configuration
+`/content/community site path/lang/configuration`
 
-Por ejemplo: /content/sites/engagement/es/configuration
+Por ejemplo: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
 >Todos los nodos de la ruta superpuesta solo deben ser de tipo `Folder`.
 
+
 >[!CAUTION]
 >
->Si la plantilla personalizada recibe el nombre *sitepage.hbs,* todos los sitios de comunidad se personalizarán.
+>Si la plantilla personalizada recibe el nombre *sitepage.hbs*, se personalizarán todos los sitios de la comunidad.
+
 
 ### Ejemplo de plantilla de sitio personalizada {#custom-site-template-example}
 
@@ -58,11 +64,11 @@ Por ejemplo, `vertical-sitepage.hbs` es una plantilla de sitio que resulta en la
 
 [Obtener archivo](assets/vertical-sitepage.hbs)Coloque la plantilla de sitio personalizada en la carpeta de superposiciones:
 
-/es/**apps**/social/console/components/hbs/sitepage/**vertical-sitepage**.hbs
+`/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
 Identifique la plantilla personalizada agregando una `page-template` propiedad al nodo de configuración:
 
-/content/sites/sample/es/configuration
+`/content/sites/sample/en/configuration`
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -82,7 +88,7 @@ Para exportar UGC, utilice la herramienta [de migración UGC de comunidades](htt
 
 ## Eliminación de un sitio de comunidad {#deleting-a-community-site}
 
-A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece al pasar el ratón sobre el sitio de la comunidad desde la consola Comunidades > Sitios. Durante el desarrollo, si se desea eliminar un sitio de comunidad y empezar de nuevo, puede utilizar esta funcionalidad. Al eliminar un sitio de comunidad, se eliminan los siguientes elementos asociados con dicho sitio:
+A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece al pasar el ratón sobre el sitio de la comunidad desde la consola **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]** . Durante el desarrollo, si desea eliminar un sitio de comunidad y un inicio nuevo, puede utilizar esta funcionalidad. Al eliminar un sitio de comunidad, se eliminan los siguientes elementos asociados con dicho sitio:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuarios](#community-user-groups)
@@ -93,11 +99,13 @@ A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece 
 
 Para identificar la ID única del sitio asociada con el sitio de la comunidad, utilice CRXDE:
 
-* Navegue hasta la raíz de idioma del sitio, como `/content/sites/*<site name>*/en/rep:policy`
+* Navegue hasta la raíz de idioma del sitio, por ejemplo `/content/sites/*<site name>*/en/rep:policy`.
 
-* Buscar el `allow<#>` nodo con un `rep:principalName` en este formato `rep:principalName = *community-enable-nrh9h-members*`
+* Busque el `allow<#>` nodo con un `rep:principalName` en este formato `rep:principalName = *community-enable-nrh9h-members*`.
 
-* El ID del sitio es el tercer componente de `rep:principalName`Por ejemplo, si `rep:principalName = community-enable-nrh9h-members`
+* La ID del sitio es el tercer componente de `rep:principalName`
+
+   Por ejemplo, si `rep:principalName = community-enable-nrh9h-members`
 
    * **nombre** del sitio = *habilitar*
    * **ID** del sitio = *nrh9h*
@@ -113,7 +121,7 @@ Contiene un servlet para eliminar todo UGC de cualquier SRP.
 
 Se puede eliminar todo el contenido generado por usuarios o para un sitio específico, por ejemplo:
 
-* path=/content/usergenerate/asi/mongo/content/sites/engagement
+* `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
 Esto solo elimina el contenido generado por el usuario (introducido en la publicación) y no el contenido creado (introducido en el autor). Por lo tanto, los nodos [de](srp.md#shadownodes) sombra no se ven afectados.
 
@@ -130,10 +138,10 @@ Por ejemplo, `community-engage-x0e11-members`.
 
 Desde la consola principal:
 
-* Select **[!UICONTROL Assets]**
-* Entrar en el modo **[!UICONTROL Seleccionar]**
-* Seleccione la carpeta con el nombre del ID de sitio [único](#community-unique-site-id)
-* Seleccione **[!UICONTROL Eliminar]** (puede que sea necesario seleccionar entre **[!UICONTROL Más...]**)
+* Select **[!UICONTROL Assets]**.
+* Introduzca el modo **[!UICONTROL Seleccionar]** .
+* Seleccione la carpeta con el nombre del ID [de sitio](#community-unique-site-id)único.
+* Seleccione **[!UICONTROL Eliminar]** (puede que sea necesario seleccionar de **[!UICONTROL Más...]**).
 
 ### Registros de base de datos {#database-records}
 
