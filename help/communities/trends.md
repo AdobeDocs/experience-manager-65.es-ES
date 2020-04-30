@@ -1,8 +1,8 @@
 ---
-title: Tendencias de actividades
-seo-title: Tendencias de actividades
-description: Adición de un componente Lista de actividades de comunidad a una página
-seo-description: Adición de un componente Lista de actividades de comunidad a una página
+title: Tendencias de Actividad
+seo-title: Tendencias de Actividad
+description: Añadir un componente de Lista de Actividad comunitaria en una página
+seo-description: Añadir un componente de Lista de Actividad comunitaria en una página
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,22 +11,22 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# Tendencias de actividades{#activity-trends}
+# Tendencias de Actividad {#activity-trends}
 
 ## Introducción {#introduction}
 
-El `Community Activity List` componente proporciona la capacidad de agregar información de tendencias con respecto a las publicaciones y vistas de los miembros, así como las publicaciones y vistas del contenido.
+El `Community Activity List` componente proporciona la capacidad de agregar información de tendencias con respecto a anuncios y vistas de miembros, así como anuncios y vistas de contenido.
 
 El documento describe:
 
-* adición del `Community Activity List` componente a un sitio [de comunidad](/help/communities/overview.md#community-sites)
+* Añadir el `Community Activity List` componente en un sitio [de](/help/communities/overview.md#community-sites)comunidad.
 
-* configuración del `Community Activity List` componente
+* Configuración del `Community Activity List` componente.
 
 ### Requisito {#requirement}
 
@@ -34,7 +34,7 @@ Los datos para el `Community Activity List` sitio solo están disponibles cuando
 
 Consulte Configuración [de Analytics para funciones](/help/communities/analytics.md)de comunidades.
 
-### Adición de una lista de actividades de comunidad a una página {#adding-a-community-activity-list-to-a-page}
+### Añadir una Lista de Actividad de comunidad en una página {#adding-a-community-activity-list-to-a-page}
 
 Para agregar un `Community Activity List` componente a una página en modo de autor, ubique el componente
 
@@ -48,13 +48,13 @@ Cuando se coloca por primera vez en una página de un sitio de comunidad, así e
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-### Configuración de la lista de actividades de la comunidad {#configuring-community-activity-list}
+### Configuración de la Lista de Actividad de la comunidad {#configuring-community-activity-list}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Community Activity List` `Configure` icono que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-En la ficha **Comments **tab, especifique si los comentarios de los archivos cargados aparecen y cómo aparecerán:
+En la ficha **Comentarios** , especifique si se mostrarán los comentarios de los archivos cargados y cómo se mostrarán:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -62,7 +62,7 @@ En la ficha **Comments **tab, especifique si los comentarios de los archivos car
 
    Especifique si desea mostrar datos sobre miembros de la comunidad o contenido generado por el usuario (UGC).
 
-   Seleccionar de
+   Seleccionar de:
 
    * `Members`
    * `Content`
@@ -75,12 +75,12 @@ El valor predeterminado no es un título.
 
 * **Número de de visualizaciones**
 
-   El número de elementos que se van a mostrar.
+   Número de elementos que se van a lista.
 El valor predeterminado es 10.
 
 * **Tipo de actividad**
 
-   Seleccione uno de los
+   Seleccione uno de los siguientes:
 
    * `Views`(visitas a la página)
    * `Posts`(creación de UGC)
@@ -90,7 +90,7 @@ El valor predeterminado es 10.
 
 * **Período de tiempo**
 
-   Seleccione uno de los
+   Seleccione uno de los siguientes:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -102,23 +102,23 @@ El valor predeterminado es 10.
 
 * **Ruta de contexto**
 
-   Proporciona la capacidad de ampliar la actividad a un subconjunto del sitio, como un blog específico.
+   Proporciona la capacidad de ampliar el ámbito de la actividad a un subconjunto del sitio, como un blog específico.
 El valor predeterminado es todo el sitio de la comunidad.
 
 * **Suma de recuento de miembros**
 
-   Cuando se anula la selección (se desactiva), solo se cuentan los anuncios de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type`de nunca `Posts`mostrará ninguna actividad, ya que no se puede publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
+   Cuando se anula la selección (se desactiva), solo se cuentan los anuncios de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no se puede publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
 El valor predeterminado está marcado.
 
 ### Ejemplo de página con 4 componentes {#example-page-with-components}
 
-**Configuración de visitantes** principales: Tipo = Miembros, tipo de actividad = Vistas
+**Configuración de Visitantes** principales: Tipo = Miembros, tipo de Actividad = Vistas
 
-**Configuración de colaboradores** principales: Tipo = Miembros, Tipo de actividad = Anuncios
+**Configuración de colaboradores** principales: Tipo = Miembros, tipo de Actividad = Anuncios
 
-**Configuración de contenido** superior: Tipo = Contenido, Tipo de actividad = Vistas,
+**Configuración de contenido** superior: Tipo = Contenido, tipo de Actividad = Vistas,
 
-**Configuración de contenido** de tendencias: Tipo = Contenido, Tipo de actividad = Anuncios
+**Configuración de contenido** de tendencias: Tipo = Contenido, tipo de Actividad = Anuncios
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
