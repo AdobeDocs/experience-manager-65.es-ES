@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -81,7 +81,7 @@ El administrador que aplique las etiquetas a los recursos de habilitación debe 
 
 Por ejemplo, si se crea una `ski-catalog` Área de nombres y se establece en un catálogo denominado `Ski Catalog`, puede tener dos etiquetas secundarias: `lesson-1` y `lesson-2`.
 
-Por lo tanto, cualquier recurso de habilitación etiquetado con uno de los
+Por lo tanto, cualquier recurso de habilitación etiquetado con uno de los siguientes elementos:
 
 * ski-catálogo:lección-1
 * ski-catálogo:lección-2
@@ -92,7 +92,7 @@ aparecerá en `Ski Catalog` una vez que se haya publicado el recurso de habilita
 
 ## Visualización del catálogo al publicar {#viewing-catalog-on-publish}
 
-Una vez que todo se haya configurado desde el entorno del autor y se haya publicado, la experiencia de utilizar el catálogo para encontrar recursos de activación se puede experimentar en el entorno de publicación.
+Una vez que todo se ha configurado desde el entorno del autor y se ha publicado, la experiencia de usar el catálogo para encontrar recursos de activación se puede experimentar en el entorno de publicación.
 
 Si no aparece ninguna Área de nombres de etiquetas en la lista desplegable, asegúrese de que los permisos se han establecido correctamente en el entorno de publicación.
 
