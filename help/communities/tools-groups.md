@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# Plantillas de grupos{#group-templates}
+# Plantillas de grupos {#group-templates}
 
 La consola Plantillas de grupo es similar a la consola Plantillas [de](/help/communities/sites.md) sitio. Ambos son modelos para un conjunto de páginas precableadas y funciones que forman un sitio de comunidad. La diferencia es que una plantilla de sitio es para la comunidad principal y una plantilla de grupo es para un grupo de comunidad, una subcomunidad anidada dentro de la comunidad principal.
 
@@ -30,9 +30,10 @@ Cuando se realiza una acción para crear un nuevo grupo de comunidad, se selecci
 >
 >Las consolas para la creación de sitios [de](/help/communities/sites-console.md)comunidad, plantillas [de sitio de](/help/communities/sites.md)comunidad, plantillas [de grupo de](/help/communities/tools-groups.md) comunidad y funciones [de](/help/communities/functions.md) comunidad solo se pueden usar en el entorno de creación.
 
+
 ## Consola Plantillas de grupo {#group-templates-console}
 
-Para acceder a la consola de plantillas de grupos en el entorno de AEM Author:
+Para acceder a la consola de plantillas de grupos en AEM Author entorno:
 
 * Seleccionar **herramientas| Comunidades| Plantillas de grupo,** desde la navegación global.
 
@@ -42,7 +43,7 @@ Esta consola muestra las plantillas desde las que se puede crear un sitio [de](/
 
 ## Crear plantilla del grupo {#create-group-template}
 
-Para empezar a crear una nueva plantilla de grupo, seleccione `Create`
+Para empezar a crear una nueva plantilla de grupo, seleccione `Create`.
 
 Esto mostrará el panel Editor del sitio, que contiene 3 subpaneles:
 
@@ -52,17 +53,19 @@ Esto mostrará el panel Editor del sitio, que contiene 3 subpaneles:
 
 En el panel Información básica, se configura un nombre, una descripción y si la plantilla está habilitada o deshabilitada:
 
-* **Nuevo nombre** de plantilla de grupo ID del nombre de la plantilla
+* **Nombre de la plantilla del grupo nuevo**
+
+   ID del nombre de la plantilla.
 
 * **Descripción**
 
-   la descripción de la plantilla
+   Descripción de la plantilla.
 
 * **Deshabilitado/Habilitado**
 
-   un conmutador que controla si se puede hacer referencia a la plantilla
+   Un conmutador que controla si se puede hacer referencia a la plantilla.
 
-#### Miniatura {#thumbnail}
+#### Miniatura  {#thumbnail}
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -78,6 +81,7 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 >
 >Todavía no se permite agregar una función Grupos como la primera o única función de una plantilla.
 
+
 ![Editor de plantillas de grupo](assets/template-editor.png)
 
 Para agregar funciones de comunidad, arrástrelas de derecha a izquierda en el orden en que deberían aparecer los vínculos de menú del sitio. Los estilos se aplicarán a la plantilla durante la creación del sitio.
@@ -88,7 +92,7 @@ Continúe arrastrando y soltando cualquier otra función de la comunidad que des
 
 ![funciones de arrastrar](assets/dragfunctions.png)
 
-Una vez que todas las funciones deseadas se hayan colocado en el área del generador de plantillas y se hayan configurado, seleccione **Guardar **en la esquina superior derecha.
+Una vez que todas las funciones deseadas se hayan colocado en el área del generador de plantillas y se hayan configurado, seleccione **Guardar** en la esquina superior derecha.
 
 ## Editar plantilla del grupo {#edit-group-template}
 
