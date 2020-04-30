@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -178,7 +178,7 @@ Para cancelar un trabajo de carga en curso, toque **[!UICONTROL Cancelar]** junt
 | Opciones de trabajo |  | Toque o haga clic en Opciones **[!UICONTROL de]** trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Toque el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas que cargue se introducirán automáticamente en Recursos AEM. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
@@ -375,13 +375,13 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
    ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de activación para agregar fecha y hora a la activación de recursos](assets/schedule-activation.png)
 
-   *Figura: Programar activación de recursos*
+   *Figura: Programar activación de recursos.*
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo Tiempo de **[!UICONTROL desactivación]** . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web de Recursos ni a través de la API HTTP.
 
    ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de inactividad para agregar fecha y hora a la activación de recursos](assets/schedule-deactivation.png)
 
-   *Figura: Programar desactivación de recursos*
+   *Figura: Programe la desactivación de recursos.*
 
 1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en AEM. YouTube requiere que las etiquetas se publiquen. Consulte [Publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
 
@@ -580,15 +580,15 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 >[!CAUTION]
 >
->Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
+>Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
 ## Cancelar la publicación de recursos {#unpublishing-assets}
 
 1. Vaya a la ubicación de la carpeta de recursos o recursos que desea eliminar del entorno de publicación (cancelar la publicación).
 
-1. Seleccione el recurso o la carpeta que desea cancelar la publicación y toque o haga clic en el icono **[!UICONTROL Administrar publicación]** de la barra de herramientas.
+1. Select the asset/folder to unpublish, and tap/click the **[!UICONTROL Manage Publication]** icon from the toolbar.
 
-   ![Icono Administrar publicación](assets/manage_publication.png)
+   ![Manage Publication icon](assets/manage_publication.png)
 
 1. Seleccione la acción **[!UICONTROL Cancelar publicación]** en la lista.
 
@@ -600,14 +600,14 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. En el cuadro de diálogo de confirmación, toque o haga clic en:
 
    * **[!UICONTROL Cancelar]** para detener la acción
-   * **[!UICONTROL Cancele la publicación]** para confirmar que los recursos se han cancelado de publicar (ya no están disponibles en el entorno de publicación) en la fecha especificada.
+   * **[!UICONTROL Unpublish]** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
    >[!NOTE]
    >
    >Al cancelar la publicación de un recurso complejo, solo debe cancelar la publicación del recurso. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
 
 ## Grupo de usuarios cerrado {#closed-user-group}
 
-Un grupo de usuarios cerrado (CUG) se utiliza para limitar el acceso a carpetas de recursos específicas publicadas desde AEM. Si crea un CUG para una carpeta, el acceso a la carpeta (incluidos los recursos de carpetas y las subcarpetas) se restringirá únicamente a los miembros o grupos asignados. Para acceder a la carpeta, deben iniciar sesión con sus credenciales de seguridad.
+A closed user group (CUG) is used to limit access to specific asset folders published from AEM. If you create a CUG for a folder, access to the folder (including folder assets and subfolders) is restricted to assigned members or groups only. To access the folder, they must log in using their security credentials.
 
 Los CUG son una forma adicional de restringir el acceso a sus recursos. También puede configurar una página de inicio de sesión para la carpeta.
 
@@ -642,11 +642,11 @@ Los iconos de acción rápida están disponibles para un único recurso a la vez
 
 ### Navegación y selección de recursos {#navigating-and-selecting-assets}
 
-Puede realizar la vista, navegar y seleccionar recursos con cualquiera de las vistas disponibles (Tarjeta, Columna y Lista) mediante la opción **[!UICONTROL Seleccionar]** .
+You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option.
 
 En la vista de columnas y vistas de lista, aparece la opción **[!UICONTROL Seleccionar]** cuando pasa el puntero sobre la miniatura del recurso.
 
-![Seleccionar recursos en la vista de lista](assets/select_quick_in_listview.png)
+![Select assets in list view](assets/select_quick_in_listview.png)
 
 ![Seleccionar recursos en la vista de columnas](assets/select_quick_in_columnview.png)
 
@@ -654,13 +654,13 @@ En la vista de tarjetas, la opción **[!UICONTROL Seleccionar]** se muestra como
 
 ![Seleccione una acción rápida en la vista de la tarjeta](assets/select_quick_action.png)
 
-Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Inicialmente, solo se cargan 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos en vista a medida que se desplaza por la página de resultados de la búsqueda. La opción [!UICONTROL Seleccionar todo] selecciona solo los recursos cargados.
+Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Initially, only 100 assets are loaded in card view and 200 are loaded in list view. Se cargan más recursos en vista a medida que se desplaza por la página de resultados de la búsqueda. The [!UICONTROL Select All] option selects only the loaded assets.
 
 Para obtener más información, consulte [vista y selección de recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Edición de imágenes {#editing-images}
 
-Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar pequeños trabajos de edición en recursos de imagen. Puede recortar, rotar, voltear y realizar otros trabajos de edición en imágenes. También puede añadir mapas de imagen a los recursos.
+Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar pequeños trabajos de edición en recursos de imagen. You can crop, rotate, flip, and perform other editing jobs on images. También puede añadir mapas de imagen a los recursos.
 
 >[!NOTE]
 >
@@ -673,7 +673,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
    * En la página de recursos, toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
    ![Icono Editar en la barra de herramientas](assets/edit_icon.png)
 
-1. Para recortar la imagen, toque o haga clic en el icono **Recortar** .
+1. To crop the image, tap/click the **Crop** icon.
 
    ![Icono de recorte](assets/chlimage_1-22.png)
 
@@ -681,7 +681,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
 
    ![Opciones de recorte](/help/assets/assets/chlimage_1-23.png)
 
-1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
+1. Select the area to be cropped, and resize or reposition it on the image.
 1. Utilice el icono **Finalizar** (esquina superior derecha) para recortar la imagen. Al hacer clic en el icono **Finalizar** también se desencadena la regeneración de las representaciones.
 
    ![Icono Finalizar](assets/chlimage_1-24.png)
@@ -692,9 +692,9 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
 
 1. Toque o haga clic en el icono Girar correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
 
-   ![Iconos de rotación hacia la derecha y hacia la izquierda](assets/chlimage_1-26.png)
+   ![Clockwise and anti-clockwise rotate icons](assets/chlimage_1-26.png)
 
-1. Toque o haga clic en el icono Voltear correspondiente para voltear la imagen horizontal o verticalmente.
+1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![Iconos para voltear la imagen horizontal o verticalmente](assets/chlimage_1-27.png)
 
@@ -718,7 +718,7 @@ La línea de tiempo permite la vista de varios eventos para un elemento seleccio
 
 ![Ordenar entradas de línea de tiempo para un recurso](assets/sort_timeline.gif)
 
-*Figura: Ordenar entradas de línea de tiempo para un recurso*
+*Figura: Ordenar entradas de línea de tiempo para un recurso.*
 
 >[!NOTE]
 >
