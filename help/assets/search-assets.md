@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -40,7 +40,7 @@ Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
 ![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem_search_results.png)
 
-*Figura: Comprender la interfaz de resultados de búsqueda de Experience Manager Assets*
+*Figura: Explicación de la interfaz de resultados de búsqueda de Experience Manager Assets.*
 
 **A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Mostrar archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda **J.** Cambie entre la vista de la tarjeta y la vista de la lista.
 
@@ -50,7 +50,7 @@ Puede descubrir los recursos deseados más rápido desde la página de resultado
 
 ![Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura: Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda*
+*Figura: Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.*
 
 ## Comprender los resultados y el comportamiento de la búsqueda {#searchbehavior}
 
@@ -99,7 +99,7 @@ Para recibir sugerencias para más de una palabra clave de búsqueda, siga escri
 
 ![Escriba varias palabras clave en las sugerencias de vista que se ajustan a todas ellas](assets/search_suggestionsmanykeywords.gif)
 
-*Figura: Escriba varias palabras clave en las sugerencias de vista que se ajustan a todas ellas*
+*Figura: Escriba varias palabras clave para las sugerencias de vista que se ajustan a todas ellas.*
 
 ### Clasificación de búsqueda y aumento {#searchrank}
 
@@ -131,7 +131,7 @@ Experience Manager proporciona varios métodos, como filtros que se aplican a lo
 
 ![Limitar los resultados de búsqueda a una carpeta agregando una ruta de carpeta en el panel Filtros](assets/search_folder_select.gif)
 
-*Figura: Limitar los resultados de búsqueda a una carpeta agregando una ruta de carpeta en el panel Filtros*
+*Figura: Para limitar los resultados de la búsqueda a una carpeta, agregue una ruta de carpeta en el panel Filtros.*
 
 ### Buscar imágenes similares {#visualsearch}
 
@@ -139,7 +139,7 @@ Para buscar imágenes que sean visualmente similares a una imagen seleccionada p
 
 ![Buscar imágenes similares con la opción de la vista de tarjeta](assets/search_find_similar.png)
 
-*Figura: Buscar imágenes similares con la opción de la vista de tarjeta*
+*Figura: Busque imágenes similares con la opción de la vista de tarjeta.*
 
 ### Imágenes de Adobe Stock {#adobestock}
 
@@ -244,9 +244,9 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 ![Examinar y seleccionar recursos en el selector de recursos](assets/assetpicker.png)
 
-*Figura: Examinar y seleccionar recursos en el selector de recursos*
+*Figura: Busque y seleccione un recurso en el selector de recursos.*
 
-## Restricciones        {#limitations}
+## Restricciones          {#limitations}
 
 La capacidad de búsqueda de Experience Manager Assets tiene las siguientes limitaciones:
 
@@ -285,7 +285,7 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 ![Comportamiento de búsqueda con y sin comillas](assets/search_with_quotes.gif)
 
-*Figura: Comportamiento de búsqueda con y sin comillas*
+*Figura: Comportamiento de búsqueda con y sin comillas.*
 
 **Buscar con comodín** asterisco: Para ampliar la búsqueda, utilice un asterisco antes o después de la palabra de búsqueda para que coincida con cualquier número de caracteres. Por ejemplo, al buscar una ejecución sin un asterisco, no se devuelven recursos que contengan ninguna variación de la palabra (incluidos los metadatos). Un asterisco sustituye a cualquier número de caracteres. Por ejemplo,
 
@@ -296,7 +296,7 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 ![Ilustración del uso de un comodín de asterisco en la búsqueda de recursos mediante un ejemplo](assets/search_with_asterisk_run.gif)
 
-*Figura: Ilustración del uso de un comodín de asterisco en la búsqueda de recursos mediante un ejemplo*
+*Figura: Ilustración del uso de caracteres comodín de asterisco en la búsqueda de recursos mediante un ejemplo.*
 
 **Buscar con comodín** de signo de interrogación: Para ampliar la búsqueda, utilice uno o varios &#39;?&#39; caracteres para que coincidan con el número exacto de caracteres. Por ejemplo, en la siguiente ilustración,
 
@@ -308,13 +308,13 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 ![Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo](assets/search_with_questionmark_run.gif)
 
-*Figura: Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo*
+*Figura: Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo.*
 
 **Excluir una palabra clave**: Utilice dash para buscar recursos que no contengan una palabra clave. Por ejemplo, `running -shoe` consulta devuelve recursos que contienen `running`, pero no `shoe`. Del mismo modo, `camp -night` consulta devuelve recursos que contienen `camp` pero no `night`. Tenga en cuenta que `camp-night` la consulta devuelve recursos que contienen tanto `camp` como `night`.
 
 ![Uso del guión para buscar recursos que no contengan una palabra clave excluida](assets/search_dash_exclude_keyword.gif)
 
-*Figura: Uso del guión para buscar recursos que no contengan una palabra clave excluida*
+*Figura: Uso del guión para buscar recursos que no contengan una palabra clave excluida.*
 
 ## tareas de configuración y administración relacionadas con la funcionalidad de búsqueda {#configadmin}
 
@@ -415,7 +415,7 @@ Para comprobar los comentarios de un recurso o del historial de versiones de un 
 
 ![Ordenar entradas de línea de tiempo para un recurso de búsqueda](assets/sort_timeline_search_results.gif)
 
-*Figura: Ordenar entradas de línea de tiempo para un recurso de búsqueda*
+*Figura: Ordene las entradas de línea de tiempo para un recurso de búsqueda.*
 
 ### Descargar recursos buscados {#download}
 
