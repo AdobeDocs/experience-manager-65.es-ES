@@ -1,9 +1,9 @@
 ---
 title: Revisar recursos y colecciones de carpetas
-description: Configure flujos de trabajo de revisión para los recursos de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
+description: Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -12,11 +12,11 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 Configure flujos de trabajo de revisión para los recursos de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
 
-Recursos Adobe Experience Manager (AEM) le permite configurar un flujo de trabajo de revisión ad-hoc para los recursos de una carpeta o colección y compartirlo con revisores o socios creativos para obtener comentarios.
+Adobe Experience Manager (AEM) Assets lets you set up an ad-hoc review workflow for assets within a folder or collection, and share it with reviewers or creative partners to seek feedback.
 
 Puede asociar el flujo de trabajo de revisión con un proyecto o crear una tarea de revisión independiente.
 
-Después de compartir los recursos, los revisores pueden aprobarlos o rechazarlos. Las notificaciones se envían en varias etapas del flujo de trabajo para notificar a los destinatarios previstos la finalización de diversas tareas. Por ejemplo, cuando comparte una carpeta o colección, el revisor recibe una notificación de que se ha compartido una carpeta o colección para su revisión.
+After you share the assets, reviewers can approve or reject them. Las notificaciones se envían en varias etapas del flujo de trabajo para notificar a los destinatarios previstos la finalización de diversas tareas. Por ejemplo, cuando comparte una carpeta o colección, el revisor recibe una notificación de que se ha compartido una carpeta o colección para su revisión.
 
 Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos), recibirá una notificación de finalización de la revisión.
 
@@ -103,8 +103,8 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figura: vista de tarjeta*
+   *Figura: vista de tarjetas.*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figura: vista de Lista*
+   *Figura: vista de Lista.*
