@@ -1,18 +1,18 @@
 ---
-title: Administre recursos compuestos con referencias y recursos de varias páginas en Adobe Experience Manager.
-description: Aprenda a crear referencias a recursos digitales desde Adobe InDesign, Adobe Illustrator y Adobe Photoshop. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
+title: Administre recursos compuestos con referencias y recursos de varias páginas en [!DNL Adobe Experience Manager].
+description: Obtenga información sobre cómo crear referencias a recursos digitales desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator] y [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Administrar recursos compuestos y de varias páginas {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] puede identificar si un archivo cargado contiene referencias a recursos que ya existen en el repositorio. Esta función solo está disponible para los formatos de archivo admitidos. Si el recurso cargado contiene referencias a los recursos de Experience Manager, se crea un vínculo bidireccional entre los recursos cargados y a los que se hace referencia.
+[!DNL Adobe Experience Manager Assets] puede identificar si un archivo cargado contiene referencias a recursos que ya existen en el repositorio. Esta función solo está disponible para los formatos de archivo admitidos. Si el recurso cargado contiene referencias a [!DNL Experience Manager] los recursos, se crea un vínculo bidireccional entre los recursos cargados y los a los que se hace referencia.
 
-Además de eliminar la redundancia, hacer referencia a los recursos en las aplicaciones de Adobe Creative Cloud mejora la colaboración y aumenta la eficiencia y la productividad de los usuarios.
+Además de eliminar la redundancia, hacer referencia a los recursos en [!DNL Adobe Creative Cloud] las aplicaciones mejora la colaboración y aumenta la eficiencia y la productividad de los usuarios.
 
 [!DNL Experience Manager Assets] admite referencias bidireccionales. Los recursos a los que se hace referencia se encuentran en la página de detalles del recurso del archivo cargado. Además, puede vista los archivos de referencia en la página de detalles del recurso del recurso al que se hace referencia.
 
@@ -25,7 +25,7 @@ Puede hacer referencia a recursos digitales existentes desde dentro de un [!DNL 
 1. Con la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager, busque los recursos digitales en el sistema de archivos local. Navegue hasta la ubicación del sistema de archivos del recurso al que desee hacer referencia.
 1. Arrastre el recurso desde la carpeta local hasta el [!DNL Illustrator] archivo.
 
-1. Guarde el [!DNL Illustrator] archivo en la unidad montada o [cárguelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) en el repositorio de Experience Manager.
+1. Guarde el [!DNL Illustrator] archivo en la unidad montada o [cárguelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) en el [!DNL Experience Manager] repositorio.
 
 1. Una vez finalizado el flujo de trabajo, vaya a la página de detalles del recurso. Las referencias a recursos digitales existentes se enumeran en **[!UICONTROL Dependencias]** en la columna **[!UICONTROL Referencias]** .
 
@@ -39,7 +39,7 @@ Puede hacer referencia a recursos digitales existentes desde dentro de un [!DNL 
 
    ![vista de las referencias de Recursos de Experience Manager en la columna Referencias de los detalles de recursos](assets/asset-references.png)
 
-   *Figura: Referencias de recursos en detalles de recursos*
+   *Figura: Referencias de recursos en detalles de recursos.*
 
 ## Añadir recursos digitales como referencias en [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -86,7 +86,7 @@ Para los recursos admitidos con formatos de varias páginas: archivos PDF, archi
 
 La generación de subconjuntos está deshabilitada de forma predeterminada. Para habilitar la generación de subrecursos, siga estos pasos:
 
-1. Inicie sesión en Experience Manager como administrador. Acceda a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
+1. Inicie sesión [!DNL Experience Manager] como administrador. Acceda a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. Seleccione **[!UICONTROL Flujo de trabajo de recursos]** de actualización de DAM y haga clic en **[!UICONTROL Editar]**.
 1. Haga clic en **[!UICONTROL Alternar panel]** lateral y busque el paso **[!UICONTROL Crear subrecurso]** . Añada el paso al flujo de trabajo. Haga clic en **[!UICONTROL Sincronizar]**.
 
