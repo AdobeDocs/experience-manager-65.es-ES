@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -48,14 +48,14 @@ A partir de AEM 6.1, el componente de encuesta ya no está disponible.
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
 Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso mediante programación a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general](srp.md) del proveedor de recursos de almacenamiento de información: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
+* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
