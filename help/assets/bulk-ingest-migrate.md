@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -34,13 +34,12 @@ Consulte también [Configuración de Dynamic Media: modo](/help/assets/config-dm
 
 1. En la instancia de AEM, vaya a **[!UICONTROL Herramientas > Seguridad > Usuarios]** y seleccione **[!UICONTROL Crear usuario]**. Este usuario de servicio debe tener permisos de *lectura y escritura* para `/content/dam.`
 1. En los campos **[!UICONTROL ID]** y **[!UICONTROL Contraseña]** , introduzca un nombre de usuario y una contraseña; por ejemplo, Usuario **FTP**. Este nombre aparece en la línea de tiempo como el usuario que creó el recurso. Cuando se carga un recurso desde FTP, se considera que se crea al cargarlo en el servidor FTP y se transfiere a AEM.
-1. Póngase en contacto con el servicio de asistencia técnica de [Adobe Enterprise para Experience Manager](https://helpx.adobe.com/contact/enterprise-support.ec.html) para solicitar el acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando se ponga en contacto con la asistencia técnica:
+1. Póngase en contacto con el Servicio de atención al cliente de [Adobe Enterprise para obtener información sobre Experience Manager](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) y solicitar el acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando se ponga en contacto con la asistencia técnica:
 
    * Dirección IP del servidor para la instancia de Autor, incluido el número de puerto (de forma predeterminada, el número de puerto es 4502).
    * Nombre de usuario y contraseña del usuario del servicio AEM del paso anterior.
 
-1. La asistencia técnica de Adobe Enterprise para AEM le proporciona las credenciales de FTP y acceso al paquete de funciones 18912.
+1. El Servicio de atención al cliente de Adobe Enterprise para AEM le proporciona las credenciales de FTP y acceso al paquete de funciones 18912.
 1. Cuando reciba el paquete de funciones 18912, instálelo.
 
    Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso compartido de paquetes y paquetes en AEM.
-
