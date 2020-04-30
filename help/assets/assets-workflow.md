@@ -1,9 +1,9 @@
 ---
-title: Procesar recursos para llevar a cabo procesos de negocios, realizar auditorías, lograr el cumplimiento de normas y mantener la solidez básica
+title: Procesar recursos para llevar a cabo procesos de negocios, realizar auditorías, lograr cumplimiento de normas y mantener la solidez básica
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -24,7 +24,7 @@ Para ver los distintos modelos de flujo de trabajo disponibles de forma predeter
 
 ![Parte del flujo de trabajo predeterminado](assets/aem-default-workflows.png)
 
-*Figura: Algunos de los flujos de trabajo predeterminados disponibles en[!DNL Experience Manager]*
+*Figura: Algunos de los flujos de trabajo predeterminados disponibles en[!DNL Experience Manager].*
 
 ## Aplicar flujos de trabajo para procesar recursos {#applying-workflows-to-assets}
 
