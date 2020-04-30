@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -23,11 +23,11 @@ El etiquetado de contenido generado por el usuario (UGC) es el medio por el cual
 
 Normalmente, los autores y administradores aplican las etiquetas en el entorno de creación. Etiquetar UGC es único en el sentido de que los miembros de la comunidad aplican las etiquetas UGC en el entorno de publicación.
 
-Los espacios de nombres de etiquetas y las taxonomías son los mismos para ambas aplicaciones.
+Las Áreas de nombres de etiquetas y las taxonomías son las mismas para ambas aplicaciones.
 
 ## Funciones de comunidades {#communities-features}
 
-Las funciones de Comunidades de AEM que se pueden configurar para permitir el etiquetado son
+Las funciones de Comunidades de AEM que se pueden configurar para permitir el etiquetado son:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -37,7 +37,7 @@ Las funciones de Comunidades de AEM que se pueden configurar para permitir el et
 
 ## Administración de etiquetas {#administering-tags}
 
-Consulte [Administración de etiquetas](../../help/sites-administering/tags.md#tagging-console) para crear y administrar espacios de nombres de etiquetas y taxonomías.
+Consulte [Administración de etiquetas](../../help/sites-administering/tags.md#tagging-console) para crear y administrar Áreas de nombres de etiquetas y taxonomías.
 
 Consulte [Tag Essentials](tag.md) para obtener información sobre desarrolladores.
 
@@ -45,13 +45,13 @@ Consulte [Uso de Social Tag Cloud](tagcloud.md) para agregar un componente de So
 
 ### Permisos de etiquetas {#tag-permissions}
 
-Los permisos predeterminados se establecen para que todos los usuarios del entorno de publicación no puedan leer los espacios de nombres de etiquetas.
+Los permisos predeterminados se establecen para que todos los usuarios del entorno de publicación no puedan leer las Áreas de nombres de etiquetas.
 
 Dado que las etiquetas se aplican a UGC en el entorno de publicación, es necesario habilitar el permiso de lectura para los miembros de la comunidad para que puedan seleccionar las etiquetas que se van a aplicar.
 
 Consulte [Configuración de permisos](../../help/sites-administering/tags.md#setting-tag-permissions)de etiquetas.
 
-A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tag/discussions` para el grupo `*Community Engage Members*`.
+A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tag/discussions` para el grupo `Community Engage Members`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
