@@ -3,7 +3,7 @@ title: Compare las ofertas de AEM Assets y AEM Media Library
 description: Compare las ofertas de AEM Assets y AEM Media Library y conozca las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -70,34 +70,33 @@ En este caso de uso no es necesario comprar Recursos AEM, incluso el uso de la b
 * Adobe Asset Link (conéctese a Creative Cloud para empresas)
 * Aplicación de escritorio de AEM
 * Perfiles de procesamiento
-* Integración del servidor de InDesign
+* Integración de InDesign Server
 * Plantillas de activos y marco de productores de catálogos
-* Recursos vinculados de Adobe Photoshop, Illustrator e InDesign
+* Integración de Adobe Photoshop, Adobe Illustrator y Adobe InDesign
 * Administración de activos multilingües
 * Integración de PIM
-* Rights Management
+* Gestión de derechos
 * Compatibilidad con RAW de cámara
 * Administración y configuración de facetas de búsqueda
 * flujos de trabajo DAM previamente compilados (por ejemplo, sesión fotográfica)
-* Sistema de informes de recursos y análisis: Perspectivas de recursos
-* Administración de activos 3D
+* sistema de informes y análisis de recursos llamados perspectivas
+* Gestión de activos 3D
 * Recursos conectados
 * Brand Portal
 * Acceso a autoservicio
 * Explorar, buscar y descargar
 * Colecciones y uso compartido de carpetas
-* Herramientas de administración
-* Etiquetas inteligentes
+* Herramientas de administración e interfaz
+* Etiquetado inteligente
 * Búsqueda visual
-* Interfaz de usuario del administrador de recursos
 
 **Biblioteca de medios**
 
 * Propiedades de metadatos básicas
 * Administración de etiquetas
-* Control de versión
+* Control de versiones
 * Representaciones estáticas
-* Proyectos, Tareas, creación de flujos de trabajo
+* Proyectos, tareas, creación de flujos de trabajo
 * Flujo de Actividad (escala de tiempo)
 * Consulta Builder (API)
 * Integración de Marketing Cloud
