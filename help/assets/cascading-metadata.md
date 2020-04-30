@@ -1,9 +1,9 @@
 ---
-title: Metadatos en cascada
+title: Metadatos en cascada en [!DNL Adobe Experience Manager Assets].
 description: En este artículo se describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -23,7 +23,7 @@ A continuación se indican algunos casos de uso para los que puede definir metad
 * Cambiar las opciones mostradas para un campo concreto en función del valor especificado en otro campo.
 * Establezca el valor de metadatos predeterminado en un campo concreto en función del valor especificado en otro campo.
 
-## Configuración de metadatos en cascada en AEM {#configure-cascading-metadata-in-aem}
+## Configurar metadatos en cascada en [!DNL Experience Manager]{#configure-cascading-metadata-in-aem}
 
 Imagine un escenario en el que desee mostrar metadatos en cascada en función del tipo de recurso seleccionado. Algunos ejemplos
 
@@ -32,7 +32,7 @@ Imagine un escenario en el que desee mostrar metadatos en cascada en función de
 
 Independientemente del tipo de recurso elegido, muestre la información de copyright como campo requerido.
 
-1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos.
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
@@ -51,7 +51,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    * Para especificar los valores manualmente, seleccione **[!UICONTROL Añadir manualmente]**, haga clic en **[!UICONTROL Añadir opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recursos de vídeo, PDF, Word e imagen.
 
-   * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Añadir a través de ruta]** JSON y proporcione la ruta del archivo JSON. AEM obtiene los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
+   * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Añadir a través de ruta]** JSON y proporcione la ruta del archivo JSON. [!DNL Experience Manager] Obtiene los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
    Ambas opciones son mutuamente excluyentes. No puede importar las opciones de un archivo JSON y editarlas manualmente.
 
    ![add_choice](assets/add_choice.png)
@@ -105,8 +105,8 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    ![Metadatos en cascada para un recurso de vídeo](assets/video_asset.png)
 
-   *Figura: Metadatos en cascada para un vídeo*
+   *Figura: Metadatos en cascada para un vídeo.*
 
    ![Metadatos en cascada para el recurso de documento](assets/doc_type_fields.png)
 
-   *Figura: Metadatos en cascada para un documento*
+   *Figura: Metadatos en cascada para un documento.*
