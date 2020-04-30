@@ -1,22 +1,22 @@
 ---
-title: Configuración del etiquetado de recursos mediante el servicio de contenido inteligente
-description: Obtenga información sobre cómo configurar el etiquetado inteligente y el etiquetado inteligente mejorado en AEM mediante el servicio de contenido inteligente.
+title: Configure el etiquetado de recursos mediante el servicio de contenido inteligente.
+description: Obtenga información sobre cómo configurar el etiquetado inteligente y el etiquetado inteligente mejorado en Adobe Experience Manager mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Configuración del etiquetado de recursos mediante el servicio de contenido inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Puede integrar Adobe Experience Manager (AEM) con Smart Content Service mediante Adobe I/O. Utilice esta configuración para acceder al servicio de contenido inteligente desde AEM.
+Puede realizar la integración [!DNL Adobe Experience Manager] con Smart Content Service mediante Adobe I/O. Utilice esta configuración para acceder al servicio de contenido inteligente desde dentro [!DNL Experience Manager].
 
-En el artículo se detallan las siguientes tareas clave necesarias para configurar el servicio de contenido inteligente. En el back-end, el servidor AEM autentica las credenciales de servicio con la puerta de enlace de Adobe I/O antes de reenviar la solicitud al servicio de contenido inteligente.
+En el artículo se detallan las siguientes tareas clave necesarias para configurar el servicio de contenido inteligente. En el back-end, el [!DNL Experience Manager] servidor autentica las credenciales de servicio con la puerta de enlace de Adobe I/O antes de reenviar la solicitud al servicio de contenido inteligente.
 
-* Cree una configuración de Smart Content Service en AEM para generar una clave pública. Obtenga un certificado público para la integración de OAuth.
+* Cree una configuración de Smart Content Service en [!DNL Experience Manager] para generar una clave pública. Obtenga un certificado público para la integración de OAuth.
 * Cree una integración en Adobe I/O y cargue la clave pública generada.
-* Configure la instancia de AEM utilizando la clave de API y otras credenciales de Adobe I/O.
+* Configure la [!DNL Experience Manager] instancia mediante la clave de API y otras credenciales de Adobe I/O.
 * De forma opcional, habilite el etiquetado automático en la carga de recursos.
 
 ## Requisitos previos {#prerequisites}
@@ -30,7 +30,7 @@ Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguien
 
 Un certificado público le permite autenticar su perfil en Adobe I/O.
 
-1. From the AEM user interface, click the AEM logo, and go to **[!UICONTROL Tools > Cloud Services]**> **[!UICONTROL Legacy Cloud Services]**.
+1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas > Servicios]** de nube > Servicios **[!UICONTROL de nube]** preexistentes.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]** , especifique un título y un nombre para la configuración de etiquetas inteligentes. Haga clic en **[!UICONTROL Crear]**.
@@ -42,7 +42,7 @@ Un certificado público le permite autenticar su perfil en Adobe I/O.
 
    Deje el resto de campos en blanco por ahora (se proporcionará más tarde). Haga clic en **[!UICONTROL Aceptar]**.
 
-   ![Cuadro de diálogo de AEM Smart Content Service para proporcionar la URL del servicio de contenido](assets/aem_scs.png)
+   ![Cuadro de diálogo del servicio de contenido inteligente de Experience Manager para proporcionar la URL del servicio de contenido](assets/aem_scs.png)
 
 1. Haga clic en **[!UICONTROL Descargar certificado público para la integración]** de OAuth y descargue el archivo de certificado público `AEM-SmartTags.crt`.
 
@@ -52,7 +52,7 @@ Un certificado público le permite autenticar su perfil en Adobe I/O.
 
 Cuando caduca el certificado, ya no es de confianza. Para agregar un nuevo certificado, siga estos pasos. No puede renovar un certificado caducado.
 
-1. Inicie sesión en la implementación de AEM como administrador. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
+1. Log in your [!DNL Experience Manager] deployment as an administrator. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
 
 1. Busque y haga clic en **[!UICONTROL dam-update-service]** user. Haga clic en la ficha **[!UICONTROL Almacén]** de claves.
 1. Elimine la **[!UICONTROL similitud existente en el almacén de claves de búsqueda]** con el certificado caducado. Click **[!UICONTROL Save &amp; Close]**.
@@ -88,9 +88,9 @@ Para utilizar las API de Smart Content Service, cree una integración en Adobe I
 
 ## Configurar el servicio de contenido inteligente {#configure-smart-content-service}
 
-Para configurar la integración, utilice los valores de los campos de ID de cuenta técnica, ID de organización, Secreto de cliente, Servidor de autorización y clave de API de la integración de Adobe I/O. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la instancia de AEM.
+Para configurar la integración, utilice los valores de los campos de ID de cuenta técnica, ID de organización, Secreto de cliente, Servidor de autorización y clave de API de la integración de Adobe I/O. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la [!DNL Experience Manager] instancia.
 
-1. En Experience Manager, vaya a **[!UICONTROL Herramientas > Servicio de nube > Servicios]** de nube heredados para abrir la consola de [!UICONTROL Cloud Services] .
+1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Servicio de nube > Servicios]** de nube heredados para abrir la consola de [!UICONTROL Cloud Services] .
 1. En Etiquetas **[!UICONTROL inteligentes de]** recursos, abra la configuración creada anteriormente. En la página de configuración del servicio, haga clic en **[!UICONTROL Editar]**.
 1. En el cuadro de diálogo **[!UICONTROL AEM Smart Content Service]**, utilice los valores predefinidos para los campos **[!UICONTROL URL de servicio]** y **[!UICONTROL Servidor de autorización]**.
 1. Para los campos **[!UICONTROL Clave de API]**, **[!UICONTROL Id de cuenta técnica]**, **[!UICONTROL Id de organización]** y **[!UICONTROL Secreto de cliente]**, utilice los valores generados anteriormente.
@@ -99,7 +99,7 @@ Para configurar la integración, utilice los valores de los campos de ID de cuen
 
 Después de completar la configuración, puede utilizar un MBean de JMX para validar la configuración. Para validar, siga estos pasos.
 
-1. Acceda a su servidor AEM en `https://[server]:[port]`.
+1. Acceda a su [!DNL Experience Manager] servidor en `https://[aem_server]:[port]`.
 
 1. Vaya a **[!UICONTROL Herramientas > Operaciones > Consola]** Web para abrir la consola OSGi. Haga clic en **[!UICONTROL Principal > JMX]**.
 1. Haga clic en **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Abre **[!UICONTROL SimilitudBuscar Tareas diversas.]**
@@ -109,14 +109,14 @@ Después de completar la configuración, puede utilizar un MBean de JMX para val
 
 ## Habilitar el etiquetado inteligente en el flujo de trabajo Actualizar recurso (opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. En Experience Manager, vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
+1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el modelo de flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]**.
 1. Haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
 1. Expanda el panel lateral para mostrar los pasos. Arrastre el paso **[!UICONTROL Recurso de etiqueta inteligente]** que está disponible en la sección Flujo de trabajo de DAM y colóquelo después del paso **[!UICONTROL Miniaturas del proceso]**.
 
    ![Añada el paso del recurso de etiquetas inteligentes después del paso de miniaturas de proceso en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM](assets/chlimage_1-105.png)
 
-   *Figura: Añada el paso del recurso de etiquetas inteligentes después del paso de miniaturas de proceso en el flujo de trabajo de recursos[!UICONTROL de actualización de]DAM*
+   *Figura: Añada el paso del recurso de etiquetas inteligentes después del paso de miniaturas de proceso en el flujo de trabajo de recursos[!UICONTROL de actualización de]DAM.*
 
 1. Abra el paso en modo de edición. En **[!UICONTROL Configuración avanzada]**, compruebe que la opción **[!UICONTROL Avance del controlador]** está seleccionada.
 
