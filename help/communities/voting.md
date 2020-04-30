@@ -1,8 +1,8 @@
 ---
 title: Uso de la votación
 seo-title: Uso de la votación
-description: Adición del componente Voto a una página
-seo-description: Adición del componente Voto a una página
+description: Añadir el componente Votación en una página
+seo-description: Añadir el componente Votación en una página
 uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 El `Voting` componente es una herramienta útil que permite a los miembros de la comunidad clasificar un contenido determinado, como una respuesta dentro de un componente QnA. Con el `Voting` componente, los miembros seleccionan flechas arriba o abajo para indicar su opinión.
 
-## Adición de votos a una página {#adding-voting-to-a-page}
+## Añadir la votación en una página {#adding-voting-to-a-page}
 
 Para agregar un `Voting` componente a una página en modo de autor, utilice el navegador de componentes para ubicarlo `Communities / Voting` y arrastrarlo hasta su lugar en una página, como una posición relativa a la función por la que los usuarios deben votar.
 
@@ -39,13 +39,19 @@ En la ficha **[!UICONTROL Textos y etiquetas]** , especifique las propiedades ut
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Etiqueta]** de respuesta positiva (*obligatoria*) El nombre de la propiedad interna para una respuesta positiva.
+* **[!UICONTROL Etiqueta de respuesta positiva]**
 
-* **[!UICONTROL Etiqueta]** de respuesta negativa (*obligatoria*) El nombre de la propiedad interna para una respuesta negativa.
+   (*Requerido*) El nombre de la propiedad interna para una respuesta positiva.
 
-* **[!UICONTROL Tally Name]**(*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
+* **[!UICONTROL Etiqueta de respuesta negativa]**
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+   (*Requerido*) El nombre de la propiedad interna para una respuesta negativa.
+
+* **[!UICONTROL Nombre de recuento]**
+
+   (*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
+
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 
