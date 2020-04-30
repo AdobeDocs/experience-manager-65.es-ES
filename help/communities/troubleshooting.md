@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -29,11 +29,9 @@ El uso de Dispatcher 4.1.6 o posterior resolverá este problema.
 
 ### No se puede acceder a la publicación de foro después de actualizar desde CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Si se ha creado un foro en CQ 5.4 y se han publicado temas y, a continuación, el sitio se ha actualizado a AEM 5.6.1 o posterior, intentar ver los anuncios existentes puede provocar un error en la página:
+Si se ha creado un foro en CQ 5.4 y se han publicado temas y, a continuación, el sitio se ha actualizado a AEM 5.6.1 o posterior, al intentar realizar la vista de las publicaciones existentes, se puede producir un error en la página:
 
-carácter de patrón no válido &#39;a&#39;No se puede enviar la solicitud a /content/demoforums/forum-test.html en este servidor
-
-Y los registros contienen lo siguiente:
+Carácter de patrón no válido &#39;a&#39;No se puede enviar la solicitud a `/content/demoforums/forum-test.html` en este servidor y los registros contienen lo siguiente:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -44,7 +42,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 El problema es que la cadena de formato para com.day.cq.commons.date.RelativeTimeFormat se cambió entre 5.4 y 5.5 de forma que ya no se acepta la &quot;a&quot; para &quot;ago&quot;.
 
-Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() tendría que cambiar
+Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() deberá cambiar:
 
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
@@ -59,9 +57,9 @@ Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com
 
 Durante el inicio (no el primero, sino cada uno después de eso) se puede ver la siguiente advertencia en los registros:
 
-* 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars El asistente &#39;i18n&#39; se ha sustituido por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` ha sido sustituido por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Esta advertencia se puede ignorar de forma segura ya que jknack.handlebars.Handlebars, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. Al comenzar, se sustituye por un asistente específico de AEM [i18n](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
+Esta advertencia se puede ignorar con seguridad ya que `jknack.handlebars.Handlebars`, usada por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. En inicio hacia arriba, se sustituye por un asistente específico de AEM [i18n](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
 
 ### Advertencia en registros: Proceso de OakResourceListenerOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
