@@ -3,7 +3,7 @@ title: Generación de una URL para los recursos compartidos
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos AEM como una URL para terceros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -16,9 +16,9 @@ Recursos Adobe Experience Manager (AEM) le permite compartir recursos, carpetas 
 >
 >Se requiere el permiso Editar ACL en la carpeta o el recurso que se desea compartir como vínculo.
 
-## Uso compartido de recursos {#sharelink}
+## Compartir recursos {#sharelink}
 
-Para generar la URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la `/var/dam/share` ubicación pueden ver los vínculos compartidos con ellos.
+Para generar la URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la `/var/dam/share` ubicación pueden realizar la vista de los vínculos compartidos con ellos.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
    ![Cuadro de diálogo con el recurso compartido de vínculos](assets/Link-sharing-dialog-box.png)
 
-   *Figura:Cuadro de diálogo con el recurso compartido de vínculos*
+   *Figura: Cuadro de diálogo para compartir recursos como vínculo.*
 
    Como alternativa, realice los pasos 3 a 7 de este procedimiento para agregar destinatarios de correo electrónico, configurar la caducidad del vínculo y enviarlo desde el cuadro de diálogo.
 
@@ -47,12 +47,9 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    >[!NOTE]
    Si un recurso compartido se mueve a una ubicación diferente, su vínculo deja de funcionar. Vuelva a crear el vínculo y a compartirlo con los usuarios.
 
-1. Desde la consola web, abra la configuración **[!UICONTROL Day CQ Link Externalizer]** y modifique las siguientes propiedades en el campo **[!UICONTROL Dominios]** con los valores mencionados en relación con cada uno de ellos:
+1. In AEM interface, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   * local
-   * author
-   * instancias de publicación
-   Para las propiedades local y de autor, proporcione la URL para la instancia local y de autor respectivamente. Tanto las propiedades locales como las de autor tienen el mismo valor si se ejecuta una única instancia de autor de AEM. Para la publicación, especifique la URL de la instancia de publicación.
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Para las propiedades `local` y `author` , proporcione la URL para la instancia local y la instancia de autor respectivamente. Tanto `local` como `author` las propiedades tienen el mismo valor si se ejecuta una única instancia de Experience Manager Author. Por ejemplo, `publish`proporcione la URL para la instancia de publicación de Experience Manager.
 
 1. En el apartado de la dirección de correo electrónico del cuadro de diálogo **[!UICONTROL Uso compartido de vínculos]**, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. También puede compartir el vínculo con varios usuarios.
 
@@ -62,13 +59,15 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
    ![Uso compartido de vínculos a recursos directamente desde el cuadro de diálogo Uso compartido de vínculos](assets/Asset-Sharing-LinkShareDialog.png)
 
-   Uso compartido de vínculos a recursos directamente desde el cuadro de diálogo Uso compartido de vínculos
+   *Figura: Comparta vínculos con recursos directamente desde el cuadro de diálogo Uso compartido de[!UICONTROL vínculos].*
 
    >[!NOTE]
-   Si introduce un ID de correo electrónico de un usuario que no es miembro de su organización, las palabras &quot;Usuario externo&quot; llevan el prefijo &quot;ID de correo electrónico del usuario.
+   Si introduce un ID de correo electrónico de un usuario que no es miembro de su organización, las palabras Usuario  externo llevan el prefijo ID de correo electrónico del usuario.
 
-1. En el **[!UICONTROL cuadro Asunto]** , introduzca un asunto para el recurso que desea compartir.
-1. En el cuadro **[!UICONTROL Mensaje]** , escriba un mensaje opcional.
+1. En el campo **[!UICONTROL Asunto]** , introduzca un asunto para el recurso que desea compartir.
+
+1. En el campo **[!UICONTROL Mensaje]** , introduzca un mensaje opcional.
+
 1. En el campo **[!UICONTROL Caducidad]** , especifique una fecha y hora de caducidad para el vínculo mediante el selector de fechas. De forma predeterminada, la fecha de caducidad se establece para una semana a partir de la fecha en que comparta el vínculo.
 
    ![Establecer fecha de caducidad del vínculo compartido](assets/Set-shared-link-expiration.png)
@@ -79,31 +78,31 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    De forma predeterminada, los usuarios solo pueden descargar las representaciones del recurso que se comparten como vínculo.
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios a través de un correo electrónico.
-1. Para ver el recurso compartido, toque o haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página de **[!UICONTROL Adobe Marketing Cloud]** .
+1. Para vista del recurso compartido, toque o haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página de **[!UICONTROL Adobe Marketing Cloud]** .
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-   Para cambiar a la vista de lista, toque o haga clic en la opción de diseño en la barra de herramientas.
+   Para cambiar a la vista de lista, toque o haga clic en la opción de diseño de la barra de herramientas.
 
 1. Para generar una vista previa del recurso, pulse o haga clic en el recurso compartido. Para cerrar la vista previa y volver a la página de **[!UICONTROL Experience Cloud]**, pulse o haga clic en **[!UICONTROL Atrás]** en la barra de herramientas. Si ha compartido una carpeta, pulse o haga clic en **[!UICONTROL Carpeta principal]** para regresar a la carpeta principal.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   AEM admite la generación de la vista previa de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
+   AEM admite la generación de previsualizaciones de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
 
 1. Para descargar el recurso compartido, toque **[!UICONTROL Seleccionar]** en la barra de herramientas, toque o haga clic en el recurso y, a continuación, toque o haga clic en **[!UICONTROL Descargar]** desde la barra de herramientas.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Para ver los recursos que ha compartido como vínculos, vaya a la interfaz de usuario de Recursos y toque el logotipo de Experience Manager. Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
+1. Para vista de los recursos que ha compartido como vínculos, vaya a la interfaz de usuario de Recursos y toque el logotipo de Experience Manager. Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
 1. En el panel Navegación, seleccione **[!UICONTROL Vínculos compartidos]** para mostrar una lista de recursos compartidos.
 1. Para dejar de compartir un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Dejar de compartir]** en la barra de herramientas. A continuación se muestra un mensaje de confirmación. La entrada del recurso se elimina de la lista.
 
 ## Configurar el servicio de correo CQ Day {#configmailservice}
 
 1. En la página de inicio de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
-1. En la lista de servicios, busque **[!UICONTROL Day CQ Mail Service]**.
+1. En la lista de servicios, localice **[!UICONTROL Day CQ Mail Service]**.
 1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * Nombre de host del servidor SMTP: nombre de host del servidor de correo electrónico
