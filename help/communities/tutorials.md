@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -21,7 +21,9 @@ Estos son ejemplos de ayuda para el aprendizaje y el trabajo con el marco de com
 
 ## Personalización del lado del cliente {#client-side-customization}
 
-Consulte también Personalización [de cliente de SCF](client-customize.md).
+Consulte también:
+
+* [Personalización del cliente de SCF](client-customize.md)
 
 * [Guía de componentes de comunidad](components-guide.md)
 
@@ -45,7 +47,7 @@ El código de muestra está disponible en el repositorio de [Adobe Marketing Clo
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   ToDo MVC muestra cómo desarrollar un componente SCF+SRP desde cero
+   ToDo MVC Muestra cómo desarrollar un componente SCF+SRP desde cero.
 
 * [Introducción a Comunidades de AEM](getting-started.md)
 
@@ -59,11 +61,11 @@ El código de muestra está disponible en el repositorio de [Adobe Marketing Clo
 
 El paquete de muestras de Geometrixx incluye usuarios de demostración. La experiencia suele variar entre ser un visitante (no ha iniciado sesión) o un miembro (ha iniciado sesión) y, siempre que los paquetes de muestras de Geometrixx permanezcan instalados, puede utilizar estos usuarios para simular un estado de inicio de sesión al explorar con la guía [Componentes de la](components-guide.md)comunidad.
 
-Para obtener una lista completa de los usuarios de demostración, navegue mediante el carril a **[!UICONTROL Herramientas > Operaciones > Seguridad > Usuarios]**. O bien, utilice la consola [de](http://localhost:4502/useradmin) seguridad de la IU clásica para administrar usuarios y grupos.
+Para obtener una lista completa de los usuarios de demostración, navegue mediante el carril a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Seguridad > Usuarios]**. O bien, utilice la consola [de](http://localhost:4502/useradmin) seguridad de la IU clásica para administrar usuarios y grupos.
 
 Si se ha creado [un sitio de](getting-started.md)comunidad, es posible asignar usuarios de demostración a los grupos [de usuarios de su](users.md)comunidad.
 
-***id *de usuario /*contraseña:***
+***id *de usuario /*contraseña***:
 
 * aaron.mcdonald@mailinator.com / contraseña
 * emily.andrews@mailinator.com / contraseña
