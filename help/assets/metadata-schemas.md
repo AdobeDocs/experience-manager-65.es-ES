@@ -3,7 +3,7 @@ title: Esquemas de metadatos
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -26,7 +26,7 @@ Puede utilizar el editor de formularios Esquema de metadatos para modificar esqu
 
    ![Ficha Básico de Propiedades del recurso, donde no se puede cambiar el tipo de recurso](assets/asset-properties-basic-tab.png)
 
-   *Figura: Ficha Básico de Propiedades del recurso*
+   *Figura: Ficha Básico en Propiedades del recurso.*
 
    Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar formularios](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de Esquema de metadatos para obtener más información. Si modifica el esquema de metadatos para un tipo MIME determinado, se modificará la presentación de la página de propiedades de los recursos con el tipo MIME actual y todos los subtipos de recursos. Por ejemplo, la modificación de un esquema jpeg en `default/image` solo modifica la presentación de metadatos (propiedades del recurso) de los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modifican la presentación de los metadatos de todos los tipos de recursos.
 
@@ -86,9 +86,9 @@ Puede agregar nuevas fichas o elementos de formulario al formulario de esquema d
 
    ![Editor de Esquemas de metadatos para personalizar la página Propiedades del recurso](assets/metadata-schema-editor.png)
 
-   *Figura: Ficha básica del editor de esquemas de metadatos*
+   *Figura: Ficha[!UICONTROL Básico]del editor de Esquema[!UICONTROL de]metadatos.*
 
-1. Para configurar un componente, selecciónelo y modifique sus propiedades en la ficha **Configuración** .
+1. Para configurar un componente, selecciónelo y modifique sus propiedades en la ficha **[!UICONTROL Configuración]** .
 
 ### Componentes de la ficha Formulario de compilación {#components-within-the-build-form-tab}
 
@@ -127,29 +127,21 @@ Los siguientes son los valores válidos para esta propiedad:
 
 Para asegurarse de que el componente se muestra correctamente en el formulario de esquema de metadatos, la ruta de la propiedad no debe incluir espacios.
 
-**Marcador de posición**: Utilice esta propiedad para especificar el texto del marcador de posición correspondiente a la propiedad metadata.
-
-**Requerido**: Utilice esta propiedad para marcar una propiedad de metadatos como obligatoria en la página de propiedades.
-
-**Deshabilitar Editar**: Utilice esta propiedad para que una propiedad de metadatos no se pueda editar en la página de propiedades.
-
-**Mostrar campo vacío en solo** lectura: Marque esta propiedad para mostrar una propiedad de metadatos en la página de propiedades aunque no tenga ningún valor. De forma predeterminada, cuando una propiedad de metadatos no tiene ningún valor, no se muestra en la página de propiedades.
-
-**Mostrar lista ordenada**: Utilice esta propiedad para mostrar una lista ordenada de las opciones
-
-**Opciones**: Utilice esta propiedad para especificar opciones en una lista
-
-**Descripción** : Utilice esta propiedad para agregar una breve descripción para el componente de metadatos.
-
-**Clase**: Clase de objeto con la que está asociada la propiedad.
-
-**Eliminar**: Haga clic en este icono para eliminar un componente del formulario de esquema.
+* **Marcador de posición**: Utilice esta propiedad para especificar el texto del marcador de posición correspondiente a la propiedad metadata.
+* **Requerido**: Utilice esta propiedad para marcar una propiedad de metadatos como obligatoria en la página de propiedades.
+* **Deshabilitar Editar**: Utilice esta propiedad para que una propiedad de metadatos no se pueda editar en la página de propiedades.
+* **Mostrar campo vacío en solo** lectura: Marque esta propiedad para mostrar una propiedad de metadatos en la página de propiedades aunque no tenga ningún valor. De forma predeterminada, cuando una propiedad de metadatos no tiene ningún valor, no se muestra en la página de propiedades.
+* **Mostrar lista ordenada**: Utilice esta propiedad para mostrar una lista ordenada de las opciones
+* **Opciones**: Utilice esta propiedad para especificar opciones en una lista
+* **Descripción** : Utilice esta propiedad para agregar una breve descripción para el componente de metadatos.
+* **Clase**: Clase de objeto con la que está asociada la propiedad.
+* **Eliminar**: Haga clic en este icono para eliminar un componente del formulario de esquema.
 
 ![Icono Eliminar del formulario de Esquema de metadatos](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
->El componente Campo oculto no incluye estos atributos. En su lugar, incluye propiedades, como los atributos Nombre, Valor, Etiqueta de campo y Descripción. Los valores del componente Campo oculto se envían como parámetro POST cada vez que se guarda el recurso. No se guarda como metadatos para el recurso.
+>El componente Campo  oculto no incluye estos atributos. En su lugar, incluye propiedades, como los atributos Nombre, Valor, Etiqueta de campo y Descripción. Los valores del componente Campo oculto se envían como parámetro POST cada vez que se guarda el recurso. No se guarda como metadatos para el recurso.
 
 Si selecciona la opción **[!UICONTROL Obligatorio]**, puede buscar recursos que no tengan metadatos obligatorios. En el panel **[!UICONTROL Filtros]**, expanda el predicado **[!UICONTROL Validación de metadatos]** y seleccione la opción **[!UICONTROL No válido]**. Los resultados de la búsqueda muestran los recursos que carecen de metadatos obligatorios configurados a través del formulario de esquema.
 
@@ -163,7 +155,7 @@ Para mostrar cualquier ficha de la página de propiedades además de la ficha do
 
 ![La ficha seleccionada en la lista Metadatos contextuales se muestra en la página de propiedades del recurso](assets/contextual-metadata-asset-properties.png)
 
-*Figura: Metadatos contextuales en la página de propiedades de recursos*
+*Figura: Metadatos contextuales de la página de propiedades de recursos.*
 
 ### Especificar propiedades en el archivo JSON {#specify-properties-in-json-file}
 
@@ -263,7 +255,7 @@ Si la carpeta tiene una subcarpeta, los recursos de la subcarpeta heredarán los
 
    ![Campo de texto agregado al Editor de formularios de Esquema de metadatos](assets/text-field-metadata-schema-editor.png)
 
-   *Figura: Campo de texto agregado al editor de formularios de esquema de metadatos*
+   *Figura: Campo de texto agregado al editor de formularios de esquema de metadatos.*
 
 1. Haga clic en **[!UICONTROL Guardar.]** El formulario modificado aparece en la página **[!UICONTROL Metadatos Esquema Forms]** .
 1. Toque o haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
@@ -295,7 +287,7 @@ Puede definir campos obligatorios en un nivel de carpeta, que se aplican a los r
 
    ![Añadir campo obligatorio en formulario de metadatos seleccionando Obligatorio en la ficha Reglas del Editor de formularios de Esquema de metadatos](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figura: Campo obligatorio en el editor de formularios de esquema de metadatos*
+   *Figura: Campo obligatorio en el editor de formularios de esquema de metadatos.*
 
 1. Haga clic en **[!UICONTROL Guardar.]** El formulario modificado aparece en la página **[!UICONTROL Metadatos Esquema Forms]** . Seleccione el formulario y, a continuación, toque o haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
 
@@ -315,4 +307,4 @@ Puede definir campos obligatorios en un nivel de carpeta, que se aplican a los r
 
    >[!CAUTION]
    >
-   >Las comprobaciones de validación de metadatos requieren muchos recursos y pueden afectar al rendimiento del sistema. Programe las comprobaciones en consecuencia. Si el servidor no puede hacer frente a la carga, intente deshabilitar este trabajo.
+   >Las comprobaciones de validación de metadatos requieren muchos recursos y pueden afectar al rendimiento del sistema. Programe las comprobaciones en consecuencia. If the server cannot cope up with the load, try disabling this job.
