@@ -1,8 +1,8 @@
 ---
 title: Función de foro de preguntas y respuestas
 seo-title: Función de foro de preguntas y respuestas
-description: Adición de la función de foro QnA a una página
-seo-description: Adición de la función de foro QnA a una página
+description: Añadir la función de foro QnA en una página
+seo-description: Añadir la función de foro QnA en una página
 uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -23,8 +23,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 La función de foro QnA (preguntas y respuestas) proporciona un área para que los miembros de la comunidad hagan y respondan preguntas. Permite a los miembros:
 
 * Crear nuevas preguntas
-* Agregar imágenes en línea (con compatibilidad con arrastrar y soltar)
-* Ver y responder preguntas
+* Añadir imágenes en línea (con compatibilidad para arrastrar y soltar)
+* Vista y respuesta a preguntas
 * Buscar una pregunta
 * Ayudar a moderar el contenido de QnA
 * Identifique las mejores respuestas
@@ -32,10 +32,10 @@ La función de foro QnA (preguntas y respuestas) proporciona un área para que l
 
 La documentación describe:
 
-* adición de la función de foro QnA a un sitio de AEM.
-* configuración del `QnA`componente.
+* Añadir la función de foro QnA en un sitio de AEM.
+* Configuración del `QnA`componente.
 
-## Adición de un foro de preguntas y respuestas a una página {#adding-a-q-a-forum-to-a-page}
+## Añadir un foro de preguntas y respuestas a una página {#adding-a-q-a-forum-to-a-page}
 
 Para agregar un `QnA` componente a una página en modo de autor, utilice el navegador de componentes para ubicarlo `Communities / QnA`y arrastrarlo hasta su lugar en una página en la que debería aparecer el foro de control de calidad.
 
@@ -97,7 +97,7 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 * **Permitir seguimiento**
 
-   Si está activada, incluya la siguiente función para las publicaciones del foro, que permite que se [notifique](/help/communities/notifications.md) a los miembros de las nuevas publicaciones. El valor predeterminado no está seleccionado.
+   Si se selecciona, incluya la siguiente función para las publicaciones en el foro, que permite que se [notifique](/help/communities/notifications.md) a los miembros de las nuevas publicaciones. El valor predeterminado no está seleccionado.
 
 * **Permitir fijación**
 
@@ -113,22 +113,23 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Una lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permite cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permite cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152*** **(2 Mb).
+   Solo es relevante si está activada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
 
 * **Permitir respuestas**
 
    Si está activada, permita respuestas a los comentarios publicados en la pregunta. El valor predeterminado no está seleccionado.
+
 * **Habilitar la votación**
 
    Si está activada, incluya la función de voto con una pregunta. El valor predeterminado no está seleccionado.
 
 * **Permitir que los usuarios eliminen comentarios y temas**
 
-   Si se selecciona, permita que los miembros eliminen los comentarios y las preguntas que han publicado. El valor predeterminado es** **sin seleccionar.
+   Si se selecciona, permita que los miembros eliminen los comentarios y las preguntas que han publicado. El valor predeterminado no está seleccionado.
 
 * **Permitir miembros privilegiados**
 
@@ -138,7 +139,9 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
    Si está activada, bloquea el contenido generado por el usuario mientras edita en modo de autor.
 
-* **Mover la respuesta seleccionada a la parte superior**Si está activada, la primera respuesta que se muestra es una respuesta seleccionada. El valor predeterminado no está seleccionado.
+* **Mover la respuesta seleccionada a la parte superior**
+
+   Si se selecciona, la primera respuesta que se muestra es una respuesta seleccionada. El valor predeterminado no está seleccionado.
 * **Mostrar insignias**
 
    Si está activada, muestre [los distintivos](/help/communities/implementing-scoring.md) obtenidos y asignados con una entrada de blog de miembro. El valor predeterminado no está seleccionado.
@@ -157,7 +160,7 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 * **Patrón de menciones en la interfaz de usuario**
 
-   Especifique la cadena de patrón permitida para etiquetar (@mención) al usuario registrado en una publicación. Por ejemplo, ~{{familyName}}{{givenName}}.
+   Especifique la cadena de patrón permitida para etiquetar (@mención) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
@@ -179,7 +182,7 @@ En la ficha Moderación **del** usuario, especifique cómo se administran los te
 
 * **Lista de motivos de indicación**
 
-   Si se selecciona, permita que los miembros elijan, en una lista desplegable, el motivo por el que marcan una pregunta o una respuesta como inadecuada. El valor predeterminado no está seleccionado.
+   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan una pregunta o respuesta como inadecuada. El valor predeterminado no está seleccionado.
 
 * **Motivo de indicación personalizado**
 
@@ -187,19 +190,23 @@ En la ficha Moderación **del** usuario, especifique cómo se administran los te
 
 * **Umbral de moderación**
 
-   Escriba el número de veces que los miembros deben marcar una pregunta o respuesta antes de que se notifique a los moderadores. El valor predeterminado es 1 ( una vez).
+   Introduzca el número de veces que los miembros deben marcar una pregunta o respuesta antes de que se notifique a los moderadores. El valor predeterminado es 1 (una vez).
 
 * **Límite de indicación**
 
-   Escriba el número de veces que se debe marcar una pregunta o respuesta antes de que se oculte de la vista pública. Si se establece en -1, la pregunta o respuesta marcada nunca se oculta en la vista pública. De lo contrario, este número debe ser mayor o igual que el umbral de moderación. El valor predeterminado es 5.
+   Escriba el número de veces que se debe marcar una pregunta o respuesta antes de que se oculte en la vista pública. Si se establece en -1, la pregunta o respuesta marcada nunca se oculta en la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
-En la ficha Campo **** Etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración **ficha, están limitadas según los espacios de nombres elegidos.
+En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración** , están limitadas según las Áreas de nombres elegidas.
 
-* **Espacios de nombres** permitidos relevantes si `Allow Tagging` se marca en la ficha **Configuración **ficha. Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de espacio de nombres seleccionadas. La lista de espacios de nombres incluye &quot;Etiquetas estándar&quot; (el espacio de nombres predeterminado) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todos los espacios de nombres.
+* **Espacios de nombres permitidos**
 
-* **Límite** de sugerencias Introduzca el número de etiquetas que se mostrarán como una sugerencia para el miembro que se publica en el foro. Un valor de **-**1 significa que no hay límites. El valor predeterminado es 0.
+   Relevante si `Allow Tagging` se marca en la ficha **Configuración** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
+
+* **Límite de sugerencias**
+
+   Escriba el número de etiquetas que se mostrarán como una sugerencia para el miembro que se publica en el foro. Un valor de **-**1 significa que no hay límites. El valor predeterminado es 0.
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
@@ -217,15 +224,15 @@ En la ficha **Ordenar configuración** , especifique cómo se ordenan los coment
 
    Desplegable para seleccionar uno de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. El valor predeterminado es `All`.
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
 ### Identificación de respuestas {#identifying-answers}
 
-Una respuesta se puede marcar como una respuesta correcta o útil mediante el `Select Answer` botón. Una vez que una pregunta se marca como respondida, no se puede seleccionar otra respuesta hasta que se anule la selección de la primera mediante el `Unmark Chosen Answer`botón.
+Una respuesta se puede marcar como una respuesta correcta o útil mediante el `Select Answer` botón. Una vez que una pregunta se marca como respondida, no se puede seleccionar otra respuesta hasta que se anule la selección de la primera mediante el `Unmark Chosen Answer` botón.
 
 Una vez seleccionada como una respuesta viable, se puede anular la selección mediante el `Unmark Chosen Answer` botón.
 
-Una vez seleccionada una respuesta como respuesta viable, `Answered`se muestra una indicación de que la pregunta se ha mostrado junto al tema de la pregunta en la página principal de control de calidad.
+Una vez seleccionada una respuesta como respuesta viable, se muestra una indicación de que la pregunta se ha `Answered` mostrado junto al tema de la pregunta en la página principal de control de calidad.
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
@@ -237,10 +244,10 @@ También pueden identificar respuestas.
 
 Cuando los visitantes del sitio inician sesión, según la configuración, pueden:
 
-* publicar una nueva pregunta.
-* edite o elimine las preguntas que hayan creado.
-* marcar preguntas o respuestas de otros miembros.
-* identifique las respuestas a las preguntas que han creado.
+* Publicar una nueva pregunta.
+* Edite o elimine las preguntas creadas por ellos.
+* Marque las preguntas o respuestas de otros miembros.
+* Identifique las respuestas a las preguntas que han creado.
 
 #### Anónimo {#anonymous}
 
