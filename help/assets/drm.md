@@ -3,7 +3,7 @@ title: Administración de derechos digitales en recursos
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -20,7 +20,7 @@ Puede vista del estado de caducidad de un recurso en la consola Recursos, tanto 
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figura: En la vista de tarjetas, un indicador de la tarjeta indica que el recurso ha caducado*
+*Figura: En la vista de tarjetas, un indicador de la tarjeta indica que el recurso ha caducado.*
 
 **Vista de lista**
 
@@ -123,7 +123,7 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
    ![establecer fecha y hora de caducidad del recurso en el campo Caduca](assets/asset-properties-advanced-tab.png)
 
 
-   *Figura: Ficha Avanzado de las propiedades del recurso para establecer la caducidad del recurso*
+   *Figura: Ficha[!UICONTROL Avanzado]de la página[!UICONTROL Propiedades]del recurso para establecer la caducidad del recurso.*
 
 1. Haga clic en **[!UICONTROL Guardar]** y, a continuación, en **[!UICONTROL Cerrar]** para mostrar la consola Recursos.
 1. El estado de publicación del recurso indica un estado caducado en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, el estado del recurso se muestra como **[!UICONTROL Caducado]**.
