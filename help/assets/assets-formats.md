@@ -3,7 +3,7 @@ title: Formatos admitidos para los recursos
 description: Lista de los formatos de archivo compatibles con AEM Assets y Dynamic Media y funciones compatibles con cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
+source-git-commit: 134530e6e4cabc31342fc3136ec3218ba5acea4a
 
 ---
 
@@ -32,7 +32,7 @@ Utilice la leyenda para comprender el nivel de asistencia.
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PFM | ✓ | ✓ |  |  |  |  | ✓ |
+| PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
 | PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
@@ -66,6 +66,17 @@ Además de la información anterior, considere lo siguiente:
 * Para utilizar Dynamic Media para previsualización y generar representaciones dinámicas para archivos EPS, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para archivos EPS, la reescritura de metadatos se admite en la versión 3.0 o posterior del Convenio de estructura de Documento PostScript (PS-Adobe).
+
+## Formatos de imagen rasterizada no admitidos en Dynamic Media (#unsupported-image-formats-dynamic-media)
+
+La siguiente lista describe los subtipos de formatos de archivo de imagen rasterizada que *no son* compatibles con Dynamic Media.
+
+* Archivos PNG con un tamaño de fragmento IDAT bueno de 100 MB.
+* Archivos PSB.
+* Los archivos PSD con un espacio de color distinto de CMYK, RGB, escala de grises o mapa de bits no son compatibles. No se admiten los espacios de color DuoTone, Lab e Indexed.
+* Archivos PSD con una profundidad buena de 16.
+* Archivos TIFF que tienen datos de coma flotante.
+* Archivos TIFF que tienen espacio de color Lab.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
@@ -283,7 +294,7 @@ Hay una lista de tipos MIME admitidos disponible en CRXDE Lite en `/conf/global/
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
