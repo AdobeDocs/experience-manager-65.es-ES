@@ -1,18 +1,16 @@
 ---
-title: Plantillas de recursos
+title: Plantillas de recursos en [!DNL Recursos Adobe Experience Manager].
 description: Obtenga información sobre las plantillas de recursos en [!DNL Adobe Experience Manager Assets] y cómo usar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
 
 ---
 
 
 # Asset templates {#asset-templates}
 
-Las plantillas de recursos son una clase especial de recursos que facilitan la reutilización rápida de contenido con gran riqueza visual para medios digitales e impresos. Una plantilla de recurso incluye dos partes, la sección de mensajería fija y la sección editable.
-
-La sección de mensajes fijos puede contener contenido propio, como el logotipo de la marca y la información de copyright que está desactivada para la edición. La sección editable puede contener contenido visual y textual en los campos que se pueden editar para personalizar la mensajería.
+Las plantillas de recursos son una clase especial de recursos que facilitan la reutilización rápida de contenido con gran riqueza visual para medios digitales e impresos. Una plantilla de recurso incluye dos partes, la sección de mensajería fija y la sección editable. La sección de mensajes fijos puede contener contenido propio, como el logotipo de la marca y la información de copyright que está desactivada para la edición. La sección editable puede contener contenido visual y textual en los campos que se pueden editar para personalizar la mensajería.
 
 La flexibilidad para realizar ediciones limitadas y, al mismo tiempo, asegurar la señalización global, hace que las plantillas de recursos sean los componentes básicos idóneos para una rápida adaptación y distribución del contenido como artefactos de contenido para diversas funciones. La reasignación del propósito del contenido ayuda a reducir el costo de la administración de canales digitales e impresos y ofrece experiencias holísticas y coherentes en estos canales.
 
@@ -20,25 +18,19 @@ Como especialista en mercadotecnia, puede almacenar y administrar plantillas den
 
 Si bien las plantillas de recursos son principalmente [!DNL Adobe InDesign] archivos, la competencia en [!DNL Adobe InDesign] no es una barrera para la creación de artefactos estelares. No es necesario asignar los campos de la [!DNL Adobe InDesign] plantilla a los campos de producto que, de lo contrario, se requieren al crear catálogos. Puede editar las plantillas en modo WYSIWYG directamente en la interfaz web. Sin embargo, para [!DNL Adobe InDesign] procesar los cambios de edición, primero debe configurarlos [!DNL Experience Manager Assets] para integrarlos con [!DNL Adobe InDesign Server].
 
-La capacidad de editar [!DNL Adobe InDesign] plantillas desde la interfaz web ayuda a fomentar la buena colaboración entre el personal de Creative y Marketing, a la vez que reduce el tiempo de comercialización para las iniciativas de promoción locales.
+La capacidad de editar [!DNL Adobe InDesign] plantillas desde la interfaz web ayuda a fomentar la buena colaboración entre el personal creativo y el de marketing. La mayor velocidad de contenido reduce el tiempo de comercialización de las garantías de marketing.
 
-Puede hacer lo siguiente con plantillas de recursos:
+Puede lograr lo siguiente con plantillas de recursos:
 
-* Modificación de campos de plantilla editables desde la interfaz web
-* Controlar el estilo básico del texto, por ejemplo, el tamaño de fuente, el estilo y el tipo en el nivel de etiqueta
-* Cambiar imágenes dentro de la plantilla mediante el selector de contenido
-* Ediciones de plantillas de Previsualización
-* Combinar varios archivos de plantilla para crear un artefacto de varias páginas
+* Modifique los campos de plantilla editables desde la interfaz web.
+* Controle el estilo básico del texto, por ejemplo, el tamaño de fuente, el estilo y el tipo en el nivel de etiqueta.
+* Cambie las imágenes dentro de la plantilla mediante el selector de contenido.
+* Se editan las plantillas de Previsualización.
+* Combine varios archivos de plantilla para crear un artefacto de varias páginas.
 
 Al elegir una plantilla para el material promocional, [!DNL Experience Manager Assets] crea una copia de la plantilla que puede editar. Se conserva la plantilla original, lo que garantiza que la señalización global permanezca intacta y se pueda reutilizar para reforzar la coherencia de la marca.
 
-Puede exportar el archivo actualizado en la carpeta principal con los siguientes formatos:
-
-* INDD
-* PDF
-* JPG
-
-También puede descargar la salida en estos formatos al sistema local.
+Puede exportar el archivo actualizado dentro de la carpeta principal en los formatos INDD, PDF o JPG. También puede descargar la salida en estos formatos al sistema de archivos local.
 
 ## Crear una garantía {#creating-a-collateral}
 
@@ -70,13 +62,13 @@ Considere un escenario en el que desee crear material publicitario digital impri
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   De forma alternativa, cierre el cuadro de diálogo y vaya a la carpeta de la página Plantillas con la que comenzó a crear la vista del folleto que ha creado. El tipo de garantía aparece en su miniatura en la vista de la tarjeta. Por ejemplo, en este caso, el folleto se muestra en la miniatura.
+   De forma alternativa, cierre el cuadro de diálogo y vaya a la carpeta de la página Plantillas con la que comenzó a crear la vista del folleto que ha creado. El tipo de garantía aparece en su miniatura en la vista de la tarjeta. Por ejemplo, en este caso, la palabra [!UICONTROL Folleto] se muestra en la miniatura.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Editar una garantía {#editing-a-collateral}
 
-Puede editar un colateral inmediatamente después de crearlo. También puede abrirlo desde la página Plantillas o desde la página de recursos.
+Puede editar un colateral inmediatamente después de crearlo. También puede abrirlo desde la página [!UICONTROL Plantillas] o desde la página de recursos.
 
 1. Para abrir el material publicitario para la edición, realice una de las siguientes acciones:
 
@@ -100,13 +92,13 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    >[!NOTE]
    >
-   >Asegúrese de que la [!DNL Experience Manager] instancia esté integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la plantilla de InDesign y que esté disponible para su edición. Para obtener más información, consulte [Integración de recursos de Experience Manager con InDesign Server](/help/assets/indesign.md).
+   >Asegúrese de que la [!DNL Experience Manager] instancia está integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la [!DNL InDesign] plantilla y ponerlos a disposición para su edición. Para obtener más información, consulte [Integración de Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar el texto de un campo editable, haga clic en el campo de texto de la lista de campos editables y edite el texto del campo.
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   Puede editar las propiedades del texto, por ejemplo, el estilo de fuente, el color y el tamaño, mediante las opciones proporcionadas.
+   Puede editar las propiedades del texto, por ejemplo, el estilo de fuente, el color y el tamaño utilizando las opciones proporcionadas.
 
 1. Haga clic en **[!UICONTROL Previsualización]** para previsualización de los cambios de texto.
 
@@ -201,3 +193,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
    >[!NOTE]
    >
    >No puede editar una garantía combinada posteriormente ni utilizarla para crear otra garantía.
+
+## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
+
+* El editor de AEM InDesign funciona a nivel de etiqueta y todo el texto de una sola etiqueta se considera una sola entidad. Para conservar el formato y los estilos de texto al editarlos, etiquete cada párrafo (o texto con un estilo diferente) por separado.
