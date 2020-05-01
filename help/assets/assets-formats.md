@@ -3,7 +3,7 @@ title: Formatos admitidos para los recursos
 description: Lista de los formatos de archivo compatibles con AEM Assets y Dynamic Media y funciones compatibles con cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 134530e6e4cabc31342fc3136ec3218ba5acea4a
+source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
 
 ---
 
@@ -42,7 +42,7 @@ Utilice la leyenda para comprender el nivel de asistencia.
 
 † La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
-## Formatos de imagen rasterizada admitidos en Dynamic Media (#supported-raster-image-formats-dynamic-media)
+## Formatos de imagen rasterizada admitidos en Dynamic Media {#supported-raster-image-formats-dynamic-media}
 
 | Formato | Cargar<br> (formato de entrada) | Creación<br> de ajustes preestablecidos<br> de imagen<br> (formato de salida) | Representación dinámica<br> de Previsualización<br> | Entregar<br> representación dinámica<br> | Descargar<br> representación dinámica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -67,7 +67,7 @@ Además de la información anterior, considere lo siguiente:
 
 * Para archivos EPS, la reescritura de metadatos se admite en la versión 3.0 o posterior del Convenio de estructura de Documento PostScript (PS-Adobe).
 
-## Formatos de imagen rasterizada no admitidos en Dynamic Media (#unsupported-image-formats-dynamic-media)
+## Formatos de imagen rasterizada no admitidos en Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 La siguiente lista describe los subtipos de formatos de archivo de imagen rasterizada que *no son* compatibles con Dynamic Media.
 
@@ -168,7 +168,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Formatos de documento admitidos en Dynamic Media (#supported-documento-formats-dynamic-media)
+## Formatos de documento admitidos en Dynamic Media {#supported-document-formats-dynamic-media}
 
 | Formato | Cargar<br> (formato de entrada) | Creación<br> de ajustes preestablecidos<br> de imagen<br> (formato de salida) | Representación dinámica<br> de Previsualización<br> | Entregar<br> representación dinámica<br> | Descargar<br> representación dinámica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
