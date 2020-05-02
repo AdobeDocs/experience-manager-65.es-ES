@@ -1,26 +1,28 @@
 ---
-title: Gestión de recursos digitales mediante Recursos AEM
+title: Administre sus recursos digitales en [!DNL Recursos Adobe Experience Manager].
 description: Conozca las tareas de administración de recursos, como cargar, descargar, editar, buscar, eliminar, anotar y crear versiones de sus recursos digitales.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 1321aa3421455d78fd4562d6cb524aa232ee2ce1
 
 ---
 
 
-# Administrar sus recursos digitales {#managing-assets-with-the-touch-optimized-ui}
+# Administrar sus recursos digitales {#manage-digital-assets}
 
-En este artículo se describe cómo administrar y editar recursos en Recursos Adobe Experience Manager (AEM). Para empezar a utilizar la interfaz de usuario y el diseño, consulte Gestión [básica de la IU](/help/sites-authoring/basic-handling.md)táctil. Para administrar fragmentos de contenido, consulte [Administración de fragmentos](content-fragments-managing.md) de contenido.
+En [!DNL Adobe Experience Manager Assets] puede hacer más que simplemente almacenar y gobernar sus recursos. [!DNL Experience Manager] ofertas de las capacidades de administración de activos de nivel empresarial. Puede editar y compartir recursos, realizar búsquedas avanzadas, crear varias representaciones de decenas de formatos de archivo admitidos, administrar versiones y derechos digitales, automatizar el procesamiento de recursos, administrar y gestionar metadatos, colaborar mediante anotaciones y mucho más.
+
+En este artículo se describen las tareas básicas de administración de recursos, como crear o cargar; actualizaciones de metadatos; copiar, mover y eliminar; publicar, cancelar la publicación y buscar recursos. Para comprender la interfaz de usuario, consulte [Introducción a la interfaz](/help/sites-authoring/basic-handling.md)de usuario de recursos. Para administrar fragmentos de contenido, consulte [Gestión de recursos de fragmentos](content-fragments-managing.md) de contenido.
 
 ## Crear carpetas {#creating-folders}
 
-Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágenes, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. Recursos AEM no requiere que organice los recursos en carpetas para que funcionen mejor.
+Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágenes, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. [!DNL Experience Manager Assets] no requiere que organice los recursos en carpetas para que funcionen mejor.
 
 >[!NOTE]
 >
->* No se puede compartir una carpeta de recursos del tipo `sling:OrderedFolder` al compartirla en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
->* Experience Manager no permite usar `subassets` palabras como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subrecursos para los recursos compuestos.
+>* No se puede compartir una [!DNL Assets] carpeta del tipo `sling:OrderedFolder` al compartirla con Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
+>* [!DNL Experience Manager] no permite usar `subassets` palabra como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subrecursos para los recursos compuestos.
 
 
 1. Vaya al lugar de la carpeta de recursos digitales en el que desea crear una nueva carpeta. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccione **[!UICONTROL Nueva carpeta]**.
@@ -41,7 +43,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-Puede cargar varios tipos de recursos (como imágenes, archivos PDF, archivos RAW, etc.) desde la carpeta local o desde una unidad de red a Recursos AEM.
+Puede cargar varios tipos de recursos (como imágenes, archivos PDF, archivos RAW, etc.) desde la carpeta local o desde una unidad de red a [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -51,13 +53,13 @@ Puede elegir cargar recursos en carpetas con o sin un perfil de procesamiento as
 
 Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **de** procesamiento. Consulte Perfiles [de procesamiento](/help/assets/processing-profiles.md).
 
-Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/assets-formats.md) compatible con Recursos AEM.
+Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/assets-formats.md) que [!DNL Experience Manager Assets] lo admita.
 
-1. En la interfaz de usuario de Recursos, navegue hasta la ubicación en la que desee agregar recursos digitales.
+1. En la interfaz de usuario, navegue hasta la ubicación en la que desee agregar recursos digitales. [!DNL Assets]
 1. Para cargar los recursos, realice una de las siguientes acciones:
 
    * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
-   * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario de Recursos. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+   * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario [!DNL Assets] . No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
    ![Opción Crear para cargar recursos](assets/create-options.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
@@ -76,11 +78,11 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    ![Reanudar la carga de recursos en pausa mediante el icono Reproducir](assets/chlimage_1-6.png)
 
-   Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, AEM Assets elimina la parte parcialmente cargada del recurso.
+   Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 
    La capacidad de reanudar la carga resulta especialmente útil en situaciones de bajo ancho de banda y problemas de red, donde la carga de un recurso de gran tamaño tarda mucho tiempo. Puede pausar la operación de carga y continuar más tarde cuando mejore la situación. Cuando se reanuda, se cargan inicios desde el punto en el que se detuvo.
 
-   Durante la operación de carga, AEM guarda las partes del recurso que se cargan como fragmentos de datos en el repositorio de CRX. Una vez completada la carga, AEM consolida estos fragmentos en un solo bloque de datos en el repositorio.
+   Durante la operación de carga, [!DNL Experience Manager] guarda las partes del recurso que se cargan como fragmentos de datos en el repositorio de CRX. Cuando se completa la carga, [!DNL Experience Manager] consolida estos fragmentos en un solo bloque de datos en el repositorio.
 
    Para configurar la tarea de limpieza para los trabajos de carga de fragmentos no finalizados, vaya a `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
@@ -96,7 +98,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
    >
    >Si Asset Insights está habilitado para rastrear impresiones/clics con Adobe Analytics, el ID de recurso regenerado invalida los datos capturados para el recurso en Analytics.
 
-   Si el recurso cargado existe en Recursos AEM, el cuadro de diálogo **[!UICONTROL Duplicados detectados]** advierte que está intentando cargar un recurso duplicado. El cuadro de diálogo solo aparece si el valor de suma de `SHA 1` comprobación del binario del recurso existente coincide con el valor de suma de comprobación del recurso que se carga. En este caso, los nombres de los activos no son importantes.
+   Si el recurso cargado existe en [!DNL Assets], el cuadro de diálogo **[!UICONTROL Duplicados detectados]** advierte que está intentando cargar un recurso de duplicado. El cuadro de diálogo solo aparece si el valor de suma de `SHA 1` comprobación del binario del recurso existente coincide con el valor de suma de comprobación del recurso que se carga. En este caso, los nombres de los activos no son importantes.
 
    >[!NOTE]
    >
@@ -104,9 +106,9 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    ![Cuadro de diálogo Recurso Duplicado detectado](assets/chlimage_1-8.png)
 
-   Para conservar el recurso de duplicado en Recursos AEM, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
+   Para conservar el recurso de duplicado en [!DNL Assets], toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
 
-   Recursos AEM evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, Recursos AEM muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la carga con un nombre permitido.
+   [!DNL Experience Manager Assets] evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la carga con un nombre permitido.
 
    Para adaptarse a las convenciones de nombres de archivo específicas de su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que cargue.
 
@@ -118,17 +120,17 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    ![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/chlimage_1-10.png)
 
-   Además, la interfaz de usuario de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero.
+   Además, la interfaz de usuario muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado en primer lugar. [!DNL Assets]
 
-   Si cancela la operación de carga antes de que se carguen los archivos, Recursos AEM deja de cargar el archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
+   Si cancela la operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
 
-   El cuadro de diálogo de progreso de carga en Recursos AEM muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
+   El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
 
 ### Cargas serie {#serialuploads}
 
-La carga masiva de numerosos recursos consume importantes recursos de E/S, lo que puede afectar negativamente al rendimiento de la instancia de Recursos AEM. En particular, si tiene una conexión a Internet lenta, el tiempo para cargar aumenta drásticamente debido a un pico en la E/S de disco. Además, el navegador web puede introducir restricciones adicionales en el número de solicitudes POST que AEM Assets puede gestionar para cargas de recursos simultáneas. Como resultado, la operación de carga falla o finaliza antes de tiempo. En otras palabras, los recursos de AEM pueden perder algunos archivos al ingerirlos o no realizar la ingesta de ningún archivo.
+La carga masiva de numerosos recursos consume importantes recursos de E/S, lo que puede afectar negativamente al rendimiento de la [!DNL Assets] instancia. En particular, si tiene una conexión a Internet lenta, el tiempo para cargar aumenta drásticamente debido a un pico en la E/S de disco. Además, el explorador Web puede introducir restricciones adicionales en el número de solicitudes POST que [!DNL Assets] puede gestionar para cargas de recursos simultáneas. Como resultado, la operación de carga falla o finaliza antes de tiempo. En otras palabras, [!DNL Experience Manager Assets] puede que se pierdan algunos archivos al ingerir un montón de archivos o que no se ingrese ningún archivo.
 
-Para superar esta situación, AEM Assets ingiere un recurso a la vez (carga en serie) durante una operación de carga masiva, en lugar de ingerir todos los recursos simultáneamente.
+Para superar esta situación, [!DNL Assets] ingesta un recurso a la vez (carga en serie) durante una operación de carga masiva, en lugar de ingerir todos los recursos al mismo tiempo.
 
 La carga en serie de recursos está activada de forma predeterminada. Para desactivar la función y permitir la carga simultánea, superponga el `fileupload` nodo en Crx-de y defina el valor de la `parallelUploads` propiedad en `true`.
 
@@ -142,9 +144,9 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->Para cargar recursos mediante FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las instancias de creación de AEM. Póngase en contacto con el Servicio de atención al cliente [de](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
+>Para cargar recursos mediante FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las instancias de [!DNL Experience Manager] creación. Póngase en contacto con el Servicio de atención al cliente [de](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
 >
->Si utiliza FTP para cargar recursos, se ignora la configuración de carga especificada en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
+>Si utiliza FTP para cargar recursos, se omitirán los ajustes de carga especificados en [!DNL Experience Manager] . En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
 **Para cargar recursos mediante FTP**
 
@@ -159,12 +161,12 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
    >[!NOTE]
    >
-   >Al cargar recursos a través de FTP, las opciones de trabajo de carga definidas en Dynamic Media Classic (S7) prevalecen sobre los parámetros de procesamiento de recursos establecidos en AEM.
+   >Al cargar recursos a través de FTP, las opciones de trabajo de carga definidas en Dynamic Media Classic (S7) prevalecen sobre los parámetros de procesamiento de recursos establecidos en [!DNL Experience Manager].
 
 1. En la esquina inferior derecha del cuadro de diálogo Opciones de trabajo de carga, toque **[!UICONTROL Guardar]**.
 1. En la esquina inferior derecha de la página Cargar, toque **[!UICONTROL Enviar carga]**.
 
-   Para vista del progreso de la carga, en la barra de navegación global, toque **[!UICONTROL Trabajos]**. La página Trabajos muestra el progreso de la carga. Puede continuar trabajando en AEM y volver a la página Trabajos de Dynamic Media Classic en cualquier momento para revisar un trabajo en curso.
+   Para vista del progreso de la carga, en la barra de navegación global, toque **[!UICONTROL Trabajos]**. La página Trabajos muestra el progreso de la carga. Puede continuar trabajando en la página Trabajos de Dynamic Media Classic [!DNL Experience Manager] y volver a ella en cualquier momento para revisar un trabajo en curso.
 Para cancelar un trabajo de carga en curso, toque **[!UICONTROL Cancelar]** junto al tiempo de duración.
 
 #### Opciones de trabajo de carga {#upload-job-options}
@@ -177,13 +179,13 @@ Para cancelar un trabajo de carga en curso, toque **[!UICONTROL Cancelar]** junt
 | Descomprimir archivos zip o Tar durante la carga |  |  |
 | Opciones de trabajo |  | Toque o haga clic en Opciones **[!UICONTROL de]** trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Toque el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
-|  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas que cargue se introducirán automáticamente en Recursos AEM. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas cargadas se introducen automáticamente en [!DNL Experience Manager Assets]. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
-|  | Opciones de Photoshop | Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las capas, especificar el nombre de las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> Tenga en cuenta que las plantillas no son compatibles con AEM.<br> Consulte [Configuración de las opciones](#setting-photoshop-upload-options)de carga de Photoshop. |
-|  | Opciones de PDF | Puede rasterizar los archivos, extraer palabras de búsqueda y vínculos, generar automáticamente un catálogo electrónico, definir la resolución y elegir un espacio de color.<br> Tenga en cuenta que los catálogos electrónicos no son compatibles con AEM. <br> Consulte [Configuración de opciones](#setting-pdf-upload-options)de carga de PDF. |
+|  | Opciones de Photoshop | Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las capas, especificar el nombre de las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> Tenga en cuenta que las plantillas no son compatibles con [!DNL Experience Manager].<br> Consulte [Configuración de las opciones](#setting-photoshop-upload-options)de carga de Photoshop. |
+|  | Opciones de PDF | Puede rasterizar los archivos, extraer palabras de búsqueda y vínculos, generar automáticamente un catálogo electrónico, definir la resolución y elegir un espacio de color.<br> Tenga en cuenta que los catálogos electrónicos no son compatibles con [!DNL Experience Manager]. <br> Consulte [Configuración de opciones](#setting-pdf-upload-options)de carga de PDF. |
 |  | Opciones de Illustrator | Puede rasterizar archivos de Adobe Illustrator®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
 |  | Opciones de eVideo | Puede transcodificar un archivo de vídeo seleccionando un ajuste preestablecido de vídeo.<br> Consulte [Configuración de las opciones](#setting-evideo-upload-options)de carga de eVideo. |
 |  | Valores preestablecidos de conjunto de lotes | Para crear un conjunto de imágenes o un conjunto de giros a partir de los archivos cargados, haga clic en la columna Activo del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido. Los ajustes preestablecidos se crean en la página Ajustes de aplicación/Valores preestablecidos de conjunto por lotes de Dynamic Media Classic.<br> Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de giros para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.<br> Consulte [Configuración de ajustes preestablecidos de conjunto por lotes al cargar](#setting-batch-set-presets-at-upload). |
@@ -239,7 +241,7 @@ Utilice las opciones [!UICONTROL de recorte] y de Perfil [!UICONTROL de color de
 
 >[!NOTE]
 >
->Las plantillas no son compatibles con AEM.
+>Las plantillas no son compatibles con [!DNL Experience Manager].
 
 | Opción | Subopción | Descripción |
 |---|---|---|
@@ -259,7 +261,7 @@ Al cargar un archivo PDF, puede darle formato de varias formas. Puede recortar s
 
 >[!NOTE]
 >
->Los catálogos electrónicos no son compatibles con AEM.
+>Los catálogos electrónicos no son compatibles con [!DNL Experience Manager].
 
 Elija entre las siguientes opciones:
 
@@ -296,19 +298,19 @@ Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para g
 
 ### Cargas de flujo continuo {#streamed-uploads}
 
-Si carga muchos recursos en AEM, las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede provocar que se agote el tiempo de espera de alguna tarea de carga. Recursos AEM admite la carga de recursos por flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarla en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está activada de forma predeterminada en Recursos AEM.
+Si carga muchos recursos en [!DNL Experience Manager], las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede provocar que se agote el tiempo de espera de alguna tarea de carga. [!DNL Experience Manager Assets] admite la carga de recursos en flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarla en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está habilitada de forma predeterminada en [!DNL Assets].
 
 >[!NOTE]
 >
->La carga de flujo está deshabilitada para AEM que se ejecuta en el servidor JEE con versión servlet-api inferior a 3.1.
+>La carga de flujo está deshabilitada para [!DNL Experience Manager] ejecutarse en el servidor JEE con versión servlet-api inferior a 3.1.
 
 ### Extraer archivo ZIP que contiene recursos {#extractzip}
 
-Puede cargar archivos ZIP como cualquier otro recurso admitido. Las mismas reglas de nombre de archivo se aplican a los archivos ZIP. AEM le permite extraer un archivo ZIP en una ubicación DAM. Si los archivos de archivo no contienen ZIP como extensión, habilite la detección de tipo de archivo con contenido.
+Puede cargar archivos ZIP como cualquier otro recurso admitido. Las mismas reglas de nombre de archivo se aplican a los archivos ZIP. [!DNL Experience Manager] le permite extraer un archivo ZIP en una ubicación DAM. Si los archivos de archivo no contienen ZIP como extensión, habilite la detección de tipo de archivo con contenido.
 
 Seleccione un archivo ZIP a la vez, haga clic en **[!UICONTROL Extraer archivo]** y seleccione una carpeta de destino. Seleccione una opción para controlar los conflictos, si los hay. Si los recursos del archivo ZIP ya existen en la carpeta de destino, puede seleccionar una de estas opciones: omita la extracción, reemplace los archivos existentes, mantenga ambos recursos cambiando el nombre o cree una nueva versión.
 
-Una vez finalizada la extracción, AEM le notifica en el área de notificación. Mientras AEM extrae el ZIP, puede volver a su trabajo sin interrumpir la extracción.
+Una vez finalizada la extracción, [!DNL Experience Manager] se lo notifica en el área de notificación. Mientras [!DNL Experience Manager] extrae el ZIP, puede volver a su trabajo sin interrumpir la extracción.
 
 ![Notificación de la extracción del archivo ZIP](assets/Zip-extraction-notification.png)
 
@@ -323,7 +325,7 @@ Algunas limitaciones de la función son:
 
 Para realizar la previsualización de un recurso, siga estos pasos.
 
-1. En la interfaz de usuario de Recursos, navegue a la ubicación del recurso que desee previsualización.
+1. Desde la interfaz de usuario, desplácese hasta la ubicación del recurso cuya previsualización desee realizar. [!DNL Assets]
 1. Toque el recurso que desee para abrirlo.
 
 1. En el modo de previsualización, las opciones de zoom están disponibles para los tipos [de imagen](/help/assets/assets-formats.md#supported-raster-image-formats) admitidos (con edición interactiva).
@@ -338,7 +340,7 @@ Para realizar la previsualización de un recurso, siga estos pasos.
 
 Para previsualización de recursos mediante el teclado, siga estos pasos:
 
-1. Desde la interfaz de usuario de Recursos, desplácese hasta el recurso que desee utilizando las teclas `Tab` de flecha y flecha.
+1. Desde la interfaz de usuario, desplácese hasta el recurso deseado mediante las teclas de dirección [!DNL Assets] `Tab` y flecha.
 
 1. Pulse `Enter` la tecla del recurso deseado para abrirlo. Puede acercar los recursos al modo de previsualización.
 
@@ -377,13 +379,13 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
    *Figura: Programar activación de recursos.*
 
-1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo Tiempo de **[!UICONTROL desactivación]** . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web de Recursos ni a través de la API HTTP.
+1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo Tiempo de **[!UICONTROL desactivación]** . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz [!DNL Assets] web ni de la API HTTP.
 
    ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de inactividad para agregar fecha y hora a la activación de recursos](assets/schedule-deactivation.png)
 
    *Figura: Programe la desactivación de recursos.*
 
-1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en AEM. YouTube requiere que las etiquetas se publiquen. Consulte [Publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
+1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en [!DNL Experience Manager]. [!DNL YouTube] requiere que las etiquetas se publiquen. Consulte [Publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
@@ -404,8 +406,8 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
    * Soluciones creativas en las que el recurso se ha utilizado recientemente
    Para obtener más información, consulte Perspectivas [de recursos](/help/assets/touch-ui-asset-insights.md).
 
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**.
-1. Vaya a la interfaz de usuario de Recursos. Las propiedades de metadatos editadas, como título, descripción, clasificaciones, etc., se muestran en la tarjeta del recurso en la vista de tarjetas y en las columnas relevantes de la vista de Lista.
+1. Click **[!UICONTROL Save &amp; Close]**.
+1. Vaya a la interfaz de [!DNL Assets] usuario. Las propiedades de metadatos editadas, como título, descripción, clasificaciones, etc., se muestran en la tarjeta del recurso en la vista de tarjetas y en las columnas relevantes de la vista de Lista.
 
 ## Copiar recursos {#copying-assets}
 
@@ -419,7 +421,7 @@ Algunos atributos que son exclusivos de una copia concreta de un activo no se ar
 
 El resto de las propiedades y la información de metadatos se conservan. No se crea una copia parcial al copiar un recurso.
 
-1. En la interfaz de usuario de Recursos, seleccione uno o varios recursos y, a continuación, toque o haga clic en el icono **[!UICONTROL Copiar]** de la barra de herramientas. También puede seleccionar la acción rápida **[!UICONTROL Copiar]** en la tarjeta de recursos.
+1. En [!DNL Assets] la interfaz, seleccione uno o varios recursos y toque o haga clic en el icono **[!UICONTROL Copiar]** de la barra de herramientas. También puede seleccionar la acción rápida **[!UICONTROL Copiar]** en la tarjeta de recursos.
    ![Icono de Copiar en la barra de herramientas de la interfaz de usuario de los recursos](assets/copy_icon.png)
 
    >[!NOTE]
@@ -430,11 +432,12 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    >[!NOTE]
    >
-   >Si copia un recurso en la misma ubicación, AEM genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso con título `Square`, AEM genera automáticamente el título de su copia como `Square1`.
+   >Si copia un recurso en la misma ubicación, [!DNL Experience Manager] genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso con título `Square`, [!DNL Experience Manager] genera automáticamente el título de su copia como `Square1`.
 
 1. Toque o haga clic en el icono **[!UICONTROL Pegar]** recurso de la barra de herramientas.
 
-   ![Icono de Pegar en los recursos](assets/chlimage_1-14.png)La barra de herramientas de la interfaz de usuario se copia en esta ubicación.
+   ![Icono de pegado en la barra de herramientas de la interfaz de usuario de los recursos](assets/chlimage_1-14.png)
+   [!DNL Assets] a continuación, se copian en esta ubicación.
 
    >[!NOTE]
    >
@@ -447,7 +450,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 1. Seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Mover]** de la barra de herramientas.
    ![Icono de movimiento en la barra de herramientas de la interfaz de usuario del recurso](assets/move_icon.png)
 
-1. En el asistente Mover recursos, realice una de las siguientes acciones:
+1. En el asistente para [!UICONTROL mover recursos] , realice una de las siguientes acciones:
 
    * Especifique el nombre del recurso después de moverlo. A continuación, toque o haga clic en **[!UICONTROL Siguiente]** para continuar.
 
@@ -494,7 +497,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    >[!NOTE]
    >
-   >De forma predeterminada, Recursos AEM no muestra la representación original del recurso en el modo de previsualización. Si es un administrador, puede utilizar superposiciones para configurar Recursos AEM para que muestren las representaciones originales en el modo de previsualización.
+   >De forma predeterminada, [!DNL Assets] no muestra la representación original del recurso en el modo de previsualización. Si es administrador, puede utilizar las superposiciones para configurar [!DNL Assets] que muestren las representaciones originales en el modo de previsualización.
 
 1. Seleccione una representación para vista o eliminarla.
 
@@ -514,7 +517,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >
    >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Las opciones, como el icono Cargar representación, no se muestran. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
 
-   Puede configurar las dimensiones de la representación que desee mostrar en la página de detalles de un recurso de vídeo o imagen. En función de las dimensiones que especifique, Recursos AEM muestra la representación con las dimensiones exactas o más cercanas.
+   Puede configurar las dimensiones de la representación que desee mostrar en la página de detalles de un recurso de vídeo o imagen. En función de las dimensiones que especifique, [!DNL Assets] muestra la representación con las dimensiones exactas o más cercanas.
 
    Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el `renditionpicker` nodo (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) y configure el valor de la propiedad de anchura. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad `preferOriginal` asigna preferencia al original si el tamaño de la representación coincidente es mayor que el del original.
 
@@ -559,7 +562,7 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
 ## Descargar recursos {#downloading-assets}
 
-See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
+Consulte [Descargar recursos de Experience Manager](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
@@ -580,15 +583,15 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 >[!CAUTION]
 >
->Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+>Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
 
 ## Cancelar la publicación de recursos {#unpublishing-assets}
 
 1. Vaya a la ubicación de la carpeta de recursos o recursos que desea eliminar del entorno de publicación (cancelar la publicación).
 
-1. Select the asset/folder to unpublish, and tap/click the **[!UICONTROL Manage Publication]** icon from the toolbar.
+1. Seleccione el recurso o la carpeta que desea cancelar la publicación y toque o haga clic en el icono **[!UICONTROL Administrar publicación]** de la barra de herramientas.
 
-   ![Manage Publication icon](assets/manage_publication.png)
+   ![Icono Administrar publicación](assets/manage_publication.png)
 
 1. Seleccione la acción **[!UICONTROL Cancelar publicación]** en la lista.
 
@@ -600,38 +603,38 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. En el cuadro de diálogo de confirmación, toque o haga clic en:
 
    * **[!UICONTROL Cancelar]** para detener la acción
-   * **[!UICONTROL Unpublish]** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
+   * **[!UICONTROL Cancele la publicación]** para confirmar que los recursos se han cancelado de publicar (ya no están disponibles en el entorno de publicación) en la fecha especificada.
    >[!NOTE]
    >
    >Al cancelar la publicación de un recurso complejo, solo debe cancelar la publicación del recurso. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
 
 ## Grupo de usuarios cerrado {#closed-user-group}
 
-A closed user group (CUG) is used to limit access to specific asset folders published from AEM. If you create a CUG for a folder, access to the folder (including folder assets and subfolders) is restricted to assigned members or groups only. To access the folder, they must log in using their security credentials.
+Un grupo de usuarios cerrado (CUG) se utiliza para limitar el acceso a carpetas de recursos específicas publicadas desde [!DNL Experience Manager]. Si crea un CUG para una carpeta, el acceso a la carpeta (incluidos los recursos de carpetas y las subcarpetas) se restringirá únicamente a los miembros o grupos asignados. Para acceder a la carpeta, deben iniciar sesión con sus credenciales de seguridad.
 
 Los CUG son una forma adicional de restringir el acceso a sus recursos. También puede configurar una página de inicio de sesión para la carpeta.
 
-1. Seleccione una carpeta en la interfaz de usuario de Recursos y toque o haga clic en el icono Propiedades en la barra de herramientas para mostrar la página de propiedades.
+1. Seleccione una carpeta de la [!DNL Assets] interfaz y toque o haga clic en el icono [!UICONTROL Propiedades] de la barra de herramientas para mostrar la página de propiedades.
 1. En la ficha **[!UICONTROL Permisos]** , agregue miembros o grupos en Grupo **[!UICONTROL de usuarios]** cerrado.
 
    ![Añadir usuario en un grupo de usuarios cerrado](assets/add_user.png)
 
-1. Para mostrar una pantalla de inicio de sesión cuando los usuarios acceden a la carpeta, seleccione la opción **[!UICONTROL Activar]** . A continuación, seleccione la ruta a una página de inicio de sesión en AEM y guarde los cambios.
+1. Para mostrar una pantalla de inicio de sesión cuando los usuarios acceden a la carpeta, seleccione la opción **[!UICONTROL Activar]** . A continuación, seleccione la ruta a una página de inicio de sesión en [!DNL Experience Manager]y guarde los cambios.
 
    ![Habilitar y seleccionar la página de inicio de sesión para que se muestre cuando el usuario acceda a la carpeta](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Si no especifica la ruta a una página de inicio de sesión, AEM muestra la página de inicio de sesión predeterminada en la instancia de publicación.
+   >Si no especifica la ruta a una página de inicio de sesión, [!DNL Experience Manager] muestra la página de inicio de sesión predeterminada en la instancia de publicación.
 
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Aparece una pantalla de inicio de sesión.
-1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM le autentique.
+1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de [!DNL Experience Manager] autenticarle.
 
 ## Buscar recursos {#assetsearch}
 
 La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM.
 
-Para realizar búsquedas simples, avanzadas y personalizadas con el fin de descubrir y utilizar los recursos más adecuados, consulte [Buscar recursos en AEM](search-assets.md).
+Para realizar búsquedas simples, avanzadas y personalizadas con el fin de descubrir y utilizar los recursos más adecuados, consulte [Buscar recursos en Experience Manager](search-assets.md).
 
 ## Acciones rápidas {#quick-actions}
 
@@ -642,11 +645,11 @@ Los iconos de acción rápida están disponibles para un único recurso a la vez
 
 ### Navegación y selección de recursos {#navigating-and-selecting-assets}
 
-You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option.
+Puede realizar la vista, navegar y seleccionar recursos con cualquiera de las vistas disponibles (Tarjeta, Columna y Lista) mediante la opción **[!UICONTROL Seleccionar]** .
 
 En la vista de columnas y vistas de lista, aparece la opción **[!UICONTROL Seleccionar]** cuando pasa el puntero sobre la miniatura del recurso.
 
-![Select assets in list view](assets/select_quick_in_listview.png)
+![Seleccionar recursos en la vista de lista](assets/select_quick_in_listview.png)
 
 ![Seleccionar recursos en la vista de columnas](assets/select_quick_in_columnview.png)
 
@@ -654,13 +657,13 @@ En la vista de tarjetas, la opción **[!UICONTROL Seleccionar]** se muestra como
 
 ![Seleccione una acción rápida en la vista de la tarjeta](assets/select_quick_action.png)
 
-Al examinar una carpeta o una colección en la interfaz de usuario de Recursos en un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Initially, only 100 assets are loaded in card view and 200 are loaded in list view. Se cargan más recursos en vista a medida que se desplaza por la página de resultados de la búsqueda. The [!UICONTROL Select All] option selects only the loaded assets.
+Al examinar una carpeta o una colección en la interfaz de usuario de un navegador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!DNL Assets] Seleccionar todo  de la esquina superior derecha. Inicialmente, solo se cargan 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos en vista a medida que se desplaza por la página de resultados de la búsqueda. La opción [!UICONTROL Seleccionar todo] selecciona solo los recursos cargados.
 
 Para obtener más información, consulte [vista y selección de recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Edición de imágenes {#editing-images}
 
-Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar pequeños trabajos de edición en recursos de imagen. You can crop, rotate, flip, and perform other editing jobs on images. También puede añadir mapas de imagen a los recursos.
+Las herramientas de edición de la [!DNL Assets] interfaz le permiten realizar pequeños trabajos de edición en recursos de imagen. Puede recortar, rotar, voltear y realizar otros trabajos de edición en imágenes. También puede añadir mapas de imagen a los recursos.
 
 >[!NOTE]
 >
@@ -673,7 +676,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
    * En la página de recursos, toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
    ![Icono Editar en la barra de herramientas](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. Para recortar la imagen, toque o haga clic en el icono **Recortar** .
 
    ![Icono de recorte](assets/chlimage_1-22.png)
 
@@ -681,7 +684,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
 
    ![Opciones de recorte](/help/assets/assets/chlimage_1-23.png)
 
-1. Select the area to be cropped, and resize or reposition it on the image.
+1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
 1. Utilice el icono **Finalizar** (esquina superior derecha) para recortar la imagen. Al hacer clic en el icono **Finalizar** también se desencadena la regeneración de las representaciones.
 
    ![Icono Finalizar](assets/chlimage_1-24.png)
@@ -692,9 +695,9 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
 
 1. Toque o haga clic en el icono Girar correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
 
-   ![Clockwise and anti-clockwise rotate icons](assets/chlimage_1-26.png)
+   ![Iconos de rotación hacia la derecha y hacia la izquierda](assets/chlimage_1-26.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Toque o haga clic en el icono Voltear correspondiente para voltear la imagen horizontal o verticalmente.
 
    ![Iconos para voltear la imagen horizontal o verticalmente](assets/chlimage_1-27.png)
 
@@ -732,7 +735,7 @@ La línea de tiempo permite la vista de varios eventos para un elemento seleccio
 
 Las anotaciones son comentarios o notas explicativas añadidas a imágenes o vídeos. Las anotaciones proporcionan a los especialistas en marketing la posibilidad de colaborar y dejar comentarios sobre los recursos.
 
-Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con AEM Assets dependen del navegador.
+Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo que [!DNL Assets] admiten dependen del explorador.
 
 >[!NOTE]
 >
@@ -766,7 +769,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >Puede agregar varias anotaciones antes de guardarlas.
 
 1. Toque o haga clic en **[!UICONTROL Cerrar]** para salir del modo de anotación.
-1. Para vista de la notificación, inicie sesión en Recursos AEM con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
+1. Para vista de la notificación, inicie sesión [!DNL Assets] con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
 
    >[!NOTE]
    >
@@ -810,7 +813,7 @@ También puede imprimir solo las anotaciones o el estado de la revisión.
 
 Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. El icono **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene al menos una anotación o estado de revisión asignado.
 
-1. En la interfaz de usuario de Recursos, abra la página de previsualización de un recurso.
+1. Desde la [!DNL Assets] interfaz, abra la página de previsualización de un recurso.
 1. Realice una de las acciones siguientes:
 
    * Para imprimir todas las anotaciones y el estado de la revisión, omita el paso 3 y vaya directamente al paso 4.
@@ -856,12 +859,12 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
-Si un recurso incluye anotaciones en idiomas extranjeros (especialmente en idiomas no latinos), primero debe configurar el servicio CQ-DAM-Handler-Gibson Font Manager en el servidor AEM para poder imprimir estas anotaciones. Al configurar el servicio CQ-DAM-Handler-Gibson Font Manager, proporcione la ruta donde se encuentran las fuentes para los idiomas deseados.
+Si un recurso incluye anotaciones en idiomas extranjeros (especialmente en idiomas no latinos), primero debe configurar el servicio CQ-DAM-Handler-Gibson Font Manager en el [!DNL Experience Manager] servidor para poder imprimir estas anotaciones. Al configurar el servicio CQ-DAM-Handler-Gibson Font Manager, proporcione la ruta donde se encuentran las fuentes para los idiomas deseados.
 
 1. Abra la página de configuración del servicio CQ-DAM-Handler-Gibson Font Manager desde la dirección URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Para configurar el servicio CQ-DAM-Handler-Gibson Font Manager, realice una de las siguientes acciones:
 
-   * En la opción de directorio Fuentes del sistema, especifique la ruta completa al directorio de fuentes del sistema. Por ejemplo, si es un usuario de Mac, puede especificar la ruta como */Biblioteca/Fuentes* en la opción de directorio Fuentes del sistema. AEM obtiene las fuentes de este directorio.
+   * En la opción de directorio Fuentes del sistema, especifique la ruta completa al directorio de fuentes del sistema. Por ejemplo, si es un usuario de Mac, puede especificar la ruta como */Biblioteca/Fuentes* en la opción de directorio Fuentes del sistema. [!DNL Experience Manager] captura las fuentes de este directorio.
    * Cree un directorio denominado `fonts` dentro de la ``crx-quickstart`` carpeta. CQ-DAM-Handler-Gibson Font Manager Service obtiene automáticamente las fuentes en la ubicación `crx-quickstart/fonts`. Puede anular esta ruta predeterminada desde la opción de directorio de fuentes de Adobe Server.
 
    * Cree una nueva carpeta para las fuentes del sistema y almacene las fuentes deseadas en la carpeta. A continuación, especifique la ruta completa de esa carpeta en la opción de directorio Fuentes del cliente.
@@ -871,9 +874,9 @@ Si un recurso incluye anotaciones en idiomas extranjeros (especialmente en idiom
 
    * Incluya la cadena `<font_family_name_of_custom_font, sans-serif>` dentro de la opción font-family. Por ejemplo, si desea imprimir anotaciones en CJK (chino, japonés y coreano), incluya la cadena `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` en la opción font-family. Si desea imprimir anotaciones en hindi, descargue la fuente adecuada y configure la familia de fuentes como Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Reinicie la instancia de AEM.
+1. Reinicie la [!DNL Experience Manager] instancia.
 
-A continuación se muestra un ejemplo de cómo configurar AEM para que imprima anotaciones en CJK (chino, japonés y coreano):
+A continuación se muestra un ejemplo de cómo se puede configurar [!DNL Experience Manager] para imprimir anotaciones en CJK (chino, japonés y coreano):
 
 1. Descargue las fuentes CJK de Google Noto de los siguientes vínculos y guárdelas en el directorio de fuentes configurado en el servicio Font Manager.
 
@@ -886,14 +889,14 @@ A continuación se muestra un ejemplo de cómo configurar AEM para que imprima a
 
 ## Crear, administrar, previsualización y revertir versiones de recursos {#asset-versioning}
 
-Al generar una versión se crea una instantánea de activos digitales en un punto específico en el tiempo. La creación de versiones ayuda a restaurar los recursos a un estado anterior posteriormente. Por ejemplo, si desea deshacer un cambio realizado en un recurso, restaure la versión sin editar del recurso. En Experience Manager, puede crear una versión, vista de la revisión actual, vista paralela de diferencias entre dos versiones de imágenes y restauración de un recurso a su versión anterior.
+Al generar una versión se crea una instantánea de activos digitales en un punto específico en el tiempo. La creación de versiones ayuda a restaurar los recursos a un estado anterior posteriormente. Por ejemplo, si desea deshacer un cambio realizado en un recurso, restaure la versión sin editar del recurso. En [!DNL Experience Manager], puede crear una versión, vista de la revisión actual, vista de diferencias en paralelo entre dos versiones de imágenes y restauración de un recurso a su versión anterior.
 
-Puede crear versiones en Experience Manager en los siguientes casos:
+Puede crear versiones en [!DNL Experience Manager] los siguientes casos:
 
 * Cargue un recurso con el mismo nombre de archivo que existe en la misma ubicación. Puede ser un recurso nuevo o una versión modificada del mismo recurso.
-* Edite una imagen en Experience Manager y guarde los cambios.
+* Edite una imagen en [!DNL Experience Manager] y guarde los cambios.
 * Edite los metadatos de un recurso.
-* Utilice la aplicación de escritorio de AEM para retirar un recurso existente, editarlo y [cargar los cambios](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Utilice [!DNL Experience Manager] la aplicación de escritorio para retirar un recurso existente, editarlo y [cargar los cambios](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 También puede activar el control automático de versiones mediante un flujo de trabajo. Al crear una versión para un recurso, los metadatos y las representaciones se guardan junto con la versión. Las representaciones son alternativas representadas de las mismas imágenes, por ejemplo, una representación PNG de un archivo JPEG cargado.
 
