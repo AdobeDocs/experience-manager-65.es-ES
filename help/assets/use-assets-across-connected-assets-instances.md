@@ -3,7 +3,7 @@ title: Utilice Recursos conectados para compartir recursos DAM en el flujo de tr
 description: Utilice los recursos disponibles en una implementación remota de [!DNL Adobe Experience Manager Assets] al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 2cdcea028814b40fb178e63f583939df27a46cad
 
 ---
 
@@ -46,12 +46,12 @@ A continuación se describen las distintas funciones que se usan para configurar
 
 | Función | Ámbito | Grupo de usuarios | Nombre de usuario en la introducción | Requisito |
 |---|---|---|---|---|
-| [!DNL Sites] administrador | Local | Administrador de Experience Manager | `admin` | Configure Experience Manager y configure la integración con la implementación remota [!DNL Assets] . |
-| Usuario DAM | Local | Autor | `ksaner` | Se utiliza para ver y duplicar los recursos recuperados en `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | Author (with read access on the remote DAM and author access on local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Los autores buscan y exploran recursos en el DAM remoto mediante el buscador de contenido y utilizando las imágenes necesarias en las páginas web locales. Se utilizan las credenciales del usuario de DAM `ksaner`. |
-| [!DNL Assets] administrador | Remoto | Administrador de Experience Manager | `admin` en Experience Manager remoto | Configurar el intercambio de recursos de origen cruzado (CORS). |
-| Usuario DAM | Remoto | Autor | `ksaner` en Experience Manager remoto | Función de autor en la implementación remota de Experience Manager. Buscar y examinar recursos en recursos conectados con el buscador de contenido. |
-| Distribuidor DAM (usuario técnico) | Remoto | creadores de paquetes y autores de sitios | `ksaner` en Experience Manager remoto | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Esta función no es la misma que las dos funciones `ksaner` anteriores y pertenece a un grupo de usuarios diferente. |
+| [!DNL Sites] administrador | Local | Experience Manager `administrators` | `admin` | Configure Experience Manager y configure la integración con la implementación remota [!DNL Assets] . |
+| Usuario DAM | Local | `Authors` | `ksaner` | Se utiliza para ver y duplicar los recursos recuperados en `/content/DAM/connectedassets/`. |
+| [!DNL Sites] author | Local | `Authors` (con acceso de lectura en el DAM remoto y acceso de autor en local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Los autores buscan y exploran recursos en el DAM remoto mediante el buscador de contenido y utilizando las imágenes necesarias en las páginas web locales. Se utilizan las credenciales del usuario de DAM `ksaner`. |
+| [!DNL Assets] administrador | Remoto | Experience Manager `administrators` | `admin` en Experience Manager remoto | Configurar el intercambio de recursos de origen cruzado (CORS). |
+| Usuario DAM | Remoto | `Authors` | `ksaner` en Experience Manager remoto | Función de autor en la implementación remota de Experience Manager. Buscar y examinar recursos en recursos conectados con el buscador de contenido. |
+| Distribuidor DAM (usuario técnico) | Remoto | `Authors` | `ksaner` en Experience Manager remoto | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Esta función no es la misma que las dos funciones `ksaner` anteriores y pertenece a un grupo de usuarios diferente. |
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -151,7 +151,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
-## Restricciones        {#limitations}
+## Restricciones          {#limitations}
 
 **Permisos y administración de recursos**
 
