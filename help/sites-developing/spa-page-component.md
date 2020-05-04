@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -32,10 +32,10 @@ El componente de página de un SPA no proporciona los elementos HTML de sus comp
 
 La resolución y la administración del modelo de página se delegan en un [ módulo proporcionado `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) . La SPA debe interactuar con el `PageModelManager` módulo cuando se inicializa para recuperar el modelo de página inicial y registrarse para actualizaciones de modelo, que se producen principalmente cuando el autor edita la página a través del Editor de páginas. El proyecto SPA `PageModelManager` es accesible como paquete npm. Como intérprete entre AEM y la SPA, el objetivo `PageModelManager` es acompañar a la SPA.
 
-Para permitir la creación de la página, se debe agregar una biblioteca de cliente denominada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre el SPA y el editor de páginas. Si el componente de página SPA hereda del componente de página wcm/core de la página, entonces hay las siguientes opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
+Para permitir la creación de la página, se debe agregar una biblioteca de cliente denominada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre la SPA y el editor de páginas. Si el componente de página SPA hereda del componente de página wcm/core de la página, hay las siguientes opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
 
 * Si la plantilla es editable, agregue la categoría de biblioteca de cliente a la directiva de página.
-* Agregue la categoría de biblioteca de cliente mediante el uso `customfooterlibs.html` del componente de página.
+* Añada la categoría de la biblioteca del cliente mediante el uso `customfooterlibs.html` del componente de página.
 
 No olvide limitar la inclusión de la `cq.authoring.pagemodel.messaging` categoría al contexto del editor de páginas.
 
@@ -85,15 +85,21 @@ Las propiedades del recurso meta que describen el contenido de SPA:
 
 * `cq:pagemodel_router`:: Habilitar o deshabilitar el ` [ModelRouter](/help/sites-developing/spa-routing.md)` de la `PageModelManager` biblioteca
 
-* `cq:pagemodel_route_filters`:: Lista separada por comas o expresiones regulares para proporcionar rutas que ` [ModelRouter](/help/sites-developing/spa-routing.md)` deben ignorarse.
+* `cq:pagemodel_route_filters`:: lista separada por comas o expresiones regulares para proporcionar rutas que ` [ModelRouter](/help/sites-developing/spa-routing.md)` deben ignorarse.
+
+>[!CAUTION]
+>
+>Este documento utiliza la aplicación de Historial We.Retail únicamente para fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
+>
+>Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA. Todos los proyectos de SPA en AEM deberían basarse en el arquetipo de Maven para el kit de inicio de SPA.
 
 ## Sincronización de superposiciones del editor de páginas {#page-editor-overlay-synchronization}
 
-La sincronización de las superposiciones está garantizada por el mismo Observador de mutaciones proporcionado por la `cq.authoring.page` categoría.
+La sincronización de las superposiciones está garantizada por el mismo Observador de Mutación proporcionado por la `cq.authoring.page` categoría.
 
 ## Configuración de la estructura exportada de JSON del modelo Sling {#sling-model-json-exported-structure-configuration}
 
-Cuando las capacidades de enrutamiento están habilitadas, se supone que la exportación JSON del SPA contiene las diferentes rutas de la aplicación gracias a la exportación JSON del componente de navegación AEM. La salida JSON del componente de navegación AEM se puede configurar en la directiva de contenido de la página raíz del SPA mediante las dos propiedades siguientes:
+Cuando las funciones de enrutamiento están habilitadas, se supone que la exportación JSON del SPA contiene las distintas rutas de la aplicación gracias a la exportación JSON del componente de navegación de AEM. La salida JSON del componente de navegación AEM se puede configurar en la directiva de contenido de la página raíz del SPA mediante las dos propiedades siguientes:
 
 * `structureDepth`:: Número correspondiente a la profundidad del árbol exportado
 * `structurePatterns`:: Resto de la matriz de anexos correspondientes a la página que se va a exportar
