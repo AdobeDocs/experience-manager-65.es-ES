@@ -3,7 +3,7 @@ title: perfiles de metadatos para personalizar los requisitos de metadatos de lo
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ---
 
@@ -53,7 +53,6 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 ![chlimage_1-201](assets/chlimage_1-484.png)
 
 1. Toque o haga clic en **[!UICONTROL Finalizado]**. El Perfil Metadatos se agrega a la lista de perfiles en la página Perfiles **[!UICONTROL de]** metadatos.<br>
-
 
    ![perfil de metadatos agregado en la página Perfiles de metadatos](assets/MetadataProfiles-page.png)
 
@@ -128,13 +127,13 @@ Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma gl
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de metadatos existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
-**Para aplicar un perfil de metadatos de forma global, realice una de las siguientes acciones**
+Para aplicar un perfil de metadatos de forma global, siga estos pasos:
 
 * Vaya a `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y toque **[!UICONTROL Guardar]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Vaya a CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Añada la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` y toque **Guardar todo**.
+* En CRXDE Lite, navegue al nodo siguiente: `/content/dam/jcr:content`. Añada la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` y haga clic en **[!UICONTROL Guardar todo]**.
 
    ![chlimage_1-210](assets/chlimage_1-493.png)
 
@@ -157,6 +156,10 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 1. Toque el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de metadatos.
 1. En la carpeta, toque la marca de verificación para seleccionarla y, a continuación, **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+
+## Limitaciones y prácticas recomendadas {#limitations-best-practices-tips}
+
+* Es posible que haya perfiles de metadatos preexistentes desde entonces antes de actualizar a [!DNL Experience Manager] 6.5. Después de la actualización, si aplica este perfil en [!UICONTROL Propiedades] de carpeta en la ficha Perfiles  de metadatos, no se muestran los campos del formulario de metadatos. Sin embargo, si aplica un perfil de metadatos recién creado, los campos del formulario se muestran pero no están disponibles según lo esperado. No se pierde la funcionalidad pero si desea ver los campos del formulario (no disponibles), edite y guarde los perfiles de metadatos existentes.
 
 >[!MORELIKETHIS]
 >
