@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9f0eebfa0c5d2449dcc2977c7085b11a48a10eb9
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -176,7 +176,7 @@ Para ver un ejemplo simplista, consulte la aplicación [de Historial](https://gi
 
 >[!NOTE]
 >
->Todos los proyectos de SPA en AEM deben basarse en el [arquetipo Maven para el kit](https://github.com/adobe/aem-spa-project-archetype)de inicio de SPA.
+>Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA.
 
 ## Uso de Node.js {#using-node-js}
 
