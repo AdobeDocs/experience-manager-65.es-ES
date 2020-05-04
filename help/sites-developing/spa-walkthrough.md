@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -39,6 +39,12 @@ El tutorial se basa en la funcionalidad estándar de AEM y en la aplicación de 
 * [AEM versión 6.4 con Service Pack 2 o posterior
    ](/help/release-notes/sp-release-notes.md)
 * [Instale la aplicación de Historial We.Retail de muestra disponible en GitHub aquí.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
+>[!CAUTION]
+>
+>Este documento solo utiliza la aplicación [de Historial](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail para fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
+>
+>Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA.
 
 ### ¿Qué es un SPA? {#what-is-a-spa}
 
@@ -209,7 +215,7 @@ La siguiente sección, [Carga de una aplicación](/help/sites-developing/spa-wal
 
 1. Cambie a la ficha Red del Inspector y vuelva a cargar la página.
 
-   Al omitir las solicitudes de imagen, tenga en cuenta que los recursos principales cargados para la página son la página misma, CSS, React Javascript, sus dependencias y los datos JSON de la página.
+   Al omitir las solicitudes de imagen, tenga en cuenta que los recursos principales cargados para la página son la página en sí, CSS, React Javascript, sus dependencias y los datos JSON de la página.
 
    ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 
