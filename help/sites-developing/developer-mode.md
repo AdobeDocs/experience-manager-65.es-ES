@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
 
 ---
 
@@ -36,13 +36,9 @@ Esto ayuda a los desarrolladores a:
 >
 >* Solo está disponible en la IU táctil (al editar páginas).
 >* No está disponible en dispositivos móviles o ventanas pequeñas en el escritorio (debido a restricciones de espacio).
->
->    * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
->
->* Requiere los permisos/privilegios adecuados:
->
->    * El acceso al modo de desarrollador se otorga a los usuarios que tienen acceso de escritura en `/apps`.
->
+   >   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
+>* Solo está disponible para los usuarios que son miembros del `administrators` grupo.
+
 
 >[!CAUTION]
 >
@@ -103,7 +99,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-* **Ver detalles**: vínculo a una lista que muestra:
+* **Detalles** de Vista: vínculo a una lista que muestra:
 
    * todas las secuencias de comandos de componentes utilizadas para procesar el componente.
    * la ruta de contenido del repositorio para este componente específico.
