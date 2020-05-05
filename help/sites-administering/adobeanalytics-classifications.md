@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -21,14 +21,22 @@ Las clasificaciones de Adobe exportan datos de clasificaciones a [Adobe Analytic
 
 Para configurar esto:
 
-1. Vaya a la sección **Herramientas y servicios** de nube de **Adobe Analytics** .
-1. Agregue una nueva configuración. Verá que la plantilla Configuración de clasificaciones **de** Adobe Analytics se muestra debajo de la configuración de **Adobe Analytics Framework** . Proporcione un **Título** y un **Nombre** según sea necesario:
+1. Con **Navegación**, seleccione **Herramientas**, Servicios **de** nube y, a continuación, Servicios **de nube** preexistentes.
+1. Desplácese a **Adobe Analytics** y seleccione **Mostrar configuraciones**.
+1. Haga clic en el vínculo **[+]** junto a la configuración de Adobe Analytics.
 
-   ![aa-25](assets/aa-25.png)
+1. En el cuadro de diálogo **Crear marco** :
 
-1. Haga clic en **Crear** para configurar la configuración.
+   * Especifique un **título**.
+   * Opcionalmente, puede especificar el **Nombre** para el nodo que almacena los detalles del marco en el repositorio.
+   * Seleccionar clasificaciones de **Adobe Analytics**
+   Y haga clic en **Crear**.
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   ![Cuadro de diálogo Crear marco](assets/aa-25.png)
+
+1. Se abre el cuadro de diálogo Configuración **de** clasificaciones para editarlo.
+
+   ![Cuadro de diálogo Configuración de clasificaciones](assets/aa-classifications-settings.png)
 
    Las propiedades incluyen lo siguiente:
 
@@ -111,7 +119,7 @@ Las propiedades incluyen lo siguiente:
   </tr>
   <tr>
    <td>conjunto de datos</td>
-   <td>Id. de relación de conjunto de datos para la cual ejecutar el trabajo de importación. </td>
+   <td>Id. de relación de conjunto de datos para ejecutar el trabajo de importación. </td>
   </tr>
   <tr>
    <td>Descripción</td>
