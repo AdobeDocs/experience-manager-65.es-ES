@@ -1,9 +1,12 @@
 ---
-title: Administre metadatos de sus recursos digitales en [!DNL Adobe Experience Manager].
-description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] ayuda a administrar los metadatos de los recursos para facilitar la categorización y organización de los recursos. [!DNL Experience Manager] permite organizar y procesar automáticamente recursos en función de sus metadatos.
+title: Administre los metadatos de sus recursos digitales en [!DNL Adobe Experience Manager].
+description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] cómo pueden organizarse y procesarse automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c32e64d4921d7239d07f57ab9e12c744758faa0a
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Los metadatos son la recopilación de todos los datos disponibles para un recurs
 * Nombre de la carpeta en la que está contenido.
 * Recursos relacionados o etiquetas aplicadas.
 
-Lo anterior son las propiedades de metadatos básicas que Experience Manager puede administrar para los recursos, lo que permite a los usuarios ver todos los recursos. Por ejemplo, ordenar los recursos por fecha de la última modificación resulta útil cuando se intenta descubrir los recursos agregados recientemente.
+Lo anterior son las propiedades básicas de metadatos que [!DNL Experience Manager] pueden administrarse para los recursos, lo que permite a los usuarios ver todos los recursos. Por ejemplo, ordenar los recursos por fecha de la última modificación resulta útil cuando se intenta descubrir los recursos agregados recientemente.
 
 Puede agregar más datos de alto nivel a recursos digitales, por ejemplo:
 
@@ -90,7 +93,7 @@ Las etiquetas ID3 están diseñadas para el formato de archivo MP3. Información
 
 ### Exif {#exif}
 
-El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos más utilizado en la fotografía digital. Proporciona una forma de incrustar un vocabulario fijo de propiedades de metadatos en muchos formatos de archivo, como JPEG, TIFF, RIFF y WAV. Exif almacena los metadatos como pares de un nombre de metadatos y un valor de metadatos. Estos pares de metadatos nombre-valor-valor también se denominan etiquetas, por lo que no deben confundirse con el etiquetado de [!DNL Experience Manager].  Las cámaras digitales modernas crean metadatos Exif y el software de gráficos moderno lo admite. El formato Exif es el denominador común más bajo para la administración de metadatos, especialmente para imágenes.
+El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos más utilizado en la fotografía digital. Proporciona una forma de incrustar un vocabulario fijo de propiedades de metadatos en muchos formatos de archivo, como JPEG, TIFF, RIFF y WAV. Exif almacena los metadatos como pares de un nombre de metadatos y un valor de metadatos. Estos pares de metadatos nombre-valor-valor también se denominan etiquetas, por lo que no deben confundirse con el etiquetado de [!DNL Experience Manager]. Las cámaras digitales modernas crean metadatos Exif y el software de gráficos moderno lo admite. El formato Exif es el denominador común más bajo para la administración de metadatos, especialmente para imágenes.
 
 Una limitación importante de Exif es que algunos formatos de archivo de imagen populares como BMP, GIF o PNG no lo admiten.
 
@@ -98,7 +101,7 @@ Los campos de metadatos definidos por Exif suelen ser de naturaleza técnica y t
 
 ### Otros metadatos {#other-metadata}
 
-Otros metadatos que se pueden incrustar desde archivos son Microsoft Word, PowerPoint, Excel, etc.
+Otros metadatos que se pueden incrustar desde archivos son [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
 
 ## Esquemas de metadatos {#metadata-schemata}
 
