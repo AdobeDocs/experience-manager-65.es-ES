@@ -1,9 +1,12 @@
 ---
-title: Plantillas de recursos en [!DNL Recursos Adobe Experience Manager].
-description: Obtenga información sobre las plantillas de recursos en [!DNL Adobe Experience Manager Assets] y cómo usar plantillas de recursos para crear material publicitario de marketing.
+title: Plantillas de recursos en [!DNL Adobe Experience Manager Assets].
+description: Obtenga información sobre las plantillas de recursos [!DNL Adobe Experience Manager Assets] en y cómo utilizar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1553'
+ht-degree: 0%
 
 ---
 
@@ -175,7 +178,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
 
-   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas en función del tipo de archivo o las etiquetas.
+   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas basadas en el tipo de archivo o las etiquetas.
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
@@ -196,4 +199,4 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 ## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
 
-* El editor de AEM InDesign funciona a nivel de etiqueta y todo el texto de una sola etiqueta se considera una sola entidad. Para conservar el formato y los estilos de texto al editarlos, etiquete cada párrafo (o texto con un estilo diferente) por separado.
+* El [!DNL InDesign] editor de [!DNL Experience Manager] funciona a nivel de etiqueta y todo el texto de una sola etiqueta se considera una sola entidad. Para conservar el formato y los estilos de texto al editarlos, etiquete cada párrafo (o texto con un estilo diferente) por separado.
