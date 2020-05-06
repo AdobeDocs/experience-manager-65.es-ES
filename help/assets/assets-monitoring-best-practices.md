@@ -1,14 +1,17 @@
 ---
-title: Prácticas recomendadas para supervisar la implementación de [!DNL Adobe Experience Manager Assets].
-description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la implementación de [!DNL Adobe Experience Manager] después de implementarla.
+title: Prácticas recomendadas para [!DNL Adobe Experience Manager Assets] supervisar la implementación.
+description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la [!DNL Adobe Experience Manager] implementación después de implementarla.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1673'
+ht-degree: 1%
 
 ---
 
 
-# Prácticas recomendadas para supervisar la implementación [!DNL Adobe Experience Manager Assets]{#assets-monitoring-best-practices}
+# Prácticas recomendadas para supervisar la implementación [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
 Desde el [!DNL Experience Manager Assets] punto de vista de la vigilancia, ésta debe incluir la observación y el sistema de informes de los siguientes procesos y tecnologías:
 
@@ -146,7 +149,7 @@ Estas son algunas de las comprobaciones de estado integradas que son útiles par
 
 * Cola de replicación
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Instancias: Un autor, todos los servidores de publicación
    * Umbral de alarma: Cuando el estado no es correcto
@@ -184,7 +187,7 @@ Estas son algunas de las comprobaciones de estado integradas que son útiles par
    * Umbral de alarma: Cuando el estado no es correcto
    * Definición de alarma: Hay errores en los archivos de registro. Consulte el atributo log para obtener más información sobre la causa del problema.
 
-## Cuestiones y resoluciones comunes {#common-issues-and-resolutions}
+## Cuestiones y resoluciones comunes  {#common-issues-and-resolutions}
 
 En el proceso de supervisión, si se producen problemas, se presentan algunas tareas de resolución de problemas que puede realizar para resolver problemas comunes con [!DNL Experience Manager] las implementaciones:
 
@@ -195,5 +198,5 @@ En el proceso de supervisión, si se producen problemas, se presentan algunas ta
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan correctamente. Si es posible, condense varios flujos de trabajo en un único flujo de trabajo.
 * Revisa el monitoreo en vivo y busca cuellos de botella adicionales o altos consumidores de cualquier recurso específico.
 * Investigue los puntos de salida desde la red del cliente y los puntos de entrada a la red de implementación, incluido el despachante. [!DNL Experience Manager] A menudo, estas son áreas de cuello de botella. Para obtener más información, consulte Consideraciones [de red de](/help/assets/assets-network-considerations.md)Assets.
-* Aumente el tamaño del [!DNL Experience Manager] servidor. Es posible que la implementación no tenga un tamaño adecuado [!DNL Experience Manager] . El Servicio de atención al cliente de Adobe puede ayudarle a identificar si el servidor tiene un tamaño inferior al normal.
+* Aumente el tamaño del [!DNL Experience Manager] servidor. Es posible que no tenga un tamaño adecuado para la [!DNL Experience Manager] implementación. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si el servidor tiene un tamaño inferior al normal.
 * Examine los `access.log` archivos y `error.log` los archivos en busca de entradas en el momento en que algo salió mal. Busque patrones que puedan indicar anomalías de código personalizado. Añada a la lista de eventos que supervise.
