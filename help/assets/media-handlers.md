@@ -3,7 +3,10 @@ title: Procesar recursos con controladores de medios y flujos de trabajo
 description: Obtenga información sobre los controladores de medios y cómo utilizar flujos de trabajo para realizar tareas en los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 4%
 
 ---
 
@@ -448,7 +451,7 @@ Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en R
 
 >[!NOTE]
 >
->En sistemas que no son de Windows, la herramienta FFMpeg devuelve un error al generar representaciones para un recurso de vídeo que tiene una sola comilla (&#39;) en el nombre de archivo. Si el nombre del archivo de vídeo incluye una sola cita, elimínelo antes de cargarlo en AEM.
+>En sistemas que no son de Windows, la herramienta FFmpeg devuelve un error al generar representaciones para un recurso de vídeo que tiene una sola comilla (&#39;) en el nombre de archivo. Si el nombre del archivo de vídeo incluye una sola cita, elimínelo antes de cargarlo en AEM.
 
 El `CommandLineProcess` proceso realiza las siguientes operaciones en el orden en que aparecen:
 
