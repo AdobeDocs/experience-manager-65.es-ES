@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Utilice los recursos disponibles en una [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementación remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d2f9bf9f8e83a088769507da8a46f1c9ef4e74e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 53%
+source-wordcount: '2081'
+ht-degree: 51%
 
 ---
 
@@ -41,7 +41,7 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 Los creadores pueden buscar imágenes y los siguientes tipos de documentos en el buscador de contenido y utilizar los recursos buscados en el editor de páginas. Se pueden agregar documentos al `Download` componente y se pueden agregar imágenes al `Image` componente. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Los formatos admitidos son:
 
 * **Formatos** de imagen: Formatos que admite el componente [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) Imagen. [!DNL Dynamic Media] las imágenes no son compatibles.
-* **Formatos de documento**: Consulte [Formatos de documento compatibles con recursos conectados](assets-formats.md#supported-document-formats).
+* **Formatos** de Documento: Consulte [los formatos de documento admitidos por Recursos](assets-formats.md#supported-document-formats)conectados.
 
 ### Usuarios y grupos implicados {#users-and-groups-involved}
 
@@ -185,5 +185,5 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 
 Siga estos pasos para solucionar los problemas de los escenarios de error comunes:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* Puede que un recurso recuperado de un DAM remoto no se publique en una página web por las siguientes razones: no existe en remoto; falta de permisos adecuados para recuperarla; error de red. Asegúrese de que el recurso no se elimina del DAM remoto o de que no se cambian los permisos. Asegúrese de que se cumplen los requisitos previos adecuados. Vuelva a intentar agregar el recurso a la página y vuelva a publicarlo. Compruebe la [lista de trabajos asincrónicos](/help/assets/asynchronous-jobs.md) si hay errores en la recuperación de recursos.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* Es posible que un recurso recuperado de la presa remota no se publique en una página web por una o varias razones. No existe en el servidor remoto, la falta de los permisos adecuados para recuperarlo o la falla de red pueden ser las razones. Asegúrese de que el recurso no se elimina del DAM remoto. Asegúrese de que se han establecido los permisos adecuados y de que se cumplen los requisitos previos. Vuelva a intentar agregar el recurso a la página y vuelva a publicarlo. Compruebe la [lista de trabajos asincrónicos](/help/assets/asynchronous-jobs.md) si hay errores en la recuperación de recursos.
