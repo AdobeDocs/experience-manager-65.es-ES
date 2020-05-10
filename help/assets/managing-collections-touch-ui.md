@@ -4,7 +4,10 @@ description: Obtenga información sobre tareas para administrar colecciones de r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2229'
+ht-degree: 13%
 
 ---
 
@@ -202,8 +205,6 @@ Puede editar la configuración de la colección, como título y descripción, o 
 ## Eliminar una colección {#deleting-a-collection}
 
 1. En la consola Colecciones, seleccione una o varias colecciones y haga clic en el icono Eliminar de la barra de herramientas.
-
-   ![chlimage_1-11](assets/chlimage_1-177.png)
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Eliminar]** para confirmar la acción de eliminar.
 
