@@ -3,7 +3,10 @@ title: Crear y configurar páginas del editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2147'
+ht-degree: 1%
 
 ---
 
@@ -13,10 +16,10 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 En este documento se describe lo siguiente:
 
 * Por qué se crearían páginas personalizadas del editor de recursos.
-* Cómo crear y personalizar páginas del editor de recursos, que son páginas WCM que le permiten ver y editar metadatos, así como realizar acciones en el recurso.
+* Cómo crear y personalizar páginas del Editor de recursos, que son páginas WCM que permiten realizar vistas y ediciones de metadatos, así como acciones en el recurso.
 * Cómo editar varios recursos simultáneamente.
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 OOTB samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
 
 >[!NOTE]
 >
@@ -24,175 +27,175 @@ En este documento se describe lo siguiente:
 
 ## ¿Por qué crear y configurar páginas del editor de recursos? {#why-create-and-configure-asset-editor-pages}
 
-La administración de activos digitales se utiliza en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios con formación profesional (por ejemplo, fotógrafos o taxónomos) a grupos de usuarios más grandes y diversos (por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.), la potente interfaz de usuario de Recursos Adobe Experience Manager (AEM) para usuarios profesionales puede proporcionar demasiada información y los interesados empiezan a solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
+La administración de activos digitales se utiliza en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios con formación profesional (por ejemplo, fotógrafos o taxónomos) a grupos de usuarios más grandes y diversos (por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.), la poderosa interfaz de usuario de Recursos Adobe Experience Manager (AEM) para usuarios profesionales puede proporcionar demasiada información y inicios de partes interesadas para solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
 
-Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a las ferias o un centro de prensa en un sitio web público, como el ejemplo proporcionado con Geometrixx. Las aplicaciones centradas en los recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
+Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a los espectáculos comerciales o de un centro de prensa en un sitio web público. Las aplicaciones centradas en los recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
 La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en los recursos creadas con Recursos AEM son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
 Una aplicación centrada en recursos en AEM consiste en una página del editor de recursos, que se puede utilizar para obtener una vista detallada de un recurso específico. La página Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
-## Crear y configurar una página de uso compartido de recursos {#creating-and-configuring-an-asset-share-page}
+<!--
+## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
 
-Puede personalizar la funcionalidad de Buscador de DAM y crear páginas que tengan toda la funcionalidad que necesita, las cuales se denominan páginas de Uso compartido de recursos. Para crear una nueva página de uso compartido de recursos, agregue la página mediante la plantilla de uso compartido de recursos de Geometrixx y, a continuación, personalice las acciones que los usuarios pueden realizar en esa página, determine cómo ven los usuarios los recursos y decida cómo pueden crear sus consultas.
+You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create a new Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
 
-A continuación se indican algunos casos de uso para crear una página personalizada de uso compartido de recursos:
+Here are some use cases for creating a customized Asset Share page:
 
-* Centro de prensa para periodistas
-* Motor de búsqueda de imágenes para usuarios comerciales internos
-* Base de datos de imágenes para usuarios de sitios web
-* Interfaz de etiquetado de medios para editores de metadatos
+* Press Center for Journalists.
+* Image Search Engine for internal business users.
+* Image Database for website users.
+* Media Tagging Interface for metadata editors.
 
-### Crear una página de uso compartido de recursos {#creating-an-asset-share-page}
+### Create an Asset Share page {#creating-an-asset-share-page}
 
-Para crear una nueva página de uso compartido de recursos, puede crearla cuando esté trabajando en sitios web o desde el administrador de recursos digitales.
+To create a new Asset Share page, you can either create it when you are working on web sites or from the digital asset manager.
 
 >[!NOTE]
 >
->De forma predeterminada, cuando se crea una página de uso compartido de recursos a partir de **Nuevo** en el administrador de recursos digital, se crea automáticamente un visor de recursos y un editor de recursos.
+>By default, when you create an Asset Share page from **New** in the digital asset manager, an Asset viewer and Asset editor are automatically created for you.
 
-Para crear una nueva página de uso compartido de recursos en la consola **Sitios** web:
+To create an new Asset Share page in the **Websites** console:
 
-1. En la ficha **Sitios** web, navegue hasta el lugar donde desee crear una página de uso compartido de recursos y haga clic en **Nuevo**.
+1. In the **Websites** tab, navigate to the place where you want to create an asset share page and click **New**.
 
-1. Seleccione la página Uso compartido **de** recursos y haga clic en **Crear**. La nueva página se crea y la página de uso compartido de recursos se muestra en la ficha **Sitios** web.
+1. Select the **Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
 
 ![dam8](assets/dam8.png)
 
-La página básica creada con la plantilla Geometrixx DAM Asset Share tiene el siguiente aspecto:
+The basic page created using the Geometrixx DAM Asset Share template looks as follows:
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-Para personalizar la página Uso compartido de recursos, utilice elementos de la barra de tareas y también edite las propiedades del generador de consultas. La página **Geometrixx Press Center** es una versión personalizada de una página basada en esta plantilla:
+To customize your Asset Share page, you use elements from the sidekick and you also edit query builder properties. The page **Geometrixx Press Center** is a customized version of a page based on this template:
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
-Para crear una nueva página de uso compartido de recursos a través del administrador de recursos digital:
+To create a new asset share page via the digital asset manager:
 
-1. En el administrador de recursos digitales, en **Nuevo**, seleccione **Nuevo recurso compartido**.
-1. En el **Título**, introduzca el nombre de la página de uso compartido de recursos. Si lo desea, escriba un nombre para la dirección URL.
+1. In the digital asset manager, in **New**, select **New Asset Share**.
+1. In the **Title**, enter the name of the asset share page. If desired, enter a name for the URL.
 
    ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
 
-1. Haga doble clic en la página de uso compartido de recursos para abrirla y configurarla.
+1. Double-click the asset share page to open it and configure the page.
 
    ![screen_shot_2012-04-19at24114pm](assets/screen_shot_2012-04-19at24114pm.png)
 
-   De forma predeterminada, al crear una página de uso compartido de recursos desde **Nuevo**, se crea automáticamente un visor de recursos y un editor de recursos.
+   By default, when you create an Asset Share page from **New**, an Asset viewer and Asset editor are automatically created for you.
 
-#### Personalizar acciones {#customizing-actions}
+#### Customize actions {#customizing-actions}
 
-Puede determinar qué acciones pueden realizar los usuarios en recursos digitales seleccionados a partir de una selección de acciones predefinidas.
+You can determine what actions users can perform on selected digital assets from a selection of predefined actions.
 
-Para agregar acciones a la página Uso compartido de recursos:
+To add actions to the Asset Share page:
 
-1. En la página Uso compartido de recursos que desee personalizar, haga clic en **Acciones** en la barra de tareas.
+1. In the Asset Share page that you want to customize, click **Actions** in the sidekick.
 
-Están disponibles las siguientes acciones:
+The following actions are available:
 
-![assetshare2](assets/assetshare2.bmp)
+ | Action | Description |
+ |---|---|
+ | [!UICONTROL Delete Action] | Users can delete the selected assets. |
+ | [!UICONTROL Download Action] | Lets users download selected assets to their computers. |
+ | [!UICONTROL Lightbox Action] | Saves assets to a "lightbox"   where you can perform other actions on them. This comes in handy when working   with assets across multiple pages. The lightbox can also be used as a   shopping cart for assets. |
+ | [!UICONTROL Move Action] | Users can move the asset to another   location |
+ | [!UICONTROL Tags Action] | Lets users add tags to selected assets |
+ | [!UICONTROL View Asset Action] | Opens the asset in the Asset editor for   user manipulation. |
 
-| Acción | Descripción |
-|---|---|
-| [!UICONTROL Acción Eliminar] | Los usuarios pueden eliminar los recursos seleccionados. |
-| [!UICONTROL Acción de descarga] | Permite a los usuarios descargar los recursos seleccionados en sus equipos. |
-| [!UICONTROL Acción de Lightbox] | Guarda los recursos en una &quot;caja de luz&quot; en la que puede realizar otras acciones. Esto resulta útil cuando se trabaja con recursos en varias páginas. La caja de luz también se puede utilizar como carro de compras para los activos. |
-| [!UICONTROL Acción de mover] | Los usuarios pueden mover el recurso a otra ubicación |
-| [!UICONTROL Acción de etiquetas] | Permite a los usuarios agregar etiquetas a los recursos seleccionados |
-| [!UICONTROL Acción de ver recursos] | Abre el recurso en el editor de recursos para su manipulación por parte del usuario. |
-
-1. Arrastre la acción adecuada al área **Acciones** de la página. Al hacerlo, se crea un botón que se utiliza para ejecutar esa acción.
+1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
 ![chlimage_1-159](assets/chlimage_1-387.png)
 
-#### Determinar cómo se presentan los resultados de búsqueda {#determining-how-search-results-are-presented}
+#### Determine how search results are presented {#determining-how-search-results-are-presented}
 
-Puede determinar cómo se muestran los resultados a partir de una lista predefinida de lentes.
+You determine how results are displayed from a predefined list of lenses.
 
-Para cambiar la forma en que se ven los resultados de la búsqueda:
+To change how search results are viewed:
 
-1. En la página Uso compartido de recursos que desee personalizar, haga clic en Buscar.
+1. In the Asset Share page that you want to customize, click Search.
 
 ![chlimage_1](assets/assetshare3.png)
 
-1. Arrastre la lente adecuada al centro superior de la página. En el Centro de Prensa, las lentes ya están disponibles. Los usuarios pulsan el icono de lente correspondiente para mostrar los resultados de búsqueda según sus preferencias.
+1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
-Están disponibles las siguientes lentes:
+The following lenses are available:
 
-| Objetivo | Descripción |
+| Lens | Description |
 |---|---|
-| **[!UICONTROL Vista de lista]** | Presenta los recursos en una lista con detalles. |
-| **[!UICONTROL Vista en mosaico]** | Presenta los recursos en forma de mosaico. |
+| **[!UICONTROL List Lens]** |Presents the assets in a list fashion with details. |
+| **[!UICONTROL Mosaic Lens]** |Presents assets in a mosaic fashion. |
 
-#### Vista en mosaico {#mosaic-lens}
+#### Mosaic Lens {#mosaic-lens}
 
 ![chlimage_1-160](assets/chlimage_1-388.png)
 
-#### Vista de lista {#list-lens}
+#### List Lens {#list-lens}
 
 ![chlimage_1-161](assets/chlimage_1-389.png)
 
-#### Personalización del Generador de consultas {#customizing-the-query-builder}
+#### Customize the Query Builder {#customizing-the-query-builder}
 
-El creador de consultas permite introducir términos de búsqueda y crear contenido para la página Uso compartido de recursos. Al editar el generador de consultas, también puede determinar cuántos resultados de búsqueda se muestran por página, qué editor de recursos se abre al hacer doble clic en un recurso, la ruta de acceso que busca la consulta y personalizar los tipos de nodos.
+The query builder lets you enter search terms and create content for the Asset Share page. When you edit the query builder, you also get to determine how many search results are displayed per page, which asset editor opens when you double-click an asset, the path the query searches, and customizes nodetypes.
 
-Para personalizar el generador de consultas:
+To customize the query builder:
 
-1. En la página Uso compartido de recursos que desee personalizar, haga clic en **Editar** en el Generador de consultas. De forma predeterminada, se abre la ficha **General** .
-1. Seleccione el número de resultados por página, la ruta del editor de recursos (si tiene un editor de recursos personalizado) y el título Acciones.
+1. In the Asset Share page that you want to customize, click **Edit** in the Query Builder. By default, the **General** tab opens.
+1. Select the number of results per page, the path of the asset editor (if you have a customized asset editor) and the Actions title.
 
 ![screen_shot_2012-04-23at15055pm](assets/screen_shot_2012-04-23at15055pm.png)
 
-1. Click the **Paths** tab. Escriba una ruta o varias rutas que se ejecutarán en la búsqueda. Estas rutas se sobrescriben si el usuario utiliza el predicado Rutas.
+1. Click the **Paths** tab. Enter a path or multiple paths that the search will run. These paths are overwritten if the user uses the Paths predicate.
 
 ![screen_shot_2012-04-23at15150pm](assets/screen_shot_2012-04-23at15150pm.png)
 
-1. Introduzca otro tipo de nodo, si lo desea.
+1. Enter another node type, if desired.
 
-1. En el campo URL **del Generador de** consultas, puede anular o ajustar el generador de consultas e introducir las nuevas direcciones URL del servlet con el componente existente del creador de consultas. En el campo **Dirección URL** de la fuente, también puede anular la dirección URL de la fuente.
+1. In the **Query Builder URL** field, you can override or wrap the query builder and enter the new servlet URLs with the existing query builder component. In the **Feed URL** field, you can override the Feed URL as well.
 
 ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
-1. En el campo **Texto** , introduzca el texto que desea que aparezca para los resultados y los números de página de los resultados. Haga clic en **Aceptar** cuando termine de realizar cambios.
+1. In the **Text** field, enter the text you want to appear for results and page numbers of results. Click **OK** when finished making changes.
 
 ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
-#### Agregar predicados {#adding-predicates}
+#### Add predicates {#adding-predicates}
 
-Recursos AEM incluye varios predicados que puede agregar a la página Uso compartido de recursos. Esto permite a los usuarios restringir aún más las búsquedas. En algunos casos, pueden sobrescribir un parámetro del generador de consultas (por ejemplo, el parámetro Path).
+AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
-Para agregar predicados:
+To add predicates:
 
-1. En la página Uso compartido de recursos que desee personalizar, haga clic en **Buscar**.
+1. In the Asset Share page that you want to customize, click **Search**.
 
 ![assetshare3](assets/assetshare3.png)
 
-1. Arrastre los predicados correspondientes a la página Uso compartido de recursos debajo del generador de consultas. Al hacerlo, se crean los campos correspondientes.
+1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
 ![assetshare4](assets/assetshare4.bmp)
 
-Están disponibles los siguientes predicados:
+The following predicates are available:
 
-| Predicado | Descripción |
+| Predicate | Description |
 |---|---|
-| **[!UICONTROL Predicado de fecha]** | Permite a los usuarios buscar recursos que se modificaron antes y después de determinadas fechas. |
-| **[!UICONTROL Predicado de opciones]** | El propietario del sitio puede especificar una propiedad para buscar (como en el predicado de propiedades, por ejemplo cq:tags) y un árbol de contenido desde el que rellenar las opciones (por ejemplo, el árbol de etiquetas). Al hacerlo, se genera una lista de opciones en la que los usuarios pueden seleccionar los valores (etiquetas) que debe tener la propiedad seleccionada (propiedad de etiqueta). Este predicado permite crear controles de lista como la lista de etiquetas, tipos de archivo, orientaciones de imagen, etc. Es ideal para un conjunto fijo de opciones. |
-| **[!UICONTROL Predicado de ruta]** | Permite a los usuarios definir la ruta y las subcarpetas, si lo desean. |
-| **[!UICONTROL Predicado de propiedades]** | El propietario del sitio especifica una propiedad para buscar, por ejemplo tiff:ImageLength y el usuario puede entonces introducir un valor, por ejemplo: 800. Esto devuelve todas las imágenes con una altura de 800 píxeles. Un predicado útil si la propiedad puede tener valores arbitrarios. |
+| **[!UICONTROL Date Predicate]** |Lets users search for assets that were modified before and after certain dates. |
+| **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
+| **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
+| **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
-Para obtener más información, consulte el [predicado Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+For more information, see the [predicate Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
-1. Para seguir configurando el predicado, haga doble clic en él. Por ejemplo, cuando se abre el predicado de rutas, es necesario asignar la ruta raíz.
+1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
+-->
 
 ## Creación y configuración de una página Editor de recursos {#creating-and-configuring-an-asset-editor-page}
 
-Puede personalizar el editor de recursos para determinar cómo pueden ver y editar los recursos digitales los usuarios. Para ello, se crea una nueva página Editor de recursos y, a continuación, se personalizan las vistas y las acciones que los usuarios pueden realizar en esa página.
+Puede personalizar el editor de recursos para determinar cómo pueden los usuarios realizar la vista y editar los recursos digitales. Para ello, se crea una nueva página Editor de recursos y, a continuación, se personalizan las vistas y las acciones que los usuarios pueden realizar en esa página.
 
 >[!NOTE]
 >
->Si desea agregar campos personalizados al editor de recursos DAM, agregue nuevos nodos cq:Widget a `/apps/dam/content/asseteditors.`
+>Si desea agregar campos personalizados al editor de recursos DAM, agregue nuevos `cq:Widget` nodos a `/apps/dam/content/asseteditors.`
 
 ### Creación de una página del editor de recursos {#creating-the-asset-editor-page}
 
@@ -215,11 +218,11 @@ Para personalizar la página del Editor de recursos, utilice elementos de la bar
 
 #### Configuración de un editor de recursos para abrirlo desde una página de uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
-Después de crear la página del editor de recursos personalizada, debe asegurarse de que, al hacer doble clic en los recursos que ha creado, se abran los recursos en la página del editor personalizada.
+Después de crear la página del Editor de recursos personalizada, debe asegurarse de que, al hacer clic con el doble en los recursos que ha creado, el recurso compartido de recursos personalizado abre los recursos en la página del Editor personalizado.
 
 Para configurar la página Editor de recursos:
 
-1. En la página Uso compartido de recursos, haga clic en **Editar** junto al Generador de consultas.
+1. En la página Uso compartido de recursos, haga clic en **Editar** junto al Generador de Consultas.
 
 ![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
@@ -229,13 +232,13 @@ Para configurar la página Editor de recursos:
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Agregar componentes del editor de recursos {#adding-asset-editor-components}
+#### Añadir componentes del Editor de recursos {#adding-asset-editor-components}
 
 Para determinar la funcionalidad que tiene un editor de recursos, agregue componentes a la página.
 
 Para agregar componentes del editor de recursos:
 
-1. En la página Editor de recursos que desee personalizar, seleccione Editor **de recursos** en la barra de tareas. Se muestran todos los componentes del editor de recursos disponibles.
+1. En la página Editor de recursos que desee personalizar, seleccione Editor **de** recursos en la barra de tareas. Se muestran todos los componentes del editor de recursos disponibles.
 
 >[!NOTE]
 >
@@ -257,11 +260,11 @@ Para agregar componentes del editor de recursos:
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
-#### Campo de texto y formulario de metadatos: configuración del componente Ver metadatos {#metadata-form-and-text-field-configuring-the-view-metadata-component}
+#### Campo de texto y formulario de metadatos: configuración del componente Metadatos de Vista {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-El formulario de metadatos es un formulario que incluye una acción de inicio y finalización. En el medio, se introducen campos **de texto** . Consulte [Formularios](/help/sites-authoring/default-components-foundation.md#form-component) para obtener más información sobre cómo trabajar con formularios.
+El formulario de metadatos es un formulario que incluye un inicio y una acción final. En el medio, se introducen campos **de texto** . Consulte [Formularios](/help/sites-authoring/default-components-foundation.md#form-component) para obtener más información sobre cómo trabajar con formularios.
 
-1. Cree una acción de inicio haciendo clic en **Editar** en el área Inicio del formulario. Si lo desea, puede introducir un título de cuadro. De forma predeterminada, el título Cuadro es **Metadatos**. Active la casilla de verificación Validación del cliente si desea que se genere el código de cliente java-script para la validación.
+1. Cree una acción de inicio haciendo clic en **Editar** en el área de Inicio del formulario. Si lo desea, puede introducir un título de cuadro. De forma predeterminada, el título Cuadro es **Metadatos**. Active la casilla de verificación Validación del cliente si desea que se genere el código de cliente java-script para la validación.
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
@@ -269,13 +272,13 @@ El formulario de metadatos es un formulario que incluye una acción de inicio y 
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
-1. Entre el inicio **del** formulario y el final **del** formulario, arrastre Campos de texto de metadatos al formulario. Los usuarios rellenan los metadatos en estos campos de texto, en los que pueden enviar o completar otra acción.
+1. Entre el Inicio **** Formulario y el final **del** formulario, arrastre Campos de texto de metadatos al formulario. Los usuarios rellenan los metadatos en estos campos de texto, en los que pueden enviar o completar otra acción.
 
-1. Haga doble clic en el nombre del campo, por ejemplo, **Título** para abrir el campo de metadatos y realizar cambios. En la ficha **General** de la ventana **Editar componente** , se definen el espacio de nombres y la etiqueta del campo, así como el tipo, por ejemplo `dc:title`.
+1. Haga clic con el botón Doble en el nombre del campo, por ejemplo, **Título** para abrir el campo de metadatos y realizar cambios. En la ficha **General** de la ventana **Editar componente** , se definen la Área de nombres y la etiqueta del campo, así como el tipo, por ejemplo `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-Consulte [Personalización y ampliación de Recursos](/help/assets/extending-assets.md) AEM para obtener información sobre cómo modificar los espacios de nombres disponibles en el formulario de metadatos.
+Consulte [Personalización y ampliación de Recursos](/help/assets/extending-assets.md) AEM para obtener información sobre cómo modificar las Áreas de nombres disponibles en el formulario de metadatos.
 
 1. Click the **Constraints** tab. Aquí puede seleccionar si un campo es obligatorio y, si es necesario, agregar restricciones.
 
@@ -293,11 +296,11 @@ En la página Editor de recursos, los usuarios pueden introducir valores en los 
 
 #### Subactivos {#sub-assets}
 
-En el componente Recursos secundarios se pueden ver y seleccionar subrecursos. Puede determinar los nombres que aparecen bajo el recurso [](/help/assets/assets.md#what-are-digital-assets) principal y los subrecursos.
+El componente Recursos secundarios es el lugar en el que se pueden realizar vistas y seleccionar subrecursos. Puede determinar los nombres que aparecen bajo el recurso [](/help/assets/assets.md#what-are-digital-assets) principal y los subrecursos.
 
 ![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
-Haga doble clic en el componente Recursos secundarios para abrir el cuadro de diálogo Recursos secundarios, donde puede cambiar los títulos del recurso principal y de los subrecursos. Los valores predeterminados aparecen debajo del campo correspondiente.
+Haga clic con el botón Doble en el componente Recursos secundarios para abrir el cuadro de diálogo Recursos secundarios, donde puede cambiar los títulos del recurso principal y de los subrecursos. Los valores predeterminados aparecen debajo del campo correspondiente.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
@@ -311,11 +314,11 @@ Por ejemplo, si selecciona un subrecurso, tenga en cuenta cómo el componente mu
 
 #### Etiquetas {#tags}
 
-El componente Etiquetas es un componente en el que los usuarios pueden asignar etiquetas existentes a un recurso, lo que ayuda a organizarlo y recuperarlo posteriormente. Puede hacer que este componente sea de solo lectura, por lo que los usuarios no pueden agregar etiquetas, sino solo verlas.
+El componente Etiquetas es un componente en el que los usuarios pueden asignar etiquetas existentes a un recurso, lo que ayuda a organizarlo y recuperarlo posteriormente. Puede hacer que este componente sea de solo lectura, por lo que los usuarios no pueden agregar etiquetas, sino solo vistas.
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Haga doble clic en el componente Etiquetas para abrir el cuadro de diálogo Etiquetas, donde puede cambiar el título de Etiquetas, si lo desea, y donde puede seleccionar los espacios de nombres asignados. Para que este campo sea editable, desactive la casilla de verificación **[!UICONTROL Ocultar edición]** . De forma predeterminada, las etiquetas son editables.
+Haga clic con el botón Doble en el componente Etiquetas para abrir el cuadro de diálogo Etiquetas, donde puede cambiar el título desde Etiquetas, si lo desea, y donde puede seleccionar las Áreas de nombres asignadas. Para que este campo sea editable, desactive la casilla de verificación **[!UICONTROL Ocultar edición]** . De forma predeterminada, las etiquetas son editables.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -327,17 +330,17 @@ A continuación se muestra un componente Etiquetas rellenado:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura {#thumbnail}
+#### Miniatura  {#thumbnail}
 
 El componente Miniatura es donde el recurso muestra la miniatura seleccionada (para muchos de los formatos la miniatura se extrae automáticamente). Además, el componente muestra el nombre de archivo y [las acciones que puede modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Haga doble clic en el componente de miniatura para abrir el cuadro de diálogo de miniaturas donde puede cambiar el texto alternativo. De forma predeterminada, el texto alternativo de la miniatura es **Haga clic para descargar** el recurso.
+Haga clic con el botón Doble en el componente de miniatura para abrir el cuadro de diálogo de miniaturas donde puede cambiar el texto alternativo. De forma predeterminada, el texto alternativo de la miniatura es **Haga clic para descargar** el recurso.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
-A continuación se muestra un ejemplo de un componente Miniatura relleno:
+A continuación se muestra un ejemplo de un componente Miniatura rellenado:
 
 ![screen_shot_2012-04-23at34815pm](assets/screen_shot_2012-04-23at34815pm.png)
 
@@ -347,7 +350,7 @@ El componente Título muestra el título del recurso y una descripción.
 
 ![chlimage_1-163](assets/chlimage_1-391.png)
 
-De forma predeterminada, está en modo de solo lectura, por lo que los usuarios no pueden editarlo. Para que sea editable, haga doble clic en el componente y desactive la casilla de verificación **Ocultar botón** de edición. Además, introduzca un título para varios recursos.
+De forma predeterminada, está en modo de solo lectura, por lo que los usuarios no pueden editarlo. Para que sea editable, haga clic con el doble en el componente y desactive la casilla de verificación **Ocultar botón** de edición. Además, introduzca un título para varios recursos.
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
@@ -361,7 +364,7 @@ A continuación se muestra un ejemplo de un componente Título rellenado:
 
 ![chlimage_1-164](assets/chlimage_1-392.png)
 
-#### Agregar acciones del editor de recursos {#adding-asset-editor-actions}
+#### Añadir acciones del editor de recursos {#adding-asset-editor-actions}
 
 Puede determinar qué acciones pueden realizar los usuarios en recursos digitales seleccionados a partir de una selección de acciones predefinidas.
 
