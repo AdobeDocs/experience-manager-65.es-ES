@@ -1,6 +1,6 @@
 ---
 title: Perfiles para procesar metadatos, imágenes y vídeos
-description: Un perfil es un conjunto de reglas en torno a las opciones que se van a aplicar a los recursos cargados en una carpeta. Especifique qué perfil de metadatos y perfil de codificación de vídeo se aplicarán a los recursos de vídeo que cargue. Para los recursos de imagen, también puede especificar qué perfil de imagen se aplicará a los recursos de imagen para que se recorten correctamente.
+description: Un perfil contiene un conjunto de reglas en torno a las opciones que se van a aplicar a los recursos cargados en una carpeta. Especifique el perfil de metadatos y el perfil de codificación de vídeo que se aplicarán a los recursos de vídeo que cargue. Para los recursos de imagen, también puede especificar el perfil de imagen que se aplicará a los recursos de imagen para que se recorten correctamente.
 uuid: 6ded2a2f-a0d3-4f43-af97-02fbc0902c25
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,31 +9,34 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1369'
+ht-degree: 2%
 
 ---
 
 
 # Perfiles para procesar metadatos, imágenes y vídeos{#profiles-for-processing-metadata-images-and-videos}
 
-Un perfil es una fórmula para las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar qué perfil de metadatos y perfil de codificación de vídeo se aplicarán a los recursos de vídeo que cargue. O bien, qué perfil de imagen aplicar a los recursos de imagen para recortarlos correctamente.
+Un perfil es una fórmula para determinar las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar el perfil de metadatos y el perfil de codificación de vídeo que se aplicarán a los recursos de vídeo que cargue. O bien, qué perfil de imagen aplicar a los recursos de imagen para recortarlos correctamente.
 
 Estas reglas pueden incluir la adición de metadatos, el recorte inteligente de imágenes o el establecimiento de perfiles de codificación de vídeo. En AEM, puede crear tres tipos de perfiles, que se explican en detalle en los siguientes vínculos:
 
 * [Perfiles de metadatos](/help/assets/metadata-profiles.md)
-* [Perfiles de imagen](/help/assets/image-profiles.md)
-* [Perfiles de vídeo](/help/assets/video-profiles.md)
+* [perfiles de imagen](/help/assets/image-profiles.md)
+* [perfiles de vídeo](/help/assets/video-profiles.md)
 
 Debe tener derechos de administrador para crear, editar y eliminar metadatos, imágenes o perfiles de vídeo.
 
 Después de crear los metadatos, las imágenes o el perfil de vídeo, se asignan a una o varias carpetas que se utilizan como destino para los recursos recién cargados.
 
-Un concepto importante con respecto al uso de perfiles en Recursos AEM es que están asignados a carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma en que se asignan nombres a los archivos y carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos dentro de estas carpetas influye considerablemente en la forma en que un perfil procesa esos recursos.
-Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede sacar el máximo partido de la colección de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados.
+Un concepto importante con respecto al uso de perfiles en Recursos AEM es que se asignan a las carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos de estas carpetas influye considerablemente en la forma en que un perfil procesa dichos recursos.
+Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con una buena práctica de metadatos, puede sacar el máximo partido de la colección de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados.
 
 >[!NOTE]
 >
->Los recursos que se mueven de una carpeta a otra no se vuelven a procesar. Por ejemplo, supongamos que tiene asignada la Carpeta 1 con el perfil A y la Carpeta 2 con el perfil B. Si mueve recursos de la carpeta 1 a la carpeta 2, los recursos movidos conservarán su procesamiento original desde la carpeta 1.
+>Los recursos que se mueven de una carpeta a otra no se vuelven a procesar. Por ejemplo, supongamos que tiene la carpeta 1 con el perfil A asignado y la carpeta 2 con el perfil B asignado. Si mueve recursos de la carpeta 1 a la carpeta 2, los recursos movidos conservarán su procesamiento original desde la carpeta 1.
 >
 >Lo mismo sucede incluso cuando se mueven recursos entre dos carpetas que tienen el mismo perfil asignado.
 
@@ -61,9 +64,9 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **Para volver a procesar los recursos de una carpeta**:
-1. En AEM, en la página Recursos, navegue a una carpeta de recursos que tenga un perfil de procesamiento asignado y para la que desee aplicar **Scene7: Flujo de trabajo de reprocesamiento de recursos** ,
+1. En AEM, en la página Recursos, vaya a la carpeta de recursos que tenga un perfil de procesamiento asignado y para la que desee aplicar **Scene7: Flujo de trabajo de reprocesamiento de recursos** ,
 
-   Las carpetas que ya tienen un perfil de procesamiento asignado se indican con la visualización del nombre del perfil directamente debajo del nombre de la carpeta en la vista de tarjeta.
+   Las carpetas que ya tienen un perfil de procesamiento asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta en la Vista de tarjetas.
 
 1. Seleccione una carpeta.
 
@@ -76,8 +79,8 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
 
    ![Flujo de trabajo de reprocesamiento de recursos 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
-1. En la lista desplegable **[!UICONTROL Iniciar flujo de trabajo]** , elija **[!UICONTROL Scene7: Volver a procesar los recursos]**.
+1. Haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**.
+1. En la lista desplegable Flujo de trabajo **[!UICONTROL de]** Inicio, elija **[!UICONTROL Scene7: Volver a procesar los recursos]**.
 1. (Opcional) En el campo **Introduzca el título del texto del flujo de trabajo** , introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
    ![Volver a procesar los recursos 2](/help/assets/assets/reprocess-assets2.png)
@@ -88,14 +91,14 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño de lote predeterminado en el flujo de trabajo de reprocesamiento es de 50 recursos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos mínimos de recursos en los que se ejecuta el reprocesamiento. Un valor más alto significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. En consecuencia, la pancarta de procesamiento permanece en los recursos de AEM durante más tiempo. Sin embargo, si el tamaño medio del archivo es pequeño (1 MB o menos), Adobe recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes, Adobe recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño de lote predeterminado en el flujo de trabajo de reprocesamiento es de 50 recursos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor más alto significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. En consecuencia, la pancarta de procesamiento permanece en los recursos de AEM durante más tiempo. Sin embargo, si el tamaño medio del archivo es pequeño (1 MB o menos), Adobe recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes, Adobe recomienda reducir el tamaño del lote hasta 10.
 
 **Ajuste opcional del tamaño del lote del flujo de trabajo de reprocesamiento**
 
-1. En Experience Manager, toque **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, toque el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
-1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
+1. En Experience Manager, pulse **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
+1. En la página Modelos de flujo de trabajo, en Vista de tarjetas o Vista de Listas, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
 
-   ![Página Modelos de flujo de trabajo con Scene7: Volver a procesar los recursos seleccionados en la vista de tarjeta](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Página Modelos de flujo de trabajo con Scene7: Volver a procesar los recursos seleccionados en la Vista de tarjetas](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Editar]**. Una nueva ficha de explorador abre Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos.
 1. En Scene7: Volver a procesar la página de flujo de trabajo Recursos, cerca de la esquina superior derecha, toque **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
@@ -104,11 +107,11 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
    ![Componente de carga por lotes de Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
 1. En el cuadro de diálogo Cargar **[!UICONTROL por lotes a Scene7: Propiedades]** de los pasos, establezca lo siguiente:
-   * En los campos de texto **[!UICONTROL Título]** y **[!UICONTROL Descripción]** , introduzca un nuevo título y una descripción para el trabajo, si lo desea.
+   * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
    * Seleccione **[!UICONTROL Handler Advance]** si su controlador avanzará al paso siguiente.
    * En el campo **[!UICONTROL Tiempo de espera]** , introduzca el tiempo de espera del proceso externo (segundos).
    * En el campo **[!UICONTROL Período]** , introduzca un intervalo de sondeo (segundos) para comprobar si se ha completado el proceso externo.
-   * En el campo **** Lote, introduzca el número máximo de recursos (50-1000) que se procesarán en un trabajo de carga de procesamiento por lotes del servidor de Dynamic Media.
+   * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
    * Seleccione **[!UICONTROL Avanzar al tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar con la bandeja de entrada cuando se alcance el tiempo de espera.
    ![Cuadro de diálogo Propiedades](/help/assets/assets-dm/reprocess-assets3.png)
 
