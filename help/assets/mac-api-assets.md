@@ -1,9 +1,12 @@
 ---
-title: API de HTTP de Assets
-description: Obtenga información sobre la implementación, el modelo de datos y las características de la API HTTP de Assets. Utilice la API HTTP de Assets para realizar varias tareas en torno a los recursos.
+title: API HTTP de recursos en [!DNL Adobe Experience Manager].
+description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1562'
+ht-degree: 1%
 
 ---
 
@@ -12,22 +15,22 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ## Información general {#overview}
 
-La API HTTP de recursos permite crear-leer-actualizar-eliminar (CRUD) operaciones en recursos, incluidos binarios, metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de contenido de AEM. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](/help/assets/assets-api-content-fragments.md)de contenido.
+La API HTTP de Recursos permite crear-leer-actualizar-eliminar (CRUD) operaciones en recursos digitales, incluidos metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de [!DNL Experience Manager] contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](/help/assets/assets-api-content-fragments.md)de contenido.
 
 Para acceder a la API:
 
 1. Abra el documento del servicio API en `https://[hostname]:[port]/api.json`.
 1. Siga el vínculo del servicio Recursos que lleva a `https://[hostname]:[server]/api/assets.json`.
 
-La respuesta de API es un archivo JSON para algunos tipos de MIME y un código de respuesta para todos los tipos de MIME. La respuesta JSON es opcional y puede que no esté disponible, por ejemplo, para archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
+La respuesta de API es un archivo JSON para algunos tipos MIME y un código de respuesta para todos los tipos MIME. La respuesta JSON es opcional y puede que no esté disponible, por ejemplo, para archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
 
-Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web de Recursos ni a través de la API HTTP. La API devuelve un mensaje de error 404 si [!UICONTROL Tiempo] de activación está en el futuro o Tiempo de [!UICONTROL desactivación] está en el pasado.
+Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles a través de la interfaz [!DNL Assets] web y de la API HTTP. La API devuelve un mensaje de error 404 si [!UICONTROL Tiempo] de activación está en el futuro o Tiempo de [!UICONTROL desactivación] está en el pasado.
 
 ## Fragmentos de contenido {#content-fragments}
 
 Un fragmento [de](/help/assets/content-fragments.md) contenido es un tipo especial de recurso. Puede utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que hay varias diferencias con `standard` los recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la gestión de fragmentos de contenido.
 
-Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md)HTTP de AEM Assets.
+Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md)HTTP de Experience Manager Assets.
 
 ## modelo Data {#data-model}
 
@@ -42,6 +45,7 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 **Entidades**: Las entidades de una carpeta son sus elementos secundarios, que pueden ser carpetas y recursos.
 
 **Propiedades**:
+
 * `name`  — Nombre de la carpeta. Es lo mismo que el último segmento de la ruta URL sin la extensión
 * `title` — Título opcional de la carpeta que se puede mostrar en lugar de su nombre
 
@@ -50,23 +54,24 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 >Algunas propiedades de carpeta o recurso se asignan a un prefijo diferente. El `jcr` prefijo `jcr:title`, `jcr:description`y `jcr:language` se reemplazan con `dc` prefijo. Por lo tanto, en el JSON devuelto `dc:title` y `dc:description` contener los valores de `jcr:title` y `jcr:description`, respectivamente.
 
 **Las carpetas de vínculos** exponen tres vínculos:
+
 * `self`:: Vínculo a sí mismo
 * `parent`:: Vínculo a la carpeta principal
 * `thumbnail`:: (Opcional) vínculo a una imagen en miniatura de la carpeta
 
 ### Assets {#assets}
 
-En AEM, los recursos contienen los siguientes elementos:
+En Experience Manager, un recurso contiene los siguientes elementos:
 
 * Propiedades y metadatos del recurso
 * Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de PDF o InDesign.
 * Comentarios opcionales
 
-Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP de Recursos AEM.
+Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-En AEM, una carpeta tiene los siguientes componentes:
+En Experience Manager, una carpeta tiene los siguientes componentes:
 
-* Entidades: Los elementos secundarios de Assets son sus representaciones.
+* Entidades: Los hijos de los activos son sus representaciones.
 * Propiedades
 * Vínculos
 
@@ -98,278 +103,176 @@ La API HTTP de Assets incluye las siguientes funciones:
 
 Recupera una representación sirena de una carpeta existente y de sus entidades secundarias (subcarpetas o recursos).
 
-**Solicitar**
+**Solicitud**: `GET /api/assets/myFolder.json`
 
-```
-GET /api/assets/myFolder.json
-```
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-**Códigos de respuesta**
+* 200 - OK - éxito.
+* 404 - NO ENCONTRADO - la carpeta no existe o no es accesible.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-```
-200 - OK - success
-404 - NOT FOUND - folder does not exist or is not accessible
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+**Respuesta**: La clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la URL señalada por el vínculo con un `rel` de `self`.
 
-**Respuesta**
+## Crear una carpeta {#create-a-folder}
 
-La clase de la entidad devuelta es assets/folder.
+Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si `*` se proporciona un nombre en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
 
-Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la URL señalada por el vínculo con un `rel` de `self`.
+Si no existe el nodo principal de la ruta proporcionada, se produce un error en una llamada de API con un código de respuesta `500` . Una llamada devuelve un código de respuesta `409` si la carpeta ya existe.
 
-## Create a Folder {#create-a-folder}
-
-Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si se da un * en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
-
-La operación fallará con un código de `500` respuesta si el nodo principal de la ruta dada no existe. Si la carpeta ya existe, se devuelve un código de `409` respuesta.
-
-**Parámetros**
-
-* `name` - Nombre de la carpeta
+**Parámetros**: `name` - Nombre de la carpeta
 
 **Solicitar**
 
-```
-POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'
-```
+* `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
+* `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-o
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-```
-POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
-```
-
-**Códigos de respuesta**
-
-```
-201 - CREATED - on successful creation
-409 - CONFLICT - if folder already exist
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CREADO - sobre la creación exitosa.
+* 409 - CONFLICTO - si la carpeta ya existe.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
 ## Crear un recurso {#create-an-asset}
 
-Crea un recurso DAM en la ruta dada con el archivo dado. Si se da un * en lugar de un nombre de nodo, el servlet utilizará el nombre del parámetro o el nombre del archivo como nombre de nodo.
+Coloque el archivo proporcionado en la ruta proporcionada para crear un recurso en el repositorio de DAM. Si `*` se proporciona un nombre en lugar de un nombre de nodo, el servlet utiliza el nombre de parámetro o el nombre de archivo como nombre de nodo.
 
-**Parámetros**
-
-* `name` - Nombre del recurso
-* `file` - Referencia de archivo
+**Parámetros**: Los parámetros son `name` para el nombre del recurso y `file` para la referencia del archivo.
 
 **Solicitar**
 
-```
-POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"
-```
+* `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
+* `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
 
-o
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-```
-POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"
-```
+* 201 - CREADO - si el recurso se ha creado correctamente.
+* 409 - CONFLICTO - si ya existe activo.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-**Códigos de respuesta**
+## Actualizar un binario de recursos {#update-asset-binary}
 
-```
-201 - CREATED - if Asset has been created successfully
-409 - CONFLICT - if Asset already exist
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+Actualiza el binario de un recurso (representación con el nombre original). Una actualización desencadena el flujo de trabajo predeterminado de procesamiento de recursos para ejecutarse, si está configurado.
 
-## Actualizar binario de recursos {#update-asset-binary}
+**Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
-Actualiza un binario de Assets (representación con el nombre original). Esto activará el flujo de trabajo de recursos predeterminado si está configurado.
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-**Solicitar**
-
-```
-PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png
-```
-
-**Códigos de respuesta**
-
-```
-200 - OK - if Asset has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 200 - Correcto: si el recurso se ha actualizado correctamente.
+* 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
 ## Actualización de metadatos de recursos {#update-asset-metadata}
 
 Actualiza las propiedades de metadatos de recurso. Si actualiza cualquier propiedad de la `dc:` Área de nombres, la API actualiza la misma propiedad en la `jcr` Área de nombres. La API no sincroniza las propiedades de las dos Áreas de nombres.
 
-**Solicitar**
+**Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
-```
-PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'
-```
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-**Códigos de respuesta**
-
-```
-200 - OK - if Asset has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 200 - Correcto: si el recurso se ha actualizado correctamente.
+* 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
 ## Creación de una representación de recursos {#create-an-asset-rendition}
 
-Crea una nueva representación de recursos para un recurso. Si no se proporciona el nombre del parámetro de solicitud, el nombre del archivo se utiliza como nombre de representación.
+Cree una nueva representación de recursos para un recurso. Si no se proporciona el nombre del parámetro de solicitud, el nombre del archivo se utiliza como nombre de representación.
 
-**Parámetros**
-
-* `name` - Nombre de la representación
-* `file` - Referencia de archivo
+**Parámetros** Los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
 
 **Solicitar**
 
-```
-POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"
-```
-
-o
-
-```
-POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"
-```
+* `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
+* `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
 **Códigos de respuesta**
 
-```
-201 - CREATED - if Rendition has been created successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CREADO - si la representación se ha creado correctamente.
+* 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-## Actualizar una representación de recursos {#update-an-asset-rendition}
+## Actualización de una representación de recursos {#update-an-asset-rendition}
 
 Las actualizaciones reemplazan respectivamente una representación de recursos con los nuevos datos binarios.
 
-**Solicitar**
+**Solicitud**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-```
-PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png
-```
+**Códigos** de respuesta Los códigos de respuesta son:
 
-**Códigos de respuesta**
+* 200 - Correcto: si la representación se ha actualizado correctamente.
+* 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-```
-200 - OK - if Rendition has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
-## Crear un comentario de recurso {#create-an-asset-comment}
+## Añadir un comentario en un recurso {#create-an-asset-comment}
 
 Crea un nuevo comentario de recurso.
 
-**Parámetros**
+**Parámetros**: Los parámetros son `message` para el cuerpo del mensaje del comentario y `annotationData` para los datos de anotación en formato JSON.
 
-* `message` - Mensaje
-* `annotationData` - Datos de anotación (JSON)
+**Solicitud**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**Solicitar**
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-```
-POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"
-```
-
-**Códigos de respuesta**
-
-```
-201 - CREATED - if Comment has been created successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CREADO - si Comment se ha creado correctamente.
+* 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
 ## Copiar una carpeta o un recurso {#copy-a-folder-or-asset}
 
-Copia una carpeta o un recurso en la ruta dada a un nuevo destino.
+Copia una carpeta o un recurso disponible en la ruta proporcionada a un nuevo destino.
 
-**Encabezados de solicitud**
+**Encabezados** de solicitud: Los parámetros son:
 
-```
-X-Destination - a new destination URI within the API solution scope to copy the resource to
-X-Depth - either 'infinity' or '0'. The value '0' only copies the resource and its properties, no children.
-X-Overwrite - 'F' to prevent overwriting an existing destination
-```
+* `X-Destination` - un nuevo URI de destino dentro del ámbito de la solución API al que copiar el recurso.
+* `X-Depth` - `infinity` o `0`. Usar `0` sólo copia el recurso y sus propiedades, y no sus elementos secundarios.
+* `X-Overwrite` - Se utiliza `F` para evitar la sobrescritura de un recurso en el destino existente.
 
-**Solicitar**
+**Solicitud**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-```
-COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"
-```
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-**Códigos de respuesta**
-
-```
-201 - CREATED - if folder/asset has been copied to a non-existing destination
-204 - NO CONTENT - if the folder/asset has been copied to an existing destination
-412 - PRECONDITION FAILED - if a request header is missing or
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - CREADO - si la carpeta o el recurso se ha copiado en un destino no existente.
+* 204 - SIN CONTENIDO - si la carpeta o el recurso se ha copiado en un destino existente.
+* 412 - ERROR DE PRECONDICIÓN - si falta un encabezado de solicitud.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
 ## Mover una carpeta o un recurso {#move-a-folder-or-asset}
 
 Mueve una carpeta o un recurso de la ruta dada a un nuevo destino.
 
-**Encabezados de solicitud**
+**Encabezados** de solicitud: Los parámetros son:
 
-```
-X-Destination - a new destination URI within the API solution scope to copy the resource to
-X-Depth - either 'infinity' or '0'. The value '0' only copies the resource and its properties, no children.
-X-Overwrite - either 'T' to force deletion of existing resources or 'F' to prevent overwriting an existing resource.
-```
+* `X-Destination` - un nuevo URI de destino dentro del ámbito de la solución API al que copiar el recurso.
+* `X-Depth` - `infinity` o `0`. Usar `0` sólo copia el recurso y sus propiedades, y no sus elementos secundarios.
+* `X-Overwrite` - Utilice `T` para forzar la eliminación de recursos existentes o `F` para evitar la sobrescritura de recursos existentes.
 
-**Solicitar**
+**Solicitud**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-```
-MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
-```
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-**Códigos de respuesta**
+* 201 - CREADO - si la carpeta o el recurso se ha copiado en un destino no existente.
+* 204 - SIN CONTENIDO - si la carpeta o el recurso se ha copiado en un destino existente.
+* 412 - ERROR DE PRECONDICIÓN - si falta un encabezado de solicitud.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-```
-201 - CREATED - if folder/asset has been copied to a non-existing destination
-204 - NO CONTENT - if the folder/asset has been copied to an existing destination
-412 - PRECONDITION FAILED - if a request header is missing or
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+## Eliminación de una carpeta, un recurso o una representación {#delete-a-folder-asset-or-rendition}
 
-## Eliminar una carpeta, recurso o representación {#delete-a-folder-asset-or-rendition}
-
-Elimina un recurso (-tree) en la ruta dada.
+Elimina un recurso (-tree) en la ruta proporcionada.
 
 **Solicitar**
 
-```
-DELETE /api/assets/myFolder
-```
+* `DELETE /api/assets/myFolder`
+* `DELETE /api/assets/myFolder/myAsset.png`
+* `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-o
+**Códigos** de respuesta: Los códigos de respuesta son:
 
-```
-DELETE /api/assets/myFolder/myAsset.png
-```
-
-o
-
-```xml
-DELETE /api/assets/myFolder/myAsset.png/renditions/original
-```
-
-**Códigos de respuesta**
-
-```
-200 - OK - if folder has been deleted successfully
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 200 - Correcto: si la carpeta se ha eliminado correctamente.
+* 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
+* 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
