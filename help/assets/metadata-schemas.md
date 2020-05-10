@@ -3,10 +3,10 @@ title: 'esquemas de metadatos para definir la presentación de la página de pro
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6151c1afe3006e8d4b93648fc9eb779c73df4181
+source-git-commit: 739f1c6fcc910ed134849c27a44a6feccd1684c9
 workflow-type: tm+mt
-source-wordcount: '2741'
-ht-degree: 9%
+source-wordcount: '2738'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ Las organizaciones cuentan con un modelo de metadatos que mejora la detección, 
 
 En [!DNL Adobe Experience Manager Assets], los esquemas contienen campos específicos para la información específica que se debe rellenar. También contiene información de diseño para mostrar los campos de metadatos de forma sencilla. Las propiedades de metadatos incluyen título, descripción, tipos MIME, etiquetas y mucho más. Puede utilizar el editor de formularios [!UICONTROL Esquema de] metadatos para modificar los esquemas existentes o agregar esquemas de metadatos personalizados.
 
-Para vista de la página de propiedades de un recurso, siga estos pasos:
+Para vista y edición de la página de propiedades de un recurso, siga estos pasos:
 
 1. Toque o haga clic en el icono Propiedades **[!UICONTROL de la]** Vista en Acciones rápidas del mosaico del recurso en vista de tarjetas.
 
@@ -35,36 +35,22 @@ Para vista de la página de propiedades de un recurso, siga estos pasos:
 
 Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar formularios](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de Esquema de metadatos para obtener más información. Si modifica el esquema de metadatos para un tipo MIME determinado, se modificará la presentación de la página de propiedades de los recursos con el tipo MIME actual y todos los subtipos de recursos. Por ejemplo, la modificación de un esquema jpeg en `default/image` solo modifica la presentación de metadatos (propiedades del recurso) de los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modifican la presentación de los metadatos de todos los tipos de recursos.
 
-1. Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] la interfaz vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos.
+## Formularios de esquema de metadatos {#default-metadata-schema-forms}
 
-## Formularios de Esquema de metadatos disponibles de forma predeterminada {#available-metadata-schema-templates}
+Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] la interfaz vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos.
 
-[!DNL Experience Manager] proporciona las siguientes plantillas:
+[!DNL Experience Manager] proporciona las siguientes plantillas de formulario de Esquema de metadatos:
 
-### predeterminada {#default-template}
-
-El [!UICONTROL valor predeterminado] es el formulario de esquema de metadatos base para los recursos. Los siguientes formularios secundarios heredan las propiedades del formulario predeterminado:
-
-**image** es el formulario de esquema para los recursos con el tipo MIME &quot;image&quot;. Por ejemplo, `image/jpeg`, `image/png`, etc. El formulario &quot;imagen&quot; tiene las siguientes plantillas de formulario secundarias:
-* **jpeg** es el formulario de esquema para recursos con subtipo `jpeg`.
-
-* **tiff** es el formulario de esquema para los recursos con subtipo `tiff`.
-
-**aplicación** es el formulario de esquema para los recursos con tipo MIME `application`. Por ejemplo, `application/pdf`, `application/zip`, etc. **pdf** es el formulario de esquema para recursos con subtipo `pdf`.
-
-**video** es el formulario de esquema para recursos con tipo MIME `video`, como `video/avi`, `video/mp4`, etc.
-
-### colección {#collection-template}
-
-La [!UICONTROL colección] es el formulario de esquema para las colecciones.
-
-### contentfragment {#contentfragment-template}
-
-El [!UICONTROL fragmento] de contenido es el formulario de esquema para fragmentos de contenido.
-
-### forms {#forms-template}
-
-El formulario de esquema de [!UICONTROL formularios] está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager.
+| Plantillas |  | Descripción |
+|---|---|---|
+| [!UICONTROL predeterminada] |  | Formulario de esquema de metadatos base para los recursos. |
+|  | Los siguientes formularios secundarios heredan las propiedades del formulario [!UICONTROL predeterminado] : |  |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Formulario de Esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo, image/jpeg, image/png, etc. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de Esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de Esquema para los recursos con subtipo [!UICONTROL tiff].</li></ul> |
+|  | <ul><li> [!UICONTROL aplicación]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;aplicación&quot;, por ejemplo, application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulario de Esquema para recursos con subtipo pdf. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;video&quot;, como video/avi, video/mp4, etc. |
+| [!UICONTROL colección] |  | Formulario de Esquema para colecciones. |
+| [!UICONTROL contentfragment] |  | Formulario de Esquema para fragmentos de contenido. |
+| [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager. |
 
 >[!NOTE]
 >
