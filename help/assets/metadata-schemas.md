@@ -1,40 +1,37 @@
 ---
-title: Esquemas de metadatos
+title: 'esquemas de metadatos para definir la presentación de la página de propiedades de metadatos en [!DNL Adobe Experience Manager Assets]. '
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2688'
+ht-degree: 9%
 
 ---
 
 
 # Esquemas de metadatos {#metadata-schemas}
 
-En Recursos Adobe Experience Manager (AEM), un esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos que utilizan el esquema en cuestión. Las propiedades de metadatos incluyen título, descripción, tipos MIME, etiquetas, etc.
+Las organizaciones cuentan con un modelo de metadatos que mejora la detección, el uso, la interoperabilidad de los recursos, etc. La aplicación correcta de metadatos es sacrosanta para mantener los procesos y flujos de trabajo basados en metadatos. Para atenerse a las normas y estrategias de metadatos de toda la organización, puede utilizar esquemas de metadatos que ayudan a los usuarios de DAM a alinearse. Adobe Experience Manager permite crear, mantener y aplicar esquemas de metadatos con métodos sencillos y flexibles.
 
-Puede utilizar el editor de formularios Esquema de metadatos para modificar esquemas existentes o agregar esquemas de metadatos personalizados.
+En [!DNL Adobe Experience Manager Assets], los esquemas contienen campos específicos para la información específica que se debe rellenar. También contiene información de diseño para mostrar los campos de metadatos de forma sencilla. Las propiedades de metadatos incluyen título, descripción, tipos MIME, etiquetas y mucho más. Puede utilizar el editor de formularios [!UICONTROL Esquema de] metadatos para modificar los esquemas existentes o agregar esquemas de metadatos personalizados.
 
-1. Para vista de la página de propiedades de un recurso, toque o haga clic en el icono Propiedades **[!UICONTROL de la]** Vista en Acciones rápidas del mosaico del recurso en vista de tarjetas.
+1. Para vista de la página [!UICONTROL Propiedades] de un recurso, haga clic en Propiedades **[!UICONTROL de la]** Vista desde acciones rápidas en el mosaico del recurso en la vista de la tarjeta. También puede seleccionar el recurso en la interfaz y, a continuación, hacer clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
 
    ![Acciones rápidas en el mosaico de recursos](assets/chlimage_1-170.png)
 
-   Como alternativa, seleccione el recurso en la interfaz de usuario y toque o haga clic en el icono **[!UICONTROL Propiedades]** de la barra de herramientas.
-
-   ![Icono Propiedades en la barra de herramientas superior](assets/chlimage_1-171.png)
-
-1. Edite varias propiedades de metadatos en las distintas fichas. Sin embargo, no puede modificar el tipo de recurso en la página de propiedades.
+1. Edite varias propiedades de metadatos en las distintas fichas. Sin embargo, no puede modificar el tipo de recurso en la página [!UICONTROL Propiedades] .
 
    ![Ficha Básico de Propiedades del recurso, donde no se puede cambiar el tipo de recurso](assets/asset-properties-basic-tab.png)
 
-   *Figura: Ficha Básico en Propiedades del recurso.*
+   *Figura: Ficha Básico de[!UICONTROL Propiedades]de recurso.*
 
    Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar formularios](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de Esquema de metadatos para obtener más información. Si modifica el esquema de metadatos para un tipo MIME determinado, se modificará la presentación de la página de propiedades de los recursos con el tipo MIME actual y todos los subtipos de recursos. Por ejemplo, la modificación de un esquema jpeg en `default/image` solo modifica la presentación de metadatos (propiedades del recurso) de los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modifican la presentación de los metadatos de todos los tipos de recursos.
 
-1. Para ver una lista de formularios/plantillas, haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
+1. Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] la interfaz vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos.
 
-   ![Página que muestra la lista de los formularios de Esquema de metadatos](assets/chlimage_1-173.png)
-
-   AEM proporciona las siguientes plantillas listas para usar:
+   [!DNL Experience Manager] proporciona las siguientes plantillas predeterminadas:
    * **predeterminado**: Formulario de esquema de metadatos base para los recursos.
 
       Los siguientes formularios secundarios heredan las propiedades del formulario predeterminado:
@@ -53,7 +50,7 @@ Puede utilizar el editor de formularios Esquema de metadatos para modificar esqu
 
 >[!NOTE]
 >
->Para vista de los formularios secundarios de un formulario de esquema, toque o haga clic en el nombre del formulario de esquema.
+>Para vista de los formularios secundarios de un formulario de esquema, haga clic en el nombre del formulario de esquema.
 
 ## Añadir un formulario de esquema de metadatos {#add-a-metadata-schema-form}
 
@@ -61,32 +58,21 @@ Puede utilizar el editor de formularios Esquema de metadatos para modificar esqu
 
    >[!NOTE]
    >
-   >Las plantillas sin editar tienen un icono de candado delante de ellas. Si personaliza cualquiera de las plantillas, desaparece el icono de bloqueo antes de que desaparezca la plantilla.
+   >Las plantillas sin editar tienen un icono de candado. Si personaliza cualquiera de las plantillas, el icono de bloqueo desaparece de antes de la plantilla.
 
-1. En el cuadro de diálogo, introduzca el título del formulario de Esquema y, a continuación, haga clic en **[!UICONTROL Crear]** para completar el proceso de creación del formulario.
-
-   ![Especifique el título y cree un formulario de Esquema de metadatos](assets/chlimage_1-174.png)
+1. En el cuadro de diálogo, introduzca el título del formulario de esquema y haga clic en **[!UICONTROL Crear]** para completar el proceso de creación del formulario.
 
 ## Editar formularios de esquema de metadatos {#edit-metadata-schema-forms}
 
-Puede editar un formulario de esquema de metadatos que se acaba de agregar o que ya exista. El formulario de esquema de metadatos incluye lo siguiente:
+Puede editar un formulario de esquema de metadatos que se acaba de agregar o que ya exista. El formulario de esquema de metadatos incluye fichas y elementos de formulario en fichas. Puede asignar/configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio de CRX. Puede agregar nuevas fichas o elementos de formulario al formulario de esquema de metadatos. Las fichas y los elementos de formulario derivados del elemento principal están en estado bloqueado. No se pueden alterar a nivel secundario.
 
-* Pestañas
-* Elementos de formulario dentro de las fichas.
-
-Puede asignar/configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio de CRX.
-
-Puede agregar nuevas fichas o elementos de formulario al formulario de esquema de metadatos. Las fichas y los elementos de formulario derivados del elemento principal están en estado bloqueado. No se pueden alterar a nivel secundario.
-
-1. En la página Formularios de esquema, active la casilla de verificación situada antes de un formulario y, a continuación, haga clic en el icono Editar de la barra de herramientas.
-
-   ![Icono de edición en la barra de herramientas de formularios de Esquema de metadatos](assets/chlimage_1-175.png)
+1. In the Schema Forms page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
 1. En la página **[!UICONTROL Editor de esquemas de metadatos]**, personalice la página de propiedades del recurso arrastrando uno o varios componentes de la lista de tipos de componentes de la pestaña **[!UICONTROL Generar formulario]** a **[!UICONTROL Básico]**.
 
    ![Editor de Esquemas de metadatos para personalizar la página Propiedades del recurso](assets/metadata-schema-editor.png)
 
-   *Figura: Ficha[!UICONTROL Básico]del editor de Esquema[!UICONTROL de]metadatos.*
+   *Figura:[!UICONTROL Ficha Básica]del editor de Esquema[!UICONTROL de]metadatos.*
 
 1. Para configurar un componente, selecciónelo y modifique sus propiedades en la ficha **[!UICONTROL Configuración]** .
 
@@ -95,7 +81,7 @@ Puede agregar nuevas fichas o elementos de formulario al formulario de esquema d
 La ficha **[!UICONTROL Generar formulario]** lista los elementos de formulario que se utilizan en el formulario de esquema. La ficha **[!UICONTROL Configuración]** proporciona los atributos de cada elemento seleccionado en la ficha **[!UICONTROL Generar formulario]** . La siguiente tabla lista los elementos de formulario disponibles en la ficha **[!UICONTROL Generar formulario]** :
 
 | Nombre del componente | Descripción |
-|---|---|
+| -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Sección de encabezado] | Añada un encabezado de sección para una lista de componentes comunes. |
 | [!UICONTROL Texto de una sola línea] | Añada una propiedad de texto de una sola línea. Se almacena como una cadena. |
 | [!UICONTROL Texto con varios valores] | Añada una propiedad de texto con varios valores. Se almacena como una matriz de cadenas. |
@@ -110,6 +96,9 @@ La ficha **[!UICONTROL Generar formulario]** lista los elementos de formulario q
 | [!UICONTROL Referencias de productos] | Añada para mostrar la lista de los productos vinculados con el recurso. |
 | [!UICONTROL Clasificación del recurso] | Añada a las opciones de visualización para clasificar el recurso. |
 | [!UICONTROL Metadatos de contexto] | Añada para controlar la visualización de otras fichas de metadatos en la página de propiedades de los recursos. |
+
+<!-- TBD: Check against 6.5.4.0 if the list of components is complete.
+-->
 
 #### Edición del componente de metadatos {#edit-the-metadata-component}
 
@@ -135,9 +124,7 @@ Para asegurarse de que el componente se muestra correctamente en el formulario d
 * **Opciones**: Utilice esta propiedad para especificar opciones en una lista
 * **Descripción** : Utilice esta propiedad para agregar una breve descripción para el componente de metadatos.
 * **Clase**: Clase de objeto con la que está asociada la propiedad.
-* **Eliminar**: Haga clic en este icono para eliminar un componente del formulario de esquema.
-
-![Icono Eliminar del formulario de Esquema de metadatos](assets/chlimage_1-177.png)
+* **Eliminar**: Haga clic en [!UICONTROL Eliminar] para eliminar un componente del formulario de esquema.
 
 >[!NOTE]
 >
@@ -175,28 +162,23 @@ Haga clic en `X` para eliminar una ficha.
 
 ## Eliminar formularios de esquema de metadatos {#delete-metadata-schema-forms}
 
-AEM solo permite eliminar formularios esquema personalizados. No permite eliminar los formularios o las plantillas de esquema predeterminados. Sin embargo, puede eliminar cualquier cambio personalizado en estos formularios.
+[!DNL Experience Manager] permite eliminar únicamente formularios esquema personalizados. No permite eliminar los formularios o las plantillas de esquema predeterminados. Sin embargo, puede eliminar cualquier cambio personalizado en estos formularios.
 
-Para eliminar un formulario, selecciónelo y haga clic en el icono Eliminar.
-
-![Icono Eliminar para eliminar el formulario de Esquema de metadatos personalizado](assets/chlimage_1-183.png)
-
-<!--![chlimage_1-47](assets/chlimage_1-177.png) -->
->[!NOTE]
->
->Después de eliminar los cambios personalizados a un formulario predeterminado, el icono de bloqueo vuelve a aparecer antes en la interfaz de Esquema de metadatos para indicar que el formulario ha vuelto a su estado predeterminado.
+Para eliminar un formulario, selecciónelo y haga clic en Eliminar.
 
 >[!NOTE]
 >
->No puede eliminar los formularios de esquema de metadatos predeterminados en Recursos AEM.
+>* Después de eliminar los cambios personalizados a un formulario predeterminado, el icono de bloqueo vuelve a aparecer antes en la interfaz de Esquema de metadatos para indicar que el formulario ha vuelto a su estado predeterminado.
+>* No puede eliminar los formularios de esquema de metadatos predeterminados en Recursos.
+
 
 ## Formularios de Esquema para tipos MIME {#schema-forms-for-mime-types}
 
-Recursos AEM proporciona formularios predeterminados para varios tipos MIME de forma predeterminada. Sin embargo, puede agregar formularios personalizados para recursos de varios tipos MIME.
+Assets proporciona formularios predeterminados para varios tipos MIME predeterminados. Sin embargo, puede agregar formularios personalizados para recursos de varios tipos MIME.
 
 ### Añadir nuevos formularios para tipos MIME {#add-new-forms-for-mime-types}
 
-Cree un nuevo formulario bajo el tipo de formulario correspondiente. Por ejemplo, para agregar una nueva plantilla para el subtipo **imagen/png**, cree el formulario en los formularios de “imagen”. El título del formulario de esquema es el nombre del subtipo. En este caso, el título es “png.**”**
+Cree un nuevo formulario bajo el tipo de formulario correspondiente. For example, to add a new template for the `image/png` subtype, create the form under the &quot;image&quot; forms. El título del formulario de esquema es el nombre del subtipo. In this case, the title is `png`.
 
 #### Usar una plantilla de esquema existente para varios tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -205,14 +187,14 @@ Puede utilizar una plantilla existente para otro tipo MIME. Por ejemplo, utilice
 En este caso, cree un nuevo nodo en `/etc/dam/metadataeditor/mimetypemappings` el repositorio de CRX. Especifique un nombre para el nodo y defina las siguientes propiedades:
 
 | Nombre | Descripción | Tipo | Value |
-|---|---|---|---|
+|------|-------------|------|-------|
 | `exposedmimetype` | Nombre del formulario existente que se va a asignar | `String` | `image/jpeg` |
 | `mimetypes` | Lista de tipos MIME que utilizan el formulario definido en el `exposedmimetype` atributo | `String` | `image/png` |
 
-AEM Assets asigna los siguientes tipos MIME y formularios de esquema:
+Assets asigna los siguientes tipos MIME y formularios de esquema:
 
 | Formulario de Esquema | Tipos MIME |
-|---|---|
+| --------------------------- | --------------------------------------------------- |
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
 | application/pdf | application/postscript |
@@ -231,25 +213,20 @@ La función Esquema de metadatos solo está disponible para los administradores.
 
 ## Aplicación de metadatos específicos de carpetas {#apply-folder-specific-metadata}
 
-Recursos AEM le permite definir una variante de un esquema de metadatos y aplicarla a una carpeta específica.
+Recursos permite definir una variante de un esquema de metadatos y aplicarla a una carpeta específica.
 
 Por ejemplo, puede definir una variante del esquema de metadatos predeterminado y aplicarla a una carpeta. Al aplicar el esquema modificado, se anula el esquema de metadatos predeterminado original que se aplica a los recursos de la carpeta.
 
-Solo los recursos cargados en la carpeta a la que se aplica este esquema se ajustarán a los metadatos modificados definidos en el esquema de metadatos de la variante.
-
-Los recursos de otras carpetas en las que se aplica el esquema original siguen ajustándose a los metadatos definidos en el esquema original.
+Solo los recursos cargados en la carpeta a la que se aplica este esquema se ajustan a los metadatos modificados definidos en el esquema de metadatos de la variante. Los recursos de otras carpetas en las que se aplica el esquema original siguen ajustándose a los metadatos definidos en el esquema original.
 
 La herencia de metadatos por recursos se basa en el esquema que se aplica a la carpeta de primer nivel de la jerarquía. Es decir, si una carpeta no contiene subcarpetas, los recursos de la carpeta heredarán los metadatos del esquema aplicado a la carpeta.
 
 Si la carpeta tiene una subcarpeta, los recursos de la subcarpeta heredarán los metadatos del esquema aplicado en el nivel de subcarpeta si se aplica un esquema diferente en el nivel de subcarpeta. Sin embargo, si no se aplica ningún esquema o el mismo esquema en el nivel de subcarpeta, los recursos de subcarpeta heredarán los metadatos del esquema aplicado en el nivel de carpeta principal.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
-1. Seleccione la casilla de verificación situada antes de un formulario, por ejemplo el formulario de metadatos predeterminado, y toque o haga clic en el icono de copia y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo `my_default`. También puede crear un formulario personalizado.
-   ![Icono Copiar para copiar un formulario predeterminado y guardarlo como formulario personalizado en la página Formularios de Esquema de metadatos](assets/chlimage_1-184.png)
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
+1. Seleccione la casilla de verificación situada antes de un formulario, por ejemplo el formulario de metadatos predeterminado, y haga clic en **[!UICONTROL Copiar]** y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo `my_default`. También puede crear un formulario personalizado.
 
-1. En la página Formularios **[!UICONTROL de Esquema de]** metadatos, seleccione el `my_default` formulario y, a continuación, haga clic en el icono **[!UICONTROL Editar]** .
-
-   ![Icono de edición para abrir el Editor de Esquemas de metadatos y editar un formulario de Esquema](assets/chlimage_1-185.png)
+1. En la página Formularios **[!UICONTROL de Esquema de]** metadatos, seleccione el `my_default` formulario y, a continuación, haga clic en **[!UICONTROL Editar]**.
 
 1. En la página Editor **[!UICONTROL de Esquemas de]** metadatos, agregue un campo de texto al formulario de esquema. Por ejemplo, agregue un campo con la **[!UICONTROL Categoría]** label.
 
@@ -258,11 +235,9 @@ Si la carpeta tiene una subcarpeta, los recursos de la subcarpeta heredarán los
    *Figura: Campo de texto agregado al editor de formularios de esquema de metadatos.*
 
 1. Haga clic en **[!UICONTROL Guardar.]** El formulario modificado aparece en la página **[!UICONTROL Metadatos Esquema Forms]** .
-1. Toque o haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
+1. Haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
 
-   ![Aplicar al icono Carpetas para aplicar metadatos personalizados a las carpetas](assets/chlimage_1-187.png)
-
-1. Seleccione la carpeta en la que desea aplicar el esquema modificado y, a continuación, toque o haga clic en **[!UICONTROL Aplicar]**.
+1. Seleccione la carpeta en la que desea aplicar el esquema modificado y, a continuación, haga clic en **[!UICONTROL Aplicar]**.
 
    ![Seleccionar la carpeta a la que aplicar el Esquema de metadatos](assets/chlimage_1-188.png)
 
@@ -276,12 +251,10 @@ Puede definir campos obligatorios en un nivel de carpeta, que se aplican a los r
 
 >[!NOTE]
 >
->Un campo de metadatos puede definirse como obligatorio en función del valor de otro campo. En la vista Tarjetas, AEM no muestra el mensaje de advertencia sobre los metadatos que faltan en estos campos obligatorios de metadatos.
+>Un campo de metadatos puede definirse como obligatorio en función del valor de otro campo. En la vista de la tarjeta, [!DNL Experience Manager] no muestra el mensaje de advertencia sobre la falta de metadatos para estos campos obligatorios de metadatos.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Guarde el formulario de metadatos predeterminado como un formulario personalizado. Por ejemplo, guárdelo como `my_default`.
-
-   ![Formulario de metadatos predeterminado guardado como formulario personalizado](assets/chlimage_1-189.png)
 
 1. Edite el formulario personalizado. Añada un campo obligatorio. Por ejemplo, agregue un campo de **[!UICONTROL Categoría]** y convierta el campo en obligatorio.
 
@@ -289,22 +262,17 @@ Puede definir campos obligatorios en un nivel de carpeta, que se aplican a los r
 
    *Figura: Campo obligatorio en el editor de formularios de esquema de metadatos.*
 
-1. Haga clic en **[!UICONTROL Guardar.]** El formulario modificado aparece en la página **[!UICONTROL Metadatos Esquema Forms]** . Seleccione el formulario y, a continuación, toque o haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
-
-   ![Icono Aplicar a carpetas para aplicar un formulario de metadatos personalizado a la carpeta](assets/chlimage_1-191.png)
+1. Haga clic en **[!UICONTROL Guardar.]** El formulario modificado aparece en la página **[!UICONTROL Metadatos Esquema Forms]** . Seleccione el formulario y, a continuación, haga clic en **[!UICONTROL Aplicar a carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
 
 1. Vaya a la carpeta y cargue algunos recursos con metadatos que faltan en el campo obligatorio que ha agregado al formulario personalizado. Se muestra un mensaje para los metadatos que faltan en el campo obligatorio en la vista de tarjeta del recurso.
 
    ![Mensaje para los metadatos obligatorios que faltan en la vista de tarjetas de recursos al cargar recursos en la carpeta](assets/chlimage_1-192.png)
 
-1. (Opcional) Acceso `https://[server]:[port]/system/console/components/`. Configure y active `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` el componente que está deshabilitado de forma predeterminada. Defina una frecuencia con la que AEM compruebe la validez de los metadatos en los recursos.
-
-   Esta configuración agrega una propiedad `hasValidMetadata` a `jcr:content` los recursos. Con esta propiedad, AEM puede filtrar los resultados en una búsqueda.
-
-   >[!NOTE]
-   >
-   >Si se agrega un recurso después de la comprobación programada, el recurso no se marca con `hasValidMetadata` hasta la siguiente comprobación programada. Los recursos no aparecen en los resultados de búsqueda intermedios.
+1. (Opcional) Acceso `https://[aem_server]:[port]/system/console/components/`. Configure y active `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` el componente que está deshabilitado de forma predeterminada. Defina una frecuencia con la que [!DNL Experience Manager] compruebe la validez de los metadatos en los recursos. Esta configuración agrega una propiedad `hasValidMetadata` a `jcr:content` los recursos. Si utiliza esta propiedad, [!DNL Experience Manager] puede que los resultados del filtro no sean válidos en una búsqueda. Si agrega un recurso después de una comprobación, el recurso no se marca con `hasValidMetadata` hasta la siguiente comprobación programada. Por lo tanto, los recursos no aparecen en los filtros de búsqueda para buscar metadatos no válidos hasta después de la siguiente comprobación programada.
 
    >[!CAUTION]
    >
-   >Las comprobaciones de validación de metadatos requieren muchos recursos y pueden afectar al rendimiento del sistema. Programe las comprobaciones en consecuencia. If the server cannot cope up with the load, try disabling this job.
+   >Las comprobaciones de validación de metadatos requieren muchos recursos y pueden afectar al rendimiento del sistema. Programe las comprobaciones en consecuencia. Si el servidor no puede hacer frente a la carga, intente deshabilitar este trabajo.
+
+<!-- TBD: Add this method to find invalid metadata in the metadata article later.
+-->
