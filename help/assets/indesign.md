@@ -1,14 +1,17 @@
 ---
-title: Integrar [!DNL Recursos Adobe Experience Manager] con [!DNL Adobe InDesign Server]
-description: Obtenga información sobre cómo integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
+title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesign Server]'
+description: Aprenda a [!DNL Adobe Experience Manager Assets] integrarse con [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 4%
 
 ---
 
 
-# Integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server]{#integrating-aem-assets-with-indesign-server}
+# Integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] utilice:
 
@@ -64,7 +67,7 @@ Para integrar el [!DNL InDesign Server] proxy con [!DNL Experience Manager Asset
 Esto solo es necesario si los valores predeterminados no son adecuados para la instancia.
 1. Configure un trabajador [proxy para InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Instale el [!DNL InDesign Server]{#installing-the-indesign-server}
+### Instale el [!DNL InDesign Server] {#installing-the-indesign-server}
 
 Para instalar y inicio el [!DNL InDesign Server] para su uso con [!DNL Experience Manager]:
 
@@ -83,7 +86,7 @@ Para instalar y inicio el [!DNL InDesign Server] para su uso con [!DNL Experienc
    >Si desea guardar los mensajes de salida en un archivo, utilice la redirección; por ejemplo, en Windows:
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### Configurar el flujo de trabajo [!DNL Experience Manager Assets]{#configuring-the-aem-assets-workflow}
+### Configurar el flujo de trabajo [!DNL Experience Manager Assets] {#configuring-the-aem-assets-workflow}
 
 [!DNL Experience Manager Assets] tiene un flujo de trabajo preconfigurado **[!UICONTROL DAM Update Asset]**, que tiene varios pasos de proceso específicos para [!DNL InDesign]:
 
@@ -116,7 +119,7 @@ Para obtener información sobre secuencias de comandos de Indesign, consulte la 
 
 La secuencia `ThumbnailExport.jsx` de comandos ejecutada por el paso del flujo de trabajo de Media Extracción genera una representación en miniatura en formato JPG. Esta representación se utiliza en el paso del flujo de trabajo Miniaturas de proceso para generar las representaciones estáticas requeridas por [!DNL Experience Manager].
 
-Puede configurar el paso del flujo de trabajo Miniaturas de proceso para generar representaciones estáticas de diferentes tamaños. Asegúrese de que no elimina los valores predeterminados, ya que la [!DNL Experience Manager Assets] interfaz los requiere. Por último, el paso del flujo de trabajo Eliminar representación de Previsualización de imagen elimina la representación en miniatura .jpg, ya que ya no es necesaria.
+Puede configurar el paso del flujo de trabajo Miniaturas de proceso para generar representaciones estáticas de diferentes tamaños. Asegúrese de que no elimina los valores predeterminados, ya que la [!DNL Experience Manager Assets] interfaz los requiere. Por último, el paso del flujo de trabajo Eliminar representación de Previsualización de imagen elimina la representación en miniatura de JPG, ya que ya no es necesaria.
 
 #### Page extraction {#page-extraction}
 
@@ -140,7 +143,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 
 * **Diseño** de página: El diseño de página que se utilizará al generar la página resultante.
 
-### Configuración del trabajador proxy para [!DNL InDesign Server]{#configuring-the-proxy-worker-for-indesign-server}
+### Configurar el trabajador proxy para [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -168,7 +171,7 @@ Si [!DNL InDesign Server] y [!DNL Experience Manager] se ejecuta en diferentes h
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
-### Habilitar procesamiento de trabajos en paralelo para [!DNL InDesign Server]{#enabling-parallel-job-processing-for-indesign-server-s}
+### Habilitar procesamiento de trabajos en paralelo para [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
 
 Ahora puede habilitar el procesamiento de trabajos paralelos para IDS. Determinar el número máximo de trabajos paralelos (`x`) que un [!DNL InDesign Server] proceso puede:
 
