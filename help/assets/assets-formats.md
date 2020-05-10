@@ -1,34 +1,32 @@
 ---
-title: Formatos admitidos para los recursos
-description: Lista de los formatos de archivo compatibles con AEM Assets y Dynamic Media y funciones compatibles con cada formato.
+title: Formatos de archivo admitidos para procesamiento en [!DNL Adobe Experience Manager Assets].
+description: Formatos de archivo y tipos MIME admitidos [!DNL Assets] and [!DNL Dynamic Media] por y las características admitidas para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1756'
 ht-degree: 9%
 
 ---
 
 
-# Formatos de recursos admitidos {#assets-supported-formats}
+# Formatos admitidos en [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets admite una amplia gama de formatos de archivo y cada funcionalidad admite distintos tipos MIME.
-
-Para integrar Recursos AEM con otras soluciones de administración de recursos digitales (DAM) compatibles con las normas y software de escritorio, utilice la Extensible Metadata Platform (XMP) de Adobe.
+[!DNL Experience Manager Assets] admite una amplia gama de formatos de archivo y cada funcionalidad admite distintos tipos MIME. Para integrarse [!DNL Assets] con otras soluciones de administración de activos digitales (DAM) compatibles con estándares y software de escritorio, utilice Adobe [!DNL Extensible Metadata Platform] (XMP).
 
 Utilice la leyenda para comprender el nivel de asistencia.
 
 | Nivel de asistencia | Descripción |
-|:---:|---|
+| :-----------: | ------------------------------ |
 | ✓ | Compatible |
 | * | Compatible con funciones de complemento |
 | − | No aplicable |
 
-## Formatos de imagen rasterizada admitidos en Recursos AEM {#supported-raster-image-formats}
+## Formatos de imagen rasterizada admitidos [!DNL Assets] {#supported-raster-image-formats}
 
 | Formato | Almacenamiento | Gestión de metadatos | Extracción de metadatos | Generación de miniaturas | Edición | Reescritura de metadatos | Perspectivas |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -45,7 +43,7 @@ Utilice la leyenda para comprender el nivel de asistencia.
 
 † La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
-## Formatos de imagen rasterizada admitidos en Dynamic Media {#supported-raster-image-formats-dynamic-media}
+## Formatos de imagen rasterizada admitidos [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
 
 | Formato | Cargar<br> (formato de entrada) | Creación<br> de ajustes preestablecidos<br> de imagen<br> (formato de salida) | Representación dinámica<br> de Previsualización<br> | Entregar<br> representación dinámica<br> | Descargar<br> representación dinámica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -66,7 +64,7 @@ Además de la información anterior, considere lo siguiente:
 
 * La reescritura de metadatos funciona para el formato de archivo PSB cuando se agrega al `NComm` controlador.
 
-* Para utilizar Dynamic Media para previsualización y generar representaciones dinámicas para archivos EPS, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para utilizar [!DNL Dynamic Media] la previsualización y generación de representaciones dinámicas para archivos EPS, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para archivos EPS, la reescritura de metadatos se admite en la versión 3.0 o posterior del Convenio de estructura de Documento PostScript (PS-Adobe).
 
