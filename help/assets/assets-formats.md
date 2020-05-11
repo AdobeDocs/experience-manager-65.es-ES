@@ -3,9 +3,9 @@ title: Formatos de archivo admitidos para procesamiento en [!DNL Adobe Experienc
 description: Formatos de archivo y tipos MIME admitidos [!DNL Assets] and [!DNL Dynamic Media] por y las características admitidas para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
+source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1779'
 ht-degree: 9%
 
 ---
@@ -73,6 +73,8 @@ Además de la información anterior, considere lo siguiente:
 ## Formatos de imagen rasterizada no admitidos en Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 La siguiente lista describe los subtipos de formatos de archivo de imagen rasterizada que *no son* compatibles con Dynamic Media.
+
+Consulte también [Detección de formatos de archivo no compatibles para Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * Archivos PNG con un tamaño de fragmento IDAT bueno de 100 MB.
 * Archivos PSB.
