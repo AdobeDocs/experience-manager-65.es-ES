@@ -1,5 +1,5 @@
 ---
-title: Vídeo
+title: Vídeo en Dynamic Media
 description: Aprenda a trabajar con vídeo en Dynamic Media
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -9,12 +9,15 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+workflow-type: tm+mt
+source-wordcount: '11868'
+ht-degree: 8%
 
 ---
 
 
-# Vídeo {#video}
+# Vídeo en Dynamic Media {#video}
 
 En esta sección se describe cómo trabajar con vídeo en Dynamic Media.
 
@@ -85,7 +88,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Anotación de vídeos](managing-video-assets.md#annotate-video-assets) o [anotaciones en recursos](managing-assets-touch-ui.md#annotating)
 
       * [Creación de una versión](managing-assets-touch-ui.md#asset-versioning)
-      * [Aplicación de flujos de trabajo a los recursos](assets-workflow.md) o [inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Aplicación de flujos de trabajo a recursos](assets-workflow.md) o ver [Inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
 
       * [Revisar recursos de carpetas](bulk-approval.md)
       * [Proyectos](../sites-authoring/projects.md)
@@ -948,7 +951,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
 
 >[!NOTE]
 >
->Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media - Híbrido.
+>Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media: híbrido.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
