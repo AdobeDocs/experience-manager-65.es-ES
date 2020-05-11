@@ -3,9 +3,9 @@ title: Administración de derechos digitales en [!DNL Adobe Experience Manager A
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 18862ca1ce80682a28293ca4ba6741dbdd6b12f2
+source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1428'
 ht-degree: 6%
 
 ---
@@ -40,7 +40,7 @@ Puede vista el estado de caducidad de un recurso en la [!UICONTROL línea de tie
 También puede vista el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
 1. Desplácese al recurso para el que desea realizar una vista haciendo referencia a páginas web y recursos compuestos.
-1. Seleccione el recurso y el [!DNL Experience Manager] logotipo.
+1. Seleccione el recurso y haga clic en el [!DNL Experience Manager] logotipo.
 
 1. Elija **[!UICONTROL Referencias]** en el menú.
 
@@ -60,7 +60,7 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
 1. En la [!DNL Assets] consola, haga clic en la **[!UICONTROL opción Buscar]** de la barra de herramientas para mostrar el cuadro Omniture Search.
 
-1. Con el cursor en el cuadro Omniture Search, presione la tecla Retorno para mostrar la página Resultados de la búsqueda.
+1. Con el cursor en el cuadro Omniture Search, presione la tecla Intro para mostrar la página de resultados de la búsqueda.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -76,13 +76,13 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
-Al seleccionar la opción **[!UICONTROL Caducado]** , la [!DNL Assets] consola solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de [!DNL Experience Manager] detectar que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
+Al elegir la opción **[!UICONTROL Caducado]** , la [!DNL Assets] consola solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de [!DNL Experience Manager] detectar que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
 
 Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo de Planificador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado de forma acorde.
 
 Además, si un fallo o error impide que el Planificador detecte los recursos caducados en el ciclo actual, el Planificador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado de caducidad.
 
-To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in [!DNL Experience Manager] Configuration Manager.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Abra [!DNL Experience Manager] Configuration Manager.
 1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado el Planificador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
@@ -94,7 +94,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
    >[!NOTE]
    >
-   >Solo el creador de recursos (la persona que carga un recurso en particular a [!DNL Assets]) recibe un correo electrónico cuando caduca el recurso. Consulte [Configuración de notificaciones](/help/sites-administering/notification.md) por correo electrónico para obtener más detalles sobre la configuración de las notificaciones por correo electrónico en el nivel general [!DNL Experience Manager] .
+   >Solo el creador de recursos (la persona que carga un recurso en particular a [!DNL Assets]) recibe un correo electrónico cuando caduca el recurso. Consulte [cómo configurar la notificación](/help/sites-administering/notification.md) por correo electrónico para obtener más detalles sobre la configuración de las notificaciones por correo electrónico en el nivel general [!DNL Experience Manager] .
 
 1. En el campo Notificación **[!UICONTROL previa en segundos]** , especifique el tiempo en segundos antes de que caduque un recurso cuando desee recibir una notificación con respecto a la caducidad. Si es un administrador o el creador de recursos, recibirá un mensaje antes de que caduque el recurso, en el que se le notificará que el recurso está a punto de caducar después de la hora especificada.
 
@@ -119,7 +119,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. En la [!DNL Assets] interfaz, seleccione un recurso y haga clic en **[!UICONTROL Propiedades]** para mostrar la página de detalles del recurso.
+1. Para mostrar la página de detalles del recurso, en la [!DNL Assets] interfaz, seleccione un recurso y haga clic en **[!UICONTROL Propiedades]**.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -144,7 +144,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Pulse Volver y haga clic en **[!UICONTROL GlobalNav]** para mostrar el panel de búsqueda.
+1. Pulse Volver y haga clic en [!DNL Experience Manager] para mostrar el panel de búsqueda.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
