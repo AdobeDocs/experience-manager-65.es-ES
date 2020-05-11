@@ -4,14 +4,17 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de AEM 6.5 Assets
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 41%
 
 ---
 
 
 # AEM 6.5 Assets User Guide {#assets}
 
-+ [Guía del usuario de [!DNL Assets]](home.md)
++ [[!DNL Assets] guía del usuario](home.md)
 + [Notas de la versión de Recursos AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
@@ -19,7 +22,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [Experiencia de página de inicio de AEM Assets](assets-home-page.md)
    + [Buscar recursos en AEM](search-assets.md)
    + [Recursos multilingües](multilingual-assets.md)
-   + [Utilizar recursos de [!DNL Adobe Stock] en Recursos AEM](aem-assets-adobe-stock.md)
+   + [Uso [!DNL Adobe Stock] de recursos en AEM Assets](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
    + [Flujo de Actividad en la línea de tiempo](activity-stream.md)
@@ -53,7 +56,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [Imágenes panorámicas](panoramic-images.md)
    + [Conjuntos de medios mixtos](mixed-media-sets.md)
    + [Conjuntos de giros](spin-sets.md)
-   + [Vídeo](video.md)
+   + [Vídeo en Dynamic Media](video.md)
    + [Banner de carrusel](carousel-banners.md)
    + [Imágenes interactivas](interactive-images.md)
    + [Vídeos interactivos](interactive-videos.md)
@@ -74,7 +77,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [Personalización y ampliación de Recursos AEM](extending-assets.md)
    + [Procesar recursos con controladores de medios y flujos de trabajo](media-handlers.md)
    + [Ampliar la funcionalidad de búsqueda](searchx.md)
-   + [Instale y configure [!DNL ImageMagick] para trabajar con Recursos AEM](best-practices-for-imagemagick.md)
+   + [Instalación y [!DNL ImageMagick] configuración para trabajar con AEM Assets](best-practices-for-imagemagick.md)
    + [Integrar recursos con flujo de actividad](extending-activity-stream.md)
    + [Ampliar editor de recursos](asseteditorx.md)
    + [API de HTTP de Assets](mac-api-assets.md)
