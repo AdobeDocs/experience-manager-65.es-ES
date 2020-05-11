@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1eb8a0335d3e4697c3cfd5a1e7048dda06bbdaf8
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
 workflow-type: tm+mt
-source-wordcount: '5750'
+source-wordcount: '5753'
 ht-degree: 7%
 
 ---
@@ -98,7 +98,7 @@ Consulte [Instalación del paquete de funciones 18912 para obtener más informac
    * **[!UICONTROL Publicación de recursos]** : puede elegir entre las tres opciones siguientes:
       * **[!UICONTROL Inmediatamente]** significa que, cuando se cargan recursos, el sistema los ingiere y proporciona la URL o incrustación al instante. No es necesaria la intervención del usuario para publicar recursos.
       * **[!UICONTROL Tras la Activación]** , significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar.
-   * **[!UICONTROL Servidor]** de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM puede acceder a las representaciones de Dynamic Media remotas y realizar su previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).
+   * **[!UICONTROL Servidor]** de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM puede acceder a las representaciones de Dynamic Media remotas y realizar la previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).
 A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe Systems le recomienda que deje esta configuración como se especificó.
 
    * **[!UICONTROL Sincronizar todo el contenido]** : <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:
@@ -480,7 +480,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
 ### (Opcional) Ajuste del rendimiento de Dynamic Media - modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Puede ajustar los parámetros de trabajo para un procesamiento más rápido al cargar archivos. Por ejemplo, si está cargando archivos PSD pero no desea procesarlos como plantillas, puede establecer la extracción de capas en false (desactivado). El parámetro de trabajo optimizado aparecerá como `process=none&createTemplate=false`.
+Puede ajustar los parámetros de trabajo para un procesamiento más rápido al cargar archivos. Por ejemplo, si está cargando archivos PSD pero no desea procesarlos como plantillas, puede establecer la extracción de capas en false (desactivado). En ese caso, el parámetro de trabajo optimizado aparecerá como `process=none&createTemplate=false`.
 
 Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;optimizados&quot; para archivos PSD, PDF y Postscript:
 
