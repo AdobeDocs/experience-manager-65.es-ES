@@ -1,8 +1,8 @@
 ---
 title: Modelo SPA
 seo-title: Modelo SPA
-description: Este documento describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de SPA para implementar componentes de SPA editables dentro de AEM.
-seo-description: Este documento describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de SPA para implementar componentes de SPA editables dentro de AEM.
+description: Este documento describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de SPA para implementar componentes de SPA editables en AEM.
+seo-description: Este documento describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de SPA para implementar componentes de SPA editables en AEM.
 uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '2112'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Para permitir que el autor utilice el Editor de AEM SPA para editar el contenido
 
 ## Introducción {#introduction}
 
-Este documento describe el contrato general que debe cumplir cualquier marco de SPA (es decir, el tipo de capa de soporte de AEM) para implementar componentes de SPA editables dentro de AEM.
+Este documento describe el contrato general que debe cumplir cualquier estructura de SPA (es decir, el tipo de capa de soporte de AEM) para implementar componentes de SPA editables dentro de AEM.
 
 >[!NOTE]
 >
@@ -65,7 +68,7 @@ Para obtener más información sobre cómo se produce la asignación de modelos 
 
 Se debe implementar una tercera capa para cada marco de trabajo front-end. Esta tercera biblioteca es responsable de interactuar con las bibliotecas subyacentes y proporciona una serie de puntos de entrada bien integrados y fáciles de usar para interactuar con el modelo de datos.
 
-El resto de este documento describe los requisitos de esta capa específica del marco intermedio y aspira a ser independiente del marco. Si se cumplen los siguientes requisitos, se puede proporcionar una capa específica del marco para que los componentes del proyecto interactúen con las bibliotecas subyacentes encargadas de administrar el modelo de datos.
+En el resto del presente documento se describen los requisitos de este nivel intermedio específico y se aspira a ser independiente del marco. Si se cumplen los siguientes requisitos, se puede proporcionar una capa específica del marco para que los componentes del proyecto interactúen con las bibliotecas subyacentes encargadas de administrar el modelo de datos.
 
 ## Conceptos generales {#general-concepts}
 
@@ -84,7 +87,7 @@ El modelo de página aprovecha el exportador de modelos JSON, que se basa en la 
 * `:hierarchyType`:: Tipo jerárquico de un recurso. Actualmente `PageModelManager` admite el tipo de página
 
 * `:items`:: Recursos de contenido secundario del recurso actual (estructura anidada, solo presentes en contenedores)
-* `:itemsOrder`:: Lista ordenada de los niños. El objeto de mapa JSON no garantiza el orden de sus campos. Al tener el mapa y la matriz actual, el consumidor de la API tiene las ventajas de ambas estructuras
+* `:itemsOrder`:: lista ordenada de los niños. El objeto de mapa JSON no garantiza el orden de sus campos. Al tener el mapa y la matriz actual, el consumidor de la API tiene las ventajas de ambas estructuras
 * `:path`:: Ruta de contenido de un elemento (presente en elementos que representan una página)
 
 Consulte también [Introducción a los servicios de contenido de AEM.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -130,7 +133,7 @@ Los metadatos siguientes deben agregarse al elemento HTML externo producido por 
 
 #### Edición de la declaración de capacidad y el marcador de posición {#editing-capability-declaration-and-placeholder}
 
-Los siguientes metadatos y nombres de clase deben agregarse al elemento HTML externo producido por el componente del proyecto. Permiten que el Editor de páginas ofrezca funciones relacionadas.
+Los siguientes metadatos y nombres de clase deben agregarse al elemento HTML externo producido por el componente del proyecto. Permiten que el Editor de páginas oferta las funcionalidades relacionadas.
 
 * `cq-placeholder`:: Nombre de clase que identifica el marcador de posición de un componente vacío
 * `data-emptytext`:: Etiqueta que mostrará la superposición cuando una instancia de componente esté vacía
@@ -146,9 +149,9 @@ Cada componente debe ampliarse con una funcionalidad que decorará el elemento H
 
 ### Contenedor {#container}
 
-Un contenedor es un componente diseñado para contener y procesar componentes secundarios. Para ello, el contenedor repite las propiedades `:itemsOrder`y `:items``:children` de su modelo.
+Un contenedor es un componente diseñado para contener y procesar componentes secundarios. Para ello, el contenedor se repite sobre las propiedades `:itemsOrder`, `:items` y `:children` de su modelo.
 
-El contenedor obtiene dinámicamente los componentes secundarios del almacén de la ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` biblioteca. A continuación, el contenedor amplía el componente secundario con las capacidades del proveedor de modelos y finalmente lo crea una instancia.
+El contenedor obtiene dinámicamente los componentes secundarios del almacén de la ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` biblioteca. A continuación, el contenedor amplía el componente secundario con las funciones del proveedor de modelos y finalmente lo crea una instancia.
 
 ### Página {#page}
 
@@ -189,7 +192,7 @@ Por ejemplo:
 
 #### Component Mapping {#component-mapping}
 
-La biblioteca de asignación [de](/help/sites-developing/spa-blueprint.md#componentmapping) componentes subyacente y su `MapTo` función se pueden encapsular y ampliar para proporcionar las funcionalidades relativas a la configuración de edición proporcionada junto con la clase de componente actual.
+La [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca subyacente y su `MapTo` función se pueden encapsular y ampliar para proporcionar las funcionalidades relativas a la configuración de edición proporcionada junto con la clase de componente actual.
 
 ```
 const EditConfig = {
@@ -211,7 +214,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-En la implementación anterior, el componente de proyecto se amplía con la funcionalidad de vacío antes de que se registre realmente en el almacén de asignación [de](/help/sites-developing/spa-blueprint.md#componentmapping) componentes. Esto se lleva a cabo encapsulando y ampliando la ` [ComponentMapping](/content.md#main-pars_header_906602219)` biblioteca para introducir la compatibilidad con el objeto de configuración `EditConfig` :
+En la implementación anterior, el componente de proyecto se amplía con la funcionalidad de vacío antes de que se registre realmente en el almacén de asignación [de](/help/sites-developing/spa-blueprint.md#componentmapping) componentes. Esto se lleva a cabo encapsulando y ampliando la [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca para introducir la compatibilidad con el objeto de configuración `EditConfig` :
 
 ```
 /**
@@ -234,7 +237,7 @@ En la implementación anterior, el componente de proyecto se amplía con la func
 ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 ```
 
-## Contrato con el Editor de páginas {#contract-wtih-the-page-editor}
+## Contrato con el Editor de páginas {#contract-with-the-page-editor}
 
 Los componentes del proyecto deben generar como mínimo los siguientes atributos de datos para permitir al editor interactuar con ellos.
 
@@ -269,19 +272,19 @@ El siguiente fragmento ilustra la representación HTML típica de una estructura
 </div>
 ```
 
-## Navegación y enrutamiento {#navigation-and-routing}
+## Navegación y Enrutamiento {#navigation-and-routing}
 
-La aplicación es propietaria del enrutamiento. El desarrollador front-end primero debe implementar un componente de navegación (asignado a un componente de navegación AEM). Este componente procesaría los vínculos de URL que se usarían junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
+La aplicación posee el enrutamiento. El desarrollador front-end primero debe implementar un componente de navegación (asignado a un componente de navegación AEM). Este componente procesaría los vínculos de URL que se usarían junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
 
 La biblioteca subyacente [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) y su ` [ModelRouter](/help/sites-developing/spa-routing.md)` módulo (activado de forma predeterminada) son responsables de la recuperación previa y del acceso al modelo asociado a una ruta de recursos determinada.
 
-Las dos entidades se relacionan con la noción de enrutamiento, pero el ` [ModelRouter](/help/sites-developing/spa-routing.md)` solo es responsable de que el modelo de datos ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` se cargue con una estructura sincronizada con el estado de la aplicación actual.
+Las dos entidades están relacionadas con la noción de enrutamiento, pero el ` [ModelRouter](/help/sites-developing/spa-routing.md)` solo es responsable de que el modelo de datos ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` se cargue con una estructura sincronizada con el estado actual de la aplicación.
 
-Consulte el artículo Enrutamiento [del modelo de](/help/sites-developing/spa-routing.md) SPA para obtener más información.
+Consulte el artículo Enrutamiento [del modelo](/help/sites-developing/spa-routing.md) SPA para obtener más información.
 
 ## SPA en acción {#spa-in-action}
 
-Vea cómo funciona una SPA sencilla y experimente con una SPA usted mismo continuando con el documento [Introducción a SPA en AEM](/help/sites-developing/spa-getting-started-react.md).
+Vea cómo funciona un SPA sencillo y experimente con un SPA usted mismo continuando con el documento [Introducción a SPA en AEM](/help/sites-developing/spa-getting-started-react.md).
 
 ## Lectura adicional {#further-reading}
 
