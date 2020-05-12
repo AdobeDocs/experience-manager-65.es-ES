@@ -1,8 +1,8 @@
 ---
 title: JSON Exporter for Content Services
 seo-title: JSON Exporter for Content Services
-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
-seo-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
+description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
+seo-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -10,18 +10,21 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 4%
 
 ---
 
 
 # JSON Exporter for Content Services{#json-exporter-for-content-services}
 
-Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web.
+Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web.
 
-Proporcionan la entrega de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
+Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
 
-* Aplicaciones de una sola página
+* [Aplicaciones de una sola página](spa-walkthrough.md)
 * Aplicaciones móviles nativas
 * otros canales y puntos de contacto externos a AEM
 
@@ -35,7 +38,7 @@ Con los fragmentos de contenido que utilizan contenido estructurado, puede propo
 
 Con el exportador JSON de AEM, puede entregar el contenido de una(y) página AEM en formato de modelo de datos JSON. Esto puede ser consumido por sus propias aplicaciones.
 
-Dentro de AEM, la entrega se logra mediante el sufijo
+Dentro de AEM, el envío se logra mediante el selector `model` y la `.json` extensión.
 
 `.model.json`
 
@@ -71,13 +74,17 @@ La página puede contener un solo fragmento de contenido o varios componentes de
    >
    >Puede [adaptar sus propios componentes](/help/sites-developing/json-exporter-components.md) para acceder a estos datos y utilizarlos.
 
+   >[!NOTE]
+   >
+   >Aunque no es una implementación estándar, se admiten [varios selectores,](json-exporter-components.md#multiple-selectors) pero `model` debe ser el primero.
+
 ### Información adicional {#further-information}
 
 Consulte también:
 
-* API HTTP de recursos
+* API de HTTP de Assets
 
-   * [API HTTP de recursos](/help/assets/mac-api-assets.md)
+   * [API de HTTP de Assets](/help/assets/mac-api-assets.md)
 
 * Modelos Sling:
 
