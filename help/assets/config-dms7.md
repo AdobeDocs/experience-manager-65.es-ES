@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
+source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
 workflow-type: tm+mt
-source-wordcount: '5759'
+source-wordcount: '5763'
 ht-degree: 7%
 
 ---
@@ -98,7 +98,7 @@ Consulte [Instalación del paquete de funciones 18912 para obtener más informac
    * **[!UICONTROL Publicación de recursos]** : puede elegir entre las tres opciones siguientes:
       * **[!UICONTROL Inmediatamente]** significa que, cuando se cargan recursos, el sistema los ingiere y proporciona la URL o incrustación al instante. No es necesaria la intervención del usuario para publicar recursos.
       * **[!UICONTROL Tras la Activación]** , significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar.
-   * **[!UICONTROL Servidor]** de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM puede acceder a las representaciones de Dynamic Media remotas y realizar su previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).
+   * **[!UICONTROL Servidor]** de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM puede acceder a las representaciones de Dynamic Media remotas y realizar la previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).
 A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe Systems le recomienda que deje esta configuración como se especificó.
 
    * **[!UICONTROL Sincronizar todo el contenido]** : <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:
@@ -502,11 +502,11 @@ Para mantener el modo Dynamic Media - Scene7 sin problemas, Adobe recomienda los
 * Actualice los subprocesos de trabajo en cola predefinidos de flujo de trabajo transitorio de Granite (imágenes y recursos que no son de vídeo).
 * Actualice las conexiones de carga máximas al servidor de Dynamic Media Classic.
 
-#### Actualización de la cola Granite Transient Workflow {#updating-the-granite-transient-workflow-queue}
+#### Actualización de la cola de flujo de trabajo transitorio de Granite {#updating-the-granite-transient-workflow-queue}
 
 La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM. En Dynamic Media, se utiliza para la ingesta y el procesamiento de imágenes.
 
-**Para actualizar la cola Granite Transient Workflow**
+**Para actualizar la cola de flujo de trabajo transitorio de Granite**
 
 1. Vaya a [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) y busque la **cola: Granite Transient Workflow Queue**.
 
@@ -524,11 +524,11 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 1. Toque **[!UICONTROL Guardar]**.
 
-#### Actualización de la cola Granite Workflow {#updating-the-granite-workflow-queue}
+#### Actualización de la cola de flujo de trabajo de Granite {#updating-the-granite-workflow-queue}
 
 La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En Dynamic Media, solía procesar vídeo con el flujo de trabajo de codificación de vídeo **[!UICONTROL de]** Dynamic Media.
 
-**Para actualizar la cola Granite Workflow**
+**Para actualizar la cola de flujo de trabajo de Granite**
 
 1. Navegue hasta `https://<server>/system/console/configMgr` y busque la **cola: Cola** de flujo de trabajo de granito.
 
@@ -546,11 +546,11 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 
 1. Toque **[!UICONTROL Guardar]**.
 
-#### Actualización de la conexión de carga de Scene7 {#updating-the-scene-upload-connection}
+#### Actualización de la conexión de carga de Dynamic Media Classic {#updating-the-scene-upload-connection}
 
 La configuración de la conexión de carga de Scene7 sincroniza los recursos de AEM con los servidores de Dynamic Media Classic.
 
-**Para actualizar la conexión de carga de Scene7**
+**Para actualizar la conexión de carga de Dynamic Media Classic**
 
 1. Ir a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el campo **[!UICONTROL Número de conexiones]** y/o el campo Tiempo de espera **[!UICONTROL del trabajo]** activo, cambie el número como desee.
