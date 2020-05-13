@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+workflow-type: tm+mt
+source-wordcount: '1970'
+ht-degree: 0%
 
 ---
 
@@ -164,6 +167,10 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 1. ¿Por qué los lectores de pantalla no funcionan correctamente con el objeto de campo Fecha y hora?
 
    Los lectores de pantalla no admiten campos de fecha y hora. Sin embargo, puede introducir manualmente la fecha y hora en el campo para que el lector de pantalla lo lea. Utilice la información del objeto o el texto del lector de pantalla para indicar al usuario que seleccione manualmente la fecha y hora del campo.
+
+1. ¿Los formularios HTML5 admiten patrones de visualización para campos flotantes?
+
+   Respuesta: Los formularios HTML5 no admiten patrones de visualización para campos flotantes.
 
 ### Creación de secuencias de comandos {#scripting}
 
