@@ -3,9 +3,9 @@ title: 'esquemas de metadatos para definir la presentación de la página de pro
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39066500057d364ccee57f01f045c11d634b2d0e
+source-git-commit: 2366abc3be015fa637621f235edb8e8d79e51372
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2725'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ Para vista y edición de la página de propiedades de un recurso, siga estos pas
 
    Como alternativa, seleccione un recurso y, a continuación, toque o haga clic en el icono [!UICONTROL Propiedades] de la barra de herramientas.
 
-1. Puede editar varias propiedades de metadatos en las fichas disponibles. Sin embargo, no puede modificar el [!UICONTROL tipo] de recurso en la ficha [!UICONTROL Básico] de la página de propiedades.
+1. Puede editar las distintas propiedades de metadatos editables en las fichas disponibles. Sin embargo, no puede modificar el [!UICONTROL tipo] de recurso en la ficha [!UICONTROL Básico] de la página de propiedades.
 
    ![Ficha Básico de Propiedades del recurso, donde no se puede cambiar el tipo de recurso](assets/asset-properties-basic-tab.png)
 
