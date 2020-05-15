@@ -3,7 +3,10 @@ title: Informes sobre sus recursos digitales
 description: Conozca los informes sobre sus recursos en Recursos AEM que le ayudarán a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 15%
 
 ---
 
@@ -37,8 +40,7 @@ Recursos AEM genera los siguientes informes estándar:
 Los administradores de AEM pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
 
 1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
-
-![](assets/AssetsReportNavigation.png)
+   ![](assets/AssetsReportNavigation.png)
 
 1. En la página Informes [!UICONTROL de] recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
@@ -111,6 +113,8 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * Publicación
 * Publicación de Brand Portal
 * Archivos
+
+Para agregar columnas personalizadas a estos informes, siga estos pasos:
 
 1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 1. En la página Informes [!UICONTROL de] recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
