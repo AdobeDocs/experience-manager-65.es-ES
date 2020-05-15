@@ -1,9 +1,12 @@
 ---
 title: Administre recursos compuestos con referencias y recursos de varias páginas en [!DNL Adobe Experience Manager].
-description: Obtenga información sobre cómo crear referencias a recursos digitales desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator] y [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
+description: Aprenda a crear referencias a recursos digitales desde dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+workflow-type: tm+mt
+source-wordcount: '1359'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Además de eliminar la redundancia, hacer referencia a los recursos en [!DNL Ado
 
 Las referencias se resuelven en función de la ruta de acceso, el ID de documento y el ID de instancia de los recursos a los que se hace referencia.
 
-## Añadir recursos digitales como referencias en [!DNL Adobe Illustrator]{#refai}
+## Añadir recursos digitales como referencias en [!DNL Adobe Illustrator] {#refai}
 
 Puede hacer referencia a recursos digitales existentes desde dentro de un [!DNL Adobe Illustrator] archivo.
 
@@ -41,7 +44,7 @@ Puede hacer referencia a recursos digitales existentes desde dentro de un [!DNL 
 
    *Figura: Referencias de recursos en detalles de recursos.*
 
-## Añadir recursos digitales como referencias en [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
+## Añadir recursos digitales como referencias en [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
 Para hacer referencia a recursos digitales desde dentro de un [!DNL InDesign] archivo, arrastre los recursos al [!DNL InDesign] archivo o exporte el [!DNL InDesign] archivo como archivo ZIP.
 
@@ -63,7 +66,7 @@ Este procedimiento es similar a [añadir recursos digitales como referencias en 
 1. Inicio del `Unarchiver` flujo de trabajo.
 1. Cuando se completa el flujo de trabajo, se hace referencia automáticamente a las referencias de la carpeta Vínculos como subrecursos. Para realizar la vista de una lista de recursos referidos, navegue a la página de detalles del recurso del [!DNL InDesign] recurso y cierre el [raíl](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Añadir recursos digitales como referencias en [!DNL Adobe Photoshop]{#refps}
+## Añadir recursos digitales como referencias en [!DNL Adobe Photoshop] {#refps}
 
 1. Utilice [!DNL Experience Manager] la aplicación de escritorio para acceder a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Utilice la funcionalidad [!UICONTROL Colocar vinculado] en [!DNL Adobe Photoshop]. Consulte [Colocación de recursos en la aplicación](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de escritorio.
 
@@ -82,7 +85,7 @@ Este procedimiento es similar a [añadir recursos digitales como referencias en 
 
 ## Creación de subrecursos {#generate-subassets}
 
-Para los recursos admitidos con formatos de varias páginas: archivos PDF, archivos AI [!DNL Microsoft PowerPoint] y [!DNL Apple Keynote] archivos, y [!DNL Adobe InDesign] archivos — [!DNL Experience Manager] puede generar subrecursos que corresponden a cada página individual del recurso original. Estos subrecursos están vinculados al recurso *principal* y facilitan la vista de varias páginas. Para todos los demás fines, los subactivos se tratan como activos normales en [!DNL Experience Manager].
+Para los recursos admitidos con formatos de varias páginas: archivos PDF, archivos AI [!DNL Microsoft PowerPoint] y [!DNL Apple Keynote] archivos, y [!DNL Adobe InDesign] archivos — [!DNL Experience Manager] puede generar subrecursos que se correspondan con cada página individual del recurso original. Estos subrecursos están vinculados al recurso *principal* y facilitan la vista de varias páginas. Para todos los demás fines, los subactivos se tratan como activos normales en [!DNL Experience Manager].
 
 La generación de subconjuntos está deshabilitada de forma predeterminada. Para habilitar la generación de subrecursos, siga estos pasos:
 
@@ -125,6 +128,10 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 * **[!UICONTROL La opción Información general]** de página muestra todos los subrecursos simultáneamente.
 
 * **[!UICONTROL La opción Línea de tiempo]** del carril izquierdo después de hacer clic en el icono ![del carril](assets/do-not-localize/aem_leftrail_contentonly.png) izquierdo muestra el flujo de actividad del archivo.
+
+## Prácticas recomendadas y limitación {#best-practice-limitation-tips}
+
+* La generación de subrecursos puede requerir muchos recursos en cualquier implementación de Experience Manager. Si está generando subrecursos al cargar recursos complejos, agregue el paso en el flujo de trabajo de recursos de actualización de DAM. Si está generando subrecursos a petición, cree un flujo de trabajo independiente para generar subrecursos. Un flujo de trabajo dedicado le permite omitir los demás pasos del flujo de trabajo de recursos de actualización de DAM y guardar los recursos computacionales.
 
 >[!MORELIKETHIS]
 >
