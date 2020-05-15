@@ -3,7 +3,10 @@ title: Procesar recursos para llevar a cabo procesos de negocios, realizar audit
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Para el procesamiento de recursos, [!DNL Experience Manager] utiliza flujos de trabajo. Los Flujos de trabajo ayudan a automatizar las actividades o la lógica empresarial. De forma predeterminada, se proporcionan pasos granulares para realizar tareas específicas y los desarrolladores pueden crear sus propios pasos personalizados. Estos pasos se pueden combinar en un orden lógico para crear flujos de trabajo. Por ejemplo, un flujo de trabajo puede aplicar una marca de agua a las imágenes cargadas según criterios específicos, como la carpeta en la que se carga, la resolución de la imagen, etc. Otro ejemplo es un flujo de trabajo configurado para marcar con agua y agregar metadatos simultáneamente, crear representaciones, agregar etiquetas inteligentes y publicar en un almacén de datos.
 
-## flujos de trabajo predeterminados disponibles en [!DNL Experience Manager]{#default-workflows}
+## flujos de trabajo predeterminados disponibles en [!DNL Experience Manager] {#default-workflows}
 
 De forma predeterminada, todos los recursos cargados se procesan mediante el flujo de trabajo Actualizar recursos  DAM. El flujo de trabajo se ejecuta para cada recurso cargado y lleva a cabo tareas básicas de administración de recursos, como la generación de representaciones, la reescritura de metadatos, la extracción de páginas, la extracción de medios y la transcodificación.
 
@@ -96,6 +99,10 @@ Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de fl
 
 * Realice una copia del flujo de trabajo de [!UICONTROL DAM Update Asset] y modifíquelo para que se ejecute en una jerarquía de carpetas específica. Este método resulta útil para algunas carpetas.
 * Los pasos de procesamiento adicionales se pueden agregar mediante una división [](/help/sites-developing/workflows-step-ref.md#or-split) O, según se requiera, para tantas carpetas como se necesiten.
+
+## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
+
+* Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
 
 >[!MORELIKETHIS]
 >
