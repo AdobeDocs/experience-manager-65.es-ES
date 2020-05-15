@@ -3,9 +3,9 @@ title: 'esquemas de metadatos para definir la presentación de la página de pro
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2366abc3be015fa637621f235edb8e8d79e51372
+source-git-commit: 69506287c1c8e45d99c3229d701604387bd57ca9
 workflow-type: tm+mt
-source-wordcount: '2725'
+source-wordcount: '2713'
 ht-degree: 10%
 
 ---
@@ -43,9 +43,9 @@ Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] 
 |---|---|---|
 | [!UICONTROL predeterminada] |  | Formulario de esquema de metadatos base para los recursos. |
 |  | Los siguientes formularios secundarios heredan las propiedades del formulario [!UICONTROL predeterminado] : |  |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Formulario de Esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo, image/jpeg, image/png, etc. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de Esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de Esquema para los recursos con subtipo [!UICONTROL tiff].</li></ul> |
-|  | <ul><li> [!UICONTROL aplicación]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;aplicación&quot;, por ejemplo, application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulario de Esquema para recursos con subtipo pdf. |
-|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;video&quot;, como video/avi, video/mp4, etc. |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Formulario de Esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo, `image/jpeg`, `image/png`, etc. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de Esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de Esquema para los recursos con subtipo [!UICONTROL tiff].</li></ul> |
+|  | <ul><li> [!UICONTROL aplicación]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;aplicación&quot;, por ejemplo `application/pdf`, `application/zip`, etc. <br>[!UICONTROL pdf]: Formulario de Esquema para recursos con subtipo pdf. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;video&quot;, como `video/avi`, `video/mp4` etc. |
 | [!UICONTROL colección] |  | Formulario de Esquema para colecciones. |
 | [!UICONTROL contentfragment] |  | Formulario de Esquema para fragmentos de contenido. |
 | [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager. |
