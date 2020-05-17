@@ -3,9 +3,9 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,8 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 
 **Propiedades**:
 
-* `name`  — Nombre de la carpeta. Es lo mismo que el último segmento de la ruta URL sin la extensión
-* `title` — Título opcional de la carpeta que se puede mostrar en lugar de su nombre
+* `name` es el nombre de la carpeta. Es lo mismo que el último segmento de la ruta de URL sin la extensión.
+* `title` es un título opcional de la carpeta que se puede mostrar en lugar de su nombre.
 
 >[!NOTE]
 >
@@ -55,39 +55,39 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 
 **Las carpetas de vínculos** exponen tres vínculos:
 
-* `self`:: Vínculo a sí mismo
-* `parent`:: Vínculo a la carpeta principal
-* `thumbnail`:: (Opcional) vínculo a una imagen en miniatura de la carpeta
+* `self`:: Vínculo a sí mismo.
+* `parent`:: Vínculo a la carpeta principal.
+* `thumbnail`:: (Opcional) vínculo a una imagen en miniatura de la carpeta.
 
 ### Assets {#assets}
 
 En Experience Manager, un recurso contiene los siguientes elementos:
 
-* Propiedades y metadatos del recurso
-* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de PDF o InDesign.
-* Comentarios opcionales
+* Propiedades y metadatos del recurso.
+* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo o páginas extraídas de archivos PDF o Adobe InDesign.
+* Comentarios opcionales.
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 En Experience Manager, una carpeta tiene los siguientes componentes:
 
 * Entidades: Los hijos de los activos son sus representaciones.
-* Propiedades
-* Vínculos
+* Propiedades.
+* Vínculos.
 
 La API HTTP de Assets incluye las siguientes funciones:
 
-* Recuperar una lista de carpetas
-* Crear una carpeta
-* Crear un recurso
-* Actualizar binario de recursos
-* Actualización de metadatos de recursos
-* Creación de una representación de recursos
-* Actualización de una representación de recursos
-* Creación de un comentario de recurso
-* Copiar una carpeta o un recurso
-* Mover una carpeta o un recurso
-* Eliminación de una carpeta, recurso o representación
+* Recupere una lista de carpetas.
+* Crear una carpeta.
+* Cree un recurso.
+* Actualice el binario de recursos.
+* Actualice los metadatos del recurso.
+* Cree una representación de recursos.
+* Actualizar una representación de recursos.
+* Cree un comentario de recurso.
+* Copie una carpeta o un recurso.
+* Mover una carpeta o un recurso.
+* Elimine una carpeta, recurso o representación.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si `*` se proporciona un
 
 Si no existe el nodo principal de la ruta proporcionada, se produce un error en una llamada de API con un código de respuesta `500` . Una llamada devuelve un código de respuesta `409` si la carpeta ya existe.
 
-**Parámetros**: `name` - Nombre de la carpeta
+**Parámetros**: `name` es el nombre de la carpeta.
 
 **Solicitar**
 
