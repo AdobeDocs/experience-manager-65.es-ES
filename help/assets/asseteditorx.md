@@ -3,12 +3,15 @@ title: Ampliar editor de recursos
 description: Obtenga información sobre cómo ampliar las capacidades del editor de recursos con componentes personalizados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '701'
+ht-degree: 11%
 
 ---
 
 
-# Ampliar editor de recursos {#extending-asset-editor}
+# Extend Asset Editor {#extending-asset-editor}
 
 El Editor de recursos es la página que se abre cuando se hace clic en un recurso encontrado a través del recurso compartido, lo que permite al usuario editar aspectos del recurso como metadatos, miniaturas, título y etiquetas.
 
@@ -38,9 +41,9 @@ En la mayoría de los casos, la copia de la muestra existente `init.jsp` (`/apps
 
 ### Configurar acciones de JS {#configuring-js-actions}
 
-Algunos de los componentes de Recursos AEM requieren funciones JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
+Algunos componentes de Recursos AEM requieren funciones JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,13 +53,13 @@ El ejemplo carga este origen de javascript en `head.jsp`(`/apps/geometrixx/compo
 
 Algunos componentes de Recursos AEM utilizan la biblioteca de widgets AEM. Para procesarse correctamente en el contexto de contenido, se debe cargar una hoja de estilo adicional. El componente de acción de etiqueta requiere uno más.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
 ### Hoja de estilo Geometrixx {#geometrixx-style-sheet}
 
-Los componentes de página de ejemplo requieren que todos los selectores comiencen con `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Práctica recomendada: Copie todos los `.asseteditor` selectores en la hoja de estilo y ajuste las reglas como desee.
+Los componentes de página de ejemplo requieren que todos los selectores tengan inicio con `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Práctica recomendada: Copie todos los `.asseteditor` selectores en la hoja de estilo y ajuste las reglas como desee.
 
 ### FormChooser: Ajustes para recursos eventualmente cargados {#formchooser-adjustments-for-eventually-loaded-resources}
 
@@ -73,7 +76,7 @@ Los controladores de muestra `head.jsp` (`/apps/geometrixx/components/assetedito
 * Si se carga un recurso, se desactiva el modo WCM, ya que parsys solo se puede editar en una página de formulario sin formato.
 * Si se carga un recurso, utiliza su título en lugar del de la página de formulario.
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -113,7 +116,7 @@ Los controladores de muestra `head.jsp` (`/apps/geometrixx/components/assetedito
 
 En la parte HTML, utilice el conjunto de títulos anterior (ya sea un recurso o un título de página):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -122,7 +125,7 @@ En la parte HTML, utilice el conjunto de títulos anterior (ya sea un recurso o 
 En este ejemplo se describe cómo crear un componente que muestre y muestre los metadatos de un recurso cargado.
 
 1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo `/apps/geometrixx/components/samplemeta`.
-1. Agregue `content.xml` con el siguiente fragmento de código:
+1. Añada `content.xml` con el siguiente fragmento:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -134,9 +137,9 @@ En este ejemplo se describe cómo crear un componente que muestre y muestre los 
        componentGroup="Asset Editor"/>
    ```
 
-1. Agregue `samplemeta.jsp` con el siguiente fragmento de código:
+1. Añada `samplemeta.jsp` con el siguiente fragmento:
 
-   ```xml
+   ```javascript
    <%--
    
      Sample metadata field component
@@ -192,20 +195,20 @@ En este ejemplo se describe cómo crear un componente que muestre y muestre los 
    </div>
    ```
 
-1. Para que el componente esté disponible, debe poder editarlo. Para que un componente se pueda editar, en CRXDE Lite, agregue un nodo `cq:editConfig` de tipo principal `cq:EditConfig`. Para poder eliminar párrafos, agregue una propiedad de varios valores `cq:actions` con un solo valor de `DELETE`.
+1. Para que el componente esté disponible, hace falta poder editarlo. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. So that you can remove paragraphs, add a multi-value property `cq:actions` with a single value of `DELETE`.
 
 1. Vaya al navegador y, en la página de muestra (por ejemplo, `asseteditor.html`), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos.
 
-1. En el modo de **edición** , el nuevo componente (por ejemplo, Metadatos **de** muestra) ya está disponible en la barra de tareas (que se encuentra en el grupo Editor **de** recursos). Inserte el componente. Para poder almacenar los metadatos, deben agregarse al formulario de metadatos.
+1. En el modo de **edición**, el nuevo componente (por ejemplo, **Metadatos de muestra**) ya está disponible en la barra de tareas (que se encuentra en el grupo **Editor de recursos**). Inserte el componente. Para poder almacenar los metadatos, estos se deben agregar al formulario de metadatos.
 
 ## Modificar opciones de metadatos {#modifying-metadata-options}
 
-Puede modificar los espacios de nombres disponibles en el formulario [de](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)metadatos.
+Puede modificar las Áreas de nombres disponibles en el formulario [de](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)metadatos.
 
 Los metadatos disponibles actualmente se definen en `/libs/dam/options/metadata`:
 
-* El primer nivel dentro de este directorio contiene los espacios de nombres.
-* Los elementos dentro de cada espacio de nombres representan metadatos, como resultados en un elemento de artículo local.
+* El primer nivel dentro de este directorio contiene las Áreas de nombres.
+* Los elementos dentro de cada Área de nombres representan metadatos, como resultados en un elemento de artículo local.
 * El contenido de metadatos contiene la información del tipo y las opciones de varios valores.
 
 Las opciones se pueden sobrescribir en `/apps/dam/options/metadata`:
@@ -216,4 +219,4 @@ Las opciones se pueden sobrescribir en `/apps/dam/options/metadata`:
 
 >[!NOTE]
 >
->Si agrega nuevos espacios de nombres, deben estar registrados en su repositorio/CRX. De lo contrario, el envío del formulario de metadatos generará un error.
+>Si agrega nuevas Áreas de nombres, deben estar registradas en su repositorio/CRX. De lo contrario, el envío del formulario de metadatos generará un error.
