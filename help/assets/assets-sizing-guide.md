@@ -3,7 +3,10 @@ title: Guía de tamaño de recursos
 description: Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 0%
 
 ---
 
@@ -28,21 +31,21 @@ Teniendo en cuenta estos factores, se requiere una metodología para calcular un
 1. Obtenga una muestra representativa de los recursos que se van a cargar en AEM. Por ejemplo, si planea cargar archivos PSD, JPG, AI y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y de la complejidad de las imágenes.
 1. Defina las representaciones que se utilizarán.
 1. Cree las representaciones en AEM mediante ImageMagick o las aplicaciones de Adobe Creative Cloud. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Scene7, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en AEM.
-1. Si planea utilizar subrecursos, genérelos para los tipos de archivo correspondientes. Consulte la documentación en línea sobre cómo generar páginas de subrecursos a partir de archivos de InDesign o archivos PNG/PDF a partir de capas de Illustrator.
-1. Compare el tamaño de las imágenes de salida, las representaciones y los subrecursos con las imágenes originales. Permite generar un factor de crecimiento esperado cuando se carga el sistema. Por ejemplo, si genera representaciones y subrecursos con un tamaño combinado de 3 GB después de procesar 1 GB de recursos, el factor de crecimiento de la representación es 3.
+1. Si planea utilizar subrecursos, genérelos para los tipos de archivo correspondientes.
+1. Compare el tamaño de las imágenes de salida, las representaciones y los subrecursos con las imágenes originales. Permite generar un factor de crecimiento esperado cuando se carga el sistema. Por ejemplo, si genera representaciones y subrecursos con un tamaño combinado de 3 GB después de procesar 1 GB de activos, el factor de crecimiento de la representación es 3.
 1. Determine el tiempo máximo durante el cual se mantendrán las versiones de los recursos en el sistema.
 1. Determinar la frecuencia con la que se modifican los recursos existentes en el sistema. Si AEM se utiliza como centro de colaboración en flujos de trabajo creativos, la cantidad de cambios es alta. Si solo se cargan en el sistema los recursos acabados, este número es mucho menor.
 1. Determine cuántos recursos se cargan en el sistema cada mes. Si no está seguro, compruebe el número de recursos disponibles actualmente y divida el número por la edad del recurso más antiguo para calcular un número aproximado.
 
-La realización de los pasos 1 a 9 ayuda a determinar lo siguiente:
+La realización de los pasos anteriores le ayuda a determinar lo siguiente:
 
-* Tamaño sin procesar de los recursos que se van a cargar
-* Número de recursos que se van a cargar
-* Factor de crecimiento de representación
-* Número de modificaciones de activos realizadas por mes
-* Número de meses para mantener versiones de recursos
-* Número de nuevos recursos cargados cada mes
-* Años de crecimiento para asignar espacio
+* Tamaño sin procesar de los recursos que se van a cargar.
+* Número de recursos que se van a cargar.
+* Factor de crecimiento de la representación.
+* Número de modificaciones de activos realizadas por mes.
+* Número de meses para mantener las versiones de los recursos.
+* Número de nuevos recursos cargados cada mes.
+* Años de crecimiento para la asignación del espacio de almacenamiento.
 
 Puede especificar estos números en la hoja de cálculo Tamaño de red para determinar el espacio total necesario para el almacén de datos. También es una herramienta útil para determinar el impacto del mantenimiento de versiones de recursos o la modificación de recursos en AEM en el crecimiento del disco.
 
@@ -52,7 +55,7 @@ Los datos de ejemplo completados en la herramienta muestran la importancia de re
 
 ### Almacenes de datos compartidos {#shared-datastores}
 
-Para grandes almacenes de datos, puede implementar un almacén de datos compartido a través de un almacén de datos de archivos compartidos en una unidad conectada a la red o a través de un almacén de datos S3. En este caso, las instancias individuales no necesitan mantener una copia de los binarios. Además, un almacén de datos compartido facilita la replicación sin binarios y ayuda a reducir el ancho de banda utilizado para replicar recursos para publicar entornos.
+Para grandes almacenes de datos, puede implementar un almacén de datos compartido a través de un almacén de datos de archivos compartidos en una unidad conectada a la red o a través de un almacén de datos Amazon S3. En este caso, las instancias individuales no necesitan mantener una copia de los binarios. Además, un almacén de datos compartido facilita la replicación sin binarios y ayuda a reducir el ancho de banda utilizado para replicar recursos para publicar entornos.
 
 #### Casos de uso {#use-cases}
 
@@ -72,7 +75,7 @@ Es preferible implementar el servicio AWS S3 para los almacenes de datos compart
 
 Los almacenes de datos compartidos también aumentan la complejidad de las operaciones, como la recolección de elementos no utilizados. Normalmente, la recolección de elementos no utilizados para un almacén de datos independiente se puede iniciar con un solo clic. Sin embargo, los almacenes de datos compartidos requieren operaciones de barrido de marcas en cada miembro que utilice el almacén de datos, además de ejecutar la colección real en un solo nodo.
 
-Para las operaciones de AWS, la implementación de una única ubicación central (mediante S3), en lugar de crear una matriz RAID de volúmenes EBS, puede compensar significativamente la complejidad y los riesgos operativos del sistema.
+Para las operaciones de AWS, la implementación de una única ubicación central (mediante Amazon S3), en lugar de crear una matriz RAID de volúmenes EBS, puede compensar significativamente la complejidad y los riesgos operativos del sistema.
 
 #### Problemas de rendimiento {#performance-concerns}
 
@@ -101,7 +104,7 @@ Para el repositorio, utilice discos SSD o discos con un nivel de IOPS bueno a 30
 
 Recursos AEM tiene varios casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros proyectos de AEM. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para admitir la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá siendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a AEM en consideraciones de recursos de [AEM para la experiencia del usuario, tamaño de instancia, evaluación del flujo de trabajo y topología](/help/assets/assets-network-considerations.md)de red.
 
-## Restricciones      {#limitations}
+## Restricciones          {#limitations}
 
 Al ajustar el tamaño de una implementación, es importante tener en cuenta las limitaciones del sistema. Si la implementación propuesta supera estas limitaciones, utilice estrategias creativas, como la partición de los recursos en varias implementaciones de Recursos.
 
