@@ -1,23 +1,26 @@
 ---
-title: Administrar varios recursos y colecciones
-description: Descubra cómo editar los metadatos de varios recursos y colecciones simultáneamente para propagar rápidamente los cambios comunes de metadatos.
+title: Administre metadatos de muchos recursos y colecciones en Adobe Enterprise Manager.
+description: Edite los metadatos de muchos recursos y colecciones simultáneamente para propagar rápidamente los cambios comunes de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 12%
 
 ---
 
 
 # Gestión de recursos y colecciones {#managing-multiple-assets-and-collections}
 
-Recursos Adobe Enterprise Manager (AEM) permite editar simultáneamente los metadatos de varios recursos para que pueda propagar rápidamente cambios comunes de metadatos a los recursos de forma masiva. También puede editar los metadatos de varias colecciones de forma masiva.
+Recursos de Adobe Enterprise Manager le permite editar simultáneamente los metadatos de varios recursos para que pueda propagar rápidamente cambios comunes de metadatos a los recursos de forma masiva. También puede editar los metadatos de varias colecciones de forma masiva.
 
 Utilice la página de propiedades para realizar cambios en los metadatos de varios recursos o colecciones:
 
 * Cambiar las propiedades de metadatos a un valor común
-* Agregar o modificar etiquetas
+* Añadir o modificar etiquetas
 
-Para personalizar la página de propiedades de metadatos, incluida la adición, modificación y eliminación de propiedades de metadatos, utilice el editor de esquemas.
+Para personalizar la página de propiedades de metadatos, incluida la adición, modificación y eliminación de propiedades de metadatos, utilice el editor de esquema.
 
 >[!NOTE]
 >
@@ -34,15 +37,15 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
    >Cuando se seleccionan varios recursos, se selecciona el formulario principal común más bajo para los recursos. En otras palabras, la página de propiedades solo muestra los campos de metadatos comunes en las páginas de propiedades de todos los recursos individuales.
 
 1. Modifique las propiedades de metadatos de los recursos seleccionados en las distintas fichas.
-1. Para ver el editor de metadatos de un recurso específico, anule la selección de los recursos restantes de la lista. Los campos del editor de metadatos se rellenan con los metadatos del recurso concreto.
+1. Para vista del editor de metadatos de un recurso específico, anule la selección de los recursos restantes de la lista. Los campos del editor de metadatos se rellenan con los metadatos del recurso concreto.
 
    >[!NOTE]
    >
-   >* En la página de propiedades, puede quitar recursos de la lista de recursos desactivándolos. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que se eliminan de la lista no se actualizan.
-   >* En la parte superior de la lista de recursos, active la casilla de verificación situada cerca de **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
+   >* En la página de propiedades, puede quitar recursos de la lista de recursos anulándolos. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que se eliminan de la lista no se actualizan.
+   >* En la parte superior de la lista de recursos, active la casilla de verificación situada junto a **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
 
 
-1. Para seleccionar un esquema de metadatos diferente para los recursos, toque o haga clic en el icono **[!UICONTROL Configuración]** de la barra de herramientas y seleccione el esquema deseado.
+1. Para seleccionar otro esquema de metadatos para los recursos, toque o haga clic en el icono **[!UICONTROL Configuración]** de la barra de herramientas y seleccione el esquema que desee.
 1. Guarde los cambios.
 1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el **[!UICONTROL modo Anexar]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Pulse o haga clic en **[!UICONTROL Enviar]**.
 
@@ -52,11 +55,11 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
 
 ## Configurar límite para la actualización masiva de metadatos {#configlimit}
 
-Para evitar situaciones similares a las de DOS, AEM limita el número de parámetros admitidos en una solicitud de Sling. Al actualizar los metadatos de muchos recursos de una sola vez, es posible que se alcance el límite y que los metadatos no se actualicen para más recursos. AEM genera la siguiente advertencia en los registros:
+Para evitar situaciones similares a las de DOS, Enterprise Manager limita el número de parámetros admitidos en una solicitud de Sling. Al actualizar los metadatos de muchos recursos de una sola vez, es posible que se alcance el límite y que los metadatos no se actualicen para más recursos. Enterprise Manager genera la siguiente advertencia en los registros:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para cambiar el límite, acceda a la consola web ( **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**) y cambie el valor de **[!UICONTROL Máximo de parámetros POST]** en la configuración OSGi de la **[!UICONTROL administración de parámetros de solicitud Apache Sling]**.
+To change the limit, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
 
 >[!MORELIKETHIS]
 >
