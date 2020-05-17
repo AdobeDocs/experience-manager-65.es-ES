@@ -1,9 +1,12 @@
 ---
-title: Descargue recursos digitales de [!DNL Adobe Experience Manager].
-description: Obtenga información sobre cómo descargar recursos de [!DNL Adobe Experience Manager] y activar o desactivar la funcionalidad de descarga.
+title: Descargue recursos digitales desde [!DNL Adobe Experience Manager].
+description: Obtenga información sobre cómo descargar recursos [!DNL Adobe Experience Manager] desde y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d292059a865d150f7de5664eca164c542f965fcb
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '766'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +31,7 @@ Las siguientes son las opciones de exportación o descarga disponibles. Las repr
 
 | Opciones de exportación o descarga | Descripciones |
 |---|---|
-| [!UICONTROL Recursos] | Seleccione la opción para descargar el recurso en su formulario original sin ninguna representación. |
+| [!UICONTROL Assets] | Seleccione la opción para descargar el recurso en su formulario original sin ninguna representación. |
 | [!UICONTROL Representaciones] | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
 | [!UICONTROL Representaciones dinámicas] | Una representación dinámica genera otras representaciones en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando una de la lista de ajustes preestablecidos [de imagen](image-presets.md) . <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen (por ejemplo, para invertir la imagen) |
 | [!UICONTROL Correo electrónico] | Se envía una notificación por correo electrónico al usuario. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que personalice durante la implementación deben estar presentes en estas ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en estas ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
@@ -58,9 +61,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza 
 
 El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experience Manager] publicación actualizando la configuración del despachante para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
 
-1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
-
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Deshabilite el componente OSGi en una instancia de Publish navegando a la consola OSGi en `http://[aem_server]:[port]/system/console/components`. Busque `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` y haga clic en **[!UICONTROL Deshabilitar]**.
 
@@ -68,5 +69,5 @@ El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experie
 >
 >* [Descargar recursos](drm.md)protegidos con DRM.
 >* [Descargue recursos con la aplicación de escritorio de Experience Manager en el escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)de Windows o Mac.
->* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)compatibles de Adobe Creative Cloud.
+>* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)compatibles de Adobe Creative Cloud.
 
