@@ -4,9 +4,9 @@ description: Obtenga información sobre tareas para administrar colecciones de r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2216'
 ht-degree: 13%
 
 ---
@@ -149,26 +149,26 @@ Las colecciones inteligentes se crean al guardar una búsqueda para que pueda mo
 
 Los metadatos de la colección incluyen datos sobre la colección, incluidas las etiquetas que se agreguen.
 
-1. En la consola Colecciones, seleccione una colección y haga clic en el icono **[!UICONTROL Propiedades]** de la barra de herramientas.
+1. En la consola [!UICONTROL Colecciones] , seleccione una colección y haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
 1. En la página **[!UICONTROL Metadatos de la colección]**, consulte los metadatos de la colección desde las pestañas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]**.
-1. Modifique los metadatos según sea necesario y, a continuación, haga clic en **[!UICONTROL Guardar y cerrar]** en la barra de herramientas para guardar los cambios.
+1. Modifique los metadatos según sea necesario. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]** en la barra de herramientas.
 
 ## Editar metadatos de varias colecciones de forma masiva {#editing-collection-metadata-in-bulk}
 
 Puede editar los metadatos de varias colecciones simultáneamente. Esta funcionalidad le ayuda a replicar rápidamente metadatos comunes en varias colecciones.
 
-1. En la consola Colecciones, seleccione dos o más colecciones para las que desee editar los metadatos.
+1. En la consola Colecciones, seleccione dos o más colecciones.
 1. En la barra de herramientas, haga clic en el icono **[!UICONTROL Propiedades]** .
 1. En la página **[!UICONTROL Metadatos de la colección]**, edite los metadatos en las pestañas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]**, según sea necesario.
 1. Para vista de las propiedades de metadatos de una colección específica, anule la selección de las colecciones restantes de la lista de colecciones. Los campos del editor de metadatos se rellenan con los metadatos de la colección en particular.
 
    >[!NOTE]
    >
-   >* En la página de propiedades de la colección, puede quitar colecciones de la lista de colecciones anulándolas. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. Los metadatos de las colecciones que elimine no se actualizarán.
+   >* En la página [!UICONTROL Propiedades] , puede quitar colecciones de la lista de colecciones anulando su selección. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. Experience Manager no actualiza los metadatos de las colecciones que elimina.
    >* En la parte superior de la lista, active la casilla de verificación situada junto a **[!UICONTROL Título]** para alternar entre seleccionar las colecciones y borrar la lista.
 
 
-1. Haga clic en **[!UICONTROL Guardar y cerrar]** desde la barra de herramientas y, a continuación, cierre el cuadro de diálogo de confirmación para completar el proceso.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]** en la barra de herramientas y, a continuación, cierre el cuadro de diálogo de confirmación.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Haga clic en **[!UICONTROL Enviar]**.
 
    >[!NOTE]
