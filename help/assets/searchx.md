@@ -3,7 +3,10 @@ title: Ampliar la funcionalidad de búsqueda de Recursos Adobe Experience Manage
 description: Extienda las capacidades de búsqueda de Recursos Adobe Experience Manager más allá de los valores predeterminados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 19%
 
 ---
 
@@ -18,7 +21,7 @@ También puede agregar fichas adicionales al panel [!DNL Assets] de administraci
 
 >[!CAUTION]
 >
->A partir de [!DNL Experience Manager] 6.4, la IU clásica está obsoleta. Para ver el anuncio, consulte Funciones [obsoletas y eliminadas](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recomienda utilizar la IU táctil. Para personalizar, consulte Facetas [de búsqueda](/help/assets/search-facets.md).
+>A partir de [!DNL Experience Manager] 6.4, la IU clásica está obsoleta. Para obtener información sobre el anuncio, consulte Funciones [obsoletas y eliminadas](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recomienda utilizar la IU táctil. Para personalizar, consulte facetas [de búsqueda](/help/assets/search-facets.md).
 
 ## Superposición {#overlaying}
 
@@ -70,7 +73,7 @@ Para generar un predicado de propiedad:
 
 1. Añada `titlepredicate.jsp`.
 
-   ```xml
+   ```java
    <%--
    
      Sample title predicate component
@@ -163,7 +166,7 @@ Para crear un predicado de grupo:
 
 1. Añadir **titlepredicate.jsp**:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
