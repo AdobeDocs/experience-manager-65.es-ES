@@ -3,7 +3,10 @@ title: Desarrollo de proxy de recursos
 description: Un proxy es una instancia de AEM que utiliza trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy AEM, las operaciones admitidas, los componentes proxy y cómo desarrollar un trabajador proxy personalizado.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
    **Requisitos**: se `jobid` debe establecer el parámetro.
 
-   **Resultado**: Devuelve una representación JSON del nodo resultante tal como la creó el procesador de trabajos.
+   **Resultado**: Devuelve una representación JSON del nodo de resultado tal como la creó el procesador de trabajos.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -80,7 +83,7 @@ Un trabajador proxy es un procesador responsable de gestionar un trabajo y crear
 
 A continuación se muestra un ejemplo del uso de API:
 
-```xml
+```java
 @Reference
  JobService proxyJobService;
 
@@ -114,7 +117,7 @@ Tanto las configuraciones de trabajo proxy como las de proxy están disponibles 
 
 A continuación se muestra un ejemplo del uso de API:
 
-```xml
+```java
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
 
