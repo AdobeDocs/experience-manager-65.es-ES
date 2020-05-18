@@ -3,9 +3,9 @@ title: Creación y uso compartido de una carpeta privada en AEM
 description: Obtenga información sobre cómo crear una carpeta privada en Recursos Adobe Experience Manager (AEM) y compartirla con otros usuarios, así como sobre cómo asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 979d5074fcf94ca999fd941c77038ab6305cc67d
+source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '513'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ Puede crear una carpeta privada en la interfaz de usuario Recursos Adobe Experie
 
 >[!NOTE]
 >
-> La carpeta privada siempre tiene al menos un miembro con la función Propietario.
+> La carpeta privada tiene al menos un miembro con la función Propietario.
 
 
 1. En la consola Recursos, toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
@@ -50,7 +50,7 @@ Puede crear una carpeta privada en la interfaz de usuario Recursos Adobe Experie
 
    >[!NOTE]
    >
-   > La carpeta privada siempre tiene al menos un miembro con la función Propietario. Por lo tanto, el administrador no puede quitar todos los miembros del propietario de una carpeta privada. Sin embargo, para eliminar los propietarios existentes del administrador de carpetas privadas, debe agregar otro usuario como propietario.
+   > La carpeta privada tiene al menos un miembro con la función Propietario. Por lo tanto, el administrador no puede quitar todos los miembros del propietario de una carpeta privada. Sin embargo, para eliminar los propietarios existentes (y el administrador mismo) de la carpeta privada, el administrador debe agregar otro usuario como propietario.
 
 1. Haga clic en **[!UICONTROL Guardar.]** Según la función que asigne, al usuario se le asignará un conjunto de privilegios en su carpeta privada cuando inicie sesión en Recursos AEM.
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el mensaje de confirmación.
