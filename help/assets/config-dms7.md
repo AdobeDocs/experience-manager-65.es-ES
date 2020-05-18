@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
+source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
 workflow-type: tm+mt
-source-wordcount: '5763'
+source-wordcount: '5782'
 ht-degree: 7%
 
 ---
@@ -480,11 +480,20 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
 ### (Opcional) Ajuste del rendimiento de Dynamic Media - modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**Optimización de parámetros de trabajo**
+**Consejos de ajuste de escalabilidad/rendimiento de sincronización**
+
+Para mantener el modo Dynamic Media - Scene7 sin problemas, Adobe recomienda los siguientes consejos de ajuste del rendimiento y la escalabilidad de la sincronización:
+
+* Actualización de los parámetros de trabajo predefinidos para el procesamiento de diferentes formatos de archivo.
+* Actualización de los subprocesos de trabajo de la cola de Granite (recursos de vídeo) predefinidos.
+* Actualizando los subprocesos de trabajo en cola predefinidos de flujo de trabajo transitorio de Granite (imágenes y recursos que no son de vídeo).
+* Actualización de las conexiones de carga máximas al servidor de Dynamic Media Classic.
+
+#### Actualización de los parámetros de trabajo predefinidos para el procesamiento de diferentes formatos de archivo
 
 Puede ajustar los parámetros de trabajo para un procesamiento más rápido al cargar archivos. Por ejemplo, si está cargando archivos PSD pero no desea procesarlos como plantillas, puede establecer la extracción de capas en false (desactivado). En ese caso, el parámetro de trabajo optimizado aparecerá como `process=None&createTemplate=false`.
 
-Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;optimizados&quot; para archivos PSD, PDF y Postscript:
+Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;optimizados&quot; para archivos PDF, Postscript y PSD:
 
 | Tipo de archivo | Parámetros de trabajo recomendados |
 | ---| ---|
@@ -493,14 +502,6 @@ Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;optimizado
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 Para actualizar cualquiera de estos parámetros, siga los pasos que se indican en [Activación de la compatibilidad](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)con el parámetro de trabajo de carga de Dynamic Media Classic/Assets basado en tipos MIME.
-
-**Consejos de ajuste de escalabilidad/rendimiento de sincronización**
-
-Para mantener el modo Dynamic Media - Scene7 sin problemas, Adobe recomienda los siguientes consejos de ajuste del rendimiento y la escalabilidad de la sincronización:
-
-* Actualice los subprocesos de trabajo de la cola de Granite (recursos de vídeo) predefinidos.
-* Actualice los subprocesos de trabajo en cola predefinidos de flujo de trabajo transitorio de Granite (imágenes y recursos que no son de vídeo).
-* Actualice las conexiones de carga máximas al servidor de Dynamic Media Classic.
 
 #### Actualización de la cola de flujo de trabajo transitorio de Granite {#updating-the-granite-transient-workflow-queue}
 
