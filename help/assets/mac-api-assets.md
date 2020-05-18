@@ -3,9 +3,9 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ En Experience Manager, un recurso contiene los siguientes elementos:
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-En Experience Manager, una carpeta tiene los siguientes componentes:
+En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
 * Entidades: Los hijos de los activos son sus representaciones.
 * Propiedades.
@@ -95,9 +95,9 @@ La API HTTP de Assets incluye las siguientes funciones:
 
 **Requisitos previos**
 
-1. Ir a `https://[aem_server]:[port]/system/console/configMgr`.
-1. Vaya al Filtro **CSRF de** Adobe Granite.
-1. Asegúrese de que la propiedad Métodos **de** filtro incluye: PUBLICAR, PUBLICAR, ELIMINAR.
+* Acceso `https://[aem_server]:[port]/system/console/configMgr`.
+* Vaya al Filtro **[!UICONTROL CSRF de]** Adobe Granite.
+* Asegúrese de que la propiedad Métodos **[!UICONTROL de]** filtro incluye: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar una lista de carpetas {#retrieve-a-folder-listing}
 
@@ -181,14 +181,14 @@ Actualiza las propiedades de metadatos de recurso. Si actualiza cualquier propie
 
 Cree una nueva representación de recursos para un recurso. Si no se proporciona el nombre del parámetro de solicitud, el nombre del archivo se utiliza como nombre de representación.
 
-**Parámetros** Los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
+**Parámetros**: Los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
 
 **Solicitar**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Códigos de respuesta**
+**Códigos** de respuesta: Los códigos de respuesta son:
 
 * 201 - CREADO - si la representación se ha creado correctamente.
 * 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
@@ -201,7 +201,7 @@ Las actualizaciones reemplazan respectivamente una representación de recursos c
 
 **Solicitud**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Códigos** de respuesta Los códigos de respuesta son:
+**Códigos** de respuesta: Los códigos de respuesta son:
 
 * 200 - Correcto: si la representación se ha actualizado correctamente.
 * 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
