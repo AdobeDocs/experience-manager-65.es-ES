@@ -3,7 +3,10 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Aunque puede personalizar el código de seguimiento para permitir que las soluci
 
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM.
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Configurar la instancia de AEM con el servicio de nube de DTM](/help/sites-administering/dtm.md)
 
    El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de las perspectivas de recursos, ya que la integración de los sitios de AEM con las perspectivas de recursos sigue en marcha.
@@ -28,21 +31,21 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/)y seleccione una Compañía, según corresponda.
 1. Crear/abrir una propiedad web existente
 
-   * Seleccione la ficha Propiedades **** web y, a continuación, toque o haga clic en **[!UICONTROL Añadir propiedad]**.
+   * Seleccione la ficha Propiedades **** web y, a continuación, haga clic en **[!UICONTROL Añadir propiedad]**.
 
-   * Actualice los campos según corresponda y toque o haga clic en **[!UICONTROL Crear propiedad]**. Consulte [la documentación](https://helpx.adobe.com/experience-manager/using/dtm.html).
+   * Actualice los campos según corresponda y haga clic en **[!UICONTROL Crear propiedad]**. Consulte [la documentación](https://helpx.adobe.com/experience-manager/using/dtm.html).
    ![Crear, editar propiedad web](assets/Create-edit-web-property.png)
 
-1. En la ficha **[!UICONTROL Reglas]** , seleccione **[!UICONTROL Reglas]** de carga de página en el panel de navegación y toque o haga clic en **[!UICONTROL Crear nueva regla]**.
+1. En la ficha **[!UICONTROL Reglas]** , seleccione Reglas **[!UICONTROL de carga de]** página en el panel de navegación y haga clic en **[!UICONTROL Crear nueva regla]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expanda **[!UICONTROL Etiquetas]** Javascript/de terceros. A continuación, toque o haga clic en **[!UICONTROL Añadir nueva secuencia de comandos]** en la ficha HTML **** secuencial para abrir el cuadro de diálogo Secuencia de comandos.
+1. Expanda **[!UICONTROL Etiquetas]** Javascript/de terceros. A continuación, haga clic en **[!UICONTROL Añadir nueva secuencia de comandos]** en la ficha HTML **** secuencial para abrir el cuadro de diálogo Secuencia de comandos.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
-1. Toque o haga clic en **[!UICONTROL Rastreador]** de páginas de perspectivas, copie el código del rastreador y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
+1. Click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Haga clic en **[!UICONTROL Rastreador]** de páginas de perspectivas, copie el código del rastreador y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
 
    >[!NOTE]
    >
@@ -62,7 +65,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
    ![chlimage_1-61](assets/chlimage_1-197.png)
 
-1. Expanda **[!UICONTROL Personalizar código]** de página y toque o haga clic en **[!UICONTROL Abrir editor]**.
+1. Expanda **[!UICONTROL Personalizar código]** de página y haga clic en **[!UICONTROL Abrir editor]**.
 
    ![chlimage_1-62](assets/chlimage_1-198.png)
 
