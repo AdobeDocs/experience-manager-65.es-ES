@@ -3,14 +3,17 @@ title: Activos relacionados
 description: Aprenda a relacionar recursos digitales que comparten algunos atributos comunes. También cree relaciones derivadas de origen entre recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '640'
+ht-degree: 0%
 
 ---
 
 
 # Activos relacionados {#related-assets}
 
-[!DNL Adobe Experience Manager Assets] permite relacionar recursos manualmente en función de las necesidades de la organización mediante la función de recursos relacionados. Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen/vídeo en un tema similar. Puede relacionar recursos que comparten determinados atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF que se genera a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
+[!DNL Adobe Experience Manager Assets] permite relacionar recursos manualmente en función de las necesidades de la organización mediante la función de recursos relacionados. Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen o vídeo en un tema similar. Puede relacionar recursos que comparten determinados atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF que se genera a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
 
 Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja resolución o un archivo JPG con proveedores o agencias y de hacer que el archivo INDD de alta resolución solo esté disponible bajo petición.
 
@@ -23,7 +26,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
    ![abrir la página Propiedades de un recurso para relacionarlo](assets/asset-properties-relate-assets.png)
 
-   *Figura: página[!DNL Assets]Propiedadespara relacionar recursos.*
+   *Figura:[!DNL Assets][!UICONTROL Propiedades]para relacionar recursos.*
 
    Como alternativa, seleccione el recurso en la vista de lista.
 
@@ -33,7 +36,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar otro recurso con el recurso seleccionado, toque o haga clic en el icono **[!UICONTROL Relacionar]** de la barra de herramientas.
+1. Para relacionar otro recurso con el recurso seleccionado, haga clic en el icono **[!UICONTROL Relacionar]** de la barra de herramientas.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -48,20 +51,20 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Confirmar]** .
-1. Toque o haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. Según la relación que elija en el paso 3, el recurso relacionado se muestra en una categoría adecuada en la sección **[!UICONTROL Relacionado]** . Por ejemplo, si el recurso relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Origen]**.
+1. Click the **[!UICONTROL Confirm]** icon.
+1. Click **[!UICONTROL OK]** to close the dialog. Según la relación que elija en el paso 3, el recurso relacionado se muestra en una categoría adecuada en la sección **[!UICONTROL Relacionado]** . Por ejemplo, si el recurso relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Origen]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Para desrelacionar un recurso, toque o haga clic en **[!UICONTROL Desrelacionar]** en la barra de herramientas.
+1. Para desrelacionar un recurso, haga clic en **[!UICONTROL Desrelacionar]** en la barra de herramientas.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Seleccione los recursos que desea desrelacionar en el cuadro de diálogo **[!UICONTROL Eliminar relaciones]** y toque o haga clic en **[!UICONTROL Desrelacionar]**.
+1. Seleccione los recursos que desea desrelacionar en el cuadro de diálogo **[!UICONTROL Eliminar relaciones]** y haga clic en **[!UICONTROL Desrelacionar]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Haga clic o toque **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. Los recursos para los que se han eliminado relaciones se eliminan de la lista de recursos relacionados en la sección **[!UICONTROL Relacionado]** .
+1. Click **[!UICONTROL OK]** to close the dialog. Los recursos para los que se han eliminado relaciones se eliminan de la lista de recursos relacionados en la sección **[!UICONTROL Relacionado]** .
 
 ## Traducción de recursos relacionados {#translating-related-assets}
 
@@ -81,22 +84,22 @@ Si el archivo de origen está relacionado con otro recurso, [!DNL Experience Man
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Toque o haga clic en el mosaico del proyecto para abrir la página de detalles.
+1. Haga clic en el mosaico del proyecto para abrir la página de detalles.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Toque o haga clic en las elipses debajo de la tarjeta Trabajo de traducción para vista del estado de la traducción.
+1. Haga clic en las elipses debajo de la tarjeta Trabajo de traducción para vista del estado de la traducción.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Seleccione el recurso y, a continuación, toque o haga clic en **[!UICONTROL Mostrar en recursos]** en la barra de herramientas para vista del estado de traducción del recurso.
+1. Seleccione el recurso y, a continuación, haga clic en **[!UICONTROL Mostrar en recursos]** en la barra de herramientas para vista del estado de traducción del recurso.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. Para comprobar si los recursos relacionados con el origen se han traducido, toque o haga clic en el recurso de origen.
+1. Para comprobar si los recursos relacionados con el origen se han traducido, haga clic en el recurso de origen.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Seleccione el recurso relacionado con el origen y, a continuación, toque o haga clic en **[!UICONTROL Mostrar en recursos]**. Se muestra el recurso relacionado traducido.
+1. Seleccione el recurso relacionado con el origen y, a continuación, haga clic en **[!UICONTROL Mostrar en recursos]**. Se muestra el recurso relacionado traducido.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
