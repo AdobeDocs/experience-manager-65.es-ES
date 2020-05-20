@@ -1,20 +1,18 @@
 ---
 title: Notas de la versión anterior de AEM 6.5 Service Pack
 description: Notas de la versión específicas de Adobe Experience Manager 6.5 Service Pack 3 y versiones anteriores.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+workflow-type: tm+mt
+source-wordcount: '6277'
+ht-degree: 47%
 
 ---
 
 
 # Revisiones y paquetes de funciones incluidos en instancias de Service Pack anteriores {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0
+## Adobe Experience Manager 6.5.3.0 {#aem-6530}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 es una versión importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad, publicadas desde la disponibilidad general de la versión 6.5 en **abril de 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
@@ -24,9 +22,9 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * [!DNL Experience Manager Assets] ahora admite archivos ZIP creados con el algoritmo Deflate64.
 
-* Se ha agregado una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de listas.
+* Hay una nueva columna que muestra la fecha de creación de los recursos disponible al ver los recursos en DAM y en los resultados de búsqueda en la vista de listas. Ordene la columna para organizar los recursos en orden cronológico o cronológico inverso de creación.
 
-* La clasificación de recursos basada en la columna Nombre se ha activado en la vista de Listas.
+* Ahora puede ordenar los recursos en función de la `Name` columna de la vista de listas.
 
 * [!DNL Dynamic Media] ahora admite recursos de vídeo de recorte inteligente. Smart Crop es una función de aprendizaje automático que vuelve a recortar un vídeo mientras mueve el fotograma para seguir el punto focal de la escena.
 
@@ -46,9 +44,9 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * [!DNL Experience Manager Assets] ahora admite archivos ZIP creados con el algoritmo Deflate64 (NPR-27573).
 
-* Se ha agregado una nueva columna para la fecha de creación, que es ordenable, en la vista de lista DAM y en los resultados de búsqueda de recursos en la vista de listas (NPR-31312).
+* Hay una nueva columna que muestra la fecha de creación de los recursos disponible al ver los recursos en DAM y en los resultados de búsqueda en la vista de listas. Ordene la columna para organizar los recursos en orden cronológico o cronológico inverso de creación (NPR-31312).
 
-* Se ha permitido la ordenación de recursos basada en la columna Nombre en la vista de Listas (NPR-31299).
+* Ahora puede ordenar los recursos en función de la `Name` columna de la vista de lista (NPR-31299).
 
 * Los archivos de recursos GLB, GLTF, OBJ y STL admiten la previsualización de recursos en la página Detalles de recursos de DAM (CQ-4282277).
 
@@ -61,6 +59,8 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * La vista de búsqueda y exploración se ha establecido como vista predeterminada en el selector de base si se pasan parámetros de consulta en la solicitud (NPR-31601).
 
 **Correcciones**
+
+* El proveedor IMS de OAuth no puede conectarse a través de un servidor proxy cuando se utiliza Adobe Asset Link (NPR-30949).
 
 * Los metadatos de algunos documentos PDF no se actualizan ni guardan en el PDF al modificar su título (NPR-31629).
 
@@ -82,17 +82,17 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Los recursos con el símbolo más &#39;+&#39; en el nombre del archivo no se pueden eliminar (NPR-31162).
 
-* El menú desplegable Crear, que está visible en el menú superior al seleccionar una carpeta, no muestra &#39;Carpeta&#39; como opción de creación (NPR-30877).
+* En la interfaz de usuario de Recursos hay disponible una opción para crear nuevos recursos o carpetas como menú emergente. Cuando se selecciona una carpeta, Experience Manager no muestra [!UICONTROL Carpeta] como una de las opciones del menú emergente (NPR-30877).
 
-* Selección de carpetas Crear > Elemento de acción FileUpload falta cuando se aplica ACL para Deny jcr:removeChildNodes y jcr:removeNode en la ruta a un usuario (NPR-30840).
+* Selección de carpetas Crear > Elemento de acción de carga de archivos falta cuando se aplica ACL para Denegar `jcr:removeChildNodes` `jcr:removeNode` y en ruta de acceso a un usuario (NPR-30840).
 
-* Los flujos de trabajo DAM pasan a un estado antiguo cuando se cargan determinados recursos mp4, lo que provoca que todos los flujos de trabajo restantes pasen a un estado antiguo (NPR-30662).
+* Los flujos de trabajo DAM pasan a estado antiguo cuando se cargan determinados recursos MP4, lo que provoca que todos los flujos de trabajo restantes pasen a estado antiguo (NPR-30662).
 
-* Error de memoria insuficiente cuando se carga un archivo PDF grande (de varios gigabytes) en DAM y se procesan sus subrecursos (NPR-30614).
+* Se observa un error de memoria insuficiente cuando se carga un archivo PDF grande de varios gigabytes en DAM y se procesan sus subrecursos (NPR-30614).
 
-* El movimiento masivo de recursos está fallando y mostrando un mensaje de advertencia (NPR-30610).
+* El movimiento masivo de recursos falla y muestra un mensaje de advertencia (NPR-30610).
 
-* Los nombres de los recursos se cambian a minúsculas al mover recursos de una carpeta a otra [!DNL Experience Manager] en modo [!DNL Dynamic Media]-Scene7 (NPR-31630).
+* Los nombres de los recursos se cambian a minúsculas al mover recursos de una carpeta a otra al trabajar en el modo [!DNL Dynamic Media]de Scene7 (NPR-31630).
 
 * Se observa un error al editar un conjunto de imágenes remoto para la imagen que reside en la carpeta con el mismo nombre de compañía de Scene7 (NPR-31340).
 
@@ -234,7 +234,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Las actualizaciones del índice de Lucene hacen que el servidor de creación se ralentice (NPR-31548).
 
-### Formularios {#forms-6530}
+### Forms {#forms-6530}
 
 >[!NOTE]
 >
@@ -497,7 +497,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Recursos
+### Assets
 
 * Se ha actualizado la interfaz DAM DMGgateway para que sea compatible con varias partes de S3. NPR-29740: revisión para CQ-4226303
 * La previsualización de representaciones genera `Only empty tenantId is currently supported` un error después de actualizar a [!DNL Experience Manager] 6.5. NPR-29986: Revisión para CQ-4272353
@@ -515,7 +515,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * El esquema de metadatos solo contiene elementos de la configuración global y no contiene los del inquilino activo. El valor de la dirección URL de formPath vuelve al valor predeterminado incluso cuando se cambia. NPR-29945: revisión para CQ-4262898
 * Publish image presets to [!DNL Brand Portal] fails with 500 error code. NPR-29510: revisión para CQ-4268659
 
-### Sitios
+### Sites
 
 * Las propiedades vacías y varias propiedades no se propagan desde el modelo durante el lanzamiento. El restablecimiento de Live Copy con un plano técnico no funciona en los componentes. NPR-29253: revisión para CQ-4264928, CQ-4264926, CQ-4267722
 * CoralUI, when used with `Multifield`, stores the `fileReferenceParameter` at the component level instead of multifield level. NPR-29537: revisión para CQ-4266129
