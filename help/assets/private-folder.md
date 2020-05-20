@@ -3,10 +3,10 @@ title: Creación y uso compartido de una carpeta privada en AEM
 description: Obtenga información sobre cómo crear una carpeta privada en Recursos Adobe Experience Manager (AEM) y compartirla con otros usuarios, así como sobre cómo asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 5%
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Puede crear una carpeta privada en la interfaz de usuario Recursos Adobe Experie
 > La carpeta privada tiene al menos un miembro con la función Propietario.
 
 
-1. En la consola Recursos, toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
+1. En la consola Recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
 
    ![Crear carpeta de recursos](assets/Create-folder.png)
 
@@ -28,11 +28,11 @@ Puede crear una carpeta privada en la interfaz de usuario Recursos Adobe Experie
 
    ![Active la casilla de verificación Privado para convertir la carpeta en privada](assets/private-folder.png)
 
-1. Toque o haga clic en **[!UICONTROL Crear]**. Se crea una carpeta privada en la interfaz de usuario.
+1. Haga clic en **[!UICONTROL Crear]**. Se crea una carpeta privada en la interfaz de usuario.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. Para compartir la carpeta con otros usuarios y asignarles privilegios, seleccione la carpeta y pulse o haga clic en el icono **[!UICONTROL Propiedades]** de la barra de herramientas.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,11 +58,11 @@ Puede crear una carpeta privada en la interfaz de usuario Recursos Adobe Experie
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Toque o haga clic en el icono Notificación para abrir la lista de las notificaciones.
+1. Haga clic en el icono Notificación para abrir la lista de las notificaciones.
 
    ![Lista de las notificaciones](assets/Assets-Notification.png)
 
-1. Toque o haga clic en la entrada de la carpeta privada compartida por el administrador para abrir la carpeta.
+1. Haga clic en la entrada de la carpeta privada compartida por el administrador para abrir la carpeta.
 
 >[!NOTE]
 >
