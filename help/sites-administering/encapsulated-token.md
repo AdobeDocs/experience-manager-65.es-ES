@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: 215f062f80e7abfe35698743ce971394d01d0ed6
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 0%
 
 ---
 
@@ -52,14 +55,23 @@ Puede ver cómo funciona esto en una implementación distribuida geográficament
 
 ## Configuración del token encapsulado {#configuring-the-encapsulated-token}
 
+>[!NOTE]
+>Todos los controladores de autenticación que sincronizan usuarios y dependen de la autenticación por token (como SAML y OAuth) solo funcionarán con tokens encapsulados si:
+>
+>* Las sesiones adhesivas están activadas o
+   >
+   >
+* Los usuarios ya se crean en AEM cuando inicio la sincronización. Esto significa que los tokens encapsulados no se admitirán en situaciones en las que los controladores **creen** usuarios durante el proceso de sincronización.
+
+
 Hay algunas cosas que debe tener en cuenta al configurar el token encapsulado:
 
-1. Debido a la criptografía involucrada, todas las instancias necesitan tener la misma clave HMAC. Desde AEM 6.3, el material clave ya no se almacena en el repositorio, sino en el sistema de archivos real. Con esto en mente, la mejor manera de replicar las claves es copiarlas del sistema de archivos de la instancia de origen a la de las instancias de destino a las que desee replicar las claves. Ver más información debajo de &quot;Replicando la clave HMAC&quot;.
+1. Debido a la criptografía involucrada, todas las instancias necesitan tener la misma clave HMAC. Desde AEM 6.3, el material clave ya no se almacena en el repositorio, sino en el sistema de archivos real. Con esto en mente, la mejor manera de replicar las claves es copiarlas del sistema de archivos de la instancia de origen a la de las instancias de destinatario a las que desee replicar las claves. Ver más información debajo de &quot;Replicando la clave HMAC&quot;.
 1. El token encapsulado debe estar habilitado. Esto se puede realizar a través de la consola web.
 
 ### Replicar la clave HMAC {#replicating-the-hmac-key}
 
-La clave HMAC está presente como una propiedad binaria de `/etc/key` en el repositorio. Puede descargarlo por separado pulsando el vínculo de **visualización** que hay junto a él:
+La clave HMAC está presente como una propiedad binaria de `/etc/key` en el repositorio. Puede descargarlo por separado pulsando el vínculo de **vista** que hay junto a él:
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
@@ -76,12 +88,12 @@ Para replicar la clave entre instancias, debe:
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Copie los archivos principales y HMAC.
-1. A continuación, vaya a la instancia de destino en la que desee duplicar la clave HMAC y navegue a la carpeta de datos. Por ejemplo:
+1. A continuación, vaya a la instancia de destinatario a la que desee realizar el duplicado de la clave HMAC y navegue hasta la carpeta de datos. Por ejemplo:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Pegue los dos archivos que copió anteriormente.
-1. [Actualice el paquete](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) de cifrado si la instancia de destino ya se está ejecutando.
+1. [Actualice el paquete](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) de cifrado si la instancia de destinatario ya se está ejecutando.
 
 1. Repita los pasos anteriores para todas las instancias en las que desee replicar la clave.
 
