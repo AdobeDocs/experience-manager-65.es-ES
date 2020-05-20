@@ -3,9 +3,9 @@ title: Importe y exporte metadatos de recursos de forma masiva.
 description: Importación y exportación masivas de metadatos de recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '785'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ La importación de metadatos es asincrónica y no impide el rendimiento del sist
    | [!UICONTROL Lanzar flujos de trabajo] | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada del iniciador está en vigor para el flujo de trabajo WriteBack [!UICONTROL de metadatos] DAM (que escribe metadatos en los datos XMP binarios). Al habilitar los flujos de trabajo de inicio se ralentiza el sistema. |
    | [!UICONTROL Nombre de columna de ruta de activos] | Define el nombre de la columna para el archivo CSV con recursos. |
 
-1. Toque o haga clic en **[!UICONTROL Importar]** desde la barra de herramientas. Una vez importados los metadatos, se muestra una notificación en la bandeja de entrada [!UICONTROL Notificación] .
+1. Haga clic en **[!UICONTROL Importar]** desde la barra de herramientas. Una vez importados los metadatos, se muestra una notificación en la bandeja de entrada [!UICONTROL Notificación] .
 
 1. Para verificar la importación correcta, vaya a la página [!UICONTROL Propiedades] de un recurso y compruebe los valores de los campos.
 
