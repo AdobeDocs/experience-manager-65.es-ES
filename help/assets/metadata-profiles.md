@@ -3,7 +3,10 @@ title: perfiles de metadatos para personalizar los requisitos de metadatos de lo
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 20%
 
 ---
 
@@ -14,8 +17,8 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
 ## Añadir un perfil de metadatos {#adding-a-metadata-profile}
 
-1. Vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos y toque **[!UICONTROL Crear]**.
-1. Introduzca un título para el Perfil Metadatos, por ejemplo Metadatos de ejemplo, y toque **[!UICONTROL Crear]**. Se muestra el perfil [!UICONTROL Editar formulario] para los metadatos.
+1. Vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos y haga clic en **[!UICONTROL Crear]**.
+1. Introduzca un título para el Perfil Metadatos, por ejemplo Metadatos de ejemplo, y haga clic en **[!UICONTROL Crear]**. Se muestra el perfil [!UICONTROL Editar formulario] para los metadatos.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
 
@@ -42,7 +45,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 1. (Opcional) Agregue más componentes a Editar formulario desde la pestaña **[!UICONTROL Generar formulario]** y configure sus propiedades en la pestaña **[!UICONTROL Configuración]**. Las siguientes propiedades están disponibles en la pestaña **[!UICONTROL Generar formulario]**:
 
 | Componente | Propiedades |
-|---|---|
+| ----------------------------- | ----------------------------------------------------------------------- |
 | [!UICONTROL Sección de encabezado] | Etiqueta de campo, <br> descripción |
 | [!UICONTROL Texto de una sola línea] | Etiqueta de campo, <br> Asignar a propiedad, <br> Valor predeterminado |
 | [!UICONTROL Texto con varios valores] | Etiqueta de campo, <br> Asignar a propiedad, <br> Valor predeterminado |
@@ -52,7 +55,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
 ![chlimage_1-201](assets/chlimage_1-484.png)
 
-1. Toque o haga clic en **[!UICONTROL Finalizado]**. El Perfil Metadatos se agrega a la lista de perfiles en la página Perfiles **[!UICONTROL de]** metadatos.<br>
+1. Haga clic en **[!UICONTROL Finalizado]**. El Perfil Metadatos se agrega a la lista de perfiles en la página Perfiles **[!UICONTROL de]** metadatos.<br>
 
    ![perfil de metadatos agregado en la página Perfiles de metadatos](assets/MetadataProfiles-page.png)
 
@@ -62,9 +65,9 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
    ![chlimage_1-203](assets/chlimage_1-486.png)
 
-1. Toque **[!UICONTROL Copiar]** desde la barra de herramientas.
+1. Haga clic en **[!UICONTROL Copiar]** en la barra de herramientas.
 1. En el cuadro de diálogo **[!UICONTROL Copiar Perfil]** de metadatos, introduzca un título para la nueva copia del Perfil de metadatos.
-1. Pulse **[!UICONTROL Copiar]**. La copia del perfil de metadatos aparece en la lista de perfiles de la página **[!UICONTROL Perfiles de metadatos]**.
+1. Haga clic en **[!UICONTROL Copiar]**. La copia del perfil de metadatos aparece en la lista de perfiles de la página **[!UICONTROL Perfiles de metadatos]**.
 
    ![Se agregó una copia del perfil de metadatos en la página Perfiles de metadatos](assets/copy-metadata-profile.png)
 
@@ -103,19 +106,19 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 Siga los pasos para aplicar el perfil de metadatos:
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Seleccione el perfil de metadatos que desea aplicar a una o varias carpetas.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
 
-1. Tap **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Done]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
 #### Aplicación de perfiles de metadatos a las carpetas de Propiedades {#applying-metadata-profiles-to-folders-from-properties}
 
-1. En el carril izquierdo, toque **[!UICONTROL Recursos]** y, a continuación, desplácese hasta la carpeta a la que desee aplicar un perfil de metadatos.
-1. En la carpeta, toque o haga clic en la marca de verificación para seleccionarla y, a continuación, toque o haga clic en **[!UICONTROL Propiedades]**.
+1. En el carril izquierdo, haga clic en **[!UICONTROL Recursos]** y, a continuación, navegue a la carpeta a la que desee aplicar un perfil de metadatos.
+1. En la carpeta, haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic en **[!UICONTROL Propiedades]**.
 
-1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione el perfil en el menú desplegable y pulse **[!UICONTROL Guardar]**.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save]**.
 
    ![chlimage_1-208](assets/chlimage_1-491.png)
 
@@ -129,7 +132,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de me
 
 Para aplicar un perfil de metadatos de forma global, siga estos pasos:
 
-* Vaya a `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y toque **[!UICONTROL Guardar]**.
+* Vaya a `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y haga clic en **[!UICONTROL Guardar]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
@@ -145,16 +148,16 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 
 ### Quitar perfiles de metadatos de las carpetas mediante la interfaz de usuario de Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos.
+1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Seleccione el perfil de metadatos que desea eliminar de una carpeta o de varias carpetas.
-1. Pulse **[!UICONTROL Eliminar perfil de metadatos de las carpetas]** y seleccione las carpetas que desee utilizar para eliminar un perfil y pulse **[!UICONTROL Listo]**.
+1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
    Puede confirmar que el perfil de metadatos ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre.
 
 ### Quitar perfiles de metadatos de las carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Toque el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de metadatos.
-1. En la carpeta, toque la marca de verificación para seleccionarla y, a continuación, **[!UICONTROL Propiedades]**.
+1. Haga clic en el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de metadatos.
+1. En la carpeta, haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic en **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
 ## Limitaciones y prácticas recomendadas {#limitations-best-practices-tips}
