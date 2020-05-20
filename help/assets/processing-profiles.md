@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -95,14 +95,14 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
 
 **Ajuste opcional del tamaño del lote del flujo de trabajo de reprocesamiento**
 
-1. En Experience Manager, pulse **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
+1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
 1. En la página Modelos de flujo de trabajo, en Vista de tarjetas o Vista de Listas, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
 
    ![Página Modelos de flujo de trabajo con Scene7: Volver a procesar los recursos seleccionados en la Vista de tarjetas](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Editar]**. Una nueva ficha de explorador abre Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos.
-1. En Scene7: Volver a procesar la página de flujo de trabajo Recursos, cerca de la esquina superior derecha, toque **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
-1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, toque **[!UICONTROL Configurar]** en la barra de herramientas.
+1. En Scene7: Volver a procesar la página de flujo de trabajo Recursos, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
+1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, haga clic en **[!UICONTROL Configurar]** en la barra de herramientas.
 
    ![Componente de carga por lotes de Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -115,16 +115,16 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
    * Seleccione **[!UICONTROL Avanzar al tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar con la bandeja de entrada cuando se alcance el tiempo de espera.
    ![Cuadro de diálogo Propiedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. En la esquina superior derecha del cuadro de diálogo Propiedades **[!UICONTROL de la etapa de carga por]** lotes en Scene7, toque **[!UICONTROL Listo]**.
+1. En la esquina superior derecha del cuadro de diálogo Propiedades **[!UICONTROL de la etapa de carga por]** lotes en Scene7, haga clic en **[!UICONTROL Finalizado]**.
 
-1. En la esquina superior derecha de Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, toque **[!UICONTROL Sincronizar]**. Cuando se ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución de flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha de Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, haga clic en **[!UICONTROL Sincronizar]**. Cuando se ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución de flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
 
    ![Sincronización del modelo de flujo de trabajo](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Cierre la ficha del explorador que muestra Scene7: Volver a procesar el modelo de flujo de trabajo de Recursos.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -135,10 +135,10 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
