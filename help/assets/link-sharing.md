@@ -3,7 +3,10 @@ title: Generación de una URL para los recursos compartidos
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos AEM como una URL para terceros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '1221'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +28,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 >Antes de compartir un vínculo con los usuarios, asegúrese de que el servicio de correo de CQ de día está configurado. Se produce un error si intenta compartir un vínculo sin [configurar primero el servicio](/help/assets/link-sharing.md#configmailservice)de correo de Day CQ.
 
 1. En la interfaz de usuario de Recursos, seleccione el recurso que desea compartir como vínculo.
-1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Compartir vínculo]** ![assets_share](assets/assets_share.png).
+1. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]** ![assets_share](assets/assets_share.png).
 
    Se crea automáticamente un vínculo de recurso en el campo **[!UICONTROL Compartir vínculo]** . Copie este vínculo y compártalo con los usuarios. El tiempo de caducidad predeterminado para el vínculo es un día.
 
@@ -78,32 +81,32 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    De forma predeterminada, los usuarios solo pueden descargar las representaciones del recurso que se comparten como vínculo.
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios a través de un correo electrónico.
-1. Para vista del recurso compartido, toque o haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página de **[!UICONTROL Adobe Marketing Cloud]** .
+1. Para vista del recurso compartido, haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página de **[!UICONTROL Adobe Marketing Cloud]** .
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-   Para cambiar a la vista de lista, toque o haga clic en la opción de diseño de la barra de herramientas.
+   Para cambiar a la vista de lista, haga clic en la opción de diseño en la barra de herramientas.
 
-1. Para generar una vista previa del recurso, pulse o haga clic en el recurso compartido. Para cerrar la vista previa y volver a la página de **[!UICONTROL Experience Cloud]**, pulse o haga clic en **[!UICONTROL Atrás]** en la barra de herramientas. Si ha compartido una carpeta, pulse o haga clic en **[!UICONTROL Carpeta principal]** para regresar a la carpeta principal.
+1. Para generar una previsualización del recurso, haga clic en el recurso compartido. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
    AEM admite la generación de previsualizaciones de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
 
-1. Para descargar el recurso compartido, toque **[!UICONTROL Seleccionar]** en la barra de herramientas, toque o haga clic en el recurso y, a continuación, toque o haga clic en **[!UICONTROL Descargar]** desde la barra de herramientas.
+1. Para descargar el recurso compartido, haga clic en **[!UICONTROL Seleccionar]** en la barra de herramientas, haga clic en el recurso y, a continuación, haga clic en **[!UICONTROL Descargar]** desde la barra de herramientas.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Para vista de los recursos que ha compartido como vínculos, vaya a la interfaz de usuario de Recursos y toque el logotipo de Experience Manager. Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
+1. Para vista de los recursos compartidos como vínculos, vaya a la interfaz de usuario de Recursos y haga clic en el logotipo de Experience Manager. Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
 1. En el panel Navegación, seleccione **[!UICONTROL Vínculos compartidos]** para mostrar una lista de recursos compartidos.
-1. Para dejar de compartir un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Dejar de compartir]** en la barra de herramientas. A continuación se muestra un mensaje de confirmación. La entrada del recurso se elimina de la lista.
+1. Para dejar de compartir un recurso, selecciónelo y haga clic en **[!UICONTROL Dejar de compartir]** en la barra de herramientas. A continuación se muestra un mensaje de confirmación. La entrada del recurso se elimina de la lista.
 
 ## Configurar el servicio de correo CQ Day {#configmailservice}
 
 1. En la página de inicio de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 1. En la lista de servicios, localice **[!UICONTROL Day CQ Mail Service]**.
-1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
+1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * Nombre de host del servidor SMTP: nombre de host del servidor de correo electrónico
    * Puerto del servidor SMTP: puerto del servidor de correo electrónico
@@ -111,13 +114,13 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    * Contraseña SMTP: contraseña del servidor de correo electrónico
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Click/tap **[!UICONTROL Save]**.
+1. Haga clic en **[!UICONTROL Guardar]**.
 
 ## Configurar el tamaño máximo de datos {#maxdatasize}
 
 Al descargar recursos del vínculo compartido mediante la función de uso compartido de vínculos, AEM comprime la jerarquía de recursos del repositorio y, a continuación, devuelve el recurso en un archivo ZIP. Sin embargo, a falta de límites a la cantidad de datos que se pueden comprimir en un archivo ZIP, grandes cantidades de datos están sujetas a compresión, lo que causa errores de memoria insuficiente en JVM. Para proteger el sistema de un posible ataque de denegación de servicio debido a esta situación, configure el tamaño máximo usando el parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** para el servlet proxy [!UICONTROL Day CQ DAM Adhoc Asset Share] en Configuration Manager. Si el tamaño sin comprimir del recurso supera el valor configurado, se rechazan las solicitudes de descarga de recursos. El valor predeterminado es 100 MB.
 
-1. Haga clic o pulse el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+1. Click the AEM logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Desde la consola web, localice la configuración del servlet **[!UICONTROL proxy de uso compartido de recursos ad hoc CQ DAM]** Day.
 1. Abra la configuración del servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** en modo de edición y modifique el valor del parámetro **[!UICONTROL Tamaño de contenido máximo (sin comprimir)]**.
 
