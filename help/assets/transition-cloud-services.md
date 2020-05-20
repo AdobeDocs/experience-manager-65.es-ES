@@ -3,7 +3,10 @@ title: Aplicar servicios de traducción en la nube a las carpetas
 description: Aplicar servicios de traducción en la nube a las carpetas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 43%
 
 ---
 
@@ -19,12 +22,12 @@ Puede aplicar el servicio de traducción en la nube directamente a la carpeta de
 La aplicación de servicios de traducción en la nube directamente a la carpeta de recursos elimina la necesidad de configurar servicios de traducción al crear o actualizar flujos de trabajo de traducción.
 
 1. En la interfaz de usuario de Recursos, seleccione la carpeta a la que desea aplicar los servicios de traducción.
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Propiedades]** para mostrar la página Propiedades **[!UICONTROL de la]** carpeta.
+1. From the toolbar, click the **[!UICONTROL Properties]** icon to display the **[!UICONTROL Folder Properties]** page.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
-1. Vaya a la ficha **[!UICONTROL Cloud Services]** .
-1. En la lista Configuraciones del servicio de nube, elija el proveedor de traducción deseado. Por ejemplo, si desea utilizar los servicios de traducción de Microsoft, elija **[!UICONTROL Microsoft Translator]**.
+1. Vaya a la pestaña **[!UICONTROL Cloud Services]**.
+1. En la lista Cloud Service Configurations, elija el proveedor de traducción deseado. Por ejemplo, si desea utilizar los servicios de traducción de Microsoft, elija **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -32,23 +35,23 @@ La aplicación de servicios de traducción en la nube directamente a la carpeta 
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo.El servicio de traducción se aplica a la carpeta.
+1. From the toolbar, click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the dialog.The translation service is applied to the folder.
 
-## Aplicar conector de traducción personalizada {#applying-custom-translation-connector}
+## Aplicar conector de traducción personalizada  {#applying-custom-translation-connector}
 
-Si desea aplicar un conector personalizado para los servicios de traducción que desea utilizar en los flujos de trabajo de traducción. Para aplicar un conector personalizado, primero instale el conector desde el Administrador de paquetes. A continuación, configure el conector desde la consola de Cloud Services. Después de configurar el conector, estará disponible en la lista de conectores de la ficha Cloud Services que se describe en [Aplicación de los servicios](transition-cloud-services.md#applying-the-translation-services)de traducción. Después de aplicar el conector personalizado y ejecutar los flujos de trabajo de traducción, el mosaico Resumen **[!UICONTROL de]** traducción del proyecto de traducción muestra los detalles del conector en los encabezados **[!UICONTROL Proveedor]** y **[!UICONTROL Método]**.
+Si desea aplicar un conector personalizado para los servicios de traducción que desea utilizar en los flujos de trabajo de traducción. Para aplicar un conector personalizado, primero instale el conector desde el Administrador de paquetes. A continuación, configure el conector desde la consola de Cloud Services. Después de configurar el conector, estará disponible en la lista de conectores de la pestaña Cloud Services que se describe en [Aplicación de los serviciosde traducción](transition-cloud-services.md#applying-the-translation-services). Después de aplicar el conector personalizado y ejecutar los flujos de trabajo de traducción, el mosaico **[!UICONTROL Resumen de traducción]** del proyecto de traducción muestra los detalles del conector en los encabezados **[!UICONTROL Proveedor]** y **[!UICONTROL Método]**.
 
 1. Instale el conector desde el Administrador de paquetes.
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Servicios]** de nube.
-1. Ubique el conector que instaló en Servicios **[!UICONTROL de]** terceros en la página Servicios **[!UICONTROL de]** nube.
+1. Haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Servicios]** de nube.
+1. Coloque el conector que instaló en **[!UICONTROL Servicios de terceros]** en la página **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Toque o haga clic en el vínculo **[!UICONTROL Configurar ahora]** para abrir el cuadro de diálogo **[!UICONTROL Crear configuración]** .
+1. Haga clic en el vínculo **[!UICONTROL Configurar ahora]** para abrir el cuadro de diálogo **[!UICONTROL Crear configuración]** .
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Especifique un título y un nombre para el conector y, a continuación, toque o haga clic en **[!UICONTROL Crear]**. El conector personalizado está disponible en la lista de conectores de la ficha Servicios **[!UICONTROL de]** nube que se describe en el paso 5 de [Aplicación de los servicios](#applying-the-translation-services)de traducción.
-1. Ejecute cualquier flujo de trabajo de traducción descrito en [Creación de proyectos](translation-projects.md) de traducción después de aplicar el conector personalizado. Compruebe los detalles del conector en el mosaico Resumen **[!UICONTROL de]** traducción del proyecto de traducción en la consola **[!UICONTROL Proyectos]** .
+1. Specify a title and a name for the connector, and then click **[!UICONTROL Create]**. El conector personalizado está disponible en la lista de conectores de la pestaña **[!UICONTROL Cloud Services]** que se describe en el paso 5 de [Aplicación de los servicios de traducción](#applying-the-translation-services).
+1. Ejecute cualquier flujo de trabajo de traducción descrito en [Creación de proyectos de traducción](translation-projects.md) después de aplicar el conector personalizado. Compruebe los detalles del conector en el mosaico **[!UICONTROL Resumen de traducción]** del proyecto de traducción en la consola **[!UICONTROL Proyectos]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
