@@ -3,9 +3,9 @@ title: 'esquemas de metadatos para definir la presentación de la página de pro
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 265fc8fa6b4d835241b1213d95beaa17db5798ac
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2661'
 ht-degree: 7%
 
 ---
@@ -19,11 +19,11 @@ En [!DNL Adobe Experience Manager Assets], los esquemas contienen campos especí
 
 Para vista y edición de la página de propiedades de un recurso, siga estos pasos:
 
-1. Toque o haga clic en el icono Propiedades **[!UICONTROL de la]** Vista en Acciones rápidas del mosaico del recurso en la vista de la tarjeta.
+1. Haga clic en el icono Propiedades **[!UICONTROL de la]** Vista de Acciones rápidas en el mosaico de recursos de la vista de tarjetas.
 
    ![Acciones rápidas en el mosaico de recursos](assets/chlimage_1-170.png)
 
-   Como alternativa, seleccione un recurso y, a continuación, toque o haga clic en el icono [!UICONTROL Propiedades] de la barra de herramientas.
+   También puede seleccionar un recurso y, a continuación, hacer clic en el icono [!UICONTROL Propiedades] de la barra de herramientas.
 
 1. Puede editar las distintas propiedades de metadatos editables en las fichas disponibles. Sin embargo, no puede modificar el [!UICONTROL tipo] de recurso en la ficha [!UICONTROL Básico] de la página de propiedades.
 
