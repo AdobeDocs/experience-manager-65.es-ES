@@ -2,7 +2,7 @@
 title: Notas de la versión anterior de AEM 6.5 Service Pack
 description: Notas de la versión específicas de Adobe Experience Manager 6.5 Service Pack 3 y versiones anteriores.
 translation-type: tm+mt
-source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+source-git-commit: 321710219053ab43fe5a223665bc20987e1afb31
 workflow-type: tm+mt
 source-wordcount: '6277'
 ht-degree: 47%
@@ -12,7 +12,7 @@ ht-degree: 47%
 
 # Revisiones y paquetes de funciones incluidos en instancias de Service Pack anteriores {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0 {#aem-6530}
+## Adobe Experience Manager 6.5.3.0 {#aem-6530-rn}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 es una versión importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad, publicadas desde la disponibilidad general de la versión 6.5 en **abril de 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
@@ -132,7 +132,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El migrador de Scene7 establece el estado de publicación de forma incorrecta (CQ-4263492).
 
-* La página de resultados de la búsqueda por IU táctil (realizada a través de Omniture) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario en los fragmentos de contenido (CQ-4282898).
+* La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente y pierde la posición de desplazamiento del usuario en los fragmentos de contenido (CQ-4282898).
 
 * Los archivos PDF no se indexan y el contenido dentro de no se puede buscar (CQ-4278916).
 
