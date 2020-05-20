@@ -1,30 +1,33 @@
 ---
-title: Gestión de recursos de vídeo
-description: Obtenga información sobre cómo cargar, previsualizar, anotar y publicar recursos de vídeo.
+title: Administrar recursos de vídeo
+description: Obtenga información sobre cómo cargar, previsualización, realizar anotaciones y publicar recursos de vídeo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '784'
+ht-degree: 11%
 
 ---
 
 
-# Gestión de recursos de vídeo {#manage-video-assets}
+# Administrar recursos de vídeo {#manage-video-assets}
 
 Obtenga información sobre cómo administrar y editar los recursos de vídeo en Recursos Adobe Experience Manager (AEM). Además, si tiene licencia para usar Dynamic Media, consulte la documentación [de vídeo de](/help/assets/video.md)Dynamic Media.
 
-## Carga y vista previa de recursos de vídeo {#upload-and-preview-video-assets}
+## Carga y previsualización de recursos de vídeo {#upload-and-preview-video-assets}
 
-Recursos Adobe Experience Manager genera vistas previas para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una vista previa. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede obtener una vista previa de estas representaciones en la interfaz de usuario de Recursos AEM.
+Recursos Adobe Experience Manager genera previsualizaciones para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una previsualización. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede realizar la previsualización de estas representaciones en la interfaz de usuario de Recursos AEM.
 
 1. En la carpeta o subcarpetas de recursos digitales, navegue a la ubicación donde desee agregar recursos digitales.
-1. Para cargar el recurso, toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Archivos]**. Como alternativa, suéltela directamente en el área de recursos. Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets) para obtener más información sobre la operación de carga.
-1. Para obtener una vista previa de un vídeo en la vista de tarjeta, toque el botón **[!UICONTROL Reproducir]** del recurso de vídeo.
+1. Para cargar el recurso, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Archivos]**. Como alternativa, suéltela directamente en el área de recursos. Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets) para obtener más información sobre la operación de carga.
+1. Para previsualización de un vídeo en la vista de tarjeta, haga clic en el botón **[!UICONTROL Reproducir]** del recurso de vídeo.
 
    ![chlimage_1-65](assets/chlimage_1-201.png)
 
-   Puede pausar o reproducir vídeo solo en la vista de tarjeta. Los botones [!UICONTROL Reproducir] y [!UICONTROL Pausa] no están disponibles en la vista de lista.
+   Puede pausar o reproducir vídeo solo en la vista de la tarjeta. Los botones [!UICONTROL Reproducir] y [!UICONTROL Pausa] no están disponibles en la vista de lista.
 
-1. Para obtener una vista previa del vídeo en la página de detalles del recurso, toque o haga clic en el icono **[!UICONTROL Editar]** de la tarjeta.
+1. Para previsualización del vídeo en la página de detalles del recurso, haga clic en el icono **[!UICONTROL Editar]** de la tarjeta.
 
    El vídeo se reproduce en el reproductor de vídeo nativo del navegador. Puede reproducir, pausar, controlar el volumen y aplicar zoom en el vídeo a pantalla completa.
 
@@ -45,10 +48,10 @@ Además de la configuración de Experience Manager Assets, cambie las configurac
 
 Para configurar un límite de tamaño de archivo mayor, realice los siguientes pasos en el `/apps` directorio.
 
-1. En AEM, toque **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In AEM, click **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En CRXDE Lite, vaya a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Para ver la ventana del directorio, toque el `>>` icono .
-1. En la barra de herramientas, toque el nodo **** Overlay. También puede seleccionar Nodo **[!UICONTROL de]** superposición en el menú contextual.
-1. En el cuadro de diálogo Nodo **[!UICONTROL de]** superposición, toque **[!UICONTROL Aceptar]**.
+1. From the toolbar, click the **[!UICONTROL Overlay Node]**. También puede seleccionar **[!UICONTROL Nodo de superposición]** en el menú contextual.
+1. In the **[!UICONTROL Overlay Node]** dialog, click **[!UICONTROL OK]**.
 
    ![chlimage_1-67](assets/chlimage_1-203.png)
 
@@ -56,16 +59,16 @@ Para configurar un límite de tamaño de archivo mayor, realice los siguientes p
 1. En la ficha **[!UICONTROL Propiedades]** , introduzca el valor apropiado en bytes para aumentar el límite de tamaño al tamaño deseado. Por ejemplo, para aumentar el límite de tamaño a 30 GB, escriba `{sizeLimit : "32212254720"}` value.
 
 1. En la barra de herramientas, toque **[!UICONTROL Guardar todo]**.
-1. En AEM, toque **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
-1. En la página Paquetes de la consola web de Adobe Experience Manager, en la columna Nombre de la tabla, toque y localice **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
-1. En la página Controlador de trabajos de proceso externo de Adobe Granite Workflow, establezca los segundos para los campos Tiempo de espera **** predeterminado y Tiempo de espera **** máximo en `18000` (cinco horas).
-1. Toque **[!UICONTROL Guardar]**.
-1. En AEM, toque **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Dynamic Media Encode Video]** y, a continuación, toque **[!UICONTROL Editar]**.
-1. En la página de flujo de trabajo, toque dos veces el componente de proceso **[!UICONTROL del servicio de vídeo de]** Dynamic Media.
-1. En el cuadro de diálogo Propiedades [!UICONTROL del] paso, en la ficha **[!UICONTROL Común]** , expanda Configuración **avanzada**.
-1. En el campo **[!UICONTROL Tiempo de espera]** , especifique un valor de `18000`y, a continuación, toque **[!UICONTROL Aceptar]** para volver a la página de flujo de trabajo de codificación de vídeo **[!UICONTROL de]** Dynamic Media.
-1. Cerca de la parte superior de la página, debajo del título de la página de codificación de vídeo de Dynamic Media, toque **[!UICONTROL Guardar]**.
+1. In AEM, click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. En la página Paquetes de la consola web de Adobe Experience Manager, en la columna Nombre de la tabla, busque y haga clic en **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
+1. En la página Controlador de trabajos de proceso externo de Adobe Granite Workflow, establezca los segundos para los campos **[!UICONTROL Tiempo de espera predeterminado]** y **[!UICONTROL Tiempo de espera máximo]** en `18000` (cinco horas).
+1. Haga clic en **[!UICONTROL Guardar]**.
+1. En AEM, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Dynamic Media Encode Video]** y, a continuación, haga clic en **[!UICONTROL Editar]**.
+1. En la página de flujo de trabajo, haga clic con el botón doble en el componente Proceso **[!UICONTROL del servicio de vídeo de medios]** dinámicos.
+1. En el cuadro de diálogo [!UICONTROL Propiedades del paso], en la pestaña **[!UICONTROL Común]**, expanda **Configuración avanzada**.
+1. In the **[!UICONTROL Timeout]** field, specify a value of `18000`, then click **[!UICONTROL OK]** to return to the **[!UICONTROL Dynamic Media Encode Video]** workflow page.
+1. Cerca de la parte superior de la página, debajo del título de la página de codificación de vídeo de Dynamic Media, haga clic en **[!UICONTROL Guardar]**.
 
 ## Publicación de recursos de vídeo {#publish-video-assets}
 
@@ -73,18 +76,18 @@ Una vez publicados los recursos de vídeo, estarán disponibles para incluirlos 
 
 ## Anotación de recursos de vídeo {#annotate-video-assets}
 
-1. Desde la consola Recursos, toque o haga clic en el icono [!UICONTROL Editar] de la tarjeta de recursos para mostrar la página de detalles de recursos.
-1. Para reproducir el vídeo, toque o haga clic en el icono [!UICONTROL Vista previa] .
+1. En la consola Recursos, haga clic en el icono [!UICONTROL Editar] de la tarjeta de recursos para mostrar la página de detalles de recursos.
+1. Para reproducir el vídeo, haga clic en el icono de [!UICONTROL Previsualización] .
 1. Para realizar anotaciones en el vídeo, haga clic en el botón **[!UICONTROL Anotar]** . Se agrega una anotación en el punto de tiempo (fotograma) concreto del vídeo. Al realizar anotaciones, puede dibujar en el lienzo e incluir un comentario con el dibujo. Los comentarios se guardan automáticamente.
 
    ![chlimage_1-68](assets/chlimage_1-204.png)
 
    Para salir del asistente para anotaciones, haga clic en **[!UICONTROL Cerrar]**.
 
-1. Busque un punto específico en el vídeo, especifique el tiempo en segundos en el campo de **texto** y haga clic en **Saltar**. Por ejemplo, para omitir los primeros 10 segundos de vídeo, introduzca 20 en el campo de texto.
+1. Busque un punto específico en el vídeo, establezca el tiempo en segundos en el campo de **texto** y haga clic en **Saltar**. Por ejemplo, para omitir los primeros 10 segundos de vídeo, introduzca 20 en el campo de texto.
 
    ![chlimage_1-69](assets/chlimage_1-205.png)
 
-1. Para verlo en la línea de tiempo, haga clic en una anotación. Para eliminar la anotación de la línea de tiempo, haga clic en **[!UICONTROL Eliminar]**.
+1. Para vista en la línea de tiempo, haga clic en una anotación. Para eliminar la anotación de la línea de tiempo, haga clic en **[!UICONTROL Eliminar]**.
 
    ![chlimage_1-70](assets/chlimage_1-206.png)
