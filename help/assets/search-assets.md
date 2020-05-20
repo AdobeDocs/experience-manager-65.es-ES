@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '5872'
+source-wordcount: '5869'
 ht-degree: 6%
 
 ---
@@ -114,9 +114,9 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 
 Puede mejorar la relevancia de las palabras clave para los recursos en particular a fin de mejorar las búsquedas basadas en las palabras clave. En otras palabras, las imágenes para las que promociona palabras clave específicas aparecen en la parte superior de los resultados de búsqueda cuando realiza una búsqueda en base a estas palabras clave.
 
-1. From the [!DNL Assets] user interface, open the properties page for the asset. Haga clic en **[!UICONTROL Avanzadas]** y pulse o haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para las palabras clave de búsqueda]**.
-1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, toque o haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee impulsar la búsqueda de la imagen y, a continuación, haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
+1. Click **[!UICONTROL Save &amp; Close]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
 Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Búsqueda en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
