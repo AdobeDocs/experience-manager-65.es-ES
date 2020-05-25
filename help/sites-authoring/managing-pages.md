@@ -1,5 +1,5 @@
 ---
-title: Creación y organización de páginas
+title: Crear y organizar páginas
 seo-title: Crear y organizar páginas
 description: Cómo crear y administrar páginas con AEM
 seo-description: Cómo crear y administrar páginas con AEM
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+workflow-type: tm+mt
+source-wordcount: '2349'
+ht-degree: 93%
 
 ---
 
@@ -43,7 +46,7 @@ La estructura de un sitio web se puede considerar como una estructura de árbol 
 
 The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
 
-* Entorno de creación
+* entorno de autor
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Entorno de publicación
@@ -77,7 +80,7 @@ Depending on the configuration of your instance, use of `/content` might be opti
  /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-authoring/basic-handling.md#navigating) and perform actions on the pages. También puede crear sitios nuevos y [páginas nuevas](#creating-a-new-page).
+Esta estructura puede verse desde la consola **Sitios**, donde puede [desplazarse por las páginas de su sitio web](/help/sites-authoring/basic-handling.md#navigating) y llevar a cabo acciones en las páginas. También puede crear sitios nuevos y [páginas nuevas](#creating-a-new-page).
 
 Desde cualquier punto, podrá ver la rama hacia arriba desde las rutas en la barra de encabezado:
 
@@ -107,7 +110,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 
 >[!NOTE]
 >
->Al definir un nombre de página, se recomienda que sea lo más corto y expresivo posible para que el lector pueda entenderlo con facilidad. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
+>Al definir un nombre de página, se recomienda que sea lo más corto y expresivo posible para que el lector pueda entenderlo con facilidad. Para obtener más información, consulte la [guía de estilo W3C](https://www.w3.org/Provider/Style/TITLE.html) para el elemento de `title`.
 
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 >
@@ -128,7 +131,7 @@ Si AEM se ejecuta en una [implementación del administrador de persistencia de M
 
 #### Título {#title}
 
-Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre** de página de esta cadena y lo [validará según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Por ejemplo:
+Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre**[ de página de esta cadena y lo validará según las convenciones impuestas por AEM y JCR. ](/help/sites-developing/naming-conventions.md) A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -137,7 +140,7 @@ Si proporciona solo un **título** de página al crear una nueva página, AEM de
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando AEM detecta caracteres que no son válidos en el campo, se resaltarán con un mensaje explicativo.
+Al indicar un valor **Nombre** cuando se crea una página, AEM validará el nombre según las convenciones impuestas por AEM y JCR. [](/help/sites-developing/naming-conventions.md) No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando AEM detecta caracteres que no son válidos en el campo, se resaltarán con un mensaje explicativo.
 
 ![caop-02](assets/caop-02.png)
 
@@ -184,7 +187,7 @@ La [consola Componentes](/help/sites-authoring/default-components-console.md) ap
 A menos que alguien haya creado todas las páginas con antelación, antes de poder empezar a crear contenido, debe crear una página:
 
 1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
-1. Desplácese a la ubicación en la que desee crear la nueva página.
+1. Desplácese hasta la ubicación en la que desee crear la nueva página.
 1. Abra el selector desplegable seleccionando **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
 
    ![caop-03](assets/caop-03.png)
@@ -198,7 +201,7 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
 
 1. En el último paso del asistente puede realizar una de las acciones siguientes:
 
-   * Utilice las tres fichas para especificar las [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página; a continuación, toque o haga clic en **Crear** para crear la página.
+   * Utilice las tres pestañas para especificar las [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página; a continuación, pulse o haga clic en **Crear** para crear la página.
 
    * Utilice **Atrás** para volver a la selección de plantillas.
    Los campos clave son:
@@ -243,7 +246,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) y la barra de herramientas
-   And then select the **Edit** icon:
+   A continuación, seleccione el icono **Editar**:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
 
@@ -252,7 +255,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 >[!NOTE]
 Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
 
-### Copiar y pegar una página {#copying-and-pasting-a-page}
+### Copiar y pegar una página  {#copying-and-pasting-a-page}
 
 Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
@@ -268,15 +271,19 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
    >[!NOTE]
    Si se encuentra en el modo de selección, se saldrá del mismo automáticamente en cuanto se copie la página.
 
-1. Desplácese a la ubicación de la copia nueva de la página.
-1. Utilice el icono **Pegar** de la página:
+1. Desplácese hasta la ubicación de la copia nueva de la página.
+1. El icono **Pegar** está disponible con una flecha desplegable directamente a la derecha:
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![Pegar](assets/paste-without-children.png)
 
-   Se creará una copia de la página original y de las páginas secundarias en esta ubicación.
+   Puede:
+   * Seleccione el icono **Pegar** página: En esta ubicación, se creará una copia de la página original y de las páginas secundarias.
+   * Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios**. Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
+   >[!NOTE]
+   La opción **Pegar sin elementos secundarios** está disponible en [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
 
    >[!NOTE]
-   Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. For example if `winter` already exists `winter` will become `winter1`.
+   Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
 ### Mover una página o cambiarle el nombre {#moving-or-renaming-a-page}
 
@@ -315,7 +322,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
    El nombre de la página puede seguir siendo el mismo si solo va a mover la página.
 
    >[!NOTE]
-   Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. For example if `winter` already exists `winter` will become `winter1`.
+   Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
 1. En el paso **Seleccionar destino** del asistente puede realizar una de las acciones siguientes:
 
@@ -330,7 +337,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
    ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
-   Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. For example if `winter` already exists `winter` will become `winter1`.
+   Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
 1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en el paso **Ajustar/Volver a publicar**.
 
@@ -344,7 +351,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 1. Si selecciona **Mover**, se completará el proceso y la página se moverá o cambiará de nombre, según el caso.
 
 >[!NOTE]
-Si la página ya se había publicado, la acción de mover la página provocará que se cancele su publicación automáticamente. De forma predeterminada, se volverá a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
+Si la página ya se ha publicado, al mover la página se cancelará la publicación automáticamente. De forma predeterminada, se volverá a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
 
 >[!NOTE]
 Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a publicar**.
@@ -357,7 +364,7 @@ Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a pu
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Como medida de seguridad, el icono de página **Eliminar** no está disponible como acción rápida.
+   Como medida de seguridad, el icono **Eliminar** página no está disponible como acción rápida.
 
 1. Aparecerá un diálogo que le pedirá que confirme la acción. Realice una de las acciones siguientes:
 
@@ -365,7 +372,7 @@ Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a pu
    * Seleccione **Eliminar** para confirmar la acción:
 
       * Si la página no dispone de referencias, se eliminará.
-      * Si la página dispone de referencias, un cuadro de mensaje le informará de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
+      * Si la página dispone de referencias, un cuadro de mensaje le informa de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
 Si la página ya se ha publicado, se cancelará su publicación automáticamente antes de la eliminación.
@@ -385,7 +392,7 @@ A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de
 
 >[!CAUTION]
 * Las carpetas solo se pueden crear directamente en **Sitios** o en otras carpetas. No se pueden crear en una página.
-* Las acciones estándar mover, copiar, pegar, eliminar, publicar, cancelar la publicación y ver/editar propiedades se pueden realizar en una carpeta.
+* Las acciones estándar mover, copiar, pegar, eliminar, publicar, cancelar publicación y las propiedades de ver/editar se pueden ejecutar en una carpeta.
 * Las carpetas no están disponibles para la selección en una Live Copy.
 
 
