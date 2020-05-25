@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 1493b301ecf4c25f785495e11ead352de600ddb7
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Para la implementación basada en JCR, que se asigna `Tags` a JCR `Nodes`, puede utilizar directamente el `adaptTo` mecanismo de Sling si dispone del recurso (por ejemplo, `/etc/tags/default/my/tag`):
+Para la implementación basada en JCR, que se asigna `Tags` a JCR `Nodes`, puede utilizar directamente el `adaptTo` mecanismo de Sling si dispone del recurso (por ejemplo, `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -131,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Recopilador de elementos no utilizados de etiquetas {#the-tag-garbage-collector}
 
-El recolector de elementos no utilizados de etiquetas es un servicio de fondo que limpia las etiquetas que están ocultas y no se usan. Las etiquetas ocultas y no utilizadas son las que aparecen debajo `/etc/tags` y que tienen una `cq:movedTo` propiedad y no se utilizan en un nodo de contenido; tienen un recuento de cero. Al utilizar este proceso de eliminación diferido, el nodo de contenido (es decir, la `cq:tags` propiedad) no tiene que actualizarse como parte de la operación de mover o combinar. Las referencias de la propiedad `cq:tags` se actualizan automáticamente cuando se actualiza la `cq:tags` propiedad, por ejemplo, a través del cuadro de diálogo de propiedades de página.
+El recolector de elementos no utilizados de etiquetas es un servicio de fondo que limpia las etiquetas que están ocultas y no se usan. Las etiquetas ocultas y no utilizadas son las que aparecen debajo `/content/cq:tags` y que tienen una `cq:movedTo` propiedad y no se utilizan en un nodo de contenido; tienen un recuento de cero. Al utilizar este proceso de eliminación diferido, el nodo de contenido (es decir, la `cq:tags` propiedad) no tiene que actualizarse como parte de la operación de mover o combinar. Las referencias de la propiedad `cq:tags` se actualizan automáticamente cuando se actualiza la `cq:tags` propiedad, por ejemplo, a través del cuadro de diálogo de propiedades de página.
 
 El recolector de elementos no utilizados de etiquetas se ejecuta de forma predeterminada una vez al día. Puede configurarse en:
 
@@ -183,13 +186,13 @@ En AEM, el idioma se puede obtener desde el idioma de la página o desde el idio
 
 Para el etiquetado, la localización depende del contexto, ya que la etiqueta se `titles`puede mostrar en el idioma de la página, en el idioma del usuario o en cualquier otro idioma.
 
-### Adición de un nuevo idioma al cuadro de diálogo Editar etiqueta {#adding-a-new-language-to-the-edit-tag-dialog}
+### Añadir un nuevo idioma en el cuadro de diálogo Editar etiqueta {#adding-a-new-language-to-the-edit-tag-dialog}
 
 El siguiente procedimiento describe cómo agregar un nuevo idioma (finés) al cuadro de diálogo Editar **** etiqueta:
 
-1. En **CRXDE**, edite la propiedad de varios valores `languages` del nodo `/etc/tags`.
+1. En **CRXDE**, edite la propiedad de varios valores `languages` del nodo `/content/cq:tags`.
 
-1. Agregue `fi_fi` - que representa la configuración regional finlandesa- y guarde los cambios.
+1. Añada `fi_fi` - que representa la configuración regional finlandesa- y guarde los cambios.
 
 El nuevo idioma (finés) ya está disponible en el cuadro de diálogo de etiquetas de las propiedades de página y en el cuadro de diálogo **Editar etiqueta** al editar una etiqueta en la consola **Etiquetado** .
 
