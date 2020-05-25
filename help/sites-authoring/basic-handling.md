@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69e9b7499c1babcf7a6da62b8728bba7f127b4f9
+source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+workflow-type: tm+mt
+source-wordcount: '3010'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 69e9b7499c1babcf7a6da62b8728bba7f127b4f9
 
 ### Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
-La interfaz de usuario de AEM tiene capacidad táctil. Una interfaz con capacidad táctil le permite utilizar el tacto para interacturar con el software mediante gestos como tocar, tocar y mantener, o deslizar el dedo. Este funcionamiento contrasta con el de una interfaz de escritorio tradicional, la cual cuenta con acciones de ratón como clic, doble clic, clic con el botón secundario o pasar el ratón.
+La interfaz de usuario de AEM tiene capacidad táctil. Una interfaz con capacidad táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Este funcionamiento contrasta con el de una interfaz de escritorio tradicional, la cual cuenta con acciones de ratón como clic, doble clic, clic con el botón secundario o pasar el ratón.
 
 Como la interfaz de usuario de AEM es táctil, puede utilizar gestos táctiles en dispositivos que lo permitan (por ejemplo, el móvil o la tablet); asimismo, puede usar las acciones del ratón en un dispositivo de escritorio tradicional.
 
@@ -45,17 +48,17 @@ Inmediatamente después del inicio de sesión llega al [panel Navegación](#navi
 
 >[!NOTE]
 >
->Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios**.
+>Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios.**
 >
->Toque o haga clic en **Sitios** para comenzar.
+>Pulse o haga clic en **Sitios** para comenzar.
 
-### Navegación de productos {#product-navigation}
+### Navegación de productos   {#product-navigation}
 
 Cuando un usuario accede por primera vez a una consola, se inicia un tutorial de navegación por el producto. Dedíquele un momento para ver una buena descripción general del funcionamiento básico de AEM.
 
 ![bh-02](assets/bh-02.png)
 
-Toque o haga clic en **Siguiente** para avanzar a la siguiente página de la descripción general. Click or tap **Close** or click or tap outside of the overview dialog to close.
+Toque o haga clic en **Siguiente** para avanzar a la siguiente página de la descripción general. Para cerrar, pulse o haga clic en **Cerrar**, o pulse o haga clic fuera del cuadro de diálogo de la descripción general.
 
 La descripción general se reiniciará la próxima vez que acceda a una consola, a menos que vea todas las diapositivas o marque la opción **No volver a mostrar esto**.
 
@@ -63,7 +66,7 @@ La descripción general se reiniciará la próxima vez que acceda a una consola,
 
 Puede navegar entre las consolas con el panel de navegación global. Se activa como un desplegable a pantalla completa cuando toca o hace clic en el vínculo Adobe Experience Manager, en la parte superior izquierda de la pantalla.
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+Para volver a la ubicación anterior, puede cerrar el panel de navegación global tocando o haciendo clic en **Cerrar**.
 
 ![bh-03](assets/bh-03.png)
 
@@ -78,13 +81,19 @@ La navegación global dispone de dos paneles, representados por sendos iconos en
 
 Las opciones disponibles en estos paneles se describen a continuación.
 
-### Panel de navegación {#navigation-panel}
+### Panel de navegación   {#navigation-panel}
 
-El panel Navegación:
+El panel Navegación proporciona acceso a las consolas de AEM:
 
 ![bh-01](assets/bh-01.png)
 
-En Navegación, las consolas disponibles son:
+El título de la ficha del navegador se actualizará para reflejar su ubicación a medida que navega por las consolas y el contenido.
+
+>[!NOTE]
+>
+>El título de la ficha refleja la ubicación de [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) y versiones posteriores.
+
+En Navegación, las consolas disponibles son:
 
 <table>
  <tbody>
@@ -93,7 +102,7 @@ En Navegación, las consolas disponibles son:
    <td><strong>Función</strong></td>
   </tr>
   <tr>
-   <td>Recursos<br /> </td>
+   <td>Assets<br /> </td>
    <td>Estas consolas le permiten importar y <a href="/help/assets/home.md">administrar recursos digitales</a>, como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. </td>
   </tr>
   <tr>
@@ -125,7 +134,7 @@ En Navegación, las consolas disponibles son:
    <td>Las <a href="https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">pantallas</a> le permiten administrar todas sus pantallas de cliente, de cualquier tamaño y en cualquier lugar.</td>
   </tr>
   <tr>
-   <td>Sitios</td>
+   <td>Sites</td>
    <td>La consola Sitios le permite <a href="/help/sites-authoring/page-authoring.md">crear, ver y administrar sitios web</a> que se ejecuten en su instancia de AEM. Mediante estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas.<br /> </td>
   </tr>
  </tbody>
@@ -145,7 +154,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * [Navegación global](#navigatingconsolesandtools)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   Seleccione el vínculo **Adobe Experience Manager** para navegar entre consolas.
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
@@ -153,7 +162,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
-   You can also use the [shortcut key](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   También puede utilizar la [tecla de método abreviado](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
 * [Soluciones](https://www.adobe.com/experience-cloud.html)
 
@@ -201,7 +210,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    Esta opción solo está disponible en la vista de lista. See [list view](#list-view) for more information.
 
-* **Botón Crear**
+* Botón **Crear**
 
    ![screen_shot_2018-03-23at104301](assets/screen_shot_2018-03-23at104301.png)
 
@@ -216,6 +225,18 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
    Puede cambiar entre la vista de columna, la vista de tarjeta y la vista de lista; tenga en cuenta que en la vista de lista también se muestra la configuración de la vista.
 
    ![bh-09](assets/bh-09.png)
+
+* Navegación por teclado
+
+   Puede navegar por un sitio web utilizando únicamente el teclado. Esto utiliza la funcionalidad estándar del navegador de la **tecla TAB** (u **OPT+TAB**) para desplazar al usuario entre los elementos de la página que se pueden *enfocar*.
+
+   En la consola **Sitios** hay una opción agregada para **Omitir al contenido** principal. Esto se hace visible a medida que se *tabulan* las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto) y llevándolo directamente al contenido principal.
+
+   ![bh-30](assets/bh-30.png)
+
+   >[!NOTE]
+   >
+   >El **paso al contenido** principal está disponible en [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) y versiones posteriores.
 
 ## Acceso a la Ayuda {#accessing-help}
 
@@ -280,7 +301,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >
 >Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas {#quick-actions}
+## Acciones rápidas   {#quick-actions}
 
 En la [vista de tarjeta](#cardviewquickactions), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -297,13 +318,13 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 
-* [Vista de lista](#list-view)
+* [Vista de lista  ](#list-view)
 
 >[!NOTE]
 >
 >De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos {#selecting-resources}
+### Selección de recursos   {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -331,17 +352,17 @@ La selección de un recurso específico depende de la vista y el dispositivo com
    <td>Vista de tarjeta<br /> </td>
    <td>
     <ul>
-     <li><br /> Escritorio: Pase el ratón por encima y, a continuación, utilice la acción rápida de marca de verificación</li>
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
      <li>Dispositivo móvil: <br /> toque y mantenga pulsada la tarjeta.</li>
     </ul> </td>
    <td>
     <ul>
-     <li><br /> Escritorio:Haga clic en la tarjeta</li>
-     <li><br /> Dispositivo móvil:Puntee en la tarjeta</li>
+     <li>Desktop:<br /> Click the card</li>
+     <li>Mobile device:<br /> Tap the card</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Vista de lista</td>
+   <td>Vista de lista  </td>
    <td>
     <ul>
      <li>Escritorio: <br /> haga clic en la miniatura.</li>
@@ -388,7 +409,7 @@ En todas las vistas, es posible anular la selección de todos los elementos pres
 
 1. Una vez que haya seleccionado un recurso, el encabezado superior se cubre con [acciones de la barra de herramientas](#actionstoolbar) para proporcionar acceso a las acciones aplicables actualmente al recurso seleccionado.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   Para salir del modo de selección, pulse o haga clic en la **X** situada en la parte superior derecha o use la tecla **Esc**.
 
 ### Vista de columna {#column-view}
 
@@ -444,7 +465,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista de lista {#list-view}
+### Vista de lista   {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -477,13 +498,13 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * **Tiempo empleado en la página**
    ![bh-21](assets/bh-21.png)
 
-   By default the **Name** column is shown, which makes up part of the URL for the page. En algunos casos, el autor puede tener que acceder a páginas en un idioma distinto, y ver el nombre de las mismas (que no suele variar) puede suponer una gran ayuda si se desconoce el idioma de la página.
+   De forma predeterminada se muestra la columna **Nombre**, que es parte de la dirección URL de la página. En algunos casos, el autor puede tener que acceder a páginas en un idioma distinto, y ver el nombre de las mismas (que no suele variar) puede suponer una gran ayuda si se desconoce el idioma de la página.
 
 * Cambie el orden de los elementos mediante la barra vertical de puntos en la parte más a la derecha de cada elemento en la lista.
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >Solo es posible cambiar el orden en una carpeta ordenada que tiene el valor `jcr:primaryType` establecido como `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -499,11 +520,11 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 ## Selector de raíl {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+El **Selector de carril** está disponible en la parte superior izquierda de la ventana y las opciones que muestra dependen de tus consolas actuales.
 
 ![bh-25](assets/bh-25.png)
 
-Por ejemplo, en Sitios puede seleccionar contenido solamente (el valor predeterminado), el árbol de contenido, la línea de tiempo, las referencias o el panel lateral de filtro.
+Por ejemplo, en Sitios puede seleccionar contenido solamente (el valor predeterminado), el árbol de contenido, la cronología, las referencias o el panel lateral de filtro.
 
 Si se selecciona contenido solamente, después solo aparece el icono de raíl. Cuando se selecciona cualquier otra opción, el nombre de la opción aparece al lado del icono de raíl.
 
@@ -527,7 +548,7 @@ Al utilizar el panel lateral del árbol de contenido junto con una vista de list
 
 ### Escala de tiempo {#timeline}
 
-La línea de tiempo puede utilizarse para ver o iniciar eventos que se hayan producido en el recurso seleccionado. Para abrir la columna de línea de tiempo, utilice el selector del carril:
+La línea de tiempo puede utilizarse para ver o iniciar eventos que se hayan producido en el recurso seleccionado. Para abrir la columna de cronología, utilice el selector del raíl:
 
 La columna de línea de tiempo le permite:
 
@@ -546,14 +567,14 @@ La columna de línea de tiempo le permite:
       * Mostrar todos
 
 
-* [Agregar o ver comentarios](#timelineaddingandviewingcomments) sobre el elemento seleccionado. El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Si se escribe un comentario y se presiona Retorno, el comentario se registra. Se mostrará cuando seleccione **Comentarios** o **Mostrar todo**.
+* [Agregar o ver comentarios sobre el elemento seleccionado. ](#timelineaddingandviewingcomments) El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Si se escribe un comentario y se presiona Retorno, el comentario se registra. Se mostrará cuando seleccione **Comentarios** o **Mostrar todo**.
 
 * Determinadas consolas tienen funciones adicionales. Por ejemplo, en la consola Sitios puede:
 
    * [Guardar una versión](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [Iniciar un flujo de trabajo](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-These options accessible via the chevron next to the **Comment** field.
+Estas opciones están disponibles mediante las comillas angulares que hay junto al campo **Comentario**.
 
 ![bh-27](assets/bh-27.png)
 
