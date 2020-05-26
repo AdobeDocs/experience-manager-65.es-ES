@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 83%
 
 ---
 
@@ -153,6 +156,11 @@ La opción Control de administración solo está visible para los miembros del g
 * **Guardar:** Toque o haga clic en esta opción para guardar la configuración.
 
 ## Acción en un elemento {#taking-action-on-an-item}
+
+>[!NOTE]
+>
+>Aunque es posible seleccionar más de un elemento, las acciones solo se pueden realizar en un elemento a la vez.
+
 
 1. Para realizar una acción en un elemento, seleccione la miniatura correspondiente al elemento en cuestión. En la barra de herramientas se mostrarán iconos para las acciones aplicables a dicho elemento:
 
