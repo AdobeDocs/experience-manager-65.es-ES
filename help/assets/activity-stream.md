@@ -1,16 +1,19 @@
 ---
-title: Flujo de actividad en la línea de tiempo
-description: En este artículo se describe cómo mostrar los registros de actividad de los recursos en la línea de tiempo.
+title: Flujo de Actividad en la línea de tiempo
+description: En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 27%
 
 ---
 
 
-# Flujo de actividad en la línea de tiempo {#activity-stream-in-timeline}
+# Flujo de Actividad en la línea de tiempo {#activity-stream-in-timeline}
 
-Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en Recursos Adobe Experience Manager (AEM), la función de flujo de actividades actualiza la línea de tiempo para reflejar la actividad.
+Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en Recursos Adobe Experience Manager, la función de flujo de actividad actualiza la línea de tiempo para reflejar la actividad.
 
 Las siguientes operaciones se registran en el flujo de actividad:
 
@@ -23,20 +26,20 @@ Las siguientes operaciones se registran en el flujo de actividad:
 * Rechazar
 * Mover
 
-Los registros de actividad que se mostrarán en la línea de tiempo se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro.  Además, la actividad de la línea de tiempo se registra cuando se cargan nuevos recursos o cuando se modifican y se registran en AEM los recursos existentes mediante [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) o la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)AEM.
+Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into Experience Manager via [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
 >Los flujos de trabajo transitorios no se muestran en la línea de tiempo, ya que no se guarda la información del historial de estos flujos de trabajo.
 
-Para ver el flujo de actividades, realice una o varias de las operaciones en el recurso, seleccione el recurso y, a continuación, elija **[!UICONTROL Cronología]** en la lista de navegación global.
+Para realizar la vista del flujo de actividad, realice una o varias de las operaciones en el recurso, selecciónelo y, a continuación, elija **[!UICONTROL Línea de tiempo]** en la lista de GlobalNav.
 
 ![línea de tiempo-2](assets/timeline-2.png)
 
-La línea de tiempo muestra el flujo de actividades de las operaciones que realiza en los recursos.
+La línea de tiempo muestra el flujo de actividad de las operaciones que realiza en los recursos.
 
-![activity_stream](assets/activity_stream.png)
+![actividad_stream](assets/activity_stream.png)
 
 >[!NOTE]
 >
->La ubicación de almacenamiento de registro predeterminada para las tareas **[!UICONTROL Publicar]** y **[!UICONTROL Cancelar la publicación]** es `/var/audit/com.day.cq.replication/content`. Para las tareas **[!UICONTROL Mover]** , la ubicación predeterminada es `/var/audit/com.day.cq.wcm.core.page`.
+>La ubicación de almacenamiento de registro predeterminada para las tareas **[!UICONTROL Publicar]** y **[!UICONTROL Cancelar la publicación]** es `/var/audit/com.day.cq.replication/content`. Para las tareas **[!UICONTROL Mover]**, la ubicación predeterminada es `/var/audit/com.day.cq.wcm.core.page`.
