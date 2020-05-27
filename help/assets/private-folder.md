@@ -1,11 +1,11 @@
 ---
-title: Creación y uso compartido de una carpeta privada en AEM
-description: Obtenga información sobre cómo crear una carpeta privada en Recursos Adobe Experience Manager (AEM) y compartirla con otros usuarios, así como sobre cómo asignarles varios privilegios.
+title: Cree y comparta una carpeta privada en Adobe Experience Manager.
+description: Obtenga información sobre cómo crear una carpeta privada en los recursos de Adobe Experience Manager y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Uso compartido de carpetas privadas {#private-folder-sharing}
 
-Puede crear una carpeta privada en la interfaz de usuario Recursos Adobe Experience Manager (AEM) que esté disponible exclusivamente para usted. Puede compartir esta carpeta privada con otros usuarios y asignarles varios privilegios. Según el nivel de privilegios que asigne, los usuarios pueden realizar varias tareas en la carpeta, por ejemplo, vistas de recursos dentro de la carpeta o ediciones de los recursos.
+Puede crear una carpeta privada en la interfaz de usuario de Recursos Adobe Experience Manager que esté disponible exclusivamente para usted. Puede compartir esta carpeta privada con otros usuarios y asignarles varios privilegios. Según el nivel de privilegios que asigne, los usuarios pueden realizar varias tareas en la carpeta, por ejemplo, vistas de recursos dentro de la carpeta o ediciones de los recursos.
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ Puede crear una carpeta privada en la interfaz de usuario Recursos Adobe Experie
    >
    > La carpeta privada tiene al menos un miembro con la función Propietario. Por lo tanto, el administrador no puede quitar todos los miembros del propietario de una carpeta privada. Sin embargo, para eliminar los propietarios existentes (y el administrador mismo) de la carpeta privada, el administrador debe agregar otro usuario como propietario.
 
-1. Haga clic en **[!UICONTROL Guardar.]** Según la función que asigne, al usuario se le asignará un conjunto de privilegios en su carpeta privada cuando inicie sesión en Recursos AEM.
+1. Haga clic en **[!UICONTROL Guardar.]** Según la función que asigne, al usuario se le asignará un conjunto de privilegios en la carpeta privada cuando inicie sesión en Assets.
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el mensaje de confirmación.
-1. El usuario con el que comparte la carpeta recibe una notificación de uso compartido. Inicie sesión en Recursos AEM con las credenciales del usuario para la vista de la notificación.
+1. El usuario con el que comparte la carpeta recibe una notificación de uso compartido. Inicie sesión en Recursos con las credenciales del usuario para la vista de la notificación.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
