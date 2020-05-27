@@ -1,9 +1,12 @@
 ---
 title: Compatibilidad con [!DNL Adobe Camera Raw].
-description: Obtenga información sobre cómo habilitar la compatibilidad con [!DNL Adobe Camera Raw] en [!DNL Recursos Adobe Experience Manager].
+description: Aprenda a [!DNL Adobe Camera Raw] habilitar la compatibilidad con [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ Para habilitar [!DNL Camera Raw] la compatibilidad en [!DNL Experience Manager A
 
 1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, en el campo **[!UICONTROL Omitir Lista]** , especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
-   ![chlimage_1-129](assets/chlimage_1-335.png)
+   ![chlimage_1-127](assets/chlimage_1-335.png)
 
 1. Desde el panel lateral, agregue el paso Controlador **[!UICONTROL RAW de cámara/DNG]** debajo del paso de creación **[!UICONTROL de]** miniaturas.
 1. En el paso Controlador **[!UICONTROL Raw de cámara/DNG]** , agregue la siguiente configuración en la ficha **[!UICONTROL Argumentos]** :
@@ -49,9 +52,9 @@ Para habilitar [!DNL Camera Raw] la compatibilidad en [!DNL Experience Manager A
 >
 >Asegúrese de que la configuración anterior es la misma que la configuración del paso **[!UICONTROL de control de DNG y RAW de cámara para actualizar DAM de]** muestra.
 
-Ahora puede importar archivos sin procesar de cámara en Recursos AEM. Después de instalar el paquete RAW de cámara y configurar el flujo de trabajo necesario, aparece la opción Ajuste **[!UICONTROL de]** imagen en la lista de los paneles laterales.
+Ahora puede importar archivos sin procesar de cámara en Assets. Después de instalar el paquete RAW de cámara y configurar el flujo de trabajo necesario, aparece la opción Ajuste **[!UICONTROL de]** imagen en la lista de los paneles laterales.
 
-![chlimage_1-135](assets/chlimage_1-337.png)
+![chlimage_1-131](assets/chlimage_1-337.png)
 
 *Figura: Opciones del panel lateral.*
 
