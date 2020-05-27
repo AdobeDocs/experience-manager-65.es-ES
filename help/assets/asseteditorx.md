@@ -3,9 +3,9 @@ title: Ampliar editor de recursos
 description: Obtenga información sobre cómo ampliar las capacidades del editor de recursos con componentes personalizados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '695'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ El Editor de recursos es la página que se abre cuando se hace clic en un recurs
 
 La configuración del editor mediante los componentes de edición predefinidos se trata en [Creación y configuración de una página](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)del editor de recursos.
 
-Además de utilizar componentes de editor preexistentes, los desarrolladores de Adobe Experience Manager (AEM) también pueden crear sus propios componentes.
+Además de utilizar componentes de editor preexistentes, los desarrolladores de Adobe Experience Manager también pueden crear sus propios componentes.
 
 ## Creación de una plantilla de editor de recursos {#creating-an-asset-editor-template}
 
@@ -29,9 +29,9 @@ Geometrixx incluye las siguientes páginas de muestra:
 
 ### Configurar Clientlib {#configuring-clientlib}
 
-Los componentes de AEM Assets utilizan una extensión de la clientlib de edición de WCM. Los clientes suelen estar cargados en `init.jsp`.
+Los componentes Assets utilizan una extensión de la clientlib de edición de WCM. Los clientes suelen estar cargados en `init.jsp`.
 
-En comparación con la carga de clientlib predeterminada (en core `init.jsp`), una plantilla de Recursos AEM debe tener lo siguiente:
+En comparación con la carga de clientlib predeterminada (en core `init.jsp`), una plantilla de Recursos debe tener lo siguiente:
 
 * La plantilla debe incluir la `cq.dam.edit` clientlib (en lugar de `cq.wcm.edit`).
 
@@ -41,7 +41,7 @@ En la mayoría de los casos, la copia de la muestra existente `init.jsp` (`/apps
 
 ### Configurar acciones de JS {#configuring-js-actions}
 
-Algunos componentes de Recursos AEM requieren funciones JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
+Algunos de los componentes de Recursos requieren funciones de JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,7 +51,7 @@ El ejemplo carga este origen de javascript en `head.jsp`(`/apps/geometrixx/compo
 
 ### Hojas de estilo adicionales {#additional-style-sheets}
 
-Algunos componentes de Recursos AEM utilizan la biblioteca de widgets AEM. Para procesarse correctamente en el contexto de contenido, se debe cargar una hoja de estilo adicional. El componente de acción de etiqueta requiere uno más.
+Algunos componentes de Recursos utilizan la biblioteca de widgets. Para procesarse correctamente en el contexto de contenido, se debe cargar una hoja de estilo adicional. El componente de acción de etiqueta requiere uno más.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
