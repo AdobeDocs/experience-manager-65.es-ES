@@ -3,9 +3,9 @@ title: Administrar recursos de vídeo
 description: Obtenga información sobre cómo cargar, previsualización, realizar anotaciones y publicar recursos de vídeo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '786'
 ht-degree: 11%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 11%
 
 # Administrar recursos de vídeo {#manage-video-assets}
 
-Obtenga información sobre cómo administrar y editar los recursos de vídeo en Recursos Adobe Experience Manager (AEM). Además, si tiene licencia para usar Dynamic Media, consulte la documentación [de vídeo de](/help/assets/video.md)Dynamic Media.
+Obtenga información sobre cómo administrar y editar los recursos de vídeo en Recursos Adobe Experience Manager. Además, si tiene licencia para usar Dynamic Media, consulte la documentación [de vídeo de](/help/assets/video.md)Dynamic Media.
 
 ## Carga y previsualización de recursos de vídeo {#upload-and-preview-video-assets}
 
-Recursos Adobe Experience Manager genera previsualizaciones para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una previsualización. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede realizar la previsualización de estas representaciones en la interfaz de usuario de Recursos AEM.
+Recursos Adobe Experience Manager genera previsualizaciones para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una previsualización. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede realizar la previsualización de estas representaciones en la interfaz de usuario de Recursos.
 
 1. En la carpeta o subcarpetas de recursos digitales, navegue a la ubicación donde desee agregar recursos digitales.
 1. Para cargar el recurso, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Archivos]**. Como alternativa, suéltela directamente en el área de recursos. Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets) para obtener más información sobre la operación de carga.
@@ -44,11 +44,11 @@ Además de la configuración de Experience Manager Assets, cambie las configurac
 
 >[!NOTE]
 >
->La interfaz de usuario de AEM Classic no tiene una restricción de tamaño de archivo de 2 GB. Además, el flujo de trabajo de extremo a extremo para vídeos de gran tamaño no es totalmente compatible.
+>La interfaz de usuario de Experience Manager Classic no tiene una restricción de tamaño de archivo de 2 GB. Además, el flujo de trabajo de extremo a extremo para vídeos de gran tamaño no es totalmente compatible.
 
 Para configurar un límite de tamaño de archivo mayor, realice los siguientes pasos en el `/apps` directorio.
 
-1. In AEM, click **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. En Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En CRXDE Lite, vaya a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Para ver la ventana del directorio, toque el `>>` icono .
 1. From the toolbar, click the **[!UICONTROL Overlay Node]**. También puede seleccionar **[!UICONTROL Nodo de superposición]** en el menú contextual.
 1. In the **[!UICONTROL Overlay Node]** dialog, click **[!UICONTROL OK]**.
@@ -59,11 +59,11 @@ Para configurar un límite de tamaño de archivo mayor, realice los siguientes p
 1. En la ficha **[!UICONTROL Propiedades]** , introduzca el valor apropiado en bytes para aumentar el límite de tamaño al tamaño deseado. Por ejemplo, para aumentar el límite de tamaño a 30 GB, escriba `{sizeLimit : "32212254720"}` value.
 
 1. En la barra de herramientas, toque **[!UICONTROL Guardar todo]**.
-1. In AEM, click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. En Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 1. En la página Paquetes de la consola web de Adobe Experience Manager, en la columna Nombre de la tabla, busque y haga clic en **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
 1. En la página Controlador de trabajos de proceso externo de Adobe Granite Workflow, establezca los segundos para los campos **[!UICONTROL Tiempo de espera predeterminado]** y **[!UICONTROL Tiempo de espera máximo]** en `18000` (cinco horas).
 1. Haga clic en **[!UICONTROL Guardar]**.
-1. En AEM, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. En Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Dynamic Media Encode Video]** y, a continuación, haga clic en **[!UICONTROL Editar]**.
 1. En la página de flujo de trabajo, haga clic con el botón doble en el componente Proceso **[!UICONTROL del servicio de vídeo de medios]** dinámicos.
 1. En el cuadro de diálogo [!UICONTROL Propiedades del paso], en la pestaña **[!UICONTROL Común]**, expanda **Configuración avanzada**.
