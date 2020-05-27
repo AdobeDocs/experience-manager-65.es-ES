@@ -3,9 +3,9 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Aunque puede personalizar el código de seguimiento para permitir que las soluci
 
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM.
 
-1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Configurar la instancia de AEM con el servicio de nube de DTM](/help/sites-administering/dtm.md)
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Configuración **[!UICONTROL de]** perspectivas.
+1. [Configurar la instancia de Experience Manager con el servicio de nube de DTM](/help/sites-administering/dtm.md)
 
-   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de las perspectivas de recursos, ya que la integración de los sitios de AEM con las perspectivas de recursos sigue en marcha.
+   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de las perspectivas de recursos, ya que la integración de sitios de Experience Manager con perspectivas de recursos sigue en marcha.
 
 1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/)y seleccione una Compañía, según corresponda.
 1. Crear/abrir una propiedad web existente
@@ -44,15 +44,15 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos]**.
 1. Haga clic en **[!UICONTROL Rastreador]** de páginas de perspectivas, copie el código del rastreador y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
 
    >[!NOTE]
    >
    > * `AppMeasurement.js` se elimina. Se espera que esté disponible a través de la herramienta Adobe Analytics de la DTM.
    > * Se elimina la llamada a `assetAnalytics.dispatcher.init`(). Se espera que se llame a la función una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
-   > * Según el lugar en el que esté alojado el rastreador de páginas de perspectivas de recursos (por ejemplo, AEM, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
-   > * Para el rastreador de páginas alojado en AEM, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
+   > * Según el lugar en el que esté alojado el rastreador de páginas de perspectivas de recursos (por ejemplo, Experience Manager, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
+   > * Para el rastreador de páginas alojado en Experience Manager, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
 
 
 1. Acceso `https://dtm.adobe.com`. Haga clic en **[!UICONTROL Información general]** en la propiedad web y haga clic en **[!UICONTROL Añadir herramienta]** o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer el método **** de configuración en **[!UICONTROL Automático]**.
