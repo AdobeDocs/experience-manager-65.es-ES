@@ -3,9 +3,9 @@ title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para preparar los recursos para la traducción para admitir recursos multilingües.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Generalmente, los binarios, metadatos y etiquetas de recursos existen en un idioma, que luego se traducen a otros idiomas para su uso en proyectos multilingües.
 
-En Recursos Adobe Experience Manager (AEM), los recursos multilingües se incluyen en las carpetas, donde cada carpeta contiene los recursos en un idioma diferente.
+En Recursos Adobe Experience Manager, los recursos multilingües se incluyen en las carpetas, donde cada carpeta contiene los recursos en un idioma diferente.
 
 Cada carpeta de idioma se denomina copia de idioma. La carpeta raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, */content/dam/it* es la raíz en italiano de la copia en idioma italiano. Las copias de idioma deben utilizar una raíz [de idioma](preparing-assets-for-translation.md#creating-a-language-root) correctamente configurada para que el idioma correcto se dirija al realizar las traducciones de recursos de origen.
 
@@ -58,7 +58,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 
 ## Raíces de idioma de Vista {#viewing-language-roots}
 
-La interfaz de AEM proporciona un panel **[!UICONTROL Referencias]** que muestra una lista de las raíces de idioma que se han creado en Recursos AEM.
+La interfaz de Experience Manager proporciona un panel **[!UICONTROL Referencias]** que muestra una lista de las raíces de idioma que se han creado en Recursos.
 
 1. En la consola Recursos, seleccione el maestro de idioma para el que desea crear copias de idioma.
 1. Haga clic en el icono de GlobalNav y elija **[!UICONTROL Referencias]** para abrir el panel [!UICONTROL Referencia] .
