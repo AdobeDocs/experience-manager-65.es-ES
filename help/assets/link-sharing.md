@@ -1,11 +1,11 @@
 ---
 title: Generación de una URL para los recursos compartidos
-description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos AEM como una URL para terceros externos.
+description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos de Experience Manager como una dirección URL para terceros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1228'
 ht-degree: 6%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Compartir recursos mediante un vínculo {#asset-link-sharing}
 
-Recursos Adobe Experience Manager (AEM) le permite compartir recursos, carpetas y colecciones como URL con miembros de su organización y entidades externas, incluidos socios y proveedores. El uso compartido de recursos a través de un vínculo es una forma práctica de poner los recursos a disposición de terceros externos sin que estos tengan que iniciar sesión en Recursos AEM en primer lugar.
+Recursos de Adobe Experience Manager le permite compartir recursos, carpetas y colecciones como URL con miembros de su organización y entidades externas, incluidos socios y proveedores. El uso compartido de recursos a través de un vínculo es una manera práctica de poner los recursos a disposición de terceros externos sin que estos tengan que iniciar sesión en Assets.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
    >[!NOTE]
    >
-   >Si desea compartir vínculos de la instancia de AEM Author con entidades externas, asegúrese de que solo muestra las siguientes URL (que se utilizan para compartir vínculos) para `GET` solicitudes. Bloquear otras direcciones URL para garantizar la seguridad de AEM Author.
+   >Si desea compartir vínculos de la instancia de Experience Manager Author a entidades externas, asegúrese de que solo muestra las siguientes URL (que se utilizan para compartir vínculos) para `GET` solicitudes. Bloquee otras direcciones URL para garantizar la seguridad de Experience Manager Author.
    >
    >* http://&lt;aem_server>:&lt;puerto>/linkshare.html
    * http://&lt;aem_server>:&lt;puerto>/linksharepreview.html
@@ -50,7 +50,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    >[!NOTE]
    Si un recurso compartido se mueve a una ubicación diferente, su vínculo deja de funcionar. Vuelva a crear el vínculo y a compartirlo con los usuarios.
 
-1. In AEM interface, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. En la interfaz de Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Para las propiedades `local` y `author` , proporcione la URL para la instancia local y la instancia de autor respectivamente. Tanto `local` como `author` las propiedades tienen el mismo valor si se ejecuta una única instancia de Experience Manager Author. Por ejemplo, `publish`proporcione la URL para la instancia de publicación de Experience Manager.
 
@@ -92,7 +92,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   AEM admite la generación de previsualizaciones de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
+   Experience Manager admite la generación de previsualizaciones de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
 
 1. Para descargar el recurso compartido, haga clic en **[!UICONTROL Seleccionar]** en la barra de herramientas, haga clic en el recurso y, a continuación, haga clic en **[!UICONTROL Descargar]** desde la barra de herramientas.
 
@@ -118,9 +118,9 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
 ## Configurar el tamaño máximo de datos {#maxdatasize}
 
-Al descargar recursos del vínculo compartido mediante la función de uso compartido de vínculos, AEM comprime la jerarquía de recursos del repositorio y, a continuación, devuelve el recurso en un archivo ZIP. Sin embargo, a falta de límites a la cantidad de datos que se pueden comprimir en un archivo ZIP, grandes cantidades de datos están sujetas a compresión, lo que causa errores de memoria insuficiente en JVM. Para proteger el sistema de un posible ataque de denegación de servicio debido a esta situación, configure el tamaño máximo usando el parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** para el servlet proxy [!UICONTROL Day CQ DAM Adhoc Asset Share] en Configuration Manager. Si el tamaño sin comprimir del recurso supera el valor configurado, se rechazan las solicitudes de descarga de recursos. El valor predeterminado es 100 MB.
+Al descargar recursos del vínculo compartido mediante la función de uso compartido de vínculos, Experience Manager comprime la jerarquía de recursos del repositorio y, a continuación, devuelve el recurso en un archivo ZIP. Sin embargo, a falta de límites a la cantidad de datos que se pueden comprimir en un archivo ZIP, grandes cantidades de datos están sujetas a compresión, lo que causa errores de memoria insuficiente en JVM. Para proteger el sistema de un posible ataque de denegación de servicio debido a esta situación, configure el tamaño máximo usando el parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** para el servlet proxy [!UICONTROL Day CQ DAM Adhoc Asset Share] en Configuration Manager. Si el tamaño sin comprimir del recurso supera el valor configurado, se rechazan las solicitudes de descarga de recursos. El valor predeterminado es 100 MB.
 
-1. Click the AEM logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Click the Experience Manager logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Desde la consola web, localice la configuración del servlet **[!UICONTROL proxy de uso compartido de recursos ad hoc CQ DAM]** Day.
 1. Abra la configuración del servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** en modo de edición y modifique el valor del parámetro **[!UICONTROL Tamaño de contenido máximo (sin comprimir)]**.
 
@@ -131,6 +131,6 @@ Al descargar recursos del vínculo compartido mediante la función de uso compar
 ## Best practices and troubleshooting {#bestpractices}
 
 * Es posible que las carpetas de recursos o las colecciones que contengan un espacio en blanco en su nombre no se compartan.
-* Si los usuarios no pueden descargar los recursos compartidos, compruebe con el administrador de AEM cuáles son los límites [de](#maxdatasize) descarga.
-* Si no puede enviar correos electrónicos con vínculos a recursos compartidos o si los demás usuarios no pueden recibir su correo electrónico, consulte con el administrador de AEM si el servicio [de](#configmailservice) correo electrónico está configurado o no.
+* Si los usuarios no pueden descargar los recursos compartidos, compruebe con el administrador de Experience Manager cuáles son los límites [de](#maxdatasize) descarga.
+* Si no puede enviar correos electrónicos con vínculos a recursos compartidos o si los demás usuarios no pueden recibir su correo electrónico, consulte con el administrador de Experience Manager si el servicio [de](#configmailservice) correo electrónico está configurado o no.
 * Si no puede compartir recursos con la funcionalidad de uso compartido de vínculos, asegúrese de que dispone de los permisos adecuados. Consulte [Uso compartido de recursos](#sharelink).
