@@ -3,7 +3,7 @@ title: Referencia de esquemas de metadatos
 description: 'Obtenga información sobre las convenciones estándar para describir metadatos de recursos, incluidos Dublin Core, IPTC y otros esquemas de metadatos. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 2%
@@ -17,7 +17,7 @@ La siguiente referencia incluye información sobre un esquema de metadatos concr
 
 ## Dublin Core {#dublin-core}
 
-Los metadatos de Dublin Core proporcionan un conjunto estandarizado de convenciones para describir los recursos y facilitar su búsqueda. En Recursos AEM, Dublin Core describe los recursos digitales, incluidos vídeo, sonido, imágenes y documentos.
+Los metadatos de Dublin Core proporcionan un conjunto estandarizado de convenciones para describir los recursos y facilitar su búsqueda. En Assets, Dublin Core describe los recursos digitales, incluidos vídeo, sonido, imágenes y documentos.
 
 El conjunto de elementos de metadatos básico de Dublín (DCMES) simple contiene 15 elementos de metadatos como se muestra en la tabla siguiente. Cada elemento Dublin Core es opcional y se puede repetir. Puede agregar o eliminar información de metadatos de Dublin Core como lo haría con metadatos específicos de tipo de medios.
 
@@ -30,7 +30,7 @@ Además del DCMES, hay otros elementos de metadatos creados por la Iniciativa Du
 | creador | Persona o compañía responsable de la creación del contenido. |
 | date | Fecha o período de tiempo asociados al activo. |
 | Descripción | Más información sobre el recurso. |
-| format | Formato de archivo, medio físico o dimensiones del recurso. AEM utiliza `dc:format` para denotar el tipo MIME del recurso. |
+| format | Formato de archivo, medio físico o dimensiones del recurso. Experience Manager utiliza `dc:format` para denotar el tipo MIME del recurso. |
 | identifier | Una referencia única al recurso. |
 | language | Idioma del recurso (por ejemplo, en para inglés). |
 | publisher | Persona o compañía responsable de la disponibilidad del recurso. |
