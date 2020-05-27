@@ -1,11 +1,11 @@
 ---
 title: Informes sobre sus recursos digitales
-description: Conozca los informes sobre sus recursos en Recursos AEM que le ayudarán a comprender el uso, la actividad y el uso compartido de los recursos digitales.
+description: Conozca los informes sobre los recursos en Recursos Adobe Experience Manager que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '976'
 ht-degree: 15%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 15%
 
 # Informes del recurso {#asset-reports}
 
-El sistema de informes de recursos es una herramienta clave para evaluar la utilidad de la implementación de Recursos Adobe Experience Manager (AEM). Con Recursos AEM, puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
+El sistema de informes de recursos es una herramienta clave para evaluar la utilidad de la implementación de Recursos Adobe Experience Manager. Con Recursos, puede generar varios informes para los recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
 
-Utilice la información de los informes para derivar métricas de éxito clave a fin de medir la adopción de Recursos AEM en su empresa y por parte de los clientes.
+Utilice la información de los informes para derivar métricas de éxito clave a fin de medir la adopción de Recursos dentro de su empresa y por parte de los clientes.
 
-La estructura de sistema de informes de AEM Assets utiliza trabajos de Sling para procesar de forma asíncrona solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
+La estructura de sistema de informes de Recursos utiliza trabajos de Sling para procesar de forma asíncrona solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
 
 La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a los informes archivados y a los estados de ejecución de los informes de vista (exitosos, fallidos y en cola).
 
@@ -25,7 +25,7 @@ Cuando se genera un informe, se le notifica mediante un mensaje de correo electr
 
 ## Generar informes {#generate-reports}
 
-Recursos AEM genera los siguientes informes estándar:
+Experience Manager Assets genera los siguientes informes estándar:
 
 * Cargar
 * Descargar
@@ -37,7 +37,7 @@ Recursos AEM genera los siguientes informes estándar:
 * Archivos
 * Vínculos compartidos
 
-Los administradores de AEM pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
+Los administradores de Experience Manager pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
 
 1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
    ![](assets/AssetsReportNavigation.png)
@@ -79,7 +79,7 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
    ![](assets/files_report.png)
 
-   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde AEM Assets. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
+   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde Assets. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
