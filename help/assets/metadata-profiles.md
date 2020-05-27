@@ -3,9 +3,9 @@ title: perfiles de metadatos para personalizar los requisitos de metadatos de lo
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1413'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
    * **[!UICONTROL Asignar a propiedad]**: El valor de esta propiedad proporciona la ruta/nombre relativos al nodo de recurso donde se guarda en el repositorio. El valor siempre debe tener inicios `./` porque indica que la ruta está bajo el nodo del recurso.
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
-   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por ejemplo, si especifica `/jcr:content/metadata/dc:desc` como nombre de **[!UICONTROL Asignar a propiedad]**, Recursos AEM almacena el valor `dc:desc` en el nodo de metadatos del recurso.
+   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por ejemplo, si especifica `/jcr:content/metadata/dc:desc` como nombre de **[!UICONTROL Asignar a propiedad]**, Assets almacena el valor `dc:desc` en el nodo de metadatos del recurso.
 
    * **[!UICONTROL Valor]** predeterminado: Utilice esta propiedad para agregar un valor predeterminado para el componente de metadatos. Por ejemplo, si especifica &quot;Mi descripción&quot;, este valor se asigna a la propiedad `dc:desc` en el nodo de metadatos del recurso.
    ![chlimage_1-200](assets/chlimage_1-483.png)
@@ -106,7 +106,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 Siga los pasos para aplicar el perfil de metadatos:
 
-1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos.
 1. Seleccione el perfil de metadatos que desea aplicar a una o varias carpetas.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +126,7 @@ Siga los pasos para aplicar el perfil de metadatos:
 
 ### Aplicar un perfil de metadatos de forma global {#applying-a-metadata-profile-globally}
 
-Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de AEM de cualquier carpeta tenga el perfil seleccionado aplicado.
+Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de Experience Manager de cualquier carpeta tenga el perfil seleccionado aplicado.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de metadatos existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
@@ -148,7 +148,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 
 ### Quitar perfiles de metadatos de las carpetas mediante la interfaz de usuario de Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos.
 1. Seleccione el perfil de metadatos que desea eliminar de una carpeta o de varias carpetas.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -156,7 +156,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 
 ### Quitar perfiles de metadatos de las carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Haga clic en el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de metadatos.
+1. Haga clic en el logotipo de Experience Manager, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de metadatos.
 1. En la carpeta, haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic en **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
