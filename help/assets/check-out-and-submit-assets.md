@@ -3,14 +3,17 @@ title: Proteja y desproteja los recursos digitales para editarlos
 description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
 
-# Archivos de ingreso y salida en AEM DAM {#check-in-and-check-out-files-in-assets}
+# Archivos de ingreso y salida en Experience Manager DAM {#check-in-and-check-out-files-in-assets}
 
-Recursos Adobe Experience Manager (AEM) le permite retirar recursos para editarlos y volver a protegerlos después de realizar los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a activarlo en Recursos AEM. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
+Recursos de Adobe Experience Manager le permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a activarlo en Recursos. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
 
 Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
 
@@ -41,13 +44,13 @@ Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inic
 
    También puede elegir anotar o publicar el recurso.
 
-1. Seleccione el recurso editado en la [!DNL Assets] interfaz y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en Recursos AEM y está disponible para su edición para otros usuarios.
+1. Seleccione el recurso editado en la [!DNL Assets] interfaz y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado se protege en Recursos y está disponible para su edición para otros usuarios.
 
 ## Registro forzado {#forced-check-in}
 
 Los administradores pueden proteger recursos que otros usuarios han extraído.
 
-1. Inicie sesión en Recursos AEM como administrador.
+1. Inicie sesión en Assets como administrador.
 1. En la interfaz de usuario de Recursos, seleccione uno o varios recursos que hayan sido retirados por otros usuarios.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
@@ -56,6 +59,6 @@ Los administradores pueden proteger recursos que otros usuarios han extraído.
 
 >[!MORELIKETHIS]
 >
->* [Obtenga información sobre cómo registrarse y desprotegerse en la aplicación de escritorio de AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Tutorial de vídeo para comprender la protección y la protección en Recursos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Obtenga información sobre cómo registrarse y desprotegerse en la aplicación de escritorio de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Tutorial de vídeo para comprender la protección y la protección en recursos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 
