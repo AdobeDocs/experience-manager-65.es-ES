@@ -3,7 +3,10 @@ title: Organizar sus recursos digitales
 description: Organice sus recursos digitales, imágenes, archivos, carpetas, etc. mediante Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 1%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 Todos los recursos digitales, los metadatos y el contenido de los documentos de Microsoft Office y PDF se extraen y permiten realizar búsquedas. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Administración de activos digitales.
 
-Recursos AEM admite varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad-hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
+Experience Manager Assets admite varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad-hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
 
 ## Organización de recursos en carpetas {#organize-using-folders}
 
@@ -32,7 +35,7 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es si
    * **Carpetas** basadas en fecha: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no es probable que cambien para que la personalización o la automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
-* Si ya se ha publicado un recurso, utilice AEM para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación original del recurso publicado seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se *pierde* en AEM y no se puede cancelar la publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a otra carpeta.
+* Si ya se ha publicado un recurso, utilice Experience Manager para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación original del recurso publicado seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se *pierde* en Experience Manager y no se puede cancelar la publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a otra carpeta.
 
 ## Organización de recursos con etiquetas {#use-tags-to-organize-assets}
 
@@ -42,7 +45,7 @@ Recursos Adobe Experience Manager utiliza un algoritmo de autoaprendizaje para c
 
 Para obtener más información, consulte los siguientes artículos:
 
-* [Acerca de las etiquetas en AEM](/help/sites-authoring/tags.md)
+* [Acerca de las etiquetas en Experience Manager](/help/sites-authoring/tags.md)
 * [Editar metadatos de recursos](meta-edit.md)
 * [Etiquetas inteligentes mejoradas en los recursos](enhanced-smart-tags.md)
 
