@@ -4,9 +4,9 @@ description: Obtenga información sobre tareas para administrar colecciones de r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2215'
 ht-degree: 13%
 
 ---
@@ -183,7 +183,7 @@ Para personalizar la página de [!UICONTROL propiedades] de metadatos, incluida 
 
 ## Buscar colecciones {#searching-collections}
 
-Puede buscar colecciones desde la consola Colecciones. Al buscar palabras clave en el cuadro de búsqueda de Omniture, Recursos AEM busca los nombres de las colecciones, los metadatos y las etiquetas agregadas a las colecciones.
+Puede buscar colecciones desde la consola Colecciones. Al buscar palabras clave en el cuadro Omniture, Recursos busca los nombres de las colecciones, los metadatos y las etiquetas agregadas a las colecciones.
 
 Si busca colecciones desde el nivel superior, solo se devuelven colecciones individuales en los resultados de búsqueda. Se excluyen los recursos o las carpetas de las colecciones. En todos los demás casos (por ejemplo, dentro de una colección individual o en una jerarquía de carpetas), se devuelven todos los recursos, carpetas y colecciones relevantes.
 
@@ -191,7 +191,7 @@ Si busca colecciones desde el nivel superior, solo se devuelven colecciones indi
 
 En la consola Colecciones, haga clic en una colección para abrirla.
 
-Dentro de una colección, la búsqueda de recursos de AEM está restringida a los recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos y las carpetas secundarias que coinciden con la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, las carpetas y otras colecciones que coinciden con los miembros directos de la colección.
+Dentro de una colección, la búsqueda de Experience Manager está restringida a los recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos y las carpetas secundarias que coinciden con la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, las carpetas y otras colecciones que coinciden con los miembros directos de la colección.
 
 ## Editar la configuración de la colección {#editing-collection-settings}
 
