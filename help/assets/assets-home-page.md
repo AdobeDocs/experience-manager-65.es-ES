@@ -1,22 +1,25 @@
 ---
-title: Experiencia de Página de inicio de AEM Assets
-description: Personalice la Página de inicio Recursos AEM para disfrutar de una experiencia de pantalla de bienvenida completa, incluida una instantánea de las actividades recientes sobre los recursos.
+title: Experiencia de Página de inicio de recursos de Adobe Experience Manager
+description: Personalice la Página de inicio Experience Manager Assets para disfrutar de una experiencia de pantalla de bienvenida completa, incluida una instantánea de las actividades recientes sobre los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
 
-# Experiencia de Página de inicio de AEM Assets {#aem-assets-home-page-experience}
+# Experiencia de Página de inicio de recursos de Adobe Experience Manager {#aem-assets-home-page-experience}
 
-Personalice la página de inicio Recursos Adobe Experience Manager (AEM) para disfrutar de una experiencia de pantalla de bienvenida completa, incluida una instantánea de las actividades recientes sobre los recursos.
+Personalice la página de inicio Recursos Adobe Experience Manager para disfrutar de una experiencia de pantalla de bienvenida completa, incluida una instantánea de las actividades recientes sobre los recursos.
 
-La página de inicio Recursos AEM ofrece una experiencia de pantalla de bienvenida completa y personalizada, que incluye una instantánea de actividades recientes, como recursos que se han visualizado o cargado recientemente.
+La página de inicio de recursos proporciona una experiencia de pantalla de bienvenida completa y personalizada, que incluye una instantánea de actividades recientes, como recursos que se han visualizado o cargado recientemente.
 
 La página de inicio Recursos está deshabilitada de forma predeterminada. Para habilitarlo, realice los siguientes pasos:
 
-1. Abra AEM Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Abra Experience Manager Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra el servicio **[!UICONTROL Day CQ DAM Evento Recorder]** .
 1. Seleccione **[!UICONTROL Activar este servicio]** para activar la grabación de actividades.
 
@@ -66,7 +69,7 @@ Esta sección aparece debajo de la sección de bienvenida y muestra los widgets 
 
 **Reciente**: La utilidad Vista **** recientemente de esta sección muestra las entidades a las que ha accedido recientemente el usuario que ha iniciado sesión, incluidas las carpetas, las colecciones y los proyectos.
 
-**Discover**: La **[!UICONTROL nueva]** utilidad de esta sección muestra los recursos y las representaciones cargados recientemente en la instancia de Recursos AEM.
+**Discover**: La **[!UICONTROL nueva]** utilidad de esta sección muestra los recursos y las representaciones cargados recientemente en la instancia de Recursos.
 
 Para habilitar la depuración de datos de actividad de usuario, habilite el servicio **[!UICONTROL de depuración de Eventos]** DAM desde Configuration Manager. Después de habilitar este servicio, el sistema elimina las actividades del usuario que ha iniciado sesión y que exceden un número especificado.
 
@@ -74,7 +77,7 @@ La pantalla de bienvenida proporciona ayuda para la navegación sencilla, por ej
 
 >[!NOTE]
 >
->Al habilitar los servicios de grabación [!UICONTROL de Evento de CQ DAM] Day y de depuración de Eventos  DAM, aumentan las operaciones de escritura en JCR e indexación de búsqueda, lo que aumenta considerablemente la carga en el servidor AEM. La carga adicional en el servidor AEM puede afectar a su rendimiento.
+>Al habilitar los servicios de grabación [!UICONTROL de Evento de CQ DAM] Day y de depuración de Eventos  DAM, aumentan las operaciones de escritura en JCR e indexación de búsqueda, lo que aumenta considerablemente la carga en el servidor de Experience Manager. La carga adicional en el servidor de Experience Manager puede afectar a su rendimiento.
 
 >[!CAUTION]
 >
