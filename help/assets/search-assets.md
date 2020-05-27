@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '5869'
+source-wordcount: '5863'
 ht-degree: 6%
 
 ---
@@ -162,7 +162,7 @@ Puede buscar recursos en función de los valores exactos de campos de metadatos 
 | Creador | creador:John |
 | Lugar de residencia | ubicación:NA |
 | Descripción | description:&quot;Imagen de muestra&quot; |
-| Herramienta Creador | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Herramienta Creador | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
 | Propietario del copyright | copyright:&quot;Adobe Systems&quot; |
 | Colaborador | colaborador:John |
 | Condiciones de uso | usageterms:&quot;CopyRights Reserved&quot; |
@@ -200,7 +200,7 @@ Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 
 ### Buscar recursos desde el panel Vínculo de recursos de Adobe {#aal}
 
-Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin tener que salir de las aplicaciones compatibles de Adobe Creative Cloud. Los creativos pueden examinar, buscar, desproteger y proteger recursos sin problemas mediante el panel integrado en las aplicaciones de Creative Cloud: Photoshop, Illustrator e InDesign. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en los algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
+Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin tener que salir de las aplicaciones compatibles de Adobe Creative Cloud. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en los algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
 
 ### Buscar recursos en la aplicación de [!DNL Experience Manager] escritorio {#desktopapp}
 
