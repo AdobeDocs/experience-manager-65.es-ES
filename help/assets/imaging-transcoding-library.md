@@ -3,9 +3,9 @@ title: Biblioteca de transcodificación de imágenes
 description: Descubra cómo configurar y utilizar la biblioteca de transcodificación de imágenes de Adobe, una solución de procesamiento de imágenes que puede realizar funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo de imágenes y cambio de tamaño de imágenes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ La biblioteca de transcodificación de imágenes de Adobe es una solución de pr
 * Compresión de calidad JPEG
 * Cambio de tamaño de imagen
 
-La biblioteca de transcodificación de imágenes proporciona compatibilidad con CMYK y alfa completa, excepto CMYK -Alpha.
+La biblioteca de transcodificación de imágenes ofrece compatibilidad con CMYK y alfa completa, excepto CMYK -Alpha.
 
 Además de admitir una amplia gama de formatos de archivo y perfiles, la biblioteca de transcodificación de imágenes tiene ventajas significativas con respecto a otras soluciones de terceros en cuanto a rendimiento, escalabilidad y calidad. Estas son algunas de las ventajas clave del uso de la biblioteca de transcodificación de imágenes:
 
@@ -55,10 +55,10 @@ Los argumentos de la línea de comandos para la biblioteca de transcodificación
 
 Puede configurar las siguientes opciones para el `-resize` parámetro:
 
-* `X`: `Works similar to AEM. For example -resize 319.`
-* `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-* `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-* `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
+* `X`:: Funciona de forma similar a Experience Manager. Por ejemplo -resize 319.
+* `WxH`:: La relación de aspecto no se mantiene, por ejemplo `-resize 319x319`.
+* `Wx`:: Corrige la anchura y calcula la altura manteniendo la proporción de aspecto. Por ejemplo `-resize 319x`.
+* `xH`:: Corrige la altura y calcula la anchura manteniendo la proporción de aspecto. Por ejemplo `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -74,7 +74,7 @@ Para configurar el procesamiento del DIT, cree un archivo de configuración y ac
 
 Para configurar la biblioteca, cree un archivo .conf para indicar las bibliotecas siguiendo los pasos siguientes. Necesita permisos de administrador o raíz.
 
-1. Descargue el paquete [Biblioteca de transcodificación de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) imágenes e instálelo mediante el Administrador de paquetes. El paquete es compatible con AEM 6.5.
+1. Descargue el paquete [Biblioteca de transcodificación de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) imágenes e instálelo mediante el Administrador de paquetes. El paquete es compatible con Experience Manager 6.5.
 
 1. Para conocer un ID de paquete para `com.day.cq.dam.cq-dam-switchengine`, inicie sesión en la consola web y haga clic en **[!UICONTROL OSGi > Paquetes]**. Como alternativa, para abrir la consola de paquetes, acceda a la `https://[aem_server:[port]/system/console/bundles/` URL. Busque `com.day.cq.dam.cq-dam-switchengine` el paquete y su ID.
 
@@ -92,7 +92,7 @@ Para configurar la biblioteca, cree un archivo .conf para indicar las biblioteca
 
 1. Ejecutar `ldconfig` para crear los vínculos y la caché necesarios.
 
-1. En la cuenta que se utiliza para inicio de AEM, edite el `.bash_profile` archivo. Añada `LD_LIBRARY_PATH` agregando lo siguiente.
+1. En la cuenta que se utiliza para inicio de Experience Manager, edite `.bash_profile` el archivo. Añada `LD_LIBRARY_PATH` agregando lo siguiente.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -136,8 +136,9 @@ Por ejemplo, si desea crear miniaturas para una imagen TIFF con la biblioteca de
 
 1. Sincronice el modelo de flujo de trabajo de recursos [!UICONTROL de actualización de] DAM actualizado. Guarde el flujo de trabajo.
 
-El usuario verifica la configuración, carga una imagen TIFF y supervisa el archivo error.log. Observará `INFO` mensajes con menciones de `SwitchEngineHandlingProcess execute: executing command line`. Los registros mencionan las representaciones generadas. Una vez completado el flujo de trabajo, puede realizar la vista de las nuevas representaciones en AEM.
+El usuario verifica la configuración, carga una imagen TIFF y supervisa el archivo error.log. Observará `INFO` mensajes con menciones de `SwitchEngineHandlingProcess execute: executing command line`. Los registros mencionan las representaciones generadas. Una vez completado el flujo de trabajo, puede realizar la vista de las nuevas representaciones en Experience Manager.
 
 >[!MORELIKETHIS]
 >
 >* [Artículo de tipos MIME admitidos](assets-formats.md#supported-image-transcoding-library)
+
