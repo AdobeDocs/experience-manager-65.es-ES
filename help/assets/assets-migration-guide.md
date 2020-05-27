@@ -1,9 +1,12 @@
 ---
-title: Migrar recursos a [!DNL Adobe Experience Manager Assets] de forma masiva.
-description: Describe cómo incorporar recursos a [!DNL Adobe Experience Manager], aplicar metadatos, generar representaciones y activarlas para publicar instancias.
+title: Migrar recursos [!DNL Adobe Experience Manager Assets] masivamente.
+description: Describe cómo introducir [!DNL Adobe Experience Manager]recursos, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '1800'
+ht-degree: 8%
 
 ---
 
@@ -29,7 +32,7 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 >
 Este software es de código abierto y está cubierto por la [Licencia de ](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migrar a [!DNL Experience Manager]{#migrating-to-aem}
+## Migrar a [!DNL Experience Manager] {#migrating-to-aem}
 
 La migración de recursos a [!DNL Experience Manager] requiere varios pasos y debe verse como un proceso por fases. Las fases de la migración son las siguientes:
 
@@ -69,7 +72,7 @@ El otro método para la ingesta de recursos es extraer recursos del sistema de a
 
 #### Buscar desde el sistema de archivos local {#pulling-from-the-local-filesystem}
 
-El importador [de recursos CSV de las herramientas de AEM de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrae recursos del sistema de archivos y los metadatos de los recursos de un archivo CSV para la importación de recursos. La API de AEM Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
+El importador [de recursos CSV de las herramientas de AEM de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrae recursos del sistema de archivos y los metadatos de los recursos de un archivo CSV para la importación de recursos. La API de Experience Manager Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
 
 Dado que no es necesario transmitir los recursos a través de una red, el rendimiento general mejora considerablemente y este método se considera generalmente la forma más eficaz de cargar los recursos en el repositorio. Además, como la herramienta admite la ingestión de metadatos, puede importar todos los recursos y metadatos en un solo paso en lugar de crear un segundo paso para aplicar los metadatos mediante una herramienta independiente.
 
@@ -120,7 +123,7 @@ En este caso, los recursos ya están rellenados con metadatos y las representaci
 
 1. Deshabilitar flujos de trabajo: Como está migrando representaciones junto con nuestros recursos, desea deshabilitar los iniciadores de flujo de trabajo para el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM.
 
-1. Migrar etiquetas: Dado que ya tiene etiquetas cargadas en la [!DNL Experience Manager] instancia de origen, puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
+1. Migrar etiquetas: Como ya tiene etiquetas cargadas en la [!DNL Experience Manager] instancia de origen, puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
 
 1. Migrar recursos: Existen dos herramientas recomendadas para mover recursos de una [!DNL Experience Manager] instancia a otra:
 
