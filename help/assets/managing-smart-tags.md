@@ -3,7 +3,10 @@ title: Administración de búsquedas y etiquetas inteligentes
 description: Actualice o elimine las etiquetas inteligentes imprecisas para mejorar la relevancia de las etiquetas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ También puede asignar una clasificación superior a una etiqueta para aumentar 
 1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Vaya a la página de propiedades de la imagen. Observe que la etiqueta promocionada tiene una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
-## Comprender los resultados de búsqueda de AEM con etiquetas inteligentes {#understandsearch}
+## Comprender los resultados de búsqueda de Experience Manager con etiquetas inteligentes {#understandsearch}
 
-De forma predeterminada, la búsqueda de AEM combina los términos de búsqueda con una `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una `OR` cláusula adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. For example, consider searching for `woman running`. Los recursos con solo `woman` o solamente `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con etiquetas inteligentes `woman` o con `running` etiquetas inteligentes. Los resultados de la búsqueda son una combinación de:
+De forma predeterminada, la búsqueda de Experience Manager combina los términos de búsqueda con una `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una `OR` cláusula adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. For example, consider searching for `woman running`. Los recursos con solo `woman` o solamente `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con etiquetas inteligentes `woman` o con `running` etiquetas inteligentes. Los resultados de la búsqueda son una combinación de:
 
 * recursos con `woman` y `running` palabras clave en los metadatos.
 
