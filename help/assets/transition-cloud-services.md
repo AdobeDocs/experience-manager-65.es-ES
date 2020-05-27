@@ -3,7 +3,7 @@ title: Aplicar servicios de traducción en la nube a las carpetas
 description: Aplicar servicios de traducción en la nube a las carpetas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 43%
@@ -13,7 +13,7 @@ ht-degree: 43%
 
 # Aplicar servicios de traducción en la nube a las carpetas {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager (AEM) le permite utilizar los servicios de traducción basados en la nube del proveedor de traducción que elija para garantizar que los recursos se traducen según sus necesidades.
+Adobe Experience Manager le permite utilizar los servicios de traducción basados en la nube del proveedor de traducción que elija para garantizar que los recursos se traducen según sus necesidades.
 
 Puede aplicar el servicio de traducción en la nube directamente a la carpeta de recursos para que se puedan utilizar durante los flujos de trabajo de traducción.
 
@@ -42,7 +42,7 @@ La aplicación de servicios de traducción en la nube directamente a la carpeta 
 Si desea aplicar un conector personalizado para los servicios de traducción que desea utilizar en los flujos de trabajo de traducción. Para aplicar un conector personalizado, primero instale el conector desde el Administrador de paquetes. A continuación, configure el conector desde la consola de Cloud Services. Después de configurar el conector, estará disponible en la lista de conectores de la pestaña Cloud Services que se describe en [Aplicación de los serviciosde traducción](transition-cloud-services.md#applying-the-translation-services). Después de aplicar el conector personalizado y ejecutar los flujos de trabajo de traducción, el mosaico **[!UICONTROL Resumen de traducción]** del proyecto de traducción muestra los detalles del conector en los encabezados **[!UICONTROL Proveedor]** y **[!UICONTROL Método]**.
 
 1. Instale el conector desde el Administrador de paquetes.
-1. Haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Servicios]** de nube.
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Implementación > Servicios]** de nube.
 1. Coloque el conector que instaló en **[!UICONTROL Servicios de terceros]** en la página **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
