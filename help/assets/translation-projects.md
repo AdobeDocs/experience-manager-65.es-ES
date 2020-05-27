@@ -3,9 +3,9 @@ title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1897'
 ht-degree: 16%
 
 ---
@@ -25,7 +25,7 @@ Para crear una copia de idioma, active una de las siguientes flujos de trabajo d
 
 >[!NOTE]
 >
->Si se inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF e InDesign, sus subrecursos o representaciones (si existen) no se envían para su traducción.
+>Si se inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF y [!DNL Adobe InDesign] archivos, sus subrecursos o representaciones (si existen) no se envían para su traducción.
 
 ## Crear y traducir flujos de trabajo {#create-and-translate-workflow}
 
@@ -291,7 +291,7 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
 1. Realice los pasos 2 a 14 del procedimiento de [Añadir al proyecto](#add-to-existing-translation-project) de traducción existente para actualizar la copia del idioma.
 1. Haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción. Desde la lista de recursos en la página Trabajo **[!UICONTROL de]** traducción, puede realizar una vista clara de la ubicación temporal en la que se almacena la versión traducida del recurso.
 
-   ![chlimage_1-181](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Seleccione la casilla de verificación situada junto a **[!UICONTROL Título]**.
 1. From the toolbar, click **[!UICONTROL Accept Translation]** and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
