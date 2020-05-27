@@ -1,10 +1,13 @@
 ---
-title: Ajuste del rendimiento para [!DNL Recursos Adobe Experience Manager].
-description: Sugerencias y directrices sobre la configuración de [!DNL Experience Manager], cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de [!DNL Experience Manager Assets].
+title: Ajuste de rendimiento para [!DNL Adobe Experience Manager Assets].
+description: Sugerencias y directrices [!DNL Experience Manager] sobre configuración, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento del [!DNL Experience Manager Assets]producto.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '2723'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Aunque Experience Manager es compatible con varias plataformas, Adobe ha encontr
 
 ### Carpeta temporal {#temp-folder}
 
-Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede usar una unidad RAM o SSD. En los entornos basados en la nube, se puede utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad de [disco](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) efímero para la carpeta temporal.
+Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede utilizar una unidad RAM o SSD. En los entornos basados en la nube, se puede utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad de [disco](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) efímero para la carpeta temporal.
 
 Si el servidor tiene una memoria amplia, configure una unidad de RAM. En Linux, ejecute estos comandos para crear una unidad de 8 GB de RAM:
 
@@ -111,7 +114,7 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se saturará rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte Guía [de tamaño de](/help/assets/assets-sizing-guide.md)recursos. Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)Assets.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte Guía [de tamaño de](/help/assets/assets-sizing-guide.md)recursos. Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)Assets.
 
 Principalmente, su estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de [!DNLEExperience Manager] . Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
@@ -162,7 +165,7 @@ Establecer una cola en la mitad de los procesadores disponibles es una solución
 
 ### Configuración del recurso de actualización DAM {#dam-update-asset-configuration}
 
-El flujo de trabajo de recursos [!UICONTROL de actualización de] DAM contiene un conjunto completo de pasos configurados para tareas, como la generación de PTIFF de Scene7 y la integración de InDesign Server. Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo de recursos [!UICONTROL de actualización de] DAM y eliminar los pasos innecesarios. En este caso, actualice los lanzadores de [!UICONTROL DAM Update Asset] para que apunten al nuevo modelo.
+El flujo de trabajo de recursos [!UICONTROL de actualización de] DAM contiene un conjunto completo de pasos configurados para tareas, como la generación y la integración de Scene7 PTIFF [!DNL Adobe InDesign Server] . Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo de recursos [!UICONTROL de actualización de] DAM y eliminar los pasos innecesarios. En este caso, actualice los lanzadores de [!UICONTROL DAM Update Asset] para que apunten al nuevo modelo.
 
 La ejecución intensiva del flujo de trabajo de recursos [!UICONTROL de actualización de] DAM puede aumentar considerablemente el tamaño del almacén de datos de archivos. Los resultados de un experimento realizado por Adobe han demostrado que el tamaño del almacén de datos puede aumentar en aproximadamente 400 GB si se realizan alrededor de 5500 flujos de trabajo en un plazo de 8 horas.
 
@@ -235,7 +238,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 >[!NOTE]
 >
->Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que este paso sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
+>Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que esto sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
 
 ## Índices de búsqueda {#search-indexes}
 
@@ -285,7 +288,7 @@ Para todos los problemas de rendimiento de la red del cliente, realice las sigui
 
 ### [!DNL Experience Manager] prueba de instancia {#aem-instance-testing}
 
-Para minimizar la latencia y lograr un alto rendimiento mediante la utilización eficiente de la CPU y el uso compartido de la carga, monitoree el rendimiento de su [!DNL Experience Manager] instancia de forma regular. En particular:
+Para minimizar la latencia y lograr un alto rendimiento mediante la utilización eficiente de la CPU y el uso compartido de la carga, supervise el rendimiento de su [!DNL Experience Manager] instancia de forma regular. En particular:
 
 * Ejecute pruebas de carga con la [!DNL Experience Manager] instancia.
 * Monitoree el rendimiento de carga y la capacidad de respuesta de la interfaz de usuario.
