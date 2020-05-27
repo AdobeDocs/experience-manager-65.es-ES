@@ -1,23 +1,26 @@
 ---
 title: Operaciones asincrónicas
-description: Recursos AEM optimiza el rendimiento completando de forma asíncrona algunas tareas que consumen muchos recursos.
+description: Experience Manager Assets optimiza el rendimiento completando de forma asíncrona algunas tareas que consumen muchos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 2%
 
 ---
 
 
 # Operaciones asincrónicas {#asynchronous-operations}
 
-Para reducir el impacto negativo en el rendimiento, Recursos Adobe Experience Manager (AEM) procesa de forma asíncrona determinadas operaciones de recursos que requieren muchos recursos y que se ejecutan durante mucho tiempo.
+Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager Assets procesa de forma asíncrona determinadas operaciones de recursos que requieren muchos recursos y que se ejecutan durante mucho tiempo.
 
 Estas operaciones incluyen:
 
 * Eliminación de muchos recursos
 * Desplazamiento de muchos recursos o recursos con muchas referencias
 * Exportación e importación masiva de metadatos de recursos.
-* Recuperación de recursos, que están por encima del límite establecido, desde una implementación remota de AEM.
+* Recuperación de recursos, que están por encima del límite establecido, desde una implementación remota de Experience Manager.
 
 El procesamiento asincrónico implica poner en cola varios trabajos y, finalmente, ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
 
@@ -25,11 +28,11 @@ Puede vista el estado de los trabajos asincrónicos desde la página Estado **[!
 
 >[!NOTE]
 >
->De forma predeterminada, los trabajos de Recursos AEM se ejecutan en paralelo. Si N es el número de núcleos de CPU, los trabajos N/2 se pueden ejecutar en paralelo de forma predeterminada. Para utilizar la configuración personalizada de la cola de trabajos, modifique la configuración de la cola **[!UICONTROL predeterminada de operaciones]** asincrónicas desde la consola web. Para obtener más información, consulte Configuraciones [de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>De forma predeterminada, los trabajos en Recursos se ejecutan en paralelo. Si N es el número de núcleos de CPU, los trabajos N/2 se pueden ejecutar en paralelo de forma predeterminada. Para utilizar la configuración personalizada de la cola de trabajos, modifique la configuración de la cola **[!UICONTROL predeterminada de operaciones]** asincrónicas desde la consola web. Para obtener más información, consulte Configuraciones [de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitorear el estado de las operaciones asincrónicas {#monitoring-the-status-of-asynchronous-operations}
 
-Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico.
+Siempre que Assets procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico.
 
 Para realizar una vista detallada del estado de las operaciones asincrónicas, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
@@ -69,7 +72,7 @@ Para realizar una vista detallada del estado de las operaciones asincrónicas, v
 
 ## Purgar trabajos completados {#purging-completed-jobs}
 
-Recursos AEM ejecuta un trabajo de depuración todos los días a la 1:00 a.m. para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
+Experience Manager Assets ejecuta un trabajo de depuración todos los días a la 1:00 a.m. para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
 
 Puede modificar la programación del trabajo de depuración y la duración durante la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 
@@ -83,7 +86,7 @@ Puede modificar la programación del trabajo de depuración y la duración duran
 
 ## Configurar umbrales para procesamiento asincrónico {#configuring-thresholds-for-asynchronous-processing}
 
-Puede configurar el número de umbral de recursos o referencias para que Recursos AEM procese una operación concreta de forma asincrónica.
+Puede configurar el número de umbral de recursos o referencias para que Assets procese una operación concreta de forma asíncrona.
 
 ### Configurar umbrales para operaciones de eliminación asincrónica {#configuring-thresholds-for-asynchronous-delete-operations}
 
