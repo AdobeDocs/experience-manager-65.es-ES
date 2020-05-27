@@ -1,22 +1,25 @@
 ---
-title: Integrar recursos con flujo de actividades
-description: Describe las funciones de grabación de AEM y cómo configurar AEM para que registre eventos específicos.
+title: Integrar recursos con flujo de actividad
+description: Describe las funciones de grabación de Experience Manager y cómo configurarlas para grabar eventos específicos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
 
-# Integrar recursos con flujo de actividades {#integrating-assets-with-activity-stream}
+# Integrar recursos con flujo de actividad {#integrating-assets-with-activity-stream}
 
-Los usuarios de Recursos Adobe Experience Manager (AEM) realizan muchas acciones como crear, cargar y eliminar recursos. Estas acciones se pueden registrar para que pueda proporcionar un historial de lo que ha hecho un usuario. En esta sección se describen las funciones de grabación de AEM y cómo configurar AEM para grabar eventos específicos.
+Los usuarios de Recursos Adobe Experience Manager realizan muchas acciones, como crear, cargar y eliminar recursos. Estas acciones se pueden registrar para que pueda proporcionar un historial de lo que ha hecho un usuario. En esta sección se describen las funciones de grabación de Experience Manager y cómo configurar Experience Manager para grabar eventos específicos.
 
 ## Consideraciones de rendimiento y comportamiento predeterminado {#performance-considerations-and-default-behavior}
 
-Esta integración podría requerir CPU y espacio en disco, por ejemplo, al realizar una importación masiva. Por estos motivos, la integración de Recursos AEM con el flujo de actividades está deshabilitada de forma predeterminada.
+Esta integración podría requerir CPU y espacio en disco, por ejemplo, al realizar una importación masiva. Por estos motivos, la integración de recursos con el flujo de Actividad está deshabilitada de forma predeterminada.
 
-## Eventos de acción admitidos {#supported-action-events}
+## eventos de acción admitidos {#supported-action-events}
 
 Se pueden configurar los siguientes eventos para que se registren:
 
@@ -36,19 +39,19 @@ Se pueden configurar los siguientes eventos para que se registren:
 * Subrecurso actualizado (SUBASSET_UPDATED)
 * Subrecurso eliminado (SUBASSET_REMOVED)
 
-## Configuración del registro de eventos de AEM Assets {#configuring-aem-assets-events-recording}
+## Configuración del registro de eventos de recursos {#configuring-aem-assets-events-recording}
 
-La consola [](/help/sites-deploying/configuring-osgi.md) web permite acceder al ajuste del grabador de eventos de AEM Assets. Para configurar el grabador de eventos de AEM Assets, realice las acciones siguientes:
+La consola [](/help/sites-deploying/configuring-osgi.md) web proporciona acceso al ajuste del grabador de Evento de recursos. Para configurar el grabador de Evento de recursos, siga estos pasos:
 
 1. Navegar a la consola **[!UICONTROL web]**
 
 1. Haga clic en **[!UICONTROL Configuración]**.
 
-1. Haga doble clic en Grabador **[!UICONTROL de eventos de CQ DAM]** de día.
+1. Doble haga clic en **[!UICONTROL Día de CQ DAM Evento Grabador]**.
 
 1. Marque **[!UICONTROL Habilita este servicio]**.
 
-1. Compruebe qué tipos **[!UICONTROL de]** eventos desea registrar en el flujo de actividad del usuario.
+1. Compruebe qué **[!UICONTROL Tipos de evento]** desea que se registren en el flujo de actividad del usuario.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
