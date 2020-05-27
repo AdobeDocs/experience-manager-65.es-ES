@@ -3,9 +3,9 @@ title: Crear y configurar páginas del editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2146'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ En este documento se describe lo siguiente:
 
 ## ¿Por qué crear y configurar páginas del editor de recursos? {#why-create-and-configure-asset-editor-pages}
 
-La administración de activos digitales se utiliza en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios con formación profesional (por ejemplo, fotógrafos o taxónomos) a grupos de usuarios más grandes y diversos (por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.), la poderosa interfaz de usuario de Recursos Adobe Experience Manager (AEM) para usuarios profesionales puede proporcionar demasiada información y inicios de partes interesadas para solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
+La administración de activos digitales se utiliza en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios con formación profesional (por ejemplo, fotógrafos o taxónomos) a grupos de usuarios más grandes y diversos (por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.), la potente interfaz de usuario de Recursos Adobe Experience Manager para usuarios profesionales puede proporcionar demasiada información y inicio de los interesados para solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
 
 Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a los espectáculos comerciales o de un centro de prensa en un sitio web público. Las aplicaciones centradas en los recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
-La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en los recursos creadas con Recursos AEM son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
+La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en los recursos creadas con Recursos son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
-Una aplicación centrada en recursos en AEM consiste en una página del editor de recursos, que se puede utilizar para obtener una vista detallada de un recurso específico. La página Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
+Una aplicación centrada en recursos en Experience Manager consiste en una página del editor de recursos, que se puede utilizar para obtener una vista detallada de un recurso específico. La página Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -161,7 +161,7 @@ To customize the query builder:
 
 #### Add predicates {#adding-predicates}
 
-AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
+Experience Manager Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
 To add predicates:
 
@@ -268,7 +268,7 @@ El formulario de metadatos es un formulario que incluye un inicio y una acción 
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Para crear una acción de finalización, haga clic en **Editar** en el área Final del formulario. Por ejemplo, es posible que desee crear un botón **Enviar** para permitir que los usuarios envíen los cambios de metadatos. De forma opcional, puede agregar un botón **Restablecer** que restablezca los metadatos a su estado original.
+1. Para crear una acción de finalización, haga clic en **Editar** en el área Final del formulario. Por ejemplo, es posible que desee crear un botón **Enviar** para permitir que los usuarios envíen los cambios de metadatos. Opcionalmente, puede agregar un botón **Restablecer** que restablezca los metadatos a su estado original.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -278,7 +278,7 @@ El formulario de metadatos es un formulario que incluye un inicio y una acción 
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-Consulte [Personalización y ampliación de Recursos](/help/assets/extending-assets.md) AEM para obtener información sobre cómo modificar las Áreas de nombres disponibles en el formulario de metadatos.
+Consulte [Personalización y ampliación de recursos](/help/assets/extending-assets.md) para obtener información sobre cómo modificar las Áreas de nombres disponibles en el formulario de metadatos.
 
 1. Click the **Constraints** tab. Aquí puede seleccionar si un campo es obligatorio y, si es necesario, agregar restricciones.
 
@@ -391,14 +391,14 @@ Están disponibles las siguientes acciones:
 
 ## Edición múltiple de recursos con la página Editor de recursos {#multi-editing-assets-with-the-asset-editor-page}
 
-Con Recursos AEM, puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar al mismo tiempo los siguientes:
+Con Experience Manager Assets, puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar al mismo tiempo los siguientes:
 
 * Etiquetas
 * Metadatos
 
 Para editar varios recursos con la página Editor de recursos:
 
-1. Abra la página **Centro** de prensa de Geometrixx:
+1. Abra la página Centro **de** prensa de Geometrixx:
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Seleccione los recursos:
