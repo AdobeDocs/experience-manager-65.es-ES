@@ -3,9 +3,9 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 En Experience Manager, un recurso contiene los siguientes elementos:
 
 * Propiedades y metadatos del recurso.
-* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo o páginas extraídas de archivos PDF o Adobe InDesign.
+* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de archivos PDF o [!DNL Adobe InDesign] archivos.
 * Comentarios opcionales.
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
