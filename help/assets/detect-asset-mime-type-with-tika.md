@@ -1,11 +1,11 @@
 ---
 title: Detectar tipo MIME de recursos con Apache Tika
-description: Active Apache Tika para ayudar a AEM Assets a detectar el tipo MIME de los recursos del flujo de contenido durante la operación de carga en lugar de la extensión de archivo.
+description: Active Apache Tika para ayudar a Experience Manager Assets a detectar el tipo MIME de los recursos del flujo de contenido durante la operación de carga en lugar de la extensión de archivo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Detect MIME type of assets using Apache Tika {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normalmente, Recursos Adobe Experience Manager (AEM) detecta el tipo MIME de los recursos que se cargan desde su extensión de archivo.
+Normalmente, Recursos Adobe Experience Manager detecta el tipo MIME de los recursos que se cargan desde su extensión de archivo.
 
-Si utiliza Apache Tika para cargar recursos, AEM Assets detecta su tipo MIME del flujo de contenido durante la operación de carga en lugar de la extensión del archivo.
+Si utiliza Apache Tika para cargar recursos, Assets detecta su tipo MIME del flujo de contenido durante la operación de carga en lugar de la extensión del archivo.
 
 Esta función está deshabilitada de forma predeterminada. Para habilitar la función, configure el servicio **[!UICONTROL Day CQ DAM Mime Type]** desde [!UICONTROL Configuration Manager].
 
