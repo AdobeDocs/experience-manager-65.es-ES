@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesi
 description: Aprenda a [!DNL Adobe Experience Manager Assets] integrarse con [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 4%
@@ -58,7 +58,7 @@ Esta secuencia de comandos de comando:
    * El texto y los archivos extraídos se almacenan en [!DNL Experience Manager Assets].
    * Todas las representaciones se almacenan en [!DNL Experience Manager Assets], en el propio recurso.
 
-## Integración de [!DNL InDesign Server] con AEM {#integrating-the-indesign-server-with-aem}
+## Integración de [!DNL InDesign Server] con Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Para integrar el [!DNL InDesign Server] proxy con [!DNL Experience Manager Assets] y después de configurarlo, debe:
 
@@ -111,7 +111,7 @@ Argumentos de extracción de medios y rutas de secuencias de comandos
 
 * **Ampliar secuencias de comandos**: Aquí puede especificar diferentes combinaciones de scripts. Si desea que sus propias secuencias de comandos se ejecuten en el [!DNL InDesign Server], guarde las secuencias de comandos en `/apps/settings/dam/indesign/scripts`.
 
-Para obtener información sobre secuencias de comandos de Indesign, consulte la documentación para desarrolladores de [InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Para obtener información sobre [!DNL Adobe InDesign] secuencias de comandos, consulte la documentación para desarrolladores [de InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -137,7 +137,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 
 * **Título** de página: Especifique el título que desea asignar a la página resultante.
 
-* **Ruta** raíz de página: Ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utilizará el nodo que contiene las representaciones del recurso.
+* **Ruta** raíz de página: La ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utilizará el nodo que contiene las representaciones del recurso.
 
 * **Plantilla** de página: Plantilla que se utilizará al generar la página resultante.
 
@@ -167,7 +167,7 @@ Si [!DNL InDesign Server] y [!DNL Experience Manager] se ejecuta en diferentes h
 
 1. Acceda a la consola web en `https://[aem_server]:[port]/system/console/configMgr`.
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
-1. Especifique el nombre de host y la ruta de contexto para el [!DNL Indesign Server] y haga clic en **Guardar**.
+1. Especifique el nombre de host y la ruta de contexto para el [!DNL Adobe InDesign Server] y haga clic en **Guardar**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
@@ -218,7 +218,7 @@ Para [!DNL InDesign Server] 10.0 o superior, realice los siguientes pasos para h
 
 >[!NOTE]
 >
->Para [!DNL InDesign Server] la integración con [!DNL Experience Manager Assets], utilice un procesador multi-core porque la función de asistencia de sesión necesaria para la integración no es compatible con sistemas de un solo núcleo.
+>Para [!DNL InDesign Server] la integración con [!DNL Experience Manager Assets], utilice un procesador multi-core porque la función de soporte de sesión necesaria para la integración no es compatible con sistemas de un solo núcleo.
 
 ## Configurar [!DNL Experience Manager] credenciales {#configure-aem-credentials}
 
