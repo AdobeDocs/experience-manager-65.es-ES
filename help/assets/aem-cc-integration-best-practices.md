@@ -3,9 +3,9 @@ title: Prácticas recomendadas de integración [!DNL Adobe Experience Manager] y
 description: Prácticas recomendadas para la [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integración para optimizar los flujos de trabajo de transferencia de recursos y lograr una alta velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3247'
 ht-degree: 16%
 
 ---
@@ -35,7 +35,7 @@ Siga leyendo para saber qué integraciones elegir entre el escritorio y el DAM d
 
 | Propuesta de valor para las personas involucradas | Oferta de Adobe | Superficies involucradas |
 |---|---|---|
-| Los usuarios creativos descubren recursos desde [!DNL Experience Manager], los abren y utilizan, editan y cargan cambios en [!DNL Experience Manager], así como cargan nuevos archivos en [!DNL Experience Manager]sin salir de [!DNL Creative Cloud] las aplicaciones. | [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
+| Los usuarios creativos descubren recursos desde [!DNL Experience Manager], los abren y utilizan, editan y cargan cambios en [!DNL Experience Manager], así como cargan nuevos archivos en [!DNL Experience Manager]sin salir de [!DNL Creative Cloud] las aplicaciones. | [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], y [!DNL Adobe InDesign]. |
 | Los usuarios empresariales simplifican la apertura y el uso de recursos, la edición y carga de cambios en [!DNL Experience Manager]y la carga [!DNL Experience Manager] de nuevos archivos desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de escritorio nativa, incluidos los que no son de Adobe. | [Aplicación de escritorio de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicación de escritorio en Win y Mac |
 | Los especialistas en marketing y los usuarios empresariales descubren, previsualización, otorgan licencias y guardan los [!DNL Adobe Stock] recursos desde [!DNL Experience Manager]. Los recursos con licencia y guardados proporcionan metadatos seleccionados [!DNL Adobe Stock] para mejorar la gestión. | [Integración de Experience Manager y Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaz web |
 
@@ -45,7 +45,7 @@ Este artículo se centra principalmente en los dos primeros aspectos de las nece
 
 ### Asignación de casos de uso y soluciones de Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
-| Caso práctico   | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicación de escritorio | Comentarios y otras soluciones |
+| Caso práctico  | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicación de escritorio | Comentarios y otras soluciones |
 |---|---|---|---|
 | Discover: examinar carpetas DAM | Sí | [!DNL Experience Manager] Acciones de interfaz web y escritorio |  |
 | Discover: acceder a las colecciones DAM | Sí | [!DNL Experience Manager] Acciones de interfaz web y escritorio |  |
@@ -181,7 +181,7 @@ Como se explica en este documento, se recomienda llevar a cabo actualizaciones i
 
 Adobe Asset Link oferta una buena compatibilidad para este caso de uso:
 
-* Cuando los usuarios de Photoshop, InDesign o Illustrator intentan editar un archivo, ejecutan una operación de desprotección en el recurso determinado
+* Cuando los usuarios [!DNL Photoshop], [!DNL InDesign]o [!DNL Illustrator] intentan editar un archivo, ejecutan una operación de desprotección en el recurso determinado
 * El recurso se descarga en segundo plano, se coloca en la cuenta de Creative Cloud de los usuarios sincronizada con el disco por la aplicación de escritorio de Creative Cloud y se activa el indicador de cierre de compra [!DNL Experience Manager] en el recurso para minimizar los conflictos de edición
 * A partir de ahí, el usuario trabaja en un archivo almacenado localmente en la ubicación sincronizada y puede seguir trabajando y guardando los cambios necesarios con cualquier frecuencia necesaria
 * Además, como el recurso está en la cuenta de Creative Cloud, también está disponible en otros dispositivos que el usuario pueda tener (por ejemplo, se puede abrir o editar en una aplicación móvil dedicada de Creative Cloud) y se puede compartir con otros usuarios de Creative Cloud con fines de colaboración.
