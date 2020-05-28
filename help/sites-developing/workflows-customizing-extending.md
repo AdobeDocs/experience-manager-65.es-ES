@@ -10,21 +10,24 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '3587'
+ht-degree: 1%
 
 ---
 
 
 # Ampliación de la funcionalidad del flujo de trabajo{#extending-workflow-functionality}
 
-En este tema se describe cómo desarrollar componentes de paso personalizados para los flujos de trabajo y, a continuación, cómo interactuar mediante programación con los flujos de trabajo.
+En este tema se describe cómo desarrollar componentes de pasos personalizados para sus flujos de trabajo y cómo interactuar mediante programación con flujos de trabajo.
 
 La creación de un paso de flujo de trabajo personalizado implica las siguientes actividades:
 
 * Desarrollar el componente de paso del flujo de trabajo.
 * Implementar la funcionalidad de pasos como un servicio OSGi o una secuencia de comandos ECMA.
 
-También puede [interactuar con los flujos de trabajo desde sus programas y secuencias de comandos](/help/sites-developing/workflows-program-interaction.md).
+También puede [interactuar con sus flujos de trabajo desde sus programas y secuencias de comandos](/help/sites-developing/workflows-program-interaction.md).
 
 ## Componentes de la etapa de flujo de trabajo: conceptos básicos {#workflow-step-components-the-basics}
 
@@ -138,7 +141,7 @@ Este requisito se cumple cuando el cuadro de diálogo de edición utiliza la fic
    * Nombre: `cq:formParameters`
    * Tipo: `nt:unstructured`
 
-1. Agregue `String` propiedades de los siguientes nombres al `cq:formParameters` nodo:
+1. Añada `String` propiedades de los siguientes nombres en el `cq:formParameters` nodo:
 
    * `jcr:title`:: El valor rellena el campo **Título** de la ficha **Común** .
    * `jcr:description`:: El valor rellena el campo **Descripción** de la ficha **Común** .
@@ -186,7 +189,7 @@ Para enfocar el componente para utilizarlo en un escenario de flujo de trabajo e
    * Nombre: `cq:formParameters`
    * Tipo: `nt:unstructured`
 
-1. Agregue una `String` propiedad al `cq:formParameters` nodo. El supertipo de componente determina el nombre de la propiedad:
+1. Añada una `String` propiedad al `cq:formParameters` nodo. El supertipo de componente determina el nombre de la propiedad:
 
    * Etapa del proceso: `PROCESS`
    * Etapa de participante: `PARTICIPANT`
@@ -200,7 +203,7 @@ Para enfocar el componente para utilizarlo en un escenario de flujo de trabajo e
 
 1. Para eliminar la capacidad de los desarrolladores de modelos de cambiar los valores de propiedad, anule el cuadro de diálogo del supertipo de componente.
 
-### Adición de formularios y cuadros de diálogo a los pasos de los participantes {#adding-forms-and-dialogs-to-participant-steps}
+### Añadir formularios y diálogos a pasos de participantes {#adding-forms-and-dialogs-to-participant-steps}
 
 Personalice el componente de paso del participante para proporcionar funciones que se encuentran en los componentes Paso [del participante en el](/help/sites-developing/workflows-step-ref.md#form-participant-step) formulario y Paso [del participante en el](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) cuadro de diálogo:
 
@@ -362,7 +365,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 ### Secuencias de comandos y argumentos de proceso {#scripts-and-process-arguments}
 
-Dentro de una secuencia de comandos para un componente Paso **de** proceso, los argumentos están disponibles a través del `args` objeto.
+Dentro de una secuencia de comandos para un componente **de paso** de proceso, los argumentos están disponibles a través del `args` objeto.
 
 Al crear un componente de paso personalizado, el objeto `metaData` está disponible en una secuencia de comandos. Este objeto está limitado a un solo argumento de cadena.
 
@@ -388,7 +391,7 @@ Para definir un paso de proceso como un componente de servicio OSGI (paquete Jav
    >
    >El nombre del paquete debe agregarse a la `<*Private-Package*>` sección de la `maven-bundle-plugin` configuración.
 
-1. Agregue la propiedad SCR `process.label` y establezca el valor según sus necesidades. Será el nombre en el que se mostrará el paso del proceso al utilizar el componente genérico Paso **del** proceso. Consulte el ejemplo siguiente.
+1. Añada la propiedad SCR `process.label` y defina el valor según sus necesidades. Será el nombre en el que se mostrará el paso del proceso al utilizar el componente genérico Paso **del** proceso. Consulte el ejemplo siguiente.
 1. En el editor **Modelos** , agregue el paso del proceso al flujo de trabajo mediante el componente genérico Paso **del** proceso.
 1. En el cuadro de diálogo de edición (del paso **del** proceso), vaya a la ficha **Proceso** y seleccione la implementación del proceso.
 1. Si utiliza argumentos en el código, establezca los argumentos **de proceso**. Por ejemplo: false.
@@ -466,7 +469,7 @@ public class MyProcess implements WorkflowProcess {
 
 Las secuencias de comandos de ECMA permiten a los desarrolladores de secuencias de comandos implementar los pasos del proceso. Las secuencias de comandos se encuentran en el repositorio JCR y se ejecutan desde allí.
 
-La siguiente tabla enumera las variables que están disponibles inmediatamente para procesar secuencias de comandos, lo que proporciona acceso a los objetos de la API de Java del flujo de trabajo.
+La siguiente tabla lista las variables que están disponibles inmediatamente para procesar secuencias de comandos, lo que proporciona acceso a los objetos de la API de Java del flujo de trabajo.
 
 | Clase Java | Nombre de variable de secuencia de comandos | Descripción |
 |---|---|---|
@@ -558,7 +561,7 @@ Para definir un paso de participante como un componente de servicio OSGI (clase 
 
    Cree el paquete e impleméntelo en el contenedor OSGI.
 
-1. Agregue la propiedad SCR `chooser.label` y establezca el valor según sea necesario. Este será el nombre en el que aparece el selector de participantes, mediante el componente Paso **de participante** dinámico. Consulte el ejemplo:
+1. Añada la propiedad SCR `chooser.label` y defina el valor como sea necesario. Este será el nombre en el que aparece el selector de participantes, mediante el componente Paso **de participante** dinámico. Consulte el ejemplo:
 
    ```java
    package com.adobe.example.workflow.impl.process;
@@ -618,7 +621,7 @@ Puede crear una secuencia de comandos ECMA que seleccione el usuario al que se h
 
 Las secuencias de comandos se encuentran en el repositorio JCR y se ejecutan desde allí.
 
-En la tabla siguiente se enumeran las variables que proporcionan acceso inmediato a los objetos Java del flujo de trabajo en las secuencias de comandos.
+La siguiente tabla lista las variables que proporcionan acceso inmediato a los objetos Java del flujo de trabajo en las secuencias de comandos.
 
 | Clase Java | Nombre de variable de secuencia de comandos |
 |---|---|
@@ -778,7 +781,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
 ## Ejemplo: Creación de un paso personalizado {#example-creating-a-custom-step}
 
-Una forma sencilla de empezar a crear su propio paso personalizado consiste en copiar un paso existente de:
+Una forma sencilla de crear su propio paso personalizado es copiar un paso existente de:
 
 `/libs/cq/workflow/components/model`
 
@@ -888,7 +891,7 @@ Después de [crear el paso](#creating-the-basic-step)básico, defina el paso del
 
 1. Configure las propiedades en el nodo `cq:listeners`.
 
-   El `cq:listener` nodo y sus propiedades le permiten establecer controladores de eventos que reaccionan a los eventos en el editor de modelos de interfaz de usuario táctil; como arrastrar un paso a una página de modelo o editar las propiedades de un paso.
+   El `cq:listener` nodo y sus propiedades le permiten establecer controladores de evento que reaccionan a los eventos en el editor de modelos de interfaz de usuario táctil; como arrastrar un paso a una página de modelo o editar las propiedades de un paso.
 
    **Propiedades de interés:**
 
