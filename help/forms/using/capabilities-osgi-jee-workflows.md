@@ -9,7 +9,10 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '869'
+ht-degree: 20%
 
 ---
 
@@ -107,7 +110,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y Flujos de trabaj
 <table>
  <tbody>
   <tr>
-   <td>Funciones</td>
+   <td>Capacidades</td>
    <td>Flujos de trabajo de AEM centrados en formularios en OSGi<br /> </td>
    <td>Flujos de trabajo JEE de AEM Forms</td>
   </tr>
@@ -331,7 +334,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y Flujos de trabaj
 
 1. Puede utilizar Flujos de trabajo de AEM centrados en el formulario en OSGi para firmar un formulario adaptable rellenado. Los Flujos de trabajo de AEM centrados en el formulario en OSGi son compatibles con la firma fuera del formulario. No se admite la experiencia [de firma](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) en el formulario.
 
-1. Es necesario acceder a la Bandeja de entrada de AEM para ejecutar y supervisar los flujos de trabajo centrados en el formulario en OSGi de AEM Forms y en HTML Workspace para ejecutar y supervisar los Flujos de trabajo JEE de AEM Forms.
+1. Es necesario acceder a la Bandeja de entrada de AEM para ejecutar y supervisar flujos de trabajo centrados en formularios en OSGi de AEM Forms y en HTML Workspace para ejecutar y supervisar Flujos de trabajo JEE de AEM Forms.
 1. Los servicios nativos de Documento de AEM Forms están disponibles para Flujos de trabajo de AEM centrados en el formulario en OSGi y AEM Forms en Flujos de trabajo JEE. AEM Workflow utiliza servicios de documento nativos para Flujos de trabajo de AEM centrados en formularios en Flujos de trabajo OSGi y AEM Forms JEE (Process Management).
 1. Los Flujos de trabajo JEE de AEM Forms solo pueden procesar un formulario adaptable. No admite el procesamiento de un formulario adaptable como documento PDF.
 1. Los Flujos de trabajo JEE de formularios AEM no tienen un paso independiente para Adobe Sign. Se requiere un formulario adaptable habilitado para Adobe Sign para Flujos de trabajo JEE de formularios AEM. Para obtener más información, consulte la documentación [de](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)Adobe Sign.
