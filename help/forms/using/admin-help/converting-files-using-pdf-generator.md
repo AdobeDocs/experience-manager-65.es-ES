@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68cd1c13fff94ac485865e50bc955548cd285b14
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '1180'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de la je
 >* La función de HTML a PDF requiere ciertas fuentes en el directorio de fuentes del sistema. En sistemas Linux, Solaris y AIX, el directorio de fuentes del sistema debe contener la fuente Courier. En sistemas Windows, el directorio de fuentes del sistema debe contener Times New Roman.
    >
    > 
-* Las siguientes son fuentes japonesas predeterminadas en AEM Forms en Linux. Al menos >una de estas fuentes debería estar disponible para convertir fuentes japonesas en el sistema >.
+* (Solo sistema basado en UNIX) Una de las siguientes fuentes japonesas debería estar disponible en el servidor de AEM Forms para convertir una página web con fuente japonesa en un documento PDF.
    >
    >   
    * &quot;Sazanami Gothic&quot;
