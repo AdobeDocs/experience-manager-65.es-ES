@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '7153'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,8 @@ Un administrador puede configurar una carpeta de red, conocida como carpeta vigi
 
 Puede utilizar uno de los siguientes métodos para crear una carpeta vigilada en el sistema de archivos:
 
-* Mientras configura las propiedades de un nodo de configuración Carpeta vigilada, escriba la ruta completa del directorio principal en la propiedad folderPath y anexe el nombre de la Carpeta vigilada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`La `MyWatchedFolder`carpeta no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
+* Mientras configura las propiedades de un nodo de configuración Carpeta vigilada, escriba la ruta completa del directorio principal en la propiedad folderPath y anexe el nombre de la Carpeta vigilada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`
+La `MyWatchedFolder`carpeta no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un extremo de Carpeta vigilada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte Propiedades [de carpeta vigilada](#watchedfolderproperties).
 
@@ -214,7 +218,7 @@ Puede crear variables múltiples para métodos de procesamiento de archivos basa
 
 Puede inicio de un flujo de trabajo, un servicio o una secuencia de comandos para procesar los documentos colocados en una carpeta de inspección.
 
-### Uso de un servicio para procesar archivos de una carpeta vigilada {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Uso de un servicio para procesar archivos de una carpeta vigilada   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Un servicio es una implementación personalizada de la `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interfaz. Está registrado con OSGi junto con algunas propiedades personalizadas. Las propiedades personalizadas de la implementación la hacen única y ayudan a identificar la implementación.
 
