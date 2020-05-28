@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: 2d0e0325d1fce2587e4766bf2f60fc5d4accf45b
+source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+workflow-type: tm+mt
+source-wordcount: '3365'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2d0e0325d1fce2587e4766bf2f60fc5d4accf45b
 
 >[!NOTE]
 >
->Antes de profundizar en los conceptos básicos de AEM, Adobe recomienda completar el tutorial de WKND en el documento [Introducción al desarrollo de sitios](/help/sites-developing/getting-started.md) AEM para obtener una descripción general del proceso de desarrollo de AEM e introducción a los conceptos básicos.
+>Antes de profundizar en los conceptos básicos de AEM, Adobe recomienda completar el tutorial de WKND en el documento [Introducción al desarrollo de sitios](/help/sites-developing/getting-started.md) de AEM para obtener una descripción general del proceso de desarrollo de AEM e introducir los conceptos básicos.
 
 ## Requisitos previos para el desarrollo en AEM {#prerequisites-for-developing-on-aem}
 
@@ -43,7 +46,7 @@ El estándar de Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/
 
 Adobe Research (Suiza) AG se encarga de llevar a cabo la especificación.
 
-Paquete [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr. &amp;ast; se utiliza para el acceso directo y la manipulación del contenido del repositorio.
+Paquete [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr.&amp;ast; se utiliza para el acceso directo y la manipulación del contenido del repositorio.
 
 ## Experience Server (CRX) y Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -55,11 +58,11 @@ Experience Server proporciona los servicios de experiencia en los que AEM está 
 
 ### Introducción a Sling {#introduction-to-sling}
 
-AEM se crea con [Sling](https://sling.apache.org/site/index.html), un marco de trabajo de aplicaciones web basado en los principios REST que facilita el desarrollo de aplicaciones orientadas al contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit, o en el caso de AEM, el repositorio de contenido CRX, como su almacén de datos. Sling ha sido aportado a la Apache Software Foundation - más información se puede encontrar en Apache.
+AEM se ha creado con [Sling](https://sling.apache.org/site/index.html), un marco de Aplicación web basado en los principios REST que facilita el desarrollo de aplicaciones orientadas al contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit, o en el caso de AEM, el repositorio de contenido CRX, como su almacén de datos. Sling ha sido aportado a la Apache Software Foundation - más información se puede encontrar en Apache.
 
 Con Sling, el tipo de contenido que se va a procesar no es la primera consideración de procesamiento. En su lugar, la principal consideración es si la dirección URL se resuelve en un objeto de contenido para el que se puede encontrar una secuencia de comandos para realizar la representación. Esto proporciona una excelente compatibilidad a los autores de contenido web para crear páginas que se adapten fácilmente a sus necesidades.
 
-Las ventajas de esta flexibilidad son evidentes en aplicaciones con una amplia gama de elementos de contenido diferentes o cuando se necesitan páginas que se puedan personalizar fácilmente. En particular, al implementar un sistema de administración de contenido web como WCM en la solución AEM.
+Las ventajas de esta flexibilidad son evidentes en aplicaciones con una amplia gama de elementos de contenido diferentes o cuando se necesitan páginas que se puedan personalizar fácilmente. En concreto, al implementar un sistema de Gestor de contenido web como WCM en la solución AEM.
 
 Consulte [Discover Sling en 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conocer los primeros pasos para el desarrollo con Sling.
 
@@ -75,7 +78,7 @@ En el diagrama siguiente se explican todos los parámetros de solicitud ocultos 
 
 Sling se centra en el *contenido*. Esto significa que el procesamiento se centra en el contenido, ya que cada solicitud (HTTP) se asigna al contenido en forma de recurso JCR (un nodo de repositorio):
 
-* el primer destino es el recurso (nodo JCR) que contiene el contenido
+* el primer destinatario es el recurso (nodo JCR) que contiene el contenido
 * en segundo lugar, la representación, o secuencia de comandos, se encuentra desde las propiedades del recurso en combinación con determinadas partes de la solicitud (por ejemplo, selectores o la extensión)
 
 ### RESTful Sling {#restful-sling}
@@ -85,7 +88,7 @@ Debido a la filosofía centrada en el contenido, Sling implementa un servidor or
 * muy RESTful, no sólo en la superficie; los recursos y las representaciones se modelan correctamente dentro del servidor
 * elimina uno o más modelos de datos
 
-   * anteriormente se necesitaban los siguientes elementos: estructura URL, objetos de negocio, esquema de base de datos;
+   * anteriormente se necesitaban los siguientes elementos: estructura URL, objetos comerciales, esquema de base de datos;
    * ahora se reduce a: URL = recurso = estructura JCR
 
 ### Descomposición de URL {#url-decomposition}
@@ -129,14 +132,14 @@ En la figura siguiente se ilustra el mecanismo utilizado, que se analizará con 
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
-Con Sling, se especifica qué secuencia de comandos procesa una entidad determinada (estableciendo la `sling:resourceType` propiedad en el nodo JCR). Este mecanismo ofrece más libertad que una en la que la secuencia de comandos accede a las entidades de datos (como haría una instrucción SQL en una secuencia de comandos PHP) ya que un recurso puede tener varias representaciones.
+Con Sling, se especifica qué secuencia de comandos procesa una entidad determinada (estableciendo la `sling:resourceType` propiedad en el nodo JCR). Este mecanismo oferta más libertad que uno en el que la secuencia de comandos accede a las entidades de datos (como haría una instrucción SQL en una secuencia de comandos PHP) ya que un recurso puede tener varias representaciones.
 
 #### Asignación de solicitudes a recursos {#mapping-requests-to-resources}
 
 La solicitud se desglosa y se extrae la información necesaria. Se busca en el repositorio el recurso solicitado (nodo de contenido):
 
-* first Sling comprueba si existe un nodo en la ubicación especificada en la solicitud;p. ej. `../content/corporate/jobs/developer.html`
-* si no se encuentra ningún nodo, se interrumpe la extensión y se repite la búsqueda;p. ej. `../content/corporate/jobs/developer`
+* first Sling comprueba si existe un nodo en la ubicación especificada en la solicitud; p. ej. `../content/corporate/jobs/developer.html`
+* si no se encuentra ningún nodo, se interrumpe la extensión y se repite la búsqueda; p. ej. `../content/corporate/jobs/developer`
 * si no se encuentra ningún nodo, Sling devolverá el código http 404 (no encontrado).
 
 Sling también permite que otros elementos que no sean nodos JCR sean recursos, pero se trata de una característica avanzada.
@@ -164,7 +167,7 @@ Otros puntos a tener en cuenta son:
    * `.java`:: Compilador de servlet Java (ejecución en el servidor)
    * `.jst`:: Plantillas de JavaScript (ejecución del cliente)
 
-La lista de motores de secuencias de comandos admitidos por la instancia de AEM indicada se muestra en la Consola de administración de Félix ( `http://<host>:<port>/system/console/slingscripting`).
+La lista de los motores de secuencias de comandos admitidos por la instancia de AEM indicada se muestra en la Consola de administración de Félix ( `http://<host>:<port>/system/console/slingscripting`).
 
 Además, Apache Sling admite la integración con otros motores de secuencias de comandos populares (por ejemplo, Groovy, JRuby, Freemarker) y proporciona una manera de integrar nuevos motores de secuencias de comandos.
 
@@ -204,7 +207,7 @@ Si se utiliza el ejemplo anterior, si el `sling:resourceType` es `hr/jobs` enton
 
 * Si no se encuentra ninguna secuencia de comandos, se utilizará la secuencia de comandos predeterminada.
 
-   Actualmente, la representación predeterminada se admite como texto sin formato (.txt), HTML (.html) y JSON (.json), todos los cuales mostrarán las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res, o solicitudes sin extensión de solicitud, es bloquear el recurso (cuando sea posible).
+   La representación predeterminada se admite actualmente como texto sin formato (.txt), HTML (.html) y JSON (.json), todos los cuales lista las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res, o solicitudes sin extensión de solicitud, es bloquear el recurso (cuando sea posible).
 * Para la gestión de errores http (códigos 403 o 404) Sling buscará una secuencia de comandos en:
 
    * la ubicación /apps/sling/servlet/errorhandler para scripts [personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -212,9 +215,10 @@ Si se utiliza el ejemplo anterior, si el `sling:resourceType` es `hr/jobs` enton
 
 Si se aplican varias secuencias de comandos para una solicitud determinada, se selecciona la secuencia de comandos con la mejor coincidencia. Cuanto más específica sea una coincidencia, mejor será; en otras palabras, cuanto más selector coincida mejor, independientemente de la coincidencia de la extensión de solicitud o el nombre del método.
 
-Por ejemplo, considere una solicitud para acceder al recurso`/content/corporate/jobs/developer.print.a4.html`de tipo`sling:resourceType="hr/jobs"`
+Por ejemplo, considere una solicitud para acceder al recurso`/content/corporate/jobs/developer.print.a4.html`de tipo
+`sling:resourceType="hr/jobs"`
 
-Supongamos que tenemos la siguiente lista de secuencias de comandos en la ubicación correcta:
+Supongamos que tenemos la siguiente lista de scripts en la ubicación correcta:
 
 1. `GET.esp`
 1. `jobs.esp`
@@ -227,7 +231,7 @@ Supongamos que tenemos la siguiente lista de secuencias de comandos en la ubicac
 
 Entonces el orden de preferencia sería (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-Además de los tipos de recursos (definidos principalmente por la `sling:resourceType` propiedad) también está el supertipo de recurso. Esto suele indicarse en la `sling:resourceSuperType` propiedad. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos donde el tipo de recurso predeterminado `sling/servlet/default` (utilizado por los servlets predeterminados) es la raíz.
+Además de los tipos de recursos (definidos principalmente por la `sling:resourceType` propiedad), también está el supertipo de recurso. Esto suele indicarse en la `sling:resourceSuperType` propiedad. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos donde el tipo de recurso predeterminado `sling/servlet/default` (utilizado por los servlets predeterminados) es la raíz.
 
 El supertipo de recurso de un recurso se puede definir de dos maneras:
 
@@ -256,7 +260,14 @@ Por ejemplo:
 
 
 
-El tipo de jerarquía de /x es [ c, b, a, &lt;default>] mientras que para /y la jerarquía es [ c, a,
+La jerarquía de tipos de:
+
+* `/x`
+   *  es`[ c, b, a, <default>]`
+* while for `/y`
+   * la jerarquía es `[ c, a, <default>]`
+
+Esto se debe a que `/y` tiene la `sling:resourceSuperType` propiedad, mientras que `/x` no lo tiene y, por lo tanto, su supertipo se toma de su tipo de recurso.
 
 #### No se puede llamar directamente a los scripts de Sling {#sling-scripts-cannot-be-called-directly}
 
@@ -289,14 +300,14 @@ Para ello, puede utilizar el comando sling:include(&quot;/&lt;path>/&lt;resource
 
 ## OSGI {#osgi}
 
-OSGi define una arquitectura para desarrollar e implementar aplicaciones y bibliotecas modulares (también se conoce como Sistema de módulos dinámicos para Java). Los contenedores OSGi le permiten dividir la aplicación en módulos individuales (son archivos jar con información meta adicional y llamados paquetes en terminología OSGi) y administrar las interdependencias entre ellos con:
+OSGi define una arquitectura para desarrollar e implementar aplicaciones y bibliotecas modulares (también se conoce como Sistema de módulos dinámicos para Java). Los contenedores OSGi permiten dividir la aplicación en módulos individuales (son archivos jar con información meta adicional y llamados paquetes en terminología OSGi) y administrar las interdependencias entre ellos con:
 
-* servicios implementados dentro del contenedor
-* un contrato entre el contenedor y su aplicación
+* servicios implementados en el contenedor
+* un contrato entre el contenedor y su solicitud
 
 Estos servicios y contratos proporcionan una arquitectura que permite a los elementos individuales descubrir entre sí dinámicamente para colaboración.
 
-A continuación, un marco OSGi le ofrece carga/descarga dinámica, configuración y control de estos paquetes, sin necesidad de reiniciar.
+Una estructura OSGi le oferta la carga/descarga dinámica, la configuración y el control de estos paquetes, sin necesidad de reiniciar.
 
 >[!NOTE]
 >
@@ -304,12 +315,12 @@ A continuación, un marco OSGi le ofrece carga/descarga dinámica, configuració
 >
 >En particular, su página de Educación Básica contiene una colección de presentaciones y tutoriales.
 
-Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. Sling, y por lo tanto CQ5, utiliza la implementación [Apache Felix](https://felix.apache.org/) de OSGI (Open Services Gateway Initiative) y se basa en las especificaciones de OSGi Service Platform Release 4 versión 4.2. Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
+Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. Sling, y por lo tanto CQ5, utiliza la implementación [Apache Felix](https://felix.apache.org/) de OSGI (Open Services Gateway Initiative) y se basa en las especificaciones de la versión 4.2 de OSGi Service Platform. Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
 
 Esto le permite realizar las siguientes acciones en cualquiera de los paquetes de la instalación:
 
 * instalar
-* start
+* inicio
 * stop
 * actualizar
 * desinstalar
@@ -318,7 +329,7 @@ Esto le permite realizar las siguientes acciones en cualquiera de los paquetes d
 
 Consulte [la Consola](/help/sites-deploying/web-console.md)web, Configuración [](/help/sites-deploying/configuring-osgi.md) OSGI y Configuración [](/help/sites-deploying/osgi-configuration-settings.md) OSGi para obtener más información.
 
-## Objetos de desarrollo en el entorno de AEM {#development-objects-in-the-aem-environment}
+## Objetos de desarrollo en el Entorno AEM {#development-objects-in-the-aem-environment}
 
 Los siguientes son de interés para el desarrollo:
 
@@ -391,7 +402,7 @@ Con pageManager como objeto de administrador de páginas y myResource como objet
 
 ## Estructura dentro del repositorio {#structure-within-the-repository}
 
-La siguiente lista ofrece una visión general de la estructura que verá dentro del repositorio.
+La siguiente lista proporciona una visión general de la estructura que verá dentro del repositorio.
 
 >[!CAUTION]
 >
@@ -445,9 +456,9 @@ Consulte la documentación de la herramienta [](/help/sites-developing/ht-vlttoo
 
 ## Flujos de trabajo {#workflows}
 
-El contenido suele estar sujeto a procesos organizativos, incluidos pasos como aprobación y aprobación por parte de varios participantes. Estos procesos pueden representarse como flujos de trabajo, [definidos y desarrollados dentro de AEM](/help/sites-developing/workflows-models.md), y luego aplicarse a las páginas [de contenido](/help/sites-administering/workflows.md) adecuadas o a los recursos [](/help/assets/assets-workflow.md) digitales según sea necesario.
+El contenido suele estar sujeto a procesos organizativos, incluidos pasos como aprobación y aprobación por parte de varios participantes. Estos procesos se pueden representar como flujos de trabajo, [definir y desarrollar dentro de AEM](/help/sites-developing/workflows-models.md)y, a continuación, aplicarse a las páginas [de contenido](/help/sites-administering/workflows.md) adecuadas o a los recursos [](/help/assets/assets-workflow.md) digitales según sea necesario.
 
-El motor de flujo de trabajo se utiliza para administrar la implementación de los flujos de trabajo y su aplicación posterior al contenido.
+El Motor de flujos de trabajo se utiliza para administrar la implementación de sus flujos de trabajo y su aplicación posterior al contenido.
 
 ## Administración de multisitio {#multi-site-management}
 
