@@ -9,9 +9,9 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: 7cc206dc95e6975f61ea9343dea67fa2681a9ae1
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '868'
 ht-degree: 20%
 
 ---
@@ -125,7 +125,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y Flujos de trabaj
    <td>Compatible</td>
   </tr>
   <tr>
-   <td>Firma de garabatos (obsoleta)</td>
+   <td>Firma a mano alzada</td>
    <td>Compatible</td>
    <td>Compatible<br /> </td>
   </tr>
