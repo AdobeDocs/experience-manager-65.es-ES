@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: da233b2d58e13bf86c88115a78f2fecf1be12ba9
+source-git-commit: 4db76ca1de97d8353ac88a6e66e14f41fb0b87db
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -135,7 +135,7 @@ En versiones anteriores, las carpetas de la biblioteca de cliente se encontraban
 
 >[!NOTE]
 >
->Los recursos estáticos situados debajo de la carpeta de la biblioteca del cliente deben estar en una carpeta denominada *resources*. Si no tiene los recursos estáticos, como imágenes, en los *recursos* de la carpeta, no se puede hacer referencia a ellos en una instancia de publicación. Este es un ejemplo: https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Los recursos estáticos situados debajo de la carpeta de la biblioteca del cliente deben estar en una carpeta denominada *resources*. Si no tiene los recursos estáticos, como imágenes, en los *recursos* de la carpeta, no se puede hacer referencia a ellos en una instancia de publicación. Este es un ejemplo: https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
