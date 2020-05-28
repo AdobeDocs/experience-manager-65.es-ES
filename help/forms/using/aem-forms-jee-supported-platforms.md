@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6b4a32b320d53c41ebf9615895dbf17ab722f19
+source-git-commit: 18345e6519169cfceb01ab56821b596e284f3303
+workflow-type: tm+mt
+source-wordcount: '3202'
+ht-degree: 0%
 
 ---
 
@@ -114,10 +117,8 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 
 >[!NOTE]
 >
->* AEM Forms en JEE solo admite JVM de 64 bits en entornos de producción.
 >* Se recomienda rastrear los boletines de seguridad del proveedor de Java para garantizar la seguridad de los entornos de producción e instalar las últimas actualizaciones de Java.
->
-
+>* AEM Forms en JEE solo admite JVM de 64 bits en entornos de producción.
 
 
 ### Bases de datos y persistencia de CRX {#databases-and-crx-persistence}
@@ -491,7 +492,7 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
  </tbody>
 </table>
 
-Para obtener información adicional, consulte:
+Para obtener más información, consulte:
 
 * [Requisitos del sistema para una implementación de AEM Forms en JEE de un solo servidor](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
 * [Requisitos del sistema para una implementación agrupada de AEM Forms en JEE
@@ -598,7 +599,7 @@ Para obtener información adicional, consulte:
   </tr>
   <tr>
    <td>Google Chrome y Firefox en MAC OS X</td>
-   <td>A: Admitido<br /><br /> </td>
+   <td>A: Admitido<br /> <br /> </td>
    <td>Todas las actualizaciones</td>
   </tr>
   <tr>
@@ -607,7 +608,7 @@ Para obtener información adicional, consulte:
    <td>Todas las actualizaciones</td>
   </tr>
   <tr>
-   <td>Apple Safari 12.x<br /><br /> </td>
+   <td>Apple Safari 12.x<br /> <br /> </td>
    <td>A: Admitido</td>
    <td>Todas las actualizaciones</td>
   </tr>
@@ -711,7 +712,7 @@ Adobe admite parches urgentes o recomendados emitidos por proveedores de tercero
 
 En algunos casos, Adobe no admite actualizaciones de terceros que cambien la funcionalidad principal y, por tanto, no admite compatibilidad total con versiones anteriores. Para obtener más información sobre las actualizaciones admitidas, consulte Definiciones [de parches](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) admitidas para productos de proveedores específicos y los tipos de parches que admite Adobe.
 
-En circunstancias ajenas al control de Adobe, los parches de terceros que reclaman compatibilidad con versiones anteriores pueden tener un impacto negativo en los productos o entornos de los clientes de Adobe. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe trabajará con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea a través de programas de asistencia de Adobe normales o de terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que será compatible con Adobe funcione tal como lo ha documentado el proveedor o con AEM Forms en JEE.
+En circunstancias ajenas al control de Adobe, los parches de terceros que reclaman compatibilidad con versiones anteriores pueden tener un impacto negativo en los productos o entornos de los clientes de Adobe. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe trabajará con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea a través de programas de asistencia de Adobe normales o de terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que sea compatible con Adobe funcione tal como lo ha documentado el proveedor o con AEM Forms en JEE.
 
 Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros admitidas por una versión de AEM Forms en JEE y sus definiciones de parches admitidas en cualquier momento.
 
