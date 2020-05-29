@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 44dbabeeea4e4e8d17cc69a2d8ea791c98be2bd2
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 6%
 
 ---
 
@@ -63,8 +66,12 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 **Para configurar AEM**:
 
+>[!NOTE]
+>
+>Estos pasos sólo son necesarios si se requiere una mayor personalización de los códecs.
+
 1. Open [!UICONTROL CRXDE Lite] in your web browser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Seleccione el `/libs/settings/dam/video/format_aac/jcr:content` nodo y asegúrese de que las propiedades del nodo son las siguientes:
+2. Seleccione el `/libs/settings/dam/video/format_aac/jcr:content` nodo y asegúrese de que las propiedades del nodo son las siguientes:
 
    * audioCodec:
 
@@ -78,13 +85,13 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
        -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
       ```
 
-1. Para personalizar la configuración, cree una superposición en el `/apps/settings/` nodo y mueva la misma estructura debajo `/conf/global/settings/` del nodo. No se puede editar en el `/libs` nodo. Por ejemplo, para superponer una ruta `/libs/settings/dam/video/fullhd-bp`, créela en `/conf/global/settings/dam/video/fullhd-bp`.
+3. Para personalizar la configuración, cree una superposición en el `/apps/settings/` nodo y mueva la misma estructura debajo `/conf/global/settings/` del nodo. No se puede editar en el `/libs` nodo. Por ejemplo, para superponer una ruta `/libs/settings/dam/video/fullhd-bp`, créela en `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
    >Superponga y edite todo el nodo de perfil y no sólo la propiedad que necesita modificación. Estos recursos no se resuelven mediante SlingResourceMerger.
 
-1. If you changed either of the properties, click **[!UICONTROL Save All]**.
+4. If you changed either of the properties, click **[!UICONTROL Save All]**.
 
 >[!NOTE]
 >
