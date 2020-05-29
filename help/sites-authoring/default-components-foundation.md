@@ -13,7 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
+workflow-type: tm+mt
+source-wordcount: '7287'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
 
 >[!CAUTION]
 >
->Most Foundation Components are now deprecated with AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further informtaion.
+>Most Foundation Components are now deprecated with AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further information.
 >
 >Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) más modernos y ampliables en los proyectos de AEM. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
@@ -73,7 +76,7 @@ Es posible definir un vínculo con título y descripción.
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de imagen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) en su lugar.
 
 El componente de base de la imagen adaptable genera imágenes que se ajustan al tamaño de la ventana en la que se abre la página web. Para utilizar el componente, escoja un medio de imagen del sistema de archivos o DAM. Cuando se abre la página web, el navegador web descarga una copia de la imagen que ha cambiado de tamaño para ajustarse a la ventana actual.
 
@@ -279,7 +282,7 @@ El componente de integración de aplicaciones externo (**Externo**) permite incr
 
 * **Externo**
 
-   * **Aplicación** de destino Especifique la URL de la aplicación web que se integrará; por ejemplo:
+   * **Aplicación** Destinatario Especifique la URL de la aplicación web que se integrará; por ejemplo:
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
@@ -345,7 +348,7 @@ El componente Flash permite cargar una película Flash. Puede arrastrar un recur
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de imagen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) en su lugar.
 
 El componente de imagen muestra una imagen y un texto de acompañamiento en función de los parámetros especificados.
 
@@ -467,7 +470,7 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda mediante notación de predicado de QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
@@ -501,7 +504,7 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
 En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede mostrar una lista de páginas secundarias, con el diseño controlado mediante las definiciones CSS personalizadas del diseño del sitio.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_lista_use](assets/dc_list_use.png)
 
 ### Inicio de sesión {#login}
 
@@ -602,7 +605,7 @@ El componente Búsqueda añade la capacidad de búsqueda a la página.
 
 Puede configurar:
 
-* Búsqueda
+* Búsqueda  
 
    * **Tipos de nodo**
 
@@ -784,7 +787,7 @@ Además del modo de edición de texto enriquecido basado en el cuadro de diálog
 ### Texto e imagen {#text-image}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar el componente principal de [imagen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) y de [texto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar el componente principal de [imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) y de [texto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) en su lugar.
 
 El componente Texto e imagen añade un bloque de texto y una imagen. También se puede añadir y editar texto e imágenes por separado. Consulte los componentes de [Texto](#text) e [imagen](#image) para obtener más información.
 
@@ -814,7 +817,7 @@ Puede configurar:
 
    * **Vincular a**
 
-      Especifique una ruta de destino.
+      Especifique una ruta de destinatario.
 
    * **Descripción**
 
@@ -856,7 +859,7 @@ En el siguiente ejemplo se muestra un componente **Título**; el diseño se dete
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### El vídeo {#video}
+### Vídeo {#video}
 
 >[!CAUTION]
 Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
@@ -1149,7 +1152,7 @@ Se incluye una selección de tipos de acciones en la instalación AEM estándar:
 
          * **El posible cliente se agregará a la lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posible cliente requerida.
       * **Crear y actualizar cuenta**
 
          * **Grupo inicial**
@@ -1211,7 +1214,7 @@ Se incluye una selección de tipos de acciones en la instalación AEM estándar:
 
          * **El posible cliente se eliminará de esta lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posible cliente requerida.
 
 
 
