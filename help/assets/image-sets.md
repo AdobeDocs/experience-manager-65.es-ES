@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
+source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+workflow-type: tm+mt
+source-wordcount: '2078'
+ht-degree: 19%
 
 ---
 
@@ -48,7 +51,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
    Para crear un conjunto de imágenes en Recursos, toque o haga clic en **[!UICONTROL Crear > Conjuntos]** de imágenes. A continuación, agregue imágenes y haga clic en **[!UICONTROL Guardar]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
    >Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
@@ -70,7 +73,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
 1. [Publicar conjuntos de imágenes.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   Al publicar un conjunto de imágenes, se activa la URL y la cadena Incrustar. Además, debe [publicar cualquier ajuste preestablecido](/help/assets/managing-viewer-presets.md) de visor personalizado que haya creado. Los ajustes preestablecidos de visor predeterminados ya están publicados.
+   Al publicar un conjunto de imágenes, se activa la URL y el código incrustado. Además, debe [publicar cualquier ajuste preestablecido](/help/assets/managing-viewer-presets.md) de visor personalizado que haya creado. Los ajustes preestablecidos de visor predeterminados ya están publicados.
 
 1. [Vincule las direcciones URL a la Aplicación web](/help/assets/linking-urls-to-yourwebapplication.md) o [incruste el visor](/help/assets/embed-code.md)de vídeo o de imágenes.
 
