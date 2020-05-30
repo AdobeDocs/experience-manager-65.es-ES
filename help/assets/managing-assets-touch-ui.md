@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
 workflow-type: tm+mt
-source-wordcount: '9298'
+source-wordcount: '9304'
 ht-degree: 4%
 
 ---
@@ -301,11 +301,11 @@ Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para g
 
 ### Cargas de flujo continuo {#streamed-uploads}
 
-Si carga muchos recursos en [!DNL Experience Manager], las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede provocar que se agote el tiempo de espera de alguna tarea de carga. [!DNL Experience Manager Assets] admite la carga de recursos en flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarla en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está habilitada de forma predeterminada en [!DNL Assets].
+Si carga muchos recursos en Adobe Experience Manager, las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede hacer que se agote el tiempo de espera de alguna tarea de carga. [!DNL Experience Manager Assets] admite la carga de recursos en flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarla en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está habilitada de forma predeterminada en [!DNL Assets].
 
 >[!NOTE]
 >
->La carga de flujo está deshabilitada para [!DNL Experience Manager] ejecutarse en el servidor JEE con versión servlet-api inferior a 3.1.
+>La carga de flujo está deshabilitada para Adobe Experience Manager que se ejecuta en el servidor JEE con versión servlet-api inferior a 3.1.
 
 ### Extraer archivo ZIP que contiene recursos {#extractzip}
 
@@ -573,7 +573,7 @@ Consulte [Descargar recursos de Experience Manager](/help/assets/download-assets
 >
 >Para obtener más información específica sobre Dynamic Media, consulte [Publicación de recursos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
-1. Navegue a la ubicación de los recursos o carpetas que desee publicar
+1. Vaya a la ubicación de los recursos o carpetas que desee publicar.
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Si el recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que no se han publicado o que se han modificado desde la última vez que se publicaron o no. Elija las referencias que desee publicar.
