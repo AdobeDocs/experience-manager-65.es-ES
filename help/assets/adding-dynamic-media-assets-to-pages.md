@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 876589d26f17dc088531c3f34deea0fab4c7726a
+source-git-commit: b6a7648699bc8e8e041749fb03998f86a27292ce
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3129'
 ht-degree: 32%
 
 ---
@@ -29,7 +29,7 @@ Puede añadir recursos de Dynamic Media directamente a la página si utiliza AEM
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-Añadir un componente Medios dinámicos, Medios interactivos, Medios panorámicas o Medios de vídeo 360 a una página es lo mismo que agregar un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
+Añadir un componente de medios 3D, medios dinámicos, medios interactivos, medios panorámicos, vídeos de recorte inteligente o medios de vídeo 360 a una página es lo mismo que agregar un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
 1. En el panel del lado izquierdo de la página (es posible que necesite alternar la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]** .
@@ -40,10 +40,6 @@ Añadir un componente Medios dinámicos, Medios interactivos, Medios panorámica
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Arrastre un componente de **[!UICONTROL Dynamic Media]** que desee utilizar y suéltelo en la ubicación deseada de la página.
-
-   En el ejemplo siguiente, se utiliza el componente **[!UICONTROL Vídeo 360 Medios]** .
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Sitúe el puntero del ratón directamente sobre el componente. Cuando el componente esté rodeado por un cuadro azul, toque una vez para mostrar la barra de herramientas del componente. Toque el icono **[!UICONTROL Configuración (llave)]** .
 
@@ -57,7 +53,7 @@ Añadir un componente Medios dinámicos, Medios interactivos, Medios panorámica
 
    Componente Dynamic Media Video 360 Media.
 
-1. Cuando haya terminado, toque la marca de verificación para guardar los cambios cerca de la esquina superior derecha del cuadro de diálogo.
+1. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, toque la marca de verificación para guardar los cambios.
 
 ### Activación de componentes de Dynamic Media {#enabling-dynamic-media-components}
 
