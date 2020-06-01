@@ -4,9 +4,9 @@ description: Aprenda a previsualización de recursos 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '564'
 ht-degree: 15%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager admite la carga, el envío y la previsualización inter
 
 El visor interactivo 3D está disponible en la página de información de recursos de AEM. El visor incluye, entre otras cosas, una colección de controles de cámara interactivos que le permiten girar, ampliar o reducir y panoramizar el recurso 3D.
 
-Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/assets-3d.md).
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
 ## Formatos admitidos para la previsualización 3D en AEM {#supported-3d-previewing-assets}
 
