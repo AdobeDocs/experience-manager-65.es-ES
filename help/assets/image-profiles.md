@@ -1,6 +1,6 @@
 ---
 title: Perfiles de imagen de Dynamic Media
-description: Cree perfiles de imagen que contengan ajustes para máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
+description: Cree perfiles de imagen que contengan la configuración de máscara de enfoque, recorte inteligente o muestra inteligente, o ambas, y aplique el perfil a una carpeta de recursos de imagen.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 3cc0df3cdcb44250e26a31ac3ce1ad86064938d6
+source-git-commit: e78b3701e57b1954f03591c38b72e3dd33e8ef46
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2674'
 ht-degree: 14%
 
 ---
@@ -26,11 +26,11 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 ## Crop options {#crop-options}
 
-Tiene dos opciones de recorte de imágenes entre las que elegir y una opción para automatizar la creación de muestras de color e imagen.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->Tenga en cuenta que cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
+Tenga en cuenta que cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
+
+Tiene dos opciones de recorte de imágenes de las que puede elegir. También tiene una opción para automatizar la creación de muestras de color e imagen.
 
 <table>
  <tbody>
@@ -42,14 +42,14 @@ Tiene dos opciones de recorte de imágenes entre las que elegir y una opción pa
   <tr>
    <td>Recorte de píxeles</td>
    <td>Recorte masivo de imágenes solo en función de las dimensiones.</td>
-   <td><p>Para utilizar esta opción, seleccione Recorte de <strong>píxeles</strong> en la lista desplegable Opciones de recorte.</p> <p>Para recortar de los lados de una imagen, introduzca el número de píxeles que recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen.</p> <p>El recorte de píxeles de un Perfil de imagen se representa de la siguiente manera:<br /> </p>
+   <td><p>Para utilizar esta opción, seleccione Recorte de <strong>píxeles</strong> en la lista desplegable Opciones de recorte.</p> <p>Para recortar de los lados de una imagen, introduzca el número de píxeles que recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen.</p> <p>El recorte de píxeles de un Perfil de imagen se representa de la siguiente manera:<br /> </p>
     <ul>
      <li>Los valores son Superior, Inferior, Izquierda y Derecha.</li>
      <li>La parte superior izquierda se considera 0,0 y el recorte de píxeles se calcula a partir de ahí.</li>
      <li>Punto inicial de recorte: La izquierda es X y la superior es Y</li>
      <li>Cálculo horizontal: dimensión de píxeles horizontal de la imagen original menos Izquierda y, a continuación, menos Derecha.</li>
      <li>Cálculo vertical: altura vertical de píxel menos Superior y, a continuación, menos Inferior.</li>
-    </ul> <p>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Los valores se utilizan: Top=250; Bottom=500; Left=300; Right=700.</p> <p>Desde la parte superior izquierda (300.250), recorte utilizando el espacio de relleno de (4000-300-700, 3000-250-500 o 3000.2250).</p> </td>
+    </ul> <p>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Los valores se utilizan: Superior=250, Inferior=500, Izquierda=300, Derecha=700.</p> <p>Desde la parte superior izquierda (300.250), recorte utilizando el espacio de relleno de (4000-300-700, 3000-250-500 o 3000.2250).</p> </td>
   </tr>
   <tr>
    <td>Recorte inteligente</td>
@@ -209,7 +209,7 @@ Consulte también [Edición del recorte inteligente o muestra inteligente de var
 
 1. Toque la carpeta para abrir su contenido.
 1. Toque la imagen cuyo recorte inteligente o muestra inteligente desee ajustar.
-1. En la barra de herramientas, toque Recorte **[!UICONTROL inteligente]**.
+1. En la barra de herramientas, toque **[!UICONTROL Recorte]** inteligente.
 
 1. Realice una de las acciones siguientes:
 
@@ -288,6 +288,6 @@ Puede quitar un perfil de imagen de una carpeta desde el menú **[!UICONTROL Her
 1. Toque el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de imagen.
 1. En la carpeta, toque la marca de verificación para seleccionarla y, a continuación, **[!UICONTROL Propiedades]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
-1. En el menú desplegable **[!UICONTROL Nombre del perfil]**, seleccione **[!UICONTROL Ninguno]** y, a continuación, pulse **[!UICONTROL Guardar y cerrar]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
 
    Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
