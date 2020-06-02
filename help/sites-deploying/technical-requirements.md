@@ -11,7 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+workflow-type: tm+mt
+source-wordcount: '3118'
+ht-degree: 1%
 
 ---
 
@@ -100,7 +103,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
    <td>Nivel de asistencia<br /> </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 12 JDK `\[1]`</td>
+   <td>Oracle Java SE 12 JDK [1]</td>
    <td>Z: No admitido </td>
   </tr>
   <tr>
@@ -108,23 +111,23 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
    <td>A: Admitido</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 10 JDK `\[1]`</td>
+   <td>Oracle Java SE 10 JDK [1]</td>
    <td>Z: No admitido </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 9 JDK `\[1]`</td>
+   <td>Oracle Java SE 9 JDK [1]</td>
    <td>Z: No admitido</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK - 64 bits</td>
-   <td>A: `\[3]` admitido<br /> </td>
+   <td>A: Admitido [3]</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - compilación 2.9, JRE 1.8.0 `\[2]`</td>
+   <td>IBM J9 VM - compilación 2.9, JRE 1.8.0 [2]</td>
    <td>A: Admitido</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - compilación 2.8, JRE 1.8.0 `\[2]`</td>
+   <td>IBM J9 VM - compilación 2.8, JRE 1.8.0 [2]</td>
    <td>A: Admitido</td>
   </tr>
  </tbody>
@@ -141,15 +144,15 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 
 | **Plataforma** | **Descripción** | **Nivel de asistencia** |
 |---|---|---|
-| **Sistema de archivos con archivos TAR`\[1]`** | Repositorio | A: Admitido |
-| **Sistema de archivos con Almacén de datos`\[1]`** | Binarios | A: Admitido |
-| Almacenar archivos binarios en archivos TAR en el sistema de archivos `\[1]` | Binarios | Z: No compatible con la producción |
+| **Sistema de archivos con archivos TAR[1 ]** | Repositorio | A: Admitido |
+| **Sistema de archivos con Almacén de datos[1 ]** | Binarios | A: Admitido |
+| Almacenar archivos binarios en archivos TAR en el sistema de archivos [1] | Binarios | Z: No compatible con la producción |
 | Amazon S3 | Binarios | A: Admitido |
 | Almacenamiento de blob de Microsoft Azure | Binarios | A: Admitido |
 | MongoDB Enterprise 4.0 | Repositorio | A: Admitido [2, 3] |
 | MongoDB Enterprise 3.6 | Repositorio | Z: No admitido |
 | MongoDB Enterprise 3.4 | Repositorio | Z: No admitido |
-| IBM DB2 10.5 | Base de datos de repositorio y formularios | R: Compatibilidad restringida `\[4]` |
+| IBM DB2 10.5 | Base de datos de repositorio y formularios | R: Compatibilidad restringida [4] |
 | Base de datos Oracle 12c (12.1.x) | Base de datos de repositorio y formularios | R: Compatibilidad restringida |
 | Microsoft SQL Server 2016 | Base de datos de formularios | A: Admitido |
 | **Apache Lucene (integrado de Quickstart)** | Servicio de búsqueda | A: Admitido |
@@ -196,11 +199,11 @@ Se requiere una versión mínima de la API de servlet para Servlet Servlet 3.1
 |---|---|
 | **Motor Servlet integrado de arranque rápido (Jetty 9.4)** | A: Admitido |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: No admitido |
-| Envío continuo (LibertyProfile) de Application Server para IBM WebSphere con Web Perfil 7.0 e IBM JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `\[2]` |
-| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Soporte restringido para nuevos contratos `\[1]``\[2]` |
-| Apache Tomcat 8.5.x | R: Compatibilidad restringida para nuevos contratos `\[2]` |
+| Envío continuo (LibertyProfile) de Application Server para IBM WebSphere con Web Perfil 7.0 e IBM JRE 1.8 | R: Soporte restringido para nuevos contratos [2] |
+| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Soporte restringido para nuevos contratos [1] [2] |
+| Apache Tomcat 8.5.x | R: Soporte restringido para nuevos contratos [2] |
 | JBoss EAP 7.2.x con el servidor de aplicaciones JBoss | Z: No admitido |
-| JBoss EAP 7.1.4 con el servidor de aplicaciones JBoss | R: Soporte restringido para nuevos contratos `\[1]``\[2]` |
+| JBoss EAP 7.1.4 con el servidor de aplicaciones JBoss | R: Soporte restringido para nuevos contratos [1] [2] |
 | JBoss EAP 7.0.x con el servidor de aplicaciones JBoss | Z: No admitido |
 
 1. Recomendado para implementaciones con AEM Forms.
@@ -212,11 +215,11 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 
 | **Plataforma** | **Nivel de asistencia** |
 |---|---|
-| **Linux, basado en la distribución de Red Hat** | A: Compatible `\[1]``\[3]` |
-| Linux, basado en la distribución Debian incl. Ubuntu | A: Admitido `\[2]` |
+| **Linux, basado en la distribución de Red Hat** | A: Compatible [1] [3] |
+| Linux, basado en la distribución Debian incl. Ubuntu | A: Compatible [2] |
 | Linux, basado en la distribución SUSE | A: Admitido |
-| Microsoft Windows Server 2019 `\[4]` | R: Compatibilidad restringida para nuevos contratos |
-| Microsoft Windows Server 2016 `\[4]` | R: Compatibilidad restringida para nuevos contratos `\[5]` |
+| Microsoft Windows Server 2019 [4] | R: Compatibilidad restringida para nuevos contratos |
+| Microsoft Windows Server 2016 [4] | R: Compatibilidad restringida para nuevos contratos [5] |
 | Microsoft Windows Server 2012 R2 | Z: No admitido |
 | Oracle Solaris 11 | Z: No admitido |
 | IBM AIX 7.2 | Z: No admitido |
@@ -298,7 +301,7 @@ La interfaz de usuario de AEM está optimizada para pantallas más grandes (norm
    <td>A: Admitido</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox última ESR "\[1]"</td>
+   <td>Mozilla Firefox última ESR [1]</td>
    <td>A: Admitido</td>
    <td>A: Admitido</td>
   </tr>
@@ -314,7 +317,7 @@ La interfaz de usuario de AEM está optimizada para pantallas más grandes (norm
   </tr>
   <tr>
    <td>Apple Safari en iOS 12.x</td>
-   <td>A: `\[2]` admitido</td>
+   <td>A: Admitido [2]</td>
    <td>Z: No admitido</td>
   </tr>
   <tr>
