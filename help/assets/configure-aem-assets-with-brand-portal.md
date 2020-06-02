@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cdcea49a25807e125ea15e7132ac9f188d3525bc
+source-git-commit: 9a27aabef07d5b5104c08c414138fbb22e284a68
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 15%
@@ -24,7 +24,7 @@ Recursos Adobe Experience Manager (AEM) se configura con Brand Portal a través 
 
 >[!NOTE]
 >
->La configuración de AEM Assets con Brand Portal mediante Adobe I/O es compatible con AEM 6.5.4.0 y versiones posteriores.
+>La configuración de AEM Assets con Brand Portal mediante Adobe Developer Console es compatible con AEM 6.5.4.0 y versiones posteriores.
 >
 >Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un Token de acceso IMS para la autorización.
 >
@@ -35,13 +35,13 @@ Recursos Adobe Experience Manager (AEM) se configura con Brand Portal a través 
 >
 >***Solo para clientes existentes***
 >
->Se recomienda seguir utilizando la configuración heredada de OAuth Gateway. En caso de que surjan problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una nueva configuración mediante Adobe I/O.
+>Se recomienda seguir utilizando la configuración heredada de OAuth Gateway. En caso de que surjan problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una nueva configuración mediante Adobe Developer Console.
 
 
 
 Esta ayuda describe los dos casos de uso siguientes:
-* [Nueva configuración](#configure-new-integration-65): Si es un usuario nuevo de Brand Portal y desea configurar su instancia de autor de AEM Assets con Brand Portal, puede crear una nueva configuración en Adobe I/O.
-* [Configuración](#upgrade-integration-65)de actualización: Si ya es usuario de Brand Portal y su instancia de autor de Recursos AEM está configurada con Brand Portal en OAuth Gateway heredado, se recomienda eliminar las configuraciones existentes y crear una nueva configuración en Adobe I/O.
+* [Nueva configuración](#configure-new-integration-65): Si es un usuario nuevo de Brand Portal y desea configurar su instancia de autor de AEM Assets con Brand Portal, puede crear una nueva configuración en Adobe Developer Console.
+* [Configuración](#upgrade-integration-65)de actualización: Si ya es un usuario de Brand Portal con su instancia de autor de Recursos AEM configurada con Brand Portal en OAuth Gateway heredado, se recomienda eliminar las configuraciones existentes y crear una nueva configuración en Adobe Developer Console.
 
 La información proporcionada se basa en el supuesto de que cualquiera que lea esta Ayuda está familiarizado con las siguientes tecnologías:
 
