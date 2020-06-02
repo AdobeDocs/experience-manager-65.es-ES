@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
+source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+workflow-type: tm+mt
+source-wordcount: '2237'
+ht-degree: 1%
 
 ---
 
@@ -174,20 +177,13 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
 
 1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de muestra que se muestra a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
 1. [Cree e implemente un proyecto de AEM con Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) en su instancia de AEM.
-1. Añada [AEM Forms Client SDK versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior y la versión más reciente de [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) en la lista de dependencias del archivo POm de su proyecto AEM. Por ejemplo,
+1. Añada [AEM Forms Client SDK versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior en lista de dependencias del archivo POM de su proyecto AEM. Por ejemplo,
 
    ```XML
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
            <version>6.0.122</version>
-       </dependency>
-       <dependency>
-          <groupId>com.adobe.aem</groupId>
-          <artifactId>uber-jar</artifactId>
-          <version>6.5.0</version>
-          <classifier>apis</classifier>
-          <scope>provided</scope>
        </dependency>
    ```
 
@@ -201,18 +197,9 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
            import java.io.FileOutputStream;
            import java.io.IOException;
            import java.io.InputStream;
-           import java.io.OutputStream;
            import java.io.PrintWriter;
            import java.util.List;
-           import java.util.logging.FileHandler;
-           import java.util.logging.Logger;
-           import java.util.logging.SimpleFormatter;
-   
            import javax.servlet.Servlet;
-           import javax.servlet.ServletContext;
-   
-           import com.adobe.aemfd.watchfolder.service.api.ContentProcessor;
-   
            import org.apache.commons.io.IOUtils;
            import org.apache.sling.api.SlingHttpServletRequest;
            import org.apache.sling.api.SlingHttpServletResponse;
@@ -222,8 +209,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
            import org.osgi.service.component.annotations.Component;
            import org.osgi.service.component.annotations.Reference;
    
-           import com.adobe.aemfd.docmanager.Document;
-           import com.adobe.aemfd.docmanager.passivation.DocumentPassivationHandler;
+           import com.adobe.fd.ccm.multichannel.batch.api.builder.BatchConfigBuilder;
            import com.adobe.fd.ccm.multichannel.batch.api.factory.BatchComponentBuilderFactory;
            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchConfig;
            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchInput;
@@ -233,21 +219,8 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
            import com.adobe.fd.ccm.multichannel.batch.api.model.RenditionResult;
            import com.adobe.fd.ccm.multichannel.batch.api.service.BatchGeneratorService;
            import com.adobe.fd.ccm.multichannel.batch.util.BatchConstants;
-           import com.adobe.icc.render.obj.Content;
-   
-           import javax.annotation.PostConstruct;
-           import javax.inject.Inject;
-           import javax.inject.Named;
-   
-           import org.apache.sling.api.resource.Resource;
-           import org.apache.sling.models.annotations.Default;
-           import org.apache.sling.models.annotations.Model;
-           import org.apache.sling.settings.SlingSettingsService;
-           import org.apache.sling.api.resource.ResourceUtil;
-   
-   
-           import org.slf4j.*;
            import java.util.Date;
+   
    
            @Component(service=Servlet.class,
            property={
@@ -354,18 +327,20 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
    * Al especificar la opción WEB, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
    * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
 
-1. [Utilice el comando muven para implementar el código actualizado en su instancia](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)de AEM.
+1. [Utilice maven para implementar el código actualizado en su instancia](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)de AEM.
 1. Invoque la API por lotes para generar la comunicación interactiva. La API por lotes imprime una secuencia de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web. Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve una secuencia de archivos PDF y JSON.
 
 ### Rellenar previamente una plantilla web {#web-template}
 
 Cuando establece batchType para procesar el Canal Web, la API genera un archivo JSON para cada registro de datos. Puede utilizar la siguiente sintaxis para combinar el archivo JSON con el Canal Web correspondiente para generar una comunicación interactiva:
 
-**Sintaxis**`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
+**Sintaxis**
+`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Ejemplo**: si el archivo JSON está en `C:\batch\mergedJsonPath.json` y utiliza la siguiente plantilla de comunicación interactiva: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-A continuación, la siguiente URL del nodo de publicación muestra el Canal Web de la comunicación interactiva`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
+A continuación, la siguiente URL del nodo de publicación muestra el Canal Web de la comunicación interactiva
+`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Además de guardar los datos en el sistema de archivos, los archivos JSON se almacenan en el repositorio de CRX, el sistema de archivos, el servidor web o se pueden acceder a los datos a través del servicio de cumplimentación previa de OSGI. La sintaxis para combinar datos mediante varios protocolos es:
 
