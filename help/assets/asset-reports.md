@@ -3,9 +3,9 @@ title: Informes sobre sus recursos digitales
 description: Conozca los informes sobre los recursos en Recursos Adobe Experience Manager que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '974'
 ht-degree: 15%
 
 ---
@@ -37,10 +37,11 @@ Experience Manager Assets genera los siguientes informes estándar:
 * Archivos
 * Vínculos compartidos
 
-Los administradores de Experience Manager pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
+[!DNL Adobe Experience Manager] los administradores pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
 
 1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
-   ![](assets/AssetsReportNavigation.png)
+
+![](assets/AssetsReportNavigation.png)
 
 1. En la página Informes [!UICONTROL de] recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
