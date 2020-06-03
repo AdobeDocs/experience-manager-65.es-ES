@@ -3,10 +3,10 @@ title: Informes sobre sus recursos digitales
 description: Conozca los informes sobre los recursos en Recursos Adobe Experience Manager que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
+source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 15%
+source-wordcount: '1034'
+ht-degree: 14%
 
 ---
 
@@ -41,12 +41,12 @@ Experience Manager Assets genera los siguientes informes estándar:
 
 1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 
-![](assets/AssetsReportNavigation.png)
+![Página Herramientas para navegar por el informe de recursos](assets/AssetsReportNavigation.png)
 
 1. En la página Informes [!UICONTROL de] recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
 
-   ![](assets/choose_report.png)
+   ![Seleccionar tipo de informe](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ Experience Manager Assets genera los siguientes informes estándar:
 
 1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta, en el repositorio de CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente.
 
-   ![](assets/report_configuration.png)
+   ![Página para agregar detalles del informe](assets/report_configuration.png)
 
    Elija el intervalo de fechas del informe.
 
@@ -74,32 +74,32 @@ Experience Manager Assets genera los siguientes informes estándar:
    >
    >El informe **[!UICONTROL Uso del disco]** no incluye campos de intervalo de fechas porque solo indica el uso actual del espacio en disco.
 
-   ![](assets/disk_usage_configuration.png)
+   ![Página de detalles del informe Uso del disco](assets/disk_usage_configuration.png)
 
    Al crear el informe **[!UICONTROL Archivos]** , puede incluir o excluir subcarpetas. Sin embargo, no puede incluir representaciones de recursos para este informe.
 
-   ![](assets/files_report.png)
+   ![Página de detalles del informe Archivos](assets/files_report.png)
 
    El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde Assets. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![](assets/link_share.png)
+   ![Página de detalles del informe Uso compartido de vínculos](assets/link_share.png)
 
 1. Haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 
 1. En la página **[!UICONTROL Configurar columnas]** , se seleccionan algunas columnas para que aparezcan en el informe de forma predeterminada. Puede seleccionar más columnas. Anule la selección de una columna seleccionada para excluirla del informe.
 
-   ![](assets/configure_columns.png)
+   ![Seleccionar o anular la selección de las columnas del informe](assets/configure_columns.png)
 
    Para mostrar un nombre de columna personalizado o una ruta de propiedad, configure las propiedades del binario de recursos en el nodo jcr:content en CRX. También puede agregarla mediante el selector de rutas de propiedad.
 
-   ![](assets/custom_columns.png)
+   ![Seleccionar o anular la selección de las columnas del informe](assets/custom_columns.png)
 
 1. Haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
 1. En la página Informes de recursos, el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo, Éxito, Fallido, En cola o Programado. El mismo estado aparece en la bandeja de entrada de notificaciones.Para vista de la página del informe, haga clic en el vínculo del informe. Como alternativa, seleccione el informe y haga clic en **[!UICONTROL Vista]** en la barra de herramientas.
 
-   ![](assets/report_page.png)
+   ![Un informe generado](assets/report_page.png)
 
    Haga clic en **[!UICONTROL Descargar]** desde la barra de herramientas para descargar el informe en formato CSV.
 
@@ -125,11 +125,11 @@ Para agregar columnas personalizadas a estos informes, siga estos pasos:
 
 1. Para mostrar una columna personalizada, especifique el nombre de la columna debajo de **[!UICONTROL Columnas personalizadas]**.
 
-   ![](assets/custom_columns-1.png)
+   ![Especificar el nombre de la columna personalizada del informe](assets/custom_columns-1.png)
 
 1. Añada la ruta de la propiedad bajo el `jcr:content` nodo en CRXDE mediante el selector de rutas de propiedad. También puede escribir la ruta en el campo de ruta de la propiedad.
 
-   ![](assets/property_picker.png)
+   ![Asignación de la ruta de la propiedad desde las rutas en jcr:content](assets/property_picker.png)
 
    Para agregar más columnas personalizadas, haga clic en **[!UICONTROL Añadir]** y repita los pasos 5 y 6.
 
