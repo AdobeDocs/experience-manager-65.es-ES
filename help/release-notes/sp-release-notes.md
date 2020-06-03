@@ -1,14 +1,13 @@
 ---
 title: Notas de la versión de Service Pack de AEM 6.5
-description: Notas de versión específicas de Service Pack 4 de Adobe Experience Manager 6.5.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
+description: Notas de versión específicas de Service Pack 5 de Adobe Experience Manager 6.5.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
+source-git-commit: d51577195e969ff8af31be49159ff575e3654cc9
+workflow-type: tm+mt
+source-wordcount: '4476'
+ht-degree: 11%
 
 ---
 
@@ -19,292 +18,358 @@ source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
 
 | Productos | **Adobe Experience Manager 6.5** |
 |---|---|
-| Versión | 6.5.4.0 |
+| Versión | 6.5.5.0 |
 | Tipo | Versión de Service Pack |
-| Fecha | 05 de marzo de 2020 |
-| Descargar URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), distribución [de software (Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
+| Fecha | 04 de junio de 2020 |
+| Descargar URL | [Uso compartido](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0)de paquetes, distribución [de software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
-## Novedades de Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
+## Novedades de Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
-Adobe Experience Manager 6.5.4.0 es una actualización importante que incluye nuevas funciones, mejoras y rendimiento clave solicitados por el cliente, estabilidad y mejoras de seguridad, publicadas tras la disponibilidad general de la versión 6.5 en **abril de 2019**. Se puede instalar sobre Adobe Experience Manager (AEM) 6.5.
+Adobe Experience Manager 6.5.5.0 es una actualización importante que incluye nuevas funciones, mejoras y rendimiento clave solicitados por el cliente, estabilidad y mejoras de seguridad, publicadas tras la disponibilidad general de la versión 6.5 en **abril de 2019**. Se puede instalar sobre Adobe Experience Manager (AEM) 6.5.
 
-Algunas de las funciones y mejoras clave introducidas en AEM 6.5.4.0 son:
+Algunas funciones y mejoras clave introducidas en AEM 6.5.5.0 incluyen:
 
-* Recursos AEM ahora se configura con Brand Portal a través de la consola de Adobe I/O.
+* Personalización de los nombres de columna que se muestran en la Bandeja de entrada de AEM.
 
-* Ahora hay disponible un nuevo paso [Generar salida](../forms/using/aem-forms-workflow-step-reference.md) imprimible para los flujos de trabajo de AEM Forms.
+* Mejora de la accesibilidad en varias áreas de AEM Web Gestor de contenido (WCM), como el Editor de páginas, los componentes principales, RTE y la interfaz de usuario de administración.
 
-* [Compatibilidad](../forms/using/resize-using-layout-mode.md) con varias columnas para el modo de presentación de formularios adaptables y comunicaciones interactivas.
+* Guardar una comunicación interactiva como borrador.
 
-* Compatibilidad con texto [](../forms/using/designing-form-template.md) enriquecido en formularios HTML5.
+* Compatibilidad con [!DNL Oracle WebLogic 12] AEM Forms en JEE.
 
-* [Mejoras](new-features-latest-service-pack.md#accessibility-enhancements) de accesibilidad en Experience Manager Assets.
+* La gestión de excepciones ahora se ha mejorado en el flujo de la interfaz de usuario de [!DNL Adobe Experience Manager] Assets.
 
-* El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.10.8.
+* Se `getRemoteAssetPublishURL` agrega un nuevo método a la `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interfaz para obtener la URL de publicación de Dynamic Media Scene7.
 
-* Ahora puede sincronizar subárboles de contenido selectivo con el modo *Medios* dinámicos - Scene7 en lugar de todo lo disponible en `content/dam`.
+* [Mejoras](#assets-6550-changes) de accesibilidad en [!DNL Adobe Experience Manager] Recursos de conformidad con las Directrices de accesibilidad del contenido web (WCAG).
 
-* La integración del modelo de datos de formulario con el servicio web SOAP ahora admite grupos de opciones o atributos en los elementos.
+* Se ha eliminado la integración de Package Share con Adobe Experience Manager.
 
-* La entrada o salida de SOAP y las estructuras de datos complejas ahora admiten la sustitución dinámica de grupos.
+* El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.22.3.
 
-Para obtener una lista completa de las funciones, los aspectos más destacados y las funciones clave introducidas en los Service Pack anteriores de AEM 6.5, consulte [Novedades de Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
+Para obtener una lista completa de las funciones, los elementos destacados clave y las funciones clave introducidas en AEM 6.5 service pack 5, consulte [Novedades de Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
 
-### Sites {#sites-fixes}
+A continuación se muestra la lista de correcciones que se proporcionan en la versión [!DNL Experience Manager] 6.5.5.0.
 
-* Cuando una dirección URL de una página de AEM Sites contiene dos puntos (: ) o símbolo de porcentaje (%), el explorador subyacente deja de responder y los ciclos de CPU muestran un pico (NPR-32369, NPR-31918).
+### Sites {#sites-6550}
 
-* Cuando se abre una página de AEM Sites para editarla y se copia un componente, la acción de pegado permanece indisponible para algunos marcadores de posición (NPR-32317).
+* AEM Sites proporciona una opción para publicar o cancelar la publicación de una página desde su alias. La opción no funciona (NPR-33415).
+* Cuando se elimina un contenedor de diseño de una plantilla que contiene varias plantillas, la plantilla no se representa correctamente (NPR-33347).
+* Cuando una página Sitios de AEM forma parte de un conjunto de contenido grande con varias copias en vivo, la previsualización del historial de versiones de la página no se carga (NPR-33311).
+* Cuando se utiliza el comando Mover para cambiar el nombre de una página Sitios de AEM, el título de la página no se actualiza (NPR-33264).
+* Al mover páginas a través de la vista de columna, las columnas desaparecen (NPR-33216).
+* Cuando el nombre de un componente local en una copia de idioma es idéntico al nombre de un componente en el modelo y el componente se despliega desde el plano, el término _msm_move no se agrega al nombre del componente local (NPR-33208).
+* El servlet Redireccionamiento de página anexa .html a una URL de sitios de AEM donde ResourceType no es cq:Page (NPR-33176).
+* Al pegar un subárbol, no hay opción de decidir si las subpáginas correspondientes se van a pegar o no (NPR-33149).
+* El número de resultados en el uso activo de un componente está limitado al número 49 (NPR-33058).
+* Cuando se basa un fragmento de contenido en un esquema y contiene un área de texto obligatoria o un campo de ruta, el fragmento de contenido no se guarda (NPR-33007).
+* Al crear un componente personalizado con el componente de fragmento de experiencia incorporado y utilizarlo en páginas de sitios de AEM, AEM no muestra referencias (uso) para el componente personalizado (NPR-32852).
+* Al cambiar el nombre de una carpeta con un gran número de referencias, muchas referencias a la carpeta no se actualizan (NPR-32765).
+* Cuando se activa la opción de edición de origen, esta opción queda disponible para las opciones de pantalla completa en línea, pero sigue faltando para el cuadro de diálogo de edición y las opciones de pantalla completa del editor de texto enriquecido (NPR-32763).
+* Si tiene un campo múltiple y contiene un campo obligatorio (como un menú desplegable o un campo de ruta) en las propiedades de página de un modelo, cuando se despliega una página que contiene un campo múltiple de este tipo, las propiedades de página de la Live Copy no se guardan. (NPR-32751)
+* Los lectores de pantalla no pueden utilizar la estructura de encabezados para navegar por una página. Además, la ficha Componentes tiene una etiqueta incorrecta (NPR-32648).
+* Cuando se producen inicios de paginación, el selector de fragmentos de experiencia no carga todos los elementos (NPR-32605).
+* Se revocan los permisos de autor para leer, modificar, crear y eliminar copias en directo. Cada autor tenía que proporcionar explícitamente permisos de lectura y modificación para mover páginas dentro de un modelo (NPR-32550).
+* Los autores de contenido no pueden crear Launch para una página que tenga una integración con Adobe Analytics (NPR-32548).
+* Cuando un usuario reanuda la herencia con la sincronización, la Live Copy de la página principal no se sincroniza con el modelo y muestra un estado incorrecto (NPR-32500).
+* La página del editor de Sitios AEM tarda más de 15 segundos en cargarse (NPR-32413).
+* Algunos campos no muestran la opción Cancelar herencia (NPR-32362).
+* Cuando se selecciona una ruta para un componente Fragmento de experiencia y se selecciona la casilla de verificación Abrir cuadro de diálogo de selección, no se navega a la ruta seleccionada en el Explorador de rutas (NPR-32308).
+* Al actualizar de AEM 6.2 a AEM 6.5, el componente Parsys de las plantillas estáticas no se muestra correctamente. La altura del componente Parsys se establece en 0 y los componentes que contiene no son visibles. (NPR-33663).
+* Cuando un usuario copia y pega un Contenedor de diseño en la misma página, los componentes de un Contenedor de diseño no se muestran (NPR-33648).
+* La comprobación de estado del despachante muestra `Invalid cookie header` un mensaje de advertencia en los archivos de registro (NPR-33629).
 
-* Cuando se abre el asistente Administrar publicación, no se muestra un fragmento de experiencia vinculado a un componente principal en las listas de referencias publicadas (NPR-32233).
+### Assets {#assets-6550-changes}
 
-* La descripción general de la Live Copy en la IU táctil tarda mucho más que la IU clásica en procesarse (NPR-32149).
+**Mejoras de accesibilidad en Recursos de Experience Manager**
 
-* Cuando la hora del servidor y la hora del equipo están en diferentes zonas horarias, la hora de publicación programada muestra la hora del servidor en la IU táctil, mientras que en la IU clásica se muestra la hora del equipo (NPR-32077).
+* Ahora es posible enfocar el teclado en la lista de [!UICONTROL comentarios] y en la opción en la que se puede hacer clic para [!UICONTROL crear] comentarios de versión en [!UICONTROL Crear nueva versión] en el panel de recursos de la [!UICONTROL línea de tiempo] (NPR-33424).
 
-* AEM Sites no puede abrir una página con un sufijo en la URL (NPR-32072).
+* Ahora es posible acceder a la opción Configuración [!UICONTROL de] Vista de recursos y cambiar la configuración en el cuadro de diálogo Configuración [!UICONTROL de] Vista con las teclas del teclado (NPR-33420).
 
-* Cuando un usuario edita un fragmento de contenido, se restaura una variación eliminada del fragmento de contenido (NPR-32062).
+* La lista desplegable del cuadro combinado de cuadro de lista (en varios campos de diferentes páginas) ahora muestra las entradas como una lista de opciones que pueden anunciar los lectores de pantalla (NPR-33516).
 
-* Los usuarios pueden guardar un fragmento de contenido sin proporcionar información en los campos requeridos (NPR-31988).
+* Los lectores de pantalla anuncian ahora la funcionalidad de ordenación de los encabezados que se pueden ordenar (en la vista de listas, en la vista de [!UICONTROL línea de tiempo] y en la página [!UICONTROL Administrar publicación] ) y los controles de clasificación de los encabezados de columna son accesibles mediante el teclado (NPR-32979).
 
-* kernel.js y ui.js no se cumplimentan ni se almacenan en caché. Esto lleva a tiempo adicional en el procesamiento de páginas (NPR-31891).
+* Los elementos activos (como tarjetas de comentarios, actualizaciones de versiones, cuadros combinados e iconos de chevron de los menús) ahora se pueden enfocar y activar mediante el teclado (NPR-33514).
 
-* Cuando PageEventAuditListener está habilitado, la longitud de la cola de confirmación aumenta. Afecta al rendimiento de muchas operaciones, como la publicación masiva, la navegación y el movimiento masivo de recursos (NPR-31890).
+* La funcionalidad (o el propósito de acción) de los iconos de perspectivas (para uso, impresiones y clics) en la Vista [!UICONTROL de] perspectivas ahora son anunciados correctamente por los lectores de pantalla (NPR-33513).
 
-* Cuando se arrastran fragmentos de experiencia, se observa un tiempo de respuesta alto (NPR-31878).
+* Los campos de formulario de sólo lectura (por ejemplo, campos desactivados en la ficha  Básico de [!UICONTROL Propiedades]del recurso) ahora se pueden enfocar mediante el teclado (NPR-33493, CQ-4273031).
 
-* Cuando selecciona la opción Arrastrar componente aquí en el marcador de posición de una cuadrícula adaptable, se envía una solicitud GET y la solicitud da como resultado un error HTTP 403 (NPR-31845).
+* Las etiquetas de varios campos de entrada ahora son etiquetas permanentes (por lo tanto accesibles) y no solo etiquetas de marcador de posición, que desaparecían cuando se introducía texto (NPR-33475).
 
-* Al mover el contenido dentro de la misma carpeta, se desactiva la opción de mover la página (NPR-31840).
+* Los diferentes niveles de encabezados (como títulos de página y encabezados de sección) ahora se perciben como encabezados con diferentes niveles para los usuarios de lectores de pantalla (NPR-33471).
 
-* En el modo de estructura de plantillas editables, la lista de componentes permitida en el contenedor de diseño muestra resultados incorrectos. En el contenedor de diseño (NPR-31816) solo se muestran los componentes con cuadro de diálogo de diseño.
+* Ahora se puede acceder a los elementos interactivos de la interfaz de usuario, como los vínculos y las opciones (en las opciones de encabezado y zoom de la página de recursos, navegación por carpetas) mediante un teclado (NPR-33468, CQ-4271412).
 
-* Cuando una página tiene permisos de solo lectura para un usuario, la opción Abrir propiedades está visible en sites.html pero no en editor.html (NPR-31770).
+* Los indicadores de progreso de [!UICONTROL Opciones], [!UICONTROL Alcance]y [!UICONTROL Flujos de trabajo] en la página [!UICONTROL Administrar publicación] ahora los lectores de pantalla los leen correctamente como indicadores de progreso, en lugar de fichas (NPR-33416).
 
-* Cuando un usuario hace clic en el botón Crear, la opción de página no está disponible (NPR-31756).
+* El color de los iconos de clasificación por estrellas (como en la sección [!UICONTROL Clasificación] de la ficha [!UICONTROL Avanzado] de [!UICONTROL Propiedades] del recurso o en la vista de la tarjeta) se cambia para que el contraste adecuado sea visible para los usuarios con visión limitada y sin percepción de color (NPR-33414).
 
-* No se puede sincronizar la campaña en la campaña de Adobe que contiene el componente importador de diseños OOTB (listo para usar) (NPR-31728).
+* Ahora se puede acceder a la flecha hacia arriba situada junto al campo [!UICONTROL Comentario] en la página de detalles de recursos con las teclas del teclado (NPR-33397).
 
-* Cuando se intenta cambiar una lista de viñetas a una lista numerada, solo se cambian los dos primeros elementos de la lista (NPR-31636).
+* Los lectores de pantalla anuncian ahora correctamente los estados expandidos y contraídos del cuadro de diálogo [!UICONTROL Etiquetas] en [!UICONTROL Propiedades] del recurso y navegación por el carril izquierdo (en la interfaz de usuario de los recursos) (NPR-33396).
 
-* Cuando se anula la creación de una página y se selecciona el nodo secundario, el cuadro de diálogo de selección aún muestra el nodo inicial. Cuando se crea la página y el usuario hace clic en Examinar, la página se redirige al nodo raíz en lugar del nodo creado (NPR-31618).
+* Los títulos de todas las páginas exploradas en [!DNL Adobe Experience Manager] Assets ahora son únicos (NPR-33343).
 
-* El cuadro de diálogo de configuración de vista no funciona correctamente para la función de flujo de trabajo de personalización de la Bandeja de entrada (NPR-32503 y NPR-32492).
+* Mientras navega por la estructura de árbol, los lectores de pantalla anuncian correctamente varios elementos del control de vista de árbol (NPR-33304).
 
-* Aparece un mensaje de error al ver la información del flujo de trabajo mediante la Bandeja de entrada (CQ-4282168).
+* Ahora se puede acceder a diferentes versiones de los recursos de la página de detalles de la vista de la [!UICONTROL línea de tiempo] mediante las teclas del teclado (NPR-33283).
 
-### Assets {#assets-6540-enhancements}
+* Los nombres de las sugerencias de búsqueda que aparecen en el cuadro combinado Omnisearch ahora los anuncian los lectores de pantalla mientras utilizan la funcionalidad de búsqueda (NPR-33280).
 
-* El botón para activar el flujo de trabajo en la página de recopilación de recursos está desactivado (NPR-32471).
+* Los elementos activos e [!UICONTROL Ir al vínculo] en el carril  Referencias ahora son anunciados por los lectores de pantalla como elementos activos (NPR-33278).
 
-* Se crea una carpeta sin nombre en SPS (Scene7 Publishing System) mientras se mueve un recurso de una carpeta a otra en Experience Manager con la configuración de Dynamic Media Scene7 (NPR-32440).
+* La información de estructura de tabla (como la fila 1, celda 1, tabla) del cuadro de diálogo [!UICONTROL Compartir vínculo] ya no la anuncian los lectores de pantalla cuando se abre el cuadro de diálogo (NPR-33268).
 
-* La acción para mover todos los recursos (mediante Seleccionar todo y, a continuación, mover) a una carpeta que contenga recursos publicados falla con error (NPR-32366).
+* El propósito de varios elementos de cuadro combinado (como el campo Ruta y la opción para abrir el cuadro de diálogo Selección en la ficha Básico de Propiedades del recurso) ahora lo anuncian correctamente los lectores de pantalla (NPR-33235).
 
-* Error en la generación de representaciones para recursos con ${extension} (NPR-32294).
+* La información de que las filas de la tabla de vista de listas son seleccionables ahora se comunica a los usuarios del lector de pantalla cuando el teclado está en ellas. Esta información se anuncia cuando se sitúa el ratón sobre las filas (NPR-33234).
 
-* Las direcciones URL del historial de versiones se muestran en el campo Referenciado por de la página de propiedades de recursos (NPR-31889).
+* Ahora los lectores de pantalla pueden acceder a las opciones (con [!UICONTROL x]) para eliminar cada una de las etiquetas seleccionadas debajo del campo [!UICONTROL Etiquetas] de la ficha [!UICONTROL Básico] de [!UICONTROL Propiedades] (NPR-33206).
 
-* El archivo ZIP descargado de DAM no se puede abrir con WinZip (NPR-32293).
+* El selector de fechas del calendario ahora puede seleccionarse y procesarse mediante el teclado por usuarios de lectores de pantalla y usuarios de teclado con visión (NPR-33200).
 
-* Los permisos originales de una carpeta se actualizan cuando se abre la configuración de la carpeta para cambiar el título de la carpeta o la imagen en miniatura y, a continuación, se guardan (NPR-32292).
+* El cambio para cambiar entre la vista de lista y la vista de tarjetas ahora expone correctamente su funcionalidad (de ajustar vistas) al lector de pantalla (NPR-33069).
 
-* El icono de calendario para la activación programada no se muestra en la columna Estado (en la IU clásica de la lista de recursos DAM) para los recursos cuya activación está programada para una fecha y hora posteriores (NPR-32291).
+* Ahora se puede acceder al menú en el carril izquierdo. Los lectores de pantalla anuncian adecuadamente la funcionalidad y el propósito de ampliar el menú (NPR-33068).
 
-* La creación de fragmentos de código mediante plantillas de fragmento produce un error al buscar colecciones durante el proceso de creación de fragmentos (NPR-32290).
+* Los usuarios de lectores de pantalla ahora pueden acceder al cuadro de Lista y a muchos otros elementos de la interfaz de usuario, y los lectores de pantalla anuncian la siguiente información (NPR-33040):
 
-* Se activan varias consultas de búsqueda cuando se seleccionan varias etiquetas en el filtro de búsqueda (NPR-32143).
+   * si se requiere la introducción de datos por parte del usuario en un elemento antes del envío del formulario.
+   * si un elemento no es editable.
+   * si un widget está seleccionado o no.
 
-* La interfaz de usuario de Experience Manager Assets muestra nombres de archivo truncados cuando se cargan recursos con más de 50 caracteres en el nombre de archivo (NPR-32054).
+* Ahora se puede acceder a la opción de abrir la barra lateral del filtro mediante el teclado (NPR-32842, CQ-4273018).
 
-* Todas las casillas de verificación del panel Filtro se desactivan cuando se desactivan la primera y la segunda casillas de verificación, cuando se seleccionan las casillas de verificación de nivel dos del árbol de casillas de verificación en Adobe Stock (NPR-31919).
+* Ahora se puede acceder al control de casilla de verificación en el encabezado de columna de la vista de lista y los lectores de pantalla anuncian el propósito de utilizar el control (NPR-32722, NPR-33005).
 
-* La búsqueda de archivos y carpetas mediante facetas de Omnisearch ofrece una excepción (NPR-31872).
+* Las etiquetas de los campos de horas (HH) y minutos (mm) en el selector de fechas del calendario son ahora etiquetas permanentes en lugar de etiquetas de marcador de posición, y no desaparecen cuando el usuario introduce texto en estos campos (NPR-32720).
 
-* El resaltado de campos para la selección obligatoria de campos en el editor de metadatos no se elimina ni siquiera después de seleccionar el campo requerido, cuando las reglas de dependencia se establecen en el correspondiente formulario de esquema de metadatos (NPR-31834).
+* El texto de los vínculos de las notificaciones (que aparecen después de hacer clic en el icono de la campana) ahora se anuncia a los usuarios del lector de pantalla, que utilizan la ficha para acceder a cada vínculo (NPR-32645).
 
-* Los nombres completos de las etiquetas de nivel de hoja (de la jerarquía de etiquetas) no se muestran en la página Propiedades del recurso (NPR-31820).
+* [!UICONTROL Ahora se puede acceder mediante el teclado a las opciones Seleccionar], [!UICONTROL Descargar], [!UICONTROL Propiedades]y [!UICONTROL Más acciones] en tarjetas de recursos de la Vista  de perspectivas (NPR-32609).
 
-* El uso del comando posterior de la página Propiedades del recurso en el navegador Safari genera un error (NPR-31753).
+* El contenido oculto visualmente (como el contenido de la barra de menús del encabezado en los resultados de búsqueda) ya no lo anuncian los lectores de pantalla cuando se accede mediante el teclado (NPR-32606).
 
-* La página de resultados de la búsqueda por IU táctil (realizada a través de Omnisearch) se desplaza automáticamente hacia arriba y pierde la posición de desplazamiento del usuario (NPR-31307).
+* El propósito de las etiquetas de los controles para pasar a los meses siguiente y anterior en el selector de fechas del calendario ahora lo anuncian los lectores de pantalla (NPR-32604).
 
-* La página de detalles de recursos de los recursos PDF no muestra botones de acción, excepto los botones Para colección y Añadir representación de Experience Manager, que se ejecutan en el modo de ejecución de Dynamic Media Scene7 (CQ-4286705).
+* Los iconos de clasificación por estrellas ahora se pueden enfocar y activar con las teclas del teclado (NPR-32513).
 
-* Los recursos tardan demasiado en procesarse mediante el proceso de carga por lotes de Scene7 (CQ-4286445).
+* Ahora se puede acceder a la funcionalidad para controlar el volumen de vídeo mediante tabuladores (para centrarse en el control deslizante del volumen) y teclas de flecha (para ajustar el volumen) en el teclado (NPR-32065).
 
-* El botón Guardar no importa el conjunto remoto cuando el usuario no ha realizado ningún cambio en el Editor de conjuntos en el cliente de medios dinámicos (CQ-4285690).
+* El propósito de los campos de entrada de límite inferior ([!UICONTROL Desde]) y límite superior ([!UICONTROL Hasta]) del filtro Tamaño de archivo ahora se anuncia para los usuarios de lectores de pantalla sin visión de futuro (NPR-32064).
 
-* La miniatura de un recurso 3D no es informativa cuando se ingesta un modelo 3D compatible en AEM (CQ-4283701).
+* Ahora los lectores de pantalla pueden acceder al menú [!UICONTROL Idiomas] del formulario [!UICONTROL Crear y traducir] en modo de exploración (CQ-4293906).
 
-* El estado sin procesar del ajuste preestablecido de visor de vídeo de recorte inteligente aparece dos veces en el texto de la pancarta junto con el nombre del ajuste preestablecido (CQ-4283517).
+* Ahora se puede acceder al panel [!UICONTROL Referencias] con las siguientes mejoras (NPR-33261, CQ-4293798):
 
-* En la página de detalles del recurso (CQ-4283309) se observa una altura de contenedor incorrecta de un modelo 3D cargado con vista previa en el visor 3D.
+   * En el modo de exploración, el enfoque del lector de pantalla ya no se desplaza a los campos de edición de varias líneas ocultos en las secciones Referencias del sitio, Referencias [!UICONTROL de]recursos, [!UICONTROL Copias]y Referencias [!UICONTROL de] formulario.
 
-* El Editor de carrusel no se abre en IE 11 en el modo híbrido de Dynamic Media de Experience Manager (CQ-4255590).
+   * Los lectores de pantalla ahora anuncian la función de los elementos Referencias [!UICONTROL del] sitio y Copias de [!UICONTROL idioma] .
 
-* El enfoque del teclado se queda atascado en la lista desplegable Correo electrónico del cuadro de diálogo Descargar, en los navegadores Chrome y Safari (NPR-32067).
+   * El enfoque de los lectores de pantalla en el modo de exploración cambia en una secuencia significativa a varios elementos.
 
-* La casilla de verificación Sincronizar todo el contenido no está habilitada de forma predeterminada al intentar agregar la configuración de nube de DM en AEM (CQ-4288533).
+* [!UICONTROL Ahora se puede acceder a la página Editor] de Esquemas de metadatos y a sus elementos mediante el teclado y son fáciles de leer en pantalla (CQ-4290962, CQ-4272953).
 
-### Interfaz de usuario de Foundation {#foundation-ui-6540}
+* El propósito del icono [!UICONTROL x] en la opción para eliminar etiquetas seleccionadas también se anuncia junto con el número de etiquetas seleccionadas (CQ-4273017).
 
-* El control del ratón cambia al campo de filtro anterior en lugar de permanecer en el campo de filtro existente al buscar recursos con el panel Filtro (NPR-32538).
+* Los lectores de pantalla ahora ignoran los iconos y las imágenes decorativos para evitar confusiones entre los usuarios sin visión de futuro que utilizan un lector de pantalla (CQ-4272944).
 
-* Etiquetado de plataforma: Para buscar etiquetas, escriba en los campos de etiqueta, se muestran las etiquetas que están fuera de los límites raíz y no se respeta la `rootPath` propiedad de los campos de etiqueta (NPR-31895).
+**Problemas solucionados en Recursos de Experience Manager**
 
-* Interfaz de usuario de plataforma: El navegador de rutas se interrumpe si se agrega una ruta no válida en el campo de texto (NPR-31884).
+[!DNL Adobe Experience Manager] 6.5.5.0 Assets ofrece correcciones a los siguientes problemas:
 
-* La notificación se oculta detrás de un menú adhesivo en la selección de página (NPR-31628).
+* [!UICONTROL La opción Inicio] del cuadro de diálogo [!UICONTROL Crear flujo de trabajo] para los recursos de una colección está desactivada, lo que impide que se active el flujo de trabajo (NPR-32471).
 
-### Plataforma {#platform-sling-6540}
+* Al utilizar la lista desplegable en cascada en los esquemas de metadatos, al seleccionar y guardar una opción desplegable que contenga un apóstrofo (desde el menú desplegable secundario), la opción de apóstrofo seleccionada desaparece después de volver a abrir [!UICONTROL Propiedades] del recurso (NPR-32649).
 
-* (HTL) Los caracteres de subrayado reemplazan los dos puntos en la sección de ruta de la dirección URL (NPR-32231).
+* [!UICONTROL El trabajo] de sincronización de Asset Insights se detiene y falla si encuentra entradas no válidas (en el lado de Analytics) en lugar de moverse a la siguiente entrada (NPR-32674).
 
-### Proyectos {#projects-6540}
+* El ámbito de navegación no funciona, ya que los sensores de movimiento están desactivados de forma predeterminada en los navegadores móviles en el visor panorámico (CQ-4272937).
 
-* El botón Crear no está visible para el usuario aunque éste tenga permiso para crear un proyecto en la subcarpeta (NPR-31832).
+* [!UICONTROL El asistente de configuración] de recursos conectados no funciona con el error 404 al instalar 6.5.3 en 6.5.1 (NPR-32730).
 
-### Traducción de proyectos {#projects-translation-6540}
+* Durante el proceso de reescritura XMP, todas las propiedades de metadatos de Área de nombres personalizadas cambian el prefijo de Área de nombres personalizado a ns2 en lugar del prefijo de Área de nombres configurado (NPR-32748).
 
-* La creación de proyectos de traducción interrumpe la interfaz de usuario cuando se activa la opción Recortar espacios en `Apache Sling JSP Script Handler` (NPR-32154).
+* La carga diferida no se activa y solo se muestran 100 recursos al seleccionar para revisar las tareas de la bandeja de entrada de notificaciones (NPR-32750).
 
-* Se observa un error en la interfaz de usuario y una excepción de punto nulo en los registros de errores cuando se agrega cualquier etiqueta a un proyecto de traducción (NPR-31896).
+* `NullPointerException` se observa debido a la ausencia de preferencias de nodos en el perfil de usuario recién creado (SAML/SSO). Este error impide que los usuarios que inicien sesión recientemente utilicen [!DNL Adobe Experience Manager Stock] la integración (NPR-32777).
 
-### Integraciones {#integrations-6540}
+* Se observan advertencias transitorias en los registros al abrir una colección inteligente que contiene más de 10.000 recursos (NPR-32980).
 
-* La generación de direcciones URL de la biblioteca de inicio se basa únicamente en `path` y `library_name` los valores de la API de inicio, y no se basa en el `library_path` valor (NPR-31550).
+* Los nombres de los recursos se cambian a minúsculas al mover recursos de una carpeta a otra al [!DNL Adobe Experience Manager] trabajar en el modo de ejecución de Dynamic Media Scene7 (NPR-32995).
 
-* Aparece un mensaje de error al procesar los elementos relacionados con LiveFile (FYR-12420).
+* Un recurso buscado no se puede eliminar después de navegar a sus propiedades desde los resultados de búsqueda y luego volver a los resultados de búsqueda para eliminarlo (NPR-32998).
 
-* ReportSuitesServlet es vulnerable a SSRF (NPR-32156).
+* [!UICONTROL La siguiente] opción permanece desactivada al seleccionar la carpeta de destino en la interfaz [!UICONTROL Mover recursos] (NPR-33356).
 
-### Editor de plantillas WCM {#wcm-template-editor-6540}
+* [!UICONTROL La siguiente] opción no está activada al seleccionar el nodo principal (donde se puede ver una sola carpeta secundaria) y, a continuación, seleccionar la carpeta secundaria (NPR-33275).
 
-* En el modo de estructura de plantillas editables, la lista de componentes permitida en el contenedor de diseño no muestra el componente de botón de vínculo (CQ-4282099).
+* Los permisos de protección y desprotección están desactivados en Adobe Asset Link (AAL) para los usuarios con permisos de eliminación, aunque se les permita leer, crear o modificar otros permisos (NPR-33272).
 
-### WCM Page Editor {#wcm-page-editor-6540}
+* Las representaciones de recorte inteligente no están disponibles en el cuadro de diálogo de descarga de recursos (NPR-33167).
 
-* Se observa un error al seleccionar una superposición y, a continuación, seleccionar una cuadrícula adaptable Arrastre los componentes aquí (CQ-4283342).
+* Se observa una excepción en los registros al abrir el carril de representaciones para un PDF en una carpeta con perfil de recorte inteligente (CQ-4294201).
 
-### Campaign Targeting {#campaign-targeting-6540}
+* Los ajustes preestablecidos de imagen no se publican si el modo  de sincronización de Dynamic Media está desactivado de forma predeterminada en AEM con el modo de ejecución de Dynamic Media Scene7 (CQ-4294200).
 
-* La configuración de la nube de Destinatario falla con el error al obtener la solicitud de mboxes (CQ-4279880).
+* El procesamiento de recursos mientras la carga masiva se queda atascada y la instancia de flujo de trabajo muestra instancias atascadas del recurso de actualización DAM (CQ-4293916).
 
-### Brand Portal {#assets-brand-portal}
+* La creación de una configuración de Dynamic Media en AEM funciona, pero en la interfaz de usuario no sucede nada al seleccionar Guardar (CQ-4292442).
 
-* Los usuarios de Brand Portal no pueden publicar recursos de carpetas de contribución en Recursos AEM al actualizar a Adobe I/O en AEM 6.5.4 (CQDOC-15655).
+* La Previsualización de recursos de vídeo f4v no funciona en la reproducción progresiva en Safari/Mac (CQ-4289844).
 
-   Este problema se solucionará en el próximo Service Pack AEM 6.5.5.
+* La carpeta adicional se crea al recortar de forma inteligente un recurso que se encuentra dentro de una carpeta principal con caracteres de punto `.` en su nombre (CQ-4289337).
 
-   Para una corrección inmediata en AEM 6.5.4, se recomienda [descargar la revisión](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalarla en la instancia de creación.
+* La miniatura está dañada y la pancarta de procesamiento de vídeo no se muestra cuando se copia un vídeo (CQ-4284125).
 
+* El visor de dimensiones muestra incorrectamente miniaturas vacías en Firefox para algunos modelos con vistas de cámara vacías (CQ-4283447).
 
-* Los valores desplegables del esquema de metadatos no están visibles en las propiedades de los recursos (CQ-4283287).
+* Los problemas de rendimiento corregidos en 6.5.5.0 son (CQ-4279206):
 
-* El subesquema de metadatos no muestra fichas basadas en mimetype en propiedades de recursos (CQ-4283288).
+   * Se tarda demasiado en cargar archivos binarios grandes en los servidores de procesamiento de imágenes de Dynamic Media.
 
-* El esquema Cancelar la publicación de metadatos rellena un mensaje de error aunque el esquema se elimina al final.
+   * El tiempo de generación de miniaturas en AEM aumenta debido a la arquitectura de Dynamic Media Scene7.
 
-* La imagen de Previsualización no se muestra para un recurso publicado (CQ-4285886).
+* Los problemas de migración a Dynamic Media Scene7 fallan en clientes con un gran número de recursos (CQ-4279206).
 
-* El usuario no puede publicar ni cancelar la publicación de recursos que contengan una sola cotización en el nombre (CQ-4272686).
+* El diseño del visor de vídeo 360 se interrumpe si `setVideo` se utiliza y el vídeo se desplaza hacia abajo en el uso `video= modifier` (CQ-4263201).
 
-* Los términos y condiciones no se muestran al descargar varios recursos (CQ-4281224).
+* Aparece un mensaje de error al instalar el paquete AEM SDL (NPR-33175).
 
-* Se han solucionado pequeñas vulnerabilidades de seguridad.
+### Plataforma {#platform-6550}
 
-### Communities {#communities}
+* No se llama al [!DNL Sling] filtro si la entrada del `sling:match` mapa se crea en `/etc/maps` (NPR-33362).
+* AEM se bloquea debido a un error de segmentación con [!DNL Apache Lucene] (NPR-32988).
+* [!DNL Jackson] falta el paquete principal en el archivo jar del depurador de AEM (NPR-32848).
+* CRXDE Lite no carga contenido para usuarios sin el permiso READ en la `jcr:primaryType` propiedad de un nodo (NPR-32611).
+* [!DNL Granite] el Planificador de tarea de mantenimiento se reinicia con demasiada frecuencia durante las implementaciones de AEM (CQ-4294627).
+* Cuando una consulta SQL se ejecuta durante más tiempo, por ejemplo, 7 horas, AEM deja de responder (NPR-33044).
 
-* El formulario Crear miembro se muestra como una página en blanco (NPR-31997).
+### Interfaz de usuario {#ui-6550}
 
-* El usuario no puede realizar la vista del informe de Analytics en la instancia de autor (NPR-30913).
+* La selección de botones de radio no persiste en un campo múltiple (NPR-33309).
+* El límite de carga diferida no funciona para la vista de lista (NPR-33124).
+* La página de resultados de Omniture no muestra un mensaje si no hay coincidencias (NPR-32974).
+* El filtro Omnisearch devuelve todas las coincidencias bajo `/content` el nodo que ignoran la ubicación seleccionada (NPR-32849).
 
-### Consultas e indización de robles {#oak-indexing-6540}
+### Integraciones {#integrations-6550}
 
-* Los documentos de Microsoft Word y MS Excel, que contienen imágenes JPEG, cuando se analizan con el analizador Tika no se analizan y se observa un error de clase no encontrada (NPR-31952).
+* La caché interna se borra cuando se publica una página con un componente de Adobe Destinatario (NPR-33162).
+* La integración con Adobe Destinatario no funciona en [!DNL Windows Internet Explorer] 11 (NPR-33111).
+* Al configurar Adobe Destinatario, los campos [!UICONTROL Compañía] y Grupo [!UICONTROL de] informes no aparecen al seleccionar un origen de sistema de informes (NPR-32502).
+* Al exportar fragmentos de experiencia con Adobe I/O, los metadatos como el producto de origen no se exportan a Adobe Destinatario (NPR-32159).
+* Los usuarios de IMS autorizados en el grupo de administración local de AEM no pueden crear ni modificar configuraciones de IMS (NPR-33045).
+* La página de configuraciones de Adobe Launch no muestra todos los registros (NPR-33011).
+* Los usuarios del grupo de autores de contenido no pueden editar las propiedades de un componente de Adobe Destinatario debido a un error de JavaScript (NPR-32996).
 
-### Formularios {#forms-6530}
+### Proyectos de traducción {#translation-6550}
+
+* Las etiquetas traducidas no se importan en AEM desde servicios de traducción de terceros (NPR-33154).
+* La página de configuración de traducción muestra un proveedor de traducción incorrecto al que se utilizó para la traducción (NPR-32971).
+* Añadir una carpeta de fragmentos de experiencia en un proyecto de traducción existente crea un nuevo proyecto (NPR-32843).
+* Se muestra un `NullPointerException` error en los registros de ejecución de un trabajo de traducción (NPR-32628).
+
+### WCM {#wcm-6550}
+
+* Editor de páginas: el Editor de [!DNL Sites] páginas no permite que los usuarios que utilizan solo el teclado pasen al contenido principal en lugar de desplazar el enfoque de la ficha a través de todas las opciones disponibles en el encabezado (CQ-4293883).
+* Editor de páginas: los paneles que utilizan el componente Well e incluyen datos guardados no se muestran debido a las actualizaciones en [!DNL Chrome] y [!DNL Firefox] versiones (CQ-4292995).
+* MSM: Al eliminar un componente de la página, no se elimina de la versión publicada de la página (CQ-4292360).
+
+### Brand Portal {#assets-brand-portal-6550}
+
+* Si elimina un esquema de metadatos publicado de [!DNL Brand Portal] resulta en un error (CQ-4292063).
+* Si un administrador configura [!DNL Experience Manager Assets] 6.5.4 con Brand Portal a través de Adobe Developer Console, el [!DNL Brand Portal] usuario no podrá publicar el recurso de una carpeta de contribución de [!DNL Brand Portal] a [!DNL Experience Manager]. (NPR-33046).
+* Replicación de Duplicados de las carpetas principales que causan conflictos (NPR-33001).
+
+### Communities {#communities-6550}
+
+* No se puede eliminar una tarjeta en la consola de moderación mediante la opción de menú de edición rápida (NPR-33117).
+* Se produce un error al acceder a la página Flujo [!UICONTROL de] Actividad (NPR-33146).
+* Los grupos eliminados en la instancia de autor no se eliminan de todas las instancias de publicación (NPR-33199).
+* Después de crear un nuevo grupo, los autores no se redirigen a la sección Grupo [!UICONTROL de] comunidad del [!DNL Internet Explorer] 11 (NPR-33205).
+* El acceso a un mensaje en la Bandeja de entrada de AEM no cambia el estado del mensaje a Leído (NPR-32764).
+* Editar un [!DNL Communities] grupo y cambiar la imagen en miniatura no actualiza la imagen en miniatura del grupo (NPR-32599).
+* Un usuario no puede enviar un correo electrónico a otro usuario de una comunidad (NPR-32598).
+* Un blog enviado no se muestra hasta que el usuario actualiza la página (NPR-32391).
+* Al crear una versión de las notificaciones y suscripciones de contenido generado por el usuario (UGC), se almacena un ID incorrecto de la página de origen (CQ-4279355, CQ-4289703).
+
+### Flujo de trabajo {#workflow-6550}
+
+* La opción [!UICONTROL Línea de tiempo] del carril izquierdo tarda más tiempo en cargarse de lo esperado (NPR-32851).
+* Después de reiniciar una instancia de AEM, el correo electrónico de la tarea de revisión de una colección incluye un vínculo de carga útil incorrecto (NPR-32774).
+
+### Forms {#forms-6550}
 
 >[!NOTE]
 >
 >Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
-* Administración de correspondencia: Las letras muestran caracteres adicionales después del envío a los flujos de trabajo del proceso de publicación (NPR-32626).
+* Administración de correspondencia: El orden de los activos en una zona de destinatario se desplaza después de enviar una carta (NPR-33359, NPR-33153).
+* Formularios adaptables: Cuando un usuario edita un formulario adaptable, la opción Flujo de trabajo [!UICONTROL de] Inicio disponible en el menú Información [!UICONTROL de] página no funciona (NPR-33004).
+* Formularios adaptables: El usuario no puede guardar un formulario adaptable con más de un archivo adjunto (NPR-32997).
+* Formularios adaptables: Si se cambia la presentación del panel en un formulario adaptable, se producirá un error (CQ-4293880).
+* Formularios adaptables: Una nueva línea de una cadena en un diccionario de formularios adaptables agrega `&#xa;` caracteres al diccionario (NPR-33266).
+* Accesibilidad de formularios adaptables: Cuando un usuario previsualización un formulario adaptable como formulario HTML, el campo Firma [!UICONTROL de] garabatos no puede mantener el enfoque de tabulación (NPR-33159).
+* Accesibilidad de formularios adaptables: Los mensajes de error que se muestran al enviar un formulario adaptable no se vinculan a un `aria-describedBy` atributo (NPR-33071).
+* Accesibilidad de formularios adaptables: Los campos marcados como obligatorios en un formulario adaptable no tienen el atributo obligatorio establecido en True en el esquema de accesibilidad ARIA (NPR-33070).
+* Servicio PDFG: Cuando un usuario convierte un archivo de texto a un PDF, los caracteres japoneses no se representan correctamente (NPR-33238).
+* Servicio PDFG: `CreatePDF` no se puede convertir un archivo PDF al formato OCR PDF (NPR-32994).
+* Servicio PDFG: La conversión a PDF falla en la 200ª instancia de un [!DNL OpenOffice] documento (NPR-32766).
+* BackendIntegration: Las solicitudes del modelo de datos de formulario fallan al caducar el token de actualización debido a un estado inactivo incorrecto (NPR-33169).
+* Designer: Los lectores de pantalla ejecutan el orden de tabulación en función del orden geográfico predeterminado en lugar del orden de tabulación personalizado definido en el archivo XDP (NPR-32160).
+* Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32778).
 
-* Administración de correspondencia: Las letras muestran un marcador de posición desplegable como un componente de texto después de enviarlo a flujos de trabajo posteriores al proceso (NPR-32539).
-
-* Administración de correspondencia: Los valores predeterminados definidos en la plantilla de letras no se muestran en el modo de Previsualización (NPR-32511).
-
-* Formularios móviles: El botón de envío se muestra con un tamaño ampliado mientras se procesa un formulario XDP en una versión HTML (NPR-32514).
-
-* Servicios de Documento: Problemas de acceso a URL para cartas y otras páginas después de aplicar Service Pack 2 (NPR-32508, NPR-32509).
-
-* Servicios de Documento: Si el número de transacciones en un servidor supera un límite específico, la conversión de HTML a PDF falla y la configuración del tipo de archivo se elimina del servidor de AEM Forms (NPR-32204).
-
-* Formularios adaptables: La herramienta de accesibilidad de navegadores informa de errores en formularios adaptables según las directrices WCAG2 de nivel AA (NPR-32312, NPR-32309, CQ-4285439).
-
-* Formularios adaptables: La herramienta de accesibilidad del navegador Chrome informa de un error de práctica recomendada (NPR-32310).
-
-* Formularios adaptables: Problemas de traducción al configurar un formulario adaptable incrustado en una página Sitios de AEM (NPR-32168).
-
-* Área de trabajo: Aparece un mensaje de error al utilizar la operación Obtener propiedades de PDF para el servicio Utilidades de PDF (NPR-32150).
-
-* Seguridad de Documento: Un archivo PDF protegido no se puede abrir sin conexión con la opción DisableGlobalOfflineSynchronizationData establecida en True (NPR-32078).
-
-* Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32547, NPR-31983, NPR-31950).
-
-* Designer: Si hay celdas combinadas en una tabla, la prueba de accesibilidad falla para el archivo PDF de salida convertido desde un formulario XDP mediante el servicio de salida (CQ-4285372).
-
-* Foundation JEE: Si un servidor de AEM Forms está desconectado de un clúster, los problemas de almacenamiento en caché impiden que se vuelva a conectar al servidor (NPR-32412).
-
-## Install 6.5.4.0 {#install}
+## Install 6.5.5.0 {#install}
 
 **Requisitos de configuración**
 
-* AEM 6.5.4.0 requires AEM 6.5. Check [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* AEM 6.5.5.0 requires AEM 6.5. Check [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * La descarga del Service Pack está disponible en la opción de uso compartido de paquetes de Adobe, a la que puede acceder directamente desde la instancia de AEM 6.5.
-* En una implementación con MongoDB y varias instancias, instale AEM 6.5.4.0 en una de las instancias de creación mediante el Administrador de paquetes.
-* Antes de instalar el paquete de servicio, asegúrese de disponer de una instantánea o una copia de seguridad nueva de su instancia de AEM.
+* En una implementación con MongoDB y varias instancias, instale AEM 6.5.5.0 en una de las instancias de creación mediante el Administrador de paquetes.
+* Antes de realizar la instalación, realice una instantánea o una copia de seguridad nueva de la instancia de AEM.
 * Reinicie la instancia antes de la instalación. Aunque esto solo es necesario cuando la instancia sigue en modo de actualización (y este es el caso cuando la instancia se actualizó desde una versión anterior), se recomienda si la instancia se ejecutó durante un período más largo.
-
->[!CAUTION]
->
->Adobe no recomienda quitar o desinstalar el paquete AEM 6.5.4.0.
-
-### Instalación de la instancia de Service Pack mediante el uso compartido de paquetes {#install-service-pack-via-package-share}
-
-Siga estos pasos para instalar el paquete de servicio en una instancia de AEM 6.5 existente:
-
-1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.4.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0).
-
-1. Instale el paquete descargado mediante el Administrador de paquetes.
 
 >[!NOTE]
 >
->**El cuadro de diálogo en la IU del administrador de paquetes a veces se cierra de forma precipitada durante la instalación de 6.5.4.0**
+>Adobe no recomienda quitar o desinstalar el paquete AEM 6.5.5.0.
+
+### Instalación de Service Pack {#install-service-pack}
+
+Siga estos pasos para instalar el paquete de servicio en una instancia de AEM 6.5 existente:
+
+1. Haga clic en el vínculo [Uso compartido](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) de paquetes o Distribución [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) para descargar el paquete.
+
+1. Abra el Administrador [de paquetes](http://localhost:4502/crx/packmgr/index.jsp) y haga clic en **Cargar paquete** para cargar el paquete.
+
+1. Seleccione el nombre del paquete y haga clic en **Instalar**.
+
+>[!NOTE]
+>
+>**El cuadro de diálogo en la IU del administrador de paquetes a veces se cierra de forma precipitada durante la instalación de 6.5.5.0**
 >
 >Por lo tanto, se recomienda esperar a que los registros de errores se estabilicen antes de acceder a la instancia. El usuario tiene que esperar a que se produzcan registros específicos relacionados con la desinstalación del paquete de actualización antes de asegurarse de que las instalaciones se realizan correctamente. Suele suceder en Safari, pero puede suceder de forma intermitente en cualquier navegador.
 
 **Instalación automática**
 
-Existen dos formas de instalar automáticamente AEM 6.5.4.0 en una instancia en ejecución:
+Existen dos formas de instalar automáticamente AEM 6.5.5.0 en una instancia en ejecución:
 
-A. Coloque el paquete en ..*carpeta /crx-quickstart/install* mientras el servidor está disponible en línea. El paquete se instala automáticamente.
+A. Coloque el paquete en la `../crx-quickstart/install ` carpeta mientras el servidor esté disponible en línea. El paquete se instala automáticamente.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - make sure that you use cmd=install&amp;recursive=true - so the nested packages  are  installed.
+B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - make sure that you use `cmd=install&recursive=true` - so the nested packages  are  installed.
 
 >[!NOTE]
 >
->AEM 6.5.4.0 no admite la instalación de Bootstrap.
+>AEM 6.5.5.0 no admite la instalación de Bootstrap.
 
 **Validar la instalación**
 
-1. La página Información del producto (/system/console/ productinfo) muestra la cadena de versión actualizada `Adobe Experience Manager, Version 6.5.4.0` en Productos instalados.
+1. La página Información del producto (/system/console/ productinfo) muestra la cadena de versión actualizada `Adobe Experience Manager, Version 6.5.5.0` en Productos instalados.
 
 1. All  OSGi  bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: /system/console/bundles).
-1. El paquete OSGI org.apache.jackrabbit.oak-core está en la versión 1.10.6 o superior (utilice la consola web: /system/console/buncles).
+1. The OSGI bundle `org.apache.jackrabbit.oak-core` is on version 1.10.6 or higher (Use Web Console: `/system/console/bundles`).
 
 In order to see what platforms are certified to run with this release, please refer to the [Technical Requirements](/help/sites-deploying/technical-requirements.md).
 
@@ -313,10 +378,6 @@ In order to see what platforms are certified to run with this release, please re
 >[!NOTE]
 >
 >Omita este paso si no utiliza AEM Forms. Las correcciones en AEM Forms se entregan mediante un paquete de complementos independiente.
-
->[!NOTE]
->
->AEM 6.5.4.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y la actualiza a AEM 6.5.4.0, instale la versión más reciente del paquete de compatibilidad de AEM Forms después de la instalación del paquete de complemento de Forms.
 
 1. Asegúrese de que ha instalado el Service Pack de AEM.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) for your operating system.
@@ -328,15 +389,11 @@ In order to see what platforms are certified to run with this release, please re
 >
 >Omita este paso si no utiliza AEM Forms en JEE. Las correcciones en AEM Forms en JEE se entregan a través de un instalador independiente.
 
-For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
-
-#### Instalador de Workbench
-
-Como es un instalador completo, el tamaño del archivo es mayor que el de la versión del parche. Desinstale la versión anterior de Workbench antes de instalar la nueva.
+For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0014](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
 
 ### UberJar {#uber-jar}
 
-The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
+The UberJar for AEM 6.5.5.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -344,21 +401,7 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.5.4</version>
-      <classifier>apis</classifier>
-      <scope>provided</scope>
-</dependency>
-```
-
-La versión actualizada de UberJar para 6.5.4.0 que incluye el paquete **com.fasterxml.jackson.core.async** está disponible en el repositorio [de](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe Public Maven.
-
-Si utiliza la versión actualizada de UberJar, incluya la siguiente dependencia en el POM del proyecto:
-
-```shell
-<dependency>
-      <groupId>com.adobe.aem</groupId>
-      <artifactId>uber-jar</artifactId>
-      <version> 6.5.4-1.0</version>
+      <version>6.5.5</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
@@ -366,7 +409,7 @@ Si utiliza la versión actualizada de UberJar, incluya la siguiente dependencia 
 
 ## Funciones en desuso {#removed-deprecated-features}
 
-Esta sección lista las funciones y funciones que se han marcado como obsoletas en AEM 6.5.4.0. Las funciones que se planea eliminar en una versión futura se definen como obsoletas en primer lugar, con una opción alternativa para su uso.
+Esta sección lista las funciones y funciones que se han marcado como obsoletas en AEM 6.5.5.0. Las funciones que se planea eliminar en una versión futura se definen como obsoletas en primer lugar, con una opción alternativa para su uso.
 
 Se aconseja a los clientes que revisen si utilizan la función o la capacidad en su implementación actual y que planifiquen cambiar su implementación para utilizar la opción alternativa.
 
@@ -376,34 +419,41 @@ Se aconseja a los clientes que revisen si utilizan la función o la capacidad en
 
 ## Problemas conocidos {#known-issues}
 
-* Si **el asistente para configuración** de recursos conectados devuelve un mensaje de error 404 después de la instalación, vuelva a instalar manualmente los paquetes **cq-remotedam-client-ui-content** y **cq-remotedam-client-ui-components** mediante el Administrador de paquetes.
+* Si va a instalar [!DNL Experience Manager] 6.5.5.0 con [!DNL Java] 11, reinicie el servidor después de instalar el Service Pack. No es necesario reiniciar el equipo si está instalando el Service Pack con [!DNL Java] 8.
+
+* Si se cambia el nombre de una carpeta en la jerarquía [!DNL Experience Manager Assets] y se publica en la carpeta anidada que contiene un recurso, [!DNL Brand Portal]el título de la carpeta no se actualiza en [!DNL Brand Portal] hasta que se vuelva a publicar la carpeta raíz.
+
+* La actualización de [!DNL chrome] la versión 83 está causando un problema al compilar paquetes. Use otros exploradores disponibles, como [!DNL Internet Explorer] y [!DNL Firefox], u otras opciones de instalación de paquetes estándar de AEM para resolver el problema.
+
+* No se puede enviar un correo electrónico al servidor SMTP remoto mediante el remitente de correo predeterminado de AEM, ya que solo permite la comunicación mediante TLS v1.2. Quite el paquete `javax.mail:mail:1.5.0-b01` de `system/console` y actualice los paquetes para resolver el problema.
+
+* Cuando un usuario selecciona configurar un campo por primera vez en un formulario adaptable, la opción para guardar una configuración no se muestra en el navegador de propiedades. Si selecciona configurar otro campo del formulario adaptable en el mismo editor, se resuelve el problema.
+
+* Si [!UICONTROL el asistente para la configuración] de recursos conectados devuelve un mensaje de error 404 después de la instalación, vuelva a instalar manualmente los paquetes `cq-remotedam-client-ui-content` y `cq-remotedam-client-ui-components` mediante el Administrador de paquetes.
+
 * Durante la instalación de AEM 6.5.x.x pueden aparecer los siguientes errores y mensajes de advertencia:
    * &quot;Cuando la integración de Target se configura en AEM mediante la API de Target Standard (autenticación IMS), la exportación de fragmentos de experiencia a Target provoca la creación de tipos de ofertas incorrectos. En lugar de tener que escribir &quot;Fragmento de experiencias&quot;/origen &quot;Adobe Experience Manager&quot;, Destino, se crean varias ofertas con el tipo &quot;HTML&quot;/origen &quot;Adobe Target Classic&quot;.
-   * com.adobe.granite.maintenance.impl.TaskScheduler: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
    * La validación del lado del servidor de Formulario adaptable falla cuando se utilizan funciones acumuladas como SUM, MAX y MIN. CQ-4274424
-   * com.adobe.granite.maintenance.impl.TaskScheduler: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
    * La zona interactiva de una imagen interactiva de Dynamic Media no está visible al obtener una vista previa del recurso a través del visor de banners a la venta.
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de contenido incluidos en AEM 6.5.4.0
+Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de contenido incluidos en AEM 6.5.5.0:
 
-Lista de paquetes OSGi incluidos en AEM 6.5.4.0
+* [Lista de paquetes OSGi incluidos en AEM 6.5.5.0](assets/6550_bundles.txt)
 
-[Obtener archivo](assets/6540_bundles.txt)
-
-Lista de paquetes de contenido incluidos en AEM 6.5.4.0
-
-[Obtener archivo](assets/6540_packages.txt)
+* [Lista de paquetes de contenido incluidos en AEM 6.5.5.0](assets/6550_packages.txt)
 
 ## Restricted sites {#restricted-sites}
 
 Estos sitios solo están disponibles para los clientes. Si es un cliente y necesita obtener acceso, póngase en contacto con su administrador de cuentas de Adobe.
 
 * [Descarga de productos en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con el servicio de asistencia](https://daycare.day.com/public/contact.html)al cliente Para obtener más información sobre el acceso al portal de asistencia técnica, consulte [Acceso al portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)de asistencia técnica.
+* [Póngase en contacto con el servicio de asistencia](https://docs.adobe.com/content/help/en/customer-one/using/home.html)al cliente Para obtener más información sobre el acceso al portal de asistencia técnica, consulte [Acceso al portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)de asistencia técnica.
 
->[!MORE COMO ESTO]
+>[!MORELIKETHIS]
 >
 >* [Notas de la versión de AEM 6.5](/help/release-notes/release-notes.md)
 >* [Página de productos AEM](https://www.adobe.com/solutions/web-experience-management.html)
