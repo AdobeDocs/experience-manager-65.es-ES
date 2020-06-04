@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 2%
 
 ---
 
@@ -21,6 +24,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
 
 **Con actualización a 6.5**
 
+* [Configuración de ContextHub](#contexthub-6.5)
 * [Instancias de flujo de trabajo](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
 * [Modelos de flujo de trabajo](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [Lanzadores de flujo de trabajo](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
@@ -30,25 +34,40 @@ Como se describe en la página principal Reestructuración [del repositorio en A
 
 * [Configuración de ContextHub](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
 * [Diseños de servicios de nube clásicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
-* [Diseños de tableros clásicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
+* [Diseños de Paneles clásicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
 * [Diseños de informes clásicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
 * [Diseños predeterminados](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
 * [Extremo JavaScript de Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-javascript-endpoint)
 * [Extremo de enlace web de Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-web-hook-endpoint)
 * [Tareas de la bandeja de entrada](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#inbox-tasks)
 * [Configuraciones del modelo del administrador de varios sitios](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
-* [Configuraciones de gadget del panel de proyectos de AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
+* [Configuraciones del gadget de Panel de AEM Projects](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
 * [Plantilla de correo electrónico de notificación de replicación](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#replication-notification-e-mail-template)
 * [Etiquetas](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)
-* [Servicios de traducción en la nube](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
+* [Cloud Services de traducción](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
 * [Idiomas de traducción](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-languages)
 * [Reglas de conversión](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
 * [Biblioteca del cliente de utilidades de traducción](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
-* [Consola Web de activación de árbol](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
+* [Consola web de Activación de árbol](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
 * [Servicios de nube de conector de traducción de proveedores](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
 * [Plantillas de correo electrónico de notificación de flujo de trabajo](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## Con actualización a 6.5 {#with-upgrade}
+
+### Configuración de ContextHub {#contexthub-6.5}
+
+A partir de AEM 6.4, no hay ninguna configuración predeterminada de ContextHub. Por lo tanto, en el nivel raíz del sitio `cq:contextHubPathproperty` debe establecerse una configuración que indique qué configuración debe utilizarse.
+
+1. Navegue hasta la raíz del sitio.
+1. Abra las propiedades de página de la página raíz y seleccione la ficha Personalización.
+1. En el campo Ruta de Contexthub, introduzca su propia ruta de configuración de ContextHub.
+
+Además, en la configuración de ContextHub, `sling:resourceType` es necesario actualizarla para que sea relativa y no absoluta.
+
+1. Abra las propiedades del nodo de configuración de ContextHub en CRX DE Lite, por ejemplo: `/apps/settings/cloudsettings/legacy/contexthub`
+1. Cambiar `sling:resourceType` de `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` a `granite/contexthub/cloudsettings/components/baseconfiguration`
+
+Es decir, la configuración `sling:resourceType` de ContextHub debe ser relativa en lugar de absoluta.
 
 ### Modelos de flujo de trabajo {#workflow-models}
 
@@ -241,10 +260,10 @@ Como se describe en la página principal Reestructuración [del repositorio en A
      <li>Actualice las referencias a la ubicación anterior en la <span class="code">página <code>
         cq
        </code>:
-      <code>
+       <code>
         designPath
-       </code></span> .</li>
-     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
+       </code></span> propiedad.</li>
+     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría de biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
      <li>Actualice las reglas de AEM Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se administre en SCM y se modifique en tiempo de ejecución mediante los diálogos de diseño.</p>
     <ul>
@@ -258,7 +277,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
  </tbody>
 </table>
 
-### Diseños de tableros clásicos {#classic-dashboards-designs}
+### Diseños de Paneles clásicos {#classic-dashboards-designs}
 
 <table>
  <tbody>
@@ -281,8 +300,8 @@ Como se describe en la página principal Reestructuración [del repositorio en A
       </code>:
       <code>
        designPath
-      </code> .</li>
-     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
+      </code> propiedad.</li>
+     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría de biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
      <li>Actualice las reglas de AEM Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se administre en SCM y se modifique en tiempo de ejecución mediante los diálogos de diseño.</p>
     <ul>
@@ -319,8 +338,8 @@ Como se describe en la página principal Reestructuración [del repositorio en A
       </code>:
       <code>
        designPath
-      </code> .</li>
-     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
+      </code> propiedad.</li>
+     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría de biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
      <li>Actualice las reglas de AEM Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se administre en SCM y se modifique en tiempo de ejecución mediante los diálogos de diseño.</p>
     <ul>
@@ -357,8 +376,8 @@ Como se describe en la página principal Reestructuración [del repositorio en A
       </code>:
       <code>
        designPath
-      </code> .</li>
-     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
+      </code> propiedad.</li>
+     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría de biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
      <li>Actualice las reglas de AEM Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se administre en SCM y se modifique en tiempo de ejecución mediante los diálogos de diseño.</p>
     <ul>
@@ -432,14 +451,14 @@ Como se describe en la página principal Reestructuración [del repositorio en A
   </tr>
   <tr>
    <td><strong>Orientación de reestructuración</strong></td>
-   <td>Utilice la tarea <strong>de mantenimiento Depurar</strong> bandeja de entrada para quitar tareas antiguas de la ubicación anterior según sea necesario.</td>
+   <td>Utilice la Tarea <strong>de mantenimiento Depurar</strong> bandeja de entrada para quitar tareas antiguas de la ubicación anterior según sea necesario.</td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
    <td><p>No se requiere ninguna acción para migrar Tareas a la nueva ubicación.</p>
     <ul>
-     <li>Las tareas presentes en la Ubicación anterior siguen estando disponibles y funcionando.</li>
-     <li>Las tareas nuevas se crean en la nueva ubicación.</li>
+     <li>Las Tareas presentes en la Ubicación anterior siguen estando disponibles y funcionando.</li>
+     <li>Las nuevas Tareas se crean en la nueva ubicación.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -472,7 +491,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
  </tbody>
 </table>
 
-### Configuraciones de gadget del panel de proyectos de AEM {#aem-projects-dashboard-gadget-configurations}
+### Configuraciones del gadget de Panel de AEM Projects {#aem-projects-dashboard-gadget-configurations}
 
 <table>
  <tbody>
@@ -486,11 +505,11 @@ Como se describe en la página principal Reestructuración [del repositorio en A
   </tr>
   <tr>
    <td><strong>Orientación de reestructuración</strong></td>
-   <td><p>Todas las configuraciones de gadget de tablero de AEM Projects nuevas o modificadas deben migrarse a la nueva ubicación (<code>/apps</code>).</p>
+   <td><p>Las configuraciones de gadget de Panel de AEM Projects nuevas o modificadas deben migrarse a la nueva ubicación (<code>/apps</code>).</p>
     <ol>
-     <li>Copie las configuraciones de gadget de tablero de AEM Projects nuevas o modificadas de la ubicación anterior a la nueva ubicación (<code>/apps</code>).
+     <li>Copie las configuraciones de gadget de Panel de AEM Projects nuevas o modificadas de la ubicación anterior a la nueva ubicación (<code>/apps</code>).
       <ol>
-       <li>No copie las configuraciones de gadget del panel de AEM Projects sin modificar, ya que ahora existen en la nueva ubicación (<code>/libs</code>).</li>
+       <li>No copie las configuraciones de gadget de Panel de AEM Projects sin modificar, ya que ahora existen en la nueva ubicación (<code>/libs</code>).</li>
       </ol> </li>
      <li>Actualice las plantillas de proyectos de AEM que hagan referencia a la ubicación anterior para que señalen a la nueva ubicación adecuada.</li>
     </ol> </td>
@@ -567,7 +586,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
  </tbody>
 </table>
 
-### Servicios de traducción en la nube {#translation-cloud-services}
+### Cloud Services de traducción {#translation-cloud-services}
 
 <table>
  <tbody>
@@ -697,8 +716,8 @@ Como se describe en la página principal Reestructuración [del repositorio en A
       </code>:
       <code>
        designPath
-      </code> .</li>
-     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
+      </code> propiedad.</li>
+     <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría de biblioteca de clientes (esto requiere actualizar el código de implementación de página).</li>
      <li>Actualice las reglas de AEM Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se administre en SCM y se modifique en tiempo de ejecución mediante los diálogos de diseño.</p>
     <ul>
@@ -712,13 +731,13 @@ Como se describe en la página principal Reestructuración [del repositorio en A
  </tbody>
 </table>
 
-### Consola Web de activación de árbol {#tree-activation-web-console}
+### Consola web de Activación de árbol {#tree-activation-web-console}
 
 | **Ubicación anterior** | `/etc/replication/treeactivation` |
 |---|---|
 | **Nuevas ubicaciones** | `/libs/replication/treeactivation` |
 | **Orientación de reestructuración** | No se requiere ninguna acción. |
-| **Notas** | La consola web de activación de árbol ahora está disponible mediante **Herramientas > Implementación > Replicación > Activar árbol**. |
+| **Notas** | La consola web de Activación de árbol ahora está disponible mediante **Herramientas > Implementación > Replicación > Activar árbol**. |
 
 ### Servicios de nube de conector de traducción de proveedores {#vendor-translation-connector-cloud-services}
 
