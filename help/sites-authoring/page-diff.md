@@ -1,6 +1,6 @@
 ---
-title: Diferencias de página
-seo-title: Diferencias de página
+title: 'Diferencias de página  '
+seo-title: 'Diferencias de página  '
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 seo-description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
@@ -11,12 +11,15 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 99%
 
 ---
 
 
-# Diferencias de página{#page-diff}
+# Diferencias de página  {#page-diff}
 
 ## Introducción {#introduction}
 
@@ -24,9 +27,7 @@ La creación de contenido es un proceso iterativo. La creación con eficiencia d
 
 La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 
->[!CAUTION]
->
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>[!TIP]
 >
 >Consulte [Desarrollo y diferencia de página](/help/sites-developing/pagediff.md#operation-details) para obtener más información técnica sobre esta función.
 
@@ -34,14 +35,14 @@ La función Diferencias de página permite realizar una cómoda comparación en 
 
 La comparación de diferencias en paralelo permite comparar lo siguiente:
 
-* [Versiones](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) : versión anterior de una página con su estado actual
-* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) : Live Copy con su modelo
-* [Lanzamientos](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) : Iniciar con su origen
-* [Copias](/help/sites-administering/tc-manage.md#comparing-language-copies) de idioma: una página antes y después de la (re)traducción
+* [Versiones](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page): versión anterior de una página con el estado actual.
+* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies: Live Copy con su modelo.
+* [Lanzamientos](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page): lanzamiento con su origen.
+* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Copias de idioma: una página antes y después de la traducción.
 
 Consulte los temas correspondientes sobre cómo iniciar la comparación de diferencias en esos contextos.
 
-### Presentación de diferencias {#presentation-of-differences}
+### Presentación de diferencias   {#presentation-of-differences}
 
 Independientemente del contenido que se va a comparar, la presentación de las diferencias sigue siendo la misma.
 
@@ -74,7 +75,7 @@ Tenga en cuenta que los colores de componente modificado y movido son los mismos
 >
 >Al comparar copias de idioma, el resaltado está desactivado, ya que en una traducción cambia todo y el resaltado no proporcionará ninguna ventaja.
 
-### Pantalla completa y salida {#fullscreen-and-exiting}
+### Pantalla completa y salida   {#fullscreen-and-exiting}
 
 Para centrarse en un contenido específico, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del navegador.
 
@@ -90,13 +91,13 @@ También puede cerrar la vista de pantalla completa haciendo clic en el icono pa
 
 Puede salir de la comparación de diferencias en paralelo en cualquier momento haciendo clic en el botón Cerrar del encabezado.
 
-## Restricciones {#limitations}
+## Restricciones   {#limitations}
 
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
 * Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
 * Para las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
-* Si se realiza algún cambio en una imagen, como modificar los atributos alt, title o src, se resaltará en azul como cambiado. Sin embargo, en algunos casos la imagen tiene una representación Base64 del atributo src e incluso si ambas imágenes tienen el mismo aspecto, la diferencia las marcará como diferentes debido a los diferentes atributos src.
+* Si se realizan cambios en una imagen, como la modificación de los atributos alt, title o src, estos se resaltan en azul como modificados. Sin embargo, en algunos casos, la imagen tiene una representación Base64 del atributo src y ambas imágenes tienen el mismo aspecto. La comparación diferencia una de otra debido a los atributos src dispares.
 * La comparación de diferencias no puede detectar la rotación de la imagen.
 * Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
 
