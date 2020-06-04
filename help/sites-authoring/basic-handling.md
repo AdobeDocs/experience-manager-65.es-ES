@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '3010'
-ht-degree: 92%
+source-wordcount: '2979'
+ht-degree: 95%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 92%
    >
 * Algunas funciones no están disponibles en todas las consolas y determinadas consolas pueden disponer de funciones adicionales. La información específica sobre consolas concretas y sus funciones se tratará en más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -52,7 +53,7 @@ Inmediatamente después del inicio de sesión llega al [panel Navegación](#navi
 >
 >Pulse o haga clic en **Sitios** para comenzar.
 
-### Navegación de productos   {#product-navigation}
+### Navegación de productos    {#product-navigation}
 
 Cuando un usuario accede por primera vez a una consola, se inicia un tutorial de navegación por el producto. Dedíquele un momento para ver una buena descripción general del funcionamiento básico de AEM.
 
@@ -74,24 +75,20 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 >
 >La primera vez que inicia sesión se le presenta el panel **Navegación**.
 
-La navegación global dispone de dos paneles, representados por sendos iconos en el lado izquierdo de la pantalla:
+La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
 * **[Navegación](/help/sites-authoring/basic-handling.md#navigation-panel)**: se representa mediante una brújula
 * **[Herramientas](/help/sites-authoring/basic-handling.md#tools-panel)**: se representa mediante un martillo
 
 Las opciones disponibles en estos paneles se describen a continuación.
 
-### Panel de navegación   {#navigation-panel}
+### Panel de navegación    {#navigation-panel}
 
 El panel Navegación proporciona acceso a las consolas de AEM:
 
 ![bh-01](assets/bh-01.png)
 
-El título de la ficha del navegador se actualizará para reflejar su ubicación a medida que navega por las consolas y el contenido.
-
->[!NOTE]
->
->El título de la ficha refleja la ubicación de [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) y versiones posteriores.
+El título de la pestaña del navegador se actualizará para reflejar su ubicación a medida que navegue por las consolas y el contenido.
 
 En Navegación, las consolas disponibles son:
 
@@ -118,7 +115,7 @@ En Navegación, las consolas disponibles son:
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">fragmento de experiencia</a> es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias.</td>
   </tr>
   <tr>
-   <td>Formularios</td>
+   <td>Forms</td>
    <td>Esta consola permite crear, administrar y procesar sus <a href="/help/forms/home.md">formularios y documentos</a>.</td>
   </tr>
   <tr>
@@ -228,15 +225,11 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * Navegación por teclado
 
-   Puede navegar por un sitio web utilizando únicamente el teclado. Esto utiliza la funcionalidad estándar del navegador de la **tecla TAB** (u **OPT+TAB**) para desplazar al usuario entre los elementos de la página que se pueden *enfocar*.
+   Puede navegar por un sitio web utilizando solo el teclado. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*.
 
-   En la consola **Sitios** hay una opción agregada para **Omitir al contenido** principal. Esto se hace visible a medida que se *tabulan* las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto) y llevándolo directamente al contenido principal.
+   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
 
    ![bh-30](assets/bh-30.png)
-
-   >[!NOTE]
-   >
-   >El **paso al contenido** principal está disponible en [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) y versiones posteriores.
 
 ## Acceso a la Ayuda {#accessing-help}
 
@@ -301,7 +294,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >
 >Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas   {#quick-actions}
+## Acciones rápidas    {#quick-actions}
 
 En la [vista de tarjeta](#cardviewquickactions), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -324,7 +317,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 >
 >De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos   {#selecting-resources}
+### Selección de recursos    {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -362,7 +355,7 @@ La selección de un recurso específico depende de la vista y el dispositivo com
     </ul> </td>
   </tr>
   <tr>
-   <td>Vista de lista  </td>
+   <td>Vista de lista   </td>
    <td>
     <ul>
      <li>Escritorio: <br /> haga clic en la miniatura.</li>
@@ -422,6 +415,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 * Puede desplazarse hacia arriba y hacia abajo por el árbol tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha de este nombre.
 
    * El nombre del recurso y las comillas angulares se resaltarán cuando los toque o haga clic en ellos.
+
    ![bh-17](assets/bh-17.png)
 
    * Los elementos secundarios del recurso que ha tocado o en el que ha hecho clic se muestran en la columna a la derecha de dicho recurso.
@@ -433,6 +427,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * Cuando se selecciona una miniatura, sobre ella se superpone una casilla de verificación y el nombre del recurso se muestra resaltado.
    * Los detalles del recurso seleccionado se mostrarán en la última columna.
    * La barra de herramientas de acciones estará disponible.
+
    ![bh-18](assets/bh-18.png)
 
    Cuando en la vista de columna hay una página seleccionada, esta se muestra en la última columna, junto a los datos siguientes:
@@ -465,7 +460,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista de lista   {#list-view}
+### Vista de lista    {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -496,6 +491,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * **Análisis de la página**
    * **Visitantes únicos**
    * **Tiempo empleado en la página**
+
    ![bh-21](assets/bh-21.png)
 
    De forma predeterminada se muestra la columna **Nombre**, que es parte de la dirección URL de la página. En algunos casos, el autor puede tener que acceder a páginas en un idioma distinto, y ver el nombre de las mismas (que no suele variar) puede suponer una gran ayuda si se desconoce el idioma de la página.
