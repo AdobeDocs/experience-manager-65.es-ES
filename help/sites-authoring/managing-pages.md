@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 93%
+source-wordcount: '2334'
+ht-degree: 94%
 
 ---
 
@@ -197,6 +197,7 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
    * Seleccione la plantilla que desea utilizar para crear la nueva página y, a continuación, toque o haga clic en **Siguiente** para continuar.
 
    * **Haga clic en Cancelar** para anular el proceso.
+
    ![caop-04](assets/caop-04.png)
 
 1. En el último paso del asistente puede realizar una de las acciones siguientes:
@@ -204,6 +205,7 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
    * Utilice las tres pestañas para especificar las [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página; a continuación, pulse o haga clic en **Crear** para crear la página.
 
    * Utilice **Atrás** para volver a la selección de plantillas.
+
    Los campos clave son:
 
    * **Título**:
@@ -246,6 +248,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) y la barra de herramientas
+
    A continuación, seleccione el icono **Editar**:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -264,6 +267,7 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) y la barra de herramientas
+
    A continuación, seleccione el icono de la página **Copiar**:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -279,8 +283,6 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
    Puede:
    * Seleccione el icono **Pegar** página: En esta ubicación, se creará una copia de la página original y de las páginas secundarias.
    * Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios**. Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
-   >[!NOTE]
-   La opción **Pegar sin elementos secundarios** está disponible a partir de [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
    >[!NOTE]
    Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
@@ -306,6 +308,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) y la barra de herramientas
+
    A continuación, seleccione el icono **Mover página**:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -317,6 +320,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
    * Especifique el nombre que desea que tenga la página cuando se haya desplazado y, a continuación, toque o haga clic en **Siguiente** para continuar.
 
    * **Haga clic en Cancelar** para anular el proceso.
+
    ![caop-07](assets/caop-07.png)
 
    El nombre de la página puede seguir siendo el mismo si solo va a mover la página.
@@ -331,6 +335,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
       * Seleccione el destino haciendo clic en la miniatura de destino.
       * Haga clic en **Siguiente** para continuar.
    * Utilice **Volver** para volver al apartado para especificar el nombre de la página.
+
    >[!NOTE]
    De forma predeterminada, el elemento principal de la página que está moviendo o cuyo nombre va a cambiar se selecciona como destino.
 
