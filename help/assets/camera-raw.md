@@ -3,9 +3,9 @@ title: Compatibilidad con [!DNL Adobe Camera Raw].
 description: Aprenda a [!DNL Adobe Camera Raw] habilitar la compatibilidad con [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Puede activar la [!DNL Adobe Camera Raw] compatibilidad para procesar formatos d
 
 Para habilitar [!DNL Camera Raw] la compatibilidad en [!DNL Experience Manager Assets], siga estos pasos:
 
-1. Descargue el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw desde Package Share.
+1. Descargue el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw desde Package Share o desde [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg).
 1. Acceso `https://[aem_server]:[port]/workflow`. Abra el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM.
 1. Abra el paso Miniaturas **[!UICONTROL de proceso]** .
 1. Proporcione la siguiente configuración en la ficha **[!UICONTROL Miniaturas]** :
@@ -32,7 +32,7 @@ Para habilitar [!DNL Camera Raw] la compatibilidad en [!DNL Experience Manager A
 
 1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, en el campo **[!UICONTROL Omitir Lista]** , especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
-   ![chlimage_1-127](assets/chlimage_1-335.png)
+   ![chlimage_1-129](assets/chlimage_1-335.png)
 
 1. Desde el panel lateral, agregue el paso Controlador **[!UICONTROL RAW de cámara/DNG]** debajo del paso de creación **[!UICONTROL de]** miniaturas.
 1. En el paso Controlador **[!UICONTROL Raw de cámara/DNG]** , agregue la siguiente configuración en la ficha **[!UICONTROL Argumentos]** :
