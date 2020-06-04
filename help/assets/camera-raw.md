@@ -3,9 +3,9 @@ title: Compatibilidad con [!DNL Adobe Camera Raw].
 description: Aprenda a [!DNL Adobe Camera Raw] habilitar la compatibilidad con [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: bf840b0e13e58f961c32b0231e4b691cb47b947a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Procesamiento de imágenes con Camera Raw {#camera-raw-support}
 
-Puede activar la [!DNL Adobe Camera Raw] compatibilidad para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en [!DNL Adobe Experience Manager Assets] el uso del paquete [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de Camera Raw disponible mediante Package Share.
+Puede activar la [!DNL Adobe Camera Raw] compatibilidad para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad es compatible con [!DNL Adobe Experience Manager Assets] el uso del paquete [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de Camera Raw disponible mediante Package Share o desde [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
 >[!NOTE]
 >
@@ -21,13 +21,14 @@ Puede activar la [!DNL Adobe Camera Raw] compatibilidad para procesar formatos d
 
 Para habilitar [!DNL Camera Raw] la compatibilidad en [!DNL Experience Manager Assets], siga estos pasos:
 
-1. Descargue el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw desde Package Share o desde [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg).
+1. Descargue el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw desde Package Share o desde [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 1. Acceso `https://[aem_server]:[port]/workflow`. Abra el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM.
 1. Abra el paso Miniaturas **[!UICONTROL de proceso]** .
 1. Proporcione la siguiente configuración en la ficha **[!UICONTROL Miniaturas]** :
 
    * **[!UICONTROL Miniaturas]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Tipos MIME omitidos]**: `skip:image/dng, skip:image/x-raw-(.*)`
+
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
 1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, en el campo **[!UICONTROL Omitir Lista]** , especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
@@ -44,6 +45,7 @@ Para habilitar [!DNL Camera Raw] la compatibilidad en [!DNL Experience Manager A
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+
    ![chlimage_1-130](assets/chlimage_1-336.png)
 
 1. Haga clic en **[!UICONTROL Guardar]**.
