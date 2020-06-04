@@ -1,8 +1,8 @@
 ---
-title: 'Variaciones: creación de contenido de fragmentos'
-seo-title: 'Variaciones: creación de contenido de fragmentos'
+title: 'Variaciones: Crear contenido de fragmentos'
+seo-title: 'Variaciones: Crear contenido de fragmentos'
 description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
-seo-description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
+seo-description: Las variaciones le permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
 uuid: 0844f271-79bc-4f76-8031-d388b81d6feb
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d5fa8b85f6724097e34edd66745e0daf95d66cc
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 15%
 
 ---
 
 
-# Variaciones: creación de contenido de fragmentos{#variations-authoring-fragment-content}
+# Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-[Las variaciones](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para su uso en canales o escenarios específicos.
+[Las variaciones](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para utilizarlas en canales o escenarios específicos.
 
 Desde la ficha **Variaciones** puede:
 
@@ -32,7 +35,7 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 * [Cargar contenido](#uploading-content)
 
-* [Ver estadísticas](#viewing-key-statistics) clave (acerca de texto multilínea)
+* [Estadísticas](#viewing-key-statistics) de clave de Vista (acerca de texto multilínea)
 * [Resumir texto](#summarizing-text)
 
 * [Sincronizar variaciones con contenido principal](#synchronizing-with-master)
@@ -57,7 +60,7 @@ Por ejemplo:
 
 * Edición de un fragmento simple
 
-   Un fragmento simple consta de un campo de texto multilínea (se pueden añadir recursos visuales desde el editor de pantalla completa).
+   Un fragmento simple consiste en un campo de texto multilínea (se pueden añadir recursos visuales desde el editor de pantalla completa).
 
    ![cfm-6420-21](assets/cfm-6420-21.png)
 
@@ -111,8 +114,8 @@ La edición de texto enriquecido le permite dar formato:
 * Cursiva
 * Subrayado
 * Alineación: izquierda, centro, derecha
-* Lista con viñetas
-* Lista numerada
+* lista con viñetas
+* lista numerada
 * Sangría: aumentar, disminuir
 * Crear/romper hipervínculos
 * Abra el editor de pantalla completa, donde están disponibles las siguientes opciones de formato:
@@ -121,7 +124,7 @@ La edición de texto enriquecido le permite dar formato:
    * Insertar una tabla
    * Estilo de párrafo: Párrafo, Encabezado 1/2/3
    * [Inserción de recursos visuales](#inserting-assets-into-your-fragment)
-   * Búsqueda
+   * Búsqueda  
    * Buscar/Reemplazar
    * Corrector ortográfico
    * [Anotaciones](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)
@@ -134,7 +137,7 @@ El texto sin formato permite una rápida entrada de contenido sin formato ni inf
 
 >[!CAUTION]
 >
->Si selecciona **Texto** sin formato, puede perder cualquier formato, marca o recurso que haya insertado en Texto **** enriquecido o en **Marcado**.
+>Si selecciona **Texto sin formato**, puede perder cualquier formato, marca o recurso que haya insertado en **Texto enriquecido** o **Marcado**.
 
 ### Markdown {#markdown}
 
@@ -158,11 +161,11 @@ También puede abrir el editor de pantalla completa para realizar más [acciones
 
 >[!CAUTION]
 >
->Si cambia entre Texto **** enriquecido y **Marcado** , puede que se produzcan efectos inesperados con Comillas de bloque y Bloques de código, ya que estos dos formatos pueden tener diferencias en la forma en que se gestionan.
+>Si cambia entre **Texto enriquecido** y **Marcado**, puede que se produzcan efectos inesperados con Comillas de bloque y Bloques de código, ya que estos dos formatos pueden tener diferencias en la forma en que se gestionan.
 
 ### Visualización de estadísticas clave {#viewing-key-statistics}
 
-Cuando el editor de pantalla completa está abierto, la acción Estadísticas **de** texto mostrará un rango de información sobre el texto. Por ejemplo:
+Cuando el editor de pantalla completa está abierto, la acción **Estadísticas de texto** mostrará un rango de información sobre el texto. Por ejemplo:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
@@ -190,12 +193,12 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 >
 >El inglés está disponible de forma predeterminada.
 >
->Otros idiomas están disponibles como Paquetes de modelo de idioma en Uso compartido de paquetes:
+>Otros idiomas están disponibles como Paquetes de modelo de idioma desde Uso compartido de paquetes o Distribución de software:
 >
->* [Francés(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemán(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Español(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francés (fr) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) o [francés (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemán (de) desde Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) o [alemán (de) desde Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) o [italiano (it) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Español (es) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) o [español (es) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -207,7 +210,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 
    ![cf-17](assets/cf-17.png)
 
-1. Especifique el número de palabras objetivo y seleccione **Inicio**:
+1. Especifique el número de palabras del destinatario y seleccione **Inicio**:
 1. El texto original se muestra junto con el resumen propuesto:
 
    * Las oraciones que se van a eliminar se resaltan en rojo, con huelga.
@@ -282,8 +285,8 @@ Se añadirán a la secuencia de párrafos del fragmento sin ningún formato; el 
    >
    >Si, después de agregar un recurso, cambia el formato a:
    >
-   >* **Texto** sin formato: el recurso se perderá completamente del fragmento.
-   >* **Marcado**: el recurso no estará visible, pero permanecerá allí cuando vuelva a Texto **** enriquecido.
+   >* **Texto sin formato**: El recurso se perderá completamente del fragmento.
+   >* **Marcado**: El recurso no estará visible, pero permanecerá allí cuando vuelva a **Texto enriquecido**.
 
 
 ## Administración de variaciones {#managing-variations}
@@ -298,7 +301,7 @@ Para crear una nueva variación:
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
 1. Se abrirá un cuadro de diálogo, especifique el **Título** y la **Descripción** de la nueva variación.
-1. Seleccione **Agregar**; el fragmento **principal** se copiará en la nueva variación, que ahora está abierta para [edición](#editing-a-variation).
+1. Seleccione **Agregar**; el fragmento **principal** se copiará en la nueva variación, que ahora estará abierta para [edición](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -317,11 +320,11 @@ Puede realizar cambios en el contenido de la variación después de:
 
 Para cambiar el nombre de una variación existente:
 
-1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
+1. Open your fragment and select **Variations** from the side panel.
 1. Seleccione la variación requerida.
 1. Seleccione **Cambiar nombre** en la lista desplegable **Acciones** .
 
-1. Introduzca el nuevo **Título** y/o **Descripción** en el cuadro de diálogo resultante.
+1. Introduzca el nuevo **Título** o **Descripción** en el cuadro de diálogo resultante.
 
 1. Confirme la acción **Cambiar nombre** .
 
@@ -333,7 +336,7 @@ Para cambiar el nombre de una variación existente:
 
 Para eliminar una variación existente:
 
-1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
+1. Open your fragment and select **Variations** from the side panel.
 1. Seleccione la variación requerida.
 1. Seleccione **Eliminar** en la lista desplegable **Acciones** .
 
@@ -351,20 +354,20 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
 >[!CAUTION]
 >
->La sincronización solo está disponible para copiar cambios *de **Master**a la variación*.
+>La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 >
 >Solo se sincronizará el elemento actual de la variación.
 >
->La sincronización solo funciona en el tipo de datos de texto **** de varias líneas.
+>La sincronización solo funciona en el tipo de datos de **texto de varias líneas**.
 >
->No está disponible como opción la transferencia *de cambios de una variación a **Maestro ***.
+>No está disponible como opción la transferencia de cambios *de una variación **a Principal ***.
 
 1. Abra el fragmento de contenido en el editor de fragmentos. Asegúrese de que se ha editado la **página maestra** .
 1. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
 
    * el selector desplegable **Acciones** - **Sincronizar el elemento actual con el maestro**
 
-   * la barra de herramientas del editor de pantalla completa: **Sincronizar con el maestro**
+   * la barra de herramientas del editor de pantalla completa: **Sincronizar con el editor maestro**
 
 1. El patrón y la variación se mostrarán en paralelo:
 
