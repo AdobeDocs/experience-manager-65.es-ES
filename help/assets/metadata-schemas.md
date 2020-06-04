@@ -3,9 +3,9 @@ title: 'esquemas de metadatos para definir la presentación de la página de pro
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2709'
 ht-degree: 7%
 
 ---
@@ -119,7 +119,7 @@ Los siguientes son los valores válidos para esta propiedad:
 
 * `./jcr:content/metadata/dc:title`: Almacena el valor en el nodo de metadatos del recurso como propiedad `dc:title`.
 
-* `./jcr:created`:: Muestra la propiedad JCR en el nodo del recurso. Si configura estas propiedades, Adobe recomienda marcarlas como Deshabilitar edición. Las propiedades están protegidas. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`:: Muestra la propiedad JCR en el nodo del recurso. Si configura estas propiedades, Adobe recomienda marcarlas como Deshabilitar edición y no enlazar ningún campo de fecha a `./jcr:created`. Es una propiedad protegida. Cuando los usuarios de DAM intentan actualizar recursos, se produce un error al modificar [!UICONTROL los]recursos. Si decide asignar un campo de fecha a esta propiedad JCR, utilice el esquema predeterminado. Copie el esquema de metadatos predeterminado proporcionado por Adobe y modifíquelo, ya que se asigna al campo de fecha del esquema predeterminado `./jcr:created`.
 
 Para asegurarse de que el componente se muestra correctamente en el formulario de esquema de metadatos, la ruta de la propiedad no debe incluir espacios.
 
