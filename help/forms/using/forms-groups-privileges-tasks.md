@@ -11,7 +11,10 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 1%
 
 ---
 
@@ -66,14 +69,6 @@ Una vez que instale el paquete [de complementos de formularios](../../forms/usin
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-power-user</td> 
-   <td>
-    <ul> 
-     <li>Creación y previsualización de formularios adaptables o plantillas de comunicaciones interactivas</li> 
-     <li>Creación de secuencias de comandos para formularios adaptables o plantillas de comunicaciones interactivas mediante el editor de código</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
    <td><p>fdm-author</p> </td> 
    <td>
     <ul> 
@@ -99,7 +94,7 @@ Una vez que instale el paquete [de complementos de formularios](../../forms/usin
    <td>flujos de trabajo-usuarios</td> 
    <td>
     <ul> 
-     <li>Usar aplicaciones<br /> de bandeja de entrada de AEM <strong>Nota: Para acceder a la interfaz de usuario de Interactive Communications Agent en la bandeja de entrada de AEM, </strong>debe tener asignaciones de grupo de cm-agent-users y de usuarios de flujo de trabajo.</li> 
+     <li>Usar aplicaciones<br /> de bandeja de entrada de AEM <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en la bandeja de entrada de AEM.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>
