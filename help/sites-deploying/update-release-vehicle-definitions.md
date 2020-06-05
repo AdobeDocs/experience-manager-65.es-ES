@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
+source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +52,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
     <ul>
      <li>Nuevas funciones</li>
      <li>Mejoras</li>
-     <li>Correcciones de errores</li>
+     <li>Corrección de errores</li>
     </ul> </td>
   </tr>
   <tr>
@@ -107,7 +110,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
     <ul>
      <li>Nuevas funciones</li>
      <li>Mejoras</li>
-     <li>Correcciones de errores</li>
+     <li>Corrección de errores</li>
      <li>Paquetes de funciones de interés común (si los hay)</li>
     </ul> </td>
   </tr>
@@ -151,7 +154,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td><strong>Definición</strong></td>
    <td>
     <ul>
-     <li>Modelo de entrega única de correcciones de liberación</li>
+     <li>Modelo de envío único de correcciones de liberación</li>
      <li>Paquete de contenido agregado que contiene el paquete de contenido de componentes individuales</li>
      <li>Los archivos CFP son la sustitución de las correcciones rápidas y no se incluyen mejoras.</li>
     </ul> </td>
@@ -190,93 +193,6 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
  </tbody>
 </table>
 
-## Paquete de correcciones acumulativas Oak {#oak-cumulative-fix-pack}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definición</strong></td>
-   <td>
-    <ul>
-     <li>Similar a un CFP estándar, pero solo contiene correcciones relacionadas con Oak</li>
-     <li>COFP es independiente (sin dependencias). Los clientes no tienen por qué preocuparse por encontrar o resolver dependencias. [1]</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Asignación de nombres</strong></td>
-   <td>oak &lt;version&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusiones</strong></td>
-   <td>COFP es un paquete acumulativo de correcciones que contiene correcciones de todos los componentes Oak para una versión 1.x específica. Por ejemplo, si el cliente aplica COHF 1.x.3, entonces COHF 1.x.3. = COHF 1.x.1 + COHF 1.x.2.</td>
-  </tr>
-  <tr>
-   <td><strong>Documentación</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Cadence</strong></td>
-   <td><p>Según sea necesario</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Disponibilidad e instalación</strong></td>
-   <td>
-    <ul>
-     <li>El proceso de instalación de COFP se ha simplificado para mejorar la experiencia del cliente. (Los clientes solo pueden instalar un paquete único para todos los componentes).</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Nivel de prueba</strong></td>
-   <td><p>Control de calidad validado</p> </td>
-  </tr>
- </tbody>
-</table>
-
-## Corrección urgente {#hot-fix}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definición</strong></td>
-   <td><p>Paquete que incluye uno o más archivos creados para resolver un defecto del producto que degrada significativamente los servicios esenciales o que afecta significativamente a las operaciones comerciales. </p> </td>
-  </tr>
-  <tr>
-   <td><strong>Asignación de nombres</strong></td>
-   <td>cq-&lt;Versión&gt;-hotfix-&lt;id. de revisión&gt;-&lt;versión de revisión&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusiones</strong></td>
-   <td>Incluye correcciones para un problema específico</td>
-  </tr>
-  <tr>
-   <td><strong>Documentación</strong></td>
-   <td>Las notas de la versión de las revisiones públicas solo están disponibles en función de la solicitud del cliente a través del portal de asistencia de AEM.</td>
-  </tr>
-  <tr>
-   <td><strong>Cadence</strong></td>
-   <td>Según sea necesario</td>
-  </tr>
-  <tr>
-   <td><strong>Disponibilidad e instalación</strong></td>
-   <td>
-    <ul>
-     <li>Entregado como paquete</li>
-     <li>Disponible en Uso compartido de paquetes</li>
-     <li>Depende del Service Pack más reciente lanzado</li>
-     <li>La mayoría de las correcciones rápidas son independientes, a menos que se especifiquen. Puede instalarse en cualquier orden. Puede verificarse mediante la ficha Detalles de uso compartido de paquetes del elemento Dependencias.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Nivel de prueba</strong></td>
-   <td>
-    <ul>
-     <li>Validado por el Servicio de atención al cliente</li>
-     <li>Las correcciones rápidas de AEM no se benefician del mismo nivel de garantía de calidad que los Service Packs o las versiones de productos. Por lo tanto, primero deben validarse en un entorno de ensayo como parte de los procesos de implementación de calidad.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
-
 ## Superposición {#overlay}
 
 <table>
@@ -306,7 +222,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td>
     <ul>
      <li>Entregado como paquete por el Servicio de atención al cliente de AEM</li>
-     <li>No necesariamente se incluye en los Service Packs o en las versiones completas</li>
+     <li>No necesariamente incluidos en los Service Packs o en las versiones completas</li>
     </ul> </td>
   </tr>
   <tr>
