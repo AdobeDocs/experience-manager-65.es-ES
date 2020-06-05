@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18dc05876337629b7561320ff6f0945e3e785ea3
+source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -29,6 +29,7 @@ ht-degree: 3%
 >
 >* API de REST de recursos
 >* incluida la compatibilidad con fragmentos de contenido
+
 >
 >
 La implementación actual de la API HTTP de AEM Assets es REST.
@@ -129,6 +130,7 @@ Si la API REST de Assets se utiliza en un entorno sin requisitos de autenticaci�
 >
 >* [Se explica CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -292,7 +294,7 @@ Existen algunas limitaciones:
 
 Los siguientes códigos de estado se pueden ver en las circunstancias pertinentes:
 
-* **202 (Aceptar)**
+* **200 (OK)**
 
    Se devuelve cuando:
 
@@ -345,6 +347,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Los mensajes de error detallados suelen devolverse de la siguiente manera:
 
    ```xml
