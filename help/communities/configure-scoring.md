@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
    * https://localhost:4502/system/console/slinglog
 
-1. Seleccione **Agregar nuevo registrador**
+1. Seleccione **Añadir nuevo registrador**
 
    1. Seleccionar `DEBUG` para nivel **de registro**
 
@@ -119,13 +122,13 @@ Para ver las entradas de registro:
 
 ## UGC para puntaje y señalización {#ugc-for-scoring-and-badging}
 
-Es posible ver el UGC relacionado con la puntuación y la insignia cuando el SRP elegido es JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte Información general sobre el proveedor [de recursos de almacenamiento y almacenamiento de contenido](/help/communities/working-with-srp.md) de [](/help/communities/srp.md)la comunidad).
+Es posible realizar una vista del UGC en relación con la puntuación y la insignia cuando el SRP elegido sea JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte Información general sobre el Almacenamiento [de contenido](/help/communities/working-with-srp.md) de la comunidad y el proveedor de recursos de [Almacenamiento](/help/communities/srp.md)).
 
 Las descripciones para acceder a los datos de puntuación y marca utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP del autor**: experimentar en el entorno de creación resulta en UGC que solo es visible desde el entorno de creación.
+**JSRP del autor**: experimentar en el entorno del autor resulta en UGC que solo es visible desde el entorno del autor.
 
-**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios administrativos en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](/help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](/help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 La ubicación de base de UGC en el JSRP es `/content/usergenerated/asi/jcr/`.
 
@@ -151,7 +154,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
       `/content/sites/engage/en/forum/jcr:content`
 
-   * Adición de propiedades de puntuación y de marca
+   * Añadir las propiedades de puntuación y marca
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -168,7 +171,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Agregar propiedad para mostrar distintivos
+   * Añadir propiedad para mostrar distintivos
 
       `allowBadges = true`
 
@@ -182,16 +185,16 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
       `/content/community-components/en/forum/jcr:content`
 
-   * Adición de propiedades de puntuación y de marca
+   * Añadir las propiedades de puntuación y marca
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
    /etc/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-badging,
+   /libs/settings/community/badging/rules/forums-badging]
    ```
 
    * Localización del nodo del componente del foro
@@ -199,7 +202,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Agregar propiedad para mostrar distintivos
+   * Añadir propiedad para mostrar distintivos
 
       `allowBadges = true`
 
@@ -227,6 +230,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    >
    >
 * Creación de imágenes de distintivo únicas para distintos sitios de AEM
+
 >
 
 
