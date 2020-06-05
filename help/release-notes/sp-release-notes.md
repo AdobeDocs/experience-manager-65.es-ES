@@ -4,9 +4,9 @@ description: Notas de versión específicas de Service Pack 5 de Adobe Experienc
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d51577195e969ff8af31be49159ff575e3654cc9
+source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
 workflow-type: tm+mt
-source-wordcount: '4476'
+source-wordcount: '4486'
 ht-degree: 11%
 
 ---
@@ -423,7 +423,7 @@ Se aconseja a los clientes que revisen si utilizan la función o la capacidad en
 
 * Si se cambia el nombre de una carpeta en la jerarquía [!DNL Experience Manager Assets] y se publica en la carpeta anidada que contiene un recurso, [!DNL Brand Portal]el título de la carpeta no se actualiza en [!DNL Brand Portal] hasta que se vuelva a publicar la carpeta raíz.
 
-* La actualización de [!DNL chrome] la versión 83 está causando un problema al compilar paquetes. Use otros exploradores disponibles, como [!DNL Internet Explorer] y [!DNL Firefox], u otras opciones de instalación de paquetes estándar de AEM para resolver el problema.
+* Durante la instalación de AEM 6.5.5.0, la actualización de [!DNL Chrome] la versión 83 provoca un problema al compilar los paquetes. Use otros exploradores disponibles, como [!DNL Internet Explorer] y [!DNL Firefox], u otras opciones de instalación de paquetes estándar de AEM para resolver el problema. El problema se resuelve tras instalar AEM 6.5.5.0.
 
 * No se puede enviar un correo electrónico al servidor SMTP remoto mediante el remitente de correo predeterminado de AEM, ya que solo permite la comunicación mediante TLS v1.2. Quite el paquete `javax.mail:mail:1.5.0-b01` de `system/console` y actualice los paquetes para resolver el problema.
 
