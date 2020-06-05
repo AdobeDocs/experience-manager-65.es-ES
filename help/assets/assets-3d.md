@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 2f0e626aa16a62203755e29800a5935b350ffe79
+source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2144'
 ht-degree: 4%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 4%
 
 Dynamic Media le permite cargar, gestionar, vista y distribuir recursos 3D como experiencias envolventes.
 
-* Publicación con un solo clic (mediante Publicación **** rápida en la barra de herramientas) de imágenes 3D para generar su URL.
-* Compatibilidad optimizada para ver recursos 3D con el ajuste preestablecido de visor de dimensiones interactivo y de alta calidad con tecnología Adobe Dimension. El ajuste preestablecido de visor incluye, entre otras cosas, una colección de controles de cámara interactivos que le permiten orbitar, aplicar zoom y desplazarse.
+* Publicación con un solo clic (mediante **[!UICONTROL Publicación]** rápida en la barra de herramientas) de recursos 3D para generar una URL.
+* Compatibilidad optimizada para ver recursos 3D con el ajuste preestablecido de visor de dimensiones interactivo y de alta calidad con tecnología Adobe Dimension.
 * El componente WCM de medios 3D le permite añadir fácilmente recursos 3D a sus páginas Sitios de AEM.
 
-No hay instalación ni configuración de ningún tipo para utilizar recursos 3D en Dynamic Media.
+No se requiere una configuración adicional para utilizar recursos 3D en Dynamic Media.
 
 ![zapato en 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -36,10 +36,10 @@ Dynamic Media admite los siguientes formatos de archivo 3D:
 
 | Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmisión binaria de GL | model/gltf-binary | Incluye las texturas con el recurso en lugar de hacer referencia a ellas como imágenes externas. |
+| GLB | Transmisión binaria de GL | model/gltf-binary | Incluye los materiales y las texturas como un único recurso. |
 | OBJ | Archivo de objeto WaveFront 3D | application/x-tgif |  |
 | STL | Esteroolitografía | application/vnd.ms-pki.stl |  |
-| USDZ | Archivo zip de descripción de escena universal | model/vnd.usdz+zip | *Apoyo a la ingestión únicamente; no hay visualización ni interacción disponibles.* USDZ es el formato 3D propiedad de Apple que solo puede ser vista por Safari o iOS. |
+| USDZ | Archivo zip de descripción de escena universal | model/vnd.usdz+zip | *Apoyo a la ingestión únicamente; no hay visualización ni interacción disponibles.* USDZ es un formato 3D propio que se puede ver de forma nativa en dispositivos Safari e iOS. |
 
 ## Inicio rápido: Recursos 3D en Dynamic Media {#quick-start-three-d}
 
@@ -149,7 +149,8 @@ Consulte también [Vista previa de recursos mediante la interfaz](/help/assets/p
 
    * Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Previsualización]** para acceder al modo de **[!UICONTROL Previsualización]** .
    * Elimine `/editor.html` de la dirección URL de la página en el explorador.
-   ![Recurso 3D que se muestra dentro del componente](/help/assets/assets-dm/3d-asset-in-3d-media.png)Medios 3D Un recurso 3D completamente interactivo, tal como se muestra en el modo de **[!UICONTROL Previsualización]** .
+
+Un recurso 3D completamente interactivo, tal como se muestra en    ![Recurso 3D que se muestra dentro del componente](/help/assets/assets-dm/3d-asset-in-3d-media.png)Medios 3D Un recurso 3D completamente interactivo, tal como se muestra en el modo de **[!UICONTROL Previsualización]** .
 
 1. En el modo de **[!UICONTROL Previsualización]** , realice una de las siguientes acciones:
 
@@ -280,6 +281,7 @@ Consulte también [Publicación de páginas](/help/sites-authoring/publishing-pa
    * El recurso 3D es un formato admitido (GLB, OBJ, STL y USDZ).
    * El recurso 3D se ha incorporado al sistema de producción de imágenes de Dynamic Media (IPS).
    * Se publica el recurso 3D.
+
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
 1. Toque **[!UICONTROL URL]** para mostrar la URL de producción del recurso 3D.
