@@ -3,9 +3,9 @@ title: Administración de derechos digitales en [!DNL Adobe Experience Manager A
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
+source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1420'
 ht-degree: 6%
 
 ---
@@ -96,9 +96,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
    >
    >Solo el creador de recursos (la persona que carga un recurso en particular a [!DNL Assets]) recibe un correo electrónico cuando caduca el recurso. Consulte [cómo configurar la notificación](/help/sites-administering/notification.md) por correo electrónico para obtener más detalles sobre la configuración de las notificaciones por correo electrónico en el nivel general [!DNL Experience Manager] .
 
-1. En el campo Notificación **[!UICONTROL previa en segundos]** , especifique el tiempo en segundos antes de que caduque un recurso cuando desee recibir una notificación con respecto a la caducidad. Si es un administrador o el creador de recursos, recibirá un mensaje antes de que caduque el recurso, en el que se le notificará que el recurso está a punto de caducar después de la hora especificada.
-
-   Una vez caducado el recurso, recibirá otra notificación que confirma la caducidad. Además, los recursos caducados se desactivan.
+1. En el campo Notificación **[!UICONTROL previa en segundos]** , especifique el tiempo en segundos antes de que caduque un recurso cuando desee recibir una notificación con respecto a la caducidad. Los creadores de recursos reciben un mensaje antes de que caduque el recurso, en el que se les notifica que el recurso está a punto de caducar después de la hora especificada. Una vez caducado el recurso, recibirá otra notificación que confirma la caducidad. Además, los recursos caducados se desactivan.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
