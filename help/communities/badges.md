@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +45,7 @@ Esta consola muestra las insignias disponibles actualmente y desde las cuales se
 
 ## Crear distintivo {#create-badge}
 
-Para crear un distintivo, cargue una imagen pequeña adecuada (72 ppp con una altura de entre 26 y 32 píxeles) y proporcione un nombre. La imagen del distintivo se almacena en el repositorio en `/etc/community/badging/images` y se replica automáticamente en el entorno de publicación.
+Para crear un distintivo, cargue una imagen pequeña adecuada (72 ppp con una altura de entre 26 y 32 píxeles) y proporcione un nombre. La imagen del distintivo se almacena en el repositorio en `/libs/settings/community/badging/images` y se replica automáticamente en el entorno de publicación.
 
 Si el entorno de publicación es un conjunto de editores, es necesario configurar la sincronización [de](/help/communities/sync.md)usuarios.
 
