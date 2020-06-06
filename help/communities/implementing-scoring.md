@@ -12,7 +12,10 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2896'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +46,7 @@ Las insignias se colocan bajo el nombre de un miembro para indicar su rol o su p
 
 De forma predeterminada, los distintivos se encuentran en el repositorio en
 
-* `/etc/community/badging/images`
+* `/libs/settings/community/badging/images`
 
 Si se almacenan en una ubicación diferente, todos deben leerlos accesibles.
 
@@ -62,13 +65,16 @@ Los distintivos asignados (y adjudicados) se almacenan en el [SRP](/help/communi
 En la versión se incluyen tres distintivos basados en roles:
 
 * **moderador**
-   `/etc/community/badging/images/moderator/jcr:content/moderator.png`
+
+   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **administrador de grupos**
-   `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
+
+   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **miembro privilegiado**
-   `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
+
+   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -84,13 +90,16 @@ Para que las insignias aparezcan como recompensa por la actividad, hay dos cosas
 En la versión se incluyen tres distintivos basados en premios:
 
 * **oro**
-   `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+
+   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **silver**
-   `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+
+   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **bronce**
-   `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+
+   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -182,8 +191,8 @@ Las puntuaciones se almacenan en SRP.
 >Los nombres de las reglas de puntuación deben ser únicos globalmente; no deben terminar con el mismo nombre.
 >
 >Un ejemplo de lo que *no* se debe hacer:
->/etc/community/scoring/rules/site1/forums-scoring
->/etc/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 
 ### Subreglas de puntuación {#scoring-sub-rules}
@@ -274,13 +283,13 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`nod
 
 En la versión se incluyen dos reglas de puntuación para la función [](/help/communities/functions.md#forum-function) Foro (una para los componentes Foro y otra para los comentarios de la función Foro):
 
-1. /etc/community/scoring/rules/comments-scoring
+1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/miembro-comment-create/etc/community/scoring/rules/sub-rules/miembro-recibir-voto/etc/community/scoring/rules/sub-rules/miembro-dar-voto/etc/community/scoring/rules/sub-rules/miembro-moderado
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/miembro-comment-create/libs/settings/community/scoring/rules/sub-rules/miembro-welcome-vote/libs/settings/scoring/rules/sub-rules/miembro-dar-voto/libs/settings/community/scoring/rules/sub-rules/miembro-is-moderated
 
-1. /etc/community/scoring/rules/forums-scoring
+1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/miembro-forum-create/etc/community/scoring/rules/sub-rules/miembro-recibir-voto/etc/community/scoring/rules/sub-rules/miembro-dar-voto/etc/community/scoring/rules/sub-rules/miembro-moderado
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/miembro-forum-create/libs/settings/community/scoring/rules/sub-rules/miembro-welcome-vote/libs/settings/scoring/rules/sub-rules/miembro-dar-voto/libs/settings/community/scoring/rules/sub-rules/miembro-is-moderated
 
 **Notas:**
 
@@ -308,15 +317,15 @@ Las reglas de asignación de distintivos son nodos de tipo `cq:Page` con propied
 
 Las reglas para la identificación consisten en una `thresholds` propiedad obligatoria que es una lista ordenada de puntuaciones asignadas a distintivos. Las puntuaciones deben ordenarse en valor creciente. Por ejemplo:
 
-* `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+* `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
    * Se concede una insignia de bronce para ganar 1 punto.
 
-* `60|/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+* `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
    * Se otorga una insignia de plata cuando se acumulan 60 puntos.
 
-* `80|/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+* `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
    * Se otorga una insignia de oro cuando se acumulan 80 puntos.
 
@@ -346,7 +355,7 @@ La `scoringRules` propiedad de una regla de distintivo simplemente restringe qu�
      <li>number = score</li>
      <li>| = el carácter de línea vertical (U+007C)</li>
      <li>path = ruta completa al recurso de imagen de distintivo</li>
-    </ul> Las cadenas deben ordenarse de modo que los números aumenten en valor y no debería aparecer ningún espacio en blanco entre el número y la ruta.<br /> Ejemplo de entrada:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> Las cadenas deben ordenarse de modo que los números aumenten en valor y no debería aparecer ningún espacio en blanco entre el número y la ruta.<br /> Ejemplo de entrada:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -365,8 +374,9 @@ La `scoringRules` propiedad de una regla de distintivo simplemente restringe qu�
 
 En la versión se incluyen dos reglas de asignación de distintivos que corresponden a las reglas [de puntuación de](#includedscoringrules)foros y comentarios.
 
-* /etc/community/badging/rules/comments-badging
-* /etc/community/badging/rules/forums-badging
+* /libs/settings/community/badging/rules/comments-badging
+
+* /libs/settings/community/badging/rules/forums-badging
 
 **Notas:**
 
@@ -395,7 +405,7 @@ cURL -i -X POST -H *header* -u *inicio de sesión* -F *operación* -F *distintiv
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = la ubicación del archivo de imagen del distintivo en el repositorio, por ejemplo: /etc/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = la ubicación del archivo de imagen del distintivo en el repositorio, por ejemplo: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *miembro-perfil-url* = el punto final del perfil del miembro en la publicación, por ejemplo: https://&lt;servidor>:&lt;puerto>/home/users/community/riley/profile.social.json
 
@@ -405,6 +415,7 @@ cURL -i -X POST -H *header* -u *inicio de sesión* -F *operación* -F *distintiv
 >
 >* Puede hacer referencia a una instancia de autor si el servicio [de túnel](/help/communities/users.md#tunnel-service) está habilitado.
 >* Puede ser un nombre oscuro y aleatorio; consulte Lista de comprobación [de seguridad](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) con respecto a un ID autorizado.
+
 >
 
 
@@ -414,13 +425,13 @@ cURL -i -X POST -H *header* -u *inicio de sesión* -F *operación* -F *distintiv
 #### Asignar una insignia de moderador {#assign-a-moderator-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 #### Revocar una insignia de plata asignada {#revoke-an-assigned-silver-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 >[!NOTE]
@@ -435,7 +446,7 @@ Las reglas de puntuación y de distintivo se pueden crear para componentes perso
 
 Cuando los miembros interactúan con las funciones de la comunidad, se envían eventos que pueden activar oyentes asincrónicos, como notificaciones y puntuación.
 
-La instancia de SocialEvent de un componente registra los eventos `actions` que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb` asociado a la acción. Existe una relación *n-1* entre `actions` y `verbs`.
+La instancia de SocialEvent de un componente registra los eventos `actions` que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb` asociado a la acción. Hay una relación *n-1* entre `actions` y `verbs`.
 
 Para los componentes de comunidades entregados, las siguientes tablas describen la `verbs` definición de cada uno de los `topic` disponibles para su uso en las [subreglas](#scoring-sub-rules)de puntuación.
 
@@ -574,9 +585,9 @@ Es posible probar rápidamente la puntuación y la identificación mediante el s
    * **Tipo**: `String`
    * Seleccionar **varios**
    * Seleccionar **Añadir**
-   * Enter `/etc/community/badging/rules/forums-badging`
+   * Enter `/libs/settings/community/badging/rules/forums-badging`
    * Seleccione **+**
-   * Enter `/etc/community/badging/rules/comments-badging`
+   * Enter `/libs/settings/community/badging/rules/comments-badging`
    * Seleccione **Aceptar**
 
 * Añada la propiedad scoringRules:
@@ -585,9 +596,9 @@ Es posible probar rápidamente la puntuación y la identificación mediante el s
    * **Tipo**: `String`
    * Seleccionar **varios**
    * Seleccionar **Añadir**
-   * Enter `/etc/community/scoring/rules/forums-scoring`
+   * Enter `/libs/settings/community/scoring/rules/forums-scoring`
    * Seleccione **+**
-   * Enter `/etc/community/scoring/rules/comments-scoring`
+   * Enter `/libs/settings/community/scoring/rules/comments-scoring`
    * Seleccione **Aceptar**
 
 * Seleccione **Guardar todo**.
