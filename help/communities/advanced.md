@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +27,9 @@ La puntuación avanzada permite la concesión de insignias para identificar a lo
 
 Esta diferencia se debe al motor de puntuación utilizado para calcular las puntuaciones. El motor de puntuación básico aplica matemáticas sencillas. El motor de puntuación avanzado es un algoritmo adaptable que recompensa a los miembros activos que contribuyen con contenido valioso y relevante, deducido a través del procesamiento del lenguaje natural (PNL) de un tema.
 
-Además de la importancia del contenido, los algoritmos de puntuación tienen en cuenta las actividades de los miembros, como la votación y el porcentaje de respuestas. Aunque la puntuación básica los incluye cuantitativamente, la puntuación avanzada los utiliza algorítmicamente.
+Además de la relevancia del contenido, los algoritmos de puntuación tienen en cuenta las actividades de los miembros, como la votación y el porcentaje de respuestas. Aunque la puntuación básica los incluye cuantitativamente, la puntuación avanzada los utiliza algorítmicamente.
 
-Por lo tanto, el motor de puntuación avanzado requiere datos suficientes para que el análisis sea significativo. El umbral de logro para convertirse en un experto se reevalúa constantemente a medida que el algoritmo se ajusta continuamente al volumen y la calidad del contenido creado. También hay un concepto de *decadencia* de los puestos más antiguos de un miembro. Si un miembro experto deja de participar en el tema en el que adquirió la condición de experto, en algún momento determinado (véase la configuración [del motor de](#configurable-scoring-engine)puntuación) podría perder su condición de experto.
+Por lo tanto, el motor de puntuación avanzado requiere datos suficientes para que la análisis tenga sentido. El umbral de logro para convertirse en un experto se reevalúa constantemente a medida que el algoritmo se ajusta continuamente al volumen y la calidad del contenido creado. También hay un concepto de *decadencia* de los puestos más antiguos de un miembro. Si un miembro experto deja de participar en el tema en el que adquirió la condición de experto, en algún momento determinado (véase la configuración [del motor de](#configurable-scoring-engine)puntuación) podría perder su condición de experto.
 
 Configurar la puntuación avanzada es prácticamente lo mismo que la puntuación básica:
 
@@ -60,12 +63,12 @@ El motor de puntuación avanzado proporciona una configuración OSGi con paráme
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
-* **Ponderaciones de puntuación**
+* **pesos de puntuación**
 
    Para un tema, especifique el verbo al que se debe dar la prioridad más alta al calcular la puntuación. Se pueden escribir uno o más temas, pero se pueden limitar a **un verbo por tema**. Consulte [Temas y Verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Introducido como `topic,verb` con la coma de escape. Por ejemplo:
    `/social/forum/hbs/social/forum\,ADD`
-El valor predeterminado se establece en el verbo ADD para los componentes QnA y forum.
+El valor predeterminado se establece en el verbo AÑADIR para los componentes QnA y forum.
 
 * **Rango de puntuación**
 
@@ -105,9 +108,9 @@ Consulte Subreglas [de puntuación](/help/communities/implementing-scoring.md#sc
 
 El paquete de puntuación avanzada instala una carpeta de configuración que contiene un archivo de palabras clave:
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
-El algoritmo de puntuación avanzada utiliza la lista de palabras incluidas en el archivo de palabras clave para identificar las palabras comunes en inglés que se omiten durante el procesamiento del contenido.
+El algoritmo de puntuación avanzada utiliza la lista de palabras contenidas en el archivo de palabras clave para identificar las palabras comunes en inglés que se omiten durante el procesamiento del contenido.
 
 No se espera que este archivo se modifique.
 
@@ -131,7 +134,7 @@ En lugar de asociar puntos con una imagen de insignia, solo es necesario identif
   <tr>
    <td>badgingPath</td>
    <td>Cadena[]</td>
-   <td><em>(Requerido)</em> Una cadena de varios valores de imágenes de distintivo hasta el número de badgingLevels. Las rutas de imagen de la insignia deben solicitarse para que la primera se conceda al experto más alto. Si hay menos distintivos de los indicados por badgingLevels, el último distintivo de la matriz rellena el resto de la matriz. Ejemplo de entrada:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Requerido)</em> Una cadena de varios valores de imágenes de distintivo hasta el número de badgingLevels. Las rutas de imagen de la insignia deben solicitarse para que la primera se conceda al experto más alto. Si hay menos distintivos de los indicados por badgingLevels, el último distintivo de la matriz rellena el resto de la matriz. Ejemplo de entrada:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -146,7 +149,7 @@ En lugar de asociar puntos con una imagen de insignia, solo es necesario identif
   <tr>
    <td>scoringRules</td>
    <td>Cadena[]</td>
-   <td><em>(Opcional)</em> Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por las reglas de puntuación enumeradas.<br /> Ejemplo de entrada:<br /> <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> El valor predeterminado no es una restricción.</td>
+   <td><em>(Opcional)</em> Una cadena de varios valores para restringir la regla de identificación a eventos de puntuación identificados por las reglas de puntuación enumeradas.<br /> Ejemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> El valor predeterminado no es una restricción.</td>
   </tr>
  </tbody>
 </table>
@@ -159,7 +162,7 @@ En esta versión beta se incluye una insignia de experto basada en premios:
 
 * `expert`
 
-   `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -178,19 +181,19 @@ Consulte la información básica para:
 
 En la versión beta se incluyen dos reglas de puntuación avanzadas para la función [de](/help/communities/functions.md#forum-function) foro (una para los componentes de foro y comentarios de la función de foro):
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/etc/community/scoring/rules/sub-rules/adv-voting-rule`
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-forums-rule
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
 **Notas:**
 
@@ -208,8 +211,8 @@ En la versión beta se incluyen dos reglas de puntuación avanzadas para la func
 
 En la versión se incluyen dos reglas de identificación avanzadas que corresponden a los foros [avanzados y a las reglas](#included-scoring-rules-and-sub-rules)de puntuación de comentarios.
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
 **Notas:**
 
