@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 9%
 
 ---
 
@@ -110,9 +113,9 @@ Configuración del componente de la tabla de clasificación:
 
 * Ficha Reglas:
 
-   * Ubicación de la regla = `/content/sites/communities/jcr:content`
-   * Regla de puntuación = `/etc/community/scoring/rules/forums-scoring`
-   * Regla de creación de distintivos = `/etc/community/badging/rules/reference-badging`
+   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
+   * Regla de puntuación = `/libs/settings/community/scoring/rules/forums-scoring`
+   * Regla de creación de distintivos = `/libs/settings/community/badging/rules//reference-badging`
    * Límite de visualización = `10`
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
@@ -133,9 +136,9 @@ Configuración del componente de la tabla de clasificación:
 
 * Ficha Reglas:
 
-   * Ubicación de la regla = `/content/sites/communities/jcr:content`
-   * Regla de puntuación = `/etc/community/scoring/rules/adv-forums-scoring`
-   * Regla de creación de distintivos = `/etc/community/badging/rules/adv-forums-badging`
+   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
+   * Regla de puntuación = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+   * Regla de creación de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Límite de visualización = `10`
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
