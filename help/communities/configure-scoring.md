@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
    1. Seleccionar `DEBUG` para nivel **de registro**
 
-   1. Escriba un nombre para el archivo **de registro**, por ejemplo
+   1. Escriba un nombre para el archivo **** de registro, por ejemplo
 
       * logs/scoring-debug.log
    1. Introduzca dos entradas **Logger** (clase) (mediante `+` icono)
@@ -157,13 +157,13 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    * Añadir las propiedades de puntuación y marca
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-scoring,
+   /libs/settings/community/badging/rules/forums-scoring]
    ```
 
    * Localización del nodo del componente del foro
@@ -189,7 +189,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
@@ -212,7 +212,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 1. A un usuario se le asigna una insignia de moderador mediante cURL:
 
    ```shell
-   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
    Como un usuario ha ganado dos insignias de bronce y ha recibido una insignia de moderador, así es como aparece el usuario con su entrada en el foro.
@@ -225,12 +225,11 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 >
 >* Los nombres de las reglas de puntuación deben ser únicos globalmente; no deben terminar con el mismo nombre.
    >  Un ejemplo de lo que *no* hay que hacer:
-   >  /etc/community/scoring/rules/site1/forums-scoring
-   >  /etc/community/scoring/rules/site2/forums-scoring
+   >  /libs/settings/community/scoring/rules/site1/forums-scoring
+   >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
 * Creación de imágenes de distintivo únicas para distintos sitios de AEM
-
 >
 
 
