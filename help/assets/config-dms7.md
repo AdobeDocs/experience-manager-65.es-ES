@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
+source-git-commit: f671e00ad94555346190ecb98c905441ad111e18
 workflow-type: tm+mt
 source-wordcount: '5777'
 ht-degree: 7%
@@ -110,6 +110,7 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
          * **[!UICONTROL Heredado]** : no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.
          * **[!UICONTROL Habilitar para subcarpetas]** : Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
          * **[!UICONTROL Deshabilitado para subcarpetas]** : excluya todo lo que hay en este subárbol de la sincronización con Dynamic Media.
+
    >[!NOTE]
    >
    >No se admite el control de versiones en DMS7. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]** y, a continuación, solo hasta la primera vez que se activa el recurso.
@@ -118,7 +119,7 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
    >Una vez activado un recurso, cualquier actualización se publica inmediatamente en directo en el Envío S7.
 
 1. Toque **[!UICONTROL Guardar]**.
-1. Para realizar una previsualización segura del contenido de Dynamic Media antes de publicarlo, deberá &quot;incluir en la lista blanca&quot; la instancia de creación de AEM para conectarse a Dynamic Media:
+1. Para realizar una previsualización segura del contenido de Dynamic Media antes de que se publique, deberá &quot;permitir la inclusión en la lista&quot; de la instancia de creación de AEM para conectarse a Dynamic Media:
 
    * Inicie sesión en su cuenta de Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Adobe proporcionó sus credenciales e inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
    * En la barra de navegación situada cerca de la parte superior derecha de la página, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor]** de imágenes.
