@@ -5,7 +5,10 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: d43f845a1ba9ed9e9eb5bfcff735eaa42da53566
+source-git-commit: 9e8ff9bf5c9ddd4675e887fc734bf3b616526b36
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 0%
 
 ---
 
@@ -21,6 +24,21 @@ En este boletín informativo de una sola publicación, descubra los valiosos rec
 [Regístrese](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para recibir el boletín de Dynamic Media mensualmente en su bandeja de entrada.
 
 ## ¿Ha perdido un número del boletín de Dynamic Media?
+
+* **[Mayo de 2020, número 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   En este número:
+
+   * Qué significa continuidad del negocio en tiempos inciertos.
+   * Principales ventajas de la primera Cumbre de Adobe digital.
+   * Hay que observar las sesiones de grupo de trabajo de Experience Manager.
+   * Puntos destacados del cliente de la cumbre: Bajo Armor.
+   * Nunca pierda un seminario web de Experience Insider.
+   * Puntos destacados del sector público: La necesidad urgente de matriculación digital.
+   * Descubra las novedades de la innovación de Experience Manager.
+   * Cree sus habilidades de Experience Manager *en directo* con los profesionales de Adobe.
+   * Conéctese con la comunidad de Adobe Experience Manager.
+   * Realice un seguimiento rápido de su experiencia con Adobe Experience League.
 
 * **[Abril de 2020, número 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
