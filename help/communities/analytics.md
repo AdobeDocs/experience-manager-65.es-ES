@@ -243,7 +243,7 @@ Para guardar la configuración:
 
 * Seleccione **Aceptar**
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 ### Crear módulo {#create-framework}
 
@@ -308,7 +308,7 @@ La barra de tareas no es necesaria y puede minimizarse para que no obstruya el a
 
 1. Seleccione **Publicar**
 
-![chlimage_1-186](assets/chlimage_1-185.png)
+![chlimage_1-185](assets/chlimage_1-185.png)
 
 El servicio y el marco de trabajo de Analytics cloud ya están completos. Las asignaciones se definirán una vez que se haya creado un sitio de comunidad con este servicio de Analytics habilitado.
 
@@ -376,7 +376,7 @@ Si se crean nuevos componentes personalizados instrumentados para Analytics, deb
 
 ### Configuración de componentes {#component-configuration}
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-185](assets/chlimage_1-186.png)
 
 >[!NOTE]
 >
