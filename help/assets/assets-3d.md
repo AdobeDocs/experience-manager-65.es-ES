@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+source-git-commit: 1c4098cce779334588ab5924f4926756574425cc
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2309'
 ht-degree: 5%
 
 ---
@@ -78,7 +78,8 @@ Consulte [Configuración de los servicios](/help/assets/config-dms7.md#configuri
 
 1. **Publicación de recursos 3D**
 
-   * [Publicación de recursos 3D de Dynamic Media](#publishing-three-d-assets)
+   * [Publicación de recursos 3D de Dynamic Media estáticos](#publishing-three-d-assets)
+   * [Métodos alternativos para publicar recursos de Dynamic Media 3D mediante el visor de dimensiones](#alternate-publish-methods)
 
 ## Visualización e interacción con recursos 3D {#viewing-three-d-assets}
 
@@ -98,7 +99,7 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
 >
 >Puede abrir el ajuste preestablecido de visor de dimensiones en el Editor de ajustes preestablecidos de visor para practicar la navegación por un recurso 3D sin necesidad de cargar primero ningún archivo 3D. El ajuste preestablecido de visor de dimensiones tiene un recurso 3D integrado con el que interactuar.
 >
->See [Managing viewer presets](/help/assets/managing-viewer-presets.md).
+>See [Managing viewer presets.](/help/assets/managing-viewer-presets.md)
 
 ## Visualización e interacción con un recurso 3D desde la página de detalles del recurso {#viewing-three-d-assets-from-asset-details-page}
 
@@ -108,7 +109,7 @@ Consulte también [Vista previa de recursos mediante la interfaz](/help/assets/p
 
 1. Asegúrese de que ha cargado los recursos 3D en AEM.
 
-   Consulte [Carga de recursos 3D para su uso en Dynamic Media](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Consulte [Carga de recursos 3D para su uso en Dynamic Media.](/help/assets/managing-assets-touch-ui.md#uploading-assets)
 
 1. En AEM, en la página **[!UICONTROL Navegación]** , toque **[!UICONTROL Recursos > Archivos]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
@@ -139,9 +140,9 @@ Cuando una página web está en modo de **[!UICONTROL edición]** , no es posibl
 
 >[!IMPORTANT]
 >
->Esta tarea solo se puede realizar una vez que haya agregado un componente de medios 3D a una página web y haya asignado un recurso 3D al componente. Consulte [Añadir el componente de medios 3D en una página](#adding-the-three-d-media-component-to-a-web-page) web y [Asignación de un recurso 3D a un componente](#assigning-a-three-d-asset-to-the-component)de medios 3D.
+>Esta tarea solo se puede realizar una vez que haya agregado un componente de medios 3D a una página web y haya asignado un recurso 3D al componente. Consulte [Añadir el componente de medios 3D en una página](#adding-the-three-d-media-component-to-a-web-page) web y [Asignación de un recurso 3D a un componente de medios 3D.](#assigning-a-three-d-asset-to-the-component)
 
-Consulte también [Vista previa de recursos mediante la interfaz](/help/assets/previewing-assets.md)de software.
+Consulte también [Vista previa de recursos mediante la interfaz de software.](/help/assets/previewing-assets.md)
 
 **vista e interacción con un recurso 3D dentro de un componente de medios 3D**
 
@@ -199,7 +200,7 @@ Dynamic Media incluye un componente de Dynamic Media 3D que puede utilizar en lo
 
 Si utiliza Adobe Experience Manager como sistema de gestor de contenido web, puede añadir recursos 3D a las páginas web mediante el componente de medios 3D.
 
-See also [Adding Dynamic Media assets to pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+See also [Adding Dynamic Media assets to pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 1. Abra Sitios AEM y seleccione la página web a la que desea agregar el componente Medios 3D de Dynamic Media.
 1. Toque el icono **[!UICONTROL Editar]** (lápiz) para abrir la página en el editor de páginas. Asegúrese de que el modo **[!UICONTROL Editar]** está seleccionado cerca de la esquina superior derecha de la página.
@@ -216,7 +217,7 @@ See also [Adding Dynamic Media assets to pages](/help/assets/adding-dynamic-medi
 
 Ya está listo para asignar un recurso 3D al componente.
 
-Consulte [Asignación de un recurso 3D a un componente](#assigning-a-three-d-asset-to-the-component)de medios 3D.
+Consulte [Asignación de un recurso 3D a un componente de medios 3D.](#assigning-a-three-d-asset-to-the-component)
 
 ### Opcional: Configuración del componente de medios 3D {#configuring-the-three-d-component}
 
@@ -235,7 +236,7 @@ Consulte [Asignación de un recurso 3D a un componente](#assigning-a-three-d-ass
 
 Después de agregar un componente de medios 3D a una página web, puede asignarle un recurso 3D.
 
-Consulte [Añadir el componente de medios 3D en una página](#adding-the-three-d-media-component-to-a-web-page)web.
+Consulte [Añadir el componente de medios 3D en una página web.](#adding-the-three-d-media-component-to-a-web-page)
 
 1. En el editor de páginas de AEM Sites, haga clic en el icono **[!UICONTROL Recursos]** para abrir **[!UICONTROL Recursos]** en el panel lateral.
 1. En la lista desplegable, seleccione **[!UICONTROL 3D]** para mostrar solo los tipos de archivo de recursos 3D.
@@ -252,17 +253,17 @@ Consulte [Añadir el componente de medios 3D en una página](#adding-the-three-d
 
 Dynamic Media acepta diversos formatos de archivo 3D que se admiten como contenido ** estático en Dynamic Media. El contenido estático significa que se pueden cargar y publicar recursos 3D, pero no se admiten imágenes *dinámicas* ni redireccionamiento de imágenes asociados al recurso 3D. El motivo es que el servidor de imágenes de Dynamic Media no reconoce los formatos 3D. Como tal, después de publicar un recurso 3D en Dynamic Media, tiene una URL instantánea que puede copiar. La URL del recurso 3D sigue la estructura de URL de Dynamic Media habitual. Sin embargo, no puede editar ningún parámetro en la URL del recurso, a diferencia de los recursos de imagen tradicionales en Dynamic Media.
 
-Consulte también [Obtención de una URL para un recurso](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)estático.
+Consulte también [Obtención de una URL para un recurso estático.](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 En la Vista **[!UICONTROL de]** tarjeta, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
 Si utiliza AEM como WCM, utilice este método de publicación para añadir los recursos 3D de Dynamic Media directamente en la página web.
 
-Consulte también [Publicación de recursos](publishing-dynamicmedia-assets.md)de Dynamic Media.
+Consulte también [Publicación de recursos de Dynamic Media.](publishing-dynamicmedia-assets.md)
 
-Consulte también [Publicación de páginas](/help/sites-authoring/publishing-pages.md).
+Consulte también [Publicación de páginas.](/help/sites-authoring/publishing-pages.md)
 
-**Para publicar recursos 3D de Dynamic Media**
+**Para publicar recursos 3D de Dynamic Media estáticos**
 
 1. Abra un recurso 3D (formato de archivo GLB, OBJ o STL) para vista en la página de detalles del recurso.
 1. En la barra de herramientas, toque **[!UICONTROL Publicación]** rápida.
@@ -289,8 +290,8 @@ Utilice los dos métodos siguientes para publicar recursos 3D de Dynamic Media s
 
 * **[!UICONTROL URL]** : utilice la **[!UICONTROL URL]** si utiliza un sistema de gestoras de contenido web de terceros y desea vincular recursos 3D de Dynamic Media a sus páginas web mediante el visor de dimensiones.
 
-   See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+   See [Linking URLs to your web application.](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
 
 * **[!UICONTROL Incrustar]** : utilice **[!UICONTROL Incrustar]** cuando desee realizar la vista de un recurso 3D de Dynamic Media incrustado en una página web mediante el visor dimensional. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
 
-   Consulte [Incrustación de vídeo de Dynamic Media, visor de imágenes o visor de dimensiones en una página](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)web.
+   Consulte [Incrustación de vídeo de Dynamic Media, visor de imágenes o visor de dimensiones en una página web.](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
