@@ -3,9 +3,9 @@ title: Prácticas recomendadas de integración [!DNL Adobe Experience Manager] y
 description: Prácticas recomendadas para la [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integración para optimizar los flujos de trabajo de transferencia de recursos y lograr una alta velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3249'
 ht-degree: 16%
 
 ---
@@ -160,7 +160,7 @@ Los siguientes son ejemplos de actualizaciones que normalmente no son relevantes
 
 #### Usuarios creativos con acceso directo a DAM {#creative-users-with-direct-access-to-dam}
 
-Generalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la instancia de DAM, incluido el [!DNL Experience Manager] inicio de sesión. [!DNL Experience Manager] y la infraestructura de red se puede configurar para permitir el acceso directo a las partes externas -generalmente organizaciones de confianza como las agencias que trabajan para un cliente- para tener acceso a través de la red, por ejemplo a través de una lista blanca de VPN o IP. [!DNL Experience Manager]
+Generalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la instancia de DAM, incluido el [!DNL Experience Manager] inicio de sesión. [!DNL Experience Manager] y la infraestructura de red se puede configurar para permitir el acceso directo a partes externas -generalmente organizaciones de confianza como las agencias que trabajan para un cliente- para tener acceso a través de la red, por ejemplo a través de una lista permitida por VPN o IP. [!DNL Experience Manager]
 
 En estos casos, Adobe Asset Link o [!DNL Experience Manager] la aplicación de escritorio ayudan a facilitar el acceso a los recursos finales o aprobados y permiten guardar en DAM los recursos listos para la creación.
 
@@ -173,7 +173,7 @@ Utilice las siguientes estrategias para proporcionar acceso a los activos finale
 * Utilice la aplicación de escritorio si Asset Link no funciona.
 * Uso [de Experience Manager Assets Brand Portal](https://helpx.adobe.com/es/experience-manager/brand-portal/user-guide.html) para distribuir recursos de forma segura a socios externos
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilice Control de acceso configurado en la infraestructura de red [!DNL Experience Manager] y necesaria (por ejemplo, la lista blanca de VPN e IP) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario [!DNL Experience Manager] web para obtener recursos y cargar contenido nuevo en su DAM.
+* Utilice Control de acceso configurado en la infraestructura de red [!DNL Experience Manager] y necesaria (por ejemplo, VPN e IP permiten la lista) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario [!DNL Experience Manager] web para obtener recursos y cargar contenido nuevo en su DAM.
 
 #### Trabajos en curso sobre activos procedentes de [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
