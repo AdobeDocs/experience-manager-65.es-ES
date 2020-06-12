@@ -1,20 +1,23 @@
 ---
-title: Volver a utilizar recursos con MSM para [!DNL Adobe Experience Manager Assets].
-description: Utilice recursos en varias páginas o carpetas que se deriven de los recursos principales y estén vinculados a ellos. Los recursos permanecen sincronizados con una copia maestra y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
+title: Reutilice recursos con MSM para [!DNL Adobe Experience Manager Assets].
+description: Utilice recursos en varias páginas o carpetas que se deriven de los recursos principales y estén vinculados a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+workflow-type: tm+mt
+source-wordcount: '3367'
+ht-degree: 11%
 
 ---
 
 
-# Reutilización de recursos con MSM para [!DNL Assets]{#reuse-assets-using-msm-for-assets}
+# Reutilizar recursos con MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 La funcionalidad Multi Site Manager (MSM) de permite a los usuarios [!DNL Adobe Experience Manager] reutilizar el contenido que se crea una vez y se reutiliza en varias ubicaciones web. Lo mismo está disponible para los recursos digitales que MSM para [!DNL Assets] la funcionalidad. Con MSM para [!DNL Assets], puede:
 
 * Cree recursos una vez y, a continuación, haga copias de estos recursos para reutilizarlos en otras áreas del sitio.
-* Mantenga varias copias en sincronización y actualice la copia maestra original una vez para insertar los cambios en las copias secundarias.
+* Mantenga varias copias en sincronización y actualice la copia primaria original una vez para insertar los cambios en las copias secundarias.
 * Realice cambios locales suspendiendo temporal o permanentemente la vinculación entre los recursos principales y secundarios.
 
 ## Requisitos previos {#configprereq}
@@ -25,7 +28,7 @@ Para usar MSM para [!DNL Assets], instale al menos Service Pack 1. Para obtener 
 
 ### Cómo funciona y los beneficios {#how-it-works-and-the-benefits}
 
-Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones web, consulte [posibles escenarios](/help/sites-administering/msm.md)de MSM. [!DNL Experience Manager] mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas copias en vivo (LC). La vinculación mantenida permite que los cambios centralizados se inserten en muchas copias en vivo. Esto permite actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias de duplicado. La propagación de los cambios no tiene errores y está centralizada. La funcionalidad permite disponer de espacio para las actualizaciones que están limitadas a las copias en directo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, la herencia de salto, y realizar cambios locales que no se sobrescriban la próxima vez que se actualice la copia maestra y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para un recurso completo. Permite flexibilidad para actualizar localmente los recursos que se heredaron originalmente de una copia maestra.
+Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones web, consulte [posibles escenarios](/help/sites-administering/msm.md)de MSM. [!DNL Experience Manager] mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas copias en vivo (LC). La vinculación mantenida permite que los cambios centralizados se inserten en muchas copias en vivo. Esto permite actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias de duplicado. La propagación de los cambios no tiene errores y está centralizada. La funcionalidad permite disponer de espacio para las actualizaciones que están limitadas a las copias en directo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, la herencia de salto, y realizar cambios locales que no se sobrescriban la próxima vez que se actualice la copia principal y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para un recurso completo. Permite flexibilidad para actualizar localmente los recursos que se heredaron originalmente de una copia principal.
 
 MSM mantiene una relación activa entre el recurso de origen y sus copias activas para que:
 
@@ -34,7 +37,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus copias activa
 
 ### Glosario de MSM para [!DNL Assets] términos {#glossary}
 
-**Fuente:** Recursos o carpetas originales. Copia maestra de la que se derivan las copias en vivo.
+**Fuente:** Recursos o carpetas originales. Copia principal de la que se derivan las copias en vivo.
 
 **Live Copy:** Copia de los recursos o carpetas de origen que están en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte cómo crear LC.
 
@@ -277,7 +280,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
    *Figura: Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general[!UICONTROL de]Live Copy.*
 
-## Ampliar MSM para [!DNL Assets]{#extendapi}
+## Ampliar MSM para [!DNL Assets] {#extendapi}
 
 [!DNL Experience Manager] le permite ampliar la funcionalidad mediante las API de Java de MSM. Por [!DNL Assets], la extensión funciona igual que con MSM para [!DNL Sites]. Para obtener más información, consulte [Ampliación del MSM](/help/sites-developing/extending-msm.md) y lo siguiente para obtener información sobre tareas específicas:
 
@@ -304,7 +307,7 @@ Las copias en vivo y los orígenes son recursos o carpetas que se pueden adminis
 * Para la carpeta de origen, está disponible la opción de crear tareas de revisión.
 * Al ver el listado de recursos en la vista de columnas y vistas de listas, un recurso de Live Copy o una carpeta muestran la &quot;Live Copy&quot; en su contra. Esto le ayuda a identificar fácilmente las copias en vivo en una carpeta.
 
-## Comparar MSM para [!DNL Assets] y [!DNL Sites]{#comparison}
+## Comparar MSM para [!DNL Assets] y [!DNL Sites] {#comparison}
 
 En más escenarios, MSM para [!DNL Assets] coincide con el comportamiento de la funcionalidad MSM para sitios. Algunas de las diferencias clave a tener en cuenta son:
 
@@ -322,7 +325,7 @@ Algunas prácticas recomendadas para MSM son:
 
 * Planifique las relaciones principales-secundarias de los recursos y los flujos de contenido antes de iniciar la implementación.
 
-## Limitaciones y problemas conocidos de MSM para [!DNL Assets]{#limitations}
+## Limitaciones y problemas conocidos de MSM para [!DNL Assets] {#limitations}
 
 A continuación se muestra una limitación de MSM para [!DNL Assets].
 
