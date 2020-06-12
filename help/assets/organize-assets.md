@@ -3,7 +3,7 @@ title: Organizar sus recursos digitales
 description: Organice sus recursos digitales, imágenes, archivos, carpetas, etc. mediante Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 1%
@@ -26,7 +26,7 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es si
 
    * **Carpetas** de desarrollo: contiene recursos digitales en los que está trabajando.
    * **Carpetas** de cliente: contiene recursos digitales basados en nombres de clientes o proyectos.
-   * **Carpetas** maestras: contiene recursos digitales originales.
+   * **Carpetas** principales: contiene recursos digitales originales.
    * **Carpetas** de representación: contiene representaciones y copias de los recursos digitales originales.
    * **Carpetas** de tamaño de archivo: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
    * **Carpetas** de ensayo: contiene recursos digitales que están listos para publicarse en directo en el sitio web.
