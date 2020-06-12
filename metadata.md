@@ -8,10 +8,13 @@ getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Tutoriales
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-65.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-65.es-ES
 index: y
 translation-type: tm+mt
-source-git-commit: d53e72b198db91d368ddddac768d19b88ee29050
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 9%
 
 ---
 
@@ -22,13 +25,13 @@ El archivo metadata.md incluye metadatos de nivel de repos que pasan a los archi
 
 | metadata | lo que hace |
 |--- |--- |
-| solution-title | Se utiliza en el encabezado del artículo como vínculo |
-| solution-hub-url | Abre la página del concentrador de ayuda |
-| solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún |
-| getting-started-url | Vínculo a la página de introducción de ayuda |
-| tutorials-url | Vínculo a tutoriales de vídeo: tutoriales de ayuda o tutoriales de KT |
-| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. el valor predeterminado es 2 |
-| git-repo | Especifica la ubicación de la repo principal para uso interno |
+| solution-title | Se utiliza en el encabezado del artículo como vínculo. |
+| solution-hub-url | Abre la página del concentrador de ayuda. |
+| solution-icon | Muestra el icono de la solución junto al título de la solución. Aún no se ha implementado. |
+| getting-started-url | Vínculo para ayudar a la página de introducción. |
+| tutorials-url | Vínculo a tutoriales de vídeo: tutoriales de ayuda o tutoriales de KT. |
+| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. el valor predeterminado es 2. |
+| git-repo | Especifica la ubicación de la repo principal para uso interno. |
 
 En el archivo TOC.md
 
