@@ -3,9 +3,9 @@ title: Consideraciones y requisitos de la red de recursos
 description: Analiza las consideraciones de red al diseñar una implementación de Recursos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -56,9 +56,9 @@ En el enlace ascendente desde una red corporativa a Internet, puede haber otros 
 
 Los servidores de seguridad y los proxies empresariales también pueden dar forma al ancho de banda de muchas formas diferentes. Este tipo de dispositivo puede priorizar el ancho de banda mediante la calidad del servicio, las limitaciones de ancho de banda por usuario o las limitaciones de velocidad de bits por host. Estos son puntos de interrupción importantes que hay que examinar, ya que pueden afectar significativamente a la experiencia del usuario de Recursos.
 
-En este ejemplo, la empresa tiene un vínculo superior de 10 Gbps. Debe ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede reducir potencialmente el tráfico a un solo host a 10 Mbps, aunque el vínculo ascendente a Internet sea de 10 Gbps.
+En este ejemplo, la empresa tiene un vínculo ascendente de 10 Gbps. Debe ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede reducir potencialmente el tráfico a un solo host a 10 Mbps, aunque el vínculo ascendente a Internet sea de 10 Gbps.
 
-Este es el punto de interrupción más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o una lista blanca con el grupo de operaciones de red a cargo de este servidor de seguridad.
+Este es el punto de interrupción más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o configurar una lista permitida con el grupo de operaciones de red a cargo de este servidor de seguridad.
 
 En los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser inadecuado para satisfacer las expectativas de los usuarios.
 
