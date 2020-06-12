@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesi
 description: Aprenda a [!DNL Adobe Experience Manager Assets] integrarse con [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,7 @@ Esta secuencia de comandos de comando:
       * Se generan representaciones PDF y JPG.
       * Se generan representaciones HTML e IDML.
    * Vuelva a publicar los archivos resultantes en [!DNL Experience Manager Assets].
+
    >[!NOTE]
    >
    >IDML es un formato basado en XML que procesa todo el contenido del [!DNL InDesign] archivo. Se almacena como un paquete comprimido mediante compresión [ZIP](https://www.techterms.com/definition/zip) . Para obtener más información, consulte [InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
@@ -137,7 +138,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 
 * **Título** de página: Especifique el título que desea asignar a la página resultante.
 
-* **Ruta** raíz de página: La ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utilizará el nodo que contiene las representaciones del recurso.
+* **Ruta** raíz de página: Ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utilizará el nodo que contiene las representaciones del recurso.
 
 * **Plantilla** de página: Plantilla que se utilizará al generar la página resultante.
 
@@ -195,18 +196,19 @@ Para configurar el número de trabajos de IDS paralelos:
 
    Si hay varios equipos en ejecución [!DNL InDesign Server], agregue extremos SOAP (número de procesadores por máquina -1) para cada equipo.
 
-   >[!NOTE]
-   >
-   >Puede activar la lista negra de trabajadores de IDS cuando trabaje con un grupo de trabajadores.
-   >
-   >
-   >Para ello, habilite la casilla **[!UICONTROL enable.reintentar.name]** , en la `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuración, que habilita las recuperaciones de trabajos IDS.
-   >
-   >
-   >Además, en la configuración `com.day.cq.dam.ids.impl.IDSPoolImpl.name` , establezca un valor positivo para el `max.errors.to.blacklist` parámetro que determina el número de recuperaciones de trabajos antes de excluir un ID de la lista de controladores de trabajos.
-   >
-   >
-   >De forma predeterminada, después del tiempo configurable (retry.interval.to.whitelist.name), en minutos, se vuelve a validar el programa de trabajo de IDS. Si el trabajador se encuentra en línea, se elimina de la lista negra.
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
+>[!NOTE]
+>
+>Al trabajar con un grupo de trabajadores, puede habilitar la lista bloqueada de los trabajadores de IDS.
+>
+>Para ello, habilite la casilla **[!UICONTROL enable.reintentar.name]** , en la `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuración, que habilita las recuperaciones de trabajos IDS.
+>
+>Además, en la configuración `com.day.cq.dam.ids.impl.IDSPoolImpl.name` , establezca un valor positivo para el `max.errors.to.blacklist` parámetro que determina el número de recuperaciones de trabajos antes de excluir un ID de la lista de controladores de trabajos.
+>
+>De forma predeterminada, después del (`retry.interval.to.whitelist.name`) tiempo configurable en minutos, se vuelve a validar el programa de trabajo de IDS. Si el trabajador se encuentra en línea, se elimina de la lista bloqueada.
 
 ## Habilitar compatibilidad con [!DNL InDesign Server] 10.0 o posterior {#enabling-support-for-indesign-server-or-later}
 
