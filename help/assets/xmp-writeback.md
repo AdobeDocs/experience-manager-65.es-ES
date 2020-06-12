@@ -3,10 +3,10 @@ title: Reescritura XMP en representaciones
 description: Descubra cómo la función de reescritura XMP propaga los cambios de metadatos de un recurso en todas las representaciones del recurso o en determinadas representaciones.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 11%
+source-wordcount: '795'
+ht-degree: 5%
 
 ---
 
@@ -68,26 +68,36 @@ Los cambios en los metadatos se propagan a las representaciones thumbnail.140.10
 
 ## Filtrado de metadatos XMP {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] admite el filtrado de propiedades/nodos de listas negras y listas blancas para los metadatos XMP que se leen desde los binarios de recursos y se almacenan en JCR cuando se ingestan recursos.
+[!DNL Experience Manager Assets] admite tanto la lista bloqueada como el filtrado de listas permitido de propiedades/nodos para metadatos XMP que se leen desde binarios de recursos y se almacenan en JCR cuando se ingestan recursos.
 
-El filtrado de listas negras permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10.000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen por adelantado. Si el filtrado de listas negras permite importar un gran número de recursos con numerosos metadatos XMP, la implementación de Experience Manager puede encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
+El filtrado mediante una lista bloqueada permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10.000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen por adelantado. Si el filtrado mediante una lista bloqueada permite importar un gran número de recursos con numerosos metadatos XMP, la instancia/clúster de AEM puede tener problemas de estabilidad, por ejemplo, colas de observación obstruidas.
 
-El filtrado de la lista blanca de metadatos XMP resuelve este problema permitiéndole definir las propiedades XMP que se van a importar. De este modo, se omiten otras propiedades XMP desconocidas. Puede agregar algunas de estas propiedades al filtro de lista negra para obtener compatibilidad con versiones anteriores.
+El filtrado de metadatos XMP mediante la lista permitida resuelve este problema permitiéndole definir las propiedades XMP que se van a importar. De este modo, se omiten todas las demás propiedades XMP o desconocidas. Para la compatibilidad con versiones anteriores, puede agregar algunas de estas propiedades al filtro que utiliza una lista bloqueada.
 
 >[!NOTE]
 >
 >El filtrado solo funciona para las propiedades derivadas de orígenes XMP en los binarios de recursos. Para las propiedades derivadas de orígenes no XMP, como los formatos EXIF e IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación de recursos se almacena en la propiedad denominada `CreateDate` en TIFF EXIF. Experience Manager almacena este valor en un campo de metadatos denominado `exif:DateTimeOriginal`. Como el origen es un origen que no es XMP, el filtrado no funciona en esta propiedad.
 
+<!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
+in Config Manager. And the settings are,
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_whitelist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.whitelist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_blacklist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.blacklist.name
+ 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
 1. Para abrir Configuration Manager, acceda a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra la configuración de **[!UICONTROL Adobe CQ DAM XmpFilter]** .
-1. Para aplicar el filtrado de listas blancas, seleccione **[!UICONTROL Aplicar lista blanca a las propiedades XMP]** y especifique las propiedades que desea importar en el cuadro de filtrado **[!UICONTROL Nombres XML admitidos para XMP]**.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Para filtrar las propiedades XMP bloqueadas después de aplicar el filtro de la lista blanca, especifíquelas en el cuadro de **[!UICONTROL filtrado Nombres XML bloqueados para XMP]**.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >La opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP está seleccionada de forma predeterminada. En otras palabras, el filtrado de listas negras está habilitado de forma predeterminada. Para desactivar el filtrado de listas negras, desactive la opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP.
+   >La opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP está seleccionada de forma predeterminada. En otras palabras, el filtrado mediante una lista bloqueada está habilitado de forma predeterminada. Para desactivar este filtrado, anule la selección de la opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP.
 
 1. Guarde los cambios.
