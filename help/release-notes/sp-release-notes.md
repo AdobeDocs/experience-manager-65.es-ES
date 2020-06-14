@@ -4,9 +4,9 @@ description: Notas de versión específicas de Service Pack 5 de Adobe Experienc
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb48bba01b78a0724f3a07875f601367520b2a8e
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4510'
 ht-degree: 7%
 
 ---
@@ -173,7 +173,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * [!UICONTROL Ahora se puede acceder a la página Editor] de Esquemas de metadatos y a sus elementos mediante el teclado y son fáciles de leer en pantalla (CQ-4290962, CQ-4272953).
 
-* El símbolo `X` para eliminar las etiquetas seleccionadas lo anuncian los lectores de pantalla junto con el número de etiquetas seleccionadas (CQ-4273017).
+* El propósito del `X` símbolo para eliminar las etiquetas seleccionadas lo anuncian los lectores de pantalla junto con el número de etiquetas seleccionadas (CQ-4273017).
 
 * Para evitar confusiones entre los usuarios sin visión de futuro que utilizan lectores de pantalla, los iconos y las imágenes decorativos ahora son ignorados por los lectores de pantalla (CQ-4272944).
 
@@ -257,13 +257,13 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 ### Integraciones {#integrations-6550}
 
-* La caché interna se borra cuando se publica una página con un componente de Adobe Destinatario (NPR-33162).
-* La integración con Adobe Destinatario no funciona en [!DNL Windows Internet Explorer] 11 (NPR-33111).
-* Al configurar Adobe Destinatario, los campos [!UICONTROL Compañía] y Grupo [!UICONTROL de] informes no aparecen al seleccionar un origen de sistema de informes (NPR-32502).
-* Al exportar [!DNL Experience Fragments] mediante Adobe I/O, los metadatos como el producto de origen no se exportan a Adobe Destinatario (NPR-32159).
+* La caché interna se borra cuando se publica una página con un componente de Adobe Target (NPR-33162).
+* La integración con Adobe Target no funciona en [!DNL Windows Internet Explorer] 11 (NPR-33111).
+* Al configurar Adobe Target, los campos [!UICONTROL Compañía] y Grupo [!UICONTROL de] informes no aparecen al seleccionar un origen de sistema de informes (NPR-32502).
+* Al exportar [!DNL Experience Fragments] mediante Adobe I/O, los metadatos como el producto de origen no se exportan a Adobe Target (NPR-32159).
 * Los usuarios de IMS autorizados en el grupo de administración local de Experience Manager no pueden crear ni modificar configuraciones de IMS (NPR-33045).
 * La página de configuraciones de Adobe Launch no muestra todos los registros (NPR-33011).
-* Los usuarios del grupo de autores de contenido no pueden editar las propiedades de un componente de Adobe Destinatario debido a un error de JavaScript (NPR-32996).
+* Los usuarios del grupo de autores de contenido no pueden editar las propiedades de un componente de Adobe Target debido a un error de JavaScript (NPR-32996).
 
 ### Proyectos de traducción {#translation-6550}
 
@@ -414,7 +414,7 @@ Se aconseja a los clientes que revisen si utilizan la función o la capacidad en
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integraciones | La pantalla de inclusión **[!UICONTROL de servicios de nube de]** AEM ya no se utiliza. Con la integración de AEM y Destinatario actualizada en AEM 6.5 para admitir la API de Destinatario Standard, que utiliza la autenticación mediante Adobe IMS y E/S, y la función cada vez mayor de Adobe Launch para instrumentar las páginas de AEM para el análisis y la personalización, el asistente para la selección se ha vuelto funcionalmente irrelevante. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones de Adobe I/O a través de los respectivos servicios de nube de AEM. |
+| Integraciones | La pantalla de inclusión **[!UICONTROL de servicios de nube de]** AEM ya no se utiliza. Con la integración de AEM y Destinatario actualizada en AEM 6.5 para admitir la API de Target Standard, que utiliza la autenticación mediante Adobe IMS y E/S, y el creciente papel de Adobe Launch en la instrumentación de páginas de AEM para el análisis y la personalización, el asistente para la selección de contenido se ha vuelto funcionalmente irrelevante. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones de Adobe I/O a través de los respectivos servicios de nube de AEM. |
 
 ## Problemas conocidos {#known-issues}
 
