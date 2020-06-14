@@ -4,9 +4,9 @@ description: Sugerencias y directrices [!DNL Experience Manager] sobre configura
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: da2e435f33e8527793e009700c30e60868d196be
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2776'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte Guía [de tamaño de](/help/assets/assets-sizing-guide.md)recursos. Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)Assets.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se saturará rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte Guía [de tamaño de](/help/assets/assets-sizing-guide.md)recursos. Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)Assets.
 
 Principalmente, su estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de [!DNLEExperience Manager] . Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
@@ -238,7 +238,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 >[!NOTE]
 >
->Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que esto sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
+>Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que este paso sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
 
 ## Índices de búsqueda {#search-indexes}
 
@@ -300,6 +300,7 @@ Para minimizar la latencia y lograr un alto rendimiento mediante la utilización
 * Implementar en Java 8.
 * Configure parámetros JVM óptimos.
 * Configure un almacén de datos del sistema de archivos o un almacén de datos S3.
+* Deshabilitar la generación de subrecursos. Si está activado, el flujo de trabajo de AEM crea un recurso independiente para cada página en un recurso de varias páginas. Cada una de estas páginas es un recurso individual que consume espacio en disco adicional, requiere control de versiones y procesamiento adicional del flujo de trabajo. Si no necesita páginas independientes, deshabilite la generación de subrecursos y las actividades de extracción de página.
 * Habilitar flujos de trabajo transitorios.
 * Ajuste las colas de flujo de trabajo de Granite para limitar los trabajos simultáneos.
 * Configure [!DNL ImageMagick] para limitar el consumo de recursos.
