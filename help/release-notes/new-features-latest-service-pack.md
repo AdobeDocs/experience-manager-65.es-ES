@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 2%
@@ -56,9 +56,9 @@ En este artículo se destacan las funciones incluidas en el último Service Pack
 
 * Se puede acceder a muchos elementos de interfaz de usuario, controles y campos de formulario de entrada mediante el teclado.
 
-* La relación de color y contraste de algunos elementos de la interfaz de usuario se actualiza para que los usuarios con visión limitada o los usuarios sin percepción de color puedan distinguir estos elementos de la interfaz de usuario. Por ejemplo, el color de los iconos de clasificación por estrellas (como en la sección [!UICONTROL Clasificación] de la ficha [!UICONTROL Avanzado] de [!UICONTROL Propiedades] del recurso o en la vista de la tarjeta) se cambia para obtener el contraste adecuado.
+* El color y el contraste de algunos elementos de la interfaz de usuario se actualizan para que los usuarios con visión limitada o los usuarios sin percepción del color puedan distinguir estos elementos de la interfaz de usuario. Por ejemplo, el color de los iconos de clasificación por estrellas (como en la sección [!UICONTROL Clasificación] de la ficha [!UICONTROL Avanzado] de [!UICONTROL Propiedades] del recurso o en la vista de la tarjeta) se cambia para obtener el contraste adecuado.
 
-   ![Iconos de clasificación con mejor relación de contraste](assets/star-rating-icons.png)
+   ![Iconos de clasificación con mejor contraste](assets/star-rating-icons.png)
 
 ### Gestión de excepciones mejorada {#exception-handling}
 
@@ -146,9 +146,10 @@ Los pasos para configurar [!DNL Experience Manager Assets] con [!DNL Brand Porta
 
 * Los lectores de pantalla pueden leer las casillas de verificación de estado mixto (en las que, a menos que seleccione todos los predicados anidados, las casillas de verificación de primer nivel no se seleccionan y se rompen) en el panel Filtros.
 
-* Las restricciones de formato de fecha y hora se proporcionan en las etiquetas de campo de los campos de fecha, para permitir que los usuarios introduzcan la fecha en el formato correcto mediante el teclado. Por ejemplo, `On Time (MM-DD-YYYY HH:mm)`. Aquí MM es el mes en formato de dos dígitos, AAAA es el año, DD es el día en formato de dos dígitos, HH es la hora en formato militar de 24 horas y mm es el minuto.
+* Las restricciones de formato de fecha y hora se proporcionan en las etiquetas de campo de los campos de fecha, para permitir que los usuarios introduzcan la fecha en el formato correcto mediante el teclado.
+Por ejemplo, `On Time (MM-DD-YYYY HH:mm)`. Aquí MM es el mes en formato de dos dígitos, AAAA es el año, DD es el día en formato de dos dígitos, HH es la hora en formato militar de 24 horas y mm es el minuto.
 
-* Los lectores de pantalla anuncian el `X` símbolo para eliminar las etiquetas seleccionadas y el número de etiquetas seleccionadas.
+* Los lectores de pantalla ahora anuncian el `X` símbolo para eliminar las etiquetas seleccionadas junto con el número de etiquetas seleccionadas.
 
 #### Búsqueda visual [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
