@@ -3,9 +3,9 @@ title: Notas de la versión anterior de Adobe Experience Manager 6.5 Service Pac
 description: Notas de la versión específicas de Adobe Experience Manager 6.5 Service Pack 3 y versiones anteriores.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '8094'
+source-wordcount: '8093'
 ht-degree: 36%
 
 ---
@@ -295,10 +295,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El uso compartido de recursos no funciona para un recurso que tiene más caracteres (`+`) en el nombre del archivo (NPR-31547).
 
-* Las ediciones en el formulario de búsqueda predeterminado Administración de recursos * El carril de búsqueda no funciona de la forma esperada (NPR-31502).
-
-<!-- Review: Check if this seemingly stray asterisk is needed there or not.
--->
+* Las ediciones en el formulario de búsqueda predeterminado Recursos Administración Raíl de búsqueda no funcionan del modo esperado (NPR-31502).
 
 * Las sugerencias no se muestran cuando se utiliza Omnisearch en la vista de recursos para buscar recursos (NPR-31496).
 
@@ -312,7 +309,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * No se pueden quitar todos los miembros (usuarios/grupos) de la sección Miembros de una carpeta; al intentar eliminar todos los usuarios, el usuario que ha iniciado sesión se agrega a la lista (NPR-31171).
 
-* Los recursos con un símbolo más (`+`) en el nombre del archivo no se pueden eliminar (NPR-31162).
+* Los recursos con símbolo más (`+`) en el nombre del archivo no se pueden eliminar (NPR-31162).
 
 * El menú desplegable Crear, que está visible en el menú superior al seleccionar una carpeta, no muestra &#39;Carpeta&#39; como opción de creación (NPR-30877).
 
