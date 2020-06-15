@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
 workflow-type: tm+mt
-source-wordcount: '11868'
+source-wordcount: '11877'
 ht-degree: 8%
 
 ---
@@ -27,12 +27,13 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 >[!NOTE]
 >
->Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha activado y configurado los servicios de Dynamic Media Cloud en el modo Dynamic Media - Scene7 o Dynamic Media - modo híbrido.
+>Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha activado y configurado Cloud Service de Dynamic Media en modo Dynamic Media - Scene7 o Dynamic Media - híbrido.
 >
->* Consulte [Configuración de los servicios](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) de Dynamic Media Cloud en Configuración de Dynamic Media - modo Scene7 y [Resolución de problemas de Dynamic Media - modo Scene7.](/help/assets/troubleshoot-dms7.md)
+>* Consulte [Configuración de Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) de Dynamic Media en Configuración de Dynamic Media - modo de Scene7 y [Resolución de problemas de Dynamic Media - modo de Scene7.](/help/assets/troubleshoot-dms7.md)
    >
    >
-* Consulte [Configuración de los servicios](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) de Dynamic Media Cloud en Configuración de Dynamic Media: modo híbrido.
+* Consulte [Configuración de Cloud Service](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) de Dynamic Media en Configuración de Dynamic Media - Modo híbrido.
+
 >
 
 
@@ -43,12 +44,12 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
       * [Creación de un perfil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)de codificación de vídeo.
       * Obtenga más información sobre las [prácticas recomendadas para la codificación](#best-practices-for-encoding-videos)de vídeo.
-   * Asocie el perfil de procesamiento de vídeo a una o varias carpetas en las que va a cargar los vídeos principales.
+   * Asocie el perfil de procesamiento de vídeo a una o varias carpetas en las que va a cargar los vídeos de origen principales.
 
       * [Aplicación de un perfil de vídeo a las carpetas](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * Obtenga más información sobre las [prácticas recomendadas para organizar los recursos digitales con el fin de utilizar perfiles](/help/assets/organize-assets.md)de procesamiento.
       * Obtenga más información sobre la [organización de recursos](/help/assets/organize-assets.md)digitales.
-   * Cargue los vídeos principales en las carpetas. Puede cargar archivos de vídeo de hasta 15 GB cada uno. Al agregar vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo asignado a la carpeta.
+   * Cargue los vídeos de origen principales en las carpetas. Puede cargar archivos de vídeo de hasta 15 GB cada uno. Al agregar vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo asignado a la carpeta.
 
       * [Cargue los vídeos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
       * Obtenga más información sobre los formatos [de archivo de entrada](/help/assets/assets-formats.md#supported-multimedia-formats)admitidos.
@@ -88,7 +89,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Anotación de vídeos](managing-video-assets.md#annotate-video-assets) o [anotaciones en recursos](managing-assets-touch-ui.md#annotating)
 
       * [Creación de una versión](managing-assets-touch-ui.md#asset-versioning)
-      * [Aplicación de flujos de trabajo a recursos](assets-workflow.md) o ver [Inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Aplicación de flujos de trabajo a los recursos](assets-workflow.md) o [inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
 
       * [Revisar recursos de carpetas](bulk-approval.md)
       * [Proyectos](../sites-authoring/projects.md)
@@ -117,7 +118,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 ## Uso de vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-Vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para flujo continuo en varias pantallas, incluidos equipos de escritorio, iOS, Android, Blackberry y dispositivos móviles Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+Video en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para transmitir en varias pantallas, incluidos dispositivos móviles de escritorio, iOS, Android, Blackberry y Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptable. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tablets.
 
@@ -150,7 +151,7 @@ Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Pu
 
 Puede encontrar los dispositivos Windows compatibles con este formato de vídeo en los siguientes: [Formatos de vídeo compatibles con Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* Reproducción de vídeo con ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
+* Reproducción de vídeo con los ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
 
    * Visores de vídeos únicos.
    * Visores de medios mixtos que combinan contenido de vídeo y de imagen.
@@ -263,7 +264,7 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
 
 ## Arquitectura de la solución de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGgateway (en modo híbrido de Dynamic Media) y están disponibles para el consumo público.
+El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGgateway (en modo Dynamic Media híbrido) y que están disponibles para el consumo público.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -304,7 +305,7 @@ Puede obtener los metadatos de un archivo visualizando sus metadatos con una her
 
 ### Proporción de aspecto {#aspect-ratio}
 
-Al elegir o crear un ajuste preestablecido de codificación de vídeo para el archivo de vídeo principal, asegúrese de que el ajuste preestablecido tiene la misma proporción de aspecto que el archivo de vídeo principal. La proporción de aspecto es la proporción entre la anchura y la altura del vídeo.
+Cuando elija o cree un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, asegúrese de que el ajuste preestablecido tenga la misma proporción de aspecto que el archivo de vídeo de origen principal. La proporción de aspecto es la proporción entre la anchura y la altura del vídeo.
 
 Para determinar la proporción de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y tenga en cuenta la anchura y la altura del archivo (consulte Obtención de los metadatos de un archivo más arriba). A continuación, utilice esta fórmula para determinar la proporción de aspecto:
 
@@ -371,7 +372,7 @@ Como la resolución y la velocidad de datos están vinculadas, tiene dos opcione
 * Elija una velocidad de datos y, a continuación, codifique la resolución más alta que se muestre correctamente a la velocidad de datos elegida.
 * Elija una resolución y, a continuación, codifique a la velocidad de datos necesaria para conseguir vídeo de alta calidad con la resolución elegida.
 
-Al elegir (o crear) un ajuste preestablecido de codificación de vídeo para el archivo de vídeo principal, utilice esta tabla para destinatario de la resolución correcta:
+Al elegir (o crear) un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, utilice esta tabla para destinatario de la resolución correcta:
 
 | Resolución | Altura (píxeles) | Tamaño de la pantalla |
 |--- |--- |--- |
@@ -386,7 +387,7 @@ Al elegir (o crear) un ajuste preestablecido de codificación de vídeo para el 
 
 En Estados Unidos y Japón, la mayoría de los vídeos se graban a 29,97 fotogramas por segundo (fps); en Europa, la mayoría de los vídeos se graban a 25 fps. La película se graba a 24 fps.
 
-Elija un ajuste preestablecido de codificación de vídeo que coincida con la velocidad de fps del archivo de vídeo principal. Por ejemplo, si el vídeo principal es de 25 fps, elija un ajuste preestablecido de codificación con 25 fps. De forma predeterminada, toda la codificación personalizada utiliza el fps del archivo de vídeo principal. Por este motivo, no es necesario especificar explícitamente la configuración de fps al crear un ajuste preestablecido de codificación de vídeo.
+Elija un ajuste preestablecido de codificación de vídeo que coincida con la velocidad de fps del archivo de vídeo de origen principal. Por ejemplo, si el vídeo de origen principal es de 25 fps, elija un ajuste preestablecido de codificación con 25 fps. De forma predeterminada, toda la codificación personalizada utiliza el fps del archivo de vídeo de origen principal. Por este motivo, no es necesario especificar explícitamente la configuración de fps al crear un ajuste preestablecido de codificación de vídeo.
 
 ### Dimensiones de codificación de vídeo {#video-encoding-dimensions}
 
@@ -413,7 +414,7 @@ Dynamic Media recomienda el uso de ajustes preestablecidos de codificación de v
 
 Puede publicar recursos de vídeo de AEM in situ directamente en un canal de YouTube que haya creado anteriormente.
 
-Para publicar recursos de vídeo en YouTube, configure Recursos AEM con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. La publicación en YouTube se produce junto con una publicación normal del vídeo siempre que se utilice una etiqueta asociada.
+Para publicar recursos de vídeo en YouTube, configure AEM Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. La publicación en YouTube se produce junto con una publicación normal del vídeo siempre que se utilice una etiqueta asociada.
 
 YouTube realiza su propia codificación. De este modo, el archivo de vídeo original que se cargó en AEM se publica en YouTube en lugar de en cualquier representación de vídeo que haya creado la codificación de Dynamic Media. Aunque no es necesario procesar vídeos con Dynamic Media, se espera que lo hagan en caso de que se necesite un ajuste preestablecido de visor para la reproducción.
 
@@ -457,7 +458,7 @@ Para configurar Google Cloud:
 
    Si es necesario, es posible que deba **[!UICONTROL iniciar sesión]** con las credenciales de su cuenta de Google para ver la opción **[!UICONTROL Consola]** .
 
-1. En la página Panel, a la derecha de la plataforma **[!UICONTROL de]** Google Cloud, haga clic en la lista desplegable Proyecto para abrir el cuadro de diálogo Seleccionar un proyecto.
+1. En la página Panel, a la derecha de **[!UICONTROL Google Cloud Platform]**, haga clic en la lista desplegable Proyecto para abrir el cuadro de diálogo Seleccionar un proyecto.
 1. En el cuadro de diálogo Seleccionar un proyecto, toque **[!UICONTROL Nuevo proyecto]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
@@ -472,6 +473,7 @@ Para configurar Google Cloud:
 
    * En el Panel del proyecto, en la tarjeta Introducción, toque **[!UICONTROL Explorar y active las API]**.
    * En el Panel del proyecto, en la tarjeta API, toque **[!UICONTROL Ir a la información general]** de las API.
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Cerca de la parte superior de la página API y servicios, toque **[!UICONTROL Activar API y servicios]**.
@@ -491,6 +493,7 @@ Para configurar Google Cloud:
    * Desde **[!UICONTROL ¿De dónde va a llamar a la API?]** lista desplegable, seleccione Servidor **[!UICONTROL Web (por ejemplo, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** lista desplegable, toque Datos **[!UICONTROL de usuario]**.
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Puntee **[!UICONTROL ¿Qué credenciales necesito?]**
@@ -619,7 +622,7 @@ Deje abierta la página Crear configuración de YouTube; volverás a ella en un 
 
    Ahora configurará las etiquetas para la publicación.
 
-1. **[!UICONTROL Configuración de etiquetas para publicación]** : en la página Cloud Services > YouTube, toque el icono del lápiz para editar la lista de las etiquetas que desee utilizar.
+1. **[!UICONTROL Configuración de etiquetas para publicación]** : en la página Cloud Service > YouTube, toque el icono del lápiz para editar la lista de las etiquetas que desee utilizar.
 1. Toque el icono de lista desplegable (intercalación vertical) para mostrar la lista de las etiquetas disponibles en AEM.
 1. Toque una o varias etiquetas para agregarlas.
 
@@ -665,7 +668,7 @@ Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; volverá
 
    Ahora configurará las etiquetas para la publicación.
 
-1. **[!UICONTROL Configuración de etiquetas para publicación]** : en la página Cloud Services > YouTube, toque el icono del lápiz para editar la lista de las etiquetas que desee utilizar.
+1. **[!UICONTROL Configuración de etiquetas para publicación]** : en la página Cloud Service > YouTube, toque el icono del lápiz para editar la lista de las etiquetas que desee utilizar.
 1. Toque el icono de lista desplegable (intercalación vertical) para mostrar la lista de las etiquetas disponibles en AEM.
 1. Toque una o varias etiquetas para agregarlas.
 
@@ -744,9 +747,9 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 
 >[!NOTE]
 >
->Cuando se ejecuta en modo Dynamic Media - Scene7, tenga en cuenta que la publicación inmediata no se publica automáticamente en YouTube. When Dynamic Media - Scene7 mode is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
+>Cuando se ejecuta en el modo Dynamic Media - Scene7, tenga en cuenta que la publicación inmediata no se publica automáticamente en YouTube. When Dynamic Media - Scene7 mode is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
 >
->**[!UICONTROL Publicar inmediatamente]** significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de envío. Aunque esto es cierto para los medios dinámicos, no es cierto para YouTube. Para publicar en YouTube, debe publicar mediante AEM Author.
+>**[!UICONTROL Publicar inmediatamente]** significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de envío. Aunque eso es cierto para Dynamic Media, no es cierto para YouTube. Para publicar en YouTube, debe publicar por medio de un AEM Author.
 
 >[!NOTE]
 >
@@ -770,7 +773,7 @@ Para publicar vídeos en su canal de YouTube:
 1. En la esquina superior derecha de la página de propiedades del vídeo, haga clic en **[!UICONTROL Guardar y cerrar]**.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Publicación]** rápida.
 
-   Consulte también [Uso de la administración de publicaciones con sitios](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html)AEM.
+   Consulte también [Uso de la administración de publicaciones con AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
 
    Opcionalmente, puede comprobar el vídeo publicado en su canal de YouTube.
 
@@ -780,13 +783,13 @@ De forma opcional, puede supervisar el progreso de la publicación de YouTube (o
 
 Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Los tiempos de publicación pueden variar considerablemente según los numerosos factores que incluyen el formato del vídeo principal, el tamaño del archivo y el tráfico de carga. El proceso de publicación puede tardar entre unos minutos y varias horas. Además, tenga en cuenta que los formatos de resolución más alta se procesan mucho más lentamente. Por ejemplo, 720p y 1080p tardan mucho más en aparecer que 480p.
+Los tiempos de publicación pueden variar considerablemente según los numerosos factores que incluyen el formato del vídeo de origen principal, el tamaño del archivo y el tráfico de carga. El proceso de publicación puede tardar entre unos minutos y varias horas. Además, tenga en cuenta que los formatos de resolución más alta se procesan mucho más lentamente. Por ejemplo, 720p y 1080p tardan mucho más en aparecer que 480p.
 
 Después de ocho horas, si sigue viendo un mensaje de estado que dice **[!UICONTROL Cargado (procesando, espere)]**, intente eliminar el vídeo de nuestro sitio y cargarlo de nuevo.
 
 ### Linking YouTube URLs to your Web Application {#linking-youtube-urls-to-your-web-application}
 
-Puede obtener una cadena URL de YouTube generada por Dynamic Media después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
+Puede obtener una cadena URL de YouTube que Dynamic Media genera después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
 
 >[!NOTE]
 >
@@ -836,9 +839,11 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
 1. Progreso de la codificación de vídeo de Vista en la carpeta de recursos:
 
    * En la vista de tarjetas, el progreso de la codificación de vídeo se muestra en el recurso por porcentaje. Si hay un error, esta información también se muestra en el recurso.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. Si hay un error, este mensaje se muestra en la misma columna.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Esta columna no se muestra de forma predeterminada. Para habilitar la columna, seleccione **[!UICONTROL Ver configuración]** en el menú desplegable de vistas, agregue la columna **[!UICONTROL Estado de procesamiento]** y pulse o haga clic en **[!UICONTROL Actualizar]**.
@@ -858,6 +863,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >    * Configuración de cola de trabajos de Apache Sling
    >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
    >    * Cola de tiempo de espera de flujo de trabajo de granito
+
    >
    >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
 
@@ -892,6 +898,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >    * Configuración de cola de trabajos de Apache Sling
    >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
    >    * Cola de tiempo de espera de flujo de trabajo de granito
+
    >
    >
    >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
@@ -938,6 +945,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
    * Inicio de publicación
    * Error durante la publicación
    * Finalización de publicación: incluye información sobre canales y direcciones URL
+
    Al desactivar una casilla de verificación, no recibirá la notificación de correo electrónico especificada del flujo de trabajo de publicación de YouTube.
 
    >[!NOTE]
@@ -951,7 +959,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
 
 >[!NOTE]
 >
->Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media: híbrido.
+>Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
@@ -965,9 +973,9 @@ También se muestra una tabla de todos los vídeos *publicados* para que pueda r
 
 Al tocar un nombre de vídeo en la lista, se muestra el informe de retención de audiencias (desplegable) del vídeo en forma de gráfico de líneas. El gráfico muestra el número de vistas para un momento determinado durante la reproducción del vídeo. Al reproducir el vídeo, la barra vertical realiza un seguimiento en sincronización con el indicador de tiempo del reproductor. Las caídas de los datos del gráfico de líneas indican dónde se produce la audiencia por desinterés.
 
-Si el vídeo se codificó fuera de los medios dinámicos de Adobe Experience Manager, el gráfico de retención de audiencias (desplegable) y los datos de porcentaje de reproducción de la tabla no estarán disponibles.
+Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencias (desplegable) y los datos de porcentaje de reproducción de la tabla no están disponibles.
 
-Consulte también [Configuración de los servicios](/help/assets/config-dynamic.md)de Dynamic Media Cloud.
+Consulte también [Configuración de Cloud Service](/help/assets/config-dynamic.md)de Dynamic Media.
 
 >[!NOTE]
 >
@@ -975,7 +983,7 @@ Consulte también [Configuración de los servicios](/help/assets/config-dynamic.
 
 De forma predeterminada, la primera vez que se ingresa a Informes de video, el informe muestra los datos de video comenzando en el primer mes actual y finalizando con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que ingrese Informes de video, se utilizará el intervalo de fechas especificado.
 
-Para que los informes de vídeo funcionen correctamente, se crea automáticamente un ID de grupo de informes al configurar los servicios de Dynamic Media Cloud. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la configuración de Dynamic Media Cloud y tocar **[!UICONTROL Aceptar]**.
+Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes cuando se configuran Cloud Service de Dynamic Media. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la Configuración de Dynamic Media Cloud y tocar **[!UICONTROL Aceptar]**.
 
 Para vista de informes de vídeo:
 
@@ -987,6 +995,7 @@ Sólo necesita utilizar Actualizar si la fecha de finalización del informe es e
 
    * Cerca de la esquina superior derecha, toque el icono **Selector de fecha ****.
 Especifique el intervalo de fechas de inicio y finalización para el que desea obtener datos de vídeo y, a continuación, toque **[!UICONTROL Ejecutar informe]**.
+
    El cuadro de grupo Métricas principales identifica varias medidas acumuladas para todos los *videos publicados en el sitio.
 
 1. En la tabla que lista los principales vídeos publicados, toque un nombre de vídeo para reproducir el vídeo y también vea el informe desplegable de retención de audiencias del vídeo.
@@ -1117,7 +1126,7 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 
 >[!NOTE]
 >
->El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
+>El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
 
 Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. El SDK de visor de Adobe Scene7 se puede descargar desde [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
@@ -1189,7 +1198,7 @@ Consulte [WebVTT: Formato de seguimiento de texto de vídeo web](https://dev.w3.
      </tbody>
    </table>
 
-## Acerca de las miniaturas de vídeo en Dynamic Media: modo Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## Acerca de las miniaturas de vídeo en el modo Dynamic Media - Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 Una miniatura de vídeo es una versión de tamaño reducido de un fotograma de vídeo o un recurso de imagen que representa el vídeo para el cliente. La miniatura debe servir para animar a un cliente a hacer clic en el vídeo.
 
@@ -1201,11 +1210,11 @@ Tenga en cuenta que una imagen en miniatura de vídeo personalizada que seleccio
 
 La posibilidad de personalizar una miniatura de vídeo solo está disponible después de haber aplicado un perfil de vídeo a la carpeta en la que se encuentra el vídeo.
 
-Consulte también [Acerca de las miniaturas de vídeo en el modo](#about-video-thumbnails-in-dynamic-media-hybrid-mode)Dynamic Media - Híbrido.
+Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media: modo](#about-video-thumbnails-in-dynamic-media-hybrid-mode)híbrido.
 
 ### Añadir una miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail}
 
-Estos pasos solo se aplican a los medios dinámicos que se ejecutan en el modo &quot;Dynamicmedia_Scene7&quot;.
+Estos pasos solo se aplican a Dynamic Media que se ejecuta en el modo &quot;Dynamicmedia_Scene7&quot;.
 
 **Para agregar una miniatura** de vídeo personalizada,
 
