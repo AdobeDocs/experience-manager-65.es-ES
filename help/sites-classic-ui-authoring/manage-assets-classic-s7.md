@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 71%
 
 ---
 
@@ -147,7 +150,7 @@ Una vez que los haya activado en el modo Diseño, puede añadir los componentes 
 >
 >If you are creating and developing custom S7 viewers and using the Content Finder, you need to explicity add the **allowfullscreen** parameter.
 
-### Aviso de final de asistencia para el visor Flash {#flash-viewers-end-of-life-notice}
+### Aviso de fin de vida útil para el visualizador Flash {#flash-viewers-end-of-life-notice}
 
 A partir del 31 de enero de 2017, Adobe Scene7 dejará de ofrecer asistencia para la plataforma del visor Flash.
 
@@ -262,7 +265,7 @@ Haga clic en **Editar** para configurar el componente. You can configure [settin
 >
 >Los comandos y los parámetros de URL de Scene7 no se pueden añadir directamente a la dirección URL de Referencia de archivo. Solo se pueden definir en la interfaz de usuario del componente en el panel **Parámetro**.
 
-**Título, Texto** alternativo En la ficha Plantilla de imagen de Scene7, añada un título a la imagen y texto alternativo para los usuarios que tienen gráficos desactivados.
+**Título, Texto** alternativo En la ficha Plantilla de imagen de Scene7, añada un título a la imagen y texto alternativo para los usuarios que tengan gráficos desactivados.
 
 **URL, Abrir en** Puede definir un recurso desde para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
 
@@ -315,7 +318,7 @@ Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-vide
 
 ### Limitaciones conocidas del componente de vídeo {#known-limitations-for-the-video-component}
 
-Adobe DAM y WCM muestran si se ha cargado un vídeo maestro. No muestran estos recursos de proxy:
+Adobe DAM y WCM muestran si se carga un vídeo de origen principal. No muestran estos recursos de proxy:
 
 * Representaciones codificadas de Scene7
 * Conjuntos de vídeos adaptables de Scene7
@@ -333,12 +336,14 @@ Si tiene varias configuraciones, AEM muestra de forma predeterminada la [configu
 >* Los recursos que se encuentran en la carpeta personalizada no aparecerán en el navegador de contenido de Scene7.
 >* Cuando [se habilita la vista previa segura](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), los recursos publicados y no publicados de Scene7 aparecen en el navegador de contenido de Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+
    >
    >
 * Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes: >
    >    * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
    >    * Vídeo MP4 sencillo
    >    * Vídeo F4V sencillo
+
 >
 
 
@@ -362,6 +367,7 @@ De forma predeterminada, los recursos se muestran por el nombre de archivo. Tamb
 >* Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
 >* Vídeo MP4 sencillo
 >* Vídeo F4V sencillo
+
 >
 
 
@@ -390,7 +396,7 @@ De forma predeterminada, AEM realiza la búsqueda en la carpeta seleccionada y t
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuración** Si tiene más de una configuración de Scene7 definida en Cloud Services, puede seleccionarla aquí. Como resultado, la carpeta cambiará según la configuración que haya elegido.
+**Configuración** Si tiene más de una configuración de Scene7 definida en Cloud Service, puede seleccionarla aquí. Como resultado, la carpeta cambiará según la configuración que haya elegido.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
