@@ -3,9 +3,9 @@ title: Importe y exporte metadatos de recursos de forma masiva.
 description: Importación y exportación masivas de metadatos de recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 9d6f9b8f8d49ae3322a6f5f677292afbd48beeda
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '808'
 ht-degree: 5%
 
 ---
@@ -80,6 +80,7 @@ Algunos casos de uso para exportar metadatos de forma masiva son:
 * El archivo CSV para importar metadatos de recursos tiene un formato muy específico. Para ahorrar esfuerzo y tiempo y evitar errores no deseados, puede crear el CSV en inicio con el formato de un archivo CSV exportado.
 * Al importar metadatos con un archivo CSV, se requiere el formato de fecha `YYYY-MM-DDThh:mm:ss.fff-00:00`. Si se utiliza cualquier otro formato, no se configuran los valores de fecha. Los formatos de fecha del archivo CSV de metadatos exportado tienen el formato `YYYY-MM-DDThh:mm:ss-00:00`. Si desea importarla, conviértala al formato aceptable agregando el valor de nanosegundos indicado por `fff`.
 * Para importar metadatos en Áreas de nombres personalizadas, primero registre las Áreas de nombres.
+* El selector de propiedades muestra las propiedades que se utilizan en los editores de esquema y en los formularios de búsqueda. El selector de propiedades no elige propiedades de metadatos de un recurso.
 
 >[!MORELIKETHIS]
 >
