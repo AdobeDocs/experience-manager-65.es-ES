@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d53e72b198db91d368ddddac768d19b88ee29050
+source-git-commit: f62d2d639499c128fd4cafa5f9c39307ae9a607d
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 87%
 
 ---
 
@@ -48,7 +51,7 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
    >
 * Si las opciones **xt_only** **no** están habilitadas en el inquilino de Adobe Target (clientcode), puede crear **ambas** actividades de XT y de pruebas A/B en AEM.
 
-**Nota adicional:** las opciones de **xt_only** son una configuración aplicada en un inquilino de Target (clientcode) y sólo se pueden modificar directamente en Adobe Target. No se puede activar o desactivar esta opción en AEM.
+**Nota adicional:** las opciones de **xt_only** son una configuración aplicada en un inquilino de Target (clientcode) y sólo se pueden modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
 
 >[!CAUTION]
 You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
@@ -73,25 +76,25 @@ When you create a brand using the Activities console, it also appears in the [Of
 
 Añada una actividad o edite una actividad existente para centrar sus esfuerzos de marketing en audiencias más específicas. Cuando cree o edite una actividad, deberá indicar la siguiente información:
 
-* **Nombre:** el nombre de la actividad.
-* **Motor de segmentación:** [AEM](/help/sites-authoring/personalization.md#aem) o [ Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como motor de búsqueda para el contenido de destino.
+* **Nombre:** Nombre de la actividad.
+* **Motor de segmentación:** [AEM](/help/sites-authoring/personalization.md#aem) o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como motor del contenido segmentado.
 
-* **Seleccionar una configuración de Target:** (Adobe Target solamente) la configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando se selecciona Adobe Target en el motor de segmentación.
-* **Tipo de actividad: **El tipo de actividad: Prueba A/B o Segmentación de experiencias
-* **Objetivo:** (opcional) descripción de la actividad.
-* **Experiencias:** asignaciones entre los nombres de audiencia y los segmentos de marketing que desea utilizar.
-* **** Porcentajes de tráfico: Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
-* **Duración:** cantidad de tiempo para aplicar la actividad.
-* **Prioridad:** la prioridad relativa de la actividad. Cuando las actividades proporcionan contenido para los mismos segmentos de usuarios, predomina la actividad de mayor prioridad.
-* **** Métrica de objetivo: Si Adobe Target está seleccionado como motor de determinación de objetivos, puede agregar métricas de éxito a la actividad. Es obligatoria una métrica válida.
+* **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
+* **Tipo de Actividad: **Tipo de actividad: Prueba A/B o segmentación de experiencias
+* **Objetivo:** (Opcional) Una descripción de la actividad.
+* **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
+* **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
+* **Duración:** Período de tiempo en el que se aplica la actividad.
+* **Prioridad:** Prioridad relativa de la actividad. Cuando las actividades proporcionan contenido para los mismos segmentos de usuario, la actividad de la prioridad mayor prevalece por encima de la otra.
+* **Métrica de objetivo:** Si Adobe Target está seleccionado como motor de determinación de objetivos, puede agregar métricas de éxito a la actividad. Se requiere una métrica de éxito.
 
 >[!NOTE]
-Las nuevas actividades de Adobe Target deben ***crearse*** en el editor de contenido de destino, y no en la consola **Actividades**, ya que se podría producir un error en la sincronización con Adobe Target.
+Es necesario ***crear*** nuevas actividades de Adobe Target en el editor de contenido segmentado, no en la consola **Actividades**, ya que la sincronización con Adobe Target fallará.
 Sin embargo, puede editar las actividades existentes de Adobe Target en la consola.
 
 Para añadir una actividad:
 
-1. Click or tap the brand for which you are creating the activity, and then click or tap **Create **then** Create Activity. **If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
+1. Click or tap the brand for which you are creating the activity, and then click or tap **Create **then** Create Activity. **Si está editando, seleccione la actividad en la pantalla Área maestra y pulse o haga clic en **Editar actividad**.
 1. Proporcione la información siguiente y, a continuación, haga clic o pulse **Siguiente**:
 
    * El nombre de la actividad.
@@ -100,13 +103,14 @@ Para añadir una actividad:
    * (Opcional) El objetivo o una descripción de la actividad.
    * Seleccione el tipo de actividad.
 
-1. Añada una o más experiencias a la actividad. Haga clic o pulse **Añadir experiencia**.
+1. Agregue una o varias experiencias a la actividad. Pulse o haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación AEM o la segmentación por experiencia de Adobe Target:
 
-   1. Toque o haga clic en **Seleccionar audiencia **y seleccione el segmento al que se dirige la experiencia.
+   1. Haga clic o toque **Seleccione Audiencia **y seleccione el segmento que destinatario su experiencia.
    1. Haga clic o pulse **Añadir experiencia**, escriba un nombre y haga clic o pulse **Aceptar**.
 
    1. Haga clic o pulse **Siguiente**.
+
    Si utiliza la prueba A/B de Adobe Target:
 
    1. Haga clic o pulse el lápiz en el cuadro de audiencias para seleccionar una audiencia.
@@ -119,7 +123,7 @@ Para añadir una actividad:
 1. Para especificar el momento en que la actividad comenzará, use el menú desplegable **Inicio** para seleccionar uno de los siguientes valores:
 
    * **Cuando se activa:** la actividad se inicia cuando se active la página que contiene el contenido de destino.
-   * **Fecha y hora especificadas:** una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de inicio de la actividad.
+   * **Fecha y hora especificadas:** una hora específica. Cuando seleccione esta opción, pulse o haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea iniciar la actividad.
 
 1. Para especificar cuándo finaliza la actividad, utilice el menú desplegable final para seleccionar uno de los siguientes valores:
 
@@ -138,7 +142,7 @@ Para añadir una actividad:
 Debe publicar actividades para que puedan estar disponibles. Por el contrario, es posible que no quiera que las actividades estén disponibles al cancelar su publicación.
 
 >[!NOTE]
-Cuando se cancela la publicación de una actividad,
+Al cancelar la publicación de una actividad, el estado de la actividad no cambia a menos que actualice la página.
 
 Para publicar o cancelar la publicación de actividades:
 
@@ -164,7 +168,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 
 1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
 1. Haga clic o pulse la marca de la cual quiera ver actividades.
-1. Select the activity and click or tap **View Properties** and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Se muestran los datos de rendimiento.
+1. Seleccione la actividad y pulse o haga clic en **Ver propiedades**, seleccione la pestaña **Informes** y haga clic en la actividad para la que desee ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -174,6 +178,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 
    * Desactiva la actividad actual
    * Modifica todas las páginas y reemplaza el contenido de destino con el contenido real de la experiencia ganadora. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
    Una experiencia ganadora es la que más crece en los informes, y está basada en la tasa de conversión.
@@ -218,7 +223,7 @@ Este problema también puede ocurrir en las siguientes circunstancias:
 Para evitar problemas de sincronización, use siempre nombres exclusivos para las actividades. Si una actividad no se sincroniza, puede eliminar la campaña en Adobe Target que utilice el mismo nombre si dicha campaña no se está utilizando.
 
 >[!NOTE]
-When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por lo tanto, los nombres de campaña no se pueden reutilizar en diferentes tipos de campaña.
+When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; Por lo tanto, los nombres de campaña no pueden reutilizarse en diferentes tipos de campaña.
 Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 Si al sincronizar se muestra el mensaje de error “Se ha producido un error en la solicitud. `thirdPartyId` ya existe”, cambie el nombre de la campaña y vuelva a sincronizar.
 
