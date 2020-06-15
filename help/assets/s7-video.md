@@ -1,6 +1,6 @@
 ---
 title: Vídeo
-description: Obtenga información sobre la administración centralizada de recursos de vídeo de Recursos AEM, donde puede cargar vídeos para codificarlos automáticamente en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Recursos AEM. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
+description: Obtenga información sobre los AEM Assets de administración de recursos de vídeo centralizados, donde puede cargar vídeos para codificarlos automáticamente en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde AEM Assets. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,16 +8,19 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 54%
 
 ---
 
 
 # Vídeo {#video}
 
-Assets permite gestionar recursos de vídeo de forma centralizada, donde puede cargar vídeos directamente en Recursos para codificarlos automáticamente en Dynamic Media Classic (Scene7) y acceder a vídeos de Dynamic Media Classic directamente desde Recursos para la creación de páginas.
+Assets permite gestionar recursos de vídeo centralizados, desde donde puede cargar vídeos directamente en Recursos para codificarlos automáticamente en Dynamic Media Classic (Scene7) y acceder a vídeos de Dynamic Media Classic directamente desde Recursos para la creación de páginas.
 
-La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas (detección de ancho de banda y dispositivo automático).
+La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas (detección de ancho de banda y dispositivos automáticos).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
 * Assets: puede incluir conjuntos de vídeos adaptables en lugar de solo recursos de vídeo únicos. Un conjunto de vídeos adaptables es un contenedor para todas las representaciones de vídeo necesarias para reproducir vídeo sin problemas en varias pantallas. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. Un conjunto de vídeos adaptables, junto con el componente de vídeo de S7, se utiliza para trasmitir vídeo adaptable en varias pantallas, incluidos equipos de escritorio, iOS, Android, Blackberry y dispositivos móviles de Windows. Consulte [Documentación de Scene7 sobre los conjuntos de vídeos adaptables](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html) para obtener más información.
@@ -94,16 +97,16 @@ Si necesita actualizar los ajustes preestablecidos del visor y de codificación 
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
+## Carga del vídeo de origen principal en Scene7 desde Adobe DAM {#uploading-your-master-video}
 
 1. Vaya a la carpeta de destino de CQ DAM en que ha establecido la configuración de nube con perfiles de codificación de Scene7.
-1. Haga clic en **[!UICONTROL Cargar]** para cargar el vídeo maestro. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Haga clic en **[!UICONTROL Cargar]** para cargar el vídeo de origen principal. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
    >Puede que pase un tiempo hasta que las miniaturas de vídeo se generen.
 
-   Al arrastrar el vídeo maestro de DAM al componente de vídeo, se accede a *todas* las representaciones proxy codificadas de Scene7 para realizar la presentación.
+   Dragging the DAM primary source video on to the video component accesses *all* of the Scene7 encoded proxy renditions for delivery.
 
 ## Componente de vídeo base frente al componente de vídeo de Scene7 {#foundation-video-component-versus-scene-video-component}
 
