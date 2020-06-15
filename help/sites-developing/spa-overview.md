@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: fe81a72a6269060a7ec1283f817920618ba715ef
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,7 @@ Teniendo en cuenta los elementos clave del Editor de SPA, el autor verá el fluj
 >* El SPA siempre se encarga de su exposición.
 >* El Editor SPA está aislado del SPA mismo.
 >* En producción (publicación), el editor de SPA nunca se carga.
+
 >
 
 
@@ -167,8 +168,8 @@ Para permitir que el autor utilice el editor de páginas para editar el contenid
 
 El SDK del Editor de SPA admite las siguientes versiones mínimas:
 
-* Reacción 16.3
-* Angular 6.x
+* Reaccione 16.x y posterior
+* Angular 6.x y posterior
 
 Las versiones anteriores de estos marcos pueden funcionar con el SDK del Editor SPA de AEM, pero no son compatibles.
 
