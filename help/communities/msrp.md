@@ -1,8 +1,8 @@
 ---
 title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
 seo-title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
-seo-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
+description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
+seo-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Acerca de MSRP {#about-msrp}
 
-Cuando AEM Communities está configurada para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando los AEM Communities están configurados para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las Opciones](working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](topologies.md)recomendadas.
 
@@ -102,13 +105,13 @@ Deje en blanco si se ejecuta en el modo de SolrCloud.
 
 ### Conjunto de réplicas MongoDB {#mongodb-replica-set}
 
-Para el entorno de producción, se recomienda enfáticamente configurar un conjunto de réplicas, un clúster de servidores MongoDB que implemente la replicación maestra-esclava y el failover automatizado.
+Para el entorno de producción, se recomienda enfáticamente configurar un conjunto de réplicas, un clúster de servidores MongoDB que implementa replicación primaria-secundaria y failover automatizado.
 
 Para obtener más información sobre los conjuntos de réplicas, visite la documentación de [replicación](https://docs.mongodb.org/manual/replication/) de MongoDB.
 
 Para trabajar con conjuntos de réplicas y aprender a definir conexiones entre las aplicaciones y las instancias de MongoDB, visite la documentación de Formato [URI de cadena de](https://docs.mongodb.org/manual/reference/connection-string/) conexión de MongoDB.
 
-#### Url de ejemplo para la conexión a un conjunto de réplicas {#example-url-for-connecting-to-a-replica-set}
+#### Url de ejemplo para la conexión a un conjunto de réplicas  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -186,7 +189,8 @@ cURL -u *inicio de sesión* -d *datos* *reindex-url*
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
-*size* = cuántas entradas de UGC se reindexarán por operación`/content/usergenerated/asi/mongo/`
+*size* = cuántas entradas de UGC se reindexarán por operación
+`/content/usergenerated/asi/mongo/`
 
 *path* = la ubicación raíz del árbol de UGC para volver a indexar
 
@@ -194,7 +198,8 @@ cURL -u *inicio de sesión* -d *datos* *reindex-url*
    `/etc/socialconfig/srpc/defaultconfiguration`
 * Para limitar el índice a algún UGC, especifique un subárbol de `asipath`
 
-*reindex-url* = el punto final para volver a indexar el SRP`http://localhost:4503/services/social/datastore/mongo/reindex`
+*reindex-url* = el punto final para volver a indexar el SRP
+`http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
@@ -226,13 +231,13 @@ En todas las instancias de AEM de creación y publicación, vuelva a la consola 
 
 ### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
 
-Si realiza la actualización desde un sitio existente de AEM Communities 6.0, cualquier UGC preexistente debe convertirse para ajustarse a la estructura necesaria para la API de [SRP](srp.md) después de actualizar a AEM Communities 6.3.
+Si realiza la actualización desde un sitio existente de AEM Communities 6.0, cualquier UGC preexistente debe convertirse para ajustarse a la estructura requerida para la API de [SRP](srp.md) después de actualizar a AEM Communities 6.3.
 
 Hay una herramienta de código abierto disponible en GitHub para este propósito:
 
-* [Herramienta de migración UGC de AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Herramienta de migración UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de comunidades sociales de AEM para importarlos a AEM Communities 6.1 o posterior.
+La herramienta de migración se puede personalizar para exportar UGC desde versiones anteriores de comunidades sociales de AEM para importarlos a AEM Communities 6.1 o posterior.
 
 ### Error: proveedor de campos no definido {#error-undefined-field-provider-id}
 
