@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1893'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 * [habilitar inicio de sesión social](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
 * [configurar Adobe Analytics](/help/communities/analytics.md)
 * configurar un servicio de correo electrónico [predeterminado](/help/communities/email.md)
-* identifique la opción de almacenamiento [UGC](/help/communities/working-with-srp.md) compartido (**SRP**)
+* identificar la opción para el almacenamiento [UGC](/help/communities/working-with-srp.md) compartido (**SRP**)
 
    * si MongoDB SRP [(MSRP)](/help/communities/msrp.md)
 
@@ -72,11 +75,12 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
          * UGC nunca se replica
          * UGC solo visible en la instancia o clúster de AEM en el que se introdujo
       * el valor predeterminado es JSRP
+
    Para la función de **[habilitación](/help/communities/overview.md#enablement-community)**
 
    * [instalar y configurar FFmpeg](/help/communities/ffmpeg.md)
    * [instalar el controlador JDBC para MySQL](#jdbc-driver-for-mysql)
-   * [instalar el motor SCORM de AEM Communities](#scorm-package)
+   * [motor SCORM de instalación de AEM Communities](#scorm-package)
    * [instalar y configurar MySQL para la habilitación](/help/communities/mysql.md)
 
 
@@ -84,7 +88,7 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 
 
-## Últimas versiones {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA incluye el paquete Communities. Para obtener información sobre las actualizaciones de AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), consulte las Notas [de la versión de](/help/release-notes/release-notes.md#communities-release-notes.html)AEM 6.5.
 
@@ -92,7 +96,7 @@ AEM 6.5 Communities GA incluye el paquete Communities. Para obtener información
 
 A partir de AEM 6.4, las actualizaciones de Communities se entregan como parte de los paquetes de correcciones acumulativas de AEM y los paquetes de servicios.
 
-Para obtener las actualizaciones más recientes de AEM 6.5, consulte Paquetes de correcciones acumulativas y Service Packs de [Adobe Experience Manager 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Para obtener las actualizaciones más recientes de AEM 6.5, consulte [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
 
 ### Historial de versiones {#version-history}
 
@@ -102,7 +106,7 @@ Al igual que en AEM 6.4 y versiones posteriores, las funciones y revisiones de A
 
 Dos funciones de Communities usan una base de datos MySQL :
 
-* para [activación](/help/communities/enablement.md) : grabación de actividades y alumnos de SCORM
+* para [activación](/help/communities/enablement.md) : grabación de actividades y alumnos SCORM
 * para [DSRP](/help/communities/dsrp.md) : almacenamiento de contenido generado por el usuario (UGC)
 
 El conector MySQL debe obtenerse e instalarse por separado.
@@ -114,12 +118,12 @@ Los pasos necesarios son:
    * la versión debe ser >= 5.1.38
 
 1. extraer mysql-Connector-java-&lt;version>-bin.jar (paquete) del archivo
-1. utilice la consola web para instalar e iniciar el paquete:
+1. utilice la consola web para instalar y inicio del paquete:
 
    * por ejemplo, https://localhost:4502/system/console/bundles
    * select **`Install/Update`**
    * Examinar... para seleccionar el paquete extraído del archivo ZIP descargado
-   * compruebe que el controlador JDBC de Oracle Corporation para MySQLcom.mysql.jdbc* está activo y comience si no (o compruebe los registros)
+   * compruebe que el controlador JDBC de Oracle Corporation para MySQLcom.mysql.jdbc* está activo y inicio si no (o compruebe los registros)
 
 1. si realiza la instalación en una implementación existente después de haber configurado JDBC, vuelva a conectar JDBC al nuevo conector al volver a guardar la configuración JDBC desde la consola web:
 
@@ -147,8 +151,8 @@ El motor SCORM de AEM Communities es necesario para la [función de habilitació
 **Para instalar un paquete SCORM**
 
 1. Instale el paquete [cq-social-scorm-package, versión 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg)desde Package Share
-1. Descargue `/libs/social/config/scorm/database_scormengine_data.sql` de la instancia de cq y ejecútela en el servidor mysql para crear un esquema de scormEngineDB actualizado.
-1. Agregar `/content/communities/scorm/RecordResults` en la propiedad Rutas excluidas en el filtro CSRF de &quot;https://&quot;<hostname>:<port>/system/console/configMgr&#39; en los editores.
+1. Descargue `/libs/social/config/scorm/database_scormengine_data.sql` de la instancia cq y ejecútela en el servidor mysql para crear un esquema de scormEngineDB actualizado.
+1. Añadir `/content/communities/scorm/RecordResults` en la propiedad Rutas excluidas en el filtro CSRF de `https://<hostname>:<port>/system/console/configMgr&#39; en los editores.
 
 #### Registro SCORM {#scorm-logging}
 
@@ -160,7 +164,7 @@ Para trabajar con registros, consulte [Uso de registros de auditoría y archivos
 
 ### MLS avanzados de AEM {#aem-advanced-mls}
 
-Para que la colección SRP (MSRP o DSRP) admita la búsqueda multilingüe avanzada (MLS), se necesitan nuevos complementos Solr además de un esquema personalizado y una configuración Solr. Todos los elementos necesarios se empaquetan en un archivo zip descargable.
+Para que la colección SRP (MSRP o DSRP) admita la búsqueda multilingüe avanzada (MLS), se necesitan nuevos complementos Solr además de una configuración personalizada de esquema y Solr. Todos los elementos necesarios se empaquetan en un archivo zip descargable.
 
 La descarga avanzada de MLS (también conocida como &#39;phasetwo&#39;) está disponible en el repositorio de Adobe:
 
@@ -194,11 +198,11 @@ Para obtener más información, visite [Cómo trabajar con paquetes](/help/sites
 
 ## Implementaciones recomendadas {#recommended-deployments}
 
-En AEM Communities, un almacén común se utiliza para almacenar contenido generado por el usuario (UGC) y a menudo se denomina proveedor de recursos de [almacenamiento (SRP)](/help/communities/working-with-srp.md). La implementación recomendada se centra en elegir una opción de SRP para la tienda común.
+En los AEM Communities, un almacén común se utiliza para almacenar contenido generado por el usuario (UGC) y a menudo se denomina proveedor de recursos de [almacenamiento (SRP)](/help/communities/working-with-srp.md). La implementación recomendada se centra en elegir una opción de SRP para la tienda común.
 
 El almacén común admite moderación y análisis de UGC en el entorno de publicación, al tiempo que elimina la necesidad de [replicación](/help/communities/sync.md) de UGC.
 
-* [Almacenamiento](/help/communities/working-with-srp.md) de contenido de comunidad: analiza las opciones de almacenamiento SRP para las comunidades AEM
+* [Almacenamiento](/help/communities/working-with-srp.md) de contenido de comunidad: analiza las opciones de almacenamiento de SRP para las comunidades de AEM
 
 * [Topologías](/help/communities/topologies.md) recomendadas: analiza la topología que se va a usar en función del caso de uso y la opción de SRP
 
@@ -206,13 +210,13 @@ El almacén común admite moderación y análisis de UGC en el entorno de public
 
 Al actualizar a la plataforma AEM 6.5 desde versiones anteriores de AEM, es importante leer [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md).
 
-Además de actualizar la plataforma, lea [Actualización a AEM Communities 6.5](/help/communities/upgrade.md) para obtener más información sobre los cambios en las comunidades.
+Además de actualizar la plataforma, lea [Actualización a AEM Communities 6.5](/help/communities/upgrade.md) para conocer los cambios de las comunidades.
 
 ## Configuraciones {#configurations}
 
 ### Editor principal {#primary-publisher}
 
-Cuando la implementación elegida es un conjunto de servidores [de](/help/communities/topologies.md#tarmk-publish-farm)publicación, una instancia de publicación de AEM debe identificarse como la **`primary publisher`** de actividades que no deben producirse en todas las instancias, como las funciones que dependen de **notificaciones **o **Adobe Analytics**.
+Cuando la implementación elegida es un conjunto de servidores [de](/help/communities/topologies.md#tarmk-publish-farm)publicación, una instancia de publicación de AEM debe identificarse como la **`primary publisher`** de actividades que no deben producirse en todas las instancias, como las funciones que dependen de **notifications **o **Adobe Analytics**.
 
 De forma predeterminada, la configuración de `AEM Communities Publisher Configuration` OSGi se configura con la casilla de verificación **`Primary Publisher`** activada, de modo que todas las instancias de publicación de un conjunto de servidores de publicación se identificarán como principales.
 
@@ -240,11 +244,11 @@ Para el publicador principal, asegúrese de que la configuración [del agente de
 
 Para que algún otro usuario tenga los permisos adecuados, debe agregarse como miembro al grupo de `administrators` usuarios (también como miembro de `Communities Administrators`).
 
-Hay dos agentes de replicación en el entorno de creación que necesitan que la configuración de transporte esté configurada correctamente.
+Hay dos agentes de replicación en el entorno de creación que necesitan configurar correctamente la configuración de transporte.
 
 * acceder a la consola de replicación en el autor
 
-   * desde la navegación global: **Herramientas, Implementación, Replicación, Agentes en el autor**
+   * desde la navegación global: **Herramientas, implementación, replicación, agentes en el autor**
 
 * seguir el mismo procedimiento para ambos agentes:
 
@@ -270,7 +274,7 @@ Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 
 
 ### Servicio de túnel en el autor {#tunnel-service-on-author}
 
-Al utilizar el entorno de creación para [crear sitios](/help/communities/sites-console.md), [modificar propiedades](/help/communities/sites-console.md#modifying-site-properties) del sitio o [administrar miembros](/help/communities/members.md)de la comunidad, es necesario acceder a los miembros (usuarios) registrados en el entorno de publicación, no a los usuarios registrados en el autor.
+Al utilizar el entorno de autor para [crear sitios](/help/communities/sites-console.md), [modificar propiedades](/help/communities/sites-console.md#modifying-site-properties) del sitio o [administrar miembros](/help/communities/members.md)de la comunidad, es necesario acceder a los miembros (usuarios) registrados en el entorno de publicación, no a los usuarios registrados en el autor.
 
 El servicio de túnel proporciona este acceso mediante el agente de replicación del autor.
 
@@ -293,7 +297,7 @@ Para habilitar el servicio de túnel:
 
 ### Replicar la clave de cifrado {#replicate-the-crypto-key}
 
-Existen dos funciones de Comunidades AEM que requieren que todas las instancias de servidor AEM utilicen las mismas claves de cifrado. Son [Analytics](/help/communities/analytics.md) y [ASRP](/help/communities/asrp.md).
+Existen dos funciones de AEM Communities que requieren que todas las instancias de servidor de AEM utilicen las mismas claves de cifrado. Son [Analytics](/help/communities/analytics.md) y [ASRP](/help/communities/asrp.md).
 
 A partir de AEM 6.3, el material clave se almacena en el sistema de archivos y ya no en el repositorio.
 
@@ -308,22 +312,22 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
    * navegue a la carpeta de datos, por ejemplo:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * copia de los archivos principales y hmac
+   * copia de los archivos hmac y nodo principal
 
 
 
-* para cada instancia de AEM de destino
+* para cada instancia de AEM de destinatario
 
    * navegue a la carpeta de datos, por ejemplo:
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * pegar los 2 archivos copiados anteriormente
-   * es necesario [actualizar el paquete](#refresh-the-granite-crypto-bundle) Granite Crypto si la instancia de AEM de destino se está ejecutando en ese momento
+   * es necesario [actualizar el paquete](#refresh-the-granite-crypto-bundle) Granite Crypto si la instancia de destinatario AEM se está ejecutando en este momento
 
 
 >[!CAUTION]
 >
->Si ya se ha configurado otra característica de seguridad basada en claves criptográficas, replicar las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el servicio de atención](https://helpx.adobe.com/marketing-cloud/contact-support.html)al cliente.
+>Si ya se ha configurado otra característica de seguridad basada en claves criptográficas, replicar las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el servicio de atención](https://helpx.adobe.com/es/marketing-cloud/contact-support.html)al cliente.
 
 #### Replicación del repositorio {#repository-replication}
 
@@ -387,7 +391,7 @@ En particular, tenga cuidado de utilizar el nombre de servidor correcto, no `loc
 
 ### Dispatcher {#dispatcher}
 
-Si utiliza un despachante, consulte :
+Si utiliza un Dispatcher, consulte :
 
 * Documentación de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) de AEM
 * [Instalación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
