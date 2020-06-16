@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Los límites de contribución pueden habilitarse individualmente desde la consol
 
 Con la consola Miembros, un administrador de comunidad puede eliminar de forma proactiva los límites de contribución para un miembro en cualquier momento, o eliminarlos de forma reactiva cuando un miembro envía un mensaje a un administrador de comunidad que realiza una solicitud de este tipo.
 
-## Configuración de límites de contribución de contenido generado por usuarios de AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuración de límites de contribución de contenido generado por el usuario de AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Esta configuración OSGi:
 
@@ -50,7 +53,7 @@ Para alcanzar esta configuración OSGi:
 
 * **[!UICONTROL Aplicar automáticamente límites de contribución UGC]**
 
-   Si se selecciona, establezca automáticamente límites de contribución para los usuarios cuando se registren como miembros de la comunidad. Esto se refleja en el perfil del miembro de la comunidad y puede habilitarse o deshabilitarse desde la consola [de](members.md)miembros. Los nuevos miembros con una dirección de correo electrónico de un dominio de la lista blanca nunca se restringen.
+   Si se selecciona, establezca automáticamente límites de contribución para los usuarios cuando se registren como miembros de la comunidad. Esto se refleja en el perfil del miembro de la comunidad y puede habilitarse o deshabilitarse desde la consola [de](members.md)miembros. Nunca se restringen los nuevos miembros con una dirección de correo electrónico de una lista permitida de dominios.
 
    El valor predeterminado no está marcado.
 
@@ -68,11 +71,11 @@ Para alcanzar esta configuración OSGi:
 
 * **[!UICONTROL Dominios]**
 
-   lista blanca de uno o varios dominios de correo electrónico. Seleccione el icono + para realizar entradas adicionales.
+   Una lista de lista permitida de uno o varios dominios de correo electrónico. Seleccione el icono + para realizar entradas adicionales.
 
-   Los usuarios con direcciones de correo electrónico en los dominios de la lista blanca no se ven afectados cuando se aplican automáticamente los límites de contribución UGC. Por ejemplo, si `mycompany.com` se agrega un dominio a la lista de dominios, nunca se restringirá la publicación de un miembro con dirección de correo electrónico `me@mycompany.com` .
+   Los usuarios con direcciones de correo electrónico en la lista permitida de dominios no se ven afectados cuando se aplican automáticamente los límites de contribución UGC. Por ejemplo, si `mycompany.com` se agrega un dominio a la lista de dominios, nunca se restringirá la publicación de un miembro con dirección de correo electrónico `me@mycompany.com` .
 
-   El valor predeterminado es una lista blanca vacía.
+   El valor predeterminado es una lista de permitidos vacía.
 
 * **[!UICONTROL Destinatarios de mensajería]**
 
