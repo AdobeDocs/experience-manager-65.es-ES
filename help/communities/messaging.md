@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Información general {#overview}
 
-La función de mensajería de Comunidades AEM permite a los visitantes del sitio (miembros) con sesión iniciada enviar mensajes entre sí a los que se puede acceder cuando se inician sesión en el sitio.
+La función de mensajería para AEM Communities permite a los visitantes del sitio (miembros) con sesión iniciada enviarse mensajes entre sí a los que se puede acceder cuando se inician sesión en el sitio.
 
 La mensajería está habilitada para un sitio de comunidad marcando una casilla durante la creación [del sitio de](/help/communities/sites-console.md)comunidad.
 
@@ -30,7 +33,7 @@ Para obtener información adicional para desarrolladores, consulte [Messaging Es
 
 ## Servicio de operaciones de mensajería {#messaging-operations-service}
 
-El servicio [de configuración de operaciones de mensajería de comunidades de](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM identifica el punto final que gestiona las solicitudes relacionadas con los mensajes, las carpetas que el servicio debe utilizar para almacenar mensajes y, si los mensajes pueden incluir archivos adjuntos, los tipos de archivo permitidos.
+El servicio [de operaciones de mensajería de](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities de configuración identifica el punto final que gestiona las solicitudes relacionadas con los mensajes, las carpetas que el servicio debe utilizar para almacenar mensajes y, si los mensajes pueden incluir archivos adjuntos, qué tipos de archivo están permitidos.
 
 Para los sitios de comunidad creados con el `Communities Sites console`, ya existe una instancia del servicio, con la bandeja de entrada configurada en `/mail/inbox`.
 
@@ -44,7 +47,7 @@ Como se muestra a continuación, existe una configuración del servicio para los
 
 Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; junto al nombre del servicio:
 
-* **Lista blanca de campos del mensaje**
+* **Lista de permisos de campos de mensaje**
 
    Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se agregan nuevos elementos de formulario, se deberá agregar la identificación del elemento si se desea almacenar en SRP. El valor predeterminado es dos entradas: *asunto* y *contenido*.
 
@@ -108,13 +111,13 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 
    Si se selecciona supportAttachments, este valor especifica el tamaño total máximo permitido (en bytes) de todos los archivos adjuntos. El valor predeterminado es *104857600* (100 MB).
 
-* **lista negra de tipo de datos adjuntos**
+* **Lista de bloqueo de tipo de datos adjuntos**
 
-   Lista negra de extensiones de nombre de archivo, con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está en la lista negra, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;.
+   Lista de bloqueo de extensiones de nombre de archivo, con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está bloqueada, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;.
 
 * **Tipos de datos adjuntos permitidos**
 
-   **(*Acción requerida*)** Lista blanca de extensiones de nombre de archivo, la opuesta a la lista negra. Para permitir todas las extensiones de nombre de archivo, excepto las en la lista negra, utilice el icono &#39;**-**&#39; para eliminar la única entrada vacía.
+   **(*Acción requerida*)** Una lista de permitidas de extensiones de nombre de archivo, lo contrario de la lista de bloqueos. Para permitir todas las extensiones de nombre de archivo, excepto las bloqueadas, utilice el icono &#39;**-**&#39; para eliminar la única entrada vacía.
 
 * **Selector de servicio**
 
@@ -122,15 +125,15 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 
    El valor predeterminado es */bin/messaging* .
 
-* **Lista blanca de campos**
+* **Lista de permisos de campo**
 
-   Utilice la lista blanca Campos **de mensaje**.
+   Utilice la lista **de campos permitidos** del mensaje.
 
 >[!CAUTION]
 >
 >Cada vez que se abre una `Messaging Operations Service` configuración para editarla, si `allowedAttachmentTypes.name` se ha eliminado, se vuelve a agregar una entrada vacía para que la propiedad se pueda configurar. Una sola entrada vacía deshabilita los archivos adjuntos de forma efectiva.
 >
->Para permitir todas las extensiones de nombre de archivo, excepto las en la lista negra, utilice el icono &#39;**-**&#39; para (de nuevo) eliminar la única entrada vacía antes de hacer clic en **Guardar**.
+>Para permitir todas las extensiones de nombre de archivo, excepto las bloqueadas, utilice el icono &#39;**-**&#39; para (de nuevo) eliminar la única entrada vacía antes de hacer clic en **Guardar**.
 
 
 ## Group Messaging {#group-messaging}
