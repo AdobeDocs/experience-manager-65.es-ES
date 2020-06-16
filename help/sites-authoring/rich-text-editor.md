@@ -9,33 +9,36 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3dbf4cf522441561d6ac6eeeff0e63e7bbb5e38
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 70%
 
 ---
 
 
 # Uso del editor de texto enriquecido para crear contenido {#use-rich-text-editor-to-author-content}
 
-El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes, que incluyen:
+El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes., incluyendo:
 
 * Texto
 * Imagen de texto
 * Tabla
 
-## Edición in-situ {#in-place-editing}
+## Edición local {#in-place-editing}
 
-Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-authoring/editing-content.md#editmovecopypastedeletetouchoptimizedui) as with any component.
+Si se selecciona un componente basado en texto con un solo pulse o clic, se muestra la [barra de herramientas de componentes](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), como con cualquier otro componente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Si vuelve a tocar o hacer clic en el componente, o si inicialmente lo selecciona con un doble toque o doble clic lento, se abre la edición in situ, que dispone de su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
+Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo selecciona con un doble pulse o doble clic lento, se abre la edición local, que dispone de su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
 Esta barra de herramientas ofrece las opciones siguientes:
 
-* **Formato**: Esto le permite establecer Negrita, Cursiva y Subrayado.
-* **Listas**: Con esto puede crear listas con viñetas o numeradas o establecer la sangría.
+* **Formato**: esta opción le permite utilizar negrita, cursiva y subrayado.
+* **Listas**: con esta opción puede crear listas con viñetas o números, o establecer la sangría.
 * **Hipervínculo**
 * **Desvincular**
 * **Pantalla completa**
@@ -44,15 +47,15 @@ Esta barra de herramientas ofrece las opciones siguientes:
 
 ## Edición en pantalla completa {#full-screen-editing}
 
-For text-based components, tapping the full screen mode from the [toolbar](#componenttoolbar) ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
 
-El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la creación. La disponibilidad [depende de la configuración](/help/sites-administering/rich-text-editor.md).
+El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la creación. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
 Entre las opciones adicionales del editor de texto enriquecido están:
 
-* **Anclaje**: Cree un anclaje en el texto con el que posteriormente pueda establecer un vínculo o hacer referencia a él.
+* **Anclaje**: crea en el texto un anclaje al que posteriormente puede hacer referencia o emplear como vínculo.
 * **Alinear texto a la izquierda**
 * **Centrar texto**
 * **Alinear texto a la derecha**
