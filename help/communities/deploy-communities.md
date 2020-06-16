@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1890'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +95,7 @@ AEM 6.5 Communities GA incluye el paquete Communities. Para obtener información
 
 A partir de AEM 6.4, las actualizaciones de Communities se entregan como parte de los paquetes de correcciones acumulativas de AEM y los paquetes de servicios.
 
-Para obtener las actualizaciones más recientes de AEM 6.5, consulte Paquetes de correcciones acumulativas y Service Packs de [Adobe Experience Manager 6.4](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
+Para obtener las actualizaciones más recientes de AEM 6.5, consulte [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
 
 ### Historial de versiones {#version-history}
 
@@ -195,7 +198,7 @@ Para obtener más información, visite [Cómo trabajar con paquetes](/help/sites
 
 ## Implementaciones recomendadas {#recommended-deployments}
 
-En AEM Communities, un almacén común se utiliza para almacenar contenido generado por el usuario (UGC) y a menudo se denomina proveedor de recursos de [almacenamiento (SRP)](/help/communities/working-with-srp.md). La implementación recomendada se centra en elegir una opción de SRP para la tienda común.
+En los AEM Communities, un almacén común se utiliza para almacenar contenido generado por el usuario (UGC) y a menudo se denomina proveedor de recursos de [almacenamiento (SRP)](/help/communities/working-with-srp.md). La implementación recomendada se centra en elegir una opción de SRP para la tienda común.
 
 El almacén común admite moderación y análisis de UGC en el entorno de publicación, al tiempo que elimina la necesidad de [replicación](/help/communities/sync.md) de UGC.
 
@@ -207,7 +210,7 @@ El almacén común admite moderación y análisis de UGC en el entorno de public
 
 Al actualizar a la plataforma AEM 6.5 desde versiones anteriores de AEM, es importante leer [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md).
 
-Además de actualizar la plataforma, lea [Actualización a AEM Communities 6.5](/help/communities/upgrade.md) para obtener más información sobre los cambios en las comunidades.
+Además de actualizar la plataforma, lea [Actualización a AEM Communities 6.5](/help/communities/upgrade.md) para conocer los cambios de las comunidades.
 
 ## Configuraciones {#configurations}
 
@@ -294,7 +297,7 @@ Para habilitar el servicio de túnel:
 
 ### Replicar la clave de cifrado {#replicate-the-crypto-key}
 
-Existen dos funciones de Comunidades AEM que requieren que todas las instancias de servidor AEM utilicen las mismas claves de cifrado. Son [Analytics](/help/communities/analytics.md) y [ASRP](/help/communities/asrp.md).
+Existen dos funciones de AEM Communities que requieren que todas las instancias de servidor de AEM utilicen las mismas claves de cifrado. Son [Analytics](/help/communities/analytics.md) y [ASRP](/help/communities/asrp.md).
 
 A partir de AEM 6.3, el material clave se almacena en el sistema de archivos y ya no en el repositorio.
 
@@ -309,7 +312,7 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
    * Navegue hacia la carpeta de datos, por ejemplo:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Copiar los archivos principales y hmac
+   * Copiar los archivos hmac y principal del nodo
 
 
 
@@ -388,7 +391,7 @@ En particular, tenga cuidado de utilizar el nombre de servidor correcto, no `loc
 
 ### Dispatcher {#dispatcher}
 
-Si utiliza un despachante, consulte :
+Si utiliza un Dispatcher, consulte :
 
 * Documentación de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) de AEM
 * [Instalación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
