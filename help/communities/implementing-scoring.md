@@ -1,8 +1,8 @@
 ---
 title: Puntuación y distintivos de comunidades
 seo-title: Puntuación y distintivos de comunidades
-description: La puntuación y las insignias de AEM Communities le permiten identificar y premiar a los miembros de la comunidad
-seo-description: La puntuación y las insignias de AEM Communities le permiten identificar y premiar a los miembros de la comunidad
+description: La puntuación y las insignias de los AEM Communities le permiten identificar y premiar a los miembros de la comunidad
+seo-description: La puntuación y las insignias de los AEM Communities le permiten identificar y premiar a los miembros de la comunidad
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2897'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## Información general {#overview}
 
-La función de puntuación y distintivos de comunidades de AEM permite identificar y premiar a los miembros de la comunidad.
+La función de puntuación y distintivos para AEM Communities permite identificar y premiar a los miembros de la comunidad.
 
 Los principales aspectos de la puntuación y las insignias son:
 
@@ -355,7 +355,7 @@ La `scoringRules` propiedad de una regla de distintivo simplemente restringe qu�
      <li>number = score</li>
      <li>| = el carácter de línea vertical (U+007C)</li>
      <li>path = ruta completa al recurso de imagen de distintivo</li>
-    </ul> Las cadenas deben ordenarse de modo que los números aumenten en valor y no debería aparecer ningún espacio en blanco entre el número y la ruta.<br /> Ejemplo de entrada:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> Las cadenas deben ordenarse de modo que los números aumenten en valor y no debería aparecer espacio en blanco entre el número y la ruta.<br /> Ejemplo de entrada:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
