@@ -1,45 +1,54 @@
 ---
-title: Informes sobre sus recursos digitales
-description: Conozca los informes sobre los recursos en Recursos Adobe Experience Manager que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
+title: Informes sobre el uso y uso compartido de los recursos digitales.
+description: Informes sobre los recursos [!DNL Adobe Experience Manager Assets] que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
+source-git-commit: bc08b0039f8be92a7638245b1770c2ad21503f63
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 14%
+source-wordcount: '1013'
+ht-degree: 10%
 
 ---
 
 
 # Informes del recurso {#asset-reports}
 
-El sistema de informes de recursos es una herramienta clave para evaluar la utilidad de la implementación de Recursos Adobe Experience Manager. Con Recursos, puede generar varios informes para los recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
+El sistema de informes de recursos permite evaluar la utilidad de la [!DNL Adobe Experience Manager Assets] implementación. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
 
-Utilice la información de los informes para derivar métricas de éxito clave a fin de medir la adopción de Recursos dentro de su empresa y por parte de los clientes.
+Utilice la información de los informes para derivar métricas de éxito clave y medir la adopción de [!DNL Assets] las mismas en su empresa y por los clientes.
 
-La estructura de sistema de informes de Recursos utiliza trabajos de Sling para procesar de forma asíncrona solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
+El marco de trabajo de [!DNL Assets] sistema de informes utiliza [!DNL Sling] trabajos para procesar de forma asíncrona las solicitudes de informes de manera ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
 
 La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a los informes archivados y a los estados de ejecución de los informes de vista (exitosos, fallidos y en cola).
 
 Cuando se genera un informe, se le notifica mediante un mensaje de correo electrónico (opcional) y una notificación de bandeja de entrada. Puede vista, descargar o eliminar un informe desde la página con la lista de informes, donde se muestran todos los informes generados previamente.
 
+## Requisitos previos {#prerequisite-for-reporting}
+
+Para generar informes, asegúrese de lo siguiente:
+
+* Active el servicio [!UICONTROL Day CQ DAM Evento Recorder] desde **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+* Seleccione las actividades o eventos en los que desea realizar el sistema de informes. Por ejemplo, para generar un informe sobre los recursos descargados, seleccione [!UICONTROL Recurso descargado (DESCARGADO)].
+
+![Habilitar el sistema de informes de recursos en la consola web](assets/reports-config-day-cq-dam-event-recorder.png)
+
 ## Generar informes {#generate-reports}
 
-Experience Manager Assets genera los siguientes informes estándar:
+[!DNL Experience Manager Assets] genera los siguientes informes estándar:
 
 * Cargar
 * Descargar
 * Vencimiento
 * Modificación
 * Publicación
-* Publicación de Brand Portal
+* [!DNL Brand Portal] instancias de publicación
 * Uso del disco
 * Archivos
 * Vínculos compartidos
 
 [!DNL Adobe Experience Manager] los administradores pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
 
-1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. En [!DNL Experience Manager] la interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 
 ![Página Herramientas para navegar por el informe de recursos](assets/AssetsReportNavigation.png)
 
@@ -50,25 +59,21 @@ Experience Manager Assets genera los siguientes informes estándar:
 
    >[!NOTE]
    >
-   >Antes de generar un informe de **[!UICONTROL descarga de recursos]**, compruebe que el servicio de descarga de recursos está habilitado. En la consola web (`https://[aem_server]:[port]/system/console/configMgr`), abra la configuración del **[!UICONTROL grabador de eventos de CQ DAM de día]** y seleccione la opción **[!UICONTROL Recurso descargado (DESCARGADO)]** en Tipos de eventos si no está seleccionada.
-
-   >[!NOTE]
-   >
    >De forma predeterminada, los fragmentos de contenido y los recursos compartidos de vínculos se incluyen en el informe Descarga de recursos. Seleccione la opción adecuada para crear un informe de recursos compartidos de vínculos o para excluir fragmentos de contenido del informe de descarga.
 
 1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta, en el repositorio de CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente.
 
-   ![Página para agregar detalles del informe](assets/report_configuration.png)
+   ![Page to add report details](assets/report_configuration.png)
 
-   Elija el intervalo de fechas del informe.
+   Choose the date range for your report.
 
    Puede elegir generar el informe ahora o en una fecha y hora futuras.
 
    >[!NOTE]
    >
-   >Si decide programar el informe más adelante, asegúrese de especificar la fecha y la hora en los campos Fecha y Hora. Si no especifica ningún valor, el motor de informes lo trata como un informe que se va a generar instantáneamente.
+   >Si decide programar el informe más adelante, asegúrese de especificar la fecha y la hora en los campos Fecha y Hora. If you do not specify any value, the report engine treats it as a report that is to be generated instantly.
 
-   Los campos de configuración pueden diferir según el tipo de informe que cree. Por ejemplo: el informe Uso del **[!UICONTROL disco]** proporciona opciones para incluir representaciones de recursos al calcular el espacio en disco que utilizan los recursos. Puede optar por incluir o excluir recursos en subcarpetas para el cálculo del uso del disco.
+   Configuration fields may differ based on the type of report you create. Por ejemplo: el informe Uso del **[!UICONTROL disco]** proporciona opciones para incluir representaciones de recursos al calcular el espacio en disco que utilizan los recursos. Puede optar por incluir o excluir recursos en subcarpetas para el cálculo del uso del disco.
 
    >[!NOTE]
    >
@@ -80,7 +85,7 @@ Experience Manager Assets genera los siguientes informes estándar:
 
    ![Página de detalles del informe Archivos](assets/files_report.png)
 
-   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde Assets. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
+   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde [!DNL Assets]. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
@@ -92,12 +97,12 @@ Experience Manager Assets genera los siguientes informes estándar:
 
    ![Seleccionar o anular la selección de las columnas del informe](assets/configure_columns.png)
 
-   Para mostrar un nombre de columna personalizado o una ruta de propiedad, configure las propiedades del binario de recursos en el nodo jcr:content en CRX. También puede agregarla mediante el selector de rutas de propiedad.
+   Para mostrar un nombre de columna personalizado o una ruta de propiedad, configure las propiedades del binario de recursos bajo el `jcr:content` nodo en CRX. También puede agregarla mediante el selector de rutas de propiedad.
 
    ![Seleccionar o anular la selección de las columnas del informe](assets/custom_columns.png)
 
 1. Haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
-1. En la página Informes de recursos, el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo, Éxito, Fallido, En cola o Programado. El mismo estado aparece en la bandeja de entrada de notificaciones.Para vista de la página del informe, haga clic en el vínculo del informe. Como alternativa, seleccione el informe y haga clic en **[!UICONTROL Vista]** en la barra de herramientas.
+1. En la página Informes [!UICONTROL de] recursos, el estado de generación de informes se basa en el estado actual del trabajo de informe, por ejemplo, [!UICONTROL Éxito], [!UICONTROL Error], [!UICONTROL En cola]o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones.Para vista de la página del informe, haga clic en el vínculo del informe. Como alternativa, seleccione el informe y haga clic en **[!UICONTROL Vista]** en la barra de herramientas.
 
    ![Un informe generado](assets/report_page.png)
 
@@ -112,12 +117,12 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * Vencimiento
 * Modificación
 * Publicación
-* Publicación de Brand Portal
+* [!DNL Brand Portal] instancias de publicación
 * Archivos
 
 Para agregar columnas personalizadas a estos informes, siga estos pasos:
 
-1. En la interfaz de Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. En la [!DNL Manager interface], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 1. En la página Informes [!UICONTROL de] recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
