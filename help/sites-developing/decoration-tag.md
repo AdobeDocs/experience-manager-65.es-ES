@@ -1,27 +1,16 @@
 ---
 title: Etiqueta decorativa
-seo-title: Etiqueta decorativa
-description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM ofrece una lógica clara y sencilla que controla las etiquetas de decoración que envuelven los componentes incluidos.
-seo-description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM ofrece una lógica clara y sencilla que controla las etiquetas de decoración que envuelven los componentes incluidos.
-uuid: db796a22-b053-48dd-a50c-354dead7e8ec
-contentOwner: user
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 8cb9fd6e-5e1f-43cd-8121-b490dee8c2be
+description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM oferta una lógica clara y sencilla que controla las etiquetas de decoración que envuelven los componentes incluidos.
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
 
 # Etiqueta decorativa{#decoration-tag}
-
->[!NOTE]
->
->El comportamiento de las etiquetas de decoración y las opciones descritas en este artículo se basan en [AEM 6.3 CFP1](https://helpx.adobe.com/experience-manager/release-notes--aem-6-3-cumulative-fix-pack.html).
->
->El comportamiento de la etiqueta decorativa en 6.3 antes de CFP1 es similar al de AEM 6.2.
 
 Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Esto sirve principalmente para dos fines:
 
@@ -31,7 +20,7 @@ Cuando se procesa un componente de una página web, se puede generar un elemento
    * información del diseño
    * información de estilo
 
-Para los desarrolladores, AEM ofrece una lógica clara y sencilla que controla las etiquetas de decoración que envuelven los componentes incluidos. La combinación de dos factores define si se procesa la etiqueta decorativa y cómo se procesa, en lo que esta página se sumergirá:
+Para los desarrolladores, AEM oferta una lógica clara y sencilla que controla las etiquetas de decoración que envuelven los componentes incluidos. La combinación de dos factores define si se procesa la etiqueta decorativa y cómo se procesa, en lo que esta página se sumergirá:
 
 * El propio componente puede configurar su etiqueta de decoración con un conjunto de propiedades.
 * Las secuencias de comandos que incluyen componentes (HTL, JSP, dispatcher, etc.) pueden definir los aspectos de la etiqueta decorativa con parámetros de inclusión.
@@ -40,7 +29,7 @@ Para los desarrolladores, AEM ofrece una lógica clara y sencilla que controla l
 
 A continuación se ofrecen algunas recomendaciones generales sobre cuándo incluir el elemento envolvente que debería ayudar a evitar problemas inesperados:
 
-* La presencia del elemento wrapper no debe diferir entre los códigos WCMModes (modo de edición o vista previa), instancias (autor o publicación) o entorno (ensayo o producción), de modo que el CSS y los JavaScript de la página funcionen de manera idéntica en todos los casos.
+* La presencia del elemento envolvente no debe diferir entre los códigos WCMM (modo de edición o previsualización), las instancias (autor o publicación) o el entorno (ensayo o producción), de modo que el CSS y los JavaScript de la página funcionen de forma idéntica en todos los casos.
 * El elemento wrapper debe agregarse a todos los componentes que sean editables, de modo que el editor de páginas pueda inicializarlos y actualizarlos correctamente.
 * En el caso de componentes no editables, el elemento envolvente puede evitarse si no cumple ninguna función determinada, de modo que el marcado resultante no esté inflado innecesariamente.
 
@@ -48,12 +37,12 @@ A continuación se ofrecen algunas recomendaciones generales sobre cuándo inclu
 
 Se pueden aplicar las siguientes propiedades y nodos a los componentes para controlar el comportamiento de su etiqueta decorativa:
 
-* **`cq:noDecoration {boolean}`**:: Esta propiedad se puede agregar a un componente y un valor verdadero fuerza a AEM a no generar ningún elemento envolvente sobre el componente.
+* **`cq:noDecoration {boolean}`::**Esta propiedad se puede agregar a un componente y un valor verdadero fuerza a AEM a no generar ningún elemento envolvente sobre el componente.
 
-* **`cq:htmlTag`**node : Este nodo se puede agregar en un componente y puede tener las siguientes propiedades:
+* **`cq:htmlTag`node :**Este nodo se puede agregar en un componente y puede tener las siguientes propiedades:
 
-   * **`cq:tagName {String}`**:: Se puede utilizar para especificar una etiqueta HTML personalizada que se utilizará para ajustar los componentes en lugar del elemento DIV predeterminado.
-   * **`class {String}`**:: Se puede utilizar para especificar los nombres de clase css que se añadirán al contenedor.
+   * **`cq:tagName {String}`::**Se puede utilizar para especificar una etiqueta HTML personalizada que se utilizará para ajustar los componentes en lugar del elemento DIV predeterminado.
+   * **`class {String}`::**Se puede utilizar para especificar los nombres de clase css que se añadirán al contenedor.
    * Otros nombres de propiedad se agregarán como atributos HTML con el mismo valor de cadena que se proporciona.
 
 ## Controles de secuencias de comandos {#script-controls}
@@ -65,7 +54,7 @@ Sin embargo, el comportamiento del contenedor difiere según si se utiliza [HTL]
 En general, el comportamiento del envolvente en HTL puede resumirse de la siguiente manera:
 
 * No se procesa ninguna DIV de envoltorio de forma predeterminada (al hacer `data-sly-resource="foo"`).
-* Todos los modos wcm (deshabilitados, previsualizados, editados tanto en la creación como en la publicación) se representan de forma idéntica.
+* Todos los modos wcm (deshabilitado, previsualización, edición tanto en la creación como en la publicación) se representan de forma idéntica.
 
 El comportamiento del envoltorio también se puede controlar completamente.
 
@@ -74,7 +63,7 @@ El comportamiento del envoltorio también se puede controlar completamente.
 
 Es posible controlar por completo el comportamiento de las etiquetas wrapper desde scripts HTL y su lógica asociada.
 
-Para obtener más información sobre el desarrollo en HTL, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)HTL.
+Para obtener más información sobre el desarrollo en HTL, consulte la documentación [de](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)HTL.
 
 #### Árbol de decisiones {#decision-tree}
 
@@ -122,7 +111,7 @@ Un ejemplo sería un componente que incluye un componente de imagen principal pa
 
 #### Caso de uso 2: Incluir un componente editable {#use-case-include-an-editable-component}
 
-Otro caso de uso común es cuando los componentes de contenedor incluyen componentes secundarios editables, como un contenedor de diseño. En este caso, cada niño incluido necesita imperativamente un envoltorio para que funcione el editor (a menos que esté explícitamente deshabilitado con la `cq:noDecoration` propiedad).
+Otro caso de uso común es cuando los componentes de contenedor incluyen componentes secundarios editables, como un Contenedor de diseño. En este caso, cada niño incluido necesita imperativamente un envoltorio para que funcione el editor (a menos que esté explícitamente deshabilitado con la `cq:noDecoration` propiedad).
 
 Dado que el componente incluido es en este caso un componente independiente, necesita un elemento envolvente para que funcione el editor y para definir su diseño y estilo que aplicar. Para activar este comportamiento, está la `decoration=true` opción.
 
