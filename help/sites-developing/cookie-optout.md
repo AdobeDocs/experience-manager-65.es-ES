@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 3%
 
 ---
 
@@ -34,18 +37,18 @@ Para configurar el servicio, puede utilizar la consola [](/help/sites-deploying/
 |---|---|---|
 | Cookies de exclusión | optout.cookies | Los nombres de las cookies que indican, cuando están presentes en el dispositivo del usuario, que el usuario no ha consentido en utilizar cookies. |
 | Encabezados HTTP de exclusión | optout.headers | Nombres de encabezados HTTP que indican, cuando están presentes, que el usuario no ha consentido en utilizar cookies. |
-| Cookies de lista blanca | optout.whitelist.cookies | Una lista de cookies que son esenciales para el funcionamiento del sitio Web y pueden utilizarse sin el consentimiento del usuario. |
+| Cookies de Lista blanca | optout.whitelist.cookies | Una lista de cookies que son esenciales para el funcionamiento del sitio Web y pueden utilizarse sin el consentimiento del usuario. |
 
 ## Validación del uso de cookies {#validating-cookie-usage}
 
 Utilice javascript del lado del cliente para llamar al servicio de exclusión de Adobe Granite y verificar que puede utilizar una cookie. Utilice el objeto javascript Granite.OptOutUtil para realizar cualquiera de las siguientes tareas:
 
-* Obtenga una lista de nombres de cookies que indican que el usuario no acepta usar cookies para fines de seguimiento.
-* Obtenga una lista de cookies que se pueden utilizar.
+* Obtenga una lista de nombres de cookies que indique que el usuario no acepta usar cookies para fines de seguimiento.
+* Obtenga una lista de cookies que se puedan utilizar.
 * Determine si el explorador Web contiene una cookie que indica que el usuario no acepta el uso de cookies para el seguimiento.
 * Determine si se puede utilizar una cookie específica.
 
-La carpeta [de biblioteca](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) cliente granite.utils proporciona el objeto Granite.OptOutUtil. Agregue el siguiente código al JSP del encabezado de página para incluir un vínculo a la biblioteca de javascript:
+La carpeta [de biblioteca](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) cliente granite.utils proporciona el objeto Granite.OptOutUtil. Añada el siguiente código en el JSP del encabezado de página para incluir un vínculo a la biblioteca de javascript:
 
 `<ui:includeClientLib categories="granite.utils" />`
 
@@ -104,7 +107,7 @@ Un valor booleano de `true` si se encuentra una cookie que indica que no hay con
 
 ### función maySetCookie(cookieName) {#maysetcookie-cookiename-function}
 
-Determina si se puede utilizar una cookie específica en el explorador del usuario. Esta función equivale a utilizar la `isOptedOut` función junto con determinar si la cookie dada se incluye en la lista que devuelve la `getWhitelsitCookieNames` función.
+Determina si se puede utilizar una cookie específica en el explorador del usuario. Esta función equivale a utilizar la `isOptedOut` función junto con determinar si la cookie dada se incluye en la lista que devuelve la `getWhitelistCookieNames` función.
 
 **Parámetros**
 
