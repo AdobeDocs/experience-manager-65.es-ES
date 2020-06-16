@@ -1,8 +1,8 @@
 ---
 title: ASRP - Proveedor de recursos de Almacenamiento de Adobe
 seo-title: ASRP - Proveedor de recursos de Almacenamiento de Adobe
-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
-seo-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
+description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
+seo-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
 uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ## Acerca de ASRP {#about-asrp}
 
-Cuando AEM Communities está configurado para utilizar ASRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando los AEM Communities están configurados para utilizar ASRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las Opciones](/help/communities/working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](/help/communities/topologies.md)recomendadas.
 
@@ -28,7 +31,7 @@ Consulte también [Características de las Opciones](/help/communities/working-w
 
 Se requiere una licencia adicional para el uso de ASRP.
 
-Para configurar el sitio de comunidades de AEM para que utilice ASRP para UGC, póngase en contacto con el representante de cuentas para:
+Para configurar el sitio de AEM Communities para que utilice ASRP para UGC, póngase en contacto con el representante de cuentas para:
 
 * Dirección URL del centro de datos (dirección del extremo ASRP)
 * Clave de consumidor
@@ -84,7 +87,7 @@ Asegúrese de establecer los dominios como direcciones URL que se pueden enrutar
 
 ### Sincronización de tiempo {#time-synchronization}
 
-Para que la autenticación con el extremo ASRP tenga éxito, los equipos que ejecuten las comunidades AEM alojadas deben sincronizarse a la hora, como por ejemplo con el Protocolo de tiempo de [red (NTP)](https://www.ntp.org/).
+Para que la autenticación con el extremo ASRP tenga éxito, los equipos que ejecutan sus AEM Communities alojados deben sincronizarse a la hora, como con el protocolo de tiempo de [red (NTP)](https://www.ntp.org/).
 
 ### Publicación de la configuración {#publishing-the-configuration}
 
