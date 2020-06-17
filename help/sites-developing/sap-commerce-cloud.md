@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '2331'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Se proporcionan varios componentes de AEM integrados para utilizar la capa de in
 * un carro de compras
 * cierre de compra
 
-Para buscar, se proporciona un enlace de integración que le permite utilizar la búsqueda de AEM, la búsqueda del sistema de comercio electrónico, una búsqueda de terceros (como Search&amp;Promote) o una combinación de estos elementos.
+Para buscar, se proporciona un enlace de integración que le permite utilizar la búsqueda de AEM, la búsqueda del sistema de comercio electrónico, una búsqueda de terceros (como Search&amp;Promote) o una combinación de estos.
 
 ## Selección del motor de comercio electrónico {#ecommerce-engine-selection}
 
@@ -46,7 +49,7 @@ El marco de comercio electrónico se puede utilizar con cualquier solución de c
 
 * Los motores de comercio electrónico son servicios OSGi que admiten la `CommerceService` interfaz
 
-   * Los motores pueden distinguirse por una propiedad de `commerceProvider` servicio
+   * Los motores se pueden distinguir mediante una propiedad de `commerceProvider` servicio
 
 * AEM admite `Resource.adaptTo()` para `CommerceService` y `Product`
 
@@ -141,7 +144,7 @@ hybris utiliza una sesión de usuario para almacenar información como el carro 
 
       `commerceSession.getProductPrice(Product product)`
 
-* Es propietario de la ubicación *de* almacenamiento para los datos del **pedido** .
+* Es propietario de la ubicación *del* almacenamiento para los datos del **pedido**
 
    `CommerceSession.getUserContext()`
 
@@ -169,6 +172,7 @@ Los datos del producto que se mantienen en hybris deben estar disponibles en AEM
 * La extensión hybris proporciona un importador de encuestas (&quot;esquema de híbridos&quot;), que se puede configurar para importar cambios en AEM en un intervalo especificado (por ejemplo, cada 24 horas en las que el intervalo se especifica en segundos):
 
    * 
+
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -184,13 +188,13 @@ Los datos del producto que se mantienen en hybris deben estar disponibles en AEM
 
 * La sincronización de productos entre versiones de catálogo requerirá una (des)activación de la página correspondiente de AEM (a, c)
 
-   * La adición de un producto a una versión de catálogo **en línea** requiere la activación de la página del producto.
+   * Añadir un producto a una versión de catálogo **en línea** requiere la activación de la página del producto.
    * La eliminación de un producto requiere la desactivación.
 
 * La activación de una página en AEM (c) requiere una marca de verificación (b) y solo es posible si
 
    * El producto está en una versión de catálogo **en línea** para páginas de producto.
-   * Los productos a los que se hace referencia están disponibles en una versión de catálogo **en línea** para otras páginas (por ejemplo, páginas de campaña).
+   * Los productos a los que se hace referencia están disponibles en una versión de catálogo **en línea** para otras páginas (p. ej. páginas de campaña).
 
 * Las páginas de productos activadas necesitan acceder a la versión **en línea** (d) de los datos del producto.
 
@@ -208,7 +212,7 @@ Cada producto o variante está representado por un recurso y, por lo tanto, asig
 
 El recurso de producto/variante no siempre contiene los datos reales del producto. Puede ser una representación de los datos que realmente se poseen en otro sistema (como hybris). Por ejemplo, las descripciones de productos, los precios, etc. no se almacenan en AEM, sino que se recuperan en tiempo real desde el motor de comercio electrónico.
 
-Cualquier recurso de producto puede representarse mediante un `Product API`. La mayoría de las llamadas de la API de producto son específicas de la variación (aunque las variaciones pueden heredar valores compartidos de un antecesor), pero también hay llamadas que enumeran el conjunto de variaciones ( `getVariantAxes()`, `getVariants()`, etc.).
+Cualquier recurso de producto puede representarse mediante un `Product API`. La mayoría de las llamadas de la API de producto son específicas de la variación (aunque las variaciones pueden heredar valores compartidos de un antecesor), pero también hay llamadas que lista el conjunto de variaciones ( `getVariantAxes()`, `getVariants()`, etc.).
 
 >[!NOTE]
 >
@@ -224,6 +228,7 @@ Mientras que los productos (en general) pueden tener muchos ejes de variante, el
    >
 1. más uno más
    >   Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
+
 >
 
 
@@ -285,7 +290,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -334,7 +339,7 @@ public class AxisFilter implements VariantFilter {
 }
 ```
 
-* **Mecanismo General de Almacenamiento**
+* **Mecanismo general de Almacenamiento**
 
    * Los nodos de producto no son:no estructurados.
    * Un nodo de producto puede ser:
@@ -485,11 +490,11 @@ La `CommerceSession` propiedad de los tres elementos:
 **Cálculos de envío**
 
 * Los formularios de pedido suelen necesitar presentar varias opciones de envío (y precios).
-* Los precios pueden basarse en artículos y detalles del pedido, como peso o dirección de entrega.
+* Los precios pueden basarse en artículos y detalles del pedido, como peso o dirección de envío.
 * El `CommerceSession` tiene acceso a todas las dependencias, por lo que puede tratarse de manera similar a los precios del producto:
 
    * El `CommerceSession` propietario es propietario del precio de envío.
-   * Puede recuperar o actualizar los detalles de entrega mediante `updateOrder(Map<String, Object> delta)`
+   * Puede recuperar o actualizar los detalles del envío mediante `updateOrder(Map<String, Object> delta)`
 
 >[!NOTE]
 >
@@ -501,7 +506,7 @@ La `CommerceSession` propiedad de los tres elementos:
    >
    >
 * Comprobando si el método está disponible
->* Adición de información sobre precios
+>* Añadir información de precios
 >* Para permitir que los compradores actualicen la página de pedidos en AEM (incluyendo el superconjunto de métodos de envío y el texto que los describe), mientras que aún tienen el control de exponer la `CommerceSession` información relevante.
 
 
@@ -531,7 +536,7 @@ El proyecto eCommerce contiene un componente de búsqueda predeterminado, ubicad
 
 ![chlimage_1-14](assets/chlimage_1-14a.png)
 
-Esto hace uso de la API de búsqueda para consultar el motor de comercio seleccionado (consulte Selección [del motor de](#ecommerce-engine-selection)comercio electrónico):
+Esto hace uso de la API de búsqueda para la consulta del motor de comercio seleccionado (consulte Selección [del motor de](#ecommerce-engine-selection)comercio electrónico):
 
 #### API de búsqueda {#search-api}
 
@@ -543,7 +548,7 @@ Existen varias clases genéricas/de ayuda proporcionadas por el proyecto princip
 
 1. `FacetParamHelper`
 
-   Es una clase de utilidad que proporciona un método estático - `toParams` - que se utiliza para generar cadenas de `GET` parámetros a partir de una lista de facetas y un valor alternado. Esto resulta útil en la interfaz de usuario, donde debe mostrar un hipervínculo para cada valor de cada faceta, de modo que cuando el usuario haga clic en el hipervínculo, se alternará el valor correspondiente (es decir, si se seleccionó, se eliminará de la consulta, de lo contrario se agregará). Esto tiene en cuenta toda la lógica de manejar facetas de varios valores o de un solo valor, valores de anulación, etc.
+   Es una clase de utilidad que proporciona un método estático - `toParams` - que se utiliza para generar cadenas de `GET` parámetros a partir de una lista de facetas y un valor alternado. Esto resulta útil en la interfaz de usuario, donde debe mostrar un hipervínculo para cada valor de cada faceta, de modo que cuando el usuario haga clic en el hipervínculo, se alternará el valor correspondiente (es decir, si se seleccionó, se eliminará de la consulta; de lo contrario, se agregará). Esto tiene en cuenta toda la lógica de manejar facetas de varios valores o de un solo valor, valores de anulación, etc.
 
 El punto de entrada para la API de búsqueda es el `CommerceService#search` método que devuelve un `CommerceResult` objeto. Consulte la documentación [de la](/help/sites-developing/ecommerce.md#api-documentation) API para obtener más información sobre este tema.
 
@@ -555,9 +560,9 @@ La integración se proporciona entre AEM y varios sistemas de comercio electrón
 
    Se supone que AEM es el *único* front-end web y, por lo tanto, realiza *toda* la autenticación.
 
-* Esclavizar cuentas
+* Cuentas en Hibris
 
-   AEM crea una cuenta esclava en híbridos para cada comprador. El nombre de usuario de la cuenta esclava es el mismo que el nombre de usuario de AEM. Una contraseña criptográficamente aleatoria se genera automáticamente y se almacena (codifica) en AEM.
+   AEM crea una cuenta correspondiente (subordinada) en híbridos para cada comprador. El nombre de usuario de esta cuenta es el mismo que el nombre de usuario de AEM. Una contraseña criptográficamente aleatoria se genera automáticamente y se almacena (codifica) en AEM.
 
 #### Usuarios preexistentes {#pre-existing-users}
 
