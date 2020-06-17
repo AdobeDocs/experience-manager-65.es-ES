@@ -3,7 +3,7 @@ title: Descargue recursos digitales desde [!DNL Adobe Experience Manager].
 description: Obtenga información sobre cómo descargar recursos [!DNL Adobe Experience Manager] desde y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 527b2f50efac606a0a696c8f56b0d725f79cd692
+source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -29,7 +29,7 @@ No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de
 1. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta.
 1. En la barra de herramientas, toque **[!UICONTROL Descargar]**.
 
-   ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download.png)
+   ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download1.png)
 
    *Opciones del cuadro de diálogo Descargar.*
 
