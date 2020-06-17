@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+workflow-type: tm+mt
+source-wordcount: '1599'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Todas las funcionalidades se implementan usando los servicios web nativos de Sha
 >
 >SharePoint Connector también es compatible con AEM 6.1 service pack 2. El conector ya no es compatible con el montaje del repositorio virtual y, por lo tanto, no se puede montar. Si desea acceder al repositorio de Sharepoint mediante las API de Java, utilice la implementación del repositorio JCR del conector de Sharepoint en su proyecto.
 >
->Las operaciones de instalación, configuración, administración y TI del servidor de SharePoint y la infraestructura de TI relacionada están fuera del ámbito de este documento. Consulte la documentación del proveedor en [SharePoint](https://www.microsoft.com/sharepoint) para obtener información sobre estos temas. El conector requiere que estas partes de la infraestructura estén correctamente instaladas, configuradas y operadas.
+>Las operaciones de instalación, configuración, administración y TI del servidor de SharePoint y de la infraestructura de TI relacionada están fuera del ámbito de este documento. Consulte la documentación del proveedor en [SharePoint](https://www.microsoft.com/sharepoint) para obtener información sobre estos temas. El conector requiere que estas partes de la infraestructura estén correctamente instaladas, configuradas y operadas.
 
 
 ## Introducción {#getting-started}
@@ -45,7 +48,7 @@ Para comenzar con el conector, haga lo siguiente:
 * Descargue el archivo de distribución de paquetes de conector desde Package Share.
 * Copie un archivo *license.properties* válido en el directorio que contiene el archivo *cq-quickstart-6.4.0.jar* .
 
-* Toque o haga doble clic en el archivo .jar para iniciar AEM, o bien iniciarlo desde la línea de comandos.
+* Toque o haga clic con el Doble en el archivo .jar para inicio de AEM o realice el inicio desde la línea de comandos.
 * Instale el paquete de conector desde el Administrador de paquetes.
 * Configure las opciones del conector.
 
@@ -57,7 +60,7 @@ El conector es un paquete de contenido que facilita la instalación. Instale el 
 
 El conector requiere lo siguiente:
 
-* Java Runtime Environment 1.7 o posterior
+* Java Runtime Entorno 1.7 o posterior
 * Servicios Web de SharePoint disponibles a través de la red
 * URL del servidor de SharePoint
 * Credenciales de usuario y permisos para repositorios de CRX y SharePoint
@@ -88,7 +91,7 @@ El conector admite lo siguiente:
 
 Uso compartido de paquetes AEM se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la documentación [de Uso compartido de](/help/sites-administering/package-manager.md#package-share)paquetes.
 
-Para acceder a Uso compartido de paquetes en la página de bienvenida de AEM, toque o haga clic en **Herramientas** y, a continuación, seleccione Uso compartido **de paquetes**. Necesita un ID de Adobe válido que incluya la dirección de correo electrónico de su empresa. Además, después de iniciar sesión en su cuenta, solicite el acceso de Uso compartido de paquetes.
+Para acceder a Uso compartido de paquetes en la página de bienvenida de AEM, toque o haga clic en **Herramientas** y, a continuación, seleccione Uso compartido **de paquetes**. Se requiere un Adobe ID válido que incluya la dirección de correo electrónico de la compañía. Además, después de iniciar sesión en su cuenta, solicite el acceso de Uso compartido de paquetes.
 
 #### Integración con AEM {#integrating-with-aem}
 
@@ -128,14 +131,14 @@ De forma predeterminada, el conector expone un solo espacio de trabajo JCR. El s
 El conector también se puede configurar para varios espacios de trabajo. En este caso, cada área de trabajo está asociada con la dirección URL del servidor de SharePoint correspondiente que se muestra a través del área de trabajo. Para agregar un espacio de trabajo, agregue una definición de espacio de trabajo al parámetro Workspaces. Una definición de espacio de trabajo tiene el siguiente formato:
 `<name>`= `<url>` donde`<name>``<url>` es el nombre del espacio de trabajo JCR y es la dirección URL del servidor de SharePoint para ese espacio de trabajo.
 
-En AEM, realice un paso más aparte de los pasos de configuración anteriores. Incluya en la lista blanca el paquete &#39;**com.day.cq.dam.cq-dam-jcr-conectores**&#39;.
+En AEM, realice un paso más aparte de los pasos de configuración anteriores. Permita la lista del paquete &#39;**com.day.cq.dam.cq-dam-jcr-conectores**&#39;.
 
-Para incluir paquetes en la lista blanca en AEM, lleve a cabo los siguientes pasos:
+Para permitir paquetes de lista en AEM, realice los siguientes pasos:
 
 1. Vaya a la Consola de administración de OSGi: http://localhost:4502/system/console/configMgr.
 1. Busque el servicio &quot;Apache Sling Login Admin Whitelist&quot;.
-1. Seleccione Omitir la lista blanca.
-1. Añada &#39;**com.day.cq.dam.cq-dam-jcr-conectores**&#39; en los paquetes predeterminados de la lista blanca
+1. Seleccione **Omitir la lista blanca**.
+1. Añadir `com.day.cq.dam.cq-dam-jcr-connectors` en paquetes de listas blancas predeterminados
 1. Haga clic en Guardar.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
