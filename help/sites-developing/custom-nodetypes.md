@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 9%
 
 ---
 
@@ -206,7 +209,7 @@ Define una plantilla de CQ.
             * `- cq:workflowName`
 * `@prop allowedParents` - Patrones de expresión regulares para determinar las rutas a las plantillas permitidas como plantillas principales.
 * `@prop allowedChildren` - Patrones de expresión regulares para determinar las rutas a las plantillas permitidas como plantillas secundarias.
-* `@prop ranking` - Coloque dentro de la lista de plantillas en el cuadro de diálogo Crear página.
+* `@prop ranking` - Posición dentro de la lista de las plantillas en el cuadro de diálogo Crear página.
 
 **Definición**
 
@@ -234,7 +237,7 @@ Define un componente de CQ.
 * `@prop dialogPath` - Ruta del cuadro de diálogo principal (alternativa al cuadro de diálogo).
 * `@node design_dialog` - Cuadro de diálogo Diseño.
 * `@prop cq:cellName` - Nombre de la celda de diseño.
-* `@prop cq:isContainer` - Indica si se trata de un componente contenedor. Esto fuerza el uso de los nombres de celda de los componentes secundarios en lugar de los nombres de ruta. Por ejemplo, `parsys` es un componente contenedor. Si no se define este valor, la comprobación se realiza en función de la existencia de un `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indica si se trata de un componente de contenedor. Esto fuerza el uso de los nombres de celda de los componentes secundarios en lugar de los nombres de ruta. Por ejemplo, el `parsys` es un componente de contenedor. Si no se define este valor, la comprobación se realiza en función de la existencia de un `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Si es true, no se dibujan `div` etiquetas decorativas al incluir este componente.
 * `@node cq:editConfig` - La configuración que define los parámetros de la barra de edición.
 * `@node cq:childEditConfig` - La configuración de edición heredada por los componentes secundarios.
@@ -316,10 +319,10 @@ Define la configuración de la &quot;barra de edición&quot;.
 
 **Descripción**
 
-Configura un destino de colocación de un componente. El nombre de este nodo se utilizará como ID para arrastrar y soltar.
+Configura un destinatario de colocación de un componente. El nombre de este nodo se utilizará como ID para arrastrar y soltar.
 
-* `@prop accept` - Lista de tipos de MIME aceptados por este objetivo de colocación;p. ej. `["image/*"]`
-* `@prop groups` - Lista de grupos de arrastrar y soltar que aceptan un origen.
+* `@prop accept` - Lista de tipos de MIME aceptados por este destinatario de caída; p. ej. `["image/*"]`
+* `@prop groups` - Lista de los grupos de arrastrar y soltar que aceptan un origen.
 * `@prop propertyName` - Nombre de la propiedad utilizada para almacenar la referencia.
 
 **Definición**
@@ -372,9 +375,9 @@ Define los oyentes (del lado del cliente) que se ejecutarán en un evento de edi
 * `@prop aftercreate` - Se activa después de crear un componente.
 * `@prop afteredit` - Se activa después de editar (modificar) un componente.
 * `@prop afterdelete` - Se desencadena después de que se elimina un componente.
-* `@prop afterinsert` - Se desencadena después de agregar un componente a este contenedor.
+* `@prop afterinsert` - Se activa después de agregar un componente a este contenedor.
 * `@prop afterremove` - Se desencadena después de que se haya eliminado un componente de este contenedor.
-* `@prop aftermove` - Se desencadena después de que los componentes se hayan movido a este contenedor.
+* `@prop aftermove` - Se desencadena después de que los componentes se hayan movido en este contenedor.
 
 **Definición**
 
@@ -427,20 +430,20 @@ Miniatura para representar un recurso DAM.
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Lista de contenedores de entrega {#delivery-container-list}
+## Lista Contenedor Envío {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
 **Descripción**
 
-Lista de contenedores.
+Lista de Contenedor.
 
 **Definición**
 
 * `[cq:containerList]`
    * `mixin`
 
-## Página de envío {#delivery-page}
+## Página Envío {#delivery-page}
 
 ### cq:Cq4PageAttributes {#cq-cq-pageattributes}
 
@@ -471,7 +474,7 @@ Los elementos de una `cq:Cq4ContentPage` son:
 
 * `@prop cq:csd` - El CSD de ContentBus de la página.
 * `@node cq:content` - El contenido de la página. Este nodo secundario no existe si el nodo de página está en estado &quot;Existente sin contenido&quot; o &quot;Eliminado&quot;.
-* `@node cq:attributes` - Lista de atributos de página, que anteriormente se conocían como etiquetas de versión. Este nodo es obligatorio para el tipo cq:contentPage. Se crea una versión del nodo de atributos cuando la página es un nodo con una versión.
+* `@node cq:attributes` - La lista de los atributos de página, que anteriormente se conocían como etiquetas de versión. Este nodo es obligatorio para el tipo cq:contentPage. Se crea una versión del nodo de atributos cuando la página es un nodo con una versión.
 
 **Definición**
 
@@ -487,8 +490,8 @@ Los elementos de una `cq:Cq4ContentPage` son:
 
 Configuración de la encuesta.
 
-* `@prop source (String) mandatory` - El URI de fuente de datos es obligatorio y no debe estar vacío
-* `@prop target (String)` - Ubicación de destino en la que se almacenan los datos recuperados del origen de datos. Es opcional y se establece de forma predeterminada en el nodo cq:PollConfig.
+* `@prop source (String) mandatory` - URI de fuente de datos, esto es obligatorio y no debe estar vacío
+* `@prop target (String)` - Ubicación del destinatario en la que se almacenan los datos recuperados del origen de datos. Es opcional y se establece de forma predeterminada en el nodo cq:PollConfig.
 * `@prop interval (Long)` - El intervalo en segundos en el que se sondearán los datos nuevos o actualizados del origen de datos. Es opcional y su valor predeterminado es de 30 minutos (1800 segundos).
 * [Creación de servicios de importación de datos personalizados para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
@@ -519,7 +522,7 @@ Conveniencia de tipo de nodo principal para crear fácilmente nodos de configura
 Mezcla que define una ubicación geográfica en grados decimales (DD).
 
 * `@prop latitude` - Latitud codificada como doble utilizando grados decimales.
-* `@prop longitude` - Longitud codificada como doble utilizando grados decimales.
+* `@prop longitude` - Longitud codificada como doble usando grados decimales.
 
 **Definición**
 
@@ -550,7 +553,7 @@ Tipos de nodos MailerService. El buzón utiliza nodos que tienen esta mezcla com
 
 **Descripción**
 
-Define una mezcla de LiveRelationship. Un nodo maestro y un nodo esclavo pueden vincularse virtualmente a través de LiveRelationship.
+Define una mezcla de LiveRelationship. Un nodo principal de origen (control) y un nodo de Live Copy (control) pueden vincularse virtualmente a través de LiveRelationship.
 
 **Definición**
 
@@ -563,9 +566,9 @@ Define una mezcla de LiveRelationship. Un nodo maestro y un nodo esclavo pueden 
 
 **Descripción**
 
-Define una mezcla de LiveSync. Si un nodo participa en una LiveRelationship con un nodo maestro como esclavo, se marca como LiveSync.
+Define una mezcla de LiveSync. Si un nodo está involucrado en una LiveRelationship con un nodo de origen primario (control) y un nodo de Live Copy (control), se marca como LiveSync.
 
-* `@prop cq:master` - Ruta del nodo maestro de LiveRelationship.
+* `@prop cq:master` - Ruta del origen principal (control) de LiveRelationship.
 * `@prop cq:isDeep` - Define si la relación está disponible para niños.
 * `@prop cq:syncTrigger` - Define cuándo se activa la sincronización.
 * `@node * LiveSyncAction` - Acciones para realizar la sincronización
@@ -580,7 +583,7 @@ Define una mezcla de LiveSync. Si un nodo participa en una LiveRelationship con 
 
 **Descripción**
 
-Define una mezcla de LiveSyncCanceled. Cancelar el comportamiento de LiveSync de un nodo esclavo que puede estar involucrado en una LiveRelationship debido a uno de sus padres.
+Define una mezcla de LiveSyncCanceled. Cancelar el comportamiento de LiveSync de un nodo de Live Copy (controlado) que pueda estar involucrado en una LiveRelationship debido a uno de sus elementos principales.
 
 * `@prop cq:isCancelledForChildren` - Define si se cancela LiveSync; también para niños.
 
@@ -816,7 +819,7 @@ Cualquier usuario o sitio web público puede etiquetar el contenido (estilo Web2
 
 **Descripción**
 
-Agrega un `cq:userContent` subnodo que los usuarios pueden modificar. Cada usuario tendrá su propio `cq:userContent/<userid>` subnodo, que generalmente tiene la mezcla `cq:UserTaggable`.
+Añade un `cq:userContent` subnodo que los usuarios pueden modificar. Cada usuario tendrá su propio `cq:userContent/<userid>` subnodo, que generalmente tiene la mezcla `cq:UserTaggable`.
 
 **Definición**
 
@@ -1109,7 +1112,7 @@ Nodo de flujo de trabajo
 
 **Descripción**
 
-Transición de flujo de trabajo
+transición de flujo de trabajo
 
 **Definición**
 
