@@ -10,21 +10,24 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: cd7331f5f57ec90ea72d41d467891dc832347a3c
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
 
 # 10 primeros OWASP{#owasp-top}
 
-El [Open Web Application Security Project](https://www.owasp.org) (OWASP) mantiene una lista de los 10 [principales riesgos](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)de seguridad de aplicaciones Web.
+El [Open Aplicación web Security Project](https://www.owasp.org) (OWASP) mantiene una lista de lo que consideran los 10 [Principales Riesgos](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)de Seguridad de Aplicaciones web.
 
 A continuación se detallan estos temas, junto con una explicación de cómo CRX los trata.
 
 ## 1. Inyección {#injection}
 
-* SQL: se evitó mediante diseño: La configuración predeterminada del repositorio no incluye ni requiere una base de datos tradicional; todos los datos se almacenan en el repositorio de contenido. Todo acceso está limitado a usuarios autenticados y solo se puede realizar a través de la API de JCR. SQL sólo se admite para consultas de búsqueda (SELECT). Además, SQL ofrece compatibilidad con enlace de valores.
-* LDAP: la inyección de LDAP no es posible, ya que el módulo de autenticación filtra la entrada y realiza la importación del usuario mediante el método bind.
+* SQL: se evitó mediante diseño: La configuración predeterminada del repositorio no incluye ni requiere una base de datos tradicional; todos los datos se almacenan en el repositorio de contenido. Todo acceso está limitado a usuarios autenticados y solo se puede realizar a través de la API de JCR. Sólo se admite SQL para consultas de búsqueda (SELECT). Además, admite el enlace de valores de ofertas SQL.
+* LDAP: no es posible la inyección de LDAP, ya que el módulo de autenticación filtros la entrada y realiza la importación del usuario mediante el método bind.
 * SO: no se ejecuta shell desde la aplicación.
 
 ## 2. Secuencia de comandos entre sitios (XSS) {#cross-site-scripting-xss}
@@ -39,13 +42,13 @@ AEM utiliza técnicas de autenticación sólidas y probadas, basadas en [Apache 
 
 ## 4. Referencias de objeto directo inseguras {#insecure-direct-object-references}
 
-Todo acceso a los objetos de datos está mediado por el repositorio y, por lo tanto, restringido por el control de acceso basado en roles.
+Todo acceso a los objetos de datos está mediado por el repositorio y, por lo tanto, restringido por controles de acceso basados en roles.
 
 ## 5. Falsificación de solicitudes entre sitios (CSRF) {#cross-site-request-forgery-csrf}
 
 La falsificación de solicitudes entre sitios (CSRF) se mitiga mediante la inyección automática de un token criptográfico en todos los formularios y solicitudes AJAX y la verificación de este token en el servidor para cada POST.
 
-Además, AEM se incluye con un filtro basado en el encabezado del referente, que se puede configurar para permitir únicamente solicitudes POST de hosts incluidos específicamente en la lista blanca.
+Además, AEM incluye un filtro basado en encabezados de remitente del reenvío, que se puede configurar para *permitir* solosolicitudes POST de hosts específicos (definidas en una lista).
 
 ## 6. Error de configuración de seguridad {#security-misconfiguration}
 
