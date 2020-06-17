@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '2841'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ En esta sección se describen los distintos pasos que debe seguir para garantiza
 
 >[!NOTE]
 >
->También [se dispone de más información sobre las amenazas de seguridad más peligrosas publicadas por Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>También [se dispone de más información sobre las amenazas a la seguridad más peligrosas, según publica el Open Aplicación web Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
 >[!NOTE]
 >
@@ -44,7 +47,7 @@ La activación de la capa de transporte HTTPS en instancias de creación y publi
 
 ### Instalar revisiones de seguridad {#install-security-hotfixes}
 
-Asegúrese de que ha instalado las revisiones de [seguridad más recientes proporcionadas por Adobe](https://helpx.adobe.com/experience-manager/kb/aem63-available-hotfixes.html).
+Asegúrese de que ha instalado las revisiones de [seguridad más recientes proporcionadas por Adobe](https://helpx.adobe.com/es/experience-manager/kb/aem63-available-hotfixes.html).
 
 ### Cambio de las contraseñas predeterminadas para las cuentas de administración de la consola de AEM y OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -105,13 +108,13 @@ Adobe recomienda definir las páginas de tratamiento de errores personalizadas, 
 >
 >Consulte [Cómo puedo crear secuencias de comandos personalizadas o artículos de la base de conocimientos de controladores](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) de errores para obtener más información.
 
-### Lista de comprobación de seguridad completa del despachante {#complete-dispatcher-security-checklist}
+### Lista de comprobación de seguridad completa de Dispatcher {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher es una parte fundamental de su infraestructura. Adobe recomienda encarecidamente que complete la lista de comprobación de seguridad del [despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html).
 
 >[!CAUTION]
 >
->Con Dispatcher debe deshabilitar el selector &quot;.form&quot;.
+>Con el Dispatcher debe deshabilitar el selector &quot;.form&quot;.
 
 ## Pasos de verificación {#verification-steps}
 
@@ -119,19 +122,19 @@ AEM Dispatcher es una parte fundamental de su infraestructura. Adobe recomienda 
 
 Una instalación estándar de AEM especifica `admin` como usuario para las credenciales de transporte dentro de los agentes [de](/help/sites-deploying/replication.md)replicación predeterminados. Además, el usuario administrador se utiliza para originar la replicación en el sistema de creación.
 
-Por motivos de seguridad, ambos deben modificarse para reflejar el caso de uso concreto que se examina, teniendo presentes los dos aspectos siguientes:
+Por motivos de seguridad, ambos deben modificarse para reflejar el caso de uso particular que se examina, teniendo presentes los dos aspectos siguientes:
 
 * El usuario **de** transporte no debe ser el usuario administrador. En su lugar, configure un usuario en el sistema de publicación que solo tenga derechos de acceso a las partes relevantes del sistema de publicación y utilice las credenciales de ese usuario para el transporte.
 
-   Puede empezar desde el usuario del receptor de replicación integrado y configurar los derechos de acceso de este usuario para que coincidan con su situación
+   Puede realizar inicios desde el usuario del receptor de replicación integrado y configurar los derechos de acceso de este usuario para que coincidan con su situación
 
-* El usuario **de** replicación o el ID **de usuario del** agente tampoco deben ser el usuario administrador, sino un usuario que solo puede ver el contenido que se supone que se debe replicar. El usuario de replicación se utiliza para recopilar el contenido que se va a replicar en el sistema de creación antes de enviarlo al editor.
+* El usuario **de la** replicación o el ID **de usuario del** agente tampoco deben ser el usuario administrador, sino un usuario que solo puede ver el contenido que se supone que se debe replicar. El usuario de replicación se utiliza para recopilar el contenido que se va a replicar en el sistema de creación antes de enviarlo al editor.
 
-### Compruebe las comprobaciones de estado de seguridad del panel de operaciones {#check-the-operations-dashboard-security-health-checks}
+### Compruebe las comprobaciones de estado de seguridad de Panel de operaciones {#check-the-operations-dashboard-security-health-checks}
 
-AEM 6 presenta el nuevo panel de operaciones, que tiene por objeto ayudar a los operadores del sistema a solucionar problemas y supervisar el estado de una instancia.
+AEM 6 presenta el nuevo Panel de operaciones, destinado a ayudar a los gestores de sistemas a solucionar problemas y supervisar el estado de una instancia.
 
-El tablero también incluye una serie de comprobaciones de estado de seguridad. Se recomienda que verifique el estado de todas las comprobaciones de seguridad antes de empezar a usar la instancia de producción. Para obtener más información, consulte la documentación [del panel de](/help/sites-administering/operations-dashboard.md)operaciones.
+El panel también incluye una serie de controles de seguridad. Se recomienda que verifique el estado de todas las comprobaciones de seguridad antes de empezar a usar la instancia de producción. Para obtener más información, consulte la documentación [del Panel de](/help/sites-administering/operations-dashboard.md)operaciones.
 
 ### Compruebe si el contenido de ejemplo está presente {#check-if-example-content-is-present}
 
@@ -161,19 +164,19 @@ Este paquete OSGi debe desinstalarse tanto en los sistemas productivos de creaci
 
 AEM 6.1 incluye un mecanismo que ayuda a proteger contra los ataques de falsificación de solicitudes entre sitios, denominado **CSRF Protection Framework**. Para obtener más información sobre cómo utilizarla, consulte la [documentación](/help/sites-developing/csrf-protection.md).
 
-#### Filtro de referente de Sling {#the-sling-referrer-filter}
+#### El filtro Remitente del reenvío Sling {#the-sling-referrer-filter}
 
-Para abordar problemas conocidos de seguridad con la falsificación de solicitudes entre sitios (CSRF) en CRX WebDAV y Apache Sling, debe agregar configuraciones para el filtro Referente para utilizarlo.
+Para abordar problemas conocidos de seguridad con la falsificación de solicitudes entre sitios (CSRF) en CRX WebDAV y Apache Sling, debe agregar configuraciones para el filtro de Remitente del reenvío para utilizarlo.
 
-El servicio de filtro de referente es un servicio OSGi que le permite configurar:
+El servicio de filtro de remitente del reenvío es un servicio OSGi que le permite configurar:
 
 * qué métodos http deben filtrarse
-* si se permite un encabezado de referente vacío
-* y una lista blanca de servidores para permitir además del host del servidor.
+* si se permite un encabezado de remitente del reenvío vacío
+* y una lista de servidores que se permitirá además del host del servidor.
 
-De forma predeterminada, todas las variaciones de localhost y los nombres de host actuales a los que está enlazado el servidor se encuentran en la lista blanca.
+   De forma predeterminada, todas las variaciones de localhost y los nombres de host actuales a los que está enlazado el servidor están en la lista.
 
-Para configurar el servicio de filtros de referente:
+Para configurar el servicio de filtros de remitente del reenvío:
 
 1. Abra la consola Apache Felix (**Configuraciones**) en:
 
@@ -184,7 +187,7 @@ Para configurar el servicio de filtros de referente:
 
    `Apache Sling Referrer Filter`
 
-1. En el `Allow Hosts` campo, introduzca todos los hosts permitidos como referentes. Cada entrada debe ser del formulario
+1. En el `Allow Hosts` campo, introduzca todos los hosts permitidos como remitentes del reenvío. Cada entrada debe ser del formulario
 
    &lt;protocol>://&lt;server>:&lt;puerto>
 
@@ -194,11 +197,11 @@ Para configurar el servicio de filtros de referente:
    * Si también desea permitir solicitudes https, debe introducir una segunda línea.
    * Si permite todos los puertos de ese servidor, puede utilizar `0` como número de puerto.
 
-1. Marque el `Allow Empty` campo si desea permitir encabezados de referente vacíos o ausentes.
+1. Seleccione el `Allow Empty` campo si desea permitir encabezados de remitente del reenvío vacíos o que faltan.
 
    >[!CAUTION]
    >
-   >Se recomienda proporcionar un referente mientras se utilizan herramientas de línea de comandos como `cURL` en lugar de permitir un valor vacío, ya que podría exponer su sistema a ataques de CSRF.
+   >Se recomienda proporcionar un remitente del reenvío mientras se utilizan herramientas de línea de comandos como `cURL` en lugar de permitir un valor vacío ya que podría exponer su sistema a ataques de CSRF.
 
 1. Edite los métodos que este filtro debe utilizar para las comprobaciones con el `Filter Methods` campo.
 
@@ -260,6 +263,7 @@ Un ataque de denegación de servicio (DoS) es un intento de hacer que un recurso
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
+
    Todas las variaciones válidas (p. ej., devolver una `200` respuesta y configuradas para ser almacenadas en caché) serán almacenadas en la caché por el despachante, lo que finalmente conducirá a un sistema de archivos completo y a la ausencia de servicio para más solicitudes.
 
 Hay muchos puntos de configuración para prevenir estos ataques, aquí solo analizamos los relacionados directamente con AEM.
@@ -268,7 +272,7 @@ Hay muchos puntos de configuración para prevenir estos ataques, aquí solo anal
 
 Sling se centra en el *contenido*. Esto significa que el procesamiento se centra en el contenido, ya que cada solicitud (HTTP) se asigna al contenido en forma de recurso JCR (un nodo de repositorio):
 
-* El primer destino es el recurso (nodo JCR) que contiene el contenido.
+* El primer destinatario es el recurso (nodo JCR) que contiene el contenido.
 * En segundo lugar, el procesador, o secuencia de comandos, se encuentra desde las propiedades del recurso en combinación con determinadas partes de la solicitud (por ejemplo, selectores o la extensión).
 
 >[!NOTE]
@@ -315,7 +319,7 @@ Para ayudar a evitar el uso indebido de DoS, puede:
 >
 >Esta mitigación solo debe realizarse en entornos AEM que no utilicen Forms.
 
-Dado que AEM no proporciona índices predeterminados para el `FormChooserServlet`, el uso de selectores de formularios en consultas desencadena una costosa inversión del repositorio, que normalmente interrumpe la instancia de AEM. Los selectores de formulario se pueden detectar con la presencia de **&amp;ast;.form.** &amp;ast; cadena en consultas.
+Dado que AEM no proporciona índices predeterminados para el `FormChooserServlet`, el uso de selectores de formularios en consultas desencadena una costosa inversión del repositorio, que normalmente interrumpe la instancia de AEM. Los selectores de formulario se pueden detectar con la presencia de **&amp;ast;.form.&amp;ast;** cadena en consultas.
 
 Para mitigar esto, siga los pasos a continuación:
 
@@ -336,7 +340,7 @@ Si la configuración requiere que el servidor de descarga de recursos esté habi
 
 ### Deshabilitar WebDAV {#disable-webdav}
 
-WebDAV debe deshabilitarse en los entornos de creación y publicación. Esto se puede hacer deteniendo los paquetes OSGi adecuados.
+WebDAV debe deshabilitarse tanto en la entorno de creación como en la de publicación. Esto se puede hacer deteniendo los paquetes OSGi adecuados.
 
 1. Conéctese a la Consola **de administración** Felix que se ejecuta en:
 
@@ -350,7 +354,7 @@ WebDAV debe deshabilitarse en los entornos de creación y publicación. Esto se 
 
 1. Haga clic en el botón Detener (en la columna Acciones) para detener este paquete.
 
-1. De nuevo en la lista de paquetes, busque el paquete llamado:
+1. Otra vez en la lista de paquetes, encuentre el paquete llamado:
 
    `Apache Sling DavEx Access to repositories (org.apache.sling.jcr.davex)`
 
@@ -400,7 +404,7 @@ Consulte a continuación para obtener más información.
 
 Mientras que en versiones anteriores las claves de replicación se almacenaban en el repositorio, comenzando con AEM 6.3, se almacenan en el sistema de archivos.
 
-Por lo tanto, para replicar las claves en las instancias, debe copiarlas de la instancia de origen a la ubicación de las instancias de destino en el sistema de archivos.
+Por lo tanto, para replicar las claves en las instancias, debe copiarlas de la instancia de origen a la ubicación de las instancias de destinatario en el sistema de archivos.
 
 Más concretamente, debe:
 
@@ -408,6 +412,7 @@ Más concretamente, debe:
 1. Busque el paquete com.adobe.granite.crypto.file en el sistema de archivos local. Por ejemplo, en esta ruta:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+
    El `bundle.info` archivo dentro de cada carpeta identificará el nombre del paquete.
 
 1. Vaya a la carpeta de datos. Por ejemplo:
@@ -415,12 +420,12 @@ Más concretamente, debe:
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Copie los archivos principales y HMAC.
-1. A continuación, vaya a la instancia de destino en la que desee duplicar la clave HMAC y navegue a la carpeta de datos. Por ejemplo:
+1. A continuación, vaya a la instancia de destinatario a la que desee realizar el duplicado de la clave HMAC y navegue hasta la carpeta de datos. Por ejemplo:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Pegue los dos archivos que copió anteriormente.
-1. [Actualice el paquete](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) de cifrado si la instancia de destino ya se está ejecutando.
+1. [Actualice el paquete](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) de cifrado si la instancia de destinatario ya se está ejecutando.
 1. Repita los pasos anteriores para todas las instancias en las que desee replicar la clave.
 
 >[!NOTE]
