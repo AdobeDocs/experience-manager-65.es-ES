@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3cbbad3ce9d93a353f48fc3206df989a8bf1991a
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +26,11 @@ El equipo de AEM en Adobe ha estado trabajando estrechamente con el proyecto de 
 
 El frasco del agente incluido en este paquete es la distribución modificada de NotSoSerial de Adobe.
 
-NotSoSerial es una solución de nivel Java para un problema de nivel Java y no es específica de AEM. Agrega una verificación previa a un intento de deserializar un objeto. Esta comprobación probará un nombre de clase con una lista blanca o una lista negra de estilo cortafuegos. Debido al número limitado de clases en la lista negra predeterminada, es poco probable que esto afecte a los sistemas o el código.
+NotSoSerial es una solución de nivel Java para un problema de nivel Java y no es específica de AEM. Agrega una verificación previa a un intento de deserializar un objeto. Esta comprobación probará un nombre de clase con una lista de permitidas o una lista de bloques de estilo cortafuegos. Debido al número limitado de clases en la lista de bloques predeterminada, es poco probable que esto afecte a los sistemas o el código.
 
-De forma predeterminada, el agente realizará una comprobación de la lista negra en relación con las clases vulnerables conocidas actuales. Esta lista negra está pensada para protegerle de la lista actual de vulnerabilidades que utilizan este tipo de vulnerabilidad.
+De forma predeterminada, el agente realizará una comprobación de la lista de bloques con respecto a las clases vulnerables conocidas actuales. Esta lista de bloqueos está pensada para protegerle de la lista actual de vulnerabilidades que usan este tipo de vulnerabilidad.
 
-La lista negra y la lista blanca se pueden configurar siguiendo las instrucciones de la sección [Configuración del agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de este artículo.
+La lista de bloques y la lista de permitidos se pueden configurar siguiendo las instrucciones de la sección [Configuración del agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de este artículo.
 
 El agente está diseñado para ayudar a mitigar las últimas clases vulnerables conocidas. Si el proyecto está deserializando datos que no son de confianza, es posible que siga siendo vulnerable a ataques de denegación de servicio, ataques de memoria insuficiente y explosiones de deserialización futuras desconocidas.
 
@@ -42,7 +45,7 @@ Adobe admite oficialmente Java 6, 7 y 8, pero entendemos que NotSoSerial tambié
 1. Instale el paquete **com.adobe.cq.cq-serialization-tester** .
 
 1. Vaya a la consola web del paquete en `https://server:port/system/console/bundles`
-1. Busque el paquete de serialización e inícielo. Esto debe cargar automáticamente el agente NotSoSerial.
+1. Busque el paquete de serialización y inicio. Esto debe cargar automáticamente el agente NotSoSerial.
 
 ## Instalación del agente en servidores de aplicaciones {#installing-the-agent-on-application-servers}
 
@@ -66,7 +69,7 @@ El agente NotSoSerial no se incluye en la distribución estándar de AEM para se
 
 ## Configuración del agente {#configuring-the-agent}
 
-La configuración predeterminada es adecuada para la mayoría de las instalaciones. Esto incluye una lista negra de clases vulnerables de ejecución remota conocidas y una lista blanca de paquetes donde la deserialización de datos de confianza debería ser relativamente segura.
+La configuración predeterminada es adecuada para la mayoría de las instalaciones. Esto incluye una lista de bloques de clases vulnerables de ejecución remota conocidas y una lista de paquetes permitidos en los que la deserialización de datos de confianza debería ser relativamente segura.
 
 La configuración del cortafuegos es dinámica y se puede cambiar en cualquier momento:
 
@@ -80,15 +83,15 @@ La configuración del cortafuegos es dinámica y se puede cambiar en cualquier m
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Esta configuración contiene la lista blanca, la lista negra y el registro de deserialización.
+Esta configuración contiene la lista de permitidos, la lista de bloques y el registro de deserialización.
 
-**Lista blanca**
+**Permitir listado**
 
-En la sección de lista blanca, son clases o prefijos de paquete que se permitirán para la deserialización. Es importante tener en cuenta que si está deserializando clases propias, deberá agregar las clases o paquetes a esta lista blanca.
+En la sección Permitir listado, son clases o prefijos de paquete que se permitirán para la deserialización. Es importante tener en cuenta que si está deserializando clases propias, deberá agregar las clases o paquetes a esta lista de permitidos.
 
-**Lista negra**
+**Lista de bloques**
 
-En la sección de listas negras hay clases que nunca se permiten para la deserialización. El conjunto inicial de estas clases se limita a las clases que se han encontrado vulnerables a ataques de ejecución remota. La lista negra se aplica antes que cualquier entrada de la lista blanca.
+En la sección de listado de bloques hay clases que nunca se permiten para la deserialización. El conjunto inicial de estas clases se limita a las clases que se han encontrado vulnerables a ataques de ejecución remota. La lista de bloques se aplica antes de permitir las entradas enumeradas.
 
 **Registro de diagnóstico**
 
@@ -98,23 +101,23 @@ El valor predeterminado de sólo **nombre de** clase le informará de las clases
 
 También puede establecer la opción de pila **** completa que registrará una pila Java del primer intento de deserialización para informarle de dónde se está realizando la deserialización. Esto puede resultar útil para buscar y eliminar la deserialización de su uso.
 
-## Verificación de la activación del agente {#verifying-the-agent-s-activation}
+## Verificación de la Activación del agente {#verifying-the-agent-s-activation}
 
 Puede comprobar la configuración del agente de deserialización navegando hasta la dirección URL en:
 
 * `https://server:port/system/console/healthcheck?tags=deserialization`
 
-Una vez que acceda a la dirección URL, se mostrará una lista de comprobaciones de estado relacionadas con el agente. Puede determinar si el agente está correctamente activado verificando que se están superando las comprobaciones de estado. Si están fallando, es posible que tenga que cargar el agente manualmente.
+Una vez que acceda a la dirección URL, se mostrará una lista de las comprobaciones de estado relacionadas con el agente. Puede determinar si el agente está correctamente activado verificando que se están superando las comprobaciones de estado. Si están fallando, es posible que tenga que cargar el agente manualmente.
 
 Para obtener más información sobre la resolución de problemas con el agente, consulte [Gestión de errores con carga](#handling-errors-with-dynamic-agent-loading) dinámica de agentes a continuación.
 
 >[!NOTE]
 >
->Si agrega `org.apache.commons.collections.functors` a la lista blanca, la comprobación de estado siempre fallará.
+>Si agrega `org.apache.commons.collections.functors` a la lista de permitidos, la comprobación de estado siempre fallará.
 
 ## Gestión de errores con carga de agente dinámico {#handling-errors-with-dynamic-agent-loading}
 
-Si se exponen errores en el registro o los pasos de verificación detectan un problema al cargar el agente, es posible que tenga que cargar el agente manualmente. Esto también se recomienda en caso de que utilice un JRE (Java Runtime Environment) en lugar de un JDK (Java Development Toolkit), ya que las herramientas para la carga dinámica no están disponibles.
+Si se exponen errores en el registro o los pasos de verificación detectan un problema al cargar el agente, es posible que tenga que cargar el agente manualmente. Esto también se recomienda en caso de que utilice un JRE (Java Runtime Entorno) en lugar de un JDK (Java Development Toolkit), ya que las herramientas para la carga dinámica no están disponibles.
 
 Para cargar el agente manualmente, siga las instrucciones siguientes:
 
@@ -134,9 +137,8 @@ Para cargar el agente manualmente, siga las instrucciones siguientes:
 
 1. Detenga y reinicie el JVM;
 
-1. Compruebe de nuevo la activación del agente siguiendo los pasos descritos anteriormente en [Verificación de la activación](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation)del agente.
+1. Vuelva a verificar la activación del agente siguiendo los pasos descritos anteriormente en [Verificación de la Activación](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation)del agente.
 
 ## Otras consideraciones {#other-considerations}
 
 Si está ejecutando un JVM de IBM, consulte la documentación sobre la compatibilidad con la API de conexión de Java en [esta ubicación](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
-
