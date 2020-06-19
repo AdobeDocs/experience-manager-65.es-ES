@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '2190'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ La aplicación y los archivos de datos de los que se debe realizar una copia de 
 Considere los siguientes puntos con respecto al backup y la recuperación:
 
 * Se debe realizar una copia de seguridad de la base de datos antes del repositorio GDS y AEM.
-* Si necesita apagar los nodos de un entorno agrupado en clúster para realizar una copia de seguridad, asegúrese de que los nodos esclavos se cierren antes que el nodo maestro. De lo contrario, puede provocar incoherencias en el clúster o en el servidor. Además, el nodo maestro debe activarse antes que cualquier nodo esclavo.
+* Si necesita desglosar los nodos en un entorno agrupado en clúster para realizar copias de seguridad, asegúrese de que los nodos secundarios se cierran antes que el nodo principal. De lo contrario, puede provocar incoherencias en el clúster o en el servidor. Además, el nodo principal debe activarse antes que cualquier nodo secundario.
 * Para la operación de restauración de un clúster, el servidor de aplicaciones debe detenerse para cada nodo del clúster.
 
 ## Directorio de Almacenamientos de Documento global {#global-document-storage-directory}
@@ -58,7 +61,7 @@ Al seleccionar la opción &quot;Activar el almacenamiento de documento en la bas
 
 ## Repositorio de AEM {#aem-repository}
 
-El repositorio de AEM (crx-repository) se crea si crx-repository está configurado durante la instalación de formularios AEM. La ubicación del directorio crx-repository se determina durante el proceso de instalación de formularios AEM. Se requiere la copia de seguridad y restauración del repositorio de AEM, junto con la base de datos y GDS, para obtener datos coherentes de formularios AEM en formularios AEM. El repositorio de AEM contiene datos para Correspondence Management Solution, Forms Manager y AEM Forms Workspace.
+El repositorio de AEM (crx-repository) se crea si crx-repository está configurado durante la instalación de formularios AEM. La ubicación del directorio crx-repository se determina durante el proceso de instalación de formularios AEM. Se requiere la copia de seguridad y restauración del repositorio de AEM, junto con la base de datos y GDS, para obtener datos coherentes de formularios AEM en formularios AEM. El repositorio de AEM contiene datos para la solución de gestión de correspondencia, el administrador de formularios y el área de trabajo de AEM Forms.
 
 ### Solución de administración de correspondencia {#correspondence-management-solution}
 
@@ -72,17 +75,17 @@ el administrador de formularios optimiza el proceso de actualización, administr
 
 ### Espacio de trabajo de AEM Forms {#html-workspace}
 
-AEM Forms Workspace se ajusta a las funciones del espacio de trabajo de Flex (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más sencillo de usar.
+Espacio de trabajo de AEM Forms coincide con las funciones del espacio de trabajo de Flex (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más fácil de usar.
 
 >[!NOTE]
 >
 >Flex Workspace está en desuso para la versión de formularios AEM.
 
-Permite la administración de tareas en clientes sin Flash Player y Adobe Reader. Facilita la representación de formularios HTML, además de formularios PDF y formularios Flex.
+Permite la administración de tareas en clientes sin Flash Player y Adobe Reader. Facilita la representación de formularios HTML, además de PDF forms y formularios Flex.
 
 ## Base de datos de formularios AEM {#aem-forms-database}
 
-La base de datos de formularios AEM almacena contenido como artefactos de formulario, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos del GDS y del directorio raíz de Almacenamiento de contenido (para Content Services). Las copias de seguridad de la base de datos se pueden realizar en tiempo real sin interrupción del servicio y la recuperación puede realizarse en un punto específico en el tiempo o a un cambio concreto. En esta sección se describe cómo configurar la base de datos para que se pueda realizar una copia de seguridad en tiempo real.
+La base de datos de formularios AEM almacena contenido como artefactos de formularios, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos del GDS y del directorio raíz de Almacenamiento de contenido (para Content Services). Las copias de seguridad de la base de datos se pueden realizar en tiempo real sin interrupción del servicio y la recuperación puede realizarse en un punto específico en el tiempo o a un cambio concreto. En esta sección se describe cómo configurar la base de datos para que se pueda realizar una copia de seguridad en tiempo real.
 
 En un sistema de formularios AEM configurado correctamente, el administrador del sistema y el administrador de la base de datos pueden colaborar fácilmente para recuperar el sistema a un estado coherente y conocido.
 
@@ -136,7 +139,8 @@ Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar su ba
 
 >[!NOTE]
 >
->El modo de registro binario predeterminado para MySQL es &quot;Statement&quot;, que es incompatible con las tablas utilizadas por Content Services (obsoleto). El uso del inicio de sesión binario en este modo predeterminado provoca errores en Content Services (obsoleto). Si el sistema incluye Content Services (obsoleto), utilice el modo de registro &quot;Mixto&quot;. Para habilitar el registro &quot;Mixto&quot;, agregue el siguiente argumento a la carpeta my.ini file:*`binlog_format=mixed log-bin=logname`
+>El modo de registro binario predeterminado para MySQL es &quot;Statement&quot;, que es incompatible con las tablas utilizadas por Content Services (obsoleto). El uso del inicio de sesión binario en este modo predeterminado provoca errores en Content Services (obsoleto). Si el sistema incluye Content Services (obsoleto), utilice el modo de registro &quot;Mixto&quot;. Para habilitar el registro &quot;Mixto&quot;, agregue el siguiente argumento a la carpeta my.ini file:*
+`binlog_format=mixed log-bin=logname`
 
 Puede utilizar la utilidad mysqldump para obtener la copia de seguridad completa de la base de datos. Se requieren backups completos, pero no siempre son convenientes. Producen grandes archivos de backup y tardan tiempo en generarse. Para realizar una copia de seguridad incremental, asegúrese de que inicio el servidor con la opción - `log-bin` como se describe en la sección anterior. Cada vez que el servidor MySQL se reinicia, deja de escribir en el registro binario actual, crea uno nuevo y, a partir de entonces, el nuevo se convierte en el actual. Puede forzar un conmutador manualmente con el `FLUSH LOGS SQL` comando. Después de la primera copia de seguridad completa, las posteriores copias de seguridad incrementales se realizan utilizando la utilidad mysqladmin con el `flush-logs` comando, que crea el siguiente archivo de registro.
 
@@ -151,7 +155,7 @@ log-bin=logname
 
 El directorio raíz de Almacenamiento de contenido contiene el repositorio de Content Services (obsoleto) donde se almacenan todos los documentos, artefactos e índices. Se debe realizar una copia de seguridad del árbol del directorio raíz del Almacenamiento de contenido. En esta sección se describe cómo determinar la ubicación del directorio raíz de Almacenamiento de contenido para entornos independientes y agrupados.
 
-### Ubicación raíz del Almacenamiento de contenido (entorno independiente) {#content-storage-root-location-stand-alone-environment}
+### Ubicación raíz de Almacenamiento de contenido (entorno independiente) {#content-storage-root-location-stand-alone-environment}
 
 El directorio raíz de Almacenamiento de contenido se crea cuando se instalan los servicios de contenido (obsoleto). La ubicación del directorio raíz de Almacenamiento de contenido se determina durante el proceso de instalación de formularios AEM.
 
