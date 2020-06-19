@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 1%
 
 ---
 
@@ -346,6 +349,7 @@ El proceso LCA se ejecuta en el servidor LiveCycle y requiere la dirección del 
    * **Url** del servidor: Dirección URL del servidor LC cuyo servicio Enviar para revisión utiliza el código de controlador de acciones.
    * **Nombre de usuario**: Nombre de usuario administrador del servidor LC
    * **Contraseña**: Contraseña del nombre de usuario del administrador
+
    ![Configuración del SDK de Adobe LiveCycle Client](assets/3_clientsdkconfiguration.png)
 
 #### Instalación de LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
@@ -376,7 +380,7 @@ Proceso requerido de LiveCycle que habilita el proceso de servicio de correo ele
 
 1. Haga clic en **Importar**.
 
-#### Añadir ServiceName en la lista de servicio WhiteListed {#adding-servicename-to-the-whitelisted-service-list}
+#### Añadir ServiceName en la lista de servicio Allowlist {#adding-servicename-to-the-allowlist-service-list}
 
 Mencione en el servidor de AEM los servicios de LiveCycle a los que desea acceder el servidor de AEM.
 
@@ -405,7 +409,7 @@ En este escenario, para que Correspondence Management pueda enviar un correo ele
 
 Para utilizar la API de gestión de correspondencia, descargue el archivo DSCSample.jar (adjunto en este documento como parte de components.zip) y cárguelo en el servidor de LiveCycle. Una vez cargado el archivo DSCSample.jar en el servidor de LiveCycle, el servidor de AEM utiliza el archivo DSCSample.jar para acceder a la API renderletterLetter.
 
-Para obtener más información, consulte [Conexión de formularios AEM con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Para obtener más información, consulte [Conexión de AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Actualice la URL del servidor de AEM en cmsa.properties en DSCSample.jar, que se encuentra en la siguiente ubicación:
 
@@ -417,6 +421,7 @@ Para obtener más información, consulte [Conexión de formularios AEM con Adobe
    * **crx.username**= nombre de usuario de AEM
    * **crx.password**= Contraseña de AEM
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >Cada vez que realice cambios en el servidor, reinicie LiveCycle Server. Para obtener información sobre la creación de su propio componente LiveCycle, consulte [Ampliación del software LiveCycle ES mediante el desarrollo](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)personalizado de DSC.
