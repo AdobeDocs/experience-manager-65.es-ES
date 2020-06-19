@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1029'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ El conector LiveCycle de Adobe Experience Manager (AEM) permite una invocación 
 
 ## Conexión de AEM Server a Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
-AEM LiveCycle Connector forma parte del paquete [de complementos de](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms. Después de instalar el paquete de complementos de AEM Forms, realice los siguientes pasos para agregar detalles de LiveCycle Server a AEM Web Console.
+AEM LiveCycle Connector forma parte del paquete [de complementos](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms. Después de instalar el paquete del complemento AEM Forms, realice los siguientes pasos para agregar detalles de LiveCycle Server a AEM Web Console.
 
 1. En el administrador de configuración de la consola web de AEM, busque el componente de configuración del SDK de Adobe LiveCycle Client.
 1. Haga clic en el componente para editar la dirección URL, el nombre de usuario y la contraseña del servidor de configuración.
@@ -153,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Casi todos los servicios de Documento de LiveCycle requieren autenticación. Puede utilizar cualquiera de las siguientes opciones para el inicio de estos servicios sin proporcionar credenciales explícitas en el código:
 
-### Configuración de lista blanca {#whitelist-configuration}
+### Configuración de lista de permisos {#allowlist-configuration}
 
 La configuración del SDK de LiveCycle Client contiene una configuración sobre los nombres de servicio. Esta configuración es una lista de servicios para los que la lógica de invocación utiliza credenciales de administrador de forma predeterminada. Por ejemplo, si agrega servicios de DirectoryManager (parte de la API de administración de usuarios) a esta lista, cualquier código de cliente puede utilizar directamente el servicio y la capa de invocación pasa automáticamente las credenciales configuradas como parte de la solicitud enviada al servidor de LiveCycle
 
