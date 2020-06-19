@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Los agentes pueden asociar y ejecutar flujos de trabajo de postprocesamiento en 
 
 Para asociar procesos de publicación con cartas o comunicaciones interactivas, primero debe configurar los procesos de publicación. Se pueden ejecutar dos tipos de flujos de trabajo en las cartas enviadas:
 
-1. **Flujo de trabajo de formularios:** Estos son los flujos de trabajo de administración de procesos de AEM Forms en JEE. Instrucciones para configurar el flujo de trabajo de [Forms](#formsworkflow).
+1. **Flujo de trabajo de formularios:** Estos son los AEM Forms en los flujos de trabajo de administración de procesos JEE. Instrucciones para configurar el flujo de trabajo de [Forms](#formsworkflow).
 
 1. **Flujo de trabajo de AEM:** Los flujos de trabajo de AEM también se pueden utilizar como procesos posteriores para las cartas enviadas. Instrucciones para configurar el flujo de trabajo de [AEM](../../forms/using/aem-forms-workflow.md).
 
@@ -35,33 +38,34 @@ Para asociar procesos de publicación con cartas o comunicaciones interactivas, 
 
    ![Administrador de configuración](assets/2configmanager-1.png)
 
-1. En esta página, localice la configuración del SDK del cliente de AEM Forms y amplíela haciendo clic en ella.
-1. En URL de servidor, introduzca el nombre de AEM Forms en el servidor JEE, los detalles de inicio de sesión y, a continuación, haga clic en **Guardar**.
+1. En esta página, localice la configuración del SDK del cliente de AEM Forms y expanda esta configuración haciendo clic en ella.
+1. En URL del servidor, introduzca el nombre de sus AEM Forms en el servidor JEE, los detalles de inicio de sesión y, a continuación, haga clic en **Guardar**.
 
    ![Escriba el nombre del servidor LiveCycle](assets/1cofigmanager.png)
 
 1. Especifique el nombre de usuario y la contraseña.
 1. Asegúrese de que sun.util.calendar se agrega a la Configuración de Deserialization Firewall.
 
-   Vaya a Deserialization Firewall Configuration (Configuración del cortafuegos de deserialización) y, en Whitelisted Clases de prefijos de paquete, agregue sun.util.calendar.
+   Vaya a Deserialization Firewall Configuration (Configuración del cortafuegos de deserialización) y debajo de Allowlist de clases de prefijos de paquete, agregue sun.util.calendar.
 
 1. Ahora los servidores están asignados y los procesos de publicación en AEM Forms en JEE están disponibles en la interfaz de usuario de AEM al crear cartas.
 
    ![Crear pantalla de carta con los procesos de publicación enumerados](assets/0configmanager.png)
 
-1. Para autenticar un proceso/servicio, copie el nombre de un proceso y vuelva a la página de configuración de la consola web de Adobe Experience Manager > Configuración del SDK de cliente de AEM Forms y agregue el proceso como un nuevo servicio.
+1. Para autenticar un proceso/servicio, copie el nombre de un proceso y vuelva a la página Configuraciones de la consola web de Adobe Experience Manager > Configuración del SDK del cliente de AEM Forms y agregue el proceso como un nuevo servicio.
 
    Por ejemplo, si la lista desplegable de la página Propiedades de la carta muestra el nombre del proceso como Flujo de trabajo de formularios -> VálidoCCPostProcess/GuardarXML, agregue un Nombre de servicio como `ValidCCPostProcess/SaveXML`.
 
-1. Para utilizar AEM Forms en flujos de trabajo JEE para el procesamiento posterior, configure los parámetros y resultados necesarios. A continuación se indican los valores predeterminados de los parámetros.
+1. Para utilizar AEM Forms en flujos de trabajo JEE para el postprocesamiento, configure los parámetros y resultados necesarios. A continuación se indican los valores predeterminados de los parámetros.
 
-   Vaya a la página Configuraciones de la consola web de Adobe Experience Manager > Configuraciones **[!UICONTROL de administración de]** correspondencia y configure los parámetros siguientes:
+   Vaya a la página Configuraciones de la consola web de Adobe Experience Manager > Configuraciones **[!UICONTROL de administración de]** correspondencia y configure los siguientes parámetros:
 
    1. **inPDFDoc (parámetro de documento PDF):** Un documento PDF como entrada. Esta entrada contiene la letra procesada como entrada. Los nombres de parámetro indicados son configurables. Se pueden configurar desde las configuraciones de Correspondence Management desde la configuración.
    1. **inXMLDoc (parámetro de datos XML):** Un documento XML como entrada. Esta entrada contiene datos introducidos por el usuario en forma de XML.
    1. **inXDPDoc (parámetro de documento XDP):** Un documento XML como entrada. Esta entrada contiene el diseño subyacente (XDP).
    1. **inAttachmentDocs (parámetro de Documentos de datos adjuntos):** Parámetro de entrada de lista. Esta entrada contiene todos los datos adjuntos como entrada.
    1. **redirectURL (salida de URL de redireccionamiento):** Tipo de salida que indica la dirección URL a la que se redirige.
+
    El flujo de trabajo de los formularios debe tener parámetros de documento PDF o de datos XML como entrada con el mismo nombre que se especifica en Configuraciones **[!UICONTROL de administración de]** correspondencia. Esto es necesario para que el proceso aparezca en la lista desplegable Post Process.
 
 ## Configuración de la instancia de Publish {#settings-on-the-publish-instance}
@@ -118,7 +122,7 @@ En la interfaz de usuario de CCR, complete los siguientes pasos para asociar un 
 1. Toque **Guardar**.
 1. Después de configurar la carta con el proceso de publicación, publique la carta y, opcionalmente, en la instancia de publicación, especifique la URL de procesamiento en el servicio Configuración de AEM DS. Esto garantiza que el proceso posterior se ejecute en la instancia de procesamiento.
 
-## Volver a cargar una instancia de borrador de carta {#reloaddraft}
+## Volver a cargar una instancia de borrador de carta  {#reloaddraft}
 
 Se puede volver a cargar una instancia de borrador en la interfaz de usuario mediante la siguiente URL:
 
