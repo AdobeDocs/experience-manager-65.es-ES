@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ En este procedimiento:
 
 1. En un símbolo del sistema, vaya a *[JAVA HOME]*/bin y escriba el siguiente comando para crear la credencial y el almacén de claves:
 
-   `keytool -genkey -dname "CN=`*Nombre *Host Nombre`, OU=`*Grupo Nombre* `, O=`*Compañía Nombre *`,L=`*Ciudad Nombre* `, S=`*Estado *Código`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`**País&quot; key_passwordkeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Nombre *Host Nombre`, OU=`** Grupo Nombre `, O=`**Compañía Nombre`,L=`** Ciudad Nombre `, S=`**Estado`, C=`Código`-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`*País&quot; key_passwordkeystorename *`.keystore`
 
    >[!NOTE]
    >
@@ -44,7 +47,7 @@ En este procedimiento:
 
 1. Copie *keystorename*.keystore en el `[appserver root]/server/[type]/conf` directorio escribiendo uno de los siguientes comandos:
 
-   * (Windows Single Server) `copy``keystorename.keystore[appserver root]\standalone\configuration`
+   * (Windows Single Server) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
    * (Clúster de Windows Server) copia `keystorename.keystore[appserver root]\domain\configuration`
    * (Linux Single Server) `cp keystorename.keystore [appserver root]/standalone/configuration`
    * (Clúster de servidor Linux) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
@@ -75,7 +78,7 @@ En este procedimiento:
 
 1. Importe el certificado escribiendo el siguiente comando:
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME*`\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Escriba `changeit` como contraseña. Esta contraseña es la contraseña predeterminada para una instalación de Java y es posible que la haya cambiado el administrador del sistema.
 1. Cuando se le pida `Trust this certificate? [no]`:, escriba `yes`. Se muestra la confirmación de &quot;Se agregó el certificado al almacén de claves&quot;.
@@ -123,7 +126,7 @@ En este procedimiento:
    </security-realm>
    ```
 
-   En el nodo maestro del clúster de servidores, en [appserver root]\domain\configuration\domain_&lt;dbname>.xml, busque la sección &lt;server> presente después del siguiente código:
+   En el nodo principal del clúster de servidores, en [appserver root]\domain\configuration\domain_&lt;dbname>.xml, busque la sección &lt;server> presente después del siguiente código:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -139,7 +142,7 @@ En este procedimiento:
    * Para instalaciones llave en mano:
 
       * En el Panel de control de Windows, haga clic en Herramientas administrativas y, a continuación, en Servicios.
-      * Seleccione JBoss para los formularios de Adobe Experience Manager.
+      * Seleccione JBoss para formularios Adobe Experience Manager.
       * Seleccione Acción > Detener.
       * Espere a que el estado del servicio aparezca como detenido.
       * Seleccione Acción > Inicio.
@@ -166,7 +169,7 @@ En este procedimiento:
 
 1. En un símbolo del sistema, vaya a *[JAVA HOME]*/bin y escriba el siguiente comando para crear el almacén de claves y la clave:
 
-   `keytool -genkey -dname "CN=`*Nombre *Host Nombre`, OU=`** Grupo Nombre `, O=`**Compañía Nombre`, L=`** Ciudad Nombre `, S=`**EstadoCódigo`, C=`*Estado&quot;*`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`**País-ContraseñaClavePaísNombreClavePaís`.keystore`
+   `keytool -genkey -dname "CN=`*Nombre *Host Nombre`, OU=`** Grupo Nombre `, O=`**Compañía Nombre`, L=`** Ciudad Nombre `, S=`**EstadoCódigo`, C=`*de*`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`*Estado&quot; País-ContraseñaNombreClave *`.keystore`
 
    >[!NOTE]
    >
@@ -192,7 +195,7 @@ En este procedimiento:
 
 1. En un símbolo del sistema, vaya a *`[JAVA HOME]`*/bin y escriba el siguiente comando para importar la credencial en el almacén de claves:
 
-   `keytool -import -trustcacerts -file`*CACCertificateName *`.crt -keystore`*keystorename*`.keystore`
+   `keytool -import -trustcacerts -file`*CACCertificateName *nombre de`.crt -keystore`*clave* `.keystore`
 
    >[!NOTE]
    >
