@@ -1,8 +1,8 @@
 ---
-title: Plataformas compatibles con AEM Forms en JEE
-seo-title: Plataformas compatibles con AEM Forms en JEE
-description: Lista de los componentes de infraestructura necesarios y admitidos para instalar AEM Forms en JEE
-seo-description: Lista de los componentes de infraestructura necesarios y admitidos para instalar AEM Forms en JEE
+title: Plataformas admitidas para AEM Forms en JEE
+seo-title: Plataformas admitidas para AEM Forms en JEE
+description: Lista de los componentes de infraestructura requeridos y admitidos para la instalación de AEM Forms en JEE
+seo-description: Lista de los componentes de infraestructura requeridos y admitidos para la instalación de AEM Forms en JEE
 uuid: 777f943b-4cb4-444e-a036-8032b9fce5be
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,28 +10,28 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18345e6519169cfceb01ab56821b596e284f3303
+source-git-commit: 5e932c127c74d13f6f46003b20a3ba5f68606c29
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3210'
 ht-degree: 0%
 
 ---
 
 
-# Plataformas compatibles con AEM Forms en JEE{#supported-platforms-for-aem-forms-on-jee}
+# Plataformas admitidas para AEM Forms en JEE{#supported-platforms-for-aem-forms-on-jee}
 
 ## Plataformas compatibles {#supported-platforms}
 
 ### Niveles de soporte {#support-levels}
 
-Los formularios AEM en el servidor JEE se pueden configurar mediante cualquier combinación de sistemas operativos, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico admitidos.
+Los AEM Forms del servidor JEE se pueden configurar mediante cualquier combinación de sistemas operativos admitidos, servidores de aplicaciones, bases de datos, controladores de bases de datos, JDK, servidores LDAP y servidores de correo electrónico.
 
 Este documento lista las plataformas de cliente y servidor admitidas para AEM Forms en JEE. Adobe proporciona varios niveles de asistencia, tanto para las configuraciones recomendadas como para otras configuraciones. El documento también lista otro software compatible y su versión, excepciones, definiciones de parches y política de soporte de parches de software de terceros.
 
 >[!NOTE]
 >
 >* Para obtener una lista completa de las excepciones a las plataformas de servidor admitidas, consulte [Excepciones a las plataformas](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p)de servidor admitidas.
->* AEM Forms en JEE solo admite versiones en inglés, francés, alemán y japonés de los sistemas operativos y las aplicaciones compatibles.
+>* Los AEM Forms de JEE solo admiten versiones en inglés, francés, alemán y japonés de los sistemas operativos y las aplicaciones compatibles.
 >
 
 
@@ -70,20 +70,19 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 
 >[!NOTE]
 >
->Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, la plataforma empresarial de Adobe Experience Manager se está alejando de las implementaciones basadas en servidores de aplicaciones para favorecer implementaciones independientes basadas en OSGi. Adobe sigue admitiendo la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
+>Para ayudar a los clientes AEM Forms a reducir el costo de propiedad, simplificar la arquitectura de implementación y modernizar el stack de desarrollo, la plataforma empresarial Adobe Experience Manager se está alejando de las implementaciones basadas en servidores de aplicaciones para favorecer implementaciones basadas en OSGi independientes. Adobe sigue admitiendo la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
 >
 >Con la versión 6.5, ya no se admiten los componentes de infraestructura que tienen el uso más bajo entre nuestros clientes, como se indica a continuación:
->・ Servidor de aplicaciones Oracle WebLogic
 >Base de datos IBM DB2
 >・ Sistemas operativos IBM AIX y Sun Solaris
 >
->En el caso de nuevas instalaciones, siempre que sea posible, se recomienda implementar AEM Forms en la pila OSGi moderna para aprovechar las últimas innovaciones en cuanto a formularios adaptables adaptables para comunicaciones interactivas con varios canales móviles e integraciones de datos back-end mediante el modelo de datos de formulario.
+>En el caso de nuevas instalaciones, siempre que sea posible, se recomienda implementar AEM Forms en la pila OSGi moderna para aprovechar las últimas innovaciones en cuanto a formularios adaptables adaptables para comunicaciones interactivas móviles con varios canales e integraciones de datos back-end mediante el modelo de datos de formulario.
 >
->Reconocemos que los usuarios existentes deben seguir implementando AEM Forms en la pila JEE. En estos casos, Adobe requiere la implementación de AEM Forms JEE en la infraestructura admitida, tal como se describe en esta documentación. Si va a actualizar a AEM 6.5 Forms y utiliza una plataforma no compatible en la versión anterior de AEM Forms, puede ponerse en contacto con el servicio de asistencia técnica de Adobe para obtener ayuda sobre la actualización a una plataforma admitida.
+>Reconocemos que los usuarios existentes necesitan seguir implementando AEM Forms en la pila JEE. En estos casos, Adobe requiere la implementación de JEE de AEM Forms en la infraestructura admitida, tal como se describe en esta documentación. Si va a actualizar a AEM 6.5 Forms y utiliza una plataforma no compatible en la versión anterior de AEM Forms, puede ponerse en contacto con el servicio de asistencia técnica de Adobe para obtener ayuda sobre la actualización a una plataforma compatible.
 
 ### Máquinas virtuales Java (JVM) {#java-virtual-machines-jvm}
 
-Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutarse, que se proporciona mediante la distribución Java Development Kit (JDK). Adobe Experience Manager funciona con las siguientes versiones de las máquinas virtuales de Java:
+Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutarse, que se proporciona mediante la distribución Java Development Kit (JDK). Adobe Experience Manager funciona con las siguientes versiones de las máquinas virtuales Java:
 
 <table>
  <tbody>
@@ -118,7 +117,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 >[!NOTE]
 >
 >* Se recomienda rastrear los boletines de seguridad del proveedor de Java para garantizar la seguridad de los entornos de producción e instalar las últimas actualizaciones de Java.
->* AEM Forms en JEE solo admite JVM de 64 bits en entornos de producción.
+>* Los AEM Forms de JEE solo admiten JVM de 64 bits en entornos de producción.
 
 
 ### Bases de datos y persistencia de CRX {#databases-and-crx-persistence}
@@ -180,9 +179,9 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 * &#39;File System&#39; incluye el almacenamiento de bloques que es compatible con POSIX. Esto incluye la tecnología de almacenamiento de red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Se recomienda cargar AEM de prueba en combinación con el sistema de archivos de red o remoto.
 * Solo se admite el motor de Almacenamiento MongoDB WiredTiger.
 * El uso compartido de MongoDB no es compatible con AEM.
-* AEM Forms en JEE no admite MySQL para persistencia RDBMK.
+* Los AEM Forms en JEE no admiten MySQL para persistencia RDBMK.
 * El módulo Seguridad de Documento no utiliza el repositorio de contenido. Esto implica que, si solo utiliza Documento Security y no tiene pensado utilizar HTML Workspace, formularios HTML5 o formularios adaptables, no instale Content Repository.
-* AEM Forms en JEE no admite el uso de MySQL para el repositorio de AEM (CRX-Repository) persistente.
+* Los AEM Forms en JEE no admiten el uso de MySQL para el repositorio de AEM (CRX-Repository) persistente.
 
 
 ### Controladores de base de datos {#database-drivers}
@@ -197,12 +196,12 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   <tr>
    <td>MySQL</td>
    <td><p>Conector MySQL/J 5.7</p> <p>mysql-Connector-java-5.1.44-bin.jar(versión 5.1.44)</p> </td>
-   <td><p>Se proporciona con AEM Forms en la instalación de JEE</p> </td>
+   <td><p>Suministrado con AEM Forms en la instalación de JEE</p> </td>
   </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Controlador JDBC de Microsoft® SQL Server 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
-   <td><p>Se proporciona con AEM Forms en la instalación de JEE.</p> </td>
+   <td><p>Se suministra con AEM Forms en la instalación de JEE.</p> </td>
   </tr>
   <tr>
    <td>Oracle</td>
@@ -222,12 +221,17 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td><p><strong>Definiciones de parches admitidas</strong></p> </td>
   </tr>
   <tr>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2)</td>
+   <td>A: Admitido</td>
+   <td>Service Pack y actualizaciones críticas</td>
+  </tr>
+  <tr>
    <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
    <td>A: Admitido</td>
    <td>Service Pack y actualizaciones críticas</td>
   </tr>
   <tr>
-   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup></p> </td>
+   <td><p>Aplicación empresarial Platform (EAP) 7.1.4 de JBoss® <sup>[2] [3] [7]</sup></p> </td>
    <td><p>A: Admitido</p> </td>
    <td><p>Parches y parches acumulativos para la versión EAP admitida</p> </td>
   </tr>
@@ -279,14 +283,14 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 
 #### entorno virtualizado {#virtualized-environment}
 
-Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Sin embargo, si se produce algún problema con AEM Forms en un entorno virtual, intente replicar el problema en un equipo físico. Si el problema persiste en el equipo físico, póngase en contacto con el servicio de asistencia técnica de Adobe para obtener una solución. Para los problemas que no puede replicar en una máquina física, póngase en contacto con el proveedor del entorno virtual.
+Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Sin embargo, si encuentra algún problema con los AEM Forms en un entorno virtual, intente replicar el problema en una máquina física. Si el problema persiste en el equipo físico, póngase en contacto con el servicio de asistencia técnica de Adobe para obtener una solución. Para los problemas que no puede replicar en una máquina física, póngase en contacto con el proveedor del entorno virtual.
 
 #### entornos de desarrollo {#development-environments}
 
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Plataforma (versión base)</strong></p> </th>
+   <th><p><strong>Platform (versión base)</strong></p> </th>
    <th>Nivel de asistencia</th>
    <th><p><strong>Definiciones de parches admitidas</strong></p> </th>
   </tr>
@@ -300,25 +304,25 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
 
 ### Excepciones a plataformas de servidor admitidas {#exceptions-to-supported-server-platforms}
 
-Tenga en cuenta las siguientes excepciones al elegir una plataforma para configurar los formularios AEM en el servidor JEE.
+Tenga en cuenta las siguientes excepciones al elegir una plataforma para configurar sus AEM Forms en el servidor JEE.
 
-1. AEM Forms en JEE no admite IBM® WebSphere® con MySQL.
-1. AEM Forms en JEE no es compatible y JBoss en SUSE Linux Enterprise Server 12. Sólo IBM WebSphere es compatible con SUSE Linux Enterprise Server 12.
-1. AEM Forms en JEE no admite ningún JDK con JBoss® excepto Oracle Java™ SE.
-1. AEM Forms en JEE no admite ningún JDK con IBM® WebSphere® excepto IBM® JDK.
-1. El repositorio de CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio de CRX. Sin embargo, en AEM Forms en entorno JEE, puede utilizar MongoMK con el repositorio CRX y una base de datos relacional admitida con el servidor de aplicaciones.
-1. AEM Forms en JEE no admite el servidor de aplicaciones WebSphere en CentOS.
-1. AEM Forms en JEE no admite el control de acceso basado en roles JBoss (RBAC).
+1. Los AEM Forms en JEE no admiten IBM® WebSphere® con MySQL.
+1. Los AEM Forms en JEE no admiten ni JBoss en SUSE Linux Enterprise Server 12. Sólo IBM WebSphere es compatible con SUSE Linux Enterprise Server 12.
+1. Los AEM Forms en JEE no admiten ningún JDK con JBoss® excepto Oracle Java™ SE.
+1. Los AEM Forms en JEE no admiten ningún JDK con IBM® WebSphere® que no sea IBM® JDK.
+1. El repositorio de CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio de CRX. Sin embargo, en un AEM Forms de entorno JEE, puede utilizar MongoMK con el repositorio CRX y una base de datos relacional admitida con el servidor de aplicaciones.
+1. Los AEM Forms en JEE no admiten el servidor de aplicaciones WebSphere en CentOS.
+1. Los AEM Forms en JEE no admiten el control de acceso basado en roles JBoss (RBAC).
 
-Además, tenga en cuenta los siguientes puntos a la hora de elegir el software para Adobe AEM Forms en implementaciones JEE:
+Además, tenga en cuenta los siguientes puntos a la hora de elegir software para AEM Forms de Adobe en implementaciones JEE:
 
-* AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones además de la versión principal y secundaria del software compatible. Sin embargo, la actualización a la siguiente versión principal o secundaria no se admite a menos que se especifique lo contrario.
+* Los AEM Forms de JEE admiten actualizaciones, parches y paquetes de correcciones además de la versión principal y secundaria especificada del software admitido. Sin embargo, la actualización a la siguiente versión principal o secundaria no se admite a menos que se especifique lo contrario.
 * Las instalaciones basadas en clústeres no admiten la persistencia TarMK. Para obtener información sobre la persistencia admitida, consulte [Selección de un tipo de persistencia para una instalación](/help/forms/using/choosing-persistence-type-for-aem-forms.md)de AEM Forms.
-* AEM Forms en JEE es compatible con varios programas de terceros según nuestra política [de soporte de software de](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p)terceros.
-* AEM Forms en JEE admite plataformas según la compatibilidad proporcionada por proveedores externos. Es posible que proveedores externos no permitan algunas combinaciones. Por ejemplo, muchos proveedores no han certificado sus servidores de aplicaciones con Oracle. Como resultado, AEM Forms en JEE tampoco admite estas combinaciones. Para asegurarse de elegir las versiones de software admitidas, compruebe también la matriz de soporte de los proveedores de terceros.
-* AEM Forms en JEE no admite TarMK Cold Standby.
-* AEM Forms en JEE no admite la agrupación en clúster vertical.
-* AEM Forms en JEE no admite la base de datos MySQL en un entorno agrupado.
+* Los AEM Forms de JEE admiten varios programas de terceros según nuestra política [de soporte de software de](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p)terceros.
+* Los AEM Forms de JEE admiten plataformas según la compatibilidad proporcionada por proveedores externos. Es posible que proveedores externos no permitan algunas combinaciones. Por ejemplo, muchos proveedores no han certificado sus servidores de aplicaciones con Oracle. Como resultado, los AEM Forms en JEE tampoco admiten estas combinaciones. Para asegurarse de elegir las versiones de software admitidas, compruebe también la matriz de soporte de los proveedores de terceros.
+* Los AEM Forms en JEE no admiten TarMK Cold Standby.
+* Los AEM Forms en JEE no admiten la agrupación vertical.
+* Los AEM Forms en JEE no admiten la base de datos MySQL en un entorno agrupado.
 * Para obtener la lista de las plataformas eliminadas o actualizadas, consulte documento de resumen [de las nuevas funciones de](../../forms/using/whats-new.md) AEM 6.5 Forms.
 
 ### Servidores LDAP (opcional) {#ldap-servers-optional}
@@ -442,7 +446,7 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 >* PDF Generator no admite Microsoft Office 365.
 >* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux.
 >* Las funciones OCR PDF, Optimizar PDF y Exportar PDF solo son compatibles con Windows.
->* Una versión de Acrobat se incluye con AEM Forms para activar la funcionalidad de PDF Generator. Solo se debe acceder a la versión compilada mediante programación con AEM Forms, durante el período de vigencia de la licencia de AEM Forms, para su uso con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>* Una versión de Acrobat se incluye con AEM Forms para activar la funcionalidad de generador de PDF. Sólo se debe acceder a la versión compilada mediante programación con AEM Forms, durante el período de vigencia de la licencia de AEM Forms, para su uso con el generador de PDF para AEM Forms. Para obtener más información, consulte la descripción del producto AEM Forms según su implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o Servicios [administrados](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
    >
    >
 * El servicio Generator de PDF no admite Microsoft Windows 10.
@@ -492,13 +496,13 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
  </tbody>
 </table>
 
-Para obtener más información, consulte:
+Para obtener información adicional, consulte:
 
-* [Requisitos del sistema para una implementación de AEM Forms en JEE de un solo servidor](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Requisitos del sistema para una implementación agrupada de AEM Forms en JEE
+* [Requisitos del sistema para AEM Forms de un solo servidor en implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
+* [Requisitos del sistema para AEM Forms agrupados en implementación JEE
    ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
-## Clientes compatibles con AEM Forms en JEE {#supported-clients-for-aem-forms-on-jee}
+## Clientes admitidos para AEM Forms en JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
 
@@ -524,7 +528,7 @@ Para obtener más información, consulte:
 * Memoria para ejecutar Workbench: 2 GB de RAM
 * Requisitos de hardware: Procesador Intel® Pentium® 4 o AMD equivalente, 1 GHz
 * Resolución mínima de pantalla de 1024 X 768 píxeles o buena con color de 16 bits o superior
-* Conexión de red TCP/IPv4 o TCP/IPv6 a AEM Forms en el servidor JEE
+* Conexión de red TCP/IPv4 o TCP/IPv6 a los AEM Forms del servidor JEE
 * Debe tener privilegios de administrador para instalar Workbench en Windows. Si va a realizar la instalación con una cuenta que no sea de administrador, el programa de instalación le pedirá las credenciales de una cuenta adecuada.
 
 ### Diseñador {#designer}
@@ -667,12 +671,12 @@ Para obtener más información, consulte:
 
 #### Compatibilidad con dispositivos móviles {#mobile-device-support}
 
-La aplicación AEM Forms está disponible en las plataformas siguientes:
+La aplicación AEM Forms está disponible en las siguientes plataformas:
 
 | **Plataforma** | **Dispositivos admitidos** |
 |---|---|
 | Apple iOS | Apple iPhone, iPad, iPad Air y iPad mini con iOS 11 y posterior. |
-| Google Android | Android 5.1 y posterior. La aplicación AEM Forms está certificada en tabletas Samsung Galaxy de 7 y 10 pulgadas y en teléfonos inteligentes populares. |
+| Google Android | Android 5.1 y posterior. La aplicación para AEM Forms está certificada en tabletas Samsung Galaxy de 7 y 10 pulgadas y en teléfonos inteligentes populares. |
 | Microsoft Windows | Dispositivos Microsoft Surface, tabletas, portátiles y equipos de escritorio que ejecutan el sistema operativo Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
@@ -700,20 +704,20 @@ Haga clic [aquí](https://www.adobe.com/products/livecycle/rightsmanagement/exte
 
 ### Excepciones a la asistencia al cliente {#exceptions-to-client-support}
 
-AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones además de la versión principal y secundaria del software compatible. Sin embargo, la actualización a la siguiente versión principal o secundaria no se admite a menos que se especifique lo contrario.
+Los AEM Forms de JEE admiten actualizaciones, parches y paquetes de correcciones además de la versión principal y secundaria especificada del software admitido. Sin embargo, la actualización a la siguiente versión principal o secundaria no se admite a menos que se especifique lo contrario.
 
 ## Política de soporte de parches de terceros {#third-party-patch-support-policy}
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección &quot;Requisitos del sistema&quot; de sus respectivos documentos de productos. Puede acceder a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
+Los requisitos de software de terceros para AEM Forms en JEE están documentados en la sección &quot;Requisitos del sistema&quot; de sus respectivos documentos de productos. Puede acceder a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
-Los formularios AEM Forms en plataformas de referencia de terceros de JEE indican el nivel de parche específico de la infraestructura de terceros que se encontraba vigente durante el desarrollo y la publicación de AEM Forms en JEE, y desde el nivel mínimo de parche/Service Pack de la infraestructura admitida por esa versión de AEM Forms en JEE.
+Los AEM Forms de las plataformas de referencia de terceros de JEE indican el nivel de parche específico de la infraestructura de terceros que se encontraba vigente durante el desarrollo y la liberación de AEM Forms en JEE, y desde el nivel mínimo de parche/Service Pack de la infraestructura soportada por esa versión de AEM Forms en JEE.
 
-Adobe admite parches urgentes o recomendados emitidos por proveedores de terceros en el momento de su lanzamiento, suponiendo que los proveedores de terceros garantizan la compatibilidad con versiones anteriores compatibles con AEM Forms en JEE. Adobe solo admitirá parches publicados después del nivel mínimo de parche indicado en la documentación de AEM Forms en JEE.
+Adobe admite parches urgentes o recomendados emitidos por proveedores externos en el momento de su lanzamiento, suponiendo que los proveedores de terceros garantizan la compatibilidad con versiones anteriores compatibles con las versiones compatibles con AEM Forms de JEE. Adobe solo admitirá parches publicados después del nivel mínimo de parche indicado en los AEM Forms de la documentación de JEE.
 
 En algunos casos, Adobe no admite actualizaciones de terceros que cambien la funcionalidad principal y, por tanto, no admite compatibilidad total con versiones anteriores. Para obtener más información sobre las actualizaciones admitidas, consulte Definiciones [de parches](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) admitidas para productos de proveedores específicos y los tipos de parches que admite Adobe.
 
-En circunstancias ajenas al control de Adobe, los parches de terceros que reclaman compatibilidad con versiones anteriores pueden tener un impacto negativo en los productos o entornos de los clientes de Adobe. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe trabajará con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea a través de programas de asistencia de Adobe normales o de terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que sea compatible con Adobe funcione tal como lo ha documentado el proveedor o con AEM Forms en JEE.
+En circunstancias ajenas al control de Adobe, los parches de terceros que reclaman compatibilidad con versiones anteriores pueden tener un impacto negativo en los productos o entornos de los clientes de Adobe. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe trabajará con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea a través de programas de asistencia de Adobe normales o de terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que sea compatible con Adobe funcione según lo documentado por el proveedor o con AEM Forms en JEE.
 
-Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros admitidas por una versión de AEM Forms en JEE y sus definiciones de parches admitidas en cualquier momento.
+Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros admitidas por un AEM Forms en la versión JEE y sus definiciones de parches admitidas en cualquier momento.
 
 También puede encontrar información adicional sobre los parches de terceros si busca artículos de la base de conocimiento relacionados con su producto en el sitio de asistencia técnica de Adobe Enterprise.
