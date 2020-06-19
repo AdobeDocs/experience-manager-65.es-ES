@@ -9,22 +9,25 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '979'
+ht-degree: 0%
 
 ---
 
 
 # Incrustar formulario adaptable en una página web externa{#embed-adaptive-form-in-external-web-page}
 
-Puede [incrustar formularios adaptables en una página](/help/forms/using/embed-adaptive-form-aem-sites.md) Sitios de AEM o en una página web alojada fuera de AEM. El formulario adaptable incrustado es totalmente funcional y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+Puede [incrustar formularios adaptables en una página](/help/forms/using/embed-adaptive-form-aem-sites.md) de AEM Sites o en una página web alojada fuera de AEM. El formulario adaptable incrustado es totalmente funcional y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 
 ## Requisitos previos {#prerequisites}
 
 Realice los siguientes pasos antes de incrustar un formulario adaptable en un sitio web externo
 
-* Publique el formulario adaptable que se va a incrustar en la instancia de publicación de AEM Forms Server.
+* Publique el formulario adaptable que se va a incrustar en la instancia de publicación del servidor de AEM Forms.
 * Cree o identifique una página web en el sitio web para alojar el formulario adaptable. Asegúrese de que la página web pueda [leer archivos jQuery desde una CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o tenga una copia local de jQuery incorporada. jQuery es necesario para procesar un formulario adaptable.
-* Cuando el servidor AEM y la página web se encuentren en distintos dominios, realice los pasos que se indican en la sección , [habilite los formularios AEM para que ofrezcan formularios adaptables a un sitio](#cross-site)de varios dominios.
+* Cuando el servidor de AEM y la página web se encuentren en distintos dominios, realice los pasos que se enumeran en la sección [para permitir a los AEM Forms proporcionar formularios adaptables a un sitio](#cross-site)de varios dominios.
 
 ## Incrustar formulario adaptable {#embed-adaptive-form}
 
@@ -148,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Si configura cualquier otra topología, asegúrese de incluir en la lista blanca las direcciones URL de envío, rellenado previo y otras en la capa del distribuidor.
+>Si configura cualquier otra topología, asegúrese de agregar las direcciones URL de envío, rellenado previo y otras a la lista de permitidas en la capa del despachante.
 
 ## Best practices {#best-practices}
 
@@ -160,7 +163,7 @@ Al incrustar un formulario adaptable en una página web, tenga en cuenta las sig
 * Utilice `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API para descargar el formulario adaptable desde HTML DOM.
 * Configure el encabezado access-control-origen al enviar la respuesta desde el servidor AEM.
 
-## Permitir que AEM Forms muestre formularios adaptables a un sitio de varios dominios {#cross-site}
+## Permitir que los AEM Forms proporcionen formularios adaptables a un sitio entre dominios {#cross-site}
 
 1. En la instancia de creación de AEM, vaya a AEM Web Console Configuration Manager en `https://'[server]:[port]'/system/console/configMgr`.
 1. Busque y abra la configuración del filtro **de Remitente del reenvío Sling de** Apache.
