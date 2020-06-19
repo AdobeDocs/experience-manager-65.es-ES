@@ -1,6 +1,6 @@
 ---
-title: Estrategia para backup y restore en un entorno en clúster
-seo-title: Estrategia para backup y restore en un entorno en clúster
+title: Estrategia para backup y restore en un entorno agrupado
+seo-title: Estrategia para backup y restore en un entorno agrupado
 description: Si la implementación de formularios AEM almacena datos personalizados adicionales en una base de datos diferente, debe implementar una estrategia para realizar una copia de seguridad de estos datos, asegurándose de que se mantengan sincronizados con los datos de formularios AEM.
 seo-description: Si la implementación de formularios AEM almacena datos personalizados adicionales en una base de datos diferente, debe implementar una estrategia para realizar una copia de seguridad de estos datos, asegurándose de que se mantengan sincronizados con los datos de formularios AEM.
 uuid: c29b989c-30ed-4a8e-bab8-9b7746291a33
@@ -10,12 +10,15 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 0%
 
 ---
 
 
-# Estrategia para backup y restore en un entorno en clúster {#strategy-for-backup-and-restore-in-a-clustered-environment}
+# Estrategia para backup y restore en un entorno agrupado {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
 >
@@ -36,9 +39,9 @@ Debe realizar una copia de seguridad de las siguientes partes del sistema de for
 En este tema se analizan las siguientes estrategias para realizar copias de seguridad de cualquier entorno agrupado de formularios AEM:
 
 * Backup sin conexión con tiempo de inactividad
-* Backup sin conexión sin tiempo de inactividad (copia de seguridad de un nodo esclavo que está apagado)
+* Backup sin conexión sin tiempo de inactividad (copia de seguridad de un nodo secundario que está apagado)
 * Backup en línea sin downtime pero con retraso en la respuesta
-* Realizar una copia de seguridad del archivo de propiedades de Bootstrap
+* Realice una copia de seguridad del archivo de propiedades de Bootstrap
 
 ### Backup sin conexión con tiempo de inactividad {#offline-backup-with-downtime}
 
@@ -47,12 +50,12 @@ En este tema se analizan las siguientes estrategias para realizar copias de segu
 1. Realice los siguientes pasos para realizar una copia de seguridad del repositorio de AEM sin conexión:
 
    1. Para cada nodo de clúster, haga una copia de seguridad del archivo que contiene el identificador del nodo de clúster.
-   1. Realice una copia de seguridad de todos los archivos de cualquier nodo de clúster esclavo, incluidos los subdirectorios.
+   1. Realice una copia de seguridad de todos los archivos de cualquier nodo de clúster secundario, incluidos los subdirectorios.
    1. Haga una copia de seguridad del identificador del sistema/repositorio de cada nodo de clúster por separado.
    Para ver los pasos detallados, consulte [Copia de seguridad y restauración](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Realice una copia de seguridad de cualquier otro dato, como las fuentes del cliente.
-1. Vuelva a iniciar el clúster.
+1. Vuelva a poner en Inicio el clúster.
 
 ### Backup sin conexión sin downtime {#offline-backup-with-no-downtime}
 
@@ -60,17 +63,17 @@ En este tema se analizan las siguientes estrategias para realizar copias de segu
 
    Tenga en cuenta que tenemos que dejar el modo de copia de seguridad móvil después de una recuperación.
 
-1. Cierre cualquiera de los nodos esclavos del clúster con respecto a AEM. (consulte [Inicio y parada de servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Cierre cualquiera de los nodos secundarios del clúster con respecto a AEM. (consulte [Inicio y parada de servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. En cualquier nodo, realice una copia de seguridad de la base de datos, GDS y Conectores. (consulte [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Realice los siguientes pasos para realizar una copia de seguridad del repositorio de AEM sin conexión:
 
    1. Para cada nodo de clúster, haga una copia de seguridad del archivo que contiene el identificador del nodo de clúster.
-   1. Realice una copia de seguridad de todos los archivos de cualquier nodo de clúster esclavo, incluidos los subdirectorios.
+   1. Realice una copia de seguridad de todos los archivos de cualquier nodo de clúster secundario, incluidos los subdirectorios.
    1. Realice una copia de seguridad de repository/system.id de cada nodo de clúster por separado.
    Para ver los pasos detallados, consulte [Copia de seguridad y restauración](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Realice una copia de seguridad de cualquier otro dato, como las fuentes del cliente.
-1. Vuelva a iniciar el clúster.
+1. Vuelva a poner en Inicio el clúster.
 
 ### Backup en línea sin downtime pero con retraso en la respuesta {#online-backup-with-no-downtime-but-delay-in-response}
 
@@ -78,26 +81,26 @@ En este tema se analizan las siguientes estrategias para realizar copias de segu
 
    Tenga en cuenta que debe dejar el modo de copia de seguridad móvil después de una recuperación.
 
-1. Cierre cualquiera de los nodos esclavos del clúster con respecto a AEM. (consulte [Inicio y parada de servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Cierre cualquiera de los nodos secundarios del clúster con respecto a AEM. (consulte [Inicio y parada de servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. En cualquier nodo, realice una copia de seguridad de la base de datos, GDS y Conectores. (consulte [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Realice los siguientes pasos para realizar una copia de seguridad del repositorio de AEM en línea:
 
    1. Para cada nodo de clúster, realice una copia de seguridad del archivo que contiene el cluster_node.id.
    1. Realice una copia de seguridad de repository/system.id de cada nodo de clúster por separado.
-   1. En cualquier nodo esclavo, realice una copia de seguridad en línea del repositorio para ver los pasos detallados en Copia de seguridad en línea.
+   1. En cualquier nodo secundario, realice una copia de seguridad en línea del repositorio para ver los pasos detallados en Copia de seguridad en línea.
 
 1. Realice una copia de seguridad de cualquier otro dato, como las fuentes del cliente.
-1. Vuelva a iniciar el clúster.
+1. Vuelva a poner en Inicio el clúster.
 
-### Realizar una copia de seguridad del archivo de propiedades de Bootstrap {#back-up-the-bootstrap-properties-file}
+### Realice una copia de seguridad del archivo de propiedades de Bootstrap {#back-up-the-bootstrap-properties-file}
 
-Al crear un clúster de AEM, se crea un archivo de propiedades en el servidor de aplicaciones para todos los nodos esclavos. Se recomienda realizar una copia de seguridad del archivo de propiedades de Bootstrap. Puede encontrar el archivo en la siguiente ubicación del servidor de aplicaciones:
+Al crear un clúster de AEM, se crea un archivo de propiedades en el servidor de aplicaciones para todos los nodos secundarios. Se recomienda realizar una copia de seguridad del archivo de propiedades de Bootstrap. Puede encontrar el archivo en la siguiente ubicación del servidor de aplicaciones:
 
 * JBoss: en el directorio BIN
 * WebLogic: en el directorio de dominios
-* WebSphere: en el directorio de perfiles
+* WebSphere: en el directorio de perfil
 
-Debe realizar una copia de seguridad del archivo para el escenario de recuperación ante desastres del nodo esclavo de AEM y reemplazarlo en la ubicación especificada en el servidor de aplicaciones, si se restaura.
+Debe realizar una copia de seguridad del archivo para el escenario de recuperación ante desastres del nodo secundario de AEM y reemplazarlo en la ubicación especificada en el servidor de aplicaciones, si se restaura.
 
 ## Recuperación en un entorno agrupado {#recovery-in-a-clustered-environment}
 
@@ -113,7 +116,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
 
    >[!NOTE]
    >
-   >Si el nodo dañado es un nodo maestro de AEM, cierre todo el nodo del clúster.
+   >Si el nodo dañado es un nodo principal de AEM, cierre todo el nodo del clúster.
 
 1. Vuelva a crear el sistema físico a partir de una imagen del sistema.
 1. Aplique parches o actualizaciones a los formularios AEM que se aplicaron desde que se creó la imagen. Esta información se registró durante el procedimiento de copia de seguridad. Los formularios AEM deben recuperarse al mismo nivel de parche que cuando se realizó la copia de seguridad del sistema.
@@ -137,9 +140,9 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
 >
 >Considere los siguientes puntos:
 
-* Si el nodo en el que se produjo el error era un nodo maestro de AEM, copie todo el contenido de la carpeta del repositorio esclavo (crx-repository\crx.0000, donde 0000 puede ser cualquier dígito) en la carpeta crx-repository\ y elimine la carpeta del repositorio esclavo.
-* Antes de reiniciar cualquier nodo de clúster, asegúrese de eliminar el repositorio /clustered.txt del nodo maestro.
-* Asegúrese de que el nodo maestro se inicia primero y, una vez que esté completamente activo, inicie otros nodos.
+* Si el nodo en el que se produjo el error era un nodo principal de AEM, copie todo el contenido de la carpeta del repositorio secundario (crx-repository\crx.0000, donde 0000 puede ser cualquier dígito) en la carpeta crx-repository\ y elimine la carpeta del repositorio secundario.
+* Antes de reiniciar cualquier nodo de clúster, asegúrese de eliminar el repositorio /clustered.txt del nodo principal.
+* Asegúrese de que el nodo principal se inicia primero y, una vez que se ha activado completamente, inicio otros nodos.
 
 ### Restauración de todo el clúster {#restoring-the-entire-cluster}
 
@@ -167,13 +170,13 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
 >
 >Considere los siguientes puntos:
 
-* Si el nodo con error era un nodo maestro de AEM, copie todo el contenido de la carpeta del repositorio esclavo (parece crx-repository\crx.0000, donde 0000 puede ser cualquier dígito) en la carpeta crx-repository\.
-* Antes de reiniciar cualquier nodo de clúster, asegúrese de eliminar el repositorio /clustered.txt del nodo maestro.
-* Asegúrese de que el nodo maestro se inicia primero y, una vez que esté completamente activo, inicie otros nodos.
+* Si el nodo en el que se ha producido el error era un nodo principal de AEM, copie todo el contenido de la carpeta del repositorio secundario (parece crx-repository\crx.0000, donde 0000 puede ser cualquier dígito) en la carpeta crx-repository\ repositorio.
+* Antes de reiniciar cualquier nodo de clúster, asegúrese de eliminar el repositorio /clustered.txt del nodo principal.
+* Asegúrese de que el nodo principal se inicia primero y, una vez que se ha activado completamente, inicio otros nodos.
 
 ## Haga una copia de seguridad y restaure el nodo de publicación de la solución Correspondence Management {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-El nodo editor no tiene ninguna relación maestro-esclavo en un entorno agrupado. Puede realizar una copia de seguridad de cualquier nodo de Publisher siguiendo [Copia de seguridad y Restauración](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+El nodo editor no tiene ninguna relación primaria-secundaria en un entorno agrupado. Puede realizar una copia de seguridad de cualquier nodo de Publisher siguiendo [Copia de seguridad y Restauración](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 ### Recuperar un nodo de editor único {#recover-a-single-publisher-node}
 
@@ -184,5 +187,5 @@ El nodo editor no tiene ninguna relación maestro-esclavo en un entorno agrupado
 
 1. Cierre el clúster.
 1. Restaure el nodo Publicar mediante [Restauración de la copia de seguridad](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring de la copia de seguridad).
-1. Inicie el nodo maestro seguido del nodo esclavo del clúster de creación.
+1. Inicio el nodo principal seguido del nodo secundario del clúster de creación.
 
