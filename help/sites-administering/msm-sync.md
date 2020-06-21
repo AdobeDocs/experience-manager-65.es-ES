@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 78%
 
 ---
 
@@ -141,7 +144,7 @@ En la siguiente tabla se enumeran las acciones de sincronización que se instala
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>Actualiza el contenido de la Live Copy con los cambios del origen. <a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio</a> Acción de actualización de contenido MSM de CQ para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se van a excluir. <br /> </td>
+   <td>Actualiza el contenido de la Live Copy con los cambios del origen. <a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio</a> Acción de actualización de contenido de MSM de CQ para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que desea excluir. <br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -284,18 +287,18 @@ En la tabla siguiente se describen las propiedades que se pueden configurar:
   </tr>
   <tr>
    <td><p>Tipos de nodos excluidos</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
-   <td>Expresión regular que coincide con los tipos de nodo que se excluirán de la acción de sincronización.</td>
+   <td>Una expresión regular que coincide con los tipos de nodo que se excluirán de la acción de sincronización.</td>
   </tr>
   <tr>
    <td><p>Elementos de párrafo excluidos</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
-   <td>Expresión regular que coincide con los elementos de párrafo que se excluirán de la acción de sincronización.</td>
+   <td>expresión regular que coincide con los elementos de párrafo que se excluirán de la acción de sincronización.</td>
   </tr>
   <tr>
    <td><p>Propiedades de página excluidas</p> <p>cq.wcm.msm.action.excludedprops</p> </td>
-   <td>Expresión regular que coincide con las propiedades de página que se excluirán de la acción de sincronización.</td>
+   <td>expresión regular que coincide con las propiedades de página que se excluirán de la acción de sincronización.</td>
   </tr>
   <tr>
-   <td><p>Tipos de nodos mixtos omitidos</p> <p>cq.wcm.msm.action.ignoreMixin</p> </td>
+   <td><p>Tipos de nodos mixtos omitidos</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
    <td>Solo está disponible para la acción de actualización de contenido de MSM de CQ. Expresión regular que coincide con los nombres de los tipos de nodos de Mixin que se van a excluir de la acción de sincronización.</td>
   </tr>
  </tbody>
@@ -323,12 +326,6 @@ Por ejemplo, si quiere que el **título** de la página se incluya en los cambio
 
 `jcr:(?!(title)$).*`
 
->[!CAUTION]
->
->Antes de la versión 5.5 de SP2, las propiedades de la página excluidas se configuraron en la consola del sistema en el **administrador de lanzamientos CQ WCM por día**. Con la versión 5.5 de SP2 y otras versiones posteriores, la configuración de las propiedades de página excluidas en ese panel se omiten. Property exclusion on rollout is configured as described above, in **CQ MSM Content Update Action**.
->
->Por lo tanto, si ha ajustado manualmente esta configuración en una instalación anterior a la versión 5.5 de SP2 y actualiza a esa versión o a una versión posterior, *debe transferir manualmente esta configuración del antiguo panel de configuración al nuevo*.
-
 ### Configuración de la sincronización de actualización de referencias {#configuring-synchronization-for-updating-references}
 
 Puede configurar varios servicios de OSGi que admitan las acciones de sincronización correspondientes relacionadas con la actualización de referencias.
@@ -344,8 +341,8 @@ En la siguiente tabla se enumeran las acciones de sincronización para las que s
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><p>Actualizar referencia en LiveCopies anidadas</p> <p>cq.wcm.msm.impl.action.refercesupdate.prop_updateNested</p> </td>
-   <td>Solo disponible para la acción de actualización de referencias de MSM de CQ. Seleccione esta opción (consola web) o establezca esta propiedad booleana en true (configuración del repositorio) para reemplazar las referencias que se dirigen a cualquier recurso que se encuentre dentro de la rama superior de LiveCopy.</td>
+   <td><p>Actualizar referencia en LiveCopies anidadas</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_updateNested</p> </td>
+   <td>Solo disponible para la acción de actualización de referencias de MSM de CQ. Seleccione esta opción (consola web) o establezca esta propiedad booleana en true (configuración del repositorio) para reemplazar las referencias que destinatario cualquier recurso que se encuentre dentro de la rama de la parte superior de LiveCopy.</td>
   </tr>
   <tr>
    <td><p>Actualizar páginas de referencia</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td>
@@ -362,8 +359,8 @@ En la siguiente lista de ubicaciones en la que se pueden especificar las opcione
 
 * **[Propiedades de la página de Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):**cuando una página de Live Copy está configurada para utilizar una o varias opciones de configuración de lanzamiento, MSM utiliza dichas opciones de configuración.
 * **[Propiedades de la página de modelo](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):**cuando una página de Live Copy se basa en un modelo y la página de Live Copy no usa una configuración de lanzamiento, se utiliza la configuración de lanzamiento asociada a la página de origen del modelo.
-* **** Propiedades de la página principal de Live Copy: Cuando ni la página de Live Copy ni la página de origen del modelo están configuradas con una configuración de implementación, se utiliza la configuración de implementación que se aplica a la página principal de la página de Live Copy.
-* **[](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)Sistema predeterminado **: Cuando no se puede determinar la configuración de implementación de la página principal de la Live Copy, se utiliza la configuración de implementación predeterminada del sistema.
+* **Propiedades de la página principal de Live Copy:** Cuando ni la página de Live Copy ni la página de origen del modelo están configuradas con una configuración de implementación, se utiliza la configuración de implementación que se aplica a la página principal de la página de Live Copy.
+* **[Sistema predeterminado](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):**Cuando no se puede determinar la configuración de implementación de la página principal de la Live Copy, se utiliza la configuración de implementación predeterminada del sistema.
 
 Por ejemplo, un modelo utiliza el sitio de referencia We.Retail como contenido de origen. Se crea un sitio a partir del modelo. Cada elemento de la lista siguiente describe un escenario diferente respecto al uso de las opciones de configuración de lanzamiento:
 
@@ -411,7 +408,8 @@ Tenga en cuenta que las páginas secundarias de la página de modelo heredan la 
 
 Especifique una configuración de lanzamiento para usar como valor predeterminado del sistema. Para especificar el valor predeterminado, configure el servicio de OSGi:
 
-* **Administrador de relaciones dinámicas de CQ WCM por día**; el servicio PID es `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Administrador de relaciones dinámicas de CQ WCM por día**; el servicio PID es 
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
