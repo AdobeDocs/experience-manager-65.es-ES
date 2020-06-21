@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: d01b36770ea1cc7f8d780c49bf8c2af70915c553
+source-git-commit: 49b18b780c87501dcb2d9a00930da8eb5e51cff2
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 2%
 
 ---
 
@@ -27,21 +30,21 @@ Para obtener una descripción general de las funciones de traducción de conteni
 
 ## Conexión a un Proveedor de servicio de traducción {#connecting-to-a-translation-service-provider}
 
-Cree una configuración de nube que conecte AEM con su proveedor de servicio de traducción. AEM incluye la capacidad de conectarse a Microsoft Translator de forma predeterminada. Para otros proveedores de traducción, descargue el paquete de conector desde Uso compartido de [paquetes](/help/sites-administering/package-manager.md#package-share).
-Los siguientes proveedores de traducción proporcionan una implementación de la nueva API para los proyectos de traducción. Vínculos para obtener más información sobre la integración y cómo descargar desde Package Share:
+Cree una configuración de nube que conecte AEM con su proveedor de servicio de traducción. AEM incluye la capacidad de conectarse a Microsoft Translator de forma predeterminada.
+Los siguientes proveedores de traducción proporcionan una implementación de la nueva API para los proyectos de traducción. Vínculos para obtener más información sobre la integración:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
-* [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (no en PackageShare, póngase en contacto directamente con el proveedor)
-* [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
-* [Palabras clave](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
-* [CrossLang NV](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/crosslang-xtm-for-adobe-experience-manager.html)
-* [Lingotek](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
+* [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
+* [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
+* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
+* [Palabras clave](https://exchange.adobe.com/experiencecloud.details.90019.html)
+* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
+* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
+* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (Microsoft Translator está preinstalado en AEM)
-* [Smartling](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
-* [SDL TMS](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
-* [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
-* [Altlang](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/Altlang.html)
 
 >[!NOTE]
 >
@@ -50,6 +53,7 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 >
 >* [Traducción humana de AEM](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM Machine Translation](https://www.adobe.com/go/aem-machine-translation-connectors)
+
 >
 
 
@@ -112,7 +116,7 @@ Las propiedades Sitios controlan cómo se realiza la traducción del contenido d
   </tr>
   <tr>
    <td>Traducir recursos de la página</td>
-   <td><p>Seleccione cómo traducir recursos que se han agregado a componentes del sistema de archivos o a los que se hace referencia desde Recursos:</p>
+   <td><p>Seleccione cómo traducir recursos que se agregan a componentes del sistema de archivos o a los que se hace referencia desde Recursos:</p>
     <ul>
      <li>No traducir: Los recursos de página no se traducen.</li>
      <li>Uso del flujo de trabajo de traducción de sitios: Los recursos se gestionan según las propiedades de configuración de la ficha Sitios.</li>
@@ -182,7 +186,7 @@ Las propiedades de recursos controlan cómo configurar los recursos. Para obtene
  </tbody>
 </table>
 
-1. En la barra lateral, toque o haga clic en Herramientas > Operaciones > Nube > Servicios de nube.
+1. En la barra lateral, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
 1. En el área Integración de traducción, si se ha creado alguna configuración determina qué vínculo aparece:
 
    * Si no se ha creado ninguna configuración, toque o haga clic en Configurar ahora.
@@ -211,7 +215,7 @@ Además, para cualquier comunidad de componentes [](/help/communities/scf.md) SC
 Asocie una página con el proveedor de traducción que está utilizando para traducir la página y las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desee configurar y toque o haga clic en Propiedades de la Vista.
-1. Toque o haga clic en Editar y, a continuación, en la ficha Servicios de nube o puntee en ella.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Service.
 1. Toque o haga clic en Añadir configuración > Integración de traducción.
 1. Seleccione el proveedor de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
 
@@ -220,7 +224,7 @@ Asocie una página con el proveedor de traducción que está utilizando para tra
 Asocie una página con el módulo de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desee configurar y toque o haga clic en Propiedades de la Vista.
-1. Toque o haga clic en Editar y, a continuación, en la ficha Servicios de nube o puntee en ella.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Service.
 1. Toque o haga clic en Añadir configuración > Integración de traducción.
 1. Seleccione el marco de integración de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
 
