@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Esenciales de puntuación y distintivos {#scoring-and-badges-essentials}
 
-La función de puntuación y distintivos de comunidades de AEM permite identificar y premiar a los miembros de la comunidad.
+La función de puntuación y distintivos para AEM Communities permite identificar y premiar a los miembros de la comunidad.
 
 Los detalles de la configuración de la función se describen en
 
@@ -83,7 +83,7 @@ Para obtener instrucciones detalladas, visite [Crear un archivo](/help/sites-dep
 
 Para configurar rápidamente un archivo de registro de inclinación:
 
-1. Acceda, por ejemplo, a la compatibilidad **del registro de la consola web de** Adobe Experience Manager
+1. Acceda, por ejemplo, a la compatibilidad con **el registro de la consola web de** Adobe Experience Manager
 
    * https://localhost:4502/system/console/slinglog
 
@@ -91,7 +91,7 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
    1. Seleccionar `DEBUG` para nivel **de registro**
 
-   1. Escriba un nombre para el archivo **** de registro, por ejemplo
+   1. Escriba un nombre para el archivo **de registro**, por ejemplo
 
       * logs/scoring-debug.log
    1. Introduzca dos entradas **Logger** (clase) (mediante `+` icono)
@@ -102,7 +102,7 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
 
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 Para ver las entradas de registro:
 
@@ -118,7 +118,7 @@ Para ver las entradas de registro:
 
    * Por ejemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC para puntaje y señalización {#ugc-for-scoring-and-badging}
 
@@ -217,7 +217,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
    Como un usuario ha ganado dos insignias de bronce y ha recibido una insignia de moderador, así es como aparece el usuario con su entrada en el foro.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -230,6 +230,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    >
    >
 * Creación de imágenes de distintivo únicas para distintos sitios de AEM
+
 >
 
 
@@ -254,7 +255,7 @@ Para el sitio de la guía de componentes de comunidad, el usuario y su puntuaci�
 
 La puntuación se almacena en la propiedad `scoreValue_tl` que sólo puede contener un valor o hacer referencia indirectamente a un atomicCounter.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### Acceso a la insignia UGC {#access-badging-ugc}
 
@@ -270,11 +271,11 @@ Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distinti
 
 #### Distintivo concedido {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### Distintivo asignado {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Información adicional {#additional-information}
 
