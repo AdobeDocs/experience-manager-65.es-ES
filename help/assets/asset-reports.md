@@ -3,9 +3,9 @@ title: Informes sobre el uso y uso compartido de los recursos digitales.
 description: Informes sobre los recursos [!DNL Adobe Experience Manager Assets] que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bc08b0039f8be92a7638245b1770c2ad21503f63
+source-git-commit: 0c41666353a8ee8d39285c99327680ab12377d61
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1044'
 ht-degree: 10%
 
 ---
@@ -59,21 +59,24 @@ Para generar informes, asegúrese de lo siguiente:
 
    >[!NOTE]
    >
-   >De forma predeterminada, los fragmentos de contenido y los recursos compartidos de vínculos se incluyen en el informe Descarga de recursos. Seleccione la opción adecuada para crear un informe de recursos compartidos de vínculos o para excluir fragmentos de contenido del informe de descarga.
+   >De forma predeterminada, los fragmentos de contenido y los recursos compartidos de vínculos se incluyen en el informe de [!UICONTROL descarga] de recursos. Seleccione la opción adecuada para crear un informe de recursos compartidos de vínculos o para excluir fragmentos de contenido del informe de descarga.
 
+   >[!NOTE]
+   >
+   >El informe [!UICONTROL Descargar] muestra detalles de solo los recursos seleccionados de forma individual y descargados. Sin embargo, no incluye los detalles de los recursos que estaban dentro de una carpeta descargada.
 1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta, en el repositorio de CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente.
 
-   ![Page to add report details](assets/report_configuration.png)
+   ![Página para agregar detalles del informe](assets/report_configuration.png)
 
-   Choose the date range for your report.
+   Elija el intervalo de fechas del informe.
 
    Puede elegir generar el informe ahora o en una fecha y hora futuras.
 
    >[!NOTE]
    >
-   >Si decide programar el informe más adelante, asegúrese de especificar la fecha y la hora en los campos Fecha y Hora. If you do not specify any value, the report engine treats it as a report that is to be generated instantly.
+   >Si decide programar el informe más adelante, asegúrese de especificar la fecha y la hora en los campos Fecha y Hora. Si no especifica ningún valor, el motor de informes lo trata como un informe que se va a generar instantáneamente.
 
-   Configuration fields may differ based on the type of report you create. Por ejemplo: el informe Uso del **[!UICONTROL disco]** proporciona opciones para incluir representaciones de recursos al calcular el espacio en disco que utilizan los recursos. Puede optar por incluir o excluir recursos en subcarpetas para el cálculo del uso del disco.
+   Los campos de configuración pueden diferir según el tipo de informe que cree. Por ejemplo: el informe Uso del **[!UICONTROL disco]** proporciona opciones para incluir representaciones de recursos al calcular el espacio en disco que utilizan los recursos. Puede optar por incluir o excluir recursos en subcarpetas para el cálculo del uso del disco.
 
    >[!NOTE]
    >
