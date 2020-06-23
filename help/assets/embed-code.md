@@ -1,6 +1,6 @@
 ---
 title: Incrustación del visor de vídeo o de imagen de Dynamic Media en una página web
-description: Obtenga información sobre cómo incrustar vídeos o imágenes de Dynamic Media en una página web
+description: Aprenda a incrustar vídeos o imágenes de Dynamic Media en una página web
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 translation-type: tm+mt
-source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 21%
@@ -16,7 +16,7 @@ ht-degree: 21%
 ---
 
 
-# Incrustación del vídeo de Dynamic Media, el visor de imágenes o el visor de dimensiones en una página web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incrustación del visor de vídeos, imágenes o dimensiones de Dynamic Media en una página web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilice la función **[!UICONTROL Código incrustado]** cuando desee reproducir el vídeo o ver un recurso incrustado en una página web. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en el cuadro de diálogo **[!UICONTROL Código incrustado]**.
 
@@ -48,10 +48,10 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
 
-1. En el carril izquierdo, seleccione el menú desplegable y toque **[!UICONTROL Visores]**.
+1. En el carril izquierdo, seleccione el menú desplegable y toque **[!UICONTROL Visores.]**
 1. En el carril izquierdo, toque un nombre de ajuste preestablecido de visor. El ajuste preestablecido de visor se aplica al recurso.
-1. Toque **[!UICONTROL Incrustar]**.
-1. En el cuadro de diálogo **[!UICONTROL Código]** incrustado, copie todo el código en el portapapeles y, a continuación, toque **[!UICONTROL Cerrar]**.
+1. Toque **[!UICONTROL Incrustar.]**
+1. En el cuadro de diálogo **[!UICONTROL Código]** incrustado, copie todo el código en el portapapeles y, a continuación, toque **[!UICONTROL Cerrar.]**
 1. Pegue el código incrustado en las páginas web.
 
 ## Uso de HTTP/2 para distribuir los recursos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
