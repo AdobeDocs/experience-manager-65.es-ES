@@ -9,12 +9,15 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 0%
 
 ---
 
 
-# Imágenes panorámicas{#panoramic-images}
+# Panoramic images{#panoramic-images}
 
 En esta sección se describe cómo trabajar con el visor de imágenes panorámicas para procesar imágenes panorámicas esféricas y así disfrutar de una experiencia de visualización inmersiva de 360° de una habitación, propiedad, ubicación o paisaje.
 
@@ -32,7 +35,7 @@ En CRXDE Lite puede anular la configuración de proporción de aspecto predeterm
 
 * Etiquetado con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-authoring/tags.md).
 
-Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente `Panoramic Media` WCM.
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
 Para cargar recursos para utilizarlos con el visor de imágenes panorámicas, consulte [Carga de recursos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
@@ -40,13 +43,13 @@ Para cargar recursos para utilizarlos con el visor de imágenes panorámicas, co
 
 Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe sincronizar los ajustes preestablecidos de visor de imágenes panorámicas con metadatos específicos de Dynamic Media Classic (Scene7) y Dynamic Media Classic (Scene7) para que los ajustes preestablecidos de visor se actualicen en el JCR. Para ello, configure Dynamic Media Classic (Scene7) de la siguiente manera:
 
-1. [Inicie sesión en la instancia de Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de empresa.
+1. [Inicie sesión en la instancia de Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de compañía.
 
-1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor]** de imágenes.
-1. En la página Publicación del servidor de imágenes, en el menú desplegable **[!UICONTROL Publicar contexto]** cerca de la parte superior, seleccione Servicio **[!UICONTROL de imágenes]**.
+1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes.]**
+1. En la página Publicación del servidor de imágenes, en el menú desplegable **[!UICONTROL Publicar contexto]** cerca de la parte superior, seleccione Servicio **[!UICONTROL de imágenes.]**
 
-1. En la misma página de publicación de Image Server, busque el encabezado Atributos **[!UICONTROL de]** solicitud.
-1. En el encabezado Atributos de solicitud, localice Límite **[!UICONTROL de tamaño de imagen de]** respuesta. A continuación, en los campos de anchura y altura asociados, aumente el tamaño máximo permitido de imagen para las imágenes panorámicas.
+1. En la misma página de publicación de Image Server, busque el encabezado Atributos de **[!UICONTROL solicitud.]**
+1. En el encabezado Atributos de solicitud, busque Límite de tamaño de imagen de **[!UICONTROL respuesta.]** A continuación, en los campos de anchura y altura asociados, aumente el tamaño máximo permitido de imagen para las imágenes panorámicas.
 
    Dynamic Media Classic (Scene7) tiene un límite de 25.000.000 píxeles. El tamaño máximo permitido para imágenes con una proporción de aspecto de 2:1 es de 7000 x 3500. Sin embargo, para las pantallas de escritorio típicas, 4096 x 2048 píxeles es suficiente.
 
@@ -56,13 +59,14 @@ Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe 
 
 1. En el encabezado Atributos de solicitud, haga lo siguiente:
 
-   * Establezca el modo de confusión de solicitudes en **[!UICONTROL Deshabilitado]**.
-   * Establezca el modo de bloqueo de solicitudes en **[!UICONTROL Deshabilitado]**.
+   * Establezca el modo de confusión de solicitudes en **[!UICONTROL Deshabilitado.]**
+   * Establezca el modo de bloqueo de solicitudes en **[!UICONTROL Deshabilitado.]**
+
    Esta configuración es necesaria para utilizar el componente `Panoramic Media` WCM en AEM.
 
-1. En la parte inferior de la página Servidor de imágenes, en la parte izquierda, haga clic en **[!UICONTROL Guardar]**.
+1. En la parte inferior de la página Servidor de imágenes, en la parte izquierda, haga clic en **[!UICONTROL Guardar.]**
 
-1. En la esquina inferior derecha, haga clic en **[!UICONTROL Cerrar]**.
+1. En la esquina inferior derecha, haga clic en **[!UICONTROL Cerrar.]**
 
 ### Resolución de problemas del componente WCM de medios panorámicos {#troubleshooting-the-panoramic-media-wcm-component}
 
