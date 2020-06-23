@@ -4,7 +4,7 @@ description: Aprenda a previsualización de recursos 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 15%
@@ -52,7 +52,7 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
 
 1. Asegúrese de que ha cargado los recursos 3D en AEM.
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. En AEM, en la página **[!UICONTROL Navegación]** , toque **[!UICONTROL Recursos > Archivos]**.
+1. En AEM, en la página **[!UICONTROL Navegación]** , toque **[!UICONTROL Recursos > Archivos.]**
 
    ![Página de navegación](/help/assets/assets-dm/navigation-assets.png)
 
@@ -81,4 +81,4 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
    * **Restaurar**: cerca de la esquina inferior derecha de la página, toque el icono Restablecer para restaurar el punto de destinatario de vista al centro del recurso 3D. El reinicio también hace que la cámara se acerque o se aleje para mostrar el recurso en su totalidad y con un tamaño de visualización razonable.
    * **Modo** de pantalla completa: para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, toque el icono de pantalla completa.
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close.]**
