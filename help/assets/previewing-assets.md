@@ -1,6 +1,6 @@
 ---
 title: Previsualización de recursos
-description: Obtenga información sobre la previsualización de recursos en Dynamic Media
+description: Aprenda a previsualización de recursos en Dynamic Media
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e6aba1f511754080305c0a97ce9bc85511f29a7
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
 **previsualización de recursos mediante la interfaz de software**
 
 1. Desde **[!UICONTROL Adobe Experience Manager**, en la página **[!UICONTROL Navegación**, pulse **[!UICONTROL Assets]** y, a continuación, pulse **[!UICONTROL Archivos]** para acceder a los recursos.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Opcional) Utilice la columna **[!UICONTROL Tipo]** para ordenar los recursos según el tipo de previsualización.
 1. En la columna **[!UICONTROL Título]** , haga clic en el nombre del título (no en la imagen en miniatura) del recurso que desea previsualización.
 1. Según el tipo de recurso en el que haya hecho clic, realice una de las siguientes acciones:
