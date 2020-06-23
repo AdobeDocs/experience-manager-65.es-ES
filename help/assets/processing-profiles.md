@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Debe tener derechos de administrador para crear, editar y eliminar metadatos, im
 
 Después de crear los metadatos, las imágenes o el perfil de vídeo, se asignan a una o varias carpetas que se utilizan como destino para los recursos recién cargados.
 
-Un concepto importante con respecto al uso de perfiles en Recursos AEM es que se asignan a las carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos de estas carpetas influye considerablemente en la forma en que un perfil procesa dichos recursos.
+Un concepto importante con respecto al uso de perfiles en AEM Assets es que se asignan a las carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos de estas carpetas influye considerablemente en la forma en que un perfil procesa dichos recursos.
 Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con una buena práctica de metadatos, puede sacar el máximo partido de la colección de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados.
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Al utilizar estrategias de asignación de nombres de archivos y carpetas coheren
 
 >[!NOTE]
 >
->Solo se aplica al modo *Medios* dinámicos: Scene7 en AEM 6.4.6.0 o posterior.
+>Solo se aplica al modo ** Dynamic Media - Scene7 en AEM 6.4.6.0 o posterior.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de procesamiento existente que haya cambiado posteriormente.
 
@@ -74,20 +74,20 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
    * Si hay una o varias subcarpetas con recursos en la carpeta principal seleccionada, el flujo de trabajo volverá a procesar todos los recursos en la jerarquía de carpetas.
    * Se recomienda evitar ejecutar este flujo de trabajo en una jerarquía de carpetas con más de 1000 recursos.
 
-1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, haga clic en **[!UICONTROL Cronología]**.
+1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, haga clic en **[!UICONTROL Cronología.]**
 1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario, haga clic en el icono de carro ( **^** ) .
 
    ![Flujo de trabajo de reprocesamiento de recursos 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**.
-1. En la lista desplegable Flujo de trabajo **[!UICONTROL de]** Inicio, elija **[!UICONTROL Scene7: Volver a procesar los recursos]**.
+1. Haga clic en Flujo de trabajo de **[!UICONTROL Inicio.]**
+1. En la lista desplegable Flujo de trabajo **[!UICONTROL de]** Inicio, elija **[!UICONTROL Scene7: Volver a procesar los recursos.]**
 1. (Opcional) En el campo **Introduzca el título del texto del flujo de trabajo** , introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
    ![Volver a procesar los recursos 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, en **[!UICONTROL Confirmar]**.
+1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, en **[!UICONTROL Confirmar.]**
 
-   Para supervisar el flujo de trabajo o comprobar su progreso, en la página de la consola principal de AEM, haga clic en **[!UICONTROL Herramientas > Flujo de trabajo]**. En la página Instancias de flujo de trabajo, seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo.
+   Para supervisar el flujo de trabajo o comprobar su progreso, en la página de la consola principal de AEM, haga clic en **[!UICONTROL Herramientas > Flujo de trabajo.]** En la página Instancias de flujo de trabajo, seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial.]** También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo.
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
@@ -95,12 +95,12 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
 
 **Ajuste opcional del tamaño del lote del flujo de trabajo de reprocesamiento**
 
-1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
-1. En la página Modelos de flujo de trabajo, en Vista de tarjetas o Vista de Listas, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
+1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
+1. En la página Modelos de flujo de trabajo, en Vista de tarjetas o Vista de Listas, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos.]**
 
    ![Página Modelos de flujo de trabajo con Scene7: Volver a procesar los recursos seleccionados en la Vista de tarjetas](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Editar]**. Una nueva ficha de explorador abre Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Editar.]** Una nueva ficha de explorador abre Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos.
 1. En Scene7: Volver a procesar la página de flujo de trabajo Recursos, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
 1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, haga clic en **[!UICONTROL Configurar]** en la barra de herramientas.
 
@@ -113,18 +113,19 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
    * En el campo **[!UICONTROL Período]** , introduzca un intervalo de sondeo (segundos) para comprobar si se ha completado el proceso externo.
    * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
    * Seleccione **[!UICONTROL Avanzar al tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar con la bandeja de entrada cuando se alcance el tiempo de espera.
+
    ![Cuadro de diálogo Propiedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. En la esquina superior derecha del cuadro de diálogo Propiedades **[!UICONTROL de la etapa de carga por]** lotes en Scene7, haga clic en **[!UICONTROL Finalizado]**.
+1. En la esquina superior derecha del cuadro de diálogo Propiedades **[!UICONTROL de la etapa de carga por]** lotes en Scene7, haga clic en **[!UICONTROL Finalizado.]**
 
-1. En la esquina superior derecha de Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, haga clic en **[!UICONTROL Sincronizar]**. Cuando se ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución de flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha de Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, haga clic en **[!UICONTROL Sincronizar.]** Cuando se ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución de flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
 
    ![Sincronización del modelo de flujo de trabajo](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Cierre la ficha del explorador que muestra Scene7: Volver a procesar el modelo de flujo de trabajo de Recursos.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -135,10 +136,10 @@ El agente de publicación de migración debe estar deshabilitado en el servidor 
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add.]** The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
