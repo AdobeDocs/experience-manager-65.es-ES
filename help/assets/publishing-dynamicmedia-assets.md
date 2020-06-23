@@ -1,5 +1,5 @@
 ---
-title: Publicación de recursos de Dynamic Media
+title: Publicación de Dynamic Media Assets
 description: Cómo publicar recursos de medios dinámicos
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: b8fe3267a808f1a64b78620156826e0b6e3a5676
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 3%
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-Para publicar los recursos de Dynamic Media, seleccione los recursos que ya ha cargado y toque **[!UICONTROL Publicar]** o **[!UICONTROL Publicación]** rápida. Una vez publicados los recursos de Dynamic Media, estarán disponibles para incluirlos en una página web mediante una URL o incrustando el código en la página.
+Para publicar los recursos de Dynamic Media, seleccione los recursos que ya haya cargado y toque **[!UICONTROL Publicar]** o **[!UICONTROL Publicación rápida.]** Una vez publicados los recursos de Dynamic Media, estarán disponibles para incluirlos en una página web mediante una URL o incrustando el código en la página.
 
-También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. Consulte [Configuración de medios dinámicos: modo](config-dms7.md)de Scene7.
+También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media: modo](config-dms7.md)Scene7.
 
 En la Vista **[!UICONTROL de]** tarjeta, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
@@ -38,13 +38,14 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 >
 >* Los recursos deben publicarse para poder utilizar la dirección URL. Si no se publican los recursos, no funcionará copiar y pegar la URL en un explorador web.
 >* Los ajustes preestablecidos de imagen y los ajustes preestablecidos de visor deben activarse y publicarse para el envío en directo.
+
 >
 
 
 
 Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publicación de recursos.](managing-assets-touch-ui.md)
 
-## envío HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## envío HTTP/2 de los recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
