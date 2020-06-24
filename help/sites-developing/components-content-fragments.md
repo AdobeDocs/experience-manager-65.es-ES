@@ -12,7 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +42,7 @@ Consulte la API de administración de fragmentos de [contenido - Cliente](/help/
 >
 >Consulte también Fragmentos [de contenido Configuración de componentes para procesamiento](/help/sites-developing/content-fragments-config-components-rendering.md) para obtener más información.
 
-Los fragmentos de contenido de Adobe Experience Manager (AEM)[ se crean y administran como recursos independientes de las páginas](/help/assets/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). [Después se pueden usar estos fragmentos, y sus variaciones, al crear páginas de contenido](/help/sites-authoring/content-fragments.md). También puede utilizar un recurso de fragmento de contenido existente [arrastrándolo desde el navegador de recursos a la página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (como en el caso de otros componentes basados en recursos, como la imagen del componente base). El componente de fragmento de contenido incorporado solo muestra un [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) del fragmento de contenido al que se hace referencia. Con el cuadro de diálogo de componentes puede definir el [elemento, la variación y el rango de párrafos](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) de fragmento que desea mostrar en la página.
+Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). [Después se pueden usar estos fragmentos, y sus variaciones, al crear páginas de contenido](/help/sites-authoring/content-fragments.md). También puede utilizar un recurso de fragmento de contenido existente [arrastrándolo desde el navegador de recursos a la página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (como en el caso de otros componentes basados en recursos, como la imagen del componente base). El componente de fragmento de contenido incorporado solo muestra un [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del fragmento de contenido al que se hace referencia. Con el cuadro de diálogo de componentes puede definir el [elemento, la variación y el rango de párrafos](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) de fragmento que desea mostrar en la página.
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Esta biblioteca agrega al editor funciones específicas de los fragmentos de con
 
 ### Contenido intermedio {#in-between-content}
 
-El componente **Fragmento de** contenido le permite soltar componentes adicionales entre los distintos párrafos del [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)mostrado. Básicamente, el elemento mostrado está compuesto de diferentes párrafos (cada párrafo está marcado por un retorno de carro). Entre cada uno de estos párrafos, puede insertar contenido con otros componentes.
+El componente **Fragmento de** contenido le permite soltar componentes adicionales entre los distintos párrafos del [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)mostrado. Básicamente, el elemento mostrado está compuesto de diferentes párrafos (cada párrafo está marcado por un retorno de carro). Entre cada uno de estos párrafos, puede insertar contenido con otros componentes.
 
 Desde un punto de vista técnico, cada párrafo del elemento mostrado* *reside en su propio parsys y cada componente que agregue entre los párrafos se insertará (debajo del capó) en el parsys.
 
@@ -103,9 +106,9 @@ Para utilizar el componente de fragmento de contenido incorporado como modelo de
 * Vuelva a utilizar la secuencia de comandos de procesamiento HTL y su POJO asociado para ver cómo se implementa la función de contenido intermedio.
 * Reutilice el nodo de fragmento de contenido: `cq:editConfig`
 
-   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se utilizan para desencadenar eventos JS. Estos eventos se gestionarán en la biblioteca del `cq.authoring.editor.plugin.cfm` cliente para mostrar el contenido asociado en el panel lateral.
+   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se utilizan para activar eventos JS. Estos eventos se gestionarán en la biblioteca del `cq.authoring.editor.plugin.cfm` cliente para mostrar el contenido asociado en el panel lateral.
    * Los `cq:dropTargets` están configurados para admitir la posibilidad de arrastrar recursos de fragmentos de contenido.
-   * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor in-situ de fragmentos se define en la biblioteca del `cq.authoring.editor.plugin.cfm` cliente y permite un vínculo rápido para abrir el [elemento/variación](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el editor [de](/help/assets/content-fragments-variations.md)fragmentos.
+   * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor in-situ de fragmentos se define en la biblioteca del `cq.authoring.editor.plugin.cfm` cliente y permite un vínculo rápido para abrir el [elemento/variación](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el editor [de](/help/assets/content-fragments/content-fragments-variations.md)fragmentos.
 
 ### Reescritura de recursos antes de procesar {#asset-rewriting-before-rendering}
 
@@ -117,7 +120,7 @@ La configuración lista para usar utiliza los siguientes transformadores:
 
 * `transformer-cfm-payloadfilter` - solo para recuperar la parte `body` ( `<body>...</body>`) del HTML del fragmento
 
-* `transformer-cfm-parfilter` - filtra los párrafos no deseados si se especifica un intervalo de párrafos (como se puede hacer con el componente Fragmento de contenido)
+* `transformer-cfm-parfilter` - filtros los párrafos no deseados si se especifica un intervalo de párrafos (como se puede hacer con el componente Fragmento de contenido)
 * `transformer-cfm-assetprocessor` - se utiliza internamente para recuperar una lista de los recursos incrustados en el fragmento
 
 El proceso de procesamiento se expone mediante [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) y, si es necesario, se puede aprovechar (por ejemplo) mediante componentes personalizados.
