@@ -1,21 +1,21 @@
 ---
-title: Prácticas recomendadas para compartir carpetas de Adobe Experience Manager con Adobe Creative Cloud
-description: Configure Adobe Experience Manager para que los usuarios de Experience Manager Assets puedan intercambiar carpetas con usuarios de Adobe Creative Cloud (CC).
+title: Adobe Experience Manager a las prácticas recomendadas de uso compartido de carpetas de Adobe Creative Cloud
+description: Configure Adobe Experience Manager para permitir que los usuarios de Recursos Experience Manager intercambien carpetas con usuarios de Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
 
 
-# Uso compartido de carpetas de Adobe Experience Manager a Adobe Creative Cloud {#aem-to-creative-cloud-folder-sharing-best-practices}
+# Adobe Experience Manager al uso compartido de carpetas de Adobe Creative Cloud {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
->La función de uso compartido de carpetas de Experience Manager en Creative Cloud está en desuso. Adobe recomienda encarecidamente el uso de nuevas funciones como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Obtenga más información sobre las prácticas recomendadas [de integración de](/help/assets/aem-cc-integration-best-practices.md)Experience Manager y Creative Cloud.
+>La función de Experience Manager de uso compartido de carpetas de Creative Cloud está en desuso. Adobe recomienda encarecidamente el uso de las nuevas funciones, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Obtenga más información sobre las prácticas recomendadas [de integración de](/help/assets/aem-cc-integration-best-practices.md)Experience Manager y Creative Cloud.
 
 Adobe Experience Manager se puede configurar para permitir que los usuarios de Recursos compartan carpetas con los usuarios de las aplicaciones de Adobe Creative Cloud, de modo que estén disponibles como carpetas compartidas en el servicio Adobe Creative Cloud Assets. La función se puede utilizar para intercambiar archivos entre equipos creativos y usuarios de Recursos, especialmente cuando los usuarios creativos no tienen acceso a la instancia de Recursos (no están en la red empresarial).
 
@@ -26,11 +26,11 @@ Este tipo de integración se puede utilizar en los siguientes casos de uso, espe
 
 >[!NOTE]
 >
->Antes de leer este documento, puede consultar las prácticas recomendadas [generales de integración de](/help/assets/aem-cc-integration-best-practices.md) Experience Manager y Creative Cloud para obtener una descripción general de nivel superior del tema.
+>Antes de leer este documento, puede revisar las prácticas recomendadas [generales de integración de](/help/assets/aem-cc-integration-best-practices.md) Experience Manager y Creative Cloud para obtener una descripción general de nivel superior del tema.
 
 ## Información general {#overview}
 
-El uso compartido de carpetas de Experience Manager en Creative Cloud depende del uso compartido de carpetas y archivos del lado del servidor entre Assets y las cuentas de Creative Cloud. Los profesionales de Creative Cloud, que utilizan la aplicación de escritorio de Creative Cloud en sus equipos de escritorio, también pueden hacer que las carpetas compartidas estén disponibles directamente en sus discos mediante la tecnología Adobe CreativeSync.
+El Experience Manager al uso compartido de carpetas de Creative Cloud depende del uso compartido de carpetas y archivos en el servidor entre Assets y las cuentas de Creative Cloud. Los profesionales de Creative Cloud, que utilizan la aplicación de escritorio de Creative Cloud en sus equipos de escritorio, también pueden hacer que las carpetas compartidas estén disponibles directamente en sus discos mediante la tecnología Adobe CreativeSync.
 
 En el diagrama siguiente se proporciona una descripción general de la integración.
 
@@ -38,31 +38,31 @@ En el diagrama siguiente se proporciona una descripción general de la integraci
 
 La integración incluye los siguientes elementos:
 
-* **Experience Manager Assets server** implementado en la red empresarial (servicios gestionados o in situ): El uso compartido de carpetas se inicia aquí.
-* **Servicio** principal de Recursos de Adobe Marketing Cloud: Actúa como intermediario entre Experience Manager y los servicios de almacenamiento de Creative Cloud. El administrador de la compañía que utiliza la integración necesita establecer una relación de confianza entre la organización de Marketing Cloud y la instancia de Assets. También [definen una lista de colaboradores](https://marketing.adobe.com/resources/help/en_US/mcloud/t_admin_add_cc_user.html)aprobados de Creative Cloud, que los usuarios de Recursos también pueden compartir carpetas para mayor seguridad.
+* **Experience Manager Assets Server** implementado en la red empresarial (servicios gestionados o in situ): El uso compartido de carpetas se inicia aquí.
+* **Servicio** principal de Recursos Adobe Marketing Cloud: Actúa como intermediario entre Experience Manager y los servicios de almacenamiento de Creative Cloud. El administrador de la compañía que utiliza la integración necesita establecer una relación de confianza entre la organización de Marketing Cloud y la instancia de Assets. También [definen una lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)aprobados de Creative Cloud, que los usuarios de Recursos también pueden compartir carpetas para mayor seguridad.
 
 * **Servicios** web de Creative Cloud Assets (interfaz de usuario web de almacenamiento y Creative Cloud Files): Aquí es donde usuarios específicos de la aplicación de Creative Cloud, con los que se ha compartido una carpeta de recursos, pueden aceptar la invitación y ver la carpeta en el almacenamiento de su cuenta de Creative Cloud.
 * **Aplicación** de escritorio de Creative Cloud: (Opcional) Permite el acceso directo a las carpetas o archivos compartidos desde el escritorio del usuario creativo mediante la sincronización con el almacenamiento de Creative Cloud Assets.
 
 ## Características y limitaciones {#characteristics-and-limitations}
 
-* **Propagación unidireccional de cambios:** Los cambios en los archivos se propagan en una sola dirección, desde el sistema (Experience Manager o Creative Cloud Assets), donde el recurso se creó originalmente (se cargó). La integración no proporciona una sincronización bidireccional completamente automatizada entre los dos sistemas.
+* **Propagación unidireccional de cambios:** Los cambios en los archivos se propagan únicamente en una dirección, desde el sistema (Experience Manager o Creative Cloud Assets), donde se creó el recurso originalmente (se cargó). La integración no proporciona una sincronización bidireccional completamente automatizada entre los dos sistemas.
 * **Versiones:**
 
-   * Experience Manager solo crea versiones de un recurso en actualizaciones si el archivo se originó en Experience Manager y se actualiza en él.
+   * Experience Manager solo crea versiones de un recurso en actualizaciones si el archivo se originó en el Experience Manager y se actualiza allí.
    * Creative Cloud Assets ofrece su propia función [de](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) control de versiones que está dirigida a las actualizaciones de Work in Progress (básicamente, almacena actualizaciones durante un máximo de 10 días)
 
-* **Limitaciones de espacio:** Los tamaños y volúmenes de archivos intercambiados están limitados por la cuota [específica de](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud Assets para usuarios creativos (depende del nivel de suscripción) y una limitación de 5 GB de tamaño máximo de archivo. El espacio se ve limitado además por la cuota de recursos que tiene la organización en el servicio principal Recursos de Adobe Marketing Cloud.
+* **Limitaciones de espacio:** Los tamaños y volúmenes de archivos intercambiados están limitados por la cuota [específica de](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud Assets para usuarios creativos (depende del nivel de suscripción) y una limitación de 5 GB de tamaño máximo de archivo. El espacio está limitado además por la cuota de recursos que la organización tiene en el servicio principal de Recursos de Adobe Marketing Cloud.
 
-* **Requisitos de espacio:** Los archivos de las carpetas compartidas también deben almacenarse físicamente en Experience Manager y, a continuación, en la cuenta de Creative Cloud, con una copia en caché en el servicio principal de Marketing Cloud Assets.
+* **Requisitos de espacio:** Los archivos de las carpetas compartidas también deben almacenarse físicamente en el Experience Manager y, a continuación, en la cuenta de Creative Cloud, con una copia en caché en el servicio principal de Marketing Cloud Assets.
 * **Redes y ancho de banda:** Los archivos de las carpetas compartidas y todas las actualizaciones deben trasladarse a través de la red entre los sistemas. Debe asegurarse de que solo se comparten los archivos y las actualizaciones relevantes.
 * **Tipo** de carpeta: Compartir una carpeta de recursos del tipo `sling:OrderedFolder`, no se admite en el contexto de uso compartido en Adobe Marketing Cloud. Si desea compartir una carpeta, al crearla en Recursos, no seleccione la opción Pedido.
 
 ## Best practices {#best-practices}
 
-Entre las prácticas recomendadas para aprovechar Experience Manager y compartir carpetas de Creative Cloud se incluyen:
+Entre las prácticas recomendadas para aprovechar el uso compartido de Experience Manager en Creative Cloud se incluyen:
 
-* **Consideraciones sobre el volumen:** Experience Manager/Uso compartido de carpetas de Creative Cloud se debe utilizar para compartir un número menor de archivos, por ejemplo, relevantes para una campaña o actividad específica. Para compartir conjuntos más grandes de recursos, como todos los recursos aprobados en la organización, utilice otros métodos de distribución (por ejemplo, Assets Brand Portal) o la aplicación de escritorio de Experience Manager.
+* **Consideraciones sobre el volumen:** El uso compartido de carpetas entre Experience Manager y Creative Cloud debe utilizarse para compartir un número menor de archivos, por ejemplo, relevantes para una campaña o actividad específica. Para compartir conjuntos más grandes de recursos, como todos los recursos aprobados en la organización, utilice otros métodos de distribución (por ejemplo, Assets Brand Portal) o la aplicación de escritorio de Experience Manager.
 
 * **Evite compartir jerarquías profundas:** El uso compartido funciona de forma recursiva y no permite la desdistribución selectiva. Normalmente, solo se deben considerar para compartir las carpetas sin subcarpetas o con una jerarquía muy superficial, como un nivel de subcarpeta.
 * **Separe las carpetas para compartir en un solo sentido:** Se deben utilizar carpetas independientes para compartir recursos finales de Recursos a archivos de Creative Cloud, así como para compartir recursos listos para la creación desde archivos de Creative Cloud a Assets. Junto con una buena convención de nombres para estas carpetas, crea un entorno de trabajo más fácil de entender tanto para los usuarios de Assets como de Creative Cloud.
