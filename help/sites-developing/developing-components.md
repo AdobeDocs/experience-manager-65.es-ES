@@ -12,7 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '3452'
+ht-degree: 1%
 
 ---
 
@@ -26,14 +29,14 @@ Los componentes de AEM se utilizan para mantener, dar formato y procesar el cont
    * Al construir un sitio de [comercio](/help/sites-administering/ecommerce.md) , los componentes pueden, por ejemplo, recopilar y procesar información del catálogo.
 See [Developing eCommerce](/help/sites-developing/ecommerce.md) for more information.
 
-   * Al construir un sitio de [comunidades](/help/communities/author-communities.md) , los componentes pueden proporcionar información a los visitantes y recopilarla.
+   * Al construir un sitio de [Comunidades](/help/communities/author-communities.md) , los componentes pueden proporcionar información a sus visitantes y recopilarla.
 See [Developing Communities](/help/communities/communities.md) for more information.
 
-* En la instancia de publicación, los componentes representan el contenido y lo presentan como es necesario para los visitantes del sitio web.
+* En la instancia de publicación, los componentes representan el contenido, presentándolo como se requiere a los visitantes del sitio web.
 
 >[!NOTE]
 >
->Esta página es una continuación del documento Componentes de [AEM: conceptos básicos](/help/sites-developing/components-basics.md).
+>Esta página es una continuación de documento [AEM Components - The Basics](/help/sites-developing/components-basics.md).
 
 >[!CAUTION]
 >
@@ -79,7 +82,7 @@ El componente se procesará con [HTML](https://www.w3schools.com/htmL/html_intro
 
 ### Uso del lenguaje de plantilla HTML {#using-the-html-template-language}
 
-The [HTML Templating Language (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), introduced with AEM 6.0, takes the place of JSP (JavaServer Pages) as the preferred and recommended server-side template system for HTML. Para los desarrolladores web que necesitan crear sitios web empresariales sólidos, HTL ayuda a lograr una mayor seguridad y eficiencia de desarrollo.
+The [HTML Templating Language (HTL)](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html), introduced with AEM 6.0, takes the place of JSP (JavaServer Pages) as the preferred and recommended server-side template system for HTML. Para los desarrolladores web que necesitan crear sitios web empresariales sólidos, HTL ayuda a lograr una mayor seguridad y eficiencia de desarrollo.
 
 >[!NOTE]
 >
@@ -89,7 +92,7 @@ The [HTML Templating Language (HTL)](https://docs.adobe.com/content/help/en/expe
 
 Esta lógica opcional selecciona o calcula el contenido que se va a representar. Se invoca desde expresiones HTL con el patrón de uso-API adecuado.
 
-El mecanismo para separar la lógica de la apariencia ayuda a aclarar lo que se necesita para una vista determinada. También permite una lógica diferente para distintas vistas del mismo recurso.
+El mecanismo para separar la lógica de la apariencia ayuda a aclarar lo que se necesita para una vista determinada. También permite una lógica diferente para diferentes vistas del mismo recurso.
 
 ### Uso de Java {#using-java}
 
@@ -103,19 +106,19 @@ El mecanismo para separar la lógica de la apariencia ayuda a aclarar lo que se 
 
 Los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Organizar y optimizar el servicio de este código puede ser un problema complicado.
 
-Para ayudar a solucionar este problema, AEM proporciona carpetas **de biblioteca del lado del** cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe proporcionar cada categoría de código al cliente. El sistema de biblioteca del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto.
+Para ayudarle a solucionar este problema, AEM proporciona carpetas **de biblioteca del lado del** cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe proporcionar cada categoría de código al cliente. El sistema de biblioteca del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto.
 
 Lea [Uso de bibliotecas](/help/sites-developing/clientlibs.md) HTML del lado del cliente para obtener más información.
 
 ## Configuración del comportamiento de edición {#configuring-the-edit-behavior}
 
-Puede configurar el comportamiento de edición de un componente, incluyendo atributos como acciones disponibles para el componente, características del editor in-situ y los oyentes relacionados con los eventos del componente. La configuración es común a la IU táctil y a la clásica, aunque con ciertas diferencias específicas.
+Puede configurar el comportamiento de edición de un componente, incluyendo atributos como acciones disponibles para el componente, características del editor in-situ y los oyentes relacionados con eventos en el componente. La configuración es común a la IU táctil y a la clásica, aunque con ciertas diferencias específicas.
 
 El comportamiento de [edición de un componente se configura](/help/sites-developing/components-basics.md#edit-behavior) agregando un `cq:editConfig` nodo de tipo `cq:EditConfig` debajo del nodo del componente (de tipo `cq:Component`) y agregando propiedades y nodos secundarios específicos.
 
-## Configuración del comportamiento de vista previa {#configuring-the-preview-behavior}
+## Configuración del comportamiento de la Previsualización {#configuring-the-preview-behavior}
 
-La cookie de modo [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM se establece al cambiar al modo de **vista previa** aunque la página no se actualice.
+La cookie de modo [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM se establece al cambiar al modo de **Previsualización** aunque la página no se actualice.
 
 Para los componentes con una representación sensible al modo WCM, deben definirse para actualizarse específicamente y, a continuación, basarse en el valor de la cookie.
 
@@ -133,7 +136,7 @@ Los cuadros de diálogo se utilizan para permitir que el autor interactúe con e
 
 [La interfaz de usuario de Granite proporciona una amplia gama de componentes básicos (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) necesarios para crear el cuadro de diálogo en el entorno de creación. Cuando sea necesario, puede ampliar esta selección y [crear su propia utilidad](#creatinganewwidget).
 
-Para obtener más información sobre el desarrollo de componentes mediante tipos de recursos de Coral y Granite, consulte: [Creación de componentes de Experience Manager mediante tipos](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html)de recursos de Coral/Granite.
+Para obtener más información sobre el desarrollo de componentes mediante tipos de recursos de Coral y Granite, consulte: [Generación de componentes de Experience Manager mediante tipos](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html)de recursos de Coral/Granite.
 
 Para obtener más información, consulte:
 
@@ -153,7 +156,7 @@ Para obtener más información, consulte:
 >
 >Debido a la naturaleza de los componentes de la interfaz de usuario Granite (y a las diferencias con los widgets ExtJS), hay algunas diferencias entre la forma en que los componentes interactúan con la interfaz de usuario táctil y la IU [](/help/sites-developing/developing-components-classic.md)clásica.
 
-### Creación de un nuevo cuadro de diálogo {#creating-a-new-dialog}
+### Creating a New Dialog {#creating-a-new-dialog}
 
 Cuadros de diálogo para la IU táctil:
 
@@ -200,11 +203,12 @@ Para ver ejemplos, consulte:
 >
 >* la sesión de AEM Gems sobre la [personalización de los campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)del cuadro de diálogo.
 >* el código de muestra relacionado cubierto en Ejemplo de [código: Cómo personalizar campos](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)de cuadro de diálogo.
+
 >
 
 
 
-#### Creación de un nuevo campo {#creating-a-new-field}
+#### Creating a New Field {#creating-a-new-field}
 
 Las utilidades de la interfaz de usuario táctil se implementan como componentes de la interfaz de usuario de Granite.
 
@@ -214,7 +218,7 @@ Para crear una nueva utilidad para utilizarla en un cuadro de diálogo de compon
 >
 >Para obtener más información sobre la interfaz de usuario de Granite, consulte la documentación [de la interfaz de usuario de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)Granite.
 
-Si considera el cuadro de diálogo como un contenedor sencillo para un elemento de formulario, también puede ver el contenido principal del cuadro de diálogo como campos de formulario. La creación de un nuevo campo de formulario requiere la creación de un tipo de recurso; esto equivale a crear un componente nuevo. Para ayudarle en esa tarea, la interfaz de usuario de Granite ofrece un componente de campo genérico del que heredar (mediante `sling:resourceSuperType`):
+Si considera el cuadro de diálogo como un contenedor sencillo para un elemento de formulario, también puede ver el contenido principal del cuadro de diálogo como campos de formulario. La creación de un nuevo campo de formulario requiere la creación de un tipo de recurso; esto equivale a crear un componente nuevo. Para ayudarle en esa tarea, la interfaz de usuario de Granite oferta un componente de campo genérico del que heredar (mediante `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -232,7 +236,7 @@ Si desea definir el estilo y el comportamiento de su componente, puede crear una
 
 Para que la biblioteca de cliente se cargue únicamente para el cuadro de diálogo de componentes (es decir, no se cargará para otro componente), debe establecer la propiedad `extraClientlibs`*** **del cuadro de diálogo en el nombre de categoría de la biblioteca de cliente que acaba de crear. Esto es aconsejable si la biblioteca del cliente es bastante grande y/o si el campo es específico de ese cuadro de diálogo y no será necesario en otros cuadros de diálogo.
 
-Para que la biblioteca de cliente se cargue en todos los cuadros de diálogo, establezca la propiedad category de la biblioteca de cliente en `cq.authoring.dialog`. Es el nombre de categoría de la biblioteca del cliente que se incluye de forma predeterminada al procesar todos los cuadros de diálogo. Desea hacerlo si la biblioteca de cliente es pequeña o si el campo es genérico y puede reutilizarse en otros cuadros de diálogo.
+Para que la biblioteca de cliente se cargue en todos los cuadros de diálogo, establezca la propiedad de categoría de la biblioteca de cliente en `cq.authoring.dialog`. Es el nombre de la categoría de la biblioteca del cliente que se incluye de forma predeterminada al procesar todos los cuadros de diálogo. Desea hacerlo si la biblioteca de cliente es pequeña o si el campo es genérico y puede reutilizarse en otros cuadros de diálogo.
 
 Para ver un ejemplo, consulte:
 
@@ -259,9 +263,9 @@ También puede utilizar las condiciones de procesamiento ( `rendercondition`) pa
     - groups = ["administrators"]
 ```
 
-### Gestión de eventos de campo {#handling-field-events}
+### Gestión de Eventos de campo {#handling-field-events}
 
-El método de gestión de eventos en campos de diálogo ahora se realiza con [oyentes en una biblioteca](#listeners-in-a-custom-client-library)de cliente personalizada. Esto supone un cambio con respecto al método anterior de tener [oyentes en la estructura](#listenersinthecontentstructureclassicui)de contenido.
+El método de gestión de eventos en campos de diálogo ahora se realiza con [oyentes en una biblioteca](#listeners-in-a-custom-client-library)cliente personalizada. Esto supone un cambio con respecto al método anterior de tener [oyentes en la estructura](#listenersinthecontentstructureclassicui)de contenido.
 
 #### Oyentes en una biblioteca de clientes personalizada {#listeners-in-a-custom-client-library}
 
@@ -270,7 +274,7 @@ Para insertar lógica en el campo, debe:
 1. Marque el campo con una clase CSS determinada (el *gancho*).
 1. Defina, en la biblioteca de cliente, un detector JS conectado al nombre de la clase CSS (esto garantiza que la lógica personalizada solo se alcance en el campo y no afecta a otros campos del mismo tipo).
 
-Para lograrlo, debe conocer la biblioteca de utilidades subyacente con la que desea interactuar. Consulte la documentación [de la interfaz de usuario de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) Coral para identificar el evento al que desea reaccionar. Esto es muy similar al proceso que tenía que realizar con ExtJS en el pasado: busque la página de documentación de una utilidad determinada y, a continuación, compruebe los detalles de su API de evento.
+Para lograrlo, debe conocer la biblioteca de utilidades subyacente con la que desea interactuar. Consulte la documentación [de la interfaz de usuario de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) Coral para identificar a qué evento desea reaccionar. Esto es muy similar al proceso que tenía que realizar con ExtJS en el pasado: busque la página de documentación de una utilidad determinada y, a continuación, compruebe los detalles de su API de evento.
 
 Para ver un ejemplo, consulte:
 
@@ -326,13 +330,13 @@ Un editor in-situ permite al usuario editar contenido directamente en el flujo d
 
 Un editor in situ no es necesario ni significativo para cada tipo de componente.
 
-Consulte [Ampliación de la creación de páginas - Agregar nuevo editor](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor) de entrada para obtener más información.
+Consulte [Ampliación de la creación de páginas: Añadir nuevo editor](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor) de entrada para obtener más información.
 
 ## Personalización de la barra de herramientas del componente {#customizing-the-component-toolbar}
 
 La barra de herramientas [de](/help/sites-developing/touch-ui-structure.md#component-toolbar) componentes proporciona al usuario acceso a una serie de acciones para el componente, como editar, configurar, copiar y eliminar.
 
-Consulte [Ampliación de la creación de páginas - Agregar nueva acción a una barra de herramientas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) de componentes para obtener más información.
+Consulte [Ampliación de la creación de páginas: Añadir una nueva acción a una barra de herramientas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) de componentes para obtener más información.
 
 ## Configuración de un componente para el carril de referencias (prestado/alquilado) {#configuring-a-component-for-the-references-rail-borrowed-lent}
 
@@ -348,7 +352,7 @@ Cree una nueva entrada en la definición, especificando el componente, junto con
 >
 >When working with AEM there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
-## Activación y adición del componente al sistema de párrafos {#enabling-and-adding-your-component-to-the-paragraph-system}
+## Habilitar y Añadir el componente en el sistema de párrafos {#enabling-and-adding-your-component-to-the-paragraph-system}
 
 Una vez desarrollado el componente, debe habilitarse para su uso en un sistema de párrafos adecuado, de modo que pueda utilizarse en las páginas requeridas.
 
@@ -359,13 +363,14 @@ Esto se puede realizar mediante:
 
 ## Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM ofrece la posibilidad de configurar un sistema de párrafos en la página para que [una instancia del nuevo componente se cree automáticamente cuando un usuario arrastra un recurso (adecuado) a una instancia de esa página](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (en lugar de arrastrar siempre un componente vacío a la página).
+AEM oferta la posibilidad de configurar un sistema de párrafos en la página para que [una instancia del nuevo componente se cree automáticamente cuando un usuario arrastra un recurso (adecuado) a una instancia de esa página](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (en lugar de arrastrar siempre un componente vacío a la página).
 
 Se puede configurar este comportamiento y la relación entre los recursos y los componentes necesaria:
 
 1. Bajo la definición de párrafo del diseño de página. Por ejemplo:
 
    * `/etc/designs/<myApp>/page/par`
+
    Crear un nuevo nodo:
 
    * Nombre: `cq:authoring`
@@ -381,6 +386,7 @@ Se puede configurar este comportamiento y la relación entre los recursos y los 
 
    * Nombre: texto; se recomienda que el nombre indique el recurso y el tipo de componente relacionado; por ejemplo, image
    * Tipo: `nt:unstructured`
+
    Cada una con las siguientes propiedades:
 
    * `assetGroup`:
@@ -394,7 +400,7 @@ Se puede configurar este comportamiento y la relación entre los recursos y los 
    * `droptarget`:
 
       * Tipo: `String`
-      * Valor: el objetivo de colocación; por ejemplo, `image`
+      * Valor: el destinatario de caída; por ejemplo, `image`
    * `resourceType`:
 
       * Tipo: `String`
@@ -424,7 +430,7 @@ Puede encontrar el código de esta página en GitHub
 
 >[!NOTE]
 >
->La creación automática de instancias de componentes ahora se puede configurar fácilmente en la interfaz de usuario al utilizar componentes [principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) y plantillas editables. Consulte [Creación de plantillas](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) de página para obtener más información sobre cómo definir qué componentes se asocian automáticamente a determinados tipos de medios.
+>La creación automática de instancias de componentes ahora se puede configurar fácilmente en la interfaz de usuario al utilizar componentes [principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) y plantillas editables. Consulte [Creación de plantillas](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) de página para obtener más información sobre cómo definir qué componentes se asocian automáticamente a determinados tipos de medios.
 
 ## Uso de la extensión de corchetes AEM {#using-the-aem-brackets-extension}
 
@@ -433,7 +439,7 @@ La extensión [AEM Bracks](/help/sites-developing/aem-brackets.md) proporciona u
 La extensión:
 
 * Facilita la sincronización (no se requiere Maven ni File Vault) para ayudar a aumentar la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados de AEM a participar en los proyectos.
-* Proporciona cierta compatibilidad con [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) , el lenguaje de plantilla diseñado para simplificar el desarrollo de componentes y aumentar la seguridad.
+* Proporciona cierta compatibilidad con [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) , el lenguaje de plantilla diseñado para simplificar el desarrollo de componentes y aumentar la seguridad.
 
 >[!NOTE]
 >
@@ -445,7 +451,7 @@ Al migrar un componente diseñado para su uso con la IU clásica a un componente
 
 * HTL
 
-   * El uso de [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) no es obligatorio, pero si su componente necesita actualizarse, entonces es el momento ideal para considerar la [migración de JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * El uso de [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) no es obligatorio, pero si su componente necesita actualizarse, entonces es el momento ideal para considerar la [migración de JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componentes
 
@@ -460,7 +466,7 @@ Al migrar un componente diseñado para su uso con la IU clásica a un componente
    * [La asignación de ExtJS a los componentes](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) de la interfaz de usuario de Granite proporciona una visión general práctica de los xtypes y tipos de nodo de ExtJS con sus tipos de recursos de la interfaz de usuario de Granite equivalentes.
    * Personalización de campos, para obtener más información, consulte la sesión de AEM Gems sobre la [personalización de campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)de cuadro de diálogo.
    * Migración de tipos a la validación [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Con los oyentes JS, para obtener más información, consulte [Gestión de eventos](#handling-field-events) de campo y la sesión de AEM Gems sobre la [personalización de campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)de cuadro de diálogo.
+   * Con los oyentes JS, para obtener más información, consulte [Gestión de Eventos](#handling-field-events) de campo y la sesión de AEM Gems sobre la [personalización de campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)de cuadro de diálogo.
 
 ### Migración de código cq:listener {#migrating-cq-listener-code}
 
@@ -496,4 +502,4 @@ Todo lo que necesita es colocar un `README.md` archivo en la estructura de compo
 
 ![climage_1-7](assets/chlimage_1-7.png)
 
-La marca admitida es la misma que la de los fragmentos [de](/help/assets/content-fragments-markdown.md)contenido.
+La marca admitida es la misma que la de los fragmentos [de](/help/assets/content-fragments/content-fragments-markdown.md)contenido.
