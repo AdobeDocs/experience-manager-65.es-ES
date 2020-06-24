@@ -1,6 +1,6 @@
 ---
-title: Agregar Adobe Analytics a la aplicación móvil
-seo-title: Agregar Adobe Analytics a la aplicación móvil
+title: Añadir Adobe Analytics a su aplicación móvil
+seo-title: Añadir Adobe Analytics a su aplicación móvil
 description: Siga esta página para conocer cómo puede utilizar Mobile App Analytics en sus aplicaciones AEM mediante la integración con Adobe Mobile Services.
 seo-description: Siga esta página para conocer cómo puede utilizar Mobile App Analytics en sus aplicaciones AEM mediante la integración con Adobe Mobile Services.
 uuid: d3ff6f9b-0467-4abe-9a59-b3495a6af0f8
@@ -10,12 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1064'
+ht-degree: 0%
 
 ---
 
 
-# Agregar Adobe Analytics a la aplicación móvil{#add-adobe-analytics-to-your-mobile-application}
+# Añadir Adobe Analytics a su aplicación móvil{#add-adobe-analytics-to-your-mobile-application}
 
 >[!NOTE]
 >
@@ -36,10 +39,10 @@ En esta sección se describe cómo *los desarrolladores* de AEM pueden:
 
 ## Prerrequisitos {#prerequisties}
 
-AEM Mobile requiere una cuenta de Adobe Analytics para recopilar y crear informes de los datos de seguimiento en la aplicación. Como parte de la configuración, el *administrador* de AEM primero deberá:
+AEM Mobile requiere una cuenta de Analytics de Adobe para recopilar y crear informes de los datos de seguimiento en la aplicación. Como parte de la configuración, el *administrador* de AEM primero deberá:
 
 * Configure una cuenta de Adobe Analytics y cree un grupo de informes para la aplicación en Mobile Services.
-* Configure un servicio de nube de AMS en Adobe Experience Manager (AEM).
+* Configure un Cloud Service de AMS en Adobe Experience Manager (AEM).
 
 ## Para desarrolladores: Integrar Mobile Analytics en la aplicación {#for-developers-integrate-mobile-analytics-into-your-app}
 
@@ -47,9 +50,9 @@ AEM Mobile requiere una cuenta de Adobe Analytics para recopilar y crear informe
 
 Una vez configurada la cuenta de Analytics, deberá crear una configuración de sincronización de contenido para extraer el contenido de la aplicación móvil.
 
-Para obtener más información, consulte Configuración del contenido de sincronización de contenido. La configuración deberá indicar a Content Sync que coloque ADBMobileConfig en el directorio /www. Por ejemplo, en la aplicación Geometrixx Outdoors, la configuración de la sincronización de contenido se encuentra en: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. También hay una configuración para el desarrollo; sin embargo, es idéntico a la configuración de no desarrollo en el caso de Geometrixx Outdoors.
+Para obtener más información, consulte Configuración del contenido de sincronización de contenido. La configuración deberá indicar a Content Sync que coloque ADBMobileConfig en el directorio /www. Por ejemplo, en la aplicación Geometrixx Outdoors, la configuración de la sincronización de contenido se encuentra en: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. También hay una configuración para el desarrollo; sin embargo, es idéntica a la configuración de no desarrollo en el caso de Geometrixx Outdoors.
 
-Para obtener más información sobre cómo descargar ADBMobileConfig desde el panel Aplicaciones AEM de aplicaciones móviles, consulte el archivo de configuración del SDK de Analytics - Mobile Services - Adobe Mobile Services.
+Para obtener más información sobre cómo descargar ADBMobileConfig desde el panel de aplicaciones AEM de aplicaciones móviles, consulte Analytics - Mobile Services - Archivo de configuración del SDK de Adobe Mobile Services.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -86,7 +89,7 @@ Para iOS, el archivo deberá copiarse en el directorio de **recursos** del proye
     ]
 ```
 
-### Agregar el complemento AMS en la aplicación {#add-the-ams-plugin-in-the-app}
+### Añadir el complemento AMS en la aplicación {#add-the-ams-plugin-in-the-app}
 
 Para que la aplicación recopile los datos, es necesario incluir el complemento Adobe Mobile Services (AMS) como parte de la aplicación. Al incluir el complemento como una función en el archivo config.xml de la aplicación, se puede usar otro enlace de Cordova para agregar automáticamente el complemento durante el proceso de compilación de PhoneGap.
 
@@ -102,7 +105,7 @@ Después de realizar estos pasos, la aplicación se habilitará para informar de
 
 ### Instrumente el código para el seguimiento completo de la aplicación {#instrument-your-code-for-full-app-tracking}
 
-Existen varias API de seguimiento en la API del complemento [AMS Phonegap.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/phonegap_methods.html)
+Existen varias API de seguimiento en la API del complemento [AMS Phonegap.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 Esto le permitirá rastrear estados y acciones como dónde navegan los usuarios en la aplicación, qué controles se utilizan con mayor frecuencia. La forma más sencilla de instrumentar su aplicación para el seguimiento es utilizar las API de Analytics proporcionadas por el complemento AMS.
 
@@ -113,9 +116,11 @@ Como referencia, puede consultar el código en la aplicación Geometrixx Outdoor
 
 Al instrumentar el código fuente con estas llamadas de método, puede recopilar métricas completas en la aplicación.
 
-### Prueba del seguimiento de Analytics con Bloodhound {#testing-analytics-tracking-with-bloodhound}
+### Prueba del seguimiento de Analytics con Bloodhound  {#testing-analytics-tracking-with-bloodhound}
 
 ![](do-not-localize/chlimage_1.jpeg)
+
+<!--NOTE TO WRITER: Bloodhound is no longer available.-->
 
 De forma opcional, antes de realizar la implementación en producción, puede utilizar la herramienta de Adobe [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) para probar la configuración de análisis. Para probar la configuración de análisis, deberá editar el archivo ADBMobileConfig.json para que apunte al servidor en el que se está ejecutando Bloodhound en lugar del servidor de Analytics real. Para realizar este cambio, desde ADBMobileConfig.json cambie la siguiente entrada.
 
@@ -137,7 +142,7 @@ Cambiar para que coincida con esta entrada:
 ...
 ```
 
-Esto redireccionará todos los datos recopilados por el complemento AMS a Bloodhound para que pueda ver los resultados.
+Esto redireccionará todos los datos recopilados por el complemento AMS a Bloodhound para que pueda realizar la vista de los resultados.
 
 #### Propiedades para la conexión a AMS {#properties-for-connecting-to-ams}
 
@@ -147,5 +152,5 @@ Esto redireccionará todos los datos recopilados por el complemento AMS a Bloodh
 |---|---|---|
 | Extremo de API | La dirección URL base de las API HTTP de Adobe Mobile Services | https://api.omniture.com |
 | Extremo de configuración | La dirección URL utilizada para recuperar la configuración móvil de ADB para la ID de grupo de informes dada | /ams/1.0/app/config/ |
-| Aplicaciones de Mobile Service | Obtener una lista de aplicaciones dentro de la empresa de usuarios | /ams/1.0/apps |
+| Aplicaciones de Mobile Service | Obtener una lista de aplicaciones dentro de la compañía de usuarios | /ams/1.0/apps |
 
