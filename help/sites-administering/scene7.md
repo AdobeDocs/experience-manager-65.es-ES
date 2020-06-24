@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '5474'
+source-wordcount: '5473'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,6 @@ Para obtener información sobre el uso de todos los componentes de Dynamic Media
 >* La plataforma de visor DHTML de Dynamic Media Classic llegó oficialmente al final de su vida útil el 31 de enero de 2014. Para obtener más información, consulte las preguntas más frecuentes [sobre el final de la vida útil del visor](../sites-administering/dhtml-viewer-endoflifefaqs.md)DHTML.
 >* Antes de configurar Dynamic Media Classic para que funcione con AEM, consulte [Prácticas](#best-practices-for-integrating-scene-with-aem) recomendadas para integrar Dynamic Media Classic con AEM.
 >* Si está utilizando Dynamic Media Classic con una configuración proxy personalizada, debe configurar ambas configuraciones proxy del cliente HTTP, ya que algunas funcionalidades de AEM utilizan las API 3.x y otras las API 4.x. 3.x está configurado con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) y 4.x está configurado con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
-
 >
 
 
@@ -343,7 +342,6 @@ Para configurar AEM para que pueda publicar recursos en Dynamic Media Classic:
 >
 >* Al volver a conectarse a Dynamic Media Classic al realizar la publicación, es posible que tenga que restablecer la contraseña al publicar o que la reconexión no funcione. No se trata de un problema en la instancia de creación.
 >* Si modifica valores como la región, el nombre de la compañía, debe volver a conectarse a Dynamic Media Classic. Si las opciones de configuración se han modificado pero no se han guardado, AEM seguirá indicando erróneamente que la configuración es válida. Asegúrese de volver a conectarse.
-
 >
 
 
@@ -399,7 +397,7 @@ Para configurar la carga automática desde AEM Assets:
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
 1. Vuelva a la página de bienvenida de AEM y toque **[!UICONTROL Flujos de trabajo.]** Haga clic con el botón Doble en el flujo de trabajo de recursos **de actualización de** DAM para abrirlo.
-1. En la barra de tareas, vaya a los componentes **[!UICONTROL Flujo de trabajo]** y seleccione **[!UICONTROL Dynamic Media Classic.]** Arrastre **[!UICONTROL Dynamic Media Classic]** al flujo de trabajo y toque **[!UICONTROL Guardar.]** Los recursos añadidos a AEM Assets de la carpeta destinatario se cargarán automáticamente en Dynamic Media Classic.
+1. En la barra de tareas, vaya a los componentes **[!UICONTROL Flujo de trabajo]** y seleccione **[!UICONTROL Dynamic Media Classic.]** Arrastre **[!UICONTROL Dynamic Media Classic]** al flujo de trabajo y toque **[!UICONTROL Guardar.]** Los recursos añadidos a los AEM Assets de la carpeta destinatario se cargarán automáticamente en Dynamic Media Classic.
 
    ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -571,7 +569,7 @@ Concretamente, puede configurar el formato de archivo aceptado por tipo MIME en 
 
    Por ejemplo, `psprocess="rasterize"&psresolution=120` .
 
-   Consulte la API [de sistema de producción de imágenes de](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/) Adobe Classic para obtener parámetros de trabajo de carga adicionales que puede utilizar.
+   Consulte la API [de sistema de producción de imágenes de](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) Adobe Classic para obtener parámetros de trabajo de carga adicionales que puede utilizar.
 
    >[!NOTE]
    >
