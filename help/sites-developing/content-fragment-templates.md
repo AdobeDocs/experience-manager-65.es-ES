@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
 
 >[!CAUTION]
 >
->[Ahora se recomiendan modelos](/help/assets/content-fragments-models.md) de fragmentos de contenido para crear todos los fragmentos.
+>[Ahora se recomiendan modelos](/help/assets/content-fragments/content-fragments-models.md) de fragmentos de contenido para crear todos los fragmentos.
 >
 >Los modelos de fragmentos de contenido se utilizan en todos los ejemplos de We.Retail.
 
