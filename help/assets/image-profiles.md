@@ -8,7 +8,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
 source-wordcount: '2755'
 ht-degree: 14%
@@ -257,14 +257,12 @@ Puede volver a ejecutar el recorte inteligente para generar los cultivos adicion
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, toque o haga clic en la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
-
       ![Cambiar el tamaño del recorte inteligente de una imagen.](assets/edit_smart_crops-resize.png)
 
    * Mueva el cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, arrastre el cuadro de recorte a una nueva ubicación.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, toque o haga clic en la muestra inteligente situada debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestras inteligente a una nueva ubicación.
-
       ![edit_smart_groups-move](assets/edit_smart_crops-move.png)
 
    * Deshace todas las ediciones y restaura el recorte inteligente o la muestra inteligente original (solo se aplica a la sesión de edición actual).
