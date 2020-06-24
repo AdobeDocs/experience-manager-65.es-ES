@@ -1,6 +1,6 @@
 ---
-title: Configuración del seguimiento de vídeo para Adobe Analytics
-seo-title: Configuración del seguimiento de vídeo para Adobe Analytics
+title: Configuración del seguimiento de videos para Adobe Analytics
+seo-title: Configuración del seguimiento de videos para Adobe Analytics
 description: Obtenga información sobre la configuración del seguimiento de videos para SiteCatalyst.
 seo-description: Obtenga información sobre la configuración del seguimiento de videos para SiteCatalyst.
 uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1766'
+ht-degree: 1%
 
 ---
 
 
-# Configuración del seguimiento de vídeo para Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
+# Configuración del seguimiento de videos para Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Hay varios métodos disponibles para el seguimiento de eventos de vídeo, dos de los cuales son opciones heredadas para versiones anteriores de Adobe Analytics. Estas opciones heredadas son: Hitos heredados y segundos heredados.
+Existen varios métodos disponibles para el seguimiento de eventos de vídeo, dos de los cuales son opciones heredadas para versiones anteriores de Adobe Analytics. Estas opciones heredadas son: Hitos heredados y segundos heredados.
 
 >[!NOTE]
 >
@@ -30,7 +33,7 @@ Utilice el procedimiento siguiente para configurar un marco para el seguimiento 
 
 >[!NOTE]
 >
->En implementaciones nuevas, se recomienda **no utilizar** las opciones heredadas para el seguimiento de vídeo. En su lugar, utilice el método **Hitos** .
+>Para nuevas implementaciones, se recomienda **no utilizar** las opciones heredadas para el seguimiento de vídeo. En su lugar, utilice el método **Hitos** .
 
 ## Pasos comunes {#common-steps}
 
@@ -41,7 +44,7 @@ Utilice el procedimiento siguiente para configurar un marco para el seguimiento 
    * Los ejemplos de las secciones siguientes utilizan el nombre **my-sc-configuration** para la configuración y la **videofw** para la estructura.
 
 1. En la página de marco, seleccione un RSID y defina el uso en todos. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. En la categoría de componentes General de la barra de tareas, arrastre el componente Vídeo al marco.
+1. En la categoría de componentes General de la barra de tareas, arrastre el componente Vídeo a la estructura.
 1. Seleccione un método de seguimiento:
 
    * [Hitos](/help/sites-administering/adobeanalytics.md)
@@ -49,13 +52,13 @@ Utilice el procedimiento siguiente para configurar un marco para el seguimiento 
    * [Hitos heredados](/help/sites-administering/adobeanalytics.md)
    * [Segundos heredados](/help/sites-administering/adobeanalytics.md)
 
-1. Al seleccionar un método de seguimiento, la lista de variables de CQ cambia en consecuencia. Utilice las secciones siguientes para obtener información sobre cómo seguir configurando el componente y asignar las variables de CQ con las propiedades de Adobe Analytics.
+1. Al seleccionar un método de seguimiento, la lista de las variables de CQ cambia en consecuencia. Utilice las secciones siguientes para obtener información sobre cómo seguir configurando el componente y asignar las variables de CQ con las propiedades de Adobe Analytics.
 
 ## Milestones {#milestones}
 
 El método Hitos rastrea la mayor cantidad de información sobre el vídeo, es altamente personalizable y fácil de configurar.
 
-Para utilizar el método Hitos, especifique los desplazamientos de seguimiento basados en el tiempo para definir los hitos. Cuando una reproducción de vídeo supera un hito, la página llama a Adobe Analytics para realizar el seguimiento del evento. Para cada hito que defina, el componente crea una variable de CQ que puede asignar a una propiedad de Adobe Analytics. El nombre de estas variables de CQ utiliza el siguiente formato:
+Para utilizar el método Hitos, especifique los desplazamientos de seguimiento basados en el tiempo para definir los hitos. Cuando una reproducción de vídeo supera un hito, la página llama a Adobe Analytics para realizar un seguimiento del evento. Para cada hito que defina, el componente crea una variable de CQ que puede asignar a una propiedad de Adobe Analytics. El nombre de estas variables de CQ utiliza el siguiente formato:
 
 ```shell
 eventdata.events.milestoneXX
@@ -83,11 +86,11 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Las variables asignadas a esto contendrán el nombre del archivo. Solo se envía junto con eventdata.events.a.media.view </td>
+   <td>Las variables asignadas a esto contendrán el nombre del archivo. Solo se envía junto con eventdata.eventos.a.media.vista </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Las variables asignadas a esto contendrán la ruta del archivo en el servidor. Solo se envía junto con eventdata.events.a.media.view </td>
+   <td>Las variables asignadas a esto contendrán la ruta del archivo en el servidor. Solo se envía junto con eventdata.eventos.a.media.vista </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
@@ -111,7 +114,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Enviado en cada hito; se muestra como pev3 en la llamada de Adobe Analytics, generalmente enviada como "video"<br /> </td>
+   <td>Enviado en cada hito; aparece como pev3 en la llamada de Analytics de Adobe, generalmente enviada como "video"<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -134,22 +137,22 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
    4,8,16,20,24
    ```
 
-   Los valores de desplazamiento deben ser enteros mayores que 0. El valor predeterminado es `10,25,50,75`.
+   Los valores de desplazamiento deben ser enteros que sean buenos a 0. El valor predeterminado es `10,25,50,75`.
 
-1. Para asignar las variables de CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable de CQ del componente.
+1. Para asignar las variables de CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable de CQ en el componente.
 
-   Para obtener información sobre la optimización de las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) .
+   Para obtener información sobre la optimización de las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .
 
-1. [Agregue el marco](/help/sites-administering/adobeanalytics.md) a la página.
-1. Para probar la configuración en modo **de** vista previa, reproduzca el vídeo para que se activen las llamadas de Adobe Analytics.
+1. [Añada la estructura](/help/sites-administering/adobeanalytics.md) a la página.
+1. Para probar la configuración en modo **de** Previsualización, reproduzca el vídeo para que se activen las llamadas de Adobe Analytics.
 
-Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al seguimiento de hitos mediante compensaciones de seguimiento de 4, 8, 16, 20 y 24, y las siguientes asignaciones para las variables de CQ:
+Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al seguimiento de hitos mediante desplazamientos de seguimiento de 4, 8, 16, 20 y 24, y las siguientes asignaciones para las variables de CQ:
 
 <table>
  <tbody>
   <tr>
    <th>variable de CQ</th>
-   <th>Propiedad de Adobe Analytics</th>
+   <th>Propiedad Adobe Analytics</th>
   </tr>
   <tr>
    <td>eventdata.videoName </td>
@@ -230,23 +233,23 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deben tener
 
 * *prop1 y eVar1 para eventdata.a.media.name,*
 * *props2-4, junto con eVar2 y eVar3 que contienen contentType (vídeo) y segment (1:O:1-4)*
-* *event3 que se asignó a eventData.events.a.media.view.*
+* *evento3 que se asignó a eventdata.eventos.a.media.vista.*
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
 *Esta es la **tercera llamada**realizada a Adobe Analytics:*
 
 * *prop1 y eVar1 contienen a.media.name;*
-* *event1 porque se ha visto un segmento*
-* *event2 enviado con tiempo de reproducción = 4*
-* *event11 enviado porque se ha alcanzado event.events.milestone8*
-* *no se envían prop2 a 4 (ya que event.events.a.media.view no se activó)*
+* *evento 1 porque se ha visto un segmento*
+* *evento2 enviado con tiempo de reproducción = 4*
+* *evento11 enviado porque se ha alcanzado eventdata.eventos.milestone8*
+* *no se envían prop2 a 4 (ya que no se activó event.data.eventos.a.media.vista)*
 
 ## Hitos no heredados {#non-legacy-milestones}
 
 El método de hitos no heredados es similar al método de hitos, excepto que los hitos se definen usando porcentajes de la longitud de la pista. Las características comunes son las siguientes:
 
-* Cuando una reproducción de vídeo supera un hito, la página llama a Adobe Analytics para realizar el seguimiento del evento.
+* Cuando una reproducción de vídeo supera un hito, la página llama a Adobe Analytics para realizar un seguimiento del evento.
 * Conjunto [estático de variables](#cqvars) de CQ que se definen para la asignación con propiedades de Adobe Analytics.
 * Para cada hito que defina, el componente crea una variable de CQ que puede asignar a una propiedad de Adobe Analytics.
 
@@ -263,20 +266,20 @@ El sufijo XX es el porcentaje de longitud de la pista que define el hito. Por ej
 eventdata.events.milestoneXX
 ```
 
-1. Después de seleccionar Hitos no heredados como método de seguimiento, en el cuadro Desplazamiento de seguimiento, introduzca una lista separada por comas de los porcentajes de la longitud de la pista. Por ejemplo, el siguiente valor predeterminado define hitos en un 10, 25, 50 y 75 por ciento de la longitud de la pista:
+1. Después de seleccionar los hitos no heredados como método de seguimiento, en el cuadro Desplazamiento de seguimiento, introduzca una lista separada por comas de los porcentajes de la longitud de la pista. Por ejemplo, el siguiente valor predeterminado define hitos en un 10, 25, 50 y 75 por ciento de la longitud de la pista:
 
    ```xml
    10,25,50,75
    ```
 
-   Los valores de desplazamiento deben ser enteros mayores que 0.
+   Los valores de desplazamiento deben ser enteros que sean buenos a 0.
 
-1. Para asignar las variables de CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable de CQ del componente.
+1. Para asignar las variables de CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable de CQ en el componente.
 
-   Para obtener información sobre la optimización de las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) .
+   Para obtener información sobre la optimización de las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .
 
-1. [Agregue el marco](/help/sites-administering/adobeanalytics.md) a la página.
-1. Para probar la configuración en modo **de** vista previa, reproduzca el vídeo para que se activen las llamadas de Adobe Analytics.
+1. [Añada la estructura](/help/sites-administering/adobeanalytics.md) a la página.
+1. Para probar la configuración en modo **de** Previsualización, reproduzca el vídeo para que se activen las llamadas de Adobe Analytics.
 
 ## Hitos heredados {#legacy-milestones}
 
@@ -288,7 +291,8 @@ Este método es similar al método Hitos con la diferencia de que los hitos espe
 
 1. Establezca el desplazamiento de la pista.
 
-   * p. ej. 10,50,75,100
+   * e.g.10,50,75,100
+
    Además, la información enviada a Adobe Analytics es menos personalizable; solo hay 3 variables disponibles para la asignación:
 
 <table>
@@ -330,7 +334,7 @@ Este método es similar al método Hitos con la diferencia de que los hitos espe
 
    * *Segundos totales reproducidos* : el número total de segundos que se reprodujo el vídeo (*25*)
 
-   * *Marca de hora* de inicio: marca de hora que identifica cuándo se inició la reproducción del vídeo (*1331035567*)
+   * *Marca de hora* de Inicio: Marca de hora que identifica cuándo se inició la reproducción del vídeo (*1331035567*)
 
    * *Sesión* de reproducción: los detalles de la sesión de reproducción. Este campo indica cómo interactuó el usuario con el vídeo. Esto puede incluir datos como dónde empezaron a reproducir el vídeo, si utilizaron el control deslizante para avanzar en el vídeo y dónde dejaron de reproducirlo (*L10E24S58L58 - el vídeo se detuvo en segundos. 25 de la sección L10, luego se omitió a seg. 48*)
 
@@ -380,4 +384,4 @@ Al utilizar el método** de segundos heredados**, las llamadas de Adobe Analytic
 
 **Referencias utilizadas en este tutorial:**
 
-[0] [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html)
+[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
