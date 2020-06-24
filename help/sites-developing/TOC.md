@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Developing User Guide
+user-guide-title: Guía del usuario de desarrollo de AEM 6.5
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 10%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 + [Información general sobre cómo desarrollar la guía del usuario](home.md)
 + Introducción para desarrolladores{#introduction}
-   + [Tutorial de WKND para empezar a desarrollar sitios de AEM](getting-started.md)
+   + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](getting-started.md)
    + [Conceptos principales de AEM](the-basics.md)
    + [Estructura de la IU táctil de AEM](touch-ui-structure.md)
    + [Conceptos de la IU táctil de AEM](touch-ui-concepts.md)
@@ -44,16 +47,16 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Convenciones de nomenclatura](naming-conventions.md)
    + [Creación de un nuevo componente de campo de interfaz de usuario de Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
-      + [Implementación de un evaluador de predicados personalizado para el Generador de consultas](implementing-custom-predicate-evaluator.md)
-      + [Referencia de predicado del Generador de consultas](querybuilder-predicate-reference.md)
-      + [API de Query Builder](querybuilder-api.md)
+      + [Implementación de un evaluador de predicados personalizado para el Generador de Consultas](implementing-custom-predicate-evaluator.md)
+      + [Referencia de predicado del Generador de Consultas](querybuilder-predicate-reference.md)
+      + [API de Consulta Builder](querybuilder-api.md)
    + Etiquetado{#tagging}
       + [Etiquetado](tags.md)
       + [AEM Tagging Framework](framework.md)
       + [Creación del etiquetado en una aplicación AEM](building.md)
    + [Personalización de páginas mostradas por el controlador de errores](customizing-errorhandler-pages.md)
    + [Tipos de nodos personalizados](custom-nodetypes.md)
-   + [Adición de fuentes para la representación gráfica](adding-fonts.md)
+   + [Añadir fuentes para procesamiento gráfico](adding-fonts.md)
    + [Conexión a bases de datos SQL](jdbc.md)
    + [Externalización de direcciones URL](externalizer.md)
    + [Creación y consumo de trabajos para descarga](dev-offloading.md)
@@ -67,7 +70,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Desarrollo (genérico)](generic.md)
       + [Desarrollo con SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componentes{#components}
-   + [Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
    + [Sistema de estilos](/help/sites-authoring/style-system.md)
    + [Información general de componentes](components.md)
    + [Componentes de AEM: conceptos básicos](components-basics.md)
@@ -108,12 +111,12 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Modelo SPA](spa-blueprint.md)
       + [Componente de página de SPA](spa-page-component.md)
       + [Asignación dinámica de modelos a componentes para SPA](spa-dynamic-model-to-component-mapping.md)
-      + [Enrutamiento de modelo SPA](spa-routing.md)
-      + [Integración de inicio de SPA y Adobe Experience Platform](spa-launch.md)
+      + [Enrutamiento del modelo SPA](spa-routing.md)
+      + [Integración de inicio de Adobe Experience Platform y SPA](spa-launch.md)
       + [SPA y procesamiento del lado del servidor](spa-ssr.md)
       + [Referencias de la API de JavaScript de SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
-   + [Fragmentos de contenido](/help/assets/content-fragments.md)
+   + [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
    + [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)
    + [Explicación de los fragmentos de contenido y los servicios de contenido en AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Herramientas de desarrollo{#devtools}
@@ -132,10 +135,10 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Herramientas para desarrolladores de AEM para Eclipse](aem-eclipse.md)
    + [Herramienta AEM Repo](aem-repo-tool.md)
 + Personalización{#personlization}
-   + [Context Hub](contexthub.md)
+   + [ContextHub](contexthub.md)
    + [Referencia de la API de JavaScript de ContextHub](contexthub-api.md)
    + [Ampliación de ContextHub](ch-extend.md)
-   + [Adición de ContextHub a páginas y acceso a tiendas](ch-adding.md)
+   + [Añadir ContextHub en páginas y acceder a tiendas](ch-adding.md)
    + [Ejemplos de candidatos de la tienda ContextHub](ch-samplestores.md)
    + [Tipos de módulos de interfaz de usuario de ContextHub de muestra](ch-samplemodules.md)
    + [Diagnósticos de ContextHub](ch-diagnostics.md)
@@ -146,34 +149,34 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + Ampliación de AEM{#extending-aem}
    + [Personalización de la creación de páginas](customizing-page-authoring-touch.md)
    + [Personalización de las consolas](customizing-consoles-touch.md)
-   + [Personalización de vistas de propiedades de página](page-properties-views.md)
+   + [Personalización de Vistas de propiedades de página](page-properties-views.md)
    + [Configuración de la página para la edición masiva de las propiedades de la página](bulk-editing.md)
-   + [Personalización y ampliación de fragmentos de contenido](customizing-content-fragments.md)
-   + [Fragmentos de contenido Configuración de componentes para procesamiento](content-fragments-config-components-rendering.md)
+   + [Personalizar y ampliar fragmentos de contenido](customizing-content-fragments.md)
+   + [Fragmentos de contenido Configurar componentes para procesamiento](content-fragments-config-components-rendering.md)
    + [Fragmentos de experiencias](experience-fragments.md)
-   + Ampliación de flujos de trabajo{#extending-workflows}
-      + [Desarrollo y ampliación de flujos de trabajo](workflows.md)
+   + Ampliación de Flujos de trabajo{#extending-workflows}
+      + [Desarrollo y ampliación de Flujos de trabajo](workflows.md)
       + [Creación de modelos de flujo de trabajo](workflows-models.md)
       + [Ampliación de la funcionalidad del flujo de trabajo](workflows-customizing-extending.md)
-      + [Interactuar con flujos de trabajo mediante programación](workflows-program-interaction.md)
+      + [Interactuar con Flujos de trabajo mediante programación](workflows-program-interaction.md)
       + [Referencia de pasos de flujo de trabajo](workflows-step-ref.md)
       + [Prácticas recomendadas del flujo de trabajo](workflows-best-practices.md)
       + [Referencia del proceso de flujo de trabajo](workflows-process-ref.md)
-      + [Variables en flujos de trabajo de AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Variables en flujos de trabajo AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Ampliación del Administrador de varios sitios](extending-msm.md)
-   + Seguimiento y análisis{#extending-analytics}
-      + [Ampliación del seguimiento de eventos](extending-analytics.md)
-      + [Adición del seguimiento de Adobe Analytics a componentes](extending-analytics-components.md)
+   + Seguimiento y Analytics{#extending-analytics}
+      + [Ampliación del seguimiento de Eventos](extending-analytics.md)
+      + [Añadir el seguimiento de Analytics de Adobe a los componentes](extending-analytics-components.md)
       + [Personalización de Adobe Analytics Framework](extending-analytics-framework.md)
       + [Implementación de la nominación de páginas del lado del servidor para Analytics](extending-analytics-pa-naming.md)
-   + Servicios de nube{#extending-cloud-services}
+   + Cloud Services{#extending-cloud-services}
       + [Configuraciones de Cloud Service](extending-cloud-config.md)
-      + [Creación de un servicio de nube personalizado](extending-cloud-config-custom-cloud.md)
+      + [Creación de un Cloud Service personalizado](extending-cloud-config-custom-cloud.md)
    + [Creación de extensiones personalizadas](extending-campaign-extensions.md)
-   + Formularios{#extending-forms}
+   + Forms{#extending-forms}
       + [Creación de asignaciones de formularios personalizados](extending-campaign-form-mapping.md)
       + [Creación de una plantilla de página personalizada de AEM con componentes de formulario de Adobe Campaign](extending-campaign-custom-template.md)
-      + [Solicitar script de análisis](analyze-request.md)
+      + [Secuencia de comandos de Análisis de solicitudes](analyze-request.md)
    + [Integración de servicios con la consola JMX](jmx-integration.md)
    + [Desarrollo del editor en masa](dev-bulk-editor.md)
    + Ampliación de la IU clásica{#extending-classic-ui}
@@ -182,7 +185,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Desarrollo de informes](dev-reports.md)
 + Pruebas{#testing}
    + [Planificación](planning.md)
-   + [¿Qué entornos de prueba serán necesarios?](test-environments.md)
+   + [¿Qué Entornos de prueba serán necesarios?](test-environments.md)
    + [Definición de los casos de prueba](test-cases.md)
    + [Pruebas: ¿cuándo y con quién?](when-who.md)
    + [Compilación del plan de pruebas](test-plan.md)
@@ -193,7 +196,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Listas de comprobación](checklists.md)
    + [Día duro](tough-day.md)
    + [Prueba de la IU](hobbes.md)
-+ Prácticas recomendadas{#bestpractices}
++ Prácticas recomendadas {#bestpractices}
    + [Información general sobre prácticas recomendadas](best-practices.md)
    + [Directrices y prácticas recomendadas de desarrollo de AEM](dev-guidelines-bestpractices.md)
    + [Optimizaciones para el desarrollo](development-practices.md)
@@ -212,10 +215,10 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Paquetes OSGI](osgi-bundles.md)
    + [Integración de JCR](jcr-integration.md)
    + [Ejemplos de código](code-samples.md)
-   + [Resolución de problemas de consultas lentas](troubleshooting-slow-queries.md)
+   + [Resolución de problemas de Consultas lentas](troubleshooting-slow-queries.md)
 + Web para móvil{#mobileweb}
    + [Web para móvil](mobile-web.md)
-   + [Creación de filtros de grupo de dispositivos](groupfilters.md)
+   + [Creación de Filtros de grupos de dispositivos](groupfilters.md)
    + [Diseño adaptable para páginas Web](responsive.md)
    + [Creación de sitios para dispositivos móviles](mobile.md)
    + [Emuladores](emulators.md)
