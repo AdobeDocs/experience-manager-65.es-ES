@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
 source-wordcount: '4345'
 ht-degree: 2%
@@ -56,9 +56,10 @@ Consulte [(Opcional) Creación de un ajuste preestablecido](/help/assets/managin
 Consulte [Carga de letreros](#uploading-an-image-banner)de imagen.
 
 1. **Añadir zonas interactivas en una pancarta** de imagen: Añada una o varias zonas interactivas en una pancarta de imagen y asocie cada una de ellas a una acción como un hipervínculo, una vista rápida o un fragmento de experiencia. Después de agregar zonas interactivas, esta tarea se completará publicando la imagen interactiva.
-Consulte [Añadir zonas interactivas en un letrero](#adding-hotspots-to-an-image-banner)de imagen.
-Consulte [Vista previa de imágenes](#optional-previewing-interactive-images) interactivas: opcional. Si lo desea, puede realizar una vista de la representación de la pancarta de ventas y probar su interactividad.
-Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
+
+   * Consulte [Añadir zonas interactivas en un letrero](#adding-hotspots-to-an-image-banner)de imagen.
+   * Consulte [Vista previa de imágenes](#optional-previewing-interactive-images) interactivas: opcional. Si lo desea, puede realizar una vista de la representación de la pancarta de ventas y probar su interactividad.
+   * Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
 
 1. **Añadir una imagen interactiva en el sitio web o en el sitio web en AEM**. Si utiliza AEM Sites, AEM eCommerce o ambos, puede añadir la imagen interactiva directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Si utiliza AEM Assets y Dynamic Media de forma independiente, debe copiar el código incrustado en el sitio web y luego integrarlo con la vista rápida existente. Consulte [Integración de una imagen interactiva con el sitio Web](#integrating-an-interactive-image-with-your-website).
@@ -72,6 +73,7 @@ Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el n
 >
 >* Para agregar interactividad a la imagen, active las vistas rápidas.
 >* La implementación de AEM *no utiliza* un marco de integración de comercio electrónico para extraer datos de productos en AEM desde cualquier solución de comercio electrónico, como comercio de esfera web de IBM, ruta elástica, híbris o Intershop. Consulte Conceptos [de comercio electrónico en AEM Assets](/help/sites-administering/concepts.md).
+
 >
 >
 Si su implementación de AEM utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
@@ -84,7 +86,7 @@ Es importante identificar correctamente el número y el tipo de variables que se
 
 Existen diferentes maneras de identificar un conjunto de variables que se utilizarán para los datos de puntos interactivos.
 
-A veces puede bastar con consultar con especialistas de TI responsables de la implementación de Quickview existente, ya que es probable que sepan cuál es el conjunto mínimo de datos necesario para identificar Quickview en el sistema. Sin embargo, en la mayoría de los casos también es posible simplemente analizar el comportamiento existente del código front-end.
+A veces puede bastar con consultar con los especialistas de TI responsables de la implementación de Quickview existente, ya que es probable que sepan cuál es el conjunto mínimo de datos necesario para identificar Quickview en el sistema. Sin embargo, en la mayoría de los casos también es posible simplemente analizar el comportamiento existente del código front-end.
 
 La mayoría de las implementaciones de Quickview utilizan el siguiente paradigma:
 
@@ -287,6 +289,7 @@ Consulte [(Opcional) Vista previa de imágenes](#optional-previewing-interactive
 
       * Si es cliente de AEM Sites, toque o haga clic en el icono (carpeta) Selector de sitio para navegar a una dirección URL. Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
       * Si es un cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
+
    Asegúrese de especificar si desea abrir el vínculo en una nueva ficha del explorador (opción predeterminada recomendada) o en la misma ficha.
 
    Consulte [Uso de selectores](/help/assets/working-with-selectors.md) para obtener más información.
