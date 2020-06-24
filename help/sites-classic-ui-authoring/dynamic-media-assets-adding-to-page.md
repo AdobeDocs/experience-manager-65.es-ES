@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1716'
 ht-degree: 55%
 
 ---
@@ -66,6 +66,7 @@ El componente Dynamic Media es inteligente, ya sea que agregue una imagen o un v
 >
 >* [Dynamic Media](/help/assets/config-dynamic.md) se ha activado. Dynamic Media está desactivado de forma predeterminada.
 >* La imagen tiene un archivo TIFF piramidal. Las imágenes importadas antes de la activación de Dynamic Media no tienen un archivo TIFF piramidal.
+
 >
 
 
@@ -94,7 +95,7 @@ Esta es la única opción disponible al visualizar conjuntos de imágenes, conju
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-**[!UICONTROL Modificadores]** de imagen: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL Modificadores]** de imagen: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -140,7 +141,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 En AEM 6.2, cuando instala [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se entrega sobre una conexión SSL segura (HTTPS) o una conexión no segura (HTTP). De manera predeterminada, el protocolo de envío de vídeo se hereda automáticamente del protocolo de la página web en el que se integra el vídeo. Si la página web se carga sobre HTTPS, el vídeo también se envía sobre HTTPS. Del mismo modo, si la página web se carga sobre HTTP, el vídeo se envía sobre HTTP. En la mayoría de los casos, el comportamiento predeterminado es adecuado y no hace falta realizar cambios en la configuración. Sin embargo, puede sustituir este comportamiento predeterminado si anexa `VideoPlayer.ssl=on` al final de una ruta de URL o a la lista de otros parámetros de configuración de visor en un fragmento de código integrado para forzar el envío de vídeo seguro.
 
-Para obtener más información sobre el envío de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl`   en la ruta de URL, consulte [Envío de vídeo seguro](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_viewer_20_securevideodelivery.html) en la Guía de referencia de visores. Además del visor de vídeo, el envío de vídeo seguro está disponible para el visor de medios mixtos y el visor de vídeo interactivo.
+Para obtener más información sobre el envío de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl`   en la ruta de URL, consulte [Envío de vídeo seguro](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) en la Guía de referencia de visores. Además del visor de vídeo, el envío de vídeo seguro está disponible para el visor de medios mixtos y el visor de vídeo interactivo.
 
 ### Componente de Medios interactivos {#interactive-media-component}
 
