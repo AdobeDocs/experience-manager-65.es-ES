@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de Experience Manager 6.5 Assets
 translation-type: tm+mt
-source-git-commit: db60a7297defa2ed8e7f30f148d0f74a73a49893
+source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 41%
@@ -18,26 +18,26 @@ ht-degree: 41%
 + [Notas de la versión de Recursos AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
-+ Uso de AEM Assets {#using}
++ Usar AEM Assets {#using}
    + [Experiencia de página de inicio de AEM Assets](assets-home-page.md)
    + [Buscar recursos en AEM](search-assets.md)
    + [Recursos multilingües](multilingual-assets.md)
-   + [Uso [!DNL Adobe Stock] de recursos en AEM Assets](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Uso de recursos en AEM Assets](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
    + [Flujo de Actividad en la línea de tiempo](activity-stream.md)
    + [Procesar recursos](assets-workflow.md)
    + [Añadir mapas de imagen](image-maps.md)
    + [Reutilización de recursos mediante MSM](reuse-assets-using-msm.md)
-   + [Recursos conectados con sitios AEM](use-assets-across-connected-assets-instances.md)
+   + [Recursos conectados con AEM Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Newsletter sobre Dynamic Media de Experience League](dynamic-media-newsletter.md)
-   + [Configurar Dynamic Media](administering-dynamic-media.md)
-   + [Trabajar con Dynamic Media](dynamic-media.md)
-   + [Configuración de Dynamic Media: modo Scene7](config-dms7.md)
+   + [Configuración de Dynamic Media](administering-dynamic-media.md)
+   + [Trabajo con Dynamic Media](dynamic-media.md)
+   + [Configuración de Dynamic Media - modo de Scene7](config-dms7.md)
    + [Configuración de Dynamic Media - Modo híbrido](config-dynamic.md)
-   + [Resolución de problemas de Dynamic Media: modo de Scene7](troubleshoot-dms7.md)
-   + [Migración de Dynamic Media: modo híbrido a Dynamic Media: modo S7](migrate-from-hybrid-to-dms7.md)
+   + [Resolución de problemas de Dynamic Media - modo de Scene7](troubleshoot-dms7.md)
+   + [Migración desde Dynamic Media: modo híbrido a Dynamic Media: modo S7](migrate-from-hybrid-to-dms7.md)
    + [Administrar recursos de Dynamic Media](managing-assets.md)
    + [Práctica recomendada para optimizar la calidad de las imágenes](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Administrar ajustes preestablecidos del visualizador de Dynamic Media](managing-viewer-presets.md)
@@ -62,9 +62,9 @@ ht-degree: 41%
    + [Imágenes interactivas](interactive-images.md)
    + [Vídeos interactivos](interactive-videos.md)
    + [Vídeo de RV 360](/help/assets/360-video.md)
-   + [Integrar visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch](/help/assets/launch.md)
-   + [Usar las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
-   + [Distribuir imágenes optimizadas para un sitio interactivo](responsive-site.md)
+   + [Integración de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch](/help/assets/launch.md)
+   + [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
+   + [Distribución de imágenes adaptables para un sitio interactivo](responsive-site.md)
    + [Vista previa de recursos de Dynamic Media](previewing-assets.md)
    + [Agregar recursos de Dynamic Media a las páginas](adding-dynamic-media-assets-to-pages.md)
    + [Incrustar Dynamic Video o el visualizador de imágenes en una página web](embed-code.md)
@@ -75,7 +75,7 @@ ht-degree: 41%
    + [Instalación de Feature Pack 18912 para la migración masiva de recursos](bulk-ingest-migrate.md)
    + [Trabajar con selectores](working-with-selectors.md)
 + Extender recursos {#extending}
-   + [Personalización y ampliación de Recursos AEM](extending-assets.md)
+   + [Personalizar y ampliar AEM Assets](extending-assets.md)
    + [Procesar recursos con controladores de medios y flujos de trabajo](media-handlers.md)
    + [Ampliar la funcionalidad de búsqueda](searchx.md)
    + [Instalación y [!DNL ImageMagick] configuración para trabajar con AEM Assets](best-practices-for-imagemagick.md)
@@ -131,14 +131,14 @@ ht-degree: 41%
    + [Publicar carpetas en Brand Portal](brand-portal-publish-folder.md)
    + [Publicar colecciones en Brand Portal](brand-portal-publish-collection.md)
 + Fragmentos de contenido {#fragments}
-   + [Trabajar con fragmentos de contenido](content-fragments.md)
-   + [Administrar fragmentos de contenido](content-fragments-managing.md)
-   + [Modelos de fragmento de contenido](content-fragments-models.md)
-   + [Variaciones: Crear contenido de fragmentos](content-fragments-variations.md)
-   + [Contenido asociado de fragmentos de contenido](content-fragments-assoc-content.md)
-   + [Metadatos: Propiedades del fragmento](content-fragments-metadata.md)
-   + [Fragmentos de contenido: Eliminar consideraciones](content-fragments-delete.md)
-   + [Fragmentos de contenido: Markdown](content-fragments-markdown.md)
+   + [Trabajar con fragmentos de contenido](content-fragments/content-fragments.md)
+   + [Administrar fragmentos de contenido](content-fragments/content-fragments-managing.md)
+   + [Modelos de fragmento de contenido](content-fragments/content-fragments-models.md)
+   + [Variaciones: Crear contenido de fragmentos](content-fragments/content-fragments-variations.md)
+   + [Contenido asociado de fragmentos de contenido](content-fragments/content-fragments-assoc-content.md)
+   + [Metadatos: Propiedades del fragmento](content-fragments/content-fragments-metadata.md)
+   + [Fragmentos de contenido: Eliminar consideraciones](content-fragments/content-fragments-delete.md)
+   + [Fragmentos de contenido: Markdown](content-fragments/content-fragments-markdown.md)
    + [Creación de proyectos de traducción para fragmentos de contenido](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
    + [Administre recursos digitales](managing-assets-touch-ui.md)
