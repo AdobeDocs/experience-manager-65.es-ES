@@ -10,14 +10,17 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 translation-type: tm+mt
-source-git-commit: 48fd5ddb386d69795291e560fa7b21da6edf5979
+source-git-commit: 8f1a1beb9aa64b1d2ea5eda0bec3ca6e99c2ddcc
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 0%
 
 ---
 
 
 # Creación de proyectos de traducción para fragmentos de contenido {#creating-translation-projects-for-content-fragments}
 
-Además de los recursos, Recursos Adobe Experience Manager (AEM) admite flujos de trabajo de copia de idioma para fragmentos [de](content-fragments.md) contenido (incluidas las variaciones). No se requiere optimización adicional para ejecutar flujos de trabajo de copia de idioma en fragmentos de contenido. En cada flujo de trabajo, se envía todo el fragmento de contenido para su traducción.
+Además de los recursos, Adobe Experience Manager (AEM) Assets admite flujos de trabajo de copia de idioma para los fragmentos [de](/help/assets/content-fragments/content-fragments.md) contenido (incluidas las variaciones). No se requiere optimización adicional para ejecutar flujos de trabajo de copia de idioma en fragmentos de contenido. En cada flujo de trabajo, se envía todo el fragmento de contenido para su traducción.
 
 Los tipos de flujos de trabajo que se pueden ejecutar en fragmentos de contenido son exactamente similares a los tipos de flujo de trabajo que se ejecutan para los recursos. Además, las opciones disponibles en cada tipo de flujo de trabajo coinciden con las opciones disponibles en los tipos de flujos de trabajo correspondientes para los recursos.
 
@@ -29,7 +32,7 @@ En este flujo de trabajo, los fragmentos de contenido que se van a traducir se c
 
 **Actualizar copias de idioma**
 
-Cuando se actualiza o modifica el fragmento de contenido de origen, el fragmento de contenido específico de configuración regional/idioma correspondiente requiere una retraducción. El flujo de trabajo de copia del idioma de actualización traduce un grupo adicional de fragmentos de contenido y lo incluye en una copia del idioma para una configuración regional concreta. En este caso, los fragmentos de contenido traducido se agregan a la carpeta de destino que ya contiene fragmentos de contenido previamente traducidos.
+Cuando se actualiza o modifica el fragmento de contenido de origen, el fragmento de contenido específico de configuración regional/idioma correspondiente requiere una retraducción. El flujo de trabajo de copia del idioma de actualización traduce un grupo adicional de fragmentos de contenido y lo incluye en una copia del idioma para una configuración regional concreta. En este caso, los fragmentos de contenido traducido se agregan a la carpeta de destinatario que ya contiene fragmentos de contenido previamente traducidos.
 
 ## Crear y traducir flujos de trabajo {#create-and-translate-workflow}
 
@@ -37,31 +40,31 @@ El flujo de trabajo Crear y traducir incluye las siguientes opciones. Los pasos 
 
 * Crear solamente estructura: Para ver los pasos del procedimiento, consulte [Crear estructura solo para recursos](translation-projects.md#create-structure-only).
 * Cree un nuevo proyecto de traducción: Para ver los pasos del procedimiento, consulte [Creación de un nuevo proyecto de traducción para recursos](translation-projects.md#create-a-new-translation-project).
-* Agregar al proyecto de traducción existente: Para ver los pasos del procedimiento, consulte [Agregar a proyecto de traducción existente para recursos](translation-projects.md#add-to-existing-translation-project).
+* Añadir al proyecto de traducción existente: Para ver los pasos del procedimiento, consulte [Añadir a un proyecto de traducción existente para los recursos](translation-projects.md#add-to-existing-translation-project).
 
 ## Actualizar flujo de trabajo de copias de idioma {#update-language-copies-workflow}
 
 El flujo de trabajo de actualización de copias de idioma incluye las siguientes opciones. Los pasos de procedimiento asociados con cada opción son similares a los asociados con la opción correspondiente para los activos.
 
 * Cree un nuevo proyecto de traducción: Para ver los pasos del procedimiento, consulte [Creación de un nuevo proyecto de traducción para recursos](translation-projects.md#create-a-new-translation-project) (flujo de trabajo de actualización).
-* Agregar al proyecto de traducción existente: Para ver los pasos del procedimiento, consulte [Agregar al proyecto de traducción existente para recursos](translation-projects.md#add-to-existing-translation-project) (flujo de trabajo de actualización).
+* Añadir al proyecto de traducción existente: Para ver los pasos del procedimiento, consulte [Añadir a un proyecto de traducción existente para recursos](translation-projects.md#add-to-existing-translation-project) (flujo de trabajo de actualización).
 
 También puede crear copias de idioma temporales para fragmentos de forma similar a como crea copias temporales para los recursos. Para obtener más información, consulte [Creación de copias de idioma temporales para recursos](translation-projects.md#creating-temporary-language-copies).
 
 ## Traducción de fragmentos de medios mixtos {#translating-mixed-media-fragments}
 
-AEM le permite traducir fragmentos de contenido que incluyen varios tipos de recursos de medios y colecciones. Si traduce un fragmento de contenido que incluye recursos en línea, las copias traducidas de estos recursos se almacenan en la raíz del idioma de destino.
+AEM le permite traducir fragmentos de contenido que incluyen varios tipos de recursos de medios y colecciones. Si traduce un fragmento de contenido que incluye recursos en línea, las copias traducidas de estos recursos se almacenan en la raíz del idioma del destinatario.
 
-Si el fragmento de contenido incluye una colección, los recursos de la colección se traducen junto con el fragmento de contenido. Las copias traducidas de los recursos se almacenan en la raíz del idioma de destino correspondiente en una ubicación que coincide con la ubicación física de los recursos de origen en la raíz del idioma de origen.
+Si el fragmento de contenido incluye una colección, los recursos de la colección se traducen junto con el fragmento de contenido. Las copias traducidas de los recursos se almacenan en la raíz del idioma de destinatario correspondiente en una ubicación que coincide con la ubicación física de los recursos de origen en la raíz del idioma de origen.
 
 Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero edite el marco de traducción predeterminado para permitir la traducción de recursos en línea y colecciones asociadas con fragmentos de contenido.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Servicios]** de nube.
+1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Service]**.
 1. Busque Integración **[!UICONTROL de]** traducción en **[!UICONTROL Adobe Marketing Cloud]** y toque o haga clic en **[!UICONTROL Mostrar configuraciones]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. En la lista de configuraciones disponibles, toque o haga clic en Configuración **[!UICONTROL predeterminada (Configuración de integración de traducción)]** para abrir la página Configuración **** predeterminada.
+1. En la lista de configuraciones disponibles, toque o haga clic en Configuración **[!UICONTROL predeterminada (Configuración de integración de traducción)]** para abrir la página de configuración **** predeterminada.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -110,7 +113,7 @@ Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero 
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
-1. Seleccione el idioma de destino en la lista Idiomas **[!UICONTROL de]** destino.
+1. Seleccione el idioma del destinatario en la lista Idiomas **[!UICONTROL del]** Destinatario.
 
    ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -131,9 +134,9 @@ Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
 1. En el mosaico Trabajo de traducción, compruebe el número de recursos que se van a traducir.
-1. En el mosaico Trabajo **[!UICONTROL de]** traducción, inicie el trabajo de traducción.
+1. En el mosaico Trabajo **[!UICONTROL de]** traducción, inicio el trabajo de traducción.
 
-   ![chlimage_1-461](assets/chlimage_1-462.png)
+   ![chlimage_1-462](assets/chlimage_1-462.png)
 
 1. Haga clic en las elipses en la parte inferior del mosaico Trabajo de traducción para mostrar el estado del trabajo de traducción.
 
@@ -149,13 +152,13 @@ Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero 
 
    Tenga en cuenta que solo se traduce el contenido de la colección. La colección en sí no está traducida.
 
-1. Vaya a la ruta del recurso asociado traducido. Observe que el recurso traducido se almacena en la raíz del idioma de destino.
+1. Vaya a la ruta del recurso asociado traducido. Observe que el recurso traducido se almacena en la raíz del idioma del destinatario.
 
    ![chlimage_1-466](assets/chlimage_1-466.png)
 
-1. Vaya a los recursos de la colección que se traducen junto con el fragmento de contenido. Observe que las copias traducidas de los recursos se almacenan en la raíz del idioma de destino correspondiente.
+1. Vaya a los recursos de la colección que se traducen junto con el fragmento de contenido. Observe que las copias traducidas de los recursos se almacenan en la raíz del idioma de destinatario correspondiente.
 
-   ![chlimage_1-468](assets/chlimage_1-467.png)
+   ![chlimage_1-467](assets/chlimage_1-467.png)
 
    >[!NOTE]
    >
