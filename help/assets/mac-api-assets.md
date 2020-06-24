@@ -3,7 +3,7 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Después del tiempo de [!UICONTROL inactividad], un recurso y sus representacion
 
 ## Fragmentos de contenido {#content-fragments}
 
-Un fragmento [de](/help/assets/content-fragments.md) contenido es un tipo especial de recurso. Puede utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que hay varias diferencias con `standard` los recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la gestión de fragmentos de contenido.
+Un fragmento [de](/help/assets/content-fragments/content-fragments.md) contenido es un tipo especial de recurso. Puede utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que hay varias diferencias con `standard` los recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la gestión de fragmentos de contenido.
 
 Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md)HTTP de Experience Manager Assets.
 
@@ -67,7 +67,7 @@ En Experience Manager, un recurso contiene los siguientes elementos:
 * Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de archivos PDF o [!DNL Adobe InDesign] archivos.
 * Comentarios opcionales.
 
-Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
+Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP de Recursos Experience Manager.
 
 En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
