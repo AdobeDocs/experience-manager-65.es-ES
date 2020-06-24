@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets
 seo-title: Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets
-description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de Recursos AEM.
-seo-description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de Recursos AEM.
+description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets.
+seo-description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets.
 uuid: c500d71e-ceee-493a-9e4d-7016745c544c
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -29,12 +29,11 @@ ht-degree: 3%
 >
 >* API de REST de recursos
 >* incluida la compatibilidad con fragmentos de contenido
-
 >
 >
 La implementación actual de la API HTTP de AEM Assets es REST.
 
-La API [REST de Adobe Experience Manager (AEM)](/help/assets/mac-api-assets.md) Assets permite a los desarrolladores acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, mediante operaciones CRUD (Crear, leer, actualizar, eliminar).
+La API [REST de](/help/assets/mac-api-assets.md) Recursos Adobe Experience Manager (AEM) permite a los desarrolladores acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, mediante operaciones CRUD (Crear, leer, actualizar, eliminar).
 
 La API le permite utilizar AEM como un CMS (sistema Gestor de contenido) sin encabezado al proporcionar servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
 
@@ -63,7 +62,7 @@ El método HTTP determina la operación que se va a ejecutar:
 * **GET** : para recuperar una representación JSON de un recurso o una carpeta
 * **POST** : para crear nuevos recursos o carpetas
 * **PUT** : para actualizar las propiedades de un recurso o una carpeta
-* **ELIMINAR** : para eliminar un recurso o una carpeta
+* **DELETE** : para eliminar un recurso o una carpeta
 
 >[!NOTE]
 >
@@ -130,7 +129,6 @@ Si la API REST de Assets se utiliza en un entorno sin requisitos de autenticaci�
 >
 >* [Se explica CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
@@ -139,7 +137,7 @@ En entornos con requisitos de autenticación específicos, se recomienda OAuth.
 
 ## Funciones disponibles {#available-features}
 
-Los fragmentos de contenido son un tipo específico de recurso; consulte [Uso de fragmentos](/help/assets/content-fragments.md)de contenido.
+Los fragmentos de contenido son un tipo específico de recurso; consulte [Uso de fragmentos](/help/assets/content-fragments/content-fragments.md)de contenido.
 
 Para obtener más información sobre las funciones disponibles a través de la API, consulte:
 
@@ -199,7 +197,7 @@ Los recursos pueden tener varias representaciones. Normalmente se exponen como e
 
 ### Fragmentos de contenido {#content-fragments}
 
-Un fragmento [de](/help/assets/content-fragments.md) contenido es un tipo especial de recurso. Pueden utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros.
+Un fragmento [de](/help/assets/content-fragments/content-fragments.md) contenido es un tipo especial de recurso. Pueden utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros.
 
 Dado que existen varias diferencias con los recursos *estándar* (como imágenes o audio), se aplican algunas reglas adicionales para su gestión.
 
@@ -238,7 +236,7 @@ El uso puede variar en función de si está utilizando un entorno de publicació
 
 >[!NOTE]
 >
->Para obtener más información, consulte la Referencia [de API](/help/assets/assets-api-content-fragments.md#api-reference). En concreto, [Adobe Experience Manager Assets API - Fragmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)de contenido.
+>Para obtener más información, consulte la Referencia [de API](/help/assets/assets-api-content-fragments.md#api-reference). En particular, la API de [Adobe Experience Manager Assets - Fragmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)de contenido.
 
 ### Lectura/Envío {#read-delivery}
 
@@ -281,7 +279,7 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restricciones          {#limitations}
+## Restricciones   {#limitations}
 
 Existen algunas limitaciones:
 
@@ -347,7 +345,6 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 
       * `Could not update content element`
       * `Could not update fragment data of element`
-
    Los mensajes de error detallados suelen devolverse de la siguiente manera:
 
    ```xml
