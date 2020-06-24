@@ -1,25 +1,28 @@
 ---
-title: Lista de funciones de las experiencias fluidas de AEM
+title: Lista de funciones de AEM Fluid Experiences
 description: Lista de funciones de experiencias fluidas
 index: n
 translation-type: tm+mt
-source-git-commit: 378cdba999365083a2f585ad4f4ccd1c7ad7d4ce
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 8%
 
 ---
 
 
-# Lista de funciones de las experiencias fluidas de AEM{#aem-fluid-experiences-feature-list}
+# Lista de funciones de AEM Fluid Experiences{#aem-fluid-experiences-feature-list}
 
-Las experiencias fluidas de Adobe Experience Manager se basan en los potentes conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para la entrega de contenido sin encabezado.
+Las experiencias fluidas de Adobe Experience Manager se basan en los potentes conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para el envío de contenido sin encabezado.
 
-Las experiencias fluidas de AEM se diferencian de las AEM clásicas en que solo se aborda el caso de uso de la entrega sin encabezado. La creación y entrega de contenido con mucho éxito y la sólida compatibilidad de AEM con casos de uso híbrido están disponibles con las soluciones AEM Sites, Assets y Dynamic Media [completas.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+Las experiencias fluidas de AEM se diferencian de las AEM clásicas en que solo se aborda el caso de uso de envío sin encabezado. La creación y el envío de contenido con mucho éxito, así como el sólido soporte de AEM para casos de uso híbrido, están disponibles con las soluciones [completas de AEM Sites, Recursos y Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 Las siguientes tablas definen las funciones de las experiencias fluidas de AEM y vinculan la documentación de asistencia pertinente.
 
 * [Repositorio](#repository-features)
-* [Acceso, API y envío](#access-api-and-delivery-features)
+* [Acceso, API y Envío](#access-api-and-delivery-features)
 * [Administración e integraciones](#admin-and-integration-features)
-* [Análisis y personalización](#analytics-and-personalization)
+* [Analytics y Personalización](#analytics-and-personalization)
 
 >[!NOTE]
 >
@@ -37,20 +40,20 @@ Las siguientes tablas definen las funciones de las experiencias fluidas de AEM y
 | [Colecciones](/help/assets/managing-collections-touch-ui.md) y [Lightbox](/help/assets/touch-ui-light-box.md) |
 | [Perfiles](/help/assets/processing-profiles.md) |
 | [Control de versiones](/help/assets/managing-assets-touch-ui.md) |
-| [Detección de duplicados](/help/assets/duplicate-detection.md) |
+| [Detección de Duplicados](/help/assets/duplicate-detection.md) |
 | [Etiquetas inteligentes](/help/assets/enhanced-smart-tags.md) |
 
-## Funciones de acceso, API y envío {#access-api-and-delivery-features}
+## Funciones de acceso, API y Envío {#access-api-and-delivery-features}
 
 |  |
 |---|
 | [API HTTP](/help/assets/mac-api-assets.md) |
-| [Modelos de contenido estructurado](/help/assets/content-fragments.md) |
+| [Modelos de contenido estructurado](/help/assets/content-fragments/content-fragments.md) |
 | [Servicios de contenido](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
 | [Fragmentos de experiencia](/help/sites-authoring/experience-fragments.md) |
 | API HTTP para contenido estructurado (lectura) |
 | API HTTP para contenido estructurado (CRUD) |
-| [Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) |
+| [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) |
 | [Medios dinámicos](/help/assets/dynamic-media.md) |
 
 ## Funciones de administración e integración {#admin-and-integration-features}
@@ -63,18 +66,18 @@ Las siguientes tablas definen las funciones de las experiencias fluidas de AEM y
 | [Traducción de contenido](/help/sites-administering/translation.md) |
 | [Monitoreo](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Copia de seguridad](/help/sites-administering/backup-and-restore.md) |
-| [Administrador de nube](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Administrador de nube](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
 | [Integración de PIM](/help/sites-authoring/managing-product-information.md) |
 | [Proyectos y tareas](/help/sites-authoring/projects.md) |
 | [Flujos de trabajo](/help/sites-administering/workflows-starting.md) |
 | Conectividad (servicios de nube) |
 
-## Análisis y personalización {#analytics-and-personalization}
+## Analytics y Personalización {#analytics-and-personalization}
 
 |  |
 |---|
-| [Informes de activos](/help/assets/asset-reports.md) |
-| Perspectivas mejoradas con Adobe Analytics |
+| [sistema de informes de recursos](/help/assets/asset-reports.md) |
+| Perspectivas mejoradas con tecnología de Adobe Analytics |
 | Perspectivas mejoradas con Adobe Target |
 
 ## Más información {#learn-more}
