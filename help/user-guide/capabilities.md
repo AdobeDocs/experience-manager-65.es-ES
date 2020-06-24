@@ -4,7 +4,10 @@ seo-title: Guía del usuario de funciones de AEM 6.5
 description: Información general sobre las funciones esenciales de AEM 6.5
 seo-description: Información general sobre las funciones esenciales de AEM 6.5
 translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 9%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## AEM Foundation {#aem-foundation}
 
-[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida la implementación en la nube de Adobe Managed Services.
+[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida la implementación en la nube de Adobes Managed Services.
 
 [Obtenga información sobre cómo administrar un proyecto](/help/managing/home.md)de AEM.
 
@@ -41,7 +44,7 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Comparta contenido generado por el usuario con AEM Livefyre.](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html)
+[Comparta contenido generado por el usuario con AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 
