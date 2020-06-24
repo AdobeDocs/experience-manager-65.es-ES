@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86dbd52d44a78401aa50cce299850469c51b691c
+source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 60%
 
 ---
 
@@ -27,6 +30,7 @@ Esta página contiene una lista de problemas conocidos de Adobe Experience Manag
    1. Llamando a &quot;*/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true*&quot;.
    2. Actualización a AEM 6.5.
    3. Ejecución de la &quot;migración de contenido flotante&quot; en AEM 6.5.
+
    Hay disponible un artículo de la Base [de](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) conocimiento con más detalles y la solución alternativa para este problema.
 
 * Si utiliza JDK 11 con la instancia de AEM 6.5, algunas de las páginas podrían aparecer en blanco después de implementar algunos paquetes. El siguiente mensaje de error aparece en el archivo de registro:
@@ -40,7 +44,7 @@ Para resolver este error:
 
 1. Detenga la instancia de AEM. Vaya a `<aem_server_path_on_server>crx-quickstart\conf` y abra el `sling.properties` archivo. Adobe recomienda realizar una copia de seguridad de este archivo.
 
-2. Buscar `org.osgi.framework.bootdelegation=`. Agregue `jdk.internal.reflect,jdk.internal.reflect.*` propiedades para mostrar el resultado como:
+2. Buscar `org.osgi.framework.bootdelegation=`. Añada `jdk.internal.reflect,jdk.internal.reflect.*` las propiedades para mostrar el resultado como:
 
    ```
    org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
@@ -54,7 +58,7 @@ Para resolver este error:
 * **Esquema de metadatos de carpeta**: después de añadir un botón de opciones, los campos Id. y Valor no se procesan como se esperaba y la funcionalidad de eliminación no funciona. (CQ-4261144)
 * Al cambiar el nombre de un recurso, no se puede utilizar un espacio en blanco en el nombre del recurso. (CQ-4266403)
 
-## Formularios {#forms}
+## Forms {#forms}
 
 * Cuando se instala AEM Forms en el sistema operativo de Linux, la firma digital con el módulo de seguridad de hardware no funciona. (CQ-4266721)
 * (AEM Forms solo en WebSphere) La opción **Forms Workflow**> **Task Search** (Búsqueda de tareas) no devuelve ningún resultado si se busca un **administrador** con el **nombre de usuario** como criterio de búsqueda. (CQ-4266457)
@@ -76,5 +80,7 @@ Para resolver este error:
    * Varios: false (falso)
    * Creación automática: false (falso)
 
-La propiedad permite que las bibliotecas de cliente en la carpeta de ejecución accedan a los proxy. (CQ-4268679)
+   La propiedad permite que las bibliotecas de cliente en la carpeta de ejecución accedan a los proxy. (CQ-4268679)
 
+* 
+   * Cuando se inician los AEM Forms, aparece la `SAX Security Manager could not be setup` advertencia.
