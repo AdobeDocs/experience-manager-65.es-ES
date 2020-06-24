@@ -1,8 +1,8 @@
 ---
-title: 'Sitios AEM: preparación para RGPD'
-seo-title: 'Sitios AEM: preparación para RGPD'
-description: Obtenga información sobre la preparación para el RGPD en los sitios de AEM.
-seo-description: Obtenga información sobre la preparación para el RGPD en los sitios de AEM.
+title: AEM Sites - Preparación para RGPD
+seo-title: AEM Sites - Preparación para RGPD
+description: Conozca los detalles de la preparación para el RGPD de los AEM Sites.
+seo-description: Conozca los detalles de la preparación para el RGPD de los AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,15 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 translation-type: tm+mt
-source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '850'
+ht-degree: 0%
 
 ---
 
 
-# Sitios AEM: preparación para RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites - Preparación para RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -23,7 +26,7 @@ source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
 
 El Reglamento general de protección de datos de la Unión Europea sobre derechos de privacidad de datos entrará en vigor en mayo de 2018.
 
-AEM Sites está preparado para ayudar a los clientes a cumplir sus obligaciones de cumplimiento de GDPR. Esta página guía a los clientes a través de los procedimientos para gestionar solicitudes GDPR en sitios AEM. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o con código.
+Los AEM Sites están listos para ayudar a los clientes con sus obligaciones de cumplimiento de RGPD. Esta página guía a los clientes a través de los procedimientos para gestionar solicitudes de RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o con código.
 
 Para obtener más información, consulte la página del [RGPD en el Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)de privacidad de Adobe.
 
@@ -33,13 +36,13 @@ Para obtener más información, consulte la página del [RGPD en el Centro](http
 
 ## Author Server {#author-server}
 
-Las cuentas de usuario y el contenido UGC en el servidor de creación se tratan en la documentación [del RGPD de la](/help/managing/data-protection-and-privacy.md)plataforma.
+Las cuentas de usuario y el contenido UGC del servidor de creación se tratan en la documentación [de GDPR de](/help/managing/data-protection-and-privacy.md)Platform.
 
 ## Servidor de publicación {#publish-server}
 
-Las cuentas de usuario utilizadas para autenticar a los visitantes en el sitio y el contenido UGC en el servidor de publicación se tratan en la documentación [de GDPR de la](/help/managing/data-protection-and-privacy.md)plataforma.
+Las cuentas de usuario utilizadas para autenticar visitantes en el sitio y el contenido UGC en el servidor de publicación se tratan en la documentación [de GDPR de](/help/managing/data-protection-and-privacy.md)Platform.
 
-De forma predeterminada, los componentes de AEM Sites no almacenan los datos de formulario introducidos por los visitantes en el servidor de publicación. Se recomienda reenviar los datos a un sistema de terceros o a Adobe Campaign para un procesamiento posterior.
+De forma predeterminada, los componentes AEM Sites no almacenan datos de formulario introducidos por visitantes en el servidor de publicación. Se recomienda reenviar los datos a un sistema de terceros o a un Adobe Campaign para su posterior procesamiento.
 
 ## Inclusión/exclusión {#opt-in-opt-out}
 
@@ -47,21 +50,21 @@ AEM cuenta con un servicio [de exclusión de](/help/sites-developing/cookie-opto
 
 ## Perspectivas mejoradas de Analytics {#enhanced-insights-by-analytics}
 
-AEM Sites incluye una integración opcional con Perspectivas mejoradas de Analytics, que utiliza funciones dentro del servicio a petición de Adobe Analytics.
+Los AEM Sites incluyen una integración opcional con Perspectivas mejoradas de Analytics que utiliza la funcionalidad dentro del servicio a petición de Analytics de Adobe.
 
-Para obtener más información sobre la administración de solicitudes de asunto de datos GDPR relacionadas con Adobe Analytics, consulte [Adobe Analytics y GDPR](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/).
+Para obtener más información sobre la administración de solicitudes de asunto de datos de GDPR relacionadas con Adobe Analytics, consulte [Adobe Analytics y GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalización mejorada por Target {#enhanced-personalization-by-target}
+## Personalización mejorada por Destinatario {#enhanced-personalization-by-target}
 
-AEM Sites incluye una integración opcional con Personalización mejorada por Target que utiliza funciones dentro del servicio a petición de Adobe Target.
+AEM Sites incluye una integración opcional con Personalización mejorada por Destinatario que utiliza la funcionalidad dentro del servicio a petición de Adobe Target.
 
-Para obtener más información sobre la administración de solicitudes de datos del RGPD relacionadas con Adobe Target, consulte [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html).
+Para obtener más información sobre la gestión de las solicitudes de datos del RGPD relacionadas con el Adobe Target, consulte [Adobe Target - Privacidad y Reglamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)General de Protección de Datos.
 
 ## ContextHub {#contexthub}
 
-AEM proporciona una capa de datos opcional con [ContextHub](/help/sites-developing/contexthub.md). Esto mantiene los datos específicos del visitante en el explorador, para utilizarlos en la personalización basada en reglas.
+AEM proporciona una capa de datos opcional con [ContextHub](/help/sites-developing/contexthub.md). Esto mantiene los datos específicos del visitante en el navegador, para utilizarlos en la personalización basada en reglas.
 
-De forma predeterminada, los datos de visitante no se almacenan en AEM; AEM envía reglas a la capa de datos para tomar decisiones de personalización en el navegador.
+De forma predeterminada, estos datos de visitante no se almacenan en AEM; AEM envía reglas a la capa de datos para tomar decisiones de personalización en el navegador.
 
 >[!NOTE]
 >
@@ -73,10 +76,10 @@ De forma predeterminada, los datos de visitante no se almacenan en AEM; AEM env�
 
 El propietario del sitio debe implementar un componente de exclusión según las siguientes directrices.
 
-Estas directrices implementan la inclusión como opción predeterminada. Por lo tanto, el visitante de un sitio web debe aceptar claramente antes de que cualquier dato personal se almacene en la persistencia (del lado del cliente) del navegador.
+Estas directrices implementan la inclusión como opción predeterminada. Por lo tanto, un visitante de un sitio web debe estar claramente de acuerdo, antes de que cualquier dato personal se almacene en la persistencia (del lado del cliente) del navegador.
 
 * El componente de exclusión debe incluirse cada vez que se incluya el componente ContextHub.
-* Los términos y condiciones que se relacionan con el RGPD para el sitio web deben mostrarse al visitante del sitio web, permitiéndole:
+* Los términos y condiciones que se relacionan con el RGPD para el sitio web deben mostrarse en el visitante del sitio web, permitiéndoles:
 
    * aceptar
    * rechazar
@@ -103,20 +106,20 @@ Estas directrices implementan la inclusión como opción predeterminada. Por lo 
 
 ### Vista previa de la persistencia de ContextHub {#previewing-persistence-of-contexthub}
 
-Para obtener una vista previa de la persistencia utilizada por ContextHub, un usuario puede:
+Para obtener la previsualización de la resistencia utilizada en ContextHub, un usuario puede:
 
 * Utilice la consola del navegador; por ejemplo:
 
    * Chrome:
 
-      * Abra Herramientas para desarrolladores > Aplicación > Almacenamiento:
+      * Abra Herramientas de desarrollador > Aplicación > Almacenamiento:
 
          * Almacenamiento local > (sitio web) > ContextHubPersistence
          * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
          * Cookies > (sitio web) > SessionPersistence
    * Firefox:
 
-      * Abra Herramientas para desarrolladores > Almacenamiento:
+      * Abra Herramientas de desarrollador > Almacenamiento:
 
          * Almacenamiento local > (sitio web) > ContextHubPersistence
          * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
@@ -148,12 +151,13 @@ Para obtener una vista previa de la persistencia utilizada por ContextHub, un us
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
-      El almacén de ContextHub define qué capa de persistencia se utilizará, por lo que se debe comprobar el estado actual de la persistencia en todas las capas.
+
+      El almacén de ContextHub define qué capa de persistencia se utilizará, por lo que se debe comprobar la vista del estado actual de la persistencia.
 
 
-Por ejemplo, para ver los datos almacenados en localStorage:
+Por ejemplo, para vista de datos almacenados en localStorage:
 
-Para obtener una vista previa de la persistencia utilizada por ContextHub, un usuario puede:
+Para obtener la previsualización de la resistencia utilizada en ContextHub, un usuario puede:
 
 * Utilice la consola del explorador:
 
@@ -162,7 +166,7 @@ Para obtener una vista previa de la persistencia utilizada por ContextHub, un us
       * Almacenamiento local > (sitio web) > ContextHubPersistence
       * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
       * Cookies > (sitio web) > SessionPersistence
-   * Firefox: abra Herramientas para desarrolladores > Almacenamiento:
+   * Firefox: abra Herramientas de desarrollador > Almacenamiento:
 
       * Almacenamiento local > (sitio web) > ContextHubPersistence
       * Almacenamiento de sesión > (sitio web) > ContextHubPersistence
@@ -177,10 +181,11 @@ Para obtener una vista previa de la persistencia utilizada por ContextHub, un us
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
-      El almacén de ContextHub define qué capa de persistencia se utilizará, por lo que se debe comprobar el estado actual de la persistencia en todas las capas.
+
+      El almacén de ContextHub define qué capa de persistencia se utilizará, por lo que se debe comprobar la vista del estado actual de la persistencia.
 
 
-Por ejemplo, para ver los datos almacenados en localStorage:
+Por ejemplo, para vista de datos almacenados en localStorage:
 
 ```
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
