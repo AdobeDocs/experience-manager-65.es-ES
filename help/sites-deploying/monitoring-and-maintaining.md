@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+workflow-type: tm+mt
+source-wordcount: '5899'
+ht-degree: 0%
 
 ---
 
@@ -194,12 +197,14 @@ Las acciones de moderación se registran aquí.
    * `error.log`
 Aquí se registran los mensajes de error (de distintos niveles de gravedad).
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Este registro solo se utiliza si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+Este registro solo se utiliza si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
    * `request.log`
 Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Este registro solo se utiliza si [!DNL Dynamic Media] está habilitado. El registro de acceso s7registra cada solicitud realizada a [!DNL Dynamic Media] través `/is/image` y `/is/content`.
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+Este registro solo se utiliza si [!DNL Dynamic Media] está habilitado. El registro de acceso s7registra cada solicitud realizada a [!DNL Dynamic Media] través `/is/image` y `/is/content`.
 
    * `stderr.log`
 Contiene mensajes de error, también de distintos niveles de gravedad, generados durante el inicio. De forma predeterminada, el nivel de registro se establece en `Warning` ( `WARN`)
@@ -376,7 +381,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    Nota: Al especificar una fecha/hora:
    1. Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
 esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
-   1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
+   1. Utilice sólo caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
 
 
 1. Lea el nuevo archivo de registro con la herramienta elegida.
@@ -465,7 +470,7 @@ Las siguientes listas plantean problemas comunes de rendimiento, junto con propu
 
 | Área | Síntomas | Para aumentar la capacidad... | Para reducir el volumen... |
 |---|---|---|---|
-| Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplifique el diseño (HTML). |
+| Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplificar el diseño (HTML). |
 |  | Uso bajo de CPU del servidor. | Actualice a un explorador más rápido. | Mejore la caché del cliente. |
 |  | Algunos clientes son rápidos, algunos lentos. |  |  |
 | Servidor |  |  |  |
@@ -532,7 +537,7 @@ Algunos de ellos dependerán del sistema operativo.
   <tr>
    <td>Voladizos de montón</td>
    <td>Problemas de memoria insuficiente que causan un rendimiento lento.</td>
-   <td><p>Añada el:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> para la llamada de Java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td>
+   <td><p>Añada el:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> a la llamada de Java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Llamadas del sistema</td>
@@ -577,7 +582,7 @@ Algunos de ellos dependerán del sistema operativo.
   <tr>
    <td>Estadísticas de temporización</td>
    <td>Consulte las estadísticas de temporización para el procesamiento de páginas.</td>
-   <td><p>Para ver las estadísticas de temporización de la representación de página, puede utilizar <strong>Ctrl-Mayús-U</strong> junto con <code>?debugClientLibs=true</code> el conjunto de direcciones URL.</p> </td>
+   <td><p>Para ver las estadísticas de temporización de la representación de páginas, puede utilizar <strong>Ctrl-Mayús-U</strong> junto con <code>?debugClientLibs=true</code> el conjunto de direcciones URL.</p> </td>
   </tr>
   <tr>
    <td>Herramienta de generación de perfiles de memoria y CPU<br /> </td>
@@ -872,7 +877,7 @@ La siguiente información puede resultar útil:
 * [¿Cuántas páginas mantiene actualmente en este sistema?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [Si utiliza MSM, ¿cuál es el número promedio de implementaciones por mes?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [¿Cuál es el número promedio de Live Copies por mes?](#what-is-the-average-number-of-live-copies-per-month)
-* [Si utiliza Recursos AEM, ¿cuántos recursos mantiene actualmente en Recursos?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
+* [Si utiliza AEM Assets, ¿cuántos recursos mantiene actualmente en Recursos?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
 * [¿Cuál es el tamaño promedio de los recursos?](#what-is-the-average-size-of-the-assets)
 * [¿Cuántas plantillas se utilizan actualmente?](#how-many-templates-are-currently-used)
 * [¿Cuántos componentes se utilizan actualmente?](#how-many-components-are-currently-used)
@@ -902,7 +907,7 @@ Para ver el número total de activaciones de página desde la instalación del s
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 A continuación, calcule el número de días transcurridos desde la instalación para calcular el promedio.
 
@@ -914,7 +919,7 @@ Para ver el número de páginas que hay actualmente en el servidor, utilice una 
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:Page)`
+* **Consulta** `//element(*, cq:Page)`
 
 #### Si utiliza MSM, ¿cuál es el número promedio de implementaciones por mes? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -924,7 +929,7 @@ Para determinar el número total de implementaciones desde la instalación, util
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Calcule el número de meses transcurridos desde la instalación para calcular el promedio.
 
@@ -936,17 +941,17 @@ Para determinar el número total de Live Copies realizadas desde la instalación
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:LiveSyncConfig)`
+* **Consulta** `//element(*, cq:LiveSyncConfig)`
 
 Vuelva a utilizar el número de meses transcurridos desde la instalación para calcular el promedio.
 
-#### Si utiliza Recursos AEM, ¿cuántos recursos mantiene actualmente en Recursos? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### Si utiliza AEM Assets, ¿cuántos recursos mantiene actualmente en Recursos? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
 Para ver cuántos recursos DAM mantiene actualmente, utilice una consulta de repositorio; mediante CRXDE - Herramientas - Consulta:
 
 * **Tipo** `XPath`
 * **Ruta** `/`
-* **Consulta**`/jcr:root/content/dam//element(*, dam:Asset)`
+* **Consulta** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### ¿Cuál es el tamaño promedio de los recursos? {#what-is-the-average-size-of-the-assets}
 
@@ -969,7 +974,7 @@ Para ver el número de plantillas que hay actualmente en el servidor, utilice un
 
 * **Tipo** `XPath`
 * **Ruta** `/`
-* **Consulta**`//element(*, cq:Template)`
+* **Consulta** `//element(*, cq:Template)`
 
 #### ¿Cuántos componentes se utilizan actualmente? {#how-many-components-are-currently-used}
 
@@ -977,7 +982,7 @@ Para ver el número de componentes que hay actualmente en el servidor, utilice u
 
 * **Tipo** `XPath`
 * **Ruta** `/`
-* **Consulta**`//element(*, cq:Component)`
+* **Consulta** `//element(*, cq:Component)`
 
 #### ¿Cuántas solicitudes por hora tiene en el sistema de creación en tiempo de mayor actividad? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
@@ -1050,7 +1055,7 @@ Si el sistema se está quedando sin espacio en disco, o si nota que se está blo
    * [Configuración del registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Registros](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)[](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
+   * [Registros](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
 
 * Si ha configurado la depuración de [versiones y cómo lo ha hecho](/help/sites-deploying/version-purging.md)
 * Base de conocimiento:
