@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
+source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
 workflow-type: tm+mt
 source-wordcount: '3095'
 ht-degree: 33%
@@ -37,13 +37,13 @@ Añadir un componente de medios 3D, Dynamic Media, Medios interactivos, Medios p
 
    Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba habilitar los componentes de Dynamic Media que desee utilizar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
-   ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
+   ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
 1. Arrastre un componente de **[!UICONTROL Dynamic Media]** que desee utilizar y suéltelo en la ubicación deseada de la página.
 
 1. Sitúe el puntero del ratón directamente sobre el componente. Cuando el componente esté rodeado por un cuadro azul, toque una vez para mostrar la barra de herramientas del componente. Toque el icono **[!UICONTROL Configuración (llave)]** .
 
-   ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
+   ![6_5_360video_wcmcomponentconfigure](/help/assets/assets/6_5_360video_wcmcomponentconfigure.png)
 
 1. Según el componente de Dynamic Media que haya colocado en la página, se abre un cuadro de diálogo de configuración. [Configure las opciones](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) del componente según sea necesario.
 
@@ -202,8 +202,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    Con los modificadores de visor, por ejemplo, puede hacer lo siguiente:
 
-   * Asocie un archivo de subtítulos con un vídeo: [caption](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Asociación de un archivo de navegación con un vídeo: [navegación](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Asocie un archivo de subtítulos con un vídeo: [caption][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Asociación de un archivo de navegación con un vídeo: [navigation][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
