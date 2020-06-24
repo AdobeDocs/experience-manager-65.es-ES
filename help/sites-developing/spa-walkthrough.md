@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 0%
 
 ---
 
@@ -103,6 +106,7 @@ Cuando se crea un SPA para aprovechar el Editor de SPA de AEM, el autor del cont
 >
 >* [AEM versión 6.4 con Service Pack 2](/help/release-notes/sp-release-notes.md)
 >* [Instale la aplicación de Historial We.Retail de muestra disponible en GitHub aquí.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
 >
 
 
@@ -215,7 +219,7 @@ La siguiente sección, [Carga de una aplicación](/help/sites-developing/spa-wal
 
 1. Cambie a la ficha Red del Inspector y vuelva a cargar la página.
 
-   Al omitir las solicitudes de imagen, tenga en cuenta que los recursos principales cargados para la página son la página en sí, CSS, React Javascript, sus dependencias y los datos JSON de la página.
+   Al omitir las solicitudes de imagen, tenga en cuenta que los recursos principales cargados para la página son la página misma, CSS, React Javascript, sus dependencias y los datos JSON de la página.
 
    ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 
@@ -225,7 +229,7 @@ La siguiente sección, [Carga de una aplicación](/help/sites-developing/spa-wal
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   El Editor de SPA de AEM aprovecha los servicios [de contenido de](/help/assets/content-fragments.md) AEM para ofrecer todo el contenido de la página como un modelo JSON.
+   El Editor de SPA de AEM aprovecha los servicios [de contenido de](/help/assets/content-fragments/content-fragments.md) AEM para ofrecer todo el contenido de la página como un modelo JSON.
 
    Al implementar interfaces específicas, los modelos Sling proporcionan la información necesaria para el SPA. El envío de los datos de JSON se delega hacia abajo en cada componente (de página, párrafo, componente, etc.).
 
