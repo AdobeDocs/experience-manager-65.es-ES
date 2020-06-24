@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3845'
 ht-degree: 10%
 
 ---
@@ -195,7 +195,6 @@ El tamaño de las miniaturas se define en el siguiente formato: **[!UICONTROL wi
    >
    >
 * El tamaño de las miniaturas de los vídeos se configura en el paso **[!UICONTROL Miniaturas FFmpeg]**, en la pestaña **[!UICONTROL Proceso]**, en **[!UICONTROL Argumentos.]**
-
 >
 
 
@@ -412,7 +411,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr>
   <tr>
    <td><strong>Modificador de imagen</strong></td>
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo Modificadores <strong>de</strong> imagen. Estos parámetros se definen en la referencia <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">del comando del protocolo</a>de servidor de imágenes.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo Modificadores <strong>de</strong> imagen. Estos parámetros se definen en la referencia <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">del comando del protocolo</a>de servidor de imágenes.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
     <ul>
      <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
      <li>Comandos de Localización: <code>locale=</code> y <code>req=xlate</code></li>
