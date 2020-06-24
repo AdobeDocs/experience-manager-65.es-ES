@@ -10,7 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1706'
+ht-degree: 4%
 
 ---
 
@@ -94,7 +97,7 @@ Configure AEM para que utilice las credenciales de licencia de Livefyre de su or
 
 ### Personalizar la integración del inicio de sesión único {#customize-single-sign-on-integration}
 
-El paquete Livefyre para AEM incluye una integración lista para usar entre los perfiles de comunidades AEM y el servicio SSO de Livefyre.
+El paquete Livefyre para AEM incluye una integración lista para usar entre perfiles AEM Communities y el servicio SSO de Livefyre.
 
 Cuando los usuarios inician sesión en el sitio de AEM, también inician sesión en los componentes sociales de Livefyre. Cuando un usuario que ha cerrado la sesión intenta utilizar una función de componente Livefyre que requiere autenticación (como cargar una foto), el componente Livefyre inicia la autenticación del usuario.
 
@@ -107,9 +110,9 @@ Es posible que la integración de autenticación predeterminada no sea perfecta 
 
    Para obtener más información sobre las bibliotecas de AEM, consulte [Uso de bibliotecas](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html)de cliente.
 
-## Uso de Livefyre en los sitios de AEM {#use-livefyre-with-aem-sites}
+## Uso de Livefyre con AEM Sites {#use-livefyre-with-aem-sites}
 
-### Agregar componentes de Livefyre a una página {#add-livefyre-components-to-a-page}
+### Añadir componentes de Livefyre en una página {#add-livefyre-components-to-a-page}
 
 Antes de agregar componentes de Livefyre a una página dentro de Sitios, debe habilitar Livefyre para la página heredando una configuración de nube de Livefyre de una página principal o agregando la configuración directamente a la página. Consulte la implementación para saber cómo incluir servicios en la nube en el sitio.
 
@@ -141,15 +144,15 @@ Solo puede configurar y editar un componente Livefyre en Livefyre Studio. Desde 
 
 ## Uso de Livefyre con AEM Assets {#use-livefyre-with-aem-assets}
 
-### Solicitar derechos e importar UGC en AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
+### Solicitar derechos e importar UGC a AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
 
-Puede importar contenido generado por usuarios (UGC) de Twitter e Instagram desde Livefyre Studio a Recursos AEM mediante el importador UGC. Después de seleccionar el contenido que se va a importar, debe solicitar derechos al contenido para poder completar la importación.
+Puede importar contenido generado por usuarios (UGC) de Twitter e Instagram de Livefyre Studio a AEM Assets mediante el importador de UGC. Después de seleccionar el contenido que se va a importar, debe solicitar derechos al contenido para poder completar la importación.
 
 >[!NOTE]
 >
->Antes de usar Recursos para importar UGC, debe configurar cuentas de cuentas de Social y solicitudes de derechos en Livefyre Studio. Consulte [Configuración: Solicitudes](https://marketing.adobe.com/resources/help/en_US/livefyre/c_how_requesting_rights_works.html) de derechos para obtener más información.
+>Antes de usar Recursos para importar UGC, debe configurar cuentas de cuentas de Social y solicitudes de derechos en Livefyre Studio. Consulte [Configuración: Solicitudes](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) de derechos para obtener más información.
 
-Para importar UGC en Recursos AEM:
+Para importar UGC a AEM Assets:
 
 1. En la página de inicio de AEM, vaya a **Recursos > Archivos**.
 1. Haga clic en **Crear** y, a continuación, en **Importar UGC.**
@@ -158,8 +161,8 @@ Para importar UGC en Recursos AEM:
 
 1. Buscar contenido:
 
-   * En Livefyre, haga clic en la ficha Biblioteca UGC. Utilice los filtros y busque contenido de la biblioteca UGC.
-   * En Twitter e Instagram, haga clic en la ficha Twitter o Instagram. Utilice la búsqueda o los filtros para encontrar contenido.
+   * En Livefyre, haga clic en la ficha Biblioteca UGC. Use los filtros y busque contenido de la biblioteca UGC.
+   * En Twitter e Instagram, haga clic en la ficha Twitter o Instagram. Use la búsqueda o filtros para encontrar contenido.
 
 1. Seleccione los recursos que desee importar. Los recursos seleccionados se cuentan y guardan automáticamente en la ficha **Seleccionado** .
 1. **Opcional**: Haga clic en la ficha **Seleccionado** y revise el contenido UGC seleccionado para importar.
@@ -173,6 +176,7 @@ Para importar UGC en Recursos AEM:
 
    * **Solicitar derechos** manualmente para obtener un mensaje que se puede copiar y pegar y enviar manualmente a los propietarios de contenido a través de Instagram.
    * **Atributo manual de derechos** de contenido para anular los derechos de recursos individuales.
+
    >[!NOTE]
    >
    >Debido a las actualizaciones que afectan a la agregación de contenido de cuentas de usuarios no profesionales, ya no podemos publicar comentarios en su nombre ni comprobar automáticamente las respuestas del autor. [Haga clic aquí para obtener más](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/)información.
@@ -197,7 +201,7 @@ Para importar UGC en Recursos AEM:
 
 1. Haga clic en **Finalizado** en la esquina superior derecha para finalizar el flujo de trabajo de la solicitud de derechos.
 
-   Puede ver el estado de una solicitud de derechos pendiente para un recurso en Livefyre Studio. Si el contenido está pendiente de una solicitud de derechos, el recurso no se mostrará en Recursos AEM hasta que se concedan derechos. El recurso aparece automáticamente en Recursos AEM cuando se concede una solicitud de derechos.
+   Puede ver el estado de una solicitud de derechos pendiente para un recurso en Livefyre Studio. Si el contenido está pendiente de una solicitud de derechos, el recurso no se mostrará en los AEM Assets hasta que se concedan derechos. El recurso aparece automáticamente en los AEM Assets cuando se concede una solicitud de derechos.
 
    En Instagram, debe rastrear la respuesta del propietario del contenido y otorgar derechos manualmente si se le otorgan derechos sobre el contenido.
 
@@ -220,7 +224,7 @@ Después de importar el catálogo de productos, los productos se muestran en tie
 
 ## Matriz de compatibilidad de AEM para aplicaciones de Livefyre {#aem-support-matrix-for-livefyre-apps}
 
-| Aplicaciones de Livefyre | AEM 6.1 | AEM 6.2 | AEM 6.3 | AEM 6.4 |
+| Aplicaciones de Livefyre | AEM 6.1 | AEM 6.2 | AEM 6.3 | AEM 6.4   |
 |---|---|---|---|---|
 | Carrusel | X | X | X | X |
 | Chat | X | X | X | X |
