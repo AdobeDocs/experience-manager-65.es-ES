@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '9303'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 En [!DNL Adobe Experience Manager Assets] puede hacer más que simplemente almacenar y gobernar sus recursos. [!DNL Experience Manager] ofertas de las capacidades de administración de activos de nivel empresarial. Puede editar y compartir recursos, realizar búsquedas avanzadas, crear varias representaciones de decenas de formatos de archivo admitidos, administrar versiones y derechos digitales, automatizar el procesamiento de recursos, administrar y gestionar metadatos, colaborar mediante anotaciones y mucho más.
 
-En este artículo se describen las tareas básicas de administración de recursos, como crear o cargar; actualizaciones de metadatos; copiar, mover y eliminar; publicar, cancelar la publicación y buscar recursos. Para comprender la interfaz de usuario, consulte [Introducción a la interfaz](/help/sites-authoring/basic-handling.md)de usuario de recursos. Para administrar fragmentos de contenido, consulte [Gestión de recursos de fragmentos](content-fragments-managing.md) de contenido.
+En este artículo se describen las tareas básicas de administración de recursos, como crear o cargar; actualizaciones de metadatos; copiar, mover y eliminar; publicar, cancelar la publicación y buscar recursos. Para comprender la interfaz de usuario, consulte [Introducción a la interfaz](/help/sites-authoring/basic-handling.md)de usuario de recursos. Para administrar fragmentos de contenido, consulte [Gestión de recursos de fragmentos](/help/assets/content-fragments/content-fragments-managing.md) de contenido.
 
 ## Crear carpetas {#creating-folders}
 
@@ -185,7 +185,7 @@ Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]
 | Opciones de trabajo |  | Haga clic en Opciones **** de trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Haga clic en el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas cargadas se introducen automáticamente en [!DNL Experience Manager Assets]. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
@@ -240,7 +240,7 @@ Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede darles f
 
 Los archivos Documento de Photoshop (PSD) se utilizan con mayor frecuencia para crear plantillas de imagen. Al cargar un archivo PSD, puede crear una plantilla de imagen automáticamente a partir del archivo (seleccione la opción [!UICONTROL Crear plantilla] en la pantalla Cargar).
 
-Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si se utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
+Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
 
 Utilice las opciones [!UICONTROL de recorte] y de Perfil [!UICONTROL de color descritas anteriormente con las opciones]de carga de Photoshop.
 
@@ -361,7 +361,7 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 >[!MORELIKETHIS]
 >
->* [Previsualización de recursos](/help/assets/previewing-assets.md)de medios dinámicos.
+>* [Previsualización de Dynamic Media Assets](/help/assets/previewing-assets.md).
 >* [Subrecursos](managing-linked-subassets.md#viewing-subassets)de Vista.
 
 
@@ -511,7 +511,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    **Eliminar una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, haga clic en el icono **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar Experience Manager para eliminar representaciones específicas o para eliminar los recursos y volver a cargar los recursos eliminados.
+   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, haga clic en el icono **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
 
    ![Opción para eliminar una representación](assets/delete_renditionicon.png)
 
@@ -571,13 +571,13 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
 ## Descargar recursos {#downloading-assets}
 
-Consulte [Descargar recursos de Experience Manager](/help/assets/download-assets-from-aem.md).
+Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
 >[!NOTE]
 >
->Para obtener más información específica sobre Dynamic Media, consulte [Publicación de recursos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+>Para obtener más información específica de Dynamic Media, consulte [Publicación de Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Vaya a la ubicación de los recursos o carpetas que desee publicar.
 
@@ -644,7 +644,7 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
 
 La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM.
 
-Para realizar búsquedas simples, avanzadas y personalizadas con el fin de descubrir y utilizar los recursos más adecuados, consulte [Buscar recursos en Experience Manager](search-assets.md).
+Para realizar búsquedas simples, avanzadas y personalizadas con el fin de detectar y utilizar los recursos más adecuados, consulte [Buscar recursos en Experience Manager](search-assets.md).
 
 ## Acciones rápidas {#quick-actions}
 
@@ -740,7 +740,7 @@ La línea de tiempo permite la vista de varios eventos para un elemento seleccio
 
 >[!NOTE]
 >
->La línea de tiempo contiene varias [opciones específicas de los fragmentos](/help/assets/content-fragments-managing.md#timeline-for-content-fragments)de contenido.
+>La línea de tiempo contiene varias [opciones específicas de los fragmentos](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)de contenido.
 
 ## Anotar recursos {#annotating}
 
@@ -750,7 +750,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 >[!NOTE]
 >
->En Fragmentos de contenido, [las anotaciones se crean en el editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)de fragmentos.
+>En Fragmentos de contenido, [las anotaciones se crean en el editor](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)de fragmentos.
 
 1. Navegue hasta la ubicación del recurso al que desee agregar anotaciones.
 1. Haga clic en el icono **[!UICONTROL Anotar]** de una de las siguientes opciones:
