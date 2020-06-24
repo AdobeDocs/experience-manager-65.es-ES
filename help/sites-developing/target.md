@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 0%
 
 ---
 
@@ -25,15 +28,15 @@ En esta sección se describen temas sobre el desarrollo de componentes para su u
 
 >[!NOTE]
 >
->Cuando se dirige a un componente en un autor de AEM, el componente realiza una serie de llamadas del lado del servidor a Adobe Target para registrar la campaña, configurar ofertas y recuperar segmentos de Adobe Target (si están configurados). No se realiza ninguna llamada al servidor desde la publicación de AEM en Adobe Target.
+>Cuando se destinatario un componente en el autor de AEM, el componente realiza una serie de llamadas del lado del servidor a Adobe Target para registrar la campaña, configurar ofertas y recuperar segmentos de Adobe Target (si están configurados). No se realizan llamadas del lado del servidor desde la publicación de AEM en Adobe Target.
 
-## Activación del objetivo con Adobe Target en las páginas {#enabling-targeting-with-adobe-target-on-your-pages}
+## Habilitar el objetivo con Adobe Target en las páginas {#enabling-targeting-with-adobe-target-on-your-pages}
 
 Para utilizar componentes de destino en las páginas que interactúan con Adobe Target, incluya código específico del lado del cliente en el elemento &lt;head>.
 
 ### Sección principal {#the-head-section}
 
-Agregue los dos siguientes bloques de código a la sección &lt;head> de la página:
+Añada los dos siguientes bloques de código a la sección &lt;head> de la página:
 
 ```xml
 <!--/* Include Context Hub */-->
@@ -44,9 +47,9 @@ Agregue los dos siguientes bloques de código a la sección &lt;head> de la pág
 <cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>
 ```
 
-Este código agrega los objetos javascript de análisis necesarios y carga las bibliotecas de servicios de nube asociadas al sitio web. Para el servicio Target, las bibliotecas se cargan mediante `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
+Este código agrega los objetos javascript de análisis necesarios y carga las bibliotecas de servicios de nube asociadas al sitio web. Para el servicio de Destinatario, las bibliotecas se cargan mediante `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
 
-El conjunto de bibliotecas cargadas depende del tipo de biblioteca de cliente de destino (mbox.js o at.js) que se utilice en la configuración de Target:
+El conjunto de bibliotecas cargadas depende del tipo de biblioteca de cliente de destinatario (mbox.js o at.js) que se utilice en la configuración de Destinatario:
 
 **Para mbox.js predeterminado**
 
@@ -90,7 +93,7 @@ El conjunto de bibliotecas cargadas depende del tipo de biblioteca de cliente de
  <script type="text/javascript" src="/libs/cq/foundation/testandtarget/atjs-integration.js"></script>
 ```
 
-El `CQ_Analytics.TestTarget` objeto administra la funcionalidad de Target en el lado del cliente. Por lo tanto, la página contendrá algún código de inicio, como en el siguiente ejemplo:
+El `CQ_Analytics.TestTarget` objeto administra la funcionalidad de Destinatario en el lado del cliente. Por lo tanto, la página contendrá algún código de inicio, como en el siguiente ejemplo:
 
 ```
 <script type="text/javascript">
@@ -141,9 +144,9 @@ JSP agrega los objetos de javascript de análisis necesarios y las referencias a
 <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/init.js"></script>
 ```
 
-#### Sección de cuerpo (inicio) {#the-body-section-start}
+#### La sección del cuerpo (inicio) {#the-body-section-start}
 
-Agregue el siguiente código inmediatamente después de la etiqueta &lt;body> para agregar las características de contexto de cliente a la página:
+Añada el siguiente código inmediatamente después de la etiqueta &lt;body> para agregar las características de contexto de cliente a la página:
 
 ```xml
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
@@ -151,13 +154,13 @@ Agregue el siguiente código inmediatamente después de la etiqueta &lt;body> pa
 
 #### La sección del cuerpo (final) {#the-body-section-end}
 
-Agregue el siguiente código inmediatamente antes de la etiqueta final &lt;/body>:
+Añada el siguiente código inmediatamente antes de la etiqueta final &lt;/body>:
 
 ```xml
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 ```
 
-El script JSP de este componente genera llamadas a la API de JavaScript de Target e implementa otras configuraciones necesarias. El HTML que genera la secuencia de comandos es similar al siguiente ejemplo:
+El script JSP de este componente genera llamadas a la API de javascript de Destinatario e implementa otras configuraciones necesarias. El HTML que genera la secuencia de comandos es similar al siguiente ejemplo:
 
 ```xml
 <div class="servicecomponents cloudservices">
@@ -185,39 +188,39 @@ El script JSP de este componente genera llamadas a la API de JavaScript de Targe
 </div>
 ```
 
-### Uso de un archivo de biblioteca de Target personalizado {#using-a-custom-target-library-file}
+### Uso de un archivo de biblioteca de Destinatario personalizado {#using-a-custom-target-library-file}
 
 >[!NOTE]
 >
->Si no utiliza la DTM u otro sistema de marketing de destino, puede utilizar archivos de biblioteca de destino personalizados.
+>Si no utiliza la DTM u otro sistema de marketing de destinatario, puede utilizar archivos de biblioteca de destinatario personalizados.
 
 >[!NOTE]
 >
->De forma predeterminada, los mboxes están ocultos: la clase mboxDefault determina este comportamiento. La ocultación de mboxes garantiza que los visitantes no vean el contenido predeterminado antes de intercambiarlo; sin embargo, la ocultación de mboxes afecta al rendimiento percibido.
+>De forma predeterminada, los mboxes están ocultos: la clase mboxDefault determina este comportamiento. La ocultación de mboxes garantiza que los visitantes no verán el contenido predeterminado antes de que se intercambien; sin embargo, la ocultación de mboxes afecta al rendimiento percibido.
 
-El archivo mbox.js predeterminado que se utiliza para crear mboxes se encuentra en /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Para utilizar un archivo mbox.js de cliente, agregue el archivo a la configuración de la nube de Target. Para agregar el archivo, el archivo mbox.js debe estar disponible en el sistema de archivos.
+El archivo mbox.js predeterminado que se utiliza para crear mboxes se encuentra en /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Para utilizar un archivo mbox.js de cliente, agregue el archivo a la configuración de la nube de Destinatario. Para agregar el archivo, el archivo mbox.js debe estar disponible en el sistema de archivos.
 
-Por ejemplo, si desea utilizar el servicio [de ID de](https://marketing.adobe.com/resources/help/en_US/mcvid/) Marketing Cloud, debe descargar mbox.js para que contenga el valor correcto para la `imsOrgID` variable, que se basa en su inquilino. Esta variable es necesaria para la integración con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como fuente de informes para Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) y [antes de la implementación](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html).
+Por ejemplo, si desea utilizar el servicio [de ID de](https://docs.adobe.com/content/help/en/id-service/using/home.html) Marketing Cloud, debe descargar mbox.js para que contenga el valor correcto para la `imsOrgID` variable, que se basa en su inquilino. Esta variable es necesaria para la integración con el servicio de Marketing Cloud ID. Para obtener más información, consulte [Adobe Analytics como fuente de Sistema de informes para Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) y [antes de la implementación](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
 
 >[!NOTE]
 >
->Si un mbox personalizado está definido en una configuración de Target, todos deben tener acceso de lectura a **/etc/cloudservices** en los servidores de publicación. Sin este acceso, la carga de archivos mbox.js en el sitio web de publicación produce un error 404.
+>Si un mbox personalizado está definido en una configuración de Destinatario, todos deben tener acceso de lectura a **/etc/cloudservices** en los servidores de publicación. Sin este acceso, la carga de archivos mbox.js en el sitio web de publicación produce un error 404.
 
-1. Vaya a la página **Herramientas** de CQ y seleccione **Cloud Services**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-1. En el árbol, seleccione Adobe Target y, en la lista de configuraciones, haga doble clic en la configuración de Target.
+1. Vaya a la página **Herramientas** de CQ y seleccione **Cloud Service**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. En el árbol, seleccione Adobe Target y, en la lista de configuraciones, haga clic con el botón doble en la configuración del Destinatario.
 1. En la página de configuración, haga clic en Editar.
 1. Para la propiedad Custom mbox.js, haga clic en Examinar y seleccione el archivo.
-1. Para aplicar los cambios, introduzca la contraseña de su cuenta de Adobe Target, haga clic en Volver a conectar con Target y, cuando la conexión se haya realizado correctamente, haga clic en Aceptar. A continuación, haga clic en Aceptar en el cuadro de diálogo Editar componente.
+1. Para aplicar los cambios, introduzca la contraseña de la cuenta de Adobe Target, haga clic en Volver a conectar con Destinatario y, a continuación, haga clic en Aceptar cuando la conexión se haya realizado correctamente. A continuación, haga clic en Aceptar en el cuadro de diálogo Editar componente.
 
-La configuración de Target incluye un archivo mbox.js personalizado; [el código requerido en la sección](/help/sites-developing/target.md#p-the-head-section-p) de encabezado de la página agrega el archivo al marco de la biblioteca del cliente en lugar de una referencia a la biblioteca testandtarget.js.
+La configuración de Destinatario incluye un archivo mbox.js personalizado; [el código requerido en la sección](/help/sites-developing/target.md#p-the-head-section-p) de encabezado de la página agrega el archivo al marco de trabajo de la biblioteca del cliente en lugar de una referencia a la biblioteca testandtarget.js.
 
-## Desactivación del comando de Target para componentes {#disabling-the-target-command-for-components}
+## Desactivación del comando Destinatario para componentes {#disabling-the-target-command-for-components}
 
-La mayoría de los componentes se pueden convertir en componentes de destino mediante el comando Destino del menú contextual.
+La mayoría de los componentes se pueden convertir en componentes de destino mediante el comando Destinatario del menú contextual.
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-Para quitar el comando Target del menú contextual, agregue la siguiente propiedad al nodo cq:editConfig del componente:
+Para quitar el comando Destinatario del menú contextual, agregue la siguiente propiedad al nodo cq:editConfig del componente:
 
 * Nombre: cq:disableTargeting
 * Tipo: Boolean (booleano)
@@ -227,13 +230,13 @@ Por ejemplo, para desactivar la segmentación para los componentes de título de
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-## Envío de información de confirmación de pedido a Adobe Target {#sending-order-confirmation-information-to-adobe-target}
+## Envío de información de confirmación de pedido al Adobe Target {#sending-order-confirmation-information-to-adobe-target}
 
 >[!NOTE]
 >
 >Si no utiliza la DTM, envíe la confirmación del pedido a Adobe Target.
 
-Para rastrear el rendimiento del sitio web, envíe la información de compra desde la página de confirmación de pedidos a Adobe Target. (Consulte [Creación de un mbox](https://marketing.adobe.com/resources/help/en_US/dtm/target/order-confirmation-mbox.html) orderConfirmPage en la documentación de Adobe Target). Adobe Target reconoce los datos de mbox como datos de confirmación de pedido cuando el nombre de MBox es `orderConfirmPage` y utiliza los siguientes nombres de parámetro específicos:
+Para rastrear el rendimiento de su sitio web, envíe la información de compra desde la página de confirmación del pedido al Adobe Target. (Consulte [Creación de un mbox](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) orderConfirmPage en la documentación de Adobe Target). Adobe Target reconoce los datos de mbox como datos de confirmación de pedido cuando el nombre de MBox es `orderConfirmPage` y utiliza los siguientes nombres de parámetro específicos:
 
 * productPurchasedId: Una lista de ID que identifica los productos comprados.
 * orderId: ID del pedido.
@@ -315,11 +318,11 @@ Cuando el componente se incluye en la página de cierre de compra del ejemplo an
 </script>
 ```
 
-## Explicación del componente de Target {#understanding-the-target-component}
+## Explicación del componente Destinatario {#understanding-the-target-component}
 
-El componente Target permite a los autores crear mboxes dinámicos a partir de componentes de contenido de CQ. (Consulte Objetivo [de contenido](/help/sites-authoring/content-targeting-touch.md)). El componente de Target se encuentra en /libs/cq/personalization/components/target.
+El componente Destinatario permite a los autores crear mboxes dinámicos a partir de componentes de contenido de CQ. (Consulte Objetivo [de contenido](/help/sites-authoring/content-targeting-touch.md)). El componente Destinatario se encuentra en /libs/cq/personalization/components/destinatario.
 
-La secuencia de comandos target.jsp accede a las propiedades de la página para determinar el motor de determinación de objetivos que se va a utilizar en el componente y, a continuación, ejecuta la secuencia de comandos adecuada:
+La secuencia de comandos de destinatario.jsp accede a las propiedades de la página para determinar el motor de determinación de objetivos que se va a utilizar para el componente y, a continuación, ejecuta la secuencia de comandos adecuada:
 
 * Adobe Target: /libs/cq/personalization/components/target/engine_tnt.jsp
 * [Adobe Target con AT.JS](/help/sites-administering/target.md): /libs/cq/personalization/components/target/engine_atjs.jsp
@@ -330,13 +333,13 @@ La secuencia de comandos target.jsp accede a las propiedades de la página para 
 
 >[!NOTE]
 >
->De forma predeterminada, los mboxes están ocultos: la clase mboxDefault determina este comportamiento. La ocultación de mboxes garantiza que los visitantes no vean el contenido predeterminado antes de intercambiarlo; sin embargo, la ocultación de mboxes afecta al rendimiento percibido.
+>De forma predeterminada, los mboxes están ocultos: la clase mboxDefault determina este comportamiento. La ocultación de mboxes garantiza que los visitantes no verán el contenido predeterminado antes de que se intercambien; sin embargo, la ocultación de mboxes afecta al rendimiento percibido.
 
-Cuando Adobe Target dirige el contenido, la secuencia de comandos engine_tnt.jsp crea mboxes que contienen el contenido de la experiencia de destino:
+Cuando Adobe Target dirige el objetivo de contenido, la secuencia de comandos engine_tnt.jsp crea mboxes que contienen el contenido de la experiencia de destino:
 
-* Agrega un `div` elemento con la clase de `mboxDefault`, como requiere la API de Adobe Target.
+* Añade un `div` elemento con la clase de `mboxDefault`, como requiere la API de Adobe Target.
 
-* Agrega el contenido del mbox (el contenido de la experiencia de destino) dentro del `div` elemento.
+* Añade el contenido del mbox (el contenido de la experiencia de destino) dentro del `div` elemento.
 
 Después del `mboxDefault` elemento div, se inserta el javascript que crea el mbox:
 
@@ -346,7 +349,7 @@ Después del `mboxDefault` elemento div, se inserta el javascript que crea el mb
 
 #### Bibliotecas de clientes para la segmentación de contenido {#client-libraries-for-content-targeting}
 
-Las categorías de clientlib disponibles son las siguientes:
+Las siguientes son las categorías clientlib disponibles:
 
 * testandtarget.mbox
 * testandtarget.init
