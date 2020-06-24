@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '2638'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El proceso de desarrollo de aplicaciones móviles de AEM reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa de procesos ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan las tareas.
+El proceso de desarrollo de aplicaciones móviles de AEM reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa de procesos ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan tareas.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -33,7 +36,7 @@ AEM Mobile proporciona el modelo de la aplicación Phonegap para crear aplicacio
 
 * La página raíz.
 * Las variaciones de idioma de la aplicación.
-* Página principal de la variación de idioma.
+* La página de inicio de la variación de idioma.
 
 ### La raíz de una aplicación de PhoneGap {#the-root-of-a-phonegap-app}
 
@@ -47,38 +50,38 @@ La página raíz se almacena debajo de la propiedad Ruta de destino de la aplica
 
 Las primeras páginas secundarias de la página raíz son las variaciones de idioma de la aplicación. El nombre de cada página es el idioma en el que se crea la aplicación. Por ejemplo, inglés es el nombre de la variación en inglés de la aplicación.
 
-**** Nota: El modelo predeterminado de PhoneGap solo crea una aplicación en inglés. El desarrollador puede modificar el modelo para que pueda crear más variaciones de idioma.
+**Nota:** El modelo predeterminado de PhoneGap solo crea una aplicación en inglés. El desarrollador puede modificar el modelo para que pueda crear más variaciones de idioma.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
 La página de idioma sirve para dos propósitos:
 
 * El contenido de la página es la página de paso para la variación de idioma de la aplicación.
-* Las propiedades de página controlan varios aspectos de diseño de la aplicación, como la URL que se va a utilizar para solicitar actualizaciones de contenido, e información sobre la conexión a la compilación en la nube y la integración de Adobe Analytics Services.
+* Las propiedades de página controlan varios aspectos de diseño de la aplicación, como la URL que se va a utilizar para solicitar actualizaciones de contenido, e información sobre la conexión a la compilación en la nube y a la integración de Adobe Analytics Services.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### La página principal {#the-home-page}
+### La Página de inicio {#the-home-page}
 
-Cuando se abre la aplicación, aparece la página de inicio o index.html de una variación de idioma de una aplicación. La página de inicio proporciona a los usuarios un menú de vínculos a varias páginas de la aplicación. El sistema de párrafos permite agregar componentes a la página para crear contenido.
+La página de Página de inicio o index.html de una variación de idioma de una aplicación aparece cuando se abre la aplicación. La página de inicio proporciona a los usuarios un menú de vínculos a varias páginas de la aplicación. El sistema de párrafos permite agregar componentes a la página para crear contenido.
 
 ## Creación de una aplicación móvil {#creating-a-mobile-application}
 
 Las aplicaciones móviles se basan en un modelo que define una estructura de página y propiedades. Puede configurar las siguientes propiedades de la aplicación:
 
-* **** Título: El título de la aplicación.
-* **** Ruta de destino: Ubicación en el repositorio donde se almacena la aplicación. Deje el valor predeterminado para crear una ruta basada en el nombre de la aplicación.
+* **Título:** El título de la aplicación.
+* **Ruta de destino:** Ubicación en el repositorio donde se almacena la aplicación. Deje el valor predeterminado para crear una ruta basada en el nombre de la aplicación.
 
-* **** Nombre: El valor predeterminado es el valor de la propiedad Title con caracteres de espacio eliminados. El nombre se utiliza dentro de CQ para hacer referencia a la aplicación, por ejemplo para el nodo de repositorio que representa la aplicación.
-* **** Descripción: Descripción de la aplicación.
-* **** URL del servidor: La URL que proporciona actualizaciones de contenido de Over-the-Air (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio de externalización). Tenga en cuenta que debe ser una instancia de servidor de publicación en lugar de un autor, lo que requiere autenticación.
+* **Nombre:** El valor predeterminado es el valor de la propiedad Title con caracteres de espacio eliminados. El nombre se utiliza dentro de CQ para hacer referencia a la aplicación, por ejemplo para el nodo de repositorio que representa la aplicación.
+* **Descripción:** Descripción de la aplicación.
+* **URL del servidor:** La URL que proporciona actualizaciones de contenido de Over-the-Air (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio de externalización). Tenga en cuenta que debe ser una instancia de servidor de publicación en lugar de un autor, lo que requiere autenticación.
 
-También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que se va a utilizar y seleccionar la configuración de análisis de aplicaciones móviles que se va a usar. Esta imagen solo se utiliza como miniatura para representar la aplicación móvil en la consola de aplicaciones móviles de Experience Manager.
+También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que se va a utilizar y seleccionar la configuración de análisis de aplicaciones móviles que se va a usar. Esta imagen solo se utiliza como miniatura para representar su aplicación móvil en la consola de aplicaciones móviles en Experience Manager.
 
 Existen fichas adicionales (y opcionales) para crear el servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en la aplicación.
 
 * Generar: Haga clic en Administrar configuraciones y configure el servicio de compilación build.phonegap.com aquí. A continuación, desde la lista desplegable podrá seleccionar el servicio en la nube PhoneGap recién creado.
-* Analytics: Haga clic en administrar configuraciones y configure el servicio en la nube del SDK [de](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) Adobe Mobile Services. A continuación, desde la lista desplegable, podrá seleccionar el servicio móvil recién creado para integrarlo en su aplicación móvil.
+* Analytics: Haga clic en administrar configuraciones y configure el servicio en la nube del SDK [de](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) Adobe Mobile Services. A continuación, desde la lista desplegable, podrá seleccionar el servicio móvil recién creado para integrarlo en su aplicación móvil.
 
 >[!NOTE]
 >
@@ -96,7 +99,7 @@ El siguiente procedimiento utiliza la IU táctil para crear una aplicación móv
 
    Para crear una configuración de compilación de PhoneGap, haga clic en Administrar configuraciones.
 
-1. (Opcional) Si utiliza SiteCatalyst para rastrear la actividad de la aplicación, en la ficha Análisis, seleccione la configuración que desee utilizar.
+1. (Opcional) Si utiliza SiteCatalyst para rastrear la actividad de la aplicación, en la ficha Analytics, seleccione la configuración que desee utilizar.
 
    Para crear una configuración de aplicación móvil, haga clic en Administrar configuraciones.
 
@@ -110,7 +113,7 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 #### Cambiar el título, la descripción y el icono {#change-the-title-description-and-icon}
 
 1. En el carril, toque o haga clic en Aplicaciones.
-1. Seleccione la aplicación que desea configurar y haga clic en el icono Ver propiedades de la página.
+1. Seleccione la aplicación que desea configurar y haga clic en el icono Propiedades de la página de Vista.
 
    ![](do-not-localize/chlimage_1-8.png)
 
@@ -125,7 +128,7 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 #### Configurar una variación de idioma de la aplicación {#configure-a-language-variation-of-the-application}
 
 1. En el carril, toque o haga clic en Aplicaciones.
-1. Haga clic para explorar en profundidad la aplicación móvil que desea editar en la consola de administración de aplicaciones. Seleccione la versión de idioma de la aplicación para configurarla y haga clic en el icono Ver propiedades de la aplicación.
+1. Haga clic para explorar en profundidad la aplicación móvil que desea editar en la consola de administración de aplicaciones. Seleccione la versión de idioma de la aplicación para configurarla y haga clic en el icono Propiedades de la aplicación de Vista.
 
    ![](do-not-localize/chlimage_1-11.png)
 
@@ -133,7 +136,7 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 
    ![](do-not-localize/chlimage_1-12.png)
 
-1. Configure las propiedades en las fichas Básico, Avanzado, Generar y Análisis y, a continuación, toque o haga clic en el icono Listo.
+1. Configure las propiedades en las fichas Básico, Avanzado, Generar y Analytics y, a continuación, toque o haga clic en el icono Listo.
 
    ![](do-not-localize/chlimage_1-13.png)
 
@@ -143,7 +146,7 @@ Después de crear la aplicación móvil, agregue el contenido que se utiliza com
 
 1. En el carril, toque o haga clic en Aplicaciones.
 1. Toque o haga clic en la aplicación y, a continuación, toque o haga clic en inglés.
-1. Edite la página principal o agregue las páginas secundarias según sea necesario.
+1. Edite la Página de inicio o agregue las páginas secundarias según sea necesario.
 
 ### Traslado de contenido a aplicaciones móviles {#moving-content-to-mobile-applications}
 
@@ -186,11 +189,11 @@ Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 1. Haga clic en el botón + Crear en la parte superior y seleccione Crear aplicación.
-1. Una vez que se le presente la lista de plantillas de aplicación, seleccione una:
+1. Una vez que se le presente la lista de las plantillas de aplicación, seleccione una:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Haga clic en Siguiente.
+1. Haga clic en Siguiente. 
 1. Proporcione un título y un ID de la aplicación, pero puede que también desee incluir un nombre y una descripción.
 
    1. Además, puede proporcionar un formato PNG (formato de icono PhoneGap admitido) como icono navegando por los recursos de AEM.
@@ -198,7 +201,7 @@ Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Haga clic en el botón crear y se le presentarán dos opciones: Listo (volver a la vista de catálogo de aplicaciones) o Administrar aplicación (abre el tablero de la aplicación).
+1. Haga clic en el botón crear y se le presentarán dos opciones: Listo (volver a la vista del catálogo de aplicaciones) o Administrar aplicación (abre el panel de la aplicación).
 1. Una vez creada, debería ver la nueva aplicación en el catálogo de aplicaciones:
 
 ![climage_1-3](assets/chlimage_1-3.jpeg)
@@ -219,8 +222,8 @@ Para abrir la aplicación, en el carril haga clic en Aplicaciones móviles y, a 
 
 Cada página de la aplicación móvil incluye las siguientes funciones:
 
-* Botón Atrás para volver a la página principal. Tenga en cuenta que el botón Atrás no aparece en la página de inicio.
-* Un carril expansible que ofrece un menú de comandos y vínculos:
+* Botón Atrás para volver a la página principal. Tenga en cuenta que el botón Atrás no aparece en la Página de inicio.
+* Un carril expansible que oferta un menú de comandos y vínculos:
 
    * Abra la página Ubicaciones.
    * Abra el carro de compras.
@@ -229,16 +232,16 @@ Cada página de la aplicación móvil incluye las siguientes funciones:
 
 * Sistema de párrafos para añadir componentes y crear contenido.
 
-### Página principal - Aplicación móvil Geometrixx {#the-home-page-geometrixx-mobile-app}
+### La Página de inicio: Aplicación móvil Geometrixx {#the-home-page-geometrixx-mobile-app}
 
-El contenido de la página principal consta de las siguientes herramientas de navegación:
+El contenido de la Página de inicio consta de las siguientes herramientas de navegación:
 
-* Componente Lista de menús que proporciona vínculos a las páginas secundarias Engranaje, Reseñas, Noticias y Sobre la empresa.
+* Componente de Lista de menú que proporciona vínculos a las páginas secundarias Engranaje, Reseñas, Noticias y Sobre la empresa.
 * Componente Carrusel de barrido que muestra las páginas secundarias.
 
 ### Página de engranaje - Aplicación móvil Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
-La página Engranaje proporciona a los usuarios acceso a las páginas de productos. Un componente Lista de menús proporciona acceso a las páginas secundarias de la página Engranaje. Las páginas secundarias son categorías de productos que presenta el sitio web.
+La página Engranaje proporciona a los usuarios acceso a las páginas de productos. Un componente lista de menú proporciona acceso a las páginas secundarias de la página Engranaje. Las páginas secundarias son categorías de productos que presenta el sitio web.
 
 * Temporada
 * Vestimenta
@@ -253,7 +256,7 @@ La página Productos y su jerarquía de páginas secundarias implementan un sist
 
 La página Productos no está disponible para los usuarios de la aplicación. La página Engranaje proporciona acceso a cada página de producto.
 
-### Página Revisiones: Aplicación Móvil Geometrixx {#the-reviews-page-geometrixx-mobile-app}
+### Página Revisiones - Aplicación móvil Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contiene un botón Atrás. El sistema de párrafos permite añadir componentes.
 
@@ -275,7 +278,7 @@ Al utilizar la aplicación, la página Información sobre la empresa está dispo
 
 La página Ubicaciones contiene un componente Ubicaciones.
 
-Al utilizar la aplicación, la página Ubicaciones está disponible en la lista de menús de la página Inglés.
+Al utilizar la aplicación, la página Ubicaciones está disponible en la lista de menú de la página Inglés.
 
 ## Componentes móviles de muestra {#sample-mobile-components}
 
@@ -283,7 +286,7 @@ Hay varios componentes disponibles inmediatamente en la barra de tareas al crear
 
 ### Carrusel de barrido {#swipe-carousel}
 
-El componente Carrusel de barrido es una herramienta para mostrar y navegar por las páginas del sitio. El componente incluye un carrusel que recorre las imágenes de las páginas encima de una lista de vínculos de página. Edite el componente para especificar las páginas que se van a mostrar y el comportamiento del carrusel.
+El componente Carrusel de barrido es una herramienta para mostrar y navegar por las páginas del sitio. El componente incluye un carrusel que recorre las imágenes de las páginas por encima de una lista de vínculos de página. Edite el componente para especificar las páginas que se van a mostrar y el comportamiento del carrusel.
 
 Tenga en cuenta que las imágenes aparecen en el carrusel para las páginas asociadas a una imagen de una forma específica. Cuando las páginas no están asociadas con imágenes, solo aparece la lista de vínculos.
 
@@ -294,30 +297,30 @@ Tenga en cuenta que las imágenes aparecen en el carrusel para las páginas asoc
 Configure el comportamiento del carrusel:
 
 * Velocidad de reproducción: Tiempo en milisegundos que se muestra cada imagen antes de mostrar la siguiente imagen.
-* Tiempo de transición: Duración en milisegundos de la animación para transiciones de imagen.
+* Tiempo de Transición: Duración en milisegundos de la animación para transiciones de imágenes.
 * Estilo de controles: Tipo de controles que se proporcionan para el desplazamiento entre imágenes.
 
-**Ficha Propiedades de lista**
+**Ficha Propiedades de la Lista**
 
-Especifique cómo se genera la lista de páginas:
+Especifique cómo se genera la lista de página:
 
-* Generar lista usando: Método que se utiliza para especificar las páginas que se incluirán en el carrusel. Consulte Generación de la lista de páginas.
-* Ordenar por: Seleccione una propiedad de página para utilizarla para ordenar la lista de páginas. Por ejemplo, seleccione jcr:title para ordenar las páginas alfabéticamente por título.
-* Límite: El número máximo de páginas que se van a incluir. Esta propiedad es adecuada para métodos basados en búsquedas para generar la lista de páginas.
+* Generar Lista usando: Método que se utiliza para especificar las páginas que se incluirán en el carrusel. Consulte Generación de la Lista de página.
+* Ordenar por: Seleccione una propiedad de página para utilizarla para ordenar la lista de página. Por ejemplo, seleccione jcr:title para ordenar las páginas alfabéticamente por título.
+* Límite: El número máximo de páginas que se van a incluir. Esta propiedad es adecuada para métodos basados en búsquedas para generar la lista de página.
 
-#### Generación de la lista de páginas {#building-the-page-list}
+#### Generación de la Lista de página {#building-the-page-list}
 
-El componente Carrusel de barrido proporciona los siguientes valores para la propiedad Build List Using. El cuadro de diálogo de edición cambia según el valor seleccionado:
+El componente Carrusel de barrido proporciona los siguientes valores para la propiedad Generar Lista usando. El cuadro de diálogo de edición cambia según el valor seleccionado:
 
 **Páginas secundarias**
 
-El componente enumera todas las páginas secundarias de una página específica. Después de seleccionar este valor, seleccione la página en la ficha Páginas secundarias o especifique ningún valor para enumerar los elementos secundarios de la página actual.
+El componente lista todas las páginas secundarias de una página específica. Después de seleccionar este valor, seleccione la página en la ficha Páginas secundarias o especifique que no hay ningún valor para la lista de los elementos secundarios de la página actual.
 
 **Lista fija**
 
 Especifique una lista de páginas de inclusión. Después de seleccionar este valor, configure la lista en la ficha Lista fija que aparece al seleccionar Lista fija:
 
-* Para agregar una página, haga clic en Agregar elemento y luego busque la página.
+* Para agregar una página, haga clic en Añadir elemento y luego busque la página.
 * Utilice los iconos de flecha arriba y abajo para mover la página dentro de la lista.
 * Haga clic en el botón Eliminar para eliminar una página de la lista.
 
@@ -327,27 +330,27 @@ La propiedad Ordenar por no afecta al orden de las listas fijas.
 
 Rellene la lista utilizando los resultados de una búsqueda de palabras clave. La búsqueda se realiza en los elementos secundarios de una página que especifique:
 
-1. Para especificar la página raíz de la búsqueda, utilice la propiedad Iniciar en para seleccionar la ruta de la página. No especifique ninguna ruta para buscar debajo de la página actual.
+1. Para especificar la página raíz de la búsqueda, utilice la propiedad Inicio en para seleccionar la ruta de la página. No especifique ninguna ruta para buscar debajo de la página actual.
 1. En la propiedad Consulta de búsqueda, introduzca las palabras clave de búsqueda.
 
 **Búsqueda avanzada**
 
-Rellene la lista con una consulta [de QueryBuilder](/help/sites-developing/querybuilder-api.md) .
+Rellene la lista con una consulta [Querybuilder](/help/sites-developing/querybuilder-api.md) .
 
 ### Imagen {#image}
 
-Agregue una imagen al contenido de la aplicación.
+Añada una imagen al contenido de la aplicación.
 
 ### Texto {#text}
 
-Agregue texto enriquecido al contenido de la aplicación.
+Añada texto enriquecido al contenido de la aplicación.
 
 ### Ubicaciones de almacenes de campañas {#store-locations}
 
 El componente Ubicaciones de la tienda proporciona a los usuarios herramientas para encontrar puntos de venta comerciales:
 
-* Búsqueda
-* Lista de ubicaciones cercanas o distantes a las coordenadas GPS del dispositivo.
+* Búsqueda  
+* Listas de ubicaciones cercanas o distantes a las coordenadas GPS del dispositivo.
 
 El componente requiere que el repositorio contenga información de ubicación para cada almacén. Las ubicaciones de muestra se instalan en el nodo /etc/commerce/locations/adobe. ![chlimage_1-152](assets/chlimage_1-152.png)
 
