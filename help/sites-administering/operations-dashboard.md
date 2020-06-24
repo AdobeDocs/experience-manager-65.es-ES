@@ -1,8 +1,8 @@
 ---
 title: Tablero de operaciones
 seo-title: Tablero de operaciones
-description: Obtenga información sobre cómo utilizar el panel de operaciones.
-seo-description: Obtenga información sobre cómo utilizar el panel de operaciones.
+description: Obtenga información sobre cómo utilizar el Panel de operaciones.
+seo-description: Obtenga información sobre cómo utilizar el Panel de operaciones.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3dd3f700cd473570889f8d4ced09281a577e2ef8
+source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+workflow-type: tm+mt
+source-wordcount: '6229'
+ht-degree: 2%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 3dd3f700cd473570889f8d4ced09281a577e2ef8
 
 ## Introducción {#introduction}
 
-El panel de operaciones de AEM 6 ayuda a los operadores del sistema a supervisar el estado del sistema de AEM de un vistazo. También proporciona información de diagnóstico generada automáticamente sobre aspectos relevantes de AEM y permite configurar y ejecutar la automatización de mantenimiento independiente para reducir significativamente las operaciones del proyecto y los casos de soporte. El Tablero de operaciones se puede ampliar con las tareas de mantenimiento y las comprobaciones de estado personalizadas. Además, se puede acceder a los datos del Tablero de operaciones desde herramientas de supervisión externas a través de JMX.
+El Panel de operaciones de AEM 6 ayuda a los operadores de sistema a supervisar el estado del sistema de AEM de un vistazo. También proporciona información de diagnóstico generada automáticamente sobre aspectos relevantes de AEM y permite configurar y ejecutar la automatización de mantenimiento independiente para reducir significativamente las operaciones del proyecto y los casos de soporte. El Panel de operaciones puede ampliarse con tareas de mantenimiento y comprobaciones de estado personalizadas. Además, se puede acceder a los datos del Panel de operaciones desde herramientas de supervisión externas a través de JMX.
 
-**Tablero de operaciones:**
+**El Panel de Operaciones:**
 
 * Es un estado de sistema de un solo clic que ayuda a los departamentos de operaciones a aumentar la eficiencia
 * Proporciona información general sobre el estado del sistema en un único lugar centralizado
@@ -33,17 +36,17 @@ Se puede acceder a ella desde la pantalla de bienvenida de AEM, en **Herramienta
 
 >[!NOTE]
 >
->Para poder acceder al panel de operaciones, el usuario que ha iniciado sesión debe formar parte del grupo de usuarios &quot;Operadores&quot;. Para obtener más información, consulte la documentación sobre Administración de derechos de [usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md).
+>Para poder acceder al Panel de operaciones, el usuario que ha iniciado sesión debe formar parte del grupo de usuarios &quot;Operadores&quot;. Para obtener más información, consulte la documentación sobre Administración de derechos de [usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md).
 
 ## Informes de estado {#health-reports}
 
-El sistema de informes de estado proporciona información sobre el estado de una instancia de AEM a través de Sling Health Checks. Esto se puede realizar mediante solicitudes OSGI, JMX, HTTP (a través de JSON) o mediante la IU táctil. Ofrece medidas y umbral de ciertos contadores configurables y, en algunos casos, ofrece información sobre cómo resolver el problema.
+El sistema de informes de estado proporciona información sobre el estado de una instancia de AEM a través de Sling Health Checks. Esto se puede realizar mediante solicitudes OSGI, JMX, HTTP (a través de JSON) o mediante la IU táctil. oferta las medidas y el umbral de ciertos contadores configurables y, en algunos casos, oferta información sobre cómo resolver el problema.
 
 Tiene varias características, que se describen a continuación.
 
 ## Comprobación del estado {#health-checks}
 
-Los Informes **de** estado son un sistema de tarjetas que indica la buena o mala salud con respecto a una área específica del producto. Estas tarjetas son visualizaciones de Sling Health Checks, que agregan datos de JMX y otras fuentes y exponen información procesada nuevamente como MBeans. Estos MBeans también se pueden inspeccionar en la consola [web](/help/sites-administering/jmx-console.md)JMX, bajo el dominio **org.apache.sling.healthCheck** .
+Los Informes **de** estado son un sistema de tarjetas que indica la buena o mala salud con respecto a una área específica del producto. Estas tarjetas son visualizaciones de Sling Health Checks, que acumulada datos de JMX y otras fuentes y expone información procesada nuevamente como MBeans. Estos MBeans también se pueden inspeccionar en la consola [web](/help/sites-administering/jmx-console.md)JMX, bajo el dominio **org.apache.sling.healthCheck** .
 
 Se puede acceder a la interfaz Informes de estado a través del menú **Herramientas** - **Operaciones** - Informes **de** estado en la pantalla de bienvenida de AEM o directamente a través de la siguiente URL:
 
@@ -51,7 +54,7 @@ Se puede acceder a la interfaz Informes de estado a través del menú **Herramie
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-El sistema de tarjetas expone tres estados posibles: **OK**, **WARN** y **CRÍTICO**. Los estados son el resultado de reglas y umbrales, que se pueden configurar pasando el ratón sobre la tarjeta y haciendo clic en el icono de engranaje en la barra de acciones:
+El sistema de tarjetas expone tres estados posibles: **OK**, **ADVERTENCIA** y **CRÍTICA**. Los estados son el resultado de reglas y umbrales, que se pueden configurar pasando el ratón sobre la tarjeta y haciendo clic en el icono de engranaje en la barra de acciones:
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -70,11 +73,11 @@ Las comprobaciones de estado compuestas se configuran con la ayuda de etiquetas 
 
 ### Cómo crear comprobaciones de estado {#how-to-create-health-checks}
 
-En el panel de operaciones puede visualizar el resultado de las comprobaciones de estado individuales y compuestas.
+En el Panel de operaciones puede visualizar el resultado de las comprobaciones de estado individuales y compuestas.
 
 ### Creación de una comprobación de estado individual {#creating-an-individual-health-check}
 
-La creación de una comprobación de estado individual implica dos pasos: implementar una comprobación de estado de Sling y agregar una entrada para la comprobación de estado en los nodos de configuración del tablero.
+La creación de una comprobación de estado individual implica dos pasos: implementar una comprobación de estado de Sling y agregar una entrada para la comprobación de estado en los nodos de configuración del Panel.
 
 1. Para crear una comprobación de estado de Sling, debe crear un componente OSGI que implemente la interfaz Sling HealthCheck. Deberá agregar este componente dentro de un paquete. Las propiedades del componente identificarán completamente la comprobación de estado. Una vez instalado el componente, se creará automáticamente un MBean de JMX para la comprobación de estado. Consulte la documentación [de comprobación de estado de](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) Sling para obtener más información.
 
@@ -100,18 +103,19 @@ La creación de una comprobación de estado individual implica dos pasos: implem
    >
    >La `MBEAN_NAME` propiedad define el nombre del grano que se generará para esta comprobación de estado.
 
-1. Después de crear una comprobación de estado, se debe crear un nuevo nodo de configuración para que sea accesible en la interfaz del panel de operaciones. Para este paso, es necesario conocer el nombre del grano JMX de la comprobación de estado (la `MBEAN_NAME` propiedad). Para crear una configuración para la comprobación de estado, abra CRXDE y agregue un nuevo nodo (de tipo **nt:unstructure**) en la siguiente ruta: `/apps/settings/granite/operations/hc`
+1. Después de crear una comprobación de estado, es necesario crear un nuevo nodo de configuración para que sea accesible en la interfaz de Panel de operaciones. Para este paso, es necesario conocer el nombre del grano JMX de la comprobación de estado (la `MBEAN_NAME` propiedad). Para crear una configuración para la comprobación de estado, abra CRXDE y agregue un nuevo nodo (de tipo **nt:unstructure**) en la siguiente ruta: `/apps/settings/granite/operations/hc`
 
    Las siguientes propiedades deben establecerse en el nuevo nodo:
 
    * **Nombre:** `sling:resourceType`
 
       * **Tipo:** `String`
-      * **** Valor: `granite/operations/components/mbean`
+      * **Valor:** `granite/operations/components/mbean`
    * **Nombre:** `resource`
 
       * **Tipo:** `String`
-      * **** Valor: `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+      * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+
    >[!NOTE]
    >
    >La ruta de acceso del recurso anterior se crea de la siguiente manera: si el nombre del grano de la comprobación de estado es &quot;test&quot;, agregue &quot;test&quot; al final de la ruta `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
@@ -134,7 +138,7 @@ La creación de una comprobación de estado individual implica dos pasos: implem
 
 ### Creación de una comprobación de estado compuesta {#creating-a-composite-health-check}
 
-La función de la comprobación de estado compuesta consiste en agregar varias comprobaciones de estado individuales que comparten un conjunto de funciones comunes. Por ejemplo: la comprobación de estado compuesta de seguridad agrupa todas las comprobaciones de estado individuales que realizan verificaciones relacionadas con la seguridad. El primer paso para crear una comprobación compuesta es agregar una nueva configuración OSGI. Para que se muestre en el Tablero de operaciones, se debe agregar un nuevo nodo de configuración, de la misma manera que lo hicimos para una simple comprobación.
+La función de la comprobación de estado compuesta consiste en acumulado de varias comprobaciones de estado individuales que compartan un conjunto de funciones comunes. Por ejemplo: la comprobación de estado compuesta de seguridad agrupa todas las comprobaciones de estado individuales que realizan verificaciones relacionadas con la seguridad. El primer paso para crear una comprobación compuesta es agregar una nueva configuración OSGI. Para que se muestre en el Panel de operaciones, se debe agregar un nuevo nodo de configuración, de la misma manera que lo hicimos para una simple comprobación.
 
 1. Vaya al Administrador de configuración web en la consola OSGI. Puede hacerlo accediendo a `https://serveraddress:port/system/console/configMgr`
 1. Busque la entrada denominada Comprobación del estado compuesto **Apache Sling**. Después de encontrarlo, observe que ya hay dos configuraciones disponibles: una para las comprobaciones del sistema y otra para las comprobaciones de seguridad.
@@ -146,36 +150,39 @@ La función de la comprobación de estado compuesta consiste en agregar varias c
 
    El propósito de cada propiedad de configuración es el siguiente:
 
-   * **** Nombre (hc.name): Nombre de la comprobación de estado compuesta. Se recomienda un nombre significativo.
-   * **** Etiquetas (hc.tags): Las etiquetas de esta comprobación de estado. Si esta comprobación de estado compuesta está pensada para formar parte de otra comprobación de estado compuesta (por ejemplo, en una jerarquía de comprobaciones de estado), agregue las etiquetas a las que está relacionada esta combinación.
-   * **** Nombre de MBean (hc.mbean.name): El nombre del grano que se dará al MBean JMX de esta comprobación de estado compuesta.
-   * **** Etiquetas de filtro (filter.tags): Es una propiedad específica de las comprobaciones de estado compuestas. Estas son las etiquetas que el compuesto debe agregar. La comprobación de estado compuesta agregará bajo su grupo todas las comprobaciones de estado que tengan cualquier etiqueta que coincida con cualquiera de las etiquetas de filtro de esta composición. Por ejemplo, una comprobación de estado compuesta que tenga la **prueba** y la **comprobación** de las etiquetas de filtro agregará todas las comprobaciones de estado individuales y compuestas que tengan alguna de las etiquetas de **prueba** y **comprobación** en la propiedad de etiquetas ( `hc.tags`).
+   * **Nombre (hc.name):** Nombre de la comprobación de estado compuesta. Se recomienda un nombre significativo.
+   * **Etiquetas (hc.tags):** Las etiquetas de esta comprobación de estado. Si esta comprobación de estado compuesta está pensada para formar parte de otra comprobación de estado compuesta (por ejemplo, en una jerarquía de comprobaciones de estado), agregue las etiquetas a las que está relacionada esta combinación.
+   * **Nombre de MBean (hc.mbean.name):** El nombre del grano que se dará al MBean JMX de esta comprobación de estado compuesta.
+   * **Etiquetas de filtro (filter.tags):** Es una propiedad específica de las comprobaciones de estado compuestas. Éstas son las etiquetas que el compuesto debe acumulado. La comprobación de estado compuesta acumulada bajo su grupo todas las comprobaciones de estado que tengan cualquier etiqueta que coincida con cualquiera de las etiquetas de filtro de esta composición. Por ejemplo, una comprobación de estado compuesta que tenga la **prueba** y la **comprobación** de las etiquetas de filtro acumulada todas las comprobaciones de estado individuales y compuestas que tengan alguna de las etiquetas de **prueba** y **verificación** en la propiedad de etiquetas ( `hc.tags`).
+
    >[!NOTE]
    >
    >Se crea un nuevo grano JMX para cada nueva configuración de la comprobación de estado compuesta de Apache Sling.**
 
-1. Finalmente, la entrada de la comprobación de estado compuesta que se acaba de crear debe agregarse en los nodos de configuración del panel de operaciones. El procedimiento es el mismo que para los controles sanitarios individuales: es necesario crear un nodo de tipo **nt:unestructure** en `/apps/settings/granite/operations/hc`. La propiedad resource del nodo se definirá por el valor de **hc.media.name** en la configuración OSGI.
+1. Finalmente, la entrada de la comprobación de estado compuesta que se acaba de crear debe agregarse en los nodos de configuración de Panel de operaciones. El procedimiento es el mismo que para los controles sanitarios individuales: es necesario crear un nodo de tipo **nt:unestructure** en `/apps/settings/granite/operations/hc`. La propiedad resource del nodo se definirá por el valor de **hc.media.name** en la configuración OSGI.
 
    Si, por ejemplo, creó una configuración y estableció el valor **hc.mbean.name** en **diskusage**, los nodos de configuración tendrán este aspecto:
 
    * **Nombre:** `Composite Health Check`
 
       * **Tipo:** `nt:unstructured`
+
    Con las siguientes propiedades:
 
    * **Nombre:** `sling:resourceType`
 
       * **Tipo:** `String`
-      * **** Valor: `granite/operations/components/mbean`
+      * **Valor:** `granite/operations/components/mbean`
    * **Nombre:** `resource`
 
       * **Tipo:** `String`
-      * **** Valor: `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+      * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+
    >[!NOTE]
    >
-   >Si crea comprobaciones de estado individuales que pertenecen lógicamente a una comprobación compuesta que ya está presente en el panel de forma predeterminada, se capturarán y agruparán automáticamente en la correspondiente comprobación compuesta. Debido a esto, no es necesario crear un nuevo nodo de configuración para estas comprobaciones.
+   >Si crea comprobaciones de estado individuales que pertenecen lógicamente a una comprobación compuesta que ya está presente en el Panel de forma predeterminada, se capturarán y agruparán automáticamente en la correspondiente comprobación compuesta. Debido a esto, no es necesario crear un nuevo nodo de configuración para estas comprobaciones.
    >
-   >Por ejemplo, si crea una comprobación de estado de seguridad individual, todo lo que necesita hacer es asignarle la etiqueta &quot;**seguridad**&quot; y se instalará, automáticamente aparecerá en la comprobación compuesta de comprobaciones de seguridad en el panel de operaciones.
+   >Por ejemplo, si crea una comprobación de estado de seguridad individual, todo lo que necesita hacer es asignarle la etiqueta &quot;**seguridad**&quot; y se instalará, automáticamente aparecerá en la comprobación compuesta de comprobaciones de seguridad en el Panel de operaciones.
 
 ### Comprobaciones de estado proporcionadas con AEM {#health-checks-provided-with-aem}
 
@@ -191,7 +198,7 @@ La función de la comprobación de estado compuesta consiste en agregar varias c
   </tr>
   <tr>
    <td>Longitud de la cola de observación</td>
-   <td><p>La longitud de la cola de observación se repite en todos los oyentes de eventos y observadores en segundo plano, compara los mismos <code>queueSize </code>con sus <code>maxQueueSize</code> y:</p>
+   <td><p>La longitud de la cola de observación se repite en todos los oyentes de Evento y observadores en segundo plano, compara los mismos <code>queueSize </code>con sus <code>maxQueueSize</code> y:</p>
     <ul>
      <li>devuelve el estado Crítico si el <code>queueSize</code> valor supera el <code>maxQueueSize</code> valor (es decir, cuando se eliminarían eventos)</li>
      <li>devuelve Advertencia si el <code>queueSize</code> valor está por encima del <code>maxQueueSize * WARN_THRESHOLD</code> (el valor predeterminado es 0,75) </li>
@@ -199,7 +206,7 @@ La función de la comprobación de estado compuesta consiste en agregar varias c
   </tr>
   <tr>
    <td>Límites de recorrido de la consulta</td>
-   <td><p>Límites de recorrido de consulta comprueba el <code>QueryEngineSettings</code> MBean, más específicamente los atributos <code>LimitInMemory</code> y <code>LimitReads</code> , y devuelve el siguiente estado:</p>
+   <td><p>Límites de recorrido de Consulta comprueba el <code>QueryEngineSettings</code> MB, más específicamente los atributos <code>LimitInMemory</code> y <code>LimitReads</code> , y devuelve el siguiente estado:</p>
     <ul>
      <li>devuelve el estado de advertencia si uno de los límites es igual o superior a la variable <code>Integer.MAX_VALUE</code></li>
      <li>devuelve el estado de advertencia si uno de los límites es menor que 10000 (la configuración recomendada de Oak)</li>
@@ -208,7 +215,7 @@ La función de la comprobación de estado compuesta consiste en agregar varias c
   </tr>
   <tr>
    <td>Relojes sincronizados</td>
-   <td><p>Esta comprobación solo es pertinente para <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">documentos sin clústeres</a>. Devuelve el siguiente estado:</p>
+   <td><p>Esta comprobación solo es relevante para los clústeres <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">de</a>documento nodesore. Devuelve el siguiente estado:</p>
     <ul>
      <li>devuelve el estado de advertencia cuando los relojes de instancia se desactivan y superan un umbral bajo predefinido</li>
      <li>devuelve el estado Crítico cuando los relojes de instancia se desactivan y superan un umbral máximo predefinido</li>
@@ -238,11 +245,11 @@ La función de la comprobación de estado compuesta consiste en agregar varias c
   </tr>
   <tr>
    <td>Mantenimiento del sistema</td>
-   <td><p>El mantenimiento del sistema es una comprobación compuesta que devuelve el valor OK si todas las tareas de mantenimiento se ejecutan según la configuración. Tenga en cuenta que:</p>
+   <td><p>El mantenimiento del sistema es una comprobación compuesta que devuelve el valor OK si todas las tareas de mantenimiento se están ejecutando según la configuración. Tenga en cuenta que:</p>
     <ul>
-     <li>cada tarea de mantenimiento va acompañada de una comprobación de estado asociada</li>
+     <li>cada tarea de mantenimiento va acompañada de un chequeo médico asociado</li>
      <li>si no se agrega una tarea a una ventana de mantenimiento, su comprobación de estado devolverá Crítico</li>
-     <li>debe configurar las tareas de mantenimiento Registro de auditoría y Depuración de flujo de trabajo o quitarlas de las ventanas de mantenimiento. Si se dejan sin configurar, estas tareas fallarán en el primer intento de ejecución, de modo que la comprobación de mantenimiento del sistema devolverá el estado crítico.</li>
+     <li>debe configurar las tareas de mantenimiento Registro de auditoría y Depuración de flujo de trabajo o quitarlas de las ventanas de mantenimiento. Si se deja sin configurar, estas tareas fallarán en el primer intento de ejecución, por lo que la comprobación de mantenimiento del sistema devolverá el estado crítico.</li>
      <li><strong>Con AEM 6.4</strong>, también se puede comprobar la tarea de mantenimiento <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">de</a> Lucene Binaries</li>
      <li>en AEM 6.2 y versiones posteriores, la comprobación de mantenimiento del sistema devuelve un estado de advertencia justo después del inicio porque las tareas no se ejecutan nunca. A partir de la versión 6.3, se devolverán correctamente si no se ha alcanzado la primera ventana de mantenimiento.</li>
     </ul> <p>El MBean de esta revisión de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemcheck,type=HealthCheck</a>.</p> </td>
@@ -295,9 +302,9 @@ La función de la comprobación de estado compuesta consiste en agregar varias c
    <td>Paquetes activos</td>
    <td><p>Active Bundles comprueba el estado de todos los paquetes y:</p>
     <ul>
-     <li>devuelve el estado de advertencia si alguno de los paquetes no está activo o (comenzando, con activación diferida)</li>
+     <li>devuelve el estado de advertencia si alguno de los paquetes no está activo o (comenzando, con activación floja)</li>
      <li>ignora el estado de los paquetes en la lista de ignorar</li>
-    </ul> <p>El parámetro ignore list es configurable.</p> <p>El MBean de esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
+    </ul> <p>El parámetro de lista ignore es configurable.</p> <p>El MBean de esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Comprobación de caché de código</td>
@@ -319,7 +326,7 @@ La función de la comprobación de estado compuesta consiste en agregar varias c
 
 ## Monitoreo con Nagios {#monitoring-with-nagios}
 
-El panel de comprobación de estado se puede integrar con Nagios a través de los Mbeans de Granite JMX. El ejemplo siguiente ilustra cómo agregar una comprobación que muestre la memoria usada en el servidor que ejecuta AEM.
+El Panel Health Check se puede integrar con Nagios a través de los granitos JMX. El ejemplo siguiente ilustra cómo agregar una comprobación que muestre la memoria usada en el servidor que ejecuta AEM.
 
 1. Configure e instale Nagios en el servidor de supervisión.
 1. A continuación, instale el ejecutor del complemento remoto de Nagios (NRPE).
@@ -328,13 +335,14 @@ El panel de comprobación de estado se puede integrar con Nagios a través de lo
    >
    >Para obtener más información sobre cómo instalar Nagios y NRPE en su sistema, consulte la Documentación [de](https://library.nagios.com/library/products/nagioscore/manuals/)Nagios.
 
-1. Agregue una definición de host para el servidor AEM. Esto se puede realizar mediante la interfaz web de Nagios XI, mediante el Administrador de configuración:
+1. Añada una definición de host para el servidor AEM. Esto se puede realizar mediante la interfaz web de Nagios XI, mediante el Administrador de configuración:
 
    1. Abra un navegador y apunte al servidor de Nagios.
    1. Pulse el botón **Configurar** en el menú superior.
    1. En el panel izquierdo, presione el Administrador **de configuración** principal en Configuración **** avanzada.
    1. Pulse el vínculo **Hosts** en la sección **Monitoreo** .
-   1. Agregue la definición de host:
+   1. Añada la definición del host:
+
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    A continuación se muestra un ejemplo de archivo de configuración de host, en caso de que utilice Nagios Core:
@@ -365,7 +373,7 @@ El panel de comprobación de estado se puede integrar con Nagios a través de lo
    }
    ```
 
-1. Agregue un servicio para la memoria usada en el servidor AEM:
+1. Añada un servicio para la memoria usada en el servidor AEM:
 
    ```xml
    define service {
@@ -381,19 +389,19 @@ El panel de comprobación de estado se puede integrar con Nagios a través de lo
        }
    ```
 
-1. Compruebe el tablero de Nagios para el servicio recién creado:
+1. Compruebe su panel Nagios para el servicio recién creado:
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
 ## Diagnosis tools {#diagnosis-tools}
 
-El Tablero de operaciones también proporciona acceso a las Herramientas de diagnóstico que pueden ayudar a encontrar y solucionar las causas profundas de las advertencias procedentes del Tablero de comprobación de estado, así como proporcionar información de depuración importante para los operadores del sistema.
+El Panel Operación también proporciona acceso a las Herramientas de diagnóstico que pueden ayudar a encontrar y solucionar las causas profundas de las advertencias procedentes del Panel de comprobación de estado, así como proporcionar información de depuración importante para los operadores del sistema.
 
 Entre sus características más importantes se encuentran:
 
 * Un analizador de mensajes de registro
 * La capacidad de acceder a los volcados de pilas y subprocesos
-* Analizadores de rendimiento de consultas y solicitudes
+* Analizadores de rendimiento de solicitudes y consultas
 
 Para acceder a la pantalla Herramientas de diagnóstico, vaya a **Herramientas - Operaciones - Diagnóstico** desde la pantalla de bienvenida de AEM. También puede acceder a la pantalla accediendo directamente a la siguiente URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
@@ -403,7 +411,7 @@ Para acceder a la pantalla Herramientas de diagnóstico, vaya a **Herramientas -
 
 La interfaz de usuario de los mensajes de registro mostrará todos los mensajes ERROR de forma predeterminada. Si desea que se muestren más mensajes de registro, debe configurar un registrador con el nivel de registro adecuado.
 
-Los mensajes de registro utilizan un anexador de registro en memoria y, por lo tanto, no están relacionados con los archivos de registro. Otra consecuencia es que al cambiar los niveles de registro en esta interfaz de usuario no se cambiará la información que se registra en los archivos de registro tradicionales. La adición y eliminación de los inicios de sesión en esta interfaz de usuario solo afectará al registrador en memoria. Además, tenga en cuenta que el cambio de las configuraciones del registrador se reflejará en el futuro del registrador de memoria: las entradas que ya están registradas y que ya no son relevantes no se eliminan, pero las entradas similares no se registrarán en el futuro.
+Los mensajes de registro utilizan un anexador de registro en memoria y, por lo tanto, no están relacionados con los archivos de registro. Otra consecuencia es que al cambiar los niveles de registro en esta interfaz de usuario no se cambiará la información que se registra en los archivos de registro tradicionales. Añadir y eliminar los inicios de sesión en esta interfaz de usuario solo afectará al registrador en memoria. Además, tenga en cuenta que el cambio de las configuraciones del registrador se reflejará en el futuro del registrador de memoria: las entradas que ya están registradas y que ya no son relevantes no se eliminan, pero las entradas similares no se registrarán en el futuro.
 
 Puede configurar lo que se registra proporcionando configuraciones de registrador desde el botón de engranaje superior izquierdo en la interfaz de usuario. Allí puede agregar, eliminar o actualizar configuraciones de registrador. Una configuración de registrador se compone de un nivel **de** registro (WARN / INFO / DEBUG) y un nombre **de** filtro. El nombre **del** filtro tiene la función de filtrar el origen de los mensajes de registro que se registran. Como alternativa, si un registrador debe capturar todos los mensajes de registro para el nivel especificado, el nombre del filtro debe ser &quot;**root**&quot;. La configuración del nivel de un registrador activará la captura de todos los mensajes con un nivel igual o superior al especificado.
 
@@ -412,7 +420,7 @@ Ejemplos:
 * Si planea capturar todos los mensajes de **ERROR** , no se requiere ninguna configuración. Todos los mensajes ERROR se capturan de forma predeterminada.
 * Si planea capturar todos los mensajes de **ERROR**, **ADVERTENCIA** e **INFORMACIÓN** , el nombre del registrador debe establecerse en: &quot;**root**&quot; y el nivel del registrador para: **INFORMACIÓN**.
 
-* Si planea capturar todos los mensajes procedentes de un paquete determinado (por ejemplo, com.adobe.granite), el nombre del registrador debe establecerse en: &quot;com.adobe.granite&quot; y el nivel del registrador a: **DEBUG** (capturará todos los mensajes de **ERROR**, **WARN**, **INFO** y **DEBUG** ), como se muestra en la siguiente imagen.
+* Si planea capturar todos los mensajes procedentes de un paquete determinado (por ejemplo, com.adobe.granite), el nombre del registrador debe establecerse en: &quot;com.adobe.granite&quot; y el nivel del registrador a: **DEPURAR** (esto capturará todos los mensajes de **ERROR**, **ADVERTENCIA**, **INFORMACIÓN** y **DEPURACIÓN** ), como se muestra en la siguiente imagen.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -432,7 +440,7 @@ Ejemplos:
 >
 >**Con AEM 6.4**, las tareas de mantenimiento se eliminan de la sesión en un formato más informativo en el nivel de información. Esto permite una mejor visibilidad en el estado de las tareas de mantenimiento.
 >
->Si utiliza herramientas de terceros (como Splunk) para supervisar y reaccionar a la actividad de tareas de mantenimiento, puede utilizar las siguientes sentencias de registro:
+>Si utiliza herramientas de terceros (como Splunk) para supervisar y reaccionar ante la actividad de tarea de mantenimiento, puede utilizar las siguientes sentencias de registro:
 
 ```
 Log level: INFO
@@ -441,7 +449,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### Request performance {#request-performance}
 
-La página Rendimiento de la solicitud permite el análisis de las solicitudes de página más lentas procesadas. Solo se registrarán solicitudes de contenido en esta página. Más específicamente, se capturarán las siguientes solicitudes:
+La página Rendimiento de la solicitud permite la análisis de las solicitudes de página más lentas procesadas. Solo se registrarán solicitudes de contenido en esta página. Más específicamente, se capturarán las siguientes solicitudes:
 
 1. Solicitudes de acceso a recursos en `/content`
 1. Solicitudes de acceso a recursos en `/etc/design`
@@ -459,42 +467,42 @@ De forma predeterminada, se capturan las 20 solicitudes de página más lentas, 
 
 ### Rendimiento de consultas {#query-performance}
 
-La página Rendimiento de la Consulta permite el análisis de las consultas más lentas realizadas por el sistema. Esta información la proporciona el repositorio en un grano JMX. En Jackrabbit, el `com.adobe.granite.QueryStat` grano JMX proporciona esta información, mientras que en el repositorio Oak, se ofrece por `org.apache.jackrabbit.oak.QueryStats.`
+La página Rendimiento de Consulta permite la análisis de las consultas más lentas que realiza el sistema. Esta información la proporciona el repositorio en un grano JMX. En Jackrabbit, el `com.adobe.granite.QueryStat` grano JMX proporciona esta información, mientras que en el repositorio Oak, se ofrece por `org.apache.jackrabbit.oak.QueryStats.`
 
 La página muestra:
 
 * La hora en que se realizó la consulta
 * El idioma de la consulta
 * Número de veces que se emitió la consulta
-* La instrucción de la consulta
+* Declaración de la consulta
 * Duración en milisegundos
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Explicar la consulta {#explain-query}
 
-Para cualquier consulta dada, Oak intenta averiguar la mejor manera de ejecutar según los índices Oak definidos en el repositorio bajo el nodo **oak:index** . Según la consulta, Oak puede elegir diferentes índices. El comprender cómo Oak está ejecutando una consulta es el primer paso para optimizarla.
+Para cualquier consulta dada, Oak intenta averiguar la mejor manera de ejecutar según los índices Oak definidos en el repositorio bajo el nodo **oak:index** . Según la consulta, Oak puede elegir diferentes índices. Comprender cómo Oak está ejecutando una consulta es el primer paso para optimizar la consulta.
 
-La Consulta de explicación es una herramienta que explica cómo Oak está ejecutando una consulta. Se puede acceder a él desde la pantalla de bienvenida de AEM, **Herramientas - Operaciones - Diagnóstico** , haciendo clic en Rendimiento **de la** consulta y pasando a la ficha **Explicar consulta** .
+La Consulta Explicar es una herramienta que explica cómo Oak está ejecutando una consulta. Se puede acceder a ella desde la pantalla de bienvenida de AEM, en **Herramientas - Operaciones - Diagnóstico** , haciendo clic en Rendimiento **de** Consulta y pasando a la ficha **Explicar Consulta** .
 
 **Características**
 
 * Admite los lenguajes de consulta Xpath, JCR-SQL y JCR-SQL2
-* Informa el tiempo de ejecución real de la consulta proporcionada
+* Informa del tiempo de ejecución real de la consulta proporcionada
 * Detecta consultas lentas y advierte sobre consultas que podrían ser lentas
-* Informa el índice Oak utilizado para ejecutar la consulta
-* Muestra la explicación real del motor de consulta Oak
-* Proporciona una lista de clics para cargar de consultas lentas y populares
+* Informa del índice Oak utilizado para ejecutar la consulta
+* Muestra la explicación real del motor de Consulta Oak
+* Proporciona lista de clics hasta cargar de consultas lentas y populares
 
-Una vez que esté en la interfaz de usuario de Explicar consulta, todo lo que debe hacer para utilizarla es introducir la consulta y pulsar el botón **Explicar** :
+Una vez que esté en la IU de la Consulta Explicar, todo lo que debe hacer para utilizarla es entrar en la consulta y pulsar el botón **Explicar** :
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-La primera entrada de la sección Explicación de la consulta es la explicación real. La explicación mostrará el tipo de índice que se utilizó para ejecutar la consulta.
+La primera entrada de la sección Explicación de Consulta es la explicación real. La explicación mostrará el tipo de índice que se utilizó para ejecutar la consulta.
 
 La segunda entrada es el plan de ejecución.
 
-Al pulsar el cuadro **Incluir tiempo** de ejecución antes de ejecutar la consulta también se mostrará la cantidad de tiempo que se ejecutó la consulta, lo que permite obtener más información que se puede utilizar para optimizar los índices de la aplicación o implementación.
+Al pulsar el cuadro **Incluir tiempo** de ejecución antes de ejecutar la consulta también se mostrará la cantidad de tiempo que la consulta se ejecutó, lo que permite obtener más información que se puede utilizar para optimizar los índices de la aplicación o la implementación.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
@@ -512,7 +520,7 @@ La IU se puede utilizar para filtrar índices de la tabla escribiendo los criter
 
 ### Descargar zip de estado {#download-status-zip}
 
-Esto activará la descarga de un zip que contiene información útil sobre el estado y la configuración del sistema. El archivo contiene configuraciones de instancia, una lista de paquetes, OSGI, métricas de Sling y estadísticas, lo que puede resultar en un archivo grande. Puede reducir el impacto de los archivos de estado de gran tamaño mediante la **ventana ZIP de estado de** descarga. **Se puede acceder a la ventana desde: AEM > Herramientas > Operaciones > Diagnóstico > Descargar ZIP de estado.**
+Esto activará la descarga de un zip que contiene información útil sobre el estado y la configuración del sistema. El archivo contiene configuraciones de instancias, una lista de paquetes, OSGI, métricas de Sling y estadísticas, lo que puede resultar en un archivo grande. Puede reducir el impacto de los archivos de estado de gran tamaño mediante la **ventana ZIP de estado de** descarga. Se puede acceder a la ventana desde:**AEM > Herramientas > Operaciones > Diagnóstico > Descargar ZIP de estado.**
 
 Desde esta ventana puede seleccionar qué exportar (archivos de registro y/o archivos de subproceso) y el número de días de registros incluidos en la descarga en relación con la fecha actual.
 
@@ -528,20 +536,20 @@ También puede descargar una instantánea del montón para analizarla más adela
 
 ## Tareas de mantenimiento automatizadas {#automated-maintenance-tasks}
 
-La página Tareas de mantenimiento automatizadas es un lugar donde puede ver y rastrear las tareas de mantenimiento recomendadas programadas para su ejecución periódica. Las tareas se integran con el sistema de comprobación de estado. Las tareas también se pueden ejecutar manualmente desde la interfaz.
+La página Tareas de mantenimiento automatizadas es un lugar donde puede realizar la vista y el seguimiento de tareas de mantenimiento recomendadas programadas para su ejecución periódica. Las tareas están integradas con el sistema de comprobación de estado. Las tareas también se pueden ejecutar manualmente desde la interfaz.
 
-Para acceder a la página Mantenimiento del panel de operaciones, debe ir a **Herramientas - Operaciones - Tablero - Mantenimiento** desde la pantalla de bienvenida de AEM o seguir directamente este vínculo:
+Para acceder a la página Mantenimiento en el Panel de operaciones, debe ir a **Herramientas - Operaciones - Panel - Mantenimiento** desde la pantalla de bienvenida de AEM o seguir directamente este vínculo:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
-Las siguientes tareas están disponibles en el panel de operaciones:
+Las siguientes tareas están disponibles en el Panel de operaciones:
 
 1. La tarea **de limpieza de revisión,** ubicada en el menú Ventana **de mantenimiento** diario.
-1. La **tarea Limpieza** de binarios de Lucene, ubicada en el menú Ventana **de mantenimiento** diario.
+1. La tarea **Lucene Binaries Cleanup** , ubicada en el menú Ventana **de Mantenimiento** Diario.
 1. La tarea **de depuración** de flujo de trabajo, ubicada en el menú Ventana **de mantenimiento** semanal.
 1. La tarea Recopilación **de elementos no utilizados del almacén** de datos, ubicada en el menú Ventana **de mantenimiento** semanal.
-1. La tarea Mantenimiento **del registro de** auditoría, ubicada en el menú Ventana **Mantenimiento** semanal.
-1. La tarea de mantenimiento **de depuración de** versiones, ubicada en el menú Ventana **de mantenimiento** semanal.
+1. La tarea de mantenimiento **del registro de** auditoría, ubicada en el menú Ventana **de mantenimiento** semanal.
+1. La tarea **de mantenimiento** de depuración de versiones, ubicada en el menú Ventana **de mantenimiento** semanal.
 
 El tiempo predeterminado para la ventana de mantenimiento diario es de 2 a 5 AM. Las tareas configuradas para ejecutarse en la ventana de mantenimiento semanal se ejecutarán entre 1 y 2 AM los sábados.
 
@@ -559,14 +567,14 @@ Para obtener más información sobre cómo realizar la limpieza de revisión, [c
 
 ### Limpieza de archivos binarios de Lucene {#lucene-binaries-cleanup}
 
-Mediante la tarea Limpieza de binarios de Lucene, puede purgar los binarios de lucene y reducir el requisito de tamaño del almacén de datos en ejecución. Esto se debe a que la reproducción binaria del lucene se recobrará diariamente en lugar de depender antes de una exitosa ejecución de recolección [de basura en el almacén de](/help/sites-administering/data-store-garbage-collection.md) datos.
+Mediante la tarea de limpieza de binarios de Lucene, puede purgar los binarios de lucene y reducir el requisito de tamaño del almacén de datos en ejecución. Esto se debe a que la reproducción binaria del lucene se recobrará diariamente en lugar de depender antes de una exitosa ejecución de recolección [de basura en el almacén de](/help/sites-administering/data-store-garbage-collection.md) datos.
 
 Aunque la tarea de mantenimiento se desarrolló para reducir la basura de revisión relacionada con Lucene, hay mejoras generales de eficiencia al ejecutar la tarea:
 
 * La ejecución semanal de la tarea de recolección de elementos no utilizados del almacén de datos se completará más rápidamente
 * También puede mejorar ligeramente el rendimiento general de AEM
 
-Puede acceder a la tarea Limpieza de binarios de Lucene desde: **AEM > Herramientas > Operaciones > Mantenimiento > Ventana de mantenimiento diario > Limpieza de binarios de Lucene**.
+Puede acceder a la tarea de limpieza de binarios de Lucene desde: **AEM > Herramientas > Operaciones > Mantenimiento > Ventana de mantenimiento diario > Limpieza** de binarios de Lucene.
 
 ### Recolección de papelera del almacén de datos {#data-store-garbage-collection}
 
@@ -574,7 +582,7 @@ Para obtener más información sobre la recopilación de elementos no utilizados
 
 ### Workflow purge {#workflow-purge}
 
-Los flujos de trabajo también se pueden purgar desde el panel de mantenimiento. Para ejecutar la tarea Depuración del flujo de trabajo, debe:
+Los Flujos de trabajo también se pueden purgar del Panel de mantenimiento. Para ejecutar la tarea Depuración del flujo de trabajo, debe:
 
 1. Haga clic en la página Ventana **Mantenimiento** Semanal.
 1. En la página siguiente, haga clic en el botón **Reproducir** de la tarjeta de depuración **del flujo de trabajo** .
@@ -589,21 +597,21 @@ Para el mantenimiento del registro de auditoría, consulte la página de documen
 
 ### Depuración de la versión {#version-purge}
 
-Puede programar la tarea de mantenimiento Depuración de versiones para eliminar automáticamente las versiones anteriores. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas [de depuración de](/help/sites-deploying/version-purging.md)versiones. Puede programar y configurar la tarea de depuración de versiones accediendo a **Herramientas > Operaciones > Mantenimiento > Ventana** de mantenimiento semanal y siguiendo estos pasos:
+Puede programar la tarea de mantenimiento Depuración de versiones para que elimine automáticamente las versiones anteriores. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas [de depuración de](/help/sites-deploying/version-purging.md)versiones. Puede programar y configurar la tarea de depuración de versiones accediendo a **Herramientas > Operaciones > Mantenimiento > Ventana** de mantenimiento semanal y siguiendo estos pasos:
 
 1. Click the **Add** button.
 1. Seleccione **Versión Purgar** en el menú desplegable.
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
 
-1. Para configurar la tarea Purgar versión, haga clic en el icono de **engranajes** en la tarjeta de mantenimiento Versión Purgar recientemente creada.
+1. Para configurar la tarea de depuración de versiones, haga clic en el icono de **engranajes** en la tarjeta de mantenimiento de depuración de versiones recién creada.
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
 **Con AEM 6.4**, puede detener la tarea de mantenimiento de la depuración de versiones de la siguiente manera:
 
 * Automáticamente: si la ventana de mantenimiento programado se cierra antes de que se pueda completar la tarea, la tarea se detiene automáticamente. Se reanudará cuando se abra la siguiente ventana de mantenimiento.
-* Manualmente: para detener manualmente la tarea, en la tarjeta de mantenimiento Depuración de versión, haga clic en el icono **Detener** . En la próxima ejecución, la tarea se reanudará de forma segura.
+* Manualmente: para detener manualmente la tarea, en la tarjeta de mantenimiento Depuración de versión, haga clic en el icono **Detener** . En la próxima ejecución, la tarea se reanudará con seguridad.
 
 >[!NOTE]
 >
@@ -615,7 +623,7 @@ Puede programar la tarea de mantenimiento Depuración de versiones para eliminar
 
 ## Tareas de mantenimiento personalizadas {#custom-maintenance-tasks}
 
-Las tareas de mantenimiento personalizadas se pueden implementar como servicios OSGi. Dado que la infraestructura de tareas de mantenimiento se basa en la gestión de trabajos de Apache Sling, una tarea de mantenimiento debe implementar la interfaz de java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Además, debe declarar varias propiedades de registro de servicio para que se detecten como una tarea de mantenimiento, como se indica a continuación:
+Las tareas de mantenimiento personalizadas se pueden implementar como servicios OSGi. Como la infraestructura de tarea de mantenimiento se basa en el manejo de trabajos de Apache Sling, una tarea de mantenimiento debe implementar la interfaz de java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Además, debe declarar varias propiedades de registro de servicio para que se detecten como una tarea de mantenimiento, como se indica a continuación:
 
 <table>
  <tbody>
@@ -626,32 +634,32 @@ Las tareas de mantenimiento personalizadas se pueden implementar como servicios 
    <td><strong>Tipo</strong></td>
   </tr>
   <tr>
-   <td>granite.Maintenance.isStoppable</td>
-   <td>Atributo booleano que define si el usuario puede detener la tarea. Si una tarea declara que se puede detener, debe comprobar durante la ejecución si se ha detenido y, a continuación, actuar en consecuencia. El valor predeterminado es false.</td>
+   <td>granite.maintenance.isStoppable</td>
+   <td>Atributo booleano que define si el usuario puede detener la tarea. Si una tarea declara que puede suspenderse, debe comprobar durante su ejecución si se ha detenido y, a continuación, actuar en consecuencia. El valor predeterminado es false.</td>
    <td>verdadero</td>
    <td>Opcional</td>
   </tr>
   <tr>
-   <td>granite.serve.mandatory</td>
-   <td>Atributo booleano que define si una tarea es obligatoria y debe ejecutarse periódicamente. Si una tarea es obligatoria pero actualmente no se encuentra en ninguna ventana de programación activa, una comprobación de estado informará de ello como un error. El valor predeterminado es false.</td>
+   <td>granite.maintenance.mandatory</td>
+   <td>Atributo booleano que define si una tarea es obligatoria y debe ejecutarse periódicamente. Si una tarea es obligatoria pero actualmente no está en ninguna ventana de programación activa, una comprobación de estado informará de esto como un error. El valor predeterminado es false.</td>
    <td>verdadero</td>
    <td>Opcional</td>
   </tr>
   <tr>
-   <td>granite.serve.name</td>
-   <td>Un nombre único para la tarea; se utiliza para hacer referencia a la tarea. Normalmente es un nombre simple.</td>
+   <td>granite.maintenance.name</td>
+   <td>Un nombre único para la tarea: se utiliza para hacer referencia a la tarea. Normalmente es un nombre simple.</td>
    <td>MyMaintenanceTask</td>
    <td>Requerido</td>
   </tr>
   <tr>
-   <td>granite.mantenimiento.title</td>
+   <td>granite.maintenance.title</td>
    <td>Se muestra un título para esta tarea</td>
-   <td>Mi tarea de mantenimiento especial</td>
+   <td>Mi Tarea de mantenimiento especial</td>
    <td>Requerido</td>
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Este es un tema único de la tarea de mantenimiento.<br /> La gestión de trabajos de Apache Sling iniciará un trabajo con exactamente este tema para ejecutar la tarea de mantenimiento y, a medida que la tarea se registre para este tema, se ejecutará.<br /> El tema debe comenzar con <i>com/adobe/granite/mantenimiento/job/</i></td>
+   <td>Este es un tema único de la tarea de mantenimiento.<br /> El manejo de trabajos de Apache Sling inicio un trabajo con exactamente este tema para ejecutar la tarea de mantenimiento y, a medida que la tarea se registra para este tema, se ejecuta.<br /> El tema debe estar en inicio con <i>com/adobe/granite/mantenimiento/job/</i></td>
    <td>com/adobe/granite/Maintenance/job/MyMaintenanceTask</td>
    <td>Requerido</td>
   </tr>
@@ -676,7 +684,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 [experience emanager-java-maintenancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
-Una vez implementado el servicio, se expone a la interfaz de usuario del panel de operaciones. Puede agregarlo a una de las programaciones de mantenimiento disponibles:
+Una vez implementado el servicio, se expone a la interfaz de usuario de Panel de operaciones. Puede agregarlo a una de las programaciones de mantenimiento disponibles:
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -684,23 +692,23 @@ Esto agregará un recurso correspondiente en /apps/granite/operations/config/man
 
 ## Información general del sistema {#system-overview}
 
-El panel **Información general del** sistema muestra una descripción general de alto nivel de la configuración, el hardware y el estado de la instancia de AEM. Esto significa que el estado de mantenimiento del sistema es transparente y que toda la información se agrega en un único tablero.
+El Panel **Información general** del sistema muestra una descripción general de alto nivel de la configuración, el hardware y el estado de la instancia de AEM. Esto significa que el estado de salud del sistema es transparente y toda la información se agrega en un solo panel.
 
 >[!NOTE]
 >
->También puede [ver este vídeo](https://video.tv.adobe.com/v/21340?captions=spa) para ver una introducción al panel Información general del sistema.
+>También puede [ver este vídeo](https://video.tv.adobe.com/v/21340?captions=spa) para ver una introducción al Panel Información general del sistema.
 
 ### Cómo acceder {#how-to-access}
 
-Para acceder al panel Información general del sistema, vaya a **Herramientas > Operaciones > Información general** del sistema.
+Para acceder al Panel Información general del sistema, vaya a **Herramientas > Operaciones > Información general** del sistema.
 
-![system_overview_dashboard](assets/system_overview_dashboard.png)
+![system_overview_panel](assets/system_overview_dashboard.png)
 
-### Tablero de información general del sistema explicado {#system-overview-dashboard-explained}
+### Panel de información general del sistema explicado {#system-overview-dashboard-explained}
 
-La tabla siguiente describe toda la información mostrada en el Tablero de información general del sistema. Tenga en cuenta que cuando no hay información relevante que mostrar (por ejemplo, cuando la copia de seguridad no está en curso, no hay comprobaciones de estado que sean críticas), la sección correspondiente mostrará el mensaje &quot;Sin entradas&quot;.
+En la tabla siguiente se describen todas las informaciones que se muestran en el Panel Información general del sistema. Tenga en cuenta que cuando no hay información relevante que mostrar (por ejemplo, cuando la copia de seguridad no está en curso, no hay comprobaciones de estado que sean críticas), la sección correspondiente mostrará el mensaje &quot;Sin entradas&quot;.
 
-También puede descargar un `JSON` archivo que resuma la información del tablero haciendo clic en el botón **Descargar** en la esquina superior derecha del tablero.El punto final es `JSON` y se puede utilizar en una secuencia de comandos `/libs/granite/operations/content/systemoverview/export.json` `curl` para supervisión externa.
+También puede descargar un `JSON` archivo que resume la información del panel haciendo clic en el botón **Descargar** en la esquina superior derecha del panel.El punto final es `JSON` y se puede utilizar en una `/libs/granite/operations/content/systemoverview/export.json` `curl` secuencia de comandos para la supervisión externa.
 
 <table>
  <tbody>
@@ -714,8 +722,8 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
    <td>Comprobación del estado</td>
    <td>
     <ul>
-     <li>una lista de comprobaciones que están en estado crítico</li>
-     <li>una lista de comprobaciones que están en estado de advertencia</li>
+     <li>una lista de comprobaciones con estado crítico</li>
+     <li>una lista de comprobaciones con estado de advertencia</li>
     </ul> </td>
    <td>Indicado visualmente:<br />
     <ul>
@@ -731,9 +739,9 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
    <td>Tareas de mantenimiento</td>
    <td>
     <ul>
-     <li>una lista de tareas en las que se han producido errores</li>
+     <li>una lista de tareas que fallaron</li>
      <li>una lista de tareas que se están ejecutando actualmente</li>
-     <li>una lista de tareas que se han ejecutado correctamente en la última ejecución</li>
+     <li>una lista de tareas que han tenido éxito en la última ejecución</li>
      <li>una lista de tareas que nunca se han ejecutado</li>
      <li>una lista de tareas que no están programadas</li>
     </ul> </td>
@@ -765,7 +773,7 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
    <td>
     <ul>
      <li>la versión de AEM</li>
-     <li>lista de modos de ejecución</li>
+     <li>lista de los modos de ejecución</li>
      <li>la fecha en que se inició la instancia</li>
     </ul> </td>
    <td>N/D</td>
@@ -776,7 +784,7 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
    <td>
     <ul>
      <li>la versión Oak</li>
-     <li>tipo de almacén de nodos (barra de segmentos o documento)
+     <li>tipo de almacén de nodos (Documento o barra de segmentos)
       <ul>
        <li>si el tipo es documento, se muestra el tipo de almacén de documentos (RDB o Mongo)</li>
       </ul> </li>
@@ -799,7 +807,7 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
      <li>una lista de agentes con colas bloqueadas</li>
      <li>una lista de agentes mal configurados ("Error de configuración")</li>
      <li>una lista de agentes con el procesamiento de cola en pausa</li>
-     <li>una lista de agentes inactivos</li>
+     <li>lista de agentes inactivos</li>
      <li>una lista de agentes en ejecución (que actualmente están procesando entradas)</li>
     </ul> </td>
    <td><p>Indicado visualmente:</p>
@@ -815,7 +823,7 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
    <td>
     <ul>
      <li>una lista de agentes con colas bloqueadas</li>
-     <li>una lista de agentes inactivos</li>
+     <li>lista de agentes inactivos</li>
      <li>una lista de agentes en ejecución (que actualmente están procesando entradas)</li>
     </ul> </td>
    <td><p>Indicado visualmente:<br /> </p>
@@ -846,7 +854,7 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
     </ul> <p>Para cada uno de los estados presentados arriba se realiza una consulta, con un límite de 400 milisegundos. A los 400 milisegundos, se muestra el número de entradas obtenidas hasta ese punto.</p> </td>
    <td><p>No interpretado:</p>
     <ul>
-     <li>el usuario debe investigar cuándo hay flujos de trabajo y trabajos con estados inesperados.</li>
+     <li>el usuario debe investigar cuándo hay flujos de trabajo y trabajos en estados inesperados.</li>
     </ul> </td>
    <td>Página Errores de flujo de trabajo</td>
   </tr>
@@ -874,7 +882,7 @@ También puede descargar un `JSON` archivo que resuma la información del tabler
      <li>etiquetas</li>
      <li>autorizables</li>
      <li>número total de nodos<br /> </li>
-    </ul> <p>El número total de nodos se obtiene a partir de nodeCounterMBean, mientras que el resto de las estadísticas se obtiene a partir de IndexInfoService.</p> </td>
+    </ul> <p>El número total de nodos se obtiene de nodeCounterMBean, mientras que el resto de las estadísticas se obtiene de IndexInfoService.</p> </td>
    <td>N/D</td>
    <td>N/D</td>
   </tr>
