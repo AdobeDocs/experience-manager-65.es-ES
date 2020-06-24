@@ -3,9 +3,9 @@ title: Informes sobre el uso y uso compartido de los recursos digitales.
 description: Informes sobre los recursos [!DNL Adobe Experience Manager Assets] que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c41666353a8ee8d39285c99327680ab12377d61
+source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1049'
 ht-degree: 10%
 
 ---
@@ -63,7 +63,7 @@ Para generar informes, asegúrese de lo siguiente:
 
    >[!NOTE]
    >
-   >El informe [!UICONTROL Descargar] muestra detalles de solo los recursos seleccionados de forma individual y descargados. Sin embargo, no incluye los detalles de los recursos que estaban dentro de una carpeta descargada.
+   >El informe [!UICONTROL Descargar] muestra detalles de solo los recursos seleccionados de forma individual y descargados o descargados mediante Acción rápida. Sin embargo, no incluye los detalles de los recursos que estaban dentro de una carpeta descargada.
 1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta, en el repositorio de CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente.
 
    ![Página para agregar detalles del informe](assets/report_configuration.png)
