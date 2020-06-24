@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
+source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
 
 Los fragmentos de contenido le permiten crear contenido neutro para el canal, junto con variaciones (posiblemente específicas del canal). **We.Retail** (como disponible en una instancia de AEM lista para usar) proporciona el fragmento **Arctic Surfing en Lofoten** como muestra básica. Esto ilustra que:
 
-* Los fragmentos de contenido de Adobe Experience Manager (AEM)[ se crean y administran como recursos independientes de las páginas](/help/assets/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). 
+* Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). 
 
    * Consulte [Dónde buscar recursos de fragmento de contenido en We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -33,13 +36,14 @@ Para obtener toda la documentación sobre la creación, administración, uso y d
 
 >[!NOTE]
 >
->Los **fragmentos de contenido** y los **[fragmentos de experiencia](/help/sites-authoring/experience-fragments.md)**son funciones distintas de AEM:
+>Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)**son funciones distintas de AEM:
 >
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
+
 >
 >
-Los fragmentos de experiencia pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
+Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
 
 ## Dónde encontrar fragmentos de contenido en We.Retail {#where-to-find-content-fragments-in-we-retail}
 
@@ -57,13 +61,13 @@ Puede seleccionar y editar el fragmento de Surfing **Ártico en Lofoten** :
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Aquí puede [editar y administrar](/help/assets/content-fragments.md) el fragmento con las fichas (panel izquierdo):
+Aquí puede [editar y administrar](/help/assets/content-fragments/content-fragments.md) el fragmento con las fichas (panel izquierdo):
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variaciones](/help/assets/content-fragments-variations.md)**, incluido[Markdown](/help/assets/content-fragments-markdown.md)
-* **[Contenido asociado](/help/assets/content-fragments-assoc-content.md)**
-* **[Metadatos](/help/assets/content-fragments-metadata.md)**
+* **[Variaciones](/help/assets/content-fragments/content-fragments-variations.md)**, incluido[Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Metadatos](/help/assets/content-fragments/content-fragments-metadata.md)**
 
 ![cf-46](assets/cf-46.png)
 
@@ -85,7 +89,7 @@ Por ejemplo, en la página Sitios se hace referencia al fragmento de contenido d
 
 Para obtener más información, consulte:
 
-* [Uso de fragmentos de contenido](/help/assets/content-fragments.md)
+* [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 
    * Obtenga información sobre cómo crear, editar y administrar sus recursos de fragmento de contenido.
 
