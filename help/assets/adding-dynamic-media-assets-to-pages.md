@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
-source-wordcount: '3129'
-ht-degree: 32%
+source-wordcount: '3095'
+ht-degree: 33%
 
 ---
 
@@ -123,6 +123,7 @@ El componente Dynamic Media es inteligente. Según si agrega una imagen o un ví
 >
 >* Varias instancias del componente Dynamic Media que se están utilizando en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
+
 >
 >
 Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visor diferente a cada componente de Dynamic Media de esa página.
@@ -201,8 +202,9 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    Con los modificadores de visor, por ejemplo, puede hacer lo siguiente:
 
-   * Asocie un archivo de subtítulos con un vídeo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
-   * Asociación de un archivo de navegación con un vídeo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
+   * Asocie un archivo de subtítulos con un vídeo: [caption](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Asociación de un archivo de navegación con un vídeo: [navegación](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!Título** UICONTROL: cambie el título del vídeo.
@@ -257,6 +259,7 @@ El componente Medios interactivos es inteligente. Según si agrega una imagen o 
 >
 >* Varias instancias del componente Medios interactivos que se están utilizando en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
+
 >
 >
 Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visor diferente a cada componente de medios interactivos de esa página.
@@ -298,6 +301,7 @@ Tanto la proporción de aspecto como los criterios de palabra clave se aplican a
 >
 >* Varias instancias del componente Medios **[!UICONTROL panorámicas]** que se utilizan en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
+
 >
 >
 Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visualizador diferente a cada componente de **[!UICONTROL medios panorámicos]** de esa página.
