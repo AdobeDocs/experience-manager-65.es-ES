@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
+source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4334'
 ht-degree: 2%
 
 ---
@@ -86,7 +86,7 @@ Es importante identificar correctamente el número y el tipo de variables que se
 
 Existen diferentes maneras de identificar un conjunto de variables que se utilizarán para los datos de puntos interactivos.
 
-A veces puede bastar con consultar con los especialistas de TI responsables de la implementación de Quickview existente, ya que es probable que sepan cuál es el conjunto mínimo de datos necesario para identificar Quickview en el sistema. Sin embargo, en la mayoría de los casos también es posible simplemente analizar el comportamiento existente del código front-end.
+A veces puede bastar con consultar con especialistas de TI responsables de la implementación de Quickview existente, ya que es probable que sepan cuál es el conjunto mínimo de datos necesario para identificar Quickview en el sistema. Sin embargo, en la mayoría de los casos también es posible simplemente analizar el comportamiento existente del código front-end.
 
 La mayoría de las implementaciones de Quickview utilizan el siguiente paradigma:
 
@@ -376,9 +376,9 @@ La integración es tan sencilla como quitar la `IMG` etiqueta y reemplazarla por
 
 Para aplicar un &quot;recorte&quot; a una imagen interactiva de ventas para un entorno interactivo, puede incluir el atributo de configuración de imagen interactiva `ZoomView.iscommand` en la ruta, donde `ZoomView` es el componente al que llamar y `iscommand` es el comando &quot;recortar&quot; del servicio de imágenes que aplica.
 
-Consulte [Atributo de configuración ZoomView.iscommand](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html) .
+Consulte [Atributo de configuración ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) .
 
-Consulte [Recortar](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_crop.html) el comando de servicio de imágenes.
+Consulte [Recortar](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) el comando de servicio de imágenes.
 
 Ya está listo para integrar la imagen interactiva con una vista rápida existente en su sitio web.
 
