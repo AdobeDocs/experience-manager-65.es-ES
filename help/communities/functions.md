@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+workflow-type: tm+mt
+source-wordcount: '2458'
+ht-degree: 6%
 
 ---
 
@@ -29,27 +32,27 @@ Una vez creado un sitio de comunidad, se puede añadir contenido a las páginas 
 
 ## Consola de funciones de comunidad {#community-functions-console}
 
-En el entorno de creación, para llegar a la consola de funciones de comunidad:
+Para llegar a la consola de funciones de comunidad en el entorno de creación:
 
-* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > Funciones **[!UICONTROL de comunidad]**.
+* Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > Funciones **[!UICONTROL de comunidad]**.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Funciones prediseñadas {#pre-built-functions}
 
-A continuación se ofrece una breve descripción de las funciones realizadas con AEM Communities. Cada función incluye una o varias páginas de AEM que contienen componentes de Communities conectados en una función que se incorpora fácilmente a una plantilla [de sitio de](/help/communities/sites.md)comunidad.
+A continuación se ofrece una breve descripción de las funciones realizadas con los AEM Communities. Cada función incluye una o varias páginas de AEM que contienen componentes de Communities conectados en una función que se incorpora fácilmente a una plantilla [de sitio de](/help/communities/sites.md)comunidad.
 
 Una plantilla de sitio de comunidad proporciona la estructura de un sitio de comunidad, incluyendo inicio de sesión, perfiles de usuario, notificaciones, mensajes, menú del sitio, búsqueda, tema y características de marca.
 
 ### Configuración de título y dirección URL {#title-and-url-settings}
 
-**Título **y **URL **son propiedades comunes a todas las funciones de la comunidad.
+**Título** y **dirección URL** son propiedades comunes a todas las funciones de la comunidad.
 
 Cuando se agrega una función de comunidad a una plantilla de sitio de comunidad o se agrega al [modificar](/help/communities/sites-console.md#modifying-site-properties) la estructura de un sitio de comunidad, se abre el cuadro de diálogo de la función para que se puedan configurar el Título y la dirección URL.
 
 #### Detalles de la función de configuración {#configuration-function-details}
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![chlimage_1-380](assets/chlimage_1-380.png)
 
 * **Título**
 
@@ -68,7 +71,7 @@ A continuación, la dirección URL de la página es https://localhost:4503/conte
 
 y el vínculo de menú de la página aparece como:
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![chlimage_1-381](assets/chlimage_1-381.png)
 
 ### Función Secuencia de actividades {#activity-stream-function}
 
@@ -78,13 +81,13 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 #### Detalles de la función de configuración {#configuration-function-details-1}
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-302](assets/chlimage_1-382.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
 * **Mostrar vista de “Mis actividades”**
 
-   Si se selecciona, la página Actividades incluye una ficha que filtros actividades basadas en las generadas dentro de la comunidad por el miembro actual. Predeterminado está seleccionado.
+   Si se selecciona, la página Actividades incluye una ficha que filtros actividades en función de las generadas dentro de la comunidad por el miembro actual. Predeterminado está seleccionado.
 
 * **Mostrar vista de “todas las actividades”**
 
@@ -108,7 +111,7 @@ La función de blog es una página con un componente [](/help/communities/blog-f
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![chlimage_1-383](assets/chlimage_1-383.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -134,7 +137,7 @@ La función de calendario es una página con un componente [](/help/communities/
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -199,7 +202,7 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 #### Detalles de la función de configuración {#configuration-function-details-2}
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -227,7 +230,7 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 >[!CAUTION]
 >
->La función de grupos *no debe ser la *primera ni la única* función de la estructura de un sitio ni de una plantilla de sitio de comunidad.
+>La función de grupos *no debe* ser la *primera ni la única* función de la estructura de un sitio o de una plantilla de sitio de comunidad.
 >
 >Cualquier otra función, como la función [de](#page-function)página, debe incluirse y enumerarse en primer lugar.
 
@@ -242,7 +245,7 @@ A partir del paquete de [funciones 1](/help/communities/deploy-communities.md#la
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![chlimage_1-386](assets/chlimage_1-386.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -265,7 +268,7 @@ La función de ideación es una página con un componente [](/help/communities/i
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que especifica los nombres predeterminados de Título y URL, así como la configuración de visualización predeterminada de la plantilla:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-387](assets/chlimage_1-387.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -293,7 +296,7 @@ La función de tabla de clasificación es una página con un componente [de](/he
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que especifica los nombres predeterminados de Título y URL, así como la configuración de visualización predeterminada de la plantilla:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-388](assets/chlimage_1-388.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -324,7 +327,7 @@ La función QnA es una página con un componente [](/help/communities/working-wi
 
 Cuando se agrega a una plantilla, la configuración permite la restricción a los miembros privilegiados:
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -352,11 +355,11 @@ Cuando se agrega a una plantilla, la configuración permite la restricción a lo
 
 La capacidad de crear una función de comunidad se alcanza seleccionando el icono `Create Community Function` situado en la parte superior de la consola Funciones de comunidad. Se pueden crear varias funciones basadas en el mismo modelo de AEM y, a continuación, personalizarlas de forma única abriéndolas en el modo de edición de autor.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![chlimage_1-390](assets/chlimage_1-390.png)
 
 ### Nombre de función de la comunidad {#community-function-name}
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![chlimage_1-391](assets/chlimage_1-391.png)
 
 En el panel Nombre de función de comunidad, se configuran un nombre, una descripción y si la función está habilitada o deshabilitada:
 
@@ -374,7 +377,7 @@ En el panel Nombre de función de comunidad, se configuran un nombre, una descri
 
 ### Modelo AEM {#aem-blueprint}
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![chlimage_1-392](assets/chlimage_1-392.png)
 
 En el `AEM Blueprint` panel, es posible seleccionar el modelo que es la implementación subyacente de la función de comunidad.
 
@@ -384,15 +387,15 @@ Dado que la función de comunidad se implementa como una [Live Copy](/help/sites
 
 Consulte también Administrador [de varios sitios](/help/sites-administering/msm.md).
 
-### Miniatura    {#thumbnail}
+### Miniatura  {#thumbnail}
 
-![chlimage_1-120](assets/chlimage_1-120.png)
+![chlimage_1-393](assets/chlimage_1-393.png)
 
 En el panel Miniatura, se puede cargar una imagen para mostrarla en la consola [Funciones de la](#community-functions-console)comunidad.
 
 ## Abrir función de la comunidad {#open-community-function}
 
-![chlimage_1-121](assets/chlimage_1-121.png)
+![chlimage_1-394](assets/chlimage_1-394.png)
 
 Seleccione el `Open Community Function` icono para entrar en el modo de edición de autor para crear el contenido de la página y modificar la configuración de los componentes de la función.
 
@@ -408,6 +411,6 @@ Para obtener más información sobre la configuración, visite [Communities Comp
 
 ## Editar función de la comunidad {#edit-community-function}
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![chlimage_1-395](assets/chlimage_1-395.png)
 
 Seleccione el `Edit Community Function` icono para editar las propiedades de la función utilizando los mismos paneles que [crear una función](#create-community-function)de comunidad, incluida la habilitación o desactivación de la función.
