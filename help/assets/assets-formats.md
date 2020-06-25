@@ -3,9 +3,9 @@ title: Formatos de archivo admitidos para procesamiento en [!DNL Adobe Experienc
 description: Formatos de archivo y tipos MIME admitidos [!DNL Assets] and [!DNL Dynamic Media] por y las características admitidas para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f47f5e45c64e3cbbe0b68d449a5ef8d4b7dd7f38
+source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1647'
 ht-degree: 10%
 
 ---
@@ -74,7 +74,7 @@ Además de la información anterior, considere lo siguiente:
 
 Se admite la siguiente lista de formatos 3D.
 
-Consulte [Uso de recursos 3D en Dynamic Media.](/help/assets/assets-3d.md)
+Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/assets-3d.md)
 
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | previsualización de miniaturas | previsualización 3D | Dynamic Media envío |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
