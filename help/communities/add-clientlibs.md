@@ -1,8 +1,8 @@
 ---
-title: Agregar Clientlibs
-seo-title: Agregar Clientlibs
-description: Agregar una ClientLibraryFolder
-seo-description: Agregar una ClientLibraryFolder
+title: Añadir Clientlibs
+seo-title: Añadir Clientlibs
+description: Añadir una ClientLibraryFolder
+seo-description: Añadir una ClientLibraryFolder
 uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 2%
 
 ---
 
 
-# Agregar Clientlibs {#add-clientlibs}
+# Añadir Clientlibs {#add-clientlibs}
 
-## Agregar una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## Añadir una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 Cree una ClientLibraryFolder con el nombre `clientlibs`que contendrá el JS y CSS utilizados para procesar las páginas del sitio.
 
@@ -33,9 +36,9 @@ El valor de `categories`propiedad proporcionado a esta biblioteca de cliente es 
 
 1. Haga clic en **Aceptar**
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![chlimage_1-220](assets/chlimage_1-220.png)
 
-En la ficha **Propiedades** del nuevo `clientlibs` nodo, introduzca la propiedad **categories** :
+En la ficha **Propiedades** del nuevo `clientlibs` nodo, introduzca la propiedad **categorías** :
 
 * Nombre: **categorías**
 * Tipo: **Cadena**
@@ -43,7 +46,7 @@ En la ficha **Propiedades** del nuevo `clientlibs` nodo, introduzca la propiedad
 * Haga clic en **Agregar**
 * Haga clic en **Guardar todo**
 
-Nota: anteponer el valor de las categorías con &#39;aplicaciones&#39;. es una convención para identificar la &#39;aplicación propietaria&#39; como una carpeta /apps, no como /libs.  IMPORTANTE: Agregue `js.tx`t y **`css.txt`** archivos de marcador de posición. (No es oficialmente un cq:ClientLibraryFolder sin ellos).
+Nota: anteponer el valor de categorías con &#39;aplicaciones&#39;. es una convención para identificar la &#39;aplicación propietaria&#39; como una carpeta /apps, no como /libs.  IMPORTANTE: Añada `js.tx`t y **`css.txt`** archivos de marcador de posición. (No es oficialmente un cq:ClientLibraryFolder sin ellos).
 
 1. Clic con el botón derecho **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Seleccione **Crear archivo...**
@@ -52,7 +55,7 @@ Nota: anteponer el valor de las categorías con &#39;aplicaciones&#39;. es una c
 1. Enter **Name:** `js.txt`
 1. Haga clic en **Guardar todo**
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![chlimage_1-221](assets/chlimage_1-221.png)
 
 La primera línea de css.txt y js.txt identifica la ubicación base desde la que se encuentran las siguientes listas de archivos.
 
@@ -88,7 +91,7 @@ En este caso, incluidos todos ellos y así los clientes SCF más básicos que so
 * Haga clic **`Multi`**
 * Value: **`cq.social.scf`**
 
-   * Aparecerá un cuadro de diálogo y haga clic **`+`** después de cada entrada para agregar las siguientes categorías de clientlib:
+   * Aparecerá un cuadro de diálogo y haga clic **`+`** después de cada entrada para agregar las siguientes categorías clientlib:
 
       * **`cq.ckeditor`**
       * **`cq.social.author.hbs.comments`**
@@ -96,27 +99,27 @@ En este caso, incluidos todos ellos y así los clientes SCF más básicos que so
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * click **OK**
+      * Haga clic en **Aceptar**
 
 * Haga clic en **Guardar todo**
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 Así es como `/etc/designs/an-scf-sandbox/clientlibs` debería aparecer ahora en el repositorio:
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ### Incluir Clientlibs en la plantilla PlayPage {#include-clientlibs-in-playpage-template}
 
-Sin incluir la categoría `apps.an-scf-sandbox` ClientLibraryFolder en la página, los componentes SCF no funcionarán ni se les aplicará estilo, ya que no estarán disponibles los JavaScript ni los estilos necesarios.
+Sin incluir la categoría `apps.an-scf-sandbox` ClientLibraryFolder en la página, los componentes SCF no funcionarán ni se les aplicará estilo, ya que no estarán disponibles los JavaScript y los estilos necesarios.
 
 Por ejemplo, sin incluir clientlibs, el componente de comentarios de SCF no tiene estilo:
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![chlimage_1-224](assets/chlimage_1-224.png)
 
 Una vez que se incluye apps.an-scf-sandbox clientlibs, el componente de comentarios de SCF aparece con estilo:
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 La sentencia include pertenece a la `head` sección de la `html` secuencia de comandos. El valor predeterminado **`foundation head.jsp`** incluye una secuencia de comandos que se puede superponer: **`headlibs.jsp`**.
 
@@ -127,7 +130,7 @@ La sentencia include pertenece a la `head` sección de la `html` secuencia de co
 1. Haga clic con el botón derecho y seleccione **Copiar** (o seleccione Copiar en la barra de herramientas)
 1. Seleccione **`/apps/an-scf-sandbox/components/playpage`**
 1. Haga clic con el botón derecho y seleccione **Pegar** (o seleccione Pegar en la barra de herramientas)
-1. Haga doble clic **`headlibs.jsp`** para abrirlo
+1. Haga clic en el Doble **`headlibs.jsp`** para abrirlo
 1. Anexe la línea siguiente al final del archivo
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -147,13 +150,13 @@ Cargue el sitio web en el navegador y vea si el fondo no es azul.
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-53](assets/chlimage_1-53.png)
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### Guardar su trabajo hasta ahora {#saving-your-work-so-far}
 
-En este punto, existe un simulador de pruebas minimalista y puede que valga la pena guardarlo como paquete para que, mientras se reproduce, si el repositorio se daña y desea volver a empezar, puede desactivar el servidor, cambiar el nombre o eliminar la carpeta crx-quickstart/, activar el servidor, cargar e instalar este paquete guardado y no tener que repetir estos pasos más básicos.
+En este punto, existe un simulador para pruebas minimalista y puede que valga la pena guardarlo como paquete para que, mientras se reproduce, si el repositorio se daña y desea pasar el inicio, pueda desactivar el servidor, cambiar el nombre o eliminar la carpeta crx-quickstart/, activar el servidor, cargar e instalar este paquete guardado y no tener que repetir estos pasos más básicos.
 
-Este paquete existe en el tutorial [Crear una página](/help/communities/create-sample-page.md) de muestra para aquellos que no pueden esperar para simplemente saltar y empezar a reproducir...
+Este paquete existe en el tutorial [Crear una página](/help/communities/create-sample-page.md) de muestra para aquellos que no pueden esperar para simplemente saltar y reproducir el inicio!...
 
 Para crear un paquete:
 
@@ -167,15 +170,15 @@ Para crear un paquete:
 
 * Haga clic en **Editar**
 
-   * Ficha Seleccionar **filtros**
+   * Ficha Seleccionar **Filtros**
 
-      * Haga clic en **Agregar filtro**
+      * Haga clic en **Añadir filtro**
       * Ruta raíz: buscar `/apps/an-scf-sandbox`
       * Haga clic en **Finalizado**
-      * Haga clic en **Agregar filtro**
+      * Haga clic en **Añadir filtro**
       * Ruta raíz: buscar `/etc/designs/an-scf-sandbox`
       * Haga clic en **Finalizado**
-      * Haga clic en **Agregar filtro**
+      * Haga clic en **Añadir filtro**
       * Ruta raíz: buscar `/content/an-scf-sandbox**`
       * Haga clic en **Finalizado**
    * Haga clic en **Guardar**
