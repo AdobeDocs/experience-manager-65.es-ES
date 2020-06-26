@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1744'
 ht-degree: 15%
 
 ---
@@ -193,13 +193,12 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 >
 >El inglés está disponible de forma predeterminada.
 >
->Otros idiomas están disponibles como Paquetes de modelo de idioma desde Uso compartido de paquetes o Distribución de software:
+>Otros idiomas están disponibles como Paquetes de modelo de idioma desde Distribución de software:
 >
->* [Francés (fr) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) o [francés (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemán (de) desde Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) o [alemán (de) desde Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) o [italiano (it) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Español (es) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) o [español (es) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-
+>* [Francés (fr) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemán (de) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Español (es) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -217,7 +216,6 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
    * Las oraciones que se van a eliminar se resaltan en rojo, con huelga.
    * Haga clic en cualquier frase resaltada para mantenerla en el contenido resumido.
    * Haga clic en cualquier frase no resaltada para eliminarla.
-
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Seleccione **Resumir** para confirmar los cambios.
@@ -279,7 +277,6 @@ Se añadirán a la secuencia de párrafos del fragmento sin ningún formato; el 
 
    * desplazarse al recurso necesario en DAM
    * buscar el recurso en DAM
-
    Una vez localizado, seleccione el recurso requerido haciendo clic en la miniatura.
 
 1. Utilice **Seleccionar** para agregar el recurso al sistema de párrafos del fragmento de contenido en la ubicación actual.
@@ -376,7 +373,6 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
    * verde indica el contenido agregado (a la variación)
    * rojo indica que el contenido se ha eliminado (de la variación)
-
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Seleccione **Sincronizar**, la variación se actualizará y se mostrará.
