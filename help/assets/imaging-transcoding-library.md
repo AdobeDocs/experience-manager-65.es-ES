@@ -3,9 +3,9 @@ title: Biblioteca de transcodificación de imágenes
 description: Descubra cómo configurar y utilizar la biblioteca de transcodificación de imágenes de Adobe, una solución de procesamiento de imágenes que puede realizar funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo de imágenes y cambio de tamaño de imágenes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ La biblioteca de transcodificación de imágenes de Adobe es una solución de pr
 * Compresión de calidad JPEG
 * Cambio de tamaño de imagen
 
-La biblioteca de transcodificación de imágenes proporciona compatibilidad con CMYK y alfa completa, excepto CMYK -Alpha.
+La biblioteca de transcodificación de imágenes ofrece compatibilidad con CMYK y alfa completa, excepto CMYK -Alpha.
 
 Además de admitir una amplia gama de formatos de archivo y perfiles, la biblioteca de transcodificación de imágenes tiene ventajas significativas con respecto a otras soluciones de terceros en cuanto a rendimiento, escalabilidad y calidad. Estas son algunas de las ventajas clave del uso de la biblioteca de transcodificación de imágenes:
 
@@ -55,7 +55,7 @@ Los argumentos de la línea de comandos para la biblioteca de transcodificación
 
 Puede configurar las siguientes opciones para el `-resize` parámetro:
 
-* `X`:: Funciona de forma similar a Experience Manager. Por ejemplo -resize 319.
+* `X`:: Funciona de forma similar al Experience Manager. Por ejemplo -resize 319.
 * `WxH`:: La relación de aspecto no se mantiene, por ejemplo `-resize 319x319`.
 * `Wx`:: Corrige la anchura y calcula la altura manteniendo la proporción de aspecto. Por ejemplo `-resize 319x`.
 * `xH`:: Corrige la altura y calcula la anchura manteniendo la proporción de aspecto. Por ejemplo `-resize x319`.
@@ -74,7 +74,7 @@ Para configurar el procesamiento del DIT, cree un archivo de configuración y ac
 
 Para configurar la biblioteca, cree un archivo .conf para indicar las bibliotecas siguiendo los pasos siguientes. Necesita permisos de administrador o raíz.
 
-1. Descargue el paquete de la biblioteca de transcodificación de [imágenes desde Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) o desde [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e instálelo mediante el Administrador de paquetes. El paquete es compatible con Experience Manager 6.5.
+1. Descargue el paquete Biblioteca de transcodificación de [imágenes de Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instálelo mediante el Administrador de paquetes. El paquete es compatible con Experience Manager 6.5.
 
 1. Para conocer un ID de paquete para `com.day.cq.dam.cq-dam-switchengine`, inicie sesión en la consola web y haga clic en **[!UICONTROL OSGi > Paquetes]**. Como alternativa, para abrir la consola de paquetes, acceda a la `https://[aem_server:[port]/system/console/bundles/` URL. Busque `com.day.cq.dam.cq-dam-switchengine` el paquete y su ID.
 
@@ -92,7 +92,7 @@ Para configurar la biblioteca, cree un archivo .conf para indicar las biblioteca
 
 1. Ejecutar `ldconfig` para crear los vínculos y la caché necesarios.
 
-1. En la cuenta que se utiliza para inicio de Experience Manager, edite `.bash_profile` el archivo. Añada `LD_LIBRARY_PATH` agregando lo siguiente.
+1. En la cuenta que se utiliza para inicio Experience Manager, edite `.bash_profile` el archivo. Añada `LD_LIBRARY_PATH` agregando lo siguiente.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -126,6 +126,7 @@ Por ejemplo, si desea crear miniaturas para una imagen TIFF con la biblioteca de
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![chlimage](assets/chlimage_1-199.png)
 
 1. (Opcional) Genere miniaturas a partir de una representación intermedia mediante un único comando. La representación intermedia actúa como fuente para generar representaciones estáticas y web. Este método es más rápido que el método anterior. Sin embargo, no se pueden aplicar parámetros personalizados a las miniaturas mediante este método.
