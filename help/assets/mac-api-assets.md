@@ -3,7 +3,7 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -77,17 +77,17 @@ En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
 La API HTTP de Assets incluye las siguientes funciones:
 
-* Recupere una lista de carpetas.
-* Crear una carpeta.
-* Cree un recurso.
-* Actualice el binario de recursos.
-* Actualice los metadatos del recurso.
-* Cree una representación de recursos.
-* Actualizar una representación de recursos.
-* Cree un comentario de recurso.
-* Copie una carpeta o un recurso.
-* Mover una carpeta o un recurso.
-* Elimine una carpeta, recurso o representación.
+* [Recupere una lista](#retrieve-a-folder-listing)de carpetas.
+* [Crear una carpeta](#create-a-folder).
+* [Cree un recurso](#create-an-asset).
+* [Actualizar binario](#update-asset-binary)de recursos.
+* [Actualice los metadatos](#update-asset-metadata)del recurso.
+* [Cree una representación](#create-an-asset-rendition)de recursos.
+* [Actualizar una representación](#update-an-asset-rendition)de recursos.
+* [Cree un comentario](#create-an-asset-comment)de recurso.
+* [Copie una carpeta o un recurso](#copy-a-folder-or-asset).
+* [Mover una carpeta o un recurso](#move-a-folder-or-asset).
+* [Elimine una carpeta, recurso o representación](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
