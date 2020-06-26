@@ -10,15 +10,15 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '7951'
+source-wordcount: '7912'
 ht-degree: 1%
 
 ---
 
 
-# Configuración de Dynamic Media - Modo híbrido{#configuring-dynamic-media-hybrid-mode}
+# Configuración de Dynamic Media - Modo híbrido {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media-Hybrid debe habilitarse y configurarse para su uso. Según el caso de uso, Dynamic Media cuenta con varias configuraciones [](#supported-dynamic-media-configurations)admitidas.
 
@@ -970,7 +970,7 @@ Los casos de uso avanzados podrían utilizar un modificador `icc=` de configurac
 * `iccEmbed` - [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-El conjunto estándar de perfiles en color de Adobe solo está disponible si tiene instalado [Feature Pack 12445 de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) o [Feature Pack 12445 de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) . Todos los paquetes de funciones y Service Packs están disponibles a través de [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) y [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 proporciona los perfiles de color de Adobe.
+El conjunto estándar de perfiles en color de Adobe solo está disponible si tiene [instalado Feature Pack 12445 de Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) de software. Todos los paquetes de funciones y servicios están disponibles en Distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software. Feature Pack 12445 proporciona los perfiles de color de Adobe.
 
 ### Instalación de Feature Pack 12445 {#installing-feature-pack}
 
@@ -978,9 +978,9 @@ Debe instalar el paquete de funciones 12445 para utilizar las funciones de admin
 
 **Para instalar el paquete de funciones 12445**
 
-1. Vaya a [Uso compartido](https://www.adobeaemcloud.com/content/packageshare.html) de paquetes o Distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software y descargue cualquiera de las `cq-6.3.0-featurepack-12445`.
+1. Vaya a [Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de software y descargue cualquiera de las `cq-6.3.0-featurepack-12445`.
 
-   Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso compartido de paquetes y paquetes en AEM.
+   Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre cómo usar paquetes en [!DNL Adobe Experience Manager].
 
 1. Instale el paquete de funciones.
 
