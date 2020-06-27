@@ -1,19 +1,19 @@
 ---
 title: Facetas de búsqueda
-description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en Adobe Experience Manager.
+description: Este artículo describe cómo crear, modificar y utilizar facetas de búsqueda en Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2517'
-ht-degree: 19%
+source-wordcount: '2523'
+ht-degree: 18%
 
 ---
 
 
 # Facetas de búsqueda {#search-facets}
 
-Una implementación en toda la empresa de Recursos Adobe Experience Manager tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso correcto puede resultar difícil y llevar mucho tiempo si solo se utilizan las funciones de búsqueda genéricas de Experience Manager.
+Una implementación de Adobe Experience Manager Assets en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso correcto puede ser difícil y llevar mucho tiempo si solo se utilizan las funciones de búsqueda genéricas de Experience Manager.
 
 Utilice las facetas de búsqueda del panel Filtros para agregar más granularidad a la experiencia de búsqueda y hacer que la funcionalidad de búsqueda sea más eficiente y versátil. Las facetas de búsqueda agregan varias dimensiones (predicados) que le permiten realizar búsquedas más complejas. El panel Filtros incluye algunas facetas estándar. También puede agregar facetas de búsqueda personalizadas.
 
@@ -115,7 +115,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 >El predicado Opciones es un contenedor personalizado que incluye predicados de propiedades para mostrar el comportamiento descrito. Actualmente, no hay ningún extremo REST disponible para admitir la funcionalidad de forma nativa.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
+1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. En la página **[!UICONTROL Editar formulario de búsqueda]**, arrastre **[!UICONTROL Predicado de opciones]** desde la pestaña **[!UICONTROL Seleccionar predicado]** al panel principal.
 1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos en función de su formato, especifique un nombre práctico para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Indique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/dc:format.`
 1. Realice una de las acciones siguientes:
@@ -164,9 +164,9 @@ El predicado de etiquetas permite realizar búsquedas de recursos basadas en eti
 1. Vaya al panel Buscar. El predicado **[!UICONTROL Etiquetas]** se agrega al panel Buscar.
 1. Especifique las etiquetas en función de las cuales desee buscar recursos o seleccione entre la lista de sugerencias.
 
-   ![Sugerencia proporcionada por Experience Manager al escribir el nombre de la etiqueta](assets/chlimage_1-419.png)
+   ![Sugerencia proporcionada por el Experience Manager al escribir el nombre de la etiqueta](assets/chlimage_1-419.png)
 
-   *Figura: Sugerencia proporcionada por Experience Manager al escribir el nombre de la etiqueta.*
+   *Figura: Sugerencia proporcionada por el Experience Manager al escribir el nombre de la etiqueta.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
@@ -193,20 +193,17 @@ De forma similar a como se agrega un predicado de propiedad o un predicado de op
 
 ## Restaurar las facetas de búsqueda predeterminadas {#restoring-default-search-facets}
 
-De forma predeterminada, aparece un icono Bloquear antes del carril **[!UICONTROL de búsqueda Administración de]** recursos en la página **[!UICONTROL Buscar formularios]** . El icono Bloquear desaparece si agrega facetas de búsqueda al formulario que indican que se ha modificado el formulario predeterminado.
+De forma predeterminada, aparece un icono de ![bloqueo de icono](assets/do-not-localize/lock_closed_icon.svg) de bloqueo antes del carril **[!UICONTROL de búsqueda]** de Administración de recursos en la página **[!UICONTROL Buscar formularios]** . El icono Bloquear en una opción de la página Buscar formularios indica que la configuración predeterminada está intacta y no está personalizada. El icono ![de](assets/do-not-localize/lock_closed_icon.svg) bloqueo de icono cerrado desaparece si agrega facetas de búsqueda al formulario que indican que se ha modificado el formulario predeterminado.
 
 ![El icono Bloquear en una opción de la página Buscar formularios indica que la configuración predeterminada está intacta y no está personalizada.](assets/locked_admin_rail.png)
-
-El icono Bloquear en una opción de la página Buscar formularios indica que la configuración predeterminada está intacta y no está personalizada.
 
 Para restaurar la faceta de búsqueda predeterminada, realice los siguientes pasos:
 
 1. Seleccione el carril **[!UICONTROL de búsqueda de administración de]** recursos en la página **[!UICONTROL Buscar formularios]** .
-1. Haga clic en **[!UICONTROL Eliminar]** en la barra de herramientas.
-   ![deleteOutline](assets/deleteoutline.png)
+1. Haga clic en **[!UICONTROL Eliminar]** ![eliminar contorno](assets/deleteoutline.png) en la barra de herramientas.
 1. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Eliminar]** para eliminar los cambios personalizados.
 
-   Después de eliminar los cambios personalizados en las facetas de búsqueda, vuelve a aparecer un candado antes de **[!UICONTROL Carril de búsqueda de administración de Assets]** en la página **[!UICONTROL Buscar formularios]**.
+   After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
 ## User permissions {#user-permissions}
 
