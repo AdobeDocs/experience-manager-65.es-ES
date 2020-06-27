@@ -3,9 +3,9 @@ title: Administre recursos de vídeo en [!DNL Adobe Experience Manager].
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46568322e75669532734dddda91a781f45a398d4
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ Obtenga información sobre cómo administrar y editar los recursos de vídeo en 
 
    Puede pausar o reproducir vídeo solo en la vista de la tarjeta. Los botones [!UICONTROL Reproducir] y [!UICONTROL Pausa] no están disponibles en la vista de lista.
 
-1. Para previsualización del vídeo en la página de detalles del recurso, haga clic en el icono **[!UICONTROL Editar]** de la tarjeta.
+1. Para previsualización del vídeo en la página de detalles del recurso, haga clic en **[!UICONTROL Editar]** en la tarjeta.
 
    El vídeo se reproduce en el reproductor de vídeo nativo del navegador. Puede reproducir, pausar, controlar el volumen y aplicar zoom en el vídeo a pantalla completa.
 
