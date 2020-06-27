@@ -3,9 +3,9 @@ title: Crear y configurar páginas del editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2135'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ En este documento se describe lo siguiente:
 
 ## ¿Por qué crear y configurar páginas del editor de recursos? {#why-create-and-configure-asset-editor-pages}
 
-La administración de activos digitales se utiliza en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios con formación profesional (por ejemplo, fotógrafos o taxónomos) a grupos de usuarios más grandes y diversos (por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.), la potente interfaz de usuario de Recursos Adobe Experience Manager para usuarios profesionales puede proporcionar demasiada información y inicio de los interesados para solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
+La administración de activos digitales se utiliza en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios de usuarios con formación profesional -por ejemplo, fotógrafos o taxónomos- a grupos de usuarios más grandes y diversos, por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.-, la poderosa interfaz de usuario de Recursos de Adobe Experience Manager para usuarios profesionales puede proporcionar demasiada información y inicio de los interesados para solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
 
 Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a los espectáculos comerciales o de un centro de prensa en un sitio web público. Las aplicaciones centradas en los recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
-La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en los recursos creadas con Recursos son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
+La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo el conocimiento de los grupos de usuarios y sus necesidades, así como el conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en los recursos creadas con Recursos son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
-Una aplicación centrada en recursos en Experience Manager consiste en una página del editor de recursos, que se puede utilizar para obtener una vista detallada de un recurso específico. La página Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
+Una aplicación centrada en recursos en Experience Manager consiste en una página del editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. La página Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -203,7 +203,7 @@ Al crear la página Editor de recursos, se recomienda crear la página directame
 
 Para crear una página del editor de recursos:
 
-1. En la ficha **Sitios** web, navegue hasta el lugar donde desee crear una página de editor de recursos y haga clic en **Nuevo**.
+1. En la ficha **[!UICONTROL Sitios]** web, navegue hasta el lugar donde desee crear una página de editor de recursos y haga clic en **Nuevo**.
 1. Seleccione **Geometrixx Asset Editor** y haga clic en **Crear**. La nueva página se crea y la página se enumera en la ficha **Sitios** web.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -268,7 +268,7 @@ El formulario de metadatos es un formulario que incluye un inicio y una acción 
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Para crear una acción de finalización, haga clic en **Editar** en el área Final del formulario. Por ejemplo, es posible que desee crear un botón **Enviar** para permitir que los usuarios envíen los cambios de metadatos. Opcionalmente, puede agregar un botón **Restablecer** que restablezca los metadatos a su estado original.
+1. Para crear una acción de finalización, haga clic en **Editar** en el área Final del formulario. Por ejemplo, es posible que desee crear un botón **Enviar** para permitir que los usuarios envíen los cambios de metadatos. De forma opcional, puede agregar un botón **Restablecer** que restablezca los metadatos a su estado original.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -356,7 +356,7 @@ De forma predeterminada, está en modo de solo lectura, por lo que los usuarios 
 
 Si se puede editar el Título, puede agregar un título y una descripción haciendo clic en el lápiz para abrir la ventana Propiedades **del** recurso. Además, puede activar y desactivar el recurso seleccionando la fecha y la hora.
 
-Cuando los usuarios editan el Título haciendo clic en el icono de lápiz, pueden cambiar el **Título**, la **Descripción** y especificar **Tiempo de activación** y **** desactivación para activar y desactivar el recurso.
+Al editar el [!UICONTROL título], los usuarios pueden cambiar el **título**, la **descripción** y especificar **Tiempo de activación** y **desactivación para activar y desactivar el recurso** .
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -391,7 +391,7 @@ Están disponibles las siguientes acciones:
 
 ## Edición múltiple de recursos con la página Editor de recursos {#multi-editing-assets-with-the-asset-editor-page}
 
-Con Experience Manager Assets, puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar al mismo tiempo los siguientes:
+Con Recursos Experience Manager puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar al mismo tiempo los siguientes:
 
 * Etiquetas
 * Metadatos
@@ -414,15 +414,15 @@ Para editar varios recursos con la página Editor de recursos:
    * Una etiqueta que se aplica a todos los recursos se muestra con una fuente normal.
    * Metadatos distintos de las etiquetas: el valor del campo solo se muestra si es el mismo para todos los recursos seleccionados.
 
-1. Haga clic en **Descargar** para descargar un archivo zip que contenga las representaciones originales de los recursos.
-1. Haga clic en el icono del lápiz situado junto al campo **Etiquetas** para editar las etiquetas:
+1. Haga clic en **Descargar** para descargar un archivo ZIP que contenga las representaciones originales de los recursos.
+1. Haga clic en Editar la opción de etiquetas que se encuentra junto al campo **Etiquetas** .
 
    * Una etiqueta que no se aplica a todos los recursos, pero solo a algunos tiene un fondo gris.
    * Una etiqueta que se aplica a todos los recursos tiene un fondo blanco.
    Puede hacer lo siguiente:
 
-   * Haga clic en el icono **x** para eliminar la etiqueta de todos los recursos.
-   * Haga clic en el icono **+** para agregar la etiqueta a todos los recursos.
+   * Haga clic en `x` para eliminar la etiqueta de todos los recursos.
+   * Haga clic en `+` para agregar la etiqueta a todos los recursos.
    * Haga clic en la **flecha** y seleccione una etiqueta para agregar una nueva etiqueta a todos los recursos.
    Haga clic en **Aceptar** para escribir los cambios en el formulario. La casilla situada junto al campo **Etiquetas** se activa automáticamente.
 
