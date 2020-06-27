@@ -1,16 +1,19 @@
 ---
 title: Carpeta de esquema de metadatos
-description: Obtenga información sobre cómo crear esquemas de metadatos para carpetas de recursos en Recursos Adobe Experience Manager
+description: Obtenga información sobre cómo crear esquemas de metadatos para carpetas de recursos en Adobe Experience Manager Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 4%
 
 ---
 
 
 # Carpeta de esquema de metadatos {#folder-metadata-schema}
 
-Recursos Adobe Experience Manager le permite crear esquemas de metadatos para las carpetas de recursos, que definen la presentación y los metadatos que se muestran en las páginas de propiedades de las carpetas.
+Adobe Experience Manager Assets permite crear esquemas de metadatos para las carpetas de recursos, que definen la presentación y los metadatos que se muestran en las páginas de propiedades de las carpetas.
 
 ## Añadir un formulario de esquema de metadatos de carpeta {#add-a-folder-metadata-schema-form}
 
@@ -29,7 +32,7 @@ Puede editar un formulario de esquema de metadatos recién agregado o existente,
 
 Puede asignar/configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio de CRX. Puede agregar nuevas fichas o elementos de formulario al formulario de esquema de metadatos.
 
-1. En la página Formularios de Esquema, seleccione el formulario que ha creado y, a continuación, haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
+1. En la página Formularios de Esquema, seleccione el formulario que ha creado y, a continuación, seleccione la opción **[!UICONTROL Editar]** en la barra de herramientas.
 1. En la página Editor de Esquemas de metadatos de carpeta, haga clic en `+` para agregar una ficha al formulario. Para cambiar el nombre de la ficha, haga clic en el nombre predeterminado y especifique el nuevo nombre en **[!UICONTROL Configuración]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -93,7 +96,7 @@ Para asegurarse de que el componente se muestra correctamente en el formulario d
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-Puede eliminar formularios esquema de metadatos de carpeta desde la página Esquema de formularios de metadatos de carpeta. Para eliminar un formulario, selecciónelo y haga clic en el icono Eliminar de la barra de herramientas.
+Puede eliminar formularios esquema de metadatos de carpeta desde la página Esquema de formularios de metadatos de carpeta. Para eliminar un formulario, selecciónelo y haga clic en la opción Eliminar de la barra de herramientas.
 
 ![delete_form](assets/delete_form.png)
 
