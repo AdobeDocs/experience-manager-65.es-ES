@@ -3,9 +3,9 @@ title: Administre metadatos de muchos recursos y colecciones en Adobe Enterprise
 description: Edite los metadatos de muchos recursos y colecciones simultáneamente para propagar rápidamente los cambios comunes de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,7 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
 
 1. En la interfaz de usuario de Recursos, navegue a la ubicación de los recursos que desee editar.
 1. Seleccione los recursos para los que desea editar propiedades comunes.
-1. En la barra de herramientas, haga clic en el icono **[!UICONTROL Propiedades]** para abrir la página de propiedades de los recursos seleccionados.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades]** para abrir la página de propiedades de los recursos seleccionados.
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
    >* En la parte superior de la lista de recursos, active la casilla de verificación situada junto a **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
 
 
-1. Para seleccionar otro esquema de metadatos para los recursos, haga clic en el icono **[!UICONTROL Configuración]** de la barra de herramientas y seleccione el esquema que desee.
+1. Para seleccionar otro esquema de metadatos para los recursos, haga clic en **[!UICONTROL Configuración]** en la barra de herramientas y seleccione el esquema que desee.
 1. Guarde los cambios.
 1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el **[!UICONTROL modo Anexar]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Haga clic en **[!UICONTROL Enviar]**.
 
