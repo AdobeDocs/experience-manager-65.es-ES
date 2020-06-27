@@ -3,9 +3,9 @@ title: 'Información sobre Assets '
 description: Descubra cómo la función de perspectivas de recursos le permite realizar un seguimiento de las clasificaciones de usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '735'
 ht-degree: 7%
 
 ---
@@ -43,6 +43,7 @@ Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la
    * **Web y móvil**: El número de veces que el recurso formaba parte de sitios web y aplicaciones
    * **Social**: El número de veces que se ha utilizado el recurso en soluciones como Adobe Social y Adobe Campaign
    * **Correo electrónico**: El número de veces que el recurso se ha utilizado en campañas de correo electrónico
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
@@ -66,12 +67,12 @@ Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la
 Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente mediante la **[!UICONTROL Vista de la información]**.
 
 1. En la interfaz de usuario de Recursos, vaya a la carpeta que contenga los recursos para los que desee realizar la vista.
-1. Haga clic en el icono Diseño de la barra de herramientas y, a continuación, elija **[!UICONTROL Vista]** de perspectivas.
+1. Haga clic en Diseño en la barra de herramientas y, a continuación, elija **[!UICONTROL Vista]** de perspectivas.
 1. La página muestra las puntuaciones de uso de los recursos. Compare las clasificaciones de los distintos recursos y obtenga perspectivas.
 
 ## Programar trabajo en segundo plano {#scheduling-background-job}
 
-Asset Insights obtiene datos de uso de recursos de los grupos de informes de Adobe Analytics de forma periódica. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos de]** Adobe CQ DAM desde la consola web.
+Asset Insights obtiene de forma periódica los datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos de]** Adobe CQ DAM desde la consola web.
 
 1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Abra la configuración del servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos DAM de]** Adobe CQ.
