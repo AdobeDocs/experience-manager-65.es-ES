@@ -3,9 +3,9 @@ title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1895'
 ht-degree: 16%
 
 ---
@@ -151,7 +151,7 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 
 1. En la lista de proyecto **[!UICONTROL de traducción]** existente, seleccione un proyecto para agregar el recurso a la traducción.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Haga clic en **[!UICONTROL Crear]**. Los recursos que se van a traducir se agregan a la carpeta de destino. La carpeta actualizada se muestra en la sección **[!UICONTROL Textos en idiomas]**.
 
@@ -286,7 +286,7 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. En la [!DNL Assets] interfaz, seleccione un recurso que ya haya traducido y haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas para abrir el recurso en modo de edición.
+1. En la [!DNL Assets] interfaz, seleccione un recurso que ya haya traducido y haga clic en **[!UICONTROL Editar]** en la barra de herramientas para abrir el recurso en modo de edición.
 1. Edite el recurso y guarde los cambios.
 1. Realice los pasos 2 a 14 del procedimiento de [Añadir al proyecto](#add-to-existing-translation-project) de traducción existente para actualizar la copia del idioma.
 1. Haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción. Desde la lista de recursos en la página Trabajo **[!UICONTROL de]** traducción, puede realizar una vista clara de la ubicación temporal en la que se almacena la versión traducida del recurso.
