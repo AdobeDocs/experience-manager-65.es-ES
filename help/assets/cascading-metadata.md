@@ -3,7 +3,10 @@ title: Metadatos en cascada en [!DNL Adobe Experience Manager Assets].
 description: En este artículo se describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ A continuación se indican algunos casos de uso para los que puede definir metad
 * Cambiar las opciones mostradas para un campo concreto en función del valor especificado en otro campo.
 * Establezca el valor de metadatos predeterminado en un campo concreto en función del valor especificado en otro campo.
 
-## Configurar metadatos en cascada en [!DNL Experience Manager]{#configure-cascading-metadata-in-aem}
+## Configurar metadatos en cascada en [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Imagine un escenario en el que desee mostrar metadatos en cascada en función del tipo de recurso seleccionado. Algunos ejemplos
 
@@ -52,6 +55,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
    * Para especificar los valores manualmente, seleccione **[!UICONTROL Añadir manualmente]**, haga clic en **[!UICONTROL Añadir opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recursos de vídeo, PDF, Word e imagen.
 
    * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Añadir a través de ruta]** JSON y proporcione la ruta del archivo JSON. [!DNL Experience Manager] Obtiene los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
+
    Ambas opciones son mutuamente excluyentes. No puede importar las opciones de un archivo JSON y editarlas manualmente.
 
    ![add_choice](assets/add_choice.png)
@@ -62,7 +66,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    >[!NOTE]
    >
-   >Al agregar opciones, si hace clic en el campo Desplegable, la interfaz se distorsiona y el icono Eliminar de las opciones deja de funcionar. No haga clic en el menú desplegable hasta que guarde los cambios. Si tiene este problema, guarde el esquema y ábralo de nuevo para continuar con la edición.
+   >Al agregar opciones, si hace clic en el campo Desplegable, la interfaz se distorsiona y la opción de eliminación de las opciones deja de funcionar. No haga clic en el menú desplegable hasta que guarde los cambios. Si tiene este problema, guarde el esquema y ábralo de nuevo para continuar con la edición.
 
 1. (Opcional) Añada los demás campos obligatorios. Por ejemplo, formato, códec y duración para el vídeo de tipo de recurso.
 
