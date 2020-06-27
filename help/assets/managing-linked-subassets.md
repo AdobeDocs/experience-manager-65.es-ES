@@ -3,9 +3,9 @@ title: Administre recursos compuestos con referencias y recursos de varias pági
 description: Aprenda a crear referencias a recursos digitales desde dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1363'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Puede hacer referencia a recursos digitales existentes desde dentro de un [!DNL 
 
 1. Haga clic en Propiedades **[!UICONTROL de]** Vista en la barra de herramientas. En la página [!UICONTROL Propiedades] , la lista de archivos que hacen referencia al recurso actual aparece en la columna **[!UICONTROL Referencias]** de la ficha **[!UICONTROL Básico]** .
 
-   ![vista de las referencias de Recursos de Experience Manager en la columna Referencias de los detalles de recursos](assets/asset-references.png)
+   ![vista de las referencias de Recursos Experience Manager en la columna Referencias de los detalles de recursos](assets/asset-references.png)
 
    *Figura: Referencias de recursos en detalles de recursos.*
 
@@ -105,7 +105,7 @@ Específicamente para documentos de Microsoft Word, ejecute el flujo de trabajo 
 
 ## View subassets {#viewing-subassets}
 
-Los subrecursos solo se muestran si se generan y están disponibles para el recurso de varias páginas seleccionado. Para vista de los subrecursos generados, abra el recurso de varias páginas. En el área superior izquierda de la página, haga clic en el icono ![del carril](assets/do-not-localize/aem_leftrail_contentonly.png) izquierdo y haga clic en **[!UICONTROL Subrecursos]** en la lista. Al seleccionar **[!UICONTROL Subrecursos]** en la lista. Como alternativa, utilice el método abreviado de teclado `alt + 5`.
+Los subrecursos solo se muestran si se generan y están disponibles para el recurso de varias páginas seleccionado. Para vista de los subrecursos generados, abra el recurso de varias páginas. En el área superior izquierda de la página, haga clic en ![Opción para abrir el carril](assets/do-not-localize/aem_leftrail_contentonly.png) izquierdo y haga clic en **[!UICONTROL Subrecursos]** desde la lista. Al seleccionar **[!UICONTROL Subrecursos]** en la lista. Como alternativa, utilice el método abreviado de teclado `alt + 5`.
 
 ![Subrecursos de Vista para un recurso de varias páginas](assets/view_subassets_simulation.gif)
 
@@ -127,7 +127,7 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 
 * **[!UICONTROL La opción Información general]** de página muestra todos los subrecursos simultáneamente.
 
-* **[!UICONTROL La opción Línea de tiempo]** del carril izquierdo después de hacer clic en el icono ![del carril](assets/do-not-localize/aem_leftrail_contentonly.png) izquierdo muestra el flujo de actividad del archivo.
+* **[!UICONTROL La opción Línea de tiempo]** del carril izquierdo después de hacer clic en ![Opción para abrir el carril](assets/do-not-localize/aem_leftrail_contentonly.png) izquierdo muestra el flujo de actividad del archivo.
 
 ## Prácticas recomendadas y limitación {#best-practice-limitation-tips}
 
@@ -135,7 +135,8 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 
 >[!MORELIKETHIS]
 >
->* [Uso de la aplicación de escritorio Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Uso de la aplicación de escritorio de Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
 >* [Configurar acciones de escritorio en Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Creación de objetos inteligentes vinculados en Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Colocación de gráficos en Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+
