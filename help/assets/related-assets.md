@@ -3,9 +3,9 @@ title: Activos relacionados
 description: Aprenda a relacionar recursos digitales que comparten algunos atributos comunes. También cree relaciones derivadas de origen entre recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar otro recurso con el recurso seleccionado, haga clic en el icono **[!UICONTROL Relacionar]** de la barra de herramientas.
+1. Para relacionar otro recurso con el recurso seleccionado, haga clic en **[!UICONTROL Relacionar]** en la barra de herramientas.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -45,13 +45,14 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
    * Para relacionar el archivo de origen del recurso, seleccione **[!UICONTROL Origen]** en la lista.
    * Para relacionar un archivo derivado, seleccione **[!UICONTROL Derivado]** de la lista.
    * Para crear una relación bidireccional entre los recursos, seleccione **[!UICONTROL Otros]** en la lista.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. En la pantalla **[!UICONTROL Seleccionar recurso]** , navegue hasta la ubicación del recurso que desee relacionar y selecciónelo.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Click the **[!UICONTROL Confirm]** icon.
+1. Haga clic en **[!UICONTROL Confirmar]**.
 1. Click **[!UICONTROL OK]** to close the dialog. Según la relación que elija en el paso 3, el recurso relacionado se muestra en una categoría adecuada en la sección **[!UICONTROL Relacionado]** . Por ejemplo, si el recurso relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Origen]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
