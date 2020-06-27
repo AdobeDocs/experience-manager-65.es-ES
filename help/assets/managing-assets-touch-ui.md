@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '9303'
+source-wordcount: '9250'
 ht-degree: 4%
 
 ---
@@ -61,14 +61,13 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 1. En la interfaz de usuario, navegue hasta la ubicación en la que desee agregar recursos digitales. [!DNL Assets]
 1. Para cargar los recursos, realice una de las siguientes acciones:
 
-   * En la barra de herramientas, haga clic en el icono **[!UICONTROL Crear]** . A continuación, en el menú, haga clic en **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
+   * En la barra de herramientas, haga clic en **[!UICONTROL Crear]**. A continuación, en el menú, haga clic en **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
    * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario [!DNL Assets] . No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
-
    ![Opción Crear para cargar recursos](assets/create-options.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-   Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Haga clic en el icono **[!UICONTROL Pausa]** situado junto a la barra de progreso que aparece cuando se produce un inicio de carga.
+   Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Haga clic en **[!UICONTROL Pausar]** junto a la barra de progreso que aparece cuando se produce un inicio de carga.
 
    ![Barra de progreso de carga de recursos](assets/chlimage_1-5.png)
 
@@ -78,9 +77,9 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Para modificar el límite de tamaño, configure la `chunkUploadMinFileSize` propiedad del `fileupload`nodo en el repositorio de CRX.
 
-   Al hacer clic en el icono **[!UICONTROL Pausa]** , se desplaza al icono **[!UICONTROL Reproducir]** . Para reanudar la carga, haga clic en el icono **[!UICONTROL Reproducir]** .
+   Al hacer clic en **[!UICONTROL Pausar]**, se activa la opción **[!UICONTROL Reproducir]** . Para reanudar la carga, haga clic en **[!UICONTROL Reproducir]**.
 
-   ![Reanudar la carga de recursos en pausa mediante el icono Reproducir](assets/chlimage_1-6.png)
+   ![Reanudar la carga de recursos en pausa](assets/chlimage_1-6.png)
 
    Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 
@@ -120,7 +119,6 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    * el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
    * el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-
    No incluya caracteres especiales en las extensiones de los nombres de archivo de recursos.
 
    ![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/chlimage_1-10.png)
@@ -185,7 +183,7 @@ Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]
 | Opciones de trabajo |  | Haga clic en Opciones **** de trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Haga clic en el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas cargadas se introducen automáticamente en [!DNL Experience Manager Assets]. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
@@ -339,7 +337,7 @@ Para realizar la previsualización de un recurso, siga estos pasos.
 
    Haga clic en **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
 
-   ![Icono Restablecer para devolver al usuario a la vista original](assets/chlimage_1-11.png)
+   ![Restablecer para que el usuario vuelva a la vista original](assets/chlimage_1-11.png)
 
 **Previsualización de recursos utilizando solo teclas de teclado**
 
@@ -350,10 +348,9 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 1. Pulse `Enter` la tecla del recurso deseado para abrirlo. Puede acercar los recursos al modo de previsualización.
 
 1. Para acercar el recurso:
-   1. Utilice la `Tab` tecla para mover el enfoque al icono de acercamiento.
+   1. Utilice la `Tab` tecla para mover el enfoque a la opción de acercar.
    1. Utilice la `Enter` tecla para acercar la imagen.
-
-   Para alejar, utilice `Tab` la tecla para desplazar el enfoque al icono de alejamiento y pulse `Enter`.
+   Para alejar, utilice `Tab` la tecla para desplazar el enfoque a la opción de alejamiento y pulse `Enter`.
 
 1. Utilice las teclas `Shift` + `Tab` para volver a centrar la atención en la imagen.
 
@@ -410,7 +407,6 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
    * Número de veces que se ha visualizado o descargado el recurso
    * Canales/dispositivos a través de los cuales se utilizó el recurso
    * Soluciones creativas en las que el recurso se ha utilizado recientemente
-
    Para obtener más información, consulte Perspectivas [de recursos](/help/assets/touch-ui-asset-insights.md).
 
 1. Click **[!UICONTROL Save &amp; Close]**.
@@ -428,8 +424,8 @@ Algunos atributos que son exclusivos de una copia concreta de un activo no se ar
 
 El resto de las propiedades y la información de metadatos se conservan. No se crea una copia parcial al copiar un recurso.
 
-1. En [!DNL Assets] la interfaz, seleccione uno o varios recursos y haga clic en el icono **[!UICONTROL Copiar]** de la barra de herramientas. También puede seleccionar la acción rápida **[!UICONTROL Copiar]** en la tarjeta de recursos.
-   ![Icono de Copiar en la barra de herramientas de la interfaz de usuario de los recursos](assets/copy_icon.png)
+1. En [!DNL Assets] la interfaz, seleccione uno o varios recursos y haga clic en **[!UICONTROL Copiar]** en la barra de herramientas. También puede seleccionar la acción rápida **[!UICONTROL Copiar]** en la tarjeta de recursos.
+   ![Opción Copiar en la barra de herramientas de la interfaz de Recursos](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -441,21 +437,21 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >
    >Si copia un recurso en la misma ubicación, [!DNL Experience Manager] genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso con título `Square`, [!DNL Experience Manager] genera automáticamente el título de su copia como `Square1`.
 
-1. Haga clic en el icono **[!UICONTROL Pegar]** recurso de la barra de herramientas.
+1. Haga clic en la opción **[!UICONTROL Pegar]** recurso de la barra de herramientas.
 
-   ![Icono de pegado en la barra de herramientas de la interfaz de usuario de los recursos](assets/chlimage_1-14.png)
+   ![Opción Pegar de la barra de herramientas Recursos](assets/chlimage_1-14.png)
    [!DNL Assets] a continuación, se copian en esta ubicación.
 
    >[!NOTE]
    >
-   >El icono **[!UICONTROL Pegar]** está disponible en la barra de herramientas hasta que se complete la operación de pegado.
+   >La opción **[!UICONTROL Pegar]** está disponible en la barra de herramientas hasta que se complete la operación de pegado.
 
 ### Mover o cambiar el nombre de los recursos {#moving-or-renaming-assets}
 
 1. Navegue hasta la ubicación del recurso que desee mover.
 
-1. Seleccione el recurso y haga clic en el icono **[!UICONTROL Mover]** de la barra de herramientas.
-   ![Icono de movimiento en la barra de herramientas de la interfaz de usuario del recurso](assets/move_icon.png)
+1. Seleccione el recurso y haga clic en la opción **[!UICONTROL Mover]** de la barra de herramientas.
+   ![Opción Mover de la barra de herramientas Recursos](assets/move_icon.png)
 
 1. En el asistente para [!UICONTROL mover recursos] , realice una de las siguientes acciones:
 
@@ -484,7 +480,6 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    * Haga clic en **[!UICONTROL Atrás]** para volver a la pantalla **[!UICONTROL Seleccionar destino]** .
 
    * Haga clic en **[!UICONTROL Cancelar]** para detener la operación de movimiento.
-
    Si no actualiza las referencias, éstas seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de acceso del recurso.
 
 ## Administrar representaciones {#managing-renditions}
@@ -495,7 +490,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    ![Página Detalles de recursos para administrar representaciones](assets/chlimage_1-15.png)
 
-1. Haga clic en el icono de GlobalNav y seleccione **[!UICONTROL Representaciones]** en la lista.
+1. En la interfaz de Experience Manager, seleccione **[!UICONTROL Representaciones]** en la lista.
 
    ![Barra izquierda para abrir el menú y seleccionar la opción Representaciones](assets/renditions_menu.png)
 
@@ -511,19 +506,19 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    **Eliminar una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, haga clic en el icono **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
+   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, haga clic en la opción **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
 
    ![Opción para eliminar una representación](assets/delete_renditionicon.png)
 
    **Cargar una nueva representación**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
 
-   ![Añadir icono de representación para cargar una nueva representación](assets/chlimage_1-16.png)
+   ![Añadir representación para cargar una nueva representación](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Las opciones, como el icono Cargar representación, no se muestran. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
+   >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Options, such as the [!UICONTROL Upload Rendition] option is not displayed. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
 
    Puede configurar las dimensiones de la representación que desee mostrar en la página de detalles de un recurso de vídeo o imagen. En función de las dimensiones que especifique, [!DNL Assets] muestra la representación con las dimensiones exactas o más cercanas.
 
@@ -549,9 +544,9 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
 1. Navegue a la ubicación de los recursos que desee eliminar.
 
-1. Seleccione el recurso y haga clic en el icono **[!UICONTROL Eliminar]** de la barra de herramientas.
+1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
 
-   ![Icono Eliminar](assets/delete_icon.png)
+   ![Opción Eliminar](assets/delete_icon.png)
 
 1. En el cuadro de diálogo de confirmación, haga clic en:
 
@@ -560,7 +555,6 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
       * Si el recurso no tiene referencias, se elimina.
       * Si el recurso tiene referencias, un mensaje de error le informa de que se hace referencia a **uno o varios recursos.** Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
-
    >[!NOTE]
    >
    >Para eliminar recursos, un usuario necesita permisos de eliminación en `dam/asset`. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
@@ -581,7 +575,7 @@ Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-a
 
 1. Vaya a la ubicación de los recursos o carpetas que desee publicar.
 
-1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** option from the toolbar.
 1. Si el recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que no se han publicado o que se han modificado desde la última vez que se publicaron o no. Elija las referencias que desee publicar.
 
    >[!NOTE]
@@ -598,9 +592,9 @@ Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-a
 
 1. Vaya a la ubicación de la carpeta de recursos o recursos que desea eliminar del entorno de publicación (cancelar la publicación).
 
-1. Seleccione el recurso o la carpeta que desea cancelar la publicación y haga clic en el icono **[!UICONTROL Administrar publicación]** de la barra de herramientas.
+1. Seleccione el recurso o la carpeta que desea cancelar la publicación y haga clic en la opción **[!UICONTROL Administrar publicación]** de la barra de herramientas.
 
-   ![Icono Administrar publicación](assets/manage_publication.png)
+   ![Opción Administrar publicación](assets/manage_publication.png)
 
 1. Seleccione la acción **[!UICONTROL Cancelar publicación]** en la lista.
 
@@ -613,7 +607,6 @@ Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-a
 
    * **[!UICONTROL Cancelar]** para detener la acción
    * **[!UICONTROL Cancele la publicación]** para confirmar que los recursos se han cancelado de publicar (ya no están disponibles en el entorno de publicación) en la fecha especificada.
-
    >[!NOTE]
    >
    >Al cancelar la publicación de un recurso complejo, solo debe cancelar la publicación del recurso. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
@@ -624,7 +617,7 @@ Un grupo de usuarios cerrado (CUG) se utiliza para limitar el acceso a carpetas 
 
 Los CUG son una forma adicional de restringir el acceso a sus recursos. También puede configurar una página de inicio de sesión para la carpeta.
 
-1. Seleccione una carpeta de la [!DNL Assets] interfaz y haga clic en el icono [!UICONTROL Propiedades] de la barra de herramientas para mostrar la página de propiedades.
+1. Seleccione una carpeta de la [!DNL Assets] interfaz y haga clic en la opción [!UICONTROL Propiedades] de la barra de herramientas para mostrar la página de propiedades.
 1. En la ficha **[!UICONTROL Permisos]** , agregue miembros o grupos en Grupo **[!UICONTROL de usuarios]** cerrado.
 
    ![Añadir usuario en un grupo de usuarios cerrado](assets/add_user.png)
@@ -681,40 +674,32 @@ Las herramientas de edición de la [!DNL Assets] interfaz le permiten realizar p
 
 1. Realice una de las siguientes acciones para abrir un recurso en modo de edición:
 
-   * Seleccione el recurso y, a continuación, haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
-   * Haga clic en el icono **[!UICONTROL Editar]** que aparece en un recurso de la vista de tarjetas.
-   * En la página de recursos, haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
+   * Seleccione el recurso y, a continuación, haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
+   * Haga clic en la opción **[!UICONTROL Editar]** que se muestra en un recurso de la vista de tarjeta.
+   * Haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
+   ![Editar, opción en la barra de herramientas](assets/edit_icon.png)
 
-   ![Icono Editar en la barra de herramientas](assets/edit_icon.png)
-
-1. Para recortar la imagen, haga clic en el icono **Recortar** .
-
-   ![Icono de recorte](assets/chlimage_1-22.png)
+1. Para recortar la imagen, haga clic en **[!UICONTROL Recortar]** ![opción para recortar una imagen](assets/chlimage_1-22.png).
 
 1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción **Mano libre** permite recortar la imagen sin restricciones de proporción de aspecto.
 
-   ![Opciones de recorte](/help/assets/assets/chlimage_1-23.png)
+   ![Opciones de recorte](assets/chlimage_1-23.png)
 
 1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
-1. Utilice el icono **Finalizar** (esquina superior derecha) para recortar la imagen. Al hacer clic en el icono **Finalizar** también se desencadena la regeneración de las representaciones.
 
-   ![Icono Finalizar](assets/chlimage_1-24.png)
+1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
 
-1. Utilice los iconos **Deshacer** y **Rehacer** de la parte superior derecha para revertir a la imagen sin recortar o conservar la imagen recortada, respectivamente.
+   ![Opciones de deshacer y rehacer](assets/chlimage_1-25.png)
 
-   ![Iconos de Deshacer y Rehacer](assets/chlimage_1-25.png)
+1. Haga clic en la opción **Rotar** correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
 
-1. Haga clic en el icono Girar correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
+   ![Opciones de rotación hacia la derecha y hacia la izquierda](assets/chlimage_1-26.png)
 
-   ![Iconos de rotación hacia la derecha y hacia la izquierda](assets/chlimage_1-26.png)
+1. Haga clic en la opción **Voltear** correspondiente para voltear la imagen horizontal o verticalmente.
 
-1. Haga clic en el icono Voltear correspondiente para voltear la imagen horizontal o verticalmente.
+   ![opciones para voltear una imagen horizontal o verticalmente](assets/chlimage_1-27.png)
 
-   ![Iconos para voltear la imagen horizontal o verticalmente](assets/chlimage_1-27.png)
-
-1. Click the **Finish** icon to save the changes.
-
-   ![Icono Finalizar](assets/chlimage_1-28.png)
+1. Haga clic en **Finalizar** opción ![](assets/chlimage_1-24.png) Finalizar para completar la edición de imágenes. Al hacer clic en **Finalizar** también se inicio la regeneración de las representaciones.
 
 >[!NOTE]
 >
@@ -753,12 +738,11 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 >En Fragmentos de contenido, [las anotaciones se crean en el editor](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)de fragmentos.
 
 1. Navegue hasta la ubicación del recurso al que desee agregar anotaciones.
-1. Haga clic en el icono **[!UICONTROL Anotar]** de una de las siguientes opciones:
+1. Haga clic en la opción **[!UICONTROL Anotar]** de una de las siguientes opciones:
 
    * [Acciones rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
-
-   ![Icono Anotar](assets/chlimage_1-29.png)
+   ![Opción Anotar](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 
@@ -781,15 +765,15 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >Puede agregar varias anotaciones antes de guardarlas.
 
 1. Haga clic en **[!UICONTROL Cerrar]** para salir del modo Anotación.
-1. Para vista de la notificación, inicie sesión [!DNL Assets] con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
+1. Para vista de la notificación, inicie sesión [!DNL Assets] con las credenciales de Aaron MacDonald&#39;s y haga clic en la opción **[!UICONTROL Notificaciones]** para vista de la notificación.
 
    >[!NOTE]
    >
    >Las anotaciones también se pueden agregar a los recursos de vídeo. Al realizar anotaciones en vídeos, el reproductor se pausa para permitirle realizar anotaciones en un marco. Para obtener más información, consulte [Gestión de recursos](/help/assets/managing-video-assets.md)de vídeo.
 
-1. Para elegir un color diferente y poder diferenciar entre usuarios, haga clic en el icono de Perfil y en **[!UICONTROL Mis preferencias]**.
+1. Para elegir un color diferente y poder diferenciar entre usuarios, haga clic en la opción Perfil y en **[!UICONTROL Mis preferencias]**.
 
-   ![Seleccione el icono de perfil del usuario y, a continuación, Mis preferencias para abrir las preferencias del usuario](assets/User-profile-preferences.png)
+   ![Seleccione la opción de perfil del usuario y, a continuación, Mis preferencias para abrir las preferencias del usuario](assets/User-profile-preferences.png)
 
    Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
@@ -803,9 +787,9 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 1. Para vista de anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
-1. Haga clic en el icono de GlobalNav y seleccione **[!UICONTROL Cronología]** en la lista.
+1. En la interfaz de Experience Manager, seleccione **[!UICONTROL Línea de tiempo]**.
 
-   ![Opciones disponibles en el icono de GlobalNav](assets/chlimage_1-35.png)
+   ![Opciones disponibles en Experience Manager](assets/chlimage_1-35.png)
 
 1. En la lista **[!UICONTROL Mostrar todo]** de la cronología, seleccione **[!UICONTROL Comentarios]** para filtrar los resultados según las anotaciones.
 
@@ -823,7 +807,7 @@ Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisi
 
 También puede imprimir solo las anotaciones o el estado de la revisión.
 
-Para imprimir las anotaciones y revisar el estado, haga clic en el icono **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. El icono **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene al menos una anotación o estado de revisión asignado.
+Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. La opción **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene al menos una anotación o estado de revisión asignado.
 
 1. Desde la [!DNL Assets] interfaz, abra la página de previsualización de un recurso.
 1. Realice una de las acciones siguientes:
@@ -839,9 +823,9 @@ Para imprimir las anotaciones y revisar el estado, haga clic en el icono **[!UIC
 
    ![Para imprimir solo el estado de revisión de la anotación, selecciónelo en la línea de tiempo](assets/chlimage_1-39.png)
 
-1. Click the **[!UICONTROL Print]** icon from the toolbar.
+1. Haga clic en **[!UICONTROL Imprimir]** en la barra de herramientas.
 
-   ![Icono Imprimir en la barra de herramientas](assets/chlimage_1-40.png)
+   ![Opción Imprimir de la barra de herramientas](assets/chlimage_1-40.png)
 
 1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de anotaciones/revisión en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, utilice la configuración **Superior izquierda** . Se selecciona de forma predeterminada.
 
@@ -949,7 +933,6 @@ También puede activar el control automático de versiones mediante un flujo de 
 1. Para comparar dos versiones de una imagen, siga estos pasos:
    * Haga clic en la versión que se va a comparar con la versión actual.
    * Arrastre el control deslizante hacia la izquierda para superponer esta versión sobre la versión actual y comparar.
-
    ![Utilice el control deslizante para comparar las versiones seleccionadas de un recurso con la versión actual](assets/version-slider.gif)
 
    *Figura: Utilice el control deslizante para comparar sin esfuerzo las versiones seleccionadas de un recurso con la versión actual.*
