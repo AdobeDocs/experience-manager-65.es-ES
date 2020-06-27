@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '5863'
+source-wordcount: '5862'
 ht-degree: 6%
 
 ---
@@ -26,12 +26,12 @@ ht-degree: 6%
 | [Comprender los resultados y el comportamiento de la búsqueda](#searchbehavior) | [Modificar facetas de búsqueda](#searchfacets) | [Actualizaciones masivas de metadatos](#metadataupdates) |
 | [Buscar clasificación y aumentar](#searchrank) | [extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
 | [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender los resultados inesperados y solucionar problemas](#troubleshoot-unexpected-search-results-and-issues) |
-| [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicación de escritorio de Experience Manager](#desktopapp)</li><li>[Imágenes de Adobe Stock](#adobestock)</li><li>[Recursos de Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicación de escritorio de Experience Manager](#desktopapp)</li><li>[Imágenes de Adobe Stock](#adobestock)</li><li>[Recursos Dynamic Media](#dynamicmedia)</li></ul> |  |  |
 | [Selector de recursos](#assetselector) |  |  |
 | [Limitaciones](#limitations) y [sugerencias](#tips) |  |  |
 | [Ejemplos ilustrados](#samples) |  |  |
 
-Busque recursos utilizando el campo Omniture en la parte superior de la interfaz [!DNL Experience Manager] Web. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en [!DNL Experience Manager], haga clic en el icono de búsqueda en la barra superior, introduzca la palabra clave de búsqueda y pulse Retorno. Alternativamente, utilice el método abreviado de palabra clave / (barra diagonal) para abrir el campo Omniture Search. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. [!DNL Experience Manager] proporciona sugerencias a medida que el inicio escribe una palabra clave de búsqueda.
+Busque recursos utilizando el campo Omniture en la parte superior de la interfaz [!DNL Experience Manager] Web. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en [!DNL Experience Manager], haga clic en buscar en la barra superior, introduzca la palabra clave de búsqueda y pulse Retorno. Alternativamente, utilice el método abreviado de palabra clave / (barra diagonal) para abrir el campo Omniture Search. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. [!DNL Experience Manager] proporciona sugerencias a medida que el inicio escribe una palabra clave de búsqueda.
 
 Utilice el panel **[!UICONTROL Filtros]** para limitar la búsqueda filtrando los resultados de la búsqueda en función de las distintas opciones (predicados), como, por ejemplo, el tipo de archivo, el tamaño de archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Los administradores pueden personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas de búsqueda. El filtro Tipo [!UICONTROL de] archivo del panel [!UICONTROL Filtros] tiene casillas de verificación de varios estados. Por lo tanto, a menos que seleccione todos los predicados anidados (o formatos), las casillas de verificación de primer nivel se marcan parcialmente.
 
@@ -41,7 +41,7 @@ Utilice el panel **[!UICONTROL Filtros]** para limitar la búsqueda filtrando lo
 
 Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
-![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem_search_results.png)
+![Comprender la interfaz de resultados de búsqueda de Recursos Experience Manager](assets/aem_search_results.png)
 
 *Figura: Comprender la interfaz de resultados[!DNL Experience Manager Assets]de búsqueda.*
 
@@ -118,7 +118,7 @@ Puede mejorar la relevancia de las palabras clave para los recursos en particula
 1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee impulsar la búsqueda de la imagen y, a continuación, haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
 1. Click **[!UICONTROL Save &amp; Close]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
-Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Búsqueda en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -148,7 +148,7 @@ Para buscar imágenes que sean visualmente similares a una imagen seleccionada p
 
 Desde la interfaz de usuario, [!DNL Experience Manager] los usuarios pueden buscar recursos [de](/help/assets/aem-assets-adobe-stock.md) Adobe Stock y obtener licencias para los recursos necesarios. Añada `Location: Adobe Stock` en la barra de Omniture. También puede utilizar el panel Filtros para buscar todos los recursos con licencia o sin licencia o un recurso específico con el número de archivo de Adobe Stock.
 
-### Recursos de Dynamic Media {#dmassets}
+### Recursos Dynamic Media {#dmassets}
 
 Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
 
@@ -249,7 +249,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 *Figura: Busque y seleccione un recurso en el selector de recursos.*
 
-## Restricciones          {#limitations}
+## Restricciones   {#limitations}
 
 La capacidad de búsqueda en [!DNL Experience Manager Assets] tiene las siguientes limitaciones:
 
@@ -336,6 +336,7 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
    * `costPerExecution` propiedad de tipo `Double` con el valor `2`.
 
    * `refresh` propiedad de tipo `Boolean` con el valor `true`.
+
    Esta configuración permite realizar búsquedas desde el índice apropiado.
 
 1. Para crear un índice de Lucene, en CRXDE, en `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, cree un nodo denominado `imageFeatures` de tipo `nt-unstructured`. En `imageFeatures` nodo,
@@ -347,6 +348,7 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
    * Añadir `propertyIndex` propiedad de tipo `Boolean` con el valor de `true`.
 
    * Añadir `useInSimilarity` propiedad de tipo `Boolean` con el valor `true`.
+
    Guarde los cambios.
 
 1. Acceda `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` y agregue `similarityTags` propiedad de tipo `Boolean` con el valor de `true`.
@@ -354,7 +356,7 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
 1. En CRXDE, en `/oak-index/damAssetLucene` nodo, establezca la `reindex` propiedad en `true`. Guarde los cambios.
 1. (Opcional) Si tiene un formulario de búsqueda personalizado, copie el `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde todos los cambios.
 
-Para obtener información relacionada, consulte [Comprensión de las etiquetas inteligentes en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) y [cómo gestionar las etiquetas](/help/assets/managing-smart-tags.md)inteligentes.
+Para obtener información relacionada, consulte [Comprender las etiquetas inteligentes en el Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) y [cómo administrar las etiquetas](/help/assets/managing-smart-tags.md)inteligentes.
 
 ### Metadatos obligatorios {#mandatorymetadata}
 
