@@ -1,11 +1,11 @@
 ---
 title: Acerca de los recursos de Adobe Experience Manager
-description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta de recursos de Experience Manager de Adobe
+description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta de recursos Experience Manager de Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '879'
 ht-degree: 51%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 51%
 
 # Administración de recursos {#administering-assets}
 
-Assets es una herramienta de administración de recursos digitales (DAM) totalmente integrada con la plataforma Experience Manager y que permite a la empresa compartir y distribuir recursos digitales. Los usuarios de una organización pueden administrar y almacenar imágenes, vídeos, documentos, clips de audio o medios enriquecidos tales como archivos Flash, así como acceder a ellos, a fin de utilizarlos en Internet, para imprimirlos o para distribuirlos de forma digital.
+Assets es una herramienta de gestión de activos digitales (DAM) totalmente integrada con la plataforma de Experience Manager y que permite a la empresa compartir y distribuir recursos digitales. Los usuarios de una organización pueden administrar y almacenar imágenes, vídeos, documentos, clips de audio o medios enriquecidos tales como archivos Flash, así como acceder a ellos, a fin de utilizarlos en Internet, para imprimirlos o para distribuirlos de forma digital.
 
 ## What is Digital Asset Management? {#what-is-digital-asset-management}
 
 Assets proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales como imágenes, gráficos, audio, vídeo y documentos a través de una interfaz web (o una carpeta CIFS o WebDAV).
 
-Bien integrado en Experience Manager, la función Recursos le permite hacer lo siguiente:
+Bien integrado en el Experience Manager, la función Recursos le permite hacer lo siguiente:
 
 * Añadir y compartir imágenes, documentos, audio y vídeo en diversos formatos de archivo.
 * Administre los recursos agrupándolos por etiquetas, Lightbox o estrellas (sus favoritos). Añadir anotaciones a los recursos.
@@ -28,9 +28,9 @@ Bien integrado en Experience Manager, la función Recursos le permite hacer lo s
 * Realizar funciones de edición de imágenes, como escalar y añadir filtros de imagen. Importar y exportar varios activos digitales de forma simultánea mediante una carpeta WebDAV o CIFS.
 * Usar los flujos de trabajo y las notificaciones para permitir el procesamiento y la descarga de forma conjunta de cualquier grupo de activos y administrar los derechos de acceso a los activos.
 
-### Experience Manager Assets está integrado con los sitios de Experience Manager {#aem-assets-fully-integrated-in-cq-wcm}
+### Recursos Experience Manager está integrado con sitios Experience Manager {#aem-assets-fully-integrated-in-cq-wcm}
 
-Assets está totalmente integrado con Sitios y la funcionalidad está disponible mediante el icono DAM. A continuación, se puede acceder a los recursos digitales administrados en el repositorio de recursos a través del buscador de contenido al crear páginas web.
+Los recursos están totalmente integrados con los sitios y todas las funciones están perfectamente disponibles. A continuación, se puede acceder a los recursos digitales administrados en el repositorio de recursos a través del buscador de contenido al crear páginas web.
 
 La interfaz de usuario básica es la misma que la de Sitios. Consulte [Información general de los sitios](/help/sites-authoring/page-authoring.md) para obtener más información.
 
@@ -84,6 +84,6 @@ Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
 Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de Assets](/help/assets/media-handlers.md) la lista de flujos de trabajo predeterminados.
 
-## Experience Manager Assets y MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## Recursos Experience Manager y MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
 Consulte [Recursos y MediaLibrary](/help/assets/medialibrary.md) para obtener información sobre las diferencias.
