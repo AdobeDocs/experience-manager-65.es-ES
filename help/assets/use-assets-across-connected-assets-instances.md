@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Utilice los recursos disponibles en una [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementación remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2081'
+source-wordcount: '2082'
 ht-degree: 51%
 
 ---
@@ -21,18 +21,18 @@ Los usuarios pueden crear páginas web en [!DNL Experience Manager Sites]. [!DNL
 
 When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. Los administradores crean una integración única de una implementación de [!DNL Sites] con otra implementación (remota) de [!DNL Assets].
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. La función admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulte la guía [de migración de recursos de Experience Manager](/help/assets/assets-migration-guide.md).
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. La función admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulte la guía [de migración de recursos de](/help/assets/assets-migration-guide.md)Experience Manager.
 
 ### Requisitos previos e implementaciones admitidas {#prerequisites}
 
 Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 * Los usuarios forman parte de los grupos correspondientes en cada implementación.
-* Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. [!DNL Experience Manager] 6.5 [!DNL Assets] funciona [!DNL Experience Manager] como un servicio de nube. Para obtener más información, consulte la funcionalidad Recursos [conectados en Experience Manager como un servicio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)de nube.
+* Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. [!DNL Experience Manager] 6.5 [!DNL Assets] funciona [!DNL Experience Manager] como Cloud Service. Para obtener más información, consulte Funcionalidad de Recursos [conectados en Experience Manager como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] como servicio de nube | [!DNL Experience Manager] 6.5 [!DNL Sites] sobre AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] in situ |
+   |  | [!DNL Sites] como Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sobre AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] in situ |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]como servicio de nube ** | Compatible | Compatible | Compatible |
+   | **[!DNL Experience Manager Assets]como Cloud Service ** | Compatible | Compatible | Compatible |
    | **[!DNL Experience Manager]6.5[!DNL Assets]sobre AMS ** | Compatible | Compatible | Compatible |
    | **[!DNL Experience Manager]6.5[!DNL Assets]in situ ** | No compatible | No compatible | No compatible |
 
@@ -78,6 +78,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. En el campo **[!UICONTROL Punto de montaje]**, introduzca la ruta local de donde recupera los recursos. [!DNL Experience Manager][!DNL Experience Manager] Por ejemplo, la carpeta `remoteassets`.
    1. Ajuste los valores del **[!UICONTROL umbral de optimización de transferencia binaria original]** en función de la red. Las representaciones de recursos superiores a este umbral se transfieren de forma asíncrona.
    1. Seleccione **[!UICONTROL almacén de datos compartido con recursos conectados]**, si utiliza un almacén de datos para almacenar los recursos y este es el almacenamiento común entre ambas implementaciones de En este caso, el límite de umbral no importa, ya que los binarios de activos reales se encuentran en el almacén de datos y no se transfieren.
+
    ![Una configuración típica para los recursos conectados](assets/connected-assets-typical-config.png)
 
    *Figura: Una configuración típica para los recursos conectados.*
@@ -91,6 +92,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. Seleccione el lanzador del flujo de trabajo y haga clic en **[!UICONTROL Propiedades]** en la barra de acciones.
 
    1. In the [!UICONTROL Properties] wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
+
    | Antes | Después |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
@@ -105,7 +107,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. Inicie sesión con las credenciales del administrador. Buscar `Cross-Origin`. Acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
-   1. To create a CORS configuration for [!DNL Sites] instance, click ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] instance, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Guarde la configuración.
 
