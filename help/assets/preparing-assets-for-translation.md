@@ -3,7 +3,7 @@ title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para preparar los recursos para la traducción para admitir recursos multilingües.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 La interfaz de Experience Manager proporciona un panel **[!UICONTROL Referencias]** que muestra una lista de las raíces de idioma que se han creado en Recursos.
 
 1. En la consola Recursos, seleccione el idioma principal para el que desea crear copias de idioma.
-1. Haga clic en el icono de GlobalNav y elija **[!UICONTROL Referencias]** para abrir el panel [!UICONTROL Referencia] .
+1. En el carril izquierdo, seleccione la opción **[!UICONTROL Referencias]** para abrir el panel [!UICONTROL Referencia] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
