@@ -3,7 +3,7 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -23,28 +23,29 @@ Aunque puede personalizar el código de seguimiento para permitir que las soluci
 
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM.
 
-1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Configuración **[!UICONTROL de]** perspectivas.
-1. [Configurar la instancia de Experience Manager con el servicio de nube de DTM](/help/sites-administering/dtm.md)
+1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Configuración **[!UICONTROL de]** perspectivas.
+1. [Configurar la instancia de Experience Manager con el Cloud Service de DTM](/help/sites-administering/dtm.md)
 
-   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de las perspectivas de recursos, ya que la integración de sitios de Experience Manager con perspectivas de recursos sigue en marcha.
+   El testigo API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** en el Perfil del usuario. Este paso no es necesario desde el punto de vista de perspectivas de recursos, ya que la integración de sitios Experience Manager con perspectivas de recursos sigue en marcha.
 
-1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/)y seleccione una Compañía, según corresponda.
-1. Crear/abrir una propiedad web existente
+1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/)y seleccione una compañía, según corresponda.
+1. Crear o abrir una propiedad web existente
 
    * Seleccione la ficha Propiedades **** web y, a continuación, haga clic en **[!UICONTROL Añadir propiedad]**.
 
    * Actualice los campos según corresponda y haga clic en **[!UICONTROL Crear propiedad]**. Consulte [la documentación](https://helpx.adobe.com/experience-manager/using/dtm.html).
+
    ![Crear, editar propiedad web](assets/Create-edit-web-property.png)
 
 1. En la ficha **[!UICONTROL Reglas]** , seleccione Reglas **[!UICONTROL de carga de]** página en el panel de navegación y haga clic en **[!UICONTROL Crear nueva regla]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expanda **[!UICONTROL Etiquetas]** Javascript/de terceros. A continuación, haga clic en **[!UICONTROL Añadir nueva secuencia de comandos]** en la ficha HTML **** secuencial para abrir el cuadro de diálogo Secuencia de comandos.
+1. Expanda Etiquetas **[!UICONTROL de]** JavaScript/terceros. A continuación, haga clic en **[!UICONTROL Añadir nueva secuencia de comandos]** en la ficha HTML **** secuencial para abrir el cuadro de diálogo Secuencia de comandos.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos]**.
+1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos]**.
 1. Haga clic en **[!UICONTROL Rastreador]** de páginas de perspectivas, copie el código del rastreador y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
 
    >[!NOTE]
@@ -52,10 +53,10 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
    > * `AppMeasurement.js` se elimina. Se espera que esté disponible a través de la herramienta Adobe Analytics de la DTM.
    > * Se elimina la llamada a `assetAnalytics.dispatcher.init`(). Se espera que se llame a la función una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
    > * Según el lugar en el que esté alojado el rastreador de páginas de perspectivas de recursos (por ejemplo, Experience Manager, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
-   > * Para el rastreador de páginas alojado en Experience Manager, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
+   > * Para el Rastreador de páginas alojado por el Experience Manager, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
 
 
-1. Acceso `https://dtm.adobe.com`. Haga clic en **[!UICONTROL Información general]** en la propiedad web y haga clic en **[!UICONTROL Añadir herramienta]** o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer el método **** de configuración en **[!UICONTROL Automático]**.
+1. Acceso `https://dtm.adobe.com`. Haga clic en **[!UICONTROL Información general]** en la propiedad web y haga clic en **[!UICONTROL Añadir herramienta]** o abra una herramienta Analytics de Adobe existente. Al crear la herramienta, puede establecer el método **** de configuración en **[!UICONTROL Automático]**.
 
    ![Añadir la herramienta Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
