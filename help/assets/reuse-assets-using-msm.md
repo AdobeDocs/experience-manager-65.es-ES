@@ -4,10 +4,10 @@ description: Utilice recursos en varias páginas o carpetas que se deriven de lo
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 11%
+source-wordcount: '3368'
+ht-degree: 10%
 
 ---
 
@@ -70,7 +70,7 @@ Para crear copias en vivo con el primer método, siga estos pasos:
 
 1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear > Live Copy]**.
 
-   ![Creación de una Live Copy desde la interfaz de Experience Manager](assets/create_lc1.png)
+   ![Crear Live Copy desde la interfaz de Experience Manager](assets/create_lc1.png)
 
    *Figura: Cree una Live Copy desde[!DNL Experience Manager]la interfaz.*
 
@@ -82,7 +82,7 @@ Para crear copias en vivo con el segundo método, siga estos pasos:
 
 1. En [!DNL Experience Manager] la interfaz, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
 
-   ![Creación de una Live Copy desde la interfaz de Experience Manager](assets/create_lc2.png)
+   ![Crear Live Copy desde la interfaz de Experience Manager](assets/create_lc2.png)
 
    *Figura: Cree una Live Copy desde[!DNL Experience Manager]la interfaz.*
 
@@ -242,7 +242,7 @@ También puede suspender o reanudar rápidamente las relaciones de varios recurs
 
 Una Live Copy es una réplica del origen original cuando se crea. Los valores de metadatos de una Live Copy se heredan del origen. Los campos de metadatos mantienen la herencia de forma individual con los campos respectivos del recurso de origen.
 
-Sin embargo, tiene la flexibilidad de realizar modificaciones locales en una Live Copy para cambiar algunas propiedades seleccionadas. Para realizar modificaciones locales, cancele la herencia de la propiedad deseada. Cuando se cancela la herencia de uno o varios campos de metadatos, se conserva la relación activa del recurso y la herencia de los demás campos de metadatos. Cualquier sincronización o implementación no sobrescribe las modificaciones locales. Para ello, abra la página **[!UICONTROL Propiedades]** de un recurso de Live Copy y haga clic en el icono **[!UICONTROL Cancelar herencia]** situado junto a un campo de metadatos.
+Sin embargo, tiene la flexibilidad de realizar modificaciones locales en una Live Copy para cambiar algunas propiedades seleccionadas. Para realizar modificaciones locales, cancele la herencia de la propiedad deseada. Cuando se cancela la herencia de uno o varios campos de metadatos, se conserva la relación activa del recurso y la herencia de los demás campos de metadatos. Cualquier sincronización o implementación no sobrescribe las modificaciones locales. To do so, open **[!UICONTROL Properties]** page of a live copy asset, click the **[!UICONTROL cancel inheritance]** option next to a metadata field.
 
 Puede deshacer todas las modificaciones locales y revertir el recurso al estado de su origen. La acción Restablecer anula de forma irrevocable e instantánea todas las modificaciones locales y restablece la herencia en todos los campos de metadatos. Para revertir, en la página **[!UICONTROL Propiedades]** de un recurso de Live Copy, haga clic en **[!UICONTROL Restablecer]** en la barra de herramientas.
 
