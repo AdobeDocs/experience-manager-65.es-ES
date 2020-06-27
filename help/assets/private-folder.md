@@ -1,11 +1,11 @@
 ---
 title: Cree y comparta una carpeta privada en Adobe Experience Manager.
-description: Obtenga información sobre cómo crear una carpeta privada en los recursos de Adobe Experience Manager y compartirla con otros usuarios y asignarles varios privilegios.
+description: Obtenga información sobre cómo crear una carpeta privada en Adobe Experience Manager Assets y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,6 @@ Puede crear una carpeta privada en la interfaz de usuario de Recursos Adobe Expe
 >
 > La carpeta privada tiene al menos un miembro con la función Propietario.
 
-
 1. En la consola Recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
 
    ![Crear carpeta de recursos](assets/Create-folder.png)
@@ -32,7 +31,7 @@ Puede crear una carpeta privada en la interfaz de usuario de Recursos Adobe Expe
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,7 +57,7 @@ Puede crear una carpeta privada en la interfaz de usuario de Recursos Adobe Expe
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Haga clic en el icono Notificación para abrir la lista de las notificaciones.
+1. Haga clic en Notificaciones para abrir la lista de las notificaciones.
 
    ![Lista de las notificaciones](assets/Assets-Notification.png)
 
