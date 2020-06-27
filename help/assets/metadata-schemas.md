@@ -3,9 +3,9 @@ title: 'esquemas de metadatos para definir la presentación de la página de pro
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2644'
 ht-degree: 7%
 
 ---
@@ -19,11 +19,11 @@ En [!DNL Adobe Experience Manager Assets], los esquemas contienen campos especí
 
 Para vista y edición de la página de propiedades de un recurso, siga estos pasos:
 
-1. Haga clic en el icono Propiedades **[!UICONTROL de la]** Vista de Acciones rápidas en el mosaico de recursos de la vista de tarjetas.
+1. Haga clic en la opción Propiedades **[!UICONTROL de la]** Vista en las acciones rápidas del mosaico del recurso en la vista de tarjetas.
 
    ![Acciones rápidas en el mosaico de recursos](assets/chlimage_1-170.png)
 
-   También puede seleccionar un recurso y, a continuación, hacer clic en el icono [!UICONTROL Propiedades] de la barra de herramientas.
+   También puede seleccionar un recurso y, a continuación, hacer clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
 
 1. Puede editar las distintas propiedades de metadatos editables en las fichas disponibles. Sin embargo, no puede modificar el [!UICONTROL tipo] de recurso en la ficha [!UICONTROL Básico] de la página de propiedades.
 
@@ -48,7 +48,7 @@ Para realizar la vista de una lista de formularios o plantillas, en [!DNL Experi
 |  | [!UICONTROL vídeo] | Formulario de Esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
 | [!UICONTROL colección] |  | Formulario de Esquema para colecciones. |
 | [!UICONTROL contentfragment] |  | [Formulario de Esquema para fragmentos](/help/sites-developing/customizing-content-fragments.md)de contenido. |
-| [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager. |
+| [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con los formularios [Adobe Experience Manager](/help/forms/home.md). |
 
 <!-- 
 TBD: Add dm_video child for the default form OOTB.
@@ -68,7 +68,7 @@ Para agregar un formulario de esquema de metadatos, siga estos pasos:
 
    >[!NOTE]
    >
-   >Se muestra un icono de candado con las plantillas sin editar. Si personaliza una plantilla, no se muestra el icono de bloqueo.
+   >Se muestra un símbolo de bloqueo con las plantillas sin editar. Si personaliza una plantilla, no se bloqueará el ![bloqueo cerrado](assets/do-not-localize/lock_closed_icon.svg).
 
 1. En el cuadro de diálogo, proporcione el título del formulario de esquema y haga clic en **[!UICONTROL Crear]** para completar el proceso de creación del formulario.
 
@@ -175,7 +175,7 @@ Para eliminar un formulario, selecciónelo y haga clic en Eliminar.
 
 >[!NOTE]
 >
->* Después de eliminar los cambios personalizados de un formulario predeterminado, el icono de bloqueo vuelve a aparecer antes en la interfaz de Esquema de metadatos. Indica que el formulario se vuelve a su estado predeterminado.
+>* Después de eliminar los cambios personalizados en un formulario predeterminado, el ![bloqueo de bloqueo cerrado](assets/do-not-localize/lock_closed_icon.svg) vuelve a aparecer antes del formulario. Indica que el formulario se vuelve a su estado predeterminado.
 >* No se pueden eliminar los formularios de esquema de metadatos predeterminados en [!DNL Assets].
 
 
