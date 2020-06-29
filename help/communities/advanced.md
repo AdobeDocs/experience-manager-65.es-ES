@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Por lo tanto, el motor de puntuación avanzado requiere datos suficientes para q
 
 Configurar la puntuación avanzada es prácticamente lo mismo que la puntuación básica:
 
-* Las reglas de puntuación y de identificación básicas y avanzadas se [aplican al contenido](/help/communities/implementing-scoring.md#apply-rules-to-content) de la misma manera
+* Las reglas de puntuación y de identificación básicas y avanzadas se [aplican al contenido](/help/communities/implementing-scoring.md#apply-rules-to-content) de la misma manera.
 
-   * Las reglas de puntuación y de identificación básicas y avanzadas pueden aplicarse al mismo contenido
+   * Las reglas de puntuación y de identificación básicas y avanzadas pueden aplicarse al mismo contenido.
 
-* [La habilitación de distintivos para componentes](/help/communities/implementing-scoring.md#enable-badges-for-component) es genérica
+* [La habilitación de distintivos para componentes](/help/communities/implementing-scoring.md#enable-badges-for-component) es genérica.
 
 Las diferencias en la configuración de las reglas de puntuación y de identificación son:
 
@@ -45,23 +45,24 @@ Las diferencias en la configuración de las reglas de puntuación y de identific
 * Reglas de puntuación avanzadas:
 
    * `scoringType` definir en `advanced`
-   * requires `stopwords`
+   * Requiere `stopwords`
 
 * Reglas de distintivo avanzadas:
 
    * `badgingType` definir en `advanced`
    * `badgingLevels` se establece en **número de niveles de expertos para adjudicar**
-   * requiere `badgingPaths` una matriz de distintivos en lugar de umbrales, la asignación de matrices señala a los distintivos
+   * Requiere `badgingPaths` una matriz de distintivos en lugar de umbrales, la asignación de matrices apunta a los distintivos.
 
 >[!NOTE]
 >
 >Para utilizar las capacidades avanzadas de puntuación y de identificación, instale el paquete [Identificación de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)expertos.
 
+
 ## Motor de puntuación configurable {#configurable-scoring-engine}
 
 El motor de puntuación avanzado proporciona una configuración OSGi con parámetros que afectan al algoritmo de puntuación avanzado.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **pesos de puntuación**
 
@@ -102,7 +103,7 @@ Para invocar el motor de puntuación avanzado, el valor `scoringType`debe establ
 
 Consulte Subreglas [de puntuación](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### Palabras clave {#stopwords}
 
@@ -122,7 +123,7 @@ Las propiedades avanzadas de la regla de identificación difieren de las propied
 
 En lugar de asociar puntos con una imagen de insignia, solo es necesario identificar el número de expertos permitidos y la imagen de insignia que se va a otorgar.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -164,7 +165,7 @@ En esta versión beta se incluye una insignia de experto basada en premios:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 Para que la insignia de experto aparezca como recompensa por la actividad, asegúrese de:
 
@@ -197,15 +198,15 @@ En la versión beta se incluyen dos reglas de puntuación avanzadas para la func
 
 **Notas:**
 
-* Ambos `rules`y `sub-rules` los nodos son del tipo `cq:Page`
+* Los nodos `rules` y `sub-rules` los nodos son de tipo `cq:Page`.
 
-* `subRules`es un atributo de tipo String[] en el nodo `jcr:content` de la regla
+* `subRules` es un atributo de tipo String[] en el `jcr:content` nodo de la regla.
 
-* `sub-rules` pueden compartirse entre varias reglas de puntuación
+* `sub-rules` puede compartirse entre varias reglas de puntuación.
 
-* `rules`debe ubicarse en una ubicación de repositorio con permiso de lectura para todos
+* `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
 
-   * Los nombres de las reglas deben ser únicos independientemente de la ubicación
+* Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
 ### Reglas de identificación incluidas {#included-badging-rules}
 
@@ -216,8 +217,7 @@ En la versión se incluyen dos reglas de identificación avanzadas que correspon
 
 **Notas:**
 
-* `rules` los nodos son del tipo cq:Page
-* `rules` debe ubicarse en una ubicación de repositorio con permiso de lectura para todos
-
-   * Los nombres de las reglas deben ser únicos independientemente de la ubicación
+* `rules` los nodos son del tipo cq:Page.
+* `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
+* Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
