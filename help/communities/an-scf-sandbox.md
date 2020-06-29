@@ -10,13 +10,16 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
 
 
-# Creación de un Simulador Para Pruebas SCF {#create-an-scf-sandbox}
+# Creación de un Simulador Para Pruebas SCF  {#create-an-scf-sandbox}
 
 
 A partir de AEM 6.1 Communities, la forma más fácil de crear rápidamente un simulador para pruebas es crear un sitio de comunidad. See [Getting Started with AEM Communities](getting-started.md).
@@ -35,7 +38,7 @@ Los pasos de este tutorial son:
 * [Aplicación inicial de Simulador para pruebas](initial-app.md)
 * [Contenido inicial del Simulador para pruebas](initial-content.md)
 * [Desarrollar aplicación de Simulador para pruebas](develop-app.md)
-* [Agregar Clientlibs](add-clientlibs.md)
+* [Añadir Clientlibs](add-clientlibs.md)
 * [Desarrollar contenido de Simulador para pruebas](develop-content.md)
 
 >[!CAUTION]
@@ -50,12 +53,12 @@ En este tutorial se asume que tiene instalado un autor de AEM y una instancia de
 
 A continuación se proporcionan algunos vínculos útiles para los desarrolladores que no usan la plataforma AEM:
 
-* [Introducción](../../help/sites-deploying/deploy.md#getting-started): para implementar instancias de AEM
+* [Introducción](../../help/sites-deploying/deploy.md#getting-started): para implementar instancias de AEM.
 
-   * [Conceptos básicos](../../help/sites-developing/the-basics.md): para desarrolladores de sitios web y funciones
-   * [Primeros pasos para autores](../../help/sites-authoring/first-steps.md): para crear contenido de página
+   * [Conceptos básicos](../../help/sites-developing/the-basics.md): para desarrolladores de sitios web y funciones.
+   * [Primeros pasos para autores](../../help/sites-authoring/first-steps.md): para crear contenido de página.
 
-## Uso del entorno de desarrollo CRXDE Lite {#using-crxde-lite-development-environment}
+## Uso del Entorno de desarrollo CRXDE Lite {#using-crxde-lite-development-environment}
 
 Los desarrolladores de AEM invierten gran parte de su tiempo en el entorno de desarrollo de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) en una instancia de creación. CRXDE Lite proporciona un acceso menos restringido al repositorio de CRX. Las herramientas de IU clásicas y las consolas de IU táctiles proporcionan un acceso más estructurado a partes específicas del repositorio de CRX.
 
