@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ La consola Distintivos de comunidades permite agregar distintivos personalizados
 
 ### Visibilidad del distintivo {#badge-visibility}
 
-Actualmente, las insignias que un miembro de la comunidad gana o se asigna aparecerán junto con su nombre y avatar en las siguientes ubicaciones:
+Actualmente, las insignias que un miembro de la comunidad obtiene o se asigna aparecerán junto con su nombre y avatar en las siguientes ubicaciones:
 
 * Perfiles
 * [Foros](/help/communities/forum.md)
@@ -35,9 +35,9 @@ Actualmente, las insignias que un miembro de la comunidad gana o se asigna apare
 * [Foros](/help/communities/enabling-leaderboard.md)
 * [Ideación](/help/communities/ideation-feature.md)
 
-En el entorno del autor, para llegar a la consola Badges
+En el entorno del autor, vaya a la consola Insignias:
 
-* Desde la navegación global, vaya a **[!UICONTROL Herramientas > Comunidades > Distintivos]**
+* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Insignios]**
 
 Esta consola muestra las insignias disponibles actualmente y desde las cuales se pueden agregar nuevas insignias.
 
