@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
 workflow-type: tm+mt
 source-wordcount: '2760'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -107,7 +107,6 @@ Al iniciar sesión en [Adobe Experience Cloud](https://docs.adobe.com/content/he
 
       * not **`Counter (no subrelations)`**
    * Puede reutilizar (cambiar el nombre de los eventos existentes o crear otros nuevos para utilizarlos en las funciones de Communities
-
    <!--
     NOTE TO WRITER: The following link was broken, so I replaced it. Check for accuracy https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html 
     -->
@@ -156,7 +155,7 @@ Para habilitar el sistema de informes de Video Heartbeat después de [configurar
 
 El `Marketing Cloud Org Id` se puede ingresar en el momento de la creación [del sitio de la](/help/communities/sites-console.md#enablement) comunidad o posteriormente [modificando](/help/communities/sites-console.md#modifying-site-properties) las propiedades del sitio de la comunidad. [](#aem-analytics-cloud-service-configuration)
 
-![chlimage_1-177](assets/chlimage_1-177.png)
+![chlimage_1-264](assets/chlimage_1-264.png)
 
 Cuando Video Heartbeat Analytics está habilitado, el código JavaScript (JS) del reproductor de vídeo crea una instancia del código de Video Heartbeat Library (también en JS), que controla toda la lógica para enviar actualizaciones de estado de vídeo a los servidores de seguimiento de vídeo de Analytics cada 10 segundos (no configurables) y, finalmente, envía un informe acumulativo de la sesión de vídeo a los servidores principales de Analytics.
 
@@ -170,7 +169,7 @@ Para crear una nueva integración de Analytics que integre Adobe Analytics con e
 * Desplácese hacia abajo hasta **[!UICONTROL Adobe Analytics]**
 * Seleccione **[!UICONTROL Configurar ahora]** o **[!UICONTROL Mostrar configuraciones]**
 
-![chlimage_1-178](assets/chlimage_1-178.png)
+![chlimage_1-265](assets/chlimage_1-265.png)
 
 ### Cuadro de diálogo Crear configuración {#create-configuration-dialog}
 
@@ -178,7 +177,7 @@ Para crear una nueva integración de Analytics que integre Adobe Analytics con e
 
 En el cuadro de diálogo Crear configuración, los valores que se introducen identifican la configuración.
 
-![chlimage_1-179](assets/chlimage_1-179.png)
+![chlimage_1-266](assets/chlimage_1-266.png)
 
 * **Título**
 
@@ -202,37 +201,39 @@ For example, enter *communities*
 
 La creación inicial de una nueva configuración de Analytics da como resultado la visualización de la configuración y un nuevo cuadro de diálogo para la entrada de la Configuración de Analytics. Este cuadro de diálogo requiere la información [](#prerequisites) previa de la cuenta obtenida del representante de la cuenta.
 
-![chlimage_1-180](assets/chlimage_1-180.png)
+![chlimage_1-267](assets/chlimage_1-267.png)
 
 * **Empresa**
 
-   La compañía asociada a la cuenta de Analytics de Adobe
+   compañía asociada a la cuenta de Analytics de Adobe.
 
 * **Nombre de usuario**
 
-   Nombre de usuario de inicio de sesión del usuario autorizado para administrar la cuenta de Analytics
+   Nombre de usuario de inicio de sesión del usuario autorizado para administrar la cuenta de Analytics.
 
 * **Contraseña**
 
-   La contraseña de inicio de sesión del usuario autorizado
+   La contraseña de inicio de sesión del usuario autorizado.
 
 * **Centro de datos**
 
-   Seleccione el centro de datos de Analytics que aloja el grupo de informes
+   Seleccione el centro de datos de Analytics que aloja el grupo de informes.
 
 * **No añadir etiqueta de seguimiento a la página**
 
-   Dejar como predeterminado (no seleccionado)
+   Déjelo como predeterminado (no seleccionado).
 
 * **Utilizar AppMeasurement**
 
-   Dejar como predeterminado (no seleccionado)
+   Déjelo como predeterminado (no seleccionado).
 
 * **No importar las impresiones de la página cada noche (Author)**
 
-   Dejar como predeterminado (no seleccionado)
+   Déjelo como predeterminado (no seleccionado).
 
-* **No importar impresiones de página por la noche (publicar)** salir de forma predeterminada (sin seleccionar)
+* **No importar las impresiones de la página cada noche (Publish)**
+
+   Déjelo como predeterminado (no seleccionado).
 
 Para guardar la configuración:
 
@@ -240,13 +241,13 @@ Para guardar la configuración:
 
    * Si no es exitoso,
 
-      * Verificar que las entradas no contengan espacios de interlineado
-      * Pruebe con otro centro de datos
-      * Póngase en contacto con el representante de cuentas
+      * Verifique que las entradas no contengan espacios de interlineado.
+      * Pruebe con otro centro de datos.
+      * Póngase en contacto con su representante de cuentas.
 
-* Seleccione **Aceptar**
+* Seleccione **Aceptar**.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-268](assets/chlimage_1-268.png)
 
 ### Crear módulo {#create-framework}
 
@@ -254,22 +255,22 @@ Después de configurar correctamente la conexión básica a Adobe Analytics, es 
 
 * Seleccione `[+]` el icono junto a **[!UICONTROL Marcos]** disponibles para crear un nuevo marco
 
-![chlimage_1-182](assets/chlimage_1-182.png)
+   ![chlimage_1-269](assets/chlimage_1-269.png)
 
 * **Título**
 
-   (Requerido) Un título para mostrar del marcoPor ejemplo, introduzca *Habilitación de marco de comunidad*
+   (Requerido) Un título de visualización para el marcoPor ejemplo, introduzca *Habilitación de marco* de comunidad.
 
 * **Nombre**
 
    (Opcional) Si no se especifica, el nombre pasará de forma predeterminada a un nombre de nodo válido derivado del título.
-For example, enter *communities*
+For example, enter *communities*.
 
 * *Plantilla*
 
-   Seleccione `Adobe Analytics Framework`
+   Seleccione `Adobe Analytics Framework`.
 
-* Seleccione **Crear**
+* Seleccione **Crear**.
 
 La creación de Analytics Framework abre el marco para la configuración.
 
@@ -277,7 +278,7 @@ La creación de Analytics Framework abre el marco para la configuración.
 
 El propósito de la estructura es asignar variables de AEM a variables de Analytics (eVars y eventos). Las variables de Analytics disponibles para la asignación se [definen en el grupo](#adobe-analytics-report-suite-for-video-reporting)de informes.
 
-![chlimage_1-183](assets/chlimage_1-183.png)
+![chlimage_1-270](assets/chlimage_1-270.png)
 
 ### Seleccionar grupo de informes {#select-report-suite}
 
@@ -290,9 +291,9 @@ La barra de tareas no es necesaria y puede minimizarse para que no obstruya el a
 
 #### Cuadro de diálogo Grupos de informes antes y después de seleccionar &#39;Añadir elemento&#39; {#report-suites-dialog-before-and-after-selecting-add-item}
 
-![chlimage_1-184](assets/chlimage_1-184.png)
+![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Seleccionar **Añadir elemento +**
+1. Seleccione **Añadir elemento +**.
 
    Aparecen dos cuadros desplegables.
 
@@ -307,11 +308,11 @@ La barra de tareas no es necesaria y puede minimizarse para que no obstruya el a
     Do you want to load the default server settings and overwrite current values in the Server section?
    ```
 
-1. Elija un `Run Mode`
+1. Elija un `Run Mode`.
 
-1. Seleccione **Publicar**
+1. Seleccione **Publicar**.
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-272](assets/chlimage_1-272.png)
 
 El servicio y el marco de trabajo de Analytics cloud ya están completos. Las asignaciones se definirán una vez que se haya creado un sitio de comunidad con este servicio de Analytics habilitado.
 
@@ -356,7 +357,7 @@ Para que el seguimiento y la importación de Analytics funcionen correctamente e
 </div>
 ```
 
-Para un sitio **de comunidad** personalizado que superponga la `sitepage.hbs` secuencia de comandos, asegúrese de que el elemento está presente. La `siteUrl`variable se configurará cuando se procese en el servidor antes de servir en el cliente.
+Para un sitio **de comunidad** personalizado que superponga la `sitepage.hbs` secuencia de comandos, asegúrese de que el elemento está presente. La `siteUrl` variable se configurará cuando se procese en el servidor antes de servir en el cliente.
 
 Para un sitio **AEM** genérico que incluya componentes de Communities pero no se cree con el asistente [de creación de](/help/communities/sites-console.md)sitio, es necesario agregar el elemento . El valor de href debe ser la ruta al sitio. Por ejemplo: si la ruta del sitio es `/content/my/company/en`, utilice:
 
@@ -379,11 +380,12 @@ Si se crean nuevos componentes personalizados instrumentados para Analytics, deb
 
 ### Configuración de componentes {#component-configuration}
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-273](assets/chlimage_1-273.png)
 
 >[!NOTE]
 >
 >Los componentes de historial se utilizan para implementar la función de blog.
+
 
 ### Asignación de Analytics a variables de AEM {#mapped-analytics-to-aem-variables}
 
@@ -393,7 +395,7 @@ Si se utiliza un grupo de informes existente que asignó cualquiera de las varia
 
 A continuación se muestra un ejemplo de asignaciones predeterminadas después de seguir el tutorial [de](/help/communities/getting-started-enablement.md)introducción:
 
-![chlimage_1-187](assets/chlimage_1-187.png)
+![chlimage_1-274](assets/chlimage_1-274.png)
 
 #### Mapa de eVars enviadas con cada evento {#map-of-evars-sent-with-each-event}
 
@@ -530,8 +532,7 @@ A continuación se muestra un ejemplo de asignaciones predeterminadas después d
 * *Título* del componente UGC: Senderismo por temas
 * *login (autorizableId)*: `aaron.mcdonald@mailinator.com`
 * *Ruta de SRP a UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-o 
-*ruta del componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+o la *ruta del componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *ruta al contenido* del sitio de la comunidad: `/content/sites/<site name>/en`
 
@@ -551,15 +552,15 @@ Si las eVars y los eventos de Communities sobrescriben las asignaciones que exis
 
 #### Ejemplo de paso 1: Arrastrar Analytics evar14 a la tabla de asignación {#example-step-dragging-analytics-evar-into-mapping-table}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![chlimage_1-275](assets/chlimage_1-275.png)
 
 #### Ejemplo de paso 2: Seleccionar &#39;x&#39; para eliminar evar11 reemplazada {#example-step-selecting-x-to-remove-replaced-evar}
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-276](assets/chlimage_1-276.png)
 
 #### Ejemplo del paso 3: AEM var eventdata.siteId reasignado a Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![chlimage_1-277](assets/chlimage_1-277.png)
 
 ## Publicación del sitio de la comunidad {#publishing-the-community-site}
 
@@ -626,13 +627,13 @@ El intervalo de consulta predeterminado es de 10 segundos.
 
 Una vez que se ha publicado un sitio de comunidad habilitado para Analytics, la configuración [](/help/sites-deploying/configuring-osgi.md)OSGi del editor principal, `AEM Communities Analytics Report Importer`, puede configurarse para establecer el intervalo de sondeo predeterminado para aquellas configuraciones que no estén configuradas individualmente en CRXDE.
 
-El intervalo de sondeo controla la frecuencia de las solicitudes a Adobe Analytics para que los datos se extraigan y guarden en [SRP](/help/communities/working-with-srp.md).
+El intervalo de sondeo controla la frecuencia de las solicitudes a Adobe Analytics para extraer y guardar datos en [SRP](/help/communities/working-with-srp.md).
 
 Cuando los datos pueden clasificarse como &quot;grandes datos&quot;, las encuestas más frecuentes pueden causar una gran carga en el sitio de la comunidad.
 
 El intervalo **predeterminado de** importación de encuestas está establecido en 12 horas.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-278](assets/chlimage_1-278.png)
 
 ### Personalización del informe de componentes {#component-report-customization}
 
@@ -657,7 +658,7 @@ Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
    * Si se modifica la **`interval`** propiedad, se anula el intervalo del importador de informes.
    * El valor se expresa en segundos y se establece en 4 horas (14.400 segundos).
 
-![chlimage_1-192](assets/chlimage_1-192.png)
+![chlimage_1-279](assets/chlimage_1-279.png)
 
 ## Administrar datos de usuario en Analytics {#manage-user-data-in-analytics}
 
