@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -62,7 +65,7 @@ Consulte [Etiquetado de recursos](tag-resources.md)de habilitación.
 
 Una estructura de sitio de comunidad que incluye la función [](functions.md#catalog-function)Catálogo, incluye un `enablement catalog` componente configurado.
 
-### Prefiltros {#pre-filters}
+### Filtros previos {#pre-filters}
 
 Cuando se agrega una función de catálogo a un sitio de comunidad, es posible restringir los recursos de habilitación y las rutas de aprendizaje que aparecen en el catálogo especificando un prefiltro. Esto se realiza estableciendo propiedades en la instancia del recurso de catálogo para el sitio.
 
@@ -77,28 +80,27 @@ Uso del ejemplo del Tutorial de [habilitación](getting-started-enablement.md):
 
    * Por ejemplo, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Agregar un nodo de filtros secundarios
+* Añadir un nodo de filtros secundarios
 
    * Seleccione el `catalog`nodo
    * Seleccione **[!UICONTROL Crear nodo]**
 
       * Nombre: `filters`
       * Tipo: `nt:unstructured`
-   * Seleccione **[!UICONTROL Guardar todo]**
+      * Seleccione **[!UICONTROL Guardar todo]**
 
-
-* Agregar `se_resource-tags` propiedad al `filters` nodo
+* Añadir `se_resource-tags` propiedad en el `filters` nodo
 
    * Seleccione el `filters` nodo
-   * Agregar una propiedad múltiple
+   * Añadir una propiedad Multi
 
       * Nombre: `se_resource-tags`
       * Tipo: Cadena
       * Valor: *&lt;ingrese un[TagID](#pre-filter-tagids)>*
-      * Seleccionar **[!UICONTROL varios]**
-      * Seleccione **[!UICONTROL Agregar]**
+         * Seleccionar **[!UICONTROL varios]**
+         * Seleccionar **[!UICONTROL Añadir]**
 
-         * En el cuadro de diálogo emergente, seleccione `+` para agregar identificadores de etiqueta previos al filtro adicionales
+            * En el cuadro de diálogo emergente, seleccione `+` para agregar identificadores de etiqueta previos al filtro adicionales
 
 * Volver a publicar el sitio de la comunidad
 
@@ -114,7 +116,7 @@ Los [TagIDs](../../help/sites-developing/framework.md#tagid) de prefiltro deben 
 
 * [API de habilitación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [API de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API de Sistema de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API de informes de Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API de Analytics de Sistema de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
