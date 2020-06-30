@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 0%
 
 ---
 
@@ -38,57 +41,58 @@ Cuando faltan los clientes requeridos, [agregar un componente Comunidades a una 
 
 ### Ejemplo: Revistas colocadas sin clientes {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![chlimage_1-426](assets/chlimage_1-426.png)
 
 ### Ejemplo: Revistas colocadas con Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-427](assets/chlimage_1-427.png)
 
 ## Identificación de los clientes requeridos {#identifying-required-clientlibs}
 
 La información esencial de las funciones para los desarrolladores identifica a los clientes requeridos.
 
-Además, desde una instancia de AEM, la navegación por la Guía [de componentes de](/help/communities/components-guide.md) comunidad proporciona acceso a una lista de categorías de clientlib necesarias para un componente.
+Además, desde una instancia de AEM, la navegación por la Guía [de componentes de](/help/communities/components-guide.md) comunidad proporciona acceso a una lista de categorías clientlib necesarias para un componente.
 
 Por ejemplo: en la parte superior de la página [](https://localhost:4502/content/community-components/en/reviews.html) Reseñas, los clientes requeridos que aparecen son
 
 * cq.ckeditor
-* cq.social.hbs.reseñas
+* cq.social.hbs.reviews
 
-![chlimage_1-134](assets/chlimage_1-134.png)
+![chlimage_1-246](assets/chlimage_1-246.png)
 
-## Adición de Clientlibs requeridos {#adding-required-clientlibs}
+## Añadir Clientlibs requeridos {#adding-required-clientlibs}
 
 Cuando se desee agregar un componente Comunidades a una página, será necesario agregar los clientes necesarios para el componente si no están presentes.
 
 Utilice [CRXDE|Lite](#using-crxde-lite) para modificar una lista de clientes existente para una página de sitio de comunidad.
 
-Para agregar una clientlib para un sitio de comunidad mediante [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Para agregar una clientlib para un sitio de comunidad mediante [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Vaya a [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Busque el nodo de la `clientlibslist` página en la que desea agregar el componente
+* Vaya a [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
+* Busque el `clientlibslist` nodo de la página en la que desea agregar el componente:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Con `clientlibslist` nodo seleccionado
+* Con `clientlibslist` nodo seleccionado:
 
-   * Localizar la propiedad String[]`scg:requiredClientLibs`
-   * Seleccione su `Value` para acceder al cuadro de diálogo de la matriz String
+   * Busque la propiedad String[] `scg:requiredClientLibs`.
+   * Seleccione su para acceder `Value` al cuadro de diálogo Matriz de cadenas.
 
-      * Desplácese hacia abajo si es necesario
-      * Seleccione + para introducir una nueva biblioteca de cliente
+      * Desplácese hacia abajo si es necesario.
+      * Seleccione + para introducir una nueva biblioteca de cliente.
 
-         * Repetir para agregar más bibliotecas de cliente
-      * Seleccione **Aceptar**
-   * Seleccione **Guardar todo**
+         * Repita el procedimiento para agregar más bibliotecas de cliente.
 
+         * Seleccione **Aceptar**.
+   * Seleccione **Guardar todo**.
 
 
 >[!NOTE]
 >
 >Si el sitio no es un sitio de la comunidad, es necesario descubrir la existencia o ubicación de las bibliotecas cliente que se utilizan para el sitio.
 
-Con el ejemplo [Introducción a Comunidades](/help/communities/getting-started.md) de AEM, donde `site-name` se *involucra*, así es como aparecerá clientliblist si se agrega el componente Reseñas:
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+Con el ejemplo [Introducción a AEM Communities](/help/communities/getting-started.md) , donde `site-name` se *involucra*, así es como aparecerá clientliblist si se agrega el componente de revisiones:
+
+![chlimage_1-247](assets/chlimage_1-247.png)
 
