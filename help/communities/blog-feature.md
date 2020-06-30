@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ## Introducción {#introduction}
 
-La función de blog de Comunidades AEM ha pasado de ser una actividad de creación a una auténtica actividad comunitaria que tiene lugar en el entorno de publicación.
+La función de blog para AEM Communities se ha transformado de una actividad de creación a una verdadera actividad comunitaria que tiene lugar en el entorno de publicación.
 
-La función de blog permite proporcionar información de la comunidad en formato de diario. Los miembros autorizados (usuarios registrados y con sesión iniciada) realizan entradas de blog en el entorno de publicación.
+La función de blog permite proporcionar información de la comunidad en formato de diario. Las entradas de blog las realizan los miembros autorizados en el entorno de publicación (usuarios registrados y con sesión iniciada).
 
 La función de blog provee :
 
@@ -37,16 +40,17 @@ La función de blog provee :
 
 Esta sección de la documentación describe:
 
-* Adición de la función de blog a un sitio de AEM
+* Añadir la función de blog en un sitio de AEM
 * Configuración de los componentes del blog
 
 >[!NOTE]
 >
->Los componentes `Journal`y `Journal Sidebar` se titulan `Blog` y `Blog Sidebar`.
+>Los componentes `Journal` y `Journal Sidebar` se titulan `Blog` y `Blog Sidebar`.
 >
 >La función de blog que se encuentra en AEM 6.0 y versiones anteriores ahora se ha eliminado. Se basaba en una plantilla y solo permitía a los autores crear contenido en el entorno de creación.
 
-## Adición de componentes de blog a una página {#adding-blog-components-to-a-page}
+
+## Añadir componentes de blog en una página {#adding-blog-components-to-a-page}
 
 Si desea agregar un blog a una página en modo de autor, utilice el navegador de componentes para localizar
 
@@ -57,19 +61,21 @@ y arrástrelos a su lugar en una página donde debería aparecer el blog.
 
 Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) necesarias, así es como aparecerá el `Blog`componente:
+Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) necesarias, así es como aparecerá el `Blog` componente:
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![chlimage_1-147](assets/chlimage_1-147.png)
 
 Y cómo aparecerá el `Blog Sidebar` :
 
-![chlimage_1-230](assets/chlimage_1-230.png)
+![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Configuración del blog {#configuring-blog}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Blog` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-231](assets/chlimage_1-231.png) Configuración ![de blog](assets/blog-configure.png)
+![chlimage_1-149](assets/chlimage_1-149.png)
+
+![Configuración del blog](assets/blog-configure.png)
 
 #### Ficha Configuración {#settings-tab}
 
@@ -97,7 +103,7 @@ En la ficha **Configuración** , especifique las características básicas del b
 
 * **Miembros privilegiados permitidos**
 
-   Agregue los miembros privilegiados con permiso para crear contenido.
+   Añada los miembros privilegiados con permiso para crear contenido.
 
 * **Bloquee el contenido que haya creado el usuario en el modo de edición de autor**
 
@@ -109,8 +115,9 @@ En la ficha **Configuración** , especifique las características básicas del b
 
 >[!NOTE]
 >
->El Título del diario se utiliza para crear automáticamente la URL para el blog.
->Se utilizan un máximo de 50 caracteres (con 5 caracteres adicionales para la exclusividad) desde el título del diario que especifique aquí para crear una URL para el blog.
+>El Título de Historial se utiliza para crear automáticamente la URL para el blog.
+>Se utilizan un máximo de 50 caracteres (con 5 caracteres adicionales para la exclusividad) desde el título de historial que especifique aquí para crear una URL para el blog.
+
 
 * **Descripción del diario**
 
@@ -146,7 +153,7 @@ En la ficha **Configuración** , especifique las características básicas del b
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Una lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -162,7 +169,7 @@ En la ficha **Configuración** , especifique las características básicas del b
 
 * **Permitir que los usuarios eliminen comentarios y temas**
 
-   Si está activada, permita que los miembros eliminen los comentarios y las entradas de blog que han publicado. El valor predeterminado es** **sin marcar.
+   Si está activada, permita que los miembros eliminen los comentarios y las entradas de blog que han publicado. El valor predeterminado no está marcado.
 
 * **Permitir seguimiento**
 
@@ -208,15 +215,15 @@ En la ficha Moderación **** del usuario, especifique la configuración de moder
 
 * **Marcar entradas**
 
-   Si se selecciona, permita que los miembros marquen los temas o comentarios de otros como inapropiados. El valor predeterminado no está marcado**.**
+   Si se selecciona, permita que los miembros marquen los temas o comentarios de otros como inapropiados. El valor predeterminado no está marcado.
 
 * **Lista de motivos de indicación**
 
-   Si se selecciona, permita que los miembros elijan, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
+   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
 
 * **Motivo de indicación personalizado**
 
-   Si se selecciona, permita que los miembros especifiquen su propio motivo para marcar un tema o comentario como inapropiado. El valor predeterminado no está marcado**.**
+   Si se selecciona, permita que los miembros especifiquen su propio motivo para marcar un tema o comentario como inapropiado. El valor predeterminado no está marcado.
 
 * **Umbral de moderación**
 
@@ -232,7 +239,7 @@ En la ficha Campo **** Etiqueta, especifique las etiquetas que se pueden aplicar
 
 * **Espacios de nombres permitidos**
 
-   Relevante si `Allow Tagging` se comprueba en la ficha **Configuración **ficha. Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de espacio de nombres seleccionadas. La lista de espacios de nombres incluye &quot;Etiquetas estándar&quot; (el espacio de nombres predeterminado) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todos los espacios de nombres.
+   Relevante si `Allow Tagging` se marca en la ficha **Configuración** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -240,9 +247,9 @@ En la ficha Campo **** Etiqueta, especifique las etiquetas que se pueden aplicar
 
 ### Configuración de la barra lateral del blog {#configuring-blog-sidebar}
 
-Al hacer doble clic en el `Blog Sidebar` componente, se abre un cuadro de diálogo de edición.
+Al hacer clic en el `Blog Sidebar` componente con el botón de doble, se abre un cuadro de diálogo de edición.
 
-En la ficha Configuración **de barra lateral de** diario, especifique el formato de fecha para los archivos y el tipo de entradas que se mostrarán en la barra lateral:
+En la ficha Configuración **de la barra lateral de** Historial, especifique el formato de fecha para los archivos y el tipo de entradas que se mostrarán en la barra lateral:
 
 ![blog-component-sidebar](assets/blog-component-sidebar.png)
 
@@ -255,6 +262,7 @@ En la ficha Configuración **de barra lateral de** diario, especifique el format
    * MMMMM : mes completo, como junio
    * MMM: mes corto, como Jun
    * MM: número de mes, como 06
+
    El valor predeterminado es &quot;aaaa MMMMM&quot;, que se mostraría, por ejemplo, &quot;2015 junio&quot;
 
 * **Tipo de vista**
@@ -275,11 +283,11 @@ En la ficha Configuración **de barra lateral de** diario, especifique el format
 
    El número de artículos de blog que se van a mostrar. Un valor de -1 significa que no hay límite. El valor predeterminado es -1.
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
-En el entorno de publicación, la función de blog mostrará el artículo de blog más reciente seguido de artículos de blog más antiguos en orden descendente de creación. Las barras laterales de blog permiten a los visitantes del sitio aplicar filtros para limitar la selección de los artículos de blog mostrados.
+En el entorno de publicación, la función de blog mostrará el artículo de blog más reciente seguido de artículos de blog más antiguos en orden descendente de creación. Las barras laterales del blog permiten a los visitantes del sitio aplicar filtros para limitar la selección de los artículos del blog mostrados.
 
-El artículo del blog va seguido de un vínculo para publicar o ver comentarios.
+El artículo del blog va seguido de un enlace a comentarios de publicaciones o vistas.
 
 Cuando se selecciona un artículo de blog, se muestran el artículo de blog y los comentarios (si están activados).
 
@@ -297,9 +305,9 @@ Los artículos del blog aparecerán en la ficha correspondiente (Publicados, Bor
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
-Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar tareas [de](/help/communities/moderate-ugc.md) moderación (como permite la configuración del componente) en todos los artículos de blog y comentarios publicados en un blog.
+Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar tareas [de](/help/communities/moderate-ugc.md) moderación (según lo permite la configuración del componente) en todos los artículos de blog y comentarios publicados en un blog.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Miembros {#members}
 
@@ -314,13 +322,15 @@ Concretamente, podrán:
 * Eliminar su propio artículo o comentario de blog
 * Marcar los artículos o comentarios del blog de otros
 
-![chlimage_1-233](assets/chlimage_1-233.png) ![chlimage_1-234](assets/chlimage_1-234.png)
+![chlimage_1-153](assets/chlimage_1-153.png)
+
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 #### Anónimo {#anonymous}
 
-Los visitantes del sitio que no hayan iniciado sesión sólo podrán leer artículos y comentarios publicados del blog, traducirlos si son compatibles, pero no podrán agregar un artículo o comentario del blog ni marcar los artículos o comentarios de otros.
+Los visitantes del sitio que no hayan iniciado sesión solo podrán leer los artículos y comentarios publicados del blog, traducirlos si son compatibles, pero no podrán agregar un artículo o comentario del blog ni marcar los artículos o comentarios de otros.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-155](assets/chlimage_1-155.png)
 
 ## Información adicional {#additional-information}
 
