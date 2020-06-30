@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Stock] Administre recursos en [!DNL Adobe Experience Manage
 description: Buscar, recuperar, licenciar y [!DNL Adobe Stock] administrar recursos desde dentro [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 16%
+source-wordcount: '1113'
+ht-degree: 13%
 
 ---
 
@@ -34,8 +34,10 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 1. Click on [!DNL Experience Manager] logo. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**. Haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Solución de nube]** > **[!UICONTROL Adobe Stock]**.
 1. Vuelva a utilizar un certificado existente o seleccione **[!UICONTROL Crear nuevo certificado]**.
 1. Haga clic en **[!UICONTROL Crear certificado]**. Una vez creada, descargue la clave pública. Haga clic en **[!UICONTROL Siguiente]**. 
-1. Indique los valores adecuados en los campos **[!UICONTROL Título]**, **[!UICONTROL Servidor de autorizaciones]**, **[!UICONTROL Clave de API]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL Carga]**. Consulte [Inicio rápido de la autenticación JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) para obtener información detallada sobre cómo recuperar estos valores desde [!DNL Adobe I/O].
-1. Añada la clave pública descargada en su cuenta [!DNL Adobe I/O] de servicio.
+1. Añada la clave pública descargada en su cuenta [!DNL Adobe Developer Console] de servicio. Haga clic en **[!UICONTROL Siguiente]**. Deje abierta la pantalla de configuración [!UICONTROL de la cuenta técnica de] Adobe IMS para proporcionar los valores en breve.
+1. Acceda a [Adobe Developer Console](https://console.adobe.io). Asegúrese de que su cuenta tenga permisos de administrador para la organización para la que se requiere la integración.
+1. Haga clic en **[!UICONTROL Crear nuevo proyecto]** y en **[!UICONTROL Añadir API]**. Seleccione **[!UICONTROL Adobe Stock]** en la lista de las API que [!UICONTROL están disponibles para usted]. Seleccione [!UICONTROL OAUTH 2.0 Web]. Configure y copie los distintos valores presentados.
+1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Consulte inicio [rápido de autenticación](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)JWT para obtener información detallada sobre estos valores.
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -45,12 +47,12 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Haga clic en **[!UICONTROL Crear]** para crear una configuración y asociarla con la configuración de IMS existente. Seleccione `PROD` como parámetro de entorno.
 1. En el campo Ruta **[!UICONTROL de recursos con]** licencia, deje una ubicación tal cual. No cambie la ubicación donde desea almacenar los [!DNL Adobe Stock] recursos.
-1. Complete la creación agregando todas las propiedades necesarias. Click **[!UICONTROL Save &amp; Close]**.
+1. Complete la creación agregando todas las propiedades necesarias. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 1. Añada [!DNL Experience Manager] usuarios o grupos que puedan obtener licencias para los recursos.
 
 >[!NOTE]
 >
->Si hay varias [!DNL Adobe Stock] configuraciones, seleccione la configuración deseada en el panel Preferencias [!UICONTROL de] usuario haciendo clic en el logotipo *Usuario* en la esquina superior derecha de la interfaz de [!DNL Experience Manager] usuario.
+>Si hay varias [!DNL Adobe Stock] configuraciones, seleccione la configuración deseada en el panel Preferencias  de usuario. Haga clic en el logotipo del *usuario* en la esquina superior derecha de la interfaz de [!DNL Experience Manager] usuario.
 
 ## Uso y gestión de [!DNL Adobe Stock] recursos en [!DNL Experience Manager] {#usemanage}
 
