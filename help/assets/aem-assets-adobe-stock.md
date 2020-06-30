@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Administre recursos en [!DNL Adobe Experience Manage
 description: Buscar, recuperar, licenciar y [!DNL Adobe Stock] administrar recursos desde dentro [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
+source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1109'
 ht-degree: 13%
 
 ---
@@ -31,7 +31,7 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. Click on [!DNL Experience Manager] logo. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**. Haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Solución de nube]** > **[!UICONTROL Adobe Stock]**.
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Solución de nube]** > **[!UICONTROL Adobe Stock]**.
 1. Vuelva a utilizar un certificado existente o seleccione **[!UICONTROL Crear nuevo certificado]**.
 1. Haga clic en **[!UICONTROL Crear certificado]**. Una vez creada, descargue la clave pública. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Añada la clave pública descargada en su cuenta [!DNL Adobe Developer Console] de servicio. Haga clic en **[!UICONTROL Siguiente]**. Deje abierta la pantalla de configuración [!UICONTROL de la cuenta técnica de] Adobe IMS para proporcionar los valores en breve.
@@ -52,7 +52,7 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 
 >[!NOTE]
 >
->Si hay varias [!DNL Adobe Stock] configuraciones, seleccione la configuración deseada en el panel Preferencias  de usuario. Haga clic en el logotipo del *usuario* en la esquina superior derecha de la interfaz de [!DNL Experience Manager] usuario.
+>Si hay varias [!DNL Adobe Stock] configuraciones, seleccione la configuración deseada en el panel Preferencias de usuario (**[!UICONTROL AEM]** > Icono **** de usuario > Preferencias **** de usuario > Configuración **** de almacenamiento).
 
 ## Uso y gestión de [!DNL Adobe Stock] recursos en [!DNL Experience Manager] {#usemanage}
 
