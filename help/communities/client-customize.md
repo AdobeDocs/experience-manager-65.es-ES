@@ -10,18 +10,21 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
 
-# Personalización del lado del cliente {#client-side-customization}
+# Personalización del lado del cliente  {#client-side-customization}
 
 | **[Elementos básicos de las funciones de ⇐](essentials.md)** | **[Personalización del lado del servidor](server-customize.md)** |
 |---|---|
 |  | **[Manillares de SCF Ayudantes](handlebars-helpers.md)** |
 
-Para personalizar el aspecto y/o el comportamiento de un componente de AEM Communities en el lado del cliente, existen varios métodos.
+Para personalizar el aspecto y/o el comportamiento de un componente AEM Communities en el lado del cliente, existen varios métodos.
 
 Dos enfoques principales son superponer o ampliar un componente.
 
@@ -106,17 +109,18 @@ Los estilos personalizados ahora anularán los estilos de marco predeterminados 
 >
 >Aunque las `scf-js` clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, puede haber efectos secundarios.
 
+
 ## Ampliación de Javascript {#extending-javascript}
 
-Para ampliar una implementación de componentes Javascript, solo necesita
+Para ampliar una implementación de componentes de Javascript, debe:
 
-1. Cree un componente para su aplicación con un jcr:resourceSuperType definido en el valor de jcr:resourceType del componente extendido, por ejemplo, social/forum/components/hbs/forum
-1. Examine el JavaScript predeterminado del componente SCF para determinar qué métodos deben registrarse mediante SCF.registerComponent()
-1. Copie el JavaScript del componente extendido o comience desde cero
-1. Ampliar el método
-1. Utilice SCF.registerComponent() para registrar todos los métodos con los valores predeterminados o con los objetos y las vistas personalizados.
+1. Cree un componente para su aplicación con un jcr:resourceSuperType definido en el valor de jcr:resourceType del componente extendido, por ejemplo, social/forum/components/hbs/forum.
+1. Examine el Javascript del componente SCF predeterminado para determinar qué métodos deben registrarse mediante SCF.registerComponent().
+1. Copie el Javascript o el inicio del componente extendido desde cero.
+1. Amplíe el método.
+1. Utilice SCF.registerComponent() para registrar todos los métodos con los valores predeterminados o con los objetos y vistas personalizados.
 
-### forum.js: Extensión de muestra del foro - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Extensión de muestra del foro - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -143,7 +147,7 @@ Para ampliar una implementación de componentes Javascript, solo necesita
 
 ## Etiquetas de script {#script-tags}
 
-Las etiquetas de script son una parte inherente del entorno de cliente. Son el pegamento que ayuda a enlazar el marcado generado en el servidor con los modelos y las vistas del lado del cliente.
+Las etiquetas de script son una parte inherente del entorno de cliente. Son el pegamento que ayuda a enlazar el marcado generado en el servidor con los modelos y vistas del lado del cliente.
 
 Las etiquetas de script de los scripts SCF no deben eliminarse al superponer o anular componentes. Las etiquetas de script SCF creadas automáticamente para insertar JSON en el HTML se identifican con el atributo `data-scf-json=true`.
 
@@ -169,9 +173,9 @@ Estas versiones se encuentran en:
 Por ejemplo:
 
 * Nodo de carpeta de cliente: `/etc/clientlibs/social/hbs/forum`
-* Propiedad Categories: `cq.social.hbs.forum`
+* Categorías, propiedad: `cq.social.hbs.forum`
 
-La guía [Componentes](components-guide.md) comunitarios enumera los clientlibs completos requeridos para cada componente SCF.
+La guía [Componentes de](components-guide.md) comunidad lista todos los clientes requeridos para cada componente SCF.
 
 [Clientlibs for Communities Components](clientlibs.md) describe cómo agregar clientlibs a una página.
 
@@ -188,9 +192,9 @@ Estas versiones se encuentran en la carpeta de bibliotecas de SCF:
 Por ejemplo:
 
 * Nodo de carpeta de cliente: `/libs/social/forum/hbs/forum/clientlibs`
-* Propiedad Categories: `cq.social.author.hbs.forum`
+* Categorías, propiedad: `cq.social.author.hbs.forum`
 
-Nota: aunque los clientlibs de autor nunca incorporan otras bibliotecas, sí enumeran sus dependencias. Cuando se incrustan en otras bibliotecas, las dependencias no se extraen automáticamente y también se deben incrustar.
+Nota: aunque los clientlibs de autor nunca incorporan otras bibliotecas, sí que lista sus dependencias. Cuando se incrustan en otras bibliotecas, las dependencias no se extraen automáticamente y también se deben incrustar.
 
 Los clientlibs de creación requeridos pueden identificarse insertando &quot;author&quot; en los clientlibs enumerados para cada componente SCF en la guía [Componentes de](components-guide.md)comunidad.
 
