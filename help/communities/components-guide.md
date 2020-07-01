@@ -10,14 +10,17 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 2%
 
 ---
 
 
 # Guía de componentes de comunidad  {#community-components-guide}
 
-La guía de componentes comunitarios es una herramienta de desarrollo interactiva para el marco de componentes [sociales (SCF)](scf.md). Proporciona una lista de los componentes de comunidades AEM disponibles o de las funciones más complejas creadas con varios componentes.
+La guía de componentes comunitarios es una herramienta de desarrollo interactiva para el marco de componentes [sociales (SCF)](scf.md). Proporciona una lista de los componentes de AEM Communities disponibles o de las características más complejas creadas con varios componentes.
 
 Junto con la información básica de cada componente, la guía permite experimentar con el funcionamiento de los componentes y funciones de SCF y de cómo se pueden configurar o personalizar.
 
@@ -33,10 +36,10 @@ Para acceder al sitio de componentes de comunidad, vaya a
 
 Las interacciones con los componentes de Comunidades variarán según:
 
-* El servidor (autor o publicación)
-* Indica si el visitante del sitio ha iniciado sesión o no
-* Si ha iniciado sesión, los privilegios asignados al miembro
-* Indica si el SRP predeterminado, [JSRP](jsrp.md), está en uso o no
+* El servidor (autor o publicación).
+* Indica si el visitante del sitio ha iniciado sesión o no.
+* Si ha iniciado sesión, los privilegios asignados al miembro.
+* Indica si se está utilizando o no el SRP predeterminado, [JSRP](jsrp.md).
 
 Al crear, para entrar en el modo de edición, inserte `editor.html` o `cf#` como el primer segmento de ruta después del nombre del servidor:
 
@@ -52,17 +55,18 @@ Al crear, para entrar en el modo de edición, inserte `editor.html` o `cf#` como
 >
 >En el modo de edición, los vínculos de una página no están activos.
 >
->Para desplazarse a una página de componentes, seleccione primero el modo de vista previa para activar los vínculos.
+>Para desplazarse a una página de componentes, seleccione primero el modo de Previsualización para activar los vínculos.
 >
 >Con la página de componentes mostrada en el navegador, vuelva al modo de edición para abrir el cuadro de diálogo de edición del componente.
 >
 >Para obtener información general sobre la creación, consulte la guía [rápida de creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md)básica.
+>Si no está familiarizado con AEM, vista la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md)básica.
+
 
 ### Página principal {#home-page}
 
-La guía proporciona una lista de los componentes de SCF disponibles para la vista previa y la creación de prototipos en el lado izquierdo de la página.
+La guía proporciona una lista de los componentes SCF disponibles para la previsualización y creación de prototipos en el lado izquierdo de la página.
 
 Guía de componentes tal como se ve en una instancia de autor en el modo de edición:
 
@@ -77,7 +81,7 @@ Seleccione un componente de la lista a lo largo del lado izquierdo de la página
 Se muestra el cuerpo principal de la guía:
 
 1. Título: Nombre del componente seleccionado
-1. [Bibliotecas](#client-side-libraries)del lado del cliente: Una lista de una o varias categorías requeridas
+1. [Bibliotecas](#client-side-libraries)del lado del cliente: lista de una o varias categorías requeridas
 1. [Incluible](scf.md#add-or-include-a-communities-component): Si el componente se puede incluir dinámicamente, el estado se puede alternar en el modo de edición de autor:
 
    * Si se agrega, el texto mostrado es: &quot;Este componente se incluye mediante su nodo par.&quot;
@@ -94,7 +98,7 @@ Se muestra el cuerpo principal de la guía:
 
 Al utilizar la guía en una instancia de autor, es posible configurar un componente abriendo su cuadro de diálogo. La información para desarrolladores se proporciona en la sección [Componentes y elementos esenciales](essentials.md) de la documentación, mientras que la configuración del cuadro de diálogo se describe en la sección Componentes [de](author-communities.md) comunidades para autores.
 
-Para la guía Componentes de comunidad, algunos ajustes del cuadro de diálogo de componentes se superponen con el estado de alternancia [Incluible](scf.md#add-or-include-a-communities-component) . Para alternar entre el uso del recurso existente o un recurso incluido dinámicamente, en el modo de edición seleccione el componente y el texto inclusible y haga doble clic para abrir el cuadro de diálogo de edición:
+Para la guía Componentes de comunidad, algunos ajustes del cuadro de diálogo de componentes se superponen con el estado de alternancia [Incluible](scf.md#add-or-include-a-communities-component) . Para alternar entre el uso del recurso existente o un recurso incluido dinámicamente, en el modo de edición seleccione el componente y el texto inclusible y haga clic con el doble para abrir el cuadro de diálogo de edición:
 
 ![chlimage_1-406](assets/chlimage_1-406.png)
 
@@ -107,14 +111,16 @@ En la ficha **Plantillas** :
    Si no se selecciona, la Guía de componentes utilizará el recurso existente en el repositorio (un nodo jcr que es un nodo secundario de un nodo par).
 
    * el texto mostrado es: &quot;Este componente se incluye mediante su nodo par.&quot;
+
    Si se selecciona, la Guía de componentes utilizará sling para incluir dinámicamente un componente del resourceType del nodo secundario (recurso no existente).
 
    * el texto mostrado es: &quot;Este componente se incluye dinámicamente.&quot;
+
    El valor predeterminado no está marcado.
 
 ### Publicar interacciones {#publish-interactions}
 
-Al utilizar la guía en una instancia de publicación, es posible experimentar los componentes y las funciones como visitante del sitio (no ha iniciado sesión) y como miembros con varios privilegios cuando inician sesión.
+Cuando se utiliza la guía en una instancia de publicación, es posible experimentar los componentes y las funciones como un visitante del sitio (no ha iniciado sesión) y como miembros con varios privilegios al iniciar sesión.
 
 >[!NOTE]
 >
@@ -154,11 +160,11 @@ El uso del componente comentarios como ejemplo, en la instancia de creación o p
 
    Por ejemplo, `/content/community-components/en/comments/jcr:content`
 
-1. Agregar una propiedad
+1. Añadir una propiedad
 
    * **Nombre** `scg:showIde`
    * **Tipo** `String`
-   * **Valor**`true`
+   * **Valor** `true`
 
 1. Seleccione **[!UICONTROL Guardar todo]**
 1. Volver a cargar la página Comentarios en la guía
