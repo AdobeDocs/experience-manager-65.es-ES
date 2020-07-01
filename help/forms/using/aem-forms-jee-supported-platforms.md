@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5e932c127c74d13f6f46003b20a3ba5f68606c29
+source-git-commit: d1584bc5034e7d4a549a5f824a89e8cf0c06ac3c
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3217'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,7 @@ Este documento lista las plataformas de cliente y servidor admitidas para AEM Fo
 >
 >* Para obtener una lista completa de las excepciones a las plataformas de servidor admitidas, consulte [Excepciones a las plataformas](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p)de servidor admitidas.
 >* Los AEM Forms de JEE solo admiten versiones en inglés, francés, alemán y japonés de los sistemas operativos y las aplicaciones compatibles.
+
 >
 
 
@@ -141,6 +142,11 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   </tr>
   <tr>
    <td><p>Oracle Database 12c Versión 1</p> </td>
+   <td><p>Microkernel de repositorio</p> </td>
+   <td><p>Compatible</p> </td>
+  </tr>
+   <tr>
+   <td><p>Oracle Database 12c Versión 2 (12.2.0.1.0)</p> </td>
    <td><p>Microkernel de repositorio</p> </td>
    <td><p>Compatible</p> </td>
   </tr>
@@ -447,9 +453,11 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 >* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux.
 >* Las funciones OCR PDF, Optimizar PDF y Exportar PDF solo son compatibles con Windows.
 >* Una versión de Acrobat se incluye con AEM Forms para activar la funcionalidad de generador de PDF. Sólo se debe acceder a la versión compilada mediante programación con AEM Forms, durante el período de vigencia de la licencia de AEM Forms, para su uso con el generador de PDF para AEM Forms. Para obtener más información, consulte la descripción del producto AEM Forms según su implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o Servicios [administrados](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+
    >
    >
 * El servicio Generator de PDF no admite Microsoft Windows 10.
+
 >
 
 
@@ -496,7 +504,7 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
  </tbody>
 </table>
 
-Para obtener información adicional, consulte:
+Para obtener más información, consulte:
 
 * [Requisitos del sistema para AEM Forms de un solo servidor en implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
 * [Requisitos del sistema para AEM Forms agrupados en implementación JEE
@@ -629,6 +637,7 @@ Para obtener información adicional, consulte:
 >* Safari no admite la Consola de administración.
 >* La administración de correspondencia no admite formularios de Windows® Internet Explorer 9.0 para AEM 6.1.
 >* El portal de formularios admite el software de lector de pantalla JAWS 14.0 en Internet Explorer 11 para accesibilidad.
+
 >
 
 
@@ -663,6 +672,7 @@ Para obtener información adicional, consulte:
 >[!NOTE]
 >
 >* Forms Portal solo es compatible con Safari en iPad.
+
 >
 
 
