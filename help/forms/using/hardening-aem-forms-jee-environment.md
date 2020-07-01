@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
+source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7665'
 ht-degree: 0%
 
 ---
@@ -458,6 +458,16 @@ En esta tabla se describen las técnicas de auditoría y registro que puede util
  </tbody> 
 </table>
 
+### Permitir que un usuario que no es administrador ejecute el generador de PDF
+
+Puede habilitar a un usuario que no sea administrador para que utilice el generador de PDF. Normalmente, solo los usuarios con privilegios de administrador pueden utilizar el generador de PDF. Realice los siguientes pasos para permitir que un usuario que no es administrador ejecute el generador de PDF:
+
+1. Cree un nombre de variable de entorno PDFG_NON_ADMIN_ENABLED.
+
+1. Establezca el valor de la variable en VERDADERO.
+
+1. Reinicie la instancia de formularios AEM.
+
 ## Configuración de AEM Forms en JEE para el acceso más allá de la empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
 Después de instalar AEM Forms correctamente en JEE, es importante mantener periódicamente la seguridad de su entorno. En esta sección se describen las tareas recomendadas para mantener la seguridad de los AEM Forms en el servidor de producción JEE.
@@ -695,7 +705,7 @@ El proceso de filtrado de Remitentes del reenvío se puede describir de la sigui
 
 AEM Forms en JEE proporciona un filtro de Remitente del reenvío para especificar el Remitente del reenvío al que se permite el acceso a los recursos del servidor. De forma predeterminada, el filtro de Remitente del reenvío no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* esté establecido en true. Si el número de puerto de una entrada de Remitente del reenvío permitida está establecido en 0, los AEM Forms en JEE permitirán todas las solicitudes con Remitente del reenvío desde ese host, independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El filtrado de Remitentes del reenvío se desactiva si se eliminan todas las entradas de la lista Remitente del reenvío permitido.
 
-Al instalar por primera vez Documento Services, la lista Remitente del reenvío permitido se actualiza con la dirección del servidor en el que está instalado Documento Services. Las entradas para el servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitada, la dirección loopback y una entrada localhost. El sistema operativo Host devuelve los nombres agregados a la lista Remitente del reenvío permitido. Por ejemplo, un servidor con una dirección IP de 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para cualquier nombre no apto devuelto por el sistema operativo del host (nombres que no tienen dirección IPv4, dirección IPv6 o nombre de dominio completo), no se actualiza la lista de permitidas. Modifique la lista Remitente del reenvío permitido para que se adapte a su entorno comercial. No implemente el servidor de formularios en el entorno de producción con la lista de Remitente del reenvío permitida predeterminada. Después de modificar cualquiera de los Remitentes del reenvío permitidos, las excepciones de Remitente del reenvío o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
+Al instalar por primera vez Documento Services, la lista Remitente del reenvío permitido se actualiza con la dirección del servidor en el que está instalado Documento Services. Las entradas para el servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitada, la dirección loopback y una entrada localhost. El sistema operativo Host devuelve los nombres agregados a la lista Remitente del reenvío permitido. Por ejemplo, un servidor con una dirección IP de 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para cualquier nombre no apto devuelto por el sistema operativo del host (nombres que no tienen dirección IPv4, dirección IPv6 o nombre de dominio completo) no se actualiza la lista de permitidos. Modifique la lista Remitente del reenvío permitido para que se adapte a su entorno comercial. No implemente el servidor de formularios en el entorno de producción con la lista de Remitente del reenvío permitida predeterminada. Después de modificar cualquiera de los Remitentes del reenvío permitidos, las excepciones de Remitente del reenvío o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
 
 **Administración de la lista de Remitentes del reenvío permitidos**
 
