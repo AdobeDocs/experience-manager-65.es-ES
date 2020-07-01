@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 6%
 
 ---
 
@@ -20,20 +23,21 @@ source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ## Introducción {#introduction}
 
-La función de comentarios se utiliza para permitir que los visitantes (miembros) del sitio que inician sesión compartan sus opiniones y conocimientos sobre el contenido del sitio. Esta función suele estar presente en otras funciones, pero puede agregarse a cualquier sitio web.
+La función de comentarios se utiliza para permitir que los visitantes del sitio (miembros) que inicien sesión compartan sus opiniones y conocimientos sobre el contenido del sitio. Esta función suele estar presente en otras funciones, pero puede agregarse a cualquier sitio web.
 
 El documento describe:
 
-* Adición `Comments`a una página.
-* Configuración del `Comments`componente.
+* Añadiendo `Comments` a una página.
+* Configuración del `Comments` componente.
 
 >[!NOTE]
 >
 >No se admite la publicación anónima de un comentario. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar.
 
-### Adición de comentarios a una página {#adding-comments-to-a-page}
 
-Para agregar un `Comments`componente a una página en modo de autor, utilice el navegador de componentes para localizar
+### Añadir comentarios a una página {#adding-comments-to-a-page}
+
+Para agregar un `Comments` componente a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Comments`
 
@@ -41,19 +45,22 @@ y arrástrelo a su lugar en una página, como una posición relativa a la funci�
 
 Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/essentials-comments.md#essentials-for-client-side) necesarias, es así como aparece el `Comments`componente.
+Cuando se incluyen las bibliotecas [](/help/communities/essentials-comments.md#essentials-for-client-side) requeridas del lado del cliente, así es como aparece el `Comments` componente.
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Solo puede existir un `Comments`componente en una página. Tenga en cuenta que varias funciones de Comunidades ya incluyen comentarios, como un blog, calendario, foro, control de calidad y reseñas.
+>Solo puede existir un `Comments` componente en una página. Tenga en cuenta que varias funciones de Comunidades ya incluyen comentarios, como un blog, calendario, foro, control de calidad y reseñas.
+
 
 ### Configuración de comentarios {#configuring-comments}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Comments` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![configuración de](assets/configure.png) comentarios de icono ![](assets/commentssettings.png)
+![icono de configuración](assets/configure.png)
+
+![comentariosAjustes](assets/commentssettings.png)
 
 #### Ficha Comentarios {#comments-tab}
 
@@ -81,7 +88,7 @@ En la ficha **Comentarios** , especifique cómo los visitantes introducen los co
 
 * **Tipos de archivo permitidos**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. Una lista separada por comas de extensiones de nombre de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es relevante si está activada la opción Permitir cargas de archivos. lista separada por comas de extensiones de nombre de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Editor de texto enriquecido**
 
@@ -125,7 +132,7 @@ En la ficha Moderación **** del usuario, especifique cómo se administran los c
 
 * **Lista de motivos de indicación**
 
-   Si se selecciona, permita que los miembros elijan, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está seleccionado.
+   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está seleccionado.
 
 * **Motivo de indicación personalizado**
 
@@ -137,7 +144,7 @@ En la ficha Moderación **** del usuario, especifique cómo se administran los c
 
 * **Límite de indicación**
 
-   Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo en la vista pública. Este número debe ser bueno o igual al umbral **de moderación**. El valor predeterminado es 5.
+   Especifique el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al umbral **de moderación**. El valor predeterminado es 5.
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
@@ -155,21 +162,21 @@ En la ficha **Ordenar configuración** , especifique cómo se ordenan los coment
 
 Al cambiar el tipo de recurso de comentarios, el sistema de comentarios ya no genera una instancia de un comentario usando el valor predeterminado, sino una instancia personalizada (ampliada) por los desarrolladores.
 
-Una vez conocidos los tipos de recursos personalizados, introduzca el modo [de](/help/sites-authoring/default-components-designmode.md) diseño y haga doble clic en el componente `Comments` colocado para abrir un cuadro de diálogo con una ficha adicional.
+Una vez conocidos los tipos de recursos personalizados, ingrese en Modo [de](/help/sites-authoring/default-components-designmode.md) diseño y haga clic en el doble del componente `Comments` colocado para abrir un cuadro de diálogo con una ficha adicional.
 
-En la ficha Tipos **de** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting`componentes:
+En la ficha Tipos **de** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting` componentes:
 
-![chlimage_1-144](assets/chlimage_1-144.png)
+![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **Tipo de medio de comentario**
 
-   Vaya al resourceType de un `comment`componente extendido (un solo comentario) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
+   Vaya al resourceType de un `comment` componente extendido (un solo comentario) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
 
    Este recurso identifica el resourceType del UGC creado cuando un visitante publica un comentario.
 
 * **Tipo de medio de votación**
 
-   Vaya al resourceType de un `voting`componente extendido en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
+   Vaya al resourceType de un `voting` componente extendido en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
 
    Este recurso identifica el tipo de recurso del UGC creado cuando un visitante publica una votación.
 
@@ -177,7 +184,7 @@ En la ficha Tipos **de** recursos, especifique el resourceType personalizado par
 
    Vaya al resourceType de un `comments`componente extendido (sistema de comentarios) en /apps. Deje en blanco a menos que la plantilla de página incluya [](/help/communities/scf.md#add-or-include-a-communities-component) dinámicamente el sistema de comentarios en la secuencia de comandos subyacente en lugar de agregarlo a la página como recurso (nodo de comentarios). Obtenga más información leyendo sobre el asistente [{{include}}](/help/communities/handlebars-helpers.md#include).
 
-### Experiencia del visitante del sitio {#site-visitor-experience}
+### Experiencia de Visitante del sitio {#site-visitor-experience}
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
@@ -185,7 +192,7 @@ Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o admin
 
 #### Miembros {#members}
 
-Cuando el visitante del sitio ha iniciado sesión, según la configuración, es posible que
+Cuando se inicia sesión en el visitante del sitio, según la configuración, es posible que
 
 * Publicar un nuevo comentario
 * Editar su propio comentario
