@@ -11,20 +11,35 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 4%
 
 ---
 
 
 # Función de mensajería {#messaging-feature}
 
-Además de las interacciones públicamente visibles que se producen en los foros y comentarios, la función de mensajería de Comunidades AEM permite a los miembros de la comunidad interactuar entre sí de forma más privada.
+Además de las interacciones públicamente visibles que se producen en los foros y comentarios, la función de mensajería de los AEM Communities permite a los miembros de la comunidad interactuar entre sí de forma más privada.
 
 Esta función se puede incluir cuando se crea un sitio [de](/help/communities/overview.md#communitiessites) comunidad.
 
 La función de mensajería permite:
 
-**A** - enviar un mensaje a uno o más miembros **B** de la comunidad - enviar mensajes directos [masivamente a los grupos](/help/communities/messaging.md#group-messaging)miembros de la comunidad **C** - enviar un mensaje con anexos **D** - enviar un mensaje ************ E- enviar una respuesta a un mensaje- F- eliminar un mensajeG- restaurar un mensaje eliminado
+**A** : enviar un mensaje a uno o varios miembros de la comunidad
+
+**B** : enviar mensajes directos en [masa a los grupos miembros de la comunidad](/help/communities/messaging.md#group-messaging)
+
+**C** : enviar un mensaje con datos adjuntos
+
+**D** : reenviar un mensaje
+
+**E** : responder a un mensaje
+
+**F** : eliminar un mensaje
+
+**G** : restaurar un mensaje eliminado
 
 ![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
 
@@ -37,23 +52,24 @@ Para habilitar y modificar la función de mensajería, consulte:
 >
 >No se pueden agregar `Compose Message, Message, or Message List` componentes (que se encuentran en el grupo de `Communities`componentes) a una página en modo de edición de autor.
 
+
 ## Configuración de componentes de mensajería {#configure-messaging-components}
 
 Cuando se habilita la mensajería para un sitio de comunidad, se configura sin necesidad de ninguna configuración adicional. La información se proporciona si es necesario cambiar la configuración predeterminada.
 
-### Configurar lista de mensajes (cuadro de mensaje) {#configure-message-list-message-box}
+### Configuración de la Lista de mensajes (cuadro de mensaje) {#configure-message-list-message-box}
 
 Para modificar la configuración de la lista de mensajes para las páginas **Bandeja de entrada**, Elementos **** enviados y **Papelera** de la función de mensajería, abra el sitio en modo [de edición de](/help/communities/sites-console.md#authoring-site-content)autor.
 
-1. En `Preview`modo, seleccione el vínculo **Mensajes** para abrir la página de mensajes principal. A continuación, seleccione **Bandeja de entrada**, Elementos **enviados** o **Papelera** para configurar el componente para esa lista de mensajes.
+1. En `Preview` modo, seleccione el vínculo **Mensajes** para abrir la página de mensajes principal. A continuación, seleccione **Bandeja de entrada**, Elementos **enviados** o **Papelera** para configurar el componente para esa lista de mensajes.
 
 1. En `Edit` modo, seleccione el componente en la página.
-1. Para acceder al cuadro de diálogo de configuración, seleccione el `link`icono para cancelar la herencia.
+1. Para acceder al cuadro de diálogo de configuración, seleccione el icono para cancelar la herencia `link` .
 Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
 
 1. Una vez completada la configuración, es necesario restaurar la herencia seleccionando el `broken link` icono .
 
-![configure-message-list](assets/configure-message-list.png)
+![configure-message-lista](assets/configure-message-list.png)
 
 #### Basic tab {#basic-tab}
 
@@ -61,31 +77,31 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Selector de servicio**
 
-   (*Necesario*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** del servicio de operaciones de mensajería de comunidades de [AEM](/help/communities/messaging.md#messaging-operations-service).
+   (*Obligatorio*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** del servicio de operaciones de mensajería de [AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 * **Componer página**
 
-   (*Requerido*) La página que se abrirá cuando un miembro haga clic en el **`Reply`** botón. La página de destino debe contener el formulario **Redactar mensaje** .
+   (*Requerido*) La página que se abrirá cuando un miembro haga clic en el **`Reply`** botón. La página destinatario debe contener el formulario **Redactar mensaje** .
 
 * **Responder/Ver como medio**
 
-   Si se selecciona, la URL de respuesta y la URL de vista harán referencia a un recurso; de lo contrario, los datos se pasarán como parámetros de consulta en la URL.
+   Si se selecciona, la URL de respuesta y la URL de Vista harán referencia a un recurso; de lo contrario, los datos se pasarán como parámetros de consulta en la URL.
 
-* **Formulario de visualización de perfil**
+* **Formulario para mostrar Perfil**
 
-   Formulario de perfil que se va a utilizar para mostrar el perfil de los remitentes.
+   Formulario de perfil que se va a utilizar para mostrar el perfil de remitentes.
 
 * **Carpeta Papelera**
 
-   Si se selecciona, este componente Lista de mensajes muestra solo los mensajes marcados como eliminados (papelera).
+   Si se selecciona, este componente de Lista de mensajes solo muestra los mensajes marcados como eliminados (papelera).
 
 * **Rutas de carpeta**
 
-   (*Necesario*) Hacer referencia a los valores establecidos para **inbox.path.name** y **sentitems.path.name** en el servicio [de operaciones de mensajería de las comunidades de](/help/communities/messaging.md#messaging-operations-service)AEM. Al configurar para un `Inbox`, agregue una entrada usando el valor de **inbox.path.name**. Al configurar para un `Outbox`, agregue una entrada usando el valor de **sentitómesis.path.name**. Al configurar para `Trash`, agregue dos entradas con ambos valores.
+   (*Obligatorio*) Al hacer referencia a los valores establecidos para **inbox.path.name** y **sentitems.path.name** en el servicio [de operaciones de mensajería de](/help/communities/messaging.md#messaging-operations-service)AEM Communities. Al configurar para un `Inbox`, agregue una entrada usando el valor de **inbox.path.name**. Al configurar para un `Outbox`, agregue una entrada usando el valor de **sentitómesis.path.name**. Al configurar para `Trash`, agregue dos entradas con ambos valores.
 
 #### Ficha Mostrar {#display-tab}
 
-![display-tab-message-list](assets/display-tab-message-list.png)
+![display-tab-message-lista](assets/display-tab-message-list.png)
 
 * **Marcar botón de lectura**
 
@@ -97,11 +113,11 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Botón Eliminar**
 
-   Si se selecciona, muestra un `Delete`botón que permite marcar un mensaje como leído. Se duplicará la funcionalidad de eliminación si también **`Message Options`** está marcada.
+   Si se selecciona, muestra un `Delete` botón que permite marcar un mensaje como leído. duplicado la funcionalidad de eliminación si también **`Message Options`** está marcada.
 
 * **Opciones de mensaje**
 
-   Si se selecciona, muestra **`Reply`**, **`Reply All`****`Forward`** y **`Delete`** botones que permiten que un mensaje se vuelva a enviar o se elimine. Se duplicará la funcionalidad de eliminación si también **`Delete Button`** está marcada.
+   Si se selecciona, muestra **`Reply`**, **`Reply All`****`Forward`** y **`Delete`** botones que permiten que un mensaje se vuelva a enviar o se elimine. duplicado la funcionalidad de eliminación si también **`Delete Button`** está marcada.
 
 * **Mensajes por página**
 
@@ -113,7 +129,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Mostrar usuario**
 
-   Elija **`Sender`** o **`Recipients`** para determinar si desea mostrar el remitente o los destinatarios.
+   Elija **`Sender`** o **`Recipients`** para determinar si desea mostrar el remitente o los Destinatarios.
 
 ### Configurar mensaje de composición {#configure-compose-message}
 
@@ -151,7 +167,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Selector de servicio**
 
-   (*Necesario*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** del servicio de operaciones de mensajería de comunidades de [AEM](/help/communities/messaging.md#messaging-operations-service).
+   (*Obligatorio*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** del servicio de operaciones de mensajería de [AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 #### Ficha Mostrar {#display-tab-1}
 
