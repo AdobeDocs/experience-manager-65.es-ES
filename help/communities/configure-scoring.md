@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
    1. Seleccionar `DEBUG` para nivel **de registro**
 
-   1. Escriba un nombre para el archivo **de registro**, por ejemplo
+   1. Escriba un nombre para el archivo **** de registro, por ejemplo
 
       * logs/scoring-debug.log
    1. Introduzca dos entradas **Logger** (clase) (mediante `+` icono)
@@ -265,7 +265,7 @@ Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene
 
 * `/content/usergenerated/asi/jcr`
 
-Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distintivos, como
+Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distintivos, como:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
