@@ -10,28 +10,32 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 6%
 
 ---
 
 
-# Comunidades en desarrollo {#developing-communities}
+# Comunidades en desarrollo  {#developing-communities}
 
 ## Información general {#overview}
 
-AEM Communities simplifica la creación y personalización de funciones de la comunidad como foros, grupos de usuarios, blogs, preguntas y respuestas, calendarios, comentarios, revisiones, votaciones, clasificaciones y asignaciones. Estas funciones hacen que el contenido generado por el usuario (UGC) se introduzca en el entorno de publicación.
+Los AEM Communities simplifican la creación y personalización de funciones de la comunidad como foros, grupos de usuarios, blogs, preguntas y respuestas, calendarios, comentarios, críticas, votaciones, clasificaciones y asignaciones. Estas funciones hacen que el contenido generado por el usuario (UGC) se introduzca en el entorno de publicación.
 
 La base de un sitio [](overview.md#communitiessites) comunitario es el marco [de componentes](scf.md) sociales. La creación de un sitio de comunidad comienza con la selección de una plantilla [de sitio de](sites-console.md) comunidad compuesta por funciones [de](functions.md)comunidad.
 
 Para obtener información general y tutoriales de introducción, visite:
 
-* [Información general sobre comunidades AEM](overview.md)
+* [Información general de AEM Communities](overview.md)
 * [Introducción a Comunidades de AEM](getting-started.md)
-* [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md)
+* [Introducción a AEM Communities para la habilitación](getting-started-enablement.md)
 
 >[!NOTE]
->
+> 
 >Se recomienda estar al día con las [últimas versiones](deploy-communities.md#latest-releases).
+
 
 ## Implementaciones recomendadas {#recommended-deployments}
 
@@ -40,17 +44,17 @@ Para obtener información general y tutoriales de introducción, visite:
 
 ## Marco de componentes sociales {#social-component-framework}
 
-* [Marco](scf.md)de componentes sociales: descripción general del marco y las API
-* [Ayudantes](handlebars-helpers.md)de manillares SCF: ayudantes predeterminados y cómo escribir ayudantes personalizados
-* [Personalización](client-customize.md)del lado del cliente: personalización del código que se ejecuta en el navegador
-* [Personalización](server-customize.md)del lado del servidor: personalizar código que se ejecuta en el servidor
-* [Proveedor de recursos de almacenamiento (SRP)](srp.md): descripción general del almacenamiento de contenido de la comunidad
-* [Directrices](code-guide.md)de codificación: guías, sugerencias y trucos
-* [Guía](components-guide.md)de componentes de comunidad: herramienta de desarrollo interactivo
+* [Marco](scf.md)de componentes sociales: descripción general del marco y las API.
+* [Ayudantes](handlebars-helpers.md)de manillares SCF: ayudantes predeterminados y cómo escribir asistentes personalizados.
+* [Personalización](client-customize.md)del lado del cliente: personalizar el código que se ejecuta en el navegador.
+* [Personalización](server-customize.md)del lado del servidor: personalizar el código que se ejecuta en el servidor.
+* [Proveedor de recursos de Almacenamiento (SRP)](srp.md): descripción general del almacenamiento de contenido de la comunidad.
+* [Directrices](code-guide.md)de codificación: guías, consejos y trucos.
+* [Guía](components-guide.md)de componentes de comunidad: herramienta de desarrollo interactivo.
 
 ## Componentes, funciones y características esenciales {#component-function-and-feature-essentials}
 
-Los componentes, las funciones y las funciones de AEM Communities constituyen los elementos básicos de los sitios [de la](sites-console.md)comunidad.
+Los componentes, funciones y características del AEM Communities proporcionan los componentes básicos para los sitios [de](sites-console.md)comunidad.
 
 * [Componentes, funciones y características esenciales](essentials.md)
 * [Componentes Clientlibs for Communities](clientlibs.md)
@@ -65,7 +69,7 @@ Los componentes, las funciones y las funciones de AEM Communities constituyen lo
 
 ## Grupos de la comunidad {#community-groups}
 
-[Grupos](overview.md#communitygroups) comunitarios es el concepto de permitir que los miembros de la comunidad formen subcomunidades dentro del sitio de la comunidad. La creación de un grupo de comunidad puede producirse en el entorno de publicación o creación.
+[Grupos](overview.md#communitygroups) comunitarios es el concepto de permitir que los miembros de la comunidad formen subcomunidades dentro del sitio de la comunidad. Puede crearse un grupo de comunidad en el entorno de publicación o creación.
 
 * [Elementos esenciales del grupo de la comunidad](essentials-groups.md)
 * [Función Grupos](functions.md#groups-function)
