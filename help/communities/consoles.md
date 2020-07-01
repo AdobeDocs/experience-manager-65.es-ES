@@ -10,30 +10,34 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 1%
 
 ---
 
 
 # Consolas de comunidades {#communities-consoles}
 
-Las consolas Comunidades de AEM, disponibles en el entorno de creación desde el panel de navegación global, permiten acceder a tareas administrativas como:
+Las consolas AEM Communities, disponibles en el entorno de creación del panel de navegación global, proporcionan acceso a tareas administrativas como:
 
 * [Creación de un sitio de comunidad](sites-console.md)
-* Adición de [grupos](groups.md) anidados dentro del sitio
+* Añadir [grupos](groups.md) anidados dentro del sitio
 * Administración de plantillas de sitio [de comunidad](sites.md)
 * Administración de miembros [de la comunidad](members.md)
 * [Moderación](moderate-ugc.md) del contenido generado por el usuario (UGC)
 * Crear distintivos [personalizados](badges.md)
 * Configuración del almacenamiento [predeterminado para UGC](srp-config.md)
 
-Cuando el almacenamiento [](working-with-srp.md) UGC está configurado para ser un almacén común compartido por los entornos de creación y publicación, la consola [de](moderation.md)moderación, disponible desde los entornos de creación y publicación, funciona en una instancia solitaria de UGC.
+Cuando el almacenamiento [](working-with-srp.md) UGC está configurado para ser una tienda común compartida por los entornos de creación y publicación, la consola [de](moderation.md)moderación, disponible desde los entornos de creación y publicación, funciona en una instancia solitaria de UGC.
 
-En el entorno de creación, tras iniciar sesión con privilegios de administrador, las `Communities` consolas están disponibles en las consolas de navegación y herramientas.
+En el entorno de creación, después de iniciar sesión con privilegios de administrador, las `Communities` consolas están disponibles en las consolas de navegación y herramientas.
 
 >[!NOTE]
 >
 >En el entorno de publicación, un sitio [de](sites-console.md) comunidad mostrará un elemento de `Administration` menú cuando el miembro que haya iniciado sesión tenga los privilegios adecuados.
+
 
 ## Panel de navegación global {#global-navigation-panel}
 
@@ -50,13 +54,13 @@ Para acceder a las distintas consolas Comunidades, en la navegación global sele
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
-* [Sitios](sites-console.md)
+* [Sites](sites-console.md)
 
-   La consola Sitios es accesible en el entorno de creación para crear y administrar sitios de comunidad y sus [grupos](groups.md).
+   La consola Sitios está disponible en el entorno de creación con el fin de crear y administrar sitios de comunidad y sus [grupos](groups.md).
 
 * [Moderación](moderation.md)
 
-   La consola Moderación es para la moderación masiva de UGC y en el entorno de creación. En el entorno de publicación, se puede acceder a una consola de moderación masiva similar a los miembros de la comunidad a los que se ha asignado la función de moderador [de la](users.md#publishenvironmentusersandgroups) comunidad para uno o varios sitios de la comunidad.
+   La consola Moderación es para la moderación masiva de UGC y en el entorno de creación. En el entorno de publicación se puede acceder a una consola de moderación masiva similar para los miembros de la comunidad a los que se ha asignado la función de moderador [de la](users.md#publishenvironmentusersandgroups) comunidad para uno o varios sitios de la comunidad.
 
 * [Miembros, grupos](members.md)
 
@@ -72,4 +76,4 @@ Para acceder a las distintas consolas Comunidades, en la navegación global sele
 
 ## Consola Herramientas {#tools-console}
 
-Para acceder a las Herramientas [de](tools.md) comunidades (anteriormente, la consola de administración) desde la navegación global: **[!UICONTROL Herramientas > Comunidades]**
+Para acceder a las Herramientas [de](tools.md) comunidades (anteriormente, la consola de administración) desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]**
