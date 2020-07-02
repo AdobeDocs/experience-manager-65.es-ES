@@ -9,16 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4ee3b99a3f0a5d37441eee76c3ec747afcf2e32e
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 0%
 
 ---
 
 
 # Visualización y comprensión de los informes de transacciones{#viewing-and-understanding-transaction-reports}
 
-Los informes de transacciones permiten capturar y rastrear el número de formularios enviados, documentos procesados y documentos procesados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Para obtener más información, consulte Información general sobre los informes de transacciones de [AEM Forms](../../forms/using/transaction-reports-overview.md).
+Los informes de transacciones permiten capturar y rastrear el número de formularios enviados, documentos procesados y documentos procesados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Para obtener más información, consulte Información general [sobre los informes de transacciones de](../../forms/using/transaction-reports-overview.md)AEM Forms.
 
-## Configuración de informes de transacciones {#setting-up-transaction-reports}
+## Configuración de informes de transacciones  {#setting-up-transaction-reports}
 
 La función Informes de transacciones está disponible como parte del paquete complementario de formularios AEM. Para obtener información sobre la instalación del paquete de complementos en todas las instancias de creación y publicación, consulte [Instalación y configuración de formularios](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM. Una vez que tenga instalado el paquete de complementos de formularios AEM, haga lo siguiente:
 
@@ -42,7 +45,7 @@ Los informes de transacciones utilizan la replicación inversa para consolidar e
 
 ### Habilitar informes de transacciones {#enable-transaction-reports}
 
-Los informes de transacciones están deshabilitados de forma predeterminada. Puede activar los informes desde la consola web de AEM. para activar informes de transacciones en un entorno de AEM Forms, lleve a cabo los siguientes pasos en todas las instancias de creación y publicación:
+Los informes de transacciones están deshabilitados de forma predeterminada. Puede activar los informes desde la consola web de AEM. para activar los informes de transacciones en un entorno de AEM Forms, lleve a cabo los siguientes pasos en todas las instancias de creación y publicación:
 
 1. Inicie sesión en una instancia de AEM como administrador. Vaya a **Herramientas** > **Operaciones** > Consola **** Web.
 1. Busque y abra el servicio **Forms Transaction Sistema de informes** .
@@ -77,7 +80,7 @@ Puede vista de informes de transacciones en instancias de autor o publicación. 
 
 ## Explicación del informe {#understanding-the-report}
 
-AEM Forms muestra los informes de transacciones desde la fecha configurada, como se muestra en el informe de resumen siguiente:
+Los AEM Forms muestran los informes de transacciones desde la fecha configurada, como se muestra en un informe resumido a continuación:
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
@@ -87,7 +90,7 @@ AEM Forms muestra los informes de transacciones desde la fecha configurada, como
 
 ## Registros de sistemas de informes de transacciones de Vista {#view-transaction-reporting-logs}
 
-El sistema de informes de transacciones coloca toda la información mostrada en el informe y cierta información adicional en los registros. La información proporcionada en los registros resulta útil para los usuarios avanzados. Por ejemplo: los registros dividen las transacciones en varias categorías granulares en comparación con tres categorías consolidadas que se muestran en el informe. Los registros se encuentran en /crx-quickstart/logs/aem-forms-transaction.log.
+El sistema de informes de transacciones coloca toda la información mostrada en el informe y cierta información adicional en los registros. La información proporcionada en los registros resulta útil para los usuarios avanzados. Por ejemplo: los registros dividen las transacciones en varias categorías granulares en comparación con tres categorías consolidadas que se muestran en el informe. Los registros están disponibles en el `error.log` archivo del `/crx-repository/logs/` directorio. Los registros están disponibles aunque no se habiliten los informes de transacciones desde la consola web de AEM.
 
 ## Artículos relacionados {#related-articles}
 
