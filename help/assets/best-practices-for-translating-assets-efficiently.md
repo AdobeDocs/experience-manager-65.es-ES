@@ -3,9 +3,9 @@ title: Prácticas recomendadas para traducir recursos
 description: Prácticas recomendadas para una gestión eficiente de los recursos a fin de sincronizar varias versiones traducidas y racionalizar los flujos de trabajo de traducción.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Prácticas recomendadas para traducir recursos {#best-practices-for-translating-assets-efficiently}
 
-Recursos Adobe Experience Manager admite flujos de trabajo multilingües para traducir binarios, metadatos y etiquetas para recursos digitales en varias configuraciones regionales y para administrar los recursos traducidos. Para obtener más información, consulte Recursos [multilingües](multilingual-assets.md).
+Adobe Experience Manager Assets admite flujos de trabajo multilingües para traducir binarios, metadatos y etiquetas para recursos digitales en varias configuraciones regionales y para administrar los recursos traducidos. Para obtener más información, consulte Recursos [multilingües](multilingual-assets.md).
 
 Para una administración eficiente de los recursos a fin de garantizar que las distintas versiones traducidas permanezcan sincronizadas, cree copias [de](preparing-assets-for-translation.md) idioma de los recursos antes de ejecutar flujos de trabajo de traducción.
 
@@ -32,13 +32,15 @@ También puede realizar algunos cambios en la configuración de un par de flujos
    * [Configuración del almacén de datos de archivos](/help/sites-deploying/data-store-config.md)
    * [Configurar el almacén de datos de Amazon S3](/help/sites-deploying/data-store-config.md)
 
-1. Deshabilite el flujo de trabajo [DAM MetaData Write](/help/sites-administering/workflow-offloader.md#disable-offloading) .
+<!--
+1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow.
 
-   Como indica el nombre, el flujo de trabajo de reescritura [!UICONTROL de metadatos] DAM vuelve a escribir los metadatos en el archivo binario. Como los metadatos cambian después de la traducción, volver a escribirlos en el archivo binario genera un binario diferente para una copia de idioma.
+   As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
 
    >[!NOTE]
    >
-   >Al desactivar el flujo de trabajo de [!UICONTROL reescritura de metadatos] DAM, se desactiva la reescritura de metadatos XMP en los binarios de recursos. En consecuencia, los cambios futuros en los metadatos ya no se guardan dentro de los recursos. Evalúe las consecuencias antes de desactivar este flujo de trabajo.
+   >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+-->
 
 1. Habilite el flujo de trabajo [!UICONTROL Establecer fecha] de última modificación.
 
