@@ -1,8 +1,8 @@
 ---
-title: 'DSRP: Proveedor de recursos de almacenamiento de datos relacional'
-seo-title: 'DSRP: Proveedor de recursos de almacenamiento de datos relacional'
-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
-seo-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
+title: DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional
+seo-title: DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional
+description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
+seo-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,34 +10,37 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: b7c790681034e9950aa43738310f7af8b1dd0085
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
 
-# DSRP: Proveedor de recursos de almacenamiento de datos relacional {#dsrp-relational-database-storage-resource-provider}
+# DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional {#dsrp-relational-database-storage-resource-provider}
 
 ## Acerca de DSRP {#about-dsrp}
 
-Cuando AEM Communities está configurada para utilizar una base de datos relacional como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando los AEM Communities están configurados para utilizar una base de datos relacional como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las Opciones](working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](topologies.md)recomendadas.
 
 ## Requisitos {#requirements}
 
-* [MySQL](#mysql-configuration), una base de datos relacional
-* [Apache Solr](#solr-configuration), una plataforma de búsqueda
+* [MySQL](#mysql-configuration), una base de datos relacional.
+* [Apache Solr](#solr-configuration), una plataforma de búsqueda.
 
 >[!NOTE]
 >
->La configuración de almacenamiento predeterminada ahora se almacena en path(`/conf/global/settings/community/srpc/defaultconfiguration`) conf en lugar de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Se recomienda que siga los pasos [de](#zerodt-migration-steps) migración para que el comando predeterminado funcione según lo previsto.
+>La configuración de almacenamiento predeterminada ahora se almacena en ruta(`/conf/global/settings/community/srpc/defaultconfiguration`) de conf en lugar de ruta (`/etc/socialconfig/srpc/defaultconfiguration`) de etc. Se recomienda que siga los pasos [de](#zerodt-migration-steps) migración para que el comando predeterminado funcione según lo previsto.
 
 
 ## Configuración de base de datos relacional {#relational-database-configuration}
 
 ### Configuración de MySQL {#mysql-configuration}
 
-Una instalación de MySQL puede compartirse entre las características de habilitación y el almacén común (DSRP) dentro del mismo grupo de conexiones utilizando diferentes nombres de bases de datos (esquema) y también diferentes conexiones (servidor:puerto).
+Una instalación de MySQL puede compartirse entre las características de habilitación y el almacén común (DSRP) dentro del mismo grupo de conexiones utilizando diferentes nombres de base de datos (esquema) y también diferentes conexiones (server:port).
 
 Para obtener más información sobre la instalación y configuración, consulte Configuración [MySQL para DSRP](dsrp-mysql.md).
 
@@ -47,42 +50,41 @@ Una instalación de Solr puede compartirse entre el almacén de nodos (Oak) y el
 
 Si las colecciones Oak y SRP se utilizan intensamente, se puede instalar un segundo Solr por motivos de rendimiento.
 
-En los entornos de producción, el modo SolrCloud ofrece un rendimiento mejorado en comparación con el modo independiente (una única configuración local de Solr).
+En el caso de los entornos de producción, el modo SolrCloud ofrece un rendimiento mejorado con respecto al modo independiente (una única configuración local de Solr).
 
 Para obtener más información sobre la instalación y la configuración, consulte Configuración de [Solr para SRP](solr.md).
 
 ### Seleccionar DSRP {#select-dsrp}
 
-La consola [Configuración](srp-config.md) de almacenamiento permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
+La consola [Configuración de](srp-config.md) Almacenamiento permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
 
-Al autor, para acceder a la consola de configuración de almacenamiento
+Al crear, para acceder a la consola de configuración de Almacenamiento
 
 * Iniciar sesión con privilegios de administrador
 * Desde el menú **principal**
 
    * Seleccionar **[!UICONTROL herramientas]** (del panel izquierdo)
    * Seleccionar **[!UICONTROL comunidades]**
-   * Seleccionar configuración **[!UICONTROL de almacenamiento]**
+   * Seleccionar configuración de **[!UICONTROL Almacenamiento]**
 
       * Por ejemplo, la ubicación resultante es: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
       >[!NOTE]
       >
-      >La configuración de almacenamiento predeterminada ahora se almacena en path(`/conf/global/settings/community/srpc/defaultconfiguration`) conf en lugar de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Se recomienda que siga los pasos [de](#zerodt-migration-steps) migración para que el comando predeterminado funcione según lo previsto.
-
-![chlimage_1-128](assets/chlimage_1-128.png)
+      >La configuración de almacenamiento predeterminada ahora se almacena en ruta(`/conf/global/settings/community/srpc/defaultconfiguration`) de conf en lugar de ruta (`/etc/socialconfig/srpc/defaultconfiguration`) de etc. Se recomienda que siga los pasos [de](#zerodt-migration-steps) migración para que el comando predeterminado funcione según lo previsto.
+   ![chlimage_1-128](assets/chlimage_1-128.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Configuración de la base de datos**
 
    * **[!UICONTROL Nombre de la fuente de datos JDBC]**
 
-      El nombre proporcionado a la conexión MySQL debe ser el mismo que se introdujo en la configuración OSGi de [JDBC](dsrp-mysql.md#configurejdbcconnections)
+      El nombre asignado a la conexión MySQL debe ser el mismo que se introdujo en la configuración OSGi de [JDBC](dsrp-mysql.md#configurejdbcconnections)
 
       *predeterminado*: comunidades
 
    * **[!UICONTROL Nombre de la base de datos]**
 
-      Nombre asignado al esquema en la secuencia de comandos [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
+      Nombre asignado al esquema en la secuencia de comandos [init_esquema.sql](dsrp-mysql.md#obtain-the-sql-script)
 
       *predeterminado*: comunidades
 
@@ -122,18 +124,18 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 
 * Sobre el autor:
 
-   * Vaya del menú principal a **[!UICONTROL Herramientas > Operaciones > Replicación]**
-   * Haga doble clic en **Activar árbol **
-   * **Ruta de inicio:**
+   * Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**
+   * Haga doble clic en **[!UICONTROL Activar árbol]**
+   * **Ruta de inicio**:
 
       * Vaya a `/etc/socialconfig/srpc/`
    * Asegúrese de que no `Only Modified` está seleccionado.
-   * Seleccionar **[!UICONTROL activar]**
+   * Seleccione **[!UICONTROL Activar]**.
 
 
 ## Administración de datos de usuario {#managing-user-data}
 
-Para obtener información sobre *usuarios*, perfiles *de* usuario y grupos *de* usuarios, que a menudo se introducen en el entorno de publicación, visite
+Para obtener información sobre *usuarios*, perfiles *de* usuarios y grupos *de* usuarios, que a menudo se introducen en el entorno de publicación, visite:
 
 * [Sincronización de usuarios](sync.md)
 * [Administración de usuarios y grupos de usuarios](users.md)
