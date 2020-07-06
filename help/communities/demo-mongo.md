@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 1%
@@ -165,7 +165,7 @@ Para probar y comprobar el almacén común de MongoDB, publique un comentario so
 
    Nota: aunque hay nodos JCR debajo de *asipath* en author, estos son para el marco SCF. El UGC real no está en JCR, está en MongoDB.
 
-1. Vista de UGC en **[!UICONTROL comunidades mongodb > Colecciones > Contenido]**
+1. Vista de UGC en **[!UICONTROL comunidades]** mongodb > **[!UICONTROL Colecciones]** > **[!UICONTROL Contenido]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
