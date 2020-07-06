@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 85d4cdf0e2cfcb8b5e70387ce2dc556df9033257
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1899'
 ht-degree: 2%
 
 ---
@@ -74,14 +74,14 @@ ht-degree: 2%
 
          * UGC nunca se replica
          * UGC solo visible en la instancia o clúster de AEM en el que se introdujo
-      * El valor predeterminado es JSRP
+
+         * El valor predeterminado es JSRP
    Para la función de **[habilitación](/help/communities/overview.md#enablement-community)**
 
    * [Instalar y configurar FFmpeg](/help/communities/ffmpeg.md)
    * [Instalación del controlador JDBC para MySQL](#jdbc-driver-for-mysql)
    * [Instalación del motor SCORM de AEM Communities](#scorm-package)
    * [Instalar y configurar MySQL para la habilitación](/help/communities/mysql.md)
-
 
 
 
@@ -103,10 +103,10 @@ Al igual que en AEM 6.4 y versiones posteriores, las funciones y revisiones de A
 
 ### Controlador JDBC para MySQL {#jdbc-driver-for-mysql}
 
-Dos funciones de Communities usan una base de datos MySQL :
+Dos funciones de Communities utilizan una base de datos MySQL:
 
-* Para [la habilitación](/help/communities/enablement.md) : grabación de actividades y alumnos SCORM
-* Para [DSRP](/help/communities/dsrp.md) : almacenamiento de contenido generado por el usuario (UGC)
+* Para [la habilitación](/help/communities/enablement.md): grabación de actividades y alumnos SCORM
+* Para [DSRP](/help/communities/dsrp.md): almacenamiento de contenido generado por el usuario (UGC)
 
 El conector MySQL debe obtenerse e instalarse por separado.
 
@@ -125,7 +125,6 @@ Los pasos necesarios son:
    * Compruebe que el controlador JDBC de *Oracle Corporation para MySQLcom.mysql.jdbc* está activo y inicio si no (o compruebe los registros)
 
 1. Si realiza la instalación en una implementación existente después de haber configurado JDBC, vuelva a conectar JDBC al nuevo conector al volver a guardar la configuración JDBC desde la consola web:
-
    * Por ejemplo, https://localhost:4502/system/console/configMgr
    * Localizar `Day Commons JDBC Connections Pool` configuración
    * Seleccionar para abrir
@@ -137,7 +136,7 @@ Encontrará más información sobre la instalación de paquetes en la página Co
 
 #### Ejemplo: Paquete de conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![paquetes de imágenes](assets/chlimage-bundles.png)
 
 ### Paquete SCORM {#scorm-package}
 
@@ -222,7 +221,7 @@ De forma predeterminada, la configuración de `AEM Communities Publisher Configu
 
 Por lo tanto, es necesario **editar la configuración en todas las instancias** de publicación secundarias para desmarcar la **`Primary Publisher`** casilla de verificación.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![chlimage_1-411](assets/chlimage_1-411.png)
 
 Para el resto de instancias de publicación (secundarias) en un conjunto de servidores de publicación:
 
@@ -248,12 +247,12 @@ Hay dos agentes de replicación en el entorno de creación que necesitan configu
 
 * Acceso a la consola de replicación en el autor
 
-   * Desde la navegación global, vaya a **[!UICONTROL Herramientas > Implementación > Replicación > Agentes en el autor]**
+   * Desde la navegación global, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** > **[!UICONTROL Agentes en el autor]**
 
 * Siga el mismo procedimiento para ambos agentes:
 
    * **Agente predeterminado (publicación)**
-   * **Agente de replicación inversa (publicar inversa)**
+   * **Agente de replicación inversa (publicar en sentido inverso)**
 
       1. Seleccione el agente
       1. Select **edit**
@@ -262,15 +261,15 @@ Hay dos agentes de replicación en el entorno de creación que necesitan configu
 
       1. Si no es usuario `admin`, edite el **usuario** y la **contraseña** para especificar un miembro del grupo de `administrators` usuarios
 
-Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 6103 por :
+Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 6103 por:
 
 #### Agente predeterminado (publicación) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![chlimage_1-412](assets/chlimage_1-412.png)
 
-#### Agente de replicación inversa (publicar inversa) {#reverse-replication-agent-publish-reverse}
+#### Agente de replicación inversa (publicar en sentido inverso) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### Servicio de túnel en el autor {#tunnel-service-on-author}
 
@@ -280,8 +279,7 @@ El servicio de túnel proporciona este acceso mediante el agente de replicación
 
 Para habilitar el servicio de túnel:
 
-* En **autor**
-* Iniciar sesión con privilegios administrativos
+* Inicie sesión con privilegios administrativos en la instancia de autor.
 * Si publisher no es localhost:4503 o el usuario de transporte no lo es `admin`, [configure el agente de replicación](#replication-agents-on-author)
 
 * Acceso a la consola [web](/help/sites-deploying/configuring-osgi.md)
@@ -293,7 +291,7 @@ Para habilitar el servicio de túnel:
 * Marque la casilla **habilitar** .
 * Seleccione **Guardar**
 
-![](/help/communities/assets/chlimage_1-129.png)
+   ![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### Replicar la clave de cifrado {#replicate-the-crypto-key}
 
@@ -309,16 +307,16 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * El `bundle.info` archivo identificará el paquete
-   * Navegue hacia la carpeta de datos, por ejemplo:
+   * Vaya a la carpeta de datos, por ejemplo:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Copiar los archivos hmac y principal del nodo
 
+      * Copiar los archivos hmac y principal del nodo
 
 
 * Para cada instancia de AEM de destinatario
 
-   * Navegue hacia la carpeta de datos, por ejemplo:
+   * Vaya a la carpeta de datos, por ejemplo:
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Pegar los 2 archivos copiados anteriormente
@@ -328,6 +326,7 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
 >[!CAUTION]
 >
 >Si ya se ha configurado otra característica de seguridad basada en claves criptográficas, replicar las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el servicio de atención](https://helpx.adobe.com/es/marketing-cloud/contact-support.html)al cliente.
+
 
 #### Replicación del repositorio {#repository-replication}
 
@@ -339,9 +338,10 @@ El hecho de tener el material clave almacenado en el repositorio, como ocurrió 
 >
 >Es importante verificar que el agente de [replicación del autor](#replication-agents-on-author) esté correctamente configurado.
 
+
 Con el material clave almacenado en el repositorio, la manera de replicar la clave criptográfica de autor a otras instancias es la siguiente:
 
-Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Vaya a [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
 * Seleccione `/etc/key`
@@ -350,7 +350,7 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Actualizar el paquete Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+   ![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### Actualizar el paquete de criptografía de granito {#refresh-the-granite-crypto-bundle}
 
@@ -361,7 +361,7 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Localizar `Adobe Granite Crypto Support` paquete (com.adobe.granite.crypto)
 * Seleccionar **actualización**
 
-![](/help/communities/assets/chlimage_1-131.png)
+   ![chlimage_1-416](assets/chlimage_1-416.png)
 
 * Después de un momento, debería aparecer un diálogo de **éxito** :
    `Operation completed successfully.`
@@ -391,7 +391,7 @@ En particular, tenga cuidado de utilizar el nombre de servidor correcto, no `loc
 
 ### Dispatcher {#dispatcher}
 
-Si utiliza un Dispatcher, consulte :
+Si utiliza un Dispatcher, consulte:
 
 * Documentación de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) de AEM
 * [Instalación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
