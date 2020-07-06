@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 3%
+source-wordcount: '616'
+ht-degree: 4%
 
 ---
 
@@ -32,13 +32,17 @@ El primer paso es agregar una propiedad super type de recurso al `/apps/an-scf-s
 
 Uso de CRXDE Lite:
 
-<!--Resolve steps below-->
-    Nombre: `sling:resourceSuperType`
-    Type: `String`
-    Value: &quot;foundation/components/page&quot;
+1. Seleccione el nodo `/apps/an-scf-sandbox/components/playpage`.
+1. En la ficha Propiedades, introduzca una nueva propiedad con los valores siguientes:
 
-1. Haga clic en verde **[!UICONTROL [+]Añadir]**
-1. Haga clic en **[!UICONTROL Guardar todo]**
+   Nombre: `sling:resourceSuperType`
+
+   Tipo: `String`
+
+   Value: `foundation/components/page`
+
+1. Haga clic en el botón verde **[!UICONTROL +Añadir]** .
+1. Haga clic en **[!UICONTROL Guardar todo]**.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -89,12 +93,12 @@ Uso de CRXDE Lite:
 
    Para configurar la creación, superponga `body.jsp` con una secuencia de comandos local e incluya un sistema de párrafos (parsys) en el cuerpo:
 
-   1. Ir a `/apps/an-scf-sandbox/components`
-   1. Seleccione el `playpage`nodo
+   1. Ir a `/apps/an-scf-sandbox/components`.
+   1. Select the `playpage` node.
    1. Haga clic con el botón derecho y seleccione `Create > Create File...`
 
       * Nombre: **body.jsp**
-   1. Haga clic en **[!UICONTROL Guardar todo]**
+   1. Haga clic en **[!UICONTROL Guardar todo]**.
    Abra `/apps/an-scf-sandbox/components/playpage/body.jsp` y pegue el siguiente texto:
 
    ```xml
@@ -113,7 +117,7 @@ Uso de CRXDE Lite:
    </body>
    ```
 
-1. Haga clic en **[!UICONTROL Guardar todo]**
+1. Haga clic en **[!UICONTROL Guardar todo]**.
 
 **Vista de la página en un navegador en modo de edición:**
 
