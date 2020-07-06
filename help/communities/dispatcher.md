@@ -1,8 +1,8 @@
 ---
 title: Configuración de Dispatcher para Comunidades
 seo-title: Configuración de Dispatcher para Comunidades
-description: Configuración del despachante para comunidades AEM
-seo-description: Configuración del despachante para comunidades AEM
+description: Configuración del despachante para AEM Communities
+seo-description: Configuración del despachante para AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## AEM Communities {#aem-communities}
 
-Para las comunidades AEM, es necesario configurar Dispatcher para garantizar el correcto funcionamiento de los sitios [de](overview.md#community-sites)comunidad. Se necesitan configuraciones adicionales al incluir funciones como Habilitación de comunidades e inicio de sesión social.
+Para los AEM Communities, es necesario configurar el Dispatcher para garantizar el correcto funcionamiento de los sitios [de](overview.md#community-sites)comunidad. Se necesitan configuraciones adicionales cuando se incluyen funciones como Habilitación de comunidades e inicio de sesión social.
 
 Para saber qué es necesario para la implementación y el diseño del sitio en particular
 
-* Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+* Contact [Customer Care](https://helpx.adobe.com/es/marketing-cloud/contact-support.html)
 
 Consulte también la documentación [principal de](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Dispatcher.
 
@@ -31,9 +34,9 @@ Consulte también la documentación [principal de](https://helpx.adobe.com/exper
 
 ### Información general {#overview}
 
-El almacenamiento en caché de despachantes para comunidades AEM es la capacidad del despachante para ofrecer versiones en caché completas de las páginas de un sitio de comunidad.
+El almacenamiento en caché de Dispatcher para AEM Communities es la capacidad del despachante para ofrecer versiones en caché completas de las páginas de un sitio de comunidad.
 
-Actualmente, solo se admite para visitantes anónimos del sitio, como usuarios que exploran el sitio de la comunidad, o que aterrizan en una página de la comunidad como resultado de una búsqueda, así como para motores de búsqueda que indexan páginas. La ventaja es que los usuarios anónimos y los motores de búsqueda experimentarán un rendimiento mejorado.
+Actualmente, solo se admite para visitantes anónimos del sitio, como usuarios que exploran el sitio de la comunidad o aterrizan en una página de la comunidad como resultado de una búsqueda, así como para motores de búsqueda que indexan páginas. La ventaja es que los usuarios anónimos y los motores de búsqueda experimentarán un rendimiento mejorado.
 
 Para los miembros con sesión iniciada, el despachante omite la caché y reenvía las solicitudes directamente al publicador, de modo que todas las páginas se generan y se entregan de forma dinámica.
 
@@ -49,7 +52,7 @@ Cuando se configura para admitir el almacenamiento en caché del despachante, se
 
 ### Configuración {#configuration}
 
-La configuración OSGi **ACS AEM Commons - Encabezado de control de caché de despachante - Edad** máxima establece la caducidad de las páginas en caché que aparecen bajo una ruta especificada.
+La configuración OSGi **ACS AEM Commons - Encabezado de control de caché de Dispatcher - Edad** máxima establece la caducidad de las páginas en caché que aparecen bajo una ruta especificada.
 
 * Desde la consola [web](../../help/sites-deploying/configuring-osgi.md)
 
@@ -58,19 +61,21 @@ La configuración OSGi **ACS AEM Commons - Encabezado de control de caché de de
 * Localizar `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Seleccione el icono &#39;+&#39; para crear una nueva configuración de conexión
 
-![chlimage_1-339](assets/chlimage_1-339.png)
+   ![chlimage_1-339](assets/chlimage_1-339.png)
 
 * **Patrones de filtro**
+
    *(requerido)* Una o más rutas a páginas de comunidad. Por ejemplo, `/content/sites/engage/(.*)`.
 
 * **Edad máxima del control de caché**
-   *(requerido)* La edad máxima (en segundos) que se agregará al encabezado Control de caché. El valor debe ser mayor que cero (0).
 
-## Encabezados de cliente de Dispatcher {#dispatcher-client-headers}
+   *(requerido)* La edad máxima (en segundos) que se agregará al encabezado Control de caché. El valor debe ser bueno a cero (0).
+
+## Encabezados del cliente de Dispatcher {#dispatcher-client-headers}
 
 En la sección /clientheaders de `dispatcher.any`, si se enumera un conjunto específico de encabezados, es necesario incluir `"CSRF-Token"` para que la función [](enablement.md) Habilitación funcione correctamente.
 
-## Filtros de despachante {#dispatcher-filters}
+## Filtros Dispatcher {#dispatcher-filters}
 
 La sección /filter del `dispatcher.any` archivo está documentada en [Configuración del acceso al contenido - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
@@ -80,14 +85,15 @@ Los nombres de propiedades de filtro siguen la convención de utilizar un númer
 
 Los siguientes ejemplos utilizan nombres de propiedades que probablemente deban modificarse para ajustarse a cualquier archivo dispatcher.any.
 
-Consulte también
+Consulte también:
 
-* [Lista de comprobación de seguridad del despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Lista de comprobación de seguridad de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
 >**Ejemplos de nombres de propiedad**
 >Todos los nombres de propiedad mostrados, como **/0050** y **/0170**, deben ajustarse para ajustarse a un archivo de configuración existente de dispatcher.any.
+
 
 Las siguientes entradas deben agregarse al final de la sección /filter, especialmente después de todas las entradas de denegación.
 
@@ -161,7 +167,7 @@ Las siguientes entradas deben agregarse al final de la sección /filter, especia
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Reglas de despachante {#dispatcher-rules}
+## Reglas de Dispatcher {#dispatcher-rules}
 
 La sección de reglas de `dispatcher.any` define qué respuestas se deben almacenar en caché en función de la dirección URL solicitada. En el caso de las comunidades, la sección de reglas se utiliza para definir lo que nunca debe almacenarse en caché.
 
@@ -188,11 +194,11 @@ La sección de reglas de `dispatcher.any` define qué respuestas se deben almace
 
 Una fuente importante de problemas es insertar reglas de filtro sin prestar atención al efecto en reglas anteriores, especialmente al agregar una regla para denegar el acceso.
 
-El primer patrón de filtro se utiliza a menudo para negar todo, de modo que los filtros siguientes restauran el acceso de manera controlada. Cuando se aplican varios filtros a una solicitud, el último filtro que se aplica es el que está en vigor.
+El primer patrón de filtro se utiliza a menudo para negar todo, de modo que los filtros posteriores restauren el acceso de manera controlada. Cuando se aplican varios filtros a una solicitud, el último filtro que se aplica es el que está en vigor.
 
 ## Distribuidor de muestra.any {#sample-dispatcher-any}
 
-A continuación se muestra un archivo de muestra `dispatcher.any` que incluye los /filters y /rules de Communities.
+A continuación se muestra un archivo de muestra `dispatcher.any` que incluye los archivos Communities/filtros y /rules.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)
