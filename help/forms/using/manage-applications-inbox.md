@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ La interfaz de usuario de la Bandeja de entrada proporciona vistas de lista y ca
 
 En resumen, la Bandeja de entrada permite crear una nueva aplicación y administrar las tareas asignadas.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Debe ser miembro del grupo de usuarios del flujo de trabajo para poder utilizar la Bandeja de entrada de AEM.
 
@@ -50,9 +53,11 @@ Las Tareas asignadas a un grupo aparecen en la Bandeja de entrada de todos los m
 1. Realice una de las acciones siguientes:
 
    * Para delegar la tarea, toque **[!UICONTROL Delegar]**. Se Abre El Cuadro De Diálogo Delegar Elemento. Seleccione un usuario, agregue un comentario de forma opcional y toque **[!UICONTROL Aceptar]**.
+
    ![delegate](assets/delegate.png)
 
    * Para solicitar la tarea, toque **[!UICONTROL Abrir]**. Se abre el cuadro de diálogo Asignar a sí mismo. Toque **[!UICONTROL Continuar]** para reclamar la tarea. La tarea reclamada aparece con usted como el usuario asignado en la Bandeja de entrada.
+
    ![reclamar](assets/claim.png)
 
 ### Detalles de Vista y realización de acciones en tareas {#view-details-and-perform-actions-on-tasks}
