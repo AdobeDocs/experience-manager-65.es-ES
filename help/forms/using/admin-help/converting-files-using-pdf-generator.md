@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -66,19 +66,22 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de la je
 >
 >* La función de HTML a PDF requiere ciertas fuentes en el directorio de fuentes del sistema. En sistemas Linux, Solaris y AIX, el directorio de fuentes del sistema debe contener la fuente Courier. En sistemas Windows, el directorio de fuentes del sistema debe contener Times New Roman.
    >
-   > 
+   >
 * (Solo sistema basado en UNIX) Una de las siguientes fuentes japonesas debería estar disponible en el servidor de AEM Forms para convertir una página web con fuente japonesa en un documento PDF.
    >
-   >   
-   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Gothic Pro-VI&quot;
-   >   * &quot;Kozuka Mincho Pro-VI&quot;
-   >   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Mincho Pr6N&quot;
-   >   * &quot;Sazanami Mincho&quot;
-   >   * &quot;Adobe Heiti Std&quot;
-   >   * &quot;Adobe Song Std&quot;
->* Para cargar un archivo desde el sistema de archivos local, utilice la opción Cargar archivo en la página HTML a PDF.
+   >  
+* &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Gothic Pro-VI&quot;
+>  * &quot;Kozuka Mincho Pro-VI&quot;
+>  * &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Mincho Pr6N&quot;
+>  * &quot;Sazanami Mincho&quot;
+>  * &quot;Adobe Heiti Std&quot;
+>  * &quot;Adobe Song Std&quot;
+
+   >
+   >
+* Para cargar un archivo desde el sistema de archivos local, utilice la opción Cargar archivo en la página HTML a PDF.
 
 
 1. En la consola de administración, haga clic en Servicios > Generador de PDF > HTML a PDF.
@@ -86,6 +89,7 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de la je
 
    * En Cargar archivo, escriba la ruta y el nombre de archivo del archivo HTML o ZIP, o haga clic en Examinar para buscarlo y seleccionarlo.
    * En el cuadro Especificar URL, escriba la dirección URL de la página o del sitio Web que desea convertir.
+
    >[!NOTE]
    >
    >El archivo que está convirtiendo debe tener una extensión de nombre de archivo .html, .htm o .zip.
