@@ -3,9 +3,9 @@ title: Cree y comparta una carpeta privada en Adobe Experience Manager.
 description: Obtenga información sobre cómo crear una carpeta privada en Adobe Experience Manager Assets y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Puede crear una carpeta privada en la interfaz de usuario de Recursos Adobe Expe
 
    >[!NOTE]
    >
-   > La carpeta privada tiene al menos un miembro con la función Propietario. Por lo tanto, el administrador no puede quitar todos los miembros del propietario de una carpeta privada. Sin embargo, para eliminar los propietarios existentes (y el administrador mismo) de la carpeta privada, el administrador debe agregar otro usuario como propietario.
+   >La carpeta privada tiene al menos un miembro con la función Propietario. Por lo tanto, el administrador no puede quitar todos los miembros del propietario de una carpeta privada. Sin embargo, para eliminar los propietarios existentes (y el administrador mismo) de la carpeta privada, el administrador debe agregar otro usuario como propietario.
 
 1. Haga clic en **[!UICONTROL Guardar.]** Según la función que asigne, al usuario se le asignará un conjunto de privilegios en la carpeta privada cuando inicie sesión en Assets.
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el mensaje de confirmación.
