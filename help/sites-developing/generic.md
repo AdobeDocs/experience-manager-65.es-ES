@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 translation-type: tm+mt
-source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 0%
 
 ---
 
@@ -30,9 +33,9 @@ Se proporcionan varios componentes de AEM integrados para utilizar la capa de in
 * Promociones y vales
 * Modelos de catálogo y de sección
 * Cierre de compra
-* Búsqueda
+* Búsqueda  
 
-Para buscar, se proporciona un enlace de integración que le permite utilizar la búsqueda de AEM, una búsqueda de terceros (como Search&amp;Promote) o una combinación de ellas.
+Para buscar, se proporciona un enlace de integración que le permite utilizar la búsqueda de AEM, una búsqueda de terceros (como Search&amp;Promote) o una combinación de estos.
 
 ## Selección del motor de comercio electrónico {#ecommerce-engine-selection}
 
@@ -40,7 +43,7 @@ El marco de comercio electrónico se puede utilizar con cualquier solución de c
 
 * Los motores de comercio electrónico son servicios OSGi que admiten la `CommerceService` interfaz
 
-   * Los motores pueden distinguirse por una propiedad de `commerceProvider` servicio
+   * Los motores se pueden distinguir mediante una propiedad de `commerceProvider` servicio
 
 * AEM admite `Resource.adaptTo()` para `CommerceService` y `Product`
 
@@ -102,7 +105,7 @@ CommerceSession ****:
 
    `CommerceSession.getUserContext()`
 
-* Puede recuperar o actualizar los detalles de entrega mediante `updateOrder(Map<String, Object> delta)`
+* Puede recuperar o actualizar los detalles del envío mediante `updateOrder(Map<String, Object> delta)`
 * También posee la conexión de procesamiento de **pagos**
 * También posee la conexión de **despacho**
 
@@ -116,7 +119,7 @@ Sin embargo, no todas las propiedades son ejes de variante. Las variaciones tamb
 
 Cada producto o variante está representado por un recurso y, por lo tanto, asigna 1:1 a un nodo de repositorio. Es un corolario que un producto específico y/o una variante se puedan identificar de forma única por su trayectoria.
 
-Cualquier recurso de producto puede representarse mediante un `Product API`. La mayoría de las llamadas de la API de producto son específicas de la variación (aunque las variaciones pueden heredar valores compartidos de un antecesor), pero también hay llamadas que enumeran el conjunto de variaciones ( `getVariantAxes()`, `getVariants()`, etc.).
+Cualquier recurso de producto puede representarse mediante un `Product API`. La mayoría de las llamadas de la API de producto son específicas de la variación (aunque las variaciones pueden heredar valores compartidos de un antecesor), pero también hay llamadas que lista el conjunto de variaciones ( `getVariantAxes()`, `getVariants()`, etc.).
 
 >[!NOTE]
 >
@@ -128,13 +131,11 @@ Cualquier recurso de producto puede representarse mediante un `Product API`. La 
 Mientras que los productos (en general) pueden tener muchos ejes de variante, el componente de producto listo para usar solo gestiona dos:
 >
 >1. `size`
-   >
-   >
-1. más uno más
-   >   Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
+>1. más uno más
+
 >
-
-
+>   
+Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
 
 #### Referencias del producto y datos PIM {#product-references-and-pim-data}
 
@@ -193,7 +194,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -242,7 +243,7 @@ public class AxisFilter implements VariantFilter {
 }
 ```
 
-* **Mecanismo General de Almacenamiento**
+* **Mecanismo general de Almacenamiento**
 
    * Los nodos de producto no son:no estructurados.
    * Un nodo de producto puede ser:
@@ -389,11 +390,11 @@ La `CommerceSession` propiedad de los tres elementos:
 **Cálculos de envío**
 
 * Los formularios de pedido suelen necesitar presentar varias opciones de envío (y precios).
-* Los precios pueden basarse en artículos y detalles del pedido, como peso o dirección de entrega.
+* Los precios pueden basarse en artículos y detalles del pedido, como peso o dirección de envío.
 * El `CommerceSession` tiene acceso a todas las dependencias, por lo que puede tratarse de manera similar a los precios del producto:
 
    * El `CommerceSession` propietario es propietario del precio de envío.
-   * Se utiliza `updateOrder(Map<String, Object> delta)` para recuperar o actualizar los detalles de entrega.
+   * Se utiliza `updateOrder(Map<String, Object> delta)` para recuperar o actualizar los detalles del envío.
 
 ### Definición de búsqueda {#search-definition}
 
@@ -413,7 +414,7 @@ El proyecto eCommerce contiene un componente de búsqueda predeterminado, ubicad
 
 ![chlimage_1-34](assets/chlimage_1-34a.png)
 
-Esto hace uso de la API de búsqueda para consultar el motor de comercio seleccionado (consulte Selección [del motor de](#ecommerce-engine-selection)comercio electrónico):
+Esto hace uso de la API de búsqueda para la consulta del motor de comercio seleccionado (consulte Selección [del motor de](#ecommerce-engine-selection)comercio electrónico):
 
 #### API de búsqueda {#search-api}
 
@@ -425,7 +426,7 @@ Existen varias clases genéricas/de ayuda proporcionadas por el proyecto princip
 
 1. `FacetParamHelper`
 
-   Es una clase de utilidad que proporciona un método estático - `toParams` - que se utiliza para generar cadenas de `GET` parámetros a partir de una lista de facetas y un valor alternado. Esto resulta útil en la interfaz de usuario, donde debe mostrar un hipervínculo para cada valor de cada faceta, de modo que cuando el usuario haga clic en el hipervínculo, se alternará el valor correspondiente (es decir, si se seleccionó, se eliminará de la consulta, de lo contrario se agregará). Esto tiene en cuenta toda la lógica de manejar facetas de varios valores o de un solo valor, valores de anulación, etc.
+   Es una clase de utilidad que proporciona un método estático - `toParams` - que se utiliza para generar cadenas de `GET` parámetros a partir de una lista de facetas y un valor alternado. Esto resulta útil en la interfaz de usuario, donde debe mostrar un hipervínculo para cada valor de cada faceta, de modo que cuando el usuario haga clic en el hipervínculo, se alternará el valor correspondiente (es decir, si se seleccionó, se eliminará de la consulta; de lo contrario, se agregará). Esto tiene en cuenta toda la lógica de manejar facetas de varios valores o de un solo valor, valores de anulación, etc.
 
 El punto de entrada para la API de búsqueda es el `CommerceService#search` método que devuelve un `CommerceResult` objeto. Consulte la documentación de la API para obtener más información sobre este tema.
 
@@ -465,7 +466,7 @@ El punto de entrada para la API de búsqueda es el `CommerceService#search` mét
 
       * Una prioridad
       * Una ruta del controlador de promoción
-   * Puede conectar las promociones a una campaña para definir la fecha y hora de activación y de desactivación.
+   * Puede conectar las promociones a una campaña para definir su fecha y hora de activación/desactivación.
    * Puede conectar las promociones a una experiencia para definir sus segmentos.
    * Las promociones que no están conectadas a una experiencia no se activan por sí solas, sino que pueden ser activadas por un cupón.
    * El componente Promoción ( `/libs/commerce/components/promotion`) contiene:
@@ -484,7 +485,7 @@ El punto de entrada para la API de búsqueda es el `CommerceService#search` mét
 
 
 
-La adición o eliminación de un asiento de un carro de compras se realiza mediante la `CommerceSession` API:
+La Añade/eliminación de un asiento de un carro de compras se realiza mediante la `CommerceSession` API:
 
 ```java
 /**
@@ -511,7 +512,7 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-De este modo, el `CommerceSession` responsable de comprobar si existe un vale y si se puede aplicar o no. Esto puede ser para vales que solo se pueden aplicar si se cumple una determinada condición; por ejemplo, cuando el precio total del carro es mayor que 100 $). Si no se puede aplicar un asiento por ningún motivo, el `addVoucher` método generará una excepción. Además, `CommerceSession` es responsable de actualizar los precios del carro después de agregar o eliminar un vale.
+De este modo, el `CommerceSession` responsable de comprobar si existe un vale y si se puede aplicar o no. Esto puede ser para vales que solo se pueden aplicar si se cumple una determinada condición; por ejemplo, cuando el precio total del carro es bueno (más de 100 dólares). Si no se puede aplicar un asiento por ningún motivo, el `addVoucher` método generará una excepción. Además, `CommerceSession` es responsable de actualizar los precios del carro después de agregar o eliminar un vale.
 
 La `Voucher` es una clase similar a un grano que contiene campos para:
 
@@ -525,7 +526,7 @@ Los `AbstractJcrCommerceSession` asientos proporcionados pueden aplicarse. Las l
 
 * `jcr:title` (Cadena): para la descripción del asiento
 * `code` (Cadena): el código que debe introducir el usuario para aplicar esta licencia
-* `promotion` (Cadena) - la promoción que se aplicará;p. ej. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (Cadena) - la promoción que se aplicará; p. ej. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Los controladores de promoción son servicios OSGi que modifican el carro de compras. El carro admitirá varios ganchos que se definirán en la `PromotionHandler` interfaz.
 
