@@ -3,7 +3,7 @@ title: Administre recursos compuestos con referencias y recursos de varias pági
 description: Aprenda a crear referencias a recursos digitales desde dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Para los recursos admitidos con formatos de varias páginas: archivos PDF, archi
 
 La generación de subconjuntos está deshabilitada de forma predeterminada. Para habilitar la generación de subrecursos, siga estos pasos:
 
-1. Inicie sesión [!DNL Experience Manager] como administrador. Acceda a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
+1. Inicie sesión [!DNL Experience Manager] como administrador. Acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 1. Seleccione **[!UICONTROL Flujo de trabajo de recursos]** de actualización de DAM y haga clic en **[!UICONTROL Editar]**.
 1. Haga clic en **[!UICONTROL Alternar panel]** lateral y busque el paso **[!UICONTROL Crear subrecurso]** . Añada el paso al flujo de trabajo. Haga clic en **[!UICONTROL Sincronizar]**.
 
@@ -99,7 +99,7 @@ Para generar los subrecursos, realice una de las siguientes acciones:
 * Recursos existentes de varias páginas: Ejecute manualmente el flujo de trabajo de Recursos [!UICONTROL de actualización de] DAM siguiendo uno de los pasos siguientes:
 
    * Seleccione un recurso y haga clic en [!UICONTROL Línea de tiempo] para abrir el panel izquierdo. Como alternativa, utilice el método abreviado de teclado `alt + 3`. Haga clic en Flujo de trabajo [!UICONTROL de]Inicio, seleccione [!UICONTROL DAM Update Asset], haga clic en [!UICONTROL Inicio]y, a continuación, en [!UICONTROL Continuar].
-   * Seleccione un recurso y haga clic en [!UICONTROL Crear > Flujo de trabajo] en la barra de herramientas. En el cuadro de diálogo emergente, seleccione [!UICONTROL DAM Update Asset] workflow, haga clic en [!UICONTROL Inicio]y, a continuación, en [!UICONTROL Continuar].
+   * Seleccione un recurso y haga clic en [!UICONTROL Crear] > [!UICONTROL Flujo de trabajo] en la barra de herramientas. En el cuadro de diálogo emergente, seleccione [!UICONTROL DAM Update Asset] workflow, haga clic en [!UICONTROL Inicio]y, a continuación, en [!UICONTROL Continuar].
 
 Específicamente para documentos de Microsoft Word, ejecute el flujo de trabajo de Documentos **[!UICONTROL de Word de análisis de]** DAM. Genera un `cq:Page` componente a partir del contenido del documento de Microsoft Word. Se hace referencia a las imágenes extraídas del documento desde el `cq:Page` componente. Estas imágenes se extraen aunque la generación de subrecursos esté desactivada.
 
