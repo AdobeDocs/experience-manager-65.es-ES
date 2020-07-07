@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager (AEM) y las directrices de accesibilidad web
-description: Introducción a Adobe Experience Manager (AEM) y a las directrices de accesibilidad web
+description: Introducción a Adobe Experience Manager (AEM) y directrices de accesibilidad web
 translation-type: tm+mt
-source-git-commit: 7d2996b425db3115851ad35a446ec6b2ed4a32f3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 70%
@@ -28,7 +28,7 @@ Adobe Experience Manager works with the [guidelines](#wcag-accessibility-guideli
 
 >[!NOTE]
 >
-> Para obtener más información, consulte los [informes de conformidad con la accesibilidad para las soluciones de Adobe](https://www.adobe.com/accessibility/compliance.html).
+>Para obtener más información, consulte los [informes de conformidad con la accesibilidad para las soluciones de Adobe](https://www.adobe.com/accessibility/compliance.html).
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -50,10 +50,10 @@ Con Adobe Experience Manager, los autores de contenido o los propietarios de sit
 
 * [Configuración del Editor de texto enriquecido para la producción de sitios](/help/sites-administering/rte-accessible-content.md)accesibles Directrices sobre cómo los administradores pueden configurar AEM para producir contenido accesible.
 
-* [Creación de formularios](/help/forms/using/creating-accessible-adaptive-forms.md)adaptables accesibles Adobe Experience Manager (AEM) incluye una serie de funciones que mejoran el uso de formularios adaptables para usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
+* [Creación de un](/help/forms/using/creating-accessible-adaptive-forms.md)Adobe Experience Manager de formulariosadaptables accesible (AEM) incluye una serie de funciones que mejoran el uso de formularios adaptables para usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
 
 >[!NOTE]
-> 
+>
 >Al crear su sitio, debe determinar el nivel general en el que desea que se ajuste.
 
 ## Accesibilidad en Adobe {#accessibility-at-adobe}
