@@ -3,7 +3,7 @@ title: perfiles de metadatos para personalizar los requisitos de metadatos de lo
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 20%
@@ -17,7 +17,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
 ## Añadir un perfil de metadatos {#adding-a-metadata-profile}
 
-1. Vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos y haga clic en **[!UICONTROL Crear]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Perfiles **** de metadatos y haga clic en **[!UICONTROL Crear]**.
 1. Introduzca un título para el Perfil Metadatos, por ejemplo Metadatos de ejemplo, y haga clic en **[!UICONTROL Crear]**. Se muestra el perfil [!UICONTROL Editar formulario] para los metadatos.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
@@ -31,11 +31,13 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
    * **[!UICONTROL Etiqueta]** de campo: Nombre para mostrar de la propiedad metadata. Solo sirve para la referencia del usuario.
 
    * **[!UICONTROL Asignar a propiedad]**: El valor de esta propiedad proporciona la ruta/nombre relativos al nodo de recurso donde se guarda en el repositorio. El valor siempre debe tener inicios `./` porque indica que la ruta está bajo el nodo del recurso.
+
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
    The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por ejemplo, si especifica `/jcr:content/metadata/dc:desc` como nombre de **[!UICONTROL Asignar a propiedad]**, Assets almacena el valor `dc:desc` en el nodo de metadatos del recurso.
 
    * **[!UICONTROL Valor]** predeterminado: Utilice esta propiedad para agregar un valor predeterminado para el componente de metadatos. Por ejemplo, si especifica &quot;Mi descripción&quot;, este valor se asigna a la propiedad `dc:desc` en el nodo de metadatos del recurso.
+
    ![chlimage_1-200](assets/chlimage_1-483.png)
 
    >[!NOTE]
@@ -65,7 +67,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
    ![chlimage_1-203](assets/chlimage_1-486.png)
 
-1. Haga clic en **[!UICONTROL Copiar]** en la barra de herramientas.
+1. Click **[!UICONTROL Copy]** from the toolbar.
 1. En el cuadro de diálogo **[!UICONTROL Copiar Perfil]** de metadatos, introduzca un título para la nueva copia del Perfil de metadatos.
 1. Haga clic en **[!UICONTROL Copiar]**. La copia del perfil de metadatos aparece en la lista de perfiles de la página **[!UICONTROL Perfiles de metadatos]**.
 
@@ -106,7 +108,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 Siga los pasos para aplicar el perfil de metadatos:
 
-1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos.
+1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Perfiles **** de metadatos.
 1. Seleccione el perfil de metadatos que desea aplicar a una o varias carpetas.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -148,7 +150,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 
 ### Quitar perfiles de metadatos de las carpetas mediante la interfaz de usuario de Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos.
+1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Perfiles **** de metadatos.
 1. Seleccione el perfil de metadatos que desea eliminar de una carpeta o de varias carpetas.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -156,11 +158,11 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 
 ### Quitar perfiles de metadatos de las carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Haga clic en el logotipo de Experience Manager, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de metadatos.
+1. Haga clic en el logotipo del Experience Manager, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea eliminar un perfil de metadatos.
 1. En la carpeta, haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic en **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-## Limitaciones y prácticas recomendadas {#limitations-best-practices-tips}
+## Limitations and best practices {#limitations-best-practices-tips}
 
 * Es posible que haya perfiles de metadatos preexistentes desde entonces antes de actualizar a [!DNL Experience Manager] 6.5. Después de la actualización, si aplica este perfil en [!UICONTROL Propiedades] de carpeta en la ficha Perfiles  de metadatos, no se muestran los campos del formulario de metadatos. Sin embargo, si aplica un perfil de metadatos recién creado, los campos del formulario se muestran pero no están disponibles según lo esperado. No se pierde la funcionalidad pero si desea ver los campos del formulario (no disponibles), edite y guarde los perfiles de metadatos existentes.
 
