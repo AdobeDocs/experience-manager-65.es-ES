@@ -3,9 +3,9 @@ title: Reescritura XMP en representaciones
 description: Descubra cómo la función de reescritura XMP propaga los cambios de metadatos de un recurso en todas las representaciones del recurso o en determinadas representaciones.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c1c845a479fcf04db1b2da8bcb9cf765fedd58b6
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '793'
 ht-degree: 5%
 
 ---
@@ -64,15 +64,15 @@ Los cambios en los metadatos se propagan a las representaciones thumbnail.140.10
 >
 >Para los problemas de escritura XMP en Linux de 64 bits, consulte [Cómo habilitar la escritura de retorno XMP en RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)de 64 bits.
 >
->Para obtener más información sobre las plataformas admitidas, consulte Requisitos previos para la devolución de [metadatos XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>Para las plataformas admitidas, consulte Requisitos previos para la devolución de [metadatos XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## Filtrado de metadatos XMP {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] admite tanto listas bloqueadas como filtros de lista permitidos de propiedades/nodos para metadatos XMP que se leen desde binarios de recursos y se almacenan en JCR cuando se ingestan recursos.
+[!DNL Experience Manager Assets] admite el filtrado de propiedades/nodos de lista de bloqueados y lista de permitidos para metadatos XMP que se leen desde binarios de recursos y se almacenan en JCR cuando se ingestan recursos.
 
-El filtrado mediante una lista bloqueada permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10.000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen por adelantado. Si el filtrado mediante una lista bloqueada permite importar un gran número de recursos con numerosos metadatos XMP, la instancia/clúster de AEM puede encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
+El filtrado mediante una lista de bloqueados permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10.000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen por adelantado. Si el filtrado mediante una lista de bloqueados permite importar un gran número de recursos con numerosos metadatos XMP, la instancia/clúster de AEM puede tener problemas de estabilidad, por ejemplo, colas de observación obstruidas.
 
-El filtrado de metadatos XMP mediante una lista permitida resuelve este problema permitiéndole definir las propiedades XMP que se van a importar. De este modo, se omiten todas las demás propiedades XMP o desconocidas. Para la compatibilidad con versiones anteriores, puede agregar algunas de estas propiedades al filtro que utiliza una lista bloqueada.
+El filtrado de metadatos XMP mediante lista de permitidos resuelve este problema permitiéndole definir las propiedades XMP que se van a importar. De este modo, se omiten todas las demás propiedades XMP o desconocidas. Para la compatibilidad con versiones anteriores, puede agregar algunas de estas propiedades al filtro que utiliza una lista de bloqueados.
 
 >[!NOTE]
 >
@@ -84,10 +84,10 @@ El filtrado de metadatos XMP mediante una lista permitida resuelve este problema
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Para filtrar las propiedades XMP bloqueadas después de aplicar el filtro mediante la lista permitida, especifique las que aparecen en el cuadro Nombres XML **[!UICONTROL bloqueados para el filtro]** XMP.
+1. Para filtrar las propiedades XMP bloqueadas después de aplicar el filtrado mediante lista de permitidos, especifique las que aparecen en el cuadro Nombres XML **[!UICONTROL bloqueados para el filtrado]** XMP.
 
    >[!NOTE]
    >
-   >La opción **[!UICONTROL Aplicar lista de bloqueos a propiedades]** XMP está seleccionada de forma predeterminada. En otras palabras, el filtrado mediante una lista bloqueada está habilitado de forma predeterminada. Para desactivar este filtrado, anule la selección de la opción **[!UICONTROL Aplicar lista de bloqueos a propiedades]** XMP.
+   >La opción **[!UICONTROL Aplicar Lista de bloqueados a propiedades]** XMP está seleccionada de forma predeterminada. En otras palabras, el filtrado mediante una lista de bloqueados está activado de forma predeterminada. Para desactivar este filtrado, anule la selección de la opción **[!UICONTROL Aplicar Lista de bloqueados a propiedades]** XMP.
 
 1. Guarde los cambios.
