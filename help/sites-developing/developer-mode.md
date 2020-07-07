@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,10 @@ Esto ayuda a los desarrolladores a:
 >
 >* Solo está disponible en la IU táctil (al editar páginas).
 >* No está disponible en dispositivos móviles o ventanas pequeñas en el escritorio (debido a restricciones de espacio).
-   >   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
+
+   >
+   >   
+   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
 >* Solo está disponible para los usuarios que son miembros del `administrators` grupo.
 
 
@@ -48,6 +54,7 @@ Esto ayuda a los desarrolladores a:
 >
 >* en una instancia de autor mediante nosamplecontent run-mode
 >* una instancia de publicación
+
 >
 >
 Debe deshabilitarse de nuevo después de su uso.
@@ -58,6 +65,7 @@ Debe deshabilitarse de nuevo después de su uso.
 >
 >* Artículo de la Base de conocimiento, [Resolución de problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)de la IU táctil de AEM, para obtener más sugerencias y herramientas.
 >* Sesión de AEM Gems sobre el modo [de desarrollador de](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)AEM 6.0.
+
 >
 
 
@@ -103,6 +111,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
    * todas las secuencias de comandos de componentes utilizadas para procesar el componente.
    * la ruta de contenido del repositorio para este componente específico.
+
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Editar secuencia de comandos**: un vínculo que:
@@ -113,6 +122,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
    * La jerarquía dentro del componente seleccionado.
    * Tiempos de procesamiento para el componente seleccionado de forma aislada, componentes individuales anidados en él y el total combinado.
+
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
