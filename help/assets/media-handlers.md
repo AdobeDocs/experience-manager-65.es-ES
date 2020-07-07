@@ -3,9 +3,9 @@ title: Procesar recursos con controladores de medios y flujos de trabajo en [!DN
 description: Obtenga información sobre los controladores de medios y cómo utilizar flujos de trabajo para realizar tareas en los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2109'
 ht-degree: 4%
 
 ---
@@ -21,15 +21,13 @@ Los controladores de medios son servicios en los [!DNL Assets] que se realizan a
 
 >[!NOTE]
 >
->Consulte la página Formatos [admitidos de](assets-formats.md) Recursos para obtener una descripción de todos los formatos admitidos [!DNL Assets] y de las funciones admitidas para cada formato.
+>Consulte la página Formatos [admitidos de](assets-formats.md) Assets para obtener una descripción de todos los formatos admitidos [!DNL Assets] y de las funciones admitidas para cada formato.
 
 ## Controladores de medios predeterminados {#default-media-handlers}
 
 Los siguientes controladores de medios están disponibles dentro [!DNL Assets] y controlan los tipos MIME más comunes:
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | Nombre del controlador | Nombre del servicio (en la consola del sistema) | Tipos MIME admitidos |
@@ -44,7 +42,7 @@ Los siguientes controladores de medios están disponibles dentro [!DNL Assets] y
 | [!UICONTROL MSOfficeHandler] | `com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler` | application/msword |
 | [!UICONTROL MSPowerPointHandler] | `com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler` | application/vnd.ms-powerpoint |
 | [!UICONTROL OpenOfficeHandler] | `com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler` | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
-| [!UICONTROL EPubHandler] | `com.day.cq.dam.handler.standard.epub.EPubHandler` | application/epub+zip |
+| [!UICONTROL EPubHandler] | `com.day.cq.dam.handler.standard.epub.EPubHandler` | aplicación/epub+zip |
 | [!UICONTROL GenericAssetHandler] | `com.day.cq.dam.core.impl.handler.GenericAssetHandler` | alternativa en caso de que no se encontrara ningún otro controlador para extraer datos de un recurso |
 
 Todos los controladores realizan las siguientes tareas:
@@ -140,7 +138,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
 
 1. En Eclipse, cree `myBundle`[!DNL Maven] un proyecto:
 
-   1. En la barra de menús, haga clic en **[!UICONTROL Archivo > Nuevo > Otro]**.
+   1. En la barra de menús, haga clic en **[!UICONTROL Archivo]** > **[!UICONTROL Nuevo]** > **[!UICONTROL Otro]**.
    1. En el cuadro de diálogo, expanda la [!DNL Maven] carpeta, seleccione [!DNL Maven] proyecto y haga clic en **[!UICONTROL Siguiente]**.
    1. Marque la casilla Crear un proyecto simple y la casilla Usar ubicaciones de espacio de trabajo predeterminadas y, a continuación, haga clic en **[!UICONTROL Siguiente]**.
    1. Definir un [!DNL Maven] proyecto:
@@ -505,7 +503,7 @@ Separe los valores de los argumentos [!UICONTROL de] proceso con una coma y no l
 |---|---|
 | mime:&lt;tipo-mime> | Argumento opcional. El proceso se aplica si el recurso tiene el mismo tipo MIME que el argumento. <br>Se pueden definir varios tipos MIME. |
 | tn:&lt;anchura>:&lt;altura> | Argumento opcional. El proceso crea una miniatura con las dimensiones definidas en el argumento. <br>Se pueden definir varias miniaturas. |
-| cmd: &lt;comando> | Define el comando que se ejecutará. La sintaxis depende de la herramienta de línea de comandos. Sólo se puede definir un comando. <br>Se pueden utilizar las siguientes variables para crear el comando:<br>`${filename}`nombre del archivo de entrada, por ejemplo original.jpg <br> `${file}`:: nombre completo de ruta del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`:: directorio del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo original <br>`${extension}`: extensión del archivo de entrada, por ejemplo JPG. |
+| cmd: &lt;comando> | Define el comando que se ejecuta. La sintaxis depende de la herramienta de línea de comandos. Sólo se puede definir un comando. <br>Se pueden utilizar las siguientes variables para crear el comando:<br>`${filename}`nombre del archivo de entrada, por ejemplo original.jpg <br> `${file}`:: nombre completo de ruta del archivo de entrada, por ejemplo `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`:: directorio del archivo de entrada, por ejemplo `/tmp/cqdam0816.tmp` : <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo original <br>`${extension}`: extensión del archivo de entrada, por ejemplo JPG. |
 
 Por ejemplo, si [!DNL ImageMagick] está instalado en el disco que aloja el [!DNL Experience Manager] servidor y crea un paso de proceso mediante [!UICONTROL CommandLineProcess] como Implementación y los siguientes valores como Argumentos de proceso:
 
