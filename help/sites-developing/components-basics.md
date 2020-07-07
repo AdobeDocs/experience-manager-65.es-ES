@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 00c98c4c1178f88844f6bec8a214d096205c58cd
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4719'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +50,7 @@ Antes de empezar a configurar o codificar realmente el componente, debe pregunta
 Antes de cualquier inicio de debate serio sobre el desarrollo de componentes, debe saber qué IU usarán los autores:
 
 * **IU táctil**
-   [La interfaz](/help/sites-developing/touch-ui-concepts.md) de usuario estándar se basa en la experiencia de usuario unificada de Adobe Marketing Cloud, con las tecnologías subyacentes de la IU [de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU de [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [La interfaz](/help/sites-developing/touch-ui-concepts.md) de usuario estándar se basa en la experiencia de usuario unificada para el Adobe Marketing Cloud, utilizando las tecnologías subyacentes de la IU [de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU de [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Interfaz de usuario** clásica basada en la tecnología ExtJS obsoleta en AEM 6.4.
 
 Consulte Recomendaciones de interfaz de [usuario para clientes](/help/sites-deploying/ui-recommendations.md) para obtener más información.
@@ -57,19 +60,20 @@ Los componentes se pueden implementar para admitir la IU táctil, la IU clásica
 Por esta razón, en esta página trataremos los aspectos básicos de ambos, y cómo reconocerlos.
 
 >[!NOTE]
-> Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [Herramientas de moderación de AEM&amp; (moderniatzion-tools.md) puede facilitar la migración.
+>
+>Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [Herramientas de moderación de AEM&amp; (moderniatzion-tools.md) puede facilitar la migración.
 
-### Lógica de contenido y marcado de procesamiento {#content-logic-and-rendering-markup}
+### Lógica de contenido y marcado de procesamiento  {#content-logic-and-rendering-markup}
 
 Se recomienda mantener el código responsable del marcado y el procesamiento separado del código que controla la lógica utilizada para seleccionar el contenido del componente.
 
-Esta filosofía está respaldada por [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), un lenguaje de plantilla que se limita a propósito para garantizar que se utilice un lenguaje de programación real para definir la lógica comercial subyacente. Esta lógica (opcional) se invoca desde HTL con un comando específico. Este mecanismo resalta el código que se llama para una vista determinada y, si es necesario, permite una lógica específica para distintas vistas del mismo componente.
+Esta filosofía está respaldada por [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html), un lenguaje de plantilla que se limita a propósito para garantizar que se utilice un lenguaje de programación real para definir la lógica comercial subyacente. Esta lógica (opcional) se invoca desde HTL con un comando específico. Este mecanismo resalta el código que se llama para una vista determinada y, si es necesario, permite una lógica específica para distintas vistas del mismo componente.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTL es un lenguaje de plantilla HTML introducido con AEM 6.0.
 
-El análisis de si se debe utilizar [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) o JSP (Java Server Pages) al desarrollar sus propios componentes debería ser sencillo, ya que HTL es ahora el lenguaje de secuencias de comandos recomendado para AEM.
+El análisis de si se debe utilizar [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) o JSP (Java Server Pages) al desarrollar sus propios componentes debería ser sencillo, ya que HTL es ahora el lenguaje de secuencias de comandos recomendado para AEM.
 
 Tanto HTL como JSP se pueden utilizar para desarrollar componentes tanto para la IU clásica como para la táctil. Aunque puede haber una tendencia a suponer que HTL es solo para la IU táctil y JSP para la IU clásica, se trata de una idea errónea y más debido al tiempo. La IU táctil y HTL se incorporaron a AEM durante aproximadamente el mismo período. Dado que HTL es ahora el idioma recomendado, se utiliza para nuevos componentes, que suelen ser para la IU táctil.
 
@@ -153,7 +157,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
    * `/apps/<myApp>/components`
 
-* Los componentes estándar de AEM se definen como `cq:Component` y tienen los elementos clave:
+* Los componentes estándar de AEM se definen como `cq:Component` y tienen elementos clave:
 
    * propiedades de jcr:
 
@@ -164,6 +168,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
       Definen elementos estáticos utilizados por el componente.
 
    * Secuencias de comandos:
+
    Se utilizan para implementar el comportamiento de la instancia resultante del componente.
 
 * **Nodo raíz**:
@@ -426,6 +431,7 @@ Las definiciones de cuadro de diálogo son específicas de la interfaz de usuari
 >
 >* Por motivos de compatibilidad, la IU táctil puede utilizar la definición de un cuadro de diálogo de IU clásica cuando no se ha definido ningún cuadro de diálogo para la IU táctil.
 >* La herramienta [de conversión de](/help/sites-developing/dialog-conversion.md) cuadro de diálogo también se proporciona para ayudarle a ampliar o convertir componentes que solo tienen cuadros de diálogo definidos para la IU clásica.
+
 >
 
 
@@ -439,6 +445,7 @@ Las definiciones de cuadro de diálogo son específicas de la interfaz de usuari
       * Puede tener una propiedad `helpPath` para definir el recurso de ayuda contextual (ruta absoluta o relativa) al que se accede cuando se utiliza el icono Ayuda (el ?) ).
          * Para los componentes listos para usar, esto a menudo hace referencia a una página de la documentación.
          * Si no `helpPath` se especifica ninguna, se muestra la dirección URL predeterminada (página de información general de la documentación).
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    En el cuadro de diálogo, se definen campos individuales:
@@ -454,6 +461,7 @@ Las definiciones de cuadro de diálogo son específicas de la interfaz de usuari
       * Puede tener una propiedad `helpPath` para definir el recurso de ayuda contextual (ruta absoluta o relativa) al que se accede cuando se selecciona el botón **Ayuda** .
          * Para los componentes listos para usar, esto a menudo hace referencia a una página de la documentación.
          * Si no `helpPath` se especifica ninguna, se muestra la dirección URL predeterminada (página de información general de la documentación).
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    En el cuadro de diálogo, se definen campos individuales:
@@ -550,7 +558,7 @@ La configuración es común a la IU táctil y a la clásica, aunque con ciertas 
 
 El comportamiento de edición de un componente se configura agregando un `cq:editConfig` nodo de tipo `cq:EditConfig` debajo del nodo del componente (de tipo `cq:Component`) y agregando propiedades específicas y nodos secundarios. Están disponibles las siguientes propiedades y nodos secundarios:
 
-* [ Propiedades `cq:editConfig` del nodo](#configuring-with-cq-editconfig-properties):
+* [ `cq:editConfig` propiedades](#configuring-with-cq-editconfig-properties)del nodo:
 
    * `cq:actions` ( `String array`): define las acciones que se pueden realizar en el componente.
    * `cq:layout` ( `String`): :: define cómo se edita el componente en la IU clásica.
@@ -988,10 +996,10 @@ El `cq:listeners` nodo (tipo de nodo `cq:EditListenersConfig`) define lo que suc
 >[!NOTE]
 >
 >En el caso de los componentes anidados, existen ciertas restricciones en acciones definidas como propiedades en el `cq:listeners` nodo:
-
+>
 >* Para los componentes anidados, los valores de las siguientes propiedades *deben* ser `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>  * `aftermove`
+>  * `aftercopy`
 
 
 El controlador de evento se puede implementar con una implementación personalizada. Por ejemplo (donde `project.customerAction` es un método estático):
@@ -1003,7 +1011,8 @@ El siguiente ejemplo equivale a la configuración `REFRESH_INSERTED` :
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Para ver qué parámetros se pueden utilizar en la IU clásica, consulte la sección `before<action>` y `after<action>` eventos de la documentación de la [ y la `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) utilidad.
+>
+>Para ver qué parámetros se pueden utilizar en la IU clásica, consulte la sección `before<action>` y `after<action>` eventos de la documentación de la [ y la `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) utilidad.
 
 Con la siguiente configuración, la página se actualiza después de eliminar, editar, insertar o mover el componente:
 
