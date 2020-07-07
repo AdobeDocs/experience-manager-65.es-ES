@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2862'
 ht-degree: 26%
@@ -268,7 +268,10 @@ Si tiene varias configuraciones, AEM muestra de forma predeterminada la [configu
 >* Cuando la Previsualización [segura está activada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), los recursos publicados y no publicados en Dynamic Media Classic aparecen en el navegador de contenido de Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Para vídeo, el navegador de contenido de Dynamic Media Classic admite:
-   >   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
+
+   >
+   >   
+   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
    >   * Vídeo MP4 sencillo
    >   * Vídeo F4V sencillo
 
@@ -285,6 +288,7 @@ Para examinar los recursos de Dynamic Media Classic, seleccione **[!UICONTROL Dy
 >
 >* El navegador de contenido de Dynamic Media Classic carga unos 100 recursos y los ordena por nombre.
 >* Si tiene un servidor de previsualización seguro establecido, el navegador utilizará ese servidor de previsualización para procesar miniaturas y recursos.
+
 >
 
 
@@ -337,6 +341,7 @@ De forma predeterminada, AEM realiza la búsqueda en la carpeta seleccionada y t
    >
 * Al buscar vídeos, se busca una sola representación. Los resultados devuelven la representación original (solo &amp;ast;.mp4) y la representación codificada.
 >* Al buscar un conjunto de vídeos adaptables, busca en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido ninguna palabra clave, AEM no busca en las subcarpetas.
+
 >
 
 
