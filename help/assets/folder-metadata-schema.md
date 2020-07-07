@@ -3,7 +3,7 @@ title: Carpeta de esquema de metadatos
 description: Obtenga información sobre cómo crear esquemas de metadatos para carpetas de recursos en Adobe Experience Manager Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 4%
@@ -108,7 +108,7 @@ Si configura un esquema de metadatos para una carpeta, la ruta al formulario de 
 
 ### Asignar a un esquema desde la página Esquema de metadatos de la carpeta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]**> Esquemas **[!UICONTROL de metadatos de]** carpeta.
+1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos de]** carpeta.
 1. En la página Esquema de formularios de metadatos de carpeta, seleccione el formulario de esquema que desee aplicar a una carpeta.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Aplicar a carpetas]**.
 
