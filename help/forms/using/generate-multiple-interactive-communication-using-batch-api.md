@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Combina un registro con una plantilla de comunicación interactiva para producir
 
 ### Uso de la API por lotes con carpetas vigiladas {#using-the-batch-api-watched-folders}
 
-Para facilitar la experiencia de la API, AEM Forms proporciona un servicio de carpetas vigiladas configurado para utilizar la API de lotes de forma predeterminada. Puede acceder al servicio a través de la interfaz de usuario de AEM Forms para generar varias comunicaciones interactivas. También puede crear servicios personalizados según sus necesidades. Puede utilizar los métodos que se indican a continuación para utilizar la API por lotes con la carpeta Watched:
+Para facilitar la experiencia de la API, los AEM Forms proporcionan un servicio de carpetas vigiladas configurado para utilizar la API de lotes de forma predeterminada. Puede acceder al servicio a través de la interfaz de usuario de AEM Forms para generar varias comunicaciones interactivas. También puede crear servicios personalizados según sus necesidades. Puede utilizar los métodos que se indican a continuación para utilizar la API por lotes con la carpeta Watched:
 
 * Especificar datos de entrada (registros) en formato de archivo JSON para generar una comunicación interactiva
 * Utilizar datos de entrada (registros) guardados en un origen de datos externo y a los que se accede mediante un modelo de datos de formulario para generar una comunicación interactiva
@@ -177,7 +177,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
 
 1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de muestra que se muestra a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
 1. [Cree e implemente un proyecto de AEM con Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) en su instancia de AEM.
-1. Añada [AEM Forms Client SDK versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior en lista de dependencias del archivo POM de su proyecto AEM. Por ejemplo,
+1. Añada el SDK de cliente de [AEM Forms versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior en la lista de dependencias del archivo POM de su proyecto AEM. Por ejemplo,
 
    ```XML
        <dependency>
@@ -327,7 +327,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
    * Al especificar la opción WEB, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
    * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
 
-1. [Utilice maven para implementar el código actualizado en su instancia](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)de AEM.
+1. [Utilice el comando muven para implementar el código actualizado en su instancia](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)de AEM.
 1. Invoque la API por lotes para generar la comunicación interactiva. La API por lotes imprime una secuencia de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web. Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve una secuencia de archivos PDF y JSON.
 
 ### Rellenar previamente una plantilla web {#web-template}
@@ -345,12 +345,15 @@ A continuación, la siguiente URL del nodo de publicación muestra el Canal Web 
 Además de guardar los datos en el sistema de archivos, los archivos JSON se almacenan en el repositorio de CRX, el sistema de archivos, el servidor web o se pueden acceder a los datos a través del servicio de cumplimentación previa de OSGI. La sintaxis para combinar datos mediante varios protocolos es:
 
 * **Protocolo CRX**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocolo de archivos**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Prefill Service Protocol**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME hace referencia al nombre del servicio de cumplimentación previa OSGI. Consulte Crear y ejecutar un servicio de relleno previo.
@@ -358,7 +361,9 @@ Además de guardar los datos en el sistema de archivos, los archivos JSON se alm
    IDENTIFIER se refiere a cualquier metadato requerido por el servicio de rellenado previo OSGI para recuperar los datos de relleno previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
 
 * **Protocolo HTTP**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> De forma predeterminada, solo está habilitado el protocolo CRX. Para habilitar otros protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>De forma predeterminada, solo está habilitado el protocolo CRX. Para habilitar otros protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
