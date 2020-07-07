@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '9250'
 ht-degree: 4%
@@ -63,6 +63,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    * En la barra de herramientas, haga clic en **[!UICONTROL Crear]**. A continuación, en el menú, haga clic en **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
    * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario [!DNL Assets] . No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+
    ![Opción Crear para cargar recursos](assets/create-options.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
@@ -119,6 +120,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    * el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
    * el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    No incluya caracteres especiales en las extensiones de los nombres de archivo de recursos.
 
    ![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/chlimage_1-10.png)
@@ -139,7 +141,7 @@ La carga en serie de recursos está activada de forma predeterminada. Para desac
 
 ### Carga de recursos mediante FTP {#uploading-assets-using-ftp}
 
-Dynamic Media permite la carga por lotes de recursos a través del servidor FTP. Si desea cargar recursos de gran tamaño (> 1 GB) o carpetas y subcarpetas enteras, debe utilizar FTP. Incluso puede configurar la carga mediante FTP para que se produzca de forma recurrente y programada.
+Dynamic Media permite la carga por lotes de recursos a través del servidor FTP. Si desea cargar recursos de gran tamaño (>1 GB) o carpetas y subcarpetas enteras, debe utilizar FTP. Incluso puede configurar la carga mediante FTP para que se produzca de forma recurrente y programada.
 
 >[!NOTE]
 >
@@ -183,7 +185,7 @@ Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]
 | Opciones de trabajo |  | Haga clic en Opciones **** de trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Haga clic en el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas cargadas se introducen automáticamente en [!DNL Experience Manager Assets]. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
@@ -350,6 +352,7 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 1. Para acercar el recurso:
    1. Utilice la `Tab` tecla para mover el enfoque a la opción de acercar.
    1. Utilice la `Enter` tecla para acercar la imagen.
+
    Para alejar, utilice `Tab` la tecla para desplazar el enfoque a la opción de alejamiento y pulse `Enter`.
 
 1. Utilice las teclas `Shift` + `Tab` para volver a centrar la atención en la imagen.
@@ -407,9 +410,10 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
    * Número de veces que se ha visualizado o descargado el recurso
    * Canales/dispositivos a través de los cuales se utilizó el recurso
    * Soluciones creativas en las que el recurso se ha utilizado recientemente
+
    Para obtener más información, consulte Perspectivas [de recursos](/help/assets/touch-ui-asset-insights.md).
 
-1. Click **[!UICONTROL Save &amp; Close]**.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 1. Vaya a la interfaz de [!DNL Assets] usuario. Las propiedades de metadatos editadas, como título, descripción, clasificaciones, etc., se muestran en la tarjeta del recurso en la vista de tarjetas y en las columnas relevantes de la vista de Lista.
 
 ## Copiar recursos {#copying-assets}
@@ -480,6 +484,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    * Haga clic en **[!UICONTROL Atrás]** para volver a la pantalla **[!UICONTROL Seleccionar destino]** .
 
    * Haga clic en **[!UICONTROL Cancelar]** para detener la operación de movimiento.
+
    Si no actualiza las referencias, éstas seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de acceso del recurso.
 
 ## Administrar representaciones {#managing-renditions}
@@ -555,6 +560,7 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
       * Si el recurso no tiene referencias, se elimina.
       * Si el recurso tiene referencias, un mensaje de error le informa de que se hace referencia a **uno o varios recursos.** Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >Para eliminar recursos, un usuario necesita permisos de eliminación en `dam/asset`. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
@@ -607,6 +613,7 @@ Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-a
 
    * **[!UICONTROL Cancelar]** para detener la acción
    * **[!UICONTROL Cancele la publicación]** para confirmar que los recursos se han cancelado de publicar (ya no están disponibles en el entorno de publicación) en la fecha especificada.
+
    >[!NOTE]
    >
    >Al cancelar la publicación de un recurso complejo, solo debe cancelar la publicación del recurso. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
@@ -677,6 +684,7 @@ Las herramientas de edición de la [!DNL Assets] interfaz le permiten realizar p
    * Seleccione el recurso y, a continuación, haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
    * Haga clic en la opción **[!UICONTROL Editar]** que se muestra en un recurso de la vista de tarjeta.
    * Haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
+
    ![Editar, opción en la barra de herramientas](assets/edit_icon.png)
 
 1. Para recortar la imagen, haga clic en **[!UICONTROL Recortar]** ![opción para recortar una imagen](assets/chlimage_1-22.png).
@@ -742,6 +750,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    * [Acciones rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
+
    ![Opción Anotar](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
@@ -823,7 +832,7 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 
    ![Para imprimir solo el estado de revisión de la anotación, selecciónelo en la línea de tiempo](assets/chlimage_1-39.png)
 
-1. Haga clic en **[!UICONTROL Imprimir]** en la barra de herramientas.
+1. Click **[!UICONTROL Print]** from the toolbar.
 
    ![Opción Imprimir de la barra de herramientas](assets/chlimage_1-40.png)
 
@@ -933,6 +942,7 @@ También puede activar el control automático de versiones mediante un flujo de 
 1. Para comparar dos versiones de una imagen, siga estos pasos:
    * Haga clic en la versión que se va a comparar con la versión actual.
    * Arrastre el control deslizante hacia la izquierda para superponer esta versión sobre la versión actual y comparar.
+
    ![Utilice el control deslizante para comparar las versiones seleccionadas de un recurso con la versión actual](assets/version-slider.gif)
 
    *Figura: Utilice el control deslizante para comparar sin esfuerzo las versiones seleccionadas de un recurso con la versión actual.*
