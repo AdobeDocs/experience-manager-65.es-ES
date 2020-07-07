@@ -4,9 +4,9 @@ description: Sugerencias y directrices [!DNL Experience Manager] sobre configura
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da2e435f33e8527793e009700c30e60868d196be
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,8 @@ Una vez que el volumen temporal de alto rendimiento esté listo, establezca el p
 
 Adobe recomienda la implementación [!DNL Experience Manager Assets] en Java 8 para un rendimiento óptimo.
 
->[!NOTE]
->
->Oracle dejó de lanzar actualizaciones para Java 7 a partir de abril de 2015.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### Parámetros de JVM {#jvm-parameters}
 
@@ -77,11 +76,11 @@ Se recomienda separar el almacén de datos del almacén de segmentos para todos 
 
 ### Configurar el tamaño máximo de la caché de imágenes en búfer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Al cargar grandes cantidades de recursos en [!DNLAAdobe Experience Manager], para permitir picos inesperados en el consumo de memoria y evitar que JVM falle con OutOfMemoryErrors, reduzca el tamaño máximo configurado de la caché de imágenes en búfer. Considere un ejemplo en el que tiene un sistema con una pila máxima (- `Xmx`param) de 5 GB, un Oak BlobCache establecido en 1 GB y una caché de documento establecida en 2 GB. En este caso, la memoria caché almacenada en el búfer requeriría un máximo de 1,25 GB y memoria, lo que dejaría sólo 0,75 GB de memoria para picos inesperados.
+Al cargar grandes cantidades de recursos en [!DNLAAdobe Experience Manager], para permitir picos inesperados en el consumo de memoria y evitar que JVM falle con OutOfMemoryErrors, reduzca el tamaño máximo configurado de la caché de imágenes en memoria intermedia. Considere un ejemplo en el que tiene un sistema con una pila máxima (- `Xmx`param) de 5 GB, un Oak BlobCache establecido en 1 GB y una caché de documento establecida en 2 GB. En este caso, la memoria caché almacenada en el búfer requeriría un máximo de 1,25 GB y memoria, lo que dejaría sólo 0,75 GB de memoria para picos inesperados.
 
 Configure el tamaño de caché en búfer en la consola web OSGi. En `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, establezca la propiedad `cq.dam.image.cache.max.memory` en bytes. Por ejemplo, 1073741824 es 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Desde Experience Manager 6.1 SP1, si utiliza un `sling:osgiConfig` nodo para configurar esta propiedad, asegúrese de establecer el tipo de datos en Long. Para obtener más información, consulte [CQBufferedImageCache consume mucha información durante las cargas](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)de recursos.
+Desde Experience Manager 6.1 SP1, si está utilizando un `sling:osgiConfig` nodo para configurar esta propiedad, asegúrese de establecer el tipo de datos en Long. Para obtener más información, consulte [CQBufferedImageCache consume mucha información durante las cargas](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)de recursos.
 
 ### Almacenes de datos compartidos {#shared-data-stores}
 
@@ -114,11 +113,11 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se saturará rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte Guía [de tamaño de](/help/assets/assets-sizing-guide.md)recursos. Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)Assets.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte Guía [de tamaño de](/help/assets/assets-sizing-guide.md)recursos. Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](/help/assets/assets-network-considerations.md)Assets.
 
 Principalmente, su estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de [!DNLEExperience Manager] . Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
-* Según el tipo de instancia (pequeña, moderada y grande), asegúrese de que dispone de ancho de banda de red suficiente para la instancia de Experience Manager. La asignación adecuada del ancho de banda es especialmente importante si [!DNLEExperience Manager] está alojado en AWS.
+* En función del tipo de instancia (pequeña, moderada y grande), asegúrese de que dispone de ancho de banda de red suficiente para la instancia de Experience Manager. La asignación adecuada del ancho de banda es especialmente importante si [!DNLEExperience Manager] está alojado en AWS.
 * Si la instancia de [!DNLEExperience Manager] está alojada en AWS, puede beneficiarse de una política de escala versátil. Actualice la instancia si los usuarios esperan una carga alta. Disminuya el tamaño para una carga moderada o baja.
 * HTTPS: La mayoría de los usuarios tiene servidores de seguridad que detectan el tráfico HTTP, lo que puede afectar negativamente a la carga de archivos o incluso dañar archivos durante la operación de carga.
 * Cargas de archivos grandes: Asegúrese de que los usuarios tienen conexiones cableadas a la red (las conexiones Wi-Fi se saturan rápidamente).
@@ -212,7 +211,7 @@ Además, establezca la ruta de la carpeta temporal de ImageMagick en el `configu
 >
 >ImageMagick `policy.xml` y `configure.xml` los archivos están disponibles en `/usr/lib64/ImageMagick-&#42;/config/` lugar de `/etc/ImageMagick/`.Consulte la documentación [de](https://www.imagemagick.org/script/resources.php) ImageMagick para la ubicación de los archivos de configuración.
 
-Si utiliza [!DNL Experience Manager] los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
+Si utiliza [!DNL Experience Manager] Adobes Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -238,7 +237,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 >[!NOTE]
 >
->Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que este paso sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
+>Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que esto sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
 
 ## Índices de búsqueda {#search-indexes}
 
