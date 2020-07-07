@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4102'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ Para agregar objetos y servicios del modelo de datos:
 
    La ficha Modelo muestra los objetos del modelo de datos agregados
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Puede mantener y arrastrar cuadros de objetos del modelo de datos para organizarlos en el área de contenido. Todos los objetos del modelo de datos agregados en el modelo de datos de formulario aparecen atenuados en el panel Fuentes de datos.
 
@@ -70,7 +73,7 @@ Para agregar objetos y servicios del modelo de datos:
 
 1. Toque **[!UICONTROL Guardar]** para guardar el objeto del modelo de formulario.
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Puede invocar servicios configurados en la ficha Servicios de un modelo de datos de formulario mediante las reglas de formulario adaptables. Los servicios configurados están disponibles en la acción Invocar servicios del editor de reglas. Para obtener más información sobre el uso de estos servicios en reglas de formularios adaptables, consulte Invocar servicios y establecer valor de reglas en el editor [de](/help/forms/using/rule-editor.md)reglas.
 
@@ -213,7 +216,7 @@ Normalmente, hay asociaciones creadas entre objetos de modelo de datos en un ori
 
 Cuando se agregan objetos de modelo de datos asociados en un origen de datos a un modelo de datos de formulario, sus asociaciones se conservan y se muestran como conectadas por líneas de flecha. Puede agregar asociaciones entre objetos del modelo de datos en distintos orígenes de datos en un modelo de datos de formulario.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Las asociaciones predefinidas en un origen de datos JDBC no se conservan en el modelo de datos de formulario. Debe crearlos manualmente.
 
@@ -256,7 +259,7 @@ Para agregar una asociación:
 1. Toque **[!UICONTROL Listo]** para guardar la asociación y, a continuación, **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
 1. Repita los pasos para crear más asociaciones según sea necesario.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >La asociación agregada aparece en el cuadro de objetos del modelo de datos con el título especificado y una línea que conecta los objetos del modelo de datos asociados.
 >
@@ -491,12 +494,12 @@ La siguiente tabla lista las restricciones de los datos de entrada en función d
    <td>Swagger</td> 
   </tr> 
   <tr> 
-   <td>enum (string)<br /><br /> </td> 
+   <td>enum (cadena)<br /> <br /> </td> 
    <td>Restringe el valor de un parámetro en los datos de entrada a un conjunto fijo de valores de cadena. Debe ser una matriz con al menos un elemento, donde cada elemento es único.</td> 
    <td>Swagger, WSDL y Odata</td> 
   </tr> 
   <tr> 
-   <td>enum (número)<br /><br /> </td> 
+   <td>enum (número)<br /> <br /> </td> 
    <td>Restringe el valor de un parámetro en los datos de entrada a un conjunto fijo de valores numéricos. Debe ser una matriz con al menos un elemento, donde cada elemento es único.</td> 
    <td>WSDL</td> 
   </tr> 
