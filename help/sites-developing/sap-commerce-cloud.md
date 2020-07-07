@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -172,7 +172,6 @@ Los datos del producto que se mantienen en hybris deben estar disponibles en AEM
 * La extensión hybris proporciona un importador de encuestas (&quot;esquema de híbridos&quot;), que se puede configurar para importar cambios en AEM en un intervalo especificado (por ejemplo, cada 24 horas en las que el intervalo se especifica en segundos):
 
    * 
-
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -227,11 +226,9 @@ Mientras que los productos (en general) pueden tener muchos ejes de variante, el
    >
    >
 1. más uno más
-   >   Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
-
 >
-
-
+>   
+Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
 
 #### Referencias del producto y datos del producto {#product-references-and-product-data}
 
