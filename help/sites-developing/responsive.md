@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '5339'
+ht-degree: 1%
 
 ---
 
@@ -39,22 +42,22 @@ Desarrolle aplicaciones de Adobe Experience Manager (AEM) que generen páginas H
 * Ancho máximo de 767 píxeles (teléfono, horizontal)
 * Anchura entre 768 píxeles y 979 píxeles (tableta, vertical)
 * Anchura entre 980 y 1199 píxeles (tableta, horizontal)
-* Ancho de 1200 px o superior (escritorio)
+* Ancho de 1200 px o bueno (escritorio)
 
 Consulte los siguientes temas para obtener información sobre la implementación del comportamiento de diseño interactivo:
 
-* [Consultas de medios](/help/sites-developing/responsive.md#using-media-queries)
+* [consultas de medios](/help/sites-developing/responsive.md#using-media-queries)
 * [Cuadrículas fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Imágenes adaptables](/help/sites-developing/responsive.md#using-adaptive-images)
 
-A medida que se diseña, utilice la **[!UICONTROL barra de tareas]** para obtener una vista previa de las páginas en distintos tamaños de pantalla.
+A medida que diseña, utilice la **[!UICONTROL barra de tareas]** para la previsualización de las páginas en distintos tamaños de pantalla.
 
 ## Antes de desarrollar {#before-you-develop}
 
 Antes de desarrollar la aplicación AEM que admite las páginas web, se deben tomar varias decisiones de diseño. Por ejemplo, necesita tener la siguiente información:
 
 * Los dispositivos a los que está dirigido.
-* Tamaños de la ventanilla de destino.
+* Tamaños de la ventanilla del destinatario.
 * Los diseños de página para cada uno de los tamaños de ventanilla de destino.
 
 ### Estructura de la aplicación {#application-structure}
@@ -67,22 +70,22 @@ La estructura típica de la aplicación de AEM admite todas las implementaciones
 
 ## Uso de consultas de medios {#using-media-queries}
 
-Las consultas de medios permiten el uso selectivo de estilos CSS para la representación de páginas. Las herramientas y funciones de desarrollo de AEM le permiten implementar de forma eficaz y eficiente las consultas de medios en sus aplicaciones.
+Las consultas de medios permiten el uso selectivo de estilos CSS para la representación de páginas. Las herramientas y funciones de desarrollo de AEM le permiten implementar de forma eficaz y eficiente consultas de medios en sus aplicaciones.
 
 El grupo W3C proporciona la recomendación Consultas [de](https://www.w3.org/TR/css3-mediaqueries/) medios que describe esta función CSS3 y la sintaxis.
 
 ### Creación del archivo CSS {#creating-the-css-file}
 
-En el archivo CSS, defina las consultas de medios en función de las propiedades de los dispositivos de destino. La siguiente estrategia de implementación es eficaz para administrar estilos en cada consulta de medios:
+En el archivo CSS, defina consultas de medios en función de las propiedades de los dispositivos que vaya a utilizar. La siguiente estrategia de implementación es eficaz para administrar estilos en cada consulta de medios:
 
 * Utilice ClientLibraryFolder para definir la CSS que se ensamblará cuando se procese la página.
 * Defina cada consulta de medios y los estilos asociados en archivos CSS independientes. Es útil utilizar nombres de archivo que representen las características del dispositivo de la consulta de medios.
 * Defina estilos comunes a todos los dispositivos en un archivo CSS independiente.
-* En el archivo css.txt de ClientLibraryFolder, ordene la lista de archivos CSS según sea necesario en el archivo CSS ensamblado.
+* En el archivo css.txt de ClientLibraryFolder, ordene los archivos CSS de lista como se requiere en el archivo CSS ensamblado.
 
 El ejemplo de We.Retail Media utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por We.Retail se encuentra en `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
 
-En la tabla siguiente se muestran los archivos de la carpeta secundaria css.
+La siguiente tabla lista los archivos de la carpeta secundaria css.
 
 <table>
  <tbody>
@@ -102,34 +105,34 @@ En la tabla siguiente se muestran los archivos de la carpeta secundaria css.
    <td>N/D</td>
   </tr>
   <tr>
-   <td>adaptable-1200px.css</td>
+   <td>responsive-1200px.css</td>
    <td>Estilos para todos los medios con una anchura o un ancho de 1200 píxeles.</td>
-   <td><p><br /> @media (min-width: 1200 px) {<br /> ... }</p> </td>
+   <td><p>@media (min-width: 1200 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>adaptable-980px-1199px.css</td>
+   <td>responsive-980px-1199px.css</td>
    <td>Estilos para medios con una anchura de entre 980 y 1199 píxeles.</td>
-   <td><p><br /> @media (min-width: 980 px) y (anchura máxima: 1199 px) {<br /> ... }</p> </td>
+   <td><p>@media (min-width: 980 px) y (anchura máxima: 1199 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>adaptable-768px-979px.css</td>
+   <td>responsive-768px-979px.css</td>
    <td>Estilos para medios con una anchura de entre 768 y 979 píxeles. </td>
-   <td><p><br /> @media (min-width: 768 px) y (anchura máxima: 979 px) {<br /> ... }</p> </td>
+   <td><p>@media (min-width: 768 px) y (anchura máxima: 979 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>adaptable-767px-max.css</td>
+   <td>responsive-767px-max.css</td>
    <td>Estilos para todos los medios con una anchura inferior a 768 píxeles.</td>
-   <td><p><br /> @media (ancho máximo: 767 px) {<br /> ... }</p> </td>
+   <td><p>@media (ancho máximo: 767 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>adaptable-480px.css</td>
+   <td>responsive-480px.css</td>
    <td>Estilos para todos los medios con una anchura inferior a 481 píxeles.</td>
-   <td><br /> @media (ancho máximo: 480) {<br /> ... }</td>
+   <td>@media (ancho máximo: 480) {<br /> ...<br /> }</td>
   </tr>
  </tbody>
 </table>
 
-El archivo css.txt de la `/etc/designs/weretail/clientlibs` carpeta muestra los archivos CSS que incluye la carpeta de la biblioteca del cliente. El orden de los archivos implementa la prioridad de estilo. Los estilos son más específicos a medida que disminuye el tamaño del dispositivo.
+El archivo css.txt de la `/etc/designs/weretail/clientlibs` carpeta lista los archivos CSS que incluye la carpeta de la biblioteca del cliente. El orden de los archivos implementa la prioridad de estilo. Los estilos son más específicos a medida que disminuye el tamaño del dispositivo.
 
 `#base=css`
 
@@ -148,7 +151,7 @@ responsive-1200px.css
 
 **Sugerencia**: Los nombres de archivo descriptivos permiten identificar fácilmente el tamaño de la ventanilla de destino.
 
-### Uso de consultas de medios con páginas de AEM {#using-media-queries-with-aem-pages}
+### Uso de Consultas de medios con páginas de AEM {#using-media-queries-with-aem-pages}
 
 Incluya la carpeta de la biblioteca de cliente en la secuencia de comandos JSP del componente de página para generar el archivo CSS que incluye las consultas de medios y para hacer referencia al archivo.
 
@@ -157,8 +160,8 @@ Incluya la carpeta de la biblioteca de cliente en la secuencia de comandos JSP d
 ```
 
 >[!NOTE]
-> La carpeta de la biblioteca del `apps.weretail.all` cliente incrusta la biblioteca clientlibs.
-
+>
+>La carpeta de la biblioteca del `apps.weretail.all` cliente incrusta la biblioteca clientlibs.
 
 La secuencia de comandos JSP genera el siguiente código HTML que hace referencia a las hojas de estilo:
 
@@ -169,13 +172,13 @@ La secuencia de comandos JSP genera el siguiente código HTML que hace referenci
 
 ## Vista previa para dispositivos específicos {#previewing-for-specific-devices}
 
-Vea las vistas previas de las páginas en diferentes tamaños de ventanilla para probar el comportamiento del diseño interactivo. En el modo **[!UICONTROL Vista previa]** , la **[!UICONTROL barra de tareas]** incluye un menú desplegable **[!UICONTROL Dispositivos]** que se utiliza para seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
+Consulte previsualizaciones de las páginas en diferentes tamaños de ventanilla para probar el comportamiento del diseño interactivo. En el modo de **[!UICONTROL Previsualización]** , la **[!UICONTROL barra de tareas]** incluye un menú desplegable **[!UICONTROL Dispositivos]** que se utiliza para seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
 
 ![climage_1-5](assets/chlimage_1-5a.png)
 
-Para habilitar la vista previa del dispositivo en la **[!UICONTROL barra de tareas]**, debe configurar la página y el servicio **[!UICONTROL MobileEmulatorProvider]** . Otra configuración de página controla la lista de dispositivos que aparece en la lista **[!UICONTROL Dispositivos]** .
+Para habilitar la previsualización del dispositivo en la **[!UICONTROL barra de tareas]**, debe configurar la página y el servicio **[!UICONTROL MobileEmulatorProvider]** . Otra configuración de página controla la lista de los dispositivos que aparecen en la lista **[!UICONTROL Dispositivos]** .
 
-### Adición de la lista de dispositivos {#adding-the-devices-list}
+### Añadir la Lista Dispositivos {#adding-the-devices-list}
 
 La lista **[!UICONTROL Dispositivos]** aparece en la **[!UICONTROL barra de tareas]** cuando la página incluye la secuencia de comandos JSP que procesa la lista **[!UICONTROL Dispositivos]** . Para agregar la lista **[!UICONTROL Dispositivos]** a la **[!UICONTROL barra de tareas]**, incluya la `/libs/wcm/mobile/components/simulator/simulator.jsp` secuencia de comandos en la `head` sección de la página.
 
@@ -200,7 +203,7 @@ Por ejemplo, para crear un ` [sling:OsgiConfig](/help/sites-deploying/configurin
 
 * jcr:primaryType: `sling:OsgiConfig`
 
-Agregue la siguiente propiedad node:
+Añada la siguiente propiedad node:
 
 * Nombre: `mobile.resourceTypes`
 * Tipo: `String[]`
@@ -234,23 +237,23 @@ Utilice la consola Herramientas para [crear y editar grupos](/help/sites-develop
 
 ## Uso de imágenes adaptables {#using-adaptive-images}
 
-Las consultas de medios se pueden utilizar para seleccionar un recurso de imagen que se mostrará en la página. Sin embargo, todos los recursos que utilizan una consulta de medios para condicionalizar su uso se descargan al cliente. La consulta de medios simplemente determina si se muestra el recurso descargado.
+Puede utilizar consultas de medios para seleccionar un recurso de imagen para mostrarlo en la página. Sin embargo, todos los recursos que utilizan una consulta de medios para condicionalizar su uso se descargan al cliente. La consulta de medios simplemente determina si se muestra el recurso descargado.
 
 Para recursos de gran tamaño como imágenes, la descarga de todos los recursos no es un uso eficaz de la canalización de datos del cliente. Para descargar recursos de forma selectiva, utilice javascript para iniciar la solicitud de recursos después de que las consultas de medios realicen la selección.
 
 La siguiente estrategia carga un único recurso que se elige mediante consultas de medios:
 
-1. Agregue un elemento DIV para cada versión del recurso. Incluya el URI del recurso como el valor de un valor de atributo. El explorador no interpreta el atributo como un recurso.
-1. Agregue una consulta de medios a cada elemento DIV que sea adecuado para el recurso.
+1. Añada un elemento DIV para cada versión del recurso. Incluya el URI del recurso como el valor de un valor de atributo. El explorador no interpreta el atributo como un recurso.
+1. Añada una consulta de medios a cada elemento DIV adecuado para el recurso.
 1. Cuando se carga el documento o se cambia el tamaño de la ventana, el código javascript prueba la consulta de medios de cada elemento DIV.
 1. En función de los resultados de las consultas, determine qué recurso incluir.
 1. Inserte un elemento HTML en el DOM que haga referencia al recurso.
 
-### Evaluación de consultas de medios mediante Javascript {#evaluating-media-queries-using-javascript}
+### Evaluación de consultas de medios con Javascript {#evaluating-media-queries-using-javascript}
 
-Las implementaciones de la interfaz [](https://dev.w3.org/csswg/cssom-view/#the-mediaquerylist-interface) MediaQueryList que define el W3C le permiten evaluar consultas de medios mediante javascript. Puede aplicar lógica a los resultados de la consulta de medios y ejecutar secuencias de comandos dirigidas a la ventana actual:
+Las implementaciones de la interfaz [de](https://dev.w3.org/csswg/cssom-view/#the-mediaquerylist-interface) MediaQueryList que define W3C le permiten evaluar consultas de medios mediante javascript. Puede aplicar lógica a los resultados de la consulta de medios y ejecutar secuencias de comandos dirigidas a la ventana actual:
 
-* Los navegadores que implementan la interfaz MediaQueryList admiten la `window.matchMedia()` función. Esta función prueba las consultas de medios con una cadena determinada. La función devuelve un `MediaQueryList` objeto que proporciona acceso a los resultados de la consulta.
+* Los navegadores que implementan la interfaz MediaQueryList admiten la `window.matchMedia()` función. Esta función prueba consultas de medios con una cadena determinada. La función devuelve un `MediaQueryList` objeto que proporciona acceso a los resultados de la consulta.
 
 * Para los exploradores que no implementan la interfaz, puede utilizar un `matchMedia()` relleno politécnico, como [matchMedia.js](https://github.com/paulirish/matchMedia.js), una biblioteca de javascript de libre acceso.
 
@@ -295,10 +298,10 @@ Obtenga las siguientes bibliotecas de javascript e inclúyalas en una carpeta de
 
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) (para exploradores que no implementan la interfaz MediaQueryList)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
-* jquery.js (disponible mediante la carpeta de la biblioteca del `/etc/clientlibs/granite/jquery` cliente (category = jquery)
+* jquery.js (disponible mediante la carpeta de la biblioteca del `/etc/clientlibs/granite/jquery` cliente (categoría = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (un evento jquery que se produce una vez después de cambiar el tamaño de la ventana)
 
-**** Sugerencia: Puede concatenar automáticamente varias carpetas de bibliotecas de cliente [incrustando](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
+**Sugerencia:** Puede concatenar automáticamente varias carpetas de bibliotecas de cliente [incrustando](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
 
 **HTML**
 
@@ -320,6 +323,7 @@ El siguiente ejemplo de HTML selecciona entre dos representaciones DAM de la mis
 >
 >* Carpeta de biblioteca de cliente: `/libs/foundation/components/adaptiveimage/clientlibs`
 >* Secuencia de comandos que genera el código HTML: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
+
 >
 >
 La sección siguiente proporciona detalles sobre este componente.
@@ -381,11 +385,11 @@ AEM instala las siguientes implementaciones que puede utilizar o ampliar.
 
 El componente de imagen adaptable genera llamadas al servlet de componente de imagen adaptable para procesar una imagen cuyo tamaño se ajusta a la pantalla del dispositivo. El componente incluye los siguientes recursos:
 
-* JSP: Agrega elementos div que asocian consultas de medios con llamadas al servlet del componente de imagen adaptable.
+* JSP: Añade elementos div que asocian consultas de medios con llamadas al servlet del componente de imagen adaptable.
 * Bibliotecas de clientes: La carpeta clientlibs es una `cq:ClientLibraryFolder` que agrupa la biblioteca de javascript matchMedia polyfill y una biblioteca de javascript modificada de Picturefill.
-* Cuadro de diálogo Editar: El `cq:editConfig` nodo anula el componente de imagen de base de CQ, de modo que el destino de colocación crea un componente de imagen adaptable en lugar de un componente de imagen de base.
+* Cuadro de diálogo Editar: El `cq:editConfig` nodo anula el componente de imagen de base de CQ, de modo que el destinatario de colocación crea un componente de imagen adaptable en lugar de un componente de imagen de base.
 
-#### Adición de elementos DIV {#adding-the-div-elements}
+#### Añadir los elementos DIV {#adding-the-div-elements}
 
 La secuencia de comandos adaptive-image.jsp incluye el siguiente código que genera elementos div y consultas de medios:
 
@@ -409,7 +413,7 @@ La `path` variable contiene la ruta del recurso actual (el nodo del componente d
 
 `<div data-scr = "*path-to-parent-node*.adaptive-image.adapt.*width*.*quality*.jpg" data-media="*media query*"></div>`
 
-El valor del `data-scr` atributo es una URL que Sling se resuelve en el servlet del componente de imagen adaptable que procesa la imagen. El atributo data-media contiene la consulta de medios que se evalúa según las propiedades del cliente.
+El valor del `data-scr` atributo es una URL que Sling se resuelve en el servlet del componente de imagen adaptable que procesa la imagen. El atributo data-media contiene la consulta de medios que se evalúa en relación con las propiedades del cliente.
 
 El siguiente código HTML es un ejemplo de los `div` elementos que genera JSP:
 
@@ -494,7 +498,7 @@ Para obtener información sobre cómo configurar los servicios de AEM, consulte 
      <li>Para eliminar un ancho admitido, haga clic en el botón - asociado.</li>
      <li>Para modificar un ancho admitido, edite el valor del campo.</li>
     </ul> </td>
-   <td><p>adaptación.supported.widths</p>
+   <td><p>adapt.supported.widths</p>
     <ul>
      <li>La propiedad es un valor de tipo String multivalor.</li>
     </ul> </td>
@@ -557,7 +561,7 @@ El servlet está enlazado a `cq:page` los recursos y admite la extensión de arc
 
 `path-to-page-node.image.jpg`
 
-Por ejemplo, Sling reenvía solicitudes HTTP con la dirección URL `http://localhost:4502/content/geometrixx/en.image.jpg` al servlet de modificación de referencia de imagen.
+Por ejemplo, Sling reenvía solicitudes HTTP con la URL `http://localhost:4502/content/geometrixx/en.image.jpg` al servlet de modificación de referencia de imagen.
 
 Tres selectores adicionales especifican la anchura, la altura y la calidad (opcional) de la imagen solicitada. El ejemplo siguiente solicita una imagen de anchura de 770 píxeles, altura de 360 píxeles y calidad media.
 
@@ -667,7 +671,7 @@ Si no está familiarizado con las cuadrículas fluidas, consulte la sección [In
 
 Utilice los componentes de página para generar los elementos HTML que definen los bloques de contenido de la página. ClientLibraryFolder al que hace referencia la página proporciona la CSS que controla el diseño de los bloques de contenido:
 
-* Componente de página: Agrega elementos div que representan filas de bloques de contenido. Los elementos div que representan bloques de contenido incluyen un componente parsys en el que los autores agregan contenido.
+* Componente de página: Añade elementos div que representan filas de bloques de contenido. Los elementos div que representan bloques de contenido incluyen un componente parsys en el que los autores agregan contenido.
 * Carpeta de biblioteca de cliente: Proporciona el archivo CSS que incluye consultas de medios y estilos para los elementos div.
 
 Por ejemplo, la aplicación geometrixx-media de ejemplo contiene el componente media-home. Este componente de página inserta dos secuencias de comandos que generan dos `div` elementos de clase `row-fluid`:
@@ -703,7 +707,7 @@ Por ejemplo, la aplicación geometrixx-media de ejemplo contiene el componente m
 
 El diseño asociado al componente de página geometrixx-media (`/etc/designs/geometrixx-media`) contiene `clientlibs` ClientLibraryFolder. Esta ClientLibraryFolder define estilos CSS para `row-fluid` clases, `span*` clases y `span*` clases que son secundarias de `row-fluid` clases. Las consultas de medios permiten redefinir estilos para diferentes tamaños de ventanilla.
 
-El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto se centra en clases `span12`, `span8`clases y `span4` consultas de medios para dos tamaños de ventanilla. Observe las siguientes características de la CSS:
+El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto se centra en `span12`clases, `span8`clases y `span4` consultas de medios para dos tamaños de ventanilla. Observe las siguientes características de la CSS:
 
 * Los estilos `.span` definen los anchos de los elementos mediante números absolutos.
 * Los estilos `.row-fluid .span*` definen los anchos de los elementos como porcentajes del elemento principal. Los porcentajes se calculan a partir de los anchos absolutos.
@@ -711,7 +715,7 @@ El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto 
 
 >[!NOTE]
 >
->El ejemplo de Geometrixx Media integra el marco de Javascript de [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) en su implementación de cuadrícula fluida. El marco de Bootstrap proporciona el archivo bootstrap.css.
+>El ejemplo de Geometrixx Media integra el marco de trabajo de JavaScript de [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) en su implementación de cuadrícula fluida. El marco de Bootstrap proporciona el archivo bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -743,7 +747,7 @@ El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto 
 
 #### Cambio de posición del contenido en la cuadrícula de componentes Página {#repositioning-content-in-the-page-component-grid}
 
-Las páginas de la aplicación de medios de Geometrixx de muestra distribuyen filas de bloques de contenido horizontalmente en ventanillas móviles anchas. En ventanillas móviles más pequeñas, los mismos bloques se distribuyen verticalmente. El siguiente ejemplo de CSS muestra los estilos que implementan este comportamiento para el código HTML que genera el componente de página media-principal:
+Las páginas de la aplicación de medios de Geometrixx de muestra distribuyen filas de bloques de contenido horizontalmente en ventanillas móviles anchas. En ventanillas móviles más pequeñas, los mismos bloques se distribuyen verticalmente. El siguiente ejemplo de CSS muestra los estilos que implementan este comportamiento para el código HTML que genera el componente de página de inicio de medios:
 
 * La CSS predeterminada para la página de bienvenida de medios asigna el `float:left` estilo a `span*` las clases que están dentro de `row-fluid` las clases.
 
@@ -782,7 +786,7 @@ Cree varias secuencias de comandos JSP que generen combinaciones de filas y colu
 
 **Organizar estilos CSS según el tamaño de la ventanilla de destino**
 
-Incluya estilos CSS y consultas de medios para diferentes tamaños de ventanilla en archivos independientes. Utilice las carpetas de la biblioteca del cliente para concatenarlas.
+Incluya estilos CSS y consultas multimedia para diferentes tamaños de ventanilla en archivos independientes. Utilice las carpetas de la biblioteca del cliente para concatenarlas.
 
 ### Inserción de componentes en la cuadrícula de la página {#inserting-components-into-the-page-grid}
 
@@ -876,7 +880,7 @@ Determine las columnas y filas que necesita para colocar los bloques de contenid
 
 **Número de columnas**
 
-Incluya suficientes columnas para colocar horizontalmente los bloques de contenido en todos los diseños, para todos los tamaños de las ventanillas móviles. Debe utilizar más columnas de las que se necesitan actualmente para dar cabida a futuros diseños de página.
+Incluya suficientes columnas para colocar horizontalmente los bloques de contenido en todos los diseños, para todos los tamaños de la ventanilla. Debe utilizar más columnas de las que se necesitan actualmente para dar cabida a futuros diseños de página.
 
 **Contenido de fila**
 
@@ -929,14 +933,14 @@ Utilice el siguiente algoritmo como punto de partida para desarrollar las clases
 1. Defina una clase CSS para elementos div que representen filas, como `row-fluid`.
 1. Defina los nombres de clase para los elementos de bloque de contenido. Se requiere una clase para todos los anchos posibles, en términos de grupos de columnas. Por ejemplo, utilice la `span3` clase para `div` elementos que abarcan 3 columnas y `span4` clases para grupos de 4 columnas. Defina tantas clases como columnas haya en la cuadrícula.
 
-1. Para cada tamaño de ventanilla que vaya a segmentar, agregue la consulta de medios correspondiente al archivo CSS. Agregue los siguientes elementos en cada consulta de medios:
+1. Para cada tamaño de ventanilla que vaya a segmentar, agregue la consulta de medios correspondiente al archivo CSS. Añada los siguientes elementos en cada consulta de medios:
 
    * Un selector para la `content` clase, por ejemplo `.content{}`.
    * Selectores para cada clase span, por ejemplo `.span3{ }`.
    * Un selector para la `row-fluid` clase, por ejemplo `.row-fluid{ }`
    * Selectores para clases span que están dentro de clases de fluido de fila, por ejemplo `.row-fluid span3 { }`.
 
-1. Agregue estilos de ancho para cada selector:
+1. Añadir estilos de ancho para cada selector:
 
    1. Establezca el ancho de `content` los selectores en el tamaño absoluto de la página, por ejemplo `width:480px`.
    1. Establezca el ancho de todos los selectores de fluido de fila en 100%.
@@ -951,7 +955,7 @@ Utilice el estilo flotante de la `.row-fluid` clase para controlar si los bloque
 
 * El `float:none` estilo provoca la distribución vertical de elementos secundarios.
 
-Agregue el estilo al `.row-fluid` selector dentro de cada consulta de medios. Establezca el valor según el diseño de página que esté utilizando para esa consulta de medios. Por ejemplo, el diagrama siguiente ilustra una fila que distribuye contenido horizontalmente para ventanillas móviles anchas y verticalmente para ventanillas móviles estrechas.
+Añada el estilo en el `.row-fluid` selector dentro de cada consulta de medios. Establezca el valor según el diseño de página que esté utilizando para esa consulta de medios. Por ejemplo, el diagrama siguiente ilustra una fila que distribuye contenido horizontalmente para ventanillas móviles anchas y verticalmente para ventanillas móviles estrechas.
 
 ![](do-not-localize/chlimage_1-3a.png)
 
