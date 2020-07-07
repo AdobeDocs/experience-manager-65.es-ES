@@ -1,11 +1,11 @@
 ---
-title: Ampliar la funcionalidad de búsqueda de Recursos Adobe Experience Manager
+title: Ampliar la funcionalidad de búsqueda de Adobe Experience Manager Assets
 description: Extienda las capacidades de búsqueda de Recursos Adobe Experience Manager más allá de los valores predeterminados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ Para superponer los predicados preconfigurados, copie el `facets` nodo de `/libs
 
 >[!NOTE]
 >
->De forma predeterminada, la estructura de directorio bajo / `apps` no existe y debe crearse. Asegúrese de que los tipos de nodo coinciden con los de / `libs`.
+>De forma predeterminada, la estructura de directorio en `/apps` no existe, así que créela. Asegúrese de que los tipos de nodo coincidan con los de `/libs`.
 
 ## Añadir fichas {#adding-tabs}
 
@@ -48,7 +48,7 @@ Puede agregar fichas de búsqueda adicionales configurándolas en la interfaz de
 
 [!DNL Assets] viene con un conjunto de predicados predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en la [creación y configuración de una página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de recurso compartido.
 
-Además de usar predicados preexistentes, los desarrolladores de Experience Manager también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Consulta Builder.
+Además de utilizar predicados preexistentes, los desarrolladores de Experience Manager también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Consulta Builder.
 
 La creación de predicados personalizados requiere conocimientos básicos sobre el marco [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)utilidades.
 
@@ -298,4 +298,4 @@ Los siguientes predicados están disponibles como utilidades preconfiguradas de 
 
 La presentación de los resultados de la búsqueda en una página de uso compartido de recursos se rige por la lente seleccionada. Experience Manager Assets incluye un conjunto de objetivos predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en [Creación y configuración de una página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de uso compartido de recursos.
 
-Además de utilizar objetivos preexistentes, los desarrolladores de Experience Manager también pueden crear sus propios objetivos.
+Además de usar objetivos preexistentes, los desarrolladores de Experience Manager también pueden crear sus propios objetivos.
