@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '1729'
+ht-degree: 3%
 
 ---
 
@@ -26,10 +29,9 @@ Para empezar a crear un nuevo sitio de comunidad:
 
 Uso de la instancia de [autor](https://localhost:4502/)
 
-* Inicio de sesión con privilegios de administrador
-* Vaya a **[!UICONTROL Comunidades > Sitios]**
+* Inicie sesión con privilegios de administrador y vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]**.
 
-* Seleccione **Crear**
+* Seleccione **Crear**.
 
 ### Paso 1: Plantilla de sitio {#step-site-template}
 
@@ -37,7 +39,7 @@ Uso de la instancia de [autor](https://localhost:4502/)
 
 En el paso Plantilla **de** sitio, escriba un título, una descripción, el nombre de la dirección URL y seleccione una plantilla de sitio de comunidad, por ejemplo:
 
-* **Título del sitio de la comunidad**: `Enablement Tutorial`
+* **Título del sitio de la comunidad**: `Enablement Tutorial`.
 
 * **Descripción del sitio de la comunidad**: `A site for enabling the community to learn.`
 
@@ -54,7 +56,7 @@ En el paso Plantilla **de** sitio, escriba un título, una descripción, el nomb
 
 * **Plantilla** de sitio de referencia: desplegable para elegir `Reference Structured Learning Site Template`
 
-Seleccione **Siguiente**
+Seleccione **Siguiente**.
 
 ### Paso 2: Diseño {#step-design}
 
@@ -66,9 +68,11 @@ Seleccione el estilo que desee aplicar a la plantilla. Cuando se selecciona, el 
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-(opcional) Cargue una imagen de pancarta para mostrarla en las páginas del sitio. La pancarta se fija en el borde izquierdo del explorador, entre el encabezado del sitio de la comunidad y el menú (vínculos de navegación). La altura de la pancarta se recorta a 120 píxeles. No se puede cambiar el tamaño del letrero para que se ajuste al ancho del navegador y a la altura de 120 píxeles.
+(Opcional) Cargue una imagen de pancarta para mostrarla en las páginas del sitio. La pancarta se fija en el borde izquierdo del explorador, entre el encabezado del sitio de la comunidad y el menú (vínculos de navegación). La altura de la pancarta se recorta a 120 píxeles. No se puede cambiar el tamaño del letrero para que se ajuste al ancho del navegador y a la altura de 120 píxeles.
 
-![chlimage_1-2](assets/chlimage_1-2.png) ![chlimage_1](assets/chlimage_1.jpeg)
+![chlimage_1-449](assets/chlimage_1-449.png)
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 Seleccione **Siguiente**.
 
@@ -84,13 +88,13 @@ Un sitio de la comunidad es privado cuando se deniega el acceso a los visitantes
 
 Asegúrese de que la mayoría de las casillas de verificación no están seleccionadas para Administración [de usuarios](/help/communities/sites-console.md#user-management) :
 
-* NO permitir que los visitantes del sitio se automatriculen
-* NO permitir que visitantes anónimos del sitio realicen vistas en el sitio
-* Opcional si se permite o no la mensajería entre los miembros de la comunidad
-* NO permitir el inicio de sesión con Facebook
-* NO permitir el inicio de sesión con Twitter
+* NO permita que los visitantes del sitio se autorregistren.
+* NO permita que visitantes anónimos del sitio realicen vistas en el sitio.
+* Opcional si se permite o no la mensajería entre los miembros de la comunidad.
+* NO permitir el inicio de sesión con Facebook.
+* NO permitir el inicio de sesión con Twitter.
 
-![climage_1-3](assets/chlimage_1-3.png)
+![user-mgmt](assets/user-mgmt.png)
 
 #### TAGGING {#tagging}
 
@@ -103,7 +107,7 @@ La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Po
 * Tipo `tut`
 * Seleccione `Tutorial`
 
-![climage_1-4](assets/chlimage_1-4.png)
+![habilitación y etiquetado](assets/enablement-tagging.png)
 
 ### ROLES {#roles}
 
@@ -120,13 +124,14 @@ Por ejemplo,
 >
 >[El servicio](/help/communities/deploy-communities.md#tunnel-service-on-author) de túnel permite seleccionar miembros y grupos que solo existen en el entorno de publicación.
 
+
 ![roles de habilitación](assets/site-admin.png)
 
 #### MODERATION {#moderation}
 
 Acepte la configuración global predeterminada para [moderar](/help/communities/sites-console.md#moderation) el contenido generado por el usuario (UGC).
 
-![climage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-452](assets/chlimage_1-452.png)
 
 #### ANALYTICS {#analytics}
 
@@ -134,7 +139,7 @@ En la lista desplegable, seleccione el marco de servicios en la nube de Analytic
 
 La selección que se ve en la captura de pantalla, `Communities`es el ejemplo de marco de la documentación de [configuración.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![climage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-454](assets/chlimage_1-454.png)
 
 #### TRANSLATION {#translation}
 
@@ -143,20 +148,21 @@ La configuración [de](/help/communities/sites-console.md#translation) traducci�
 * Comprobar **Permitir traducción automática**
 * Usar la configuración predeterminada
 
-![climage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-456](assets/chlimage_1-456.png)
 
 #### ENABLEMENT {#enablement}
 
 Para una comunidad de habilitación, es necesario identificar uno o varios administradores de habilitación de la comunidad.
 
-* **Administradores** de habilitación (obligatorios) Los miembros del `Community Enablement Managers` grupo están disponibles para ser seleccionados para administrar este sitio de comunidad.
+* **Administradores** de habilitación (requeridos) Miembros de la 
+`Community Enablement Managers` están disponibles para ser seleccionados para administrar este sitio de comunidad.
 
    * Tipo `s`
    * Seleccione `Sirius Nilson`
 
-* **ID** de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) en el sistema de informes de activación.
+* **ID** de organización de Marketing Cloud (opcional) El ID de una cuenta de Analytics de Adobe que es necesario para incluir [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) en el sistema de informes de activación.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-457](assets/chlimage_1-457.png)
 
 Seleccione **Siguiente**.
 
@@ -164,7 +170,7 @@ Seleccione **Siguiente**.
 
 Seleccione **Crear.**
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-458](assets/chlimage_1-458.png)
 
 Cuando se completa el proceso, la carpeta del nuevo sitio se muestra en la consola Comunidades > Sitios.
 
@@ -174,7 +180,7 @@ Cuando se completa el proceso, la carpeta del nuevo sitio se muestra en la conso
 
 El sitio creado debe administrarse desde la consola Comunidades - Sitios, la misma consola desde la que se pueden crear nuevos sitios.
 
-Después de seleccionar la carpeta del sitio de la comunidad, coloque el puntero sobre el icono del sitio para que aparezcan cuatro iconos de acción:
+Después de seleccionar la carpeta del sitio de comunidad, coloque el puntero sobre el icono del sitio para que aparezcan cuatro iconos de acción:
 
 ![siteactionicons](assets/siteactionicons.png)
 
@@ -182,19 +188,19 @@ Al seleccionar el icono de elipses (icono Más acciones), aparecen las opciones 
 
 ![siteactionsnew](assets/siteactionsnew.png)
 
-De izquierda a derecha están :
+De izquierda a derecha están:
 
 * **Abrir sitio**
 
-   Seleccione el icono del lápiz para abrir el sitio de la comunidad en modo de edición de autor, para agregar o configurar componentes de página
+   Seleccione el icono de lápiz para abrir el sitio de comunidad en modo de edición de autor, para agregar o configurar componentes de página.
 
 * **Editar sitio**
 
-   Seleccione el icono de propiedades para abrir el sitio de la comunidad y modificar las propiedades, como el título o cambiar el tema
+   Seleccione el icono de propiedades para abrir el sitio de la comunidad y modificar las propiedades, como el título, o para cambiar el tema.
 
 * **Publicar sitio**
 
-   Seleccione el icono mundial para publicar el sitio de comunidad (en localhost:4503 de forma predeterminada)
+   Seleccione el icono mundial para publicar el sitio de comunidad (en localhost:4503 de forma predeterminada).
 
 * **Exportar sitio**
 
@@ -205,17 +211,17 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 
    Para eliminar el sitio de comunidad, seleccione el icono Eliminar sitio que aparece al pasar el ratón sobre el sitio en la Consola de sitio de comunidades. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, recursos y registros de bases de datos.
 
-![enablesiteactions](assets/enablesiteactions.png)
+   ![enablesiteactions](assets/enablesiteactions.png)
 
 #### Seleccione Publicar {#select-publish}
 
 Seleccione el icono del mundo para publicar el sitio de la comunidad.
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![chlimage_1-465](assets/chlimage_1-465.png)
 
 Habrá una indicación de que el sitio fue publicado.
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-466](assets/chlimage_1-466.png)
 
 ## Usuarios y grupos de usuarios de la comunidad {#community-users-user-groups}
 
@@ -223,9 +229,9 @@ Habrá una indicación de que el sitio fue publicado.
 
 Junto con el nuevo sitio de comunidad, se crean nuevos grupos de usuarios que tienen los permisos adecuados establecidos para diversas funciones administrativas. Para obtener más información, visite Grupos [de usuarios para sitios](/help/communities/users.md#usergroupsforcommunitysites)de la comunidad.
 
-Para este nuevo sitio de comunidad, dado el nombre del sitio &quot;habilitar&quot; en el paso 1, los nuevos grupos de usuarios que existen en el entorno de publicación pueden verse desde la consola [Miembros y grupos de](/help/communities/members.md#groups-console) comunidades:
+Para este nuevo sitio de comunidad, dado el nombre del sitio &quot;habilitar&quot; en el paso 1, los nuevos grupos de usuarios que existen en el entorno de publicación pueden verse desde la consola [Miembros y grupos de](/help/communities/members.md#groups-console)comunidades:
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![community_usergroup](assets/community_usergroup.png)
 
 ### Asignar miembros a un grupo de miembros de habilitación de comunidad {#assign-members-to-community-enable-members-group}
 
@@ -244,19 +250,19 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 * Seleccione **Guardar**
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-418](assets/chlimage_1-418.png)
 
 ## Configuraciones al publicar {#configurations-on-publish}
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ### Error de configuración para autenticación {#configure-for-authentication-error}
 
 Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](/help/communities/sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación volverá a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
-Añadir un `Login Page Mapping` como
+Añadir un `Login Page Mapping` como:
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -266,7 +272,7 @@ Al trabajar con el sitio de publicación con fines de demostración, puede resul
 
 Para ello, es necesario utilizar [CRX|DE](https://localhost:4503/crx/de) Lite para editar la tabla de asignación [de](/help/sites-deploying/resource-mapping.md) recursos al realizar la publicación.
 
-Para empezar
+Para empezar:
 
 1. Al realizar la publicación, acceda a CRXDE e inicie sesión con privilegios de administrador
 
@@ -290,6 +296,7 @@ Para empezar
       * **Nombre** sling:match
       * **Cadena de tipo**
       * **Valor** localhost.4503/$
+
    (debe terminar con &#39;$&#39; char)
 
    * Añadir propiedad
@@ -309,17 +316,18 @@ Para empezar
 >
 >Para deshabilitar, simplemente anteponga el valor de la `sling:match` propiedad con una &#39;x&#39; - `xlocalhost.4503/$` - y **Guardar todo**.
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+
+![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
 Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador de &#39;puntos&#39; y no `localhost:4503` con un separador de &#39;dos puntos&#39;, ya que no `localhost` es un prefijo de Área de nombres válido.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
-El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión normal es crucial, por lo que solo `https://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
+El valor &#39;**$**&#39; al final de la cadena de expresión normal `sling:match` es crucial, por lo que solo `https://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
 
 ## Modificación del sitio de comunidad {#modifying-the-community-site}
 
@@ -332,6 +340,7 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 >[!NOTE]
 >
 >Si no está familiarizado con AEM, vista la documentación sobre la gestión [](/help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
+
 
 ### Añadir un catálogo {#add-a-catalog}
 
@@ -350,13 +359,14 @@ Seleccione el panel ESTRUCTURA para añadir un catálogo o modificar uno existen
 * **URL**: `catalog`
 
 * **Seleccionar todas las Áreas de nombres**: dejar como predeterminado.
-* select **Save**
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+* Seleccione **Guardar**.
+
+![chlimage_1-299](assets/chlimage_1-299.png)
 
 Utilice el icono Posición para mover la función Catálogo a la segunda posición, después de Asignaciones.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-300](assets/chlimage_1-300.png)
 
 Seleccione **Guardar** en la esquina superior derecha para guardar los cambios en el sitio de comunidad.
 
