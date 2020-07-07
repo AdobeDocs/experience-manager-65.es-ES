@@ -3,7 +3,7 @@ title: Activos relacionados
 description: Aprenda a relacionar recursos digitales que comparten algunos atributos comunes. También cree relaciones derivadas de origen entre recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -17,8 +17,9 @@ ht-degree: 0%
 
 Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja resolución o un archivo JPG con proveedores o agencias y de hacer que el archivo INDD de alta resolución solo esté disponible bajo petición.
 
->[!NOTE] Solo los usuarios con permisos de edición de recursos pueden relacionar y desrelacionar los recursos.
+>[!NOTE]
 >
+>Solo los usuarios con permisos de edición de recursos pueden relacionar y desrelacionar los recursos.
 
 ## Relate assets {#relating-assets}
 
@@ -45,7 +46,6 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
    * Para relacionar el archivo de origen del recurso, seleccione **[!UICONTROL Origen]** en la lista.
    * Para relacionar un archivo derivado, seleccione **[!UICONTROL Derivado]** de la lista.
    * Para crear una relación bidireccional entre los recursos, seleccione **[!UICONTROL Otros]** en la lista.
-
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. En la pantalla **[!UICONTROL Seleccionar recurso]** , navegue hasta la ubicación del recurso que desee relacionar y selecciónelo.
