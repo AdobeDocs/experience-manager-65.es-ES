@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a7c2d71798649050f2f7852251996c2edf1cf113
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
@@ -102,6 +105,7 @@ Consulte también Personalizaciones del lado del [cliente](/help/communities/cli
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 Por ejemplo:
