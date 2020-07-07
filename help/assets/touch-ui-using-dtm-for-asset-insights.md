@@ -3,7 +3,7 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -45,15 +45,15 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas > Recursos]**.
+1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]**.
 1. Haga clic en **[!UICONTROL Rastreador]** de páginas de perspectivas, copie el código del rastreador y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` se elimina. Se espera que esté disponible a través de la herramienta Adobe Analytics de la DTM.
-   > * Se elimina la llamada a `assetAnalytics.dispatcher.init`(). Se espera que se llame a la función una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
-   > * Según el lugar en el que esté alojado el rastreador de páginas de perspectivas de recursos (por ejemplo, Experience Manager, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
-   > * Para el Rastreador de páginas alojado por el Experience Manager, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
+   >* `AppMeasurement.js` se elimina. Se espera que esté disponible a través de la herramienta Adobe Analytics de la DTM.
+   >* La llamada a `assetAnalytics.dispatcher.init()` se elimina. Se espera que se llame a la función una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
+   >* Según el lugar en el que esté alojado el rastreador de páginas de perspectivas de recursos (por ejemplo, Experience Manager, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
+   >* Para el Rastreador de páginas alojado por el Experience Manager, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
 
 
 1. Acceso `https://dtm.adobe.com`. Haga clic en **[!UICONTROL Información general]** en la propiedad web y haga clic en **[!UICONTROL Añadir herramienta]** o abra una herramienta Analytics de Adobe existente. Al crear la herramienta, puede establecer el método **** de configuración en **[!UICONTROL Automático]**.
