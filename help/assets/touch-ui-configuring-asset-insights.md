@@ -1,9 +1,12 @@
 ---
 title: Configure las perspectivas de recursos para obtener análisis de uso de recursos digitales.
-description: Configure las perspectivas de recursos en [!DNL Recursos Adobe Experience Manager].
+description: Configurar perspectivas de recursos en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 1. Haga clic en la tarjeta **[!UICONTROL Configuración de información]**.
 1. En el asistente, seleccione un centro de datos y proporcione sus credenciales, incluido el nombre de su organización, el nombre de usuario y Shared Secret.
 
-   ![Configuración de Adobe Analytics para perspectivas de recursos en Experience Manager](assets/insights_config2.png)
+   ![Configuración de Adobe Analytics para Assets Insights en Experience Manager](assets/insights_config2.png)
 
    *Figura: Configurar[!DNL Adobe Analytics]para perspectivas de recursos en[!DNL Experience Manager].*
 
