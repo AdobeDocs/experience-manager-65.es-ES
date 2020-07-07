@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Según el tipo de aplicación cliente, puede escribir el formulario en un navega
 
 >[!NOTE]
 >
-> Para obtener información sobre la creación de una aplicación web que utilice servlets de Java para invocar el servicio Forms, consulte [Creación de Aplicaciones web que procesen formularios](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Para obtener información sobre la creación de una aplicación web que utilice servlets de Java para invocar el servicio Forms, consulte [Creación de Aplicaciones web que procesen formularios](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 Puede pasar un diseño de formulario (un archivo XDP) o un documento PDF al servicio Forms de una de las dos formas siguientes:
 
@@ -41,7 +44,7 @@ Puede pasar un diseño de formulario (un archivo XDP) o un documento PDF al serv
 
 Puede realizar estas tareas mediante el servicio Forms:
 
-* Representar formularios PDF interactivos. (Consulte [Representación de formularios](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interactivos).
+* Representar PDF forms interactivos. (Consulte [Representación de PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interactivos).
 * Procesar formularios en el cliente. (Consulte [Representación de formularios en el cliente](/help/forms/developing/rendering-forms-client.md)).
 * Procesar formularios basados en fragmentos. (Consulte [Representación de formularios basados en fragmentos](/help/forms/developing/rendering-forms-based-fragments.md)).
 * Representar formularios habilitados para derechos. (Consulte [Representación de formularios](/help/forms/developing/rendering-rights-enabled-forms.md)habilitados para derechos).
