@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '6229'
 ht-degree: 2%
@@ -233,7 +233,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
        <li>devuelve el estado correcto si hace menos de 45 minutos </li>
       </ul> </li>
      <li>si no se cumple ninguna de estas condiciones, devuelve el estado Aceptar</li>
-    </ul> <p>Se pueden configurar los umbrales de estado Crítico y Advertir. El grano para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Esta comprobación de estado está disponible con AEM 6.4 y se ha admitido como AEM 6.3.0.1.</p> </td>
+    </ul> <p>Se pueden configurar los umbrales de estado Crítico y Advertir. El grano para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Esta comprobación de estado está disponible con AEM 6.4 y ha sido compatible con AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Índices grandes de Lucene</td>
@@ -589,7 +589,7 @@ Los Flujos de trabajo también se pueden purgar del Panel de mantenimiento. Para
 
 >[!NOTE]
 >
-> Para obtener información más detallada sobre el mantenimiento del flujo de trabajo, consulte [esta página](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Para obtener información más detallada sobre el mantenimiento del flujo de trabajo, consulte [esta página](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Mantenimiento del registro de auditoría {#audit-log-maintenance}
 
