@@ -4,7 +4,7 @@ description: Utilice recursos en varias páginas o carpetas que se deriven de lo
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '3368'
 ht-degree: 10%
@@ -61,14 +61,14 @@ MSM mantiene una relación activa entre el recurso de origen y sus copias activa
 
 Para crear una Live Copy desde uno o varios recursos o carpetas de origen, siga uno de estos procedimientos:
 
-* Método 1: Seleccione los recursos de origen y haga clic en **[!UICONTROL Crear > Live Copy]** en la barra de herramientas de la parte superior.
-* Método 2: En [!DNL Experience Manager] la interfaz de usuario, haga clic en **[!UICONTROL Crear > Live Copy]** desde la esquina superior derecha de la interfaz.
+* Método 1: Seleccione los recursos de origen y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** en la barra de herramientas de la parte superior.
+* Método 2: En [!DNL Experience Manager] la interfaz de usuario, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** desde la esquina superior derecha de la interfaz.
 
 Puede crear copias activas de un recurso o de una carpeta a la vez. Puede crear copias en vivo que se deriven de un recurso o de una carpeta que sea una copia en vivo. Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al intentar crear sus copias en vivo, los CF se copian como están sin ninguna relación. Los CF copiados son una instantánea a tiempo y no se actualizan cuando se actualizan los CF originales.
 
 Para crear copias en vivo con el primer método, siga estos pasos:
 
-1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear > Live Copy]**.
+1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]**.
 
    ![Crear Live Copy desde la interfaz de Experience Manager](assets/create_lc1.png)
 
@@ -80,7 +80,7 @@ Para crear copias en vivo con el primer método, siga estos pasos:
 
 Para crear copias en vivo con el segundo método, siga estos pasos:
 
-1. En [!DNL Experience Manager] la interfaz, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
+1. En [!DNL Experience Manager] la interfaz, en la esquina superior derecha, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]**.
 
    ![Crear Live Copy desde la interfaz de Experience Manager](assets/create_lc2.png)
 
