@@ -4,7 +4,10 @@ seo-title: Configuración de la configuración de fuera de la oficina
 description: Configuración de RConfiguración fuera de la oficina
 seo-description: Configuración de la configuración de fuera de la oficina
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 0%
 
 ---
 
@@ -23,10 +26,10 @@ Puede segregar la delegación de elementos en función de los modelos de flujo d
 
 >[!NOTE]
 >
-> * Cuando se activa la opción Fuera de la oficina, todos los elementos disponibles en la Bandeja de entrada, antes de habilitar la configuración, permanecen en la bandeja de entrada. Solo se delegan los elementos recibidos después de habilitar la configuración.
-> * Al desactivar la opción Desactivar Office, los elementos delegados no se le asignarán automáticamente. Puede utilizar la funcionalidad de notificación para asignarle artículos.
-> * Cuando el usuario A delega elementos en el usuario B y el usuario B delega elementos en el usuario C, los elementos se asignan únicamente al usuario C y no al usuario B.
-> * Cuando hay un bucle en la asignación, las tareas permanecen con el usuario original. Por ejemplo, cuando el usuario A delega elementos en el usuario B delega elementos en el usuario C, el usuario C delega en el usuario D y el usuario D delega en el usuario B, se crea un bucle en. En este caso, el elemento permanece con el usuario original. El usuario A es el usuario original en el ejemplo anterior.
+>* Cuando se activa la opción Fuera de la oficina, todos los elementos disponibles en la Bandeja de entrada, antes de habilitar la configuración, permanecen en la bandeja de entrada. Solo se delegan los elementos recibidos después de habilitar la configuración.
+>* Al desactivar la opción Desactivar Office, los elementos delegados no se le asignarán automáticamente. Puede utilizar la funcionalidad de notificación para asignarle artículos.
+>* Cuando el usuario A delega elementos en el usuario B y el usuario B delega elementos en el usuario C, los elementos se asignan únicamente al usuario C y no al usuario B.
+>* Cuando hay un bucle en la asignación, las tareas permanecen con el usuario original. Por ejemplo, cuando el usuario A delega elementos en el usuario B delega elementos en el usuario C, el usuario C delega en el usuario D y el usuario D delega en el usuario B, se crea un bucle en. En este caso, el elemento permanece con el usuario original. El usuario A es el usuario original en el ejemplo anterior.
 
 
 ## Habilite la configuración de Fuera de la oficina para su cuenta {#enable-out-of-office}
@@ -61,7 +64,7 @@ Ahora, los elementos asignados durante el período de tiempo fuera de la oficina
 >
 >(Solo para elementos de flujo de trabajo centrados en formularios) Active la opción **Permitir que el usuario asignado delegue mediante la opción** de configuración &#39;Fuera de la oficina&#39; del paso **Asignar tarea** en el flujo de trabajo. Solo se delegan a otros usuarios los elementos que tengan habilitada la opción mencionada.
 
-## Restricciones      {#limitations}
+## Restricciones     {#limitations}
 
 * No se admite la asignación de elementos a un grupo.
 * Actualmente no se admite la habilitación de Fuera de la oficina para tareas de proyectos.
