@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '16977'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ Puede realizar estas tareas mediante el servicio Signature:
 
 >[!NOTE]
 >
-> Para obtener más información sobre el servicio Signature, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio Signature, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Añadir campos de firma {#adding-signature-fields}
 
@@ -56,7 +59,7 @@ Puede agregar un campo de firma mediante programación mediante la API de Java d
 
 >[!NOTE]
 >
->Algunos tipos de documentos PDF no permiten agregar un campo de firma mediante programación. Para obtener más información sobre el servicio de firma y la adición de campos de firma, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Algunos tipos de documentos PDF no permiten agregar un campo de firma mediante programación. Para obtener más información sobre el servicio Signature y la adición de campos de firma, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary-of-steps}
 
@@ -77,8 +80,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
 **Crear un cliente de firma**
 
@@ -192,6 +195,7 @@ Para agregar un campo de firma mediante la API de firma (servicio Web):
    * Un `PositionRect` objeto que especifica la ubicación del campo de firma.
    * Objeto `FieldMDPOptions` que especifica los campos del documento PDF que se bloquean después de aplicar una firma digital al campo de firma. Este valor de parámetro es opcional y se puede pasar `null`.
    * Un `PDFSeedValueOptions` objeto que especifica varios valores de tiempo de ejecución. Este valor de parámetro es opcional y se puede pasar `null`.
+
    El `addSignatureField` método devuelve un `BLOB` objeto que representa un documento PDF que contiene un campo de firma.
 
 1. Guardar el documento PDF como archivo PDF
@@ -203,9 +207,9 @@ Para agregar un campo de firma mediante la API de firma (servicio Web):
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Recuperación de nombres de campos de firma {#retrieving-signature-field-names}
 
@@ -233,10 +237,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Crear un cliente de firma**
 
@@ -337,9 +341,9 @@ Recuperar nombres de campo de firma mediante la API de firma (servicio Web):
 
 [Recuperación de nombres de campos de firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Modificación de los campos de firma {#modifying-signature-fields}
 
@@ -353,7 +357,7 @@ En esta sección se explica cómo modificar un campo de firma modificando los va
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio de firma y la modificación de los campos de firma, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de firmas y la modificación de los campos de firma, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-2}
 
@@ -375,8 +379,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de LiveCycle.
 
@@ -457,6 +461,7 @@ Modifique un campo de firma mediante la API de firma (Java):
    * Bloquear todos los campos del documento PDF invocando el `FieldMDPOptionSpec` método del `setMdpValue` objeto y pasando el valor de la `FieldMDPAction.ALL` lista desglosada.
    * Configure la información del diccionario de valores de inicialización invocando el `PDFSignatureFieldProperties` método `setSeedValue` del objeto y pasando el `PDFSeedValueOptionSpec` objeto.
    * Para definir la información del diccionario de bloqueo de campos de firma, invoque el método del `PDFSignatureFieldProperties`objeto y pase el `setFieldMDP` objeto `FieldMDPOptionSpec` .
+
    >[!NOTE]
    >
    >Para ver todos los valores del diccionario de valores de raíz que puede establecer, consulte la referencia de la `PDFSeedValueOptionSpec` clase. (Consulte Referencia [de la API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
@@ -467,7 +472,8 @@ Modifique un campo de firma mediante la API de firma (Java):
 
    * El `com.adobe.idp.Document` objeto que almacena el documento PDF que contiene el campo de firma que se va a modificar
    * Un valor de cadena que especifica el nombre del campo de firma
-   * El `PDFSignatureFieldProperties` objeto que almacena la información del diccionario de bloqueo de campos de firma y del diccionario de valores de raíz
+   * El `PDFSignatureFieldProperties` objeto que almacena información del diccionario de bloqueo de campos de firma y del diccionario de valores de raíz
+
    El `modifySignatureField` método devuelve un `com.adobe.idp.Document` objeto que almacena un documento PDF que contiene el campo de firma modificado.
 
 1. Guardar el documento PDF como archivo PDF
@@ -517,6 +523,7 @@ Modifique un campo de firma mediante la API de firma (servicio Web):
    * Bloquear todos los campos del documento PDF asignando el valor de `FieldMDPAction.ALL` lista desglosada al miembro de `FieldMDPOptionSpec` datos del `mdpValue` objeto.
    * Defina la información del diccionario de valores de inicialización asignando el `PDFSeedValueOptionSpec` objeto al miembro de datos del `PDFSignatureFieldProperties` objeto `seedValue` .
    * Para definir la información del diccionario de bloqueo de campos de firma, asigne el `FieldMDPOptionSpec` objeto al miembro de datos del `PDFSignatureFieldProperties` objeto `fieldMDP` .
+
    >[!NOTE]
    >
    >Para ver todos los valores del diccionario de valores de raíz que puede establecer, consulte la referencia de la `PDFSeedValueOptionSpec` clase. (Consulte Referencia [de la API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
@@ -528,6 +535,7 @@ Modifique un campo de firma mediante la API de firma (servicio Web):
    * El `BLOB` objeto que almacena el documento PDF que contiene el campo de firma que se va a modificar
    * Un valor de cadena que especifica el nombre del campo de firma
    * El `PDFSignatureFieldProperties` objeto que almacena la información del diccionario de bloqueo de campos de firma y del diccionario de valores de raíz
+
    El `modifySignatureField` método devuelve un `BLOB` objeto que almacena un documento PDF que contiene el campo de firma modificado.
 
 1. Guardar el documento PDF como archivo PDF
@@ -539,9 +547,9 @@ Modifique un campo de firma mediante la API de firma (servicio Web):
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Firma digital de Documentos PDF {#digitally-signing-pdf-documents}
 
@@ -551,7 +559,7 @@ Los documentos PDF se firman mediante tecnología de clave pública. Un firmante
 
 >[!NOTE]
 >
->Para poder firmar digitalmente un documento PDF, debe asegurarse de agregar el certificado a AEM Forms. Se agrega un certificado mediante la consola de administración o mediante programación mediante la API del administrador de confianza. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del Administrador de confianza).
+>Para poder firmar digitalmente un documento PDF, debe asegurarse de agregar el certificado a los AEM Forms. Se agrega un certificado mediante la consola de administración o mediante programación mediante la API del administrador de confianza. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del Administrador de confianza).
 
 Puede firmar digitalmente documentos PDF mediante programación. Al firmar digitalmente un documento PDF, debe hacer referencia a una credencial de seguridad que exista en AEM Forms. La credencial es la clave privada que se utiliza para firmar.
 
@@ -561,7 +569,7 @@ El servicio Signature realiza los siguientes pasos cuando se firma un documento 
 1. Truststore busca la credencial especificada.
 1. La credencial se devuelve al servicio Signature y se utiliza para firmar el documento. Las credenciales también se almacenan en la caché con el alias para solicitudes futuras.
 
-Para obtener información sobre la gestión de credenciales de seguridad, consulte la guía *Instalación e implementación de AEM Forms* para su servidor de aplicaciones.
+Para obtener información sobre la gestión de las credenciales de seguridad, consulte la guía *Instalación e implementación de AEM Forms* para su servidor de aplicaciones.
 
 >[!NOTE]
 >
@@ -577,7 +585,7 @@ Para obtener información sobre la gestión de credenciales de seguridad, consul
 
 **Credencial nShield HSM de cifrado**
 
-Cuando se utiliza una credencial Cipher nShield HSM para firmar o certificar un documento PDF, no se puede utilizar la nueva credencial hasta que se reinicie el servidor de aplicaciones J2EE en el que se implementa AEM Forms. Sin embargo, puede establecer un valor de configuración, lo que resulta en que la operación de firma o certificación funcione sin reiniciar el servidor de aplicaciones J2EE.
+Cuando se utiliza una credencial nShield HSM de Cipher para firmar o certificar un documento PDF, no se puede utilizar la nueva credencial hasta que se reinicie el servidor de aplicaciones J2EE en el que se implementan los AEM Forms. Sin embargo, puede establecer un valor de configuración, lo que resulta en que la operación de firma o certificación funcione sin reiniciar el servidor de aplicaciones J2EE.
 
 Puede agregar el siguiente valor de configuración en el archivo cknfastrc, que se encuentra en /opt/nfast/cknfastrc (o c:\nfast\cknfastrc):
 
@@ -617,8 +625,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
 **Crear un cliente de firmas**
 
@@ -665,7 +673,7 @@ La marca de hora se refiere al proceso de seguimiento de la hora en que se modif
 
 Para firmar correctamente un documento PDF, puede especificar el nombre completo del campo de firma que contendrá la firma digital, como `form1[0].#subform[1].SignatureField3[3]`. Al utilizar un campo de formulario XFA, también se puede utilizar el nombre parcial del campo de firma: `SignatureField3[3]`.
 
-También debe hacer referencia a una credencial de seguridad para firmar digitalmente un documento PDF. Para hacer referencia a una credencial de seguridad, debe especificar un alias. El alias es una referencia a una credencial real que puede estar en un archivo PKCS#12 (con la extensión .pfx) o en un módulo de seguridad de hardware (HSM). Para obtener información sobre las credenciales de seguridad, consulte la guía *Instalación e implementación de AEM Forms* para el servidor de aplicaciones.
+También debe hacer referencia a una credencial de seguridad para firmar digitalmente un documento PDF. Para hacer referencia a una credencial de seguridad, debe especificar un alias. El alias es una referencia a una credencial real que puede estar en un archivo PKCS#12 (con la extensión .pfx) o en un módulo de seguridad de hardware (HSM). Para obtener información sobre las credenciales de seguridad, consulte la guía *Instalación e implementación de AEM Forms* para su servidor de aplicaciones.
 
 **Guardar el documento PDF firmado**
 
@@ -717,7 +725,8 @@ Firmar digitalmente un documento PDF mediante la API de firma (Java):
    * Un `java.lang.Boolean` objeto que especifica si se va a realizar la comprobación de revocación en el certificado del firmante.
    * Un `OCSPOptionSpec` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
    * Objeto `CRLPreferences` que almacena las preferencias de lista de revocación de certificados (CRL). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
-   * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Este parámetro es opcional y puede ser `null`. Para obtener más información, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Este parámetro es opcional y puede ser `null`. Para obtener más información, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+
    El `sign` método devuelve un `com.adobe.idp.Document` objeto que representa el documento PDF firmado.
 
 1. Guardar el documento PDF firmado
@@ -782,9 +791,10 @@ Para firmar digitalmente un documento PDF mediante la API de firma (servicio web
    * Un valor de cadena que representa la información de contacto del firmante.
    * Un `PDFSignatureAppearanceOptions` objeto que controla el aspecto de la firma digital. Por ejemplo, puede utilizar este objeto para agregar un logotipo personalizado a una firma digital.
    * Un `System.Boolean` objeto que especifica si se va a realizar la comprobación de revocación en el certificado del firmante. Si esta comprobación de revocación se realiza, se incrusta en la firma. El valor predeterminado es `false`.
-   * Un `OCSPOptionSpec` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`. Para obtener más información sobre este objeto, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Un `OCSPOptionSpec` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`. Para obtener información sobre este objeto, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Objeto `CRLPreferences` que almacena las preferencias de lista de revocación de certificados (CRL). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
    * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Este parámetro es opcional y puede ser `null`.
+
    El `sign` método devuelve un `BLOB` objeto que representa el documento PDF firmado.
 
 1. Guardar el documento PDF firmado
@@ -798,9 +808,9 @@ Para firmar digitalmente un documento PDF mediante la API de firma (servicio web
 
 [Firma digital de Documentos PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Firma digital de formularios interactivos {#digitally-signing-interactive-forms}
 
@@ -813,7 +823,7 @@ El resultado es un formulario PDF interactivo con firma digital. Al firmar un fo
 
 >[!NOTE]
 >
->Para poder firmar digitalmente un formulario interactivo, debe asegurarse de agregar el certificado a AEM Forms. Se agrega un certificado mediante la consola de administración o mediante programación mediante la API del administrador de confianza. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del Administrador de confianza).
+>Para poder firmar digitalmente un formulario interactivo, debe asegurarse de agregar el certificado a los AEM Forms. Se agrega un certificado mediante la consola de administración o mediante programación mediante la API del administrador de confianza. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del Administrador de confianza).
 
 Al utilizar la API de Forms Service, establezca la opción de tiempo de `GenerateServerAppearance` ejecución en `true`. Esta opción en tiempo de ejecución garantiza que el aspecto del formulario generado en el servidor siga siendo válido cuando se abre en Acrobat o Adobe Reader. Se recomienda definir esta opción en tiempo de ejecución al generar un formulario interactivo para firmar mediante la API de Forms.
 
@@ -841,10 +851,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
 * adobe-forms-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un cliente de formularios y firmas**
 
@@ -852,7 +862,7 @@ Dado que este flujo de trabajo invoca los servicios Forms y Signature, cree un c
 
 **Obtener el formulario interactivo mediante el servicio Forms**
 
-Puede utilizar el servicio Forms para obtener el formulario PDF interactivo que desea firmar. Desde AEM Forms, puede pasar un `com.adobe.idp.Document` objeto al servicio Forms que contenga el formulario que se va a procesar. El nombre de este método es `renderPDFForm2`. Este método devuelve un `com.adobe.idp.Document` objeto que contiene el formulario que se va a firmar. Puede pasar esta `com.adobe.idp.Document` instancia al servicio Signature.
+Puede utilizar el servicio Forms para obtener el formulario PDF interactivo que desea firmar. A partir de AEM Forms, puede pasar un `com.adobe.idp.Document` objeto al servicio Forms que contenga el formulario que se va a procesar. El nombre de este método es `renderPDFForm2`. Este método devuelve un `com.adobe.idp.Document` objeto que contiene el formulario que se va a firmar. Puede pasar esta `com.adobe.idp.Document` instancia al servicio Signature.
 
 Del mismo modo, si utiliza servicios Web, puede pasar la `BLOB` instancia que el servicio Forms devuelve al servicio Signature.
 
@@ -886,7 +896,7 @@ Una vez que el servicio Signature firme digitalmente el documento PDF, puede gua
 
 [Firma digital de Documentos PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Representación de formularios PDF interactivos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
+[Representación de PDF forms interactivos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
 
 ### Firma digital de un formulario interactivo mediante la API de Java {#digitally-sign-an-interactive-form-using-the-java-api}
 
@@ -916,6 +926,7 @@ Firmar digitalmente un formulario interactivo mediante la API de formularios y f
       * Un `PDFFormRenderSpec` objeto que almacena opciones de tiempo de ejecución.
       * Un `URLSpec` objeto que contiene valores de URI necesarios para el servicio Forms. Puede especificar `null` para este valor de parámetro.
       * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
       El `renderPDFForm2` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario
 
    * Recupere el formulario PDF invocando el `FormsResult` método `getOutputContent` del objeto. Este método devuelve un `com.adobe.idp.Document` objeto que representa el formulario interactivo.
@@ -936,6 +947,7 @@ Firmar digitalmente un formulario interactivo mediante la API de formularios y f
    * Un `OCSPPreferences` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
    * Objeto `CRLPreferences` que almacena las preferencias de lista de revocación de certificados (CRL). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
    * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Este parámetro es opcional y puede ser `null`.
+
    El `sign` método devuelve un `com.adobe.idp.Document` objeto que representa el documento PDF firmado.
 
 1. Guardar el documento PDF firmado
@@ -981,6 +993,7 @@ Firmar digitalmente un formulario interactivo mediante la API de Forms y Signatu
       * Asigne el valor de contraseña correspondiente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
    >Repita estos pasos para el cliente del servicio Forms.
@@ -1025,9 +1038,10 @@ Firmar digitalmente un formulario interactivo mediante la API de Forms y Signatu
    * Un valor de cadena que representa la información de contacto del firmante.
    * Un `PDFSignatureAppearanceOptions` objeto que controla el aspecto de la firma digital. Por ejemplo, puede utilizar este objeto para agregar un logotipo personalizado a una firma digital.
    * Un `System.Boolean` objeto que especifica si se va a realizar la comprobación de revocación en el certificado del firmante. Si esta comprobación de revocación se realiza, se incrusta en la firma. El valor predeterminado es `false`.
-   * Un `OCSPPreferences` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`. Para obtener más información sobre este objeto, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Un `OCSPPreferences` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`. Para obtener información sobre este objeto, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Objeto `CRLPreferences` que almacena las preferencias de lista de revocación de certificados (CRL). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
    * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Este parámetro es opcional y puede ser `null`.
+
    El `sign` método devuelve un `BLOB` objeto que representa el documento PDF firmado.
 
 1. Guardar el documento PDF firmado
@@ -1041,7 +1055,7 @@ Firmar digitalmente un formulario interactivo mediante la API de Forms y Signatu
 
 [Firma digital de formularios interactivos](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Certificación de Documentos PDF {#certifying-pdf-documents}
 
@@ -1051,7 +1065,7 @@ Puede asegurar un documento PDF certificándolo con un tipo particular de firma 
 * El autor o creador del documento puede especificar que el documento se puede modificar de determinadas formas sin invalidar la firma certificada. Por ejemplo, el documento puede permitir rellenar formularios o comentarios. Si el autor especifica que no se permite una modificación determinada, Acrobat impide que los usuarios modifiquen el documento de esa manera. Si se realizan dichas modificaciones, como por ejemplo mediante otra aplicación, la firma certificada no es válida y Acrobat emite una advertencia cuando un usuario abre el documento. (Con las firmas no certificadas, no se evitan las modificaciones y las operaciones de edición normales no invalidan la firma original).
 * En el momento de la firma, el documento se analiza para detectar tipos específicos de contenido que podrían hacer que el contenido de un documento sea ambiguo o engañoso. Por ejemplo, una anotación podría oscurecer algún texto de una página que sea importante para comprender lo que se está certificando. Se puede proporcionar una explicación (autenticación legal) sobre dicho contenido.
 
-Puede certificar documentos PDF mediante programación mediante la API de Java del servicio de firmas o la API del servicio web de firmas. Al certificar un documento PDF, debe hacer referencia a una credencial de seguridad que exista en el servicio de credenciales. Para obtener información sobre las credenciales de seguridad, consulte la guía *Instalación e implementación de AEM Forms* para el servidor de aplicaciones.
+Puede certificar documentos PDF mediante programación mediante la API de Java del servicio de firmas o la API del servicio web de firmas. Al certificar un documento PDF, debe hacer referencia a una credencial de seguridad que exista en el servicio de credenciales. Para obtener información sobre las credenciales de seguridad, consulte la guía *Instalación e implementación de AEM Forms* para su servidor de aplicaciones.
 
 >[!NOTE]
 >
@@ -1059,7 +1073,7 @@ Puede certificar documentos PDF mediante programación mediante la API de Java d
 
 >[!NOTE]
 >
->Cuando se utiliza una credencial Cipher nShield HSM para firmar o certificar un documento PDF, no se puede utilizar la nueva credencial hasta que se reinicie el servidor de aplicaciones J2EE en el que se implementa AEM Forms. Sin embargo, puede establecer un valor de configuración, lo que resulta en que la operación de firma o certificación funcione sin reiniciar el servidor de aplicaciones J2EE.
+>Cuando se utiliza una credencial nShield HSM de Cipher para firmar o certificar un documento PDF, no se puede utilizar la nueva credencial hasta que se reinicie el servidor de aplicaciones J2EE en el que se implementan AEM Forms. Sin embargo, puede establecer un valor de configuración, lo que resulta en que la operación de firma o certificación funcione sin reiniciar el servidor de aplicaciones J2EE.
 
 Puede agregar el siguiente valor de configuración en el archivo cknfastrc, que se encuentra en /opt/nfast/cknfastrc (o c:\nfast\cknfastrc):
 
@@ -1071,7 +1085,7 @@ Después de agregar este valor de configuración al archivo cknfastrc, la nueva 
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Signature y la certificación de un documento, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio Signature y la certificación de un documento, consulte [Servicios de referencia para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-5}
 
@@ -1092,10 +1106,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Crear un cliente de firma**
 
@@ -1173,9 +1187,10 @@ Certifique un documento PDF mediante la API de firma (Java):
    * Un valor de cadena que proporciona una explicación de las acciones que invalidan la firma.
    * Un `java.lang.Boolean` objeto que especifica si se va a realizar la comprobación de revocación en el certificado del firmante. Si esta comprobación de revocación se realiza, se incrusta en la firma. El valor predeterminado es `false`.
    * Un `java.lang.Boolean` objeto que especifica si el campo de firma que se está certificando está bloqueado. Si el campo está bloqueado, el campo de firma se marca como de solo lectura, sus propiedades no se pueden modificar y nadie que no tenga los permisos necesarios no puede borrarlo. El valor predeterminado es `false`.
-   * Un `OCSPPreferences` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`. Para obtener más información sobre este objeto, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Un `OCSPPreferences` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`. Para obtener información sobre este objeto, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Objeto `CRLPreferences` que almacena las preferencias de lista de revocación de certificados (CRL). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
-   * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Por ejemplo, después de crear un `TSPPreferences` objeto, puede establecer la dirección URL del servidor TSP invocando el `TSPPreferences` método del `setTspServerURL` objeto. Este parámetro es opcional y puede ser `null`. Para obtener más información, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+   * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Por ejemplo, después de crear un `TSPPreferences` objeto, puede establecer la dirección URL del servidor TSP invocando el `TSPPreferences` método del `setTspServerURL` objeto. Este parámetro es opcional y puede ser `null`. Para obtener más información, consulte Referencia [de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
    El `certify` método devuelve un `com.adobe.idp.Document` objeto que representa el documento PDF certificado.
 
 1. Guardar el documento PDF certificado como archivo PDF
@@ -1248,6 +1263,7 @@ Certifique un documento PDF mediante la API de firma (servicio web):
    * Un `OCSPPreferences` objeto que almacena las preferencias para la compatibilidad con el protocolo de estado de certificado en línea (OCSP), que proporciona información sobre el estado de la credencial que se utiliza para certificar el documento PDF. Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
    * Objeto `CRLPreferences` que almacena las preferencias de lista de revocación de certificados (CRL). Si no se realiza la comprobación de revocación, este parámetro no se utiliza y puede especificar `null`.
    * Objeto `TSPPreferences` que almacena las preferencias de compatibilidad con el proveedor de marca de hora (TSP). Por ejemplo, después de crear un `TSPPreferences` objeto, puede establecer la dirección URL del TSP estableciendo el miembro de datos del `TSPPreferences` objeto `tspServerURL` . Este parámetro es opcional y puede ser `null`.
+
    El `certify` método devuelve un `BLOB` objeto que representa el documento PDF certificado.
 
 1. Guardar el documento PDF certificado como archivo PDF
@@ -1261,9 +1277,9 @@ Certifique un documento PDF mediante la API de firma (servicio web):
 
 [Certificación de Documentos PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verificación de firmas digitales {#verifying-digital-signatures}
 
@@ -1300,10 +1316,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Crear un cliente de firma**
 
@@ -1321,9 +1337,9 @@ Defina estas opciones de tiempo de ejecución PKI que utiliza el servicio Signat
 * Comprobación de revocación
 * Valores de marca de hora
 
-Como parte de la configuración de estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora en el equipo del validador), que indica el uso de la hora actual. Para obtener información sobre los distintos valores de tiempo, consulte el valor de `VerificationTime` lista desglosada en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+Como parte de la configuración de estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora en el equipo del validador), que indica el uso de la hora actual. Para obtener información sobre los diferentes valores de tiempo, consulte el valor de `VerificationTime` lista desglosada en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-También puede especificar si desea realizar la comprobación de revocación como parte del proceso de verificación. Por ejemplo, puede realizar una comprobación de revocación para determinar si el certificado está revocado. Para obtener información sobre las opciones de comprobación de revocación, consulte el valor de `RevocationCheckStyle` lista desglosada en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+También puede especificar si desea realizar la comprobación de revocación como parte del proceso de verificación. Por ejemplo, puede realizar una comprobación de revocación para determinar si el certificado está revocado. Para obtener información sobre las opciones de comprobación de revocación, consulte el valor de `RevocationCheckStyle` lista desglosada en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 Para realizar la comprobación de revocación en un certificado, especifique una URL para un servidor de lista de revocación de certificados (CRL) mediante un `CRLOptionSpec` objeto. Sin embargo, si no especifica una URL para el servidor CRL, el servicio Signature obtendrá la URL del certificado.
 
@@ -1351,7 +1367,7 @@ De forma predeterminada, el servicio Signature limita la cantidad de tiempo que 
 
 >[!NOTE]
 >
->Para conocer otros valores que se requieren al comprobar una firma, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+>Para conocer otros valores que se requieren al verificar una firma, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Determinar el estado de la firma**
 
@@ -1407,6 +1423,7 @@ Verifique una firma digital mediante la API de servicio de firma (Java):
    * Un valor de cadena que representa el nombre del campo de firma que contiene la firma que se va a comprobar.
    * Un `PKIOptions` objeto que contiene opciones de tiempo de ejecución PKI.
    * Una `VerifySPIOptions` instancia que contiene información de SPI. Puede especificar `null` para este parámetro.
+
    El `verify2` método devuelve un `PDFSignatureVerificationInfo` objeto que contiene información que se puede utilizar para verificar la firma digital.
 
 1. Determinar el estado de la firma
@@ -1475,6 +1492,7 @@ Verifique una firma digital mediante la API de servicio de firma (servicio Web):
    * Un valor de cadena que representa el nombre del campo de firma que contiene la firma que se va a comprobar.
    * Un `PKIOptions` objeto que contiene opciones de tiempo de ejecución PKI.
    * Una `VerifySPIOptions` instancia que contiene información de SPI. Puede especificar `null` para este parámetro.
+
    El `verify2` método devuelve un `PDFSignatureVerificationInfo` objeto que contiene información que se puede utilizar para verificar la firma digital.
 
 1. Determinar el estado de la firma
@@ -1490,9 +1508,9 @@ Verifique una firma digital mediante la API de servicio de firma (servicio Web):
 
 [Verificación de firmas digitales](#verify-digital-signatures-using-the-java-api)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Verificación de varias firmas digitales {#verifying-multiple-digital-signatures}
 
@@ -1522,10 +1540,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Crear un cliente de firma**
 
@@ -1543,9 +1561,9 @@ Defina estas opciones de tiempo de ejecución PKI que utiliza el servicio Signat
 * Comprobación de revocación
 * Valores de marca de hora
 
-Como parte de la configuración de estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora en el equipo del validador), que indica el uso de la hora actual. Para obtener información sobre los distintos valores de tiempo, consulte el valor de `VerificationTime` lista desglosada en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+Como parte de la configuración de estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora en el equipo del validador), que indica el uso de la hora actual. Para obtener información sobre los diferentes valores de tiempo, consulte el valor de `VerificationTime` lista desglosada en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-También puede especificar si desea realizar la comprobación de revocación como parte del proceso de verificación. Por ejemplo, puede realizar una comprobación de revocación para determinar si el certificado está revocado. Para obtener información sobre las opciones de comprobación de revocación, consulte el valor de `RevocationCheckStyle` lista desglosada en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+También puede especificar si desea realizar la comprobación de revocación como parte del proceso de verificación. Por ejemplo, puede realizar una comprobación de revocación para determinar si el certificado está revocado. Para obtener información sobre las opciones de comprobación de revocación, consulte el valor de `RevocationCheckStyle` lista desglosada en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 Para realizar la comprobación de revocación en un certificado, especifique una URL para un servidor de lista de revocación de certificados (CRL) mediante un `CRLOptionSpec` objeto. Sin embargo, si no especifica una URL para un servidor CRL, el servicio Signature obtendrá la URL del certificado.
 
@@ -1622,6 +1640,7 @@ Compruebe varias firmas digitales mediante la API de servicio de firma (Java):
    * Un `com.adobe.idp.Document` objeto que contiene un documento PDF que contiene varias firmas digitales.
    * Un `PKIOptions` objeto que contiene opciones de tiempo de ejecución PKI.
    * Una `VerifySPIOptions` instancia que contiene información de SPI. Puede especificar `null` para este parámetro.
+
    El `verifyPDFDocument` método devuelve un `PDFDocumentVerificationInfo` objeto que contiene información sobre todas las firmas digitales ubicadas en el documento PDF.
 
 1. Repetir mediante todas las firmas
@@ -1687,6 +1706,7 @@ Compruebe varias firmas digitales mediante la API de servicio de firma (servicio
    * Un `BLOB` objeto que contiene un documento PDF que contiene varias firmas digitales.
    * Un `PKIOptions` objeto que contiene opciones de tiempo de ejecución PKI.
    * Una `VerifySPIOptions` instancia que contiene información de SPI. Puede especificar null para este parámetro.
+
    El `verifyPDFDocument` método devuelve un `PDFDocumentVerificationInfo` objeto que contiene información sobre todas las firmas digitales ubicadas en el documento PDF.
 
 1. Repetir mediante todas las firmas
@@ -1698,9 +1718,9 @@ Compruebe varias firmas digitales mediante la API de servicio de firma (servicio
 
 [Verificación de varias firmas digitales](#verifying-multiple-digital-signatures)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Eliminación de firmas digitales {#removing-digital-signatures}
 
@@ -1729,10 +1749,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Crear un cliente de firma**
 
@@ -1786,6 +1806,7 @@ Elimine una firma digital mediante la API de firma (Java):
 
    * Un `com.adobe.idp.Document` objeto que representa el documento PDF que contiene la firma que se va a quitar.
    * Un valor de cadena que especifica el nombre del campo de firma que contiene la firma digital.
+
    El `clearSignatureField` método devuelve un `com.adobe.idp.Document` objeto que representa el documento PDF del que se ha eliminado la firma digital.
 
 1. Guardar el documento PDF como archivo PDF
@@ -1842,6 +1863,7 @@ Elimine una firma digital mediante la API de firma (servicio Web):
 
    * Un `BLOB` objeto que contiene el documento PDF firmado.
    * Un valor de cadena que representa el nombre del campo de firma que contiene la firma digital que se va a quitar.
+
    El `clearSignatureField` método devuelve un `BLOB` objeto que representa el documento PDF del que se ha eliminado la firma digital.
 
 1. Guardar el documento PDF como archivo PDF
@@ -1855,6 +1877,6 @@ Elimine una firma digital mediante la API de firma (servicio Web):
 
 [Eliminación de firmas digitales](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
