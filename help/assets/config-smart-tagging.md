@@ -3,9 +3,9 @@ title: Configure el etiquetado de recursos mediante el servicio de contenido int
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1116'
 ht-degree: 42%
 
 ---
@@ -93,7 +93,7 @@ Para utilizar las API de Smart Content Service, cree una integración en Adobe D
 
 Para configurar la integración, utilice los valores de los campos ID de cuenta técnica, ID de organización, Secreto de cliente, Servidor de autorización y Clave de API de la integración de Adobe Developer Console. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la [!DNL Experience Manager] implementación.
 
-1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Cloud Service > Cloud Service]** heredados para abrir la consola de [!UICONTROL Cloud Service] .
+1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > Cloud Service **** preexistentes para abrir la consola de [!UICONTROL Cloud Service] .
 1. En Etiquetas **[!UICONTROL inteligentes de]** recursos, abra la configuración creada anteriormente. En la página de configuración del servicio, haga clic en **[!UICONTROL Editar]**.
 1. En el cuadro de diálogo **[!UICONTROL AEM Smart Content Service]**, utilice los valores predefinidos para los campos **[!UICONTROL URL de servicio]** y **[!UICONTROL Servidor de autorización]**.
 1. Para los campos **[!UICONTROL Clave de API]**, **[!UICONTROL Id de cuenta técnica]**, **[!UICONTROL Id de organización]** y **[!UICONTROL Secreto de cliente]**, utilice los valores generados anteriormente.
@@ -103,15 +103,13 @@ Para configurar la integración, utilice los valores de los campos ID de cuenta 
 Después de completar la configuración, puede utilizar un MBean de JMX para validar la configuración. Para validar, siga estos pasos.
 
 1. Acceda a su [!DNL Experience Manager] servidor en `https://[aem_server]:[port]`.
-1. Vaya a **[!UICONTROL Herramientas > Operaciones > Consola]** Web para abrir la consola OSGi. Haga clic en **[!UICONTROL Principal > JMX]**.
-1. Haga clic en **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Abre **[!UICONTROL SimilitudBuscar Tareas]** diversas.
-1. Haga clic en **[!UICONTROL validateConfigs()]**. En el cuadro de diálogo **[!UICONTROL Validar configuraciones]** , haga clic en **[!UICONTROL Invocar]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** Web para abrir la consola OSGi. Haga clic en **[!UICONTROL Principal]>[!UICONTROL JMX]**.
+1. Haga clic `com.day.cq.dam.similaritysearch.internal.impl`. Abre **[!UICONTROL SimilitudBuscar Tareas]** diversas.
+1. Haga clic `validateConfigs()`. En el cuadro de diálogo **[!UICONTROL Validar configuraciones]** , haga clic en **[!UICONTROL Invocar]**. Los resultados de validación se muestran en el mismo cuadro de diálogo.
 
-   El resultado de validación se muestra en el mismo cuadro de diálogo.
+## Habilitar el etiquetado inteligente en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM (opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-## Habilitar el etiquetado inteligente en el flujo de trabajo de recursos de actualización de DAM (opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
-
-1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
+1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el modelo de flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]**.
 1. Haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
 1. Expanda el panel lateral para mostrar los pasos. Arrastre el paso **[!UICONTROL Recurso de etiqueta inteligente]** que está disponible en la sección Flujo de trabajo de DAM y colóquelo después del paso **[!UICONTROL Miniaturas del proceso]**.
