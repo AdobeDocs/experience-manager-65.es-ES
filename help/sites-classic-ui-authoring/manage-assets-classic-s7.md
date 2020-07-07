@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 71%
@@ -339,13 +339,12 @@ Si tiene varias configuraciones, AEM muestra de forma predeterminada la [configu
 
    >
    >
-* Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes: >
-   >    * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
-   >    * Vídeo MP4 sencillo
-   >    * Vídeo F4V sencillo
-
->
-
+* Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes:
+   >
+   >  
+* Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
+>  * Vídeo MP4 sencillo
+>  * Vídeo F4V sencillo
 
 
 ### Exploración del contenido {#browsing-content-in-the-classic-ui}
