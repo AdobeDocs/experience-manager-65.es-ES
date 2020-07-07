@@ -3,7 +3,7 @@ title: Plantillas de recursos en [!DNL Adobe Experience Manager Assets].
 description: Obtenga información sobre las plantillas de recursos [!DNL Adobe Experience Manager Assets] en y cómo utilizar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -79,6 +79,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
    * En la página Plantillas, desplácese hasta la carpeta en la que haya creado el colateral y haga clic en la acción rápida [!UICONTROL Editar] en la miniatura de un colateral.
    * En la página de recursos para el material promocional, haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
    * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    El buscador de recursos y el editor de texto se muestran a la izquierda de la página. El editor de texto está abierto de forma predeterminada.
@@ -95,7 +96,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    >[!NOTE]
    >
-   >Asegúrese de que la [!DNL Experience Manager] instancia está integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la [!DNL InDesign] plantilla y ponerlos a disposición para su edición. Para obtener más información, consulte [Integración de Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
+   >Asegúrese de que la [!DNL Experience Manager] instancia está integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la [!DNL InDesign] plantilla y ponerlos a disposición para su edición. Para obtener más información, consulte [Integración de recursos de Experience Manager con InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar el texto de un campo editable, haga clic en el campo de texto de la lista de campos editables y edite el texto del campo.
 
@@ -131,17 +132,19 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    >[!NOTE]
    >
-   >Los iconos Previsualización y Finalizado solo se activan cuando los campos de imagen editables del material no tienen iconos que falten. Si falta algún icono en el colateral, es porque [!DNL Experience Manager] no puede resolver las imágenes de la [!DNL InDesign] plantilla. Normalmente, [!DNL Experience Manager] no puede resolver imágenes en los siguientes casos:
+   >Las opciones Previsualización y Finalizado solo se activan cuando los campos de imagen editables del material no tienen iconos que faltan. Si falta algún icono en el colateral, es porque [!DNL Experience Manager] no puede resolver las imágenes de la [!DNL InDesign] plantilla. Normalmente, [!DNL Experience Manager] no puede resolver imágenes en los siguientes casos:
    >
-   >    * Las imágenes no se incrustan en la [!DNL InDesign] plantilla subyacente.
-   >    * Las imágenes están vinculadas desde el sistema de archivos local.
+   >* Las imágenes no se incrustan en la [!DNL InDesign] plantilla subyacente.
+   >* Las imágenes están vinculadas desde el sistema de archivos local.
+
    >
    >Para habilitar [!DNL Experience Manager] la resolución de imágenes, haga lo siguiente:
    >
-   >    * Incrustar imágenes al crear [!DNL InDesign] plantillas (consulte [Acerca de los vínculos y los gráficos](https://helpx.adobe.com/indesign/using/graphics-links.html)incrustados).
-   >    * Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos existentes en [!DNL Experience Manager].
+   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (consulte [Acerca de los vínculos y los gráficos](https://helpx.adobe.com/indesign/using/graphics-links.html)incrustados).
+   >* Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos existentes en [!DNL Experience Manager].
+
    >
-   >Para obtener más información sobre cómo trabajar con [!DNL InDesign] documentos, consulte [Prácticas recomendadas para trabajar con Documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Para obtener más información sobre cómo trabajar con [!DNL InDesign] documentos, consulte Prácticas [recomendadas para trabajar con documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para generar una representación en PDF del folleto, seleccione la opción Acrobat en el cuadro de diálogo y haga clic en **[!UICONTROL Continuar]**.
 1. El colateral se crea en la carpeta en la que se inició. Para realizar la vista de las representaciones, abra el colateral y seleccione **[!UICONTROL Representaciones]** en la lista GlobalNav.
@@ -178,11 +181,11 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
 
-   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas basadas en el tipo de archivo o las etiquetas.
+   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas en función del tipo de archivo o las etiquetas.
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. Haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
+1. Click **[!UICONTROL Next]** from the toolbar.
 1. En la pantalla **[!UICONTROL Previsualización y reorganización]** , reorganice las plantillas si es necesario y previsualización la selección de las plantillas que se van a combinar. A continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
