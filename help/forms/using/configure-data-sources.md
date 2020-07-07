@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9df949b0069dad7fc1627977097cec5546cd845f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1554'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    * Nombre de clase Java para el controlador JDBC
    * URI de conexión JDBC
    * Nombre de usuario y contraseña para establecer la conexión con el controlador JDBC
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Asegúrese de cifrar información confidencial como contraseñas antes de configurar el origen de datos. Para cifrar:
    >
@@ -79,7 +79,7 @@ Puede configurar el perfil de usuario de AEM mediante la configuración del cone
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >El ***** del ejemplo anterior indica todos los nodos bajo el `profile/empLocation/` nodo en el perfil de usuario de AEM en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder a la `city` propiedad de tipo `string` presente en cualquier nodo bajo el `profile/empLocation/` nodo. Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
 
