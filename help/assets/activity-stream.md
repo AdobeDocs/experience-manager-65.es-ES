@@ -3,7 +3,7 @@ title: Flujo de Actividad en la línea de tiempo
 description: En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 27%
