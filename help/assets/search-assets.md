@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 8ca4e3057ec13762404a8b7fb6f6bdf5dd562281
 workflow-type: tm+mt
-source-wordcount: '5862'
-ht-degree: 6%
+source-wordcount: '5826'
+ht-degree: 5%
 
 ---
 
@@ -116,7 +116,7 @@ Puede mejorar la relevancia de las palabras clave para los recursos en particula
 
 1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
 1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee impulsar la búsqueda de la imagen y, a continuación, haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
-1. Click **[!UICONTROL Save &amp; Close]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
 Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
@@ -170,7 +170,7 @@ Puede buscar recursos en función de los valores exactos de campos de metadatos 
 | Caduca la fecha | expira:AAAA-MM-DDTHH |
 | A tiempo | ontime:AAAA-MM-DDTHH |
 | Tiempo de inactividad | offtime:AAAA-MM-DDTHH |
-| Intervalo de tiempo (caduca dateontime, offtime) | facet field : límite inferior..upperbound |
+| Intervalo de tiempo (caduca dateontime, offtime) | campo faceta: límite inferior..upperbound |
 | Ruta | /content/dam/&lt;nombre de carpeta> |
 | Título del PDF | pdftitle:&quot;Adobe Documento&quot; |
 | Asunto | asunto: &quot;Formación&quot; |
@@ -180,13 +180,13 @@ Puede buscar recursos en función de los valores exactos de campos de metadatos 
 | Altura de la imagen | altura:límite inferior..upperbound |
 | Person | persona:John |
 
-Las propiedades path, limit, size y order by no pueden escribirse en OR con ninguna otra propiedad.
+Las propiedades `path`, `limit`, `size`y `orderby` no se pueden *O* con ninguna otra propiedad.
 
 La palabra clave para una propiedad generada por el usuario es su etiqueta de campo en el editor de propiedades en minúsculas, con espacios eliminados.
 
 Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 
-* Para mostrar todos los recursos con varios campos de facetas (por ejemplo: title=John Doe y la herramienta de creación = Adobe Photoshop): `tiltle:"John Doe" creatortool : Adobe*`
+* Para mostrar todos los recursos con varios campos de facetas (por ejemplo: title=John Doe y la herramienta de creación = Adobe Photoshop): `tiltle:"John Doe" creatortool:Adobe*`
 * Para mostrar todos los recursos cuando el valor de facetas no es una sola palabra sino una frase (por ejemplo: title=Scott Reynolds): `title:"Scott Reynolds"`
 * Para mostrar recursos con varios valores de una sola propiedad (por ejemplo: title=Scott Reynolds o John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * Para mostrar recursos con valores de propiedad que empiecen por una cadena específica (por ejemplo: el título es Scott Reynolds): `title:Scott*`
@@ -249,7 +249,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 *Figura: Busque y seleccione un recurso en el selector de recursos.*
 
-## Restricciones   {#limitations}
+## Restricciones     {#limitations}
 
 La capacidad de búsqueda en [!DNL Experience Manager Assets] tiene las siguientes limitaciones:
 
@@ -275,7 +275,7 @@ La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los sig
 * Utilice la casilla de verificación **[!UICONTROL Seleccionar todo]** para seleccionar los recursos buscados. [!DNL Experience Manager] inicialmente muestra 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos a medida que se desplazan los resultados de la búsqueda. Puede seleccionar más recursos que los recursos cargados. El recuento de los recursos seleccionados se muestra en la esquina superior derecha de la página de resultados de la búsqueda. Puede operar en la selección, por ejemplo, descargar los recursos seleccionados, actualizar las propiedades de metadatos de forma masiva para los recursos seleccionados o agregar los recursos seleccionados a una colección. Cuando se seleccionan más recursos de los que se muestran, se aplica una acción a todos los recursos seleccionados o aparece un cuadro de diálogo con el número de recursos en los que se aplica. Para aplicar una acción a los recursos que no se han cargado, asegúrese de que todos los recursos están explícitamente seleccionados.
 * Para buscar recursos que no contengan los metadatos obligatorios, consulte Metadatos [](#mandatorymetadata)obligatorios.
 * La búsqueda utiliza todos los campos de metadatos. Una búsqueda genérica, como la búsqueda de 12, generalmente devuelve muchos resultados. Para obtener mejores resultados, utilice comillas de doble (no simples) o asegúrese de que el número esté contiguo a una palabra sin carácter especial (por ejemplo, *shoe12*).
-* La búsqueda de texto completo admite operadores como -, ^, etc. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice &quot;Portátil - Belleza&quot; en lugar de Portátil - Belleza.
+* La búsqueda de texto completo admite operadores como - y ^. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice &quot;Portátil - Belleza&quot; en lugar de Portátil - Belleza.
 * Si los resultados de búsqueda son demasiados, limite el [ámbito de búsqueda](#scope) a cero en los recursos deseados. Funciona mejor cuando tiene alguna idea de cómo buscar mejor los recursos deseados, por ejemplo, un tipo de archivo específico, una ubicación específica, metadatos específicos, etc.
 
 * **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] oferta métodos para etiquetar automáticamente los recursos mediante los servicios inteligentes de Adobe Sensei, que mejoran aún más el etiquetado de los recursos con el uso y la formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
@@ -313,7 +313,7 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 *Figura: Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo.*
 
-**Excluir una palabra clave**: Utilice dash para buscar recursos que no contengan una palabra clave. Por ejemplo, `running -shoe` consulta devuelve recursos que contienen `running`, pero no `shoe`. Del mismo modo, `camp -night` consulta devuelve recursos que contienen `camp` pero no `night`. Tenga en cuenta que `camp-night` la consulta devuelve recursos que contienen tanto `camp` como `night`.
+**Excluir una palabra clave**: Utilice dash para buscar recursos que no contengan una palabra clave. Por ejemplo, `running -shoe` consulta devuelve recursos que contienen `running`, pero no `shoe`. Del mismo modo, `camp -night` consulta devuelve recursos que contienen `camp` pero no `night`. La consulta `camp-night` devuelve recursos que contienen tanto `camp` como `night`.
 
 ![Uso del guión para buscar recursos que no contengan una palabra clave excluida](assets/search_dash_exclude_keyword.gif)
 
@@ -327,14 +327,12 @@ La detección de recursos depende de la indexación del contenido de DAM, inclui
 
 ### Búsqueda visual o de similitudes {#configvisualsearch}
 
-La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience Manager] 6.5.2.0 o posterior. Después de configurar la funcionalidad de etiquetado inteligente, siga estos pasos.
+La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience Manager] 6.5.2.0 o posterior. Después de configurar la funcionalidad de etiquetado inteligente, siga estos pasos:
 
 1. En [!DNL Experience Manager] CRXDE, en el `/oak:index/lucene` nodo, agregue las siguientes propiedades y valores y guarde los cambios.
 
    * `costPerEntry` propiedad de tipo `Double` con el valor `10`.
-
    * `costPerExecution` propiedad de tipo `Double` con el valor `2`.
-
    * `refresh` propiedad de tipo `Boolean` con el valor `true`.
 
    Esta configuración permite realizar búsquedas desde el índice apropiado.
@@ -342,11 +340,8 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
 1. Para crear un índice de Lucene, en CRXDE, en `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, cree un nodo denominado `imageFeatures` de tipo `nt-unstructured`. En `imageFeatures` nodo,
 
    * Añadir `name` propiedad de tipo `String` con el valor `jcr:content/metadata/imageFeatures/haystack0`.
-
    * Añadir `nodeScopeIndex` propiedad de tipo `Boolean` con el valor de `true`.
-
    * Añadir `propertyIndex` propiedad de tipo `Boolean` con el valor de `true`.
-
    * Añadir `useInSimilarity` propiedad de tipo `Boolean` con el valor `true`.
 
    Guarde los cambios.
@@ -354,7 +349,7 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
 1. Acceda `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` y agregue `similarityTags` propiedad de tipo `Boolean` con el valor de `true`.
 1. Aplique etiquetas inteligentes a los recursos del [!DNL Experience Manager] repositorio. Consulte [cómo configurar etiquetas](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)inteligentes.
 1. En CRXDE, en `/oak-index/damAssetLucene` nodo, establezca la `reindex` propiedad en `true`. Guarde los cambios.
-1. (Opcional) Si tiene un formulario de búsqueda personalizado, copie el `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde todos los cambios.
+1. (Opcional) Si tiene un formulario de búsqueda personalizado, copie el `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde los cambios.
 
 Para obtener información relacionada, consulte [Comprender las etiquetas inteligentes en el Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) y [cómo administrar las etiquetas](/help/assets/managing-smart-tags.md)inteligentes.
 
@@ -377,7 +372,7 @@ Los predicados se utilizan para crear facetas. Los administradores pueden person
 Puede buscar recursos digitales en función de una o varias de las siguientes propiedades. Los Filtros que se aplican a algunas de estas propiedades están disponibles de forma predeterminada y otros filtros se pueden crear personalizados para aplicarlos a otras propiedades.
 
 | Campo de búsqueda | Valores de propiedades de búsqueda |
-|---|---|
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Tipos MIME | Imágenes, Documentos, Multimedia, Archivos u Otros. |
 | Última modificación | Hora, día, semana, mes o año. |
 | Tamaño del archivo | Pequeño, Medio o Grande. |
@@ -395,7 +390,7 @@ Puede buscar recursos digitales en función de una o varias de las siguientes pr
 
 ## Trabajar con resultados de búsqueda de recursos {#aftersearch}
 
-Una vez que vea algunos recursos buscados que coinciden con sus criterios, puede realizar las siguientes tareas típicas con estos resultados de búsqueda o realizar las siguientes acciones:
+Puede hacer lo siguiente con los recursos que ha buscado en Experience Manager:
 
 * Propiedades de metadatos de Vista y otra información.
 * Descargue uno o varios recursos.
@@ -404,7 +399,7 @@ Una vez que vea algunos recursos buscados que coinciden con sus criterios, puede
 
 ### Ordenar resultados de búsqueda {#sort}
 
-La ordenación de los resultados de búsqueda ayuda a descubrir los recursos necesarios con mayor rapidez. La ordenación de los resultados de búsqueda funciona en la vista de lista y solo cuando se selecciona **[!UICONTROL [Archivos](#searchui)]**en el panel**[!UICONTROL  Filtros ]**.[!DNL Experience Manager Assets]utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
+Ordene los resultados de búsqueda para descubrir los recursos necesarios más rápido. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
 En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, dimensiones, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
 
@@ -445,15 +440,15 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 
 | Error, problemas, síntomas | Motivo posible | Posible solución o comprensión del problema |
 |---|---|---|
-| Resultados incorrectos al buscar recursos con metadatos que faltan | Al buscar recursos que no tengan los metadatos obligatorios, es posible que [!DNL Experience Manager] se muestren algunos recursos con metadatos válidos. Los resultados se basan en la propiedad de metadatos indexados. | Una vez actualizados los metadatos, es necesario volver a indexar para reflejar el estado correcto de los metadatos de los recursos. Consulte metadatos [](metadata-schemas.md#define-mandatory-metadata)obligatorios. |
-| Demasiados resultados de búsqueda | Parámetro de búsqueda amplia. | Considere limitar el [alcance de la búsqueda](#scope). El uso de etiquetas inteligentes puede proporcionarle más resultados de búsqueda de los esperados. Consulte Comportamiento [de búsqueda con etiquetas](#withsmarttags)inteligentes. |
-| Resultados de búsqueda no relacionados o parcialmente relacionados | El comportamiento de búsqueda cambia con el etiquetado inteligente. | Comprender [cómo cambia la búsqueda después del etiquetado](#withsmarttags)inteligente. |
-| No hay sugerencias de autocompletar para los recursos | Los recursos recién cargados no se han indizado todavía. Los metadatos no están disponibles de inmediato como sugerencias cuando se inicio escribir una palabra clave de búsqueda en la barra de Omniture. | [!DNL Assets] espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados o actualizados recientemente y, a continuación, agrega los metadatos a la lista de sugerencias. |
-| No hay resultados de la búsqueda | <ul><li>No existen recursos que coincidan con la consulta.</li><li>Ha agregado un espacio en blanco antes de la consulta de búsqueda.</li><li>Un campo de metadatos no admitido contiene la palabra clave que busca.</li><li>Tiempo de activación y tiempo de inactividad se configura para el recurso y la búsqueda se realizó durante el tiempo de inactividad del recurso.</li></ul> | <ul><li>Buscar usando una palabra clave diferente. También puede utilizar el etiquetado (inteligente) para mejorar los resultados de la búsqueda.</li><li>Es una limitación [conocida](#limitations).</li><li>No todos los campos de metadatos se consideran para las búsquedas. Consulte [ámbito](#scope).</li><li>Busque más tarde o modifique los tiempos de activación y desactivación de los recursos necesarios.</li></ul> |
-| El filtro de búsqueda o predicado no está disponible | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no están personalizadas en la implementación que esté utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene los privilegios y permisos necesarios para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para la [!DNL Assets] implementación que está utilizando.</li></ul> |
-| Al buscar imágenes visualmente similares, falta una imagen esperada | <ul><li>La imagen no está disponible en [!DNL Experience Manager].</li><li>La imagen no está indizada. Normalmente, cuando se carga recientemente.</li><li>La imagen no está etiquetada de forma inteligente.</li></ul> | <ul><li>Añada la imagen a [!DNL Assets].</li><li>Póngase en contacto con el administrador para volver a indexar el repositorio. Además, asegúrese de que está utilizando el índice adecuado.</li><li>Póngase en contacto con el administrador para etiquetar los recursos relevantes de forma inteligente.</li></ul> |
-| Al buscar imágenes visualmente similares, se muestra una imagen irrelevante | Comportamiento de búsqueda visual. | [!DNL Experience Manager] muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se agregan a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen a medida que se desplaza hacia abajo por los resultados de la búsqueda. |
-| Al seleccionar y operar en los resultados de búsqueda, no se aplican todos los recursos buscados | La opción [!UICONTROL Seleccionar todo] sólo selecciona los primeros 100 resultados de búsqueda en la vista de tarjetas y los primeros 200 resultados de búsqueda en la vista de listas. |  |
+| Resultados incorrectos al buscar recursos con metadatos que faltan. | Al buscar recursos que no tengan los metadatos obligatorios, es posible que [!DNL Experience Manager] se muestren algunos recursos con metadatos válidos. Los resultados se basan en la propiedad de metadatos indexados. | Una vez actualizados los metadatos, es necesario volver a indexar para reflejar el estado correcto de los metadatos de los recursos. Consulte metadatos [](metadata-schemas.md#define-mandatory-metadata)obligatorios. |
+| Demasiados resultados de búsqueda. | Parámetro de búsqueda amplia. | Considere limitar el [alcance de la búsqueda](#scope). El uso de etiquetas inteligentes puede proporcionarle más resultados de búsqueda de los esperados. Consulte Comportamiento [de búsqueda con etiquetas](#withsmarttags)inteligentes. |
+| Resultados de búsqueda no relacionados o parcialmente relacionados. | El comportamiento de búsqueda cambia con el etiquetado inteligente. | Comprender [cómo cambia la búsqueda después del etiquetado](#withsmarttags)inteligente. |
+| No hay sugerencias de autocompletar para los recursos. | Los recursos recién cargados no se han indizado todavía. Los metadatos no están disponibles de inmediato como sugerencias cuando se inicio escribir una palabra clave de búsqueda en la barra de Omniture. | [!DNL Assets] espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados o actualizados recientemente y, a continuación, agrega los metadatos a la lista de sugerencias. |
+| No hay resultados de la búsqueda. | <ul><li>Los recursos que coinciden con la consulta no existen. </li><li> Se agregó espacio en blanco antes de la consulta de búsqueda. </li><li> El campo de metadatos no admitido contiene la palabra clave que buscó.</li><li> Búsqueda realizada durante el tiempo de inactividad de un recurso. </li></ul> | <ul><li>Buscar usando una palabra clave diferente. También puede utilizar el etiquetado inteligente o la búsqueda por similitudes para mejorar los resultados de la búsqueda. </li><li>[Limitaciones](#limitations)conocidas.</li><li>No se tienen en cuenta todos los campos de metadatos para las búsquedas. Consulte [ámbito](#scope).</li><li>Busque más tarde o modifique los recursos necesarios a tiempo y sin conexión.</li></ul> |
+| El filtro de búsqueda o un predicado no está disponible. | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no están personalizadas en la implementación que esté utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene los privilegios y permisos necesarios para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para la [!DNL Assets] implementación que está utilizando.</li></ul> |
+| Al buscar imágenes visualmente similares, falta una imagen esperada. | <ul><li>La imagen no está disponible en [!DNL Experience Manager].</li><li>La imagen no está indizada. Normalmente, cuando se carga recientemente.</li><li>La imagen no está etiquetada de forma inteligente.</li></ul> | <ul><li>Añada la imagen a [!DNL Assets].</li><li>Póngase en contacto con el administrador para volver a indexar el repositorio. Además, asegúrese de que está utilizando el índice adecuado.</li><li>Póngase en contacto con el administrador para etiquetar los recursos relevantes de forma inteligente.</li></ul> |
+| Al buscar imágenes visualmente similares, se muestra una imagen irrelevante. | Comportamiento de búsqueda visual. | [!DNL Experience Manager] muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se agregan a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen a medida que se desplaza hacia abajo por los resultados de la búsqueda. |
+| Al seleccionar y operar en los resultados de búsqueda, no se realizan operaciones con todos los recursos buscados. | La opción [!UICONTROL Seleccionar todo] sólo selecciona los primeros 100 resultados de búsqueda en la vista de tarjetas y los primeros 200 resultados de búsqueda en la vista de listas. |  |
 
 >[!MORELIKETHIS]
 >
