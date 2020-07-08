@@ -3,7 +3,7 @@ title: Plantillas de recursos en [!DNL Adobe Experience Manager Assets].
 description: Obtenga información sobre las plantillas de recursos [!DNL Adobe Experience Manager Assets] en y cómo utilizar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -96,7 +96,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    >[!NOTE]
    >
-   >Asegúrese de que la [!DNL Experience Manager] instancia está integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la [!DNL InDesign] plantilla y ponerlos a disposición para su edición. Para obtener más información, consulte [Integración de recursos de Experience Manager con InDesign Server](/help/assets/indesign.md).
+   >Asegúrese de que [!DNL Experience Manager] la implementación está integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la [!DNL InDesign] plantilla y ponerlos a disposición para su edición. Para obtener más información, consulte [Integración de recursos de Experience Manager con InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar el texto de un campo editable, haga clic en el campo de texto de la lista de campos editables y edite el texto del campo.
 
@@ -181,7 +181,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
 
-   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas en función del tipo de archivo o las etiquetas.
+   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas basadas en el tipo de archivo o las etiquetas.
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
