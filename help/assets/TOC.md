@@ -4,17 +4,17 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de Experience Manager 6.5 Assets
 translation-type: tm+mt
-source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
+source-git-commit: 9f1548785283ffba119d8404e328f513012a082c
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
 
 # Guía del usuario de Experience Manager 6.5 Assets {#assets}
 
-+ [[!DNL Assets] user guide](home.md)
++ [[!DNL Assets] guía del usuario](home.md)
 + [Notas de la versión de Recursos AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
@@ -151,7 +151,7 @@ ht-degree: 41%
    + [Creación de proyectos de traducción](translation-projects.md)
    + [Preparación de recursos para su traducción](preparing-assets-for-translation.md)
    + [Descargar recursos de AEM](download-assets-from-aem.md)
-   + [Operaciones asincrónicas](/help/sites-administering/asynchronous-jobs.md)
+   + [Trabajos asincrónicos](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Perspectivas de recursos](touch-ui-asset-insights.md)
    + [Activar perspectivas de recursos mediante Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
