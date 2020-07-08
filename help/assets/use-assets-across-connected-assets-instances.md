@@ -1,9 +1,9 @@
 ---
 title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
-description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
+description: Utilice los recursos disponibles en una [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementación remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 51%
@@ -15,7 +15,7 @@ ht-degree: 51%
 
 En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Una razón puede ser la distribución geográfica de las implementaciones existentes que se requieren para trabajar en conjunto. Otra razón pueden ser las adquisiciones que conducen a una infraestructura heterogénea que la compañía principal desea utilizar en conjunto.
 
-Users can create web pages in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] is the Digital Asset Management (DAM) system that supplies the required assets for websites. [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración [!DNL Sites] y [!DNL Assets].
+Los usuarios pueden crear páginas web en [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] es el sistema de administración de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web. [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración [!DNL Sites] y [!DNL Assets].
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
@@ -28,7 +28,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 * Los usuarios forman parte de los grupos correspondientes en cada implementación.
-* Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. [!DNL Experience Manager] 6.5 [!DNL Assets] funciona [!DNL Experience Manager] como Cloud Service. For more information, see [Connected Assets functionality in Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos. [!DNL Experience Manager] 6.5 [!DNL Assets] funciona [!DNL Experience Manager] como Cloud Service. Para obtener más información, consulte Funcionalidad de Recursos [conectados en Experience Manager como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] como Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sobre AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] in situ |
    |---|---|---|---|
@@ -45,7 +45,7 @@ Los creadores pueden buscar imágenes y los siguientes tipos de documentos en el
 
 ### Usuarios y grupos implicados {#users-and-groups-involved}
 
-A continuación se describen las distintas funciones que se usan para configurar y utilizar la capacidad y sus grupos de usuarios correspondientes. Local scope is used for the use case where an author creates a web page. El ámbito remoto se utiliza para la implementación de DAM que aloja los recursos necesarios. The [!DNL Sites] author fetches these remote assets.
+A continuación se describen las distintas funciones que se usan para configurar y utilizar la capacidad y sus grupos de usuarios correspondientes. El ámbito local se utiliza para el caso de uso en el que un autor crea una página web. El ámbito remoto se utiliza para la implementación de DAM que aloja los recursos necesarios. The [!DNL Sites] author fetches these remote assets.
 
 | Función | Ámbito | Grupo de usuarios | Nombre de usuario en la introducción | Requisito |
 |---|---|---|---|---|
@@ -73,7 +73,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 1. Access the local [!DNL Sites] deployment at `https://[local_sites]:4502`. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de recursos conectados]** y proporcione los siguientes valores:
 
-   1. [!DNL Assets] location is `https://[assets_servername_ams]:[port]`.
+   1. [!DNL Assets] la ubicación es `https://[assets_servername_ams]:[port]`.
    1. Credenciales de un distribuidor DAM (usuario técnico).
    1. En el campo **[!UICONTROL Punto de montaje]**, introduzca la ruta local de donde recupera los recursos. [!DNL Experience Manager][!DNL Experience Manager] Por ejemplo, la carpeta `remoteassets`.
    1. Ajuste los valores del **[!UICONTROL umbral de optimización de transferencia binaria original]** en función de la red. Las representaciones de recursos superiores a este umbral se transfieren de forma asíncrona.
@@ -103,28 +103,28 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    >
    >Todas las representaciones disponibles en la implementación remota de se recuperan cuando los autores recuperan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
-1. Add the [!DNL Sites] instance as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
+1. Add the [!DNL Sites] deployment as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
 
    1. Inicie sesión con las credenciales del administrador. Buscar `Cross-Origin`. Acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
-   1. To create a CORS configuration for [!DNL Sites] instance, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Guarde la configuración.
 
 ## Usar recursos remotos {#use-remote-assets}
 
-Los creadores del sitio web utilizan el buscador de contenido para conectarse a la instancia de DAM. Los autores pueden examinar, buscar y arrastrar los recursos remotos de un componente. Para autenticarse en el DAM remoto, conserve las credenciales del usuario DAM proporcionadas por el administrador.
+Los creadores del sitio web utilizan Content Finder para conectarse a la implementación de DAM. Los autores pueden examinar, buscar y arrastrar los recursos remotos de un componente. Para autenticarse en el DAM remoto, conserve las credenciales del usuario DAM proporcionadas por el administrador.
 
-Los autores pueden utilizar los recursos disponibles en el DAM local y en las instancias de DAM remotas en una sola página web. Utilice el buscador de contenido para decidir si buscar en el DAM local o en el DAM remoto.
+Los autores pueden utilizar los recursos disponibles en el DAM local y en la implementación remota de DAM, en una sola página web. Utilice el buscador de contenido para decidir si buscar en el DAM local o en el DAM remoto.
 
-Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] instance. Todas las demás etiquetas se descartan. Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
+Solo se buscan las etiquetas de los recursos remotos que tienen una etiqueta correspondiente exacta junto con la misma jerarquía de taxonomía, disponible en la [!DNL Sites] implementación local. Todas las demás etiquetas se descartan. Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
 
 ### Introducción al uso {#walk-through-of-usage}
 
 Utilice la configuración anterior para probar la experiencia de creación y comprender cómo se utiliza la funcionalidad. Utilice documentos o imágenes de su elección en la implementación remota de DAM.
 
 1. Navigate to the [!DNL Assets] interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. También puede acceder a `https://[assets_servername_ams]:[port]/assets.html/content/dam` en un explorador. Cargue los recursos que desee.
-1. On the [!DNL Sites] instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Utilice `ksaner` como nombre de usuario, seleccione la opción proporcionada y haga clic en **[!UICONTROL Aceptar]**.
+1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Utilice `ksaner` como nombre de usuario, seleccione la opción proporcionada y haga clic en **[!UICONTROL Aceptar]**.
 1. Abra una página web de We.Retail en **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` en un navegador para editar una página.
 
    Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda de la página.
@@ -173,7 +173,7 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 
 ### Configuración y licencia {#setup-licensing}
 
-* [!DNL Assets] deployment on [!DNL Adobe Managed Services] is supported.
+* [!DNL Assets] la implementación en [!DNL Adobe Managed Services] es compatible.
 * [!DNL Sites] Puede conectarse a un único [!DNL Assets] repositorio a la vez.
 * A license of [!DNL Assets] working as remote repository.
 * One or more licenses of [!DNL Sites] working as local authoring deployment.
@@ -189,4 +189,4 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 Siga estos pasos para solucionar los problemas de los escenarios de error comunes:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
-* An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn&#39;t exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Asegúrese de que se han establecido los permisos adecuados y de que se cumplen los requisitos previos. Vuelva a intentar agregar el recurso a la página y vuelva a publicarlo. Compruebe la [lista de trabajos asincrónicos](/help/sites-administering/asynchronous-jobs.md) si hay errores en la recuperación de recursos.
+* Es posible que un recurso recuperado de la presa remota no se publique en una página web por una o varias razones. No existe en el servidor remoto, la falta de los permisos adecuados para recuperarlo o la falla de red pueden ser las razones. Asegúrese de que el recurso no se elimina del DAM remoto. Asegúrese de que se han establecido los permisos adecuados y de que se cumplen los requisitos previos. Vuelva a intentar agregar el recurso a la página y vuelva a publicarlo. Compruebe la [lista de trabajos asincrónicos](/help/sites-administering/asynchronous-jobs.md) si hay errores en la recuperación de recursos.
