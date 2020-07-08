@@ -3,7 +3,7 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Aunque puede personalizar el código de seguimiento para permitir que las soluci
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM.
 
 1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Configuración **[!UICONTROL de]** perspectivas.
-1. [Configurar la instancia de Experience Manager con el Cloud Service de DTM](/help/sites-administering/dtm.md)
+1. [Configurar la implementación de Experience Manager con el Cloud Service de DTM](/help/sites-administering/dtm.md)
 
    El testigo API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** en el Perfil del usuario. Este paso no es necesario desde el punto de vista de perspectivas de recursos, ya que la integración de sitios Experience Manager con perspectivas de recursos sigue en marcha.
 
