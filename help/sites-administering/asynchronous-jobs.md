@@ -1,18 +1,18 @@
 ---
-title: Operaciones asincrónicas
+title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de forma asíncrona algunas tareas que requieren muchos recursos.
 translation-type: tm+mt
-source-git-commit: 69b90432ac6028a64f36300819e1bead1ae8d671
+source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 3%
 
 ---
 
 
 # Operaciones asincrónicas {#asynchronous-operations}
 
-Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager procesa de forma asíncrona determinadas operaciones de larga duración y con gran cantidad de recursos.
+Para reducir el impacto negativo en el rendimiento, Adobe Experience Manager procesa de forma asíncrona determinadas operaciones de larga duración y con gran cantidad de recursos. El procesamiento asincrónico implica poner en cola varios trabajos y ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
 
 Estas operaciones incluyen:
 
@@ -22,8 +22,6 @@ Estas operaciones incluyen:
 * Recuperación de recursos, que están por encima del límite establecido, desde una implementación de Experience Manager remoto
 * Desplazamiento de páginas
 * Despliegue de Live Copies
-
-El procesamiento asincrónico implica poner en cola varios trabajos y ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
 
 Puede vista del estado de los trabajos asincrónicos desde el panel Estado **[!UICONTROL de trabajo]** asincrónico en Navegación **** global -> **Herramientas** -> **Operaciones** -> **Trabajos**.
 
@@ -35,7 +33,7 @@ Puede vista del estado de los trabajos asincrónicos desde el panel Estado **[!U
 
 ## Monitorear el estado de las operaciones asincrónicas {#monitor-the-status-of-asynchronous-operations}
 
-Siempre que AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico (si está activada).
+Siempre que AEM procese una operación de forma asíncrona, recibirá una notificación en la [bandeja de entrada](/help/sites-authoring/inbox.md) y por correo electrónico (si está activada).
 
 Para realizar una vista detallada del estado de las operaciones asincrónicas, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
@@ -85,6 +83,7 @@ Puede modificar la programación del trabajo de depuración y la duración duran
    * El número de umbral de días después de los cuales se eliminan los trabajos completados.
    * Número máximo de trabajos para los que se conservan detalles en el historial.
    * La expresión de cron para cuándo debe ejecutarse la purga.
+
    ![Configuración para programar la depuración de trabajos asincrónicos](assets/async-purge-job.png)
 
 1. Guarde los cambios.
@@ -141,3 +140,12 @@ Si el número de referencias a las páginas que se van a mover supera el número
    ![Configuración de MSM](assets/async-msm.png)
 
 1. Guarde los cambios.
+
+>[!MORELIKETHIS]
+>
+>* [Creación y organización de páginas](/help/sites-authoring/managing-pages.md)
+>* [Creación y sincronización de Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Configure el correo electrónico en el Experience Manager](/help/sites-administering/notification.md).
+>* [Importe y exporte metadatos de recursos de forma masiva](/help/assets/metadata-import-export.md).
+>* [Utilice Recursos conectados para compartir recursos DAM de implementaciones](/help/assets/use-assets-across-connected-assets-instances.md)remotas.
+
