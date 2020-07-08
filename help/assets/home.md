@@ -4,7 +4,7 @@ seo-title: Guía del usuario de Adobe Experience Manager 6.5 Assets
 description: Esta guía cubre todas las tareas de recursos Experience Manager, como la creación, administración, entrega y optimización de recursos digitales.
 seo-description: Abarca todas las tareas de recursos Experience Manager, como la creación, administración, entrega y optimización de recursos digitales.
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 12%
@@ -35,7 +35,7 @@ Esta guía cubre todas las tareas de recursos Experience Manager, como la creaci
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación en Experience Manager en la interfaz de usuario clásica. |
 | [Guía del usuario de Pantallas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario de implementación](/help/sites-deploying/home.md) | Esta guía muestra los conceptos básicos del Experience Manager. |
-| [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Aprenda a crear la instancia de Experience Manager. |
+| [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Obtenga información sobre cómo crear la implementación de Experience Manager. |
 | [Administración de la guía del usuario](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de Experience Manager. |
 | [Guía del usuario móvil](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con [!DNL Livefyre]. |
