@@ -3,7 +3,7 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 8%
@@ -27,7 +27,7 @@ Una vez preparada y preparada la etiqueta, el servicio ahora puede aplicarla a l
 
 En segundo plano, el servicio de contenido inteligente utiliza el marco de trabajo de Adobe Sensei AI para formar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
-Smart Content Service es un servicio en la nube alojado en Adobe I/O. Para utilizarlo en Adobe Experience Manager, el administrador del sistema debe integrar la instancia de Experience Manager con Adobe I/O.
+Smart Content Service es un servicio en la nube alojado en Adobe I/O. Para utilizarlo en Adobe Experience Manager, el administrador del sistema debe integrar la implementación de Experience Manager con Adobe I/O.
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
