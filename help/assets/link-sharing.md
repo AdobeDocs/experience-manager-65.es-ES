@@ -3,7 +3,7 @@ title: Generación de una URL para los recursos compartidos
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos Experience Manager como una dirección URL a terceros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 6%
@@ -40,7 +40,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
    >[!NOTE]
    >
-   >Si desea compartir vínculos de la instancia de Experience Manager Author a entidades externas, asegúrese de que solo muestra las siguientes URL (que se utilizan para compartir vínculos) para `GET` solicitudes. Bloquear otras direcciones URL para garantizar la seguridad del autor del Experience Manager.
+   >Si desea compartir vínculos de la implementación de Experience Manager Author con entidades externas, asegúrese de que solo muestra las siguientes URL (que se utilizan para compartir vínculos) para `GET` solicitudes. Bloquear otras direcciones URL para garantizar la seguridad del autor del Experience Manager.
    >
    >* http://[aem_server]:[port]/linkshare.html
    >* http://[aem_server]:[port]/linksharepreview.html
@@ -116,6 +116,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    * Puerto del servidor SMTP: puerto del servidor de correo electrónico
    * Usuario SMTP: nombre de usuario del servidor de correo electrónico
    * Contraseña SMTP: contraseña del servidor de correo electrónico
+
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
 1. Haga clic en **[!UICONTROL Guardar]**.
