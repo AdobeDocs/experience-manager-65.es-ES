@@ -3,9 +3,9 @@ title: Prácticas recomendadas de integración [!DNL Adobe Experience Manager] y
 description: Prácticas recomendadas para la [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integración para optimizar los flujos de trabajo de transferencia de recursos y lograr una alta velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '3250'
+source-wordcount: '3251'
 ht-degree: 16%
 
 ---
@@ -45,6 +45,9 @@ Este artículo se centra principalmente en los dos primeros aspectos de las nece
 
 ### Asignación de casos de uso y soluciones de Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
+<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+-->
+
 | Caso práctico  | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicación de escritorio | Comentarios y otras soluciones |
 |---|---|---|---|
 | Discover: examinar carpetas DAM | Sí | [!DNL Experience Manager] Acciones de interfaz web y escritorio |  |
@@ -73,7 +76,7 @@ Para admitir casos de uso de distribución de recursos, se deben considerar otra
 ### Glosario de términos comunes {#glossary-of-common-terms}
 
 * **Trabajo en curso o trabajo en curso creativo (WIP):** Fase del ciclo vital de los recursos en la que sufren varios cambios y, por lo general, no están listos para compartirse con equipos más amplios.
-* **Recursos listos para el creativo:** [!DNL Assets] que estén listos para compartirse con un equipo más amplio, o que hayan sido seleccionados o aprobados por el equipo creativo para compartirlos con equipos de mercadotecnia o LOB.
+* **Recursos listos para el creativo:** [!DNL Assets] que estén listos para compartirse con un equipo más amplio o que hayan sido seleccionados o aprobados por el equipo creativo para compartirse con equipos de marketing o de LOB.
 * **Aprobaciones de recursos:** Proceso de aprobación que se ejecuta para los recursos ya cargados en DAM, que generalmente incluye aprobaciones de marca, aprobaciones legales, etc.
 * **Recurso final:** Recurso que ha pasado por todas las aprobaciones/etiquetado de metadatos y está listo para que lo utilice el equipo superior. Este recurso se almacena en DAM y se pone a disposición de todos los usuarios (o de todos los interesados). Se puede utilizar en canales de marketing o en equipos creativos para crear diseños.
 * **Cambio o actualización menor de recursos:** Un cambio rápido y pequeño en un recurso digital. A menudo se realiza como respuesta a una solicitud de edición, revisión o aprobación de recursos (por ejemplo, cambiar la posición, el tamaño del texto, ajustar la saturación/brillo, el color, etc.).
@@ -160,20 +163,20 @@ Los siguientes son ejemplos de actualizaciones que normalmente no son relevantes
 
 #### Usuarios creativos con acceso directo a DAM {#creative-users-with-direct-access-to-dam}
 
-Generalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la instancia de DAM, incluido el [!DNL Experience Manager] inicio de sesión. [!DNL Experience Manager] y la infraestructura de red se puede configurar para permitir el acceso directo a partes externas -generalmente organizaciones de confianza como las agencias que trabajan para un cliente- para tener acceso a través de la red, por ejemplo a través de VPN o lista de IP permitidas. [!DNL Experience Manager]
+Generalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la implementación de DAM, incluido el [!DNL Experience Manager] inicio de sesión. [!DNL Experience Manager] y la infraestructura de red se puede configurar para permitir el acceso directo a partes externas -generalmente organizaciones de confianza como las agencias que trabajan para un cliente- para tener acceso a través de la red, por ejemplo a través de una lista de permitidos VPN o IP. [!DNL Experience Manager]
 
 En estos casos, Adobe Asset Link o [!DNL Experience Manager] la aplicación de escritorio ayudan a facilitar el acceso a los recursos finales o aprobados y permiten guardar en DAM los recursos listos para la creación.
 
 #### Usuarios creativos sin acceso a DAM {#creative-users-without-access-to-dam}
 
-Es posible que las agencias externas y los autónomos que no tienen acceso directo a la instancia de DAM necesiten acceder a los recursos aprobados o deseen añadir sus nuevos diseños al DAM.
+Es posible que las agencias externas y los autónomos que no tienen acceso directo a la implementación de DAM necesiten acceder a los recursos aprobados o deseen agregar sus nuevos diseños al DAM.
 
 Utilice las siguientes estrategias para proporcionar acceso a los activos finales o aprobados:
 
 * Utilice la aplicación de escritorio si Asset Link no funciona.
 * Utilice el portal [de marcas](https://helpx.adobe.com/es/experience-manager/brand-portal/user-guide.html) Experience Manager Assets para distribuir recursos de forma segura a socios externos
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilice Control de acceso configurado en la infraestructura de red [!DNL Experience Manager] y necesaria (por ejemplo, lista de VPN e IP permitidas) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario [!DNL Experience Manager] web para obtener recursos y cargar contenido nuevo en su DAM.
+* Utilice Control de acceso configurado en la infraestructura de red [!DNL Experience Manager] y necesaria (por ejemplo, VPN y lista de permitidos IP) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario [!DNL Experience Manager] web para obtener recursos y cargar contenido nuevo en su DAM.
 
 #### Trabajos en curso sobre activos procedentes de [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
