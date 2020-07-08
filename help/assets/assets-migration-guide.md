@@ -3,7 +3,7 @@ title: Migrar recursos [!DNL Adobe Experience Manager Assets] masivamente.
 description: Describe cómo introducir [!DNL Adobe Experience Manager]recursos, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 8%
@@ -28,6 +28,7 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Fast Action Manager
 >* Flujo de trabajo sintético
+
 >
 >
 Este software es de código abierto y está cubierto por la [Licencia de ](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
@@ -61,7 +62,7 @@ Existen dos métodos para cargar los recursos en el sistema: un enfoque basado e
 
 #### Enviar a través de HTTP {#pushing-through-http}
 
-El equipo de servicios gestionados de Adobe utiliza una herramienta llamada Glutton para cargar datos en entornos de clientes. Glutton es una pequeña aplicación Java que carga todos los recursos de un directorio en otro directorio de una [!DNL Experience Manager] instancia. En lugar de utilizar Glutton, también puede utilizar herramientas como scripts Perl para publicar los recursos en el repositorio.
+El equipo de servicios gestionados de Adobe utiliza una herramienta llamada Glutton para cargar datos en entornos de clientes. Glutton es una pequeña aplicación Java que carga todos los recursos de un directorio en otro directorio en una [!DNL Experience Manager] implementación. En lugar de utilizar Glutton, también puede utilizar herramientas como scripts Perl para publicar los recursos en el repositorio.
 
 Existen dos aspectos negativos principales a la hora de utilizar el método de pasar por https:
 
@@ -72,7 +73,7 @@ El otro método para la ingesta de recursos es extraer recursos del sistema de a
 
 #### Buscar desde el sistema de archivos local {#pulling-from-the-local-filesystem}
 
-El importador [de recursos CSV de las herramientas de AEM de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrae recursos del sistema de archivos y los metadatos de los recursos de un archivo CSV para la importación de recursos. La API de Experience Manager Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
+El importador [de recursos CSV de las herramientas de AEM de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrae recursos del sistema de archivos y los metadatos de los recursos de un archivo CSV para la importación de recursos. La API del Administrador de recursos de Experience Manager se utiliza para importar los recursos en el sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
 
 Dado que no es necesario transmitir los recursos a través de una red, el rendimiento general mejora considerablemente y este método se considera generalmente la forma más eficaz de cargar los recursos en el repositorio. Además, como la herramienta admite la ingestión de metadatos, puede importar todos los recursos y metadatos en un solo paso en lugar de crear un segundo paso para aplicar los metadatos mediante una herramienta independiente.
 
@@ -117,15 +118,15 @@ Una vez completada la migración, los lanzadores de los flujos de trabajo de rec
 
 ## Migrar entre [!DNL Experience Manager] implementaciones {#migrating-between-aem-instances}
 
-Aunque no es tan común, a veces es necesario migrar grandes cantidades de datos de una [!DNL Experience Manager] instancia a otra; por ejemplo, cuando realice una [!DNL Experience Manager] actualización, actualice el hardware o migre a un nuevo centro de datos, como con una migración AMS.
+Aunque no es tan común, a veces es necesario migrar grandes cantidades de datos de una [!DNL Experience Manager] implementación a otra; por ejemplo, cuando realice una [!DNL Experience Manager] actualización, actualice el hardware o migre a un nuevo centro de datos, como con una migración AMS.
 
-En este caso, los recursos ya están rellenados con metadatos y las representaciones ya se han generado. Puede centrarse simplemente en mover recursos de una instancia a otra. Al migrar entre [!DNL Experience Manager] instancias, se realizan los siguientes pasos:
+En este caso, los recursos ya están rellenados con metadatos y las representaciones ya se han generado. Puede centrarse simplemente en mover recursos de una instancia a otra. Al migrar entre [!DNL Experience Manager] la implementación, realice los siguientes pasos:
 
 1. Deshabilitar flujos de trabajo: Como está migrando representaciones junto con nuestros recursos, desea deshabilitar los iniciadores de flujo de trabajo para el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM.
 
-1. Migrar etiquetas: Como ya tiene etiquetas cargadas en la [!DNL Experience Manager] instancia de origen, puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
+1. Migrar etiquetas: Dado que ya tiene etiquetas cargadas en la implementación de origen [!DNL Experience Manager] , puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
 
-1. Migrar recursos: Existen dos herramientas recomendadas para mover recursos de una [!DNL Experience Manager] instancia a otra:
+1. Migrar recursos: Existen dos herramientas recomendadas para mover recursos de una [!DNL Experience Manager] implementación a otra:
 
    * **Vault Remote Copy** o vlt rcp, le permite usar vlt en una red. Puede especificar un directorio de origen y destino y vlt descarga todos los datos del repositorio de una instancia y los carga en la otra. Vlt rcp está documentado en [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** es una herramienta de sincronización de contenido de código abierto desarrollada por Time Warner Cable para su [!DNL Experience Manager] implementación. Debido a que utiliza flujos de datos continuos, en comparación con vlt rcp, tiene una latencia menor y reclama una mejora de velocidad de dos a diez veces más rápida que vlt rcp. Grabbit también admite la sincronización de contenido delta solamente, lo que le permite sincronizar los cambios una vez que se ha completado una fase de migración inicial.
