@@ -4,7 +4,7 @@ description: Sugerencias y directrices [!DNL Experience Manager] sobre configura
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2767'
 ht-degree: 0%
@@ -28,11 +28,11 @@ A continuación se indican algunas áreas de enfoque clave en las que se detecta
 
 ## Plataforma {#platform}
 
-Aunque Experience Manager es compatible con varias plataformas, Adobe ha encontrado la buena compatibilidad con herramientas nativas en Linux y Windows, lo que contribuye a un rendimiento óptimo y a una implementación más sencilla. Lo ideal es implementar un sistema operativo de 64 bits para cumplir los requisitos de memoria alta de una [!DNL Experience Manager Assets] implementación. Al igual que con cualquier implementación de Experience Manager, debe implementar TarMK siempre que sea posible. Aunque TarMK no puede escalar más allá de una sola instancia de autor, se ha descubierto que funciona mejor que MongoMK. Puede agregar instancias de descarga de TarMK para aumentar la potencia de procesamiento del flujo de trabajo de su [!DNL Experience Manager Assets] implementación.
+Aunque Experience Manager es compatible con varias plataformas, Adobe ha encontrado la buena compatibilidad con herramientas nativas en Linux y Windows, lo que contribuye a un rendimiento óptimo y a una implementación más sencilla. Lo ideal es implementar un sistema operativo de 64 bits para cumplir los requisitos de memoria alta de una [!DNL Experience Manager Assets] implementación. Como con cualquier implementación de Experience Manager, debe implementar TarMK siempre que sea posible. Aunque TarMK no puede escalar más allá de una sola instancia de autor, se ha descubierto que funciona mejor que MongoMK. Puede agregar instancias de descarga de TarMK para aumentar la potencia de procesamiento del flujo de trabajo de su [!DNL Experience Manager Assets] implementación.
 
 ### Carpeta temporal {#temp-folder}
 
-Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede utilizar una unidad RAM o SSD. En los entornos basados en la nube, se puede utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad de [disco](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) efímero para la carpeta temporal.
+Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede usar una unidad RAM o SSD. En los entornos basados en la nube, se puede utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad de [disco](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) efímero para la carpeta temporal.
 
 Si el servidor tiene una memoria amplia, configure una unidad de RAM. En Linux, ejecute estos comandos para crear una unidad de 8 GB de RAM:
 
@@ -128,7 +128,7 @@ Principalmente, su estrategia de optimización de red depende de la cantidad de 
 
 Siempre que sea posible, establezca el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM en Temporal. La configuración reduce considerablemente los gastos generales necesarios para procesar flujos de trabajo porque, en este caso, los flujos de trabajo no necesitan pasar por los procesos normales de seguimiento y archivo.
 
-1. Vaya a `/miscadmin` la instancia de [!DNLEExperience Manager] en `https://[aem_server]:[port]/miscadmin`.
+1. Vaya a `/miscadmin` en la implementación de [!DNLEExperience Manager] en `https://[aem_server]:[port]/miscadmin`.
 
 1. Expanda **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL presa]**.
 
@@ -285,11 +285,11 @@ Para todos los problemas de rendimiento de la red del cliente, realice las sigui
 * Mediante el uso de una herramienta de referencia de red
 * Prueba con el despachante
 
-### [!DNL Experience Manager] prueba de instancia {#aem-instance-testing}
+### [!DNL Experience Manager] prueba de implementación {#aem-deployment-testing}
 
-Para minimizar la latencia y lograr un alto rendimiento mediante la utilización eficiente de la CPU y el uso compartido de la carga, supervise el rendimiento de su [!DNL Experience Manager] instancia de forma regular. En particular:
+Para minimizar la latencia y lograr un alto rendimiento mediante la utilización eficiente de la CPU y el uso compartido de la carga, supervise el rendimiento de su [!DNL Experience Manager] implementación con regularidad. En particular:
 
-* Ejecute pruebas de carga con la [!DNL Experience Manager] instancia.
+* Ejecute pruebas de carga con la implementación [!DNL Experience Manager] .
 * Monitoree el rendimiento de carga y la capacidad de respuesta de la interfaz de usuario.
 
 ## [!DNL Experience Manager Assets] lista de comprobación de rendimiento e impacto de las tareas de administración de activos {#checklist}
