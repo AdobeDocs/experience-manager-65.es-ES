@@ -1,25 +1,16 @@
 ---
 title: Crear y organizar páginas
-seo-title: Crear y organizar páginas
 description: Cómo crear y administrar páginas con AEM
-seo-description: Cómo crear y administrar páginas con AEM
-uuid: d2989c42-b500-4256-b779-9667a380b885
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
-docset: aem65
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
 workflow-type: tm+mt
-source-wordcount: '2334'
-ht-degree: 94%
+source-wordcount: '2523'
+ht-degree: 86%
 
 ---
 
 
-# Crear y organizar páginas{#creating-and-organizing-pages}
+# Crear y organizar páginas {#creating-and-organizing-pages}
 
 En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager (AEM) para luego poder [crear contenido](/help/sites-authoring/editing-content.md) en esas páginas.
 
@@ -111,10 +102,10 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >[!NOTE]
 >
 >Al definir un nombre de página, se recomienda que sea lo más corto y expresivo posible para que el lector pueda entenderlo con facilidad. Para obtener más información, consulte la [guía de estilo W3C](https://www.w3.org/Provider/Style/TITLE.html) para el elemento de `title`.
-
->Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 >
-Al crear una página nueva, AEM [valida el nombre de la página según las convenciones](/help/sites-developing/naming-conventions.md) que establecen tanto AEM como JCR.
+>Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
+
+When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
 
 El mínimo permitido de caracteres es:
 
@@ -127,11 +118,12 @@ El mínimo permitido de caracteres es:
 Para obtener toda la información sobre los caracteres permitidos, consulte las [convenciones de nomenclatura](/help/sites-developing/naming-conventions.md).
 
 >[!NOTE]
-Si AEM se ejecuta en una [implementación del administrador de persistencia de MongoMK](/help/sites-deploying/recommended-deploys.md), los nombres de página se limitan a 150 caracteres.
+>
+>Si AEM se ejecuta en una [implementación del administrador de persistencia de MongoMK](/help/sites-deploying/recommended-deploys.md), los nombres de página se limitan a 150 caracteres.
 
 #### Título {#title}
 
-Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre**[ de página de esta cadena y lo validará según las convenciones impuestas por AEM y JCR. ](/help/sites-developing/naming-conventions.md) A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Por ejemplo:
+Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre**[ de página de esta cadena y lo validará según las convenciones impuestas por AEM y JCR. ](/help/sites-developing/naming-conventions.md) Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -145,8 +137,10 @@ Al indicar un valor **Nombre** cuando se crea una página, AEM validará el nomb
 ![caop-02](assets/caop-02.png)
 
 >[!NOTE]
-Evite utilizar un código de dos letras como nombre de página, tal como se indica en la norma ISO-639-1, a menos que sea la raíz de un idioma.
-Consulte [Preparación de contenido para su traducción](/help/sites-administering/tc-prep.md) para obtener más información.
+>
+>Evite utilizar un código de dos letras como nombre de página, tal como se indica en la norma ISO-639-1, a menos que sea la raíz de un idioma.
+>
+>Consulte [Preparación de contenido para su traducción](/help/sites-administering/tc-prep.md) para obtener más información.
 
 ### Plantillas {#templates}
 
@@ -163,7 +157,8 @@ AEM incluye varias plantillas listas para usar. Las plantillas disponibles depen
 * **Plantilla** Una lista de plantillas disponibles para usar durante la generación de la nueva página.
 
 >[!NOTE]
-Si así se ha configurado en la instancia, los [autores de plantillas podrán crear plantillas con el editor de plantillas](/help/sites-authoring/templates.md).  
+>
+>Si así se ha configurado en la instancia, los [autores de plantillas podrán crear plantillas con el editor de plantillas](/help/sites-authoring/templates.md).  
 
 ### Componentes {#components}
 
@@ -178,7 +173,8 @@ Components are the elements provided by AEM so that you can add specific types o
 Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-authoring/editing-content.md#insertinganewparagraph), que están disponibles [en el explorador de componentes](/help/sites-authoring/author-environment-tools.md#componentbrowser).
 
 >[!NOTE]
-La [consola Componentes](/help/sites-authoring/default-components-console.md) aporta una visión general de los componentes de la instancia.
+>
+>La [consola Componentes](/help/sites-authoring/default-components-console.md) aporta una visión general de los componentes de la instancia.
 
 ## Administrar páginas {#managing-pages}
 
@@ -214,11 +210,12 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
-      * Si se proporciona un valor **Nombre** al crear una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
+      * Al indicar un valor **Nombre**[ cuando se cree una página, AEM validará el nombre según las convenciones impuestas por AEM y JCR.](/help/sites-developing/naming-conventions.md)
 
       * No **se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
    >[!NOTE]
-   Consulte [Convenciones de nomenclatura para las páginas](#page-naming-conventions).
+   >
+   >Consulte [Convenciones de nomenclatura para las páginas](#page-naming-conventions).
 
    La información mínima necesaria para crear una página nueva es el **Título**.
 
@@ -229,14 +226,16 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    >[!NOTE]
-   Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `winter` ya existe, la página nueva pasará a llamarse `winter0`.
+   >
+   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `winter` ya existe, la página nueva pasará a llamarse `winter0`.
 
 1. Al volver a la consola, podrá ver la nueva página:
 
    ![caop-06](assets/caop-06.png)
 
 >[!CAUTION]
-Después de crear una página, su plantilla no se puede modificar, a menos que [cree un lanzamiento con una plantilla nueva](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), aunque así se perderá el contenido existente.
+>
+>Después de crear una página, su plantilla no se puede modificar, a menos que [cree un lanzamiento con una plantilla nueva](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), aunque así se perderá el contenido existente.
 
 ### Abrir una página para su edición {#opening-a-page-for-editing}
 
@@ -256,7 +255,8 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 1. Se abrirá la página, y podrá [editarla](/help/sites-authoring/editing-content.md#touchoptimizedui) si es necesario.
 
 >[!NOTE]
-Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
+>
+>Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
 
 ### Copiar y pegar una página  {#copying-and-pasting-a-page}
 
@@ -273,7 +273,8 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
    >[!NOTE]
-   Si se encuentra en el modo de selección, se saldrá del mismo automáticamente en cuanto se copie la página.
+   >
+   >Si se encuentra en el modo de selección, se saldrá del mismo automáticamente en cuanto se copie la página.
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
 1. El icono **Pegar** está disponible con una flecha desplegable directamente a la derecha:
@@ -285,15 +286,18 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
    * Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios**. Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
 
    >[!NOTE]
-   Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >
+   >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
 ### Mover una página o cambiarle el nombre {#moving-or-renaming-a-page}
 
 >[!NOTE]
-A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de una página también están sujetas a las [convenciones de nomenclatura para las páginas](#page-naming-conventions).
+>
+>A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de una página también están sujetas a las [convenciones de nomenclatura para las páginas](#page-naming-conventions).
 
 >[!NOTE]
-Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>
+>Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 
 El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y se controla mediante el mismo asistente. Con este asistente puede:
 
@@ -326,7 +330,8 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
    El nombre de la página puede seguir siendo el mismo si solo va a mover la página.
 
    >[!NOTE]
-   Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
 1. En el paso **Seleccionar destino** del asistente puede realizar una de las acciones siguientes:
 
@@ -337,29 +342,59 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
    * Utilice **Volver** para volver al apartado para especificar el nombre de la página.
 
    >[!NOTE]
-   De forma predeterminada, el elemento principal de la página que está moviendo o cuyo nombre va a cambiar se selecciona como destino.
+   >
+   >De forma predeterminada, el elemento principal de la página que está moviendo o cuyo nombre va a cambiar se selecciona como destino.
 
    ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
-   Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
 1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en el paso **Ajustar/Volver a publicar**.
 
    Puede indicar qué debería ajustarse o volverse a publicar, según proceda.
 
    >[!NOTE]
-   Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
+   >
+   >Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
 
    ![caop-09](assets/caop-09.png)
 
 1. Si selecciona **Mover**, se completará el proceso y la página se moverá o cambiará de nombre, según el caso.
 
 >[!NOTE]
-Si la página ya se ha publicado, al mover la página se cancelará la publicación automáticamente. De forma predeterminada, se volverá a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
+>
+>Si la página ya se ha publicado, al mover la página se cancelará la publicación automáticamente. De forma predeterminada, se volverá a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
 
 >[!NOTE]
-Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a publicar**.
+>
+>Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a publicar**.
+
+#### Acciones asincrónicas {#asynchronous-actions}
+
+Normalmente, una acción de mover o cambiar el nombre de una página se realiza inmediatamente. Esto se considera un procesamiento sincrónico y las acciones posteriores en la interfaz de usuario se bloquean hasta que se complete la acción.
+
+Sin embargo, si el número de páginas afectadas está por encima de un límite definido, la acción se procesará asincrónicamente, lo que permitirá al usuario continuar la creación en la interfaz de usuario sin impedimentos por la acción de mover o cambiar el nombre de la página.
+
+* Al hacer clic en **Mover** en el último paso anterior, AEM comprueba el límite configurado.
+* Si el número de páginas afectadas está por debajo del límite, realiza una operación sincrónica.
+* Si el número de páginas afectadas está por encima del límite, realiza una operación asincrónica.
+   * El usuario debe definir cuándo debe realizarse la operación asincrónica
+      * **Ahora** comienza la ejecución del trabajo asincrónico inmediatamente.
+      * **Más adelante** permite al usuario definir cuándo se inicio el trabajo asincrónico.
+
+         ![Movimiento de página asincrónico](assets/asynchronous-page-move.png)
+
+El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado **de los trabajos](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+
+>[!NOTE]
+>
+>Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte el documento Trabajos [](/help/sites-administering/asynchronous-jobs.md) asincrónicos en la guía del usuario Administración.
+
+>[!NOTE]
+>
+>El procesamiento asincrónico de movimiento de página requiere AEM 6.5.3.0 o superior.
 
 ### Eliminar una página {#deleting-a-page}
 
@@ -369,7 +404,8 @@ Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a pu
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Como medida de seguridad, el icono **Eliminar** página no está disponible como acción rápida.
+   >
+   >Como medida de seguridad, el icono **Eliminar** página no está disponible como acción rápida.
 
 1. Aparecerá un diálogo que le pedirá que confirme la acción. Realice una de las acciones siguientes:
 
@@ -380,7 +416,8 @@ Si no se hace referencia a la página, se omitirá el paso **Ajustar/volver a pu
       * Si la página dispone de referencias, un cuadro de mensaje le informa de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
-Si la página ya se ha publicado, se cancelará su publicación automáticamente antes de la eliminación.
+>
+>Si la página ya se ha publicado, se cancelará su publicación automáticamente antes de la eliminación.
 
 ### Bloquear una página {#locking-a-page}
 
@@ -393,12 +430,16 @@ Puede [bloquear o desbloquear una página](/help/sites-authoring/editing-content
 Puede crear carpetas para organizar archivos y páginas.
 
 >[!NOTE]
-A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de las carpetas están también sujetas a las [convenciones de nomenclatura de páginas](#page-naming-conventions).
+>
+>A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de las carpetas están también sujetas a las [convenciones de nomenclatura de páginas](#page-naming-conventions).
 
 >[!CAUTION]
-* Las carpetas solo se pueden crear directamente en **Sitios** o en otras carpetas. No se pueden crear en una página.
-* Las acciones estándar mover, copiar, pegar, eliminar, publicar, cancelar publicación y las propiedades de ver/editar se pueden ejecutar en una carpeta.
-* Las carpetas no están disponibles para la selección en una Live Copy.
+>
+>* Las carpetas solo se pueden crear directamente en **Sitios** o en otras carpetas. No se pueden crear en una página.
+>* Las acciones estándar mover, copiar, pegar, eliminar, publicar, cancelar publicación y las propiedades de ver/editar se pueden ejecutar en una carpeta.
+>* Las carpetas no están disponibles para la selección en una Live Copy.
+
+>
 
 
 
