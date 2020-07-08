@@ -3,7 +3,7 @@ title: Introducción a [!DNL Adobe Experience Manager Assets].
 description: Conozca qué es la administración de recursos digitales, sus casos de uso y [!DNL Adobe Experience Manager Asset] las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5b3a442756e95c15cb01c4117a83b761dc8367
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 36%
@@ -49,7 +49,7 @@ Un activo es, en esencia, un binario más metadatos, representaciones y subactiv
 
 >[!CAUTION]
 >
->Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] instance.
+>Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] deployment.
 
 ### [!DNL Experience Manager Assets] terminología {#aem-assets-terminology}
 
