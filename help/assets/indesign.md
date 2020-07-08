@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesi
 description: Aprenda a [!DNL Adobe Experience Manager Assets] integrarse con [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1559'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 * Trabajador proxy para definir y administrar una tarea específica.
 Pueden abarcar una amplia variedad de tareas; por ejemplo, utilizar un [!DNL InDesign Server] método para procesar archivos.
 
-Para cargar archivos completamente a [!DNL Experience Manager Assets] los que ha creado con [!DNL Adobe InDesign] un proxy se utiliza. Esto utiliza un trabajador proxy para comunicarse con el [!DNL Adobe InDesign Server], donde se ejecutan [las secuencias de comandos](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) para extraer metadatos y generar varias representaciones para [!DNL Experience Manager Assets]. El programa de trabajo del proxy habilita la comunicación bidireccional entre las instancias [!DNL InDesign Server] y las [!DNL Experience Manager] instancias en una configuración de nube.
+Para cargar archivos completamente a [!DNL Experience Manager Assets] los que ha creado con [!DNL Adobe InDesign] un proxy se utiliza. Esto utiliza un trabajador proxy para comunicarse con el [!DNL Adobe InDesign Server], donde se ejecutan [las secuencias de comandos](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) para extraer metadatos y generar varias representaciones para [!DNL Experience Manager Assets]. El programa de trabajo proxy habilita la comunicación bidireccional entre las instancias [!DNL InDesign Server] y las [!DNL Experience Manager] en una configuración de nube.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Esta secuencia de comandos de comando:
    * El texto y los archivos extraídos se almacenan en [!DNL Experience Manager Assets].
    * Todas las representaciones se almacenan en [!DNL Experience Manager Assets], en el propio recurso.
 
-## Integración de [!DNL InDesign Server] con Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integrar el [!DNL InDesign Server] con el Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Para integrar el [!DNL InDesign Server] proxy con [!DNL Experience Manager Assets] y después de configurarlo, debe:
 
@@ -138,7 +138,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 
 * **Título** de página: Especifique el título que desea asignar a la página resultante.
 
-* **Ruta** raíz de página: Ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utilizará el nodo que contiene las representaciones del recurso.
+* **Ruta** raíz de página: La ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utilizará el nodo que contiene las representaciones del recurso.
 
 * **Plantilla** de página: Plantilla que se utilizará al generar la página resultante.
 
@@ -150,7 +150,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 >
 >El programa de trabajo reside en la instancia de proxy.
 
-1. En la consola Herramientas, expanda Configuraciones **[!UICONTROL de servicios de]** nube en el panel izquierdo. A continuación, expanda Configuración **[!UICONTROL de proxy de]** nube.
+1. En la consola Herramientas, expanda Configuraciones **[!UICONTROL de]** Cloud Service en el panel izquierdo. A continuación, expanda Configuración **[!UICONTROL de proxy de]** nube.
 
 1. Haga doble clic en el programa de **[!UICONTROL IDS de trabajo]** para abrirlo y configurarlo.
 
@@ -202,13 +202,13 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->Al trabajar con un grupo de trabajadores, puede habilitar la lista bloqueada de los trabajadores de IDS.
+>Al trabajar con un grupo de trabajadores, puede habilitar la lista de bloqueados de los trabajadores de IDS.
 >
 >Para ello, habilite la casilla **[!UICONTROL enable.reintentar.name]** , en la `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuración, que habilita las recuperaciones de trabajos IDS.
 >
 >Además, en la configuración `com.day.cq.dam.ids.impl.IDSPoolImpl.name` , establezca un valor positivo para el `max.errors.to.blacklist` parámetro que determina el número de recuperaciones de trabajos antes de excluir un ID de la lista de controladores de trabajos.
 >
->De forma predeterminada, después del (`retry.interval.to.whitelist.name`) tiempo configurable en minutos, se vuelve a validar el programa de trabajo de IDS. Si el trabajador se encuentra en línea, se elimina de la lista bloqueada.
+>De forma predeterminada, después del (`retry.interval.to.whitelist.name`) tiempo configurable en minutos, se vuelve a validar el programa de trabajo de IDS. Si el trabajador se encuentra en línea, se elimina de la lista de bloqueados.
 
 ## Habilitar compatibilidad con [!DNL InDesign Server] 10.0 o posterior {#enabling-support-for-indesign-server-or-later}
 
@@ -224,7 +224,7 @@ Para [!DNL InDesign Server] 10.0 o superior, realice los siguientes pasos para h
 
 ## Configurar [!DNL Experience Manager] credenciales {#configure-aem-credentials}
 
-Puede cambiar las credenciales de administrador predeterminadas (nombre de usuario y contraseña) para acceder a las credenciales [!DNL InDesign Server] desde la [!DNL Experience Manager] instancia sin interrumpir la integración con la [!DNL InDesign Server].
+Puede cambiar las credenciales de administrador predeterminadas (nombre de usuario y contraseña) para acceder al [!DNL InDesign Server] desde su [!DNL Experience Manager] implementación sin interrumpir la integración con el [!DNL InDesign Server].
 
 1. Ir a `/etc/cloudservices/proxy.html`.
 1. En el cuadro de diálogo, especifique el nombre de usuario y la contraseña nuevos.
