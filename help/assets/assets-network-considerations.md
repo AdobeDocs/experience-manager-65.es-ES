@@ -3,7 +3,7 @@ title: Consideraciones y requisitos de la red de recursos
 description: Analiza las consideraciones de red al diseñar una implementación de Recursos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -17,12 +17,12 @@ Comprender la red es tan importante como comprender los recursos de Adobe Experi
 
 Asegúrese de incluir lo siguiente en el diagrama de red:
 
-* Conectividad desde el dispositivo cliente (por ejemplo, equipo, móvil y tableta) a la red
-* Topología de la red corporativa
-* Vínculo ascendente a Internet desde la red corporativa y el entorno de Experience Manager
-* Topología del entorno de Experience Manager
-* Definir consumidores simultáneos de la interfaz de red de Experience Manager
-* flujos de trabajo definidos de la instancia de Experience Manager
+* Conectividad desde el dispositivo cliente (por ejemplo, equipo, móvil y tableta) a la red.
+* Topología de la red corporativa.
+* Vínculo ascendente a Internet desde la red corporativa y el entorno Experience Manager.
+* Topología del entorno Experience Manager.
+* Definir consumidores simultáneos de la interfaz de red del Experience Manager.
+* flujos de trabajo definidos de la implementación de Experience Manager.
 
 ## Conectividad desde el dispositivo cliente a la red corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -46,37 +46,37 @@ El equipo que se muestra a la derecha tiene una subida limitada a la red corpora
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las que se utilizan generalmente. Estas tuberías son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, podría ser un punto de interrupción. En el diagrama inicial, solo dos equipos comparten la conexión concreta.
 
-## Vínculo ascendente a Internet desde la red corporativa y el entorno de Experience Manager {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Vínculo ascendente a Internet desde la red corporativa y el entorno Experience Manager {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 Es importante tener en cuenta factores desconocidos en Internet y en la conexión VPC, ya que el ancho de banda de Internet puede verse afectado debido a la carga máxima o a interrupciones de proveedores a gran escala. En general, la conectividad a Internet es fiable. Sin embargo, a veces puede introducir puntos de estrangulamiento.
 
-En el enlace ascendente desde una red corporativa a Internet, puede haber otros servicios usando el ancho de banda. Es importante comprender cuánto del ancho de banda se puede dedicar o priorizar para los recursos. Por ejemplo, si un vínculo de 1 Gbps ya está en un 80 % de utilización, solo puede asignar un máximo del 20 % del ancho de banda para Recursos de Experience Manager.
+En el enlace ascendente desde una red corporativa a Internet, puede haber otros servicios usando el ancho de banda. Es importante comprender cuánto del ancho de banda se puede dedicar o priorizar para los recursos. Por ejemplo, si un vínculo de 1 Gbps ya está en un 80 % de utilización, solo puede asignar un máximo del 20 % del ancho de banda para Recursos Experience Manager.
 
 Los servidores de seguridad y los proxies empresariales también pueden dar forma al ancho de banda de muchas formas diferentes. Este tipo de dispositivo puede priorizar el ancho de banda mediante la calidad del servicio, las limitaciones de ancho de banda por usuario o las limitaciones de velocidad de bits por host. Estos son puntos de interrupción importantes que hay que examinar, ya que pueden afectar significativamente a la experiencia del usuario de Recursos.
 
-En este ejemplo, la empresa tiene un vínculo ascendente de 10 Gbps. Debe ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede reducir potencialmente el tráfico a un solo host a 10 Mbps, aunque el vínculo ascendente a Internet sea de 10 Gbps.
+En este ejemplo, la empresa tiene un vínculo superior de 10 Gbps. Debe ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede reducir potencialmente el tráfico a un solo host a 10 Mbps, aunque el vínculo ascendente a Internet sea de 10 Gbps.
 
-Este es el punto de interrupción más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o configurar una lista permitida con el grupo de operaciones de red a cargo de este servidor de seguridad.
+Este es el punto de interrupción más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o configurar una lista de permitidos con el grupo de operaciones de red a cargo de este servidor de seguridad.
 
 En los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser inadecuado para satisfacer las expectativas de los usuarios.
 
-## Topología del entorno de Experience Manager {#topology-of-the-aem-environment}
+## Topología del entorno Experience Manager {#topology-of-the-aem-environment}
 
-![chlimage_1-356](assets/chlimage_1-356.png)
+![chlimage_1-354](assets/chlimage_1-356.png)
 
-El diseño de la topología del entorno de Experience Manager requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
+El diseño de la topología del entorno del Experience Manager requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
 
-El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurados.
+El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurado.
 
-El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la instancia de Experience Manager. Para las operaciones de carga y descarga simultáneas, debe dividir este número por dos. El almacenamiento externo adjunto utiliza una conexión independiente.
+El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la implementación de Experience Manager. Para las operaciones de carga y descarga simultáneas, debe dividir este número por dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
-La instancia de Experience Manager comparte su conexión de 1 Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
+La implementación de Experience Manager comparte su conexión de 1 Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
 
-Al revisar la red desde el dispositivo cliente a la instancia de Experience Manager, el punto de bloqueo más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la Guía [de cambio de tamaño de](assets-sizing-guide.md) recursos para determinar la experiencia del usuario.
+Al revisar la red desde el dispositivo cliente hasta la implementación del Experience Manager, el punto de bloqueo más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la Guía [de cambio de tamaño de](assets-sizing-guide.md) recursos para determinar la experiencia del usuario.
 
-## flujos de trabajo definidos de la instancia de Experience Manager {#defined-workflows-of-the-aem-instance}
+## flujos de trabajo definidos de la implementación del Experience Manager {#defined-workflows-of-the-aem-deployment}
 
 Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, S3 u otro almacenamiento conectado a la red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
 
