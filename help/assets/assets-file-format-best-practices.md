@@ -3,7 +3,10 @@ title: Prácticas recomendadas para procesar los distintos formatos de archivo a
 description: Prácticas recomendadas para procesar los distintos tipos de archivos admitidos mediante [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->Si utiliza [!DNL Experience Manager] los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
+>Si utiliza [!DNL Experience Manager] Adobes Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
 
@@ -40,7 +43,7 @@ Las miniaturas y previsualizaciones que se generan con el rasterizador de PDF so
 
 Adobe recomienda usar [!DNL Adobe InDesign Server] para extraer representaciones [!DNL Adobe InDesign]específicas, como IDML y HTML. Para obtener más información, consulte [Añadir recursos de Experience Manager como referencias en Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
-## [!DNL Dynamic Media]  {#dynamic-media}
+## [!DNL Dynamic Media] {#dynamic-media}
 
 [!DNL Dynamic Media] genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Ofrece experiencias de visualización interactivas y optimiza el proceso de gestión de la campaña digital. Para obtener más información sobre cómo habilitar [!DNL Dynamic Media], consulte [Configuración de Dynamic Media](/help/assets/config-dynamic.md).
 
