@@ -1,16 +1,11 @@
 ---
 title: Creación y sincronización de Live Copies
-seo-title: Creación y sincronización de Live Copies
-description: Obtenga información sobre cómo crear y sincronizar Live Copies.
-seo-description: Obtenga información sobre cómo crear y sincronizar Live Copies.
-uuid: f6f410d4-8c72-48b7-a217-afd6076b512d
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
+description: Learn how to create and synchronize Live Copies.
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+workflow-type: tm+mt
+source-wordcount: '4116'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +14,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Puede crear una Live Copy desde una página o configuración de modelo y, a continuación, administrar la herencia y la sincronización.
 
-## Administración de configuraciones de modelo {#managing-blueprint-configurations}
+## Managing Blueprint Configurations {#managing-blueprint-configurations}
 
 Una configuración de modelo identifica un sitio web existente que desea utilizar como fuente para una o varias páginas de Live Copy.
 
@@ -75,8 +70,9 @@ Puede editar o eliminar una configuración de modelo existente:
 
 1. Seleccione la configuración de modelo requerida: las acciones correspondientes estarán disponibles en la barra de herramientas:
 
-   * **Propiedades**; puede utilizarla para ver y luego editar las propiedades de la configuración.
+   * **Propiedades**; puede utilizarla para la vista y, a continuación, editar las propiedades de la configuración.
    * **Eliminar**
+
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Creación de una copia activa {#creating-a-live-copy}
@@ -121,6 +117,7 @@ Para crear una Live Copy:
 
    * un **Título** para la página.
    * un **nombre** que se utiliza en la dirección URL.
+
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Utilice la casilla de verificación **Excluir páginas** secundarias:
@@ -139,7 +136,7 @@ Si omite algunas ramas de idioma o capítulos de la Live Copy, puede agregarlos 
 
 >[!CAUTION]
 >
->Cuando el origen del modelo contiene vínculos y referencias que dirigen a un párrafo en una rama diferente, los objetivos no se actualizan en las páginas de Live Copy, sino que siguen apuntando al destino original.
+>Cuando el origen del modelo contiene vínculos y referencias que destinatario un párrafo en una rama diferente, los destinatarios no se actualizan en las páginas de Live Copy, sino que siguen apuntando al destino original.
 
 Cuando cree el sitio, proporcione valores para las siguientes propiedades:
 
@@ -188,7 +185,7 @@ Las propiedades de una página de Live Copy muestran la siguiente información s
    * Indica si la configuración se hereda de la página principal.
    * Cualquier configuración de implementación que utilice Live Copy.
 
-Para ver las propiedades:
+Para vista de las propiedades:
 
 1. En la consola **Sitios** , seleccione la página de Live Copy y abra las propiedades.
 1. Select the **Live Copy** tab.
@@ -203,7 +200,7 @@ Para ver las propiedades:
 
 ### Ver las Live Copies de una página de modelo {#seeing-the-live-copies-of-a-blueprint-page}
 
-Las páginas de modelo (a las que se hace referencia en una configuración de modelo) proporcionan una lista de las páginas de Live Copy que utilizan la página actual (modelo) como origen. Utilice esta lista para realizar un seguimiento de las copias activas. La lista aparece en la ficha **Modelo** de las propiedades [de la](/help/sites-authoring/editing-page-properties.md)página.
+Las páginas de modelo (a las que se hace referencia en una configuración de modelo) proporcionan una lista de las páginas de Live Copy que utilizan la página actual (modelo) como origen. Utilice esta lista para realizar un seguimiento de las copias en directo. La lista aparece en la ficha **Modelo** de las propiedades [de la](/help/sites-authoring/editing-page-properties.md)página.
 
 ![chlimage_1-219](assets/chlimage_1-219.png)
 
@@ -232,6 +229,16 @@ Despliegue una página de modelo para insertar los cambios de contenido en copia
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
+1. Especifique si el trabajo de despliegue debe ejecutarse inmediatamente (**ahora**) o en otra fecha/hora (**más tarde**).
+
+   ![Implementación de modelo](assets/rollout-blueprint.png)
+
+Los despliegues se procesan como trabajos asincrónicos y se pueden registrar en el panel [**Estado **de trabajos](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+
+>[!NOTE]
+>
+>El procesamiento de la implementación asincrónica requiere AEM 6.5.3.0 o superior. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica.
+
 #### Despliegue de un modelo desde el raíl de referencia {#roll-out-a-blueprint-from-the-reference-rail}
 
 1. En la consola **Sitios** , seleccione la página en el modelo y abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)**(en la barra de herramientas).
@@ -244,12 +251,19 @@ Despliegue una página de modelo para insertar los cambios de contenido en copia
 
       Especifique si el ámbito es solo para la página seleccionada o si debe incluir subpáginas.
 
-   * **Despliegue en segundo plano**:
+   * **Programa**:
 
-      Si hay muchas páginas o subpáginas involucradas, puede ejecutar la implementación como una tarea en segundo plano.
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+      Especifique si el trabajo de despliegue se debe ejecutar inmediatamente (**ahora**) o en una fecha/hora posterior (**posteriormente**).
+
+      ![chlimage_1-222](assets/rollout-live-copy.png)
 
 1. Después de confirmar estos detalles, seleccione **Despliegue** para realizar la acción.
+
+Los despliegues se procesan como trabajos asincrónicos y se pueden registrar en el panel [**Estado **de trabajos](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+
+>[!NOTE]
+>
+>El procesamiento de la implementación asincrónica requiere AEM 6.5.3.0 o superior. En las versiones anteriores, las páginas se procesaban inmediatamente y sincrónicamente, a menos que se activara la opción **Despliegue** en segundo plano.
 
 #### Despliegue de un modelo desde Live Copy Overview {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -260,6 +274,16 @@ La acción [Despliegue también está disponible en Live Copy Overview](/help/si
 1. Especifique las páginas y las subpáginas y, a continuación, confirme con la marca de verificación:
 
    ![chlimage_1-223](assets/chlimage_1-223.png)
+
+1. Especifique si el trabajo de despliegue debe ejecutarse inmediatamente (**ahora**) o en otra fecha/hora (**más tarde**).
+
+   ![Implementación de modelo](assets/rollout-blueprint.png)
+
+Los despliegues se procesan como trabajos asincrónicos y se pueden registrar en el panel [**Estado **de trabajos](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+
+>[!NOTE]
+>
+>El procesamiento de la implementación asincrónica requiere AEM 6.5.3.0 o superior. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica.
 
 ### Sincronización de Live Copy {#synchronizing-a-live-copy}
 
@@ -291,13 +315,14 @@ La acción [Sincronizar también está disponible en Live Copy Overview](/help/s
 
    * **Página y páginas secundarias**
    * **Página solamente**
+
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 ## Cambio del contenido de Live Copy {#changing-live-copy-content}
 
 Para cambiar el contenido de Live Copy, puede:
 
-* Agregue párrafos a la página.
+* Añada párrafos a la página.
 * Actualice el contenido existente rompiendo la herencia de la Live Copy para cualquier página o componente.
 
 >[!NOTE]
@@ -313,9 +338,9 @@ Para cambiar el contenido de Live Copy, puede:
 >Estos [conflictos deben ser tratados y resueltos en el momento de su implementación](/help/sites-administering/msm-rollout-conflicts.md).
 
 
-### Adición de componentes a una página de Live Copy {#adding-components-to-a-live-copy-page}
+### Añadir componentes en una página de Live Copy {#adding-components-to-a-live-copy-page}
 
-Agregue componentes a una página de Live Copy en cualquier momento. El estado de herencia de la Live Copy y su sistema de párrafos no controla la capacidad de agregar componentes.
+Añada componentes en una página de Live Copy en cualquier momento. El estado de herencia de la Live Copy y su sistema de párrafos no controla la capacidad de agregar componentes.
 
 Cuando la página de Live Copy se sincroniza con la página de origen, los componentes agregados permanecen sin cambios. Consulte también [Cambio del orden de los componentes en una página](#changing-the-order-of-components-on-a-live-copy-page)de Live Copy.
 
@@ -337,7 +362,7 @@ Puede suspender la herencia de Live Copy para una página de Live Copy, de modo 
 
 Para suspender la herencia en una página:
 
-1. Abra las propiedades de la página de Live Copy mediante el comando **Ver propiedades** de la consola **Sitios** o mediante Información **de** página en la barra de herramientas de la página.
+1. Abra las propiedades de la página de Live Copy mediante el comando Propiedades **de la** Vista de la consola **Sitios** o mediante Información **de** página en la barra de herramientas de la página.
 1. Toque o haga clic en la ficha **Live Copy** .
 1. Select **Suspend** from the toolbar. A continuación, puede seleccionar una de las opciones siguientes:
 
@@ -356,9 +381,10 @@ La acción [Suspender también está disponible en Live Copy Overview](/help/sit
 
    * **Suspender**
    * **suspender con elto.sup.**
+
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Confirme la acción **Suspender** en el cuadro de diálogo **Suspender Live Copy **cuadro de diálogo:
+1. Confirme la acción **Suspender** en el cuadro de diálogo **Suspender Live Copy** :
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -392,7 +418,7 @@ La acción [Reanudar también está disponible en Live Copy Overview](/help/site
 
 1. Abra la Información general [de](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) Live Copy y seleccione una página de Live Copy que se haya suspendido; se mostrará como **HERENCIA CANCELADA**.
 1. Select **Resume** from the toolbar.
-1. Indique si desea sincronizar la página después de revertir la herencia y, a continuación, confirme la acción **Reanudar** en el cuadro de diálogo **Reanudar Live Copy **.
+1. Indique si desea sincronizar la página después de revertir la herencia y, a continuación, confirme la acción **Reanudar** en el cuadro de diálogo **Reanudar Live Copy** .
 
 ### Cambio de la profundidad de herencia (superficial/profunda) {#changing-inheritance-depth-shallow-deep}
 
@@ -403,8 +429,8 @@ En una Live Copy existente puede cambiar la profundidad de una página; es decir
    * Tendrá un efecto inmediato y es irreversible.
 
       * Las páginas secundarias se separan explícitamente de la Live Copy. Si se deshace, no se podrán conservar otras modificaciones en niños.
-   * Se eliminará cualquier descendiente `LiveRelationships` aunque haya anidado `LiveCopies`.
 
+      * Se eliminará cualquier descendiente `LiveRelationships` aunque haya anidado `LiveCopies`.
 
 * Cambiar a una Live Copy profunda:
 
@@ -417,12 +443,13 @@ En una Live Copy existente puede cambiar la profundidad de una página; es decir
 
 Para especificar o cambiar la profundidad:
 
-1. Abra las propiedades de la página de Live Copy mediante el comando **Ver propiedades** de la consola **Sitios** o mediante Información **de** página en la barra de herramientas de la página.
+1. Abra las propiedades de la página de Live Copy mediante el comando Propiedades **de la** Vista de la consola **Sitios** o mediante Información **de** página en la barra de herramientas de la página.
 1. Toque o haga clic en la ficha **Live Copy** .
 1. En la sección **Configuración** , defina o borre la opción Herencia **de** Live Copy en función de si se incluyen páginas secundarias:
 
    * marcado: una Live Copy profunda (se incluyen las páginas secundarias)
    * clear: una copia en vivo superficial (se excluyen las páginas secundarias)
+
    >[!CAUTION]
    >
    >Cambiar a una copia en vivo superficial tendrá un efecto inmediato y es irreversible.
@@ -447,7 +474,7 @@ Cancele la herencia para cambiar el contenido del componente o eliminarlo:
 
 1. En la barra de herramientas de componentes, toque o haga clic en el icono **Cancelar herencia** .
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Imagen](do-not-localize/chlimage_1-8.png)
 
 1. En el cuadro de diálogo Cancelar herencia, confirme la acción con **Sí**.
 
@@ -457,7 +484,7 @@ Cancele la herencia para cambiar el contenido del componente o eliminarlo:
 
 Para habilitar la herencia para un componente, toque o haga clic en el icono **Volver a activar herencia** de la barra de herramientas del componente.
 
-![](do-not-localize/chlimage_1-9.png)
+![image](do-not-localize/chlimage_1-9.png)
 
 ### Cambio del orden de los componentes en una página de Live Copy {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -495,10 +522,10 @@ Posteriormente, puede volver a habilitar la herencia para una propiedad si es ne
 >
 >Al volver a habilitar la herencia, la propiedad de la página de Live Copy no se sincroniza automáticamente con la propiedad source. Puede solicitar manualmente una sincronización si es necesario.
 
-1. Abra las propiedades de la página de Live Copy mediante la opción **Ver propiedades** de la consola **Sitios** o el icono Información **de** página de la barra de herramientas de la página.
+1. Abra las propiedades de la página de Live Copy mediante la opción Propiedades **de la** Vista de la consola **Sitios** o el icono Información **de la** página de la barra de herramientas de la página.
 1. Para cancelar la herencia de una propiedad, toque o haga clic en el icono de vínculo que aparece a la derecha de la propiedad.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![image](do-not-localize/chlimage_1-10.png)
 
 1. En el cuadro de diálogo de confirmación **Cancelar herencia** , toque o haga clic en **Sí**.
 
@@ -506,7 +533,7 @@ Posteriormente, puede volver a habilitar la herencia para una propiedad si es ne
 
 Para habilitar la herencia para una propiedad, toque o haga clic en el icono **Revertir herencia** que aparece junto a la propiedad.
 
-![](do-not-localize/chlimage_1-11.png)
+![image](do-not-localize/chlimage_1-11.png)
 
 ### Restablecimiento de una página de Live Copy {#resetting-a-live-copy-page}
 
@@ -519,7 +546,7 @@ El restablecimiento afecta a los cambios realizados en las propiedades de la pá
 
 #### Restablecer una página de Live Copy desde las propiedades de la página {#reset-a-live-copy-page-from-the-page-properties}
 
-1. En la consola **Sitios** , seleccione la página de Live Copy y elija **Ver propiedades**.
+1. En la consola **Sitios** , seleccione la página de Live Copy y seleccione Propiedades **de** Vista.
 1. Open the **Live Copy** tab.
 1. Select **Reset** from the toolbar.
 
@@ -539,7 +566,7 @@ La acción [Restablecer también está disponible en Live Copy Overview](/help/s
 
 ## Comparación de una página de Live Copy con una página de modelo {#comparing-a-live-copy-page-with-a-blueprint-page}
 
-Para rastrear los cambios realizados, puede ver la página de modelo en **Referencias** y compararla con su página de Live Copy:
+Para realizar el seguimiento de los cambios realizados, puede realizar la vista de la página de modelo en **Referencias** y compararla con su página de Live Copy:
 
 1. En la consola **Sitios** , [vaya a un modelo o a una página de Live Copy y selecciónela](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **[References](/help/sites-authoring/basic-handling.md#references)**panel and select:
@@ -551,6 +578,7 @@ Para rastrear los cambios realizados, puede ver la página de modelo en **Refere
 
    * **Comparar con modelo** (cuando se selecciona una página de Live Copy)
    * **Comparar con Live Copy** (cuando se selecciona una página de modelo)
+
    Por ejemplo:
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
@@ -583,12 +611,14 @@ Existen implicaciones en cuanto a la ubicación dentro del árbol en la que se u
 
    * la relación activa se elimina para esa subpágina (o rama)
    * y las (sub)páginas de la rama de Live Copy se tratan como si se hubieran creado manualmente.
+
    *Sin embargo*, las subpáginas siguen estando sujetas a la relación activa de la rama principal, por lo que una implementación adicional de las páginas de modelo:
 
    1. Cambie el nombre de las páginas separadas:
 
       * Esto se debe a que MSM los considera páginas creadas manualmente que causan un conflicto, ya que tienen el mismo nombre que las páginas de Live Copy que intenta crear.
    1. Cree una nueva página (Live Copy) con el nombre original, que contenga los cambios de la implementación.
+
    >[!NOTE]
    >
    >Consulte Conflictos [de despliegue de](/help/sites-administering/msm-rollout-conflicts.md) MSM para obtener detalles de estas situaciones.
@@ -597,7 +627,7 @@ Existen implicaciones en cuanto a la ubicación dentro del árbol en la que se u
 
 Para separar una Live Copy:
 
-1. En la consola **Sitios** , seleccione la página de Live Copy y toque o haga clic en **Ver propiedades**.
+1. En la consola **Sitios** , seleccione la página de Live Copy y toque o haga clic en Propiedades de **Vista**.
 1. Open the **Live Copy** tab.
 1. En la barra de herramientas, seleccione **Separar**.
 
@@ -614,4 +644,3 @@ La acción [Desasociar también está disponible en Live Copy Overview](/help/si
 1. Confirme la acción **Desasociar** en el cuadro de diálogo **Desconectar Live Copy** :
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
