@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de Experience Manager 6.5 Assets
 translation-type: tm+mt
-source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 41%
@@ -14,7 +14,7 @@ ht-degree: 41%
 
 # Guía del usuario de Experience Manager 6.5 Assets {#assets}
 
-+ [[!DNL Assets] guía del usuario](home.md)
++ [[!DNL Assets] user guide](home.md)
 + [Notas de la versión de Recursos AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
@@ -44,7 +44,7 @@ ht-degree: 41%
    + [Aplicar ajustes preestablecidos de visualizador de Dynamic Media](viewer-presets.md)
    + [Administrar ajustes preestablecidos de imagen de Dynamic Media](managing-image-presets.md)
    + [Aplicar ajustes preestablecidos de imagen de Dynamic Media](image-presets.md)
-   + [Perfiles de video de Dynamic Media](video-profiles.md)
+   + [Perfiles de vídeo de Dynamic Media](video-profiles.md)
    + [Perfiles de imagen de Dynamic Media](image-profiles.md)
    + [Imágenes inteligentes](imaging-faq.md)
    + [Vídeo](s7-video.md)
@@ -151,7 +151,7 @@ ht-degree: 41%
    + [Creación de proyectos de traducción](translation-projects.md)
    + [Preparación de recursos para su traducción](preparing-assets-for-translation.md)
    + [Descargar recursos de AEM](download-assets-from-aem.md)
-   + [Operaciones asincrónicas](asynchronous-jobs.md)
+   + [Operaciones asincrónicas](/help/sites-administering/asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Perspectivas de recursos](touch-ui-asset-insights.md)
    + [Activar perspectivas de recursos mediante Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
