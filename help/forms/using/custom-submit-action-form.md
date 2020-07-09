@@ -10,14 +10,17 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: a399b2cb2e0ae4f045f7e0fddf378fdcd80bb848
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 0%
 
 ---
 
 
 # Escritura de la acción Enviar personalizada para formularios adaptables{#writing-custom-submit-action-for-adaptive-forms}
 
-Los formularios adaptables requieren acciones de envío para procesar los datos especificados por el usuario. Una acción Enviar determina la tarea realizada en los datos que se envían mediante un formulario adaptable. Adobe Experience Manager (AEM) incluye acciones [de envío](../../forms/using/configuring-submit-actions.md) OOTB que muestran las tareas personalizadas que puede realizar con los datos enviados por el usuario. Por ejemplo, puede realizar tareas como enviar correo electrónico o almacenar los datos.
+Los formularios adaptables requieren acciones de envío para procesar los datos especificados por el usuario. Una acción Enviar determina la tarea que se realiza en los datos que se envían mediante un formulario adaptable. Adobe Experience Manager (AEM) incluye acciones [de envío de](../../forms/using/configuring-submit-actions.md) OOTB que muestran tareas personalizadas que puede realizar con los datos enviados por el usuario. Por ejemplo, puede realizar tareas, como enviar correo electrónico o almacenar los datos.
 
 ## Flujo de trabajo para una acción de envío {#workflow-for-a-submit-action}
 
@@ -61,7 +64,7 @@ Una secuencia de comandos puede proporcionar los valores de los campos `startTim
 
 Las acciones de envío también pueden utilizar los archivos adjuntos cargados mediante el componente Archivo adjunto. Las secuencias de comandos de acción de envío pueden acceder a estos archivos mediante la API [sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html)RequestParameter. El método [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) de la API ayuda a identificar si el parámetro de solicitud es un archivo o un campo de formulario. Puede iterar los parámetros de solicitud en una acción Enviar para identificar los parámetros de archivo adjunto.
 
-El siguiente código de muestra identifica los archivos adjuntos en la solicitud. A continuación, lee los datos en el archivo mediante [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Por último, crea un objeto Document con los datos y lo anexa a una lista.
+El siguiente código de muestra identifica los archivos adjuntos en la solicitud. A continuación, lee los datos en el archivo mediante [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Por último, crea un objeto Documento mediante los datos y lo anexa a una lista.
 
 ```java
 RequestParameterMap requestParameterMap = slingRequest.getRequestParameterMap();
@@ -96,7 +99,7 @@ Una acción de envío es un sling:Folder que incluye lo siguiente:
    * **guideComponentType** de tipo String y value **fd/af/components/guide submitype**
    * **guideDataModel** de tipo String que especifica el tipo de formulario adaptable para el que se aplica la acción Enviar. **xfa** es compatible con formularios adaptables basados en XFA, mientras que **xsd** es compatible con formularios adaptables basados en XSD. **basic** se admite en formularios adaptables que no utilizan XDP o XSD. Para mostrar la acción en varios tipos de formularios adaptables, agregue las cadenas correspondientes. Separe cada cadena con una coma. Por ejemplo, para que una acción sea visible en formularios adaptables basados en XFA y XSD, especifique los valores **xfa** y **xsd** respectivamente.
 
-   * **jcr:descripción** de tipo String. El valor de esta propiedad se muestra en la lista de acciones Enviar de la ficha Enviar acciones del cuadro de diálogo Editar formulario adaptable. Las acciones OOTB están presentes en el repositorio de CRX en la ubicación **/libs/fd/af/components/guide submitype**.
+   * **jcr:descripción** de tipo String. El valor de esta propiedad se muestra en la lista de acción Enviar de la ficha Enviar acciones del cuadro de diálogo Editar formulario adaptable. Las acciones OOTB están presentes en el repositorio de CRX en la ubicación **/libs/fd/af/components/guide submitype**.
 
 ## Creación de una acción Enviar personalizada {#creating-a-custom-submit-action}
 
@@ -108,7 +111,7 @@ Realice los siguientes pasos para crear una acción Enviar personalizada que gua
 
 1. **Proporcione los campos de configuración obligatorios.**
 
-   Agregue la configuración que requiere la acción Tienda. Copie el nodo **cq:dialog** de la acción Store de /libs/fd/af/components/guide submitype/store a la carpeta de acciones de /apps/custom_submit_action/store_and_email.
+   Añada la configuración que requiere la acción Tienda. Copie el nodo **cq:dialog** de la acción Store de /libs/fd/af/components/guide submitype/store a la carpeta de acciones de /apps/custom_submit_action/store_and_email.
 
    ![Captura de pantalla que muestra la copia del nodo de cuadro de diálogo en la carpeta de acciones](assets/step2.png)
 
@@ -120,7 +123,7 @@ Realice los siguientes pasos para crear una acción Enviar personalizada que gua
 
 1. **Haga que la acción esté disponible en el cuadro de diálogo Editar formulario adaptable.**
 
-   Agregue las siguientes propiedades en el nodo store_and_email:
+   Añada las siguientes propiedades en el nodo store_and_email:
 
    * **guideComponentType** de tipo **String** y value **fd/af/components/guide submitype**
 
@@ -128,15 +131,15 @@ Realice los siguientes pasos para crear una acción Enviar personalizada que gua
 
    * **jcr:descripción** del tipo **Cadena** y valor **Almacén y Acción de correo electrónico**
 
-1. Abra cualquier formulario adaptable. Haga clic en el botón **Editar** situado junto a **Inicio** para abrir el cuadro de diálogo **Editar** del contenedor de formularios adaptables. La nueva acción se muestra en la ficha **Enviar acciones** . Al seleccionar la acción **de** almacenamiento y correo electrónico, se muestra la configuración agregada en el nodo de cuadro de diálogo.
+1. Abra cualquier formulario adaptable. Haga clic en el botón **Editar** situado junto a **Inicio** para abrir el cuadro de diálogo **Editar** del contenedor de formulario adaptable. La nueva acción se muestra en la ficha **Enviar acciones** . Al seleccionar la acción **de** almacenamiento y correo electrónico, se muestra la configuración agregada en el nodo de cuadro de diálogo.
 
    ![Cuadro de diálogo de configuración de acciones de envío](assets/store_and_email_submit_action_dialog.jpg)
 
 1. **Utilice la acción para completar una tarea.**
 
-   Agregue la secuencia de comandos post.POST.jsp a la acción. (/apps/custom_submit_action/store_and_mail/).
+   Añada la secuencia de comandos post.POST.jsp en su acción. (/apps/custom_submit_action/store_and_mail/).
 
-   Ejecute la acción Tienda OOTB (script post.POST.jsp). Utilice la API [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que CQ proporciona en su código para ejecutar la acción Store. Agregue el siguiente código en el archivo JSP:
+   Ejecute la acción Tienda OOTB (script post.POST.jsp). Utilice la API [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que CQ proporciona en su código para ejecutar la acción Store. Añada el siguiente código en el archivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
