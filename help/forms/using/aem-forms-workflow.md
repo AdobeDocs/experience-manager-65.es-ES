@@ -1,7 +1,7 @@
 ---
 title: Flujo de trabajo centrado en formularios en OSGi
 seo-title: Cree rápidamente procesos basados en formularios adaptables, automatice las operaciones de servicios de documento y utilice Adobe Sign con flujos de trabajo de AEM
-description: Utilice el flujo de trabajo de AEM Forms para automatizar y generar rápidamente revisiones y aprobaciones en los servicios de documento de inicio
+description: Utilizar el flujo de trabajo de AEM Forms para automatizar y generar rápidamente revisiones y aprobaciones en los servicios de documento de inicio
 seo-description: Utilice el flujo de trabajo de AEM Forms para automatizar y generar rápidamente revisiones y aprobaciones, para los servicios de documento de inicio (por ejemplo, para convertir un documento PDF a otro formato), integrar con el flujo de trabajo de firma de Adobe Sign, etc.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: document_services
@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+workflow-type: tm+mt
+source-wordcount: '3065'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +31,9 @@ Puede utilizar Flujos de trabajo AEM para crear rápidamente flujos de trabajo b
 
 Con el flujo de trabajo centrado en Forms en OSGi, puede crear e implementar rápidamente flujos de trabajo para varias tareas en la pila OSGi, sin tener que instalar la capacidad de administración de procesos completa en la pila JEE. El desarrollo y la gestión de flujos de trabajo utilizan las funciones conocidas de Flujo de trabajo de AEM y Bandeja de entrada de AEM. Los Flujos de trabajo constituyen la base para automatizar los procesos comerciales del mundo real que abarcan múltiples sistemas de software, redes, departamentos e incluso organizaciones.
 
-Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse mediante programación cuando los usuarios envían un formulario o una carta de administración [de](/help/forms/using/cm-overview.md) correspondencia. Gracias a estas funciones mejoradas de flujo de trabajo de AEM, AEM Forms oferta dos funciones distintas pero similares. Como parte de su estrategia de implementación, debe decidir cuál es la que mejor le conviene. Consulte una [comparación](../../forms/using/capabilities-osgi-jee-workflows.md) de los Flujos de trabajo de AEM centrados en formularios en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse mediante programación cuando los usuarios envían un formulario o una carta de administración [de](/help/forms/using/cm-overview.md) correspondencia. Con estas funciones mejoradas de flujo de trabajo de AEM, los AEM Forms ofertas dos funciones distintas, aunque similares. Como parte de su estrategia de implementación, debe decidir cuál es la que mejor le conviene. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los Flujos de trabajo de AEM centrados en formularios en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-El flujo de trabajo centrado en formularios en OSGi amplía la bandeja de entrada [de](/help/sites-authoring/inbox.md) AEM y proporciona componentes adicionales (pasos) para que el editor de flujo de trabajo de AEM añada compatibilidad con flujos de trabajo centrados en AEM Forms. La bandeja de entrada de AEM ampliada tiene funciones similares a [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md). Junto con la administración de flujos de trabajo centrados en el ser humano (aprobación, revisión, etc.), puede utilizar flujos de trabajo de AEM para automatizar las operaciones relacionadas con los servicios [de](/help/sites-developing/workflows-step-ref.md)documento (por ejemplo, Generar PDF) y los documentos de firma electrónica (Adobe Sign).
+El flujo de trabajo centrado en formularios en OSGi amplía la bandeja de entrada [de](/help/sites-authoring/inbox.md) AEM y proporciona componentes adicionales (pasos) para que el editor de flujo de trabajo de AEM añada compatibilidad con flujos de trabajo centrados en AEM Forms. La bandeja de entrada de AEM ampliada tiene funciones similares a [AEM Forms Workspace](introduction-html-workspace.md). Junto con la administración de flujos de trabajo centrados en el ser humano (aprobación, revisión, etc.), puede utilizar flujos de trabajo de AEM para automatizar las operaciones relacionadas con los servicios [de](/help/sites-developing/workflows-step-ref.md)documento (por ejemplo, Generar PDF) y los documentos de firma electrónica (Adobe Sign).
 
 Todos los pasos del flujo de trabajo de AEM Forms admiten el uso de variables. Las variables permiten que los pasos del flujo de trabajo retengan y pasen metadatos en varios pasos durante la ejecución. Puede crear diferentes tipos de variables para almacenar diferentes tipos de datos. También puede crear colecciones de variables (matriz) para almacenar varias instancias de datos relacionados con el mismo tipo. Normalmente, se utiliza una variable o una colección de variables cuando se necesita tomar una decisión en función del valor que contiene o para almacenar la información que se necesita más adelante en un proceso. Para obtener más información sobre el uso de variables en estos componentes de flujo de trabajo centrados en formularios (pasos), consulte Flujo de trabajo centrado en [formularios en OSGi - Referencia](../../forms/using/aem-forms-workflow-step-reference.md)de pasos. Para obtener información sobre la creación y administración de variables, consulte [Variables en flujos de trabajo](../../forms/using/variable-in-aem-workflows.md)AEM.
 
@@ -47,7 +50,7 @@ En el diagrama siguiente se muestra un procedimiento completo para crear, ejecut
 
 ## Create a workflow model {#create-a-workflow-model}
 
-Un modelo de flujo de trabajo consiste en la lógica y el flujo de un proceso comercial. Se compone de una serie de pasos. Estos pasos son componentes de AEM. Puede ampliar los pasos del flujo de trabajo con parámetros y secuencias de comandos para proporcionar más funcionalidad y control, según sea necesario. AEM Forms proporciona algunos pasos además de los pasos de AEM disponibles de forma predeterminada. Para obtener una lista detallada de los pasos de AEM y AEM Forms, consulte Referencia [de los pasos de flujo de trabajo de](/help/sites-developing/workflows-step-ref.md) AEM y Flujo de trabajo centrado en [formularios en OSGi: Referencia](../../forms/using/aem-forms-workflow.md)de pasos.
+Un modelo de flujo de trabajo consiste en la lógica y el flujo de un proceso comercial. Se compone de una serie de pasos. Estos pasos son componentes de AEM. Puede ampliar los pasos del flujo de trabajo con parámetros y secuencias de comandos para proporcionar más funcionalidad y control, según sea necesario. AEM Forms proporciona algunos pasos además de los pasos de AEM disponibles de forma predeterminada. Para obtener una lista detallada de los pasos de AEM y AEM Forms, consulte Referencia [de los pasos del flujo de trabajo de](/help/sites-developing/workflows-step-ref.md) AEM y Flujo de trabajo centrado en [formularios en OSGi - Referencia](../../forms/using/aem-forms-workflow.md)de pasos.
 
 AEM proporciona una interfaz de usuario intuitiva para crear un modelo de flujo de trabajo mediante los pasos de flujo de trabajo proporcionados. Para obtener instrucciones paso a paso para crear un modelo de flujo de trabajo, consulte [Creación de modelos](/help/sites-developing/workflows-models.md)de flujo de trabajo. El ejemplo siguiente proporciona instrucciones paso a paso para crear un modelo de flujo de trabajo para un flujo de trabajo de aprobación y revisión:
 
@@ -87,7 +90,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
    El componente de asignación de tarea asigna la tarea, creada por el flujo de trabajo, a un usuario o grupo. Junto con la asignación de la tarea, puede utilizar el componente para especificar un formulario adaptable o un PDF no interactivo para la tarea. El formulario adaptable es necesario para aceptar datos introducidos por los usuarios y se utiliza un PDF no interactivo o un formulario adaptable de sólo lectura para flujos de trabajo solo de revisión.
 
-   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asigne la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso de asignación de tarea, consulte Flujo de trabajo centrado en [formularios en OSGi - documento de referencia](../../forms/using/aem-forms-workflow.md) de pasos.
+   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asigne la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso de asignación de tareas, consulte Flujo de trabajo centrado en [formularios en OSGi - documento de referencia](../../forms/using/aem-forms-workflow.md) de pasos.
 
    ![workflow-editor](assets/workflow-editor.png)
 
@@ -127,7 +130,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
 
 ## Creación de una aplicación de flujo de trabajo centrada en formularios {#create-a-forms-centric-workflow-application}
 
-La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando una aplicación se envía a través de la Bandeja de entrada, inicia el flujo de trabajo asociado. Para que un flujo de trabajo de formularios esté disponible como aplicación en AEM Inbox y AEM Forms App, haga lo siguiente para crear una aplicación de flujo de trabajo:
+La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando una aplicación se envía a través de la Bandeja de entrada, inicia el flujo de trabajo asociado. Para que un flujo de trabajo de formularios esté disponible como una aplicación en la Bandeja de entrada de AEM y en la aplicación AEM Forms, haga lo siguiente para crear una aplicación de flujo de trabajo:
 
 >[!NOTE]
 >
@@ -190,7 +193,7 @@ La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando u
 Puede iniciar o activar un flujo de trabajo centrado en Forms mediante:
 
 * [Envío de una aplicación desde la bandeja de entrada de AEM](#inbox)
-* [Envío de una aplicación desde la aplicación de AEM Forms](#afa)
+* [Envío de una aplicación desde la aplicación AEM Forms](#afa)
 
 * [Envío de un formulario adaptable](#af)
 * [Uso de la carpeta vigilada](#watched)
@@ -201,15 +204,15 @@ Puede iniciar o activar un flujo de trabajo centrado en Forms mediante:
 
 La aplicación de flujo de trabajo que ha creado está disponible como una aplicación en la Bandeja de entrada. Los usuarios que son miembros del grupo de usuarios del flujo de trabajo pueden rellenar y enviar la aplicación que activa el flujo de trabajo asociado. Para obtener información sobre el uso de la Bandeja de entrada de AEM para enviar aplicaciones y administrar tareas, consulte [Administrar aplicaciones y tareas de formularios en la Bandeja de entrada](../../forms/using/manage-applications-inbox.md)de AEM.
 
-### Envío de una aplicación desde la aplicación de AEM Forms {#afa}
+### Envío de una aplicación desde la aplicación AEM Forms {#afa}
 
-La aplicación de AEM Forms se sincroniza con un servidor de AEM Forms y le permite realizar cambios en los datos de formulario, las tareas, las aplicaciones de flujo de trabajo y la información guardada (borradores/plantillas) en su cuenta. Para obtener más información, consulte Aplicación [de formularios](/help/forms/using/aem-forms-app.md) AEM y artículos relacionados.
+La aplicación AEM Forms se sincroniza con un servidor AEM Forms y le permite realizar cambios en los datos de formulario, las tareas, las aplicaciones de flujo de trabajo y la información guardada (borradores/plantillas) en su cuenta. Para obtener más información, consulte Aplicación [](/help/forms/using/aem-forms-app.md) AEM Forms y artículos relacionados.
 
 ### Envío de un formulario adaptable {#af}
 
-Puede configurar las acciones de envío de un formulario adaptable para que el inicio de un flujo de trabajo se realice al enviar el formulario adaptable. Los formularios adaptables proporcionan la acción de envío **Invocar un flujo de trabajo** de AEM para inicio de un flujo de trabajo al enviar un formulario adaptable. Para obtener información detallada sobre la acción de envío, consulte [Configuración de la acción](../../forms/using/configuring-submit-actions.md)Enviar. Para enviar un formulario adaptable a través de la aplicación de AEM Forms, habilite Sincronizar con la aplicación de AEM Forms en las propiedades del formulario adaptable.
+Puede configurar las acciones de envío de un formulario adaptable para que el inicio de un flujo de trabajo se realice al enviar el formulario adaptable. Los formularios adaptables proporcionan la acción de envío **Invocar un flujo de trabajo** de AEM para inicio de un flujo de trabajo al enviar un formulario adaptable. Para obtener información detallada sobre la acción de envío, consulte [Configuración de la acción](../../forms/using/configuring-submit-actions.md)Enviar. Para enviar un formulario adaptable a través de la aplicación AEM Forms, habilite la aplicación Sincronizar con AEM Forms en las propiedades del formulario adaptable.
 
-Puede configurar un formulario adaptable para sincronizar, enviar y activar un flujo de trabajo desde la aplicación de AEM Forms. Para obtener más información, consulte [Uso de un formulario](/help/forms/using/working-with-form.md).
+Puede configurar un formulario adaptable para sincronizar, enviar y activar un flujo de trabajo desde la aplicación AEM Forms. Para obtener más información, consulte [Uso de un formulario](/help/forms/using/working-with-form.md).
 
 ### Uso de una carpeta vigilada {#watched}
 
@@ -251,7 +254,7 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
 
    | Campo | Descripción |
    |---|---|
-   | Filtro de asignador de cargas útiles | Cuando se crea una carpeta vigilada, se crea una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir una secuencia de comandos para asignar un flujo de trabajo de AEM para aceptar entradas de la estructura de carpetas observada. Hay una implementación lista para usar disponible que se muestra en el filtro del asignador de carga útil. Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
+   | Filtro de asignador de cargas útiles | Cuando se crea una carpeta vigilada, se crea una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir una secuencia de comandos para asignar un flujo de trabajo de AEM y aceptar entradas de la estructura de carpetas observada. Hay una implementación lista para usar disponible que se muestra en el filtro del asignador de carga útil. Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
 
    La ficha Avanzado contiene más campos. La mayoría de estos campos contienen un valor predeterminado. Para obtener más información sobre todos los campos, consulte el artículo [Crear o configurar una carpeta](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) vigilada.
 
