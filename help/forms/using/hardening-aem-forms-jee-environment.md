@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
+source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -466,7 +466,7 @@ Puede habilitar a un usuario que no sea administrador para que utilice el genera
 
 1. Establezca el valor de la variable en VERDADERO.
 
-1. Reinicie la instancia de formularios AEM.
+1. Reinicie la instancia de AEM Forms.
 
 ## Configuración de AEM Forms en JEE para el acceso más allá de la empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
