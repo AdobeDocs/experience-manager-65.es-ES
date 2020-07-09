@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
 workflow-type: tm+mt
 source-wordcount: '1700'
 ht-degree: 2%
@@ -26,11 +26,11 @@ Puede utilizar el flujo de trabajo centrado en [formularios en OSGi](../../forms
 
 Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse mediante programación cuando los usuarios envían un formulario o una comunicación interactiva. La capacidad se incluye en el paquete complementario de AEM Forms.
 
-AEM Forms es una potente plataforma de clase empresarial. El flujo de trabajo centrado en formularios en OSGi es solo una de las funciones de los AEM Forms. Para obtener la lista completa de las funciones, consulte [Introducción a los AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms es una potente plataforma de clase empresarial. El flujo de trabajo centrado en formularios en OSGi es solo una de las funciones de los AEM Forms. Para obtener la lista completa de las funciones, consulte [Introducción a los AEM Forms](introduction-aem-forms.md).
 
 >[!NOTE]
 >
->Con el flujo de trabajo centrado en Forms en OSGi, puede crear e implementar rápidamente flujos de trabajo para varias tareas en la pila OSGi, sin tener que instalar la capacidad de administración de procesos completa en la pila JEE. Consulte una [comparación](../../forms/using/capabilities-osgi-jee-workflows.md) de los Flujos de trabajo de AEM centrados en formularios en OSGi y Process Management en JEE para conocer la diferencia y las similitudes en las funciones.
+>Con el flujo de trabajo centrado en Forms en OSGi, puede crear e implementar rápidamente flujos de trabajo para varias tareas en la pila OSGi, sin tener que instalar la capacidad de administración de procesos completa en la pila JEE. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los Flujos de trabajo de AEM centrados en formularios en OSGi y Process Management en JEE para conocer la diferencia y las similitudes en las funciones.
 >
 >Después de la comparación, si decide instalar la función de administración de procesos en la pila JEE, consulte [Instalar o actualizar AEM Forms en JEE](/help/forms/home.md) para obtener información detallada sobre la instalación y configuración de la pila JEE y las funciones de administración de procesos.
 
@@ -145,7 +145,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 
 1. Abra AEM Configuration Manager en una ventana del explorador. La dirección URL predeterminada es https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Busque y abra **Deserialization Firewall Configuration**.
-1. Añada el paquete **sun.util.calendar** al campo **allowlist** . Haga clic en Guardar.
+1. Añada el paquete **sun.util.calendar** al campo de **lista de permitidos** . Haga clic en Guardar.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación.
 
 ### Configuraciones posteriores a la instalación opcionales {#optional-post-installation-configurations}
@@ -164,7 +164,7 @@ Dispatcher está utilizando la herramienta de almacenamiento en caché y equilib
 
 1. Configure el servicio de filtros de remitente del reenvío:
 
-   Inicie sesión en el administrador de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es https://&#39;server&#39;:[port_number]/system/console/configMgr. En el menú **Configuraciones** , seleccione la opción Filtro **de Remitente del reenvío Sling de** Apache. En el campo Permitir hosts, escriba el nombre de host del despachante para que se pueda utilizar como remitente del reenvío y haga clic en **Guardar**. El formato de la entrada es `https://'[server]:[port]'`.
+   Inicie sesión en el administrador de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es https://&#39;server&#39;:[port_number]/system/console/configMgr. En el menú **Configuraciones** , seleccione la opción Filtro **de Remitente del reenvío Sling de** Apache. En el campo Permitir hosts, escriba el nombre de host del despachante para que se pueda utilizar como remitente del reenvío y haga clic en **Guardar**. The format of the entry is `https://'[server]:[port]'`.
 
 #### Configurar caché {#configure-cache}
 
