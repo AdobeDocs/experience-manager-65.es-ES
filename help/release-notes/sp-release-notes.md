@@ -4,9 +4,9 @@ description: Notas de versión específicas de Service Pack 5 de Adobe Experienc
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
-source-wordcount: '4512'
+source-wordcount: '4529'
 ht-degree: 7%
 
 ---
@@ -111,7 +111,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * Los lectores de pantalla anuncian ahora correctamente los estados expandidos y contraídos del cuadro de diálogo [!UICONTROL Etiquetas] en [!UICONTROL Propiedades] del recurso y navegación por el carril izquierdo (en la interfaz de usuario de los recursos) (NPR-33396).
 
-* Los títulos de todas las páginas exploradas en [!DNL Adobe Experience Manager] Assets ahora son únicos (NPR-33343).
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique (NPR-33343).
 
 * Al navegar por la estructura de árbol, los lectores de pantalla anuncian ahora correctamente varios elementos del control de vista de árbol (NPR-33304).
 
@@ -415,6 +415,7 @@ Se aconseja a los clientes que revisen si utilizan la función o la capacidad en
 | Área | Función | Reemplazo |
 |---|---|---|
 | Integraciones | La pantalla de inclusión **[!UICONTROL de]** AEM cloud services está en desuso. Con la integración de AEM y Destinatario actualizada en AEM 6.5 para admitir la API de Target Standard, que utiliza la autenticación mediante Adobe IMS y E/S, y el creciente papel de Adobe Launch en la instrumentación de páginas de AEM para el análisis y la personalización, el asistente para la selección de contenido se ha vuelto funcionalmente irrelevante. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones de Adobe I/O a través de los respectivos AEM cloud services. |
+| Conectores | El conector JCR de Adobe para Microsoft SharePoint 2010 y Microsoft SharePoint 2013 está en desuso para AEM 6.5. | N/D |
 
 ## Problemas conocidos {#known-issues}
 
