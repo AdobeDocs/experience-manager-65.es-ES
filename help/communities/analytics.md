@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 4%
@@ -107,9 +107,7 @@ Al iniciar sesión en [Adobe Experience Cloud](https://docs.adobe.com/content/he
 
       * not **`Counter (no subrelations)`**
    * Puede reutilizar (cambiar el nombre de los eventos existentes o crear otros nuevos para utilizarlos en las funciones de Communities
-   <!--
-    NOTE TO WRITER: The following link was broken, so I replaced it. Check for accuracy https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html 
-    -->
+
 
 * [Administración de vídeo](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
@@ -532,7 +530,8 @@ A continuación se muestra un ejemplo de asignaciones predeterminadas después d
 * *Título* del componente UGC: Senderismo por temas
 * *login (autorizableId)*: `aaron.mcdonald@mailinator.com`
 * *Ruta de SRP a UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-o la *ruta del componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+o 
+*ruta del componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *ruta al contenido* del sitio de la comunidad: `/content/sites/<site name>/en`
 
@@ -627,7 +626,7 @@ El intervalo de consulta predeterminado es de 10 segundos.
 
 Una vez que se ha publicado un sitio de comunidad habilitado para Analytics, la configuración [](/help/sites-deploying/configuring-osgi.md)OSGi del editor principal, `AEM Communities Analytics Report Importer`, puede configurarse para establecer el intervalo de sondeo predeterminado para aquellas configuraciones que no estén configuradas individualmente en CRXDE.
 
-El intervalo de sondeo controla la frecuencia de las solicitudes a Adobe Analytics para extraer y guardar datos en [SRP](/help/communities/working-with-srp.md).
+El intervalo de sondeo controla la frecuencia de las solicitudes a Adobe Analytics para que los datos se extraigan y guarden en [SRP](/help/communities/working-with-srp.md).
 
 Cuando los datos pueden clasificarse como &quot;grandes datos&quot;, las encuestas más frecuentes pueden causar una gran carga en el sitio de la comunidad.
 
