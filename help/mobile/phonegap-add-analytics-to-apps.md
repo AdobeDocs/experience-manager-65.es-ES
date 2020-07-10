@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -115,34 +115,6 @@ Esto le permitirá rastrear estados y acciones como dónde navegan los usuarios 
 Como referencia, puede consultar el código en la aplicación Geometrixx Outdoors. En la aplicación Geometrixx Outdoors, todas las navegaciones de página se rastrean mediante el método ADB.trackState(). Para obtener más información, consulte el código fuente de /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 Al instrumentar el código fuente con estas llamadas de método, puede recopilar métricas completas en la aplicación.
-
-### Prueba del seguimiento de Analytics con Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-<!--NOTE TO WRITER: Bloodhound is no longer available.-->
-
-De forma opcional, antes de realizar la implementación en producción, puede utilizar la herramienta de Adobe [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) para probar la configuración de análisis. Para probar la configuración de análisis, deberá editar el archivo ADBMobileConfig.json para que apunte al servidor en el que se está ejecutando Bloodhound en lugar del servidor de Analytics real. Para realizar este cambio, desde ADBMobileConfig.json cambie la siguiente entrada.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Cambiar para que coincida con esta entrada:
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-Esto redireccionará todos los datos recopilados por el complemento AMS a Bloodhound para que pueda realizar la vista de los resultados.
 
 #### Propiedades para la conexión a AMS {#properties-for-connecting-to-ams}
 
