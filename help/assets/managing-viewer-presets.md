@@ -10,7 +10,7 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
 source-wordcount: '4361'
 ht-degree: 16%
@@ -154,7 +154,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
 
-Consulte también <!-- KEEP THIS REFERENCE FOR NOW [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) --> [Demostraciones](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)en directo.
+Consulte también Demostraciones [en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Para obtener información sobre las versiones compatibles del navegador web y del sistema operativo para visores, consulte las Notas de la versión de los visores.
 
@@ -488,7 +488,7 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
   </tr>
   <tr>
    <td>Segmento</td>
-   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos y ajustes preestablecidos del visor de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code> cualquier ajuste preestablecido del visor de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización, las miniaturas de los subsegmentos siguiente o anterior <i>no se </i>extraen para rellenar las áreas vacías del panel. Es decir, conserva la visualización de muestras asignadas al segmento de vídeo en particular.</p> </td>
+   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos y ajustes preestablecidos del visor de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code> cualquier ajuste preestablecido del visor de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización, las miniaturas de los subsegmentos siguientes o anteriores <i>no se </i>extraen para rellenar ninguna zona vacía del panel. Es decir, conserva la visualización de muestras asignadas al segmento de vídeo en particular.</p> </td>
   </tr>
   <tr>
    <td>Continua</td>
@@ -530,7 +530,7 @@ Utilizando el ejemplo de la tabla anterior, 30 segundos / 3 subsegmentos de víd
 
 #### Consideraciones especiales para crear ajustes preestablecidos de visor de letreros carrusel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
-Al crear ajustes preestablecidos de visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
+Al crear ajustes preestablecidos del visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
 
 |  | **Descripción** | **Acciones** |
 |---|---|---|
