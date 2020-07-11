@@ -4,10 +4,10 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 2%
+source-wordcount: '1873'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Los Service Packs de Adobe Experience Manager 6.5 proporcionan nuevas funciones, mejoras solicitadas por el cliente y mejoras de rendimiento, estabilidad y seguridad a intervalos trimestrales. La disponibilidad trimestral facilita el acceso y la adopción de nuevas características e innovaciones.
 
-En este artículo se destacan las funciones incluidas en el último Service Pack 6.5, las funciones [clave incluidas en los Service Pack](#key-features-previous-service-packs)6.5 anteriores y algunas de las versiones [clave desde la versión 6.5.4.0](#key-releases-since-last-sp) de Experience Manager.
+Este artículo destaca las funciones incluidas en el último Service Pack 6.5, las funciones [clave incluidas en los Service Pack](#key-features-previous-service-packs)6.5 anteriores y algunas de las versiones [clave desde la versión Experience Manager 6.5.4.0](#key-releases-since-last-sp) .
 
 ## Adobe Experience Manager Sites {#aem-sites}
 
@@ -56,7 +56,7 @@ En este artículo se destacan las funciones incluidas en el último Service Pack
 
 * Se puede acceder a muchos elementos de interfaz de usuario, controles y campos de formulario de entrada mediante el teclado.
 
-* El color y el contraste de algunos elementos de la interfaz de usuario se actualizan para que los usuarios con visión limitada o los usuarios sin percepción del color puedan distinguir estos elementos de la interfaz de usuario. Por ejemplo, el color de los iconos de clasificación por estrellas (como en la sección [!UICONTROL Clasificación] de la ficha [!UICONTROL Avanzado] de [!UICONTROL Propiedades] del recurso o en la vista de la tarjeta) se cambia para obtener el contraste adecuado.
+* El color y el contraste de algunos elementos de la interfaz de usuario se actualizan para que los usuarios con visión limitada o los usuarios sin percepción del color puedan distinguir estos elementos de la interfaz de usuario. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
 
    ![Iconos de clasificación con mejor contraste](assets/star-rating-icons.png)
 
@@ -76,21 +76,21 @@ La compatibilidad con imágenes 3D en [!DNL Dynamic Media] permite a los cliente
 
 ## Adobe Experience Manager Forms {#aem-forms}
 
-### Personalización de las columnas de la bandeja de entrada de Adobe Experience Manager {#customize-aem-inbox-columns}
+### Personalización de las columnas de la Bandeja de entrada de Adobe Experience Manager {#customize-aem-inbox-columns}
 
-Puede personalizar una [!DNL Experience Manager] Bandeja de entrada para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo. Los miembros del `administrators` grupo o del `workflow-administrators` grupo pueden personalizar las columnas.
+Puede personalizar una [!DNL Experience Manager] Bandeja de entrada para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo. Los miembros del `administrators` grupo o del `workflow-administrators` grupo pueden personalizar las columnas. Para obtener más información, consulte Control [de administración](../sites-authoring/inbox.md#inbox-admin-control).
 
-![Personalizar columnas de la bandeja de entrada de Experience Manager](assets/customize-columns.gif)
+![Personalizar las columnas de la Bandeja de entrada Experience Manager](assets/customize-columns.gif)
 
 ### Guardar comunicaciones interactivas como borrador {#save-as-draft}
 
-Puede utilizar la interfaz de usuario del agente para guardar uno o varios borradores para cada comunicación interactiva y recuperar el borrador más adelante para continuar trabajando en él. Puede especificar un nombre diferente para cada borrador para identificarlo.
+Puede utilizar la interfaz de usuario del agente para guardar uno o varios borradores para cada comunicación interactiva y recuperar el borrador más adelante para continuar trabajando en él. Puede especificar un nombre diferente para cada borrador para identificarlo. Para obtener más información, consulte [Guardar comunicaciones interactivas como borrador](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Guardar como borrador](assets/save-as-draft.gif)
 
 ### [!DNL Oracle WebLogic] compatibilidad con el servidor de aplicaciones {#weblogic-support}
 
-Adobe Experience Manager Forms ha añadido compatibilidad con [!DNL Oracle WebLogic 12] los formularios de Adobe Experience Manager en JEE. Puede actualizar desde una versión anterior o configurar un nuevo formulario de Experience Manager 6.5 en el servidor JEE en [!DNL Oracle WebLogic] 12.2.1.4 y versiones posteriores. Posteriormente corresponde a los cambios menores de la versión, donde x en 12.2.1.x se sustituye por un número de versión.
+Adobe Experience Manager Forms ha agregado compatibilidad con [!DNL Oracle WebLogic 12] formularios Adobe Experience Manager en JEE. Puede actualizar desde una versión anterior o configurar un nuevo Experience Manager 6.5 Forms en el servidor JEE en [!DNL Oracle WebLogic] 12.2.1.4 y versiones posteriores. Posteriormente corresponde a los cambios menores de la versión, donde x en 12.2.1.x se sustituye por un número de versión.
 
 ### Mejoras de accesibilidad {#accessibility-improvements}
 
@@ -104,15 +104,15 @@ Adobe Experience Manager Forms incluye las siguientes mejoras de accesibilidad:
 
 ### Autenticación basada en certificados X-509 para servicios Web basados en SOAP en modelo de datos de formulario {#x509-based-authentication-soap}
 
-El modelo de datos de formulario ahora admite la autenticación basada en certificados X-509 mientras se utilizan servicios Web SOAP como origen de datos.
+El modelo de datos de formulario ahora admite la autenticación basada en certificados X-509 mientras se utilizan servicios Web SOAP como origen de datos. Para obtener más información, consulte [Configuración de servicios](../forms/using/configure-data-sources.md#configure-soap-web-services)web SOAP.
 
 ### Otras mejoras clave {#other-improvements}
 
-* Los formularios de Experience Manager 6.5 en seguridad de Documento JEE ahora se basan en [!DNL Apache Struts 2].
+* Experience Manager 6.5 Forms on JEE Documento Security se basa ahora en [!DNL Apache Struts 2].
 
 * Se Añadió la compatibilidad con [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
-## Funciones clave de los Service Packs anteriores de Experience Manager 6.5 {#key-features-previous-service-packs}
+## Características principales de los Service Packs anteriores de Experience Manager 6.5 {#key-features-previous-service-packs}
 
 ### Experience Manager Sites {#aem-sites-previous-service-packs}
 
@@ -161,13 +161,13 @@ Por ejemplo, `On Time (MM-DD-YYYY HH:mm)`. Aquí MM es el mes en formato de dos 
 
 Las imágenes inteligentes utilizan las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes correctas optimizadas para su experiencia, lo que mejora el rendimiento y la participación. Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](../assets/imaging-faq.md).
 
-#### Recorte inteligente en perfiles de vídeo para medios dinámicos (6.5.3.0) {#smart-crop-video}
+#### Recorte inteligente en perfiles de vídeo para Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 El recorte inteligente para vídeo, una función opcional disponible en Perfiles de vídeo, es una herramienta que utiliza la potencia de la inteligencia artificial en Adobe Sensei para detectar y recortar automáticamente el punto focal en cualquier vídeo adaptable o vídeo progresivo que haya cargado, independientemente del tamaño. Consulte [Acerca del uso de recortes inteligentes en perfiles](../assets/video-profiles.md)de vídeo.
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Generar salida imprimible en flujos de trabajo de formularios de Experience Manager (6.5.4.0) {#generate-printable-output}
+#### Generar salida imprimible en flujos de trabajo de formularios Experience Manager (6.5.4.0) {#generate-printable-output}
 
 El paso de flujo de trabajo Generar salida imprimible permite integrar un archivo de plantilla de origen con un archivo de datos. Esta integración le permite imprimir o guardar diferentes copias del archivo de plantilla. El paso genera una salida PCL, PostScript, ZPL, IPL, TPCL o DPL. Para obtener más información sobre esta función, consulte Flujo de trabajo centrado en [formularios en OSGi - Referencia](../forms/using/aem-forms-workflow-step-reference.md)de pasos.
 
@@ -195,17 +195,17 @@ Conversión de un campo de texto en un formulario XFA en un campo de texto enriq
 
 #### Accessibility enhancements (6.5.4.0) {#forms-accessibility-enhancements-6540}
 
-Los formularios de Experience Manager incluyen las siguientes mejoras de accesibilidad:
+Experience Manager Forms incluye las siguientes mejoras de accesibilidad:
 
 * Los lectores de pantalla anuncian los campos de casillas de verificación, vínculos, selector de fecha e introducción de fecha correctamente en un formulario adaptable.
 
 * Cada página de un formulario adaptable ahora incluye un título y una etiqueta de punto de referencia principal.
 
-#### Uso compartido y solicitud de acceso a elementos de la Bandeja de entrada de un usuario de Experience Manager Forms (6.5.3.0) {#share-request-access}
+#### Compartir y solicitar acceso a elementos de la Bandeja de entrada de un usuario de formularios Experience Manager (6.5.3.0) {#share-request-access}
 
 Puede compartir los elementos de la Bandeja de entrada con otro usuario. Una vez que otro usuario obtiene acceso a los elementos de la Bandeja de entrada, el usuario puede reclamar y realizar las acciones correspondientes en los elementos compartidos. Del mismo modo, puede solicitar acceso a los elementos de la Bandeja de entrada a otros usuarios. Consulte [Uso compartido y solicitud de acceso a elementos de la Bandeja de entrada de un usuario](../forms/using/configure-shared-queues-osgi.md).
 
-#### Configuración de la configuración externa de los elementos de la Bandeja de entrada de un usuario de AEM Forms (6.5.3.0) {#configure-out-of-office}
+#### Configuración de la configuración externa de los elementos de la Bandeja de entrada de un usuario AEM Forms (6.5.3.0) {#configure-out-of-office}
 
 Si planea salir de la oficina, puede especificar lo que sucede con los artículos que se le han asignado para ese período.
 Tiene la opción de especificar una fecha y hora de inicio y una fecha y hora de finalización para que la configuración fuera de la oficina esté en vigor. Puede establecer una persona predeterminada a la que se enviarán todos los elementos. Consulte [Configuración fuera de la oficina](../forms/using/configure-out-of-office-settings.md).
@@ -218,11 +218,11 @@ Puede utilizar la API por lotes para generar varias comunicaciones interactivas 
 
 Entre el 5 de marzo de 2020 y el 4 de junio de 2020, Adobe lanzó lo siguiente, además de los Service Packs y los paquetes de correcciones acumulativos:
 
-* [El portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribución de software está disponible para descargar paquetes de servicios de Experience Manager, paquetes de correcciones acumulativas, correcciones rápidas y paquetes de funciones.
+* [El portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribución de software está disponible para descargar paquetes de servicios de Experience Manager, paquetes de correcciones acumulativos, correcciones rápidas y paquetes de funciones.
 
 * [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)y [2020.5.0](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/release-notes/release-notes-current.translate.html).
 
-* [Aplicación de escritorio de Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
+* [Aplicación de escritorio Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
 
 * [Pantallas de Experience Manager: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
