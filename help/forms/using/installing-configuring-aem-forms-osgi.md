@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 2%
+source-wordcount: '1817'
+ht-degree: 1%
 
 ---
 
@@ -98,6 +98,7 @@ Antes de empezar a instalar y configurar la capacidad de captura de datos de los
 >
 >* Si OpenSSL ya está instalado en el servidor, actualícelo a la versión más reciente.
 >* Cree enlaces simbólicos libcurl.so, libcrypto.so y libssl.so que apunten a la última versión de las bibliotecas libcurl, libcrypto y libssl respectivamente.
+
 >
 
 
@@ -110,15 +111,16 @@ Antes de empezar a instalar y configurar la capacidad de captura de datos de los
 
 El paquete de complemento AEM Forms es una aplicación implementada en AEM. El paquete contiene captura de datos de AEM Forms y otras funciones. Realice los siguientes pasos para instalar el paquete de complemento:
 
-1. Inicie sesión en el servidor [de](https://localhost:4502) AEM como administrador y abra el recurso compartido [de](https://localhost:4502/crx/packageshare)paquetes. Necesita un Adobe ID para iniciar sesión en el recurso compartido de paquetes.
-1. En Uso compartido [de paquetes de](https://localhost:4502/crx/packageshare/login.html)AEM, busque los paquetes **de complementos de formularios de** AEM 6.5, haga clic en el paquete aplicable a su sistema operativo y, a continuación, haga clic en **Descargar**. Lea y acepte el contrato de licencia y haga clic en **Aceptar**. Los inicios de descarga. Una vez descargado, la palabra **Descargado** aparece junto al paquete.
+1. Abra Distribución [de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
+1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. En la sección **[!UICONTROL Filtros]** :
+   1. Seleccione **[!UICONTROL Formularios]** en la lista desplegable **[!UICONTROL Solución]** .
+   2. Seleccione la versión y escriba el paquete. También puede utilizar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
+1. Toque el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar los términos]** del EULA y toque **[!UICONTROL Descargar]**.
+1. Abra el Administrador [de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   También puede utilizar el número de versión para buscar un paquete de complemento. Para ver el número de versión del paquete más reciente, consulte el artículo de versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-
-1. Una vez finalizada la descarga, haga clic en **Descargado**. Se le redirige al administrador de paquetes. En el administrador de paquetes, busque el paquete descargado y haga clic en **Instalar**.
-
-   Si descarga manualmente el paquete mediante el vínculo directo que aparece en el artículo de versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms, inicie sesión en el administrador de paquetes, haga clic en **Cargar paquete**, seleccione el paquete descargado y haga clic en cargar. Después de cargar el paquete, haga clic en el nombre del paquete y, a continuación, en **Instalar.**
-
+   También puede descargar el paquete a través del vínculo directo que aparece en el artículo de versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 1. Después de instalar el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTER dejen de aparecer en el `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` archivo y el registro sea estable.
 1. Repita los pasos del 1 al 4 en todas las instancias de Autor y Publicación.
 
@@ -153,7 +155,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 
 1. Abra AEM Configuration Manager en una ventana del explorador. La dirección URL predeterminada es `https://'[server]:[port]'/system/console/configMgr`.
 1. Busque **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** y abra la configuración.
-1. Añada el paquete **sun.util.calendar** al campo **allowlist** . Haga clic en **Guardar**.
+1. Añada el paquete **sun.util.calendar** al campo de **lista de permitidos** . Haga clic en **Guardar**.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación.
 
 ### Configuraciones posteriores a la instalación opcionales {#optional-post-installation-configurations}
