@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 1%
@@ -122,7 +122,7 @@ El paquete de complemento AEM Forms es una aplicación implementada en AEM. El p
 
    También puede descargar el paquete a través del vínculo directo que aparece en el artículo de versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 1. Después de instalar el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTER dejen de aparecer en el `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` archivo y el registro sea estable.
-1. Repita los pasos del 1 al 4 en todas las instancias de Autor y Publicación.
+1. Repita los pasos del 1 al 7 en todas las instancias de Autor y Publicación.
 
 ## Configuraciones posteriores a la instalación {#post-installation-configurations}
 
