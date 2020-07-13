@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +51,7 @@ Un gráfico *[](/help/communities/essentials-socialgraph.md)*social captura las 
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.activitystream</td>
+   <td>cq.social.hbs.activitystreams</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -60,7 +63,7 @@ Un gráfico *[](/help/communities/essentials-socialgraph.md)*social captura las 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>consulte Función de flujo de <a href="/help/communities/activities.md">Actividad</a></td>
+   <td>Consulte Función <a href="/help/communities/activities.md">Flujos de Actividad</a></td>
   </tr>
  </tbody>
 </table>
