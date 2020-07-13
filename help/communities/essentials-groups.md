@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 1%
 
 ---
 
 
-# Elementos esenciales del grupo de la comunidad {#community-group-essentials}
+# Elementos esenciales del grupo de la comunidad  {#community-group-essentials}
 
 La función de grupos de comunidad es la capacidad para que una subcomunidad sea creada dinámicamente dentro de un sitio de comunidad por usuarios autorizados desde los entornos de publicación y creación.
 
@@ -95,10 +98,11 @@ La inclusión de varias plantillas de grupo de comunidad da como resultado que s
 
 A partir del [primer](deploy-communities.md#latestfeaturepack)PM de Comunidades, es posible incluir una función de Grupos en una plantilla de grupo, permitiendo así los grupos anidados (subcomunidades).
 
-Cuando una plantilla de grupo o sitio de comunidad incluye la función Grupos, es posible
+Cuando una plantilla de grupo o sitio de comunidad incluye la función Grupos, es posible:
 
-* Crear una subcomunidad en el entorno de creación
-* Cree un grupo en el entorno de publicación, cuando esté configurado para permitirlo
+* Cree una subcomunidad en el entorno de creación.
+
+* Cree un grupo en el entorno de publicación, cuando esté configurado para permitirlo.
 
 Al crear un grupo en el entorno de creación, primero es necesario publicar el sitio de comunidad y, a continuación, publicar el grupo. Al publicar el sitio de la comunidad se publicarán las páginas del grupo sin crear los grupos de miembros de la subcomunidad en los que se configuran las ACL. Por lo tanto, un grupo restringido (secreto) puede ser visible hasta que se publique explícitamente el grupo.
 
