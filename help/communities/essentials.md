@@ -10,14 +10,17 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 17%
 
 ---
 
 
-# Componentes, funciones y características esenciales {#component-function-and-feature-essentials}
+# Componentes, funciones y características esenciales  {#component-function-and-feature-essentials}
 
-Las funciones de comunidades AEM requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el sitio [de la](overview.md#communitiessites) comunidad antes de poder publicar contenido. Por lo tanto, las plantillas [de sitio de](sites.md)comunidad, a partir de las cuales se [crea](sites-console.md)un sitio de comunidad, están diseñadas para incluir una función de inicio de sesión, así como perfiles de usuario, mensajes, búsqueda, moderación y traducción.
+Las funciones del AEM Communities requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el sitio [de la](overview.md#communitiessites) comunidad antes de poder publicar contenido. Por lo tanto, las plantillas [de sitio de](sites.md)comunidad, a partir de las cuales se [crea](sites-console.md)un sitio de comunidad, están diseñadas para incluir una función de inicio de sesión, así como perfiles de usuario, mensajes, búsqueda, moderación y traducción.
 
 Un sitio de comunidad admitirá a los miembros que crean grupos de la comunidad cuando la función [de grupos de](functions.md#groups-function) comunidad se incluya en la plantilla de sitio de la comunidad seleccionada.
 
@@ -61,7 +64,7 @@ A continuación encontrará enlaces a información esencial para los componentes
 * [Puntuación y distintivos](configure-scoring.md)
 * [Buscar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Proveedor](srp-and-ugc.md) de recursos de Almacenamiento `(SRP)`
+* [Proveedor de recursos de Almacenamiento](srp-and-ugc.md) `(SRP)`
 
 * [Etiquetado](tag.md)
 
