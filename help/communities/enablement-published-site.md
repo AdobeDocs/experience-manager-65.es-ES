@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Una limitación conocida expone el contenido del sitio de la comunidad a visitan
 
 Para proteger el contenido del sitio de la comunidad del acceso de usuarios anónimos a través del contenido jcr y json, siga estos pasos:
 
-1. En la instancia de AEM Author, vaya a https://&lt;host>:&lt;puerto>/editor.html/content/site/&lt;nombre de sitio>.html.
+1. En la instancia de creación de AEM, vaya a https://&lt;host>:&lt;puerto>/editor.html/content/site/&lt;nombre de sitio>.html.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ En el autor, vaya a la consola **[Comunidades,](resources.md)**Recursos, donde s
 * Todos los recursos de habilitación y rutas de aprendizaje
 * Un recurso de habilitación específico o una ruta de aprendizaje
 
-Vaya a la consola **[Comunidades,](reports.md)**Informes y genere informes según
+Vaya a la consola **[Comunidades,](reports.md)**Informes y genere informes según:
 
 * Asignaciones a recursos de habilitación y rutas de aprendizaje
 * Anuncios en un sitio de comunidad durante un período específico
@@ -203,12 +203,11 @@ Vaya a la consola **[Comunidades,](reports.md)**Informes y genere informes segú
 
 Con un poco de actividad e interacción con los recursos al publicar, vale la pena ver los informes sobre el autor.
 
-* En autor
-* Iniciar sesión con privilegios administrativos
-* Vaya del menú principal a **[!UICONTROL Comunidades > Recursos]**
-* Seleccionar el `Enablement Tutorial` sitio
-* Seleccione el icono `Report` para ver un resumen de todos los recursos
-* Seleccione un recurso y, a continuación, el icono `Report` de un informe sobre ese recurso
+* Al crear, inicie sesión con privilegios administrativos.
+* Vaya del menú principal a **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**.
+* Seleccione el `Enablement Tutorial` sitio.
+* Seleccione el `Report` icono para ver un resumen de todos los recursos.
+* Seleccione un recurso y, a continuación, el `Report` icono de un informe sobre dicho recurso.
 
 Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, que pueden tardar entre 1 y 12 horas en aparecer. Sin embargo, el sistema de informes SCORM básico ya está disponible.
 
@@ -236,10 +235,9 @@ La consola Informes permite generar informes en
 
 Para informes sobre asignaciones:
 
-* En autor
-* Iniciar sesión con privilegios administrativos
-* Vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Informes]** > Informe **[!UICONTROL Asignaciones]**
-* Seleccione un **[!UICONTROL sitio]** en el menú desplegable (seleccione `Enablement Tutorial`)
+* Al crear, inicie sesión con privilegios administrativos.
+* Vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Informes]** > Informe **[!UICONTROL Asignaciones]**.
+* Seleccione un **[!UICONTROL sitio]** en el menú desplegable (seleccione `Enablement Tutorial`).
 
 * Seleccionar **[!UICONTROL grupo]** (seleccionar `Community Ski Class`)
 
@@ -251,15 +249,15 @@ Para informes sobre asignaciones:
 
 Para informes sobre vistas:
 
-* Al crear, inicie sesión con privilegios administrativos
-* Vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Informes]** > Informe **[!UICONTROL Vistas]**
-* Seleccione un **sitio **en el menú desplegable (seleccione`Enablement Tutorial`)
+* Al crear, inicie sesión con privilegios administrativos.
+* Vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Informes]** > Informe **[!UICONTROL Vistas]**.
+* Seleccione un **sitio **en el menú desplegable (seleccione`Enablement Tutorial`).
 
-* Seleccionar tipo **[!UICONTROL de contenido]** (seleccione `all`)
+* Seleccione **[!UICONTROL Tipo]** de contenido (seleccione `all`).
 
-* Seleccionar un intervalo **[!UICONTROL de fechas]** (seleccionar `Last 7 days`)
+* Seleccione un intervalo **[!UICONTROL de]** fechas (seleccione `Last 7 days`).
 
-* Seleccionar **[!UICONTROL generación]**
+* Seleccione **[!UICONTROL Generar]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
