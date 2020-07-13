@@ -10,16 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 6%
 
 ---
 
 
-# Elementos esenciales del contenido destacado {#featured-content-essentials}
+# Elementos esenciales del contenido destacado  {#featured-content-essentials}
 
 Esta página proporciona la información esencial para trabajar con contenido destacado.
 
 A diferencia de fijar una publicación en la parte superior de un foro, esta función permite resaltar contenido en cualquier parte del sitio de la comunidad.
+
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
