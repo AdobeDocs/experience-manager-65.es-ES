@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -47,7 +47,7 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td>consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensajería</a></td>
+   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensajería</a></td>
   </tr>
   <tr>
    <td><strong>configuración de administración</strong></td>
@@ -80,7 +80,7 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td>consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensajería</a></td>
+   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensajería</a></td>
   </tr>
   <tr>
    <td><strong>configuración de administración</strong></td>
