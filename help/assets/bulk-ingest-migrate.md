@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ El paquete de funciones 18912 le permite ingestar recursos de forma masiva direc
 
 >[!NOTE]
 >
->Aunque es posible utilizar el paquete de funciones para migrar recursos por su cuenta de forma masiva del modo Dynamic Media Classic al modo Dynamic Media - Scene 7 en AEM o para migrar recursos de forma masiva mediante la función de FTP en Dynamic Media Classic, Adobe *no* recomienda este método debido a la complejidad que conlleva.
+>Aunque es posible utilizar el paquete de funciones para migrar recursos por su cuenta de forma masiva del modo Dynamic Media Classic al modo Dynamic Media - Scene 7 en AEM o para migrar recursos de forma masiva mediante la función de FTP en Dynamic Media Classic, Adobe *no recomienda* este método debido a la complejidad que conlleva.
 >
 >De este modo, los paquetes de funciones de migración, como este, *solo* se admiten como parte de un proyecto de migración cuando se realizan a través de [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
 
@@ -34,7 +37,7 @@ Consulte también [Configuración de Dynamic Media: modo](/help/assets/config-dm
 
 1. En la instancia de AEM, vaya a **[!UICONTROL Herramientas > Seguridad > Usuarios]** y seleccione **[!UICONTROL Crear usuario]**. Este usuario de servicio debe tener permisos de *lectura y escritura* para `/content/dam.`
 1. En los campos **[!UICONTROL ID]** y **[!UICONTROL Contraseña]** , introduzca un nombre de usuario y una contraseña; por ejemplo, Usuario **FTP**. Este nombre aparece en la línea de tiempo como el usuario que creó el recurso. Cuando se carga un recurso desde FTP, se considera que se crea al cargarlo en el servidor FTP y se transfiere a AEM.
-1. Póngase en contacto con el Servicio de atención al cliente de [Adobe Enterprise para obtener información sobre Experience Manager](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) y solicitar el acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando se ponga en contacto con la asistencia técnica:
+1. Póngase en contacto con el servicio de atención al cliente de [Adobe Enterprise para que el Experience Manager](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) solicite el acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando se ponga en contacto con la asistencia técnica:
 
    * Dirección IP del servidor para la instancia de Autor, incluido el número de puerto (de forma predeterminada, el número de puerto es 4502).
    * Nombre de usuario y contraseña del usuario del servicio AEM del paso anterior.
@@ -42,4 +45,4 @@ Consulte también [Configuración de Dynamic Media: modo](/help/assets/config-dm
 1. El Servicio de atención al cliente de Adobe Enterprise para AEM le proporciona las credenciales de FTP y acceso al paquete de funciones 18912.
 1. Cuando reciba el paquete de funciones 18912, instálelo.
 
-   Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso compartido de paquetes y paquetes en AEM.
+   Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso de la distribución de software y los paquetes en AEM.
