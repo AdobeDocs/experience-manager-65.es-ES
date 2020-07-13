@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 2%
 
 ---
 
@@ -75,8 +78,8 @@ A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) c
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: Introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
+* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
