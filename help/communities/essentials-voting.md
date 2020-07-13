@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td> cq.social.hbs.vote</td>
+   <td> cq.social.hbs.voting</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -49,7 +52,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td><p>Consulte, <a href="voting.md">Uso de la votación</a></p> </td>
+   <td><p>Consulte <a href="voting.md">Uso de la votación</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -75,8 +78,8 @@ A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) c
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación.
+* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
