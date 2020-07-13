@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 9%
@@ -27,10 +27,10 @@ El `Leaderboard` componente proporciona la capacidad de obtener una idea de cóm
 
 Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar la Puntuación de [comunidades y los distintivos](/help/communities/implementing-scoring.md).
 
-Esta sección de la documentación describe
+Esta sección de la documentación describe:
 
-* Añadir el `Leaderboard` componente en un sitio [de comunidad](/help/communities/overview.md#community-sites)
-* Configuración del `Leaderboard` componente
+* Añadir el `Leaderboard` componente en un sitio [de](/help/communities/overview.md#community-sites)comunidad.
+* Configuración del `Leaderboard` componente.
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -44,17 +44,19 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se coloca por primera vez en una página de un sitio de comunidad, así es como aparece el componente:
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Configuración de la tabla de clasificación {#configuring-leaderboard}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Leaderboard` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-20](assets/chlimage_1-20.png) ![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **Configuración** , especifique qué información relacionada con el miembro se muestra:
+En la ficha **[!UICONTROL Configuración]** , especifique qué información relacionada con el miembro se muestra:
 
 * **Nombre para mostrar**
 
@@ -118,7 +120,7 @@ Configuración del componente de la tabla de clasificación:
    * Regla de creación de distintivos = `/libs/settings/community/badging/rules//reference-badging`
    * Límite de visualización = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Ejemplo: Panel de liderazgo de expertos {#example-experts-leaderboard}
 
@@ -141,7 +143,7 @@ Configuración del componente de la tabla de clasificación:
    * Regla de creación de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Límite de visualización = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Información adicional {#additional-information}
 
