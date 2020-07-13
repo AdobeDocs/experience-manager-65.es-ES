@@ -10,40 +10,44 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
 
-# Configuración inicial para la habilitación {#initial-setup-for-enablement}
+# Configuración inicial para la habilitación  {#initial-setup-for-enablement}
 
-## Iniciar instancias de creación y publicación {#start-author-and-publish-instances}
+## Instancias de creación y publicación de Inicio {#start-author-and-publish-instances}
 
 Para fines de desarrollo y demostración, será necesario ejecutar un autor y una instancia de publicación.
 
 Siga las instrucciones básicas de [introducción](../../help/sites-deploying/deploy.md#getting-started) de AEM que resultarán en
 
-* Entorno de creación en [localhost:4502](http://localhost:4502/)
-* Entorno de publicación en [localhost:4503](http://localhost:4503/)
+* entorno de autor en [localhost:4502](http://localhost:4502/)
+* entorno de publicación en [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
 
-* El entorno de creación es para
+* El entorno de autor está a favor de:
 
-   * Desarrollo de sitios, plantillas, componentes, recursos de habilitación y rutas de aprendizaje
-   * Asignación de miembros y grupos de miembros para habilitar recursos y rutas de aprendizaje
-   * Generación de informes sobre asignaciones, vistas y anuncios
-   * Tareas administrativas y de configuración
+   * Desarrollo de sitios, plantillas, componentes, recursos de habilitación y rutas de aprendizaje.
+   * Asignación de miembros y grupos de miembros para habilitar recursos y rutas de aprendizaje.
+   * Generación de informes sobre asignaciones, vistas y anuncios.
+   * tareas administrativas y de configuración.
 
-* El entorno de publicación es para
+* El entorno de publicación es para:
 
-   * Aprendizaje/formación basado en temas administrados por el administrador de habilitación
-   * Recursos y rutas de aprendizaje de habilitación de comentario y clasificación
-   * Ponerse en contacto con los contactos de recursos
+   * Aprendizaje/formación basado en temas gestionados por el administrador de habilitación.
+   * Recursos de habilitación de comentario y clasificación y rutas de aprendizaje.
+   * Póngase en contacto con los contactos de recursos.
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+
 
 ## Instalar la versión más reciente de las comunidades {#install-latest-communities-release}
 
@@ -51,7 +55,7 @@ Este tutorial crea un sitio [de comunidad de](overview.md#enablement-community)h
 
 * [Últimas versiones](deploy-communities.md#latest-releases)
 
-Para ver un tutorial que crea un sitio [de comunidad de](overview.md#engagement-community)participación, visite [Introducción a las comunidades](getting-started.md)de AEM.
+Para ver un tutorial que crea un sitio [de comunidad de](overview.md#engagement-community)participación, visite [Introducción a los AEM Communities](getting-started.md).
 
 ## Configurar funciones de habilitación {#configure-enablement-features}
 
@@ -63,7 +67,7 @@ Cuando [Adobe Analytics está configurado para el sitio](analytics.md)de la comu
 
 ## Configurar correo electrónico para notificaciones {#configure-email-for-notifications}
 
-La función de notificaciones, disponible de forma predeterminada para todos los sitios creados con la `Communities Sites` consola, proporciona un canal de correo electrónico para las notificaciones.
+La función de notificaciones, disponible de forma predeterminada para todos los sitios creados mediante la `Communities Sites` consola, proporciona un canal de correo electrónico para las notificaciones.
 
 Lo que se necesita es que el correo electrónico se configure correctamente para el sitio.
 
@@ -79,7 +83,7 @@ Para obtener instrucciones sencillas para habilitar el servicio de túnel, consu
 
 ## Crear etiquetas de tutoriales {#create-tutorial-tags}
 
-Cree etiquetas para utilizarlas en los tutoriales de participación y activación, utilizando el espacio de nombres de etiquetas de `Tutorial`.
+Cree etiquetas para utilizarlas en los tutoriales de participación y activación mediante la Área de nombres de etiquetas de `Tutorial`.
 
 Utilice la consola [Etiquetado](../../help/sites-administering/tags.md#tagging-console) para crear las etiquetas siguientes:
 
@@ -92,24 +96,24 @@ Utilice la consola [Etiquetado](../../help/sites-administering/tags.md#tagging-c
 
 ![chlimage_1-417](assets/chlimage_1-417.png)
 
-Siga las instrucciones para
+A continuación, siga las instrucciones para:
 
 1. [Definir los permisos de etiqueta](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publicación de las etiquetas](../../help/sites-administering/tags.md#publishing-tags)
 
-Paquete de muestra de etiquetas creadas para los tutoriales de introducción de AEM Communities
+Paquete de muestra de etiquetas creadas para los tutoriales de introducción a los AEM Communities
 
 [Obtener archivo](assets/communities_tutorialtags-10.zip)
 
 ## Crear miembros y grupos de habilitación {#create-enablement-members-and-groups}
 
-Para un sitio de comunidad de habilitación, los visitantes del sitio no deben poder [registrarse ni utilizar el inicio de sesión](sites-console.md#user-management)social.
+Para un sitio de la comunidad de habilitación, los visitantes del sitio no deben ser capaces de [autorregistrarse ni utilizar el inicio de sesión](sites-console.md#user-management)social.
 
 En su lugar, con el servicio [de](#enable-the-tunnel-service) túnel habilitado, se utiliza la consola [](members.md) Miembros para registrar nuevos miembros en el entorno de publicación.
 
 En este tutorial, se crean tres miembros en el entorno de publicación. Dos miembros se convertirán en miembros de un grupo de usuarios asignado a una ruta de aprendizaje, mientras que el tercer miembro se convertirá en un contacto de recursos de habilitación.
 
-Se crea un cuarto usuario en el entorno de creación y se asignan las funciones Administrador de comunidades y Administrador de habilitación de la comunidad.
+Se crea un cuarto usuario en el entorno de creación y se asignan las funciones de administrador de comunidades y administrador de habilitación de la comunidad.
 
 >[!NOTE]
 >
@@ -118,6 +122,7 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 >Si se crearon posteriormente, podrían agregarse como miembros del grupo *de miembros del Tutorial de* habilitación durante la creación de miembros.
 >
 >Más adelante, se [asignarán al grupo](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de miembros.
+
 
 ### Riley Taylor - Participante {#riley-taylor-enrollee}
 
@@ -152,14 +157,14 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 * **Nombre**: Quinn
 * **Apellido**: Harper
 
-### Agregar un grupo de usuarios: Clase de esquí de la comunidad {#add-a-user-group-community-ski-class}
+### Añadir un grupo de usuarios - Clase de esquí de la comunidad {#add-a-user-group-community-ski-class}
 
-[Agregue un nuevo grupo](members.md#create-new-group) denominado Community Ski Class.
+[Añada un nuevo grupo](members.md#create-new-group) denominado Community Ski Class.
 
 * **ID**: community-ski-class
 * **Nombre**: Clase de esquí de comunidad
 * **Descripción**: un grupo de muestra para asignar recursos de habilitación
-* **Agregar miembros al grupo** &#39;agregar&#39;:
+* **Añadir miembros al grupo** &#39;agregar&#39;:
 
    * riley
    * sidney
@@ -173,6 +178,7 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 >[!NOTE]
 >
 >Durante la creación del sitio de la comunidad, los miembros y grupos existentes pueden agregarse al grupo de miembros del sitio de la comunidad.
+
 
 ## Función de administrador de comunidad {#community-administrator-role}
 
@@ -190,10 +196,10 @@ Cree un usuario en el *autor*, al que se le asigna la función de administrador 
 
    * Por ejemplo: nombre de usuario &#39;admin&#39; / contraseña &#39;admin&#39;
 
-* Desde la consola principal, vaya a **[!UICONTROL Herramientas, Operaciones > Seguridad > Usuarios]**
-* En el menú **[!UICONTROL Editar]** , seleccione **[!UICONTROL Agregar usuario]**
+* Desde la consola principal, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
+* En el menú **[!UICONTROL Editar]** , seleccione **[!UICONTROL Añadir usuario]**.
 
-* En el cuadro de diálogo `Create New User` , introduzca
+* En el `Create New User` cuadro de diálogo, introduzca:
 
    * **ID&amp;Último;**: sirius
    * **Dirección** de correo electrónico: sirius.nilson@mailinator.com
