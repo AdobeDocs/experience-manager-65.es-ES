@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 4%
 
 ---
 
 
-# Eventos OSGi para componentes de comunidades {#osgi-events-for-communities-components}
+# Eventos OSGi para componentes de comunidades  {#osgi-events-for-communities-components}
 
 ## Información general {#overview}
 
@@ -31,90 +34,90 @@ Para los componentes Communities entregados en la versión, en las tablas siguie
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea un evento de calendario |
-| AÑADIR | comentarios de miembros en un evento de calendario |
-| ACTUALIZAR | se edita el evento o comentario del calendario del miembro |
-| ELIMINAR | se elimina el evento o comentario del calendario del miembro |
+| POST | Un miembro crea un evento de calendario |
+| AÑADIR | Comentarios de los miembros sobre un evento de calendario |
+| ACTUALIZAR | Se edita el evento o comentario del calendario del miembro |
+| ELIMINAR | Se elimina el evento o comentario del calendario del miembro |
 
 [Componente](essentials-comments.md)ComentariosSocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea un comentario |
-| AÑADIR | respuestas de los miembros al comentario |
-| ACTUALIZAR | se edita el comentario del miembro |
-| ELIMINAR | se elimina el comentario del miembro |
+| POST | Un miembro crea un comentario |
+| AÑADIR | Respuestas de los miembros a las observaciones |
+| ACTUALIZAR | Se edita el comentario del miembro |
+| ELIMINAR | Se suprime el comentario del miembro |
 
 [Componente](essentials-file-library.md)Biblioteca de archivosSocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea una carpeta |
-| ATTACH | miembro carga un archivo |
+| POST | Un miembro crea una carpeta |
+| ATTACH | Los miembros cargan un archivo |
 | ACTUALIZAR | Un miembro actualiza una carpeta o un archivo |
-| ELIMINAR | elimina una carpeta o un archivo |
+| ELIMINAR | Un miembro elimina una carpeta o un archivo |
 
 [Foro Componente](essentials-forum.md)SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea un tema del foro |
-| AÑADIR | respuestas de los miembros al tema del foro |
-| ACTUALIZAR | se edita el tema o la respuesta del foro del miembro |
-| ELIMINAR | se elimina el tema o la respuesta del foro del miembro |
+| POST | El miembro crea un tema de foro |
+| AÑADIR | Respuestas de los miembros al tema del foro |
+| ACTUALIZAR | Se edita el tema o la respuesta del foro del miembro |
+| ELIMINAR | Se elimina el tema o la respuesta del foro del miembro |
 
 [Componente](blog-developer-basics.md)HistorialSocialEvent `topic`= com/adobe/cq/social/historial
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea un artículo de blog |
-| AÑADIR | comentarios de miembros en un artículo de blog |
-| ACTUALIZAR | se edita el artículo o comentario del blog del miembro |
-| ELIMINAR | se elimina el artículo o comentario del blog del miembro |
+| POST | Un miembro crea un artículo de blog |
+| AÑADIR | Comentarios de los miembros en un artículo de blog |
+| ACTUALIZAR | Se edita el artículo o comentario del blog del miembro |
+| ELIMINAR | Se elimina el artículo o comentario del blog de un miembro |
 
 [QnA Component](qna-essentials.md)SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea una pregunta QnA |
-| AÑADIR | miembro crea una respuesta de QnA |
-| ACTUALIZAR | se edita la pregunta o la respuesta de control de calidad del miembro |
-| SELECCIONAR | la respuesta del miembro está seleccionada |
-| DESSELECCIONAR | se anula la selección de la respuesta del miembro |
-| ELIMINAR | se elimina la pregunta o la respuesta de control de calidad del miembro |
+| POST | Un miembro crea una pregunta de QnA |
+| AÑADIR | Un miembro crea una respuesta de control de calidad |
+| ACTUALIZAR | Se edita la pregunta o la respuesta de control de calidad del miembro |
+| SELECCIONAR | Se selecciona la respuesta del miembro |
+| DESSELECCIONAR | Se anula la selección de la respuesta del miembro |
+| ELIMINAR | Se elimina la pregunta o respuesta de control de calidad de un miembro |
 
 [Reseñas del componente](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea revisión |
-| ACTUALIZAR | se edita la revisión del miembro |
-| ELIMINAR | se elimina la revisión del miembro |
+| POST | El miembro crea una revisión |
+| ACTUALIZAR | Se edita la revisión del miembro |
+| ELIMINAR | Se elimina la revisión de un miembro |
 
 [Componente](rating-basics.md)de clasificación SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AÑADIR CLASIFICACIÓN | el contenido del miembro se ha valorado |
-| QUITAR CLASIFICACIÓN | el contenido del miembro se ha reducido |
+| AÑADIR CLASIFICACIÓN | Se ha aumentado la clasificación del contenido del miembro |
+| QUITAR CLASIFICACIÓN | El contenido del miembro se ha reducido |
 
 [Componente](essentials-voting.md)de votaciónSocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AÑADIR VOTACIÓN | el contenido de los miembros ha sido votado |
-| ELIMINAR VOTACIÓN | el contenido de los miembros ha sido rechazado |
+| AÑADIR VOTACIÓN | El contenido de los miembros ha sido elevado a votación |
+| ELIMINAR VOTACIÓN | El contenido de los miembros ha sido rechazado |
 
 **Componentes** habilitados para moderaciónSocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descripción** |
 |---|---|
-| DENEGAR | se deniega el contenido del miembro |
-| INDICADOR COMO INAPROPIADO | se marca el contenido del miembro |
-| DESALOG-AS-INAPROPIADO | el contenido del miembro no está marcado |
-| ACEPTAR | el moderador aprueba el contenido del miembro |
-| CERRAR | el miembro cierra los comentarios a las ediciones y las respuestas |
-| ABRIR | miembro vuelve a abrir el comentario |
+| DENEGAR | Se deniega el contenido del miembro |
+| INDICADOR COMO INAPROPIADO | Se marca el contenido del miembro |
+| DESALOG-AS-INAPROPIADO | El contenido del miembro no está marcado |
+| ACEPTAR | El moderador aprueba el contenido del miembro |
+| CERRAR | El miembro cierra los comentarios a las ediciones y las respuestas |
+| ABRIR | El miembro vuelve a abrir el comentario |
 
 ## Eventos para componentes personalizados {#events-for-custom-components}
 
@@ -126,12 +129,13 @@ El evento personalizado anularía el método `getVerb()` para que `verb`se devue
 >
 >Asegúrese de que una extensión personalizada esté registrada con una clasificación inferior a cualquier implementación existente en el producto.
 
+
 ### Pseudocódigo para el Evento de componentes personalizados {#pseudo-code-for-custom-component-event}
 
 [org.osgi.service.evento.Evento](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
-[com.adobe.granite.activitystream.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
-[com.adobe.granite.activitystream.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
+[com.adobe.granite.activityStream.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
+[com.adobe.granite.activity.stream.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
 ```java
 package com.mycompany.recipe;
@@ -231,7 +235,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 Es posible escuchar eventos para modificar lo que aparece en el flujo de actividad.
 
-El siguiente ejemplo de pseudocódigo eliminará los eventos ELIMINAR para el componente Comentarios del flujo de actividad.
+El siguiente ejemplo de pseudocódigo eliminará los eventos de DELETE para el componente Comentarios del flujo de actividad.
 
 ### Pseudocódigo para EventListener {#pseudo-code-for-eventlistener}
 
