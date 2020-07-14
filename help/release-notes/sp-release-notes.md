@@ -4,7 +4,7 @@ description: Notas de versión específicas de Service Pack 5 de Adobe Experienc
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
+source-git-commit: 97714abf86a80f6b3d1c68c85ccf443482da22bf
 workflow-type: tm+mt
 source-wordcount: '4529'
 ht-degree: 7%
@@ -267,7 +267,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 ### Proyectos de traducción {#translation-6550}
 
-* Las etiquetas traducidas no se importan al Experience Manager desde servicios de traducción de terceros (NPR-33154).
+* Las etiquetas traducidas no se importan en Experience Manager desde servicios de traducción de terceros (NPR-33154).
 * La página de configuración de traducción muestra un proveedor de traducción incorrecto al que se utilizó para la traducción (NPR-32971).
 * Añadir una carpeta de fragmentos de experiencia en un proyecto de traducción existente crea un nuevo proyecto (NPR-32843).
 * Se muestra un `NullPointerException` error en los registros de ejecución de un trabajo de traducción (NPR-32628).
@@ -368,7 +368,7 @@ B. Utilice la API [HTTP del Administrador](https://docs.adobe.com/content/docs/e
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.10.6 or higher (Use Web Console: `/system/console/bundles`).
+1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or higher (Use Web Console: `/system/console/bundles`).
 
 Para conocer las plataformas certificadas para trabajar con esta versión, consulte los requisitos [técnicos](/help/sites-deploying/technical-requirements.md).
 
