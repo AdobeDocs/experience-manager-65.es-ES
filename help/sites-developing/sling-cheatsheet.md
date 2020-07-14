@@ -10,17 +10,15 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c5ce62ad-ce9f-4681-bf85-78f7e72e1506
 translation-type: tm+mt
-source-git-commit: d621a612556f0bea032444c2e07be101868b1905
+source-git-commit: 95c23d29aa1dd1695ed4e541dd11c2bbc7214f75
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '22'
 ht-degree: 0%
 
 ---
 
 
 # Hoja De Cálculo De Sling{#sling-cheatsheet}
-
-<!-- ![chlimage_1-97](assets/chlimage_1-97.png) ![chlimage_1-98](assets/chlimage_1-98.png) -->
 
 ![Explicación de la resolución de secuencias de comandos de Apache Sling](assets/sling-cheatsheet-01.png)
 
