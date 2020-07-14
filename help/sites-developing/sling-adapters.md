@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 95c23d29aa1dd1695ed4e541dd11c2bbc7214f75
+source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '2100'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,78 @@ En el primer caso, los javadocs pueden indicar lo que `adaptTo-targets` es posib
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>Devuelve el contenido binario de un "archivo"<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
+   <td>Devuelve el contenido binario de un recurso de archivo (si se trata de un recurso basado en nodos JCR y el tipo de nodo es <code>nt:file</code> o <code>nt:resource</code>; si se trata de un recurso de paquete; contenido del archivo si se trata de un recurso del sistema de archivos) o los datos de un recurso de propiedad JCR binario.</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/net/URL.html">URL</a></td>
+   <td>Devuelve una URL al recurso (URL del repositorio de este nodo si se trata de un recurso basado en nodos JCR; jar URL del paquete si se trata de un recurso del paquete; URL de archivo si se trata de un recurso del sistema de archivos).</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/File.html">Archivo</a></td>
+   <td>Si se trata de un recurso del sistema de archivos.</td>
+  </tr>
+  <tr>
+   <td><a href="https://sling.apache.org/apidocs/sling5/org/apache/sling/api/scripting/SlingScript.html">SlingScript</a></td>
+   <td>Si este recurso es una secuencia de comandos (por ejemplo, un archivo jsp) para la que se ha registrado un motor de secuencias de comandos con sling.</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/products/servlet/2.2/javadoc/javax/servlet/Servlet.html">Servlet</a></td>
+   <td>Si este recurso es una secuencia de comandos (por ejemplo, un archivo jsp) para la que se ha registrado un motor de secuencias de comandos con sling o si se trata de un recurso servlet.</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">Cadena</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Booleano</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Largo</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html">Doble</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendario</a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"></a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">ValorString[]Boolean[][]Long[]Calendario[]Valor[]Value[]</a></td>
+   <td>Devuelve los valores si se trata de un recurso basado en la propiedad JCR (y el valor se ajusta).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabledResource</a></td>
+   <td>Si se trata de un recurso basado en nodos JCR.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">Recurso</a></td>
+   <td>Si se trata de un recurso de nodo dam:Asset.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Rendition.html">Representación</a></td>
+   <td>Si se trata de una representación dam:Asset (nt:file en la carpeta de representación de un dam:Assert)</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
+   <td>En función de la sesión JCR, si se trata de un recurso basado en JCR y el usuario tiene permisos para acceder a UserManager.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Con autorización</a></td>
+   <td>Autorizable es la interfaz de base común para usuarios y grupos.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/User.html">Usuario</a></td>
+   <td>El usuario es un usuario con autorización especial que se puede autenticar y suplantar.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
+   <td>Busca debajo del recurso (o utilice setSearchIn()) si se trata de un recurso basado en JCR.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
+   <td>Estado del flujo de trabajo para el nodo de carga útil de página/flujo de trabajo determinado.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
+   <td>Estado de replicación para el recurso dado o su subnodo jcr:content (marcado primero).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
+   <td>Devuelve un recurso de conector adaptado para determinados tipos, si se trata de un recurso basado en nodos JCR.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">Configuración</a></td>
+   <td>Si se trata de un recurso <code>cq:ContentSyncConfig</code> de nodo.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
+   <td>Si está debajo de un recurso <code>cq:ContentSyncConfig</code> de nodo.</td>
+  </tr>
+ </tbody>
+</table>
 
 [**ResourceResolver **](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html)se adapta a:
 
