@@ -59,25 +59,26 @@ Utilice puntos de interrupción (que indican la agrupación de dispositivos) par
 * Ocultar componentes según el grupo de dispositivos (definir en qué punto de interrupción se ocultará un componente).
 * Utilizar el ajuste horizontal a la cuadrícula (colocar componentes en la cuadrícula, cambiar su tamaño según sea necesario, definir cuándo deben contraerse o redistribuirse lateralmente o arriba/abajo).
 * Realizar el control de columnas.
-* [!NOTE]
 
->En una instalación lista para usar, se ha configurado un diseño interactivo para el sitio [de referencia](/help/sites-developing/we-retail.md)We.Retail. Aún debe [activar el componente](#enable-the-layout-container-component-for-page) Contenedor de diseño para otras páginas.
+>[!NOTE]
 >
->Configuración del emulador interactivo {#configuring-the-responsive-emulator}](/help/sites-developing/we-retail.md)[](#enable-the-layout-container-component-for-page)
+>En una instalación lista para usar, se ha configurado un diseño interactivo para el sitio [de referencia](/help/sites-developing/we-retail.md)We.Retail. Aún debe [activar el componente](#enable-the-layout-container-component-for-page) Contenedor de diseño para otras páginas.
 
-## Estas tareas le permiten ver el **emulador** interactivo en su sitio.
+## Configuración del emulador interactivo {#configuring-the-responsive-emulator}
 
-Registrar los componentes de la página para emulación {#register-your-page-components-for-emulation}**
+Estas tareas le permiten ver el **emulador** interactivo en su sitio.
 
-### Para habilitar el emulador para admitir las páginas, debe registrar los componentes de la página. Consulte [Registro de componentes de página para obtener Simulaciones](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+### Registrar los componentes de la página para emulación {#register-your-page-components-for-emulation}
 
-Especificar los grupos de dispositivos {#specify-the-device-groups}](/help/sites-developing/responsive.md#registering-page-components-for-simulation)
+Para habilitar el emulador para admitir las páginas, debe registrar los componentes de la página. Consulte [Registro de componentes de página para obtener Simulaciones](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
 
-### Para especificar los grupos de dispositivos que aparecen en la lista Dispositivos del emulador, consulte [Especificación de los grupos](/help/sites-developing/responsive.md#specifying-the-device-groups)de dispositivos.
+### Especificar los grupos de dispositivos {#specify-the-device-groups}](/help/sites-developing/responsive.md#registering-page-components-for-simulation)
 
-Vincular el sitio a los grupos de dispositivos especificados {#link-your-site-to-the-specified-device-groups}](/help/sites-developing/responsive.md#specifying-the-device-groups)
+Para especificar los grupos de dispositivos que aparecen en la lista Dispositivos del emulador, consulte [Especificación de los grupos](/help/sites-developing/responsive.md#specifying-the-device-groups)de dispositivos.
 
-### Para incluir el administrador, debe vincular el sitio a los grupos de dispositivos. Consulte [Añadir la Lista](/help/sites-developing/responsive.md#adding-the-devices-list) Dispositivos (tanto para la IU clásica como la táctil).
+### Vincular el sitio a los grupos de dispositivos especificados {#link-your-site-to-the-specified-device-groups}
+
+Para incluir el administrador, debe vincular el sitio a los grupos de dispositivos. Consulte [Añadir la Lista](/help/sites-developing/responsive.md#adding-the-devices-list) Dispositivos (tanto para la IU clásica como la táctil).
 
 Activar el modo de diseño del sitio {#activate-layout-mode-for-your-site}](/help/sites-developing/responsive.md#adding-the-devices-list)
 
