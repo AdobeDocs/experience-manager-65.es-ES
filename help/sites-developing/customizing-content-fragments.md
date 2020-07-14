@@ -112,13 +112,13 @@ Toda la información que no sea de contenido de un fragmento (como título, desc
 
 `/content/dam`
 
-Permisos de recursos {#asset-permissions}
+#### Permisos de recursos {#asset-permissions}
 
-#### Para obtener más información, consulte Fragmento [de contenido - Eliminar consideraciones](/help/assets/content-fragments/content-fragments-delete.md).
+Para obtener más información, consulte Fragmento [de contenido - Eliminar consideraciones](/help/assets/content-fragments/content-fragments-delete.md).
 
-Integración de funciones {#feature-integration}](/help/assets/content-fragments/content-fragments-delete.md)
+#### Integración de funciones {#feature-integration}
 
-#### La función Administración de fragmentos de contenido (CFM) se basa en el núcleo de recursos, pero debe ser lo más independiente posible.{#feature-integration}
+La función Administración de fragmentos de contenido (CFM) se basa en el núcleo de recursos, pero debe ser lo más independiente posible.{#feature-integration}
 
 * CFM proporciona sus propias implementaciones para los elementos de las vistas de tarjeta/columna/lista; estos complementos se conectan a las implementaciones de representación de contenido de Recursos existentes.
 * Se han ampliado varios componentes de Recursos para incluir fragmentos de contenido.
@@ -249,9 +249,7 @@ Los fragmentos de contenido están totalmente integrados con el flujo de trabajo
 
 ### **Plantilla** de fragmento ([FragmentTemplate[#$tu136])
 
-
-
-* 
+* **Fragment Template** ([FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
    un modelo de fragmento de contenido o una plantilla de fragmento de contenido desde la cual crear un fragmento de contenido,`FragmentTemplate.createFragment()`
 
@@ -274,29 +272,26 @@ Los fragmentos de contenido están totalmente integrados con el flujo de trabajo
       * Acceso a la plantilla de elementos (consulte `ElementTemplate`)
       * Acceder a plantillas para las variaciones del fragmento:
       * Plantillas de variación de Lista`ElementTemplate`
+      
    * Obtener información estructural para una variación determinada
 
       * Acceso a la plantilla de variación (consulte `VariationTemplate`)
       * Obtener contenido asociado inicial
       * Interfaces que representan información importante:`VariationTemplate`
+      
    * `ElementTemplate`
 
    Obtener datos básicos (nombre, título)
 
-   * `ElementTemplate`Obtener contenido inicial del elemento
+   * `ElementTemplate`
+   
+      * Obtener contenido inicial del elemento
 
-      * `VariationTemplate`
-      * Obtener datos básicos (nombre, título, descripción)
+   * `VariationTemplate`
+      
+       * Obtener datos básicos (nombre, título, descripción)
+      
    * **Fragmento** de contenido ([ContentFragment[#$tu159])
-
-      * 
-
-
-
-
-
-
-* 
 
    Se recomienda enfáticamente acceder a un fragmento a través de esta interfaz. Se debe evitar cambiar directamente la estructura de contenido.
 
