@@ -336,13 +336,10 @@ Si tiene varias configuraciones, AEM muestra de forma predeterminada la [configu
 >* Los recursos que se encuentran en la carpeta personalizada no aparecerán en el navegador de contenido de Scene7.
 >* Cuando [se habilita la vista previa segura](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), los recursos publicados y no publicados de Scene7 aparecen en el navegador de contenido de Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
-
-   >
-   >
-* Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes:
-   >
-   >  
-* Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
+>
+>* Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes:
+>
+>  * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
 >  * Vídeo MP4 sencillo
 >  * Vídeo F4V sencillo
 
