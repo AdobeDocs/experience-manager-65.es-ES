@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+source-git-commit: d621a612556f0bea032444c2e07be101868b1905
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Antes de profundizar en los conceptos básicos de AEM, Adobe recomienda completar el tutorial de WKND en el documento [Introducción al desarrollo de sitios](/help/sites-developing/getting-started.md) de AEM para obtener una descripción general del proceso de desarrollo de AEM e introducir los conceptos básicos.
+>Antes de profundizar en los conceptos básicos de AEM, Adobe recomienda completar el tutorial de WKND en el documento [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md) para obtener una descripción general del proceso de desarrollo de AEM e introducir los conceptos básicos.
 
 ## Requisitos previos para el desarrollo en AEM {#prerequisites-for-developing-on-aem}
 
@@ -68,11 +68,11 @@ Consulte [Discover Sling en 15 minutos](https://sling.apache.org/documentation/g
 
 En el diagrama siguiente se explica la resolución del script Sling: muestra cómo pasar de una solicitud HTTP a un nodo de contenido, de un nodo de contenido a un tipo de recurso, de un tipo de recurso a una secuencia de comandos y qué variables de secuencias de comandos están disponibles.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
+![Explicación de la resolución de secuencias de comandos de Apache Sling](assets/sling-cheatsheet-01.png)
 
 En el diagrama siguiente se explican todos los parámetros de solicitud ocultos pero potentes que puede utilizar al trabajar con SlingPostServlet, el controlador predeterminado para todas las solicitudes POST que le ofrece infinitas opciones para crear, modificar, eliminar, copiar y mover nodos en el repositorio.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![Uso de SlingPostServlet](assets/sling-cheatsheet-02.png)
 
 ### Sling se centra en el contenido {#sling-is-content-centric}
 
@@ -231,7 +231,7 @@ Supongamos que tenemos la siguiente lista de scripts en la ubicación correcta:
 
 Entonces el orden de preferencia sería (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-Además de los tipos de recursos (definidos principalmente por la `sling:resourceType` propiedad), también está el supertipo de recurso. Esto suele indicarse en la `sling:resourceSuperType` propiedad. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos donde el tipo de recurso predeterminado `sling/servlet/default` (utilizado por los servlets predeterminados) es la raíz.
+Además de los tipos de recursos (definidos principalmente por la `sling:resourceType` propiedad) también está el supertipo de recurso. Esto suele indicarse en la `sling:resourceSuperType` propiedad. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos donde el tipo de recurso predeterminado `sling/servlet/default` (utilizado por los servlets predeterminados) es la raíz.
 
 El supertipo de recurso de un recurso se puede definir de dos maneras:
 
@@ -277,7 +277,7 @@ Si llama a la representación (la secuencia de comandos) directamente, oculte el
 
 * administración automática de métodos http distintos de GET, incluidos:
 
-   * POST, PUT, ELIMINAR que se gestionan con una implementación predeterminada de sling
+   * POST, PUT, DELETE que se gestionan con una implementación predeterminada de sling
    * la `POST.jsp` secuencia de comandos de la ubicación sling:resourceType
 
 * su arquitectura de código ya no es tan limpia ni tan claramente estructurada como debería ser; de importancia primordial para el desarrollo a gran escala
@@ -315,7 +315,7 @@ Una estructura OSGi le oferta la carga/descarga dinámica, la configuración y e
 >
 >En particular, su página de Educación Básica contiene una colección de presentaciones y tutoriales.
 
-Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. Sling, y por lo tanto CQ5, utiliza la implementación [Apache Felix](https://felix.apache.org/) de OSGI (Open Services Gateway Initiative) y se basa en las especificaciones de la versión 4.2 de OSGi Service Platform. Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
+Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. Sling, y por lo tanto CQ5, utiliza la implementación [Apache Felix](https://felix.apache.org/) de OSGI (Open Services Gateway Initiative) y se basa en las especificaciones de OSGi Service Platform versión 4.2. Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
 
 Esto le permite realizar las siguientes acciones en cualquiera de los paquetes de la instalación:
 
@@ -444,9 +444,9 @@ La siguiente lista proporciona una visión general de la estructura que verá de
 
 Con AEM, un entorno de producción suele constar de dos tipos diferentes de instancias: instancias [de](/help/sites-deploying/deploy.md#author-and-publish-installs)autor y publicación.
 
-## El despachante {#the-dispatcher}
+## El Dispatcher {#the-dispatcher}
 
-Dispatcher es la herramienta de Adobe para almacenar en caché y/o equilibrar la carga. Encontrará más información en [el Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+El Dispatcher es la herramienta de Adobe para almacenar en caché y/o equilibrar la carga. Encontrará más información en [el Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault (sistema de revisión de origen) {#filevault-source-revision-system}
 
