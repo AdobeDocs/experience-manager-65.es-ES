@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
+source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Existen los siguientes casos de uso:
 
 * Obtenga objetos específicos de la implementación.
 
-   Por ejemplo, una implementación basada en JCR de la [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interfaz genérica proporciona acceso al JCR subyacente [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&quot;
+   Por ejemplo, una implementación basada en JCR de la [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interfaz genérica proporciona acceso al JCR subyacente [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Creación de accesos directos de objetos que requieren que se pasen objetos de contexto internos.
 
@@ -70,7 +70,7 @@ Sin embargo, no hay ninguna regla general: el objeto puede ser una instancia nue
 Existen varias maneras de `Adaptable.adaptTo()` implementarlas:
 
 * Por el objeto mismo; implementar el propio método y asignar a determinados objetos.
-* Por un [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)`, que puede asignar objetos arbitrarios.
+* Por un [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), que puede asignar objetos arbitrarios.
 
    Los objetos deben seguir implementando la `Adaptable` interfaz y extenderse [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (lo que pasa la `adaptTo` llamada a un administrador central de adaptadores).
 
