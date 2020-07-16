@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ## Introducción {#introduction}
 
-La función de contenido destacado proporciona un área para los visitantes del sitio con sesión iniciada (miembros de la comunidad) en el entorno de publicación para resaltar el contenido de
+La función de contenido destacado proporciona un área para los visitantes del sitio con sesión iniciada (miembros de la comunidad) en el entorno de publicación para resaltar contenido para:
 
 * [Blogs](blog-feature.md)
 * [Calendarios](calendar.md)
@@ -33,8 +36,8 @@ La capacidad de presentar contenido puede estar permitida o no permitida por com
 
 Esta sección de la documentación describe:
 
-* Añadir contenido destacado en un sitio de comunidad
-* Configuración del `Featured Content` componente
+* Añadir contenido destacado en un sitio de comunidad.
+* Configuración del `Featured Content` componente.
 
 ## Añadir contenido destacado en una página {#adding-featured-content-to-a-page}
 
@@ -54,18 +57,25 @@ Cuando se incluyen las bibliotecas [del lado del cliente](essentials-featured.md
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Featured Content` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
+
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### Ficha Configuración {#settings-tab}
 
 En la ficha **[!UICONTROL Configuración]** , identifique el contenido para la función:
 
-* **[!UICONTROL Nombre]** para mostrarTítulo para la lista del contenido destacado. For example `Featured Questions` or `Featured Ideas`. El valor predeterminado es `Featured Content` si se deja vacío.
+* **[!UICONTROL Nombre para mostrar]**
+
+   Título para la lista del contenido destacado. For example `Featured Questions` or `Featured Ideas`. El valor predeterminado es `Featured Content` si se deja vacío.
 
 * **[!UICONTROL Ubicación del contenido destacado]**
-   *(Requerido)* Vaya a la página que contenga el contenido que puede ser una característica (los componentes de esa página deben configurarse para permitir contenido destacado). Por ejemplo, `/content/sites/engage/en/forum`
 
-* **[!UICONTROL Límite]** de visualización El número máximo de contenido destacado que se va a mostrar. El valor predeterminado es 5.
+   *(Requerido)* Vaya a la página que contenga el contenido que puede ser una característica (los componentes de esa página deben configurarse para permitir contenido destacado). Por ejemplo, `/content/sites/engage/en/forum`.
+
+* **[!UICONTROL Límite de visualización]**
+
+   El número máximo de contenido destacado que se va a mostrar. El valor predeterminado es 5.
 
 ## Experiencia de Visitante del sitio {#site-visitor-experience}
 
