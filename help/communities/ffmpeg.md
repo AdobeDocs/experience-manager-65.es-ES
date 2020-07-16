@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +63,7 @@ Para modificar el flujo de trabajo de recursos [!UICONTROL de actualización de]
 
    * **[!UICONTROL Arumentos]**: Borre todas las entradas para desactivar la transcodificación Valores predeterminados: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
-![chlimage_1-372](assets/chlimage_1-372.png)
+   ![chlimage_1-372](assets/chlimage_1-372.png)
 
 * Seleccione **[!UICONTROL Aceptar]** para cerrar el `Step Properties` cuadro de diálogo.
 
