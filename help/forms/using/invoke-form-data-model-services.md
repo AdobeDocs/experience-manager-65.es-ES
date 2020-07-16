@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Información general {#overview}
 
-AEM Forms permite a los autores de formularios simplificar y mejorar la experiencia de cumplimentación de formularios invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la `guidelib.dataIntegrationUtils.executeOperation` API en el editor de código del editor [de](/help/forms/using/rule-editor.md)reglas.
+AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación de formularios invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la `guidelib.dataIntegrationUtils.executeOperation` API en el editor de código del editor [de](/help/forms/using/rule-editor.md)reglas.
 
-Este documento se centra en escribir un JavaScript con la `guidelib.dataIntegrationUtils.executeOperation` API para invocar un servicio.
+Este documento se centra en escribir un JavaScript usando la `guidelib.dataIntegrationUtils.executeOperation` API para invocar un servicio.
 
 ## Uso de la API {#using-the-api}
 
@@ -28,14 +31,6 @@ La `guidelib.dataIntegrationUtils.executeOperation` API invoca un servicio desde
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
-
-La API requiere los siguientes parámetros.
-
-| Parámetro | Descripción |
-|---|---|
-| `operationInfo` | Estructura para especificar el identificador del modelo de datos de formulario, el título de la operación y el nombre de la operación |
-| `inputs` | Estructura para especificar objetos de formulario cuyos valores se introducen en la operación de servicio |
-| `outputs` | Estructura para especificar objetos de formulario que se rellenarán con los valores devueltos por la operación de servicio |
 
 La estructura de la `guidelib.dataIntegrationUtils.executeOperation` API especifica detalles sobre la operación de servicio. La sintaxis de la estructura es la siguiente:
 
@@ -64,20 +59,32 @@ La estructura de la API especifica los siguientes detalles sobre la operación d
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>forDataModelId</code></td>
-   <td>Especifique la ruta del repositorio al modelo de datos del formulario, incluido su nombre</td>
+   <td><code>operationInfo</code></td>
+   <td>Estructura para especificar el identificador del modelo de datos de formulario, el título de la operación y el nombre de la operación</td>
+  </tr>
+  <tr>
+   <td><code>formDataModelId</code></td>
+   <td>Especifica la ruta del repositorio al modelo de datos del formulario, incluido su nombre</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
-   <td>Especifique el nombre de la operación de servicio que se va a ejecutar</td>
+   <td>Especifica el nombre de la operación de servicio que se va a ejecutar</td>
   </tr>
   <tr>
-   <td><code>input</code></td>
-   <td>Asignar uno o varios objetos de formulario a los argumentos de entrada para la operación de servicio</td>
+   <td><code>inputs</code></td>
+   <td>Asigna uno o varios objetos de formulario a los argumentos de entrada para la operación de servicio</td>
   </tr>
   <tr>
-   <td>Salida</td>
-   <td>Asigne uno o varios objetos de formulario a valores de salida de la operación de servicio para rellenar campos de formulario<br /> </td>
+   <td><code>Outputs</code></td>
+   <td>Asigna uno o varios objetos de formulario a los valores de salida de la operación de servicio para rellenar los campos de formulario<br /> </td>
+  </tr>
+  <tr>
+   <td><code>success</code></td>
+   <td>Devuelve valores basados en los argumentos de entrada para la operación de servicio. Es un parámetro opcional utilizado como función de llamada de retorno.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>failure</code></td>
+   <td>Muestra un mensaje de error si la función de llamada de retorno de éxito no muestra los valores de salida según los argumentos de entrada. Es un parámetro opcional utilizado como función de llamada de retorno.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -104,3 +111,41 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
+## Uso de la API con la función de llamada de retorno {#using-the-api-callback}
+
+También puede invocar el servicio del modelo de datos de formulario mediante la `guidelib.dataIntegrationUtils.executeOperation` API con una función de llamada de retorno. La sintaxis de la API es la siguiente:
+
+```
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
+```
+
+La función de llamada de retorno puede tener `success` y `failure` funciones de llamada de retorno.
+
+### Secuencia de comandos de muestra con funciones de llamada de retorno de éxito y error {#callback-function-success-failure}
+
+La siguiente secuencia de comandos de ejemplo utiliza la `guidelib.dataIntegrationUtils.executeOperation` API para invocar la operación de `GETOrder` servicio configurada en el modelo de datos del `employeeOrder` formulario.
+
+La `GETOrder` operación toma el valor del campo del `Order ID` formulario como entrada para el `orderId` argumento y devuelve el valor de cantidad de pedido en la función de llamada de retorno `success` .  Si la función de `success` llamada de retorno no devuelve la cantidad de pedido, la función de llamada de retorno `failure` muestra el `Error occured` mensaje.
+
+>[!NOTE]
+>
+> Si utiliza la función de `success` llamada de retorno, los valores de salida no se rellenan en los campos de formulario especificados.
+
+```
+var operationInfo = {
+    "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
+    "operationTitle": "GETOrder",
+    "operationName": "GETOrder"
+};
+var inputs = {
+    "orderId" : Order ID
+};
+var outputs = {};
+var success = function (wsdlOutput, textStatus, jqXHR) {
+order_quantity.value = JSON.parse(wsdlOutput).quantity;
+ };
+var failure = function(){
+alert('Error occured');
+};
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, success, failure);
+```
