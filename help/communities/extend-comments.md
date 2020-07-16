@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
 
-# Ampliar componente de comentarios {#extend-comments-component}
+# Ampliar componente de comentarios  {#extend-comments-component}
 
 La intención de [ampliar](client-customize.md#extensions) un componente predeterminado es alterar el aspecto o el comportamiento de un componente para usos específicos.
 
@@ -24,6 +27,7 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 >[!NOTE]
 >
 >No se admite la extensión de un componente [superpuesto](client-customize.md#overlays) .
+
 
 ## Ejemplo {#example}
 
