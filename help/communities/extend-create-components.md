@@ -10,17 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 3%
 
 ---
 
 
-# Crear los componentes {#create-the-components}
+# Crear los componentes  {#create-the-components}
 
 El ejemplo de ampliación de componentes utiliza el sistema de comentarios, que en realidad está compuesto por dos componentes
 
-* Comentarios: el sistema de comentarios que incluye el componente colocado en una página
-* Comentario: componente que captura una instancia de un comentario publicado
+* Comentarios: el sistema de comentarios que incluye el componente que se coloca en una página.
+* Comentario: componente que captura una instancia de un comentario publicado.
 
 Ambos componentes deben implementarse, especialmente si se personaliza el aspecto de un comentario publicado.
 
@@ -29,6 +32,7 @@ Ambos componentes deben implementarse, especialmente si se personaliza el aspect
 >Solo se permite un sistema de comentarios por página del sitio.
 >
 >Muchas funciones de Comunidades ya incluyen un sistema de comentarios cuyo resourceType puede modificarse para hacer referencia al sistema de comentarios ampliado.
+
 
 ## Creación del componente Comentarios {#create-the-comments-component}
 
@@ -53,8 +57,8 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
    * **[!UICONTROL Crear > Componente...]**
 
       * **Etiqueta**: *comentarios*
-      * **Título**: Comentarios *alternativos*
-      * **Descripción**: Estilo de comentarios *alternativos*
+      * **Título**: *Comentarios de Alt*
+      * **Descripción**: *Estilo de comentarios alternativos*
       * **Super Tipo**: *social/commons/components/hbs/comments*
       * **Grupo**: *Personalizado*
    * Seleccione **[!UICONTROL Siguiente]**
@@ -80,11 +84,11 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
 1. Navegar al `/apps/custom/components/comments` nodo
 1. Haga clic con el botón secundario en el nodo
 
-   * Seleccione **[!UICONTROL Crear > Componente...]**
+   * Seleccione **[!UICONTROL Crear] > **[!UICONTROL Componente...]**
 
-      * **Etiqueta**: *comentario*
-      * **Título**: Comentario *alternativo*
-      * **Descripción**: Estilo de comentario *alternativo*
+      * **Etiqueta**: *comment*
+      * **Título**: *Comentario alternativo*
+      * **Descripción**: *Estilo de comentario alternativo*
       * **Super Tipo**: *social/commons/components/hbs/comments/comment*
       * **Agrupar**: `*.hidden*`
    * Seleccione **[!UICONTROL Siguiente]**
@@ -99,7 +103,9 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
 1. Seleccionar **[!UICONTROL eliminación]**
 1. Seleccione **[!UICONTROL Guardar todo]**
 
-![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
+![chlimage_1-71](assets/chlimage_1-71.png)
+
+![chlimage_1-72](assets/chlimage_1-72.png)
 
 ### Copiar y modificar los scripts HBS predeterminados {#copy-and-modify-the-default-hbs-scripts}
 
@@ -150,8 +156,8 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * **Tipo**: `cq:ClientLibraryFolder`
    * Añadir a la ficha **[!UICONTROL Propiedades]** :
 
-      * **Nombre** `categories` Tipo **** Valor `String` **** `cq.social.author.hbs.comments``Multi`
-      * **Nombre** `dependencies` Tipo **** Valor `String` **** `cq.social.scf``Multi`
+      * **Nombre** `categories` Tipo **** de `String` **valor** `cq.social.author.hbs.comments` `Multi`
+      * **Nombre** `dependencies` Tipo **** de `String` **valor** `cq.social.scf` `Multi`
 
 * Seleccione **[!UICONTROL Guardar todo]**
 * Con `/apps/custom/components/comments/clientlib`el nodo s seleccionado, cree 3 archivos:
@@ -199,9 +205,9 @@ Una manera de hacerlo es
 
 * Desde la navegación global
 
-   * Seleccione **[!UICONTROL Herramientas > Implementación > Replicación]**
-   * Seleccione `Activate Tree`
-   * Definir `Start Path`: to `/apps/custom`
-   * Desmarcar `Only Modified`
-   * Seleccionar `Activate`botón
+   * Select **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
+   * Seleccione **[!UICONTROL Activar árbol]**
+   * Establecer `Start Path` en `/apps/custom`
+   * Desmarcar **[!UICONTROL sólo modificado]**
+   * Botón Seleccionar **[!UICONTROL activar]**
 
