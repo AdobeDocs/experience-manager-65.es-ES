@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 10%
 
 ---
 
@@ -32,7 +35,7 @@ La función de foro proporciona un área para los visitantes del sitio con sesi�
 Esta sección de la documentación describe:
 
 * Añadir la función de foro en un sitio de AEM.
-* Configuración del `Forum`componente.
+* Configuración del `Forum` componente.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
@@ -44,15 +47,17 @@ y arrástrelo a su lugar en una página donde debería aparecer el foro.
 
 Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/essentials-forum.md#essentials-for-client-side) necesarias, así es como aparecerá el `Forum`componente:
+Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/essentials-forum.md#essentials-for-client-side) necesarias, así es como aparecerá el `Forum` componente:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Configuración de un foro {#configuring-a-forum}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Forum` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
+
+![forum-config](assets/forum-config.png)
 
 #### Ficha Configuración {#settings-tab}
 
@@ -240,7 +245,9 @@ En la ficha **Ordenar configuración** , especifique cómo se ordenan los coment
 
 * **Seleccione las opciones de hora para la clasificación de Analytics**
 
-   Despliegue para seleccionar uno de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. El valor predeterminado es `All`.
+   Despliegue para seleccionar una de las siguientes opciones: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+
+   El valor predeterminado es `All`.
 
 ### Información adicional {#additional-information}
 
