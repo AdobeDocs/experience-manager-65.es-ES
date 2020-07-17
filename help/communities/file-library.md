@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '753'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +32,7 @@ Esta sección de la documentación describe:
 
 ### Añadir una biblioteca de archivos en una página {#adding-a-file-library-to-a-page}
 
-Para agregar un `File Library` componente a una página en modo de autor, ubique el componente
+Para agregar un `File Library` componente a una página en modo de autor, ubique el componente:
 
 * `Communities / File Library`
 
@@ -39,13 +42,15 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) necesarias, así es como aparecerá el `File Library` componente:
 
-![chlimage_1-145](assets/chlimage_1-145.png)
+![chlimage_1-430](assets/chlimage_1-430.png)
 
 ### Configuración de la biblioteca de archivos {#configuring-file-library}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `File Library` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-146](assets/chlimage_1-146.png) ![forum-config-1](assets/forum-config-1.png)
+![chlimage_1-431](assets/chlimage_1-431.png)
+
+![chlimage_1-432](assets/chlimage_1-432.png)
 
 #### Ficha Comentarios {#comments-tab}
 
