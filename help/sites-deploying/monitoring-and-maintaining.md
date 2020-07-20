@@ -207,13 +207,15 @@ Cada solicitud de acceso se registra aquí junto con la respuesta.
 Este registro solo se utiliza si [!DNL Dynamic Media] está habilitado. El registro de acceso s7registra cada solicitud realizada a [!DNL Dynamic Media] través `/is/image` y `/is/content`.
 
    * `stderr.log`
-Contiene mensajes de error, también de distintos niveles de gravedad, generados durante el inicio. De forma predeterminada, el nivel de registro se establece en `Warning` ( `WARN`)
+Contiene mensajes de error, también de distintos niveles de gravedad, generados durante el inicio. De forma predeterminada, el nivel de registro está establecido en 
+`Warning` ( `WARN`)
 
    * `stdout.log`
 Contiene mensajes de registro que indican eventos durante el inicio.
 
    * `upgrade.log`
-Proporciona un registro de todas las operaciones de actualización que se ejecutan desde los `com.day.compat.codeupgrade` paquetes y `com.adobe.cq.upgradesexecutor` .
+Proporciona un registro de todas las operaciones de actualización que se ejecutan desde el 
+`com.day.compat.codeupgrade` y `com.adobe.cq.upgradesexecutor` paquetes.
 
 * `<*cq-installation-dir*>/crx-quickstart/repository`
 
@@ -366,9 +368,11 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    `org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro configurando:
    * un tamaño máximo de archivo
    * una programación de fecha y hora
+
    para indicar cuándo se creará un archivo nuevo (y se cambiará el nombre del archivo existente según el patrón de nombre).
    * Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
    * Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
+
    El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
    Por ejemplo, a la medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esto sea preciso), ../logs/error.log cambiará su nombre a ../logs/error.log.2010-01-20. El registro para el 21 de enero se enviará a (nuevo y vacío) ../logs/error.log hasta que se pase a la siguiente modificación del día.
    | `'.'yyyy-MM` | Rotación al comienzo de cada mes |
@@ -381,7 +385,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    Nota: Al especificar una fecha/hora:
    1. Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
 esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
-   1. Utilice sólo caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
+   1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
 
 
 1. Lea el nuevo archivo de registro con la herramienta elegida.
@@ -449,6 +453,7 @@ Para monitorear un agente de replicación:
    * **Registro** de Vista para acceder al registro de cualquier acción realizada por el agente de replicación.
    * **Probar la conexión** a la instancia de destinatario.
    * **Forzar reintento** en cualquier elemento de la cola si es necesario.
+
    >[!CAUTION]
    No utilice el vínculo &quot;Probar conexión&quot; para la bandeja de salida de replicación inversa en una instancia de publicación.
    Si se realiza una prueba de replicación para una cola de Outbox, todos los elementos que sean más antiguos que la replicación de prueba se volverán a procesar con cada replicación inversa.
