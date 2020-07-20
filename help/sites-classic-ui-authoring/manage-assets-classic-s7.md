@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
 workflow-type: tm+mt
 source-wordcount: '3221'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -291,7 +291,7 @@ To link a field to a client context value, click **Select** to open the client-c
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-El texto refleja el nombre del usuario de la sesión actual. Puede restaurar el texto al valor original haciendo clic en **Restablecer **junto al campo.
+El texto refleja el nombre del usuario de la sesión actual. Para restablecer el texto al valor original, haga clic en **Restablecer** junto al campo.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -336,12 +336,15 @@ Si tiene varias configuraciones, AEM muestra de forma predeterminada la [configu
 >* Los recursos que se encuentran en la carpeta personalizada no aparecerán en el navegador de contenido de Scene7.
 >* Cuando [se habilita la vista previa segura](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), los recursos publicados y no publicados de Scene7 aparecen en el navegador de contenido de Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
->
->* Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes:
->
->  * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
->  * Vídeo MP4 sencillo
->  * Vídeo F4V sencillo
+
+   >
+   >
+* Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes:
+   >
+   >   
+   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
+   >   * Vídeo MP4 sencillo
+   >   * Vídeo F4V sencillo
 
 
 ### Exploración del contenido {#browsing-content-in-the-classic-ui}
