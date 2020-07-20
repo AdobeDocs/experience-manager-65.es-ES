@@ -27,7 +27,7 @@ ht-degree: 89%
 >
 >Most Foundation Components are now deprecated with AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further information.
 >
->Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) más modernos y ampliables en los proyectos de AEM. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
+>Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) más modernos y ampliables en los proyectos de AEM. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
 >Puede utilizar el [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) para redimensionar el sitio basado en componentes de base y utilizar componentes principales.
 
@@ -66,7 +66,7 @@ Los componentes generales son los básicos que se utilizan para crear contenido.
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Es posible definir un vínculo con título y descripción.
 
@@ -186,7 +186,8 @@ Están disponibles en dos fichas:
 Especificar una ruta manualmente o con el selector. Deje esta opción en blanco para utilizar la página actual como página principal.
       * **Opciones de Lista fija**
 
-         * **Páginas** Seleccione una lista de páginas. Utilice `+` para agregar más entradas y los botones de subida y bajada para ajustar el orden.
+         * **Páginas** Seleccione una lista de páginas. Usar 
+`+` para agregar más entradas y los botones de subida y bajada para ajustar el orden.
       * **Opciones de Buscar**
 
          * **Iniciar en** Indique una ruta de inicio manualmente o con el selector.
@@ -195,7 +196,8 @@ Especificar una ruta manualmente o con el selector. Deje esta opción en blanco 
       * **Opciones de Búsqueda avanzada**
 
          * **Anotación predicada Querybuilder** Es posible introducir una consulta de búsqueda utilizando una anotación predicada QueryBuilder. Por ejemplo, puede introducir &quot;fulltext=Marketing&quot; para que se muestren todas las páginas en cuyo contenido aparezca &quot;Marketing&quot; en el Carrusel. Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
-   * **Ordenar por** selección `jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` desde el menú desplegable.
+   * **Ordenar por** selección 
+`jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` en el menú desplegable.
 
    * **Límite** Máximo de elementos que se pueden utilizar en el Carrusel; es opcional.
 
@@ -211,7 +213,7 @@ Especificar una ruta manualmente o con el selector. Deje esta opción en blanco 
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente Gráfico permite añadir una barra, línea o gráfico circular. AEM crea un gráfico de los datos proporcionados. Los datos se proporcionan escribiéndolos directamente en la ficha Datos o copiando y pegando una hoja de cálculo.
 
@@ -249,7 +251,7 @@ Los [fragmentos de contenido](/help/sites-authoring/content-fragments.md) se cre
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Permite cargar un archivo comprimido manteniendo el diseño del paquete.
 
@@ -257,7 +259,7 @@ Permite cargar un archivo comprimido manteniendo el diseño del paquete.
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente Descargar crea un vínculo en la página web seleccionada para descargar un archivo específico. Puede arrastrar un recurso desde el buscador de contenido o cargar un archivo.
 
@@ -276,7 +278,7 @@ En el siguiente ejemplo se muestra el componente Descargar en Geometrixx:
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente de integración de aplicaciones externo (**Externo**) permite incrustar aplicaciones externas en su página AEM utilizando un iframe.
 
@@ -304,7 +306,7 @@ La aplicación externa se integra en el sistema de párrafos de la página AEM; 
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente Flash permite cargar una película Flash. Puede arrastrar un recurso flash desde el buscador de contenido al componente, o bien, puede utilizar el cuadro de diálogo:
 
@@ -430,7 +432,7 @@ Este componente proporciona un sistema de párrafos de cuadrícula que le permit
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
 >[!NOTE]
-Este componente se ha implementado con el [lenguaje de plantilla HTML (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html). 
+Este componente se ha implementado con el [lenguaje de plantilla HTML (HTL)](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html). 
 
 ### Lista {#list}
 
@@ -509,7 +511,7 @@ En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede
 ### Inicio de sesión {#login}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Este componente proporciona los campos Nombre de usuario y Contraseña.
 
@@ -862,7 +864,7 @@ En el siguiente ejemplo se muestra un componente **Título**; el diseño se dete
 ### Vídeo {#video}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente **Vídeo** permite colocar un elemento de vídeo predefinido, listo para utilizar en una página.
 
@@ -916,7 +918,7 @@ El componente de Control de columna permite a los usuarios seleccionar cómo qui
 ## Formulario {#form}
 
 >[!CAUTION]
-El componente de base de los componentes ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+El componente de base de los componentes ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Los componentes de formulario se usan para crear formularios para que los visitantes introduzcan información. Los formularios y los componentes de formulario pueden utilizarse para recopilar información, incluidos los comentarios de usuario (por ejemplo, un cuestionario de satisfacción de los clientes) e información sobre los usuarios (por ejemplo, registro de usuarios).
 
@@ -1041,7 +1043,7 @@ El componente Formulario define el inicio y el final de un formulario utilizando
 Entre el inicio y el fin de un formulario, puede añadir componentes que definirán los campos de entrada reales de los usuarios.
 
 >[!NOTE]
-El componente de formulario de componentes de base solo admite el uso de otros componentes de formulario de componentes de base (botón, texto, oculto, etc.). No se admite el uso de componentes de formulario de [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en un formulario de componentes de base (y viceversa).
+El componente de formulario de componentes de base solo admite el uso de otros componentes de formulario de componentes de base (botón, texto, oculto, etc.). No se admite el uso de componentes de formulario de [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en un formulario de componentes de base (y viceversa).
 
 #### Inicio de formulario {#start-of-form}
 
@@ -1278,7 +1280,7 @@ El componente está configurado para su uso inmediato, pero es posible cambiar l
 ### Captcha {#captcha}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente Captcha requiere que el usuario escriba una cadena alfanumérica tal y como se muestra en pantalla. La cadena cambia con cada actualización.
 
@@ -1304,7 +1306,7 @@ Consulte [Cargar previamente los campos del formulario con valores múltiples](/
 ### Detalles de la tarjeta de crédito {#credit-card-details}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Permite proporcionar los campos necesarios para introducir los datos de las tarjetas de crédito. Se puede configurar para especificar los tipos de tarjeta aceptadas y la información obligatoria (por ejemplo, el código de seguridad).
 
@@ -1328,7 +1330,7 @@ Consulte [Cargar previamente los campos del formulario con valores múltiples](/
 ### Carga de archivo {#file-upload}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente de carga de archivo ofrece al usuario un mecanismo para seleccionar y cargar un archivo.
 
@@ -1362,7 +1364,7 @@ Un botón de imagen permite crear un botón con su propia imagen y texto:
 ### Carga de imagen {#image-upload}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente de carga de imagen ofrece al usuario un mecanismo para seleccionar y cargar un archivo de imagen.
 
@@ -1371,7 +1373,7 @@ El componente de carga de imagen ofrece al usuario un mecanismo para seleccionar
 ### Campo de vínculo {#link-field}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El campo de vínculo permite que el usuario especifique una dirección URL:
 
@@ -1382,7 +1384,7 @@ Se suele utilizar sobre todo para el formulario de eventos del calendario, que s
 ### Campo de contraseña {#password-field}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Se utiliza para permitir al usuario introducir su contraseña:
 
@@ -1391,7 +1393,7 @@ Se utiliza para permitir al usuario introducir su contraseña:
 ### Restablecimiento de contraseña {#password-reset}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Este componente proporciona al usuario dos campos para:
 
@@ -1433,7 +1435,7 @@ O con su propio texto:
 ### Campo de etiquetas {#tags-field}
 
 >[!CAUTION]
-Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Este campo permite la selección de etiquetas:
 
@@ -1472,5 +1474,5 @@ Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [compon
 
 Permite crear un botón Enviar para utilizarlo en un flujo de trabajo.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+![chlimage_1-181](assets/chlimage_1-101.png)
 
