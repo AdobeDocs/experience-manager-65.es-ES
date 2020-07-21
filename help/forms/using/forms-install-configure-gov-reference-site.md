@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
+source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '5035'
 ht-degree: 1%
 
 ---
@@ -81,19 +81,16 @@ Los recursos incluidos en este paquete incluyen:
 
 Esta sección contiene información sobre la instalación del paquete de demostración.
 
-### Desde paquete compartido {#from-package-share}
+### De distribución de software {#from-software-distribution}
 
-1. Vaya a *https://&lt;aemserver>:&lt;port>/crx/packageshare/*
-
-   O bien, en AEM, haga clic en Implementación y vaya al icono Uso compartido de paquetes.
-
-   ![Icono de Package Share](assets/package_share_icon.jpg)
-
-1. Inicie sesión con su Adobe ID.
-1. Busque el paquete **we-gov-forms.pkg.all-&lt;version>** .
-1. Seleccione la opción &quot;Descargar&quot; y acepte los términos y condiciones.
-1. Una vez descargado, seleccione la opción &quot;Descargado&quot; para localizar el paquete en el Administrador de paquetes.
-1. Seleccione la opción &quot;Instalar&quot; para instalar el paquete.
+1. Abra Distribución [de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
+1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. En la sección **[!UICONTROL Filtros]** :
+   1. Seleccione **[!UICONTROL Formularios]** en la lista desplegable **[!UICONTROL Solución]** .
+   2. Seleccione la versión y escriba el paquete. También puede utilizar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
+1. Toque el nombre del paquete **we-gov-forms.pkg.all-&lt;version>.zip** , seleccione **[!UICONTROL Aceptar términos]** EULA y toque **[!UICONTROL Descargar]**.
+1. Abra el Administrador [de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Select the package and click **[!UICONTROL Install]**.
 
    ![paquete de formularios .gov](assets/wegov_forms_package.jpg)
 
