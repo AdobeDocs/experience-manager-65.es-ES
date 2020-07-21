@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Administre recursos en [!DNL Adobe Experience Manage
 description: Buscar, recuperar, licenciar y [!DNL Adobe Stock] administrar recursos desde dentro [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
+source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1098'
 ht-degree: 13%
 
 ---
@@ -19,7 +19,7 @@ Las organizaciones pueden integrar sus [!DNL Adobe Stock] planes empresariales c
 
 ## Requisitos previos {#prerequisites}
 
-La integración requiere un plan [Adobe Stock](https://stockenterprise.adobe.com/) empresarial y [!DNL Experience Manager] 6.5 o posterior. Para obtener más información sobre el Service Pack [!DNL Experience Manager] 6.5, consulte estas notas [de la versión](/help/release-notes/sp-release-notes.md).
+La integración requiere un plan [](https://stockenterprise.adobe.com/)empresarial de Adobe Stock.
 
 ## Integrar [!DNL Experience Manager] y [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
