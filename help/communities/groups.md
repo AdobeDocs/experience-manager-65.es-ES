@@ -12,7 +12,10 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ee0d4aa07db6f00409cace8664d02c545e7d6550
+workflow-type: tm+mt
+source-wordcount: '1678'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 La consola Grupos proporciona acceso a la creación de grupos de comunidad cuando la estructura [de](/help/communities/sites-console.md#step1) plantilla de un sitio de comunidad incluye la función [](/help/communities/functions.md#groups-function)Grupos.
 
-* Las comunidades AEM admiten la anidación de grupos dentro de otros grupos. El anidado de grupos es posible cuando la [estructura del nuevo grupo](/help/communities/tools-groups.md) contiene la función de grupos.
+* Los AEM Communities admiten la anidación de grupos dentro de otros grupos. El anidado de grupos es posible cuando la [estructura del nuevo grupo](/help/communities/tools-groups.md) contiene la función de grupos.
 * Solo para el entorno de creación, existe un asistente para la creación de grupos similar al asistente para la creación de sitios.
 * Si los miembros pueden o no crear grupos en el entorno de publicación, se puede configurar al agregar una función Grupos a una estructura de sitio de comunidad o de grupo de comunidad.
 
@@ -57,13 +60,15 @@ Para acceder a la consola Grupos:
    * La estructura del sitio de la comunidad debe incluir una función de grupos.
    * Estas capturas de pantalla proceden del tutorial Introducción después de [crear grupos al publicar](/help/communities/published-site.md).
 
+   ![create-group](assets/create-group.png)
+
 * Seleccione la carpeta **** Grupos para abrirla.
 
    Al abrirse, se muestran todos los grupos existentes, tanto si se han creado al crear como al publicar.
 
    Desde esta consola Grupos, es posible crear nuevos grupos.
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![create-new-group](assets/create-new-group.png)
 
 * Seleccione el botón **Crear grupo** .
 
@@ -106,7 +111,9 @@ La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cu
 
 ### COMMUNITY GROUP THEME {#community-group-theme}
 
-El marco utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar una de las muchas temáticas de Bootstrap precargadas para aplicar estilo a la plantilla de grupo de comunidad seleccionada o se puede cargar un tema de Bootstrap.
+![communitygrouptopic](assets/communitygrouptheme.png)
+
+La estructura utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar una de las muchas temáticas de Bootstrap precargadas para aplicar estilo a la plantilla de grupo de comunidad seleccionada o se puede cargar un tema de Bootstrap.
 
 Cuando se selecciona, el tema se superpone con una marca de verificación azul opaca.
 
@@ -116,7 +123,7 @@ Después de publicar el sitio de la comunidad, es posible [editar las propiedade
 
 ### COMMUNITY GROUP BRANDING {#community-group-branding}
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![comunidad-grupo-marca](assets/community-group-branding.png)
 
 La marca del sitio de la comunidad es una imagen que se muestra como encabezado en la parte superior de cada página. Es posible mostrar una pancarta para el grupo que difiera de otras páginas del sitio.
 
@@ -155,7 +162,7 @@ Por lo tanto, un usuario U1 puede ser administrador de un grupo G1 y un usuario 
 
 La configuración de pertenencia permite seleccionar una de las tres formas de asegurar un grupo de comunidad.
 
-![chlimage_1-202](assets/chlimage_1-202.png)
+![community-group-membership](assets/community-group-membership.png)
 
 * **Suscripción opcional**
 
@@ -171,7 +178,7 @@ La configuración de pertenencia permite seleccionar una de las tres formas de a
 
 **MINIATURA**
 
-![chlimage_1-203](assets/chlimage_1-203.png)
+![community-group-thumbnail](assets/community-group-thumbnail.png)
 
 La miniatura es una imagen que se muestra para el grupo al crear y publicar.
 
@@ -179,13 +186,13 @@ El tamaño óptimo de una imagen de grupo es de 170 x 90 píxeles en un formato 
 
 Si no se agrega ninguna imagen, se muestra una imagen predeterminada.
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![thumbnail-image](assets/thumbnail-image.png)
 
 ### Paso 4: Crear grupo {#step-create-group}
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![community-create-group](assets/community-create-group.png)
 
-Si es necesario realizar algún ajuste, utilice el botón **Atrás **para realizarlo.
+Si es necesario realizar algún ajuste, utilice el botón **Atrás** para realizarlo.
 
 Una vez seleccionada la opción **Crear** e iniciada, el proceso de creación del grupo no se puede interrumpir.
 
@@ -200,7 +207,7 @@ Cuando se completa el proceso, la tarjeta para el nuevo sitio de subcomunidad (g
 
 ## Contenido del grupo de creación {#author-group-content}
 
-![chlimage_1-205](assets/chlimage_1-206.png)
+![open-site](assets/open-site.png)
 
 El contenido de página de un grupo se puede crear con las mismas herramientas que cualquier otra página de AEM. Para abrir el grupo para la creación, seleccione el icono Abrir sitio que aparece al pasar el ratón por encima de la tarjeta del grupo.
 
@@ -208,11 +215,11 @@ El contenido de página de un grupo se puede crear con las mismas herramientas q
 
 Las propiedades de un sitio de subcomunidad existente, especificadas durante el proceso de creación de grupos de comunidad, se pueden modificar seleccionando el icono Editar sitio que aparece al pasar el ratón por encima de la tarjeta de grupo:
 
-![chlimage_1-207](assets/chlimage_1-207.png)
+![edit-site](assets/edit-site.png)
 
 Los detalles de las siguientes propiedades coinciden con las descripciones proporcionadas en la sección Creación [de](#group-creation) grupos. Se puede modificar cualquier grupo anidado, tanto si se crea en el entorno de publicación como en el entorno de autor.
 
-![chlimage_1-208](assets/chlimage_1-208.png)
+![community-group-basic](assets/community-group-basic.png)
 
 ### Modificar básico {#modify-basic}
 
@@ -235,7 +242,7 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
 * En una instancia de una función de comunidad en la estructura del sitio:
 
    * **`Gear icon`**
-Edite la configuración, incluidos el título para mostrar y el nombre de la dirección URL* y los grupos [de miembros](/help/communities/users.md#privilegedmembersgroups)privilegiados.
+Edite la configuración, incluidos el título de visualización, la dirección URL y los grupos [de miembros](/help/communities/users.md#privilegedmembersgroups)privilegiados.
 
    * **`Trashcan icon`**
 Quitar (eliminar) funciones de la estructura del sitio.
@@ -259,7 +266,7 @@ Modifique el orden de las funciones como se muestra en la barra de navegación d
 
 **Ejemplo: Añadir una función de calendario en una estructura de subcomunidad (grupo)**
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![community-group-add-calendar](assets/community-group-add-calendar.png)
 
 ### Modificar diseño {#modify-design}
 
@@ -284,13 +291,13 @@ El panel [MINIATURAS](#thumbnail) permite cargar una imagen para representar el 
 
 ## Publicar el grupo {#publish-the-group}
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![publish-site](assets/publish-site.png)
 
 Una vez creado o modificado un grupo de comunidad, es posible publicar (activar) el grupo seleccionando el icono `Publish Site` .
 
 Una vez que el grupo se haya publicado correctamente, aparecerá un mensaje:
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![grupo publicado](assets/group-published.png)
 
 >[!CAUTION]
 >
@@ -301,7 +308,7 @@ Una vez que el grupo se haya publicado correctamente, aparecerá un mensaje:
 
 ## Eliminar el grupo {#delete-the-group}
 
-![icono Eliminar]()
+![icono Eliminar](assets/deleteicon.png)
 
 Para eliminar un grupo desde la consola Grupos de la comunidad, seleccione el icono Eliminar grupo, que aparece al pasar el ratón sobre el grupo.
 
