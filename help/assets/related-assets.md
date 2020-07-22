@@ -3,9 +3,9 @@ title: Activos relacionados
 description: Aprenda a relacionar recursos digitales que comparten algunos atributos comunes. También cree relaciones derivadas de origen entre recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -37,15 +37,13 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar otro recurso con el recurso seleccionado, haga clic en **[!UICONTROL Relacionar]** en la barra de herramientas.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. Para relacionar otro recurso con el recurso seleccionado, haga clic en **[!UICONTROL Relacionar]** recursos ![](assets/do-not-localize/link-relate.png) relacionados en la barra de herramientas.
 1. Realice una de las acciones siguientes:
 
    * Para relacionar el archivo de origen del recurso, seleccione **[!UICONTROL Origen]** en la lista.
    * Para relacionar un archivo derivado, seleccione **[!UICONTROL Derivado]** de la lista.
    * Para crear una relación bidireccional entre los recursos, seleccione **[!UICONTROL Otros]** en la lista.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. En la pantalla **[!UICONTROL Seleccionar recurso]** , navegue hasta la ubicación del recurso que desee relacionar y selecciónelo.
@@ -59,7 +57,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
 1. Para desrelacionar un recurso, haga clic en **[!UICONTROL Desrelacionar]** en la barra de herramientas.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![recursos no relacionados](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Seleccione los recursos que desea desrelacionar en el cuadro de diálogo **[!UICONTROL Eliminar relaciones]** y haga clic en **[!UICONTROL Desrelacionar]**.
 
