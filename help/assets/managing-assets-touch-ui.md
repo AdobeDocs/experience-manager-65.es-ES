@@ -4,10 +4,10 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '9250'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -335,11 +335,7 @@ Para realizar la previsualización de un recurso, siga estos pasos.
 
 1. En el modo de previsualización, las opciones de zoom están disponibles para los tipos [de imagen](/help/assets/assets-formats.md#supported-raster-image-formats) admitidos (con edición interactiva).
 
-   Para acercar un recurso, haga clic en `+` (o haga clic en la lupa del recurso). Para alejar, haga clic en `-`. Al acercar, puede ver con detenimiento cualquier área de la imagen. La flecha para restablecer el zoom le lleva de nuevo a la vista original.
-
-   Haga clic en **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
-
-   ![Restablecer para que el usuario vuelva a la vista original](assets/chlimage_1-11.png)
+   Para acercar un recurso, haga clic en `+` (o haga clic en la lupa del recurso). Para alejar, haga clic en `-`. Al acercar, puede ver con detenimiento cualquier área de la imagen. La flecha para restablecer el zoom le lleva de nuevo a la vista original. Para restablecer la vista al tamaño original, haga clic en **[!UICONTROL Restablecer]** vista ![de](assets/do-not-localize/revert.png)restablecimiento.
 
 **Previsualización de recursos utilizando solo teclas de teclado**
 
@@ -428,8 +424,7 @@ Algunos atributos que son exclusivos de una copia concreta de un activo no se ar
 
 El resto de las propiedades y la información de metadatos se conservan. No se crea una copia parcial al copiar un recurso.
 
-1. En [!DNL Assets] la interfaz, seleccione uno o varios recursos y haga clic en **[!UICONTROL Copiar]** en la barra de herramientas. También puede seleccionar la acción rápida **[!UICONTROL Copiar]** en la tarjeta de recursos.
-   ![Opción Copiar en la barra de herramientas de la interfaz de Recursos](assets/copy_icon.png)
+1. En [!DNL Assets] la interfaz, seleccione uno o varios recursos y haga clic en **[!UICONTROL Copiar]** en la barra de herramientas. También puede seleccionar la opción **[!UICONTROL Copiar]** ![copia en la barra de herramientas de la interfaz](assets/do-not-localize/copy_icon.png) de recursos para realizar una acción rápida desde la tarjeta de recursos.
 
    >[!NOTE]
    >
@@ -441,10 +436,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >
    >Si copia un recurso en la misma ubicación, [!DNL Experience Manager] genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso con título `Square`, [!DNL Experience Manager] genera automáticamente el título de su copia como `Square1`.
 
-1. Haga clic en la opción **[!UICONTROL Pegar]** recurso de la barra de herramientas.
-
-   ![Opción Pegar de la barra de herramientas Recursos](assets/chlimage_1-14.png)
-   [!DNL Assets] a continuación, se copian en esta ubicación.
+1. Haga clic en la opción **[!UICONTROL Pegar]** ![pegado de recursos de la barra de herramientas](assets/do-not-localize/paste.png) Recursos, en la barra de herramientas. A continuación, los recursos se copian en esta ubicación.
 
    >[!NOTE]
    >
@@ -455,7 +447,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 1. Navegue hasta la ubicación del recurso que desee mover.
 
 1. Seleccione el recurso y haga clic en la opción **[!UICONTROL Mover]** de la barra de herramientas.
-   ![Opción Mover de la barra de herramientas Recursos](assets/move_icon.png)
+   ![Opción Mover de la barra de herramientas Recursos](assets/do-not-localize/move.png)
 
 1. En el asistente para [!UICONTROL mover recursos] , realice una de las siguientes acciones:
 
@@ -685,9 +677,9 @@ Las herramientas de edición de la [!DNL Assets] interfaz le permiten realizar p
    * Haga clic en la opción **[!UICONTROL Editar]** que se muestra en un recurso de la vista de tarjeta.
    * Haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
 
-   ![Editar, opción en la barra de herramientas](assets/edit_icon.png)
+   ![Editar, opción en la barra de herramientas](assets/do-not-localize/edit_icon.png)
 
-1. Para recortar la imagen, haga clic en **[!UICONTROL Recortar]** ![opción para recortar una imagen](assets/chlimage_1-22.png).
+1. Para recortar la imagen, haga clic en **[!UICONTROL Recortar]** ![opción para recortar una imagen](assets/do-not-localize/crop.png).
 
 1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción **Mano libre** permite recortar la imagen sin restricciones de proporción de aspecto.
 
@@ -695,19 +687,19 @@ Las herramientas de edición de la [!DNL Assets] interfaz le permiten realizar p
 
 1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
 
    ![Opciones de deshacer y rehacer](assets/chlimage_1-25.png)
 
-1. Haga clic en la opción **Rotar** correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
+1. Haga clic en la opción **[!UICONTROL Rotar]** correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
 
    ![Opciones de rotación hacia la derecha y hacia la izquierda](assets/chlimage_1-26.png)
 
-1. Haga clic en la opción **Voltear** correspondiente para voltear la imagen horizontal o verticalmente.
+1. Haga clic en la opción **[!UICONTROL Voltear]** correspondiente para voltear la imagen horizontal o verticalmente.
 
    ![opciones para voltear una imagen horizontal o verticalmente](assets/chlimage_1-27.png)
 
-1. Haga clic en **Finalizar** opción ![](assets/chlimage_1-24.png) Finalizar para completar la edición de imágenes. Al hacer clic en **Finalizar** también se inicio la regeneración de las representaciones.
+1. Para completar la edición de imágenes, haga clic en **[!UICONTROL Finalizar]** opción ![](assets/do-not-localize/check-ok-done-icon.png)Finalizar. Al hacer clic en **Finalizar** también se inicio la regeneración de las representaciones.
 
 >[!NOTE]
 >
@@ -834,7 +826,7 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Opción Imprimir de la barra de herramientas](assets/chlimage_1-40.png)
+   ![Opción Imprimir de la barra de herramientas](assets/do-not-localize/print.png)
 
 1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de anotaciones/revisión en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, utilice la configuración **Superior izquierda** . Se selecciona de forma predeterminada.
 
