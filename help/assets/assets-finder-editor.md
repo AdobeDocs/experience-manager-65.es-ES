@@ -3,10 +3,10 @@ title: Crear y configurar páginas del editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -290,7 +290,7 @@ Consulte [Personalización y ampliación de recursos](/help/assets/extending-ass
 
 A continuación se muestra un ejemplo de un formulario de metadatos con varios campos:
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![metadata](assets/chlimage_1-390.png)
 
 En la página Editor de recursos, los usuarios pueden introducir valores en los campos de metadatos (si son editables) y realizar la acción final (por ejemplo, enviando los cambios).
 
@@ -330,7 +330,7 @@ A continuación se muestra un componente Etiquetas rellenado:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura  {#thumbnail}
+#### Miniatura    {#thumbnail}
 
 El componente Miniatura es donde el recurso muestra la miniatura seleccionada (para muchos de los formatos la miniatura se extrae automáticamente). Además, el componente muestra el nombre de archivo y [las acciones que puede modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -405,6 +405,7 @@ Para editar varios recursos con la página Editor de recursos:
 
    * en Windows: `Ctrl + click` cada recurso.
    * en Mac: `Cmd + click` cada recurso.
+
    Para seleccionar un rango de recursos: haga clic en el primer recurso y, a continuación, en `Shift + click` el último.
 
 1. Haga clic en **Editar metadatos** en el campo **Acciones** (parte izquierda de la página).
@@ -419,11 +420,13 @@ Para editar varios recursos con la página Editor de recursos:
 
    * Una etiqueta que no se aplica a todos los recursos, pero solo a algunos tiene un fondo gris.
    * Una etiqueta que se aplica a todos los recursos tiene un fondo blanco.
+
    Puede hacer lo siguiente:
 
    * Haga clic en `x` para eliminar la etiqueta de todos los recursos.
    * Haga clic en `+` para agregar la etiqueta a todos los recursos.
    * Haga clic en la **flecha** y seleccione una etiqueta para agregar una nueva etiqueta a todos los recursos.
+
    Haga clic en **Aceptar** para escribir los cambios en el formulario. La casilla situada junto al campo **Etiquetas** se activa automáticamente.
 
 1. Edite el campo Descripción. Por ejemplo, establézcalo en:
