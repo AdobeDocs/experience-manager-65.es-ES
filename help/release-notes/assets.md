@@ -2,14 +2,17 @@
 title: Notas de la versión de Recursos Adobe Experience Manager
 description: Nuevas funciones y mejoras de los recursos de Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Notas de la versión de Recursos Adobe Experience Manager {#aem-assets-release-notes}
 
-Estas son las funciones clave y los aspectos destacados de la versión de Recursos de Adobe Experience Manager 6.5.
+Estas son las características y los aspectos más destacados de la versión de Adobe Experience Manager 6.5 Assets.
 
 ## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -31,13 +34,13 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock]El servicio proporciona a diseñadores y empresas acceso a millones de fotos, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, verificados y libres de derechos de autor para todos sus proyectos creativos.
 
-For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Previsualización de la imagen y la licencia de Adobe Stock desde Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
 *Figura: Previsualización[!DNL Adobe Stock]imagen y licencia desde dentro[!DNL Experience Manager Assets].*
 
-![Buscar y filtrar las imágenes de Adobe Stock con licencia en Experience Manager](assets/aem-search-filters2.jpg)
+![Busque y filtre las imágenes de Adobe Stock con licencia en Experience Manager](assets/aem-search-filters2.jpg)
 
 *Figura: Busque y filtre las[!DNL Adobe Stock]imágenes con licencia en[!DNL Experience Manager].*
 
@@ -51,11 +54,11 @@ For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](
 
 Para obtener más información, consulte [Novedades de Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html).
 
-## Recursos de red {#connectedassets}
+## Recursos conectados {#connectedassets}
 
 En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales necesarios residen en distintos silos.
 
-[!DNL Experience Manager Sites] ofrece capacidades de crear páginas web, y es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web.[!DNL Experience Manager Assets] [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración [!DNL Sites] y [!DNL Assets]. Consulte [cómo configurar y utilizar la función](/help/assets/use-assets-across-connected-assets-instances.md)Recursos conectados.
+[!DNL Experience Manager Sites] ofrece capacidades de crear páginas web y es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web.[!DNL Experience Manager Assets] [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración [!DNL Sites] y [!DNL Assets]. Consulte [cómo configurar y utilizar la función](/help/assets/use-assets-across-connected-assets-instances.md)Recursos conectados.
 
 ![Arrastre un recurso desde una [!DNL Experience Manager] implementación en una [!DNL Sites] página de una implementación diferente [!DNL Experience Manager]](assets/connected-assets-drag-and-drop-only.gif)
 
