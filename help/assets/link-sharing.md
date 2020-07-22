@@ -3,9 +3,9 @@ title: Generación de una URL para los recursos compartidos
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos Experience Manager como una dirección URL a terceros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1229'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 >Antes de compartir un vínculo con los usuarios, asegúrese de que el servicio de correo de CQ de día está configurado. Se produce un error si intenta compartir un vínculo sin [configurar primero el servicio](/help/assets/link-sharing.md#configmailservice)de correo de Day CQ.
 
 1. En la interfaz de usuario de Recursos, seleccione el recurso que desea compartir como vínculo.
-1. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]** ![assets_share](assets/assets_share.png).
+1. En la barra de herramientas, haga clic en el icono **** Compartir vínculo ![para](assets/do-not-localize/assets_share.png)compartir recursos.
 
    Se crea automáticamente un vínculo de recurso en el campo **[!UICONTROL Compartir vínculo]** . Copie este vínculo y compártalo con los usuarios. El tiempo de caducidad predeterminado para el vínculo es un día.
 
