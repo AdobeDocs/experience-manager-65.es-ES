@@ -3,10 +3,10 @@ title: Administración de derechos digitales en [!DNL Adobe Experience Manager A
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -108,10 +108,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Haga clic en **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** .
-
-   ![chlimage_1-156](assets/chlimage_1-156.png)
-
+1. Click **[!UICONTROL Publish]** from the toolbar. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **** Publicar ![](assets/do-not-localize/publish-globe.png) publicación.
 1. Elija **[!UICONTROL Publicar]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora en que se publicó el recurso.
 
@@ -138,10 +135,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Para buscar recursos según su estado, haga clic en **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
-
-   ![chlimage_1-162](assets/chlimage_1-162.png)
-
+1. Para buscar recursos en función de su estado, haga clic en **[!UICONTROL Buscar]** opción ![de](assets/do-not-localize/search_icon.png) búsqueda para mostrar la barra de Omniture.
 1. Pulse Volver y haga clic en [!DNL Experience Manager] para mostrar el panel de búsqueda.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
