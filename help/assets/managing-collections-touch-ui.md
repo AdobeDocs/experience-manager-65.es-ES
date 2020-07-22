@@ -4,10 +4,10 @@ description: Obtenga información sobre tareas para administrar colecciones de r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -124,10 +124,7 @@ Puede agregar recursos a una colección que contenga una lista de los recursos o
 
 Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la búsqueda [](#saved-searches)guardada.
 
-1. En la interfaz de usuario de Recursos, haga clic en la opción de búsqueda de la barra de herramientas.
-
-   ![chlimage_1-9](assets/chlimage_1-110.png)
-
+1. En la interfaz de usuario de Recursos, haga clic en la opción de ![búsqueda](assets/do-not-localize/search_icon.png) de la barra de herramientas.
 1. Con el cursor en el cuadro Omniture search, presione la tecla Retorno.
 1. En la interfaz de Experience Manager, abra el panel Filtros.
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, seleccione la colección inteligente que desee modificar. El panel Buscar aparecen los filtros configurados para la búsqueda guardada.
@@ -256,12 +253,9 @@ Editar búsquedas guardadas es lo mismo que editar colecciones inteligentes. Par
 
 Para eliminar las búsquedas guardadas, siga estos pasos:
 
-1. En la interfaz de usuario de Recursos, haga clic en ![chlimage_1-13](assets/chlimage_1-114.png)de búsqueda.
-
-1. Con el cursor en el campo Omniture search, presione la tecla Intro.
-
+1. En la interfaz de usuario de Recursos, haga clic en la opción ![de](assets/do-not-localize/search_icon.png)búsqueda.
+1. Con el cursor en el campo Omniture search, presione la tecla Retorno.
 1. En la interfaz de Experience Manager, abra el panel Filtros.
-
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -273,7 +267,7 @@ Para eliminar las búsquedas guardadas, siga estos pasos:
 Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la colección contiene colecciones anidadas, el flujo de trabajo también se ejecuta en los recursos de las colecciones anidadas. Sin embargo, si la colección y la colección anidada contienen recursos de duplicado, el flujo de trabajo solo se ejecuta una vez para dichos recursos.
 
 1. Abra **[!UICONTROL Recursos]** > **[!UICONTROL Colecciones]**. Para ejecutar un flujo de trabajo en una colección específica, selecciónela.
-1. Open **[!UICONTROL Timeline]** rail. Haga clic en ![chlimage_1-14](assets/chlimage_1-137.png) y en Flujo de trabajo **[!UICONTROL de Inicio]**.
+1. Open **[!UICONTROL Timeline]** rail. Haga clic en ![Chevron hacia arriba](assets/do-not-localize/chevron-up-icon.png) y haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**.
 1. En la sección **[!UICONTROL Iniciar flujo de trabajo]**, seleccione un modelo de flujo de trabajo de la lista. Por ejemplo, seleccione el modelo **[!UICONTROL Recurso de actualización DAM]**.
 1. Introduzca un título para el flujo de trabajo y haga clic en **[!UICONTROL Inicio]**.
 1. In the dialog, click **[!UICONTROL Proceed]**. El flujo de trabajo procesa todos los recursos de la colección seleccionada.
