@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
+source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
 workflow-type: tm+mt
 source-wordcount: '5035'
 ht-degree: 1%
@@ -222,7 +222,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración de Adobe
 
 ### Rellenar y firmar varios formularios {#fill-sign-multiple-forms}
 
-Este documento explica los pasos necesarios para configurar la capacidad de rellenar y firmar varios formularios. También puede probar la [misma capacidad aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Este ejemplo almacena los datos necesarios para este ejemplo en el repositorio de AME. Esto se realiza para garantizar una experiencia sin fricciones en la implementación de recursos de demostración en el servidor local. En la vida real almacenaremos la misma información en RDMS de su elección.
+Este documento explica los pasos necesarios para configurar la capacidad de rellenar y firmar varios formularios. También puede probar la [misma capacidad aquí](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Este ejemplo almacena los datos necesarios para esta muestra en el repositorio de AEM. Esto se realiza para garantizar una experiencia sin fricciones en la implementación de recursos de demostración en el servidor local. En la vida real almacenaremos la misma información en RDMS de su elección.
 
 #### Requisitos previos {#pre-requisites-fill-sign-multiple-forms}
 
