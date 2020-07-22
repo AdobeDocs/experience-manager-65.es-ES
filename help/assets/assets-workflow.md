@@ -3,9 +3,9 @@ title: Procesar recursos para llevar a cabo procesos de negocios, realizar audit
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '979'
 ht-degree: 3%
 
 ---
@@ -72,10 +72,7 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Haga clic en **[!UICONTROL Acciones]** en la parte inferior.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Haga clic en **[!UICONTROL Acciones]** , ![protector arriba](assets/do-not-localize/chevron-up-icon.png) en la parte inferior.
 1. Haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
