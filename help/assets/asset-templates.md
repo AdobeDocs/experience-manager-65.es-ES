@@ -3,9 +3,9 @@ title: Plantillas de recursos en [!DNL Adobe Experience Manager Assets].
 description: Obtenga información sobre las plantillas de recursos [!DNL Adobe Experience Manager Assets] en y cómo utilizar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1554'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. En la página Combinar  plantillas, haga clic en **[!UICONTROL Combinar]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. En la página Combinar  plantillas, haga clic en **[!UICONTROL Combinar]** ![agregar recursos](assets/do-not-localize/assets_add_icon.png).
 
 1. Vaya a la ubicación del material que desea combinar, haga clic en las miniaturas del material que desea combinar para seleccionarlo.
 
@@ -181,7 +179,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
 
-   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas basadas en el tipo de archivo o las etiquetas.
+   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas en función del tipo de archivo o las etiquetas.
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
