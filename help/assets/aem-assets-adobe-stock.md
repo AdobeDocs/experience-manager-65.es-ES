@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Stock] Administre recursos en [!DNL Adobe Experience Manage
 description: Buscar, recuperar, licenciar y [!DNL Adobe Stock] administrar recursos desde dentro [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +72,7 @@ Los [!DNL Experience Manager] usuarios pueden buscar recursos tanto en [!DNL Exp
 
 * Para buscar [!DNL Adobe Stock] recursos, haga clic en **[!UICONTROL Navegación]** > **[!UICONTROL Recursos]** > **[!UICONTROL Buscar en Adobe Stock]**.
 
-* Para buscar recursos en [!DNL Adobe Stock] y [!DNL Experience Manager Assets], haga clic en search ![search_icon](assets/search_icon.png).
+* Para buscar recursos en [!DNL Adobe Stock] y [!DNL Experience Manager Assets], haga clic en ![buscar](assets/do-not-localize/search_icon.png).
 
 Como alternativa, escriba `Location: Adobe Stock` inicio en la barra de búsqueda para seleccionar [!DNL Adobe Stock] recursos. [!DNL Experience Manager] oferta las funciones avanzadas de filtrado de los recursos buscados, lo que permite a los usuarios iniciar rápidamente la sesión en los recursos necesarios mediante filtros como, por ejemplo, tipos de recursos admitidos, orientación de imagen y estado con licencia.
 
