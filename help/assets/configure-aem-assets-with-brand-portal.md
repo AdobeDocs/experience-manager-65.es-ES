@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d7e2d33b81847b15d1e33b3aa406e5e91d44a5f8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -129,7 +129,7 @@ El certificado público le permite autenticar su perfil en Adobe Developer Conso
 
 1. Inicie sesión en la instancia de creación de AEM Assets. La dirección URL predeterminada es
    `http:// localhost:4502/aem/start.html`
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Interfaz de usuario de configuración de cuenta de Adobe IMS](assets/ims-config1.png)
 
@@ -302,7 +302,7 @@ Siga estos pasos para crear el servicio en la nube de Brand Portal:
 
 1. Inicie sesión en la instancia de creación de AEM Assets.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. En la página Configuraciones de Brand Portal, haga clic en **[!UICONTROL Crear]**.
 
@@ -322,7 +322,7 @@ Realice los siguientes pasos para validar la configuración:
 
 1. Inicie sesión en la instancia de nube de AEM Assets.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
 
    ![](assets/test-integration1.png)
 
@@ -379,7 +379,7 @@ Asegúrese de que no se esté ejecutando ningún trabajo de publicación en la i
 
 1. Inicie sesión en la instancia de creación de AEM Assets.
 
-1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a **[!UICONTROL Implementación]** > Replicación **[!UICONTROL de implementación]**.
+1. En el panel **Herramientas** ![Herramientas](assets/do-not-localize/tools.png) , vaya a **[!UICONTROL Implementación]** > Replicación **[!UICONTROL de implementación]**.
 
 1. En la página Replicación, haga clic en **[!UICONTROL Agentes en el autor]**.
 
