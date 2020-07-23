@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '2897'
 ht-degree: 2%
@@ -62,7 +62,7 @@ Un administrador asigna las insignias basadas en roles a los miembros de la comu
 
 Los distintivos asignados (y adjudicados) se almacenan en el [SRP](/help/communities/srp.md) seleccionado y no son directamente accesibles. Hasta que haya una GUI disponible, el único medio para asignar distintivos basados en roles es hacerlo con código o cURL. Para obtener instrucciones sobre cURL, consulte la sección titulada [Asignar y revocar distintivos](#assign-and-revoke-badges).
 
-En la versión se incluyen tres distintivos basados en roles:
+En la versión se incluyen tres distintivos basados en funciones:
 
 * **moderador**
 
@@ -308,7 +308,7 @@ Los cambios o adiciones realizados en las reglas de puntuación o subreglas real
 
 ## Reglas de insignia {#badging-rules}
 
-Las reglas de asignación de distintivos vinculan las reglas de puntuación a los distintivos especificando :
+Las reglas de asignación de distintivos vinculan las reglas de puntuación a los distintivos especificando:
 
 * Regla de puntuación.
 * Puntuación necesaria para que se le otorgue una insignia específica.
