@@ -10,10 +10,10 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '4361'
-ht-degree: 16%
+source-wordcount: '4360'
+ht-degree: 15%
 
 ---
 
@@ -423,7 +423,7 @@ Consulte Consideraciones [especiales para crear un ajuste preestablecido](#speci
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. En la página Ajustes preestablecidos de visor, en la barra de herramientas, toque **[!UICONTROL Crear.]**
-1. En el cuadro de diálogo **[!UICONTROL Nuevo ajuste preestablecido de visualizador**, en el campo **[!UICONTROL Nombre de ajuste preestablecido]**, introduzca el nombre del nuevo ajuste preestablecido. Elija un nombre con cuidado; no se pueden editar después de pulsar la opción **[!UICONTROL Crear.]**
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Elija un nombre con cuidado; no se pueden editar después de pulsar la opción **[!UICONTROL Crear.]**
 
    Cuando guarde el ajuste preestablecido más adelante en estos pasos, el nombre aparecerá en la página Ajustes preestablecidos de visor, en el encabezado de la columna Título de ajuste preestablecido.
 
