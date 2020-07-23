@@ -11,7 +11,10 @@ topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 611743cc4144f99968845093b3903fe7df8bf9d9
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 84%
 
 ---
 
@@ -22,15 +25,15 @@ Al crear, puede invocar flujos de trabajo para realizar acciones en las páginas
 
 A la hora de aplicar el flujo de trabajo, puede especificar la siguiente información:
 
-* El flujo de trabajo que desea aplicar.
-Puede aplicar cualquier flujo de trabajo (a los que tiene acceso, según la asignación del administrador de AEM).
+* Flujo de trabajo que se va a aplicar.
+Puede aplicar cualquier flujo de trabajo (al que tenga acceso, según lo haya asignado el administrador de AEM).
 * De forma opcional, un título que ayuda a identificar la instancia de flujo de trabajo en la bandeja de entrada de un usuario.
 * La carga útil de los flujos de trabajo; pueden ser una o varias páginas.
 
 Los flujos de trabajo se pueden iniciar desde lo siguiente:
 
-* [la consola **Sitios**](#starting-a-workflow-from-the-sites-console).
-* [al editar una página, en **Información de la página **](#starting-a-workflow-from-the-page-editor).
+* [la consola Sitios](#starting-a-workflow-from-the-sites-console).
+* [al editar una página, en  Información de la página](#starting-a-workflow-from-the-page-editor). 
 
 >[!NOTE]
 >
@@ -38,6 +41,7 @@ Los flujos de trabajo se pueden iniciar desde lo siguiente:
 >
 >* [Cómo aplicar flujos de trabajo a recursos DAM](/help/assets/assets-workflow.md).
 >* [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -50,8 +54,8 @@ Los flujos de trabajo se pueden iniciar desde lo siguiente:
 
 Puede iniciar un flujo de trabajo desde:
 
-* [la opción **Crear** de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
-* [el carril **Escala de tiempo** de la consola Sitios](#starting-a-workflow-from-the-timeline).
+* [la opción Crear de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
+* [el carril Escala de tiempo de la consola Sitios](#starting-a-workflow-from-the-timeline).
 
 En ambos casos, tendrá que realizar lo siguiente:
 
@@ -86,8 +90,8 @@ El asistente **Crear flujo de trabajo** ayuda a seleccionar el flujo de trabajo 
 
 Después de abrir el asistente **Crear flujo de trabajo** desde:
 
-* [la opción **Crear** de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
-* [el carril **Escala de tiempo** de la consola Sitios](#starting-a-workflow-from-the-timeline).
+* [la opción Crear de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
+* [el carril Escala de tiempo de la consola Sitios](#starting-a-workflow-from-the-timeline).
 
 Puede especificar los detalles:
 
@@ -97,6 +101,7 @@ Puede especificar los detalles:
    * **Título del flujo de trabajo**
 
       * Puede especificar un título para esta instancia, de modo que pueda identificarlo en una etapa posterior.
+
    Según el modelo de flujo de trabajo, también están disponibles las siguientes opciones. Estas permiten conservar el paquete creado como carga útil después de que se haya completado el flujo de trabajo.
 
    * **Conservar paquete de flujo de trabajo**
@@ -105,7 +110,7 @@ Puede especificar los detalles:
       * Puede especificar un título para el paquete para ayudar en su identificación.
    >[!NOTE]
    >
-   >La opción **Conservar paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para la [Compatibilidad con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) y se han seleccionado varios recursos.
+   >La opción **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para la compatibilidad con varios recursos y se han seleccionado varios recursos.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
 
    Cuando haya terminado, seleccione **Siguiente** para continuar.
 
@@ -113,7 +118,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Agregar contenido** para abrir el explorador [de](/help/sites-authoring/author-environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
+   * **Añadir contenido** para abrir el explorador [de](/help/sites-authoring/author-environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 
@@ -123,14 +128,16 @@ Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo 
          * Incluir solo los elementos secundarios inmediatos.
          * Incluir solo las páginas modificadas.
          * Incluir solo las páginas ya publicadas.
+
          Los elementos secundarios especificados se añaden a la lista de recursos a los que se aplicará el flujo de trabajo.
 
       * **Eliminar selección** para eliminar ese recurso del flujo de trabajo.
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
    >
-   >Si se añaden recursos adicionales, se puede utilizar la opción **Atrás** para ajustar la configuración de **Conservar paquete de flujo de trabajo** en la etapa **Propiedades**.
+   >Si agrega recursos adicionales, puede utilizar **Atrás** para ajustar la configuración **Mantener flujo de trabajo del paquete** en el paso **Propiedades**.
 
 1. Use **Create** to close the wizard and create the workflow instance. Se muestra una notificación en la consola Sitios.
 
