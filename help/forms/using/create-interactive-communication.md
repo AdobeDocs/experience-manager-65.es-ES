@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+workflow-type: tm+mt
+source-wordcount: '6107'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +44,7 @@ Los siguientes son los requisitos previos para crear una comunicación interacti
    * **[!UICONTROL Título]**: Introduzca el título de la comunicación interactiva.
    * **[!UICONTROL Nombre]**: El nombre de la comunicación interactiva se deriva del título que se introduce. Edite si es necesario.
    * **[!UICONTROL Descripción]**: Escriba una descripción de la comunicación interactiva.
-   * **[!UICONTROL Modelo]** de datos de formulario: Explore y seleccione el modelo de datos de formulario. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM.
+   * **[!UICONTROL Modelo]** de datos de formulario: Explore y seleccione el modelo de datos de formulario. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de](/help/forms/using/data-integration.md)AEM Forms.
 
    * **[!UICONTROL Servicio]** de relleno previo: Seleccione el servicio de rellenado previo para recuperar los datos y rellenar previamente la comunicación interactiva.
    * **[!UICONTROL Tipo]** de proceso posterior: Puede seleccionar el flujo de trabajo de AEM o Forms que se activará al enviar la comunicación interactiva. Seleccione el tipo de flujo de trabajo que se va a activar.
@@ -65,7 +68,8 @@ Los siguientes son los requisitos previos para crear una comunicación interacti
 Si selecciona la opción **[!UICONTROL Usar Imprimir como Canal]** principal para Web, puede seleccionar cualquiera de los siguientes modos para generar canal Web:
 
       * **[!UICONTROL Diseño]** automático: Seleccione este modo para generar automáticamente marcadores de posición, contenido y enlace de datos para canal Web desde canal de impresión.
-      * **[!UICONTROL Organiza** manualmente: Seleccione este modo para seleccionar manualmente y agregar elementos de canal de impresión al canal Web mediante el contenido principal disponible en la ficha Fuentes **[!UICONTROL de]** datos. Para obtener más información, consulte [Seleccionar elementos de canal de impresión para crear contenido](#selectprintchannelelements)de canal web.
+      * **[!UICONTROL Organizar]** manualmente: Seleccione este modo para seleccionar manualmente y agregar elementos de canal de impresión al canal Web mediante el contenido principal disponible en la ficha Fuentes **[!UICONTROL de]** datos. Para obtener más información, consulte [Seleccionar elementos de canal de impresión para crear contenido](#selectprintchannelelements)de canal web.
+
    Para obtener más información sobre el canal de impresión y el canal web, consulte [Imprimir canal y canal](/help/forms/using/web-channel-print-channel.md)web.
 
 1. Toque **[!UICONTROL Crear]**. Se crea la comunicación interactiva y aparece un cuadro de alerta. Puntee en **[!UICONTROL Editar]** para crear el contenido de la comunicación interactiva según se explica en [Añadir contenido mediante la interfaz](#step2)de usuario de creación de la comunicación interactiva. También puede tocar **[!UICONTROL Listo]** y elegir editar la comunicación interactiva más adelante.
@@ -150,6 +154,7 @@ Toque el fragmento de documento, ![configure_icon](assets/configure_icon.png) (C
    * **Objeto** del modelo de datos: Seleccione una propiedad del modelo de datos de formulario cuyo valor se rellene en el campo.
    * **Valor predeterminado:** Puede definir un valor predeterminado para la variable mediante este campo. El valor se muestra cuando se previsualización la comunicación interactiva o la interfaz de usuario del agente.
    * **Patrón de visualización:** También puede definir un formato de visualización para una variable. Seleccione cualquiera de las opciones predefinidas en la lista desplegable **Tipo** para aplicar un formato de visualización a una variable. Seleccione **Personalizado** para definir un patrón de visualización que no esté disponible en la lista. Para obtener más información, consulte Patrones [de visualización](../../forms/using/create-interactive-communication.md#datadisplaypatterns)de datos.
+
    Vaya a [Variables y Objetos](../../forms/using/create-interactive-communication.md#hiddenvariables) del modelo de datos para configurar el enlace de variables ocultas en el fragmento de documento.
 
    También puede arrastrar y soltar elementos de origen de datos o fragmentos de documento de texto para configurar el enlace de variables.  Para crear un enlace con cualquiera de los elementos de la fuente de datos, seleccione la ficha Fuentes **de** datos y arrastre y suelte el elemento en el nombre de la variable. El elemento y la variable del origen de datos deben ser del mismo tipo para configurar el enlace correctamente. Si arrastra y suelta un elemento de fuente de datos en una variable ya enlazada, el nuevo elemento reemplaza al anterior para crear un nuevo enlace con la variable. Del mismo modo, seleccione la ficha **Recursos** y arrastre y suelte el fragmento de documento de texto en el nombre de la variable para configurar el enlace entre ellos. El fragmento de documento de texto no debe contener variables.
@@ -218,7 +223,7 @@ Puede utilizar la opción **** Previsualización para evaluar el aspecto de la c
 
 Además, puede [preparar y enviar la comunicación interactiva mediante la interfaz de usuario](/help/forms/using/prepare-send-interactive-communication.md)del agente.
 
-## Configuración de propiedades en Interactive Communication {#configure-properties-in-interactive-communication}
+## Configuración de propiedades en Interactive Communication  {#configure-properties-in-interactive-communication}
 
 ### Datos adjuntos y acceso a la biblioteca {#attachmentslibrary}
 
@@ -241,6 +246,7 @@ En el canal de impresión, puede configurar los archivos adjuntos y el acceso a 
 
       * **[!UICONTROL Adjuntar Este Archivo A Documento De Forma Predeterminada]**: Puede cambiar esta opción si sólo el archivo adjunto no es obligatorio.
       * **[!UICONTROL Obligatorio:]** El agente no podrá quitar los datos adjuntos en la interfaz de usuario del agente.
+
    ![archivos adjuntos](assets/attachfiles.png)
 
 1. Puntee **[!UICONTROL Listo]**.
@@ -433,6 +439,7 @@ Para habilitar la clasificación:
 
    * se ordena en función de esa columna.
    * los valores de la columna se muestran en orden ascendente.
+
    ![Orden ascendente](assets/sorting_ascending_new-1.png)
 
    Del mismo modo, un encabezado de columna con una flecha hacia abajo representa que los valores de la columna se muestran en orden descendente.
@@ -481,6 +488,7 @@ Para agregar un botón y definir reglas en él:
    1. Especifique la URL de la comunicación interactiva, el formulario adaptable, un recurso o una página web. Por ejemplo, especifique la URL en el siguiente formato para navegar a otra comunicación interactiva: https://&lt;nombre-servidor>:&lt;puerto>/editor.html/content/forms/af/&lt;nombre de la comunicación interactiva>/canales/&lt;nombre de canal: imprimir o Web>.html
    1. Especifique la opción para abrir el recurso en la misma ficha, ficha nueva o ventana nueva.
    1. Toque **Listo** y, a continuación, **Cerrar** para guardar la regla.
+
    Del mismo modo, puede seleccionar otras opciones disponibles en la lista desplegable de tipo de acción, como Invocar servicio y Enviar formulario. Para obtener más información, consulte Editor [de reglas](../../forms/using/rule-editor.md).
 
 1. Previsualización la comunicación interactiva y toque el botón para vista de la comunicación interactiva, el formulario adaptable, un recurso o una página web especificada en el paso 4, letra b).
@@ -583,7 +591,7 @@ Toque el componente para realizar la vista de las siguientes opciones:
 
 * **Agrupar objetos en el panel:** Agrupe los componentes de un panel para poder realizar operaciones en dichos componentes simultáneamente. Para obtener más información, consulte Objetos [de grupo en Panel](#groupobjectspanel).
 
-* **Cancelar herencia:** [Cancelar la herencia](#cancelinheritance) de los componentes dentro del área de destinatario para editarlos.
+* **Cancelar herencia:** [Cancele la herencia](#cancelinheritance) de los componentes dentro del área de destinatario para editarlos.
 
 ### Group objects in Panel {#groupobjectspanel}
 
