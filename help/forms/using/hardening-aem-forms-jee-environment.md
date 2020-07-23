@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
+source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7698'
 ht-degree: 0%
 
 ---
@@ -393,7 +393,7 @@ En WebSphere, puede configurar la seguridad integrada solo cuando utiliza un con
 1. En el panel derecho, en Propiedades adicionales, haga clic en Propiedades **personalizadas** y, a continuación, haga clic en **Nuevo**.
 1. En el cuadro **Nombre** , escriba `integratedSecurity` y, en el cuadro **Valor** , escriba `true`.
 1. En el equipo en el que está instalado WebSphere, agregue el archivo sqljdbc_auth.dll a la ruta de acceso del sistema de Windows (C:\Windows). El archivo sqljdbc_auth.dll se encuentra en la misma ubicación que la instalación del controlador JDBC 1.2 de Microsoft SQL (el valor predeterminado es *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. Seleccione **Inicio** > **Panel** de control > **Servicios**, haga clic con el botón derecho en el servicio de Windows para WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) y seleccione **Propiedades**.
+1. Seleccione **Inicio** > **Panel de control de Campaign** > **Servicios**, haga clic con el botón derecho en el servicio de Windows para WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) y seleccione **Propiedades**.
 1. En el cuadro de diálogo Propiedades, haga clic en la ficha **Iniciar sesión** .
 1. Seleccione **Esta cuenta** y proporcione la información necesaria para configurar la cuenta de inicio de sesión que desee utilizar.
 1. Establezca Security en SQL Server del modo **mixto** a Autenticación **de Windows solamente**.
@@ -955,6 +955,8 @@ Para obtener información sobre los puertos WebSphere que requieren los AEM Form
 En referencia a la arquitectura física que se describe en los [AEM Forms de sección sobre la arquitectura](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)física JEE, debe configurar SSL para todas las conexiones que planea utilizar. Específicamente, todas las conexiones SOAP deben realizarse a través de SSL para evitar la exposición de las credenciales de usuario en una red.
 
 Para obtener instrucciones sobre cómo configurar SSL en JBoss, WebLogic y WebSphere, consulte &quot;Configuración de SSL&quot; en la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_64)administración.
+
+Para obtener instrucciones sobre cómo importar certificados a JVM (Máquina virtual de Java) configurada para un servidor AEM Forms, consulte la sección Autenticación mutua en la Ayuda [de Workbench de](http://www.adobe.com/go/learn_aemforms_workbench_65)AEM Forms.
 
 ### Configuración de la redirección SSL {#configuring-ssl-redirect}
 
