@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,13 +47,15 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/ideation.md#essentials-for-client-side) necesarias, así es como aparecerá el `Ideation` componente:
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![ideación](assets/ideation.png)
 
 ### Configuración de una idea {#configuring-an-ideation}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Ideation` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![ideation-settings](assets/ideation-settings.png)
+![configure-new](assets/configure-new.png)
+
+![ideation-settings](assets/ideation-settings.png)
 
 #### Ficha Configuración {#settings-tab}
 
@@ -212,23 +217,23 @@ Al igual que con todas las características de las Comunidades, si no se ha inic
 
 Una vez que haya iniciado sesión, un miembro puede crear una nueva idea.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![create-new-idea](assets/create-new-idea.png)
 
 Antes de enviar la idea, es posible que el miembro guarde un borrador.
 
 Al seleccionar el `Save as Draft` botón, se guarda un borrador.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![save-idea](assets/save-idea.png)
 
 Cuando visualice borradores guardados en la `My Drafts` ficha, seleccione `Read More` para volver a entrar en el modo de edición:
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![edit-idea](assets/edit-idea.png)
 
 #### Proporcionar comentarios {#providing-feedback}
 
 Una vez publicada la idea, otros miembros pueden iniciar sesión, abrir la idea ( `Read More`) y darle gusto, añadiendo así al recuento de votos, y hacer comentarios.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![comentarios](assets/feedback-idea.png)
 
 ### Información adicional {#additional-information}
 
