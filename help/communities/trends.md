@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ El documento describe:
 
 Los datos para el `Community Activity List` sitio solo están disponibles cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
 
-Consulte Configuración [de Analytics para funciones](/help/communities/analytics.md)de comunidades.
+Consulte las funciones de Configuración de [Analytics para comunidades](/help/communities/analytics.md).
 
 ### Añadir una Lista de Actividad de comunidad en una página {#adding-a-community-activity-list-to-a-page}
 
@@ -46,9 +49,9 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se coloca por primera vez en una página de un sitio de comunidad, así es como aparece el componente:
 
-![chlimage_1-54](assets/chlimage_1-54.png)
+![comunidad-actividad](assets/community-activity.png)
 
-### Configuración de la Lista de Actividad de la comunidad {#configuring-community-activity-list}
+### Configuración de la Lista de Actividad de la comunidad  {#configuring-community-activity-list}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Community Activity List` `Configure` icono que abre el cuadro de diálogo de edición.
 
@@ -66,6 +69,7 @@ En la ficha **Comentarios** , especifique si se mostrarán los comentarios de lo
 
    * `Members`
    * `Content`
+
    El valor predeterminado es `Members`.
 
 * **Título que se mostrará**
@@ -86,6 +90,7 @@ El valor predeterminado es 10.
    * `Posts`(creación de UGC)
    * `Follows`
    * `Likes`
+
    El valor predeterminado es Vistas.
 
 * **Período de tiempo**
@@ -98,6 +103,7 @@ El valor predeterminado es 10.
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    El valor predeterminado es `Total`.
 
 * **Ruta de contexto**
