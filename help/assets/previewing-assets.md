@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 4%
+source-wordcount: '1344'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
 
 **previsualización de recursos mediante la interfaz de software**
 
-1. Desde **[!UICONTROL Adobe Experience Manager**, en la página **[!UICONTROL Navegación**, pulse **[!UICONTROL Assets]** y, a continuación, pulse **[!UICONTROL Archivos]** para acceder a los recursos.
+1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Opcional) Utilice la columna **[!UICONTROL Tipo]** para ordenar los recursos según el tipo de previsualización.
 1. En la columna **[!UICONTROL Título]** , haga clic en el nombre del título (no en la imagen en miniatura) del recurso que desea previsualización.
