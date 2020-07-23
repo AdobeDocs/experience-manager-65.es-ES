@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
+source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ Al llegar por primera vez al sitio publicado, el visitante del sitio no suele ha
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![habilitación-inicio de sesión](assets/enablement-login.png)
 
 ## Visitante de sitio anónimo {#anonymous-site-visitor}
 
@@ -72,7 +72,7 @@ Para proteger el contenido del sitio de la comunidad del acceso de usuarios anó
 1. Vaya a la ficha **[!UICONTROL Avanzado]** .
 1. Enable **[!UICONTROL Authentication Requirement]**.
 
-   ![site-authentication-1](assets/site-authentication-1.png)
+   ![site-authentication](assets/site-authentication.png)
 
 1. Añada la ruta de la página de inicio de sesión. Por ejemplo, `/content/......./GetStarted`.
 1. Publique la página.
