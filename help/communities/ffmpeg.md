@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: 299c4cb377c65e49b94383704a906fdd0bb38d06
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Para modificar el flujo de trabajo de recursos [!UICONTROL de actualización de]
 * Haga clic con el botón Doble en el paso de transcodificación **[!UICONTROL FFmpeg]** para acceder al cuadro de diálogo Propiedades del paso.
 * En la ficha **[!UICONTROL Proceso]** :
 
-   * **[!UICONTROL Arumentos]**: Borre todas las entradas para desactivar la transcodificación Valores predeterminados: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Arumentos]**: Borre todas las entradas para desactivar la transcodificación Valores predeterminados: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
