@@ -1,10 +1,10 @@
 ---
 title: Creación y sincronización de Live Copies
-description: Learn how to create and synchronize Live Copies.
+description: Obtenga información sobre cómo crear y sincronizar Live Copies.
 translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
 workflow-type: tm+mt
-source-wordcount: '4116'
+source-wordcount: '4115'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Puede crear una Live Copy desde una página o configuración de modelo y, a continuación, administrar la herencia y la sincronización.
 
-## Managing Blueprint Configurations {#managing-blueprint-configurations}
+## Administración de configuraciones de modelo {#managing-blueprint-configurations}
 
 Una configuración de modelo identifica un sitio web existente que desea utilizar como fuente para una o varias páginas de Live Copy.
 
@@ -86,7 +86,7 @@ Puede crear una Live Copy de cualquier página o rama. Al crear la Live Copy, pu
 
 Puede crear una Live Copy de cualquier página:
 
-* Las páginas son referenciadas por una configuración [de](#creating-a-blueprint-configuration)modelo,
+* Páginas a las que hace referencia una configuración [de](#creating-a-blueprint-configuration)modelo.
 * Y páginas que no tienen conexión con una configuración.
 * AEM también admite la creación de una Live Copy dentro de las páginas de otra Live Copy.
 
@@ -233,7 +233,7 @@ Despliegue una página de modelo para insertar los cambios de contenido en copia
 
    ![Implementación de modelo](assets/rollout-blueprint.png)
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden registrar en el panel [**Estado **de trabajos](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden registrar en
 
 1. Después de confirmar estos detalles, seleccione **Despliegue** para realizar la acción.
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden registrar en el panel [**Estado **de trabajos](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ La acción [Despliegue también está disponible en Live Copy Overview](/help/si
 
    ![Implementación de modelo](assets/rollout-blueprint.png)
 
-Los despliegues se procesan como trabajos asincrónicos y se pueden registrar en el panel [**Estado **de trabajos](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
@@ -506,7 +506,7 @@ Utilice el siguiente procedimiento para cancelar la herencia del sistema de pár
 
 ### Anulación de las propiedades de una página de Live Copy {#overriding-properties-of-a-live-copy-page}
 
-De forma predeterminada, las propiedades de página de una página Live Copy se heredan (y no se pueden editar) de la página de origen.
+De forma predeterminada, las propiedades de página de una página de Live Copy se heredan (y no se pueden editar) de la página de origen.
 
 Puede cancelar la herencia de una propiedad cuando necesite cambiar el valor de la propiedad para la Live Copy. Un icono de vínculo indica que la herencia está habilitada para la propiedad.
 
