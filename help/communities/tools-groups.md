@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,9 +36,9 @@ Cuando se realiza una acción para crear un nuevo grupo de comunidad, se selecci
 
 ## Consola Plantillas de grupo {#group-templates-console}
 
-Para acceder a la consola de plantillas de grupos en AEM Author entorno:
+Para llegar a la consola de plantillas de grupos en el entorno AEM Author:
 
-* Seleccionar **herramientas| Comunidades| Plantillas de grupo,** desde la navegación global.
+* Seleccionar **herramientas | Comunidades | Plantillas de grupo,** desde la navegación global.
 
 Esta consola muestra las plantillas desde las que se puede crear un sitio [de](/help/communities/sites-console.md) comunidad y permite crear nuevas plantillas de grupo.
 
@@ -49,7 +52,7 @@ Esto mostrará el panel Editor del sitio, que contiene 3 subpaneles:
 
 ### Información básica {#basic-info}
 
-![chlimage_1-137](assets/chlimage_1-137.png)
+![site-basic-info](assets/site-basic-info.png)
 
 En el panel Información básica, se configura un nombre, una descripción y si la plantilla está habilitada o deshabilitada:
 
@@ -65,9 +68,9 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
    Un conmutador que controla si se puede hacer referencia a la plantilla.
 
-#### Miniatura  {#thumbnail}
+#### Miniatura    {#thumbnail}
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![site-thumbnail](assets/site-thumbnail.png)
 
 (Opcional) Seleccione el icono Cargar imagen para mostrar una miniatura junto con el nombre y la descripción a los creadores de los sitios de la comunidad.
 
