@@ -2,9 +2,9 @@
 title: Exportador de páginas
 description: Aprenda a utilizar AEM Page Exporter.
 translation-type: tm+mt
-source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
+source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Para crear una plantilla completamente nueva:
 
 Una vez configurada la plantilla, debe ponerla a disposición:
 
-1. En CRXDE, navegue a la página requerida en la `/content` rama.
+1. En CRXDE, navegue a la página requerida en la `/content` rama. Puede ser una página individual o la página raíz de un subárbol.
 
 1. En el `jcr:content` nodo de la página, cree la propiedad:
    * `Name`: `cq:exportTemplate`
