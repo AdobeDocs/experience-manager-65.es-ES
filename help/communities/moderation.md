@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '2110'
+ht-degree: 4%
 
 ---
 
 
 # Consola de moderación {#moderation-console}
 
-En AEM Communities, los administradores y los moderadores de la comunidad pueden [moderar de forma masiva el contenido](/help/communities/moderate-ugc.md) de la comunidad, tanto desde los entornos de creación como de publicación (miembros de la comunidad de confianza asignados como moderadores).
+En los AEM Communities, es posible [moderar de forma masiva el contenido](/help/communities/moderate-ugc.md) de la comunidad, tanto desde los entornos de creación como de publicación, por parte de los administradores y los moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores).
 
 Los administradores y los moderadores de la comunidad también pueden realizar una moderación [en contexto](/help/communities/in-context.md) en el entorno de publicación.
 
@@ -45,7 +48,7 @@ El acceso a la consola Moderación desde un sitio de comunidad publicado se real
 
 Al seleccionar el vínculo Administración, aparece la consola Moderación:
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ## Acceso a Entorno de autor {#author-environment-access}
 
@@ -245,9 +248,9 @@ Para instalar el ejemplo para el filtro Etiquetas:
 
 1. Abra el administrador de paquetes en la instancia de AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) y AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Cree el paquete `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` a partir del código de Github, e instale y habilite lo mismo.
-1. Abra la consola de paquetes en la instancia de AEM Author ( `https://[aem-author]:4502/system/console/bundles`) y en la instancia de AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Abra la consola de paquetes en la instancia de AEM Author ( `https://[aem-author]:4502/system/console/bundles`) y AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Compile el paquete ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` desde Github, e instale y active lo mismo.
-1. Vaya al nodo **/apps/social/moderation/facets** de AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) y AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
+1. Vaya al nodo **/apps/social/moderation/facets** en AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) y AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Añada **comunidades de usuarios técnicos-utilidades-reader** con `jcr:read` permisos.
 
 Para exponer los filtros personalizados en sitios de la comunidad existentes:
