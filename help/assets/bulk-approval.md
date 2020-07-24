@@ -3,9 +3,9 @@ title: Revisar recursos y colecciones de carpetas
 description: Configure flujos de trabajo de revisión para los recursos de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '794'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Configure flujos de trabajo de revisión para los recursos de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
 
-Recursos Adobe Experience Manager le permite configurar un flujo de trabajo de revisión ad-hoc para los recursos de una carpeta o colección, y compartirlo con revisores o socios creativos para obtener comentarios.
+Recursos de Adobe Experience Manager permite configurar un flujo de trabajo de revisión ad-hoc para los recursos de una carpeta o colección y compartirlo con revisores o socios creativos para obtener comentarios.
 
 Puede asociar el flujo de trabajo de revisión con un proyecto o crear una tarea de revisión independiente.
 
@@ -26,9 +26,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 ## Crear una tarea de revisión para carpetas {#creating-a-review-task-for-folders}
 
 1. En la interfaz de usuario de Recursos, seleccione la carpeta para la que desea crear una tarea de revisión.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. En la barra de herramientas, haga clic en **[!UICONTROL Crear Tarea]** de revisión ![crear tarea](assets/do-not-localize/create-review-task.png) de revisión para abrir la página **[!UICONTROL Revisar Tarea]** . If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Opcional) En la lista **[!UICONTROL Proyecto]** , seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, está seleccionada la opción **[!UICONTROL Ninguno]** . Si no desea asociar ningún proyecto con la tarea de revisión, mantenga esta selección.
 
@@ -74,9 +72,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 ## Crear una tarea de revisión para las colecciones {#creating-a-review-task-for-collections}
 
 1. En la página Colecciones, seleccione la colección para la que desea crear una tarea de revisión.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. En la barra de herramientas, haga clic en **[!UICONTROL Crear Tarea]** de revisión ![crear tarea](assets/do-not-localize/create-review-task.png) de revisión para abrir la página **[!UICONTROL Revisar Tarea]** . If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Opcional) En la lista **[!UICONTROL Proyecto]** , seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, está seleccionada la opción **[!UICONTROL Ninguno]** . Si no desea asociar ningún proyecto con la tarea de revisión, mantenga esta selección.
 
