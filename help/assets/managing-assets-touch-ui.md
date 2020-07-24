@@ -4,10 +4,10 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '9234'
+ht-degree: 4%
 
 ---
 
@@ -377,15 +377,11 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo de activación]**.
 
-   ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de activación para agregar fecha y hora a la activación de recursos](assets/schedule-activation.png)
+   ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de activación para agregar fecha y hora a la activación de recursos](assets/datepicker.png)
 
-   *Figura: Programar activación de recursos.*
+   *Figura: Utilice el selector de fechas para programar la activación de recursos.*
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo Tiempo de **[!UICONTROL desactivación]** . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz [!DNL Assets] web ni de la API HTTP.
-
-   ![Selector de fecha y hora o utilice las teclas del teclado en el campo Tiempo de inactividad para agregar fecha y hora a la activación de recursos](assets/schedule-deactivation.png)
-
-   *Figura: Programe la desactivación de recursos.*
 
 1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en [!DNL Experience Manager]. [!DNL YouTube] requiere que las etiquetas se publiquen. Consulte [Publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
 
@@ -503,15 +499,11 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    **Eliminar una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, haga clic en la opción **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
-
-   ![Opción para eliminar una representación](assets/delete_renditionicon.png)
+   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, haga clic en la **[!UICONTROL opción]** Eliminar representación ![para eliminar una representación](assets/do-not-localize/deleteoutline.png) de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
 
    **Cargar una nueva representación**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
-
-   ![Añadir representación para cargar una nueva representación](assets/chlimage_1-16.png)
+   Vaya a la página de detalles del recurso y haga clic en la opción **[!UICONTROL Añadir representación]** ![Añadir representación para cargar una nueva opción de representación](assets/do-not-localize/add.png) en la barra de herramientas para cargar una nueva representación para el recurso.
 
    >[!NOTE]
    >
@@ -541,11 +533,9 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
 1. Navegue a la ubicación de los recursos que desee eliminar.
 
-1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
+1. Seleccione el recurso y haga clic en **[!UICONTROL Eliminar]** opción ![](assets/do-not-localize/deleteoutline.png) Eliminar en la barra de herramientas.
 
-   ![Opción Eliminar](assets/delete_icon.png)
-
-1. En el cuadro de diálogo de confirmación, haga clic en:
+1. En el cuadro de diálogo de confirmación, seleccione una de las siguientes opciones:
 
    * **[!UICONTROL Cancelar]** para detener la acción
    * Seleccione **[!UICONTROL Eliminar]** para confirmar la acción:
@@ -590,9 +580,7 @@ Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-a
 
 1. Vaya a la ubicación de la carpeta de recursos o recursos que desea eliminar del entorno de publicación (cancelar la publicación).
 
-1. Seleccione el recurso o la carpeta que desea cancelar la publicación y haga clic en la opción **[!UICONTROL Administrar publicación]** de la barra de herramientas.
-
-   ![Opción Administrar publicación](assets/manage_publication.png)
+1. Seleccione el recurso o la carpeta que desea cancelar la publicación y haga clic en la opción **[!UICONTROL Administrar publicación]** ![](assets/do-not-localize/globe-publication.png) administrar publicación de la barra de herramientas.
 
 1. Seleccione la acción **[!UICONTROL Cancelar publicación]** en la lista.
 
@@ -842,9 +830,7 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 
    ![Anotación y estado de revisión en el PDF generado](assets/chlimage_1-42.png)
 
-1. Descargue o imprima el PDF con las opciones de la parte superior derecha.
-
-   ![Opciones de descarga e impresión en PDF](assets/chlimage_1-43.png)
+1. Opción de ![descarga para las opciones de](assets/do-not-localize/download.png) impresión en PDF ![o PDF](assets/do-not-localize/print.png) mediante las opciones de la parte superior derecha.
 
    >[!NOTE]
    >
