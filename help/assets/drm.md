@@ -3,10 +3,10 @@ title: Administración de derechos digitales en [!DNL Adobe Experience Manager A
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1422'
+ht-degree: 6%
 
 ---
 
@@ -65,9 +65,6 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Haga clic en [!DNL Experience Manager] logotipo para mostrar el panel de búsqueda.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -114,11 +111,9 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Para mostrar la página de detalles del recurso, en la [!DNL Assets] interfaz, seleccione un recurso y haga clic en **[!UICONTROL Propiedades]**.
+1. Para mostrar la página de detalles del recurso, en la [!DNL Assets] interfaz, seleccione un recurso y haga clic en **[!UICONTROL Propiedades]** Propiedades de la ![vista](assets/do-not-localize/info-circle-icon.png).
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. En la ficha Avanzado, establezca una fecha de caducidad para el recurso en el campo **[!UICONTROL Caduca]** .
+1. En la ficha [!UICONTROL Avanzado] , establezca una fecha de caducidad para el recurso en el campo **[!UICONTROL Caduca]** .
 
    ![establecer fecha y hora de caducidad del recurso en el campo Caduca](assets/asset-properties-advanced-tab.png)
 
