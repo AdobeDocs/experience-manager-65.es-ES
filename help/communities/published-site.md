@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 0%
 
 ---
 
@@ -89,7 +92,7 @@ Una vez que haya iniciado sesión como miembro de la comunidad registrado, obser
    1. Redacte nuevos mensajes directos para enviarlos a personas y grupos.
 
 * [La opción Notificaciones](/help/communities/notifications.md) le dirige a la sección de notificaciones, donde puede realizar la vista de sus eventos de interés y editar la configuración de las notificaciones.
-* [La administración](/help/communities/published-site.md#moderationlink) le dirige a la página de moderación de comunidades de AEM, si tiene privilegios de moderación.
+* [Administración](/help/communities/published-site.md#moderationlink) le dirige a la página Moderación de AEM Communities, si tiene privilegios de moderación.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -103,6 +106,7 @@ Observe que la página Calendario es la página de inicio porque la plantilla de
 >
 >* [Componentes](/help/communities/author-communities.md) de comunidades (para autores)
 >* [Componentes, funciones y características esenciales](/help/communities/essentials.md) (para desarrolladores)
+
 >
 
 
@@ -125,7 +129,7 @@ Este es un ejemplo en el que se crea un grupo en el entorno de publicación.
 
 Los grupos también pueden crearse en el entorno del autor y gestionarse dentro del sitio de la comunidad en el entorno del autor (consola[Grupos](/help/communities/groups.md)de la comunidad). La experiencia de [crear grupos en el autor](/help/communities/nested-groups.md) es la siguiente en este tutorial.
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![classic-ui](assets/classic-ui.png)
 
 Crear un grupo de referencia:
 
@@ -143,11 +147,11 @@ Crear un grupo de referencia:
 
 1. Seleccionar **crear grupo**
 
-![chlimage_1-37](assets/chlimage_1-37.png)
+![classic-ui-website](assets/classic-ui-website.png)
 
 Una vez creado el nuevo grupo, **seleccione el nuevo grupo** Deportes para crear dos grupos (anidados) dentro de él. Como una estructura de sitio no puede comenzar con la función de grupos, después de abrir el grupo Deportes, es necesario seleccionar el vínculo Grupos:
 
-![chlimage_1-38](assets/chlimage_1-38.png)
+![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports` grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes `Groups` .
 
@@ -175,7 +179,7 @@ Una vez creados ambos grupos, seleccione el grupo de béisbol, un grupo abierto 
 
 Los vínculos del grupo se muestran debajo de los vínculos del sitio principal y se muestran de la siguiente manera:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![classic-ui-website-page](assets/classic-ui-website-page.png)
 
 En el caso del autor: con privilegios administrativos, vaya a la consola [Grupos de](/help/communities/members.md) comunidades y agregue Weston McCall al `Community Engage Gymnastics <uid> Members` grupo.
 
@@ -190,7 +194,7 @@ Sólo el grupo de béisbol será visible.
 
 Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y navegue a la misma ubicación. Observe que Weston es capaz `Join` del grupo abierto `Baseball` y `enter or Leave` del `Gymnastics` grupo privado.
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+![classic-ui-repository-vista](assets/classic-ui-repository-view.png)
 
 ### Vínculo de página Web {#web-page-link}
 
@@ -198,7 +202,7 @@ Vista la página Web básica incluida en el sitio seleccionando el vínculo Pág
 
 Por ejemplo, vaya a la instancia de **autor** , abra la `engage` carpeta en la consola [Sitios de](/help/communities/sites-console.md)comunidades, seleccione el icono **Abrir sitio** para entrar al modo de edición de autor. A continuación, seleccione el modo de previsualización para seleccionar el `Web Page` vínculo y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-Repository-path](assets/classic-ui-repository-path.png)
 
 ### Vínculo de moderación {#moderationlink}
 
