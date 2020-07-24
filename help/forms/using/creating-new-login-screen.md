@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+source-git-commit: 81249e13db9bd173d4251683ccaacbb7f71b3209
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 4%
@@ -27,9 +27,15 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 1. Inicie sesión en `/lc/crx/de` con permisos de administrador.
 1. Realice las siguientes acciones:
 
-   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/content` en `/apps/livecycle/core/content`. Mantenga las mismas propiedades (nodo/carpeta) y el mismo control de acceso.
+   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/content` en `/apps/livecycle/core/content`.
 
-   1. Copie la carpeta de contenido: de `/libs/livecycle/core` a `/apps/livecycle/core`.
+      Mantenga las mismas propiedades (nodo/carpeta) y el mismo control de acceso.
+
+   1. Copie la carpeta de contenido:
+
+      de: `/libs/livecycle/core`
+
+      hasta: `/apps/livecycle/core`.
 
    1. Elimine el contenido de la `/apps/livecycle/core` carpeta.
 
@@ -244,6 +250,7 @@ String browserLocale = "en";
 
       * hasta `/apps/livecycle/core/components/login`
    1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar los estilos recién añadidos.
+
 
 
 Por ejemplo:
