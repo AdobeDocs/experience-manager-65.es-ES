@@ -3,9 +3,9 @@ title: Procesar recursos para llevar a cabo procesos de negocios, realizar audit
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '986'
 ht-degree: 3%
 
 ---
@@ -56,11 +56,9 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (Opcional) Especifique un título para el flujo de trabajo que pueda utilizarse para hacer referencia a la instancia del flujo de trabajo.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![seleccione el flujo de trabajo, proporcione un título y haga clic en inicio](assets/start-workflow.png)
 
 1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, en **[!UICONTROL Continuar]**. Cada paso del flujo de trabajo se muestra en la cronología como un evento.
 
@@ -75,7 +73,7 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 1. Haga clic en **[!UICONTROL Acciones]** , ![protector arriba](assets/do-not-localize/chevron-up-icon.png) en la parte inferior.
 1. Haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![Flujo de trabajo de inicio](assets/start-workflow.png)
 
 1. (Opcional) Especifique un título para el flujo de trabajo, que se puede utilizar para hacer referencia a la instancia de flujo de trabajo.
 1. Haga clic en **[!UICONTROL Iniciar]** y, a continuación, en **[!UICONTROL Confirmar]** en el cuadro de diálogo. El flujo de trabajo se ejecuta en todos los recursos seleccionados.
