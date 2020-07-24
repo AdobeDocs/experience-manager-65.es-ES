@@ -3,10 +3,10 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
    * Seleccione la ficha Propiedades **** web y, a continuación, haga clic en **[!UICONTROL Añadir propiedad]**.
 
-   * Actualice los campos según corresponda y haga clic en **[!UICONTROL Crear propiedad]**. Consulte [la documentación](https://helpx.adobe.com/experience-manager/using/dtm.html).
+   * Actualice los campos según corresponda y haga clic en **[!UICONTROL Crear propiedad]**. Consulte [la documentación](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Crear, editar propiedad web](assets/Create-edit-web-property.png)
 
