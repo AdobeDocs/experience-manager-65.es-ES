@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
 source-wordcount: '2424'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Adobe proporciona dos tipos de arquetes Maven que pueden servir de referencia pa
 * [arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype)
 * [Kit de inicio de arquetipo Maven para aplicaciones de una sola página](https://github.com/adobe/aem-spa-project-archetype)
 
-## Dependencias de la API de Experience Manager {#experience-manager-api-dependencies}
+## Dependencias de API de Experience Manager {#experience-manager-api-dependencies}
 
 ### ¿Qué es UberJar? {#what-is-the-uberjar}
 
@@ -126,7 +126,7 @@ Con UberJar, puede compilar código de proyecto que depende de las API de AEM (y
 
 ### ¿Qué no puedo hacer con UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Dado que UberJar **solo** contiene API, no es ejecutable y no se puede utilizar para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario AEM Quickstart, independiente o de archivo de Aplicación web (WAR).
+Dado que UberJar **solo** contiene API, no es ejecutable y no puede utilizarse para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario AEM Quickstart, independiente o de archivo de Aplicación web (WAR).
 
 ### Ha mencionado limitaciones en las pruebas unitarias. Por favor, explique más. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -386,10 +386,6 @@ Para agregar a las rutas, agregue más `<filter>` elementos:
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```
@@ -699,8 +695,8 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### Cómo trabajar con comunidades AEM {#how-to-work-with-aem-communities}
+### Cómo trabajar con AEM Communities {#how-to-work-with-aem-communities}
 
-Si dispone de una licencia para la función AEM Communities, se necesita un tarro de API adicional.
+Cuando dispone de una licencia para la función de AEM Communities, se necesita un tarro de API adicional.
 
 Para obtener más información, consulte [Uso de Maven para comunidades](/help/communities/maven.md)
