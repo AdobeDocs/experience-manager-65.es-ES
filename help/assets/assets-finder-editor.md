@@ -3,10 +3,10 @@ title: Crear y configurar páginas del editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2130'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ La administración de activos digitales se utiliza en cada vez más escenarios. 
 
 Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a los espectáculos comerciales o de un centro de prensa en un sitio web público. Las aplicaciones centradas en los recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
-La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo el conocimiento de los grupos de usuarios y sus necesidades, así como el conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en los recursos creadas con Recursos son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
+La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en los recursos creadas con Recursos son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
 Una aplicación centrada en recursos en Experience Manager consiste en una página del editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. La página Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
@@ -298,8 +298,6 @@ En la página Editor de recursos, los usuarios pueden introducir valores en los 
 
 El componente Recursos secundarios es el lugar en el que se pueden realizar vistas y seleccionar subrecursos. Puede determinar los nombres que aparecen bajo el recurso [](/help/assets/assets.md#what-are-digital-assets) principal y los subrecursos.
 
-![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
-
 Haga clic con el botón Doble en el componente Recursos secundarios para abrir el cuadro de diálogo Recursos secundarios, donde puede cambiar los títulos del recurso principal y de los subrecursos. Los valores predeterminados aparecen debajo del campo correspondiente.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
@@ -340,15 +338,13 @@ Haga clic con el botón Doble en el componente de miniatura para abrir el cuadro
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
-A continuación se muestra un ejemplo de un componente Miniatura rellenado:
+A continuación se muestra un ejemplo de un componente Miniatura relleno:
 
 ![screen_shot_2012-04-23at34815pm](assets/screen_shot_2012-04-23at34815pm.png)
 
 #### Título {#title}
 
 El componente Título muestra el título del recurso y una descripción.
-
-![chlimage_1-163](assets/chlimage_1-391.png)
 
 De forma predeterminada, está en modo de solo lectura, por lo que los usuarios no pueden editarlo. Para que sea editable, haga clic con el doble en el componente y desactive la casilla de verificación **Ocultar botón** de edición. Además, introduzca un título para varios recursos.
 
