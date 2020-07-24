@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 11%
 
 ---
@@ -51,6 +51,7 @@ El método para crear un fragmento de contenido es (básicamente) el mismo para 
 
       * [Modelo](/help/assets/content-fragments/content-fragments-models.md) : se utiliza para crear un fragmento que requiere contenido estructurado; por ejemplo, el modelo **Airport**
    * Se muestran todas las plantillas y modelos disponibles.
+
    Después de la selección, utilice **Siguiente** para continuar.
 
    ![cfm-6420-15](assets/cfm-6420-15.png)
@@ -119,7 +120,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones c
 
 >[!NOTE]
 >
->Muchas de ellas son acciones [estándar para Recursos](/help/assets/managing-assets-touch-ui.md) y/o la aplicación [de escritorio de](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)AEM.
+>Muchas de ellas son acciones [estándar para Recursos](/help/assets/managing-assets-touch-ui.md) y/o la aplicación [de escritorio de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
 
 ## Apertura del Editor de fragmentos {#opening-the-fragment-editor}
 
@@ -134,6 +135,7 @@ Para abrir el fragmento y editarlo:
 
    * Al tocar o hacer clic en el vínculo de fragmento o fragmento (esto depende de la vista de la consola).
    * Seleccione el fragmento y, a continuación, **edite** desde la barra de herramientas.
+
    Se abrirá el editor de fragmentos:
 
    ![cfm-6420-18](assets/cfm-6420-18.png)
@@ -155,6 +157,7 @@ Para abrir el fragmento y editarlo:
    * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenido asociado](#associating-content-with-your-fragment)
    * [Metadatos](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![cfm-10](assets/cfm-10.png)
 
 1. Después de realizar los cambios, utilice **Guardar** o **Cancelar** según sea necesario.
@@ -258,12 +261,14 @@ Además de las opciones estándar, la [línea de tiempo](/help/assets/managing-a
 >* Funcionalidad estándar para todos los recursos
 >* Realizado en la línea de tiempo
 >* Relacionado con el recurso de fragmento
+
 >
 >
 Las anotaciones (para fragmentos de contenido) son:
 >
 >* Introducido en el editor de fragmentos
 >* Específico para un segmento seleccionado de texto dentro del fragmento
+
 >
 
 
