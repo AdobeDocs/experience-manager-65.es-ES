@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 5%
@@ -38,13 +38,13 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
 
    Para cambiar a la IU clásica, seleccione la navegación global y coloque el puntero sobre el lado derecho del icono Proyectos. Seleccione el icono *Cambiar a la IU* clásica que aparece:
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    Un administrador debe [habilitar la capacidad de cambiar a la IU clásica](../../help/sites-administering/enable-classic-ui.md).
 
 1. En la página [de bienvenida de la IU](http://localhost:4502/welcome.html)clásica, seleccione **[!UICONTROL Sitios]** web.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    También puede acceder directamente a la IU clásica para sitios web navegando hasta [/siteadmin.](http://localhost:4502/siteadmin)
 
@@ -57,7 +57,7 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
    * Seleccionar **[!UICONTROL una plantilla de reproducción de Simulador para pruebas SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**:
 
@@ -75,11 +75,11 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
 
 1. Así es como el sitio web aparece ahora en la consola Sitios web. Observe que las páginas secundarias del elemento seleccionado en el panel del explorador se muestran en el panel derecho donde se pueden administrar.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    Esta es la vista del repositorio de lo que se creó con la herramienta Sitio web y la plantilla:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-vista](assets/classic-ui-repository-view.png)
 
 ## Añadir la ruta de diseño {#add-the-design-path}
 
@@ -100,7 +100,7 @@ Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 
 El texto del repositor será el siguiente:
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-Repository-path](assets/classic-ui-repository-path.png)
 
 * Haga clic en **[!UICONTROL Guardar todo]**
 
