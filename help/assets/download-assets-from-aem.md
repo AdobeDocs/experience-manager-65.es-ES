@@ -3,9 +3,9 @@ title: Descargue recursos digitales desde [!DNL Adobe Experience Manager].
 description: Obtenga información sobre cómo descargar recursos [!DNL Adobe Experience Manager] desde y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3602a39e03536696911b39cceb20f10dfd3a9347
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '852'
 ht-degree: 3%
 
 ---
@@ -74,6 +74,6 @@ El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experie
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos](drm.md)protegidos con DRM.
->* [Descargue recursos mediante la aplicación de escritorio Experience Manager en el escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)de Windows o Mac.
+>* [Descargue recursos mediante la aplicación de escritorio Experience Manager en el escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)de Windows o Mac.
 >* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)compatibles de Adobe Creative Cloud.
 
