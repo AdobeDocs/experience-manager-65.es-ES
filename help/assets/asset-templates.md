@@ -3,9 +3,9 @@ title: Plantillas de recursos en [!DNL Adobe Experience Manager Assets].
 description: Obtenga información sobre las plantillas de recursos [!DNL Adobe Experience Manager Assets] en y cómo utilizar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. Haga clic en **[!UICONTROL Previsualización]** para previsualización de los cambios de texto.
 
-   ![chlimage_1-112](assets/chlimage_1-317.png)
+   ![Cambios en la vista](assets/view-changes.png)
 
 1. Para intercambiar una imagen, haga clic en el **[!UICONTROL Buscador]** de recursos.
 
@@ -122,11 +122,11 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. Haga clic en **[!UICONTROL Previsualización]** para previsualización de la imagen.
 
-   ![chlimage_1-116](assets/chlimage_1-321.png)
+   ![Cambios en la vista](assets/view-changes.png)
 
 1. Para editar una página específica en una página secundaria de varias páginas, utilice el navegador de páginas en la parte inferior.
 
-   ![chlimage_1-117](assets/chlimage_1-322.png)
+   ![navegador de página](assets/page-navigator.png)
 
 1. Haga clic en **[!UICONTROL Previsualización]** en la barra de herramientas para previsualización de todos los cambios. Haga clic en **[!UICONTROL Listo]** para guardar los cambios de edición en el colateral.
 
@@ -173,8 +173,6 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    También puede buscar plantillas desde el cuadro Omniture.
 
-   ![chlimage_1-123](assets/chlimage_1-328.png)
-
    Puede navegar por el repositorio o las [!DNL Experience Manager Assets] colecciones, navegar hasta la ubicación de las plantillas que desee y seleccionarlas para combinarlas.
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
@@ -190,7 +188,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. En la pantalla [!UICONTROL Configurar plantilla] , especifique un nombre para el colateral. De forma opcional, especifique las etiquetas que considere adecuadas. Si desea exportar la salida en formato PDF, seleccione **[!UICONTROL Acrobat (.PDF)]**. De forma predeterminada, la garantía se exporta en formato JPG y [!DNL InDesign] . Para cambiar la miniatura de visualización del material publicitario de varias páginas, haga clic en **[!UICONTROL Cambiar miniatura]**.
 
-   ![chlimage_1-127](assets/chlimage_1-332.png)
+   ![chlimage_1-129](assets/chlimage_1-332.png)
 
 1. Haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo para cerrar el cuadro de diálogo. El colateral de varias páginas se crea en la carpeta en la que se inició.
 
