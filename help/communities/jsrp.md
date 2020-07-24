@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ## Acerca de JSRP {#about-jsrp}
 
-Cuando AEM Communities utiliza JSRP como opción de almacenamiento (opción predeterminada), el contenido de la comunidad se almacena en JCR y el contenido generado por el usuario (UGC) solo se puede acceder desde la instancia de creación o publicación en la que se publicó.
+Cuando los AEM Communities utilizan JSRP como opción de almacenamiento (opción predeterminada), el contenido de la comunidad se almacena en JCR y el contenido generado por el usuario (UGC) solo se puede acceder desde la instancia de creación o publicación en la que se publicó.
 
 Debido a la simplicidad de la implementación, el JSRP suele ser el más adecuado para entornos de demostración o desarrollo de una instancia de publicación y una instancia de autor.
 
@@ -37,10 +40,11 @@ En el entorno de creación, para llegar a la consola de Configuración de Almace
 
 * Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > Configuración de **[!UICONTROL Almacenamiento]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
-
 * Select **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+
 * Seleccione **[!UICONTROL Enviar]**
+
+![chlimage_1-234](assets/chlimage_1-234.png)
 
 ### Publicación de la configuración {#publishing-the-configuration}
 
