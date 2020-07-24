@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '11828'
+source-wordcount: '11830'
 ht-degree: 8%
 
 ---
@@ -89,7 +89,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Anotación de vídeos](managing-video-assets.md#annotate-video-assets) o [anotaciones en recursos](managing-assets-touch-ui.md#annotating)
 
       * [Creación de una versión](managing-assets-touch-ui.md#asset-versioning)
-      * [Aplicación de flujos de trabajo a los recursos](assets-workflow.md) o [inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Aplicación de flujos de trabajo a recursos](assets-workflow.md) o ver [Inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
 
       * [Revisar recursos de carpetas](bulk-approval.md)
       * [Proyectos](../sites-authoring/projects.md)
@@ -773,7 +773,7 @@ Para publicar vídeos en su canal de YouTube:
 1. En la esquina superior derecha de la página de propiedades del vídeo, haga clic en **[!UICONTROL Guardar y cerrar.]**
 1. En la barra de herramientas, haga clic en Publicación **[!UICONTROL rápida.]**
 
-   Consulte también [Uso de la administración de publicaciones con AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Consulte también [Uso de la administración de publicaciones con AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Opcionalmente, puede comprobar el vídeo publicado en su canal de YouTube.
 
