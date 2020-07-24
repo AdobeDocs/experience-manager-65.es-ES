@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 78%
+source-wordcount: '2673'
+ht-degree: 77%
 
 ---
 
@@ -188,7 +188,7 @@ En la siguiente tabla se enumeran las acciones de sincronización que se instala
   </tr>
   <tr>
    <td>flujo de trabajo</td>
-   <td><p>Inicia el flujo de trabajo que define la propiedad de destino (solo para páginas) y toma la Live Copy como carga útil.</p> <p>La ruta de acceso de destino es la ruta del nodo del modelo, por ejemplo: /etc/workflow/models/request_for_activation/jcr:content/model</p> </td>
+   <td><p>Inicia el flujo de trabajo que define la propiedad de destino (solo para páginas) y toma la Live Copy como carga útil.</p> <p>La ruta de destinatario es la ruta del nodo del modelo.</p> </td>
    <td>destino: (cadena) La ruta de acceso del modelo de flujo de trabajo.<br /> </td>
   </tr>
   <tr>
@@ -416,4 +416,4 @@ Configure the service using either the [Web Console](/help/sites-deploying/confi
 * En la consola web, el nombre de la propiedad que se va a configurar es la configuración de lanzamiento predeterminada.
 * Mediante un nodo del repositorio, el nombre de la propiedad que se va a configurar es `liverelationshipmgr.relationsconfig.default`.
 
-Establezca este valor de la propiedad en la ruta de la configuración de lanzamiento que se utilizará como valor predeterminado del sistema. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Establezca este valor de la propiedad en la ruta de la configuración de lanzamiento que se utilizará como valor predeterminado del sistema. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
