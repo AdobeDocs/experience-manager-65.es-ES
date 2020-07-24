@@ -3,9 +3,9 @@ title: Adobe Experience Manager a las prácticas recomendadas de uso compartido 
 description: Configure Adobe Experience Manager para permitir que los usuarios de Recursos Experience Manager intercambien carpetas con usuarios de Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La función de Experience Manager de uso compartido de carpetas de Creative Cloud está en desuso. Adobe recomienda encarecidamente el uso de las nuevas funciones, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Obtenga más información sobre las prácticas recomendadas [de integración de](/help/assets/aem-cc-integration-best-practices.md)Experience Manager y Creative Cloud.
+>La función de Experience Manager de uso compartido de carpetas de Creative Cloud está en desuso. Adobe recomienda encarecidamente el uso de las nuevas funciones, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager. Obtenga más información sobre las prácticas recomendadas [de integración de](/help/assets/aem-cc-integration-best-practices.md)Experience Manager y Creative Cloud.
 
 Adobe Experience Manager se puede configurar para permitir que los usuarios de Recursos compartan carpetas con los usuarios de las aplicaciones de Adobe Creative Cloud, de modo que estén disponibles como carpetas compartidas en el servicio Adobe Creative Cloud Assets. La función se puede utilizar para intercambiar archivos entre equipos creativos y usuarios de Recursos, especialmente cuando los usuarios creativos no tienen acceso a la implementación de Recursos (no están en la red empresarial).
 
