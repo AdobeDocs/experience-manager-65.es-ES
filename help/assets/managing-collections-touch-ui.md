@@ -4,10 +4,10 @@ description: Obtenga información sobre tareas para administrar colecciones de r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2203'
+ht-degree: 12%
 
 ---
 
@@ -102,19 +102,14 @@ Para crear una colección inteligente, siga los pasos:
 
    ![collection_lists](assets/collection_listing.png)
 
-   La etiqueta del botón **[!UICONTROL Crear selección inteligente]** cambia a **[!UICONTROL Editar selección inteligente]**. Para editar la configuración de la colección inteligente, seleccione **[!UICONTROL Archivos]** en la lista **[!UICONTROL Archivos y carpetas]**. Then, Click the **[!UICONTROL Edit Smart Selection]** button.
-
-   ![climage_1-7](assets/chlimage_1-112.png)
+   The label of the **[!UICONTROL Create Smart Selection]** option changes to **[!UICONTROL Edit Smart Selection]**. Para editar la configuración de la colección inteligente, seleccione **[!UICONTROL Archivos]** en la lista **[!UICONTROL Archivos y carpetas]**. Haga clic en la opción **[!UICONTROL Editar selección]** inteligente para ![editar la colección](assets/do-not-localize/edit-smart-collection.png) inteligente.
 
 ## Añadir recursos en una colección {#adding-assets-to-a-collection}
 
 Puede agregar recursos a una colección que contenga una lista de los recursos o carpetas a los que se hace referencia. Las colecciones inteligentes utilizan una consulta de búsqueda para rellenar los recursos. Por lo tanto, las referencias estáticas a recursos y carpetas no son aplicables a ellos.
 
-1. En la interfaz de usuario de Recursos, seleccione el recurso y haga clic en **[!UICONTROL A colección]** en la barra de herramientas.
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
-   También puede arrastrar el recurso al área **[!UICONTROL Colocar en colección]** de la interfaz. Añada los recursos cuando la etiqueta de la región cambie a **[!UICONTROL Colocar para Añadir]**.
+1. En la interfaz de usuario de Recursos, seleccione el recurso y haga clic en **[!UICONTROL To Collection]** ![add to collection](assets/do-not-localize/add-to-collection.png) (Añadir a la colección) en la barra de herramientas.
+También puede arrastrar el recurso al área **[!UICONTROL Colocar en colección]** de la interfaz. Añada los recursos cuando la etiqueta de la región cambie a **[!UICONTROL Colocar para Añadir]**.
 
 1. En la página **[!UICONTROL Añadir a colección]** , seleccione la colección a la que desea agregar el recurso.
 
