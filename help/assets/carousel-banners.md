@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '4811'
+source-wordcount: '4814'
 ht-degree: 5%
 
 ---
@@ -94,7 +94,7 @@ Para ayudarle a ponerse en marcha rápidamente:
       ](/help/assets/adding-dynamic-media-assets-to-pages.md)Si es cliente de AEM Sites, puede añadir el conjunto de carrusel directamente a la página en AEM mediante el componente Medios interactivos.
 
 
-Si necesita editar conjuntos de carrusel, consulte [Edición de conjuntos de carrusel.](#editing-carousel-sets) Además, puede realizar vistas y editar las propiedades [del conjunto de](https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.md#editingproperties)carrusel.
+Si necesita editar conjuntos de carrusel, consulte [Edición de conjuntos de carrusel.](#editing-carousel-sets) Además, puede realizar vistas y editar las propiedades [del conjunto de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)carrusel.
 
 ## Identificación de variables de puntos interactivos y mapas de imagen {#identifying-hotspot-and-image-map-variables}
 
@@ -200,6 +200,7 @@ Para cargar letreros de imagen, consulte [Carga de recursos](/help/assets/managi
    * Cerca de la esquina superior izquierda de la página, toque el icono **[!UICONTROL Añadir diapositiva]** .
 
    * Cerca del centro de la página, toque **[!UICONTROL Tocar para abrir el Selector de recursos.]**
+
    Pulse para seleccionar los recursos que desea incluir en el conjunto de carrusel. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, pulse **[!UICONTROL Seleccionar]** cuando esté cerca de la esquina superior derecha de la página.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando o haciendo clic en **[!UICONTROL Retorno.]** También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista.]**
@@ -226,6 +227,7 @@ Para cargar letreros de imagen, consulte [Carga de recursos](/help/assets/managi
    >    * Estilo de los botones. Los usuarios pueden rotar los letreros tocando cada punto o número. Puede cambiar dónde aparecen los botones del indicador de conjunto (y si son numéricos o de un estilo de puntos) y su tamaño.
    >    * Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
    >    * Antes de editar un ajuste preestablecido de visor, elija el estilo en el que desea basar el ajuste preestablecido. Si no lo hace, cuando inicio editar el ajuste preestablecido de visor, perderá todos los cambios si decide cambiar a otro ajuste preestablecido
+
    >
    >
    >Consulte Consideraciones [especiales para letreros](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) de carrusel para obtener instrucciones detalladas y más información sobre el editor del visor.
@@ -274,6 +276,7 @@ Consulte también [Adición de mapas de imagen](/help/assets/image-maps.md).
 
    * Para zonas interactivas: En la imagen, toque una ubicación en la que desee que aparezca el punto interactivo.
    * Para mapas de imagen: En la imagen, haga clic en y arrastre desde la parte superior izquierda a la parte inferior derecha para crear el área del mapa de imagen. Puede ajustar el tamaño del mapa de imagen arrastrando las esquinas.
+
    Si es necesario, arrastre el punto interactivo o el mapa de imagen a una nueva ubicación. Añada zonas interactivas o mapas de imagen adicionales según sea necesario.
 
    Para eliminar una zona interactiva o un mapa de imagen, pulse la pestaña **[!UICONTROL Acciones]**. En el encabezado **[!UICONTROL Mapas y zonas interactivas]**, del menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione el nombre del punto interactivo o del mapa de imagen que desea eliminar. Pulse el icono **[!UICONTROL Papelera]** situado junto al menú y, a continuación, pulse **[!UICONTROL Eliminar.]**
@@ -298,6 +301,7 @@ Consulte también [Adición de mapas de imagen](/help/assets/image-maps.md).
          El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 
       * Si es un cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
+
    Asegúrese de especificar si desea abrir el vínculo en una nueva ficha del explorador (opción predeterminada recomendada) o en la misma ficha.
 
    Consulte [Uso de selectores](/help/assets/working-with-selectors.md) para obtener más información.
@@ -356,6 +360,7 @@ Puede realizar varias tareas de edición en conjuntos de carrusel, como las sigu
    * Para eliminar una diapositiva, selecciónela y, a continuación, toque **[!UICONTROL Eliminar diapositiva]** en la barra de herramientas.
    * To apply a preset, near the upper-right corner of the page, tap the **[!UICONTROL Preset]** drop-down list, then select a viewer preset.
    * Para eliminar un conjunto de carrusel completo, vaya al conjunto de carrusel, selecciónelo y, a continuación, toque **[!UICONTROL Eliminar.]**
+
    >[!NOTE]
    Si está editando imágenes interactivas con zonas interactivas y recortando la imagen, las zonas interactivas se eliminan.
 
