@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 2%
 
 ---
 
@@ -40,13 +43,14 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
    * Descripción: `An SCF Sandbox template for play pages`
    * Tipo de medio: `an-scf-sandbox/components/playpage`
    * Clasificación: &lt;dejar como predeterminado>
+
    La etiqueta se utiliza para el nombre del nodo.
 
    El tipo de recurso aparece en el nodo jcr:content `playpage`de la propiedad `sling:resourceType`. Identifica el componente (recurso) que procesa el contenido cuando lo solicita un explorador.
 
    En este caso, el componente procesa todas las páginas creadas con la `playpage` plantilla `an-scf-sandbox/components/playpage` . Por convención, la ruta del componente es relativa, lo que permite a Sling buscar el recurso primero en la `/apps` carpeta y, si no se encuentra, en la `/libs` carpeta.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
+   ![create-content-template](assets/create-content-template-1.png)
 
 1. Si utiliza copiar/pegar, asegúrese de que el valor Tipo de recurso no tenga espacios al inicio o al final.
 
@@ -56,7 +60,7 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
    Para agregar una ruta, haga clic en el botón más `+` y escriba `/content(/.&ast;)?` en el cuadro de texto que aparece. Si utiliza copiar/pegar, asegúrese de que no hay espacios al inicio o al final.
 
-   Nota: El valor de la propiedad path permitida es una expresión *normal.* Las páginas de contenido que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión normal coincide con la ruta de la carpeta **/content** y todas sus subpáginas.
+   Nota: El valor de la propiedad path permitida es una expresión ** normal. Las páginas de contenido que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión normal coincide con la ruta de la carpeta **/content** y todas sus subpáginas.
 
    Cuando un autor crea una página a continuación `/content`, la `playpage` plantilla titulada &quot;Plantilla de página de Simulador para pruebas SCF&quot; aparece en una lista de las plantillas disponibles para usar.
 
@@ -64,7 +68,7 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![configure-template-path](assets/configure-template-path.png)
 
 1. Haga clic en **[!UICONTROL Siguiente]**. 
 
@@ -78,7 +82,7 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
    Haga clic en **[!UICONTROL Guardar todo]** para guardar la nueva plantilla en el repositorio.
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+   ![verify-content-template](assets/verify-content-template.png)
 
 ### Creación del componente de procesamiento de la plantilla {#create-the-template-s-rendering-component}
 
@@ -94,16 +98,17 @@ Cree el *componente* que define el contenido y procesa todas las páginas creada
    En el cuadro de diálogo **[!UICONTROL Crear componente]** , escriba los siguientes valores de propiedad:
 
    * Etiqueta: **playpage**
-   * Título: Componente **Reproducción de Simulador para pruebas SCF**
+   * Título: **Componente de reproducción de Simulador para pruebas SCF**
    * Descripción: **Este es el componente que procesa el contenido de una página de Simulador para pruebas de SCF.**
    * Super Tipo: *&lt;dejar en blanco>*
-   * Agrupar:
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   * Grupo: *&lt;dejar en blanco>*
+
+   ![create-template-component](assets/create-template-component.png)
 
 1. Haga clic en **[!UICONTROL Siguiente]** hasta que aparezca el panel Elementos secundarios **** permitidos del cuadro de diálogo:
 
-   * Haga clic en **[!UICONTROL Aceptar]**
-   * Haga clic en **[!UICONTROL Guardar todo]**
+   * Haga clic en **[!UICONTROL Aceptar]**.
+   * Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Compruebe que la ruta del componente y el resourceType de la plantilla coinciden.
 
@@ -111,4 +116,4 @@ Cree el *componente* que define el contenido y procesa todas las páginas creada
    >
    >La correspondencia entre la ruta de acceso al componente playpage y la propiedad sling:resourceType de la plantilla playpage es crucial para el correcto funcionamiento del sitio web.
 
-   ![chlimage_1-79](assets/chlimage_1-79.png)
+   ![verify-template-component](assets/verify-template-component.png)
