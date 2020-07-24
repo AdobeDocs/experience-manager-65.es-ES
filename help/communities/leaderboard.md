@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Esta página proporciona la información esencial para trabajar con la función de tabla de clasificación.
 
-Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar la Puntuación de [comunidades y los distintivos](implementing-scoring.md). Consulte también [Puntuación y distintivos esenciales](configure-scoring.md).
+Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar la Puntuación de [comunidades y los distintivos](implementing-scoring.md).
+
+Consulte [Puntuación y distintivos esenciales](configure-scoring.md).
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -35,7 +40,7 @@ Antes de incluir el componente de la tabla de clasificación en una página, es 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.gamification.hbs.leader</td>
+   <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
