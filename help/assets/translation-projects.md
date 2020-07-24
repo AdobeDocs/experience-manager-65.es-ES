@@ -3,9 +3,9 @@ title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1904'
 ht-degree: 16%
 
 ---
@@ -46,11 +46,9 @@ Utilice la opción **[!UICONTROL Crear solo estructura]** para diseñar una jera
 
 1. Haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
 
-   ![chlimage_1-58](assets/chlimage_1-58.png)
-
 1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
 
-   ![chlimage_1-59](assets/chlimage_1-59.png)
+   ![seleccionar idioma de destinatario](assets/target-language.png)
 
 1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Crear estructura únicamente]**.
 
@@ -58,11 +56,11 @@ Utilice la opción **[!UICONTROL Crear solo estructura]** para diseñar una jera
 
 1. Haga clic en **[!UICONTROL Crear]**. La nueva estructura del idioma de destinatario se muestra en Copias **[!UICONTROL de idioma]**.
 
-   ![chlimage_1-61](assets/chlimage_1-61.png)
+   ![copias de idioma](assets/lang-copy2.png)
 
 1. Haga clic en la estructura de la lista y, a continuación, haga clic en **[!UICONTROL Mostrar en recursos]** para desplazarse a la estructura de carpetas dentro del idioma del destinatario.
 
-   ![chlimage_1-62](assets/chlimage_1-62.png)
+   ![revelar en recursos](assets/reveal-in-assets.png)
 
 ### Crear un nuevo proyecto de traducción {#create-a-new-translation-project}
 
@@ -74,8 +72,6 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 1. Haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
-
-   ![chlimage_1-64](assets/chlimage_1-64.png)
 
 1. En la lista **[!UICONTROL Idiomas de destino]**, seleccione los idiomas para los que desea crear una estructura de carpetas.
 
@@ -91,11 +87,11 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
 
 1. Haga clic en **[!UICONTROL Crear]**. Los recursos de la carpeta de origen se copian en las carpetas de destinatario para las configuraciones regionales seleccionadas en el paso 4.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![copias de idioma](assets/lang-copy2.png)
 
 1. Para desplazarse a la carpeta, seleccione la copia de idioma y haga clic en **[!UICONTROL Mostrar en recursos]**.
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![revelar en recursos](assets/reveal-in-assets.png)
 
 1. Vaya a la consola Proyectos. La carpeta de traducción se copia en la consola Proyectos.
 
@@ -135,11 +131,9 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. Se muestra una lista de las traducciones disponibles.
 1. Haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
-
 1. En la lista **[!UICONTROL Idiomas de destino]**, seleccione los idiomas para los que desea crear una estructura de carpetas.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![seleccionar idioma de destinatario](assets/target-language.png)
 
 1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Agregar a proyecto de traducción]** existente para ejecutar el flujo de trabajo de traducción en la carpeta.
 
@@ -207,11 +201,9 @@ Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de 
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Seleccione la casilla de verificación antes de **[!UICONTROL Textos en idiomas]** y, a continuación, seleccione la carpeta de destino correspondiente a la configuración regional adecuada.
 
-   ![chlimage_1-84](assets/chlimage_1-84.png)
+   ![seleccionar copia de idioma](assets/lang-copy1.png)
 
 1. Haga clic en **[!UICONTROL Actualizar copias]** de idioma en la parte inferior.
-
-   ![chlimage_1-85](assets/chlimage_1-85.png)
 
 1. En la lista **[!UICONTROL Proyecto]** , elija **[!UICONTROL Crear un nuevo proyecto]** de traducción.
 
@@ -261,11 +253,9 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
 
 1. Seleccione la casilla de verificación que se encuentra delante de **[!UICONTROL Textos en idiomas]**, de esta forma, selecciona los textos disponibles en diferentes idiomas. Anule la selección de otros textos excepto el texto (textos) en el idioma correspondiente a las configuraciones regionales a las que desea traducir.
 
-   ![chlimage_1-95](assets/chlimage_1-95.png)
+   ![seleccionar copia de idioma](assets/lang-copy1.png)
 
 1. Haga clic en **[!UICONTROL Actualizar copias]** de idioma en la parte inferior.
-
-   ![chlimage_1-96](assets/chlimage_1-96.png)
 
 1. En la lista **[!UICONTROL Proyecto]** , elija **[!UICONTROL Añadir a proyecto]** de traducción existente.
 
@@ -273,7 +263,7 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
 
 1. En la lista de proyecto **[!UICONTROL de traducción]** existente, seleccione un proyecto para agregar el recurso a la traducción.
 
-   ![chlimage_1-98](assets/chlimage_1-98.png)
+   ![seleccionar un proyecto](assets/select-a-project.png)
 
 1. Haga clic en **[!UICONTROL Inicio]**.
 1. Véanse los pasos 9 a 14 de [Añadir al proyecto](translation-projects.md#add-to-existing-translation-project) de traducción existente para completar el resto del procedimiento.
@@ -294,17 +284,13 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Seleccione la casilla de verificación situada junto a **[!UICONTROL Título]**.
-1. From the toolbar, click **[!UICONTROL Accept Translation]** and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
-
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+1. From the toolbar, click **[!UICONTROL Accept Translation]** ![accept translation](assets/do-not-localize/thumb-up.png) and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
 
    >[!NOTE]
    >
    >Para habilitar el flujo de trabajo de traducción para actualizar los recursos de destino, acepte tanto el recurso como los metadatos.
 
-   Haga clic en **[!UICONTROL Rechazar traducción]** para conservar la versión traducida originalmente del recurso en la raíz de configuración regional de destinatario y rechazar la versión editada.
-
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   Haga clic en **[!UICONTROL Rechazar traducción]** para ![rechazar la traducción](assets/do-not-localize/thumb-down.png) y retener la versión traducida originalmente del recurso en la raíz de configuración regional de destinatario y rechazar la versión editada.
 
 1. Para vista de los metadatos traducidos, desplácese hasta la [!DNL Assets] consola y abra la página [!UICONTROL Propiedades] de cada uno de los recursos traducidos.
 
