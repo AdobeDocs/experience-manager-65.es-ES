@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTR
 
 Para la Ruta de Inicio, introduzca `/apps/social/commons` y seleccione **[!UICONTROL Activar]**.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+![verify-content-template](assets/verify-content-template.png)
 
 ### Resultados de Vista {#view-results}
 
@@ -72,5 +75,5 @@ Si inicia sesión en la instancia de publicación como administrador, por ejempl
 
 Si cierra la sesión y vuelve a iniciarla `aaron.mcdonald@mailinator.com/password` y actualiza la página, observará que el comentario publicado ya no se muestra con un avatar, sino que se muestra un sencillo &#39;xxx&#39;.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![create-template-component](assets/create-template-component.png)
 
