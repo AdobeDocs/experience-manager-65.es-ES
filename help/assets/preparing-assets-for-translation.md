@@ -3,10 +3,10 @@ title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para preparar los recursos para la traducción para admitir recursos multilingües.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 0%
+source-wordcount: '450'
+ht-degree: 1%
 
 ---
 
@@ -67,4 +67,4 @@ La interfaz de Experience Manager proporciona un panel **[!UICONTROL Referencias
 
 1. En el panel Referencias, haga clic en Copias **[!UICONTROL de idioma]**. El panel [!UICONTROL Copias] de idioma muestra las copias de idioma de los recursos.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![copias de idioma](assets/lang-copy2.png)
