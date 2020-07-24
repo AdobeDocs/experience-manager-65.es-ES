@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8ca4e3057ec13762404a8b7fb6f6bdf5dd562281
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '5826'
+source-wordcount: '5830'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,7 @@ Puede mejorar la relevancia de las palabras clave para los recursos en particula
 1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee impulsar la búsqueda de la imagen y, a continuación, haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
-Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -351,7 +351,7 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
 1. En CRXDE, en `/oak-index/damAssetLucene` nodo, establezca la `reindex` propiedad en `true`. Guarde los cambios.
 1. (Opcional) Si tiene un formulario de búsqueda personalizado, copie el `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde los cambios.
 
-Para obtener información relacionada, consulte [Comprender las etiquetas inteligentes en el Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) y [cómo administrar las etiquetas](/help/assets/managing-smart-tags.md)inteligentes.
+Para obtener información relacionada, consulte [Comprender las etiquetas inteligentes en el Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) y [cómo administrar las etiquetas](/help/assets/managing-smart-tags.md)inteligentes.
 
 ### Metadatos obligatorios {#mandatorymetadata}
 
