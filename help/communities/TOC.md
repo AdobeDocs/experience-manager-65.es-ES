@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Communities User Guide
+user-guide-title: Guía del usuario de AEM 6.5 Communities
+user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 7%
 
 ---
 
@@ -14,10 +18,10 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
 + [Introducción a la Guía del usuario de Communities](home.md)
 + Introduction to AEM Communities {#introduction}
    + [Sitios de comunidades](administer-landing.md)
-   + [Información general sobre comunidades AEM](overview.md)
+   + [Información general de AEM Communities](overview.md)
    + [Notas de versión de AEM Communities](/help/release-notes/communities-release-notes.md)
    + [Introducción a Comunidades de AEM](getting-started.md)
-   + [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md)
+   + [Introducción a AEM Communities para la habilitación](getting-started-enablement.md)
    + [Configuración inicial](setup.md)
    + [Crear un nuevo sitio de comunidad](create-site.md)
    + [Experimente el sitio publicado](published-site.md)
@@ -32,16 +36,16 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Topologías recomendadas para las comunidades](topologies.md)
    + [Configuración de Dispatcher para Comunidades](dispatcher.md)
 + Administración {#administer}
-   + [Servicio de administración de usuarios y usuarios por usuario en comunidades de AEM](user-ugc-management-service.md)
+   + [Servicio de administración de usuarios y usuarios por usuario en AEM Communities](user-ugc-management-service.md)
    + [Sitios de comunidades](administer-landing.md)
    + [Consolas de comunidades](consoles.md)
-   + [Funciones de configuración de Analytics para comunidades](analytics.md)
+   + [Funciones de Configuración de Analytics para Comunidades](analytics.md)
    + [Configuración de las funciones de habilitación](enablement.md)
    + [Configuración de mensajes](messaging.md)
    + [Moderación del contenido de la comunidad](moderate-ugc.md)
    + [Configuración del correo electrónico](email.md)
    + [Notificaciones de comunidades](notifications.md)
-   + [Suscripciones a comunidades](subscriptions.md)
+   + [Suscripciones de comunidades](subscriptions.md)
    + [Puntuación y distintivos de comunidades](implementing-scoring.md)
    + [Administración de usuarios y grupos de usuarios](users.md)
    + [Consola de grupos de la comunidad](groups.md)
@@ -62,12 +66,12 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [FFmpeg para comunidades](ffmpeg.md)
    + [Moderación en contexto](in-context.md)
    + [Puntuación y distintivos avanzados](advanced.md)
-   + [ASRP - Proveedor de recursos de almacenamiento de Adobe](asrp.md)
-   + [MSRP - Proveedor de recursos de almacenamiento MongoDB](msrp.md)
+   + [ASRP - Proveedor de recursos de Almacenamiento de Adobe](asrp.md)
+   + [MSRP - Proveedor de recursos de Almacenamiento MongoDB](msrp.md)
    + [Cómo configurar MongoDB para la demostración](demo-mongo.md)
-   + [DSRP: Proveedor de recursos de almacenamiento de datos relacional](dsrp.md)
+   + [DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional](dsrp.md)
    + [Configuración de MySQL para DSRP](dsrp-mysql.md)
-   + [JSRP - Proveedor de recursos de almacenamiento JCR](jsrp.md)
+   + [JSRP - Proveedor de recursos de Almacenamiento JCR](jsrp.md)
    + [Configuración de Solr para SRP](solr.md)
    + [Etiquetado de recursos de habilitación](tag-resources.md)
    + [Etiquetado de contenido generado por el usuario](tag-ugc.md)
@@ -85,9 +89,9 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Personalización del lado del servidor](server-customize.md)
    + [Personalización del lado del cliente](client-customize.md)
    + [Ayudantes de manillares SCF](handlebars-helpers.md)
-   + [Información general del proveedor de recursos de almacenamiento](srp.md)
+   + [Información general del proveedor de recursos de Almacenamiento](srp.md)
    + [Elementos esenciales del sitio de la comunidad](sites-for-developers.md)
-   + [Elementos esenciales del flujo de actividades](essentials-activities.md)
+   + [Elementos esenciales del flujo de Actividad](essentials-activities.md)
    + [Ascripciones esenciales](essentials-assignments.md)
    + [Elementos esenciales del blog](blog-developer-basics.md)
    + [Elementos básicos del calendario](calendar-basics-for-developers.md)
@@ -121,13 +125,13 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Contenido inicial del Simulador para pruebas](initial-content.md)
    + [Desarrollar aplicación de Simulador para pruebas](develop-app.md)
    + [Desarrollar contenido de Simulador para pruebas](develop-content.md)
-   + [Agregar Clientlibs](add-clientlibs.md)
+   + [Añadir Clientlibs](add-clientlibs.md)
    + [Componente Comentarios de superposición](overlay-comments.md)
    + [Página Crear comentarios](overlay-create-comments-page.md)
    + [Crear nodos](overlay-create-nodes.md)
    + [Modificar el aspecto](overlay-alter-appearance.md)
    + [Crear los componentes](extend-create-components.md)
-   + [Agregar comentario a la página de muestra](extend-sample-page.md)
+   + [Añadir comentario a página de muestra](extend-sample-page.md)
    + [Ampliar componente de comentarios](extend-comments.md)
    + [Modificar el aspecto (HBS)](extend-alter-appearance.md)
    + [Crear una página de muestra](create-sample-page.md)
@@ -138,7 +142,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
 + Creación {#authoring}
    + [Componentes de las comunidades](author-communities.md) 
    + [Conceptos básicos de los componentes de comunidades](basics.md)
-   + [Función Flujos de actividad](activities.md)
+   + [Función de flujo de Actividad](activities.md)
    + [Función Asignaciones](assignments.md)
    + [Función de blog](blog-feature.md)
    + [Función de calendario](calendar.md)
@@ -157,7 +161,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Uso del resumen de revisiones y revisiones (visualización)](reviews.md)
    + [Función de búsqueda](search.md)
    + [Uso de gráficos sociales](socialgraph.md)
-   + [Tendencias de actividades](trends.md)
+   + [Tendencias de Actividad](trends.md)
    + [Uso de la nube de etiquetas de Social](tagcloud.md)
    + [Uso de la votación](voting.md)
    + [Crear una página de muestra](create-sample-page.md)
