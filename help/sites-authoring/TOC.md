@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de creación de AEM 6.5
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 89%
@@ -41,7 +42,7 @@ ht-degree: 89%
    + [Crear una página para dispositivos móviles ](mobile.md)
    + [Resolución de problemas de AEM durante la creación](troubleshooting.md)
    + [Métodos abreviados de teclado al editar páginas](page-authoring-keyboard-shortcuts.md)
-   + [Prácticas recomendadas  ](best-practices.md)
+   + [Prácticas recomendadas ](best-practices.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Uso de etiquetas](tags.md)
    + [Creación de plantillas de página  ](templates.md)
@@ -62,7 +63,7 @@ ht-degree: 89%
    + [Administración de proyectos](touch-ui-managing-projects.md)
    + [Uso de tareas](task-content.md)
    + [Integración de proyectos y PIM creativos](managing-product-information.md) 
-   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md).
+   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md)
 + Lanzamientos {#launches}
    + [Lanzamientos](launches.md)
    + [Creación de lanzamientos](launches-creating.md)
@@ -72,7 +73,7 @@ ht-degree: 89%
    + [Uso de flujos de trabajo](workflows.md)
    + [Aplicación de flujos de trabajo a las páginas](workflows-applying.md)
    + [Participación en flujos de trabajo](workflows-participating.md)
-   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md).
+   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md)
 + Rendimiento de la página {#page-performance}
    + [Perspectiva de contenido](content-insights.md)
    + [Analizar el rendimiento de la página](ci-analyze.md)
