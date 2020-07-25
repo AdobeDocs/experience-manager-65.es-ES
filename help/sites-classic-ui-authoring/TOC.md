@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 89%
 
 ---
 
@@ -29,11 +33,11 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Edición del contenido de una página](classic-page-author-edit-content.md)
    + [Editor de texto enriquecido](classic-page-author-rich-text-editor.md)
    + [Publicación de páginas](classic-page-author-publish-pages.md)
-   + [Edición de las propiedades de página  ](classic-page-author-edit-page-properties.md)
+   + [Edición de las propiedades de página](classic-page-author-edit-page-properties.md)
    + [Anotaciones al editar una página](classic-page-author-annotations.md)
    + [Resolución de problemas de AEM durante la creación](classic-page-author-troubleshooting.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Creación de una página para dispositivos móviles  ](classic-feature-mobile.md)
+   + [Crear una página para dispositivos móviles ](classic-feature-mobile.md)
    + [Componentes para la creación de páginas](classic-page-author-edit-mode.md)
    + [Métodos abreviados de teclado al editar páginas](classic-page-author-keyboard-shortcuts.md)
 + Funciones de sitio y de página {#siteandpage}
@@ -81,5 +85,5 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Adición de recursos de Dynamic Media a las páginas](dynamic-media-assets-adding-to-page.md)
    + [Añadir características de Scene7 a la página](manage-assets-classic-s7.md)
    + [Vídeo](manage-assets-classic-s7-video.md)
-   + [Uso de Dynamic Media](dynamic-media-assets.md)
+   + [Trabajo con Dynamic Media](dynamic-media-assets.md)
    + [Convenciones de nomenclatura para la prueba de recursos](asset-naming-conventions.md)
