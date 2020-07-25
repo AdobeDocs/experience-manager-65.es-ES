@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Mobile User Guide
+user-guide-title: Guía del usuario de AEM 6.5 Mobile
+user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
@@ -34,15 +38,15 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Plantillas y componentes de aplicación](app-templates-and-components1.md)
    + [Propiedades y nodos de contenido](content-properties.md)
    + [Creación de la configuración de exportación de recursos compartidos](creating-shared-resources-export-configuration.md)
-   + [Creación y adición de plantillas y componentes](mobile-ondemand-app-templates.md)
-   + [Recomendaciones](best-practices-aem-mobile.md)
+   + [Creación y Añade de plantillas y componentes](mobile-ondemand-app-templates.md)
+   + [Prácticas recomendadas ](best-practices-aem-mobile.md)
    + [Creación de la configuración de exportación de artículos](creating-article-export-configuration.md)
    + [Móvil con sincronización de contenido](mobile-ondemand-contentsync.md)
    + [Plantillas de página para aplicaciones móviles](apps-architecture.md)
    + [Uso de las propiedades del contenido para exportar contenido](on-demand-content-properties-exporting.md)
-   + [Procesamiento y envío](rendering-and-delivery.md)
+   + [Procesamiento y Envío](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
-   + [Entrega de contenido](develop-content-as-a-service.md)
+   + [Envío de contenido](develop-content-as-a-service.md)
 + Administración de la aplicación de servicios bajo demanda {#administering}
    + [On-Demand de AEM Mobile](aem-mobile.md)
    + [Configuración de AEM Mobile](aem-mobile-setup.md)
@@ -73,9 +77,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Creación y edición de aplicaciones con la consola Aplicaciones](phonegap-apps-console.md)
    + [¿Su aplicación híbrida está lista para AEM Mobile?](phonegap-adding-content-to-imported-app.md)
    + [Acceder a las funciones del dispositivo](phonegap-access-device-features.md)
-   + [Agregar Adobe Analytics a la aplicación móvil](phonegap-add-analytics-to-apps.md)
+   + [Añadir Adobe Analytics a su aplicación móvil](phonegap-add-analytics-to-apps.md)
    + [Plantillas de página para aplicaciones móviles](phonegap-apps-arch-page-templates.md)
-   + [Configuración del servicio de nube de Adobe Target](aem-mobile-configuring-cloud-service.md)
+   + [Configuración del Cloud Service de Adobe Target](aem-mobile-configuring-cloud-service.md)
    + [Aplicaciones de una sola página](phonegap-single-page-applications.md)
    + [Modelos en el repositorio](administer-mobile-apps.md)
    + [Inicio de AEM PhoneGap](starting-aem-phonegap-app.md)
@@ -85,7 +89,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + Administración de Adobe PhoneGap Enterprise {#administering-phonegap}
    + [Inicio rápido móvil](phonegap-mobile-quickstart.md)
    + [Administración de contenido para Adobe PhoneGap Enterprise con AEM](administer-phonegap.md)
-   + [Configurar el servicio en la nube Adobe PhoneGap Build](configure-phonegap-build-cloud.md)
-   + [Configuración del filtro de referente para permitir que esté vacío](setting-referrer-filter-empty.md)
-   + [Configurar el servicio de nube de Adobe Mobile Services](configure-adobe-mobile-cloud-service.md)
+   + [Configurar el Cloud Service de Adobe PhoneGap Build](configure-phonegap-build-cloud.md)
+   + [Configuración del filtro de Remitente del reenvío para permitir que esté vacío](setting-referrer-filter-empty.md)
+   + [Configuración del Cloud Service de Adobe Mobile Services](configure-adobe-mobile-cloud-service.md)
    + [Configurar usuarios y grupos de usuarios](configure-users-groups.md)
