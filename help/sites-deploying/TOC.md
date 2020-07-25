@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Deploying Guide
+user-guide-title: Guía de implementación de AEM 6.5
+user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 11%
 
 ---
 
@@ -12,10 +16,10 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
 # AEM 6.5 Deploying User Guide {#deploying}
 
 + [Guía del usuario de implementación](home.md)
-+ Introducción a la plataforma AEM {#introduction}
-   + [Introducción a la plataforma AEM](platform.md)
++ Introducción a AEM Platform {#introduction}
+   + [Introducción a AEM Platform](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
-   + [Elementos de almacenamiento en AEM 6.5](storage-elements-in-aem-6.md)
+   + [Elementos de Almacenamiento en AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
 + Implementación de AEM {#deploying}
    + [Implementación y mantenimiento](deploy.md)
@@ -25,7 +29,7 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [Línea de comandos: start y stop](command-line-start-and-stop.md)
    + [Configuración de almacenes de nodos y almacenes de datos en AEM 6](data-store-config.md)
    + [Limpieza de revisión](revision-cleanup.md)
-   + [Consultas de Oak e indización](queries-and-indexing.md)
+   + [Consultas de roble e indexación](queries-and-indexing.md)
    + [Cómo ejecutar AEM con TarMK Cold Standby](tarmk-cold-standby.md)
    + [Compatibilidad con RDBMS en AEM 6.5](rdbms-support-in-aem.md)
    + [Indexación a través del Jar de Oak-run](indexing-via-the-oak-run-jar.md)
@@ -87,10 +91,10 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Prácticas recomendadas   {#practices}
++ Prácticas recomendadas  {#practices}
    + [Implementación de optimizaciones](best-practices.md)
    + [Árbol de rendimiento](performance-tree.md)
    + [Prácticas recomendadas para pruebas de rendimiento](best-practices-for-performance-testing.md)
-   + [Prácticas recomendadas para consultas e indexación](best-practices-for-queries-and-indexing.md)
+   + [Prácticas recomendadas para Consultas e indexación](best-practices-for-queries-and-indexing.md)
    + [Recomendaciones de interfaz de usuario para clientes](ui-recommendations.md)
    + [Rendimiento y escalabilidad](performance.md)
