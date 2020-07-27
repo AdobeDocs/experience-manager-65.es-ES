@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f470768fd3368e3b2118333b8a84f8331e7fa2e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ qtip
 >La definición de la propiedad `guideComponentType`en el valor `fd/af/layouts/panel` determina que la presentación es un diseño de panel.
 
 1. Cambie el nombre del archivo `tabbedPanelLayout.jsp` bajo el nuevo diseño a customPanelLayout.jsp.
-1. Para introducir nuevos estilos y comportamientos, cree una biblioteca de clientes en el `etc` nodo. Por ejemplo, en la ubicación /etc/af-custom-layout-clientlib, cree el nodo client-library. Permita que el nodo tenga la propiedad categories af.panel.custom. Tiene los siguientes archivos .css y .js:
+1. Para introducir nuevos estilos y comportamientos, cree una biblioteca de clientes en el `etc` nodo. Por ejemplo, en la ubicación /etc/af-custom-layout-clientlib, cree el nodo client-library. Permita que el nodo tenga la propiedad categorías af.panel.custom. Tiene los siguientes archivos .css y .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -88,7 +91,7 @@ qtip
    }
    ```
 
-   ```
+   ```javascript
    /** function for toggling the navigators **/
    var toggleNav = function () {
    
@@ -116,7 +119,7 @@ qtip
 
    Además, actualice las rutas de las secuencias de comandos incluidas en los archivos .jsp. Por ejemplo, actualice el `customPanelLayout.jsp` archivo de la siguiente manera:
 
-   ```
+   ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -145,7 +148,7 @@ qtip
 
    El `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` archivo:
 
-   ```
+   ```html
    <%-- jsp governing the navigation part --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -174,7 +177,7 @@ qtip
 
    La actualización `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
-   ```
+   ```html
    <%-- jsp governing the panel content --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -201,7 +204,7 @@ qtip
 
 1. Abra un formulario adaptable en el modo de creación. El diseño de panel que ha definido se agrega a la lista para la configuración de los diseños de panel.
 
-   ![El diseño del panel personalizado aparece en la lista](assets/auth-layt.png) de diseño del panel ![Captura de pantalla de un formulario adaptable que utiliza el diseño](assets/s1.png) del panel personalizado ![Captura de pantalla que muestra la funcionalidad de alternancia del diseño personalizado](assets/s2.png)
+   ![La presentación del panel personalizado se muestra en la lista](assets/auth-layt.png) de diseño del panel ![Captura de pantalla de un formulario adaptable que utiliza la presentación](assets/s1.png) del panel personalizado ![Captura de pantalla que muestra la funcionalidad de alternancia de la presentación personalizada](assets/s2.png)
 
 ZIP de muestra para un diseño de panel personalizado y un formulario adaptable que lo utiliza.
 
