@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2646'
+ht-degree: 2%
 
 ---
 
@@ -168,8 +171,8 @@ Configure las siguientes propiedades al crear gráficos para impresión y canale
      <li><strong>Punto de referencia &gt; Eje Y: </strong>Disponible para gráficos de cuadrantes si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje Y para el punto de referencia.</code></li>
      <li><strong>Punto de referencia &gt; Objeto de modelo de datos para serie: </strong>Disponible para varios gráficos de cuadrantes de serie si selecciona Objeto <span class="uicontrol">de modelo de</code> datos en la lista desplegable Tipo de enlace. Defina la propiedad del objeto del modelo de datos de formulario para identificar la serie del punto de referencia. </code></li>
      <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para la serie: </strong>Disponible para varios gráficos de cuadrantes de serie si selecciona Objeto <span class="uicontrol">de modelo de</code> datos en la lista desplegable Tipo de enlace. Utilice la propiedad de objeto del modelo de datos de formulario para series y el valor definido en este campo para identificar la serie para el punto de referencia.</code></li>
-     <li><strong>Punto de referencia &gt; Objeto de modelo de datos para punto de referencia: </strong>Disponible para gráficos de cuadrantes si selecciona Objeto <span class="uicontrol">de modelo</code> de datos en la lista desplegable Tipo de enlace. Defina una propiedad de objeto del modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto de modelo de datos que sea una entidad secundaria de la propiedad de objeto de modelo de datos definida para la serie.</code></li>
-     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia: </strong>Disponible para gráficos de cuadrantes si selecciona Objeto <span class="uicontrol">de modelo</code> de datos en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario para el punto de referencia y el valor definido en este campo para identificar el punto de referencia del gráfico.<br /> Etiquetas <strong>de cuadrante &gt; Superior izquierda:</strong> Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</code></li>
+     <li><strong>Punto de referencia &gt; Objeto de modelo de datos para punto de referencia: </strong>Disponible para gráficos de cuadrantes si selecciona Objeto <span class="uicontrol">de modelo de</code> datos en la lista desplegable Tipo de enlace. Defina una propiedad de objeto del modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto de modelo de datos que sea una entidad secundaria de la propiedad de objeto de modelo de datos definida para la serie.</code></li>
+     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia: </strong>Disponible para gráficos de cuadrantes si selecciona Objeto <span class="uicontrol">de modelo de</code> datos en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario para el punto de referencia y el valor definido en este campo para identificar el punto de referencia del gráfico.<br /> <strong>Rótulos de cuadrante &gt; Superior izquierda:</strong> Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</code></li>
      <li><strong>Rótulos de cuadrante &gt; Superior derecha:</strong> Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior derecho.</li>
      <li><strong>Rótulos de cuadrante &gt; Inferior derecha: </strong>Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior derecho.</li>
      <li><strong>Rótulos de cuadrante &gt; Inferior izquierda: </strong>Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior izquierdo.</li>
@@ -213,7 +216,7 @@ Además de utilizar las funciones predeterminadas en los gráficos, puede escrib
 
 Una función toma una matriz o valores y un nombre de categoría como entradas y devuelve un valor. Por ejemplo:
 
-```
+```javascript
 Multiply(valueArray, category) {
  var val = 1;
  _.each(valueArray, function(value) {
