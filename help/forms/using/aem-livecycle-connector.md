@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Aunque las propiedades son autoexplicativas, las importantes son las siguientes:
 
 * **URL** del servidor: especifica la URL del servidor de LiveCycle. Si desea que LiveCycle y AEM se comuniquen a través de https, inicio AEM con el siguiente JVM
 
-   ```
+   ```java
    argument
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
@@ -118,7 +118,7 @@ Para inicio de un servicio expuesto desde AEM, lleve a cabo los siguientes pasos
 
    El fragmento de código anterior inicio la API createPDF de GeneratePdfServiceClient para convertir un documento a PDF. Puede realizar una invocación similar en un JSP utilizando el siguiente código. La diferencia principal es que el código siguiente utiliza Sling ScriptHelper para acceder a GeneratePdfServiceClient.
 
-   ```java
+   ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>
    <%@ page import="com.adobe.idp.Document" %>
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Casi todos los servicios de Documento de LiveCycle requieren autenticación. Puede utilizar cualquiera de las siguientes opciones para el inicio de estos servicios sin proporcionar credenciales explícitas en el código:
 
-### Configuración de lista de permisos {#allowlist-configuration}
+### Configuración de Lista de permitidos {#allowlist-configuration}
 
 La configuración del SDK de LiveCycle Client contiene una configuración sobre los nombres de servicio. Esta configuración es una lista de servicios para los que la lógica de invocación utiliza credenciales de administrador de forma predeterminada. Por ejemplo, si agrega servicios de DirectoryManager (parte de la API de administración de usuarios) a esta lista, cualquier código de cliente puede utilizar directamente el servicio y la capa de invocación pasa automáticamente las credenciales configuradas como parte de la solicitud enviada al servidor de LiveCycle
 
