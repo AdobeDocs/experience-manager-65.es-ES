@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 1%
 
 ---
 
@@ -130,16 +133,16 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
 1. Haga clic con el botón secundario en el nodo de prueba (aquí **afTestRegistration)** y, a continuación, haga clic en **Crear** > **Crear archivo**. Asigne un nombre al archivo js.txt y haga clic en **Aceptar**.
 1. En el archivo js.txt, agregue el siguiente texto:
 
-   ```
+   ```javascript
    #base=.
    js.txt
    ```
 
 1. Haga clic en **Guardar todo** y, a continuación, cierre el archivo js.txt.
-1. Haga clic con el botón derecho en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **Crear** > **Crear archivo**. Asigne un nombre al archivo init.js y haga clic en **Aceptar**.
+1. Haga clic con el botón secundario en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **Crear** > **Crear archivo**. Asigne un nombre al archivo init.js y haga clic en **Aceptar**.
 1. Copie el siguiente código en el archivo init.js y haga clic en **Guardar todo**:
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -165,7 +168,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    | **Propiedad** | **Tipo** | **Value** |
    |---|---|---|
    | categorías | Cadena[] | granite.testing.hobbes.testing, granite.testing.hobbes.testing.testForm |
-   | dependencias | Cadena[] | granite.testing.calvin.testing |
+   | dependencias | Cadena[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -177,7 +180,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
 
    Para utilizar el siguiente código para probar otro formulario adaptable, cambie la ruta y el nombre del formulario en **navigateTo** (líneas 11, 36 y 62) y los respectivos casos de prueba. Para obtener más información sobre las API para probar diferentes aspectos de los formularios y los objetos de formulario, consulte las API de [Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
    
@@ -283,7 +286,7 @@ Los grupos de pruebas se pueden ejecutar de forma individual. Al ejecutar un gru
 
 Un icono de marca de verificación indica una prueba pasada: ![marca de verificación](assets/checkmark.png)
 
-El icono &quot;X&quot; indica que la prueba ha fallado: ![cruz](assets/cross.png)
+El icono &quot;X&quot; indica que la prueba ha fallado: ![cross](assets/cross.png)
 
 Para ejecutar un grupo de pruebas:
 
