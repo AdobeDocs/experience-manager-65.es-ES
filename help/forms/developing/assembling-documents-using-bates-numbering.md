@@ -1,6 +1,6 @@
 ---
-title: Montaje de documentos con numeración Bates
-seo-title: Montaje de documentos con numeración Bates
+title: Montaje de Documentos con numeración Bates
+seo-title: Montaje de Documentos con numeración Bates
 description: nulo
 seo-description: nulo
 uuid: 28d5faeb-6915-41a2-b6a0-78d255df024f
@@ -11,14 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1901'
+ht-degree: 0%
 
 ---
 
 
-# Montaje de documentos con numeración Bates {#assembling-documents-using-bates-numbering}
+# Montaje de Documentos con numeración Bates {#assembling-documents-using-bates-numbering}
 
-Puede montar documentos PDF que contengan identificadores de página únicos mediante la numeración Bates. *La numeración* de Bates es un método para aplicar identificaciones únicas a un lote de documentos relacionados. A cada página del documento (o conjunto de documentos) se le asigna un número Bates que identifica de forma exclusiva la página. Por ejemplo, los documentos de fabricación que contienen información sobre la lista de materiales y que están asociados con la producción de un conjunto pueden contener un identificador. Un número Bates contiene un valor numérico incrementado secuencialmente y un prefijo y sufijo opcionales. El prefijo + numérico + sufijo se denomina patrón *bates*.
+Puede montar documentos PDF que contengan identificadores de página únicos mediante la numeración Bates. *La numeración* de Bates es un método para aplicar identificaciones únicas a un lote de documentos relacionados. A cada página del documento (o conjunto de documentos) se le asigna un número Bates que identifica de forma exclusiva la página. Por ejemplo, los documentos de fabricación que contienen información sobre listas de materiales y están asociados con la producción de un conjunto pueden contener un identificador. Un número Bates contiene un valor numérico incrementado secuencialmente y un prefijo y sufijo opcionales. El prefijo + numérico + sufijo se denomina patrón *bates*.
 
 La siguiente ilustración muestra un documento PDF que contiene un identificador único ubicado en el encabezado del documento.
 
@@ -26,7 +29,7 @@ La siguiente ilustración muestra un documento PDF que contiene un identificador
 
 A los efectos de este análisis, el identificador de página único se coloca en el encabezado de un documento. Supongamos que se utiliza el siguiente documento DDX.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
         <PDF result="out.pdf">
@@ -43,15 +46,15 @@ A los efectos de este análisis, el identificador de página único se coloca en
  </DDX>
 ```
 
-Este documento DDX combina dos documentos PDF denominados *map.pdf* y *direcciones.pdf* en un solo documento PDF. El documento PDF resultante contiene un encabezado que consta de un identificador de página único. Por ejemplo, el documento de la ilustración anterior muestra 000016.
+Este documento DDX combina dos documentos PDF denominados *map.pdf* y *direccionamientos.pdf* en un único documento PDF. El documento PDF resultante contiene un encabezado que consta de un identificador de página único. Por ejemplo, el documento de la ilustración anterior muestra 000016.
 
 >[!NOTE]
 >
->Antes de leer esta sección, se recomienda familiarizarse con el ensamblado de documentos PDF mediante el servicio Ensamblador. En esta sección no se analizan los conceptos, como la creación de un objeto de colección que contenga documentos de entrada o la extracción de los resultados del objeto de recopilación devuelto. (Consulte Compilación [programada de documentos](/help/forms/developing/programmatically-assembling-pdf-documents.md)PDF).
+>Antes de leer esta sección, se recomienda familiarizarse con el ensamblado de documentos PDF mediante el servicio Ensamblador. En esta sección no se analizan los conceptos, como la creación de un objeto de colección que contenga documentos de entrada o la extracción de los resultados del objeto de colección devuelto. (Consulte Compilación [programada de Documentos](/help/forms/developing/programmatically-assembling-pdf-documents.md)PDF).
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Compilador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de ensamblador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -64,7 +67,7 @@ Para montar un documento PDF que contenga un identificador de página único (nu
 1. Incluir archivos de proyecto.
 1. Cree un cliente de ensamblador de PDF.
 1. Haga referencia a un documento DDX existente.
-1. Consulte documentos PDF de entrada.
+1. documentos PDF de entrada de referencia.
 1. Establezca el valor inicial del número Bates.
 1. Monte los documentos PDF de entrada.
 1. Extraiga los resultados.
@@ -78,10 +81,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
-Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementan AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
 
 **Crear un cliente de ensamblador de PDF**
 
@@ -89,9 +92,9 @@ Antes de realizar una operación de ensamblador mediante programación, debe cre
 
 **Hacer referencia a un documento DDX existente**
 
-Se debe hacer referencia a un documento DDX para ensamblar un documento PDF. Por ejemplo, considere el documento DDX que se introdujo en esta sección. Para montar un documento PDF que contenga identificadores de página únicos, el documento DDX debe contener el `BatesNumber` elemento .
+Se debe hacer referencia a un documento DDX para montar un documento PDF. Por ejemplo, considere el documento DDX que se introdujo en esta sección. Para montar un documento PDF que contenga identificadores de página únicos, el documento DDX debe contener el `BatesNumber` elemento .
 
-**Documentos PDF de entrada de referencia**
+**documentos PDF de entrada de referencia**
 
 Se debe hacer referencia a los documentos PDF de entrada para montar un documento PDF. Por ejemplo, se debe hacer referencia a los documentos map.pdf y direccionamiento.pdf para agrupar estos documentos PDF en un solo documento PDF.
 
@@ -99,9 +102,9 @@ Se debe hacer referencia a los documentos PDF de entrada para montar un document
 
 Puede configurar el valor inicial del número Bates para que cumpla los requisitos comerciales. Por ejemplo, supongamos que es un requisito establecer el valor inicial en 000100. Si no establece el valor inicial, el valor de la primera página es 000000.
 
-**Compilación de documentos PDF de entrada**
+**Compilación de los documentos PDF de entrada**
 
-Después de crear el cliente del servicio Ensamblador, hacer referencia al documento DDX que contiene información de `BatesNumber` elementos, hacer referencia a un documento PDF de entrada y establecer opciones de tiempo de ejecución, puede invocar la `invokeDDX` operación que resulta en que el servicio Ensamblador ensamble un documento PDF que contiene identificadores de página únicos.
+Después de crear el cliente del servicio Ensamblador, haga referencia al documento DDX que contiene información de `BatesNumber` elementos, haga referencia a un documento PDF de entrada y defina las opciones de tiempo de ejecución, puede invocar la `invokeDDX` operación que resulta en que el servicio Ensamblador ensamble un documento PDF que contenga identificadores de página únicos.
 
 **Extraer los resultados**
 
@@ -109,7 +112,7 @@ El servicio Ensamblador devuelve un objeto de colección que contiene los result
 
 >[!NOTE]
 >
->Se devuelve un objeto de colección si se invoca la `invokeDDX` operación. Esta operación se utiliza al pasar dos o más documentos PDF de entrada al servicio de ensamblador. Sin embargo, si solo pasa un documento PDF de entrada al servicio Ensamblador, debe invocar la `invokeOneDocument` operación. Para obtener información sobre el uso de esta operación, consulte [Compilación de documentos](/help/forms/developing/assembling-encrypted-pdf-documents.md)PDF cifrados.
+>Se devuelve un objeto de colección si se invoca la `invokeDDX` operación. Esta operación se utiliza al pasar dos o más documentos PDF de entrada al servicio de ensamblador. Sin embargo, si solo pasa un documento PDF de entrada al servicio Ensamblador, debe invocar la `invokeOneDocument` operación. Para obtener información sobre el uso de esta operación, consulte [Compilación de Documentos](/help/forms/developing/assembling-encrypted-pdf-documents.md)PDF cifrados.
 
 **Consulte también**
 
@@ -117,7 +120,7 @@ El servicio Ensamblador devuelve un objeto de colección que contiene los result
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Compilación de documentos PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[Compilación programada de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## Compilación de documentos con numeración Bates mediante la API de Java {#assemble-documents-with-bates-numbering-using-the-java-api}
 
@@ -137,12 +140,12 @@ Monte un documento PDF que utilice identificadores de página únicos (numeraci�
    * Cree un `java.io.FileInputStream` objeto que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
    * Cree un `com.adobe.idp.Document` objeto utilizando su constructor y pasando el `java.io.FileInputStream` objeto.
 
-1. Consulte documentos PDF de entrada.
+1. documentos PDF de entrada de referencia.
 
    * Cree un `java.util.Map` objeto que se utilice para almacenar documentos PDF de entrada mediante un `HashMap` constructor.
    * Para cada documento PDF de entrada, cree un `java.io.FileInputStream` objeto utilizando su constructor y pasando la ubicación del documento PDF de entrada. En este caso, pase la ubicación de un documento PDF sin seguridad.
    * Para cada documento PDF de entrada, cree un `com.adobe.idp.Document` objeto y pase el `java.io.FileInputStream` objeto que contiene el documento PDF.
-   * Agregue una entrada al `java.util.Map` objeto invocando su `put` método y pasando los siguientes argumentos:
+   * Añada una entrada al `java.util.Map` objeto invocando su `put` método y pasando los siguientes argumentos:
 
       * Un valor de cadena que representa el nombre de la clave. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX. Por ejemplo, el nombre del archivo de origen PDF especificado en el documento DDX que se introduce en esta sección es Loan.pdf.
       * Un `com.adobe.idp.Document` objeto que contiene el documento PDF no seguro.
@@ -159,6 +162,7 @@ Monte un documento PDF que utilice identificadores de página únicos (numeraci�
    * Un `com.adobe.idp.Document` objeto que representa el documento DDX.
    * Un `java.util.Map` objeto que contiene el archivo PDF no seguro de entrada.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos.
+
    El `invokeDDX` método devuelve un `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contiene un documento PDF con contraseña cifrada.
 
 1. Extraiga los resultados.
@@ -177,7 +181,7 @@ Monte un documento PDF que utilice identificadores de página únicos (numeraci�
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Compilación de documentos con numeración Bates mediante la API de servicio Web {#assemble-documents-with-bates-numbering-using-the-web-service-api}
+## Compilación de documentos con numeración Bates mediante la API de servicio web {#assemble-documents-with-bates-numbering-using-the-web-service-api}
 
 Monte un documento PDF que utilice identificadores de página únicos (numeración Bates) mediante la API de servicio de ensamblador (servicio Web):
 
@@ -205,12 +209,12 @@ Monte un documento PDF que utilice identificadores de página únicos (numeraci�
 1. Haga referencia a un documento DDX existente.
 
    * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento DDX.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento DDX y el modo en el que se abre el archivo.
+   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
    * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
    * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto. Pase la matriz de bytes, la posición inicial y la longitud del flujo para leerlos.
    * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
 
-1. Consulte documentos PDF de entrada.
+1. documentos PDF de entrada de referencia.
 
    * Para cada documento PDF de entrada, cree un `BLOB` objeto utilizando su constructor. El `BLOB` objeto se utiliza para almacenar el documento PDF de entrada.
    * Cree un `System.IO.FileStream` objeto invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento PDF de entrada y el modo en que se abre el archivo.
@@ -221,7 +225,7 @@ Monte un documento PDF que utilice identificadores de página únicos (numeraci�
    * Para cada documento PDF de entrada, cree un `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto. Por ejemplo, si se utilizan dos documentos PDF de entrada, cree dos `MyMapOf_xsd_string_To_xsd_anyType_Item` objetos.
    * Asigne un valor de cadena que represente el nombre clave al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `key` objeto. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX. (Realice esta tarea para cada documento PDF de entrada).
    * Asigne el `BLOB` objeto que almacena el documento PDF al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `value` objeto. (Realice esta tarea para cada documento PDF de entrada).
-   * Agregue el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto al `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invoque el `MyMapOf_xsd_string_To_xsd_anyType` método del `Add` objeto y pase el `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Realice esta tarea para cada documento PDF de entrada).
+   * Añada el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto al `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invoque el `MyMapOf_xsd_string_To_xsd_anyType` método del `Add` objeto y pase el `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Realice esta tarea para cada documento PDF de entrada).
 
 1. Establezca el valor inicial del número Bates.
 
@@ -235,6 +239,7 @@ Monte un documento PDF que utilice identificadores de página únicos (numeraci�
    * Un `BLOB` objeto que representa el documento DDX.
    * El `MyMapOf_xsd_string_To_xsd_anyType` objeto que contiene los documentos PDF de entrada. Sus claves deben coincidir con los nombres de los archivos de origen PDF y sus valores deben ser los `BLOB` objetos que correspondan a dichos archivos.
    * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución.
+
    El `invoke` método devuelve un `AssemblerResult` objeto que contiene los resultados del trabajo y las excepciones que se hayan producido.
 
 1. Extraiga los resultados.
@@ -243,8 +248,8 @@ Monte un documento PDF que utilice identificadores de página únicos (numeraci�
 
    * Acceda al `AssemblerResult` campo del `documents` objeto, que es un `Map` objeto que contiene los documentos PDF resultantes.
    * Repita el `Map` objeto hasta que encuentre la clave que coincida con el nombre del documento resultante. A continuación, convierta los elementos del miembro `value` de la matriz en un `BLOB`.
-   * Extraiga los datos binarios que representan el documento PDF accediendo a la propiedad del `BLOB` objeto `MTOM` . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
+   * Extraiga los datos binarios que representan el documento PDF accediendo a la propiedad de su `BLOB` objeto `MTOM` . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
