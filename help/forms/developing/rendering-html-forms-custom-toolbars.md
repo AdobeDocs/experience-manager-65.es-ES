@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2304'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Puede obtener los archivos JS y CSS abriendo el archivo adobe-forms-&lt;appserve
 
 La siguiente sintaxis XML muestra un archivo fscmenu.xml de ejemplo.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -107,9 +110,9 @@ Como parte de la personalización de una barra de herramientas, puede cambiar el
 >
 >No es posible crear una barra de herramientas personalizada en más de un idioma. Las barras de herramientas no pueden utilizar archivos XML diferentes según la configuración regional.
 
-Para cambiar el valor de configuración regional de una barra de herramientas, asegúrese de que el archivo fscmenu.xml contiene el idioma que desea mostrar. La siguiente sintaxis XML muestra el archivo fscmenu.xml que se utiliza para mostrar una barra de herramientas en francés.
+Para cambiar el valor de configuración regional de una barra de herramientas, asegúrese de que el archivo fscmenu.xml contenga el idioma que desea mostrar. La siguiente sintaxis XML muestra el archivo fscmenu.xml que se utiliza para mostrar una barra de herramientas en francés.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -144,7 +147,7 @@ Para cambiar el valor de configuración regional de una barra de herramientas, a
 
 >[!NOTE]
 >
->Los inicios rápidos asociados a esta sección utilizan este archivo XML para mostrar una barra de herramientas personalizada en francés, como se muestra en la ilustración anterior.
+>Los Inicios rápidos asociados con esta sección utilizan este archivo XML para mostrar una barra de herramientas personalizada en francés, como se muestra en la ilustración anterior.
 
 Además, especifique un valor de configuración regional válido invocando el `HTMLRenderSpec` método `setLocale` del objeto y pasando un valor de cadena que especifica el valor de configuración regional. Por ejemplo, pase `fr_FR` para especificar el francés. El servicio Forms se incluye con barras de herramientas localizadas.
 
@@ -156,7 +159,7 @@ Para obtener más información sobre el servicio Forms, consulte Referencia de [
 
 ### Resumen de los pasos {#summary-of-steps}
 
-Para procesar un formulario HTML que contenga una barra de herramientas personalizada, realice las siguientes tareas:
+Para procesar un formulario HTML que contenga una barra de herramientas personalizada, lleve a cabo estas tareas:
 
 1. Incluir archivos de proyecto.
 1. Cree un objeto de API de Java de Forms.
@@ -196,13 +199,13 @@ Cuando el servicio Forms procesa un formulario HTML, devuelve una secuencia de d
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Representación de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Representación de formularios como HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Representar un formulario HTML con una barra de herramientas personalizada mediante la API de Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
@@ -223,9 +226,10 @@ Representar un formulario HTML que contenga una barra de herramientas personaliz
    * Para procesar un formulario HTML con una barra de herramientas, invoque el `HTMLRenderSpec` método del `setHTMLToolbar` objeto y pase un valor `HTMLToolbar` enum. Por ejemplo, para mostrar una barra de herramientas HTML vertical, pase `HTMLToolbar.Vertical`.
    * Especifique la ubicación del archivo XML fscmenu invocando el `HTMLRenderSpec` método `setToolbarURI` del objeto y pasando un valor de cadena que especifica la ubicación URI del archivo XML.
    * Si corresponde, establezca el valor de configuración regional invocando el `HTMLRenderSpec` método del `setLocale` objeto y pasando un valor de cadena que especifique el valor de configuración regional. El valor predeterminado es inglés.
+
    >[!NOTE]
    >
-   >Los inicios rápidos asociados con esta sección establecen este valor en `fr_FR`*.*
+   >Los Inicios rápidos asociados con esta sección establecen este valor en `fr_FR`*.*
 
 1. Representar un formulario HTML
 
@@ -238,6 +242,7 @@ Representar un formulario HTML que contenga una barra de herramientas personaliz
    * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Un `URLSpec` objeto que almacena valores URI necesarios para procesar un formulario HTML.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Se trata de un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
    El `renderHTMLForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -277,9 +282,10 @@ Representar un formulario HTML que contenga una barra de herramientas personaliz
    * Para procesar un formulario HTML con una barra de herramientas, invoque el `HTMLRenderSpec` método del `setHTMLToolbar` objeto y pase un valor `HTMLToolbar` enum. Por ejemplo, para mostrar una barra de herramientas HTML vertical, pase `HTMLToolbar.Vertical`.
    * Especifique la ubicación del archivo XML fscmenu invocando el `HTMLRenderSpec` método `setToolbarURI` del objeto y pasando un valor de cadena que especifica la ubicación URI del archivo XML.
    * Si corresponde, establezca el valor de configuración regional invocando el `HTMLRenderSpec` método del `setLocale` objeto y pasando un valor de cadena que especifique el valor de configuración regional. El valor predeterminado es inglés.
+
    >[!NOTE]
    >
-   >Los inicios rápidos asociados con esta sección establecen este valor en `fr_FR`*.*
+   >Los Inicios rápidos asociados con esta sección establecen este valor en `fr_FR`*.*
 
 1. Representar un formulario HTML
 
@@ -298,6 +304,7 @@ Representar un formulario HTML que contenga una barra de herramientas personaliz
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el `renderHTMLForm` método . Este argumento almacena el valor de configuración regional.
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el `renderHTMLForm` método . Este argumento almacena el valor de representación HTML que se utiliza.
    * Un `com.adobe.idp.services.holders.FormsResultHolder` objeto vacío que contendrá los resultados de esta operación.
+
    El `renderHTMLForm` método rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -312,4 +319,4 @@ Representar un formulario HTML que contenga una barra de herramientas personaliz
 
 **Consulte también**
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
