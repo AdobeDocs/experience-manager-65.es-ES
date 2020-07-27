@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio Utilidades X
 
 [Inicio rápido (modo SOAP): Importación de metadatos XMP mediante la API de Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código recupera, inspecciona y guarda metadatos XMP. (Consulte [Exportación de metadatos desde Documentos](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
@@ -138,7 +141,7 @@ El siguiente ejemplo de código recupera, inspecciona y guarda metadatos XMP. (C
 
 El siguiente ejemplo de código importa metadatos XMP y guarda el nuevo archivo PDF en el disco. El documento PDF se basa en un archivo PDF llamado Loan.pdf. El documento XML que contiene los metadatos que se van a importar al documento PDF se basa en un archivo XML denominado *LoanMetaData.xml*. Para obtener información sobre este archivo XML, consulte [Importación de metadatos en Documentos](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents)PDF.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
