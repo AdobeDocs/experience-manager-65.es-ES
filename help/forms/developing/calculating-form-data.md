@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +80,7 @@ Para ilustrar el uso de una secuencia de comandos de diseño de formulario, en e
 
 La sintaxis de la secuencia de comandos ubicada en este diseño de formulario es la siguiente:
 
-```as3
+```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
@@ -120,7 +123,7 @@ Después de comprobar que el estado de procesamiento asociado a un formulario en
 
 **Consulte también**
 
-[Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms[Calcular datos de formulario mediante la API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[de JavaCalcular datos de formulario mediante la API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[Configuración de las propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión API de servicio de[Forms Inicios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Procesamiento rápido de formularios PDF interactivosRepresentacionesCreación de Aplicaciones web](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java AEM Forms[Calcular datos de formulario mediante la API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Java Calcular datos de formulario mediante la API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión API de servicio de[Forms Inicios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Rápidos Procesamiento de PDF forms interactivos Creación de Aplicaciones web que](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular datos de formulario mediante la API de Java {#calculate-form-data-using-the-java-api}
 
@@ -144,6 +147,7 @@ Calcular los datos del formulario mediante la API de Forms (Java):
       * Un valor de cadena que especifica variables de entorno, incluyendo todos los encabezados HTTP relevantes. Debe especificar el tipo de contenido que se va a gestionar especificando uno o varios valores para la variable de `CONTENT_TYPE` entorno. Por ejemplo, para gestionar datos XML y PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Un `RenderOptionsSpec` objeto que almacena opciones de tiempo de ejecución.
+
       El `processFormSubmission` método devuelve un `FormsResult` objeto que contiene los resultados del envío del formulario.
 
    * Compruebe que el estado de procesamiento asociado a un formulario enviado `1` invoca el `FormsResult` método `getAction` del objeto. Si este método devuelve el valor `1`, se realizó el cálculo y los datos se pueden volver a escribir en el explorador web del cliente.
@@ -197,6 +201,7 @@ Calcular los datos del formulario mediante la API de Forms (servicio web):
       * Objeto vacío `javax.xml.rpc.holders.ShortHolder` que se rellena con el método .
       * Objeto vacío `MyArrayOf_xsd_anyTypeHolder` que se rellena con el método . Este parámetro se utiliza para almacenar archivos adjuntos enviados junto con el formulario.
       * Objeto vacío `FormsResultHolder` que se rellena con el método con el formulario que se envía.
+
       El `processFormSubmission` método rellena el `FormsResultHolder` parámetro con los resultados del envío del formulario. El `processFormSubmission` método devuelve un `FormsResult` objeto que contiene los resultados del envío del formulario.
 
    * Compruebe que el estado de procesamiento asociado a un formulario enviado `1` invoca el `FormsResult` método `getAction` del objeto. Si este método devuelve el valor `1`, se realizó el cálculo y los datos se pueden volver a escribir en el explorador web del cliente.
@@ -209,4 +214,4 @@ Calcular los datos del formulario mediante la API de Forms (servicio web):
    * Cree una matriz de bytes y rellénela invocando el `BLOB` método `getBinaryData` del objeto. Esta tarea asigna el contenido del `FormsResult` objeto a la matriz de bytes.
    * Invoque el `javax.servlet.http.HttpServletResponse` método del `write` objeto para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes al `write` método .
 
-**Consulte también** Invocación[de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Consulte también**[Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
