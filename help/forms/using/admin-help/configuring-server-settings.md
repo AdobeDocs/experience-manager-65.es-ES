@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2657'
+ht-degree: 0%
 
 ---
 
@@ -57,13 +60,13 @@ Si los procesos están diseñados e implementados sin necesidad de enviar un cor
 >
 >Flex Workspace está en desuso para la versión de formularios AEM.
 
-De forma predeterminada, los correos electrónicos enviados por formularios AEM contienen vínculos a Flex Workspace (obsoleto para formularios AEM en JEE). Puede configurar formularios AEM para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información sobre las ventajas de AEM Forms Workspace sobre Flex Workspace (obsoleto para formularios AEM en JEE), consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artículo.
+De forma predeterminada, los correos electrónicos enviados por formularios AEM contienen vínculos a Flex Workspace (obsoleto para formularios AEM en JEE). Puede configurar formularios AEM para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información sobre las ventajas de AEM Forms Workspace sobre (obsoleto para formularios AEM en JEE) Flex Workspace, consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artículo.
 
 1. En la consola de administración, haga clic en Inicio > Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de Tarea.
 1. Abra la plantilla de asignación de tareas.
 1. Defina la plantilla de las notificaciones de tarea de la siguiente manera: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
-   ```as3
+   ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
    ```
 
@@ -124,9 +127,9 @@ Puede enviar notificaciones de fecha límite a usuarios y grupos cuando haya tra
 1. En la lista Codificación de correo electrónico, seleccione el formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que usará la mayoría de los usuarios fuera de Japón. Los usuarios de Japón pueden seleccionar ISO2022-JP.
 1. Haga clic en Guardar.
 
-### Ocultar la etiqueta NO ELIMINAR para todos los correos electrónicos {#hide-the-do-not-delete-tag-for-all-emails}
+### Ocultar la etiqueta DO NOT DELETE para todos los correos electrónicos {#hide-the-do-not-delete-tag-for-all-emails}
 
-Puede configurar el correo electrónico para que se oculte en la etiqueta de seguimiento NO ELIMINAR en todos los correos electrónicos enviados en un proceso centrado en el ser humano. Para obtener más información, consulte [Cómo ocultar la etiqueta &#39;NO-ELIMINAR&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+Puede configurar el correo electrónico para que se oculte en la etiqueta de seguimiento DO NOT DELETE en todos los correos electrónicos enviados en un proceso centrado en el ser humano. Para obtener más información, consulte [Cómo ocultar la etiqueta &#39;DO-NOT-DELETE&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
 ## Configuración de notificaciones para administradores {#configuring-notifications-for-administrators}
 
