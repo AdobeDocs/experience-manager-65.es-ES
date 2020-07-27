@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -70,14 +70,14 @@ Para actualizar AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Forms, haga lo siguiente
 
       Si utiliza [Sample para integrar borradores y componentes](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) de envíos con la base de datos y actualizar desde una versión anterior, ejecute las siguientes consultas SQL después de realizar la actualización:
 
-      ```
+      ```sql
       UPDATE metadata m, additionalmetadatatable am
       SET m.dataType = am.value
       WHERE m.id = am.id
       AND am.key = 'dataType'
       ```
 
-      ```
+      ```sql
       DELETE from additionalmetadatatable
       WHERE `key` = 'dataType'
       ```
