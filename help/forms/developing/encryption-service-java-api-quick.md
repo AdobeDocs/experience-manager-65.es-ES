@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 [Inicio rápido (modo SOAP): Determinación del tipo de codificación mediante la API de Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* con un valor de contraseña de `OpenPassword`. La contraseña maestra es `PermissionPassword`. El documento PDF seguro se guarda como un archivo PDF denominado *EncryptLoan.pdf*. (Consulte [Codificación de Documentos PDF con una contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -159,7 +162,7 @@ El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* c
 
 El siguiente ejemplo de código Java elimina la codificación basada en contraseña de un documento PDF denominado *EncryptLoan.pdf*. El valor de contraseña principal utilizado para eliminar el cifrado basado en contraseña es *PermissionPassword*. El documento PDF no seguro se guarda como un archivo PDF con el nombre *noEncryptionLoan.pdf*. (Consulte [Eliminación del cifrado](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)de contraseña).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -256,7 +259,7 @@ El siguiente ejemplo de código Java elimina la codificación basada en contrase
 
 El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* con un certificado llamado *Encryption.cer*. El documento PDF cifrado se guarda como un archivo PDF denominado *EncryptLoanCert.pdf*. (Consulte [Codificación de Documentos PDF con certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -385,7 +388,7 @@ El siguiente ejemplo de código Java cifra un documento PDF llamado *Loan.pdf* c
 
 El siguiente ejemplo de código Java elimina la codificación basada en certificados de un documento PDF denominado *EncryptLoanCert.pdf*. El alias de la clave pública que se utiliza para eliminar el cifrado es `Encryption`. El documento PDF no seguro se guarda como un archivo PDF con el nombre *noEncryptionLoan.pdf*. (Consulte [Eliminación del cifrado](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption)basado en certificados).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -482,7 +485,7 @@ El siguiente ejemplo de código Java elimina la codificación basada en certific
 
 El siguiente ejemplo de código Java desbloquea un documento PDF con contraseña cifrada llamado *EncryptLoan.pdf*. (Consulte [Desbloqueo de Documentos](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF cifrados).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -578,7 +581,7 @@ El siguiente ejemplo de código Java desbloquea un documento PDF con contraseña
 
 El siguiente ejemplo de código Java determina el tipo de codificación que protege un documento PDF denominado *EncryptLoan.pdf*. (Consulte [Determinación del tipo](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type)de codificación.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
