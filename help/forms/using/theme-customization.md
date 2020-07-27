@@ -1,8 +1,8 @@
 ---
 title: Personalización de temas
 seo-title: Personalización de temas
-description: Cómo personalizar el tema de la aplicación de AEM Forms.
-seo-description: Cómo personalizar el tema de la aplicación de AEM Forms.
+description: Cómo personalizar el tema de la aplicación AEM Forms.
+seo-description: Cómo personalizar el tema de la aplicación AEM Forms.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 1. Open the `template.html` file for editing.
 1. Busque la siguiente cadena:
 
-   ```
+   ```jsp
    <%if ( (task.description !== "") && (task.description !== null) && (typeof task.description !== null) && (typeof task.description !== 'undefined') ) {%>
                   <div class="description_details">
                     <%= task.description %>
@@ -52,7 +55,7 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 
 1. Busque el código siguiente en el `template.html` archivo:
 
-   ```
+   ```jsp
    <ul id="task_menu_list">
                                    <li class="approve" title="<%= task.availableCommands.directCommands[0]%>" data-routename="<%= task.availableCommands.directCommands[0]%>">
                                        <%= task.availableCommands.directCommands[0]%>
@@ -64,7 +67,7 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 
 1. Comente la siguiente línea y guarde el archivo.
 
-   ```
+   ```jsp
    task.availableCommands.directCommands[1]%>">
    <%= task.availableCommands.directCommands[1]%>
    </li>
@@ -79,6 +82,6 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 1. Open the `_style.css` file for editing.
 1. Para la imagen Fondo, cambie `#323232` a `#fff`.
 1. Guarde los cambios y cierre `_style.css` el archivo.
-1. Abra la aplicación de AEM Forms.
+1. Abra la aplicación AEM Forms.
 
-   La aplicación AEM Forms ahora muestra instrucciones en lugar de descripciones.
+   La aplicación AEM Forms ahora muestra las instrucciones en lugar de la descripción.
