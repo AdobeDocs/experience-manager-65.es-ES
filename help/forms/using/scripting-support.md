@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '3909'
+ht-degree: 36%
 
 ---
 
@@ -104,7 +107,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr>
    <td><code>numPages</code></td>
    <td>Devuelve el número de páginas del documento.</td>
-   <td>La directiva de paginación de formularios HTML5 no es idéntica a la directiva de paginación de formularios PDF. Por lo tanto, la API numPages puede devolver valores diferentes en ambos casos.</td>
+   <td>La directiva de paginación de formularios HTML5 no es idéntica a la directiva de paginación de PDF forms. Por lo tanto, la API numPages puede devolver valores diferentes en ambos casos.</td>
   </tr>
   <tr>
    <td><code>platform</code></td>
@@ -114,7 +117,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr>
    <td><code>title</code></td>
    <td>Especifica el título del documento. Sólo está disponible para aplicaciones de cliente.</td>
-   <td>Devuelve el título del documento HTML en el formulario, en lugar del título de los metadatos del formulario, como en el caso de los formularios PDF.</td>
+   <td>Devuelve el título del documento HTML en el formulario, en lugar del título de los metadatos del formulario, como en el caso de los PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -1121,7 +1124,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   <tr>
    <td><strong>Categoría </strong></td>
    <td><strong>Descripción </strong></td>
-   <td><strong>Ejemplo </strong></td>
+   <td><strong>Muestra </strong></td>
   </tr>
   <tr>
    <td>Expresión simple</td>
@@ -1254,12 +1257,12 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>Esta API de acrobat envía la salida a la consola de javascript.</td>
+   <td>Esta API de acrobat envía la salida a la consola de JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Esta API de acrobat envía un mensaje de alerta a través de la ventana emergente de javascript.</td>
+   <td>Esta API de acrobat envía un mensaje de alerta a través de la ventana emergente JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
