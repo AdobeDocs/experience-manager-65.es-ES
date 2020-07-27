@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 0%
 
 ---
 
@@ -27,11 +30,11 @@ Así es como funciona la autenticación tradicional:
 1. El proveedor de autenticación valida las credenciales.
 1. A continuación, el proveedor de autenticación comprueba si el usuario existe en la base de datos de Administración de usuarios. Los siguientes son posibles resultados:
 
-   **** Existe: Si el usuario está actualizado y desbloqueado, Administración de usuarios devuelve la autenticación correcta. Sin embargo, si el usuario no está actualizado o está bloqueado, Administración de usuarios devuelve un error de autenticación.
+   **Existe:** Si el usuario está actualizado y desbloqueado, Administración de usuarios devuelve la autenticación correcta. Sin embargo, si el usuario no está actualizado o está bloqueado, Administración de usuarios devuelve un error de autenticación.
 
-   **** No existe: Administración de usuarios devuelve un error de autenticación.
+   **No existe:** Administración de usuarios devuelve un error de autenticación.
 
-   **** No válido: Administración de usuarios devuelve un error de autenticación.
+   **No válido:** Administración de usuarios devuelve un error de autenticación.
 
 1. Se evalúa el resultado devuelto por el proveedor de autenticación. Si el proveedor de autenticación devolvió la autenticación correctamente, se permite al usuario iniciar sesión. De lo contrario, la Administración de usuarios comprueba con el siguiente proveedor de autenticación (pasos 2 a 3).
 1. Se devuelve un error de autenticación si ningún proveedor de autenticación disponible valida las credenciales de usuario.
@@ -44,7 +47,7 @@ Cuando se implementa el aprovisionamiento justo a tiempo, se crea dinámicamente
 
 Los formularios AEM proporcionan las siguientes API para el aprovisionamiento justo a tiempo:
 
-```as3
+```java
 package com.adobe.idp.um.spi.authentication  ;
 publ ic interface IdentityCreator {
 /**
@@ -92,7 +95,7 @@ public Boolean assign(User user);
 
    * En la Consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios > Nuevo dominio de empresa.
    * Configure el dominio y seleccione Habilitar aprovisionamiento justo a tiempo. <!--Fix broken link (See Setting up and managing domains).-->
-   * Agregue proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación, seleccione un Creador de identidad y un Proveedor de asignación registrados.
+   * Añadir proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación, seleccione un Creador de identidad y un Proveedor de asignación registrados.
 
 1. Guarde el nuevo dominio.
 
