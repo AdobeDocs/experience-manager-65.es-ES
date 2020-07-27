@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10273'
+ht-degree: 0%
 
 ---
 
@@ -116,7 +119,7 @@ Con la autenticación extendida activada, los usuarios que abren un documento pr
 1. Abra el archivo en un editor y busque el nodo AllowedUrls.
 1. En el `AllowedUrls` nodo, agregue las líneas siguientes: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
-   ```as3
+   ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
    <entry key="sso-s" value="/ssoexample"/>
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
@@ -657,7 +660,7 @@ La siguiente configuración se encuentra en el área Configuración de correo el
 
 **Tiempo de espera:** Número de días después de los cuales caduca la invitación de activación si el usuario no activa la cuenta. El valor predeterminado es 30 días.
 
-**Mensaje:** El texto que aparece en el cuerpo del mensaje es un mensaje que indica que es necesario activar la cuenta de usuario del destinatario. También es posible que desee incluir información como cómo comunicarse con un administrador para obtener una nueva contraseña.
+**Mensaje:** El texto que aparece en el cuerpo del mensaje es un mensaje que indica que es necesario activar la cuenta de usuario del destinatario. También puede incluir información como cómo comunicarse con un administrador para obtener una nueva contraseña.
 
 ### Configurar un correo electrónico de restablecimiento de contraseña {#configure-a-password-reset-email}
 
@@ -819,7 +822,7 @@ Las extensiones de Acrobat Reader DC para Microsoft Office son un complemento qu
 1. Exporte el archivo de configuración de seguridad de documento. (Consulte Edición [manual del archivo](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)de configuración de seguridad de documento).
 1. Abra el archivo de configuración en un editor y busque el `PolicyServer` nodo. Añada un `ClientVersionRules` nodo como un nodo secundario inmediato del `PolicyServer` nodo, si no existe:
 
-   ```as3
+   ```java
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -855,6 +858,7 @@ Las extensiones de Acrobat Reader DC para Microsoft Office son un complemento qu
    * Apple OS X
    * Sun Solaris
    * HP-UX
+
    `SDKVersions` especifica la versión de la API de cliente C++ de seguridad de documento utilizada por la aplicación cliente. Por ejemplo, `"8.2"`.
 
    `APPFamilies` está definida por la API de cliente.
@@ -875,7 +879,7 @@ Las extensiones de Acrobat Reader DC para Microsoft Office son un complemento qu
 
 En este ejemplo, se deniega el acceso a todos los clientes de Windows.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -893,7 +897,7 @@ En este ejemplo, se deniega el acceso a todos los clientes de Windows.
 
 En este ejemplo, se deniega el acceso a Mi aplicación versión 3.0 y a Mi otra aplicación versión 2.0. La misma URL de información de denegación se utiliza independientemente del motivo de la denegación.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -918,7 +922,7 @@ En este ejemplo, se deniega el acceso a Mi aplicación versión 3.0 y a Mi otra 
 
 En este ejemplo, se deniegan todas las solicitudes de una instalación de Microsoft PowerPoint 2007 o Microsoft PowerPoint 2010 de extensiones de Acrobat Reader DC para Microsoft Office.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -951,7 +955,7 @@ De forma predeterminada, puede especificar un máximo de cinco elementos en una 
 
    La segunda entrada, *max elements* , es el número máximo de elementos permitidos en una marca de agua. El valor predeterminado es 5.
 
-   ```as3
+   ```java
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -971,7 +975,7 @@ Los siguientes cambios en config.xml desactivan todos los vínculos externos des
 1. Abra el archivo de configuración en un editor y busque el `DisplaySettings` nodo.
 1. Para deshabilitar todos los vínculos externos, en el `DisplaySettings` nodo, agregue la siguiente entrada y guarde el archivo: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```as3
+   ```java
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -985,7 +989,7 @@ Los siguientes cambios en config.xml habilitan la compatibilidad TLS para la fun
 1. Abra el archivo de configuración en un editor y busque el `DisplaySettings` nodo.
 1. Busque el nodo siguiente: `<node name="ExternalUser">`
 
-   ```as3
+   ```java
    <node name="ExternalUser">
    ```
 
@@ -1001,7 +1005,7 @@ Los siguientes cambios en config.xml para deshabilitar los extremos SOAP para do
 1. Exporte el archivo de configuración de seguridad de documento. (Consulte Edición [manual del archivo](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)de configuración de seguridad de documento).
 1. Abra el archivo de configuración en un editor y busque el nodo siguiente: `<node name="DRM">`
 
-   ```as3
+   ```java
    <node name="DRM">
    ```
 
@@ -1011,7 +1015,7 @@ Los siguientes cambios en config.xml para deshabilitar los extremos SOAP para do
 
 1. Para deshabilitar los extremos SOAP para documentos de seguridad de documento, establezca el atributo value en **false**.
 
-   ```as3
+   ```java
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
