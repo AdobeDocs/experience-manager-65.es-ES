@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
 
 # Personalización de acciones de Tarea {#customizing-task-actions}
 
-El espacio de trabajo de AEM Forms permite a los usuarios personalizar las acciones de tarea. Antes de personalizar las acciones de tarea, asegúrese de seguir los pasos que se indican en Pasos [genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
+El espacio de trabajo AEM Forms permite a los usuarios personalizar las acciones de tarea. Antes de personalizar las acciones de tarea, asegúrese de seguir los pasos que se indican en Pasos [genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
 
 ## Personalización del estilo de texto {#customizing-text-style}
 
@@ -135,11 +138,11 @@ Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas 
 
 ### Menú emergente de acción de tarea de Lista de Tarea {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Es necesario un paquete de desarrollo para personalizar los elementos del menú emergente de acción de tarea de lista de Tarea del espacio de trabajo de AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Se requiere un paquete de desarrollo para personalizar los elementos del menú emergente de acción de tarea de lista del espacio de trabajo AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copie /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`reemplazar el siguiente fragmento de código:
 
-   ```
+   ```html
    // Orignal code
    <div class="taskActionsPopUp">
            <!--START_TASKACTIONS-->
@@ -174,7 +177,7 @@ Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas 
        </div>
    ```
 
-   ```
+   ```html
    //New code
    
    <div class="taskActionsPopUp">
@@ -267,7 +270,7 @@ Siga estos pasos para personalizar el menú emergente Acciones de tarea de detal
 * Copie el archivo /libs/ws/js/runtime/templates/taskdetails.html en la `/apps/ws/js/runtime/templates/` carpeta:
 * Encapsular etiqueta de icono dentro de la etiqueta de anclaje en lugar de texto. Por ejemplo, el *nuevo código* que se muestra a continuación encapsula la etiqueta de icono dentro de la etiqueta de anclaje:
 
-```
+```html
 // Original code
 <div class="taskActionsPopUp">
         <!--START_ACTIONBUTTONGROUP-->
@@ -310,7 +313,7 @@ Siga estos pasos para personalizar el menú emergente Acciones de tarea de detal
     </div>
 ```
 
-```
+```html
 //New code
 
 <div class="taskActionsPopUp">
