@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ El Inicio rápido de la API de Java (SOAP) está disponible para la API de servi
 
 [Inicio rápido: Salida del modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código Java entra en el modo de copia de seguridad con una etiqueta única durante dos horas. Una vez que caduca el tiempo de copia de seguridad o si el modo de copia de seguridad se cierra explícitamente, el servidor de formularios vuelve a depurar archivos desde el Almacenamiento de Documento global. (Consulte [Introducción del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)de formularios.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ El siguiente ejemplo de código Java entra en el modo de copia de seguridad con 
 
 El siguiente ejemplo de código Java hace que Forms Server salga explícitamente del modo de copia de seguridad y vuelva a depurar archivos del Almacenamiento de Documento global. (Consulte [Salida del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formularios.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
