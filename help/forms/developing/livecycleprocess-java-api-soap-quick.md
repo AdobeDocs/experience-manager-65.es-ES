@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
@@ -31,17 +34,17 @@ El Inicio rápido de la API de Java (SOAP) está disponible para los procesos. U
 
 [Inicio rápido (modo SOAP): Recuperación del estado de un trabajo mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos que se encuentran en Programación con AEM Forms se basan en Forms si utiliza otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
+>Los inicios rápidos que se encuentran en Programación con AEM Forms se basan en los formularios si utiliza otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
 
 ## Inicio rápido (modo SOAP): Búsqueda de instancias de proceso mediante la API de Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 El siguiente ejemplo de código Java busca instancias de proceso basadas en el proceso *hipotecarioLoan - precompilado* .
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -159,7 +162,7 @@ El siguiente ejemplo de código Java busca instancias de proceso basadas en el p
 
 El siguiente ejemplo de código Java suspende una instancia de proceso. Para suspender correctamente una instancia de proceso, necesita el identificador de invocación de proceso que se puede obtener al invocar un proceso de larga duración mediante la API de invocación.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -251,7 +254,7 @@ El siguiente ejemplo de código Java suspende una instancia de proceso. Para sus
 
 El siguiente ejemplo de código Java inicio una instancia de proceso suspendida.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -339,7 +342,7 @@ El siguiente ejemplo de código Java inicio una instancia de proceso suspendida.
 
 El siguiente ejemplo de código Java finaliza una instancia de proceso con el valor de identificador 756c22860a242fb101ec7a5bc0977fd6.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -430,7 +433,7 @@ El siguiente ejemplo de código Java finaliza una instancia de proceso con el va
 
 El siguiente código Java purga los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica la depuración de datos para las instancias de proceso en las que la variable de proceso denominada *inValue* es buena a 200.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -535,9 +538,9 @@ El siguiente código Java purga los datos de un proceso denominado *SecureDocume
 
 ## Inicio rápido (modo SOAP): Recuperación del estado de un trabajo mediante la API de Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-En el siguiente ejemplo de código se recupera el estado de 10 trabajos de AEM Forms.
+El siguiente ejemplo de código recupera el estado de 10 trabajos de AEM Forms.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
