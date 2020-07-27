@@ -1,15 +1,18 @@
 ---
 title: Tablas en formularios adaptables
 seo-title: Tablas en formularios adaptables
-description: El componente Tabla de AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
-seo-description: El componente Tabla de AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
+description: El componente Tabla de los AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
+seo-description: El componente Tabla de los AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2301'
+ht-degree: 0%
 
 ---
 
@@ -88,9 +91,9 @@ Para aplicar el orden en las columnas de la tabla, las celdas de la columna de l
 
 Para habilitar la clasificación:
 
-1. Seleccione la tabla y toque ![](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el navegador de **contenido** de la barra de tareas de la comunicación interactiva.
+1. Seleccione la tabla y toque ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el navegador de **contenido** de la barra de tareas de la comunicación interactiva.
 1. Seleccione **Activar ordenación**.
-1. Toque ![](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, en los encabezados de columna representan que la clasificación se ha activado.
+1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, en los encabezados de columna representan que la clasificación se ha activado.
 
    ![Habilitar ordenación](assets/enable_sorting_new.png)
 
@@ -160,7 +163,7 @@ Para obtener la lista completa de clases de formularios adaptables, eventos, obj
 
 ## Diseños móviles {#mobile-layouts}
 
-Las tablas de formularios adaptables proporcionan una experiencia incomparable para dispositivos móviles debido a sus diseños fluidos y adaptables. AEM Forms oferta dos tipos de diseños móviles para tablas: encabezados en las columnas izquierda y contraíbles.
+Las tablas de formularios adaptables proporcionan una experiencia incomparable para dispositivos móviles debido a sus diseños fluidos y adaptables. AEM Forms oferta dos tipos de diseños móviles para tablas: encabezados en columnas izquierda y columnas que pueden contraerse.
 
 Puede configurar un diseño móvil para una tabla desde la ficha Estilo del cuadro de diálogo Editar componente para una tabla.
 
