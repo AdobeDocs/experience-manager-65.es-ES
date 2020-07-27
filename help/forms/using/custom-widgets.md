@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Ejemplo de utilidad predeterminada y personalizada
 
 ## Integración de widgets personalizados con formularios HTML5 {#integrating-custom-widgets-with-html-forms}
 
-### Crear un perfil {#create-a-profile-nbsp}
+### Crear un perfil  {#create-a-profile-nbsp}
 
 Puede crear un perfil o elegir un perfil existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Creación de Perfiles](/help/forms/using/custom-profile.md)personalizados.
 
@@ -69,15 +72,15 @@ Los formularios HTML5 proporcionan una implementación de la estructura de utili
 
 Para crear su propia utilidad, en el perfil creado anteriormente, incluya referencias del archivo JavaScript que contiene funciones sustituidas y funciones recientemente agregadas. Por ejemplo, *sliderNumericFieldWidget* es una utilidad para campos numéricos. Para utilizar la utilidad en el perfil en la sección del encabezado, incluya la línea siguiente:
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Registro de utilidades personalizadas con el motor de secuencias de comandos XFA {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Registro de utilidades personalizadas con el motor de secuencias de comandos XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 Cuando el código de la utilidad personalizada esté listo, registre la utilidad con el motor de secuencias de comandos mediante `registerConfig`API para [Form Bridge](/help/forms/using/form-bridge-apis.md). Toma widgetConfigObject como entrada.
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig",
         {
         ".<field-identifier>":"<name-of-the-widget>"
