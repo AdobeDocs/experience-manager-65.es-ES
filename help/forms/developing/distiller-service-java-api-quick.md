@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Dis
 
 [Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento PDF mediante la API de Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -31,7 +34,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código convierte un archivo PostScript llamado *Loan.ps* en un archivo PDF llamado *Loan.pdf*. (Consulte [Conversión de PostScript a documentos](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
