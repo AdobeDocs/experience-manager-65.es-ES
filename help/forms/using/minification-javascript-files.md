@@ -1,8 +1,8 @@
 ---
 title: Minificación de los archivos JavaScript
 seo-title: Minificación de los archivos JavaScript
-description: Instrucciones para generar código reducido después de las personalizaciones del espacio de trabajo de AEM Forms para optimizar los archivos JS para la web.
-seo-description: Instrucciones para generar código reducido después de las personalizaciones del espacio de trabajo de AEM Forms para optimizar los archivos JS para la web.
+description: Instrucciones para generar código reducido después de personalizar el espacio de trabajo de AEM Forms para optimizar los archivos JS para la Web.
+seo-description: Instrucciones para generar código reducido después de personalizar el espacio de trabajo de AEM Forms para optimizar los archivos JS para la Web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,13 @@ Para generar código reducido para cambios semánticos, siga estos pasos.
 
    Por ejemplo, la adición de un nuevo modelo Sharequeue, por ejemplo, mySharequeue, cambia:
 
-   ```
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
-   
-   To
-   
+   ```
+
+   A
+
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
@@ -48,9 +53,11 @@ Para generar código reducido para cambios semánticos, siga estos pasos.
                name="sharequeue"
                path="runtime/models/sharequeue.js"
                service="service"/>
-   
-   To
-   
+   ```
+
+   A
+
+   ```xml
    <sharequeue
                name="sharequeue"
                path="runtime/myModels/mySharequeue.js"
