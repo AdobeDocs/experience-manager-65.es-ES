@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Información general {#overview}
 
-Las funciones de comunidades AEM suelen requerir que los visitantes del sitio se registren e inicien sesión antes de participar en una comunidad en el entorno de publicación. Su registro de usuario solo debe existir en el entorno de publicación y se les suele llamar *miembros* para distinguirlos de *los usuarios* registrados en el entorno de creación.
+Las funciones de AEM Communities suelen requerir que los visitantes del sitio se registren e inicien sesión antes de participar en una comunidad en el entorno de publicación. Su registro de usuario solo debe existir en el entorno de publicación y se les suele llamar *miembros* para distinguirlos de *los usuarios* registrados en el entorno de creación.
 
 ### Miembros (usuarios) en la publicación {#members-users-on-publish}
 
@@ -48,19 +51,22 @@ En el entorno de creación, para llegar a la consola Miembros para administrar l
 >No será posible utilizar la consola Miembros si el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel no está habilitado.
 
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![member-console1](assets/member-console1.png)
 
 ### Búsqueda {#search-features}
 
 Seleccione el icono del panel lateral en el lado izquierdo del `Members` encabezado para abrir el panel lateral de búsqueda.
 
-![chlimage_1-120](assets/chlimage_1-120.png) ![chlimage_1-121](assets/chlimage_1-121.png)
+![](assets/leftpanel-icon.png)
+
+
+![member-console2](assets/member-console2.png)
 
 Seleccione el icono de búsqueda en la parte izquierda del encabezado para `Members` alternar el panel lateral de búsqueda cerrado.
 
 ### Estadísticas de los miembros {#member-statistics}
 
-Las columnas que se muestran `Views`, `Posts``Follows` y `Likes` se actualizan cuando el usuario es miembro de uno o varios sitios de comunidad con Adobe Analytics [habilitado](sites-console.md#analytics).
+Las columnas que se muestran `Views`, `Posts``Follows` y `Likes` se actualizan cuando el usuario es miembro de uno o varios sitios de la comunidad con Adobe Analytics [habilitado](sites-console.md#analytics).
 
 ### Exportar CSV {#export-csv}
 
@@ -74,7 +80,7 @@ Los encabezados de columna son
 
 Seleccione esta opción `Create Member` para crear un usuario en el entorno de publicación.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![create-member1](assets/create-member1.png)
 
 ### GENERAL - Detalles de los miembros {#general-member-details}
 
@@ -117,6 +123,7 @@ En Configuración de cuenta, un administrador de la comunidad puede:
    * ProhibidoUn miembro no puede iniciar sesión, lo que les impide ver páginas o participar en actividades que requieren iniciar sesión. Pueden seguir visitando anónimamente un sitio de la comunidad abierta.
 
    * No prohibidoUn miembro tiene acceso completo al sitio de la comunidad.
+
    El valor predeterminado es `Not Banned`.
 
 * **[!UICONTROL Límites de contribución]**
@@ -147,7 +154,7 @@ El `BADGES` panel permite asignar distintivos manualmente y revocarlos. Las insi
 
 Consulte también [Puntuación y distintivos](implementing-scoring.md).
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![create-member2](assets/create-member2.png)
 
 * **[!UICONTROL Añadir distintivos]**
    * Empiece a escribir para seleccionar los distintivos [](badges.md)disponibles. Una vez seleccionado un distintivo, elija cada sitio, o todos los sitios, en los que el distintivo debe mostrarse junto con el avatar del miembro.
@@ -173,7 +180,7 @@ Para acceder a la consola Grupos:
 
 Seleccione esta opción `Add Group` para crear un grupo en el entorno de publicación.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![group-console1](assets/group-console1.png)
 
 Los campos necesarios para crear un nuevo grupo de miembros del lado de publicación son:
 
