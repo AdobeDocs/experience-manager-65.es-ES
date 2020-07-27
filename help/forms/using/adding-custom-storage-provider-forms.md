@@ -1,6 +1,6 @@
 ---
-title: Almacenamiento personalizado para borradores y componentes de envíos
-seo-title: Almacenamiento personalizado para borradores y componentes de envíos
+title: almacenamiento personalizado para los borradores y el componente de envíos
+seo-title: almacenamiento personalizado para los borradores y el componente de envíos
 description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 seo-description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
@@ -9,12 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
 
-# Almacenamiento personalizado para borradores y componentes de envíos {#custom-storage-for-drafts-and-submissions-component}
+# almacenamiento personalizado para los borradores y el componente de envíos {#custom-storage-for-drafts-and-submissions-component}
 
 ## Información general {#overview}
 
@@ -31,7 +34,7 @@ De forma predeterminada, AEM Forms almacena los datos de usuario asociados con e
 
 ## Servicio de borradores de datos {#draft-data-service}
 
-Para personalizar el almacenamiento de datos de usuario para borradores, debe implementar todos los métodos de la `DraftDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la `DraftDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
 
 ```java
 /**
@@ -96,7 +99,7 @@ public interface DraftDataService {
 
 ## Servicio de envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de datos de usuario para envíos, debe implementar todos los métodos de la `SubmitDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la `SubmitDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
 
 ```java
 /**
@@ -202,8 +205,8 @@ Puede utilizar la anotación siguiente para aumentar la clasificación del servi
 
 Para utilizar la anotación anterior, importa lo siguiente a su proyecto:
 
-```
+```java
 import org.apache.felix.scr.annotations.Properties;
- import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Property;
 ```
 
