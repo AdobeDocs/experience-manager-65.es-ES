@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +71,7 @@ Configuración de la acción de envío de extremo restante
 >[!NOTE]
 Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si los campos se colocan en paneles diferentes.
 
-### Publicar datos enviados a un recurso o punto final de reposo externo {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Publicar datos enviados a un recurso o punto final de reposo externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Utilice la acción **Enviar a extremo** REST para publicar los datos enviados en una URL de reposo. La dirección URL puede ser de un servidor interno (el servidor en el que se procesa el formulario) o de un servidor externo.
 
@@ -107,7 +110,7 @@ Esta acción de envío está disponible para formularios adaptables basados en X
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
-La opción de envío del flujo de trabajo **** Enviar a formularios envía un archivo xml de datos y archivos adjuntos (si los hay) a un proceso existente de Adobe LiveCycle o AEM Forms en JEE.
+La opción de envío del flujo de trabajo **** Enviar a formularios envía un xml de datos y archivos adjuntos (si los hay) a un Adobe LiveCycle existente o a AEM Forms en proceso JEE.
 
 Para obtener información sobre cómo configurar la acción Enviar a un flujo de trabajo de formularios, consulte [Envío y procesamiento de los datos del formulario mediante flujos de trabajo](../../forms/using/submit-form-data-livecycle-process.md)de formulario.
 
@@ -117,7 +120,7 @@ La acción de envío **Enviar mediante el modelo** de datos de formulario escrib
 
 Además, puede enviar un archivo adjunto de formulario mediante un modelo de datos de formulario y un Documento de registro (DoR) al origen de datos.
 
-Para obtener información sobre el modelo de datos de formulario, consulte Integración [de datos de formularios](../../forms/using/data-integration.md)AEM.
+Para obtener información sobre el modelo de datos de formulario, consulte Integración [de datos de](../../forms/using/data-integration.md)AEM Forms.
 
 ## Acción de envío de Forms Portal {#forms-portal-submit-action}
 
@@ -133,7 +136,7 @@ Antes de usar la acción de envío **Invocar un flujo de trabajo** de AEM, [conf
 
 ## Revalidación del lado del servidor en formulario adaptable {#server-side-revalidation-in-adaptive-form}
 
-Normalmente, en cualquier sistema de captura de datos en línea, los desarrolladores colocan algunas validaciones de javascript en el lado del cliente para aplicar algunas reglas comerciales. Pero en los navegadores modernos, los usuarios finales pueden evitar estas validaciones y realizar envíos manualmente utilizando diversas técnicas, como la consola DevTools del explorador Web. Estas técnicas también son válidas para los formularios adaptables. Un desarrollador de formularios puede crear varios objetivos de validación, pero, técnicamente, los usuarios finales pueden omitir dichos objetivos de validación y enviar datos no válidos al servidor. Los datos no válidos rompen las reglas comerciales que ha aplicado un autor de formularios.
+Normalmente, en cualquier sistema de captura de datos en línea, los desarrolladores colocan algunas validaciones de JavaScript en el lado del cliente para aplicar algunas reglas comerciales. Pero en los navegadores modernos, los usuarios finales pueden evitar estas validaciones y realizar envíos manualmente utilizando diversas técnicas, como la consola DevTools del explorador Web. Estas técnicas también son válidas para los formularios adaptables. Un desarrollador de formularios puede crear varios objetivos de validación, pero, técnicamente, los usuarios finales pueden omitir dichos objetivos de validación y enviar datos no válidos al servidor. Los datos no válidos rompen las reglas comerciales que ha aplicado un autor de formularios.
 
 La función de revalidación del lado del servidor permite ejecutar también las validaciones proporcionadas por un autor de formularios adaptables al diseñar un formulario adaptable en el servidor. Evita cualquier posible transacción de envíos de datos y violaciones de reglas comerciales representadas en términos de validaciones de formularios.
 
@@ -163,7 +166,7 @@ En ocasiones, en el caso de reglas **de validación** complejas, la secuencia de
 
 Compatibilidad con funciones personalizadas en Expresiones de validación
 
-El autor puede configurar una biblioteca de javascript personalizada por formulario adaptable. En la biblioteca, solo mantenga las funciones reutilizables, que dependen de bibliotecas de terceros jquery y underscore.js.
+El autor puede configurar la biblioteca customJavaScript por formulario adaptable. En la biblioteca, solo mantenga las funciones reutilizables, que dependen de bibliotecas de terceros jquery y underscore.js.
 
 ## Gestión de errores en la acción de envío {#error-handling-on-submit-action}
 
