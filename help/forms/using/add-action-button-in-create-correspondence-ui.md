@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 1%
@@ -226,7 +226,7 @@ La administración de la acción/botón al hacer clic en acción/botón incluye 
    1. Haga clic con el botón Doble en el archivo ccustomization.js para abrirlo en CRX.
    1. En el archivo, pegue el siguiente código y haga clic en **Guardar todo**:
 
-      ```
+      ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
         * One instance of handler will be created for each action.
         * CM.domain.CCRCustomActionHandler is actionHandler class.
@@ -380,7 +380,7 @@ Proceso requerido de LiveCycle que habilita el proceso de servicio de correo ele
 
 1. Haga clic en **Importar**.
 
-#### Añadir ServiceName en la lista de servicio Allowlist {#adding-servicename-to-the-allowlist-service-list}
+#### Añadir ServiceName en la lista del servicio de Lista de permitidos {#adding-servicename-to-the-allowlist-service-list}
 
 Mencione en el servidor de AEM los servicios de LiveCycle a los que desea acceder el servidor de AEM.
 
