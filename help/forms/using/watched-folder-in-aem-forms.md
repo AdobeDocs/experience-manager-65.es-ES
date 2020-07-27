@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7153'
 ht-degree: 0%
@@ -360,7 +360,7 @@ El nombre de la carpeta de salida es una combinación del número de paso actual
 
 ECMAScript obtiene una referencia del servicio de contexto de flujo de trabajo y crea una implementación de la interfaz WorkflowContextProcessor. La implementación WorkflowContextProcessor acepta archivos de entrada, los copia en una ubicación temporal y devuelve un documento que representa el archivo copiado. En función del valor de la variable booleana purgePrevious, el paso actual elimina el resultado generado por última vez en el mismo paso cuando se inició el paso en la instancia de flujo de trabajo actual. Al final, se invoca el método wfSvc.execute para ejecutar la implementación WorkflowContextProcessor. El contenido del documento de salida se guarda en la carpeta de resultados en la ruta de acceso física mencionada en el nodo de configuración Carpeta vigilada.
 
-```java
+```javascript
 log.error("Watch-folder workflow script called for step: " + graniteWorkItem.getNode().getTitle());
 var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
 // Custom WorkflowContextProcessor implementation which defines the processWorkflowContext() method purely in JS
@@ -613,7 +613,7 @@ ECMAScript utilizaría la API createPDF del generador de PDF para convertir docu
 
 1. En la carpeta PDFG, cree un archivo denominado pdfg-openOffice-sample.ecma y agregue el siguiente código al archivo:
 
-   ```java
+   ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
    // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
    var impl = { processWorkflowContext: function (wrkfContext) {
