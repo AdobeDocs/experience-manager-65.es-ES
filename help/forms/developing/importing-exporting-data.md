@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2742'
+ht-degree: 0%
 
 ---
 
@@ -19,10 +22,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Acerca del servicio de integración de datos de formulario {#about-the-form-data-integration-service}
 
-El servicio de integración de datos de formulario puede importar datos en un formulario PDF y exportar datos desde un formulario PDF. Las operaciones de importación y exportación admiten dos tipos de formularios PDF:
+El servicio de integración de datos de formulario puede importar datos en un formulario PDF y exportar datos desde un formulario PDF. Las operaciones de importación y exportación admiten dos tipos de PDF forms:
 
 * Un formulario de Acrobat (creado en Acrobat) es un documento PDF que contiene campos de formulario.
-* Un formulario XML de Adobe (creado en Designer) es un documento PDF que se ajusta a la Arquitectura de formularios XML de Adobe XML (XFA).
+* Un formulario XML de Adobe (creado en Designer) es un documento PDF que se ajusta a la arquitectura XML de formularios XML de Adobe (XFA).
 
 Los datos del formulario pueden existir en uno de los siguientes formatos, según el tipo de formulario PDF:
 
@@ -31,8 +34,8 @@ Los datos del formulario pueden existir en uno de los siguientes formatos, segú
 
 Puede realizar estas tareas mediante el servicio de integración de datos de formulario:
 
-* Importar datos en formularios PDF. Para obtener más información, consulte [Importación de datos](importing-exporting-data.md#importing-form-data)de formulario.
-* Exporte datos desde formularios PDF. Para obtener más información, consulte [Exportación de datos](importing-exporting-data.md#exporting-form-data)de formulario.
+* Importar datos a PDF forms. Para obtener más información, consulte [Importación de datos](importing-exporting-data.md#importing-form-data)de formulario.
+* Exportar datos de PDF forms. Para obtener más información, consulte [Exportación de datos](importing-exporting-data.md#exporting-form-data)de formulario.
 
 >[!NOTE]
 >
@@ -40,7 +43,7 @@ Puede realizar estas tareas mediante el servicio de integración de datos de for
 
 ## Importación de datos de formulario {#importing-form-data}
 
-Puede importar datos de formulario en formularios PDF interactivos mediante el servicio de integración de datos de formulario. Un formulario PDF interactivo es un documento PDF que contiene uno o varios campos para recopilar información de un usuario o para mostrar información personalizada. El servicio de integración de datos de formulario no admite cálculos, validación ni secuencias de comandos de formularios.
+Puede importar datos de formulario en PDF forms interactivos mediante el servicio de integración de datos de formulario. Un formulario PDF interactivo es un documento PDF que contiene uno o varios campos para recopilar información de un usuario o para mostrar información personalizada. El servicio de integración de datos de formulario no admite cálculos, validación ni secuencias de comandos de formularios.
 
 Para importar datos en un formulario creado en Designer, debe hacer referencia a un origen de datos XDP XML válido. Considere el siguiente ejemplo de formulario de solicitud de hipoteca.
 
@@ -48,7 +51,7 @@ Para importar datos en un formulario creado en Designer, debe hacer referencia a
 
 Para importar valores de datos en este formulario, debe tener un origen de datos XDP XML válido que corresponda al formulario. No se puede utilizar un origen de datos XML arbitrario para importar datos en un formulario mediante el servicio de integración de datos de formulario. La diferencia entre un origen de datos XML arbitrario y un origen de datos XML XDP es que un origen de datos XDP se ajusta a la Arquitectura de formularios XML (XFA). El siguiente XML representa un origen de datos XML XDP que corresponde al formulario de solicitud de hipoteca de ejemplo.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" ?>
  - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
  - <xfa:data>
@@ -103,10 +106,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (obligatorio si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (obligatorio si los AEM Forms se implementan en JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Crear un cliente del servicio de integración de datos de formulario**
 
@@ -138,7 +141,7 @@ Después de importar datos en un formulario, puede guardarlo como archivo PDF. U
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de integración de datos de formulario](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
+[Inicios rápidos de la API del servicio de integración de datos de formulario](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
 
 [Exportación de datos de formulario](importing-exporting-data.md#exporting-form-data)
 
@@ -171,6 +174,7 @@ Importar datos de formulario mediante la API de integración de datos de formula
 
    * El `com.adobe.idp.Document` objeto que almacena el formulario PDF.
    * El `com.adobe.idp.Document` objeto que almacena datos de formulario.
+
    El `importData` método devuelve un `com.adobe.idp.Document` objeto que almacena un formulario PDF que contiene los datos ubicados en el origen de datos XML.
 
 1. Guarde el formulario PDF como archivo PDF.
@@ -203,7 +207,7 @@ Importar datos de formulario mediante la API de integración de datos de formula
 1. Cree un cliente del servicio de integración de datos de formulario.
 
    * Cree un `FormDataIntegrationClient` objeto utilizando su constructor predeterminado.
-   * Cree un `FormDataIntegrationClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `FormDataIntegrationClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `FormDataIntegrationClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -235,6 +239,7 @@ Importar datos de formulario mediante la API de integración de datos de formula
 
    * El `BLOB` objeto que almacena el formulario PDF.
    * El `BLOB` objeto que almacena datos de formulario.
+
    El `importData` método devuelve un `BLOB` objeto que almacena un formulario PDF que contiene los datos ubicados en el origen de datos XML.
 
 1. Guarde el formulario PDF como archivo PDF.
@@ -248,7 +253,7 @@ Importar datos de formulario mediante la API de integración de datos de formula
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Exportación de datos de formulario {#exporting-form-data}
 
@@ -277,8 +282,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (obligatorio si se implementan AEM Forms en JBoss)
+* jbossall-client.jar (obligatorio si los AEM Forms se implementan en JBoss)
 
 **Crear un cliente del servicio de integración de datos de formulario**
 
@@ -294,7 +299,7 @@ Después de hacer referencia a un formulario PDF que contiene datos de formulari
 
 **Guardar los datos del formulario como un archivo XML**
 
-Después de exportar los datos del formulario, puede guardarlos como un archivo XML. Una vez guardado como archivo XML, puede abrir el archivo XML en un visor XML para ver los datos del formulario.
+Después de exportar los datos del formulario, puede guardarlos como un archivo XML. Una vez guardado como archivo XML, puede abrir el archivo XML en un visor XML para realizar una vista de los datos del formulario.
 
 **Consulte también**
 
@@ -306,7 +311,7 @@ Después de exportar los datos del formulario, puede guardarlos como un archivo 
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de integración de datos de formulario](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
+[Inicios rápidos de la API del servicio de integración de datos de formulario](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
 
 [Importación de datos de formulario](importing-exporting-data.md#importing-form-data)
 
@@ -360,7 +365,7 @@ Exportar datos de formulario mediante la API de integración de datos de formula
 1. Cree un cliente del servicio de integración de datos de formulario.
 
    * Cree un `FormDataIntegrationClient` objeto utilizando su constructor predeterminado.
-   * Cree un `FormDataIntegrationClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `FormDataIntegrationClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `FormDataIntegrationClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -393,6 +398,6 @@ Exportar datos de formulario mediante la API de integración de datos de formula
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
