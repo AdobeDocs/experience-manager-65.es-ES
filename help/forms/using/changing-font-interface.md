@@ -11,16 +11,19 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 1%
 
 ---
 
 
 # Cambio de la fuente en la interfaz{#changing-the-font-on-the-interface}
 
-Puede cambiar la fuente que se muestra en el espacio de trabajo de AEM Forms. Las fuentes utilizadas en una sección específica de la interfaz de usuario se definen en la sección correspondiente de la hoja de estilo. Puede cambiar las fuentes de la interfaz de usuario de forma selectiva.
+Puede cambiar la fuente que se muestra en el espacio de trabajo AEM Forms. Las fuentes utilizadas en una sección específica de la interfaz de usuario se definen en la sección correspondiente de la hoja de estilo. Puede cambiar las fuentes de la interfaz de usuario de forma selectiva.
 
-Siga los pasos [genéricos para personalizar](../../forms/using/generic-steps-html-workspace-customization.md) el espacio de trabajo de AEM Forms y, según sus necesidades, siga los pasos para personalizar CSS, HTML o ambos.
+Siga los pasos [Genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md) del espacio de trabajo AEM Forms y, según sus necesidades, siga los pasos para personalizar CSS, HTML o ambos.
 
 1. Cambie o agregue la familia de fuentes en un estilo existente.
 1. Cambie o agregue la familia de fuentes en línea para el elemento HTML.
@@ -43,7 +46,7 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
 
       Actualice el archivo /apps/ws/js/runtime/templates/appnavigation.html de la siguiente manera:
 
-      ```
+      ```jsp
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
       <li class="todo"><a href="#/todo" title="<%= $.t('index.header.topnav.todo.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.todo.name')%></a></li>
       <li class="track"><a href="#/tracking" title="<%= $.t('index.header.topnav.tracking.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.tracking.name')%></a></li>
@@ -62,7 +65,7 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
 
       Para agregar la familia de fuentes en línea para el elemento HTML, agregue lo siguiente en el archivo appnavigation.html en /apps/ws/js/Runtime/templates.
 
-      ```css
+      ```jsp
       <div id="topnav" class="myNewFontStyle">
           <ul>
               <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
