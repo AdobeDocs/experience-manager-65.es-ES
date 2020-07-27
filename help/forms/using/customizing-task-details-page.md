@@ -1,15 +1,18 @@
 ---
 title: Personalización de la página de detalles de tarea
 seo-title: Personalización de la página de detalles de tarea
-description: Personalización de la página de detalles de la tarea en el espacio de trabajo de AEM Forms para modificar la información predeterminada que se muestra sobre una tarea.
-seo-description: Personalización de la página de detalles de la tarea en el espacio de trabajo de AEM Forms para modificar la información predeterminada que se muestra sobre una tarea.
+description: Personalización de la página de detalles de la tarea en el espacio de trabajo AEM Forms para modificar la información predeterminada que se muestra sobre una tarea.
+seo-description: Personalización de la página de detalles de la tarea en el espacio de trabajo AEM Forms para modificar la información predeterminada que se muestra sobre una tarea.
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +23,8 @@ La página de detalles de tarea contiene información sobre una tarea y sus proc
 
 Puede agregar la siguiente información a la página de detalles de la tarea:
 
-* Información disponible en el objeto JSON de una tarea (sección Tarea del espacio de trabajo de [AEM Forms Descripción](/help/forms/using/html-workspace-json-object-description.md)del objeto JSON)
-* Información disponible en el objeto JSON de una instancia de proceso (sección Instancia de proceso en el espacio de trabajo de [AEM Forms Descripción](/help/forms/using/html-workspace-json-object-description.md)del objeto JSON)
+* Información disponible en el objeto JSON de una tarea (sección Tarea del espacio de trabajo [AEM Forms Descripción](/help/forms/using/html-workspace-json-object-description.md)del objeto JSON)
+* Información disponible en el objeto JSON de una instancia de proceso (sección Procesar instancia en el espacio de trabajo [AEM Forms Descripción](/help/forms/using/html-workspace-json-object-description.md)del objeto JSON)
 
 Para personalizar la página de detalles de la tarea:
 
@@ -32,7 +35,7 @@ Para personalizar la página de detalles de la tarea:
 
    Por ejemplo, para agregar información sobre la selección de ruta requerida en la página de detalles de la tarea, puede agregar el siguiente par clave-valor en el bloque de tarea:
 
-   ```
+   ```json
    "todo" : {
        .
        .
@@ -82,6 +85,6 @@ Para personalizar la página de detalles de la tarea:
 
 >[!NOTE]
 >
->Para personalizar la página de detalles de la tarea con tareas creadas en la ficha Proceso **de** Inicio del espacio de trabajo de AEM Forms, agregue la nueva información a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Para personalizar la página de detalles de la tarea con tareas creadas en la ficha Proceso **de** Inicio del espacio de trabajo AEM Forms, agregue la nueva información a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >Para agregar nuevos estilos a la información agregada en la página de detalles, modifique el archivo CSS mediante la sección Cambios *en la interfaz de* usuario de Personalización [del espacio de trabajo](changing-locale-user-interface.md).
