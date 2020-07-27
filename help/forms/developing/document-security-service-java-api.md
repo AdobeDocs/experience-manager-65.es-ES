@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Rig
 
 [Inicio rápido (modo SOAP): Eliminación de una directiva de un documento de Word mediante la API de Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -53,7 +56,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código Java crea una nueva directiva denominada *Permitir copia*. El conjunto de directivas al que se agrega la directiva se denomina Conjunto de directivas *globales*. Este conjunto de directivas existe de forma predeterminada. (Consulte [Creación de políticas](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -182,7 +185,7 @@ El siguiente ejemplo de código Java crea una nueva directiva denominada *Permit
 
 El siguiente ejemplo de código Java modifica una directiva denominada *Permitir copia* al establecer el período de concesión sin conexión en 40 días. (Consulte [Modificación de directivas](/help/forms/developing/protecting-documents-policies.md#modifying-policies)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -283,7 +286,7 @@ El siguiente ejemplo de código Java modifica una directiva denominada *Permitir
 
 En el siguiente ejemplo de código Java se elimina una directiva denominada *Permitir copia*. (Consulte [Eliminación de directivas](/help/forms/developing/protecting-documents-policies.md#deleting-policies)).
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -375,7 +378,7 @@ En el siguiente ejemplo de código Java se elimina una directiva denominada *Per
 
 El siguiente ejemplo de código Java aplica una directiva denominada *Permitir copia* a un documento PDF denominado *Loan.pdf*. El conjunto de directivas al que se agrega la directiva se denomina Conjunto de directivas *globales*. El documento protegido por una política se guarda como archivo PDF denominado *PolicyProtectedLoanDoc.pdf. *(Consulte [Aplicación de políticas a Documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -481,7 +484,7 @@ El siguiente ejemplo de código Java aplica una directiva denominada *Permitir c
 
 El siguiente ejemplo de código elimina una directiva de un documento PDF denominado *PolicyProtectedLoanDoc.pdf*. El documento PDF no seguro se guarda como *unNoProtectedLoan.pdf*. (Consulte [Eliminación de directivas de Documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -588,7 +591,7 @@ El siguiente ejemplo de código elimina una directiva de un documento PDF denomi
 
 El siguiente ejemplo de código Java anula un documento protegido por una política denominado *PolicyProtectedLoanDoc.pdf*. Un documento PDF revisado se encuentra en la siguiente ubicación URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Consulte [Revocación del acceso a Documentos](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)).
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -702,7 +705,7 @@ El siguiente ejemplo de código Java anula un documento protegido por una polít
 
 El siguiente ejemplo de código Java inspecciona un documento PDF protegido por una política denominado *PolicyProtectedLoanDoc.* pdf. (Consulte [Inspección de Documentos](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protegidos por políticas).
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -820,7 +823,7 @@ El siguiente ejemplo de código Java inspecciona un documento PDF protegido por 
 
 El siguiente ejemplo de código Java restablece el acceso a un documento PDF revocado llamado *PolicyProtectedLoanDoc.pdf*. (Consulte [Restablecimiento del acceso a Documentos](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)revocados).
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -926,7 +929,7 @@ El siguiente ejemplo de código Java restablece el acceso a un documento PDF rev
 
 El siguiente ejemplo de código Java crea una nueva marca de agua PDF con el nombre &#39;Ejemplo de marca de agua PDF&#39;. Esta marca de agua contiene un solo elemento (consulte [Creación de marcas de agua](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1059,7 +1062,7 @@ public class PDFWatermarksSOAPMode {
 
 El siguiente ejemplo de código Java crea una nueva marca de agua de texto denominada *Ejemplo de marca de agua de texto*. Esta marca de agua contiene un solo elemento.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1208,7 +1211,7 @@ public class TextWatermarks {
 
 El siguiente ejemplo de código Java modifica una marca de agua denominada &#39;Marca de agua de texto de muestra&#39; y establece la opacidad del primer elemento en 100.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1320,7 +1323,7 @@ public class ModifyWatermarks {
 
 El siguiente ejemplo de código Java modifica una marca de agua denominada *Confidencial* mediante la modificación del valor del `opacity` atributo en 80.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1418,7 +1421,7 @@ El siguiente ejemplo de código Java modifica una marca de agua denominada *Conf
 
 El siguiente ejemplo de código Java busca el evento de creación de directivas.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1531,7 +1534,7 @@ El siguiente ejemplo de código Java busca el evento de creación de directivas.
 
 El siguiente ejemplo de código Java aplica una directiva denominada *Permitir copia* a un documento de Word denominado *Loan.doc*. El conjunto de directivas al que se agrega la directiva se denomina Conjunto de directivas *globales*. El documento protegido por una política se guarda como un archivo DOC denominado *PolicyProtectedLoanDoc.doc. *(Consulte [Aplicación de políticas a Documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1646,7 +1649,7 @@ El siguiente ejemplo de código Java aplica una directiva denominada *Permitir c
 
 El siguiente ejemplo de código elimina una directiva de un documento de Word denominado *PolicyProtectedLoanDoc.doc*. El documento de Word no seguro se guarda como *noProtectedLoan.doc*. (Consulte [Eliminación de directivas de Documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)de Word).
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1754,7 +1757,7 @@ El siguiente ejemplo de código elimina una directiva de un documento de Word de
 
 El siguiente ejemplo de código Java crea una nueva directiva abstracta denominada AllowCopy. El conjunto de directivas al que se agrega la directiva se denomina Conjunto de directivas globales. Este conjunto de directivas existe de forma predeterminada. (Consulte Creación de políticas).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1871,7 +1874,7 @@ public class CreateAbstractPolicySoap {
 
 El siguiente ejemplo de código Java modifica una directiva abstracta denominada AllowCopy. El conjunto de políticas en el que se modifica la política se denomina Conjunto de políticas globales. Este conjunto de directivas existe de forma predeterminada. (Consulte Creación de políticas).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1970,7 +1973,7 @@ public class ModifyingAbstractPolicySoap {
 
 En el siguiente ejemplo de código Java se elimina una directiva abstracta denominada AllowCopy. El conjunto de directivas desde el que se elimina la directiva se denomina Conjunto de directivas globales. Este conjunto de directivas existe de forma predeterminada. (Consulte Creación de políticas).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2057,7 +2060,7 @@ public class DeleteAbstractPolicySoap {
 
 El siguiente ejemplo de código Java muestra el método para proteger un Documento en el flujo de trabajo de instrucciones, para un usuario existente.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2168,7 +2171,7 @@ El siguiente ejemplo de código Java muestra cómo puede proteger un documento e
 * Se crea un nuevo usuario, licencia y directiva.
 * El usuario está asociado con la licencia y la política, y el documento está protegido.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
