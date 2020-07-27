@@ -1,8 +1,8 @@
 ---
 title: Informes personalizados en proceso Sistema de informes
 seo-title: Informes personalizados en proceso Sistema de informes
-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de JEE Process Sistema de informes.
-seo-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de JEE Process Sistema de informes.
+description: Puede crear informes personalizados y agregarlos a los AEM Forms en la interfaz de usuario de JEE Process Sistema de informes.
+seo-description: Puede crear informes personalizados y agregarlos a los AEM Forms en la interfaz de usuario de JEE Process Sistema de informes.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -45,20 +48,20 @@ La interfaz CRX QueryBuilder REST expone la funcionalidad del Creador de Consult
    >
    >En cada consulta, el parámetro path señala a la ubicación del almacenamiento crx y los caracteres se escapan según el estándar de URL.
 
-## Creación de un servicio mediante la API de Consulta Builder {#creating-a-service-using-query-builder-api-nbsp}
+## Creación de un servicio mediante la API de Consulta Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
 El requisito previo para crear un servicio mediante la API del creador de Consultas es [crear e implementar el paquete](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) CQ OSGI y [utilizar la API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)del creador de Consultas.
 
 1. Cree un servicio OSGi con las anotaciones adecuadas. Para acceder a QueryBuilder, utilice:
 
-   ```
+   ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
 1. Cree un grupo de predicados. El código para crear un grupo de predicados es:
 
-   ```
+   ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
@@ -340,7 +343,7 @@ public class PeriodicProcessVolume {
 
 El `pom.xml`archivo de muestra que se va a generar por encima del servicio es:
 
-```java
+```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -420,7 +423,7 @@ El `pom.xml`archivo de muestra que se va a generar por encima del servicio es:
 </project>
 ```
 
-## Creación de una IU independiente {#creating-a-separate-ui-nbsp}
+## Creación de una IU independiente  {#creating-a-separate-ui-nbsp}
 
 Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creación de un nodo](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX y provisión de los privilegios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acceso adecuados.
 
@@ -432,7 +435,7 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
 
    Un nodo de ejemplo con archivos JSP y CSS
 
-1. Añada el código javascript para inicio de una llamada de Ajax a la API REST de querybuilder o a su servicio. Además, agregue los argumentos adecuados.
+1. Agregue código JavaScript para inicio una llamada de Ajax a la API REST de querybuilder o a su servicio. Además, agregue los argumentos adecuados.
 
 1. Añada un controlador de éxito adecuado a la llamada de Ajax para analizar y mostrar el resultado. Puede analizar el resultado en varios formatos (json/csv/definido por el usuario) y mostrarlo en una tabla o en otros formularios.
 
@@ -440,7 +443,7 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
 
 Un código JSP de muestra que utiliza tanto el servicio OSGi como la API de QueryBuilder es:
 
-```
+```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integración de la interfaz de usuario del informe en la interfaz de usuario de Sistema de informes de procesos existente {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integración de la interfaz de usuario del informe en la interfaz de usuario de Sistema de informes de procesos existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creación de un nodo](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX y provisión de los privilegios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acceso adecuados.
 
@@ -640,6 +643,7 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
    * **link**- Especifica un vínculo relativo al procesador de la IU independiente. El vínculo se crea en el paso 1.
    * **descripción**: especifica la descripción de una línea del informe. Puede dejar vacío el campo de descripción.
    * **icono**: especifica la imagen que se va a representar en forma de imagen el informe. Puede dejar vacío el campo de icono.
+
    ![Propiedades del nodo ](assets/node_properties_new.png)
 
    Propiedades del nodo
