@@ -11,7 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Los pasos genéricos para realizar cualquier personalización son:
 1. Copie la `/libs/ws/locales` carpeta en la `/apps/ws` carpeta. Haga clic en **[!UICONTROL Guardar todo]**.
 1. Actualice las referencias y las rutas relativas en el `GET.jsp` archivo, como se muestra a continuación, y haga clic en **[!UICONTROL Guardar todo]**.
 
-   ```
+   ```jsp
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
    ```
 
@@ -95,6 +98,6 @@ Los pasos genéricos para realizar cualquier personalización son:
 
    1. Copie /libs/ws/js/registry.js en `/apps/ws/js/registry.js`.
 
-1. Haga clic en **[!UICONTROL Guardar todo]**, borre la caché y actualice el espacio de trabajo de AEM Forms.
+1. Haga clic en **[!UICONTROL Guardar todo]**, borre la caché y actualice el espacio de trabajo AEM Forms.
 
    Acceda a la URL `https://'[server]:[port]'/lc/ws` e inicie sesión con credenciales de administrador/contraseña. El explorador redirige a `https://'[server]:[port]'/lc/apps/ws/index.html`.
