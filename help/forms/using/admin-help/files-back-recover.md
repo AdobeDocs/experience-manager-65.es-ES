@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2190'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Permite la administración de tareas en clientes sin Flash Player y Adobe Reader
 
 ## Base de datos de formularios AEM {#aem-forms-database}
 
-La base de datos de formularios AEM almacena contenido como artefactos de formularios, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos del GDS y del directorio raíz de Almacenamiento de contenido (para Content Services). Las copias de seguridad de la base de datos se pueden realizar en tiempo real sin interrupción del servicio y la recuperación puede realizarse en un punto específico en el tiempo o a un cambio concreto. En esta sección se describe cómo configurar la base de datos para que se pueda realizar una copia de seguridad en tiempo real.
+La base de datos de formularios AEM almacena contenido como artefactos de formulario, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos del GDS y del directorio raíz de Almacenamiento de contenido (para Content Services). Las copias de seguridad de la base de datos se pueden realizar en tiempo real sin interrupción del servicio y la recuperación puede realizarse en un punto específico en el tiempo o a un cambio concreto. En esta sección se describe cómo configurar la base de datos para que se pueda realizar una copia de seguridad en tiempo real.
 
 En un sistema de formularios AEM configurado correctamente, el administrador del sistema y el administrador de la base de datos pueden colaborar fácilmente para recuperar el sistema a un estado coherente y conocido.
 
@@ -146,7 +146,7 @@ Puede utilizar la utilidad mysqldump para obtener la copia de seguridad completa
 
 Consulte Resumen [de estrategia de copia de seguridad](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
-```as3
+```text
 binlog_format=mixed
 log-bin=logname
 ```
