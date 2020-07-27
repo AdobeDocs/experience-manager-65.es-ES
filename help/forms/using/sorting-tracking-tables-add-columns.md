@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
 
 # Personalización de las tablas de seguimiento{#customize-tracking-tables}
 
-La ficha de seguimiento del espacio de trabajo de AEM Forms se utiliza para mostrar los detalles de las instancias de proceso en las que participa el usuario que ha iniciado sesión. Para realizar la vista de las tablas de seguimiento, primero seleccione un nombre de proceso en el panel izquierdo para ver su lista de instancias en el panel medio. Seleccione una instancia de proceso para ver una tabla de tareas generadas por esta instancia en el panel derecho. De forma predeterminada, las columnas de la tabla muestran los atributos de tarea siguientes (el atributo correspondiente del modelo de tarea se indica entre paréntesis):
+La ficha de seguimiento del espacio de trabajo AEM Forms se utiliza para mostrar los detalles de las instancias de proceso en las que participa el usuario que ha iniciado sesión. Para realizar la vista de las tablas de seguimiento, primero seleccione un nombre de proceso en el panel izquierdo para ver su lista de instancias en el panel medio. Seleccione una instancia de proceso para ver una tabla de tareas generadas por esta instancia en el panel derecho. De forma predeterminada, las columnas de la tabla muestran los atributos de tarea siguientes (el atributo correspondiente del modelo de tarea se indica entre paréntesis):
 
 * ID ( `taskId`)
 * Nombre ( `stepName`)
@@ -119,7 +122,7 @@ Para las siguientes personalizaciones en la tabla de tarea, debe realizar cambio
 
 1. Para modificar los atributos de tarea mostrados en la tabla y su orden, configure el archivo /ws/js/runtime/templates/processinstancehistory.html :
 
-   ```as3
+   ```html
    <table>
        <thead>
            <tr>
@@ -134,7 +137,7 @@ Para las siguientes personalizaciones en la tabla de tarea, debe realizar cambio
    </table>
    ```
 
-   ```as3
+   ```html
    <table>
        <tbody>
            <%_.each(obj, function(task){%>
@@ -157,7 +160,7 @@ Para ordenar la tabla de lista de tareas al hacer clic en el encabezado de colum
 
 1. Registre un controlador de clics para `.fixedTaskTableHeader th` el archivo `js/runtime/views/processinstancehistory.js`.
 
-   ```as3
+   ```javascript
    events: {
        //other handlers
        "click .fixedTaskTableHeader th": "onTaskTableHeaderClick",
@@ -167,7 +170,7 @@ Para ordenar la tabla de lista de tareas al hacer clic en el encabezado de colum
 
    En el controlador, invoque la `onTaskTableHeaderClick` función de `js/runtime/util/history.js`.
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick: function (event) {
            history.onTaskTableHeaderClick(event);
    }
@@ -179,7 +182,7 @@ Para ordenar la tabla de lista de tareas al hacer clic en el encabezado de colum
 
    La ordenación se realiza mediante la función de ordenación de la red troncal de la colección de listas de tareas, proporcionando una función de comparación.
 
-   ```as3
+   ```javascript
        return {
            //other methods
            onTaskTableHeaderClick  : onTaskTableHeaderClick,
@@ -187,7 +190,7 @@ Para ordenar la tabla de lista de tareas al hacer clic en el encabezado de colum
        };
    ```
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick = function (event) {
            var target = $(event.target),
             comparator,
