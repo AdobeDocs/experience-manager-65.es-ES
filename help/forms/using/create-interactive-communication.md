@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6120'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ Toque el fragmento de documento, ![configure_icon](assets/configure_icon.png) (C
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Toque el fragmento de documento, ![configure_icon](assets/configure_icon.png) (Configurar) y, a continuación, toque **[!UICONTROL Propiedades]** desde la barra de tareas de la comunicación interactiva. La sección **[!UICONTROL Variables y Objetos]** del modelo de datos lista las variables, incluidas las variables ocultas, y los objetos del modelo de datos utilizados en los fragmentos de documento. Utilice el icono ![Editar](assets/edit.svg) (Editar) situado junto a cada objeto o variable del modelo de datos para editar las propiedades. Además, para los fragmentos de documento que se han [generado](#synchronize) automáticamente en el canal web mediante el canal de impresión, utilice el icono ![](assets/cancelinheritance.png) (Cancelar herencia) situado junto a cada objeto y variable del modelo de datos para [cancelar la herencia](#cancelinheritance) y poder editarlas.
+   Toque el fragmento de documento, ![configure_icon](assets/configure_icon.png) (Configurar) y, a continuación, toque **[!UICONTROL Propiedades]** desde la barra de tareas de la comunicación interactiva. La sección **[!UICONTROL Variables y Objetos]** del modelo de datos lista las variables, incluidas las variables ocultas, y los objetos del modelo de datos utilizados en los fragmentos de documento. Utilice el icono ![Editar](assets/edit.svg) (Editar) situado junto a cada objeto o variable del modelo de datos para editar las propiedades. Además, para los fragmentos de documento que se han [generado](#synchronize) automáticamente en el canal Web mediante el canal Imprimir, utilice el icono ![cancelación de herencia](assets/cancelinheritance.png) (Cancelar herencia) junto a cada objeto y variable del modelo de datos para [cancelar la herencia](#cancelinheritance) y poder editarlas.
 
 1. Para agregar componentes adicionales en el canal Web, con el canal Web seleccionado, toque **[!UICONTROL Componentes]**. Arrastre y suelte los componentes en el canal web de la comunicación interactiva según sea necesario y continúe configurándolos.
 
@@ -386,12 +386,12 @@ Toque el panel raíz en la plantilla Web y toque **+** para agregar un component
 
 #### Añadir o editar texto en celdas de tabla {#addedittexttable}
 
-1. Seleccione el cuadro de texto predeterminado en la celda de la tabla y toque ![](assets/edit.png) (Editar).
-1. Escriba el texto en la celda de la tabla y toque ![](assets/done_icon.png) para guardarlo.
+1. Seleccione el cuadro de texto predeterminado en la celda de la tabla y toque ![Editar](assets/edit.png) (Editar).
+1. Escriba el texto en la celda de la tabla y toque ![done_icon](assets/done_icon.png) para guardarlo.
 
 #### Creación de enlaces entre celdas de tabla y elementos de objeto del modelo de datos {#createbindingtablecells}
 
-1. Seleccione el cuadro de texto predeterminado en la fila de la tabla y toque ![](assets/edit.png) (Editar).
+1. Seleccione el cuadro de texto predeterminado en la fila de la tabla y toque ![Editar](assets/edit.png) (Editar).
 1. Puntee en la lista desplegable de objetos del Modelo de datos y seleccione la propiedad.
 1. Toque para guardar y crear un enlace entre la celda de la tabla y la propiedad del objeto del modelo de datos.
 
@@ -399,10 +399,10 @@ Toque el panel raíz en la plantilla Web y toque **+** para agregar un component
 
 #### Creación de un hipervínculo para texto en la celda de la tabla {#createhyperlinktable}
 
-1. Seleccione el cuadro de texto predeterminado en la celda de la tabla y toque ![](assets/edit.svg) (Editar).
+1. Seleccione el cuadro de texto predeterminado en la celda de la tabla y toque ![Editar](assets/edit.svg) (Editar).
 1. Seleccione el texto en la celda de la tabla y toque el icono Hipervínculo.
 1. Especifique la dirección URL en el campo **Ruta** .
-1. Toque ![](assets/done_icon.png) para guardar las propiedades del hipervínculo.
+1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del hipervínculo.
 
 ![Crear hipervínculo](assets/create_hyperlink_table_new.png)
 
@@ -426,9 +426,9 @@ La ordenación se puede aplicar a las columnas de tablas que contengan:
 
 Para habilitar la clasificación:
 
-1. Seleccione la tabla y toque ![](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el navegador de **contenido** de la barra de tareas de la comunicación interactiva.
+1. Seleccione la tabla y toque ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el navegador de **contenido** de la barra de tareas de la comunicación interactiva.
 1. Seleccione **Activar ordenación.**
-1. Toque ![](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, en los encabezados de columna representan que la clasificación se ha activado.
+1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, en los encabezados de columna representan que la clasificación se ha activado.
 
    ![Habilitar ordenación](assets/enable_sorting_new-1.png)
 
@@ -479,7 +479,7 @@ Puede agregar un botón como componente al canal web de la comunicación interac
 Para agregar un botón y definir reglas en él:
 
 1. Toque el panel raíz en la plantilla Web y toque **+** para agregar el componente **Botón** a la comunicación interactiva.
-1. Toque el componente de botón y toque ![](assets/edit-rules.png) para definir las reglas al tocar el botón.
+1. Puntee en el componente de botón y toque ![edit-rules](assets/edit-rules.png) para definir las reglas al tocar el botón.
 1. En la sección **Cuándo** , seleccione **clic** en la lista desplegable de botones que se encuentra en el estado.
 1. En la sección **Entonces** :
 
