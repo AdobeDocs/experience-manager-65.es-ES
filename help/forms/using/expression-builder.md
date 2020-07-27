@@ -1,8 +1,8 @@
 ---
-title: Funciones remotas en el Generador de expresiones
+title: Funciones remotas en el Generador de Expresiones
 seo-title: Generador de expresiones
-description: El Generador de expresiones de la administración de correspondencia permite crear expresiones y funciones remotas.
-seo-description: El Generador de expresiones de la administración de correspondencia permite crear expresiones y funciones remotas.
+description: El Generador de Expresiones de la administración de correspondencia permite crear expresiones y funciones remotas.
+seo-description: El Generador de Expresiones de la administración de correspondencia permite crear expresiones y funciones remotas.
 uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,21 @@ topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
 
-# Funciones remotas en el Generador de expresiones{#remote-functions-in-expression-builder}
+# Funciones remotas en el Generador de Expresiones{#remote-functions-in-expression-builder}
 
-Con el Generador de expresiones, puede crear expresiones o condiciones que realicen cálculos en los valores de datos proporcionados por el diccionario de datos o por los usuarios finales. Correspondence Management utiliza el resultado de la evaluación de expresiones para seleccionar recursos como texto, imágenes, listas y condiciones e insertarlos en la correspondencia según sea necesario.
+Con el Generador de Expresiones, puede crear expresiones o condiciones que realicen cálculos en los valores de datos proporcionados por el diccionario de datos o por usuarios finales. Correspondence Management utiliza el resultado de la evaluación de expresiones para seleccionar recursos como texto, imágenes, listas y condiciones e insertarlos en la correspondencia según sea necesario.
 
 ## Creación de expresiones y funciones remotas con el generador de expresiones {#creating-expressions-and-remote-functions-with-expression-builder}
 
-El Generador de expresiones utiliza de forma interna bibliotecas JSP EL, por lo que la expresión se ajusta a la sintaxis JSPEL. Para obtener más información, consulte Expresiones [de](#exampleexpressions)ejemplo.
+El Generador de Expresiones utiliza de forma interna bibliotecas JSP EL, por lo que la expresión se ajusta a la sintaxis JSPEL. Para obtener más información, consulte expresiones [de](#exampleexpressions)ejemplo.
 
 ![Generador de expresiones](assets/expressionbuilder.png)
 
@@ -29,7 +32,7 @@ El Generador de expresiones utiliza de forma interna bibliotecas JSP EL, por lo 
 
 Los operadores disponibles para su uso en expresiones están disponibles en la barra superior del generador de expresiones.
 
-### Expresiones de ejemplo {#exampleexpressions}
+### expresiones de ejemplo {#exampleexpressions}
 
 Estos son algunos ejemplos de JSP EL que puede utilizar con frecuencia en su solución de administración de correspondencia:
 
@@ -39,7 +42,7 @@ Estos son algunos ejemplos de JSP EL que puede utilizar con frecuencia en su sol
 
 Puede encontrar más información en la especificación [](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)JSP EL. El administrador de expresiones del lado del cliente no admite determinadas variables y funciones en la especificación JSP EL, específicamente:
 
-* Los índices de recopilación y las claves de asignación (con la [] notación) no son compatibles con los nombres de variables para las expresiones evaluadas en el lado del cliente.
+* Los índices de recopilación y las claves de asignación (con la [] notación) no se admiten en los nombres de variables para expresiones evaluadas en el lado del cliente.
 * A continuación se indican los tipos de parámetro o los tipos de devolución de funciones utilizados en las expresiones:
 
    * java.lang.String
@@ -66,21 +69,21 @@ Puede encontrar más información en la especificación [](https://download.orac
 
 ### Función remota {#remote-function}
 
-Las funciones remotas proporcionan la capacidad de usar lógica personalizada en expresiones. Puede escribir una lógica personalizada para utilizarla en la expresión como un método en Java y se puede utilizar la misma función dentro de las expresiones. Las funciones remotas disponibles se muestran en la ficha &quot;Funciones remotas&quot;, en la parte izquierda del Editor de expresiones.
+Las funciones remotas permiten utilizar la lógica personalizada en expresiones. Puede escribir la lógica personalizada que se usará en la expresión como método en Java y se puede usar la misma función dentro de las expresiones. Las funciones remotas disponibles se muestran en la ficha &quot;Funciones remotas&quot;, en la parte izquierda del Editor de Expresiones.
 
 ![remotefunction](assets/remotefunction.png)
 
-#### Adición de funciones remotas personalizadas {#adding-custom-remote-functions}
+#### Añadir funciones remotas personalizadas {#adding-custom-remote-functions}
 
-Puede crear un paquete personalizado para exportar sus propias funciones remotas y utilizarlas en expresiones internas. Para crear un paquete personalizado y exportar sus propias funciones remotas, realice las siguientes tareas. Muestra cómo escribir una función personalizada que pone en mayúscula su cadena de entrada.
+Puede crear un paquete personalizado para exportar sus propias funciones remotas y utilizarlas dentro de expresiones. Para crear un paquete personalizado y exportar sus propias funciones remotas, realice las siguientes tareas. Muestra cómo escribir una función personalizada que pone en mayúscula su cadena de entrada.
 
-1. Defina una interfaz para el servicio OSGi que contenga métodos que se exportan para su uso por el Administrador de expresiones.
-1. Declare los métodos en la interfaz A y anótelos con la anotación @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). El Administrador de expresiones ignora los métodos no anotados. La anotación ServiceMethod tiene los siguientes atributos opcionales que también se pueden especificar:
+1. Defina una interfaz para el servicio OSGi que contenga métodos que se exportan para su uso por parte del Administrador de Expresiones.
+1. Declare los métodos en la interfaz A y anótelos con la anotación @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). El Administrador de Expresiones ignora todos los métodos no anotados. La anotación ServiceMethod tiene los siguientes atributos opcionales que también se pueden especificar:
 
-   1. **Habilitado**: Determina si este método está habilitado. El Administrador de expresiones ignora los métodos deshabilitados.
-   1. **familyId**: Especifica la familia (grupo) del método. Si está vacío, el Administrador de expresiones supone que el método pertenece a la familia predeterminada. No hay un registro de familias (excepto el predeterminado) desde donde se eligen las funciones. El Administrador de expresiones crea dinámicamente el registro mediante una unión de todos los ID de familia especificados por todas las funciones exportadas por los distintos paquetes. Asegúrese de que el ID que especifique aquí sea razonablemente legible, ya que también se muestra en la interfaz de usuario de creación de expresiones.
-   1. **displayName**: Un nombre legible en lenguaje natural para la función. Este nombre se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de expresiones crea un nombre predeterminado utilizando el prefijo y el nombre local de la función.
-   1. **Descripción**: Descripción detallada de la función. Esta descripción se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de expresiones crea una descripción predeterminada utilizando el prefijo y el nombre local de la función.
+   1. **Habilitado**: Determina si este método está habilitado. El Administrador de Expresiones ignora los métodos deshabilitados.
+   1. **familyId**: Especifica la familia (grupo) del método. Si está vacío, el Administrador de Expresiones supone que el método pertenece a la familia predeterminada. No hay un registro de familias (excepto el predeterminado) desde donde se eligen las funciones. El Administrador de Expresiones crea dinámicamente el Registro realizando una unión de todos los ID de familia especificados por todas las funciones exportadas por los distintos paquetes. Asegúrese de que el ID que especifique aquí sea razonablemente legible, ya que también se muestra en la interfaz de usuario de creación de expresiones.
+   1. **displayName**: Un nombre legible en lenguaje natural para la función. Este nombre se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de Expresiones construye un nombre predeterminado utilizando el prefijo y el nombre local de la función.
+   1. **Descripción**: Descripción detallada de la función. Esta descripción se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de Expresiones crea una descripción predeterminada utilizando el prefijo y el nombre local de la función.
 
    ```java
    package mergeandfuse.com;
@@ -119,16 +122,16 @@ Puede crear un paquete personalizado para exportar sus propias funciones remotas
 
 1. Defina la implementación de la interfaz, configúrela como un servicio OSGI y defina las siguientes propiedades de servicio:
 
-```
+```jsp
 @org.apache.felix.scr.annotations.Properties({
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker", boolValue = true),
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker.alias", value = "<service_id>"),
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-La entrada exm.service=true indica al administrador de expresiones que el servicio contiene funciones remotas adecuadas para su uso en expresiones. El valor &lt;service_id> debe ser un identificador Java válido (alfanumérico,$, _ sin ningún otro carácter especial). Este valor, con el prefijo REMOTE_ palabra clave, forma el prefijo que se utiliza dentro de las expresiones. Por ejemplo, se puede hacer referencia a una interfaz con un método anotado bar() y el ID de servicio en las propiedades del servicio dentro de las expresiones mediante REMOTE_foo:bar().
+La entrada exm.service=true indica al administrador de Expresiones que el servicio contiene funciones remotas que se pueden usar en expresiones. El valor &lt;service_id> debe ser un identificador Java válido (alfanumérico,$, _ sin ningún otro carácter especial). Este valor, con el prefijo REMOTE_ palabra clave, forma el prefijo que se utiliza dentro de las expresiones. Por ejemplo, se puede hacer referencia a una interfaz con un método anotado bar() y el ID de servicio en las propiedades del servicio dentro de expresiones mediante REMOTE_foo:bar().
 
-```
+```java
 package mergeandfuse.com;
 
 import org.apache.felix.scr.annotations.Component;
