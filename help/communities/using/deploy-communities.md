@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -138,7 +138,7 @@ Encontrará más información sobre la instalación de paquetes en la página Co
 
 #### Ejemplo: Paquete de conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### Paquete SCORM {#scorm-package}
 
@@ -222,7 +222,7 @@ De forma predeterminada, la configuración de `AEM Communities Publisher Configu
 
 Por lo tanto, es necesario **editar la configuración en todas las instancias** de publicación secundarias para desmarcar la **`Primary Publisher`** casilla de verificación.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 Para el resto de instancias de publicación (secundarias) en un conjunto de servidores de publicación:
 
@@ -266,11 +266,11 @@ Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 
 
 #### Agente predeterminado (publicación) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configure-limit](../assets/configure-limits.png)
 
 #### Agente de replicación inversa (publicar inversa) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### Servicio de túnel en el autor {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ Para habilitar el servicio de túnel:
 * marque la casilla **enable **box
 * select **Save**
 
-![](/help/communities/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### Replicar la clave de cifrado {#replicate-the-crypto-key}
 
@@ -350,7 +350,7 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [actualizar el paquete Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### Actualizar el paquete de criptografía de granito {#refresh-the-granite-crypto-bundle}
 
@@ -361,7 +361,7 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * localizar `Adobe Granite Crypto Support` paquete (com.adobe.granite.crypto)
 * seleccionar **Actualizar**
 
-![](/help/communities/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * después de un momento, debería aparecer un **Éxito **diálogo :
    `Operation completed successfully.`
