@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +59,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    1. Especifique la carpeta **Create_First_IC_templates** > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
 
    1. Toque **Crear**.
+
    Se muestra un mensaje de confirmación de que la comunicación interactiva se ha creado correctamente.
 
 1. Toque **Editar** para abrir la comunicación interactiva en el panel derecho.
@@ -72,27 +76,27 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    ![Fragmentos de Documento para comunicaciones interactivas](assets/create_first_ic_doc_fragments_new.png)
 
 1. Toque **destinatario Gráficos** y toque **+** para agregar un componente **Gráfico** .
-1. Puntee en el componente Gráfico y seleccione ![](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
+1. Puntee en el componente Gráfico y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
 
    1. Especifique un nombre para el gráfico.
    1. Seleccione **Circular** en la lista desplegable Tipo **de** gráfico.
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección del eje **** X. Tocar ![](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección del eje **** X. Toque ![done_icon](assets/done_icon.png).
    1. Seleccione **Frecuencia** en la lista desplegable **Función** .
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección eje **** Y. Tocar ![](assets/done_icon.png).
-   1. Toque ![](assets/done_icon.png) para guardar las propiedades del gráfico.
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección eje **** Y. Toque ![done_icon](assets/done_icon.png).
+   1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
 1. Vaya a la ficha **Recursos** y aplique el filtro para mostrar solo los fragmentos de diseño en el panel izquierdo. Arrastre el fragmento de diseño **table_lf** y suéltelo en el área de destinatario Llamadas **** ordenadas.
-1. Seleccione el Campo de texto en la columna **Fecha** y toque ![](assets/configure_icon.png) (Configurar).
-1. Seleccione Objeto **** de modelo de datos en la lista desplegable Tipo **de** enlace y seleccione **llamadas** > **fecha** de llamada. Toque ![](assets/done_icon.png) dos veces para guardar las propiedades.
+1. Seleccione el Campo de texto en la columna **Fecha** y toque ![configure_icon](assets/configure_icon.png) (Configurar).
+1. Seleccione Objeto **** de modelo de datos en la lista desplegable Tipo **de** enlace y seleccione **llamadas** > **fecha** de llamada. Toque ![done_icon](assets/done_icon.png) dos veces para guardar las propiedades.
 
    Del mismo modo, cree enlaces con **llamada**, **número** de llamada, duración **de** llamada y **cargas** de llamada para los campos de texto en las columnas **Tiempo************** , Número, Duracióny Gastos.
 
 1. Toque **Pagar ahora** el área de destinatario y toque **+** para agregar un componente **Imagen** .
-1. Puntee en el componente Imagen y seleccione ![](assets/configure_icon.png) (Configurar). Las propiedades de imagen se muestran en el panel izquierdo:
+1. Toque el componente Imagen y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades de imagen se muestran en el panel izquierdo:
 
    1. Especifique **PayNow** como nombre de la imagen en el campo **Nombre** .
    1. Toque **Cargar**, seleccione la imagen guardada en el sistema de archivos local y toque **Abrir**.
-   1. Toque ![](assets/done_icon.png) para guardar las propiedades de la imagen.
+   1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades de la imagen.
 
 1. Repita los pasos 13 y 14 para agregar la imagen **ValueAddedServices** al área de destinatario **ValueAddedServices** .
 
@@ -118,6 +122,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    1. Especifique la carpeta **Create_First_IC_templates** > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
 
    1. Toque **Crear**.
+
    Se muestra un mensaje de confirmación de que la comunicación interactiva se ha creado correctamente.
 
 1. Toque **Editar** para abrir la comunicación interactiva en el panel derecho.
@@ -133,18 +138,18 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    | summary_loads_first_interactive_Communication | Cargos |
 
 1. Puntee en **Resumen del área de destinatario Cargos** y toque **+** para agregar un componente **Gráfico** .
-1. Puntee en el componente Gráfico y seleccione ![](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
+1. Puntee en el componente Gráfico y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
 
    1. Especifique un nombre para el gráfico.
    1. Seleccione **Circular** en la lista desplegable Tipo **de** gráfico.
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección del eje **** X. Tocar ![](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección del eje **** X. Toque ![done_icon](assets/done_icon.png).
 
    1. Seleccione **Frecuencia** en la lista desplegable **Función** .
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección eje **** Y. Tocar ![](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección eje **** Y. Toque ![done_icon](assets/done_icon.png).
 
-   1. Toque ![](assets/done_icon.png) para guardar las propiedades del gráfico.
+   1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
 1. Seleccione la ficha Fuentes **de** datos en el panel izquierdo y arrastre y suelte el objeto del modelo de datos de **llamadas** en el área de destinatario Llamadas **** ordenadas. Todas las propiedades del objeto del modelo de datos de **llamadas** se muestran como columnas de tabla en el área de destinatario Llamadas **** por elemento del panel derecho.
 
@@ -164,7 +169,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    1. Especifique la URL de pago en el campo **Ruta** .
    1. Seleccione **Nueva ficha** en la lista desplegable **Destinatario** .
 
-   1. Toque ![](assets/done_icon.png) para guardar las propiedades del hipervínculo.
+   1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del hipervínculo.
 
 1. Seleccione **Estilo** en la lista desplegable situada junto a la opción **Previsualización** .
 
@@ -177,16 +182,17 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
    1. Seleccione Rojo como color de fondo para el botón en la sección **Fondo** .
    1. En el campo **Margen** de la sección **Dimensiones y posición** , toque el icono **Editar simultáneamente** y defina el margen **Derecho** como **450 px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
+
    ![Insertar hipervínculo en comunicación interactiva](assets/ic_web_hyperlink_new.png)
 
 1. Toque **Pagar ahora** área de destinatario y toque **+** para agregar un componente **Imagen** .
-1. Puntee en el componente Imagen y seleccione ![](assets/configure_icon.png) (Configurar). Las propiedades de imagen se muestran en el panel izquierdo:
+1. Toque el componente Imagen y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades de imagen se muestran en el panel izquierdo:
 
    1. Especifique **PayNow** como nombre de la imagen en el campo **Nombre** .
 
    1. Toque **Cargar**, seleccione la imagen **PayNowWeb** guardada en el sistema de archivos local y toque **Abrir**.
 
-   1. Toque ![](assets/done_icon.png) para guardar las propiedades de la imagen.
+   1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades de la imagen.
 
 1. En función del caso de uso, inserte un botón **Suscribirse** en la Comunicación interactiva que ofrece al usuario la opción de suscribirse a los servicios de valor añadido haciendo clic en el botón.
 
@@ -209,6 +215,7 @@ Ejecute los siguientes pasos para derivar el contenido del canal web mediante el
    1. Especifique la carpeta **Create_First_IC_templates** > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
 
    1. Toque **Crear**.
+
    Se muestra un mensaje de confirmación de que la comunicación interactiva se ha creado correctamente.
 
 1. Toque **Editar** para abrir la comunicación interactiva en el panel derecho.
@@ -232,6 +239,7 @@ Ejecute los siguientes pasos para derivar el contenido del canal web mediante el
    * Componente Resumen de Facturación al panel Resumen de Facturación
    * Resumen del componente Cargos al panel Resumen de Cargos
    * Fragmento de diseño (tabla) al panel Llamadas por elemento
+
    ![Árbol de contenido web](assets/ic_web_content_tree_new.png)
 
 1. Repita los pasos 13 a 18 de [Crear comunicación interactiva para canal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) web para insertar los hipervínculos **Pagar ahora** y **Suscribirse** en el canal web de la comunicación interactiva.
