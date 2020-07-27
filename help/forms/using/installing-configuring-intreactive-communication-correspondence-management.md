@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 1%
@@ -121,7 +121,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 
 1. Añada las siguientes propiedades en el archivo sling.properties:
 
-   ```
+   ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
