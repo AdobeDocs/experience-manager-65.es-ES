@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen
 
 1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de usuarios > Configuración > Importar y exportar archivos]** de configuración.
 1. Para exportar la configuración actual a un archivo, haga clic en **[!UICONTROL Exportar]** y guarde el archivo de configuración en otra ubicación.
-1. Agregue el nodo siguiente (marcado en negrita):
+1. Añada el nodo siguiente (marcado en negrita):
 
-   ```as3
+   ```xml
     <node name="UM">
     <map/>
     <node name="PrincipalCache">
