@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1728'
+ht-degree: 0%
 
 ---
 
@@ -139,15 +142,15 @@ Una vez creada la plantilla de proyecto, realice los siguientes cambios, según 
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
-   <td>La estructura de la utilidad jQuery carga la función cada vez que se guarda el valor de la utilidad jQuery en el modelo XFA (por ejemplo, en el suceso exit de un campo de texto). La implementación debe devolver el valor guardado en la utilidad. El controlador se proporciona con el nuevo valor para la opción.</td>
+   <td>La estructura de la utilidad jQuery carga la función cada vez que se guarda el valor de la utilidad jQuery en el modelo XFA (por ejemplo, en el evento de salida de un campo de texto). La implementación debe devolver el valor guardado en la utilidad. El controlador se proporciona con el nuevo valor para la opción.</td>
   </tr>
   <tr>
    <td><code>showValue</code></td>
-   <td>De forma predeterminada, en XFA cuando se produce el suceso enter, se muestra el nombre <code>rawValue</code> del campo. Se llama a esta función para mostrar al usuario <code>rawValue</code> . </td>
+   <td>De forma predeterminada, en XFA cuando se introduce el evento, se muestra el nombre <code>rawValue</code> del campo. Se llama a esta función para mostrar al usuario <code>rawValue</code> . </td>
   </tr>
   <tr>
    <td><code>showDisplayValue</code></td>
-   <td>De forma predeterminada, en XFA cuando se produce un evento exit, se muestra el nombre <code>formattedValue</code> del campo. Se llama a esta función para mostrar al usuario <code>formattedValue</code> . </td>
+   <td>De forma predeterminada, en XFA en el evento de salida, se muestra el <code>formattedValue</code> nombre del campo. Se llama a esta función para mostrar al usuario <code>formattedValue</code> . </td>
   </tr>
  </tbody>
 </table>
@@ -159,10 +162,10 @@ Una vez creada la plantilla de proyecto, realice los siguientes cambios, según 
    * Amplíe el `render` método para proporcionar una IU alternativa. Es la ubicación desde la que se invocará el complemento jQuery para actualizar la interfaz de usuario o el comportamiento de la interacción. El `render` método debe devolver un elemento de control de usuario.
 
    * Amplíe el `getOptionsMap` método para anular cualquier opción que se vea afectada por un cambio en la utilidad. La función devuelve una asignación que proporciona detalles para la acción que se realizará al cambiar una opción. Las claves son las opciones proporcionadas al widget y los valores son las funciones a las que se llama cada vez que se detecta un cambio en la opción.
-   * El `getEventMap` método asigna eventos activados por la utilidad, con los eventos requeridos por el modelo de formulario adaptable. El valor predeterminado asigna eventos HTML estándar para la utilidad predeterminada y debe actualizarse si se activa un evento alternativo.
-   * La cláusula de visualización `showDisplayValue` `showValue` y aplicación de la cláusula de visualización y edición de imagen y se puede anular para tener un comportamiento alternativo.
+   * El `getEventMap` método asigna los eventos activados por el widget, con los eventos requeridos por el modelo de formulario adaptable. El valor predeterminado asigna eventos HTML estándar para el widget predeterminado y debe actualizarse si se activa un evento alternativo.
+   * La cláusula de visualización `showDisplayValue` `showValue` y aplicación de la cláusula de visualización y edición y se puede anular para tener un comportamiento alternativo.
 
-   * El marco de formularios adaptables llama al `getCommitValue` método cuando se produce el `commit`suceso. Generalmente, es el evento exit, excepto para los elementos de lista desplegable, botón de radio y casilla de verificación donde se produce al cambiar. Para obtener más información, consulte Expresiones [de formularios](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)adaptables.
+   * El marco de formularios adaptables llama al `getCommitValue` método cuando se produce el `commit`evento. Generalmente, es el evento de salida, excepto para los elementos de lista desplegable, botón de radio y casilla de verificación donde se produce al cambiar. Para obtener más información, consulte Expresiones [de formularios](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)adaptables.
 
    * El archivo de plantilla proporciona implementación de muestra para varios métodos. Elimine los métodos que no se van a ampliar.
 
@@ -188,7 +191,7 @@ Para aplicar el aspecto personalizado a un campo de formulario adaptable:
 1. Abra el cuadro de diálogo **Propiedad** del campo en el que desea aplicar el aspecto personalizado.
 1. En la ficha **Estilo** , actualice la propiedad `CSS class` para agregar el nombre de aspecto en el `widget_<widgetName>` formato. Por ejemplo: **widget_numericstep**
 
-## Ejemplo: Crear un aspecto personalizado {#sample-create-a-custom-appearance-nbsp}
+## Ejemplo: Crear un aspecto personalizado   {#sample-create-a-custom-appearance-nbsp}
 
 Veamos ahora un ejemplo para crear un aspecto personalizado para que un campo numérico aparezca como un paso numérico o un deslizador. Siga estos pasos:
 
@@ -246,7 +249,7 @@ Veamos ahora un ejemplo para crear un aspecto personalizado para que un campo nu
 1. Reemplace el contenido del `bootstrap-number-input.js` (complemento jQuery) con el contenido del `numericStepper-plugin.js` archivo.
 1. En el `numericStepper-widget.js` archivo, agregue el siguiente código para anular el método de procesamiento para invocar el complemento y devolver el `$userControl` objeto:
 
-   ```java
+   ```javascript
    render : function() {
         var control = $.xfaWidget.numericInput.prototype.render.apply(this, arguments);
         var $control = $(control);
@@ -266,7 +269,7 @@ Veamos ahora un ejemplo para crear un aspecto personalizado para que un campo nu
 
 1. En el `numericStepper-widget.js` archivo, anule la `getOptionsMap` propiedad para anular la opción de acceso y oculte los botones + y - en modo desactivado.
 
-   ```java
+   ```javascript
    getOptionsMap: function(){
        var parentOptionsMap = $.xfaWidget.numericInput.prototype.getOptionsMap.apply(this,arguments),
    
