@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -164,6 +167,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
       * Propiedades como altura y espaciado entre letras
       * Valores predeterminados de familia y tamaño de fuente, altura, espaciado entre letras y formato de fecha
       * Sangrías de viñeta
+
       Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el ordenador cliente para acceder a la personalización de fuentes y trabajar con ella. Para obtener más información, consulte [Añadir fuentes personalizadas al equipo](#addcustomfonts)cliente.
 
       También puede cambiar los valores predeterminados para varios aspectos del texto y, al eliminar las entradas, quitar las fuentes del editor de texto.
@@ -182,7 +186,7 @@ Para obtener más información sobre la instalación de fuentes, consulte:
 
 ## Acceso a las personalizaciones de fuentes {#access-font-customizations}
 
-Después de realizar cambios en las fuentes del archivo tbxeditor-config.xml en CRX e instalar las fuentes necesarias en el ordenador cliente que se utiliza para acceder a AEM Forms, los cambios aparecen en el editor de texto.
+Después de realizar cambios en las fuentes del archivo tbxeditor-config.xml en CRX e instalar las fuentes necesarias en el ordenador cliente que se utiliza para acceder a los AEM Forms, los cambios aparecerán en el editor de texto.
 
 Por ejemplo, la fuente Sazanami Mincho Medium agregada en el archivo [Personalizar fuentes editando el archivo tbxeditor-config.xml en el procedimiento CRX](#customizefonts) aparece en la interfaz de usuario del editor de texto de la siguiente manera:
 
