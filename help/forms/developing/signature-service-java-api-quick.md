@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Sig
 
 [Inicio rápido (modo SOAP): Eliminación de una firma digital mediante la API de Java](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código Java agrega un campo de firma llamado *SignatureField1* a un documento PDF basado en un archivo PDF *llamado Loan.pdf*. El documento PDF que contiene el nuevo campo de firma se guarda como un archivo PDF denominado *LoanSig.pdf*. (Consulte [Añadir campos](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)de firma).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -163,7 +166,7 @@ El siguiente ejemplo de código Java agrega un campo de firma llamado *Signature
 
 El siguiente ejemplo de código Java recupera los nombres de los campos de firma ubicados en un documento PDF denominado *LoanSig.pdf*. (Consulte [Recuperación de nombres](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)de campos de firma).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -269,7 +272,7 @@ El siguiente ejemplo de código Java recupera los nombres de los campos de firma
 
 El siguiente ejemplo de código Java modifica un campo de firma llamado SignatureField1 bloqueando todos los campos del formulario cuando se aplica una firma al campo de firma y asegurándose de que no se permiten cambios. Una vez que el servicio Signature devuelve el documento PDF que contiene el campo de firma modificado, el documento PDF se guarda como un archivo PDF denominado LoanSig.pdf. (Este ejemplo sobrescribe el archivo PDF que se pasa al servicio Signature). (Consulte [Modificación de campos](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)de firma).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -397,7 +400,7 @@ El siguiente ejemplo de código Java modifica un campo de firma llamado Signatur
 
 El siguiente ejemplo de código Java firma digitalmente un documento PDF basado en un archivo PDF llamado *LoanSig.pdf*. El alias especificado para la credencial de seguridad es seguro y se realiza la comprobación de revocación. Dado que no se especifica ninguna CRL ni información de servidor OCSP, la información de servidor se obtiene del certificado utilizado para firmar digitalmente el documento PDF. El documento firmado se guarda como un archivo PDF denominado *LoanSigned.pdf*. (Consulte Firma [digital de Documentos](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -546,7 +549,7 @@ El siguiente ejemplo de código Java firma digitalmente un documento PDF basado 
 
 En el siguiente ejemplo de código Java se firma un formulario interactivo procesado por el servicio Forms. La `com.adobe.idp.Document` instancia devuelta por el servicio Forms se pasa al servicio Signature. El formulario interactivo firmado se guarda como un archivo PDF denominado *LoanXFASigned.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -758,7 +761,7 @@ En el siguiente ejemplo de código Java se firma un formulario interactivo proce
 
 El siguiente ejemplo de código Java certifica un documento PDF basado en un archivo PDF llamado *LoanSig.pdf*. El alias especificado para la credencial de seguridad es seguro y no se realiza la comprobación de revocación. El documento certificado se guarda como un archivo PDF denominado *LoanCertified.pdf*. (Consulte [Certificación de Documentos](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -907,7 +910,7 @@ El siguiente ejemplo de código Java certifica un documento PDF basado en un arc
 
 El siguiente ejemplo de código Java comprueba una firma digital ubicada en un documento PDF firmado basado en un archivo PDF llamado LoanSigned.pdf. El tiempo de verificación se establece en la hora actual y la opción de comprobación de revocación se establece con el mejor esfuerzo. (Consulte [Verificación de firmas](#verifying-digital-signatures)digitales).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-signatures-client.jar
@@ -1071,7 +1074,7 @@ El siguiente ejemplo de código Java comprueba una firma digital ubicada en un d
 
 En el siguiente ejemplo de código Java se verifican varias firmas digitales que están ubicadas en un documento PDF firmado basado en un archivo PDF llamado LoanAllSigs.pdf. El tiempo de verificación se establece en la hora actual y la opción de comprobación de revocación se establece con el mejor esfuerzo. (Consulte [Verificación de varias firmas](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)digitales).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1233,7 +1236,7 @@ En el siguiente ejemplo de código Java se verifican varias firmas digitales que
 
 El siguiente ejemplo de código Java elimina una firma digital de un campo de firma llamado *SignatureField1*. El nombre del archivo PDF que contiene el campo de firma es *LoanSigned.pdf*. (Consulte [Eliminación de firmas](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures)digitales.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
