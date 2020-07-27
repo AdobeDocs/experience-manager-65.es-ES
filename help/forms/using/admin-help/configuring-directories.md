@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3246'
+ht-degree: 0%
 
 ---
 
@@ -134,7 +137,7 @@ Aunque el DN base es una configuración obligatoria en la consola de administrac
 
 **Iniciales:** Atributo de Esquema para las iniciales del usuario
 
-**Calendario comercial:** Le permite asignar un calendario comercial a un usuario, en función del valor de esta configuración (la clave del calendario comercial). Los calendarios comerciales definen los días laborables y no laborables. Los formularios AEM pueden utilizar calendarios comerciales para calcular las fechas y horas futuras de eventos como recordatorios, plazos y escalaciones. La manera en que asigne las claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales).
+**Calendario comercial:** Permite asignar un calendario comercial a un usuario, según el valor de esta configuración (la clave del calendario comercial). Los calendarios comerciales definen los días laborables y no laborables. Los formularios AEM pueden utilizar calendarios comerciales para calcular las fechas y horas futuras de eventos como recordatorios, plazos y escalaciones. La manera en que asigne las claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales).
 
 Si utiliza un dominio de empresa, puede asignar la configuración del calendario de negocios a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo de *país* y desea asignar calendarios comerciales en función del país en el que se encuentra el usuario, especifique el nombre del campo de *país* como valor para la configuración del calendario comercial. A continuación, puede asignar las claves de calendario empresarial (los valores definidos para el campo de *país* en el directorio LDAP) a los calendarios comerciales en el flujo de trabajo de formularios.
 
@@ -162,7 +165,7 @@ La cantidad de espacio que se utiliza para mostrar el nombre de la clave de cale
 >
 >Para habilitar VLV, configure Sun One. Consulte [Configuración de la administración de usuarios para utilizar la Vista de Lista virtual (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Campo de ordenación:** Si seleccionó Activar control de Vista de Lista virtual (VLV), especifique el nombre de atributo utilizado para ordenar el índice. Este nombre de atributo (como uid) es el que especificó al crear un índice para VLV en el servidor de directorio.
+**Campo de ordenación:** Si seleccionó Activar control de Vista de Lista virtual (VLV), especifique el nombre de atributo utilizado para ordenar el índice. Este nombre de atributo (como uid) es el que especificó cuando creó un índice para VLV en el servidor de directorio.
 
 ### Configuración de grupo {#group-settings}
 
@@ -240,7 +243,7 @@ La creación de un VLV requiere un par de entradas que incluyen las clases `vlvS
 
 Esta es una entrada LDIF de script de muestra para VLV para usuarios:
 
-```as3
+```text
  dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
  objectclass: top
  objectclass: vlvSearch
@@ -290,11 +293,11 @@ Después de configurar los ajustes del directorio y crear las entradas LDAP VLV 
 1. Después de crear entradas de objeto, detenga el servidor Sun ONE.
 1. Con la herramienta vlvindex, genere el índice escribiendo el siguiente texto:
 
-   *instancia* del servidor de directorios `\vlvindex.bat -n userRoot -T lcuser`
+   *instancia del servidor de directorios* `\vlvindex.bat -n userRoot -T lcuser`
 
    Se genera el siguiente resultado:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle
     [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle
     [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%).
@@ -309,11 +312,11 @@ Después de configurar los ajustes del directorio y crear las entradas LDAP VLV 
 
 1. Si VLV también está habilitado para grupos, cree el índice correspondiente para los grupos. Compruebe si los índices se crean ejecutando el siguiente comando:
 
-   *directorio* de servidor Sun `\shared\bin>ldapsearch -h`*nombre *de host`-p`*puerto no*`-s base -b "" objectclass=*`
+   *directorio* de servidor de Sun `\shared\bin>ldapsearch -h`*nombre *de host`-p`*puerto no* `-s base -b "" objectclass=*`
 
    Se generan resultados como los siguientes datos de ejemplo:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*
     ldapsearch.exe: started Tue Nov 27 16:34:20 2007
     version: 1
