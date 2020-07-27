@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -337,7 +337,7 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
 
 1. Haga clic con el botón secundario en el nodo, haga clic en **[!UICONTROL crear un nuevo archivo]** y cree un archivo con la extensión .txt. Por ejemplo, `js.txt`Añada el siguiente código al archivo .txt recién creado y haga clic en **[!UICONTROL Guardar todo]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -348,7 +348,7 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
 
 1. Añada el siguiente código al archivo util.js y haga clic en **[!UICONTROL Guardar todo]**. El código valida la longitud del nombre del archivo.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________
