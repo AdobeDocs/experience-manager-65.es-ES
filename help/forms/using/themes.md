@@ -10,7 +10,10 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '6067'
+ht-degree: 1%
 
 ---
 
@@ -30,13 +33,13 @@ Puede hacer lo siguiente:
 
 ## Creación, descarga o carga de un tema {#creating-downloading-or-uploading-a-theme}
 
-Con AEM Forms, puede crear, descargar o cargar temáticas. Se crea un tema como otros recursos, como formularios, documentos y letras. El tema se guarda como una entidad independiente, con metapropiedades como los formularios. El hecho de que las Temáticas sean una entidad independiente permite su reutilización en varios formularios adaptables y comunicaciones interactivas. También puede mover un tema a otra instancia de AEM Forms y reutilizarlo.
+Con los AEM Forms, puede crear, descargar o cargar temáticas. Se crea un tema como otros recursos, como formularios, documentos y letras. El tema se guarda como una entidad independiente, con metapropiedades como los formularios. El hecho de que las Temáticas sean una entidad independiente permite su reutilización en varios formularios adaptables y comunicaciones interactivas. También puede mover un tema a otra instancia de AEM Forms y reutilizarlo.
 
 ### Creación de un tema {#creating-a-theme}
 
 Realice los siguientes pasos para crear un tema:
 
-1. Haga clic en **Adobe Experience Manager**, en **Formularios** y, a continuación, en **Temáticas**.
+1. Haga clic en **Adobe Experience Manager**, haga clic en **Formularios** y, a continuación, en **Temáticas**.
 
 1. En la página Temáticas, haga clic en **Crear > Tema**.
 Se inicia un asistente para crear un tema.
@@ -55,7 +58,7 @@ Se inicia un asistente para crear un tema.
 
 Puede exportar temáticas como archivo zip y utilizarlas en otros proyectos o en instancias de AEM. Para descargar un tema:
 
-1. Haga clic en **Adobe Experience Manager**, en **Formularios** y, a continuación, en **Temáticas**.
+1. Haga clic en **Adobe Experience Manager**, haga clic en **Formularios** y, a continuación, en **Temáticas**.
 
 1. En la página Temáticas, **seleccione** un tema y haga clic en **Descargar**. Se muestra un cuadro de diálogo con los detalles del tema.
 
@@ -71,7 +74,7 @@ Puede utilizar temáticas creadas con ajustes preestablecidos de estilo en el pr
 
 Para cargar un tema:
 
-1. Haga clic en **Adobe Experience Manager**, en **Formularios** y, a continuación, en **Temáticas**.
+1. Haga clic en **Adobe Experience Manager**, haga clic en **Formularios** y, a continuación, en **Temáticas**.
 
 1. En la página Temáticas, haga clic en **Crear > Carga** de archivos.
 1. En el mensaje de carga de archivos, busque y seleccione un paquete de temas en el equipo y haga clic en **Cargar**.
@@ -192,7 +195,7 @@ Lista de metapropiedades de un tema (se encuentra en la página de propiedades d
 
 ## Acerca del Editor de temas {#about-the-theme-editor}
 
-AEM Forms se envía con el editor de temas. Es una interfaz fácil de usar para empresas y diseñadores web y desarrolladores que proporciona las funcionalidades necesarias para especificar fácilmente el estilo de varios elementos de comunicación interactivos y formularios adaptables. Cuando se crea un tema, se almacena como una entidad independiente, como formularios, comunicaciones interactivas, letras, fragmentos de documento y diccionarios de datos.
+Los AEM Forms se envían con el editor de temas. Es una interfaz fácil de usar para empresas y diseñadores web y desarrolladores que proporciona las funcionalidades necesarias para especificar fácilmente el estilo de varios elementos de comunicación interactivos y formularios adaptables. Cuando se crea un tema, se almacena como una entidad independiente, como formularios, comunicaciones interactivas, letras, fragmentos de documento y diccionarios de datos.
 
 El Editor de temas permite personalizar estilos de los componentes con estilo en un tema. Puede personalizar el aspecto de un formulario o una comunicación interactiva en un dispositivo.
 
@@ -221,9 +224,9 @@ Un componente específico afecta a los objetos de la categoría específica. Al 
    * **Avanzado:** Permite agregar CSS personalizada a un objeto, que anula las propiedades que los controles visuales definen si hay una superposición.
 
    * **CSS** de Vista: Permite la vista de CSS del componente seleccionado
-   Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, se obtienen dos opciones más: **Simular el éxito** y **Simular el error.** Estas opciones, junto con las opciones descritas anteriormente, se analizan en detalle [a continuación](../../forms/using/themes.md#using-rail).
+   Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, se obtienen dos opciones más: **Simular el éxito** y **simular errores.** Estas opciones, junto con las opciones descritas anteriormente, se analizan en detalle [a continuación](../../forms/using/themes.md#using-rail).
 
-[ Editor de ![temas con raíl y lienzo resaltados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
+[ ![Editor de temas con raíl y lienzo resaltados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
 
 ### Componentes de estilo {#styling-components}
 
@@ -241,7 +244,7 @@ Haga clic en **EXPANDIR TODO** en la barra lateral para aplicar vista, seleccion
 
 ### Diseños del panel Estilo {#styling-panel-layouts-br}
 
-Las Temáticas de AEM Forms admiten el estilo de los elementos en la presentación de los paneles de los formularios y las comunicaciones interactivas. Se admite el estilo de los elementos en diseños y diseños personalizados integrados.
+Las Temáticas de los AEM Forms admiten el estilo de los elementos en la presentación de los paneles de los formularios y las comunicaciones interactivas. Se admite el estilo de los elementos en diseños y diseños personalizados integrados.
 
 Los paneles integrados incluyen:
 
@@ -296,7 +299,7 @@ El botón más de la biblioteca de recursos le permite guardar de forma permanen
 
 Cuando se proporciona un nombre personalizado para un estilo, este se asocia a un tema y ya no está disponible para otras temáticas. Para eliminar un estilo guardado:
 
-1. En la barra de herramientas CANVAS, haga clic en Opciones **de** tema ![](assets/theme-options.png) > **Administrar estilos**.
+1. En la barra de herramientas CANVAS, haga clic en Opciones **de** tema ![opciones](assets/theme-options.png) de tema > **Administrar estilos**.
 1. En el cuadro de diálogo Administrar estilos, seleccione un estilo guardado y haga clic en **Eliminar**.
 
    ![Eliminar el estilo guardado](assets/manage-styles.png)
@@ -415,7 +418,7 @@ Las opciones para personalizar estilos de estado varían para los diferentes com
    <td><p>Permite agregar efectos especiales a los componentes, como opacidad, modo de mezcla y sombras. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzado   </p> </td>
+   <td><p>Avanzado </p> </td>
    <td><p>Permite agregar:</p>
     <ul>
      <li>Propiedades para <code>::before</code> y <code>::after</code> pseudoelementos para agregar contenido después o antes del contenido predeterminado en el selector y aplicarle estilo.<br /> Consulte <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudoelementos</a>CSS.</li>
@@ -490,8 +493,8 @@ Ahora puede utilizar fuentes disponibles en un servicio Web en un formulario ada
 
 Realice los siguientes pasos para configurar Typekit en AEM:
 
-1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperimentencemanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Implementación > Servicios de nube.
-1. En la página **Cloud Services** , vaya a **Third Party Services** > **Typekit** y haga clic en **Configurar ahora** en Typekit. Si ya hay una configuración disponible, haga clic en el botón **+** para crear una nueva instancia.
+1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Implementación > Cloud Service.
+1. En la página **Cloud Service** , vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar ahora** en Typekit. Si ya hay una configuración disponible, haga clic en el botón **+** para crear una nueva instancia.
 1. En el cuadro de diálogo **Crear configuración** , especifique un título para la configuración y haga clic en **Crear**.
 
    Se le redirige a la página de configuración.
@@ -580,7 +583,7 @@ La `themeOverride` opción le permite proporcionar una ruta a un tema. Cambia el
 
 ## Obtención de un aspecto específico mediante Temáticas {#specific-af-appearance}
 
-Con AEM Forms, junto con el tema del lienzo predeterminado, hay muchas otras temáticas. Si desea diseñar el formulario o la comunicación interactiva con otras temáticas, junto con cambios adicionales, copie el tema de la carpeta Biblioteca de temas. Pegue las temáticas copiadas fuera de la carpeta Biblioteca de temas y edite el tema copiado según los cambios que desee.
+Con los AEM Forms, junto con el tema predeterminado del lienzo, hay muchas otras temáticas. Si desea diseñar el formulario o la comunicación interactiva con otras temáticas, junto con cambios adicionales, copie el tema de la carpeta Biblioteca de temas. Pegue las temáticas copiadas fuera de la carpeta Biblioteca de temas y edite el tema copiado según los cambios que desee.
 
 Para copiar un tema, realice los siguientes pasos:
 
@@ -641,6 +644,7 @@ Puede ver la CSS generada mediante las siguientes opciones:
       1. En la página Propiedades que se abre, haga clic en **Avanzadas**.
       1. En la ficha Avanzadas, en el campo Ubicación de biblioteca de clientes, busque y seleccione la biblioteca de clientes que desee utilizar.
       1. Haga clic en **Guardar**.
+
       El estilo que especifique en la biblioteca del cliente se importa en el tema que lo utiliza. Por ejemplo, puede especificar el estilo para el cuadro de texto, el cuadro numérico y el conmutador en la biblioteca del cliente. Al importar la biblioteca de cliente en el tema, se importa el estilo del cuadro de texto, el cuadro numérico y el conmutador. A continuación, puede aplicar estilo a otros componentes mediante el editor de temas.
 También puede crear un tema, crear copias de él y, a continuación, modificar el estilo proporcionado en las temáticas copiadas para casos de uso similares.
 Consulte [Obtención de un aspecto específico mediante Temáticas](#specific-af-appearance)
