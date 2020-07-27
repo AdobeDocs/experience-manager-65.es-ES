@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: ebb60e79aa7fb45e059e2d2451f6d549cd24b8b0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3489'
+ht-degree: 1%
 
 ---
 
@@ -36,11 +39,11 @@ Debe existir un elemento XML para cada campo de formulario que desee rellenar pr
 
 Cuando se rellena previamente un formulario que ya contiene datos, se deben especificar los datos que ya se muestran en el origen de datos XML. Supongamos que un formulario que contiene 10 campos tiene datos en cuatro campos. A continuación, supongamos que desea rellenar previamente los seis campos restantes. En este caso, debe especificar 10 elementos XML en el origen de datos XML que se utiliza para rellenar previamente el formulario. Si sólo especifica seis elementos, los cuatro campos originales están vacíos.
 
-Por ejemplo, puede rellenar previamente un formulario, como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Representación de formularios](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interactivos.)
+Por ejemplo, puede rellenar previamente un formulario, como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Representación de PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interactivos.)
 
 Para rellenar previamente el formulario de confirmación de ejemplo, debe crear un origen de datos XML que contenga tres elementos XML que coincidan con los tres campos del formulario. Este formulario contiene los tres campos siguientes: `FirstName`, `LastName`, y `Amount`. El primer paso es crear un origen de datos XML que contenga elementos XML que coincidan con los campos ubicados en el diseño de formulario. El paso siguiente es asignar valores de datos a los elementos XML, como se muestra en el siguiente código XML.
 
-```as3
+```xml
      <Untitled>
          <FirstName>Jerry</FirstName>
          <LastName>Johnson</LastName>
@@ -111,7 +114,7 @@ Un origen de datos XML que se utiliza para rellenar previamente el formulario de
 
 El siguiente origen de datos XML se utiliza para rellenar previamente el formulario de orden de compra.
 
-```as3
+```xml
      <header>
          <!-- XML elements used to prepopulate non-repeating fields such as address
          <!and city
@@ -231,7 +234,7 @@ Un formulario precumplimentado se procesa como cualquier otro formulario. La ún
 
 [Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Representación de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -241,7 +244,7 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
 
 1. Incluir archivos de proyecto
 
-   Incluya archivos JAR de cliente, como adobe-forms-client.jar, en la ruta de clases del proyecto Java. Para obtener información sobre la ubicación de estos archivos, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+   Incluya archivos JAR de cliente, como adobe-forms-client.jar, en la ruta de clases del proyecto Java. Para obtener información sobre la ubicación de estos archivos, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 1. Crear un origen de datos XML en memoria
 
@@ -294,6 +297,7 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
    * Un `PDFFormRenderSpec` objeto que almacena opciones de tiempo de ejecución.
    * Un `URLSpec` objeto que contiene valores de URI necesarios para el servicio Forms.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
    El `renderPDFForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
    * Cree un `javax.servlet.ServletOutputStream` objeto que se utilice para enviar una secuencia de datos de formulario al navegador web del cliente.
@@ -367,13 +371,14 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
 
    * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo.
    * Un `BLOB` objeto que contiene datos para combinar con el formulario. Asegúrese de utilizar el `BLOB` objeto que se creó en los pasos uno y dos.
-   * Un `PDFFormRenderSpecc` objeto que almacena opciones de tiempo de ejecución. Para obtener más información, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Un `PDFFormRenderSpecc` objeto que almacena opciones de tiempo de ejecución. Para obtener más información, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Un `URLSpec` objeto que contiene valores de URI necesarios para el servicio Forms.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
    * Objeto vacío `com.adobe.idp.services.holders.BLOBHolder` que se rellena con el método . Se utiliza para almacenar el formulario PDF procesado.
    * Objeto vacío `javax.xml.rpc.holders.LongHolder` que se rellena con el método . (Este argumento almacenará el número de páginas del formulario).
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método . (Este argumento almacenará el valor de configuración regional).
    * Un `com.adobe.idp.services.holders.FormsResultHolder` objeto vacío que contendrá los resultados de esta operación.
+
    El `renderPDFForm` método rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
    * Cree un `FormResult` objeto obteniendo el valor del `com.adobe.idp.services.holders.FormsResultHolder` miembro de `value` datos del objeto.
@@ -383,11 +388,12 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
    * Cree un `javax.servlet.ServletOutputStream` objeto que se utilice para escribir la secuencia de datos del formulario en el navegador web del cliente invocando el `javax.servlet.http.HttpServletResponse` método `getOutputStream` del objeto.
    * Cree una matriz de bytes y rellénela invocando el `BLOB` método `getBinaryData` del objeto. Esta tarea asigna el contenido del `FormsResult` objeto a la matriz de bytes.
    * Invoque el `javax.servlet.http.HttpServletResponse` método del `write` objeto para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes al `write` método .
+
    >[!NOTE]
    >
    >El `renderPDFForm` método rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 **Consulte también**
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
