@@ -1,15 +1,18 @@
 ---
 title: Personalización de imágenes utilizadas en acciones de ruta
 seo-title: Personalización de imágenes utilizadas en acciones de ruta
-description: Personalización de las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
-seo-description: Personalización de las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
+description: Cómo personalizar las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de AEM Forms de LiveCycle.
+seo-description: Cómo personalizar las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de AEM Forms de LiveCycle.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -44,13 +47,13 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, realice los 
 
 ## Ventana emergente de acción de tarea de Lista de Tarea {#task-list-task-action-popup}
 
-1. Crear una ventana emergente de acción de lista de tarea, consulte [Creación del código](introduction-customizing-html-workspace.md#building-html-workspace-code)del espacio de trabajo de AEM Forms. Requiere usar el paquete dev.
+1. Crear una ventana emergente de acción de lista de tarea, consulte [Creación del código](introduction-customizing-html-workspace.md#building-html-workspace-code)del espacio de trabajo AEM Forms. Requiere usar el paquete dev.
 
 1. Copiar `/libs/ws/js/runtime/templates/task.html` a `/apps/ws/js/runtime/templates/task.html`.
 
 1. Si el nombre del estilo CSS es el mismo que el nombre de la acción de ruta procedente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/task.html`:
 
-   ```
+   ```jsp
    <%if(routeList == null){%>
                <li>
                    <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -80,7 +83,7 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, realice los 
 
 1. Si el nombre del estilo CSS es diferente del nombre de la acción de ruta que proviene del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/task.html`. Agrega una pila de las condiciones del `if-else` servlet para asignar el estilo con el nombre de la acción de ruta.
 
-```
+```jsp
 <%if(routeList == null){%>
             <li>
                 <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -120,7 +123,7 @@ To
 
 1. Si el nombre del estilo CSS es el mismo que el nombre de la acción de ruta procedente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/taskdetails.html`:
 
-   ```
+   ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                            <li class="routeAction">
                                <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>
@@ -140,7 +143,7 @@ To
 
 1. Si el nombre del estilo CSS es diferente del nombre de la acción de ruta que proviene del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/taskdetails.html`. Agrega una pila de condiciones de `if-else` servlet para asignar el estilo con el nombre de la acción de ruta.
 
-   ```
+   ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                            <li class="routeAction">
                                <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>
