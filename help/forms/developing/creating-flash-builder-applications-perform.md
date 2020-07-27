@@ -10,20 +10,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 0%
 
 ---
 
 
 # Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
-Puede crear una aplicación cliente mediante Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Supongamos, por ejemplo, que se crea una aplicación basada en Web mediante Flash Builder. A continuación, suponga que la aplicación contiene diferentes vistas, en las que cada vista invoca una operación de AEM Forms diferente. En lugar de autenticar a un usuario para cada operación de Forms, puede crear una página de inicio de sesión que permita al usuario autenticarse una vez. Una vez autenticado, un usuario puede invocar varias operaciones sin tener que volver a autenticarse. Por ejemplo, si un usuario ha iniciado sesión en Workspace (u otra aplicación de Forms), no tendrá que volver a autenticarse.
+Puede crear una aplicación cliente mediante Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Supongamos, por ejemplo, que se crea una aplicación basada en Web mediante Flash Builder. A continuación, suponga que la aplicación contiene diferentes vistas, donde cada vista invoca una operación de AEM Forms diferente. En lugar de autenticar a un usuario para cada operación de Forms, puede crear una página de inicio de sesión que permita al usuario autenticarse una vez. Una vez autenticado, un usuario puede invocar varias operaciones sin tener que volver a autenticarse. Por ejemplo, si un usuario ha iniciado sesión en Workspace (u otra aplicación de Forms), no tendrá que volver a autenticarse.
 
-Aunque la aplicación cliente contiene la lógica de aplicación necesaria para realizar la autenticación SSO, Administración de usuarios de formularios AEM realiza la autenticación de usuario real. Para autenticar a un usuario mediante tokens HTTP, la aplicación cliente invoca la operación del servicio Authentication Manager `authenticateWithHTTPToken` . La Administración de usuarios puede autenticar usuarios mediante un token HTTP. Para llamadas posteriores a AEM Forms mediante servicios Web o remoto, no es necesario pasar credenciales para la autenticación.
+Aunque la aplicación cliente contiene la lógica de aplicación necesaria para realizar la autenticación SSO, Administración de usuarios de formularios AEM realiza la autenticación de usuario real. Para autenticar a un usuario mediante tokens HTTP, la aplicación cliente invoca la operación del servicio Authentication Manager `authenticateWithHTTPToken` . La Administración de usuarios puede autenticar usuarios mediante un token HTTP. Para las llamadas posteriores a servicios Web o remotos a AEM Forms, no es necesario pasar las credenciales para la autenticación.
 
 >[!NOTE]
 >
->Antes de leer esta sección, se recomienda familiarizarse con la invocación de formularios AEM mediante Remoting. (Consulte [Invocación de formularios AEM mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)).
+>Antes de leer esta sección, se recomienda que sea familiar con Invocar AEM Forms mediante Remoting. (Consulte [Invocación de AEM Forms mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)).
 
 El siguiente proceso de corta duración de AEM Forms, denominado `MyApplication/EncryptDocument`, se invoca después de autenticar a un usuario mediante SSO. (Para obtener información sobre este proceso, como los valores de entrada y salida, consulte Ejemplo [de proceso de duración](/help/forms/developing/aem-forms-processes.md)corta).
 
@@ -117,7 +120,7 @@ La aplicación cliente consta de los siguientes archivos:
 * `views/login.mxml`:: Representa la pantalla de inicio de sesión. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)login.mxml.)
 * `views/logout.mxml`:: Representa la pantalla de cierre de sesión. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)logout.mxml.)
 * `views/progress.mxml`:: Representa una vista de progreso. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)progress.mxml.)
-* `views/remoting.mxml`:: Representa la vista que invoca el proceso de corta duración de AEM Forms denominado MyApplication/EncryptDocument mediante el uso de remoting. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)remoting.mxml.)
+* `views/remoting.mxml`:: Representa la vista que invoca un proceso de corta duración para AEM Forms llamado MyApplication/EncryptDocument mediante el uso de remoting. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)remoting.mxml.)
 
 La siguiente ilustración proporciona una representación visual de la aplicación cliente.
 
@@ -131,7 +134,7 @@ La siguiente ilustración proporciona una representación visual de la aplicaci�
 
 El siguiente código representa el archivo SSOStandalone.mxml.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Application
                  layout="absolute"
@@ -248,7 +251,7 @@ El siguiente código representa el archivo SSOStandalone.mxml.
 
 El siguiente código representa el archivo ISSOManager.as.
 
-```as3
+```java
  package um
  {
      import flash.events.IEventDispatcher;
@@ -299,7 +302,7 @@ El siguiente código representa el archivo ISSOManager.as.
 
 El siguiente código representa el archivo SSOEvent.as.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -371,7 +374,7 @@ El siguiente código representa el archivo SSOEvent.as.
 
 El siguiente código representa el archivo SSOManager.as.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -535,7 +538,7 @@ El siguiente código representa el archivo SSOManager.as.
 
 El siguiente código representa el archivo UserManager.as.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -601,7 +604,7 @@ El siguiente código representa el archivo UserManager.as.
 
 El siguiente código representa el archivo login.mxml.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Script>
@@ -644,7 +647,7 @@ El siguiente código representa el archivo login.mxml.
 
 El siguiente código representa el archivo logout.mxml.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Label x="97" y="188" text="You have successfully logged out from the application"/>
@@ -657,7 +660,7 @@ El siguiente código representa el archivo logout.mxml.
 
 El siguiente código representa el archivo progress.mxml.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas >
      <mx:Label x="151" y="141" text="Wait...."/>
@@ -667,9 +670,9 @@ El siguiente código representa el archivo progress.mxml.
 
 ### Creación del archivo remoting.mxml {#creating-the-remoting-mxml-file}
 
-El siguiente código representa el archivo remoting.mxml que invoca el `MyApplication/EncryptDocument` proceso. Dado que se pasa un documento al proceso, la lógica de la aplicación responsable de pasar un documento seguro a AEM Forms se encuentra en este archivo. (Consulte [Paso de documentos seguros para invocar procesos mediante Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+El siguiente código representa el archivo remoting.mxml que invoca el `MyApplication/EncryptDocument` proceso. Dado que se pasa un documento al proceso, la lógica de la aplicación responsable de pasar un documento seguro a los AEM Forms se encuentra en este archivo. (Consulte [Paso de documentos seguros para invocar procesos mediante Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="664" height="400" creationComplete="initializeChannelSet()" xmlns:views="views.*">
      <mx:Script>
@@ -885,7 +888,7 @@ Como respuesta a este valor, se envía un `SSOEvent.AUTHENTICATION_REQUIRED` val
 
 El servlet de seguridad del Administrador de usuarios responde con el siguiente valor:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
  Set-Cookie: lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A; Path=/
  authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
@@ -895,16 +898,16 @@ Como resultado, `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` se env�
 
 ### El usuario ya está autenticado {#the-user-is-already-authenticated}
 
-En este caso, el usuario ya ha iniciado sesión en AEM Forms y, a continuación, navega a la aplicación cliente. La aplicación cliente se conecta al servlet de seguridad de User Manager durante el inicio.
+En este caso, el usuario ya ha iniciado sesión en AEM Forms y luego navega a la aplicación cliente. La aplicación cliente se conecta al servlet de seguridad de User Manager durante el inicio.
 
-```as3
+```verilog
  GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
 Dado que el usuario ya está autenticado, la cookie del Administrador de usuarios está presente y se envía al servlet de seguridad del Administrador de usuarios. A continuación, el servlet obtiene el `assertionId` valor y comprueba si es válido. Si es válido, `authstate=COMPLETE` se devuelve. De lo contrario, `authstate=CREDENTIAL_CHALLENGE` se devuelve. A continuación se muestra una respuesta típica:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
         authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
