@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10781'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ El servicio de registro de extremos permite administrar los extremos mediante pr
 >
 >SOAP, EJB y (obsoleto para formularios AEM en JEE) Los extremos de reubicación se crean automáticamente para cada servicio activado. Los extremos SOAP y EJB habilitan SOAP y EJB para todas las operaciones de servicio.
 
-Un extremo remoto permite a los clientes de Flex invocar operaciones en el servicio de AEM Forms al que se agrega el extremo. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
+Un extremo Remoting permite a los clientes de Flex invocar operaciones en el servicio de AEM Forms al que se agrega el extremo. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
 
 Los extremos Correo electrónico, Administrador de Tareas y Carpeta vigilada exponen solo una operación específica del servicio. Para Añadir estos extremos se requiere un segundo paso de configuración para seleccionar un método que se invocará, definir parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.
 
@@ -78,10 +81,10 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Se deben agregar l
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -183,10 +186,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Estos archivos JAR son necesarios para crear un extremo SOAP. Sin embargo, se requieren archivos JAR adicionales si se utiliza el extremo SOAP para invocar el servicio. Para obtener más información sobre los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Estos archivos JAR son necesarios para crear un extremo SOAP. Sin embargo, se requieren archivos JAR adicionales si se utiliza el extremo SOAP para invocar el servicio. Para obtener información sobre los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -260,7 +263,7 @@ Añada un extremo SOAP a un servicio mediante la API de Java:
 
 ## Añadir extremos de carpeta vigilada {#adding-watched-folder-endpoints}
 
-Puede agregar mediante programación un extremo de carpeta vigilada a un servicio mediante la API Java de AEM Forms. Al agregar un punto final Carpeta vigilada, se permite a los usuarios colocar un archivo (como un archivo PDF) en una carpeta. Cuando el archivo se coloca en la carpeta, se invoca el servicio configurado y se manipula el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada. Una carpeta vigilada está configurada para analizarse con un intervalo de velocidad fijo o con un cronograma crónico, como todos los lunes, miércoles y viernes al mediodía.
+Puede agregar mediante programación un extremo de carpeta vigilada a un servicio mediante la API de Java de AEM Forms. Al agregar un punto final Carpeta vigilada, se permite a los usuarios colocar un archivo (como un archivo PDF) en una carpeta. Cuando el archivo se coloca en la carpeta, se invoca el servicio configurado y se manipula el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada. Una carpeta vigilada está configurada para analizarse con un intervalo de velocidad fijo o con un cronograma crónico, como todos los lunes, miércoles y viernes al mediodía.
 
 Para agregar mediante programación un extremo de carpeta vigilada a un servicio, considere el siguiente proceso de corta duración llamado *EncryptDocument*. (Consulte [Explicación de los procesos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)de AEM Forms).
 
@@ -293,10 +296,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -414,6 +417,7 @@ Añada un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
 
    * Un valor de cadena que especifica el nombre del valor de configuración. Cuando configure el valor de configuración `url` , especifique `url`.
    * Un valor de cadena que especifica el valor del valor de configuración. Al establecer el valor de configuración, especifique la ubicación de la carpeta controlada. `url`
+
    >[!NOTE]
    >
    >Para ver todos los valores de configuración establecidos para el servicio EncryptDocument, consulte el ejemplo de código Java ubicado en [QuickStart: Añadir un extremo de carpeta vigilada mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)de Java.
@@ -426,6 +430,7 @@ Añada un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
    * Un valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de `InDoc` entrada es `com.adobe.idp.Document`.
    * Un valor de cadena que especifica el tipo de asignación. For example, you can specify `variable`.
    * Un valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
+
    >[!NOTE]
    >
    >Invocar el `setInputParameterMapping` método para cada valor de parámetro de entrada que se va a definir. Dado que el proceso EncryptDocument tiene sólo un parámetro de entrada, debe invocar este método una vez.
@@ -460,7 +465,7 @@ Añada un extremo de carpeta vigilada mediante la API de Java de AEM Forms:
 
 Inicio [rápido: Añadir un extremo de carpeta vigilada mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) de Java utiliza un archivo constante que debe formar parte del proyecto de Java para compilar el inicio rápido. Este archivo constante representa los valores de configuración que deben establecerse al agregar un extremo de carpeta vigilada. El siguiente código Java representa el archivo constante.
 
-```as3
+```java
  /**
      * This class contains constants that can be used when setting Watched Folder
      * configuration values
@@ -491,7 +496,7 @@ Inicio [rápido: Añadir un extremo de carpeta vigilada mediante la API](/help/f
 
 ## Añadir extremos de correo electrónico {#adding-email-endpoints}
 
-Puede agregar mediante programación un extremo de correo electrónico a un servicio mediante la API Java de AEM Forms. Al agregar un extremo de correo electrónico, se permite a los usuarios enviar un mensaje de correo electrónico con uno o varios archivos adjuntos a una cuenta de correo electrónico específica. A continuación, se invoca la operación del servicio de configuración y se manipulan los archivos. Una vez que el servicio realiza la operación especificada, envía un mensaje de correo electrónico al remitente con los archivos modificados como archivos adjuntos.
+Puede agregar mediante programación un extremo de correo electrónico a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo de correo electrónico, se permite a los usuarios enviar un mensaje de correo electrónico con uno o varios archivos adjuntos a una cuenta de correo electrónico específica. A continuación, se invoca la operación del servicio de configuración y se manipulan los archivos. Una vez que el servicio realiza la operación especificada, envía un mensaje de correo electrónico al remitente con los archivos modificados como archivos adjuntos.
 
 Para agregar mediante programación un extremo de correo electrónico a un servicio, considere el siguiente proceso breve llamado *MyApplication\EncryptDocument*. Para obtener información sobre los procesos de corta duración, consulte [Explicación de los procesos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)de AEM Forms.
 
@@ -524,10 +529,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -657,6 +662,7 @@ Añada un extremo de correo electrónico mediante la API de Java:
 
    * Un valor de cadena que especifica el nombre del valor de configuración. Cuando configure el valor de configuración `smtpHost` , especifique `smtpHost`.
    * Un valor de cadena que especifica el valor del valor de configuración. Al establecer el valor de configuración, especifique un valor de cadena que especifique el nombre del servidor SMTP. `smtpHost`
+
    >[!NOTE]
    >
    >Para ver todos los valores de configuración establecidos para el servicio EncryptDocument introducido en esta sección, consulte el ejemplo de código Java ubicado en [QuickStart: Añadir un extremo de correo electrónico mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)de Java.
@@ -669,6 +675,7 @@ Añada un extremo de correo electrónico mediante la API de Java:
    * Un valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de `InDoc` entrada es `com.adobe.idp.Document`.
    * Un valor de cadena que especifica el tipo de asignación. For example, you can specify `variable`.
    * Un valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
+
    >[!NOTE]
    >
    >Invocar el `setInputParameterMapping` método para cada valor de parámetro de entrada que se va a definir. Dado que el proceso EncryptDocument tiene sólo un parámetro de entrada, debe invocar este método una vez.
@@ -703,7 +710,7 @@ Añada un extremo de correo electrónico mediante la API de Java:
 
 Inicio [rápido: Añadir un extremo de correo electrónico mediante la API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) de Java utiliza un archivo constante que debe formar parte del proyecto de Java para compilar el inicio rápido. Este archivo constante representa los valores de configuración que deben establecerse al agregar un extremo de correo electrónico. El siguiente código Java representa el archivo constante.
 
-```as3
+```java
  /**
      * This class contains constants that can be used when setting email endpoint
      * configuration values
@@ -745,7 +752,7 @@ Inicio [rápido: Añadir un extremo de correo electrónico mediante la API](/hel
 >
 >Las API de LiveCycle Remoting están en desuso para formularios AEM en JEE.
 
-Puede agregar mediante programación un extremo remoto a un servicio mediante la API Java de AEM Forms. Al agregar un extremo Remoting, se habilita una aplicación Flex para que invoque el servicio mediante remoting. (Consulte [Invocación de formularios AEM mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)(obsoleto para formularios AEM)).
+Puede agregar mediante programación un extremo remoto a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo Remoting, se habilita una aplicación Flex para que invoque el servicio mediante remoting. (Consulte [Invocación de AEM Forms mediante (obsoleto para formularios AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Para agregar mediante programación un extremo Remoting a un servicio, considere el siguiente proceso de corta duración llamado *EncryptDocument*.
 
@@ -777,10 +784,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -854,7 +861,7 @@ Añada un extremo Remoting mediante la API de Java:
 
 ## Añadir extremos de TaskManager {#adding-taskmanager-endpoints}
 
-Puede agregar mediante programación un extremo de TaskManager a un servicio mediante la API Java de AEM Forms. Al agregar un extremo de TaskManager a un servicio, se habilita a un usuario de Workspace para que invoque el servicio. Es decir, un usuario que trabaja en Workspace puede invocar un proceso que tiene un extremo de TaskManager correspondiente.
+Puede agregar mediante programación un extremo de TaskManager a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo de TaskManager a un servicio, se habilita a un usuario de Workspace para que invoque el servicio. Es decir, un usuario que trabaja en Workspace puede invocar un proceso que tiene un extremo de TaskManager correspondiente.
 
 >[!NOTE]
 >
@@ -879,10 +886,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -975,7 +982,7 @@ Añada un extremo de TaskManager mediante la API de Java:
 
 ## Modificación de los puntos finales {#modifying-endpoints}
 
-Puede modificar mediante programación un punto final existente mediante la API Java de AEM Forms. Al modificar un punto final, puede cambiar el comportamiento del punto final. Considere, por ejemplo, un punto final Carpeta vigilada que especifica una carpeta que se utiliza como carpeta vigilada. Puede modificar mediante programación los valores de configuración que pertenecen al punto final Carpeta vigilada, lo que resulta en que otra carpeta funcione como la carpeta vigilada. Para obtener información sobre los valores de configuración que pertenecen a un extremo de carpeta vigilada, consulte [Añadir extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilada.
+Puede modificar mediante programación un punto final existente mediante la API de Java de AEM Forms. Al modificar un punto final, puede cambiar el comportamiento del punto final. Considere, por ejemplo, un punto final Carpeta vigilada que especifica una carpeta que se utiliza como carpeta vigilada. Puede modificar mediante programación los valores de configuración que pertenecen al punto final Carpeta vigilada, lo que resulta en que otra carpeta funcione como la carpeta vigilada. Para obtener información sobre los valores de configuración que pertenecen a un extremo de carpeta vigilada, consulte [Añadir extremos](programmatically-endpoints.md#adding-watched-folder-endpoints)de carpeta vigilada.
 
 Para mostrar cómo modificar un extremo, esta sección modifica un extremo de carpeta vigilada cambiando la carpeta que se comporta como la carpeta vigilada.
 
@@ -1000,10 +1007,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -1050,7 +1057,7 @@ Modifique un punto final mediante la API de Java:
 
 1. Recupere el punto final que desea modificar.
 
-   * Recuperar una lista de todos los extremos a los que puede acceder el usuario actual (especificada en las propiedades de conexión) invocando el `EndpointRegistryClient` método del `getEndpoints` objeto y pasando un `PagingFilter` objeto que actúa como filtro. Puede pasar un `(PagingFilter)null` valor para devolver todos los extremos. Este método devuelve un `java.util.List` objeto en el que cada elemento es un `Endpoint` objeto. Para obtener más información sobre un `PagingFilter` objeto, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Recuperar una lista de todos los extremos a los que puede acceder el usuario actual (especificada en las propiedades de conexión) invocando el `EndpointRegistryClient` método del `getEndpoints` objeto y pasando un `PagingFilter` objeto que actúa como filtro. Puede pasar un `(PagingFilter)null` valor para devolver todos los extremos. Este método devuelve un `java.util.List` objeto en el que cada elemento es un `Endpoint` objeto. Para obtener información sobre un `PagingFilter` objeto, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Repita el `java.util.List` objeto para determinar si tiene puntos finales. Si existen extremos, cada elemento es una `EndPoint` instancia.
    * Determine el servicio que corresponde a un punto final invocando el `EndPoint` método `getServiceId` del objeto. Este método devuelve un valor de cadena que especifica el nombre del servicio.
    * Determine el tipo de extremo invocando el `EndPoint` método `getConnectorId` del objeto. Este método devuelve un valor de cadena que especifica el tipo de extremo. Por ejemplo, si el extremo es una carpeta vigilada, este método devuelve `WatchedFolder`.
@@ -1077,7 +1084,7 @@ Modifique un punto final mediante la API de Java:
 
 ## Eliminación de extremos {#removing-endpoints}
 
-Puede eliminar mediante programación un punto final de un servicio mediante la API de Java de AEM Forms. Después de quitar un punto final, no se puede invocar el servicio mediante el método de invocación que habilitó el punto final. Por ejemplo, si elimina un extremo SOAP de un servicio, no podrá invocar el servicio mediante el modo SOAP.
+Puede eliminar mediante programación un extremo de un servicio mediante la API de Java de AEM Forms. Después de quitar un punto final, no se puede invocar el servicio mediante el método de invocación que habilitó el punto final. Por ejemplo, si elimina un extremo SOAP de un servicio, no podrá invocar el servicio mediante el modo SOAP.
 
 Para mostrar cómo quitar un punto final de un servicio, esta sección elimina un punto final de EJB de un servicio llamado *EncryptDocument*.
 
@@ -1102,10 +1109,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Creación de un objeto EndpointRegistry Client**
 
@@ -1194,10 +1201,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si se implementa AEM Forms en JBoss Application Server)
+* jbossall-client.jar (requerido si se implementan AEM Forms en el servidor de aplicaciones JBoss)
 
-Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no es JBoss, sustituya adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no es JBoss, sustituya adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementan AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
 
 **Creación de un objeto ConnectorRegistry Client**
 
