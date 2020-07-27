@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -91,7 +94,7 @@ La `groups` carpeta ahora contiene dos grupos (actualice la página).
 
 Antes de crear grupos anidados dentro del `arts` grupo, coloque el puntero sobre la `arts` tarjeta y seleccione el icono de publicación para publicarla.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![componente de &quot;Me gusta&quot;](assets/liking-component.png)
 
 Espere a que se confirme que se publicó el grupo.
 
@@ -130,7 +133,7 @@ Para desplazarse a los grupos anidados desde la consola Sitios de comunidades:
 * Seleccionar tarjeta **[!UICONTROL de artes]**
 * Seleccionar carpeta **[!UICONTROL de grupos]**
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configurar como &quot;Me gusta&quot;](assets/configure-liking.png)
 
 ## Grupos de publicaciones {#publishing-groups}
 
