@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ El artículo proporciona los pasos para personalizar los mensajes de error de fo
 * mostrar mensajes de error para varios campos en un momento dado.
 * muestre el error independientemente de si un campo está seleccionado o no.
 
-## Personalización de mensajes de error {#customizing-error-messages-nbsp}
+## Personalización de mensajes de error  {#customizing-error-messages-nbsp}
 
 Antes de personalizar los mensajes de error, descargue y extraiga el paquete adjunto (CustomErrorManager-1.0-SNAPSHOT.zip).
 
@@ -31,7 +34,7 @@ Después de extraer el paquete, abra la carpeta CustomErrorManager-1.0-SNAPSHOT.
 
 [Obtener archivo](assets/customerrormanager-1.0-snapshot.zip)
 
-### Personalización de la posición de los mensajes de error {#customizing-the-position-of-error-messages-nbsp}
+### Personalización de la posición de los mensajes de error  {#customizing-the-position-of-error-messages-nbsp}
 
 Para personalizar la posición del mensaje de error, agregue la etiqueta &lt;div> para cada error y campo de advertencia, coloque la etiqueta &lt;div> a la izquierda o a la derecha y aplique estilos css en la etiqueta &lt;div>. Para ver los pasos detallados, consulte el procedimiento que se describe a continuación:
 
@@ -46,7 +49,7 @@ Para personalizar la posición del mensaje de error, agregue la etiqueta &lt;div
 
 1. En la implementación predeterminada, aparecen mensajes de error a la derecha del campo. Para que los mensajes de error aparezcan en la parte superior, utilice el siguiente código.
 
-   ```
+   ```javascript
    markError: function (jqWidget, msg, type) {
                var element = jqWidget.element,                                //Gives the div containing widget
                    pos = $(element).offset(),                          //Calculates the position of the div in the view port
@@ -77,7 +80,7 @@ Para personalizar la posición del mensaje de error, agregue la etiqueta &lt;div
 1. Vaya a la `CustomErrorManager-1.0-SNAPSHOT` carpeta y cree un archivo de las carpetas jcr_root y META-INF. Cambie el nombre del archivo a CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilice el administrador de paquetes para cargar e instalar el paquete.
 
-## Mostrar mensajes de error para varios campos {#display-error-messages-for-multiple-fields-nbsp}
+## Mostrar mensajes de error para varios campos  {#display-error-messages-for-multiple-fields-nbsp}
 
 Utilice el paquete adjunto para mostrar simultáneamente mensajes de error para todos los campos. Para mostrar un solo mensaje de error, utilice el perfil predeterminado.
 
@@ -89,7 +92,7 @@ Utilice el paquete adjunto para mostrar simultáneamente mensajes de error para 
 
    Utilice el siguiente código para cambiar el tamaño y el color de la fuente de los mensajes de error o advertencia.
 
-   ```
+   ```css
    #customError {
    color: #0000FF; // it changes the color of Error Message
    display:none;
@@ -115,11 +118,11 @@ Utilice el paquete adjunto para mostrar simultáneamente mensajes de error para 
 1. Vaya a la carpeta CustomErrorManager-1.0-SNAPSHOT y cree un archivo de las carpetas jcr_root y META-INF. Cambie el nombre del archivo a CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilice el administrador de paquetes para cargar e instalar el paquete.
 
-## Representar el formulario con el nuevo perfil.  {#render-the-form-with-the-new-profile-nbsp}
+## Procese el formulario con el nuevo perfil.  {#render-the-form-with-the-new-profile-nbsp}
 
 De forma predeterminada, los formularios HTML5 utilizan un perfil predeterminado: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;ubicación xdp>&amp;template=&lt;nombre del xdp>
 
-Para ver un formulario con los mensajes de error personalizados, represente el formulario con un perfil de error: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;ubicación xdp>&amp;template=&lt;nombre del xdp>
+Para vista de un formulario con los mensajes de error personalizados, procese el formulario con el perfil de error: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;ubicación xdp>&amp;template=&lt;nombre del xdp>
 
 >[!NOTE]
 >
