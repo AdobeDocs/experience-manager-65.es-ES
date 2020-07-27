@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ La API de **conexión** acepta un controlador como argumento. Después de crear 
 
 Puede utilizar el siguiente código de muestra para crear la conexión.
 
-```
+```javascript
 // Example showing how to connect to FormBridge
 window.addEventListener("FormBridgeInitialized",
                                 function(event) {
@@ -37,7 +40,7 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Asegúrese de crear una conexión antes de incluir el archivo formRuntime.jsp.
 
-## API de puente de formulario disponible {#available-form-bridge-api-nbsp}
+## API de puente de formulario disponible  {#available-form-bridge-api-nbsp}
 
 **getBridgeVersion()**
 
@@ -74,7 +77,7 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
       * **success**: Función de controlador de éxito. Esta función se pasa a un objeto que contiene XML en la propiedad *data* .
       * **contexto**: El objeto en el que se establece el contexto (esto) de la función de *éxito*
       * **validationChecker**: Función para llamar para comprobar los errores de validación recibidos del servidor. La función de validación se pasa a una matriz de cadenas de error.
-      * **formState**: Estado JSON del formulario XFA para el que se debe devolver el XML de datos. Si no se especifica, devuelve el XML de datos para el formulario procesado actualmente.
+      * **formState**: Estado JSON del formulario XFA para el que se debe devolver el XML de datos. Si no se especifica, devuelve el XML de datos del formulario procesado actualmente.
 
 * **Salida:** Ninguno
 * **Error:** Ninguno
@@ -91,11 +94,11 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
 
       * **pagingConfig:** Permite que el usuario anule el comportamiento predeterminado de procesar solo la primera página. La configuración se sobrescribe de la siguiente manera:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true| false>, shrinkPageDisabled: &lt;true| false> }).*
+         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
       * **LoggingConfig:** Permite al usuario anular el nivel de registro, deshabilitar el registro de una categoría, o bien mostrar la consola de registros o enviar al servidor. La configuración se puede anular de la siguiente manera:
 
-      ```JavaScript
+      ```javascript
       formBridge.registerConfig{
         "LoggerConfig" : {
       {
@@ -109,7 +112,7 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
 
       * **SubmitServiceProxyConfig:** Permita que los usuarios registren los servicios proxy de envío y de registro.
 
-         ```JavaScript
+         ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
          {
          "submitServiceProxy" : "`<submitServiceProxy>`",
