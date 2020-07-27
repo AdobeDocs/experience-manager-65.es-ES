@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '4102'
 ht-degree: 0%
@@ -200,7 +200,7 @@ Utilice el atributo request para recuperar las propiedades asociadas del origen 
 
 1. Incluya el siguiente texto en el archivo head.jsp:
 
-   ```
+   ```jsp
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
     request.setAttribute("paramMap",paraMap);%>
@@ -242,6 +242,7 @@ Para agregar una asociación:
    * Seleccione el tipo de asociación — Uno a Uno o Uno a Muchos.
    * Seleccione el objeto del modelo de datos con el que se va a asociar.
    * Seleccione el servicio de lectura para leer datos del objeto de modelo seleccionado. Se abre el argumento del servicio de lectura. Edite para cambiar el argumento, si es necesario, y enlace el argumento a la propiedad del objeto del modelo de datos que se va a asociar.
+
    En el siguiente ejemplo, el argumento predeterminado para el servicio de lectura del objeto del modelo de datos Dependientes es `dependentid`.
 
    ![add-collection-example](assets/add-association-example.png)
@@ -279,6 +280,7 @@ Para editar las propiedades:
    * **Objeto** del modelo de datos: Especifique los servicios de lectura y escritura y edite los argumentos.
    * **Propiedad**: Especifique el tipo, subtipo y formato de la propiedad. También puede especificar si la propiedad seleccionada es la clave principal del objeto del modelo de datos.
    * **Servicio**: Especifique el objeto del modelo de entrada, el tipo de salida y los argumentos del servicio. Para un servicio Get, puede especificar si se espera que devuelva una matriz.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Cuadro de diálogo Editar propiedades para obtener un servicio
@@ -508,24 +510,24 @@ La siguiente tabla lista las restricciones de los datos de entrada en función d
 
 En este ejemplo, los datos de entrada se validan según las restricciones máxima, mínima y requerida definidas en el archivo Swagger. Los datos de entrada cumplen los criterios de validación solo si el identificador de pedido está presente y su valor está entre 1 y 10.
 
-```xml
-parameters: [
-{
-name: "orderId",
-in: "path",
-description: "ID of pet that needs to be fetched",
-required: true,
-type: "integer",
-maximum: 10,
-minimum: 1,
-format: "int64"
-}
-]
+```json
+   parameters: [
+   {
+   name: "orderId",
+   in: "path",
+   description: "ID of pet that needs to be fetched",
+   required: true,
+   type: "integer",
+   maximum: 10,
+   minimum: 1,
+   format: "int64"
+   }
+   ]
 ```
 
 Se muestra una excepción si los datos de entrada no cumplen los criterios de validación. Si el nivel de registro está establecido en **Depurar**, se registra un error en el archivo **error.log** . Por ejemplo,
 
-```java
+```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
 ```
 
