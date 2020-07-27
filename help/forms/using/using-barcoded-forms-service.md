@@ -1,6 +1,6 @@
 ---
 title: Barcoded Forms Service
-seo-title: Uso de AEM Forms Barcoded Forms Service
+seo-title: Uso del servicio AEM Forms Barcoded Forms
 description: 'Utilice el servicio AEM Forms Barcoded Forms para extraer datos de imágenes electrónicas de códigos de barras. '
 seo-description: 'Utilice el servicio AEM Forms Barcoded Forms para extraer datos de imágenes electrónicas de códigos de barras. '
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
@@ -10,7 +10,10 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +41,7 @@ El servicio también admite las siguientes simbologías **unidimensionales** sum
 Puede utilizar el servicio Barcoded Forms para realizar las siguientes tareas:
 
 * Extraiga datos de códigos de barras de imágenes de códigos de barras (TIFF o PDF). Los datos se almacenan como texto delimitado.
-* Convertir datos de texto delimitados a XML (XDP o XFDF). Los datos XML son más fáciles de analizar que el texto delimitado. Además, los datos en formato XDP o XFDF se pueden utilizar como entrada para otros servicios en AEM Forms.
+* Convertir datos de texto delimitados a XML (XDP o XFDF). Los datos XML son más fáciles de analizar que el texto delimitado. Además, los datos en formato XDP o XFDF pueden utilizarse como entrada para otros servicios en AEM Forms.
 
 Para cada código de barras de una imagen, el servicio Formularios con códigos de barras localiza el código de barras, lo descodifica y extrae los datos. El servicio devuelve los datos del código de barras (mediante la codificación de entidad donde sea necesario) en un elemento de contenido de un documento XML. Por ejemplo, la siguiente imagen TIFF digitalizada de un formulario contiene dos códigos de barras:
 
@@ -128,7 +131,7 @@ Además, tenga en cuenta las siguientes limitaciones al utilizar el servicio de 
 
 Además, el servicio puede descodificar cualquier código de barras que utilice simbología admitida si se observan las limitaciones anteriores. Para obtener más información sobre cómo crear formularios con códigos de barras interactivos, consulte la Ayuda [de](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.
 
-## Configurar propiedades del servicio {#configureproperties}
+## Configurar propiedades del servicio   {#configureproperties}
 
 Puede utilizar el servicio **de formularios con códigos de barras** AEMFD en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola de AEM es `https://[host]:'port'/system/console/configMgr`.
 
@@ -144,7 +147,7 @@ Barcoded Forms Service proporciona las dos API siguientes:
 
 El siguiente código de ejemplo descodifica un código de barras en un documento y guarda el XML de salida en el disco.
 
-```java
+```jsp
 <%@ page import="java.util.List,
                 com.adobe.fd.bcf.api.BarcodedFormsService,
                 com.adobe.fd.bcf.api.CharSet,
