@@ -1,8 +1,8 @@
 ---
 title: Uso de Maven para comunidades
 seo-title: Uso de Maven para comunidades
-description: AEM Communities API jar y AEM Uber API jar
-seo-description: AEM Communities API jar y AEM Uber API jar
+description: jar de la API de AEM Communities y jar de la API de AEM Uber
+seo-description: jar de la API de AEM Communities y jar de la API de AEM Uber
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Información general {#overview}
 
-Esta sección de la documentación de Comunidades de AEM se suma a:
+Esta sección de la documentación de AEM Communities se suma a:
 
 * [Creación de proyectos de AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
@@ -30,7 +33,7 @@ Ahora hay dos artefactos &quot;uber&quot; que reemplazan a artefactos individual
 
 ## Artificio Jar API de Communities {#communities-api-jar-artifact}
 
-A continuación se muestra un ejemplo de un archivo GAV para AEM Communities API jar:
+A continuación se muestra un ejemplo de GAV para el tarro de API de AEM Communities:
 
 ```xml
 <dependency>
@@ -41,12 +44,12 @@ A continuación se muestra un ejemplo de un archivo GAV para AEM Communities API
 </dependency>
 ```
 
-Asegúrese de que la versión especificada corresponde a la versión del paquete Communities instalada para las comunidades AEM. Para verificar el número de versión instalada:
+Asegúrese de que la versión especificada se corresponde con la versión del paquete Communities instalada para AEM Communities. Para verificar el número de versión instalada:
 
 1. Inicie sesión con privilegios administrativos.
 1. Vaya al Administrador [de paquetes](../../help/sites-administering/package-manager.md). Por ejemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-1. Busque el paquete *cq-socialcommunities-pkg-1.x.xxx*
+1. Busque el paquete: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extraiga la versión del nombre del paquete:
    * La primera versión de AEM 6.3 es la versión 1.11.170.
    * Los paquetes de funciones serán las versiones 1.12.xxx.
