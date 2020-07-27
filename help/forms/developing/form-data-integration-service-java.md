@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 El siguiente ejemplo de código Java importa datos en un formulario PDF. Los datos se encuentran en un archivo XML denominado *Loan_data.xml* y el formulario PDF se guarda como un archivo PDF denominado *ResultLoanForm.pdf*. (Consulte [Importación de datos](/help/forms/developing/importing-exporting-data.md#importing-form-data)de formulario).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -138,7 +138,7 @@ El siguiente ejemplo de código Java importa datos en un formulario PDF. Los dat
 
 El siguiente ejemplo de código Java exporta datos desde un formulario PDF. Los datos del formulario se guardan como un archivo XML denominado *Loan_data.xml*. (Consulte [Exportación de datos](/help/forms/developing/importing-exporting-data.md#exporting-form-data)de formulario.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
