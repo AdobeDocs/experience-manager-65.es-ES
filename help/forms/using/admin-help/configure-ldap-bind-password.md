@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ Para evitar riesgos de seguridad, no se ha configurado el campo bind password en
 1. Para exportar la configuración actual a un archivo, haga clic en Exportar y guarde el archivo de configuración en otra ubicación.
 1. En el archivo, busque el nodo `Domains` > *[Nombre]* de dominio > `DirectoryConfigs` > `LDAPGroupConfig` . He aquí un ejemplo:
 
-   ```as3
+   ```xml
     <node name="LDAPGroupConfig">
         <map>
             <entry key="bindanonymously" value="false" />
@@ -38,7 +41,7 @@ Para evitar riesgos de seguridad, no se ha configurado el campo bind password en
 
 1. En el archivo, busque el nodo `Domains` > *[Nombre]* de dominio > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` . He aquí un ejemplo:
 
-   ```as3
+   ```xml
     <node name="LDAPUserConfig">
         <map>
             <entry key="bindanonymously" value="false" />
