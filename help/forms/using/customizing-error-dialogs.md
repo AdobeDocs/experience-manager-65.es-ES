@@ -1,28 +1,31 @@
 ---
 title: Personalización de cuadros de diálogo de error
 seo-title: Personalización de cuadros de diálogo de error
-description: Personalización de los cuadros de diálogo de error del espacio de trabajo de LiveCycle AEM Forms para añadir distintas descripciones de errores.
-seo-description: Personalización de los cuadros de diálogo de error del espacio de trabajo de LiveCycle AEM Forms para añadir distintas descripciones de errores.
+description: Personalización de los cuadros de diálogo de error del espacio de trabajo de AEM Forms de LiveCycle para agregar distintas descripciones de errores.
+seo-description: Personalización de los cuadros de diálogo de error del espacio de trabajo de AEM Forms de LiveCycle para agregar distintas descripciones de errores.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 4%
 
 ---
 
 
 # Personalización de cuadros de diálogo de error {#customizing-error-dialogs}
 
-El espacio de trabajo de AEM Forms permite personalizar los cuadros de diálogo de error. Siga los pasos [genéricos para personalizar](/help/forms/using/generic-steps-html-workspace-customization.md) el espacio de trabajo de AEM Forms seguidos de los pasos a continuación para personalizar los cuadros de diálogo de error.
+El espacio de trabajo AEM Forms permite personalizar los cuadros de diálogo de error. Realice los pasos [Genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md) del espacio de trabajo AEM Forms seguidos de los pasos siguientes para personalizar los diálogos de error.
 
 ## Personalización del texto {#customizing-text}
 
 1. En el `/apps/ws/locales/en-US/translation.json` archivo, cambie los valores de `wserror` a los valores personalizados. Por ejemplo:
 
-   ```
+   ```json
    "wserror" : {
     "message" : "Message:",
     "ComponentUI" : "Component UI:",
@@ -30,15 +33,18 @@ El espacio de trabajo de AEM Forms permite personalizar los cuadros de diálogo 
     "ok" : "Ok",
     "ErrorCode" : "Error Code:"
     }
-   
-   To
-    "wserror" : {
-    "message" : "Error Message:",
-    "ComponentUI" : "UI Component:",
-    "error" : "Something went wrong!!",
-    "ok" : "Ok",
-    "ErrorCode" : "Error Code:"
-    }
+   ```
+
+   A
+
+   ```json
+   "wserror" : {
+   "message" : "Error Message:",
+   "ComponentUI" : "UI Component:",
+   "error" : "Something went wrong!!",
+   "ok" : "Ok",
+   "ErrorCode" : "Error Code:"
+   }
    ```
 
    >[!NOTE]
@@ -193,25 +199,27 @@ El espacio de trabajo de AEM Forms permite personalizar los cuadros de diálogo 
        white-space: nowrap;
        overflow: hidden;
    }
-   
-   To
-   
+   ```
+
+   A
+
+   ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .oooAction button span, .wsMessageContainerDiv .action button span
    {
-       display: block;
-       text-overflow: ellipsis;
-       white-space: nowrap;
-       overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
    }
    
    /*-------- Customized following Portion --------*/
    .error-dialog .foot-bar button span
    {
-       display: block;
-       text-overflow: ellipsis;
-       text-decoration:underline;
-       white-space: wrap;
+      display: block;
+      text-overflow: ellipsis;
+      text-decoration:underline;
+      white-space: wrap;
    }
    ```
 
@@ -236,9 +244,11 @@ El espacio de trabajo de AEM Forms permite personalizar los cuadros de diálogo 
     box-shadow:0px 0px 10px 3px #888;
     display:none;
 }
+```
 
-To
+A
 
+```css
 .error-dialog{
     border: 9px solid #DEDEDE;
     width: 200px;
@@ -267,9 +277,11 @@ To
     overflow: hidden;
     white-space: nowrap;
 }
+```
 
-To
+A
 
+```css
 .error-dialog .head-bar{
     height: 40px;
     background: url(../images/error.png) no-repeat 7px 10px #DEDEDE;
