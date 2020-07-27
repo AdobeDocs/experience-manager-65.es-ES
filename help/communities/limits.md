@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Para alcanzar esta configuración OSGi:
 * Localizar `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Seleccione el icono de edición.
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![configure-limit](assets/configure-limits.png)
 
 * **[!UICONTROL Aplicar automáticamente límites de contribución UGC]**
 
-   Si se selecciona, establezca automáticamente límites de contribución para los usuarios cuando se registren como miembros de la comunidad. Esto se refleja en el perfil del miembro de la comunidad y puede habilitarse o deshabilitarse desde la consola [de](members.md)miembros. Nunca se restringen los nuevos miembros con una dirección de correo electrónico de una lista permitida de dominios.
+   Si se selecciona, establezca automáticamente límites de contribución para los usuarios cuando se registren como miembros de la comunidad. Esto se refleja en el perfil del miembro de la comunidad y puede habilitarse o deshabilitarse desde la consola [de](members.md)miembros. Nunca se restringen los nuevos miembros con una dirección de correo electrónico de una lista de permitidos de dominios.
 
    El valor predeterminado no está marcado.
 
@@ -71,9 +71,9 @@ Para alcanzar esta configuración OSGi:
 
 * **[!UICONTROL Dominios]**
 
-   Una lista de lista permitida de uno o varios dominios de correo electrónico. Seleccione el icono + para realizar entradas adicionales.
+   lista de lista de permitidos de uno o varios dominios de correo electrónico. Seleccione el icono + para realizar entradas adicionales.
 
-   Los usuarios con direcciones de correo electrónico en la lista permitida de dominios no se ven afectados cuando se aplican automáticamente los límites de contribución UGC. Por ejemplo, si `mycompany.com` se agrega un dominio a la lista de dominios, nunca se restringirá la publicación de un miembro con dirección de correo electrónico `me@mycompany.com` .
+   Los usuarios con direcciones de correo electrónico en la lista de permitidos de dominios no se ven afectados cuando se aplican automáticamente los límites de contribución UGC. Por ejemplo, si `mycompany.com` se agrega un dominio a la lista de dominios, nunca se restringirá la publicación de un miembro con dirección de correo electrónico `me@mycompany.com` .
 
    El valor predeterminado es una lista de permitidos vacía.
 
