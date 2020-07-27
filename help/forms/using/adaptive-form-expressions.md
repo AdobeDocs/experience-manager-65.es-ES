@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2766'
+ht-degree: 0%
 
 ---
 
@@ -85,7 +88,7 @@ La expresión de clic gestiona las acciones realizadas en el evento de clic de u
 
 **Tipo** de devolución: La expresión de clic no devuelve ningún valor. Si alguna expresión devuelve un valor, se ignora el valor.
 
-**Ejemplo**: Para rellenar un **cuadro de texto de cuadro de texto1** en la acción de hacer clic de un botón con el valor Formularios **** AEM, la expresión de clic del botón es `textbox1.value="AEM Forms"`
+**Ejemplo**: Para rellenar un cuadro de texto **cuadro de texto1** en la acción de clic de un botón con **AEM Forms** de valor, la expresión de clic del botón es `textbox1.value="AEM Forms"`
 
 ### Script de inicialización {#initialization-script}
 
@@ -134,7 +137,7 @@ La expresión validate se utiliza para validar los campos mediante la expresión
 
 **Se aplica a**: campos
 
-**Tipo** de devolución: La expresión devuelve un valor booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
+**Tipo** de devolución: La expresión devuelve un valor booleano que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
 **Ejemplo**: Para un campo que representa el código postal del Reino Unido, la expresión de validación es:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -161,7 +164,7 @@ La secuencia de comandos Commit de valores se activa cuando:
 
 >[!NOTE]
 >
->Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a https://&#39;[server]:[port]&#39;/system/console/configMgr y cambie la versión de los formularios **adaptables para su compatibilidad** a **AEM Forms 6.1**. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
+>Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a https://&#39;[server]:[port]&#39;/system/console/configMgr y cambie **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
 
 ### Expresión de visibilidad {#visibility-expression}
 
@@ -224,13 +227,13 @@ GuideBridge es una colección de API que se puede utilizar para interactuar con 
 
 * Para validar un formulario adaptable o sus paneles específicos, utilice `guideBridge.validate(errorList, somExpression).`
 
-#### Uso de GuideBridge fuera de Expresiones {#using-guidebridge-outside-expressions-nbsp}
+#### Uso de GuideBridge fuera de Expresiones  {#using-guidebridge-outside-expressions-nbsp}
 
 También puede utilizar las API de GuideBridge fuera de las expresiones. Por ejemplo, puede utilizar la API de GuideBridge para establecer la comunicación entre el HTML de la página que aloja el formulario adaptable y el Modelo de formulario. Además, puede establecer el valor que proviene del elemento principal de Iframe que aloja el formulario.
 
 Para utilizar la API de GuideBridge en el ejemplo mencionado anteriormente, capture una instancia de GuideBridge. Para capturar la instancia, escuche el `bridgeInitializeStart`evento de un `window`objeto:
 
-```
+```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      // get hold of the guideBridge object
@@ -260,7 +263,7 @@ GuideBridge también proporciona determinados eventos para scripts externos en l
 
 Utilice el siguiente código para registrar controladores:
 
-```
+```javascript
 guideBridge.on("elementValueChanged", function (event, data)  {
 
       // execute some logic when value of a field is changed
