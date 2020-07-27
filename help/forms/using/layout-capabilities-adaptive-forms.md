@@ -9,20 +9,23 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
 
 # Funciones de diseño de formularios adaptables{#layout-capabilities-of-adaptive-forms}
 
-Adobe Experience Manager (AEM) le permite crear formularios adaptables fáciles de usar que ofrecen experiencias dinámicas a los usuarios finales. La presentación del formulario controla cómo se muestran los elementos o componentes en un formulario adaptable.
+Adobe Experience Manager (AEM) le permite crear formularios adaptables fáciles de usar que oferta experiencias dinámicas a los usuarios finales. La presentación del formulario controla cómo se muestran los elementos o componentes en un formulario adaptable.
 
 ## Conocimientos previos necesarios {#prerequisite-knowledge}
 
 Antes de conocer las distintas funciones de presentación de los formularios adaptables, lea los siguientes artículos para obtener más información sobre los formularios adaptables.
 
-[Introducción a AEM Forms](../../forms/using/introduction-aem-forms.md)
+[Introducción a los AEM Forms](../../forms/using/introduction-aem-forms.md)
 
 [Introducción a la creación de formularios](../../forms/using/introduction-forms-authoring.md)
 
@@ -76,13 +79,13 @@ Utilice esta presentación del panel para proporcionar navegación guiada dentro
 
 Utilice el `Panel adaptive form` componente para proporcionar navegación paso a paso dentro de un panel. Cuando se utiliza este diseño, un usuario pasa al siguiente paso solo después de completar el paso actual
 
-```
+```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
-![Expresión de finalización de pasos en el diseño Asistente para un formulario de varios pasos](assets/layout-sidebar.png)
+![expresión de finalización de pasos en el diseño Asistente para un formulario de varios pasos](assets/layout-sidebar.png)
 
-Expresión de finalización de pasos en el diseño Asistente para un formulario de varios pasos
+expresión de finalización de pasos en el diseño Asistente para un formulario de varios pasos
 
 ![Un formulario con presentación de asistente](assets/wizard-layout.png)
 
@@ -92,7 +95,7 @@ Un formulario con el Asistente
 
 Con este diseño, puede colocar el `Panel adaptive form` componente en un panel con navegación por estilo acordeón. Con este diseño, también puede crear paneles repetitivos. Los paneles repetitivos le permiten agregar o quitar paneles dinámicamente según sea necesario. Puede definir el número mínimo y máximo de veces que se repite un panel. Además, el título del panel se puede determinar dinámicamente, basándose en la información proporcionada en los elementos del panel.
 
-La expresión de resumen se puede utilizar para mostrar los valores proporcionados por el usuario final en el título del panel minimizado.
+La expresión de resumen puede utilizarse para mostrar los valores proporcionados por el usuario final en el título del panel minimizado.
 
 ![Paneles repetitivos con presentación de acordeón en formularios adaptables](assets/repeatable_panels_using_accordion_layout.png)
 
@@ -148,7 +151,7 @@ Diseños móviles sin títulos de panel en los encabezados de formulario
 
 Un diseño de barra de herramientas controla la colocación y visualización de los botones de acción que se agregan a los formularios adaptables. La presentación se puede agregar a nivel de formulario o de panel.
 
-![Una lista de diseños de barra de herramientas en formularios adaptables para controlar la presentación de los botones](assets/toolbar-layouts.png)
+![lista de diseños de barra de herramientas en formularios adaptables para controlar la presentación de los botones](assets/toolbar-layouts.png)
 
 Una lista de diseños de barra de herramientas en formularios adaptables
 
@@ -160,9 +163,9 @@ Esta presentación está seleccionada como presentación predeterminada cuando s
 
 Además, puede agregar varias barras de herramientas que contengan botones de acción configurados con este diseño. Un botón de acción está asociado a un control de formulario. Puede configurar las barras de herramientas para que estén antes o después de un panel.
 
-![Vista predeterminada de la barra de herramientas](assets/toolbar_layout_default.png)
+![vista predeterminada de la barra de herramientas](assets/toolbar_layout_default.png)
 
-Vista predeterminada de la barra de herramientas
+vista predeterminada de la barra de herramientas
 
 ### Diseño fijo móvil para la barra de herramientas {#mobile-fixed-layout-for-toolbar}
 
