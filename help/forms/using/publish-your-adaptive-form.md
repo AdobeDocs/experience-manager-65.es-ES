@@ -9,7 +9,10 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 1%
 
 ---
 
@@ -25,12 +28,12 @@ Una vez que el formulario adaptable esté listo, puede publicarlo para que esté
 Tiene los siguientes métodos para publicar un formulario adaptable:
 
 * [Publicación del formulario adaptable como página de AEM](../../forms/using/publish-your-adaptive-form.md#publish-the-adaptive-form-as-an-aem-page)
-* [Incrustar el formulario adaptable en una página Sitios de AEM](#embed-the-adaptive-form-in-an-aem-sites-page)
+* [Incrustar el formulario adaptable en una página de AEM Sites](#embed-the-adaptive-form-in-an-aem-sites-page)
 * [Incrustar el formulario adaptable en una página web externa (una página web que no es de AEM alojada fuera de AEM)](../../forms/using/publish-your-adaptive-form.md)
 
 ## Antes de comenzar {#before-you-start}
 
-* **[Configure una instancia](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**de publicación de AEM Forms: La instancia de publicación es una instancia pública de AEM Forms que se ejecuta en modo de publicación. En un entorno de producción, la instancia de publicación está fuera del servidor de seguridad de la organización.
+* **[Configure una instancia](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**de publicación de AEM Forms: La instancia de publicación es una instancia pública de AEM Forms que se ejecutan en modo de publicación. En un entorno de producción, la instancia de publicación está fuera del servidor de seguridad de la organización.
 * **[Configure la replicación y la replicación](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**inversa: La replicación copia el contenido de la instancia de autor en una instancia de publicación y devuelve los datos introducidos por el usuario (por ejemplo, los datos introducidos en el formulario) desde la instancia de publicación a la instancia de autor.
 
 ## Publicación del formulario adaptable como página de AEM {#publish-the-adaptive-form-as-an-aem-page}
@@ -43,11 +46,11 @@ Cuando el formulario adaptable se publica como una página de AEM, toda la pági
 1. Abra el formulario en la instancia de publicación. El formulario está disponible para que el usuario final lo rellene y lo envíe.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
-## Incrustar el formulario adaptable en una página Sitios de AEM {#embed-the-adaptive-form-in-an-aem-sites-page}
+## Incrustar el formulario adaptable en una página de AEM Sites {#embed-the-adaptive-form-in-an-aem-sites-page}
 
-AEM Forms permite a los desarrolladores de formularios incrustar formularios adaptables sin problemas en una página Sitios de AEM. El formulario adaptable incrustado es totalmente funcional y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+Los AEM Forms permiten a los desarrolladores de formularios incrustar formularios adaptables sin problemas en una página de AEM Sites. El formulario adaptable incrustado es totalmente funcional y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 
-AEM Forms proporciona un componente, AEM Forms Contenedor, para incrustar un formulario adaptable en una página de AEM Sites. De forma predeterminada, el componente no está visible en AEM Sites contenedor. Siga estos pasos para activar el componente Contenedor de AEM Forms e incrustar el formulario adaptable en una página de sitios de AEM:
+Los AEM Forms proporcionan un componente, Contenedor AEM Forms, para incrustar un formulario adaptable en una página AEM Sites. De forma predeterminada, el componente no está visible en el contenedor AEM Sites. Realice los siguientes pasos para habilitar el componente Contenedor AEM Forms e incrustar el formulario adaptable en una página AEM Sites:
 
 1. Cree y abra una página en el sitio de We.Retail para editarla. Por ejemplo, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). El formulario adaptable se incrusta en la página de sitios.
 
@@ -56,18 +59,19 @@ AEM Forms proporciona un componente, AEM Forms Contenedor, para incrustar un for
    El sitio Web de We.Retail se envía con AEM. Si no tiene instalado el sitio Web de We.Retail, consulte Implementación [de referencia de](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) We.Retail para instalar el sitio.
 
 1. Toque ![propiedades](assets/properties.png) de la información de la página y seleccione la opción **Editar plantilla** en la página del sitio Web We.Retail recientemente creada. La plantilla de la página se abre en una nueva ficha del explorador.
-1. Toque dentro del cuadro de contenedor **de** diseño y toque ![Administración de fuentes](assets/feedmanagement.png). En la ficha Componentes **** permitidos, expanda el acordeón **General** , seleccione la opción Formulario **** AEM y toque ![](assets/save_icon.svg). El componente Contenedor de AEM Forms está habilitado para la página.
+1. Toque dentro del cuadro de contenedor **de** diseño y toque ![Administración de fuentes](assets/feedmanagement.png). En la ficha Componentes **** permitidos, expanda el acordeón **General** , seleccione la opción Formulario **** AEM y toque ![save_icon](assets/save_icon.svg). El componente Contenedor AEM Forms está habilitado para la página.
 
-1. Abra la ficha del navegador que contiene la página Sitios AEM abierta en el paso 1. Puntee en el cuadro **Arrastrar componentes aquí** y toque **+.** En el cuadro **Insertar nuevo componente** , toque Formulario **AEM.** El componente Contenedor **de** AEM Forms se agrega a la página.
-1. Toque el componente contenedor **de** AEM Forms y toque ![](assets/configure-icon.svg). Aparece un cuadro de diálogo con las propiedades de AEM Forms Contenedor. En el campo Ruta **del** recurso, busque y seleccione el formulario adaptable Shipping-address-add-update-form. Tocar ![](assets/save_icon.svg). El formulario adaptable se incrusta en la página.
+1. Abra la ficha del navegador que contiene la página AEM Sites abierta en el paso 1. Puntee en el cuadro **Arrastrar componentes aquí** y toque **+.** En el cuadro **Insertar nuevo componente** , toque Formulario **AEM.** El componente Contenedor **** AEM Forms se agrega a la página.
+1. Toque el componente contenedor **** AEM Forms y toque ![configure-icon](assets/configure-icon.svg). Aparece un cuadro de diálogo con las propiedades del Contenedor AEM Forms. En el campo Ruta **del** recurso, busque y seleccione el formulario adaptable Shipping-address-add-update-form. Toque ![save_icon](assets/save_icon.svg). El formulario adaptable se incrusta en la página.
 1. Publique el formulario adaptable y la página de sitios. Tenga en cuenta lo siguiente:
 
    * Si publica la página Sitios de AEM por primera vez e incluye un formulario incrustado, publique la página Sitios y el formulario incrustado.
    * Si solo modifica el formulario incrustado en una página de sitio publicada, publique el formulario original y los cambios se reflejarán en la página de sitio publicada. La página del sitio publicada incluye una referencia al formulario y no requiere volver a publicar la página.
    * Si modifica la página Sitios y el formulario incrustado, vuelva a publicar la página Sitios y el formulario.
+
    ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
 
-   Se ha agregado el formulario Cambio de dirección de envío y facturación a una página Sitios de AEM.
+   Se agregó el formulario Cambio de dirección de envío y facturación a una página de AEM Sites.
 
 ## Incrustar el formulario adaptable en una página web externa {#embed-the-adaptive-form-in-an-external-webpage}
 
