@@ -9,27 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
 
 # Alojamiento de dos instancias de espacio de trabajo de AEM Forms en un servidor {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
-La instalación y configuración predeterminadas de AEM Forms permiten que solo haya un espacio de trabajo de AEM Forms disponible en el servidor. Sin embargo, es posible que tenga que alojar dos instancias diferentes del espacio de trabajo de AEM Forms en un único servidor de AEM Forms. Las dos instancias son accesibles mediante distintas direcciones URL.
+La instalación y la configuración predeterminadas de los AEM Forms permiten que solo haya un espacio de trabajo de AEM Forms disponible en el servidor. Sin embargo, es posible que tenga que alojar dos instancias diferentes del espacio de trabajo AEM Forms en un único servidor AEM Forms. Las dos instancias son accesibles mediante distintas direcciones URL.
 
 Los administradores de AEM Forms personalizan el espacio de trabajo para crear dos direcciones URL diferentes y hacer que dos espacios de trabajo estén disponibles en el mismo servidor. En este artículo de personalización, suponemos que los dos espacios de trabajo son accesibles en `https://'[server]:[port]'/lc/ws` y `https://'[server]:[port]':/lc/ws2`.
 
 Siga estos pasos para configurar el espacio de trabajo de AEM Forms.
 
-1. Instale el paquete dev del espacio de trabajo de AEM Forms en su servidor. Consulte [dev package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)para obtener instrucciones para crearlo.
+1. Instale el paquete dev del espacio de trabajo AEM Forms en su servidor. Consulte [dev package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)para obtener instrucciones para crearlo.
 1. Inicie sesión en CRXDE Lite como administrador, accediendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copie el nodo ws en /content y péguelo en /content. Cambie el nombre del nodo a ws2. Haga clic en **[!UICONTROL Guardar todo]**. En las propiedades de este nodo, cambie el valor de `sling:resourceType` a ws2. Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Copie las carpetas de /libs y péguelas en /apps. Cambie el nombre de la carpeta a ws2. Haga clic en **[!UICONTROL Guardar todo]**.
 1. En `GET.jsp` at `/apps/ws2`, realice los siguientes cambios en el código. Reemplace lo siguiente
 
-   ```
+   ```html
    <html lang="en">
    <head>
        <meta charset="utf-8">
@@ -43,7 +46,7 @@ Siga estos pasos para configurar el espacio de trabajo de AEM Forms.
 
    con el siguiente código
 
-   ```
+   ```html
    <html lang="en">
    <head>
        <meta charset="utf-8">
