@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio Administrado
 
 [Inicio rápido (modo SOAP): Recuperación de información de tarea mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony Blue.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -180,7 +183,7 @@ El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony 
 
 El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor del identificador de tarea de 2.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -269,7 +272,7 @@ El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor 
 
 El siguiente ejemplo de código Java recupera todas las tareas asignadas a un usuario con el nombre *tony blue*. Tenga en cuenta que este usuario se especifica en las propiedades de conexión. Se muestra información sobre las tareas devueltas, como su valor de identificador y su descripción.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -395,7 +398,7 @@ El siguiente ejemplo de código Java recupera todas las tareas asignadas a un us
 
 El siguiente ejemplo de código Java recupera datos de formulario de una tarea con el valor de identificador 304. Los datos del formulario se escriben en un archivo XML denominado *FormData.xml* , que se encuentra en C:\Adobe.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -501,7 +504,7 @@ El siguiente ejemplo de código Java recupera datos de formulario de una tarea c
 
 El siguiente ejemplo de código Java actualiza un formulario con datos que se encuentra en el archivo *FormData.xml* .
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -611,7 +614,7 @@ El siguiente ejemplo de código Java actualiza un formulario con datos que se en
 
 El siguiente ejemplo de código Java recupera archivos adjuntos. Cada archivo adjunto se guarda como archivo TXT.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -715,7 +718,7 @@ El siguiente ejemplo de código Java recupera archivos adjuntos. Cada archivo ad
 
 El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *MortgageLoan - Prebuild*. Se comprueba el estado de cada tarea devuelta para asegurarse de que se trata de una tarea completada. Se recupera y se muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
