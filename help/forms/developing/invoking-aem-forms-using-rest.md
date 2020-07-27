@@ -1,6 +1,6 @@
 ---
-title: Invocación de formularios AEM mediante solicitudes REST
-seo-title: Invocación de formularios AEM mediante solicitudes REST
+title: Invocación de AEM Forms mediante solicitudes REST
+seo-title: Invocación de AEM Forms mediante solicitudes REST
 description: nulo
 seo-description: nulo
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
@@ -10,12 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2492'
+ht-degree: 0%
 
 ---
 
 
-# Invocación de formularios AEM mediante solicitudes REST {#invoking-aem-forms-using-rest-requests}
+# Invocación de AEM Forms mediante solicitudes REST {#invoking-aem-forms-using-rest-requests}
 
 Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representativa (REST). Las solicitudes REST se envían desde páginas HTML. Es decir, puede invocar un proceso de Forms directamente desde una página web mediante una solicitud REST. Por ejemplo, puede abrir una nueva instancia de una página web. A continuación, puede invocar un proceso de Forms y cargar un documento PDF procesado con datos enviados en una solicitud HTTP POST.
 
@@ -29,7 +32,7 @@ Para invocar un servicio Forms (un proceso se convierte en un servicio cuando se
 
 Una vez configurado un extremo REST, puede invocar un servicio Forms mediante un método HTTP GET o un método POST.
 
-```as3
+```java
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
@@ -57,7 +60,7 @@ Se admiten los siguientes tipos de datos al invocar servicios de AEM Forms media
 
    Si un servicio Forms requiere un `com.adobe.idp.Document` parámetro, solo se puede invocar el servicio mediante el método HTTP POST. Si el servicio requiere un `com.adobe.idp.Document` parámetro, el cuerpo de la solicitud HTTP se convierte en el contenido del objeto de Documento de entrada.
 
-   Si un servicio de AEM Forms requiere varios parámetros de entrada, el cuerpo de la solicitud HTTP debe ser un mensaje MIME de varias partes, tal como se define en RFC 1867. (RFC 1867 es un estándar que utilizan los navegadores web para cargar archivos en sitios web). Cada parámetro de entrada debe enviarse como una parte independiente del mensaje de varias partes y codificarse en el `multipart/form-data` formato. El nombre de cada pieza debe coincidir con el nombre del parámetro.
+   Si un servicio AEM Forms requiere varios parámetros de entrada, el cuerpo de la solicitud HTTP debe ser un mensaje MIME de varias partes, tal como se define en RFC 1867. (RFC 1867 es un estándar que utilizan los navegadores web para cargar archivos en sitios web). Cada parámetro de entrada debe enviarse como una parte independiente del mensaje de varias partes y codificarse en el `multipart/form-data` formato. El nombre de cada pieza debe coincidir con el nombre del parámetro.
 
    Las Listas y los mapas también se utilizan como valores de entrada para los procesos de AEM Forms creados en Workbench. Como resultado, puede utilizar estos tipos de datos al utilizar una solicitud REST. No se admiten matrices Java porque no se utilizan como valor de entrada en un proceso de AEM Forms.
 
@@ -86,11 +89,11 @@ Se admiten los siguientes tipos de datos al invocar servicios de AEM Forms media
 
 ## Invocaciones asincrónicas {#asynchronous-invocations}
 
-Algunos servicios de AEM Forms, como los procesos de larga duración centrados en el ser humano, requieren mucho tiempo para completarse. Estos servicios se pueden invocar de forma asíncrona y sin bloqueo. (Consulte [Invocación De Procesos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)Largos Centrados En El Hombre).
+Algunos servicios de AEM Forms, como los procesos de larga vida centrados en el ser humano, requieren mucho tiempo para completarse. Estos servicios se pueden invocar de forma asíncrona y sin bloqueo. (Consulte [Invocación De Procesos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)Largos Centrados En El Hombre).
 
 Un servicio de AEM Forms se puede invocar asincrónicamente sustituyendo `services` por `async_invoke` en la URL de invocación, como se muestra en el siguiente ejemplo.
 
-```as3
+```java
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
@@ -98,7 +101,7 @@ Esta URL devuelve el valor de identificador (en formato &quot;text/plain&quot;) 
 
 El estado de la invocación asincrónica se puede recuperar utilizando una URL de invocación con `services` sustitución por `async_status`. La dirección URL debe contener un `job_id` parámetro que especifique el valor de identificador del trabajo asociado con esta invocación. Por ejemplo:
 
-```as3
+```java
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -108,7 +111,7 @@ Si se completa el trabajo, la dirección URL devuelve el mismo resultado que si 
 
 Una vez finalizado el trabajo y recuperado el resultado, el trabajo se puede eliminar usando una URL de invocación con la que `services` se sustituye por `async_dispose`. La dirección URL también debe contener un `job_id` parámetro que especifique el valor de identificador del trabajo. Por ejemplo:
 
-```as3
+```java
  http://localhost:8080/rest/async_dispose/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -120,7 +123,7 @@ Si no se puede completar una solicitud de invocación sincrónica o asincrónica
 
 Si la URL de invocación (o la `async_result` URL en caso de una invocación asincrónica) tiene un sufijo .xml, el proveedor de REST devuelve el código HTTP `200 OK`seguido de un documento XML que describe la excepción en el siguiente formato.
 
-```as3
+```xml
  <exception>
        <exception_class_name>[
        <DSCError>
@@ -184,7 +187,7 @@ Se proporcionan los siguientes ejemplos de invocación de REST:
 
 El siguiente ejemplo HTML pasa dos `Boolean` valores a un proceso de AEM Forms denominado `RestTest2`. El nombre del método de invocación es `invoke` y la versión es 1.0. Tenga en cuenta que se utiliza el método Post HTML.
 
-```as3
+```html
  <html>
  <body>
  
@@ -204,7 +207,7 @@ El siguiente ejemplo HTML pasa dos `Boolean` valores a un proceso de AEM Forms d
 
 El siguiente ejemplo HTML pasa un valor de fecha a un proceso de AEM Forms denominado `SOAPEchoService`. El nombre del método de invocación es `echoCalendar`. Observe que se utiliza el método HTML `Post` .
 
-```as3
+```html
  <html>
  <body>
  
@@ -221,9 +224,9 @@ El siguiente ejemplo HTML pasa un valor de fecha a un proceso de AEM Forms denom
 
 **Pasar documentos a un proceso**
 
-El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `MyApplication/EncryptDocument` que requiere un documento PDF. Para obtener información sobre este proceso, consulte [Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `MyApplication/EncryptDocument` que requiere un documento PDF. Para obtener información sobre este proceso, consulte [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
-```as3
+```html
  <html>
  <body>
  
@@ -241,9 +244,9 @@ El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `MyApplicati
 
 **Pasar valores de documento y texto a un proceso**
 
-El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `RestTest3` que requiere un documento y dos valores de texto. Tenga en cuenta que se utiliza el método Post HTML.
+En el siguiente ejemplo HTML se invoca un proceso de AEM Forms denominado `RestTest3` que requiere un documento y dos valores de texto. Tenga en cuenta que se utiliza el método Post HTML.
 
-```as3
+```html
  <html>
  <body>
  
@@ -265,7 +268,7 @@ El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `RestTest3` 
 
 El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `SOAPEchoService` que requiere un valor de lista desglosada. Tenga en cuenta que se utiliza el método Post HTML.
 
-```as3
+```html
  <html>
  <body>
  
@@ -282,7 +285,7 @@ El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `SOAPEchoSer
 
 **Invocación del proceso MyApplication/EncryptDocument mediante REST**
 
-Puede invocar un proceso de corta duración de AEM Forms denominado *MyApplication/EncryptDocument* mediante REST.
+Puede invocar un proceso de corta duración de AEM Forms llamado *MyApplication/EncryptDocument* mediante REST.
 
 >[!NOTE]
 >
@@ -295,7 +298,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 
    Cuando este proceso se invoca mediante una solicitud REST, el documento PDF cifrado se muestra en el explorador Web. Antes de realizar la vista del documento PDF, debe especificar la contraseña (a menos que la seguridad esté deshabilitada). El siguiente código HTML representa una solicitud de invocación REST para el `MyApplication/EncryptDocument` proceso.
 
-   ```as3
+   ```html
     <html>
     <body>
     <form action="https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument" method="post" enctype="multipart/form-data">
@@ -310,7 +313,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
     </body>
    ```
 
-**Invocación del proceso MyApplication/EncryptDocument desde Acrobat**{#invoke-process-acrobat}
+**Invocación del proceso MyApplication/EncryptDocument desde Acrobat** {#invoke-process-acrobat}
 
 Puede invocar un proceso de formularios desde Acrobat mediante una solicitud REST. Por ejemplo, puede invocar el proceso *MyApplication/EncryptDocument* . Para invocar un proceso de formularios desde Acrobat, coloque un botón de envío en un archivo XDP dentro de Designer. (Consulte la Ayuda [de](https://www.adobe.com/go/learn_aemforms_designer_63)Designer).
 
