@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio Repositorio 
 
 [Inicio rápido (modo SOAP): Eliminación de un recurso mediante la API de Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP
 
 **Aplicaciones/FormsApplication**
 
@@ -53,7 +56,7 @@ La ruta a un recurso ubicado en el repositorio de AEM Forms es:
 
 >[!NOTE]
 >
->Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicios rápidos mediante un navegador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede ver el contenido en un navegador web.
+>Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicios rápidos mediante un navegador web. Por ejemplo, si agrega contenido al Repositorio de AEM Forms, puede ver el contenido en un explorador Web.
 
 >[!NOTE]
 >
@@ -63,7 +66,7 @@ La ruta a un recurso ubicado en el repositorio de AEM Forms es:
 
 El siguiente ejemplo de código Java crea una carpeta llamada *FormsFolder* en la siguiente ubicación `/Applications/FormsApplication/1.0/`. (Consulte [Creación de carpetas](/help/forms/developing/aem-forms-repository.md#creating-folders)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -169,7 +172,7 @@ El siguiente ejemplo de código Java crea una carpeta llamada *FormsFolder* en l
 
 El siguiente ejemplo de código Java escribe un recurso llamado *loan.xdp* en el repositorio. El recurso se agrega a la `/Applications/FormsApplication/1.0/FormsFolder` ubicación. (Consulte [Escritura de recursos](/help/forms/developing/aem-forms-repository.md#writing-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -297,7 +300,7 @@ El siguiente ejemplo de código Java escribe un recurso llamado *loan.xdp* en el
 
 El siguiente ejemplo de código Java lista los recursos que se encuentran en `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Lista de recursos](/help/forms/developing/aem-forms-repository.md#listing-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -396,7 +399,7 @@ El siguiente ejemplo de código Java lista los recursos que se encuentran en `Ap
 
 El siguiente ejemplo de código Java lee un recurso llamado *Loan.xdp* desde el repositorio. El archivo XDP se encuentra en `/Applications/FormsApplication/1.0/FormsFolder/`. (Consulte [Lectura de recursos](/help/forms/developing/aem-forms-repository.md#reading-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -497,7 +500,7 @@ El siguiente ejemplo de código Java lee un recurso llamado *Loan.xdp* desde el 
 
 El siguiente ejemplo de código Java se actualiza `/Applications/FormsApplication/1.0/FormsFolder` modificando su descripción. (Consulte [Actualización de recursos](/help/forms/developing/aem-forms-repository.md#updating-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -609,7 +612,7 @@ El siguiente ejemplo de código Java se actualiza `/Applications/FormsApplicatio
 
 El siguiente ejemplo de código Java busca Loan.xdp en `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Búsqueda de recursos](/help/forms/developing/aem-forms-repository.md#searching-for-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -733,7 +736,7 @@ El siguiente ejemplo de código Java busca Loan.xdp en `Applications/FormsApplic
 
 El siguiente ejemplo de código Java crea una relación entre dos recursos en el repositorio de AEM Forms. (Consulte [Creación de relaciones](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)de recursos).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -874,7 +877,7 @@ El siguiente ejemplo de código Java crea una relación entre dos recursos en el
 
 El siguiente ejemplo de código Java bloquea /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Consulte [Bloqueo de recursos](/help/forms/developing/aem-forms-repository.md#locking-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -985,7 +988,7 @@ El siguiente ejemplo de código Java bloquea /Applications/FormsApplication/1.0/
 
 El siguiente ejemplo de código Java lee y crea listas de control de acceso (ACL) en el repositorio.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -1100,7 +1103,7 @@ El siguiente ejemplo de código Java lee y crea listas de control de acceso (ACL
 
 El siguiente ejemplo de código Java elimina Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Si este archivo XDP no se encuentra en esta carpeta, se genera una excepción. (Consulte [Eliminación de recursos](/help/forms/developing/aem-forms-repository.md#deleting-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
