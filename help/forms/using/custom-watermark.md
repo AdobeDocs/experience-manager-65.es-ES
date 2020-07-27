@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ Puede seguir los pasos siguientes para personalizar el texto y el aspecto de la 
 1. Copie y pegue el archivo ddx de la carpeta &quot;/libs/fd/cm/configFiles/previewwatermark&quot; en la carpeta &quot;/apps/fd/cm/configFiles/previewwatermark&quot; y haga clic en **[!UICONTROL Guardar todo]**.
 1. Realice los cambios deseados en el archivo ddx en /apps/fd/cm/configFiles/previewwatermark/.
 
-   ```
+   ```xml
    <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
     <PDF result="output.pdf">
      <PDF source="input.pdf"/>
