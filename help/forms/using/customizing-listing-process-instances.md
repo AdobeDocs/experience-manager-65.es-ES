@@ -1,24 +1,27 @@
 ---
 title: Personalización de la lista de instancias de proceso
 seo-title: Personalización de la lista de instancias de proceso
-description: Personalización de las propiedades que se muestran en la instancia de proceso en el espacio de trabajo de AEM Forms.
-seo-description: Personalización de las propiedades que se muestran en la instancia de proceso en el espacio de trabajo de AEM Forms.
+description: Cómo personalizar las propiedades que se muestran en la instancia de proceso en el espacio de trabajo de AEM Forms.
+seo-description: Cómo personalizar las propiedades que se muestran en la instancia de proceso en el espacio de trabajo de AEM Forms.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 3%
 
 ---
 
 
 # Personalización de la lista de instancias de proceso {#customizing-the-listing-of-process-instances}
 
-La lista de la instancia de proceso se muestra en la ficha Seguimiento del espacio de trabajo de AEM Forms.
+La lista de instancia de proceso se muestra en la ficha Seguimiento del espacio de trabajo AEM Forms.
 
-En la lista de instancias de proceso, en cada instancia de proceso, el espacio de trabajo de AEM Forms muestra algunas propiedades de esa instancia. Las siguientes propiedades están disponibles para cada instancia de proceso. Estas propiedades se almacenan como atributos en el modelo de componentes de instancia de proceso y están disponibles para su uso en su vista y plantilla.
+En la lista de instancias de proceso, para cada instancia de proceso, el espacio de trabajo AEM Forms muestra algunas propiedades de esa instancia. Las siguientes propiedades están disponibles para cada instancia de proceso. Estas propiedades se almacenan como atributos en el modelo de componentes de instancia de proceso y están disponibles para su uso en su vista y plantilla.
 
 <table>
  <tbody>
@@ -69,13 +72,13 @@ En la lista de instancias de proceso, en cada instancia de proceso, el espacio d
 
 Para mostrar la `description` propiedad de la instancia de proceso en la tarjeta de instancia de proceso, lleve a cabo los siguientes pasos.
 
-1. Siga los pasos [genéricos para personalizar](/help/forms/using/generic-steps-html-workspace-customization.md)el espacio de trabajo de AEM Forms.
+1. Siga los pasos [Genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo AEM Forms.
 1. Haga lo siguiente:
 
    1. Copie /libs/ws/js/runtime/templates/processinstance.html a/apps/ws/js/Runtime/templates/, si no existe. Haga clic en **Guardar todo**.
    1. Añada div de descripción del proceso con class = &#39;processDescription&#39; inprocessinstance.html.
 
-   ```
+   ```jsp
    <div class="processDescription" title="<%= description%>"><%= description%></div>
    ```
 
