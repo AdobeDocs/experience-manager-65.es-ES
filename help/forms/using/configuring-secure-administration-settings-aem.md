@@ -1,40 +1,43 @@
 ---
 title: Configuración de la administración segura para AEM Forms en JEE
 seo-title: Configuración de la administración segura para AEM Forms en JEE
-description: Obtenga información sobre cómo administrar cuentas de usuario y servicios que, aunque son necesarios en un entorno de desarrollo privado, no son necesarios en un entorno de producción de AEM Forms en JEE.
-seo-description: Obtenga información sobre cómo administrar cuentas de usuario y servicios que, aunque son necesarios en un entorno de desarrollo privado, no son necesarios en un entorno de producción de AEM Forms en JEE.
+description: Aprenda a administrar cuentas de usuario y servicios que, aunque sean necesarios en un entorno de desarrollo privado, no son necesarios en un entorno de producción de AEM Forms en JEE.
+seo-description: Aprenda a administrar cuentas de usuario y servicios que, aunque sean necesarios en un entorno de desarrollo privado, no son necesarios en un entorno de producción de AEM Forms en JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 0%
 
 ---
 
 
 # Configuración de la administración segura para AEM Forms en JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Obtenga información sobre cómo administrar cuentas de usuario y servicios que, aunque son necesarios en un entorno de desarrollo privado, no son necesarios en un entorno de producción de AEM Forms en JEE.
+Aprenda a administrar cuentas de usuario y servicios que, aunque sean necesarios en un entorno de desarrollo privado, no son necesarios en un entorno de producción de AEM Forms en JEE.
 
 Generalmente, los desarrolladores no utilizan el entorno de producción para crear y probar sus aplicaciones. Por lo tanto, debe administrar cuentas de usuario y servicios que, aunque sean necesarios en un entorno de desarrollo privado, no sean necesarios en un entorno de producción.
 
-En este artículo se describen métodos para reducir la superficie de ataque global mediante las opciones de administración que proporciona AEM Forms en JEE.
+Este artículo describe métodos para reducir la superficie de ataque global mediante las opciones de administración que proporcionan los AEM Forms en JEE.
 
 ## Desactivación del acceso remoto no esencial a los servicios {#disabling-non-essential-remote-access-to-services}
 
-Después de instalar y configurar AEM Forms en JEE, hay muchos servicios disponibles para la invocación remota a través de SOAP y Enterprise JavaBeans™ (EJB). En este caso, el término remoto hace referencia a cualquier llamante que tenga acceso de red a los puertos SOAP, EJB o Action Message Format (AMF) para el servidor de aplicaciones.
+Después de instalar y configurar AEM Forms en JEE, hay muchos servicios disponibles para la invocación remota a través de SOAP y Enterprise JavaBeans™ (EJB). El término remoto, en este caso, hace referencia a cualquier llamante que tenga acceso de red a los puertos SOAP, EJB o Action Message Format (AMF) para el servidor de aplicaciones.
 
-Aunque los AEM Forms en los servicios JEE requieren que se pasen credenciales válidas para un llamante autorizado, solo debe permitir el acceso remoto a los servicios que necesita para ser accesible de forma remota. Para lograr una accesibilidad limitada, debe reducir el conjunto de servicios de acceso remoto al mínimo posible para un sistema que funcione y, a continuación, habilitar la invocación remota para los servicios adicionales que necesite.
+Aunque los AEM Forms de los servicios JEE requieren que se pasen credenciales válidas para un llamante autorizado, solo debe permitir el acceso remoto a los servicios que necesita para ser accesible de forma remota. Para lograr una accesibilidad limitada, debe reducir el conjunto de servicios de acceso remoto al mínimo posible para un sistema que funcione y, a continuación, habilitar la invocación remota para los servicios adicionales que necesite.
 
-Los formularios AEM en los servicios JEE siempre necesitan al menos acceso SOAP. Estos servicios suelen ser necesarios para su uso en Workbench, pero también incluyen servicios a los que llama la aplicación web de Workspace.
+Los AEM Forms de los servicios JEE siempre necesitan al menos acceso SOAP. Estos servicios suelen ser necesarios para su uso en Workbench, pero también incluyen servicios a los que llama la aplicación web de Workspace.
 
 Complete este procedimiento mediante la página web Aplicaciones y servicios de la Consola de administración:
 
 1. Inicie sesión en la Consola de administración escribiendo la siguiente URL en un explorador Web:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -69,7 +72,7 @@ Algunos servicios de servidor de formularios permiten la invocación no autentic
 
 1. Inicie sesión en la consola de administración escribiendo la siguiente URL en un explorador Web:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -99,19 +102,20 @@ Algunos servicios de servidor de formularios permiten la invocación no autentic
    * WorkspacePropertyService
    * OutputService
    * FormsService
+
    Si desea exponer cualquiera de estos servicios para la invocación remota, también debe considerar la posibilidad de desactivar el acceso anónimo a estos servicios. De lo contrario, cualquier llamante con acceso de red a este servicio puede invocar el servicio sin pasar credenciales válidas.
 
    El acceso anónimo debe deshabilitarse para cualquier servicio que no sea necesario. Muchos servicios internos requieren que se habilite la autenticación anónima, ya que es necesario que cualquier usuario potencial del sistema los invoque sin tener autorización previa.
 
 ## Cambio del tiempo de espera global predeterminado {#changing-the-default-global-time-out}
 
-Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, aplicaciones web de AEM Forms o aplicaciones personalizadas que invocan servicios de servidor de AEM Forms. Se utiliza una configuración de tiempo de espera global para especificar cuánto tiempo pueden interactuar estos usuarios con AEM Forms (mediante una aserción basada en SAML) antes de que se vean obligados a volver a autenticarse. La configuración predeterminada es de dos horas. En un entorno de producción, la cantidad de tiempo debe reducirse al número mínimo de minutos aceptable.
+Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, aplicaciones web de AEM Forms o aplicaciones personalizadas que invocan servicios de servidor de AEM Forms. Se utiliza una configuración de tiempo de espera global para especificar cuánto tiempo pueden estos usuarios interactuar con AEM Forms (mediante una afirmación basada en SAML) antes de que se vean obligados a volver a autenticarse. La configuración predeterminada es de dos horas. En un entorno de producción, la cantidad de tiempo debe reducirse al número mínimo de minutos aceptable.
 
 ### Minimizar el límite de tiempo de reautenticación {#minimize-reauthentication-time-limit}
 
 1. Inicie sesión en la consola de administración escribiendo la siguiente URL en un explorador Web:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
