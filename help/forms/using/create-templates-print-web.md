@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Las plantillas para el canal web se crean en AEM. Los creadores y administradore
 Este tutorial le guiará por los pasos para crear plantillas para canales impresos y Web de modo que estén disponibles para su uso durante la creación de comunicaciones interactivas. Al final de este tutorial, podrá:
 
 * Creación de plantillas XDP para canal de impresión con Adobe Forms Designer
-* Carga de plantillas XDP en el servidor de AEM Forms
+* Cargar las plantillas XDP en el servidor de AEM Forms
 * Crear y habilitar plantillas para el canal Web
 
 ## Crear plantilla para canal de impresión {#create-template-for-print-channel}
@@ -70,6 +73,7 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal de impresi�
    1. Especifique **BillDetails** en el campo **Nombre** .
 
    1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+
    ![Subformulario de Designer](assets/forms_designer_subform_new.png)
 
 1. Del mismo modo, seleccione el subformulario raíz, seleccione la ficha **Subformulario** y seleccione **De posición variable** en la lista desplegable **Contenido** . En la ficha **Enlaces** :
@@ -77,6 +81,7 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal de impresi�
    1. Especifique **TelecaBill** en el campo **Nombre** .
 
    1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+
    ![Subformulario para plantilla Imprimir](assets/root_subform_print_template_new.png)
 
 1. Repita los pasos 2 a 5 para crear los subformularios siguientes:
@@ -91,6 +96,7 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal de impresi�
    * ItemizedCalls
    * PayNow
    * ValueAddedServices
+
    Para ahorrar tiempo, también puede copiar y pegar subformularios existentes para crear nuevos subformularios.
 
    Para cambiar el subformulario **Gráficos** a la derecha del subformulario Cargos, seleccione el subformulario **Gráficos** en el panel izquierdo, seleccione la ficha **Presentación** y especifique un valor para el campo **AnclajeX** . El valor debe ser bueno que el valor del campo **Ancho** del subformulario **Cargos** . Seleccione el subformulario **Cargos** y seleccione la ficha **Presentación** para vista del valor del campo **Anchura** .
@@ -109,12 +115,12 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal de impresi�
 
 ### Cargar plantilla XDP en el servidor de AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
 
-Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
+Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
 
 1. Seleccione **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
 1. Toque **Crear** > Cargar **archivo**.
 
-   Desplácese y seleccione la plantilla **create_first_ic_print_template** (XDP) y toque **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
+   Navegue y seleccione la plantilla **create_first_ic_print_template** (XDP) y toque **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
 ### Creación de una plantilla XDP para fragmentos de diseño {#create-xdp-template-for-layout-fragments}
 
@@ -156,7 +162,7 @@ Para crear un fragmento de diseño para el canal de impresión de la comunicaci�
    1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo** .
 
    1. Toque **Guardar**.
-   Una vez creada una plantilla XDP para un fragmento de diseño con Forms Designer, debe [cargarla](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de fragmentos de diseño.
+   Una vez que haya creado una plantilla XDP para el fragmento de diseño con Forms Designer, debe [cargarla](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de fragmentos de diseño.
 
 ## Crear plantilla para canal Web {#create-template-for-web-channel}
 
@@ -173,7 +179,7 @@ Para crear una plantilla de canal web, defina una carpeta en la que puede guarda
 
 Siga los pasos siguientes para crear una carpeta para las plantillas editables:
 
-1. Toque **Herramientas** ![](assets/hammer-icon.svg) > **Navegador** de configuración.
+1. Toque **Herramientas** ![martillo](assets/hammer-icon.svg) > Navegador **** de configuración.
 1. En la página Navegador de configuración, toque **Crear**.
 1. En el cuadro de diálogo **Crear configuración** , especifique **Create_First_IC_templates** como título para la carpeta, marque Plantillas **** editables y toque **Crear**.
 
@@ -217,7 +223,7 @@ Siga los pasos siguientes para crear una plantilla para el canal Web en la carpe
 
    ![Árbol de contenido](assets/content_tree_root_panel_new.png)
 
-1. Seleccione el panel y toque ![](assets/configure_icon.png) (Configurar).
+1. Seleccione el panel y toque ![configure_icon](assets/configure_icon.png) (Configurar).
 1. En el panel Propiedades:
 
    1. Especifique los **detalles** de la publicidad en el campo Nombre.
@@ -225,6 +231,7 @@ Siga los pasos siguientes para crear una plantilla para el canal Web en la carpe
    1. Seleccione **1** en la lista desplegable **Número de columnas** .
 
    1. Toque ![](/help/forms/using/assets/done_icon.png) para guardar las propiedades.
+
    El nombre del panel se actualiza a Detalles **de** facturación en el árbol de contenido.
 
 1. Repita los pasos 7 a 11 para agregar paneles con las siguientes propiedades a la plantilla:
@@ -248,7 +255,7 @@ Una vez que haya creado la plantilla Web, debe habilitarla para utilizar la plan
 
 Ejecute los siguientes pasos para habilitar la plantilla Web:
 
-1. Puntee **Herramientas** ![](assets/hammer-icon.svg) > **Plantillas**.
+1. Toque **Herramientas** ![icono](assets/hammer-icon.svg) de martillo > **Plantillas**.
 1. Vaya a la plantilla **Create_First_IC_Web_Template** , selecciónela y toque **Habilitar**.
 1. Tab **Active** nuevamente para confirmar.
 
@@ -267,4 +274,4 @@ En función del caso de uso, debe incluir los botones **Pagar ahora** y **Suscri
 
    ![Componentes permitidos](assets/allowed_components_af_new.png)
 
-1. Toque ![](assets/done_icon.png) para guardar las propiedades.
+1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades.
