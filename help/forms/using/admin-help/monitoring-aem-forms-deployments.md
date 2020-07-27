@@ -1,8 +1,8 @@
 ---
 title: Supervisión de las implementaciones de formularios AEM
 seo-title: Supervisión de las implementaciones de formularios AEM
-description: Puede supervisar las implementaciones de formularios AEM tanto a nivel del sistema como a nivel interno. Obtenga más información sobre la supervisión de las implementaciones de formularios AEM en este documento.
-seo-description: Puede supervisar las implementaciones de formularios AEM tanto a nivel del sistema como a nivel interno. Obtenga más información sobre la supervisión de las implementaciones de formularios AEM en este documento.
+description: Puede supervisar las implementaciones de formularios AEM tanto a nivel del sistema como a nivel interno. Obtenga más información sobre la supervisión de las implementaciones de formularios AEM desde este documento.
+seo-description: Puede supervisar las implementaciones de formularios AEM tanto a nivel del sistema como a nivel interno. Obtenga más información sobre la supervisión de las implementaciones de formularios AEM desde este documento.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 0%
 
 ---
 
@@ -25,14 +28,14 @@ Para obtener más información sobre la supervisión de las implementaciones de 
 
 Los formularios AEM proporcionan dos MBeans registrados que proporcionan información estadística y de navegación. Estos son los únicos MBeans que se admiten para integración e inspección:
 
-* **** ServiceStatistics: Este MBean proporciona información sobre el nombre del servicio y su versión.
-* **** OperationStatistics: Este MBean proporciona la estadística de cada servicio del servidor de formularios. Aquí es donde los administradores pueden obtener información sobre un servicio en particular, como tiempo de invocación, número de errores, etc.
+* **ServiceStatistics:** Este MBean proporciona información sobre el nombre del servicio y su versión.
+* **OperationStatistics:** Este MBean proporciona la estadística de cada servicio del servidor de formularios. Aquí es donde los administradores pueden obtener información sobre un servicio en particular, como tiempo de invocación, número de errores, etc.
 
 ### Interfaces públicas de ServiceStatisticsMedia {#servicestatisticmbean-public-interfaces}
 
 Se puede acceder a estas interfaces públicas de ServiceStatistics MBean con fines de prueba:
 
-```as3
+```java
  public String getServiceId();
  public int getMajorVersion();
  public int getMinorVersion();
@@ -42,7 +45,7 @@ Se puede acceder a estas interfaces públicas de ServiceStatistics MBean con fin
 
 Se puede acceder a estas interfaces públicas de OperationStatistics MBean con fines de prueba:
 
-```as3
+```java
  // InvocationCount: The number of times the method is invoked.
  public long getInvocationCount();
  // InvocationStartTime: The time at which the method started to execute.
@@ -72,33 +75,33 @@ Con una consola JMX (JConsole), hay disponibles estadísticas de OperationStatis
 
 **árbol MBean**
 
-**** Nombre de dominio de Adobe: Depende del servidor de aplicaciones. Si Application Server no define el dominio, el valor predeterminado es adobe.com.
+**Nombre de dominio de Adobe:** Depende del servidor de aplicaciones. Si Application Server no define el dominio, el valor predeterminado es adobe.com.
 
-**** ServiceType: AdobeService es el nombre que se utiliza para enumerar todos los servicios.
+**ServiceType:** AdobeService es el nombre que se utiliza para la lista de todos los servicios.
 
-**** AdobeServiceName: Nombre del servicio o ID del servicio.
+**AdobeServiceName:** Nombre del servicio o ID del servicio.
 
-**** Versión: Versión del servicio.
+**Versión:** Versión del servicio.
 
 **Estadísticas de operaciones**
 
-**** Tiempo de invocación: Tiempo empleado para la ejecución del método. Esto no incluye la hora de serialización, transferencia de cliente a servidor y deserialización de la solicitud.
+**Tiempo de invocación:** Tiempo empleado para la ejecución del método. Esto no incluye la hora de serialización, transferencia de cliente a servidor y deserialización de la solicitud.
 
-**** Recuento de invocaciones: Número de veces que se invoca el servicio.
+**Recuento de invocaciones:** Número de veces que se invoca el servicio.
 
-**** Tiempo medio de invocación: Promedio de tiempo de todas las invocaciones que se han ejecutado desde que se inició el servidor.
+**Tiempo medio de invocación:** Promedio de tiempo de todas las invocaciones que se han ejecutado desde que se inició el servidor.
 
-**** Tiempo máximo de invocación: Duración de la invocación más larga que se ha ejecutado desde que se inició el servidor.
+**Tiempo máximo de invocación:** Duración de la invocación más larga que se ha ejecutado desde que se inició el servidor.
 
-**** Tiempo mínimo de invocación: Duración de la invocación más corta que se ha ejecutado desde que se inició el servidor.
+**Tiempo mínimo de invocación:** Duración de la invocación más corta que se ha ejecutado desde que se inició el servidor.
 
-**** Recuento de excepciones: Número de invocaciones que han producido errores.
+**Recuento de excepciones:** Número de invocaciones que han producido errores.
 
-**** Mensaje de excepción: Mensaje de error de la última excepción que se produjo.
+**Mensaje de excepción:** Mensaje de error de la última excepción que se produjo.
 
-**** Hora de la fecha de la última muestra: La fecha de la última invocación.
+**Hora de la fecha de la última muestra:** La fecha de la última invocación.
 
-**** Unidad de tiempo: El valor predeterminado es milisegundo.
+**Unidad de tiempo:** El valor predeterminado es milisegundo.
 
 Para habilitar la supervisión de JMX, los servidores de aplicaciones generalmente necesitan cierta configuración. Consulte la documentación del servidor de aplicaciones para obtener información específica.
 
@@ -106,12 +109,12 @@ Para habilitar la supervisión de JMX, los servidores de aplicaciones generalmen
 
 **JBoss 4.0.3/4.2.0: configuración del inicio de JVM**
 
-Para ver MBeans desde JConsole, configure los parámetros de inicio JVM del servidor de aplicaciones JBoss. Asegúrese de que JBoss se inicie desde el archivo run.bat/sh.
+Para vista de MBeans desde JConsole, configure los parámetros de inicio JVM del servidor de aplicaciones JBoss. Asegúrese de que JBoss se inicie desde el archivo run.bat/sh.
 
 1. Edite el archivo run.bat que se encuentra en InstallJBoss/bin.
 1. Busque la línea JAVA_OPTS y agregue lo siguiente:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -120,7 +123,7 @@ Para ver MBeans desde JConsole, configure los parámetros de inicio JVM del serv
 1. Edite el archivo startWebLogic.bat que se encuentra debajo `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Busque la línea JAVA_OPTS y agregue lo siguiente:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -139,13 +142,13 @@ Para ver MBeans desde JConsole, configure los parámetros de inicio JVM del serv
 
 1. En la consola de administración (Servidor de aplicaciones > servidor1 > Definición de proceso > JVM), agregue la línea siguiente al campo para el argumento JVM genérico:
 
-   ```as3
+   ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Agregue o quite el comentario de las tres líneas siguientes en el archivo /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (o &lt;Su esfera web JRE>/ lib/management/management.properties):
+1. Añada o quite el comentario de las tres líneas siguientes en el archivo /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (o &lt;Your Websphere JRE>/ lib/management/management.properties):
 
-   ```as3
+   ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect
     com.sun.management.jmxremote.authenticate=false
     com.sun.management.jmxremote.ssl=false
