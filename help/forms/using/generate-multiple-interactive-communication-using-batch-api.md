@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Combina un registro con una plantilla de comunicación interactiva para producir
 
 **Un único registro en un archivo JSON**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -41,7 +41,7 @@ Combina un registro con una plantilla de comunicación interactiva para producir
 
 **Varios registros en un archivo JSON**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -179,7 +179,7 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
 1. [Cree e implemente un proyecto de AEM con Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) en su instancia de AEM.
 1. Añada el SDK de cliente de [AEM Forms versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior en la lista de dependencias del archivo POM de su proyecto AEM. Por ejemplo,
 
-   ```XML
+   ```xml
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
