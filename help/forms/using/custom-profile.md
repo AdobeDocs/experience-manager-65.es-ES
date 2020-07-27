@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Un perfil contiene varios módulos. Los módulos son formRuntime.jsp, config.jsp
 
 ## formRuntime.jsp {#formruntime-jsp-br}
 
-Los módulos formRuntime.jsp contienen referencias de las bibliotecas de cliente. También muestra métodos para extraer información de configuración regional de la solicitud e incluir los mensajes localizados en la misma. Puede incluir sus propias bibliotecas o estilos de javascript personalizados en formRuntime.jsp.
+Los módulos formRuntime.jsp contienen referencias de las bibliotecas de cliente. También muestra métodos para extraer información de configuración regional de la solicitud e incluir los mensajes localizados en la misma. Puede incluir sus propias bibliotecas o estilos personalizados de JavaScript en formRuntime.jsp.
 
 ## config.jsp {#config-jsp}
 
@@ -56,13 +59,13 @@ Para crear un perfil personalizado, realice los siguientes pasos:
 
 ### Crear nodo de Perfil {#create-profile-node}
 
-1. Vaya a la interfaz CRX DE en la dirección URL: `https://'[server]:[port]'/crx/de` e inicie sesión en la interfaz con credenciales de administrador.
+1. Vaya a la interfaz CRX DE en la dirección URL: `https://'[server]:[port]'/crx/de` e inicie sesión en la interfaz con las credenciales del administrador.
 
 1. En el panel izquierdo, navegue a la ubicación */contenido/formularios/perfiles*.
 
 1. Copie el nodo predeterminado y pegue el nodo en otra carpeta (*/content/perfiles*) con el nombre *hrform*.
 
-1. Seleccione el nuevo nodo, *formulario* y agregue una propiedad de cadena: *sling:resourceType* con valor: *Forma de formulario/demostración*.
+1. Seleccione el nuevo nodo, *formulario* y agregue una propiedad de cadena: *sling:resourceType* con valor: *reforma/demostración*.
 
 1. Haga clic en Guardar todo en el menú de la barra de herramientas para guardar los cambios.
 
@@ -80,4 +83,4 @@ Después de crear un perfil personalizado, agregue información de procesamiento
 
 1. Para comprobar que se ha creado el perfil, abra la dirección URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Para comprobar los formularios, [importe los formularios](/help/forms/using/get-xdp-pdf-documents-aem.md) del sistema de archivos local a AEM Forms y [previsualización el formulario](/help/forms/using/previewing-forms.md) en la instancia de creación del servidor AEM.
+Para comprobar los formularios, [importe los formularios](/help/forms/using/get-xdp-pdf-documents-aem.md) del sistema de archivos local a AEM Forms y [previsualización del formulario](/help/forms/using/previewing-forms.md) en la instancia de creación del servidor AEM.
