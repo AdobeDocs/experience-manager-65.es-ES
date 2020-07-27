@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6822'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ## Información general {#overview}
 
-La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios de negocios escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones de usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
+La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones de usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
 
 El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas oferta un editor visual para todos los usuarios. Además, solo para usuarios con poder de formularios, el editor de reglas proporciona un editor de código para escribir reglas y secuencias de comandos. Algunas de las acciones clave que se pueden realizar con objetos de formulario adaptables mediante reglas son:
 
@@ -134,11 +137,11 @@ Al escribir una regla de Cuándo, puede activar la acción Borrar valor de acci�
 
 Además del servicio de modelo de datos de formulario, puede especificar una URL WSDL directa para invocar un servicio Web. Sin embargo, un servicio de modelo de datos de formulario tiene muchas ventajas y el método recomendado para invocar un servicio.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formularios, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM Forms.
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte Integración [de datos de](/help/forms/using/data-integration.md)AEM Forms.
 
 **Establezca el valor de Calcula y establece el valor del** objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante una expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio de modelo de datos de formulario configurado. Al elegir la opción de servicio Web, se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia de AEM. Al elegir un servicio de modelo de datos de formulario, aparecen campos adicionales en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formularios, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM Forms.
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte Integración [de datos de](/help/forms/using/data-integration.md)AEM Forms.
 
 El tipo de regla **Set Property** permite establecer el valor de una propiedad del objeto especificado basándose en una acción de condición.
 
@@ -343,7 +346,7 @@ Muestra el título del objeto de formulario adaptable a través del cual se ha i
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
-El panel de la izquierda en la interfaz de usuario del editor de reglas incluye dos fichas: Objetos **[!UICONTROL y]** funciones de **[!UICONTROL formulario]**.
+El panel de la izquierda en la interfaz de usuario del editor de reglas incluye dos fichas: **[!UICONTROL Objetos]** y **[!UICONTROL funciones]** de formulario.
 
 La ficha Objetos de formulario muestra una vista jerárquica de todos los objetos contenidos en el formulario adaptable. Muestra el título y el tipo de los objetos. Al escribir una regla, puede arrastrar y soltar objetos de formulario en el editor de reglas. Al crear o editar una regla cuando arrastra y suelta un objeto o función en un marcador de posición, el marcador de posición toma automáticamente el tipo de valor adecuado.
 
@@ -373,7 +376,7 @@ Para obtener más información sobre el uso del editor de reglas visuales, consu
 
 Los usuarios del grupo de usuarios avanzados de formularios pueden acceder al editor de código. Para otros usuarios, el editor de código no está disponible. Si tiene los derechos, puede cambiar del modo de editor visual al modo de editor de código del editor de reglas, y viceversa, con el conmutador situado justo encima del editor de reglas. Cuando se inicia el editor de reglas por primera vez, se abre en el modo de editor visual. Puede escribir reglas en el modo de editor visual o cambiar al modo de editor de código para escribir una secuencia de comandos de regla. Sin embargo, tenga en cuenta que si modifica una regla o escribe una regla en el editor de código, no podrá volver al editor visual de esa regla a menos que borre el editor de código.
 
-AEM Forms rastrea el modo de editor de reglas utilizado por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Sin embargo, también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
+Los AEM Forms realizan el seguimiento del modo de editor de reglas utilizado por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Sin embargo, también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
 
 1. Vaya a la consola web de AEM en `https://[host]:[port]/system/console/configMgr`.
 1. Haga clic para editar el servicio **[!UICONTROL de configuración de formularios]** adaptables.
@@ -473,6 +476,7 @@ Realice los siguientes pasos para escribir reglas:
    * Seleccione **Plus** en el campo **Seleccionar operador** .
 
    * Seleccione o arrastre y suelte desde la ficha Objeto de formulario el campo **Salario** del cónyuge del otro objeto **Colocar o seleccione aquí** .
+
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
 1. A continuación, toque el área resaltada alrededor del campo de expresión y **Ampliar Expresión**.
@@ -500,6 +504,7 @@ Realice los siguientes pasos para escribir reglas:
    * Seleccionar **es igual** que en el campo **Seleccionar operador** .
 
    * Seleccione Cadena en el otro objeto **Colocar o seleccione aquí** y especifique **Casado** en el campo **Introducir una cadena** .
+
    La regla finalmente aparece como sigue en el editor de reglas.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Toque **Hecho** para guardar la regla.
@@ -546,30 +551,40 @@ For more information, see [usejsdoc.org](https://usejsdoc.org/).
 
 Etiquetas `jsdoc` admitidas:
 
-* **Sintaxis privada**: `@private`Una función privada no se incluye como función personalizada.
+* **Sintaxis privada**: 
+Una función privada no se incluye como función personalizada.`@private`
+Una función privada no se incluye como función personalizada.
 
-* **Sintaxis del nombre**: `@name funcName <Function Name>`También `,` puede utilizar: `@function funcName <Function Name>`**o** `@func` `funcName <Function Name>`.
+* **Sintaxis del nombre**: 
+También `@name funcName <Function Name>`puede `,` utilizar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
    `funcName` es el nombre de la función (no se permiten espacios).
    `<Function Name>` es el nombre para mostrar de la función.
 
-* **Sintaxis del miembro**: `@memberof namespace`Adjunta una Área de nombres a la función.
+* **Sintaxis del miembro**: 
+Adjunta una Área de nombres a la función.`@memberof namespace`
+Adjunta una Área de nombres a la función.
 
-* **Sintaxis del parámetro**: `@param {type} name <Parameter Description>`También puede utilizar: `@argument` `{type} name <Parameter Description>`**o** `@arg` `{type}` `name <Parameter Description>`.
+* **Sintaxis del parámetro**: 
+También puede utilizar: `@param {type} name <Parameter Description>`
+También puede utilizar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetros, una etiqueta para cada parámetro en el orden de incidencia.
    `{type}` representa el tipo de parámetro. Los tipos de parámetro permitidos son:
 
    1. Cadena
    1. número
    1. boolean
+
    Todos los demás tipos de parámetros se categorizan bajo uno de los anteriores. No se admite ninguno. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Sintaxis del tipo** de devolución: `@return {type}`También puede usar `@returns {type}`.
+* **Sintaxis del tipo**de devolución: 
+Como alternativa, puede usar `@return {type}`como opción `@returns {type}`.
 Añade información sobre la función, como su objetivo.
 {type} representa el tipo de devolución de la función. Los tipos de devolución permitidos son:
 
    1. Cadena
    1. número
    1. boolean
+
    Todos los demás tipos de devolución se clasifican en uno de los anteriores. No se admite ninguno. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de devolución no distinguen entre mayúsculas y minúsculas.
 
 >[!NOTE]
@@ -606,7 +621,7 @@ Para abrir un formulario en modo de edición, seleccione un formulario y toque *
 
 **Instrucción de función**
 
-```
+```javascript
 function area(len) {
     return len*len;
 }
@@ -616,7 +631,7 @@ Esta función se incluye sin `jsdoc` comentarios.
 
 **Expresión de funciones**
 
-```
+```javascript
 var area;
 //Some codes later
 /** */
