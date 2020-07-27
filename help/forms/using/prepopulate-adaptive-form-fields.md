@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +61,7 @@ Puede rellenar previamente los campos enlazados y no enlazados de un formulario 
 
 ### Ejemplo de estructura JSON de relleno previo {#sample-prefill-json-structure}
 
-```
+```javascript
 {
    "afBoundData": {
       "employeeData": { }
@@ -86,7 +89,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 [Obtener la muestra de archivo](assets/prefill-submit-data-contentpackage.zip)que contiene datos de relleno previo y datos enviados
 
-### Formularios adaptables basados en esquemas XML {#xml-schema-af}
+### Formularios adaptables basados en esquemas XML  {#xml-schema-af}
 
 La estructura de cumplimentación previa de XML y XML enviado para formularios adaptables basados en el esquema XML es la siguiente:
 
@@ -146,7 +149,7 @@ Para los formularios adaptables basados en el esquema JSON, la estructura de cum
 * **Prerellenar estructura** JSON: El JSON de relleno previo debe ser compatible con el Esquema JSON asociado. Opcionalmente, se puede ajustar en el objeto /afData/afBoundData si también se desea rellenar previamente los campos no enlazados.
 * **Estructura** JSON enviada: si no se utiliza JSON de relleno previo, el JSON enviado contiene datos para los campos enlazados y no enlazados en la etiqueta de envoltorio afData. Si se utiliza el JSON de relleno previo, el JSON enviado tiene la misma estructura que el JSON de relleno previo. Si el inicio JSON de relleno previo con el objeto raíz afData, el JSON de salida tiene el mismo formato. Si el JSON de relleno previo no tiene el contenedor afData/afBoundData y, en su lugar, inicios directamente desde el objeto raíz de esquema, como el usuario, el JSON enviado también inicio con el objeto de usuario.
 
-```
+```json
 {
     "id": "https://some.site.somewhere/entry-schema#",
     "$schema": "https://json-schema.org/draft-04/schema#",
@@ -165,7 +168,7 @@ Para los formularios adaptables basados en el esquema JSON, la estructura de cum
 
 Para los campos que utilizan el modelo de esquema JSON, los datos se rellenan previamente en el objeto afBoundData, como se muestra en el JSON de ejemplo siguiente. Se puede utilizar para anteponer un formulario adaptable a uno o varios campos de texto sin enlazar. A continuación se muestra un ejemplo de datos con `afData/afBoundData` envoltorio:
 
-```
+```json
 {
   "afData": {
     "afUnboundData": {
@@ -182,7 +185,7 @@ Para los campos que utilizan el modelo de esquema JSON, los datos se rellenan pr
 
 A continuación se muestra un ejemplo sin `afData/afBoundData` envoltorio:
 
-```
+```json
 {
  "user": {
   "address": {
@@ -240,6 +243,7 @@ Para habilitar el servicio de cumplimentación previa, especifique la Configurac
 
    * file:///C:/Users/public/Document/Prefill/.*
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >De forma predeterminada, se permite rellenar previamente mediante archivos crx para todos los tipos de formularios adaptables (XSD, XDP, JSON, FDM y sin modelo de formulario basado). El relleno previo solo se permite con archivos JSON y XML.
@@ -267,15 +271,15 @@ Los formularios adaptables se pueden rellenar previamente con datos de usuario e
 
 ### El protocolo crx:// {#the-crx-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
 El nodo especificado debe tener una propiedad denominada `jcr:data` y contener los datos.
 
-### El protocolo file:// {#the-file-protocol-nbsp}
+### El protocolo file://  {#the-file-protocol-nbsp}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 ```
 
@@ -283,13 +287,13 @@ El archivo referido debe estar en el mismo servidor.
 
 ### El protocolo https:// {#the-http-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
 ### El protocolo service:// {#the-service-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
@@ -304,7 +308,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 También puede establecer el `data` atributo en `slingRequest`, donde el `data` atributo es una cadena que contiene XML o JSON, como se muestra en el código de ejemplo siguiente (Ejemplo es para XML):
 
-```java
+```javascript
 <%
            String dataXML="<afData>" +
                             "<afUnboundData>" +
@@ -330,7 +334,7 @@ prefill-page component.zip
 
 [Obtener archivo](assets/prefill-page-component.zip)Muestra prefill.jsp en el componente de página
 
-## Servicio de cumplimentación previa personalizado de AEM Forms {#aem-forms-custom-prefill-service}
+## Servicio de cumplimentación previa personalizado para AEM Forms {#aem-forms-custom-prefill-service}
 
 Puede utilizar el servicio de cumplimentación previa personalizado para los escenarios, donde siempre se leen datos de un origen predefinido. El servicio de rellenado previo lee datos de orígenes de datos definidos y antepone los campos del formulario adaptable al contenido del archivo de datos de relleno previo. También ayuda a asociar de forma permanente datos prerellenados con un formulario adaptable.
 
@@ -338,7 +342,7 @@ Puede utilizar el servicio de cumplimentación previa personalizado para los esc
 
 El servicio de prerfill es un servicio OSGi y se empaqueta a través del paquete OSGi. Puede crear el paquete OSGi, cargarlo e instalarlo en paquetes de AEM Forms. Antes de empezar a crear el paquete:
 
-* [Descargar el SDK del cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
+* [Descargar el SDK del cliente AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
 * Descargar el paquete repetitivo
 
 * Coloque el archivo de datos (rellene previamente los datos) en el repositorio crx. Puede colocar el archivo en cualquier ubicación de la carpeta \contents de crx-repository.
@@ -347,7 +351,7 @@ El servicio de prerfill es un servicio OSGi y se empaqueta a través del paquete
 
 #### Crear un servicio de cumplimentación previa {#create-a-prefill-service}
 
-El paquete repetitivo (paquete de servicio de cumplimentación previa de muestra) contiene una implementación de muestra del servicio de cumplimentación previa de AEM Forms. Abra el paquete repetitivo en un editor de código. Por ejemplo, abra el proyecto repetitivo en Eclipse para editarlo. Después de abrir el paquete repetitivo en un editor de código, realice los siguientes pasos para crear el servicio.
+El paquete repetitivo (paquete de servicio de prerelleno de muestra) contiene la implementación de muestra del servicio de precumplimentación de AEM Forms. Abra el paquete repetitivo en un editor de código. Por ejemplo, abra el proyecto repetitivo en Eclipse para editarlo. Después de abrir el paquete repetitivo en un editor de código, realice los siguientes pasos para crear el servicio.
 
 1. Abra el archivo src\main\java\com\adobe\test\Prefill.java para editarlo.
 1. En el código, establezca el valor de:
@@ -364,6 +368,6 @@ El paquete repetitivo (paquete de servicio de cumplimentación previa de muestra
 Para inicio del servicio de cumplimentación previa, cargue el archivo JAR en la consola web de AEM Forms y active el servicio. Ahora, los inicios de servicio aparecen en el editor de formularios adaptables. Para asociar un servicio de cumplimentación previa a un formulario adaptable:
 
 1. Abra el formulario adaptable en el Editor de formularios y abra el panel Propiedades del Contenedor de formulario.
-1. En la consola Propiedades, vaya a contenedor de AEM Forms > Básico > Servicio de relleno previo.
+1. En la consola Propiedades, vaya a contenedor AEM Forms > Básico > Servicio de relleno previo.
 1. Seleccione el servicio Prefill predeterminado y haga clic en **[!UICONTROL Guardar]**. El servicio está asociado al formulario.
 
