@@ -8,7 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2079'
+ht-degree: 7%
 
 ---
 
@@ -21,9 +24,9 @@ Aprenda a crear un tema personalizado, a diseñar componentes individuales y a u
 
 Este tutorial es un paso de la serie [Crear su primer formulario](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) adaptable. Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
 
-## Acerca del tutorial {#about-the-tutorial}
+## Acerca del tutorial  {#about-the-tutorial}
 
-Puede utilizar temáticas para proporcionar un aspecto y un estilo únicos a un formulario adaptable. Puede aplicar temáticas predeterminadas con el editor de formularios adaptables o crear temáticas personalizadas propias. AEM Forms proporciona un editor [de](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) temas para crear temáticas personalizadas. Un solo tema puede proporcionar un aspecto diferente al mismo formulario adaptable que se abre en un dispositivo móvil, tablet o escritorio. No es necesario tener conocimientos previos de CSS o LESS para utilizar el editor de temas, pero se desea.
+Puede utilizar temáticas para proporcionar un aspecto y un estilo únicos a un formulario adaptable. Puede aplicar temáticas predeterminadas con el editor de formularios adaptables o crear temáticas personalizadas propias. Los AEM Forms proporcionan un editor [de](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) temas para crear temáticas personalizadas. Un solo tema puede proporcionar un aspecto diferente al mismo formulario adaptable que se abre en un dispositivo móvil, tablet o escritorio. No es necesario tener conocimientos previos de CSS o LESS para utilizar el editor de temas, pero se desea.
 
 Al final del tutorial, aprenderá a:
 
@@ -57,11 +60,11 @@ El editor de formularios adaptables proporciona varias temáticas listas para us
 
 ![Formulario adaptable con el tema predeterminado](assets/default-adaptive-form.png)
 
-**Figura:** Formulario *adaptable con el tema predeterminado*
+**Figura:** *Formulario adaptable con el tema predeterminado*
 
 ![Formulario adaptable con el tema de Encuesta](assets/adaptive-form-with-survey-theme.png)
 
-**Figura:** Formulario *adaptable con el tema de Encuesta*
+**Figura:** *Formulario adaptable con el tema de Encuesta*
 
 ## Paso 2: Actualizar el formulario adaptable {#step-update-your-adaptive-form}
 
@@ -76,6 +79,7 @@ El diseño que se muestra arriba requiere cambios en el texto del marcador de po
    1. Toque la imagen del logotipo en el componente de encabezado y toque las propiedades ![cmppr](assets/cmppr.png) . En la propiedad image, toque X para eliminar la imagen del logotipo existente.
    1. Toque cargar, seleccione el logo.png y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios. La imagen se ha descargado en la sección [Antes del inicio](/help/forms/using/style-your-adaptive-form.md#before-you-start) .
    1. Toque texto del encabezado `We.Retail`y toque ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Cambiar el texto del encabezado a `we retail`. Aplicar formato de negrita solo a `we`la `we retail`.
+
    ![we-Retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Elimine el título y añada texto de marcador de posición:
@@ -84,6 +88,7 @@ El diseño que se muestra arriba requiere cambios en el texto del marcador de po
    1. Copie el contenido del campo **Título** en el campo Texto **del** marcador de posición.
    1. Elimine el contenido del campo **Título** y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Repita los tres pasos anteriores para todos los cuadros de texto, cuadros numéricos y campos de correo electrónico del formulario.
+
    ![update-adaptive-form](assets/updated-adaptive-form.png)
 
 ## Paso 3: Creación de un tema personalizado para el formulario adaptable {#step-create-a-custom-theme-for-your-adaptive-form}
@@ -102,7 +107,7 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
    * **Título:** Especifique un título del tema. Por ejemplo, Tema **global.** El título le ayuda a identificar el tema a partir de la lista de temáticas.
    * **Nombre:** Especifique el nombre del tema. Por ejemplo, Tema **global.** En el repositorio se crea un nodo con el nombre especificado. Al escribir un título con inicio, se genera automáticamente el valor del campo de nombre. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos. Todas las entradas no válidas se reemplazan con un guión.
 
-1. Toque **Crear**. Se crea un tema y un cuadro de diálogo para abrir el formulario y editarlo. Toque **Abrir** para abrir el tema recién creado en una ficha nueva. El tema se abre en el editor de temas. Para aplicar estilo, el editor de temas utiliza un formulario adaptable incorporado que se incluye con AEM Forms.
+1. Toque **Crear**. Se crea un tema y un cuadro de diálogo para abrir el formulario y editarlo. Toque **Abrir** para abrir el tema recién creado en una ficha nueva. El tema se abre en el editor de temas. Para aplicar estilo, el editor de temas utiliza un formulario adaptable incorporado enviado con AEM Forms.
 
    Para obtener información sobre el uso de la IU del editor de temas, consulte [Acerca del editor](/help/forms/using/themes.md#aboutthethemeeditor)de temas.
 
@@ -110,17 +115,17 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
 
    ![custom-topic](assets/custom-theme.png)
 
-   **Figura:** Editor de *temas con el formulario adaptable Shipping-address-add-update-form*
+   **Figura:** *Editor de temas con el formulario adaptable Shipping-address-add-update-form*
 
    ![create-a-topic](assets/create-a-theme.png)
 
-   **Figura:** Formulario *adaptable con el formulario predeterminado*
+   **Figura:** *Formulario adaptable con el formulario predeterminado*
 
 ### Encabezado y pie de página de estilo {#style-header-and-footer}
 
 El encabezado y el pie de página proporcionan un aspecto coherente y distintivo a un formulario adaptable. Generalmente, el encabezado contiene el logotipo y el nombre de la organización, el pie de página contiene información de copyright y estas permanecen idénticas en varias formas de una organización. Para aplicar estilo al encabezado y al pie de página del formulario adaptable Shipping-address-add-update-form:
 
-1. Vaya a la opción **Encabezado** > **Texto** en el panel Selectores. El panel Selectores se encuentra a la izquierda del editor de temas. Si el panel no está visible, toque ![](assets/toggle-side-panel.png) Alternar panel lateral.
+1. Vaya a la opción **Encabezado** > **Texto** en el panel Selectores. El panel Selectores se encuentra a la izquierda del editor de temas. Si el panel no está visible, toque ![alternar panel](assets/toggle-side-panel.png) lateral Alternar panel lateral.
 
 1. Defina las siguientes propiedades en el acordeón **Texto** y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -137,7 +142,7 @@ El encabezado y el pie de página proporcionan un aspecto coherente y distintivo
 
    | Propiedad | Value |
    |---|---|
-   | imagen | Cargue header-style.png. La imagen se ha descargado en la sección [Antes del inicio](/help/forms/using/style-your-adaptive-form.md#before-you-start) . |
+   | image | Cargue header-style.png. La imagen se ha descargado en la sección [Antes del inicio](/help/forms/using/style-your-adaptive-form.md#before-you-start) . |
    | Posición | Inferior Derecha |
    | Mosaico | No repetir |
 
@@ -155,7 +160,7 @@ El encabezado y el pie de página proporcionan un aspecto coherente y distintivo
     <ul> 
      <li>Superior: 1,5 rem</li> 
      <li>Inferior: -35 px</li> 
-     <li>Izquierda: 1rem<strong><br /></strong></li> 
+     <li>Izquierda: 1 rem<strong><br /> </strong></li> 
     </ul> <p><strong>Sugerencia:</strong> Toque el icono del <img src="assets/link.png"> vínculo para proporcionar un valor diferente a cada campo.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -171,7 +176,7 @@ El encabezado y el pie de página proporcionan un aspecto coherente y distintivo
 
 Puede utilizar varios componentes en un formulario adaptable para capturar datos. Por ejemplo, cuadro de texto y cuadro numérico. Puede proporcionar un estilo idéntico a todos los componentes de captura de datos o a un estilo independiente para cada componente. En este tutorial, se aplica un estilo idéntico a los cuadros numéricos (ID del cliente, código postal) y los cuadros de texto (ID del cliente, nombre, dirección de envío, estado, correo electrónico). Para aplicar estilo a los componentes de captura de datos:
 
-1. Puntee en el campo ID del cliente y toque la opción **Utilidad** de campo. Defina las siguientes propiedades y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Puntee en el campo ID del cliente y toque la opción Utilidad **Campo** . Defina las siguientes propiedades y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
@@ -443,7 +448,7 @@ Adobe Typekit es un servicio de fuentes web. Puede configurar y utilizar el serv
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit ahora se denomina Adobe Fonts y se incluye con Creative Cloud y otras suscripciones. [Más información](https://fonts.adobe.com/).
 
 1. Cree una cuenta de [Adobe Typekit](https://typekit.com/) , cree un kit, añada la fuente Myriad Pro al kit, publique el kit y obtenga el ID del kit. Es necesario utilizar fuentes Adobe Typekit (fuentes web) en un formulario adaptable.
-1. En el servidor de AEM Forms, vaya a ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Herramientas** ![martillo](assets/hammer.png) > **Implementación** ****> Servicios de nube. En la página Servicios de nube, vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar** ahora en Typekit. Si ya hay una configuración disponible, haga clic en el botón + para crear una nueva instancia.
+1. En el servidor AEM Forms, vaya a ![adobeexperimentencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Herramientas** ![martillo](assets/hammer.png) > **Implementación** ****> Cloud Service. En la página Cloud Service, vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar** ahora en Typekit. Si ya hay una configuración disponible, haga clic en el botón + para crear una nueva instancia.
 
    En el cuadro de diálogo Crear configuración, especifique un **Título** para la configuración y haga clic en **Crear**. Se le redirige a la página de configuración. En el cuadro de diálogo Editar componente que aparece, proporcione el ID **del** Kit y haga clic en **Aceptar**.
 
