@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio Utilidades d
 
 [Inicio rápido (modo SOAP): Anidación de documentos PDF](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 El siguiente ejemplo de código convierte un documento PDF en un documento XDP. (Consulte [Conversión de Documentos PDF en Documentos](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents)XDP.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -140,7 +143,7 @@ El siguiente ejemplo de código convierte un documento PDF en un documento XDP. 
 
 El siguiente ejemplo de código convierte un documento XDP en un documento PDF. (Consulte [Conversión de Documentos XDP en Documentos](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents)PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -240,7 +243,7 @@ El siguiente ejemplo de código convierte un documento XDP en un documento PDF. 
 
 El siguiente ejemplo de código determina si el documento es un documento PDF y, si es así, la versión más antigua de Acrobat que puede leerlo. (Consulte [Recuperación de propiedades](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)de Documento PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -357,7 +360,7 @@ El siguiente ejemplo de código determina si el documento es un documento PDF y,
 
 En el siguiente ejemplo de código se establece el modo de guardado para una visualización rápida de Web y, a continuación, se pasa el documento PDF al servicio de cifrado donde está cifrado. El documento PDF cifrado que se guarda para una visualización rápida de la Web se guarda como un archivo PDF denominado* FastWebViewLoan.pdf*. (Consulte [Configuración de los modos](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)de guardado de Documento PDF).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -497,7 +500,7 @@ En el siguiente ejemplo de código se establece el modo de guardado para una vis
 
 El siguiente ejemplo de código Java convierte un documento PDF llamado *Loan.pdf* en un documento PDF/A-2b que se guarda como un archivo PDF llamado *LoanArchive.pdf*. (Consulte [Conversión de Documentos a Documentos](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -585,7 +588,7 @@ public class CreatePDFADocument {
 
 El siguiente ejemplo de código Java saniza un documento PDF llamado *Loan.pdf*.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
