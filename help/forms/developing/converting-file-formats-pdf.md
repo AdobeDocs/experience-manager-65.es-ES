@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '7842'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ El servicio Generar PDF convierte PDF a los siguientes formatos de archivo (solo
 
 El servicio Generar PDF requiere que realice estas tareas administrativas:
 
-* Instalación de las aplicaciones nativas necesarias en el equipo que aloja AEM Forms
+* Instalar las aplicaciones nativas necesarias en el equipo que aloja AEM Forms
 * Instalación de Adobe Acrobat Professional o Acrobat Pro Extended 9.2 en el equipo con AEM Forms
 * Realizar tareas de configuración posteriores a la instalación
 
@@ -166,6 +169,7 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
    * Un `java.lang.String` objeto que contiene el nombre de la configuración de seguridad que se va a utilizar.
    * Un `com.adobe.idp.Document` objeto opcional que contiene la configuración que se va a aplicar al generar el documento PDF.
    * Un `com.adobe.idp.Document` objeto opcional que contiene información de metadatos que se va a aplicar al documento PDF.
+
    El `createPDF2` método devuelve un `CreatePDFResult` objeto que contiene el nuevo documento PDF y una información de registro. El archivo de registro generalmente contiene mensajes de error o de advertencia generados por la solicitud de conversión.
 
 1. Recupere los resultados.
@@ -174,6 +178,7 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
 
    * Invocar el `CreatePDFResult` método del `getCreatedDocument` objeto, que devuelve un `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` método del `copyToFile` objeto para extraer el documento PDF del objeto creado en el paso anterior.
+
    Si ha utilizado el `createPDF2` método para obtener el documento de registro (no aplicable a las conversiones HTML), lleve a cabo las siguientes acciones:
 
    * Invocar el `CreatePDFResult` método del `getLogDocument` objeto. Esto devuelve un `com.adobe.idp.Document` objeto.
@@ -205,7 +210,7 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
 1. Crear un cliente de Generar PDF.
 
    * Cree un `GeneratePDFServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `GeneratePDFServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -248,9 +253,9 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversión de Documentos HTML a Documentos PDF {#converting-html-documents-to-pdf-documents}
 
@@ -362,7 +367,7 @@ Convertir contenido HTML en un documento PDF mediante la API de generación de P
 1. Crear un cliente de Generar PDF.
 
    * Cree un `GeneratePDFServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `GeneratePDFServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -398,9 +403,9 @@ Convertir contenido HTML en un documento PDF mediante la API de generación de P
 
 [Conversión de Documentos HTML a Documentos PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversión de Documentos PDF a formatos que no son de imagen {#converting-pdf-documents-to-non-image-formats}
 
@@ -478,6 +483,7 @@ Convertir un documento PDF en un archivo RTF mediante la API de generación de P
    * Un `java.lang.String` objeto que contiene el nombre de la configuración de Adobe PDF.
    * Un `ConvertPDFFormatType` objeto que especifica el tipo de archivo de destinatario para la conversión.
    * Un `com.adobe.idp.Document` objeto opcional que contiene la configuración que se va a aplicar al generar el documento PDF.
+
    El `exportPDF2` método devuelve un `ExportPDFResult` objeto que contiene el archivo convertido.
 
 1. Convierta el documento PDF.
@@ -512,7 +518,7 @@ Convertir un documento PDF en un archivo RTF mediante la API de generación de P
 1. Crear un cliente Generar PDf.
 
    * Cree un `GeneratePDFServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `GeneratePDFServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
@@ -552,9 +558,9 @@ Convertir un documento PDF en un archivo RTF mediante la API de generación de P
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Añadir compatibilidad con formatos de archivo nativos adicionales {#adding-support-for-additional-native-file-formats}
 
@@ -718,7 +724,7 @@ Si planea trabajar en archivos XML de cuadros de diálogo o secuencias de comand
 
 Los archivos de cuadro de diálogo y de secuencia de comandos residen en el archivo appmondata.jar. Para poder modificar cualquiera de estos archivos o agregar nuevos archivos de script o de diálogo, debe desempaquetar este archivo JAR. Por ejemplo, supongamos que desea agregar compatibilidad con la aplicación EditPlus. Puede crear dos archivos XML, denominados appmon.editplus.script.en_US.xml y appmon.editplus.script.addis.es_ES.xml. Estas secuencias de comandos XML deben agregarse al archivo adobe-appmondata.jar en dos ubicaciones, tal como se especifica a continuación:
 
-* adobe-livecycle-native-jleader-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. El archivo adobe-livecycle-native-jpatrón-x86_win32.ear se encuentra en la carpeta de exportación de `[AEM forms install directory]\configurationManager`. (si AEM Forms se implementa en otro servidor de aplicaciones J2EE, sustituya el archivo adobe-livecycle-native-jpatrón-x86_win32.ear por el archivo EAR que corresponde a su servidor de aplicaciones J2EE).
+* adobe-livecycle-native-jleader-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. El archivo adobe-livecycle-native-jpatrón-x86_win32.ear se encuentra en la carpeta de exportación de `[AEM forms install directory]\configurationManager`. (si AEM Forms se implementa en otro servidor de aplicaciones J2EE, reemplace el archivo adobe-livecycle-native-jpatrón-x86_win32.ear por el archivo EAR que corresponde a su servidor de aplicaciones J2EE).
 * adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (el archivo adobe-appmondata.jar se encuentra en el archivo adobe-generatepdf-dsc.jar). El archivo adobe-generatepdf-dsc.jar está en la `[AEM forms install directory]\deploy` carpeta.
 
 Después de agregar estos archivos XML al archivo adobe-appmondata.jar, debe volver a implementar el componente GeneratePDF. Para agregar archivos XML de cuadro de diálogo y secuencia de comandos al archivo adobe-appmondata.jar, lleve a cabo las siguientes tareas:
@@ -769,7 +775,7 @@ Puede utilizar expresiones regulares en las especificaciones de rótulos. El ser
 
 **expresión regular que acomoda el nombre de archivo antepuesto al Bloc de notas en el letrero Bloc de notas**
 
-```as3
+```xml
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. -->
  <step>
      <expectedWindow>
@@ -780,7 +786,7 @@ Puede utilizar expresiones regulares en las especificaciones de rótulos. El ser
 
 **expresión regular que diferencia la configuración de impresión de la configuración de impresión**
 
-```as3
+```xml
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. -->
  <windowList>
      <window controlID="0x01" caption="^Print$" action="press"/>
@@ -796,7 +802,7 @@ Debe ordenar `window` y `windowList` los elementos de la siguiente manera:
 
 **Orden de elementos de ventana en un archivo de diálogo**
 
-```as3
+```xml
  <!-- The caption attribute in the following window element is 40 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <window caption="Unexpected Failure in DebugActiveProcess">
      <…>
@@ -820,7 +826,7 @@ Debe ordenar `window` y `windowList` los elementos de la siguiente manera:
 
 **Ordenar elementos de ventana dentro de un elemento windowList**
 
-```as3
+```xml
  <!-- The caption attribute in the following indexes element is 56 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <windowList>
      <window caption="Can&apos;t exit design mode because.* cannot be created"/>
@@ -881,7 +887,7 @@ En este ejemplo, los datos de configuración predeterminados suministrados con e
 
 **Modificaciones para dirigir archivos de texto al Bloc de notas (native2pdfconfig.xml)**
 
-```as3
+```xml
  <filetype-settings>
 
  <!-- Some native app file types were omitted for brevity. -->
@@ -910,7 +916,7 @@ Después de crear la nueva variable de entorno, debe reiniciar el servidor en el
 
 **Crear una variable de sistema en el entorno de Windows XP**
 
-1. Seleccione **Panel de control > Sistema**.
+1. Seleccione **Panel de control de Campaign > Sistema**.
 1. En el cuadro de diálogo Propiedades del sistema, haga clic en la ficha **Avanzadas** y, a continuación, haga clic en Variables **de Entorno**.
 1. En Variables del sistema en el cuadro de diálogo Variables de Entorno, haga clic en **Nuevo**.
 1. En el cuadro de diálogo Nueva variable del sistema, en el cuadro Nombre **de** variable, escriba un nombre que utilice el formato `[applicationname]_PATH`.
@@ -921,7 +927,7 @@ Después de crear la nueva variable de entorno, debe reiniciar el servidor en el
 
 1. En una ventana de línea de comandos, escriba la definición de la variable con este formato:
 
-   ```as3
+   ```shell
             [applicationname]_PATH=[Full path name]
    ```
 
@@ -939,7 +945,7 @@ Este ejemplo contiene los cuadros de diálogo adicionales para la aplicación No
 
 **Cuadros de diálogo del Bloc de notas (appmon.notepad.add.en_US.xml)**
 
-```as3
+```xml
  <dialogs app="Notepad" locale="en_US" version="7.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dialogs.xsd">
      <window caption="Caption Title">
          <windowList>
@@ -955,7 +961,7 @@ Este ejemplo especifica cómo debe interactuar el servicio Generar PDF con el Bl
 
 **Archivo XML de secuencias de comandos de Notepad (appmon.notepad.script.en_US.xml)**
 
-```as3
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
 *
