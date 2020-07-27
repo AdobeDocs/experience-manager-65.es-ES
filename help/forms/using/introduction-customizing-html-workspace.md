@@ -1,8 +1,8 @@
 ---
 title: Introducción a la personalización del espacio de trabajo de formularios de AEM
 seo-title: Introducción a la personalización del espacio de trabajo de formularios de AEM
-description: Introducción rápida, con información conceptual y técnica, para personalizar el espacio de trabajo de LiveCycle AEM Forms para la gestión de procesos.
-seo-description: Introducción rápida, con información conceptual y técnica, para personalizar el espacio de trabajo de LiveCycle AEM Forms para la gestión de procesos.
+description: Introducción rápida, con información conceptual y técnica, para personalizar el espacio de trabajo de AEM Forms de LiveCycle para la administración de procesos.
+seo-description: Introducción rápida, con información conceptual y técnica, para personalizar el espacio de trabajo de AEM Forms de LiveCycle para la administración de procesos.
 uuid: 38759071-e6b8-4976-8b06-909ad7a786cd
 contentOwner: robhagat
 content-type: reference
@@ -11,7 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1786'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Ejemplo de un espacio de trabajo personalizado
 
 ## Tipos de personalizaciones {#types-of-customizations}
 
-El espacio de trabajo de AEM Forms admite una amplia variedad de personalizaciones para actualizar el diseño de la interfaz de usuario, su apariencia, funcionalidad y mucho más. Las personalizaciones implican actualizar una o varias de las siguientes opciones:
+El espacio de trabajo AEM Forms admite una amplia variedad de personalizaciones para actualizar el diseño de la interfaz de usuario, su apariencia, funcionalidad y mucho más. Las personalizaciones implican actualizar una o varias de las siguientes opciones:
 
 * Aspectos visuales de la interfaz de usuario
 * Funcionalidad mediante personalizaciones semánticas
@@ -34,13 +37,13 @@ El espacio de trabajo de AEM Forms admite una amplia variedad de personalizacion
 
 ### Cambios en la interfaz de usuario {#user-interface-changes}
 
-Puede cambiar la apariencia, el diseño y otras formas semánticas de presentación del espacio de trabajo de AEM Forms. Cambie el espacio de trabajo personalizando los archivos CSS, HTML y JavaScript™. Todos los archivos predeterminados se proporcionan en la instalación predeterminada.
+Puede cambiar la apariencia, el diseño y otras semánticas de presentación del espacio de trabajo AEM Forms. Cambie el espacio de trabajo personalizando los archivos CSS, HTML y JavaScript™. Todos los archivos predeterminados se proporcionan en la instalación predeterminada.
 
-Los pasos más habituales se tratan en Pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms. Para obtener ejemplos específicos de dichas personalizaciones, incluidos los pasos detallados, consulte los artículos relacionados al final de este artículo.
+Los pasos más aplicables se tratan en Pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms. Para obtener ejemplos específicos de dichas personalizaciones, incluidos los pasos detallados, consulte los artículos relacionados al final de este artículo.
 
 #### Explicación de la hoja de estilo {#understanding-the-style-sheet}
 
-Antes de personalizar el espacio de trabajo, familiarícese con la hoja de estilo predeterminada suministrada con AEM Forms en /libs/ws/css/style.css.
+Antes de personalizar el espacio de trabajo, familiarícese con la hoja de estilo predeterminada que se proporciona con los AEM Forms en /libs/ws/css/style.css.
 
 Para personalizar el espacio de trabajo, se recomienda familiarizarse con la hoja de estilo existente, style.css, ubicada en la carpeta /libs/ws/css. A continuación se describen algunos componentes destacados.
 
@@ -52,7 +55,7 @@ Para personalizar el espacio de trabajo, se recomienda familiarizarse con la hoj
   </tr>
   <tr>
    <td><p>#encabezado</p> </td>
-   <td><p>Encabezado del espacio de trabajo de AEM Forms</p> </td>
+   <td><p>Encabezado del espacio de trabajo AEM Forms</p> </td>
   </tr>
   <tr>
    <td><p>.categoryList</p> </td>
@@ -119,7 +122,7 @@ Para personalizar el espacio de trabajo, se recomienda familiarizarse con la hoj
 
 #### CSS {#css}
 
-El aspecto del espacio de trabajo de AEM Forms se obtiene a partir de una CSS. Al personalizar la CSS, puede cambiar la semántica de presentación del espacio de trabajo, como las fuentes, los colores, la marca y el diseño.
+El aspecto del espacio de trabajo AEM Forms toma su aspecto de una CSS. Al personalizar la CSS, puede cambiar la semántica de presentación del espacio de trabajo, como las fuentes, los colores, la marca y el diseño.
 
 Los pasos de nivel superior para la personalización de CSS son:
 
@@ -127,11 +130,11 @@ Los pasos de nivel superior para la personalización de CSS son:
 * Añada elementos de estilo a esta CSS. Consulte Explicación de los estilos CSS para obtener más información.
 * Actualice sus referencias en `html.jsp`.
 
-Para ver los pasos exactos para realizar estas personalizaciones, consulte Pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms. El archivo CSS enviado con el espacio de trabajo de AEM Forms se encuentra en /libs/ws/css/. Para las personalizaciones relacionadas con CSS, utilice el [paquete](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)de envío. Para ver ejemplos específicos de personalizaciones relacionadas con CSS, consulte los temas de ayuda relacionados al final de este artículo.
+Para ver los pasos exactos para realizar estas personalizaciones, consulte Pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms. El archivo CSS enviado con el espacio de trabajo AEM Forms se encuentra en /libs/ws/css/. Para las personalizaciones relacionadas con CSS, utilice el [paquete](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)de envío. Para ver ejemplos específicos de personalizaciones relacionadas con CSS, consulte los temas de ayuda relacionados al final de este artículo.
 
 #### Imagen {#image}
 
-Puede personalizar el espacio de trabajo de AEM Forms para agregar avatares de usuarios o para agregar el logotipo de su organización. Para estas personalizaciones, utilice [Enviar paquete](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Puede personalizar el espacio de trabajo AEM Forms para agregar avatares de usuarios o para agregar el logotipo de su organización. Para estas personalizaciones, utilice [Enviar paquete](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 Los pasos de nivel superior para personalizar las imágenes son:
 
@@ -140,7 +143,7 @@ Los pasos de nivel superior para personalizar las imágenes son:
 * Añada los nuevos estilos correspondientes a las imágenes agregadas.
 * Vínculo al nuevo archivo CSS del `html.jsp` archivo.
 
-Para empezar a personalizar las imágenes en el espacio de trabajo de AEM Forms, siga los pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms. Para ver ejemplos específicos de personalizaciones relacionadas con imágenes, consulte los temas de ayuda relacionados al final de este artículo.
+Para empezar a personalizar las imágenes en el espacio de trabajo AEM Forms, siga los pasos [genéricos para la personalización](../../forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo AEM Forms. Para ver ejemplos específicos de personalizaciones relacionadas con imágenes, consulte los temas de ayuda relacionados al final de este artículo.
 
 #### Plantilla HTML {#html-template}
 
@@ -156,9 +159,9 @@ Para ver ejemplos específicos de dichas personalizaciones, consulte los temas d
 
 ### Cambios semánticos {#semantic-changes}
 
-Para modificar la funcionalidad del espacio de trabajo de AEM Forms, cambie el código fuente JavaScript. Las modificaciones en la funcionalidad principal se etiquetan como cambios semánticos. Los modelos, la vista y las plantillas se modifican como parte del código fuente del espacio de trabajo de AEM Forms.
+Para modificar la funcionalidad del espacio de trabajo AEM Forms, cambie el código fuente JavaScript. Las modificaciones en la funcionalidad principal se etiquetan como cambios semánticos. Los modelos, la vista y las plantillas se modifican como parte del espacio de trabajo de código fuente de AEM Forms.
 
-Los pasos de nivel superior para realizar cambios semánticos con el fin de modificar la funcionalidad del espacio de trabajo de AEM Forms son:
+Los pasos de nivel superior para realizar cambios semánticos a fin de modificar la funcionalidad del espacio de trabajo de AEM Forms son:
 
 * En una carpeta creada por el usuario, realice copias de los archivos predeterminados correspondientes.
 * Añada nuevos modelos y vistas en la carpeta definida por el usuario.
@@ -169,15 +172,15 @@ Para obtener más información conceptual sobre los componentes que forman parte
 
 ### Componentes reutilizables {#reusable-components}
 
-Dado que el espacio de trabajo de AEM Forms es un software basado en componentes, se puede personalizar y reutilizar fácilmente. Puede integrar fácilmente los componentes del espacio de trabajo con sus aplicaciones Web.
+Como el espacio de trabajo de AEM Forms es un software basado en componentes, se puede personalizar y reutilizar fácilmente. Puede integrar fácilmente los componentes del espacio de trabajo con sus aplicaciones Web.
 
-Para obtener más información conceptual, consulte la [Descripción de los componentes](/help/forms/using/description-reusable-components.md) reutilizables y para obtener instrucciones sobre cómo utilizar los componentes, consulte [Integración de los componentes del espacio de trabajo de AEM Forms en aplicaciones](/help/forms/using/description-reusable-components.md)web.
+Para obtener más información conceptual, consulte la [Descripción de los componentes](/help/forms/using/description-reusable-components.md) reutilizables y para obtener instrucciones sobre el uso de los componentes, consulte [Integración de componentes de espacio de trabajo de AEM Forms en aplicaciones](/help/forms/using/description-reusable-components.md)web.
 
-## Creación del código de espacio de trabajo de AEM Forms {#building-html-workspace-code}
+## Creación del código del espacio de trabajo de AEM Forms {#building-html-workspace-code}
 
 ### Paquete SDK {#sdk-package}
 
-El paquete contiene el código fuente del espacio de trabajo de AEM Forms. El paquete está disponible en `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+El paquete contiene el código fuente del espacio de trabajo AEM Forms. El paquete está disponible en `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 Está pensado principalmente para personalizaciones, ya que proporciona la capacidad de generar:
 
@@ -196,27 +199,27 @@ Está pensado principalmente para personalizaciones, ya que proporciona la capac
    * ensamblado: contiene zip.xml utilizado por la secuencia de comandos para crear el SDK de espacio de trabajo de AEM Forms.
    * src/main/webapp -
 
-      * css: contiene hojas de estilo para el espacio de trabajo de AEM Forms.
-      * imágenes: contiene imágenes utilizadas en el espacio de trabajo de AEM Forms.
+      * css: contiene hojas de estilo para el espacio de trabajo AEM Forms.
+      * imágenes: contiene imágenes utilizadas en el espacio de trabajo AEM Forms.
       * js:
 
          * libs: contiene todas las bibliotecas de terceros utilizadas en el espacio de trabajo de AEM Forms.
          * licencias: contiene licencias para archivos HTML y JS, así como código para anteponer estas licencias a los respectivos archivos de origen.
-         * minificador: se utiliza para la combinación, minimización y simplificación del código personalizado de javascript.
-         * resourceJs_optimizer: se utiliza para la combinación, minimización y simplificación del código fuente de javascript.
+         * minifier: se utiliza para la combinación, minimización y simplificación del código personalizado de JavaScript.
+         * resourcejs_optimizer: se utiliza para la combinación, minimización y simplificación del código fuente JavaScript.
          * resource_generator: se utiliza para generar register.js y modelcontrollerpath.js.
          * tiempo de ejecución:
 
-            * inicializer: contiene inicializer.js utilizado para inicializar vistas y modelos de red troncal utilizados en el espacio de trabajo de AEM Forms.
+            * inicializer: contiene inicializer.js utilizado para inicializar vistas de red troncal y modelos utilizados en el espacio de trabajo de AEM Forms.
             * modelos: contiene modelos de red troncal de todos los componentes presentes en el espacio de trabajo de AEM Forms.
-            * rutas: contiene archivos JavaScript y archivos HTML que cargan procesos de inicio, tareas de realización, seguimiento y preferencias en el espacio de trabajo de AEM Forms.
-            * services: contiene service.js que se utiliza en el espacio de trabajo de AEM Forms. Todas las llamadas al servidor se realizan a través de service.js.
+            * rutas: contiene archivos JavaScript y archivos HTML que cargan procesos de inicio, tareas de tareas, seguimiento y preferencias en el espacio de trabajo de AEM Forms.
+            * services: contiene service.js utilizado en el espacio de trabajo de AEM Forms. Todas las llamadas al servidor se realizan a través de service.js.
             * plantillas: contiene todas las plantillas, es decir, archivos HTML de todas las vistas del espacio de trabajo de AEM Forms.
             * util: contiene todos los archivos de utilidad (javascript) que se utilizan en el espacio de trabajo de AEM Forms.
             * vistas: contiene vistas de red troncal de todos los componentes del espacio de trabajo de AEM Forms.
          * main.js
          * router.js
-      * libs/ws: pdf.html y pluginPing.pdf se utilizan para cargar formularios PDF en el espacio de trabajo de AEM Forms y WSNextAdapter.swf se utiliza para cargar formularios SWF y guías en el espacio de trabajo de AEM Forms.
+      * libs/ws: pdf.html y pluginPing.pdf se utilizan para cargar PDF forms en el espacio de trabajo AEM Forms y WSNextAdapter.swf se utiliza para cargar formularios SWF y guías en el espacio de trabajo AEM Forms.
       * configuraciones regionales:
 
          * de-DE - Contiene translate.json para alemán.
@@ -351,8 +354,8 @@ mvn clean -P Instalación de Dev en client-pkg
 
       * inicializer: contiene inicializer.js y modelcontrollerpath.js.
       * modelos: contiene modelos de todos los componentes del espacio de trabajo de AEM Forms.
-      * rutas: contiene archivos JavaScript y archivos HTML que cargan procesos de inicio, tareas de realización, seguimiento y preferencias en el espacio de trabajo de AEM Forms.
-      * services: contiene service.js que se utiliza en el espacio de trabajo de AEM Forms.
+      * rutas: contiene archivos JavaScript y archivos HTML que cargan procesos de inicio, tareas de tareas, seguimiento y preferencias en el espacio de trabajo de AEM Forms.
+      * services: contiene service.js utilizado en el espacio de trabajo de AEM Forms.
       * plantillas: contiene todas las plantillas, es decir, archivos HTML de todos los componentes del espacio de trabajo de AEM Forms.
       * util: contiene todos los archivos de utilidad (JavaScript) que se utilizan en el espacio de trabajo de AEM Forms.
       * vistas: contiene vistas de todos los componentes del espacio de trabajo de AEM Forms.
