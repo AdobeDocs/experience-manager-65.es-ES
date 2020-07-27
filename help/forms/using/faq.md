@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
 workflow-type: tm+mt
 source-wordcount: '1970'
 ht-degree: 0%
@@ -29,9 +29,9 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    Respuesta: Los campos de códigos de barras y firmas no son relevantes en los escenarios HTML o móviles. Estos campos aparecen como un área no interactiva. Sin embargo, AEM Forms Designer proporciona un nuevo campo de creación de secuencias de comandos de firma que se puede utilizar en lugar de un campo de firma. También se puede agregar una utilidad [](../../forms/using/custom-widgets.md) personalizada para códigos de barras e integrarla.
 
-1. ¿Se admite texto enriquecido para el campo de texto XFA?
+1. Is Rich Text supported for the XFA Text Field?
 
-   Respuesta: El campo XFA, que permite contenido enriquecido en AEM Forms Designer, no se admite y se procesa como texto normal sin que sea posible aplicar estilo al texto desde la interfaz de usuario. Además, los campos XFA con propiedad comb se muestran como un campo normal, aunque todavía hay restricciones en el número de caracteres permitidos según el valor de los dígitos comb.
+   Answer: The XFA field, which allows rich content in AEM Forms Designer, is not supported and is rendered as normal text without support for styling the text from the user interface. Also, XFA fields with comb property are displayed as a normal field, though there are still restrictions on number of allowed characters based on the value of comb digits.
 
 1. ¿Existen limitaciones en cuanto al uso de subformularios repetibles?
 
@@ -39,11 +39,11 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    1. Establezca el recuento inicial del subformulario repetible en 1.
 
-      ![recuento inicial](assets/intial-count.png)
+      ![intial-count](assets/intial-count.png)
 
    1. Utilice el evento initialize del formulario para ocultar la instancia principal del subformulario. Por ejemplo, el código siguiente oculta la instancia principal del subformulario al inicializarlo. También verifica el tipo de aplicación para asegurarse de que la secuencia de comandos se ejecuta únicamente en el lado del cliente:
 
-      ```
+      ```javascript
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
       RepeatSubform.presence = "hidden";
       }
@@ -53,7 +53,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
       El código siguiente comprueba la instancia oculta del subformulario. Si se encuentra la instancia oculta del subformulario, elimine la instancia oculta del subformulario e inserte una nueva instancia del subformulario. Si no se encuentra la instancia oculta del subformulario, simplemente inserte una nueva instancia del subformulario.
 
-      ```
+      ```javascript
       if (RepeatSubform.presence == "hidden")
       {
       RepeatSubform.instanceManager.insertInstance(0);
@@ -69,7 +69,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
       Recuento de comprobaciones de código de los subformularios. Si el recuento del subformulario alcanza 1, el código oculta el subformulario en lugar de eliminarlo.
 
-      ```
+      ```javascript
       if (RepeatSubform.instanceManager.count == 1) {
       RepeatSubform.presence = "hidden";
       } else {
@@ -79,7 +79,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    1. Abra el evento de envío previo del formulario para editarlo. Añada la siguiente secuencia de comandos al evento para eliminar la instancia oculta de la secuencia de comandos antes de editarla. Evita el envío de datos del subformulario oculto al enviarlo.
 
-      ```
+      ```javascript
       if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
       RepeatSubform.instanceManager.removeInstance(0);
       }
@@ -91,15 +91,15 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Por qué parte del texto se trunca o se muestra incorrectamente en HTML5?
 
-   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista de diseño de AEM Forms Designer. Aunque este truncamiento se puede gestionar en los archivos PDF, no se puede gestionar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño de AEM Forms Designer.
+   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista de diseño de AEM Forms Designer. Aunque este truncamiento se puede gestionar en los archivos PDF, no se puede gestionar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño del Diseñador de AEM Forms.
 
 1. Estoy observando problemas de diseño relacionados con la falta de contenido o la superposición de contenido. ¿Cuál es la razón?
 
-   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se produce más adelante en el orden de documento (en la vista Jerarquía de AEM Forms Designer). PDF admite capas transparentes, pero los navegadores/HTML no admiten capas transparentes.
+   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se produce más adelante en el orden de documento (en la vista Jerarquía de Designer AEM Forms). PDF admite capas transparentes, pero los navegadores/HTML no admiten capas transparentes.
 
 1. ¿Por qué se muestran algunas fuentes en el formulario HTML diferentes de las utilizadas al diseñar el formulario?
 
-   Respuesta: Los formularios HTML5 no incrustan fuentes (a diferencia de los formularios PDF en los que las fuentes se incrustan dentro del formulario). Para que la versión HTML del formulario se represente según lo esperado, asegúrese de que las fuentes especificadas en XDP están disponibles en el servidor y en el ordenador cliente. Si las fuentes requeridas no están disponibles en el servidor, se utilizan fuentes de otoño. Además, si utiliza fuentes en la plantilla de formulario que no están disponibles en el dispositivo cliente, se utilizarán las fuentes predeterminadas del explorador para procesar el texto.
+   Respuesta: Los formularios HTML5 no incrustan fuentes (a diferencia de los PDF forms en los que las fuentes se incrustan dentro del formulario). Para que la versión HTML del formulario se represente según lo esperado, asegúrese de que las fuentes especificadas en XDP están disponibles en el servidor y en el ordenador cliente. Si las fuentes requeridas no están disponibles en el servidor, se utilizan fuentes de otoño. Además, si utiliza fuentes en la plantilla de formulario que no están disponibles en el dispositivo cliente, se utilizarán las fuentes predeterminadas del explorador para procesar el texto.
 
 1. ¿Se admiten los atributos vAlign y hAlign en los formularios HTML?
 
@@ -113,13 +113,13 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    Respuesta: Sí, los formularios HTML5 tienen algunas limitaciones. Si el número de dígitos es mayor que el recuento especificado en la cláusula de imagen, los números no se localizan y se muestran en la configuración regional de inglés.
 
-1. ¿Por qué los formularios HTML tienen un tamaño mayor que los formularios PDF?
+1. ¿Por qué los formularios HTML tienen un tamaño mayor que los PDF forms?
 
    Se requieren muchas estructuras de datos intermedias y objetos como el uso de formularios, el uso de datos y el uso de diseños para procesar un XDP en un formulario HTML.
 
-   Para los formularios PDF, Adobe Acrobat tiene un motor XTG integrado para crear estructuras de datos y objetos intermedios. Acrobat también se ocupa del diseño y las secuencias de comandos.
+   Para PDF forms, Adobe Acrobat dispone de un motor XTG integrado para crear estructuras de datos y objetos intermedios. Acrobat también se ocupa del diseño y las secuencias de comandos.
 
-   En el caso de los formularios HTML5, los exploradores no tienen un motor XTG integrado para crear estructuras de datos intermedias ni objetos a partir de bytes XDP sin procesar. Por lo tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, la secuencia de comandos y el motor de diseño basados en javascript utilizan estas estructuras intermedias.
+   En el caso de los formularios HTML5, los exploradores no tienen un motor XTG integrado para crear estructuras de datos intermedias ni objetos a partir de bytes XDP sin procesar. Por lo tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, la secuencia de comandos y el motor de diseño basados en JavaScript utilizan estas estructuras intermedias.
 
    El tamaño de la estructura intermedia depende del tamaño del XDP original y de los datos combinados con el XDP.
 
