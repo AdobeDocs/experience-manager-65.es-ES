@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -28,6 +31,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
    * empid
    * reason
    * duration
+
    >[!NOTE]
    >
    >Este procesador es la plantilla de página de resumen.
@@ -36,7 +40,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
 
    `apps/Employees/PtoApplication/html.esp`
 
-   ```
+   ```html
    <html>
      <body>
        <table>
@@ -82,6 +86,6 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-En el espacio de trabajo de AEM Forms, cuando se abre una tarea, la dirección URL de resumen accede al nodo CRX y el procesador HTML muestra el resumen.
+En el espacio de trabajo AEM Forms, cuando se abre una tarea, la dirección URL de resumen accede al nodo CRX y el procesador HTML muestra el resumen.
 
 El diseño de resumen se puede cambiar sin modificar el proceso. El procesador HTML muestra el resumen correctamente.
