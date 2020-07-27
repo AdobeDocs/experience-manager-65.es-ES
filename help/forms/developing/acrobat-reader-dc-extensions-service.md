@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio Extensiones 
 
 [Inicio rápido (modo SOAP): Recuperación de información de credenciales mediante la API de Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 El siguiente ejemplo de código Java aplica derechos de uso a un documento PDF llamado *Loan.pdf*. El documento PDF con derechos activados se guarda como un archivo PDF denominado *LoanUsageRights.pdf*. Los siguientes derechos de uso se aplican a este documento PDF: `enabledComments`, `enabledFormFillIn`, y `enabledDigitalSignatures`. (Consulte [Aplicación de derechos de uso a Documentos](/help/forms/developing/assigning-usage-rights.md)PDF).
 
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -147,7 +150,7 @@ El siguiente ejemplo de código Java aplica derechos de uso a un documento PDF l
 
 El siguiente ejemplo de código Java elimina los derechos de uso de un documento PDF con derechos activados llamado *LoanUsageRights.pdf*. (Consulte [Eliminación de derechos de uso de Documentos](/help/forms/developing/assigning-usage-rights.md)PDF).
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -247,7 +250,7 @@ El siguiente ejemplo de código Java elimina los derechos de uso de un documento
 
 El siguiente ejemplo de código Java recupera información sobre las credenciales que se utilizan para aplicar derechos de uso a un documento PDF con derechos activados llamado *LoanUsageRights.pdf*. (Consulte [Recuperación de información](/help/forms/developing/assigning-usage-rights.md)de credenciales).
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
