@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '969'
 ht-degree: 2%
 
 ---
@@ -213,8 +213,8 @@ Una acción es una actividad específica de un formulario adaptable, como hacer 
 
 Un grupo de pruebas puede tener varios casos de prueba. Puede ejecutar todos los casos de prueba en un grupo de pruebas a la vez o individualmente. Al ejecutar una prueba, los iconos indican los resultados:
 
-* Un icono de marca de verificación indica una prueba pasada: ![](assets/save_icon.svg)
-* El icono &quot;X&quot; indica que la prueba ha fallado: ![](assets/close-icon.svg)
+* Un icono de marca de verificación indica una prueba pasada: ![save_icon](assets/save_icon.svg)
+* El icono &quot;X&quot; indica que la prueba ha fallado: ![close-icon](assets/close-icon.svg)
 
 1. Vaya al icono de AEM > **[!UICONTROL Herramientas]**> **[!UICONTROL Operaciones]**> **[!UICONTROL Pruebas]**
 1. Para ejecutar todas las pruebas de Test Suite:
