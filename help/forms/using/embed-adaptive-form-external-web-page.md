@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -120,14 +120,14 @@ Veamos un ejemplo de cómo configurar un servidor proxy inverso Apache 2.4 sin d
 
 1. Abra el archivo de configuración y quite el comentario de las siguientes líneas de código. `httpd.conf` Como alternativa, puede agregar estas líneas de código en el archivo.
 
-   ```
+   ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. Configure las reglas de proxy agregando las siguientes líneas de código en el archivo de configuración `httpd-proxy.conf` .
 
-   ```
+   ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
@@ -136,7 +136,7 @@ Veamos un ejemplo de cómo configurar un servidor proxy inverso Apache 2.4 sin d
 
 Si no monta el servidor AEM en una ruta de contexto, las reglas de proxy en la capa Apache serán las siguientes:
 
-```java
+```text
 ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
@@ -151,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Si configura cualquier otra topología, asegúrese de agregar las direcciones URL de envío, rellenado previo y otras a la lista de permitidas en la capa del despachante.
+>Si configura cualquier otra topología, asegúrese de agregar las direcciones URL de envío, rellenado previo y otras a la lista de permitidos en la capa del despachante.
 
 ## Best practices {#best-practices}
 
