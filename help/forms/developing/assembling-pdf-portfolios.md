@@ -11,22 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1785'
+ht-degree: 0%
 
 ---
 
 
 # Compilación de carteras PDF {#assembling-pdf-portfolios}
 
-Puede montar una cartera PDF mediante el JRE del ensamblador y la API de servicio Web. Un portafolio puede combinar varios documentos de distintos tipos, incluidos archivos de palabras, archivos de imágenes (por ejemplo, un archivo jpeg) y documentos PDF. El diseño del portafolio puede definirse en diferentes estilos, como *Cuadrícula con vista previa*, *En una imagen* o incluso *Girar*.
+Puede montar una cartera PDF mediante el JRE del ensamblador y la API de servicio Web. Un portafolio puede combinar varios documentos de distintos tipos, incluidos archivos de palabras, archivos de imágenes (por ejemplo, un archivo jpeg) y documentos PDF. El diseño del portafolio puede definirse en diferentes estilos, como *Cuadrícula con Previsualización*, *En una imagen* o incluso *Girar*.
 
 La siguiente ilustración es una captura de pantalla de un portafolio con el diseño *En un estilo de imagen* .
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
-La creación de una cartera PDF es una alternativa sin papel a la transmisión de una colección de documentos. Con AEM Forms, puede crear carteras invocando el servicio Ensamblador con un documento DDX estructurado. El siguiente documento DDX es un ejemplo de un documento DDX que crea una cartera PDF.
+La creación de una cartera PDF es una alternativa sin papel a la transmisión de una colección de documentos. Con AEM Forms puede crear carteras invocando el servicio Ensamblador con un documento DDX estructurado. El siguiente documento DDX es un ejemplo de un documento DDX que crea una cartera PDF.
 
-```as3
+```xml
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
      <PDF result="portfolio1.pdf">
          <Portfolio>
@@ -52,7 +55,7 @@ El documento DXX debe contener una `Portfolio` etiqueta con una `Navigator` etiq
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Compilador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de ensamblador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -65,7 +68,7 @@ Para crear una cartera PDF, realice las siguientes tareas:
 1. Incluir archivos de proyecto.
 1. Cree un cliente de ensamblador de PDF.
 1. Haga referencia a un documento DDX existente.
-1. Consulte los documentos requeridos.
+1. Haga referencia a los documentos necesarios.
 1. Configure las opciones de tiempo de ejecución.
 1. Monte el portafolio.
 1. Guarde el portafolio montado.
@@ -79,8 +82,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
+* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
 
 **Crear un cliente de ensamblador de PDF**
 
@@ -90,9 +93,9 @@ Antes de realizar una operación de ensamblador mediante programación, cree un 
 
 Se debe hacer referencia a un documento DDX para montar una cartera PDF. Este documento DDX debe contener los `Portfolio`elementos `Navigator` y `PackageFiles` .
 
-**Remitir los documentos requeridos**
+**Hacer referencia a los documentos requeridos**
 
-Para montar una cartera PDF, haga referencia a todos los archivos que representan los documentos que se van a ensamblar. Por ejemplo, pase todos los archivos de imagen especificados en el documento DDX al servicio Ensamblador. Tenga en cuenta que se hace referencia a estos archivos en el documento DDX especificado en esta sección: *myImage.png* y *saint_bernard.jpg*.
+Para montar una cartera PDF, haga referencia a todos los archivos que representan los documentos que se van a montar. Por ejemplo, pase todos los archivos de imagen especificados en el documento DDX al servicio Ensamblador. Tenga en cuenta que se hace referencia a estos archivos en el documento DDX especificado en esta sección: *myImage.png* y *saint_bernard.jpg*.
 
 Al montar una cartera PDF, pase un archivo NAV (un archivo de navegador) al servicio del ensamblador. El archivo NAV que se pasa al servicio de ensamblador depende del tipo de cartera PDF que se cree. Por ejemplo, para crear un diseño *En una imagen* , pase el archivo AdobeOnImage.nav. Puede localizar archivos NAV en la siguiente carpeta:
 
@@ -102,7 +105,7 @@ Copie el archivo NAV del directorio de instalación de Acrobat 9 (o posterior). 
 
 >[!NOTE]
 >
->Los inicios rápidos asociados a la agrupación de carteras PDF utilizan AdobeOnImage.nav.
+>Los inicios rápidos asociados con la agrupación de carteras PDF utilizan AdobeOnImage.nav.
 
 **Definición de opciones de tiempo de ejecución**
 
@@ -126,7 +129,7 @@ Una cartera PDF se devuelve dentro de un objeto de colección. Repita el objeto 
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Compilación de documentos PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[Compilación programada de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## Compilación de una cartera PDF mediante la API de Java {#assemble-a-pdf-portfolio-using-the-java-api}
 
@@ -146,12 +149,12 @@ Compilación de una cartera PDF mediante la API de servicio de ensamblador (Java
    * Cree un `java.io.FileInputStream` objeto que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
    * Cree un `com.adobe.idp.Document` objeto utilizando su constructor y pasando el `java.io.FileInputStream` objeto.
 
-1. Consulte los documentos requeridos.
+1. Haga referencia a los documentos necesarios.
 
    * Cree un `java.util.Map` objeto que se utilice para almacenar documentos PDF de entrada mediante un `HashMap` constructor.
-   * Cree un `java.io.FileInputStream` objeto con su constructor. Pase la ubicación del archivo NAV requerido (repita esta tarea para cada archivo necesario para crear un portafolio).
+   * Cree un `java.io.FileInputStream` objeto con su constructor. Pase la ubicación del archivo NAV requerido (repita esta tarea para cada archivo necesario para crear una cartera).
    * Cree un `com.adobe.idp.Document` objeto y pase el `java.io.FileInputStream` objeto que contiene el archivo NAV (repita esta tarea para cada archivo necesario para crear un portafolio).
-   * Agregue una entrada al `java.util.Map` objeto invocando su `put` método y pasando los siguientes argumentos:
+   * Añada una entrada al `java.util.Map` objeto invocando su `put` método y pasando los siguientes argumentos:
 
       * Un valor de cadena que representa el nombre de la clave. Este valor debe coincidir con el valor del elemento de origen especificado en el documento DDX. (repita esta tarea para cada archivo necesario para crear un portafolio).
       * Un `com.adobe.idp.Document` objeto que contiene el documento PDF. (repita esta tarea para cada archivo necesario para crear un portafolio).
@@ -168,6 +171,7 @@ Compilación de una cartera PDF mediante la API de servicio de ensamblador (Java
    * Un `com.adobe.idp.Document` objeto que representa el documento DDX que se va a utilizar
    * Un `java.util.Map` objeto que contiene los archivos necesarios para crear una cartera PDF.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones de tiempo de ejecución, incluyendo la fuente predeterminada y el nivel de registro de trabajos
+
    El `invokeDDX` método devuelve un `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contiene la cartera PDF y las excepciones que se hayan producido.
 
 1. Guarde el portafolio montado.
@@ -219,7 +223,7 @@ Monte una cartera PDF mediante la API de servicio de ensamblador (servicio Web):
    * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto. Pase la matriz de bytes, la posición inicial y la longitud del flujo para leerlos.
    * Rellene el `BLOB` objeto asignando su `MTOM` propiedad con el contenido de la matriz de bytes.
 
-1. Consulte los documentos requeridos.
+1. Haga referencia a los documentos necesarios.
 
    * Para cada archivo de entrada, cree un `BLOB` objeto utilizando su constructor. El `BLOB` objeto se utiliza para almacenar el archivo de entrada.
    * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo de entrada y el modo en que se abre el archivo.
@@ -230,7 +234,7 @@ Monte una cartera PDF mediante la API de servicio de ensamblador (servicio Web):
    * Para cada archivo de entrada, cree un `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto.
    * Asigne un valor de cadena que represente el nombre clave al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `key` objeto. Este valor debe coincidir con el valor del elemento especificado en el documento DDX. (Realice esta tarea para cada archivo de entrada).
    * Asigne el `BLOB` objeto que almacena el archivo de entrada al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `value` objeto. (Realice esta tarea para cada documento PDF de entrada).
-   * Agregue el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto al `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invoque el `MyMapOf_xsd_string_To_xsd_anyType` método del `Add` objeto y pase el `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Realice esta tarea para cada documento PDF de entrada).
+   * Añada el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto al `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invoque el `MyMapOf_xsd_string_To_xsd_anyType` método del `Add` objeto y pase el `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Realice esta tarea para cada documento PDF de entrada).
 
 1. Configure las opciones de tiempo de ejecución.
 
@@ -244,6 +248,7 @@ Monte una cartera PDF mediante la API de servicio de ensamblador (servicio Web):
    * Un `BLOB` objeto que representa el documento DDX
    * El `MyMapOf_xsd_string_To_xsd_anyType` objeto que contiene los archivos necesarios
    * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución
+
    El `invokeDDX` método devuelve un `AssemblerResult` objeto que contiene los resultados del trabajo y las excepciones que se hayan producido.
 
 1. Guarde el portafolio montado.
@@ -252,10 +257,10 @@ Monte una cartera PDF mediante la API de servicio de ensamblador (servicio Web):
 
    * Acceda al `AssemblerResult` campo del `documents` objeto, que es un `Map` objeto que contiene los documentos PDF resultantes.
    * Repita el `Map` objeto para obtener cada documento resultante. A continuación, convierta los miembros de la matriz `value` a un `BLOB`.
-   * Extraiga los datos binarios que representan el documento PDF accediendo a la propiedad del `BLOB` objeto `MTOM` . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
+   * Extraiga los datos binarios que representan el documento PDF accediendo a la propiedad de su `BLOB` objeto `MTOM` . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
