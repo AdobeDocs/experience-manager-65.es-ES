@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 0%
 
 ---
 
@@ -42,22 +45,22 @@ Para habilitar SSL, WebSphere necesita acceder a una cuenta de usuario en el reg
    >(Linux y Solaris) Para que funcione el registro de seguridad del sistema operativo local de WebSphere Application Server, debe existir un archivo de contraseña de sombra. El archivo de contraseña de sombra se denomina generalmente **/etc/Shadow** y se basa en el archivo /etc/passwd. Si el archivo de contraseña de sombra no existe, se producirá un error después de habilitar la seguridad global y configurar el registro de usuarios como sistema operativo local.
 
 1. Abra el archivo de grupo desde el directorio /etc en un editor de texto.
-1. Agregue al grupo el usuario que creó en el paso 2. `root`
+1. Añada al grupo el usuario que creó en el paso 2. `root`
 1. Guarde y cierre el archivo.
-1. (UNIX con SSL habilitado) Inicie y detenga WebSphere como usuario raíz.
+1. (UNIX con SSL habilitado) Inicio y detenga WebSphere como el usuario raíz.
 
 ### Crear un usuario de Windows para WebSphere {#create-a-windows-user-for-websphere}
 
 1. Inicie sesión en Windows con una cuenta de usuario de administrador.
-1. Seleccione **Inicio > Panel de control > Herramientas administrativas > Administración de equipos > Usuarios y grupos** locales.
+1. Seleccione **Inicio > Panel de control de Campaign > Herramientas administrativas > Administración de equipos > Usuarios y grupos** locales.
 1. Haga clic con el botón derecho en Usuarios y seleccione **Nuevo usuario**.
 1. Escriba un nombre de usuario y una contraseña en los cuadros correspondientes y escriba cualquier otra información que necesite en los cuadros restantes.
 1. Anule la selección de **Usuario debe cambiar la contraseña en el próximo inicio de sesión**, haga clic en **Crear** y, a continuación, haga clic en **Cerrar**.
-1. Haga clic en **Usuarios**, haga clic con el botón secundario en el usuario que acaba de crear y seleccione **Propiedades**.
-1. Haga clic en la ficha **Miembro** y, a continuación, haga clic en **Agregar**.
+1. Haga clic en **Usuarios**, haga clic con el botón derecho en el usuario que acaba de crear y seleccione **Propiedades**.
+1. Haga clic en la ficha **Miembro** y, a continuación, haga clic en **Añadir**.
 1. En el cuadro Escriba los nombres de los objetos que desea seleccionar, haga clic en Comprobar nombres para asegurarse de que el nombre del grupo es correcto. `Administrators`
 1. Haga clic en **Aceptar** y, a continuación, en **Aceptar** de nuevo.
-1. Seleccione **Inicio > Panel de control > Herramientas administrativas > Directiva de seguridad local > Directivas** locales.
+1. Seleccione **Inicio > Panel de control de Campaign > Herramientas administrativas > Directiva de seguridad local > Directivas** locales.
 1. Haga clic en Asignación de derechos de usuario y, a continuación, haga clic con el botón secundario en Accionar como parte del sistema operativo y seleccione Propiedades.
 1. Click **Add User or Group**.
 1. En el cuadro Escriba los nombres de los objetos que desea seleccionar, escriba el nombre del usuario que creó en el paso 4, haga clic en **Comprobar nombres** para asegurarse de que el nombre es correcto y, a continuación, haga clic en **Aceptar**.
@@ -68,14 +71,14 @@ Para habilitar SSL, WebSphere necesita acceder a una cuenta de usuario en el reg
 1. Asegúrese de que WebSphere se esté ejecutando.
 1. En la Consola administrativa de WebSphere, seleccione **Seguridad > Seguridad** global.
 1. En Seguridad administrativa, seleccione Funciones de usuario **administrativas**.
-1. Haga clic en Agregar y haga lo siguiente:
+1. Haga clic en Añadir y haga lo siguiente:
 
-   1. **Type**&amp;ast; en el cuadro de búsqueda y haga clic en buscar.
+   1. Type **&amp;ast;** en el cuadro de búsqueda y haga clic en buscar.
    1. Haga clic en **Administrador** en Funciones.
-   1. Agregue el usuario recién creado a Asignado a la función y asígnelo al administrador.
+   1. Añada el usuario recién creado a Asignado a la función y asígnelo al administrador.
 
 1. Click **OK** and save your changes.
-1. Reinicie el perfil de WebSphere.
+1. Reinicie el perfil WebSphere.
 
 ## Habilitar seguridad administrativa {#enable-administrative-security}
 
@@ -85,9 +88,9 @@ Para habilitar SSL, WebSphere necesita acceder a una cuenta de usuario en el reg
 1. Seleccione **Repositorios** federados y haga clic en **Siguiente**.
 1. Especifique las credenciales que desee configurar y haga clic en **Siguiente**.
 1. Click **Finish**.
-1. Reinicie el perfil de WebSphere.
+1. Reinicie el perfil WebSphere.
 
-   WebSphere comenzará a utilizar el almacén de claves y el almacén de confianza predeterminados.
+   WebSphere utilizará el inicio predeterminado del almacén de claves y el almacén de confianza.
 
 ## Habilitar SSL (clave personalizada y almacén de confianza) {#enable-ssl-custom-key-and-truststore}
 
@@ -104,7 +107,7 @@ Los almacenes de confianza y los almacenes de claves se pueden crear con la util
 1. Haga clic en Certificado **personal**.
 1. Si ya ha creado un almacén de claves con ikeyman, aparecerá el certificado. De lo contrario, deberá agregar un nuevo certificado con firma automática siguiendo estos pasos:
 
-   1. Seleccione **Crear > Certificado** con firma automática.
+   1. Select **Create > Self-signed Certificate**.
    1. Especifique los valores adecuados en el formulario de certificado. Asegúrese de mantener Alias y nombre común como nombre de dominio completo del equipo.
    1. Haga clic en **Aplicar**.
 
@@ -117,19 +120,19 @@ Los almacenes de confianza y los almacenes de claves se pueden crear con la util
 1. En Entrante, seleccione secundario directo de nodos.
 1. En Elementos relacionados, seleccione Configuraciones **** SSL.
 1. Seleccione **NodeDefaultSSLSeteo**.
-1. En las listas desplegables de nombre de almacén de confianza y nombre de almacén de claves, seleccione el almacén de confianza personalizado y el almacén de claves que ha creado.
+1. En las listas desplegables nombre del almacén de confianza y nombre del almacén de claves, seleccione el almacén de claves y el almacén de claves personalizados que ha creado.
 1. Haga clic en **Aplicar**.
 1. Guarde la configuración maestra.
-1. Reinicie el perfil de WebSphere.
+1. Reinicie el perfil WebSphere.
 
-   Su perfil ahora se ejecuta con la configuración SSL personalizada y su certificado.
+   El perfil ahora se ejecuta con la configuración SSL personalizada y el certificado.
 
 ## Activación de la compatibilidad con formularios nativos de AEM {#enabling-support-for-aem-forms-natives}
 
 1. En la Consola administrativa de WebSphere, seleccione **Seguridad > Seguridad** global.
 1. En la sección Autenticación, expanda la seguridad **de** RMI/IIOP y haga clic en Comunicaciones **entrantes de** CSIv2.
 1. Asegúrese de que la opción Compatible con **** SSL está seleccionada en la lista desplegable Transporte.
-1. Reinicie el perfil de WebSphere.
+1. Reinicie el perfil WebSphere.
 
 ## Configuración de WebSphere para convertir direcciones URL que empiecen por https {#configuring-websphere-to-convert-urls-that-begins-with-https}
 
@@ -139,7 +142,7 @@ Para convertir una dirección URL que empiece por https, agregue un certificado 
 
 1. Asegúrese de que WebSphere se esté ejecutando.
 1. En la Consola administrativa de WebSphere, vaya a los certificados Firmante y, a continuación, haga clic en Seguridad > Administración de certificados SSL y claves > Almacenes y certificados clave > NodeDefaultTrustStore > Certificados firmantes.
-1. Haga clic en Recuperar del puerto y realice las siguientes tareas:
+1. Haga clic en Recuperar del puerto y realice estas tareas:
 
    * En el cuadro Host, escriba la dirección URL. For example, type `www.paypal.com`.
    * En el cuadro Puerto, escriba `443`. Este puerto es el puerto SSL predeterminado.
@@ -175,7 +178,7 @@ Realice los siguientes pasos para establecer que el puerto sea dinámico y resol
 1. Abra el `[aem-forms_root]`archivo \crx-repository\launchpad\sling.properties para editarlo.
 1. Busque la `sling.bootdelegation.ibm` propiedad y añádala `com.ibm.websphere.ssl.*`a su campo de valor. El campo actualizado tiene el siguiente aspecto:
 
-   ```as3
+   ```java
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
