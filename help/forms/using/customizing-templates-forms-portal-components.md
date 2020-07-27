@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +46,7 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
       * Sección Borradores: /libs/fd/fp/DraftTemplate
       * Sección de Envíos: /libs/fd/fp/submitTemplate
    * Componente de vínculo: /libs/fd/fp/linkTemplate
+
    Añada un título que desee que se muestre al seleccionar plantillas de diseño.
 
    >[!NOTE]
@@ -59,7 +63,7 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
 
 A continuación se muestra una implementación de muestra de una plantilla personalizada en la que Forms Portal adquiere un diseño de tarjeta de gobierno de Geometrixx personalizado para el componente Buscar y listar.
 
-```mxml
+```xml
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
