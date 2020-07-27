@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1831'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ donde &lt;*install directory*> es la ruta de instalación. Para la aplicación c
 
 Para acceder al diseño de formulario Purchase Order Dynamic.xdp, especifique `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` como nombre de formulario (el primer parámetro que se pasa al `renderPDFForm` método) y `repository:///` como valor de URI raíz de contenido.
 
-Los archivos de datos XML utilizados por la aplicación web se movieron de la carpeta Data a `C:\Adobe`(el sistema de archivos que pertenece al servidor de aplicaciones J2EE que aloja AEM Forms). Los nombres de archivo son Purchase Order *Canada.xml* y Purchase Order *US.xml*.
+Los archivos de datos XML utilizados por la aplicación web se movieron de la carpeta Data a `C:\Adobe`(el sistema de archivos que pertenece al servidor de aplicaciones J2EE con AEM Forms). Los nombres de archivo son Purchase Order *Canada.xml* y Purchase Order *US.xml*.
 
 >[!NOTE]
 >
@@ -75,7 +78,7 @@ Para crear aplicaciones basadas en Web que procesen formularios basados en fragm
 
 >[!NOTE]
 >
->Algunos de estos pasos dependen de la aplicación J2EE en la que se implementa AEM Forms. Por ejemplo, el método que utilice para implementar un archivo WAR depende del servidor de aplicaciones J2EE que utilice. En esta sección se asume que AEM Forms se implementa en JBoss®.
+>Algunos de estos pasos dependen de la aplicación J2EE en la que se implementan los AEM Forms. Por ejemplo, el método que utilice para implementar un archivo WAR depende del servidor de aplicaciones J2EE que utilice. Esta sección supone que los AEM Forms se implementan en JBoss®.
 
 ### Creación de un proyecto web {#creating-a-web-project}
 
@@ -88,7 +91,7 @@ La siguiente lista especifica los archivos JAR que debe agregar al proyecto web:
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
 
-Para ver la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+Para ver la ubicación de estos archivos JAR, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 
 **Para crear un proyecto web:**
 
@@ -122,7 +125,7 @@ Para ver la ubicación de estos archivos JAR, consulte [Inclusión de archivos](
 
 Puede crear una lógica de aplicación Java que invoque el servicio Forms desde el servlet Java. El código siguiente muestra la sintaxis del `RenderFormFragment` Servlet Java:
 
-```as3
+```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -139,7 +142,7 @@ Normalmente, no se coloca el código de cliente dentro de un `doGet` `doPost` m�
 
 Para procesar un formulario basado en fragmentos con la API de servicio de Forms, lleve a cabo las siguientes tareas:
 
-1. Incluya archivos JAR de cliente, como adobe-forms-client.jar, en la ruta de clases del proyecto Java. Para obtener información sobre la ubicación de estos archivos, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+1. Incluya archivos JAR de cliente, como adobe-forms-client.jar, en la ruta de clases del proyecto Java. Para obtener información sobre la ubicación de estos archivos, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java para AEM Forms.
 1. Recupere el valor del botón de opción que se envía desde el formulario HTML y especifica si se deben utilizar datos estadounidenses o canadienses. Si se envía American, cree un `com.adobe.idp.Document` que almacene los datos ubicados en el archivo US.xml *de la orden de* compra. Del mismo modo, si es canadiense, cree un archivo `com.adobe.idp.Document` que almacene datos ubicados en el archivo *Purchase Order Canada.xml* .
 1. Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
 1. Cree un `FormsServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
@@ -151,9 +154,10 @@ Para procesar un formulario basado en fragmentos con la API de servicio de Forms
 
    * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo.
    * Un `com.adobe.idp.Document` objeto que contiene datos para combinar con el formulario (creado en el paso 2).
-   * Un `PDFFormRenderSpec` objeto que almacena opciones de tiempo de ejecución. Para obtener más información, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Un `PDFFormRenderSpec` objeto que almacena opciones de tiempo de ejecución. Para obtener más información, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Un `URLSpec` objeto que contiene valores URI que el servicio Forms requiere para procesar un formulario basado en fragmentos.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
    El `renderPDFForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Cree un `com.adobe.idp.Document` objeto invocando el `FormsResult` método ‘s `getOutputContent` .
@@ -166,7 +170,7 @@ Para procesar un formulario basado en fragmentos con la API de servicio de Forms
 
 El siguiente ejemplo de código representa el servlet Java que invoca el servicio Forms y procesa un formulario basado en fragmentos.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -307,7 +311,7 @@ La página web index.html proporciona un punto de entrada al servlet Java e invo
 
 El servlet Java captura los datos que se anuncian desde la página HTML mediante el siguiente código Java:
 
-```as3
+```java
              Document oInputData = null;
  
              //Get the value of selected radio button
@@ -327,7 +331,7 @@ El servlet Java captura los datos que se anuncian desde la página HTML mediante
 
 El siguiente código HTML se encuentra en el archivo index.html que se creó durante la configuración del entorno de desarrollo. (Consulte [Creación de un proyecto](/help/forms/developing/rendering-forms.md#creating-a-web-project)web).
 
-```as3
+```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="https://www.w3.org/1999/xhtml">
  <head>
@@ -379,7 +383,7 @@ Para implementar el servlet Java que invoca el servicio Forms, empaquete la apli
 
 ### Implementación del archivo WAR en el servidor de aplicaciones J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
-Puede implementar el archivo WAR en el servidor de aplicaciones J2EE en el que se implementa AEM Forms. Una vez implementado el archivo WAR, puede acceder a la página web HTML mediante un navegador web.
+Puede implementar el archivo WAR en el servidor de aplicaciones J2EE en el que se implementan AEM Forms. Una vez implementado el archivo WAR, puede acceder a la página web HTML mediante un navegador web.
 
 **Para implementar el archivo WAR en el servidor de aplicaciones J2EE:**
 
@@ -387,7 +391,7 @@ Puede implementar el archivo WAR en el servidor de aplicaciones J2EE en el que s
 
 ### Prueba de la aplicación web {#testing-your-web-application}
 
-Después de implementar la aplicación web, puede probarla con un navegador web. Si utiliza el mismo equipo que aloja AEM Forms, puede especificar la siguiente URL:
+Después de implementar la aplicación web, puede probarla con un navegador web. Si está utilizando el mismo equipo que aloja AEM Forms, puede especificar la siguiente URL:
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
