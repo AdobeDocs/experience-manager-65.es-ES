@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 9f3129aff8a3e389231b0fe0973794e5d34480a0
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '4108'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +35,9 @@ Para procesar un formulario como HTML, el diseño de formulario debe guardarse c
 
 ## Páginas HTML {#html-pages}
 
-Cuando un diseño de formulario se procesa como un formulario HTML, cada subformulario de segundo nivel se procesa como una página HTML (panel). Puede ver la jerarquía de un subformulario en Designer. Los subformularios secundarios que pertenecen al subformulario raíz (el nombre predeterminado de un subformulario raíz es formulario1) son los subformularios del panel. El ejemplo siguiente muestra los subformularios de un diseño de formulario.
+Cuando un diseño de formulario se procesa como un formulario HTML, cada subformulario de segundo nivel se procesa como una página HTML (panel). Puede vista de la jerarquía de un subformulario en Designer. Los subformularios secundarios que pertenecen al subformulario raíz (el nombre predeterminado de un subformulario raíz es formulario1) son los subformularios del panel. El ejemplo siguiente muestra los subformularios de un diseño de formulario.
 
-```as3
+```java
      form1
          Master Pages
          PanelSubform1
@@ -76,17 +79,17 @@ Debe moverse explícitamente de un panel a otro utilizando los `xfa.host.pageUp`
 
 ## Ejecución de secuencias de comandos {#running-scripts}
 
-Un autor de formulario especifica si una secuencia de comandos se ejecuta en el servidor o en el cliente. El servicio Forms crea un entorno de procesamiento de sucesos distribuido para la ejecución de la inteligencia de formularios que se puede distribuir entre el cliente y el servidor mediante el uso del `runAt` atributo . Para obtener información sobre este atributo o la creación de secuencias de comandos en diseños de formulario, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+Un autor de formulario especifica si una secuencia de comandos se ejecuta en el servidor o en el cliente. El servicio Forms crea un entorno de procesamiento de evento distribuido para la ejecución de la inteligencia de formularios que se puede distribuir entre el cliente y el servidor mediante el uso del `runAt` atributo . Para obtener información sobre este atributo o la creación de secuencias de comandos en diseños de formulario, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-El servicio Forms puede ejecutar secuencias de comandos mientras se procesa el formulario. Como resultado, puede rellenar previamente un formulario con datos conectándose a una base de datos o a servicios Web que pueden no estar disponibles en el cliente. También puede configurar un evento de botón para que se ejecute en el servidor de modo que el cliente pueda remitir los datos del viaje al servidor. `Click` Esto permite al cliente ejecutar secuencias de comandos que pueden requerir recursos del servidor, como una base de datos empresarial, mientras el usuario interactúa con un formulario. Para los formularios HTML, las secuencias de comandos de formato solo se pueden ejecutar en el servidor. Como resultado, debe marcar estas secuencias de comandos para que se ejecuten en `server` o `both`.
+El servicio Forms puede ejecutar secuencias de comandos mientras se procesa el formulario. Como resultado, puede rellenar previamente un formulario con datos conectándose a una base de datos o a servicios Web que pueden no estar disponibles en el cliente. También puede configurar el evento de un botón para que se ejecute en el servidor de modo que el cliente redondee los datos del viaje al servidor. `Click` Esto permite al cliente ejecutar secuencias de comandos que pueden requerir recursos del servidor, como una base de datos empresarial, mientras el usuario interactúa con un formulario. Para los formularios HTML, las secuencias de comandos de formato solo se pueden ejecutar en el servidor. Como resultado, debe marcar estas secuencias de comandos para que se ejecuten en `server` o `both`.
 
-Puede diseñar formularios que se desplacen entre páginas (paneles) llamando `xfa.host.pageUp` y `xfa.host.pageDown` utilizando métodos. Esta secuencia de comandos se coloca en el `Click` suceso de un botón y el `runAt` atributo se establece en `Both`. El motivo que elija `Both` es que Adobe Reader o Acrobat (en el caso de los formularios procesados como PDF) puedan cambiar las páginas sin ir al servidor y los formularios HTML puedan cambiar las páginas recortando los datos al servidor. Es decir, se envía un formulario al servicio Forms y se devuelve un formulario como HTML con la nueva página mostrada.
+Puede diseñar formularios que se desplacen entre páginas (paneles) llamando `xfa.host.pageUp` y `xfa.host.pageDown` utilizando métodos. Esta secuencia de comandos se coloca en el `Click` evento de un botón y el `runAt` atributo se establece en `Both`. El motivo que elija `Both` es que Adobe Reader o Acrobat (en el caso de los formularios procesados como PDF) puedan cambiar las páginas sin ir al servidor y los formularios HTML puedan cambiar las páginas recortando los datos al servidor. Es decir, se envía un formulario al servicio Forms y se devuelve un formulario como HTML con la nueva página mostrada.
 
 Se recomienda no asignar a las variables de secuencia de comandos y a los campos de formulario los mismos nombres, como item. Es posible que algunos exploradores Web, como Internet Explorer, no inicialicen una variable con el mismo nombre que un campo de formulario que produzca un error de secuencia de comandos. Se recomienda asignar nombres diferentes a los campos de formulario y a las variables de secuencia de comandos.
 
-Al procesar formularios HTML que contengan tanto la funcionalidad de navegación de página como secuencias de comandos de formulario (por ejemplo, supongamos que una secuencia de comandos recupera datos de campo de una base de datos cada vez que se procesa el formulario), asegúrese de que la secuencia de comandos de formulario se encuentra en el suceso form:calculate en lugar de en el suceso form:readyevent.
+Al procesar formularios HTML que contengan tanto la funcionalidad de navegación de página como secuencias de comandos de formulario (por ejemplo, supongamos que una secuencia de comandos recupera datos de campo de una base de datos cada vez que se procesa el formulario), asegúrese de que la secuencia de comandos de formulario se encuentra en el evento form:calculate en lugar en el suceso form:readyevent.
 
-Las secuencias de comandos de formulario que se encuentran en el suceso form:ready se ejecutan una sola vez durante la representación inicial del formulario y no se ejecutan para posteriores recuperaciones de página. Por el contrario, el suceso form:calculate se ejecuta para cada navegación de página en la que se procesa el formulario.
+Las secuencias de comandos de formulario que se encuentran en el evento form:ready se ejecutan una sola vez durante la representación inicial del formulario y no se ejecutan para posteriores recuperaciones de página. Por el contrario, el evento form:calculate se ejecuta para cada navegación de página en la que se procesa el formulario.
 
 >[!NOTE]
 En un formulario de varias páginas, los cambios realizados por JavaScript en una página no se conservan si se mueve a otra página.
@@ -99,11 +102,11 @@ Cuando formserver procesa un XDP que contiene una lista desplegable, además de 
 
 Puede deshabilitar estos elementos de entrada de la siguiente manera si no desea publicar los datos. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
-```as3
+```java
 header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]
 ```
 
-```as3
+```java
 var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
     function _user_onsubmit() {
     var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]");
@@ -115,7 +118,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 ## Subconjuntos XFA {#xfa-subsets}
 
-Al crear diseños de formulario para procesarlos como HTML, debe restringir la secuencia de comandos al subconjunto XFA para las secuencias de comandos en lenguaje javascript.
+Al crear diseños de formulario para procesarlos como HTML, debe restringir la secuencia de comandos al subconjunto XFA para las secuencias de comandos en lenguaje JavaScript.
 
 Las secuencias de comandos que se ejecutan en el cliente o en el cliente y en el servidor deben escribirse en el subconjunto XFA. Las secuencias de comandos que se ejecutan en el servidor pueden utilizar el modelo completo de secuencias de comandos XFA y también FormCalc. Para obtener información sobre el uso de JavaScript, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
@@ -123,11 +126,11 @@ Cuando se ejecutan secuencias de comandos en el cliente, sólo el panel actual q
 
 También debe tener cuidado al utilizar expresiones del Modelo de objetos de secuencias de comandos (SOM) en secuencias de comandos que se ejecutan en el cliente. Solo un subconjunto simplificado de expresiones SOM se admite en las secuencias de comandos que se ejecutan en el cliente.
 
-## Temporización del evento {#event-timing}
+## Temporización del Evento {#event-timing}
 
-El subconjunto XFA define los eventos XFA asignados a eventos HTML. Hay una ligera diferencia de comportamiento en el tiempo de los sucesos calculate y validate. En un explorador Web, se ejecuta un suceso de cálculo completo al salir de un campo. Los eventos de cálculo no se ejecutan automáticamente cuando se realiza un cambio en un valor de campo. Puede forzar un suceso calculate llamando al `xfa.form.execCalculate` método .
+El subconjunto XFA define los eventos XFA asignados a eventos HTML. Hay una ligera diferencia de comportamiento en el tiempo de cálculo y validación de eventos. En un navegador web, se ejecuta un evento de cálculo completo al salir de un campo. Los eventos de cálculo no se ejecutan automáticamente cuando se realiza un cambio en un valor de campo. Puede forzar un evento de cálculo llamando al `xfa.form.execCalculate` método .
 
-En un navegador web, los sucesos de validación solo se ejecutan al salir de un campo o al enviar un formulario. Puede forzar un evento validate mediante el `xfa.form.execValidate` método .
+En un navegador web, las eventos de validación solo se ejecutan al salir de un campo o al enviar un formulario. Puede forzar un evento de validación mediante el `xfa.form.execValidate` método .
 
 Los formularios que se muestran en un navegador web (a diferencia de Adobe Reader o Acrobat) se ajustan a la prueba de nulo XFA (errores o advertencias) para los campos obligatorios.
 
@@ -138,7 +141,7 @@ Para obtener más información sobre una prueba nula, consulte [Forms Designer](
 
 ## Botones de formulario {#form-buttons}
 
-Al hacer clic en un botón de envío, se envían datos de formulario al servicio Forms y se representa el final del procesamiento del formulario. El `preSubmit` evento se puede configurar para ejecutarse en el cliente o el servidor. El `preSubmit` suceso se ejecuta antes del envío del formulario si está configurado para ejecutarse en el cliente. De lo contrario, el `preSubmit` suceso se ejecuta en el servidor durante el envío del formulario. Para obtener más información sobre el `preSubmit` suceso, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Al hacer clic en un botón de envío, se envían datos de formulario al servicio Forms y se representa el final del procesamiento del formulario. El `preSubmit` evento se puede configurar para ejecutarse en el cliente o el servidor. El `preSubmit` evento se ejecuta antes del envío del formulario si está configurado para ejecutarse en el cliente. De lo contrario, el `preSubmit` evento se ejecuta en el servidor durante el envío del formulario. Para obtener más información sobre el `preSubmit` evento, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Si un botón no tiene ninguna secuencia de comandos del lado del cliente asociada, los datos se envían al servidor, los cálculos se realizan en el servidor y se regenera el formulario HTML. Si un botón contiene una secuencia de comandos del lado del cliente, los datos no se envían al servidor y la secuencia de comandos del lado del cliente se ejecuta en el explorador Web.
 
@@ -146,15 +149,15 @@ Si un botón no tiene ninguna secuencia de comandos del lado del cliente asociad
 
 Un navegador web que solo admite HTML 4.0 no puede admitir el modelo de secuencias de comandos de cliente de subconjunto XFA. Cuando se crea un diseño de formulario para que funcione tanto en HTML 4.0 como en MSDHTML o CSS2HTML, una secuencia de comandos marcada para ejecutarse en el cliente se ejecutará realmente en el servidor. Por ejemplo, supongamos que un usuario hace clic en un botón que se encuentra en un formulario mostrado en un explorador Web HTML 4.0. En este caso, los datos del formulario se envían al servidor en el que se ejecuta la secuencia de comandos del lado del cliente.
 
-Se recomienda colocar la lógica del formulario en los sucesos calculate, que se ejecutan en el servidor en HTML 4.0 y en el cliente para MSDHTML o CSS2HTML.
+Se recomienda colocar la lógica del formulario en eventos de cálculo, que se ejecutan en el servidor en HTML 4.0 y en el cliente para MSDHTML o CSS2HTML.
 
 ## Mantenimiento de los cambios de presentación {#maintaining-presentation-changes}
 
-A medida que se desplaza entre páginas HTML (paneles), solo se mantiene el estado de los datos. La configuración, como el color de fondo o la configuración de campo obligatoria, no se mantiene (si es diferente a la configuración inicial). Para mantener el estado de presentación, debe crear campos (normalmente ocultos) que representen el estado de presentación de los campos. Si agrega una secuencia de comandos al `Calculate` suceso de un campo que cambia la presentación en función de valores de campo ocultos, podrá conservar el estado de la presentación a medida que avanza y retrocede entre páginas HTML (paneles).
+A medida que se desplaza entre páginas HTML (paneles), solo se mantiene el estado de los datos. La configuración, como el color de fondo o la configuración de campo obligatoria, no se mantiene (si es diferente a la configuración inicial). Para mantener el estado de presentación, debe crear campos (normalmente ocultos) que representen el estado de presentación de los campos. Si agrega una secuencia de comandos al `Calculate` evento de un campo que cambia la presentación en función de los valores de campo ocultos, podrá conservar el estado de la presentación a medida que avanza y avanza entre páginas HTML (paneles).
 
-La siguiente secuencia de comandos mantiene el valor `fillColor` de un campo en función del valor de `hiddenField`. Supongamos que esta secuencia de comandos se encuentra en el `Calculate` suceso de un campo.
+La siguiente secuencia de comandos mantiene el valor `fillColor` de un campo en función del valor de `hiddenField`. Supongamos que esta secuencia de comandos se encuentra en el `Calculate` evento de un campo.
 
-```as3
+```java
      If (hiddenField.rawValue == 1)
          this.fillColor = "255,0,0"
      else
@@ -173,7 +176,7 @@ No se puede firmar un formulario HTML que contenga un campo de firma digital si 
 * StaticHTML
 * NoScriptXHTML
 
-Para obtener información sobre la firma digital de un documento, consulte Firma [digital y certificación de documentos](/help/forms/developing/digitally-signing-certifying-documents.md)
+Para obtener información sobre la firma digital de un documento, consulte Firma [digital y certificación de Documentos](/help/forms/developing/digitally-signing-certifying-documents.md)
 
 ## Representación de un formulario XHTML compatible con las directrices de accesibilidad {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
@@ -188,7 +191,7 @@ Para obtener más información sobre el servicio Forms, consulte Referencia de [
 
 ## Resumen de los pasos {#summary-of-steps}
 
-Para procesar un formulario HTML, realice los siguientes pasos:
+Para procesar un formulario HTML, lleve a cabo los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Cree un objeto de API de Forms Client.
@@ -214,9 +217,9 @@ Las opciones de tiempo de ejecución HTML se definen al procesar un formulario H
 
 Cuando aparece una barra de herramientas HTML en un formulario HTML, el usuario puede seleccionar un máximo de diez archivos para enviarlos junto con los datos del formulario. Una vez enviados los archivos, el servicio Forms puede recuperarlos.
 
-Al procesar un formulario como HTML, puede especificar un valor de usuario-agente. Un valor user-agent proporciona información del explorador y del sistema. Es un valor opcional y puede pasar un valor de cadena vacío. El procesamiento de un formulario HTML mediante el inicio rápido de la API de Java muestra cómo obtener un valor de agente de usuario y utilizarlo para procesar un formulario como HTML.
+Al procesar un formulario como HTML, puede especificar un valor de usuario-agente. Un valor user-agent proporciona información del explorador y del sistema. Es un valor opcional y puede pasar un valor de cadena vacío. El inicio rápido Representar un formulario HTML mediante la API de Java muestra cómo obtener un valor de agente de usuario y utilizarlo para procesar un formulario como HTML.
 
-Las direcciones URL HTTP en las que se publican los datos del formulario se pueden especificar estableciendo la dirección URL de destino mediante la API del cliente de servicios de formulario o se pueden especificar en el botón Enviar contenido en el diseño de formulario XDP. Si la dirección URL de destino se especifica en el diseño de formulario, no defina un valor mediante la API del cliente de Forms Service.
+Las direcciones URL HTTP en las que se publican los datos del formulario se pueden especificar estableciendo la dirección URL del destinatario mediante la API del cliente de Forms Service o se pueden especificar en el botón Enviar contenido en el diseño de formulario XDP. Si la URL de destinatario se especifica en el diseño de formulario, no defina un valor mediante la API de cliente de Forms Service.
 
 >[!NOTE]
 Representar un formulario HTML con una barra de herramientas es opcional.
@@ -244,13 +247,13 @@ Cuando el servicio Forms procesa un formulario HTML, devuelve una secuencia de d
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Representación de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Representación de formularios HTML con barras de herramientas personalizadas](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Representar un formulario como HTML mediante la API de Java {#render-a-form-as-html-using-the-java-api}
 
@@ -271,8 +274,9 @@ Representar un formulario HTML mediante la API de Forms (Java):
    * Para procesar un formulario HTML con una barra de herramientas, invoque el `HTMLRenderSpec` método del `setHTMLToolbar` objeto y pase un valor `HTMLToolbar` enum. Por ejemplo, para mostrar una barra de herramientas HTML vertical, pase `HTMLToolbar.Vertical`.
    * Para establecer el valor de configuración regional del formulario HTML, invoque el `HTMLRenderSpec` método del `setLocale` objeto y pase un valor de cadena que especifique el valor de configuración regional. (Esta es una configuración opcional).
    * Para procesar el formulario HTML con etiquetas HTML completas, invoque el `HTMLRenderSpec` método `setOutputType` del objeto y pase `OutputType.FullHTMLTags`. (Esta es una configuración opcional).
+
    >[!NOTE]
-   Los formularios no se procesan correctamente en HTML cuando la `StandAlone` opción está activada `true` y la `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el `ApplicationWebRoot` valor se especifica utilizando el `URLSpec` objeto que se pasa al `FormsServiceClient` método `(Deprecated) renderHTMLForm` del objeto). Cuando `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI raíz web en la consola de administración debe establecerse como el valor URI de la aplicación web del formulario. Para ello, inicie sesión en la consola de administración, haga clic en Servicios > Formularios y defina el URI de raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
+   Los formularios no se procesan correctamente en HTML cuando la `StandAlone` opción es `true` y la `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el `ApplicationWebRoot` valor se especifica utilizando el `URLSpec` objeto que se pasa al `FormsServiceClient` método del `(Deprecated) renderHTMLForm` objeto). Cuando `ApplicationWebRoot` es otro servidor del AEM Forms que aloja, el valor del URI de raíz web en la consola de administración debe establecerse como el valor URI de la aplicación web del formulario. Para ello, inicie sesión en la consola de administración, haga clic en Servicios > Formularios y defina el URI de raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
 
 1. Representar un formulario HTML
 
@@ -285,6 +289,7 @@ Representar un formulario HTML mediante la API de Forms (Java):
    * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Un `URLSpec` objeto que almacena valores URI necesarios para procesar un formulario HTML.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
    El `(Deprecated) renderHTMLForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se puede escribir en el navegador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -324,10 +329,11 @@ Representar un formulario HTML mediante la API de Forms (servicio web):
 
    * Cree un `HTMLRenderSpec` objeto con su constructor.
    * Para procesar un formulario HTML con una barra de herramientas, invoque el `HTMLRenderSpec` método del `setHTMLToolbar` objeto y pase un valor `HTMLToolbar` enum. Por ejemplo, para mostrar una barra de herramientas HTML vertical, pase `HTMLToolbar.Vertical`.
-   * Para establecer el valor de configuración regional del formulario HTML, invoque el `HTMLRenderSpec` método del `setLocale` objeto y pase un valor de cadena que especifique el valor de configuración regional. Para obtener más información, consulte [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Para establecer el valor de configuración regional del formulario HTML, invoque el `HTMLRenderSpec` método del `setLocale` objeto y pase un valor de cadena que especifique el valor de configuración regional. Para obtener más información, consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Para procesar el formulario HTML con etiquetas HTML completas, invoque el `HTMLRenderSpec` método `setOutputType` del objeto y pase `OutputType.FullHTMLTags`.
+
    >[!NOTE]
-   Los formularios no se procesan correctamente en HTML cuando la `StandAlone` opción está activada `true` y la `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el `ApplicationWebRoot` valor se especifica utilizando el `URLSpec` objeto que se pasa al `FormsServiceClient` método `(Deprecated) renderHTMLForm` del objeto). Cuando `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI raíz web en la consola de administración debe establecerse como el valor URI de la aplicación web del formulario. Para ello, inicie sesión en la consola de administración, haga clic en Servicios > Formularios y defina el URI de raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
+   Los formularios no se procesan correctamente en HTML cuando la `StandAlone` opción es `true` y la `ApplicationWebRoot` hace referencia a un servidor que no sea el servidor de aplicaciones J2EE que aloja AEM Forms (el `ApplicationWebRoot` valor se especifica utilizando el `URLSpec` objeto que se pasa al `FormsServiceClient` método del `(Deprecated) renderHTMLForm` objeto). Cuando `ApplicationWebRoot` es otro servidor del AEM Forms que aloja, el valor del URI de raíz web en la consola de administración debe establecerse como el valor URI de la aplicación web del formulario. Para ello, inicie sesión en la consola de administración, haga clic en Servicios > Formularios y defina el URI de raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
 
 1. Representar un formulario HTML
 
@@ -346,6 +352,7 @@ Representar un formulario HTML mediante la API de Forms (servicio web):
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método . Este argumento almacenará el valor de configuración regional.
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método . Este argumento almacenará el valor de representación HTML que se utiliza.
    * Un `com.adobe.idp.services.holders.FormsResultHolder` objeto vacío que contendrá los resultados de esta operación.
+
    El `(Deprecated) renderHTMLForm` método rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -362,5 +369,5 @@ Representar un formulario HTML mediante la API de Forms (servicio web):
 
 [Representación de formularios como HTML](#rendering-forms-as-html)
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
