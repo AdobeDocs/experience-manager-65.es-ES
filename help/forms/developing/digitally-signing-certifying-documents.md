@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '16977'
 ht-degree: 0%
@@ -472,7 +472,7 @@ Modifique un campo de firma mediante la API de firma (Java):
 
    * El `com.adobe.idp.Document` objeto que almacena el documento PDF que contiene el campo de firma que se va a modificar
    * Un valor de cadena que especifica el nombre del campo de firma
-   * El `PDFSignatureFieldProperties` objeto que almacena información del diccionario de bloqueo de campos de firma y del diccionario de valores de raíz
+   * El `PDFSignatureFieldProperties` objeto que almacena la información del diccionario de bloqueo de campos de firma y del diccionario de valores de raíz
 
    El `modifySignatureField` método devuelve un `com.adobe.idp.Document` objeto que almacena un documento PDF que contiene el campo de firma modificado.
 
@@ -589,8 +589,8 @@ Cuando se utiliza una credencial nShield HSM de Cipher para firmar o certificar 
 
 Puede agregar el siguiente valor de configuración en el archivo cknfastrc, que se encuentra en /opt/nfast/cknfastrc (o c:\nfast\cknfastrc):
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Después de agregar este valor de configuración al archivo cknfastrc, la nueva credencial se puede utilizar sin reiniciar el servidor de aplicaciones J2EE.
@@ -1077,8 +1077,8 @@ Puede certificar documentos PDF mediante programación mediante la API de Java d
 
 Puede agregar el siguiente valor de configuración en el archivo cknfastrc, que se encuentra en /opt/nfast/cknfastrc (o c:\nfast\cknfastrc):
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Después de agregar este valor de configuración al archivo cknfastrc, la nueva credencial se puede utilizar sin reiniciar el servidor de aplicaciones J2EE.
