@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
 ## Procedimiento para rellenar dinámicamente listas desplegables {#procedure-to-dynamically-populate-drop-down-lists}
 
-Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en función de un valor que seleccione en la lista desplegable **País** . Si selecciona Australia en la lista desplegable **País** , la lista desplegable **Estado** muestra los estados dentro de Australia. El siguiente procedimiento describe cómo realizar esta tarea.
+Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en función de un valor que seleccione en la lista desplegable **País** . Si selecciona Australia en la lista desplegable **País** , la lista desplegable **Estado** muestra los estados dentro de Australia. El siguiente procedimiento describe cómo llevar a cabo esta tarea.
 
 1. Cree un proyecto con los siguientes módulos:
 
@@ -149,13 +152,13 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
    ![Creación de un nodo desplegable](assets/dropdown-node.png)
 
 1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/). Implemente el mismo archivo en el servidor.
-1. Cree un formulario adaptable y agregue dos listas desplegables: País y Estado. La lista de países puede incluir los nombres de los países. La lista Estado puede rellenar dinámicamente los nombres de los estados del país seleccionado en la primera lista.
+1. Cree un formulario adaptable y agregue dos listas desplegables: País y Estado. La lista puede incluir los nombres de los países. La lista de estado puede rellenar dinámicamente los nombres de estados del país seleccionado en la primera lista.
 
-   Agregue los nombres de los países para mostrarlos en la lista País. En la lista Estado, agregue una secuencia de comandos para rellenarla en función del nombre del país en la lista País.
+   Añada los nombres de los países para mostrarlos en la lista del país. En la lista de Estado, agregue una secuencia de comandos para rellenarla en función del nombre del país en la lista de país.
 
-   ![Adición de nombres](assets/country-dropdown.png) de países ![Adición de una secuencia de comandos para rellenar los nombres](assets/state-dropdown.png) de estado Las listas desplegables ![País y Estado se reúnen](assets/2dropdowns.png)
+   ![Añadir nombres](assets/country-dropdown.png) de países ![Añadiendo secuencia de comandos para rellenar nombres](assets/state-dropdown.png) de estado listas desplegables ![País y Estado para reunir](assets/2dropdowns.png)
 
-   ```
+   ```javascript
    JSON.parse(
        $.ajax({
            url: "/apps/myfolder/demo/dropdown",
