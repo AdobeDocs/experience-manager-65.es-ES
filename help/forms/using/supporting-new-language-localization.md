@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables
 seo-title: Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables
-description: AEM Forms permite añadir nuevas configuraciones regionales para localizar formularios adaptables. Las configuraciones regionales admitidas de forma predeterminada son inglés, francés, alemán y japonés.
-seo-description: AEM Forms permite añadir nuevas configuraciones regionales para localizar formularios adaptables. Las configuraciones regionales admitidas de forma predeterminada son inglés, francés, alemán y japonés.
+description: AEM Forms le permite agregar nuevas configuraciones regionales para localizar formularios adaptables. Las configuraciones regionales admitidas de forma predeterminada son inglés, francés, alemán y japonés.
+seo-description: AEM Forms le permite agregar nuevas configuraciones regionales para localizar formularios adaptables. Las configuraciones regionales admitidas de forma predeterminada son inglés, francés, alemán y japonés.
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,8 @@ La localización de formularios adaptables se basa en dos tipos de diccionarios 
 
 Cuando se procesa un formulario adaptable, identifica la configuración regional solicitada observando los siguientes parámetros en el orden especificado:
 
-* Parámetro de solicitud `afAcceptLang`Para anular la configuración regional del navegador de los usuarios, puede pasar el parámetro de solicitud `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa:
+* Parámetro de solicitud `afAcceptLang`Para anular la configuración regional del navegador de los usuarios, puede pasar la variable 
+`afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa:
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * Configuración regional del explorador establecida para el usuario, que se especifica en la solicitud mediante el `Accept-Language` encabezado.
@@ -42,7 +46,7 @@ Si no existe una biblioteca de cliente para la configuración regional solicitad
 
 ## Añadir compatibilidad con localizaciones para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
-Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR).
+Actualmente, los AEM Forms admiten la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR).
 
 Para añadir compatibilidad con una nueva configuración regional en tiempo de ejecución de formularios adaptables:
 
@@ -70,7 +74,7 @@ Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>`, con ca
 
 * **js.txt** que contiene lo siguiente:
 
-```
+```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
@@ -86,7 +90,7 @@ Añada los siguientes archivos a la biblioteca del cliente:
 * **LogMessages.js** definiendo `guidelib.i18n.strings` y `guidelib.i18n.LogMessages` para el `<locale>` como se define en `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.txt** que contiene lo siguiente:
 
-```
+```text
 i18n.js
 LogMessages.js
 ```
