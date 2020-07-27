@@ -8,7 +8,10 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '966'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Este tutorial es un paso de la serie [Crear su primer formulario](https://helpx.
 
 Una vez que el formulario adaptable esté listo, es importante probar el adaptador antes de extenderlo a los usuarios finales. Puede probar manualmente (pruebas funcionales) cada campo o automatizar la prueba del formulario adaptable. Cuando tiene varios formularios adaptables, la prueba manual de cada campo de todos los formularios adaptables se convierte en una tarea de enormes proporciones.
 
-AEM Forms proporciona un marco de pruebas, Calvin, para automatizar las pruebas de los formularios adaptables. Con el marco, las pruebas de interfaz de usuario se escriben y ejecutan directamente en un navegador web. El marco proporciona API de JavaScript para crear pruebas. La prueba automatizada le permite probar la experiencia de cumplimentación previa de un formulario adaptable, enviar la experiencia de un formulario adaptable, reglas de expresión, validaciones, carga diferida e interacciones con la interfaz de usuario. Este tutorial le guía por los pasos para crear y ejecutar pruebas automatizadas en un formulario adaptable. Al final de este tutorial, podrá:
+Los AEM Forms proporcionan un entorno de prueba, Calvin, para automatizar las pruebas de los formularios adaptables. Con el marco, las pruebas de interfaz de usuario se escriben y ejecutan directamente en un navegador web. El marco proporciona API de JavaScript para crear pruebas. La prueba automatizada le permite probar la experiencia de cumplimentación previa de un formulario adaptable, enviar la experiencia de un formulario adaptable, reglas de expresión, validaciones, carga diferida e interacciones con la interfaz de usuario. Este tutorial le guía por los pasos para crear y ejecutar pruebas automatizadas en un formulario adaptable. Al final de este tutorial, podrá:
 
 * [Crear un grupo de pruebas para el formulario adaptable](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Crear pruebas para el formulario adaptable](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -31,7 +34,7 @@ AEM Forms proporciona un marco de pruebas, Calvin, para automatizar las pruebas 
 
 Los grupos de pruebas tienen una colección de casos de prueba. Puede tener varios grupos de pruebas. Se recomienda disponer de un grupo de pruebas independiente para cada formulario. Para crear un grupo de pruebas:
 
-1. Inicie sesión en la instancia de creación de AEM Forms como administrador. Abra CRXDE Lite. Puede tocar Logotipo de AEM > **Herramientas** > **General** > **CRXDE Lite** o abrir la [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) URL en un navegador para abrir CRXDE Lite.
+1. Inicie sesión como administrador en la instancia de creación de AEM Forms. Abra CRXDE Lite. Puede tocar Logotipo de AEM > **Herramientas** > **General** > **CRXDE Lite** o abrir la [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) URL en un navegador para abrir CRXDE Lite.
 
 1. Vaya a /etc/clientlibs en CRXDE Lite. Haga clic con el botón derecho en la subcarpeta /etc/clientlibs y haga clic en **Crear** > **Crear nodo.** En el campo Nombre, escriba **WeRetailFormTestCases**. Seleccione el tipo como **cq:ClientLibraryFolder** y haga clic en **Aceptar**. Crea un nodo. Puede utilizar cualquier nombre en lugar de WeRetailFormTestCases.
 1. Añada las siguientes propiedades al nodo WeRetailFormTestCases y toque **Guardar todo**.
@@ -75,14 +78,14 @@ Asegúrese de que cada propiedad se agrega a un cuadro independiente como se mue
 1. Haga clic con el botón derecho en el nodo **[!UICONTROL WeRetailFormTestCases]** y haga clic en **Crear** > **Crear archivo**. En el campo Nombre, escriba `js.txt` y haga clic en **Aceptar**.
 1. Abra el archivo js.txt para editarlo, añada el siguiente código y guarde el archivo:
 
-   ```
+   ```text
    #base=.
     init.js
    ```
 
 1. Cree un archivo, init.js, en el `WeRetailFormTestCases`nodo. Añada el código siguiente en el archivo y toque **[!UICONTROL Guardar todo]**.
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -218,6 +221,7 @@ Un grupo de pruebas puede tener varios casos de prueba. Puede ejecutar todos los
 
    1. En el panel Pruebas, toque **[!UICONTROL We Retail - Tests (1)]**. Se expande el conjunto para mostrar la lista de la prueba.
    1. Puntee en el botón **[!UICONTROL Ejecutar pruebas]** . El área en blanco a la derecha de la pantalla se sustituye por un formulario adaptable a medida que se ejecuta la prueba.
+
    ![run-all-test](assets/run-all-test.png)
 
 1. Para ejecutar una sola prueba desde Test Suite:
