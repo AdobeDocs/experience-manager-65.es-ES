@@ -2,29 +2,32 @@
 title: Integración de aplicaciones de terceros en el espacio de trabajo de AEM Forms
 seo-title: Integración de aplicaciones de terceros en el espacio de trabajo de AEM Forms
 description: Integre aplicaciones de terceros, como la gestión de correspondencia, en el espacio de trabajo de AEM Forms.
-seo-description: Integración de aplicaciones de terceros como la gestión de correspondencia en el espacio de trabajo de AEM Forms.
+seo-description: Cómo integrar aplicaciones de terceros como la gestión de correspondencia en el espacio de trabajo de AEM Forms.
 uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '650'
+ht-degree: 0%
 
 ---
 
 
 # Integración de aplicaciones de terceros en el espacio de trabajo de AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
-El espacio de trabajo de AEM Forms admite la administración de actividades de asignación y finalización de tareas para formularios y documentos. Estos formularios y documentos pueden ser formularios XDP, Flex® o guías (obsoletos) que se han procesado en formatos XDP, PDF, HTML o Flex.
+El espacio de trabajo AEM Forms admite la administración de actividades de asignación y finalización de tareas para formularios y documentos. Estos formularios y documentos pueden ser formularios XDP, Flex® o guías (obsoletos) que se han procesado en formatos XDP, PDF, HTML o Flex.
 
-Estas capacidades se mejoran aún más. AEM Forms ahora admite la colaboración con aplicaciones de terceros que admiten funciones similares al espacio de trabajo de AEM Forms. Una parte común de esta funcionalidad es el flujo de trabajo de asignación y la posterior aprobación de una tarea. AEM Forms proporciona una única experiencia unificada para los usuarios empresariales de AEM Forms, de modo que todas estas asignaciones o aprobaciones de tareas para las aplicaciones admitidas se pueden gestionar a través del espacio de trabajo de AEM Forms.
+Estas capacidades se mejoran aún más. Los AEM Forms ahora admiten la colaboración con aplicaciones de terceros que admiten funciones similares al espacio de trabajo de AEM Forms. Una parte común de esta funcionalidad es el flujo de trabajo de asignación y la posterior aprobación de una tarea. AEM Forms proporciona una única experiencia unificada para AEM Forms usuarios empresariales, de modo que todas estas asignaciones o aprobaciones de tareas para las aplicaciones admitidas se puedan gestionar a través del espacio de trabajo AEM Forms.
 
 Por ejemplo, consideremos la gestión de correspondencia como el candidato de muestra para la integración con el espacio de trabajo de AEM Forms. Correspondence Management tiene el concepto de una &#39;Carta&#39;, que puede procesarse y permite realizar acciones.
 
 ## Crear recursos de Correspondencia {#create-correspondence-management-assets}
 
-Inicio creando una plantilla de gestión de correspondencia de ejemplo que se procesa en el espacio de trabajo de AEM Forms. Para obtener más información, consulte [Creación de una plantilla](../../forms/using/create-letter.md)de carta.
+Inicio mediante la creación de una plantilla de gestión de correspondencia de muestra que se procesa en el espacio de trabajo de AEM Forms. Para obtener más información, consulte [Creación de una plantilla](../../forms/using/create-letter.md)de carta.
 
 Acceda a la plantilla Gestión de correspondencia en su dirección URL para comprobar si la plantilla Gestión de correspondencia se puede procesar correctamente. La dirección URL tiene un patrón similar al `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
@@ -64,7 +67,7 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM Wo
 
    A continuación se muestra un contenedor personalizado de muestra:
 
-   ```java
+   ```javascript
    public LetterInstanceInfo getLetterInstanceInfo(Document dataXML) throws Exception {
    try {
    if(dataXML == null)
@@ -105,7 +108,7 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM Wo
 
 1. Implemente la aplicación. Si se le solicita que registre y guarde los recursos.
 1. Inicie sesión en el espacio de trabajo de formularios de AEM en https://&#39;[server]:[port]&#39;/lc/content/ws.
-1. Abra la tarea que ha agregado, CMRenderer. Aparecerá la carta de Correspondencia Management.
+1. Abra la tarea que ha agregado, CMRenderer. Aparece la carta de Correspondencia de Administración.
 
    ![cminárea de trabajo](assets/cminworkspace.png)
 
