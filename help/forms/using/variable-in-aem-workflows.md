@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2113'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Ejecute los siguientes pasos para crear una variable:
    * Modelo de datos de formulario: especifique una ruta del modelo de datos de formulario.
    * ArrayList: especifique un subtipo para la colección.
 
-1. Especifique una descripción opcional para la variable y toque ![](assets/done_icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
+1. Especifique una descripción opcional de la variable y toque ![done_icon](assets/done_icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
 
 Cuando cree variables, tenga en cuenta las siguientes prácticas:
 
@@ -97,10 +97,10 @@ También puede actualizar elementos específicos de una variable de tipo JSON o 
 Ejecute los siguientes pasos para agregar la asignación entre variables:
 
 1. En la página de edición del flujo de trabajo, toque el icono Pasos disponible en la barra de tareas del modelo de flujo de trabajo.
-1. Arrastre y suelte el paso **Establecer variable** en el editor de flujo de trabajo, toque el paso y seleccione ![](assets/configure_icon.png) (Configurar).
+1. Arrastre y suelte el paso **Establecer variable** en el editor de flujo de trabajo, toque el paso y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
 1. En el cuadro de diálogo Establecer variable, seleccione **[!UICONTROL Asignación]** > **[!UICONTROL Añadir asignación]**.
 1. En la sección Variable **de** mapa, seleccione la variable para almacenar datos, seleccione el modo de asignación y especifique un valor para almacenarlo en la variable. Los modos de asignación varían según el tipo de variable.
-1. Asigne más variables para realizar una expresión significativa. Toque ![](assets/done_icon.png) para guardar los cambios.
+1. Asigne más variables para realizar una expresión significativa. Tap ![done_icon](assets/done_icon.png) to save the changes.
 
 ### Ejemplo 1: Consulta de una variable XML para establecer el valor de una variable de cadena {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -273,8 +273,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Editar una variable {#edit-a-variable}
 
 1. En la página de flujo de trabajo de edición, toque el icono Variables disponible en la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
-1. Toque el icono ![](assets/edit.png) (Editar) junto al nombre de la variable que desee editar.
-1. Edite la información de la variable y toque ![](assets/done_icon.png) para guardar los cambios. No se pueden editar los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]** de una variable.
+1. Toque el icono ![Editar](assets/edit.png) (Editar) junto al nombre de la variable que desee editar.
+1. Edite la información de la variable y toque ![done_icon](assets/done_icon.png) para guardar los cambios. No se pueden editar los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]** de una variable.
 
 ## Eliminar una variable {#delete-a-variable}
 
@@ -284,7 +284,7 @@ Ejecute los siguientes pasos para eliminar una variable:
 
 1. En la página de flujo de trabajo de edición, toque el icono Variables disponible en la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
 1. Toque el icono Eliminar junto al nombre de la variable que desee eliminar.
-1. Toque ![](assets/done_icon.png) para confirmar y eliminar la variable.
+1. Toque ![done_icon](assets/done_icon.png) para confirmar y eliminar la variable.
 
 ## Referencias {#references}
 
