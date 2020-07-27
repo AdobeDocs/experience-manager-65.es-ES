@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ El Inicio rápido de la API de Java (SOAP) está disponible para el Registro de 
 
 [Inicio rápido: Recuperación de información del conector del extremo mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 En el siguiente ejemplo de código Java se agrega un extremo EJB a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)de EJB).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -150,7 +153,7 @@ En el siguiente ejemplo de código Java se agrega un extremo EJB a un servicio l
 
 El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -254,7 +257,7 @@ El siguiente ejemplo de código Java agrega un extremo de carpeta vigilada a un 
 >
 >Debe incluir el archivo WatchedFolderEndpointConfigConstances.java en el proyecto para compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivo](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)constante de valores de configuración de carpetas vigiladas).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -389,7 +392,7 @@ El siguiente ejemplo de código Java agrega un extremo de correo electrónico a 
 >
 >Debe incluir el archivo EmailEndpointConfigConstances.java en el proyecto para compilar y ejecutar el siguiente inicio rápido. (Consulte Archivo [constante de valores de configuración de](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)correo electrónico).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -528,7 +531,7 @@ El siguiente ejemplo de código Java agrega un extremo de correo electrónico a 
 
 El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)remotos).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -633,7 +636,7 @@ El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio ll
 
 El siguiente ejemplo de código Java agrega un extremo de TaskManager a un servicio llamado *MyApplication/EncryptDocument*. Observe que el nombre de la categoría es *EncryptProcess*. (Consulte [Añadir extremos](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)de TaskManager).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -742,7 +745,7 @@ El siguiente ejemplo de código Java agrega un extremo de TaskManager a un servi
 
 El siguiente ejemplo de código Java modifica un extremo de carpeta vigilada. El extremo es para el proceso *MyApplication/EncryptDocument* . La carpeta observada se cambia a `C:\NewWatchedFolder`. (Consulte [Modificación de extremos](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -892,7 +895,7 @@ El siguiente ejemplo de código Java modifica un extremo de carpeta vigilada. El
 
 El siguiente código Java elimina un punto final de EJB de un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Eliminación de extremos](/help/forms/developing/programmatically-endpoints.md#removing-endpoints)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -1011,7 +1014,7 @@ El siguiente código Java elimina un punto final de EJB de un servicio llamado *
 
 El siguiente código Java recupera información sobre un extremo de carpeta vigilada. Se recupera y se muestra información sobre cada valor de configuración. Esta lista de código especifica si cada valor de configuración es obligatorio u opcional. Además, se muestra el nombre y el valor de cada valor de configuración. (Consulte [Recuperación de la información](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)del conector de extremo).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
