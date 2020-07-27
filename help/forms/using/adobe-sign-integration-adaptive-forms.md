@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -19,31 +22,31 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Adobe Sign activa flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos legales, de ventas, de nómina de pagos, de gestión de recursos humanos y muchas otras áreas.
 
-En un escenario típico de Adobe Sign y formularios adaptables, un usuario rellena un formulario adaptable para **aplicar a un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de beneficios para el ciudadano. Cuando un usuario rellena, envía y firma el formulario de solicitud, éste se envía al proveedor de servicio para que realice más acciones. Proveedor de servicio revisa la aplicación y utiliza Adobe Sign para marcar la aplicación aprobada. Para activar flujos de trabajo de firma electrónica similares, puede integrar Adobe Sign con AEM Forms.
+En un escenario típico de Adobe Sign y formularios adaptables, un usuario rellena un formulario adaptable para **aplicar a un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de beneficios para el ciudadano. Cuando un usuario rellena, envía y firma el formulario de solicitud, éste se envía al proveedor de servicio para que realice más acciones. Proveedor de servicio revisa la aplicación y utiliza Adobe Sign para marcar la aplicación aprobada. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar Adobe Sign con AEM Forms.
 
-Para utilizar Adobe Sign con AEM Forms, configure Adobe Sign en AEM Cloud Services:
+Para utilizar Adobe Sign con AEM Forms, configure AEM cloud services de inicio de sesión de Adobe:
 
 ## Requisitos previos {#prerequisites}
 
 Para integrar Adobe Sign con AEM Forms, es necesario lo siguiente:
 
 * Cuenta activa de desarrollador de [Adobe Sign.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
-* Servidor de AEM Forms habilitado [para](/help/sites-administering/ssl-by-default.md) SSL.
+* Un servidor de AEM Forms [SSL habilitado](/help/sites-administering/ssl-by-default.md) .
 * Aplicación [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Credenciales (ID de cliente y Secreto de cliente) de la aplicación API de Adobe Sign.
 
 ## Configuración de Adobe Sign con AEM Forms {#configure-adobe-sign-with-aem-forms}
 
-Una vez configurados los requisitos previos, realice los siguientes pasos para configurar Adobe Sign con AEM Forms en la instancia de autor:
+Una vez que se hayan establecido los requisitos previos, realice los siguientes pasos para configurar Adobe Sign con AEM Forms en la instancia de autor:
 
-1. En la instancia de creación de AEM Forms, vaya a **Herramientas** ![](assets/hammer.png) > **General** > Navegador **de** configuración.
+1. En la instancia de creación de AEM Forms, vaya a **Herramientas** ![martillo](assets/hammer.png) > **General** > **Navegador** de configuración.
 1. En la página **[!UICONTROL Navegador]** de configuración, toque **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]** , especifique un **[!UICONTROL Título]** para la configuración, habilite Configuraciones **[!UICONTROL de]** nube y toque **[!UICONTROL Crear]**. Crea un contenedor de configuración para los servicios en la nube.
-1. Vaya a **Herramientas** ![](assets/hammer.png) > Servicios **de** nube > **Adobe Sign** y seleccione el contenedor de configuración que ha creado en el paso anterior.
+1. Vaya a **Herramientas** ![martillo](assets/hammer.png) > **Cloud Service** > **Adobe Sign** y seleccione el contenedor de configuración que ha creado en el paso anterior.
 
    >[!NOTE]
    >
-   >Asegúrese de que la dirección URL de la página de configuración de servicios en la nube inicio con **HTTPS**. Si no es así, [habilite SSL](/help/sites-administering/ssl-by-default.md) para el servidor de AEM Forms.
+   >Asegúrese de que la dirección URL de la página de configuración de servicios en la nube inicio con **HTTPS**. Si no es así, [habilite SSL](/help/sites-administering/ssl-by-default.md) para el servidor AEM Forms.
 
 1. En la página de configuración, toque **[!UICONTROL Crear]** para crear la configuración de Adobe Sign en AEM Forms.
 1. En la ficha **[!UICONTROL General]** de la página **[!UICONTROL Crear configuración]** de Adobe Sign, especifique un **nombre** para la configuración y toque **Siguiente**. Opcionalmente, puede especificar un título y examinar para seleccionar una miniatura para la configuración.
@@ -61,6 +64,7 @@ Una vez configurados los requisitos previos, realice los siguientes pasos para c
    * aggrement_send
    * widget_write
    * workflow_read
+
    Para obtener información paso a paso sobre la configuración de OAuth para una aplicación de Adobe Sign y obtener las claves, consulte [Configuración de autenticación para la documentación del desarrollador de la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) .
 
    ![Configuración de OAuth](assets/oauthconfig_new.png)
@@ -96,7 +100,7 @@ Una vez configurados los requisitos previos, realice los siguientes pasos para c
 
 Un formulario adaptable habilitado para Adobe Sign solo se envía después de que todos los firmantes hayan completado el proceso de firma. De forma predeterminada, los servicios de Planificador de Adobe Sign están programados para comprobar la respuesta del firmante (encuesta) cada 24 horas. Puede cambiar el intervalo predeterminado del entorno. Realice los siguientes pasos para cambiar el intervalo predeterminado:
 
-1. Inicie sesión en el servidor de AEM Forms con credenciales de administrador y vaya a **Herramientas** > **Operaciones** > Consola **** web.
+1. Inicie sesión en el servidor AEM Forms con credenciales de administrador y vaya a **Herramientas** > **Operaciones** > Consola **** web.
 
    También puede abrir la siguiente URL en una ventana del explorador:
    `https://[localhost]:'port'/system/console/configMgr`
