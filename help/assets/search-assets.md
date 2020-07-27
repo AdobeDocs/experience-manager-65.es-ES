@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 8f8134d6c4fcc0ef54f9cc8298936c5c7d746c09
 workflow-type: tm+mt
-source-wordcount: '5830'
+source-wordcount: '5860'
 ht-degree: 5%
 
 ---
@@ -325,6 +325,8 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 La detección de recursos depende de la indexación del contenido de DAM, incluidos los metadatos. La detección de recursos más rápida y precisa depende de la indexación optimizada y de las configuraciones adecuadas. Consulte Índice [de](/help/assets/performance-tuning-guidelines.md#search-indexes)búsqueda, consultas de [roble, indexación](/help/sites-deploying/queries-and-indexing.md)y [optimizaciones](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
+Para excluir recursos específicos de los resultados de búsqueda, utilice `excludedPath` la propiedad en el índice Lucene.
+
 ### Búsqueda visual o de similitudes {#configvisualsearch}
 
 La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience Manager] 6.5.2.0 o posterior. Después de configurar la funcionalidad de etiquetado inteligente, siga estos pasos:
@@ -364,6 +366,8 @@ Para mejorar la velocidad de detección, [!DNL Experience Manager Assets] oferta
 ### Extraer texto al cargar recursos {#extracttextupload}
 
 Puede configurar [!DNL Experience Manager] para extraer el texto de los recursos cuando los usuarios cargan recursos, como archivos PSD o PDF. [!DNL Experience Manager] indexa el texto extraído y ayuda a los usuarios a buscar estos recursos en función del texto extraído. Consulte [Carga de recursos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+
+Si la extracción de texto consume demasiados recursos para la implementación, considere [desactivar la extracción](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)de texto.
 
 ### Predicados personalizados para filtrar los resultados de búsqueda {#custompredicates}
 
