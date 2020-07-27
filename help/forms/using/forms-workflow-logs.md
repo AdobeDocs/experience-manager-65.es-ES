@@ -1,7 +1,7 @@
 ---
-title: Inicio de sesión en flujos de trabajo de AEM Forms
-seo-title: Inicio de sesión en flujos de trabajo de AEM Forms
-description: Use logs to debug AEM Forms workflow issues.
+title: Inicio de sesión en flujos de trabajo AEM Forms
+seo-title: Inicio de sesión en flujos de trabajo AEM Forms
+description: Utilice los registros para depurar problemas de flujo de trabajo de AEM Forms.
 seo-description: Utilice los registros para depurar problemas de flujo de trabajo de AEM Forms.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
@@ -10,12 +10,15 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 5%
 
 ---
 
 
-# Inicio de sesión en flujos de trabajo de AEM Forms{#logging-in-aem-forms-workflows}
+# Inicio de sesión en flujos de trabajo AEM Forms{#logging-in-aem-forms-workflows}
 
 Los pasos del flujo de trabajo de formularios proporcionan registros detallados para depurar convenientemente los problemas relacionados con el flujo de trabajo. Habilite el registro de depuración para flujos de trabajo de AEM Forms para la vista de los registros.
 
@@ -40,7 +43,7 @@ Los registros de depuración de los flujos de trabajo de formularios incluyen:
 
 * Variables escritas en el repositorio JCR. Por ejemplo:
 
-   ```
+   ```verilog
       [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
    ```
 
@@ -49,14 +52,14 @@ Los registros de depuración de los flujos de trabajo de formularios incluyen:
 
 * Parámetros de metadatos de pasos dinámicos. Por ejemplo:
 
-   ```
+   ```verilog
    [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
     [DEBUG] Locale to be used for Document of Record is <locale>
    ```
 
 El siguiente ejemplo ilustra los registros del paso Firmar Documento:
 
-```xml
+```verilog
 [DEBUG] Executing sign document step.
 [DEBUG] Using adobe sign configuration: <path of adobe sign configuration>
 [DEBUG] Invoking Adobe Sign Service for creating agreement
@@ -74,9 +77,9 @@ Utilice los registros para evaluar que:
 
 Si hay una excepción, puede realizar la vista del seguimiento completo de la pila para evaluar la causa del error.
 
-## Habilitar el registro de depuración para flujos de trabajo de AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
+## Habilitar el registro de depuración para flujos de trabajo AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Siga estos pasos para habilitar el registro de depuración para flujos de trabajo de AEM Forms:
+Realice los siguientes pasos para habilitar el registro de depuración para flujos de trabajo AEM Forms:
 
 1. Vaya al administrador de configuración de la consola web de AEM en:
 
