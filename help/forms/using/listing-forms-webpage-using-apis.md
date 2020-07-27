@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
 
 # Lista de formularios en una página web mediante API {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms proporciona una API de búsqueda basada en REST que los desarrolladores web pueden utilizar para consulta y recuperación de un conjunto de formularios que cumplen los criterios de búsqueda. Las API se pueden utilizar para buscar formularios basados en diversos filtros. El objeto response contiene atributos de formulario, propiedades y puntos finales de procesamiento de los formularios.
+AEM Forms proporciona una API de búsqueda basada en REST que los desarrolladores web pueden utilizar para realizar consultas y recuperar un conjunto de formularios que cumplen los criterios de búsqueda. Las API se pueden utilizar para buscar formularios basados en diversos filtros. El objeto response contiene atributos de formulario, propiedades y puntos finales de procesamiento de los formularios.
 
 Para buscar formularios con la API de REST, envíe una solicitud GET al servidor en `https://'[server]:[port]'/libs/fd/fm/content/manage.json` los parámetros de consulta que se describen a continuación.
 
@@ -91,7 +94,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
        <li>INTERRUPTOR DE ENCENDIDO: A termina con B si B es la parte final de A</li>
        <li>LIKE - Implementa el operador LIKE</li>
        <li>AND - Combinar varias afirmaciones</li>
-      </ul> <p><strong>Nota:</strong> Los operadores <em>GT, LT, GTEQ y LTEQ son aplicables a propiedades de tipo lineal como LONG, DOBLE y DATE.</em></p> </li>
+      </ul> <p><strong>Nota:</strong> <em>Los operadores GT, LT, GTEQ y LTEQ son aplicables a propiedades de tipo lineal como LONG, DOBLE y DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -124,7 +127,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
 
 ## Solicitud de muestra {#sample-request}
 
-```
+```json
 func : searchForms
 appPath : /content/dam/formsanddocuments/MyApplication23
 cutPoints : title|description|author|status|creationDate|lastModifiedDate|activationDate|expiryDate|tags|allowedRenderFormat|formmodel
@@ -144,7 +147,7 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Respuesta de muestra {#sample-response}
 
-```
+```json
 [
 {"resultCount":2},
     {"assetType":"FORM","name":"ExpenseClaim.xdp","id":"509fa2d5-e3c9-407b-b8dc-fa0ba08eb0ce",
