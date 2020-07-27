@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Puede realizar lo siguiente con el servicio Convertir PDF:
 * Convertir documentos PDF a PostScript. Al convertir a PostScript, puede utilizar la operación de conversión para especificar el documento de origen y si desea convertir a PostScript nivel 2 o 3. El documento PDF que se convierte en un archivo PostScript debe ser no interactivo.
 * Convierta documentos PDF a los formatos de imagen JPEG, JPEG 2000, PNG y TIFF. Al realizar la conversión a cualquiera de estos formatos de imagen, puede utilizar la operación de conversión para especificar el documento de origen y una especificación de opciones de imagen. La especificación contiene varias preferencias, como el formato de conversión de imágenes, la resolución de imágenes y la conversión de color.
 
-## Configurar propiedades del servicio {#properties}
+## Configurar propiedades del servicio   {#properties}
 
 Puede utilizar el servicio **** AEMFD ConvertPDF en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola de AEM es `https://[host]:'port'/system/console/configMgr`.
 
@@ -39,7 +42,7 @@ El servicio ConvertPDF proporciona las dos API siguientes:
 
 ### Uso de la API de toPS con un JSP o Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -83,7 +86,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 ### Uso de la API toImage con un JSP o Servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -136,7 +139,7 @@ La única diferencia estriba en ejecutar el servicio desde JSP/Servlet, el objet
 
 El siguiente proceso de flujo de trabajo de muestra convierte el documento de entrada en un documento PostScript. El código se escribe en ECMAScript y el documento se pasa como carga útil del flujo de trabajo:
 
-```
+```javascript
 /*
  * Imports
  */
