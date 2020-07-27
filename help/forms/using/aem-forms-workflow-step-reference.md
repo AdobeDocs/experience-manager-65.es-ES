@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '7077'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ## Pasos del flujo de trabajo de formularios {#forms-workflow-steps}
 
-Los pasos del flujo de trabajo de formularios realizan operaciones específicas de AEM Forms en un flujo de trabajo de AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en un flujo de trabajo centrado en formularios en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, procesos comerciales internos y entre servidores de seguridad. También puede utilizar los pasos del flujo de trabajo de Forms para inicio de servicios de documento, integrarlos con el flujo de trabajo de firma de Adobe Sign y realizar otras operaciones de AEM Forms. Para utilizar estos pasos en un flujo de trabajo, debe utilizar el complemento [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms.
+Los pasos del flujo de trabajo de formularios realizan operaciones específicas para AEM Forms en un flujo de trabajo de AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en un flujo de trabajo centrado en formularios en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, procesos comerciales internos y entre servidores de seguridad. También puede utilizar los pasos de Flujo de trabajo de Forms para inicio de servicios de documento, integrarlos con el flujo de trabajo de firma de Adobe Sign y realizar otras operaciones de AEM Forms. Es necesario que el complemento [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms utilice estos pasos en un flujo de trabajo.
 
 ## Assign task step {#assign-task-step}
 
@@ -75,7 +78,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * **Guardar plantilla de diseño con:** Guarde la plantilla de diseño utilizando una ruta relativa a la carga útil o bien almacenarla en una variable de tipo de datos de Documento. La plantilla [de](../../forms/using/layout-design-details.md) diseño hace referencia a un archivo XDP que se crea con Forms Designer. Esta opción solo está disponible si selecciona la IU de Agente de comunicación interactiva en la lista desplegable Tipo.
 
 * **Asignación > Opciones de asignación:** Especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante el script Selector de participantes o asignar la tarea a un usuario o grupo de AEM específico.
-* **Selector de participantes:** La opción está disponible cuando se selecciona la opción **Dinámicamente para un usuario o grupo** en el campo Opciones de asignación. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte Asignación [dinámica de un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Creación de un paso de participante dinámico personalizado de Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **Selector de participantes:** La opción está disponible cuando se selecciona la opción **Dinámicamente para un usuario o grupo** en el campo Opciones de asignación. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte Asignación [dinámica de un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Creación de un paso de participante dinámico de Adobe Experience Manager personalizado.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 * **Participantes:** El campo está disponible cuando se selecciona la opción **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** en el campo Selector **de** participantes. El campo permite seleccionar usuarios o grupos para la opción SelectorParticipanteAleatorio.
 
@@ -173,7 +176,7 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-Puede utilizar la integración [de datos de](../../forms/using/data-integration.md) AEM Forms para configurar y conectar orígenes de datos dispares. Estas fuentes de datos pueden ser una base de datos, servicio Web, servicio REST, servicio OData y solución CRM. La integración de datos de AEM Forms le permite crear un modelo de datos de formulario que incluye varios servicios para realizar operaciones de recuperación de datos, adición y actualización en la base de datos configurada. Puede utilizar el paso **** Invocar servicio de modelo de datos para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a orígenes de datos dispares.
+Puede utilizar la integración [de datos de](../../forms/using/data-integration.md) AEM Forms para configurar y conectar fuentes de datos dispares. Estas fuentes de datos pueden ser una base de datos, servicio Web, servicio REST, servicio OData y solución CRM. La integración de datos de AEM Forms permite crear un modelo de datos de formulario que abarca varios servicios para realizar operaciones de recuperación de datos, adición y actualización en la base de datos configurada. Puede utilizar el paso **** Invocar servicio de modelo de datos para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a orígenes de datos dispares.
 
 Para explicar las entradas de los campos del paso, se utiliza como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 
@@ -206,26 +209,26 @@ Para explicar las entradas de los campos del paso, se utiliza como ejemplo la si
 
 **Archivo JSON de muestra**
 
-```
-{ 
-  customer: { 
-   firstName: "Sarah", 
-   lastName:"Rose", 
-   customerId: "1", 
-   emailAddress:"srose@we.info" 
- }, 
-  insurance: {
-   customerId: "1", 
-  policyType: "Premium,
-  policyNumber: "Premium-521499",
-  customerDetails: { 
-   firstName: "Sarah",
-   lastName: "Rose",
-   customerId: "1",
-   emailAddress: "srose@we.info" 
-  }
- }
-}
+```json
+  { 
+    customer: { 
+     firstName: "Sarah", 
+     lastName:"Rose", 
+     customerId: "1", 
+     emailAddress:"srose@we.info" 
+   }, 
+    insurance: {
+     customerId: "1", 
+    policyType: "Premium,
+    policyNumber: "Premium-521499",
+    customerDetails: { 
+     firstName: "Sarah",
+     lastName: "Rose",
+     customerId: "1",
+     emailAddress: "srose@we.info" 
+    }
+   }
+  }
 ```
 
 El paso Invocar el servicio del modelo de datos de formulario tiene los campos siguientes para facilitar las operaciones del modelo de datos de formulario:
@@ -278,7 +281,7 @@ El paso Firmar Documento le permite utilizar Adobe Sign para firmar documentos. 
 
 Los servicios de Documento de AEM son un conjunto de servicios para crear, montar y asegurar Documentos PDF. AEM Forms proporciona un paso independiente de flujo de trabajo de AEM para cada servicio de documento.
 
-Al igual que otros pasos del flujo de trabajo de AEM Forms, como Asignar Tarea, Enviar correo electrónico y Documento de firma, puede utilizar variables en todos los pasos de los servicios de Documento de AEM. Para obtener más información sobre la creación y administración de variables, consulte [Variables en flujos de trabajo](../../forms/using/variable-in-aem-workflows.md)AEM.
+De forma similar a otros pasos del flujo de trabajo de AEM Forms, como Asignar Tarea, Enviar correo electrónico y Documento de firma, puede utilizar variables en todos los pasos de los servicios de AEM Documento. Para obtener más información sobre la creación y administración de variables, consulte [Variables en flujos de trabajo](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
@@ -309,7 +312,7 @@ Genera un documento PDF a partir de la dirección URL, el HTML y el archivo ZIP 
 
 ### Paso Exportar datos {#export-data-step}
 
-Exporta datos desde un formulario PDF o un archivo XDP. Requiere que introduzca la ruta de acceso de archivo del Documento de entrada y del formato de datos de exportación. Las opciones para Exportar formato de datos son Automático, XDP y XmlData.
+Exporta datos de un archivo PDF forms o XDP. Requiere que introduzca la ruta de acceso de archivo del Documento de entrada y del formato de datos de exportación. Las opciones para Exportar formato de datos son Automático, XDP y XmlData.
 
 ### Export PDF to specified type step {#export-pdf-to-specified-type-step}
 
@@ -359,7 +362,7 @@ Procesa un formulario creado en el Diseñador de formularios (XDP) en un formula
 
 ### Paso Documento seguro {#secure-document-step}
 
-Codificar, firmar y certificar un documento. AEM Forms admite el cifrado basado en contraseña y en certificado. También puede elegir entre varios algoritmos para firmar documentos. Por ejemplo, SHA-256 y SH-512. También puede utilizar el paso del flujo de trabajo para que el lector pueda ampliar los documentos PDF. El paso del flujo de trabajo proporciona una opción para habilitar la descodificación de códigos de barras, las firmas digitales, la importación y exportación de datos PDF y otras opciones.
+Codificar, firmar y certificar un documento. Los AEM Forms admiten el cifrado basado en contraseña y en certificado. También puede elegir entre varios algoritmos para firmar documentos. Por ejemplo, SHA-256 y SH-512. También puede utilizar el paso del flujo de trabajo para que el lector pueda ampliar los documentos PDF. El paso del flujo de trabajo proporciona una opción para habilitar la descodificación de códigos de barras, las firmas digitales, la importación y exportación de datos PDF y otras opciones.
 
 ### Paso Enviar a la impresora {#send-to-printer-step}
 
