@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -33,10 +36,12 @@ Para un formulario adaptable, la opción de guardado automático no está activa
 
    * **[!UICONTROL Basado en el tiempo:]** Seleccione la opción para guardar en inicio el contenido según un intervalo de tiempo específico.
    * **[!UICONTROL Basado en Evento:]** Seleccione la opción para guardar en inicio el contenido en función de cuándo se activa un evento.
+
    Al seleccionar un activador, se activa el cuadro Configuración de estrategia. El cuadro Configuración de estrategia permite:
 
    * Especifique un intervalo de tiempo si selecciona un activador basado en **[!UICONTROL tiempo]** .
    * Especifique un nombre de evento si selecciona un activador basado en **[!UICONTROL Eventos]** .
+
    También puede crear y agregar su propia estrategia personalizada a la lista. Para obtener más información, consulte [Implementación de una estrategia personalizada para guardar automáticamente los formularios](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Solo guardado automático basado en el tiempo) Realice los siguientes pasos para configurar las opciones de guardado automático basado en el tiempo.
@@ -63,7 +68,7 @@ Puede implementar un evento personalizado para activar la funcionalidad de guard
 
    Por ejemplo, la siguiente secuencia de comandos utiliza el `emailFocusChange`evento personalizado para activar la funcionalidad de guardado automático:
 
-   ```
+   ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
        guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) {
            if(data.target.name === 'Email') {
