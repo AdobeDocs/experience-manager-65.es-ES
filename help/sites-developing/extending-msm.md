@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
+source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2601'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,9 @@ Esta página le ayuda a ampliar las funcionalidades del Administrador de múltip
 
 * Obtenga información sobre los principales miembros de la API Java de MSM.
 * Cree una nueva acción de sincronización que pueda utilizarse en una configuración de implementación.
-* Elimine el paso &quot;Capítulos&quot; del asistente Crear sitio.
 * Modifique el idioma y los códigos de país predeterminados.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
@@ -382,7 +383,7 @@ Añada dependencias para que el compilador Eclipse pueda hacer referencia a las 
 
 La `LiveActionFactory` clase siguiente implementa un `LiveAction` que registra mensajes sobre las páginas de origen y destinatario y copia la `cq:lastModifiedBy` propiedad desde el nodo de origen al nodo de destinatario. El nombre de la acción activa es `exampleLiveAction`.
 
-1. En el Explorador de proyectos de Eclipse, haga clic con el botón secundario en el `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` paquete y, a continuación, haga clic en **Nuevo** > **Clase**. Para el **Nombre**, introduzca `ExampleLiveActionFactory` y, a continuación, haga clic en **Finalizar**.
+1. En el Explorador de proyectos de Eclipse, haga clic con el botón derecho en el `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` paquete y, a continuación, haga clic en **Nuevo** > **Clase**. Para el **Nombre**, introduzca `ExampleLiveActionFactory` y, a continuación, haga clic en **Finalizar**.
 1. Abra el `ExampleLiveActionFactory.java` archivo, reemplace el contenido por el siguiente código y guarde el archivo.
 
    ```java
@@ -618,7 +619,7 @@ AEM utiliza un conjunto predeterminado de códigos de idioma y de país.
 * El código de idioma predeterminado es el código de dos letras en minúscula definido por ISO-639-1.
 * El código de país predeterminado es el código de dos letras en minúsculas o en mayúsculas, tal como se define en la norma ISO 3166.
 
-MSM utiliza una lista almacenada de códigos de idioma y de país para determinar el nombre del país asociado al nombre de la versión de idioma de la página. Si es necesario, puede cambiar los siguientes aspectos de la lista:
+MSM utiliza una lista almacenada de códigos de idioma y de país para determinar el nombre del país asociado con el nombre de la versión de idioma de la página. Si es necesario, puede cambiar los siguientes aspectos de la lista:
 
 * Títulos de idioma
 * Nombres de países
@@ -649,7 +650,7 @@ Para modificar los idiomas:
 1. Haga clic en **Herramientas**, **Operaciones** y, a continuación, en Consola **** Web. Desde esta consola, haga clic en **OSGi** y, a continuación, en **Configuración**.
 1. Busque y haga clic en **Day CQ WCM Language Manager**, cambie el valor de la Lista **de** idioma a `/apps/wcm/core/resources/languages`y, a continuación, haga clic en **Guardar**.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 ## Configuración de los bloqueos de MSM en las propiedades de la página (IU táctil) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
