@@ -3,10 +3,10 @@ title: Facetas de búsqueda.
 description: Cómo crear, modificar y utilizar facetas de búsqueda en Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2515'
+ht-degree: 18%
 
 ---
 
@@ -28,11 +28,9 @@ Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formu
 Para las búsquedas de texto completo, agregue el predicado [!UICONTROL Texto] completo al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad concreta. Añada el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![edit icon](assets/do-not-localize/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    ![Busque y seleccione el carril de búsqueda de administración de recursos](assets/assets_admin_searchrail.png)
-
-   Busque y seleccione el carril de búsqueda de administración de recursos
 
    >[!NOTE]
    >
@@ -76,7 +74,7 @@ Para las búsquedas de texto completo, agregue el predicado [!UICONTROL Texto] c
 1. Para cerrar la previsualización, haga clic en **[!UICONTROL Cerrar]** ![cerrar](assets/do-not-localize/close.png) en la esquina superior derecha de la previsualización.
 1. Haga clic en **[!UICONTROL Listo]** para guardar la configuración.
 1. Vaya al panel Buscar en la interfaz de usuario de Recursos. El predicado Propiedad se agrega al panel.
-1. Escriba una descripción del recurso que se buscará en el cuadro de texto. Por ejemplo, escriba &quot;Adobe&quot;. Cuando realiza una búsqueda, los recursos con una descripción que coincide con &quot;Adobe&quot; se muestran en los resultados de la búsqueda.
+1. Escriba una descripción del recurso que se buscará en el cuadro de texto. For example, enter `Adobe`. Cuando realiza una búsqueda, los recursos con una descripción coincidente `Adobe` se muestran en los resultados de la búsqueda.
 
 ## Añadir un predicado de opciones {#adding-an-options-predicate}
 
@@ -86,17 +84,17 @@ Para asignar las opciones a la propiedad correspondiente, cree una estructura de
 
 La `jcr:title` propiedad es un nombre descriptivo para la opción que se muestra en el panel Filtros. El `value` campo se utiliza en la consulta para coincidir con la propiedad especificada.
 
-Cuando se selecciona una opción, la búsqueda se realiza en función de la propiedad del nodo de opción y de sus nodos secundarios, si los hay. `value` El árbol entero bajo el nodo de opciones se recorre y la propiedad de cada nodo secundario se combina mediante una operación O para formar la consulta de búsqueda. `value`
+Al seleccionar una opción, la búsqueda se realiza en función de la propiedad del nodo de opciones y de sus nodos secundarios, si los hay. `value` El árbol entero bajo el nodo de opciones se recorre y la propiedad de cada nodo secundario se combina mediante una operación O para formar la consulta de búsqueda. `value`
 
 Por ejemplo, si selecciona “Imágenes” para los tipos de archivo, la consulta de búsqueda de los recursos se genera combinando la propiedad `value` mediante una operación O. Por ejemplo, la búsqueda de imágenes se genera combinando los resultados coincidentes para *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, e *image/tiff* `jcr:content/metadata/dc:format` para la propiedad mediante una operación OR.
 
-![La propiedad Value de un tipo de archivo, como se ve en CRXDE, se utiliza para que funcionen las consultas de búsqueda](assets/chlimage_1-418.png)
+![La propiedad Value de un tipo de archivo, como se ve en CRXDE, se utiliza para que funcionen las consultas de búsqueda](assets/filetype-value-property.png)
 
 La propiedad Value de un tipo de archivo, como se ve en CRXDE, se utiliza para que funcionen las consultas de búsqueda
 
 En lugar de crear manualmente una estructura de nodos para las opciones del repositorio CRXDE, puede definir las opciones de un archivo JSON especificando los pares de clave-valor correspondientes. Especifique la ruta del archivo JSON en el campo **[!UICONTROL Nombre de propiedad]**. Por ejemplo, puede definir los pares clave-valor `image/bmp`, `image/gif`, `image/jpeg` y `image/png`, y especificar sus valores como se muestra en el siguiente archivo JSON de muestra. In the **[!UICONTROL Property Name]** field, you can specify the CRXDE path for this file.
 
-```JSON
+```json
 {
     "options" :
  [
@@ -134,10 +132,10 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 
 ## Añadir un predicado de propiedades de varios valores {#adding-a-multi-value-property-predicate}
 
-El predicado de propiedades de varios valores permite buscar en los recursos varios valores. Imagine un escenario en el que tiene imágenes de varios productos en Recursos y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
+El predicado de propiedades de varios valores permite buscar varios valores en los recursos. Imagine un escenario en el que tiene imágenes de varios productos en Recursos y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. En la página Buscar formularios, seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda y haga clic en **[!UICONTROL Editar]** icono ![de](assets/do-not-localize/aemassets_edit.png)edición.
+1. En la página Buscar en Forms, seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda y haga clic en **[!UICONTROL Editar]** icono ![de](assets/do-not-localize/aemassets_edit.png)edición.
 1. En la página Editar formulario de búsqueda, arrastre un **[!UICONTROL predicado de propiedades de varios valores]** desde la pestaña **[!UICONTROL Seleccionar predicado]** hasta el panel principal.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
 1. Asegúrese de que la opción **[!UICONTROL Compatibilidad con delimitadores]** está seleccionada. En el campo **[!UICONTROL Delimitadores de entrada]**, especifique delimitadores para separar valores individuales. De forma predeterminada, se especifica una coma como delimitador. Puede especificar un delimitador diferente.
@@ -164,7 +162,7 @@ El predicado de etiquetas permite realizar búsquedas de recursos basadas en eti
 1. Vaya al panel Buscar. El predicado **[!UICONTROL Etiquetas]** se agrega al panel Buscar.
 1. Especifique las etiquetas en función de las cuales desee buscar recursos o seleccione entre la lista de sugerencias.
 
-   ![Sugerencia proporcionada por el Experience Manager al escribir el nombre de la etiqueta](assets/chlimage_1-419.png)
+   ![Sugerencia proporcionada por el Experience Manager al escribir el nombre de la etiqueta](assets/tag-suggestion.png)
 
    *Figura: Sugerencia proporcionada por el Experience Manager al escribir el nombre de la etiqueta.*
 
@@ -193,13 +191,13 @@ De forma similar a como se agrega un predicado de propiedad o un predicado de op
 
 ## Restaurar las facetas de búsqueda predeterminadas {#restoring-default-search-facets}
 
-De forma predeterminada, aparece un icono de ![bloqueo de icono](assets/do-not-localize/lock_closed_icon.svg) de bloqueo antes del carril **[!UICONTROL de búsqueda]** de Administración de recursos en la página **[!UICONTROL Buscar formularios]** . El icono Bloquear en una opción de la página Buscar formularios indica que la configuración predeterminada está intacta y no está personalizada. El icono ![de](assets/do-not-localize/lock_closed_icon.svg) bloqueo de icono cerrado desaparece si agrega facetas de búsqueda al formulario que indican que se ha modificado el formulario predeterminado.
+De forma predeterminada, aparece un icono de ![bloqueo de icono](assets/do-not-localize/lock_closed_icon.svg) de bloqueo antes de que **[!UICONTROL Assets Admin Search Rail]** aparezca en la página **[!UICONTROL Buscar en Forms]** . El icono Bloquear en una opción de la página Buscar en Forms indica que la configuración predeterminada está intacta y no está personalizada. El icono ![de](assets/do-not-localize/lock_closed_icon.svg) bloqueo de icono cerrado desaparece si agrega facetas de búsqueda al formulario que indican que se ha modificado el formulario predeterminado.
 
-![El icono Bloquear en una opción de la página Buscar formularios indica que la configuración predeterminada está intacta y no está personalizada.](assets/locked_admin_rail.png)
+![El icono Bloquear en una opción de la página Buscar en Forms indica que la configuración predeterminada está intacta y no está personalizada.](assets/locked_admin_rail.png)
 
 Para restaurar la faceta de búsqueda predeterminada, realice los siguientes pasos:
 
-1. Seleccione el carril **[!UICONTROL de búsqueda de administración de]** recursos en la página **[!UICONTROL Buscar formularios]** .
+1. Seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda en la página **[!UICONTROL Buscar en Forms]** .
 1. Haga clic en **[!UICONTROL Eliminar]** ![eliminar contorno](assets/do-not-localize/deleteoutline.png) en la barra de herramientas.
 1. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Eliminar]** para eliminar los cambios personalizados.
 
