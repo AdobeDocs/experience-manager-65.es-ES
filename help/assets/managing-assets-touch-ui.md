@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '9234'
+source-wordcount: '9216'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágen
 
 >[!NOTE]
 >
->* No se puede compartir una [!DNL Assets] carpeta del tipo `sling:OrderedFolder` al compartirla con Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
+>* No se puede compartir una [!DNL Assets] carpeta del tipo `sling:OrderedFolder` al compartirla en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
 >* [!DNL Experience Manager] no permite usar `subassets` palabra como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subrecursos para los recursos compuestos.
 
 
@@ -50,7 +50,7 @@ Puede cargar varios tipos de recursos (como imágenes, archivos PDF, archivos RA
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, solo se pueden cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
+>En el modo Dynamic Media - Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
 
 Puede elegir cargar recursos en carpetas con o sin un perfil de procesamiento asignado a ellas.
 
@@ -70,7 +70,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Haga clic en **[!UICONTROL Pausar]** junto a la barra de progreso que aparece cuando se produce un inicio de carga.
 
-   ![Barra de progreso de carga de recursos](assets/chlimage_1-5.png)
+   ![Barra de progreso de carga de recursos](assets/upload-progress-bar.png)
 
    Se puede configurar el tamaño por encima del cual un recurso se considera un recurso grande. Por ejemplo, puede configurar el sistema para que considere los recursos superiores a 1000 MB (en lugar de 500 MB) como recursos grandes. En este caso, **[!UICONTROL Pausa]** aparece en la barra de progreso cuando se cargan recursos de tamaño bueno superior a 1000 MB.
 
@@ -80,7 +80,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Al hacer clic en **[!UICONTROL Pausar]**, se activa la opción **[!UICONTROL Reproducir]** . Para reanudar la carga, haga clic en **[!UICONTROL Reproducir]**.
 
-   ![Reanudar la carga de recursos en pausa](assets/chlimage_1-6.png)
+   ![Reanudar la carga de recursos en pausa](assets/resume-paused-upload.png)
 
    Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 
@@ -94,7 +94,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Puede elegir reemplazar un recurso existente, crear otra versión o mantener ambos cambiando el nombre del nuevo recurso que se carga. Si sustituye un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, realizar anotaciones o recortes) que haya realizado en el recurso existente. Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso por el número `1` que se añadirá al nombre.
 
-   ![Cuadro de diálogo de conflicto de nombres para resolver conflictos de nombres de recursos](assets/chlimage_1-7.png)
+   ![Cuadro de diálogo de conflicto de nombres para resolver conflictos de nombres de recursos](assets/resolve-naming-conflict.png)
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
    >
    >El cuadro de diálogo [!UICONTROL Duplicados detectados] solo aparece cuando la función de detección de duplicados está activada. Para habilitar la función de detección de duplicado, consulte [Activar detección](/help/assets/duplicate-detection.md)de Duplicado.
 
-   ![Cuadro de diálogo Recurso Duplicado detectado](assets/chlimage_1-8.png)
+   ![Cuadro de diálogo Recurso Duplicado detectado](assets/duplicate-asset-detected.png)
 
    Para conservar el recurso de duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, haga clic en **[!UICONTROL Eliminar]**.
 
@@ -123,7 +123,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    No incluya caracteres especiales en las extensiones de los nombres de archivo de recursos.
 
-   ![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/chlimage_1-10.png)
+   ![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/bulk-upload-progress.png)
 
    Además, la interfaz de usuario muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado en primer lugar. [!DNL Assets]
 
@@ -133,7 +133,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
 ### Cargas serie {#serialuploads}
 
-La carga masiva de numerosos recursos consume importantes recursos de E/S, lo que puede afectar negativamente al rendimiento de la [!DNL Assets] implementación. En particular, si tiene una conexión a Internet lenta, el tiempo para cargar aumenta drásticamente debido a un pico en la E/S de disco. Además, el explorador Web puede introducir restricciones adicionales en el número de solicitudes POST que [!DNL Assets] puede gestionar para cargas de recursos simultáneas. Como resultado, la operación de carga falla o finaliza antes de tiempo. En otras palabras, [!DNL Experience Manager Assets] puede que se pierdan algunos archivos al ingerir un montón de archivos o que no se ingrese ningún archivo.
+La carga masiva de numerosos recursos consume importantes recursos de E/S, lo que puede afectar negativamente al rendimiento de la [!DNL Assets] implementación. En particular, si tiene una conexión a Internet lenta, el tiempo para cargar aumenta drásticamente debido a un pico en la E/S de disco. Además, el explorador Web puede introducir restricciones adicionales en el número de solicitudes de POST que [!DNL Assets] pueden gestionar para cargas de recursos simultáneas. Como resultado, la operación de carga falla o finaliza antes de tiempo. En otras palabras, [!DNL Experience Manager Assets] puede que se pierdan algunos archivos al ingerir un montón de archivos o que no se ingrese ningún archivo.
 
 Para superar esta situación, [!DNL Assets] ingesta un recurso a la vez (carga en serie) durante una operación de carga masiva, en lugar de ingerir todos los recursos al mismo tiempo.
 
@@ -145,11 +145,11 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, solo se pueden cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
+>En el modo Dynamic Media - Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
 
 >[!NOTE]
 >
->Para cargar recursos mediante FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las instancias de [!DNL Experience Manager] creación. Póngase en contacto con el Servicio de atención al cliente [de](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
+>Para cargar recursos mediante FTP en el modo Dynamic Media - Scene7, instale Feature Pack 18912 en las instancias de [!DNL Experience Manager] autor. Póngase en contacto con el Servicio de atención [al cliente de](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
 >
 >Si utiliza FTP para cargar recursos, se omitirán los ajustes de carga especificados en [!DNL Experience Manager] . En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
@@ -188,10 +188,10 @@ Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]
 |  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
-|  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
-|  | Opciones de Photoshop | Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las capas, especificar el nombre de las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> Tenga en cuenta que las plantillas no son compatibles con [!DNL Experience Manager].<br> Consulte [Configuración de las opciones](#setting-photoshop-upload-options)de carga de Photoshop. |
+|  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript y Illustrator. |
+|  | Opciones de Photoshop | Puede crear plantillas a partir de archivos Adobe® Photoshop®, mantener las capas, especificar cómo se llaman las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> Tenga en cuenta que las plantillas no son compatibles con [!DNL Experience Manager].<br> Consulte [Configuración de las opciones](#setting-photoshop-upload-options)de carga de Photoshop. |
 |  | Opciones de PDF | Puede rasterizar los archivos, extraer palabras de búsqueda y vínculos, generar automáticamente un catálogo electrónico, definir la resolución y elegir un espacio de color.<br> Tenga en cuenta que los catálogos electrónicos no son compatibles con [!DNL Experience Manager]. <br> Consulte [Configuración de opciones](#setting-pdf-upload-options)de carga de PDF. |
-|  | Opciones de Illustrator | Puede rasterizar archivos de Adobe Illustrator®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
+|  | Opciones de Illustrator | Puede rasterizar archivos Adobe Illustrator®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript y Illustrator. |
 |  | Opciones de eVideo | Puede transcodificar un archivo de vídeo seleccionando un ajuste preestablecido de vídeo.<br> Consulte [Configuración de las opciones](#setting-evideo-upload-options)de carga de eVideo. |
 |  | Valores preestablecidos de conjunto de lotes | Para crear un conjunto de imágenes o un conjunto de giros a partir de los archivos cargados, haga clic en la columna Activo del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido. Los ajustes preestablecidos se crean en la página Ajustes de aplicación/Valores preestablecidos de conjunto por lotes de Dynamic Media Classic.<br> Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de giros para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.<br> Consulte [Configuración de ajustes preestablecidos de conjunto por lotes al cargar](#setting-batch-set-presets-at-upload). |
 
@@ -221,9 +221,9 @@ Al cargar archivos de imagen, incluidos archivos AI, EPS y PSD, puede realizar l
 | | Tolerance | Optional.<br> Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.<br> Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation. |
 -->
 
-#### Definición de las opciones de carga de PostScript e Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Definición de las opciones de carga de PostScript y Illustrator {#setting-postscript-and-illustrator-upload-options}
 
-Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede darles formato de varias formas. Puede rasterizar los archivos, mantener el fondo transparente, elegir una resolución y elegir un espacio de color. Las opciones para dar formato a archivos PostScript e Illustrator están disponibles en el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga, en Opciones [!UICONTROL de] PostScript y Opciones de [!UICONTROL Illustrator].
+Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede darles formato de varias formas. Puede rasterizar los archivos, mantener el fondo transparente, elegir una resolución y elegir un espacio de color. Las opciones para dar formato a archivos PostScript y Illustrator están disponibles en el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga, en Opciones [!UICONTROL de] PostScript y Opciones [!UICONTROL de]Illustrator.
 
 | Opción | Subopción | Descripción |
 |---|---|---|
@@ -256,8 +256,8 @@ Utilice las opciones [!UICONTROL de recorte] y de Perfil [!UICONTROL de color de
 | Extender las capas al tamaño de fondo |  | Extiende el tamaño de las capas de imagen extraídas al tamaño de la capa de fondo. |
 | Nombres de capas |  | Las capas del archivo PSD se cargan como imágenes independientes. |
 |  | Nombre de la capa | Asigna a las imágenes los nombres de sus capas en el archivo PSD. Por ejemplo, una capa denominada Etiqueta de precio en el archivo PSD original se convierte en una imagen denominada Etiqueta de precio. Sin embargo, si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop (Fondo, Capa 1, Capa 2, etc.), las imágenes recibirán el nombre de sus números de capa en el archivo PSD, no de sus nombres de capa predeterminados. |
-|  | Número de Photoshop y de capa | Asigna a las imágenes los nombres de sus capas en el archivo PSD, sin tener en cuenta los nombres de las capas originales. Las imágenes reciben el nombre del archivo de Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo llamado Anuncio primavera.psd se denomina Anuncio primavera_2 aunque tenga un nombre no predeterminado en Photoshop. |
-|  | Nombre de Photoshop y capa | Nombra las imágenes después del archivo PSD seguido del nombre o el número de capa. El número de capa se utiliza si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop. Por ejemplo, una capa denominada Etiqueta de precio en un archivo PSD llamado Anuncio primavera se denomina Anuncio primavera_Etiqueta de precio. Una capa con el nombre predeterminado Capa 2 se denomina Anuncio primavera_2. |
+|  | Photoshop y número de capa | Asigna a las imágenes los nombres de sus capas en el archivo PSD, sin tener en cuenta los nombres de las capas originales. Las imágenes reciben el nombre del archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo llamado Anuncio primavera.psd se denomina Anuncio primavera_2 aunque tenga un nombre no predeterminado en Photoshop. |
+|  | Photoshop y nombre de capa | Nombra las imágenes después del archivo PSD seguido del nombre o el número de capa. El número de capa se utiliza si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop. Por ejemplo, una capa denominada Etiqueta de precio en un archivo PSD llamado Anuncio primavera se denomina Anuncio primavera_Etiqueta de precio. Una capa con el nombre predeterminado Capa 2 se denomina Anuncio primavera_2. |
 | Ancla |  | Especifique cómo se anclan las imágenes en plantillas que se generan a partir de la composición en capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo ocupen mejor el mismo espacio, independientemente de la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere que las imágenes de reemplazo ocupen el espacio asignado en la plantilla. |
 
 #### Establecer opciones de carga de PDF {#setting-pdf-upload-options}
@@ -479,10 +479,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
 1. Puede agregar o quitar representaciones de un recurso, excepto el original. Vaya a la ubicación del recurso para el que desea agregar o quitar representaciones.
 
-1. Haga clic en el recurso para abrir su página de recursos.
-
-   ![Página Detalles de recursos para administrar representaciones](assets/chlimage_1-15.png)
-
+1. Haga clic en el recurso para abrir su página.
 1. En la interfaz de Experience Manager, seleccione **[!UICONTROL Representaciones]** en la lista.
 
    ![Barra izquierda para abrir el menú y seleccionar la opción Representaciones](assets/renditions_menu.png)
@@ -515,7 +512,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    Del mismo modo, puede personalizar la imagen de la página Anotación superponiendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Superponer nodo de selector de representación en CRXDE para personalizar la imagen de la página de anotación](assets/chlimage_1-17.png)
+   ![Superponer nodo de selector de representación en CRXDE para personalizar la imagen de la página de anotación](assets/renditionpicker-node-crxde.png)
 
    Para configurar las dimensiones de representación de un recurso de vídeo, navegue hasta el `videopicker` nodo del repositorio de CRX en la ubicación `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, superponga el nodo y, a continuación, edite la propiedad adecuada.
 
@@ -671,21 +668,16 @@ Las herramientas de edición de la [!DNL Assets] interfaz le permiten realizar p
 
 1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción **Mano libre** permite recortar la imagen sin restricciones de proporción de aspecto.
 
-   ![Opciones de recorte](assets/chlimage_1-23.png)
+   ![Opciones de recorte](assets/crop-options.png)
 
 1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
 
-1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
-
-   ![Opciones de deshacer y rehacer](assets/chlimage_1-25.png)
-
+1. Utilice las opciones **** Deshacer ![](assets/do-not-localize/undo.png) deshacer barra de herramientas y **[!UICONTROL Rehacer]** ![](assets/do-not-localize/redo.png) rehacer barra de herramientas para revertir a la imagen sin recortar o conservar la imagen recortada, respectivamente.
 1. Haga clic en la opción **[!UICONTROL Rotar]** correspondiente para rotar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
 
-   ![Opciones de rotación hacia la derecha y hacia la izquierda](assets/chlimage_1-26.png)
+   ![Opciones de rotación hacia la derecha y hacia la izquierda](assets/do-not-localize/rotate-options.png)
 
-1. Haga clic en la opción **[!UICONTROL Voltear]** correspondiente para voltear la imagen horizontal o verticalmente.
-
-   ![opciones para voltear una imagen horizontal o verticalmente](assets/chlimage_1-27.png)
+1. Haga clic en las opciones de **[!UICONTROL voltear]** correspondientes para voltear la imagen horizontalmente ![reflejando la opción](assets/do-not-localize/flip-horizontal.png) horizontal o ![reflejar verticalmente la opción](assets/do-not-localize/flip-vertical.png)vertical.
 
 1. Para completar la edición de imágenes, haga clic en **[!UICONTROL Finalizar]** opción ![](assets/do-not-localize/check-ok-done-icon.png)Finalizar. Al hacer clic en **Finalizar** también se inicio la regeneración de las representaciones.
 
@@ -731,23 +723,23 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    * [Acciones rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
 
-   ![Opción Anotar](assets/chlimage_1-29.png)
+   ![Opción Anotar](assets/annotate-option.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 
-   ![Cuadro Comentario del cuadro de diálogo Añadir anotación](assets/chlimage_1-30.png)
+   ![Cuadro Comentario del cuadro de diálogo Añadir anotación](assets/annotation-comment-box.png)
 
 1. Para notificar a un usuario sobre una anotación, especifique la dirección de correo electrónico del usuario y agregue el comentario. Por ejemplo, para notificar a Aaron MacDonald sobre una anotación, escriba @aa. Las sugerencias para todos los usuarios coincidentes se muestran en una lista. Seleccione la dirección de correo electrónico de Aaron en la lista para etiquetarla con el comentario. Del mismo modo, puede etiquetar a más usuarios en cualquier lugar dentro de la anotación o antes o después de ella.
 
+   ![Especifique la dirección de correo electrónico del usuario y agregue un comentario para notificar al usuario](assets/annotation-add-user-email.png)
+
    >[!NOTE]
    >
-   >Para un usuario que no es administrador, las sugerencias solo aparecen si el usuario tiene permisos de lectura en */inicio* en Crx-de.
-
-   ![Especifique la dirección de correo electrónico del usuario y agregue un comentario para notificar al usuario](assets/chlimage_1-31.png)
+   >Para un usuario que no es administrador, las sugerencias solo aparecen si el usuario tiene permisos de lectura en la ruta `/home` de CRXDE.
 
 1. Después de agregar la anotación, haga clic en **[!UICONTROL Añadir]** para guardarla. Se envía una notificación para la anotación a Aaron.
 
-   ![Botón Añadir para guardar una anotación](assets/chlimage_1-32.png)
+   ![Botón Añadir para guardar una anotación](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -778,15 +770,15 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 1. En la interfaz de Experience Manager, seleccione **[!UICONTROL Línea de tiempo]**.
 
-   ![Opciones disponibles en Experience Manager](assets/chlimage_1-35.png)
+   ![Opción Línea de tiempo disponible en Experience Manager](assets/view-timeline.png)
 
 1. En la lista **[!UICONTROL Mostrar todo]** de la cronología, seleccione **[!UICONTROL Comentarios]** para filtrar los resultados según las anotaciones.
 
-   ![Mostrar toda la lista en la línea de tiempo](assets/chlimage_1-36.png)
+   ![Mostrar toda la lista en la línea de tiempo](assets/timeline-show-all-option.png)
 
    Haga clic en un comentario del panel **[!UICONTROL Línea de tiempo]** para realizar la vista correspondiente en la imagen.
 
-   ![Panel Línea de tiempo para vista de anotaciones en la imagen](assets/chlimage_1-37.png)
+   ![Panel Línea de tiempo para vista de anotaciones en la imagen](assets/timeline-view-annotations.png)
 
    Haga clic en **[!UICONTROL Eliminar]** para eliminar un comentario en particular.
 
@@ -806,11 +798,9 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 
 1. Para imprimir anotaciones específicas, seleccione las anotaciones en la línea de tiempo.
 
-   ![Seleccione una anotación de la línea de tiempo para imprimirla](assets/chlimage_1-38.png)
+   ![Seleccione una anotación de la línea de tiempo para imprimirla](assets/timeline-select-annotations.png)
 
    Para imprimir solo el estado de la revisión, selecciónelo en la línea de tiempo.
-
-   ![Para imprimir solo el estado de revisión de la anotación, selecciónelo en la línea de tiempo](assets/chlimage_1-39.png)
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
@@ -828,7 +818,7 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 
 1. Haga clic en **[!UICONTROL Imprimir]**. Según la opción elegida en el paso 2, el PDF generado muestra las anotaciones/el estado en la posición especificada. Por ejemplo, si elige imprimir las anotaciones y el estado de la revisión mediante la configuración **Superior izquierda**, la salida generada se parece al archivo PDF que se muestra aquí.
 
-   ![Anotación y estado de revisión en el PDF generado](assets/chlimage_1-42.png)
+   ![Anotación y estado de revisión en el PDF generado](assets/annotation-status-pdf.png)
 
 1. Opción de ![descarga para las opciones de](assets/do-not-localize/download.png) impresión en PDF ![o PDF](assets/do-not-localize/print.png) mediante las opciones de la parte superior derecha.
 
@@ -838,7 +828,7 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la configuración **[!UICONTROL de PDF de]** anotación desde Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![Configuración para imprimir anotaciones de recursos en documento PDF](assets/chlimage_1-44.png)
+   ![Configuración para imprimir anotaciones de recursos en documento PDF](assets/annotation-print-pdf-config.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
