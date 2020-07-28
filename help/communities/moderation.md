@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -112,7 +112,7 @@ El área de contenido contiene información para la UGC publicada:
 
 ### Carril de filtro {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![barra de filtros abiertos](assets/open-filterrail.png)
 
 El icono del panel lateral abre el carril del filtro. El carril del filtro, que aparece a la izquierda del área de contenido, proporciona diferentes filtros, cada uno de los cuales tiene un efecto inmediato en el UGC referenciado que aparece en el área de contenido.
 
@@ -141,17 +141,17 @@ Ruta del contenido limita la UGC de referencia mostrada a los anuncios colocados
 
 La búsqueda de texto limita la UGC referenciada mostrada a las publicaciones en las que se incluye el texto introducido.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![text-search](assets/text-search.png)
 
 #### Sitio {#site}
 
 El sitio limita el UGC referenciado mostrado a los anuncios en los sitios de comunidad seleccionados. Si no hay sitios marcados, se muestran todas las referencias a UGC.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![site-panel](assets/site-panel.png)
 
 >[!NOTE]
 >
->Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios no creados con el asistente [de creación de](/help/communities/sites-console.md)sitios, como los ejemplos de Geometrixx.
+>Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios no creados con el asistente [de creación del](/help/communities/sites-console.md)sitio, como los ejemplos de Geometrixx.
 >
 >Cuando un miembro de la comunidad de confianza accede a la consola de moderación masiva al publicar, solo se muestran las referencias a UGC creadas para los sitios de la comunidad que el miembro está autorizado a moderar y se pueden filtrar con el filtro del sitio.
 
@@ -189,8 +189,7 @@ Para agregar recursos adicionales en los que filtrar:
    * Por ejemplo, para filtrar los componentes de voto incluidos, introduzca:
 
       `Voting=social/tally/components/hbs/voting`
-
-![chlimage_1-215](assets/chlimage_1-215.png)
+   ![adicional-contenttype](assets/additional-contenttype.png)
 
 * Seleccione Guardar.
 * Actualice la consola Comunidades - Moderación.
@@ -216,25 +215,25 @@ El marcado limita el UGC referenciado mostrado a las publicaciones que están ma
 
 Una vez marcado un fragmento de contenido, permanece marcado hasta que se desmarca ese único fragmento de contenido seleccionando de nuevo el botón **Marcar** . Tenga en cuenta que no hay niveles de señalización, como importante o de seguimiento.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![marcar](assets/flagging.png)
 
 #### Miembros {#members}
 
 Los miembros limitan el UGC referenciado que se muestra en UGC publicado por el nombre del miembro introducido.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![miembros](assets/members.png)
 
 #### Enviado en el último {#posted-in-the-last}
 
 Publicado en Última limita el UGC referenciado que se muestra a las publicaciones realizadas en la última hora, día, semana, mes o año.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![post-last](assets/posted-last.png)
 
 #### Opinión {#sentiment}
 
 [La opinión](/help/communities/moderate-ugc.md#sentiment) limita la UGC referenciada mostrada a las publicaciones con un valor de opinión positivo, negativo o neutro.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![opinión](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
@@ -271,7 +270,7 @@ Para exponer los filtros personalizados en sitios de la comunidad existentes:
 
 [Las acciones](/help/communities/moderate-ugc.md#moderation-actions) de moderación se pueden realizar en una o varias selecciones realizadas en el área de contenido o al visualizar los detalles del contenido.
 
-Para moderar las publicaciones de forma masiva, en el área de contenido, haga clic en el icono Seleccionar ( ![selecticono](assets/selecticon.png)) de una publicación, que aparece al pasar el ratón sobre ella (escritorio) o al pulsar y mantener un dedo en la publicación (móvil). Al hacer esto, se entra en el modo de selección múltiple y ahora puede seleccionar las publicaciones subsiguientes que se van a moderar de forma masiva haciendo clic en ellas. Utilice los botones que se muestran en la barra de herramientas para realizar acciones de moderación en los anuncios seleccionados. Todas las acciones solicitarán confirmación.
+Para moderar las publicaciones de forma masiva, en el área de contenido, haga clic en el icono Seleccionar (![selector](assets/selecticon.png)) de una publicación, que aparece al pasar el ratón (escritorio) sobre ella o al pulsar y mantener un dedo en la publicación (móvil). Al hacer esto, se entra en el modo de selección múltiple y ahora puede seleccionar las publicaciones subsiguientes que se van a moderar de forma masiva haciendo clic en ellas. Utilice los botones que se muestran en la barra de herramientas para realizar acciones de moderación en los anuncios seleccionados. Todas las acciones solicitarán confirmación.
 
 Para moderar una sola publicación en el área de contenido, pase el ratón sobre ella (escritorio) o mantenga presionado el dedo sobre la publicación (móvil) para que aparezcan los botones en la publicación. Cuando se trabaja con un solo detalle de contenido, solo una acción de eliminación solicitará confirmación.
 
@@ -318,19 +317,19 @@ Presente en la vista de la tarjeta sobre los iconos de la acción de moderación
 
 #### respuesta {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![responder](assets/reply.png)
 
 Al trabajar con un solo anuncio, aparecerá un icono de respuesta si el tipo UGC admite respuestas y está configurado para permitir respuestas.
 
 #### Permitir {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![permitir](assets/allow.png)
 
 Al trabajar con un solo anuncio, el icono Permitir aparecerá cuando el anuncio se haya marcado o denegado. Si se marca, al seleccionar Permitir se borrarán todos los indicadores.
 
 #### Denegar {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![denegar](assets/deny.png)
 
 La acción **Denegar** moderación solo está disponible para contenido moderado y no aparece en contenido no moderado excepto en modo de selección múltiple.
 
@@ -342,31 +341,31 @@ El contenido que deja el estado pendiente nunca puede volver a un estado pendien
 
 #### Eliminar {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![delete](assets/delete.png)
 
 En el modo de selección única o masiva, puede seleccionar elementos y eliminarlos. La acción de eliminar resulta en un cuadro de diálogo de confirmación. Una vez eliminados, esos elementos desaparecen inmediatamente del área de contenido. **Una vez que se elimina UGC, se elimina permanentemente del repositorio y no se puede recuperar** posteriormente.
 
 #### Cerrar {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![cerrar](assets/close.png)
 
 Al trabajar con un solo anuncio, aparecerá un icono de cierre si el tipo UGC admite la capacidad de evitar más anuncios para ese recurso.
 
 #### Historial de moderación {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![moderación](assets/moderation.png)
 
 Al trabajar con una sola publicación, aparecerá un icono Historial de moderación al pasar el ratón por encima. Al seleccionar el icono, se mostrará un panel que contiene un historial de acciones realizadas con respecto al anuncio de UGC.
 
 Para volver a la visualización del área de contenido de varias publicaciones UGC, seleccione la X en la esquina superior derecha del panel de detalles de la vista.
 
-Por ejemplo :
+Por ejemplo:
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![moderación-historial](assets/moderation-history.png)
 
 #### Ver detalles {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![vista](assets/view.png)
 
 Al trabajar con una sola publicación, se pueden ver más detalles abriendo el UGC en modo detallado.
 
@@ -374,7 +373,7 @@ Para ello, pase el ratón sobre el anuncio para mostrar el icono y `View Detail`
 
 Para volver a la visualización del área de contenido de varias publicaciones UGC, seleccione la X en la esquina superior derecha del panel de detalles de la vista.
 
-Por ejemplo :
+Por ejemplo:
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 
