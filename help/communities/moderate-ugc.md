@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ La moderación de UGC es útil para reconocer las contribuciones positivas así 
 
 * [Almacenamiento de contenido de la comunidad](working-with-srp.md)
 
-* [consola de moderación masiva](moderation.md)
+* [Consola de moderación masiva](moderation.md)
 
    Los administradores y los moderadores [de la](/help/communities/users.md) comunidad del entorno público, así como los administradores del entorno de creación, pueden acceder a la consola Moderación. Esto es posible cuando el contenido de la comunidad se almacena en una tienda [](/help/communities/working-with-srp.md)común.
 
@@ -154,11 +157,15 @@ Es posible que un administrador o un moderador de la comunidad mueva uno o más 
 
 Al seleccionar la acción Cortar, el contenido se copia en un portapapeles. Se pueden copiar varias publicaciones y moverlas como un grupo a la nueva ubicación.
 
-![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
+![cutugc](assets/cutugc.png)
+
+![putbackugc](assets/putbackugc.png)
 
 En la otra ubicación, cuando el contenido está presente en el portapapeles, aparece un botón Pegar junto a Nueva publicación con un número que identifica el número de publicaciones que se pegarán. El botón Pegar incluye una opción para borrar el portapapeles en lugar de pegarlo.
 
-![chlimage_1-28](assets/chlimage_1-28.png) ![chlimage_1-29](assets/chlimage_1-29.png)
+![pasteugc](assets/pasteugc.png)
+
+![pasteugc1](assets/pasteugc1.png)
 
 ### Denegar {#deny}
 
@@ -214,7 +221,7 @@ Para habilitar el motor de detección de spam, siga estos pasos:
 
 1. Abra la consola [web](https://localhost:4502/system/console/configMgr), vaya a `/system/console/configMgr`.
 
-1. Busque la configuración de Moderación **automática de comunidades** AEM y edítela.
+1. Localice la configuración de Moderación **automática de** AEM Communities y edítela.
 1. Añada la entrada **[!UICONTROL SpamProcess]** .
 
 ![spamprocess](assets/spamprocess.png)
@@ -247,7 +254,7 @@ Desde la consola [de moderación](/help/communities/moderation.md)masiva, es pos
 
 #### Watchwords {#watchwords}
 
-Las comunidades de AEM proporcionan un analizador *de* palabras clave como un paso en el proceso para evaluar la [opinión](#sentiment). La contribución al valor de opinión que proporcionan las palabras clave se debe a una comparación de las palabras clave negativas y positivas utilizadas en el contenido publicado, así como de las palabras prohibidas.
+AEM comunidades proporciona un analizador *de* palabras clave como un paso en el proceso para evaluar la [opinión](#sentiment). La contribución al valor de opinión que proporcionan las palabras clave se debe a una comparación de las palabras clave negativas y positivas utilizadas en el contenido publicado, así como de las palabras prohibidas.
 
 #### Configurar la opinión y las palabras clave {#configure-sentiment-and-watchwords}
 
