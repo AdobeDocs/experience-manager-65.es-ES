@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -65,13 +65,14 @@ Para proteger el contenido del sitio de la comunidad del acceso de usuarios anó
 
 1. Vaya a Propiedades **de la página**.
 
-   ![site-authentication](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Vaya a la ficha **Avanzado** .
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![site-authentication](assets/site-authentication.png)
+
 1. Añada la ruta de la página de inicio de sesión. Por ejemplo, **/content/......./GetStarted**.
 1. Publique la página.
 
@@ -198,7 +199,7 @@ Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y nav
 
 ### Vínculo de página Web {#web-page-link}
 
-Vista la página Web básica incluida en el sitio seleccionando el vínculo Página Web. Las herramientas de creación de AEM estándar pueden utilizarse para añadir contenido a esta página en el entorno de creación.
+Vista la página Web básica incluida en el sitio seleccionando el vínculo Página Web. Las herramientas AEM de creación estándar pueden utilizarse para agregar contenido a esta página en el entorno de creación.
 
 Por ejemplo, vaya a la instancia de **autor** , abra la `engage` carpeta en la consola [Sitios de](/help/communities/sites-console.md)comunidades, seleccione el icono **Abrir sitio** para entrar al modo de edición de autor. A continuación, seleccione el modo de previsualización para seleccionar el `Web Page` vínculo y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
 
