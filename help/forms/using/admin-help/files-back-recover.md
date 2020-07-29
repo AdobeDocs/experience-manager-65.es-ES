@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2187'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ La aplicación y los archivos de datos de los que se debe realizar una copia de 
 
 Considere los siguientes puntos con respecto al backup y la recuperación:
 
-* Se debe realizar una copia de seguridad de la base de datos antes del repositorio GDS y AEM.
+* La base de datos debe estar respaldada por GDS y AEM repositorio.
 * Si necesita desglosar los nodos en un entorno agrupado en clúster para realizar copias de seguridad, asegúrese de que los nodos secundarios se cierran antes que el nodo principal. De lo contrario, puede provocar incoherencias en el clúster o en el servidor. Además, el nodo principal debe activarse antes que cualquier nodo secundario.
 * Para la operación de restauración de un clúster, el servidor de aplicaciones debe detenerse para cada nodo del clúster.
 
 ## Directorio de Almacenamientos de Documento global {#global-document-storage-directory}
 
-El GDS es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan en un proceso. La duración de los archivos de larga duración está pensada para abarcar uno o varios lanzamientos de un sistema de formularios AEM y puede abarcar días e incluso años. Estos archivos de larga duración pueden incluir archivos PDF, políticas y plantillas de formulario. Los archivos de larga duración son una parte fundamental del estado general de muchas implementaciones de formularios AEM. Si se pierden o dañan algunos o todos los documentos de larga duración, el servidor de formularios puede volverse inestable.
+El GDS es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan en un proceso. La duración de los archivos de larga duración está pensada para abarcar uno o más lanzamientos de un sistema de formularios AEM y puede abarcar días e incluso años. Estos archivos de larga duración pueden incluir archivos PDF, políticas y plantillas de formulario. Los archivos de larga duración son una parte crítica del estado general de muchas implementaciones de formularios AEM. Si se pierden o dañan algunos o todos los documentos de larga duración, el servidor de formularios puede volverse inestable.
 
 Los documentos de entrada para la invocación asíncrona de trabajos también se almacenan en el GDS y deben estar disponibles para procesar solicitudes. Por lo tanto, es importante que considere la fiabilidad del sistema de archivos que aloja el GDS y utilice una matriz redundante de discos independientes (RAID) u otra tecnología, según corresponda, según sus necesidades de calidad y nivel de servicio.
 
-La ubicación del GDS se determina durante el proceso de instalación de formularios AEM o posteriormente mediante la consola de administración. Además de mantener una ubicación de alta disponibilidad para GDS, también puede habilitar el almacenamiento de bases de datos para documentos. Consulte Opciones [de copia de seguridad cuando se utiliza la base de datos para el almacenamiento](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)de documento.
+La ubicación del GDS se determina durante el proceso de instalación de los formularios AEM o posteriormente mediante la consola de administración. Además de mantener una ubicación de alta disponibilidad para GDS, también puede habilitar el almacenamiento de bases de datos para documentos. Consulte Opciones [de copia de seguridad cuando se utiliza la base de datos para el almacenamiento](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)de documento.
 
 ### Ubicación de GDS {#gds-location}
 
@@ -55,13 +55,13 @@ La ubicación del GDS puede cambiarse durante una recuperación si la ubicación
 
 ### Opciones de copia de seguridad cuando se utiliza la base de datos para el almacenamiento de documento {#backup-options-when-database-is-used-for-document-storage}
 
-Puede activar el almacenamiento de documento de formularios AEM en la base de datos de formularios AEM mediante la consola de administración. Aunque esta opción mantiene todos los documentos persistentes en la base de datos, los formularios AEM siguen requiriendo el directorio GDS basado en el sistema de archivos, ya que se utiliza para almacenar archivos permanentes y temporales y recursos relacionados con las sesiones y las invocaciones de formularios AEM.
+Puede habilitar AEM almacenamiento de documento de formularios en la base de datos de formularios AEM mediante la consola de administración. Aunque esta opción mantiene todos los documentos persistentes en la base de datos, AEM formularios aún requieren el directorio GDS basado en el sistema de archivos porque se utiliza para almacenar archivos permanentes y temporales y recursos relacionados con sesiones e invocaciones de AEM formularios.
 
-Al seleccionar la opción &quot;Activar el almacenamiento de documento en la base de datos&quot; en Configuración del sistema principal en la consola de administración o mediante Configuration Manager, los formularios de AEM no permiten el modo de copia de seguridad de instantáneas ni el modo de copia de seguridad móvil. Por lo tanto, no es necesario administrar los modos de copia de seguridad mediante formularios AEM. Si utiliza esta opción, debe realizar una copia de seguridad del GDS una sola vez después de activar la opción. Cuando se recuperan formularios AEM de una copia de seguridad, no es necesario cambiar el nombre del directorio de copia de seguridad del GDS ni restaurar GDS.
+Al seleccionar la opción &quot;Activar almacenamiento de documento en la base de datos&quot; en Configuración del sistema principal en la consola de administración o mediante Configuration Manager, AEM formularios no permiten el modo de copia de seguridad de instantáneas ni el modo de copia de seguridad móvil. Por lo tanto, no es necesario administrar los modos de copia de seguridad mediante AEM formularios. Si utiliza esta opción, debe realizar una copia de seguridad del GDS una sola vez después de activar la opción. Cuando se recuperan AEM formularios de una copia de seguridad, no es necesario cambiar el nombre del directorio de copia de seguridad del GDS ni restaurar GDS.
 
-## Repositorio de AEM {#aem-repository}
+## AEM repositorio {#aem-repository}
 
-El repositorio de AEM (crx-repository) se crea si crx-repository está configurado durante la instalación de formularios AEM. La ubicación del directorio crx-repository se determina durante el proceso de instalación de formularios AEM. Se requiere la copia de seguridad y restauración del repositorio de AEM, junto con la base de datos y GDS, para obtener datos coherentes de formularios AEM en formularios AEM. El repositorio de AEM contiene datos para la solución de gestión de correspondencia, el administrador de formularios y el área de trabajo de AEM Forms.
+AEM repositorio (crx-repository) se crea si crx-repositorio está configurado al instalar AEM formularios. La ubicación del directorio crx-repository se determina durante el proceso de instalación de los formularios AEM. Se requiere AEM copia de seguridad y restauración del repositorio, junto con la base de datos y GDS para obtener datos de formularios AEM coherentes en AEM formularios. AEM repositorio contiene datos para Correspondence Management Solution, Forms Manager y AEM Forms Workspace.
 
 ### Solución de administración de correspondencia {#correspondence-management-solution}
 
@@ -75,25 +75,25 @@ el administrador de formularios optimiza el proceso de actualización, administr
 
 ### Espacio de trabajo de AEM Forms {#html-workspace}
 
-Espacio de trabajo de AEM Forms coincide con las funciones del espacio de trabajo de Flex (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más fácil de usar.
+Espacio de trabajo de AEM Forms coincide con las funciones de Flex Workspace (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más fácil de usar.
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
-Permite la administración de tareas en clientes sin Flash Player y Adobe Reader. Facilita la representación de formularios HTML, además de PDF forms y formularios Flex.
+Permite la administración de tareas en clientes sin Flash Player ni Adobe Reader. Facilita la representación de HTML Forms, además de PDF forms y formularios Flex.
 
 ## Base de datos de formularios AEM {#aem-forms-database}
 
-La base de datos de formularios AEM almacena contenido como artefactos de formulario, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos del GDS y del directorio raíz de Almacenamiento de contenido (para Content Services). Las copias de seguridad de la base de datos se pueden realizar en tiempo real sin interrupción del servicio y la recuperación puede realizarse en un punto específico en el tiempo o a un cambio concreto. En esta sección se describe cómo configurar la base de datos para que se pueda realizar una copia de seguridad en tiempo real.
+La base de datos de formularios AEM almacena contenido como artefactos de formulario, configuraciones de servicio, estado de proceso y referencias de base de datos a archivos del GDS y del directorio raíz de Content Almacenamiento (para Content Services). Las copias de seguridad de la base de datos se pueden realizar en tiempo real sin interrupción del servicio y la recuperación puede realizarse en un punto específico en el tiempo o a un cambio concreto. En esta sección se describe cómo configurar la base de datos para que se pueda realizar una copia de seguridad en tiempo real.
 
-En un sistema de formularios AEM configurado correctamente, el administrador del sistema y el administrador de la base de datos pueden colaborar fácilmente para recuperar el sistema a un estado coherente y conocido.
+En un sistema de formularios AEM correctamente configurado, el administrador del sistema y el administrador de la base de datos pueden colaborar fácilmente para recuperar el sistema a un estado coherente y conocido.
 
 Para realizar una copia de seguridad de la base de datos en tiempo real, debe utilizar el modo de instantánea o configurar la base de datos para que se ejecute en el modo de registro especificado. Esto permite realizar copias de seguridad de los archivos de base de datos mientras la base de datos está abierta y disponible para su uso. Además, la base de datos conserva sus registros de transacciones y reversión cuando se ejecuta en estos modos.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsoleto) es un sistema gestor de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con Content Services (obsoleto) finaliza el 31/12/2014. Consulte documento [del ciclo vital del producto de](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)Adobe. Para obtener información sobre la configuración de Content Services (obsoleto), consulte [Administración de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (obsoleto) es un sistema gestor de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con Content Services (obsoleto) finaliza el 31/12/2014. Consulte [Adobe del documento](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)del ciclo vital del producto. Para obtener información sobre la configuración de Content Services (obsoleto), consulte [Administración de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ### DB2 {#db2}
 
@@ -101,7 +101,7 @@ Configure la base de datos de DB2 para que se ejecute en modo de registro de arc
 
 >[!NOTE]
 >
->Si el entorno de formularios AEM se actualizó desde una versión anterior de formularios AEM y utiliza DB2, no se admite la copia de seguridad en línea. En este caso, debe cerrar los formularios de AEM y realizar una copia de seguridad sin conexión. Las versiones futuras de los formularios AEM admitirán la copia de seguridad en línea para los clientes que realicen la actualización.
+>Si el entorno de formularios AEM se actualizó desde una versión anterior de AEM formularios y utiliza DB2, no se admite la copia de seguridad en línea. En este caso, debe cerrar AEM formularios y realizar una copia de seguridad sin conexión. Las versiones futuras de AEM formularios admitirán el backup en línea para los clientes de actualización.
 
 IBM cuenta con un conjunto de herramientas y sistemas de ayuda para ayudar a los administradores de bases de datos a administrar sus tareas de backup y recuperación:
 
@@ -131,7 +131,7 @@ SQL Server también proporciona dos herramientas de backup y recuperación:
 * SQL Server Management Studio (GUI)
 * T-SQL (línea de comandos)
 
-Consulte [Estrategias](https://articles.techrepublic.com.com/5100-1035_61-1043671.md)de Backup y [Backup y Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Para obtener más información, consulte [Copia de seguridad y restauración](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -155,9 +155,9 @@ log-bin=logname
 
 El directorio raíz de Almacenamiento de contenido contiene el repositorio de Content Services (obsoleto) donde se almacenan todos los documentos, artefactos e índices. Se debe realizar una copia de seguridad del árbol del directorio raíz del Almacenamiento de contenido. En esta sección se describe cómo determinar la ubicación del directorio raíz de Almacenamiento de contenido para entornos independientes y agrupados.
 
-### Ubicación raíz de Almacenamiento de contenido (entorno independiente) {#content-storage-root-location-stand-alone-environment}
+### Ubicación raíz del Almacenamiento de contenido (entorno independiente) {#content-storage-root-location-stand-alone-environment}
 
-El directorio raíz de Almacenamiento de contenido se crea cuando se instalan los servicios de contenido (obsoleto). La ubicación del directorio raíz de Almacenamiento de contenido se determina durante el proceso de instalación de formularios AEM.
+El directorio raíz de Almacenamiento de contenido se crea cuando se instalan los servicios de contenido (obsoleto). La ubicación del directorio raíz de Almacenamiento de contenido se determina durante el proceso de instalación de los formularios AEM.
 
 La ubicación predeterminada para el directorio raíz de Almacenamiento de contenido es `[aem-forms root]/lccs_data`.
 
@@ -197,10 +197,10 @@ La ubicación predeterminada para el directorio raíz de índice está `[aem-for
 
 ## Fuentes instaladas por el cliente {#customer-installed-fonts}
 
-Si ha instalado fuentes adicionales en el entorno de formularios AEM, debe realizar una copia de seguridad por separado. Realice una copia de seguridad de todos los directorios de fuentes de Adobe y del cliente que se especifican en la consola de administración en Configuración > Sistema principal > Configuraciones. Asegúrese de realizar una copia de seguridad del directorio de fuentes completo.
+Si ha instalado fuentes adicionales en el entorno de formularios AEM, debe realizar una copia de seguridad por separado. Realice una copia de seguridad de todos los directorios de fuentes de Adobe y cliente que se especifican en la consola de administración en Configuración > Sistema principal > Configuraciones. Asegúrese de realizar una copia de seguridad del directorio de fuentes completo.
 
 >[!NOTE]
 >
->De forma predeterminada, las fuentes de Adobe instaladas con los formularios AEM se encuentran en el `[aem-forms root]/fonts` directorio.
+>De forma predeterminada, las fuentes de Adobe instaladas con AEM formularios se encuentran en el `[aem-forms root]/fonts` directorio.
 
 Si está reinicializando el sistema operativo en el equipo host y desea utilizar fuentes del sistema operativo anterior, también se debe realizar una copia de seguridad del contenido del directorio de fuentes del sistema. (Para obtener instrucciones específicas, consulte la documentación del sistema operativo).
