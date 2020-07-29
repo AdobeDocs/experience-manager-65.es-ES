@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Consulte también [Características de las Opciones](working-with-srp.md#charact
    * Opción de modos de ejecución:
       * Modo independiente
       * [Modo](solr.md#solrcloud-mode) SolrCloud (recomendado para entornos de producción)
-   * Opción de búsqueda multilingüe (MLS)
+   * Opción de búsqueda multilingüe (MLS):
       * [Instalación de MLS estándar](solr.md#installing-standard-mls)
       * [Instalación de MLS avanzados](solr.md#installing-advanced-mls)
 
@@ -91,9 +91,11 @@ Al crear, para acceder a la consola de configuración de Almacenamiento:
 
       * **[!UICONTROL Solr URL]**La URL que se utiliza para comunicarse con Solr en modo independiente.
 Deje en blanco si se ejecuta en el modo de SolrCloud.
+
          *Predeterminado*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Colección]**Solr El nombre de la colección Solr.
+
          *Predeterminado*: collection1
 
 * Seleccione **[!UICONTROL Enviar]**
@@ -222,7 +224,7 @@ Para configurar el MSRP para un entorno de demostración o desarrollo, consulte 
 
 Compruebe la configuración de la opción de almacenamiento para asegurarse de que MSRP se ha configurado como el proveedor predeterminado. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP.
 
-En todas las instancias de AEM de creación y publicación, vuelva a la consola [de configuración de](srp-config.md) Almacenamiento o compruebe el repositorio de AEM:
+En todas las instancias de creación y publicación de AEM, vuelva a la consola [de configuración de](srp-config.md) Almacenamiento o compruebe el repositorio de AEM:
 
 * En JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -237,7 +239,7 @@ Hay una herramienta de código abierto disponible en GitHub para este propósito
 
 * [Herramienta de migración UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-La herramienta de migración se puede personalizar para exportar UGC desde versiones anteriores de comunidades sociales de AEM para importarlos a AEM Communities 6.1 o posterior.
+La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de comunidades sociales AEM para importarlos a AEM Communities 6.1 o posterior.
 
 ### Error: proveedor de campos no definido {#error-undefined-field-provider-id}
 
