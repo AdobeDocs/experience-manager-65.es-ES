@@ -11,7 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 080885a4fddbbce52968d3c324d6499ff1036de2
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 48%
 
 ---
 
@@ -24,9 +27,9 @@ AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistri
 
 ## Instalar Designer {#install-designer}
 
-Designer está disponible como instalador independiente y también se incluye en WorkBench. Si utiliza un instalador independiente para Designer, siga estos pasos:
+Designer está disponible como instalador independiente y también se incluye en WorkBench. Si utiliza un instalador independiente para Designer, lleve a cabo los siguientes pasos:
 
-1. Póngase en contacto con el servicio de asistencia técnica de Adobe para descargar el instalador de Designer.
+1. Póngase en contacto con la asistencia técnica de Adobe para descargar el instalador de Designer.
 
    >[!NOTE]
    >
@@ -35,7 +38,6 @@ Designer está disponible como instalador independiente y también se incluye en
 1. Inicie el instalador de Designer haciendo doble clic en Setup.exe.
 1. Continúe y proporcione sus detalles y número de serie en la pantalla Personalizar.
 1. Si acepta el acuerdo de licencia, haga clic en Siguiente para continuar.
-1. (Opcional) Si desea instalar Designer en una ubicación de su elección, modifique la ruta de instalación. Haga clic en Siguiente.
+1. (Opcional) Si desea instalar Designer en una ubicación de su elección, modifique la ruta de instalación. Haga clic en Siguiente. 
 1. Haga clic en Atrás para cambiar las preferencias. Para instalar Designer, haga clic en Instalar.
 1. Haga clic en Finalizar cuando finalice la instalación.
-
