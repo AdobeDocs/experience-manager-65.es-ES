@@ -3,7 +3,7 @@ title: Crear y configurar páginas del editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 1%
@@ -171,7 +171,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -204,17 +204,17 @@ Al crear la página Editor de recursos, se recomienda crear la página directame
 Para crear una página del editor de recursos:
 
 1. En la ficha **[!UICONTROL Sitios]** web, navegue hasta el lugar donde desee crear una página de editor de recursos y haga clic en **Nuevo**.
-1. Seleccione **Geometrixx Asset Editor** y haga clic en **Crear**. La nueva página se crea y la página se enumera en la ficha **Sitios** web.
+1. Seleccione Editor **de recursos de** Geometrixx y haga clic en **Crear**. La nueva página se crea y la página se enumera en la ficha **Sitios** web.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
 La página básica creada con la plantilla Editor de recursos de Geometrixx tiene el siguiente aspecto:
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
 Para personalizar la página del Editor de recursos, utilice elementos de la barra de tareas. La página Editor de recursos a la que se accede desde el Centro **de prensa de** Geometrixx es una versión personalizada de una página basada en esta plantilla:
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### Configuración de un editor de recursos para abrirlo desde una página de uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -262,7 +262,7 @@ Para agregar componentes del editor de recursos:
 
 #### Campo de texto y formulario de metadatos: configuración del componente Metadatos de Vista {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-El formulario de metadatos es un formulario que incluye un inicio y una acción final. En el medio, se introducen campos **de texto** . Consulte [Formularios](/help/sites-authoring/default-components-foundation.md#form-component) para obtener más información sobre cómo trabajar con formularios.
+El formulario de metadatos es un formulario que incluye un inicio y una acción final. En el medio, se introducen campos **de texto** . Consulte [Forms](/help/sites-authoring/default-components-foundation.md#form-component) para obtener más información sobre cómo trabajar con formularios.
 
 1. Cree una acción de inicio haciendo clic en **Editar** en el área de Inicio del formulario. Si lo desea, puede introducir un título de cuadro. De forma predeterminada, el título Cuadro es **Metadatos**. Active la casilla de verificación Validación del cliente si desea que se genere el código de cliente java-script para la validación.
 
@@ -338,7 +338,7 @@ Haga clic con el botón Doble en el componente de miniatura para abrir el cuadro
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
-A continuación se muestra un ejemplo de un componente Miniatura relleno:
+A continuación se muestra un ejemplo de un componente Miniatura rellenado:
 
 ![screen_shot_2012-04-23at34815pm](assets/screen_shot_2012-04-23at34815pm.png)
 
@@ -394,7 +394,7 @@ Con Recursos Experience Manager puede realizar cambios en varios recursos a la v
 
 Para editar varios recursos con la página Editor de recursos:
 
-1. Abra la página Centro **de** prensa de Geometrixx:
+1. Abra la página Centro de **prensa** de Geometrixx:
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Seleccione los recursos:
