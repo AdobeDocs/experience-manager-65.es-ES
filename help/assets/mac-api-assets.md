@@ -3,9 +3,9 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
+source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1583'
 ht-degree: 1%
 
 ---
@@ -254,8 +254,11 @@ Mueve una carpeta o un recurso de la ruta dada a un nuevo destino.
 
 **Solicitud**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-No usar `/content/dam` en la dirección URL. Un comando de ejemplo que se moverá al sobrescribir es:
-`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
+No usar `/content/dam` en la dirección URL. Un comando de ejemplo para mover recursos y sobrescribir los existentes es:
+
+```shell
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+```
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
