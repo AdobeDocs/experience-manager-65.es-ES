@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Los pasos genéricos para realizar cualquier personalización son:
 
-1. Inicie sesión en CRXDE Lite accediendo `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Inicie sesión en el CRXDE Lite accediendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Cree una carpeta denominada `ws`at `/apps`, si no existe. Haga clic en **[!UICONTROL Guardar todo]**.
 1. Vaya a `/apps/ws`la ficha **[!UICONTROL Control de acceso]** y desplácese hasta ella.
 1. En la lista **[!UICONTROL Control de acceso]** , haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Haga clic **[!UICONTROL +]** nuevamente.
@@ -37,7 +37,7 @@ Los pasos genéricos para realizar cualquier personalización son:
 1. Copie la `/libs/ws/locales` carpeta en la `/apps/ws` carpeta. Haga clic en **[!UICONTROL Guardar todo]**.
 1. Actualice las referencias y las rutas relativas en el `GET.jsp` archivo, como se muestra a continuación, y haga clic en **[!UICONTROL Guardar todo]**.
 
-   ```jsp
+   ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
    ```
 
@@ -49,14 +49,14 @@ Los pasos genéricos para realizar cualquier personalización son:
 
    1. Abrir `/apps/ws/html`.jsp y cambiar de
 
-   ```css
+   ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
    ```
 
    hasta
 
-   ```css
+   ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/style.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="css/newStyle.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/jquery-ui.css"/>
@@ -68,13 +68,13 @@ Los pasos genéricos para realizar cualquier personalización son:
 
 1. En el archivo /apps/ws/html.jsp, cambie de
 
-   ```css
+   ```jsp
    <script data-main="js/main" src="js/libs/require/require.js"></script>
    ```
 
    hasta
 
-   ```css
+   ```jsp
    <script data-main="js/main" src="../../libs/ws/js/libs/require/require.js"></script>
    ```
 
