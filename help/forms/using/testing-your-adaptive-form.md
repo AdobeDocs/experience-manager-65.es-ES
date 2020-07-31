@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
+source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Los AEM Forms proporcionan un entorno de prueba, Calvin, para automatizar las pr
 
 Los grupos de pruebas tienen una colección de casos de prueba. Puede tener varios grupos de pruebas. Se recomienda disponer de un grupo de pruebas independiente para cada formulario. Para crear un grupo de pruebas:
 
-1. Inicie sesión como administrador en la instancia de creación de AEM Forms. Abra CRXDE Lite. Puede tocar Logotipo de AEM > **Herramientas** > **General** > **CRXDE Lite** o abrir la [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) URL en un navegador para abrir CRXDE Lite.
+1. Inicie sesión como administrador en la instancia de creación de AEM Forms. Abra CRXDE Lite. Puede tocar AEM logotipo > **Herramientas** > **General** > **CRXDE Lite** o abrir la [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) URL en un navegador para abrir CRXDE Lite.
 
 1. Vaya a /etc/clientlibs en CRXDE Lite. Haga clic con el botón derecho en la subcarpeta /etc/clientlibs y haga clic en **Crear** > **Crear nodo.** En el campo Nombre, escriba **WeRetailFormTestCases**. Seleccione el tipo como **cq:ClientLibraryFolder** y haga clic en **Aceptar**. Crea un nodo. Puede utilizar cualquier nombre en lugar de WeRetailFormTestCases.
 1. Añada las siguientes propiedades al nodo WeRetailFormTestCases y toque **Guardar todo**.
@@ -101,7 +101,7 @@ Asegúrese de que cada propiedad se agrega a un cuadro independiente como se mue
 
    El código anterior crea un grupo de pruebas llamado **We Retail - Tests**.
 
-1. Abra la interfaz de usuario de AEM Testing (AEM > Herramientas > Operaciones > Pruebas). El grupo de pruebas - **We Retail - Tests** - aparece en la interfaz de usuario.
+1. Abra AEM interfaz de usuario de prueba (AEM > Herramientas > Operaciones > Pruebas). El grupo de pruebas - **We Retail - Tests** - aparece en la interfaz de usuario.
 
    ![we-Retail-test-suite](assets/we-retail-test-suite.png)
 
@@ -177,7 +177,7 @@ Una acción es una actividad específica de un formulario adaptable, como hacer 
 
 1. Cree un archivo `prefillTest.js`en el nodo **[!UICONTROL WeRetailFormTests]** . Añada el código siguiente en el archivo. El código crea un caso de prueba. El caso de prueba antepone todos los campos de un formulario y valida algunos campos para asegurarse de que se introducen los valores correctos.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
    
@@ -216,7 +216,7 @@ Un grupo de pruebas puede tener varios casos de prueba. Puede ejecutar todos los
 * Un icono de marca de verificación indica una prueba pasada: ![save_icon](assets/save_icon.svg)
 * El icono &quot;X&quot; indica que la prueba ha fallado: ![close-icon](assets/close-icon.svg)
 
-1. Vaya al icono de AEM > **[!UICONTROL Herramientas]**> **[!UICONTROL Operaciones]**> **[!UICONTROL Pruebas]**
+1. Vaya a AEM icono > **[!UICONTROL Herramientas]**> **[!UICONTROL Operaciones]**> **[!UICONTROL Pruebas]**
 1. Para ejecutar todas las pruebas de Test Suite:
 
    1. En el panel Pruebas, toque **[!UICONTROL We Retail - Tests (1)]**. Se expande el conjunto para mostrar la lista de la prueba.
