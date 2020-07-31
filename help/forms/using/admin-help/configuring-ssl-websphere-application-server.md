@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Para habilitar SSL, WebSphere necesita acceder a una cuenta de usuario en el reg
 1. Haga clic con el botón derecho en Usuarios y seleccione **Nuevo usuario**.
 1. Escriba un nombre de usuario y una contraseña en los cuadros correspondientes y escriba cualquier otra información que necesite en los cuadros restantes.
 1. Anule la selección de **Usuario debe cambiar la contraseña en el próximo inicio de sesión**, haga clic en **Crear** y, a continuación, haga clic en **Cerrar**.
-1. Haga clic en **Usuarios**, haga clic con el botón derecho en el usuario que acaba de crear y seleccione **Propiedades**.
+1. Haga clic en **Usuarios**, haga clic con el botón secundario en el usuario que acaba de crear y seleccione **Propiedades**.
 1. Haga clic en la ficha **Miembro** y, a continuación, haga clic en **Añadir**.
 1. En el cuadro Escriba los nombres de los objetos que desea seleccionar, haga clic en Comprobar nombres para asegurarse de que el nombre del grupo es correcto. `Administrators`
 1. Haga clic en **Aceptar** y, a continuación, en **Aceptar** de nuevo.
@@ -127,7 +127,7 @@ Los almacenes de confianza y los almacenes de claves se pueden crear con la util
 
    El perfil ahora se ejecuta con la configuración SSL personalizada y el certificado.
 
-## Activación de la compatibilidad con formularios nativos de AEM {#enabling-support-for-aem-forms-natives}
+## Habilitación de la compatibilidad con nativos de formularios AEM {#enabling-support-for-aem-forms-natives}
 
 1. En la Consola administrativa de WebSphere, seleccione **Seguridad > Seguridad** global.
 1. En la sección Autenticación, expanda la seguridad **de** RMI/IIOP y haga clic en Comunicaciones **entrantes de** CSIv2.
@@ -178,7 +178,7 @@ Realice los siguientes pasos para establecer que el puerto sea dinámico y resol
 1. Abra el `[aem-forms_root]`archivo \crx-repository\launchpad\sling.properties para editarlo.
 1. Busque la `sling.bootdelegation.ibm` propiedad y añádala `com.ibm.websphere.ssl.*`a su campo de valor. El campo actualizado tiene el siguiente aspecto:
 
-   ```java
+   ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
