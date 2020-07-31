@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
 
 A continuación se muestra una implementación de muestra de una plantilla personalizada en la que Forms Portal adquiere un diseño de tarjeta de gobierno de Geometrixx personalizado para el componente Buscar y listar.
 
-```xml
+```html
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
@@ -174,7 +174,7 @@ Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, 
 1. No utilice comillas simples (&#39;) en ninguna plantilla personalizada.
 1. Para metadatos personalizados, almacene esta propiedad únicamente en el nodo **jcr:content/metadata** . Si lo almacena en cualquier otro lugar, Forms Portal no puede mostrar los metadatos.
 1. Asegúrese de que el nombre de los metadatos personalizados o los metadatos existentes no incluya dos puntos ( : ). Si lo hace, no puede mostrarlo en la interfaz de usuario.
-1. **los datos repetibles** no tienen importancia para un componente **de vínculo** . Adobe recomienda evitar el uso de esta propiedad en la plantilla de un componente Vínculo.
+1. **los datos repetibles** no tienen importancia para un componente **de vínculo** . Adobe recomienda evitar el uso de esta propiedad en la plantilla de un componente de vínculo.
 
 ## Artículos relacionados
 
