@@ -1,6 +1,6 @@
 ---
-title: Activación del inicio de sesión único en formularios AEM
-seo-title: Activación del inicio de sesión único en formularios AEM
+title: Habilitar el inicio de sesión único en AEM formularios
+seo-title: Habilitar el inicio de sesión único en AEM formularios
 description: Obtenga información sobre cómo habilitar el inicio de sesión único (SSO) mediante encabezados HTTP y SPNEGO.
 seo-description: Obtenga información sobre cómo habilitar el inicio de sesión único (SSO) mediante encabezados HTTP y SPNEGO.
 uuid: 2bc08b4f-dcbe-4a16-9025-32fc14605e13
@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Activación del inicio de sesión único en formularios AEM{#enabling-single-sign-on-in-aem-forms}
+# Habilitar el inicio de sesión único en AEM formularios{#enabling-single-sign-on-in-aem-forms}
 
-Los formularios AEM ofrecen dos formas de activar el inicio de sesión único (SSO): encabezados HTTP y SPNEGO.
+AEM formularios proporciona dos formas de habilitar el inicio de sesión único (SSO): encabezados HTTP y SPNEGO.
 
 Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios AEM no son necesarias y no aparecen si el usuario ya está autenticado a través de su portal de compañía.
 
-Si los formularios AEM no pueden autenticar a un usuario mediante cualquiera de estos métodos, se redirige al usuario a una página de inicio de sesión.
+Si AEM formularios no pueden autenticar a un usuario mediante cualquiera de estos métodos, se redirige al usuario a una página de inicio de sesión.
 
 ## Habilitar SSO mediante encabezados HTTP {#enable-sso-using-http-headers}
 
@@ -56,7 +56,7 @@ Para ver los pasos para configurar los referentes permitidos, consulte [Configur
 
 ## Habilitar SSO mediante SPNEGO {#enable-sso-using-spnego}
 
-Puede utilizar el mecanismo de negociación simple y protegido de GSSAPI (SPNEGO) para habilitar el inicio de sesión único (SSO) al utilizar Active Directory como servidor LDAP en un entorno de Windows. Cuando SSO está activado, las páginas de inicio de sesión del usuario de los formularios AEM no son necesarias y no aparecen.
+Puede utilizar el mecanismo de negociación simple y protegido de GSSAPI (SPNEGO) para habilitar el inicio de sesión único (SSO) al utilizar Active Directory como servidor LDAP en un entorno de Windows. Cuando se habilita SSO, las páginas de inicio de sesión del usuario de los formularios AEM no son necesarias y no aparecen.
 
 También puede activar SSO mediante encabezados HTTP. (Consulte [Habilitar SSO mediante encabezados](enabling-single-sign-on-aem.md#enable-sso-using-http-headers)HTTP).
 
@@ -75,7 +75,7 @@ También puede activar SSO mediante encabezados HTTP. (Consulte [Habilitar SSO m
    * Añada Kerberos como proveedor de autenticación. Proporcione la siguiente información en la página Nueva o Editar autenticación para Kerberos:
 
       * **Proveedor de autenticación:** Kerberos
-      * **IP DNS:** La dirección IP DNS del servidor en el que se ejecutan los formularios AEM. Puede determinar esta dirección IP ejecutándose `ipconfig/all` en la línea de comandos.
+      * **IP DNS:** La dirección IP DNS del servidor en el que se ejecutan AEM formularios. Puede determinar esta dirección IP ejecutándose `ipconfig/all` en la línea de comandos.
       * **Host KDC:** Nombre de host completo o dirección IP del servidor de Active Directory utilizado para la autenticación
       * **Usuario de servicio:** El nombre principal de servicio (SPN) pasado a la herramienta KtPass. En el ejemplo utilizado anteriormente, el usuario del servicio es `HTTP/lcserver.um.lc.com`.
       * **Dominio de servicio:** Nombre de dominio para Active Directory. En el ejemplo utilizado anteriormente, el nombre de dominio es `UM.LC.COM.`
@@ -86,7 +86,7 @@ También puede activar SSO mediante encabezados HTTP. (Consulte [Habilitar SSO m
 
 ### Crear una cuenta de usuario {#create-a-user-account}
 
-1. En SPNEGO, registre un servicio como usuario en Active Directory en el controlador de dominio para representar formularios AEM. En el controlador de dominio, vaya a Menú Inicio > Herramientas administrativas > Usuarios y equipos de Active Directory. Si Herramientas administrativas no está en el menú Inicio, utilice el Panel de control de Campaign.
+1. En SPNEGO, registre un servicio como usuario en Active Directory en el controlador de dominio para representar AEM formularios. En el controlador de dominio, vaya a Menú Inicio > Herramientas administrativas > Usuarios y equipos de Active Directory. Si Herramientas administrativas no está en el menú Inicio, utilice el Panel de control de Campaign.
 1. Haga clic en la carpeta Usuarios para mostrar una lista de usuarios.
 1. Haga clic con el botón derecho en la carpeta de usuario y seleccione Nuevo > Usuario.
 1. Escriba el nombre y los apellidos y el nombre de inicio de sesión del usuario y, a continuación, haga clic en Siguiente. Por ejemplo, establezca los siguientes valores:
@@ -121,14 +121,14 @@ También puede activar SSO mediante encabezados HTTP. (Consulte [Habilitar SSO m
 
 Si aparece este error:
 
-```java
+```shell
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 intente especificar el usuario como spnegodemo@um.lc.com:
 
-```java
+```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
@@ -153,7 +153,7 @@ Si se accede al servidor con el nombre del equipo, como https://lcserver:8080, n
 1. Haga clic en el icono de Intranet local y, a continuación, haga clic en Sitios.
 1. Haga clic en Avanzada y, en el cuadro Añadir este sitio Web a la zona, escriba la dirección URL del servidor de formularios. For example, type `https://lcserver.um.lc.com`
 1. Haga clic en Aceptar hasta que se cierren todos los cuadros de diálogo.
-1. Compruebe la configuración accediendo a la URL del servidor de formularios AEM. Por ejemplo, en el cuadro URL del explorador, escriba `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Compruebe la configuración accediendo a la dirección URL del servidor de formularios AEM. Por ejemplo, en el cuadro URL del explorador, escriba `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Configurar Mozilla Firefox**
 
