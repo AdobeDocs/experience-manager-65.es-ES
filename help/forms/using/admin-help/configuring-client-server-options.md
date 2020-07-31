@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '10273'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Para obtener información sobre el funcionamiento de la concesión y sincronizac
 
 **Permitir acceso de usuarios anónimos:** Seleccione esta opción para habilitar la capacidad de crear políticas personales y compartidas que permitan a los usuarios anónimos abrir documentos protegidos por políticas. (Los usuarios que no tienen cuentas pueden acceder al documento, pero no pueden iniciar sesión en seguridad de documento ni utilizar otros documentos protegidos por políticas).
 
-**Deshabilitar el acceso a los clientes de la versión 7:** Especifica si los usuarios pueden utilizar Acrobat o Reader 7.0 para conectarse al servidor. Cuando se selecciona esta opción, los usuarios deben utilizar Acrobat o Reader 8.0 y posterior para completar las operaciones de seguridad de documento en documentos PDF. Si las políticas requieren que Acrobat o Reader 8.0 y posterior se ejecuten en modo certificado al abrir documentos protegidos por políticas, debe desactivar el acceso a Acrobat o Reader 7. (Consulte Especificación de los permisos de documento para usuarios y grupos).
+**Deshabilitar el acceso a los clientes de la versión 7:** Especifica si los usuarios pueden utilizar Acrobat o Reader 7.0 para conectarse al servidor. Cuando se selecciona esta opción, los usuarios deben utilizar Acrobat o Reader 8.0 y posterior para completar las operaciones de seguridad de documento en documentos PDF. Si las políticas requieren que Acrobat o Reader 8.0 y posterior se ejecuten en modo certificado al abrir documentos protegidos por políticas, debe deshabilitar el acceso a Acrobat o Reader 7. (Consulte Especificación de los permisos de documento para usuarios y grupos).
 
 **Permitir acceso sin conexión por documento** Seleccione esta opción para especificar el acceso sin conexión por documento. Si esta configuración está habilitada, el usuario tendrá acceso sin conexión solo a los documentos que el usuario haya abierto en línea al menos una vez.
 
@@ -55,11 +55,11 @@ Para obtener información sobre el funcionamiento de la concesión y sincronizac
 
 **Permitir autenticación** extendida Seleccione esta opción para habilitar la autenticación extendida y, a continuación, introduzca la URL de aterrizaje de autenticación extendida.
 
-Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de formularios AEM. Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar de la contraseña/nombre de usuario de los formularios AEM, desde Acrobat y Reader Client. De forma predeterminada, la URL de aterrizaje contiene *localhost* como nombre de servidor. Reemplace el nombre del servidor con un nombre de host completo. El nombre de host en la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base, si aún no se ha habilitado la autenticación extendida. Consulte [Añadir el proveedor](configuring-client-server-options.md#add-the-extended-authentication-provider)de autenticación ampliado.
+Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de formularios AEM. Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar de AEM nombre de usuario/contraseña de formularios, desde Acrobat y el cliente de Reader. De forma predeterminada, la URL de aterrizaje contiene *localhost* como nombre de servidor. Reemplace el nombre del servidor con un nombre de host completo. El nombre de host en la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base, si aún no se ha habilitado la autenticación extendida. Consulte [Añadir el proveedor](configuring-client-server-options.md#add-the-extended-authentication-provider)de autenticación ampliado.
 
 ***nota **: La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posterior.*
 
-**Ancho de control HTML preferido para la autenticación** extendida Especifique la anchura del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales de usuario.
+**Ancho de control HTML preferido para autenticación** extendida Especifique la anchura del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales de usuario.
 
 **Alto de control HTML preferido para autenticación** extendida Especifique la altura del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales de usuario.
 
@@ -83,7 +83,7 @@ Para vista de usuarios y grupos en dominios seleccionados durante las búsquedas
 
 La lista visible de usuario y grupo es visible para el coordinador de conjuntos de políticas y se utiliza para restringir los dominios que el usuario final puede examinar al elegir usuarios o grupos para agregar a las políticas. Si no se realiza esta tarea, el coordinador de conjuntos de políticas no encontrará usuarios ni grupos para agregar a la política. Puede haber más de un coordinador de conjunto de políticas para un conjunto de políticas determinado.
 
-1. Después de instalar y configurar el entorno de formularios de AEM con seguridad de documento, configure todos los dominios adecuados en Administración de usuarios. <!-- Fix broken link (See Setting up and managing domains) -->
+1. Después de instalar y configurar el entorno de formularios AEM con seguridad de documento, configure todos los dominios adecuados en Administración de usuarios. <!-- Fix broken link (See Setting up and managing domains) -->
 
    ***nota **: La creación de dominios debe realizarse antes de poder crear políticas.*
 
@@ -95,7 +95,7 @@ La lista visible de usuario y grupo es visible para el coordinador de conjuntos 
 
 ## Añadir el proveedor de autenticación extendido {#add-the-extended-authentication-provider}
 
-Los formularios AEM proporcionan una configuración de muestra que puede personalizar para su entorno. Siga estos pasos:
+AEM formularios proporciona una configuración de ejemplo que puede personalizar para su entorno. Siga estos pasos:
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Los formularios AEM proporcionan una configuración de muestra que puede persona
 
 ### Añadir direcciones URL de redireccionamiento de SSO para autenticación extendida {#add-sso-redirect-urls-for-extended-authentication}
 
-Con la autenticación extendida activada, los usuarios que abren un documento protegido por una política en Acrobat XI o Reader XI obtienen un cuadro de diálogo para la autenticación. Este cuadro de diálogo carga la página HTML especificada como URL de aterrizaje de autenticación extendida en la configuración del servidor de seguridad de documento. Consulte Configuración [del servidor](configuring-client-server-options.md#server-configuration-settings).
+Con la autenticación extendida habilitada, los usuarios que abren un documento protegido por una política en Acrobat XI o Reader XI obtienen un cuadro de diálogo para la autenticación. Este cuadro de diálogo carga la página HTML especificada como URL de aterrizaje de autenticación extendida en la configuración del servidor de seguridad de documento. Consulte Configuración [del servidor](configuring-client-server-options.md#server-configuration-settings).
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Con la autenticación extendida activada, los usuarios que abren un documento pr
 
 La seguridad de documento permite utilizar documentos protegidos por políticas sin conexión a Internet o a la red. Esta capacidad requiere que la directiva permita el acceso sin conexión, como se describe en [Especificar los permisos de documento para usuarios y grupos](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Antes de que un documento que tenga una política de este tipo pueda utilizarse sin conexión, el destinatario debe abrir el documento mientras está en línea y habilitar el acceso sin conexión, haciendo clic en Sí cuando se le solicite. También se podrá pedir al destinatario que autentique su identidad. El destinatario puede utilizar documentos sin conexión durante el período de concesión sin conexión especificado en la política.
 
-Cuando finaliza el período de concesión sin conexión, el destinatario debe volver a sincronizarse con la seguridad de documento abriendo un documento en línea o utilizando un comando de menú de extensiones de Acrobat o Acrobat Reader DC para sincronizarlo. (Consulte la Ayuda *de* Acrobat o la Ayuda *correspondiente de extensiones de* Acrobat Reader DC).
+Cuando finaliza el período de concesión sin conexión, el destinatario debe volver a sincronizarse con la seguridad de documento, ya sea abriendo un documento en línea o utilizando un comando de menú de extensiones de Acrobat o Acrobat Reader DC para sincronizar. (Consulte la Ayuda *de* Acrobat o la Ayuda *correspondiente de extensiones de* Acrobat Reader DC).
 
 Dado que los documentos que permiten el acceso sin conexión requieren almacenar en caché material clave en el equipo en el que los archivos se almacenan sin conexión, el archivo puede verse comprometido si un usuario no autorizado puede obtener el material clave. Para compensar esta posibilidad, se proporcionan opciones de rollover de claves programadas y manuales que puede configurar para evitar que una persona no autorizada utilice la clave para acceder al documento.
 
@@ -196,7 +196,7 @@ Puede seleccionar estos tipos de eventos para la auditoría:
 * eventos de documento protegidos por políticas, como intentos de usuarios autorizados o no autorizados de abrir documentos
 * eventos de políticas, como crear, cambiar, eliminar, habilitar y deshabilitar políticas
 * eventos de usuario, como invitaciones y registros de usuarios externos, cuentas de usuario activadas y desactivadas, cambios en las contraseñas de los usuarios y actualizaciones de perfil
-* eventos de formularios AEM, como faltas de coincidencia de versiones, proveedores de autorización y servidor de directorios no disponibles y cambios en la configuración del servidor
+* eventos de formularios AEM, como faltas de coincidencia de versiones, proveedores de autorización y servidor de directorios no disponibles y cambios de configuración del servidor
 
 ### Habilitar o deshabilitar la auditoría de evento {#enable-or-disable-event-auditing}
 
@@ -309,9 +309,9 @@ Puede habilitar y deshabilitar la auditoría de evento y especificar los tipos d
 
 **Cambiar directiva en Documento:** Un usuario o administrador cambia la directiva adjunta a un documento.
 
-**Publicar Documento como:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor y los documentos no tienen una relación principal-secundario. Este evento se puede activar con el SDK de formularios de AEM.
+**Publicar Documento como:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor y los documentos no tienen una relación principal-secundario. Este evento se puede activar con el SDK de formularios AEM.
 
-**Iterar Documento:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor y los documentos tienen una relación principal-secundario. Este evento se puede activar con el SDK de formularios de AEM.
+**Iterar Documento:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor y los documentos tienen una relación principal-secundario. Este evento se puede activar con el SDK de formularios AEM.
 
 **eventos de políticas**
 
@@ -365,7 +365,7 @@ Puede habilitar y deshabilitar la auditoría de evento y especificar los tipos d
 
 **La aplicación cliente** sincronizada debe sincronizar la información con el servidor para permitir el acceso sin conexión.
 
-**No coincide la versión:** Una versión del SDK de formularios AEM incompatible con el servidor ha intentado conectarse al servidor.
+**No coincide la versión:** Una versión del SDK de formularios AEM que no es compatible con el servidor ha intentado conectarse al servidor.
 
 **Información de sincronización de directorios:** Esta información no está disponible en la página Eventos. La información de sincronización de directorios actual, incluido el estado de sincronización actual y la hora de la última sincronización, se muestra en la página Administración de dominios. Para acceder a la página Administración de dominios en la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 
@@ -420,7 +420,7 @@ Esta configuración controla el texto mostrado en el cuadro de diálogo de auten
 
 **Personalización para la visualización de certificados de cliente**
 
-**Mostrar solo los emisores de credenciales de confianza:** Cuando se selecciona esta opción, la aplicación cliente presenta al usuario únicamente certificados de emisores de credenciales en los que los formularios AEM están configurados para confiar (consulte Administración de certificados y credenciales). Cuando esta opción no está seleccionada, se presenta al usuario una lista de todos los certificados del sistema del usuario.
+**Mostrar solo los emisores de credenciales de confianza:** Cuando se selecciona esta opción, la aplicación cliente presenta al usuario únicamente certificados de emisores de credenciales que AEM formularios están configurados para confiar (consulte Administración de certificados y credenciales). Cuando esta opción no está seleccionada, se presenta al usuario una lista de todos los certificados del sistema del usuario.
 
 ## Configurar marcas de agua dinámicas {#configure-dynamic-watermarks}
 
@@ -452,24 +452,24 @@ Tenga en cuenta lo siguiente al configurar las marcas de agua:
 * Puede cambiar el tamaño máximo del archivo PDF que desea utilizar como elemento de marca de agua. Sin embargo, los grandes documentos PDF utilizados como marcas de agua degradan el rendimiento durante la sincronización sin conexión de documentos aplicados con dichas marcas de agua. Consulte [Cambio de los parámetros](configuring-client-server-options.md#change-the-watermark-configuration-parameters)de configuración de marca de agua.
 * Solo se utiliza como marca de agua la primera página del PDF seleccionado. Asegúrese de que la información que desea que aparezca como marca de agua esté disponible en la primera página.
 * Aunque puede especificar la escala del documento PDF, tenga en cuenta el tamaño y la presentación de la página del PDF si desea utilizarla como marca de agua en el encabezado, pie de página o márgenes.
-* Al especificar el nombre de la fuente, introduzca el nombre correctamente. Los formularios AEM sustituyen la fuente especificada si no está presente en el ordenador cliente en el que se abre el documento.
+* Al especificar el nombre de la fuente, introduzca el nombre correctamente. AEM formularios sustituye la fuente especificada si no está presente en el ordenador cliente en el que se abre el documento.
 * Si ha seleccionado el texto como contenido de marca de agua, la especificación de la opción de escala como Ajustar a página no funciona para las páginas con un ancho diferente.
 * Cuando especifique la posición de los elementos de marca de agua, asegúrese de que no haya más de un elemento con la misma posición. Si dos elementos de marca de agua tienen la misma posición, como el centro, aparecen superpuestos en el documento y, en el orden en que se añadieron a la marca de agua.
 * Al especificar el tamaño y el tipo de fuente, asegúrese de que la longitud del texto sea completamente visible dentro de la página. El contenido del texto se desplaza a nuevas líneas, por lo que el contenido de la marca de agua que pretendía estar presente en los márgenes podría superponerse en las áreas de contenido de las páginas. Sin embargo, si el documento se abre en Acrobat 9, el texto que va más allá de la línea única se trunca.
 
 ### Limitaciones de las marcas de agua dinámicas {#limitations-of-dynamic-watermarks}
 
-Es posible que algunas aplicaciones cliente no admitan marcas de agua dinámicas. Consulte la Ayuda correspondiente de las extensiones de Acrobat Reader DC. Además, tenga en cuenta lo siguiente sobre las versiones de Acrobat que admiten marcas de agua dinámicas:
+Es posible que algunas aplicaciones cliente no admitan marcas de agua dinámicas. Consulte la Ayuda de extensiones de Acrobat Reader DC correspondiente. Además, tenga en cuenta lo siguiente sobre las versiones de Acrobat que admiten marcas de agua dinámicas:
 
 * No puede utilizar un documento PDF protegido con contraseña como elemento de marca de agua.
-* Las versiones anteriores a 10 de Acrobat y Adobe Reader no admiten las siguientes funciones de marca de agua:
+* Las versiones de Acrobat y Adobe Reader anteriores a 10 no admiten las siguientes funciones de marca de agua:
 
    * Marcas de agua PDF
    * Varios elementos en la marca de agua (Texto/PDF)
    * Opciones avanzadas como el rango de páginas o las opciones de visualización
    * Opciones de formato de texto como fuente, nombre de fuente y color especificados. Sin embargo, las versiones anteriores de Acrobat y Reader mostrarán el contenido del texto en la fuente y el color predeterminados.
 
-* Acrobat 9.0 y versiones anteriores: Acrobat 9.0 y versiones anteriores no admite nombres de políticas en marcas de agua dinámicas. Si Acrobat 9.0 abre un documento protegido por una política con una marca de agua dinámica que incluye un nombre de política y otros datos dinámicos, la marca de agua se muestra sin el nombre de la política. Si la marca de agua dinámica solo incluye el nombre de la política, Acrobat muestra un mensaje de error
+* Acrobat 9.0 y versiones anteriores: Acrobat 9.0 y versiones anteriores no admiten nombres de políticas en marcas de agua dinámicas. Si Acrobat 9.0 abre un documento protegido por una política con una marca de agua dinámica que incluye un nombre de política y otros datos dinámicos, la marca de agua se muestra sin el nombre de la política. Si la marca de agua dinámica solo incluye el nombre de la política, Acrobat muestra un mensaje de error
 
 ### Añadir una plantilla de marca de agua dinámica {#add-a-dynamic-watermark-template}
 
@@ -553,7 +553,7 @@ Documento security genera automáticamente un correo electrónico de invitación
 
 El correo electrónico de registro contiene un vínculo a una página de registro e información sobre cómo registrarse. Una vez que el usuario invitado se registra, la seguridad de documento envía un correo electrónico de activación con un vínculo a una página de Activación. Cuando se activa, la cuenta permanece válida hasta que la desactive o elimine.
 
-Si habilita el registro integrado, debe especificar el servidor SMTP, los detalles del correo electrónico de registro, las funciones de acceso y restablecer la información de correo electrónico de contraseña una sola vez. Antes de habilitar el registro integrado, asegúrese de que ha creado un dominio local en Administración de usuarios y ha asignado la función &quot;Documento security Invite a usuario&quot; a los usuarios y grupos adecuados de su organización. (Consulte [Añadir un dominio](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) local y [Crear y configurar funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si no utiliza el registro integrado, debe tener su propio sistema de registro de usuario creado con el SDK de formularios de AEM. Consulte la ayuda sobre &quot;Desarrollo de SPI para formularios AEM&quot; en [Programación con formularios](https://www.adobe.com/go/learn-aemforms-programming-63)AEM. Si no utiliza la opción Registro integrado, se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo comunicarse con el administrador para obtener una contraseña nueva o para obtener más información.
+Si habilita el registro integrado, debe especificar el servidor SMTP, los detalles del correo electrónico de registro, las funciones de acceso y restablecer la información de correo electrónico de contraseña una sola vez. Antes de habilitar el registro integrado, asegúrese de que ha creado un dominio local en Administración de usuarios y ha asignado la función &quot;Documento security Invite a usuario&quot; a los usuarios y grupos adecuados de su organización. (Consulte [Añadir un dominio](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) local y [Crear y configurar funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si no utiliza el registro integrado, debe tener su propio sistema de registro de usuario creado con el SDK de formularios AEM. Consulte la ayuda sobre &quot;Desarrollo de SPI para formularios AEM&quot; en [Programación con formularios](https://www.adobe.com/go/learn-aemforms-programming-63)AEM. Si no utiliza la opción Registro integrado, se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo comunicarse con el administrador para obtener una contraseña nueva o para obtener más información.
 
 **Habilitar y configurar el registro de usuarios invitados**
 
@@ -660,7 +660,7 @@ La siguiente configuración se encuentra en el área Configuración de correo el
 
 **Tiempo de espera:** Número de días después de los cuales caduca la invitación de activación si el usuario no activa la cuenta. El valor predeterminado es 30 días.
 
-**Mensaje:** El texto que aparece en el cuerpo del mensaje es un mensaje que indica que es necesario activar la cuenta de usuario del destinatario. También puede incluir información como cómo comunicarse con un administrador para obtener una nueva contraseña.
+**Mensaje:** El texto que aparece en el cuerpo del mensaje es un mensaje que indica que es necesario activar la cuenta de usuario del destinatario. También es posible que desee incluir información como cómo comunicarse con un administrador para obtener una nueva contraseña.
 
 ### Configurar un correo electrónico de restablecimiento de contraseña {#configure-a-password-reset-email}
 
@@ -795,7 +795,7 @@ Las aplicaciones o complementos del cliente proporcionan información sobre el p
 
 Si no se aplica ninguna información, la aplicación cliente deja el campo correspondiente en blanco.
 
-Varias aplicaciones de Adobe incluyen información del producto al solicitar servicios de seguridad de documento, incluidas las extensiones de Acrobat, Adobe Reader y Acrobat Reader DC para Microsoft Office.
+Varias aplicaciones de Adobe incluyen información de productos al solicitar servicios de seguridad de documento, incluidas Acrobat, Adobe Reader y extensiones de Acrobat Reader DC para Microsoft Office.
 
 **Acrobat y Adobe Reader**
 
@@ -809,7 +809,7 @@ Cuando Acrobat o Adobe Reader solicitan un servicio de seguridad de documento, p
 
 **Extensiones de Acrobat Reader DC para Microsoft Office**
 
-Las extensiones de Acrobat Reader DC para Microsoft Office son un complemento que se utiliza con los productos de Microsoft Office Microsoft Word, Microsoft Excel y Microsoft PowerPoint. Cuando solicita un servicio, proporciona la siguiente información:
+Extensiones de Acrobat Reader DC para Microsoft Office es un complemento que se utiliza con los productos de Microsoft Office Microsoft Word, Microsoft Excel y Microsoft PowerPoint. Cuando solicita un servicio, proporciona la siguiente información:
 
 * **Integrador:** Adobe Systems Incorporated
 * **Versión integradora:** 8.2
@@ -822,7 +822,7 @@ Las extensiones de Acrobat Reader DC para Microsoft Office son un complemento qu
 1. Exporte el archivo de configuración de seguridad de documento. (Consulte Edición [manual del archivo](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)de configuración de seguridad de documento).
 1. Abra el archivo de configuración en un editor y busque el `PolicyServer` nodo. Añada un `ClientVersionRules` nodo como un nodo secundario inmediato del `PolicyServer` nodo, si no existe:
 
-   ```java
+   ```xml
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -879,7 +879,7 @@ Las extensiones de Acrobat Reader DC para Microsoft Office son un complemento qu
 
 En este ejemplo, se deniega el acceso a todos los clientes de Windows.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -897,7 +897,7 @@ En este ejemplo, se deniega el acceso a todos los clientes de Windows.
 
 En este ejemplo, se deniega el acceso a Mi aplicación versión 3.0 y a Mi otra aplicación versión 2.0. La misma URL de información de denegación se utiliza independientemente del motivo de la denegación.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -922,7 +922,7 @@ En este ejemplo, se deniega el acceso a Mi aplicación versión 3.0 y a Mi otra 
 
 En este ejemplo, se deniegan todas las solicitudes de una instalación de Microsoft PowerPoint 2007 o Microsoft PowerPoint 2010 de extensiones de Acrobat Reader DC para Microsoft Office.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -955,7 +955,7 @@ De forma predeterminada, puede especificar un máximo de cinco elementos en una 
 
    La segunda entrada, *max elements* , es el número máximo de elementos permitidos en una marca de agua. El valor predeterminado es 5.
 
-   ```java
+   ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -975,7 +975,7 @@ Los siguientes cambios en config.xml desactivan todos los vínculos externos des
 1. Abra el archivo de configuración en un editor y busque el `DisplaySettings` nodo.
 1. Para deshabilitar todos los vínculos externos, en el `DisplaySettings` nodo, agregue la siguiente entrada y guarde el archivo: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```java
+   ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -989,7 +989,7 @@ Los siguientes cambios en config.xml habilitan la compatibilidad TLS para la fun
 1. Abra el archivo de configuración en un editor y busque el `DisplaySettings` nodo.
 1. Busque el nodo siguiente: `<node name="ExternalUser">`
 
-   ```java
+   ```xml
    <node name="ExternalUser">
    ```
 
@@ -1005,7 +1005,7 @@ Los siguientes cambios en config.xml para deshabilitar los extremos SOAP para do
 1. Exporte el archivo de configuración de seguridad de documento. (Consulte Edición [manual del archivo](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)de configuración de seguridad de documento).
 1. Abra el archivo de configuración en un editor y busque el nodo siguiente: `<node name="DRM">`
 
-   ```java
+   ```xml
    <node name="DRM">
    ```
 
@@ -1015,7 +1015,7 @@ Los siguientes cambios en config.xml para deshabilitar los extremos SOAP para do
 
 1. Para deshabilitar los extremos SOAP para documentos de seguridad de documento, establezca el atributo value en **false**.
 
-   ```java
+   ```xml
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
