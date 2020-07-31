@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '6822'
 ht-degree: 0%
@@ -165,7 +165,7 @@ En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verifi
 
 **Guardar formulario** Guarda el formulario.
 
-**Enviar formulario** Envía el formulario.
+**Enviar Forms** Envía el formulario.
 
 **Restablecer formulario** Restablece el formulario.
 
@@ -342,11 +342,11 @@ Para iniciar la interfaz de usuario del editor de reglas:
 
 ### A. Pantalla de regla de componente {#a-component-rule-display}
 
-Muestra el título del objeto de formulario adaptable a través del cual se ha iniciado el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
+Muestra el título del objeto de formulario adaptable a través del cual se inició el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
-El panel de la izquierda en la interfaz de usuario del editor de reglas incluye dos fichas: **[!UICONTROL Objetos]** y **[!UICONTROL funciones]** de formulario.
+El panel de la izquierda en la interfaz de usuario del editor de reglas incluye dos fichas: **[!UICONTROL Objetos]** y **[!UICONTROL funciones]** de Forms.
 
 La ficha Objetos de formulario muestra una vista jerárquica de todos los objetos contenidos en el formulario adaptable. Muestra el título y el tipo de los objetos. Al escribir una regla, puede arrastrar y soltar objetos de formulario en el editor de reglas. Al crear o editar una regla cuando arrastra y suelta un objeto o función en un marcador de posición, el marcador de posición toma automáticamente el tipo de valor adecuado.
 
@@ -358,7 +358,7 @@ La ficha Funciones incluye un conjunto de funciones integradas, como Suma de, M�
 
 >[!NOTE]
 >
->Puede realizar búsquedas de texto en los nombres y títulos de objetos y funciones en las fichas Objetos y funciones de formulario.
+>Puede realizar búsquedas de texto en los nombres y títulos de objetos y funciones en las fichas Objetos y funciones de Forms.
 
 En el árbol izquierdo de los objetos de formulario, puede tocar los objetos de formulario para mostrar las reglas aplicadas a cada uno de los objetos. No sólo puede desplazarse por las reglas de los distintos objetos de formulario, sino que también puede copiar y pegar reglas entre los objetos de formulario. Para obtener más información, consulte [Copiar y pegar reglas](../../forms/using/rule-editor.md#p-copy-paste-rules-p).
 
@@ -378,7 +378,7 @@ Los usuarios del grupo de usuarios avanzados de formularios pueden acceder al ed
 
 Los AEM Forms realizan el seguimiento del modo de editor de reglas utilizado por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Sin embargo, también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
 
-1. Vaya a la consola web de AEM en `https://[host]:[port]/system/console/configMgr`.
+1. Vaya a AEM consola web en `https://[host]:[port]/system/console/configMgr`.
 1. Haga clic para editar el servicio **[!UICONTROL de configuración de formularios]** adaptables.
 1. seleccione Editor **** visual o Editor **** de código en la lista desplegable Modo **[!UICONTROL predeterminado para el editor]** de reglas
 
@@ -471,11 +471,11 @@ Realice los siguientes pasos para escribir reglas:
 
 1. En el campo expresión:
 
-   * Seleccione o arrastre y suelte desde la ficha Objeto de formulario el campo **Salario** del primer objeto **Colocar o seleccione aquí** .
+   * Seleccione o arrastre y suelte desde la ficha Objeto de Forms el campo **Salario** del primer objeto **Colocar o seleccione aquí** .
 
    * Seleccione **Plus** en el campo **Seleccionar operador** .
 
-   * Seleccione o arrastre y suelte desde la ficha Objeto de formulario el campo **Salario** del cónyuge del otro objeto **Colocar o seleccione aquí** .
+   * Seleccione o arrastre y suelte desde la ficha Objeto de Forms el campo **Salario** del cónyuge en el otro objeto **Colocar o seleccione aquí** .
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -499,7 +499,7 @@ Realice los siguientes pasos para escribir reglas:
 
    En la instrucción When:
 
-   * Seleccione o arrastre y suelte desde la ficha Objeto de formulario el campo Estado **** civil del primer objeto **Colocar o seleccione aquí** .
+   * Seleccione o arrastre y suelte desde la ficha Objeto de Forms el campo Estado **** civil del primer objeto **Colocar o seleccione aquí** .
 
    * Seleccionar **es igual** que en el campo **Seleccionar operador** .
 
@@ -642,7 +642,7 @@ area = function(len) {
 
 **Expresión y declaración de funciones**
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -652,7 +652,7 @@ b.area = function(len) {
 
 **Declaración de función como variable**
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -665,7 +665,7 @@ Limitación: la función personalizada selecciona únicamente la primera declara
 
 **Declaración de función como objeto**
 
-```
+```javascript
 var c = {
     b : {
         /** */
@@ -765,7 +765,7 @@ Cuando el usuario indica que ha vivido en su domicilio actual durante menos de 3
 
 ## Impacto del editor de reglas en secuencias de comandos existentes {#impact-of-rule-editor-on-existing-scripts}
 
-En las versiones de AEM Forms anteriores al paquete de funciones 1 de AEM 6.1 Forms, los creadores y desarrolladores de formularios solían escribir expresiones en la ficha Secuencias de comandos del cuadro de diálogo Editar componente para añadir un comportamiento dinámico a los formularios adaptables. La ficha Secuencias de comandos ahora se reemplaza por el editor de reglas.
+En las versiones de AEM Forms anteriores al paquete de funciones 1 de Forms de AEM 6.1, los creadores y desarrolladores de formularios solían escribir expresiones en la ficha Secuencias de comandos del cuadro de diálogo Editar componente para añadir un comportamiento dinámico a los formularios adaptables. La ficha Secuencias de comandos ahora se reemplaza por el editor de reglas.
 
 Las secuencias de comandos o expresiones que debe haber escrito en la ficha Secuencias de comandos están disponibles en el editor de reglas. Aunque no puede realizar vistas ni editarlas en un editor visual, si forma parte del grupo de usuarios avanzados de formularios, puede editar las secuencias de comandos en el editor de código.
 
