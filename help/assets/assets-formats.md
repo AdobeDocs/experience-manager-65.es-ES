@@ -3,9 +3,9 @@ title: Formatos de archivo admitidos para procesamiento en [!DNL Adobe Experienc
 description: Formatos de archivo y tipos MIME admitidos [!DNL Assets] and [!DNL Dynamic Media] por y las características admitidas para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1636'
 ht-degree: 10%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Formatos admitidos en [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] admite una amplia gama de formatos de archivo y cada funcionalidad admite distintos tipos MIME. Para integrarse [!DNL Assets] con otras soluciones de administración de activos digitales (DAM) compatibles con estándares y software de escritorio, utilice Adobe [!DNL Extensible Metadata Platform] (XMP).
+[!DNL Experience Manager Assets] admite una amplia gama de formatos de archivo y cada funcionalidad admite distintos tipos MIME. Para integrarse [!DNL Assets] con otras soluciones de administración de activos digitales (DAM) compatibles con estándares y software de escritorio, utilice el Adobe [!DNL Extensible Metadata Platform] (XMP).
 
 Utilice la leyenda para comprender el nivel de asistencia.
 
@@ -66,7 +66,7 @@ Además de la información anterior, considere lo siguiente:
 
 * La reescritura de metadatos funciona para el formato de archivo PSB cuando se agrega al `NComm` controlador.
 
-* Para utilizar [!DNL Dynamic Media] la previsualización y generación de representaciones dinámicas para archivos EPS, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para utilizar [!DNL Dynamic Media] la previsualización y generación de representaciones dinámicas para archivos EPS, consulte Formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para archivos EPS, la reescritura de metadatos se admite en la versión 3.0 o posterior del Convenio de estructura de Documento PostScript (PS-Adobe).
 
@@ -74,7 +74,7 @@ Además de la información anterior, considere lo siguiente:
 
 Se admite la siguiente lista de formatos 3D.
 
-Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | previsualización de miniaturas | previsualización 3D | Dynamic Media envío |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -128,7 +128,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Biblioteca de transcodificación de imágenes admitida {#supported-image-transcoding-library}
 
-La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes que realiza funciones básicas de gestión de imágenes como, por ejemplo, codificación, transcodificación, remuestreo y cambio de tamaño.
+La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes que realiza funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo y cambio de tamaño.
 
 La biblioteca de transcodificación de imágenes admite los tipos MIME JPG/JPEG, PNG (8 y 16 bits), GIF, BMP, TIFF/Comprimido (excepto los archivos TIFF de 32 bits y PTIFF), ICO e ICN.
 
@@ -136,9 +136,9 @@ Consulte Biblioteca [de transcodificación de imágenes](imaging-transcoding-lib
 
 ## RAW de cámara compatible {#supported-camera-raw}
 
-La biblioteca de Adobe Camera Raw permite a Recursos ingestar imágenes sin procesar. See [Camera Raw support](camera-raw.md).
+La [!DNL Adobe Camera Raw] biblioteca permite [!DNL Assets] la ingesta de imágenes sin procesar. See [Camera Raw support](camera-raw.md).
 
-## Formatos de documento de recursos admitidos {#supported-document-formats}
+## Formatos [!DNL Assets] de documento admitidos {#supported-document-formats}
 
 Los formatos de Documento admitidos para las funciones de administración de recursos son los siguientes:
 
@@ -173,11 +173,11 @@ Los formatos de Documento admitidos para las funciones de administración de rec
 
 Además de la funcionalidad anterior, considere lo siguiente:
 
-* Para utilizar Dynamic Media para generar representaciones dinámicas para archivos PDF, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para utilizar Dynamic Media para generar representaciones dinámicas para archivos PDF, consulte Formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para utilizar Dynamic Media para la previsualización y generación de representaciones dinámicas para archivos AI, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para utilizar Dynamic Media para la previsualización y generación de representaciones dinámicas para archivos AI, consulte Formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para utilizar Dynamic Media para generar representaciones dinámicas para archivos INDD, consulte Formato [de archivo](../assets/managing-image-presets.md#indesign-indd-file-format)de InDesign (INDD).
+* Para utilizar Dynamic Media para generar representaciones dinámicas para archivos INDD, consulte Formato [de archivo](../assets/managing-image-presets.md#indesign-indd-file-format)InDesign (INDD).
 
 ## Formatos multimedia admitidos {#supported-multimedia-formats}
 
@@ -208,7 +208,7 @@ Además de la funcionalidad anterior, considere lo siguiente:
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) |  |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 y HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, animación de Apple |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectorial) |
+| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectorial) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
 | M4V | Apple iTunes | H264/AVC |  |
@@ -249,9 +249,9 @@ La aplicabilidad de flujos de trabajo DAM comunes para algunos otros formatos de
 
 ## Supported MIME types {#supported-mime-types}
 
-De forma predeterminada, el Experience Manager detecta el tipo de archivo con la extensión de archivo. El Experience Manager puede detectarlo a partir del contenido de los archivos. Para esto último, seleccione [!UICONTROL Detectar MIME de la opción de contenido] en el servicio [!UICONTROL de tipo de MIME de CQ] Day DAM en la consola web de Experience Manager.
+De forma predeterminada, [!DNL Experience Manager] detecta el tipo de archivo con la extensión de archivo. [!DNL Experience Manager] puede detectarlo a partir del contenido de los archivos. Para esto último, seleccione [!UICONTROL Detectar MIME de la opción de contenido] en el servicio [!UICONTROL de tipo de MIME de CQ] Day DAM en la consola [!DNL Experience Manager] Web.
 
-Hay una lista de tipos MIME admitidos disponible en CRXDE Lite en `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Extensión de archivo | Tipo MIME/tipo de medio de Internet | Valor de jobParam predeterminado | Valor de jobParam permitido |
 |---|---|---|---|
@@ -313,6 +313,6 @@ Hay una lista de tipos MIME admitidos disponible en CRXDE Lite en `/conf/global/
 
 >[!MORELIKETHIS]
 >
->* [Habilite la compatibilidad](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)con los parámetros de trabajo de carga de recursos basados en tipos MIME/Scene7.
+>* [Habilite la compatibilidad](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)con los parámetros de trabajo de carga de Recursos/Scene7 basados en tipos MIME.
 >* [Configure la compatibilidad](config-dynamic.md)de los parámetros de trabajo de carga según el tipo MIME.
 
