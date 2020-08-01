@@ -1,11 +1,11 @@
 ---
-title: Ampliar la funcionalidad de búsqueda de Adobe Experience Manager Assets
-description: Extienda las capacidades de búsqueda de Recursos Adobe Experience Manager más allá de los valores predeterminados.
+title: Amplíe la funcionalidad de búsqueda de [!DNL Adobe Experience Manager Assets].
+description: Extienda las capacidades [!DNL Adobe Experience Manager Assets] de búsqueda más allá de los valores predeterminados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '841'
 ht-degree: 19%
 
 ---
@@ -35,7 +35,7 @@ Para superponer los predicados preconfigurados, copie el `facets` nodo de `/libs
 
 ## Añadir fichas {#adding-tabs}
 
-Puede agregar fichas de búsqueda adicionales configurándolas en la interfaz de administración de Recursos. Para crear fichas adicionales:
+Puede agregar fichas de búsqueda adicionales configurándolas en la interfaz de [!DNL Assets] administración. Para crear fichas adicionales:
 
 1. Cree la estructura de carpetas `/apps/wcm/core/content/damadmin/tabs,`si aún no existe, copie el `tabs` nodo `/libs/wcm/core/content/damadmin` y péguelo.
 1. Cree y configure la segunda ficha como desee.
@@ -48,7 +48,7 @@ Puede agregar fichas de búsqueda adicionales configurándolas en la interfaz de
 
 [!DNL Assets] viene con un conjunto de predicados predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en la [creación y configuración de una página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de recurso compartido.
 
-Además de utilizar predicados preexistentes, los desarrolladores de Experience Manager también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Consulta Builder.
+Además de utilizar predicados preexistentes, [!DNL Experience Manager] los desarrolladores también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Consulta Builder.
 
 La creación de predicados personalizados requiere conocimientos básicos sobre el marco [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)utilidades.
 
@@ -296,6 +296,6 @@ Los siguientes predicados están disponibles como utilidades preconfiguradas de 
 
 ## Personalizar resultados de búsqueda {#customizing-search-results}
 
-La presentación de los resultados de la búsqueda en una página de uso compartido de recursos se rige por la lente seleccionada. Experience Manager Assets incluye un conjunto de objetivos predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en [Creación y configuración de una página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de uso compartido de recursos.
+La presentación de los resultados de la búsqueda en una página de uso compartido de recursos se rige por la lente seleccionada. [!DNL Experience Manager Assets] viene con un conjunto de objetivos predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en [Creación y configuración de una página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de uso compartido de recursos.
 
-Además de usar objetivos preexistentes, los desarrolladores de Experience Manager también pueden crear sus propios objetivos.
+Además de usar objetivos preexistentes, los desarrolladores también pueden crear sus propios objetivos [!DNL Experience Manager] .
