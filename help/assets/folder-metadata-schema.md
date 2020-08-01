@@ -3,25 +3,25 @@ title: Carpeta de esquema de metadatos
 description: Obtenga información sobre cómo crear esquemas de metadatos para carpetas de recursos en Adobe Experience Manager Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1016'
+ht-degree: 6%
 
 ---
 
 
 # Carpeta de esquema de metadatos {#folder-metadata-schema}
 
-Adobe Experience Manager Assets permite crear esquemas de metadatos para las carpetas de recursos, que definen la presentación y los metadatos que se muestran en las páginas de propiedades de las carpetas.
+[!DNL Adobe Experience Manager Assets] le permite crear esquemas de metadatos para carpetas de recursos, que definen el diseño y los metadatos mostrados en las páginas de propiedades de las carpetas.
 
 ## Añadir un formulario de esquema de metadatos de carpeta {#add-a-folder-metadata-schema-form}
 
-Utilice el editor Esquema de formularios de metadatos de carpeta para crear y editar esquemas de metadatos para las carpetas.
+Utilice el editor de Forms de Esquema de metadatos de carpeta para crear y editar esquemas de metadatos para las carpetas.
 
-1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos de]** carpeta.
-1. En la página [!UICONTROL Carpeta Metadatos Esquema Formularios] , haga clic en **[!UICONTROL Crear]**.
-1. Specify a name for the form, and click **[!UICONTROL Create]**. El nuevo formulario de esquema se muestra en la página [!UICONTROL Esquema Forms] .
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos de]** carpeta.
+1. En la página [!UICONTROL Esquema de metadatos de carpeta de Forms] , haga clic en **[!UICONTROL Crear]**.
+1. Specify a name for the form, and click **[!UICONTROL Create]**. El nuevo formulario de esquema aparece en la página de Forms [!UICONTROL de] Esquema.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
@@ -32,7 +32,7 @@ Puede editar un formulario de esquema de metadatos recién agregado o existente,
 
 Puede asignar/configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio de CRX. Puede agregar nuevas fichas o elementos de formulario al formulario de esquema de metadatos.
 
-1. En la página Formularios de Esquema, seleccione el formulario que ha creado y, a continuación, seleccione la opción **[!UICONTROL Editar]** en la barra de herramientas.
+1. En la página Esquema Forms, seleccione el formulario que ha creado y, a continuación, seleccione la opción **[!UICONTROL Editar]** en la barra de herramientas.
 1. En la página Editor de Esquemas de metadatos de carpeta, haga clic en `+` para agregar una ficha al formulario. Para cambiar el nombre de la ficha, haga clic en el nombre predeterminado y especifique el nuevo nombre en **[!UICONTROL Configuración]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -66,7 +66,7 @@ La ficha **[!UICONTROL Generar formulario]** lista los elementos de formulario q
 | [!UICONTROL Fecha] | Añada un componente de fecha. |
 | [!UICONTROL Lista desplegable] | Añada una lista desplegable. |
 | [!UICONTROL Etiquetas estándar] | Añadir una etiqueta. |
-| [!UICONTROL Campo oculto] | Añada un campo oculto. Se envía como parámetro POST cuando se guarda el recurso. |
+| [!UICONTROL Campo oculto] | Añada un campo oculto. Se envía como parámetro de POST cuando se guarda el recurso. |
 
 ### Edición de elementos de formulario {#editing-form-items}
 
@@ -96,20 +96,20 @@ Para asegurarse de que el componente se muestra correctamente en el formulario d
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-Puede eliminar formularios esquema de metadatos de carpeta desde la página Esquema de formularios de metadatos de carpeta. Para eliminar un formulario, selecciónelo y haga clic en la opción Eliminar de la barra de herramientas.
+Puede eliminar los formularios de esquema de metadatos de la carpeta desde la página de Forms Esquema de metadatos de la carpeta. Para eliminar un formulario, selecciónelo y haga clic en la opción Eliminar de la barra de herramientas.
 
 ![delete_form](assets/delete_form.png)
 
 ## Asignación de un esquema de metadatos de carpeta {#assign-a-folder-metadata-schema}
 
-Puede asignar un esquema de metadatos de carpeta a una carpeta desde la página Esquema de formularios de metadatos de carpeta o al crear una carpeta.
+Puede asignar un esquema de metadatos de carpeta a una carpeta desde la página de Forms Esquema de metadatos de carpeta o al crear una carpeta.
 
 Si configura un esquema de metadatos para una carpeta, la ruta al formulario de esquema se almacena en la propiedad del nodo de la carpeta en la `folderMetadataSchema` .*/jcr:content*.
 
 ### Asignar a un esquema desde la página Esquema de metadatos de la carpeta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos de]** carpeta.
-1. En la página Esquema de formularios de metadatos de carpeta, seleccione el formulario de esquema que desee aplicar a una carpeta.
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **[!UICONTROL de metadatos de]** carpeta.
+1. En la página Forms Esquema de metadatos de carpeta, seleccione el formulario de esquema que desea aplicar a una carpeta.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Aplicar a carpetas]**.
 
 1. Seleccione la carpeta en la que desea aplicar el esquema y, a continuación, haga clic en **[!UICONTROL Aplicar]**. Si ya se ha aplicado un esquema de metadatos a la carpeta, aparecerá un mensaje de advertencia para informarle de que va a sobrescribir el esquema de metadatos existente. Haga clic en **[!UICONTROL Sobrescribir]**.
