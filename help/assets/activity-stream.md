@@ -1,11 +1,11 @@
 ---
-title: Flujo de Actividad en la línea de tiempo
+title: Flujo de Actividad de recursos digitales en la vista [!DNL Experience Manager]de línea de tiempo.
 description: En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '216'
 ht-degree: 27%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 27%
 
 # Flujo de Actividad en la línea de tiempo {#activity-stream-in-timeline}
 
-Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en Recursos Adobe Experience Manager, la función de flujo de actividad actualiza la línea de tiempo para reflejar la actividad.
+Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con los recursos en [!DNL Adobe Experience Manager Assets], la función de flujo de actividad actualiza la línea de tiempo para reflejar la actividad.
 
 Las siguientes operaciones se registran en el flujo de actividad:
 
@@ -26,7 +26,7 @@ Las siguientes operaciones se registran en el flujo de actividad:
 * Rechazar
 * Mover
 
-Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into Experience Manager via [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
+Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into [!DNL Experience Manager] via [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
