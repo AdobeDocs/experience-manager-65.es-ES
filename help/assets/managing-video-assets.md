@@ -3,9 +3,9 @@ title: Administre recursos de vídeo en [!DNL Adobe Experience Manager].
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '814'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ Obtenga información sobre cómo administrar y editar los recursos de vídeo en 
 
 ## Carga y previsualización de recursos de vídeo {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] genera previsualizaciones para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una previsualización. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede realizar la previsualización de las representaciones en la interfaz de usuario de Recursos.
+[!DNL Adobe Experience Manager Assets] genera previsualizaciones para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una previsualización. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede realizar la previsualización de las representaciones en la interfaz de [!DNL Assets] usuario.
 
 1. En la carpeta o subcarpetas de recursos digitales, navegue a la ubicación donde desee agregar recursos digitales.
 1. Para cargar el recurso, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Archivos]**. Como alternativa, suéltela directamente en el área de recursos. Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets) para obtener más información sobre la operación de carga.
@@ -71,7 +71,7 @@ Después de la publicación, puede incluir los recursos de vídeo en una página
 
 ## Anotación de recursos de vídeo {#annotate-video-assets}
 
-1. En la consola Recursos, haga clic en [!UICONTROL Editar] en la tarjeta de recursos para mostrar la página de detalles de recursos.
+1. Desde la [!DNL Assets] consola, haga clic en [!UICONTROL Editar] en la tarjeta de recursos para mostrar la página de detalles de recursos.
 1. Para reproducir el vídeo, haga clic en [!UICONTROL Previsualización].
 1. Para realizar anotaciones en el vídeo, haga clic en el botón **[!UICONTROL Anotar]** . Se agrega una anotación en el tiempo (fotograma) concreto del vídeo. Al realizar anotaciones, puede dibujar en el lienzo e incluir un comentario con el dibujo. Los comentarios se guardan automáticamente.
 
