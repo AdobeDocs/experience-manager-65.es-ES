@@ -3,9 +3,9 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1536'
 ht-degree: 8%
 
 ---
@@ -25,9 +25,9 @@ Para que el servicio de contenido inteligente aplique las etiquetas correctas, d
 
 Una vez preparada y preparada la etiqueta, el servicio ahora puede aplicarla a los recursos mediante un flujo de trabajo de etiquetado.
 
-En segundo plano, el servicio de contenido inteligente utiliza el marco de trabajo de Adobe Sensei AI para formar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
+En segundo plano, Smart Content Service utiliza el marco de trabajo de Adobe Sensei AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
-Smart Content Service es un servicio en la nube alojado en Adobe I/O. Para utilizarlo en Adobe Experience Manager, el administrador del sistema debe integrar la implementación de Experience Manager con Adobe I/O.
+Smart Content Service es un servicio en la nube alojado en E/S de Adobe. Para utilizarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su [!DNL Experience Manager] implementación con E/S de Adobe.
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
@@ -40,22 +40,22 @@ En resumen, estos son los pasos principales para utilizar el servicio de conteni
 
 ## Requisitos previos {#prerequisites}
 
-Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en Adobe I/O:
+Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en E/S de Adobe:
 
 * Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * El servicio de Smart Content Service está habilitado para su organización.
 
 ## Integración {#onboarding}
 
-El servicio de contenido inteligente está disponible para su compra como complemento para el Experience Manager. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a Adobe I/O.
+The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a E/S de Adobe.
 
-El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con Experience Manager. Para integrar el servicio con Recursos Experience Manager, consulte [Configuración de etiquetas](config-smart-tagging.md)inteligentes.
+El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con [!DNL Experience Manager]. Para integrar el servicio con [!DNL Experience Manager Assets], consulte [Configuración de etiquetas](config-smart-tagging.md)inteligentes.
 
-El proceso de integración se completa cuando el administrador configura el servicio y agrega usuarios en Experience Manager.
+El proceso de integración se completa cuando el administrador configura el servicio y agrega usuarios en [!DNL Experience Manager].
 
 >[!NOTE]
 >
->Si utiliza Experience Manager 6.3 o una versión anterior y necesita un servicio de etiquetado para los recursos, consulte Etiquetas [inteligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Las etiquetas inteligentes no utilizan las últimas funciones de AI y, por tanto, son menos precisas que el servicio de etiquetado inteligente mejorado.
+>Si utiliza [!DNL Experience Manager] 6.3 o una versión anterior y necesita un servicio de etiquetado para sus recursos, consulte Etiquetas [inteligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Las etiquetas inteligentes no utilizan las últimas funciones de AI y, por tanto, son menos precisas que el servicio de etiquetado inteligente mejorado.
 
 ## Revisar recursos y etiquetas {#reviewing-assets-and-tags}
 
@@ -90,13 +90,13 @@ Puede habilitar el servicio de contenido inteligente para que imparta formación
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Una vez seleccionada esta opción para una carpeta, el Experience Manager ejecuta un flujo de trabajo de formación automáticamente para capacitar al servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta semanalmente los sábados a las 12:30.
+Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para formar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta semanalmente los sábados a las 12:30.
 
 ### Capacitación a pedido {#on-demand-training}
 
 Puede entrenar el servicio de contenido inteligente siempre que sea necesario desde la consola Flujo de trabajo.
 
-1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. En el cuadro de diálogo **[!UICONTROL Ejecutar flujo de trabajo]** , vaya a la carpeta de carga útil que incluye los recursos etiquetados para la formación del servicio.
 1. Especifique un título para el flujo de trabajo y un comentario. A continuación, haga clic en **[!UICONTROL Ejecutar]**. Los recursos y las etiquetas se envían para formación.
@@ -111,7 +111,7 @@ Puede entrenar el servicio de contenido inteligente siempre que sea necesario de
 
 Para comprobar si el servicio de contenido inteligente ha recibido formación sobre sus etiquetas en el conjunto de recursos de formación, consulte el informe de flujo de trabajo de formación desde la consola Informes.
 
-1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. Then, click **[!UICONTROL Create]** from the toolbar.
@@ -153,7 +153,7 @@ Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiqueta
 
 #### Etiquetado de recursos desde la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
 
-1. En la interfaz de Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -167,7 +167,7 @@ Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiqueta
 
 #### Etiquetar recursos de la línea de tiempo {#tagging-assets-from-the-timeline}
 
-1. En la interfaz de usuario de Recursos, seleccione la carpeta que contenga recursos o recursos específicos a los que desee aplicar etiquetas inteligentes.
+1. En la interfaz de usuario, seleccione la carpeta que contenga recursos o recursos específicos a los que desee aplicar etiquetas inteligentes. [!DNL Assets]
 1. En la esquina superior izquierda, abra la **[!UICONTROL línea de tiempo]**.
 1. Abra acciones desde la parte inferior de la barra lateral izquierda y haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**.
 
