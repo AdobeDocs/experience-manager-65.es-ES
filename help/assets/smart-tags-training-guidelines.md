@@ -4,9 +4,9 @@ description: Formación del servicio de AI de Adobe Sensei para aplicar etiqueta
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '462'
 ht-degree: 7%
 
 ---
@@ -28,7 +28,7 @@ Por ejemplo, no es recomendable etiquetar todas estas imágenes como `my-party` 
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/coherence.png)
 
-**Cobertura**: Las imágenes de la formación deben ser suficientemente variadas. La idea es proporcionar algunos ejemplos, pero razonablemente diversos, para que Experience Manager aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
+**Cobertura**: Las imágenes de la formación deben ser suficientemente variadas. La idea es dar algunos ejemplos, pero razonablemente diversos, para que el Experience Manager aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
 
 Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
 
@@ -44,16 +44,16 @@ Por ejemplo, para la etiqueta *casual-shoe*, la segunda imagen no es un buen can
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/completeness.png)
 
-## Restricciones          {#limitations}
+## Restricciones     {#limitations}
 
 Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imágenes y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual de Smart Content Service tiene las siguientes limitaciones:
 
 * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisas delgadas contra las tradicionales.
 * Imposibilidad de identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
-* El etiquetado se admite en las configuraciones regionales en las que se admite Experience Manager. Para obtener una lista de idiomas, consulte las notas de la versión de [Smart Content Services](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* El etiquetado se admite en las configuraciones regionales que [!DNL Experience Manager] se admiten en. Para obtener una lista de idiomas, consulte las notas de la versión de [Smart Content Services](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice la búsqueda de recursos Omniture (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
+Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice Omniture (búsqueda de texto completo) [!DNL Assets] . No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 
 >[!NOTE]
 >
->La capacidad del servicio de contenido inteligente para formarse en sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación. Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para formar el servicio para cada etiqueta.
+>La capacidad del servicio de contenido inteligente para formarse en sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación. Para obtener los mejores resultados, Adobe recomienda que utilice imágenes visualmente similares para entrenar el servicio de cada etiqueta.
