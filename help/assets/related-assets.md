@@ -3,9 +3,9 @@ title: Activos relacionados
 description: Aprenda a relacionar recursos digitales que comparten algunos atributos comunes. También cree relaciones derivadas de origen entre recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
 ## Relate assets {#relating-assets}
 
-1. En la interfaz de Experience Manager, abra la página **[!UICONTROL Propiedades]** de un recurso que desee relacionar.
+1. Desde la [!DNL Experience Manager] interfaz, abra la página **[!UICONTROL Propiedades]** de un recurso que desee relacionar.
 
    ![abrir la página Propiedades de un recurso para relacionarlo](assets/asset-properties-relate-assets.png)
 
@@ -65,9 +65,9 @@ Con esta función, tiene la flexibilidad de compartir un archivo PDF de baja res
 
 1. Click **[!UICONTROL OK]** to close the dialog. Los recursos para los que se han eliminado relaciones se eliminan de la lista de recursos relacionados en la sección **[!UICONTROL Relacionado]** .
 
-## Traducción de recursos relacionados {#translating-related-assets}
+## Traducir recursos relacionados {#translating-related-assets}
 
-La creación de relaciones de origen y derivadas entre recursos mediante la función Recursos relacionados también resulta útil en los flujos de trabajo de traducción. Cuando se ejecuta un flujo de trabajo de traducción en un recurso derivado, obtiene automáticamente cualquier recurso al que hace referencia el archivo de origen y lo incluye para su traducción. [!DNL Experience Manager Assets] De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el recurso de origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen como se muestra.
+La creación de relaciones de origen/derivadas entre recursos mediante la función de recursos relacionados también resulta útil en los flujos de trabajo de traducción. Cuando se ejecuta un flujo de trabajo de traducción en un recurso derivado, obtiene automáticamente cualquier recurso al que hace referencia el archivo de origen y lo incluye para su traducción. [!DNL Experience Manager Assets] De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el recurso de origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen como se muestra.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
