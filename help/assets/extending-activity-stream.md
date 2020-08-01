@@ -1,23 +1,23 @@
 ---
-title: Integrar recursos con flujo de actividad
-description: Describe las funciones de grabación de Experience Manager y cómo configurarlas para grabar eventos específicos.
+title: ' [!DNL Assets] Integración con flujo de actividad.'
+description: Describe las funciones [!DNL Experience Manager] de grabación y cómo configurarlas para grabar eventos específicos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
 
 
-# Integrar recursos con flujo de actividad {#integrating-assets-with-activity-stream}
+# Integración [!DNL Assets] con flujo de actividad {#integrating-assets-with-activity-stream}
 
-Los usuarios de Recursos Adobe Experience Manager realizan muchas acciones, como crear, cargar y eliminar recursos. Estas acciones se pueden registrar para que pueda proporcionar un historial de lo que ha hecho un usuario. En esta sección se describen las funciones de grabación de Experience Manager y cómo configurar Experience Manager para grabar eventos específicos.
+[!DNL Adobe Experience Manager Assets] los usuarios realizan muchas acciones como crear, cargar y eliminar recursos. Estas acciones se pueden registrar para que pueda proporcionar un historial de lo que ha hecho un usuario. En esta sección se describen las funciones de grabación [!DNL Experience Manager] y cómo configurarlas [!DNL Experience Manager] para grabar eventos específicos.
 
 ## Consideraciones de rendimiento y comportamiento predeterminado {#performance-considerations-and-default-behavior}
 
-Esta integración podría requerir CPU y espacio en disco, por ejemplo, al realizar una importación masiva. Por estos motivos, la integración de recursos con el flujo de Actividad está deshabilitada de forma predeterminada.
+Esta integración podría requerir CPU y espacio en disco, por ejemplo, al realizar una importación masiva. Por estos motivos, la [!DNL Assets] integración con el flujo de Actividad está deshabilitada de forma predeterminada.
 
 ## eventos de acción admitidos {#supported-action-events}
 
@@ -39,7 +39,7 @@ Se pueden configurar los siguientes eventos para que se registren:
 * Subrecurso actualizado (SUBASSET_UPDATED)
 * Subrecurso eliminado (SUBASSET_REMOVED)
 
-## Configuración del registro de eventos de recursos {#configuring-aem-assets-events-recording}
+## Configurar la grabación de [!DNL Assets] eventos {#configuring-aem-assets-events-recording}
 
 La consola [](/help/sites-deploying/configuring-osgi.md) web proporciona acceso al ajuste del grabador de Evento de recursos. Para configurar el grabador de Evento de recursos, siga estos pasos:
 
