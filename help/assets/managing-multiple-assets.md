@@ -1,11 +1,11 @@
 ---
-title: Administre metadatos de muchos recursos y colecciones en Adobe Enterprise Manager.
+title: Administre metadatos de muchos recursos y colecciones en [!DNL Adobe Enterprise Manager].
 description: Edite los metadatos de muchos recursos y colecciones simultáneamente para propagar rápidamente los cambios comunes de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '487'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # Gestión de recursos y colecciones {#managing-multiple-assets-and-collections}
 
-Recursos de Adobe Enterprise Manager le permite editar simultáneamente los metadatos de varios recursos para que pueda propagar rápidamente cambios comunes de metadatos a los recursos de forma masiva. También puede editar los metadatos de varias colecciones de forma masiva.
+[!DNL Adobe Enterprise Manager Assets] le permite editar los metadatos de varios recursos de forma simultánea para poder propagar rápidamente cambios comunes de metadatos a los recursos de forma masiva. También puede editar los metadatos de varias colecciones de forma masiva.
 
 Utilice la página de propiedades para realizar cambios en los metadatos de varios recursos o colecciones:
 
@@ -28,7 +28,7 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
 
 ## Editar propiedades de metadatos de varios recursos {#editing-metadata-properties-of-multiple-assets}
 
-1. En la interfaz de usuario de Recursos, navegue a la ubicación de los recursos que desee editar.
+1. En la interfaz de usuario, navegue hasta la ubicación de los recursos que desee editar. [!DNL Assets]
 1. Seleccione los recursos para los que desea editar propiedades comunes.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades]** para abrir la página de propiedades de los recursos seleccionados.
 
