@@ -3,9 +3,9 @@ title: Añada una marca de agua en los recursos digitales.
 description: Aprenda a utilizar la función de marca de agua para añadir una marca de agua digital a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5035d3457187f4d5fe5c2af255a1a886df7291b4
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -39,4 +39,4 @@ Para poder aplicar marcas de agua a los recursos, agregue el paso de la marca de
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. En la interfaz de usuario, cargue un recurso de ejemplo. [!DNL Assets] La marca de agua aparece con el tamaño de fuente, el color, etc., en la posición configurada en los pasos anteriores.
 
-Para marcar documentos PDF mediante programación o con información dinámica, considere la posibilidad de utilizar la oferta de servicios [de Documento de](/help/forms/using/overview-aem-document-services.md) AEM.
+Para marcar documentos PDF mediante programación o con información dinámica, considere la posibilidad de utilizar la oferta de servicios [de Documento de](/help/forms/using/overview-aem-document-services.md) Experience Manager.
