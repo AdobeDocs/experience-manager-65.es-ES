@@ -1,19 +1,19 @@
 ---
-title: Proteja y desproteja los recursos digitales para editarlos
+title: Proteja y extraiga los recursos digitales para editarlos.
 description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
 
-# Archivos de ingreso y salida en Experience Manager DAM {#check-in-and-check-out-files-in-assets}
+# Archivos de ingreso y salida en [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Recursos de Adobe Experience Manager le permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a activarlo en Recursos. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
+[!DNL Adobe Experience Manager Assets] permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a activarlo en [!DNL Assets]. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
 
 Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
 
@@ -21,7 +21,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
 ## Comprobación de recursos {#checking-out-assets}
 
-1. En la interfaz de usuario de Recursos, seleccione el recurso que desee desproteger. También puede seleccionar varios recursos para retirarlos.
+1. En la interfaz de usuario, seleccione el recurso que desee desproteger. [!DNL Assets] También puede seleccionar varios recursos para retirarlos.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**.
 La opción **[!UICONTROL Cierre]** de compra cambia a **[!UICONTROL Proteger]**.
 Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inicie sesión como un usuario diferente. Aparece un símbolo de bloqueo en la miniatura del recurso que ha extraído.
@@ -44,14 +44,14 @@ Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inic
 
    También puede elegir anotar o publicar el recurso.
 
-1. Seleccione el recurso editado en la [!DNL Assets] interfaz y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado se protege en Recursos y está disponible para su edición para otros usuarios.
+1. Seleccione el recurso editado en la [!DNL Assets] interfaz y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en [!DNL Assets] y está disponible para su edición para otros usuarios.
 
 ## Registro forzado {#forced-check-in}
 
 Los administradores pueden proteger recursos que otros usuarios han extraído.
 
-1. Inicie sesión en Assets como administrador.
-1. En la interfaz de usuario de Recursos, seleccione uno o varios recursos que hayan sido retirados por otros usuarios.
+1. Inicie sesión como [!DNL Assets] administrador.
+1. En la interfaz de usuario, seleccione uno o varios recursos que hayan sido desprotegidos por otros usuarios. [!DNL Assets]
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
@@ -59,6 +59,6 @@ Los administradores pueden proteger recursos que otros usuarios han extraído.
 
 >[!MORELIKETHIS]
 >
->* [Obtenga información sobre cómo registrarse y desprotegerse en la aplicación de escritorio de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Comprender la protección y desprotección en la aplicación de escritorio de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Tutorial de vídeo para comprender la protección y la protección en recursos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 
