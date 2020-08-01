@@ -3,9 +3,9 @@ title: Configure el etiquetado de recursos mediante el servicio de contenido int
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1103'
 ht-degree: 43%
 
 ---
@@ -25,7 +25,7 @@ En el artículo se detallan las siguientes tareas clave necesarias para configur
 
 ## Requisitos previos {#prerequisites}
 
-Antes de utilizar Smart Content Service, asegúrese de lo siguiente para crear una integración en Adobe Developer Console:
+Antes de utilizar Smart Content Service, asegúrese de lo siguiente para crear una integración en la consola de desarrollador de Adobe:
 
 * Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * El servicio de Smart Content Service está habilitado para su organización.
@@ -33,7 +33,7 @@ Antes de utilizar Smart Content Service, asegúrese de lo siguiente para crear u
 <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
 -->
 
-Para habilitar Etiquetas inteligentes mejoradas, además de las anteriores, instale también el último Service Pack [de](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html)AEM.
+Para habilitar Etiquetas inteligentes mejoradas, además de las anteriores, instale también el último Service Pack [de](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html)Experience Manager.
 
 ## Obtener un certificado público {#obtain-public-certificate}
 
@@ -94,7 +94,7 @@ Para utilizar las API de Smart Content Service, cree una integración en Adobe D
 
 ## Configurar el servicio de contenido inteligente {#configure-smart-content-service}
 
-Para configurar la integración, utilice los valores de los campos ID de cuenta técnica, ID de organización, Secreto de cliente, Servidor de autorización y Clave de API de la integración de Adobe Developer Console. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la [!DNL Experience Manager] implementación.
+Para configurar la integración, utilice los valores de los campos ID de cuenta técnica, ID de organización, Secreto de cliente, Servidor de autorización y Clave de API de la integración de la consola de desarrollador de Adobe. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la [!DNL Experience Manager] implementación.
 
 1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > Cloud Service **** preexistentes para abrir la consola de [!UICONTROL Cloud Service] .
 1. En Etiquetas **[!UICONTROL inteligentes de]** recursos, abra la configuración creada anteriormente. En la página de configuración del servicio, haga clic en **[!UICONTROL Editar]**.
