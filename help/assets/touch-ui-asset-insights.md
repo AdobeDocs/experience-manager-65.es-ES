@@ -3,9 +3,9 @@ title: 'Información sobre Assets '
 description: Descubra cómo la función de perspectivas de recursos le permite realizar un seguimiento de las clasificaciones de usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '729'
 ht-degree: 7%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 7%
 
 La función de perspectivas de recursos le permite realizar un seguimiento de las clasificaciones de usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe. Ayuda a obtener perspectivas sobre su rendimiento y popularidad.
 
-Assets Insights captura los detalles de la actividad del usuario, como el número de veces que se califica, hace clic e imprime una imagen (el número de veces que se carga una imagen en el sitio web). Asigna puntuaciones a las imágenes en función de estas estadísticas. Puede utilizar las estadísticas de rendimiento y puntuaciones para seleccionar imágenes populares para incluirlas en catálogos, campañas de marketing, etc. Puede incluso formular políticas de archivado y renovación de licencias basadas en estas estadísticas.
+[!DNL Assets] Las perspectivas capturan los detalles de actividad del usuario, como el número de veces que se clasifica, hace clic e imprime una imagen (el número de veces que se carga una imagen en el sitio web). Asigna puntuaciones a las imágenes en función de estas estadísticas. Puede utilizar las estadísticas de rendimiento y puntuaciones para seleccionar imágenes populares para incluirlas en catálogos, campañas de marketing, etc. Puede incluso formular políticas de archivado y renovación de licencias basadas en estas estadísticas.
 
-Para que Assets Insights capture estadísticas de uso de imágenes de un sitio web, debe incluir el código incrustado de la imagen en el código del sitio web.
+Para que [!DNL Assets] Insights capture estadísticas de uso de imágenes de un sitio web, debe incluir el código incrustado de la imagen en el código del sitio web.
 
 Para permitir que Asset Insights muestre las estadísticas de uso de los recursos, primero configure la función para recuperar datos de sistema de informes de Adobe Analytics. Para obtener más información, consulte [Configuración de perspectivas](/help/assets/touch-ui-configuring-asset-insights.md)de recursos.
 
@@ -29,7 +29,7 @@ Para permitir que Asset Insights muestre las estadísticas de uso de los recurso
 
 Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la página de metadatos.
 
-1. En la interfaz de usuario de Recursos, seleccione la imagen y, a continuación, haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
+1. En la interfaz de usuario ( [!DNL Assets] IU), seleccione la imagen y, a continuación, haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
 1. En la página Propiedades, haga clic en la ficha **[!UICONTROL Perspectivas]** .
 1. Revise los detalles de uso del recurso en la ficha **[!UICONTROL Perspectivas]** . La sección **[!UICONTROL Puntuación]** describe el uso total de recursos y las recuperaciones de rendimiento de un recurso.
 
@@ -66,15 +66,15 @@ Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la
 
 Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente mediante la **[!UICONTROL Vista de la información]**.
 
-1. En la interfaz de usuario de Recursos, vaya a la carpeta que contenga los recursos para los que desee realizar la vista.
+1. En la interfaz de usuario, desplácese hasta la carpeta que contiene los recursos para los que desea realizar la vista. [!DNL Assets]
 1. Haga clic en Diseño en la barra de herramientas y, a continuación, elija **[!UICONTROL Vista]** de perspectivas.
 1. La página muestra las puntuaciones de uso de los recursos. Compare las clasificaciones de los distintos recursos y obtenga perspectivas.
 
 ## Programar trabajo en segundo plano {#scheduling-background-job}
 
-Asset Insights obtiene de forma periódica los datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos de]** Adobe CQ DAM desde la consola web.
+Asset Insights obtiene de forma periódica los datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos DAM de]** Adobe CQ desde la consola web.
 
-1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Abra la configuración del servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos DAM de]** Adobe CQ.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
