@@ -3,9 +3,9 @@ title: Procesar recursos para llevar a cabo procesos de negocios, realizar audit
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '985'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 
 ## Aplicación de un flujo de trabajo a varios recursos {#applying-a-workflow-to-multiple-assets}
 
-1. Desde la consola Recursos, desplácese hasta la ubicación de los recursos para los que desea realizar el inicio en un flujo de trabajo y seleccione los recursos. Seleccione **[!UICONTROL Línea de tiempo]** en el menú para mostrar la línea de tiempo.
+1. Desde la [!DNL Assets] consola, desplácese hasta la ubicación de los recursos para los que desea realizar el inicio en un flujo de trabajo y seleccione los recursos. Seleccione **[!UICONTROL Línea de tiempo]** en el menú para mostrar la línea de tiempo.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
