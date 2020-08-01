@@ -1,26 +1,26 @@
 ---
-title: API HTTP de recursos en [!DNL Adobe Experience Manager].
+title: API HTTP de [!DNL Assets] en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
 
 
-# API de HTTP de Assets {#assets-http-api}
+# [!DNL Assets] API HTTP {#assets-http-api}
 
 ## Información general {#overview}
 
-La API HTTP de Recursos permite crear-leer-actualizar-eliminar (CRUD) operaciones en recursos digitales, incluidos metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de [!DNL Experience Manager] contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](/help/assets/assets-api-content-fragments.md)de contenido.
+La API [!DNL Assets] HTTP permite operaciones de creación-lectura-actualización-eliminación (CRUD) en recursos digitales, incluidos metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de [!DNL Experience Manager] contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](/help/assets/assets-api-content-fragments.md)de contenido.
 
 Para acceder a la API:
 
 1. Abra el documento del servicio API en `https://[hostname]:[port]/api.json`.
-1. Siga el vínculo del servicio Recursos que lleva a `https://[hostname]:[server]/api/assets.json`.
+1. Siga el vínculo del [!DNL Assets] servicio que lleva a `https://[hostname]:[server]/api/assets.json`.
 
 La respuesta de API es un archivo JSON para algunos tipos MIME y un código de respuesta para todos los tipos MIME. La respuesta JSON es opcional y puede que no esté disponible, por ejemplo, para archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
 
@@ -34,7 +34,7 @@ Para obtener más información, consulte Compatibilidad con fragmentos [de conte
 
 ## modelo Data {#data-model}
 
-La API HTTP de Recursos expone dos elementos principales, carpetas y recursos (para recursos estándar).
+La API [!DNL Assets] HTTP expone dos elementos principales, carpetas y recursos (para recursos estándar).
 
 Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en fragmentos de contenido. Consulte Modelos [de datos de fragmento de contenido](/help/assets/assets-api-content-fragments.md#content-fragments) para obtener más información.
 
@@ -75,7 +75,7 @@ En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 * Propiedades.
 * Vínculos.
 
-La API HTTP de Assets incluye las siguientes funciones:
+La API [!DNL Assets] HTTP incluye las siguientes funciones:
 
 * [Recupere una lista](#retrieve-a-folder-listing)de carpetas.
 * [Crear una carpeta](#create-a-folder).
