@@ -3,9 +3,9 @@ title: Administre recursos compuestos con referencias y recursos de varias pági
 description: Aprenda a crear referencias a recursos digitales desde dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Los recursos a los que se hace referencia ya existen en [!DNL Experience Manager
 
 >[!NOTE]
 >
->Si el archivo [!DNL InDesign Server] se procesa como proxy, [!DNL InDesign] los archivos tienen su previsualización incrustada en sus metadatos XMP. En este caso, la extracción de miniaturas no es obligatoria explícitamente. Sin embargo, si [!DNL InDesign Server] no se procesa como proxy, las miniaturas deben extraerse explícitamente para [!DNL InDesign] los archivos.
+>Si el [!DNL InDesign Server] archivo se procesa como proxy, [!DNL InDesign] los archivos tienen su previsualización incrustada en sus metadatos de XMP. En este caso, la extracción de miniaturas no es obligatoria explícitamente. Sin embargo, si [!DNL InDesign Server] no se procesa como proxy, las miniaturas deben extraerse explícitamente para [!DNL InDesign] los archivos.
 
 ### Creación de referencias arrastrando recursos {#create-references-by-dragging-aem-assets}
 
-Este procedimiento es similar a [añadir recursos digitales como referencias en Adobe Illustrator](#refai).
+Este procedimiento es similar a [agregar recursos digitales como referencias en Adobe Illustrator](#refai).
 
 ### Creación de referencias a recursos mediante la exportación de un archivo ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
@@ -131,12 +131,12 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 
 ## Prácticas recomendadas y limitación {#best-practice-limitation-tips}
 
-* La generación de subrecursos puede requerir muchos recursos en cualquier implementación de Experience Manager. Si está generando subrecursos al cargar recursos complejos, agregue el paso en el flujo de trabajo de recursos de actualización de DAM. Si está generando subrecursos a petición, cree un flujo de trabajo independiente para generar subrecursos. Un flujo de trabajo dedicado le permite omitir los demás pasos del flujo de trabajo de recursos de actualización de DAM y guardar los recursos computacionales.
+* La generación de subrecursos puede requerir muchos recursos en cualquier [!DNL Experience Manager] implementación. Si está generando subrecursos al cargar recursos complejos, agregue el paso en el flujo de trabajo de recursos de actualización de DAM. Si está generando subrecursos a petición, cree un flujo de trabajo independiente para generar subrecursos. Un flujo de trabajo dedicado le permite omitir los demás pasos del flujo de trabajo de recursos de actualización de DAM y guardar los recursos computacionales.
 
 >[!MORELIKETHIS]
 >
 >* [Uso de la aplicación de escritorio de Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
 >* [Configurar acciones de escritorio en Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Creación de objetos inteligentes vinculados en Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Colocación de gráficos en Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+>* [Colocar gráficos en Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
