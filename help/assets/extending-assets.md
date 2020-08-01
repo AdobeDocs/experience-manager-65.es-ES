@@ -1,21 +1,21 @@
 ---
-title: Personalización y ampliación de recursos de Adobe Experience Manager
+title: Personalizar y ampliar [!DNL Adobe Experience Manager Assets].
 description: Conozca las formas en que puede personalizar y ampliar el uso compartido de recursos y el editor de recursos, que ofrece a los usuarios una interfaz y un conjunto de funciones específicos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
 
-# Personalización y ampliación de recursos {#customizing-and-extending-assets}
+# Personalizar y ampliar [!DNL Assets] {#customizing-and-extending-assets}
 
-El editor de recursos es el principal punto de acceso que los usuarios de un sitio web de Adobe Enterprise Manager utilizarán para buscar, vista y manipular los recursos digitales de su repositorio.
+El Editor de recursos es el principal punto de acceso que los usuarios de un sitio web de Adobe Enterprise Manager utilizarán para buscar, vista y manipulación de los recursos digitales de su repositorio.
 
-Como desarrollador de Experience Manager, puede personalizar y ampliar el Editor de recursos de varias formas, lo que le permite a los usuarios disponer de una interfaz y un conjunto de funciones personalizados.
+Como [!DNL Experience Manager] desarrollador, puede personalizar y ampliar el Editor de recursos de varias formas, ofreciendo a los usuarios una interfaz y un conjunto de funciones específicos.
 
 Se pueden personalizar o mejorar los siguientes aspectos de la funcionalidad:
 
@@ -36,6 +36,6 @@ Se pueden personalizar los siguientes aspectos del aspecto del Editor de recurso
 
 ## Personalización de representaciones {#customizing-renditions}
 
-En la terminología Recursos de Experience Manager, una representación es la forma en que se presenta un recurso. En general, un recurso concreto puede tener varias representaciones. Por ejemplo, la imagen a color completo puede tener una representación en su tamaño original, otra en un tamaño reducido y otra que se reduzca y se convierta a escala de grises.
+En [!DNL Experience Manager Assets] terminología, una representación es la forma en que se presenta un recurso. En general, un recurso concreto puede tener varias representaciones. Por ejemplo, la imagen a color completo puede tener una representación en su tamaño original, otra en un tamaño reducido y otra que se reduzca y se convierta a escala de grises.
 
 Las representaciones en las que está disponible un recurso concreto se pueden personalizar y crear nuevas representaciones.
