@@ -3,9 +3,9 @@ title: Biblioteca de transcodificación de imágenes
 description: Descubra cómo configurar y utilizar la biblioteca de transcodificación de imágenes de Adobe, una solución de procesamiento de imágenes que puede realizar funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo de imágenes y cambio de tamaño de imágenes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ La biblioteca de transcodificación de imágenes ofrece compatibilidad con CMYK 
 Además de admitir una amplia gama de formatos de archivo y perfiles, la biblioteca de transcodificación de imágenes tiene ventajas significativas con respecto a otras soluciones de terceros en cuanto a rendimiento, escalabilidad y calidad. Estas son algunas de las ventajas clave del uso de la biblioteca de transcodificación de imágenes:
 
 * **Escala con un tamaño de archivo o una resolución** crecientes: El escalado se logra principalmente gracias a la capacidad patentada de la biblioteca de transcodificación de imágenes para cambiar el tamaño al descodificar archivos. Esta capacidad garantiza que el uso de la memoria en tiempo de ejecución siempre es óptimo y no es una función cuadrática de aumento del tamaño del archivo o de resolución de megapíxeles. La biblioteca de transcodificación de imágenes puede procesar archivos de mayor tamaño y alta resolución (con megapíxeles más altos). Las herramientas de terceros, como ImageMagick, no pueden gestionar archivos grandes ni bloqueos mientras procesan dichos archivos.
-* **Algoritmos** de compresión y cambio de tamaño de la calidad de Photoshop: Coherencia con el estándar de la industria en términos de calidad del muestreo de bajada (suave, nítida y automática bicúbica) y calidad de compresión. La biblioteca de transcodificación de imágenes evalúa aún más el factor de calidad de la imagen de entrada y utiliza de forma inteligente tablas y ajustes de calidad óptimos para la imagen de salida. Esta capacidad produce archivos de tamaño óptimo sin comprometer la calidad visual.
+* **Algoritmos** de compresión y cambio de tamaño de calidad de Photoshop: Coherencia con el estándar de la industria en términos de calidad del muestreo de bajada (suave, nítida y automática bicúbica) y calidad de compresión. La biblioteca de transcodificación de imágenes evalúa aún más el factor de calidad de la imagen de entrada y utiliza de forma inteligente tablas y ajustes de calidad óptimos para la imagen de salida. Esta capacidad produce archivos de tamaño óptimo sin comprometer la calidad visual.
 * **Alto rendimiento:** El tiempo de respuesta es menor y el rendimiento es siempre mayor que ImageMagick. Por lo tanto, la biblioteca de transcodificación de imágenes debería reducir el tiempo de espera de los usuarios y el coste del alojamiento.
 * **Escalar mejor con carga simultánea:** La biblioteca de transcodificación de imágenes funciona de forma óptima en condiciones de carga simultánea. Proporciona un alto rendimiento con rendimiento óptimo de la CPU, uso de memoria y tiempo de respuesta bajo, lo que ayuda a reducir el costo del alojamiento.
 
@@ -55,7 +55,7 @@ Los argumentos de la línea de comandos para la biblioteca de transcodificación
 
 Puede configurar las siguientes opciones para el `-resize` parámetro:
 
-* `X`:: Funciona de forma similar al Experience Manager. Por ejemplo -resize 319.
+* `X`:: Funciona de forma similar a [!DNL Experience Manager]. Por ejemplo -resize 319.
 * `WxH`:: La relación de aspecto no se mantiene, por ejemplo `-resize 319x319`.
 * `Wx`:: Corrige la anchura y calcula la altura manteniendo la proporción de aspecto. Por ejemplo `-resize 319x`.
 * `xH`:: Corrige la altura y calcula la anchura manteniendo la proporción de aspecto. Por ejemplo `-resize x319`.
@@ -72,9 +72,9 @@ Para configurar el procesamiento del DIT, cree un archivo de configuración y ac
 
 ### Crear archivo de configuración para el paquete extraído {#create-conf-file}
 
-Para configurar la biblioteca, cree un archivo .conf para indicar las bibliotecas siguiendo los pasos siguientes. Necesita permisos de administrador o raíz.
+Para configurar la biblioteca, cree un archivo CONF para indicar las bibliotecas siguiendo los pasos siguientes. Necesita permisos de administrador o raíz.
 
-1. Descargue el paquete Biblioteca de transcodificación de [imágenes de Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instálelo mediante el Administrador de paquetes. El paquete es compatible con Experience Manager 6.5.
+1. Descargue el paquete Biblioteca de transcodificación de [imágenes de Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instálelo mediante el Administrador de paquetes. El paquete es compatible con [!DNL Experience Manager] 6.5.
 
 1. Para conocer un ID de paquete para `com.day.cq.dam.cq-dam-switchengine`, inicie sesión en la consola web y haga clic en **[!UICONTROL OSGi]** > **[!UICONTROL Paquetes]**. Como alternativa, para abrir la consola de paquetes, acceda a la `https://[aem_server:[port]/system/console/bundles/` URL. Busque `com.day.cq.dam.cq-dam-switchengine` el paquete y su ID.
 
@@ -92,7 +92,7 @@ Para configurar la biblioteca, cree un archivo .conf para indicar las biblioteca
 
 1. Ejecutar `ldconfig` para crear los vínculos y la caché necesarios.
 
-1. En la cuenta que se utiliza para inicio Experience Manager, edite `.bash_profile` el archivo. Añada `LD_LIBRARY_PATH` agregando lo siguiente.
+1. En la cuenta que se utiliza para el inicio [!DNL Experience Manager], edite `.bash_profile` el archivo. Añada `LD_LIBRARY_PATH` agregando lo siguiente.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -105,7 +105,7 @@ Para configurar la biblioteca, cree un archivo .conf para indicar las biblioteca
 
 Actualice el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM para utilizar la biblioteca para procesar imágenes.
 
-1. En la interfaz de usuario de Experience Manager, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. En [!DNL Experience Manager] la interfaz de usuario, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 
 1. En la página Modelos **[!UICONTROL de]** flujo de trabajo, abra el modelo de flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM en modo de edición.
 
@@ -137,7 +137,7 @@ Por ejemplo, si desea crear miniaturas para una imagen TIFF con la biblioteca de
 
 1. Sincronice el modelo de flujo de trabajo de recursos [!UICONTROL de actualización de] DAM actualizado. Guarde el flujo de trabajo.
 
-El usuario verifica la configuración, carga una imagen TIFF y supervisa el archivo error.log. Observará `INFO` mensajes con menciones de `SwitchEngineHandlingProcess execute: executing command line`. Los registros mencionan las representaciones generadas. Una vez completado el flujo de trabajo, puede realizar la vista de las nuevas representaciones en Experience Manager.
+El usuario verifica la configuración, carga una imagen TIFF y supervisa el archivo error.log. Observará `INFO` mensajes con menciones de `SwitchEngineHandlingProcess execute: executing command line`. Los registros mencionan las representaciones generadas. Una vez completado el flujo de trabajo, puede realizar la vista de las nuevas representaciones en [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >
