@@ -1,11 +1,11 @@
 ---
-title: Lightbox como galería de imágenes personal en Recursos de Adobe Experience Manager.
-description: Obtenga información sobre Lightbox como su galería de imágenes personal en Recursos Adobe Experience Manager.
+title: Lightbox como su galería de imágenes personal en [!DNL Adobe Experience Manager Assets].
+description: Obtenga información sobre Lightbox como su galería de imágenes personal en Recursos de Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Lightbox es un tipo especial de colección que facilita el acceso a los recursos. Puede acceder rápidamente a Lightbox para agregar o eliminar recursos. Sirve como su galería de imágenes personal.
 
-Si es un usuario de Recursos Adobe Experience Manager, Lightbox se crea automáticamente la primera vez que inicia sesión en la aplicación. Es exclusivo para su inicio de sesión. Otros usuarios no pueden acceder a su Lightbox.
+Si es un [!DNL Adobe Experience Manager Assets] usuario, Lightbox se crea automáticamente la primera vez que inicia sesión en la aplicación. Es exclusivo para su inicio de sesión. Otros usuarios no pueden acceder a su Lightbox.
 
 ## Añadir recursos en Lightbox {#adding-assets-to-lightbox}
 
-1. En la interfaz de usuario de Recursos, seleccione los recursos que desea agregar a Lightbox.
+1. En la interfaz de usuario, seleccione los recursos que desea agregar a Lightbox. [!DNL Assets]
 1. Arrastre los recursos a la zona **[!UICONTROL Colocar en Lightbox]** . Se libera cuando la zona de colocación se active y su etiqueta cambie a **[!UICONTROL Colocar para Añadir]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
