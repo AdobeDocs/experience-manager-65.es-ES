@@ -1,13 +1,8 @@
 ---
 title: Notas de versión de AEM Sites
 description: Notas de versión específicas de Adobe Experience Manager 6.5 Sites.
-uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
-docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 71%
@@ -15,7 +10,7 @@ ht-degree: 71%
 ---
 
 
-# Notas de versión de AEM Sites{#aem-sites-release-notes}
+# Notas de versión de AEM Sites {#aem-sites-release-notes}
 
 Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 
@@ -27,10 +22,10 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 
    * &quot;in&quot; para cadenas, matrices y objetos:
 
-      ```
+      ```html
       ${'a' in 'abc’}
-       ${100 in myArray}
-       ${'a' in myObject}
+      ${100 in myArray}
+      ${'a' in myObject}
       ```
 
    * Declaraciones de variables con data-asteril-set :
@@ -41,10 +36,10 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 
    * Identificadores para data-il-unwrap:
 
-      ```
+      ```html
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-       text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-       </div>
+      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+      </div>
       ```
 
    * Compatibilidad con números negativos
@@ -126,7 +121,7 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 * `s_code.js` Se incluye H.27.5. Adobe recomienda cambiar la implementación a `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0 se incluye. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
 
-## AEM y Comercio {#aem-commerce}
+## AEM y comercio {#aem-commerce}
 
 Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
