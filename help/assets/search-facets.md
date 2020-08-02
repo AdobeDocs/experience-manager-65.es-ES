@@ -3,9 +3,9 @@ title: Facetas de búsqueda.
 description: Cómo crear, modificar y utilizar facetas de búsqueda en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2485'
 ht-degree: 18%
 
 ---
@@ -134,7 +134,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 
 El predicado de propiedades de varios valores permite buscar varios valores en los recursos. Imagine un escenario en el que tiene imágenes de varios productos en [!DNL Assets] y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
 
-1. Click the [!DNL Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda y haga clic en **[!UICONTROL Editar]** icono ![de](assets/do-not-localize/aemassets_edit.png)edición.
 1. En la página Editar formulario de búsqueda, arrastre un **[!UICONTROL predicado de propiedades de varios valores]** desde la pestaña **[!UICONTROL Seleccionar predicado]** hasta el panel principal.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
