@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 2dad235c94c73c1c624fa05ff86a7260d4d4a01b
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2329'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 0%
 El marco de integración incluye una capa de integración con una API. Esto le permite:
 
 * conectar un sistema de comercio electrónico y extraer los datos del producto en AEM
+
 * crear componentes de AEM para capacidades comerciales independientes del motor de comercio electrónico específico
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -56,6 +57,7 @@ El marco de comercio electrónico se puede utilizar con cualquier solución de c
    * La `adaptTo` implementación busca una `cq:commerceProvider` propiedad en la jerarquía del recurso:
 
       * Si se encuentra, el valor se utiliza para filtrar la búsqueda del servicio de comercio.
+
       * Si no se encuentra, se utiliza el servicio de comercio de mayor clasificación.
    * Se utiliza una `cq:Commerce` mezcla para que `cq:commerceProvider` se pueda agregar a los recursos con establecimiento inflexible de tipos.
 
@@ -69,7 +71,7 @@ El marco de comercio electrónico se puede utilizar con cualquier solución de c
 Consulte los siguientes ejemplos:
 
 | `cq:commerceProvider = geometrixx` | en una instalación AEM estándar se requiere una implementación específica; por ejemplo, el ejemplo de geometrixx, que incluye extensiones mínimas de la API genérica |
-|---|---|
+|--- |--- |
 | `cq:commerceProvider = hybris` | implementación de hybris |
 
 ### Ejemplo {#example}
@@ -117,6 +119,7 @@ Para desarrollar Hybris 4 se requiere lo siguiente:
 * En el administrador de configuración OSGi:
 
    * Deshabilite la compatibilidad con Hybris 5 para el servicio Analizador de respuestas predeterminado.
+
    * Asegúrese de que el servicio del controlador de autenticación básico de Hybris tenga una clasificación de servicio inferior a la del servicio del controlador OAuth de Hybris.
 
 ### Administración de sesiones {#session-handling}
@@ -124,7 +127,9 @@ Para desarrollar Hybris 4 se requiere lo siguiente:
 hybris utiliza una sesión de usuario para almacenar información como el carro de compras del cliente. La identificación de sesión se devuelve de hybris en una `JSESSIONID` cookie que debe enviarse en solicitudes posteriores a hybris. Para evitar almacenar la identificación de sesión en el repositorio, se codifica en otra cookie almacenada en el explorador del comprador. Se realizan los siguientes pasos:
 
 * En la primera solicitud no se establece ninguna cookie en la solicitud del comprador; por lo tanto, se envía una solicitud a la instancia de hybris para crear una sesión.
+
 * Las cookies de sesión se extraen de la respuesta, se codifican en una nueva cookie (por ejemplo, `hybris-session-rest`) y se configuran en la respuesta al comprador. La codificación de una nueva cookie es obligatoria, ya que la cookie original solo es válida para una ruta determinada y, de lo contrario, no se enviaría de nuevo desde el explorador en solicitudes posteriores. La información de ruta también debe agregarse al valor de la cookie.
+
 * En solicitudes posteriores, las cookies se descodifican de las `hybris-session-<*xxx*>` cookies y se configuran en el cliente HTTP que se utiliza para solicitar datos de hybris.
 
 >[!NOTE]
@@ -136,6 +141,7 @@ hybris utiliza una sesión de usuario para almacenar información como el carro 
 * Esta sesión &quot;posee&quot; el carro de **compras**
 
    * realiza tareas de adición/eliminación/etc.
+
    * realiza los distintos cálculos en el carro de compras;
 
       `commerceSession.getProductPrice(Product product)`
@@ -145,6 +151,7 @@ hybris utiliza una sesión de usuario para almacenar información como el carro 
    `CommerceSession.getUserContext()`
 
 * También posee la conexión de procesamiento de **pagos**
+
 * También posee la conexión de **despacho**
 
 ### Sincronización y publicación de productos {#product-synchronization-and-publishing}
@@ -163,33 +170,34 @@ Los datos del producto que se mantienen en hibris deben estar disponibles en AEM
 * Los cambios en el catálogo de los híbridos se indican para AEM mediante una fuente, que luego se propagan a la AEM b).
 
    * Producto agregado/eliminado/modificado con respecto a la versión del catálogo.
+
    * Producto aprobado.
 
 * La extensión hybris proporciona un importador de encuestas (&quot;esquema de híbridos&quot;), que puede configurarse para importar cambios en AEM en un intervalo especificado (por ejemplo, cada 24 horas en las que el intervalo se especifica en segundos):
 
-   * 
-
-      ```js
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```JavaScript
+       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+        {
+        * "jcr:mixinTypes": ["cq:PollConfig"],
+        * "enabled": true,
+        * "source": "hybris:outdoors",
+        * "jcr:primaryType": "cq:PageContent",
+        * "interval": 86400
+        }
+   ```
 
 * La configuración de catálogo de AEM reconoce las versiones de catálogo **en ensayo** y **en línea** .
 
 * La sincronización de productos entre las versiones del catálogo requerirá una (des)activación de la página de AEM correspondiente (a, c)
 
    * Añadir un producto a una versión de catálogo **en línea** requiere la activación de la página del producto.
+
    * La eliminación de un producto requiere la desactivación.
 
 * La activación de una página en el AEM c) requiere una marca de verificación b) y sólo es posible si
 
    * El producto está en una versión de catálogo **en línea** para páginas de producto.
+
    * Los productos a los que se hace referencia están disponibles en una versión de catálogo **en línea** para otras páginas (p. ej. páginas de campaña).
 
 * Las páginas de productos activadas necesitan acceder a la versión **en línea** (d) de los datos del producto.
@@ -213,7 +221,6 @@ Cualquier recurso de producto puede representarse mediante un `Product API`. La 
 >[!NOTE]
 >
 >De hecho, los ejes de variante se determinan por lo que `Product.getVariantAxes()` devuelva:
->
 >* hybris lo define para la implementación de hybris
 >
 >
@@ -224,7 +231,7 @@ Mientras que los productos (en general) pueden tener muchos ejes de variante, el
    >
 1. más uno más
 >
->   
+>
 Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (generalmente `color` para Geometrixx Outdoors).
 
 #### Referencias del producto y datos del producto {#product-references-and-product-data}
@@ -237,7 +244,7 @@ En general:
 
 Debe haber un mapa 1:1 entre las variaciones del producto y los nodos de datos del producto.
 
-Las referencias de producto también deben tener un nodo para cada variación presentada, pero no es necesario presentar todas las variaciones. Por ejemplo, si un producto tiene variaciones S, M, L, los datos del producto podrían ser los mismos.
+Las referencias de producto también deben tener un nodo para cada variación presentada, pero no es necesario presentar todas las variaciones. Por ejemplo, si un producto tiene variaciones S, M, L, los datos del producto pueden ser:
 
 ```shell
 etc
@@ -249,7 +256,7 @@ etc
 |       |──shirt-l
 ```
 
-Mientras que un catálogo &quot;grande y alto&quot; puede tener solamente.
+Mientras que un catálogo &quot;grande y alto&quot; solo puede tener:
 
 ```shell
 content
@@ -335,24 +342,30 @@ public class AxisFilter implements VariantFilter {
 
 * **Mecanismo general de Almacenamiento**
 
-   * Los nodos de producto no son:no estructurados.
+   * Los nodos del producto son `nt:unstructured`.
+
    * Un nodo de producto puede ser:
 
       * Una referencia, con los datos del producto almacenados en otra parte:
 
          * Las referencias de producto contienen una `productData` propiedad que señala a los datos del producto (normalmente, debajo de `/etc/commerce/products`).
+
          * Los datos del producto son jerárquicos; los atributos de producto se heredan de los antecesores de un nodo de datos de producto.
+
          * Las referencias de producto también pueden contener propiedades locales, que anulan las especificadas en los datos de producto.
       * Un producto en sí mismo:
 
          * Sin una `productData` propiedad.
+
          * Un nodo de producto que contiene todas las propiedades localmente (y no contiene una propiedad productData) hereda los atributos de producto directamente de sus propios antecesores.
 
 
 * **Estructura de producto AEM-genérica**
 
    * Cada variante debe tener su propio nodo de hoja.
+
    * La interfaz de producto representa productos y variantes, pero el nodo de repositorio relacionado es específico sobre cuál es.
+
    * El nodo product describe los atributos del producto y los ejes de variante.
 
 #### Ejemplo {#example-1}
@@ -507,6 +520,7 @@ La `CommerceSession` propiedad de los tres elementos:
 **Procesamiento de pagos**
 
 * El `CommerceSession` propietario también es propietario de la conexión de procesamiento de pagos.
+
 * Los implementadores deben agregar llamadas específicas (al servicio de procesamiento de pagos que hayan elegido) a la `CommerceSession` implementación.
 
 **Cumplimiento de pedido**
