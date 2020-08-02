@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '1873'
 ht-degree: 3%
@@ -90,7 +90,7 @@ Puede utilizar la interfaz de usuario del agente para guardar uno o varios borra
 
 ### [!DNL Oracle WebLogic] compatibilidad con el servidor de aplicaciones {#weblogic-support}
 
-Adobe Experience Manager Forms ha agregado compatibilidad con [!DNL Oracle WebLogic 12] formularios Adobe Experience Manager en JEE. Puede actualizar desde una versión anterior o configurar un nuevo Experience Manager 6.5 Forms en el servidor JEE en [!DNL Oracle WebLogic] 12.2.1.4 y versiones posteriores. Posteriormente corresponde a los cambios menores de la versión, donde x en 12.2.1.x se sustituye por un número de versión.
+Adobe Experience Manager Forms ha agregado compatibilidad con [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms en JEE. Puede actualizar desde una versión anterior o configurar un nuevo Forms Experience Manager 6.5 en el servidor JEE en [!DNL Oracle WebLogic] 12.2.1.4 y versiones posteriores. Posteriormente corresponde a los cambios menores de la versión, donde x en 12.2.1.x se sustituye por un número de versión.
 
 ### Mejoras de accesibilidad {#accessibility-improvements}
 
@@ -108,7 +108,7 @@ El modelo de datos de formulario ahora admite la autenticación basada en certif
 
 ### Otras mejoras clave {#other-improvements}
 
-* Experience Manager 6.5 Forms on JEE Documento Security se basa ahora en [!DNL Apache Struts 2].
+* Experience Manager 6.5 Forms en JEE Documento Security está ahora basado en [!DNL Apache Struts 2].
 
 * Se Añadió la compatibilidad con [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
@@ -134,7 +134,7 @@ Ahora puede seleccionar estilos dentro del cuadro de diálogo de componentes med
 
 #### Configurar [!DNL Experience Manager Assets] con [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Se cambia el canal de autorización entre [!DNL Experience Manager Assets] y [!DNL Brand Portal] . Anteriormente, [!DNL Brand Portal] se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un Token de acceso IMS para la autorización. [!DNL Experience Manager Assets] ahora se configura con [!DNL Brand Portal] mediante Adobe I/O, que obtiene un testigo IMS para la autorización de su [!DNL Brand Portal] inquilino.
+Se cambia el canal de autorización entre [!DNL Experience Manager Assets] y [!DNL Brand Portal] . Anteriormente, [!DNL Brand Portal] se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un Token de acceso IMS para la autorización. [!DNL Experience Manager Assets] ahora se configura con [!DNL Brand Portal] mediante E/S de Adobe, que obtiene un testigo IMS para la autorización de su [!DNL Brand Portal] inquilino.
 
 Los pasos para configurar [!DNL Experience Manager Assets] con [!DNL Brand Portal] son diferentes en función de su [!DNL Experience Manager] versión, y de si está configurando por primera vez o actualizando las configuraciones existentes. Consulte [Configuración de recursos de Experience Manager con Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) para obtener más información.
 
@@ -167,9 +167,9 @@ El recorte inteligente para vídeo, una función opcional disponible en Perfiles
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Generar salida imprimible en flujos de trabajo de formularios Experience Manager (6.5.4.0) {#generate-printable-output}
+#### Generar salida imprimible en flujos de trabajo Forms Experience Manager (6.5.4.0) {#generate-printable-output}
 
-El paso de flujo de trabajo Generar salida imprimible permite integrar un archivo de plantilla de origen con un archivo de datos. Esta integración le permite imprimir o guardar diferentes copias del archivo de plantilla. El paso genera una salida PCL, PostScript, ZPL, IPL, TPCL o DPL. Para obtener más información sobre esta función, consulte Flujo de trabajo centrado en [formularios en OSGi - Referencia](../forms/using/aem-forms-workflow-step-reference.md)de pasos.
+El paso de flujo de trabajo Generar salida imprimible permite integrar un archivo de plantilla de origen con un archivo de datos. Esta integración le permite imprimir o guardar diferentes copias del archivo de plantilla. El paso genera una salida PCL, PostScript, ZPL, IPL, TPCL o DPL. Para obtener más información sobre esta función, consulte Flujo de trabajo centrado en [Forms en OSGi - Referencia](../forms/using/aem-forms-workflow-step-reference.md)de pasos.
 
 ![Generar salida imprimible](assets/generate-print-output-step.gif)
 
@@ -201,7 +201,7 @@ Experience Manager Forms incluye las siguientes mejoras de accesibilidad:
 
 * Cada página de un formulario adaptable ahora incluye un título y una etiqueta de punto de referencia principal.
 
-#### Compartir y solicitar acceso a elementos de la Bandeja de entrada de un usuario de formularios Experience Manager (6.5.3.0) {#share-request-access}
+#### Uso compartido y solicitud de acceso a elementos de la Bandeja de entrada de un usuario Experience Manager de Forms (6.5.3.0) {#share-request-access}
 
 Puede compartir los elementos de la Bandeja de entrada con otro usuario. Una vez que otro usuario obtiene acceso a los elementos de la Bandeja de entrada, el usuario puede reclamar y realizar las acciones correspondientes en los elementos compartidos. Del mismo modo, puede solicitar acceso a los elementos de la Bandeja de entrada a otros usuarios. Consulte [Uso compartido y solicitud de acceso a elementos de la Bandeja de entrada de un usuario](../forms/using/configure-shared-queues-osgi.md).
 
@@ -216,7 +216,7 @@ Puede utilizar la API por lotes para generar varias comunicaciones interactivas 
 
 ## Versiones clave desde Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
 
-Entre el 5 de marzo de 2020 y el 4 de junio de 2020, Adobe lanzó lo siguiente, además de los Service Packs y los paquetes de correcciones acumulativos:
+Entre el 05 de marzo de 2020 y el 4 de junio de 2020, Adobe lanzó lo siguiente, además de los Service Packs y los paquetes de correcciones acumulativos:
 
 * [El portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribución de software está disponible para descargar paquetes de servicios de Experience Manager, paquetes de correcciones acumulativos, correcciones rápidas y paquetes de funciones.
 
@@ -224,7 +224,7 @@ Entre el 5 de marzo de 2020 y el 4 de junio de 2020, Adobe lanzó lo siguiente, 
 
 * [Aplicación de escritorio Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
 
-* [Pantallas de Experience Manager: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experience Manager Screens: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
