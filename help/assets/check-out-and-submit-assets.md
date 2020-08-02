@@ -3,9 +3,9 @@ title: Proteja y extraiga los recursos digitales para editarlos.
 description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,10 @@ Los administradores pueden proteger recursos que otros usuarios han extraído.
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Soltar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
+
+## Prácticas recomendadas y limitaciones {#tips-limitations}
+
+* Es posible eliminar una *carpeta* que contenga archivos de recursos extraídos. Antes de eliminar una carpeta, asegúrese de que los usuarios no hayan extraído ningún recurso digital.
 
 >[!MORELIKETHIS]
 >
