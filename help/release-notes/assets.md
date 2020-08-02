@@ -1,18 +1,18 @@
 ---
-title: Notas de la versión de Recursos Adobe Experience Manager
-description: Nuevas funciones y mejoras de los recursos de Adobe Experience Manager 6.5 Assets.
+title: Notas de la versión de [!DNL Adobe Experience Manager Assets] 6.5.
+description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '901'
+ht-degree: 41%
 
 ---
 
 
-# Notas de la versión de Recursos Adobe Experience Manager {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] notas de la versión {#aem-assets-release-notes}
 
-Estas son las características y los aspectos más destacados de la versión de Adobe Experience Manager 6.5 Assets.
+Here are the key features and highlights of the [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] release.
 
 ## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -36,11 +36,11 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Previsualización de la imagen y la licencia de Adobe Stock desde Experience Manager Assets](assets/stock_image_preview_license_options.png)
+![Previsualización de imágenes y licencias de Adobe Stock desde Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
 *Figura: Previsualización[!DNL Adobe Stock]imagen y licencia desde dentro[!DNL Experience Manager Assets].*
 
-![Busque y filtre las imágenes de Adobe Stock con licencia en Experience Manager](assets/aem-search-filters2.jpg)
+![Buscar y filtrar las imágenes de Adobe Stock con licencia en Experience Manager](assets/aem-search-filters2.jpg)
 
 *Figura: Busque y filtre las[!DNL Adobe Stock]imágenes con licencia en[!DNL Experience Manager].*
 
@@ -70,11 +70,11 @@ En las grandes empresas se puede distribuir la infraestructura necesaria para cr
 
 For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
-### Compatibilidad con vídeos 360 {#video-support}
+### 360 video support {#video-support}
 
 Manage your 360-video files directly in [!DNL Experience Manager] using the cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. Para obtener más información, consulte [Uso de vídeos 360](/help/assets/360-video.md).
 
-### Miniaturas de vídeo personalizadas {#custom-video-thumbnails}
+### Custom video thumbnails {#custom-video-thumbnails}
 
 Ahora puede personalizar las miniaturas de sus recursos de vídeo utilizando fotogramas del propio vídeo u otro contenido almacenado en DAM. Para obtener instrucciones adicionales, consulte [Acerca de las miniaturas de vídeo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -82,7 +82,7 @@ Ahora puede personalizar las miniaturas de sus recursos de vídeo utilizando fot
 
 [!DNL Dynamic Media] los visores ahora admiten funciones de accesibilidad mejoradas como compatibilidad con Aria, lectores de pantalla y texto alternativo. Para obtener información adicional, consulte [Notas de versión de los visores de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
-## Mejora de la opción de búsqueda {#search-experience-enhancement}
+## Mejora de la opción de búsqueda {#experience-enhancement-for-searching}
 
 [!DNL Experience Manager] A partir de la versión 6.5, los especialistas en mercadotecnia pueden descubrir los recursos deseados con mayor rapidez desde la página de resultados de búsqueda. Las facetas de búsqueda se actualizan con el número de recursos incluso antes de aplicar el filtro de búsqueda. Ver la cantidad esperada con el filtro ayuda a los usuarios a navegar a través de los resultados de búsqueda de forma eficaz. Para obtener más información, consulte [Buscar recursos en Experience Manager](../assets/search-assets.md).
 
