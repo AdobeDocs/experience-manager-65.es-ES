@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
+source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Al llegar por primera vez al sitio publicado, el visitante del sitio no suele ha
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![autorpublicado](assets/authorpublished.png)
 
 ## Visitante de sitio anónimo {#anonymous-site-visitor}
 
@@ -82,7 +82,7 @@ Esta experiencia supone que a [Aaron McDonald](/help/communities/tutorials.md#de
 
 En la esquina superior derecha, seleccione `Log in`y firme con el nombre de usuario (aaron.mcdonald@mailinator.com) y la contraseña (contraseña). Tenga en cuenta la capacidad de iniciar sesión con credenciales de Twitter o Facebook.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![login](assets/login.png)
 
 Una vez que haya iniciado sesión como miembro de la comunidad registrado, observe los siguientes elementos de menú para hacer clic y explorar el sitio de la comunidad:
 
@@ -95,11 +95,11 @@ Una vez que haya iniciado sesión como miembro de la comunidad registrado, obser
 * [La opción Notificaciones](/help/communities/notifications.md) le dirige a la sección de notificaciones, donde puede realizar la vista de sus eventos de interés y editar la configuración de las notificaciones.
 * [Administración](/help/communities/published-site.md#moderationlink) le dirige a la página Moderación de AEM Communities, si tiene privilegios de moderación.
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![adminscreen](assets/adminscreen.png)
 
 Observe que la página Calendario es la página de inicio porque la plantilla de sitio de referencia elegida incluía primero la función Calendario, seguida de la función Flujo de Actividad, la función Foro, etc. Esta estructura está visible desde la consola Plantilla [](/help/communities/sites.md#edit-site-template) del sitio o al modificar las propiedades del sitio en el entorno de creación:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![sitetemplate](assets/sitetemplate.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Los miembros pueden publicar un tema nuevo o seguir un tema.
 
 Los visitantes del sitio pueden realizar vistas de anuncios y ordenarlos de diversas maneras.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![forumlink](assets/forumlink.png)
 
 ### Vínculo Grupos {#groups-link}
 
@@ -130,7 +130,7 @@ Este es un ejemplo en el que se crea un grupo en el entorno de publicación.
 
 Los grupos también pueden crearse en el entorno del autor y gestionarse dentro del sitio de la comunidad en el entorno del autor (consola[Grupos](/help/communities/groups.md)de la comunidad). La experiencia de [crear grupos en el autor](/help/communities/nested-groups.md) es la siguiente en este tutorial.
 
-![classic-ui](assets/classic-ui.png)
+![grouplink](assets/grouplink.png)
 
 Crear un grupo de referencia:
 
@@ -148,11 +148,11 @@ Crear un grupo de referencia:
 
 1. Seleccionar **crear grupo**
 
-![classic-ui-website](assets/classic-ui-website.png)
+   ![creategroup](assets/creategroup.png)
 
 Una vez creado el nuevo grupo, **seleccione el nuevo grupo** Deportes para crear dos grupos (anidados) dentro de él. Como una estructura de sitio no puede comenzar con la función de grupos, después de abrir el grupo Deportes, es necesario seleccionar el vínculo Grupos:
 
-![classic-ui-create-page](assets/classic-ui-create-page.png)
+![grouplink1](assets/grouplink1.png)
 
 El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports` grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes `Groups` .
 
@@ -180,7 +180,7 @@ Una vez creados ambos grupos, seleccione el grupo de béisbol, un grupo abierto 
 
 Los vínculos del grupo se muestran debajo de los vínculos del sitio principal y se muestran de la siguiente manera:
 
-![classic-ui-website-page](assets/classic-ui-website-page.png)
+![grouplink2](assets/grouplink2.png)
 
 En el caso del autor: con privilegios administrativos, vaya a la consola [Grupos de](/help/communities/members.md) comunidades y agregue Weston McCall al `Community Engage Gymnastics <uid> Members` grupo.
 
@@ -195,7 +195,7 @@ Sólo el grupo de béisbol será visible.
 
 Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y navegue a la misma ubicación. Observe que Weston es capaz `Join` del grupo abierto `Baseball` y `enter or Leave` del `Gymnastics` grupo privado.
 
-![classic-ui-repository-vista](assets/classic-ui-repository-view.png)
+![grouplink3](assets/grouplink3.png)
 
 ### Vínculo de página Web {#web-page-link}
 
@@ -203,7 +203,7 @@ Vista la página Web básica incluida en el sitio seleccionando el vínculo Pág
 
 Por ejemplo, vaya a la instancia de **autor** , abra la `engage` carpeta en la consola [Sitios de](/help/communities/sites-console.md)comunidades, seleccione el icono **Abrir sitio** para entrar al modo de edición de autor. A continuación, seleccione el modo de previsualización para seleccionar el `Web Page` vínculo y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
 
-![classic-ui-Repository-path](assets/classic-ui-repository-path.png)
+![webpagelink](assets/webpagelink.png)
 
 ### Vínculo de moderación {#moderationlink}
 
@@ -211,7 +211,7 @@ Cuando el miembro de la comunidad tiene privilegios de moderación, el vínculo 
 
 Utilice el botón Atrás del explorador para volver al sitio publicado. La mayoría de las consolas no son accesibles desde la navegación global en el entorno de publicación. [](/help/communities/moderate-ugc.md)
 
-![chlimage_1-42](assets/chlimage_1-42.png)
+![moderationlink](assets/moderationlink.png)
 
 ## Autoregistro {#self-registration}
 
@@ -220,7 +220,9 @@ Después de cerrar sesión, es posible crear un nuevo registro de usuario.
 * Seleccione `Log In`
 * Seleccione `Sign up for a new account`
 
-![chlimage_1-43](assets/chlimage_1-43.png) ![chlimage_1-44](assets/chlimage_1-44.png)
+![registro](assets/registration.png)
+
+![signup](assets/signup.png)
 
 De forma predeterminada, la dirección de correo electrónico es la identificación de inicio de sesión. Si no se selecciona, el visitante puede introducir su propia identificación de inicio de sesión (nombre de usuario). El nombre de usuario debe ser único en el entorno de publicación.
 
@@ -228,9 +230,9 @@ Después de especificar el nombre, el correo electrónico y la contraseña del u
 
 Una vez iniciada la sesión, la primera página presentada es su `Profile` página, que pueden personalizar.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![El perfil.](assets/profile.png)
 
 Si el miembro olvida su identificación de inicio de sesión, es posible recuperarla utilizando su dirección de correo electrónico.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![olvigotusername](assets/forgotusername.png)
 
