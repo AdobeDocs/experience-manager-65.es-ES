@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '590'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 En la instancia de AEM Author, desde la navegación global:
 
-* Seleccione **[!UICONTROL Comunidades] > **[!UICONTROL Sitios]**.
+* Seleccione **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]**.
 * Seleccione **[!UICONTROL la carpeta]** de participación para abrirla.
 * Seleccione la tarjeta para el sitio **[!UICONTROL Tutorial]** de introducción en inglés.
 
@@ -34,11 +34,11 @@ En la instancia de AEM Author, desde la navegación global:
 
 El resultado es llegar a la consola [](/help/communities/groups.md)Grupos:
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![create-group](assets/create-group.png)
 
 La función de grupos se mostrará como una carpeta en la que se crearán las instancias de grupos. Seleccione la carpeta Grupos para abrirla. El grupo creado al publicar está visible.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## Crear grupo de artes principales {#create-main-arts-group}
 
@@ -94,11 +94,11 @@ La `groups` carpeta ahora contiene dos grupos (actualice la página).
 
 Antes de crear grupos anidados dentro del `arts` grupo, coloque el puntero sobre la `arts` tarjeta y seleccione el icono de publicación para publicarla.
 
-![componente de &quot;Me gusta&quot;](assets/liking-component.png)
+![publish-site](assets/publish-site.png)
 
 Espere a que se confirme que se publicó el grupo.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![grupo publicado](assets/group-published.png)
 
 El `arts` grupo también debe contener una `groups` carpeta, pero una que esté vacía y en la que se puedan crear nuevos grupos. Vaya a la carpeta del grupo de artes y cree 3 grupos anidados, cada uno con una configuración de pertenencia diferente:
 
@@ -133,11 +133,11 @@ Para desplazarse a los grupos anidados desde la consola Sitios de comunidades:
 * Seleccionar tarjeta **[!UICONTROL de artes]**
 * Seleccionar carpeta **[!UICONTROL de grupos]**
 
-![configurar como &quot;Me gusta&quot;](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## Grupos de publicaciones {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![publish-site](assets/publish-site.png)
 
 Después de publicar el sitio principal de la comunidad:
 
@@ -149,7 +149,7 @@ Después de publicar el sitio principal de la comunidad:
 
    * Todos los grupos deben publicarse de manera vertical.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![grupo publicado](assets/group-published.png)
 
 ## Experiencia en la publicación {#experience-on-publish}
 
