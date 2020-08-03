@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 6%
 
 ---
 
@@ -56,7 +59,7 @@ Algunos nodos de la ruta son carpetas y otros componentes.
       * Haga clic en **[!UICONTROL Siguiente]** hasta **[!UICONTROL Aceptar]**
 1. Seleccionar `comments` nodo
 
-   * **[!UICONTROL Crear > Crear componente...]**
+   * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente...]**
 
       * Escriba la etiqueta: `comment`
       * Enter Title: `Comment`
@@ -79,6 +82,7 @@ Algunos nodos de la ruta son carpetas y otros componentes.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
@@ -95,5 +99,5 @@ La propia superposición `Type`(propiedad `sling:resourceType`) debe ser una aut
 1. Seleccione el verde `[+] Add`
    * Seleccione **[!UICONTROL Guardar todo]**
 
-![climage_1-4](assets/chlimage_1-4.png)
+![create-nodes](assets/create-nodes.png)
 
