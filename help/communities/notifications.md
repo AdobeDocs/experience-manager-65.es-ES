@@ -1,8 +1,8 @@
 ---
 title: Notificaciones de comunidades
 seo-title: Notificaciones de comunidades
-description: AEM Communities tiene notificaciones que muestran eventos de interés para el miembro de la comunidad que ha iniciado sesión
-seo-description: AEM Communities tiene notificaciones que muestran eventos de interés para el miembro de la comunidad que ha iniciado sesión
+description: Los AEM Communities tienen notificaciones que muestran eventos de interés para el miembro de la comunidad que ha iniciado sesión
+seo-description: Los AEM Communities tienen notificaciones que muestran eventos de interés para el miembro de la comunidad que ha iniciado sesión
 uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ## Información general {#overview}
 
-Comunidades de AEM proporciona una sección de notificaciones que muestra eventos de interés para el miembro de la comunidad que ha firmado.
+AEM Communities proporciona una sección de notificaciones que muestra eventos de interés para el miembro de la comunidad que ha firmado.
 
 Las notificaciones son similares a [actividades](/help/communities/essentials-activities.md) y [suscripciones](/help/communities/subscriptions.md) que pueden derivarse de:
 
@@ -68,7 +71,7 @@ Los componentes deben configurarse para habilitar lo siguiente. Las funciones qu
 
 ## Notificaciones de lo siguiente {#notifications-from-following}
 
-![chlimage_1-243](assets/chlimage_1-243.png)
+![notificaciones](assets/notifications.png)
 
 El botón **[!UICONTROL Seguir]** proporciona un medio para seguir las entradas como actividades, suscripciones y/o notificaciones. Cada vez que se selecciona el botón **[!UICONTROL Seguir]** , es posible activar o desactivar una selección. La `Email Subscriptions` selección solo está presente cuando está configurada.
 
@@ -91,17 +94,17 @@ Al seleccionar el vínculo Configuración de notificación en la página Notific
 
 El canal web siempre está habilitado.
 
-![chlimage_1-244](assets/chlimage_1-244.png)
+![notifications14](assets/notifications1.png)
 
 El canal de correo electrónico, que depende de la [configuración correcta del correo electrónico](/help/communities/email.md), proporciona la misma configuración que para el canal web.
 
 El canal de correo electrónico está desactivado de forma predeterminada.
 
-![chlimage_1-245](assets/chlimage_1-245.png)
+![notifications2](assets/notifications2.png)
 
 Un miembro puede activarlo, pero aún depende de la configuración del correo electrónico.
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![notifications3](assets/notifications3.png)
 
 ## Visualización de notificaciones{#viewing-notifications} 
 
@@ -111,13 +114,13 @@ Un [asistente creado en un sitio](/help/communities/sites-console.md) de comunid
 
 Al visitar el sitio publicado, al seleccionar el `Notifications` vínculo se mostrarán todas las notificaciones del miembro.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![notifications4](assets/notifications4.png)
 
 ### Notificaciones de correo electrónico {#email-notifications}
 
 Cuando el canal de correo electrónico está activado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![notifications5](assets/notifications5.png)
 
 ## Personalizar notificaciones por correo electrónico {#customize-email-notifications}
 
