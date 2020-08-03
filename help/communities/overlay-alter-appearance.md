@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -30,9 +30,9 @@ Para no mostrar el avatar al lado de cada comentario publicado:
 1. Copiar `comment.hbs`de `libs`a `apps`
 
    1. Seleccione `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Seleccionar **copia**
+   1. Seleccionar **[!UICONTROL copia]**
    1. Seleccione `/apps/social/commons/components/hbs/comments/comment`
-   1. Seleccionar **pegar**
+   1. Seleccionar **[!UICONTROL pegar]**
 
 1. Abrir las superposiciones `comment.hbs`
 
