@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 11%
@@ -120,7 +120,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones c
 
 >[!NOTE]
 >
->Muchas de ellas son acciones [estándar para Recursos](/help/assets/managing-assets-touch-ui.md) y/o la aplicación [de escritorio de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
+>Muchas de ellas son acciones [estándar para Recursos](/help/assets/managing-assets-touch-ui.md) y/o la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
 
 ## Apertura del Editor de fragmentos {#opening-the-fragment-editor}
 
@@ -143,11 +143,7 @@ Para abrir el fragmento y editarlo:
    >[!NOTE]
    >
    >1. Se mostrará un mensaje cuando ya se haga referencia al fragmento en una página de contenido.
-      >
-      >
-      >
-
-   2. El panel lateral puede ocultarse o mostrarse mediante el icono **Alternar panel** lateral.
+   >2. El panel lateral puede ocultarse o mostrarse mediante el icono **Alternar panel** lateral.
 
 
 1. Navegue por los tres modos utilizando los iconos del panel lateral:
@@ -199,7 +195,7 @@ El editor tiene dos opciones:
 
 Al editar el fragmento de contenido, AEM crea automáticamente versiones para garantizar que el contenido anterior se pueda restaurar si **cancela** los cambios:
 
-1. Cuando se abre un fragmento de contenido para editarlo, AEM comprueba la existencia del token basado en cookies que indica si existe una sesión *de* edición:
+1. Cuando se abre un fragmento de contenido para editarlo AEM comprueba la existencia del token basado en cookies que indica si existe una sesión *de* edición:
 
    1. Si se encuentra el token, el fragmento se considera parte de la sesión de edición existente.
    2. Si el token *no está* disponible y el usuario inicio editar contenido, se crea una versión y se envía un token para esta nueva sesión de edición al cliente, donde se guarda en una cookie.
@@ -330,7 +326,7 @@ Los fragmentos de contenido deben publicarse para su uso en el entorno de public
 
 >[!CAUTION]
 >
->Una vez publicado o referenciado un fragmento, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+>Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 
