@@ -1,8 +1,8 @@
 ---
 title: Asignación de grupos de usuarios personalizados en AEM 6.5
 seo-title: Asignación de grupos de usuarios personalizados en AEM 6.5
-description: Descubra cómo funciona la asignación de grupos de usuarios personalizados en AEM.
-seo-description: Descubra cómo funciona la asignación de grupos de usuarios personalizados en AEM.
+description: Vea cómo funciona la asignación de grupos de usuarios personalizados en AEM.
+seo-description: Vea cómo funciona la asignación de grupos de usuarios personalizados en AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
@@ -23,19 +26,19 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
 <table>
  <tbody>
   <tr>
-   <td><strong>Versiones anteriores de AEM</strong></td>
+   <td><strong>Versiones anteriores AEM</strong></td>
    <td><strong>AEM 6.5</strong></td>
    <td><strong>Comentarios</strong></td>
   </tr>
   <tr>
    <td><p>Propiedad: cq:cugEnabled</p> <p>Declarando tipo de nodo: N/D, propiedad residual</p> </td>
    <td><p>Autorización:</p> <p>Nodo: rep:cugPolicy de tipo de nodo rep:CugPolicy</p> <p>Declarando tipo de nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticación:</p> <p>Tipo de mezcla: granite:AuthenticationRequired</p> </td>
-   <td><p>Para restringir el acceso de lectura, se aplica una directiva CUG dedicada al nodo de destino.</p> <p>NOTA: Las directivas solo se pueden aplicar en las rutas configuradas admitidas.</p> <p>Los nodos con el nombre rep:cugPolicy y el tipo rep:CugPolicy están protegidos y no se pueden escribir con llamadas regulares a la API de JCR; utilice la administración de control de acceso JCR en su lugar.</p> <p>Consulte <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">esta página</a> para obtener más información.</p> <p>Para hacer cumplir los requisitos de autenticación en un nodo, basta con agregar el tipo de mezcla granite:AuthenticationRequired.</p> <p>NOTA: Solo se respetan por debajo de las rutas configuradas admitidas.</p> </td>
+   <td><p>Para restringir el acceso de lectura, se aplica una directiva de CUG dedicada al nodo de destinatario.</p> <p>NOTA: Las directivas solo se pueden aplicar en las rutas configuradas admitidas.</p> <p>Los nodos con el nombre rep:cugPolicy y el tipo rep:CugPolicy están protegidos y no se pueden escribir con llamadas regulares a la API de JCR; utilice la administración de controles de acceso JCR en su lugar.</p> <p>Consulte <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">esta página</a> para obtener más información.</p> <p>Para hacer cumplir los requisitos de autenticación en un nodo, basta con agregar el tipo de mezcla granite:AuthenticationRequired.</p> <p>NOTA: Solo se respetan por debajo de las rutas configuradas admitidas.</p> </td>
   </tr>
   <tr>
    <td><p>Propiedad: cq:cugPrincipals</p> <p>Declarando tipo de nodo: NA, propiedad residual</p> </td>
    <td><p>Propiedad: rep:mainNames</p> <p>Declarando tipo de nodo: rep:CugPolicy</p> </td>
-   <td><p>La propiedad que contiene los nombres de los principales a los que se permite leer el contenido debajo del CUG restringido está protegida y no se puede escribir mediante llamadas regulares a la API de JCR; utilice la administración de control de acceso JCR en su lugar.</p> <p>Consulte <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">esta página</a> para obtener más detalles sobre la implementación.</p> </td>
+   <td><p>La propiedad que contiene los nombres de los principales a los que se permite leer el contenido debajo del CUG restringido está protegida y no se puede escribir mediante llamadas regulares a la API de JCR; utilice la administración de controles de acceso JCR en su lugar.</p> <p>Consulte <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">esta página</a> para obtener más detalles sobre la implementación.</p> </td>
   </tr>
   <tr>
    <td><p>Propiedad: cq:cugLoginPage</p> <p>Declarando tipo de nodo: NA, propiedad residual</p> </td>
@@ -52,7 +55,7 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
 
 ## Comparación de los servicios de OSGi {#comparison-of-osgi-services}
 
-**Versiones anteriores de AEM**
+**Versiones anteriores AEM**
 
 Etiqueta: Compatibilidad con el grupo cerrado de usuarios (CUG) de Adobe Granite
 
@@ -84,7 +87,9 @@ Nombre: com.day.cq.auth.impl.CugSupportImpl
 * Configuración de la autorización de CUG y habilitar/deshabilitar la evaluación.
 Servicio para configurar la lista de exclusión de los principales que no deben verse afectados por la autorización de CUG.
 
-   >[!NOTE] Si CugExcludeImpl no está configurado, CugConfiguration volverá al valor predeterminado.
+   >[!NOTE]
+   > 
+   >Si el `CugExcludeImpl` no está configurado, el `CugConfiguration` volverá al valor predeterminado.
 
    Es posible conectar una implementación personalizada de CugExclude en caso de necesidades especiales.
 
