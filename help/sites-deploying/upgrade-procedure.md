@@ -12,7 +12,10 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+workflow-type: tm+mt
+source-wordcount: '865'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,13 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 >[!NOTE]
 >
->La actualización requerirá tiempo de inactividad para el nivel Autor, ya que la mayoría de las actualizaciones de AEM se realizan in situ. Al seguir estas optimizaciones, el tiempo de inactividad del nivel de publicación se puede minimizar o eliminar.
+>La actualización requerirá tiempo de inactividad para el nivel Autor, ya que la mayoría de las actualizaciones AEM se realizan in situ. Al seguir estas optimizaciones, el tiempo de inactividad del nivel de publicación se puede minimizar o eliminar.
 
-Al actualizar los entornos AEM, debe tener en cuenta las diferencias de enfoque entre la actualización de los entornos de creación o de publicación para minimizar el tiempo de inactividad tanto para los usuarios como para los autores. Esta página describe el procedimiento de alto nivel para actualizar una topología de AEM que se está ejecutando en una versión de AEM 6.x. Dado que el proceso difiere entre los niveles de autor y publicación, así como las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se ha incluido en una sección separada. Al ejecutar la implementación, se recomienda primero actualizar el entorno de creación, determinar el éxito y, a continuación, continuar con los entornos de publicación.
+Al actualizar sus entornos de AEM, debe tener en cuenta las diferencias de enfoque entre la actualización de entornos de autor o entornos de publicación para minimizar el tiempo de inactividad tanto para los autores como para los usuarios finales. Esta página describe el procedimiento de alto nivel para actualizar una topología de AEM que se está ejecutando en una versión de AEM 6.x. Dado que el proceso difiere entre los niveles de autor y publicación, así como las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se ha incluido en una sección separada. Al ejecutar la implementación, se recomienda primero actualizar el entorno del autor, determinar el éxito y, a continuación, continuar con los entornos de publicación.
+
+>[!IMPORTANT]
+>
+>El tiempo de inactividad durante la actualización se puede reducir considerablemente indexando el repositorio antes de realizar la actualización. Para obtener más información, consulte [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](/help/sites-deploying/upgrade-offline-reindexing.md)
 
 ## Nivel de creación de TarMK {#tarmk-author-tier}
 
@@ -62,17 +69,17 @@ La topología asumida para esta sección consiste en un servidor Autor que se ej
 
 1. Copie la instancia actualizada para crear un nuevo Cold Standby
 
-1. Iniciar la instancia de Autor
+1. Inicio de la instancia de autor
 
-1. Inicie la instancia de Standby.
+1. Inicio la instancia de Standby.
 
 ### Si No Se Ha Realizado Correctamente (Reversión) {#if-unsuccessful-rollback}
 
 ![rollback](assets/rollback.jpg)
 
-1. Inicie la instancia de Cold Standby como el nuevo primario
+1. Inicio de la instancia de Cold Standby como el nuevo primario
 
-1. Vuelva a compilar el entorno Autor a partir del modo en espera frío.
+1. Vuelva a crear el entorno Autor a partir del modo de espera frío.
 
 ## MongoMK Author Cluster {#mongomk-author-cluster}
 
@@ -118,7 +125,7 @@ La topología asumida para esta sección consiste en un clúster de MongoMK Auth
 
 1. Elimine el almacén de datos clonado.
 
-### Si No Se Ha Realizado Correctamente (Reversión) {#if-unsuccessful-rollback-2}
+### Si No Se Ha Realizado Correctamente (Reversión)  {#if-unsuccessful-rollback-2}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
@@ -128,7 +135,7 @@ La topología asumida para esta sección consiste en un clúster de MongoMK Auth
 
 1. Cierre la instancia principal de Mongo actualizada.
 
-1. Inicie las instancias secundarias de Mongo con una de ellas como la nueva instancia primaria
+1. Inicio de las instancias secundarias de Mongo con una de ellas como la nueva primaria
 
 1. Configure los `DocumentNodeStoreService.cfg` archivos en las instancias secundarias de Autor para que apunten al conjunto de réplicas de instancias de Mongo que aún no se han actualizado
 
@@ -156,7 +163,7 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. El control de calidad valida la publicación 2 a través del despachante, detrás del servidor de seguridad
 1. Cerrar publicación 2
 1. Copiar la instancia de Publish 2
-1. Iniciar publicación 2
+1. Inicio Publish 2
 
 ### Si es correcto {#if-successful-2}
 
@@ -168,7 +175,7 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. Reemplazar la instancia de Publish 1 con una copia de Publish 2
 1. Actualizar el despachante o el módulo Web *si es necesario*
 1. Vaciar la caché de Dispatcher para la publicación 1
-1. Iniciar publicación 1
+1. Inicio Publish 1
 1. El control de calidad valida la publicación 1 a través del despachante, detrás del servidor de seguridad
 
 ### Si No Se Ha Realizado Correctamente (Reversión) {#if-unsuccessful-rollback-1}
@@ -178,7 +185,7 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. Crear una copia de Publish 1
 1. Reemplazar la instancia de Publish 2 con una copia de Publish 1
 1. Vaciar la caché de Dispatcher para la publicación 2
-1. Iniciar publicación 2
+1. Inicio Publish 2
 1. El control de calidad valida la publicación 2 a través del despachante, detrás del servidor de seguridad
 1. Habilitar el tráfico para la publicación 2
 
