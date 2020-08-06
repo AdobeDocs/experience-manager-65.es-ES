@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 translation-type: tm+mt
-source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
@@ -21,19 +24,19 @@ source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El mosaico **Administrar aplicación** y la página &quot;Administrar aplicación&quot; proporcionan un medio para ver y editar los metadatos de la aplicación. Los metadatos de la aplicación son detalles necesarios para publicar una aplicación en la tienda de un proveedor. Esto puede incluir metadatos comunes, metadatos de iOS y capturas de pantalla. Consulte [Administrar icono](/help/mobile/phonegap-app-details-tile.md) de aplicación para obtener más información sobre metadatos comunes y de iOS.
+El mosaico **Administrar aplicación** y la página &quot;Administrar aplicación&quot; proporcionan un medio para la vista y edición de los metadatos de la aplicación. Los metadatos de la aplicación son detalles necesarios para publicar una aplicación en la tienda de un proveedor. Esto puede incluir metadatos comunes, metadatos de iOS y capturas de pantalla. Consulte [Administrar icono](/help/mobile/phonegap-app-details-tile.md) de aplicación para obtener más información sobre metadatos comunes y de iOS.
 
 ## Edición de los datos de la aplicación {#editing-the-app-data}
 
 Para editar los metadatos de la aplicación:
 
-1. Vaya a la página de tablero de la aplicación.
+1. Vaya a la página de panel de la aplicación.
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Para ver o editar los detalles, haga clic en el botón &#39;...&#39; en la esquina inferior derecha del mosaico **Administrar aplicación** .
+1. Para vista o edición de detalles, haga clic en el botón &#39;...&#39; en la esquina inferior derecha del mosaico **Administrar aplicación** .
 
-1. Introduzca o vea los detalles en cualquiera de las cinco fichas disponibles, como se muestra en la figura siguiente.
+1. Introduzca o vista los detalles en cualquiera de las cinco fichas disponibles, como se muestra en la figura siguiente.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -42,17 +45,17 @@ Para editar los metadatos de la aplicación:
 Puede editar los metadatos comunes e IOS:
 
 * Seleccione la ficha **Avanzado** en la página de descripción de la aplicación.
-* Edite o vea los metadatos comunes y de IOS. Para obtener más información, consulte las siguientes cifras.
+* Edite o vista los metadatos comunes e IOS. Para obtener más información, consulte las siguientes cifras.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
 
-## Agregar y eliminar capturas de pantalla {#add-and-remove-screenshots}
+## Añadir y eliminar capturas de pantalla {#add-and-remove-screenshots}
 
-Puede incluir capturas de pantalla de la aplicación en el resumen de metadatos. Algunos proveedores requieren capturas de pantalla precisas al enviar cualquier aplicación a su tienda de aplicaciones. Estas imágenes ya deben existir en Recursos. Consulte [Selector](../assets/search-assets.md#assetselector) de recursos para cargar las capturas de pantalla.
+Puede incluir capturas de pantalla de la aplicación en el resumen de metadatos. Algunos proveedores requieren capturas de pantalla precisas al enviar cualquier aplicación a su tienda de aplicaciones. Estas imágenes ya deben existir en Recursos. Consulte [Selector](../assets/search-assets.md#assetpicker) de recursos para cargar las capturas de pantalla.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-### Agregar capturas de pantalla {#add-screenshots}
+### Añadir capturas de pantalla {#add-screenshots}
 
 Para agregar un recurso como captura de pantalla:
 
@@ -65,7 +68,7 @@ Para agregar un recurso como captura de pantalla:
 
 >[!NOTE]
 >
->La captura de pantalla debe coincidir con la resolución de pantalla del dispositivo de destino.
+>La captura de pantalla debe coincidir con la resolución de pantalla del dispositivo destinatario.
 
 ### Eliminar capturas de pantalla {#delete-screenshots}
 
@@ -81,11 +84,11 @@ Consulte los siguientes recursos para obtener más información sobre otras func
 
 * [El icono Administrar aplicación](/help/mobile/phonegap-app-details-tile.md)
 * [Definiciones de aplicaciones](/help/mobile/phonegap-app-definitions.md)
-* [Creación de una aplicación nueva mediante el Asistente para crear aplicación](/help/mobile/phonegap-create-new-app.md)
+* [Creación de una aplicación nueva mediante el Asistente para crear una aplicación](/help/mobile/phonegap-create-new-app.md)
 * [Importar una aplicación híbrida existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
-### Additional Resources {#additional-resources}
+### Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los siguientes recursos:
 
