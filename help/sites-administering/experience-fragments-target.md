@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,14 @@ ht-degree: 0%
    >   
    * espacio de trabajo predeterminado.
    >   * espacio de trabajo con nombre, especificado en Configuración de nube.
->* AEM debe estar [integrado con Adobe Target mediante Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+      >     **Nota:** La exportación a espacios de trabajo específicos requiere Adobe Target Premium.
+>* AEM debe [integrarse con Adobe Target mediante E/S](/help/sites-administering/integration-ims-adobe-io.md)de Adobe.
 
 >
 >
 AEM 6.5.0.0 y 6.5.1.0:
 >
->* Los fragmentos de experiencia de AEM se exportan al espacio de trabajo predeterminado de Adobe Target.
+>* Los fragmentos de experiencias AEM se exportan al espacio de trabajo predeterminado de Adobe Target.
 >* AEM debe integrarse con Adobe Target según las instrucciones de [Integración con Adobe Target](/help/sites-administering/target.md).
 
 
@@ -55,11 +56,11 @@ Existen tres opciones de formato disponibles para exportar un fragmento de exper
 * JSON: Compatibilidad con el envío de contenido sin encabezado
 * HTML y JSON
 
-Los fragmentos de experiencia de AEM se pueden exportar al espacio de trabajo predeterminado en Adobe Target o a espacios de trabajo definidos por el usuario para Adobe Target. Esto se realiza mediante Adobe I/O, para lo cual AEM debe estar [integrado con Adobe Target mediante Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+AEM fragmentos de experiencia se pueden exportar al espacio de trabajo predeterminado de Adobe Target o a espacios de trabajo definidos por el usuario para Adobe Target. Esto se realiza mediante E/S de Adobe, para lo cual AEM debe [integrarse con Adobe Target mediante E/S](/help/sites-administering/integration-ims-adobe-io.md)de Adobe.
 
 >[!NOTE]
 >
->Los espacios de trabajo de Adobe Target no existen en el propio Adobe Target. Se definen y administran en Adobe IMS (Identity Management System) y, a continuación, se seleccionan para su uso en distintas soluciones mediante integraciones de Adobe I/O.
+>Los espacios de trabajo de Adobe Target no existen en el propio Adobe Target. Se definen y administran en Adobe IMS (Identity Management System) y, a continuación, se seleccionan para su uso en distintas soluciones mediante integraciones de E/S de Adobe.
 
 >[!NOTE]
 >
@@ -69,7 +70,7 @@ Los fragmentos de experiencia de AEM se pueden exportar al espacio de trabajo pr
 >
 >Para obtener más información, consulte también:
 >
->* [Desarrollo de Adobes Target](https://www.adobe.io/apis/experiencecloud/target.html)
+>* [Desarrollo de Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Componentes principales: fragmentos de experiencias](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 
 >
@@ -84,8 +85,8 @@ Los fragmentos de experiencia de AEM se pueden exportar al espacio de trabajo pr
 
 Se requieren varias acciones:
 
-1. Debe [integrar AEM con Adobe Target mediante Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
-2. Los fragmentos de experiencia se exportan desde la instancia de creación de AEM, por lo que debe [configurar el Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) de vínculos de AEM en la instancia de creación para garantizar que todas las referencias dentro del fragmento de experiencia se externalicen para el envío web.
+1. Debe [integrar AEM con Adobe Target mediante E/S](/help/sites-administering/integration-ims-adobe-io.md)de Adobe.
+2. Los fragmentos de experiencia se exportan desde la instancia de creación de AEM, por lo que debe [configurar el AEM Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) de vínculos en la instancia de creación para garantizar que todas las referencias dentro del fragmento de experiencia se externalicen para el envío web.
 
    >[!NOTE]
    >
@@ -93,7 +94,7 @@ Se requieren varias acciones:
 
 ## Añadir la configuración de la nube {#add-the-cloud-configuration}
 
-Antes de exportar un fragmento, debe agregar la configuración **de** nube para el **Adobe Target** al fragmento o la carpeta. Esto también le permite:
+Antes de exportar un fragmento, debe agregar la Configuración **de** nube para **Adobe Target** al fragmento o la carpeta. Esto también le permite:
 
 * especifique las opciones de formato que se utilizarán para la exportación
 * seleccionar un espacio de trabajo de Destinatario como destino
@@ -112,7 +113,7 @@ Las opciones requeridas se pueden seleccionar en Propiedades **de** página de l
    >
    >Si agrega la configuración de nube al propio fragmento de experiencias, todas las variaciones heredan la configuración.
 
-1. Seleccione la ficha **Cloud Service** .
+1. Seleccione la ficha **Cloud Services** .
 
 1. En Configuración **de** Cloud Service, seleccione **Adobe Target** en la lista desplegable.
 
@@ -134,15 +135,15 @@ Las opciones requeridas se pueden seleccionar en Propiedades **de** página de l
 
    >[!CAUTION]
    >
-   >El dominio del externalizador es opcional. Un externalizador de AEM se configura cuando desea que el contenido exportado apunte a un dominio de *publicación* específico. Para obtener más información, consulte [Configuración del Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de vínculos AEM.
+   >El dominio del externalizador es opcional. Un externalizador AEM se configura cuando desea que el contenido exportado apunte a un dominio de *publicación* específico. Para obtener más información, consulte [Configuración del AEM Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de vínculos.
 
    Por ejemplo, para una carpeta:
 
-   ![Carpeta -](assets/xf-target-integration-01.png "Carpeta de servicios de nube - Cloud Service")
+   ![Carpeta -](assets/xf-target-integration-01.png "Carpeta de servicios de nube - Cloud Services")
 
 1. **Guardar y cerrar**.
 
-## Exportación de un fragmento de experiencia a un Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
+## Exportación de un fragmento de experiencia a Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
 
 >[!CAUTION]
 >
@@ -187,7 +188,7 @@ Para exportar un fragmento de experiencia de AEM a Destinatario (después de esp
 >
 >Como alternativa, puede realizar la exportación desde el editor de páginas mediante comandos comparables en el menú Información [de](/help/sites-authoring/author-environment-tools.md#page-information) página.
 
-## Uso de los fragmentos de experiencia en Adobe Target {#using-your-experience-fragments-in-adobe-target}
+## Uso de los fragmentos de experiencias en Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
 Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en Destinatario en la página Ofertas. Por favor, eche un vistazo a la documentación [](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) específica del Destinatario para conocer lo que puede lograr allí.
 
@@ -197,17 +198,17 @@ Después de realizar las tareas anteriores, el fragmento de experiencia se muest
 
 ## Eliminación de un fragmento de experiencia ya exportado a Adobe Target {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-La eliminación de un fragmento de experiencia que ya se ha exportado a Destinatario puede causar problemas si el fragmento ya se está utilizando en una oferta de Destinatario. Al eliminar el fragmento, la oferta quedaría inutilizable a medida que AEM enviara el contenido del fragmento.
+La eliminación de un fragmento de experiencia que ya se ha exportado a Destinatario puede causar problemas si el fragmento ya se está utilizando en una oferta de Destinatario. Al eliminar el fragmento, la oferta quedaría inutilizable a medida que AEM el contenido del fragmento lo enviara.
 
 Para evitar tales situaciones:
 
-* Si el fragmento de experiencias no se está utilizando en una actividad, AEM permite al usuario eliminar el fragmento sin un mensaje de advertencia.
-* Si un fragmento de experiencia está siendo utilizado actualmente por una actividad en Destinatario, un mensaje de error advierte al usuario de AEM de las posibles consecuencias que tendrá en la actividad la eliminación del fragmento.
+* Si el fragmento de experiencia no se está utilizando en una actividad, AEM permite al usuario eliminar el fragmento sin un mensaje de advertencia.
+* Si un fragmento de experiencia está siendo utilizado actualmente por una actividad en Destinatario, un mensaje de error advierte al usuario AEM de las posibles consecuencias que tendrá en la actividad la eliminación del fragmento.
 
-   El mensaje de error en AEM no prohíbe al usuario (forzar)eliminar el fragmento de experiencias. Si se elimina el fragmento de experiencias:
+   El mensaje de error de AEM no prohíbe al usuario (forzar) la eliminación del fragmento de experiencias. Si se elimina el fragmento de experiencias:
 
-   * La oferta de Destinatario con el fragmento de experiencias de AEM puede mostrar un comportamiento no deseado
+   * La oferta de Destinatario con AEM fragmento de experiencias puede mostrar un comportamiento no deseado
 
       * Es probable que la oferta se siga procesando, ya que el HTML del fragmento de experiencias se insertó en el Destinatario
-      * Es posible que las referencias del fragmento de experiencias no funcionen correctamente si los recursos a los que se hace referencia también se eliminan en AEM.
+      * Es posible que las referencias del fragmento de experiencias no funcionen correctamente si también se eliminaron los recursos a los que se hace referencia en AEM.
    * Por supuesto, cualquier modificación adicional del fragmento de experiencias es imposible, ya que el fragmento de experiencias ya no existe en AEM.
