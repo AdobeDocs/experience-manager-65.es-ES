@@ -12,9 +12,9 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '720'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,8 @@ En esta sección tratamos la actualización de una instalación de AEM a AEM 6.5
 * [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md)
 * [Evaluación de la complejidad de la actualización con el detector de patrones](/help/sites-deploying/pattern-detector.md)
 * [Compatibilidad con versiones anteriores en AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-* [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](/help/sites-deploying/upgrade-offline-reindexing.md)
+
+<!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Procedimiento de actualización](/help/sites-deploying/upgrade-procedure.md)
 * [Actualización del código y las personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
