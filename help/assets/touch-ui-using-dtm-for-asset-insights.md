@@ -1,9 +1,9 @@
 ---
 title: Activar perspectivas de recursos mediante DTM
-description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
+description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas de Adobe (DTM) para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
@@ -51,14 +51,14 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
    >[!NOTE]
    >
    >* `AppMeasurement.js` se elimina. Se espera que esté disponible a través de la herramienta Adobe Analytics de la DTM.
-   >* La llamada a `assetAnalytics.dispatcher.init()` se elimina. Se espera que se llame a la función una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
+   >* La llamada a `assetAnalytics.dispatcher.init()` se elimina. Se espera que la función se llame una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
    >* Según el lugar en el que esté alojado el rastreador de páginas de perspectivas de recursos (por ejemplo, Experience Manager, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
    >* Para el Rastreador de páginas alojado por el Experience Manager, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
 
 
-1. Acceso `https://dtm.adobe.com`. Haga clic en **[!UICONTROL Información general]** en la propiedad web y haga clic en **[!UICONTROL Añadir herramienta]** o abra una herramienta Analytics de Adobe existente. Al crear la herramienta, puede establecer el método **** de configuración en **[!UICONTROL Automático]**.
+1. Acceso `https://dtm.adobe.com`. Haga clic en **[!UICONTROL Información general]** en la propiedad web y haga clic en **[!UICONTROL Añadir herramienta]** o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer el método **** de configuración en **[!UICONTROL Automático]**.
 
-   ![Añadir la herramienta Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
+   ![Añadir herramienta Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
    Seleccione los grupos de informes Ensayo/Producción, según corresponda.
 
@@ -96,7 +96,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
              "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
              "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
              "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
-             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, please include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
+             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
        sObj.doPlugins = assetAnalytics.core.updateContextData;
