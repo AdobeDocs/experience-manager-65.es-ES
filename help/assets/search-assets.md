@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8f8134d6c4fcc0ef54f9cc8298936c5c7d746c09
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
 workflow-type: tm+mt
 source-wordcount: '5860'
 ht-degree: 5%
@@ -26,8 +26,8 @@ ht-degree: 5%
 | [Comprender los resultados y el comportamiento de la búsqueda](#searchbehavior) | [Modificar facetas de búsqueda](#searchfacets) | [Actualizaciones masivas de metadatos](#metadataupdates) |
 | [Buscar clasificación y aumentar](#searchrank) | [extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
 | [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender los resultados inesperados y solucionar problemas](#troubleshoot-unexpected-search-results-and-issues) |
-| [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicación de escritorio de Experience Manager](#desktopapp)</li><li>[Imágenes de Adobe Stock](#adobestock)</li><li>[Recursos Dynamic Media](#dynamicmedia)</li></ul> |  |  |
-| [Selector de recursos](#assetselector) |  |  |
+| [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicación de escritorio de Experience Manager](#desktopapp)</li><li>[Imágenes de Adobe Stock](#adobestock)</li><li>[Recursos de Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Selector de recursos](#assetpicker) |  |  |
 | [Limitaciones](#limitations) y [sugerencias](#tips) |  |  |
 | [Ejemplos ilustrados](#samples) |  |  |
 
@@ -146,9 +146,9 @@ Para buscar imágenes que sean visualmente similares a una imagen seleccionada p
 
 ### Imágenes de Adobe Stock {#adobestock}
 
-Desde la interfaz de usuario, [!DNL Experience Manager] los usuarios pueden buscar recursos [de](/help/assets/aem-assets-adobe-stock.md) Adobe Stock y obtener licencias para los recursos necesarios. Añada `Location: Adobe Stock` en la barra de Omniture. También puede utilizar el panel Filtros para buscar todos los recursos con licencia o sin licencia o un recurso específico con el número de archivo de Adobe Stock.
+Desde la interfaz de [!DNL Experience Manager] usuario, los usuarios pueden buscar recursos [de](/help/assets/aem-assets-adobe-stock.md) Adobe Stock y obtener licencias para los recursos necesarios. Añada `Location: Adobe Stock` en la barra de Omniture. También puede utilizar el panel Filtros para buscar todos los recursos con licencia o sin licencia o un recurso específico con el número de archivo de Adobe Stock.
 
-### Recursos Dynamic Media {#dmassets}
+### Recursos de Dynamic Media {#dmassets}
 
 Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
 
@@ -163,7 +163,7 @@ Puede buscar recursos en función de los valores exactos de campos de metadatos 
 | Lugar de residencia | ubicación:NA |
 | Descripción | description:&quot;Imagen de muestra&quot; |
 | Herramienta Creador | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
-| Propietario del copyright | copyright:&quot;Adobe Systems&quot; |
+| Propietario del copyright | copyrightower:&quot;Adobe Systems&quot; |
 | Colaborador | colaborador:John |
 | Condiciones de uso | usageterms:&quot;CopyRights Reserved&quot; |
 | Creado | creado:AAAA-MM-DDTHH |
@@ -172,7 +172,7 @@ Puede buscar recursos en función de los valores exactos de campos de metadatos 
 | Tiempo de inactividad | offtime:AAAA-MM-DDTHH |
 | Intervalo de tiempo (caduca dateontime, offtime) | campo faceta: límite inferior..upperbound |
 | Ruta | /content/dam/&lt;nombre de carpeta> |
-| Título del PDF | pdftitle:&quot;Adobe Documento&quot; |
+| Título del PDF | pdftitle:&quot;Documento de Adobe&quot; |
 | Asunto | asunto: &quot;Formación&quot; |
 | Etiquetas | etiquetas: &quot;Ubicación y viaje&quot; |
 | Tipo | type:&quot;image\png&quot; |
@@ -192,7 +192,7 @@ Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 * Para mostrar recursos con valores de propiedad que empiecen por una cadena específica (por ejemplo: el título es Scott Reynolds): `title:Scott*`
 * Para mostrar recursos con valores de propiedad que finalizan con una cadena específica (por ejemplo: el título es Scott Reynolds): `title:*Reynolds`
 * Para mostrar recursos con un valor de propiedad que contenga una cadena específica (por ejemplo: título = Sala de reuniones de Basilea): `title:*Meeting*`
-* Para mostrar los recursos que contienen una cadena concreta y tienen un valor de propiedad específico (por ejemplo: buscar la cadena Adobe en recursos con título=John Doe): `*Adobe* title:"John Doe"`
+* Para mostrar los recursos que contienen una cadena concreta y tienen un valor de propiedad específico (por ejemplo: buscar Adobe de cadena en recursos con título=John Doe): `*Adobe* title:"John Doe"`
 
 ## Buscar recursos de otras [!DNL Experience Manager] ofertas o interfaces {#beyondomnisearch}
 
@@ -200,7 +200,7 @@ Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 
 ### Buscar recursos desde el panel Vínculo de recursos de Adobe {#aal}
 
-Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin tener que salir de las aplicaciones compatibles de Adobe Creative Cloud. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en los algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
+Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud compatibles. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
 
 ### Buscar recursos en la aplicación de [!DNL Experience Manager] escritorio {#desktopapp}
 
@@ -212,7 +212,7 @@ Los usuarios de la línea de negocios y los especialistas en marketing utilizan 
 
 ### Buscar [!DNL Adobe Stock] imágenes {#adobestock-1}
 
-Desde la interfaz de usuario, los usuarios pueden buscar recursos de Adobe Stock y obtener licencias para los recursos necesarios. [!DNL Experience Manager] Añada `Location: Adobe Stock` en el campo Omniture Search. También puede utilizar el panel **[!UICONTROL Filtros]** para buscar todos los recursos con licencia o sin licencia, o para buscar un recurso específico con el número de archivo de Adobe Stock. Consulte [Gestión de imágenes de Adobe Stock en Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Desde la interfaz de usuario, los usuarios pueden buscar recursos de Adobe Stock y obtener una licencia para los recursos necesarios. [!DNL Experience Manager] Añada `Location: Adobe Stock` en el campo Omniture Search. También puede utilizar el panel **[!UICONTROL Filtros]** para buscar todos los recursos con licencia o sin licencia, o buscar un recurso específico con el número de archivo de Adobe Stock. Consulte [Gestión de imágenes de Adobe Stock en Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Buscar recursos de Dynamic Media {#dynamicmedia}
 
@@ -226,9 +226,9 @@ Los autores pueden utilizar Content Finder para buscar en el repositorio de DAM 
 
 [!DNL Experience Manager] la función de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/managing-collections-touch-ui.md).
 
-## Selector de recursos {#assetselector}
+## Selector de recursos {#assetpicker}
 
-El selector de recursos le permite buscar, filtrar y examinar los recursos DAM de una forma especial. El selector de recursos está disponible en `https://[aem-server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante esta funcionalidad. Puede iniciarla con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y se mantienen intactos durante toda la selección.
+El selector de recursos le permite buscar, filtrar y examinar los recursos DAM de forma especial. El selector de recursos está disponible en `https://[aem-server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante esta funcionalidad. Puede iniciarla con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y se mantienen intactos durante toda la selección.
 
 El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. El Selector de recursos solo funciona en el modo de exploración y solo funciona con la página de resultados de Omniture.
 
@@ -278,7 +278,7 @@ La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los sig
 * La búsqueda de texto completo admite operadores como - y ^. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice &quot;Portátil - Belleza&quot; en lugar de Portátil - Belleza.
 * Si los resultados de búsqueda son demasiados, limite el [ámbito de búsqueda](#scope) a cero en los recursos deseados. Funciona mejor cuando tiene alguna idea de cómo buscar mejor los recursos deseados, por ejemplo, un tipo de archivo específico, una ubicación específica, metadatos específicos, etc.
 
-* **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] oferta métodos para etiquetar automáticamente los recursos mediante los servicios inteligentes de Adobe Sensei, que mejoran aún más el etiquetado de los recursos con el uso y la formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
+* **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] oferta métodos para etiquetar automáticamente los recursos mediante Adobe Sensei, que  servicios inteligentes artificialmente que mejoran el etiquetado de los recursos con uso y formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
 
 * **Indexación**: En los resultados de búsqueda solo se devuelven los metadatos y recursos indexados. Para obtener una mejor cobertura y rendimiento, asegúrese de que la indexación sea correcta y siga las optimizaciones. Consulte [indización](#searchindex).
 
@@ -405,7 +405,7 @@ Puede hacer lo siguiente con los recursos que ha buscado en Experience Manager:
 
 Ordene los resultados de búsqueda para descubrir los recursos necesarios más rápido. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
-En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, dimensiones, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
+En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, Dimension, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
 
 Para ver las limitaciones de la funcionalidad de ordenación, consulte [Limitaciones](#limitations).
 
