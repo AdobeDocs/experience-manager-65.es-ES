@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Antes de ejecutar la actualización, deben realizarse varios pasos. Consulte [Actualización de código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) y Tareas [de mantenimiento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) previas a la actualización para obtener más información. Además, asegúrese de que el sistema cumple los requisitos de la nueva versión de AEM. Vea cómo el Detector de patrones puede ayudarle a estimar la complejidad de la actualización y también consulte la sección Alcance de actualización y requisitos de [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md) para obtener más información.
 
-Por último, tenga en cuenta que el tiempo de inactividad durante la actualización se puede reducir significativamente indexando el repositorio **antes** de realizar la actualización. Para obtener más información, consulte [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](/help/sites-deploying/upgrade-offline-reindexing.md)
+<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Requisitos previos de migración {#migration-prerequisites}
 
