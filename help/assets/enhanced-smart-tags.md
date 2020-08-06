@@ -3,9 +3,9 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1533'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,7 @@ Añada los recursos a una carpeta y aplique las etiquetas a cada recurso desde l
 >[!NOTE]
 >
 >1. La formación es un proceso irrevocable. Adobe recomienda revisar las etiquetas del conjunto depurado de recursos antes de formarlo con las etiquetas.
->1. Lea las directrices [de formación del servicio de contenido](smart-tags-training-guidelines.md) inteligente antes de iniciar la formación para cualquier etiqueta.
+>1. Antes de la formación para una etiqueta, consulte las directrices [de formación del servicio de contenido](smart-tags-training-guidelines.md)inteligente.
 >1. Cuando entrena el servicio de contenido inteligente por primera vez, Adobe recomienda que lo imparta en al menos dos etiquetas diferentes.
 
 
