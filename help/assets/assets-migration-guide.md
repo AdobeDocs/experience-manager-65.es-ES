@@ -3,9 +3,9 @@ title: Migrar recursos [!DNL Adobe Experience Manager Assets] masivamente.
 description: Describe cómo introducir [!DNL Adobe Experience Manager]recursos, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1799'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 >Las siguientes herramientas de migración de recursos no son parte de [!DNL Experience Manager] y no son compatibles con Adobe:
 >
 >* ACS AEM Tools Tag Maker
->* Importador de recursos CSV de herramientas AEM de ACS
+>* Importador de recursos CSV de herramientas de AEM ACS
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Fast Action Manager
 >* Flujo de trabajo sintético
@@ -52,7 +52,7 @@ Antes de iniciar la migración, deshabilite los lanzadores para el flujo de trab
 
 ### Cargar etiquetas {#loading-tags}
 
-Es posible que ya tenga una taxonomía de etiquetas en su lugar de aplicación a las imágenes. Aunque las herramientas como el importador de recursos CSV y la compatibilidad con perfiles de metadatos pueden automatizar el proceso de aplicación de etiquetas a los recursos, es necesario cargar las etiquetas en el sistema. [!DNL Experience Manager] La función [ACS Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite rellenar etiquetas mediante una hoja de cálculo de Microsoft Excel que se carga en el sistema.
+Es posible que ya tenga una taxonomía de etiquetas en su lugar de aplicación a las imágenes. Aunque las herramientas como el importador de recursos CSV y la compatibilidad con perfiles de metadatos pueden automatizar el proceso de aplicación de etiquetas a los recursos, es necesario cargar las etiquetas en el sistema. [!DNL Experience Manager] La función [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite rellenar etiquetas mediante una hoja de cálculo de Microsoft Excel que se carga en el sistema.
 
 ### Recursos de entrada {#ingesting-assets}
 
@@ -62,7 +62,7 @@ Existen dos métodos para cargar los recursos en el sistema: un enfoque basado e
 
 #### Enviar a través de HTTP {#pushing-through-http}
 
-El equipo de servicios gestionados de Adobe utiliza una herramienta llamada Glutton para cargar datos en entornos de clientes. Glutton es una pequeña aplicación Java que carga todos los recursos de un directorio en otro directorio en una [!DNL Experience Manager] implementación. En lugar de utilizar Glutton, también puede utilizar herramientas como scripts Perl para publicar los recursos en el repositorio.
+El equipo de Managed Services de Adobe utiliza una herramienta llamada Glutton para cargar datos en entornos de clientes. Glutton es una pequeña aplicación Java que carga todos los recursos de un directorio en otro directorio en una [!DNL Experience Manager] implementación. En lugar de utilizar Glutton, también puede utilizar herramientas como scripts Perl para publicar los recursos en el repositorio.
 
 Existen dos aspectos negativos principales a la hora de utilizar el método de pasar por https:
 
@@ -73,13 +73,13 @@ El otro método para la ingesta de recursos es extraer recursos del sistema de a
 
 #### Buscar desde el sistema de archivos local {#pulling-from-the-local-filesystem}
 
-El importador [de recursos CSV de las herramientas de AEM de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrae recursos del sistema de archivos y los metadatos de los recursos de un archivo CSV para la importación de recursos. La API del Administrador de recursos de Experience Manager se utiliza para importar los recursos en el sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
+El importador [de recursos CSV de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools extrae recursos del sistema de archivos y de los metadatos de los recursos de un archivo CSV para la importación de recursos. La API del Administrador de recursos de Experience Manager se utiliza para importar los recursos en el sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
 
 Dado que no es necesario transmitir los recursos a través de una red, el rendimiento general mejora considerablemente y este método se considera generalmente la forma más eficaz de cargar los recursos en el repositorio. Además, como la herramienta admite la ingestión de metadatos, puede importar todos los recursos y metadatos en un solo paso en lugar de crear un segundo paso para aplicar los metadatos mediante una herramienta independiente.
 
 ### Procesar representaciones {#processing-renditions}
 
-Después de cargar los recursos en el sistema, debe procesarlos a través del flujo de trabajo de recursos [!UICONTROL de actualización de] DAM para extraer metadatos y generar representaciones. Antes de realizar este paso, debe realizar un duplicado y modificar el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM para adaptarlo a sus necesidades. El flujo de trabajo integrado contiene muchos pasos que pueden no ser necesarios, como la generación o la integración de Scene7 PTIFF [!DNL InDesign Server] .
+Después de cargar los recursos en el sistema, debe procesarlos a través del flujo de trabajo de recursos [!UICONTROL de actualización de] DAM para extraer metadatos y generar representaciones. Antes de realizar este paso, debe realizar un duplicado y modificar el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM para adaptarlo a sus necesidades. El flujo de trabajo integrado contiene muchos pasos que pueden no ser necesarios para usted, como la generación o la integración de Scene7 PTIFF [!DNL InDesign Server] .
 
 Después de configurar el flujo de trabajo según sus necesidades, tiene dos opciones para ejecutarlo:
 
@@ -88,7 +88,7 @@ Después de configurar el flujo de trabajo según sus necesidades, tiene dos opc
 
 ### Activar recursos {#activating-assets}
 
-Para implementaciones que tienen un nivel de publicación, debe activar los recursos en el conjunto de servidores de publicación. Aunque Adobe recomienda ejecutar más de una única instancia de publicación, es más eficaz replicar todos los recursos en una única instancia de publicación y clonar dicha instancia. Al activar un gran número de recursos, después de activar una activación de árbol, es posible que tenga que intervenir. He aquí por qué: Al desactivar activaciones, los elementos se agregan a los trabajos o colas de eventos de Sling. Después de que el tamaño de esta cola comience a superar los 40.000 elementos aproximadamente, el procesamiento se ralentiza considerablemente. Después de que el tamaño de esta cola exceda los 100.000 elementos, la estabilidad del sistema inicio en sufrir.
+Para implementaciones que tienen un nivel de publicación, debe activar los recursos en el conjunto de servidores de publicación. Aunque Adobe recomienda ejecutar más de una instancia de publicación única, es más eficaz replicar todos los recursos en una única instancia de publicación y clonar dicha instancia. Al activar un gran número de recursos, después de activar una activación de árbol, es posible que tenga que intervenir. He aquí por qué: Al desactivar activaciones, los elementos se agregan a los trabajos o colas de eventos de Sling. Después de que el tamaño de esta cola comience a superar los 40.000 elementos aproximadamente, el procesamiento se ralentiza considerablemente. Después de que el tamaño de esta cola exceda los 100.000 elementos, la estabilidad del sistema inicio en sufrir.
 
 Para solucionar este problema, puede utilizar el Administrador de acciones [rápidas](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) para administrar la replicación de recursos. Esto funciona sin utilizar las colas de Sling, lo que reduce la sobrecarga y reduce la carga de trabajo para evitar que el servidor se sobrecargue. En la página de documentación de la función se muestra un ejemplo de uso de FAM para administrar la replicación.
 
@@ -98,7 +98,7 @@ Para cualquiera de estos enfoques, la advertencia es que los recursos de la inst
 
 >[!NOTE]
 >
->Adobe no mantiene ni admite Grabbit.
+>Adobe no mantiene o no admite Grabbit.
 
 ### Clonar publicación {#cloning-publish}
 
