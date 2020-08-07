@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '9240'
 ht-degree: 4%
@@ -50,7 +50,7 @@ Puede cargar varios tipos de recursos (como imágenes, archivos PDF, archivos RA
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
+>En el modo Dynamic Media: Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
 
 Puede elegir cargar recursos en carpetas con o sin un perfil de procesamiento asignado a ellas.
 
@@ -108,7 +108,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
    >
    >El cuadro de diálogo [!UICONTROL Duplicados detectados] solo aparece cuando la función de detección de duplicados está activada. Para habilitar la función de detección de duplicado, consulte [Activar detección](/help/assets/duplicate-detection.md)de Duplicado.
 
-   ![Cuadro de diálogo Recurso Duplicado detectado](assets/duplicate-asset-detected.png)
+   ![Cuadro de diálogo Recurso duplicado detectado](assets/duplicate-asset-detected.png)
 
    Para conservar el recurso de duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, haga clic en **[!UICONTROL Eliminar]**.
 
@@ -145,7 +145,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->En el modo Dynamic Media - Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
+>En el modo Dynamic Media: Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]
 | Opciones de trabajo |  | Haga clic en Opciones **** de trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Haga clic en el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas cargadas se introducen automáticamente en [!DNL Experience Manager Assets]. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript y Illustrator. |
@@ -240,7 +240,7 @@ Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede darles f
 
 Los archivos Documento de Photoshop (PSD) se utilizan con mayor frecuencia para crear plantillas de imagen. Al cargar un archivo PSD, puede crear una plantilla de imagen automáticamente a partir del archivo (seleccione la opción [!UICONTROL Crear plantilla] en la pantalla Cargar).
 
-Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
+Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si se utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
 
 Utilice las opciones [!UICONTROL de recorte] y de Perfil [!UICONTROL de color descritas anteriormente con las opciones]de carga de Photoshop.
 
@@ -303,7 +303,7 @@ Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para g
 
 ### Cargas de flujo continuo {#streamed-uploads}
 
-Si carga muchos recursos en Adobe Experience Manager, las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede hacer que se agote el tiempo de espera de alguna tarea de carga. [!DNL Experience Manager Assets] admite la carga de recursos en flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarla en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está habilitada de forma predeterminada en [!DNL Assets].
+Si carga muchos recursos en Adobe Experience Manager, las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede provocar que se agote el tiempo de espera de alguna tarea de carga. [!DNL Experience Manager Assets] admite la carga de recursos en flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarla en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está habilitada de forma predeterminada en [!DNL Assets].
 
 >[!NOTE]
 >
@@ -326,7 +326,7 @@ Algunas limitaciones de la función son:
 * No puede seleccionar dos archivos ZIP al mismo tiempo y extraerlos. Sólo puede extraer un archivo ZIP a la vez.
 * Al cargar un archivo ZIP, si el cuadro de diálogo de carga muestra un error de servidor de 500, vuelva a intentarlo después de instalar el Service Pack más reciente.
 
-## Recursos de Previsualización {#previewing-assets}
+## Recursos de previsualización {#previewing-assets}
 
 Para realizar la previsualización de un recurso, siga estos pasos.
 
@@ -357,8 +357,8 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 >[!MORELIKETHIS]
 >
->* [Previsualización de Dynamic Media Assets](/help/assets/previewing-assets.md).
->* [Subrecursos](managing-linked-subassets.md#viewing-subassets)de Vista.
+>* [Previsualización de recursos](/help/assets/previewing-assets.md)de medios dinámicos.
+>* [Subrecursos](managing-linked-subassets.md#viewing-subassets)de vista.
 
 
 ## Editar propiedades y metadatos {#editing-properties}
@@ -554,7 +554,7 @@ Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-a
 
 >[!NOTE]
 >
->Para obtener más información específica de Dynamic Media, consulte [Publicación de Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
+>Para obtener más información específica sobre Dynamic Media, consulte [Publicación de recursos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Vaya a la ubicación de los recursos o carpetas que desee publicar.
 
@@ -737,7 +737,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 1. Después de agregar la anotación, haga clic en **[!UICONTROL Añadir]** para guardarla. Se envía una notificación para la anotación a Aaron.
 
-   ![Botón Añadir para guardar una anotación](assets/annotation-add.png)
+   ![Botón añadir para guardar una anotación](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -762,7 +762,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 >
 >También puede agregar anotaciones a una colección. Sin embargo, si una colección contiene colecciones secundarias, solo puede agregar anotaciones/comentarios a la colección principal. La opción Anotar no está disponible para colecciones secundarias.
 
-### Anotaciones guardadas en la Vista {#viewing-saved-annotations}
+### Anotaciones guardadas en la vista {#viewing-saved-annotations}
 
 1. Para vista de anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
@@ -836,7 +836,7 @@ Si un recurso incluye anotaciones en idiomas extranjeros (especialmente en idiom
 1. Para configurar el servicio CQ-DAM-Handler-Gibson Font Manager, realice una de las siguientes acciones:
 
    * En la opción de directorio Fuentes del sistema, especifique la ruta completa al directorio de fuentes del sistema. Por ejemplo, si es un usuario de Mac, puede especificar la ruta como */Biblioteca/Fuentes* en la opción de directorio Fuentes del sistema. [!DNL Experience Manager] captura las fuentes de este directorio.
-   * Cree un directorio denominado `fonts` dentro de la ``crx-quickstart`` carpeta. CQ-DAM-Handler-Gibson Font Manager Service obtiene automáticamente las fuentes en la ubicación `crx-quickstart/fonts`. Puede anular esta ruta predeterminada desde la opción de directorio de fuentes de Adobe Server.
+   * Cree un directorio denominado `fonts` dentro de la `crx-quickstart` carpeta. CQ-DAM-Handler-Gibson Font Manager Service obtiene automáticamente las fuentes en la ubicación `crx-quickstart/fonts`. Puede anular esta ruta predeterminada desde la opción de directorio de fuentes de Adobe Server.
 
    * Cree una nueva carpeta para las fuentes del sistema y almacene las fuentes deseadas en la carpeta. A continuación, especifique la ruta completa de esa carpeta en la opción de directorio Fuentes del cliente.
 
