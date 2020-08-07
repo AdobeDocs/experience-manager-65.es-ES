@@ -3,9 +3,9 @@ title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar funcionalidades individuales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
-source-wordcount: '4400'
+source-wordcount: '4397'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Para obtener más información sobre las demás configuraciones de RTE, consulte
 
 >[!NOTE]
 >
->Al trabajar con CRXDE Lite, se recomienda guardar los cambios de forma regular mediante la opción [!UICONTROL Guardar todo] .
+>Cuando trabaje con CRXDE Lite, se recomienda guardar los cambios de forma regular mediante la opción [!UICONTROL Guardar todo] .
 
 ## Activar un complemento y configurar la propiedad features {#activateplugin}
 
@@ -31,7 +31,7 @@ De forma predeterminada, `format`, `link`, `list`, `justify`y `control` los comp
 >
 >El `rtePlugins` nodo respectivo se denomina `<rtePlugins-node>` para evitar la duplicación en este artículo.
 
-1. Con CRXDE Lite, busque el componente de texto para su proyecto.
+1. Con CRXDE Lite, busque el componente de texto para el proyecto.
 1. Cree el nodo principal de `<rtePlugins-node>` si no existe, antes de configurar los complementos RTE:
 
    * Según el componente, los nodos principales son:
@@ -62,7 +62,7 @@ Después de activar un complemento, siga estas instrucciones para configurar la 
 |  | Habilitar todas las funciones | Habilitar algunas funciones específicas | Deshabilitar todas las funciones |
 |---|---|---|---|
 | Nombre | características | características | características |
-| Tipo | Cadena | String[] (multi-string; configure Type en String y haga clic en Multi en CRXDE Lite) | Cadena |
+| Tipo | Cadena | String[] (multi-string; defina el tipo en Cadena y haga clic en Múltiple en el CRXDE Lite) | Cadena |
 | Value | `*` (un asterisco) | definido en uno o varios valores de función | - |
 
 ## Comprender el complemento Findreplace {#findreplace}
@@ -79,7 +79,7 @@ Al utilizar RTE, los autores pueden pegar contenido en uno de los tres modos sig
 
 * **Modo** del explorador: Pegue texto mediante la implementación de pegado predeterminada del explorador. No es un método recomendado, ya que podría introducir marcas no deseadas.
 
-* **Modo** de texto sin formato: Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente AEM.
+* **Modo** de texto sin formato: Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en AEM componente.
 
 * **Modo** MS Word: Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite copiar y pegar texto de otro origen, como una página web o MS Excel, y solo se conserva el formato parcial.
 
@@ -107,7 +107,7 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 * Pegue texto mediante la implementación de pegado predeterminada del explorador. No es un método recomendado, ya que podría introducir marcas no deseadas. Configurado usando `browser` abajo.
 
-* Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente AEM. Configurado usando `plaintext` abajo.
+* Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en AEM componente. Configurado usando `plaintext` abajo.
 
 * Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite copiar y pegar texto de otro origen, como una página web o MS Excel, y solo se conserva el formato parcial. Configurado usando `wordhtml` abajo.
 
@@ -120,7 +120,7 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 ### Configurar los formatos permitidos al pegar contenido {#pasteformats}
 
-El modo de pegado como Microsoft Word (`paste-wordhtml`) se puede seguir configurando para que pueda definir explícitamente qué estilos se permiten al pegar en AEM desde otro programa, como Microsoft Word.
+El modo de pegado como Microsoft Word (`paste-wordhtml`) se puede configurar más para que pueda definir explícitamente qué estilos se permiten al pegar en AEM desde otro programa, como Microsoft Word.
 
 Por ejemplo, si solo se deben permitir formatos y listas en negrita al pegar en AEM, puede filtrar los demás formatos. Esto se denomina filtrado de pegado configurable, que se puede realizar para ambos:
 
@@ -329,7 +329,7 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 
 ### Configurar RTE para saltos de palabras óptimos en japonés {#jpwordwrap}
 
-Los autores que utilicen AEM para crear contenido en japonés pueden aplicar un estilo a los caracteres para evitar saltos de línea cuando no se requiera un salto de línea. Esto permite a los autores dejar que las oraciones rompan en la posición deseada. El estilo de esta funcionalidad se basa en la clase CSS predefinida en la hoja de estilo CSS.
+Los autores que utilizan AEM para crear contenido en japonés pueden aplicar un estilo a los caracteres para evitar saltos de línea cuando no sea necesario un salto de línea. Esto permite a los autores dejar que las oraciones rompan en la posición deseada. El estilo de esta funcionalidad se basa en la clase CSS predefinida en la hoja de estilo CSS.
 
 >[!NOTE]
 >
@@ -445,7 +445,7 @@ Si define formatos personalizados, se eliminan los formatos predeterminados (`<p
 
 ## Configurar caracteres especiales {#spchar}
 
-En una instalación estándar de AEM, cuando el `misctools` complemento está habilitado para caracteres especiales (`specialchars`), inmediatamente se puede utilizar una selección predeterminada; por ejemplo, los símbolos de copyright y marca comercial.
+En una instalación de AEM estándar, cuando el `misctools` complemento está habilitado para caracteres especiales (`specialchars`), inmediatamente se puede utilizar una selección predeterminada; por ejemplo, los símbolos de copyright y marca comercial.
 
 Puede configurar el RTE para que su propia selección de caracteres esté disponible; definiendo caracteres distintos o una secuencia completa.
 
@@ -607,7 +607,7 @@ Cuando se activa el complemento de revisión de ortografía, RTE utiliza diccion
 >[!NOTE]
 El mensaje `Spell checking failed` se muestra si se intenta comprobar un idioma que no está instalado. Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos léame correspondientes. No modifique los archivos.
 
-Una instalación estándar de AEM incluye los diccionarios Inglés americano (`en_us`) e Inglés británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
+Una instalación AEM estándar incluye los diccionarios Inglés Americano (`en_us`) e Inglés Británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
 
 1. Vaya a la página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -697,7 +697,7 @@ Al agregar vínculos en AEM, puede definir:
 
 Para configurar cómo se agregan vínculos en AEM desde otro programa, defina las reglas HTML.
 
-1. Con CRXDE Lite, busque el componente de texto para su proyecto.
+1. Con CRXDE Lite, busque el componente de texto para el proyecto.
 1. Cree un nuevo nodo en el mismo nivel que `<rtePlugins-node>`, es decir, cree el nodo en el nodo principal de `<rtePlugins-node>`:
 
    * **Nombre** `htmlRules`
@@ -731,7 +731,7 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
       * **Nombre** `cssExternal`
       * **Tipo** `String`
       * **Valor** del nombre de la clase CSS (sin un &#39;.&#39; anterior); for example, `cssClass` instead of `.cssClass`)
-   * Matriz de **protocolos** válidos (incluidos https://, https:// file://, mailto:, entre otros)
+   * Matriz de **protocolos** válidos (incluidos `https://`, `https://`, `file://`y `mailto:` entre otros)
 
       * **Nombre** `protocols`
       * **Tipo** `String[]`
@@ -764,8 +764,8 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
 
          * **Nombre** `targetInternal`
          * **Tipo** `String`
-         * **Valor** del destinatario para los vínculos internos (solo se utiliza cuando el &quot;modo es `auto`)
-      * destinatario para vínculos externos:
+         * **Valor** del destinatario para los vínculos internos (solo se utiliza cuando el modo es `auto`)
+      * Destinatario para vínculos externos:
 
          * **Nombre** `targetExternal`
          * **Tipo** `String`
