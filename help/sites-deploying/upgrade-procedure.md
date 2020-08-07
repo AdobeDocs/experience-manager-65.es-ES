@@ -12,9 +12,9 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 5f8198f0fd6c335708f2b771848b2e66dfc242b3
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,12 @@ ht-degree: 0%
 
 Al actualizar sus entornos de AEM, debe tener en cuenta las diferencias de enfoque entre la actualización de entornos de autor o entornos de publicación para minimizar el tiempo de inactividad tanto para los autores como para los usuarios finales. Esta página describe el procedimiento de alto nivel para actualizar una topología de AEM que se está ejecutando en una versión de AEM 6.x. Dado que el proceso difiere entre los niveles de autor y publicación, así como las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se ha incluido en una sección separada. Al ejecutar la implementación, se recomienda primero actualizar el entorno del autor, determinar el éxito y, a continuación, continuar con los entornos de publicación.
 
-<!-->>[!IMPORTANT]
->El tiempo de inactividad durante la actualización se puede reducir considerablemente indexando el repositorio antes de realizar la actualización. Para obtener más información, consulte [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](/help/sites-deploying/upgrade-offline-reindexing.md)—>
+<!--
+>[!IMPORTANT]
 >
+>The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
+-->
+
 ## Nivel de creación de TarMK {#tarmk-author-tier}
 
 ### Topología de inicio {#starting-topology}
