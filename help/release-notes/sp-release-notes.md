@@ -4,9 +4,9 @@ description: Notas de versión específicas de Service Pack 5 de Adobe Experienc
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
+source-git-commit: ca965d8495c0460b2b6bc5e08d8818b91f9fcdee
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4531'
 ht-degree: 7%
 
 ---
@@ -79,6 +79,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 * Cuando un usuario copia y pega un Contenedor de diseño en la misma página, los componentes de un Contenedor de diseño no se muestran (NPR-33648).
 * La comprobación de estado del despachante muestra `Invalid cookie header` un mensaje de advertencia en los archivos de registro (NPR-33629).
 * Se refleja XSS en PreferencesServlet (NPR-33438).
+* Los usuarios anónimos pueden acceder a las funciones de CRX DE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -136,7 +137,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * Ahora se puede acceder al menú en el carril izquierdo. Los lectores de pantalla anuncian adecuadamente la funcionalidad y el propósito de ampliar el menú (NPR-33068).
 
-* Los usuarios de lectores de pantalla ahora pueden acceder al cuadro de Lista y a muchos otros elementos de la interfaz de usuario, y los lectores de pantalla anuncian la siguiente información (NPR-33040):
+* Los usuarios de lectores de pantalla ahora pueden acceder al cuadro de lista y a muchos otros elementos de la interfaz de usuario, y los lectores de pantalla anuncian la siguiente información (NPR-33040):
 
    * si se requiere la introducción de datos por parte del usuario en un elemento antes del envío del formulario.
    * si un elemento no es editable.
@@ -182,7 +183,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 [!DNL Adobe Experience Manager] 6.5.5.0 Assets ofrece correcciones a los siguientes problemas:
 
-* [!UICONTROL La opción Inicio] del cuadro de diálogo [!UICONTROL Crear flujo de trabajo] para los recursos de una colección está desactivada, lo que impide que se active el flujo de trabajo (NPR-32471).
+* [!UICONTROL La opción inicio] del cuadro de diálogo [!UICONTROL Crear flujo de trabajo] para los recursos de una colección está desactivada, lo que impide que se active el flujo de trabajo (NPR-32471).
 
 * Cuando se utiliza la ventana emergente en cascada en esquemas de metadatos, al seleccionar y guardar una opción desplegable que contiene un apóstrofo (desde el menú desplegable secundario), la opción de apóstrofo seleccionada desaparece después de volver a abrir [!UICONTROL Propiedades] del recurso (NPR-32649).
 
@@ -220,7 +221,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * La creación de una configuración de Dynamic Media en Experience Manager funciona, pero en la interfaz de usuario no sucede nada al seleccionar Guardar (CQ-4292442).
 
-* La Previsualización de recursos de vídeo F4V no funciona en la reproducción progresiva en Safari/Mac (CQ-4289844).
+* La previsualización de recursos de vídeo F4V no funciona en la reproducción progresiva en Safari/Mac (CQ-4289844).
 
 * La carpeta adicional se crea al recortar de forma inteligente un recurso que se encuentra dentro de una carpeta principal con caracteres de punto `.` en su nombre (CQ-4289337).
 
@@ -271,7 +272,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 ### Proyectos de traducción {#translation-6550}
 
-* Las etiquetas traducidas no se importan en Experience Manager desde servicios de traducción de terceros (NPR-33154).
+* Las etiquetas traducidas no se importan al Experience Manager desde servicios de traducción de terceros (NPR-33154).
 * La página de configuración de traducción muestra un proveedor de traducción incorrecto al que se utilizó para la traducción (NPR-32971).
 * Añadir una carpeta de fragmentos de experiencia en un proyecto de traducción existente crea un nuevo proyecto (NPR-32843).
 * Se muestra un `NullPointerException` error en los registros de ejecución de un trabajo de traducción (NPR-32628).
@@ -286,7 +287,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * Si elimina un esquema de metadatos publicado de [!DNL Brand Portal] resulta en un error (CQ-4292063).
 * Si un administrador configura [!DNL Experience Manager Assets] 6.5.4 con Brand Portal a través de Adobe Developer Console, el [!DNL Brand Portal] usuario no puede publicar el recurso de una carpeta de contribución de [!DNL Brand Portal] a [!DNL Experience Manager] (NPR-33046).
-* Replicación de Duplicados de las carpetas principales que causan conflictos (NPR-33001).
+* Replicación de duplicados de las carpetas principales que causan conflictos (NPR-33001).
 
 ### [!DNL Communities] {#communities-6550}
 
