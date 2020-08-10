@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
 workflow-type: tm+mt
-source-wordcount: '5860'
+source-wordcount: '5858'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 5%
 | [Comprender la IU de búsqueda](#searchui) | [Búsqueda visual o de similitudes](#configvisualsearch) | [Comprobar propiedades y metadatos de un recurso](#checkinfo) |
 | [Sugerencias de búsqueda](#searchsuggestions) | [Metadatos obligatorios](#mandatorymetadata) | [Descargar](#download) |
 | [Comprender los resultados y el comportamiento de la búsqueda](#searchbehavior) | [Modificar facetas de búsqueda](#searchfacets) | [Actualizaciones masivas de metadatos](#metadataupdates) |
-| [Buscar clasificación y aumentar](#searchrank) | [extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
+| [Buscar clasificación y aumentar](#searchrank) | [Extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
 | [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender los resultados inesperados y solucionar problemas](#troubleshoot-unexpected-search-results-and-issues) |
 | [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicación de escritorio de Experience Manager](#desktopapp)</li><li>[Imágenes de Adobe Stock](#adobestock)</li><li>[Recursos de Dynamic Media](#dynamicmedia)</li></ul> |  |  |
 | [Selector de recursos](#assetpicker) |  |  |
@@ -228,7 +228,7 @@ Los autores pueden utilizar Content Finder para buscar en el repositorio de DAM 
 
 ## Selector de recursos {#assetpicker}
 
-El selector de recursos le permite buscar, filtrar y examinar los recursos DAM de forma especial. El selector de recursos está disponible en `https://[aem-server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante esta funcionalidad. Puede iniciarla con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y se mantienen intactos durante toda la selección.
+El selector de recursos le permite buscar, filtrar y examinar los recursos DAM de una forma especial. El selector de recursos está disponible en `https://[aem-server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante esta funcionalidad. Puede iniciarla con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y se mantienen intactos durante toda la selección.
 
 El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. El Selector de recursos solo funciona en el modo de exploración y solo funciona con la página de resultados de Omniture.
 
@@ -319,7 +319,7 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 *Figura: Uso del guión para buscar recursos que no contengan una palabra clave excluida.*
 
-## tareas de configuración y administración relacionadas con la funcionalidad de búsqueda {#configadmin}
+## Tareas de configuración y administración relacionadas con la funcionalidad de búsqueda {#configadmin}
 
 ### Buscar configuraciones de índice {#searchindex}
 
@@ -373,7 +373,7 @@ Si la extracción de texto consume demasiados recursos para la implementación, 
 
 Los predicados se utilizan para crear facetas. Los administradores pueden personalizar las facetas de búsqueda en el panel Filtros mediante predicados preconfigurados. Estos predicados se pueden personalizar mediante superposiciones. Consulte [Creación de predicados](/help/assets/searchx.md)personalizados.
 
-Puede buscar recursos digitales en función de una o varias de las siguientes propiedades. Los Filtros que se aplican a algunas de estas propiedades están disponibles de forma predeterminada y otros filtros se pueden crear personalizados para aplicarlos a otras propiedades.
+Puede buscar recursos digitales en función de una o varias de las siguientes propiedades. Los filtros que se aplican a algunas de estas propiedades están disponibles de forma predeterminada y otros filtros se pueden crear personalizados para aplicarlos a otras propiedades.
 
 | Campo de búsqueda | Valores de propiedades de búsqueda |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -396,7 +396,7 @@ Puede buscar recursos digitales en función de una o varias de las siguientes pr
 
 Puede hacer lo siguiente con los recursos que ha buscado en Experience Manager:
 
-* Propiedades de metadatos de Vista y otra información.
+* Propiedades de metadatos de vista y otra información.
 * Descargue uno o varios recursos.
 * Utilice las acciones de escritorio para abrir estos recursos en la aplicación de escritorio.
 * Cree colecciones inteligentes.
@@ -436,7 +436,7 @@ Para los recursos disponibles en una sola carpeta o colección, es más fácil [
 Una colección es un conjunto ordenado de recursos que puede incluir recursos de distintas ubicaciones porque las colecciones solo contienen referencias a estos recursos. Las colecciones son de los dos tipos siguientes:
 
 * Una lista de referencia estática de recursos, carpetas y otras colecciones.
-* lista dinámica (colección inteligente) que rellena los recursos de la colección en función de criterios de búsqueda.
+* Lista dinámica (colección inteligente) que rellena los recursos de la colección en función de criterios de búsqueda.
 
 Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/managing-collections-touch-ui.md).
 
@@ -457,6 +457,6 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 >[!MORELIKETHIS]
 >
 >* [Guía de implementación de búsqueda de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [Configuración avanzada de predicados de búsqueda de etiquetas y varios valores](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
+>* [Configuración avanzada para aumentar los resultados de búsqueda](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configurar la búsqueda de traducción inteligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
