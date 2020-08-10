@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Configuración de OSGi{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de AEM. Se utiliza para controlar los paquetes compuestos de AEM y su configuración.
+[OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de AEM de tecnología. Se utiliza para controlar los paquetes compuestos de AEM y su configuración.
 
 OSGi &quot;*proporciona los primitivos estandarizados que permiten construir aplicaciones a partir de componentes pequeños, reutilizables y de colaboración. Estos componentes se pueden componer en una aplicación e implementar*&quot;.
 
 Esto permite administrar fácilmente los paquetes, ya que se pueden detener, instalar e iniciar individualmente. Las interdependencias se gestionan automáticamente. Cada componente OSGi (consulte la Especificación [](https://www.osgi.org/Specifications/HomePage)OSGi) está contenido en uno de los distintos paquetes. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
-Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son relevantes para la implementación del proyecto. No es necesario realizar ajustes en todos los ajustes de la lista; algunos de ellos se mencionan para ayudarle a comprender el funcionamiento de AEM.
+Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son relevantes para la implementación del proyecto. No es necesario realizar ajustes en todos los ajustes de la lista; algunos se mencionan para ayudarle a comprender el funcionamiento de AEM.
 
 >[!CAUTION]
 >
@@ -45,13 +45,13 @@ Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son
 >
 >Es posible que se requieran más paquetes para áreas específicas de funcionalidad dentro de AEM. En estos casos, se pueden encontrar detalles de configuración en la página relacionados con la funcionalidad adecuada.
 
-**Escucha** de Evento de replicación de AEM Configure:
+**AEM Replication Evento Listener** Configure:
 
 * Modos de **ejecución**, en los que los eventos de replicación se distribuirán a los oyentes. Por ejemplo, si se define como autor, entonces este es el sistema que &quot;iniciará&quot; la replicación.
 
 * Es necesario agregar la **publicación** en modo de ejecución si el código del proyecto procesa eventos de replicación (replicación inversa) en un entorno de publicación. Por ejemplo, cuando el despachante se utiliza para vaciar desde el entorno de publicación o cuando se produce una replicación estándar a otras instancias de publicación.
 
-**listener** de cambio de repositorio de AEM Configure:
+**Detector** de cambios del repositorio de AEM Configure:
 
 * Las **Rutas**, ubicaciones para escuchar los eventos del repositorio listos para la distribución.
 
@@ -82,7 +82,7 @@ Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son
 * **Nombre** del registrador y Formato **** de registro para configurar la ubicación y el formato de registro de solicitud y acceso (predeterminado: `request.log`). Este archivo de registro es esencial para analizar el rendimiento o la funcionalidad de depuración relacionados con la cadena web.
 Esto se combina con el registrador de solicitudes Sling [Apache](#apacheslingrequestlogger).
 
-Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md) de AEM y Registro de [Sling](https://sling.apache.org/site/logging.html).
+Para obtener más información, consulte [AEM Registro](/help/sites-deploying/configure-logging.md) y [Registro](https://sling.apache.org/site/logging.html)de Sling.
 
 **Apache Sling Eventing Thread Pool** Configure:
 
@@ -91,11 +91,11 @@ Para obtener más información, consulte [Registro](/help/sites-deploying/config
 * **Tamaño**de cola, el tamaño máximo de la cola de subprocesos si se agota el grupo.
 El valor recomendado es `-1` porque establece la cola en ilimitada; si se establece un límite, pueden producirse pérdidas cuando se supera.
 
-* El cambio de esta configuración puede ayudar al rendimiento en situaciones con un número elevado de eventos; por ejemplo, el uso pesado de AEM DAM o Workflow.
+* El cambio de esta configuración puede ayudar al rendimiento en situaciones con un número elevado de eventos; por ejemplo, uso intensivo AEM DAM o Flujo de trabajo.
 * Los valores específicos de su escenario deben establecerse mediante pruebas.
 * Esta configuración puede afectar al rendimiento de la instancia, por lo que no debe cambiarla sin motivo y teniendo debidamente en cuenta.
 
-**Servlet** Apache Sling GET Configure algunos aspectos del procesamiento:
+**Apache Sling GET Servlet** Configure algunos aspectos del procesamiento:
 
 * **Índice** automático para habilitar o deshabilitar el procesamiento de directorios para la exploración.
 * **Habilite** (o deshabilite) las representaciones predeterminadas, como **HTML**, **texto** sin formato, **JSON** o **XML**.
@@ -103,7 +103,7 @@ No debe deshabilitar JSON.
 
 >[!NOTE]
 >
->Esta configuración se configura automáticamente para instancias de producción si ejecuta AEM en modo [listo para](/help/sites-administering/production-ready.md)producción.
+>Esta configuración se configura automáticamente para las instancias de producción si ejecuta AEM en el modo [](/help/sites-administering/production-ready.md)de producción lista.
 
 **Controlador** de Java Script de Apache Sling Configure los ajustes para la compilación de archivos .java como secuencias de comandos (servlets).
 
@@ -125,7 +125,7 @@ Ciertos ajustes pueden afectar al rendimiento, por lo que deben deshabilitarse s
 
 * **Intervalo** de reintento, **Reintentos** máximos, **Número máximo de trabajos** paralelos, Tiempo **de espera de** reconocimiento, entre otros.
 
-* Cambiar esta configuración puede mejorar el rendimiento en situaciones con un número elevado de trabajos; por ejemplo, el uso intensivo de AEM DAM y Flujos de trabajo.
+* Cambiar esta configuración puede mejorar el rendimiento en situaciones con un número elevado de trabajos; por ejemplo, uso intensivo de AEM DAM y Flujos de trabajo.
 * Los valores específicos de su escenario deben establecerse mediante pruebas.
 * No cambie esta configuración sin motivo, solo la tendrá debidamente en cuenta.
 
@@ -140,7 +140,7 @@ En particular para los casos de producción:
 
 >[!NOTE]
 >
->Esta configuración se configura automáticamente para instancias de producción si ejecuta AEM en modo [listo para](/help/sites-administering/production-ready.md)producción.
+>Esta configuración se configura automáticamente para las instancias de producción si ejecuta AEM en el modo [](/help/sites-administering/production-ready.md)de producción lista.
 
 **Configuración** de registro de Apache Sling Configure:
 
@@ -150,7 +150,7 @@ En particular para los casos de producción:
 
 * **El patrón** de mensajes define el formato de los mensajes de registro.
 
-Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md#global-logging) de AEM y Registro de [Sling](https://sling.apache.org/site/logging.html).
+Para obtener más información, consulte [AEM Registro](/help/sites-deploying/configure-logging.md#global-logging) y [Registro](https://sling.apache.org/site/logging.html)de Sling.
 
 **Configuración del registrador de registros de Apache Sling (Configuración de fábrica)** Configure:
 
@@ -159,10 +159,10 @@ Para obtener más información, consulte [Registro](/help/sites-deploying/config
 * **Registrador** para definir la categoría; por ejemplo: solo inicie sesión para com.day.cq.
 
 * Mediante las configuraciones **de fábrica**, se puede agregar cualquier cantidad de configuraciones adicionales para satisfacer los distintos niveles de registro y categorías necesarias.
-* Estas configuraciones son útiles durante el desarrollo; por ejemplo, para registrar mensajes TRACE para un servicio específico en un archivo de registro específico.
+* Estas configuraciones son útiles durante el desarrollo; por ejemplo, para registrar mensajes de TRACE para un servicio específico en un archivo de registro específico.
 * Estas configuraciones son útiles en un entorno de producción; por ejemplo, para que los mensajes sobre un servicio específico se registren en un archivo de registro individual para facilitar la supervisión.
 
-Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md) de AEM y Registro de [Sling](https://sling.apache.org/site/logging.html).
+Para obtener más información, consulte [AEM Registro](/help/sites-deploying/configure-logging.md) y [Registro](https://sling.apache.org/site/logging.html)de Sling.
 
 **Configuración del grabador de registros de Apache Sling (Configuración de fábrica)** Configure:
 
@@ -171,10 +171,10 @@ Para obtener más información, consulte [Registro](/help/sites-deploying/config
 
 * El escritor puede ser utilizado por una configuración de **Apache Sling Logging Logger** .
 
-* Estas configuraciones son útiles durante el desarrollo; por ejemplo, para registrar mensajes TRACE para un servicio específico en un archivo de registro específico.
+* Estas configuraciones son útiles durante el desarrollo; por ejemplo, para registrar mensajes de TRACE para un servicio específico en un archivo de registro específico.
 * Estas configuraciones son útiles en un entorno de producción; por ejemplo, para que los mensajes sobre un servicio específico se registren en un archivo de registro individual para facilitar la supervisión.
 
-Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md) de AEM y Registro de [Sling](https://sling.apache.org/site/logging.html).
+Para obtener más información, consulte [AEM Registro](/help/sites-deploying/configure-logging.md) y [Registro](https://sling.apache.org/site/logging.html)de Sling.
 
 **Apache Sling Main Servlet** Configure:
 
@@ -207,7 +207,7 @@ Consulte la lista de comprobación de [seguridad - Problemas con falsificación]
 
 Esto se asocia con el registrador de datos de solicitud personalizado [Apache Sling](#apacheslingcustomizablerequestdatalogger).
 
-Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md) de AEM y Registro de [Sling](https://sling.apache.org/site/logging.html).
+Para obtener más información, consulte [AEM Registro](/help/sites-deploying/configure-logging.md) y [Registro](https://sling.apache.org/site/logging.html)de Sling.
 
 **Fábrica** de resolución de recursos de Apache Sling Configure los aspectos centrales de la resolución de recursos de Sling:
 
@@ -227,7 +227,7 @@ Para obtener más información, consulte: [https://cwiki.apache.org/confluence/d
 >
 >En particular, estas opciones deben configurarse en el repositorio.
 >
->De lo contrario, AEM podría sobrescribir los cambios realizados en las asignaciones **de** URL mediante la consola Félix en el siguiente inicio.
+>De lo contrario, los cambios realizados en las asignaciones **de** URL mediante la consola Felix podrían ser sobrescritos por AEM al iniciar la próxima vez.
 
 **Apache Sling Servlet/Script Resolver and Error Handler** El Servlet Sling y la resolución de secuencias de comandos tienen varias tareas:
 
@@ -257,7 +257,7 @@ Al crear una nueva configuración, no realice cambios en la configuración de f�
 
 >[!NOTE]
 >
->En AEM 6.0 y versiones anteriores, el proxy estaba configurado en Day Commons HTTP Client. A partir de AEM 6.1 y versiones posteriores, la configuración proxy se ha trasladado a la configuración &quot;Apache HTTP Components Proxy Configuration&quot; en lugar de a la configuración &quot;Day Commons HTTP Client&quot;.
+>En AEM 6.0 y versiones anteriores proxy se configuró en Day Commons HTTP Client. A partir de las versiones AEM 6.1 y posteriores, la configuración proxy se ha trasladado a la configuración &quot;Apache HTTP Components Proxy Configuration&quot; en lugar de la configuración &#39;Day Commons HTTP Client&#39;.
 
 **Day CQ Antispam** Configure el servicio antispam (Akismet) utilizado. Esto requiere que registre:
 
@@ -287,7 +287,7 @@ Al crear una nueva configuración, no realice cambios en la configuración de f�
 
 >[!NOTE]
 >
->Esta configuración se configura automáticamente para instancias de producción si ejecuta AEM en modo [listo para](/help/sites-administering/production-ready.md)producción.
+>Esta configuración se configura automáticamente para las instancias de producción si ejecuta AEM en el modo [](/help/sites-administering/production-ready.md)de producción lista.
 
 **Controlador** de autenticación de encabezado HTTP CQ Day Configuración de todo el sistema para el método de autenticación básico de la solicitud HTTP.
 
@@ -315,14 +315,14 @@ Al utilizar grupos [de usuarios](/help/sites-administering/cug.md) cerrados pued
 
 **Asignación** de raíz de CQ de día Configure:
 
-* **Ruta** de Destinatario para definir a dónde se redirigirá una solicitud a &quot; `/`&quot;.
+* **Ruta** de destinatario para definir a dónde se redirigirá una solicitud a &quot; `/`&quot;.
 
 Hay dos IU disponibles en AEM:
 
 * la IU táctil es la IU estándar
 * y la IU clásica depredada sigue funcionando completamente
 
-Al utilizar la asignación raíz de AEM, puede configurar la IU que desea tener como predeterminada para su instancia:
+Con AEM asignación de raíz puede configurar la IU que desea tener como predeterminada para la instancia:
 
 * Para que la IU táctil sea la IU predeterminada, la ruta de **Destinatario** debe señalar a:
 
@@ -340,7 +340,7 @@ Al utilizar la asignación raíz de AEM, puede configurar la IU que desea tener 
 >
 >Tras una instalación estándar, la IU táctil es la IU predeterminada.
 
-**Detalles del controlador** de autenticación SSO de Adobe Granite: Configurar el inicio de sesión único (SSO); estos ajustes suelen ser necesarios en la configuración de creación empresarial, a menudo junto con LDAP.
+**Adobe Granite SSO Authentication Handler** Configurar el inicio de sesión único (SSO) detalles; estos ajustes suelen ser necesarios en la configuración de creación empresarial, a menudo junto con LDAP.
 
 Hay varias propiedades de configuración disponibles:
 
@@ -378,7 +378,7 @@ Se puede acceder a los otros modos desde la barra de tareas o bien `?wcmmode=dis
 
 >[!NOTE]
 >
->Esta configuración se configura automáticamente para instancias de producción si ejecuta AEM en modo [listo para](/help/sites-administering/production-ready.md)producción.
+>Esta configuración se configura automáticamente para las instancias de producción si ejecuta AEM en el modo [](/help/sites-administering/production-ready.md)de producción lista.
 
 **Configurador** del comprobador de vínculos WCM Day CQ Configurar:
 
@@ -453,7 +453,7 @@ Consulte también [Activación de HTTP sobre SSL](/help/sites-administering/ssl-
 
 Controla el analizador de HTML para el reescritor de CQ.
 
-* **Etiquetas adicionales para procesar** : puede agregar o quitar etiquetas HTML para que el analizador las procese. De forma predeterminada, se procesan las etiquetas siguientes: A,IMG,ÁREA,FORMULARIO,BASE,VÍNCULO,SECUENCIA DE COMANDOS,CUERPO,CABEZA.
+* **Etiquetas adicionales para procesar** : puede agregar o quitar etiquetas HTML para que el analizador las procese. De forma predeterminada, se procesan las etiquetas siguientes: A,IMG,ÁREA,FORMULARIO,BASE,VÍNCULO,SECUENCIA DE COMANDOS,CUERPO,HEAD.
 * **Conservar mayúsculas y minúsculas** : de forma predeterminada, el analizador HTML convierte atributos en mayúsculas y minúsculas (por ejemplo, eBay) en minúsculas (por ejemplo, ebay). Puede desactivarlo para conservar los atributos de mayúsculas y minúsculas del camello. Esto resulta útil cuando se utilizan marcos de front-end como Angular 2.
 
 **Agrupación** de conexiones JDBC Day Commons Configure el acceso a una base de datos externa que se está utilizando como fuente de contenido.
@@ -464,12 +464,12 @@ Se trata de una configuración de fábrica, por lo que se pueden configurar vari
 
 En particular, puede definir `dps.session.service.url.name`: el valor predeterminado es [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**CDN Rewriter** La comunicación entre AEM y un CDN debe garantizarse para que los recursos y binarios se entreguen al usuario final de forma segura. Esto incluye dos tareas:
+**CDN Rewriter** La comunicación entre AEM y CDN debe garantizarse para que los recursos y binarios se entreguen al usuario final de forma segura. Esto incluye dos tareas:
 
-* Acceso al recurso desde AEM a través de la CDN por primera vez (o después de que caduque en la caché).
-* El acceso seguro al recurso almacenado en caché en CDN, ya que una vez que el recurso se haya almacenado en caché en CDN, la solicitud no irá a AEM y todos los usuarios que tengan acceso a ese recurso en CDN deben recibir servicio de CDN.
+* Acceso al recurso desde AEM mediante la CDN la primera vez (o después de que caduque en la caché).
+* El acceso seguro al recurso almacenado en caché en CDN, ya que una vez que el recurso se haya almacenado en la caché en CDN, la solicitud no se dirigirá a AEM y todos los usuarios que tengan acceso a ese recurso deben ser atendidos desde CDN.
 
-AEM proporciona un reescritor para reescribir las URL de recursos internos en URL de CDN externas. Vuelve a escribir los vínculos que se pasarán a la CDN, incluida una firma JWS y un tiempo de caducidad para permitir el acceso seguro al recurso. Esta función se utiliza en instancias de autor.
+AEM proporciona un reescritor para reescribir las direcciones URL de recursos internos en direcciones URL de CDN externas. Vuelve a escribir los vínculos que se pasarán a la CDN, incluida una firma JWS y un tiempo de caducidad para permitir el acceso seguro al recurso. Esta función se utiliza en instancias de autor.
 
 El flujo total es el siguiente:
 
@@ -479,16 +479,16 @@ El flujo total es el siguiente:
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
 1. El navegador del usuario reenvía la solicitud de recurso al servidor CDN
-1. CDN debe configurarse para reenviar la solicitud a AEM junto con el `cdn_sign` parámetro .
+1. CDN debe configurarse para reenviar la solicitud a AEM junto con el `cdn_sign` parámetro.
 1. Un controlador de autenticación valida el `cdn_sign` parámetro y devuelve el recurso a CDN, que luego se envía al usuario
 
-El flujo entre el navegador del usuario, la CDN y AEM se puede visualizar de la siguiente manera.
+El flujo entre el explorador del usuario, la CDN y la AEM se puede visualizar de la siguiente manera.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
 >[!NOTE]
 >
->Actualmente, esta función solo está habilitada para instancias de autor de AEM.
+>Esta función solo está habilitada actualmente para AEM instancias de autor.
 
 **CDNConfigServiceImpl** Proporciona configuraciones de CDN
 
