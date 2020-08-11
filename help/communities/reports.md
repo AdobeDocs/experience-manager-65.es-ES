@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ## Información general {#overview}
 
-Para las comunidades AEM, existen varios informes a los que se puede acceder de varias formas desde el entorno de creación.
+Para AEM Communities, existen varios informes a los que se puede acceder de varias formas desde el entorno de creación.
 
 En general, los diversos informes son los siguientes:
 
@@ -36,11 +39,11 @@ En general, los diversos informes son los siguientes:
 
    Proporciona un gráfico de los distintos tipos de publicaciones de los miembros de la comunidad a cualquier sitio de la comunidad.
 
-Cuando [Adobe Analytics está habilitado](/help/communities/sites-console.md#analytics), los informes incluirán el número de vistas, reproducciones, comentarios y clasificaciones de cada recurso de activación con el paso del tiempo.
+Cuando [Adobe Analytics está habilitado](/help/communities/sites-console.md#analytics), los informes incluirán el número de vistas, reproducciones, comentarios y clasificaciones de cada recurso de habilitación a lo largo del tiempo.
 
 Los informes tabulares se pueden exportar en formato .csv para su procesamiento posterior.
 
-## Consolas Sistema de informes {#reporting-consoles}
+## Consolas sistema de informes {#reporting-consoles}
 
 ### Informes para sitios de la comunidad {#reports-for-community-sites}
 
@@ -60,7 +63,7 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
 
 
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![informes](assets/reports1.png)
 
 ### Informes para recursos de habilitación y rutas de aprendizaje {#reports-for-enablement-resources-and-learning-paths}
 
@@ -93,7 +96,7 @@ La consola Asignaciones permite que los informes se filtren mediante la habilita
 
 En el informe se proporciona información sobre su progreso, así como sobre las observaciones o calificaciones que se hayan proporcionado.
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![informe de asignación](assets/assignment-report.png)
 
 Seleccione los criterios para el informe:
 
@@ -104,6 +107,7 @@ Seleccione los criterios para el informe:
 * **Usuario o grupo**
    * Seleccione Usuario para generar un informe para un alumno.
    * Seleccione Grupo para generar un informe para un grupo de alumnos.
+
    El servicio de túnel tendrá acceso a los miembros y grupos de miembros desde el entorno de publicación.
 
 * **Asignación**
@@ -112,13 +116,13 @@ Seleccione los criterios para el informe:
 
 Seleccione **Generar** para crear el informe:
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![generate-report](assets/generate-assignment-report.png)
 
 ## Informe de vistas {#views-report}
 
 La consola Vistas permite que los informes se generen en las vistas de página según las características de la comunidad durante un período de tiempo determinado.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![vista-informe](assets/view-report.png)
 
 Seleccione los criterios para el informe:
 
@@ -141,13 +145,13 @@ Seleccione los criterios para el informe:
 
 Seleccione **[!UICONTROL Generar]** para crear el informe.
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![generar vistas](assets/generate-views.png)
 
 ## Informe de anuncios {#posts-report}
 
 La consola Anuncios permite generar informes en función del número de anuncios de las funciones de la comunidad durante un período de tiempo determinado.
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![post-report](assets/posts-report.png)
 
 Seleccione los criterios para el informe:
 
@@ -170,13 +174,13 @@ Seleccione los criterios para el informe:
 
 Seleccione **[!UICONTROL Generar]** para crear el informe.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![generate-report](assets/generate-posts-report.png)
 
 ## Solución de problemas {#troubleshooting}
 
 ### No hay sitios de comunidad enumerados {#no-community-sites-listed}
 
-Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics esté habilitado para un sitio. Si elige informes en las asignaciones, asegúrese de que la función de asignaciones se encuentra en la estructura del sitio de la comunidad.
+Si no aparece ningún sitio de comunidad, asegúrese de que Adobe Analytics esté habilitado para un sitio. Si elige informes en las asignaciones, asegúrese de que la función de asignaciones se encuentra en la estructura del sitio de la comunidad.
 
 ### Los informes no se muestran en la instancia de AEM Author {#reports-do-not-show-in-aem-author-instance}
 
