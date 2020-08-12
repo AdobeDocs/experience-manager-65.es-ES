@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guía del usuario de Experience Manager 6.5 Assets
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 41%
+source-wordcount: '635'
+ht-degree: 40%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 41%
    + [Uso [!DNL Adobe Stock] de recursos en recursos](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
-   + [Flujo de Actividad en la línea de tiempo](activity-stream.md)
+   + [Flujo de actividad en la línea de tiempo](activity-stream.md)
    + [Procesar recursos](assets-workflow.md)
    + [Añadir mapas de imagen](image-maps.md)
    + [Reutilización de recursos mediante MSM](reuse-assets-using-msm.md)
@@ -38,7 +38,7 @@ ht-degree: 41%
    + [Configuración de Dynamic Media: modo Scene7](config-dms7.md)
    + [Configuración de Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Resolución de problemas de Dynamic Media: modo Scene7](troubleshoot-dms7.md)
-   + [Migración desde Dynamic Media: modo híbrido a Dynamic Media: modo S7](migrate-from-hybrid-to-dms7.md)
+   + [Migración de Dynamic Media: modo híbrido a Dynamic Media: modo S7](migrate-from-hybrid-to-dms7.md)
    + [Administrar recursos de Dynamic Media](managing-assets.md)
    + [Práctica recomendada para optimizar la calidad de las imágenes](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Administrar ajustes preestablecidos del visualizador de Dynamic Media](managing-viewer-presets.md)
@@ -72,7 +72,7 @@ ht-degree: 41%
    + [Vincular URL en la aplicación web](linking-urls-to-yourwebapplication.md)
    + [Usar conjuntos de reglas para transformar URL](using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Invalidar el contenido en caché de CDN](invalidate-cdn-cached-content.md)
+   + [Invalidación de la caché de CDN mediante Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalación de Feature Pack 18912 para la migración masiva de recursos](bulk-ingest-migrate.md)
    + [Trabajar con selectores](working-with-selectors.md)
 + Extender recursos {#extending}
