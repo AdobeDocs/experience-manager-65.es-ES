@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
+source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
 workflow-type: tm+mt
-source-wordcount: '3643'
+source-wordcount: '3839'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ Solo puede tener un firmante o varios para un formulario adaptable. Al agregar u
 
    * **Título:** Especifique un título para identificar exclusivamente a un firmante.
 
-   * **¿Son iguales el firmante y la persona que rellena el formulario?:** Seleccione **Sí** si la persona que rellena el formulario y la que firma primero son la misma. Si la opción está establecida en **No,** no utilice el componente de paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente en Sí.
+   * **¿Son iguales el firmante y la persona que rellena el formulario?:** Seleccione **Sí** si la persona que rellena el formulario y la que firma primero son la misma. Si la opción está definida como **No,** no utilice el componente de paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente en Sí.
 
    * **Dirección de correo electrónico del firmante:** Especifique la dirección de correo electrónico del firmante. El firmante recibe documentos/formulario firmados en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en AEM perfil de usuario del usuario que ha iniciado sesión o introducir manualmente una dirección de correo electrónico. Es un paso obligatorio. Asegúrese de que la dirección de correo electrónico del primer firmante o del único firmante (en el caso de un solo firmante) no es idéntica a la cuenta de Adobe Sign utilizada para configurar los servicios de nube de AEM.
 
@@ -304,12 +304,16 @@ Ahora, la experiencia de firma de formularios en curso está lista. Puede previs
 
 ## Preguntas frecuentes {#frequently-asked-questions}
 
+**P:** Puede incrustar un formulario adaptable en otro formulario adaptable. ¿Se puede habilitar Adobe Sign en el formulario adaptable incrustado?
 **Ans:** No, AEM Forms no admite el uso de un formulario adaptable que incruste un formulario adaptable Adobe Sign habilitado para firmar
 
+**P:** Al crear un formulario adaptable con la plantilla avanzada y abrirlo para editarlo, aparece un mensaje de error &quot;Firma electrónica o Firmantes no están configurados correctamente&quot;. aparece. ¿Cómo resolver el mensaje de error?
 **Ans:** El formulario adaptable creado con la plantilla avanzada está configurado para utilizar Adobe Sign. Para resolver el error, cree y seleccione una configuración de nube de Adobe Sign y configure un firmante de Adobe Sign para el formulario adaptable.
 
+**P:** ¿Puedo utilizar etiquetas de texto de Adobe Sign en un componente de texto estático de un formulario adaptable?
 **Ans:** Sí, puede utilizar etiquetas de texto en un componente de texto para agregar campos de Adobe Sign a un [Documento de registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (solo documento de registro generado automáticamente) de un formulario adaptable habilitado. Para obtener más información sobre el procedimiento y las reglas para crear una etiqueta de texto, consulte la documentación de [Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html). Además, los formularios adaptables tienen una compatibilidad limitada con las etiquetas de texto. Puede utilizar las etiquetas de texto para crear solo los campos que admite [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) .
 
+**P:** AEM Forms proporciona componentes de paso Bloque Adobe Sign y Firma. ¿Pueden utilizarse simultáneamente en forma adaptable?
 **Ans:** Puede utilizar ambos componentes simultáneamente en un formulario. Estas son algunas recomendaciones para usar estos componentes:
 
 **Bloque de Adobe Sign:** Puede utilizar el Bloque de Adobe Sign para agregar campos de Adobe Sign en cualquier parte del formulario adaptable. También ayuda a asignar campos específicos a los firmantes. De forma predeterminada, cuando se realiza una vista previa de un formulario adaptable o se publica un bloque de Adobe Sign no está visible. Estos bloques solo se activan en el documento de firma. En el documento de firma, solo se activan los campos asignados a un firmante. El bloque Adobe Sign se puede utilizar con los firmantes primero y posteriores.
@@ -329,6 +333,14 @@ Ahora, la experiencia de firma de formularios en curso está lista. Puede previs
 * Si utiliza varios servicios de Adobe Sign Cloud, señale la URL **** oAuth de todos los servicios al mismo **[!UICONTROL Adobe Sign Share]**.
 
 * Utilice direcciones de correo electrónico independientes para configurar la cuenta de Adobe Sign y para el primer firmante y el primer firmante. La dirección de correo electrónico del primer firmante o del único firmante (en el caso del firmante único) no puede ser idéntica a la cuenta de Adobe Sign utilizada para configurar los servicios de nube de AEM.
+
+
+**Problema** Cuando Adobe Sign está configurado para un formulario adaptable, el flujo de trabajo configurado con la opción Invocar Forms Workflow no tiene inicios.
+
+**Resolución**
+
+* Cuando se utiliza Adobe Sign sin el paso Firma o el formulario requiere firmas de varias personas, el servidor de AEM Forms espera a que el Planificador confirme que todas las personas han firmado el formulario. El Planificador envía el formulario adaptable solo después de que toda la persona complete los inicios de firma y flujo de trabajo después de enviar correctamente el formulario adaptable. Puede reducir el intervalo del [Planificador](adobe-sign-integration-adaptive-forms.md) para comprobar el estado de la firma del formulario a intervalos rápidos y para acelerar el envío del formulario.
+
 
 ## Artículos relacionados {#related-articles}
 
