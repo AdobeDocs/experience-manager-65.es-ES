@@ -10,28 +10,31 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 2%
 
 ---
 
 
 # Configuración inicial {#initial-setup}
 
-## Instancias de creación y publicación de Inicio {#start-author-and-publish-instances}
+## Instancias de creación y publicación de inicio {#start-author-and-publish-instances}
 
 Para fines de desarrollo y demostración, será necesario ejecutar un autor y una instancia de publicación.
 
 Para ello, siga las instrucciones básicas de [introducción](../../help/sites-deploying/deploy.md#getting-started) de AEM, que resultarán en:
 
-* entorno de autor en [localhost:4502](http://localhost:4502/)
-* entorno de publicación en [localhost:4503](http://localhost:4503/)
+* Entorno de autor en [localhost:4502](http://localhost:4502/)
+* Entorno de publicación en [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
 
 * El entorno de autor está a favor de:
 
    * Desarrollo de sitios, plantillas y componentes.
-   * tareas administrativas y de configuración.
+   * Tareas administrativas y de configuración.
 
 * El entorno de publicación es para:
 
@@ -40,22 +43,22 @@ Para AEM Communities,
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, vista la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 
 ## Instalar la versión más reciente de las comunidades {#install-latest-communities-release}
 
-Este tutorial crea un sitio [de la comunidad de](overview.md#engagement-community) participación y se basa en el paquete de funciones 1.10 de AEM Communities 6.2.
+Este tutorial crea un sitio [de comunidad de](overview.md#engagement-community) participación y se basa en el paquete de funciones de AEM Communities 6.2 versión 1.10.
 
 Para asegurarse de que está instalado el paquete de funciones más reciente, visite:
 
 * [Últimas versiones](deploy-communities.md#latest-releases)
 
-Para ver un tutorial que crea un sitio [de comunidad de](overview.md#enablement-community)habilitación, visite [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md).
+Para ver un tutorial que crea un sitio [de comunidad de](overview.md#enablement-community)habilitación, visite [Introducción a AEM Communities para la habilitación](getting-started-enablement.md).
 
 ## Configurar Analytics {#configure-analytics}
 
-Cuando [Adobe Analytics está configurado para el sitio](analytics.md)de la comunidad, se dispone de información sobre la actividad de la comunidad que mejora la experiencia del miembro de la comunidad, así como de comentarios para los administradores del sitio.
+Cuando [Adobe Analytics está configurado para el sitio](analytics.md)de la comunidad, se encuentra disponible información sobre la actividad de la comunidad que mejora la experiencia del miembro de la comunidad y también proporciona comentarios a los administradores del sitio.
 
 La integración con Adobe Analytics es opcional.
 
@@ -114,7 +117,7 @@ Desplácese hacia abajo hasta `Add User to Groups`:
 
 * Seleccione **[!UICONTROL Guardar]**.
 
-![chlimage_1-301](assets/chlimage_1-301.png)
+![create-user](assets/create-user.png)
 
 ## Habilitar inicio de sesión social {#enable-social-login}
 
@@ -140,14 +143,14 @@ Utilice la consola [Etiquetado](../../help/sites-administering/tags.md#tagging-c
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-302](assets/chlimage_1-302.png)
+![tutorial-tags](assets/tutorial-tags.png)
 
 A continuación, siga las instrucciones para:
 
 1. [Establezca los permisos](../../help/sites-administering/tags.md#setting-tag-permissions)de etiqueta.
 1. [Publique las etiquetas](../../help/sites-administering/tags.md#publishing-tags).
 
-Paquete de muestra de etiquetas creadas para los tutoriales de introducción de AEM Communities
+Paquete de muestra de etiquetas creadas para los Tutorials de introducción de AEM Communities
 
 [Obtener archivo](assets/tutorial_tags-v63.zip)
 
@@ -157,4 +160,4 @@ Se recomienda, pero es opcional, establecer el [MSRP](msrp.md) (MongoDB) como al
 
 Para obtener instrucciones, visite [How to Setup MongoDB for Demo](demo-mongo.md).
 
-De forma predeterminada, la instalación de las instancias de AEM de creación y publicación hace que el contenido generado por el usuario (UGC) se almacene en [JCR Tar almacenamiento](../../help/sites-deploying/platform.md) , al que se accede mediante [JSRP](jsrp.md). JSRP no es un almacén común, lo que significa que UGC solo está visible en la instancia en la que se introdujo. Generalmente, UGC se introduce en una instancia de publicación y no estaría visible en el entorno del autor, lo que daría como resultado que todas las tareas de moderación necesitaran utilizar la instancia de publicación.
+De forma predeterminada, la instalación de las instancias de creación y publicación AEM hace que el contenido generado por el usuario (UGC) se almacene en [JCR Tar almacenamiento](../../help/sites-deploying/platform.md) , al que se accede mediante [JSRP](jsrp.md). JSRP no es un almacén común, lo que significa que UGC solo está visible en la instancia en la que se introdujo. Generalmente, UGC se introduce en una instancia de publicación y no estaría visible en el entorno del autor, lo que daría como resultado que todas las tareas de moderación necesitaran utilizar la instancia de publicación.
