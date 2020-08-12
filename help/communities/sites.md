@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +35,7 @@ En el entorno de creación, para llegar a la consola de sitios de comunidad:
 
 Esta consola muestra las plantillas desde las que se puede crear un sitio [de](sites-console.md) comunidad y permite crear nuevas plantillas de sitio.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![site-template](assets/site-template.png)
 
 ## Crear plantilla del sitio {#create-site-template}
 
@@ -42,7 +45,7 @@ Esto mostrará el panel Editor del sitio, que contiene 3 subpaneles:
 
 ### Basic info {#basic-info}
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![site-template-basicinfo](assets/site-template-basicinfo.png)
 
 En el panel Información básica, se configura un nombre, una descripción y si la plantilla está habilitada o deshabilitada:
 
@@ -58,15 +61,15 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
    Un conmutador que controla si se puede hacer referencia a la plantilla.
 
-### Miniatura  {#thumbnail}
+### Miniatura    {#thumbnail}
 
-![chlimage_1-20](assets/chlimage_1-20.png)
+![site-thumbnail](assets/site-thumbnail.png)
 
 (Opcional) Seleccione el icono Cargar imagen para mostrar una miniatura junto con el nombre y la descripción a los creadores de los sitios de la comunidad.
 
 ### Estructura {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![site-structure](assets/site-structure.png)
 
 Para agregar funciones de comunidad, arrástrelas de derecha a izquierda en el orden en que deberían aparecer los vínculos de menú del sitio. Los estilos se aplicarán a la plantilla durante la creación del sitio.
 
@@ -83,7 +86,7 @@ La función de página proporciona una página vacía. La función de grupos per
 >Cualquier otra función, como la función [de](functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
 
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![site-editor](assets/site-editor.png)
 
 ### Funciones de plantillas de grupo para grupos {#group-templates-for-groups-function}
 
@@ -94,11 +97,11 @@ Al incluir una función de grupos en la plantilla de sitio, la configuración re
 >La función Grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
 
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![site-features](assets/site-functions.png)
 
 Al seleccionar dos o más plantillas de grupo de comunidad, se proporciona una opción al administrador del grupo al crear un nuevo grupo en la comunidad.
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![site-function](assets/site-functions1.png)
 
 ## Editar plantilla del sitio{#edit-site-template}
 
