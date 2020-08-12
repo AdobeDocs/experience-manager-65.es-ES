@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 1%
 
 ---
 
@@ -40,6 +43,7 @@ El código de este tutorial dependerá de que el nombre de la carpeta principal 
 >* Los nombres que se ven en CRXDE son nombres de nodo que forman la ruta al contenido direccionable.
 >* Los nombres de nodo pueden contener espacios, pero cuando se utilizan en un URI, el espacio debe codificarse como &#39;%20&#39; o &#39;+&#39;.
 >* Los nombres de nodo pueden contener guiones y guiones bajos, pero deben codificarse cuando se hace referencia a ellos como un nombre de paquete dentro de un archivo Java. Tanto los guiones como los guiones bajos se escapan con un guión bajo seguido de su valor Unicode:
+
    >
    >   
    * el guión se convierte en &#39;_002d&#39;
@@ -54,7 +58,7 @@ El directorio /apps está protegido y no es accesible al público, al igual que 
 
 1. Create `/apps/an-scf-sandbox` folder.
 
-   Uso de **[!UICONTROL CRXDE Lite]**, en el panel del explorador
+   Uso del **[!UICONTROL CRXDE Lite]** en el panel del explorador
 
    1. Seleccione la `/apps` carpeta.
    1. Haga clic con el botón secundario en **[!UICONTROL Crear]**... o tire hacia abajo de **[!UICONTROL Crear...]** del menú.
@@ -77,11 +81,12 @@ El directorio /apps está protegido y no es accesible al público, al igual que 
    1. Haga clic en **[!UICONTROL Aceptar]**.
    1. Vuelva a seleccionar `/apps/an-scf-sandbox`.
    1. Seleccione **[!UICONTROL Guardar todo]**.
+
    Como con cualquier proceso de edición, guarde con frecuencia. Si tiene problemas con la introducción de datos, puede que se deba a que se agotó el tiempo de espera del inicio de sesión o a que necesite guardar las ediciones anteriores.
 
-1. La estructura del panel del explorador de CRXDE Lite ahora debería tener este aspecto:
+1. La estructura en el panel del explorador del CRXDE Lite ahora debería tener este aspecto:
 
-   ![chlimage_1-44](assets/chlimage_1-44.png)
+   ![crxde-template](assets/crxde-template.png)
 
 ## Configuración del directorio de diseño (/etc/designs) {#setup-the-design-directory-etc-designs}
 
@@ -89,29 +94,30 @@ El directorio /etc/designs contiene las imágenes, secuencias de comandos y hoja
 
 1. Para utilizar la herramienta Designer en la IU clásica, vaya a [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Nota: Si utiliza CRXDE Lite para crear un nodo de tipo `cq:Page`, el Control de acceso y la replicación no se configurarán en la configuración predeterminada de una página.
+   Nota: Si utiliza CRXDE Lite para crear un Nodo de tipo `cq:Page`, el Control de acceso y la replicación no se establecerían en la configuración predeterminada de una página.
 
 1. En el panel del explorador, seleccione la carpeta **[!UICONTROL Diseños]** y, a continuación, haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
 
    Intro:
 
-   * Título: **[!UICONTROL Un Simulador Para Pruebas SCF]**
+   * Título: **[!UICONTROL Un Simulador Simulado Para Pruebas SCF]**
    * Nombre: **[!UICONTROL an-scf-sandbox]**
    * Seleccionar plantilla de página **[!UICONTROL de diseño]**
+
    Haga clic en **[!UICONTROL Crear]**.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   ![design-template](assets/design-template.png)
 
 1. Actualice el panel del explorador si no aparece la carpeta &quot;Simulador para pruebas de SCF&quot;.
 
-1. Vuelva a CRXDE Lite (http:// localhost:4502/crx/de) y expanda /etc/designs para ver el nodo llamado &quot;an-scf-sandbox&quot;.
+1. Vuelva al CRXDE Lite (http:// localhost:4502/crx/de) y expanda /etc/designs para ver el nodo denominado &quot;an-scf-sandbox&quot;.
 
    En el panel inferior derecho de CRXDE, puede vista de la ficha Propiedades, Control de acceso y Replicación para ver qué se definió con la plantilla de página de diseño.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![crxde-configure-template](assets/crxde-configure-template.png)
 
 ## Configuración del directorio de contenido (/content) {#setup-the-content-directory-content}
 
 El directorio /content del repositorio es donde reside el contenido del sitio web. Las rutas de acceso de /content comprenden las rutas de la dirección URL para las solicitudes del explorador.
 
-*Después* de crear la plantilla [de](initial-app.md#createthepagetemplate) página como parte de la aplicación inicial, el contenido de la página inicial se puede crear en función de la plantilla....  [****](initial-app.md)
+*Después* de crear la plantilla [de](initial-app.md#createthepagetemplate) página como parte de la aplicación inicial, el contenido de la página inicial se puede crear en función de la plantilla.... [**FINLANDO **](initial-app.md)
