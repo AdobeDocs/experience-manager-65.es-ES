@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '306'
 ht-degree: 15%
 
 ---
@@ -36,16 +36,17 @@ Con Dynamic Media dispone de varias opciones:
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Añadir Dynamic Media Assets a páginas Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
+* [Añadir recursos de Dynamic Media en páginas Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Incrustación del visor de imágenes o vídeos en una página web](/help/assets/embed-code.md)
 * [Activar la protección de los vínculos interactivos de Dynamic Media](hotlink-protection.md)
 * [Vinculación de direcciones URL a la Aplicación web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Envío de imágenes optimizadas para un sitio interactivo](/help/assets/responsive-site.md)
-* [Envío de contenido HTTP2](/help/assets/http2.md)
-* Se está [invalidando el contenido en caché de CDN](/help/assets/invalidate-cdn-cached-content.md)
+* [ENVÍO de contenido HTTP2](/help/assets/http2.md)
+* [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Uso de conjuntos de reglas para transformar direcciones URL](/help/assets/using-rulesets-to-transform-urls.md)
 
-## envío HTTP/2 de los recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+
+## ENVÍO HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
