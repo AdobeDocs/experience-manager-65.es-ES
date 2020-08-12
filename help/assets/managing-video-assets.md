@@ -3,7 +3,7 @@ title: Administre recursos de vídeo en [!DNL Adobe Experience Manager].
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 7%
@@ -36,7 +36,7 @@ De forma predeterminada, [!DNL Assets] no permite cargar recursos que superen lo
 Además de [!DNL Assets] la configuración, cambie las configuraciones siguientes para cargar recursos de gran tamaño:
 
 * Aumente el tiempo de caducidad del token. Consulte [!UICONTROL Adobe Granite CSRF Servlet] en la consola web en `https://[aem_server]:[port]/system/console/configMgr`. Para obtener más información, consulte Protección [de](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumente la configuración `receiveTimeout` en Dispatcher. Para obtener más información, consulte Configuración [de Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
+* Aumente la `receiveTimeout` configuración de Dispatcher. Para obtener más información, consulte Configuración [de Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
 
 >[!NOTE]
 >
@@ -59,11 +59,11 @@ Para configurar un límite de tamaño de archivo mayor, realice los siguientes p
 1. En la página [!DNL Adobe Experience Manager] Web Console Bundles [!UICONTROL , en la columna Nombre de la tabla, busque y haga clic en] Adobe Granite Workflow External Process Job Handler ****.
 1. On the [!UICONTROL Adobe Granite Workflow External Process Job Handler] page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours). Haga clic en **[!UICONTROL Guardar]**.
 1. En [!DNL Experience Manager], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Dynamic Media Codificar vídeo]** y, a continuación, haga clic en **[!UICONTROL Editar]**.
-1. En la página de flujo de trabajo, haga clic con el botón doble en el componente Proceso **[!UICONTROL del servicio de vídeo de]** Dynamic Media.
+1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Dynamic Media Encode Video]** y, a continuación, haga clic en **[!UICONTROL Editar]**.
+1. En la página de flujo de trabajo, haga clic con el botón doble en el componente Proceso **[!UICONTROL del servicio de vídeo de medios]** dinámicos.
 1. En el cuadro de diálogo [!UICONTROL Propiedades del paso], en la pestaña **[!UICONTROL Común]**, expanda **Configuración avanzada**.
 1. In the **[!UICONTROL Timeout]** field, specify a value of `18000`, then click **[!UICONTROL OK]** to return to the **[!UICONTROL Dynamic Media Encode Video]** workflow page.
-1. Cerca de la parte superior de la página, debajo del título de la página [!UICONTROL Dynamic Media Encode Video] , haga clic en **[!UICONTROL Guardar]**.
+1. Cerca de la parte superior de la página, debajo del título de la página [!UICONTROL Codificación de vídeo] de Dynamic Media, haga clic en **[!UICONTROL Guardar]**.
 
 ## Publicación de recursos de vídeo {#publish-video-assets}
 
@@ -79,13 +79,13 @@ Después de la publicación, puede incluir los recursos de vídeo en una página
 
    Para salir del asistente para anotaciones, haga clic en **[!UICONTROL Cerrar]**.
 
-1. Busque un punto específico en el vídeo, establezca el tiempo en segundos en el campo de **texto** y haga clic en **Saltar**. Por ejemplo, para omitir los primeros 10 segundos de vídeo, introduzca 20 en el campo de texto.
+1. Busque un punto específico en el vídeo, establezca el tiempo en segundos en el campo de **texto** y haga clic en **Saltar**. Por ejemplo, para omitir los primeros 20 segundos de vídeo, introduzca 20 en el campo de texto.
 
    ![Busque una hora en un vídeo para omitir en segundos especificados](assets/seek-in-video.png)
 
 1. Para vista en la línea de tiempo, haga clic en una anotación. Para eliminar la anotación de la línea de tiempo, haga clic en **[!UICONTROL Eliminar]**.
 
-   ![Anotaciones de Vista y detalles en la línea de tiempo](assets/timeline-view-annotation.png)
+   ![Anotaciones de vista y detalles en la línea de tiempo](assets/timeline-view-annotation.png)
 
 >[!MORELIKETHIS]
 >
