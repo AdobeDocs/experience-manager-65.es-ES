@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 4%
 
 ---
 
@@ -32,23 +35,23 @@ Para agregar un `Reviews` componente a una página en modo de autor, utilice el 
 
 Para obtener la información necesaria, visite [Communities Components Basics](basics.md)(Conceptos básicos de componentes de comunidades).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](reviews-basics.md#essentials-for-client-side) necesarias, así es como aparecerá el `Reviews`componente.
+Cuando se incluyen las bibliotecas [](reviews-basics.md#essentials-for-client-side) requeridas del lado del cliente, así es como aparecerá el `Reviews` componente.
 
-![chlimage_1-340](assets/chlimage_1-340.png)
+![create-review](assets/create-review.png)
 
 ## Configuración de las revisiones {#configuring-reviews}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Reviews` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![configure-new](assets/configure-new.png)
 
 En la ficha Clasificaciones **** permitidas, especifique la lista completa de las clasificaciones que se mostrarán a los miembros. La primera calificación debe ser general o general, ya que es la calificación la que proporciona la calificación media del `Review Summary (Display)` componente. Las dos clasificaciones siguientes de la configuración predeterminada deben tener un título diferente, que no sea &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
 
-![chlimage_1-342](assets/chlimage_1-342.png)
+![clasificación permitida](assets/configure-review1.png)
 
 * **[!UICONTROL Clasificaciones permitidas]**
 
-   lista de clasificaciones de la que un miembro puede elegir.
+   Lista de clasificaciones de la que un miembro puede elegir.
 
    Utilice la flecha arriba, la flecha abajo y los botones de eliminación para modificar las selecciones visibles.
 
@@ -58,7 +61,7 @@ En la ficha Clasificaciones **** requeridas, vuelva a introducir los elementos d
 
 En el sitio web, las clasificaciones requeridas se marcan con un asterisco. Si se requiere un elemento y se deja sin marcar, se mostrará un mensaje al miembro y se denegará el envío hasta que se marquen todas las clasificaciones necesarias.
 
-![chlimage_1-343](assets/chlimage_1-343.png)
+![required-rating](assets/configure-review2.png)
 
 * **[!UICONTROL Clasificaciones obligatorias]**
 
@@ -75,7 +78,7 @@ En el sitio web, las clasificaciones requeridas se marcan con un asterisco. Si s
 
 En la ficha **[!UICONTROL Revisiones]** , especifique cómo se administran las revisiones.
 
-![chlimage_1-344](assets/chlimage_1-344.png)
+![críticas](assets/configure-review3.png)
 
 * **[!UICONTROL Permitir respuestas]**
 
@@ -99,7 +102,7 @@ En la ficha **[!UICONTROL Revisiones]** , especifique cómo se administran las r
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-   Solo es relevante si está activada la opción **[!UICONTROL Permitir cargas]** de archivos. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es relevante si está activada la opción **[!UICONTROL Permitir cargas]** de archivos. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **[!UICONTROL Editor de texto enriquecido]**
 
@@ -111,7 +114,7 @@ En la ficha **[!UICONTROL Revisiones]** , especifique cómo se administran las r
 
 En la ficha Moderación **[!UICONTROL del]** usuario, especifique cómo se administran las revisiones publicadas. Para obtener más información, consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
 
-![chlimage_1-345](assets/chlimage_1-345.png)
+![user-moderation](assets/configure-review4.png)
 
 * **[!UICONTROL Moderación previa]**
 
@@ -161,7 +164,7 @@ Para obtener la información necesaria, visite [Communities Components Basics](b
 
 Cuando se incluyen las bibliotecas [del lado del cliente](reviews-basics.md#essentials-for-client-side) necesarias, así es como aparecerá el `Reviews Summary (Display)`componente.
 
-![chlimage_1-346](assets/chlimage_1-346.png)
+![resumen de revisión](assets/configure-review5.png)
 
 >[!NOTE]
 >
@@ -172,15 +175,15 @@ Cuando se incluyen las bibliotecas [del lado del cliente](reviews-basics.md#esse
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Reviews Summary (Display)` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![configurar](assets/configure-new.png)
 
 En la ficha **[!UICONTROL Revisar resumen]**
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![resumen de revisión](assets/configure-review6.png)
 
 * `Review Path`
 
-   introduzca o busque la instancia colocada del `reviews`componente para resumir, por ejemplo, si se agrega a la página Web del sitio de participación de [Geometrixx,](getting-started.md) la ruta sería:
+   introduzca o busque la instancia colocada del `reviews`componente para resumir, por ejemplo, si se agrega a la página Web del sitio de participación en [Geometrixx,](getting-started.md) la ruta sería:
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -196,9 +199,9 @@ Al cambiar el tipo de recurso de comentarios, el sistema de comentarios ya no ge
 
 Una vez conocidos los tipos de recursos personalizados, ingrese en Modo [de](../../help/sites-authoring/default-components-designmode.md) diseño y haga clic en el doble del `Comments` componente colocado para abrir un cuadro de diálogo con una ficha adicional.
 
-En la ficha Tipos **[!UICONTROL de]** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting`componentes:
+En la ficha Tipos **[!UICONTROL de]** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting` componentes:
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![comentarios-votación](assets/configure-review7.png)
 
 * **[!UICONTROL Tipo de medio de comentario]**
 
@@ -224,12 +227,12 @@ Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o admin
 
 ### Miembros {#members}
 
-Cuando se inicia sesión en el visitante del sitio, según la configuración, es posible que
+Cuando se inicia sesión en el visitante del sitio, según la configuración, es posible que:
 
-* Publicar una nueva revisión.
-* Edite su propia revisión.
-* Eliminar su propia revisión.
-* Marcar los comentarios de revisión de otros.
+* Publicar una nueva revisión
+* Editar su propia revisión
+* Eliminar su propia revisión
+* Marcar los comentarios de revisión de otros
 
 Solo se permite una clasificación por miembro. El miembro puede cambiar su calificación en cualquier momento.
 
