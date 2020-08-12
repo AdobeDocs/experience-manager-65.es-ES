@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +73,7 @@ Identifique la plantilla personalizada agregando una `page-template` propiedad a
 
 `/content/sites/sample/en/configuration`
 
-![chlimage_1-80](assets/chlimage_1-80.png)
+![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
 Asegúrese de **guardar todo** y replicar código personalizado en todas las instancias de AEM (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
 
@@ -78,13 +81,13 @@ La práctica recomendada para replicar código personalizado es [crear un paquet
 
 ## Exportación de un sitio de comunidad {#exporting-a-community-site}
 
-Una vez creado un sitio de comunidad, es posible exportar el sitio como un paquete de AEM almacenado en el administrador de paquetes y disponible para su descarga y carga.
+Una vez creado un sitio de comunidad, es posible exportar el sitio como paquete de AEM almacenado en el administrador de paquetes y disponible para su descarga y carga.
 
 Esta opción está disponible en la consola Sitios de [comunidades](sites-console.md#exporting-the-site).
 
 Tenga en cuenta que UGC y el código personalizado no se incluyen en el paquete del sitio de la comunidad.
 
-Para exportar UGC, utilice la herramienta [de migración UGC de comunidades](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM, una herramienta de migración de código abierto disponible en GitHub.
+Para exportar UGC, utilice la herramienta [de migración UGC de](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, una herramienta de migración de código abierto disponible en GitHub.
 
 ## Eliminación de un sitio de comunidad {#deleting-a-community-site}
 
@@ -92,7 +95,7 @@ A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece 
 
 * [UGC](#user-generated-content)
 * [Grupos de usuarios](#community-user-groups)
-* [Recursos](#enablement-assets)
+* [Assets](#enablement-assets)
 * [Registros de base de datos](#database-records)
 
 ### ID del sitio único de la comunidad {#community-unique-site-id}
