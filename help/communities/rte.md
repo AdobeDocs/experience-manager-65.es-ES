@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ Un editor de texto enriquecido (RTE) permite introducir texto con marcado.
 
 En el caso de los componentes Communities, aunque es similar al editor de texto [enriquecido del entorno](../../help/sites-authoring/rich-text-editor.md)de creación, afecta al texto introducido en el entorno de publicación.
 
-![chlimage_1-410](assets/chlimage_1-410.png)
+![rich-text-editor](assets/rich-text-editor.png)
 
 ## Enabling Rich Text Editor {#enabling-rich-text-editor}
 
@@ -58,7 +61,7 @@ Debido a problemas de seguridad, las opciones de hipervínculo no se incluyen en
 
 Para agregar las opciones de hipervínculo a la barra de herramientas:
 
-* Agregar una barra de herramientas con el nombre &quot; `links`&quot;
+* Añadir una barra de herramientas con el nombre &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Seleccione **[!UICONTROL Guardar todo]**
 
