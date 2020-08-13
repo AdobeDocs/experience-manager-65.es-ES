@@ -1,8 +1,8 @@
 ---
 title: Refactorización de SocialUtils
 seo-title: Refactorización de SocialUtils
-description: El paquete com.adobe.cq.social.ugcbase.SocialUtils se dejó de utilizar en AEM 6.1
-seo-description: El paquete com.adobe.cq.social.ugcbase.SocialUtils se dejó de utilizar en AEM 6.1
+description: El paquete com.adobe.cq.social.ugcbase.SocialUtils quedó obsoleto en AEM 6.1
+seo-description: El paquete com.adobe.cq.social.ugcbase.SocialUtils quedó obsoleto en AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 1429a099288f038510cb0a194fb55632297ef371
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 El paquete `com.adobe.cq.social.ugcbase.SocialUtils` quedó obsoleto en AEM 6.1.
 
-Las siguientes tablas lista los métodos que se deben utilizar en lugar de los métodos de SocialUtils.
+En las tablas siguientes se lista los métodos que se deben utilizar en lugar de `SocialUtils` los métodos.
 
-## Paquete SocialResourceUtilities {#socialresourceutilities-package}
+## Paquete SocialResourceUtilities  {#socialresourceutilities-package}
 
 | Métodos de com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
