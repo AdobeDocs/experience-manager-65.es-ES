@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
+source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ Solo puede tener un firmante o varios para un formulario adaptable. Al agregar u
 
    * **Título:** Especifique un título para identificar exclusivamente a un firmante.
 
-   * **¿Son iguales el firmante y la persona que rellena el formulario?:** Seleccione **Sí** si la persona que rellena el formulario y la que firma primero son la misma. Si la opción está definida como **No,** no utilice el componente de paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente en Sí.
+   * **¿Son iguales el firmante y la persona que rellena el formulario?:** Seleccione **Sí** si la persona que rellena el formulario y la que firma primero son la misma. Si la opción está establecida en **No,** no utilice el componente de paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente en Sí.
 
    * **Dirección de correo electrónico del firmante:** Especifique la dirección de correo electrónico del firmante. El firmante recibe documentos/formulario firmados en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en AEM perfil de usuario del usuario que ha iniciado sesión o introducir manualmente una dirección de correo electrónico. Es un paso obligatorio. Asegúrese de que la dirección de correo electrónico del primer firmante o del único firmante (en el caso de un solo firmante) no es idéntica a la cuenta de Adobe Sign utilizada para configurar los servicios de nube de AEM.
 
@@ -334,6 +334,7 @@ Ahora, la experiencia de firma de formularios en curso está lista. Puede previs
 
 * Utilice direcciones de correo electrónico independientes para configurar la cuenta de Adobe Sign y para el primer firmante y el primer firmante. La dirección de correo electrónico del primer firmante o del único firmante (en el caso del firmante único) no puede ser idéntica a la cuenta de Adobe Sign utilizada para configurar los servicios de nube de AEM.
 
+### El flujo de trabajo de AEM Forms configurado para un formulario adaptable habilitado para Adobe Sign no es inicio {#adobe-sign-aem-form-workflow-failures}
 
 **Problema** Cuando Adobe Sign está configurado para un formulario adaptable, el flujo de trabajo configurado con la opción Invocar Forms Workflow no tiene inicios.
 
