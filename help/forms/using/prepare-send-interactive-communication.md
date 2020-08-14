@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 4c4a5a15e9cbb5cc22bc5999fb40f1d6db3bb091
+source-git-commit: 5bbafd9006b04d761ffab218e8480c1e94903bb6
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Mientras prepara la comunicación interactiva mediante la interfaz de usuario de
 
 ## Preparación de la comunicación interactiva mediante la interfaz de usuario del agente {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Seleccione **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
+1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Forms y Documentos]**.
 1. Seleccione la comunicación interactiva adecuada y toque **[!UICONTROL Abrir interfaz de usuario]** del agente.
 
    >[!NOTE]
@@ -77,6 +77,7 @@ En la ficha Contenido, administre el contenido como fragmentos de documento y va
       * [Resaltar partes del texto](#highlightemphasize)
    * [Caracteres especiales](#specialcharacters)
    * [Métodos abreviados de teclado](/help/forms/using/keyboard-shortcuts.md)
+
    Para obtener más información sobre las acciones disponibles para varios fragmentos de documento en la interfaz de usuario del agente, consulte [Acciones e información disponible en la interfaz](#actionsagentui)de usuario del agente.
 
 1. Para agregar un salto de página al resultado de impresión de la Comunicación interactiva, coloque el cursor donde desee insertar un salto de página y seleccione Salto de página antes o Salto de página después de ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
@@ -118,9 +119,9 @@ Fuente, barra de herramientas
 
 Barra de herramientas Párrafo
 
-![Barra de herramientas Lista](do-not-localize/listtoolbar.png)
+![Barra de herramientas lista](do-not-localize/listtoolbar.png)
 
-Barra de herramientas Lista
+Barra de herramientas lista
 
 ### Resaltar/enfatizar partes del texto {#highlightemphasize}
 
@@ -136,11 +137,11 @@ Para resaltar o resaltar partes del texto en un fragmento editable, seleccione e
 
 La interfaz de usuario del agente ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [añadir compatibilidad con más caracteres especiales personalizados personalizándolos](/help/forms/using/custom-special-characters.md).
 
-#### envío de datos adjuntos {#attachmentdelivery}
+#### Envío de datos adjuntos {#attachmentdelivery}
 
 * Cuando la comunicación interactiva se procesa con las API del lado del servidor como un PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos PDF adjuntos.
 * Cuando se carga un proceso de publicación asociado a una comunicación interactiva como parte del parámetro Enviar mediante la interfaz de usuario del agente, los archivos adjuntos se pasan como parámetro Lista&lt;com.adobe.idp.Documento> inAttachmentDocs.
-* Los flujos de trabajo del mecanismo de Envío, como correo electrónico e impresión, también proporcionan archivos adjuntos junto con la versión en PDF de la Comunicación interactiva.
+* Los flujos de trabajo del mecanismo de envío, como correo electrónico e impresión, también proporcionan archivos adjuntos junto con la versión en PDF de la Comunicación interactiva.
 
 ## Acciones e información disponibles en la interfaz de usuario del agente {#actionsagentui}
 
@@ -161,7 +162,7 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 carac
 * Selección (icono de ojo): Incluye\excluye el fragmento de documento de la comunicación interactiva.
 * Valores no rellenados (información): Indica el número de variables sin rellenar en el fragmento de documento.
 
-### Fragmentos de documento de Lista {#list-document-fragments}
+### Fragmentos de documento de lista {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -180,7 +181,12 @@ Adobe recomienda ejecutar estas instrucciones de forma secuencial para guardar c
 
 La función Guardar como borrador no está activada de forma predeterminada. Realice los siguientes pasos para habilitar la función:
 
-1. Implementar la interfaz de Proveedor de servicio [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) (SPI). El SPI permite guardar la versión de borrador de la Comunicación interactiva en la base de datos con un ID de borrador como identificador único.
+1. Implementar la interfaz de Proveedor de servicio [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) (SPI).
+
+   El SPI permite guardar la versión de borrador de la Comunicación interactiva en la base de datos con un ID de borrador como identificador único. Estas instrucciones suponen que tiene conocimientos previos sobre cómo crear un paquete OSGi mediante un proyecto Maven.
+
+   Para obtener ejemplos de implementación SPI, consulte Implementación [de SPI de ccrDocumentInstance de muestra](#sample-ccrDocumentInstance-spi).
+1. Abra `http://<hostname>:<port>/ system/console/bundles` y toque **[!UICONTROL Instalar/Actualizar]** para cargar el paquete OSGi. Compruebe que el estado del paquete cargado se muestra como **activo**. Reinicie el servidor si el estado del paquete no se muestra como **Activo**.
 1. Ir a `https://'[server]:[port]'/system/console/configMgr`.
 1. Toque **[!UICONTROL Crear configuración]** de correspondencia.
 1. Seleccione **[!UICONTROL Activar Guardar con CCRDocumentInstanceService]** y toque **[!UICONTROL Guardar]**.
@@ -208,3 +214,233 @@ Después de guardar una comunicación interactiva como borrador, puede recuperar
 >[!NOTE]
 >
 >Si realiza cambios en la Comunicación interactiva después de guardarla como borrador, la versión de borrador no se abre.
+
+### Ejemplo de implementación de ccrDocumentInstance SPI {#sample-ccrDocumentInstance-spi}
+
+Implementar el `ccrDocumentInstance` SPI para guardar una comunicación interactiva como borrador. A continuación se muestra una implementación de muestra del `ccrDocumentInstance` SPI.
+
+```javascript
+package Implementation;
+
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.exception.CCRDocumentException;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.model.CCRDocumentInstance;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.services.CCRDocumentInstanceService;
+import org.apache.commons.lang3.StringUtils;
+import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.*;
+
+
+@Component(service = CCRDocumentInstanceService.class, immediate = true)
+public class CCRDraftService implements CCRDocumentInstanceService {
+
+ private static final Logger logger = LoggerFactory.getLogger(CCRDraftService.class);
+
+ private HashMap<String, Object> draftDataMap = new HashMap<>();
+
+ @Override
+ public String save(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", ccrDocumentInstance.getName());
+         if (!CCRDocumentInstance.Status.SUBMIT.equals(ccrDocumentInstance.getStatus())) {
+             ccrDocumentInstance = mySQLDataBaseServiceCRUD(ccrDocumentInstance,null, "SAVE");
+         }
+     } else {
+         logger.error("Could not save data as draft name is empty");
+     }
+     return ccrDocumentInstance.getId();
+ }
+
+ @Override
+ public void update(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", documentInstanceName);
+         mySQLDataBaseServiceCRUD(ccrDocumentInstance, ccrDocumentInstance.getId(), "UPDATE");
+     } else {
+         logger.error("Could not save data as draft Name is empty");
+     }
+ }
+
+ @Override
+ public CCRDocumentInstance get(String id) throws CCRDocumentException {
+     CCRDocumentInstance cCRDocumentInstance;
+     if (StringUtils.isEmpty(id)) {
+         logger.error("Could not retrieve data as draftId is empty");
+         cCRDocumentInstance = null;
+     } else {
+         cCRDocumentInstance = mySQLDataBaseServiceCRUD(null, id,"GET");
+     }
+     return cCRDocumentInstance;
+ }
+
+ @Override
+ public List<CCRDocumentInstance> getAll(String userId, Date creationTime, Date updateTime,
+                                         Map<String, Object> optionsParams) throws CCRDocumentException {
+     List<CCRDocumentInstance> ccrDocumentInstancesList = new ArrayList<>();
+
+     HashMap<String, Object> allSavedDraft = mySQLGetALLData();
+     for (String key : allSavedDraft.keySet()) {
+         ccrDocumentInstancesList.add((CCRDocumentInstance) allSavedDraft.get(key));
+     }
+     return ccrDocumentInstancesList;
+ }
+
+ //The APIs call the service in the database using the following section.
+ private CCRDocumentInstance mySQLDataBaseServiceCRUD(CCRDocumentInstance ccrDocumentInstance,String draftId, String method){
+     if(method.equals("SAVE")){
+
+         String autoGenerateId = draftDataMap.size() + 1 +"";
+         ccrDocumentInstance.setId(autoGenerateId);
+         draftDataMap.put(autoGenerateId, ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if (method.equals("UPDATE")){
+
+         draftDataMap.put(ccrDocumentInstance.getId(), ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if(method.equals("GET")){
+
+         return (CCRDocumentInstance) draftDataMap.get(draftId);
+
+     }
+     return null;
+ }
+
+ private HashMap<String, Object> mySQLGetALLData(){
+     return draftDataMap;
+ }
+}
+```
+
+Las operaciones `save`, `update`, `get`y `getAll` llaman al servicio de base de datos para guardar una comunicación interactiva como borrador, actualizar una comunicación interactiva, recuperar datos de la base de datos y recuperar datos de todas las comunicaciones interactivas disponibles en la base de datos. Este ejemplo utiliza `mySQLDataBaseServiceCRUD` como nombre del servicio de base de datos.
+
+La siguiente tabla explica la implementación de SPI de muestra `ccrDocumentInstance` . Muestra cómo las operaciones `save`, `update`, `get`y `getAll` llaman al servicio de base de datos en la implementación de muestra.
+
+<table> 
+ <tbody>
+ <tr>
+  <td><p><strong>Operación</strong></p></td>
+  <td><p><strong>Ejemplos de servicios de base de datos</strong></p></td> 
+   </tr>
+  <tr>
+   <td><p>Puede crear un borrador para una comunicación interactiva o enviarlo directamente. La API para la operación de guardado comprueba si la comunicación interactiva se envía como borrador e incluye un nombre de borrador. A continuación, la API llama al servicio mySQLDataBaseServiceCRUD con Guardar como método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Guardar como método de entrada y genera un ID de borrador generado automáticamente y lo devuelve a AEM. La lógica para generar un ID de borrador puede variar según la base de datos.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   </tr>
+  <tr>
+   <td><p>La API para la operación de actualización recupera el estado del borrador de la comunicación interactiva y comprueba si la comunicación interactiva incluye un nombre de borrador. La API llama al servicio mySQLDataBaseServiceCRUD para actualizar ese estado en la base de datos.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica la actualización como método de entrada y guarda el estado del borrador de comunicación interactiva en la base de datos.</br></p><img src="assets/update-operation-service.png"/></td>
+   </tr>
+   <tr>
+   <td><p>La API para la operación get comprueba si la comunicación interactiva incluye un ID de borrador. A continuación, la API llama al servicio mySQLDataBaseServiceCRUD con Get como método de entrada para recuperar los datos de la comunicación interactiva.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Get como método de entrada y recupera los datos para la comunicación interactiva en función del ID de borrador.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   </tr>
+   <tr>
+   <td><p>La API de la operación getAll llama al servicio mySQLGetALLData para recuperar datos de todas las comunicaciones interactivas guardadas en la base de datos.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>El servicio mySQLGetALLData recupera datos de todas las comunicaciones interactivas guardadas en la base de datos.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   </tr>
+  </tbody>
+</table>
+
+A continuación se muestra un ejemplo del `pom.xml` archivo que forma parte de la implementación:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.adobe.livecycle</groupId>
+    <artifactId>draft-sample</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+
+    <name>Interact</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.aemfd</groupId>
+            <artifactId>aemfd-client-sdk</artifactId>
+            <version>6.0.122</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D D E F I N I T I O N -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.3.0</version>
+                <extensions>true</extensions>
+                <executions>
+                    <!--Configure extra execution of 'manifest' in process-classes phase to make sure SCR metadata is generated before unit test runs-->
+                    <execution>
+                        <id>scr-metadata</id>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <exportScr>true</exportScr>
+                    <instructions>
+                        <!-- Enable processing of OSGI DS component annotations -->
+                        <_dsannotations>*</_dsannotations>
+                        <!-- Enable processing of OSGI metatype annotations -->
+                        <_metatypeannotations>*</_metatypeannotations>
+                        <Bundle-SymbolicName>${project.groupId}-${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>autoInstall</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+```
+
+>[!NOTE]
+>
+>Asegúrese de actualizar la dependencia `aemfd-client-sdk` a 6.0.122 en el `pom.xml` archivo.
