@@ -8,9 +8,9 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
-Este tutorial es un paso de la serie [Crear su primer formulario](/help/forms/using/create-your-first-adaptive-form.md) adaptable. Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
+Este tutorial es un paso de la serie [Crear su primer formulario](/help/forms/using/create-your-first-adaptive-form.md) adaptable. Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 ## Acerca del tutorial {#about-the-tutorial}
 
 Puede utilizar reglas para agregar interactividad, lógica empresarial y validaciones inteligentes a un formulario adaptable. Los formularios adaptables tienen un editor de reglas integrado. El editor de reglas proporciona una funcionalidad de arrastrar y soltar, similar a las visitas guiadas. El método de arrastrar y soltar es el más rápido y sencillo para crear reglas. El editor de reglas también proporciona una ventana de código para los usuarios interesados en probar sus habilidades de codificación o llevar las reglas al siguiente nivel.
 
-Puede obtener más información sobre el editor de reglas en el editor [de reglas de formularios](/help/forms/using/rule-editor.md)adaptables.
+Puede obtener más información sobre el editor de reglas en el editor [de reglas de Forms](/help/forms/using/rule-editor.md)adaptable.
 
 Al final del tutorial, aprenderá a crear reglas para:
 
@@ -38,7 +38,7 @@ Las imágenes GIF interactivas al final de cada sección del tutorial le ayudan 
 
 ## Paso 1: Recuperar un registro de cliente de la base de datos {#retrieve-customer-record}
 
-Ha creado un modelo de datos de formulario siguiendo el artículo [crear modelo](/help/forms/using/create-form-data-model.md) de datos de formulario. Ahora puede utilizar el editor de reglas para invocar los servicios del Modelo de datos de formularios para recuperar y agregar información a la base de datos.
+Ha creado un modelo de datos de formulario siguiendo el artículo [crear modelo](/help/forms/using/create-form-data-model.md) de datos de formulario. Ahora puede utilizar el editor de reglas para invocar los servicios del Modelo de datos de Forms para recuperar y agregar información a la base de datos.
 
 A cada cliente se le asigna un número de ID de cliente único, que ayuda a identificar los datos relevantes del cliente en una base de datos. El procedimiento siguiente utiliza el ID de cliente para recuperar información de la base de datos:
 
@@ -89,15 +89,15 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
 
    ![update-Shipping-address](assets/update-shipping-address.png)
 
-1. ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
+   ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Arrastre y suelte los campos Dirección de **[!UICONTROL envío, Estado y Código]** postal desde la ficha Objetos de formulario hasta la correspondiente propiedad .property (por ejemplo, customerdetails.ShippingAddress) del objeto **[!UICONTROL Drop o seleccione este]** campo en el cuadro **[!UICONTROL ENTRADA]** . Todos los campos con el prefijo tablename (por ejemplo, detalles del cliente en este caso de uso) sirven como datos de entrada para el servicio de actualización. Todo el contenido proporcionado en estos campos se actualiza en el origen de datos.
+1. Arrastre y suelte los campos Dirección de **[!UICONTROL envío, Estado y Código]** postal desde la ficha Objetos [!UICONTROL de] formulario a la propiedad de nombre de tabla correspondiente (por ejemplo, customerdetails.ShippingAddress) del objeto **[!UICONTROL Drop o seleccione aquí]** en el cuadro **[!UICONTROL ENTRADA]** . Todos los campos con el prefijo tablename (por ejemplo, detalles del cliente en este caso de uso) sirven como datos de entrada para el servicio de actualización. Todo el contenido proporcionado en estos campos se actualiza en el origen de datos.
 
    >[!NOTE]
    >
    >No arrastre y suelte los campos **[!UICONTROL Nombre]** e ID **[!UICONTROL del]** cliente en la propiedad correspondiente tablename.property (por ejemplo, customerdetails.name). Ayuda a evitar actualizar el nombre y la ID del cliente por error.
 
-1. Arrastre y suelte el campo ID **[!UICONTROL del]** cliente desde la ficha Objetos del formulario hasta el campo id del cuadro **[!UICONTROL ENTRADA]** . Los campos sin un nombre de tabla preestablecido (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL id]** en este caso de uso identifica de forma exclusiva un registro en la tabla de detalles del cliente.
+1. Arrastre y suelte el campo ID **[!UICONTROL del]** cliente desde la ficha Objetos [!UICONTROL de] formulario al campo ID del cuadro **[!UICONTROL ENTRADA]** . Los campos sin un nombre de tabla preestablecido (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL id]** en este caso de uso identifica de forma exclusiva un registro en la tabla de detalles del **cliente** .
 1. Toque **[!UICONTROL Hecho]** para guardar la regla. En la ventana del editor de reglas, toque **[!UICONTROL Cerrar]**.
 1. Previsualización del formulario adaptable. Recupere los detalles de un cliente, actualice la dirección de envío y envíe el formulario. Al recuperar los detalles del mismo cliente de nuevo, se muestra la dirección de envío actualizada.
 
@@ -107,9 +107,9 @@ Debe ejecutar la validación en el formulario para asegurarse de que los datos i
 
 Los formularios adaptables proporcionan varios componentes con validaciones integradas, por ejemplo, campos numéricos y de correo electrónico que se pueden utilizar para casos de uso comunes. Utilice el editor de reglas para casos de uso avanzados, por ejemplo, para mostrar un mensaje de error cuando la base de datos devuelve cero (0) registros (sin registros).
 
-El siguiente procedimiento muestra cómo crear una regla para mostrar un mensaje de error si el ID de cliente introducido en el formulario no existe en la base de datos. La regla también centra la atención en el campo ID de cliente y lo restablece. La regla utiliza [la API dataIntegrationUtils del servicio](/help/forms/using/invoke-form-data-model-services.md) del modelo de datos de formulario para comprobar si el ID de cliente existe en la base de datos.
+El siguiente procedimiento muestra cómo crear una regla para mostrar un mensaje de error si el ID de cliente introducido en el formulario no existe en la base de datos. La regla también centra la atención en el campo ID **[!UICONTROL del]** cliente y lo restablece. La regla utiliza [la API dataIntegrationUtils del servicio](/help/forms/using/invoke-form-data-model-services.md) del modelo de datos de formulario para comprobar si el ID de cliente existe en la base de datos.
 
-1. Puntee en el campo ID **[!UICONTROL del]** cliente y toque el `Edit Rules` icono. Se abre la ventana Editor de reglas.
+1. Puntee en el campo ID **[!UICONTROL del]** cliente y toque el `Edit Rules` icono. Se abre la ventana [!UICONTROL Editor] de reglas.
 1. Toque el icono **[!UICONTROL + Crear]** para agregar una regla. Abre el Editor visual.
 
    En el Editor visual, la instrucción **[!UICONTROL WHEN]** está seleccionada de forma predeterminada. Además, el objeto de formulario (en este caso, ID **[!UICONTROL de]** cliente) desde el que se inició el editor de reglas se especifica en la instrucción **[!UICONTROL WHEN]** .
@@ -132,7 +132,7 @@ El siguiente procedimiento muestra cómo crear una regla para mostrar un mensaje
    };
    ```
 
-1. Reemplace la sección guía lib.dataIntegrationUtils.executeOperation (operationInfo, entradas, salidas) con el siguiente código:
+1. Reemplace la `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` sección con el siguiente código:
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
