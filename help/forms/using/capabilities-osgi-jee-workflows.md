@@ -1,21 +1,21 @@
 ---
-title: Acciones y funciones de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo de OSGi y JEE de AEM Forms
-description: Acciones y funciones de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo de OSGi y JEE de AEM Forms
+title: Acciones y capacidades de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo OSGi y AEM Forms JEE
+description: Acciones y capacidades de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo OSGi y AEM Forms JEE
 contentOwner: khsingh
 translation-type: tm+mt
-source-git-commit: d5d30e16d2561c020a82cdda847a9dd9b48acd3b
+source-git-commit: dfa5a0dbfdd2c63ea0ec66d805e8b452baa3d0ac
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 21%
+source-wordcount: '928'
+ht-degree: 22%
 
 ---
 
 
-# Acciones y funciones de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo de OSGi y JEE de AEM Forms {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+# Acciones y capacidades de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo OSGi y AEM Forms JEE {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-## Bandeja de entrada de AEM y espacio de trabajo HTML {#aem-inbox-and-html-workspace}
+## AEM Bandeja de entrada y espacio de trabajo HTML {#aem-inbox-and-html-workspace}
 
-Puede utilizar la Bandeja de entrada de AEM para ejecutar y supervisar Flujos de trabajo de AEM centrados en formularios en OSGi. Mientras que HTML Workspace le permite ejecutar y supervisar Flujos de trabajo JEE de AEM Forms. La siguiente tabla le ayuda a comprender las distintas acciones importantes disponibles en la Bandeja de entrada de AEM para Flujos de trabajo de AEM centrados en formularios en OSGi y en el espacio de trabajo HTML para Flujos de trabajo JEE de AEM Forms.
+Puede utilizar AEM Bandeja de entrada para ejecutar y supervisar Flujos de trabajo de AEM centrados en Forms en OSGi. Mientras que HTML Workspace le permite ejecutar y supervisar Flujos de trabajo AEM Forms JEE. La siguiente tabla le ayuda a comprender varias acciones importantes disponibles en AEM Bandeja de entrada para Flujos de trabajo de AEM centrados en Forms en OSGi y en el espacio de trabajo HTML para Flujos de trabajo JEE de AEM Forms.
 
 <table>
  <tbody>
@@ -65,12 +65,12 @@ Puede utilizar la Bandeja de entrada de AEM para ejecutar y supervisar Flujos de
    <td>No compatible</td>
   </tr>
   <tr>
-   <td>vista del calendario</td>
+   <td>Vista del calendario</td>
    <td>Compatible</td>
    <td>No compatible</td>
   </tr>
   <tr>
-   <td>Comentarios de nivel de Tarea</td>
+   <td>Comentarios de nivel de tarea</td>
    <td>Compatible</td>
    <td>No compatible</td>
   </tr>
@@ -97,16 +97,16 @@ Puede utilizar la Bandeja de entrada de AEM para ejecutar y supervisar Flujos de
  </tbody>
 </table>
 
-## Flujos de trabajo de AEM centrados en formularios en OSGi y Flujos de trabajo JEE de AEM Forms {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## Flujos de trabajo de AEM centrados en el formulario en Flujos de trabajo OSGi y AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de trabajo JEE de AEM Forms (AEM Forms en la administración de procesos JEE) tienen un conjunto diferente de funciones. La siguiente tabla le ayuda a comprender las importantes funciones disponibles en los Flujos de trabajo de AEM centrados en el formulario en OSGi y AEM Forms en Flujos de trabajo JEE:
+Los Flujos de trabajo de AEM centrados en el formulario en OSGi y Flujos de trabajo AEM Forms JEE (AEM Forms en la administración de procesos JEE) tienen un conjunto diferente de funciones. La siguiente tabla le ayuda a comprender las funciones importantes disponibles en los Flujos de trabajo de AEM centrados en el formulario en OSGi y AEM Forms en Flujos de trabajo JEE:
 
 <table>
  <tbody>
   <tr>
    <td>Capacidades</td>
-   <td>Flujos de trabajo de AEM centrados en formularios en OSGi<br /> </td>
-   <td>Flujos de trabajo JEE de AEM Forms</td>
+   <td>Flujos de trabajo de AEM centrados en el formulario en OSGi<br /> </td>
+   <td>flujos de trabajo JEE de AEM Forms</td>
   </tr>
   <tr>
    <td>Formularios adaptables</td>
@@ -114,7 +114,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible<br /> </td>
   </tr>
   <tr>
-   <td>Integración con otras soluciones de AEM</td>
+   <td>Integración con otras soluciones AEM</td>
    <td>Compatible</td>
    <td>Compatible</td>
   </tr>
@@ -178,6 +178,41 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible</td>
    <td>Compatible</td>
   </tr>
+   <tr>
+   <td>Gateways, SIN ESPERANZA </td>
+   <td>Compatible</td>
+   <td>Compatible</td>
+  </tr>
+   <tr>
+   <td>Variables para almacenar datos </td>
+   <td>Compatible</td>
+   <td>Compatible</td>
+  </tr>
+  <tr>
+   <td>O, Y Dividir</td>
+   <td>Compatible</td>
+   <td>Compatible</td>
+  </tr>
+  <tr>
+   <td>avatar de usuario</td>
+   <td>Compatible</td>
+   <td>Compatible</td>
+  </tr>
+  <tr>
+   <td>Enviar un correo electrónico al final del flujo de trabajo</td>
+   <td>Supported <sup>[7]</sup></td>
+   <td>Compatible</td>
+  </tr>
+  <tr>
+   <td>Llamar a un servicio Web desde un flujo de trabajo</td>
+   <td>Compatible</td>
+   <td>Compatible</td>
+  </tr>
+  <tr>
+   <td>Firma digital</td>
+   <td>Compatible<br /> </td>
+   <td>Compatible<br /> </td>
+  </tr>
   <tr>
    <td>Botón Restablecer</td>
    <td>Compatible</td>
@@ -209,7 +244,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Se requiere implementación personalizada</td>
   </tr>
   <tr>
-   <td>Aplicación de formularios adaptables</td>
+   <td>Aplicación adaptable de Forms</td>
    <td>Compatible</td>
    <td>Compatible</td>
   </tr>
@@ -249,7 +284,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible</td>
   </tr>  
   <tr>
-   <td>Formularios HTML5, PDF forms interactivos, conjunto de formularios</td>
+   <td>HTML5 Forms, PDF forms interactivos, conjunto de formularios</td>
    <td>No compatible</td>
    <td>Compatible</td>
   </tr>
@@ -264,7 +299,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible</td>
   </tr>
   <tr>
-   <td>categorías de punto de partida</td>
+   <td>Categorías de punto de partida</td>
    <td>No compatible </td>
    <td>Compatible </td>
   </tr>
@@ -289,12 +324,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible</td>
   </tr>
   <tr>
-   <td>avatar de usuario</td>
-   <td>Compatible</td>
-   <td>Compatible</td>
-  </tr>
-  <tr>
-   <td>vista del administrador</td>
+   <td>Vista del administrador</td>
    <td>No compatible</td>
    <td>Compatible<br /> </td>
   </tr>
@@ -309,7 +339,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible</td>
   </tr>
   <tr>
-   <td>Datos adjuntos de nivel de Tarea para aplicaciones de flujo de trabajo o puntos de inicio</td>
+   <td>Datos adjuntos de nivel de tarea para aplicaciones de flujo de trabajo o puntos de inicio</td>
    <td>No compatible</td>
    <td>Compatible</td>
   </tr>
@@ -329,17 +359,7 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible</td>
   </tr>
   <tr>
-   <td>Enviar un correo electrónico al final del flujo de trabajo</td>
-   <td>Supported <sup>[7]</sup></td>
-   <td>Compatible</td>
-  </tr>
-  <tr>
    <td>Delegar entre grupos desunidos</td>
-   <td>No compatible</td>
-   <td>Compatible</td>
-  </tr>
-  <tr>
-   <td>Llamar a un servicio Web desde un flujo de trabajo</td>
    <td>No compatible</td>
    <td>Compatible</td>
   </tr>
@@ -349,22 +369,17 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
    <td>Compatible</td>
   </tr>
   <tr>
-   <td>Gateways, SIN ESPERANZA </td>
-   <td>Compatible</td>
-   <td>Compatible</td>
-  </tr>
-   <tr>
-   <td>Variables para almacenar datos </td>
-   <td>Compatible</td>
-   <td>Compatible</td>
-  </tr>
-  <tr>
-   <td>O, Y Dividir</td>
-   <td>No compatible</td>
-   <td>Compatible</td>
-  </tr>
-  <tr>
    <td>Prioridad de tarea dinámica</td>
+   <td>No compatible</td>
+   <td>No compatible</td>
+  </tr>
+  <tr>
+   <td>Título dinámico</td>
+   <td>No compatible</td>
+   <td>No compatible</td>
+  </tr>
+    <tr>
+   <td>Descripción dinámica</td>
    <td>No compatible</td>
    <td>No compatible</td>
   </tr>
@@ -373,18 +388,18 @@ Los Flujos de trabajo de AEM centrados en formularios en OSGi y los Flujos de tr
 
 1. Puede utilizar Flujos de trabajo de AEM centrados en el formulario en OSGi para firmar un formulario adaptable rellenado. Los Flujos de trabajo de AEM centrados en el formulario en OSGi son compatibles con la firma fuera del formulario. No se admite la experiencia [de firma](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) en el formulario.
 
-1. Se requiere acceso a la Bandeja de entrada de AEM para ejecutar y supervisar flujos de trabajo centrados en el formulario en OSGi de AEM Forms y en el espacio de trabajo HTML para ejecutar y supervisar Flujos de trabajo JEE de AEM Forms.
-1. Los servicios de Documento para AEM Forms nativos están disponibles tanto para Flujos de trabajo de AEM centrados en el formulario en OSGi como para AEM Forms en Flujos de trabajo JEE. AEM Workflow utiliza servicios de documento nativos para Flujos de trabajo de AEM centrados en formularios en OSGi y Flujos de trabajo JEE (Process Management) de AEM Forms.
+1. Se requiere acceso a AEM Bandeja de entrada para ejecutar y supervisar flujos de trabajo centrados en el formulario en AEM Forms OSGi y HTML Workspace para ejecutar y supervisar Flujos de trabajo AEM Forms JEE.
+1. Los servicios nativos de Documento de AEM Forms están disponibles para Flujos de trabajo de AEM centrados en el formulario en OSGi y AEM Forms en Flujos de trabajo JEE. AEM flujo de trabajo utiliza servicios de documento nativos para Flujos de trabajo de AEM centrados en formularios en Flujos de trabajo OSGi y AEM Forms JEE (Process Management).
 1. Los Flujos de trabajo JEE de AEM Forms solo pueden procesar un formulario adaptable. No admite el procesamiento de un formulario adaptable como documento PDF.
-1. Los Flujos de trabajo JEE de formularios AEM no tienen un paso independiente para Adobe Sign. Se requiere un formulario adaptable habilitado para Adobe Sign para Flujos de trabajo JEE de formularios AEM. Para obtener más información, consulte la documentación [de](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)Adobe Sign.
+1. Los Flujos de trabajo JEE de AEM formularios no tienen un paso independiente para Adobe Sign. Se requiere un formulario adaptable habilitado para Adobe Sign para AEM formularios Flujos de trabajo JEE. Para obtener más información, consulte la documentación [de](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)Adobe Sign.
 1. Puede utilizar el paso [Invocar el servicio](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) del modelo de datos de formulario para invocar un servicio Web y publicar o recuperar datos de una aplicación de terceros.
 1. Puede utilizar el paso [Enviar correo electrónico](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) para enviar correos electrónicos.
 
-## Diferencias entre la bandeja de entrada de AEM y las funciones de la aplicación AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
+## Diferencias entre AEM bandeja de entrada y las funciones de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Dos de las principales formas de iniciar un flujo de trabajo centrado en formularios son utilizar la bandeja de entrada [y la aplicación AEM Forms de](../../forms/using/manage-applications-inbox.md) AEM. Sin embargo, las funciones de la bandeja de entrada y la aplicación de AEM Forms de AEM difieren. La bandeja de entrada de AEM solo funciona con flujos de trabajo [centrados en](../../forms/using/aem-forms-workflow.md) formularios, mientras que la aplicación AEM Forms funciona tanto con flujos de trabajo centrados en formularios como con la administración de procesos.
+Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son utilizar [AEM bandeja de entrada](../../forms/using/manage-applications-inbox.md) y aplicación de AEM Forms. Sin embargo, las capacidades de AEM bandeja de entrada y aplicación de AEM Forms difieren. AEM bandeja de entrada solo funciona con flujos de trabajo [centrados en](../../forms/using/aem-forms-workflow.md) Forms, mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con administración de procesos.
 
-La tabla siguiente lista las funciones de la bandeja de entrada y la aplicación AEM Forms de AEM:
+La siguiente tabla lista las funciones de AEM bandeja de entrada y aplicación de AEM Forms:
 
 <table>
  <tbody>
