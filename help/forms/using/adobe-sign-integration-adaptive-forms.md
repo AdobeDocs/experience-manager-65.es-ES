@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 636224c2ea165e43f8979797926fd05197a15905
+source-git-commit: 1148ac87ef6ff1afa77788e9cbd180d883290bfe
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,7 @@ Para integrar Adobe Sign con AEM Forms, es necesario lo siguiente:
 * Un servidor [SSL habilitado](/help/sites-administering/ssl-by-default.md) para AEM Forms.
 * Una aplicación [API de](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)Adobe Sign.
 * Credenciales (ID de cliente y Secreto de cliente) de la aplicación API de Adobe Sign.
+* Al volver a configurar, elimine la configuración de Adobe Sign existente de las instancias de creación y publicación.
 
 ## Configurar Adobe Sign con AEM Forms {#configure-adobe-sign-with-aem-forms}
 
@@ -51,7 +52,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 1. En la página de configuración, toque **[!UICONTROL Crear]** para crear la configuración de Adobe Sign en AEM Forms.
 1. En la ficha **[!UICONTROL General]** de la página **[!UICONTROL Crear configuración]** de Adobe Sign, especifique un **nombre** para la configuración y toque **Siguiente**. Opcionalmente, puede especificar un título y examinar para seleccionar una miniatura para la configuración.
 
-   Copie la URL en la ventana actual del explorador. Es necesario configurar la aplicación Adobe Sign con AEM Forms.
+1. Copie la URL en la ventana actual del explorador en un bloc de notas. Es necesario configurar la aplicación Adobe Sign con AEM Forms.
 
 1. Configure la configuración de OAuth para la aplicación Adobe Sign:
 
@@ -77,7 +78,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 
    **na1** hace referencia al uso compartido predeterminado de la base de datos.
 
-   Puede modificar el valor del uso compartido de la base de datos. Reinicie el servidor para poder utilizar el nuevo valor para el uso compartido de la base de datos.
+   Puede modificar el valor del uso compartido de la base de datos. Reinicie el servidor para poder usar el nuevo valor para el uso compartido de la base de datos.
 
 1. Especifique el ID **de** cliente (también denominado ID de aplicación) y el secreto **de cliente**. Seleccione la opción **Activar Adobe Sign para archivos adjuntos también** para anexar archivos adjuntos a un formulario adaptable al documento de Adobe Sign correspondiente enviado para firmar.
 
@@ -95,6 +96,9 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 1. Repita los pasos del 1 al 12 para configurar Adobe Sign con AEM Forms. Utilice el mismo título para la configuración (como se especifica en el paso 3) y el mismo nombre (como se especifica en el paso 6) para replicar la configuración configurada en la instancia de Autor.
 
    Ahora, Adobe Sign está integrado con AEM Forms y listo para su uso en formularios adaptables. Para [utilizar el servicio Adobe Sign en un formulario](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)adaptable, especifique el contenedor de configuración creado anteriormente en las propiedades del formulario adaptable.
+
+   >[!NOTE]
+   > Si tiene un entorno endurecido y no tiene acceso a la URL `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`, complete la configuración en Autor y utilice la [replicación](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) para crear una configuración idéntica en las instancias de publicación correspondientes.
 
 ## Configurar el Planificador de Adobe Sign para sincronizar el estado de firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
