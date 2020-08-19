@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +62,7 @@ Para un sitio de comunidad, una vez que se haya publicado el sitio y las etiquet
 
 A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tags/ski-catalog` para el grupo `Community Enable Members`.
 
-![chlimage_1-420](assets/chlimage_1-420.png)
+![site-tags](assets/site-tags.png)
 
 ## Áreas de nombres de etiquetas de catálogo {#catalog-tag-namespaces}
 
@@ -67,7 +70,7 @@ La función de catálogo utiliza etiquetas para definirse. Al configurar la func
 
 La función Catálogo incluye un ajuste de etiqueta que define las etiquetas que aparecen en la interfaz de usuario del filtro para el catálogo. La configuración &quot;Todas las Áreas de nombres&quot; hace referencia al ámbito de Áreas de nombres de etiquetas seleccionadas para el sitio de comunidad.
 
-![chlimage_1-421](assets/chlimage_1-421.png)
+![área de nombres de catálogo](assets/catalog-namespace.png)
 
 ## Aplicación de etiquetas a los recursos de habilitación {#applying-tags-to-enablement-resources}
 
@@ -88,11 +91,11 @@ Por lo tanto, cualquier recurso de habilitación etiquetado con uno de los sigui
 
 aparecerá en `Ski Catalog` una vez que se haya publicado el recurso de habilitación.
 
-![chlimage_1-422](assets/chlimage_1-422.png)
+![basic-info](assets/applytags-basicinfo.png)
 
 ## Visualización del catálogo al publicar {#viewing-catalog-on-publish}
 
-Una vez que todo se ha configurado desde el entorno del autor y se ha publicado, la experiencia de usar el catálogo para encontrar recursos de activación se puede experimentar en el entorno de publicación.
+Una vez que todo se haya configurado desde el entorno del autor y se haya publicado, la experiencia de utilizar el catálogo para encontrar recursos de activación se puede experimentar en el entorno de publicación.
 
 Si no aparece ninguna Área de nombres de etiquetas en la lista desplegable, asegúrese de que los permisos se han establecido correctamente en el entorno de publicación.
 
@@ -100,5 +103,5 @@ Si se han agregado Áreas de nombres de etiquetas y faltan, asegúrese de que la
 
 Si no aparece ningún recurso de habilitación después de seleccionar una etiqueta al ver el catálogo, asegúrese de que haya una etiqueta de la Área de nombres del catálogo aplicada al recurso de habilitación.
 
-![chlimage_1-423](assets/chlimage_1-423.png)
+![vista-catálogo](assets/viewcatalog.png)
 
