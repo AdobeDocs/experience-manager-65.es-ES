@@ -10,25 +10,28 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 5%
 
 ---
 
 
 # Configuración de almacenamiento {#storage-configuration}
 
-La configuración de Almacenamiento es el medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
+La configuración de almacenamiento es el medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
 
-Esta configuración informa al código de Comunidades de AEM de la implementación del proveedor de recursos de almacenamiento (SRP) que se va a utilizar al acceder a UGC y debe reflejar la topología establecida cuando se implementó AEM.
+Esta configuración informa al código de AEM Communities de la implementación del proveedor de recursos de almacenamiento (SRP) que se va a utilizar al acceder a UGC y debe reflejar la topología establecida cuando se implementó AEM.
 
 Para consultar las opciones de almacenamiento y las topologías de implementación, visite:
 
 * [Tienda de contenido de la comunidad](working-with-srp.md)
 * [Topologías recomendadas](topologies.md)
 
-## Consola de configuración de Almacenamiento {#storage-configuration-console}
+## Consola de configuración de almacenamiento {#storage-configuration-console}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 En el entorno de creación, para llegar a la consola de configuración de almacenamiento.
 
