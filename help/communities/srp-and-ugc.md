@@ -1,8 +1,8 @@
 ---
 title: Elementos esenciales de SRP y UGC
 seo-title: Elementos esenciales de SRP y UGC
-description: Información general sobre el proveedor de recursos de Almacenamiento y el contenido generado por el usuario
-seo-description: Información general sobre el proveedor de recursos de Almacenamiento y el contenido generado por el usuario
+description: Información general sobre el proveedor de recursos de almacenamiento y el contenido generado por el usuario
+seo-description: Información general sobre el proveedor de recursos de almacenamiento y el contenido generado por el usuario
 uuid: a4ee8725-f554-4fcf-ac1e-34878d6c02f8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ En esta sección de la documentación se proporciona información esencial sobre
 
 La API de SocialResourceProvider (SRP API) es una extensión de varias API de proveedores de recursos de Sling. Incluye soporte para paginación e incremento atómico (útil para contar y anotar).
 
-Se necesitan Consultas para los componentes del SCF, ya que es necesario ordenar por fecha, utilidad, número de votos, etc. Todas las opciones de SRP cuentan con mecanismos de consulta flexibles que no dependen de la inversión.
+Se necesitan consultas para los componentes del SCF, ya que es necesario ordenar por fecha, utilidad, número de votos, etc. Todas las opciones de SRP cuentan con mecanismos de consulta flexibles que no dependen de la inversión.
 
 La ubicación del almacenamiento SRP incorpora la ruta del componente. La API de SRP siempre debe utilizarse para acceder a UGC, ya que la ruta de acceso raíz depende de la opción de SRP seleccionada, como ASRP, MSRP o JSRP.
 
@@ -102,17 +105,17 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## Ubicaciones de Almacenamientos relacionadas con UGC {#ugc-related-storage-locations}
 
-Las siguientes descripciones de la ubicación de los almacenamientos pueden ser de utilidad para el desarrollo del JSRP o tal vez del MSRP. Actualmente no hay ninguna interfaz de usuario para acceder a UGC almacenada en ASRP, ya que existe para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) y MSRP (herramientas MongoDB).
+Las siguientes descripciones de la ubicación de los almacenamientos pueden ser de utilidad para el desarrollo del JSRP o tal vez del MSRP. Actualmente no hay ninguna interfaz de usuario para acceder a UGC almacenada en ASRP, ya que existe para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) y MSRP (herramientas de MongoDB).
 
-**ubicación del componente**
+**Ubicación del componente**
 
-Cuando un miembro introduce UGC en el entorno de publicación, interactúa con un componente como parte de un sitio de AEM.
+Cuando un miembro introduce UGC en el entorno de publicación, interactúa con un componente como parte de un sitio AEM.
 
 Un ejemplo de este componente es el componente [de](http://localhost:4502/content/community-components/en/comments.html) comentarios que existe en el sitio de la Guía [de componentes de la](components-guide.md) comunidad. La ruta al nodo de comentarios en el repositorio local es:
 
 * Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-**ubicación del nodo de sombra**
+**Ubicación del nodo de sombra**
 
 La creación de UGC también crea un nodo [de](srp.md#about-shadow-nodes-in-jcr) sombra al que se aplican las ACL necesarias. La ruta al nodo de sombra correspondiente en el repositorio local es el resultado de anteponer la ruta raíz del nodo de sombra a la ruta del componente:
 
@@ -126,7 +129,7 @@ El UGC se crea en ninguna de estas ubicaciones y solo se debe acceder a él medi
 * Ruta raíz = `/content/usergenerated/asi/srp-choice`
 * Nodo UGC para JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Tenga en cuenta* que para JSRP, el nodo UGC *solo* estará presente en la instancia de AEM (autor o publicación) en la que se introdujo. Si se introduce en una instancia de publicación, la moderación no será posible desde la consola de moderación del autor.
+*Tenga en cuenta* que para JSRP, el nodo UGC *sólo* estará presente en la instancia de AEM (autor o publicación) en la que se introdujo. Si se introduce en una instancia de publicación, la moderación no será posible desde la consola de moderación del autor.
 
 ## Información relacionada {#related-information}
 
