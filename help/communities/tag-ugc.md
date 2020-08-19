@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +30,7 @@ Las Áreas de nombres de etiquetas y las taxonomías son las mismas para ambas a
 
 ## Funciones de comunidades {#communities-features}
 
-Las funciones de Comunidades de AEM que se pueden configurar para permitir el etiquetado son:
+Las funciones de AEM Communities que se pueden configurar para permitir el etiquetado son:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -53,5 +56,5 @@ Consulte [Configuración de permisos](../../help/sites-administering/tags.md#set
 
 A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tag/discussions` para el grupo `Community Engage Members`.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![tag-permissions](assets/tag-permissions.png)
 
