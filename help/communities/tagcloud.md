@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 5%
 
 ---
 
@@ -37,22 +40,23 @@ Para obtener la información necesaria, visite [Communities Components Basics](b
 
 Cuando se incluyen las bibliotecas [del lado del cliente](tag.md#essentials-for-client-side) necesarias, así es como aparecerá el `Social Tag Cloud` componente:
 
-![chlimage_1-303](assets/chlimage_1-303.png)
+![etiqueta social](assets/social-tag.png)
 
 ## Configuración de Social Tag Cloud {#configuring-social-tag-cloud}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Social Tag Cloud` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-304](assets/chlimage_1-304.png)
+![configurar](assets/configure-new.png)
 
 En la ficha **[!UICONTROL Social Tag Cloud]** , especifique qué etiquetas mostrar y, si las etiquetas son vínculos activos, la ubicación de la página para los resultados de búsqueda:
 
-![chlimage_1-305](assets/chlimage_1-305.png)
+![social-tag-cloud](assets/social-tag-cloud.png)
 
 * **[!UICONTROL Etiquetas sociales para mostrar]** Identifique qué etiquetas UGC mostrar. Las opciones desplegables son:
 
    * `From page and child pages`
    * `All tags`
+
    El valor predeterminado es `From page and child pages`, donde &quot;página&quot; se refiere a la configuración de **página** siguiente.
 
 * **[!UICONTROL Página]**
@@ -73,7 +77,7 @@ Para editar la visualización de **Social Tag Cloud**, introduzca Modo [de](../.
 
 En la ficha **[!UICONTROL Social Tag Cloud (Diseño)]** , especifique cómo se muestran las etiquetas. Una etiqueta puede ser una etiqueta simple, una sola palabra de la Área de nombres predeterminada o una taxonomía jerárquica:
 
-![chlimage_1-306](assets/chlimage_1-306.png)
+![social-tag-cloud-design](assets/social-tag-cloud-design.png)
 
 * **[!UICONTROL Mostrar rutas de título completas]**
 
@@ -83,6 +87,7 @@ En la ficha **[!UICONTROL Social Tag Cloud (Diseño)]** , especifique cómo se m
 
    * Activados: `Geometrixx Media: Gadgets / Cars`
    * Desactivado: `Cars`
+
    No hay diferencia para una etiqueta simple.
 
    El valor predeterminado no está marcado.
@@ -100,7 +105,8 @@ En la ficha **[!UICONTROL Social Tag Cloud (Diseño)]** , especifique cómo se m
    `Geometrixx Media (the namespace)`, `Gadgets`y `Cars`
 
    * Activado: Solo `Cars` se muestra, si se aplica.
-   * Desmarcado: `Geometrixx Media` y `Gadgets`así como `Cars` se mostrará, si se aplica.
+   * Desmarcado: `Geometrixx Media` y `Gadgets`también `Cars` se mostrará, si se aplica.
+
    Una etiqueta simple es una etiqueta de hoja.
 
    El valor predeterminado no está marcado.
