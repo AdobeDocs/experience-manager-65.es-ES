@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 A partir de Communities [FP1](deploy-communities.md#latestfeaturepack), los miembros de la comunidad pueden interactuar con la comunidad a través del correo electrónico mediante una función denominada suscripciones.
 
-Las Suscripciones son similares a [las notificaciones](notifications.md) , ya que los miembros pueden suscribirse a continuación de artículos de blog, temas de foro o preguntas de control de calidad.
+Las suscripciones son similares a [las notificaciones](notifications.md) , ya que los miembros pueden suscribirse a continuación de artículos de blog, temas de foro o preguntas de control de calidad.
 
 Lo que distingue las suscripciones de las notificaciones es:
 
@@ -43,7 +46,7 @@ Los componentes deben configurarse para habilitar las suscripciones *y las* sigu
 
 ## Suscripciones de lo siguiente {#subscriptions-from-following}
 
-![climage_1-5](assets/chlimage_1-5.png)
+![suscripción-siguiente](assets/subscription-following.png)
 
 El botón **Seguir** proporciona un medio para seguir las entradas como actividades, suscripciones y/o notificaciones. Cada vez que se selecciona el botón **Seguir** , es posible activar o desactivar una selección.
 
@@ -61,9 +64,9 @@ Cuando se [configura el correo electrónico para responder por correo electróni
 
 Si responden al correo electrónico, el contenido que introduzcan en la respuesta aparecerá como contenido en línea.
 
-![climage_1-6](assets/chlimage_1-6.png)
+![email-response](assets/email-reply.png)
 
 El intervalo [de actualización del importador de](email.md#configure-polling-importer)encuestas controla la cantidad de tiempo que tarda una respuesta en anunciarse.
 
-![climage_1-7](assets/chlimage_1-7.png)
+![QA](assets/qa.png)
 
