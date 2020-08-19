@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Consola de moderación {#moderation-console}
 
-En los AEM Communities, es posible [moderar de forma masiva el contenido](/help/communities/moderate-ugc.md) de la comunidad, tanto desde los entornos de creación como de publicación, por parte de los administradores y los moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores).
+En AEM Communities, los administradores y los moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores) pueden [moderar de forma masiva el contenido](/help/communities/moderate-ugc.md) de la comunidad a partir de los entornos de creación y publicación.
 
 Los administradores y los moderadores de la comunidad también pueden realizar una moderación [en contexto](/help/communities/in-context.md) en el entorno de publicación.
 
@@ -241,15 +241,15 @@ Aparte de los filtros predeterminados en [Carril](/help/communities/moderation.m
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-El proyecto [de](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) ejemplo de Github implementa el filtro Tag para filtrar la lista UGC en función de si las etiquetas específicas se aplican al contenido generado por el usuario. Puede seguir el código de muestra y crear filtros análogos para otros campos de metadatos UGC similares.
+El proyecto [de](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) ejemplo de Github implementa el filtro Tag para filtrar la lista UGC en función de si las etiquetas específicas se aplican al contenido generado por el usuario. Puede seguir el código de muestra y crear filtros análogos para otros campos de metadatos UGC similares.
 
 Para instalar el ejemplo para el filtro Etiquetas:
 
 1. Abra el administrador de paquetes en la instancia de AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) y AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Cree el paquete `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` a partir del código de Github, e instale y habilite lo mismo.
-1. Abra la consola de paquetes en la instancia de AEM Author ( `https://[aem-author]:4502/system/console/bundles`) y AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Abra la consola de paquetes en la instancia de AEM Author ( `https://[aem-author]:4502/system/console/bundles`) y en la instancia de AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Compile el paquete ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` desde Github, e instale y active lo mismo.
-1. Vaya al nodo **/apps/social/moderation/facets** en AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) y AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
+1. Vaya al nodo **/apps/social/moderation/facets** de AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) y AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Añada **comunidades de usuarios técnicos-utilidades-reader** con `jcr:read` permisos.
 
 Para exponer los filtros personalizados en sitios de la comunidad existentes:
@@ -296,14 +296,14 @@ Los iconos que permiten estas acciones solo aparecen en la barra de herramientas
 
 En el modo de selección única, es posible:
 
-* Para Vista de los detalles del usuario, seleccione el nombre del usuario.
-* Para Vista de la publicación en contexto, seleccione el vínculo a la publicación.
+* Para vista de los detalles del usuario, seleccione el nombre del usuario.
+* Para vista de la publicación en contexto, seleccione el vínculo a la publicación.
 * [respuesta](#reply)
 * [Permitir](#allow)
 * [Denegar](#deny)
 * [Eliminar](#delete)
 * [Cerrar](#close)
-* Historial de [moderación de Vista](#moderation-history)
+* Historial de [moderación de vista](#moderation-history)
 * [Ver detalles](#viewdetails)
 
 Presente en la vista de la tarjeta sobre los iconos de la acción de moderación es el texto de la publicación y debajo hay datos que indican:
