@@ -10,18 +10,21 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 1%
 
 ---
 
 
-# Configuración de la caché de formularios adaptables{#configure-adaptive-forms-cache}
+# Configuración de la caché de formularios adaptables {#configure-adaptive-forms-cache}
 
 Una caché es un mecanismo para reducir los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de formularios adaptables almacena solo el contenido HTML y la estructura JSON de un formulario adaptable sin guardar datos precargados. Ayuda a reducir el tiempo necesario para procesar un formulario o documento adaptable en el cliente. Está diseñado específicamente para formularios adaptables y también admite documentos adaptables.
 
 >[!NOTE]
 >
->Cuando utilice la caché de formularios adaptables, utilice AEM Dispatcher para almacenar en caché las bibliotecas de cliente (CSS y JavaScript) de un formulario o documento adaptable.
+>Cuando utilice la caché de formularios adaptables, utilice la AEM [!DNL Dispatcher] para almacenar en caché las bibliotecas de cliente (CSS y JavaScript) de un formulario o documento adaptable.
 
 >[!NOTE]
 >
@@ -31,15 +34,14 @@ Una caché es un mecanismo para reducir los tiempos de acceso a los datos, reduc
 
 Realice los siguientes pasos para configurar la caché de formularios adaptables:
 
-1. Vaya al administrador de configuración de la consola web de AEM en https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Haga clic en Configuración **del Canal Web de formulario** adaptable y comunicación interactiva para editar sus valores de configuración.
-1. En el cuadro de diálogo Editar valores de configuración, especifique el número máximo de formularios o documentos que puede almacenar una instancia del servidor de AEM Forms en el campo **Número de formularios** adaptables. El valor predeterminado es 100.
+1. Vaya a AEM administrador de configuración de consola web en https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Haga clic en Configuración **[!UICONTROL del Canal Web de formulario]** adaptable y comunicación interactiva para editar sus valores de configuración.
+1. En el cuadro de diálogo [!UICONTROL Editar valores] de configuración, especifique el número máximo de formularios o documentos que una instancia del [!DNL Forms] servidor de AEM puede almacenar en caché en el campo **[!UICONTROL Número de Forms]** adaptable. El valor predeterminado es 100.
 
    >[!NOTE]
    >
-   >Para deshabilitar la caché, establezca el valor en **0** en el campo Número de formularios adaptables. La caché se restablece y todos los formularios y documentos se eliminan de la caché cuando se deshabilita o cambia la configuración de la caché.
+   >Para deshabilitar la caché, establezca el valor en el campo Número de Forms adaptable en **0**. La caché se restablece y todos los formularios y documentos se eliminan de la caché cuando se deshabilita o cambia la configuración de la caché.
 
    ![Cuadro de diálogo de configuración para la caché HTML de formularios adaptables](assets/cache-configuration-edit.png)
 
-1. Click **Save** to save the configuration.
-
+1. Click **[!UICONTROL Save]** to save the configuration.
