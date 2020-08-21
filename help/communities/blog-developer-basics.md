@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Elementos esenciales del blog {#blog-essentials}
 
-Desde AEM 6.1 Communities, un blog es una actividad comunitaria. Los artículos de blog ahora se publican desde el entorno de publicación, donde anteriormente los artículos de blog solo podían crearse en el entorno del autor y publicarse.
+Desde AEM comunidades 6.1, un blog es una actividad comunitaria. Los artículos de blog ahora se publican desde el entorno de publicación, donde anteriormente los artículos de blog solo podían crearse en el entorno del autor y publicarse.
 
 Los artículos de blog ahora pueden ser creados por cualquier miembro de la comunidad, a menos que estén restringidos a miembros privilegiados.
 
@@ -71,8 +71,8 @@ La función de blog consta de dos componentes principales disponibles mediante l
 
 | **resourceType** | social/historial/componentes/hbs/barra lateral |
 |---|---|
-| [**inclusible **](/help/communities/scf.md#add-or-include-a-communities-component) | No |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**inclusible**](/help/communities/scf.md#add-or-include-a-communities-component) | No |
+| [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **propiedades** | consulte Función [de blog](/help/communities/blog-feature.md) |
@@ -96,13 +96,13 @@ Una estructura de sitio de comunidad que incluye la función [](/help/communitie
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
 Consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](/help/communities/working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM 6.1 Comunidades, el uso de un almacén [](/help/communities/working-with-srp.md) común para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte :
 
-* [Descripción general](/help/communities/srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio.
+* [Descripción general](/help/communities/srp.md) del proveedor de recursos de almacenamiento: introducción y uso del repositorio.
 * [SRP y UGC Essentials](/help/communities/srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
 * [Acceso a UGC con SRP](/help/communities/accessing-ugc-with-srp.md) : directrices de codificación.
 * [Refactorización](/help/communities/socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
@@ -115,13 +115,13 @@ Consulte Editor [principal](/help/communities/deploy-communities.md#primary-publ
 
 ## Permitir medios enriquecidos {#allowing-rich-media}
 
-La plataforma AEM bloquea los vínculos de otros sitios web para evitar ataques XSS, tal como se describe en
+La plataforma AEM bloquea los vínculos de otros sitios web para evitar los ataques XSS como se describe en
 
-* [Proteger contra secuencias de comandos entre sitios (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect contra scripts entre sitios (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 A partir de AEM 6.2, las modificaciones que anteriormente se requerían manualmente se incluyen en el archivo de configuración predeterminado AntiSamy.
 
 Los medios enriquecidos están incorporados en un artículo de blog seleccionando el `Embed Media from External Sites` icono :
 
-![chlimage_1-471](assets/chlimage_1-471.png)
+![media](assets/media-icon.png)
 
