@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 4%
 
 ---
 
@@ -27,17 +30,17 @@ Para obtener la información necesaria, visite [Communities Components Basics](b
 
 Cuando se incluyen las bibliotecas [](essentials-voting.md#essentials-for-client-side) requeridas del lado del cliente, así es como aparecerá el `Voting` componente.
 
-![chlimage_1-307](assets/chlimage_1-307.png)
+![componente de votación](assets/voting-component.png)
 
 ## Configuración de la votación {#configuring-voting}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Voting` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-308](assets/chlimage_1-308.png)
+![configurar](assets/configure-new.png)
 
 En la ficha **[!UICONTROL Textos y etiquetas]** , especifique las propiedades utilizadas para registrar votos.
 
-![chlimage_1-309](assets/chlimage_1-309.png)
+![rótulo de voto](assets/voting-label.png)
 
 * **[!UICONTROL Etiqueta de respuesta positiva]**
 
