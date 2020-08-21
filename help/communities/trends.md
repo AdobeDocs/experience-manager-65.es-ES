@@ -1,6 +1,6 @@
 ---
-title: Tendencias de Actividad
-seo-title: Tendencias de Actividad
+title: Tendencias de actividad
+seo-title: Tendencias de actividad
 description: Añadir un componente de Lista de Actividad comunitaria en una página
 seo-description: Añadir un componente de Lista de Actividad comunitaria en una página
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 4%
 
 ---
 
 
-# Tendencias de Actividad {#activity-trends}
+# Tendencias de actividad {#activity-trends}
 
 ## Introducción {#introduction}
 
@@ -33,9 +33,9 @@ El documento describe:
 
 ### Requisito {#requirement}
 
-Los datos para el `Community Activity List` sitio solo están disponibles cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
+Los datos del `Community Activity List` sitio solo están disponibles cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
 
-Consulte las funciones de Configuración de [Analytics para comunidades](/help/communities/analytics.md).
+Consulte Configuración [de Analytics para funciones](/help/communities/analytics.md)de comunidades.
 
 ### Añadir una Lista de Actividad de comunidad en una página {#adding-a-community-activity-list-to-a-page}
 
@@ -55,11 +55,11 @@ Cuando se coloca por primera vez en una página de un sitio de comunidad, así e
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Community Activity List` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![configurar](assets/configure-new.png)
 
 En la ficha **Comentarios** , especifique si se mostrarán los comentarios de los archivos cargados y cómo se mostrarán:
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![propiedades](assets/activity-list-properties.png)
 
 * **Tipo**
 
@@ -126,5 +126,5 @@ El valor predeterminado está marcado.
 
 **Configuración de contenido** de tendencias: Tipo = Contenido, tipo de Actividad = Anuncios
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![componentes](assets/activity-list-components.png)
 
