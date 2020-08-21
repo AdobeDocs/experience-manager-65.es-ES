@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 9%
 
 ---
 
@@ -32,24 +35,26 @@ La función de foro QnA (preguntas y respuestas) proporciona un área para que l
 
 La documentación describe:
 
-* Añadir la función de foro QnA en un sitio de AEM.
+* Añadir la función de foro QnA en un sitio AEM.
 * Configuración del `QnA`componente.
 
 ## Añadir un foro de preguntas y respuestas a una página {#adding-a-q-a-forum-to-a-page}
 
-Para agregar un `QnA` componente a una página en modo de autor, utilice el navegador de componentes para ubicarlo `Communities / QnA`y arrastrarlo hasta su lugar en una página en la que debería aparecer el foro de control de calidad.
+Para agregar un `QnA` componente a una página en modo de autor, utilice el navegador de componentes para ubicarlo `Communities / QnA` y arrastrarlo hasta su lugar en una página en la que debería aparecer el foro de control de calidad.
 
 Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/qna-essentials.md#essentials-for-client-side) requeridas, así es como aparece el `QnA`componente:
+Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/qna-essentials.md#essentials-for-client-side) necesarias, así es como aparece el `QnA` componente:
 
-![chlimage_1](assets/chlimage_1.png)
+![qna-component](assets/qna-component.png)
 
 ### Configuración de QnA {#configuring-qna}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `QnA` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-1](assets/chlimage_1-1.png) ![qna-config](assets/qna-config.png)
+![configurar](assets/configure-new.png)
+
+![qna-config](assets/qna-config.png)
 
 #### Ficha Configuración {#settings-tab}
 
@@ -113,7 +118,7 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permite cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. Lista de extensiones de archivo separadas por coma con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permite cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -190,7 +195,7 @@ En la ficha Moderación **del** usuario, especifique cómo se administran los te
 
 * **Umbral de moderación**
 
-   Introduzca el número de veces que los miembros deben marcar una pregunta o respuesta antes de que se notifique a los moderadores. El valor predeterminado es 1 (una vez).
+   Escriba el número de veces que los miembros deben marcar una pregunta o respuesta antes de que se notifique a los moderadores. El valor predeterminado es 1 (una vez).
 
 * **Límite de indicación**
 
