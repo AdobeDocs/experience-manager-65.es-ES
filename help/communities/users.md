@@ -1,8 +1,8 @@
 ---
 title: Administración de usuarios y grupos de usuarios
 seo-title: Administración de usuarios y grupos de usuarios
-description: Los usuarios de Comunidades AEM pueden registrarse y editar sus perfiles
-seo-description: Los usuarios de Comunidades AEM pueden registrarse y editar sus perfiles
+description: Los usuarios de AEM Communities pueden registrarse y editar sus perfiles
+seo-description: Los usuarios de AEM Communities pueden registrarse y editar sus perfiles
 uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '2183'
+ht-degree: 0%
 
 ---
 
@@ -75,14 +78,14 @@ Para administrar usuarios y grupos de usuarios registrados en el entorno de crea
 |---|---|
 | administradores | El grupo de administradores está formado por administradores de sistema que tienen todas las capacidades de un administrador de comunidad, así como la capacidad de administrar el grupo de administradores de comunidad. |
 | Administradores de la comunidad | El grupo Administradores de la comunidad se convierte automáticamente en miembro de todos los sitios de la comunidad y de cualquier grupo de la comunidad creado en el sitio. Un miembro inicial del grupo Administradores de comunidad es el grupo de administradores. En el entorno de creación, los administradores de la comunidad pueden crear sitios de la comunidad, administrar sitios, administrar miembros (pueden prohibir miembros de la comunidad) y moderar contenido. |
-| Comunidad &lt;nombre ** del sitio> Sitecontentmanager | Community Site Content Manager puede realizar la creación tradicional de AEM, la creación de contenido y la modificación de páginas para un sitio de comunidad. |
+| Comunidad &lt;nombre ** del sitio> Sitecontentmanager | El Administrador de contenido del sitio de la comunidad puede realizar la creación de contenido, la creación de contenido y la modificación de páginas AEM tradicionales para un sitio de la comunidad. |
 | Administradores de habilitación de la comunidad | El grupo Administradores de habilitación de la comunidad está formado por usuarios que están disponibles para asignación para administrar el grupo Administradores de habilitación de un sitio de la comunidad. |
 | Comunidad &lt;nombre *del sitio* > Administradores de habilitación de sitios | El grupo Administradores de habilitación de sitio de comunidad está formado por usuarios que han sido asignados para administrar [los recursos](resources.md)de habilitación de un sitio de comunidad. |
 | Ninguna | Un visitante anónimo del sitio no puede acceder al entorno del autor. |
 
 ### Administradores de sistemas {#system-administrators}
 
-Los miembros del grupo de administradores son administradores del sistema que pueden realizar la configuración inicial de una instalación de AEM tanto para los entornos de creación como para los de publicación.
+Los miembros del grupo de administradores son administradores del sistema que pueden realizar la configuración inicial de una instalación de AEM para los entornos de creación y publicación.
 
 Para fines de demostración y desarrollo, el grupo de administradores tiene un miembro cuyo userid es *administrador* y la contraseña es *administrador*.
 
@@ -214,18 +217,18 @@ En una instancia de autor:
    * La ruta debe ser `/home/users/community`.
 4. Seleccione **[!UICONTROL Crear]**.
 
-   ![chlimage_1-130](assets/chlimage_1-130.png)
+   ![create-community-user](assets/create-community-user.png)
 
 * En el panel izquierdo, busque el usuario recién creado y seleccione mostrar en el panel derecho.
 
-   ![chlimage_1-135](assets/chlimage_1-131.png)
+   ![community-user](assets/view-community-user.png)
 
 En el panel izquierdo:
 
 1. Borre el cuadro de búsqueda y seleccione **[!UICONTROL Ocultar usuarios]**.
 2. Busque y arrastre `community-enablementmanagers` a la ficha **[!UICONTROL Grupos]** del nuevo usuario que se muestra en el panel derecho.
 
-   ![chlimage_1-132](assets/chlimage_1-132.png)
+   ![assign-group](assets/assign-group.png)
 
 ### Función de administrador de comunidad {#community-administrators-role}
 
@@ -239,7 +242,7 @@ AEM admite el uso de LDAP para la autenticación de usuarios, así como la creac
 
 A continuación se proporcionan algunos detalles de configuración específicos para miembros de la comunidad y grupos de miembros.
 
-1. Configure LDAP para cada instancia de publicación de AEM.
+1. Configure LDAP para cada instancia de publicación AEM.
 2. [Proveedor de identidad LDAP](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * No hay instrucciones especiales
