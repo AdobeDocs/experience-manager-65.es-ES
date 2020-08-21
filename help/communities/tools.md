@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Para acceder a la consola de herramientas de Communities, inicie sesión en la i
 
 * Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]**.
 
-   ![chlimage_1-129](assets/chlimage_1-129.png)
+   ![comunidades](assets/communities-home.png)
 
 * [Plantillas](sites.md) de sitio: Consola para la creación y administración de plantillas de sitio.
 
@@ -30,7 +33,7 @@ Para acceder a la consola de herramientas de Communities, inicie sesión en la i
 
 * [Funciones](functions.md) de comunidad: consola para la creación y administración de funciones de comunidad.
 
-* [Configuración](srp-config.md) de Almacenamiento: consola para la configuración y selección del [SRP](working-with-srp.md)predeterminado.
+* [Configuración](srp-config.md) de almacenamiento: consola para la configuración y selección del [SRP](working-with-srp.md)predeterminado.
 
 * [Guía](components-guide.md) de componentes: abre un sitio interactivo que permite experimentar el funcionamiento de los componentes de SCF y la configuración o personalización de los mismos.
 
