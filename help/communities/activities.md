@@ -1,6 +1,6 @@
 ---
-title: Función de flujo de Actividad
-seo-title: Función de flujo de Actividad
+title: Función de flujo de actividad
+seo-title: Función de flujo de actividad
 description: Actividades de un miembro de la comunidad que ha iniciado sesión
 seo-description: Actividades de un miembro de la comunidad que ha iniciado sesión
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 ---
 
 
-# Función de flujo de Actividad {#activity-streams-feature}
+# Función de flujo de actividad {#activity-streams-feature}
 
 ## Introducción {#introduction}
 
@@ -29,7 +29,7 @@ La capacidad de seguir agrega otra vista de actividades cuando los miembros de l
 
 El documento describe:
 
-* Añadir el componente Flujos de Actividad en un sitio de AEM
+* Añadir el componente Flujos de Actividad en un sitio AEM
 * Configuración del componente Flujos de Actividad
 
 ### Añadir flujos de Actividad en una página {#adding-activity-streams-to-a-page}
@@ -44,13 +44,13 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/essentials-activities.md#essentials-for-client-side) necesarias, así es como aparecerá el `Activity Streams` componente:
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![Flujos de actividad](assets/activity-component.png)
 
 ### Configuración de flujos de Actividad {#configuring-activity-streams}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Activity Streams` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configurar](assets/configure-new.png)
 
 En la ficha Actividades **** del usuario, especifique qué actividades mostrar:
 
@@ -80,7 +80,7 @@ En la ficha Actividades **** del usuario, especifique qué actividades mostrar:
 
 Los componentes deben configurarse para habilitar lo siguiente. Las funciones que permiten lo siguiente son [blog](/help/communities/blog-feature.md), [foro](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [biblioteca](/help/communities/file-library.md)[](/help/communities/comments.md)de archivos y comentarios.
 
-![climage_1-5](assets/chlimage_1-5.png)
+![vista siguiente](assets/following-activities.png)
 
 El botón **Seguir** proporciona un medio para seguir las entradas como actividades, [notificaciones](/help/communities/notifications.md)o [suscripciones](/help/communities/subscriptions.md). Cada vez que se selecciona el botón **Seguir** , es posible activar o desactivar una selección. La `Email Subscriptions` selección solo está presente cuando está configurada.
 
