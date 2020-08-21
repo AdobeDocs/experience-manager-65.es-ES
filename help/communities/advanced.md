@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -62,9 +62,9 @@ Las diferencias en la configuración de las reglas de puntuación y de identific
 
 El motor de puntuación avanzado proporciona una configuración OSGi con parámetros que afectan al algoritmo de puntuación avanzado.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![motor de puntuación avanzada](assets/advanced-scoring-engine.png)
 
-* **pesos de puntuación**
+* **Pesos de puntuación**
 
    Para un tema, especifique el verbo al que se debe dar la prioridad más alta al calcular la puntuación. Se pueden escribir uno o más temas, pero se pueden limitar a **un verbo por tema**. Consulte [Temas y Verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Introducido como `topic,verb` con la coma de escape. Por ejemplo:
@@ -103,7 +103,7 @@ Para invocar el motor de puntuación avanzado, el valor `scoringType`debe establ
 
 Consulte Subreglas [de puntuación](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![tipo de puntuación avanzada](assets/advanced-scoring-type.png)
 
 ### Palabras clave {#stopwords}
 
@@ -123,7 +123,7 @@ Las propiedades avanzadas de la regla de identificación difieren de las propied
 
 En lugar de asociar puntos con una imagen de insignia, solo es necesario identificar el número de expertos permitidos y la imagen de insignia que se va a otorgar.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![advanced-badging-rules](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -165,7 +165,7 @@ En esta versión beta se incluye una insignia de experto basada en premios:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![insignia de experto](assets/included-badge.png)
 
 Para que la insignia de experto aparezca como recompensa por la actividad, asegúrese de:
 
