@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
@@ -41,7 +41,7 @@ En el entorno del autor, vaya a la consola Insignias:
 
 Esta consola muestra las insignias disponibles actualmente y desde las cuales se pueden agregar nuevas insignias.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![badges-homepage](assets/badges-homepage.png)
 
 ## Crear distintivo {#create-badge}
 
@@ -49,7 +49,7 @@ Para crear un distintivo, cargue una imagen pequeña adecuada (72 ppp con una al
 
 Si el entorno de publicación es un conjunto de editores, es necesario configurar la sincronización [de](/help/communities/sync.md)usuarios.
 
-![chlimage_1-243](assets/chlimage_1-243.png)
+![create-badge](assets/create-badge.png)
 
 * **Cargar imagen**
 
