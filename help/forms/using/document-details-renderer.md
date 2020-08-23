@@ -1,15 +1,15 @@
 ---
-title: Detalles de Documento para el procesador
-seo-title: Detalles de Documento para el procesador
-description: Información conceptual sobre cómo funcionan los procesamientos en el espacio de trabajo AEM Forms para procesar los distintos tipos de archivo y formulario admitidos.
-seo-description: Información conceptual sobre cómo funcionan los procesamientos en el espacio de trabajo AEM Forms para procesar los distintos tipos de archivo y formulario admitidos.
+title: Detalles de documento para el procesador
+seo-title: Detalles de documento para el procesador
+description: Información conceptual sobre cómo funcionan los procesamientos en el espacio de trabajo de AEM Forms para procesar los distintos tipos de archivo y formulario admitidos.
+seo-description: Información conceptual sobre cómo funcionan los procesamientos en el espacio de trabajo de AEM Forms para procesar los distintos tipos de archivo y formulario admitidos.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Detalles de Documento para el procesador {#document-details-for-renderer}
+# Detalles de documento para el procesador {#document-details-for-renderer}
 
 ## Introducción {#introduction}
 
@@ -28,7 +28,7 @@ En el espacio de trabajo de AEM Forms, se admiten varios tipos de formularios si
 * Imágenes
 * Aplicaciones de terceros (por ejemplo, Administración de correspondencia)
 
-Este documento explica el trabajo de estos procesadores desde la perspectiva de la personalización semántica / reutilización de componentes, de modo que los requisitos del cliente se cumplan sin romper ninguna representación. Aunque el espacio de trabajo de AEM Forms permite cualquier cambio semántico/de interfaz de usuario, se recomienda no cambiar la lógica de procesamiento de distintos tipos de formularios, de lo contrario los resultados pueden ser impredecibles. Este documento es para guía / conocimiento que permite procesar el mismo formulario, utilizando los mismos componentes de espacio de trabajo en diferentes portales, y no para modificar la lógica de procesamiento en sí.
+Este documento explica el trabajo de estos procesadores desde la perspectiva de la personalización semántica / reutilización de componentes, de modo que los requisitos del cliente se cumplan sin romper ninguna representación. Aunque el espacio de trabajo de AEM Forms permite cualquier cambio semántico/de interfaz de usuario, se recomienda no cambiar la lógica de procesamiento de los distintos tipos de formularios, de lo contrario los resultados pueden ser impredecibles. Este documento es para guía / conocimiento que permite procesar el mismo formulario, utilizando los mismos componentes de espacio de trabajo en diferentes portales, y no para modificar la lógica de procesamiento en sí.
 
 ## PDF forms {#pdf-forms}
 
@@ -36,9 +36,9 @@ Los PDF forms son procesados por `PdfTaskForm View`.
 
 Cuando un formulario XDP se procesa como PDF, el servicio FormsAugmenter agrega un `FormBridge` JavaScript™. Este JavaScript™ (dentro del formulario PDF) ayuda a realizar acciones como enviar formularios, guardarlos o desconectarlos.
 
-En el espacio de trabajo AEM Forms, la vista PDFTaskForm se comunica con `FormBridge`javascript mediante un HTML intermedio presente en `/lc/libs/ws/libs/ws/pdf.html`. El flujo es:
+En el espacio de trabajo de AEM Forms, la vista PDFTaskForm se comunica con `FormBridge`javascript mediante un HTML intermedio presente en `/lc/libs/ws/libs/ws/pdf.html`. El flujo es:
 
-**vista PDFTaskForm - pdf.html**
+**VISTA PDFTaskForm - pdf.html**
 
 Se comunica mediante `window.postMessage` / `window.attachEvent('message')`
 
@@ -54,7 +54,7 @@ Este método es la forma estándar de comunicación con un PDFJavaScript desde u
 >
 >No se recomienda modificar el contenido de la vista pdf.html / de PdfTaskForm.
 
-## Nuevos formularios HTML {#new-html-forms}
+## Nuevo Forms HTML {#new-html-forms}
 
 Los nuevos formularios HTML son procesados por la Vista NewHTMLTaskForm.
 
@@ -66,11 +66,11 @@ Este JavaScript es diferente del mencionado en los PDF forms anteriores, pero ti
 >
 >No se recomienda modificar el contenido de la vista NewHTMLTaskForm.
 
-## Formularios y guías de Flex {#flex-forms-and-guides}
+## Flex Forms y Guías {#flex-forms-and-guides}
 
-SwfTaskForm representa los formularios Flex y las guías las representan las Vistas HtmlTaskForm, respectivamente.
+SwfTaskForm representa Flex Forms y las guías las Vistas HtmlTaskForm respectivamente.
 
-En el espacio de trabajo AEM Forms, estas vistas se comunican con el SWF real que conforma el formulario/guía flexible mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+En el espacio de trabajo de AEM Forms, estas vistas se comunican con el SWF real que conforma el formulario/guía flexible mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 La comunicación se produce usando `swfObject.postMessage` / `window.flexMessageHandler`.
 
@@ -84,16 +84,16 @@ Este protocolo está definido por el `WsNextAdapter.swf`. El objeto `flexMessage
 
 Las aplicaciones de terceros se representan mediante la vista ExtAppTaskForm.
 
-**Comunicación de la aplicación de terceros al espacio de trabajo AEM Forms**
+**Comunicación de aplicaciones de terceros al espacio de trabajo de AEM Forms**
 
-Espacio de trabajo de AEM Forms escucha en `window.global.postMessage([Message],[Payload])`
+El espacio de trabajo de AEM Forms escucha en `window.global.postMessage([Message],[Payload])`
 
-[El mensaje] puede ser una cadena especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`en el `runtimeMap`. Las aplicaciones de terceros deben utilizar esta interfaz para notificar al espacio de trabajo de AEM Forms según sea necesario. El uso de esta interfaz es obligatorio, ya que el espacio de trabajo de AEM Forms debe saber que cuando se envía la tarea, para que pueda limpiar la ventana de tarea.
+[El mensaje] puede ser una cadena especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`en el `runtimeMap`. Las aplicaciones de terceros deben utilizar esta interfaz para notificar el espacio de trabajo de AEM Forms según sea necesario. El uso de esta interfaz es obligatorio, ya que el espacio de trabajo de AEM Forms debe saber que cuando se envía la tarea para que pueda limpiar la ventana de tarea.
 
-**Espacio de trabajo de AEM Forms a comunicación de aplicaciones de terceros**
+**Comunicación del espacio de trabajo de AEM Forms con aplicaciones de terceros**
 
-Si los botones de acción directa del espacio de trabajo AEM Forms están visibles, llama `window.[External-App-Name].getMessage([Action])`, donde [ `Action]` se lee desde el `routeActionMap`. La aplicación de terceros debe escuchar en esta interfaz y, a continuación, notificar al espacio de trabajo de AEM Forms mediante la `postMessage ()` API.
+Si los botones de acción directa del espacio de trabajo de AEM Forms están visibles, llama `window.[External-App-Name].getMessage([Action])`, donde `[Action]` se lee desde el `routeActionMap`. La aplicación de terceros debe escuchar esta interfaz y, a continuación, notificar el espacio de trabajo de AEM Forms mediante la `postMessage ()` API.
 
-Por ejemplo, una aplicación Flex puede definir `ExternalInterface.addCallback('getMessage', listener)` para admitir esta comunicación. Si la aplicación de terceros desea gestionar el envío de formularios mediante sus propios botones, debe especificarlo `hideDirectActions = true() in the runtimeMap` y puede omitir este detector. Por lo tanto, esta construcción es opcional.
+Por ejemplo, una aplicación de Flex puede definir `ExternalInterface.addCallback('getMessage', listener)` para admitir esta comunicación. Si la aplicación de terceros desea gestionar el envío de formularios mediante sus propios botones, debe especificarlo `hideDirectActions = true() in the runtimeMap` y puede omitir este detector. Por lo tanto, esta construcción es opcional.
 
-Puede leer más sobre la integración de aplicaciones de terceros con respecto a la administración de correspondencia en [Integración de la administración de correspondencia en el espacio de trabajo](/help/forms/using/integrating-correspondence-management-html-workspace.md)AEM Forms.
+Puede leer más sobre la integración de aplicaciones de terceros con respecto a la administración de correspondencia en [Integración de la administración de correspondencia en el espacio de trabajo](/help/forms/using/integrating-correspondence-management-html-workspace.md)de AEM Forms.
