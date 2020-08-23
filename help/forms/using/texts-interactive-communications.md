@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '2493'
+ht-degree: 0%
 
 ---
 
@@ -29,11 +32,11 @@ El fragmento de documento de texto de Comunicación interactiva admite el siguie
 
 ## Create text {#createtext}
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
+1. Seleccione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL de Documento]**.
 1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Texto]**.
 1. Especifique la siguiente información:
 
-   * **[!UICONTROL Título]**: (Opcional) Introduzca el título del fragmento de documento de texto. Los títulos no tienen que ser únicos y pueden tener caracteres especiales y caracteres que no son del inglés. Los textos se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades.
+   * **[!UICONTROL Título]**: (Opcional) Introduzca el título del fragmento de documento de texto. Los títulos no tienen que ser únicos y pueden tener caracteres especiales y caracteres que no sean del inglés. Los textos se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades.
    * **[!UICONTROL Nombre]**: Nombre exclusivo del texto, dentro de una carpeta. No pueden existir dos fragmentos de documento (texto, condición o lista) en ningún estado con el mismo nombre en una carpeta. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
 
    * **[!UICONTROL Descripción]**: Escriba una descripción del texto.
@@ -59,6 +62,7 @@ El fragmento de documento de texto de Comunicación interactiva admite el siguie
    * [Caracteres especiales](#special)
    * [Búsqueda y reemplazo de texto](#searching)
    * [Métodos abreviados de teclado](/help/forms/using/keyboard-shortcuts.md)
+
    >[!NOTE]
    >
    >Puede agregar elementos del Modelo de datos de formulario, elementos del diccionario de datos y variables mediante el símbolo @ en el editor de texto. Cuando se introduce una cadena precedida por @ en el editor de texto, se buscan todos los elementos del modelo de datos, los elementos del diccionario de datos y las variables y se muestran los elementos o variables que contienen la cadena buscada. Puede navegar por los resultados de búsqueda y seleccionar un elemento o una variable. Si no hay ningún resultado coincidente, se muestra el mensaje *No se encontraron* resultados coincidentes.
@@ -71,7 +75,7 @@ El fragmento de documento de texto de Comunicación interactiva admite el siguie
 
 Puede editar un fragmento de documento de texto existente mediante los siguientes pasos. También puede editar un fragmento de documento de texto desde un editor de comunicación interactiva.
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
+1. Seleccione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL de Documento]**.
 1. Vaya a un fragmento de documento de texto y selecciónelo.
 1. Toque **[!UICONTROL Editar]**.
 1. Realice los cambios necesarios. Para obtener más información sobre las opciones de texto, consulte [Creación de texto](#createtext).
@@ -79,13 +83,13 @@ Puede editar un fragmento de documento de texto existente mediante los siguiente
 
 ## Personalización de un fragmento de documento de texto mediante las propiedades del modelo de datos de formulario {#formdatamodel}
 
-Puede personalizar los fragmentos de documento de texto insertando las propiedades del modelo de datos de formulario. Al insertar propiedades del modelo de datos de formulario en el texto, puede recuperar y rellenar datos específicos del destinatario del origen de datos asociado mientras previsualiza una comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM.
+Puede personalizar los fragmentos de documento de texto insertando las propiedades del modelo de datos de formulario. Al insertar propiedades del modelo de datos de formulario en el texto, puede recuperar y rellenar datos específicos del destinatario del origen de datos asociado mientras previsualiza una comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de](/help/forms/using/data-integration.md)AEM Forms.
 
 Si ha especificado un modelo de datos de formulario al crear un texto, las propiedades del modelo de datos de formulario aparecen en el panel izquierdo del editor de texto. El modelo de datos de formulario especificado debe ser el mismo para el fragmento de documento de texto que para la comunicación interactiva que lo incluye.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Para insertar una propiedad del modelo de datos de formulario en el texto, coloque el cursor donde desee insertar la propiedad y, a continuación, seleccione la propiedad **[A]** en el panel izquierdo tocando sobre ella y toque **[!UICONTROL [B]Añadir seleccionados]**. También puede tocar con el doble la propiedad para insertarla en la posición del cursor en**[ C ]**. Las propiedades del modelo de datos de formulario se resaltan en un color de fondo parduzco.
+* Para insertar una propiedad del modelo de datos de formulario en el texto, coloque el cursor donde desee insertar la propiedad y, a continuación, seleccione la propiedad **[A]** en el panel izquierdo tocando sobre ella y toque **[!UICONTROL [B]Añadir seleccionados]**. También puede tocar con el doble la propiedad para insertarla en la posición del cursor en **[C]** . Las propiedades del modelo de datos de formulario se resaltan en un color de fondo parduzco.
 
 También puede buscar y agregar la propiedad del modelo de datos de formulario utilizando el símbolo @ en el editor de texto. Coloque el cursor donde desee insertar la propiedad. Escriba @ seguido de la cadena de búsqueda. La operación de búsqueda se realiza en todas las propiedades y variables del modelo de datos de formulario disponibles en el fragmento de documento. Las propiedades o variables que contienen la cadena de búsqueda se recuperan y se muestran como una lista desplegable. Navegue por los resultados de la búsqueda y haga clic en la propiedad que desee insertar en la ubicación del cursor. Pulse Esc para ocultar los resultados de la búsqueda.
 
@@ -144,7 +148,7 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 
 * Cadenas
 * Números
-* expresión matemática
+* Expresión matemática
 * Fechas
 * Propiedades del modelo de datos de formulario asociado
 * Cualquier variable que haya creado en el texto
@@ -157,10 +161,11 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 
 1. Toque **[!UICONTROL Crear regla]**.
 
-   Aparece el cuadro de diálogo Crear regla. Además de la cadena, el número, la expresión matemática y la fecha, en el Editor de reglas también se encuentran disponibles las siguientes opciones para crear instrucciones de las reglas:
+   Aparecerá el cuadro de diálogo Crear regla. Además de la cadena, el número, la expresión matemática y la fecha, en el Editor de reglas también se encuentran disponibles las siguientes opciones para crear instrucciones de las reglas:
 
    * Propiedades del modelo de datos de formulario asociado
    * Cualquier variable que haya creado
+
    Seleccione la opción adecuada para evaluar.
 
    ![ruleeditor](assets/ruleeditor.png) ![ruleeditorfdm](assets/ruleeditorfdm.png)
@@ -194,11 +199,12 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 ## Formato del texto {#formatting}
 
 Durante la creación o edición de texto, la barra de herramientas cambia según el tipo de edición que elija: Párrafo, alineación o Lista:
-[ ![Seleccionar tipo de barra de herramientas](do-not-localize/toolbarselection.png)
+
+![Seleccionar tipo de barra de herramientas](do-not-localize/toolbarselection.png)
 
 Seleccionar tipo de barra de herramientas: Párrafo, alineación o lista
 
-](assets/toolbarselection.png) Barra de herramientas de edición ![de fuentes](do-not-localize/paragraphtoolbar.png)
+![Barra de herramientas de edición de fuentes](do-not-localize/paragraphtoolbar.png)
 
 Barra de herramientas de edición de fuentes
 
@@ -224,7 +230,7 @@ De forma opcional, también puede ir a la ficha Avanzado para seleccionar el ton
 
 ### Pegar texto con formato {#paste}
 
-Para reutilizar uno o varios párrafos de texto que existen en otra aplicación, como los de páginas de Microsoft® Word o HTML, copie y pegue el texto en el editor de texto. El formato del texto copiado se conserva en el editor de texto.
+Para reutilizar uno o varios párrafos de texto que existen en otra aplicación, como páginas de Microsoft® Word o HTML, copie y pegue el texto en el editor de texto. El formato del texto copiado se conserva en el editor de texto.
 
 Puede copiar y pegar uno o varios párrafos de texto en un fragmento de documento de texto editable. Por ejemplo, puede tener un documento de Microsoft® Word con una lista con viñetas de pruebas de residencia aceptables como, por ejemplo:
 
@@ -265,6 +271,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
    * Si se encuentra otra instancia del texto de búsqueda, esa instancia se resalta en el fragmento de documento de texto. Si vuelve a tocar **[!UICONTROL Reemplazar]** , se reemplaza la instancia resaltada y el cursor se mueve hacia adelante, si se encuentra una tercera instancia.
    * Si no se encuentra otra instancia, el cuadro de diálogo Buscar y reemplazar muestra un mensaje: Se llegó al final del módulo.
+
    También puede tocar Reemplazar todo para reemplazar todas las coincidencias de una sola vez.
 
    Buscar y reemplazar también incluye una potente búsqueda de expresión regular. Para usar regex en la búsqueda, seleccione **[!UICONTROL Reg ex]** y luego toque **[!UICONTROL Buscar]** o **[!UICONTROL Reemplazar]**.
