@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 translation-type: tm+mt
-source-git-commit: e37ff1c9e657c580c607f2656adca01a2b39f81f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
@@ -107,13 +110,13 @@ El almacén utiliza un árbol de datos similar al siguiente ejemplo:
 
 >[!NOTE]
 >
->Una política de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. Por lo tanto, AEM fuerza el uso de https para llamadas a la API de geolocalización si AEM también se está ejecutando sobre https. De lo contrario, se utiliza http para cumplir con la política del mismo origen. Consulte [esta entrada](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) del blog de Google para obtener más información sobre el cambio en Chrome.
+>Una política de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. Por lo tanto, AEM fuerza el uso de https para llamadas de API de geolocalización si AEM también se está ejecutando sobre https. De lo contrario, se utiliza http para cumplir con la política del mismo origen. Consulte [esta entrada](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) del blog de Google para obtener más información sobre el cambio en Chrome.
 
 ## contexthub.surferinfo Ejemplo de candidato a tienda {#contexthub-surferinfo-sample-store-candidate}
 
-Almacena información sobre el entorno de cliente actual, como el dispositivo, la ventana, el explorador, la fecha y la hora.
+Almacena información sobre el entorno del cliente actual, como el dispositivo, la ventana, el explorador, la fecha y la hora.
 
-### Ubicación de origen {#source-location-surferinfo
+### Ubicación de origen {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
@@ -190,7 +193,7 @@ Se extiende el candidato del almacén contexthub.geolocation [`ContextHub.Store.
 
 ### Configuración {#configuration-emulators}
 
-La configuración predeterminada incluye una matriz denominada `defaultEmulators` que contiene información sobre distintos dispositivos. Cuando cree una tienda, proporcione distintos perfiles de dispositivo en la propiedad Configuración de detalles según sea necesario, utilizando el formato que se ilustra en el siguiente ejemplo:
+La configuración predeterminada incluye una matriz denominada `defaultEmulators` que contiene información sobre distintos dispositivos. Cuando cree una tienda, proporcione diferentes perfiles de dispositivo en la propiedad Configuración de detalles según sea necesario, utilizando el formato que se ilustra en el siguiente ejemplo:
 
 ```xml
 {
@@ -309,7 +312,7 @@ El árbol de datos del almacén es similar al siguiente ejemplo:
 }
 ```
 
-## granite.profile Ejemplo de candidato de tienda {#granite-profile-sample-store-candidate}
+## granite.perfil Ejemplo de Candidato a tienda {#granite-profile-sample-store-candidate}
 
 Almacena información sobre el usuario actual.
 
