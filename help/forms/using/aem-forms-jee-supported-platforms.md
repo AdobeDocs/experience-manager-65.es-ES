@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 456460d54650bcb71d8eee47fdf0e859a383b3d4
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 0%
@@ -313,7 +313,7 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
 Tenga en cuenta las siguientes excepciones al elegir una plataforma para configurar su AEM Forms en el servidor JEE.
 
 1. AEM Forms on JEE no soporta IBM® WebSphere® con MySQL.
-1. AEM Forms en JEE no admite ni JBoss en SUSE Linux Enterprise Server 12. Sólo IBM WebSphere es compatible con SUSE Linux Enterprise Server 12.
+1. AEM Forms en JEE no admite ni JBoss en SUSE Linux Enterprise Server 12. Solo se admite IBM WebSphere en SUSE Linux Enterprise Server 12.
 1. AEM Forms en JEE no admite ningún JDK con JBoss® excepto Oracle Java™ SE.
 1. AEM Forms on JEE no admite ningún JDK con IBM® WebSphere®, excepto IBM® JDK.
 1. El repositorio de CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio de CRX. Sin embargo, en un AEM Forms en entorno JEE, puede utilizar MongoMK con el repositorio CRX y una base de datos relacional admitida con el servidor de aplicaciones.
@@ -508,11 +508,10 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
  </tbody>
 </table>
 
-Para obtener más información, consulte:
+Para obtener información adicional, consulte:
 
 * [Requisitos del sistema para un AEM Forms de un solo servidor en implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Requisitos del sistema para un AEM Forms agrupado en la implementación JEE
-   ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [Requisitos del sistema para un AEM Forms agrupado en la implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
 ## Clientes admitidos para AEM Forms en JEE {#supported-clients-for-aem-forms-on-jee}
 
@@ -698,7 +697,7 @@ La aplicación de AEM Forms está disponible en las siguientes plataformas:
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Flash Player (Base)</strong></p> </th>
+   <th><p><strong>Flash Player (base)</strong></p> </th>
    <th><p><strong>Definiciones de parches admitidas</strong></p> </th>
   </tr>
   <tr>
