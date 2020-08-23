@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1274'
 ht-degree: 11%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 11%
 
 Los sitios web y las aplicaciones acceden a los servicios de Dynamic Media mediante llamadas mediante URL. Después de publicar un recurso, Dynamic Media activa una cadena URL que hace referencia al recurso. Puede pegar estas direcciones URL en un navegador web para realizar pruebas.
 
-Solo puede vincular a direcciones URL si *no está* utilizando AEM como WCM. La vinculación frente a la incrustación se utiliza cuando se desea distribuir un reproductor de vídeo como ventana emergente o modal. Si está utilizando AEM como WCM, [agregue los recursos directamente en la página.](adding-dynamic-media-assets-to-pages.md)
+Solo puede vincular a direcciones URL si *no está* usando AEM como WCM. La vinculación frente a la incrustación se utiliza cuando se desea distribuir un reproductor de vídeo como ventana emergente o modal. Si está utilizando AEM como WCM, [agregue los recursos directamente en la página.](adding-dynamic-media-assets-to-pages.md)
 
-Para colocar estas cadenas URL en las páginas web y aplicaciones, cópielas desde Dynamic Media.
+Para colocar estas cadenas URL en las páginas web y las aplicaciones, cópielas desde Dynamic Media.
 
 >[!NOTE]
 >
@@ -122,11 +122,11 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
 ## Obtención de una URL de vídeo para una representación de vídeo publicada {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. En AEM, vaya a **[!UICONTROL Herramientas > Implementación > Nube > Cloud Service.]**
+1. En AEM, vaya a **[!UICONTROL Herramientas > Implementación > Nube > Cloud Services.]**
 1. En la página **[!UICONTROL Cloud Services]**, desplácese hacia abajo hasta el encabezado de **[!UICONTROL Servicios de Dynamic Media Cloud]** y, a continuación, pulse **[!UICONTROL Mostrar configuraciones.]**
 1. En **[!UICONTROL Configuraciones disponibles]**, pulse el nombre de la configuración que desee.
 
-1. En la página Configuración **[!UICONTROL de]** Dynamic Media Cloud, en URL **[!UICONTROL del servicio]** de vídeo, copie toda la ruta de URL. Necesitará la ruta de URL copiada más adelante en los pasos.
+1. En la página Configuración **[!UICONTROL de]** Dynamic Media Cloud, en Dirección URL **[!UICONTROL del servicio]** de vídeo, copie toda la ruta URL. Necesitará la ruta de URL copiada más adelante en los pasos.
 
    Por ejemplo, la ruta de URL puede aparecer de forma similar a la siguiente:
 
@@ -138,7 +138,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
    Por ejemplo, si el ID de registro fuera `87654321|MyCompany`, el nombre del cliente sería `MyCompany`.
 
-1. Cerca de la esquina superior izquierda de la página, toque **[!Cloud Service** UICONTROL, toque el logotipo del Experience Manager y vaya a **[!UICONTROL General > CRXDE Lite.]**
+1. Cerca de la esquina superior izquierda de la página, toque **[!UICONTROL Cloud Services]** y, a continuación, toque el logotipo del Experience Manager y vaya a **[!UICONTROL General > CRXDE Lite.]**
 1. Copie toda la ruta de representación de vídeo desde el JCR (repositorio de contenido de Java).
 
    Por ejemplo, la ruta de representación del vídeo puede tener un aspecto similar al siguiente:
@@ -159,12 +159,13 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
 ## Obtención de una URL de vídeo para flujo continuo adaptable (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. En AEM, vaya a **[!UICONTROL Herramientas > Implementación > Nube > Cloud Service.]**
+1. En AEM, vaya a **[!UICONTROL Herramientas > Implementación > Nube > Cloud Services.]**
 1. En la página **[!UICONTROL Cloud Services]**, desplácese hacia abajo hasta el encabezado de **[!UICONTROL Servicios de Dynamic Media Cloud]** y, a continuación, pulse **[!UICONTROL Mostrar configuraciones.]**
 1. En **[!UICONTROL Configuraciones disponibles]**, pulse el nombre de la configuración que desee.
-1. En la página Configuración **[!UICONTROL de Cloud Service de]** Dynamic Media, haga lo siguiente:
+1. En la página Configuración **[!UICONTROL de Cloud Services de medios]** dinámicos, haga lo siguiente:
 
    * En Dirección URL **[!UICONTROL del servicio]** de vídeo, copie la ruta de URL completa. Necesitará la ruta de URL copiada más adelante en estos pasos. Por ejemplo, la ruta de URL puede aparecer de forma similar a la siguiente:
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (La ruta de acceso de arriba es sólo para fines ilustrativos; no es la ruta real que copia).
@@ -181,7 +182,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
    | HTTP <br> Si utiliza HTTP (envío de vídeo no seguro), asegúrese de cambiar https a http en el valor de URL del servicio de vídeo que ha copiado anteriormente. | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. Copie la ruta completa del recurso de vídeo en AEM, tal como lo ha procesado Dynamic Media. Necesitará esta ruta de recursos de vídeo copiada más adelante en estos pasos.
+1. Copie la ruta completa del recurso de vídeo en AEM, tal como lo procesa Dynamic Media. Necesitará esta ruta de recursos de vídeo copiada más adelante en estos pasos.
 
    Por ejemplo:
 
@@ -201,6 +202,6 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
 ## Uso de HTTP/2 para distribuir los recursos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el Envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
 Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
