@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ba6f94435a4d4945d54614db19f7ff612a317692
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '11830'
+source-wordcount: '11828'
 ht-degree: 8%
 
 ---
@@ -89,7 +89,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Anotación de vídeos](managing-video-assets.md#annotate-video-assets) o [anotaciones en recursos](managing-assets-touch-ui.md#annotating)
 
       * [Creación de una versión](managing-assets-touch-ui.md#asset-versioning)
-      * [Aplicación de flujos de trabajo a recursos](assets-workflow.md) o ver [Inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Aplicación de flujos de trabajo a los recursos](assets-workflow.md) o [inicio de un flujo de trabajo en un recurso](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
 
       * [Revisar recursos de carpetas](bulk-approval.md)
       * [Proyectos](../sites-authoring/projects.md)
@@ -688,7 +688,7 @@ Para automatizar la configuración de las propiedades de YouTube predeterminadas
 
 1. En la esquina superior izquierda de AEM, haga clic en el logotipo de AEM y, a continuación, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > Esquemas **[!UICONTROL de metadatos.]**
 1. Click **[!UICONTROL default.]** (No agregue una marca de verificación al cuadro de selección a la izquierda de &quot;predeterminado&quot;).
-1. En la página **[!UICONTROL predeterminada]**, marque la casilla a la izquierda del **[!UICONTROL vídeo]** y luego haga clic en **Editar.]**
+1. En la página **[!UICONTROL predeterminada]**, marque la casilla a la izquierda del **[!UICONTROL vídeo]** y luego haga clic en **[!UICONTROL Editar.]**
 1. En la página Editor de Esquemas de metadatos, haga clic en la ficha **[!UICONTROL Avanzado]** .
 1. Bajo el encabezado Publicación de YouTube, haga clic en **[!UICONTROL Categoría de YouTube.]**
 1. En la parte derecha de la página, en la ficha **[!UICONTROL Configuración]** , haga lo siguiente:
@@ -696,7 +696,7 @@ Para automatizar la configuración de las propiedades de YouTube predeterminadas
    * En el campo de texto **[!UICONTROL Asignar a propiedad]** , seleccione y copie el valor.
 Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree el perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
-   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee utilizar (como Personas y blogs o Ciencia y tecnología).
+   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee usar (como Personas y blogs o Ciencia y tecnología).
 Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree el perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
 1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Privacy.]**
@@ -722,7 +722,7 @@ Pegue el valor copiado en el editor de texto abierto. Necesitará este valor má
    * (Opcional) En la parte derecha de la página, en la ficha Configuración, en el campo de texto Etiqueta de campo, introduzca `YouTube Publishing`.
    * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you just created.
 
-   * Click **[!UICONTROL Field Label** to select the component.
+   * Click **[!UICONTROL Field Label]** to select the component.
    * En la parte derecha de la página, en la ficha Configuración, pegue los valores de Publicación de YouTube (valor Etiqueta de campo y Asignar a valor de propiedad) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor Opciones en el campo Valor predeterminado.
 
 1. Añada los valores de privacidad de YouTube copiados en el perfil haciendo lo siguiente:
@@ -959,7 +959,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
 
 >[!NOTE]
 >
->Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media: híbrido.
+>Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media - Híbrido.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
@@ -1227,7 +1227,7 @@ Estos pasos solo se aplican a los medios dinámicos que se ejecutan en el modo &
 
 1. Desplácese a un recurso de vídeo cargado cuya imagen en miniatura desee cambiar.
 1. En el modo de selección de recursos, ya sea desde la Vista **[!UICONTROL de]** Lista o desde la Vista **[!UICONTROL de]** tarjetas, toque el recurso de vídeo.
-1. En la barra de herramientas, toque el icono **[!UICONTROL Properties** (un círculo con una &quot;i&quot;).
+1. En la barra de herramientas, toque el icono **[!UICONTROL Propiedades]** (un círculo con una &quot;i&quot;).
 1. En la página Propiedades del vídeo, toque **[!UICONTROL Cambiar miniatura.]**
 1. En la página Cambiar miniatura, realice una de las siguientes acciones:
 
@@ -1248,7 +1248,7 @@ Estos pasos solo se aplican a los medios dinámicos que se ejecutan en el modo &
 
 ## Acerca de las miniaturas de vídeo en Dynamic Media: modo híbrido {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-Puede elegir entre una de las diez imágenes en miniatura generadas automáticamente por Dynamic Media para añadirlas al vídeo. El reproductor de vídeo muestra la miniatura seleccionada cuando se utiliza un recurso de vídeo con el componente Dynamic Media en el entorno de creación de AEM Sites, AEM Mobile o AEM Screens. La miniatura sirve como imagen estática que mejor representa el contenido de todo el vídeo y anima a los usuarios a hacer clic en el botón Reproducir.
+Puede elegir entre una de las diez imágenes en miniatura generadas automáticamente por Dynamic Media para añadirlas al vídeo. El reproductor de vídeo muestra la miniatura seleccionada cuando se utiliza un recurso de vídeo con el componente Dynamic Media en el entorno de creación de AEM Sites, AEM Mobile o AEM Screens. La miniatura sirve como imagen estática que representa mejor el contenido de todo el vídeo y anima a los usuarios a hacer clic en el botón Reproducir.
 
 Según el tiempo total del vídeo, Dynamic Media captura diez imágenes en miniatura (predeterminadas) al 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % y 91 % en el vídeo. Las diez miniaturas persisten, lo que significa que si decide elegir una miniatura diferente más adelante, no necesita volver a generar la serie. Puede previsualización las diez imágenes en miniatura y, a continuación, seleccionar la que desee utilizar con el vídeo. Si desea cambiar a predeterminado, puede utilizar CRXDE Lite para configurar el intervalo de tiempo en el que se generan las imágenes en miniatura. Por ejemplo, si solo desea generar una serie de cuatro imágenes en miniatura separadas uniformemente a partir del vídeo, puede configurar el tiempo de intervalo en 24%, 49%, 74% y 99%.
 
