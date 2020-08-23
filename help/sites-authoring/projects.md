@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 85%
 
 ---
 
@@ -33,10 +36,9 @@ Como usuario, puede hacer lo siguiente:
 
 Consulte los siguientes temas adicionales:
 
-* [Administración de proyectos
-   ](/help/sites-authoring/touch-ui-managing-projects.md)
+* [Administración de proyectos](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Uso de tareas](/help/sites-authoring/task-content.md)
-* [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md).
+* [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md)
 * [Integración de proyectos y PIM creativos](/help/sites-authoring/managing-product-information.md) 
 
 ## Consola Proyectos {#projects-console}
@@ -68,7 +70,7 @@ Puede tener los siguientes mosaicos asociados al proyecto. Cada uso de ellos se 
 * Lanzamientos
 * Tareas
 
-### Recursos {#assets}
+### Assets {#assets}
 
 En el mosaico **Recursos**, puede reunir todos los recursos que utilice para un proyecto determinado.
 
@@ -92,7 +94,7 @@ El mosaico **Experiencias** permite añadir aplicación móvil, un sitio web o u
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-Los iconos indican qué tipo de experiencia se representa: sitio web, aplicación móvil o publicación. Para añadir experiencias, haga clic en el signo + o en **Agregar experiencia** y seleccione el tipo de experiencia.
+Los iconos indican qué tipo de experiencia se representa: sitio web, aplicación móvil o publicación. Para agregar experiencias, haga clic en el signo + o en **Agregar experiencia** y seleccione el tipo de experiencia.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -181,7 +183,7 @@ En Tareas puede supervisar el estado de cualquier tarea relacionada con el proye
 En AEM se incluyen tres plantillas predefinidas de fábrica:
 
 * Un proyecto simple: muestra de referencia para cualquier proyecto que no encaje en otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
-* Proyecto de medios: proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Fotografía del producto (para administrar la fotografía relacionada con el producto)
+* Un proyecto de medios: un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Fotografía del producto (para administrar la fotografía relacionada con el producto)
 * [Proyecto](/help/sites-authoring/managing-product-information.md) de sesión fotográfica del producto: muestra de referencia para administrar la fotografía del producto relacionada con el comercio electrónico. Incluye funciones para fotógrafos, editores, retocadores, propietarios, directores creativos, comerciales de redes sociales, directores de marketing, revisores y observadores.
 * [Proyecto de traducción](/help/sites-administering/translation.md): una muestra de referencia para la administración de las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
 
@@ -201,7 +203,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para que pu
   <tr>
    <td><p><strong>Función</strong></p> </td>
    <td><p><strong>Descripción</strong></p> </td>
-   <td><p><strong>Permisos</strong></p> </td>
+   <td><p><strong>Permisos   </strong></p> </td>
    <td><p><strong>Pertenencia a grupos</strong></p> </td>
   </tr>
   <tr>
@@ -242,4 +244,4 @@ Para proyectos creativos, también se proporcionan funciones adicionales, como p
 
 >[!NOTE]
 >
->Al crear el proyecto y añadir a usuarios a las distintas funciones, se crean automáticamente los grupos asociados al proyecto para gestionar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tiene tres propietarios **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminan automáticamente. Un administrador tiene que eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
+>Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador debe eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
