@@ -1,8 +1,8 @@
 ---
 title: Configuración de la notificación por correo electrónico
 seo-title: Configuración de la notificación por correo electrónico
-description: Obtenga información sobre cómo configurar las notificaciones por correo electrónico en AEM.
-seo-description: Obtenga información sobre cómo configurar las notificaciones por correo electrónico en AEM.
+description: Obtenga información sobre cómo configurar la notificación de correo electrónico en AEM.
+seo-description: Obtenga información sobre cómo configurar la notificación de correo electrónico en AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +29,7 @@ AEM envía notificaciones por correo electrónico a los usuarios que:
 
 Requisitos previos:
 
-* Los usuarios deben tener una dirección de correo electrónico válida definida en su perfil.
+* Los usuarios deben tener una dirección de correo electrónico válida definida en este perfil.
 * El servicio **de correo CQ** Day debe configurarse correctamente.
 
 Cuando se notifica a un usuario, recibe un mensaje de correo electrónico en el idioma definido en su perfil. Cada idioma tiene su propia plantilla que se puede personalizar. Se pueden agregar nuevas plantillas de correo electrónico para los nuevos idiomas.
@@ -37,7 +40,7 @@ Cuando se notifica a un usuario, recibe un mensaje de correo electrónico en el 
 
 ## Configuración del servicio de correo {#configuring-the-mail-service}
 
-Para que AEM pueda enviar correos electrónicos, es necesario configurar correctamente el servicio **de correo CQ** Day. Puede ver la configuración en la consola Web. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+Para AEM poder enviar correos electrónicos, es necesario configurar correctamente el servicio **de correo CQ** Day. Puede vista de la configuración en la consola web. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 Se aplican las siguientes restricciones:
 
@@ -54,18 +57,18 @@ La configuración tiene el siguiente aspecto en la consola web:
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## Configuración del canal de notificación de correo electrónico {#configuring-the-email-notification-channel}
+## Configuración del Canal de notificación de correo electrónico {#configuring-the-email-notification-channel}
 
-Al suscribirse a las notificaciones de eventos de foro o página, la dirección de correo electrónico desde se establece en `no-reply@acme.com` de forma predeterminada. Puede cambiar este valor configurando el servicio Canal **de correo electrónico de** notificación en la consola web.
+Al suscribirse a las notificaciones de eventos de página o foro, la dirección de correo electrónico desde se establece en `no-reply@acme.com` de forma predeterminada. Puede cambiar este valor configurando el servicio de Canal **de correo electrónico de** notificación en la consola web.
 
-Para configurar la dirección de correo electrónico, agregue un `sling:OsgiConfig` nodo al repositorio. Siga el procedimiento siguiente para añadir el nodo directamente mediante CRXDE Lite:
+Para configurar la dirección de correo electrónico, agregue un `sling:OsgiConfig` nodo al repositorio. Utilice el procedimiento siguiente para agregar el nodo directamente mediante CRXDE Lite:
 
 1. En CRXDE Lite, agregue una carpeta con el nombre `config` debajo de la carpeta de la aplicación.
 1. En la carpeta config, agregue un nodo denominado:
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` de tipo `sling:OsgiConfig`
 
-1. Agregue una `String` propiedad al nodo] con el nombre `email.from`. Para el valor, especifique la dirección de correo electrónico que desea utilizar.
+1. Añada una `String` propiedad al nodo denominado `email.from`. Para el valor, especifique la dirección de correo electrónico que desea utilizar.
 
 1. Haga clic en **Guardar todo**.
 
@@ -73,7 +76,7 @@ Utilice el procedimiento siguiente para definir el nodo en las carpetas de orige
 
 1. En su `jcr_root/apps/*app_name*/config folder`, cree un archivo con el nombre `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
-1. Agregue el siguiente XML para representar el nodo:
+1. Añada el siguiente XML para representar el nodo:
 
    `<?xml version="1.0" encoding="UTF-8"?> <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig" email.from="name@server.com"/>`
 1. Reemplace el valor del `email.from` atributo ( `name@server.com`) con su dirección de correo electrónico.
@@ -228,7 +231,7 @@ This is an automatically generated message. Please do not reply.
 
 #### Personalización de plantillas de correo electrónico para notificaciones de flujo de trabajo {#customizing-email-templates-for-workflow-notification}
 
-Para personalizar la plantilla de correo electrónico en inglés para la notificación de eventos de flujo de trabajo:
+Para personalizar la plantilla de correo electrónico en inglés para la notificación de evento de flujo de trabajo:
 
 1. En CRXDE, abra el archivo:
 
@@ -284,7 +287,7 @@ En la plantilla de correo electrónico se pueden usar las siguientes variables:
 * `${payload.path}`, ruta de la carga útil
 * `${host.prefix}`, prefijo de host, por ejemplo: http://localhost:4502
 
-### Adición de una plantilla de correo electrónico para un nuevo idioma {#adding-an-email-template-for-a-new-language}
+### Añadir una plantilla de correo electrónico para un nuevo idioma {#adding-an-email-template-for-a-new-language}
 
 Para agregar una plantilla para un nuevo idioma:
 
@@ -299,11 +302,11 @@ Para agregar una plantilla para un nuevo idioma:
 
 >[!NOTE]
 >
->El nombre de archivo `<language-code>` utilizado para la plantilla de correo electrónico debe ser un código de idioma en minúsculas de dos letras reconocido por AEM. Para códigos de idioma, AEM se basa en ISO-639-1.
+>El `<language-code>` nombre de archivo utilizado para la plantilla de correo electrónico debe ser un código de idioma en minúsculas de dos letras reconocido por AEM. Para códigos de idioma, AEM se basa en ISO-639-1.
 
 ## Configuración de las notificaciones por correo electrónico de AEM Assets {#assetsconfig}
 
-Cuando se comparten o dejan de compartir colecciones en Recursos AEM, los usuarios pueden recibir notificaciones por correo electrónico de AEM. Para configurar las notificaciones por correo electrónico, siga estos pasos.
+Cuando se comparten o dejan de compartir colecciones en AEM Assets, los usuarios pueden recibir notificaciones por correo electrónico de AEM. Para configurar las notificaciones por correo electrónico, siga estos pasos.
 
 1. Configure el servicio de correo electrónico, tal como se describe anteriormente en [Configuración del servicio](/help/sites-administering/notification.md#configuring-the-mail-service)de correo.
 1. Inicie sesión en AEM como administrador. Haga clic en **Herramientas** > **Operaciones** > Consola **** Web para abrir la Configuración de la consola Web.
