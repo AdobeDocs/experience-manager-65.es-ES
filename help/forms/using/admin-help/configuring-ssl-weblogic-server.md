@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 1%
@@ -59,8 +59,8 @@ El comando keytool generalmente se encuentra en el directorio jre/bin de Java y 
    <td><p>Ubicación y nombre del archivo del almacén de claves.</p><p>La ubicación puede incluir la ruta absoluta del archivo. O bien, puede ser relativo al directorio actual del símbolo del sistema donde se introduce el comando keytool.</p></td>
    <td>
     <ul>
-     <li><p>Almacén de claves de identidad personalizado: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[nombre del servidor]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>Almacén de claves de confianza personalizado: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[nombre del servidor]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>Almacén de claves de identidad personalizado: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nombre del servidor]</i><code>/ads-ssl.jks</code></p></li>
+     <li><p>Almacén de claves de confianza personalizado: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nombre del servidor]</i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -134,7 +134,7 @@ Para obtener más información sobre el uso del comando keytool, consulte el arc
 
    >[!NOTE]
    >
-   >Reemplace `[JAVA_HOME]` con el directorio en el que está instalado JDK y reemplace `store`*_*`password`* por la contraseña del almacén de claves de identidad personalizada.*
+   >Reemplace `[JAVA_HOME]` con el directorio en el que está instalado JDK y reemplace `store`*_* `password`* por la contraseña del almacén de claves de identidad personalizada.*
 
    Por ejemplo:
 
@@ -151,7 +151,7 @@ Para obtener más información sobre el uso del comando keytool, consulte el arc
 
    >[!NOTE]
    >
-   >Reemplace `[JAVA_HOME]` con el directorio donde está instalado JDK y reemplace `store`*_*`password`y`key`*_* `password` *con sus propias contraseñas.*
+   >Reemplace `[JAVA_HOME]` con el directorio donde está instalado JDK y reemplace `store`*_* `password` y `key`*_* `password` *con sus propias contraseñas.*
 
    Por ejemplo:
 
@@ -167,7 +167,7 @@ Configure WebLogic para que utilice el almacén de claves de identidad personali
 
 1. Inicio la consola de administración de WebLogic Server escribiendo el nombre `https://`*[de ]*host`:7001/console`en la línea URL de un explorador Web.
 1. En Entorno, en Configuraciones de dominio, seleccione **Servidores > &#39;Servidor&#39; > Configuración > General**.
-1. En General, en Configuración, asegúrese de que **Escuchar puerto habilitado** y Puerto de escucha **SSL habilitado** están seleccionados. Si no está habilitado, haga lo siguiente:
+1. En General, en Configuración, asegúrese de que estén activadas **el puerto de** escucha y el puerto de escucha **SSL habilitado** . Si no está habilitado, haga lo siguiente:
 
    1. En el Centro de cambios, haga clic en **Bloquear y editar** para modificar las selecciones y los valores.
    1. Marque las casillas de verificación Puerto de **escucha habilitado** y Puerto de escucha **SSL habilitado** .
