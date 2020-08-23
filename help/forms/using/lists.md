@@ -1,15 +1,18 @@
 ---
 title: Fragmentos de documento
 seo-title: Fragmentos de documento
-description: Los fragmentos de Documento, como los fragmentos de texto, listas, condiciones y diseño, en la gestión de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia con los clientes.
-seo-description: Los fragmentos de Documento, como los fragmentos de texto, listas, condiciones y diseño, en la gestión de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia con los clientes.
+description: Los fragmentos de documento, como los fragmentos de texto, listas, condiciones y diseño, en la gestión de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia con los clientes.
+seo-description: Los fragmentos de documento, como los fragmentos de texto, listas, condiciones y diseño, en la gestión de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia con los clientes.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '6933'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ## Fragmentos de documento {#document-fragments-1}
 
-Los fragmentos de Documento son partes/componentes reutilizables de una correspondencia mediante los cuales se pueden componer cartas/correspondencia. Los fragmentos de documento son de los siguientes tipos:
+Los fragmentos de documento son partes/componentes reutilizables de una correspondencia mediante los cuales se pueden componer cartas/correspondencia. Los fragmentos de documento son de los siguientes tipos:
 
 * **Texto**: Un recurso de texto es un fragmento de contenido que consta de uno o varios párrafos de texto. Un párrafo puede ser estático o dinámico.
 * **Lista**: Lista es un grupo de fragmentos de documento, incluidos texto, listas, condiciones e imágenes. El orden de los elementos de lista puede ser fijo o editable. Al crear una carta, puede utilizar algunos o todos los elementos de lista para replicar un patrón reutilizable de elementos.
@@ -40,7 +43,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
 
 ### Create text {#create-text}
 
-1. Seleccione **Formularios** > Fragmentos **de Documento**.
+1. Seleccione **Forms** > Fragmentos **de Documento**.
 1. Toque **Crear** > **Texto** o seleccione un recurso de texto y toque **Editar**.
 1. Especifique la siguiente información para el texto:
 
@@ -58,13 +61,14 @@ La solución de administración de correspondencia admite dos tipos de elementos
 
 1. Se abre un editor de texto, introduzca el texto. Utilice la barra de herramientas situada en la parte superior de la página para dar formato al texto, insertar condiciones, vínculos y saltos de página.
 
-   [ ![Barra de herramientas](assets/advancedediting.png)
+   ![Barra de herramientas](assets/advancedediting.png)
 
    * **Vínculo**: Inserte un vínculo de [hipertexto](#insert-hyperlink) en el texto.
    * **Repetir**: Repita el elemento de recopilación de impresiones en el diccionario de datos con un delimitador.
    * **Condición**: Toque para insertar una condición. Inserte texto basado en una condición. Si la condición es verdadera, el texto está visible en letra; de lo contrario, no.
    * **Añadir descripción**: Añada la anotación en un fragmento de texto. Se trata de metadatos visibles para el autor, pero no de una parte de la carta que se crea.
    * **Salto** de página: Si establece el atributo de salto de página de un módulo de texto en false, el módulo de texto no se divide entre las páginas.
+
    Se abre un editor de texto. Escriba el texto. La barra de herramientas cambia según el tipo de edición que elija: Párrafo, alineación o Lista:
 
    ![Seleccionar tipo de barra de herramientas](assets/toolbarselection.png)
@@ -74,7 +78,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
    ![Barra de herramientas Párrafo](assets/fonteditingtoolbar.png)
 
    Barra de herramientas Párrafo
-   [ ![Alineación](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)barra de herramientasBarra de herramientas Alineación
+   [ ![Alineación,](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)barra de herramientasBarra de herramientas Alineación
 
    ![Lista, barra de herramientas](assets/bulleteditingtoolbar.png)
 
@@ -99,6 +103,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
    * Símbolos monetarios como €, ¥y £
    * Matemáticas como la adrenalina, el rey, el rey, el rey y el símbolo ^
    * Símbolos de puntuación como ‟ y&quot;
+
    ![caracteres especiales-1](assets/specialcharacters-1.png)
 
    Correspondence Management ha incorporado compatibilidad con 210 caracteres especiales. El administrador puede [añadir compatibilidad con más caracteres especiales personalizados personalizándolos](/help/forms/using/custom-special-characters.md).
@@ -119,6 +124,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
 
    * Añada un elemento de diccionario de datos en el texto, seleccione un elemento de datos de la lista y toque Insertar ( ![insertar](assets/insert.png)). Si selecciona Protegido, el elemento del diccionario de datos es de solo lectura y aparece en el editor de letras, pero no en la interfaz de usuario Crear correspondencia o Creador de correspondencia.
    * Añada un elemento de marcador de posición en el texto, en el panel Elementos de datos toque Crear nuevo, introduzca los detalles del nuevo elemento de datos y toque Crear para agregar el nuevo elemento a la lista. El nuevo marcador de posición se puede insertar en el texto del mismo modo que el elemento del diccionario de datos. Para editar un marcador de posición, selecciónelo y toque Editar.
+
    ![Elementos de marcador de posición](assets/placeholder_elements_in_xmldata.png)
 
    Elementos de marcador de posición como se especifica en el archivo de datos de ejemplo de un diccionario de datos
@@ -160,7 +166,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
    Si continúa presionando el botón Buscar, la búsqueda continúa hacia abajo en la página. Después de encontrar la última instancia del texto, el mensaje **Alcanzado final del módulo** indica que no se encontraron más resultados de búsqueda.
 
-   Sin embargo, si no se encuentra ninguna instancia del texto de búsqueda en el módulo de texto, el mensaje mostrado es: No se encontró **la coincidencia**.
+   Sin embargo, si no se encuentra ninguna instancia del texto de búsqueda en el módulo de texto, el mensaje mostrado es: **Coincidencia no encontrada**.
 
 1. Si vuelve a pulsar Buscar, la búsqueda continúa en la parte superior de la página.
 
@@ -205,7 +211,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
 ## Lista {#list}
 
-Una lista es un grupo de fragmentos de documento, incluido texto, (otros) listas, condiciones e imágenes. El orden de los elementos de lista puede ser fijo o editable. Al crear una carta, puede utilizar algunos o todos los elementos de lista para replicar un patrón reutilizable de elementos. Las Listas se comportan básicamente como destinatarios que pueden anidarse dentro de otros destinatarios.
+Una lista es un grupo de fragmentos de documento, incluido texto, (otros) listas, condiciones e imágenes. El orden de los elementos de lista puede ser fijo o editable. Al crear una carta, puede utilizar algunos o todos los elementos de lista para replicar un patrón reutilizable de elementos. Las listas se comportan básicamente como destinatarios que pueden anidarse dentro de otros destinatarios.
 
 ### Implementación de listas {#implementing-lists}
 
@@ -216,24 +222,24 @@ La implementación de listas consta de dos pasos:
 
 ### Crear una lista {#create-a-list}
 
-Una lista es un grupo de contenido relacionado que se puede utilizar en una plantilla de carta como una sola unidad. Se puede agregar cualquier tipo de contenido a una lista. También se pueden anidar Listas. Los módulos de Lista pueden especificarse como:
+Una lista es un grupo de contenido relacionado que se puede utilizar en una plantilla de carta como una sola unidad. Se puede agregar cualquier tipo de contenido a una lista. También se pueden anidar listas. Los módulos de lista pueden especificarse como:
 
 * **ORDENADO**: El orden no se puede cambiar en el tiempo de ejecución Crear correspondencia.
 * **Acceso** a biblioteca: Los usuarios pueden agregar módulos a la lista. Este indicador especifica si el acceso a la biblioteca está habilitado. Si está activada (abierta), el usuario puede agregar módulos a la lista mientras previsualiza la letra.
 * Al crear una lista, puede especificar un tipo, como:
 * **Sin formato**: No se aplica ningún formato de estilo adicional a la lista.
-* **Con viñetas**: lista con formato de viñeta simple.
-* **Numerado**: Una lista numérica con la elección de números estándar (1,2,...), romanos superiores (I, II, ...) y romanos inferiores (i, ii,...).
+* **Con viñetas**: Lista con formato de viñeta simple.
+* **Numerado**: Una lista numérica con la opción de numerales Estándar (1,2,...), Alta romana (I, II, ...) y Baja romana (i, ii,...).
 * **Escritos**: Una lista alfabética con la elección de letras en minúsculas (a,b,...) y mayúsculas (A,B,...).
 * **Personalizado**: Puede crear cualquier tipo Numerado/Escrito y los valores de prefijo y sufijo que desee.
 
-1. Seleccione **Formularios** > Fragmentos **de Documento**.
+1. Seleccione **Forms** > Fragmentos **de Documento**.
 
 1. Seleccione **Crear** > **Lista**.
 
 1. Especifique la siguiente información para la lista:
 
-   * **Título (opcional): Introduzca** el título de la lista. El título no tiene que ser único y puede tener caracteres especiales y caracteres no ingleses. Las Listas se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
+   * **Título (opcional): Introduzca** el título de la lista. El título no tiene que ser único y puede tener caracteres especiales y caracteres no ingleses. Las listas se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades de recursos.
    * **Nombre:** Nombre exclusivo de la lista. No pueden existir dos recursos (texto, condición o lista) en ningún estado con el mismo nombre. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente con el valor en el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
    * **Descripción (opcional)**: Escriba una descripción del recurso.
    * **Diccionario de datos (opcional)**: De forma opcional, seleccione el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista recursos que utilicen el mismo diccionario de datos que la lista o recursos que no tengan asignado ningún diccionario de datos. Asignar un diccionario de datos a una lista facilita que la persona que crea una plantilla de letras encuentre la lista adecuada.
@@ -300,7 +306,7 @@ El editor Condición permite especificar una condición predeterminada. Si el va
 
 ### Crear una condición {#create-a-condition}
 
-1. Seleccione **Formularios** > Fragmentos **de Documento**.
+1. Seleccione **Forms** > Fragmentos **de Documento**.
 1. Seleccione **Crear > Condición**.
 1. Especifique la siguiente información para la lista:
 
@@ -364,8 +370,8 @@ Tenga en cuenta los siguientes puntos al diseñar tablas:
 
 1. Las tablas se pueden personalizar en el momento de crear el fragmento de diseño. Sin embargo, la opción de personalización solo se activa cuando se ajusta el subformulario principal de la tabla.
 1. Para las tablas dinámicas, todos los campos, las filas y las tablas que se pueden repetir utilizan el enlace &quot;use name&quot; para que los datos se combinen correctamente.
-1. Para las tablas dinámicas, todos los DDE repetitivos enlazados a los campos de tabla forman parte de la misma jerarquía. En el caso de los DDE no repetitivos, no existe tal restricción.
-1. Cuando se combina un fragmento de diseño en tablas de área de destinatario principal, se cambia el tamaño según el espacio disponible, aunque el cambio de tamaño solo se produce cuando el fragmento de diseño no contiene ningún área de destinatario o campo directamente dentro del subformulario de nivel superior. Se permiten el área de Destinatario y los campos dentro de la tabla.
+1. En las tablas dinámicas, todos los DDE repetitivos enlazados a los campos de tabla forman parte de la misma jerarquía. En el caso de los DDE no repetitivos, no existe tal restricción.
+1. Cuando se combina un fragmento de diseño en tablas de área de destinatario principal, se cambia el tamaño según el espacio disponible, aunque el cambio de tamaño solo se produce cuando el fragmento de diseño no contiene ningún área de destinatario o campo directamente dentro del subformulario de nivel superior. Se permiten el área de destinatario y los campos dentro de la tabla.
 1. Puede crear tablas de marcador de posición. Las tablas de marcador de posición tienen una sola celda en blanco.
 
 * En el caso de las tablas de marcadores de posición, puede personalizar las siguientes propiedades en el momento de la creación del fragmento.
@@ -404,19 +410,21 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
 
    * **Filas**: Seleccione el número de filas para el diseño. El recuento de filas configurado debe ser bueno o igual al recuento de filas original.
    * **Columnas**: seleccione el número de columnas para el diseño. El recuento de columnas configurado debe ser bueno o igual al recuento de columnas original.
+
    Para cada columna se requieren los siguientes detalles:
 
    * **Encabezado**: texto para mostrar en el encabezado
    * **Pie de página**: texto para mostrar para el pie de página
    * **Tipo**: tipo de columna adicional. Campo o Área de Destinatario. El tipo está habilitado para tablas de marcador de posición estático. El tipo se puede definir en el nivel de columna y no en el nivel de celda. Todas las celdas de una columna extendida serían del mismo tipo. Para una tabla dinámica, todas las columnas son del tipo Campo. Para las tablas que no son marcadores de posición, no se puede definir el tipo de columnas adicionales. En este caso, el tipo de celdas adicionales en la columna extendida es el mismo que el tipo de la última columna de esa fila; y el tipo de celda en fila adicional es el mismo que el tipo de última celda de esa columna.
    * **Proporción de anchura:** proporción de los anchos de columna de la tabla.
+
    Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una letra](#examplewithsamplefiles).
 
 1. Toque **Guardar**.
 
 ### Cargar un XDP en la administración de correspondencias {#upload-an-xdp-to-correspondence-management}
 
-Para obtener instrucciones sobre cómo cargar e importar un XDP a la administración de correspondencia, consulte [Importación y exportación de recursos a AEM Forms](/help/forms/using/import-export-forms-templates.md).
+Para obtener instrucciones sobre cómo cargar/importar un XDP a la administración de correspondencia, consulte [Importación y exportación de recursos a AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 ### Prácticas recomendadas, sugerencias y trucos {#best-practices-tips-and-tricks-2}
 
@@ -498,6 +506,7 @@ En este ejemplo se muestra cómo crear una tabla dinámica y una tabla estática
 
    * Añada el subformulario a la columna de tabla. Asegúrese de cambiar la presentación del subformulario principal de la tabla a una posición variable y de quitar los enlaces del subformulario en la tabla.
    * Añada un subformulario a la celda de la tabla. Asegúrese de cambiar la presentación del subformulario principal de la tabla a una posición variable y de quitar los enlaces del subformulario en la tabla.
+
    O bien, utilice los XDP estáticos y dinámicos adjuntos a este paso.
 
    Para obtener más información sobre cómo trabajar con fragmentos de diseño, consulte Fragmentos [de diseño](#layoutfragments).
