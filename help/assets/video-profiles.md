@@ -1,6 +1,6 @@
 ---
-title: perfiles de vídeo
-description: Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede añadir recortes inteligentes a los vídeos.
+title: Perfiles de vídeo
+description: Dynamic Media ya incluye un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede añadir recortes inteligentes a los vídeos.
 uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 20%
@@ -19,7 +19,7 @@ ht-degree: 20%
 
 # Video profiles {#video-profiles}
 
-Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de los clientes. Esto se conoce como flujo adaptable.
+Dynamic Media ya incluye un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de los clientes. Esto se conoce como flujo adaptable.
 
 A continuación se indican otros factores que determinan la calidad de los vídeos:
 
@@ -39,7 +39,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 >
 >Para generar los metadatos de un vídeo y las miniaturas de imágenes de vídeo asociadas, el propio vídeo debe pasar por el proceso de codificación en Dynamic Media. En AEM, el flujo de trabajo de **[!UICONTROL codificación de vídeo de Dynamic Media]** codifica el vídeo si ha activado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si ha activado los Dynamic Media y ha configurado los servicios de la nube de vídeo, el flujo de trabajo de **[!UICONTROL codificación de vídeo de Dynamic Media]** surte efecto automáticamente al cargar un vídeo. (Si no utiliza medios dinámicos, el flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]** tiene efecto).
 >
->Los metadatos son útiles cuando se buscan recursos. Las miniaturas son imágenes de vídeo estáticas que se generan durante la codificación. El sistema AEM los necesita y los utiliza en la interfaz de usuario para ayudarle a identificar visualmente los vídeos en la vista de tarjetas, la vista de resultados de búsqueda y la vista de Lista de recursos. Puede ver las miniaturas generadas al tocar el icono Representaciones (paleta de un pintor) de un vídeo codificado.
+>Los metadatos son útiles cuando se buscan recursos. Las miniaturas son imágenes de vídeo estáticas que se generan durante la codificación. El sistema de AEM los necesita y los utiliza en la interfaz de usuario para ayudarle a identificar visualmente los vídeos en la vista de tarjetas, la vista de resultados de búsqueda y la vista de Lista de recursos. Puede ver las miniaturas generadas al tocar el icono Representaciones (paleta de un pintor) de un vídeo codificado.
 
 Cuando termine de crear el perfil de vídeo, se aplicará a una carpeta o varias carpetas. See [Applying a video profile to folders.](#applying-a-video-profile-to-folders)
 
@@ -105,7 +105,7 @@ Los formatos de vídeo compatibles para el recorte inteligente son MP4, MKV, MOV
 El tamaño máximo de archivo de vídeo admitido para el recorte inteligente es el siguiente criterio:
 
 * Duración de cinco minutos.
-* 30 fotogramas por segundo (FPS).
+* 30 cuadros por segundo (FPS).
 * Tamaño de archivo de 300 MB.
 
 Tenga en cuenta que Adobe Sensei está actualmente limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS más alto, la duración máxima del vídeo admitido disminuye. Por ejemplo, un vídeo de 60 FPS debe durar dos minutos y medio para que sea compatible con Adobe Sensai y con el recorte inteligente.
@@ -200,7 +200,7 @@ Si decide no utilizar la opción **[!UICONTROL Codificar para flujo adaptable]**
 Según el modo en que se esté ejecutando, los códecs de formato de vídeo admitidos son los siguientes:
 
 * Modo Dynamic Media-Scene7: H.264 (.mp4)
-* Modo Dynamic Media-híbrido: H.264 (.mp4), WebM
+* Modo Dynamic Media-Híbrido: H.264 (.mp4), WebM
 
 Consulte también [Creación de un perfil de codificación de vídeo para flujo](#creating-a-video-encoding-profile-for-adaptive-streaming)adaptable.
 
@@ -226,7 +226,7 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
    * Toque la ficha **[!UICONTROL Avanzado]** y asegúrese de que la casilla de verificación **[!UICONTROL Usar valores]** predeterminados está activada (recomendado).
 
    * Desactive la casilla de verificación **[!UICONTROL Usar valores]** predeterminados y especifique los ajustes de vídeo y audio que desee.
-Toque el icono de información situado junto a cada opción para obtener descripciones adicionales o ajustes recomendados en función del códec de formato de vídeo seleccionado.
+
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
 1. Realice una de las acciones siguientes:
@@ -256,7 +256,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
 **Para utilizar parámetros** de codificación de vídeo personalizados:
 
 1. Pulse el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite.]**
-1. En la página CRXDE Lite, en el panel Explorador de la izquierda, vaya a lo siguiente:
+1. Desde la página CRXDE Lite, en el panel Explorador de la izquierda, vaya a lo siguiente:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
@@ -313,7 +313,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    * Repita los pasos 3 y 4 para agregar otro parámetro al perfil de codificación de vídeo.
    * Cerca de la esquina superior izquierda de la página, toque **[!UICONTROL Guardar todo.]**
 
-1. En la esquina superior izquierda de la página de CRXDE Lite, toque el icono **[!UICONTROL Página de inicio]** para volver a AEM.
+1. En la esquina superior izquierda de la página CRXDE Lite, toque el icono **[!UICONTROL Atrás de inicio]** para volver a AEM.
 
 ### Edición de un perfil de vídeo {#editing-a-video-encoding-profile}
 
@@ -347,7 +347,7 @@ Pulse el icono de información para ver una descripción del flujo adaptable. (S
 1. En la página Perfil de codificación de vídeo, introduzca un nuevo nombre para el perfil.
 1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada. Pulse el icono de información para ver una descripción del flujo adaptable. (Si está copiando un perfil de vídeo progresivo, no active la casilla de verificación).
 
-   En Dynamic Media: modo híbrido, si un ajuste preestablecido de vídeo WebM forma parte del perfil de vídeo, no es posible **[!UICONTROL codificar para flujo]** adaptable porque todos los ajustes preestablecidos deben ser MP4.
+   En el modo Dynamic Media: híbrido, si un ajuste preestablecido de vídeo WebM forma parte del perfil de vídeo, no es posible **[!UICONTROL codificar para flujo]** adaptable porque todos los ajustes preestablecidos deben ser MP4.
 1. En el encabezado Ajustes preestablecidos de codificación de vídeo, agregue, edite o elimine los ajustes preestablecidos de codificación de vídeo que componen el perfil.
 
    Puntee en el icono de información que hay junto a cada opción en las fichas Básico y Avanzado para ver la configuración y las descripciones recomendadas.
@@ -400,13 +400,13 @@ Puede [supervisar el progreso de un trabajo](#monitoring-the-progress-of-an-enco
 
 ### Aplicación global de un perfil de vídeo {#applying-a-video-profile-globally}
 
-Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de AEM de cualquier carpeta tenga el perfil seleccionado aplicado.
+Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en AEM recursos de cualquier carpeta tenga el perfil seleccionado aplicado.
 
 See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 **Para aplicar un perfil de vídeo de forma global**,
 
-* Vaya a CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Añada la propiedad `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` y toque **[!UICONTROL Guardar todo.]**
+* Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Añada la propiedad `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` y toque **[!UICONTROL Guardar todo.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Puede [supervisar el progreso de un trabajo](#monitoring-the-progress-of-an-encoding-job)de procesamiento de perfil de vídeo.
@@ -434,6 +434,6 @@ Puede quitar un perfil de vídeo de una carpeta desde el menú **[!UICONTROL Her
 ### Eliminación de un perfil de vídeo de las carpetas mediante Propiedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toque o haga clic en el logotipo de AEM, vaya a **[!UICONTROL Recursos]** y, a continuación, a la carpeta desde la que desee eliminar un perfil de vídeo.
-1. En la carpeta, toque o haga clic en la marca de verificación para seleccionarla y, a continuación, toque o haga clic en **Propiedades.]**
+1. En la carpeta, toque o haga clic en la marca de verificación para seleccionarla y, a continuación, toque o haga clic en **[!UICONTROL Propiedades.]**
 1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]** y seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar y cerrar.]** Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
