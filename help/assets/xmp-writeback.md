@@ -3,9 +3,9 @@ title: Reescritura XMP en representaciones
 description: Descubra cómo la función de reescritura XMP propaga los cambios de metadatos de un recurso en todas las representaciones del recurso o en determinadas representaciones.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 5%
 
 ---
@@ -33,7 +33,7 @@ Para permitir que los cambios de metadatos se propaguen a las representaciones d
 
 1. Para abrir Configuration Manager, acceda a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra la configuración de **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
-1. Seleccione la opción **[!UICONTROL Propagar XMP[!UICONTROL ** y, a continuación, guarde los cambios.
+1. Seleccione la **[!UICONTROL opción Propagar XMP]** y, a continuación, guarde los cambios.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
