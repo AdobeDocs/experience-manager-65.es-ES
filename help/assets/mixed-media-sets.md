@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 28%
@@ -51,7 +51,7 @@ Para ayudarle en el uso inicial de los conjuntos de medios mixtos, siga estos pa
 
    Consulte [Añadir y editar ajustes preestablecidos de visor.](/help/assets/managing-viewer-presets.md)
 
-1. [Conjuntos de medios mixtos de Previsualización.](#previewing-mixed-media-sets)
+1. [Conjuntos de medios mixtos de previsualización.](#previewing-mixed-media-sets)
 
    Seleccione el conjunto de medios mixtos y puede previsualización. Haga clic en los iconos de miniaturas para examinar el conjunto de medios mixtos en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
 
@@ -71,7 +71,7 @@ Si lo necesita, puede editar los conjuntos [de medios](#editing-mixed-media-sets
 
 >[!NOTE]
 >
->Si tiene problemas al crear conjuntos, consulte [Resolución de problemas de Dynamic Media - modo](/help/assets/troubleshoot-dms7.md)Scene7.
+>Si tiene problemas al crear conjuntos, consulte [Resolución de problemas de Dynamic Media: modo](/help/assets/troubleshoot-dms7.md)Scene7.
 
 ## Carga de recursos {#uploading-assets}
 
@@ -151,10 +151,10 @@ Puede realizar varias tareas de edición de recursos en conjuntos de medios mixt
 
       >[!NOTE]
       >
-      >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Pase el ratón sobre el recurso y pulse el icono de marca de verificación para seleccionarlo. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete.]**
+      >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Pase el ratón sobre el recurso y pulse el icono de marca de verificación para seleccionarlo. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete.]**
          >
-         >    
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+         >
+      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
 1. Toque **[!UICONTROL Guardar]** cuando haya terminado de editar.
@@ -164,7 +164,7 @@ Puede realizar varias tareas de edición de recursos en conjuntos de medios mixt
    >* Para editar los recursos de un conjunto de medios mixtos, vaya al conjunto de medios mixtos. Pulse (no seleccione) el conjunto para abrirlo en la página Vista previa de conjunto de AEM. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members.]** En la página Definir miembros, coloque el puntero sobre un recurso y, a continuación, toque **[!UICONTROL Editar]** (icono de lápiz) para abrir la página de edición.
       >
       >
-   * Para eliminar un conjunto de medios mixtos completo, en cualquier modo de visualización (como la vista de tarjeta o la vista de columna), vaya al conjunto de medios mixtos. Hover on the set, then tap **Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete.]**
+   * Para eliminar un conjunto de medios mixtos completo, en cualquier modo de visualización (como la vista de tarjeta o la vista de columna), vaya al conjunto de medios mixtos. Hover on the set, then tap **Select** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete.]**
 
 
 ## Vista previa de conjuntos de medios mixtos {#previewing-mixed-media-sets}
