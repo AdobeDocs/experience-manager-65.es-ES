@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3853'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Siga estos pasos para utilizar Adobe Sign en un formulario adaptable existente:
 
 Adobe Sign tiene varios campos que se pueden colocar en un formulario adaptable. Estos campos aceptan varios tipos de datos, como firmas, iniciales, compañía o título, y ayudan a recopilar información adicional durante la firma, junto con las firmas. Puede utilizar el componente Bloque de Adobe Sign para colocar los campos de Adobe Sign en varias ubicaciones en un formulario adaptable.
 
-Siga estos pasos para agregar campos a un formulario adaptable y personalizar varias opciones relacionadas con estos campos:
+Siga estos pasos para agregar campos a un formulario adaptable y personalizar diversas opciones relacionadas con estos campos:
 
 1. Arrastre y suelte el componente Bloque **de** Adobe Sign desde el navegador de componentes al formulario adaptable. El componente Bloque de Adobe Sign tiene todos los campos de Adobe Sign admitidos. De forma predeterminada, agrega un campo de **firma** al formulario adaptable.
 
@@ -289,7 +289,7 @@ Realice los siguientes pasos para configurar el componente Paso de firma:
       > 
    * Utilice el componente Paso de resumen después del paso de firma para disfrutar de una experiencia óptima. El paso Resumen envía el formulario automáticamente e inmediatamente después de haber completado la firma de un formulario en el componente Paso de firma. Si no utiliza el paso de resumen, un envío automático se activa únicamente después del intervalo establecido mediante el servicio [de configuración de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status)Adobe Sign.
    > * Algunas prácticas recomendadas son:
-   > * El panel de formulario adaptable que contiene el paso Firma siempre se encuentra en el último o segundo panel de un formulario adaptable. Puede ser el segundo último panel solo cuando el último panel contiene el paso Resumen.
+   > * El panel Formulario adaptable que contiene el paso Firma siempre se encuentra en el último o segundo panel de un formulario adaptable. Puede ser el segundo último panel solo cuando el último panel contiene el paso Resumen.
    > * El panel que contiene el componente de paso Firma o Resumen no puede contener ningún otro componente.
    > * Los formularios adaptables que contengan Paso de firma no pueden tener botón de envío. El envío se realiza mediante un servicio en segundo plano o el paso Resumen.
    > * Diseñe el formulario para que un usuario no pueda desplazarse hacia atrás desde un panel que contenga el paso Firma o Resumen.
@@ -347,6 +347,4 @@ Ahora, la experiencia de firma de formularios en curso está lista. Puede previs
 
 * [Integrar Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [Uso de Adobe Sign en un formulario adaptable](../../forms/using/working-with-adobe-sign.md)
-
-* [Uso de Adobe Sign con AEM Forms (vídeo)
-   ](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Uso de Adobe Sign con AEM Forms (vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
