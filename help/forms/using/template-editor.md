@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1984'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Por ejemplo, desea que todos los autores de formularios tengan determinados cuad
 
 ## Uso de plantillas {#working-with-templates}
 
-Para acceder al editor de plantillas desde el menú Herramientas, vaya a **Adobe Experience Manager > Herramientas > Plantillas**. Aquí, las plantillas están organizadas en carpetas habilitadas para plantillas editables. AEM proporciona una carpeta global para organizar plantillas. Sin embargo, no está activado de forma predeterminada. Puede solicitar al administrador que habilite la carpeta global o que cree una nueva carpeta para plantillas. Para obtener más información sobre cómo crear carpetas, consulte Carpetas [de plantillas](/help/sites-developing/page-templates-editable.md).
+Para acceder al editor de plantillas desde el menú Herramientas, vaya a **Adobe Experience Manager > Herramientas > Plantillas**. Aquí, las plantillas están organizadas en carpetas habilitadas para plantillas editables. AEM proporciona una carpeta global para organizar las plantillas. Sin embargo, no está activado de forma predeterminada. Puede solicitar al administrador que habilite la carpeta global o que cree una nueva carpeta para plantillas. Para obtener más información sobre cómo crear carpetas, consulte Carpetas [de plantillas](/help/sites-developing/page-templates-editable.md).
 
 Una vez que toque para abrir una carpeta, encontrará un botón Crear que permite crear una nueva plantilla para formularios adaptables.
 
@@ -45,13 +48,13 @@ Puede proporcionar una descripción y una miniatura que podrá ver cuando selecc
 
 ### IU del editor de plantillas {#template-editor-ui}
 
-Al abrir una plantilla para editarla, puede ver los siguientes componentes de AEM Editor:
+Al abrir una plantilla para editarla, se pueden ver los siguientes componentes AEM Editor:
 
 * **Barra de herramientas** Página Contiene las siguientes opciones:
 
    * **Alternar panel** lateral: Permite mostrar u ocultar la barra lateral.
    * **Información** de página: Permite especificar información como, por ejemplo, la hora de publicación/cancelación de publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca del lado del cliente de diseño de página.
-   * **Emulador**: Permite simular y personalizar el aspecto de distintos dispositivos.
+   * **Emulador**: Permite simular y personalizar el aspecto de los distintos dispositivos.
    * **Selector de capas:** Permite cambiar la capa.
 Puede elegir la capa **Estructura** o Contenido **** inicial. La capa de estructura permite agregar y personalizar el encabezado y el pie de página. La capa Contenido inicial permite personalizar el contenido del formulario.
 
@@ -76,11 +79,11 @@ El selector de capas está disponible junto a la opción de Previsualización en
 
 Al seleccionar la capa de estructura en el Editor de plantillas, se pueden ver los contenedores de diseño encima y debajo del Contenedor Formulario adaptable. Los autores pueden utilizar estos contenedores de diseño para el encabezado y el pie de página. Puede agregar, editar o personalizar el encabezado y el pie de página. Arrastre y suelte el componente Encabezado de formulario adaptable en el contenedor de presentación encima del Contenedor Formulario adaptable para personalizar el encabezado de la plantilla. Arrastre y suelte el componente Pie de página del formulario adaptable en el contenedor de presentación debajo del Contenedor Formulario adaptable para personalizar el pie de página de la plantilla.
 
-![contenedor de diseño en la capa de estructura](assets/header-layer-selector.png)
+![Contenedor de diseño en la capa de estructura](assets/header-layer-selector.png)
 
-contenedores de diseño en la capa de estructura
+Contenedores de diseño en la capa de estructura
 
-**A.** contenedor de diseño para el componente **B de encabezado.** contenedor de diseño para el componente Pie de página
+**A.** Contenedor de diseño para el componente **B de encabezado.** Contenedor de diseño para el componente Pie de página
 
 Arrastre y suelte el componente Encabezado de formulario adaptable en el contenedor de presentación encima del Contenedor Formulario adaptable. Después de agregar el componente, puede especificar sus propiedades que le permiten agregar un logotipo y proporcionar su título.
 
@@ -119,7 +122,7 @@ Consulte [Barra lateral](../../forms/using/introduction-forms-authoring.md#sideb
 >
 >Al seleccionar Almacenar contenido o StorePDF como acción de envío, se obtiene una opción para especificar la ruta de Almacenamiento. Si especifica una ruta en la plantilla, todos los formularios creados a partir de ella tendrán la misma ruta. Puede especificar la ruta de almacenamiento correcta o asegurarse de que los autores de formularios la actualicen para evitar que los datos de todos los formularios se almacenen en la misma ubicación.
 
-#### Creación de una plantilla de formulario adaptable con fichas y paneles {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Creación de una plantilla de formulario adaptable con fichas y paneles  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Por ejemplo, desea crear una plantilla con las fichas siguientes:
 
@@ -139,11 +142,9 @@ Para crear las fichas Información general e Información profesional, agregue d
 
 #### Añadir contenido en fichas {#adding-content-in-tabs}
 
-[ ![Añadir campos en la plantilla de formulario adaptable](assets/template-edit-initial-content.png)
+![Añadir campos en la plantilla de formulario adaptable](assets/template-edit-initial-content.png)
 
-Añadir campos en la plantilla
-
-](assets/template-edit-initial-content-1.png) Después de agregar paneles y estructurarlos como fichas, puede agregar campos dentro de las fichas. Cuando selecciona una ficha en el editor, puede ver la opción **Arrastrar componentes aquí** . Puede arrastrar y soltar componentes como cuadros de texto, elementos de lista y botones. Puede arrastrar y soltar componentes desde el navegador de componentes en la barra lateral.
+Después de agregar paneles y estructurarlos como fichas, puede agregar campos dentro de las fichas. Cuando selecciona una ficha en el editor, puede ver la opción **Arrastrar componentes aquí** . Puede arrastrar y soltar componentes como cuadros de texto, elementos de lista y botones. Puede arrastrar y soltar componentes desde el navegador de componentes en la barra lateral.
 
 Cada componente tiene propiedades que mejoran la captura y manipulación de datos. Por ejemplo, puede activar la propiedad **Required field** de un componente. Los autores pueden especificar un mensaje que sus clientes verán cuando omitan rellenar un campo obligatorio. Especifique el mensaje en la propiedad Mensaje **de campo** requerido.
 
@@ -163,13 +164,13 @@ Al crear un formulario adaptable, puede ver la plantilla en la lista cuando se l
 
 ## Importación o exportación de una plantilla {#importing-or-exporting-a-template}
 
-Un formulario funciona con su plantilla. Cuando se descarga un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en una instancia de AEM Forms diferente, se importa sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesa. Puede empaquetar la plantilla personalizada desde el `/conf` nodo en `https://<server>:<port>/crx/packmgr`y portarla en la instancia de AEM Forms en la que desee cargar el formulario.
+Un formulario funciona con su plantilla. Cuando se descarga un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en una instancia de AEM Forms diferente, se importa sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesa. Puede empaquetar la plantilla personalizada desde `/conf` el nodo en `https://<server>:<port>/crx/packmgr`y portarla en la instancia de AEM Forms donde desee cargar el formulario.
 
 ## Creación de un formulario adaptable mediante la plantilla {#creating-an-adaptive-form-using-the-template}
 
 Después de crear y activar una plantilla, estará disponible en el administrador de formularios al crear un formulario adaptable. Para utilizar una plantilla y crear un formulario adaptable, consulte [Creación de un formulario](../../forms/using/creating-adaptive-form.md)adaptable.
 
-## Cambiar la opción de visualización de las plantillas listas para usar {#change-display-option-of-out-of-the-box-templates}
+## Cambiar la opción de visualización de las plantillas listas para usar  {#change-display-option-of-out-of-the-box-templates}
 
 Puede crear plantillas personalizadas para formularios adaptables para definir la estructura básica y el contenido inicial. AEM Forms también proporciona un conjunto de plantillas integradas para formularios adaptables. Puede elegir mostrar u ocultar las plantillas.
 
@@ -179,12 +180,12 @@ Siga estos pasos para mostrar y ocultar plantillas:
 
    >[!NOTE]
    >
-   >La URL de la consola web de AEM es https://&#39;[server]:[port]&#39;/system/console/configMgr
+   >La dirección URL de AEM consola web es https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Localice y abra la configuración **de** FormsManager:
 
    * Para mostrar u ocultar la plantilla de formularios adaptables, marque o desmarque la opción **Incluir fuera de la casilla Plantillas** AF y AD.
-   * Para mostrar u ocultar las plantillas de formulario adaptables que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 Forms pero que ahora están en desuso, active o desactive la opción **Incluir plantillas** AEM 6.0 AF. Si esta opción está activada, para que surta efecto, requiere que se habilite la configuración **Incluir fuera de la casilla Plantillas** AF y AD.
+   * Para mostrar u ocultar las plantillas de formulario adaptables que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 de Forms, pero que ahora están en desuso, active o desactive la opción **Incluir plantillas** AF AEM 6.0. Si esta opción está activada, para que surta efecto, requiere que se habilite la configuración **Incluir fuera de la casilla Plantillas** AF y AD.
 
 1. Haga clic en **Guardar.** Se cambian las opciones de visualización de las plantillas listas para usar.
 
