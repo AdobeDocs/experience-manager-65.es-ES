@@ -1,8 +1,8 @@
 ---
 title: Creación de apariencias personalizadas en formularios HTML5
 seo-title: Creación de apariencias personalizadas en formularios HTML5
-description: Puede conectar widgets personalizados a formularios móviles. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
-seo-description: Puede conectar widgets personalizados a formularios móviles. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
+description: Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
+seo-description: Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Creación de apariencias personalizadas en formularios HTML5{#create-custom-appearances-in-html-forms}
 
-Puede conectar widgets personalizados a formularios móviles. Puede ampliar las utilidades de jQuery existentes o desarrollar sus propias utilidades personalizadas mediante el marco de apariencias. El motor XFA utiliza varios widgets; consulte Marco de [apariencia para formularios](/help/forms/using/introduction-widgets.md) adaptables y HTML5 para obtener información detallada.
+Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar las utilidades de jQuery existentes o desarrollar sus propias utilidades personalizadas mediante el marco de apariencias. El motor XFA utiliza varios widgets; consulte Marco de [apariencia para formularios](/help/forms/using/introduction-widgets.md) adaptables y HTML5 para obtener información detallada.
 
 ![Ejemplo de utilidad predeterminada y personalizada](assets/custom-widgets.jpg)
 
@@ -92,10 +92,14 @@ window.formBridge.registerConfig("widgetConfig",
 
 La configuración de la utilidad se proporciona como un objeto JSON (una colección de pares de valor clave) donde la clave identifica los campos y el valor representa la utilidad que se utilizará con esos campos. Se muestra una configuración de ejemplo:
 
+```
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,&quot;identifier2&quot; : &quot;customwidgetname2&quot;,...
+*“identifier1” : “customwidgetname”,
+“identifier2” : “customwidgetname2”,
+..
 }*
+```
 
 donde &quot;identificador&quot; es un selector CSS de jQuery que representa un campo en particular, un conjunto de campos de un tipo en particular o todos los campos. La siguiente lista el valor del identificador en diferentes casos:
 
