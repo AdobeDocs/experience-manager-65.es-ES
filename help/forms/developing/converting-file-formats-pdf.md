@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '7842'
 ht-degree: 0%
@@ -30,7 +30,7 @@ El servicio Generar PDF utiliza aplicaciones nativas para convertir los siguient
 
 >[!NOTE]
 >
->Se requiere Acrobat® 9.2 o posterior para convertir el formato de Microsoft XPS a PDF.
+>Se requiere Acrobat® 9.2 o posterior para convertir el formato Microsoft XPS a PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 y 2009 para convertir DWF, DWG y DXW (solo en inglés)
 * Corel WordPerfect 12 y X4 para convertir WPD, QPW, SHW (solo en inglés)
@@ -71,10 +71,10 @@ El servicio Generar PDF convierte PDF a los siguientes formatos de archivo (solo
 El servicio Generar PDF requiere que realice estas tareas administrativas:
 
 * Instalar las aplicaciones nativas necesarias en el equipo que aloja AEM Forms
-* Instalación de Adobe Acrobat Professional o Acrobat Pro Extended 9.2 en el equipo con AEM Forms
+* Instale Adobe Acrobat Professional o Acrobat Pro Extended 9.2 en el equipo con AEM Forms
 * Realizar tareas de configuración posteriores a la instalación
 
-Estas tareas se describen en Instalación e implementación de formularios AEM mediante JBoss Turnkey.
+Estas tareas se describen en Instalación e implementación de formularios AEM con JBoss Turnkey.
 
 Puede realizar estas tareas mediante el servicio Generar PDF:
 
@@ -215,7 +215,7 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -372,7 +372,7 @@ Convertir contenido HTML en un documento PDF mediante la API de generación de P
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -523,7 +523,7 @@ Convertir un documento PDF en un archivo RTF mediante la API de generación de P
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -574,7 +574,7 @@ Esta sección también explica lo siguiente:
 
 ### Interacciones de componentes {#component-interactions}
 
-El servicio Generar PDF convierte los formatos de archivo nativos invocando la aplicación asociada al formato de archivo y, a continuación, interactuando con la aplicación para imprimir el documento con la impresora predeterminada. La impresora predeterminada debe configurarse como impresora Adobe PDF.
+El servicio Generar PDF convierte los formatos de archivo nativos invocando la aplicación asociada al formato de archivo y, a continuación, interactuando con la aplicación para imprimir el documento con la impresora predeterminada. La impresora predeterminada debe configurarse como la impresora Adobe PDF.
 
 En esta ilustración se muestran los componentes y los controladores involucrados en la compatibilidad con aplicaciones nativas. También menciona los gramáticas XML que influyen en las interacciones.
 
@@ -698,7 +698,7 @@ En esta sección se describen las tareas que debe realizar para admitir otros fo
 
 Antes de agregar o modificar la compatibilidad, debe completar las siguientes tareas.
 
-#### Selección de una herramienta para identificar los elementos de la ventana {#choosing-a-tool-for-identifying-window-elements}
+#### Selección de una herramienta para identificar elementos de ventana {#choosing-a-tool-for-identifying-window-elements}
 
 Los archivos XML de cuadro de diálogo y secuencia de comandos requieren que identifique el elemento de ventana (cuadro de diálogo, campo u otro componente de cuadro de diálogo) al que responde el elemento de cuadro de diálogo o de secuencia de comandos. Por ejemplo, después de que una secuencia de comandos invoque un menú para una aplicación nativa, la secuencia de comandos debe identificar el elemento de ventana de ese menú al que se deben aplicar las pulsaciones de teclas o una acción.
 
@@ -715,7 +715,7 @@ Si los atributos no identifican un rótulo, puede identificar un elemento de ven
 Tenga en cuenta estos problemas:
 
 * Microsoft Spy++ muestra los rótulos mediante un símbolo &amp; (&amp;) para identificar la tecla de marcación rápida del rótulo. Por ejemplo, Spy++ muestra el rótulo de un cuadro de diálogo Imprimir como `Pri&nt`, lo que indica que la tecla de marcación rápida es *n*. Los títulos de rótulos de los archivos XML de secuencias de comandos y cuadros de diálogo deben omitir los ampersand.
-* Algunos rótulos incluyen saltos de línea. el servicio Generar PDF no puede identificar saltos de línea. Si un rótulo incluye un salto de línea, incluya suficiente del rótulo para diferenciarlo de los demás elementos de menú y, a continuación, utilice expresiones regulares para el artículo omitido. Un ejemplo es ( `^Long caption title$`).]. (Consulte [Uso de expresiones regulares en los atributos](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)de rótulos).
+* Algunos rótulos incluyen saltos de línea. el servicio Generar PDF no puede identificar saltos de línea. Si un rótulo incluye un salto de línea, incluya suficiente del rótulo para diferenciarlo de los demás elementos de menú y, a continuación, utilice expresiones regulares para el artículo omitido. Un ejemplo es ( `^Long caption title$`). (Consulte [Uso de expresiones regulares en los atributos](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)de rótulos).
 * Utilice entidades de caracteres (también denominadas secuencias de escape) para caracteres XML reservados. Por ejemplo, utilice `&` para los ampersands `<` y `>` para los símbolos menor que y bueno, `&apos;` para los apóstrofos y `&quot;` para las comillas.
 
 Si planea trabajar en archivos XML de cuadros de diálogo o secuencias de comandos, debe instalar la aplicación Microsoft Spy++.
@@ -773,7 +773,7 @@ Utilice Microsoft Spy++ para obtener las identidades de las propiedades del elem
 
 Puede utilizar expresiones regulares en las especificaciones de rótulos. El servicio Generar PDF utiliza la `java.util.regex.Matcher` clase para admitir expresiones regulares. Esa utilidad apoya las expresiones ordinarias descritas en `java.util.regex.Pattern`. (Vaya al sitio web de Java en [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html)).
 
-**expresión regular que acomoda el nombre de archivo antepuesto al Bloc de notas en el letrero Bloc de notas**
+**Expresión regular que acomoda el nombre de archivo antepuesto al Bloc de notas en el letrero Bloc de notas**
 
 ```xml
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. -->
@@ -784,7 +784,7 @@ Puede utilizar expresiones regulares en las especificaciones de rótulos. El ser
  </step>
 ```
 
-**expresión regular que diferencia la configuración de impresión de la configuración de impresión**
+**Expresión regular que diferencia la configuración de impresión de la configuración de impresión**
 
 ```xml
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. -->
