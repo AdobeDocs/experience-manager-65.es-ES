@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4360'
+source-wordcount: '4353'
 ht-degree: 15%
 
 ---
@@ -43,7 +43,7 @@ Consulte también Accesibilidad [del teclado y navegación](https://docs.adobe.c
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
-Puede añadir, editar, eliminar, publicar y cancelar la publicación y previsualizar ajustes preestablecidos de visualizador en AEM al pulsar **[!UICONTROL Herramientas** (icono del martillo) **[!UICONTROL > Assets > Ajustes preestablecidos de visualizador.]**
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets > Viewer Presets.]**
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -117,7 +117,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
     <ul>
      <li>Proporción de aspecto de 2:1.</li>
      <li>Etiquetado con las palabras clave <code>equirectangular</code>, o <code>spherical</code> y <code>panorama</code>, o <code>spherical </code>y <code>panoramic</code>. Consulte <a href="/help/sites-authoring/tags.md">Uso de etiquetas</a>.</li>
-    </ul> <p>Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM "Panoramic Media".</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media - Scene7.</p> </td>
+    </ul> <p>Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM "Panoramic Media".</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media: Scene7.</p> </td>
   </tr>
   <tr>
    <td><strong>Recorte inteligente de vídeos</strong><br /> </td>
@@ -129,7 +129,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
   </tr>
   <tr>
    <td><strong>Vídeo 360</strong></td>
-   <td><p>Utilice el visor de vídeo 360/VR para representar vídeos equirectangulares para una experiencia de visualización envolvente de una sala, propiedad, ubicación, paisaje o procedimiento médico.</p> <p>Durante la reproducción en una pantalla plana, el usuario controla el ángulo de visualización; la reproducción en dispositivos móviles suele aprovechar los controles giroscópicos integrados.</p> <p>El visor incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media - Scene7.</p> </td>
+   <td><p>Utilice el visor de vídeo 360/VR para representar vídeos equirectangulares para una experiencia de visualización envolvente de una sala, propiedad, ubicación, paisaje o procedimiento médico.</p> <p>Durante la reproducción en una pantalla plana, el usuario controla el ángulo de visualización; la reproducción en dispositivos móviles suele aprovechar los controles giroscópicos integrados.</p> <p>El visor incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media: Scene7.</p> </td>
   </tr>
   <tr>
    <td><strong>Vídeo</strong></td>
@@ -152,7 +152,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 ### Lista de ajustes preestablecidos de visor integrados {#list-of-out-of-the-box-viewer-presets}
 
-En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
+En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos e integrados con Dynamic Media.
 
 Consulte también Demostraciones [en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -353,7 +353,7 @@ La siguiente tabla identifica los gestos del visor móvil que se admiten en disp
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Tocar Doble</strong></p> </td>
+   <td><p><strong>Tocar doble</strong></p> </td>
    <td><p>No se aplica</p> </td>
    <td><p>Acerca o restablece</p> </td>
    <td><p>Acerca o restablece</p> </td>
@@ -408,7 +408,7 @@ AEM muestra una amplia variedad de ajustes preestablecidos de visor al ver recur
 
 La creación de ajustes preestablecidos de visor permite aplicar varios ajustes a la vista e interactuar con los recursos. Sin embargo, no es necesario crear nuevos ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visor predeterminados y listos para usar que ya vienen con AEM Assets.
 
-Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (se establece en **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Medios interactivos y siempre que se previsualización una imagen o un vídeo.
+Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (se establece en **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Interactive Media y siempre que se previsualización una imagen o un vídeo.
 
 Algunos ajustes preestablecidos de visor tienen una configuración exclusiva que puede afectar al uso y al comportamiento general del visor. Según el ajuste preestablecido de visor que esté creando, es posible que desee tener en cuenta estas consideraciones especiales.
 
@@ -418,7 +418,7 @@ Consulte Consideraciones [especiales para crear un ajuste preestablecido](#speci
 
 **Creación de un ajuste preestablecido de visor**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -488,7 +488,7 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
   </tr>
   <tr>
    <td>Segmento</td>
-   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos y ajustes preestablecidos del visor de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code> cualquier ajuste preestablecido del visor de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización, las miniaturas de los subsegmentos siguientes o anteriores <i>no se </i>extraen para rellenar ninguna zona vacía del panel. Es decir, conserva la visualización de muestras asignadas al segmento de vídeo en particular.</p> </td>
+   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos y ajustes preestablecidos del visor de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code> cualquier ajuste preestablecido del visor de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización, las miniaturas de los subsegmentos siguiente o anterior <i>no se </i>extraen para rellenar las áreas vacías del panel. Es decir, conserva la visualización de muestras asignadas al segmento de vídeo en particular.</p> </td>
   </tr>
   <tr>
    <td>Continua</td>
@@ -530,7 +530,7 @@ Utilizando el ejemplo de la tabla anterior, 30 segundos / 3 subsegmentos de víd
 
 #### Consideraciones especiales para crear ajustes preestablecidos de visor de letreros carrusel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
-Al crear ajustes preestablecidos del visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
+Al crear ajustes preestablecidos de visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
 
 |  | **Descripción** | **Acciones** |
 |---|---|---|
@@ -542,14 +542,14 @@ Los ajustes preestablecidos de visor disponibles en la interfaz de usuario depen
 
 **Para activar o desactivar ajustes preestablecidos de visor**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
 1. En la página Ajustes preestablecidos de visor, en el encabezado de la columna **[!UICONTROL Estado]** , toque el botón de alternancia para activar o desactivar un ajuste preestablecido de visor.
 
    Los ajustes preestablecidos de visor activados tienen la opción de alternar a la derecha, dentro de un cuadro azul; los ajustes preestablecidos de visor desactivados tienen la opción de alternar a la izquierda, dentro de un cuadro gris claro.
 
 ## Ajustes preestablecidos del visor de publicaciones {#publishing-viewer-presets}
 
-Al activar (o activar) el estado de un ajuste preestablecido de visor, se hace visible en el componente Dynamic Media, el componente de medios interactivos y siempre que se vista un recurso.
+Al activar (o activar) el estado de un ajuste preestablecido de visor, se muestra visible en el componente Dynamic Media, en el componente Interactive Media y siempre que se vista un recurso.
 
 Sin embargo, para entregar* *un recurso con un ajuste preestablecido de visualizador, también se debe publicar el ajuste preestablecido de visualizador. Todos los ajustes preestablecidos de visualizador se deben activar *y *publicar para obtener la URL o el código incrustado de un recurso. Debe activar y publicar todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
 
@@ -559,13 +559,13 @@ Consulte también [Vista previa de recursos](/help/assets/previewing-assets.md).
 
 **Para publicar ajustes preestablecidos de visor**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
 1. Seleccione uno o varios ajustes preestablecidos de visor que desee publicar.
 1. En la barra de herramientas, toque el icono **[!UICONTROL Publicar]** .
 
 ## Ordenación de ajustes preestablecidos de visor {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
 1. Haga clic en **[!UICONTROL Título preestablecido]**, **[!UICONTROL Tipo]**, **[!UICONTROL Publicado]** o **[!UICONTROL Estado]** para ordenar por ese encabezado de la columna. Por ejemplo, haga clic en **[!UICONTROL Tipo]** para ordenar los tipos de ajustes preestablecidos de visualizador en orden alfabético o alfabético inverso.
 
 ## Edición de ajustes preestablecidos de visor {#editing-viewer-presets}
@@ -574,7 +574,7 @@ Tenga en cuenta que la edición de cualquier ajuste preestablecido de visor *pre
 
 **Para editar ajustes preestablecidos de visor**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets.]**
 1. Seleccione un ajuste preestablecido marcando la casilla a la izquierda del título del ajuste preestablecido de visor.
 1. En la barra de herramientas, toque **[!UICONTROL Editar.]**
 1. En la página **[!UICONTROL Editor]** de ajustes preestablecidos de visualizador, realice los cambios que desee con las opciones que se encuentran en las pestañas **[!UICONTROL Aspecto]** y **[!UICONTROL Comportamiento]**.
