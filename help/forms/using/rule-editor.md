@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6822'
+source-wordcount: '6814'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones de usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
+La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
 
 El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas oferta un editor visual para todos los usuarios. Además, solo para usuarios con poder de formularios, el editor de reglas proporciona un editor de código para escribir reglas y secuencias de comandos. Algunas de las acciones clave que se pueden realizar con objetos de formulario adaptables mediante reglas son:
 
@@ -334,11 +334,10 @@ Para iniciar la interfaz de usuario del editor de reglas:
    Todas las reglas existentes en los objetos de formulario seleccionados se muestran en esta vista. Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](../../forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Toque **[!UICONTROL Crear]** para escribir una nueva regla. El editor visual de la interfaz de usuario del editor de reglas se abre de forma predeterminada cuando se inicia el editor de reglas por primera vez.
-[ IU ![del editor de reglas](assets/rule-editor-ui.png)
 
-   Haga clic para vista de la imagen ampliada
+   ![UI del editor de reglas](assets/rule-editor-ui.png)
 
-   ](assets/rule-editor-ui-1.png)Observemos en detalle cada componente de la interfaz de usuario del editor de reglas.
+Veamos en detalle cada componente de la interfaz de usuario del editor de reglas.
 
 ### A. Pantalla de regla de componente {#a-component-rule-display}
 
@@ -376,7 +375,7 @@ Para obtener más información sobre el uso del editor de reglas visuales, consu
 
 Los usuarios del grupo de usuarios avanzados de formularios pueden acceder al editor de código. Para otros usuarios, el editor de código no está disponible. Si tiene los derechos, puede cambiar del modo de editor visual al modo de editor de código del editor de reglas, y viceversa, con el conmutador situado justo encima del editor de reglas. Cuando se inicia el editor de reglas por primera vez, se abre en el modo de editor visual. Puede escribir reglas en el modo de editor visual o cambiar al modo de editor de código para escribir una secuencia de comandos de regla. Sin embargo, tenga en cuenta que si modifica una regla o escribe una regla en el editor de código, no podrá volver al editor visual de esa regla a menos que borre el editor de código.
 
-Los AEM Forms realizan el seguimiento del modo de editor de reglas utilizado por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Sin embargo, también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
+AEM Forms realiza el seguimiento del modo de editor de reglas utilizado por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Sin embargo, también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
 
 1. Vaya a AEM consola web en `https://[host]:[port]/system/console/configMgr`.
 1. Haga clic para editar el servicio **[!UICONTROL de configuración de formularios]** adaptables.
@@ -725,7 +724,7 @@ Para copiar y pegar reglas, haga lo siguiente:
 
 1. Toque **Hecho** para guardar la regla.
 
-## expresiones anidadas {#nestedexpressions}
+## Expresiones anidadas {#nestedexpressions}
 
 El editor de reglas permite utilizar varios operadores Y y O para crear reglas anidadas. Puede combinar varios operadores Y y O en las reglas.
 
@@ -765,9 +764,9 @@ Cuando el usuario indica que ha vivido en su domicilio actual durante menos de 3
 
 ## Impacto del editor de reglas en secuencias de comandos existentes {#impact-of-rule-editor-on-existing-scripts}
 
-En las versiones de AEM Forms anteriores al paquete de funciones 1 de Forms de AEM 6.1, los creadores y desarrolladores de formularios solían escribir expresiones en la ficha Secuencias de comandos del cuadro de diálogo Editar componente para añadir un comportamiento dinámico a los formularios adaptables. La ficha Secuencias de comandos ahora se reemplaza por el editor de reglas.
+En las versiones de AEM Forms anteriores a AEM 6.1, el paquete de funciones 1 de Forms, los creadores y desarrolladores de formularios solían escribir expresiones en la ficha Secuencias de comandos del cuadro de diálogo Editar componente para añadir un comportamiento dinámico a los formularios adaptables. La ficha Secuencias de comandos ahora se reemplaza por el editor de reglas.
 
-Las secuencias de comandos o expresiones que debe haber escrito en la ficha Secuencias de comandos están disponibles en el editor de reglas. Aunque no puede realizar vistas ni editarlas en un editor visual, si forma parte del grupo de usuarios avanzados de formularios, puede editar las secuencias de comandos en el editor de código.
+Las secuencias de comandos o expresiones que debe haber escrito en la ficha Secuencias de comandos están disponibles en el editor de reglas. Aunque no puede realizar vistas ni editarlas en un editor visual, si forma parte del grupo de usuarios avanzados de formularios puede editar las secuencias de comandos en el editor de código.
 
 ## Reglas de ejemplo {#example}
 
