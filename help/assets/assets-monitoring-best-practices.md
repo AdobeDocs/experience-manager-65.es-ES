@@ -3,9 +3,9 @@ title: Prácticas recomendadas para [!DNL Adobe Experience Manager Assets] super
 description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la [!DNL Adobe Experience Manager] implementación después de implementarla.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1671'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Normalmente, estas herramientas se utilizan juntas para obtener una idea complet
 
 >[!NOTE]
 >
->Estas herramientas son herramientas estándar y no son compatibles directamente con Adobe. No requieren licencias adicionales.
+>Estas herramientas son herramientas estándar y no son directamente compatibles con Adobe. No requieren licencias adicionales.
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
@@ -60,9 +60,9 @@ La supervisión a largo plazo de una [!DNL Experience Manager] implementación i
 
 Existen varias herramientas disponibles para los registros acumulados, por ejemplo Splunk(TM) y Elastic Search, Logstash y Kabana (ELK). Para evaluar el tiempo de actividad de su [!DNL Experience Manager] implementación, es importante que comprenda los eventos de registro específicos del sistema y cree alertas basadas en ellos. Un buen conocimiento de las prácticas de desarrollo y operaciones puede ayudarle a comprender mejor cómo ajustar el proceso de agregación de registros para generar alertas críticas.
 
-### Supervisión de Entornos {#environment-monitoring}
+### Supervisión de entornos {#environment-monitoring}
 
-La supervisión del Entorno incluye la supervisión de lo siguiente:
+La supervisión del entorno incluye la supervisión de lo siguiente:
 
 * Rendimiento de red
 * E/S de disco
@@ -95,7 +95,7 @@ Memoria
 * Umbral de alarma: Cuando la utilización de la memoria del montón o sin montón excede el 75% de la memoria máxima correspondiente.
 * Definición de alarma: La memoria del sistema es insuficiente o hay una fuga de memoria en el código. Analice un volcado de subprocesos para llegar a una definición.
 
->[!Note]
+>[!NOTE]
 >
 >La información proporcionada por este grano se expresa en bytes.
 
@@ -122,7 +122,7 @@ Agentes de replicación
 
 * Definición de alarma: Presencia de una cola bloqueada en el sistema que indica que el destinatario de replicación está inactivo o inaccesible. A menudo, los problemas de red o infraestructura hacen que se pongan en cola entradas excesivas, lo que puede afectar negativamente al rendimiento del sistema.
 
->[!Note]
+>[!NOTE]
 >
 >Para los parámetros MBean y URL, reemplace `<AGENT_NAME>` por el nombre del agente de replicación que desee monitorear.
 
@@ -198,5 +198,5 @@ En el proceso de supervisión, si se producen problemas, se presentan algunas ta
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan correctamente. Si es posible, condense varios flujos de trabajo en un único flujo de trabajo.
 * Revisa el monitoreo en vivo y busca cuellos de botella adicionales o altos consumidores de cualquier recurso específico.
 * Investigue los puntos de salida desde la red del cliente y los puntos de entrada a la red de implementación, incluido el despachante. [!DNL Experience Manager] A menudo, estas son áreas de cuello de botella. Para obtener más información, consulte Consideraciones [de red de](/help/assets/assets-network-considerations.md)Assets.
-* Aumente el tamaño del [!DNL Experience Manager] servidor. Es posible que no tenga un tamaño adecuado para la [!DNL Experience Manager] implementación. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si el servidor tiene un tamaño inferior al normal.
+* Aumente el tamaño del [!DNL Experience Manager] servidor. Es posible que no tenga un tamaño adecuado para la [!DNL Experience Manager] implementación. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si su servidor tiene un tamaño inferior al normal.
 * Examine los `access.log` archivos y `error.log` los archivos en busca de entradas en el momento en que algo salió mal. Busque patrones que puedan indicar anomalías de código personalizado. Añada a la lista de eventos que supervise.
