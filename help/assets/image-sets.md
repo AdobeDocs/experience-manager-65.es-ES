@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 19%
+source-wordcount: '2076'
+ht-degree: 18%
 
 ---
 
@@ -43,7 +43,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
    Inicio cargando las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande para obtener un detalle de zoom óptimo. Dynamic Media puede procesar imágenes de hasta 25 megapíxeles cada una. Por ejemplo, puede usar una imagen de 5000 x 5000 megapíxeles o cualquier otra combinación de tamaño de hasta 25 megapíxeles.
 
-   Los AEM Assets admiten muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
+   AEM Assets admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
 1. [Crear conjuntos de imágenes.](#creating-image-sets)
 
@@ -67,7 +67,7 @@ Para ayudarle a ponerse en marcha rápidamente:
    Consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos]** de visor para crear o editar ajustes preestablecidos de visor.
 
 1. (Opcional) [Visualización de conjuntos](/help/assets/image-sets.md#viewing-image-sets) de imágenes creados mediante ajustes preestablecidos de conjunto por lotes.
-1. [Conjuntos de imágenes de Previsualización.](/help/assets/previewing-assets.md)
+1. [Conjuntos de imágenes de previsualización.](/help/assets/previewing-assets.md)
 
    Seleccione el conjunto de imágenes y puede previsualización. Haga clic en los iconos de miniaturas para examinar el conjunto de imágenes en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
 
@@ -85,7 +85,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
 Para editar conjuntos de imágenes, consulte [Edición de conjuntos de imágenes.](#editing-image-sets) Además, puede realizar vistas y editar las propiedades [del conjunto](/help/assets/managing-assets-touch-ui.md#editing-properties)de imágenes.
 
-Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Resolución de problemas de Dynamic Media: modo](/help/assets/troubleshoot-dms7.md#images-and-sets)Scene7.
+Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Resolución de problemas de medios dinámicos: modo](/help/assets/troubleshoot-dms7.md#images-and-sets)Scene7.
 
 ## Carga de recursos en conjuntos de imágenes {#uploading-assets-in-image-sets}
 
@@ -118,7 +118,7 @@ Puede crear conjuntos de imágenes a través de la interfaz de usuario o de la A
 >[!NOTE]
 >
 >You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
->**Importante:**Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
+>**Importante:** Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
 
 Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alfanumérico. Puede volver a ordenar o ordenar manualmente los recursos después de agregarlos.
 
@@ -176,7 +176,7 @@ Puede crear conjuntos de imágenes en la interfaz de usuario o automáticamente 
 
 >[!IMPORTANT]
 >
->Los conjuntos de lotes son creados por IPS [Image Production System] como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7).
+>Los conjuntos de lotes son creados por IPS [Image Production System] como parte de la ingesta de recursos y solo están disponibles en Dynamic Media (modo Scene7).
 
 Sin embargo, los conjuntos creados con ajustes preestablecidos de conjunto de lotes *no aparecen* en la interfaz de usuario. Puede realizar la vista de estos conjuntos de tres formas diferentes. (Estos métodos están disponibles aunque haya creado los conjuntos de imágenes en la interfaz de usuario).
 
@@ -184,13 +184,13 @@ Sin embargo, los conjuntos creados con ajustes preestablecidos de conjunto de lo
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* Desde una imagen de miembro de cualquier conjunto. Seleccione el menú **[!UICONTROL Conjuntos** para mostrar los conjuntos de los que es miembro el recurso.
+* Desde una imagen de miembro de cualquier conjunto. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Desde la búsqueda, puede seleccionar **[!UICONTROL Filtro** y, a continuación, expanda **[!UICONTROL Dynamic Media** y seleccione **[!UICONTROL Conjuntos.]**
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
 
-   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. Para los conjuntos automatizados, la consulta de búsqueda se lleva a cabo utilizando criterios de búsqueda &quot;Inicios con&quot; diferentes de la búsqueda de AEM, que se basa en el uso de criterios de búsqueda &quot;Contiene&quot;. Definir el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
+   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. Para los conjuntos automatizados, la consulta de búsqueda se lleva a cabo utilizando criterios de búsqueda &quot;Inicios con&quot; que son diferentes de AEM búsqueda basada en el uso de criterios de búsqueda &quot;Contiene&quot;. Definir el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -224,7 +224,7 @@ Puede realizar varias tareas de edición en los conjuntos de imágenes, como las
 
       >[!NOTE]
       >
-      >Si elimina la imagen que AEM utiliza para la miniatura sustituyéndola por otra imagen, el recurso original seguirá apareciendo.
+      >Si elimina la imagen que AEM utiliza para la miniatura reemplazándola por otra imagen, el recurso original seguirá mostrándose.
    * Para eliminar un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Eliminar recurso.]**
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya al nuevo recurso de miniatura o muestra, selecciónelo y toque **[!UICONTROL Seleccionar.]**
