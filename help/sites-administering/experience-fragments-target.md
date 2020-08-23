@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e6d02717811ac78b77dc459814941d654e94733f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -119,7 +119,6 @@ Las opciones requeridas se pueden seleccionar en Propiedades **de** página de l
 
 1. En Configuración **de** Cloud Service, seleccione **Adobe Target** en la lista desplegable.
 
-1. 
    >[!NOTE]
    >
    >Se puede personalizar el formato JSON de una oferta de fragmento de experiencia. Para ello, defina un componente de fragmento de experiencia del cliente y, a continuación, anote cómo exportar sus propiedades en el modelo de Sling del componente.
