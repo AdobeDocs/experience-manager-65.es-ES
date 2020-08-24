@@ -3,10 +3,10 @@ title: Cómo editar o agregar metadatos
 description: Obtenga información sobre los metadatos de los recursos [!DNL Adobe Experience Manager Assets] de diversas formas para editar los metadatos de los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
+source-git-commit: fc14ccc834c9a41b67eb8cf17dd8b34f5dff2406
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 2%
+source-wordcount: '473'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Para editar metadatos, siga estos pasos:
 
 Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. El flujo de trabajo de escritura de metadatos agrega los metadatos al binario original. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las propiedades nuevas (incluidas las propiedades personalizadas como `cq:tags`) se agregan con el esquema.
 
-Se admite y activa la escritura de XMP en las plataformas y formatos de archivo descritos en los requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
+Se admite y activa la XMP de la escritura en pantalla para las plataformas y los formatos de archivo descritos en los requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
 
 ## Editar esquema de metadatos {#editing-metadata-schema}
 
@@ -55,6 +55,10 @@ Puede agregar sus propias Áreas de nombres dentro de [!DNL Experience Manager].
 1. Para acceder a la página Administración de Áreas de nombres, haga clic en **[!UICONTROL Áreas de nombres]** en la parte superior de la página.
 1. Para agregar una Área de nombres, haga clic en **[!UICONTROL Nuevo]** en la parte inferior de la página.
 1. Especifique una Área de nombres personalizada en la convención de Área de nombres XML. Especifique el ID en forma de URI y un prefijo asociado para el ID. Haga clic en **[!UICONTROL Guardar]**.
+
+## Sugerencias y limitaciones {#best-practices-limitations}
+
+* Las actualizaciones de metadatos mediante la IU táctil modifican las propiedades de metadatos de la `dc` Área de nombres. Cualquier actualización realizada mediante la API HTTP cambia las propiedades de metadatos de la `jcr` Área de nombres. Consulte [cómo actualizar metadatos mediante la API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
 
 >[!MORELIKETHIS]
 >
