@@ -3,7 +3,7 @@ title: Administre recursos de vídeo en [!DNL Adobe Experience Manager].
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
+source-git-commit: 268689d534f8bf649335269f9169455c381f9554
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 7%
@@ -51,8 +51,8 @@ Para configurar un límite de tamaño de archivo mayor, realice los siguientes p
 
    ![Nodo Overlay](assets/overlay-node-path.png)
 
-1. Actualice el explorador. El nodo de superposición `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` está seleccionado.
-1. En la ficha **[!UICONTROL Propiedades]** , introduzca el valor apropiado en bytes para aumentar el límite de tamaño al tamaño deseado. Por ejemplo, para aumentar el límite de tamaño a 30 GB, escriba `{sizeLimit : "32212254720"}` value.
+1. Actualice el explorador. El nodo de superposición `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` está seleccionado.
+1. En la ficha **[!UICONTROL Propiedades]** , introduzca el valor apropiado en bytes para aumentar el límite de tamaño al tamaño deseado. Por ejemplo, para aumentar el límite de tamaño a 30 GB, escriba `32212254720` value.
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Guardar todo]**.
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
