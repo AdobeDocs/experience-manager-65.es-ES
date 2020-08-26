@@ -1,15 +1,15 @@
 ---
 title: Configurar colas compartidas
 seo-title: Configurar colas compartidas
-description: Obtenga información sobre cómo utilizar colas compartidas para flujos de trabajo centrados en formularios en AEM Forms en OSGi.
-seo-description: Obtenga información sobre cómo utilizar colas compartidas para flujos de trabajo centrados en formularios en AEM Forms en OSGi.
+description: Aprenda a utilizar colas compartidas para flujos de trabajo centrados en Forms en AEM Forms en OSGi.
+seo-description: Aprenda a utilizar colas compartidas para flujos de trabajo centrados en Forms en AEM Forms en OSGi.
 uuid: null
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: null
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Compartir y solicitar acceso a los elementos de la Bandeja de entrada de un usuario {#share-and-request-access}
 
-Una cola es una lista de elementos en la Bandeja de entrada de AEM de un usuario. Pueden ser elementos asignados a un usuario o elementos compartidos con el grupo al que pertenece un usuario. Puede acceder a la Bandeja de entrada para realizar vistas y realizar acciones en el elemento Bandeja de entrada. Por ejemplo, comparta un elemento con otro usuario.
+Una cola es una lista de elementos en AEM Bandeja de entrada de un usuario. Pueden ser elementos asignados a un usuario o elementos compartidos con el grupo al que pertenece un usuario. Puede acceder a la Bandeja de entrada para realizar vistas y realizar acciones en el elemento Bandeja de entrada. Por ejemplo, comparta un elemento con otro usuario.
 
 También puede compartir los elementos de la Bandeja de entrada con otro usuario. Una vez que otro usuario tiene acceso a los elementos de la Bandeja de entrada, el usuario puede reclamar y realizar las acciones correspondientes en los elementos compartidos. Del mismo modo, puede solicitar acceso a los elementos de la Bandeja de entrada a otros usuarios.
 
@@ -29,7 +29,7 @@ El usuario que ha iniciado sesión debe ser miembro del `workflow-users` grupo. 
 
 ## Compartir un solo elemento o todos los elementos de la bandeja de entrada con otro usuario
 
-La bandeja de entrada de AEM le permite compartir un único elemento o todos los elementos de la bandeja de entrada con otro usuario.
+AEM bandeja de entrada le permite compartir un solo elemento o todos los elementos de la bandeja de entrada con otro usuario.
 
 ### Compartir todos los elementos de la bandeja de entrada
 
@@ -43,7 +43,7 @@ Siga estos pasos para compartir todos los elementos de una bandeja de entrada co
 
 >[!NOTE]
 >
->(Solo para elementos de flujo de trabajo centrados en formularios) Active la opción **[Permitir que el usuario asignado comparta](aem-forms-workflow-step-reference.md)**la bandeja de entrada del paso **Asignar tarea**en el flujo de trabajo. Los demás usuarios solo verán los elementos que tengan habilitada la opción mencionada.
+>(Solo para elementos de flujo de trabajo centrados en Forms) Active la opción **[Permitir que el usuario asignado comparta](aem-forms-workflow-step-reference.md)** la bandeja de entrada del paso **Asignar tarea** del flujo de trabajo. Los demás usuarios solo verán los elementos que tengan habilitada la opción mencionada.
 
 ### Compartir elementos individuales
 
@@ -57,7 +57,7 @@ Siga estos pasos para compartir un elemento de la Bandeja de entrada con otro us
 
 >[!NOTE]
 >
->(Solo para elementos de flujo de trabajo centrados en formularios) Active la opción **[Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada](aem-forms-workflow-step-reference.md)**del paso **Asignar tarea**en el flujo de trabajo. Los demás usuarios solo verán los elementos que tengan habilitada la opción mencionada.
+>(Solo para elementos de flujo de trabajo centrados en Forms) Active la opción **[Permitir que el usuario asignado comparta explícitamente en la Bandeja de entrada](aem-forms-workflow-step-reference.md)** del paso **Asignar tarea** en el flujo de trabajo. Los demás usuarios solo verán los elementos que tengan habilitada la opción mencionada.
 
 ## Solicitar acceso a los elementos de la bandeja de entrada {#request-access}
 
@@ -75,7 +75,7 @@ Solo puede realizar inicios para trabajar en un elemento compartido después de 
 
 1. Inicie sesión en la instancia de AEM. Puntee en el icono ![Bandeja de entrada](assets/bell.svg) y toque **[!UICONTROL Vista de todo]**.
 1. Toque el icono Solo ![](assets/railleft.svg) contenido para abrir el selector de filtros.
-1. Puntee en la lista desplegable **[!UICONTROLSSeleccionar usuario asignado]** para la vista y seleccione los usuarios que han compartido con usted los elementos de la Bandeja de entrada.
+1. Puntee en la lista desplegable **[!UICONTROL Seleccionar usuario asignado]** para la vista y seleccione los usuarios que han compartido con usted los elementos de la Bandeja de entrada.
 1. Seleccione un elemento y toque **[!UICONTROL Reclamar]**. El elemento se agrega a la Bandeja de entrada.
 
 ## Liberar artículos reclamados {#release-items}
