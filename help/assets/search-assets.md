@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 4efe5247d91fa846c4a444c81245b0fa1515a7b4
 workflow-type: tm+mt
 source-wordcount: '5858'
 ht-degree: 5%
@@ -59,7 +59,7 @@ Puede descubrir los recursos deseados más rápido desde la página de resultado
 
 ### Términos y resultados de búsqueda básicos {#searchbasics}
 
-Puede ejecutar búsquedas de palabras clave desde el campo OmniSearch. La búsqueda de palabras clave no distingue entre mayúsculas y minúsculas y es una búsqueda de texto completo (en todos los campos de metadatos populares). Si se busca más de una palabra clave, el operador predeterminado entre las palabras clave es `AND` para la búsqueda predeterminada y es `OR` cuando los recursos están etiquetados de forma inteligente.
+Puede ejecutar búsquedas de palabras clave desde el campo OmniSearch. La búsqueda de palabras clave no distingue entre mayúsculas y minúsculas y es una búsqueda de texto completo (en los campos de metadatos populares). Si se busca más de una palabra clave, el operador predeterminado entre las palabras clave es `AND` para la búsqueda predeterminada y es `OR` cuando los recursos están etiquetados de forma inteligente.
 
 Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas. Para varias palabras clave, los resultados más relevantes son los recursos que contienen ambos términos en sus metadatos. Dentro de los metadatos, las palabras clave que aparecen como etiquetas inteligentes se clasifican más que las palabras clave que aparecen en otros campos de metadatos. [!DNL Experience Manager] permite dar un mayor peso a un término de búsqueda particular. Además, es posible [aumentar la clasificación](#searchrank) de unos pocos recursos objetivo para términos de búsqueda específicos.
 
@@ -96,7 +96,7 @@ Cuando inicio escribir palabras clave, [!DNL Experience Manager] sugiere las pos
 * Título del recurso. (mapas a `jcr:content/metadata/dc:title`)
 * Descripción del recurso. (mapas a `jcr:content/metadata/dc:description`)
 * Título en el repositorio de JCR. El valor puede asignarse al título del recurso. (mapas a `jcr:content/jcr:title`)
-* Descripción en el repositorio JCR. El valor puede asignarse a la descripción del recurso. (mapas a `jcr:content/jcr:description`)
+* Descripción en el repositorio de JCR. El valor puede asignarse a la descripción del recurso. (mapas a `jcr:content/jcr:description`)
 
 Para recibir sugerencias para más de una palabra clave de búsqueda, siga escribiendo todas las palabras clave sin seleccionar ninguna sugerencia para una sola palabra clave.
 
@@ -163,7 +163,7 @@ Puede buscar recursos en función de los valores exactos de campos de metadatos 
 | Lugar de residencia | ubicación:NA |
 | Descripción | description:&quot;Imagen de muestra&quot; |
 | Herramienta Creador | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
-| Propietario del copyright | copyrightower:&quot;Adobe Systems&quot; |
+| Propietario del copyright | copyrightowner:&quot;Adobe Systems&quot; |
 | Colaborador | colaborador:John |
 | Condiciones de uso | usageterms:&quot;CopyRights Reserved&quot; |
 | Creado | creado:AAAA-MM-DDTHH |
@@ -200,7 +200,7 @@ Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 
 ### Buscar recursos desde el panel Vínculo de recursos de Adobe {#aal}
 
-Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud compatibles. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
+Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud admitidas. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
 
 ### Buscar recursos en la aplicación de [!DNL Experience Manager] escritorio {#desktopapp}
 
@@ -236,7 +236,7 @@ Puede pasar los siguientes parámetros de solicitud en una URL para iniciar el s
 
 | Nombre | Valores | Ejemplo | Función |
 |---|---|---|---|
-| sufijo de recurso (B) | Ruta de carpeta como sufijo de recurso en la dirección URL:[https://localhost:4502/aem/assetpicker.html/&lt;ruta_de_carpeta>](https://localhost:4502/aem/assetpicker.html) | Para iniciar el selector de recursos con una carpeta concreta seleccionada, por ejemplo con la carpeta `/content/dam/we-retail/en/activities` seleccionada, la URL debe tener el formato: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Si necesita que se seleccione una carpeta determinada al iniciar el selector de recursos, pasarla como sufijo de recurso. |
+| sufijo de recurso (B) | Ruta de carpeta como sufijo de recurso en la dirección URL:[https://localhost:4502/aem/assetpicker.html/&lt;ruta_de_carpeta>](https://localhost:4502/aem/assetpicker.html) | Para iniciar el selector de recursos con una carpeta concreta seleccionada, por ejemplo con la carpeta `/content/dam/we-retail/en/activities` seleccionada, la URL debe tener el formato: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Si necesita que se seleccione una carpeta determinada cuando se inicie el selector de recursos, pasarla como sufijo de recurso. |
 | modo | único, múltiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | En varios modos, puede seleccionar varios recursos simultáneamente mediante el selector de recursos. |
 | mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) de un recurso (también se admite el comodín) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | Utilícelo para filtrar recursos en función de tipos MIME |
 | el cuadro de diálogo | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilice estos parámetros para abrir el selector de recursos como cuadro de diálogo Granito. Esta opción solo se aplica cuando se inicia el selector de recursos mediante Campo de ruta de granito y se configura como URL de pickerSrc. |
@@ -403,7 +403,7 @@ Puede hacer lo siguiente con los recursos que ha buscado en Experience Manager:
 
 ### Ordenar resultados de búsqueda {#sort}
 
-Ordene los resultados de búsqueda para descubrir los recursos necesarios más rápido. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
+Ordene los resultados de búsqueda para descubrir los recursos necesarios más rápido. You can sort the search results in list view and only when you select **[!UICONTROL [Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
 En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, Dimension, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
 
