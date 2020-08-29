@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
@@ -21,13 +24,11 @@ Obtenga información sobre cómo aprovechar los servicios de Microsoft® Dynamic
 
 Microsoft® Dynamics 365 es un software de administración de la relación con los clientes (CRM) y de planificación de recursos empresariales (ERP) que proporciona soluciones empresariales para crear y administrar cuentas de clientes, contactos, posibles clientes, oportunidades y casos.
 
-AEM Forms proporciona un servicio en la nube para integrar Dynamics 365 con el módulo de integración [de datos de](/help/forms/using/data-integration.md) Forms. El tutorial de la aplicación hipoteca [doméstica del escenario con Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) muestra cómo un cliente utiliza el sitio de referencia We.Finance para solicitar un préstamo cuando el sitio utiliza Microsoft® Dynamics para la integración de datos de Forms. Antes de poder usar el tutorial de la aplicación hipoteca doméstica con el escenario Microsoft® Dynamics, debe configurar Microsoft® Dynamics 365 para que se utilice con el sitio de referencia We.Finance.
+AEM Forms proporciona un servicio en la nube para integrar Dynamics 365 con el módulo de integración [de datos de](/help/forms/using/data-integration.md) Forms. Antes de poder usar el tutorial de la aplicación hipoteca doméstica con el escenario Microsoft® Dynamics, debe configurar Microsoft® Dynamics 365 para que se utilice con el sitio de referencia We.Finance.
 
 ## Requisitos previos {#prerequisites}
 
 Antes de comenzar a configurar y configurar Dynamics 365, asegúrese de que:
-
-* [Configure y configure sitios](/help/forms/using/setup-reference-sites.md)de referencia de AEM Forms.
 
 * AEM 6.3 Forms Service Pack 1 y posterior
 * Cuenta de Microsoft® Dynamics 365
