@@ -8,16 +8,15 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '1435'
+ht-degree: 0%
 
 ---
 
 
 # Recorrido por el sitio de referencia de contratación de empleados {#employee-recruitment-reference-site-walkthrough}
-
-## Requisitos previos {#prerequisite}
-
-Configure los sitios de referencia tal como se describe en [Configuración y configuración de los sitios](/help/forms/using/setup-reference-sites.md)de referencia de AEM Forms.
 
 ## Información general {#overview}
 
@@ -28,7 +27,7 @@ We.Finance es una organización que permite a los candidatos solicitar empleo a 
 * Proceso de entrevistas
 * Recopilación de detalles de los candidatos
 * Comprobación de fondo de candidato
-* Despliegue de ofertas para los candidatos seleccionados
+* Despliegue de ofertas a los candidatos seleccionados
 
 >[!NOTE]
 >
@@ -36,12 +35,12 @@ We.Finance es una organización que permite a los candidatos solicitar empleo a 
 
 ### Modelos de flujo de trabajo implicados {#workflow-models-involved}
 
-El caso de uso de contratación de empleados incluye dos flujos de trabajo:
+El caso de uso de contratación de empleados implica dos flujos de trabajo:
 
 * Antes de la entrevista: Flujo de trabajo de contratación de empleados de finanzas
 * Después de la entrevista: nosotros financiamos el flujo de trabajo de la entrevista posterior de contratación de empleados
 
-Estos flujos de trabajo se crean en AEM y se encuentran en:
+Estos flujos de trabajo se crean en AEM y se pueden encontrar en:
 
 `https://[authorHost]:[authorPort]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models/`
 
@@ -53,7 +52,7 @@ A continuación se muestra el modelo del flujo de trabajo de contratación de em
 
 #### Flujo de trabajo de la entrevista posterior de contratación de empleados de finanzas {#we-finance-employee-recruiting-post-interview-workflow}
 
-A continuación se muestra el modelo de flujo de trabajo de contratación de postentrevista de empleados de We Finance seguido en este documento.
+A continuación se muestra el modelo del flujo de trabajo de contratación de postentrevista de empleados de We Finance seguido en este documento.
 
 ![we-Finance-staff-recluting-post-entrevista-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
@@ -72,7 +71,7 @@ Sarah Rose está buscando una oportunidad de trabajo en la organización. Ella v
 
 ![página principal](assets/home-page.png)
 
-Página principal de We.Finance
+Página de inicio We.Finance
 
 ![página de carrera](assets/career-page.png)
 
@@ -84,25 +83,25 @@ Sarah hace clic en Aplicar en una publicación de trabajo. Se abre el formulario
 
 ### Cómo funciona {#how-it-works}
 
-La página de inicio de We.Finance y la página de carrera son páginas de AEM Sites. La página de carrera incorpora un formulario adaptable, que utiliza un panel repetible para recuperar ofertas de trabajo mediante un servicio y enumerarlas en la página. Puede revisar el formulario adaptable en `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+La página de inicio We.Finance y la página de carrera son páginas de AEM Sites. La página de carrera incorpora un formulario adaptable, que utiliza un panel repetible para recuperar las ofertas de trabajo mediante un servicio y las lista en la página. Puede revisar el formulario adaptable en `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
 
 ### Véalo usted mismo {#see-it-yourself}
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` y haga clic en **[!UICONTROL Carrera]**. Haga clic en **[!UICONTROL Buscar]** para completar la lista de trabajos y, a continuación, haga clic en **[!UICONTROL Aplicar]** para un trabajo. Rellene los detalles del formulario y envíe la solicitud.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` y haga clic en **[!UICONTROL Carrera]**. Haga clic en **[!UICONTROL Buscar]** para completar la lista de trabajo y, a continuación, haga clic en **[!UICONTROL Aplicar]** para un trabajo. Rellene los detalles del formulario y envíe la solicitud.
 
 Asegúrese de especificar un ID de correo electrónico válido en la aplicación, ya que cualquier comunicación a través de este tutorial se enviará al ID de correo electrónico especificado.
 
-## John Jacobs preselecciona el perfil de Sarah Rose para la selección del gerente de contratación {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
+## John Jacobs preselecciona al perfil de Sarah Rose para la selección de gerente de contratación {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-La organización recibe la solicitud de empleo presentada por Sarah. A John Jacobs, un reclutador, se le asigna la tarea de revisar el perfil de Sarah. Revisa la tarea en su Bandeja de entrada de AEM, encuentra el perfil que coincide con el requisito del trabajo y hace clic en Lista de métodos abreviados. El perfil de Sarah se reenvía a Gloria Rios, la gerente de contratación, para su aprobación.
+La organización recibe la solicitud de empleo presentada por Sarah. A John Jacobs, un reclutador, se le asigna la tarea de revisar el perfil de Sarah. Revisa la tarea en su Bandeja de entrada AEM, encuentra el perfil que coincide con el requisito de trabajo y hace clic en Lista de métodos abreviados. El perfil de Sarah se reenvía a Gloria Rios, la gerente de contratación, para su aprobación.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
-Bandeja de entrada de AEM de John
+La bandeja de entrada AEM de John
 
 ![candidato-lista de preseleccionados](assets/candidate-shortlist.png)
 
-John Jacobs preselecciona el perfil de Sarah Rose para la selección del gerente de contratación
+John Jacobs preselecciona al perfil de Sarah Rose para la selección de gerente de contratación
 
 **Cómo funciona**
 
@@ -110,15 +109,15 @@ La acción de envío del formulario Solicitud de trabajo desencadena un flujo de
 
 ### Véalo usted mismo {#see-it-yourself-1}
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`e inicie sesión con jjacobs/password como nombre de usuario/contraseña para John Jacobs. Abra la tarea Revisión de perfil de candidato y preseleccione al solicitante.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`e inicie sesión con jjacobs/password como nombre de usuario/contraseña para John Jacobs. Abra la tarea de Revisión de Perfiles Candidatos y preseleccione al solicitante.
 
 ## Gloria revisa la solicitud y aprueba la entrevista al solicitante {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
-Gloria, la directora de contratación, recibe el perfil preseleccionado como una tarea en su Bandeja de entrada de AEM. Ella lo reseña y aprueba a la candidata, Sarah Rose, para la entrevista.
+Gloria, la gerente de contratación, recibe el perfil preseleccionado como una tarea en su Bandeja de entrada AEM. Ella lo reseña y aprueba a la candidata, Sarah Rose, para la entrevista.
 
 ![gloriainbox](assets/gloriainbox.png)
 
-La bandeja de entrada de AEM de Gloria
+La bandeja de entrada AEM de Gloria
 
 ![gloriaschedulesentrevista](assets/gloriaschedulesinterview.png)
 
@@ -126,13 +125,13 @@ Gloria aprueba a Sarah Rose para una entrevista
 
 **Cómo funciona**
 
-Cuando Gloria aprueba al candidato para una entrevista, el flujo de trabajo crea una tarea en la Bandeja de entrada de AEM de John Doe, que es un reclutador para We.Finance.
+Cuando Gloria aprueba al candidato para una entrevista, el flujo de trabajo crea una tarea en la Bandeja de entrada AEM de John Doe, que es un reclutador para We.Finance.
 
 ### Véalo usted mismo {#see-it-yourself-2}
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con jjacobs/password como nombre de usuario/contraseña para John Jacobs. Abra la tarea Revisión de perfil de candidato y preseleccione al solicitante.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con jjacobs/password como nombre de usuario/contraseña para John Jacobs. Abra la tarea de Revisión de Perfiles Candidatos y preseleccione al solicitante.
 
-Vaya `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con grios/contraseña como nombre de usuario/contraseña para Gloria Rios. Abra la tarea Revisión de perfil de candidato y haga clic en Programar entrevista.
+Vaya `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con grios/contraseña como nombre de usuario/contraseña para Gloria Rios. Abra la tarea Revisión de Perfil de candidatos y haga clic en Programar entrevista.
 
 ## John Doe programa una entrevista {#john-doe-schedules-an-interview}
 
@@ -160,7 +159,7 @@ Después de que Sarah Rose recorra las entrevistas y las borra, Gloria Rios, la 
 
 ![gloriariosinboxoffer](assets/gloriariosinboxoffer.png)
 
-La bandeja de entrada de AEM de Gloria
+La bandeja de entrada AEM de Gloria
 
 ![gloriariosselectcandidato](assets/gloriariosselectcandidate.png)
 
@@ -192,13 +191,13 @@ Sarah abre el formulario de información adicional haciendo clic en el vínculo 
 
 Sarah rellena la información adicional solicitada por John Doe y hace clic en Enviar
 
-## John Doe revisa el perfil del candidato seleccionado para obtener información adicional {#john-doe-reviews-the-selected-candidate-profile-for-the-additional-information-provided}
+## John Doe revisa el perfil seleccionado para obtener información adicional {#john-doe-reviews-the-selected-candidate-profile-for-the-additional-information-provided}
 
 John Doe selecciona la solicitud de revisión de candidato y la abre. John Doe descubre que Sarah ha llenado toda la información necesaria. Después de revisar la aplicación, John Doe hace clic en Aprobar. Con la aprobación de John Doe, la solicitud de realizar una verificación de antecedentes de Sarah Rose se envía a John Jacobs.
 
 ![johndoeadditionainformationinbox](assets/johndoeadditionainformationinbox.png)
 
-Bandeja de entrada de AEM de John Doe
+La bandeja de entrada AEM de John Doe
 
 ![johndoeadditionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
@@ -210,7 +209,7 @@ John Jacobs ve la solicitud de comprobación en segundo plano en su bandeja de e
 
 ![johnjacosbackundashashashbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-Bandeja de entrada AEM de John Jacobs
+La bandeja de entrada de AEM de John Jacobs
 
 ![johnjacosbackground checkgoporadelante](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -218,7 +217,7 @@ Después de realizar la comprobación de fondo, John Jacobs hace clic en Ir adel
 
 ## John Doe envía la carta de unión a Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe recibe una solicitud en su bandeja de entrada de AEM para enviar la carta de unión. John abre la solicitud y ve los detalles. John Doe adjunta el PDF de la letra de unión y, a continuación, hace clic en Adjuntar y enviar carta de unión.
+John Doe recibe una solicitud en su bandeja de entrada AEM para enviar la carta de unión. John abre la solicitud y vista los detalles. John Doe adjunta el PDF de la letra de unión y, a continuación, hace clic en Adjuntar y enviar carta de unión.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 
