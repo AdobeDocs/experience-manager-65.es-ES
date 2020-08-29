@@ -1,26 +1,26 @@
 ---
-title: Recorrido por el sitio de referencia We.Gov
-seo-title: Recorrido por el sitio de referencia We.Gov
-description: Use usuarios y grupos ficticios para realizar tareas de AEM Forms con el paquete de demostración We.Gov.
-seo-description: Use usuarios y grupos ficticios para realizar tareas de AEM Forms con el paquete de demostración We.Gov.
+title: Recorrido por el sitio de referencia de We.Gov y We.Finance
+seo-title: Recorrido por el sitio de referencia de We.Gov y We.Finance
+description: Use usuarios y grupos ficticios para realizar tareas de AEM Forms con el paquete de demostración We.Gov y We.Finance.
+seo-description: Use usuarios y grupos ficticios para realizar tareas de AEM Forms con el paquete de demostración We.Gov y We.Finance.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1da42d7274e9a4257b9e8effae2b754e0104aa4
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2548'
 ht-degree: 1%
 
 ---
 
 
-# Recorrido por el sitio de referencia We.Gov {#we-gov-reference-site-walkthrough}
+# Recorrido por el sitio de referencia de We.Gov y We.Finance {#we-gov-reference-site-walkthrough}
 
 ## Requisitos previos {#pre-requisites}
 
-Configure el sitio de referencia tal como se describe en [Configurar y configurar el sitio](../../forms/using/forms-install-configure-gov-reference-site.md)de referencia de We.Gov.
+Configure el sitio de referencia tal como se describe en [Configurar y configure el sitio](../../forms/using/forms-install-configure-gov-reference-site.md)de referencia We.Gov y We.Finance.
 
 ## Artículo del usuario {#user-story}
 
@@ -238,7 +238,7 @@ Aya necesita revisar algunos documentos en casa antes de completar la solicitud 
 
    ![Detalles del formulario adaptable](/help/forms/using/assets/adaptive_form.png)
 
-## Demostración de escritorio {#desktop-demo}
+## Demostración en el escritorio {#desktop-demo}
 
 **Esta sección:** De vuelta en casa, Aya ha encontrado la información que necesitaba y reanuda la aplicación desde su escritorio. Aya navega al portal de formularios en línea para reanudar su solicitud. Con una simple personalización, las agencias también pueden generar y enviar por correo electrónico automáticamente un vínculo para reanudar la aplicación.
 
@@ -432,7 +432,7 @@ George aprueba la aplicación de Aya, y gracias a un flujo de trabajo automatiza
 1. Busque y abra el correo electrónico del recordatorio de renovación.
 1. Haga clic en el botón &quot;**Enviar una nueva aplicación**&quot; para abrir el formulario adaptable.
 
-   1. Esta sección se deja en blanco intencionalmente para admitir datos previamente rellenados en la fase 2.
+   1. Esta sección se deja en blanco intencionadamente para admitir los datos que se rellenan previamente en la fase 2.
 
    ![Correo electrónico del recordatorio de renovación](/help/forms/using/assets/renewal_reminder_email.png)
 
