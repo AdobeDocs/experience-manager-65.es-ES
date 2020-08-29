@@ -1,5 +1,5 @@
 ---
-title: Configurar y configurar el sitio de referencia de We.Gov
+title: Configure y configure el sitio de referencia We.Gov y We.Finance
 seo-title: Configurar y configurar el sitio de referencia de We.Gov
 description: Instale, configure y personalice un paquete de demostración de AEM Forms.
 seo-description: Instale, configure y personalice un paquete de demostración de AEM Forms.
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c42e5e5274c41469824f12b228698a77bf5d4a6
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4742'
 ht-degree: 1%
 
 ---
 
 
-# Configurar y configurar el sitio de referencia de We.Gov {#set-up-and-configure-we-gov-reference-site}
+# Configure y configure el sitio de referencia We.Gov y We.Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Detalles del paquete de demostración {#demo-package-details}
 
@@ -708,7 +708,7 @@ Todos los formularios adaptables están disponibles en:
 
 *https://&lt;aemserver>:&lt;puerto>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-Estos formularios pueden personalizarse para adaptarse a determinados casos de uso. Tenga en cuenta que ciertos campos y la lógica de envío no deben modificarse para garantizar que el formulario siga funcionando correctamente. Esto incluye:
+Estos formularios se pueden personalizar para adaptarse a determinados casos de uso. Tenga en cuenta que ciertos campos y la lógica de envío no deben modificarse para garantizar que el formulario siga funcionando correctamente. Esto incluye:
 
 **Solicitud De Inscripción Para Beneficios De Salud:**
 
