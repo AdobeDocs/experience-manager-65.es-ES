@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía del usuario de Forms de AEM 6.5
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '3719'
-ht-degree: 1%
+source-wordcount: '3704'
+ht-degree: 2%
 
 ---
 
@@ -42,11 +42,8 @@ ht-degree: 1%
       + [Tutorial: Creación de plantillas](using/create-templates-print-web.md)
       + [Tutorial: Crear comunicación interactiva](using/create-interactive-communication0.md)
    + Materiales de referencia de AEM Forms {#aem-forms-reference-collaterals}
-      + [Configurar y configurar sitios de referencia de autoservicio de We.Finance y Empleados](using/setup-reference-sites.md)
-      + [Configurar y configurar el sitio de referencia de We.Gov](/help/forms/using/forms-install-configure-gov-reference-site.md)
-      + [Recorrido por el sitio de referencia de We.Finance](using/finance-reference-site-walkthrough.md)
-      + [Recorrido por el sitio de referencia We.Gov](/help/forms/using/forms-gov-reference-site-user-demo.md)
-      + [Recorrido por el sitio de referencia de autoservicio de los empleados](/help/forms/using/employee-self-service-reference-site.md)
+      + [Configure y configure el sitio de referencia We.Gov y We.Finance](/help/forms/using/forms-install-configure-gov-reference-site.md)
+      + [Recorrido por el sitio de referencia de We.Gov y We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Recorrido por el sitio de referencia de contratación de empleados](/help/forms/using/employee-recruitment-reference-site.md)
       + [Sitio de referencia de renovación automática de seguros de We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [Recorrido por FOIA del sitio de referencia We.Gov](/help/forms/using/gov-reference-site-foia-walkthrough.md)
@@ -58,7 +55,7 @@ ht-degree: 1%
    + [Arquitectura y topologías de implementación para AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Selección de un tipo de persistencia para una instalación de AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
    + Instalación de AEM Forms en OSGi {#osgi-installation}
-      + [Plataformas admitidas para formularios AEM en OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
+      + [Plataformas admitidas para formularios AEM en OSGi](https://docs.adobe.com/content/help/es-ES/experience-manager-65/deploying/introduction/technical-requirements.html)
       + [Instalación y configuración de servicios de documento](using/install-configure-document-services.md)
       + [Instalación y configuración de capacidades de captura de datos](using/installing-configuring-aem-forms-osgi.md)
       + [Instalación y configuración del flujo de trabajo centrado en Forms en OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
@@ -259,7 +256,7 @@ ht-degree: 1%
    + [Configure el proyecto de Visual Studio y genere la aplicación de Windows](using/setup-visual-studio-project-build-installer.md)
    + [Configure el proyecto de estudio de Android y cree la aplicación de Android](using/setup-android-studio-project-build-installer.md)
    + [Creación de la aplicación AEM Forms Android](using/setup-eclipse-project-build-installer.md)
-   + [Distribución de la aplicación de AEM Forms](using/distribute-mobile-workspace-app.md)
+   + [Distribuir aplicación de AEM Forms](using/distribute-mobile-workspace-app.md)
    + [Personalización de gestos](using/gesture-customization.md)
    + [Personalización de promoción de la marca](using/branding-customization.md)
    + [Personalización de temas](using/theme-customization.md)
@@ -370,7 +367,7 @@ ht-degree: 1%
    + [Ofertas de seguridad de documento](using/document-security-offerings.md)
    + [Habilitar AEM para buscar documentos PDF protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
    + [Reader ampliando documentos PDF protegidos por políticas mediante la biblioteca de protección portátil](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
-   + [Habilitar AEM para buscar documentos de Microsoft Office y PDF protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
+   + [Habilitar AEM para buscar en los documentos PDF y de Microsoft Office protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento en nombre de otro usuario](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
    + [Uso de Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
@@ -396,21 +393,21 @@ ht-degree: 1%
    + [Visualización de componentes basados en la plantilla utilizada](using/displaying-components-based-on-template.md)
    + [Creación de temáticas de formulario adaptables personalizadas](using/creating-custom-adaptive-form-themes.md)
 + Informes de transacciones {#transaction-reports}
-   + [Información general sobre los informes de transacciones](using/transaction-reports-overview.md)
+   + [Configuración general de los informes de transacciones](using/transaction-reports-overview.md)
    + [Visualización y comprensión de los informes de transacciones](using/viewing-and-understanding-transaction-reports.md)
    + [Informes de transacciones API facturables](using/transaction-reports-billable-apis.md)
    + [Registrar una transacción para implementaciones personalizadas](using/record-transaction-custom-implementation.md)
 + Ayuda del administrador para AEM Forms en JEE {#administrator-help}
    + Introducción {#get-started}
-      + [Configuración general de AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
+      + [Informes generales de AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Actualizar el tipo de licencia para la implementación](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Configuración y administración de dominios {#setup-manage-domains}
       + [Añadir dominios](/help/forms/using/admin-help/adding-domains.md)
       + [Eliminar un dominio](/help/forms/using/admin-help/delete-domain.md)
       + [Configuración de la configuración del bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md)
       + [Edición y conversión de dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md)
-      + [Configuración de proveedores de autenticación](/help/forms/using/admin-help/configuring-authentication-providers.md)
-      + [Sincronización de directorios](/help/forms/using/admin-help/synchronizing-directories.md)
+      + [Sincronización de proveedores de autenticación](/help/forms/using/admin-help/configuring-authentication-providers.md)
+      + [para sincronizar directorios](/help/forms/using/admin-help/synchronizing-directories.md)
       + [Configuración de directorios](/help/forms/using/admin-help/configuring-directories.md)
    + Configuración de la administración de usuarios {#configure-user-management}
       + [Cambiar el orden de evaluación para la autenticación](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
@@ -492,7 +489,7 @@ ht-degree: 1%
       + [Uso de las páginas web de seguridad de documento](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Creación y administración de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
       + [Registrarse como usuario](/help/forms/using/admin-help/registering-as-a-user.md)
-   + Configuración de Forms {#configure-forms}
+   + Control de Forms {#configure-forms}
       + [Fundamentos de la configuración de formularios](/help/forms/using/admin-help/overview-7.md)
       + [Configuración de las opciones de internacionalización](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Configuración del almacenamiento en caché para Forms](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -523,13 +520,13 @@ ht-degree: 1%
       + [Trabajar con operaciones y ramas paralizadas](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [Configuración de colas compartidas](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Uso de tareas](/help/forms/using/admin-help/tasks.md)
-   + Configuración del espacio de trabajo {#configure-workspace}
-      + [Información general sobre Workspace](/help/forms/using/admin-help/overview-10.md)
+   + Monitor de espacio de trabajo {#configure-workspace}
+      + [Configuración general de Workspace](/help/forms/using/admin-help/overview-10.md)
       + [Importación y exportación de la configuración global](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Configuración del mensaje del día](/help/forms/using/admin-help/setting-message-day.md)
       + [Personalización de plantillas de búsqueda](/help/forms/using/admin-help/customizing-search-templates.md)
       + [Administración de las categorías mostradas en Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
-   + Monitor de estado {#health-monitor}
+   + estadísticas {#health-monitor}
       + [Visión general del monitor de estado](/help/forms/using/admin-help/overview-11.md)
       + [Mejora del rendimiento del monitor de mantenimiento](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
       + [Estadísticas de vista relacionadas con el Administrador de trabajo](/help/forms/using/admin-help/view-statistics-related-manager.md)
@@ -609,7 +606,7 @@ ht-degree: 1%
          + [Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)](developing/document-management-service-deprecated-java.md)
          + [Inicio rápido de JavaAPI (SOAP) del servicio de seguridad de documento](developing/document-security-service-java-api.md)
          + [QuickStart (SOAP) de la API de Java del servicio de cifrado](developing/encryption-service-java-api-quick.md)
-         + [Inicio rápido de la API de Java del Registro de Extremo (SOAP)](developing/endpoint-registry-java-api-quick.md)
+         + [QuickStart (SOAP) de la API de Java de Endpoint Registry](developing/endpoint-registry-java-api-quick.md)
          + [Inicio rápido de JavaAPI (SOAP) del servicio de integración de datos de formulario](developing/form-data-integration-service-java.md)
          + [Inicios rápidos de la API de servicio de Forms](developing/forms-service-api-quick-starts.md)
          + [Generate PDF Service Java API QuickStart(SOAP)](developing/generate-pdf-service-java-api.md)
