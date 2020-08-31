@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 5%
@@ -83,7 +83,7 @@ Las funciones de búsqueda personalizada deben utilizar la API [de búsqueda de]
 
 #### Indexación de roble {#oak-indexing}
 
-Aunque los índices Oak no se crean automáticamente para la búsqueda de la plataforma AEM, a partir de AEM 6.2 se han agregado para AEM Communities para mejorar el rendimiento y proporcionar compatibilidad para la paginación al presentar los resultados de búsqueda UGC.
+Aunque los índices Oak no se crean automáticamente para la búsqueda de la plataforma AEM, a partir de AEM 6.2 se han agregado para AEM Communities para mejorar el rendimiento y proporcionar compatibilidad con la paginación al presentar los resultados de búsqueda UGC.
 
 Si las propiedades personalizadas están en uso y las búsquedas son lentas, será necesario crear índices adicionales para las propiedades personalizadas a fin de aumentar su rendimiento. Para mantener la portabilidad, cumpla los requisitos [de](#naming-of-custom-properties) nomenclatura al crear propiedades personalizadas en las que se pueden realizar búsquedas.
 
@@ -91,10 +91,10 @@ Para modificar índices existentes o crear índices personalizados, consulte Con
 
 El [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) está disponible en ACS AEM Commons. Proporciona:
 
-* Una vista de los índices existentes.
+* Una vista de índices existentes.
 * Capacidad para iniciar la reindexación.
 
-Para la vista de los índices Oak existentes en el [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), la ubicación es:
+Para vista de los índices Oak existentes en el [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), la ubicación es:
 
 * `/oak:index/socialLucene`
 
