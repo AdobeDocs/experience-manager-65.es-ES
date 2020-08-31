@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-Uno de los desafíos clave para la actualización de Adobe Experience Manager es el tiempo de inactividad asociado con el entorno de creación cuando se realiza una actualización in situ. Los autores de contenido no podrán acceder al entorno durante una actualización. Por lo tanto, es deseable minimizar la cantidad de tiempo que se tarda en realizar la actualización. Para repositorios grandes, especialmente proyectos de AEM Assets, que suelen tener grandes almacenes de datos y un alto nivel de cargas de recursos por hora, la reindexación de los índices Oak toma un porcentaje significativo del tiempo de actualización.
+Uno de los desafíos clave para la actualización de Adobe Experience Manager es el tiempo de inactividad asociado con el entorno de creación cuando se realiza una actualización in situ. Los autores de contenido no podrán acceder al entorno durante una actualización. Por lo tanto, es deseable minimizar la cantidad de tiempo que se tarda en realizar la actualización. Para repositorios grandes, especialmente proyectos de AEM Assets, que suelen tener grandes almacenes de datos y un alto nivel de cargas de recursos por hora, la reindexación de índices Oak toma un porcentaje significativo del tiempo de actualización.
 
 Esta sección describe cómo utilizar la herramienta ejecutada por Oak para reindexar el repositorio **antes** de realizar la actualización, reduciendo así la cantidad de tiempo de inactividad durante la actualización real. Los pasos presentados se pueden aplicar a los índices de [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) para las versiones AEM 6.4 y posteriores.
 
 ## Información general {#overview}
 
-Las nuevas versiones de la AEM introducen cambios en las definiciones de índice Oak a medida que se expande el conjunto de funciones. Los cambios en los índices Oak obligan al reindexado al actualizar la instancia de AEM. La reindexación resulta costosa para las implementaciones de recursos, ya que el texto de los recursos (por ejemplo, el texto en un archivo pdf) se extrae e e indexa. Con los repositorios de MongoMK, los datos se mantienen en la red, lo que aumenta aún más la cantidad de tiempo que se tarda en volver a indexar.
+Las nuevas versiones de la AEM introducen cambios en las definiciones de índice Oak a medida que se expande el conjunto de funciones. Los cambios en los índices Oak obligan a volver a indexar al actualizar la instancia de AEM. La reindexación resulta costosa para las implementaciones de recursos, ya que el texto de los recursos (por ejemplo, el texto en un archivo pdf) se extrae e e indexa. Con los repositorios de MongoMK, los datos se mantienen en la red, lo que aumenta aún más la cantidad de tiempo que se tarda en volver a indexar.
 
 El problema que la mayoría de los clientes enfrentan durante una actualización es reducir el tiempo de inactividad. La solución es **omitir** la actividad de reindexación durante la actualización. Esto se puede lograr creando los nuevos índices **antes** de realizar la actualización y luego simplemente importándolos durante la actualización.
 
@@ -37,9 +37,9 @@ La idea es crear el índice antes de la actualización, en comparación con las 
 Además, este es el orden de los pasos descritos en el enfoque:
 
 1. El texto de los binarios se extrae primero
-2. Se crean definiciones de índice de Destinatario
+2. Se crean definiciones de índice de destinatario
 3. Se crean índices sin conexión
-4. Los índices se importan posteriormente durante el proceso de actualización
+4. Los índices se importan durante el proceso de actualización
 
 ### Extracción de texto {#text-extraction}
 
@@ -158,7 +158,7 @@ Sample <checkpoint> looks like r16c85700008-0-8
 merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indices in this file will be re-indexed.
 ```
 
-El uso del `--doc-traversal-mode` parámetro es práctico con las instalaciones de MongoMK, ya que mejora considerablemente el tiempo de reindexación al colocar en un archivo plano local el contenido del repositorio. Sin embargo, requiere espacio adicional en disco de doble del tamaño del repositorio.
+El uso del `--doc-traversal-mode` parámetro es práctico con las instalaciones de MongoMK, ya que mejora considerablemente el tiempo de reindexación al colocar el contenido del repositorio en un archivo plano local. Sin embargo, requiere espacio adicional en disco de doble del tamaño del repositorio.
 
 En el caso de MongoMK, este proceso puede acelerarse si este paso se ejecuta en una instancia más cercana a la instancia de MongoDB. Si se ejecuta en el mismo equipo, se puede evitar la sobrecarga de red.
 
@@ -184,4 +184,4 @@ Se recomienda preparar un [runbook](https://docs.adobe.com/content/help/en/exper
 
 La indexación sin conexión requiere múltiples transmisiones de todo el repositorio. Con las instalaciones de MongoMK, se accede al repositorio a través de la red que afecta al rendimiento del proceso de indexación. Una opción es ejecutar el proceso de indexación sin conexión en la réplica MongoDB misma, lo que eliminará la sobrecarga de red. Otra opción es el uso del modo doc-versal.
 
-El modo doc-versal se puede aplicar agregando el parámetro de línea de comandos `—doc-traversal` al comando oak-run para la indexación sin conexión. Este modo estropea una copia de todo el repositorio en el disco local como un archivo plano y lo utiliza para ejecutar la indexación.
+El modo doc-versal se puede aplicar agregando el parámetro de línea de comandos `—doc-traversal` al comando oak-run para la indexación sin conexión. Este modo convierte una copia de todo el repositorio del disco local en un archivo plano y lo utiliza para ejecutar la indexación.
