@@ -5,10 +5,10 @@ audience: admin-user
 user-guide-title: Guía del usuario de administración de AEM 6.5
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 14%
+source-wordcount: '619'
+ht-degree: 15%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 14%
 + Funciones del sitio {#introduction}
    + [Administración de sitios web](msm-and-translation.md) 
    + [Trabajos asincrónicos](asynchronous-jobs.md)
-   + [Reutilización del contenido: Multi Site Manager y Live Copy](msm.md)
+   + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
    + [Consola de información general de Live Copy](msm-livecopy-overview.md)
    + [Configuración de la sincronización de Live Copy](msm-sync.md)
    + [Creación y sincronización de Live Copies](msm-livecopy.md)
@@ -35,7 +35,7 @@ ht-degree: 14%
    + [Asistente para copia de idioma](tc-wizard.md)
    + [Mejoras en la traducción](tc-enhancements.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)
-   + [Preguntas más frecuentes sobre AEM](aem-faqs.md)
+   + [Preguntas más frecuentes AEM](aem-faqs.md)
 + Operaciones {#operations}
    + [Tableros](dashboards.md)
    + [Tablero de operaciones](operations-dashboard.md)
@@ -52,7 +52,7 @@ ht-degree: 14%
    + [Editor masivo](bulk-editor.md)
    + [Configuración de la notificación por correo electrónico](notification.md)
    + [Comprobador de vínculos externos](external-link-checker.md)
-   + [Solución de problemas de AEM](troubleshoot.md)
+   + [Resolución de problemas AEM](troubleshoot.md)
    + [Administración del acceso a los Flujos de trabajo](workflows-managing.md)
    + [Inicio de Flujos de trabajo](workflows-starting.md)
    + [Administración de Flujos de trabajo](workflows.md)
@@ -66,15 +66,15 @@ ht-degree: 14%
    + [Configuración del Contenedor de diseño y el modo de diseño](configuring-responsive-layout.md)
    + [Editor](enable-classic-ui-editor.md)
    + [Habilitación del acceso a la IU clásica](enable-classic-ui.md)
-   + [Consolas de administración](enable-classic-ui-admin.md)
+   + [Admin Console](enable-classic-ui-admin.md)
 + Seguridad {#security}
    + [Administración de usuarios y seguridad](security.md)
    + [Administración de derechos de usuario, grupo y acceso](user-group-ac-admin.md)
    + [Lista de comprobación de seguridad](security-checklist.md)
    + [10 primeros OWASP](owasp-top10.md)
-   + [Ejecución de AEM en modo de producción lista](production-ready.md)
+   + [Ejecución de AEM en modo listo para la producción](production-ready.md)
    + [Administración de identidades](identity-management.md)
-   + [Autenticación IMS de Adobe y compatibilidad con Admin Console para los servicios gestionados de AEM](ims-config-and-admin-console.md)
+   + [Compatibilidad de Admin Console y autenticación de IMS de Adobe para AEM Managed Services](ims-config-and-admin-console.md)
    + [Creación de un grupo de usuarios cerrado](cug.md)
    + [Mitigación de problemas de serialización en AEM](mitigating-serialization-issues.md)
    + [Sincronización de usuarios](sync.md)
@@ -85,12 +85,12 @@ ht-degree: 14%
    + [Controlador de autenticación SAML 2.0](saml-2-0-authenticationhandler.md)
    + [Grupos de usuarios cerrados en AEM](closed-user-groups.md)
    + [Operaciones de granito: Administración de usuarios y grupos](granite-user-group-admin.md)
-   + [Activación de CRXDE Lite en AEM](enabling-crxde-lite.md)
+   + [Habilitar CRXDE Lite en AEM](enabling-crxde-lite.md)
    + [Configuración de LDAP con AEM 6](ldap-config.md)
    + [Configurar la contraseña de administración al realizar la instalación](security-configure-admin-password.md)
-   + [Usuarios de servicio en AEM](security-service-users.md)
+   + [Usuarios de servicios en AEM](security-service-users.md)
    + [Compatibilidad con cifrado para propiedades de configuración](encryption-support-for-configuration-properties.md)
-   + [Gestión de solicitudes GDPR para AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
+   + [Gestión de las solicitudes del RGPD para la Fundación AEM](handling-gdpr-requests-for-aem-platform.md)
    + [Vista principal para la administración de permisos](touch-ui-principal-view.md)
    + [Filtro de disposición de contenido](content-disposition-filter.md)
    + [Asignación de grupos de usuarios personalizados en AEM 6.5](/help/sites-administering/cug-mapping.md)
@@ -108,9 +108,9 @@ ht-degree: 14%
    + [Conceptos ](concepts.md)
    + [Administración de comercio electrónico genérico](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [Comercio AEM: preparación para RGPD](gdpr-compliance-commerce.md)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
+   + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
+   + [Comercio AEM - Preparación para RGPD](gdpr-compliance-commerce.md)
 + Integración {#integration}
    + [Integración con servicios de terceros](third-party-services.md)
    + [Integración con Salesforce](salesforce.md)
@@ -131,13 +131,12 @@ ht-degree: 14%
    + [Aviso de fin de vida útil para el visualizador Flash](flash-viewers-eol.md)
    + [Alimentación de productos](product-feed.md)
    + [Integración con la administración dinámica de etiquetas de Adobe](dtm.md)
-   + [Selección de Adobe Analytics y Adobe Target](opt-in.md)
-   + [Portales y portlets de AEM](aem-as-portal.md)
+   + [Opción de Adobe Analytics y Adobe Target](opt-in.md)
+   + [Portales y portlets AEM](aem-as-portal.md)
    + [Integración con Dynamic Media Classic (Scene7)](scene7.md)
-   + [Fórmulas de Livefyre de AEM](aem-livefyre-recipes.md)
+   + [Fórmulas AEM Livefyre](aem-livefyre-recipes.md)
    + [Resolución de problemas de integración](troubleshooting-integration-issues.md)
    + [Integración con BrightEdge Content Optimizer](brightedge.md)
-   + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
    + [Catalog Producer](catalog-producer.md)
    + [Configurar la integración de AEM Assets con Experience Cloud y Creative Cloud](configure-assets-cc-integration.md)
    + [Integración con Silverpop Engage](silverpop.md)
@@ -147,24 +146,24 @@ ht-degree: 14%
    + [Integración con el Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuración manual de la integración con Adobe Target](target-configuring.md)
    + [Requisitos previos para la integración con Adobe Target](target-requirements.md)
-   + [Integración con Adobe Target mediante Adobe I/O](integration-ims-adobe-io.md)
-   + [Clasificaciones de Adobe](adobeanalytics-classifications.md)
+   + [Integración con Adobe Target mediante E/S de Adobe](integration-ims-adobe-io.md)
+   + [Clasificaciones de Adobes](adobeanalytics-classifications.md)
    + [Integración con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integración de soluciones](integration.md)
    + [Exportación de fragmentos de experiencia a Adobe Target](experience-fragments-target.md)
    + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
    + [Integración con Livefyre](livefyre.md)
-+ Prácticas recomendadas  {#bestpractices}
-   + [Prácticas recomendadas ](administer-best-practices.md)
++ Prácticas recomendadas   {#bestpractices}
+   + [Prácticas recomendadas  ](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)
    + [Prácticas recomendadas de MSM](msm-best-practices.md)
    + [AEM Sites - Preparación para RGPD](gdpr-compliance-sites.md)
-   + [Gestión de solicitudes GDPR para AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
-   + [Comercio AEM: preparación para RGPD](gdpr-compliance-commerce.md)
+   + [Gestión de las solicitudes del RGPD para la Fundación AEM](handling-gdpr-requests-for-aem-platform.md)
+   + [Comercio AEM - Preparación para RGPD](gdpr-compliance-commerce.md)
 + Administración de contenido {#contentmanagement}
    + [Cómo trabajar con paquetes](package-manager.md)
    + [Administración de etiquetas](tags.md)
    + [Exportador de páginas](page-exporter.md)
    + [Consola de etiquetado de IU clásica](classic-console.md)
-   + [Gestor de contenido para pantallas](content-management-screens.md)
+   + [gestor de contenido para pantallas](content-management-screens.md)
    + [Acceso a WebDAV](webdav-access.md)
