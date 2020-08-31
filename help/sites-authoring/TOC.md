@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guía del usuario de creación de AEM 6.5
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Descripción general de la Guía del usuario de creación](home.md)
-+ tareas, herramientas y conceptos básicos para la creación de AEM {#essentials}
++ Tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Creación de páginas](page-authoring.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
@@ -42,7 +42,7 @@ ht-degree: 89%
    + [Crear una página para dispositivos móviles ](mobile.md)
    + [Resolución de problemas de AEM durante la creación](troubleshooting.md)
    + [Métodos abreviados de teclado al editar páginas](page-authoring-keyboard-shortcuts.md)
-   + [Prácticas recomendadas ](best-practices.md)
+   + [Prácticas recomendadas  ](best-practices.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Uso de etiquetas](tags.md)
    + [Creación de plantillas de página  ](templates.md)
@@ -53,7 +53,6 @@ ht-degree: 89%
    + [Diseño adaptable](responsive-layout.md)
    + [Perspectiva de contenido](content-insights.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.1)](creating-accessible-content.md)
-   + [Andamiaje](scaffolding.md)
    + [Configurar componentes en modo Diseño](default-components-designmode.md)
    + [Componentes de base](default-components-foundation.md)
    + [Andamiaje](scaffolding.md)
@@ -67,8 +66,8 @@ ht-degree: 89%
 + Lanzamientos {#launches}
    + [Lanzamientos](launches.md)
    + [Creación de lanzamientos](launches-creating.md)
-   + [Edición de lanzamientos](launches-editing.md) 
-   + [Promoción de lanzamientos](launches-promoting.md) 
+   + [Edición de lanzamientos](launches-editing.md)
+   + [Promoción de lanzamientos](launches-promoting.md)
 + Flujos de trabajo {#workflows}
    + [Uso de flujos de trabajo](workflows.md)
    + [Aplicación de flujos de trabajo a las páginas](workflows-applying.md)
@@ -86,7 +85,7 @@ ht-degree: 89%
    + [Uso del contenido de destino de varios sitios](multisite-support-targeted-content.md)
    + [Estructurar la administración de diversos sitios para el contenido segmentado](technical-multisite-targeted.md)
    + [Administración de actividades](activitylib.md)
-   + [Administrar audiencias](managing-audiences.md) 
+   + [Administrar audiencias](managing-audiences.md)
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
 + AEM y Adobe Campaign {#aem-adobe-campaign}
