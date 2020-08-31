@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 1%
 
 ---
 
@@ -20,16 +23,16 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ## Información general {#overview}
 
-Esta función le permite comprobar la capacidad de actualización de las instancias de AEM existentes detectando patrones en uso que:
+Esta función le permite comprobar la capacidad de actualización de las instancias de AEM existentes mediante la detección de patrones en uso que:
 
 1. Violar ciertas reglas y se realizan en áreas que se verán afectadas o sobrescritas por la actualización
-1. Utilice una función de AEM 6.x o una API que no sea compatible con AEM 6.5 y que pueda romperse tras la actualización.
+1. Utilice una función AEM 6.x o una API que no sea compatible con versiones anteriores en AEM 6.5 y que pueda romperse tras la actualización.
 
-Esto podría servir como una evaluación del esfuerzo de desarrollo que implica la actualización a AEM 6.5.
+Esto podría servir como una evaluación de las actividades de desarrollo que entrañan la mejora a la AEM 6.5.
 
-## Cómo configurar {#how-to-set-up}
+## Configuración {#how-to-set-up}
 
-El detector de patrones se publica por separado como [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de AEM de origen desde la actualización 6.1 a la 6.5 dirigida a AEM 6.5. Se puede instalar mediante el Administrador de [paquetes](/help/sites-administering/package-manager.md).
+El detector de patrones se libera por separado como [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de origen AEM de 6.1 a 6.5 con el objetivo AEM actualización 6.5. Se puede instalar mediante el Administrador de [paquetes](/help/sites-administering/package-manager.md).
 
 ## Usos {#how-to-use}
 
@@ -41,7 +44,7 @@ El detector de patrones se publica por separado como [un paquete](https://www.ad
 >* evitar cualquier desaceleración en instancias críticas del negocio
 
 
->al mismo tiempo, se recomienda ejecutarlo **en entornos** de ensayo lo más cercanos posible a los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
+>al mismo tiempo, se recomienda ejecutarlo **en entornos** de ensayo lo más próximos posible a los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
 >
 Puede utilizar varios métodos para comprobar la salida del detector de patrones:
 
@@ -69,7 +72,7 @@ El resultado está disponible actualmente en 2 direcciones URL:
 
 ## Gestión de la interfaz de texto sin formato {#handling-the-plain-text-interface}
 
-La información del resultado tiene un formato de serie de entradas de evento. Existen dos canales: uno para publicar infracciones y el otro para publicar el progreso actual.
+La información del resultado tiene un formato de serie de entradas de evento. Hay dos canales: uno para publicar infracciones y otro para publicar el progreso actual.
 
 Se pueden obtener mediante los siguientes comandos:
 
@@ -215,7 +218,7 @@ El método recomendado es guardar todo el resultado de curl en el archivo y lueg
 El detector de patrones actual permite comprobar:
 
 * Los paquetes OSGi exportan e importan no coinciden
-* Sobreutilización de tipos de recursos y supertipos (con superposiciones de contenido de ruta de búsqueda) de ventas
+* Creación de supertipos y tipos de recursos (con superposiciones de contenido de ruta de búsqueda)
 * definiciones de índices Oak (compatibilidad)
 * Paquetes VLT (sobreutilización)
 * rep:Compatibilidad de nodos de usuario (en el contexto de la configuración de OAuth)
