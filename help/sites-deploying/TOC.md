@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guía de implementación de AEM 6.5
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '328'
 ht-degree: 11%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 11%
 # AEM 6.5 Deploying User Guide {#deploying}
 
 + [Guía del usuario de implementación](home.md)
-+ Introducción a AEM Platform {#introduction}
-   + [Introducción a AEM Platform](platform.md)
++ Introducción a la Plataforma AEM {#introduction}
+   + [Introducción a la Plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
-   + [Elementos de Almacenamiento en AEM 6.5](storage-elements-in-aem-6.md)
+   + [Elementos de almacenamiento en AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
 + Implementación de AEM {#deploying}
    + [Implementación y mantenimiento](deploy.md)
@@ -50,7 +50,7 @@ ht-degree: 11%
    + [Resolución de problemas de replicación](troubleshoot-rep.md)
    + [Caducidad de objetos estáticos](expiration-static-objects.md)
    + [Depuración de versiones](version-purging.md)
-   + [Supervisión y mantenimiento de la instancia de AEM](monitoring-and-maintaining.md)
+   + [Monitoreo y mantenimiento de la instancia de AEM](monitoring-and-maintaining.md)
    + [Descarga de trabajos](offloading.md)
    + [Inicio de sesión único](single-sign-on.md)
    + [Asignación de recursos](resource-mapping.md)
@@ -68,11 +68,12 @@ ht-degree: 11%
    + [Compatibilidad con versiones anteriores en AEM 6.5](backward-compatibility.md)
    + [Procedimiento de actualización](upgrade-procedure.md)
    + [Realización de una actualización in situ](in-place-upgrade.md)
+   + [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](upgrade-offline-reindexing.md)
    + [Migración de contenido diferido](lazy-content-migration.md)
    + [Uso de la herramienta de migración CRX2Oak](using-crx2oak.md)
    + [Tareas de mantenimiento previas a la actualización](pre-upgrade-maintenance-tasks.md)
    + [Comprobaciones posteriores a la actualización y resolución de problemas](post-upgrade-checks-and-troubleshooting.md)
-   + [Actualización de formularios de búsqueda personalizados](upgrading-custom-search-forms.md)
+   + [Actualización de Forms de búsqueda personalizada](upgrading-custom-search-forms.md)
    + [Upgrades sostenibles](sustainable-upgrades.md)
    + [Actualización del código y las personalizaciones](upgrading-code-and-customizations.md)
    + [Pasos de actualización para las instalaciones de Application Server](app-server-upgrade.md)
@@ -81,20 +82,20 @@ ht-degree: 11%
    + [Reestructuración del repositorio en AEM 6.5](repository-restructuring.md)
    + [Reestructuración común de repositorios en AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Reestructuración del repositorio de sitios en AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
-   + [Reestructuración del repositorio de recursos en AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
+   + [Reestructuración del repositorio de activos en AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
    + [Reestructuración del repositorio de Dynamic Media en AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
-   + [Reestructuración del repositorio de formularios en AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
+   + [Reestructuración del repositorio de Forms en AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Reestructuración del repositorio de comercio electrónico en AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Reestructuración del repositorio para AEM Communities en 6.5](communities-repository-restructuring-in-aem-6-5.md)
 + eCommerce {#ecommerce}
    + [Información general sobre comercio electrónico](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
+   + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Prácticas recomendadas  {#practices}
++ Prácticas recomendadas   {#practices}
    + [Implementación de optimizaciones](best-practices.md)
    + [Árbol de rendimiento](performance-tree.md)
    + [Prácticas recomendadas para pruebas de rendimiento](best-practices-for-performance-testing.md)
    + [Prácticas recomendadas para Consultas e indexación](best-practices-for-queries-and-indexing.md)
-   + [Recomendaciones de interfaz de usuario para clientes](ui-recommendations.md)
+   + [Interfaz de usuario de Recommendations para clientes](ui-recommendations.md)
    + [Rendimiento y escalabilidad](performance.md)
