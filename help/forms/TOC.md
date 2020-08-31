@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guía del usuario de Forms de AEM 6.5
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '3704'
+source-wordcount: '3700'
 ht-degree: 2%
 
 ---
@@ -392,8 +392,8 @@ ht-degree: 2%
    + [Creación de un diseño de barra de herramientas personalizado](using/creating-custom-toolbar-layout.md)
    + [Visualización de componentes basados en la plantilla utilizada](using/displaying-components-based-on-template.md)
    + [Creación de temáticas de formulario adaptables personalizadas](using/creating-custom-adaptive-form-themes.md)
-+ Informes de transacciones {#transaction-reports}
-   + [Configuración general de los informes de transacciones](using/transaction-reports-overview.md)
++ adaptaciones de transacciones {#transaction-reports}
+   + [Información general sobre los informes de transacciones](using/transaction-reports-overview.md)
    + [Visualización y comprensión de los informes de transacciones](using/viewing-and-understanding-transaction-reports.md)
    + [Informes de transacciones API facturables](using/transaction-reports-billable-apis.md)
    + [Registrar una transacción para implementaciones personalizadas](using/record-transaction-custom-implementation.md)
@@ -473,7 +473,7 @@ ht-degree: 2%
       + [Configuración de fuentes de reserva](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [Modificación de la configuración de conversión de exportación de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Conversión de archivos con PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + Configuración de SSL {#configure-ssl}
+   + Cómo configurar SSL {#configure-ssl}
       + [Información general sobre la configuración de SSL](/help/forms/using/admin-help/overview-6.md)
       + [Configuración de SSL para el servidor de aplicaciones JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [Configuración de SSL en Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -489,7 +489,7 @@ ht-degree: 2%
       + [Uso de las páginas web de seguridad de documento](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Creación y administración de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
       + [Registrarse como usuario](/help/forms/using/admin-help/registering-as-a-user.md)
-   + Control de Forms {#configure-forms}
+   + Configuración de Forms {#configure-forms}
       + [Fundamentos de la configuración de formularios](/help/forms/using/admin-help/overview-7.md)
       + [Configuración de las opciones de internacionalización](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Configuración del almacenamiento en caché para Forms](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -501,7 +501,6 @@ ht-degree: 2%
       + [Configuración de los mensajes de validación](/help/forms/using/admin-help/configuring-validation-messages.md)
    + Configuración de la salida {#configure-output}
       + [Visión general del servicio de salida](/help/forms/using/admin-help/overview-8.md)
-      + [Cambiar el conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md)
       + [Especificar opciones de configuración XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Configuración del almacenamiento en caché para Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Especificar ubicaciones de archivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md)
