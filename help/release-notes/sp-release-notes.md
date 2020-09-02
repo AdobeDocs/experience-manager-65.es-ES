@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6da27dfda2bb504fc7a1de24260e94141f1a22ab
+source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
 workflow-type: tm+mt
 source-wordcount: '4407'
 ht-degree: 6%
@@ -154,7 +154,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
    *Figura:[!UICONTROL Buscar ayuda]en el menú[!UICONTROL Ayuda]*
 
-   * el mensaje de error si se introduce un valor incorrecto en [!ICONTROL Suplantar como] campo en la opción [!UICONTROL Usuario] y el enfoque se mueve correctamente al campo de texto (NPR-33804).
+   * el mensaje de error si se introduce un valor incorrecto en [!UICONTROL Suplantar como] campo en la opción [!UICONTROL Usuario] y el enfoque se mueve correctamente al campo de texto (NPR-33804).
 
    ![Menú Usuario en el encabezado](assets/User_aem_header.png)
 
