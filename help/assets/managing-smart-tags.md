@@ -3,9 +3,9 @@ title: Administración de búsquedas y etiquetas inteligentes
 description: Actualice o elimine las etiquetas inteligentes imprecisas para mejorar la relevancia de las etiquetas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,7 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 1. coincidencias de en `woman running` los distintos campos de metadatos.
 1. coincidencias de `woman running` en etiquetas inteligentes.
 1. coincidencias de `woman` o de `running` en etiquetas inteligentes.
+
+>[!CAUTION]
+>
+>Si la indexación de Lucene se realiza fuera de [!DNL Adobe Experience Manager] este parámetro, la búsqueda basada en etiquetas inteligentes no funciona de la forma esperada.
