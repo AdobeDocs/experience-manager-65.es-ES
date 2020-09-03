@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5bbdc80f199a2af38631a5443c46daae827abb52
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '5858'
+source-wordcount: '5878'
 ht-degree: 5%
 
 ---
@@ -354,6 +354,10 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
 1. (Opcional) Si tiene un formulario de búsqueda personalizado, copie el `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde los cambios.
 
 Para obtener información relacionada, consulte [Comprender las etiquetas inteligentes en el Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) y [cómo administrar las etiquetas](/help/assets/managing-smart-tags.md)inteligentes.
+
+>[!CAUTION]
+>
+>Si la indexación de Lucene se ha realizado fuera de [!DNL Adobe Experience Manager], la búsqueda basada en etiquetas inteligentes no funcionará según lo esperado.
 
 ### Metadatos obligatorios {#mandatorymetadata}
 
