@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guía del usuario de Experience Manager 6.5 Assets
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 32f8e42325314d5afbec3b3e1611fd696e1a4603
+source-git-commit: c57cc70fbdeabfdff1e8977d3bf8187f7c41ce77
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 40%
+source-wordcount: '651'
+ht-degree: 39%
 
 ---
 
@@ -73,6 +73,7 @@ ht-degree: 40%
    + [Usar conjuntos de reglas para transformar URL](using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Uso de la publicación selectiva en Dynamic Media](selective-publishing.md)
+   + [Invalidación de la caché de CDN mediante Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidación de la caché de CDN mediante Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalación de Feature Pack 18912 para la migración masiva de recursos](bulk-ingest-migrate.md)
    + [Trabajar con selectores](working-with-selectors.md)
