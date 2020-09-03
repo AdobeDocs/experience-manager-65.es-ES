@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
 workflow-type: tm+mt
-source-wordcount: '5778'
-ht-degree: 7%
+source-wordcount: '5944'
+ht-degree: 6%
 
 ---
 
@@ -71,17 +71,17 @@ El paquete de funciones 18912 le permite ingestar recursos de forma masiva media
 
 Consulte [Instalación del paquete de funciones 18912 para obtener más información sobre la migración](/help/assets/bulk-ingest-migrate.md) masiva de recursos.
 
-## Creación de una configuración de Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Creación de una configuración de Dynamic Media en Cloud Services {#configuring-dynamic-media-cloud-services}
 
 **Antes de configurar Dynamic Media**: Después de recibir el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, debe [iniciar sesión](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) en Dynamic Media Classic para cambiar la contraseña. La contraseña que se proporciona en el correo electrónico de aprovisionamiento es generada por el sistema y está pensada para ser una contraseña temporal solamente. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Para crear una configuración de Dynamic Media**
+**Para crear una configuración de Dynamic Media en Cloud Services**
 
-1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global y toque o haga clic en el icono Herramientas y, a continuación, toque **[!UICONTROL Cloud Services > Configuración de Dynamic Media.]**
+1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global y toque el icono Herramientas y, a continuación, **[!UICONTROL Cloud Services > Configuración de Dynamic Media.]**
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]** (no pulse ni seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**) y, a continuación, pulse **[!UICONTROL Crear.]**
-1. En la página Crear configuración de Dynamic Media, escriba un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña y, a continuación, seleccione su región. Se proporcionan por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el servicio de soporte técnico si no recibió esto.
+1. En la página **[!UICONTROL Crear configuración]** de Dynamic Media, escriba un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña y, a continuación, seleccione su región. Se proporcionan por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el servicio de soporte técnico si no recibió esto.
 
    Click **[!UICONTROL Connect to Dynamic Media.]**
 
@@ -89,7 +89,7 @@ Consulte [Instalación del paquete de funciones 18912 para obtener más informac
    >
    >Después de recibir el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, [inicie sesión](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) en Dynamic Media Classic para cambiar la contraseña. La contraseña que se proporciona en el correo electrónico de aprovisionamiento es generada por el sistema y está pensada para ser una contraseña temporal solamente. Es importante que actualice la contraseña para que el servicio de nube de Dynamic Media esté configurado con las credenciales correctas.
 
-1. Cuando la conexión se realiza correctamente, también puede establecer lo siguiente:
+1. Cuando la conexión se realice correctamente, establezca lo siguiente. Los encabezados con un asterisco (*) son obligatorios:
 
    * **[!UICONTROL Compañía]** : el nombre de la cuenta de Dynamic Media. Es posible que tenga varias cuentas de Dynamic Media para distintas submarcas, divisiones o entornos de ensayo y producción.
 
@@ -98,15 +98,16 @@ Consulte [Instalación del paquete de funciones 18912 para obtener más informac
    * **[!UICONTROL Publicación de recursos]** : puede elegir entre las tres opciones siguientes:
       * **[!UICONTROL Inmediatamente]** significa que, cuando se cargan recursos, el sistema los ingiere y proporciona la URL o incrustación al instante. No es necesaria la intervención del usuario para publicar recursos.
       * **[!UICONTROL Tras la Activación]** , significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar.
+      * **[!UICONTROL Publicación]** selectiva Esta opción le permite controlar qué carpetas se publican en Medios dinámicos para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas o, si lo desea, qué carpetas se publican exclusivamente en AEM para la vista previa; ese mismo recurso *no se publica* en Dynamic Media para su envío en el dominio público.<br>Puede definir esta opción aquí en la Configuración **[!UICONTROL de]** Dynamic Media Cloud o, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en **[!UICONTROL Propiedades]** de una carpeta.<br>Consulte [Uso de la publicación selectiva en medios dinámicos.](/help/assets/selective-publishing.md)<br>Tenga en cuenta que si posteriormente cambia esta configuración o posteriormente la cambia a nivel de carpeta, esos cambios solo afectarán a los recursos nuevos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta permanece tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación]** rápida o desde el cuadro de diálogo **[!UICONTROL Administrar publicación]** .
    * **[!UICONTROL Servidor]** de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM acceder a las representaciones de Dynamic Media remotas y realizar su previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).
 A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe Systems recomienda que deje esta configuración como se especificó.
 
    * **[!UICONTROL Sincronizar todo el contenido]** : <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:
 
-   * **[!UICONTROL Modo de sincronización de medios dinámicos]**
+   * **[!UICONTROL Modo de sincronización de Dynamic Media]**
       * **[!UICONTROL Habilitado de forma predeterminada]** : la configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Deshabilitado de forma predeterminada]** : la configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
-Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, haga clic en **[!UICONTROL Propiedades.]** En la ficha **[!UICONTROL Detalles]** , en la lista desplegable del modo **[!UICONTROL de sincronización de medios]** dinámicos, elija una de las tres opciones siguientes. Cuando haya terminado, toque **[!UICONTROL Guardar.]** *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**Sincronizar todo el contenido**antes.*
+Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, haga clic en **[!UICONTROL Propiedades.]** En la ficha **[!UICONTROL Detalles]** , en la lista desplegable del modo **[!UICONTROL de sincronización de medios]** dinámicos, elija una de las tres opciones siguientes. Cuando haya terminado, toque **[!UICONTROL Guardar.]** *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**Sincronizar todo el contenido**antes.* Consulte también [Uso de la publicación selectiva en el nivel de carpeta en Dynamic Media.](/help/assets/selective-publishing.md)
          * **[!UICONTROL Heredado]** : no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.
          * **[!UICONTROL Habilitar para subcarpetas]** : Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
          * **[!UICONTROL Deshabilitado para subcarpetas]** : excluya todo lo que hay en este subárbol de la sincronización con Dynamic Media.
