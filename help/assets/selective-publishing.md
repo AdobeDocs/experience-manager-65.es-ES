@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6e7368663d18dd0b5b46be9e292dba17577acf70
+source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 2%
@@ -202,6 +202,7 @@ De forma opcional, puede utilizar estas casillas de verificación junto con el p
    | Publicar en Dynamic Media | Publicación selectiva | Solo se publica en Dynamic Media. |
    | Cancelar la publicación de medios dinámicos | Inmediatamente o tras la Activación | Sin cancelar la publicación desde AEM, Medios dinámicos o ambos. |
    | Cancelar la publicación de medios dinámicos | Publicación selectiva | Solo sin publicar desde Dynamic Media. |
+
 1. En **[!UICONTROL Programación]**, establezca la temporización de la desactivación.
 | Programación seleccionada | Qué sucede |
 | — | — |
