@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 6a44c4ac11f2fdf794895c28468c2a600a09b3c0
+source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Los recursos de Dynamic Media se almacenan en caché en la red de Envío de cont
 
 >[!IMPORTANT]
 >
->Los pasos siguientes solo se aplican a Dynamic Media: modo Scene7 en AEM 6.5, Service Pack 6 (AEM 6.5.6) o posterior. Esta función de invalidación de CDN también requiere que utilice la CDN integrada que se incluye con AEM Dynamic Media; no se admite ningún otro CDN personalizado.<br>Si utiliza Dynamic Media en AEM 6.5, Service Pack 5 (AEM 6.5.5) o anterior, siga los pasos que se encuentran en [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>Los pasos siguientes solo se aplican a Dynamic Media: modo Scene7 en AEM 6.5, Service Pack 6 (AEM 6.5.6) o posterior. Esta función de invalidación de CDN también requiere que utilice la CDN integrada que se incluye con AEM Dynamic Media; no se admite ningún otro CDN personalizado.<br>Si utiliza Dynamic Media en AEM 6.5, Service Pack 5 (AEM 6.5.5) o anterior, siga los pasos que se encuentran en [Invalidación de la caché de CDN mediante Dynamic Media Classic.](/help/assets/invalidate-cdn-cache-dm-classic.md)
 
 Consulte también Descripción general [del almacenamiento en caché en Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
