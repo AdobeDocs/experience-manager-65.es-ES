@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
+source-git-commit: 5e5108b943907e5286298552c724d2b33873503f
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -50,11 +50,12 @@ Después de configurar la publicación selectiva en una carpeta, puede realizar 
    * Edite las propiedades de una nueva carpeta: En la Vista **[!UICONTROL de]** tarjetas, en la Vista **[!UICONTROL de]** columnas o en la Vista **[!UICONTROL de]** Listas, cerca de la esquina superior derecha de la página, toque **[!UICONTROL Crear > Carpeta.]** En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , escriba un título (obligatorio) para la carpeta y, a continuación, toque **[!UICONTROL Crear.]** Seleccione la carpeta y, en la barra de herramientas, toque **[!UICONTROL Propiedades.]**
 
 1. En la lista desplegable Modo **[!UICONTROL de]** sincronización, seleccione una de las siguientes opciones:
-| Modo de sincronización | Descripción |
-| — | — |
-| **[!UICONTROL Heredado]** | No hay ningún valor de sincronización explícita en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado establecido en la Configuración **[!UICONTROL de medios]** dinámicos. El estado detallado de **[!UICONTROL Heredado]** se muestra mediante una información del objeto. |
-| **[!UICONTROL Sincronizar todo el subárbol de carpetas con dynamicmedia]** | Para que la publicación en Dynamic Media se realice correctamente, los recursos deben sincronizarse con Dynamic Media. Si selecciona esta opción, se incluirán todos los recursos de este subárbol para sincronizarlos con Dynamic Media. La configuración específica de la carpeta anula la configuración predeterminada en la Configuración **[!UICONTROL de medios]**dinámicos. |
-| **[!UICONTROL Excluir todo el subárbol de carpetas de la sincronización Dynamic Media]** | Excluir todos los recursos de este subárbol de la sincronización con Dynamic Media. |
+
+   | Modo de sincronización | Descripción |
+   | --- | --- |
+   | **[!UICONTROL Heredado]** | No hay ningún valor de sincronización explícita en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado establecido en la Configuración **[!UICONTROL de medios]** dinámicos. El estado detallado de **[!UICONTROL Heredado]** se muestra mediante una información del objeto. |
+   | **[!UICONTROL Sincronizar todo en este diagrama secundario de carpetas con dynamicmedia]** | Para que la publicación en Dynamic Media se realice correctamente, los recursos deben sincronizarse con Dynamic Media. Si selecciona esta opción, se incluirán todos los recursos de este subárbol para sincronizarlos con Dynamic Media. La configuración específica de la carpeta anula la configuración predeterminada en la Configuración **[!UICONTROL de medios]** dinámicos. |
+   | **[!UICONTROL Excluir todo el subárbol de carpetas de la sincronización DynamicMedia]** | Excluya todos los recursos de este subárbol de la sincronización con Dynamic Media. |
 
    ![Publicación selectiva a nivel de carpeta](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
@@ -69,6 +70,7 @@ Después de configurar la publicación selectiva en una carpeta, puede realizar 
    | **[!UICONTROL Inmediatamente]** | Cuando se cargan recursos en esta carpeta, el sistema los transfiere a AEM y proporciona la URL o incrustación de forma instantánea. Esta opción solo está vinculada a la publicación AEM y no es necesaria la intervención del usuario para publicar recursos.<br>Esta opción *no está* disponible si seleccionó **[!UICONTROL Excluir todo en este subárbol de carpetas de la sincronización]** dinámica de medios en el modo **[!UICONTROL de]** sincronización en el paso anterior. |
    | **[!UICONTROL Tras la activación]** | Cuando los recursos se cargan en esta carpeta, primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar. Esta opción solo está vinculada a AEM publicación.<br>Esta opción *no está* disponible si seleccionó **[!UICONTROL Excluir todo en este subárbol de carpetas de la sincronización]** dinámica de medios en el modo **[!UICONTROL de]** sincronización en el paso anterior. |
    | **[!UICONTROL Publicación selectiva]** | Los recursos se publican según su elección, ya sea en AEM o en Medios dinámicos, para envío de dominio público. Ambos métodos de publicación se excluyen mutuamente.  Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en AEM para obtener una vista previa segura; estos mismos recursos *no se publican* en DMS7 para su envío en el dominio público. Esta opción no está disponible si seleccionó **[!UICONTROL Excluir todo en este subárbol de carpetas de la sincronización]** dinámica de medios en el modo **** Sincronizar en el paso anterior. |
+
 1. En la esquina superior derecha de la página, toque **[!UICONTROL Guardar y cerrar]** y, a continuación, toque **[!UICONTROL Aceptar]** para volver a AEM Assets.
 
 ## Publicación selectiva de recursos en Dynamic Media o AEM mediante Administrar publicación{#selective-publish-manage-publication}
@@ -97,15 +99,19 @@ Consulte [Creación de una configuración](#configuring-dynamic-media-cloud-serv
       >Si **[!UICONTROL Administrar publicación]** no aparece en la barra de herramientas, toque el botón de puntos suspensivos en su lugar y, a continuación, seleccione **[!UICONTROL Administrar publicación]** en el menú lista.
 
 1. En la página **[!UICONTROL Administrar publicación - Opciones]** , en **[!UICONTROL Acción]**, seleccione el tipo de activación que desee.
-| Acción | Descripción |
-| — | — |
-| **[!UICONTROL Publicar]** (para AEM) | Seleccione esta opción para publicar recursos en AEM para una previsualización segura. |
-| **[!UICONTROL Publicar en Dynamic Media]** | Seleccione esta opción para publicar recursos en Dynamic Media para su envío en el dominio público o para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas.<br>Esta opción solo está disponible si el modo **[!UICONTROL Publicación de medios]** dinámicos está establecido en Publicación **** selectiva en las propiedades de la carpeta. |
+
+   | Acción | Descripción |
+   | --- | --- |
+   | **[!UICONTROL Publicar]** (en AEM) | Seleccione esta opción para publicar recursos en AEM para una previsualización segura. |
+   | **[!UICONTROL Publicar en Dynamic Media]** | Seleccione esta opción para publicar recursos en Dynamic Media para envío en el dominio público o para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas.<br>Esta opción solo está disponible si el modo **[!UICONTROL Publicación de medios]** dinámicos está establecido en Publicación **** selectiva en las propiedades de la carpeta. |
+
 1. En **[!UICONTROL Programación]**, establezca el tiempo de publicación.
-| Programación | Descripción |
-| — | — |
-| **[!UICONTROL Ahora]** | Seleccione esta opción para publicar los recursos inmediatamente. |
-| **[!UICONTROL Más Tarde]** | Seleccione esta opción para publicar los recursos en una fecha y hora concretas. |
+
+   | Programa | Descripción |
+   | --- | --- |
+   | **[!UICONTROL Ahora]** | Seleccione esta opción para publicar los recursos inmediatamente. |
+   | **[!UICONTROL Más tarde]** | Seleccione esta opción para publicar los recursos en una fecha y hora concretas. |
+
 1. En la esquina superior derecha de la página **[!UICONTROL Administrar publicación]** , toque **[!UICONTROL Siguiente]**.
 1. En la página **[!UICONTROL Administrar publicación - Ámbito]** , realice una de las siguientes acciones:
    * Si es necesario, seleccione uno o varios recursos que desee eliminar de la publicación.
@@ -124,15 +130,19 @@ Consulte [Creación de una configuración](#configuring-dynamic-media-cloud-serv
       >Si **[!UICONTROL Administrar publicación]** no aparece en la barra de herramientas, toque el botón de puntos suspensivos en su lugar y, a continuación, seleccione **[!UICONTROL Administrar publicación]** en el menú lista.
 
 1. En la página **[!UICONTROL Administrar publicación - Opciones]** , en **[!UICONTROL Acción]**, seleccione el tipo de activación que desee.
-| Acción | Descripción |
-| — | — |
-| **[!UICONTROL Cancelar la publicación]** (de AEM) | Seleccione esta opción para cancelar la publicación de recursos de AEM. |
-| **[!UICONTROL Cancelar la publicación desde Dynamic Media]** | Seleccione esta opción para cancelar la publicación de recursos de Dynamic Media.<br>Esta opción solo está disponible si el modo **[!UICONTROL Publicación de medios]** dinámicos está establecido en Publicación **** selectiva en las propiedades de la carpeta.  |
+
+   | Acción | Descripción |
+   | --- | --- |
+   | **[!UICONTROL Cancelar la publicación]** (de AEM) | Seleccione esta opción para cancelar la publicación de recursos de AEM. |
+   | **[!UICONTROL Cancelar la publicación de Dynamic Media]** | Seleccione esta opción para cancelar la publicación de recursos de Dynamic Media.<br>Esta opción solo está disponible si el modo **[!UICONTROL Publicación de medios]** dinámicos está establecido en Publicación **** selectiva en las propiedades de la carpeta. |
+
 1. En **[!UICONTROL Programación]**, establezca la temporización de la desactivación.
-| Programación | Descripción |
-| — | — |
-| **[!UICONTROL Ahora]** | Seleccione esta opción para cancelar la publicación de los recursos inmediatamente. |
-| **[!UICONTROL Más Tarde]** | Seleccione esta opción para cancelar la publicación de los recursos en una fecha y hora concretas. |
+
+   | Programa | Descripción |
+   | --- | --- |
+   | **[!UICONTROL Ahora]** | Seleccione esta opción para cancelar la publicación de los recursos inmediatamente. |
+   | **[!UICONTROL Más tarde]** | Seleccione esta opción para cancelar la publicación de los recursos en una fecha y hora concretas. |
+
 1. En la esquina superior derecha de la página **[!UICONTROL Administrar publicación]** , toque **[!UICONTROL Siguiente]**.
 1. En la página **[!UICONTROL Administrar publicación - Ámbito]** , realice una de las siguientes acciones:
    * Seleccione uno o varios recursos que desee eliminar de la cancelación de la publicación.
@@ -159,12 +169,15 @@ Puede utilizar Publicación **[!UICONTROL rápida]** para casos de activación d
       >Si no se muestra Publicación **** rápida en la barra de herramientas, toque el botón de puntos suspensivos y, a continuación, seleccione Publicación **** rápida en el menú lista.
 
       ![Publicación rápida a nivel de carpeta en Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+
 1. Seleccione una de las siguientes opciones en la lista de menú Publicación **** rápida.
-| Opción Publicación rápida | Qué hace |
-| — | — |
-| Publicar en AEM | Publica los recursos seleccionados inmediatamente para AEM. |
-| Publicar en Brand Portal | Publica los recursos seleccionados inmediatamente en **[!UICONTROL Brand Portal]**.<br>Esta opción solo está disponible si la instancia de AEM Assets ya tiene **[!UICONTROL Brand Portal]** configurado. |
-| Publicar en Dynamic Media | Publica los recursos seleccionados inmediatamente en Dynamic Media.<br>Un recurso ya debe sincronizarse con Dynamic Media. Si es necesario, asegúrese de que el modo **[!UICONTROL de]** sincronización en las propiedades de una carpeta ya está establecido para **[!UICONTROL sincronizar todo en este subárbol de carpetas con dynamicmedia]**. |
+
+   | Opción Publicación rápida | Qué hace |
+   | --- | --- | 
+   | Publicar en AEM | Publica los recursos seleccionados inmediatamente para AEM. |
+   | Publicar en Brand Portal | Publica los recursos seleccionados inmediatamente en **[!UICONTROL Brand Portal]**.<br>Esta opción solo está disponible si la instancia de AEM Assets ya tiene **[!UICONTROL Brand Portal]** configurado. |
+   | Publicar en Dynamic Media | Publica los recursos seleccionados inmediatamente en Dynamic Media.<br>Un recurso ya debe sincronizarse con Dynamic Media. Si es necesario, asegúrese de que el modo **[!UICONTROL de]** sincronización en las propiedades de una carpeta ya está establecido para **[!UICONTROL sincronizar todo en este subárbol de carpetas con dynamicmedia]**. |
+
 1. Toque **[!UICONTROL Aceptar]** y luego **[!UICONTROL Cerrar]**.
 
 ## Publicar o cancelar la publicación de recursos de forma selectiva mediante los resultados de búsqueda {#selective-publish-unpublish-search-results}
@@ -200,14 +213,16 @@ De forma opcional, puede utilizar estas casillas de verificación junto con el p
    | Cancelar publicación | Publicación selectiva | No publicado solo desde AEM. |
    | Publicar en Dynamic Media | Inmediatamente o tras la Activación | No se publica en AEM, Medios dinámicos o ambos. |
    | Publicar en Dynamic Media | Publicación selectiva | Solo se publica en Dynamic Media. |
-   | Cancelar la publicación de medios dinámicos | Inmediatamente o tras la Activación | Sin cancelar la publicación desde AEM, Medios dinámicos o ambos. |
-   | Cancelar la publicación de medios dinámicos | Publicación selectiva | Solo sin publicar desde Dynamic Media. |
+   | Cancelar la publicación de Dynamic Media | Inmediatamente o tras la Activación | Sin cancelar la publicación desde AEM, Medios dinámicos o ambos. |
+   | Cancelar la publicación de Dynamic Media | Publicación selectiva | Solo sin publicar desde Dynamic Media. |
 
 1. En **[!UICONTROL Programación]**, establezca la temporización de la desactivación.
-| Programación seleccionada | Qué sucede |
-| — | — |
-| Ahora | La acción seleccionada se realiza inmediatamente. |
-| Más tarde | La acción seleccionada se ejecuta en la fecha y hora específicas seleccionadas. |
+
+   | Programación seleccionada | Qué sucede |
+   | --- | --- |
+   | Ahora | La acción seleccionada se realiza inmediatamente. |
+   | Más tarde | La acción seleccionada se ejecuta en la fecha y hora específicas seleccionadas. |
+
 1. En la esquina superior derecha de la página **[!UICONTROL Administrar publicación - Opciones]** , toque **[!UICONTROL Siguiente]**.
 1. (Opcional) En la página **[!UICONTROL Administrar publicación - Ámbito]** , revise la columna Destinatario **[!UICONTROL de]** publicación de la tabla de los recursos seleccionados.
 
@@ -218,9 +233,9 @@ De forma opcional, puede utilizar estas casillas de verificación junto con el p
    | Publicación selectiva | Publicación | AEM |
    | Publicación selectiva | Publicar en Dynamic Media | Dynamic Media |
    | Inmediatamente o <br>tras la Activación | Cancelar publicación | Medios AEM y dinámicos |
-   | Inmediatamente o <br>tras la Activación | Cancelar la publicación de medios dinámicos | Ninguna |
+   | Inmediatamente o <br>tras la Activación | Cancelar la publicación de Dynamic Media | Ninguna |
    | Publicación selectiva | Cancelar publicación | AEM |
-   | Publicación selectiva | Cancelar la publicación de medios dinámicos | Dynamic Media |
+   | Publicación selectiva | Cancelar la publicación de Dynamic Media | Dynamic Media |
 
 1. En la página **[!UICONTROL Administrar publicación - Ámbito]** , realice una de las siguientes acciones:
    * Seleccione uno o varios recursos que desee eliminar de la publicación o cancelación de publicación.
