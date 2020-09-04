@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
+source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 4%
@@ -114,6 +114,7 @@ Consulte [Creación de una configuración](#configuring-dynamic-media-cloud-serv
 
 1. En la esquina superior derecha de la página **[!UICONTROL Administrar publicación]** , toque **[!UICONTROL Siguiente.]**
 1. En la página **[!UICONTROL Administrar publicación - Ámbito]** , realice una de las siguientes acciones:
+
    * Si es necesario, seleccione uno o varios recursos que desee eliminar de la publicación.
    * En la esquina superior derecha de la página **[!UICONTROL Administrar publicación - Ámbito]** , toque **[!UICONTROL Publicar]** o **[!UICONTROL Publicar en medios dinámicos.]**
 1. Toque **[!UICONTROL Aceptar.]**
