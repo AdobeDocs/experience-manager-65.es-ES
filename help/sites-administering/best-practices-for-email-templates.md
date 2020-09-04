@@ -11,7 +11,10 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
+source-git-commit: 7e05502b590fb2c7c36919f94611efe999262d32
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 >[!CAUTION]
 >
->Los componentes de correo electrónico de AEM han quedado obsoletos. Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada por AEM se vuelven de uso limitado para los clientes debido a la necesidad de implementar estilos personalizados en los componentes necesarios para los proyectos.
+>Los componentes de correo electrónico AEM han quedado obsoletos. Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada por AEM se vuelven de uso limitado para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
 >
->Los componentes de correo electrónico se pueden implementar en el nivel de proyecto y los componentes de correo electrónico de AEM obsoletos ilustran cómo se puede lograr. Sin embargo, estos componentes desaprobados no deben usarse en proyectos.
+>Los componentes de correo electrónico se pueden implementar a nivel de proyecto y los componentes de correo electrónico AEM obsoletos ilustran cómo se puede lograr. Sin embargo, estos componentes desaprobados no deben usarse en proyectos.
 
 Este documento describe algunas de las prácticas recomendadas en torno al diseño del correo electrónico, lo que resulta en una plantilla de campaña de correo electrónico bien desarrollada.
 
@@ -127,11 +130,11 @@ Siga estas prácticas recomendadas para crear su propia newsletter.
 
 | **Práctica recomendada** | **Implementación** |
 |---|---|
-| Use el validador de W3C para corregir el código HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se validó el código. Para el Doctype de transición XHTML, solo se debe el atributo xmlns que falta para el <html> falta el elemento. |
-| No se preocupe por JavaScript o Flash: los clientes de correo electrónico no admiten estas tecnologías. | En la plantilla de newsletter no se utiliza JavaScript ni Flash. |
+| Use el validador de W3C para corregir el código HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se validó el código. En el caso de Doctype de transición XHTML, solo falta el atributo xmlns que falta para el `<html>` elemento. |
+| No se preocupe por JavaScript o Flash: los clientes de correo electrónico no admiten estas tecnologías. | No se utiliza JavaScript ni Flash en la plantilla de newsletter. |
 | Añada una versión de texto sin formato para el envío de varias partes. | Se ha incorporado una nueva utilidad en las propiedades de la página para extraer fácilmente una versión de texto sin formato del contenido de la página. Se puede utilizar como punto de partida para la versión final de texto sin formato. |
 
-## Ejemplos y plantillas de newsletter de Campaña {#campaign-newsletter-templates-and-examples}
+## Ejemplos y plantillas de newsletter de campaña {#campaign-newsletter-templates-and-examples}
 
 AEM incluye varias plantillas y componentes listos para usar para crear newsletters de campaña. Puede utilizar estas plantillas y componentes para crear boletines informativos personalizados.
 
@@ -145,7 +148,7 @@ Todos tienen un **encabezado**, un **pie** de página y una sección de **cuerpo
 
 ### Componentes {#components}
 
-Actualmente hay [siete componentes disponibles para su uso dentro de plantillas de campaña](/help/sites-authoring/adobe-campaign-components.md). Todos estos componentes se basan en el lenguaje de marcado de Adobe **HTL**.
+Actualmente hay [siete componentes disponibles para su uso dentro de plantillas de campaña](/help/sites-authoring/adobe-campaign-components.md). Todos estos componentes se basan en el lenguaje de marcado Adobe **HTL**.
 
 | **Nombre del componente** | **Ruta del componente** |
 |---|---|
