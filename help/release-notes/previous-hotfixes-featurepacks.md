@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión anterior de Adobe Experience Manager 6.5 Service Pack
-description: Notas de la versión específicas de Adobe Experience Manager 6.5 Service Pack 3 y versiones anteriores.
+title: '[!DNL Adobe Experience Manager] 6.5 Notas de la versión anterior de Service Pack.'
+description: Notas de la versión para [!DNL Adobe Experience Manager] Service Packs 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: a842da57a155f56ad3efc268610c167fe140998b
+source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
 workflow-type: tm+mt
-source-wordcount: '11431'
+source-wordcount: '11438'
 ht-degree: 26%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 26%
 
 # Revisiones y paquetes de funciones incluidos en instancias de Service Pack anteriores {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
 Adobe Experience Manager 6.5.5.0 es una actualización importante que incluye nuevas funciones, mejoras clave solicitadas por los clientes y mejoras de rendimiento, estabilidad y seguridad, que se han publicado desde la disponibilidad general de la versión 6.5 en **abril de 2019**. Se puede instalar sobre Adobe Experience Manager 6.5.
 
-Algunas funciones y mejoras clave introducidas en Adobe Experience Manager 6.5.5.0 incluyen:
+Algunas funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.5.5.0 incluyen:
 
-* Personalice los nombres de columna que se muestran en la Bandeja de entrada de Adobe Experience Manager.
+* No se permite el acceso anónimo al CRXDE Lite. En su lugar, se dirige a los usuarios a la pantalla de inicio de sesión. Consulte [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
+* Personalice los nombres de columna que se muestran en la [!DNL Adobe Experience Manager] Bandeja de entrada.
 
 * Se ha mejorado la accesibilidad en varias áreas de Experience Manager Web Gestor de contenido (WCM), como el Editor de páginas, los Componentes principales, RTE y la interfaz de usuario del administrador.
 
@@ -69,7 +71,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 * Cuando un usuario copia y pega un Contenedor de diseño en la misma página, los componentes de un Contenedor de diseño no se muestran (NPR-33648).
 * La comprobación de estado del despachante muestra `Invalid cookie header` un mensaje de advertencia en los archivos de registro (NPR-33629).
 * Se refleja XSS en PreferencesServlet (NPR-33438).
-* Los usuarios anónimos pueden acceder a las funciones de CRX DE Lite (GRANITE-27790).
+* Los usuarios anónimos pueden acceder a las funciones de CRXDE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
