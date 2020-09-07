@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 097109edcf66cc06460c9d962037e49613e3405b
+source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '822'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # Configuración del correo electrónico {#configuring-email}
 
-Los AEM Communities utilizan el correo electrónico para:
+AEM Communities utiliza el correo electrónico para:
 
 * [Notificaciones de comunidades](notifications.md)
 * [Suscripciones de comunidades](subscriptions.md)
@@ -112,7 +112,7 @@ Esta configuración no debe modificarse.
 
 * Verifique que **Crear anuncio desde correo electrónico** de respuesta sea `unchecked`.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### Configuración de Suscripciones {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ En el caso de suscripciones de comunidades, es posible activar o desactivar la c
 * Seleccione el icono de edición.
 * Verifique que el **nombre** sea `subscriptions-email`.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL Nombre]**
 
@@ -138,9 +138,10 @@ En el caso de suscripciones de comunidades, es posible activar o desactivar la c
 * **[!UICONTROL Longitud máxima del asunto]**
 
    Si se agrega la identificación del rastreador a la línea de asunto, ésta es la longitud máxima del sujeto, excluyendo la identificación rastreada, tras la cual se recortará. Tenga en cuenta que esto debe ser lo más pequeño posible para evitar que la información de identificación rastreada se pierda. El valor predeterminado es 200.
-* **[!UICONTROL Dirección de correo electrónico &quot;De&quot;]**
 
-   *(Requerido)* Dirección desde la que se enviaría el correo electrónico de notificación. Es probable que el mismo usuario **** SMTP especificado para el servicio [de correo](#configuredefaultmailservice)predeterminado. El valor predeterminado es `no-reply@example.com`.
+* **[!UICONTROL Dirección de correo electrónico &quot;Responder a&quot;]**
+
+   Dirección que se utiliza como dirección de correo electrónico de respuesta. El valor predeterminado es `communities@adobe.com`.
 
 * **[!UICONTROL Respuesta al delimitador]**
 
@@ -208,7 +209,7 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 Una vez guardada la nueva configuración de sondeo, es necesario modificar las propiedades del importador de correo electrónico de suscripción para cambiar el protocolo de `POP3` a `emailreply`
 
-Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Inicie sesión en el editor principal con privilegios de administrador y vaya a [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importadores/encuestas](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Seleccione la configuración recién creada y modifique las siguientes propiedades:
