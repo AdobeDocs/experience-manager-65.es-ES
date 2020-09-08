@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
+source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1910'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 
 #### Configurar Dispatcher {#configure-dispatcher}
 
-Dispatcher es una herramienta de almacenamiento en caché y equilibrio de carga para AEM. AEM Dispatcher también ayuda a proteger AEM servidor de los ataques. Puede aumentar la seguridad de la instancia de AEM mediante Dispatcher junto con un servidor web de clase empresarial. Si utiliza [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), realice las siguientes configuraciones para AEM Forms:
+Dispatcher es una herramienta de almacenamiento en caché y/o equilibrio de carga de Adobe Experience Manager que se puede utilizar junto con un servidor web de clase empresarial. Si utiliza [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), realice las siguientes configuraciones para AEM Forms:
 
 1. Configurar el acceso para AEM Forms:
 
