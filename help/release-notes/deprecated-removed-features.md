@@ -2,7 +2,7 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
+source-git-commit: 1e6feac534fe990d614997c4bd3ab999a4a8d479
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 45%
@@ -49,7 +49,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Desarrolladores | Usar YUI para comprimir o minimizar las bibliotecas de cliente de JavaScript. Adobe no tiene previsto actualizar la biblioteca de YUI. Hasta AEM 6.4, YUI era el valor predeterminado para reducir el código JavaScript con la opción de cambiar a Google Closure Compiler (GCC). A partir de AEM 6.5, la opción GCC es la opción predeterminada. | Adobe recomienda a los clientes que actualicen a AEM 6.5 para cambiar a GCC para su implementación |
 | Desarrolladores | Editor de diálogos estándar de interfaz de usuario en CRXDE Lite. Adobe no tiene previsto mejorar el editor de diálogos estándar de interfaz de usuario incluido como parte de la distribución (Quickstart) | No hay reemplazo disponible. |
 | Forms | La integración de AEM Forms con AEM Mobile está en desuso. | No hay sustitutos disponibles. |  | Desarrolladores | Editor de diálogos estándar de interfaz de usuario en CRXDE Lite. Adobe no tiene previsto mejorar el editor de diálogos estándar de interfaz de usuario incluido como parte de la distribución (Quickstart) | No hay reemplazo disponible. |
-| Forms | Biblioteca de cliente de guion bajo/guion bajo. Adobe no planea seguir manteniendo y actualizando la biblioteca de clientes Lodash/underscore que se envía como parte de la distribución (Quickstart) | Adobe recomienda a los clientes que aún requieren Lodash/underscore para su código que lo añadan a su base de código de proyecto. |
+| Desarrolladores | Biblioteca de cliente de guion bajo/guion bajo. Adobe no planea seguir manteniendo y actualizando la biblioteca de clientes Lodash/underscore que se envía como parte de la distribución (Quickstart) | Adobe recomienda a los clientes que aún requieren Lodash/underscore para su código que lo añadan a su base de código de proyecto. |
 
 ## Funciones eliminadas {#removed-features}
 
