@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
+source-git-commit: 5d33b48000cf607eb77c626ec539280cadab378e
 workflow-type: tm+mt
-source-wordcount: '2740'
+source-wordcount: '2889'
 ht-degree: 0%
 
 ---
@@ -233,9 +233,9 @@ Utilice la propiedad categorías para identificar la carpeta de biblioteca de cl
 * **Tipo:** Cadena[]
 * **Valor:** El valor de la propiedad categorías del `cq:ClientLibraryFolder` nodo que se va a incrustar.
 
-<!-- #### Using Embedding to Minimize Requests {#using-embedding-to-minimize-requests}
+#### Uso de la incrustación para minimizar solicitudes {#using-embedding-to-minimize-requests}
 
-In some cases you may find that the final HTML generated for typical page by your publish instance includes a relatively large number of `<script>` elements, particularly if your site is using client context information for analaytics or targeting. For example, in a non-optimized project you might find the following series of `<script>` elements in the HTML for a page:
+En algunos casos, es posible que el HTML final generado para una página típica por la instancia de publicación incluya un número relativamente grande de `<script>` elementos, especialmente si el sitio utiliza información de contexto de cliente para realizar análisis o segmentación. Por ejemplo, en un proyecto no optimizado puede encontrar la siguiente serie de `<script>` elementos en el HTML de una página:
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
@@ -243,13 +243,12 @@ In some cases you may find that the final HTML generated for typical page by you
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
-In such cases, it can be useful to combine all the required client library code in to a single file so that the number of back and forth requests on page load is reduced. To do this you can `embed` the required libraries into you app-specific client library using the embed property of the `cq:ClientLibraryFolder` node.
+En estos casos, puede resultar útil combinar todo el código de biblioteca de cliente necesario en un solo archivo para reducir el número de solicitudes de retorno y de avance al cargar la página. Para ello, puede introducir `embed` las bibliotecas necesarias en la biblioteca de cliente específica de la aplicación mediante la propiedad embed del `cq:ClientLibraryFolder` nodo.
 
-The following client library categories are incuded with AEM. You should embed only those that are required for he functioning of your particular site. However, **you should maintain the order listed here**:
+Las siguientes categorías de biblioteca de cliente se incluyen con AEM. Debe incrustar solo aquellos que sean necesarios para el funcionamiento de un sitio en particular. Sin embargo, **debe mantener el orden indicado aquí**:
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -269,10 +268,6 @@ The following client library categories are incuded with AEM. You should embed o
 1. `cq.collab.toggle`
 1. `cq.collab.forum`
 1. `cq.cleditor`
-
-EDITOR NOTE: removed as requested on CQDOC-16765
-
--->
 
 #### Rutas en archivos CSS {#paths-in-css-files}
 
