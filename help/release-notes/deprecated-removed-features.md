@@ -1,10 +1,10 @@
 ---
-title: Funciones obsoletas y eliminadas en la versión Adobe Experience Manager 6.5.
+title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1722'
 ht-degree: 45%
 
 ---
@@ -48,7 +48,8 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Desarrolladores | `Granite.Sling.js` biblioteca de cliente. Adobe no tiene previsto mejorar la biblioteca de cliente de Granite.Sling.js incluida como parte de la distribución (Quickstart) | Adobe recomienda a los clientes que dependen de la capacidad de la biblioteca para cambiar el factor de su código y dejar de utilizarlo. |
 | Desarrolladores | Usar YUI para comprimir o minimizar las bibliotecas de cliente de JavaScript. Adobe no tiene previsto actualizar la biblioteca de YUI. Hasta AEM 6.4, YUI era el valor predeterminado para reducir el código JavaScript con la opción de cambiar a Google Closure Compiler (GCC). A partir de AEM 6.5, la opción GCC es la opción predeterminada. | Adobe recomienda a los clientes que actualicen a AEM 6.5 para cambiar a GCC para su implementación |
 | Desarrolladores | Editor de diálogos estándar de interfaz de usuario en CRXDE Lite. Adobe no tiene previsto mejorar el editor de diálogos estándar de interfaz de usuario incluido como parte de la distribución (Quickstart) | No hay reemplazo disponible. |
-| Forms | La integración de AEM Forms con AEM Mobile está en desuso. | No hay sustitutos disponibles. |
+| Forms | La integración de AEM Forms con AEM Mobile está en desuso. | No hay sustitutos disponibles. |  | Desarrolladores | Editor de diálogos estándar de interfaz de usuario en CRXDE Lite. Adobe no tiene previsto mejorar el editor de diálogos estándar de interfaz de usuario incluido como parte de la distribución (Quickstart) | No hay reemplazo disponible. |
+| Forms | Biblioteca de cliente de guion bajo/guion bajo. Adobe no planea seguir manteniendo y actualizando la biblioteca de clientes Lodash/underscore que se envía como parte de la distribución (Quickstart) | Adobe recomienda a los clientes que aún requieren Lodash/underscore para su código que lo añadan a su base de código de proyecto. |
 
 ## Funciones eliminadas {#removed-features}
 
@@ -63,7 +64,7 @@ Esta sección lista las funciones que se han eliminado de AEM 6.5. Las versiones
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Sin reemplazo. |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Sin reemplazo |
 | Forms | No está disponible la actualización de un solo salto de LiveCycle ES4 SP1 a AEM 6.5 Forms en JEE | Consulte las rutas [de actualización](../forms/using/upgrade.md) disponibles en la documentación de actualización de AEM Forms. |
-| Forms | Se ha eliminado la compatibilidad con clústeres basados en UPD de los AEM Forms en JEE | Solo se puede usar clustering basado en TCP en AEM Forms en JEE. Si actualiza un servidor de multidifusión UDP de una versión anterior a AEM 5.5 Forms en JEE, realice configuraciones manuales para cambiar a la agrupación de gemfire basada en TCP. Para obtener instrucciones detalladas, consulte [Actualización a formularios AEM 6.5 en JEE](../forms/using/upgrade-forms-jee.md) |
+| Forms | Se ha eliminado la compatibilidad con clústeres basados en UPD de AEM Forms en JEE | Solo puede utilizar clústeres basados en TCP en AEM Forms en JEE. Si actualiza un servidor de multidifusión UDP de una versión anterior a AEM 5.5 Forms en JEE, realice configuraciones manuales para cambiar a la agrupación de gemfire basada en TCP. Para obtener instrucciones detalladas, consulte [Actualización a formularios AEM 6.5 en JEE](../forms/using/upgrade-forms-jee.md) |
 | Desarrolladores | Se ha eliminado Firebug Lite de la distribución predeterminada (Quickstart) | Usar las consolas de desarrollador incorporadas en el navegador |
 | Desarrolladores | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Sin reemplazo |
 | [!DNL Assets] | La función de descarga de recursos se elimina en [!DNL Adobe Experience Manager] 6.5. | No hay reemplazo disponible. |
