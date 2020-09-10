@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
+source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 3%
@@ -112,7 +112,7 @@ Esta configuración no debe modificarse.
 
 * Verifique que **Crear anuncio desde correo electrónico** de respuesta sea `unchecked`.
 
-![chlimage_1-100](assets/configure-email.png)
+![configure-email-response](assets/configure-email-reply.png)
 
 ### Configuración de Suscripciones {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ En el caso de suscripciones de comunidades, es posible activar o desactivar la c
 * Seleccione el icono de edición.
 * Verifique que el **nombre** sea `subscriptions-email`.
 
-   ![chlimage_1-101](assets/configure-email-subscription.png)
+   ![configure-email-suscripción](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Nombre]**
 
@@ -141,7 +141,7 @@ En el caso de suscripciones de comunidades, es posible activar o desactivar la c
 
 * **[!UICONTROL Dirección de correo electrónico &quot;Responder a&quot;]**
 
-   Dirección que se utiliza como dirección de correo electrónico de respuesta. El valor predeterminado es `communities@adobe.com`.
+   Dirección que se utiliza como dirección de correo electrónico de respuesta. El valor predeterminado es `no-reply@example.com`.
 
 * **[!UICONTROL Respuesta al delimitador]**
 
