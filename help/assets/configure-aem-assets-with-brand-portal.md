@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5baef6f4d570aff738444e0620b982729b897f89
+source-git-commit: 8633216807061c73f4bc692d13f9eba37845cffc
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 13%
+source-wordcount: '2028'
+ht-degree: 12%
 
 ---
 
@@ -148,7 +148,7 @@ El certificado público le permite autenticar su perfil en Adobe Developer Conso
 
    En la ficha **Cuenta** , se crea la cuenta IMS de Adobe, pero para ello necesitará las credenciales de cuenta de servicio que se generan en la Consola de programadores de Adobe. Mantenga esta página abierta por ahora.
 
-   Abra una nueva ficha y [cree una conexión de cuenta de servicio (JWT) en la consola](#createnewintegration) de desarrollador de Adobe para obtener las credenciales y la carga útil JWT para configurar la cuenta de IMS.
+   Abra una nueva ficha y [cree una conexión de cuenta de servicio (JWT) en Adobe Developer Console](#createnewintegration) para obtener las credenciales y la carga útil JWT para configurar la cuenta de IMS.
 
 ### Crear conexión de cuenta de servicio (JWT) {#createnewintegration}
 
@@ -357,6 +357,8 @@ Realice los siguientes pasos para validar la configuración:
    >[!NOTE]
    >
    >Evite deshabilitar cualquiera de los agentes de replicación. Puede provocar errores en la replicación de algunos de los recursos.
+   >
+   >Asegúrese de que los cuatro agentes de replicación estén configurados para evitar errores de tiempo de espera. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 La instancia de autor de AEM Assets se ha configurado correctamente con Brand Portal y ahora puede:
 
