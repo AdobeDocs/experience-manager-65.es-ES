@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -48,7 +48,7 @@ Uso de CRXDE Lite:
 
 ### Secuencias de comandos de cabeza y cuerpo {#head-and-body-scripts}
 
-1. En el panel **CRXDE Lite** explorer, navegue hasta el archivo `/apps/an-scf-sandbox/components/playpage` y haga clic con el doble `playpage.jsp` para abrirlo en el panel de edición.
+1. En el panel **CRXDE Lite** explorer, navegue hasta el archivo `/apps/an-scf-sandbox/components/playpage` y haga clic con el doble en el archivo `playpage.jsp` para abrirlo en el panel de edición.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -99,6 +99,7 @@ Uso de CRXDE Lite:
 
       * Nombre: **body.jsp**
    1. Haga clic en **[!UICONTROL Guardar todo]**.
+
    Abra `/apps/an-scf-sandbox/components/playpage/body.jsp` y pegue el siguiente texto:
 
    ```xml
