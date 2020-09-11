@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -73,9 +73,9 @@ Una configuración de solución de administración de correspondencia simple inc
 
 el administrador de formularios optimiza el proceso de actualización, administración y retirada de formularios.
 
-### Espacio de trabajo de AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
-Espacio de trabajo de AEM Forms coincide con las funciones de Flex Workspace (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más fácil de usar.
+AEM Forms Workspace se ajusta a las funciones de Flex Workspace (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más sencillo de usar.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ log-bin=logname
 
 El directorio raíz de Almacenamiento de contenido contiene el repositorio de Content Services (obsoleto) donde se almacenan todos los documentos, artefactos e índices. Se debe realizar una copia de seguridad del árbol del directorio raíz del Almacenamiento de contenido. En esta sección se describe cómo determinar la ubicación del directorio raíz de Almacenamiento de contenido para entornos independientes y agrupados.
 
-### Ubicación raíz del Almacenamiento de contenido (entorno independiente) {#content-storage-root-location-stand-alone-environment}
+### Ubicación raíz de Almacenamiento de contenido (entorno independiente) {#content-storage-root-location-stand-alone-environment}
 
 El directorio raíz de Almacenamiento de contenido se crea cuando se instalan los servicios de contenido (obsoleto). La ubicación del directorio raíz de Almacenamiento de contenido se determina durante el proceso de instalación de los formularios AEM.
 
