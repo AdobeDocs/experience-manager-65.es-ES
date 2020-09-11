@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
+source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
 workflow-type: tm+mt
-source-wordcount: '4423'
+source-wordcount: '4422'
 ht-degree: 6%
 
 ---
@@ -112,7 +112,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * La página de búsqueda y la página de resultados de búsqueda ahora tienen títulos más informativos para comprender mejor a los usuarios de lectores de pantalla (NPR-34093).
 
-* Los lectores de pantalla ahora anuncian las opciones para eliminar las etiquetas seleccionadas en la ficha [!UICONTROL Básico] de los botones Propiedades del recurso para eliminar las etiquetas seleccionadas (NPR-33972).
+* Los lectores de pantalla ahora anuncian las opciones para eliminar las etiquetas seleccionadas en la ficha [!UICONTROL Básico] de los botones [!UICONTROL Propiedades] del recurso para eliminar las etiquetas seleccionadas (NPR-33972).
 
 * Los elementos de cada fila de la vista de lista ahora se anuncian correctamente como los elementos de la misma fila por los lectores de pantalla (NPR-33932).
 
