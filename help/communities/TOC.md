@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de AEM 6.5 Communities
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 7%
@@ -39,7 +40,7 @@ ht-degree: 7%
    + [Servicio de administración de usuarios y usuarios por usuario en AEM Communities](user-ugc-management-service.md)
    + [Sitios de comunidades](administer-landing.md)
    + [Consolas de comunidades](consoles.md)
-   + [Funciones de Configuración de Analytics para Comunidades](analytics.md)
+   + [Funciones de configuración de Analytics para comunidades](analytics.md)
    + [Configuración de las funciones de habilitación](enablement.md)
    + [Configuración de mensajes](messaging.md)
    + [Moderación del contenido de la comunidad](moderate-ugc.md)
@@ -89,18 +90,18 @@ ht-degree: 7%
    + [Personalización del lado del servidor](server-customize.md)
    + [Personalización del lado del cliente](client-customize.md)
    + [Ayudantes de manillares SCF](handlebars-helpers.md)
-   + [Información general del proveedor de recursos de Almacenamiento](srp.md)
+   + [Información general del proveedor de recursos de almacenamiento](srp.md)
    + [Elementos esenciales del sitio de la comunidad](sites-for-developers.md)
-   + [Elementos esenciales del flujo de Actividad](essentials-activities.md)
+   + [Elementos esenciales del flujo de actividad](essentials-activities.md)
    + [Ascripciones esenciales](essentials-assignments.md)
    + [Elementos esenciales del blog](blog-developer-basics.md)
    + [Elementos básicos del calendario](calendar-basics-for-developers.md)
    + [Funciones básicas del catálogo](catalog-developer-essentials.md)
    + [Componentes Clientlibs for Communities](clientlibs.md)
    + [Comentarios esenciales](essentials-comments.md)
-   + [Eventos OSGi para componentes de comunidades](events.md)
+   + [EVENTOS OSGi para componentes de comunidades](events.md)
    + [Elementos esenciales del contenido destacado](essentials-featured.md)
-   + [Esenciales de la biblioteca de archivos](essentials-file-library.md)
+   + [Elementos esenciales de la biblioteca de archivos](essentials-file-library.md)
    + [Elementos esenciales del foro](essentials-forum.md)
    + [Elementos esenciales del grupo de la comunidad](essentials-groups.md)
    + [Ideas esenciales](ideation.md)
@@ -142,7 +143,7 @@ ht-degree: 7%
 + Creación {#authoring}
    + [Componentes de las comunidades](author-communities.md) 
    + [Conceptos básicos de los componentes de comunidades](basics.md)
-   + [Función de flujo de Actividad](activities.md)
+   + [Función de flujo de actividad](activities.md)
    + [Función Asignaciones](assignments.md)
    + [Función de blog](blog-feature.md)
    + [Función de calendario](calendar.md)
@@ -161,7 +162,7 @@ ht-degree: 7%
    + [Uso del resumen de revisiones y revisiones (visualización)](reviews.md)
    + [Función de búsqueda](search.md)
    + [Uso de gráficos sociales](socialgraph.md)
-   + [Tendencias de Actividad](trends.md)
+   + [Tendencias de actividad](trends.md)
    + [Uso de la nube de etiquetas de Social](tagcloud.md)
    + [Uso de la votación](voting.md)
    + [Crear una página de muestra](create-sample-page.md)
