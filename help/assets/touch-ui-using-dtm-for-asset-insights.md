@@ -3,9 +3,9 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas de Adobe (DTM) para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 3fbf32ec0930b8e832f8bea5b466fcb6bd38fbd3
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '680'
 ht-degree: 1%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 1%
 
 # Activar perspectivas de recursos mediante DTM {#enable-asset-insights-through-dtm}
 
-La administración dinámica de etiquetas de Adobe es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics.
+La administración dinámica de etiquetas de Adobe es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights o puede utilizar DTM para insertar etiquetas de Asset Insights. Las perspectivas solo son compatibles y se proporcionan para imágenes.
 
-Aunque puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights, Adobe recomienda utilizar DTM para insertar etiquetas de Asset Insights.
-
->[!NOTE]
+>[!CAUTION]
 >
->Las perspectivas solo son compatibles y se proporcionan para imágenes.
+>La DTM de Adobe está en desuso en favor de Adobe Experience Platform Launch y pronto llegará al [final de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda que [utilice Launch para obtener perspectivas](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de recursos.
 
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM.
 
