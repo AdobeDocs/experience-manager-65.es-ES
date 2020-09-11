@@ -1,8 +1,8 @@
 ---
 title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
 seo-title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
-seo-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
+description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
+seo-description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 412200c1bb0c7050c981fc5dc2a5430f37b3beb3
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Acerca de MSRP {#about-msrp}
 
-Cuando los AEM Communities están configurados para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando AEM Communities está configurado para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las Opciones](working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](topologies.md)recomendadas.
 
@@ -37,7 +37,7 @@ Consulte también [Características de las Opciones](working-with-srp.md#charact
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Versión 4.10 o 5
+   * Versión de Solr 7.0
    * Solr requiere Java 1.7 o bueno
    * No se necesita ningún servicio
    * Opción de modos de ejecución:
@@ -80,7 +80,7 @@ Al crear, para acceder a la consola de configuración de Almacenamiento:
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host de Zookeeper **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host de Zookeeper**
 
       Cuando se ejecuta en el modo [](solr.md#solrcloud-mode) SolrCloud con un ZooKeeper externo, establezca este valor en el `HOST:PORT` para ZooKeeper, como *my.server.com:2181*
 
@@ -233,13 +233,13 @@ En todas las instancias de creación y publicación de AEM, vuelva a la consola 
 
 ### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
 
-Si realiza la actualización desde un sitio existente de AEM Communities 6.0, cualquier UGC preexistente debe convertirse para ajustarse a la estructura requerida para la API de [SRP](srp.md) después de actualizar a AEM Communities 6.3.
+Si realiza la actualización desde un sitio AEM Communities 6.0 existente, cualquier UGC preexistente debe convertirse para ajustarse a la estructura requerida para la API [SRP](srp.md) después de actualizar a AEM Communities 6.3.
 
 Hay una herramienta de código abierto disponible en GitHub para este propósito:
 
-* [Herramienta de migración UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Herramienta de migración UGC de AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de comunidades sociales AEM para importarlos a AEM Communities 6.1 o posterior.
+La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de AEM comunidades sociales para importarlos a AEM Communities 6.1 o posterior.
 
 ### Error: proveedor de campos no definido {#error-undefined-field-provider-id}
 
