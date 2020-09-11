@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Esta configuración es adecuada para entornos *no productivos* como para desarro
 
 * MongoDB puede ejecutarse en el mismo host que AEM o de forma remota.
 
-### MongoDB Inicio {#start-mongodb}
+### MongoDB inicio {#start-mongodb}
 
 * &lt;mongo-install>/bin/mongood —dbpath &lt;mongo-dbpath>
 
@@ -100,7 +100,7 @@ Los siguientes comandos son un ejemplo de configuración de un conjunto de répl
 * Descargar Solr de [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Adecuado para cualquier SO.
-   * Utilice la versión 4.10 o la versión 5.
+   * Versión de Solr 7.0.
    * Solr requiere Java 1.7 o bueno.
 
 * Configuración básica
@@ -143,9 +143,9 @@ Para ejecutar una configuración de solrCloud muy básica (no de producción), i
 
 ## Identifique MongoDB como una tienda común {#identify-mongodb-as-common-store}
 
-Inicie el autor y publique las instancias de AEM, si es necesario.
+Inicie el autor y publique AEM instancias, si es necesario.
 
-Si AEM se estaba ejecutando antes de que MongoDB se iniciara, entonces será necesario reiniciar las instancias de AEM.
+Si AEM se estaba ejecutando antes de que se iniciara MongoDB, entonces las instancias de AEM deberán reiniciarse.
 
 Siga las instrucciones de la página de documentación principal: [MSRP - Tienda común MongoDB](msrp.md)
 
@@ -159,7 +159,7 @@ Para probar y comprobar el almacén común de MongoDB, publique un comentario so
 
    ![chlimage_1-191](assets/chlimage_1-191.png)
 
-1. vista el comentario en la instancia [de](http://localhost:4502/content/community-components/en/comments.html) autor (probablemente aún haya iniciado sesión como administrador/administrador).
+1. Vista el comentario en la instancia [de](http://localhost:4502/content/community-components/en/comments.html) autor (probablemente aún haya iniciado sesión como administrador/administrador).
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
@@ -175,6 +175,7 @@ Para probar y comprobar el almacén común de MongoDB, publique un comentario so
    * Usuario `core selector` que seleccionar `collection1`
    * Seleccione `Query`
    * Seleccione `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## Solución de problemas {#troubleshooting}
@@ -185,7 +186,8 @@ Para probar y comprobar el almacén común de MongoDB, publique un comentario so
 
 1. Asegúrese de que MSRP se haya configurado para que sea el proveedor predeterminado:
 
-   * En todas las instancias de AEM de creación y publicación, vuelva a visitar la consola de configuración de [Almacenamiento](srp-config.md)
+   * En todas las instancias de creación y publicación de AEM, vuelva a visitar la consola de configuración de [Almacenamiento](srp-config.md)
+
    O compruebe el repositorio de AEM:
 
    * En JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
@@ -194,4 +196,4 @@ Para probar y comprobar el almacén común de MongoDB, publique un comentario so
    * Si el nodo srpc existe y contiene la configuración [predeterminada](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)del nodo, las propiedades de configuración predeterminada deben definir MSRP para que sea el proveedor predeterminado
 
 
-1. Asegúrese de que AEM se reinició después de seleccionar MSRP.
+1. Asegúrese de que AEM se reinició después de seleccionar el MSRP.
