@@ -4,9 +4,10 @@ product: adobe experience manager
 sub-product: formularios
 audience: end-user
 user-guide-title: Guía del usuario de Forms de AEM 6.5
+breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '3700'
 ht-degree: 2%
@@ -399,15 +400,15 @@ ht-degree: 2%
    + [Registrar una transacción para implementaciones personalizadas](using/record-transaction-custom-implementation.md)
 + Ayuda del administrador para AEM Forms en JEE {#administrator-help}
    + Introducción {#get-started}
-      + [Informes generales de AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
+      + [Configuración general de AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Actualizar el tipo de licencia para la implementación](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Configuración y administración de dominios {#setup-manage-domains}
       + [Añadir dominios](/help/forms/using/admin-help/adding-domains.md)
       + [Eliminar un dominio](/help/forms/using/admin-help/delete-domain.md)
       + [Configuración de la configuración del bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md)
       + [Edición y conversión de dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md)
-      + [Sincronización de proveedores de autenticación](/help/forms/using/admin-help/configuring-authentication-providers.md)
-      + [para sincronizar directorios](/help/forms/using/admin-help/synchronizing-directories.md)
+      + [Configuración de proveedores de autenticación](/help/forms/using/admin-help/configuring-authentication-providers.md)
+      + [Sincronización de directorios](/help/forms/using/admin-help/synchronizing-directories.md)
       + [Configuración de directorios](/help/forms/using/admin-help/configuring-directories.md)
    + Configuración de la administración de usuarios {#configure-user-management}
       + [Cambiar el orden de evaluación para la autenticación](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
@@ -473,7 +474,7 @@ ht-degree: 2%
       + [Configuración de fuentes de reserva](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [Modificación de la configuración de conversión de exportación de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Conversión de archivos con PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + Cómo configurar SSL {#configure-ssl}
+   + Configuración de SSL {#configure-ssl}
       + [Información general sobre la configuración de SSL](/help/forms/using/admin-help/overview-6.md)
       + [Configuración de SSL para el servidor de aplicaciones JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [Configuración de SSL en Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -519,8 +520,8 @@ ht-degree: 2%
       + [Trabajar con operaciones y ramas paralizadas](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [Configuración de colas compartidas](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Uso de tareas](/help/forms/using/admin-help/tasks.md)
-   + Monitor de espacio de trabajo {#configure-workspace}
-      + [Configuración general de Workspace](/help/forms/using/admin-help/overview-10.md)
+   + Configuración del espacio de trabajo {#configure-workspace}
+      + [Información general sobre Workspace](/help/forms/using/admin-help/overview-10.md)
       + [Importación y exportación de la configuración global](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Configuración del mensaje del día](/help/forms/using/admin-help/setting-message-day.md)
       + [Personalización de plantillas de búsqueda](/help/forms/using/admin-help/customizing-search-templates.md)
