@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
+source-git-commit: 74606bc3e9c768c3d94b7d05c722980f29e20e0e
 workflow-type: tm+mt
-source-wordcount: '4422'
+source-wordcount: '4418'
 ht-degree: 6%
 
 ---
@@ -47,9 +47,9 @@ Las principales funciones y mejoras introducidas en Adobe Experience Manager 6.5
 
 * Compatibilidad con etiquetas de texto de Adobe Sign en el servicio de conversión automatizada de Forms.
 
-* Compatibilidad con los protocolos SMB 2 y SMB 3.
+* Compatibilidad para convertir formularios coloreados en formularios adaptables mediante [!DNL Automated Forms Conversion service].
 
-* Compatibilidad para convertir formularios coloreados en formularios adaptables mediante el servicio Conversión automatizada de Forms.
+* Compatibilidad con los protocolos SMB 2 y SMB 3.
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.22.4.
 
