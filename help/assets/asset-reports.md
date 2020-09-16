@@ -3,7 +3,7 @@ title: Informes sobre el uso y uso compartido de los recursos digitales.
 description: Informes sobre los recursos [!DNL Adobe Experience Manager Assets] que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
+source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 10%
@@ -25,7 +25,7 @@ Cuando se genera un informe, se le notifica mediante un mensaje de correo electr
 
 ## Requisitos previos {#prerequisite-for-reporting}
 
-Para generar informes, asegúrese de lo siguiente:
+Para generar informes, haga lo siguiente:
 
 * Active el servicio [!UICONTROL Day CQ DAM Evento Recorder] desde **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
 * Seleccione las actividades o eventos en los que desea realizar el sistema de informes. Por ejemplo, para generar un informe sobre los recursos descargados, seleccione [!UICONTROL Recurso descargado (DESCARGADO)].
@@ -50,7 +50,7 @@ Para generar informes, asegúrese de lo siguiente:
 
 1. En [!DNL Experience Manager] la interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 
-![Página Herramientas para navegar por el informe de recursos](assets/AssetsReportNavigation.png)
+   ![Página Herramientas para navegar por el informe de recursos](assets/AssetsReportNavigation.png)
 
 1. En la página Informes [!UICONTROL de] recursos, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
@@ -63,7 +63,8 @@ Para generar informes, asegúrese de lo siguiente:
 
    >[!NOTE]
    >
-   >El informe [!UICONTROL Descargar] muestra detalles de solo los recursos seleccionados de forma individual y descargados o descargados mediante Acción rápida. Sin embargo, no incluye los detalles de los recursos que estaban dentro de una carpeta descargada.
+   >El informe [!UICONTROL Descargar] muestra detalles de solo los recursos que se descargan tras seleccionarlos individualmente o que se descargan mediante Acción rápida. Sin embargo, no incluye los detalles de los recursos que se encuentran dentro de una carpeta descargada.
+
 1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta, en el repositorio de CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente.
 
    ![Página para agregar detalles del informe](assets/report_configuration.png)
@@ -94,7 +95,7 @@ Para generar informes, asegúrese de lo siguiente:
 
    ![Página de detalles del informe Uso compartido de vínculos](assets/link_share.png)
 
-1. Haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. En la página **[!UICONTROL Configurar columnas]** , se seleccionan algunas columnas para que aparezcan en el informe de forma predeterminada. Puede seleccionar más columnas. Anule la selección de una columna seleccionada para excluirla del informe.
 
@@ -104,7 +105,7 @@ Para generar informes, asegúrese de lo siguiente:
 
    ![Seleccionar o anular la selección de las columnas del informe](assets/custom_columns.png)
 
-1. Haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
+1. Click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 1. En la página Informes [!UICONTROL de] recursos, el estado de generación de informes se basa en el estado actual del trabajo de informe, por ejemplo, [!UICONTROL Éxito], [!UICONTROL Error], [!UICONTROL En cola]o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones.Para vista de la página del informe, haga clic en el vínculo del informe. Como alternativa, seleccione el informe y haga clic en **[!UICONTROL Vista]** en la barra de herramientas.
 
    ![Un informe generado](assets/report_page.png)
@@ -141,7 +142,7 @@ Para agregar columnas personalizadas a estos informes, siga estos pasos:
 
    Para agregar más columnas personalizadas, haga clic en **[!UICONTROL Añadir]** y repita los pasos 5 y 6.
 
-1. Haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
+1. Click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 
 ## Configurar el servicio de depuración {#configure-purging-service}
 
