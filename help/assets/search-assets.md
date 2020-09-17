@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
+source-git-commit: cdf22fea17f6c79e3a2b565a4c6f728bf0bbd23a
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5888'
 ht-degree: 5%
 
 ---
@@ -65,9 +65,7 @@ Los resultados se ordenan por relevancia, empezando por las coincidencias más c
 
 Para encontrar rápidamente los recursos relevantes, la interfaz enriquecida proporciona mecanismos de filtrado, clasificación y selección. Puede filtrar los resultados en función de varios criterios y ver el número de recursos buscados para varios filtros. De lo contrario, puede volver a ejecutar la búsqueda cambiando la consulta en el campo Omniture Search. Al cambiar los términos o filtros de búsqueda, los demás filtros permanecen aplicados para preservar el contexto de búsqueda.
 
-Cuando los resultados son muchos recursos, [!DNL Experience Manager] muestra los primeros 100 en la vista de tarjeta y los 200 en la vista de lista. A medida que los usuarios se desplazan, se cargan más recursos. Esto sirve para mejorar el rendimiento.
-
->[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+Cuando los resultados son muchos recursos, [!DNL Experience Manager] muestra los primeros 100 en la vista de tarjeta y los 200 en la vista de lista. A medida que los usuarios se desplazan, se cargan más recursos. Esto sirve para mejorar el rendimiento. Vea una demostración en vídeo del [número de recursos mostrados](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
 A veces, puede ver algunos recursos inesperados en los resultados de búsqueda. Para obtener más información, consulte Resultados [inesperados](#troubleshoot-unexpected-search-results-and-issues).
 
