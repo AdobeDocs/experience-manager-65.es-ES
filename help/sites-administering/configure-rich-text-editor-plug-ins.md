@@ -3,9 +3,9 @@ title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar funcionalidades individuales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4398'
 ht-degree: 3%
 
 ---
@@ -512,7 +512,7 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. V
 
 1. Guarde los cambios.
 
-   Por ejemplo, si define un intervalo de 9998 a 10000, se proporcionan los siguientes caracteres.
+   Por ejemplo, si define un intervalo de 9998 a 10000, obtendrá los siguientes caracteres.
 
    ![En CRXDE, defina un rango de caracteres para que estén disponibles en RTE](assets/chlimage_1-107.png)
 
@@ -731,7 +731,7 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
       * **Nombre** `cssExternal`
       * **Tipo** `String`
       * **Valor** del nombre de la clase CSS (sin un &#39;.&#39; anterior); for example, `cssClass` instead of `.cssClass`)
-   * Matriz de **protocolos** válidos (incluidos `https://`, `https://`, `file://`y `mailto:` entre otros)
+   * Matriz de **protocolos** válidos. Los protocolos admitidos son `http://`, `https://`, `file://`y `mailto:`.
 
       * **Nombre** `protocols`
       * **Tipo** `String[]`
