@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 65647a5e7c30991e06dd43125159547490fdddef
+source-git-commit: 04e1b722cc9be1c4f51b629caffabe1a3f06d28e
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -366,7 +366,7 @@ A continuación se muestra un ejemplo del `pom.xml` archivo que forma parte de l
         <dependency>
             <groupId>com.adobe.aemfd</groupId>
             <artifactId>aemfd-client-sdk</artifactId>
-            <version>6.0.146</version>
+            <version>6.0.160</version>
         </dependency>
     </dependencies>
 
@@ -443,4 +443,4 @@ A continuación se muestra un ejemplo del `pom.xml` archivo que forma parte de l
 
 >[!NOTE]
 >
->Asegúrese de actualizar la dependencia `aemfd-client-sdk` a 6.0.146 o a una versión posterior del `pom.xml` archivo.
+>Asegúrese de actualizar la dependencia `aemfd-client-sdk` a 6.0.160 en el `pom.xml` archivo.
