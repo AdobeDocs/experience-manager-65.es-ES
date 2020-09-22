@@ -1,8 +1,8 @@
 ---
 title: Conceptos básicos de los componentes de comunidades
 seo-title: Conceptos básicos de los componentes de comunidades
-description: Añadir funciones de Comunidades en sitios de AEM en modo de edición y configurar componentes
-seo-description: Añadir funciones de Comunidades en sitios de AEM en modo de edición y configurar componentes
+description: Añadir funciones de comunidades a sitios AEM en modo de edición y configurar componentes
+seo-description: Añadir funciones de comunidades a sitios AEM en modo de edición y configurar componentes
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-En la sección de creación de la documentación se describe la adición de funciones de Comunidades a los sitios de AEM en modo de edición de autor, así como la descripción de las configuraciones de componentes.
+La sección de creación de la documentación describe cómo agregar funciones de Comunidades a AEM sitios en modo de edición de autor, así como la descripción de las configuraciones de componentes.
 
-Los componentes se pueden explorar con una instancia de AEM y con la guía [de componentes](components-guide.md)comunitarios interactiva.
+Los componentes pueden explorarse con una instancia de AEM y la guía [interactiva](components-guide.md)Community Components.
 
 ## Acceso a componentes de comunidades {#accessing-communities-components}
 
@@ -47,11 +47,11 @@ Para obtener más información, consulte [Configuración de componentes en modo]
 
 A continuación se muestran imágenes de la selección de algunos componentes de Communities y su visualización en el navegador de componentes:
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![componente-diseño](assets/component-design.png)
 
 Los componentes seleccionados ya están disponibles en el navegador de componentes:
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![component-design1](assets/component-design1.png)
 
 ## Clientlibs requeridos {#required-clientlibs}
 
@@ -61,11 +61,11 @@ Cuando se agrega un componente Comunidades a una página, si el resultado es un 
 
 ### Ejemplo: Revisiones colocadas inicialmente sin bibliotecas de cliente... {#example-initially-placed-reviews-without-client-libraries}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![clientlibs1](assets/clientlibs1.png)
 
 ### ... Y con bibliotecas de cliente {#and-with-client-libraries}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![clientlibs2](assets/clientlibs2.png)
 
 ## Etiquetado {#tagging}
 
@@ -90,6 +90,6 @@ Para información administrativa:
 
 Para obtener información sobre desarrolladores:
 
-* [AEM Tagging Framework](../../help/sites-developing/framework.md)
+* [AEM marco de etiquetado](../../help/sites-developing/framework.md)
 * [Etiquetado de elementos esenciales](tag.md)
 
