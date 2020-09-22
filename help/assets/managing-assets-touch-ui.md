@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
 workflow-type: tm+mt
-source-wordcount: '9240'
+source-wordcount: '9370'
 ht-degree: 4%
 
 ---
@@ -68,68 +68,80 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato](/help/assets/as
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-   Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Haga clic en **[!UICONTROL Pausar]** junto a la barra de progreso que aparece cuando se produce un inicio de carga.
+   Puede pausar la carga de recursos grandes (buenos de 500 MB) y reanudarla más tarde desde la misma página. Haga clic en **[!UICONTROL Pausar]** junto a la barra de progreso que aparece cuando se produce un inicio de carga.
 
    ![Barra de progreso de carga de recursos](assets/upload-progress-bar.png)
 
-   Se puede configurar el tamaño por encima del cual un recurso se considera un recurso grande. Por ejemplo, puede configurar el sistema para que considere los recursos superiores a 1000 MB (en lugar de 500 MB) como recursos grandes. En este caso, **[!UICONTROL Pausa]** aparece en la barra de progreso cuando se cargan recursos de tamaño bueno superior a 1000 MB.
+Se puede configurar el tamaño por encima del cual un recurso se considera un recurso grande. Por ejemplo, puede configurar el sistema para que considere los recursos superiores a 1000 MB (en lugar de 500 MB) como recursos grandes. En este caso, **[!UICONTROL Pausa]** aparece en la barra de progreso cuando se cargan recursos de tamaño bueno superior a 1000 MB.
 
-   El botón Pausar no muestra si un archivo bueno de más de 1000 MB se carga con un archivo menor que 1000 MB. Sin embargo, si cancela la carga de archivos de menos de 1000 MB, aparece el botón **[!UICONTROL Pausa]** .
+El botón Pausar no muestra si un archivo bueno de más de 1000 MB se carga con un archivo menor que 1000 MB. Sin embargo, si cancela la carga de archivos de menos de 1000 MB, aparece el botón **[!UICONTROL Pausa]** .
 
-   Para modificar el límite de tamaño, configure la `chunkUploadMinFileSize` propiedad del `fileupload`nodo en el repositorio de CRX.
+Para modificar el límite de tamaño, configure la `chunkUploadMinFileSize` propiedad del `fileupload`nodo en el repositorio de CRX.
 
-   Al hacer clic en **[!UICONTROL Pausar]**, se activa la opción **[!UICONTROL Reproducir]** . Para reanudar la carga, haga clic en **[!UICONTROL Reproducir]**.
+Al hacer clic en **[!UICONTROL Pausar]**, se activa la opción **[!UICONTROL Reproducir]** . Para reanudar la carga, haga clic en **[!UICONTROL Reproducir]**.
 
-   ![Reanudar la carga de recursos en pausa](assets/resume-paused-upload.png)
+![Reanudar la carga de recursos en pausa](assets/resume-paused-upload.png)
 
-   Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 
-   La capacidad de reanudar la carga resulta especialmente útil en situaciones de bajo ancho de banda y problemas de red, donde la carga de un recurso de gran tamaño tarda mucho tiempo. Puede pausar la operación de carga y continuar más tarde cuando mejore la situación. Cuando se reanuda, se cargan inicios desde el punto en el que se detuvo.
+La capacidad de reanudar la carga resulta especialmente útil en situaciones de bajo ancho de banda y problemas de red, donde la carga de un recurso de gran tamaño tarda mucho tiempo. Puede pausar la operación de carga y continuar más tarde cuando mejore la situación. Cuando se reanuda, se cargan inicios desde el punto en el que se detuvo.
 
-   Durante la operación de carga, [!DNL Experience Manager] guarda las partes del recurso que se cargan como fragmentos de datos en el repositorio de CRX. Cuando se completa la carga, [!DNL Experience Manager] consolida estos fragmentos en un solo bloque de datos en el repositorio.
+Durante la operación de carga, [!DNL Experience Manager] guarda las partes del recurso que se cargan como fragmentos de datos en el repositorio de CRX. Cuando se completa la carga, [!DNL Experience Manager] consolida estos fragmentos en un solo bloque de datos en el repositorio.
 
-   Para configurar la tarea de limpieza para los trabajos de carga de fragmentos no finalizados, vaya a `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
+Para configurar la tarea de limpieza para los trabajos de carga de fragmentos no finalizados, vaya a `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
-   Si carga un recurso con el mismo nombre que el de un recurso ya disponible en la ubicación donde está cargando el recurso, se muestra un cuadro de diálogo de advertencia.
-
-   Puede elegir reemplazar un recurso existente, crear otra versión o mantener ambos cambiando el nombre del nuevo recurso que se carga. Si sustituye un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, realizar anotaciones o recortes) que haya realizado en el recurso existente. Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso por el número `1` que se añadirá al nombre.
-
-   ![Cuadro de diálogo de conflicto de nombres para resolver conflictos de nombres de recursos](assets/resolve-naming-conflict.png)
-
-   >[!NOTE]
+>[!CAUTION]
+>
+>El valor predeterminado cuando se activa la carga de fragmentos es de 500 MB y el tamaño del fragmento es de 50 MB. Si modifica [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) para establecer que el valor `timeout configuration` sea inferior al tiempo que tarda un recurso en cargarse, puede experimentar una situación de tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, debe cambiar el `chunkUploadMinFileSize` y `chunksize`, para que cada solicitud de fragmento actualice la sesión.
+>
+>Dado el tiempo de espera de caducidad, la latencia, el ancho de banda y las cargas simultáneas esperadas de las credenciales, se debe elegir el valor más alto que permite garantizar que se seleccionen las dos siguientes:
+>
+>* Para asegurarse de que la carga de fragmentos está habilitada para archivos con tamaños que pueden provocar la caducidad de las credenciales mientras la carga está en curso.
    >
-   >Al seleccionar **[!UICONTROL Reemplazar]** en el cuadro de diálogo Conflicto [!UICONTROL de] nombres, el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior.
    >
-   >Si Asset Insights está habilitado para rastrear impresiones/clics con Adobe Analytics, el ID de recurso regenerado invalida los datos capturados para el recurso en Analytics.
+* Para asegurarse de que cada fragmento termina antes de que caduque la credencial.
 
-   Si el recurso cargado existe en [!DNL Assets], el cuadro de diálogo **[!UICONTROL Duplicados detectados]** advierte que está intentando cargar un recurso de duplicado. El cuadro de diálogo solo aparece si el valor de suma de `SHA 1` comprobación del binario del recurso existente coincide con el valor de suma de comprobación del recurso que se carga. En este caso, los nombres de los activos no son importantes.
 
-   >[!NOTE]
-   >
-   >El cuadro de diálogo [!UICONTROL Duplicados detectados] solo aparece cuando la función de detección de duplicados está activada. Para habilitar la función de detección de duplicado, consulte [Activar detección](/help/assets/duplicate-detection.md)de Duplicado.
+Si carga un recurso con el mismo nombre que el de un recurso ya disponible en la ubicación donde está cargando el recurso, se muestra un cuadro de diálogo de advertencia.
 
-   ![Cuadro de diálogo Recurso duplicado detectado](assets/duplicate-asset-detected.png)
+Puede elegir reemplazar un recurso existente, crear otra versión o mantener ambos cambiando el nombre del nuevo recurso que se carga. Si sustituye un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, realizar anotaciones o recortes) que haya realizado en el recurso existente. Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso por el número `1` que se añadirá al nombre.
 
-   Para conservar el recurso de duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, haga clic en **[!UICONTROL Eliminar]**.
+![Cuadro de diálogo de conflicto de nombres para resolver conflictos de nombres de recursos](assets/resolve-naming-conflict.png)
 
-   [!DNL Experience Manager Assets] evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la carga con un nombre permitido.
+>[!NOTE]
+>
+>Al seleccionar **[!UICONTROL Reemplazar]** en el cuadro de diálogo Conflicto [!UICONTROL de] nombres, el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior.
+>
+>Si Asset Insights está habilitado para rastrear impresiones/clics con Adobe Analytics, el ID de recurso regenerado invalida los datos capturados para el recurso en Analytics.
 
-   Para adaptarse a las convenciones de nombres de archivo específicas de su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que cargue.
+Si el recurso cargado existe en [!DNL Assets], el cuadro de diálogo **[!UICONTROL Duplicados detectados]** advierte que está intentando cargar un recurso de duplicado. El cuadro de diálogo solo aparece si el valor de suma de `SHA 1` comprobación del binario del recurso existente coincide con el valor de suma de comprobación del recurso que se carga. En este caso, los nombres de los activos no son importantes.
 
-   Sin embargo, no se admiten los siguientes caracteres (lista separada por espacios):
+>[!NOTE]
+>
+>El cuadro de diálogo [!UICONTROL Duplicados detectados] solo aparece cuando la función de detección de duplicados está activada. Para habilitar la función de detección de duplicado, consulte [Activar detección](/help/assets/duplicate-detection.md)de Duplicado.
 
-   * el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
-   * el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+![Cuadro de diálogo Recurso duplicado detectado](assets/duplicate-asset-detected.png)
 
-   No incluya caracteres especiales en las extensiones de los nombres de archivo de recursos.
+Para conservar el recurso de duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, haga clic en **[!UICONTROL Eliminar]**.
 
-   ![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/bulk-upload-progress.png)
+[!DNL Experience Manager Assets] evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la carga con un nombre permitido.
 
-   Además, la interfaz de usuario muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado en primer lugar. [!DNL Assets]
+Para adaptarse a las convenciones de nombres de archivo específicas de su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que cargue.
 
-   Si cancela la operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
+Sin embargo, no se admiten los siguientes caracteres (lista separada por espacios):
 
-   El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
+* el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
+* el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+No incluya caracteres especiales en las extensiones de los nombres de archivo de recursos.
+
+![El cuadro de diálogo de progreso de carga muestra el estado de los archivos y archivos cargados correctamente que no se pueden cargar](assets/bulk-upload-progress.png)
+
+Además, la interfaz de usuario muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado en primer lugar. [!DNL Assets]
+
+Si cancela la operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
+
+El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
 
 ### Cargas serie {#serialuploads}
 
@@ -806,7 +818,7 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 
 1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de anotaciones/revisión en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, utilice la configuración **Superior izquierda** . Se selecciona de forma predeterminada.
 
-   ![Seleccione la posición de la anotación o el estado de la revisión para mostrar en PDF desde el cuadro de diálogo Imprimir](assets/Print-annotation-dialog.png)
+   ![Seleccione la posición del estado de anotación/revisión para mostrar en PDF desde el cuadro de diálogo Imprimir](assets/Print-annotation-dialog.png)
 
    Puede elegir otros ajustes en función de la posición en la que desea que aparezcan las anotaciones o el estado en el PDF impreso. Si desea que las anotaciones o el estado aparezcan en una página independiente del recurso impreso, elija **[!UICONTROL Página siguiente]**.
 
