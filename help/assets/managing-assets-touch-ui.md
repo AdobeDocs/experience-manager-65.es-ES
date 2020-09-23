@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '9368'
+source-wordcount: '9410'
 ht-degree: 4%
 
 ---
@@ -538,25 +538,30 @@ Para obtener más información sobre la generación y visualización de subrecur
 
 Para eliminar recursos, un usuario necesita permisos de eliminación en `dam/asset`. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
 
-Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso. Para impedir que los usuarios eliminen recursos a los que se hace referencia y dejen vínculos rotos, desactive la opción de forzar eliminación mediante una superposición, .
+Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso. Para impedir que los usuarios eliminen recursos a los que se hace referencia y dejen vínculos rotos, desactive la opción de forzar eliminación mediante una superposición.
 
-1. Navegue a la ubicación de los recursos que desee eliminar.
+Para eliminar un recurso o una carpeta que lo contenga:
 
-1. Seleccione el recurso y haga clic en **[!UICONTROL Eliminar]** opción ![](assets/do-not-localize/deleteoutline.png) Eliminar en la barra de herramientas.
+1. Vaya a la ubicación del recurso o a la carpeta que desee eliminar.
 
-1. En el cuadro de diálogo de confirmación, seleccione una de las siguientes opciones:
+1. Seleccione el recurso o la carpeta y haga clic en **[!UICONTROL Eliminar]** opción ![](assets/do-not-localize/deleteoutline.png) Eliminar en la barra de herramientas.
 
-   * **[!UICONTROL Cancelar]** para detener la acción
-   * Seleccione **[!UICONTROL Eliminar]** para confirmar la acción:
+   Una vez que confirme la eliminación:
 
-      * Si el recurso no tiene referencias, se elimina.
-      * Si el recurso tiene referencias, un mensaje de error le informa de que se hace referencia a **uno o varios recursos.** Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
+   * Si el recurso no tiene referencias, se elimina.
 
+   * Si el recurso tiene referencias, un mensaje de error le informa de que se hace referencia **a** uno o varios recursos. Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
    >[!NOTE]
    >
    >* Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso. Asimismo, desactive el botón de forzar eliminación mediante una superposición para impedir que los usuarios eliminen los recursos a los que se hace referencia y dejen vínculos rotos.
    >* Es posible eliminar una *carpeta* que contenga archivos de recursos extraídos. Antes de eliminar una carpeta, asegúrese de que los usuarios no hayan extraído ningún recurso digital.
 
+
+>[!NOTE]
+>
+>Si elimina una carpeta utilizando el método anterior de la interfaz de usuario, también se eliminarán los grupos de usuarios asociados.
+>
+>Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante `clean` el método de JMX en la instancia de autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 ## Descargar recursos {#downloading-assets}
 
