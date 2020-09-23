@@ -1,23 +1,27 @@
 ---
-title: Cree y comparta una carpeta privada en [!DNL Adobe Experience Manager].
+title: Carpeta privada en [!DNL Adobe Experience Manager Assets]
 description: Obtenga información sobre cómo crear una carpeta privada en [!DNL Adobe Experience Manager Assets] su equipo y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
 
 
-# Uso compartido de carpetas privadas {#private-folder-sharing}
+# Carpeta privada en [!DNL Adobe Experience Manager Assets] {#private-folder}
 
 Puede crear una carpeta privada en la interfaz de [!DNL Adobe Experience Manager Assets] usuario que esté disponible exclusivamente para usted. Puede compartir esta carpeta privada con otros usuarios y asignarles varios privilegios. Según el nivel de privilegios que asigne, los usuarios pueden realizar varias tareas en la carpeta, por ejemplo, vistas de recursos dentro de la carpeta o ediciones de los recursos.
 
 >[!NOTE]
 >
 >La carpeta privada tiene al menos un miembro con la función Propietario.
+
+## Creación y uso compartido de carpetas privadas {#create-share-private-folder}
+
+Para crear y compartir una carpeta privada:
 
 1. En la [!DNL Assets] consola, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
 
@@ -63,4 +67,26 @@ Puede crear una carpeta privada en la interfaz de [!DNL Adobe Experience Manager
 
 >[!NOTE]
 >
->Para poder crear una carpeta privada, necesita permisos de lectura y edición de ACL en la carpeta principal en la que desea crear una carpeta privada. Si no es administrador, estos permisos no se habilitan de forma predeterminada para usted en `/content/dam`. En este caso, obtenga primero estos permisos para su ID de usuario o grupo antes de intentar crear carpetas privadas o ajustes de carpeta de vista.
+>Para crear una carpeta privada, necesita permisos de lectura y edición de ACL en la carpeta principal en la que desea crear una carpeta privada. Si no es administrador, estos permisos no se habilitan de forma predeterminada para usted en `/content/dam`. En este caso, obtenga primero estos permisos para su ID de usuario o grupo antes de intentar crear carpetas privadas o ajustes de carpeta de vista.
+
+## Eliminación de carpetas privadas {#delete-private-folder}
+
+Puede eliminar una carpeta privada seleccionando la carpeta y la opción [!UICONTROL Eliminar] en el menú superior o utilizando la tecla Retroceso en el teclado.
+
+### Eliminación de grupos de usuarios al eliminar carpetas {#group-removal-on-folder-deletion}
+
+Si elimina una carpeta privada mediante el método anterior de la interfaz de usuario, también se eliminarán los grupos de usuarios asociados. Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante [JMX](#group-clean-up-jmx).
+
+>[!CAUTION]
+>
+>Si elimina una carpeta privada del CRXDE Lite, los grupos de usuarios redundantes se dejarán en el repositorio.
+
+### Utilizar JMX para limpiar los grupos de usuarios no utilizados {#group-clean-up-jmx}
+
+Para limpiar el repositorio de grupos de usuarios no utilizados:
+
+1. Abra JMX para limpiar los grupos redundantes de Recursos de `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+
+1. Invocar el `clean` método desde este JMX.
+
+Puede ver que todos los grupos de usuarios redundantes o los grupos generados automáticamente (que se crean al crear una carpeta privada con el mismo nombre que un grupo eliminado anteriormente) se eliminan de la ruta `/home/groups/mac/default/<user_name>/<folder_name>`.
