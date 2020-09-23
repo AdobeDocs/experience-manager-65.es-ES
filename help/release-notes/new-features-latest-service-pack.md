@@ -4,9 +4,9 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2480'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Ahora puede optar por publicar o cancelar la publicación de recursos de forma s
 
 ### Otras mejoras en Recursos {#other-enhancements-assets-6560}
 
-* Los grupos de usuarios de carpetas privadas ahora se eliminan del repositorio al eliminar carpetas privadas. La eliminación de la carpeta privada limpia el repositorio de los grupos de usuarios huérfanos, que se crean cada vez que se crea una carpeta privada. Para obtener más información, consulte Eliminación [de grupos de usuarios al eliminar](#group-removal-on-folder-deletion)carpetas.
+* Los grupos de usuarios asociados con carpetas (privadas y no privadas) ahora se eliminan del repositorio al [eliminar dichas carpetas](/help/assets/private-folder.md#delete-private-folder). Sin embargo, los grupos de usuarios redundantes, huérfanos, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante JMX.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
