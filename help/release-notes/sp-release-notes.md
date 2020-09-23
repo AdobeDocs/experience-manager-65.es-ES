@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4da9481dbd74a8cecf13c51b78c94abc4d48332e
+source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4495'
 ht-degree: 6%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 6%
 | Tipo | Versión de Service Pack |
 | Fecha | 3 de septiembre de 2020 |
 | Descargar URL | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
-
->[!NOTE]
->
->Hay disponible una versión actualizada de AEM 6.5 Service Pack 6. Si ya ha instalado una versión anterior de Service Pack 6, actualice a la última versión disponible.
 
 ## Qué incluye Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -319,6 +315,8 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * Los formularios adaptables tienen algunos resueltores de recursos abiertos. Esto lleva a errores de envío. El problema se produce de forma intermitente (CQ-4299407).
 
+* Al abrir la configuración de campo por primera vez, no se muestra el icono de propiedades (CQ-4296284).
+
 **Flujo de trabajo**
 
 * Cuando un aprobador de flujo de trabajo carga un archivo adjunto, se cambia su nombre a `undefined` (NPR-33699).
@@ -386,6 +384,10 @@ Siga los pasos siguientes para instalar Service Pack en una instancia de Adobe E
 1. Abra el Administrador de paquetes y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete. Para obtener información sobre cómo utilizarla, consulte Administrador [de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Select the package and click **[!UICONTROL Install]**.
+
+>[!NOTE]
+>
+>Debido a un problema conocido, hay disponible un paquete de Service Pack actualizado. Se recomienda instalar el paquete.
 
 >[!NOTE]
 >
