@@ -4,9 +4,9 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2492'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Ahora puede optar por publicar o cancelar la publicación de recursos de forma s
 
 ### Otras mejoras en Recursos {#other-enhancements-assets-6560}
 
-* Los grupos de usuarios de carpetas privadas ahora se eliminan del repositorio al eliminar carpetas privadas. La eliminación de la carpeta privada limpia el repositorio de los grupos de usuarios huérfanos, que se crean cada vez que se crea una carpeta privada.
+* Los grupos de usuarios de carpetas privadas ahora se eliminan del repositorio al eliminar carpetas privadas. La eliminación de la carpeta privada limpia el repositorio de los grupos de usuarios huérfanos, que se crean cada vez que se crea una carpeta privada. Para obtener más información, consulte Eliminación [de grupos de usuarios al eliminar](#group-removal-on-folder-deletion)carpetas.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -87,7 +87,7 @@ Ahora puede configurar el [!DNL Experience Manager Forms] servidor para que real
 
 Si un AcroForm incluye [!DNL Adobe Sign] etiquetas de texto, estos campos ahora se reconocen y representan como [!DNL Adobe Sign] campos en el formulario adaptable convertido mediante [!DNL Automated Forms Conversion service]. Un firmante puede rellenar estos campos al firmar el formulario adaptable.
 
-### Compatibilidad para convertir PDF forms de color en formularios adaptables {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
 
 Puede utilizar [!DNL Automated Forms Conversion service] para convertir PDF forms de color en formularios adaptables.
 
