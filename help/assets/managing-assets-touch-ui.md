@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '9370'
+source-wordcount: '9368'
 ht-degree: 4%
 
 ---
@@ -94,7 +94,7 @@ Para configurar la tarea de limpieza para los trabajos de carga de fragmentos no
 >
 >El valor predeterminado cuando se activa la carga de fragmentos es de 500 MB y el tamaño del fragmento es de 50 MB. Si modifica [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) para establecer que el valor `timeout configuration` sea inferior al tiempo que tarda un recurso en cargarse, puede experimentar una situación de tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, debe cambiar el `chunkUploadMinFileSize` y `chunksize`, para que cada solicitud de fragmento actualice la sesión.
 >
->Dado el tiempo de espera de caducidad, la latencia, el ancho de banda y las cargas simultáneas esperadas de las credenciales, se debe elegir el valor más alto que permite garantizar que se seleccionen las dos siguientes:
+>Dado el tiempo de espera de caducidad, la latencia, el ancho de banda y las cargas simultáneas esperadas de las credenciales, se elige el valor más alto que le permite asegurarse de que se selecciona lo siguiente:
 >
 >* Para asegurarse de que la carga de fragmentos está habilitada para archivos con tamaños que pueden provocar la caducidad de las credenciales mientras la carga está en curso.
    >
