@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1676'
 ht-degree: 7%
 
 ---
@@ -40,7 +40,7 @@ La función de blog provee :
 
 Esta sección de la documentación describe:
 
-* Añadir la función de blog en un sitio de AEM
+* Añadir la función de blog en un sitio AEM
 * Configuración de los componentes del blog
 
 >[!NOTE]
@@ -63,17 +63,13 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) necesarias, así es como aparecerá el `Blog` componente:
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-Y cómo aparecerá el `Blog Sidebar` :
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### Configuración del blog {#configuring-blog}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Blog` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![configurar](assets/configure-new.png)
 
 ![Configuración del blog](assets/blog-configure.png)
 
@@ -153,7 +149,7 @@ En la ficha **Configuración** , especifique las características básicas del b
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -307,7 +303,7 @@ Los artículos del blog aparecerán en la ficha correspondiente (Publicados, Bor
 
 Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar tareas [de](/help/communities/moderate-ugc.md) moderación (según lo permite la configuración del componente) en todos los artículos de blog y comentarios publicados en un blog.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![moderador-página principal](assets/moderator-homepage.png)
 
 #### Miembros {#members}
 
@@ -322,15 +318,15 @@ Concretamente, podrán:
 * Eliminar su propio artículo o comentario de blog
 * Marcar los artículos o comentarios del blog de otros
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![miembro-página principal](assets/member-homepage.png)
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### Anónimo {#anonymous}
 
 Los visitantes del sitio que no hayan iniciado sesión solo podrán leer los artículos y comentarios publicados del blog, traducirlos si son compatibles, pero no podrán agregar un artículo o comentario del blog ni marcar los artículos o comentarios de otros.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![anónima-user-vista](assets/anonymous-user-view.png)
 
 ## Información adicional {#additional-information}
 
