@@ -3,9 +3,9 @@ title: Carpeta privada en [!DNL Adobe Experience Manager Assets]
 description: Obtenga información sobre cómo crear una carpeta privada en [!DNL Adobe Experience Manager Assets] su equipo y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -67,26 +67,30 @@ Para crear y compartir una carpeta privada:
 
 >[!NOTE]
 >
->Para crear una carpeta privada, necesita permisos de lectura y edición de ACL en la carpeta principal en la que desea crear una carpeta privada. Si no es administrador, estos permisos no se habilitan de forma predeterminada para usted en `/content/dam`. En este caso, obtenga primero estos permisos para su ID de usuario o grupo antes de intentar crear carpetas privadas o ajustes de carpeta de vista.
+>Para crear una carpeta privada, necesita permisos [de lectura y modificación de](/help/sites-administering/security.md#permissions-in-aem) control de acceso en la carpeta principal en la que desea crear una carpeta privada. Si no es administrador, estos permisos no se habilitan de forma predeterminada para usted en `/content/dam`. En este caso, obtenga primero estos permisos para su ID de usuario o grupo antes de intentar crear carpetas privadas.
 
 ## Eliminación de carpetas privadas {#delete-private-folder}
 
-Puede eliminar una carpeta privada seleccionando la carpeta y la opción [!UICONTROL Eliminar] en el menú superior o utilizando la tecla Retroceso en el teclado.
+Puede eliminar una carpeta seleccionando la carpeta y la opción [!UICONTROL Eliminar] del menú superior, o bien utilizando la tecla Retroceso del teclado.
 
-### Eliminación de grupos de usuarios al eliminar carpetas {#group-removal-on-folder-deletion}
-
-Si elimina una carpeta privada mediante el método anterior de la interfaz de usuario, también se eliminarán los grupos de usuarios asociados. Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante [JMX](#group-clean-up-jmx).
+![opción Eliminar en el menú superior](assets/delete-option.png)
 
 >[!CAUTION]
 >
 >Si elimina una carpeta privada del CRXDE Lite, los grupos de usuarios redundantes se dejarán en el repositorio.
 
+>[!NOTE]
+>
+>Si elimina una carpeta utilizando el método anterior de la interfaz de usuario, también se eliminarán los grupos de usuarios asociados.
+Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante [JMX](#group-clean-up-jmx).
+
 ### Utilizar JMX para limpiar los grupos de usuarios no utilizados {#group-clean-up-jmx}
 
 Para limpiar el repositorio de grupos de usuarios no utilizados:
 
-1. Abra JMX para limpiar los grupos redundantes de Recursos de `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+1. Abra el JMX para limpiar los grupos redundantes para Recursos en la instancia de [!DNL Experience Manager] creación desde `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+Por ejemplo, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
 
 1. Invocar el `clean` método desde este JMX.
 
-Puede ver que todos los grupos de usuarios redundantes o los grupos generados automáticamente (que se crean al crear una carpeta privada con el mismo nombre que un grupo eliminado anteriormente) se eliminan de la ruta `/home/groups/mac/default/<user_name>/<folder_name>`.
+Puede ver que todos los grupos de usuarios redundantes o los grupos generados automáticamente (que se crean al crear una carpeta con el mismo nombre que un grupo eliminado anteriormente) se eliminan de la ruta `/home/groups/mac/default/<user_name>/<folder_name>`.
