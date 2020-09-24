@@ -1,17 +1,20 @@
 ---
 title: Administración de proyectos - Lista de comprobación de optimizaciones
 seo-title: Administración de proyectos - Lista de comprobación de optimizaciones
-description: La administración de un proyecto para implementar Adobe Experience Manager (AEM) requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la ejecución de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una supervisión de alto nivel de su estado actual.
-seo-description: La administración de un proyecto para implementar Adobe Experience Manager (AEM) requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la ejecución de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una supervisión de alto nivel de su estado actual.
+description: La administración de un proyecto para implementar Adobe Experience Manager (AEM) requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para el envío de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una supervisión de alto nivel de su estado actual.
+seo-description: La administración de un proyecto para implementar Adobe Experience Manager (AEM) requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para el envío de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una supervisión de alto nivel de su estado actual.
 uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 810d4e9fa93bd0913ba6c928a2508587c605c07e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '3316'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ Para ayudarle, las prácticas recomendadas consisten en:
    * [Información general de estado por función](#status-by-role) .
    * [Fases e hitos](#phases-and-milestones).
    * [Persona](#persona) clave y su participación en cada etapa (pertinente).
-   * Un [Glosario](/help/managing/best-practices-glossary.md) de los Documentos y Entregables [Requeridos](#required-documents-and-deliverables).
+   * Un [Glosario](/help/managing/best-practices-glossary.md) de los Documentos y productos [requeridos](#required-documents-and-deliverables).
 
 * [Material de referencia](/help/managing/best-practices-further-reference.md) adicional para proporcionar más detalles sobre áreas específicas.
 
@@ -43,7 +46,7 @@ La hoja de cálculo de **Project Heartbeat** proporciona una visión general gr�
 
 * **Calidad de fase**
 
-   * Indica la calidad de los documentos [requeridos y los elementos entregables](#required-documents-and-deliverables) en todo el proyecto.
+   * Indica la calidad de los Documentos [requeridos y los elementos entregables](#required-documents-and-deliverables) en todo el proyecto.
 
 * **Estado de fase**
 
@@ -55,17 +58,17 @@ La hoja de cálculo de **Project Heartbeat** proporciona una visión general gr�
 
 ## Estado por función {#status-by-role}
 
-La hoja de cálculo **Estado por Función** muestra un desglose detallado de [**Salud **,** Calidad **y** Completidad **](#projectheartbeat)por**[ Fase](#phases-and-milestones)** **[](#persona)**y Persona.
+La hoja de cálculo **Estado por Función** muestra un desglose detallado de [**Salud**, **Calidad** y **Completidad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** **[](#persona)** y Persona.
 
 ## Fases e hitos {#phases-and-milestones}
 
 El plan del proyecto se divide en distintas fases (de alto nivel).
 
-Cada fase contiene sus propios hitos. Para cada [persona](#persona) (o función), se enumeran los hitos pertinentes, junto con los documentos necesarios para producir los productos definidos.
+Cada fase contiene sus propios hitos. Para cada [persona](#persona) (o función), se enumeran los hitos relevantes, junto con los documentos que se requieren para producir los productos definidos.
 
 >[!NOTE]
 >
->No existe una relación directa 1:1 entre los documentos individuales requeridos y los entregables.
+>No existe una relación directa 1:1 entre los documentos y productos individuales requeridos.
 
 ### Preparación {#preparation}
 
@@ -109,7 +112,7 @@ Los Cuatro Factores:
 
 * **Presupuesto**
 
-   Antes de comenzar cualquier proyecto, necesita una estimación confiable y realista de lo que costará implementar:
+   Antes de realizar el inicio de cualquier proyecto, necesita una estimación confiable y realista de lo que costará implementar:
 
    * Utilice la información del hito de validación como base para las estimaciones.
    * Sea realista en sus estimaciones.
@@ -119,7 +122,7 @@ Los Cuatro Factores:
 
 ### Planificación {#planning}
 
-La planificación del proyecto consolida la preparación. Aquí tiene que empezar a convertir los objetivos y las expectativas en una hoja de ruta bien definida, compuesta de tareas concretas, unidas por una comunicación clara, con revisiones rigurosas para medir los progresos.
+La planificación del proyecto consolida la preparación. Aquí tiene que tener en inicio convertir los objetivos y las expectativas en una hoja de ruta bien definida, compuesta de tareas concretas, unidas por una comunicación clara, con revisiones rigurosas para medir los progresos.
 
 #### Milestones {#milestones-1}
 
@@ -153,7 +156,7 @@ La planificación del proyecto consolida la preparación. Aquí tiene que empeza
    * Asegurarse de que todos tengan la misma base de conocimiento.
    * Obtén el compromiso de todos los que participarán, esto tendrá que ganarse.
 
-      * Al involucrar a los principales jugadores (incluyendo a los posibles autores) al comienzo del proyecto, incrementas tus posibilidades de conseguir su compromiso con el proyecto.
+      * Al involucrar a los principales jugadores (incluyendo a los posibles autores) en el inicio mismo del proyecto, incrementas tus posibilidades de conseguir su compromiso con el proyecto.
 
 ### Preparación del desarrollo {#development-preparation}
 
@@ -163,7 +166,7 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
 * **Personal y capacitación del equipo de desarrollo**
 
-   Antes de comenzar cualquier proyecto, debe asegurarse de que el equipo de desarrollo tenga el personal adecuado y de que todos los miembros del equipo estén formados para la tarea en cuestión.
+   Antes de comenzar cualquier proyecto, debe asegurarse de que su equipo de desarrollo cuente con el personal adecuado y de que todos los integrantes del equipo estén formados para la tarea en cuestión.
 
 * **Arquitectura del contenido**
 
@@ -177,9 +180,9 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
 * **Arquitectura del sistema**
 
-   La arquitectura del sistema define la vista conceptual del sistema; incluida (entre otros datos):
+   La arquitectura del sistema define la vista conceptual de su sistema; incluida (entre otros datos):
 
-   * [Estructura](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) del sistema para todos los entornos requeridos
+   * [Estructura](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) del sistema para todos los entornos necesarios
    * Subsistemas
    * Sistemas de terceros
    * Interfaces; hardware, software e interacción humana
@@ -187,7 +190,7 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
    * Procesos para cada entorno; por ejemplo, los requisitos de despliegue y mantenimiento
    * Actividades de mantenimiento (Almacén de datos GC, optimización de TarPM, etc.)
-   * [Almacenamiento en caché de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)
+   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Almacenamiento en caché de Dispatcher
    * [Publicación/Uso compartido autorizado de clústeres](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
    * Rendimiento del lado del cliente (JS minify, concat, sprites css, número total de solicitudes http y otras)
 
@@ -199,6 +202,7 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
    * Cómo interactuarán entre sí y con los usuarios.
    * Los datos que deben ser consumidos y producidos por las aplicaciones, en lugar de su estructura interna.
+
    Las definiciones deberían abarcar:
 
    * Estructura básica del código para el proyecto
@@ -238,11 +242,11 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
    Antes del desarrollo, deben establecerse todos los procesos de soporte necesarios para implementar, lanzar, probar y notificar problemas.
 
-   Consulte también el portal [de asistencia técnica de](https://helpx.adobe.com/marketing-cloud/contact-support.html)Adobe.
+   Consulte también el Portal de asistencia técnica de [Adobe](https://helpx.adobe.com/es/marketing-cloud/contact-support.html).
 
 ### Planificación y operaciones de operaciones {#operations-planning-and-operations}
 
-De manera similar, las operaciones deben planificarse correctamente para asegurarse de que dispone de los entornos que necesita para todas las etapas del ciclo de vida del proyecto. También necesita los procesos adecuados para mantenerlos.
+De manera similar, las operaciones deben planificarse correctamente para asegurarse de que tiene los entornos que necesita para todas las etapas del ciclo de vida del proyecto. También necesita los procesos adecuados para mantenerlos.
 
 #### Milestones {#milestones-3}
 
@@ -255,8 +259,9 @@ De manera similar, las operaciones deben planificarse correctamente para asegura
    * Una lista de roles (es decir, grupos) con `read`/ `write` definiciones de acceso para cada
 
    * Definición del uso de privilegios que afectan al entorno de publicación; por ejemplo, `replicate`
-   * Para los usuarios con privilegios mínimos, los flujos de trabajo deben definirse
+   * Para los usuarios con privilegios mínimos, deben definirse flujos de trabajo
    * Los usuarios del `editor` grupo no deben tener `admin` derechos ni formar parte del `administrators` grupo
+
    For more information, see [User Administration and Security](/help/sites-administering/security.md).
 
 * **Supervisión y mantenimiento**
@@ -265,6 +270,7 @@ De manera similar, las operaciones deben planificarse correctamente para asegura
 
    * Qué necesita supervisión
    * Tareas de mantenimiento; tanto en casos ordinarios como especiales
+
    Consulte también [Supervisión y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
 
 * **Migración**
@@ -273,17 +279,17 @@ De manera similar, las operaciones deben planificarse correctamente para asegura
 
 * **Plan de recuperación**
 
-   Asegúrese de que dispone de un plan de recuperación. En una situación de emergencia, esto debe estar disponible para garantizar el uso de AEM en la producción. Esto debería cubrir situaciones como backup, restore, failover y otras.
+   Asegúrese de que dispone de un plan de recuperación. En una situación de emergencia, esto debe estar disponible para asegurar el uso de la producción de AEM. Esto debería cubrir situaciones como backup, restore, failover y otras.
 
 ### Desarrollo {#development}
 
-El desarrollo es una fase crucial que requiere algo más que simplemente codificación.
+El desarrollo es una fase crucial que requiere algo más que simplemente codificar.
 
 #### Milestones {#milestones-4}
 
 * **Entorno de desarrollo**
 
-   Planifique y documente su entorno de desarrollo, incluso:
+   Planifique y documento su entorno de desarrollo, incluso:
 
    * Arquitectura
    * [Herramientas de desarrollo](/help/sites-developing/dev-tools.md)
@@ -303,7 +309,7 @@ El desarrollo es una fase crucial que requiere algo más que simplemente codific
 
 * **Sistema de pruebas**
 
-   Planifique y documente el entorno de prueba, incluso:
+   Planifique y documento el entorno de la prueba, incluso:
 
    * Arquitectura
    * d) La dependencia de las construcciones de desarrollo; incluyendo compilaciones nocturnas
@@ -313,7 +319,7 @@ El desarrollo es una fase crucial que requiere algo más que simplemente codific
 
 * **Sistema de producción**
 
-   Planifique y documente su entorno de producción, incluso:
+   Planifique y documento su entorno de producción, incluso:
 
    * Arquitectura
    * Secuencia de implementación
@@ -324,7 +330,7 @@ El desarrollo es una fase crucial que requiere algo más que simplemente codific
 
 * **Integración**
 
-   Planificar, documentar y probar todos los aspectos de la integración [del sistema y la](/help/sites-administering/integration.md)solución, incluidos:
+   Planifique, documento y pruebe todos los aspectos de la integración [del sistema y la](/help/sites-administering/integration.md)solución, incluidos:
 
    * Una estrategia de prueba automatizada
    * Procesos automatizados para [mover las aplicaciones de desarrollo a prueba y luego producción](/help/managing/enterprise-devops.md#code-movement)
@@ -332,7 +338,7 @@ El desarrollo es una fase crucial que requiere algo más que simplemente codific
 
 * **Migración**
 
-   Planificar, documentar y probar todos los aspectos de la migración de contenido; incluyendo:
+   Planificar, documento y probar todos los aspectos de la migración de contenido; incluyendo:
 
    * Arquitectura del contenido
    * Estrategia de migración
@@ -343,11 +349,11 @@ El desarrollo es una fase crucial que requiere algo más que simplemente codific
 
 * **Documentación**
 
-   Documentar completamente la solución; incluyendo:
+   Documento completo de la solución; incluyendo:
 
    * Manual de operaciones
    * Cualquier personalización que pueda afectar a las actualizaciones
-   * Notas de versión
+   * Notas de la versión
 
 ### Rendimiento y pruebas {#performance-and-testing}
 
@@ -367,6 +373,7 @@ Una vez que la nueva aplicación esté disponible, tendrá que someterse a prueb
 
    * La solución cumple los requisitos de usuario y cliente
    * El cliente o los usuarios aceptan la solución (función, diseño y rendimiento)
+
    Debe haber una lista de comprobación formalizada para la entrega de los clientes; lo ideal es automatizar y ejecutar por la noche en una instantánea. Los resultados deben enviarse al director del proyecto y al equipo de desarrollo
 
 * **Pruebas de rendimiento y carga**
@@ -477,7 +484,7 @@ El patrocinador del proyecto es:
 
 El jefe de proyecto es:
 
-* Responsable de la ejecución general del proyecto en función de los requisitos (por ejemplo, alcance, KPI, criterios de éxito y definición) proporcionados por el patrocinador del proyecto.
+* Responsable del envío general del proyecto en función de los requisitos (por ejemplo, alcance, KPI, criterios de éxito y definición) proporcionados por el patrocinador del proyecto.
 * Responsable de definir el presupuesto y de dotar de recursos al proyecto en función de dicho presupuesto.
 * El principal punto de comunicación para toda persona involucrada en el proyecto.
 
@@ -486,7 +493,7 @@ El jefe de proyecto es:
 El arquitecto de la solución:
 
 * Es responsable del diseño de alto nivel de la solución y del sistema.
-* Ayuda a definir la estrategia de implementación para AEM. Por ejemplo, si se debe implementar una instalación en clúster, o una suspensión en frío o cuando se necesita una red de entrega de contenido (CDN).
+* Ayuda a definir la estrategia de implementación para AEM. Por ejemplo, si se debe implementar una instalación en clúster, o una suspensión en frío o cuando se necesita una red de envío de contenido (CDN).
 * Defina también la arquitectura de la solución AEM en función de los requisitos del cliente. Esto puede incluir el concepto de funciones de usuario (con derechos relacionados), la relación entre plantillas y componentes o cuándo utilizar la administración de varios sitios.
 
 ### Analista de negocios {#business-analyst}
@@ -508,20 +515,20 @@ El analista de negocios:
 
 La iniciativa de desarrollo:
 
-* Es responsable de la ejecución técnica del proyecto.
+* Es responsable del envío técnico del proyecto.
 * Es responsable de seleccionar una metodología de desarrollo que cumpla con los requisitos del cliente.
 * Elabora la estrategia de desarrollo:
 
    * garantizar que esté alineado con los KPI de rendimiento y negocios
    * teniendo en cuenta los criterios y la definición de éxito
 
-* Trabaja estrechamente con el arquitecto (especialmente al elaborar la estrategia de desarrollo para AEM) para definir aspectos como la relación entre plantillas y componentes, la estrategia de integración para aplicaciones de terceros y cualquier funcionalidad especializada.
+* Trabaja en estrecha colaboración con el arquitecto (especialmente al elaborar la estrategia de desarrollo para AEM) para definir aspectos como la relación entre plantillas y componentes, la estrategia de integración para aplicaciones de terceros y cualquier funcionalidad especializada.
 
 ### Líder de calidad {#quality-lead}
 
 El plomo en la calidad:
 
-* Es responsable de la calidad de la entrega; garantizar que cumple los criterios de éxito y los KPI definidos por el cliente.
+* Es responsable de la calidad del envío; garantizar que cumple los criterios de éxito y los KPI definidos por el cliente.
 * Define las métricas de calidad, se alinea con todas las partes interesadas, elabora los planes de prueba y garantiza su ejecución.
 * Crea y envía informes a los interesados del proyecto.
 
@@ -532,7 +539,7 @@ El ingeniero del sistema:
 * Es responsable de supervisar la infraestructura del proyecto.
 * Es responsable de:
 
-   * la configuración de entornos de pruebas y desarrollo internos
+   * la configuración de los entornos de desarrollo y pruebas internos
    * para hacer coincidir esos sistemas con los sistemas cliente
 
 * Proporciona recomendaciones de hardware, supervisa las distintas implementaciones y proporciona soporte de operaciones antes y después de su lanzamiento.
@@ -570,37 +577,37 @@ El líder de seguridad:
 
    * Personas que utilizarán el sistema para crear y mantener el contenido del sitio web.
 
-## Documentos requeridos y productos entregables {#required-documents-and-deliverables}
+## Documentos y entregables requeridos {#required-documents-and-deliverables}
 
-Las listas de comprobación cubren los documentos **y** productos **** necesarios para cada hito.
+Las listas de comprobación cubren los Documentos **y** productos **** necesarios para cada hito.
 
 * No hay una relación 1:1 entre estos; por ejemplo, un grupo de documentos requeridos puede resultar en una única entrega.
 * Una entrega de una persona puede ser un documento requerido para otra persona durante el mismo hito.
 
 ### Documentos requeridos {#required-documents}
 
-Los documentos **** requeridos son necesarios para la persona adecuada cuando se producen sus productos.
+Los Documentos **** requeridos son necesarios para la persona adecuada cuando se producen sus productos.
 
-Para cada documento **requerido** , el usuario debe indicar:
+Para cada Documento **** requerido, la persona debe indicar:
 
 * **Y/N**: si se ha recibido.
 * **1-3**: una indicación de la calidad del documento recibido.
 
 ### Elementos que entregar {#deliverables}
 
-Para cada hito, la persona adecuada es responsable de entregar documentos específicos y, por lo tanto, de cumplir con sus responsabilidades para un hito específico.
+Para cada hito, la persona adecuada es responsable de la realización de documentos específicos y, por lo tanto, de cumplir con sus responsabilidades para un hito específico.
 
 Para cada **entrega** , la persona debe indicar:
 
 * **Y/N**: si se ha completado.
 
-Los elementos entregables se utilizan a menudo como documentos **** requeridos para el hito actual o posterior.
+Los elementos entregables se utilizan a menudo como Documentos **** requeridos para el hito actual o posterior.
 
 ## Prácticas recomendadas relacionadas {#related-best-practices}
 
 Para conocer las prácticas recomendadas sobre la implementación, administración, desarrollo o creación, consulte:
 
-* Otras prácticas recomendadas y directrices relacionadas con la administración de un proyecto de AEM:
+* Otras prácticas recomendadas y directrices relacionadas con la administración de un proyecto AEM:
    * [Pautas para configurar el tamaño del hardware](/help/managing/hardware-sizing-guidelines.md) 
    * [Operaciones de desarrollo empresarial](/help/managing/enterprise-devops.md)
    * [Recomendaciones para la administración de direcciones URL y SEO](/help/managing/seo-and-url-management.md) 
@@ -612,7 +619,7 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
 ## Áreas de documentación clave {#key-documentation-areas}
 
-* Documentación de AEM Además, las siguientes secciones de la documentación de AEM son de particular interés (sin embargo, esta lista no es exhaustiva):
+* Documentación AEM Además, las siguientes secciones de AEM documentación son de particular interés (sin embargo, esta lista no es exhaustiva):
 
    * [Seguridad](/help/sites-developing/security.md)
    * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
@@ -622,9 +629,9 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
       * [Desarrollo: lo básico](/help/sites-developing/the-basics.md)
       * [Conceptos de MSM](/help/sites-administering/msm.md)
-      * [Lenguaje de plantilla HTML (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+      * [Lenguaje de plantilla HTML (HTL)](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
 
 * Documentación relacionada
 
-   * Adobe Experience Cloud: [Planificación de Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * Adobe Experience Cloud: [Planificación del Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
 
