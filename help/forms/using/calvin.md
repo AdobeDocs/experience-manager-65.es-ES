@@ -6,11 +6,11 @@ seo-description: Con Calvin puede crear casos de prueba en CRXDE y ejecutar prue
 uuid: 7bf4fc8f-96df-4407-8d10-cf18880518bd
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Con Calvin, puede crear casos de prueba en CRXDE y ejecutar pruebas de interfaz 
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Reglas de Expresión</p> <p> </p> </td>
+   <td><p>Reglas de expresión</p> <p> </p> </td>
    <td>
     <ul>
      <li>¿Las expresiones asociadas con objetos de formulario, como calculate, visible, ejecutan secuencias de comandos después de salir de un campo, y se ejecutan después de realizar las operaciones de interfaz de usuario correspondientes?<br /> </li>
@@ -306,7 +306,7 @@ Para ejecutar un grupo de pruebas:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-Los pasos para probar los formularios adaptables de AEM son similares a los pasos para probar la interfaz de usuario de AEM. Para obtener más información sobre la prueba de formularios adaptables, consulte los siguientes temas en [Prueba de la interfaz de usuario](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+Los pasos para probar los formularios adaptables AEM son similares a los pasos para probar la IU AEM. Para obtener más información sobre la prueba de formularios adaptables, consulte los siguientes temas en [Prueba de la interfaz de usuario](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Visualización de grupos de pruebas
 * Ejecución de varias pruebas
