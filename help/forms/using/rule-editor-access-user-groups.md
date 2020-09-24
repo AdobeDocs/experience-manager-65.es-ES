@@ -5,12 +5,15 @@ description: Conceder acceso restringido al editor de reglas para seleccionar gr
 seo-description: Conceder acceso restringido al editor de reglas para seleccionar grupos de usuarios.
 uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 1%
 
 ---
 
@@ -19,18 +22,18 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 ## Información general {#overview}
 
-Es posible que tenga diferentes tipos de usuarios con diversas habilidades que trabajen con formularios adaptables. Aunque los usuarios expertos pueden tener los conocimientos adecuados para trabajar con secuencias de comandos y reglas complejas, puede haber usuarios de nivel básico que solo necesiten trabajar con la presentación y las propiedades básicas de los formularios adaptables.
+Es posible que tenga diferentes tipos de usuarios con diversas habilidades que trabajen con Forms adaptable. Aunque los usuarios expertos pueden tener los conocimientos adecuados para trabajar con secuencias de comandos y reglas complejas, puede haber usuarios de nivel básico que solo necesiten trabajar con la presentación y las propiedades básicas de los formularios adaptables.
 
-AEM Forms permite limitar el acceso del editor de reglas a los usuarios en función de su función o función. En la configuración del servicio de configuración de formularios adaptables, puede especificar los grupos [de](/help/sites-administering/security.md) usuarios que pueden ver el editor de reglas y acceder a él.
+AEM Forms permite limitar el acceso del editor de reglas a los usuarios en función de su función o función. En la configuración del servicio de configuración adaptable de Forms, puede especificar los grupos [de](/help/sites-administering/security.md) usuarios que pueden vista y acceder al editor de reglas.
 
 ## Especificar grupos de usuarios que pueden acceder al editor de reglas {#specify-user-groups-that-can-access-rule-editor}
 
 1. Inicie sesión en AEM Forms como administrador.
-1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperimentencemanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Operaciones > Consola web. La consola web se abre en una ventana nueva.
+1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Operaciones > Consola web. La consola web se abre en una ventana nueva.
 
    ![1-2](assets/1-2.png)
 
-1. En la ventana de la consola web, ubique y haga clic en Servicio **** de configuración de formulario adaptable. **Aparece el cuadro de diálogo Servicio** de configuración de formulario adaptable. No cambie ningún valor y haga clic en **Guardar**.
+1. En la ventana de la consola web, ubique y haga clic en Servicio **de configuración de formularios** adaptables. **Aparece el cuadro de diálogo Servicio** de configuración de formulario adaptable. No cambie ningún valor y haga clic en **Guardar**.
 
    Crea un archivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config en el repositorio de CRX.
 
