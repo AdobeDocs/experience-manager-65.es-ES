@@ -10,17 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 1%
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
 
 # Consolas de comunidades {#communities-consoles}
 
-Las consolas AEM Communities, disponibles en el entorno de creación del panel de navegación global, proporcionan acceso a tareas administrativas como:
+Las consolas de AEM Communities, disponibles en el entorno de creación del panel de navegación global, proporcionan acceso a tareas administrativas como:
 
 * [Creación de un sitio de comunidad](sites-console.md)
 * Añadir [grupos](groups.md) anidados dentro del sitio
@@ -41,8 +41,6 @@ En el entorno de creación, después de iniciar sesión con privilegios de admin
 
 ## Panel de navegación global {#global-navigation-panel}
 
-![chlimage_1-91](assets/chlimage_1-91.png)
-
 Seleccione el `Adobe Experience Manager` icono en la esquina superior izquierda para abrir el panel de navegación global y acceder a dos iconos:
 
 * [Consola de navegación](#navigation-console)
@@ -52,7 +50,7 @@ Seleccione el `Adobe Experience Manager` icono en la esquina superior izquierda 
 
 Para acceder a las distintas consolas Comunidades, en la navegación global seleccione **Navegación, Comunidades**.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![comunidades](assets/communities.png)
 
 * [Sites](sites-console.md)
 
