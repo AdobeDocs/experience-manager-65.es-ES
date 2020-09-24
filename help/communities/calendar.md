@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1170'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ La función de calendario permite proporcionar información de evento de la comu
 
 Esta sección de la documentación describe
 
-* Añadir la función de calendario en un sitio de AEM
+* Añadir la función de calendario en un sitio AEM
 * Configuración de componentes para `Calendar` componentes
 
 ## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
@@ -42,15 +42,15 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se incluyen las bibliotecas [](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) requeridas del lado del cliente, así es como aparecerá el `Calendar` componente.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![calendar-component](assets/calendar-component.png)
 
 ### Configuración del calendario {#configuring-calendar}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Calendar` `Configure` icono que abre el cuadro de diálogo de edición.
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![configurar](assets/configure-new.png)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-calendar](assets/configure-calendar1.png)
 
 #### Ficha Configuración {#settings-tab}
 
@@ -90,7 +90,7 @@ En la ficha **Configuración** , especifique si desea permitir o no que las etiq
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -98,7 +98,7 @@ En la ficha **Configuración** , especifique si desea permitir o no que las etiq
 
 * **Tipos de imagen de portada permitidos**
 
-   lista separada por comas de extensiones de archivo de imagen con el separador &quot;punto&quot;. El valor predeterminado es `.jpg,.jpeg,.png,.gif,.bmp`.
+   Lista separada por comas de extensiones de archivo de imagen con el separador &quot;punto&quot;. El valor predeterminado es `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **Permitir respuestas de debate**
 
@@ -193,7 +193,7 @@ Otras capacidades dependen de si el visitante del sitio es un moderador, adminis
 
 Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar tareas [de](/help/communities/moderate-ugc.md) moderación (según lo permite la configuración del componente) en todos los eventos de calendario y comentarios publicados en un evento.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![moderadores: vista](assets/moderators-view.png)
 
 #### Miembros {#members}
 
@@ -207,15 +207,15 @@ Concretamente, podrán:
 * Eliminar su propio evento de calendario o comentario
 * Marcar los eventos o comentarios del calendario de otros
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![create-evento](assets/configure-calendar2.png)
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![evento-post](assets/configure-calendar3.png)
 
 #### Anónimo {#anonymous}
 
 Los visitantes del sitio que no hayan iniciado sesión sólo podrán leer los eventos del calendario publicados, traducirlos si son compatibles, pero no podrán agregar un evento o comentario ni marcar los eventos o comentarios de otros.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![anónima-user-vista](assets/anonymous-user-view1.png)
 
 ## Información adicional {#additional-information}
 
