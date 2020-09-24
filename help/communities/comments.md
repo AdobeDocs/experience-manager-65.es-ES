@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 6%
@@ -47,7 +47,7 @@ Para obtener la información necesaria, visite [Communities Components Basics](/
 
 Cuando se incluyen las bibliotecas [](/help/communities/essentials-comments.md#essentials-for-client-side) requeridas del lado del cliente, así es como aparece el `Comments` componente.
 
-![chlimage_1-428](assets/chlimage_1-428.png)
+![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ En la ficha **Comentarios** , especifique cómo los visitantes introducen los co
 
 * **Tipos de archivo permitidos**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. lista separada por comas de extensiones de nombre de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es relevante si está activada la opción Permitir cargas de archivos. Lista separada por comas de extensiones de nombre de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Editor de texto enriquecido**
 
@@ -144,7 +144,7 @@ En la ficha Moderación **** del usuario, especifique cómo se administran los c
 
 * **Límite de indicación**
 
-   Especifique el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al umbral **de moderación**. El valor predeterminado es 5.
+   Escriba el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al umbral **de moderación**. El valor predeterminado es 5.
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
@@ -166,7 +166,7 @@ Una vez conocidos los tipos de recursos personalizados, ingrese en Modo [de](/he
 
 En la ficha Tipos **de** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting` componentes:
 
-![chlimage_1-429](assets/chlimage_1-429.png)
+![resource-type](assets/resource-type.png)
 
 * **Tipo de medio de comentario**
 
