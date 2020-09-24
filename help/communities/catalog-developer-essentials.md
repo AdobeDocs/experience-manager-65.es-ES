@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 La función de catálogo, cuando se incluye en un sitio de la comunidad, permite a los miembros de la comunidad examinar y seleccionar los recursos de activación enumerados en un catálogo.
 
-El [ componente `enablement catalog` permite a los miembros de la comunidad acceder a un catálogo de recursos](catalog.md) de [](resources.md)activación. El uso de etiquetas AEM es una parte importante de la gestión del aspecto de los recursos de activación en un catálogo.
+El [ componente `enablement catalog` permite a los miembros de la comunidad acceder a un catálogo de recursos](catalog.md) de [](resources.md)activación. El uso de etiquetas AEM es una parte importante de la administración del aspecto de los recursos de habilitación en un catálogo.
 
 Consulte [Etiquetado de recursos](tag-resources.md)de habilitación.
 
@@ -104,19 +104,19 @@ Uso del ejemplo del Tutorial de [habilitación](getting-started-enablement.md):
 
 * Volver a publicar el sitio de la comunidad
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-catalog](assets/configure-catalog.png)
 
 #### TagIDs de prefiltro {#pre-filter-tagids}
 
 Los [TagIDs](../../help/sites-developing/framework.md#tagid) de prefiltro deben coincidir exactamente con las etiquetas aplicadas a los recursos de habilitación. Estos valores están visibles en la `resources` carpeta del sitio como valores de la propiedad `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-filtros](assets/configure-catalog1.png)
 
 ### API de referencia {#reference-apis}
 
 * [API de habilitación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [API de Sistema de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API de sistema de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API de Analytics de Sistema de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API de sistema de informes Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
