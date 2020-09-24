@@ -5,12 +5,15 @@ description: Los detalles del diseño de maquetación explican cómo se pueden c
 seo-description: Los detalles del diseño de maquetación explican cómo se pueden crear maquetaciones para utilizarlas en las cartas o en las comunicaciones interactivas.
 uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
-topic-tags: interactive-communications
+topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '2190'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Un XDP está diseñado en Adobe Forms Designer. Este artículo proporciona detal
 
 ## Creación de un diseño para letras o para el canal de impresión de Interactive Communications {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Un diseño define el diseño gráfico de un canal de letras e impresiones de una comunicación interactiva. La presentación puede contener campos de formulario típicos como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas de destinatario. Cree la presentación en el diseñador de formularios y, una vez completada, el especialista en aplicaciones la carga en el servidor AEM. Desde allí, puede seleccionar el diseño al crear una plantilla de correspondencia o un canal de impresión de una comunicación interactiva.
+Un diseño define el diseño gráfico de un canal de letras e impresiones de una comunicación interactiva. La presentación puede contener campos de formulario típicos como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas de destinatario. Cree la presentación en el diseñador de formularios y, una vez completada, el Especialista en aplicaciones la carga en AEM servidor. Desde allí, puede seleccionar el diseño al crear una plantilla de correspondencia o un canal de impresión de una comunicación interactiva.
 
 ![Designer: crear un diseño](assets/claimsubrogationlayout.png)
 
@@ -57,7 +60,7 @@ Una vez analizada la presentación necesaria para crear la comunicación interac
 
 Siga estos pasos para utilizar subformulario en una plantilla XDP:
 
-1. Abra el Diseñador de formularios, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario** en blanco, toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de plantillas.
+1. Abra Forms Designer, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario** en blanco, toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de plantillas.
 
    Asegúrese de que las opciones Biblioteca **de** objetos y **Objeto** están seleccionadas en el menú **Ventana** .
 
@@ -83,6 +86,7 @@ Siga estos pasos para utilizar subformulario en una plantilla XDP:
 
    1. Especifique un nombre para el subformulario en el campo **Nombre** .
    1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+
    Repita los pasos del 2 al 5 para agregar más subformularios a la plantilla XDP. Añada [texto, fragmentos de documento, imágenes y gráficos](create-interactive-communication.md#step2) en las áreas de destinatario solo durante la creación de la comunicación interactiva.
 
 1. Seleccione **Archivo** > **Guardar como** para guardar el archivo en el sistema de archivos local:
@@ -147,7 +151,7 @@ Siga estos pasos para utilizar el componente Tabla en la plantilla XDP con Forms
 
 Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
 
-1. Seleccione **Formularios** > **Formularios y Documentos**.
+1. Seleccione **Forms** > **Forms y Documentos**.
 1. Toque **Crear** > Cargar **archivo**.
 1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y toque **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
