@@ -7,10 +7,13 @@ uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
@@ -55,15 +58,15 @@ Cuando se invoca este proceso de corta duración, realiza las siguientes accione
 
    >[!NOTE]
    >
-   >Generalmente, un proceso de corta duración consiste en más de tres acciones. Los procesos se crean mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >Normalmente, un proceso de corta duración consiste en más de tres acciones. Los procesos se crean mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *La programación con* formularios AEM describe las siguientes formas de invocar mediante programación este proceso de corta duración:
+   *La programación con* formularios de AEM describe las siguientes formas en las que puede invocar mediante programación este proceso de corta duración:
 
-   * [Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Uso de una aplicación Flex)
+   * [Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (con una aplicación Flex)
    * [Invocación de un proceso de corta duración mediante la API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) de invocación (Java Invocation API)
-   * [Invocación de AEM Forms mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (ejemplo de servicio web)
+   * [Invocación de AEM Forms mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (ejemplo de servicio Web)
    * [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (ejemplo de servicio web)
-   * [Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (ejemplo de servicio web)
+   * [Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (ejemplo de servicio web)
    * [Invocación de AEM Forms mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (ejemplo de servicio web)
    * [Invocación de AEM Forms mediante DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (ejemplo de servicio web)
    * [Invocación del proceso MyApplication/EncryptDocument mediante REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
