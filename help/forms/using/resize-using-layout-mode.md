@@ -5,37 +5,40 @@ description: 'Definir la posición de los componentes mediante la cuadrícula ad
 seo-description: 'Definir la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño '
 uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
 contentOwner: anujkapo
+topic-tags: interactive-communications, author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 0%
 
 ---
 
 
 # Uso del modo Diseño para cambiar el tamaño de los componentes{#use-layout-mode-to-resize-components}
 
-La interfaz de creación de canales Web de comunicación interactiva y formulario adaptable permite cambiar el tamaño de los componentes mediante el modo Diseño. Arrastre y suelte puntos azules dentro de las columnas para definir los puntos de inicio y fin en los componentes de posición. Los puntos azules se muestran después de tocar el componente dentro de la cuadrícula adaptable. La cuadrícula adaptable consta de 12 columnas iguales. El sombreado de color blanco y azul en las columnas alternativas diferencia una columna de la otra.
+La interfaz de creación de formularios adaptables y canal web de comunicación interactiva le permite cambiar el tamaño de los componentes mediante el modo Diseño. Arrastre y suelte puntos azules dentro de las columnas para definir el inicio y los puntos finales para colocar los componentes. Los puntos azules se muestran después de tocar el componente dentro de la cuadrícula adaptable. La cuadrícula adaptable consta de 12 columnas iguales. El sombreado de color blanco y azul en las columnas alternativas diferencia una columna de la otra.
 
 Puede utilizar el modo Diseño para cambiar el tamaño de los componentes de todos los tipos de dispositivos, como el escritorio, la tablet, el teléfono y otros dispositivos más pequeños. La tablet deriva automáticamente la configuración de diseño de la versión de escritorio y los dispositivos más pequeños obtienen la configuración de diseño del teléfono. Sin embargo, puede anular las configuraciones derivadas automáticamente para definir una configuración diferente para cada tipo de dispositivo.
 
-Si va a crear el canal Web utilizando el canal [Imprimir como maestro](../../forms/using/create-interactive-communication.md) para una comunicación interactiva, los componentes disponibles para el cambio de tamaño también incluyen los subformularios y los campos que se generan automáticamente en el canal Web mediante el canal Imprimir. El canal Web conserva el diseño de los elementos del canal Imprimir en el modo Diseño.
+Si va a crear el canal Web utilizando [Imprimir canal como maestro](../../forms/using/create-interactive-communication.md) para una comunicación interactiva, los componentes disponibles para el cambio de tamaño también incluyen los subformularios y los campos que se generan automáticamente en el canal Web mediante Imprimir canal. El canal web conserva la presentación de los elementos del canal de impresión en el modo Diseño.
 
 ## Modo de diseño de acceso {#access-layout-mode}
 
-Seleccione **Presentación** en la lista desplegable que aparece en la parte superior del formulario adaptable y de la interfaz de creación de comunicación interactiva junto a la opción **Vista previa** . El formulario se muestra en el modo Presentación.
+Seleccione **Presentación** en la lista desplegable que aparece en la parte superior del formulario adaptable y de la interfaz de creación de comunicación interactiva junto a la opción de **Previsualización** . El formulario se muestra en el modo Presentación.
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
+1. Inicie sesión en la instancia de creación de AEM y vaya a **Adobe Experience Manager** > **Forms** > **Forms y Documentos**.
 1. [Cree un formulario adaptable nuevo](../../forms/using/create-interactive-communication.md) o abra uno existente o una comunicación interactiva.
-1. Seleccione **Presentación** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa** . El formulario se muestra en el modo Presentación.
+1. Seleccione **Presentación** en la lista desplegable que aparece en la parte superior junto a la opción de **Previsualización** . El formulario se muestra en el modo Presentación.
 
    ![Modo de diseño para comunicaciones interactivas](assets/layout_mode_ic_new.png)
 
 ## Cambiar el tamaño de los componentes {#resize-components}
 
-1. En el modo Diseño, toque el componente para cambiar el tamaño. Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
+1. En el modo Diseño, toque el componente para cambiar el tamaño. Los puntos azules se muestran en el inicio y al final de la cuadrícula adaptable.
 1. Arrastre y suelte los puntos azules para definir la posición del componente en la cuadrícula interactiva.
 
    ![Cambio de tamaño mediante el modo Diseño](assets/layout_mode_resize_new_updated.png)
@@ -44,11 +47,12 @@ Seleccione **Presentación** en la lista desplegable que aparece en la parte sup
 
    * **Principal:** Seleccione el elemento principal de un componente.
    * **Flotar a nueva línea:** Mueva el componente a la línea siguiente si hay varios componentes dentro de la misma línea.
-   Puede deshacer todos los cambios de tamaño y aplicar el diseño predeterminado al panel que contiene los componentes cuyo tamaño ha cambiado mediante la opción **[!UICONTROL Revertir diseño]** de punto de interrupción ( ![Revertir punto de interrupción](assets/reverttopreviouslypublishedversion.png)). Toque el elemento principal del componente cuyo tamaño ha cambiado para ver la opción.
+
+   Puede deshacer todos los cambios de tamaño y aplicar el diseño predeterminado al panel que contiene los componentes cuyo tamaño ha cambiado mediante la opción **[!UICONTROL Revertir diseño]** de punto de interrupción ( ![Revertir punto de interrupción](assets/reverttopreviouslypublishedversion.png)). Toque el elemento principal del componente cuyo tamaño ha cambiado para aplicar vista a la opción.
 
    >[!NOTE]
    >
-   >No se puede cambiar el tamaño de la columna de tabla, la barra de herramientas, el botón de la barra de herramientas y los componentes del área de destino mediante el modo Diseño. Utilice el modo Estilo para cambiar el tamaño de estos componentes.
+   >No se puede cambiar el tamaño de los componentes de columna de tabla, barra de herramientas, botón de barra de herramientas y área de destinatario mediante el modo Diseño. Utilice el modo Estilo para cambiar el tamaño de estos componentes.
 
 ### Ejemplo {#example}
 
@@ -72,7 +76,7 @@ Realice los siguientes pasos si desea cambiar el tamaño del panel completo en l
 
 1. Toque cualquiera de los componentes del panel cuyo tamaño desee cambiar, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y, si el panel es el elemento principal inmediato del componente, seleccione la primera opción de la lista desplegable.
 
-   Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
+   Los puntos azules se muestran en el inicio y al final de la cuadrícula adaptable.
 
 1. Arrastre y suelte los puntos azules para definir la posición del panel en la cuadrícula interactiva.
 Puede repetir los pasos 1 y 2 y seleccionar ![Seleccionar principal](assets/float_to_new_line_icon.svg) para cambiar el panel cuyo tamaño ha cambiado a la línea siguiente.
@@ -81,7 +85,7 @@ Puede repetir los pasos 1 y 2 y seleccionar ![Seleccionar principal](assets/floa
 
 Siga los pasos siguientes para definir el número de columnas de un panel:
 
-1. En el modo de **[!UICONTROL edición]** , toque el panel, seleccione ![Configurar](assets/configure_icon.png)y, a continuación, **[!UICONTROL Responder: todo en la página sin la opción de navegación]** en la lista desplegable Diseño **[!UICONTROL del]** panel.
+1. En el modo de **[!UICONTROL edición]** , toque el panel, seleccione ![Configurar](assets/configure_icon.png)y seleccione **[!UICONTROL Responsable: todo en la página sin la opción de navegación]** en la lista desplegable Diseño **[!UICONTROL del]** panel.
 
 1. Toque ![Guardar](assets/save_icon.svg) para guardar las propiedades.
 
@@ -101,7 +105,7 @@ Active la nueva cuadrícula adaptable para los formularios que cree con AEM Form
 
 Realice los siguientes pasos para habilitar la nueva cuadrícula adaptable:
 
-1. Seleccione **Presentación** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa** . Aparece una confirmación para habilitar el modo Diseño.
+1. Seleccione **Presentación** en la lista desplegable que aparece en la parte superior junto a la opción de **Previsualización** . Aparece una confirmación para habilitar el modo Diseño.
 1. Toque **Sí** para activar el modo de **presentación** del formulario.
 
 ### Incrustar un fragmento antiguo en un formulario adaptable con una nueva presentación adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
@@ -112,7 +116,7 @@ La nueva presentación adaptable para formularios adaptables permite agregar un 
 
 Si incrusta un fragmento con la nueva presentación adaptable en un formulario adaptable con una presentación adaptable antigua, el sistema le pedirá que habilite el modo Diseño para el formulario y vuelva a incrustar el fragmento.
 
-Para activar el modo Diseño, seleccione **Presentación** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa** y toque **Sí** para confirmar. Seleccione el modo **Editar** para volver a incrustar el fragmento.
+Para activar el modo Diseño, seleccione **Presentación** en la lista desplegable que aparece en la parte superior junto a la opción **Previsualización** y toque **Sí** para confirmar. Seleccione el modo **Editar** para volver a incrustar el fragmento.
 
 ## Deshabilitar el modo Diseño para formularios con presentación adaptable anterior {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -121,7 +125,7 @@ Puede desactivar el modo Presentación para formularios con presentación adapta
 Realice los siguientes pasos para desactivar el modo Diseño:
 
 1. Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Plantillas]** y abra la plantilla utilizada en el formulario en el modo de **[!UICONTROL edición]** .
-1. Seleccione el contenedor de documentos en el panel izquierdo y toque **[!UICONTROL Directiva.]**
+1. Seleccione el Contenedor de Documento en el panel izquierdo y toque **[!UICONTROL Directiva.]**
 
    ![Deshabilitar modo Diseño](assets/policy_disable_layout_mode.png)
 
