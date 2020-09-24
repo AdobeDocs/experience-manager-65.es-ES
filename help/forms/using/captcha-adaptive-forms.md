@@ -1,16 +1,16 @@
 ---
 title: Uso de CAPTCHA en formularios adaptables
 seo-title: Uso de CAPTCHA en formularios adaptables
-description: Obtenga información sobre cómo configurar el servicio AEM CAPTCHA o Google reCAPTCHA en formularios adaptables.
-seo-description: Obtenga información sobre cómo configurar el servicio AEM CAPTCHA o Google reCAPTCHA en formularios adaptables.
+description: Aprenda a configurar AEM servicio CAPTCHA o Google reCAPTCHA en formularios adaptables.
+seo-description: Aprenda a configurar AEM servicio CAPTCHA o Google reCAPTCHA en formularios adaptables.
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
+topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -26,15 +26,16 @@ AEM Forms admite CAPTCHA en formularios adaptables. Puede utilizar el servicio r
 
 >[!NOTE]
 >
->* Los AEM Forms solo admiten reCaptcha v2. No se admite ninguna otra versión.
->* CAPTCHA en formularios adaptables no se admite en modo sin conexión en la aplicación AEM Forms.
+>* AEM Forms solo admite reCaptcha v2. No se admite ninguna otra versión.
+>* CAPTCHA en formularios adaptables no se admite en modo sin conexión en la aplicación de AEM Forms.
+
 >
 
 
 
 ## Configurar el servicio ReCAPTCHA por Google {#google-recaptcha}
 
-Los autores de formularios pueden utilizar el servicio reCAPTCHA de Google para implementar CAPTCHA en formularios adaptables. oferta las capacidades avanzadas de CAPTCHA para proteger el sitio. Para obtener más información sobre cómo funciona reCAPTCHA, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/).
+Los autores de formularios pueden utilizar el servicio reCAPTCHA de Google para implementar CAPTCHA en formularios adaptables. Oferta las capacidades avanzadas de CAPTCHA para proteger el sitio. Para obtener más información sobre cómo funciona reCAPTCHA, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
 ![Recaptcha](assets/recaptcha_new.png)
 
@@ -57,10 +58,11 @@ Para implementar el servicio reCAPTCHA en AEM Forms:
 
 1. Configure el servicio en la nube para reCAPTCHA.
 
-   1. En la instancia de creación de AEM, vaya a ![tools-1](assets/tools-1.png) > **Cloud Service**.
+   1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **Cloud Services**.
    1. Toque **[!UICONTROL reCAPTCHA]**. Se abre la página Configuraciones. Seleccione el contenedor de configuración creado en el paso anterior y toque **[!UICONTROL Crear]**.
    1. Especifique Nombre, Clave del sitio y Clave secreta para el servicio reCAPTCHA y toque **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
    1. En el cuadro de diálogo Editar componente, especifique el sitio y las claves secretas obtenidas en el paso 1. Toque **Guardar configuración** y, a continuación, toque **Aceptar** para completar la configuración.
+
    Una vez configurado el servicio reCAPTCHA, estará disponible para su uso en formularios adaptables. Para obtener más información, consulte [Uso de CAPTCHA en formularios](#using-captcha)adaptables.
 
 ## Utilizar CAPTCHA en formularios adaptables {#using-captcha}
@@ -89,7 +91,7 @@ Para utilizar CAPTCHA en formularios adaptables:
 
    >[!NOTE]
    >
-   >No seleccione **[!UICONTROL Predeterminado]** en la lista desplegable Servicio Captcha porque el servicio CAPTCHA AEM predeterminado está obsoleto.
+   >No seleccione **[!UICONTROL Predeterminado]** en la lista desplegable Servicio Captcha porque el servicio AEM CAPTCHA predeterminado está obsoleto.
 
 1. Guarde las propiedades.
 
