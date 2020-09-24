@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Guía de componentes de comunidad  {#community-components-guide}
 
-La guía de componentes comunitarios es una herramienta de desarrollo interactiva para el marco de componentes [sociales (SCF)](scf.md). Proporciona una lista de los componentes de AEM Communities disponibles o de las características más complejas creadas con varios componentes.
+La guía de componentes comunitarios es una herramienta de desarrollo interactiva para el marco de componentes [sociales (SCF)](scf.md). Proporciona una lista de los componentes de AEM Communities disponibles o de las funciones más complejas creadas con varios componentes.
 
 Junto con la información básica de cada componente, la guía permite experimentar con el funcionamiento de los componentes y funciones de SCF y de cómo se pueden configurar o personalizar.
 
@@ -70,18 +70,18 @@ La guía proporciona una lista de los componentes SCF disponibles para la previs
 
 Guía de componentes tal como se ve en una instancia de autor en el modo de edición:
 
-![chlimage_1-404](assets/chlimage_1-404.png)
+![community-component1](assets/community-component1.png)
 
 ## Páginas de componentes {#component-pages}
 
 Seleccione un componente de la lista a lo largo del lado izquierdo de la página.
 
-![chlimage_1-405](assets/chlimage_1-405.png)
+![community-component-pages](assets/community-component2.png)
 
 Se muestra el cuerpo principal de la guía:
 
 1. Título: Nombre del componente seleccionado
-1. [Bibliotecas](#client-side-libraries)del lado del cliente: lista de una o varias categorías requeridas
+1. [Bibliotecas](#client-side-libraries)del lado del cliente: Lista de una o varias categorías requeridas
 1. [Incluible](scf.md#add-or-include-a-communities-component): Si el componente se puede incluir dinámicamente, el estado se puede alternar en el modo de edición de autor:
 
    * Si se agrega, el texto mostrado es: &quot;Este componente se incluye mediante su nodo par.&quot;
@@ -100,11 +100,11 @@ Al utilizar la guía en una instancia de autor, es posible configurar un compone
 
 Para la guía Componentes de comunidad, algunos ajustes del cuadro de diálogo de componentes se superponen con el estado de alternancia [Incluible](scf.md#add-or-include-a-communities-component) . Para alternar entre el uso del recurso existente o un recurso incluido dinámicamente, en el modo de edición seleccione el componente y el texto inclusible y haga clic con el doble para abrir el cuadro de diálogo de edición:
 
-![chlimage_1-406](assets/chlimage_1-406.png)
+![community-component3](assets/community-component3.png)
 
 En la ficha **Plantillas** :
 
-![chlimage_1-407](assets/chlimage_1-407.png)
+![community-component4](assets/community-component4.png)
 
 * **Incluir el componente secundario con sling:include**
 
@@ -126,7 +126,7 @@ Cuando se utiliza la guía en una instancia de publicación, es posible experime
 >
 >Tenga en cuenta que, si el SRP se deja como predeterminado en [JSRP](jsrp.md), el UGC introducido en la instancia de publicación solo será visible durante la publicación y *no será* visible desde la consola de [moderación](moderate-ugc.md) en la instancia de autor.
 
-## Bibliotecas del cliente {#client-side-libraries}
+## Bibliotecas de cliente {#client-side-libraries}
 
 Las bibliotecas del lado del cliente (clientlibs) que se muestran para cada componente son aquellas a las que se *debe* hacer referencia cuando el componente se coloca en una página. Los clientlibs proporcionan un medio para administrar y optimizar la descarga de Javascript y CSS que se utiliza para procesar el componente en el navegador.
 
@@ -152,7 +152,7 @@ Para experimentar rápidamente con las personalizaciones, la `scg:showIde`propie
 
 El uso del componente comentarios como ejemplo, en la instancia de creación o publicación, ha iniciado sesión con privilegios de administrador:
 
-1. Navegar a [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Ir al [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Por ejemplo, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -173,7 +173,9 @@ El uso del componente comentarios como ejemplo, en la instancia de creación o p
 
 1. Observe que ahora hay 3 fichas para Plantillas, CSS y Datos.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
+![community-component5](assets/community-component5.png)
+
+![community-component6](assets/community-component6.png)
 
 ### Ficha Plantillas {#templates-tab}
 
