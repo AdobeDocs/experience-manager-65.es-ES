@@ -6,14 +6,14 @@ seo-description: AEM Forms proporciona una interfaz fácil de usar pero potente 
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '3075'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -292,8 +292,8 @@ Algunas prácticas recomendadas y puntos clave que hay que recordar al trabajar 
 * El componente Archivo adjunto, de forma predeterminada, permite al usuario adjuntar un solo archivo. Sin embargo, puede configurar las propiedades del componente para que admitan varios archivos adjuntos. Además, si un usuario adjunta varios archivos con el mismo nombre de archivo, los archivos adjuntos pueden provocar algunos problemas. Por lo tanto, se recomienda asociar un identificador único para cada archivo adjunto enviado en el envío del formulario. Para ello:
 
    1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
-   1. Busque y toque el servicio **[!UICONTROL de configuración de formularios]** adaptables.
-   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, active **[!UICONTROL Convertir nombres de archivo en únicos]**. De forma predeterminada, está desactivado.
+   1. Toque y busque el servicio **** de configuración adaptable de Forms.
+   1. En el cuadro de diálogo Servicio de configuración adaptable de Forms, active **[!UICONTROL Convertir nombres de archivo en únicos]**. De forma predeterminada, está desactivado.
 
 * Para permitir que los usuarios adjunten un PDF mediante el navegador Safari, asegúrese de que **application/pdf** se agrega a la propiedad Tipos de archivo admitidos del componente Archivo adjunto. Los formularios adaptables creados con la versión anterior de AEM Forms pueden contener **.pdf** en lugar de **application/pdf** en la propiedad Tipos de archivo admitidos.
 
@@ -356,11 +356,11 @@ Por ejemplo, si toca **[!UICONTROL Principal]** para un cuadro de texto, puede v
 * Subsección
 * Sección
 * guideRootPanel
-* contenedor de formulario adaptable
+* Contenedor de formulario adaptable
 
 J. **Otros**: Proporciona más opciones para trabajar con el componente seleccionado.
 
-* expresión SOM de Vista
+* Expresión SOM de vista
 * Guardar un panel como fragmento (solo para paneles)
 * Añadir panel secundario (solo para paneles)
 * Añadir barra de herramientas del panel (solo para paneles)
