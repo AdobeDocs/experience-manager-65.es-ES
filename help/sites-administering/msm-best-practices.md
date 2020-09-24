@@ -1,16 +1,19 @@
 ---
 title: Prácticas recomendadas de MSM
 seo-title: Prácticas recomendadas de MSM
-description: Encuentre las prácticas recomendadas compiladas por los equipos de ingeniería y consultoría de Adobe para ayudarle en el uso inicial del administrador de multisitio de AEM.
-seo-description: Encuentre las prácticas recomendadas compiladas por los equipos de ingeniería y consultoría de Adobe para ayudarle en el uso inicial del administrador de multisitio de AEM.
+description: Encuentre las mejores prácticas recopiladas por los equipos de ingeniería y consultoría de Adobe para ayudarle a ponerse en marcha con el Administrador AEM de múltiples sitios.
+seo-description: Encuentre las mejores prácticas recopiladas por los equipos de ingeniería y consultoría de Adobe para ayudarle a ponerse en marcha con el Administrador AEM de múltiples sitios.
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 1%
 
 ---
 
@@ -23,10 +26,10 @@ MSM es un marco configurable para automatizar la implementación de contenido. L
 
 * Antes de iniciar la implementación, **planifique cuidadosamente la estructura y los flujos** de contenido.
 * **Personalice tanto como sea necesario, pero tan poco como sea posible.** Aunque MSM admite un alto grado de personalización (por ejemplo, configuraciones de implementación), la mejor práctica para el rendimiento, la fiabilidad y la actualización del sitio Web es minimizar la personalización.
-* Establezca un modelo de **gobernanza** pronto y capacite a los usuarios en consecuencia para garantizar el éxito. Una práctica recomendada desde el punto de vista de la gobernanza es **minimizar la autoridad que los productores de contenido local tienen** para asignar/conectar contenido a otros usuarios locales y sus respectivas copias en vivo. Esto se debe a que las herencias encadenadas y no gobernadas pueden aumentar significativamente la complejidad de una estructura de MSM y comprometer su rendimiento y fiabilidad.
+* Establezca un modelo de **gobernanza** pronto y capacite a los usuarios en consecuencia para garantizar el éxito. Una práctica recomendada desde un punto de vista de la gobernanza es **minimizar la autoridad que los productores de contenido local tienen** para asignar/conectar contenido a otros usuarios locales y sus respectivas copias en vivo. Esto se debe a que las herencias encadenadas y no gobernadas pueden aumentar significativamente la complejidad de una estructura de MSM y comprometer su rendimiento y fiabilidad.
 
 * Una vez que existe un plan para su estructura, los flujos de contenido, la automatización y la gobernanza: **cree prototipos y realice pruebas exhaustivas del sistema** antes de iniciar la implementación en directo.
-* Tenga en cuenta que los **asesores de Adobe y los integradores** líderes del sistema tienen una amplia experiencia en la planificación e implementación de la automatización de contenido con MSM, por lo que pueden ayudarle a empezar a trabajar con su proyecto MSM y a lo largo de toda su implementación.
+* Tenga en cuenta que la consultoría de **Adobe y los integradores** líderes del sistema cuentan con una amplia experiencia en la planificación e implementación de la automatización de contenido con MSM, de modo que pueden ayudarle a iniciarse en el proyecto MSM y en toda su implementación.
 
 >[!NOTE]
 >
@@ -34,6 +37,7 @@ MSM es un marco configurable para automatizar la implementación de contenido. L
 >
 >* [Preguntas más frecuentes sobre MSM](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
 >* [Resolución de problemas de MSM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
+
 >
 
 
@@ -43,7 +47,8 @@ MSM es un marco configurable para automatizar la implementación de contenido. L
 >También puede utilizar el componente [](/help/sites-authoring/default-components-foundation.md#reference) Referencia para reutilizar una sola página o párrafo. Sin embargo, tenga en cuenta:
 >
 >* MSM es más flexible y permite un control preciso sobre qué contenido se sincroniza y cuándo.
->* [Ahora se recomiendan los componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales a lo largo de los componentes básicos.
+>* [Ahora se recomiendan los componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales a lo largo de los componentes básicos.
+
 >
 
 
@@ -62,24 +67,24 @@ En el caso de que no se haga referencia a una configuración de modelo, solo se 
 
 Al crear un nuevo sitio con Live Copy, resulta ventajoso crear configuraciones de modelo para garantizar la disponibilidad del conjunto completo de funciones de MSM.
 
-## Sincronización de componentes y contenedores {#components-and-container-synchronization}
+## Sincronización de componentes y Contenedor {#components-and-container-synchronization}
 
 En general, la regla de implementación en MSM con respecto a la sincronización de componentes es:
 
 * Los componentes se distribuyen sincronizando los recursos contenidos en el modelo.
 * Los contenedores solo sincronizan el recurso actual.
 
-Esto significa que los componentes se tratan como un agregado y, en un despliegue, el componente mismo y todos sus elementos secundarios se reemplazan por los de los modelos. Esto significa que si un recurso se agrega a un componente de este tipo localmente, se perderá en el contenido del modelo durante la implementación.
+Esto significa que los componentes se tratan como acumulados y, en una implementación, el componente en sí y todos sus elementos secundarios se reemplazan por los de los modelos. Esto significa que si un recurso se agrega a un componente de este tipo localmente, se perderá en el contenido del modelo durante la implementación.
 
 Para admitir el anidado de componentes de modo que los componentes agregados localmente se mantengan en una implementación, el componente debe declararse como contenedor. Por ejemplo, el parsys predeterminado se declara como contenedor para que admita contenido agregado localmente.
 
 >[!NOTE]
 >
->Agregue la propiedad `cq:isContainer` al componente para designarlo como contenedor.
+>Añada la propiedad `cq:isContainer` al componente para designarla como contenedor.
 
 ## Crear sitio {#create-site}
 
-Tenga en cuenta que AEM tiene dos métodos principales para crear copias en directo:
+Tenga en cuenta que AEM tiene dos métodos principales para crear copias en vivo:
 
 * When [creating a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
@@ -112,9 +117,9 @@ MSM puede ayudar en la creación de sitios web multilingües de dos maneras:
       * MSM permite cancelar la herencia en el nivel de página y/o componente. Esto ayuda a evitar la sobrescritura de contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en la próxima implementación.
       * Algunos conectores de traducción de terceros automatizan esta administración de las herencias de MSM.
 
-         Consulte con su proveedor de servicios de traducción para obtener más información.
+         Consulte con su proveedor de servicio de traducción para obtener más información.
 
-      * Un método alternativo para crear y traducir maestros de idiomas es utilizar copias de idiomas junto con el marco de integración de traducción incorporado de AEM.
+      * Un método alternativo para crear y traducir maestros de idiomas es utilizar copias de idiomas junto con AEM marco de integración de traducción incorporado.
 
 * Cuando se despliega contenido desde maestros de idiomas.
 
