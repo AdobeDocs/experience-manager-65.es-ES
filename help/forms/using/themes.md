@@ -5,12 +5,12 @@ description: Puede utilizar temáticas para estilizar y proporcionar una identid
 seo-description: Puede utilizar temáticas para estilizar y proporcionar una identidad visual a un formulario adaptable o una comunicación interactiva. Puede compartir un tema en cualquier número de formularios adaptables o comunicaciones interactivas.
 uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '6067'
 ht-degree: 1%
@@ -33,13 +33,13 @@ Puede hacer lo siguiente:
 
 ## Creación, descarga o carga de un tema {#creating-downloading-or-uploading-a-theme}
 
-Con los AEM Forms, puede crear, descargar o cargar temáticas. Se crea un tema como otros recursos, como formularios, documentos y letras. El tema se guarda como una entidad independiente, con metapropiedades como los formularios. El hecho de que las Temáticas sean una entidad independiente permite su reutilización en varios formularios adaptables y comunicaciones interactivas. También puede mover un tema a otra instancia de AEM Forms y reutilizarlo.
+Con AEM Forms, puede crear, descargar o cargar temáticas. Se crea un tema como otros recursos, como formularios, documentos y letras. El tema se guarda como una entidad independiente, con metapropiedades como los formularios. El hecho de que las temáticas sean una entidad independiente permite su reutilización en varios formularios adaptables y comunicaciones interactivas. También puede mover un tema a otra instancia de AEM Forms y reutilizarlo.
 
 ### Creación de un tema {#creating-a-theme}
 
 Realice los siguientes pasos para crear un tema:
 
-1. Haga clic en **Adobe Experience Manager**, haga clic en **Formularios** y, a continuación, en **Temáticas**.
+1. Haga clic en **Adobe Experience Manager**, en **Forms** y, a continuación, en **Temáticas**.
 
 1. En la página Temáticas, haga clic en **Crear > Tema**.
 Se inicia un asistente para crear un tema.
@@ -56,9 +56,9 @@ Se inicia un asistente para crear un tema.
 
 ### Descarga de un tema {#downloading-a-theme}
 
-Puede exportar temáticas como archivo zip y utilizarlas en otros proyectos o en instancias de AEM. Para descargar un tema:
+Puede exportar temáticas como archivo zip y utilizarlas en otros proyectos o instancias de AEM. Para descargar un tema:
 
-1. Haga clic en **Adobe Experience Manager**, haga clic en **Formularios** y, a continuación, en **Temáticas**.
+1. Haga clic en **Adobe Experience Manager**, en **Forms** y, a continuación, en **Temáticas**.
 
 1. En la página Temáticas, **seleccione** un tema y haga clic en **Descargar**. Se muestra un cuadro de diálogo con los detalles del tema.
 
@@ -74,7 +74,7 @@ Puede utilizar temáticas creadas con ajustes preestablecidos de estilo en el pr
 
 Para cargar un tema:
 
-1. Haga clic en **Adobe Experience Manager**, haga clic en **Formularios** y, a continuación, en **Temáticas**.
+1. Haga clic en **Adobe Experience Manager**, en **Forms** y, a continuación, en **Temáticas**.
 
 1. En la página Temáticas, haga clic en **Crear > Carga** de archivos.
 1. En el mensaje de carga de archivos, busque y seleccione un paquete de temas en el equipo y haga clic en **Cargar**.
@@ -195,7 +195,7 @@ Lista de metapropiedades de un tema (se encuentra en la página de propiedades d
 
 ## Acerca del Editor de temas {#about-the-theme-editor}
 
-Los AEM Forms se envían con el editor de temas. Es una interfaz fácil de usar para empresas y diseñadores web y desarrolladores que proporciona las funcionalidades necesarias para especificar fácilmente el estilo de varios elementos de comunicación interactivos y formularios adaptables. Cuando se crea un tema, se almacena como una entidad independiente, como formularios, comunicaciones interactivas, letras, fragmentos de documento y diccionarios de datos.
+AEM Forms se envía con el Editor de temas. Es una interfaz fácil de usar para empresas y diseñadores web y desarrolladores que proporciona las funcionalidades necesarias para especificar fácilmente el estilo de varios elementos de comunicación interactivos y formularios adaptables. Cuando se crea un tema, se almacena como una entidad independiente, como formularios, comunicaciones interactivas, letras, fragmentos de documento y diccionarios de datos.
 
 El Editor de temas permite personalizar estilos de los componentes con estilo en un tema. Puede personalizar el aspecto de un formulario o una comunicación interactiva en un dispositivo.
 
@@ -219,22 +219,22 @@ Un componente específico afecta a los objetos de la categoría específica. Al 
       Al personalizar todos los componentes de campo con un color de fondo específico, todos los campos, como edad, nombre y dirección, heredan el color de fondo. Al seleccionar un cuadro numérico, como la edad, y reducir su anchura, se reduce el ancho de todos los cuadros numéricos, como la edad, el número de personas de una familia. No se cambia la anchura de los cuadros de texto.
 
    * **Estado:** Permite personalizar estilos de un objeto en un estado específico. Por ejemplo, puede especificar el aspecto que tendrá un objeto cuando esté en estado predeterminado, de enfoque, deshabilitado, de desplazamiento o de error.
-   * **Categorías de propiedades:** Las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimensión y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
+   * **Categorías de propiedades:** Las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimension y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
 
    * **Avanzado:** Permite agregar CSS personalizada a un objeto, que anula las propiedades que los controles visuales definen si hay una superposición.
 
-   * **CSS** de Vista: Permite la vista de CSS del componente seleccionado
+   * **CSS** de vista: Permite la vista de CSS del componente seleccionado
    Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, se obtienen dos opciones más: **Simular el éxito** y **simular errores.** Estas opciones, junto con las opciones descritas anteriormente, se analizan en detalle [a continuación](../../forms/using/themes.md#using-rail).
 
 [ ![Editor de temas con raíl y lienzo resaltados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
 
-### Componentes de estilo {#styling-components}
+### Styling components {#styling-components}
 
 Puede utilizar un tema en varios formularios adaptables y comunicaciones interactivas, lo que importa el formato de componente que haya especificado en el tema. Puede aplicar estilo a varios componentes, como títulos, descripciones, paneles, campos, iconos y cuadros de texto. Utilice widgets para configurar las propiedades de los componentes en un tema. No se requiere un conocimiento previo de CSS o MENOS, pero se desea, aunque la sección Anulaciones de CSS permite escribir código CSS o proporcionar selectores personalizados. La sección Anulaciones de CSS aparece al seleccionar un componente en la barra lateral.
 
 ![Componentes estabilizables en la barra lateral](assets/stylable-components.png)
 
-Opciones de la barra lateral que permiten seleccionar y aplicar estilo a diferentes componentes.
+Opciones en la barra lateral que permiten seleccionar y aplicar estilo a diferentes componentes.
 
 Al hacer clic en el botón de edición de un componente en la barra lateral, se selecciona el componente en Lienzo y se le permite aplicar estilo al componente mediante las opciones de la barra lateral.
 
@@ -244,7 +244,7 @@ Haga clic en **EXPANDIR TODO** en la barra lateral para aplicar vista, seleccion
 
 ### Diseños del panel Estilo {#styling-panel-layouts-br}
 
-Las Temáticas de los AEM Forms admiten el estilo de los elementos en la presentación de los paneles de los formularios y las comunicaciones interactivas. Se admite el estilo de los elementos en diseños y diseños personalizados integrados.
+Las temáticas de AEM Forms admiten el estilo de los elementos en la presentación de paneles en los formularios y las comunicaciones interactivas. Se admite el estilo de los elementos en diseños y diseños personalizados integrados.
 
 Los paneles integrados incluyen:
 
@@ -261,7 +261,7 @@ Los paneles integrados incluyen:
 Los selectores varían para cada diseño.
 El diseño de diseños personalizados desde el Editor de temas implica:
 
-* Definición de los componentes de un diseño que se puede diseñar y de los selectores CSS para identificar de forma exclusiva estos componentes
+* Definición de los componentes de un diseño que se puede diseñar, y de los selectores CSS para identificar de forma exclusiva estos componentes
 * Definición de las propiedades CSS que se pueden aplicar a estos componentes
 * Defina el estilo de estos componentes de forma interactiva desde la interfaz de usuario
 
@@ -304,7 +304,7 @@ Cuando se proporciona un nombre personalizado para un estilo, este se asocia a u
 
    ![Eliminar el estilo guardado](assets/manage-styles.png)
 
-### previsualización en directo, guardado y descartado de cambios {#live-preview-save-and-discard-changes}
+### Previsualización en directo, guardado y descartado de cambios {#live-preview-save-and-discard-changes}
 
 Las modificaciones realizadas en el estilo se reflejan instantáneamente en el formulario o en la comunicación interactiva cargada en el Lienzo. La previsualización en directo permite definir y ver de forma interactiva el impacto del estilo. Cuando se cambia el estilo de un componente, el botón **Finalizado** se activa en la barra lateral. Para conservar los cambios, utilice el botón **Listo** .
 
@@ -334,7 +334,7 @@ Los botones Rehacer/Deshacer aparecen al aplicar estilo a un componente en el Ed
 
 ## Uso del Editor de temas {#using-the-theme-editor}
 
-El Editor de temas permite editar un tema que haya creado o cargado. Vaya a **Formularios y Documentos > Temáticas**, seleccione un tema y ábralo. El tema se abre en el Editor de temas.
+El Editor de temas permite editar un tema que haya creado o cargado. Vaya a **Forms y Documentos > Temáticas**, seleccione un tema y ábralo. El tema se abre en el Editor de temas.
 
 Como se ha explicado anteriormente, el Editor de temas tiene dos paneles: Barra lateral y Lienzo.
 ![editor de temas](assets/theme-editor.png)
@@ -351,7 +351,7 @@ En la barra de herramientas Lienzo, verá:
 * **Opciones** de tema: opciones de ![tema](assets/theme-options.png): Proporciona tres opciones
 
    * Configurar: Proporciona opciones para seleccionar el formulario de previsualización o la comunicación interactiva, la clientlib base y la configuración typekit.
-   * CSS de tema de Vista: Genera CSS para el tema seleccionado.
+   * CSS de tema de vista: Genera CSS para el tema seleccionado.
    * Administrar estilos: Proporciona opciones para administrar estilos de texto e imagen
    * Ayuda: Ejecuta una visita guiada de imagen del Editor de temas.
 
@@ -454,7 +454,7 @@ Siga estos pasos para personalizar el estilo de un componente concreto (un cuadr
 
 1. Seleccione Utilidad **de cuadro numérico**.
 1. El título de la barra lateral cambia a Utilidad de cuadro numérico y muestra opciones para personalizar su aspecto.
-Utilice la opción **Dimensión y posición** de la barra lateral para personalizar el tamaño del componente. Asegúrese de que el estado es **predeterminado**.
+Utilice la opción **Dimension y posición** de la barra lateral para personalizar el tamaño del componente. Asegúrese de que el estado es **predeterminado**.
 
 En lugar de seleccionar Utilidad **de cuadro** numérico, seleccione Utilidad **de campo** en la barra de herramientas de componentes y realice los pasos anteriores. Cuando selecciona dimensiones para la opción **Utilidad** de campo, todos los cuadros de texto excepto el cuadro numérico tienen el mismo tamaño.
 
@@ -478,7 +478,7 @@ Para simular el comportamiento de estados que no sean errores y éxitos, utilice
 
 Utilice la regla en Lienzo para seleccionar puntos de interrupción para dispositivos con pantallas más pequeñas. Haga clic en ![la regla](assets/ruler.png) del emulador en Lienzo para ir a la regla de vista y a los puntos de interrupción. Los puntos de interrupción permiten la previsualización de un formulario o comunicación interactiva para tamaños de pantalla pertenecientes a diferentes dispositivos, como teléfonos y tablets. El Editor de temas admite varios tamaños de visualización.
 
-Para aplicar estilo a los componentes de los distintos puntos de interrupción:
+Para aplicar estilo a los componentes de diferentes puntos de interrupción:
 
 1. En el Lienzo, seleccione un punto de interrupción encima de la regla.
 Un punto de interrupción representa un dispositivo móvil y su tamaño de visualización.
@@ -489,12 +489,12 @@ Puede aplicar estilo a los componentes de formulario o comunicación interactiva
 
 ### Uso de fuentes web en un tema {#using-web-fonts-in-a-theme}
 
-Ahora puede utilizar fuentes disponibles en un servicio Web en un formulario adaptable o en una comunicación interactiva. De fábrica, [Typekit](https://typekit.com/), el servicio de fuentes web de Adobe, está disponible como configuración. Para utilizar Typekit, cree un kit y las fuentes que contiene, y obtenga el ID del kit del sitio web de [Typekit](https://typekit.com/).
+Ahora puede utilizar fuentes disponibles en un servicio Web en un formulario adaptable o en una comunicación interactiva. El servicio de fuentes web de [Typekit](https://typekit.com/), listo para usar, está disponible como configuración. Para utilizar Typekit, cree un kit y las fuentes que contiene, y obtenga el ID del kit del sitio web de [Typekit](https://typekit.com/).
 
-Realice los siguientes pasos para configurar Typekit en AEM:
+Siga estos pasos para configurar Typekit en AEM:
 
-1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Implementación > Cloud Service.
-1. En la página **Cloud Service** , vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar ahora** en Typekit. Si ya hay una configuración disponible, haga clic en el botón **+** para crear una nueva instancia.
+1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Implementación > Cloud Services.
+1. En la página **Cloud Services** , vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar ahora** en Typekit. Si ya hay una configuración disponible, haga clic en el botón **+** para crear una nueva instancia.
 1. En el cuadro de diálogo **Crear configuración** , especifique un título para la configuración y haga clic en **Crear**.
 
    Se le redirige a la página de configuración.
@@ -513,7 +513,7 @@ Siga los pasos siguientes para configurar un tema para utilizar la configuració
 
 Puede utilizar el servicio de configuración de temas para agregar más fuentes al editor de temas. Siga estos pasos para agregar fuentes:
 
-1. Inicie sesión en la consola web de AEM con privilegios administrativos. La URL de la consola web de AEM es `https://'[server]:[port]'/system/console/configMgr`.
+1. Inicie sesión en AEM consola web con privilegios administrativos. La dirección URL de la consola web de AEM es `https://'[server]:[port]'/system/console/configMgr`.
 1. Abra el servicio **de configuración del tema del formulario** adaptable.
 
    ![topic-config](assets/theme-config.png)
@@ -583,11 +583,11 @@ La `themeOverride` opción le permite proporcionar una ruta a un tema. Cambia el
 
 ## Obtención de un aspecto específico mediante Temáticas {#specific-af-appearance}
 
-Con los AEM Forms, junto con el tema predeterminado del lienzo, hay muchas otras temáticas. Si desea diseñar el formulario o la comunicación interactiva con otras temáticas, junto con cambios adicionales, copie el tema de la carpeta Biblioteca de temas. Pegue las temáticas copiadas fuera de la carpeta Biblioteca de temas y edite el tema copiado según los cambios que desee.
+Con AEM Forms, junto con el tema predeterminado del lienzo, hay muchas otras temáticas. Si desea diseñar el formulario o la comunicación interactiva con otras temáticas, junto con cambios adicionales, copie el tema de la carpeta Biblioteca de temas. Pegue las temáticas copiadas fuera de la carpeta Biblioteca de temas y edite el tema copiado según los cambios que desee.
 
 Para copiar un tema, realice los siguientes pasos:
 
-1. En la instancia de creación, vaya a **Adobe Experience Manager > Formularios > Temáticas**.
+1. En la instancia de creación, vaya a **Adobe Experience Manager > Forms > Temáticas**.
 1. Abra la carpeta Biblioteca de temas.
 1. En la carpeta Biblioteca de temas, coloque el puntero sobre el tema predeterminado correspondiente y toque **Copiar**.
 1. Pegue el tema copiado fuera de la carpeta Biblioteca de temas.
@@ -623,8 +623,8 @@ Cuando se especifican estilos para los componentes en el Editor de temas, se gen
 
 Puede ver la CSS generada mediante las siguientes opciones:
 
-* **Opción CSS** de Vista en la barra lateral: Cuando selecciona un componente en el tema, puede ver la opción CSS de VISTA en la barra lateral. Muestra la CSS generada, incluida la CSS para `::before` y los `::after` pseudoelementos.
-* **Opción CSS** de tema de Vista en la barra de herramientas del lienzo: En la barra de herramientas del lienzo, haga clic en Opciones ![de](assets/theme-options.png) tema > CSS **de tema de** Vista. Puede ver todo el tema CSS generado a partir de las propiedades definidas en el Editor de temas.
+* **Opción CSS** de vista en la barra lateral: Cuando selecciona un componente en el tema, puede ver la opción CSS de VISTA en la barra lateral. Muestra la CSS generada, incluida la CSS para `::before` y los `::after` pseudoelementos.
+* **Opción CSS** de tema de vista en la barra de herramientas del lienzo: En la barra de herramientas del lienzo, haga clic en Opciones ![de](assets/theme-options.png) tema > CSS **de tema de** Vista. Puede ver todo el tema CSS generado a partir de las propiedades definidas en el Editor de temas.
 
 ## Solución de problemas, recomendaciones y prácticas recomendadas {#troubleshooting-recommendations-and-best-practices}
 
@@ -639,7 +639,7 @@ Puede ver la CSS generada mediante las siguientes opciones:
 
       La biblioteca de cliente base contiene información de estilo. Para utilizar información de estilo en bibliotecas del lado del cliente en temáticas.
 
-      1. Vaya a **Experience Manager > Formularios > Temáticas**.
+      1. Vaya a **Experience Manager > Forms > Temáticas**.
       1. En la página Temáticas, seleccione un tema y haga clic en Propiedades **de la Vista**.
       1. En la página Propiedades que se abre, haga clic en **Avanzadas**.
       1. En la ficha Avanzadas, en el campo Ubicación de biblioteca de clientes, busque y seleccione la biblioteca de clientes que desee utilizar.
