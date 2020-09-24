@@ -6,18 +6,21 @@ seo-description: Obtenga información sobre cómo configurar el inicio de sesió
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: configuring, Security
 content-type: reference
-topic-tags: Security
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
 
 # Inicio de sesión único {#single-sign-on}
 
-El inicio de sesión único (SSO) permite al usuario acceder a varios sistemas después de proporcionar credenciales de autenticación (como un nombre de usuario y una contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona a Experience Manager las credenciales de usuario. Experience Manager comprueba y aplica los permisos de acceso para el usuario (es decir, determina a qué recursos se le permite acceder).
+El inicio de sesión único (SSO) permite al usuario acceder a varios sistemas después de proporcionar credenciales de autenticación (como un nombre de usuario y una contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona al Experience Manager las credenciales de usuario. El Experience Manager comprueba y aplica los permisos de acceso para el usuario (es decir, determina a qué recursos se le permite acceder).
 
 El servicio Controlador de autenticación SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) procesa los resultados de autenticación que proporciona el autenticador de confianza. El controlador de autenticación SSO busca un ssid (identificador SSO) como el valor de un atributo especial en las siguientes ubicaciones en este orden:
 
@@ -42,20 +45,21 @@ Para configurar SSO para una instancia de AEM, debe configurar el controlador de
 
    Por ejemplo, para el conjunto NTLM:
 
-   * **** Ruta: según sea necesario; por ejemplo, `/`
+   * **Ruta:** según sea necesario; por ejemplo, `/`
    * **Nombres** de encabezados: `LOGON_USER`
    * **Formato** de ID: `^<DOMAIN>\\(.+)$`
 
       Donde `<*DOMAIN*>` se reemplaza por su propio nombre de dominio.
    Para CoSign:
 
-   * **** Ruta: según sea necesario; por ejemplo, `/`
+   * **Ruta:** según sea necesario; por ejemplo, `/`
    * **Nombres** de encabezados: remote_user
-   * **** Formato de ID: AsIs
+   * **Formato de ID:** AsIs
+
    Para SiteMinder:
 
-   * **** Ruta: según sea necesario; por ejemplo, `/`
-   * **** Nombres de encabezados: SM_USER
+   * **Ruta:** según sea necesario; por ejemplo, `/`
+   * **Nombres de encabezados:** SM_USER
    * **Formato** de ID: AsIs
 
 
@@ -64,9 +68,9 @@ Para configurar SSO para una instancia de AEM, debe configurar el controlador de
 
 >[!CAUTION]
 >
->Asegúrese de que los usuarios no pueden acceder a AEM directamente si el SSO está configurado.
+>Asegúrese de que los usuarios no pueden acceder a AEM directamente si el inicio de sesión único está configurado.
 >
->Al exigir a los usuarios que pasen por un servidor web que ejecute el agente del sistema SSO, se garantiza que ningún usuario pueda enviar directamente un encabezado, cookie o parámetro que lleve al usuario a ser de confianza para AEM, ya que el agente filtrará dicha información si se envía desde fuera.
+>Al exigir a los usuarios que pasen por un servidor web que ejecute el agente de su sistema SSO, se garantiza que ningún usuario pueda enviar directamente un encabezado, cookie o parámetro que conduzca a que el usuario sea de confianza para AEM, ya que el agente filtrará dicha información si se envía desde fuera.
 >
 >Cualquier usuario que pueda acceder directamente a su instancia de AEM sin pasar por el servidor web podrá actuar como cualquier usuario enviando el encabezado, la cookie o el parámetro si se conocen los nombres.
 >
@@ -83,6 +87,7 @@ Para configurar SSO para una instancia de AEM, debe configurar el controlador de
 >
 >* `disp_iis.ini`
 >* IIS
+
 >
 >
 En `disp_iis.ini` conjunto:
@@ -90,6 +95,7 @@ En `disp_iis.ini` conjunto:
 >
 >* `servervariables=1` (reenvía variables de servidor IIS como encabezados de solicitud a la instancia remota)
 >* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
+
 >
 >
 En IIS:
@@ -98,6 +104,7 @@ En IIS:
    >
    >
 * habilitar la autenticación **integrada de Windows**
+
 >
 
 
@@ -106,7 +113,7 @@ Puede ver qué controlador de autenticación se está aplicando a cualquier secc
 
 `http://localhost:4502/system/console/slingauth`
 
-El controlador que mejor se adapte a la ruta se consulta primero. Por ejemplo, si configura handler-A para la ruta `/` y handler-B para la ruta `/content`, una solicitud para `/content/mypage.html` consultará primero el controlador-B.
+El controlador que mejor se adapte a la ruta se consulta primero. Por ejemplo, si configura handler-A para la ruta `/` y handler-B para la ruta `/content`, entonces una solicitud para `/content/mypage.html` será el controlador de consulta-B primero.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
@@ -153,15 +160,16 @@ Transfer-Encoding: chunked
 Esto también funciona si solicita:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-O bien, puede utilizar el siguiente comando curl para enviar el `TestHeader` encabezado a `admin:``curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
+O bien, puede utilizar el siguiente comando curl para enviar el `TestHeader` encabezado a `admin:`
+`curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
 >Al utilizar el parámetro de solicitud en un navegador solo verá parte del HTML sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud.
 
-## Eliminación de vínculos de cierre de sesión de AEM {#removing-aem-sign-out-links}
+## Eliminación de vínculos de cierre de sesión AEM {#removing-aem-sign-out-links}
 
-Cuando se utiliza SSO, el inicio de sesión y el cierre de sesión se gestionan externamente, por lo que los vínculos de cierre de sesión propios de AEM ya no son aplicables y deben eliminarse.
+Cuando se utiliza SSO, el inicio de sesión y el cierre de sesión se gestionan externamente, por lo que AEM vínculos de cierre de sesión propios ya no son aplicables y deben eliminarse.
 
 El vínculo de cierre de sesión en la pantalla de bienvenida se puede eliminar siguiendo los pasos siguientes.
 
