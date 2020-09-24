@@ -6,10 +6,13 @@ seo-description: Este artículo lista los métodos abreviados de teclado que se 
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
-topic-tags: correspondence-management
+topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 12%
 
 ---
 
@@ -27,7 +30,7 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 | Guardar cambios en el navegador de propiedades para el componente de formulario adaptable seleccionado | Ctrl + S | Comando+S |
 | Editar regla para el componente de formulario adaptable seleccionado | Ctrl + Alt + Intro | Comando+Alt+Retorno |
 | Alternar entre la Previsualización y el modo seleccionado actualmente (por ejemplo, Editar, Andamiaje, etc.) | Ctrl + Mayús + M | Ctrl+Mayús+M&amp;ast; |
-| Deshacer el último cambio | Ctrl + Z | Ctrl+Z&amp;ast; |
+| Deshacer el último cambio | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rehacer el último cambio | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Seleccionar varios componentes | Mayús + clic | Mayús + clic |
 | Copiar componente seleccionado | Ctrl-C | Ctrl-C&amp;ast; |
@@ -49,6 +52,7 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 >
 >* Windows: Ctrl + clic en los componentes necesarios.
 >* MAC OS: Comando+Clic en los componentes necesarios.
+
 >
 
 
@@ -59,7 +63,7 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 |---|---|---|
 | Abrir el navegador de propiedades del componente seleccionado en un tema | Alt + Intro | Alt + Retorno |
 | Cerrar el navegador de propiedades del componente seleccionado en un tema | Ctrl + Alt + W | Comando+Alt+W |
-| Deshacer el último cambio | Ctrl + Z | Ctrl+Z&amp;ast; |
+| Deshacer el último cambio | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rehacer el último cambio | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Guardar cambios en el navegador de propiedades para el componente seleccionado en un tema | Ctrl + S | Ctrl+S&amp;ast; |
 
@@ -67,7 +71,7 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 >
 >Los métodos abreviados marcados con &#39;&amp;ast;&#39; funcionan con las teclas Ctrl y Comando en Mac OS.
 
-## Explorador de contenido {#contentbrowser}
+## Explorador de contenido  {#contentbrowser}
 
 | **Acción** | **Método abreviado en Windows** | **Método abreviado en Mac OS** |
 |---|---|---|
@@ -75,8 +79,8 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 | Contraer todos los acordeones en el árbol Objetos de formulario del navegador de contenido cuando están en foco | Ctrl+A para seleccionar todos los acordeones seguidos de la flecha izquierda para contraer | Comando+A para seleccionar todos los acordeones seguidos de la flecha izquierda para contraer |
 | Expandir el acordeón seleccionado en el árbol Objetos de formulario | Flecha derecha | Flecha derecha |
 | Contraer el acordeón seleccionado en el árbol Objetos de formulario | Flecha izquierda | Flecha izquierda |
-| Seleccione el siguiente elemento en el árbol Objetos de formulario | Flecha hacia abajo | Flecha hacia abajo |
-| Seleccione el elemento anterior en el árbol Objetos de formulario | Flecha hacia arriba | Flecha hacia arriba |
+| Seleccione el siguiente elemento en el árbol Objetos de Forms | Flecha hacia abajo | Flecha hacia abajo |
+| Seleccione el elemento anterior en el árbol Objetos de Forms | Flecha hacia arriba | Flecha hacia arriba |
 
 [1] Reemplaza Ctrl + Flecha derecha para Windows y Comando + Flecha derecha para Mac OS.\
 [2] Reemplaza Ctrl + Flecha izquierda para Windows y Comando + Flecha izquierda para Mac OS.
@@ -105,7 +109,7 @@ Esta sección lista varios teclados y accesos directos de accesibilidad que pued
   <tr>
    <td><p>Seleccionar palabra anterior</p> </td> 
    <td><p>Ctrl + Mayús + flecha izquierda</p> </td> 
-   <td>Comando + Mayús + flecha izquierda</td> 
+   <td>Comando+Mayús+Flecha izquierda</td> 
   </tr>
   <tr>
    <td><p>Ampliar una selección al principio de un párrafo</p> </td> 
@@ -206,7 +210,7 @@ Esta sección lista varios teclados y accesos directos de accesibilidad que pued
 </table>
 
 
-### Alineación de texto {#text-alignment}
+### Alineación del texto {#text-alignment}
 
 <table> 
  <tbody>
