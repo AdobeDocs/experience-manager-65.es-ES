@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '4813'
 ht-degree: 4%
@@ -223,11 +223,10 @@ Para cargar letreros de imagen, consulte [Carga de recursos](/help/assets/managi
    >    * Animación. De forma predeterminada, cada transición de diapositiva es un fundido. Puede cambiarlo a una transición de diapositivas.
    >    * Estilo de los botones. Los usuarios pueden rotar los letreros tocando cada punto o número. Puede cambiar dónde aparecen los botones del indicador de conjunto (y si son numéricos o de un estilo de puntos) y su tamaño.
    >    * Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
-   >    * Antes de editar un ajuste preestablecido de visor, elija el estilo en el que desea basar el ajuste preestablecido. Si no lo hace, cuando inicio editar el ajuste preestablecido de visor, perderá todos los cambios si decide cambiar a otro ajuste preestablecido
+   >    * Antes de editar un ajuste preestablecido de visor, elija el estilo en el que desea basar el ajuste preestablecido. Si no lo hace, cuando inicio editar el ajuste preestablecido de visor, perderá todos los cambios si decide cambiar a otro ajuste preestablecido.
 
    >
-   >
-   >Consulte Consideraciones [especiales para letreros](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) de carrusel para obtener instrucciones detalladas y más información sobre el editor del visor.
+   >Consulte Consideraciones [especiales para letreros](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) de carrusel para obtener instrucciones detalladas y más información sobre el editor del visor.
 
    También puede realizar una previsualización del aspecto que tendrá la pancarta de carrusel. Consulte [(Opcional) Vista previa de letreros](#optional-previewing-carousel-banners)de carrusel.
 
