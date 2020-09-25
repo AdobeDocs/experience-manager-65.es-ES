@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 8%
@@ -51,7 +51,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * Obtenga más información sobre la [organización de recursos](/help/assets/organize-assets.md)digitales.
    * Cargue los vídeos de origen principales en las carpetas. Puede cargar archivos de vídeo de hasta 15 GB cada uno. Al agregar vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo asignado a la carpeta.
 
-      * [Cargue los vídeos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+      * [Cargue los vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Obtenga más información sobre los formatos [de archivo de entrada](/help/assets/assets-formats.md#supported-multimedia-formats)admitidos.
    * Monitoree cómo progresa [la codificación de](#monitoring-video-encoding-and-youtube-publishing-progress) vídeo desde la vista de recursos o flujos de trabajo.
 
@@ -64,7 +64,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
       * [Organización de recursos](/help/assets/organize-assets.md)digitales Obtenga más información sobre las [prácticas recomendadas para organizar los recursos digitales con el fin de utilizar perfiles de procesamiento](organize-assets.md)
 
-      * [Búsqueda de recursos](search-assets.md#custompredicates) de vídeo o [Búsqueda de recursos](managing-assets-touch-ui.md#search-assets)
+      * [Búsqueda de recursos](search-assets.md#custompredicates) de vídeo o [Búsqueda de recursos](/help/assets/search-assets.md)
    * Previsualización y publicación de recursos de vídeo
 
       * Vista del vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
@@ -1223,7 +1223,7 @@ Estos pasos solo se aplican a los medios dinámicos que se ejecutan en el modo &
    * Se ha creado una carpeta para los recursos de vídeo.
    * [Se ha aplicado un perfil de vídeo a la carpeta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
-   * [Se han cargado los vídeos en la carpeta](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+   * [Se han cargado los vídeos en la carpeta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Desplácese a un recurso de vídeo cargado cuya imagen en miniatura desee cambiar.
 1. En el modo de selección de recursos, ya sea desde la Vista **[!UICONTROL de]** Lista o desde la Vista **[!UICONTROL de]** tarjetas, toque el recurso de vídeo.
