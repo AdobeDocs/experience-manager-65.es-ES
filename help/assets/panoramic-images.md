@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -30,7 +30,7 @@ See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 Para que un recurso cargado se considere una imagen panorámica esférica que se va a utilizar con el visor de imágenes panorámicas, el recurso debe tener una o ambas de las opciones siguientes:
 
 * Proporción de aspecto de 2.
-En CRXDE Lite puede anular la configuración de proporción de aspecto predeterminada de 2 en:
+Puede anular la configuración de proporción de aspecto predeterminada de 2 en CRXDE Lite de la siguiente manera:
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Etiquetado con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-authoring/tags.md).
@@ -72,11 +72,11 @@ Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe 
 
 Si ha colocado una imagen en el componente de medios panorámicos de WCM y el marcador de posición del componente se ha contraído, es posible que desee solucionar los problemas siguientes:
 
-* Si se produce un error 403 Prohibido, es posible que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de Límite **[!UICONTROL de tamaño de imagen de]** respuesta en [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Si se produce un error 403 Prohibido, es posible que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de Límite **[!UICONTROL de tamaño de imagen de]** respuesta en [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Para ver un &quot;bloqueo no válido&quot; en el recurso o &quot;error de análisis&quot; en la página, marque el modo de confusión de solicitudes y el modo de bloqueo de solicitudes para asegurarse de que están desactivados.
 * Si se produce un error de lienzo contaminado, configure una ruta de archivo de definición de conjunto de reglas e Invalide CTN para las solicitudes anteriores del recurso de imagen.
-* Si la calidad de la imagen es muy baja después de una solicitud de imagen con un tamaño superior al límite admitido, compruebe que el ajuste Atributos de codificación **[!UICONTROL JPEG > Calidad]** no esté vacío. Una configuración típica del campo **[!UICONTROL Calidad]** es `95`. La configuración se encuentra en la página Servidor de imágenes. Para acceder a la página, consulte [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Si la calidad de la imagen es muy baja después de una solicitud de imagen con un tamaño superior al límite admitido, compruebe que el ajuste Atributos de codificación **[!UICONTROL JPEG > Calidad]** no esté vacío. Una configuración típica del campo **[!UICONTROL Calidad]** es `95`. La configuración se encuentra en la página Servidor de imágenes. Para acceder a la página, consulte [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Vista previa de imágenes panorámicas {#previewing-panoramic-images}
 
