@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
+source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 1%
@@ -160,8 +160,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 1. Añada las siguientes propiedades en el archivo sling.properties:
 
    ```shell
-   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
-   sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
+   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*  
    ```
 
 1. Guarde y cierre el archivo y inicio la instancia de AEM.
