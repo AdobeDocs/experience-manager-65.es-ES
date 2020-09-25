@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -29,17 +29,18 @@ ht-degree: 3%
 >
 >* API de REST de recursos
 >* incluida la compatibilidad con fragmentos de contenido
+
 >
 >
 La implementación actual de la API HTTP de AEM Assets es REST.
 
-La API [REST de](/help/assets/mac-api-assets.md) Recursos Adobe Experience Manager (AEM) permite a los desarrolladores acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, mediante operaciones CRUD (Crear, leer, actualizar, eliminar).
+La API [REST de Adobe Experience Manager (AEM)](/help/assets/mac-api-assets.md) Assets permite a los desarrolladores acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, mediante operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
 
-La API le permite utilizar AEM como un CMS (sistema Gestor de contenido) sin encabezado al proporcionar servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
+La API le permite operar AEM como un CMS (sistema Gestor de contenido) sin cabezales al proporcionar servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
 
 Por ejemplo, las aplicaciones de una sola página (SPA), basadas en marcos o personalizadas, requieren contenido proporcionado a través de la API HTTP, a menudo en formato JSON.
 
-Aunque los componentes principales de AEM proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, sí que requieren el conocimiento práctico de AEM WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas (API) basadas en plantillas de AEM dedicadas. No todas las organizaciones de desarrollo de la EPA tienen acceso a esos recursos.
+Aunque AEM componentes principales proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, requieren AEM conocimientos técnicos de WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas (API) basadas en plantillas AEM dedicadas. No todas las organizaciones de desarrollo de la EPA tienen acceso a esos recursos.
 
 Es cuando se puede utilizar la API REST de Assets. Permite a los desarrolladores acceder a los recursos (por ejemplo, imágenes y fragmentos de contenido) directamente, sin necesidad de incrustarlos primero en una página y entregar su contenido en formato JSON serializado. (Tenga en cuenta que no es posible personalizar la salida JSON desde la API REST de Assets). La API de REST de recursos también permite a los desarrolladores modificar contenido mediante la creación, actualización o eliminación de recursos, fragmentos de contenido y carpetas existentes.
 
@@ -51,7 +52,7 @@ La API de REST de Recursos:
 
 ## Requisitos previos {#prerequisites}
 
-La API de REST de Assets está disponible en cada instalación predeterminada de una versión reciente de AEM.
+La API de REST de Assets está disponible en cada instalación predeterminada de una versión de AEM reciente.
 
 ## Conceptos clave {#key-concepts}
 
@@ -66,7 +67,7 @@ El método HTTP determina la operación que se va a ejecutar:
 
 >[!NOTE]
 >
->El cuerpo de la solicitud y/o los parámetros de URL pueden utilizarse para configurar algunas de estas operaciones; por ejemplo, defina que una carpeta o un recurso debe crearse mediante una solicitud **POST** .
+>El cuerpo de la solicitud y/o los parámetros de URL pueden utilizarse para configurar algunas de estas operaciones; por ejemplo, defina que una carpeta o un recurso debe crearse mediante una solicitud de **POST** .
 
 El formato exacto de las solicitudes admitidas se define en la documentación de referencia [de la](/help/assets/assets-api-content-fragments.md#api-reference) API.
 
@@ -76,7 +77,7 @@ Todas las solicitudes son atómicas.
 
 Esto significa que las siguientes (`write`) solicitudes no pueden combinarse en una sola transacción que pueda tener éxito o fallar como una sola entidad.
 
-### AEM (Assets) REST API y AEM Components {#aem-assets-rest-api-versus-aem-components}
+### AEM (Assets) API de REST frente a componentes AEM {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <tbody>
@@ -99,12 +100,12 @@ Esto significa que las siguientes (`write`) solicitudes no pueden combinarse en 
    <td>Acceso</td>
    <td><p>Se puede acceder directamente.</p> <p>Utiliza el <code>/api/assets </code>punto final, asignado a <code>/content/dam</code> (en el repositorio).</p> <p>Por ejemplo, para acceder a:<code class="code">
        /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> solicitud:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
-   <td><p>Es necesario hacer referencia a través de un componente de AEM en una página de AEM.</p> <p>Utiliza el <code>.model</code> selector para crear la representación JSON.</p> <p>Un ejemplo de URL sería el siguiente:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>Se necesita hacer referencia a través de un componente AEM en una página AEM.</p> <p>Utiliza el <code>.model</code> selector para crear la representación JSON.</p> <p>Un ejemplo de URL sería el siguiente:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
   </tr>
   <tr>
    <td>Seguridad</td>
    <td><p>Se pueden usar varias opciones.</p> <p>Se propone un OAuth; puede configurarse de forma independiente de la configuración estándar.</p> </td>
-   <td>Utiliza la configuración estándar de AEM.</td>
+   <td>Utiliza AEM configuración estándar.</td>
   </tr>
   <tr>
    <td>Observaciones arquitectónicas</td>
@@ -121,14 +122,15 @@ Esto significa que las siguientes (`write`) solicitudes no pueden combinarse en 
 
 ### Seguridad {#security}
 
-Si la API REST de Assets se utiliza en un entorno sin requisitos de autenticación específicos, el filtro CORS de AEM debe configurarse correctamente.
+Si la API REST de Assets se utiliza en un entorno sin requisitos de autenticación específicos, AEM filtro CORS debe configurarse correctamente.
 
 >[!NOTE]
 >
 >Para obtener más información, consulte:
 >
->* [Se explica CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+>* [Se explica el CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -141,12 +143,12 @@ Los fragmentos de contenido son un tipo específico de recurso; consulte [Uso de
 
 Para obtener más información sobre las funciones disponibles a través de la API, consulte:
 
-* [Características](/help/assets/mac-api-assets.md#available-features) disponibles de la API REST de Assets
+* [Características](/help/assets/mac-api-assets.md#assets) disponibles de la API REST de Assets
 * [Tipos de entidades](/help/assets/assets-api-content-fragments.md#entity-types)
 
 ### Paginación {#paging}
 
-La API de REST de Recursos admite paginación (para solicitudes GET) mediante parámetros de URL:
+La API de REST de Recursos admite paginación (para solicitudes de GET) mediante parámetros de URL:
 
 * `offset` - el número de la primera entidad (secundaria) que se va a recuperar
 * `limit` - el número máximo de entidades devueltas
@@ -179,7 +181,7 @@ La respuesta contendrá información de paginación como parte de la `properties
 
 ### Carpetas {#folders}
 
-Las carpetas actúan como contenedores para los recursos y otras carpetas. Reflejan la estructura del repositorio de contenido de AEM.
+Las carpetas actúan como contenedores para los recursos y otras carpetas. Reflejan la estructura del repositorio de contenido AEM.
 
 La API de REST de Recursos expone el acceso a las propiedades de una carpeta; por ejemplo su nombre, título, etc. Los recursos se exponen como entidades secundarias de carpetas.
 
@@ -222,21 +224,21 @@ El contenido asociado no está expuesto actualmente.
 
 ## Utilizando {#using}
 
-El uso puede variar en función de si está utilizando un entorno de publicación o autor de AEM, junto con el caso de uso específico.
+El uso puede variar en función de si está utilizando un entorno de publicación o autor AEM, junto con el caso de uso específico.
 
 * La creación está estrictamente enlazada a una instancia de autor ([y actualmente no hay forma de replicar un fragmento para publicar con esta API](/help/assets/assets-api-content-fragments.md#limitations)).
-* Es posible realizar el Envío desde ambos, ya que AEM solo proporciona contenido solicitado en formato JSON.
+* Se puede realizar el envío desde ambos, ya que AEM sirve contenido solicitado únicamente en formato JSON.
 
-   * El Almacenamiento y el envío de una instancia de autor de AEM deben ser suficientes para las aplicaciones de biblioteca multimedia que se encuentran detrás del servidor de seguridad.
-   * Para el envío web en directo, se recomienda una instancia de publicación de AEM.
+   * El almacenamiento y el envío de una instancia de creación de AEM deben ser suficientes para las aplicaciones de biblioteca de medios detrás del servidor de seguridad.
+   * Para el envío web en directo, se recomienda una instancia de publicación AEM.
 
 >[!CAUTION]
 >
->La configuración del despachante en las instancias de nube de AEM podría bloquear el acceso a `/api`.
+>La configuración del distribuidor en AEM instancias de nube podría bloquear el acceso a `/api`.
 
 >[!NOTE]
 >
->Para obtener más información, consulte la Referencia [de API](/help/assets/assets-api-content-fragments.md#api-reference). En particular, la API de [Adobe Experience Manager Assets - Fragmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)de contenido.
+>Para obtener más información, consulte la Referencia [de API](/help/assets/assets-api-content-fragments.md#api-reference). En concreto, la API de [Adobe Experience Manager Assets - Fragmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)de contenido.
 
 ### Lectura/Envío {#read-delivery}
 
@@ -279,7 +281,7 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restricciones   {#limitations}
+## Restricciones     {#limitations}
 
 Existen algunas limitaciones:
 
@@ -345,6 +347,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Los mensajes de error detallados suelen devolverse de la siguiente manera:
 
    ```xml
@@ -364,10 +367,10 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 
 Consulte aquí las referencias de API detalladas:
 
-* [API de recursos de Adobe Experience Manager: fragmentos de contenido](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [API de Adobe Experience Manager Assets: fragmentos de contenido](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API de HTTP de Assets](/help/assets/mac-api-assets.md)
 
-   * [Funciones disponibles](/help/assets/mac-api-assets.md#available-features)
+   * [Funciones disponibles](/help/assets/mac-api-assets.md#assets)
 
 ## Recursos adicionales {#additional-resources}
 
