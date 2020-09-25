@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +27,7 @@ La barra de herramientas se compone de una serie de modos de IU que contienen un
 * Los modos de IU son iconos que aparecen en la parte izquierda de la barra de herramientas. Al tocar o hacer clic en un icono, la barra de herramientas muestra los módulos de IU que contiene.
 * Los módulos de IU muestran datos de uno o más almacenes de ContextHub. Algunos módulos de IU también le permiten manipular los datos de los almacenes.
 
-ContextHub instala varios modos y módulos de IU. Es posible que el administrador haya [configurado ContextHub](/help/sites-administering/contexthub-config.md) para que se muestren otros distintos.
+ContextHub instala varios modos y módulos de IU. Es posible que el administrador haya [configurado ContextHub](/help/sites-developing/ch-configuring.md) para que se muestren otros distintos.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
