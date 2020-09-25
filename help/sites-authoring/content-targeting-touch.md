@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 77%
@@ -348,12 +348,15 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
    El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número que aparece en la parte superior derecha indica la cantidad de ofertas que están disponibles en la biblioteca actual.
 
    * Click or tap **Browse** to navigate to another folder. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Click or tap **Browse** again to close the navigation pane.
+
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
    * Toque o haga clic en **Filtrar** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Vuelva a tocar o hacer clic en **Filtrar** para cerrar el panel de filtrado.
+
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
-   * Para cambiar la manera de ordenar las ofertas, toque o haga clic en la flecha al lado de **La más reciente a la más antigua**. Las Ofertas se pueden ordenar de más reciente a más antigua o de más antigua a más reciente.
+   * Para cambiar la manera de ordenar las ofertas, toque o haga clic en la flecha al lado de **La más reciente a la más antigua**. Las ofertas se pueden ordenar de más reciente a más antigua o de más antigua a más reciente.
+
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
    Toque o haga clic en el icono junto a **Ver como** para ver las ofertas como mosaicos o como una lista.
@@ -424,7 +427,7 @@ Si tiene una actividad de prueba A/B, los públicos se encuentran a la izquierda
 
 Puede cambiar los porcentajes, siempre que sumen el cien por ciento. En una prueba A/B, varias experiencias pueden utilizar a un público.
 
-![chlimage_1-29](assets/chlimage_1-29.png)
+![chlimage_1-21](assets/chlimage_1-29.png)
 
 ### Asociación de públicos y porcentajes de tráfico a la prueba A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
@@ -663,7 +666,7 @@ Para personalizar el componente Target, acceda a las opciones del componente de 
   </tr>
   <tr>
    <td><strong>Motor</strong></td>
-   <td>Seleccione entre Reglas <strong>del lado del cliente (sin seguimiento), Adobe Target, ContextHub </strong>y Adobe Campaign<strong> </strong>según el motor que desee utilizar.</td>
+   <td>Seleccione entre las reglas <strong>de cliente (sin seguimiento), Adobe Target, ContextHub </strong>y Adobe Campaign<strong> </strong>según el motor que desee utilizar.</td>
   </tr>
  </tbody>
 </table>
@@ -684,11 +687,11 @@ Si selecciona Adobe Target como motor:
   </tr>
   <tr>
    <td><strong>Incluir segmentos resueltos</strong></td>
-   <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco.</p> <p>Esto solo funciona en situaciones con la API XML en las que se sincronizan segmentos de AEM. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo.</p> </td>
+   <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco.</p> <p>Esto solo funciona en situaciones con la API XML en las que está sincronizando AEM segmentos. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo.</p> </td>
   </tr>
   <tr>
    <td><strong>Parámetros heredados de contexto</strong></td>
-   <td>Parámetros de contexto de Listas heredados del marco de Adobe Target, si los hay, asociados a la página seleccionada.</td>
+   <td>Parámetros de contexto de listas heredados del marco de trabajo de Adobe Target, si los hay, asociados a la página seleccionada.</td>
   </tr>
   <tr>
    <td><strong>Parámetros de contexto</strong></td>
@@ -728,5 +731,4 @@ Si selecciona Client Context (cliente) como motor:
 
 Seleccione **Adobe Campaign** como motor si integra AEM con Adobe Campaign. Consulte [Integración de AEM con Adobe Campaign](/help/sites-administering/campaign.md) para obtener más información.
 
-Seleccione **ContextHub** como motor si utiliza ContextHub para orientar. Consulte [Configuración de ContextHub.](/help/sites-administering/contexthub-config.md)
-
+Seleccione **ContextHub** como motor si utiliza ContextHub para orientar. Consulte [Configuración de ContextHub.](/help/sites-developing/ch-configuring.md)
