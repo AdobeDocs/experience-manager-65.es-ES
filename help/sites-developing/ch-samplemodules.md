@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ ContextHub proporciona varios módulos de interfaz de usuario de muestra que pue
 * Dónde encontrar el código fuente para poder abrirlo con fines de aprendizaje.
 * Cómo configurar el módulo de interfaz de usuario.
 
-Para obtener información sobre cómo agregar módulos de interfaz de usuario a ContextHub, consulte [Adición de un módulo](/help/sites-administering/contexthub-config.md#adding-a-ui-module)de interfaz de usuario. Para obtener información sobre el desarrollo de módulos de interfaz de usuario, consulte [Creación de tipos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de módulos de interfaz de usuario de ContextHub.
+Para obtener información sobre cómo agregar módulos de interfaz de usuario a ContextHub, consulte [Añadir un módulo](ch-configuring.md#adding-a-ui-module)de interfaz de usuario. Para obtener información sobre el desarrollo de módulos de interfaz de usuario, consulte [Creación de tipos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de módulos de interfaz de usuario de ContextHub.
 
 ## Tipo de módulo de interfaz de usuario contexthub.base {#contexthub-base-ui-module-type}
 
@@ -29,11 +32,11 @@ El tipo de módulo de interfaz de usuario contexthub.base es el tipo base para t
 
 Están disponibles las siguientes funciones:
 
-* **** Título e icono: Especifique un título para el módulo de interfaz de usuario y un icono. Se puede hacer referencia al icono mediante una URL o desde la biblioteca de iconos de la interfaz de usuario de Coral.
-* **** Almacenar datos: Identifique uno o más almacenes desde los cuales recuperar datos.
-* **** Contenido: Especifique el contenido que aparece en el módulo de interfaz de usuario tal como aparece en la barra de herramientas de ContextHub.
-* **** Contenido emergente: Especifique el contenido que aparece en una ventana emergente cuando se hace clic o se toca el módulo de la interfaz de usuario.
-* **** Modo de pantalla completa: Controlar si se permite el modo de pantalla completa.
+* **Título e icono:** Especifique un título para el módulo de interfaz de usuario y un icono. Se puede hacer referencia al icono mediante una URL o desde la biblioteca de iconos de la interfaz de usuario de Coral.
+* **Almacenar datos:** Identifique uno o más almacenes desde los cuales recuperar datos.
+* **Contenido:** Especifique el contenido que aparece en el módulo de interfaz de usuario tal como aparece en la barra de herramientas de ContextHub.
+* **Contenido emergente:** Especifique el contenido que aparece en una ventana emergente cuando se hace clic o se toca el módulo de la interfaz de usuario.
+* **Modo de pantalla completa:** Controlar si se permite el modo de pantalla completa.
 
 El código fuente se encuentra en /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
@@ -41,29 +44,29 @@ El código fuente se encuentra en /libs/granite/contexthub/code/ui/container/js/
 
 Configure el módulo de interfaz de usuario contexthub.base con un objeto Javascript en formato JSON. Incluya cualquiera de las siguientes propiedades para configurar las funciones del módulo de interfaz de usuario:
 
-* **** image: Dirección URL de una imagen para mostrarla como icono.
-* **** icono: Nombre de una clase de icono [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral UI. Si especifica un valor tanto para las propiedades de icono como de imagen, se utilizará la imagen.
+* **image:** Dirección URL de una imagen para mostrarla como icono.
+* **icono:** Nombre de una clase de icono [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral UI. Si especifica un valor tanto para las propiedades de icono como de imagen, se utilizará la imagen.
 
-* **** title: Un título para el módulo de interfaz de usuario. El título aparece cuando el puntero se pone en pausa sobre el icono del módulo de la interfaz de usuario.
-* **** pantalla completa: Valor booleano que indica si el módulo de interfaz de usuario admite el modo de pantalla completa. Se utiliza `true` para admitir la pantalla completa y `false` para evitar el modo de pantalla completa.
+* **title:** Un título para el módulo de interfaz de usuario. El título aparece cuando el puntero se pone en pausa sobre el icono del módulo de la interfaz de usuario.
+* **pantalla completa:** Valor booleano que indica si el módulo de interfaz de usuario admite el modo de pantalla completa. Se utiliza `true` para admitir la pantalla completa y `false` para evitar el modo de pantalla completa.
 
-* **** plantilla: Plantilla [Handlebars](https://handlebarsjs.com/) que especifica el contenido que se va a procesar en la barra de herramientas de ContextHub. Utilice como máximo dos `<p>` etiquetas.
+* **plantilla:** Plantilla [Handlebars](https://handlebarsjs.com/) que especifica el contenido que se va a procesar en la barra de herramientas de ContextHub. Utilice como máximo dos `<p>` etiquetas.
 
-* **** storeMapping: Asignación de clave/tienda. Utilice la clave de las plantillas de la barra de control para acceder a los datos asociados del almacén de ContextHub.
-* **** list: Matriz de elementos que se mostrarán como una lista en una ventana emergente cuando se haga clic en el módulo de interfaz de usuario. Si incluye este elemento, no incluya popoverTemplate. El valor es una matriz de objetos con las siguientes claves:
+* **storeMapping:** Asignación de clave/tienda. Utilice la clave de las plantillas de la barra de control para acceder a los datos asociados del almacén de ContextHub.
+* **lista:** Matriz de elementos que se mostrarán como listas en una ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya popoverTemplate. El valor es una matriz de objetos con las siguientes claves:
 
    * title: Texto que se va a mostrar para este elemento
    * image: (Opcional) Dirección URL de una imagen que debe mostrarse a la izquierda
    * icono: (Opcional) Una clase de icono CUI que debe mostrarse a la izquierda; se omite si se especifica una imagen
    * seleccionado: (Opcional) Un valor booleano que especifica si este elemento debe mostrarse como seleccionado (true=seleccionado). De forma predeterminada, los elementos seleccionados aparecen con una fuente en negrita. Utilice una `listType` propiedad para configurar otros aspectos visuales (consulte a continuación).
 
-* **** listType: Estilo que se va a utilizar para los elementos de lista emergente. Utilice uno de los siguientes valores:
+* **listType:** Estilo que se va a utilizar para los elementos de lista de la ventana emergente. Utilice uno de los siguientes valores:
 
    * marca de verificación
    * casilla de verificación
    * radio
 
-* **** poverTemplate: Una plantilla de Handlebars que especifica el contenido que se procesará en la ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya el `list` .
+* **poverTemplate:** Una plantilla de Handlebars que especifica el contenido que se procesará en la ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya el `list` .
 
 ### Ejemplo {#example}
 
@@ -219,17 +222,17 @@ Las instancias del módulo de interfaz de usuario contexthub.tagcloud no requier
 }
 ```
 
-## tipo de módulo de interfaz de usuario granite.profile {#granite-profile-ui-module-type}
+## tipo de módulo de interfaz de usuario de granite.perfil {#granite-profile-ui-module-type}
 
-El módulo de interfaz de usuario de granite.profile ContextHub muestra el nombre para mostrar del usuario actual. La ventana emergente revela el nombre de inicio de sesión del usuario y le permite cambiar el valor del nombre para mostrar. El módulo de interfaz de usuario obtiene información de un perfil denominado de una tienda de ContextHub basado en el candidato de la tienda [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) .
+El módulo de interfaz de usuario de granite.perfil ContextHub muestra el nombre para mostrar del usuario actual. La ventana emergente revela el nombre de inicio de sesión del usuario y le permite cambiar el valor del nombre para mostrar. El módulo de interfaz de usuario obtiene información de una tienda de ContextHub denominada perfil basada en el candidato de la tienda [granite.perfil](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) .
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-El origen del módulo de interfaz de usuario se encuentra en /libs/granite/contexthub/components/module/profile.
+El origen del módulo de interfaz de usuario se encuentra en /libs/granite/contexthub/components/module/perfil.
 
 ### Configuración {#configuration-7}
 
-Las instancias del módulo de interfaz de usuario grantie.profile no requieren un valor para la Configuración de detalles. El siguiente texto JSON representa la configuración predeterminada del módulo.
+Las instancias del módulo de interfaz de usuario grantie.perfil no requieren un valor para la Configuración de detalles. El siguiente texto JSON representa la configuración predeterminada del módulo.
 
 ```xml
 {
