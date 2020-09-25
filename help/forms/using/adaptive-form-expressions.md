@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2766'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Los formularios adaptables proporcionan una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con capacidades de secuencias de comandos dinámicas. Le permite escribir expresiones para agregar varios comportamientos, como mostrar/ocultar campos y paneles dinámicos. También permite agregar campos calculados, convertir campos en de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
 
-JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptables.
+JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adaptables.
 
 ## Prácticas recomendadas para escribir expresiones {#best-practices-for-writing-expressions}
 
@@ -44,20 +44,20 @@ Los paneles de repetición son instancias de un panel que se agregan o eliminan 
    * Para obtener instanceManager de un panel: `_panel1 or panel1.instanceManager`
    * Para quitar una instancia de un panel: `_panel1.removeInstance(panel1.instanceIndex)`
 
-## Tipos de Expresión {#expression-types}
+## Tipos de expresión {#expression-types}
 
 En los formularios adaptables, puede escribir expresiones para agregar comportamientos como mostrar/ocultar dinámicos campos y paneles. También puede escribir expresiones para agregar campos calculados, hacer que los campos sean de solo lectura, lógica de validación y mucho más. Los formularios adaptables admiten las siguientes expresiones:
 
-* **[expresiones](#access-expression-enablement-expression)**de acceso: para activar o desactivar un campo.
+* **[Expresiones](#access-expression-enablement-expression)** de acceso: para activar o desactivar un campo.
 * **[Calcular expresiones](#calculate-expression)**: para calcular automáticamente el valor de un campo.
 * **[Haga clic en expresión](#click-expression)**: para gestionar acciones al hacer clic en el evento de un botón.
-* **[Secuencia de comandos](#initialization-script)de inicialización:**realizar una acción al inicializar un campo.
-* **[expresión](#options-expression)**de opciones: para rellenar dinámicamente una lista desplegable.
-* **[expresión](#summary)**de resumen: para calcular dinámicamente el título de un acordeón.
+* **[Secuencia de comandos](#initialization-script)de inicialización:** realizar una acción al inicializar un campo.
+* **[Expresión](#options-expression)** de opciones: para rellenar dinámicamente una lista desplegable.
+* **[Expresión](#summary)** de resumen: para calcular dinámicamente el título de un acordeón.
 * **[Validar expresiones](#validate-expression)**: para validar un campo.
-* **[Secuencia de comandos](#value-commit-script)de confirmación de valor:**para cambiar los componentes de un formulario después de cambiar el valor de un campo.
-* **[expresión](#visibility-expression)**de visibilidad: para controlar la visibilidad de un campo y un panel.
-* **[expresión](#step-completion-expression)**de finalización de pasos: para evitar que un usuario vaya al paso siguiente de un asistente.
+* **[Secuencia de comandos](#value-commit-script)de confirmación de valor:** para cambiar los componentes de un formulario después de cambiar el valor de un campo.
+* **[Expresión](#visibility-expression)** de visibilidad: para controlar la visibilidad de un campo y un panel.
+* **[Expresión](#step-completion-expression)** de finalización de pasos: para evitar que un usuario vaya al paso siguiente de un asistente.
 
 ### Expresión de acceso (Expresión de habilitación) {#access-expression-enablement-expression}
 
@@ -88,7 +88,7 @@ La expresión de clic gestiona las acciones realizadas en el evento de clic de u
 
 **Tipo** de devolución: La expresión de clic no devuelve ningún valor. Si alguna expresión devuelve un valor, se ignora el valor.
 
-**Ejemplo**: Para rellenar un cuadro de texto **cuadro de texto1** en la acción de clic de un botón con **AEM Forms** de valor, la expresión de clic del botón es `textbox1.value="AEM Forms"`
+**Ejemplo**: Para rellenar un cuadro de texto **cuadro de texto1** en la acción de clic de un botón con el valor **AEM Forms**, la expresión de clic del botón es `textbox1.value="AEM Forms"`
 
 ### Script de inicialización {#initialization-script}
 
@@ -164,7 +164,7 @@ La secuencia de comandos Commit de valores se activa cuando:
 
 >[!NOTE]
 >
->Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a https://&#39;[server]:[port]&#39;/system/console/configMgr y cambie **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
+>Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a https://&#39;[server]:[port]&#39;/system/console/configMgr y cambie **Adaptive Forms Version for Compatibility** a **AEM Forms 6.1**. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
 
 ### Expresión de visibilidad {#visibility-expression}
 
@@ -253,7 +253,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->En AEM, es recomendable escribir código en clientLib e incluirlo en la página (header.jsp o Football.jsp de la página)
+>En AEM, es recomendable escribir código en clientLib e incluirlo en la página (header.jsp o pie.jsp de la página)
 
 Para utilizar GuideBridge después de inicializar el formulario (se envía el `bridgeInitializeComplete` evento), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la `guideBride.isConnected` API.
 
@@ -281,9 +281,9 @@ Realice los siguientes pasos para crear un patrón personalizado para un tipo de
 1. Cree una carpeta para mantener los patrones personalizados. En el directorio /apps, cree un nodo de tipo sling:folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. En este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos patrones personalizados que desea agregar.
 1. Abra la ficha Propiedades del nodo creado. Por ejemplo, abra la ficha Propiedades de `textboxpatterns`. Añada la propiedad `guideComponentType` a este nodo y defina su valor en *fd/af/components/formatter/guideTextBox*.
 
-1. El valor de esta propiedad varía en función del campo para el que desee definir los patrones. Para el campo numérico, el valor de la `guideComponentType` propiedad es *fd/af/components/formatter/guideNumericBox*. El valor del campo Selector de datos es *fd/af/components/formatter/guideDatepicker*.
+1. El valor de esta propiedad varía según el campo para el que desee definir los patrones. Para el campo numérico, el valor de la `guideComponentType` propiedad es *fd/af/components/formatter/guideNumericBox*. El valor del campo Selector de datos es *fd/af/components/formatter/guideDatepicker*.
 &quot;
-1. Puede agregar un patrón personalizado asignando una propiedad al `textboxpatterns` nodo. Añada una propiedad con un nombre (por ejemplo `pattern1`) y defina su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El patrón está disponible para todos los cuadros de texto que se utilizan en formularios adaptables.
+1. Puede agregar un patrón personalizado asignando una propiedad al `textboxpatterns` nodo. Añada una propiedad con un nombre (por ejemplo `pattern1`) y defina su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El patrón está disponible para todos los cuadros de texto que se utilizan en Forms adaptable.
 
    ![Creación de patrones personalizados para campos en CrxDe](assets/creating-custom-patterns.png)
 
