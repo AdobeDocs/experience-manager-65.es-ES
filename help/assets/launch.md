@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 17%
@@ -133,7 +133,7 @@ Actualmente, la compatibilidad con el seguimiento de vídeo está limitada al se
 
 ## Uso de la extensión Visores de medios dinámicos {#using-the-dynamic-media-viewers-extension}
 
-Como se indica en los casos de [uso de la integración](#use%20cases%20for%20the%20integration), es posible rastrear los visores de Dynamic Media con la nueva integración de Adobe Launch en AEM Sites y mediante el uso de código incrustado.
+Como se indica en los casos de [uso de la integración](#use-cases-for-the-integration), es posible rastrear los visores de Dynamic Media con la nueva integración de Adobe Launch en AEM Sites y mediante el uso de código incrustado.
 
 ### Seguimiento de visores de medios dinámicos en AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -149,7 +149,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 Los clientes que no utilicen AEM Sites o incrusten visores de Dynamic Media en páginas web fuera de AEM Sites, o en ambas, pueden seguir utilizando la integración de Adobe Launch.
 
-Debe completar los pasos de configuración desde las secciones [Configuración de Adobe Analytics](#configuringadobeanalytics) y [Configuración de Adobe Launch](#configuringadobelaunch). Sin embargo, no es necesario realizar pasos de configuración relacionados con AEM.
+Debe completar los pasos de configuración desde las secciones [Configuración de Adobe Analytics](#configuring-adobe-analytics-for-the-integration) y [Configuración de Adobe Launch](#configuring-adobe-launch-for-the-integration). Sin embargo, no es necesario realizar pasos de configuración relacionados con AEM.
 
 Una vez configurada correctamente, puede añadir compatibilidad con Inicio de Adobe a una página web con un visor de Dynamic Media.
 
@@ -162,7 +162,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **Para realizar el seguimiento de los visores de Dynamic Media mediante código** incrustado:
 
 1. Tenga una página web lista para incrustar un visor de Dynamic Media.
-1. Obtenga el código incrustado de la biblioteca de lanzamiento de Adobe iniciando sesión en Inicio de Adobe en primer lugar (consulte [Configuración de inicio](#configuringadobelaunch)de Adobe).
+1. Obtenga el código incrustado de la biblioteca de lanzamiento de Adobe iniciando sesión en Inicio de Adobe en primer lugar (consulte [Configuración de inicio](#configuring-adobe-launch-for-the-integration)de Adobe).
 1. Haga clic en **[!UICONTROL Propiedad]** y, a continuación, en la ficha **[!UICONTROL Entornos]** .
 1. Recoge el nivel de Entorno relevante para el entorno de la página web. A continuación, en la columna **[!UICONTROL Instalar]** , haga clic en el icono del cuadro.
 1. **[!UICONTROL En el cuadro de diálogo Instrucciones]** de instalación web, copie el código incrustado completo de la biblioteca de inicio de Adobe, junto con las `<script/>` etiquetas que lo rodean.
@@ -231,7 +231,7 @@ Ahora, supongamos que el usuario final carga la página web con los dos visores.
 
 La actividad del usuario final resulta en que se realicen las dos llamadas de seguimiento siguientes a Adobe Analytics:
 
-* La primera llamada se produce porque la regla **[!UICONTROL TrackPan]** se activa cuando el usuario se desplaza en *viewer1*. Esa llamada envía el 50 % como valor del elemento de datos **[!UICONTROL ZoomScale]** porque el elemento de datos sabrá que la regla se activa con *viewer1* y obtiene el valor de escala correspondiente;
+* La primera llamada se produce porque la regla **[!UICONTROL TrackPan]** se activa cuando el usuario se desplaza a *viewer1*. Esa llamada envía el 50 % como valor del elemento de datos **[!UICONTROL ZoomScale]** porque el elemento de datos sabrá que la regla se activa mediante *viewer1* y obtiene el valor de escala correspondiente;
 * La segunda llamada se produce porque **[!UICONTROL TrackKey]** Rule se activa cuando el usuario pulsa una tecla en el teclado. Esa llamada envía el 25 % como valor del elemento de datos **[!UICONTROL ZoomScale]** porque el visor no activó la regla. Como tal, el elemento de datos devuelve el valor más actualizado.
 
 El ejemplo configurado arriba también afecta a la duración del valor del elemento de datos. El valor del elemento de datos administrado por el visor de medios dinámicos se almacena en el código de la biblioteca de inicio de Adobe incluso después de que el propio visor se haya eliminado de la página web. Esto significa que si hay una regla que se activa con una extensión que no es de Dynamic Media Viewer y hace referencia a dicho elemento de datos, el elemento de datos devuelve el último valor conocido, incluso si el visor ya no está presente en la página web.
@@ -483,7 +483,7 @@ Consulte también Guía [de implementación de Analytics](https://docs.adobe.com
 
 1. En general, la configuración de un informe en Adobe Analytics depende de las necesidades específicas del proyecto. Como tal, la configuración detallada del informe está fuera del alcance de esta integración.
 
-   Sin embargo, es suficiente para saber que los informes de tráfico personalizado estarán disponibles automáticamente en Adobe Analytics después de configurar las variables de tráfico personalizado en la **[configuración de las variables](#setting-up-adobe-analytics-variables)**de Adobe Analytics.
+   Sin embargo, es suficiente para saber que los informes de tráfico personalizado estarán disponibles automáticamente en Adobe Analytics después de configurar las variables de tráfico personalizado en la **[configuración de las variables](#setting-up-adobe-analytics-variables)** de Adobe Analytics.
 
    Por ejemplo: el informe para la variable de **[!UICONTROL recurso del visualizador (prop 30)]** está disponible en el menú Informes en **[!UICONTROL Tráfico personalizado > Tráfico personalizado 21-30 > Recurso del visualizador (prop 30)]**.
 
@@ -850,4 +850,4 @@ Sin embargo, se admite en el nodo de publicación AEM. Con la configuración pre
 
 Es posible solucionar esta limitación especificando la URL de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe en la configuración de Adobe Launch Cloud para AEM publicación anterior. Al hacer esto, el nodo de publicación AEM utiliza la versión de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe.
 
-Consulte [Integración de AEM con inicio de Adobe mediante E/S](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) de Adobe para obtener más información sobre la configuración de la nube de inicio de Adobe.
+Consulte [Integración de AEM con el lanzamiento de Adobe mediante E/S](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) de Adobe para obtener más información sobre la configuración de la nube de inicio de Adobe.
