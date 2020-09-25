@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1781'
+ht-degree: 89%
 
 ---
 
@@ -43,6 +46,7 @@ Las propiedades se distribuyen entre varias pestañas.
       * A continuación, la nueva etiqueta se mostrará con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
    * Con la función de lista desplegable, puede seleccionar etiquetas existentes.
    * Aparece una x cuando pasa el puntero sobre una entrada de etiqueta en el cuadro de selección; esto puede usarse para quitar esa etiqueta para esta página.
+
    Para obtener más información sobre las etiquetas, consulte [Utilizar etiquetas](/help/sites-authoring/tags.md).
 
 * **Ocultar en navegación**
@@ -98,7 +102,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    Indica si desea que la página use la URL de vanidad.
 
-### Avanzado   {#advanced}
+### Avanzado  {#advanced}
 
 * **Idioma**
 
@@ -150,7 +154,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)**tab allows editing of CUG configurations based on the presence of the`granite:AuthenticationRequired`mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of`cq:cugEnabled`property, a warning message will be shown under **Authentication Requirement**and the option will not be editable, nor will the[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)be editable.
+   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
    >
    >
    >En ese caso, los permisos de CUG se deben editar en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -163,7 +167,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    Especificar una configuración de exportación.
 
-### Miniatura   {#thumbnail}
+### Miniatura    {#thumbnail}
 
 Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
@@ -204,16 +208,16 @@ Define la variación de fragmentos de la experiencia que se utiliza para generar
 
 * **Configuración de ContextHub**
 
-   Seleccione la [configuración de ContextHub](/help/sites-administering/contexthub-config.md) y la [ruta de acceso de los segmentos](/help/sites-administering/segmentation.md).
+   Seleccione la [configuración de ContextHub](/help/sites-developing/ch-configuring.md) y la [ruta de acceso de los segmentos](/help/sites-administering/segmentation.md).
 
 * **Configuración de ámbito**
 
    Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-authoring/target-adobe-campaign.md).
 
    >[!NOTE]
-   >Esta opción requiere que la cuenta de usuario esté en el `Target Adminstrators`grupo.
+   >Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
 
-### Permisos   {#permissions}
+### Permisos    {#permissions}
 
 * **Permisos**
 
@@ -240,13 +244,13 @@ Define la variación de fragmentos de la experiencia que se utiliza para generar
 
    Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Live Copy**
 
    Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio   {#site-structure}
+### Estructura del sitio    {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
@@ -277,6 +281,7 @@ Tocando o haciendo clic en **Propiedades** para definir las propiedades de la p�
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-authoring/basic-handling.md#selectionmode)
+
    Las propiedades de página se mostrarán mediante las pestañas adecuadas.
 
 1. Visualice o edite las propiedades según sea oportuno. 
@@ -348,6 +353,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 
       * En el modo Ver solo se muestran las propiedades con un valor común.
       * Cuando el campo admite varios valores (por ejemplo, etiquetas), los valores solo se mostrarán si *todos* son comunes. Si solo son comunes algunos de ellos, solo se mostrarán en el momento de editar.
+
    Cuando no existen propiedades con un valor común, se muestra un mensaje. 
 
 * **Editar**
