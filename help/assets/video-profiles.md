@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 20%
@@ -226,7 +226,7 @@ To help you visualize the size of the video, tap the Height&#39;s information ic
    * Toque la ficha **[!UICONTROL Avanzado]** y asegúrese de que la casilla de verificación **[!UICONTROL Usar valores]** predeterminados está activada (recomendado).
 
    * Desactive la casilla de verificación **[!UICONTROL Usar valores]** predeterminados y especifique los ajustes de vídeo y audio que desee.
-
+Toque el icono de información situado junto a cada opción para obtener descripciones adicionales o ajustes recomendados en función del códec de formato de vídeo seleccionado.
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
 1. Realice una de las acciones siguientes:
@@ -373,7 +373,7 @@ Las carpetas que tienen asignado un perfil se indican en la interfaz de usuario 
 
 Puede aplicar perfiles de vídeo a carpetas específicas o globalmente a todos los recursos.
 
-Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
 ### Aplicación de un perfil de vídeo a carpetas específicas {#applying-video-profiles-to-specific-folders}
 
@@ -381,7 +381,7 @@ Puede aplicar un perfil de vídeo a una carpeta desde el menú **[!UICONTROL Her
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 #### Aplicación de un perfil de vídeo a las carpetas mediante la interfaz de usuario de Perfiles {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -402,7 +402,7 @@ Puede [supervisar el progreso de un trabajo](#monitoring-the-progress-of-an-enco
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en AEM recursos de cualquier carpeta tenga el perfil seleccionado aplicado.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 **Para aplicar un perfil de vídeo de forma global**,
 
