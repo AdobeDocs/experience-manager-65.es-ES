@@ -1,17 +1,17 @@
 ---
 title: Tablas en formularios adaptables
 seo-title: Tablas en formularios adaptables
-description: El componente Tabla de los AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
-seo-description: El componente Tabla de los AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
+description: El componente Tabla de AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
+seo-description: El componente Tabla de AEM Forms permite crear tablas en formularios adaptables que responden a diseños móviles y también permite utilizar componentes de tabla XDP.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
@@ -30,14 +30,14 @@ AEM Forms proporciona un componente Tabla en el navegador de componentes de la b
 * Accesible para lectores de pantalla
 * Diseño personalizado con CSS
 * Compatible y asignado al componente de tabla XDP
-* Compatibilidad con la adición de filas o celdas mediante elementos de tipo complejo XSD
+* Compatibilidad para agregar filas o celdas mediante elementos de tipo complejo XSD
 * Combinar datos de un archivo XML
 
 ## Cree una tabla {#create-a-table}
 
 Para crear una tabla, arrastre y suelte el componente Tabla desde el navegador de componentes en la barra de tareas del formulario adaptable. De forma predeterminada, la tabla contiene dos columnas y tres filas, incluida la fila de encabezado.
 
-![Componente de tabla en la barra lateral de AEM](assets/sidebar-tables.png)
+![Componente de tabla en AEM barra lateral](assets/sidebar-tables.png)
 
 ### Acerca del encabezado y las celdas de cuerpo {#about-header-and-body-cells}
 
@@ -137,7 +137,7 @@ En tiempo de ejecución, verá **+** y *-* para agregar o eliminar una fila.
 
 >[!NOTE]
 >
->No se admite Añadir o eliminar una fila dinámicamente en los encabezados en el diseño de tablas para móviles a la izquierda.
+>No se admite añadir o eliminar una fila dinámicamente en los encabezados en el diseño de tablas para móviles a la izquierda.
 
 ## Expresiones de una tabla {#expressions-in-a-table}
 
@@ -153,13 +153,13 @@ Mientras que las tablas y las filas solo admiten expresiones de visibilidad para
 >Si la secuencia de comandos de cambio/salida XFA también se aplica al mismo campo, la secuencia de comandos de cambio/salida XFA se ejecuta antes que la secuencia de comandos de confirmación de valor.
 
 * **Calcular expresiones**: para calcular automáticamente el valor de un campo.
-* **expresiones** de validación: para validar un campo.
-* **expresiones** de acceso: para activar o desactivar un campo.
-* **expresión** de visibilidad: para controlar la visibilidad de un campo y un panel.
+* **Expresiones** de validación: para validar un campo.
+* **Expresiones** de acceso: para activar o desactivar un campo.
+* **Expresión** de visibilidad: para controlar la visibilidad de un campo y un panel.
 
 La expresión de visibilidad de una tabla o fila se puede definir en la ficha Propiedades del panel del cuadro de diálogo del componente Editar correspondiente. Las expresiones de una celda se pueden definir en la ficha Secuencia de comandos del cuadro de diálogo Editar componente.
 
-Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptables.
+Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adaptables.
 
 ## Diseños móviles {#mobile-layouts}
 
@@ -173,11 +173,11 @@ En el diseño Encabezados de la izquierda, el encabezado de la tabla se transpon
 
 ![vista de escritorio](assets/desktopview_new.png)
 
-vista de escritorio de una tabla con Encabezado en el diseño izquierdo
+Vista de escritorio de una tabla con Encabezado en el diseño izquierdo
 
 ![Encabezados a la izquierda](assets/headersontheleft_new.png)
 
-vista móvil de una tabla con Encabezado en el diseño izquierdo
+Vista móvil de una tabla con Encabezado en el diseño izquierdo
 
 ### Diseño de columnas contraíble {#collapsible-columns-layout}
 
@@ -199,7 +199,7 @@ Columna ampliada de una tabla en un dispositivo móvil
 
 ## Combinar datos en una tabla {#merge-data-in-a-table}
 
-Las tablas de formularios adaptables permiten rellenar la tabla en tiempo de ejecución utilizando datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo en el que se ejecuta el servidor de AEM Forms o en el repositorio de CRX.
+Las tablas de formularios adaptables permiten rellenar la tabla en tiempo de ejecución utilizando datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo en el que se ejecuta AEM Forms Server o en el repositorio de CRX.
 
 Veamos un ejemplo de la siguiente tabla de resumen de transacciones bancarias que queremos rellenar con datos de un archivo XML.
 
@@ -271,7 +271,7 @@ El archivo XML que contiene datos con el siguiente formato:
 </afData>
 ```
 
-En el XML de ejemplo, los datos de una fila se definen mediante las `<Row1>` etiquetas, que es el nombre del elemento de la fila de la tabla. Dentro de la `<Row1>` etiqueta, los datos de cada celda se definen dentro de la etiqueta para su nombre de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`y `<type>`.
+En el XML de ejemplo, los datos de una fila se definen mediante las `<Row1>` etiquetas, que es el nombre del elemento de la fila de la tabla. Dentro de la `<Row1>` etiqueta, los datos de cada celda se definen dentro de la etiqueta para el nombre del elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`y `<type>`.
 
 Para combinar estos datos con la tabla en tiempo de ejecución, es necesario que señalemos el formulario adaptable que contiene la tabla a la ubicación XML absoluta con wcmmode desactivado. Por ejemplo, si el formulario adaptable se encuentra en *https://localhost:4502/myForms/bankTransaction.html* y el archivo XML de datos se guarda en *C:/myTransactions/bankSummary.xml*, puede vista de la tabla con datos en la siguiente URL:
 
@@ -281,7 +281,7 @@ Para combinar estos datos con la tabla en tiempo de ejecución, es necesario que
 
 ## Utilizar componentes XDP y tipos complejos XSD {#use-xdp-components-and-xsd-complex-types}
 
-Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la ficha Modelo de datos de AEM Content Finder. Puede arrastrar y soltar estos elementos XFA, incluidas las tablas, en el formulario adaptable.
+Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la ficha Modelo de datos de AEM Buscador de contenido. Puede arrastrar y soltar estos elementos XFA, incluidas las tablas, en el formulario adaptable.
 
 El elemento de tabla XFA se asigna al componente Tabla y funciona de forma predeterminada en formularios adaptables. Todas las propiedades y funcionalidades de la tabla XDP se conservan cuando se mueven a un formulario adaptable, y puede realizar cualquier operación en ella al igual que con la tabla de formulario adaptable nativa. Por ejemplo, si una fila de una tabla XDP está marcada como repetible, también se repetirá cuando se suelte en formularios adaptables.
 
@@ -302,7 +302,7 @@ Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD par
 ## Consideraciones clave {#key-considerations}
 
 * Si mueve filas hacia arriba y hacia abajo durante la creación de una tabla basada en XSD, se verá cierta pérdida de datos de las filas de tabla en el XML de datos generado al enviar el formulario.
-* Cada celda de cuerpo de una tabla predeterminada tiene un nombre de elemento predefinido asociado. Si agrega otra tabla en el formulario adaptable, las celdas de cuerpo predeterminadas de la nueva tabla tendrán el mismo nombre de elemento que en la primera tabla. En este caso, los datos generados al enviar el formulario incluirán datos en las celdas de cuerpo predeterminadas de sólo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos para las celdas de cuerpo predeterminadas a fin de mantenerlos únicos en todas las tablas y evitar la pérdida de datos.
+* Cada celda de cuerpo de una tabla predeterminada tiene un nombre de elemento predefinido asociado. Si agrega otra tabla en el formulario adaptable, las celdas de cuerpo predeterminadas de la nueva tabla tendrán el mismo nombre de elemento que en la primera tabla. En este escenario, los datos generados al enviar el formulario incluirán datos en las celdas de cuerpo predeterminadas de sólo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos para las celdas de cuerpo predeterminadas a fin de mantenerlos únicos en todas las tablas y evitar la pérdida de datos.
 
    Tenga en cuenta que esto solo se aplica a las celdas de cuerpo predeterminadas. Si agrega más filas o columnas a una tabla, se generarán automáticamente nombres de elementos únicos para celdas de cuerpo no predeterminadas.
 
