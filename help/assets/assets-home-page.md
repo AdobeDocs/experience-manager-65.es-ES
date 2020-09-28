@@ -1,17 +1,17 @@
 ---
-title: Experiencia de Página de inicio de [!DNL Adobe Experience Manager Assets].
+title: '[!DNL Assets] Experiencia de Página de inicio'
 description: Personalice [!DNL Experience Manager Assets] la página principal para disfrutar de una experiencia de pantalla de bienvenida completa, incluida una instantánea de las actividades recientes sobre los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] Experiencia de Página de inicio {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Experiencia de página de inicio {#aem-assets-home-page-experience}
 
 Personalice la [!DNL Adobe Experience Manager Assets] página de inicio para disfrutar de una amplia experiencia en la pantalla de bienvenida, incluida una instantánea de las actividades recientes sobre los recursos.
 
