@@ -1,9 +1,9 @@
 ---
-title: Oferta de [!DNL Adobe Experience Manager Assets] comparación y biblioteca de medios.
+title: Ofertas de [!DNL Assets] comparación y biblioteca de medios
 description: ' [!DNL Experience Manager Assets] Comparar y Biblioteca de medios ofrece y conoce las diferencias.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 2%
@@ -81,12 +81,12 @@ En este caso de uso no es necesario comprar [!DNL Assets], incluso el uso de la 
 * Gestión de derechos
 * Asistencia Camera Raw
 * Administración y configuración de facetas de búsqueda
-* flujos de trabajo DAM previamente compilados (por ejemplo, sesión fotográfica)
-* sistema de informes y análisis de recursos llamados perspectivas
+* Flujos de trabajo DAM previamente compilados (por ejemplo, sesión fotográfica)
+* Sistema de informes y análisis de recursos llamados perspectivas
 * Gestión de activos 3D
 * Recursos conectados
 * Brand Portal
-* Acceso a autoservicio
+* Acceso de autoservicio
 * Explorar, buscar y descargar
 * Colecciones y uso compartido de carpetas
 * Herramientas de administración e interfaz
@@ -100,7 +100,7 @@ En este caso de uso no es necesario comprar [!DNL Assets], incluso el uso de la 
 * Control de versiones
 * Representaciones estáticas
 * Proyectos, tareas, creación de flujos de trabajo
-* Flujo de Actividad (escala de tiempo)
+* Flujo de actividad (escala de tiempo)
 * Consulta Builder (API)
 * Integración de Marketing Cloud
 * Personalización y extensión de la interfaz de usuario
