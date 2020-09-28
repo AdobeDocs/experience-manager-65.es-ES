@@ -10,9 +10,9 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '3075'
+source-wordcount: '3115'
 ht-degree: 3%
 
 ---
@@ -146,7 +146,7 @@ Permite arrastrar y soltar elementos del modelo de formulario en el formulario a
   </tr>
   <tr>
    <td>Adjuntar archivo</td>
-   <td><p>Añade un botón que permite a los usuarios examinar y adjuntar documentos de apoyo a un formulario.</p> <p><strong>Nota: </strong>El componente Archivo adjunto admite un conjunto predefinido de formatos de archivo en formularios adaptables activados para Adobe Sign. Para obtener más información, consulte Formatos <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">de archivo</a>admitidos.</p> </td>
+   <td><p>Añade un botón que permite a los usuarios examinar y adjuntar documentos de apoyo a un formulario. Puede adjuntar varios archivos a un componente Archivo adjunto.</p> <p><strong> Nota: </strong><ul> <li> Para adjuntar varios archivos a un componente de archivo adjunto abierto en el navegador Apple Safari, seleccione y adjunte archivos uno a uno. No puede seleccionar y adjuntar varios archivos a la vez.</li> <li>El componente Archivo adjunto admite un conjunto predefinido de formatos de archivo en formularios adaptables activados para Adobe Sign. Para obtener más información, consulte Formatos <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">de archivo</a>admitidos. </li> </ul></p> </td>
   </tr>
   <tr>
    <td>Lista de archivos adjuntos</td>
