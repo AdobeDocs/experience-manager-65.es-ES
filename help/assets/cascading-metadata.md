@@ -1,9 +1,9 @@
 ---
-title: Metadatos en cascada en [!DNL Adobe Experience Manager Assets].
+title: Metadatos en cascada en [!DNL Assets]
 description: En este artículo se describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 6%
