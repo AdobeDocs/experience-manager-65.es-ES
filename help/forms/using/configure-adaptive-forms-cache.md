@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
+source-git-commit: d5a649337acdc01c58ecc473e7c919e06cbd0188
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -127,7 +127,8 @@ Siga los pasos que se indican a continuación para habilitar y configurar la cac
       # added for AEM forms specific use cases.
       /0003 { /glob "dataRef" /type "allow" }
       }
-   
+   ```
+
 El entorno de AEM está configurado para almacenar en caché formularios adaptables. Almacena en caché todos los tipos de formularios adaptables. Si necesita comprobar los permisos de acceso de los usuarios para una página antes de entregar la página en caché, consulte [Almacenamiento en caché de contenido](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html)seguro.
 
 ## Solución de problemas {#troubleshooting}
