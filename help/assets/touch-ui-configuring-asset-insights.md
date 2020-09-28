@@ -1,11 +1,11 @@
 ---
-title: Configure las perspectivas de recursos para obtener análisis de uso de recursos digitales.
+title: Configure las perspectivas de recursos para obtener análisis.
 description: Configurar perspectivas de recursos en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '228'
 ht-degree: 7%
 
 ---
