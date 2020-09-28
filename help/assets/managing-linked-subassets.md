@@ -1,11 +1,11 @@
 ---
-title: Administre recursos compuestos con referencias y recursos de varias páginas en [!DNL Adobe Experience Manager].
+title: Administrar recursos compuestos con referencias y varias páginas
 description: Aprenda a crear referencias a recursos digitales desde dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Específicamente para documentos de Microsoft Word, ejecute el flujo de trabajo 
 
 Los subrecursos solo se muestran si se generan y están disponibles para el recurso de varias páginas seleccionado. Para vista de los subrecursos generados, abra el recurso de varias páginas. En el área superior izquierda de la página, haga clic en ![Opción para abrir el carril](assets/do-not-localize/aem_leftrail_contentonly.png) izquierdo y haga clic en **[!UICONTROL Subrecursos]** desde la lista. Al seleccionar **[!UICONTROL Subrecursos]** en la lista. Como alternativa, utilice el método abreviado de teclado `alt + 5`.
 
-![Subrecursos de Vista para un recurso de varias páginas](assets/view_subassets_simulation.gif)
+![Subrecursos de vista para un recurso de varias páginas](assets/view_subassets_simulation.gif)
 
 ## Vista de páginas de un archivo de varias páginas {#view-pages-of-a-multi-page-file}
 
