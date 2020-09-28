@@ -1,11 +1,11 @@
 ---
-title: Procesar recursos para llevar a cabo procesos de negocios, realizar auditorías, lograr cumplimiento de normas y mantener la solidez básica
+title: Procesar recursos con flujos de trabajo
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '975'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ## Comprender los flujos de trabajo {#understand-workflows}
 
-Para el procesamiento de recursos, [!DNL Experience Manager] utiliza flujos de trabajo. Los Flujos de trabajo ayudan a automatizar las actividades o la lógica empresarial. De forma predeterminada, se proporcionan pasos granulares para realizar tareas específicas y los desarrolladores pueden crear sus propios pasos personalizados. Estos pasos se pueden combinar en un orden lógico para crear flujos de trabajo. Por ejemplo, un flujo de trabajo puede aplicar una marca de agua a las imágenes cargadas según criterios específicos, como la carpeta en la que se carga, la resolución de la imagen, etc. Otro ejemplo es un flujo de trabajo configurado para marcar con agua y agregar metadatos simultáneamente, crear representaciones, agregar etiquetas inteligentes y publicar en un almacén de datos.
+Para el procesamiento de recursos, [!DNL Experience Manager] utiliza flujos de trabajo. Los flujos de trabajo ayudan a automatizar las actividades o la lógica empresarial. De forma predeterminada, se proporcionan pasos granulares para realizar tareas específicas y los desarrolladores pueden crear sus propios pasos personalizados. Estos pasos se pueden combinar en un orden lógico para crear flujos de trabajo. Por ejemplo, un flujo de trabajo puede aplicar una marca de agua a las imágenes cargadas según criterios específicos, como la carpeta en la que se carga, la resolución de la imagen, etc. Otro ejemplo es un flujo de trabajo configurado para marcar con agua y agregar metadatos simultáneamente, crear representaciones, agregar etiquetas inteligentes y publicar en un almacén de datos.
 
-## flujos de trabajo predeterminados disponibles en [!DNL Experience Manager] {#default-workflows}
+## Flujos de trabajo predeterminados disponibles en [!DNL Experience Manager] {#default-workflows}
 
 De forma predeterminada, todos los recursos cargados se procesan mediante el flujo de trabajo Actualizar recursos  DAM. El flujo de trabajo se ejecuta para cada recurso cargado y lleva a cabo tareas básicas de administración de recursos, como la generación de representaciones, la reescritura de metadatos, la extracción de páginas, la extracción de medios y la transcodificación.
 
@@ -86,7 +86,7 @@ El procedimiento para aplicar un flujo de trabajo a varias carpetas es similar a
 
 Consulte [Aplicación de un flujo de trabajo a una colección](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
 
-## inicio automático de un flujo de trabajo para procesar los recursos de forma condicional {#auto-execute-workflow-on-some-assets}
+## Inicio automático de un flujo de trabajo para procesar los recursos de forma condicional {#auto-execute-workflow-on-some-assets}
 
 Los administradores pueden configurar el flujo de trabajo para ejecutar y procesar automáticamente recursos en función de condiciones predefinidas. La funcionalidad es útil para usuarios de la línea de negocios y especialistas en mercadotecnia, por ejemplo, para crear un flujo de trabajo personalizado en carpetas específicas. Supongamos que todos los activos de la sesión fotográfica de una agencia se pueden marcar con agua o que todos los recursos cargados por un operador independiente se pueden procesar para crear representaciones específicas.
 
