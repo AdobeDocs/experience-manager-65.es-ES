@@ -1,11 +1,11 @@
 ---
-title: Añadir mapas de imagen con hipervínculos a imágenes digitales
+title: Añadir mapas de imagen con hipervínculos
 description: Aprenda a añadir mapas de imagen con hipervínculos a una imagen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ Los mapas de imagen le permiten agregar una o más áreas con hipervínculos que
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Si la opción Dynamic Media está activada, vaya al editor de recursos y haga clic en **[!UICONTROL Asignar]** para vista de todos los mapas de imagen aplicados.
+   Si la opción Medios dinámicos está activada, vaya al editor de recursos y haga clic en **[!UICONTROL Asignar]** para vista de todos los mapas de imagen aplicados.
