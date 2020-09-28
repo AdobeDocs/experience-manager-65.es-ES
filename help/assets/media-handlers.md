@@ -1,11 +1,11 @@
 ---
-title: Procesar recursos con controladores de medios y flujos de trabajo en [!DNL Adobe Experience Manager].
+title: Procesar recursos con controladores de medios y flujos de trabajo
 description: Obtenga información sobre los controladores de medios y cómo utilizar flujos de trabajo para realizar tareas en los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2108'
 ht-degree: 4%
 
 ---
@@ -103,7 +103,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. Para Añadir un nuevo tipo MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. Para añadir un nuevo tipo MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
 * Clase `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad común utilizada, además de una funcionalidad común utilizada para la extracción de subrecursos.
@@ -122,7 +122,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. Para Añadir un nuevo tipo MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. Para añadir un nuevo tipo MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad común utilizada, además de una funcionalidad común utilizada para la extracción de subrecursos.
 
