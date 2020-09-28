@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Assets] consideraciones y requisitos de red.'
+title: Consideraciones y requisitos de la red
 description: Analiza las consideraciones de red al diseñar [!DNL Adobe Experience Manager Assets] e implementar.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Asegúrese de incluir lo siguiente en el diagrama de red:
 * Vínculo ascendente a Internet desde la red corporativa y el [!DNL Experience Manager] entorno.
 * Topología del [!DNL Experience Manager] entorno.
 * Definir consumidores simultáneos de la interfaz de [!DNL Experience Manager] red.
-* flujos de trabajo definidos de la [!DNL Experience Manager] implementación.
+* Flujos de trabajo definidos de la [!DNL Experience Manager] implementación.
 
 ## Conectividad desde el dispositivo cliente a la red corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
 Comience creando un diagrama de la conectividad entre los dispositivos cliente individuales y la red corporativa. En este momento, identifique los recursos compartidos, como las conexiones Wi-Fi, donde varios usuarios acceden al mismo punto o conmutador Ethernet para cargar y descargar recursos.
 
-![chlimage_1-355](assets/chlimage_1-353.png)
+![chlimage_1-353](assets/chlimage_1-353.png)
 
 Los dispositivos cliente se conectan a la red corporativa de diversas maneras, como WiFi compartido, Ethernet a un conmutador compartido y VPN. Identificar y comprender los puntos de chokepoint en esta red es importante para [!DNL Assets] planificar y modificar la red.
 
@@ -68,7 +68,7 @@ En los diagramas de ejemplo, puede concluir que seis dispositivos comparten un c
 
 El diseño de la topología del [!DNL Experience Manager] entorno requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
 
-El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurado.
+El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurados.
 
 El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la [!DNL Experience Manager] implementación. Para las operaciones de carga y descarga simultáneas, debe dividir este número por dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
@@ -76,7 +76,7 @@ La implementación [!DNL Experience Manager] comparte su conexión de 1 Gbps con
 
 Al revisar la red desde el dispositivo cliente hasta la implementación, el punto de interrupción más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. [!DNL Experience Manager] Puede utilizar estos valores en la calculadora de tamaño de la Guía [de cambio de tamaño de](assets-sizing-guide.md) recursos para determinar la experiencia del usuario.
 
-## flujos de trabajo definidos de la implementación [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
+## Flujos de trabajo definidos de la implementación [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
 
 Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, S3 u otro almacenamiento conectado a la red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
 
@@ -91,10 +91,10 @@ Al evaluar la topología del flujo de trabajo interno, debe analizar lo siguient
 Estos son algunos de los temas a considerar:
 
 * XMP de lectura y escritura de metadatos
-* activación y replicación automáticas
+* Activación y replicación automáticas
 * Marcas de agua
-* extracción de página/ingestión de subconjuntos
-* flujos de trabajo superpuestos.
+* Extracción de página/ingestión de subconjuntos
+* Flujos de trabajo superpuestos.
 
 Este es un ejemplo de cliente para la definición de un flujo de trabajo de recursos.
 
