@@ -1,11 +1,11 @@
 ---
-title: Prácticas recomendadas para procesar los distintos formatos de archivo admitidos mediante [!DNL Adobe Experience Manager Assets].
+title: Prácticas recomendadas para procesar los formatos de archivo admitidos
 description: Prácticas recomendadas para procesar los distintos tipos de archivos admitidos mediante [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->Si utiliza [!DNL Experience Manager] Adobes Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
+>Si utiliza [!DNL Experience Manager] los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Trabaje con el representante del Servicio de atención al cliente de Adobe para implementar estas optimizaciones para la implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
 
@@ -27,17 +27,17 @@ Para un rendimiento óptimo, Adobe recomienda utilizar [!DNL Adobe Camera Raw] l
 
 [!DNL Adobe Camera Raw] la biblioteca admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en espacio de color RGB y admite la salida en formato JPEG solamente. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
 
-Para obtener más información, consulte Compatibilidad con [Camera Raw](/help/assets/camera-raw.md).
+Para obtener más información, consulte Compatibilidad [Camera Raw](/help/assets/camera-raw.md).
 
-## Biblioteca de Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
+## Biblioteca Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
-Para obtener los mejores resultados, Adobe recomienda utilizar la biblioteca Rasterizer de Adobe PDF para los siguientes archivos:
+Para obtener los mejores resultados, Adobe recomienda utilizar la biblioteca Adobe PDF Rasterizer para los siguientes archivos:
 
 * Archivos PDF pesados y con gran contenido
 * Archivos AI con miniaturas no generados de forma predeterminada
 * Para archivos AI con colores SPOT (PMS)
 
-Las miniaturas y previsualizaciones que se generan con el rasterizador de PDF son de mejor calidad en comparación con la salida de rasterizado lista para usar. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer solo genera salida RGB.
+Las miniaturas y previsualizaciones que se generan con el rasterizador de PDF son de mejor calidad en comparación con la salida de rasterizado lista para usar. La biblioteca Rasterizer de Adobe PDF no admite ninguna conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer sólo genera salida RGB.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
@@ -62,7 +62,7 @@ Para saber cómo configurar la [!DNL ImageMagick] biblioteca en [!DNL Experience
 
 ## Biblioteca de transcodificación de imágenes {#image-transcoding-library}
 
-La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes que realiza funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo, cambio de tamaño, etc.
+La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes que realiza funciones básicas de gestión de imágenes, como codificación de imágenes, transcodificación, remuestreo, cambio de tamaño, etc.
 
 La biblioteca de transcodificación de imágenes admite los siguientes tipos MIME:
 
