@@ -1,8 +1,8 @@
 ---
-title: 'Flujo de trabajo centrado en formularios en OSGi: referencia de pasos'
-seo-title: 'Flujo de trabajo centrado en formularios en OSGi: referencia de pasos'
-description: El flujo de trabajo centrado en formularios en los pasos de OSGi permite crear rápidamente flujos de trabajo basados en formularios adaptables.
-seo-description: El flujo de trabajo centrado en formularios en los pasos de OSGi permite crear rápidamente flujos de trabajo basados en formularios adaptables.
+title: 'Flujo de trabajo centrado en Forms en OSGi: referencia de pasos'
+seo-title: 'Flujo de trabajo centrado en Forms en OSGi: referencia de pasos'
+description: El flujo de trabajo centrado en Forms en los pasos de OSGi le permite crear rápidamente flujos de trabajo basados en formularios adaptables.
+seo-description: El flujo de trabajo centrado en Forms en los pasos de OSGi le permite crear rápidamente flujos de trabajo basados en formularios adaptables.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 contentOwner: null
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,19 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
 workflow-type: tm+mt
-source-wordcount: '7077'
+source-wordcount: '7109'
 ht-degree: 0%
 
 ---
 
 
-# Flujo de trabajo centrado en formularios en OSGi: referencia de pasos{#forms-centric-workflow-on-osgi-step-reference}
+# Flujo de trabajo centrado en Forms en OSGi: referencia de pasos{#forms-centric-workflow-on-osgi-step-reference}
 
-## Pasos del flujo de trabajo de formularios {#forms-workflow-steps}
+## Pasos del Forms Workflow {#forms-workflow-steps}
 
-Los pasos del flujo de trabajo de formularios realizan operaciones específicas para AEM Forms en un flujo de trabajo de AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en un flujo de trabajo centrado en formularios en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, procesos comerciales internos y entre servidores de seguridad. También puede utilizar los pasos de Flujo de trabajo de Forms para inicio de servicios de documento, integrarlos con el flujo de trabajo de firma de Adobe Sign y realizar otras operaciones de AEM Forms. Es necesario que el complemento [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms utilice estos pasos en un flujo de trabajo.
+Los pasos del flujo de trabajo de Forms realizan operaciones específicas de AEM Forms en un flujo de trabajo AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en un flujo de trabajo centrado en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, procesos comerciales internos y entre servidores de seguridad. También puede utilizar los pasos de Forms Workflow para inicio de servicios de documento, integrarlos con el flujo de trabajo de firma de Adobe Sign y realizar otras operaciones de AEM Forms. Debe utilizar [AEM Forms Add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) para utilizar estos pasos en un flujo de trabajo.
 
 ## Assign task step {#assign-task-step}
 
@@ -30,18 +30,18 @@ El paso de asignación de tarea crea una tarea y la asigna a un usuario o grupo.
 
 También puede utilizar el componente para controlar el comportamiento de la tarea. Por ejemplo, crear un documento de registro automático, asignar la tarea a un usuario o grupo específico, especificar la ruta de los datos enviados, especificar la ruta de los datos que se van a rellenar previamente y especificar las acciones predeterminadas. El paso Asignar Tarea tiene las siguientes propiedades:
 
-* **Título:** Título de la tarea. El título se muestra en la Bandeja de entrada de AEM.
+* **Título:** Título de la tarea. El título se muestra en AEM Bandeja de entrada.
 * **Descripción:** Explicación de las operaciones que se realizan en la tarea. Esta información resulta útil para otros desarrolladores de procesos cuando trabaja en un entorno de desarrollo compartido.
 
 * **Ruta de miniaturas:** Ruta de la miniatura de la tarea. Si no se especifica ninguna ruta, se muestra una miniatura predeterminada de formulario adaptable y, en Documento de Grabar, se muestra un icono predeterminado.
-* **Etapa de flujo de trabajo:** Un flujo de trabajo puede tener varias etapas. Estas etapas se muestran en la Bandeja de entrada de AEM. Puede definir estas etapas en las propiedades del modelo (barra de tareas > Página > Propiedades de la página > Fases).
-* **Prioridad:** La prioridad seleccionada se muestra en la Bandeja de entrada de AEM. Las opciones disponibles son Alta, Media y Baja. El valor predeterminado es Medio.
+* **Etapa de flujo de trabajo:** Un flujo de trabajo puede tener varias etapas. Estas etapas se muestran en la Bandeja de entrada AEM. Puede definir estas etapas en las propiedades del modelo (barra de tareas > Página > Propiedades de la página > Fases).
+* **Prioridad:** La prioridad seleccionada se muestra en la Bandeja de entrada AEM. Las opciones disponibles son Alta, Media y Baja. El valor predeterminado es Medio.
 * **Fecha de vencimiento:** Especifique el número de días u horas después de los cuales se marca la tarea como retrasada. Si selecciona **Desactivado**, la tarea nunca se marca como vencida. También puede especificar un controlador de tiempo de espera para realizar tareas específicas después de que la tarea haya vencido.
 
 * **Días:** Número de días antes de los cuales se completará la tarea. El número de días se contabiliza después de que la tarea se asigne a un usuario. Si una tarea no está completa y sobrepasa el número de días especificado en el campo Días, se activa un controlador de tiempo de espera después de la fecha de vencimiento.
 * **Horas:** Número de horas antes de las cuales se completará la tarea. El número de horas se contabiliza después de que la tarea se asigne a un usuario. Si una tarea no está completa y sobrepasa el número de horas especificado en el campo Horas, si se selecciona, se activa un controlador de tiempo de espera después de las horas de vencimiento.
 * **Tiempo de espera después de la fecha de vencimiento:** Seleccione esta opción para activar el campo de selección Controlador de tiempo de espera.
-* **Controlador de tiempo de espera:** Seleccione la secuencia de comandos que se va a ejecutar cuando el paso de asignación de tarea sobrepase la fecha de vencimiento. Los scripts colocados en el repositorio de CRX en [apps]/fd/panel/scripts/timeoutHandler están disponibles para su selección. La ruta especificada no existe en crx-repository. Un administrador crea la ruta antes de utilizarla.
+* **Controlador de tiempo de espera:** Seleccione la secuencia de comandos que se va a ejecutar cuando el paso de asignación de tarea sobrepase la fecha de vencimiento. Los scripts colocados en el repositorio de CRX en [apps]/fd/panel/scripts/timeoutHandler están disponibles para su selección. La ruta especificada no existe en crx-repository. Un administrador crea la ruta antes de usarla.
 * **Resalte la acción y el comentario de la última tarea en Detalles de Tarea:** Seleccione esta opción para mostrar la última acción realizada y los comentarios recibidos en la sección de detalles de tarea de una tarea.
 * **Tipo:** Elija el tipo de documento que se va a rellenar al iniciar el flujo de trabajo. Puede elegir un formulario adaptable, un formulario adaptable de solo lectura, un documento PDF no interactivo, una interfaz de usuario del agente de comunicación interactiva o un Documento de Canal web de comunicación interactiva.
 * **Utilizar formulario adaptable:** Especifique el método para localizar el formulario adaptable de entrada. Esta opción está disponible si selecciona Formulario adaptable o Formulario adaptable de sólo lectura en la lista desplegable Tipo. Puede utilizar el formulario adaptable enviado al flujo de trabajo, disponible en una ruta absoluta o disponible en una ruta de acceso en una variable. Puede utilizar una variable de tipo String para especificar la ruta.\
@@ -51,14 +51,14 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 >[!NOTE]
 >
->Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en la bandeja de entrada de AEM.
+>Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.
 
 * **Formulario adaptable o Ruta** de comunicación interactiva: Especifique la ruta del formulario adaptable o la comunicación interactiva. Puede utilizar el formulario adaptable o la comunicación interactiva que se envía al flujo de trabajo, disponible en una ruta absoluta, o recuperar el formulario adaptable de una ruta almacenada en una variable de tipo de datos de cadena.
-* **Seleccione el PDF de entrada mediante:** Especifique la ruta de un documento PDF no interactivo. El campo está disponible cuando se selecciona un documento PDF no interactivo en el campo Tipo. Puede seleccionar el PDF de entrada utilizando la ruta relativa a la carga útil, guardada en una ruta absoluta o utilizando una variable de tipo de datos de Documento. Por ejemplo, [Payload_Directory]/Workflow/PDF/credit-card.pdf. La ruta no existe en crx-repository. Un administrador crea la ruta antes de utilizarla. Se requiere una opción Documento de registro activada o formularios adaptables basados en plantillas de formulario para utilizar la opción Ruta de PDF.
+* **Seleccione el PDF de entrada mediante:** Especifique la ruta de un documento PDF no interactivo. El campo está disponible cuando se selecciona un documento PDF no interactivo en el campo Tipo. Puede seleccionar el PDF de entrada utilizando la ruta relativa a la carga útil, guardada en una ruta absoluta o utilizando una variable de tipo de datos de Documento. Por ejemplo, [Payload_Directory]/Workflow/PDF/credit-card.pdf. La ruta no existe en crx-repository. Un administrador crea la ruta antes de usarla. Se requiere una opción Documento de registro activada o formularios adaptables basados en plantillas de formulario para utilizar la opción Ruta de PDF.
 * **Para la tarea completada, procese el formulario adaptable como**: Cuando se marca una tarea como completa, el formulario adaptable se puede representar como un formulario adaptable de sólo lectura o como un documento PDF. Se requiere un Documento de la opción Registro activado o formularios adaptables basados en plantilla para procesar el formulario adaptable como Documento de registro.
 * **Completado previamente:** Los siguientes campos que se enumeran a continuación sirven como entradas para la tarea:
 
-   * **Seleccione el archivo de datos de entrada mediante:** Ruta del archivo de datos de entrada (.json,. xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo de datos Documento, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación AEM Inbox. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
+   * **Seleccione el archivo de datos de entrada mediante:** Ruta del archivo de datos de entrada (.json,. xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo de datos Documento, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación Bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
    * **Seleccionar datos adjuntos de entrada mediante:** Los datos adjuntos disponibles en la ubicación se adjuntan al formulario asociado a la tarea. La ruta siempre es relativa a la carga útil. Una ruta de ejemplo es [Payload_Directory]/attachments/
    * **Elegir JSON de entrada:** Seleccione un archivo JSON de entrada utilizando una ruta relativa a la carga útil o almacenada en una variable de tipo de datos de Documento, JSON o Modelo de datos de formulario. Esta opción está disponible si selecciona la interfaz de usuario del agente de comunicación interactiva o el Documento del Canal web de comunicación interactiva en la lista desplegable Tipo.
    * **Elija un servicio de cumplimentación previa personalizado:** Seleccione el servicio de relleno previo para recuperar los datos y cumplimentar previamente el documento de canal web de comunicación interactiva o la interfaz de usuario del agente.
@@ -77,7 +77,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
    * **Guardar documento PDF mediante:** Guarde el documento PDF utilizando una ruta relativa a la carga útil o bien almacene el archivo en una variable de tipo de datos de Documento. Esta opción solo está disponible si selecciona la IU de Agente de comunicación interactiva en la lista desplegable Tipo.
    * **Guardar plantilla de diseño con:** Guarde la plantilla de diseño utilizando una ruta relativa a la carga útil o bien almacenarla en una variable de tipo de datos de Documento. La plantilla [de](../../forms/using/layout-design-details.md) diseño hace referencia a un archivo XDP que se crea con Forms Designer. Esta opción solo está disponible si selecciona la IU de Agente de comunicación interactiva en la lista desplegable Tipo.
 
-* **Asignación > Opciones de asignación:** Especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante el script Selector de participantes o asignar la tarea a un usuario o grupo de AEM específico.
+* **Asignación > Opciones de asignación:** Especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante la secuencia de comandos Selector de participantes o asignar la tarea a un usuario o grupo de AEM específico.
 * **Selector de participantes:** La opción está disponible cuando se selecciona la opción **Dinámicamente para un usuario o grupo** en el campo Opciones de asignación. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte Asignación [dinámica de un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Creación de un paso de participante dinámico de Adobe Experience Manager personalizado.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 * **Participantes:** El campo está disponible cuando se selecciona la opción **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** en el campo Selector **de** participantes. El campo permite seleccionar usuarios o grupos para la opción SelectorParticipanteAleatorio.
@@ -89,24 +89,24 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Usuario o grupo:** La tarea se asigna al usuario o grupo seleccionado. La opción está disponible cuando se selecciona la opción **** Para un usuario o grupo específico en el campo **Asignar opciones** . El campo lista a todos los usuarios y grupos del grupo de usuarios del flujo de trabajo.\
    El menú desplegable **Usuario o Grupo** lista a los usuarios y grupos a los que tiene acceso el usuario que ha iniciado sesión. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo de **usuarios** en crx-repositorio para ese usuario en particular.
 
-* **Notificar al usuario asignado por correo electrónico:** Seleccione esta opción para enviar notificaciones por correo electrónico al usuario asignado. Estas notificaciones se envían cuando se asigna una tarea a un usuario. Antes de utilizar la opción, habilite las notificaciones desde la consola web de AEM. Para obtener instrucciones paso a paso, consulte [Configuración de las notificaciones por correo electrónico para el paso de asignación de tareas](../../forms/using/aem-forms-workflow.md)
+* **Notificar al usuario asignado por correo electrónico:** Seleccione esta opción para enviar notificaciones por correo electrónico al usuario asignado. Estas notificaciones se envían cuando se asigna una tarea a un usuario. Antes de utilizar la opción, habilite las notificaciones desde AEM consola web. Para obtener instrucciones paso a paso, consulte [Configuración de las notificaciones por correo electrónico para el paso de asignación de tareas](../../forms/using/aem-forms-workflow.md)
 
 * **Plantilla** de correo electrónico HTML: Seleccione la plantilla de correo electrónico para el correo electrónico de notificación. Para editar una plantilla, modifique el archivo ubicado en /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt en crx-repository.
-* **Permitir delegación a:** La bandeja de entrada de AEM ofrece una opción al usuario que ha iniciado sesión para delegar el flujo de trabajo asignado a otro usuario. Puede delegar en el mismo grupo o en el usuario del flujo de trabajo de otro grupo. Si la tarea se asigna a un solo usuario y se selecciona **permitir delegación a miembros del grupo** asignado, no es posible delegar la tarea a otro usuario o grupo.
-* **Compartir configuración:** La bandeja de entrada de AEM ofrece opciones para compartir una o todas las tareas de la bandeja de entrada con otros usuarios:
-   * Cuando se selecciona la opción **Permitir al usuario asignado compartir explícitamente en la bandeja de entrada** , el usuario puede hacer clic en la tarea y compartirla con otro usuario de AEM.
+* **Permitir delegación a:** AEM bandeja de entrada ofrece una opción al usuario que ha iniciado sesión para delegar el flujo de trabajo asignado a otro usuario. Puede delegar en el mismo grupo o en el usuario del flujo de trabajo de otro grupo. Si la tarea se asigna a un solo usuario y se selecciona **permitir delegación a miembros del grupo** asignado, no es posible delegar la tarea a otro usuario o grupo.
+* **Compartir configuración:** AEM bandeja de entrada ofrece opciones para compartir una o todas las tareas de la bandeja de entrada con otros usuarios:
+   * Cuando se selecciona la opción **Permitir al usuario asignado compartir explícitamente en la bandeja de entrada** , el usuario puede hacer clic en la tarea y compartirla con otro usuario AEM.
    * Cuando se selecciona la opción **Permitir que el usuario asignado comparta** la bandeja de entrada y un usuario comparte los elementos de la Bandeja de entrada o permite que otros usuarios accedan a los elementos de la Bandeja de entrada, solo se comparten con otros usuarios las tareas con la opción antes mencionada habilitada.
 
 * **Acciones > Acciones predeterminadas:** Las acciones Enviar, Guardar y Restablecer están disponibles de forma predeterminada. De forma predeterminada, todas las acciones predeterminadas están activadas.
-* **Variable de ruta:** Nombre de la variable route. La variable route captura las acciones personalizadas que un usuario selecciona en la Bandeja de entrada de AEM.
-* **Rutas:** Una tarea puede ramificar a diferentes rutas. Cuando se selecciona en la Bandeja de entrada de AEM, la ruta devuelve un valor y las ramas del flujo de trabajo según la ruta seleccionada. Puede almacenar rutas en una variable de matriz de tipo de datos String o seleccionar **Literal** para agregar rutas manualmente.
+* **Variable de ruta:** Nombre de la variable route. La variable route captura las acciones personalizadas que un usuario selecciona en AEM Bandeja de entrada.
+* **Rutas:** Una tarea puede ramificar a diferentes rutas. Cuando se selecciona en AEM Bandeja de entrada, la ruta devuelve un valor y las ramas del flujo de trabajo se basan en la ruta seleccionada. Puede almacenar rutas en una variable de matriz de tipo de datos String o seleccionar **Literal** para agregar rutas manualmente.
 
-* **Título**: Especifique el título de la ruta. Se muestra en la Bandeja de entrada de AEM.
-* **Icono** de coral: Especifique el atributo HTML de un icono de coral. La biblioteca Adobe CorelUI proporciona un amplio conjunto de iconos que se utilizan para el primer toque. Puede elegir y utilizar un icono para la ruta. Se muestra junto con el título en la Bandeja de entrada de AEM. Si almacena las rutas en una variable, las rutas utilizan un icono de coral &#39;Etiquetas&#39; predeterminado.
-* **Permitir que el usuario asignado agregue un comentario**: Seleccione esta opción para activar los comentarios de la tarea. Un usuario asignado puede agregar los comentarios desde la Bandeja de entrada de AEM en el momento del envío de la tarea.
+* **Título**: Especifique el título de la ruta. Se muestra en AEM Bandeja de entrada.
+* **Icono** de coral: Especifique el atributo HTML de un icono de coral. La biblioteca CorelUI de Adobe proporciona un amplio conjunto de iconos que se utilizan para el primer toque. Puede elegir y utilizar un icono para la ruta. Se muestra junto con el título en AEM Bandeja de entrada. Si almacena las rutas en una variable, las rutas utilizan un icono de coral &#39;Etiquetas&#39; predeterminado.
+* **Permitir que el usuario asignado agregue un comentario**: Seleccione esta opción para activar los comentarios de la tarea. Un usuario asignado puede agregar los comentarios desde AEM Bandeja de entrada en el momento del envío de la tarea.
 * **Guardar comentario en variable:** Guarde el comentario en una variable de tipo de datos String. Esta opción solo se muestra si selecciona la casilla **Permitir que el usuario asignado agregue un comentario** .
 
-* **Permitir que el usuario asignado agregue datos adjuntos a la tarea**: Seleccione esta opción para activar los datos adjuntos para la tarea. Un usuario asignado puede agregar los datos adjuntos desde la Bandeja de entrada de AEM en el momento del envío de la tarea.
+* **Permitir que el usuario asignado agregue datos adjuntos a la tarea**: Seleccione esta opción para activar los datos adjuntos para la tarea. Un usuario asignado puede agregar los datos adjuntos desde AEM Bandeja de entrada en el momento del envío de la tarea.
 * **Guarde los datos adjuntos de tarea de salida mediante**: Especifique la ubicación de la carpeta de datos adjuntos. Puede guardar los datos adjuntos de tarea de salida utilizando una ruta relativa a la carga útil o en una variable de matriz de tipo de datos de documento. Esta opción solo se muestra si selecciona **Permitir que el usuario asignado agregue datos adjuntos a la casilla de verificación tarea** y selecciona Formulario **** adaptable, Formulario **adaptable de** sólo lectura o documento **PDF** no interactivo en la lista desplegable **Tipo** **** de la fichaFormulario/Documento.
 
 >[!NOTE]
@@ -114,7 +114,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 >Utilice la ficha Datos adjuntos de la interfaz de usuario del agente durante el tiempo de ejecución para asociar los datos adjuntos a una comunicación interactiva. Los datos adjuntos asociados se muestran como datos adjuntos de tarea en la barra de tareas después de abrir el elemento de trabajo en estado Completo.
 
 * **Utilizar metadatos personalizados:** Seleccione esta opción para habilitar el campo de metadatos personalizado. Los metadatos personalizados se utilizan en plantillas de correo electrónico.
-* **Metadatos personalizados:** Seleccione metadatos personalizados para las plantillas de correo electrónico. Los metadatos personalizados están disponibles en el repositorio crx en apps/fd/panel/scripts/metadataScripts. La ruta especificada no existe en crx-repository. Un administrador crea la ruta antes de utilizarla. También puede utilizar un servicio para los metadatos personalizados. También puede ampliar la interfaz WorkitemUserMetadataService para proporcionar metadatos personalizados.
+* **Metadatos personalizados:** Seleccione metadatos personalizados para las plantillas de correo electrónico. Los metadatos personalizados están disponibles en el repositorio crx en apps/fd/panel/scripts/metadataScripts. La ruta especificada no existe en crx-repository. Un administrador crea la ruta antes de usarla. También puede utilizar un servicio para los metadatos personalizados. También puede ampliar la interfaz WorkitemUserMetadataService para proporcionar metadatos personalizados.
 * **Mostrar datos de pasos** anteriores: Seleccione esta opción para habilitar a los cesionarios para la vista de los anteriores cesionarios, las medidas ya adoptadas en la tarea, los comentarios agregados a la tarea y el documento del registro de la tarea completada, si está disponible.
 * **Mostrar datos de pasos subsiguientes:** Seleccione esta opción para permitir que el usuario asignado actual vista la acción realizada y los comentarios agregados a la tarea por los siguientes cesionarios. También permite que el cesionario actual vista un documento del registro de la tarea finalizada, si está disponible.
 * **Visibilidad del tipo de datos:** De forma predeterminada, un usuario asignado puede realizar la vista de un Documento de registro, de los usuarios asignados, de las medidas adoptadas y de los comentarios que hayan agregado los usuarios asignados anteriores y posteriores. Utilice la opción de visibilidad de tipo de datos para limitar el tipo de datos visibles para los usuarios asignados.
@@ -176,7 +176,7 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-Puede utilizar la integración [de datos de](../../forms/using/data-integration.md) AEM Forms para configurar y conectar fuentes de datos dispares. Estas fuentes de datos pueden ser una base de datos, servicio Web, servicio REST, servicio OData y solución CRM. La integración de datos de AEM Forms permite crear un modelo de datos de formulario que abarca varios servicios para realizar operaciones de recuperación de datos, adición y actualización en la base de datos configurada. Puede utilizar el paso **** Invocar servicio de modelo de datos para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a orígenes de datos dispares.
+Puede utilizar la integración [de datos de](../../forms/using/data-integration.md) AEM Forms para configurar y conectarse a orígenes de datos dispares. Estas fuentes de datos pueden ser una base de datos, servicio Web, servicio REST, servicio OData y solución CRM. La integración de datos de AEM Forms le permite crear un modelo de datos de formulario que incluye varios servicios para realizar operaciones de recuperación de datos, además de actualizar en la base de datos configurada. Puede utilizar el paso **** Invocar servicio de modelo de datos para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a orígenes de datos dispares.
 
 Para explicar las entradas de los campos del paso, se utiliza como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 
@@ -251,7 +251,8 @@ El paso Invocar el servicio del modelo de datos de formulario tiene los campos s
 * **Seleccione el documento de entrada JSON mediante**: El archivo JSON que contiene valores para todos los argumentos de servicio. La ruta del archivo JSON puede ser **relativa a la carga útil** o a una ruta **absoluta.** También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o del Modelo de datos de formulario.
 
 * **Notación de punto JSON:** Deje el campo en blanco para utilizar todos los objetos del archivo JSON especificado como entrada para los argumentos de servicio. Para leer un objeto JSON específico del archivo JSON especificado como entrada para argumentos de servicio, especifique la notación de puntos para el objeto JSON; por ejemplo, si tiene un JSON similar al que aparece en el inicio de la sección, especifique seguro.customerDetails para proporcionar todos los detalles de un cliente como entrada al servicio.
-* **Salida del servicio > Asignar y escribir valores de salida en variables o metadatos:** Seleccione la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia de flujo de trabajo en crx-repository. Especifique el nombre de la propiedad metadata y seleccione el atributo de salida de servicio correspondiente que se va a asignar con la propiedad metadata; por ejemplo, asigne el número_teléfono devuelto por el servicio de salida con la propiedad phone_number de los metadatos del flujo de trabajo. Del mismo modo, puede almacenar la salida en una variable de tipo de datos Long.
+* **Salida del servicio > Asignar y escribir valores de salida en variables o metadatos:** Seleccione la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia de flujo de trabajo en crx-repository. Especifique el nombre de la propiedad metadata y seleccione el atributo de salida de servicio correspondiente que se va a asignar con la propiedad metadata; por ejemplo, asigne el número_teléfono devuelto por el servicio de salida con la propiedad phone_number de los metadatos del flujo de trabajo. Del mismo modo, puede almacenar el resultado en una variable de tipo de datos Long.Cuando selecciona una propiedad para la opción de atributo de salida **[!UICONTROL Service que se va a asignar]** , solo se rellenan las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar el resultado en]**.
+
 * **Salida del servicio > Guardar salida en una variable o un archivo JSON:** Seleccione la opción para guardar los valores de salida en un archivo JSON en una ruta absoluta, en una ruta relativa a la carga útil o en una variable.
 * **Guardar documento JSON de salida con las siguientes opciones:** Guarde el archivo JSON de salida. La ruta del archivo JSON de salida puede ser relativa a la carga útil o a una ruta absoluta. También puede guardar el archivo JSON de salida con una variable de tipo de datos JSON o del Modelo de datos de formulario.
 
@@ -270,18 +271,18 @@ El paso Firmar Documento le permite utilizar Adobe Sign para firmar documentos. 
 * **Frecuencia de correo electrónico del recordatorio:** Puede enviar un mensaje de correo electrónico de recordatorio a intervalos diarios o semanales. La semana se cuenta a partir del día en que se asigna el documento a un usuario para firmar.
 * **Proceso de firma:** Puede firmar un documento en un orden secuencial o paralelo. En orden secuencial, un firmante recibe el documento por vez para firmar. Una vez que el primer firmante haya terminado de firmar el documento, el documento se enviará al segundo firmante, etc. En orden paralelo, varios firmantes pueden firmar un documento a la vez.
 * **Dirección URL de redirección:** Especifique una dirección URL de redirección. Una vez firmado el documento, puede redirigir al usuario asignado a una dirección URL. Normalmente, esta dirección URL contiene un mensaje de agradecimiento o instrucciones adicionales.
-* **Etapa de flujo de trabajo:** Un flujo de trabajo puede tener varias etapas. Estas etapas se muestran en la Bandeja de entrada de AEM. Puede definir estas etapas en las propiedades del modelo (barra de tareas > Página > Propiedades de la página > Fases).
+* **Etapa de flujo de trabajo:** Un flujo de trabajo puede tener varias etapas. Estas etapas se muestran en la Bandeja de entrada AEM. Puede definir estas etapas en las propiedades del modelo (barra de tareas > Página > Propiedades de la página > Fases).
 * **Seleccionar firmantes:** Especifique el método para elegir firmantes para el documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o bien agregar manualmente los detalles de un firmante.
 * **Secuencia de comandos o servicio para seleccionar firmantes:** La opción solo está disponible si la opción Dinámicamente está seleccionada en el campo Seleccionar firmantes. Puede especificar un ECMAScript o un servicio para elegir los firmantes y las opciones de verificación de un documento.
 * **Detalles del firmante:** La opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar firmantes. Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente está activada para la cuenta de Adobe Sign configurada. Puede utilizar una variable de tipo de datos String para definir los valores de los campos **[!UICONTROL Correo electrónico]**, Código **[!UICONTROL de]** país y Número **[!UICONTROL de]** teléfono. Los campos Código **[!UICONTROL de]** país y Número **[!UICONTROL de]** teléfono solo se muestran si selecciona Verificación **** telefónica en la lista desplegable de verificación **[!UICONTROL de]** 2 pasos.
 * **Variable de estado:** Un documento habilitado para Adobe Sign almacena el estado de firma del documento en una variable de tipo de datos String. Especifique el nombre de la variable de estado (adobeSignStatus). Hay una variable de estado de una instancia disponible en CRXDE en /etc/workflow/instance/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData que contiene el estado de una variable.
 * **Guardar documento firmado con las siguientes opciones:** Especifique la ubicación en la que desea mantener los documentos firmados. Puede sobrescribir el archivo de carga útil, colocar el documento firmado en una ubicación dentro del directorio de carga útil o almacenar el documento firmado en una variable de tipo Documento.
 
-## Pasos de Documento Services {#document-services-steps}
+## Pasos de documento Services {#document-services-steps}
 
-Los servicios de Documento de AEM son un conjunto de servicios para crear, montar y asegurar Documentos PDF. AEM Forms proporciona un paso independiente de flujo de trabajo de AEM para cada servicio de documento.
+AEM servicios de Documento son un conjunto de servicios para crear, montar y asegurar Documentos PDF. AEM Forms proporciona un paso AEM Flujo de trabajo independiente para cada servicio de documento.
 
-De forma similar a otros pasos del flujo de trabajo de AEM Forms, como Asignar Tarea, Enviar correo electrónico y Documento de firma, puede utilizar variables en todos los pasos de los servicios de AEM Documento. Para obtener más información sobre la creación y administración de variables, consulte [Variables en flujos de trabajo](../../forms/using/variable-in-aem-workflows.md)AEM.
+De forma similar a otros pasos del flujo de trabajo de AEM Forms, como Asignar Tarea, Enviar correo electrónico y Documento de firma, puede utilizar variables en todos los pasos de los servicios de Documento AEM. Para obtener más información sobre cómo crear y administrar variables, consulte [Variables en flujos de trabajo](../../forms/using/variable-in-aem-workflows.md)de AEM.
 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
@@ -292,7 +293,7 @@ Añada la marca de hora en un documento. Puede proporcionar detalles de document
 Convierte un documento PDF en lista de imágenes. Los formatos de imagen admitidos son JPEG, JPEG2000, PNG y TIFF. La siguiente información se aplica a las conversiones a imágenes TIFF:
 
 * Se genera un archivo TIFF de varias páginas.
-* Algunas anotaciones no se incluyen en las imágenes TIFF. No se incluyen las anotaciones que requieren Acrobat para generar su aspecto.
+* Algunas anotaciones no se incluyen en las imágenes TIFF. No se incluyen las anotaciones que requieren Acrobat para generar su apariencia.
 
 ### Convert to PDF/A step {#convert-to-pdf-a-step}
 
@@ -338,13 +339,13 @@ Ejecuta el archivo DDX en el mapa especificado de documentos de entrada y devuel
 >
 >Puede utilizar variables para especificar el archivo DDX para documentos de entrada. Almacene el archivo DDX en una variable de tipo de datos Documento o XML.
 
-### Optimizar paso de PDF {#optimize-pdf-step}
+### Paso del Optimize PDF {#optimize-pdf-step}
 
 Optimiza los archivos PDF reduciendo su tamaño. El resultado de esta conversión son archivos PDF que pueden ser menores que sus versiones originales. Esta operación también convierte documentos PDF a la versión PDF especificada en los parámetros de optimización.
 
 La configuración de optimización especifica cómo se optimizan los archivos. A continuación se muestran los ajustes de ejemplo:
 
-* Versión de Destinatario PDF
+* Versión de destinatario PDF
 * Descartar objetos como acciones de JavaScript y miniaturas de página incrustadas
 * Descartar datos de usuario, como comentarios y archivos adjuntos
 * Descartar configuración no válida o no utilizada
@@ -362,7 +363,7 @@ Procesa un formulario creado en el Diseñador de formularios (XDP) en un formula
 
 ### Paso Documento seguro {#secure-document-step}
 
-Codificar, firmar y certificar un documento. Los AEM Forms admiten el cifrado basado en contraseña y en certificado. También puede elegir entre varios algoritmos para firmar documentos. Por ejemplo, SHA-256 y SH-512. También puede utilizar el paso del flujo de trabajo para que el lector pueda ampliar los documentos PDF. El paso del flujo de trabajo proporciona una opción para habilitar la descodificación de códigos de barras, las firmas digitales, la importación y exportación de datos PDF y otras opciones.
+Codificar, firmar y certificar un documento. AEM Forms admite el cifrado basado en contraseña y en certificado. También puede elegir entre varios algoritmos para firmar documentos. Por ejemplo, SHA-256 y SH-512. También puede utilizar el paso del flujo de trabajo para que el lector pueda ampliar los documentos PDF. El paso del flujo de trabajo proporciona una opción para habilitar la descodificación de códigos de barras, las firmas digitales, la importación y exportación de datos PDF y otras opciones.
 
 ### Paso Enviar a la impresora {#send-to-printer-step}
 
@@ -403,7 +404,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
    * **[!UICONTROL DPL]** personalizado: Utilice la opción para especificar un archivo XDC DPL personalizado.
    * **[!UICONTROL DPL300DPI]**: Utilice DPL 300 PPP. Se utiliza el archivo dpl300.xdc.
    * **[!UICONTROL DPL406PPP]**: Utilice DPL 400 PPP. Se utiliza dpl406.xdc.
-   * **[!UICONTROL DPL600DPI]**: Utilice DPL 600 PPP. Se utiliza dpl600.xdc.
+   * **[!UICONTROL DPL600PPP]**: Utilice DPL 600 PPP. Se utiliza dpl600.xdc.
 
 **Propiedades de salida**
 
