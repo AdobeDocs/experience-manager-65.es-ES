@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Crear una página de muestra {#create-a-sample-page}
 
-A partir de AEM 6.1 Communities, la forma más sencilla de crear una página de muestra consiste en crear un sitio de comunidad sencillo, compuesto simplemente por una función Page.
+A partir de AEM comunidades 6.1, la forma más fácil de crear una página de muestra es crear un sitio de comunidad simple, que consiste simplemente en una función de página.
 
 Esto incluirá un componente parsys para que pueda [habilitar componentes para la creación](basics.md#accessing-communities-components).
 
@@ -28,7 +28,7 @@ Otra opción para explorar con componentes de muestra es utilizar las funciones 
 
 ## Crear un sitio de comunidad {#create-a-community-site}
 
-Esto es muy similar a crear un nuevo sitio descrito en [Introducción a los AEM Communities](getting-started.md).
+Esto es muy similar a crear un nuevo sitio descrito en [Introducción a AEM Communities](getting-started.md).
 
 La diferencia principal es que este tutorial creará una nueva plantilla de sitio de comunidad que sólo contiene la función [](functions.md#page-function) Página para crear un sitio de comunidad simple sin otras características (aparte de las funciones precableadas básicas para todos los sitios de la comunidad).
 
@@ -38,7 +38,7 @@ Para empezar, cree una plantilla [de sitio de](sites.md)comunidad sencilla.
 
 En la navegación global de una instancia de autor, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > Plantillas **** de sitio.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![create-site-template](assets/create-site-template1.png)
 
 * Seleccione `Create button`
 * INFORMACIÓN BÁSICA
@@ -47,7 +47,7 @@ En la navegación global de una instancia de autor, seleccione **[!UICONTROL Her
    * `Description`:: Una plantilla que consta de una sola función de página.
    * Seleccione `Enabled`
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![site-template-editor](assets/site-template-editor.png)
 
 * ESTRUCTURA
 
@@ -57,7 +57,7 @@ En la navegación global de una instancia de autor, seleccione **[!UICONTROL Her
       * `Title`:: Página única
       * `URL`: page
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![site-template-editor-structure](assets/site-template-editor1.png)
 
 * Seleccionar **`Save`** para la configuración
 * Seleccionar **`Save`** para la plantilla de sitio
@@ -68,7 +68,7 @@ Ahora cree un nuevo sitio de comunidad basado en la plantilla de sitio simple.
 
 Después de crear la plantilla de sitio, en la navegación global seleccione **[!UICONTROL Comunidades > Sitios]**.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![create-community-site](assets/create-community-site1.png)
 
 * Seleccionar **`Create`** icono
 
@@ -84,7 +84,7 @@ Después de crear la plantilla de sitio, en la navegación global seleccione **[
 
       * `Template`:: elegir `Single Page Template`
 
-      ![chlimage_1-86](assets/chlimage_1-86.png)
+      ![create-community-site-template](assets/create-community-site-template.png)
 
 
 * Seleccione `Next`
@@ -99,26 +99,26 @@ Después de crear la plantilla de sitio, en la navegación global seleccione **[
 
 * Seleccione `Create`
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
+   ![create-community-site](assets/create-community-site.png)
 
 ## Publicar el sitio {#publish-the-site}
 
-![chlimage_1-88](assets/chlimage_1-88.png)
+![publish-site](assets/publish-site.png)
 
 En la consola [Sitios de](sites-console.md)comunidad, seleccione el icono de publicación para publicar el sitio, de forma predeterminada en http://localhost:4503.
 
 ## Abrir el sitio al autor en modo de edición {#open-the-site-on-author-in-edit-mode}
 
-![chlimage_1-89](assets/chlimage_1-89.png)
+![open-site](assets/open-site.png)
 
 Seleccione el icono del sitio abierto para la vista del sitio en modo de edición.
 
 La dirección URL será [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![chlimage_1-90](assets/chlimage_1-90.png)
+![author-site](assets/author-site.png)
 
 En la página de inicio simple es posible ver lo que se precablea a través de las funciones y plantillas de la comunidad, y jugar con la adición y configuración de componentes de la comunidad.
 
-## Sitio de Vista al publicar {#view-site-on-publish}
+## Sitio de vista al publicar {#view-site-on-publish}
 
 Después de publicar la página, abra la página en la instancia [de](http://localhost:4503/content/sites/sample/en.html) publicación para probar las funciones como un visitante anónimo del sitio, un miembro con sesión iniciada o un administrador. El vínculo Administración visible en el entorno de creación no aparecerá en el entorno de publicación a menos que un administrador inicie sesión.
