@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 12b2b73b6363c90d784527b260d664e48c746496
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2200'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ A continuación se muestra un ejemplo sin `afData/afBoundData` envoltorio:
 
 >[!NOTE]
 >
->El uso de campos no enlazados en paneles enlazados (paneles con bindRef no vacío creados arrastrando componentes desde la barra de tareas o la ficha Fuentes de datos) **no se recomienda** , ya que podría causar la pérdida de datos de los campos no enlazados. Se recomienda tener nombres de campo únicos en todo el formulario, especialmente para los campos no enlazados.
+>El uso de campos independientes en paneles enlazados (paneles con bindRef no vacío creados arrastrando componentes desde la barra de tareas o la ficha Fuentes de datos) **no se recomienda** , ya que podría causar pérdida de datos de los campos no enlazados. Se recomienda tener nombres de campo únicos en todo el formulario, especialmente para los campos no enlazados.
 
 ### Formulario adaptable sin modelo de formulario {#adaptive-form-with-no-form-model}
 
@@ -225,7 +225,7 @@ Las etiquetas XML de los datos de usuario enviados para varios campos se generan
 </afData>
 ```
 
-## Configuración del servicio de prerelleno mediante Configuration Manager {#configuring-prefill-service-using-configuration-manager}
+## Configuración del servicio de precumplimentación mediante Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
 Para habilitar el servicio de cumplimentación previa, especifique la Configuración predeterminada del servicio de cumplimentación previa en la Configuración de la consola web de AEM. Siga los pasos siguientes para configurar el servicio de relleno previo:
 
@@ -246,7 +246,7 @@ Para habilitar el servicio de cumplimentación previa, especifique la Configurac
 
    >[!NOTE]
    >
-   >De forma predeterminada, se permite rellenar previamente mediante archivos crx para todos los tipos de formularios adaptables (XSD, XDP, JSON, FDM y sin modelo de formulario basado). El relleno previo solo se permite con archivos JSON y XML.
+   >De forma predeterminada, se permite rellenar previamente mediante archivos crx para todos los tipos de Forms adaptable (XSD, XDP, JSON, FDM y sin modelo de formulario basado). El relleno previo solo se permite con archivos JSON y XML.
 
 1. El servicio de cumplimentación previa ahora está configurado para el formulario.
 
@@ -298,7 +298,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 ```
 
 * SERVICE_NAME hace referencia al nombre del servicio de cumplimentación previa OSGI. Consulte [Crear y ejecutar un servicio](../../forms/using/prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service)de relleno previo.
-* IDENTIFIER se refiere a cualquier metadato requerido por el servicio de rellenado previo OSGI para recuperar los datos de relleno previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
+* IDENTIFIER se refiere a cualquier metadato que requiera el servicio de rellenado previo OSGI para recuperar los datos de relleno previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ prefill-page component.zip
 
 [Obtener archivo](assets/prefill-page-component.zip)Muestra prefill.jsp en el componente de página
 
-## Servicio de cumplimentación previa personalizado para AEM Forms {#aem-forms-custom-prefill-service}
+## Servicio de cumplimentación previa personalizado de AEM Forms {#aem-forms-custom-prefill-service}
 
 Puede utilizar el servicio de cumplimentación previa personalizado para los escenarios, donde siempre se leen datos de un origen predefinido. El servicio de rellenado previo lee datos de orígenes de datos definidos y antepone los campos del formulario adaptable al contenido del archivo de datos de relleno previo. También ayuda a asociar de forma permanente datos prerellenados con un formulario adaptable.
 
@@ -342,7 +342,7 @@ Puede utilizar el servicio de cumplimentación previa personalizado para los esc
 
 El servicio de prerfill es un servicio OSGi y se empaqueta a través del paquete OSGi. Puede crear el paquete OSGi, cargarlo e instalarlo en paquetes de AEM Forms. Antes de empezar a crear el paquete:
 
-* [Descargar el SDK del cliente AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
+* [Descargar el SDK de AEM Forms Client](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
 * Descargar el paquete repetitivo
 
 * Coloque el archivo de datos (rellene previamente los datos) en el repositorio crx. Puede colocar el archivo en cualquier ubicación de la carpeta \contents de crx-repository.
@@ -351,7 +351,7 @@ El servicio de prerfill es un servicio OSGi y se empaqueta a través del paquete
 
 #### Crear un servicio de cumplimentación previa {#create-a-prefill-service}
 
-El paquete repetitivo (paquete de servicio de prerelleno de muestra) contiene la implementación de muestra del servicio de precumplimentación de AEM Forms. Abra el paquete repetitivo en un editor de código. Por ejemplo, abra el proyecto repetitivo en Eclipse para editarlo. Después de abrir el paquete repetitivo en un editor de código, realice los siguientes pasos para crear el servicio.
+El paquete repetitivo (paquete de servicio de prerelleno de muestra) contiene una implementación de muestra del servicio de prerelleno de AEM Forms. Abra el paquete repetitivo en un editor de código. Por ejemplo, abra el proyecto repetitivo en Eclipse para editarlo. Después de abrir el paquete repetitivo en un editor de código, realice los siguientes pasos para crear el servicio.
 
 1. Abra el archivo src\main\java\com\adobe\test\Prefill.java para editarlo.
 1. En el código, establezca el valor de:
@@ -365,9 +365,26 @@ El paquete repetitivo (paquete de servicio de prerelleno de muestra) contiene la
 
 #### Inicio y uso del servicio de cumplimentación previa {#start-and-use-the-prefill-service}
 
-Para inicio del servicio de cumplimentación previa, cargue el archivo JAR en la consola web de AEM Forms y active el servicio. Ahora, los inicios de servicio aparecen en el editor de formularios adaptables. Para asociar un servicio de cumplimentación previa a un formulario adaptable:
+Para inicio del servicio de cumplimentación previa, cargue el archivo JAR en AEM Forms Web Console y active el servicio. Ahora, los inicios de servicio aparecen en el editor de formularios adaptables. Para asociar un servicio de cumplimentación previa a un formulario adaptable:
 
-1. Abra el formulario adaptable en el Editor de formularios y abra el panel Propiedades del Contenedor de formulario.
-1. En la consola Propiedades, vaya a contenedor AEM Forms > Básico > Servicio de relleno previo.
+1. Abra el formulario adaptable en el Editor de Forms y abra el panel Propiedades del Contenedor de formulario.
+1. En la consola Propiedades, vaya a AEM Forms contenedor > Básico > Servicio de relleno previo.
 1. Seleccione el servicio Prefill predeterminado y haga clic en **[!UICONTROL Guardar]**. El servicio está asociado al formulario.
 
+## Rellenar datos de antemano en el cliente {#prefill-at-client}
+
+Cuando se rellena previamente un formulario adaptable, el servidor de AEM Forms combina los datos con un formulario adaptable y le envía el formulario rellenado. De forma predeterminada, la acción de combinación de datos tiene lugar en el servidor.
+
+Puede configurar el servidor de AEM Forms para que realice la acción de combinación de datos en el cliente en lugar del servidor. Reduce considerablemente el tiempo necesario para rellenar y procesar formularios adaptables. De forma predeterminada, la función está deshabilitada. Puede habilitarlo desde el Administrador de configuración o la línea de comandos.
+
+* Para habilitar o deshabilitar desde el administrador de configuración:
+   1. Abra AEM Administrador de configuración.
+   1. Localizar y abrir la configuración del Canal web de comunicación interactiva y formulario adaptable
+   1. Habilite la opción Configuration.af.clientside.datamerge.enabled.name
+* Para habilitar o deshabilitar desde la línea de comandos:
+   * Para habilitar, ejecute el siguiente comando cURL:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   * Para deshabilitar, ejecute el siguiente comando cURL:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+   Para aprovechar al máximo los datos rellenados previamente en la opción de cliente, actualice el servicio de relleno previo para devolver [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) y [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
