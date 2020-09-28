@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Función de mensajería {#messaging-feature}
 
-Además de las interacciones públicamente visibles que se producen en los foros y comentarios, la función de mensajería de los AEM Communities permite a los miembros de la comunidad interactuar entre sí de forma más privada.
+Además de las interacciones públicamente visibles que se producen en los foros y comentarios, la función de mensajería de AEM Communities permite a los miembros de la comunidad interactuar entre sí de forma más privada.
 
 Esta función se puede incluir cuando se crea un sitio [de](/help/communities/overview.md#communitiessites) comunidad.
 
@@ -41,7 +41,9 @@ La función de mensajería permite:
 
 **G** : restaurar un mensaje eliminado
 
-![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
+![messaging-section](assets/messaging-section.png)
+
+![restore-message](assets/restore-message.png)
 
 Para habilitar y modificar la función de mensajería, consulte:
 
@@ -77,7 +79,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Selector de servicio**
 
-   (*Obligatorio*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** del servicio de operaciones de mensajería de [AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+   (*Necesario*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** desde el servicio [de operaciones de mensajería de](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
 
 * **Componer página**
 
@@ -87,7 +89,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
    Si se selecciona, la URL de respuesta y la URL de Vista harán referencia a un recurso; de lo contrario, los datos se pasarán como parámetros de consulta en la URL.
 
-* **Formulario para mostrar Perfil**
+* **Formulario para mostrar perfil**
 
    Formulario de perfil que se va a utilizar para mostrar el perfil de remitentes.
 
@@ -113,11 +115,11 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Botón Eliminar**
 
-   Si se selecciona, muestra un `Delete` botón que permite marcar un mensaje como leído. duplicado la funcionalidad de eliminación si también **`Message Options`** está marcada.
+   Si se selecciona, muestra un `Delete` botón que permite marcar un mensaje como leído. Duplicado la funcionalidad de eliminación si también **`Message Options`** está marcada.
 
 * **Opciones de mensaje**
 
-   Si se selecciona, muestra **`Reply`**, **`Reply All`****`Forward`** y **`Delete`** botones que permiten que un mensaje se vuelva a enviar o se elimine. duplicado la funcionalidad de eliminación si también **`Delete Button`** está marcada.
+   Si se selecciona, muestra **`Reply`**, **`Reply All`****`Forward`** y **`Delete`** botones que permiten que un mensaje se vuelva a enviar o se elimine. Duplicado la funcionalidad de eliminación si también **`Delete Button`** está marcada.
 
 * **Mensajes por página**
 
@@ -167,7 +169,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Selector de servicio**
 
-   (*Obligatorio*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** del servicio de operaciones de mensajería de [AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+   (*Necesario*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** desde el servicio [de operaciones de mensajería de](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
 
 #### Ficha Mostrar {#display-tab-1}
 
