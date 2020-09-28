@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Assets] Integración con flujo de actividad.'
+title: ' [!DNL Assets] Integración con flujo de actividad'
 description: Describe las funciones [!DNL Experience Manager] de grabación y cómo configurarlas para grabar eventos específicos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Esta integración podría requerir CPU y espacio en disco, por ejemplo, al realizar una importación masiva. Por estos motivos, la [!DNL Assets] integración con el flujo de Actividad está deshabilitada de forma predeterminada.
 
-## eventos de acción admitidos {#supported-action-events}
+## Eventos de acción admitidos {#supported-action-events}
 
 Se pueden configurar los siguientes eventos para que se registren:
 
