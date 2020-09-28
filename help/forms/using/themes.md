@@ -10,9 +10,9 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6062'
 ht-degree: 1%
 
 ---
@@ -350,7 +350,7 @@ En la barra de herramientas Lienzo, verá:
 * **Alternar panel** lateral ![alternando panel](assets/toggle-side-panel.png)lateral: Permite mostrar u ocultar la barra lateral.
 * **Opciones** de tema: opciones de ![tema](assets/theme-options.png): Proporciona tres opciones
 
-   * Configurar: Proporciona opciones para seleccionar el formulario de previsualización o la comunicación interactiva, la clientlib base y la configuración typekit.
+   * Configurar: Proporciona opciones para seleccionar el formulario de previsualización o la comunicación interactiva, clientlib base y la configuración de Adobe Fonts.
    * CSS de tema de vista: Genera CSS para el tema seleccionado.
    * Administrar estilos: Proporciona opciones para administrar estilos de texto e imagen
    * Ayuda: Ejecuta una visita guiada de imagen del Editor de temas.
@@ -489,23 +489,23 @@ Puede aplicar estilo a los componentes de formulario o comunicación interactiva
 
 ### Uso de fuentes web en un tema {#using-web-fonts-in-a-theme}
 
-Ahora puede utilizar fuentes disponibles en un servicio Web en un formulario adaptable o en una comunicación interactiva. El servicio de fuentes web de [Typekit](https://typekit.com/), listo para usar, está disponible como configuración. Para utilizar Typekit, cree un kit y las fuentes que contiene, y obtenga el ID del kit del sitio web de [Typekit](https://typekit.com/).
+Ahora puede utilizar fuentes disponibles en un servicio Web en un formulario adaptable o en una comunicación interactiva. El servicio de fuentes web de [Adobe Fonts](https://fonts.adobe.com/), incorporado en el equipo, está disponible como configuración. Para utilizar Adobe Fonts, cree un kit, añada fuentes y obtenga el ID del kit de [Adobe Fonts](https://fonts.adobe.com/).
 
-Siga estos pasos para configurar Typekit en AEM:
+Siga estos pasos para configurar Adobe Fonts en AEM:
 
 1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Implementación > Cloud Services.
-1. En la página **Cloud Services** , vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar ahora** en Typekit. Si ya hay una configuración disponible, haga clic en el botón **+** para crear una nueva instancia.
+1. En la página **Cloud Services** , navegue hasta la opción **Adobe Fonts** y ábrala. Abra la carpeta de configuración y haga clic en **Crear**.
 1. En el cuadro de diálogo **Crear configuración** , especifique un título para la configuración y haga clic en **Crear**.
 
    Se le redirige a la página de configuración.
 
 1. En el cuadro de diálogo Editar componente que aparece, proporcione el ID del kit y haga clic en **Aceptar**.
 
-Siga los pasos siguientes para configurar un tema para utilizar la configuración de TypeKit:
+Realice los siguientes pasos para configurar un tema para utilizar la configuración de Adobe Fonts:
 
 1. En la instancia de autor, abra un tema en el editor de temas.
 1. En el editor de temas, vaya a Opciones **de** tema ![opciones](assets/theme-options.png) de tema > **Configurar**.
-1. En el campo Configuración **de** Typekit, seleccione un kit y haga clic en **Guardar**.
+1. En el campo Configuración **de** Adobe Fonts, seleccione un kit y haga clic en **Guardar**.
 
    Ahora puede ver que las fuentes se agregan en la propiedad font-family del tema.
 
