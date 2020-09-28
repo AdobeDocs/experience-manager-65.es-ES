@@ -1,17 +1,17 @@
 ---
-title: Flujo de Actividad de recursos digitales en la vista [!DNL Experience Manager]de línea de tiempo.
+title: Flujo de actividad de recursos digitales en la vista de línea de tiempo
 description: En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 27%
 
 ---
 
 
-# Flujo de Actividad en la línea de tiempo {#activity-stream-in-timeline}
+# Flujo de actividad en la línea de tiempo {#activity-stream-in-timeline}
 
 Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con los recursos en [!DNL Adobe Experience Manager Assets], la función de flujo de actividad actualiza la línea de tiempo para reflejar la actividad.
 
