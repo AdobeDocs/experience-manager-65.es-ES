@@ -1,18 +1,18 @@
 ---
-title: Guía del usuario de Adobe Experience Manager 6.5 Assets
-seo-title: Guía del usuario de Adobe Experience Manager 6.5 Assets
+title: Guía de recursos
+seo-title: Guía de Adobe Experience Manager 6.5 Assets
 description: Esta guía cubre todas las tareas de recursos Experience Manager, como la creación, administración, entrega y optimización de recursos digitales.
 seo-description: Abarca todas las tareas de recursos Experience Manager, como la creación, administración, entrega y optimización de recursos digitales.
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 12%
+source-wordcount: '371'
+ht-degree: 13%
 
 ---
 
 
-# Guía del usuario de Adobe Experience Manager 6.5 Assets
+# Guía de Adobe Experience Manager 6.5 Assets
 
 Esta guía cubre todas las tareas de recursos Experience Manager, como la creación, administración, entrega y optimización de recursos digitales.
 
@@ -26,12 +26,12 @@ Esta guía cubre todas las tareas de recursos Experience Manager, como la creaci
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md)
 
-## Guías del usuario de Experience Manager 6.5
+## Guías de Experience Manager 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
 | [Notas de la versión](/help/release-notes/home.md) | Proporciona información importante sobre la última versión, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas y los problemas conocidos |
-| [Guía del usuario de formularios](/help/forms/home.md) | En esta guía se describe cómo crear, administrar, publicar y actualizar formularios digitales. |
+| [Guía del usuario de Forms](/help/forms/home.md) | En esta guía se describe cómo crear, administrar, publicar y actualizar formularios digitales. |
 | [Guía del usuario de comunidades](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
 | [Guía de administración](/help/sites-administering/home.md) | Comprender cómo administrar Experience Manager. |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en Experience Manager. |
@@ -45,7 +45,7 @@ Esta guía cubre todas las tareas de recursos Experience Manager, como la creaci
 
 ## Recursos clave del Experience Manager
 
-* [Tutoriales de vídeo de Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Tutorials de vídeo Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Foro de la comunidad de Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
