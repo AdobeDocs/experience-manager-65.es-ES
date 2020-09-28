@@ -1,9 +1,9 @@
 ---
-title: Recursos multilingües y traducción de recursos.
+title: Recursos multilingües y traducción de recursos
 description: Aprenda a automatizar flujos de trabajo para traducir recursos, incluidos binarios, metadatos y etiquetas en varios idiomas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 2%
