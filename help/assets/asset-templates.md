@@ -1,11 +1,11 @@
 ---
-title: Plantillas de recursos en [!DNL Adobe Experience Manager Assets].
+title: Plantillas de recursos
 description: Obtenga información sobre las plantillas de recursos [!DNL Adobe Experience Manager Assets] en y cómo utilizar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Puede lograr lo siguiente con plantillas de recursos:
 * Modifique los campos de plantilla editables desde la interfaz web.
 * Controle el estilo básico del texto, por ejemplo, el tamaño de fuente, el estilo y el tipo en el nivel de etiqueta.
 * Cambie las imágenes dentro de la plantilla mediante el selector de contenido.
-* Se editan las plantillas de Previsualización.
+* Se editan las plantillas de previsualización.
 * Combine varios archivos de plantilla para crear un artefacto de varias páginas.
 
 Al elegir una plantilla para el material promocional, [!DNL Experience Manager Assets] crea una copia de la plantilla que puede editar. Se conserva la plantilla original, lo que garantiza que la señalización global permanezca intacta y se pueda reutilizar para reforzar la coherencia de la marca.
@@ -88,7 +88,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    Con el buscador de recursos, puede buscar o buscar imágenes dentro de la plantilla [!DNL Experience Manager Assets] y reemplazar las imágenes editables con las imágenes que desee.
 
-   ![chlimage_1-109](assets/chlimage_1-314.png)
+   ![chlimage_1-189](assets/chlimage_1-314.png)
 
    Los editables se muestran a la derecha. Para que un campo se pueda editar en [!DNL Experience Manager Assets], se debe etiquetar el campo correspondiente de la plantilla en [!DNL InDesign]. En otras palabras, deben marcarse como editables en [!DNL InDesign].
 
@@ -96,7 +96,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    >[!NOTE]
    >
-   >Asegúrese de que [!DNL Experience Manager] la implementación está integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la [!DNL InDesign] plantilla y ponerlos a disposición para su edición. Para obtener más información, consulte [Integración de recursos de Experience Manager con InDesign Server](/help/assets/indesign.md).
+   >Asegúrese de que [!DNL Experience Manager] la implementación está integrada con un [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] extraer datos de la [!DNL InDesign] plantilla y ponerlos a disposición para su edición. Para obtener más información, consulte [Integración de recursos Experience Manager con InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar el texto de un campo editable, haga clic en el campo de texto de la lista de campos editables y edite el texto del campo.
 
@@ -114,7 +114,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. Seleccione el campo de imagen de la lista de campos editables y, a continuación, arrastre una imagen deseada del selector de recursos al campo editable.
 
-   ![chlimage_1-114](assets/chlimage_1-319.png)
+   ![chlimage_1-115](assets/chlimage_1-319.png)
 
    También puede buscar imágenes mediante palabras clave, etiquetas y según su estado de publicación. Puede navegar por el repositorio y navegar hasta la ubicación de la imagen deseada [!DNL Experience Manager Assets] .
 
@@ -144,7 +144,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
    >* Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos existentes en [!DNL Experience Manager].
 
    >
-   >Para obtener más información sobre cómo trabajar con [!DNL InDesign] documentos, consulte Prácticas [recomendadas para trabajar con documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Para obtener más información sobre cómo trabajar con [!DNL InDesign] documentos, consulte [Prácticas recomendadas para trabajar con documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para generar una representación en PDF del folleto, seleccione la opción Acrobat en el cuadro de diálogo y haga clic en **[!UICONTROL Continuar]**.
 1. El colateral se crea en la carpeta en la que se inició. Para realizar la vista de las representaciones, abra el colateral y seleccione **[!UICONTROL Representaciones]** en la lista GlobalNav.
@@ -177,7 +177,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
 
-   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas en función del tipo de archivo o las etiquetas.
+   Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas basadas en el tipo de archivo o las etiquetas.
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
@@ -188,7 +188,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. En la pantalla [!UICONTROL Configurar plantilla] , especifique un nombre para el colateral. De forma opcional, especifique las etiquetas que considere adecuadas. Si desea exportar la salida en formato PDF, seleccione **[!UICONTROL Acrobat (.PDF)]**. De forma predeterminada, la garantía se exporta en formato JPG y [!DNL InDesign] . Para cambiar la miniatura de visualización del material publicitario de varias páginas, haga clic en **[!UICONTROL Cambiar miniatura]**.
 
-   ![chlimage_1-129](assets/chlimage_1-332.png)
+   ![chlimage_1-127](assets/chlimage_1-332.png)
 
 1. Haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo para cerrar el cuadro de diálogo. El colateral de varias páginas se crea en la carpeta en la que se inició.
 
