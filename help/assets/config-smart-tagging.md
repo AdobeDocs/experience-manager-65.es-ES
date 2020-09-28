@@ -1,11 +1,11 @@
 ---
-title: Configure el etiquetado de recursos mediante el servicio de contenido inteligente.
+title: Configuración del etiquetado de recursos mediante Smart Content Service
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 506b965e4f1c18230357f25532d3fdd10f526ef0
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1240'
 ht-degree: 36%
 
 ---
@@ -44,7 +44,7 @@ Para habilitar Etiquetas inteligentes mejoradas, además de las anteriores, inst
 
 El certificado público permite autenticar el perfil en Adobe Developer Console.
 
-1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > Cloud Service **** preexistentes.
+1. En la [!DNL Experience Manager] interfaz de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > Cloud Services **** preexistentes.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 
@@ -124,7 +124,7 @@ Para utilizar las API de Smart Content Service, cree una integración en Adobe D
 
 Para configurar la integración, utilice los valores de los campos ID [!UICONTROL DE CUENTA]TÉCNICA, ID [!UICONTROL DE]ORGANIZACIÓN, [!UICONTROL CLIENT SECRET]e ID [!UICONTROL DE] CLIENTE de la integración de Adobe Developer Console. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la [!DNL Experience Manager] implementación.
 
-1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > Cloud Service **** preexistentes para abrir la consola de [!UICONTROL Cloud Service] .
+1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > Cloud Services **** preexistentes para abrir la consola de [!UICONTROL Cloud Services] .
 
 1. En Etiquetas **[!UICONTROL inteligentes de]** recursos, abra la configuración creada anteriormente. En la página de configuración del servicio, haga clic en **[!UICONTROL Editar]**.
 
