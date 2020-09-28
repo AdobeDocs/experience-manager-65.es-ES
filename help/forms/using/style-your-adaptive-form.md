@@ -8,10 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
+source-git-commit: 0b3884301e09eba6860891f00a98508033d12ec8
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 7%
+source-wordcount: '2058'
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ Al final del tutorial, aprenderá a:
 * Estilo de componentes individuales
 * Sección de primas: Uso de fuentes web en un tema personalizado
 
-El formulario tendrá un aspecto similar al siguiente una vez completado el tutorial:
+El formulario tendrá un aspecto similar al siguiente una vez que complete el tutorial:
 
 ![Formulario con un tema personalizado](assets/styled-adaptive-form.png)
 
@@ -442,18 +442,18 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 
 Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible que todos los dispositivos en los que se visualiza el formulario adaptable no tengan las fuentes utilizadas para diseñar el formulario adaptable. Puede utilizar un servicio de fuentes web para proporcionar las fuentes necesarias al dispositivo destinatario.
 
-[!DNL Adobe Typekit] es un servicio de fuentes web. Puede configurar y utilizar el servicio con formularios adaptables. Para usar [!DNL Adobe Typekit] en un formulario adaptable:
+[!DNL Adobe Fonts] es un servicio de fuentes web. Puede configurar y utilizar el servicio con formularios adaptables. Para usar [!DNL Adobe Fonts] en un formulario adaptable:
 
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png)[!DNL Typekit] ahora se denomina Adobe Fonts y se incluye con Creative Cloud y otras suscripciones. [Más información](https://fonts.adobe.com/).
 
-1. Cree una cuenta de [Adobe Typekit](https://typekit.com/) , cree un kit, agregue la fuente Myriad Pro al kit, publique el kit y obtenga el ID del kit. Es necesario utilizar [!DNL Adobe Typekit] fuentes (fuentes web) en un formulario adaptable.
-1. En el servidor de AEM [!DNL Forms] , vaya a ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **** **** Implementación>Cloud Services. En la página Cloud Services, vaya a Servicios **[!UICONTROL de]** terceros > **[!UICONTROL Typekit]** y haga clic en **[!UICONTROL Configurar]** ahora en [!UICONTROL Typekit]. Si ya hay una configuración disponible, haga clic en el botón + para crear una nueva instancia.
+1. Cree una cuenta de [Adobe Fonts](https://typekit.com/) , cree un kit, agregue la fuente Myriad Pro al kit, publique el kit y obtenga el ID del kit. Es necesario utilizar [!DNL Adobe Fonts] (fuentes web) en un formulario adaptable.
+1. En el servidor AEM [!DNL Forms] , vaya a ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **** Adobe Fonts. Ahora, abra una carpeta de configuración. Si ya hay una configuración disponible, haga clic en el botón **[!UICONTROL Crear]** para crear una nueva instancia.
 
    En el cuadro de diálogo Crear configuración, especifique un **Título** para la configuración y haga clic en **[!UICONTROL Crear]**. Se le redirige a la página de configuración. En el cuadro de diálogo [!UICONTROL Editar componente] que aparece, proporcione su ID **de** Kit y haga clic en **[!UICONTROL Aceptar]**.
 
-1. Configure el tema para que utilice la [!DNL TypeKit] configuración. En la instancia de autor, abra Tema **[!UICONTROL global]** en el editor de temas. En el editor de temas, vaya a Opciones **[!UICONTROL de]** tema ![opciones](assets/theme-options.png) de tema > **[!UICONTROL Configurar]**. En el campo Configuración **[!UICONTROL de]** Typekit, seleccione el kit y haga clic en **[!UICONTROL Guardar]**.
+1. Configure el tema para que utilice la [!DNL Adobe Fonts] configuración. En la instancia de autor, abra Tema **[!UICONTROL global]** en el editor de temas. En el editor de temas, vaya a Opciones **[!UICONTROL de]** tema ![opciones](assets/theme-options.png) de tema > **[!UICONTROL Configurar]**. En el campo Configuración **[!UICONTROL de]** Adobe Fonts, seleccione el kit y haga clic en **[!UICONTROL Guardar]**.
 
-   Las fuentes agregadas a [!UICONTROL Typekit] están disponibles para su selección en el acordeón **[!UICONTROL Texto]** de todos los componentes.
+   Las fuentes agregadas al **[!UICONTROL Adobe Fonts]** están disponibles para su selección en el acordeón **[!UICONTROL Texto]** de todos los componentes.
 
