@@ -1,9 +1,9 @@
 ---
-title: Prácticas recomendadas de integración [!DNL Adobe Experience Manager] y Adobe Creative Cloud.
+title: Integración con las prácticas recomendadas de Adobe Creative Cloud
 description: Prácticas recomendadas para la [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integración para optimizar los flujos de trabajo de transferencia de recursos y lograr una alta velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 17%
@@ -21,7 +21,7 @@ Siga leyendo para saber qué integraciones elegir entre el escritorio y el DAM d
 
 >[!NOTE]
 >
->[!DNL Experience Manager] el uso compartido de [!DNL Creative Cloud] carpetas está obsoleto y ya no se trata en esta guía. Adobe recomienda utilizar las nuevas funciones, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/introduction.translate.html) Experience Manager, para proporcionar al usuario creativo acceso a los recursos gestionados en [!DNL Experience Manager].
+>[!DNL Experience Manager] el uso compartido de [!DNL Creative Cloud] carpetas está obsoleto y ya no se trata en esta guía. Adobe recomienda el uso de funciones más nuevas, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/introduction.translate.html) Experience Manager, para proporcionar al usuario creativo acceso a los recursos gestionados en [!DNL Experience Manager].
 
 ## Necesidades de colaboración de creativos, especialistas en mercadotecnia y usuarios de DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -37,7 +37,7 @@ Siga leyendo para saber qué integraciones elegir entre el escritorio y el DAM d
 |---|---|---|
 | Los usuarios creativos descubren recursos desde [!DNL Experience Manager], los abren y utilizan, editan y cargan cambios en [!DNL Experience Manager], así como cargan nuevos archivos en [!DNL Experience Manager]sin salir de [!DNL Creative Cloud] las aplicaciones. | [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], y [!DNL Adobe InDesign]. |
 | Los usuarios empresariales simplifican la apertura y el uso de recursos, la edición y carga de cambios en [!DNL Experience Manager]y la carga [!DNL Experience Manager] de nuevos archivos desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de escritorio nativa, incluidos los que no son de Adobe. | [Aplicación de escritorio de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicación de escritorio en Win y Mac |
-| Los especialistas en marketing y los usuarios empresariales descubren, previsualización, otorgan licencias y guardan los [!DNL Adobe Stock] recursos desde [!DNL Experience Manager]. Los recursos con licencia y guardados proporcionan metadatos seleccionados [!DNL Adobe Stock] para mejorar la gestión. | [Integración de Experience Manager y Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaz web |
+| Los especialistas en marketing y los usuarios empresariales descubren, previsualización, otorgan licencias y guardan los [!DNL Adobe Stock] recursos desde dentro [!DNL Experience Manager]. Los recursos con licencia y guardados proporcionan metadatos seleccionados [!DNL Adobe Stock] para mejorar la gestión. | [Integración de Experience Manager y Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaz web |
 
 Este artículo se centra principalmente en los dos primeros aspectos de las necesidades de colaboración. La distribución y el abastecimiento de activos a escala se mencionan brevemente como un caso de uso. Para estas necesidades, considere Adobe Brand Portal o Asset Share Commons. Alternate solutions such as [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
 
@@ -56,11 +56,11 @@ Este artículo se centra principalmente en los dos primeros aspectos de las nece
 | Usar - abrir recurso | Sí | Sí | [Abrir desde interfaz](managing-assets-touch-ui.md#previewing-assets) web o desde Finder |
 | Usar - colocar recurso de DAM en un documento | Sí: incrustación | Sí: vinculación o incrustación | [!DNL Experience Manager] la aplicación de escritorio proporciona acceso a los recursos como archivos en el sistema de archivos local. Estos vínculos en las aplicaciones nativas se representan mediante rutas locales. |
 | Editar: abrir para editar | Sí: acción de cierre de compra | Sí: acción abierta (en el recurso compartido de red) | [La desprotección en AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) guarda el recurso en la cuenta de almacenamiento de Creative Cloud del usuario (sincronizada por la aplicación de Creative Cloud) de forma predeterminada. |
-| Editar: trabajo en curso fuera de DAM | Sí: recurso disponible en la cuenta de almacenamiento de Creative Cloud del usuario sincronizada con el escritorio. | Sí |  |
+| Editar: trabajo en curso fuera de DAM | Sí: recurso disponible en la cuenta de almacenamiento del Creative Cloud del usuario sincronizada con el escritorio. | Sí |  |
 | Editar - cargar cambios | Sí: acción [de](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) ingreso con comentario opcional | Sí |  |
 | Cargar: archivo único | Sí: carga el documento activo actual | Sí | [Carga mediante interfaz web](managing-assets-touch-ui.md#uploading-assets) |
 | Cargar: varios archivos / estructuras de carpetas jerárquicas | No | Sí | [Cargar mediante interfaz](managing-assets-touch-ui.md#uploading-assets) web o mediante una herramienta o una secuencia de comandos personalizada. |
-| Misc: usuario e inicio de sesión | Reconocimiento del usuario de Creative Cloud que ha iniciado sesión en la aplicación de escritorio de Creative Cloud (SSO) | [!DNL Experience Manager] usuario y credenciales | Los usuarios de ambas soluciones cuentan para la cuota de [!DNL Experience Manager] usuario. |
+| Misc: usuario e inicio de sesión | Se reconoce al usuario Creative Cloud que ha iniciado sesión en la aplicación de escritorio Creative Cloud (SSO) | [!DNL Experience Manager] usuario y credenciales | Los usuarios de ambas soluciones cuentan para la cuota de [!DNL Experience Manager] usuario. |
 | Misc: red y acceso | Requiere acceso desde el escritorio del usuario para [!DNL Experience Manager] realizar la implementación a través de la red | Requiere acceso desde el escritorio del usuario para [!DNL Experience Manager] realizar la implementación a través de la red | [!DNL Adobe Asset Link] no comparte el entorno de proxy de red. |
 | Misc - Migrar un gran número de recursos | No | No | [Guía de migración de recursos](assets-migration-guide.md) |
 
@@ -88,8 +88,8 @@ Para admitir casos de uso de distribución de recursos, se deben considerar otra
 ### Consideraciones al usar [!DNL Experience Manager] e [!DNL Creative Cloud] integrar {#considerations-when-using-aem-and-creative-cloud-integration}
 
 * Consulte las prácticas recomendadas de la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
-* Consulte Integración de [Adobe Stock](aem-assets-adobe-stock.md)
-* Consulte [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
+* Consulte Integración con [Adobe Stock](aem-assets-adobe-stock.md)
+* Consulte Vínculo de recursos de [Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
 
 Este es un breve resumen de las prácticas recomendadas para [!DNL Experience Manager] la integración y [!DNL Creative Cloud] la integración. Lea el resto de este documento para obtener una comprensión detallada de estos.
 
@@ -102,15 +102,16 @@ Este es un breve resumen de las prácticas recomendadas para [!DNL Experience Ma
 
 ### Acceso a [!DNL Adobe Stock] recursos desde [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
-[La integración](/help/assets/aem-assets-adobe-stock.md) de Experience Manager y Adobe Stock ofrece a [!DNL Experience Manager] los usuarios la posibilidad de buscar, previsualización, obtener licencias y guardar recursos desde [!DNL Adobe Stock] hacia [!DNL Experience Manager]. Los recursos con licencia y guardados [!DNL Stock] han seleccionado [!DNL Stock] metadatos, que pueden utilizarse para buscarlos con filtros adicionales.
+[La integración](/help/assets/aem-assets-adobe-stock.md) de Experience Manager y Adobe Stock ofrece a [!DNL Experience Manager] los usuarios la posibilidad de buscar, previsualización, obtener licencias y guardar recursos desde [!DNL Adobe Stock] a [!DNL Experience Manager]. Los recursos con licencia y guardados [!DNL Stock] han seleccionado [!DNL Stock] metadatos, que pueden utilizarse para buscarlos con filtros adicionales.
 
 Algunos puntos importantes sobre esta integración:
 
-* Cuando los recursos de las existencias de Adobe se guardan en [!DNL Experience Manager], se convierten en normales [!DNL Assets], con el binario guardado en el [!DNL Experience Manager] repositorio. Algunos metadatos relacionados con [!DNL Adobe Stock] se guardan para el recurso en [!DNL Experience Manager]; de lo contrario, el proceso de inserción tiene el mismo aspecto que para cualquier otro archivo. Por ejemplo, si las etiquetas inteligentes están activas, las etiquetas se agregan a estos recursos al guardarlos.
+* Cuando los recursos de Adobe se guardan en [!DNL Experience Manager], se convierten en normales [!DNL Assets], con el binario guardado en el [!DNL Experience Manager] repositorio. Algunos metadatos relacionados con [!DNL Adobe Stock] se guardan para el recurso en [!DNL Experience Manager]; de lo contrario, el proceso de inserción tiene el mismo aspecto que para cualquier otro archivo. Por ejemplo, si las etiquetas inteligentes están activas, las etiquetas se agregan a estos recursos al guardarlos.
 * El recurso guardado [!DNL Experience Manager] es una copia, no un vínculo hacia [!DNL Adobe Stock].
 
-**Uso de recursos guardados desde[!DNL Adobe Stock]en[!DNL Experience Manager]en[!DNL Creative Cloud]**. Esta integración es independiente de[!DNL Adobe Asset Link], pero[!DNL Adobe Asset Link]reconoce estos recursos guardados de[!DNL Stock]esa forma y muestra metadatos adicionales y un[!DNL Adobe Stock]logotipo en estos recursos en la interfaz de usuario de la[!DNL Adobe Asset Link]extensión en[!DNL Photoshop],[!DNL Illustrator]o[!DNL InDesign]. Los archivos están disponibles para explorar, abrir, etc., ya que son recursos normales cuando se guardan en[!DNL Experience Manager].
-Los usuarios creativos que trabajen en[!DNL Creative Cloud]aplicaciones con[!DNL Adobe Asset Link]extensión presente, además de tener acceso a recursos con licencia de[!DNL Adobe Stock]a[!DNL Experience Manager], también pueden utilizar[!DNL Creative Cloud]el panel Bibliotecas para buscar, previsualización y obtener[!DNL Adobe Stock]licencias de recursos.[!DNL Assets]desde[!DNL Adobe Stock]licencia y guardado en[!DNL Experience Manager]estarán disponibles para los equipos más amplios que accedan a[!DNL Experience Manager Assets]la implementación, mientras que los elementos de licencia de los elementos creativos desde[!DNL Adobe Stock]el panel[!DNL Creative Cloud]Bibliotecas solo los pondrán a disposición de ellos de forma predeterminada en su[!DNL Creative Cloud]cuenta.
+**Uso de recursos guardados desde[!DNL Adobe Stock]en[!DNL Experience Manager]en[!DNL Creative Cloud]**. Esta integración es independiente de [!DNL Adobe Asset Link], pero [!DNL Adobe Asset Link] reconoce estos recursos guardados de [!DNL Stock] esa forma y muestra metadatos adicionales y un [!DNL Adobe Stock] logotipo en estos recursos en la interfaz de usuario de la [!DNL Adobe Asset Link] extensión en [!DNL Photoshop], [!DNL Illustrator]o [!DNL InDesign]. Los archivos están disponibles para explorar, abrir, etc., ya que son recursos normales cuando se guardan en [!DNL Experience Manager].
+Los usuarios creativos que trabajen en [!DNL Creative Cloud] aplicaciones con [!DNL Adobe Asset Link] extensión presente, además de tener acceso a recursos con licencia de [!DNL Adobe Stock] a [!DNL Experience Manager], también pueden utilizar [!DNL Creative Cloud] el panel Bibliotecas para buscar, previsualización y obtener [!DNL Adobe Stock] licencias de recursos.
+[!DNL Assets] desde [!DNL Adobe Stock] licencia y guardado en [!DNL Experience Manager] estarán disponibles para los equipos más amplios que accedan a [!DNL Experience Manager Assets] la implementación, mientras que los elementos de licencia de los elementos creativos desde [!DNL Adobe Stock] el panel [!DNL Creative Cloud] Bibliotecas solo los pondrán a disposición de ellos de forma predeterminada en su [!DNL Creative Cloud] cuenta.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
@@ -124,7 +125,7 @@ Para diseñar un flujo de trabajo eficiente entre los equipos creativos y de mar
 
 El almacenamiento de recursos en DAM hace que sean fácilmente accesibles y asequibles. Garantiza que numerosos usuarios de toda la organización o el ecosistema puedan aprovechar los recursos, lo que incluye socios, clientes, etc.
 
-La mayoría de las organizaciones solo almacenan los recursos que son relevantes para los procesos de marketing/LOB de flujo descendente (publicándolos en canales como el canal web mediante [!DNL Experience Manager Sites] u otros canales que Adobe Experience Cloud (Marketing Cloud, Advertising Cloud y medidos por Analytics Cloud, lo que proporciona a usuarios/socios, etc.). Además, las organizaciones almacenan activos que pueden estar sujetos a un proceso de revisión/aprobación en DAM. De este modo, DAM almacena principalmente activos que tienen altas posibilidades de aprovechar y evita almacenar activos inactivos.
+La mayoría de las organizaciones solo almacenan los recursos que son relevantes para los procesos de mercadotecnia/LOB de flujo descendente (publicándolos en canales como el canal web a través [!DNL Experience Manager Sites] u otros canales proporcionados por Adobe Experience Cloud: Marketing Cloud, Advertising Cloud y medidos por Analytics Cloud, lo que proporciona a usuarios/socios, etc.). Además, las organizaciones almacenan activos que pueden estar sujetos a un proceso de revisión/aprobación en DAM. De este modo, DAM almacena principalmente activos que tienen altas posibilidades de aprovechar y evita almacenar activos inactivos.
 
 El almacenamiento de recursos también está sujeto a consideraciones técnicas y de utilización de los recursos. DAM proporciona servicios adicionales en torno a los recursos almacenados, como la extracción de metadatos, el control de versiones, la generación de previsualizaciones/transcodificación, la administración de referencias y la adición de información de control de acceso. Estos servicios consumen más tiempo y recursos de infraestructura.
 
@@ -165,7 +166,7 @@ Los siguientes son ejemplos de actualizaciones que normalmente no son relevantes
 
 Generalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la implementación de DAM, incluido el [!DNL Experience Manager] inicio de sesión. [!DNL Experience Manager] y la infraestructura de red se puede configurar para permitir el acceso directo a partes externas -generalmente organizaciones de confianza como las agencias que trabajan para un cliente- para tener acceso a través de la red, por ejemplo a través de una lista de permitidos VPN o IP. [!DNL Experience Manager]
 
-En estos casos, Adobe Asset Link o [!DNL Experience Manager] la aplicación de escritorio ayudan a facilitar el acceso a los recursos finales o aprobados y permiten guardar en DAM los recursos listos para la creación.
+En estos casos, el vínculo de recursos de Adobe o la aplicación de [!DNL Experience Manager] escritorio ayudan a facilitar el acceso a los recursos finales o aprobados y permiten guardar en DAM los recursos listos para la creación.
 
 #### Usuarios creativos sin acceso a DAM {#creative-users-without-access-to-dam}
 
@@ -174,7 +175,7 @@ Es posible que las agencias externas y los autónomos que no tienen acceso direc
 Utilice las siguientes estrategias para proporcionar acceso a los activos finales o aprobados:
 
 * Utilice la aplicación de escritorio si Asset Link no funciona.
-* Utilice el portal [de marcas](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Experience Manager Assets para distribuir recursos de forma segura a socios externos
+* Utilice el portal [de marcas](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Experience Manager Assets para distribuir los recursos de forma segura a socios externos
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilice Control de acceso configurado en la infraestructura de red [!DNL Experience Manager] y necesaria (por ejemplo, VPN y lista de permitidos IP) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario [!DNL Experience Manager] web para obtener recursos y cargar contenido nuevo en su DAM.
 
@@ -185,10 +186,10 @@ Como se explica en este documento, se recomienda llevar a cabo actualizaciones i
 Adobe Asset Link oferta una buena compatibilidad para este caso de uso:
 
 * Cuando los usuarios [!DNL Photoshop], [!DNL InDesign]o [!DNL Illustrator] intentan editar un archivo, ejecutan una operación de desprotección en el recurso determinado
-* El recurso se descarga en segundo plano, se coloca en la cuenta de Creative Cloud de los usuarios sincronizada con el disco por la aplicación de escritorio de Creative Cloud y se activa el indicador de cierre de compra [!DNL Experience Manager] en el recurso para minimizar los conflictos de edición
+* El recurso se descarga en segundo plano, se coloca en la cuenta de Creative Cloud del usuario sincronizada con el disco por la aplicación de escritorio de Creative Cloud y se activa el indicador de cierre de compra [!DNL Experience Manager] en el recurso para minimizar los conflictos de edición
 * A partir de ahí, el usuario trabaja en un archivo almacenado localmente en la ubicación sincronizada y puede seguir trabajando y guardando los cambios necesarios con cualquier frecuencia necesaria
-* Además, como el recurso está en la cuenta de Creative Cloud, también está disponible en otros dispositivos que el usuario pueda tener (por ejemplo, se puede abrir o editar en una aplicación móvil dedicada de Creative Cloud) y se puede compartir con otros usuarios de Creative Cloud con fines de colaboración.
-* Cuando el usuario creativo haya terminado con los cambios, podrá ejecutar una operación de registro en ese archivo en la aplicación de Creative Cloud, con un comentario opcional. El recurso correspondiente de [!DNL Experience Manager] se crea una versión y se actualiza con el nuevo binario. [!DNL Experience Manager] los usuarios como los especialistas en marketing o los usuarios de LOB tienen acceso a los principales cambios de recursos o hitos a través de la interfaz de usuario de la línea de tiempo de los [!DNL Experience Manager] recursos.
+* Además, como el recurso está en la cuenta de Creative Cloud, también está disponible en otros dispositivos que el usuario pueda tener (por ejemplo, puede abrirse o editarse en una aplicación móvil de Creative Cloud dedicada) y puede compartirse con otros usuarios de Creative Cloud con fines de colaboración.
+* Cuando el usuario creativo ha terminado con los cambios, puede ejecutar una operación de protección en ese archivo en la aplicación Creative Cloud, con un comentario opcional. El recurso correspondiente de [!DNL Experience Manager] se crea una versión y se actualiza con el nuevo binario. [!DNL Experience Manager] los usuarios como los especialistas en marketing o los usuarios de LOB tienen acceso a los principales cambios de recursos o hitos a través de la interfaz de usuario de la línea de tiempo de los [!DNL Experience Manager] recursos.
 
 [!DNL Experience Manager] la aplicación de escritorio proporciona un recurso compartido de red para los recursos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan en [!DNL Experience Manager] automáticamente después de un breve tiempo. Con una configuración de este tipo, se cargarían y versionarían los ahorros frecuentes durante la fase de trabajo en curso, lo que crearía muchos problemas de tráfico de red y escalabilidad potenciales, por no hablar de versiones innecesarias en [!DNL Experience Manager] [!DNL Experience Manager].
 
@@ -208,7 +209,7 @@ Puede aprovechar las siguientes funciones de carga:
 
 * Para cargar carpetas grandes o jerárquicas de forma masiva, utilice [!DNL Experience Manager] la aplicación de escritorio que proporciona la funcionalidad de carga [de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#bulk-upload-assets) carpetas. También puede cargar estructuras de carpetas jerárquicas. [!DNL Assets] se cargan en segundo plano y, por lo tanto, no están vinculadas a una sesión de explorador Web
 * Para cargar algunos archivos desde una sola carpeta, arrástrelos directamente a la interfaz web o utilice la opción Crear de la interfaz [!DNL Assets] web.
-* Según los requisitos comerciales, también puede utilizar el cargador personalizado.
+* En función de los requisitos comerciales, también puede utilizar el cargador personalizado.
 
 #### Administrar recursos digitales directamente desde el escritorio {#managing-digital-assets-directly-from-desktop}
 
