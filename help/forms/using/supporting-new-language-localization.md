@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -26,27 +26,38 @@ La localización de formularios adaptables se basa en dos tipos de diccionarios 
 
 **Diccionario** específico del formulario Contiene cadenas utilizadas en formularios adaptables. Por ejemplo, etiquetas, nombres de campo, mensajes de error, descripciones de ayuda, etc. Se administra como un conjunto de archivos XLIFF para cada configuración regional y se puede acceder a ellos en `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Diccionarios** globales Existen dos diccionarios globales, administrados como objetos JSON, en la biblioteca de clientes de AEM. Estos diccionarios contienen mensajes de error predeterminados, nombres de mes, símbolos de moneda, patrones de fecha y hora, etc. Puede encontrar estos diccionarios en CRXDe Lite en /libs/fd/xfaforms/clientlibs/I18N. Estas ubicaciones contienen carpetas independientes para cada configuración regional. Debido a que los diccionarios globales generalmente no se actualizan con frecuencia, mantener archivos JavaScript separados para cada configuración regional permite a los navegadores almacenarlos en caché y reducir el uso del ancho de banda de la red al acceder a diferentes formularios adaptables en el mismo servidor.
+**Diccionarios** globales Existen dos diccionarios globales, administrados como objetos JSON, en AEM biblioteca de clientes. Estos diccionarios contienen mensajes de error predeterminados, nombres de mes, símbolos de moneda, patrones de fecha y hora, etc. Puede encontrar estos diccionarios en CRXDe Lite en /libs/fd/xfaforms/clientlibs/I18N. Estas ubicaciones contienen carpetas independientes para cada configuración regional. Debido a que los diccionarios globales generalmente no se actualizan con frecuencia, mantener archivos JavaScript separados para cada configuración regional permite a los navegadores almacenarlos en caché y reducir el uso del ancho de banda de la red al acceder a diferentes formularios adaptables en el mismo servidor.
 
 ### Funcionamiento de la localización de formularios adaptables {#how-localization-of-adaptive-form-works}
 
-Cuando se procesa un formulario adaptable, identifica la configuración regional solicitada observando los siguientes parámetros en el orden especificado:
+Existen dos métodos para identificar la configuración regional del formulario adaptable. Cuando se procesa un formulario adaptable, identifica la configuración regional solicitada mediante:
 
-* Parámetro de solicitud `afAcceptLang`Para anular la configuración regional del navegador de los usuarios, puede pasar la variable 
+* observe el `[local]` selector en la dirección URL del formulario adaptable. The format of the URL is `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. El uso `[local]` del selector permite almacenar en la caché un formulario adaptable.
+
+* observar los siguientes parámetros en el orden especificado:
+
+   * Parámetro de solicitud `afAcceptLang`Para anular la configuración regional del navegador de los usuarios, puede pasar la variable 
 `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa:
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* Configuración regional del explorador establecida para el usuario, que se especifica en la solicitud mediante el `Accept-Language` encabezado.
+   * Configuración regional del explorador establecida para el usuario, que se especifica en la solicitud mediante el `Accept-Language` encabezado.
 
-* Configuración de idioma del usuario especificado en AEM.
+   * Configuración de idioma del usuario especificado en AEM.
 
-Una vez identificada la configuración regional, los formularios adaptables seleccionan el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, se utiliza el diccionario inglés (en).
+   * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración regional del explorador,
+      * Abra el administrador de configuración. La dirección URL es `http://[server]:[port]/system/console/configMgr`
+      * Localice y abra la configuración del formulario **[!UICONTROL adaptable y el Canal]** web de comunicación interactiva.
+      * Cambie el estado de la opción **[!UICONTROL Usar configuración regional]** del explorador y **[!UICONTROL guarde]** la configuración.
+
+Una vez identificada la configuración regional, los formularios adaptables seleccionan el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utiliza el diccionario para el idioma en el que se creó el formulario adaptable.
+
+Si no hay información de configuración regional, el formulario adaptable se entrega en el idioma original del formulario. El idioma original es el idioma utilizado al desarrollar el formulario adaptable.
 
 Si no existe una biblioteca de cliente para la configuración regional solicitada, busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (inglés sudafricano) y la biblioteca del cliente `en_ZA` no existe, el formulario adaptable utilizará la biblioteca del cliente para el idioma `en` (inglés), si existe. Sin embargo, si no existe ninguno, el formulario adaptable utiliza el diccionario para la configuración `en` regional.
 
 ## Añadir compatibilidad con localizaciones para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
-Actualmente, los AEM Forms admiten la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR).
+Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR).
 
 Para añadir compatibilidad con una nueva configuración regional en tiempo de ejecución de formularios adaptables:
 
@@ -87,7 +98,7 @@ Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>`, con ca
 Añada los siguientes archivos a la biblioteca del cliente:
 
 * **La definición de i18n.js** `guidelib.i18n`, que tiene patrones de &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` para las especificaciones `<locale>` [](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)de XFA descritas en la Especificación de conjuntos de configuraciones regionales. También puede ver cómo se define para otras configuraciones regionales admitidas en `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
-* **LogMessages.js** definiendo `guidelib.i18n.strings` y `guidelib.i18n.LogMessages` para el `<locale>` como se define en `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
+* **LogMessages.js** definiendo `guidelib.i18n.strings` y `guidelib.i18n.LogMessages` para la `<locale>` definida en `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.txt** que contiene lo siguiente:
 
 ```text
@@ -110,7 +121,7 @@ El `<locale>` aparecerá en `https://'[server]:[port]'/libs/cq/i18n/translator.h
 
 ### Restart the server {#restart-the-server}
 
-Reinicie el servidor AEM para que la configuración regional agregada entre en vigor.
+Reinicie el servidor de AEM para que la configuración regional agregada entre en vigor.
 
 ## Bibliotecas de muestra para agregar compatibilidad con español {#sample-libraries-for-adding-support-for-spanish}
 
