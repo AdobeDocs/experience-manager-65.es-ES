@@ -1,12 +1,12 @@
 ---
-title: Reutilice recursos con MSM para [!DNL Adobe Experience Manager Assets].
+title: Reutilización de recursos mediante MSM
 description: Utilice recursos en varias páginas o carpetas que se deriven de los recursos principales y estén vinculados a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 10%
 
 ---
@@ -130,9 +130,9 @@ Para comprobar la información y los estados de un recurso de Live Copy o una ca
 1. Seleccione una carpeta de origen. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**. Este tablero proporciona un estado de nivel superior de todos los recursos secundarios.
 
-   ![Estados de Vista de copias en vivo en la consola de Live Copy del origen](assets/livecopy-statuses.png)
+   ![Estados de vista de copias en vivo en la consola de Live Copy del origen](assets/livecopy-statuses.png)
 
-   *Figura: Estados de Vista de copias en vivo en la consola[!UICONTROL de]Live Copy del origen.*
+   *Figura: Estados de vista de copias en vivo en la consola[!UICONTROL de]Live Copy del origen.*
 
 1. Para ver la información detallada sobre cada recurso en la carpeta Live Copy, seleccione un recurso y haga clic en **[!UICONTROL Estado de relación]** en la barra de herramientas.
 
@@ -296,7 +296,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 >* La configuración de los bloqueos MSM, en las propiedades de página (IU táctil), no es compatible con MSM para [!DNL Assets].
 
 
-## Efectos de las tareas de gestión de activos en las copias en vivo {#manageassets}
+## Impacto de las tareas de gestión de activos en las copias en vivo {#manageassets}
 
 Las copias en vivo y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de recursos en [!DNL Experience Manager] tienen un impacto específico en las copias en vivo.
 
