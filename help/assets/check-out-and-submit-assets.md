@@ -1,11 +1,11 @@
 ---
-title: Proteja y extraiga los recursos digitales para editarlos.
+title: Desproteger y desproteger recursos para editarlos
 description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inic
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Puede hacer clic en Propiedades de **[!UICONTROL Vista]** para editar los metadatos del recurso bloqueado.
+   Puede hacer clic en Propiedades **[!UICONTROL de]** Vista para editar los metadatos del recurso bloqueado.
 
 1. Haga clic en **[!UICONTROL Editar]** para abrir el recurso en modo de edición.
 
