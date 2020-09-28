@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Esenciales de puntuación y distintivos {#scoring-and-badges-essentials}
 
-La función de puntuación y distintivos para AEM Communities permite identificar y premiar a los miembros de la comunidad.
+La función de puntuación y distintivos de AEM Communities permite identificar y premiar a los miembros de la comunidad.
 
 Los detalles de la configuración de la función se describen en
 
@@ -35,7 +35,7 @@ Esta página contiene detalles técnicos adicionales:
 
 >[!CAUTION]
 >
->La estructura de implementación visible en CRXDE Lite está sujeta a cambios.
+>La estructura de implementación visible en el CRXDE Lite está sujeta a cambios.
 
 ## Visualización de distintivos {#displaying-badges}
 
@@ -102,7 +102,7 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
 
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![debug-scoring-log](assets/debug-scoring-log.png)
 
 Para ver las entradas de registro:
 
@@ -118,17 +118,17 @@ Para ver las entradas de registro:
 
    * Por ejemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png)
+![registro de puntuación](assets/scoring-log.png)
 
 ## UGC para puntaje y señalización {#ugc-for-scoring-and-badging}
 
 Es posible realizar una vista del UGC en relación con la puntuación y la insignia cuando el SRP elegido sea JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte Información general sobre el Almacenamiento [de contenido](/help/communities/working-with-srp.md) de la comunidad y el proveedor de recursos de [Almacenamiento](/help/communities/srp.md)).
 
-Las descripciones para acceder a los datos de puntuación y marca utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Las descripciones para acceder a los datos de puntuación y de identificación utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP del autor**: experimentar en el entorno del autor resulta en UGC que solo es visible desde el entorno del autor.
 
-**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](/help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](/help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [habilitar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 La ubicación de base de UGC en el JSRP es `/content/usergenerated/asi/jcr/`.
 
@@ -147,7 +147,7 @@ Los últimos Javadocs para el paquete de funciones instalado están disponibles 
 
 Las capturas de pantalla de los datos del repositorio provienen de la configuración de la puntuación y la identificación para un foro en dos sitios de AEM diferentes:
 
-1. Un sitio de AEM *con* un identificador único (sitio de comunidad creado con el asistente):
+1. Un sitio AEM *con* un identificador único (sitio de comunidad creado con el asistente):
 
    * Uso del sitio Tutorial de introducción (participación) creado durante el tutorial de [introducción](/help/communities/getting-started.md)
    * Localizar el nodo de la página del foro
@@ -178,7 +178,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    * Un usuario inicia sesión, crea un tema del foro y recibe una insignia de bronce
 
 
-1. Un sitio de AEM *sin* una identificación única:
+1. Un sitio AEM *sin* una identificación única:
 
    * Uso de la guía Componentes [de comunidad](/help/communities/components-guide.md)
    * Localizar el nodo de la página del foro
@@ -217,14 +217,14 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
    Como un usuario ha ganado dos insignias de bronce y ha recibido una insignia de moderador, así es como aparece el usuario con su entrada en el foro.
 
-![chlimage_1-250](assets/chlimage_1-250.png)
+   ![moderador](assets/moderator.png)
 
 >[!NOTE]
 >
 >Este ejemplo no sigue estas optimizaciones:
 >
 >* Los nombres de las reglas de puntuación deben ser únicos globalmente; no deben terminar con el mismo nombre.
-   >  Un ejemplo de lo que *no* hay que hacer:
+   >  Un ejemplo de lo que *no* se debe hacer:
    >  /libs/settings/community/scoring/rules/site1/forums-scoring
    >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
@@ -245,7 +245,7 @@ Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene
 
 El nodo secundario de `scoring` es el nombre de la regla de puntuación. Por lo tanto, una práctica recomendada es que los nombres de las reglas de puntuación en un servidor sean globalmente únicos.
 
-Para el sitio de participación de Geometrixx, el usuario y su puntuación se encuentran en una ruta con el nombre de la regla de puntuación, la identificación del sitio de la comunidad ( `engage-ba81p`), una identificación única y la identificación del usuario:
+Para el sitio de participación en la Geometrixx, el usuario y su puntuación se encuentran en una ruta con el nombre de la regla de puntuación, la identificación del sitio de la comunidad ( `engage-ba81p`), una identificación única y la identificación del usuario:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
@@ -255,7 +255,7 @@ Para el sitio de la guía de componentes de comunidad, el usuario y su puntuaci�
 
 La puntuación se almacena en la propiedad `scoreValue_tl` que sólo puede contener un valor o hacer referencia indirectamente a un atomicCounter.
 
-![chlimage_1-251](assets/chlimage_1-251.png)
+![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### Acceso a la insignia UGC {#access-badging-ugc}
 
@@ -271,11 +271,11 @@ Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distinti
 
 #### Distintivo concedido {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png)
+![premiado-badging-ugc](assets/access-badging-ugc.png)
 
 #### Distintivo asignado {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png)
+![distintivo asignado](assets/assigned-badge.png)
 
 ## Información adicional {#additional-information}
 
