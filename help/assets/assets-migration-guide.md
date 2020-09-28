@@ -1,11 +1,11 @@
 ---
-title: Migrar recursos [!DNL Adobe Experience Manager Assets] masivamente.
+title: Migrar recursos de forma masiva
 description: Describe cómo introducir [!DNL Adobe Experience Manager]recursos, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1798'
 ht-degree: 8%
 
 ---
@@ -124,7 +124,7 @@ En este caso, los recursos ya están rellenados con metadatos y las representaci
 
 1. Deshabilitar flujos de trabajo: Como está migrando representaciones junto con nuestros recursos, desea deshabilitar los iniciadores de flujo de trabajo para el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM.
 
-1. Migrar etiquetas: Dado que ya tiene etiquetas cargadas en la implementación de origen [!DNL Experience Manager] , puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
+1. Migrar etiquetas: Como ya tiene etiquetas cargadas en la implementación de origen [!DNL Experience Manager] , puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
 
 1. Migrar recursos: Existen dos herramientas recomendadas para mover recursos de una [!DNL Experience Manager] implementación a otra:
 
