@@ -1,11 +1,11 @@
 ---
-title: Amplíe la funcionalidad de búsqueda de [!DNL Adobe Experience Manager Assets].
+title: Amplíe la funcionalidad de búsqueda.
 description: Extienda las capacidades [!DNL Adobe Experience Manager Assets] de búsqueda más allá de los valores predeterminados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ Para superponer los predicados preconfigurados, copie el `facets` nodo de `/libs
 
 >[!NOTE]
 >
->De forma predeterminada, la estructura de directorio en `/apps` no existe, así que créela. Asegúrese de que los tipos de nodo coincidan con los de `/libs`.
+>De forma predeterminada, la estructura de directorio en `/apps` no existe, así que créela. Asegúrese de que los tipos de nodo coinciden con los de `/libs`.
 
 ## Añadir fichas {#adding-tabs}
 
