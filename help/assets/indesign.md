@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesign Server]'
+title: ' [!DNL Assets] Integrate con [!DNL InDesign Server]'
 description: Aprenda a [!DNL Adobe Experience Manager Assets] integrarse con [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 4%
@@ -23,7 +23,7 @@ Para cargar archivos completamente a [!DNL Experience Manager Assets] los que ha
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] se ofrece en dos ofertas distintas. [Aplicación de escritorio de Adobe InDesign](https://www.adobe.com/products/indesign.html) que se utiliza para diseñar maquetaciones de página para impresión y distribución digital. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) le permite crear documentos automatizados mediante programación en función de lo que haya creado con [!DNL InDesign]. Funciona como un servicio que ofrece una interfaz a su motor [ExtendScript](https://www.adobe.com/devnet/scripting.html) .Las secuencias de comandos se escriben en [!DNL ExtendScript], lo cual es similar a [!DNL JavaScript]. Para obtener información sobre [!DNL InDesign] secuencias de comandos, consulte [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] se ofrece en dos ofertas distintas. [Aplicación de escritorio de Adobe InDesign](https://www.adobe.com/products/indesign.html) que se utiliza para diseñar diseños de página para impresión y distribución digital. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) le permite crear mediante programación documentos automatizados en función de lo que haya creado con [!DNL InDesign]. Funciona como un servicio que ofrece una interfaz a su motor de [ExtendScript](https://www.adobe.com/devnet/scripting.html) .Las secuencias de comandos se escriben en [!DNL ExtendScript], lo cual es similar a [!DNL JavaScript]. Para obtener información sobre [!DNL InDesign] secuencias de comandos, consulte [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## Funcionamiento de la extracción {#how-the-extraction-works}
 
@@ -31,7 +31,7 @@ El [!DNL Adobe InDesign Server] se puede integrar con [!DNL Experience Manager A
 
 >[!NOTE]
 >
->Las versiones anteriores de [!DNL Experience Manager] fueron capaces de extraer XMP y la miniatura, ahora se pueden extraer todos los medios.
+>Las versiones anteriores de [!DNL Experience Manager] fueron capaces de extraer XMP y la miniatura, ahora todos los medios se pueden extraer.
 
 1. Cargue el archivo INDD en [!DNL Experience Manager Assets].
 1. Un marco envía secuencias de comandos a los [!DNL InDesign Server] mediante SOAP (Simple Object Access Protocol).
@@ -47,7 +47,7 @@ Esta secuencia de comandos de comando:
 
    >[!NOTE]
    >
-   >IDML es un formato basado en XML que procesa todo el contenido del [!DNL InDesign] archivo. Se almacena como un paquete comprimido mediante compresión [ZIP](https://www.techterms.com/definition/zip) . Para obtener más información, consulte [InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML es un formato basado en XML que procesa todo el contenido del [!DNL InDesign] archivo. Se almacena como un paquete comprimido mediante compresión [ZIP](https://www.techterms.com/definition/zip) . Para obtener más información, consulte Formatos de intercambio de [InDesign INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
@@ -61,12 +61,12 @@ Esta secuencia de comandos de comando:
 
 ## Integrar el [!DNL InDesign Server] con el Experience Manager {#integrating-the-indesign-server-with-aem}
 
-Para integrar el [!DNL InDesign Server] proxy con [!DNL Experience Manager Assets] y después de configurarlo, debe:
+Para integrar el [!DNL InDesign Server] para su uso con [!DNL Experience Manager Assets] y después de configurar el proxy, debe:
 
-1. [Instale InDesign Server](#installing-the-indesign-server).
+1. [Instale el InDesign Server](#installing-the-indesign-server).
 1. Si es necesario, [configure el flujo de trabajo](#configuring-the-aem-assets-workflow)de Experience Manager Assets.
 Esto solo es necesario si los valores predeterminados no son adecuados para la instancia.
-1. Configure un trabajador [proxy para InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
+1. Configure un programa de trabajo [proxy para el InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
 ### Instale el [!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -108,11 +108,11 @@ Para personalizar, puede editar la pestaña **[!UICONTROL Argumentos]** del paso
 
 Argumentos de extracción de medios y rutas de secuencias de comandos
 
-* **Biblioteca** ExtendScript: Se trata de una sencilla biblioteca de métodos http get/post, que requieren los demás scripts.
+* **Biblioteca** de ExtendScript: Se trata de una sencilla biblioteca de métodos http get/post, que requieren los demás scripts.
 
 * **Ampliar secuencias de comandos**: Aquí puede especificar diferentes combinaciones de scripts. Si desea que sus propias secuencias de comandos se ejecuten en el [!DNL InDesign Server], guarde las secuencias de comandos en `/apps/settings/dam/indesign/scripts`.
 
-Para obtener información sobre [!DNL Adobe InDesign] secuencias de comandos, consulte la documentación para desarrolladores [de InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Para obtener información sobre [!DNL Adobe InDesign] secuencias de comandos, consulte la documentación para desarrolladores de [InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -150,7 +150,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 >
 >El programa de trabajo reside en la instancia de proxy.
 
-1. En la consola Herramientas, expanda Configuraciones **[!UICONTROL de]** Cloud Service en el panel izquierdo. A continuación, expanda Configuración **[!UICONTROL de proxy de]** nube.
+1. En la consola Herramientas, expanda Configuraciones **[!UICONTROL de]** Cloud Services en el panel izquierdo. A continuación, expanda Configuración **[!UICONTROL de proxy de]** nube.
 
 1. Haga doble clic en el programa de **[!UICONTROL IDS de trabajo]** para abrirlo y configurarlo.
 
