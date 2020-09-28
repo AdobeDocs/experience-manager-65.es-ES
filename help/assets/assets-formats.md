@@ -1,9 +1,9 @@
 ---
-title: Formatos de archivo admitidos para procesamiento en [!DNL Adobe Experience Manager Assets].
+title: Formatos de archivo y tipos MIME admitidos
 description: Formatos de archivo y tipos MIME admitidos [!DNL Assets] and [!DNL Dynamic Media] por y las características admitidas para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 10%
@@ -47,7 +47,7 @@ Los formatos de imagen rasterizada admitidos en [!DNL Assets] :
 
 Los formatos de imagen rasterizada admitidos en [!DNL Dynamic Media] :
 
-| Formato | Cargar<br> (formato de entrada) | Creación<br> de ajustes preestablecidos<br> de imagen<br> (formato de salida) | Representación dinámica<br> de Previsualización<br> | Entregar<br> representación dinámica<br> | Descargar<br> representación dinámica<br> |
+| Formato | Cargar<br> (formato de entrada) | Creación<br> de ajustes preestablecidos<br> de imagen<br> (formato de salida) | Representación dinámica<br> de previsualización<br> | Entregar<br> representación dinámica<br> | Descargar<br> representación dinámica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -76,7 +76,7 @@ Se admite la siguiente lista de formatos 3D.
 
 See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
-| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | previsualización de miniaturas | previsualización 3D | Dynamic Media envío |
+| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Previsualización de miniaturas | previsualización 3D | Envío de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -89,7 +89,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 La siguiente lista describe los subtipos de formatos de archivo de imagen rasterizada que *no son* compatibles con Dynamic Media.
 
-Consulte también [Detección de formatos de archivo no admitidos para Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Consulte también [Detección de formatos de archivo no compatibles para Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * Archivos PNG con un tamaño de fragmento IDAT bueno de 100 MB.
 * Archivos PSB.
@@ -140,9 +140,9 @@ La [!DNL Adobe Camera Raw] biblioteca permite [!DNL Assets] la ingesta de imáge
 
 ## Formatos [!DNL Assets] de documento admitidos {#supported-document-formats}
 
-Los formatos de Documento admitidos para las funciones de administración de recursos son los siguientes:
+Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes:
 
-| Formato | Almacenamiento | [Gestión de metadatos](metadata.md) | extracción de texto<br> completo | [Extracción de metadatos](metadata.md) | Generación de miniaturas<br> | [extracción de subbase](managing-linked-subassets.md) | [Reescritura de metadatos](xmp-writeback.md) | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
+| Formato | Almacenamiento | [Gestión de metadatos](metadata.md) | Extracción de texto<br> completo | [Extracción de metadatos](metadata.md) | Generación de miniaturas<br> | [Extracción de subbase](managing-linked-subassets.md) | [Reescritura de metadatos](xmp-writeback.md) | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
@@ -165,7 +165,7 @@ Los formatos de Documento admitidos para las funciones de administración de rec
 
 ## Formatos de documento admitidos en Dynamic Media {#supported-document-formats-dynamic-media}
 
-| Formato | Cargar<br> (formato de entrada) | Creación<br> de ajustes preestablecidos<br> de imagen<br> (formato de salida) | Representación dinámica<br> de Previsualización<br> | Entregar<br> representación dinámica<br> | Descargar<br> representación dinámica<br> |
+| Formato | Cargar<br> (formato de entrada) | Creación<br> de ajustes preestablecidos<br> de imagen<br> (formato de salida) | Representación dinámica<br> de previsualización<br> | Entregar<br> representación dinámica<br> | Descargar<br> representación dinámica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -175,7 +175,7 @@ Además de la funcionalidad anterior, considere lo siguiente:
 
 * Para utilizar Dynamic Media para generar representaciones dinámicas para archivos PDF, consulte Formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para utilizar Dynamic Media para la previsualización y generación de representaciones dinámicas para archivos AI, consulte Formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para utilizar Dynamic Media para previsualización y generar representaciones dinámicas para archivos AI, consulte Formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para utilizar Dynamic Media para generar representaciones dinámicas para archivos INDD, consulte Formato [de archivo](../assets/managing-image-presets.md#indesign-indd-file-format)InDesign (INDD).
 
@@ -227,7 +227,7 @@ Además de la funcionalidad anterior, considere lo siguiente:
 
 Los formatos de archivo admitidos y la aplicabilidad de los flujos de trabajo DAM comunes se tratan en la siguiente tabla.
 
-| Formatos | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Dynamic Media Envío |
+| Formatos | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Envío de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -239,7 +239,7 @@ Los formatos de archivo admitidos y la aplicabilidad de los flujos de trabajo DA
 
 La aplicabilidad de flujos de trabajo DAM comunes para algunos otros formatos de archivo se describe en la tabla siguiente. La funcionalidad habitual de DAM, como almacenamiento, control de versiones, ACL, flujo de trabajo, publicación y administración de metadatos, excepto Dynamic Media Envío, es compatible con todos los archivos.
 
-| Formatos | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Dynamic Media Envío |
+| Formatos | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Envío de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
