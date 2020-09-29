@@ -3,9 +3,9 @@ title: Carpetas privadas para compartir recursos
 description: Obtenga información sobre cómo crear una carpeta privada en [!DNL Adobe Experience Manager Assets] su equipo y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -82,15 +82,4 @@ Puede eliminar una carpeta seleccionando la carpeta y la opción [!UICONTROL Eli
 >[!NOTE]
 >
 >Si elimina una carpeta utilizando el método anterior de la interfaz de usuario, también se eliminarán los grupos de usuarios asociados.
-Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante [JMX](#group-clean-up-jmx).
-
-### Utilizar JMX para limpiar los grupos de usuarios no utilizados {#group-clean-up-jmx}
-
-Para limpiar el repositorio de grupos de usuarios no utilizados:
-
-1. Abra el JMX para limpiar los grupos redundantes para Recursos en la instancia de [!DNL Experience Manager] creación desde `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-Por ejemplo, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-
-1. Invocar el `clean` método desde este JMX.
-
-Puede ver que todos los grupos de usuarios redundantes o los grupos generados automáticamente (que se crean al crear una carpeta con el mismo nombre que un grupo eliminado anteriormente) se eliminan de la ruta `/home/groups/mac/default/<user_name>/<folder_name>`.
+Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante el `clean` método JMX en la instancia de autor (http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundante+groups+for+Assets).
