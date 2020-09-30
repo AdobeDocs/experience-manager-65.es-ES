@@ -3,10 +3,10 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementación remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
 workflow-type: tm+mt
-source-wordcount: '2103'
-ht-degree: 44%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -157,7 +157,9 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
-## Restricciones          {#limitations}
+## Restricciones          and best practices {#tips-and-limitations}
+
+* Para obtener información sobre el uso de los recursos, configure la funcionalidad de [Asset Insight](/help/assets/touch-ui-asset-insights.md) en la [!DNL Sites] instancia.
 
 ### Permisos y administración de recursos {#permissions-and-managing-assets}
 
@@ -165,7 +167,7 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 * Los recursos locales son copias de solo lectura. [!DNL Experience Manager]Los componentes de realizan ediciones no destructivas en los recursos. No se permiten otras ediciones.
 * Los recursos recuperados localmente solo están disponibles para la creación. Los flujos de trabajo de actualización de recursos no se pueden aplicar y los metadatos no se pueden editar.
 * Solo se admiten las imágenes y los formatos de documento enumerados. [!DNL Dynamic Media]Los recursos de , los fragmentos de contenido y los fragmentos de experiencia no son admitidos.
-* No se recuperan los esquemas de metadatos.
+* [!DNL Experience Manager] no captura los esquemas de metadatos. Significa que es posible que no se muestren todos los metadatos buscados. Si el esquema se actualiza por separado, se muestran todas las propiedades.
 * Todos los [!DNL Sites] autores tienen permisos de lectura en las copias recuperadas, incluso si los autores no pueden acceder a la implementación de DAM remota.
 * No se admiten las API para personalizar la integración.
 * La funcionalidad admite la búsqueda y el uso ininterrumpidos de recursos remotos. Para que varios recursos remotos estén disponibles en la implementación local, considere migrar los recursos. Consulte [Guía de migración de recursos](assets-migration-guide.md).
@@ -184,6 +186,7 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 * La operación de recuperación expira al cabo de 5 segundos. Los autores pueden tener problemas para recuperar recursos, por ejemplo, si hay problemas de red. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Las ediciones simples que no son destructivas y que se admiten mediante el componente `Image`, se pueden realizar en los recursos recuperados. Los recursos son de solo lectura.
 * El único método para recuperar el recurso es arrastrarlo a una página. No hay soporte API ni otros métodos para recuperar un recurso para actualizarlo.
+* Si los recursos se retiran del DAM, se seguirán utilizando en [!DNL Sites] las páginas.
 
 ## Solución de problemas {#troubleshoot}
 
