@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 Utilice la instancia de autor para crear un sitio de comunidad. En la instancia de AEM Author:
 
 1. Inicie sesión con privilegios de administrador.
-1. Desde la navegación global, vaya a **Navegación, Comunidades, Sitios.**
+1. Desde la navegación global, vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]**.
 
 La consola Sitios de comunidades proporciona un asistente para guiar uno a través de los pasos para crear un sitio de comunidad. Es posible avanzar al paso `Next` o `Back` al paso anterior antes de comprometer el sitio en el paso final.
 
@@ -50,7 +50,7 @@ En el paso [Plantilla de](/help/communities/sites-console.md#step2013asitetempla
 
 * **Nombre** del sitio de la comunidad: participar
 
-   * Compruebe el Doble del nombre, ya que no es fácil cambiarlo después de crear el sitio
+   * Compruebe el doble del nombre, ya que no es fácil cambiarlo después de crear el sitio
    * La dirección URL inicial se mostrará debajo del nombre del sitio de la comunidad
    * Para una dirección URL válida, anexe un código de idioma base + &quot;.html&quot;
    * *Por ejemplo*, https://localhost:4502/content/sites/ `engage/en.html`
@@ -71,7 +71,7 @@ Seleccione el estilo que desee aplicar a la plantilla. Cuando se selecciona, el 
 
 (Opcional) Cargue una imagen de pancarta para mostrarla en las páginas del sitio. La pancarta se fija en el borde izquierdo del explorador, entre el encabezado del sitio de la comunidad y los vínculos de navegación. La altura de la pancarta se recorta a 120 píxeles. No se puede cambiar el tamaño del letrero para que se ajuste al ancho del navegador y a la altura de 120 píxeles.
 
-![chlimage_1-284](assets/chlimage_1-284.png)
+![marca de comunidad-sitio](assets/community-site-branding.png)
 
 ![upload-image-site](assets/upload-image-site.png)
 
@@ -81,7 +81,7 @@ Seleccione **Siguiente**.
 
 En el paso Configuración, antes de seleccionar `Next`, tenga en cuenta que hay siete secciones que proporcionan acceso a configuraciones que incluyen administración de usuarios, etiquetado, moderación, administración de grupos, análisis, traducción y habilitación.
 
-Visite el tutorial [Introducción a los AEM Communities para la habilitación](/help/communities/getting-started-enablement.md) para experimentar el trabajo con las funciones de habilitación.
+Visite el tutorial [Introducción a AEM Communities para habilitar](/help/communities/getting-started-enablement.md) para experimentar el trabajo con las funciones de habilitación.
 
 #### Administración de usuarios {#user-management}
 
@@ -102,14 +102,14 @@ Marcar todas las casillas de verificación para Administración [de usuarios](/h
 
 #### TAGGING {#tagging}
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando Áreas de nombres de AEM previamente definidas a través de la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](/help/communities/setup.md#create-tutorial-tags)Tutorial).
+Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando AEM Áreas de nombres definidas previamente mediante la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](/help/communities/setup.md#create-tutorial-tags)Tutorial).
 
 La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
 
 * Tipo `tut`
 * Seleccione `Tutorial`
 
-![chlimage_1-286](assets/chlimage_1-286.png)
+![etiquetado](assets/tagging.png)
 
 #### ROLES {#roles}
 
@@ -133,15 +133,15 @@ Por ejemplo,
 
 Acepte la configuración global predeterminada para [moderar](/help/communities/sites-console.md#moderation) el contenido generado por el usuario (UGC).
 
-![chlimage_1-287](assets/chlimage_1-287.png)
+![moderación](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
-Si Adobe Analytics tiene licencia y se ha configurado un marco de trabajo y un servicio en la nube de Analytics, es posible activar Analytics y seleccionar el marco de trabajo.
+Si Adobe Analytics tiene licencia y se ha configurado un servicio en la nube y un marco de trabajo de Analytics, es posible activar Analytics y seleccionar el marco.
 
-Consulte las funciones de Configuración de [Analytics para comunidades](/help/communities/analytics.md).
+Consulte Configuración [de Analytics para funciones](/help/communities/analytics.md)de comunidades.
 
-![chlimage_1-288](assets/chlimage_1-288.png)
+![análisis](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -154,7 +154,7 @@ La configuración [de](/help/communities/sites-console.md#translation) traducci�
 * Seleccionar **Traducir toda la página**
 * Opción para dejar persistencia predeterminada
 
-![chlimage_1-289](assets/chlimage_1-289.png)
+![conversion-settings](assets/translation-settings.png)
 
 #### ENABLEMENT {#enablement}
 
@@ -164,13 +164,13 @@ Para ver un tutorial similar con el fin de crear rápidamente una comunidad [de]
 
 Seleccione **Siguiente**.
 
-![chlimage_1-290](assets/chlimage_1-290.png)
+![habilitación](assets/enablement.png)
 
 ### Paso 4: Crear sitio de comunidades {#step-create-communities-site}
 
 Seleccione **Crear.**
 
-![chlimage_1-291](assets/chlimage_1-291.png)
+![create-site](assets/create-site2.png)
 
 Cuando se completa el proceso, la carpeta del nuevo sitio se muestra en la consola Comunidades - Sitios.
 
@@ -192,7 +192,7 @@ De izquierda a derecha están:
 
 * **Abrir sitio**
 
-   Seleccione el icono del lápiz para abrir el sitio de la comunidad en modo de edición de autor, para agregar o configurar componentes de página
+   Seleccione el icono del lápiz para abrir el sitio de la comunidad en modo de edición del autor, para agregar o configurar componentes de página
 
 * **Editar sitio**
 
@@ -236,11 +236,9 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 
 Después de asegurarse de que el servidor de publicación se está ejecutando, seleccione el icono del mundo para publicar el sitio de comunidad.
 
-![chlimage_1-292](assets/chlimage_1-292.png)
+![publish-site](assets/publish-site.png)
 
-Cuando el sitio de la comunidad se ha publicado correctamente, aparece brevemente un mensaje:
-
-![chlimage_1-293](assets/chlimage_1-293.png)
+Cuando el sitio de la comunidad se ha publicado correctamente, aparece brevemente un mensaje &quot;Sitio publicado&quot;.
 
 ### Nuevos grupos de usuarios de la comunidad {#new-community-user-groups}
 
@@ -261,15 +259,15 @@ Tenga en cuenta que [Aaron McDonald](/help/communities/tutorials.md#demo-users) 
 * Moderadores de participación de la comunidad
 * Miembros de participación de la comunidad (indirectamente como miembro del grupo Moderadores)
 
-![chlimage_1-294](assets/chlimage_1-294.png)
+![user-group](assets/user-group.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![participar](assets/engage.png)
 
 ## Error de configuración para autenticación {#configure-for-authentication-error}
 
-Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](/help/communities/sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación volverá a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
+Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](/help/communities/sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación vuelve a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
 Añadir un `Login Page Mapping` como
 
@@ -321,13 +319,13 @@ Para empezar:
 >Para deshabilitar, simplemente anteponga el valor de la `sling:match` propiedad con un prefijo &#39;x&#39; - `xlocalhost.4503/$` - y **Guardar todo**.
 
 
-![chlimage_1-297](assets/chlimage_1-297.png)
+![pasos opcionales](assets/optional-steps.png)
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
 Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo está `localhost.4503`separado por un separador de puntos y no `localhost:4503` por un separador de puntos, ya que no `localhost`es un prefijo de Área de nombres válido.
 
-![chlimage_1-298](assets/chlimage_1-298.png)
+![error-message](assets/error-message.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
@@ -335,7 +333,7 @@ El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión normal
 
 ### Modificar el sitio {#modify-the-site}
 
-Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](/help/communities/sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación de AEM estándar.
+Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](/help/communities/sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación AEM estándar.
 
 Además, los administradores pueden utilizar el icono [](/help/communities/sites-console.md#modifying-site-properties) Editar sitio para modificar las propiedades del sitio, como el título.
 
@@ -343,6 +341,6 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, vista la documentación sobre la gestión [](/help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](/help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
 
