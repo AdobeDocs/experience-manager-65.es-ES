@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1728'
+ht-degree: 3%
 
 ---
 
@@ -98,7 +98,7 @@ Asegúrese de que la mayoría de las casillas de verificación no están selecci
 
 #### TAGGING {#tagging}
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando Áreas de nombres de AEM previamente definidas a través de la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](/help/communities/enablement-setup.md#create-tutorial-tags)Tutorial).
+Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando AEM Áreas de nombres definidas previamente mediante la Consola [de](/help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](/help/communities/enablement-setup.md#create-tutorial-tags)Tutorial).
 
 Además, la selección de Áreas de nombres de etiquetas para el sitio de la comunidad limita la selección presentada al definir los catálogos y los recursos de habilitación. Consulte [Etiquetado de recursos](/help/communities/tag-resources.md) de habilitación para obtener información importante.
 
@@ -160,7 +160,7 @@ Para una comunidad de habilitación, es necesario identificar uno o varios admin
    * Tipo `s`
    * Seleccione `Sirius Nilson`
 
-* **ID** de organización de Marketing Cloud (opcional) El ID de una cuenta de Analytics de Adobe que es necesario para incluir [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) en el sistema de informes de activación.
+* **ID** de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) en el sistema de informes de activación.
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -244,7 +244,7 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 * Vaya a la consola **Comunidades y grupos**
 * Seleccionar grupo de miembros de activación *de comunidad*
 * Escriba &#39;ski&#39; en el cuadro de búsqueda **Añadir miembros al grupo**
-* Seleccionar clase *de esquí de* comunidad (grupo de alumnos)
+* Seleccionar clase *de esquí* de la comunidad (grupo de alumnos)
 * Escriba &#39;quinn&#39; en el cuadro de búsqueda
 * Seleccionar *Quinn Harper* (contacto de recursos de habilitación)
 
@@ -260,7 +260,7 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 ### Error de configuración para autenticación {#configure-for-authentication-error}
 
-Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](/help/communities/sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación volverá a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
+Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](/help/communities/sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación vuelve a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
 Añadir un `Login Page Mapping` como:
 
@@ -331,7 +331,7 @@ El valor &#39;**$**&#39; al final de la cadena de expresión normal `sling:match
 
 ## Modificación del sitio de comunidad {#modifying-the-community-site}
 
-Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](/help/communities/sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación de AEM estándar.
+Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](/help/communities/sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación AEM estándar.
 
 Además, los administradores pueden utilizar el icono [](/help/communities/sites-console.md#modifying-site-properties) Editar sitio para modificar las propiedades del sitio, como el título.
 
@@ -339,7 +339,7 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, vista la documentación sobre la gestión [](/help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](/help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
 
 ### Añadir un catálogo {#add-a-catalog}
@@ -350,7 +350,7 @@ Si no es así, la función de catálogo se puede añadir fácilmente. Esto permi
 
 Si la estructura del sitio ya contiene la función de catálogo, se puede cambiar su Título.
 
-Para modificar la estructura del sitio, vaya a la consola **Comunidades, Sitios** , abra la `enable` carpeta y seleccione el icono **Editar sitio** para acceder a las propiedades de `Enablement Tutorial`.
+Para modificar la estructura del sitio, vaya a la consola **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]** , abra la `enable` carpeta y seleccione el icono **Editar sitio** para acceder a las propiedades de `Enablement Tutorial`.
 
 Seleccione el panel ESTRUCTURA para añadir un catálogo o modificar uno existente:
 
