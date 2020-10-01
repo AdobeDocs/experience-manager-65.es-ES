@@ -3,9 +3,9 @@ title: Carpetas privadas para compartir recursos
 description: Obtenga información sobre cómo crear una carpeta privada en [!DNL Adobe Experience Manager Assets] su equipo y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
+source-git-commit: 2bd850ff421494dda83bafb59fa695365498bbbe
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ Puede eliminar una carpeta seleccionando la carpeta y la opción [!UICONTROL Eli
 >[!NOTE]
 >
 >Si elimina una carpeta utilizando el método anterior de la interfaz de usuario, también se eliminarán los grupos de usuarios asociados.
-Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante el `clean` método JMX en la instancia de autor (http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundante+groups+for+Assets).
+Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante `clean` el método de JMX en la instancia de autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
