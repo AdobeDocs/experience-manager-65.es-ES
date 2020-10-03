@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb531bfc009fc766bab20d28cf332856b1e95c7b
+source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
 workflow-type: tm+mt
-source-wordcount: '9408'
+source-wordcount: '9618'
 ht-degree: 4%
 
 ---
@@ -450,7 +450,14 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >
    >La opción **[!UICONTROL Pegar]** está disponible en la barra de herramientas hasta que se complete la operación de pegado.
 
-### Mover o cambiar el nombre de los recursos {#moving-or-renaming-assets}
+## Mover y cambiar el nombre de los recursos {#moving-or-renaming-assets}
+
+Al mover recursos (o carpetas) a otra ubicación, los recursos (o carpetas) no se duplican, a diferencia de lo que ocurre al copiar el recurso. Los recursos (o las carpetas) se colocan en la ubicación del destinatario y se eliminan de la ubicación de origen. También puede cambiar el nombre del recurso al moverlo a la nueva ubicación.
+Si va a mover un recurso publicado a una ubicación diferente, tiene la opción de volver a publicarlo. De forma predeterminada, la operación de movimiento en un recurso publicado la cancela automáticamente. El recurso movido se vuelve a publicar si el autor selecciona la opción [!UICONTROL Volver a publicar] al mover el recurso.
+
+![Puede volver a publicar un recurso ya publicado al moverlo](assets/republish-on-move.png)
+
+Para mover recursos o carpetas:
 
 1. Navegue hasta la ubicación del recurso que desee mover.
 
@@ -486,6 +493,14 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    * Haga clic en **[!UICONTROL Cancelar]** para detener la operación de movimiento.
 
    Si no actualiza las referencias, éstas seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de acceso del recurso.
+
+### Mover recursos mediante la operación de arrastrar {#move-using-drag}
+
+Puede mover recursos (o carpetas) a una carpeta del mismo nivel, a la colección [!UICONTROL Lightbox] o a otra colección arrastrándolos a la ubicación del destinatario, en lugar de utilizar la opción [!UICONTROL Mover] de la interfaz de usuario. Sin embargo, esta operación solo es posible en la vista de lista.
+
+Al mover recursos arrastrándolos, no se abre el asistente para [!UICONTROL mover recursos] , por lo que no se puede cambiar el nombre de los recursos al moverlos. Además, los recursos ya publicados se vuelven a publicar al moverlos arrastrándolos, sin necesidad de obtener la aprobación del usuario para volver a publicarlos.
+
+![Mover recursos a carpetas del mismo nivel arrastrándolos](assets/move-by-drag.gif)
 
 ## Administrar representaciones {#managing-renditions}
 
