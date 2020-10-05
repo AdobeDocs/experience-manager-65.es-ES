@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 618464d1e01986786a47a4e9c6ecce87e2a77ec3
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Para una demostración sencilla, se elimina una característica visual, el avata
 
 ## Modificación de los scripts de HBS {#modify-the-hbs-scripts}
 
-Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Uso del [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Abra [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -67,14 +67,14 @@ Una manera de hacerlo es:
    * Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**.
    * Seleccione **[!UICONTROL Activar árbol]**.
    * Establezca `Start Path` en `/apps/custom`.
-   * Anule la selección de **[!UICONTROL Solo modificadas]**.
+   * Anule la selección de **[!UICONTROL Solo modificado]**.
    * Seleccione el botón **[!UICONTROL Activar]** .
 
 ### Vista Comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
 
 [Continuando la experiencia](/help/communities/extend-sample-page.md#publish-sample-page) en la instancia de publicación, que aún ha iniciado sesión como el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para realizar la vista de la modificación para eliminar el avatar:
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![Contenido modificado en vista](assets/view-modified-content.png)
 
 ### Paquete de extensión de comentarios de muestra {#sample-comment-extension-package}
 
