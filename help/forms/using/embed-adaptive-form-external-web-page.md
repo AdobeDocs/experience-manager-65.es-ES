@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Para incrustar el formulario adaptable:
 
 1. En el código incrustado:
 
-   * Cambie el valor de la variable *options.path* por la ruta de la URL de publicación del formulario adaptable. Si el servidor de AEM se está ejecutando en una ruta de contexto, asegúrese de que la dirección URL incluye la ruta de contexto. Por ejemplo, el código anterior y el código adaptable de residen en el mismo servidor de formularios aem, de modo que el ejemplo utiliza la ruta de contexto del formulario adaptable /content/forms/af/locbasic.html.
+   * Cambie el valor de la variable *options.path* por la ruta de la URL de publicación del formulario adaptable. Si el servidor de AEM se está ejecutando en una ruta de contexto, asegúrese de que la dirección URL incluye la ruta de contexto. Siempre mencione el nombre completo del formulario adaptable, incluida la extensión.   Por ejemplo, el código anterior y el código adaptable de residen en el mismo servidor de formularios AEM, de modo que el ejemplo utiliza la ruta de contexto del formulario adaptable /content/forms/af/locbasic.html.
    * Reemplace *options.dataRef* con atributos para pasarlos por la dirección URL. Puede utilizar la variable dataref para [rellenar previamente un formulario](/help/forms/using/prepopulate-adaptive-form-fields.md)adaptable.
    * Reemplace *options.topicPath* por la ruta a un tema distinto del configurado en el formulario adaptable. También puede especificar la ruta del tema mediante el atributo de solicitud.
    * CSS_Selector es el selector de CSS del contenedor de formulario en el que se incrusta el formulario adaptable. Por ejemplo, la clase css .customafsection es el selector de CSS del ejemplo anterior.
