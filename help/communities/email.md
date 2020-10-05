@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 3%
@@ -48,7 +48,7 @@ Esto se basa en la documentación de [Configuración de notificaciones](../../he
 
 Por ejemplo (rellenado con valores únicamente para fines ilustrativos):
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+![email-config](assets/email-config.png)
 
 * **[!UICONTROL Nombre de host del servidor SMTP]**
 
@@ -98,7 +98,7 @@ Para llegar a las instancias de configuración de correo electrónico de Comunid
 
 * Localizar `AEM Communities Email Reply Configuration`.
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+![email-response-config](assets/email-reply-config.png)
 
 ### Configuración de notificaciones {#configuration-for-notifications}
 
@@ -177,7 +177,7 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 * Seleccionar **[!UICONTROL Añadir]**
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![polling-importer](assets/polling-importer.png)
 
 * **[!UICONTROL Tipo]**
 
@@ -207,7 +207,7 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 ### Ajustar protocolo para nuevo importador de encuestas {#adjust-protocol-for-new-polling-importer}
 
-Una vez guardada la nueva configuración de sondeo, es necesario modificar las propiedades del importador de correo electrónico de suscripción para cambiar el protocolo de `POP3` a `emailreply`
+Una vez guardada la nueva configuración de sondeo, es necesario modificar las propiedades del importador de correo electrónico de suscripción para cambiar el protocolo de `POP3` a `emailreply`.
 
 Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -217,7 +217,7 @@ Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * **feedType**: Reemplazar `pop3s` por **`emailreply`**
    * **source**: Reemplazar el protocolo del origen `pop3s://` por **`emailreply://`**
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![sondeo-protocolo](assets/polling-protocol.png)
 
 Los triángulos rojos indican las propiedades modificadas. Asegúrese de guardar los cambios:
 
