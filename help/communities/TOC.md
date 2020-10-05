@@ -6,7 +6,7 @@ user-guide-title: Guía del usuario de AEM 6.5 Communities
 breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 42606e76742fe7698c4c186208e515ed22adc5a4
+source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 7%
@@ -14,9 +14,9 @@ ht-degree: 7%
 ---
 
 
-# AEM 6.5 Communities User Guide {#communities}
+# Guía de comunidades de Adobe Experience Manager 6.5 {#communities}
 
-+ [Información general de AEM Communities](home.md)
++ [Guía de comunidades](home.md)
 + Introduction to AEM Communities {#introduction}
    + [Sitios de comunidades](administer-landing.md)
    + [Información general de AEM Communities](overview.md)
