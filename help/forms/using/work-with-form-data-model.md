@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4162'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Trabajar con el modelo de datos de formulario{#work-with-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![integración de datos](do-not-localize/data-integeration.png)
 
 El editor del modelo de datos de formulario proporciona una interfaz de usuario intuitiva y herramientas para editar y configurar un modelo de datos de formulario. Con el editor, puede agregar y configurar objetos, propiedades y servicios del modelo de datos desde orígenes de datos asociados en el modelo de datos de formulario. Además, le permite crear objetos y propiedades del modelo de datos sin orígenes de datos y enlazarlos posteriormente con objetos y propiedades del modelo de datos respectivos. También puede generar y editar datos de ejemplo para propiedades de objeto del modelo de datos que puede utilizar para rellenar formularios adaptables y comunicaciones interactivas durante la vista previa. Puede probar los objetos y servicios del modelo de datos configurados en un modelo de datos de formulario para asegurarse de que está correctamente integrado con los orígenes de datos.
 
@@ -43,7 +43,7 @@ Puede agregar objetos y servicios del modelo de datos a partir de orígenes de d
 
 Para agregar objetos y servicios del modelo de datos:
 
-1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Formularios > Integraciones]** de datos y abra el modelo de datos de formulario en el que desee agregar objetos de modelo de datos.
+1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Forms > Integraciones]** de datos y abra el modelo de datos de formulario en el que desee agregar objetos de modelo de datos.
 1. En el panel Fuentes de datos, expanda las fuentes de datos para vista de los objetos y servicios del modelo de datos disponibles.
 1. Seleccione los objetos y servicios del modelo de datos que desee agregar al modelo de datos de formulario y toque **[!UICONTROL Añadir seleccionados]**.
 
@@ -85,7 +85,7 @@ Aunque puede agregar objetos de modelo de datos desde orígenes de datos configu
 
 Para crear un objeto de modelo de datos sin orígenes de datos:
 
-1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Formularios > Integraciones]** de datos y abra el modelo de datos de formulario en el que desea crear una entidad u objeto de modelo de datos.
+1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Forms > Integraciones]** de datos y abra el modelo de datos de formulario en el que desea crear una entidad u objeto del modelo de datos.
 1. Puntee **[!UICONTROL Crear entidad]**.
 1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y toque **[!UICONTROL Añadir]**. Se agrega un objeto de modelo de datos al modelo de datos de formulario. Tenga en cuenta que el objeto del modelo de datos recientemente agregado no está enlazado a un origen de datos y no tiene ninguna propiedad, como se muestra en la siguiente imagen.
 
@@ -179,7 +179,7 @@ Seleccione Atributo **[!UICONTROL de Perfil]** de usuario en el menú desplegabl
 
 El nombre de atributo especificado en el campo Valor **[!UICONTROL de]** enlace debe incluir la ruta de enlace completa hasta el nombre de atributo del usuario. Abra la siguiente URL para acceder a los detalles del usuario en CRXDE:
 
-https://&lt;server-name>:&lt;número de puerto>/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Perfil de usuario](assets/binding_crxde_user_profile_new.png)
 
@@ -195,15 +195,31 @@ Utilice el atributo request para recuperar las propiedades asociadas del origen 
 
 1. Seleccione **[!UICONTROL Solicitar atributo]** en el menú desplegable **[!UICONTROL Enlace a]** e introduzca el nombre del atributo en el campo Valor **[!UICONTROL de]** enlace.
 
-1. Abra head.jsp para definir los detalles de atributos en CRXDE:\
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Cree una [superposición](../../../help/sites-developing/overlays.md) para head.jsp. Para crear la superposición, abra CRX DE y copie el `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` archivo en `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
-1. Incluya el siguiente texto en el archivo head.jsp:
+   >[!NOTE]
+   >
+   > * Si utiliza una plantilla estática, superponga head.jsp en:
+/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * Si utiliza una plantilla editable, superponga el archivo aftemplatedpage.jsp en:
+/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+
+1. Se establece [!DNL paramMap] para el atributo de solicitud. Por ejemplo, incluya el siguiente código en el archivo .jsp de la carpeta de aplicaciones:
+
+   ```javascript
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+   ```
+
+   Por ejemplo, utilice el código siguiente para recuperar el valor de petid del origen de datos:
+
+
+   ```javascript
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
    ```
 
 Los detalles se recuperan del origen de datos en función del nombre de atributo especificado en la solicitud.
@@ -234,7 +250,7 @@ Para agregar una asociación:
 
    ![add-union-2](assets/add-association-2.png)
 
-   Cuadro de diálogo Añadir asociación
+   Cuadro de diálogo añadir asociación
 
 1. En el panel Añadir asociación:
 
@@ -247,7 +263,7 @@ Para agregar una asociación:
 
    ![add-collection-example](assets/add-association-example.png)
 
-   El argumento predeterminado para el servicio de lectura Dependientes es dependiente
+   El argumento predeterminado para el servicio de lectura de dependientes depende
 
    Sin embargo, el argumento debe ser una propiedad común entre el objeto del modelo de datos asociado, que en este ejemplo es `Employeeid`. Por lo tanto, el `Employeeid` argumento debe enlazarse a la `id` propiedad del objeto del modelo de datos Empleado para recuperar los detalles de dependientes asociados del objeto del modelo de datos Dependientes.
 
@@ -399,7 +415,7 @@ El modelo de datos de formulario está configurado pero, antes de ponerlo en uso
 
    ![Resultados de la prueba](assets/test_results_form_data_model_new.png)
 
-Del mismo modo, puede probar otros objetos y servicios del modelo de datos de formulario.
+Del mismo modo, se pueden probar otros objetos y servicios del modelo de datos en el modelo de datos de formulario.
 
 ## Validación automatizada de los datos de entrada {#automated-validation-of-input-data}
 
