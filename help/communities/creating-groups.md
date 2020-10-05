@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: 6337a57ea12f1e026f6c754a083307ce018a1c13
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 3%
@@ -33,17 +33,17 @@ Se seleccionan una o varias plantillas de grupo para la función de grupo cuando
 
 La capacidad de crear un nuevo grupo de comunidad depende de la existencia de un sitio de comunidad que incluya la función de grupos, como uno creado a partir de la plantilla [de sitio de](/help/communities/sites.md)referencia.
 
-Los ejemplos que siguen utilizan el sitio de comunidad creado a partir de la página `Reference Site Template` tal como se describe en el tutorial [Introducción a los AEM Communities](/help/communities/getting-started.md) .
+Los ejemplos que siguen utilizan el sitio de comunidad creado a partir de la página `Reference Site Template` tal como se describe en el tutorial [Introducción a AEM Communities](/help/communities/getting-started.md) .
 
 Esta es la página que se carga al publicar cuando se selecciona el elemento de menú **Grupos** :
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![new-group](assets/new-group.png)
 
 Al seleccionar el icono **Nuevo grupo** , se abre un cuadro de diálogo de edición.
 
 En la ficha **Configuración** , se proporcionan las funciones básicas del grupo:
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![group-settings](assets/group-settings.png)
 
 * **Nombre del grupo**
 
@@ -71,21 +71,21 @@ En la ficha **Configuración** , se proporcionan las funciones básicas del grup
 
 En la ficha **Plantilla** se encuentra la capacidad de seleccionar entre la lista de las plantillas de grupo de la comunidad que se especificaron cuando la función de grupo se incluyó en la estructura del sitio de la comunidad o en una plantilla de sitio de la comunidad.
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![group-template](assets/group-template.png)
 
 En la ficha **Imagen** se encuentra la posibilidad de cargar una imagen para que se muestre en el grupo en la página Grupos del sitio de la comunidad. La hoja de estilo predeterminada ajustará el tamaño de la imagen a 170 x 90 píxeles.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![group-image](assets/group-image.png)
 
 Al seleccionar el botón **Crear grupo** , las páginas del grupo se crean en función de la plantilla elegida, se crea un grupo de usuarios para la pertenencia y se actualiza la página Grupos para mostrar la nueva subcomunidad.
 
 Por ejemplo, la página Grupos con una nueva subcomunidad titulada &quot;Grupo de enfoque&quot;, para la que se cargó una miniatura de imagen, aparecerá de la siguiente manera (aún con la sesión iniciada como administrador de grupos de la comunidad):
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![group-page](assets/group-page.png)
 
 Al seleccionar el `Focus Group` vínculo, se abrirá la página Grupo de enfoque en el explorador, que tiene un aspecto inicial basado en la plantilla seleccionada e incluye un submenú debajo del menú del sitio de la comunidad principal:
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![open-group-page](assets/open-group-page.png)
 
 ### Community Group Member List Component {#community-group-member-list-component}
 
