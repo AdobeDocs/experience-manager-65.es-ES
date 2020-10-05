@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 1%
@@ -20,14 +20,14 @@ ht-degree: 1%
 
 # Configuración inicial para la habilitación  {#initial-setup-for-enablement}
 
-## Instancias de creación y publicación de Inicio {#start-author-and-publish-instances}
+## Instancias de creación y publicación de inicio {#start-author-and-publish-instances}
 
 Para fines de desarrollo y demostración, será necesario ejecutar un autor y una instancia de publicación.
 
 Siga las instrucciones básicas de [introducción](../../help/sites-deploying/deploy.md#getting-started) de AEM que resultarán en
 
-* entorno de autor en [localhost:4502](http://localhost:4502/)
-* entorno de publicación en [localhost:4503](http://localhost:4503/)
+* Entorno de autor en [localhost:4502](http://localhost:4502/)
+* Entorno de publicación en [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
 
@@ -36,7 +36,7 @@ Para AEM Communities,
    * Desarrollo de sitios, plantillas, componentes, recursos de habilitación y rutas de aprendizaje.
    * Asignación de miembros y grupos de miembros para habilitar recursos y rutas de aprendizaje.
    * Generación de informes sobre asignaciones, vistas y anuncios.
-   * tareas administrativas y de configuración.
+   * Tareas administrativas y de configuración.
 
 * El entorno de publicación es para:
 
@@ -46,7 +46,7 @@ Para AEM Communities,
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, vista la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 
 ## Instalar la versión más reciente de las comunidades {#install-latest-communities-release}
@@ -55,7 +55,7 @@ Este tutorial crea un sitio [de comunidad de](overview.md#enablement-community)h
 
 * [Últimas versiones](deploy-communities.md#latest-releases)
 
-Para ver un tutorial que crea un sitio [de comunidad de](overview.md#engagement-community)participación, visite [Introducción a los AEM Communities](getting-started.md).
+Para ver un tutorial que crea un sitio [de comunidad de](overview.md#engagement-community)participación, visite [Introducción a AEM Communities](getting-started.md).
 
 ## Configurar funciones de habilitación {#configure-enablement-features}
 
@@ -94,14 +94,14 @@ Utilice la consola [Etiquetado](../../help/sites-administering/tags.md#tagging-c
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-417](assets/chlimage_1-417.png)
+![tutorial-tags](assets/tutorial-tags.png)
 
 A continuación, siga las instrucciones para:
 
 1. [Definir los permisos de etiqueta](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publicación de las etiquetas](../../help/sites-administering/tags.md#publishing-tags)
 
-Paquete de muestra de etiquetas creadas para los tutoriales de introducción a los AEM Communities
+Paquete de muestra de etiquetas creadas para los Tutorials de introducción de AEM Communities
 
 [Obtener archivo](assets/communities_tutorialtags-10.zip)
 
@@ -113,7 +113,7 @@ En su lugar, con el servicio [de](#enable-the-tunnel-service) túnel habilitado,
 
 En este tutorial, se crean tres miembros en el entorno de publicación. Dos miembros se convertirán en miembros de un grupo de usuarios asignado a una ruta de aprendizaje, mientras que el tercer miembro se convertirá en un contacto de recursos de habilitación.
 
-Se crea un cuarto usuario en el entorno de creación y se asignan las funciones de administrador de comunidades y administrador de habilitación de la comunidad.
+Se crea un cuarto usuario en el entorno de creación y se asignan las funciones de Administrador de comunidades y Administrador de habilitación de la comunidad.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 
 ### Propiedades de la clase de esquí de la comunidad {#community-ski-class-properties}
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![ski-class-properties](assets/ski-class-properties.png)
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Los miembros del grupo Administradores de la comunidad pueden crear sitios de la
 
 Cree un usuario en el *autor*, al que se le asigna la función de administrador de comunidad:
 
-* En la instancia de creación
+* En la instancia de autor
 
    * Por ejemplo, [http://localhost:4502/](http://localhost:4503/)
 
@@ -219,5 +219,5 @@ Desplácese hacia abajo hasta `Add User to Groups`:
 
 * Seleccione **[!UICONTROL Guardar]**
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![admin-role](assets/admin-role.png)
 
