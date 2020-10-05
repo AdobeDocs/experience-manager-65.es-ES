@@ -1,8 +1,8 @@
 ---
 title: DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional
 seo-title: DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional
-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
-seo-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
+description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
+seo-description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## Acerca de DSRP {#about-dsrp}
 
-Cuando los AEM Communities están configurados para utilizar una base de datos relacional como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando AEM Communities está configurado para utilizar una base de datos relacional como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las Opciones](working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](topologies.md)recomendadas.
 
@@ -71,14 +71,14 @@ Al crear, para acceder a la consola de configuración de Almacenamiento
       >[!NOTE]
       >
       >La configuración de almacenamiento predeterminada ahora se almacena en ruta(`/conf/global/settings/community/srpc/defaultconfiguration`) de conf en lugar de ruta (`/etc/socialconfig/srpc/defaultconfiguration`) de etc. Se recomienda que siga los pasos [de](#zerodt-migration-steps) migración para que el comando predeterminado funcione según lo previsto.
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Configuración de la base de datos**
 
    * **[!UICONTROL Nombre de la fuente de datos JDBC]**
 
-      El nombre asignado a la conexión MySQL debe ser el mismo que se introdujo en la configuración OSGi de [JDBC](dsrp-mysql.md#configurejdbcconnections)
+      El nombre proporcionado a la conexión MySQL debe ser el mismo que se introdujo en la configuración OSGi de [JDBC](dsrp-mysql.md#configurejdbcconnections)
 
       *predeterminado*: comunidades
 
@@ -90,7 +90,7 @@ Al crear, para acceder a la consola de configuración de Almacenamiento
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host de Zookeeper **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host de Zookeeper**
 
       Deje este valor en blanco si ejecuta Solr utilizando el ZooKeeper interno. De lo contrario, al ejecutarse en el modo [](solr.md#solrcloud-mode) SolrCloud con un ZooKeeper externo, establezca este valor en el URI del ZooKeeper, como *my.server.com:80*
 
