@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -44,7 +44,7 @@ Uso de CRXDE Lite:
 1. Haga clic en el botón verde **[!UICONTROL +Añadir]** .
 1. Haga clic en **[!UICONTROL Guardar todo]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![page-script](assets/page-script.png)
 
 ### Secuencias de comandos de cabeza y cuerpo {#head-and-body-scripts}
 
@@ -128,13 +128,13 @@ No solo debería ver el encabezado Reproducción **de la** comunidad, sino tambi
 
 El panel lateral Recursos/Componente se ve cuando se abre de forma alternada el panel lateral y la ventana es lo suficientemente ancha como para que se muestren tanto el contenido lateral como el contenido de la página.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![vista-página](assets/view-page.png)
 
 * IU clásica: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 A continuación se muestra cómo aparece la página de reproducción en la IU clásica, incluso con Content Finder (cf):
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![play-page-vista](assets/play-page-view.png)
 
 ## Componentes de Communities {#communities-components}
 
