@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0c6a1afff62d4a962edfc8c2e6574d65a18534ac
+source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -496,7 +496,7 @@ Para mover recursos o carpetas:
 
 ### Mover recursos mediante la operación de arrastrar {#move-using-drag}
 
-Puede mover recursos (o carpetas) a una carpeta del mismo nivel, a la colección [!UICONTROL Lightbox] o a otra colección arrastrándolos a la ubicación del destinatario, en lugar de utilizar la opción [!UICONTROL Mover] de la interfaz de usuario. Sin embargo, esta operación solo es posible en la vista de lista.
+Puede mover recursos (o carpetas) a una carpeta del mismo nivel arrastrándolos a la ubicación del destinatario, en lugar de utilizar la opción [!UICONTROL Mover] de la interfaz de usuario. Sin embargo, esta operación solo es posible en la vista de lista.
 
 Al mover recursos arrastrándolos, no se abre el asistente para [!UICONTROL mover recursos] , por lo que no se puede cambiar el nombre de los recursos al moverlos. Además, los recursos ya publicados se vuelven a publicar al moverlos arrastrándolos, sin necesidad de obtener la aprobación del usuario para volver a publicarlos.
 
