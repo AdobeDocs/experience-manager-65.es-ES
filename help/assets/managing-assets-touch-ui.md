@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
+source-git-commit: b76d93ada35f5d054c1d07bf1a7dd9deaaaec1ee
 workflow-type: tm+mt
-source-wordcount: '9618'
+source-wordcount: '9619'
 ht-degree: 4%
 
 ---
@@ -453,7 +453,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 ## Mover y cambiar el nombre de los recursos {#moving-or-renaming-assets}
 
 Al mover recursos (o carpetas) a otra ubicación, los recursos (o carpetas) no se duplican, a diferencia de lo que ocurre al copiar el recurso. Los recursos (o las carpetas) se colocan en la ubicación del destinatario y se eliminan de la ubicación de origen. También puede cambiar el nombre del recurso al moverlo a la nueva ubicación.
-Si va a mover un recurso publicado a una ubicación diferente, tiene la opción de volver a publicarlo. De forma predeterminada, la operación de movimiento en un recurso publicado la cancela automáticamente. El recurso movido se vuelve a publicar si el autor selecciona la opción [!UICONTROL Volver a publicar] al mover el recurso.
+Si va a mover un recurso publicado a una ubicación diferente, tiene la opción de volver a publicarlo. De forma predeterminada, la operación de movimiento en un recurso publicado la cancela automáticamente. Un recurso movido se vuelve a publicar si el autor selecciona la opción [!UICONTROL Volver a publicar] al mover el recurso.
 
 ![Puede volver a publicar un recurso ya publicado al moverlo](assets/republish-on-move.png)
 
