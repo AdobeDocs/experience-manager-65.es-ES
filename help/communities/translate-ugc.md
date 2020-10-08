@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 1%
@@ -52,12 +52,11 @@ Al [crear un sitio](sites-console.md)de comunidad, el servicio de traducción pr
 >
 >Para un sistema de producción, se requiere un servicio de traducción con licencia. Si no tiene licencia, el servicio de traducción predeterminado debe [desactivarse](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
-
 ## Traducción global de UGC {#global-translation-of-ugc}
 
 Cuando un sitio web tiene varias copias [de](../../help/sites-administering/tc-prep.md)idioma, el servicio de traducción predeterminado no reconoce que el UGC introducido en un sitio puede estar relacionado con el UGC introducido en otro, como cuando el UGC se genera esencialmente por el mismo componente (la copia de idioma de la página que contiene el componente).
 
-Es similar a los grupos de personas que discuten un tema que no tiene conocimiento de los comentarios hechos en grupos distintos de los suyos, en comparación con todos los que participan en una conversación en un grupo grande.
+Es similar a los grupos de personas que discuten sobre un tema que no tiene conocimiento de que los comentarios se hagan en grupos distintos de los suyos, en comparación con todos los que participan en una conversación en un grupo grande.
 
 Si se desea una &quot;conversación de un grupo&quot;, es posible habilitar la traducción global en un sitio web con varias copias de idioma, de modo que todo el subproceso sea visible independientemente de qué copia de idioma se esté viendo.
 
@@ -70,7 +69,6 @@ Por ejemplo, si se estableció un foro en el sitio de base, se crearon copias de
 >Aunque el UGC sigue en la tienda [](working-with-srp.md)común, se encuentra en la ubicación UGC específica del idioma, mientras que el nuevo contenido, agregado después de configurar la traducción global, se recupera desde la ubicación de la tienda compartida global.
 >
 >No hay ninguna herramienta de migración para mover o combinar contenido específico de idioma en la tienda compartida global.
-
 
 ### Configuración de integración de traducción {#translation-integration-configuration}
 
@@ -146,7 +144,6 @@ El nuevo servicio de nube de integración de traducción deberá activarse en el
 >El idioma preferido es la preferencia de idioma establecida en el perfil de un usuario, cuando el visitante del sitio ha iniciado sesión y ha especificado una preferencia de idioma.
 >
 >Cuando el visitante del sitio es anónimo o no ha especificado una preferencia de idioma en su perfil, el idioma preferido es el idioma base de la plantilla de página.
-
 
 ### Preferencia del usuario {#user-preference}
 
