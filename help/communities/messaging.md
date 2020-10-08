@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -23,9 +23,9 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-La función de mensajería para AEM Communities permite a los visitantes del sitio (miembros) con sesión iniciada enviarse mensajes entre sí a los que se puede acceder cuando se inician sesión en el sitio.
+La función de mensajería de AEM Communities permite que los visitantes del sitio (miembros) con sesión iniciada envíen mensajes entre sí a los que se puede acceder al iniciar sesión en el sitio.
 
-La mensajería está habilitada para un sitio de comunidad marcando una casilla durante la creación [del sitio de](/help/communities/sites-console.md)comunidad.
+La mensajería se habilita para un sitio de comunidad marcando una casilla durante la creación [del sitio de](/help/communities/sites-console.md)comunidad.
 
 Esta página contiene información sobre la configuración predeterminada y los posibles ajustes.
 
@@ -33,7 +33,7 @@ Para obtener información adicional para desarrolladores, consulte [Messaging Es
 
 ## Servicio de operaciones de mensajería {#messaging-operations-service}
 
-El servicio [de operaciones de mensajería de](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities de configuración identifica el punto final que gestiona las solicitudes relacionadas con los mensajes, las carpetas que el servicio debe utilizar para almacenar mensajes y, si los mensajes pueden incluir archivos adjuntos, qué tipos de archivo están permitidos.
+La configuración del servicio [de operaciones de mensajería de](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifica el punto final que gestiona las solicitudes relacionadas con los mensajes, las carpetas que el servicio debe utilizar para almacenar los mensajes y, si los mensajes pueden incluir archivos adjuntos, qué tipos de archivos están permitidos.
 
 Para los sitios de comunidad creados con el `Communities Sites console`, ya existe una instancia del servicio, con la bandeja de entrada configurada en `/mail/inbox`.
 
@@ -111,9 +111,9 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 
    Si se selecciona supportAttachments, este valor especifica el tamaño total máximo permitido (en bytes) de todos los archivos adjuntos. El valor predeterminado es *104857600* (100 MB).
 
-* **lista de bloqueados de tipo de datos adjuntos**
+* **Lista de bloqueados de tipo de datos adjuntos**
 
-   lista de bloqueados de extensiones de nombre de archivo, con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está incluida en la lista de bloqueados, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;.
+   Lista de bloqueados de extensiones de nombre de archivo, con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está incluida en la lista de bloqueados, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;.
 
 * **Tipos de datos adjuntos permitidos**
 
@@ -134,7 +134,6 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 >Cada vez que se abre una `Messaging Operations Service` configuración para editarla, si `allowedAttachmentTypes.name` se ha eliminado, se vuelve a agregar una entrada vacía para que la propiedad se pueda configurar. Una sola entrada vacía deshabilita los archivos adjuntos de forma efectiva.
 >
 >Para permitir todas las extensiones de nombre de archivo, excepto las incluidas en la lista de bloqueados, utilice el icono &#39;**-**&#39; para (de nuevo) eliminar la única entrada vacía antes de hacer clic en **Guardar**.
-
 
 ## Group Messaging {#group-messaging}
 
