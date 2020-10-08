@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 7%
@@ -171,7 +171,6 @@ En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se p
 >[!NOTE]
 >
 >Visite [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre cómo agregar una nueva Área de nombres de etiquetas (taxonomía).
-
 
 #### Ficha Traducción {#translation-tab}
 
