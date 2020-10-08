@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4813'
 ht-degree: 4%
@@ -243,7 +243,8 @@ Consulte Fragmento [de experiencias](/help/sites-authoring/experience-fragments.
 >[!NOTE]
 >
 >Tenga en cuenta que las herramientas de uso compartido en medios sociales de la pancarta de carrusel no son compatibles cuando incrusta el visor en un fragmento de experiencia.
-Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+>
+>Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
 
 Cuando agregue zonas interactivas o mapas de imagen a una imagen, recuerde guardar el trabajo. Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación/edición actual.
 
@@ -311,7 +312,7 @@ Consulte Fragmentos [de experiencias](/help/sites-authoring/experience-fragments
 
          >[!NOTE]
          Tenga en cuenta que las herramientas de uso compartido en medios sociales de la pancarta de carrusel no son compatibles cuando incrusta el visor en un fragmento de experiencia.
-Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+         Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    También puede realizar una previsualización del aspecto que tendrá la pancarta de carrusel. Consulte [(Opcional) Vista previa de letreros](#optional-previewing-carousel-banners)de carrusel.
