@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Puede importar y exportar definiciones de plantillas de búsqueda y configuraci�
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
 Por ejemplo, puede pasar de un entorno de desarrollo a un entorno de producción exportando las definiciones de plantilla de búsqueda y la configuración global de un entorno e importándolos al otro.
 
@@ -65,7 +68,7 @@ Puede modificar el archivo de configuración global; sin embargo, la única conf
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
 El archivo de configuración global de Workspace incluye la siguiente configuración:
 
@@ -74,7 +77,7 @@ El archivo de configuración global de Workspace incluye la siguiente configurac
 La configuración de *SpecialRoutes* especifica las propiedades de las rutas especiales, aprobar y denegar, en Workspace. En determinadas situaciones, los botones de estas rutas aparecen en las tarjetas de tarea de Workspace y el usuario puede seleccionarlas sin abrir el formulario. Puede modificar la configuración de SpecialRoutes en el archivo de configuración global para agregar nombres personalizados para aprobar y denegar o para crear rutas adicionales.
 
 **client_especialRoutes_route_approved_style:** Nombre del estilo que se encuentra en el tema Espacio de trabajo, que identifica los iconos del botón de aprobación. El estilo debe incluir valores para un icono habilitado y un icono deshabilitado. Para definir un estilo para un botón personalizado, debe utilizar la siguiente plantilla:
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` El archivo CSS Workspace está incrustado en el archivo space-topic.swf, que se encuentra en el archivo adobe-space-client.ear > adobe-Workspace-client.war. Para cambiar el aspecto de Workspace, debe volver a compilar el archivo space-topic.swf.
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` El archivo CSS de Workspace está incrustado en el archivo space-topic.swf, que se encuentra en el archivo adobe-space-client.ear > adobe-Workspace-client.war. Para cambiar el aspecto de Workspace, debe volver a compilar el archivo space-topic.swf.
 
 **client_especialRoutes_route_bold_names:** Variedad de cadenas que un usuario de Workbench puede utilizar para interpretarse como &quot;denegar&quot;. Las cadenas distinguen entre mayúsculas y minúsculas. Por ejemplo, el valor predeterminado es deniega. Si el usuario de Workbench utiliza la palabra Denegar en un proceso, no se reconocerá la palabra. La palabra Denegar debe agregarse a esta configuración para que el botón de ruta se pueda personalizar y se le aplique el estilo.
 
@@ -85,7 +88,7 @@ La configuración de *SpecialRoutes* especifica las propiedades de las rutas esp
 
 ### Configuración de JGroup {#jgroup-settings}
 
-Esta configuración solo aparece si se ha actualizado desde Adobe LiveCycle ES 2.5 o anterior.
+Esta configuración solo aparece si ha actualizado desde Adobe LiveCycle ES 2.5 o anterior.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** El tiempo máximo que el grupo de trabajo espera los mensajes de evento. No se debe cambiar esta configuración.
 
@@ -123,7 +126,7 @@ Para obtener información adicional sobre JGroups y Workspace, consulte [JGroups
 
 **server_debugLevel:** No cambie esta configuración.
 
-**client_pollingInterval:** Establece el intervalo de sondeo (en segundos) utilizado en el espacio de trabajo de Flex (obsoleto para formularios AEM en JEE) para detectar tareas nuevas y modificadas. El valor predeterminado es de 3 segundos. Esto no funciona para AEM Forms Workspace.
+**client_pollingInterval:** Establece el intervalo de sondeo (en segundos) utilizado en Flex Workspace (obsoleto para AEM formularios en JEE) para detectar tareas nuevas y modificadas. El valor predeterminado es de 3 segundos. Esto no funciona para AEM Forms Workspace.
 
 **client_systemContext_name:** Especifique un nombre personalizado (por ejemplo, Ciudadano) para mostrar en el campo Añadido por (en la ficha Archivos adjuntos) los datos adjuntos de una tarea en AEM Forms Workspace.
 
@@ -133,4 +136,6 @@ Para definir el nombre personalizado:
 
 >[!NOTE]
 >
->Para la aplicación Demo, el nombre para mostrar predeterminado es **Ciudadano**. Para una aplicación personalizada que cree, el nombre para mostrar predeterminado es Cuenta **de contexto** del sistema.***client_ralentíTimeout:** Cuando un usuario permanece inactivo durante un tiempo determinado, caduca la sesión de AEM Forms Workspace. Para habilitar la función, agregue una entrada a Configuración global &lt;client_ralentíTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_ralentíTimeout>. Puede especificar el valor 0 para deshabilitar el tiempo de espera de inactividad. La cantidad de tiempo se especifica en segundos.
+>Para la aplicación Demo, el nombre para mostrar predeterminado es **Ciudadano**. Para una aplicación personalizada que cree, el nombre para mostrar predeterminado es Cuenta **de contexto** del sistema.
+>
+>**client_inactiveTimeout:** Cuando un usuario permanece inactivo durante un tiempo determinado, la sesión de AEM Forms Workspace caduca. Para habilitar la función, agregue una entrada a Configuración global &lt;client_ralentíTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_ralentíTimeout>. Puede especificar el valor 0 para deshabilitar el tiempo de espera de inactividad. La cantidad de tiempo se especifica en segundos.
