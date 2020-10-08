@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 4%
@@ -27,7 +27,6 @@ El `Reviews Summary (Display)` componente proporciona un resumen de una instanci
 >[!NOTE]
 >
 >No se admite la publicación anónima de una revisión. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar. El visitante firmado podrá actualizar su revisión en cualquier momento.
-
 
 ## Adding a Review to a Page {#adding-a-review-to-a-page}
 
@@ -75,7 +74,6 @@ En el sitio web, las clasificaciones requeridas se marcan con un asterisco. Si s
 >
 >Si se introduce un elemento en la ficha Clasificaciones **** requeridas que no se especifica en la ficha Clasificaciones **** permitidas, no se incluirá en los elementos a clasificar.
 
-
 En la ficha **[!UICONTROL Revisiones]** , especifique cómo se administran las revisiones.
 
 ![críticas](assets/configure-review3.png)
@@ -92,7 +90,7 @@ En la ficha **[!UICONTROL Revisiones]** , especifique cómo se administran las r
 
    Si está activada, permita que los archivos adjuntos se carguen para la revisión. El valor predeterminado no está marcado.
 
-* **Tamaño máximo de archivo **
+* **Tamaño máximo de archivo**
 
    Solo es relevante si está activada la opción **[!UICONTROL Permitir cargas]** de archivos. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 10 MB.
 
@@ -169,7 +167,6 @@ Cuando se incluyen las bibliotecas [del lado del cliente](reviews-basics.md#esse
 >[!NOTE]
 >
 >El &quot;Promedio&quot; refleja los votos del primer elemento que aparece en las fichas Clasificaciones permitidas de la revisión que se está resumiendo.
-
 
 ### Configuración del resumen de las revisiones (visualización) {#configuring-reviews-summary-display}
 
