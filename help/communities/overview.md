@@ -1,8 +1,8 @@
 ---
 title: Información general de AEM Communities
 seo-title: Información general de AEM Communities
-description: Información general sobre las funciones y la configuración de los AEM Communities
-seo-description: Información general sobre las funciones y la configuración de los AEM Communities
+description: Información general sobre las funciones y la configuración de AEM Communities
+seo-description: Información general sobre las funciones y la configuración de AEM Communities
 uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 3%
@@ -23,11 +23,11 @@ ht-degree: 3%
 
 Las comunidades de Adobe Experience Manager (AEM) ofrecen la posibilidad de crear rápidamente un sitio de comunidad local que tenga un rendimiento y una gestión mejorados, y que anime a los visitantes a convertirse en miembros valiosos de la comunidad.
 
-Póngase en contacto con el representante de cuentas para obtener información sobre la licencia de AEM Communities, así como licencias adicionales para funciones de habilitación y Adobe Analytics.
+Póngase en contacto con el representante de cuentas para obtener información sobre la licencia de AEM Communities, así como sobre las licencias adicionales para funciones de habilitación y Adobe Analytics.
 
 ## Funciones de comunidades {#communities-features}
 
-Los AEM Communities permiten el desarrollo de una relación con los visitantes del sitio, que:
+AEM Communities permite el desarrollo de una relación con los visitantes del sitio, que:
 
 * **Información** a través de blogs, preguntas y respuestas y calendarios de evento,
 * A la vez que **obtiene perspectivas** a través de foros, comentarios y otro contenido de la comunidad, a menudo denominado contenido generado por el usuario (UGC).
@@ -80,11 +80,11 @@ los miembros ven eventos de relevancia para ellos y contenido generado por el us
    * Marca: carga opcional de una imagen de pancarta para mostrarla en todas las páginas del sitio de la comunidad
    * Menú de navegación: se proporcionan vínculos de navegación para las funciones incluidas en la plantilla de sitio de la comunidad.
 
-Para experimentar la facilidad de crear rápidamente un nuevo sitio de comunidad, visite [Introducción a los AEM Communities](/help/communities/getting-started.md).
+Para disfrutar de la facilidad de crear rápidamente un nuevo sitio de comunidad, visite [Introducción a AEM Communities](/help/communities/getting-started.md).
 
 ## Persistencia del contenido de la comunidad {#community-content-persistence}
 
-Para mejorar el rendimiento y la sincronización del contenido de la comunidad, los AEM Communities necesitan un almacén común específico para el contenido generado por el usuario (UGC) compartido entre todas las instancias de AEM (autor y publicación).
+Para mejorar el rendimiento y la sincronización del contenido de la comunidad, AEM Communities requiere un almacén común específico para el contenido generado por el usuario (UGC) compartido entre todas las instancias de AEM (autor y publicación).
 
 Se puede acceder fácilmente al contenido de la comunidad a través del proveedor de recursos de almacenamiento (SRP), que proporciona una capa para separar el acceso de la topología subyacente y admite un almacén común para UGC.
 
@@ -139,7 +139,7 @@ La consola de herramientas globales proporciona acceso a las siguientes herramie
 
    * Cree y administre funciones de comunidad.
 
-* [Consola de configuración](/help/communities/tools.md#storageconfiguratonconsole) de Almacenamiento
+* [Consola de configuración](/help/communities/tools.md#storageconfiguratonconsole) de almacenamiento
 
    * Seleccione y configure el almacén [](/help/communities/working-with-srp.md) común para el sitio.
 
@@ -157,7 +157,7 @@ Consulte la consola [Plantillas](/help/communities/sites.md)del sitio.
 
 ## Funciones de comunidad {#community-functions}
 
-Las características que se esperan de una experiencia comunitaria son bien conocidas. Con los AEM Communities, estas funciones están disponibles como bloques de creación, conocidos como funciones de comunidad.
+Las características que se esperan de una experiencia comunitaria son bien conocidas. Con AEM Communities, estas funciones están disponibles como componentes básicos, conocidas como funciones de la comunidad.
 
 Las funciones de la comunidad son normales AEM las páginas incluyen componentes conectados en una función que se incorpora fácilmente a una plantilla de sitio de la comunidad.
 
@@ -175,7 +175,7 @@ Consulte también:
 
 * [Consola](/help/communities/groups.md) Grupos del sitio para crear subcomunidades en el entorno de creación.
 * [Consola](/help/communities/tools-groups.md) Plantillas de grupo para crear la estructura de sitio para grupos.
-* [Introducción a los AEM Communities](/help/communities/getting-started.md) para tutoriales sobre la creación rápida de un sitio de comunidad que incluya grupos anidados.
+* [Introducción a AEM Communities](/help/communities/getting-started.md) para ver un tutorial sobre la creación rápida de un sitio de comunidad que incluya grupos anidados.
 
 ## Componentes de comunidad {#community-components}
 
@@ -205,9 +205,9 @@ Las características de una comunidad de participación pueden incluir:
 * Moderación
 * Notificaciones
 * Puntuación y distintivos
-* Analytics sistema de informes
+* Sistema de informes de Analytics
 
-Para experimentar la facilidad de crear rápidamente una nueva comunidad de participación, visite [Introducción a los AEM Communities](/help/communities/getting-started.md).
+Para experimentar la facilidad de crear rápidamente una nueva comunidad de participación, visite [Introducción a AEM Communities](/help/communities/getting-started.md).
 
 ### Comunidad de habilitación {#enablement-community}
 
@@ -244,7 +244,6 @@ La AEM Demo Machine requiere una licencia de AEM válida.
 >[!NOTE]
 >
 >Vista de una introducción [](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) en vídeo a la AEM Demo Machine (13:26).
-
 
 ## Documentación de AEM Communities {#aem-communities-documentation}
 
