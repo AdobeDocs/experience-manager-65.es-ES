@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 2%
@@ -96,7 +96,6 @@ Marcar todas las casillas de verificación para Administración [de usuarios](/h
 >[!NOTE]
 >
 >Para un entorno de producción, es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte Inicio de sesión en [Social con Facebook y Twitter](/help/communities/social-login.md).
-
 
 ![configuración del sitio de comunidad](assets/site-settings.png)
 
@@ -228,9 +227,6 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 >1. Seleccione **[!UICONTROL Aceptar]**.
 >1. (Opcional) Seleccione **[!UICONTROL Borrar]** o **[!UICONTROL Forzar reintento]** para restablecer la cola de replicación.
 
->
-
-
 
 ### Seleccione Publicar {#select-publish}
 
@@ -318,7 +314,6 @@ Para empezar:
 >
 >Para deshabilitar, simplemente anteponga el valor de la `sling:match` propiedad con un prefijo &#39;x&#39; - `xlocalhost.4503/$` - y **Guardar todo**.
 
-
 ![pasos opcionales](assets/optional-steps.png)
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
@@ -342,5 +337,3 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 >[!NOTE]
 >
 >Si no está familiarizado con AEM, vista la documentación sobre el manejo [](/help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
-
-
