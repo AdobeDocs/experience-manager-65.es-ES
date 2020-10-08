@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 2%
@@ -145,7 +145,6 @@ Si el nodo es de tipo `cq:Page` (recomendado), con CRXDE|Lite, agregue las propi
 >[!NOTE]
 >
 >Si una regla de puntuación parece no tener ningún efecto en la concesión de distintivos, asegúrese de que la propiedad scoringRules de la regla de puntuación no haya bloqueado la regla de puntuación. Consulte la sección titulada Reglas [de asignación de distintivos](#badging-rules).
-
 
 ### Habilitar distintivos para el componente {#enable-badges-for-component}
 
