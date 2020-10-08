@@ -1,6 +1,6 @@
 ---
-title: Eventos OSGi para componentes de comunidades
-seo-title: Eventos OSGi para componentes de comunidades
+title: EVENTOS OSGi para componentes de comunidades
+seo-title: EVENTOS OSGi para componentes de comunidades
 description: Se envían eventos OSGi que pueden activar oyentes asincrónicos
 seo-description: Se envían eventos OSGi que pueden activar oyentes asincrónicos
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Eventos OSGi para componentes de comunidades  {#osgi-events-for-communities-components}
+# EVENTOS OSGi para componentes de comunidades  {#osgi-events-for-communities-components}
 
 ## Información general {#overview}
 
@@ -66,7 +66,7 @@ Para los componentes Communities entregados en la versión, en las tablas siguie
 | ACTUALIZAR | Se edita el tema o la respuesta del foro del miembro |
 | ELIMINAR | Se elimina el tema o la respuesta del foro del miembro |
 
-[Componente](blog-developer-basics.md)HistorialSocialEvent `topic`= com/adobe/cq/social/historial
+[Componente](blog-developer-basics.md)historialSocialEvent `topic`= com/adobe/cq/social/historial
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -123,12 +123,11 @@ Para los componentes Communities entregados en la versión, en las tablas siguie
 
 Para un componente personalizado, la clase [abstracta](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) SocialEvent debe ampliarse para registrar los eventos del componente `actions`que se producen para un `topic`.
 
-El evento personalizado anularía el método `getVerb()` para que `verb`se devuelva un valor apropiado para cada `action`. El `verb` resultado de una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Hay una relación *n-1* entre `actions`y `verbs`.
+El evento personalizado anularía el método `getVerb()` para que `verb`se devuelva un valor apropiado para cada `action`. El `verb` resultado de una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Existe una relación *n-1* entre `actions`y `verbs`.
 
 >[!NOTE]
 >
 >Asegúrese de que una extensión personalizada esté registrada con una clasificación inferior a cualquier implementación existente en el producto.
-
 
 ### Pseudocódigo para el Evento de componentes personalizados {#pseudo-code-for-custom-component-event}
 
