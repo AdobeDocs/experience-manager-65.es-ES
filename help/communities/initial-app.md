@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 2%
@@ -22,8 +22,8 @@ ht-degree: 2%
 
 En esta sección, creará lo siguiente:
 
-* La **[plantilla](#createthepagetemplate)**que se utilizará para crear páginas de contenido en el sitio web de ejemplo.
-* El **[componente y la secuencia de comandos](#create-the-template-s-rendering-component)**que se utilizarán para procesar las páginas del sitio web.
+* La **[plantilla](#createthepagetemplate)** que se utilizará para crear páginas de contenido en el sitio web de ejemplo.
+* El **[componente y la secuencia de comandos](#create-the-template-s-rendering-component)** que se utilizarán para procesar las páginas del sitio web.
 
 ## Creación de la plantilla de contenido {#create-the-content-template}
 
@@ -31,7 +31,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
 En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
-1. En el panel del explorador de CRXDE Lite:
+1. En el panel del explorador del CRXDE Lite:
 
    * Seleccione `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear plantilla]**
