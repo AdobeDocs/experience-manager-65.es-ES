@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -62,7 +62,6 @@ Solo se pueden realizar tareas de moderación cuando se inicia sesión como admi
 >
 >UGC del entorno de publicación solo estará visible para el autor si el SRP elegido implementa un almacén común. Por ejemplo, de forma predeterminada, el almacenamiento es JSRP, que no es un almacén común para la creación y publicación. Consulte Almacenamiento [de contenido de la comunidad](/help/communities/working-with-srp.md).
 
-
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## IU de la consola de moderación {#moderation-console-ui}
@@ -109,7 +108,6 @@ El área de contenido contiene información para la UGC publicada:
 > 
 >El área de contenido presenta un desplazamiento ** infinito, lo que significa que le permitirá continuar desplazándose hasta que llegue al final del contenido. La barra de herramientas permanece en una posición fija y visible sobre el área de contenido, incluso mientras se desplaza.
 
-
 ### Carril de filtro {#ootbfilters}
 
 ![barra de filtros abiertos](assets/open-filterrail.png)
@@ -125,7 +123,6 @@ Sin embargo, si selecciona **Pregunta** y **Pendiente**, solo verá contenido qu
 >[!NOTE]
 >
 >Los moderadores de la comunidad pueden marcar los filtros predefinidos en la interfaz de usuario de la consola de moderación. A medida que estos filtros se anexan hacia el final de la dirección URL (como parámetros de cadena de consulta), los moderadores pueden volver más tarde a los filtros marcados y también compartir estos vínculos.
-
 
 ![searchicon](assets/searchicon.png)
 
@@ -154,7 +151,6 @@ El sitio limita el UGC referenciado mostrado a los anuncios en los sitios de com
 >Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios no creados con el asistente [de creación del](/help/communities/sites-console.md)sitio, como los ejemplos de Geometrixx.
 >
 >Cuando un miembro de la comunidad de confianza accede a la consola de moderación masiva al publicar, solo se muestran las referencias a UGC creadas para los sitios de la comunidad que el miembro está autorizado a moderar y se pueden filtrar con el filtro del sitio.
-
 
 #### Tipo de contenido {#content-type}
 
@@ -205,7 +201,6 @@ El estado limita el UGC referenciado mostrado a las publicaciones del estado sel
 >[!NOTE]
 >
 >Si solo se selecciona el estado No respondida, el moderador verá todo el contenido (para todos los tipos de contenido) excepto las preguntas respondidas. Es así porque la propiedad responsable de la pregunta respondida no existe en el caso de preguntas no respondidas y otro contenido como tema del foro, artículo del blog o comentarios.
-
 
 ![estados](assets/statuses.png)
 
