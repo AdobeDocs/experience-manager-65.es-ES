@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 4%
@@ -33,7 +33,6 @@ Consulte [Introducción a AEM Communities](/help/communities/getting-started.md)
 >[!NOTE]
 >
 >Los menús principales de Comunidades para la creación de sitios [de](/help/communities/sites-console.md)comunidad, plantillas [de sitios de](/help/communities/sites.md)comunidad, plantillas [de grupos de](/help/communities/tools-groups.md) comunidad y funciones [de](/help/communities/functions.md) comunidad solo se pueden usar en el entorno de creación.
-
 
 ## Requisitos previos {#prerequisites}
 
@@ -180,7 +179,6 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
 >
 >Esto se logra habilitando el entorno ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` para el autor.
 
-
 #### USER MANAGEMENT {#user-management}
 
 ![createsitesettings](assets/createsitesettings.png)
@@ -190,7 +188,6 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
 >Se recomienda que los sitios [de la comunidad de](/help/communities/overview.md#enablement-community) habilitación sean privados (comuníquese con el representante de cuentas para obtener más información).
 >
 >Un sitio de la comunidad es privado cuando se deniega el acceso a los visitantes anónimos del sitio, es posible que no se registre por sí mismo y que no utilice el inicio de sesión en redes sociales.
-
 
 * **Permitir el registro de usuarios**
 
@@ -212,7 +209,7 @@ El valor predeterminado no está marcado.
 
 * **Permitir inicios de sesión de redes sociales: Facebook**
 
-   Si está activada, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. La configuración [de nube de](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) Facebook seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
+   Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. La configuración [de nube de](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) Facebook seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
 Si no se selecciona, no se muestra ningún inicio de sesión en Facebook.
 No marcar un sitio de comunidad *privada* . El valor predeterminado no está marcado.
 
@@ -227,7 +224,6 @@ No marcar un sitio de comunidad *privada* . El valor predeterminado no está mar
 >**Permitir inicios de sesión sociales**
 >
 >Aunque las configuraciones de Facebook y Twitter de muestra pueden existir y ser seleccionables, para un entorno [de](/help/sites-administering/production-ready.md)producción es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte Inicio de sesión en [Social con Facebook y Twitter](/help/communities/social-login.md).
-
 
 #### TAGGING {#tagging}
 
@@ -403,7 +399,6 @@ El contenido de un sitio puede crearse con las mismas herramientas que cualquier
 >
 >Si no está familiarizado con AEM, vista la documentación sobre el manejo [](/help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
-
 ## Modificación de las propiedades del sitio {#modifying-site-properties}
 
 ![edit-site](assets/edit-site.png)
@@ -450,7 +445,6 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
 >
 >Puede cambiar el orden de todas las funciones en la estructura del sitio, excepto la función en la parte superior. Por lo tanto, no se puede cambiar la página de inicio del sitio de las comunidades.
 
-
 >[!CAUTION]
 >
 >* Aunque el título de visualización se puede cambiar sin efectos secundarios, no se recomienda editar el nombre de la dirección URL de una función de comunidad que pertenece a un sitio de comunidad.
@@ -458,13 +452,11 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
 >
 Por ejemplo, si se cambia el nombre de la URL, no se moverá el UGC existente, lo que tendrá el efecto de &#39;perder&#39; UGC.
 
-
 >[!CAUTION]
 >
 >La función de grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
 >
 >Cualquier otra función, como la función [de](/help/communities/functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
-
 
 #### Ejemplo: Añadir una función de catálogo en una estructura de sitio de comunidad {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -551,7 +543,6 @@ Para obtener más información, consulte [Administración de usuarios y grupos](
 >
 >
 se crea, el servicio [de nube de](/help/communities/social-login.md#createafacebookcloudservice) Facebook aplicado debe configurarse para agregar usuarios a este grupo.
-
 
 ## Error de configuración para autenticación {#configure-for-authentication-error}
 
