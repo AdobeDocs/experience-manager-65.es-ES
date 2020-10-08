@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -139,8 +139,7 @@ Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar su ba
 
 >[!NOTE]
 >
->El modo de registro binario predeterminado para MySQL es &quot;Statement&quot;, que es incompatible con las tablas utilizadas por Content Services (obsoleto). El uso del inicio de sesión binario en este modo predeterminado provoca errores en Content Services (obsoleto). Si el sistema incluye Content Services (obsoleto), utilice el modo de registro &quot;Mixto&quot;. Para habilitar el registro &quot;Mixto&quot;, agregue el siguiente argumento a la carpeta my.ini file:*
-`binlog_format=mixed log-bin=logname`
+>El modo de registro binario predeterminado para MySQL es &quot;Statement&quot;, que es incompatible con las tablas utilizadas por Content Services (obsoleto). El uso del inicio de sesión binario en este modo predeterminado provoca errores en Content Services (obsoleto). Si el sistema incluye Content Services (obsoleto), utilice el modo de registro &quot;Mixto&quot;. Para habilitar el registro &quot;Mixto&quot;, agregue el siguiente argumento al archivo my.ini: `binlog_format=mixed log-bin=logname`
 
 Puede utilizar la utilidad mysqldump para obtener la copia de seguridad completa de la base de datos. Se requieren backups completos, pero no siempre son convenientes. Producen grandes archivos de backup y tardan tiempo en generarse. Para realizar una copia de seguridad incremental, asegúrese de que inicio el servidor con la opción - `log-bin` como se describe en la sección anterior. Cada vez que el servidor MySQL se reinicia, deja de escribir en el registro binario actual, crea uno nuevo y, a partir de entonces, el nuevo se convierte en el actual. Puede forzar un conmutador manualmente con el `FLUSH LOGS SQL` comando. Después de la primera copia de seguridad completa, las posteriores copias de seguridad incrementales se realizan utilizando la utilidad mysqladmin con el `flush-logs` comando, que crea el siguiente archivo de registro.
 
