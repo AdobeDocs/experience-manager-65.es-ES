@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
@@ -53,7 +53,6 @@ Para habilitar y modificar la función de mensajería, consulte:
 >[!NOTE]
 >
 >No se pueden agregar `Compose Message, Message, or Message List` componentes (que se encuentran en el grupo de `Communities`componentes) a una página en modo de edición de autor.
-
 
 ## Configuración de componentes de mensajería {#configure-messaging-components}
 
