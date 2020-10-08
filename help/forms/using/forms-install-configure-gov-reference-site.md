@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4742'
 ht-degree: 1%
@@ -788,10 +788,10 @@ Para configurarlas para habilitarlas dentro del flujo de trabajo, los usuarios d
 
 1. Abra la definición del servicio y active la invocación de los servicios seleccionados dentro del flujo de trabajo.
 
->[!NOTE]
-Sólo porque un usuario habilita el servicio en la página Administrador de configuración, los usuarios deben configurar una configuración de servicio para comunicarse con los servicios externos solicitados.
+   >[!NOTE]
+   Sólo porque un usuario habilita el servicio en la página Administrador de configuración, los usuarios deben configurar una configuración de servicio para comunicarse con los servicios externos solicitados.
 
-![paquete de formularios .gov](assets/aftia-configuration-options.jpg)
+   ![paquete de formularios .gov](assets/aftia-configuration-options.jpg)
 
 1. Una vez completada, haga clic en el botón Guardar para guardar la configuración.
 
