@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -120,4 +120,4 @@ El directorio /etc/designs contiene las imágenes, secuencias de comandos y hoja
 
 El directorio /content del repositorio es donde reside el contenido del sitio web. Las rutas de acceso de /content comprenden las rutas de la dirección URL para las solicitudes del explorador.
 
-*Después* de crear la plantilla [de](initial-app.md#createthepagetemplate) página como parte de la aplicación inicial, el contenido de la página inicial se puede crear en función de la plantilla.... [**FINLANDO **](initial-app.md)
+*Después* de crear la plantilla [de](initial-app.md#createthepagetemplate) página como parte de la aplicación inicial, el contenido de la página inicial se puede crear en función de la plantilla.... [**FINLANDO**](initial-app.md)
