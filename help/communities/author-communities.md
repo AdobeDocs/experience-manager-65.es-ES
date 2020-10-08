@@ -1,8 +1,8 @@
 ---
 title: Componentes de Communities
 seo-title: Componentes de Communities
-description: Añadir funciones de comunidad en cualquier sitio de AEM
-seo-description: Añadir funciones de comunidad en cualquier sitio de AEM
+description: Añadir las características de la comunidad en cualquier sitio AEM
+seo-description: Añadir las características de la comunidad en cualquier sitio AEM
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 44%
@@ -35,7 +35,6 @@ Para obtener más información sobre la creación de un sitio de comunidad, visi
 >
 >Si no está familiarizado con el entorno de creación, vista la documentación sobre el manejo [](/help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
-
 ## Componentes de comunidades disponibles {#available-communities-components}
 
 La siguiente tabla lista los componentes de Communities visibles para los autores cuando están activados en el navegador de componentes (barra de tareas).
@@ -53,7 +52,7 @@ Consulte también la guía [de componentes](/help/communities/components-guide.m
 | Barra lateral de blog | [Blog](/help/communities/blog-feature.md) |
 | Calendario | [Calendario](/help/communities/calendar.md) |
 | Comentarios | [Comentarios](/help/communities/comments.md) |
-| Lista de actividades de la comunidad | [Tendencias de Actividad](/help/communities/trends.md) |
+| Lista de actividades de la comunidad | [Tendencias de actividad](/help/communities/trends.md) |
 | Lista de miembros del grupo de la comunidad | [Grupos de la comunidad](/help/communities/creating-groups.md) |
 | Componer mensaje | [Mensajes](/help/communities/configure-messaging.md) |
 | Asignaciones de habilitación | [Asignaciones](/help/communities/assignments.md) |
@@ -82,7 +81,6 @@ Consulte también la guía [de componentes](/help/communities/components-guide.m
 >[!NOTE]
 >
 >El componente de encuesta ya no está disponible y es compatible con las comunidades Experience Manager.
-
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 
