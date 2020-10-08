@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 7%
@@ -198,7 +198,6 @@ En el panel Añadir recursos:
 >[!NOTE]
 >
 >Solo puede seleccionar los recursos disponibles en el mismo nivel que la ruta de aprendizaje. Por ejemplo, para una ruta de aprendizaje creada en un grupo, solo están disponibles los recursos de nivel de grupo; para una ruta de aprendizaje creada en un sitio de comunidad, los recursos de ese sitio están disponibles para agregarlos a la ruta de aprendizaje.
-
 
 * Seleccione **[!UICONTROL Enviar]**.
 
