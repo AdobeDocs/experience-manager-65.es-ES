@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -46,7 +46,6 @@ Al actualizar desde AEM 6.0 o anterior, será necesario migrar UGC para todos lo
 >
 >Para ver las utilidades de reemplazo, consulte Refactorización de [SocialUtils](socialutils.md).
 
-
 ## Método de utilidad para acceder a UGC {#utility-method-to-access-ugc}
 
 Para acceder a UGC, utilice un método del paquete SocialResourceUtilities que devuelve una ruta adecuada para acceder a UGC desde SRP y reemplace el método obsoleto que se encuentra en el paquete SocialUtils.
@@ -74,7 +73,6 @@ Para obtener instrucciones de codificación, visite [Acceso a UGC con SRP](acces
 >
 >El path resourceToUGCStoragePath() devuelve *no es* adecuado para la comprobación [](srp.md#for-access-control-acls)ACL.
 
-
 ## Método de utilidad para acceder a las ACL {#utility-method-to-access-acls}
 
 Algunas implementaciones de SRP, como ASRP y MSRP, almacenan contenido comunitario en bases de datos que no proporcionan verificación de ACL. Los nodos de sombra proporcionan una ubicación en el repositorio local a la que se pueden aplicar las ACL.
@@ -101,7 +99,6 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >[!CAUTION]
 >
 >La ruta devuelta por resourceToACLPath() *no es* adecuada para [acceder al propio UGC](#utility-method-to-access-acls) .
-
 
 ## Ubicaciones de Almacenamientos relacionadas con UGC {#ugc-related-storage-locations}
 
@@ -136,4 +133,3 @@ El UGC se crea en ninguna de estas ubicaciones y solo se debe acceder a él medi
 * [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
 * [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
-
