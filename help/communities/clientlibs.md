@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -90,7 +90,6 @@ Para agregar una clientlib para un sitio de comunidad mediante [CRXDE Lite](/hel
 >[!NOTE]
 >
 >Si el sitio no es un sitio de la comunidad, es necesario descubrir la existencia o ubicación de las bibliotecas cliente que se utilizan para el sitio.
-
 
 Con el ejemplo de [Introducción a AEM Communities](/help/communities/getting-started.md) , donde `site-name` se *involucra*, así es como aparecerá clientliblist si se agrega el componente de revisiones:
 
