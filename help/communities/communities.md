@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 6%
@@ -22,7 +22,7 @@ ht-degree: 6%
 
 ## Información general {#overview}
 
-Los AEM Communities simplifican la creación y personalización de funciones de la comunidad como foros, grupos de usuarios, blogs, preguntas y respuestas, calendarios, comentarios, críticas, votaciones, clasificaciones y asignaciones. Estas funciones hacen que el contenido generado por el usuario (UGC) se introduzca en el entorno de publicación.
+AEM Communities simplifica la creación y personalización de funciones de comunidad como foros, grupos de usuarios, blogs, preguntas y respuestas, calendarios, comentarios, críticas, votaciones, clasificaciones y asignaciones. Estas funciones hacen que el contenido generado por el usuario (UGC) se introduzca en el entorno de publicación.
 
 La base de un sitio [](overview.md#communitiessites) comunitario es el marco [de componentes](scf.md) sociales. La creación de un sitio de comunidad comienza con la selección de una plantilla [de sitio de](sites-console.md) comunidad compuesta por funciones [de](functions.md)comunidad.
 
@@ -36,7 +36,6 @@ Para obtener información general y tutoriales de introducción, visite:
 > 
 >Se recomienda estar al día con las [últimas versiones](deploy-communities.md#latest-releases).
 
-
 ## Implementaciones recomendadas {#recommended-deployments}
 
 * [Almacenamiento](working-with-srp.md)de contenido de la comunidad: analiza las opciones de SRP disponibles para una tienda común UGC
@@ -48,13 +47,13 @@ Para obtener información general y tutoriales de introducción, visite:
 * [Ayudantes](handlebars-helpers.md)de manillares SCF: ayudantes predeterminados y cómo escribir asistentes personalizados.
 * [Personalización](client-customize.md)del lado del cliente: personalizar el código que se ejecuta en el navegador.
 * [Personalización](server-customize.md)del lado del servidor: personalizar el código que se ejecuta en el servidor.
-* [Proveedor de recursos de Almacenamiento (SRP)](srp.md): descripción general del almacenamiento de contenido de la comunidad.
+* [Proveedor de recursos de almacenamiento (SRP)](srp.md): descripción general del almacenamiento de contenido de la comunidad.
 * [Directrices](code-guide.md)de codificación: guías, consejos y trucos.
 * [Guía](components-guide.md)de componentes de comunidad: herramienta de desarrollo interactivo.
 
 ## Componentes, funciones y características esenciales {#component-function-and-feature-essentials}
 
-Los componentes, funciones y características del AEM Communities proporcionan los componentes básicos para los sitios [de](sites-console.md)comunidad.
+Los componentes, las funciones y las funciones de AEM Communities proporcionan los componentes básicos para los sitios [de](sites-console.md)comunidad.
 
 * [Componentes, funciones y características esenciales](essentials.md)
 * [Componentes Clientlibs for Communities](clientlibs.md)
