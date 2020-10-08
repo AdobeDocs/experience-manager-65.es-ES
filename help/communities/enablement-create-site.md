@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 3%
@@ -123,7 +123,6 @@ Por ejemplo,
 >[!NOTE]
 >
 >[El servicio](/help/communities/deploy-communities.md#tunnel-service-on-author) de túnel permite seleccionar miembros y grupos que solo existen en el entorno de publicación.
-
 
 ![roles de habilitación](assets/site-admin.png)
 
@@ -316,7 +315,6 @@ Para empezar:
 >
 >Para deshabilitar, simplemente anteponga el valor de la `sling:match` propiedad con una &#39;x&#39; - `xlocalhost.4503/$` - y **Guardar todo**.
 
-
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
@@ -340,7 +338,6 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 >[!NOTE]
 >
 >Si no está familiarizado con AEM, vista la documentación sobre el manejo [](/help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
-
 
 ### Añadir un catálogo {#add-a-catalog}
 
