@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 7%
@@ -48,7 +48,6 @@ Esta sección de la documentación describe:
 >Los componentes `Journal` y `Journal Sidebar` se titulan `Blog` y `Blog Sidebar`.
 >
 >La función de blog que se encuentra en AEM 6.0 y versiones anteriores ahora se ha eliminado. Se basaba en una plantilla y solo permitía a los autores crear contenido en el entorno de creación.
-
 
 ## Añadir componentes de blog en una página {#adding-blog-components-to-a-page}
 
@@ -112,8 +111,8 @@ En la ficha **Configuración** , especifique las características básicas del b
 >[!NOTE]
 >
 >El Título de Historial se utiliza para crear automáticamente la URL para el blog.
+>
 >Se utilizan un máximo de 50 caracteres (con 5 caracteres adicionales para la exclusividad) desde el título de historial que especifique aquí para crear una URL para el blog.
-
 
 * **Descripción del diario**
 
