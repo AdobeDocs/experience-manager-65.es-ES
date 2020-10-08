@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 03e3bb3a6843ef19b63a4ed915d9821dd706c3d4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 4%
@@ -383,7 +383,6 @@ Si se crean nuevos componentes personalizados instrumentados para Analytics, deb
 >[!NOTE]
 >
 >Los componentes de historial se utilizan para implementar la función de blog.
-
 
 ### Se asignó Analytics a variables de AEM {#mapped-analytics-to-aem-variables}
 
