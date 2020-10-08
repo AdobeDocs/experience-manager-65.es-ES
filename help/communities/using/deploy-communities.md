@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c0834e9b70266e8b678771510fb1756c8091ea8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -329,7 +329,6 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
 >
 >Si ya se ha configurado otra característica de seguridad basada en claves criptográficas, replicar las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el servicio de atención](https://helpx.adobe.com/es/marketing-cloud/contact-support.html)al cliente.
 
-
 #### Replicación del repositorio {#repository-replication}
 
 El hecho de tener el material clave almacenado en el repositorio, como ocurrió con AEM 6.2 y versiones anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
@@ -339,7 +338,6 @@ El hecho de tener el material clave almacenado en el repositorio, como ocurrió 
 >[!NOTE]
 >
 >Es importante verificar que el agente de [replicación del autor](#replication-agents-on-author) esté correctamente configurado.
-
 
 Con el material clave almacenado en el repositorio, la manera de replicar la clave criptográfica de autor a otras instancias es la siguiente:
 
