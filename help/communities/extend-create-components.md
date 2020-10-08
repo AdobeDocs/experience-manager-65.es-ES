@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,6 @@ Ambos componentes deben implementarse, especialmente si se personaliza el aspect
 >Solo se permite un sistema de comentarios por página del sitio.
 >
 >Muchas funciones de Comunidades ya incluyen un sistema de comentarios cuyo resourceType puede modificarse para hacer referencia al sistema de comentarios ampliado.
-
 
 ## Creación del componente Comentarios {#create-the-comments-component}
 
@@ -109,7 +108,7 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
 
 ### Copiar y modificar los scripts HBS predeterminados {#copy-and-modify-the-default-hbs-scripts}
 
-Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Copiar `comments.hbs`
 
@@ -147,7 +146,7 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 Para evitar tener que incluir explícitamente esta biblioteca de cliente, se podría usar el valor de categorías para la clientlib del sistema de comentarios predeterminado ( `cq.social.author.hbs.comments`), pero entonces esta clientlib también se incluiría para todas las instancias del componente predeterminado.
 
-Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Seleccionar `/apps/custom/components/comments` nodo
 * Seleccione **[!UICONTROL Crear nodo]**
