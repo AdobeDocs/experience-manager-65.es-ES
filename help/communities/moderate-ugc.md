@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 2%
@@ -221,7 +221,7 @@ Para habilitar el motor de detección de spam, siga estos pasos:
 
 1. Abra la consola [web](https://localhost:4502/system/console/configMgr), vaya a `/system/console/configMgr`.
 
-1. Localice la configuración de Moderación **automática de** AEM Communities y edítela.
+1. Busque la configuración de Moderación **automática de** AEM Communities y edítela.
 1. Añada la entrada **[!UICONTROL SpamProcess]** .
 
 ![spamprocess](assets/spamprocess.png)
@@ -229,7 +229,6 @@ Para habilitar el motor de detección de spam, siga estos pasos:
 >[!NOTE]
 >
 >La detección de spam solo se implementa para la configuración regional en inglés.
-
 
 ### Opinión {#sentiment}
 
@@ -275,11 +274,11 @@ Para configurar la opinión y las palabras clave:
 
 * **Palabras de observación positivas**
 
-   lista de palabras separadas por coma que contribuye a una opinión positiva que anula los valores predeterminados. El valor predeterminado es una lista vacía.
+   Lista de palabras separadas por coma que contribuye a una opinión positiva que anula los valores predeterminados. El valor predeterminado es una lista vacía.
 
 * **Palabras de observación negativas**
 
-   lista de palabras separadas por coma que contribuye a una opinión negativa que anula los valores predeterminados. El valor predeterminado es una lista vacía.
+   Lista de palabras separadas por coma que contribuye a una opinión negativa que anula los valores predeterminados. El valor predeterminado es una lista vacía.
 
 * **Ruta explícita al nodo Watchwords**
 
