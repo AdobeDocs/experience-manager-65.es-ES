@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Ahora que se ha publicado el sitio de comunidades recién creado, busque la dire
 * URL del autor = https://localhost:4502/content/sites/engage/en.html
 * URL de publicación = https://localhost:4503/content/sites/engage/en.html
 
-Para minimizar la confusión sobre qué miembro ha iniciado sesión en el autor y la publicación, se recomienda utilizar distintos navegadores para cada instancia.
+Para minimizar la confusión sobre qué miembro ha iniciado sesión en la creación y publicación, se recomienda utilizar distintos navegadores para cada instancia.
 
 Al llegar por primera vez al sitio publicado, el visitante del sitio no suele haber iniciado sesión y sería anónimo.
 
@@ -86,14 +86,14 @@ En la esquina superior derecha, seleccione `Log in`y firme con el nombre de usua
 
 Una vez que haya iniciado sesión como miembro de la comunidad registrado, observe los siguientes elementos de menú para hacer clic y explorar el sitio de la comunidad:
 
-* **La opción Perfil** le permite realizar vistas y editar el perfil.
+* **La opción perfil** le permite realizar vistas y editar el perfil.
 * [La opción Mensajes](/help/communities/configure-messaging.md) le dirige a la sección de mensajes directos, donde puede:
 
    1. Vista los mensajes directos recibidos (Bandeja de entrada), enviados (Elementos enviados) y eliminados (Papelera).
    1. Redacte nuevos mensajes directos para enviarlos a personas y grupos.
 
 * [La opción Notificaciones](/help/communities/notifications.md) le dirige a la sección de notificaciones, donde puede realizar la vista de sus eventos de interés y editar la configuración de las notificaciones.
-* [Administración](/help/communities/published-site.md#moderationlink) le dirige a la página Moderación de AEM Communities, si tiene privilegios de moderación.
+* [La administración](/help/communities/published-site.md#moderationlink) le dirige a la página de moderación de AEM Communities, si tiene privilegios de moderación.
 
 ![adminscreen](assets/adminscreen.png)
 
@@ -108,13 +108,10 @@ Observe que la página Calendario es la página de inicio porque la plantilla de
 >* [Componentes](/help/communities/author-communities.md) de comunidades (para autores)
 >* [Componentes, funciones y características esenciales](/help/communities/essentials.md) (para desarrolladores)
 
->
-
-
 
 ### Vínculo de foro {#forum-link}
 
-Para Vista de la función básica de foro, seleccione el vínculo Foro.
+Para vista de la función básica de foro, seleccione el vínculo Foro.
 
 Los miembros pueden publicar un tema nuevo o seguir un tema.
 
@@ -154,7 +151,7 @@ Una vez creado el nuevo grupo, **seleccione el nuevo grupo** Deportes para crear
 
 ![grouplink1](assets/grouplink1.png)
 
-El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports` grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes `Groups` .
+El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports` grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes. `Groups`
 
 Como ejemplo, agregue dos `new groups`.
 
