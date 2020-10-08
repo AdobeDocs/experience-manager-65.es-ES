@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,6 @@ Superponga el sistema de comentarios con una versión personalizada copiando el 
 >[!CAUTION]
 >
 >El contenido de la carpeta /libs nunca se edita porque cualquier reinstalación o actualización puede eliminar o reemplazar la carpeta /libs mientras el contenido de la carpeta /apps no se modifica.
-
 
 Con [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) en una instancia de autor, comience por crear una ruta en la carpeta /apps que sea idéntica a la ruta a los componentes superpuestos en la carpeta /libs.
 
@@ -82,9 +81,6 @@ Algunos nodos de la ruta son carpetas y otros componentes.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
->
-
 
 
 La propia superposición `Type`(propiedad `sling:resourceType`) debe ser una autorreferencia relativa para que cualquier contenido no encontrado en /apps se busque en /libs.
