@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,6 @@ Los pasos para agregar componentes SCF dinámicamente son:
 >[!NOTE]
 >
 >No se admite la transferencia de recursos [](scf.md#add-or-include-a-communities-component) no existentes.
-
 
 ## Añadir dinámicamente un componente a DOM {#dynamically-add-component-to-dom}
 
