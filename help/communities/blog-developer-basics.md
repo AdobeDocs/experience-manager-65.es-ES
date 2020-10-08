@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -30,7 +30,6 @@ Esta página proporciona la información esencial para trabajar con la función 
 >[!NOTE]
 >
 >La infraestructura subyacente de la función de blog es la característica de historial.
-
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -102,7 +101,7 @@ A partir de AEM 6.1 Comunidades, el uso de un almacén [](/help/communities/work
 
 Consulte :
 
-* [Descripción general](/help/communities/srp.md) del proveedor de recursos de almacenamiento: introducción y uso del repositorio.
+* [Almacenamiento Resource Provider Overview](/help/communities/srp.md) : introducción y descripción general del uso del repositorio.
 * [SRP y UGC Essentials](/help/communities/srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
 * [Acceso a UGC con SRP](/help/communities/accessing-ugc-with-srp.md) : directrices de codificación.
 * [Refactorización](/help/communities/socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
