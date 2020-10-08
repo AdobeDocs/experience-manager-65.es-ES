@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -28,10 +28,9 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 >
 >No se admite la extensión de un componente [superpuesto](client-customize.md#overlays) .
 
-
 ## Ejemplo {#example}
 
-Supongamos que el encabezado del componente de comentarios debe mostrarse con un aspecto alternativo en un sitio de la instancia de AEM, mientras aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentarios para todas las instancias, una mejor solución es asegurarse de que hay varios componentes de comentarios disponibles para su uso en varios sitios.
+Supongamos que el encabezado del componente de comentario debe mostrarse con un aspecto alternativo en un sitio de la instancia de AEM, mientras aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentarios para todas las instancias, una mejor solución es asegurarse de que hay varios componentes de comentarios disponibles para su uso en varios sitios.
 
 Para implementar esta solución, cree un nuevo componente que extienda (anule) el existente y modifique la secuencia de comandos Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la extendida, mientras que los sitios que utilizan la apariencia predeterminada no se verán afectados.
 
