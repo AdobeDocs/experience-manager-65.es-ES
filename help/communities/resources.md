@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 5%
@@ -35,12 +35,9 @@ Para obtener más información, consulte [Configuración de la habilitación](en
 >
 >Si SCORM se instala después de la creación del sitio de la comunidad, se deben volver a crear los recursos de habilitación presentes antes de la instalación de SCORM.
 
-
-
 >[!NOTE]
 >
 >Con el lanzamiento de [AEM 6.3](deploy-communities.md#latestfeaturepack) y los paquetes de funciones equivalentes de Communities [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) y [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la función de habilitación ya no requiere una base de datos [](mysql.md)MySQL.
-
 
 ## Terminología {#terminology}
 
@@ -251,7 +248,6 @@ Seleccione el `'+' icon`, en la esquina superior derecha, para comenzar el proce
 >
 >Si un miembro está matriculado en un recurso y en una ruta de aprendizaje que hace referencia a ese recurso, sus asignaciones mostrarán tanto el recurso único como el recurso dentro de la ruta de aprendizaje.
 
-
 * **[!UICONTROL Entornos sociales]**
 
    Esta configuración controla si los alumnos pueden o no proporcionar información sobre el recurso de habilitación. La configuración [de](sites-console.md#moderation) moderación es la del sitio de la comunidad principal.
@@ -389,7 +385,6 @@ En el caso de los recursos de habilitación incluidos en una ruta de aprendizaje
 >
 >Solo puede seleccionar los recursos disponibles en el mismo nivel que la ruta de aprendizaje. Por ejemplo, para una ruta de aprendizaje creada en un grupo, solo están disponibles los recursos de nivel de grupo; para una ruta de aprendizaje creada en un sitio de comunidad, los recursos de ese sitio están disponibles para agregarlos a la ruta de aprendizaje.
 
-
 * Seleccione **[!UICONTROL Siguiente]**.
 
 ### Configuración {#settings-1}
@@ -411,7 +406,6 @@ En el caso de los recursos de habilitación incluidos en una ruta de aprendizaje
 >Los recursos de habilitación a los que se hace referencia desde la ruta de aprendizaje no deben lista a los mismos Asignados (alumnos), si los hay.
 >
 >Si un miembro está matriculado en un recurso de habilitación y en una ruta de aprendizaje que hace referencia a ese recurso, sus asignaciones mostrarán el recurso único y el recurso dentro de la ruta de aprendizaje.
-
 
 ## Administración de un recurso {#managing-a-resource}
 
@@ -460,7 +454,7 @@ Aunque el cuadro de diálogo indica que la acción está en cola, a menudo se pu
 
 ![cancelar publicación](assets/unpublish.png)
 
-Para que los miembros del entorno de publicación no puedan acceder temporalmente a los recursos de habilitación sin eliminarlos, utilice el icono de mundo para `Unpublish` el recurso.
+Para que los miembros del entorno de publicación no tengan acceso a los recursos de habilitación temporalmente sin eliminarlos, utilice el icono de mundo para `Unpublish` el recurso.
 
 ### Informe {#report}
 
