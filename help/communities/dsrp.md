@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -34,7 +34,6 @@ Consulte también [Características de las Opciones](working-with-srp.md#charact
 >[!NOTE]
 >
 >La configuración de almacenamiento predeterminada ahora se almacena en ruta(`/conf/global/settings/community/srpc/defaultconfiguration`) de conf en lugar de ruta (`/etc/socialconfig/srpc/defaultconfiguration`) de etc. Se recomienda que siga los pasos [de](#zerodt-migration-steps) migración para que el comando predeterminado funcione según lo previsto.
-
 
 ## Configuración de base de datos relacional {#relational-database-configuration}
 
