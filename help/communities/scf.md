@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -183,7 +183,6 @@ La Guía [de componentes de](components-guide.md) comunidad permite que los comp
 >[!NOTE]
 >
 >Para agregar un componente a una página de forma dinámica, en lugar de agregarlo o incluirlo en una plantilla, consulte [Descarga](sideloading.md)de componentes.
-
 
 ### Ayudantes de manillar {#handlebars-helpers}
 
