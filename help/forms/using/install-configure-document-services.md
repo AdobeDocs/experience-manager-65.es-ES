@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -340,7 +340,7 @@ Puede habilitar a un usuario que no sea administrador para que utilice el servic
    1. Microsoft recomienda realizar una copia de seguridad del Registro antes de modificarlo. Para ver los pasos detallados, consulte [Cómo realizar una copia de seguridad y restaurar el Registro en Windows](https://support.microsoft.com/en-us/help/322756).
    1. Abra el editor del Registro de Microsoft Windows. Para abrir el editor del Registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en Aceptar.
    1. Ir a `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Asegúrese de que el valor de EnableLUA esté establecido en 0 (cero).
-   1. Asegúrese de que el valor de **EnableLUA** está establecido en 0 (cero). Si el valor no es 0, cambie el valor a 0. Cierre el editor del Registro.
+   1. Asegúrese de que el valor de **EnableLUA** esté establecido en 0 (cero). Si el valor no es 0, cambie el valor a 0. Cierre el editor del Registro.
 
 1. Reinicie el equipo.
 
@@ -553,8 +553,7 @@ Realice los siguientes pasos para configurar los certificados:
 
    >[!NOTE]
    >
-   >* En el entorno de producción, reemplace las credenciales de evaluación por las credenciales de producción. Asegúrese de eliminar las credenciales antiguas de las extensiones de Reader antes de actualizar una credencial de evaluación o caducada.
-
+   >En el entorno de producción, reemplace las credenciales de evaluación por las credenciales de producción. Asegúrese de eliminar las credenciales antiguas de las extensiones de Reader antes de actualizar una credencial de evaluación o caducada.
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]** en la página **[!UICONTROL Editar configuración]** de usuario.
 
