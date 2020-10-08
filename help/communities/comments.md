@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 6%
@@ -34,7 +34,6 @@ El documento describe:
 >
 >No se admite la publicación anónima de un comentario. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar.
 
-
 ### Añadir comentarios a una página {#adding-comments-to-a-page}
 
 Para agregar un `Comments` componente a una página en modo de autor, utilice el navegador de componentes para localizar
@@ -52,7 +51,6 @@ Cuando se incluyen las bibliotecas [](/help/communities/essentials-comments.md#e
 >[!NOTE]
 >
 >Solo puede existir un `Comments` componente en una página. Tenga en cuenta que varias funciones de Comunidades ya incluyen comentarios, como un blog, calendario, foro, control de calidad y reseñas.
-
 
 ### Configuración de comentarios {#configuring-comments}
 
