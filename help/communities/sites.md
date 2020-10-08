@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -25,7 +25,6 @@ La consola Plantillas de sitio es muy similar a la consola Plantillas [de](tools
 >[!NOTE]
 >
 >Las consolas para la creación de sitios [de](sites-console.md)comunidad, plantillas [de sitio de](sites.md)comunidad, plantillas [de grupo de](tools-groups.md) comunidad y funciones [de](functions.md) comunidad solo se pueden usar en el entorno de creación.
-
 
 ## Consola Plantillas del sitio {#site-templates-console}
 
@@ -85,7 +84,6 @@ La función de página proporciona una página vacía. La función de grupos per
 >
 >Cualquier otra función, como la función [de](functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
 
-
 ![site-editor](assets/site-editor.png)
 
 ### Funciones de plantillas de grupo para grupos {#group-templates-for-groups-function}
@@ -95,7 +93,6 @@ Al incluir una función de grupos en la plantilla de sitio, la configuración re
 >[!CAUTION]
 >
 >La función Grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
-
 
 ![site-features](assets/site-functions.png)
 
