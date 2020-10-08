@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1239'
+ht-degree: 1%
 
 ---
 
@@ -50,8 +50,8 @@ Observe que esta página de inicio muestra cuatro elementos de menú: `Assignmen
 >[!NOTE]
 >
 >Es posible otorgar acceso anónimo a un sitio de habilitación sin permitir que los visitantes del sitio se autoricen.
+>
 >Si un recurso de habilitación está establecido en `show in catalog` y `allow anonymous access`, será posible que visitantes anónimos del sitio realicen vistas en los recursos del catálogo.
-
 
 ### Impedir el acceso anónimo a JCR {#prevent-anonymous-access-on-jcr}
 
@@ -59,7 +59,7 @@ Una limitación conocida expone el contenido del sitio de la comunidad a visitan
 
 Para proteger el contenido del sitio de la comunidad del acceso de usuarios anónimos a través del contenido jcr y json, siga estos pasos:
 
-1. En la instancia de creación de AEM, vaya a https://&lt;host>:&lt;puerto>/editor.html/content/site/&lt;nombre de sitio>.html.
+1. En AEM instancia de autor, vaya a https://&lt;host>:&lt;puerto>/editor.html/content/site/&lt;nombre de sitio>.html.
 
    >[!NOTE]
    >
@@ -177,12 +177,12 @@ Al pasar el ratón por encima de una tarjeta de comentarios se muestran las acci
 
 Existen dos formas de acceder al sistema de informes de los alumnos y a los recursos de activación.
 
-En el autor, vaya a la consola **[Comunidades,](resources.md)**Recursos, donde se administran los recursos de habilitación y, después de seleccionar un sitio de comunidad, podrá generar informes para
+En el autor, vaya a la consola **[Comunidades,](resources.md)** Recursos, donde se administran los recursos de habilitación y, después de seleccionar un sitio de comunidad, podrá generar informes para
 
 * Todos los recursos de habilitación y rutas de aprendizaje
 * Un recurso de habilitación específico o una ruta de aprendizaje
 
-Vaya a la consola **[Comunidades,](reports.md)**Informes y genere informes según:
+Vaya a la consola **[Comunidades,](reports.md)** Informes y genere informes según:
 
 * Asignaciones a recursos de habilitación y rutas de aprendizaje
 * Anuncios en un sitio de comunidad durante un período específico
@@ -209,7 +209,7 @@ Con un poco de actividad e interacción con los recursos al publicar, vale la pe
 * Seleccione el `Report` icono para ver un resumen de todos los recursos.
 * Seleccione un recurso y, a continuación, el `Report` icono de un informe sobre dicho recurso.
 
-Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, que pueden tardar entre 1 y 12 horas en aparecer. Sin embargo, el sistema de informes SCORM básico ya está disponible.
+Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, que pueden tardar de 1 a 12 horas en aparecer. Sin embargo, el sistema de informes SCORM básico ya está disponible.
 
 #### Informe de recursos de lecciones de esquí {#ski-lessons-resource-report}
 
@@ -251,7 +251,7 @@ Para informes sobre vistas:
 
 * Al crear, inicie sesión con privilegios administrativos.
 * Vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Informes]** > Informe **[!UICONTROL Vistas]**.
-* Seleccione un **sitio **en el menú desplegable (seleccione`Enablement Tutorial`).
+* Seleccione un **sitio** en el menú desplegable (seleccione `Enablement Tutorial`).
 
 * Seleccione **[!UICONTROL Tipo]** de contenido (seleccione `all`).
 
