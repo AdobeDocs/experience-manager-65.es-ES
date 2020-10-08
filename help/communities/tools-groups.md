@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '542'
+ht-degree: 3%
 
 ---
 
@@ -33,10 +33,9 @@ Cuando se realiza una acción para crear un nuevo grupo de comunidad, se selecci
 >
 >Las consolas para la creación de sitios [de](/help/communities/sites-console.md)comunidad, plantillas [de sitio de](/help/communities/sites.md)comunidad, plantillas [de grupo de](/help/communities/tools-groups.md) comunidad y funciones [de](/help/communities/functions.md) comunidad solo se pueden usar en el entorno de creación.
 
-
 ## Consola Plantillas de grupo {#group-templates-console}
 
-Para llegar a la consola de plantillas de grupos en el entorno AEM Author:
+Para acceder a la consola de plantillas de grupos en AEM Author entorno:
 
 * Seleccionar **herramientas | Comunidades | Plantillas de grupo,** desde la navegación global.
 
@@ -83,7 +82,6 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 >La función de grupos anidados está disponible a partir de Communities [FP1](/help/communities/communities.md#latestfeaturepack).
 >
 >Todavía no se permite agregar una función Grupos como la primera o única función de una plantilla.
-
 
 ![Editor de plantillas de grupo](assets/template-editor.png)
 
