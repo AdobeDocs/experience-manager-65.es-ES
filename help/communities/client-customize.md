@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 |---|---|
 |  | **[Manillares de SCF Ayudantes](handlebars-helpers.md)** |
 
-Para personalizar el aspecto y/o el comportamiento de un componente AEM Communities en el lado del cliente, existen varios métodos.
+Para personalizar el aspecto y/o el comportamiento de un componente de AEM Communities en el lado del cliente, existen varios enfoques.
 
 Dos enfoques principales son superponer o ampliar un componente.
 
@@ -108,7 +108,6 @@ Los estilos personalizados ahora anularán los estilos de marco predeterminados 
 >Cualquier nombre de clase CSS con el prefijo `scf-js` tiene un uso específico en el código javascript. Estas clases afectan al estado de un componente (por ejemplo, alternar entre oculto y visible) y no deben superarse ni eliminarse.
 >
 >Aunque las `scf-js` clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, puede haber efectos secundarios.
-
 
 ## Ampliación de Javascript {#extending-javascript}
 
