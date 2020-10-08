@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 10%
@@ -34,7 +34,7 @@ La función de foro proporciona un área para los visitantes del sitio con sesi�
 
 Esta sección de la documentación describe:
 
-* Añadir la función de foro en un sitio de AEM.
+* Añadir la función de foro en un sitio AEM.
 * Configuración del `Forum` componente.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
@@ -102,7 +102,7 @@ En la ficha **Configuración** , especifique la configuración de los temas y la
 
 * **Permitir seguimiento**
 
-   Si se selecciona, incluya la siguiente función para las publicaciones en el foro, que permite que se [notifique](/help/communities/notifications.md) a los miembros de las nuevas publicaciones. El valor predeterminado no está marcado.
+   Si está activada, incluya la siguiente función para las publicaciones del foro, que permite que se [notifique](/help/communities/notifications.md) a los miembros de las nuevas publicaciones. El valor predeterminado no está marcado.
 
 * **Permitir fijación**
 
@@ -122,7 +122,7 @@ En la ficha **Configuración** , especifique la configuración de los temas y la
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **El tamaño** máximo del archivo de imagen adjunto solo es relevante si se ha marcado Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
 
@@ -173,7 +173,6 @@ En la ficha **Configuración** , especifique la configuración de los temas y la
 >[!NOTE]
 >
 >Puede que sea necesario comprobar `AllowThreaded Replies` y `Allow users to Delete Comments and Topics` activar los comentarios sobre un tema.
-
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
