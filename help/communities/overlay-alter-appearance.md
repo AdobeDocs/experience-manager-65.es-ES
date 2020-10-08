@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -62,14 +62,13 @@ Inserte el componente de comentarios superpuestos en la instancia de publicació
 >
 >Una forma más sólida de replicación sería crear un paquete en el Administrador de paquetes y [activarlo](/help/sites-administering/package-manager.md#replicating-packages) . Se puede exportar y archivar un paquete.
 
-
 En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** y haga clic en **[!UICONTROL Activar árbol]**.
 
 Para la Ruta de Inicio, introduzca `/apps/social/commons` y seleccione **[!UICONTROL Activar]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
-### Resultados de Vista {#view-results}
+### Resultados de vista {#view-results}
 
 Si inicia sesión en la instancia de publicación como administrador, por ejemplo: https://localhost:4503/crx/de como administrador/administrador, puede comprobar que los componentes superpuestos están allí.
 
