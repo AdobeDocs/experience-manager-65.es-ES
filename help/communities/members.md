@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -39,7 +39,6 @@ Para administrar usuarios y grupos registrados en el entorno de *creación* , es
 >
 >Con el contenido de muestra implementado y activado, muchos usuarios de muestra existen tanto en los entornos de autor como de publicación. Estos usuarios no estarán presentes cuando se ejecuten con [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
-
 ## Consola de miembros {#members-console}
 
 En el entorno de creación, para llegar a la consola Miembros para administrar los miembros registrados en el entorno de publicación:
@@ -49,7 +48,6 @@ En el entorno de creación, para llegar a la consola Miembros para administrar l
 >[!CAUTION]
 >
 >No será posible utilizar la consola Miembros si el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel no está habilitado.
-
 
 ![member-console1](assets/member-console1.png)
 
@@ -66,7 +64,7 @@ Seleccione el icono de búsqueda en la parte izquierda del encabezado para `Memb
 
 ### Estadísticas de los miembros {#member-statistics}
 
-Las columnas que se muestran `Views`, `Posts``Follows` y `Likes` se actualizan cuando el usuario es miembro de uno o varios sitios de la comunidad con Adobe Analytics [habilitado](sites-console.md#analytics).
+Las columnas que se muestran `Views`, `Posts``Follows` y `Likes` se actualizan cuando el usuario es miembro de uno o varios sitios de comunidad con Adobe Analytics [habilitado](sites-console.md#analytics).
 
 ### Exportar CSV {#export-csv}
 
@@ -174,7 +172,6 @@ Para acceder a la consola Grupos:
 >[!CAUTION]
 >
 >No será posible utilizar la consola Grupos si el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel no está habilitado.
-
 
 ### Crear un grupo nuevo {#create-new-group}
 
