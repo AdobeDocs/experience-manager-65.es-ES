@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 0%
@@ -111,7 +111,6 @@ En el entorno de publicación, según la [configuración](sites-console.md#user-
 >
 >Si un visitante del sitio se registra como miembro de un sitio de comunidad abierta, automáticamente se convierte en miembro de otros sitios de comunidad abierta en el mismo entorno de publicación.
 
-
 ### Publicar funciones de grupo {#publish-group-roles}
 
 | Si es miembro del grupo... | Función principal |
@@ -151,7 +150,6 @@ Cuando una función de comunidad no está segura (no se ha asignado ningún grup
 >[!NOTE]
 >
 >Añadir un usuario a un grupo de miembros privilegiados para un sitio de comunidad solo les otorgará privilegios de creación si también son miembros de ese mismo sitio de comunidad.
-
 
 ## Creación de miembros de la comunidad {#creating-community-members}
 
