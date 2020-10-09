@@ -3,7 +3,7 @@ title: Procesar recursos con controladores de medios y flujos de trabajo
 description: Obtenga información sobre los controladores de medios y cómo utilizar flujos de trabajo para realizar tareas en los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 4%
@@ -446,7 +446,7 @@ Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en [
 
 * Transformación EPS e AI mediante [ImageMagick](https://www.imagemagick.org/script/index.php) y [Ghostscript](https://www.ghostscript.com/).
 * Transcodificación de vídeo FLV mediante [FFmpeg](https://ffmpeg.org/).
-* Codificación MP3 con [LAME](http://lame.sourceforge.net/).
+* Codificación MP3 con [LAME](https://lame.sourceforge.io/).
 * Procesamiento de audio mediante [SOX](http://sox.sourceforge.net/).
 
 >[!NOTE]
