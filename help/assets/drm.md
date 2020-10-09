@@ -3,10 +3,10 @@ title: Digital Rights Management de los activos
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 6%
+source-wordcount: '1400'
+ht-degree: 5%
 
 ---
 
@@ -20,10 +20,6 @@ Los recursos digitales suelen estar asociados a una licencia que especifica los 
 La caducidad de los activos es una forma eficaz de aplicar los requisitos de licencia de los activos. Garantiza que el recurso publicado no se publique cuando caduque, lo que evita la posibilidad de cualquier infracción de licencia. Un usuario sin permisos de administrador no puede editar, copiar, mover, publicar ni descargar un recurso caducado.
 
 Puede vista del estado de caducidad de un recurso en la [!DNL Assets] consola, tanto en la tarjeta como en las vistas de lista.
-
-![expired_flag_card](assets/expired_flag_card.png)
-
-*Figura: En la vista de tarjetas, un indicador de la tarjeta indica que el recurso ha caducado.*
 
 ![expired_flag_lista](assets/expired_flag_list.png)
 
@@ -40,17 +36,11 @@ Puede vista el estado de caducidad de un recurso en la [!UICONTROL línea de tie
 También puede vista el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
 1. Desplácese al recurso para el que desea realizar una vista haciendo referencia a páginas web y recursos compuestos.
-1. Seleccione el recurso y haga clic en el [!DNL Experience Manager] logotipo.
-
-1. Elija **[!UICONTROL Referencias]** en el menú.
-
-   ![chlimage_1-146](assets/chlimage_1-146.png)
-
-   En el caso de los recursos caducados, el carril Referencias muestra el estado de caducidad del **[!UICONTROL recurso]** en la parte superior.
+1. Seleccione el recurso y abra **[!UICONTROL Referencias]** en el carril izquierdo. Para los recursos caducados, el carril [!UICONTROL Referencias] muestra el estado de caducidad del **[!UICONTROL recurso Caducado]** en la parte superior.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Si el recurso tiene subrecursos caducados, el carril Referencias muestra el estado **[!UICONTROL Recurso con subrecursos]** Caducados.
+   Si el recurso tiene subrecursos caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL Recurso con subrecursos]** Caducados.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -61,17 +51,11 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 1. En la [!DNL Assets] consola, haga clic en la **[!UICONTROL opción Buscar]** de la barra de herramientas para mostrar el cuadro Omniture Search.
 
 1. Con el cursor en el cuadro Omniture Search, presione la tecla Intro para mostrar la página de resultados de la búsqueda.
-
-   ![chlimage_1-150](assets/chlimage_1-150.png)
-
-1. Haga clic en [!DNL Experience Manager] logotipo para mostrar el panel de búsqueda.
-1. Click the **[!UICONTROL Expiry Status]** option to expand it.
+1. Abra el panel de búsqueda en el carril izquierdo. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Seleccione **[!UICONTROL Caducado]**. Los recursos caducados se muestran en los resultados de la búsqueda.
-
-   ![chlimage_1-153](assets/chlimage_1-153.png)
+1. Seleccione **[!UICONTROL Caducado]**. Solo se muestran los recursos caducados después de filtrar los resultados de la búsqueda.
 
 Al elegir la opción **[!UICONTROL Caducado]** , la [!DNL Assets] consola solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de [!DNL Experience Manager] detectar que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
 
@@ -84,9 +68,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 1. Abra [!DNL Experience Manager] Configuration Manager.
 1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado el Planificador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
 
-   ![chlimage_1-154](assets/chlimage_1-154.png)
-
-1. Para ejecutar el trabajo periódicamente, desactive el campo **[!UICONTROL Regla de planificador basada en tiempo]** y modifique el tiempo en segundos en el campo **[!UICONTROL Programador periódico]**. Por ejemplo, la expresión &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; activa el trabajo a las 00 horas.
+1. Para ejecutar el trabajo periódicamente, desactive el campo **[!UICONTROL Regla de planificador basada en tiempo]** y modifique el tiempo en segundos en el campo **[!UICONTROL Programador periódico]**. Por ejemplo, la expresión de ejemplo `0 0 0 &ast; &ast; ?` desencadena el trabajo a las 00 horas.
 1. Seleccione **[!UICONTROL enviar correo electrónico]** para recibir correos electrónicos cuando caduque un recurso.
 
    >[!NOTE]
@@ -102,9 +84,6 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según el estado actual de un recurso concreto, su vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 
 1. En la interfaz de usuario, seleccione un recurso. [!DNL Assets]
-
-   ![chlimage_1-155](assets/chlimage_1-155.png)
-
 1. Click **[!UICONTROL Publish]** from the toolbar. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **** Publicar ![](assets/do-not-localize/publish-globe.png) publicación.
 1. Elija **[!UICONTROL Publicar]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora en que se publicó el recurso.
