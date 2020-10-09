@@ -3,7 +3,7 @@ title: Prácticas recomendadas para [!DNL Assets] supervisar la implementación
 description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la [!DNL Adobe Experience Manager] implementación después de implementarla.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Generalmente, [!DNL Experience Manager Assets] se puede monitorear de dos manera
 
 Debe realizar un monitoreo en vivo durante la fase de prueba de rendimiento de su desarrollo o durante situaciones de alta carga para comprender las características de rendimiento de su entorno. Normalmente, la supervisión en directo se debe realizar mediante un conjunto de herramientas. Estas son algunas recomendaciones:
 
-* [VM](https://visualvm.java.net/)visual: Visual VM permite la vista de información detallada de Java VM, incluyendo el uso de CPU y de memoria Java. Además, le permite tomar muestras y evaluar el código que se ejecuta en una implementación.
+* [VM](https://visualvm.github.io/)visual: Visual VM permite la vista de información detallada de Java VM, incluyendo el uso de CPU y de memoria Java. Además, le permite tomar muestras y evaluar el código que se ejecuta en una implementación.
 * [Superior](https://man7.org/linux/man-pages/man1/top.1.html): Arriba hay un comando Linux que abre un panel, que muestra las estadísticas de uso, incluyendo el uso de CPU, memoria y E/S. Proporciona información general de alto nivel sobre lo que sucede en una instancia.
 * [Superior](https://hisham.hm/htop/): Htop es un visor de procesos interactivo. Proporciona un uso detallado de la CPU y la memoria además de lo que Top puede proporcionar. Htop puede instalarse en la mayoría de los sistemas Linux usando `yum install htop` o `apt-get install htop`.
 
