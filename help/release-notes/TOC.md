@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: experience manager
 audience: end-user
-user-guide-title: Notas de la versión 6.5 de AEM
+user-guide-title: Notas de la versión de Adobe Experience Manager 6.5
 breadcrumb-title: Release Notes
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 45%
+source-wordcount: '61'
+ht-degree: 32%
 
 ---
 
 
-# Notas de la versión 6.5 de AEM {#release-notes}
+# Notas de la versión de Adobe Experience Manager 6.5 {#release-notes}
 
 + [Descripción general de AEM 6.5](home.md)
 + [Notas de revisión generales](release-notes.md)
