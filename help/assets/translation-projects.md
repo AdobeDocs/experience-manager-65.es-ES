@@ -3,9 +3,9 @@ title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1885'
 ht-degree: 16%
 
 ---
@@ -47,8 +47,6 @@ Utilice la opción **[!UICONTROL Crear solo estructura]** para diseñar una jera
 1. Haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
 
 1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
-
-   ![seleccionar idioma de destinatario](assets/target-language.png)
 
 1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Crear estructura únicamente]**.
 
@@ -132,8 +130,6 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 
 1. En la lista **[!UICONTROL Idiomas de destino]**, seleccione los idiomas para los que desea crear una estructura de carpetas.
 
-   ![seleccionar idioma de destinatario](assets/target-language.png)
-
 1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Agregar a proyecto de traducción]** existente para ejecutar el flujo de trabajo de traducción en la carpeta.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -143,8 +139,6 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
    >Si selecciona la opción **[!UICONTROL Añadir a proyecto]** de traducción existente, el proyecto de traducción se agrega a un proyecto preexistente solo si la configuración del proyecto coincide exactamente con la del proyecto preexistente. De lo contrario, se crea un nuevo proyecto.
 
 1. En la lista de proyecto **[!UICONTROL de traducción]** existente, seleccione un proyecto para agregar el recurso a la traducción.
-
-   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Haga clic en **[!UICONTROL Crear]**. Los recursos que se van a traducir se agregan a la carpeta de destino. La carpeta actualizada se muestra en la sección **[!UICONTROL Textos en idiomas]**.
 
@@ -174,8 +168,6 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    Un mensaje notifica el inicio del trabajo de traducción.
-
-   ![chlimage_1-82](assets/chlimage_1-82.png)
 
 1. Para vista del estado del trabajo de traducción, haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción.
 
@@ -210,8 +202,6 @@ Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de 
 
 1. En el campo **[!UICONTROL Título del proyecto]**, introduzca un título.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
 1. Haga clic en **[!UICONTROL Inicio]**.
 1. Vaya a la consola Proyectos. La carpeta de traducción se copia en la consola Proyectos.
 
@@ -230,8 +220,6 @@ Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    Un mensaje notifica el inicio del trabajo de traducción.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. Para vista del estado del trabajo de traducción, haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción.
 
@@ -261,8 +249,6 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. En la lista de proyecto **[!UICONTROL de traducción]** existente, seleccione un proyecto para agregar el recurso a la traducción.
-
-   ![seleccionar un proyecto](assets/select-a-project.png)
 
 1. Haga clic en **[!UICONTROL Inicio]**.
 1. Véanse los pasos 9 a 14 de [Añadir al proyecto](translation-projects.md#add-to-existing-translation-project) de traducción existente para completar el resto del procedimiento.
