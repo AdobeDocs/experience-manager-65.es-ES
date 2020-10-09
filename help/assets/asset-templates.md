@@ -3,9 +3,9 @@ title: Plantillas de recursos
 description: Obtenga información sobre las plantillas de recursos [!DNL Adobe Experience Manager Assets] en y cómo utilizar plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -50,17 +50,11 @@ Considere un escenario en el que desee crear material publicitario digital impri
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Cargue una o más plantillas INDD y esté disponible con [!DNL Experience Manager] antelación. Elija una plantilla para el folleto y haga clic en **[!UICONTROL Siguiente]**.
-
-   ![chlimage_1-103](assets/chlimage_1-308.png)
-
 1. Especifique un nombre y una descripción opcional para el folleto.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Opcional) Haga clic en **[!UICONTROL Etiquetas]** y seleccione una o varias etiquetas para el folleto. Haga clic en **[!UICONTROL Confirmar]** para confirmar la selección.
-
-   ![chlimage_1-105](assets/chlimage_1-310.png)
-
 1. Haga clic en **[!UICONTROL Crear]**. Un cuadro de diálogo confirma que se crea un nuevo folleto. Haga clic en **[!UICONTROL Abrir]** para abrir el folleto en modo de edición.
 
    <!--![chlimage_1-106](assets/.png) -->
@@ -88,11 +82,9 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    Con el buscador de recursos, puede buscar o buscar imágenes dentro de la plantilla [!DNL Experience Manager Assets] y reemplazar las imágenes editables con las imágenes que desee.
 
-   ![chlimage_1-189](assets/chlimage_1-314.png)
+   ![chlimage_1-109](assets/chlimage_1-314.png)
 
    Los editables se muestran a la derecha. Para que un campo se pueda editar en [!DNL Experience Manager Assets], se debe etiquetar el campo correspondiente de la plantilla en [!DNL InDesign]. En otras palabras, deben marcarse como editables en [!DNL InDesign].
-
-   ![chlimage_1-110](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
@@ -106,27 +98,18 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. Haga clic en **[!UICONTROL Previsualización]** para previsualización de los cambios de texto.
 
-   ![Cambios en la vista](assets/view-changes.png)
-
-1. Para intercambiar una imagen, haga clic en el **[!UICONTROL Buscador]** de recursos.
-
-   ![chlimage_1-113](assets/chlimage_1-318.png)
+1. Para intercambiar una imagen, haga clic en **[!UICONTROL Asset Finder]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Seleccione el campo de imagen de la lista de campos editables y, a continuación, arrastre una imagen deseada del selector de recursos al campo editable.
 
-   ![chlimage_1-115](assets/chlimage_1-319.png)
+   ![chlimage_1-114](assets/chlimage_1-319.png)
 
    También puede buscar imágenes mediante palabras clave, etiquetas y según su estado de publicación. Puede navegar por el repositorio y navegar hasta la ubicación de la imagen deseada [!DNL Experience Manager Assets] .
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Haga clic en **[!UICONTROL Previsualización]** para previsualización de la imagen.
-
-   ![Cambios en la vista](assets/view-changes.png)
-
 1. Para editar una página específica en una página secundaria de varias páginas, utilice el navegador de páginas en la parte inferior.
-
-   ![navegador de página](assets/page-navigator.png)
 
 1. Haga clic en **[!UICONTROL Previsualización]** en la barra de herramientas para previsualización de todos los cambios. Haga clic en **[!UICONTROL Listo]** para guardar los cambios de edición en el colateral.
 
@@ -175,11 +158,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    Puede navegar por el repositorio o las [!DNL Experience Manager Assets] colecciones, navegar hasta la ubicación de las plantillas que desee y seleccionarlas para combinarlas.
 
-   ![chlimage_1-124](assets/chlimage_1-329.png)
-
    Puede aplicar varios filtros para buscar en las plantillas que desee. Por ejemplo, puede buscar plantillas basadas en el tipo de archivo o las etiquetas.
-
-   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 1. En la pantalla **[!UICONTROL Previsualización y reorganización]** , reorganice las plantillas si es necesario y previsualización la selección de las plantillas que se van a combinar. A continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
