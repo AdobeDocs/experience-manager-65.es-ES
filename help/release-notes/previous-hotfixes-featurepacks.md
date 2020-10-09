@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de la versión anterior de Ser
 description: Notas de la versión para [!DNL Adobe Experience Manager] Service Packs 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 359eb60c0ba3845d7aa0ca58488aa945a9f45aea
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '11484'
+source-wordcount: '11487'
 ht-degree: 26%
 
 ---
@@ -1259,7 +1259,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Recursos: incluidos
 
-* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: revisión para CQ-4259922
+* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: revisión para CQ-4259922
 
 #### Sitios: incluidos
 
