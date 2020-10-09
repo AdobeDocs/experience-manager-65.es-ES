@@ -62,7 +62,8 @@ A menudo, se realiza una copia de seguridad completa a intervalos regulares (por
 >Sin esto, el backup es potencialmente inútil (el peor de los casos).
 >
 >[!NOTE]
-Para obtener más información sobre las performance de backup, lea la sección Rendimiento [de Backup](/help/sites-deploying/configuring-performance.md#backup-performance) .
+>
+>Para obtener más información sobre las performance de backup, lea la sección Rendimiento [de Backup](/help/sites-deploying/configuring-performance.md#backup-performance) .
 
 ### Copia de seguridad de la instalación del software {#backing-up-your-software-installation}
 
@@ -74,13 +75,16 @@ Para ello, debe [realizar una copia de seguridad de todo el repositorio](#backin
 1. Realice una copia de seguridad de todo el sistema `<cq-installation-dir>` de archivos.
 
 >[!CAUTION]
-Si está utilizando un servidor de aplicaciones de terceros, es posible que haya carpetas adicionales en una ubicación diferente y que también sea necesario realizar una copia de seguridad. Consulte [Cómo instalar AEM con un servidor](/help/sites-deploying/application-server-install.md) de aplicaciones para obtener información sobre la instalación de servidores de aplicaciones. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
+>
+>Si está utilizando un servidor de aplicaciones de terceros, es posible que haya carpetas adicionales en una ubicación diferente y que también sea necesario realizar una copia de seguridad. Consulte [Cómo instalar AEM con un servidor](/help/sites-deploying/application-server-install.md) de aplicaciones para obtener información sobre la instalación de servidores de aplicaciones. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
 
 >[!CAUTION]
-Se admite el backup incremental del almacén de datos de archivos; cuando utilice una copia de seguridad incremental para otros componentes (como el índice Lucene), asegúrese de que los archivos eliminados también se marquen como eliminados en la copia de seguridad.
+>
+>Se admite el backup incremental del almacén de datos de archivos; cuando utilice una copia de seguridad incremental para otros componentes (como el índice Lucene), asegúrese de que los archivos eliminados también se marquen como eliminados en la copia de seguridad.
 
 >[!NOTE]
-El espejado de discos también puede utilizarse como mecanismo de backup.
+>
+>El espejado de discos también puede utilizarse como mecanismo de backup.
 
 ### Copia de seguridad del repositorio {#backing-up-your-repository}
 
@@ -132,7 +136,8 @@ Para depurar versiones de un sitio web, siga estos pasos:
 1. Haga clic en **Purgar** para iniciar el proceso.
 
 >[!CAUTION]
-Los nodos purgados no se pueden revertir sin restaurar el repositorio. Debe cuidar su configuración, por lo que le recomendamos que realice siempre una prueba antes de purgar.
+>
+>Los nodos purgados no se pueden revertir sin restaurar el repositorio. Debe cuidar su configuración, por lo que le recomendamos que realice siempre una prueba antes de purgar.
 
 ### Análisis de la consola {#analyzing-the-console}
 
@@ -180,7 +185,8 @@ La rotación del archivo de registro se refiere al proceso que limita el crecimi
 * Los archivos de registro anteriores no se eliminan, por lo que es responsabilidad suya limpiar los archivos de registro antiguos periódicamente para limitar el uso del disco.
 
 >[!NOTE]
-Si actualiza la instalación de AEM, tenga en cuenta que cualquier archivo de registro existente que AEM ya no utilice permanecerá en el disco. Puede eliminarlos sin riesgo. Todas las nuevas entradas de registro se escribirán en los nuevos archivos de registro.
+>
+>Si actualiza la instalación de AEM, tenga en cuenta que cualquier archivo de registro existente que AEM ya no utilice permanecerá en el disco. Puede eliminarlos sin riesgo. Todas las nuevas entradas de registro se escribirán en los nuevos archivos de registro.
 
 ### Búsqueda de los archivos de registro {#finding-the-log-files}
 
@@ -223,7 +229,8 @@ Proporciona un registro de todas las operaciones de actualización que se ejecut
 Revisión de la información del diario.
 
 >[!NOTE]
-Los registros de ImageServer y s7access no se incluyen en el **paquete de descarga completa **que se genera a partir del **sistema/consola/status-Bundlelist **página. Por motivos de asistencia técnica, si tiene [!DNL Dynamic Media] problemas, anexe también los registros de ImageServer y s7access cuando se ponga en contacto con la asistencia al cliente.
+>
+>Los registros de ImageServer y s7access no se incluyen en el **paquete de descarga completa **que se genera a partir del **sistema/consola/status-Bundlelist **página. Por motivos de asistencia técnica, si tiene [!DNL Dynamic Media] problemas, anexe también los registros de ImageServer y s7access cuando se ponga en contacto con la asistencia al cliente.
 
 ### Activación del nivel de registro DEBUG {#activating-the-debug-log-level}
 
@@ -232,7 +239,8 @@ El nivel de registro predeterminado (Configuración[de registro de Sling de](/he
 Para activar el nivel de registro de depuración para un registrador, establezca la propiedad `org.apache.sling.commons.log.level` que depurar en el repositorio. Por ejemplo, en `/libs/sling/config/org.apache.sling.commons.log.LogManager` para configurar el registro de Sling de Apache [global](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
-No deje el registro en el nivel de registro de depuración más tiempo del necesario, ya que genera muchas entradas de registro, lo que consume recursos.
+>
+>No deje el registro en el nivel de registro de depuración más tiempo del necesario, ya que genera muchas entradas de registro, lo que consume recursos.
 
 Una línea en el archivo de depuración normalmente inicio con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
 
@@ -251,7 +259,8 @@ Los niveles de registro son los siguientes:
 ### Crear un archivo de registro personalizado {#create-a-custom-log-file}
 
 >[!NOTE]
-When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>
+>When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 En determinadas circunstancias, es posible que desee crear un archivo de registro personalizado con un nivel de registro diferente. Puede hacerlo en el repositorio:
 
@@ -266,7 +275,8 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
-   Aunque no es un requisito técnico, es aconsejable hacer `<*identifier*>` único.
+   >
+   >Aunque no es un requisito técnico, es aconsejable hacer `<*identifier*>` único.
 
 1. Establezca las siguientes propiedades en este nodo:
 
@@ -301,33 +311,38 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
-   `org.apache.sling.commons.log.pattern` admite hasta seis argumentos.
+   >
+   >`org.apache.sling.commons.log.pattern` admite hasta seis argumentos.
 
    >{0} Marca de tiempo de tipo `java.util.Date`{1} el marcador de registro{2} el nombre del subproceso actual{3} el nombre del registrador{4} el nivel de registro{5} el mensaje de registro
 
    >Si la llamada de registro incluye un `Throwable` seguimiento de pila se anexa al mensaje.
 
    >[!CAUTION]
-   org.apache.sling.commons.log.names debe tener un valor.
+   >
+   >org.apache.sling.commons.log.names debe tener un valor.
 
    >[!NOTE]
-   Las rutas de escritura de registros son relativas a la `crx-quickstart` ubicación.
-   Por lo tanto, un archivo de registro especificado como:
-   `logs/thelog.log`
+   >
+   >Las rutas de escritura de registros son relativas a la `crx-quickstart` ubicación.
+   >Por lo tanto, un archivo de registro especificado como:
+   >`logs/thelog.log`
 
    >escribe a:
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
-   Y un archivo de registro especificado como:
-   `../logs/thelog.log`
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
+   >Y un archivo de registro especificado como:
+   >`../logs/thelog.log`
 
    >escribe en un directorio:
-   ` <*cq-installation-dir*>/logs/`
+   >` <*cq-installation-dir*>/logs/`
+
 &quot;(es decir, junto a ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
 
 1. Este paso solo es necesario cuando se requiere un nuevo Writer (es decir, con una configuración diferente a la predeterminada Writer).
 
    >[!CAUTION]
-   Solo se requiere una nueva configuración del grabador de registros cuando el valor predeterminado existente no es adecuado.
+   >
+   >Solo se requiere una nueva configuración del grabador de registros cuando el valor predeterminado existente no es adecuado.
 
    >Si no se configura ningún Writer explícito, el sistema generará automáticamente un Writer implícito basado en el valor predeterminado.
 
@@ -339,7 +354,8 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
-   Aunque no es un requisito técnico, es aconsejable hacer `<*identifier*>` único.
+   >
+   >Aunque no es un requisito técnico, es aconsejable hacer `<*identifier*>` único.
 
    Establezca las siguientes propiedades en este nodo:
 
@@ -365,9 +381,10 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
          Valor: especificar según sea necesario para controlar la rotación de archivos por tamaño/fecha; por ejemplo, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro configurando:
-   * un tamaño máximo de archivo
-   * una programación de fecha y hora
+   >
+   >`org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro configurando:
+   >* un tamaño máximo de archivo
+   >* una programación de fecha y hora
 
    para indicar cuándo se creará un archivo nuevo (y se cambiará el nombre del archivo existente según el patrón de nombre).
    * Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
@@ -455,10 +472,11 @@ Para monitorear un agente de replicación:
    * **Forzar reintento** en cualquier elemento de la cola si es necesario.
 
    >[!CAUTION]
-   No utilice el vínculo &quot;Probar conexión&quot; para la bandeja de salida de replicación inversa en una instancia de publicación.
-   Si se realiza una prueba de replicación para una cola de Outbox, todos los elementos que sean más antiguos que la replicación de prueba se volverán a procesar con cada replicación inversa.
-   Si estos elementos ya existen en una cola, se pueden encontrar con la siguiente consulta de JCR XPath y deben eliminarse.
-   `/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
+   >
+   >No utilice el vínculo &quot;Probar conexión&quot; para la bandeja de salida de replicación inversa en una instancia de publicación.
+   >Si se realiza una prueba de replicación para una cola de Outbox, todos los elementos que sean más antiguos que la replicación de prueba se volverán a procesar con cada replicación inversa.
+   >Si estos elementos ya existen en una cola, se pueden encontrar con la siguiente consulta de JCR XPath y deben eliminarse.
+   >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Nuevamente puede desarrollar una solución para detectar todos los agentes de replicación (ubicados debajo `/etc/replication/author` o `/etc/replication/publish`) y luego comprobar el estado del agente ( `enabled`, `disabled`) y la cola subyacente ( `active`, `idle`, `blocked`).
 
@@ -469,7 +487,8 @@ Nuevamente puede desarrollar una solución para detectar todos los agentes de re
 Los métodos utilizados para recopilar información para la optimización también se pueden utilizar para la supervisión continua.
 
 >[!NOTE]
-También se pueden comprobar [las configuraciones específicas disponibles para mejorar el rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
+>
+>También se pueden comprobar [las configuraciones específicas disponibles para mejorar el rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
 
 Las siguientes listas plantean problemas comunes de rendimiento, junto con propuestas sobre cómo detectarlos y contrarrestarlos.
 
@@ -854,7 +873,8 @@ Desde JDK 1.6, el comando tool `jvisualvm` está disponible. Después de instala
 1. Inicio la instancia de AEM.
 
    >[!NOTE]
-   Si utiliza Java 5, puede agregar el `-Dcom.sun.management.jmxremote` argumento a la línea de comandos java que inicio su JVM. JMX está habilitado de forma predeterminada con Java 6.
+   >
+   >Si utiliza Java 5, puede agregar el `-Dcom.sun.management.jmxremote` argumento a la línea de comandos java que inicio su JVM. JMX está habilitado de forma predeterminada con Java 6.
 
 1. Ejecute una de las opciones siguientes:
 
@@ -1018,11 +1038,12 @@ Repita el procedimiento anterior en la instancia de publicación.
 A continuación se ofrece una lista de sugerencias sobre qué comprobar si inicio de experimentar determinados problemas de rendimiento. La lista no es (lamentablemente) plenamente amplia.
 
 >[!NOTE]
-Consulte también los siguientes artículos para obtener más información:
-* [Vertederos de rosca](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
-* [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
-* [Analizar con el generador de perfiles integrado](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
-* [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>
+>Consulte también los siguientes artículos para obtener más información:
+>* [Vertederos de rosca](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
+>* [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
+>* [Analizar con el generador de perfiles integrado](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
+>* [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 
 
@@ -1115,5 +1136,6 @@ O JConsole:
 Esto le ayudará a ver la cantidad de memoria que se utiliza, los algoritmos GC que se utilizan, el tiempo que tardan en ejecutarse y el efecto que esto tiene en el rendimiento de la aplicación. Sin esto, sintonizar es sólo &quot;botones de anchura aleatoriamente&quot;.
 
 >[!NOTE]
-Para la VM de Oracle también hay información en:
-[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>
+>Para la VM de Oracle también hay información en:
+>[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)

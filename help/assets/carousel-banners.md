@@ -224,7 +224,6 @@ Para cargar letreros de imagen, consulte [Carga de recursos](/help/assets/managi
    >    * Estilo de los botones. Los usuarios pueden rotar los letreros tocando cada punto o número. Puede cambiar dónde aparecen los botones del indicador de conjunto (y si son numéricos o de un estilo de puntos) y su tamaño.
    >    * Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
    >    * Antes de editar un ajuste preestablecido de visor, elija el estilo en el que desea basar el ajuste preestablecido. Si no lo hace, cuando inicio editar el ajuste preestablecido de visor, perderá todos los cambios si decide cambiar a otro ajuste preestablecido.
-
    >
    >Consulte Consideraciones [especiales para letreros](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) de carrusel para obtener instrucciones detalladas y más información sobre el editor del visor.
 
@@ -259,7 +258,8 @@ Consulte [(Opcional) Vista previa de letreros de carrusel.](#optional-previewing
 >Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
 
 >[!NOTE]
-Si está editando imágenes interactivas con zonas interactivas y recortando la imagen, las zonas interactivas se eliminan.
+>
+>Si está editando imágenes interactivas con zonas interactivas y recortando la imagen, las zonas interactivas se eliminan.
 
 Consulte también [Adición de mapas de imagen](/help/assets/image-maps.md).
 
@@ -295,7 +295,8 @@ Consulte también [Adición de mapas de imagen](/help/assets/image-maps.md).
 
       * Si es cliente de AEM Sites, toque el icono (carpeta) Selector de sitio para navegar a una dirección URL.
          >[!NOTE]
-         El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
+         >
+         >El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 
       * Si es un cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
 
@@ -311,8 +312,10 @@ Consulte Fragmentos [de experiencias](/help/sites-authoring/experience-fragments
       * Especifique la anchura y la altura del fragmento de experiencias tal como aparecerán en el letrero.
 
          >[!NOTE]
-         Tenga en cuenta que las herramientas de uso compartido en medios sociales de la pancarta de carrusel no son compatibles cuando incrusta el visor en un fragmento de experiencia.
-         Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+         >
+         >Tenga en cuenta que las herramientas de uso compartido en medios sociales de la pancarta de carrusel no son compatibles cuando incrusta el visor en un fragmento de experiencia.
+         >Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    También puede realizar una previsualización del aspecto que tendrá la pancarta de carrusel. Consulte [(Opcional) Vista previa de letreros](#optional-previewing-carousel-banners)de carrusel.
@@ -327,7 +330,8 @@ Consulte Fragmentos [de experiencias](/help/sites-authoring/experience-fragments
 ## Edición de conjuntos de carruseles {#editing-carousel-sets}
 
 >[!NOTE]
-Los usuarios no administrativos deben agregarse al grupo de usuarios **[!UICONTROL de]** presas para poder crear o editar letreros de carrusel. Si tiene problemas para crear o editar, póngase en contacto con el administrador del sistema, el cual puede agregarle al grupo de usuarios **[!UICONTROL de]** presas.
+>
+>Los usuarios no administrativos deben agregarse al grupo de usuarios **[!UICONTROL de]** presas para poder crear o editar letreros de carrusel. Si tiene problemas para crear o editar, póngase en contacto con el administrador del sistema, el cual puede agregarle al grupo de usuarios **[!UICONTROL de]** presas.
 
 Puede realizar varias tareas de edición en conjuntos de carrusel, como las siguientes:
 
@@ -359,7 +363,8 @@ Puede realizar varias tareas de edición en conjuntos de carrusel, como las sigu
    * Para eliminar un conjunto de carrusel completo, vaya al conjunto de carrusel, selecciónelo y, a continuación, toque **[!UICONTROL Eliminar.]**
 
    >[!NOTE]
-   Si está editando imágenes interactivas con zonas interactivas y recortando la imagen, las zonas interactivas se eliminan.
+   >
+   >Si está editando imágenes interactivas con zonas interactivas y recortando la imagen, las zonas interactivas se eliminan.
 
 ## (Opcional) Vista previa de letreros de carrusel {#optional-previewing-carousel-banners}
 
@@ -395,8 +400,9 @@ Puede realizar la previsualización de letreros de carrusel desde el Editor de c
 Debe publicar el carrusel para utilizarlo. Al publicar un conjunto de carrusel se activan la URL y el código incrustado. También publica el carrusel en la nube de Dynamic Media, que está integrada con una CDN para un envío escalable y de rendimiento.
 
 >[!NOTE]
-Si utiliza una imagen interactiva existente con zonas interactivas para la pancarta de carrusel, debe publicar la imagen interactiva por separado después de publicar la pancarta de carrusel.
-Además, si modifica una imagen interactiva publicada previamente que está utilizando en una pancarta de carrusel, debe publicar la imagen interactiva antes de que esos cambios se reflejen en la pancarta de carrusel.
+>
+>Si utiliza una imagen interactiva existente con zonas interactivas para la pancarta de carrusel, debe publicar la imagen interactiva por separado después de publicar la pancarta de carrusel.
+>Además, si modifica una imagen interactiva publicada previamente que está utilizando en una pancarta de carrusel, debe publicar la imagen interactiva antes de que esos cambios se reflejen en la pancarta de carrusel.
 
 Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md) de Dynamic Media para obtener información sobre cómo publicar letreros de carrusel.
 
@@ -405,7 +411,8 @@ Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.
 Una vez cargadas las imágenes de los letreros para crear un carrusel, añadidas zonas interactivas y/o mapas de imagen al letrero y publicado el conjunto de carrusel, ya estará listo para agregarlo a la página del sitio web existente.
 
 >[!NOTE]
-Si es cliente de AEM Sites, puede agregar la pancarta de carrusel directamente a la página arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+>
+>Si es cliente de AEM Sites, puede agregar la pancarta de carrusel directamente a la página arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 Sin embargo, si es cliente de recursos AEM independientes, puede agregar manualmente la pancarta de carrusel a la página de aterrizaje de su sitio web como se describe en esta sección.
 

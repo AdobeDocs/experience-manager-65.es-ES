@@ -70,6 +70,7 @@ Al crear, para acceder a la consola de configuración de Almacenamiento
       >[!NOTE]
       >
       >La configuración de almacenamiento predeterminada ahora se almacena en ruta(`/conf/global/settings/community/srpc/defaultconfiguration`) de conf en lugar de ruta (`/etc/socialconfig/srpc/defaultconfiguration`) de etc. Se recomienda que siga los pasos [de](#zerodt-migration-steps) migración para que el comando predeterminado funcione según lo previsto.
+
    ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
