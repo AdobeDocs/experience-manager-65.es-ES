@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: formularios
 audience: end-user
-user-guide-title: Guía del usuario de Forms de AEM 6.5
+user-guide-title: Guía de Forms de Adobe Experience Manager 6.5
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '3700'
+source-wordcount: '3702'
 ht-degree: 2%
 
 ---
 
-# AEM 6.5 - Forms User Guide {#forms}
+# Adobe Experience Manager 6.5 Forms Guide {#forms}
 
 + [Guía del usuario de Forms de AEM 6.5](home.md)
 + Notas de la versión {#release-notes-new-features}
@@ -393,7 +393,7 @@ ht-degree: 2%
    + [Creación de un diseño de barra de herramientas personalizado](using/creating-custom-toolbar-layout.md)
    + [Visualización de componentes basados en la plantilla utilizada](using/displaying-components-based-on-template.md)
    + [Creación de temáticas de formulario adaptables personalizadas](using/creating-custom-adaptive-form-themes.md)
-+ adaptaciones de transacciones {#transaction-reports}
++ Informes de transacciones {#transaction-reports}
    + [Información general sobre los informes de transacciones](using/transaction-reports-overview.md)
    + [Visualización y comprensión de los informes de transacciones](using/viewing-and-understanding-transaction-reports.md)
    + [Informes de transacciones API facturables](using/transaction-reports-billable-apis.md)
@@ -526,7 +526,7 @@ ht-degree: 2%
       + [Configuración del mensaje del día](/help/forms/using/admin-help/setting-message-day.md)
       + [Personalización de plantillas de búsqueda](/help/forms/using/admin-help/customizing-search-templates.md)
       + [Administración de las categorías mostradas en Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
-   + estadísticas {#health-monitor}
+   + Monitor de estado {#health-monitor}
       + [Visión general del monitor de estado](/help/forms/using/admin-help/overview-11.md)
       + [Mejora del rendimiento del monitor de mantenimiento](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
       + [Estadísticas de vista relacionadas con el Administrador de trabajo](/help/forms/using/admin-help/view-statistics-related-manager.md)
