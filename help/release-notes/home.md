@@ -1,16 +1,16 @@
 ---
-title: Notas de la versión 6.5 de AEM
+title: Notas de la versión de Adobe Experience Manager 6.5
 description: Las Notas de la versión de AEM cubren información importante sobre la última versión de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas y los problemas conocidos.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 19%
+source-wordcount: '374'
+ht-degree: 17%
 
 ---
 
 
-# Notas de la versión 6.5 de AEM
+# Notas de la versión de Adobe Experience Manager 6.5
 
 Las Notas de la versión de AEM cubren información importante sobre la última versión de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas y los problemas conocidos.
 
