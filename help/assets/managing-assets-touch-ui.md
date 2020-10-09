@@ -4,10 +4,10 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '9565'
+ht-degree: 4%
 
 ---
 
@@ -508,9 +508,6 @@ Al mover recursos arrastrándolos, no se abre el asistente para [!UICONTROL move
 
 1. Haga clic en el recurso para abrir su página.
 1. En la interfaz de Experience Manager, seleccione **[!UICONTROL Representaciones]** en la lista.
-
-   ![Barra izquierda para abrir el menú y seleccionar la opción Representaciones](assets/renditions_menu.png)
-
 1. En el panel **[!UICONTROL Representaciones]** , vista la lista de las representaciones generadas para el recurso.
 
    ![Panel Representaciones de la página Detalles de recursos](assets/renditions_panel.png)
@@ -666,10 +663,6 @@ Puede realizar la vista, navegar y seleccionar recursos con cualquiera de las vi
 
 En la vista de columnas y vistas de lista, aparece la opción **[!UICONTROL Seleccionar]** cuando pasa el puntero sobre la miniatura del recurso.
 
-![Seleccionar recursos en la vista de lista](assets/select_quick_in_listview.png)
-
-![Seleccionar recursos en la vista de columnas](assets/select_quick_in_columnview.png)
-
 En la vista de tarjetas, la opción **[!UICONTROL Seleccionar]** se muestra como una acción rápida.
 
 ![Seleccione una acción rápida en la vista de la tarjeta](assets/select_quick_action.png)
@@ -690,9 +683,7 @@ Las herramientas de edición de la [!DNL Assets] interfaz le permiten realizar p
 
    * Seleccione el recurso y, a continuación, haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
    * Haga clic en la opción **[!UICONTROL Editar]** que se muestra en un recurso de la vista de tarjeta.
-   * Haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
-
-   ![Editar, opción en la barra de herramientas](assets/do-not-localize/edit_icon.png)
+   * Haga clic en **[!UICONTROL Editar]** en la opción ![Editar de la barra de herramientas](assets/do-not-localize/edit_icon.png).
 
 1. Para recortar la imagen, haga clic en **[!UICONTROL Recortar]** ![opción para recortar una imagen](assets/do-not-localize/crop.png).
 
@@ -751,9 +742,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 1. Haga clic en la opción **[!UICONTROL Anotar]** de una de las siguientes opciones:
 
    * [Acciones rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
-
-   ![Opción Anotar](assets/annotate-option.png)
+   * En la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos.
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 
@@ -768,8 +757,6 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >Para un usuario que no es administrador, las sugerencias solo aparecen si el usuario tiene permisos de lectura en la ruta `/home` de CRXDE.
 
 1. Después de agregar la anotación, haga clic en **[!UICONTROL Añadir]** para guardarla. Se envía una notificación para la anotación a Aaron.
-
-   ![Botón añadir para guardar una anotación](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -799,12 +786,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 1. Para vista de anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
 1. En la interfaz de Experience Manager, seleccione **[!UICONTROL Línea de tiempo]**.
-
-   ![Opción Línea de tiempo disponible en Experience Manager](assets/view-timeline.png)
-
 1. En la lista **[!UICONTROL Mostrar todo]** de la cronología, seleccione **[!UICONTROL Comentarios]** para filtrar los resultados según las anotaciones.
-
-   ![Mostrar toda la lista en la línea de tiempo](assets/timeline-show-all-option.png)
 
    Haga clic en un comentario del panel **[!UICONTROL Línea de tiempo]** para realizar la vista correspondiente en la imagen.
 
@@ -833,8 +815,6 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
    Para imprimir solo el estado de la revisión, selecciónelo en la línea de tiempo.
 
 1. Click **[!UICONTROL Print]** from the toolbar.
-
-   ![Opción Imprimir de la barra de herramientas](assets/do-not-localize/print.png)
 
 1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de anotaciones/revisión en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, utilice la configuración **Superior izquierda** . Se selecciona de forma predeterminada.
 
@@ -923,8 +903,6 @@ También puede activar el control automático de versiones mediante un flujo de 
 
    * Haga clic en **[!UICONTROL Mostrar todo]** en la [!UICONTROL línea de tiempo].
    * Haga clic en **[!UICONTROL Versiones]**. Todas las versiones creadas para un recurso aparecen en la barra lateral izquierda.
-
-      ![ Opción Seleccionar versiones de la línea de tiempo](assets/versions_option.png)
 
    * Seleccione una versión específica del recurso y haga clic en Versión **[!UICONTROL de]** Previsualización.
 
