@@ -3,7 +3,7 @@ title: Desproteger y desproteger recursos para editarlos
 description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -64,5 +64,5 @@ Los administradores pueden proteger recursos que otros usuarios han extraído.
 >[!MORELIKETHIS]
 >
 >* [Comprender la protección y desprotección en la aplicación de escritorio de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Tutorial de vídeo para comprender la protección y la protección en recursos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Tutorial de vídeo para comprender la protección y la protección en recursos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
