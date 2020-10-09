@@ -3,9 +3,9 @@ title: Administre los metadatos de sus recursos digitales en [!DNL Adobe Experie
 description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] cómo pueden organizarse y procesarse automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 ### Metadatos específicos de impresión {#print-specific-metadata}
 
 * PDF y PDF/X: Adobe PDF y aplicaciones de terceros.
-* PRISM: requisitos de [publicación para metadatos](https://www.prismstandard.org)estándar del sector.
+* PRISM: requisitos de [publicación para metadatos](https://www.idealliance.org/prism-metadata/)estándar del sector.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadatos para texto paginado.
 
@@ -228,7 +228,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - Administración de medios.
 
-## flujos de trabajo impulsados por metadatos {#metadata-driven-workflows}
+## Flujos de trabajo impulsados por metadatos {#metadata-driven-workflows}
 
 La creación de flujos de trabajo basados en metadatos le ayuda a automatizar algunos procesos, lo que mejora la eficacia. En un flujo de trabajo basado en metadatos, el sistema de administración de flujo de trabajo lee el flujo de trabajo y, como resultado, realiza alguna acción predefinida. Por ejemplo, algunas de las formas en que puede utilizar flujos de trabajo basados en metadatos:
 
