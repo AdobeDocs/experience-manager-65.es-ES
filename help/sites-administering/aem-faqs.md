@@ -8,9 +8,9 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Con el modo sin binarios habilitado, los paquetes de contenido distribuidos cont
 #### ¿Cómo habilito la distribución sin binarios? {#how-do-i-enable-binary-less-distribution}
 
 Para habilitar la distribución sin binarios, implemente con un almacén de blob compartido.
-Compruebe la `useBinaryReferences` propiedad en la configuración OSGI con el PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*que está utilizando el agente.
+Compruebe la `useBinaryReferences` propiedad en la configuración OSGI con el PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que está utilizando el agente.
 
 #### ¿Cómo puedo personalizar los mensajes de error al navegar por la jerarquía de páginas en AEM consola Sitios? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
@@ -118,7 +118,7 @@ Como solución alternativa, también puede deshabilitar manualmente el component
 
 #### ¿Cómo configurar las perspectivas de recursos con AEM instancia 6.5? {#how-to-configure-asset-insights-with-aem-instance}
 
-Para configurar y configurar las perspectivas de recursos para Experience Manager implementados mediante la Activación de Adobe (DTM), consulte [Configurar perspectivas de recursos con AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+Para configurar y configurar las perspectivas de recursos para Experience Manager implementados mediante la Activación de Adobe (DTM), consulte cómo [configurar las perspectivas de recursos con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### ¿Cómo personalizar las consolas de administración? {#how-to-customize-admin-consoles}
 
