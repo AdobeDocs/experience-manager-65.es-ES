@@ -3,9 +3,9 @@ title: Facetas de búsqueda para filtrar los resultados de búsqueda
 description: Cómo crear, modificar y utilizar facetas de búsqueda en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2438'
 ht-degree: 18%
 
 ---
@@ -42,19 +42,13 @@ Para las búsquedas de texto completo, agregue el predicado [!UICONTROL Texto] c
    >1. Guarde los cambios.
 
 
-1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Por ejemplo, arrastre Predicado **[!UICONTROL de propiedades]**.
+1. In the [!UICONTROL Edit Search Forms] page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Por ejemplo, arrastre Predicado **[!UICONTROL de propiedades]**.
 
    ![Pulse y mueva un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
 
    *Figura: Pulse y mueva un predicado para personalizar los filtros de búsqueda.*
 
-1. En la ficha Configuración, introduzca una etiqueta de campo, un texto de marcador de posición y una descripción para el predicado. Especifique un nombre válido para la propiedad de metadatos que desea asociar con el predicado.
-
-   La etiqueta de encabezado de la ficha Configuración identifica el tipo del predicado seleccionado.
-
-   ![Utilice la ficha Configuración para proporcionar las opciones necesarias de un predicado](assets/settings.png)
-
-   Utilice la ficha Configuración para proporcionar las opciones necesarias de un predicado
+1. En la ficha [!UICONTROL Configuración] , introduzca una etiqueta de campo, texto de marcador de posición y descripción para el predicado. Especifique un nombre válido para la propiedad de metadatos que desea asociar con el predicado. La etiqueta de encabezado de la ficha [!UICONTROL Configuración] identifica el tipo del predicado seleccionado.
 
 1. En el campo **[!UICONTROL Nombre de propiedad]**, indique un nombre válido para la propiedad de metadatos que desea asociar al predicado. Es el nombre sobre el cual se realiza la búsqueda. Por ejemplo, escriba `jcr:content/metadata/dc:description` o `./jcr:content/metadata/dc:description`.
 
@@ -154,17 +148,9 @@ El predicado de etiquetas permite realizar búsquedas de recursos basadas en eti
 1. Configure la propiedad de ruta de las etiquetas raíz de este predicado para rellenar varias etiquetas en la lista Etiquetas.
 1. Seleccione la opción **[!UICONTROL Mostrar todas las etiquetas]** para buscar recursos que incluyan todas las etiquetas que especifique.
 
-   ![Configuración típica del predicado Etiquetas](assets/tags_predicate.png)
-
-   Configuración típica del predicado Etiquetas
-
 1. En el campo **[!UICONTROL Descripción]** , introduzca una descripción opcional y, a continuación, haga clic en **[!UICONTROL Finalizado]**.
 1. Vaya al panel Buscar. El predicado **[!UICONTROL Etiquetas]** se agrega al panel Buscar.
 1. Especifique las etiquetas en función de las cuales desee buscar recursos o seleccione entre la lista de sugerencias.
-
-   ![Sugerencia proporcionada por el Experience Manager al escribir el nombre de la etiqueta](assets/tag-suggestion.png)
-
-   *Figura: Sugerencia proporcionada por el Experience Manager al escribir el nombre de la etiqueta.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
