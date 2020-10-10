@@ -1,11 +1,11 @@
 ---
-title: 'esquemas de metadatos para definir la presentación de la página de propiedades de metadatos en [!DNL Adobe Experience Manager Assets]. '
+title: 'Esquemas de metadatos para definir la presentación de la página de propiedades de metadatos en [!DNL Adobe Experience Manager Assets]. '
 description: El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '3601'
 ht-degree: 7%
 
 ---
@@ -27,9 +27,9 @@ Para vista y edición de la página de propiedades de un recurso, siga estos pas
 
 *Figura: Ficha Básico de[!UICONTROL Propiedades]de recurso.*
 
-Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar Esquema de metadatos en Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) para obtener más información. Si modifica el esquema de metadatos de un tipo MIME, se modificará la presentación de la página de propiedades de los recursos y de todos los subtipos. Por ejemplo, la modificación de un esquema jpeg en `default/image` solo modifica la presentación de metadatos (propiedades del recurso) de los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modifican la presentación de los metadatos de todos los tipos de recursos.
+Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar Esquema de metadatos en Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) para obtener más información. Si modifica el esquema de metadatos de un tipo MIME, se modifica la presentación de las propiedades de la página de los recursos y todos los subtipos. Por ejemplo, la modificación de un esquema jpeg en `default/image` solo modifica la presentación de metadatos (propiedades del recurso) de los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modifican la presentación de los metadatos de todos los tipos de recursos.
 
-## Formularios de esquema de metadatos {#default-metadata-schema-forms}
+## Metadata Schema forms {#default-metadata-schema-forms}
 
 Para realizar la vista de una lista de formularios o plantillas, en [!DNL Experience Manager] la interfaz vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos.
 
@@ -39,14 +39,14 @@ Para realizar la vista de una lista de formularios o plantillas, en [!DNL Experi
 |---|---|---|
 | [!UICONTROL predeterminada] |  | Formulario de esquema de metadatos base para los recursos. |
 |  | Los siguientes formularios secundarios heredan las propiedades del formulario [!UICONTROL predeterminado] : |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulario de Esquema para vídeos de Dynamic Media. |
-|  | <ul><li>[!UICONTROL image]</li></ul> | Formulario de Esquema para imágenes con el tipo MIME como `image/jpeg` y `image/png`. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de Esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de Esquema para los recursos con subtipo TIFF.</li></ul> |
-|  | <ul><li>[!UICONTROL aplicación]</li></ul> | Formulario de Esquema para recursos con tipo MIME como `application/pdf` y `application/zip`. <br>[!UICONTROL pdf]: Formulario de Esquema para recursos con subtipo PDF. |
-|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de Esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
-| [!UICONTROL colección] |  | Formulario de Esquema para colecciones. |
-| [!UICONTROL contentfragment] |  | [Formulario de Esquema para fragmentos](/help/sites-developing/customizing-content-fragments.md)de contenido. |
+|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulario de esquema para vídeos de Dynamic Media. |
+|  | <ul><li>[!UICONTROL image]</li></ul> | Formulario de esquema para imágenes con el tipo MIME como `image/jpeg` y `image/png`. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de esquema para los recursos con subtipo TIFF.</li></ul> |
+|  | <ul><li>[!UICONTROL aplicación]</li></ul> | Formulario de esquema para recursos con tipo MIME como `application/pdf` y `application/zip`. <br>[!UICONTROL pdf]: Formulario de esquema para recursos con subtipo PDF. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
+| [!UICONTROL colección] |  | Formulario de esquema para colecciones. |
+| [!UICONTROL contentfragment] |  | [Formulario de esquema para fragmentos](/help/sites-developing/customizing-content-fragments.md)de contenido. |
 | [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con [Adobe Experience Manager Forms](/help/forms/home.md). |
-| [!UICONTROL ugc_contentfragment] |  | Formulario de Esquema para elementos de contenido generados por el usuario y recursos integrados en el Experience Manager desde los medios sociales. |
+| [!UICONTROL ugc_contentfragment] |  | Formulario de esquema para elementos de contenido generados por el usuario y recursos integrados en el Experience Manager desde los medios sociales. |
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ Para editar las propiedades de un componente de metadatos en el formulario, haga
 
 **Etiqueta** de campo: Nombre de la propiedad de metadatos que se muestra en la página de propiedades del recurso.
 
-**Asignar a propiedad**: Esta propiedad especifica la ruta relativa o el nombre del nodo de recurso donde se guarda en el repositorio de CRX. inicio con `./` para indicar que la ruta está debajo del nodo del recurso.
+**Asignar a propiedad**: Esta propiedad especifica la ruta relativa o el nombre del nodo de recurso donde se guarda en el repositorio de CRX. Inicio con `./` para indicar que la ruta está debajo del nodo del recurso.
 
 Los siguientes son los valores válidos para esta propiedad:
 
@@ -157,6 +157,114 @@ Haga clic en `+` para agregar una ficha a un formulario de esquema. De forma pre
 
 ![Añadir o eliminar una ficha mediante el Editor de Esquemas de metadatos](assets/metadata-schema-form-new-tab.png)
 
+## Metadatos en cascada {#cascading-metadata}
+
+Al capturar la información de metadatos de un recurso, los usuarios proporcionan información en los distintos campos disponibles. Puede mostrar campos de metadatos específicos o valores de campo que dependen de las opciones seleccionadas en los demás campos. Esta visualización condicional de metadatos se denomina metadatos en cascada. En otras palabras, puede crear una dependencia entre un valor o campo de metadatos concreto y uno o más campos y/o sus valores.
+
+Utilice esquemas de metadatos para definir reglas para mostrar metadatos en cascada. Por ejemplo, si el esquema de metadatos incluye un campo de tipo de recurso, puede definir un conjunto pertinente de campos para mostrar en función del tipo de recurso seleccionado por el usuario.
+
+>[!CAUTION]
+>
+>Los metadatos en cascada no son compatibles con los fragmentos de contenido.
+
+A continuación se indican algunos casos de uso para los que puede definir metadatos en cascada:
+
+* Cuando se requiera la ubicación del usuario, se mostrarán los nombres de ciudades relevantes en función de la elección de país y estado del usuario.
+* Cargue nombres de marcas pertinentes en una lista en función de la elección de categoría del producto por parte del usuario.
+* Alternar la visibilidad de un campo concreto en función del valor especificado en otro campo. Por ejemplo, muestre campos de dirección de envío separados si el usuario desea que el envío se envíe en una dirección diferente.
+* Designar un campo como obligatorio según el valor especificado en otro campo.
+* Cambiar las opciones mostradas para un campo concreto en función del valor especificado en otro campo.
+* Establezca el valor de metadatos predeterminado en un campo concreto en función del valor especificado en otro campo.
+
+### Configurar metadatos en cascada en [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+
+Imagine un escenario en el que desee mostrar metadatos en cascada en función del tipo de recurso seleccionado. Algunos ejemplos
+
+* Para un vídeo, muestre los campos aplicables como formato, códec, duración, etc.
+* Para un documento de Word o PDF, muestre campos como, por ejemplo, recuento de páginas, autor, etc.
+
+Independientemente del tipo de recurso elegido, muestre la información de copyright como campo requerido.
+
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Esquemas **** de metadatos.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
+
+   ![select_form](assets/select_form.png)
+
+1. (Opcional) En el editor de esquemas de metadatos, cree un nuevo campo para condicionalizar. Especifique un nombre y una ruta de acceso a la propiedad en la ficha **[!UICONTROL Configuración]** .
+
+   Para crear una nueva ficha, haga clic en `+` para agregar una ficha y, a continuación, agregue un campo de metadatos.
+
+   ![add_tab](assets/add_tab.png)
+
+1. Añada un campo desplegable para el tipo de recurso. Especifique un nombre y una ruta de acceso a la propiedad en la ficha **[!UICONTROL Configuración]** . Añada una descripción opcional.
+
+   ![asset_type_field](assets/asset_type_field.png)
+
+1. Los pares de clave-valor son las opciones proporcionadas a un usuario del formulario. Puede proporcionar los pares clave-valor manualmente o desde un archivo JSON.
+
+   * Para especificar los valores manualmente, seleccione **[!UICONTROL Añadir manualmente]**, haga clic en **[!UICONTROL Añadir opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recursos de vídeo, PDF, Word e imagen.
+
+   * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Añadir a través de ruta]** JSON y proporcione la ruta del archivo JSON. [!DNL Experience Manager] Obtiene los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
+
+   Ambas opciones son mutuamente excluyentes. No puede importar las opciones de un archivo JSON y editarlas manualmente.
+
+   ![add_choice](assets/add_choice.png)
+
+   >[!NOTE]
+   >
+   >Al agregar un archivo JSON, los pares clave-valor no se muestran en el editor de esquema de metadatos, sino que están disponibles en el formulario publicado.
+
+   >[!NOTE]
+   >
+   >Al agregar opciones, si hace clic en el campo Desplegable, la interfaz se distorsiona y la opción de eliminación de las opciones deja de funcionar. No haga clic en el menú desplegable hasta que guarde los cambios. Si tiene este problema, guarde el esquema y ábralo de nuevo para continuar con la edición.
+
+1. (Opcional) Añada los demás campos obligatorios. Por ejemplo, formato, códec y duración para el vídeo de tipo de recurso.
+
+   Del mismo modo, agregue campos dependientes para otros tipos de recursos. Por ejemplo, agregue campos de recuento de páginas y autor para recursos de documento, como archivos PDF y Word.
+
+   ![video_dependiente_fields](assets/video_dependent_fields.png)
+
+1. Para crear una dependencia entre el campo de tipo de recurso y otros campos, elija el campo dependiente y abra la ficha **[!UICONTROL Reglas]** .
+
+   ![select_Depenentfield](assets/select_dependentfield.png)
+
+1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Click **[!UICONTROL Done]** to save the changes.
+
+   ![define_rule](assets/define_rule.png)
+
+   >[!NOTE]
+   >
+   >La lista desplegable con valores predefinidos manualmente se puede utilizar con las reglas. Los menús desplegables con una ruta JSON configurada no se pueden utilizar con reglas que utilicen valores predefinidos para aplicar condiciones. Si los valores se cargan desde JSON en tiempo de ejecución, no es posible aplicar una regla predefinida.
+
+1. En **[!UICONTROL Visibilidad]**, seleccione la opción **[!UICONTROL Visible, según la nueva regla]**.
+
+1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Click **[!UICONTROL Done]** to save the changes.
+
+   ![define_visibilityrule](assets/define_visibilityrule.png)
+
+   >[!NOTE]
+   >
+   >Al hacer clic en un espacio en blanco (o en cualquier lugar que no sea el valor) se restablecen los valores. Si sucede, vuelva a seleccionar los valores.
+
+   >[!NOTE]
+   >
+   >Puede aplicar condiciones de **[!UICONTROL requisito]** y **[!UICONTROL visibilidad]** independientes entre sí.
+
+1. Del mismo modo, cree una dependencia entre el valor Vídeo en el campo Tipo de recurso y otros campos, como Códec y Duración.
+1. Repita los pasos para crear dependencia entre recursos de documento (PDF y Word) en el campo Tipo [!UICONTROL de] recurso y campos como Recuento [!UICONTROL de] páginas y [!UICONTROL Autor].
+1. Haga clic en **[!UICONTROL Guardar.]** Aplique el esquema de metadatos a una carpeta.
+
+1. Vaya a la carpeta a la que ha aplicado el Esquema Metadatos y abra la página de propiedades de un recurso. Según lo que elija en el campo Tipo de recurso, se muestran los campos de metadatos correspondientes en cascada.
+
+   ![Metadatos en cascada para un recurso de vídeo](assets/video_asset.png)
+
+   *Figura: Metadatos en cascada para un vídeo.*
+
+   ![Metadatos en cascada para el recurso de documento](assets/doc_type_fields.png)
+
+   *Figura: Metadatos en cascada para un documento.*
+
 ## Eliminar formularios de esquema de metadatos {#delete-metadata-schema-forms}
 
 [!DNL Experience Manager] permite eliminar únicamente formularios esquema personalizados. No permite eliminar los formularios o las plantillas de esquema predeterminados. Sin embargo, puede eliminar cualquier cambio personalizado en estos formularios.
@@ -169,7 +277,7 @@ Para eliminar un formulario, selecciónelo y haga clic en Eliminar.
 >* No se pueden eliminar los formularios de esquema de metadatos predeterminados en [!DNL Assets].
 
 
-## Formularios de Esquema para tipos MIME {#schema-forms-for-mime-types}
+## Formularios de esquema para tipos MIME {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] proporciona formularios predeterminados para varios tipos MIME de forma predeterminada. Sin embargo, puede agregar formularios personalizados para recursos de varios tipos MIME.
 
@@ -190,7 +298,7 @@ En este caso, cree un nodo en `/etc/dam/metadataeditor/mimetypemappings` el repo
 
 [!DNL Assets] asigna los siguientes tipos MIME y formularios de esquema:
 
-| Formulario de Esquema | Tipos MIME |
+| Formulario de esquema | Tipos MIME |
 | --------------------------- | --------------------------------------------------- |
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
@@ -206,7 +314,7 @@ En este caso, cree un nodo en `/etc/dam/metadataeditor/mimetypemappings` el repo
 
 ## Conceder acceso a esquemas de metadatos {#grant-access-to-metadata-schemas}
 
-La función Esquema de metadatos solo está disponible para los administradores. Sin embargo, los administradores pueden proporcionar acceso a los no administradores modificando algunos permisos. Proporcione a los usuarios que no sean administradores permisos para crear, modificar y eliminar en la `/conf` carpeta.
+La función Esquema de metadatos solo está disponible para los administradores. Sin embargo, los administradores pueden proporcionar acceso a los no administradores modificando algunos permisos. Proporcione a los usuarios que no sean administradores permisos para crear, modificar y eliminar la `/conf` carpeta.
 
 ## Aplicación de metadatos específicos de carpetas {#apply-folder-specific-metadata}
 
