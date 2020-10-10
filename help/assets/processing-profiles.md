@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Un perfil es una fórmula para determinar las opciones que se aplican a los recu
 
 Estas reglas pueden incluir la adición de metadatos, el recorte inteligente de imágenes o el establecimiento de perfiles de codificación de vídeo. En AEM, puede crear tres tipos de perfiles, que se tratan en detalle en los vínculos siguientes:
 
-* [Perfiles de metadatos](/help/assets/metadata-profiles.md)
+* [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles)
 * [Perfiles de imagen](/help/assets/image-profiles.md)
 * [Perfiles de vídeo](/help/assets/video-profiles.md)
 
