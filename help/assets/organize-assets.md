@@ -3,7 +3,7 @@ title: Organizar sus recursos digitales
 description: Organice sus recursos digitales, imágenes, archivos, carpetas, etc. mediante Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Mediante el uso de etiquetas como metadatos, puede buscar fácilmente recursos, 
 Para obtener más información, consulte los siguientes artículos:
 
 * [Acerca de las etiquetas en el Experience Manager](/help/sites-authoring/tags.md)
-* [Editar metadatos de recursos](meta-edit.md)
+* [Editar metadatos de recursos](metadata.md)
 * [Etiquetas inteligentes mejoradas en los recursos](enhanced-smart-tags.md)
 
 ## Organizar como colecciones {#organize-as-collections}
@@ -62,14 +62,14 @@ Add back links to blog posts by marketing?
 
 ## Organizar los recursos para utilizar perfiles {#organize-to-use-profiles}
 
-Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los Perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos que se han cargado recientemente. Puede aprovechar los perfiles para organizar mejor los recursos.
+Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos que se han cargado recientemente. Puede aprovechar los perfiles para organizar mejor los recursos.
 
 La estandarización del uso de metadatos, la nominación de archivos y la estructura de carpetas garantiza que, a medida que crezca el grupo de recursos digitales, podrá aplicar perfiles de procesamiento a las carpetas con buena precisión y coherencia.
 
 >[!MORELIKETHIS]
 >
 >* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
->* [Perfiles de metadatos](metadata-profiles.md).
->* [perfiles](video-profiles.md)de vídeo.
->* [perfiles](image-profiles.md)de imagen de Dynamic Media.
+>* [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles).
+>* [Perfiles](video-profiles.md)de vídeo.
+>* [Perfiles](image-profiles.md)de imagen de Dynamic Media.
 
