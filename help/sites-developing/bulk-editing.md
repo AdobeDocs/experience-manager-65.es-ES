@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+source-git-commit: b08149e00c418319ebacec71c56472ad4e8e1089
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 7%
@@ -43,7 +43,7 @@ Debido a la posibilidad de valores diferentes, las propiedades de página no est
 
 >[!NOTE]
 >
->La edición masiva también está disponible para Recursos. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/managing-multiple-assets.md) para obtener más información. Puede personalizar los campos en el editor de metadatos masivos para recursos con el editor [de](/help/assets/metadata-schemas.md)Esquema.
+>La edición masiva también está disponible para Recursos. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener más información. Puede personalizar los campos en el editor de metadatos masivos para recursos con el editor [de](/help/assets/metadata-schemas.md)Esquema.
 
 ## Activación de un campo {#enabling-a-field}
 
@@ -64,7 +64,7 @@ Debido a la posibilidad de valores diferentes, las propiedades de página no est
 
 Los campos están activados en el componente de página (*no* en la plantilla):
 
-1. Con CRXDE Lite (o un método equivalente) abra el componente de página.
+1. Con el CRXDE Lite (o un método equivalente) abra el componente de página.
 
    Por ejemplo: `/apps/core/wcm/components/page/v1/page`
 
