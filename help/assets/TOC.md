@@ -6,10 +6,10 @@ user-guide-title: Guía de recursos
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 40%
+source-wordcount: '619'
+ht-degree: 39%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 40%
 + Uso de recursos Experience Manager {#using}
    + [Experiencia de página de inicio de recursos](assets-home-page.md)
    + [Buscar recursos digitales](search-assets.md)
+   + [Trabajo con metadatos de recursos](metadata.md)
    + [Recursos multilingües](multilingual-assets.md)
    + [Uso [!DNL Adobe Stock] de recursos en recursos](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
@@ -91,28 +92,24 @@ ht-degree: 40%
 + Administrar recursos {#administer}
    + [Formatos de archivo compatibles](assets-formats.md)
    + [Facetas de búsqueda](search-facets.md)
-   + [Gestión de metadatos para recursos](metadata.md)
+   + [Conceptos de metadatos](metadata-concepts.md)
+   + [Configuración de la funcionalidad de metadatos](metadata-config.md)
    + [Reescritura XMP en representaciones](xmp-writeback.md)
    + [Uso compartido de vínculos de activos](link-sharing.md)
    + [Informes de Asset](asset-reports.md)
    + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
    + [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md)
-   + [Metadatos en cascada](cascading-metadata.md)
    + [Crear y configurar páginas del editor de recursos](assets-finder-editor.md)
    + [Guía de tamaño de recursos](assets-sizing-guide.md)
-   + [Referencia de esquemas de metadatos](meta-ref.md)
    + [Prácticas recomendadas para traducir recursos](best-practices-for-translating-assets-efficiently.md)
    + [Guía de ajuste del rendimiento de los recursos](performance-tuning-guidelines.md)
-   + [Agregar o editar metadatos](meta-edit.md)
    + [Guía de migración de recursos](assets-migration-guide.md)
-   + [Metadatos XMP](xmp.md)
    + [Consideraciones sobre la red de recursos](assets-network-considerations.md)
    + [Recursos y MediaLibrary](medialibrary.md)
    + [Usar rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configurar restricciones de carga](configuring-asset-upload-restrictions.md)
    + [Integración de Experience Manager y Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integración con InDesign Server](indesign.md)
-   + [Perfiles de metadatos](metadata-profiles.md)
    + [Digital Rights Management en activos](drm.md)
    + [Usar paquete de demostración para perspectivas de recursos](touch-ui-using-demo-package-for-asset-insights.md)
    + [Prácticas recomendadas sobre el formato del archivo de recursos](assets-file-format-best-practices.md)
@@ -120,14 +117,11 @@ ht-degree: 40%
    + [Asistencia Camera Raw](camera-raw.md)
    + [Detectar tipo MIME de recursos con Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md)
-   + [Compatibilidad con metadatos IPTC](iptc-support.md)
    + [Esquemas de metadatos](metadata-schemas.md)
    + [Varias ofertas para colecciones, fragmentos y plantillas de fragmentos](multi-tenancy.md)
    + [Marcar los recursos como agua](watermarking.md)
-   + [Importación y exportación masivas de metadatos](metadata-import-export.md)
    + [Plantillas de recursos](asset-templates.md)
    + [Prácticas recomendadas para compartir carpetas con Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-   + [Carpeta de esquema de metadatos](folder-metadata-schema.md)
    + [Administrar etiquetas inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [Configurar Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
@@ -147,7 +141,6 @@ ht-degree: 40%
 + Manage Assets {#managing}
    + [Administre recursos digitales](managing-assets-touch-ui.md)
    + [Administrar colecciones](managing-collections-touch-ui.md)
-   + [Administrar varios recursos y colecciones](managing-multiple-assets.md)
    + [Configuración de etiquetas mediante Smart Content Service](config-smart-tagging.md)
    + [Habilitar detección de duplicado](duplicate-detection.md)
    + [Organización de recursos digitales](organize-assets.md)
