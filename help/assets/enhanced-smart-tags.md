@@ -3,9 +3,9 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1587'
 ht-degree: 8%
 
 ---
@@ -44,8 +44,9 @@ Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguien
 
 * Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * El servicio de Smart Content Service está habilitado para su organización.
+* El paquete base de servicios de contenido inteligente solo se puede agregar a una implementación en la que se haya otorgado licencia a un paquete [!DNL Sites] base y a un complemento [!DNL Assets] .
 
-## Integración {#onboarding}
+## Incorporación {#onboarding}
 
 The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a E/S de Adobe.
 
@@ -107,7 +108,7 @@ Puede entrenar el servicio de contenido inteligente siempre que sea necesario de
 >
 >Una vez que los recursos de una carpeta se procesan para formación, solo los recursos modificados se procesan en los ciclos de formación posteriores.
 
-### Informes de formación de Vista {#viewing-training-reports}
+### Informes de formación de vista {#viewing-training-reports}
 
 Para comprobar si el servicio de contenido inteligente ha recibido formación sobre sus etiquetas en el conjunto de recursos de formación, consulte el informe de flujo de trabajo de formación desde la consola Informes.
 
@@ -179,3 +180,7 @@ Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiqueta
 >[!NOTE]
 >
 >En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas.Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los últimos y los actuales ciclos de etiquetado del flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los 6 meses.
+
+## Sugerencias y limitaciones {#tips-best-practices-limitations}
+
+* El uso de Smart Content Services está limitado a hasta 2 millones de imágenes etiquetadas por año. Todas las imágenes de duplicado procesadas y etiquetadas se cuentan como imágenes etiquetadas.
