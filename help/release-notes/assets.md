@@ -2,7 +2,7 @@
 title: Notas de la versión de [!DNL Adobe Experience Manager Assets] 6.5.
 description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 41%
@@ -100,9 +100,9 @@ Ahora puede seleccionar todos los recursos cargados dentro de una carpeta o desd
 
 ## Mejoras en los metadatos {#metadata-enhancements}
 
-[!DNL Assets] le permite crear esquemas de metadatos para carpetas de recursos, que definen el diseño y los metadatos mostrados en las páginas de propiedades de las carpetas. Ahora puede asignar un esquema de metadatos de carpeta a una carpeta existente o al crear una carpeta nueva. Para obtener más información, consulte [Esquema de metadatos de carpeta](/help/assets/folder-metadata-schema.md).
+[!DNL Assets] le permite crear esquemas de metadatos para carpetas de recursos, que definen el diseño y los metadatos mostrados en las páginas de propiedades de las carpetas. Ahora puede asignar un esquema de metadatos de carpeta a una carpeta existente o al crear una carpeta nueva. Para obtener más información, consulte [Esquema de metadatos de carpeta](/help/assets/metadata-config.md#folder-metadata-schema).
 
-Al especificar los metadatos en cascada, las opciones se pueden cargar desde un archivo JSON en tiempo de ejecución, en lugar de escribir manualmente en el formulario. Para obtener más información, consulte [Metadatos en cascada](/help/assets/cascading-metadata.md).
+Al especificar los metadatos en cascada, las opciones se pueden cargar desde un archivo JSON en tiempo de ejecución, en lugar de escribir manualmente en el formulario. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
 
 ## Mejoras en los informes {#reporting-enhancements}
 
