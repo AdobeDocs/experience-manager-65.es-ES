@@ -3,9 +3,9 @@ title: API HTTP de [!DNL Assets].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ Actualiza el binario de un recurso (representación con el nombre original). Una
 
 ## Actualización de metadatos de recursos {#update-asset-metadata}
 
-Actualiza las propiedades de metadatos de recurso. Si actualiza cualquier propiedad de la `dc:` Área de nombres, la API actualiza la misma propiedad en la `jcr` Área de nombres. La API no sincroniza las propiedades de las dos Áreas de nombres.
+Actualiza las propiedades de metadatos del recurso. Si actualiza cualquier propiedad de la `dc:` Área de nombres, la API actualiza la misma propiedad en la `jcr` Área de nombres. La API no sincroniza las propiedades de las dos Áreas de nombres.
 
 **Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
@@ -307,3 +307,9 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 * 200 - Correcto: si la carpeta se ha eliminado correctamente.
 * 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
 * 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
+
+## Sugerencias y limitaciones {#tips-best-practices-limitations}
+
+* [La API HTTP actualiza las propiedades](#update-asset-metadata) de metadatos en la `jcr` Área de nombres. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos de la `dc` Área de nombres.
+
+* La API de recurso no devuelve los metadatos completos. En API, las Áreas de nombres están codificadas y solo se devuelven. Si necesita metadatos completos, consulte la ruta del recurso `/jcr_content/metadata.json`.
