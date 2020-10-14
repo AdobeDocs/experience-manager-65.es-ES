@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 15%
+source-wordcount: '325'
+ht-degree: 14%
 
 ---
 
@@ -29,6 +29,10 @@ En esta sección se describe cómo utilizar los ajustes preestablecidos de image
 >Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](imaging-faq.md) para obtener más información.
 
 Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualización.
+
+>[!NOTE]
+>
+>En el modo Dynamic Media: Scene7, los ajustes preestablecidos de imagen solo son compatibles con los recursos de imagen.
 
 **Para aplicar ajustes preestablecidos de imagen de Dynamic Media**
 
@@ -53,5 +57,5 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
    >
    >Si el recurso *y* el ajuste preestablecido de imagen aún no se han publicado, el botón **[!UICONTROL URL]** (o los botones **[!UICONTROL URL]** y **[!UICONTROL RESS]**, si corresponde) no están disponibles.
    >
-   >Tenga en cuenta también que los ajustes preestablecidos de imagen se publican automáticamente en un servidor Dynamic Media S7.
+   >Tenga en cuenta también que los ajustes preestablecidos de imagen se publican automáticamente en un servidor de Dynamic Media S7.
 
