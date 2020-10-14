@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: aef3579f4f608d442cbaf156b6f5f13ffda8ceed
+source-git-commit: 1320dd107690ad39f0154d160ec126ad28a1eee0
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2761'
 ht-degree: 13%
 
 ---
@@ -26,7 +26,7 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 >[!IMPORTANT]
 >
->Los perfiles de imagen no son aplicables a archivos PDF, GIF o INDD (Adobe InDesign).
+>Los perfiles de imagen no son aplicables a archivos PDF, GIF animado o INDD (Adobe InDesign).
 
 ## Crop options {#crop-options}
 
