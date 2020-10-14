@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
+source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+workflow-type: tm+mt
+source-wordcount: '2436'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +47,7 @@ Los beneficios de la sincronización de usuarios mediante la distribución Sling
 
 >[!NOTE]
 >
->Si se requieren sesiones, se recomienda utilizar una solución SSO o utilizar una sesión adhesiva y hacer que los clientes inicien sesión si pasan a otro editor.
+>Si se requieren sesiones, se recomienda usar una solución SSO o una sesión adhesiva y hacer que los clientes inicien sesión si se cambian a otro editor.
 
 >[!CAUTION]
 >
@@ -74,7 +77,7 @@ Una vez habilitada la sincronización de usuarios, solo se sincronizan los usuar
 
 1. Asegúrese de que se ha instalado el código más reciente:
 
-* [Actualizaciones de la plataforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [Actualizaciones de la plataforma AEM](https://helpx.adobe.com/es/experience-manager/kb/aem62-available-hotfixes.html)
 * [Actualizaciones de AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory}
@@ -123,13 +126,14 @@ Una vez habilitada la sincronización de usuarios, solo se sincronizan los usuar
 >
 >* El usuario predeterminado asignado es **`admin`**.
 >* No use `communities-user-admin user.`
+
 >
 
 
 
 #### Cómo Añadir ACL {#addacls}
 
-* acceso a CRXDE Lite
+* crxde lite de acceso
 
    * por ejemplo, [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
@@ -152,7 +156,7 @@ Consulte también
 * [Administración de derechos de acceso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Sección Resolución de problemas [Modificar excepción de operación durante el procesamiento](#modify-operation-exception-during-response-processing)de la respuesta.
 
-### 3. Credenciales de transporte de distribución de Apache Sling - Credenciales de usuario basadas en DistributionTransportSecretProvider {#adobegraniteencpasswrd}
+### 3. Distribución de granito de Adobe - Proveedor secreto de transporte de contraseña cifrada {#adobegraniteencpasswrd}
 
 **Configurar permisos**
 
@@ -164,7 +168,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
    * acceder a la consola [web](/help/sites-deploying/configuring-osgi.md)
 
       * por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * localizar `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
+   * localizar `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * seleccione la configuración existente para abrirla y editarla (icono de lápiz)Verificar `property name`: **`socialpubsync-publishUser`**
 
    * establezca el nombre de usuario y la contraseña para el usuario [](#createauthuser) autorizado creado al publicar en el paso 2
@@ -294,7 +298,7 @@ Si hay datos personalizados que desea sincronizar en varias instancias de public
 ![](assets/chlimage_1-26.png)
 
 * **Tipos**de nodosEsta es la lista de tipos de nodos que se sincronizarán. Cualquier tipo de nodo que no sea sling:Folder debe aparecer aquí (sling:folder se gestiona por separado).
-lista predeterminada de los tipos de nodo que sincronizar:
+Lista predeterminada de los tipos de nodo que sincronizar:
 
    * rep:Usuario
    * nt:unstructured
@@ -358,7 +362,7 @@ Repita estos pasos hasta que todas las instancias de publicación tengan un ID d
 
 Para que las actualizaciones se sincronizen correctamente, es necesario modificar el creador de paquetes vault para la sincronización del usuario:
 
-* en cada instancia de publicación de AEM
+* en cada instancia de publicación AEM
 * acceder a la consola [web](/help/sites-deploying/configuring-osgi.md)
 
    * por ejemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
@@ -474,7 +478,7 @@ A continuación se presentan vistas de cómo deben aparecer las configuraciones 
 
 ![](assets/chlimage_1-32.png)
 
-#### (publicar) Una sincronización de Adobe Social: Fábrica de observadores de diferencias {#publish-one-adobe-social-sync-diff-observer-factory}
+#### (publicar) Una sincronización de Adobe Social - Fábrica de observadores de diferencias {#publish-one-adobe-social-sync-diff-observer-factory}
 
 ![](assets/chlimage_1-33.png)
 
@@ -529,7 +533,7 @@ Véase la sección [9. ID de Sling único](#unique-sling-id)
 
       * al editar el paquete
 
-         * Ficha Filtros: Añadir filtro: Ruta raíz: `/home`
+         * Ficha filtros: Añadir filtro: Ruta raíz: `/home`
          * Ficha Avanzado: Administración de CA: `Overwrite`
    * [exportar el paquete](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
@@ -538,7 +542,7 @@ Véase la sección [9. ID de Sling único](#unique-sling-id)
 
    * [importar el paquete](/help/sites-administering/package-manager.md#installing-packages)
 
-Para configurar o habilitar la sincronización de usuarios, vaya al paso 1: Agente de distribución [Apache Sling: fábrica de agentes de sincronización](#apache-sling-distribution-agent-sync-agents-factory)
+Para configurar o habilitar la sincronización de usuarios, vaya al paso 1: [Agente de distribución Apache Sling: fábrica de agentes de sincronización](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### Cuando un publicador deja de estar disponible {#when-a-publisher-becomes-unavailable}
 
