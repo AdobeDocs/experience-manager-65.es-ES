@@ -4,15 +4,15 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 421f18bef4b0dbcad74e91316eead70036c9750e
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '5955'
+source-wordcount: '5968'
 ht-degree: 5%
 
 ---
 
 
-# Buscar recursos en [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Buscar recursos en [!DNL Adobe Experience Manager] {#assets-search-in-aem}
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de detección de recursos sólidos que le ayudan a lograr una mayor velocidad de contenido. Sus equipos reducen el tiempo de salida al mercado con una experiencia de búsqueda inteligente y sin inconvenientes utilizando la funcionalidad lista para usar y los métodos personalizados. La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM. Las búsquedas simples, avanzadas y personalizadas que puede realizar mediante la interfaz de usuario u otras aplicaciones y superficies ayudan a cumplir estos casos de uso. [!DNL Assets]
 
@@ -43,7 +43,7 @@ Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
 ![Comprender la interfaz de resultados de búsqueda de Recursos Experience Manager](assets/aem_search_results.png)
 
-*Figura: Comprender la interfaz de resultados[!DNL Experience Manager Assets]de búsqueda.*
+*Figura: Comprender la interfaz de resultados [!DNL Experience Manager Assets] de búsqueda.*
 
 **A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Mostrar archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda **J.** Cambie entre la vista de la tarjeta y la vista de la lista.
 
@@ -178,13 +178,13 @@ Puede buscar recursos en función de los valores exactos de campos de metadatos 
 | Altura de la imagen | altura:límite inferior..upperbound |
 | Person | persona:John |
 
-Las propiedades `path`, `limit`, `size`y `orderby` no se pueden *O* con ninguna otra propiedad.
+Las propiedades `path`, `limit`, `size`y `orderby` no se pueden combinar con `OR` operador con ninguna otra propiedad.
 
 La palabra clave para una propiedad generada por el usuario es su etiqueta de campo en el editor de propiedades en minúsculas, con espacios eliminados.
 
 Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 
-* Para mostrar todos los recursos con varios campos de facetas (por ejemplo: title=John Doe y la herramienta de creación = Adobe Photoshop): `tiltle:"John Doe" creatortool:Adobe*`
+* Para mostrar todos los recursos con varios campos de facetas (por ejemplo: title=John Doe y la herramienta de creación = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * Para mostrar todos los recursos cuando el valor de facetas no es una sola palabra sino una frase (por ejemplo: title=Scott Reynolds): `title:"Scott Reynolds"`
 * Para mostrar recursos con varios valores de una sola propiedad (por ejemplo: title=Scott Reynolds o John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * Para mostrar recursos con valores de propiedad que empiecen por una cadena específica (por ejemplo: el título es Scott Reynolds): `title:Scott*`
@@ -285,6 +285,8 @@ La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los sig
 
 * **Indexación**: En los resultados de búsqueda solo se devuelven los metadatos y recursos indexados. Para obtener una mejor cobertura y rendimiento, asegúrese de que la indexación sea correcta y siga las optimizaciones. Consulte [indización](#searchindex).
 
+* Para excluir recursos específicos de los resultados de búsqueda, utilice la propiedad `excludedPath` en el índice Lucene.
+
 ## Algunos ejemplos que ilustran la búsqueda {#samples}
 
 Utilice las comillas de doble alrededor de las palabras clave para buscar recursos que contengan la frase exacta en el orden exacto especificado por el usuario.
@@ -328,7 +330,7 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 La detección de recursos depende de la indexación del contenido de DAM, incluidos los metadatos. La detección de recursos más rápida y precisa depende de la indexación optimizada y de las configuraciones adecuadas. Consulte Índice [de](/help/assets/performance-tuning-guidelines.md#search-indexes)búsqueda, consultas de [roble, indexación](/help/sites-deploying/queries-and-indexing.md)y [optimizaciones](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-Para excluir recursos específicos de los resultados de búsqueda, utilice `excludedPath` la propiedad en el índice Lucene.
+Para excluir recursos específicos de los resultados de búsqueda, utilice la propiedad `excludedPath` en el índice Lucene.
 
 ### Búsqueda visual o de similitudes {#configvisualsearch}
 
@@ -438,7 +440,7 @@ Es posible realizar actualizaciones masivas en los campos de metadatos comunes d
 
 Para los recursos disponibles en una sola carpeta o colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/metadata.md) sin utilizar la funcionalidad de búsqueda. Para los recursos que están disponibles en varias carpetas o que cumplen un criterio común, es más rápido actualizar los metadatos de forma masiva mediante la búsqueda.
 
-### Colecciones inteligentes {#collections-1}
+### Colecciones inteligentes {#smart-collections}
 
 Una colección es un conjunto ordenado de recursos que puede incluir recursos de distintas ubicaciones porque las colecciones solo contienen referencias a estos recursos. Las colecciones son de los dos tipos siguientes:
 
@@ -451,7 +453,7 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 
 | Error, problemas, síntomas | Motivo posible | Posible solución o comprensión del problema |
 |---|---|---|
-| Resultados incorrectos al buscar recursos con metadatos que faltan. | Al buscar recursos que no tengan los metadatos obligatorios, es posible que [!DNL Experience Manager] se muestren algunos recursos con metadatos válidos. Los resultados se basan en la propiedad de metadatos indexados. | Una vez actualizados los metadatos, es necesario volver a indexar para reflejar el estado correcto de los metadatos de los recursos. Consulte metadatos [](metadata-schemas.md#define-mandatory-metadata)obligatorios. |
+| Resultados incorrectos al buscar recursos con metadatos que faltan. | Al buscar recursos que no tengan los metadatos obligatorios, es posible que [!DNL Experience Manager] se muestren algunos recursos con metadatos válidos. Los resultados se basan en la propiedad de metadatos indexados. | Una vez actualizados los metadatos, es necesario volver a indexarlos para reflejar el estado correcto de los metadatos de los recursos. Consulte metadatos [](metadata-schemas.md#define-mandatory-metadata)obligatorios. |
 | Demasiados resultados de búsqueda. | Parámetro de búsqueda amplia. | Considere limitar el [alcance de la búsqueda](#scope). El uso de etiquetas inteligentes puede proporcionarle más resultados de búsqueda de los esperados. Consulte Comportamiento [de búsqueda con etiquetas](#withsmarttags)inteligentes. |
 | Resultados de búsqueda no relacionados o parcialmente relacionados. | El comportamiento de búsqueda cambia con el etiquetado inteligente. | Comprender [cómo cambia la búsqueda después del etiquetado](#withsmarttags)inteligente. |
 | No hay sugerencias de autocompletar para los recursos. | Los recursos recién cargados no se han indizado todavía. Los metadatos no están disponibles de inmediato como sugerencias cuando se inicio escribir una palabra clave de búsqueda en la barra de Omniture. | [!DNL Assets] espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados o actualizados recientemente y, a continuación, agrega los metadatos a la lista de sugerencias. |
@@ -463,7 +465,7 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 
 >[!MORELIKETHIS]
 >
->* [Guía de implementación de búsqueda de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [[!DNL Experience Manager] guía de implementación de búsqueda](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuración avanzada para aumentar los resultados de búsqueda](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configurar la búsqueda de traducción inteligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
