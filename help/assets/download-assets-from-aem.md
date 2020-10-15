@@ -3,9 +3,9 @@ title: Descargar recursos
 description: Obtenga información sobre cómo descargar recursos [!DNL Adobe Experience Manager] desde y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '866'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Para descargar recursos, siga estos pasos:
 
    ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download1.png)
 
-   *Figura: Opciones del cuadro de diálogo Descargar.*
+   *Figura: Opciones disponibles en el cuadro de diálogo de descarga.*
 
 1. En el cuadro de diálogo Descargar, seleccione las opciones de descarga que desee.
 
@@ -73,6 +73,7 @@ El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experie
 
 >[!MORELIKETHIS]
 >
+>* [Descargar recursos con Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Descargar recursos](drm.md)protegidos con DRM.
 >* [Descargue recursos mediante la aplicación de escritorio Experience Manager en el escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)de Windows o Mac.
 >* [Descargue recursos mediante el vínculo Recursos de Adobe desde las aplicaciones](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)de Adobe Creative Cloud admitidas.
