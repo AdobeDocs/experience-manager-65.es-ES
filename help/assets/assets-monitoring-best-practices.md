@@ -3,9 +3,9 @@ title: Prácticas recomendadas para [!DNL Assets] supervisar la implementación
 description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la [!DNL Adobe Experience Manager] implementación después de implementarla.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Debe realizar un monitoreo en vivo durante la fase de prueba de rendimiento de s
 * [Superior](https://man7.org/linux/man-pages/man1/top.1.html): Arriba hay un comando Linux que abre un panel, que muestra las estadísticas de uso, incluyendo el uso de CPU, memoria y E/S. Proporciona información general de alto nivel sobre lo que sucede en una instancia.
 * [Superior](https://hisham.hm/htop/): Htop es un visor de procesos interactivo. Proporciona un uso detallado de la CPU y la memoria además de lo que Top puede proporcionar. Htop puede instalarse en la mayoría de los sistemas Linux usando `yum install htop` o `apt-get install htop`.
 
-* [Iotop](https://guichaz.free.fr/iotop/): Iotop es un panel detallado para el uso de E/S de disco. Muestra barras y medidores que representan los procesos que utilizan la E/S de disco y la cantidad que utilizan. Iotop puede instalarse en la mayoría de los sistemas Linux usando `yum install iotop` o `apt-get install iotop`.
+* Iotop: Iotop es un panel detallado para el uso de E/S de disco. Muestra barras y medidores que representan los procesos que utilizan la E/S de disco y la cantidad que utilizan. Iotop puede instalarse en la mayoría de los sistemas Linux usando `yum install iotop` o `apt-get install iotop`.
 
 * [Ftop](https://www.ex-parrot.com/pdw/iftop/): Iftop muestra información detallada sobre el uso de Ethernet/red. Iftop muestra las estadísticas de canal de comunicaciones de las entidades que utilizan Ethernet y la cantidad de ancho de banda que utilizan. Si se puede instalar en la mayoría de los sistemas Linux usando `yum install iftop` o `apt-get install iftop`.
 
