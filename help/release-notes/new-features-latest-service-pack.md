@@ -4,9 +4,9 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
+source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2561'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Ahora puede optar por publicar o cancelar la publicación de recursos de forma s
 ### cumplimentar previamente un formulario adaptable en el cliente {#prefill-merge-data-at-client}
 
 Cuando se rellena previamente un formulario adaptable, el [!DNL Experience Manager Forms] servidor combina los datos con un formulario adaptable y le envía el formulario rellenado. De forma predeterminada, la acción de combinación de datos tiene lugar en el servidor.
-Ahora puede configurar el [!DNL Experience Manager Forms] servidor para que realice la acción de combinación de datos en el cliente en lugar del servidor. Reduce considerablemente el tiempo necesario para rellenar y procesar formularios adaptables.
+Ahora puede configurar el [!DNL Experience Manager Forms] servidor para que [realice la acción de combinación de datos en el cliente](../../help/forms/using/prepopulate-adaptive-form-fields.md) en lugar del servidor. Reduce considerablemente el tiempo necesario para rellenar y procesar formularios adaptables.
 
 ### Integración del modelo de datos de formulario con las API de RESTful en un servidor con implementación SSL bidireccional {#fdm-integration-rest-apis-two-way-ssl}
 
@@ -87,7 +87,7 @@ Ahora puede configurar el [!DNL Experience Manager Forms] servidor para que real
 
 Si un AcroForm incluye [!DNL Adobe Sign] etiquetas de texto, estos campos ahora se reconocen y representan como [!DNL Adobe Sign] campos en el formulario adaptable convertido mediante [!DNL Automated Forms Conversion service]. Un firmante puede rellenar estos campos al firmar el formulario adaptable.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 Puede utilizar [!DNL Automated Forms Conversion service] para convertir PDF forms de color en formularios adaptables.
 
@@ -97,7 +97,7 @@ Puede utilizar [!DNL Automated Forms Conversion service] para convertir PDF form
 
 ### Caché mejorada para páginas de formularios adaptables traducidas {#enhanced-caching-translated-adaptive-forms}
 
-Ahora puede especificar la configuración regional como selector en lugar de como argumento de URL. Ayuda a almacenar en caché formularios adaptables traducidos en [!DNL Experience Manager Dispatcher].
+Ahora puede especificar la [configuración regional como selector en la URL del formulario adaptable en lugar de como argumento en la URL](../../help/forms/using/supporting-new-language-localization.md)del formulario adaptable. Ayuda a almacenar en caché formularios adaptables traducidos en [!DNL Experience Manager Dispatcher]. En versiones anteriores no era posible almacenar en caché formularios adaptables traducidos. Para obtener información detallada sobre la configuración del almacenamiento en caché para el uso de la configuración regional como selector en la URL del formulario adaptable, consulte [Configuración de la caché de formularios adaptables en el despachante](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### Guardar el resultado del servicio del modelo de datos de formulario en una variable {#save-fdm-service-to-variable}
 
@@ -105,7 +105,9 @@ El modelo de datos de formulario permite guardar el resultado de un servicio de 
 
 ### Adjuntar varios archivos para el componente Archivo adjunto {#attach-multiple-files}
 
-Ahora puede adjuntar varios archivos al componente [!UICONTROL Archivo adjunto] de formularios adaptables.
+Ahora puede [adjuntar varios archivos](../../help/forms/using/introduction-forms-authoring.md) al componente [!UICONTROL Archivo adjunto] de formularios adaptables.
+
+
 
 ## Características principales de los Service Packs anteriores de Experience Manager 6.5 {#key-features-previous-service-packs}
 
