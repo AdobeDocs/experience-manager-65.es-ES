@@ -3,9 +3,9 @@ title: Administre los metadatos de sus recursos digitales en [!DNL Adobe Experie
 description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] cómo pueden organizarse y procesarse automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2423'
 ht-degree: 11%
 
 ---
@@ -49,7 +49,7 @@ Para editar los metadatos de un recurso en la interfaz de [!DNL Assets] usuario,
 
    ![Seleccionar propiedades de un recurso para vista de sus metadatos](assets/asset-metadata.png)
 
-   *Figura: Edite o agregue metadatos en la página[!UICONTROL Propiedades]del recurso.*
+   *Figura: Edite o agregue metadatos en la página [!UICONTROL Propiedades] del recurso.*
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
@@ -68,7 +68,7 @@ Se admite y activa la XMP de la escritura en pantalla para las plataformas y los
 * Cambiar las propiedades de metadatos a un valor común
 * Añadir o modificar etiquetas
 
-Para personalizar la página de propiedades de metadatos, incluida la adición, modificación y eliminación de propiedades de metadatos, utilice el editor de esquema.
+Para personalizar la página de propiedades de metadatos, incluida la adición, modificación y eliminación de propiedades de metadatos, utilice el editor de [esquema](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Las carpetas que ya tienen un perfil asignado se indican mediante la visualizaci
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
-### Aplicación de perfiles de metadatos a las carpetas desde la interfaz de usuario de Perfiles {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Aplicación de perfiles de metadatos a las carpetas desde la interfaz de usuario de [!UICONTROL Perfiles] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Siga los pasos para aplicar el perfil de metadatos:
 
@@ -196,7 +196,7 @@ Siga los pasos para aplicar el perfil de metadatos:
 1. Seleccione el perfil de metadatos que desea aplicar a una o varias carpetas.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-### Aplicación de perfiles de metadatos a las carpetas de Propiedades {#applying-metadata-profiles-to-folders-from-properties}
+### Aplicación de perfiles de metadatos a las carpetas de [!UICONTROL Propiedades] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. En el carril izquierdo, haga clic en **[!UICONTROL Recursos]** y, a continuación, navegue a la carpeta a la que desee aplicar un perfil de metadatos.
 1. En la carpeta, haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic en **[!UICONTROL Propiedades]**.
@@ -205,9 +205,11 @@ Siga los pasos para aplicar el perfil de metadatos:
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-### Aplicar perfil de metadatos globalmente {#metadata-profile-global}
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
 
-Para obtener más información, consulte [Configuración para aplicar el perfil de metadatos de forma global](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+### Apply metadata profile globally {#metadata-profile-global}
+
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### Eliminación de un perfil de metadatos de las carpetas {#removing-a-metadata-profile-from-folders}
 
