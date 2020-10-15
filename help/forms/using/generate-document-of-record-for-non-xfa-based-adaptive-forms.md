@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: fa3d5923784a8d89e2b440412d2b88790de3e39e
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2663'
 ht-degree: 3%
 
 ---
@@ -277,10 +277,6 @@ También puede seleccionar un modelo de formulario al crear un formulario.
 
    **Generar Documento de registro** Seleccione esta opción para utilizar un archivo XDP como plantilla base para definir el estilo y el aspecto del documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo adecuado.
 
-   **[!UICONTROL Seleccione esta opción para utilizar un archivo XDP como plantilla base para definir el estilo y el aspecto del documento del registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo adecuado.]**
-
-   **Seleccione Plantilla de Forms como plantilla base para generar el Documento de registro** Seleccione esta opción para utilizar un archivo XDP como plantilla base para definir el estilo y el aspecto del documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo adecuado.
-
    >[!NOTE]
    >
    >Asegúrese de que el esquema utilizado para crear formularios adaptables y el esquema (esquema de datos) del formulario XFA sean los mismos si:
@@ -380,8 +376,6 @@ Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en doc
 
 * El documento de plantillas de registro no admite texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario final aparece como texto sin formato en el documento del registro.
 * Los fragmentos de documento de un formulario adaptable no aparecen en el documento del registro. Sin embargo, se admiten fragmentos de formulario adaptables.
-* El documento del registro se utiliza únicamente para fines de impresión.
-* No se admite el enlace de contenido en documento de registros generado para formularios adaptables basados en Esquema XML.
 * No se admite el enlace de contenido en documento de registros generado para formularios adaptables basados en Esquema XML.
 * La versión localizada del documento del registro se crea a petición de una configuración regional cuando el usuario solicita la representación del documento del registro. La localización del documento del registro se produce junto con la localización de la forma adaptable. Para obtener más información sobre la localización del documento de formularios adaptables y de registro, consulte [Uso de AEM flujo de trabajo de traducción para localizar formularios adaptables y documento de registros](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
