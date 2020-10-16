@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de la versión anterior de Ser
 description: Notas de la versión para [!DNL Adobe Experience Manager] Service Packs 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: 263a25b70fe4a3e7de65b47f07932d2e5f3d0197
 workflow-type: tm+mt
-source-wordcount: '11487'
+source-wordcount: '11483'
 ht-degree: 26%
 
 ---
@@ -693,7 +693,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * Se muestra una excepción en [!DNL Experience Manager] la encuesta para obtener detalles de un recurso (CQ-4283569).
 
-### Sites {#sites}
+### Sites
 
 * Si la herencia de LiveCopy está dañada, las páginas de Live Copy muestran vínculos de copia de idioma en lugar de vínculos de LiveCopy (NPR-30980).
 * Para un nuevo modelo, si el número de registros es superior a 40, solo se muestran los primeros 40 registros. El modelo muestra líneas en blanco para el resto de los registros (NPR-31182).
@@ -725,7 +725,7 @@ Remove one mention of this fix.
 
 * Aparecen dos ventanas emergentes de calendario al seleccionar la opción Fecha de vencimiento en un trabajo de traducción (NPR-31270).
 
-### Plataforma {#platform}
+### Plataforma
 
 * La opción Tipo de MIME en la consola web no funciona (NPR-31108).
 
@@ -745,7 +745,7 @@ Remove one mention of this fix.
 
 * El `org.apache.sling.distribution.api` paquete está oculto en el administrador de configuración y, por lo tanto, no está disponible para paquetes personalizados (NPR-31720).
 
-### Proyectos {#projects}
+### Proyectos
 
 * El cambio de vistas de calendario no funciona (NPR-31271).
 
@@ -854,7 +854,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Se ha introducido una corrección para garantizar que la vista de columnas de la IU de recursos muestre solo contenido específico del usuario.
 * Se ha introducido una corrección para permitir que los cambios de acordeón de estilo se reflejen en los resultados de búsqueda.
 
-### Assets {#assets}
+### Assets
 
 **Mejoras del producto**
 
@@ -961,7 +961,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * La instancia actualizada de 6.3.3.2 a 6.5 devuelve configuraciones OSGi duplicadas. NPR-30130: revisión para CQ-4274016
 
-### Integración {#integration}
+### Integración
 
 * El contenido personalizado no se muestra correctamente en la instancia de publicación hasta que no se reinicia la instancia. NPR-30377: revisión para CQ-4273706
 * Al configurar el inicio en un sitio web, la dirección de la biblioteca tiene una barra diagonal (/) precargada, lo que provoca que el usuario tenga que intervenir de forma manual cada vez. NPR-30694: revisión para CQ-4275501
@@ -976,7 +976,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Added &#39;Auto&#39; setting to `RenderAtClient` in `PDFFormRenderOptions` API for [!DNL Experience Manager] Forms OSGi.
 
-#### Paquete de complemento de Forms {#forms-add-on-package}
+#### Paquete de complemento de Forms
 
 **Integración del back-end**
 
@@ -1006,7 +1006,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Cuando se utiliza la opción de acceso al escritorio no visual en el modo Examinar para leer un formulario de HTML5, el navegador Chrome lee el elemento &quot;gráfico&quot; antes que cada gráfico vectorial escalable (SVG) en el diseño de formulario. NPR-30449: revisión para CQ-4274732
 
-#### Instalador JEE de Forms {#forms-jee-installer}
+#### Instalador JEE de Forms
 
 **Forms: seguridad de documentos**
 
@@ -1021,7 +1021,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 * El servicio HTMLtoPDF no muestra maxReuseCount en la consola JMX. NPR-30134, NPR-30304: revisión para CQ-4273763
 * Adding or editing a Web Service connection by invoking web services from [!DNL Experience Manager Forms] Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: revisión para CQ-4273217
 
-### Paquetes de funciones incluidos {#feature-packs-included}
+### Paquetes de funciones incluidos
 
 >[!NOTE]
 >
