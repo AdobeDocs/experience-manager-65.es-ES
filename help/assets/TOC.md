@@ -6,10 +6,10 @@ user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
 translation-type: tm+mt
-source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 38%
+source-wordcount: '585'
+ht-degree: 39%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 38%
    + [Uso [!DNL Adobe Stock] de recursos en recursos](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
+   + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
    + [Flujo de actividad en la línea de tiempo](activity-stream.md)
    + [Procesar recursos](assets-workflow.md)
    + [Añadir mapas de imagen](image-maps.md)
@@ -94,10 +95,11 @@ ht-degree: 38%
    + [Facetas de búsqueda](search-facets.md)
    + [Conceptos de metadatos](metadata-concepts.md)
    + [Configuración de la funcionalidad de metadatos](metadata-config.md)
+   + [Esquemas de metadatos](metadata-schemas.md)
    + [Reescritura XMP en representaciones](xmp-writeback.md)
    + [Uso compartido de vínculos de activos](link-sharing.md)
    + [Informes de Asset](asset-reports.md)
-   + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
+   + [Configuración de Smart Content Service para el etiquetado](config-smart-tagging.md)
    + [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md)
    + [Crear y configurar páginas del editor de recursos](assets-finder-editor.md)
    + [Guía de tamaño de recursos](assets-sizing-guide.md)
@@ -117,12 +119,10 @@ ht-degree: 38%
    + [Asistencia Camera Raw](camera-raw.md)
    + [Detectar tipo MIME de recursos con Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md)
-   + [Esquemas de metadatos](metadata-schemas.md)
    + [Varias ofertas para colecciones, fragmentos y plantillas de fragmentos](multi-tenancy.md)
    + [Marcar los recursos como agua](watermarking.md)
    + [Plantillas de recursos](asset-templates.md)
    + [Prácticas recomendadas para compartir carpetas con [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-   + [Administrar etiquetas inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [ [!DNL Assets] Configurar con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar recursos en [!DNL Brand Portal]](brand-portal-publish-assets.md)
@@ -141,7 +141,6 @@ ht-degree: 38%
 + Manage Assets {#managing}
    + [Administre recursos digitales](managing-assets-touch-ui.md)
    + [Administrar colecciones](managing-collections-touch-ui.md)
-   + [Configuración de etiquetas mediante Smart Content Service](config-smart-tagging.md)
    + [Habilitar detección de duplicado](duplicate-detection.md)
    + [Organización de recursos digitales](organize-assets.md)
    + [Administrar recursos de vídeo](managing-video-assets.md)
@@ -158,5 +157,4 @@ ht-degree: 38%
    + [Administrar recursos compuestos](managing-linked-subassets.md)
    + [Activos relacionados](related-assets.md)
    + [Uso compartido de carpetas privadas](private-folder.md)
-   + [Directrices de formación para Smart Content Service](smart-tags-training-guidelines.md)
    + [Representaciones de vídeo](video-renditions.md)
