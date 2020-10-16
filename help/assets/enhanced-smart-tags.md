@@ -3,17 +3,15 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 8%
+source-wordcount: '1522'
+ht-degree: 1%
 
 ---
 
 
 # Etiquetas inteligentes mejoradas {#enhanced-smart-tags}
-
-## Información general sobre las etiquetas inteligentes mejoradas {#overview-of-enhanced-smart-tags}
 
 Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a los recursos digitales de una clase en particular y buscarlos. Etiquetar recursos con vocabulario controlado por taxonomía garantiza que se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas.
 
@@ -60,70 +58,36 @@ El proceso de integración se completa cuando el administrador configura el serv
 
 ## Revisar recursos y etiquetas {#reviewing-assets-and-tags}
 
-Una vez que esté integrado, lo primero que desea hacer es identificar un conjunto de etiquetas que describan mejor estas imágenes en el contexto de su negocio.
+Una vez que esté a bordo, lo primero que desea hacer es identificar un conjunto de etiquetas que describan mejor estas imágenes en el contexto de su negocio.
 
-A continuación, revise las imágenes para identificar un conjunto de imágenes que mejor representen el producto para un requerimiento comercial determinado. Asegúrese de que los recursos del conjunto depurado cumplen las directrices [de formación del servicio de contenido](smart-tags-training-guidelines.md)inteligente.
+A continuación, revise las imágenes para identificar un conjunto de imágenes que mejor representen el producto para un requerimiento comercial determinado. Asegúrese de que los recursos del conjunto depurado cumplen las directrices [de formación del servicio de contenido](/help/assets/config-smart-tagging.md#training-the-smart-content-service)inteligente.
 
 Añada los recursos a una carpeta y aplique las etiquetas a cada recurso desde la página de propiedades. A continuación, ejecute el flujo de trabajo de formación en esta carpeta. El conjunto depurado de recursos permite que el servicio de contenido inteligente imparta formación eficaz a más recursos mediante las definiciones de taxonomía.
 
 >[!NOTE]
 >
 >1. La formación es un proceso irrevocable. Adobe recomienda revisar las etiquetas del conjunto depurado de recursos antes de formarlo con las etiquetas.
->1. Antes de la formación para una etiqueta, consulte las directrices [de formación del servicio de contenido](smart-tags-training-guidelines.md)inteligente.
+>1. Antes de la formación para una etiqueta, consulte las directrices [de formación del servicio de contenido](/help/assets/config-smart-tagging.md#training-the-smart-content-service)inteligente.
 >1. Cuando entrena el servicio de contenido inteligente por primera vez, Adobe recomienda que lo imparta en al menos dos etiquetas diferentes.
 
 
-## Formación del servicio de contenido inteligente {#training-the-smart-content-service}
+## Comprender los resultados [!DNL Experience Manager] de búsqueda con etiquetas inteligentes {#understandsearch}
 
-Para que Smart Content Service reconozca su taxonomía empresarial, ejecútela en un conjunto de recursos que ya incluyen etiquetas que son relevantes para su negocio. Después de la formación, el servicio puede aplicar la misma taxonomía a un conjunto de activos similar.
+De forma predeterminada, [!DNL Experience Manager] la búsqueda combina los términos de búsqueda con una `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una `OR` cláusula adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. For example, consider searching for `woman running`. Los recursos con solo `woman` o solamente `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con etiquetas inteligentes `woman` o con `running` etiquetas inteligentes. Los resultados de la búsqueda son una combinación de:
 
-Puede entrenar el servicio varias veces para mejorar su capacidad de aplicar etiquetas relevantes. Después de cada ciclo de formación, ejecute un flujo de trabajo de etiquetado y compruebe si los recursos están etiquetados correctamente.
+* recursos con `woman` y `running` palabras clave en los metadatos.
 
-Puede capacitar al servicio de contenido inteligente de forma periódica o según sus necesidades.
+* los recursos se etiquetaron de forma inteligente con cualquiera de las palabras clave.
 
->[!NOTE]
+Los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. En el ejemplo anterior, el orden aproximado de visualización de los resultados de búsqueda es:
+
+1. coincidencias de en `woman running` los distintos campos de metadatos.
+1. coincidencias de `woman running` en etiquetas inteligentes.
+1. coincidencias de `woman` o de `running` en etiquetas inteligentes.
+
+>[!CAUTION]
 >
->El flujo de trabajo de formación solo se ejecuta en carpetas.
-
-### Formación periódica {#periodic-training}
-
-Puede habilitar el servicio de contenido inteligente para que imparta formación periódica sobre los recursos y las etiquetas asociadas dentro de una carpeta. Abra la página [!UICONTROL Propiedades] de la carpeta de recursos, seleccione **[!UICONTROL Activar etiquetas]** inteligentes en la ficha **[!UICONTROL Detalles]** y guarde los cambios.
-
-![enable_smart_tags](assets/enable_smart_tags.png)
-
-Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para formar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta semanalmente los sábados a las 12:30.
-
-### Capacitación a pedido {#on-demand-training}
-
-Puede entrenar el servicio de contenido inteligente siempre que sea necesario desde la consola Flujo de trabajo.
-
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
-1. En el cuadro de diálogo **[!UICONTROL Ejecutar flujo de trabajo]** , vaya a la carpeta de carga útil que incluye los recursos etiquetados para la formación del servicio.
-1. Especifique un título para el flujo de trabajo y un comentario. A continuación, haga clic en **[!UICONTROL Ejecutar]**. Los recursos y las etiquetas se envían para formación.
-
-   ![workflow_dialog](assets/workflow_dialog.png)
-
->[!NOTE]
->
->Una vez que los recursos de una carpeta se procesan para formación, solo los recursos modificados se procesan en los ciclos de formación posteriores.
-
-### Informes de formación de vista {#viewing-training-reports}
-
-Para comprobar si el servicio de contenido inteligente ha recibido formación sobre sus etiquetas en el conjunto de recursos de formación, consulte el informe de flujo de trabajo de formación desde la consola Informes.
-
-1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
-1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
-1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. Then, click **[!UICONTROL Create]** from the toolbar.
-1. En la página **[!UICONTROL Informes de recursos]**, seleccione el informe que ha generado. To view the report, click **[!UICONTROL View]** from the toolbar.
-1. Revise los detalles del informe.
-
-   El informe muestra el estado de la formación de las etiquetas que ha entrenado. El color verde de la columna **[!UICONTROL Estado de formación]** indica que el servicio de contenido inteligente ha recibido formación para la etiqueta. El color amarillo indica que el servicio no está completamente entrenado para una etiqueta en particular. En este caso, agregue más imágenes con la etiqueta en concreto y ejecute el flujo de trabajo de formación para que el servicio se imparta completamente en la etiqueta.
-
-   Si no ve las etiquetas en este informe, vuelva a ejecutar el flujo de trabajo de formación para estas etiquetas.
-
-1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como una hoja de cálculo de Microsoft Excel.
+>Si la indexación de Lucene se realiza fuera de [!DNL Adobe Experience Manager] este parámetro, la búsqueda basada en etiquetas inteligentes no funciona de la forma esperada.
 
 ## Etiquetado automático de recursos {#tagging-assets-automatically}
 
@@ -143,10 +107,7 @@ Una vez seleccionada esta opción para una carpeta, el servicio de contenido int
 
 ### Etiquetado a petición {#on-demand-tagging}
 
-Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiquetar los recursos al instante:
-
-* Consola de flujo de trabajo
-* Escala de tiempo
+Puede activar el flujo de trabajo de etiquetado desde la consola de flujo de trabajo o desde la línea de tiempo para etiquetar los recursos al instante.
 
 >[!NOTE]
 >
@@ -164,7 +125,7 @@ Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiqueta
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Vaya a la carpeta de recursos y revise las etiquetas para comprobar si el servicio de contenido inteligente ha etiquetado los recursos correctamente. Para obtener más información, consulte [Administración de etiquetas](managing-smart-tags.md)inteligentes.
+   Vaya a la carpeta de recursos y revise las etiquetas para comprobar si el servicio de contenido inteligente ha etiquetado los recursos correctamente.
 
 #### Etiquetar recursos de la línea de tiempo {#tagging-assets-from-the-timeline}
 
@@ -175,12 +136,29 @@ Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiqueta
    ![inicio_workflow](assets/start_workflow.png)
 
 1. Seleccione el flujo de trabajo Recursos **[!UICONTROL de etiquetas inteligentes]** DAM y especifique un título para el flujo de trabajo.
-1. Haga clic en **[!UICONTROL Inicio]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar si el servicio de contenido inteligente ha etiquetado los recursos correctamente. Para obtener más información, consulte [Gestión de etiquetas](managing-smart-tags.md)inteligentes.
+1. Haga clic en **[!UICONTROL Inicio]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar si el servicio de contenido inteligente ha etiquetado los recursos correctamente.
 
 >[!NOTE]
 >
 >En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas.Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los últimos y los actuales ciclos de etiquetado del flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los 6 meses.
 
+## Depurar o moderar las etiquetas inteligentes aplicadas {#manage-smart-tags}
+
+Puede depurar las etiquetas inteligentes para eliminar cualquier etiqueta incorrecta que se haya asignado a las imágenes de su marca, de modo que solo se muestren las etiquetas más relevantes.
+
+La moderación de las etiquetas inteligentes también ayuda a restringir las búsquedas de imágenes basadas en etiquetas, ya que garantiza que la imagen aparezca en los resultados de búsqueda de las etiquetas más relevantes. Básicamente, ayuda a eliminar las posibilidades de que las imágenes no relacionadas aparezcan en los resultados de búsqueda.
+
+También puede asignar una clasificación superior a una etiqueta para aumentar su relevancia con respecto a una imagen. La promoción de una etiqueta para una imagen aumenta las posibilidades de que la imagen aparezca en los resultados de búsqueda cuando se realiza una búsqueda en función de la etiqueta en particular.
+
+1. En el cuadro Omniture, busque recursos basados en una etiqueta.
+1. Inspect muestra los resultados de la búsqueda para identificar una imagen que no le parece relevante para la búsqueda.
+1. Seleccione la imagen y haga clic en **[!UICONTROL Administrar etiquetas]** en la barra de herramientas.
+1. En la página **[!UICONTROL Administrar etiquetas]** , inspeccione las etiquetas. Si no desea que la imagen se busque en función de una etiqueta específica, seleccione la etiqueta y haga clic en **[!UICONTROL Eliminar]** en la barra de herramientas. También puede hacer clic en `x` símbolo que aparece junto a una etiqueta.
+1. De forma opcional, para asignar una clasificación superior a una etiqueta, seleccione la etiqueta y haga clic en **[!UICONTROL Promocionar]** en la barra de herramientas. La etiqueta promocionada se mueve a la sección **[!UICONTROL Etiquetas]** .
+1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
+1. Vaya a la página **[!UICONTROL Propiedades]** de la imagen. Observe que la etiqueta que promocionó tiene más relevancia y aparece antes en los resultados de búsqueda.
+
 ## Sugerencias y limitaciones {#tips-best-practices-limitations}
 
 * El uso de Smart Content Services está limitado a hasta 2 millones de imágenes etiquetadas por año. Todas las imágenes de duplicado procesadas y etiquetadas se cuentan como imágenes etiquetadas.
+* Si ejecuta el flujo de trabajo de etiquetado desde la línea de tiempo, puede aplicar etiquetas a un máximo de 15 recursos a la vez.
