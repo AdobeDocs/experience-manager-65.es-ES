@@ -3,19 +3,33 @@ title: Configuración del etiquetado de recursos mediante Smart Content Service
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1240'
-ht-degree: 36%
+source-wordcount: '2184'
+ht-degree: 27%
 
 ---
 
 
-# Configuración del etiquetado de recursos mediante el servicio de contenido inteligente {#configure-asset-tagging-using-the-smart-content-service}
+# Preparación [!DNL Assets] para el etiquetado inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Puede realizar la integración [!DNL Adobe Experience Manager] con Smart Content Service mediante Adobe Developer Console. Utilice esta configuración para acceder al servicio de contenido inteligente desde dentro [!DNL Experience Manager].
+Antes de poder etiquetar los recursos mediante inicios mediante Smart Content Services, integre [!DNL Experience ManageR Assets] con Adobe Developer Console para aprovechar el servicio inteligente de [!DNL Adobe Sensei]. Una vez configurado, entrene el servicio con unas pocas imágenes y una etiqueta.
 
-En el artículo se detallan las siguientes tareas clave necesarias para configurar el servicio de contenido inteligente. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
+Antes de utilizar Smart Content Service, asegúrese de lo siguiente:
+
+* [Integración con Adobe Developer Console](#integrate-adobe-io).
+* [Capacitación del servicio](#training-the-smart-content-service)de contenido inteligente.
+
+   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
+  -->
+
+* Instale el Service Pack [de](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html)Experience Manager más reciente.
+
+## Integración con Adobe Developer Console {#integrate-adobe-io}
+
+Cuando se integra con Adobe Developer Console, el [!DNL Experience Manager] servidor autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio de contenido inteligente. Para integrarlo, necesita una cuenta de Adobe ID con privilegios de administrador para la organización y una licencia de Smart Content Service comprada y activada para su organización.
+
+Para configurar el servicio de contenido inteligente, siga estos pasos de nivel superior:
 
 1. [Cree una configuración de Smart Content Service](#obtain-public-certificate) en [!DNL Experience Manager] para generar una clave pública. [Obtenga un certificado público para la integración de OAuth.](#obtain-public-certificate)
 
@@ -27,20 +41,7 @@ En el artículo se detallan las siguientes tareas clave necesarias para configur
 
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-## Requisitos previos {#prerequisites}
-
-Antes de utilizar Smart Content Service, asegúrese de lo siguiente para crear una integración en Adobe Developer Console:
-
-* Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
-
-* El servicio de contenido inteligente está habilitado para su organización.
-
-<!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
--->
-
-Para habilitar Etiquetas inteligentes mejoradas, además de las anteriores, instale también el último Service Pack [de](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html)Experience Manager.
-
-## Cree la configuración de Smart Content Service para obtener {#obtain-public-certificate}
+### Crear la configuración de Smart Content Service para obtener un certificado público {#obtain-public-certificate}
 
 El certificado público permite autenticar el perfil en Adobe Developer Console.
 
@@ -74,7 +75,7 @@ El certificado público permite autenticar el perfil en Adobe Developer Console.
 
    *Figura: Configuración del servicio de etiquetado inteligente*
 
-### Reconfigure when a certificate expires {#certrenew}
+#### Reconfigure when a certificate expires {#certrenew}
 
 Una vez que caduca un certificado, ya no es de confianza. No puede renovar un certificado caducado. Para añadir un nuevo certificado, siga estos pasos.
 
@@ -87,7 +88,7 @@ Una vez que caduca un certificado, ya no es de confianza. No puede renovar un ce
    ![Eliminar la entrada de búsqueda por similitudes existente en Keystore para agregar un nuevo certificado de seguridad](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *Imagen: Elimine la entrada`similaritysearch`en el almacén de claves para añadir un nuevo certificado de seguridad.*
+   *Imagen: Elimine la entrada `similaritysearch` en el almacén de claves para añadir un nuevo certificado de seguridad.*
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servicios de nube heredados]**. Haga clic en **[!UICONTROL Etiquetas inteligentes de recursos]** > **[!UICONTROL Mostrar configuración]** > **[!UICONTROL Configuraciones disponibles]**. Haga clic en la configuración requerida.
 
@@ -95,7 +96,7 @@ Una vez que caduca un certificado, ya no es de confianza. No puede renovar un ce
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io) y vaya a los servicios de contenido inteligente existentes en la página **[!UICONTROL Integraciones]** . Cargue el nuevo certificado. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
 
-## Creación de la integración de Adobe Developer Console {#create-adobe-i-o-integration}
+### Creación de la integración de Adobe Developer Console {#create-adobe-i-o-integration}
 
 Para utilizar las API de Smart Content Service, cree una integración en Adobe Developer Console para obtener la clave [!UICONTROL de] API (generada en el campo ID [!UICONTROL de] CLIENTE de la integración de la consola de desarrollador de Adobe), el ID [!UICONTROL de la cuenta]TÉCNICA, el ID [!UICONTROL de]ORGANIZACIÓN y la configuración del servicio de etiquetado inteligente de [!UICONTROL CLIENT SECRET]  [!DNL Experience Manager]para recursos en nube en la configuración de nube de la versión de nube de Microsoft.
 
@@ -120,7 +121,7 @@ Para utilizar las API de Smart Content Service, cree una integración en Adobe D
 
    *Figura: Detalles de la integración en Adobe Developer Console*
 
-## Configurar el servicio de contenido inteligente {#configure-smart-content-service}
+### Configurar el servicio de contenido inteligente {#configure-smart-content-service}
 
 Para configurar la integración, utilice los valores de los campos ID [!UICONTROL DE CUENTA]TÉCNICA, ID [!UICONTROL DE]ORGANIZACIÓN, [!UICONTROL CLIENT SECRET]e ID [!UICONTROL DE] CLIENTE de la integración de Adobe Developer Console. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la [!DNL Experience Manager] implementación.
 
@@ -139,13 +140,13 @@ Para configurar la integración, utilice los valores de los campos ID [!UICONTRO
    | [!UICONTROL Id. de organización] | [!UICONTROL ID. DE ORGANIZACIÓN] |
    | [!UICONTROL Secreto del cliente] | [!UICONTROL SECRETO DEL CLIENTE] |
 
-## Validación de la configuración {#validate-the-configuration}
+### Validación de la configuración {#validate-the-configuration}
 
 Después de completar la configuración, puede utilizar un MBean de JMX para validar la configuración. Para validar, siga estos pasos.
 
 1. Acceda a su [!DNL Experience Manager] servidor en `https://[aem_server]:[port]`.
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** Web para abrir la consola OSGi. Haga clic en **[!UICONTROL Principal]>[!UICONTROL JMX]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** Web para abrir la consola OSGi. Haga clic en **[!UICONTROL Principal] > [!UICONTROL JMX]**.
 
 1. Haga clic `com.day.cq.dam.similaritysearch.internal.impl`. Abre **[!UICONTROL SimilitudBuscar Tareas]** diversas.
 
@@ -153,7 +154,7 @@ Después de completar la configuración, puede utilizar un MBean de JMX para val
 
 Los resultados de validación se muestran en el mismo cuadro de diálogo.
 
-## Habilitar el etiquetado inteligente en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM (opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+### Habilitar el etiquetado inteligente en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM (opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
@@ -190,10 +191,102 @@ Los resultados de validación se muestran en el mismo cuadro de diálogo.
 
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el paso del proceso y, a continuación, guarde el flujo de trabajo.
 
+## Formación del servicio de contenido inteligente {#training-the-smart-content-service}
+
+Para que Smart Content Service reconozca su taxonomía empresarial, ejecútela en un conjunto de recursos que ya incluyen etiquetas que son relevantes para su negocio. Para etiquetar de forma eficaz las imágenes de marca, el servicio de contenido inteligente requiere que las imágenes de formación se ajusten a determinadas directrices. Después de la formación, el servicio puede aplicar la misma taxonomía a un conjunto de activos similar.
+
+Puede entrenar el servicio varias veces para mejorar su capacidad de aplicar etiquetas relevantes. Después de cada ciclo de formación, ejecute un flujo de trabajo de etiquetado y compruebe si los recursos están etiquetados correctamente.
+
+Puede capacitar al servicio de contenido inteligente de forma periódica o según sus necesidades.
+
+>[!NOTE]
+>
+>El flujo de trabajo de formación solo se ejecuta en carpetas.
+
+### Directrices para la formación {#guidelines-for-training}
+
+Para obtener los mejores resultados, las imágenes del conjunto de formación deben cumplir las siguientes directrices:
+
+**Cantidad y tamaño:** Mínimo de 30 imágenes por etiqueta. Mínimo de 500 píxeles en el lado más largo.
+
+**Coherencia**: Las imágenes de una etiqueta deben ser visualmente similares.
+
+Por ejemplo, no es recomendable etiquetar todas estas imágenes como `my-party` (para formación) porque no son visualmente similares.
+
+![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/coherence.png)
+
+**Cobertura**: Las imágenes de la formación deben ser suficientemente variadas. La idea es dar algunos ejemplos, pero razonablemente diversos, para que el Experience Manager aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
+
+Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
+
+![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/coverage_1.png)
+
+**Distracción/obstrucción**: El servicio entrena mejor en imágenes que tienen menos distracción (fondos destacados, acompañamientos no relacionados, como objetos/personas con el tema principal).
+
+Por ejemplo, para la etiqueta *casual-shoe*, la segunda imagen no es un buen candidato para la formación.
+
+![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/distraction.png)
+
+**Complejidad:** Si una imagen cumple los requisitos para más de una etiqueta, agregue todas las etiquetas aplicables antes de incluir la imagen para formación. For example, for tags, such as `raincoat` and `model-side-view`, add both the tags on the eligible asset before including it for training.
+
+![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/completeness.png)
+
+>[!NOTE]
+>
+>La capacidad del servicio de contenido inteligente para formarse en sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación. Para obtener los mejores resultados, Adobe recomienda que utilice imágenes visualmente similares para entrenar el servicio de cada etiqueta.
+
+### Formación periódica {#periodic-training}
+
+Puede habilitar el servicio de contenido inteligente para que imparta formación periódica sobre los recursos y las etiquetas asociadas dentro de una carpeta. Abra la página [!UICONTROL Propiedades] de la carpeta de recursos, seleccione **[!UICONTROL Activar etiquetas]** inteligentes en la ficha **[!UICONTROL Detalles]** y guarde los cambios.
+
+![enable_smart_tags](assets/enable_smart_tags.png)
+
+Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para formar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta semanalmente los sábados a las 12:30.
+
+### Capacitación a pedido {#on-demand-training}
+
+Puede entrenar el servicio de contenido inteligente siempre que sea necesario desde la consola Flujo de trabajo.
+
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+1. En el cuadro de diálogo **[!UICONTROL Ejecutar flujo de trabajo]** , vaya a la carpeta de carga útil que incluye los recursos etiquetados para la formación del servicio.
+1. Especifique un título para el flujo de trabajo y un comentario. A continuación, haga clic en **[!UICONTROL Ejecutar]**. Los recursos y las etiquetas se envían para formación.
+
+   ![workflow_dialog](assets/workflow_dialog.png)
+
+>[!NOTE]
+>
+>Una vez que los recursos de una carpeta se procesan para formación, solo los recursos modificados se procesan en los ciclos de formación posteriores.
+
+### Informes de formación de vista {#viewing-training-reports}
+
+Para comprobar si el servicio de contenido inteligente ha recibido formación sobre sus etiquetas en el conjunto de recursos de formación, consulte el informe de flujo de trabajo de formación desde la consola Informes.
+
+1. En [!DNL Experience Manager] la interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
+1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
+1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. Then, click **[!UICONTROL Create]** from the toolbar.
+1. En la página **[!UICONTROL Informes de recursos]**, seleccione el informe que ha generado. To view the report, click **[!UICONTROL View]** from the toolbar.
+1. Revise los detalles del informe.
+
+   El informe muestra el estado de la formación de las etiquetas que ha entrenado. El color verde de la columna **[!UICONTROL Estado de formación]** indica que el servicio de contenido inteligente ha recibido formación para la etiqueta. El color amarillo indica que el servicio no está completamente entrenado para una etiqueta en particular. En este caso, agregue más imágenes con la etiqueta en concreto y ejecute el flujo de trabajo de formación para que el servicio se imparta completamente en la etiqueta.
+
+   Si no ve las etiquetas en este informe, vuelva a ejecutar el flujo de trabajo de formación para estas etiquetas.
+
+1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como una hoja de cálculo de Microsoft Excel.
+
+## Restricciones     {#limitations}
+
+* Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imágenes y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual de Smart Content Service tiene las siguientes limitaciones:
+
+   * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisas delgadas contra las tradicionales.
+   * Imposibilidad de identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
+   * El etiquetado se admite en las configuraciones regionales que [!DNL Experience Manager] se admiten en. Para obtener una lista de idiomas, consulte las notas de la versión de [Smart Content Services](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+
+* Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice Omniture (búsqueda de texto completo) [!DNL Assets] . No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
+
 >[!MORELIKETHIS]
 >
->* [Administrar etiquetas inteligentes](managing-smart-tags.md)
 >* [Descripción general y cómo se enseñan las etiquetas inteligentes](enhanced-smart-tags.md)
->* [Directrices y reglas para la formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)
 >* [Tutorial de vídeo sobre cómo configurar etiquetas inteligentes](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
