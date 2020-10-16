@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 5%
@@ -358,7 +358,7 @@ La búsqueda visual utiliza etiquetado inteligente y requiere [!DNL Experience M
 1. En CRXDE, en `/oak-index/damAssetLucene` nodo, establezca la `reindex` propiedad en `true`. Guarde los cambios.
 1. (Opcional) Si tiene un formulario de búsqueda personalizado, copie el `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde los cambios.
 
-Para obtener información relacionada, consulte [Comprender las etiquetas inteligentes en el Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) y [cómo administrar las etiquetas](/help/assets/managing-smart-tags.md)inteligentes.
+Para obtener información relacionada, consulte [Comprender las etiquetas inteligentes en el Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) y [cómo administrar las etiquetas](/help/assets/enhanced-smart-tags.md)inteligentes.
 
 >[!CAUTION]
 >
