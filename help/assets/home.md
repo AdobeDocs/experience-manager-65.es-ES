@@ -1,17 +1,17 @@
 ---
-title: Guía de recursos
+title: Guía de Assets
 description: Esta guía cubre todas las tareas de recursos Experience Manager, como la creación, administración, entrega y optimización de recursos digitales.
-user-guide-title: Guía de recursos
+user-guide-title: Guía de Assets
 translation-type: tm+mt
-source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 14%
+source-wordcount: '344'
+ht-degree: 21%
 
 ---
 
 
-# Guía de recursos
+# Guía de Assets
 
 Esta guía abarca todas [!DNL Experience Manager Assets] las tareas, como la creación, la gestión, la entrega y la optimización de recursos digitales.
 
@@ -22,7 +22,7 @@ Esta guía abarca todas [!DNL Experience Manager Assets] las tareas, como la cre
 
 * [Introducción a Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Notas de la versión de Experience Manager 6.5](/help/release-notes/home.md)
-* [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Actualizaciones recientes de la documentación](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 guías
