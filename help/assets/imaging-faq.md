@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1730'
 ht-degree: 2%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 2%
 
 ## ¿Qué es &quot;Imágenes inteligentes&quot;? {#what-is-smart-imaging}
 
-La tecnología de imágenes inteligentes aprovecha las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento del envío de imágenes optimizando automáticamente el formato, el tamaño y la calidad de las imágenes en función de las capacidades del navegador del cliente.
+La tecnología Smart Imaging aprovecha las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes para mejorar el rendimiento del envío de imágenes optimizando automáticamente el formato, el tamaño y la calidad de las imágenes en función de las capacidades del navegador del cliente.
 
-Smart Imaging también se beneficia del aumento de rendimiento añadido de la integración total con el servicio CDN Premium de Adobe. Este servicio encuentra la ruta de Internet óptima entre servidores, redes y puntos de interrelación que tiene la latencia y/o la tasa de pérdida de paquetes más baja que la ruta predeterminada en Internet.
+Smart Imaging también se beneficia del aumento de rendimiento añadido de la integración total con el servicio CDN de primera calidad de Adobe. Este servicio encuentra la ruta de Internet óptima entre servidores, redes y puntos de interrelación que tiene la latencia y/o la tasa de pérdida de paquetes más baja que la ruta predeterminada en Internet.
 
 Los siguientes ejemplos de recursos de imagen muestran la optimización de imágenes inteligentes añadida:
 
-| Image<br>(URL) | Miniatura  | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
+| Image<br>(URL) | Miniatura    | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
 |---|---|---|---|---|
 | [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
@@ -34,7 +34,7 @@ Los siguientes ejemplos de recursos de imagen muestran la optimización de imág
 | [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | Promedio = 51% |
 
-De manera similar a lo anterior, Adobe también ejecutó una prueba con 7009 URL de sitios de clientes activos, y logró una optimización del tamaño de archivo en JPEG de un 38% en promedio y una optimización del tamaño de archivo en un 31% adicional para PNG con formato WebP, debido a la capacidad de las imágenes inteligentes.
+De manera similar a lo anterior, Adobe también ejecutó una prueba con 7009 direcciones URL de sitios de clientes activos, y logró una optimización del tamaño de archivo JPEG de un 38% más y una optimización del tamaño de archivo de un 31% más para PNG con formato WebP, debido a la capacidad de las imágenes inteligentes.
 
 ## ¿Cuáles son las ventajas clave de las últimas imágenes inteligentes? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -43,19 +43,19 @@ Dado que las imágenes constituyen la mayor parte del tiempo de carga de una pá
 Mejoras en la versión más reciente de Imágenes inteligentes:
 
 * Proporciona contenido optimizado inmediatamente (en tiempo de ejecución).
-* Utiliza la tecnología Adobe Sensei para convertir según la calidad (qlt) especificada en la solicitud de imagen.
+* Utiliza la tecnología de Adobe Sensei para convertir según la calidad (qlt) especificada en la solicitud de imagen.
 * Las imágenes inteligentes se pueden desactivar con el parámetro de URL &quot;bfc&quot;.
 * TTL (Tiempo de vivir) independiente. Anteriormente, era obligatorio un TTL mínimo de 12 horas para que funcionara la imagen inteligente.
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y era un proceso de dos pasos para invalidar la caché. En las últimas imágenes inteligentes, solo los derivados se almacenan en caché, lo que permite un proceso de invalidación de caché de un solo paso.
-* Los clientes que utilicen encabezados personalizados en su conjunto de reglas (por ejemplo, &quot;Origen de permitir temporización&quot; o &quot;Robot X&quot;, como se sugiere al [Añadir un valor de encabezado personalizado en las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarán de la última imagen inteligente, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de Imágenes inteligentes.
+* Los clientes que utilicen encabezados personalizados en su conjunto de reglas (por ejemplo, &quot;Origen de permitir temporización&quot; o &quot;Robot X&quot;, como se sugiere al [Añadir un valor de encabezado personalizado en las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarán de la última imagen inteligente, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de la imagen inteligente.
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Las imágenes inteligentes se incluyen en la licencia existente de Dynamic Media Classic (Scene7) o de AEM Dynamic Media (On Prem, AMS y AEM como Cloud Service).
+No. Las imágenes inteligentes se incluyen en la licencia existente de Dynamic Media Classic (Scene7) o AEM Dynamic Media (On Prem, AMS y AEM como Cloud Service).
 
 >[!NOTE]
 >
->Las imágenes inteligentes no están disponibles para los clientes de Dynamic Media: híbrido.
+>Las imágenes inteligentes no están disponibles para los clientes de Dynamic Media - híbrido.
 
 
 ## ¿Cómo funcionan las imágenes inteligentes? {#how-does-smart-imaging-work}
@@ -102,23 +102,23 @@ Las imágenes inteligentes funcionan con imágenes enviadas a través de HTTP o 
 
 ## ¿Puedo usar imágenes inteligentes? {#am-i-eligible-to-use-smart-imaging}
 
-Para utilizar Smart Imaging, la cuenta de Dynamic Media Classic o Dynamic Media de su compañía en AEM debe cumplir los siguientes requisitos:
+Para utilizar las imágenes inteligentes, los medios dinámicos de su compañía (Dynamic Media Classic o Dynamic Media) en AEM cuenta deben cumplir los siguientes requisitos:
 
-* Use la CDN (Red de Envío de contenido) incluida en Adobe como parte de su licencia.
+* Use la CDN (Red de Envío de contenido) incluida en el Adobe como parte de su licencia.
 * Utilice un dominio dedicado (por ejemplo, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico (por ejemplo, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
 
 Para encontrar los dominios, inicie sesión en la cuenta o cuentas de compañía.
 
 Tap **[!UICONTROL Setup > Application Setup > General Settings.]** Busque el campo denominado Nombre del servidor **[!UICONTROL publicado.]** Si actualmente está utilizando un dominio genérico, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
 
-Su primer dominio personalizado no tiene costo adicional con una licencia de Dynamic Media.
+El primer dominio personalizado no tiene costo adicional con una licencia de Dynamic Media.
 
 ## ¿Cuál es el proceso para activar las imágenes inteligentes en mi cuenta? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
 Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita automáticamente.
 
-1. Iniciar una solicitud de asistencia técnica (correo electrónico: `s7support@adobe.com`).
-1. Proporcione la siguiente información en su solicitud de asistencia:
+1. [Utilice el Admin Console para crear un caso de soporte técnico.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Proporcione la siguiente información en su caso de asistencia:
 
    1. Nombre de contacto principal, correo electrónico, teléfono.
    1. Todos los dominios que se habilitarán para la creación de imágenes inteligentes (es decir, `images.company.com` o `mycompany.scene7.com`).
@@ -128,7 +128,7 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
       Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral.]**
 
       Busque el campo denominado Nombre del servidor **[!UICONTROL publicado.]**
-   1. Compruebe que está utilizando la CDN a través de Adobe y que no se administra con una relación directa.
+   1. Compruebe que está utilizando la CDN mediante Adobe y que no se administra con una relación directa.
    1. Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com`, y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
       Para encontrar los dominios, inicie sesión en la cuenta o cuentas de compañía.
@@ -139,8 +139,8 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
    1. Indique si también necesita que esto funcione con HTTP/2.
 
 1. La asistencia técnica le agregará a la Lista de espera del cliente de Smart Imaging en función del orden en que se enviaron las solicitudes.
-1. Cuando Adobe esté preparado para gestionar su solicitud, el servicio de asistencia técnica se pondrá en contacto con usted para coordinar y establecer una fecha de destinatario.
-1. **Opcional**: Tiene la opción de probar las imágenes inteligentes en Ensayo antes de que Adobe implemente la nueva función en producción.
+1. Cuando Adobe esté listo para gestionar su solicitud, el servicio de soporte técnico se pondrá en contacto con usted para coordinar y establecer una fecha de destinatario.
+1. **Opcional**: Tiene la opción de probar las imágenes inteligentes en Ensayo antes de que el Adobe impulse la nueva función a la producción.
 1. Se le notifica después de completarlo mediante soporte técnico.
 1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el Tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo los recursos se almacenan en caché en la CDN. Para cambiar esta configuración:
 
@@ -152,13 +152,13 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
 Las solicitudes se procesan en el orden en que son recibidas por la asistencia técnica, según la Lista de espera.
 
 >[!NOTE]
-Puede haber un largo tiempo de espera, ya que la activación de las imágenes inteligentes implica que Adobe borre la caché. Por lo tanto, sólo se pueden gestionar unas pocas transiciones de clientes en un momento dado.
+Puede que haya un largo tiempo de espera, ya que la activación de las imágenes inteligentes implica que el Adobe borre la caché. Por lo tanto, sólo se pueden gestionar unas pocas transiciones de clientes en un momento dado.
 
 ## ¿Cuáles son los riesgos de pasar a utilizar las imágenes inteligentes? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 No hay riesgo para una página web del cliente. Sin embargo, debe tener en cuenta que la transición a Imágenes inteligentes borra la caché en CDN porque implica pasar a una nueva configuración de Dynamic Media Classic o Dynamic Media en AEM.
 
-Durante la transición inicial, las imágenes no almacenadas en caché llegan directamente a los servidores de origen de Adobe hasta que se vuelve a crear la caché. Debido a esto, Adobe planea gestionar algunas transiciones de clientes a la vez, de modo que se mantenga un rendimiento aceptable al extraer solicitudes de nuestro origen. Para la mayoría de los clientes, la caché se vuelve a crear completamente en la CDN en ~1 a 2 días.
+Durante la transición inicial, las imágenes no almacenadas en caché llegan directamente a los servidores de origen de Adobe hasta que se vuelve a crear la caché. Debido a esto, Adobe planea manejar algunas transiciones de clientes a la vez para mantener un rendimiento aceptable al extraer solicitudes de nuestro origen. Para la mayoría de los clientes, la caché se vuelve a crear completamente en la CDN en ~1 a 2 días.
 
 ## ¿Cómo puedo verificar si las imágenes inteligentes funcionan correctamente?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
