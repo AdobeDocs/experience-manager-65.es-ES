@@ -3,10 +3,10 @@ title: Configuración del etiquetado de recursos mediante Smart Content Service
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 27%
+source-wordcount: '2188'
+ht-degree: 26%
 
 ---
 
@@ -23,7 +23,7 @@ Antes de utilizar Smart Content Service, asegúrese de lo siguiente:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Instale el Service Pack [de](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html)Experience Manager más reciente.
+* Instale el Service Pack [de](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager más reciente.
 
 ## Integración con Adobe Developer Console {#integrate-adobe-io}
 
