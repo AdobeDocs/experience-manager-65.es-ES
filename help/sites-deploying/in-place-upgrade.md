@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Donde `<<YOUR_PROFILE>>` y `<<ADDITIONAL_FLAGS>>` se sustituyen por el perfil y 
  <tbody>
   <tr>
    <td><strong>Repositorio de origen</strong></td>
-   <td><strong>Repositorio de Destinatarios</strong></td>
+   <td><strong>Repositorio de destinatarios</strong></td>
    <td><strong>Perfil</strong></td>
    <td><strong>Indicadores adicionales</strong><br /> </td>
   </tr>
@@ -175,6 +175,10 @@ Donde `/path/to/datastore` representa la ruta de acceso al almacén de datos de 
 ### Determinación del inicio de actualización correcto, comando {#determining-the-correct-upgrade-start-command}
 
 Para ejecutar la actualización, es importante utilizar el inicio AEM con el archivo jar para que aparezca la instancia. Para actualizar a 6.5, también puede ver otras opciones de migración y reestructuración de contenido en Migración [de contenido](/help/sites-deploying/lazy-content-migration.md) diferida que puede elegir con el comando upgrade.
+
+>[!IMPORTANT]
+>
+>Si está ejecutando Oracle Java 11 (o versiones generales de Java más recientes que 8), será necesario agregar modificadores adicionales a la línea de comandos al iniciar AEM. Para obtener más información, consulte Consideraciones sobre [Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 Tenga en cuenta que iniciar AEM desde el script de inicio no inicio la actualización. La mayoría de los clientes inicio AEM usando el script de inicio y han personalizado este script de inicio para incluir conmutadores para configuraciones de entorno como configuraciones de memoria, certificados de seguridad, etc. Por este motivo, recomendamos seguir este procedimiento para determinar el comando de actualización correcto:
 
