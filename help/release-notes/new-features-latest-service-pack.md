@@ -4,7 +4,7 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
+source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 2%
@@ -28,7 +28,7 @@ La operación de movimiento de página ahora está disponible en modo asincróni
 
 ### Invalidar contenido en caché de CDN {#invalidate-cdn-cached-content}
 
-Ahora puede utilizar la interfaz del[!DNL  Dynamic Media] usuario para invalidar el contenido en caché de la red de Envío de contenido (CDN). Como resultado, los recursos actualizados están disponibles instantáneamente en lugar de esperar a que caduque la caché. Puede invalidar CDN mediante:
+Ahora puede utilizar la interfaz de usuario para invalidar el contenido almacenado en caché de la red de Envío de contenido (CDN). [!DNL Dynamic Media] Como resultado, los recursos actualizados están disponibles instantáneamente en lugar de esperar a que caduque la caché. Puede invalidar CDN mediante:
 
 * Creación de una plantilla de invalidación de CDN: Selección de recursos y direcciones URL asociadas a plantillas
 
