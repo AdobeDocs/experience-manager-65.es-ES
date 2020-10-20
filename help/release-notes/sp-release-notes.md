@@ -1,12 +1,12 @@
 ---
-title: Notas de la versión de [!DNL Adobe Experience Manager] 6.5 Service Pack.
+title: '[!DNL Adobe Experience Manager] Notas de la versión de Service Pack 6.5.'
 description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
+source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
 workflow-type: tm+mt
-source-wordcount: '4518'
+source-wordcount: '4530'
 ht-degree: 6%
 
 ---
@@ -39,15 +39,15 @@ Las principales funciones y mejoras introducidas en Adobe Experience Manager 6.5
 
 * Las opciones predeterminadas para `test` y `aiprocess` se actualizan a `Thumbnail`, desde `Rasterize` antes en Dynamic Media, para garantizar que los usuarios solo tengan que crear miniaturas y omitir la extracción de página y la extracción de palabras clave.
 
-* Rellene previamente un formulario adaptable en el cliente.
+* [Rellene previamente un formulario adaptable en el cliente](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
-* Integración del modelo de datos de formulario con las API de RESTful en un servidor con implementación SSL bidireccional.
+* [Integración del modelo de datos de formulario con las API de RESTful en un servidor con implementación](../../help/forms/using/configure-data-sources.md)SSL bidireccional.
 
-* Se mejoró el almacenamiento en caché para páginas de formularios adaptables traducidas.
+* [Se mejoró el almacenamiento en caché para páginas](../../help/forms/using/configure-adaptive-forms-cache.md)de formularios adaptables traducidas.
 
-* Compatibilidad con etiquetas de texto de Adobe Sign en el servicio de conversión automatizada de Forms.
+* Compatibilidad con etiquetas de texto de [Adobe Sign en el servicio](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)de conversión automatizada de Forms.
 
-* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
+* Compatibilidad para [convertir formularios de color en formularios](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) adaptables mediante [!DNL Automated Forms Conversion service].
 
 * Compatibilidad con los protocolos SMB 2 y SMB 3.
 
@@ -152,13 +152,13 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
    ![Menú Ayuda en el encabezado](assets/Help_aem_header.png)
 
-   *Figura:[!UICONTROL Busque Ayuda]en el menú[!UICONTROL Ayuda].*
+   *Figura: [!UICONTROL Busque Ayuda] en el menú [!UICONTROL Ayuda] .*
 
    * El mensaje de error si se introduce un valor incorrecto en [!UICONTROL Suplantar como] campo en la opción [!UICONTROL Usuario] y el enfoque se mueve correctamente al campo de texto (NPR-33804).
 
    ![Menú Usuario en el encabezado](assets/User_aem_header.png)
 
-   *Figura:[!UICONTROL Suplantar como]campo en el menú[!UICONTROL Usuario]en el encabezado.*
+   *Figura: [!UICONTROL Suplantar como] campo en el menú [!UICONTROL Usuario] en el encabezado.*
 
 * Ahora el usuario puede cambiar el enfoque mediante el teclado:
 
