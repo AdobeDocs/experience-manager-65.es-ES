@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 149e505eb4dac0d9a56c53036ce1c6b8d16ad0f1
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 1%
@@ -136,7 +136,7 @@ La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando u
 >
 >Debe ser miembro del grupo fd-admin para poder crear y administrar aplicaciones de flujo de trabajo.
 
-1. En la instancia de autor AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** y toque **[!UICONTROL Create]**.
+1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Administrar aplicación]** de flujo de trabajo y toque **[!UICONTROL Crear]**.
 1. En la ventana Crear aplicación de flujo de trabajo, proporcione entradas para los campos siguientes y toque **Crear**. Se crea una nueva aplicación y se muestra en la pantalla Aplicaciones de flujo de trabajo.
 
 <table>
@@ -218,7 +218,7 @@ Puede configurar un formulario adaptable para sincronizar, enviar y activar un f
 
 Un administrador (un miembro del grupo de administradores de fd) puede configurar una carpeta de red para ejecutar un flujo de trabajo preconfigurado cuando un usuario coloca un archivo (como un archivo PDF) en la carpeta. Una vez completado el flujo de trabajo, puede guardar el archivo de resultados en una carpeta de salida especificada. Dicha carpeta se conoce como [Carpeta](../../forms/using/watched-folder-in-aem-forms.md)vigilada. Realice el siguiente procedimiento para configurar una carpeta vigilada para iniciar un flujo de trabajo:
 
-1. En la instancia de autor AEM, vaya a ![tools-1](assets/tools-1.png) **>**[!UICONTROL  Forms ]**> Configure Watched Folder.** Se muestra una lista de las carpetas ya configuradas controladas.
+1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta]** vigilada. Se muestra una lista de las carpetas ya configuradas controladas.
 1. Toque **[!UICONTROL Nuevo]**. Se muestra una lista de campos. Especifique un valor para los siguientes campos para configurar una carpeta vigilada para un flujo de trabajo:
 
 <table>
