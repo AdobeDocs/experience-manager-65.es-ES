@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 El componente [](/help/sites-authoring/default-components-foundation.md#video) Vídeo le permite colocar un recurso de vídeo predefinido y listo para usar (OOTB) en la página.
 
-Para que se produzca una transcodificación adecuada, un administrador instala FFmpeg por separado. Consulte [Instalación de FFmpeg y configuración de AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
+Para que se produzca una transcodificación adecuada, un administrador instala FFmpeg por separado. Consulte [Instalar FFmpeg y configurar AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
 
 ## Configuración de perfiles de vídeo {#configure-video-profiles}
 
@@ -32,9 +32,9 @@ Para utilizar elementos HTML5, defina definir perfiles de vídeo. Las que se eli
 
 Desde este cuadro de diálogo, también puede configurar el diseño del componente Vídeo y los parámetros para [!UICONTROL Reproducción], [!UICONTROL Flash]y [!UICONTROL Avanzado].
 
-## Instalación de FFmpeg y configuración de AEM {#install-ffmpeg}
+## Instalar FFmpeg y configurar AEM {#install-ffmpeg}
 
-El componente Vídeo depende del producto de código abierto de terceros FFmpeg para la transcodificación de vídeos. Descargado desde [https://ffmpeg.org/](https://ffmpeg.org/). Después de instalar FFmpeg, configure AEM para que utilice un códec de audio específico y opciones de tiempo de ejecución específicas.
+El componente Vídeo depende del producto de código abierto de terceros FFmpeg para la transcodificación de vídeos. Descargado desde [https://ffmpeg.org/](https://ffmpeg.org/). Después de instalar FFmpeg, configure AEM para utilizar un códec de audio específico y opciones de tiempo de ejecución específicas.
 
 Para instalar FFmpeg en **Windows**, siga estos pasos:
 
@@ -45,7 +45,7 @@ Para instalar FFmpeg en **Windows**, siga estos pasos:
 
 Para instalar FFmpeg en **Mac OS X**, siga estos pasos:
 
-1. Instale Xcode disponible en [developer.apple.com/xcode](hhttps://developer.apple.com/xcode/).
+1. Instale Xcode disponible en [developer.apple.com/xcode](https://developer.apple.com/xcode/).
 1. Instale en [XQuartz](https://www.xquartz.org) para obtener [X11](https://support.apple.com/en-us/HT201341).
 1. Instale MacPorts en [www.macports.org](https://www.macports.org/).
 1. En la consola, ejecute `sudo port install ffmpeg` y siga las instrucciones que aparecen en pantalla. Asegúrese de que la ruta del `FFmpeg` ejecutable se agrega a la variable `PATH` del sistema.
@@ -78,4 +78,4 @@ Para **configurar AEM**, siga estos pasos:
 
 >[!NOTE]
 >
->Los cambios en los modelos de flujo de trabajo predeterminados (OOTB) no se conservan al actualizar la instancia de AEM. Adobe recomienda copiar los modelos de flujo de trabajo modificados antes de editarlos. Por ejemplo, copie el modelo [!UICONTROL DAM Update Asset] OOTB antes de editar el paso Transcodificación FFmpeg en el modelo [!UICONTROL DAM Update Asset] para elegir los nombres de perfiles de vídeo que existían antes de la actualización. A continuación, puede superponer el `/apps` nodo para permitir que AEM recupere los cambios personalizados del modelo OOTB.
+>Los cambios en los modelos de flujo de trabajo predeterminados (OOTB) no se conservan al actualizar la instancia de AEM. Adobe recomienda copiar los modelos de flujo de trabajo modificados antes de editarlos. Por ejemplo, copie el modelo [!UICONTROL DAM Update Asset] OOTB antes de editar el paso Transcodificación FFmpeg en el modelo [!UICONTROL DAM Update Asset] para elegir los nombres de perfiles de vídeo que existían antes de la actualización. A continuación, puede superponer el `/apps` nodo para permitir AEM recuperar los cambios personalizados del modelo OOTB.
