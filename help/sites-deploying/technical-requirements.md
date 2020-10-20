@@ -11,7 +11,7 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a299e26668b1f1f08cca8d4a8085da185522ec96
+source-git-commit: 7065a6b984afb18c188acd848b9b77da7da67749
 workflow-type: tm+mt
 source-wordcount: '3118'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Para cualquier problema relacionado específicamente con la plataforma, póngase
 Requisitos mínimos para instalar Adobe Experience Manager:
 
 * Java Platform instalado, Standard Edition JDK u otras máquinas virtuales [Java admitidas](#java-virtual-machines)
-* Archivo de inicio rápido de Experience Manager (JAR independiente o WAR de implementación de aplicaciones web)
+* Archivo de inicio rápido Experience Manager (JAR independiente o WAR de implementación de aplicaciones web)
 
 ### Requisitos mínimos de tamaño {#minimum-sizing-requirements}
 
@@ -47,6 +47,7 @@ Requisitos mínimos para ejecutar Adobe Experience Manager:
 >
 >* Los casos de uso de recursos digitales necesitan más memoria básica. Consulte [Implementación y mantenimiento](/help/sites-deploying/deploy.md#default-local-install) para obtener más información.
 >* [El paquete](/help/forms/using/installing-configuring-aem-forms-osgi.md) de complementos de AEM Forms requiere 15 GB de espacio temporal.
+
 >
 
 
@@ -55,11 +56,11 @@ Para obtener más información, consulte las Directrices [de cambio de tamaño d
 
 ### Niveles de soporte {#support-levels}
 
-Este documento lista las plataformas de cliente y servidor admitidas para Adobe Experience Manager. Adobe proporciona varios niveles de asistencia, tanto para configuraciones recomendadas como para otras configuraciones.
+Este documento lista las plataformas de cliente y servidor admitidas para Adobe Experience Manager. Adobe proporciona varios niveles de soporte, tanto para configuraciones recomendadas como para otras configuraciones.
 
 ### Configuraciones admitidas {#supported-configurations}
 
-Adobe recomienda estas configuraciones y proporciona asistencia completa como parte del acuerdo de mantenimiento de software estándar.
+Adobe recomienda estas configuraciones y proporciona soporte completo como parte del acuerdo de mantenimiento de software estándar.
 
 <table>
  <tbody>
@@ -69,11 +70,11 @@ Adobe recomienda estas configuraciones y proporciona asistencia completa como pa
   </tr>
   <tr>
    <td><strong>A: Admitido</strong></td>
-   <td>Adobe proporciona asistencia y mantenimiento completos para esta configuración. Esta configuración está cubierta por el proceso de garantía de calidad de Adobe.</td>
+   <td>Adobe proporciona soporte y mantenimiento completos para esta configuración. Esta configuración está cubierta por el proceso de garantía de calidad del Adobe.</td>
   </tr>
   <tr>
    <td><strong>R: Compatibilidad restringida</strong></td>
-   <td>Para garantizar el éxito de los proyectos de nuestros clientes, Adobe proporciona asistencia completa dentro de un programa de asistencia restringido, que requiere que se cumplan condiciones específicas. La asistencia de nivel R requiere una solicitud formal del cliente y la confirmación de Adobe. Para obtener más información, póngase en contacto con el Servicio de atención al cliente de Adobe.</td>
+   <td>Para garantizar el éxito de los proyectos de nuestros clientes, Adobe proporciona soporte completo dentro de un programa de soporte restringido, que requiere que se cumplan condiciones específicas. El soporte de nivel R requiere una solicitud formal del cliente y confirmación por Adobe. Para obtener más información, póngase en contacto con el Servicio de atención al cliente de Adobe.</td>
   </tr>
  </tbody>
 </table>
@@ -82,7 +83,7 @@ Adobe recomienda estas configuraciones y proporciona asistencia completa como pa
 
 | Nivel de asistencia | Descripción |
 |---|---|
-| **Z: No admitido** | No se admite la configuración. Adobe no realiza ninguna declaración sobre si la configuración funciona o no y no la admite. |
+| **Z: No admitido** | No se admite la configuración. Adobe no hace ninguna declaración sobre si la configuración funciona o no y no la admite. |
 
 ## Plataformas compatibles {#supported-platforms}
 
@@ -90,7 +91,7 @@ Adobe recomienda estas configuraciones y proporciona asistencia completa como pa
 
 La aplicación requiere una máquina virtual Java para ejecutarse, que se proporciona mediante la distribución Java Development Kit (JDK).
 
-Adobe Experience Manager funciona con las siguientes versiones de las máquinas virtuales de Java:
+Adobe Experience Manager funciona con las siguientes versiones de las máquinas virtuales Java:
 
 >[!CAUTION]
 >
@@ -133,10 +134,10 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
  </tbody>
 </table>
 
-1. Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java SE. Java 9, Java 10 y Java 12 son versiones no LTS de Oracle (consulte [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en el entorno de producción, Adobe solo ofrece asistencia para las versiones LTS de Java.
+1. Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java SE. Java 9, Java 10 y Java 12 son versiones no LTS de Oracle (consulte [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en el entorno de producción, Adobe solo ofrece soporte para las versiones LTS de Java.
 
 1. IBM JRE sólo se admite junto con WebSphere Application Server.
-1. El soporte y la distribución de JDK de Oracle Java SE, incluidas todas las actualizaciones de mantenimiento de las versiones de LTS más allá del final de las actualizaciones públicas, serán soportados directamente por Adobe para todos los clientes de AEM que utilicen la tecnología de Oracle Java SE. Consulte la compatibilidad de Java de [Oracle para preguntas y respuestas](assets/adobe-oracle-java-license-agreement.pdf) de Adobe Experience Manager para obtener más información.
+1. El soporte y la distribución de JDK de Oracle Java SE, incluidas todas las actualizaciones de mantenimiento de las versiones de LTS más allá del final de las actualizaciones públicas, serán soportados directamente por Adobe para todos los clientes AEM que utilicen la tecnología de Oracle Java SE. Consulte la compatibilidad de [Oracle Java con Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) para obtener más información.
 
 ### Almacenamiento y persistencia {#storage-persistence}
 
@@ -152,16 +153,16 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | MongoDB Enterprise 4.0 | Repositorio | A: Admitido `[2, 3]` |
 | MongoDB Enterprise 3.6 | Repositorio | Z: No admitido |
 | MongoDB Enterprise 3.4 | Repositorio | Z: No admitido |
-| IBM DB2 10.5 | Base de datos de repositorio y formularios | R: Compatibilidad restringida `[4]` |
-| Base de datos Oracle 12c (12.1.x) | Base de datos de repositorio y formularios | R: Compatibilidad restringida |
-| Microsoft SQL Server 2016 | Base de datos de formularios | A: Admitido |
+| IBM DB2 10.5 | Repositorio y base de datos de Forms | R: Compatibilidad restringida `[4]` |
+| Base de datos Oracle 12c (12.1.x) | Repositorio y base de datos de Forms | R: Compatibilidad restringida |
+| Microsoft SQL Server 2016 | Base de datos de Forms | A: Admitido |
 | **Apache Lucene (integrado de Quickstart)** | Servicio de búsqueda | A: Admitido |
 | Apache Solr | Servicio de búsqueda | A: Admitido |
 
-1. &#39;File System&#39; incluye el almacenamiento de bloques que es compatible con POSIX. Esto incluye la tecnología de almacenamiento de red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Se recomienda cargar AEM de prueba en combinación con el sistema de archivos de red o remoto.
-1. El uso compartido de MongoDB no es compatible con AEM.
+1. &#39;File System&#39; incluye el almacenamiento de bloques que es compatible con POSIX. Esto incluye la tecnología de almacenamiento de red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Se recomienda cargar AEM de prueba en combinación con el sistema de archivos de red/remoto.
+1. El uso compartido de MongoDB no se admite en AEM.
 1. Solo se admite el motor de Almacenamiento MongoDB WiredTiger.
-1. Compatible con los clientes de actualización de AEM Forms. No compatible con las nuevas instalaciones.
+1. Compatible con clientes de actualización de AEM Forms. No compatible con las nuevas instalaciones.
 
 >[!NOTE]
 >
@@ -169,9 +170,9 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 
 >[!NOTE]
 >
->MongoDB es un software de terceros y no se incluye en el paquete de licencias de AEM. Para obtener más información, consulte la página de directivas [de licencias de](https://www.mongodb.org/about/licensing/) MongoDB.
+>MongoDB es un software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la página de directivas [de licencias de](https://www.mongodb.org/about/licensing/) MongoDB.
 >
->Para aprovechar al máximo la implementación de AEM con MongoDB, Adobe recomienda otorgar licencias a la versión de MongoDB Enterprise para beneficiarse de la asistencia técnica profesional. Consulte Implementaciones [recomendadas](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) para obtener más información.
+>Para aprovechar al máximo su implementación AEM con MongoDB, Adobe recomienda que se le otorgue la licencia de la versión empresarial MongoDB para beneficiarse de la asistencia profesional. Consulte Implementaciones [recomendadas](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) para obtener más información.
 >
 >La licencia incluye un conjunto de réplicas estándar, compuesto por una instancia primaria y dos instancias secundarias que se pueden usar para la implementación de publicación o del autor.
 >
@@ -185,13 +186,13 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 >
 >Las bases de datos relacionales admitidas, como se indica anteriormente, son software de terceros y no se incluyen en el paquete de licencias de AEM.
 >
->Para ejecutar AEM 6.5 con una base de datos relacional admitida, se requiere un contrato de soporte independiente con un proveedor de base de datos. El Servicio de atención al cliente de Adobe asistirá en los problemas de cualificación relacionados con el uso de bases de datos relacionales con AEM 6.5.
+>Para ejecutar AEM 6.5 con una base de datos relacional admitida, se requiere un contrato de soporte independiente con un proveedor de base de datos. El Servicio de atención al cliente de Adobe asistirá en los problemas de calificación relacionados con el uso de bases de datos relacionales con AEM 6.5.
 >
->**La mayoría de las bases de datos relacionales se admiten actualmente en Level-R en AEM 6.5, que incluye criterios de compatibilidad y un programa de soporte, como se indica en la descripción de Level-R anterior.**
+>**La mayoría de las bases de datos relacionales se admiten actualmente en Level-R en AEM 6.5, que incluye criterios de soporte y un programa de soporte, como se indica en la descripción de Level-R anterior.**
 
 ### Motores de servlet / Servidores de aplicaciones {#servlet-engines-application-servers}
 
-Adobe Experience Manager puede ejecutarse como servidor independiente (el archivo JAR de inicio rápido) o como aplicación web en un servidor de aplicaciones de terceros (el archivo WAR).
+Adobe Experience Manager puede ejecutarse como servidor independiente (el archivo JAR de inicio rápido) o como aplicación web dentro de un servidor de aplicaciones de terceros (el archivo WAR).
 
 Se requiere una versión mínima de la API de servlet para Servlet Servlet 3.1
 
@@ -199,7 +200,7 @@ Se requiere una versión mínima de la API de servlet para Servlet Servlet 3.1
 |---|---|
 | **Motor Servlet integrado de arranque rápido (Jetty 9.4)** | A: Admitido |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: No admitido |
-| Envío continuo (LibertyProfile) de Application Server para IBM WebSphere con Web Perfil 7.0 e IBM JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `[2]` |
+| ENVÍO continuo (LibertyProfile) de Application Server para IBM WebSphere con Web Perfil 7.0 e IBM JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `[2]` |
 | IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: Compatibilidad restringida para nuevos contratos `[2]` |
 | JBoss EAP 7.2.x con el servidor de aplicaciones JBoss | Z: No admitido |
@@ -207,7 +208,7 @@ Se requiere una versión mínima de la API de servlet para Servlet Servlet 3.1
 | JBoss EAP 7.0.x con el servidor de aplicaciones JBoss | Z: No admitido |
 
 1. Recomendado para implementaciones con AEM Forms.
-1. El inicio de las implementaciones de AEM 6.5 en los servidores de aplicaciones pasa a la compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para los nuevos clientes viene con criterios de asistencia y un programa de asistencia, como se indica en la descripción de nivel R anterior.
+1. A partir de las implementaciones de AEM 6.5 en los servidores de aplicaciones, se cambia a Soporte restringido. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para los nuevos clientes viene con criterios de asistencia y un programa de asistencia, como se indica en la descripción de nivel R anterior.
 
 ### Sistemas operativos de servidor {#server-operating-systems}
 
@@ -224,21 +225,21 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 | Oracle Solaris 11 | Z: No admitido |
 | IBM AIX 7.2 | Z: No admitido |
 
-1. Linux Kernel 2.6, 3.x y 4.x incluye derivados de la distribución de Red Hat, incluyendo Red Hat Enterprise Linux, CentOS, Oracle Linux y Amazon Linux. Las funciones del complemento de formularios AEM solo son compatibles con CentOS 7 y Red Hat Enterprise Linux 7.
-1. AEM Forms solo se admite en Ubuntu 16.04 LTS
+1. Linux Kernel 2.6, 3.x y 4.x incluye derivados de la distribución de Red Hat, incluyendo Red Hat Enterprise Linux, CentOS, Oracle Linux y Amazon Linux. Las funciones adicionales de AEM Forms solo son compatibles con CentOS 7 y Red Hat Enterprise Linux 7.
+1. AEM Forms solo es compatible con Ubuntu 16.04 LTS
 1. Distribución de Linux admitida por Adobe Managed Services
 1. Las implementaciones de producción de Microsoft Windows son compatibles con los clientes que actualizan a 6.5 y con el uso sin producción. Las nuevas implementaciones se realizan bajo petición para AEM Sites y Assets.
-1. Los formularios AEM son compatibles con Microsoft Windows Server sin las restricciones de nivel de soporte técnico R
+1. AEM Forms es compatible con Microsoft Windows Server sin las restricciones de Support-Level R
 
 ### Entornos de informática virtual y en la nube {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager es compatible con la ejecución en una máquina virtual en entornos informáticos en la nube, como Microsoft Azure y Amazon Web Services (AWS), de acuerdo con los requisitos técnicos que se enumeran en esta página y con los términos de asistencia estándar de Adobe.
+Adobe Experience Manager es compatible con la ejecución en una máquina virtual en entornos informáticos en la nube, como Microsoft Azure y Amazon Web Services (AWS), de acuerdo con los requisitos técnicos que se enumeran en esta página y según los términos de asistencia estándar de Adobe.
 
-Adobe recomienda utilizar los servicios gestionados de Adobe para implementar AEM en Azure o AWS. Los servicios gestionados de Adobe proporcionan a los expertos experiencia y habilidades para implementar y operar AEM en estos entornos informáticos en la nube. Consulte la documentación [adicional sobre los servicios](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)administrados de Adobe.
+Adobe recomienda utilizar los servicios gestionados de Adobe para implementar AEM en Azure o AWS. Los servicios gestionados de Adobe proporcionan a los expertos experiencia y habilidades para implementar y operar AEM en estos entornos de cloud computing. Consulte la documentación [adicional sobre los servicios](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)administrados de Adobe.
 
-En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en nube, la compatibilidad de Adobe se incluirá en el entorno de computación virtual de conformidad con las especificaciones técnicas que se enumeran en esta página. Cualquier problema informado relacionado con AEM que se ejecute en cualquiera de estos entornos en la nube deberá ser reproducible independientemente de cualquier servicio en la nube específico del entorno de computación en la nube, a menos que el servicio en la nube sea específicamente compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, Azure Blob almacenamiento o AWS S3.
+En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en nube, la compatibilidad con Adobe se contendrá en el entorno de cómputo virtual de conformidad con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relacionado con AEM que se ejecute en cualquiera de estos entornos de nube deberá ser reproducible independientemente de cualquier servicio de nube específico del entorno de cloud computing, a menos que el servicio de nube sea específicamente compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, Azure Blob almacenamiento o AWS S3.
 
-Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de los servicios gestionados de Adobe, Adobe recomienda trabajar directamente con el proveedor de nube o los socios de Adobe que admiten la implementación de AEM en el entorno en la nube que elija. El proveedor o socio de nube seleccionado se encargará de las especificaciones de tamaño, el diseño y la implementación de la arquitectura. Para satisfacer sus requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
+Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de los servicios gestionados de Adobe, Adobe recomienda trabajar directamente con el proveedor de nube o los socios de Adobe que admiten la implementación de AEM en el entorno en la nube de su elección. El proveedor o socio de nube seleccionado se encargará de las especificaciones de tamaño, el diseño y la implementación de la arquitectura. Para satisfacer sus requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 
 ### Plataformas Dispatcher (Servidores Web) {#dispatcher-platforms-web-servers}
 
@@ -252,7 +253,7 @@ Se admiten los siguientes servidores web para su uso con Dispatcher versión 4.3
 | Microsoft IIS 10 (Servidor de información de Internet) | A: Admitido |
 | Microsoft IIS 8.5 (Servidor de información de Internet) | Z: No admitido |
 
-1. Los servidores Web creados sobre la base del código fuente httpd Apache tendrán el mismo nivel de soporte que la versión de httpd en la que se basa. En caso de duda, pida a Adobe que confirme el nivel de asistencia relacionado con el producto de servidor correspondiente. Casos siguientes:
+1. Los servidores Web creados sobre la base del código fuente httpd Apache tendrán el mismo nivel de soporte que la versión de httpd en la que se basa. En caso de duda, pida al Adobe que confirme el nivel de asistencia relacionado con el producto del servidor correspondiente. Casos siguientes:
 
    1. El servidor HTTP se creó utilizando únicamente las distribuciones oficiales de fuentes Apache, o
    1. El servidor HTTP se entregó como parte del sistema operativo en el que se ejecuta. Ejemplos: Servidor HTTP IBM, servidor HTTP Oracle
@@ -265,13 +266,13 @@ Se admiten los siguientes servidores web para su uso con Dispatcher versión 4.3
 
 La interfaz de usuario de Adobe Experience Manager funciona con las siguientes plataformas de cliente. Todos los exploradores se prueban con el conjunto predeterminado de complementos.
 
-La interfaz de usuario de AEM está optimizada para pantallas más grandes (normalmente portátiles y equipos de escritorio) y para el factor de forma de tablet (como Apple iPad o Microsoft Surface). No se admite el factor de formulario de teléfono.
+La interfaz de usuario de AEM está optimizada para pantallas más grandes (normalmente portátiles y equipos de escritorio) y factor de forma de tablet (como Apple iPad o Microsoft Surface). No se admite el factor de formulario de teléfono.
 
 >[!NOTE]
 >
 >**Compatibilidad con exploradores con ciclos de versión rápidos:**
 >
->Mozilla Firefox, Google Chrome y Microsoft Edge se actualizan cada pocos meses. Adobe se ha comprometido a proporcionar actualizaciones para que Adobe Experience Manager mantenga el nivel de asistencia, tal como se indica a continuación con las próximas versiones de estos navegadores.
+>Mozilla Firefox, Google Chrome y Microsoft Edge se actualizan cada pocos meses. Adobe se ha comprometido a proporcionar actualizaciones para Adobe Experience Manager a fin de mantener el nivel de asistencia que se indica a continuación con las próximas versiones de estos exploradores.
 
 <table>
  <tbody>
@@ -333,13 +334,13 @@ La interfaz de usuario de AEM está optimizada para pantallas más grandes (norm
 
 ### Exploradores admitidos para sitios web {#supported-browsers-for-websites}
 
-Por lo general, la compatibilidad del navegador con los sitios web procesados por AEM Sites depende de la implementación de las plantillas de página de AEM, del diseño y de la salida de los componentes, y por lo tanto controla a la parte que los implementa.
+Por lo general, la compatibilidad de los navegadores con los sitios web procesados por AEM Sites depende de la implementación de plantillas de página AEM, diseño y salida de componentes, y por lo tanto controla a la parte que los implementa.
 
 ### Clientes WebDAV {#webdav-clients}
 
 **Microsoft Windows 7+**
 
-Para conectarse correctamente con Microsoft Windows 7+ a una instancia de AEM que no esté segura con SSL, la autenticación básica a través de una red no segura debe estar habilitada en Windows. Esto requiere un cambio en el Registro de Windows de WebClient:
+Para conectarse correctamente con Microsoft Windows 7+ a una instancia de AEM que no está segura con SSL, la autenticación básica a través de una red no segura debe estar habilitada en Windows. Esto requiere un cambio en el Registro de Windows de WebClient:
 
 1. Busque la subclave del Registro:
 
@@ -369,9 +370,9 @@ Esto significa que cuando se necesita especificar una dirección IP, puede selec
 
 * el caso predeterminado de `localhost` se interpretará para las instalaciones de red IPv4 e IPv6, por ejemplo: `https://localhost:4502`
 
-### Requisitos para el Añada de AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
+### Requisitos para AEM Añada de Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media está desactivado de forma predeterminada. Consulte aquí para [activar Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media está deshabilitado de forma predeterminada. Consulte aquí para [activar Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Con Dynamic Media activado, se aplican los siguientes requisitos técnicos adicionales.
 
@@ -379,7 +380,7 @@ Con Dynamic Media activado, se aplican los siguientes requisitos técnicos adici
 >
 >Estos requisitos del sistema **solo** se aplican si utiliza Dynamic Media - modo híbrido; Medios dinámicos: el modo híbrido tiene un servidor de imágenes incrustado, que solo está certificado en determinados sistemas operativos.
 >
->Para los clientes de Dynamic Media que ejecutan el modo Dynamic Media - Scene7 (es decir, el modo de ejecución **dynamicmedia_scene7** ), no hay requisitos adicionales del sistema; solo los mismos requisitos del sistema que AEM. Medios dinámicos: la arquitectura de modo de Scene7 utiliza el servicio de imágenes basado en la nube y no el servicio integrado en AEM.
+>Para los clientes de Dynamic Media que ejecutan Dynamic Media - modo Scene7 (es decir, modo de ejecución **dynamicmedia_scene7** ), no hay requisitos adicionales del sistema; solo los mismos requisitos del sistema que AEM. Medios dinámicos: la arquitectura del modo Scene7 utiliza el servicio de imágenes basado en la nube y no el servicio incrustado en AEM.
 
 #### Hardware {#hardware}
 
@@ -413,7 +414,7 @@ Si utiliza Dynamic Media en Linux, deben cumplirse los siguientes requisitos pre
 >
 >La construcción de varios nodos puede resultar en agotamiento de la memoria en uno o más nodos antes de agotarse otros nodos. Cuando ocurre el agotamiento de la memoria, el núcleo puede decidir eliminar procesos (por ejemplo, el Servidor de imágenes o el Servidor de plataformas) aunque haya memoria disponible.
 >
->Por lo tanto, Adobe recomienda que si está ejecutando un sistema de este tipo, desactive NUMA con la opción de **arranque numa=off** para evitar que el núcleo mate estos procesos.
+>Por lo tanto, Adobe recomienda que si está ejecutando un sistema de este tipo, desactive NUMA usando la opción **numa=off** boot para evitar que el núcleo mate estos procesos.
 
 >[!NOTE]
 >
@@ -454,7 +455,7 @@ Para Windows x86:
    <th><p><strong>Formatos admitidos para la conversión a PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> última versión</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Versión más reciente de Acrobat 2017 Classic track</a></td>
    <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
   </tr>
   <tr>
@@ -494,28 +495,30 @@ Para Windows x86:
 >* PDF Generator solo es compatible con la versión comercial de 32 bits de Microsoft Office Professional Plus y con otro software necesario para la conversión.
 >* PDF Generator no admite Microsoft Office 365.
 >* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux.
->* Las funciones OCR PDF, Optimizar PDF y Exportar PDF solo son compatibles con Windows.
->* Una versión de Acrobat se incluye con AEM Forms para activar la funcionalidad de PDF Generator. Solo se debe acceder a la versión compilada mediante programación con AEM Forms, durante el período de vigencia de la licencia de AEM Forms, para su uso con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>* Las funciones de OCR PDF, Optimize PDF y Export PDF solo son compatibles con Windows.
+>* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad de PDF Generator. Sólo se debe acceder a la versión compilada mediante programación con AEM Forms, durante el período de vigencia de la licencia de AEM Forms, para su uso con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según su implementación ([in situ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+
    >
    >
 * El servicio Generator de PDF no admite Microsoft Windows 10.
+
 >
 
 
 
-### Requisitos para la cancelación de metadatos XMP de AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Requisitos para la escritura de metadatos de AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-Se admite y habilita la escritura de XMP en las plataformas y formatos de archivo siguientes:
+Se admite y activa la XMP de escritura en retorno para las plataformas y formatos de archivo siguientes:
 
 * **Sistemas operativos:**
 
-   * Linux (compatibilidad con aplicaciones de 32 y 32 bits en sistemas de 64 bits). Para ver los pasos para instalar bibliotecas de cliente de 32 bits, consulte [Cómo habilitar la extracción y la escritura XMP en RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)de 64 bits.
+   * Linux (compatibilidad con aplicaciones de 32 y 32 bits en sistemas de 64 bits). Para ver los pasos para instalar bibliotecas de cliente de 32 bits, consulte [Cómo habilitar XMP extracción y escritura en RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)de 64 bits.
 
    * Windows Server
    * Mac OS X (64 bits)
 
 * **Formatos** de archivo: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
 
-### Requisitos para que Recursos AEM procese recursos con gran cantidad de metadatos en Linux {#assetsonlinux}
+### Requisitos para que AEM Assets procese recursos con gran cantidad de metadatos en Linux {#assetsonlinux}
 
 El proceso XMPFilesProcessor requiere que funcione la biblioteca GLIBC_2.14. Utilice un núcleo Linux que contenga GLIBC_2.14, por ejemplo, Linux kernel versión 3.1.x. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos PSD. El uso de una versión anterior de GLIBC produce un error en los registros que comienzan con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
