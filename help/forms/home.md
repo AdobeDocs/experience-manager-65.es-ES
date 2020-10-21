@@ -4,9 +4,9 @@ seo-title: Guía de Forms de AEM 6.5
 description: Esta guía cubre todas las tareas de AEM Forms, incluida la creación, gestión, publicación y actualización de formularios digitales.
 seo-description: Abarca todas las tareas de AEM Forms, incluida la creación, gestión, publicación y actualización de formularios digitales.
 translation-type: tm+mt
-source-git-commit: 5b5937303dd543195b6c8300e6579a58e03a97d1
+source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '368'
 ht-degree: 30%
 
 ---
@@ -23,7 +23,7 @@ Esta guía cubre todas las tareas de AEM Forms, incluida la creación, gestión,
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## Guías de usuario de AEM 6.5
+## Guías de AEM 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
