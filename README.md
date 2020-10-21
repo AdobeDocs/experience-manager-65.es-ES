@@ -1,12 +1,16 @@
 ---
-source-git-commit: 2969f3b27becc7586ec1e3359cdb31f0acf88da9
+source-git-commit: f5719bed6d55aa3775d873e85e23b4de60c8de03
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '84'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 4%
 
 ---
 # Documentación de Adobe Experience Manager 6.5
+
+| EXL-PR | EXL | Vista previa | Activar | Publicado | Ayuda |
+|--- |--- |--- |--- |--- |--- |
+| [![Estado de compilación](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_pr-exl/lastBuild/) | [![Estado de compilación](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_exl/lastBuild/lastBuild) | [URL de vista previa](https://experienceleague.corp.adobe.com/docs/experience-manager-65/authoring/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Dirección URL en directo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=en) | [Guía de creación](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Este es el repositorio de la documentación de Adobe Experience Manager 6.5. Esta documentación cubre la instalación, administración, uso de creación y cómo personalizar AEM.
 
