@@ -1,8 +1,8 @@
 ---
 title: AEM Forms en grupos y privilegios OSGi
 seo-title: AEM Forms en grupos y privilegios OSGi
-description: Asignación de usuarios a los grupos para administrar los formularios AEM en OSGi
-seo-description: Asignación de usuarios a los grupos para administrar los formularios AEM en OSGi
+description: Asignar usuarios a los grupos para administrar AEM Forms en OSGi
+seo-description: Asignar usuarios a los grupos para administrar AEM Forms en OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+source-git-commit: 494551d3d886c1ed70d252a28b03cfa9d8e82a6a
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 1%
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 # AEM Forms en grupos y privilegios OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos en AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
+Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez que instale el paquete [de complementos de formularios](../../forms/using/installing-configuring-aem-forms-osgi.md)AEM, los grupos mencionados en este artículo, como el usuario de formularios y el usuario que puede utilizar formularios, estarán disponibles automáticamente para su asignación. La tabla siguiente lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Una vez que instale el paquete [de complementos de](../../forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, los grupos mencionados en este artículo, como usuarios de formularios y usuarios avanzados, estarán disponibles automáticamente para su asignación. La siguiente tabla lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
@@ -32,7 +32,7 @@ Una vez que instale el paquete [de complementos de formularios](../../forms/usin
    <td>Tareas</td> 
   </tr>
   <tr>
-   <td>form-user <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Creación, previsualización, publicación y envío de formularios adaptables</li> 
@@ -94,7 +94,7 @@ Una vez que instale el paquete [de complementos de formularios](../../forms/usin
    <td>flujos de trabajo-usuarios</td> 
    <td>
     <ul> 
-     <li>Usar aplicaciones<br /> de bandeja de entrada de AEM <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en la bandeja de entrada de AEM.</li> 
+     <li>Usar AEM aplicaciones<br /> de bandeja de entrada <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>
