@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
+source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+workflow-type: tm+mt
+source-wordcount: '544'
+ht-degree: 88%
 
 ---
 
@@ -35,10 +38,6 @@ El entorno de creación ofrece mecanismos para crear, actualizar y revisar el co
 ![chlimage_1-132](assets/chlimage_1-132.png)
 
 En el entorno de creación, las funciones de AEM están disponibles mediante dos IU. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
-
->[!NOTE]
->
->AEM y Dispatcher se utilizan para publicar esta documentación de AEM.
 
 ### Entorno de creación {#author-environment}
 
@@ -96,4 +95,4 @@ Cuando el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.
 
 #### Dispatcher {#dispatcher}
 
-A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)implementa almacenamiento en caché y equilibrio de carga.**
+A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) implementa almacenamiento en caché y equilibrio de carga.**
