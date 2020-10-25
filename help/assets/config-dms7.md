@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5944'
 ht-degree: 6%
@@ -211,7 +211,7 @@ Para configurar las propiedades de color predeterminadas para habilitar la corre
 
    Puede establecer las siguientes propiedades de corrección de color:
 
-   * **[!UICONTROL Espacio]** de color predeterminado CMYK: nombre del perfil de color CMYK predeterminado
+   * **[!UICONTROL Espacio]** de color predeterminado CMYK: nombre del perfil de color predeterminado CMYK
    * **[!UICONTROL Espacio]** de color predeterminado de escala de grises: nombre del perfil de color gris predeterminado
    * **[!UICONTROL Espacio]** de color predeterminado RGB: nombre del perfil de color RGB predeterminado
    * **[!UICONTROL Calidad]** de representación de conversión de color: especifica la interpretación. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe recomienda **[!UICONTROL relativo]** como valor predeterminado.
@@ -237,7 +237,7 @@ Puede definir qué tipos de recursos deben procesarse con Dynamic Media y person
 * Rasterizar un archivo Adobe Illustrator (.AI) o un archivo PostScript encapsulado de Adobe Photoshop (.EPS).
 * Nota: Los Perfiles de vídeo y los Perfiles de imagen se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
 
-Consulte [Carga de recursos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
 **Para configurar el procesamiento de recursos**
 
@@ -428,7 +428,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
    Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Ajustes]> Ajustes[!UICONTROL de]aplicación > Ajustes preestablecidos[!UICONTROL de conjuntos de]lotes > Valores preestablecidos[!UICONTROL de conjuntos de]** lotes.
+1. En la barra de navegación situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Ajustes] > Ajustes [!UICONTROL de] aplicación > Ajustes preestablecidos [!UICONTROL de conjuntos de] lotes > Valores preestablecidos [!UICONTROL de conjuntos de]** lotes.
 
    Tenga en cuenta que Formulario **[!UICONTROL de]** Vista, tal como se define en la esquina superior derecha de la página Detalles, es la vista predeterminada.
 
