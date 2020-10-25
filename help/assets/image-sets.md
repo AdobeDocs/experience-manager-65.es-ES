@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 18%
@@ -23,7 +23,7 @@ Los conjuntos de imágenes proporcionan a los usuarios una experiencia de visual
 
 Los conjuntos de imágenes se designan mediante una pancarta con la palabra `IMAGESET`. Además, si se publica el conjunto de imágenes, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]**, junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 Dentro del conjunto de imágenes, también puede crear muestras creando un conjunto de imágenes y agregando miniaturas.
 
@@ -33,7 +33,7 @@ Por ejemplo, supongamos que desea presentar imágenes de gorras con diferentes l
 
 >[!NOTE]
 >
->Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/managing-assets-touch-ui.md)táctil.
+>Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/manage-assets.md)táctil.
 
 ## Inicio rápido: Conjuntos de imágenes {#quick-start-image-sets}
 
@@ -83,7 +83,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
    Consulte [Vinculación de un conjunto de imágenes a una página web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/embed-code.md).
 
-Para editar conjuntos de imágenes, consulte [Edición de conjuntos de imágenes.](#editing-image-sets) Además, puede realizar vistas y editar las propiedades [del conjunto](/help/assets/managing-assets-touch-ui.md#editing-properties)de imágenes.
+Para editar conjuntos de imágenes, consulte [Edición de conjuntos de imágenes.](#editing-image-sets) Además, puede realizar vistas y editar las propiedades [del conjunto](/help/assets/manage-assets.md#editing-properties)de imágenes.
 
 Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Resolución de problemas de medios dinámicos: modo](/help/assets/troubleshoot-dms7.md#images-and-sets)Scene7.
 
@@ -91,7 +91,7 @@ Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Resolu
 
 Inicio cargando las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
-Puede cargar imágenes para los conjuntos de imágenes como lo haría con cualquier otro [recurso en Recursos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Puede cargar imágenes para los conjuntos de imágenes como lo haría con cualquier otro [recurso en Recursos](/help/assets/manage-assets.md#uploading-assets).
 
 ### Preparación de recursos de conjuntos de imágenes para la carga {#preparing-image-set-assets-for-upload}
 
