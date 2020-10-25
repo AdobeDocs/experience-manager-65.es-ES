@@ -3,7 +3,7 @@ title: Introducción a [!DNL Adobe Experience Manager Assets].
 description: Conozca qué es la administración de recursos digitales, sus casos de uso y [!DNL Adobe Experience Manager Asset] las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 36%
@@ -67,7 +67,7 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 * **Representaciones**: Una representación es la representación binaria de un recurso. [!DNL Assets] siempre tiene una representación principal: la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
 
-* **Versiones**: Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. See [versioning in Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versiones**: Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. See [versioning in Assets](manage-assets.md#asset-versioning).
 
 * **Subrecursos**: Los subrecursos son recursos que conforman un recurso, por ejemplo, capas en un archivo o páginas de un [!DNL Adobe Photoshop] archivo PDF. In [!DNL Assets], you can manage sub-assets as you would assets.
 
