@@ -6,7 +6,7 @@ user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 39%
@@ -113,7 +113,7 @@ ht-degree: 39%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integración](aem-cc-integration-best-practices.md)
    + [Integrar con [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management en activos](drm.md)
-   + [Usar paquete de demostración para perspectivas de recursos](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Usar paquete de demostración para perspectivas de recursos](use-demo-package-for-asset-insights.md)
    + [Prácticas recomendadas sobre el formato del archivo de recursos](assets-file-format-best-practices.md)
    + [Prácticas recomendadas para supervisar recursos](assets-monitoring-best-practices.md)
    + [Asistencia Camera Raw](camera-raw.md)
@@ -139,21 +139,21 @@ ht-degree: 39%
    + [Fragmentos de contenido: Markdown](content-fragments/content-fragments-markdown.md)
    + [Creación de proyectos de traducción para fragmentos de contenido](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
-   + [Administre recursos digitales](managing-assets-touch-ui.md)
-   + [Administrar colecciones](managing-collections-touch-ui.md)
+   + [Administre recursos digitales](manage-assets.md)
+   + [Administrar colecciones](manage-collections.md)
    + [Habilitar detección de duplicado](duplicate-detection.md)
    + [Organización de recursos digitales](organize-assets.md)
    + [Administrar recursos de vídeo](managing-video-assets.md)
    + [Creación de proyectos de traducción](translation-projects.md)
    + [Preparación de recursos para su traducción](preparing-assets-for-translation.md)
    + [Descargar recursos de Experience Manager](download-assets-from-aem.md)
-   + [Lightbox](touch-ui-light-box.md)
-   + [Perspectivas de recursos](touch-ui-asset-insights.md)
-   + [Activar perspectivas de recursos mediante DTM](touch-ui-using-dtm-for-asset-insights.md)
-   + [Configurar perspectivas de recursos](touch-ui-configuring-asset-insights.md)
+   + [Lightbox](light-box.md)
+   + [Perspectivas de recursos](asset-insights.md)
+   + [Activar perspectivas de recursos mediante DTM](use-dtm-for-asset-insights.md)
+   + [Configurar perspectivas de recursos](configure-asset-insights.md)
    + [Desproteger y proteger recursos](check-out-and-submit-assets.md)
    + [Aplicar servicios de traducción en la nube a las carpetas](transition-cloud-services.md)
-   + [Usar el rastreador de páginas y código incrustado en páginas web](touch-ui-using-page-tracker.md)
+   + [Usar el rastreador de páginas y código incrustado en páginas web](use-page-tracker.md)
    + [Administrar recursos compuestos](managing-linked-subassets.md)
    + [Activos relacionados](related-assets.md)
    + [Uso compartido de carpetas privadas](private-folder.md)
