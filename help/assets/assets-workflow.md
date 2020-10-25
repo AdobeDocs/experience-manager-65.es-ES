@@ -3,7 +3,7 @@ title: Procesar recursos con flujos de trabajo
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Para ver los distintos modelos de flujo de trabajo disponibles de forma predeter
 
 ![Parte del flujo de trabajo predeterminado](assets/aem-default-workflows.png)
 
-*Figura: Algunos de los flujos de trabajo predeterminados disponibles en[!DNL Experience Manager].*
+*Figura: Algunos de los flujos de trabajo predeterminados disponibles en [!DNL Experience Manager].*
 
 ## Aplicar flujos de trabajo para procesar recursos {#applying-workflows-to-assets}
 
@@ -84,7 +84,7 @@ El procedimiento para aplicar un flujo de trabajo a varias carpetas es similar a
 
 ## Aplicación de un flujo de trabajo a una colección {#applying-a-workflow-to-a-collection}
 
-Consulte [Aplicación de un flujo de trabajo a una colección](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+Consulte [Aplicación de un flujo de trabajo a una colección](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Inicio automático de un flujo de trabajo para procesar los recursos de forma condicional {#auto-execute-workflow-on-some-assets}
 
