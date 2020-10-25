@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +38,7 @@ Una anotación coloca un marcador o una nota adhesiva de colores en la página. 
 
 >[!NOTE]
 >
->Según sus necesidades, también puede desarrollar un flujo de trabajo para enviar notificaciones cuando se agregan, actualicen o eliminen anotaciones.
+>En función de sus necesidades, también puede desarrollar un flujo de trabajo para enviar notificaciones cuando estas se añadan, actualicen o eliminen.
 
 ## Anotaciones {#annotations}
 
@@ -49,8 +52,9 @@ Se utiliza un modo [especial](/help/sites-authoring/author-environment-tools.md#
 >
 >Puede realizar anotaciones en distintos recursos:
 >
->* [Anotación de recursos](/help/assets/managing-assets-touch-ui.md#annotating)
+>* [Anotación de recursos](/help/assets/manage-assets.md#annotating)
 >* [Anotación de recursos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
+
 >
 
 
@@ -84,13 +88,15 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
    * Especificar el texto de la anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
 
-      El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. La línea del boceto refleja el color de la anotación y puede ser una flecha, un círculo o un óvalo.
+      El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Elegir o cambiar el color:
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * Eliminar la anotación.
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se mostrará una vista truncada (la primara palabra) de la anotación, junto con los bocetos, si los hay:
@@ -113,9 +119,9 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
 >[!NOTE]
 >
->Las anotaciones no se pueden agregar a una página que haya sido bloqueada por otro usuario.
+>Las anotaciones no se pueden agregar a una página que otro usuario haya bloqueado.
 
-### Indicador de anotación {#annotation-indicator}
+### Indicador de anotaciones {#annotation-indicator}
 
 Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esquina superior derecha de la barra de herramientas mostrará el número de anotaciones de la página actual. Este distintivo sustituye al icono Anotaciones predeterminado, y además funciona como vínculo rápido que le permite acceder al modo de anotación y salir de él:
 
