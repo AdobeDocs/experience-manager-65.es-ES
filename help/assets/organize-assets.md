@@ -3,7 +3,7 @@ title: Organizar sus recursos digitales
 description: Organice sus recursos digitales, imágenes, archivos, carpetas, etc. mediante Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Todos los recursos digitales, los metadatos y el contenido de los documentos de 
 
 ## Organización de recursos en carpetas {#organize-using-folders}
 
-La forma más básica de organizar los recursos es guardarlos en carpetas. Es similar a organizar archivos en carpetas en nuestro sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Gestión de recursos](managing-assets-touch-ui.md). La forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos dentro de estas carpetas puede tener un impacto significativo en la forma en que se procesan dichos recursos. Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con buenas prácticas de metadatos, puede aprovechar al máximo el repositorio de recursos digitales.
+La forma más básica de organizar los recursos es guardarlos en carpetas. Es similar a organizar archivos en carpetas en nuestro sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Gestión de recursos](manage-assets.md). La forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos dentro de estas carpetas puede tener un impacto significativo en la forma en que se procesan dichos recursos. Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con buenas prácticas de metadatos, puede aprovechar al máximo el repositorio de recursos digitales.
 
 * En la mayoría de los casos, el repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de metadatos, la estructura de carpetas y la nominación de archivos al principio del ciclo de creación de contenido.
 * Utilice las carpetas únicamente para imponer una estructura de almacenamiento uniforme a los recursos digitales. Esta coherencia ayuda a procesar y administrar mejor los recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar [perfiles adecuados para el procesamiento](processing-profiles.md)de recursos:
@@ -53,7 +53,7 @@ Para obtener más información, consulte los siguientes artículos:
 
 Con las colecciones de recursos en [!DNL Experience Manager Assets], puede optimizar la capacidad de crear, editar y compartir recursos entre usuarios. Cree varios tipos de colecciones en función de su uso, incluidas las colecciones que contienen una lista de referencia estática de recursos, carpetas y colecciones, así como las colecciones que extraen recursos en función de criterios de búsqueda.  También puede crear colecciones con recursos de distintas ubicaciones y compartirlas con varios usuarios con diferentes niveles de acceso, visualización y edición de privilegios.
 
-Para obtener más información, consulte [Gestión de colecciones](managing-collections-touch-ui.md)
+Para obtener más información, consulte [Gestión de colecciones](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
