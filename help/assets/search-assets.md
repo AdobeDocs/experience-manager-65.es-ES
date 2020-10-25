@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 5%
@@ -35,7 +35,7 @@ Busque recursos utilizando el campo Omniture en la parte superior de la interfaz
 
 Utilice el panel **[!UICONTROL Filtros]** para limitar la búsqueda filtrando los resultados de la búsqueda en función de las distintas opciones (predicados), como, por ejemplo, el tipo de archivo, el tamaño de archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Los administradores pueden personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas de búsqueda. El filtro Tipo [!UICONTROL de] archivo del panel [!UICONTROL Filtros] tiene casillas de verificación de varios estados. Por lo tanto, a menos que seleccione todos los predicados anidados (o formatos), las casillas de verificación de primer nivel se marcan parcialmente.
 
-[!DNL Experience Manager] la función de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] la función de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
 
 ## Comprender la interfaz de búsqueda {#searchui}
 
@@ -222,7 +222,7 @@ Los autores pueden utilizar Content Finder para buscar en el repositorio de DAM 
 
 ### Buscar colecciones {#collections}
 
-[!DNL Experience Manager] la función de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] la función de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
 
 ## Asset selector {#assetpicker}
 
@@ -374,7 +374,7 @@ Para mejorar la velocidad de detección, [!DNL Experience Manager Assets] oferta
 
 ### Extraer texto al cargar recursos {#extracttextupload}
 
-Puede configurar [!DNL Experience Manager] para extraer el texto de los recursos cuando los usuarios cargan recursos, como archivos PSD o PDF. [!DNL Experience Manager] indexa el texto extraído y ayuda a los usuarios a buscar estos recursos en función del texto extraído. Consulte [Carga de recursos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Puede configurar [!DNL Experience Manager] para extraer el texto de los recursos cuando los usuarios cargan recursos, como archivos PSD o PDF. [!DNL Experience Manager] indexa el texto extraído y ayuda a los usuarios a buscar estos recursos en función del texto extraído. Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
 Si la extracción de texto consume demasiados recursos para la implementación, considere [desactivar la extracción](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)de texto.
 
@@ -447,7 +447,7 @@ Una colección es un conjunto ordenado de recursos que puede incluir recursos de
 * Una lista de referencia estática de recursos, carpetas y otras colecciones.
 * Lista dinámica (colección inteligente) que rellena los recursos de la colección en función de criterios de búsqueda.
 
-Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/managing-collections-touch-ui.md).
+Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/manage-collections.md).
 
 ## Solución de problemas y resultados de búsqueda inesperados {#troubleshoot-unexpected-search-results-and-issues}
 
