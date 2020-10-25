@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '6050'
 ht-degree: 4%
@@ -223,7 +223,7 @@ Puede omitir esta tarea y continuar con la siguiente si desea utilizar cualquier
 
 Cuando se hace clic en una miniatura en el entorno de creación, aparece una previsualización del cuadro de diálogo Vista rápida.
 
-![chlimage_1-21](assets/chlimage_1-127.png)
+![chlimage_1-29](assets/chlimage_1-127.png)
 
 Si lo desea, puede crear su propio ajuste preestablecido de visor de vídeo interactivo personalizado. Puede determinar, entre otras cosas, el estilo del reproductor de vídeo, las miniaturas interactivas y la vista de cuadrícula de miniaturas que aparece al final del vídeo.
 
@@ -237,14 +237,14 @@ Consulte [Creación de un nuevo ajuste preestablecido](/help/assets/managing-vie
 
 Si ya ha cargado los recursos de vídeo y miniaturas, continúe [Añadiendo la interactividad en el vídeo](#adding-interactivity-to-your-video).
 
-Si ha cargado los vídeos o las imágenes incorrectos o desea eliminar los vídeos o las imágenes cargados que ya no necesita, consulte [Eliminación de recursos](/help/assets/managing-assets-touch-ui.md#deleting-assets).
+Si ha cargado los vídeos o las imágenes incorrectos o desea eliminar los vídeos o las imágenes cargados que ya no necesita, consulte [Eliminación de recursos](/help/assets/manage-assets.md#deleting-assets).
 
 Para cargar un vídeo y sus recursos de miniaturas asociados:
 
 1. Cargue el vídeo y los recursos de miniaturas asociados a la carpeta o carpetas que desee.
 
-   See [Uploading assets](/help/assets/managing-assets-touch-ui.md).
-Consulte [Carga de recursos mediante la programación](/help/assets/managing-assets-touch-ui.md)de trabajos de FTP.
+   See [Uploading assets](/help/assets/manage-assets.md).
+Consulte [Carga de recursos mediante la programación](/help/assets/manage-assets.md)de trabajos de FTP.
 
    Ahora agregue interactividad al vídeo.
 
