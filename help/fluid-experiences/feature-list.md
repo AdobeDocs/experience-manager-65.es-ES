@@ -1,9 +1,9 @@
 ---
-title: Lista de funciones de AEM Fluid Experiences
+title: lista de funciones de experiencias fluidas de AEM
 description: Lista de funciones de experiencias fluidas
 index: n
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 33abb544c5f12f7d7a44fc326f07fe9b53ebc9d3
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 8%
@@ -11,36 +11,36 @@ ht-degree: 8%
 ---
 
 
-# Lista de funciones de AEM Fluid Experiences{#aem-fluid-experiences-feature-list}
+# lista de funciones de experiencias fluidas de AEM{#aem-fluid-experiences-feature-list}
 
-Las experiencias fluidas de Adobe Experience Manager se basan en los potentes conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para el envío de contenido sin encabezado.
+Adobe Experience Manager Fluid Experiences se basa en los potentes conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para el envío de contenido sin encabezado.
 
-Las experiencias fluidas de AEM se diferencian de las AEM clásicas en que solo se aborda el caso de uso de envío sin encabezado. La creación y el envío de contenido con mucho éxito, así como el sólido soporte de AEM para casos de uso híbrido, están disponibles con las soluciones [completas de AEM Sites, Recursos y Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Experiencias fluidas se diferencia de la AEM clásica en que sólo se aborda el caso de uso del envío sin cabeza. Con las soluciones [completas de AEM Sites, Recursos y Medios dinámicos, se ofrece una gran compatibilidad con la creación de contenido y el envío de contenido, así como AEM soporte sólido para casos de uso híbrido.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
-Las siguientes tablas definen las funciones de las experiencias fluidas de AEM y vinculan la documentación de asistencia pertinente.
+Las siguientes tablas definen las características de AEM Experiencias fluidas y enlazan a la documentación de soporte pertinente.
 
 * [Repositorio](#repository-features)
 * [Acceso, API y Envío](#access-api-and-delivery-features)
 * [Administración e integraciones](#admin-and-integration-features)
-* [Analytics y Personalización](#analytics-and-personalization)
+* [Análisis y personalización](#analytics-and-personalization)
 
 >[!NOTE]
 >
->Experiencias fluidas de AEM es un subconjunto de la funcionalidad de AEM. Las funciones vinculadas en estas tablas pueden incluir funciones adicionales incluidas en AEM, pero no en las experiencias fluidas de AEM.
+>AEM Experiencias fluidas es un subconjunto de AEM funcionalidad. Las funciones vinculadas en estas tablas pueden incluir funciones adicionales incluidas en AEM, pero no en AEM Experiencias fluidas.
 
 ## Características del repositorio {#repository-features}
 
 |  |
 |---|
-| [Repositorio de contenido](/help/assets/managing-assets-touch-ui.md) |
+| [Repositorio de contenido](/help/assets/manage-assets.md) |
 | [Tipos de recursos](/help/assets/assets-formats.md) |
 | [Representaciones de imágenes](/help/assets/image-presets.md) |
 | [Gestión de etiquetas y metadatos](/help/assets/metadata.md) |
-| [Buscar](/help/assets/managing-assets-touch-ui.md) |
-| [Colecciones](/help/assets/managing-collections-touch-ui.md) y [Lightbox](/help/assets/touch-ui-light-box.md) |
+| [Buscar](/help/assets/manage-assets.md) |
+| [Colecciones](/help/assets/manage-assets.md) y [Lightbox](/help/assets/light-box.md) |
 | [Perfiles](/help/assets/processing-profiles.md) |
-| [Control de versiones](/help/assets/managing-assets-touch-ui.md) |
-| [Detección de Duplicados](/help/assets/duplicate-detection.md) |
+| [Control de versiones](/help/assets/manage-assets.md) |
+| [Detección de duplicados](/help/assets/duplicate-detection.md) |
 | [Etiquetas inteligentes](/help/assets/enhanced-smart-tags.md) |
 
 ## Funciones de acceso, API y Envío {#access-api-and-delivery-features}
@@ -72,18 +72,18 @@ Las siguientes tablas definen las funciones de las experiencias fluidas de AEM y
 | [Flujos de trabajo](/help/sites-administering/workflows-starting.md) |
 | Conectividad (servicios de nube) |
 
-## Analytics y Personalización {#analytics-and-personalization}
+## Análisis y personalización {#analytics-and-personalization}
 
 |  |
 |---|
-| [sistema de informes de recursos](/help/assets/asset-reports.md) |
-| Perspectivas mejoradas con tecnología de Adobe Analytics |
+| [Sistema de informes de recursos](/help/assets/asset-reports.md) |
+| Perspectivas mejoradas con Adobe Analytics |
 | Perspectivas mejoradas con Adobe Target |
 
 ## Más información {#learn-more}
 
 * [Experiencias fluidas para casos de uso sin encabezado](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
-* [Servicio de contenido de AEM: ¿Qué, por qué y cómo?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
+* [AEM Content Service: ¿Qué, por qué y cómo?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Uso de Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
 * [Desarrollo de aplicaciones móviles](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/developing/developing-content-services.html)
 * [Preguntas más frecuentes sobre acceso de terceros](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
