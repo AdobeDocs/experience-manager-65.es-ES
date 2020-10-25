@@ -1,5 +1,5 @@
 ---
-title: Trabajar con Dynamic Media
+title: Trabajo con Dynamic Media
 description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 21%
@@ -16,7 +16,7 @@ ht-degree: 21%
 ---
 
 
-# Trabajar con Dynamic Media {#working-with-dynamic-media}
+# Trabajo con Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
@@ -24,13 +24,13 @@ Dynamic Media proporciona experiencias de visualización interactivas, que inclu
 
 >[!NOTE]
 >
->Hay un artículo de la comunidad disponible en [Trabajo con Adobe Experience Manager y Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>Hay un artículo de la comunidad disponible en [Uso de Adobe Experience Manager y Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
 
 ## Qué puede hacer con Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permite administrar los recursos antes de publicarlos. El trabajo con recursos en general se trata en detalle en [Uso de recursos](managing-assets-touch-ui.md)digitales. Los temas generales incluyen la carga, descarga, edición y publicación de recursos; visualización y edición de propiedades y búsqueda de recursos.
+Dynamic Media permite administrar los recursos antes de publicarlos. El trabajo con recursos en general se trata en detalle en [Uso de recursos](manage-assets.md)digitales. Los temas generales incluyen la carga, descarga, edición y publicación de recursos; visualización y edición de propiedades y búsqueda de recursos.
 
-Las funciones solo para Dynamic Media incluyen lo siguiente:
+Las funciones solo de Dynamic Media incluyen lo siguiente:
 
 * [Banner de carrusel](carousel-banners.md)
 * [Conjuntos de imágenes](image-sets.md)
@@ -43,17 +43,17 @@ Las funciones solo para Dynamic Media incluyen lo siguiente:
 * [Vídeo](video.md)
 * [Envío de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
 * [Administración de recursos](managing-assets.md)
-* [Usar las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
+* [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
 
 Consulte también [Configuración de Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Para comprender las diferencias entre el uso de Dynamic Media y la integración de Dynamic Media Classic con AEM, consulte Integración de [Dynamic Media Classic en comparación con Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Para comprender las diferencias entre el uso de Dynamic Media y la integración de Dynamic Media Classic con AEM, consulte Integración [de Dynamic Media Classic en comparación con Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
-## Dynamic Media habilitado frente a Dynamic Media deshabilitado {#dynamic-media-on-versus-dynamic-media-off}
+## Medios dinámicos activados frente a Medios dinámicos deshabilitados {#dynamic-media-on-versus-dynamic-media-off}
 
-Puede saber si Dynamic Media está habilitado (activado) según las características siguientes:
+Puede saber si Dynamic Media está habilitado (activado) por las siguientes características:
 
 * Las representaciones dinámicas están disponibles al descargar o previsualizar recursos.
 * Hay disponibles conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos.
@@ -63,13 +63,13 @@ Al hacer clic en un recurso de imagen, la vista del recurso es diferente con Dyn
 
 ### Representaciones dinámicas {#dynamic-renditions}
 
-Las representaciones dinámicas, como los ajustes preestablecidos de imagen y visor (en **[!UICONTROL Dinámico]**), están disponibles cuando Dynamic Media está activado.
+Las representaciones dinámicas, como los ajustes preestablecidos de imagen y visor (en **[!UICONTROL Dinámico]**), están disponibles cuando se habilita Dynamic Media.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
 ### Conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos {#image-sets-spins-sets-mixed-media-sets}
 
-Los conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos están disponibles si Dynamic Media está activado.
+Los conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos están disponibles si está activado Dynamic Media.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
