@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 11%
@@ -28,7 +28,7 @@ Puede vista y edición de los metadatos (propiedades) de los fragmentos de conte
 1. En la consola **Recursos** , navegue a la ubicación del fragmento de contenido.
 1. O bien:
 
-   * Seleccione Propiedades [**de **Vista para abrir los cuadros de diálogo](/help/assets/managing-assets-touch-ui.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
+   * Seleccione Propiedades [**de** Vista para abrir los cuadros de diálogo](/help/assets/manage-assets.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
    * Abra el fragmento de [contenido para editar](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)y, a continuación, seleccione **Metadatos** en el panel lateral.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
