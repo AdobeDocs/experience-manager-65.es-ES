@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 28%
@@ -27,7 +27,7 @@ Los conjuntos de medios mixtos se designan mediante un banner con la palabra **[
 
 >[!NOTE]
 >
->Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/managing-assets-touch-ui.md)táctil.
+>Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/manage-assets.md)táctil.
 
 ## Inicio rápido: Conjuntos de medios mixtos {#quick-start-mixed-media-sets}
 
@@ -67,7 +67,7 @@ Para ayudarle en el uso inicial de los conjuntos de medios mixtos, siga estos pa
 
    Consulte [Vinculación de un conjunto de medios mixtos a una página web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/embed-code.md).
 
-Si lo necesita, puede editar los conjuntos [de medios](#editing-mixed-media-sets)mixtos. Además, puede realizar vistas y modificar propiedades [de conjuntos de medios](/help/assets/managing-assets-touch-ui.md#editing-properties)mixtos.
+Si lo necesita, puede editar los conjuntos [de medios](#editing-mixed-media-sets)mixtos. Además, puede realizar vistas y modificar propiedades [de conjuntos de medios](/help/assets/manage-assets.md#editing-properties)mixtos.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
 ## Edición de conjuntos de medios mixtos {#editing-mixed-media-sets}
 
-Puede realizar varias tareas de edición de recursos en conjuntos de medios mixtos directamente en la interfaz de usuario, [como lo haría con cualquier recurso de Recursos](/help/assets/managing-assets-touch-ui.md). También puede realizar las siguientes acciones en los conjuntos de medios mixtos:
+Puede realizar varias tareas de edición de recursos en conjuntos de medios mixtos directamente en la interfaz de usuario, [como lo haría con cualquier recurso de Recursos](/help/assets/manage-assets.md). También puede realizar las siguientes acciones en los conjuntos de medios mixtos:
 
 * Añada recursos al conjunto de medios mixtos.
 * Vuelva a ordenar los recursos en el conjunto de medios mixtos.
