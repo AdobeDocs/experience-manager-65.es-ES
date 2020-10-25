@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '4006'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 El flujo de trabajo de Correspondencia Management consta de cuatro fases:
 
 1. Creación de plantillas
-1. Creación de fragmentos de Documento
+1. Creación de fragmentos de documento
 1. Creación de cartas
 1. Postprocesamiento
 
@@ -46,9 +49,9 @@ En este flujo de trabajo:
 
 En lugar de crear una plantilla de diseño desde cero, puede elegir modificar y reutilizar las plantillas que proporciona la Administración de correspondencia. Puede utilizar designer para modificar rápidamente la marca y los campos de datos y contenido de las plantillas para adaptarlos a las necesidades de su organización. Para obtener más información sobre las plantillas de Gestión de correspondencia, consulte Plantillas de cartas [de referencia](/help/forms/using/reference-cm-layout-templates.md).
 
-### Creación de fragmentos de Documento {#document-fragment-creation}
+### Creación de fragmentos de documento {#document-fragment-creation}
 
-Los fragmentos de Documento son partes reutilizables\componentes de una correspondencia que permite componer letras\correspondencia.
+Los fragmentos de documento son partes reutilizables\componentes de una correspondencia que permite componer letras\correspondencia.
 
 Los fragmentos de documento son de los siguientes tipos:
 
@@ -92,7 +95,7 @@ La correspondencia final se puede enviar a un proceso de postprocesamiento. La c
 1. Presentado para su examen y aprobación.
 1. Garantizado mediante la aplicación de firmas digitales, certificación, cifrado o administración de derechos.
 1. Se convierte en un documento PDF en el que se pueden realizar búsquedas y que contiene todos los metadatos necesarios para archivar y auditar.
-1. Se incluye en una cartera PDF que incluye más documentos, como material de marketing. La cartera PDF se puede enviar como correspondencia final.
+1. Se incluye en un Portfolio PDF que incluye más documentos, como material de marketing. El Portfolio PDF se puede enviar como la correspondencia final.
 
 ### Arquitectura de la solución Administración de correspondencia {#correspondence-management-solution-architecture}
 
@@ -131,12 +134,12 @@ Este documento de Aviso de Cancelación es un ejemplo de una correspondencia tí
   <tr> 
    <td>¿Datos<br /> basados en lógica personalizada?</td> 
    <td>En el caso de algunas cartas, como una carta para solicitar más información sobre una reclamación, los usuarios como el ajuste de reclamaciones pueden agregar contenido de texto personalizado.</td> 
-   <td>Fragmento de Documento<br /> de tipo Condición </td> 
+   <td>Fragmento de documento<br /> de tipo Condición </td> 
   </tr> 
   <tr> 
    <td>Imágenes almacenadas<br /> del repositorio central</td> 
    <td>Imágenes como logotipos e imágenes de firma. Imágenes como logotipos corporativos aparecerían en la mayor parte o en toda la correspondencia. Las imágenes de firma son específicas de la carta y de la persona en cuyo nombre se envía la carta.</td> 
-   <td><p>Imágenes almacenadas en recursos de AEM (DAM)<br /> </p> <p> </p> </td> 
+   <td><p>Imágenes almacenadas en AEM recursos (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -225,7 +228,7 @@ Esta tabla proporciona algunas directrices que puede utilizar para clasificar la
 
 Primero necesita lo siguiente para crear una correspondencia:
 
-* [Paquete](compatibility-package.md)de compatibilidad. Instale el paquete de compatibilidad para vista de la opción **Cartas** en la página **Formularios** .
+* [Paquete](compatibility-package.md)de compatibilidad. Instale el paquete de compatibilidad para vista de la opción **Cartas** en la página de **Forms** .
 * Letra XDP ([diseño](/help/forms/using/document-fragments.md)).
 * Otros XDP (fragmentos[de](document-fragments.md#document-fragments)diseño) que forman partes de la letra. Los XDP\Diseños se crean en [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
 * El diccionario [de datos](/help/forms/using/data-dictionary.md) correspondiente (opcional).
@@ -236,9 +239,9 @@ Primero necesita lo siguiente para crear una correspondencia:
 
 ### Seleccione un diseño e introduzca las propiedades de la letra {#select-a-layout-and-enter-the-letter-properties}
 
-1. Seleccione **Formularios** > **Letras**.
+1. Seleccione **Forms** > **Letras**.
 
-1. Seleccione **Crear > Carta**. La Administración de correspondencia muestra los diseños disponibles (XDP). Estos diseños proceden de Designer. Los diseños también incluyen las plantillas de letras que la Administración de correspondencia proporciona de forma predeterminada. Para obtener más información sobre las plantillas de Gestión de correspondencia, consulte Plantillas de cartas [de referencia](/help/forms/using/reference-cm-layout-templates.md). Para añadir sus propios diseños, cree archivos XDP (layout) en Designer y, a continuación, [cárguelos en AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Seleccione **Crear > Carta**. La Administración de correspondencia muestra los diseños disponibles (XDP). Estos diseños proceden de Designer. Los diseños también incluyen las plantillas de letras que la Administración de correspondencia proporciona de forma predeterminada. Para obtener más información sobre las plantillas de Gestión de correspondencia, consulte Plantillas de cartas [de referencia](/help/forms/using/reference-cm-layout-templates.md). Para añadir sus propios diseños, cree archivos XDP (layout) en Designer y, a continuación, [cárguelos a AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![create-letter](assets/create-letter.png)
 
@@ -254,6 +257,7 @@ Primero necesita lo siguiente para crear una correspondencia:
    * **Diccionario de datos (opcional)**: El diccionario de datos se puede asociar a la correspondencia. Los recursos que inserte posteriormente en esta correspondencia deben tener el mismo diccionario de datos que el que elija para la correspondencia aquí o ningún diccionario de datos.
    * **Etiquetas (opcional):** Seleccione las etiquetas que desee aplicar a la correspondencia. También puede escribir un nombre de etiqueta nuevo o personalizado y pulsar Intro para crearlo.
    * **Proceso posterior (opcional):** Seleccione el proceso de publicación que se aplicará a la plantilla de letras. Existen procesos de anuncios predeterminados y los que ha creado con AEM, como correo electrónico e impresión.
+
    ![Propiedades de correspondencia](assets/createcorrespondenceproperties.png)
 
 1. El sistema muestra un mensaje: &quot;Carta creada correctamente&quot;. (en el mensaje de alerta) Toque **Abrir** para configurar los módulos de datos y los fragmentos de diseño que contiene. O toque **Listo** para volver a la página anterior.
@@ -274,7 +278,7 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 
    ![Inserción de módulos de datos y fragmentos de diseño](assets/insertdmandlf.png)
 
-1. Seleccione Módulo de datos o Fragmento de diseño para estas opciones en cada uno de los subformularios y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño permite insertar en él módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
+1. Seleccione Módulo de datos o Fragmento de diseño para estas opciones en cada subformulario y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño permite insertar en él módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
 
    ![nestedlf](assets/nestedlf.png)
 
@@ -284,9 +288,10 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
    1. **Editable**: Cuando se selecciona esta opción, el contenido se puede editar en la interfaz de usuario Crear correspondencia. Marque el contenido como editable solo si requiere que el usuario comercial (como un ajuste de reclamaciones) lo modifique.
    1. **Obligatorio**: Cuando se selecciona esta opción, el contenido se requiere en la interfaz de usuario Crear correspondencia.
    1. **Seleccionado**: Cuando se selecciona esta opción, el contenido se selecciona de forma predeterminada en la interfaz de usuario Crear correspondencia.
-   1. **Sangría**: Aumente o disminuya la sangría del módulo/contenido de la letra. La sangría se especifica en términos de niveles, comenzando por 0. Cada nivel sangra 36 puntos. Para obtener más información sobre la personalización de formularios, consulte Configuraciones **[!UICONTROL de administración de]** correspondencia en el flujo de trabajo [de](submit-letter-topostprocess.md#formsworkflow)formularios.
+   1. **Sangría**: Aumente o disminuya la sangría del módulo/contenido de la letra. La sangría se especifica en términos de niveles, comenzando por 0. Cada nivel sangra 36 puntos. Para obtener más información sobre la personalización de formularios, consulte Configuraciones **[!UICONTROL de administración de]** correspondencia en el flujo de trabajo [de](submit-letter-topostprocess.md#formsworkflow)Forms.
    1. **Salto de página antes**: Si establece la opción Salto de página antes de que se active, el contenido del módulo ESTA siempre se mostrará en una página nueva.
    1. **Salto de página después** de: Si establece el valor de Salto de página después de para un módulo específico, el contenido del módulo SIGUIENTE siempre se muestra en una página nueva.
+
    ![Módulos de datos y fragmentos de diseño insertados](assets/insertdmandlf2.png)
 
 1. Para editar un módulo, toque el icono Editar junto a él. Después de editar los módulos, toque **Guardar**.
@@ -295,11 +300,12 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 
    1. **Permitir texto** gratuito: Si Permitir texto libre está activado, el usuario puede agregar texto en línea en la vista CCR. En la vista de CCR, se activa una acción &#39;T&#39; para aquellas áreas de destinatario que tienen activada la opción Permitir texto libre y cuando el usuario la toca, se solicita el nombre y la descripción del texto y, al tocar Aceptar, se abre el texto en modo de edición, donde el usuario puede agregar texto. Esto funciona como otros módulos de texto
    1. **Orden** de bloqueo: Bloquea el orden de los subformularios en la letra. El autor no puede reordenar los subformularios o componentes al crear la letra.
+
    En esta página, también puede hacer lo siguiente para cada uno de los recursos de los subformularios:
 
    1. **Cambiar el orden de los recursos**: arrastre y suelte un recurso manteniendo el icono de reordenación de un recurso ( ![arrastrar](assets/dragndrop.png)).
    1. **Eliminar recursos**: Toque el icono Eliminar situado junto a un recurso para eliminarlo.
-   1. **Recursos** de Previsualización: Puntee en el icono de mostrar previsualización ( ![vista previa](assets/showpreview.png)) situado junto a un recurso.
+   1. **Recursos** de previsualización: Puntee en el icono de mostrar previsualización ( ![vista previa](assets/showpreview.png)) situado junto a un recurso.
 
 
 1. Puntee **Siguiente**.
@@ -309,6 +315,7 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 
    * Los elementos de **campo** se pueden vincular a un literal, a un elemento de diccionario de datos, a un recurso o a un valor especificado por el usuario. También puede ignorar un elemento de campo enlazándolo a la opción Ignorar.
    * Los elementos **variables** se pueden vincular a un literal, un elemento de diccionario de datos, un campo, una variable, un recurso o un valor especificado por el usuario.
+
    A continuación se muestran algunos campos principales en la vinculación:
 
    * **Multilínea**: Puede especificar si la entrada de datos de un campo o variable es multilínea. Si selecciona esta opción, el cuadro de entrada del campo o la variable se muestra como cuadro de entrada multilínea en la Vista de edición de datos. El campo o la variable también se muestra como multilínea en las vistas de datos y contenido en la interfaz de usuario Crear correspondencia. El campo de entrada multilínea es similar al campo para introducir un comentario en un TextModule. La opción multilínea solo está disponible para campos y variables con tipo de vínculo Usuario o Elementos del diccionario de datos no protegidos.
@@ -316,6 +323,7 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 
    * **Validación** de campo/variable: Para proporcionar una validación mejorada del valor de un campo o variable, puede asignar un validador al campo o variable. Esta opción solo está disponible para campos y variables con tipo de vínculo Usuario o Elementos del diccionario de datos no protegidos.
    * **Rótulo** e **información sobre herramientas**: Rótulo es la etiqueta del campo que aparece antes del campo en la interfaz de usuario de CCR. Esta opción está disponible para campos y variables con tipo de vínculo Usuario o Elementos del diccionario de datos no protegidos.
+
    A continuación se indican los tipos de validación que puede utilizar para los campos:
 
    * **Validador** de cadenas: Utilice el validador de cadenas para especificar una longitud mínima y máxima de la cadena introducida en el campo o la variable. Cuando cree un validador de cadenas, asegúrese de especificar parámetros de validación válidos. Introduzca una longitud válida para los valores mínimo y máximo. Para el validador de cadenas, puede especificar la longitud mínima y máxima del valor que se puede introducir. Si el valor introducido no se ajusta a los valores mínimo y máximo especificados, el campo correspondiente de la interfaz de usuario de CCR se marca en color rojo.
@@ -334,7 +342,7 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 ### Configurar los archivos adjuntos {#set-up-the-attachments}
 
 1. Seleccione **Añadir recurso**.
-1. En la pantalla Seleccionar recurso, toque los recursos para adjuntarlos a la carta y toque **Listo**. Es necesario que los recursos se carguen primero en Recursos. Se recomienda adjuntar solo archivos PDF y documentos de Microsoft Office, pero también puede adjuntar imágenes. Para obtener más información sobre la carga de recursos en DAM, consulte [Carga de recursos](/help/assets/managing-assets-touch-ui.md).
+1. En la pantalla Seleccionar recurso, toque los recursos para adjuntarlos a la carta y toque **Listo**. Es necesario que los recursos se carguen primero en Recursos. Se recomienda adjuntar solo archivos PDF y documentos de Microsoft Office, pero también puede adjuntar imágenes. Para obtener más información sobre la carga de recursos en DAM, consulte [Carga de recursos](/help/assets/manage-assets.md).
 1. Para bloquear el orden de los recursos en la lista de modo que el ajuste de reclamaciones no pueda cambiar el orden, toque **Bloquear orden**. Si no selecciona esta opción, el ajuste de solicitudes puede cambiar el orden de los artículos de lista.
 1. Para cambiar el orden de los recursos, arrástrelos y suéltelos con el icono de reordenación de un recurso ( ![arrastrar y soltar](assets/dragndrop.png)).
 1. Toque **Editar** delante de un archivo adjunto y especifique un archivo adjunto como obligatorio si no desea que el autor pueda eliminarlo. Especifique un archivo adjunto como Seleccionado si desea que se preseleccione en la interfaz de CCR.
@@ -438,7 +446,7 @@ Los siguientes valores de la tabla
    <td>N/D</td> 
   </tr> 
   <tr> 
-   <td><strong>imagen</strong></td> 
+   <td><strong>image</strong></td> 
    <td>No</td> 
    <td>solo imagen</td> 
    <td>No</td> 
