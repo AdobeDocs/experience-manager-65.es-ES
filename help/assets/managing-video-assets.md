@@ -3,7 +3,7 @@ title: Administrar recursos de vídeo
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 7%
@@ -22,7 +22,7 @@ Obtenga información sobre cómo administrar y editar los recursos de vídeo en 
 [!DNL Adobe Experience Manager Assets] genera previsualizaciones para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una previsualización. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede realizar la previsualización de las representaciones en la interfaz de [!DNL Assets] usuario.
 
 1. En la carpeta o subcarpetas de recursos digitales, navegue a la ubicación donde desee agregar recursos digitales.
-1. Para cargar el recurso, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y elija **[!UICONTROL Archivos]**. También puede arrastrar un archivo en la interfaz de usuario. Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets) para obtener más información.
+1. Para cargar el recurso, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y elija **[!UICONTROL Archivos]**. También puede arrastrar un archivo en la interfaz de usuario. Consulte [Carga de recursos](manage-assets.md#uploading-assets) para obtener más información.
 1. Para previsualización de un vídeo en la vista de la tarjeta, haga clic en la opción **** Reproducir ![](assets/do-not-localize/play.png) reproducción del recurso de vídeo. Puede pausar o reproducir vídeo solo en la vista de la tarjeta. Las opciones [!UICONTROL Reproducir] y [!UICONTROL Pausa] no están disponibles en la vista de lista.
 
 1. Para previsualización del vídeo en la página de detalles del recurso, haga clic en **[!UICONTROL Editar]** en la tarjeta. El vídeo se reproduce en el reproductor de vídeo nativo del navegador. Puede reproducir, pausar, controlar el volumen y aplicar zoom en el vídeo a pantalla completa.
@@ -87,7 +87,7 @@ Después de la publicación, puede incluir los recursos de vídeo en una página
 
 >[!MORELIKETHIS]
 >
->* [Gestión de recursos digitales en recursos de Experience Manager](/help/assets/managing-assets-touch-ui.md)
->* [Gestión de colecciones en recursos Experience Manager](/help/assets/managing-collections-touch-ui.md)
+>* [Gestión de recursos digitales en recursos de Experience Manager](/help/assets/manage-assets.md)
+>* [Gestión de colecciones en recursos Experience Manager](/help/assets/manage-collections.md)
 >* [Documentación](/help/assets/video.md)de vídeo de Dynamic Media.
 
