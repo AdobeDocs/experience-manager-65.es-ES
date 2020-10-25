@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 11%
@@ -29,7 +29,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET.]** Ade
 
 >[!NOTE]
 >
->Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/managing-assets-touch-ui.md)táctil.
+>Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/manage-assets.md)táctil.
 
 ## Inicio rápido: Conjuntos de giros {#quick-start-spin-sets}
 
@@ -77,13 +77,13 @@ Para ayudarle en el uso inicial de los conjuntos de giros, siga estos pasos:
 
    Consulte [Vinculación de un conjunto de giros a una página web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/embed-code.md).
 
-Si lo necesita, puede [editar los conjuntos](#editing-spin-sets)de giros. Además, puede realizar vistas y modificar las propiedades [del conjunto](/help/assets/managing-assets-touch-ui.md#editing-properties)de giros.
+Si lo necesita, puede [editar los conjuntos](#editing-spin-sets)de giros. Además, puede realizar vistas y modificar las propiedades [del conjunto](/help/assets/manage-assets.md#editing-properties)de giros.
 
 ## Carga de recursos para conjuntos de giros {#uploading-assets-for-spin-sets}
 
 Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el elemento está rotando y volteando. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30 grados (360/12) para cada toma.
 
-Puede cargar imágenes para los conjuntos de giros como lo haría con cualquier otro [recurso en AEM Assets](/help/assets/managing-assets-touch-ui.md).
+Puede cargar imágenes para los conjuntos de giros como lo haría con cualquier otro [recurso en AEM Assets](/help/assets/manage-assets.md).
 
 ### Pautas para capturar imágenes para el conjunto de giros {#guidelines-for-shooting-spin-set-images}
 
