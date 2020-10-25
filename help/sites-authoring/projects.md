@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 85%
@@ -82,7 +82,7 @@ Los recursos se cargan directamente en el mosaico. Además, si dispone del compl
 
 ### Colecciones de recursos {#asset-collections}
 
-Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/help/assets/managing-collections-touch-ui.md) directamente al proyecto. Puede definir colecciones de recursos.
+Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/help/assets/manage-collections.md) directamente al proyecto. Puede definir colecciones de recursos.
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 
