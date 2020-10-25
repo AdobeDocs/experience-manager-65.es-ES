@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 22%
@@ -29,7 +29,7 @@ El contenido asociado proporciona la conexión para que los recursos (es decir, 
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
-Para crear la asociación, primero debe [agregar los recursos de medios a una colección](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection). Una vez hecho esto, puede:
+Para crear la asociación, primero debe [agregar los recursos de medios a una colección](/help/assets/manage-collections.md#adding-assets-to-a-collection). Una vez hecho esto, puede:
 
 1. Abra el fragmento y seleccione **Contenido asociado** en el panel lateral.
 
