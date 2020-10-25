@@ -3,7 +3,7 @@ title: Administre los metadatos de sus recursos digitales en [!DNL Adobe Experie
 description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] cómo pueden organizarse y procesarse automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 11%
@@ -163,7 +163,7 @@ Algunos casos de uso para exportar metadatos de forma masiva son:
 
 ## Editar metadatos de colecciones {#collections-metadata}
 
-Para obtener más información, consulte [vista y edición de metadatos](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) de la colección y [edición masiva](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)de metadatos de varias colecciones.
+Para obtener más información, consulte [vista y edición de metadatos](/help/assets/manage-collections.md#view-edit-collection-metadata) de la colección y [edición masiva](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk)de metadatos de varias colecciones.
 
 ## Aplicación de un perfil de metadatos a las carpetas {#applying-a-metadata-profile-to-folders}
 
@@ -242,7 +242,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 >[!MORELIKETHIS]
 >
 >* [Conceptos y comprensión](metadata-concepts.md)de metadatos.
->* [Editar propiedades de metadatos de varias colecciones](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Importación y exportación de metadatos en recursos de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
