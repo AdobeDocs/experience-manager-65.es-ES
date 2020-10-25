@@ -1,8 +1,8 @@
 ---
 title: 'Variaciones: Crear contenido de fragmentos'
 seo-title: 'Variaciones: Crear contenido de fragmentos'
-description: Las variaciones le permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
-seo-description: Las variaciones le permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
+description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
+seo-description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
 uuid: 0844f271-79bc-4f76-8031-d388b81d6feb
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 15%
@@ -35,14 +35,14 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 * [Cargar contenido](#uploading-content)
 
-* [Estadísticas](#viewing-key-statistics) de clave de Vista (acerca de texto multilínea)
+* [Estadísticas](#viewing-key-statistics) de clave de vista (acerca de texto multilínea)
 * [Resumir texto](#summarizing-text)
 
 * [Sincronizar variaciones con contenido principal](#synchronizing-with-master)
 
 >[!CAUTION]
 >
->Una vez publicado o referenciado un fragmento, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+>Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Creación de contenido {#authoring-your-content}
 
@@ -114,8 +114,8 @@ La edición de texto enriquecido le permite dar formato:
 * Cursiva
 * Subrayado
 * Alineación: izquierda, centro, derecha
-* lista con viñetas
-* lista numerada
+* Lista con viñetas
+* Lista numerada
 * Sangría: aumentar, disminuir
 * Crear/romper hipervínculos
 * Abra el editor de pantalla completa, donde están disponibles las siguientes opciones de formato:
@@ -199,6 +199,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 >* [Alemán (de) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 >* [Italiano (it) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 >* [Español (es) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -216,6 +217,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
    * Las oraciones que se van a eliminar se resaltan en rojo, con huelga.
    * Haga clic en cualquier frase resaltada para mantenerla en el contenido resumido.
    * Haga clic en cualquier frase no resaltada para eliminarla.
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Seleccione **Resumir** para confirmar los cambios.
@@ -254,7 +256,7 @@ Anotaciones:
 
 ### Inserción de recursos en el fragmento {#inserting-assets-into-your-fragment}
 
-Para facilitar el proceso de creación de fragmentos de contenido, puede añadir [Recursos](/help/assets/managing-assets-touch-ui.md) (imágenes) directamente al fragmento.
+Para facilitar el proceso de creación de fragmentos de contenido, puede añadir [Recursos](/help/assets/manage-assets.md) (imágenes) directamente al fragmento.
 
 Se añadirán a la secuencia de párrafos del fragmento sin ningún formato; el formato se puede realizar cuando se utiliza o hace referencia al [fragmento en una página](/help/sites-authoring/content-fragments.md).
 
@@ -277,6 +279,7 @@ Se añadirán a la secuencia de párrafos del fragmento sin ningún formato; el 
 
    * desplazarse al recurso necesario en DAM
    * buscar el recurso en DAM
+
    Una vez localizado, seleccione el recurso requerido haciendo clic en la miniatura.
 
 1. Utilice **Seleccionar** para agregar el recurso al sistema de párrafos del fragmento de contenido en la ubicación actual.
@@ -360,7 +363,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 >
 >La sincronización solo funciona en el tipo de datos de **texto de varias líneas**.
 >
->No está disponible como opción la transferencia de cambios *de una variación **a Principal ***.
+>No está disponible como opción la transferencia de cambios *de una variación **a Principal***.
 
 1. Abra el fragmento de contenido en el editor de fragmentos. Asegúrese de que se ha editado la **página maestra** .
 1. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
@@ -373,6 +376,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
    * verde indica el contenido agregado (a la variación)
    * rojo indica que el contenido se ha eliminado (de la variación)
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Seleccione **Sincronizar**, la variación se actualizará y se mostrará.
