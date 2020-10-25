@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 11%
@@ -120,7 +120,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones c
 
 >[!NOTE]
 >
->Muchas de ellas son acciones [estándar para Recursos](/help/assets/managing-assets-touch-ui.md) y/o la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
+>Muchas de ellas son acciones [estándar para Recursos](/help/assets/manage-assets.md) y/o la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
 
 ## Apertura del Editor de fragmentos {#opening-the-fragment-editor}
 
@@ -233,14 +233,14 @@ Puede vista y edición de las propiedades de un fragmento mediante la ficha [Met
 
 ## Cronología de los fragmentos de contenido {#timeline-for-content-fragments}
 
-Además de las opciones estándar, la [línea de tiempo](/help/assets/managing-assets-touch-ui.md#timeline) proporciona información y acciones específicas de los fragmentos de contenido:
+Además de las opciones estándar, la [línea de tiempo](/help/assets/manage-assets.md#timeline) proporciona información y acciones específicas de los fragmentos de contenido:
 
-* Información de Vista sobre versiones, comentarios y anotaciones
+* Información de vista sobre versiones, comentarios y anotaciones
 * Acciones para versiones
 
-   * **[Revertir a esta versión](#reverting-to-a-version)**(seleccione un fragmento existente y, a continuación, una versión específica)
+   * **[Revertir a esta versión](#reverting-to-a-version)** (seleccione un fragmento existente y, a continuación, una versión específica)
 
-   * **[Comparar con actual](#comparing-fragment-versions)**(seleccione un fragmento existente y, a continuación, una versión específica)
+   * **[Comparar con actual](#comparing-fragment-versions)** (seleccione un fragmento existente y, a continuación, una versión específica)
 
    * Añadir una **etiqueta** o un **comentario** (seleccione un fragmento existente y, a continuación, una versión específica)
 
