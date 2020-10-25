@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 7%
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 Los fragmentos de contenido de Adobe Experience Manager (AEM) le permiten diseñar, crear, depurar y [publicar contenido](/help/sites-authoring/content-fragments.md)independiente de la página. Permiten preparar contenido listo para su uso en varias ubicaciones o en varios canales.
 
-Los fragmentos de contenido también se pueden entregar en formato JSON mediante las funciones de exportación del Modelo de Sling (JSON) de los componentes principales de AEM. Esta forma de envío:
+Los fragmentos de contenido también se pueden entregar en formato JSON, mediante las capacidades de exportación del Modelo Sling (JSON) de AEM componentes principales. Esta forma de envío:
 
 * le permite utilizar el componente para administrar qué elementos de un fragmento entregar
 * permite el envío masivo, agregando varios componentes principales de fragmento de contenido en la página que se está utilizando para el envío de API
@@ -43,7 +43,7 @@ Esta y las siguientes páginas cubren las tareas para crear, configurar y manten
 
 El número de canales de comunicación aumenta cada año. Normalmente, los canales hacen referencia al mecanismo de envío, ya sea como:
 
-* canal físico; Por ejemplo, escritorio, móvil.
+* Canal físico; Por ejemplo, escritorio, móvil.
 * Forma de envío en un canal físico; Por ejemplo: &quot;página de detalles del producto&quot;, &quot;página de categoría del producto&quot; para escritorio o &quot;web móvil&quot;, &quot;aplicación móvil&quot; para dispositivos móviles.
 
 Sin embargo, usted (probablemente) no desea utilizar exactamente el mismo contenido para todos los canales; necesita optimizar su contenido según el canal específico.
@@ -60,9 +60,9 @@ Estos fragmentos de contenido se pueden ensamblar para proporcionar experiencias
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 
-Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web.
+Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM más allá del enfoque en las páginas web.
 
-Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
+Proporcionan el envío de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que pueden ser consumidos por cualquier cliente. Estos canales pueden incluir:
 
 * Aplicaciones de una sola página
 * Aplicaciones móviles nativas
@@ -70,13 +70,13 @@ Proporcionan el envío de contenido a canales que no son páginas web tradiciona
 
 Envío se realiza en formato JSON.
 
-Los fragmentos de contenido de AEM se pueden utilizar para describir y administrar el contenido estructurado. El contenido estructurado se define en modelos que pueden contener diversos tipos de contenido; incluyendo texto, datos numéricos, booleano, fecha y hora, etc.
+AEM fragmentos de contenido se pueden utilizar para describir y administrar el contenido estructurado. El contenido estructurado se define en modelos que pueden contener diversos tipos de contenido; incluyendo texto, datos numéricos, booleano, fecha y hora, etc.
 
-Junto con las funciones de exportación JSON de los componentes principales de AEM, este contenido estructurado se puede utilizar para entregar contenido de AEM a canales que no sean páginas de AEM.
+Junto con las capacidades de exportación JSON de AEM componentes principales, este contenido estructurado se puede utilizar para entregar contenido AEM a canales que no sean páginas AEM.
 
 >[!NOTE]
 >
->Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)**son funciones distintas de AEM:
+>Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)** son funciones distintas de AEM:
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
 
@@ -94,7 +94,7 @@ Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos d
 
 >[!NOTE]
 >
->AEM también admite la traducción de contenido de fragmento. Consulte [Creación de proyectos de traducción para fragmentos](/help/assets/creating-translation-projects-for-content-fragments.md) de contenido para obtener más información.
+>AEM también admite la traducción del contenido del fragmento. Consulte [Creación de proyectos de traducción para fragmentos](/help/assets/creating-translation-projects-for-content-fragments.md) de contenido para obtener más información.
 
 ## Tipos de fragmento de contenido {#types-of-content-fragment}
 
@@ -126,7 +126,7 @@ Los fragmentos de contenido son una estructura de contenido que:
 * Puede [contener imágenes](#fragments-with-visual-assets)o estar conectado a ellas.
 * Puede usar contenido intermedio [cuando se hace referencia a él](#in-between-content-when-page-authoring-with-content-fragments) en una página.
 
-* Son independientes del mecanismo de envío (es decir, página, canal).
+* Son independientes del mecanismo de envío (p. ej. página, canal).
 
 ### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
@@ -207,7 +207,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
    * Los recursos se [asocian a fragmentos mediante colecciones](/help/assets/content-fragments/content-fragments-assoc-content.md); las colecciones asociadas permiten al autor decidir qué recursos utilizar al crear la página.
 
       * Las colecciones se pueden asociar a fragmentos mediante plantillas, como contenido predeterminado o por medio de autores durante la creación de fragmentos.
-      * [Las colecciones](/help/assets/managing-collections-touch-ui.md) de recursos (DAM) son la base del contenido asociado de los fragmentos.
+      * [Las colecciones](/help/assets/manage-collections.md) de recursos (DAM) son la base del contenido asociado de los fragmentos.
    * Opcionalmente, también puede agregar el propio fragmento a una colección para facilitar el seguimiento.
 
 
