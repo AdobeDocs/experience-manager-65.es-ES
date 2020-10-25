@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Puede preparar las personalizaciones de la interfaz de usuario de Recursos de la
 
 ### Generación de ID de recursos para recursos existentes {#generating-asset-ids-for-existing-assets}
 
-Para generar ID de recursos para recursos existentes, actualice los recursos al actualizar la instancia de AEM para que se ejecute AEM 6.5. Esto es necesario para habilitar la función [de](/help/assets/touch-ui-asset-insights.md)perspectivas de recursos. Para obtener más información, consulte [Añadir código](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)incrustado.
+Para generar ID de recursos para recursos existentes, actualice los recursos al actualizar la instancia de AEM para que se ejecute AEM 6.5. Esto es necesario para habilitar la función [de](/help/assets/asset-insights.md)perspectivas de recursos. Para obtener más información, consulte [Añadir código](/help/assets/use-page-tracker.md#add-embed-code)incrustado.
 
 Para actualizar recursos, configure el paquete de ID de recursos asociados en la consola JMX. Según el número de recursos del repositorio, `migrateAllAssets` puede tardar mucho tiempo. Nuestras pruebas internas estiman aproximadamente una hora para 125 mil activos en TarMK.
 
