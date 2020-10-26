@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2e5cf93eb3ce47b65298b8de13c7d874d1989073
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 
 1. En la instancia de autor de AEM Forms, vaya a **Herramientas** ![martillo](assets/hammer.png) > **General** > **Navegador** de configuración.
 1. En la página **[!UICONTROL Navegador]** de configuración, toque **[!UICONTROL Crear]**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]** , especifique un **[!UICONTROL Título]** para la configuración, habilite Configuraciones **[!UICONTROL de]** nube y toque **[!UICONTROL Crear]**. Crea un contenedor de configuración para los servicios en la nube.
 1. Vaya a **Herramientas** ![martillo](assets/hammer.png) > **Cloud Services** > **Adobe Sign** y seleccione el contenedor de configuración que ha creado en el paso anterior.
 
