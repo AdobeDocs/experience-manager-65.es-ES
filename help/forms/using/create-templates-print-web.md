@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 0%
 
 Este tutorial es un paso en la [serie Crear una primera comunicación](/help/forms/using/create-your-first-interactive-communication.md) interactiva. Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
 
-Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor AEM para Canales impresos y Web.
+Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor de AEM para Canales impresos y Web.
 
-Las plantillas para el canal de impresión se crean en Adobe Forms Designer y se cargan en el servidor AEM. Estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
+Las plantillas para el canal de impresión se crean en Adobe Forms Designer y se cargan en el servidor de AEM. Estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
-Las plantillas para el canal web se crean en AEM. Los creadores y administradores de plantillas pueden crear, editar y habilitar plantillas web. Una vez creadas y habilitadas, estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
+Las plantillas para el canal Web se crean en AEM. Los creadores y administradores de plantillas pueden crear, editar y habilitar plantillas web. Una vez creadas y habilitadas, estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
 Este tutorial le guiará por los pasos para crear plantillas para canales impresos y Web de modo que estén disponibles para su uso durante la creación de comunicaciones interactivas. Al final de este tutorial, podrá:
 
-* Creación de plantillas XDP para canal de impresión con Adobe Forms Designer
-* Cargar las plantillas XDP en el servidor de AEM Forms
+* Creación de plantillas XDP para canal de impresión mediante Adobe Forms Designer
+* Cargar las plantillas XDP en AEM Forms Server
 * Crear y habilitar plantillas para el canal Web
 
 ## Crear plantilla para canal de impresión {#create-template-for-print-channel}
@@ -61,7 +61,7 @@ Estos subformularios se muestran como áreas de destinatario en la plantilla Imp
 
 Siga los pasos siguientes para crear una plantilla XDP para el canal de impresión:
 
-1. Abra el Diseñador de formularios, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco,** toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de plantillas.
+1. Abra Forms Designer, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco,** toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de la plantilla.
 
    Asegúrese de que las opciones Biblioteca **de** objetos y **Objeto** están seleccionadas en el menú **Ventana** .
 
@@ -115,9 +115,9 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal de impresi�
 
 ### Cargar plantilla XDP en el servidor de AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
 
-Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
+Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
 
-1. Seleccione **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
+1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Forms y Documentos]**.
 1. Toque **Crear** > Cargar **archivo**.
 
    Navegue y seleccione la plantilla **create_first_ic_print_template** (XDP) y toque **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
@@ -126,7 +126,7 @@ Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servido
 
 Para crear un fragmento de diseño para el canal de impresión de la comunicación interactiva, cree un XDP con Forms Designer y cárguelo en el servidor de AEM Forms.
 
-1. Abra el Diseñador de formularios, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco,** toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de plantillas.
+1. Abra Forms Designer, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco,** toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de la plantilla.
 
    Asegúrese de que las opciones Biblioteca **de** objetos y **Objeto** están seleccionadas en el menú **Ventana** .
 
@@ -162,7 +162,7 @@ Para crear un fragmento de diseño para el canal de impresión de la comunicaci�
    1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo** .
 
    1. Toque **Guardar**.
-   Una vez que haya creado una plantilla XDP para el fragmento de diseño con Forms Designer, debe [cargarla](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de fragmentos de diseño.
+   Una vez creada una plantilla XDP para un fragmento de diseño con Forms Designer, debe [cargarla](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) en el servidor de AEM Forms para que la plantilla esté disponible para su uso al crear fragmentos de diseño.
 
 ## Crear plantilla para canal Web {#create-template-for-web-channel}
 
@@ -180,6 +180,7 @@ Para crear una plantilla de canal web, defina una carpeta en la que puede guarda
 Siga los pasos siguientes para crear una carpeta para las plantillas editables:
 
 1. Toque **Herramientas** ![martillo](assets/hammer-icon.svg) > Navegador **** de configuración.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. En la página Navegador de configuración, toque **Crear**.
 1. En el cuadro de diálogo **Crear configuración** , especifique **Create_First_IC_templates** como título para la carpeta, marque Plantillas **** editables y toque **Crear**.
 
