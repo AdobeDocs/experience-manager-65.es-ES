@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '4530'
 ht-degree: 6%
@@ -248,7 +248,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 ### Interfaz de usuario {#ui-6560}
 
 * La interfaz del explorador de descarga no muestra todos los temas de trabajo (NPR-34308).
-* La interfaz del navegador de configuración no muestra todas las configuraciones (NPR-33644).
+* La interfaz [del navegador](/help/sites-administering/configurations.md) de configuración no muestra todas las configuraciones (NPR-33644).
 * Al pulsar la `Esc` tecla cuando se busca que los usuarios suplanten, se cierra el cuadro de diálogo **[!UICONTROL Usuario]** en lugar de la lista del usuario (NPR-34084).
 
 ### Integraciones {#integrations-6560}
