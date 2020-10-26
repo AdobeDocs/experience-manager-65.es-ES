@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2803'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,8 @@ La instancia de aplicación y proveedor [de](#adobe-granite-oauth-application-an
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > Navegador **** de configuración. Seleccione el contexto y edite las propiedades. Habilite las configuraciones de nube si aún no están habilitadas.
 
    ![config-propertiesping](assets/config-propertiespng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. **Crear/editar** la configuración del servicio en la nube de Facebook.
 
@@ -260,6 +262,8 @@ La instancia de aplicación y proveedor [de](#adobe-granite-oauth-application-an
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > Navegador **** de configuración. Seleccione el contexto y edite las propiedades. Habilite las configuraciones de nube si aún no están habilitadas.
 
    ![twitterconfigproping](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Crear/editar la configuración del servicio en la nube de Twitter.
 
@@ -460,7 +464,7 @@ Si se ven advertencias transversales en los registros, se recomienda agregar est
 
 En una instancia de autor, ha iniciado sesión con privilegios administrativos:
 
-1. Desde la navegación global: seleccione **Herramientas,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Desde la navegación global: seleccione **Herramientas, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Cree un índice denominado ntBaseLucene-oauth a partir de una copia de ntBaseLucene:
 
    * Bajo nodo `/oak:index`
