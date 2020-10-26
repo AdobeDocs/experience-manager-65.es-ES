@@ -1,8 +1,8 @@
 ---
-title: Supervisión y mantenimiento de la instancia de AEM
-seo-title: Supervisión y mantenimiento de la instancia de AEM
-description: Obtenga información sobre cómo supervisar AEM.
-seo-description: Obtenga información sobre cómo supervisar AEM.
+title: Monitoreo y mantenimiento de la instancia de AEM
+seo-title: Monitoreo y mantenimiento de la instancia de AEM
+description: Aprenda a supervisar AEM.
+seo-description: Aprenda a supervisar AEM.
 uuid: 14466552-5c92-4730-a427-85675a2b121c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 9f22cb618d487a2b02dc17149d11b81a9e9e27be
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5895'
 ht-degree: 0%
 
 ---
 
 
-# Supervisión y mantenimiento de la instancia de AEM{#monitoring-and-maintaining-your-aem-instance}
+# Monitoreo y mantenimiento de la instancia de AEM{#monitoring-and-maintaining-your-aem-instance}
 
 Una vez implementadas las instancias de AEM, se necesitarán ciertas tareas para supervisar y mantener su funcionamiento, rendimiento e integridad.
 
@@ -33,8 +33,8 @@ Un factor clave aquí es que para reconocer los problemas potenciales necesita s
 | Se están supervisando los sistemas de archivos. | El repositorio de CRX se &quot;bloqueará&quot; si no hay suficiente espacio libre en el disco. Se reanudará cuando haya espacio disponible. | Los mensajes &quot; `*ERROR* LowDiskSpaceBlocker`&quot; se pueden ver en el archivo de registro cuando el espacio libre se reduce. |
 | [Se están supervisando los archivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de registro. |  |  |
 | La supervisión del sistema se está ejecutando (constantemente) en segundo plano. | Incluido el uso de CPU, memoria, disco y red. Usando, por ejemplo, iostat / vmstat / permon. | Los datos registrados se visualizan y pueden utilizarse para rastrear problemas de rendimiento. También se puede acceder a los datos sin procesar. |
-| [Se está supervisando](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)el rendimiento de AEM. | Incluidos los contadores de [solicitudes](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) para supervisar los niveles de tráfico. | Si se observa una pérdida significativa, o a largo plazo, de rendimiento, debe realizarse una investigación detallada. |
-| Está monitoreando los agentes [de replicación](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
+| [AEM rendimiento se está supervisando](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Incluidos los contadores de [solicitudes](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) para supervisar los niveles de tráfico. | Si se observa una pérdida significativa, o a largo plazo, de rendimiento, debe realizarse una investigación detallada. |
+| Está monitoreando los agentes [de replicación](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Purgue regularmente instancias de flujo de trabajo. | Tamaño del repositorio y rendimiento del flujo de trabajo. | Consulte Depuración [regular de instancias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de flujo de trabajo. |
 
 ## Copias de seguridad {#backups}
@@ -58,9 +58,9 @@ A menudo, se realiza una copia de seguridad completa a intervalos regulares (por
 >[!CAUTION]
 >
 >Al implementar copias de seguridad de las instancias de producción, *deben* realizarse pruebas para garantizar que el backup se pueda restaurar correctamente.
-
->Sin esto, el backup es potencialmente inútil (el peor de los casos).
 >
+>Sin esto, el backup es potencialmente inútil (el peor de los casos).
+
 >[!NOTE]
 >
 >Para obtener más información sobre las performance de backup, lea la sección Rendimiento [de Backup](/help/sites-deploying/configuring-performance.md#backup-performance) .
@@ -71,7 +71,7 @@ Después de la instalación, o de cambios significativos en la configuración, r
 
 Para ello, debe [realizar una copia de seguridad de todo el repositorio](#backing-up-your-repository) y, a continuación:
 
-1. Detenga AEM.
+1. Detén AEM.
 1. Realice una copia de seguridad de todo el sistema `<cq-installation-dir>` de archivos.
 
 >[!CAUTION]
@@ -100,13 +100,13 @@ Esta sección trata las operaciones de mantenimiento relacionadas con la funció
 
 ### Información general {#overview}
 
-La herramienta **Purgar versiones** está disponible en la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**, en**Versiones **o directamente en:
+La herramienta **Purgar versiones** está disponible en la consola **[Herramientas](/help/sites-administering/tools-consoles.md)** , en **Versiones** o directamente en:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Ruta** del Inicio Una ruta absoluta en la que se debe realizar la purga. Puede seleccionar la Ruta de Inicio haciendo clic en el navegador de árbol del repositorio.
+**Ruta** del inicio Una ruta absoluta en la que se debe realizar la purga. Puede seleccionar la Ruta de Inicio haciendo clic en el navegador de árbol del repositorio.
 
 **Recursivo** Al depurar datos, puede elegir entre realizar la operación en un nodo o en una jerarquía completa seleccionando Recursivo. En el último caso, la ruta dada define el nodo raíz de la jerarquía.
 
@@ -122,7 +122,7 @@ La herramienta **Purgar versiones** está disponible en la consola **[Herramient
 
 Para depurar versiones de un sitio web, siga estos pasos:
 
-1. Vaya a la **[consola Herramientas](/help/sites-administering/tools-consoles.md)**, seleccione **Versiones**y haga clic con el botón doble en ******Purgar versiones.**
+1. Vaya a la **[consola Herramientas](/help/sites-administering/tools-consoles.md)** , seleccione **Versiones** y haga clic con el botón doble en **** **Purgar versiones.**
 1. Configure la ruta de inicio del contenido que se va a purgar (p. ej. `/content/geometrixx-outdoors`).
 
    * Si solo desea depurar el nodo definido por la ruta de acceso, anule la selección de **Recursivo**.
@@ -145,7 +145,7 @@ Los procesos **Ensayo** y **Depuración** lista todos los nodos procesados. Dura
 
 * `ignore (not versionnable)`:: el nodo no admite el control de versiones y se omite durante el proceso.
 
-* `ignore (no version)`:: el nodo no tiene ninguna versión y se ignora durante el proceso. &quot;
+* `ignore (no version)`:: el nodo no tiene ninguna versión y se ignora durante el proceso.
 
 * `retained`:: el nodo no se depura.
 * `purged`:: el nodo se purga.
@@ -178,7 +178,7 @@ AEM WCM registra registros detallados. Después de desempaquetar y inicio QuickS
 
 #### Rotación de archivos de registro {#log-file-rotation}
 
-La rotación del archivo de registro se refiere al proceso que limita el crecimiento del archivo mediante la creación periódica de un nuevo archivo. En AEM, un archivo de registro llamado `error.log` se rotará una vez al día según las reglas especificadas:
+La rotación del archivo de registro se refiere al proceso que limita el crecimiento del archivo mediante la creación periódica de un nuevo archivo. En AEM, un archivo de registro llamado `error.log` se rotará una vez al día según las reglas dadas:
 
 * Se cambia el nombre del `error.log` archivo según el patrón {original_filename} `.yyyy-MM-dd`. Por ejemplo, el 11 de julio de 2010, se cambia el nombre del archivo de registro actual `error.log-2010-07-10`y, a continuación, `error.og` se crea un nuevo archivo.
 
@@ -190,12 +190,12 @@ La rotación del archivo de registro se refiere al proceso que limita el crecimi
 
 ### Búsqueda de los archivos de registro {#finding-the-log-files}
 
-En el servidor de archivos donde instaló AEM se conservan varios archivos de registro:
+En el servidor de archivos donde instaló AEM se guardan varios archivos de registro:
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
    * `access.log`
-Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
+Todas las solicitudes de acceso a AEM WCM y al repositorio están registradas aquí.
 
    * `audit.log`
 Las acciones de moderación se registran aquí.
@@ -223,7 +223,7 @@ Contiene mensajes de registro que indican eventos durante el inicio.
 Proporciona un registro de todas las operaciones de actualización que se ejecutan desde el 
 `com.day.compat.codeupgrade` y `com.adobe.cq.upgradesexecutor` paquetes.
 
-* `<*cq-installation-dir*>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository`
 
    * `revision.log`
 Revisión de la información del diario.
@@ -264,19 +264,19 @@ Los niveles de registro son los siguientes:
 
 En determinadas circunstancias, es posible que desee crear un archivo de registro personalizado con un nivel de registro diferente. Puede hacerlo en el repositorio:
 
-1. Si aún no existe, cree una nueva carpeta de configuración ( `sling:Folder`) para el proyecto `/apps/<*project-name*>/config`.
-1. En `/apps/<*project-name*>/config`, cree un nodo para la nueva configuración [del registrador de registros](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration)Apache Sling:
+1. Si aún no existe, cree una nueva carpeta de configuración ( `sling:Folder`) para el proyecto `/apps/<project-name>/config`.
+1. En `/apps/<project-name>/config`, cree un nodo para la nueva configuración [del registrador de registros](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration)Apache Sling:
 
-   * Nombre: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (ya que es un Logger)
+   * Nombre: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (ya que es un Logger)
 
-      Donde `<*identifier*>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información).
+      Donde `<identifier>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información).
 
       Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Aunque no es un requisito técnico, es aconsejable hacer `<*identifier*>` único.
+   >Aunque no es un requisito técnico, es aconsejable hacer `<identifier>` único.
 
 1. Establezca las siguientes propiedades en este nodo:
 
@@ -313,9 +313,19 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` admite hasta seis argumentos.
-
-   >{0} Marca de tiempo de tipo `java.util.Date`{1} el marcador de registro{2} el nombre del subproceso actual{3} el nombre del registrador{4} el nivel de registro{5} el mensaje de registro
-
+   >
+   >{0} Marca de tiempo del tipo `java.util.Date`
+   >
+   >{1} el marcador de registro
+   >
+   >{2} nombre del subproceso actual
+   >
+   >{3} nombre del registrador
+   >
+   >{4} nivel de registro
+   >
+   >{5} el mensaje de registro
+   >
    >Si la llamada de registro incluye un `Throwable` seguimiento de pila se anexa al mensaje.
 
    >[!CAUTION]
@@ -325,37 +335,42 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >[!NOTE]
    >
    >Las rutas de escritura de registros son relativas a la `crx-quickstart` ubicación.
+   >
    >Por lo tanto, un archivo de registro especificado como:
+   >
    >`logs/thelog.log`
-
+   >
    >escribe a:
-   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
+   >
+   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`.
+   >
    >Y un archivo de registro especificado como:
+   >
    >`../logs/thelog.log`
-
+   >
    >escribe en un directorio:
-   >` <*cq-installation-dir*>/logs/`
-
-&quot;(es decir, junto a ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
+   >
+   >`<cq-installation-dir>/logs/`\
+   >(es decir, junto a `<cq-installation-dir>/crx-quickstart/`)
 
 1. Este paso solo es necesario cuando se requiere un nuevo Writer (es decir, con una configuración diferente a la predeterminada Writer).
 
    >[!CAUTION]
    >
    >Solo se requiere una nueva configuración del grabador de registros cuando el valor predeterminado existente no es adecuado.
-
+   >
    >Si no se configura ningún Writer explícito, el sistema generará automáticamente un Writer implícito basado en el valor predeterminado.
 
-   En `/apps/<*project-name*>/config`, cree un nodo para la nueva configuración [del escritor de registro de Sling de](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration)Apache:
+   En `/apps/<project-name>/config`, cree un nodo para la nueva configuración [del escritor de registro de Sling de](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration)Apache:
 
-   * Nombre: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (ya que es un escritor)
+   * Nombre: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (ya que es un escritor)
 
-      Al igual que con el Registrador, `<*identifier*>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información). Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Al igual que con el Registrador, `<identifier>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información). Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Aunque no es un requisito técnico, es aconsejable hacer `<*identifier*>` único.
+   >Aunque no es un requisito técnico, es aconsejable hacer `<identifier>` único.
 
    Establezca las siguientes propiedades en este nodo:
 
@@ -383,25 +398,36 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` controla la rotación del archivo de registro configurando:
+   >
    >* un tamaño máximo de archivo
    >* una programación de fecha y hora
 
-   para indicar cuándo se creará un archivo nuevo (y se cambiará el nombre del archivo existente según el patrón de nombre).
-   * Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
-   * Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
+   >
+   >para indicar cuándo se creará un nuevo archivo (y se cambiará el nombre del archivo existente según el patrón de nombre).
+   >
+   >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
+   >* Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
 
-   El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
-   Por ejemplo, a la medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esto sea preciso), ../logs/error.log cambiará su nombre a ../logs/error.log.2010-01-20. El registro para el 21 de enero se enviará a (nuevo y vacío) ../logs/error.log hasta que se pase a la siguiente modificación del día.
-   | `'.'yyyy-MM` | Rotación al comienzo de cada mes |
-   |---|---|
-   | `'.'yyyy-ww` | Rotación en el primer día de cada semana (depende de la configuración regional). |
-   | `'.'yyyy-MM-dd` | Rotación a medianoche cada día. |
-   | `'.'yyyy-MM-dd-a` | Rotación a medianoche y mediodía de cada día. |
-   | `'.'yyyy-MM-dd-HH` | Rotación en la parte superior de cada hora. |
-   | `'.'yyyy-MM-dd-HH-mm` | Rotación al principio de cada minuto. |
-   Nota: Al especificar una fecha/hora:
-   1. Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
-esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
+   >
+   >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
+   >
+   >Por ejemplo, a la medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esto sea preciso), ../logs/error.log cambiará su nombre a ../logs/error.log.2010-01-20. El registro para el 21 de enero se enviará a (nuevo y vacío) ../logs/error.log hasta que se pase a la siguiente modificación del día.
+   >
+   >| `'.'yyyy-MM` | Rotación al comienzo de cada mes |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotación en el primer día de cada semana (depende de la configuración regional). |
+   >| `'.'yyyy-MM-dd` | Rotación a medianoche cada día. |
+   >| `'.'yyyy-MM-dd-a` | Rotación a medianoche y mediodía de cada día. |
+   >| `'.'yyyy-MM-dd-HH` | Rotación en la parte superior de cada hora. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotación al principio de cada minuto. |
+   >
+   >Nota: Al especificar una fecha/hora:
+   > 1. Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
+      >
+      >     
+      esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
+      >
+      >  
    1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
 
 
@@ -413,9 +439,9 @@ La consola de Felix también proporciona información sobre la compatibilidad co
 
 ### Búsqueda de los registros de auditoría {#finding-the-audit-records}
 
-Los registros de auditoría se conservan para proporcionar un registro de quién hizo qué y cuándo. Se generan diferentes registros de auditoría para los eventos WCM y OSGi de AEM.
+Los registros de auditoría se conservan para proporcionar un registro de quién hizo qué y cuándo. Se generan diferentes registros de auditoría para los eventos AEM WCM y OSGi.
 
-#### Se muestran los registros de auditoría de AEM WCM al crear páginas {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM registros de auditoría de WCM que se muestran al crear páginas {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Abra una página.
 1. Desde la barra de tareas puede seleccionar la ficha con el icono de candado y, a continuación, hacer clic con el doble en Registro de **auditoría...**
@@ -425,7 +451,7 @@ Los registros de auditoría se conservan para proporcionar un registro de quién
 
 1. Haga clic en **Aceptar** cuando desee cerrar la ventana.
 
-#### Registros de auditoría de AEM WCM dentro del repositorio {#aem-wcm-auditing-records-within-the-repository}
+#### AEM registros de auditoría de WCM dentro del repositorio {#aem-wcm-auditing-records-within-the-repository}
 
 Dentro de la `/var/audit` carpeta, los registros de auditoría se guardan según el recurso. Puede explorar en profundidad hasta que vea los registros individuales y la información que contienen.
 
@@ -433,7 +459,7 @@ Estas entradas contienen la misma información que se muestra al editar una pág
 
 #### Registros de auditoría de OSGi desde la consola web {#osgi-audit-records-from-the-web-console}
 
-Los eventos OSGi también generan registros de auditoría que se pueden ver en la ficha Estado **de** configuración -> **Archivos de registro **ficha en la consola web de AEM:
+Los eventos OSGi también generan registros de auditoría que se pueden ver en la ficha Estado **de** configuración -> Archivos **** de registro de la consola web de AEM:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -451,7 +477,7 @@ Para monitorear un agente de replicación:
 
 1. Acceda a la ficha **Herramientas** de AEM.
 1. Haga clic en **Replicación**.
-1. Haga clic con el botón Doble en el vínculo a los agentes para el entorno correspondiente (a la izquierda o al panel derecho); por ejemplo, **Agentes en el autor**.
+1. Haga clic con el botón doble en el vínculo a los agentes para el entorno correspondiente (a la izquierda o al panel derecho); por ejemplo, **Agentes en el autor**.
 
    La ventana resultante muestra una visión general de todos los agentes de replicación para el entorno de creación, incluidos su destinatario y estado.
 
@@ -467,15 +493,18 @@ Para monitorear un agente de replicación:
    * Ver si hay elementos en la cola.
    * **Actualizar** o **Borrar** para actualizar la visualización de las entradas de cola; esto le ayuda a ver los elementos entrar y salir de la cola.
 
-   * **Registro** de Vista para acceder al registro de cualquier acción realizada por el agente de replicación.
+   * **Registro** de vista para acceder al registro de cualquier acción realizada por el agente de replicación.
    * **Probar la conexión** a la instancia de destinatario.
    * **Forzar reintento** en cualquier elemento de la cola si es necesario.
 
    >[!CAUTION]
    >
    >No utilice el vínculo &quot;Probar conexión&quot; para la bandeja de salida de replicación inversa en una instancia de publicación.
+   >
    >Si se realiza una prueba de replicación para una cola de Outbox, todos los elementos que sean más antiguos que la replicación de prueba se volverán a procesar con cada replicación inversa.
+   >
    >Si estos elementos ya existen en una cola, se pueden encontrar con la siguiente consulta de JCR XPath y deben eliminarse.
+   >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Nuevamente puede desarrollar una solución para detectar todos los agentes de replicación (ubicados debajo `/etc/replication/author` o `/etc/replication/publish`) y luego comprobar el estado del agente ( `enabled`, `disabled`) y la cola subyacente ( `active`, `idle`, `blocked`).
@@ -495,14 +524,14 @@ Las siguientes listas plantean problemas comunes de rendimiento, junto con propu
 | Área | Síntomas | Para aumentar la capacidad... | Para reducir el volumen... |
 |---|---|---|---|
 | Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplificar el diseño (HTML). |
-|  | Uso bajo de CPU del servidor. | Actualice a un explorador más rápido. | Mejore la caché del cliente. |
+|  | Uso bajo de la CPU del servidor. | Actualice a un explorador más rápido. | Mejore la caché del cliente. |
 |  | Algunos clientes son rápidos, algunos lentos. |  |  |
 | Servidor |  |  |  |
 | Red | Uso bajo de CPU tanto en servidores como en clientes. | Elimine los cuellos de botella de red. | Mejore/optimice la configuración de la caché del cliente. |
 |  | La navegación local en el servidor es (comparativamente) rápida. | Aumente el ancho de banda de la red. | Reduzca el &quot;peso&quot; de las páginas web (p. ej., menos imágenes, HTML optimizado). |
 | Servidor web | El uso de CPU en el servidor web es alto. | Clasificar los servidores Web. | Reduzca las visitas individuales por página (visita). |
 |  |  | Utilice un equilibrador de carga de hardware. |  |
-| Aplicación | El uso de CPU del servidor es alto. | Agrupe las instancias de AEM. | Busque y elimine los cartuchos de CPU y memoria (utilice revisión de código, salida de temporización, etc.). |
+| Aplicación | El uso de CPU del servidor es alto. | Clasifique las instancias AEM. | Busque y elimine los cartuchos de CPU y memoria (utilice revisión de código, salida de temporización, etc.). |
 |  | Alto consumo de memoria. |  | Mejore el almacenamiento en caché en todos los niveles. |
 |  | Tiempos de respuesta bajos. |  | Optimizar plantillas y componentes (por ejemplo, estructura, lógica). |
 | Repositorio |  |  |  |
@@ -556,12 +585,12 @@ Algunos de ellos dependerán del sistema operativo.
   <tr>
    <td>Vertederos de rosca</td>
    <td>Observe los subprocesos JVM. Identificar contenciones, bloqueos y corredores de largo plazo.</td>
-   <td><p>Depende del sistema operativo:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo de consola): Ctrl-Salto<br /> </p> <p>También hay disponibles herramientas de Análisis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Depende del sistema operativo:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo de consola): Ctrl-Salto<br /> </p> <p>También hay disponibles herramientas de análisis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Voladizos de montón</td>
    <td>Problemas de memoria insuficiente que causan un rendimiento lento.</td>
-   <td><p>Añada el:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> a la llamada de Java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td>
+   <td><p>Añada el:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> a la llamada de java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Llamadas del sistema</td>
@@ -599,8 +628,8 @@ Algunos de ellos dependerán del sistema operativo.
    <td><p>Uso: jvisualvm o visualvm<br /> </p> <p>Consulte <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> y rendimiento <a href="#monitoring-performance-using-j-visualvm">de supervisión mediante (J)VisualVM</a>.</p> <p><strong>Nota:</strong> Con JDK 1.6, VisualVM se puede ampliar con complementos.</p> </td>
   </tr>
   <tr>
-   <td>trazo/correa, lsof</td>
-   <td>análisis de procesos y llamadas al núcleo (Unix).</td>
+   <td>trazo/trazo, lsof</td>
+   <td>Análisis de procesos y llamadas al núcleo (Unix).</td>
    <td>Comandos Unix/Linux.</td>
   </tr>
   <tr>
@@ -638,13 +667,13 @@ El registro de solicitudes registra cada solicitud realizada, junto con la respu
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Al calcular el total de todas las entradas GET dentro de un período específico (por ejemplo, en varios períodos de 24 horas), puede hacer declaraciones sobre el tráfico promedio en su sitio web.
+Al calcular el total de todas las entradas de GET dentro de un período específico (por ejemplo, en varios períodos de 24 horas), puede hacer declaraciones sobre el tráfico promedio en su sitio web.
 
 #### Monitoreo de los tiempos de respuesta con request.log {#monitoring-response-times-with-the-request-log}
 
 Un buen punto de partida para la análisis del rendimiento es el registro de solicitudes:
 
-`<*cq-installation-dir*>/crx-quickstart/logs/request.log`
+`<cq-installation-dir>/crx-quickstart/logs/request.log`
 
 El registro tiene el siguiente aspecto (las líneas se abrevian por simplicidad):
 
@@ -711,8 +740,8 @@ Se deben realizar pruebas para determinar cuántos usuarios simultáneos puede g
 
 ### Uso de rlog.jar para encontrar solicitudes con largos tiempos de duración {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM incluye varias herramientas de ayuda en:
-`<*cq-installation-dir*>/crx-quickstart/opt/helpers`
+AEM incluye varias herramientas de ayuda ubicadas en:
+`<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Una de ellas, `rlog.jar`, se puede utilizar para ordenar rápidamente `request.log` de modo que las solicitudes se muestren por duración, desde el tiempo más largo hasta el más corto.
 
@@ -820,7 +849,7 @@ Percentage of the requests served within a certain time (ms)
 100% 8106 (longest request)
 ```
 
-Los números anteriores provienen de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de compañía de geometrixx, tal como se incluye en una instalación predeterminada de AEM. La página es muy sencilla, pero no está optimizada para el rendimiento.
+Los números anteriores se toman de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de compañía de geometrixx, tal como se incluye en una instalación AEM predeterminada. La página es muy sencilla, pero no optimizada para el rendimiento.
 
 `apachebench` también muestra el tiempo por solicitud como la media en todas las solicitudes simultáneas; consulte `Time per request: 54.595 [ms]` (media, en todas las solicitudes simultáneas). Puede cambiar el valor del parámetro de concurrencia `-c` (número de varias solicitudes que se van a realizar a la vez) para ver cualquier efecto.
 
@@ -1040,10 +1069,13 @@ A continuación se ofrece una lista de sugerencias sobre qué comprobar si inici
 >[!NOTE]
 >
 >Consulte también los siguientes artículos para obtener más información:
+>
 >* [Vertederos de rosca](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
 >* [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 >* [Analizar con el generador de perfiles integrado](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
 >* [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+
+>
 
 
 
@@ -1065,7 +1097,7 @@ Si el sistema se está quedando sin memoria, esto se puede ver de varias maneras
 
 En estos casos, compruebe:
 
-* La configuración de JVM utilizada para [inicio de AEM](/help/sites-deploying/deploy.md#getting-started)
+* La configuración de JVM utilizada para el [inicio de AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
    * [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
@@ -1087,7 +1119,7 @@ Si el sistema se está quedando sin espacio en disco, o si nota que se está blo
 * Base de conocimiento:
 
    * [Demasiados archivos abiertos](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
-   * [El Historial consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [El historial consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradación de rendimiento regular {#regular-performance-degradation}
 
@@ -1138,4 +1170,5 @@ Esto le ayudará a ver la cantidad de memoria que se utiliza, los algoritmos GC 
 >[!NOTE]
 >
 >Para la VM de Oracle también hay información en:
+>
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
