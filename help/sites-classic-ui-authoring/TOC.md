@@ -1,11 +1,12 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guía del usuario de creación de IU de AEM 6.5 Classic
 user-guide-description: Esta guía cubre los conceptos de creación en AEM en la interfaz de usuario clásica.
 translation-type: tm+mt
-source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
+source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 84%
