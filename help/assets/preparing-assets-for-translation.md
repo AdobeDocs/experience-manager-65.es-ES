@@ -3,7 +3,7 @@ title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para preparar los recursos para la traducción para admitir recursos multilingües.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 1d3e908eafa1cdcbc6ef557da509f12cdd9418cc
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
@@ -21,16 +21,16 @@ Cada carpeta de idioma se denomina copia de idioma. La carpeta raíz de una copi
 
 La copia de idioma para la que se agregaron recursos originalmente es el idioma principal. El idioma principal es la fuente que se traduce a otros idiomas. Una jerarquía de carpetas de ejemplo incluye varias raíces de idioma:
 
-```
- /content
-  /- dam
-   |- en
-   |- fr
-   |- de
-   |- es
-   |- it
-   |- ja
-   |- zh
+```shell
+/content
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 Realice los siguientes pasos para preparar los recursos para la traducción:
@@ -42,7 +42,7 @@ Realice los siguientes pasos para preparar los recursos para la traducción:
 
 ## Crear una raíz de idioma {#creating-a-language-root}
 
-Para crear la raíz de idioma, cree una carpeta y utilice un código de idioma ISO como valor para la propiedad Name. Después de crear la raíz del idioma, puede crear una copia del idioma en cualquier nivel dentro de la raíz del idioma.
+Para crear la raíz del idioma, cree una carpeta y utilice un código de idioma ISO como valor para la propiedad Name. Después de crear la raíz del idioma, puede crear una copia del idioma en cualquier nivel dentro de la raíz del idioma.
 
 Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de muestra tiene `it` como propiedad Name. La propiedad Name se utiliza como nombre del nodo de recursos en el repositorio y, por lo tanto, determina la ruta de los recursos. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
@@ -56,7 +56,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 
 1. Haga clic en **[!UICONTROL Crear]**. La raíz del idioma se crea en la [!DNL Assets] consola.
 
-## Raíces de idioma de Vista {#viewing-language-roots}
+## Raíces de idioma de vista {#viewing-language-roots}
 
 [!DNL Experience Manager] proporciona un panel **[!UICONTROL Referencias]** que muestra una lista de las raíces de idioma que se han creado en [!DNL Assets].
 
