@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: 0d5ee29141c897284f3f298d921f4f8528216f8f
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Los 360 recursos de vídeo que se cargan en AEM se etiquetan como **multimedia**
 **Para cargar recursos para utilizarlos con el visor de vídeo de 360°:**
 
 1. Se ha creado una carpeta dedicada al recurso de vídeo de 360°.
-1. [Aplique un perfil de vídeo adaptable a la carpeta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+1. [Aplique un perfil de vídeo adaptable a la carpeta.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
    La representación de contenido de vídeo de 360 impone requisitos más altos para la resolución de vídeo de origen y para la resolución de representaciones codificadas que el contenido de vídeo estándar que no es de 360.
 
@@ -96,8 +96,8 @@ Consulte también [Edición de ajustes preestablecidos](/help/assets/managing-vi
 
 Cuando esté satisfecho con el vídeo de 360, puede publicarlo.
 
-See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
-See [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
+See [Embedding the Video or Image Viewer on a Web Page.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
+Consulte [Vinculación de direcciones URL a la aplicación](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html)web. Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **Para previsualización De Videos 360**
