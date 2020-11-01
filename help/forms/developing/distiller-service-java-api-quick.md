@@ -1,8 +1,7 @@
 ---
-title: Inicio rápido de la API de Java de Distiller Service (SOAP)
-seo-title: Inicio rápido de la API de Java de Distiller Service (SOAP)
-description: nulo
-seo-description: nulo
+title: QuickStart (SOAP) de la API de Java del servicio de Distiller
+seo-title: QuickStart (SOAP) de la API de Java del servicio de Distiller
+description: QuickStart (SOAP) de la API de Java del servicio de Distiller
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -10,21 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
-# Inicio rápido de la API de Java de Distiller Service (SOAP) {#distiller-service-java-api-quickstart-soap}
+# Inicio rápido de la API de Java del servicio Distiller (SOAP) {#distiller-service-java-api-quickstart-soap}
 
 El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Distiller®:
 
 [Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento PDF mediante la API de Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
