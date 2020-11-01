@@ -1,8 +1,7 @@
 ---
 title: APIQ del servicio de backup y restauraciónInicios rápidos
 seo-title: APIQ del servicio de backup y restauraciónInicios rápidos
-description: nulo
-seo-description: nulo
+description: APIQ del servicio de backup y restauraciónInicios rápidos
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ El Inicio rápido de la API de Java (SOAP) está disponible para la API de servi
 
 [Inicio rápido: Salida del modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -149,7 +148,7 @@ El siguiente ejemplo de código Java entra en el modo de copia de seguridad con 
 
 ## Inicio rápido (modo SOAP): Salida del modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java hace que Forms Server salga explícitamente del modo de copia de seguridad y vuelva a depurar archivos del Almacenamiento de Documento global. (Consulte [Salida del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formularios.)
+El siguiente ejemplo de código Java hace que Forms Server deje el modo de copia de seguridad y vuelva a depurar archivos del Almacenamiento de Documento global. (Consulte [Salida del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formularios.)
 
 ```java
  /*
