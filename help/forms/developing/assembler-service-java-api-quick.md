@@ -1,8 +1,7 @@
 ---
 title: Inicio rápido de la API de Java del servicio de ensamblador (SOAP)
 seo-title: Inicio rápido de la API de Java del servicio de ensamblador (SOAP)
-description: nulo
-seo-description: nulo
+description: Inicio rápido de la API de Java del servicio de ensamblador (SOAP)
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -40,11 +39,11 @@ El Inicio rápido de la API de Java (SOAP) está disponible para el servicio del
 
 [Inicio rápido (modo SOAP): Creación dinámica de un documento DDX mediante la API de Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Compilación de carteras PDF mediante la API de Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Inicio rápido (modo SOAP): Compilación de Portfolio PDF mediante la API de Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Compilación de varios fragmentos XDP mediante la API de Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
@@ -1381,9 +1380,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Compilación de carteras PDF mediante la API de Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Inicio rápido (modo SOAP): Compilación de Portfolio PDF mediante la API de Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-El siguiente ejemplo de código Java crea una cartera PDF. El portafolio PDF se guarda como un archivo PDF denominado *EnsemblerResultPortfolio.pdf*. (Consulte [Compilación de carteras](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF).
+El siguiente ejemplo de código Java crea una cartera PDF. El portafolio PDF se guarda como un archivo PDF denominado *EnsemblerResultPortfolio.pdf*. (Consulte [Compilación de Portfolio](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF).
 
 ```java
  /*
