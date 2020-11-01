@@ -1,27 +1,29 @@
 ---
-title: Seguridad de Documento| Gestión de datos de usuario
-seo-title: Seguridad de Documento| Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+title: Seguridad de documento | Gestión de datos de usuario
+seo-title: Seguridad de documento | Gestión de datos de usuario
+description: Seguridad de documento | Gestión de datos de usuario
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 0%
 
 ---
 
 
-# Seguridad de Documento| Gestión de datos de usuario {#document-security-handling-user-data}
+# Seguridad de documento | Gestión de datos de usuario {#document-security-handling-user-data}
 
-La seguridad de documento de AEM Forms le permite crear, almacenar y aplicar ajustes de seguridad predefinidos a sus documentos. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Puede proteger documentos mediante políticas. Una directiva es una recopilación de información que incluye la configuración de seguridad y una lista de usuarios autorizados. Puede aplicar una política a uno o varios documentos y autorizar a los usuarios que se agreguen en la administración de usuarios JEE de AEM Forms.
+La seguridad de AEM Forms documento le permite crear, almacenar y aplicar a sus documentos configuraciones de seguridad predefinidas. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Puede proteger documentos mediante políticas. Una directiva es una recopilación de información que incluye la configuración de seguridad y una lista de usuarios autorizados. Puede aplicar una política a uno o varios documentos y autorizar a los usuarios que se agreguen en la administración de usuarios de AEM Forms JEE.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
 ## Almacenes de datos y datos de usuarios {#user-data-and-data-stores}
 
-La seguridad de Documento almacena directivas y datos relacionados con documentos protegidos, incluidos datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, los datos de los usuarios autorizados en una directiva almacenada en la administración de usuarios. Para obtener información sobre los datos almacenados en la administración de usuarios, consulte Administración de usuarios de [Forms: Gestión de datos](/help/forms/using/user-management-handling-user-data.md)de usuario.
+La seguridad de documento almacena directivas y datos relacionados con documentos protegidos, incluidos datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, los datos de los usuarios autorizados en una directiva almacenada en la administración de usuarios. Para obtener información sobre los datos almacenados en la administración de usuarios, consulte Administración de usuarios de [Forms: Gestión de datos](/help/forms/using/user-management-handling-user-data.md)de usuario.
 
 La siguiente tabla muestra cómo organiza la seguridad de documento los datos en las tablas de base de datos.
 
@@ -156,6 +158,7 @@ Haga lo siguiente para eliminar los datos de seguridad de documento para un ID p
    1. Abra el blob XML de cada fila de la tabla `EdcPolicyXMLEntity` o `EdcPolicyArchiveEntity` y extraiga el archivo XML. El archivo XML es similar al que se muestra a continuación.
    1. Edite el archivo XML para eliminar el blob del ID principal.
    1. Repita los pasos 1 y 2 para el otro archivo.
+
    >[!NOTE]
    >
    >Debe eliminar el blob completo de la `Principal` etiqueta para un ID principal o el XML de directiva puede dañarse o quedar inutilizable.
@@ -194,17 +197,19 @@ Haga lo siguiente para eliminar los datos de seguridad de documento para un ID p
    1. Como administrador, inicie sesión en la consola de administración de Forms JEE en https://[*server*]:[*port*]/adminui.
    1. Vaya a **[!UICONTROL Servicios > Seguridad de Documento > Conjuntos]** de directivas.
    1. Abra un conjunto de directivas y elimine el usuario de la directiva.
+
    **Uso de la página web de seguridad de documento**
 
-   Los usuarios de seguridad de Documento que tengan permisos para crear políticas personales pueden eliminar datos de usuario de sus políticas. Para ello:
+   Los usuarios de seguridad de documento que tengan permisos para crear políticas personales pueden eliminar datos de usuario de sus políticas. Para ello:
 
    1. Los usuarios con políticas personales inician sesión en la página web de seguridad de documento en https://[*server*]:[*port*]/edc.
    1. Vaya a **[!UICONTROL Servicios > Seguridad de Documento > Mis políticas]**.
    1. Abra una directiva y elimine el usuario de la misma.
+
    >[!NOTE]
    >
    >Los administradores pueden buscar, acceder y eliminar datos de usuario de las políticas personales de otros usuarios en **[!UICONTROL Servicios > Seguridad de Documento > Mis políticas]** mediante la consola de administración.
 
-1. Elimine los datos del ID principal de la base de datos de administración de usuarios. Para ver los pasos detallados, consulte Administración de usuarios [de formularios| Gestión de datos](/help/forms/using/user-management-handling-user-data.md)de usuario.
-1. Inicio del servidor de AEM Forms.
+1. Elimine los datos del ID principal de la base de datos de administración de usuarios. Para ver los pasos detallados, consulte Administración de usuarios de [Forms | Gestión de datos](/help/forms/using/user-management-handling-user-data.md)de usuario.
+1. Inicio del servidor AEM Forms.
 
