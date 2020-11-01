@@ -1,18 +1,17 @@
 ---
 title: Forms Portal | Gestión de datos de usuario
 seo-title: Forms Portal | Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+description: Forms Portal | Gestión de datos de usuario
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 1%
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +27,7 @@ Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como bo
 El portal de Forms almacena datos para formularios de borrador y enviados en los siguientes escenarios:
 
 * La acción de envío configurada en el formulario adaptable es Acción **de envío de** Forms Portal.
-* En el caso de acciones de envío distintas a Acción **de envío de** Forms Portal, la opción **[!UICONTROL Almacenar datos en el portal]** de formularios está activada en las propiedades de **[!UICONTROL envío]** del contenedor de formulario adaptable.
+* En el caso de acciones de envío distintas a la acción **de envío de** Forms Portal, la opción **[!UICONTROL Almacenar datos en el portal]** de formularios está activada en las propiedades de **[!UICONTROL envío]** del contenedor de formulario adaptable.
 
 Por cada borrador y formulario enviado para usuarios anónimos e iniciados, el portal de formularios almacena los siguientes datos:
 
