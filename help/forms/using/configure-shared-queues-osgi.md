@@ -3,13 +3,11 @@ title: Configurar colas compartidas
 seo-title: Configurar colas compartidas
 description: Aprenda a utilizar colas compartidas para flujos de trabajo centrados en Forms en AEM Forms en OSGi.
 seo-description: Aprenda a utilizar colas compartidas para flujos de trabajo centrados en Forms en AEM Forms en OSGi.
-uuid: null
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: null
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 1%
