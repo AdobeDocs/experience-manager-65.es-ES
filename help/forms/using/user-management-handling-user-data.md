@@ -1,21 +1,23 @@
 ---
-title: Administración de usuarios de formularios| Gestión de datos de usuario
-seo-title: Administración de usuarios de formularios| Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+title: Administración de usuarios de Forms | Gestión de datos de usuario
+seo-title: Administración de usuarios de Forms | Gestión de datos de usuario
+description: Administración de usuarios de Forms | Gestión de datos de usuario
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 0%
 
 ---
 
 
-# Administración de usuarios de formularios| Gestión de datos de usuario {#forms-user-management-handling-user-data}
+# Administración de usuarios de Forms | Gestión de datos de usuario {#forms-user-management-handling-user-data}
 
-La administración de usuarios es un componente JEE de AEM Forms que permite a los usuarios de AEM Forms acceder a AEM Forms mediante la creación, la gestión y la autorización. La administración de usuarios utiliza los dominios como directorio para obtener información del usuario. Se admiten los siguientes tipos de dominio:
+La administración de usuarios es un componente JEE de AEM Forms que permite a los usuarios de AEM Forms crear, administrar y autorizar el acceso a AEM Forms. La administración de usuarios utiliza los dominios como directorio para obtener información del usuario. Se admiten los siguientes tipos de dominio:
 
 **Dominios** locales: Este tipo de dominio no está conectado a un sistema de almacenamiento de terceros. En su lugar, los usuarios y grupos se crean localmente y residen en la base de datos de Administración de usuarios. Las contraseñas se almacenan localmente y la autenticación se realiza mediante una base de datos local.
 
@@ -27,11 +29,11 @@ La administración de usuarios es un componente JEE de AEM Forms que permite a l
 
 ## Almacenes de datos y datos de usuarios {#user-data-and-data-stores}
 
-La administración de usuarios almacena datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, cualquier usuario que haya iniciado sesión al menos una vez en las aplicaciones de Forms en AEM `https://'[server]:[port]'lc`, el usuario se creará en el repositorio de AEM. Por lo tanto, la administración de usuarios se almacena en los siguientes almacenes de datos:
+La administración de usuarios almacena datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, cualquier usuario que haya iniciado sesión al menos una vez en las aplicaciones de Forms en AEM autor `https://'[server]:[port]'lc`, el usuario se crea en AEM repositorio. Por lo tanto, la administración de usuarios se almacena en los siguientes almacenes de datos:
 
 * Base de datos
-* Repositorio de AEM
-* almacenamientos de terceros como directorio LDAP
+* AEM repositorio
+* Almacenamientos de terceros como directorio LDAP
 
 >[!NOTE]
 >
@@ -84,13 +86,13 @@ La administración de usuarios almacena datos de usuario en las siguientes tabla
  </tbody>
 </table>
 
-### Repositorio de AEM {#aem-repository}
+### AEM repositorio {#aem-repository}
 
-Los datos de administración de usuarios para los usuarios que al menos una vez accedieron a las aplicaciones de Forms en `https://'[server]:[port]'lc` se almacenan también en el repositorio de AEM.
+Los datos de administración de usuarios para los usuarios que al menos una vez accedieron a las aplicaciones de Forms en `https://'[server]:[port]'lc` se almacenan también en AEM repositorio.
 
 ## Acceso y eliminación de datos de usuario {#access-and-delete-user-data}
 
-Puede acceder a los datos de administración de usuarios y exportarlos en las bases de datos de administración de usuarios y en el repositorio de AEM, y si es necesario, eliminarlos de forma permanente.
+Puede acceder a los datos de administración de usuarios y exportarlos para los usuarios de las bases de datos de administración de usuarios y AEM repositorio y, si es necesario, eliminarlos de forma permanente.
 
 ### Base de datos {#database-1}
 
@@ -122,6 +124,7 @@ Ejecute los siguientes comandos de base de datos para exportar datos de administ
    >
    >
 * Replace `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+
 >
 
 
@@ -148,7 +151,7 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 Haga lo siguiente para eliminar los datos de administración de usuarios de un ID principal de las tablas de base de datos.
 
-1. Elimine los datos de usuario del repositorio de AEM, si procede, tal como se describe en [Eliminar datos](/help/forms/using/user-management-handling-user-data.md#delete-aem)de usuario.
+1. Elimine los datos de usuario de AEM repositorio, si procede, tal como se describe en [Eliminar datos](/help/forms/using/user-management-handling-user-data.md#delete-aem)de usuario.
 1. Cierre el servidor de AEM Forms.
 1. Ejecute los siguientes comandos de base de datos para eliminar los datos de administración de usuarios para un ID principal de las tablas de base de datos. En el `Delete` comando, reemplace `<principal_id>` por el identificador principal del usuario cuyos datos desee eliminar.
 
@@ -170,22 +173,22 @@ Haga lo siguiente para eliminar los datos de administración de usuarios de un I
    Delete from EdcPrincipalEntity where id='<principal_id>';
    ```
 
-1. Inicio del servidor de AEM Forms.
+1. Inicio del servidor AEM Forms.
 
-### Repositorio de AEM {#aem-repository-1}
+### AEM repositorio {#aem-repository-1}
 
-Los usuarios de JEE de Forms tienen sus datos en el repositorio de AEM si han accedido al menos a una instancia de autor de AEM Forms. Puede acceder a sus datos de usuario y eliminarlos del repositorio de AEM.
+Los usuarios de Forms JEE tienen sus datos en AEM repositorio si han accedido al menos a la instancia de creación de AEM Forms. Puede acceder a los datos de usuario y eliminarlos de AEM repositorio.
 
 #### Acceso a los datos de usuario {#access-user-data}
 
-Para vista de usuarios creados en el repositorio de AEM, inicie sesión `https://'[server]:[port]'/lc/useradmin` con las credenciales de administrador de AEM. Tenga en cuenta que `server` y `port` en la URL son las de la instancia de creación de AEM. Aquí puede buscar usuarios con su nombre de usuario. Haga clic con el botón Doble en un usuario para vista de información como propiedades, permisos y grupos para el usuario. La `Path` propiedad de un usuario especifica la ruta al nodo de usuario creado en el repositorio de AEM.
+Para vista de usuarios creados en AEM repositorio, inicie sesión `https://'[server]:[port]'/lc/useradmin` con AEM credenciales de administrador. Tenga en cuenta que `server` y `port` en la URL son los de la instancia de creación de AEM. Aquí puede buscar usuarios con su nombre de usuario. Haga clic con el botón doble en un usuario para vista de información como propiedades, permisos y grupos para el usuario. La `Path` propiedad de un usuario especifica la ruta al nodo de usuario creado en AEM repositorio.
 
 #### Eliminar datos de usuario {#delete-aem}
 
 Para eliminar un usuario:
 
-1. Vaya a `https://'[server]:[port]'/lc/useradmin` con las credenciales de administrador de AEM.
+1. Vaya a `https://'[server]:[port]'/lc/useradmin` con AEM credenciales de administrador.
 1. Busque un usuario y haga clic con el botón doble en el nombre de usuario para abrir las propiedades del usuario. Copie la `Path` propiedad.
 1. Vaya a AEM CRX DELite en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
-1. Elimine la ruta y haga clic en **[!UICONTROL Guardar todo]** para eliminar de forma permanente al usuario del repositorio de AEM.
+1. Elimine la ruta y haga clic en **[!UICONTROL Guardar todo]** para eliminar permanentemente al usuario de AEM repositorio.
 
