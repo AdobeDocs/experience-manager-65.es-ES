@@ -1,8 +1,7 @@
 ---
-title: Servicio de administración de Documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
-seo-title: Servicio de administración de Documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
-description: nulo
-seo-description: nulo
+title: Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
+seo-title: Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
+description: Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -10,21 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
 
 
-# Inicio rápido de la API de Java (SOAP) del servicio de administración de Documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Inicio rápido de la API de Java (SOAP) del servicio de administración de documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 Los siguientes Inicios rápidos están disponibles para el servicio de administración de Documentos (obsoleto).
 
 >[!NOTE]
 >
->A partir del 5 de agosto de 2011, Adobe está migrando clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan Content Services es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo basado en la arquitectura CRX moderna y modular, adquirido durante la adquisición por Adobe de Day Software.
+>A partir del 5 de agosto de 2011, Adobe está migrando clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan Content Services es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo basado en la arquitectura CRX moderna y modular, adquirido durante la adquisición de Adobe de Day Software.
 
 [Inicio rápido (modo SOAP): Creación de espacios de Content Services mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -42,7 +41,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio de administr
 
 [Inicio rápido (modo SOAP): Configuración de los permisos de Content Services mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 
