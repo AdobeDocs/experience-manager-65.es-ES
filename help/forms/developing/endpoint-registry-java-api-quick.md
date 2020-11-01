@@ -1,8 +1,7 @@
 ---
-title: Inicio rápido de la API de Java del Registro de Extremo (SOAP)
-seo-title: Inicio rápido de la API de Java del Registro de Extremo (SOAP)
-description: nulo
-seo-description: nulo
+title: QuickStart (SOAP) de la API de Java de Endpoint Registry
+seo-title: QuickStart (SOAP) de la API de Java de Endpoint Registry
+description: QuickStart (SOAP) de la API de Java de Endpoint Registry
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -40,11 +39,11 @@ El Inicio rápido de la API de Java (SOAP) está disponible para el Registro de 
 
 [Inicio rápido: Recuperación de información del conector del extremo mediante la API de Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->El inicio rápido ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+>El inicio rápido ubicado en Programación con formularios AEM se basa en Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 >[!NOTE]
 >
