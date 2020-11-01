@@ -1,17 +1,16 @@
 ---
 title: Servicio de extensiones de Acrobat Reader DCInicio rápido de la API de Java (SOAP)
 seo-title: Servicio de extensiones de Acrobat Reader DCInicio rápido de la API de Java (SOAP)
-description: nulo
-seo-description: nulo
+description: Servicio de extensiones de Acrobat Reader DCInicio rápido de la API de Java (SOAP)
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -27,7 +26,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio Extensiones 
 
 [Inicio rápido (modo SOAP): Recuperación de información de credenciales mediante la API de Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
