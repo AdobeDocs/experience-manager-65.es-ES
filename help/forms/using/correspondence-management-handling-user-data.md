@@ -1,31 +1,33 @@
 ---
-title: Administración de correspondencia| Gestión de datos de usuario
-seo-title: Administración de correspondencia| Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+title: Administración de correspondencia | Gestión de datos de usuario
+seo-title: Administración de correspondencia | Gestión de datos de usuario
+description: Administración de correspondencia | Gestión de datos de usuario
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 0%
 
 ---
 
 
-# Administración de correspondencia| Gestión de datos de usuario {#correspondence-management-handling-user-data}
+# Administración de correspondencia | Gestión de datos de usuario {#correspondence-management-handling-user-data}
 
-La gestión de correspondencia de AEM Forms le permite crear, administrar y optimizar correspondencia segura y personalizada con los clientes. Proporciona una interfaz de usuario intuitiva para que los usuarios comerciales creen correspondencias mediante bloques de contenido y elementos multimedia previamente aprobados. Para obtener más información sobre la creación de correspondencias, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
+La administración de correspondencia de AEM Forms le permite crear, administrar y optimizar correspondencia segura y personalizada con los clientes. Proporciona una interfaz de usuario intuitiva para que los usuarios comerciales creen correspondencias mediante bloques de contenido y elementos multimedia previamente aprobados. Para obtener más información sobre la creación de correspondencias, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
 
 Cuando un usuario comercial o un agente guarda una correspondencia como borrador o la envía, se guarda una instancia de carta en el repositorio de AEM. La instancia de carta incluye metadatos y datos de correspondencia.
 
 >[!NOTE]
 >
->En AEM 6.5 Forms, la gestión de correspondencia no está disponible de forma predeterminada. Si va a realizar la actualización desde una versión anterior de AEM Forms, instale el paquete de compatibilidad y migre los recursos de gestión de correspondencia para seguir utilizándolos en AEM 6.5 Forms. Para obtener más información, consulte Paquete [de compatibilidad](/help/forms/using/compatibility-package.md).
+>En AEM 6.5 Forms, la administración de correspondencia no está disponible de forma predeterminada. Si está actualizando desde una versión anterior de AEM Forms, instale el paquete de compatibilidad y migre los recursos de administración de correspondencia para seguir usándolos en AEM Forms 6.5. Para obtener más información, consulte Paquete [de compatibilidad](/help/forms/using/compatibility-package.md).
 
 ## Almacenes de datos y datos de usuarios {#data}
 
-La gestión de correspondencia almacena datos para las letras de borrador y enviadas en el repositorio de AEM solo si la instancia de publicación está configurada para administrar instancias de cartas. Para obtener más información acerca de la configuración, consulte Propiedades [de configuración de Administración de](/help/forms/using/cm-configuration-properties.md)correspondencia.
+La administración de correspondencia almacena datos para las cartas de borrador y enviadas en AEM repositorio solo si la instancia de publicación está configurada para administrar instancias de carta. Para obtener más información acerca de la configuración, consulte Propiedades [de configuración de Administración de](/help/forms/using/cm-configuration-properties.md)correspondencia.
 
 Según la persistencia del almacén de datos configurada para la implementación de AEM, los borradores y los datos de correspondencia enviados se almacenan en las siguientes ubicaciones.
 
@@ -38,12 +40,12 @@ Según la persistencia del almacén de datos configurada para la implementación
   </tr>
   <tr>
    <td><p>Predeterminado</p> </td>
-   <td><p>Repositorio de AEM de instancias de publicación y creación especificadas en la configuración de replicación inversa</p> </td>
+   <td><p>AEM repositorio de instancias de publicación y creación especificado en la configuración de replicación inversa</p> </td>
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code> </p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>
-   <td><p>Repositorio de AEM de la instancia de creación de procesamiento remoto</p> </td>
+   <td><p>AEM repositorio de la instancia de creación de procesamiento remoto</p> </td>
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code></p> </td>
   </tr>
  </tbody>
@@ -72,13 +74,13 @@ Puede acceder a los datos de envío y borrador de la correspondencia en los alma
 
 La administración de correspondencia proporciona API que puede utilizar para buscar y acceder a instancias de cartas de borrador y envío. Mediante las API, puede buscar y abrir instancias de carta utilizando el ID de instancia de carta o el usuario que guardó o envió la correspondencia. Para obtener más información, consulte [API para acceder a instancias](/help/forms/using/cm-apis-to-access-letter-instances.md)de letras.
 
-También puede desplazarse a la instancia de carta en el repositorio de AEM mediante CRX DELite. Consulte Almacenes [de datos y datos de](/help/forms/using/correspondence-management-handling-user-data.md#data) usuario para obtener información sobre los datos almacenados y la ubicación del repositorio.
+También puede desplazarse a la instancia de carta en AEM repositorio mediante CRX DELite. Consulte Almacenes [de datos y datos de](/help/forms/using/correspondence-management-handling-user-data.md#data) usuario para obtener información sobre los datos almacenados y la ubicación del repositorio.
 
 ### Eliminar datos de usuario {#delete-user-data}
 
 Para buscar una instancia de carta que contenga los datos de un usuario específico, puede:
 
 * Utilice las API de administración de correspondencia si se conoce el nombre de la instancia de carta o el usuario que guardó el borrador o envió la correspondencia
-* Utilice la búsqueda del repositorio de AEM utilizando información personal, como el nombre o el ID de correo electrónico, para encontrar el nodo en el que se almacena la información
+* Utilice AEM búsqueda del repositorio utilizando información personal, como el nombre o el ID del correo electrónico, para encontrar el nodo en el que se almacena la información
 
-Para eliminar completamente los datos de usuario de las correspondencias enviadas y borradas de los sistemas AEM, debe eliminar manualmente el nodo de instancia de carta de todas las instancias de AEM aplicables.
+Para eliminar completamente los datos de usuario de las correspondencias enviadas y borradas de AEM sistemas, debe eliminar manualmente el nodo de instancia de letra de todas las instancias de AEM aplicables.
