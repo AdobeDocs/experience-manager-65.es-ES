@@ -1,8 +1,7 @@
 ---
 title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
 seo-title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
-description: nulo
-seo-description: nulo
+description: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ El Inicio rápido de la API de Java (SOAP) está disponible para el servicio App
 
 >[!NOTE]
 >
->Las API del administrador de aplicaciones solo admiten archivos LCA AEM Forms. No admite archivos LCA de LiveCycle ES2 y ES4.
+>Las API del administrador de aplicaciones solo admiten archivos LCA de AEM Forms. No admite archivos LCA de LiveCycle ES2 y ES4.
 
 Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
