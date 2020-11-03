@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ La administración de recursos de Dynamic Media (imágenes, vídeos y recursos i
 
 Al obtener una vista previa, también puede aplicar ajustes preestablecidos de imagen (solo para imágenes) o ajustes preestablecidos de visor (para vídeo e imágenes). No se pueden aplicar ambos a un recurso. Consulte [Aplicación de ajustes preestablecidos](/help/assets/viewer-presets.md) de visor y [Aplicación de ajustes preestablecidos](/help/assets/image-sets.md)de imagen.
 
-Encontrará información general sobre la administración de recursos en [Administración de recursos con la IU](/help/assets/manage-assets.md)táctil.
+La información general sobre la administración de recursos se encuentra en [Administrar recursos](/help/assets/manage-assets.md).
 
 Los siguientes temas describen lo que debe hacer para administrar los recursos de Dynamic Media:
 
@@ -30,4 +30,3 @@ Los siguientes temas describen lo que debe hacer para administrar los recursos d
 * [Vista previa de recursos de Dynamic Media](/help/assets/previewing-assets.md)
 * [Publicación de recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
 * [Trabajar con selectores](/help/assets/working-with-selectors.md)
-
