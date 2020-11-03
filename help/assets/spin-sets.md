@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1825'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET.]** Ade
 
 >[!NOTE]
 >
->Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/manage-assets.md)táctil.
+>Para obtener información sobre la interfaz de usuario de Recursos, consulte [Administrar recursos](/help/assets/manage-assets.md).
 
 ## Inicio rápido: Conjuntos de giros {#quick-start-spin-sets}
 
