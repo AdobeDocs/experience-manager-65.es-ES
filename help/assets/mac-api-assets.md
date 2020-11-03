@@ -1,9 +1,9 @@
 ---
-title: API HTTP de [!DNL Assets].
+title: '[!DNL Assets] API HTTP.'
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 1%
@@ -183,7 +183,7 @@ Actualiza las propiedades de metadatos del recurso. Si actualiza cualquier propi
 
 ### Sincronizar actualización de metadatos entre `dc` y `jcr` Área de nombres {#sync-metadata-between-namespaces}
 
-El método API actualiza las propiedades de metadatos de la `jcr` Área de nombres. Las actualizaciones realizadas con la IU táctil modifican las propiedades de metadatos de la `dc` Área de nombres. Para sincronizar los valores de metadatos entre `dc` y la `jcr` Área de nombres, puede crear un flujo de trabajo y configurar un Experience Manager para que ejecute el flujo de trabajo tras la edición de recursos. Utilice una secuencia de comandos ECMA para sincronizar las propiedades de metadatos necesarias. La siguiente secuencia de comandos de ejemplo sincroniza la cadena de título entre `dc:title` y `jcr:title`.
+El método API actualiza las propiedades de metadatos de la `jcr` Área de nombres. Las actualizaciones realizadas mediante la interfaz de usuario cambian las propiedades de metadatos de la `dc` Área de nombres. Para sincronizar los valores de metadatos entre `dc` y la `jcr` Área de nombres, puede crear un flujo de trabajo y configurar un Experience Manager para que ejecute el flujo de trabajo tras la edición de recursos. Utilice una secuencia de comandos ECMA para sincronizar las propiedades de metadatos necesarias. La siguiente secuencia de comandos de ejemplo sincroniza la cadena de título entre `dc:title` y `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
