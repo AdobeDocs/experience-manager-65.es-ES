@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4803'
 ht-degree: 4%
 
 ---
@@ -92,7 +92,7 @@ Para ayudarle a ponerse en marcha rápidamente:
    * [Añada una pancarta de carrusel a su sitio web en AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Si es cliente de AEM Sites, puede agregar el conjunto de carrusel directamente a la página en AEM, mediante el componente Medios interactivos.
 
 
-Si necesita editar conjuntos de carrusel, consulte [Edición de conjuntos de carrusel.](#editing-carousel-sets) Además, puede realizar vistas y editar las propiedades [del conjunto de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)carrusel.
+Si necesita editar conjuntos de carrusel, consulte [Edición de conjuntos de carrusel.](#editing-carousel-sets) Además, puede realizar vistas y editar las propiedades [del conjunto de](manage-assets.md#editing-properties)carrusel.
 
 ## Identificación de variables de puntos interactivos y mapas de imagen {#identifying-hotspot-and-image-map-variables}
 
