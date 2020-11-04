@@ -3,9 +3,9 @@ title: Carpetas privadas para compartir recursos
 description: Obtenga información sobre cómo crear una carpeta privada en [!DNL Adobe Experience Manager Assets] su equipo y compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ Para crear y compartir una carpeta privada:
 
    >[!NOTE]
    >
-   >Puede asignar varias funciones, como Editor, Propietario o Visor, al usuario con el que comparte la carpeta. Si asigna una función Propietario al usuario, este tiene privilegios de editor en la carpeta. Además, el usuario puede compartir la carpeta con otros usuarios. Si asigna una función de editor, el usuario puede editar los recursos de la carpeta privada. Si asigna una función de visor, el usuario solo puede vista los recursos de la carpeta privada.
+   >Puede asignar varias funciones, como `Editor``Owner`, o `Viewer` al usuario con el que comparte la carpeta. Si asigna una `Owner` función al usuario, éste tiene `Editor` privilegios en la carpeta. Además, el usuario puede compartir la carpeta con otros usuarios. Si asigna una `Editor` función, el usuario puede editar los recursos de la carpeta privada. Si asigna una función de visor, el usuario solo puede vista los recursos de la carpeta privada.
 
    >[!NOTE]
    >
-   >La carpeta privada tiene al menos un miembro con la función Propietario. Por lo tanto, el administrador no puede quitar todos los miembros del propietario de una carpeta privada. Sin embargo, para eliminar los propietarios existentes (y el administrador mismo) de la carpeta privada, el administrador debe agregar otro usuario como propietario.
+   >La carpeta privada tiene al menos un miembro con `Owner` función. Por lo tanto, el administrador no puede quitar todos los miembros del propietario de una carpeta privada. Sin embargo, para quitar los propietarios existentes (y el administrador mismo) de la carpeta privada, el administrador debe agregar otro usuario como propietario.
 
 1. Haga clic en **[!UICONTROL Guardar.]** Según la función que asigne, al usuario se le asignará un conjunto de privilegios en la carpeta privada cuando inicie sesión en [!DNL Assets].
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el mensaje de confirmación.
@@ -59,7 +59,7 @@ Para crear y compartir una carpeta privada:
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Haga clic en Notificaciones para abrir la lista de las notificaciones.
+1. Haga clic en [!UICONTROL Notificaciones] para abrir una lista de las notificaciones.
 
    ![Lista de las notificaciones](assets/Assets-Notification.png)
 
@@ -83,4 +83,4 @@ Puede eliminar una carpeta seleccionando la carpeta y la opción [!UICONTROL Eli
 >
 >Si elimina una carpeta utilizando el método anterior de la interfaz de usuario, también se eliminarán los grupos de usuarios asociados.
 >
->Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio mediante `clean` el método de JMX en la instancia de autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes pueden eliminarse del repositorio mediante `clean` el método JMX en la instancia de autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
