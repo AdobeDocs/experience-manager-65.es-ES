@@ -3,9 +3,9 @@ title: Descargar recursos
 description: Obtenga información sobre cómo descargar recursos [!DNL Adobe Experience Manager] desde y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '862'
 ht-degree: 3%
 
 ---
@@ -23,11 +23,11 @@ No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de
 
 Para descargar recursos, siga estos pasos:
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
-1. En la página Navegación, toque **[!UICONTROL Recursos]** > **[!UICONTROL Archivos.]**
+1. En la esquina superior izquierda, haga clic en el logotipo. In the left rail, click **[!UICONTROL Navigation]**.
+1. En la página [!UICONTROL Navegación] , haga clic en **[!UICONTROL Recursos]** > **[!UICONTROL Archivos.]**
 1. Vaya a una carpeta que contenga los recursos que desee descargar.
 1. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta.
-1. En la barra de herramientas, toque **[!UICONTROL Descargar.]**
+1. En la barra de herramientas, haga clic en **[!UICONTROL Descargar.]**
 
    ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ Para descargar recursos, siga estos pasos:
    | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde dentro de AEM. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
    | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando una de las que aparecen en la lista Ajuste preestablecido [de](image-presets.md) imagen. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como invertir la imagen. La opción solo está disponible si se ha [!DNL Dynamic Media] activado. |
 
-1. En el cuadro de diálogo, toque **[!UICONTROL Descargar.]**.
+1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar.]**.
 
 Cuando selecciona una carpeta para descargar, se descarga la jerarquía completa de recursos bajo la carpeta. Para incluir cada recurso que descargue (incluidos los recursos de las carpetas secundarias anidadas en la carpeta principal) en una carpeta individual, seleccione **[!UICONTROL Crear una carpeta independiente para cada recurso]**.
 
