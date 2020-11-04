@@ -3,7 +3,7 @@ title: Conceptos de metadatos
 description: Obtenga información sobre la necesidad y los tipos de metadatos que facilitan la categorización y organización de los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
 source-wordcount: '2732'
 ht-degree: 6%
@@ -120,7 +120,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * Álbum - [!DNL Adobe Photoshop Album].
 * CQ - Utilizado por [!DNL Experience Manager Assets].
 * DAM - Utilizado por [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de metadatos y archivos para sistemas operativos Windows.
+* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de metadatos y archivos para sistemas operativos Windows.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
