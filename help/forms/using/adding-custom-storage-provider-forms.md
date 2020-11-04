@@ -1,6 +1,6 @@
 ---
-title: almacenamiento personalizado para los borradores y el componente de envíos
-seo-title: almacenamiento personalizado para los borradores y el componente de envíos
+title: Almacenamiento personalizado para los borradores y el componente de envíos
+seo-title: Almacenamiento personalizado para los borradores y el componente de envíos
 description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 seo-description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
 
-# almacenamiento personalizado para los borradores y el componente de envíos {#custom-storage-for-drafts-and-submissions-component}
+# Almacenamiento personalizado para los borradores y el componente de envíos {#custom-storage-for-drafts-and-submissions-component}
 
 ## Información general {#overview}
 
@@ -96,6 +96,10 @@ public interface DraftDataService {
     public byte[] getAttachment (String attachmentID) throws FormsPortalException;
 }
 ```
+
+>[!NOTE]
+>
+>El valor mínimo de la longitud del campo de ID de borrador es de 26 caracteres. Adobe recomienda definir la longitud del ID de borrador en 26 caracteres o más.
 
 ## Servicio de envío de datos {#submission-data-service}
 
@@ -184,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar una ID única propia. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar una ID única personalizada para cada borrador y formulario enviado. Además, establezca la clasificación de servicio de la implementación de generación de ID personalizada más alta que 0. Garantiza que se utilice la implementación personalizada en lugar de la implementación predeterminada.
+El portal de Forms utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar una ID única propia. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar una ID única personalizada para cada borrador y formulario enviado. Además, establezca la clasificación de servicio de la implementación de generación de ID personalizada más alta que 0. Garantiza que se utilice la implementación personalizada en lugar de la implementación predeterminada.
 
 ```java
 public interface FPKeyGeneratorService {
