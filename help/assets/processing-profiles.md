@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
+source-git-commit: 141a1783f275c0b3587ebc374bde19a21e107409
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Consulte [Ajuste del tamaño de lote del flujo de trabajo](#adjusting-load)de re
 **Ajuste opcional del tamaño del lote del flujo de trabajo de reprocesamiento**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de Lista, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos.]**
+1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de Lista, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
 
    ![Página Modelos de Flujo de Trabajo con Scene7: Volver a procesar los recursos seleccionados en la Vista de tarjetas](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -117,9 +117,9 @@ Consulte [Ajuste del tamaño de lote del flujo de trabajo](#adjusting-load)de re
 
    ![Cuadro de diálogo Propiedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. En la esquina superior derecha del cuadro de diálogo Cargar **[!UICONTROL por lotes a Scene7 - Propiedades]** de la etapa, haga clic en **[!UICONTROL Hecho.]**
+1. En la esquina superior derecha del cuadro de diálogo Cargar **[!UICONTROL por lotes a Scene7 - Propiedades]** de la etapa, haga clic en **[!UICONTROL Finalizado]**.
 
-1. En la esquina superior derecha del Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, haga clic en **[!UICONTROL Sincronizar.]** Cuando se ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución de flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha del Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, haga clic en **[!UICONTROL Sincronizar]**. Cuando se ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución de flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
 
    ![Sincronización del modelo de flujo de trabajo](/help/assets/assets-dm/reprocess-assets1.png)
 
