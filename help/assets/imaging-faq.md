@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '2085'
 ht-degree: 2%
 
 ---
@@ -60,11 +60,23 @@ No. Las imágenes inteligentes se incluyen en la licencia existente de Dynamic M
 
 ## ¿Cómo funcionan las imágenes inteligentes? {#how-does-smart-imaging-work}
 
-Smart Imaging utiliza Adobe Sensei para convertir automáticamente imágenes al formato, tamaño y calidad más óptimos, según la capacidad del navegador:
+Cuando un consumidor solicita una imagen, comprobamos las características del usuario y la convertimos al formato de imagen adecuado según el navegador en uso. Estas conversiones de formato se realizan de manera que no disminuya la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes en diferentes formatos según la capacidad del navegador de la siguiente manera.
 
-* Convertir automáticamente a WebP para exploradores como Chrome, Firefox, Microsoft Edge, Android y Opera.
-* Convertir automáticamente a JPEG2000 para navegadores como Safari.
-* Convertir automáticamente a JPEG para exploradores como Internet Explorer 9+.
+* Convertir automáticamente a WebP para los siguientes exploradores:
+   * Chrome
+   * Firefox
+   * Microsoft Edge
+   * Safari 14.0 +
+      * Safari 14 solo con iOS 14.0 y posterior y macOS BigSur y posterior
+   * Android
+   * Opera
+* Compatibilidad con exploradores heredados para lo siguiente:
+
+   | Explorador | Versión de explorador/SO | Formato |
+   | --- | --- | --- |
+   | Safari | iOS 14.0 o anterior | JPEG2000 |
+   | Edge | 18 o anterior | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * Para los exploradores que no admiten estos formatos, se proporciona el formato de imagen solicitado originalmente.
 
 Si el tamaño de la imagen original es menor que el de la imagen inteligente, se muestra la imagen original.
@@ -90,11 +102,15 @@ La imagen inteligente funciona con los &quot;ajustes preestablecidos de imagen&q
 
 ## ¿Tendré que cambiar direcciones URL, ajustes preestablecidos de imagen o implementar código nuevo en mi sitio para las imágenes inteligentes? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-No. Las imágenes inteligentes funcionan perfectamente con las URL de imágenes y los ajustes preestablecidos de imagen existentes. Además, las imágenes inteligentes no requieren que agregue ningún código en el sitio web para detectar el explorador de un usuario. Todo esto se gestiona automáticamente.
+Las imágenes inteligentes funcionan perfectamente con las URL de imágenes y los ajustes preestablecidos de imagen existentes si se configura las imágenes inteligentes en el dominio personalizado existente. Además, las imágenes inteligentes no requieren que agregue ningún código en el sitio web para detectar el explorador de un usuario. Todo esto se gestiona automáticamente.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+En caso de que necesite configurar un nuevo dominio personalizado para utilizar las imágenes inteligentes, las direcciones URL deberán actualizarse para reflejar este dominio personalizado.
 
 Además, consulte [¿Cumplo los requisitos para utilizar imágenes inteligentes?](#am-i-eligible-to-use-smart-imaging) para comprender los requisitos previos para las imágenes inteligentes.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## ¿Las imágenes inteligentes funcionan con HTTPS? ¿Qué tal HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
@@ -177,6 +193,34 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 No se convierten todas las imágenes. La imagen inteligente decide si la conversión es necesaria para mejorar el rendimiento. En algunos casos, cuando no hay una ganancia de rendimiento esperada o el formato no es JPEG o PNG, la imagen no se convierte.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## ¿Cómo sé la ganancia de rendimiento? ¿Existe alguna forma de notar los beneficios de las imágenes inteligentes? {#performance-gain}
+
+**Acerca de los encabezados de imágenes inteligentes**
+
+Los valores del encabezado de imagen inteligente solo funcionan cuando las solicitudes que no son de caché se sirven hasta ahora. Esto se realiza para mantener la caché actual compatible y evitar la necesidad de realizar cálculos cuando las imágenes se están sirviendo a través de la caché.
+
+Para utilizar encabezados de imagen inteligente, debe agregar el`cache=off`modificador en las solicitudes. Consulte[Caché en la API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html)de servicio y procesamiento de imágenes de Dynamic Media.
+
+Ejemplo de uso `cache=off` (solo con fines ilustrativos):
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+Después de utilizar una solicitud de este tipo, en la sección Encabezados de respuesta, puede ver el `-x-adobe-smart-imaging` encabezado. Consulte la siguiente captura de pantalla con `-x-adobe-smart-imaging` resaltado.
+
+![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+Este valor de encabezado indica lo siguiente:
+
+* Las imágenes inteligentes funcionan para la compañía.
+* El valor positivo (>=0) indica que la conversión se realizó correctamente. En este caso, se devuelve una imagen nueva (webP aquí).
+* El valor negativo (&lt;0) indica que la conversión no se realizó correctamente. En este caso, se devuelve la imagen solicitada original (JPEG de forma predeterminada, si no se especifica).
+* El valor indica la diferencia en bytes entre la imagen solicitada y la nueva imagen. En este caso, los bytes guardados son 75048, lo que representa aproximadamente 75 KB para una imagen. 
+   * El valor negativo indica que la imagen solicitada era más pequeña que la nueva imagen. Se muestra la diferencia de tamaño negativa, pero la imagen servida es sólo la imagen solicitada original
+
+**¿Cuándo utilizar encabezados de imágenes inteligentes?**
+
+Los encabezados de respuesta de imágenes inteligentes están activados para la depuración o al mismo tiempo que se resaltan las ventajas de las imágenes inteligentes únicamente. El uso`cache=off`en situaciones normales puede afectar significativamente a los tiempos de carga.
 
 ## ¿Se puede desactivar Smart Imaging para cualquier solicitud? {#turning-off-smart-imaging}
 
