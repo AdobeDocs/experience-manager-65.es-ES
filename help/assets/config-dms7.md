@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 648b9601445a46b6a2734d5a47545c0439b9c283
 workflow-type: tm+mt
-source-wordcount: '5944'
+source-wordcount: '5964'
 ht-degree: 6%
 
 ---
@@ -155,8 +155,8 @@ Las tareas de configuración y configuración incluyen lo siguiente:
 * [Configuración de publicación para Image Server](#publishing-setup-for-image-server)
 * [Configuración de la configuración general de la aplicación](#configuring-application-general-settings)
 * [Configuración de la administración de color](#configuring-color-management)
-* [Configuración del procesamiento de recursos](#configuring-asset-processing)
-* [Añadir tipos MIME personalizados para formatos no admitidos](#adding-custom-mime-types-for-unsupported-formats)
+* [Edición de tipos MIME para formatos admitidos](#editing-mime-types-for-supported-formats)
+* [Añadir tipos MIME para formatos no admitidos](#adding-mime-types-for-unsupported-formats)
 * [Creación de ajustes preestablecidos de conjunto de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuración de publicación para Image Server {#publishing-setup-for-image-server}
@@ -228,18 +228,18 @@ Al hacerlo, se haría lo siguiente:
 * Las representaciones dinámicas que devuelven salida RGB la devolverán en el *sRGB *espacio de color.
 * Las representaciones dinámicas que devuelven una salida CMYK la devolverán en el espacio de color *WebCoated* .
 
-#### Configuración del procesamiento de recursos {#configuring-asset-processing}
+#### Edición de tipos MIME para formatos admitidos {#editing-mime-types-for-supported-formats}
 
 Puede definir qué tipos de recursos deben procesarse con Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para realizar lo siguiente:
 
 * Convertir un Adobe PDF en un recurso de catálogo electrónico.
 * Convertir un Documento de Adobe Photoshop (.PSD) en un recurso de plantilla de letrero para su personalización.
 * Rasterizar un archivo Adobe Illustrator (.AI) o un archivo PostScript encapsulado de Adobe Photoshop (.EPS).
-* Nota: Los Perfiles de vídeo y los Perfiles de imagen se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
+* [Se pueden utilizar Perfiles](/help/assets/video-profiles.md) de vídeo y Perfiles [de](/help/assets/image-profiles.md) imagen para definir el procesamiento de vídeos e imágenes, respectivamente.
 
 Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
-**Para configurar el procesamiento de recursos**
+**Para editar tipos MIME para formatos admitidos**
 
 1. En AEM, haga clic en el logotipo de AEM para acceder a la consola de navegación global y, a continuación, haga clic en **[!UICONTROL Herramientas > General > CRXDE Lite.]**
 1. En el carril izquierdo, vaya a lo siguiente:
@@ -262,11 +262,11 @@ Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
 1. En la esquina superior izquierda de la página, toque **[!UICONTROL CRXDE Lite]** para volver a AEM.
 
-#### Añadir tipos MIME personalizados para formatos no admitidos {#adding-custom-mime-types-for-unsupported-formats}
+#### Añadir tipos MIME para formatos no admitidos {#adding-mime-types-for-unsupported-formats}
 
 Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets. Para garantizar que AEM no elimina ningún nodo nuevo que agregue a CRXDE Lite, debe asegurarse de mover el tipo MIME antes de `image_` y de que su valor activado se establezca en **[!UICONTROL falso.]**
 
-**Adición de tipos MIME personalizados para formatos no admitidos**
+**Para agregar tipos MIME a formatos no admitidos**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -521,11 +521,13 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 1. En el campo **[!UICONTROL Número máximo de trabajos]** paralelos, cambie el número al valor deseado.
 
-   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número bueno que no sea 1 asignará el número de subprocesos de trabajo).
+   Puede aumentar los trabajos **[!UICONTROL paralelos]** máximos para admitir correctamente la carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En determinados escenarios (es decir, una migración inicial o una carga masiva única) puede utilizar un valor grande. Sin embargo, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, debe probar y ajustar el valor en función de su caso de uso particular.
 
-   Adobe recomienda configurar 32 trabajos **[!UICONTROL paralelos]** máximos para admitir correctamente la carga pesada de archivos en Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Toque **[!UICONTROL Guardar.]**
 
