@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 1%
@@ -93,7 +93,7 @@ A efectos de demostración, puede ser adecuado instalar la instancia de creació
 1. Implementar las dos aplicaciones web.
 1. Después de la implementación, detenga las dos aplicaciones web.
 1. Tanto en el caso de autor como en el de publicación se garantiza que en los archivos sling.properties la propiedad felix.service.urlhandlers=false se establece en false (el valor predeterminado es que se establece en true).
-1. Vuelva a poner en Inicio las dos aplicaciones web.
+1. Vuelva a poner en inicio las dos aplicaciones web.
 
 ## Procedimientos de instalación de los servidores de aplicaciones {#application-servers-installation-procedures}
 
@@ -136,7 +136,7 @@ Configure los argumentos de la memoria en el archivo conf (p. ej. `standalone.co
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-si utiliza el analizador de implementación para instalar la aplicación web AEM, puede que sea conveniente aumentar el valor `deployment-timeout,` de ese conjunto de atributos en el archivo xml de la instancia (por ejemplo, `deployment-tiimeout` `configuration/standalone.xml)`:
+si utiliza el analizador de implementación para instalar la aplicación web AEM, puede que sea conveniente aumentar el valor `deployment-timeout,` de ese conjunto de atributos en el archivo xml de la instancia (por ejemplo, `deployment-timeout` `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -217,7 +217,7 @@ Antes de una implementación, lea la Descripción [general](#general-description
 
       * Detener y anular la implementación de la aplicación web ROOT
       * Cambiar el nombre de la carpeta ROOT.war en la carpeta webapps de tomcat
-      * aplicación web de Inicio de nuevo
+      * aplicación web de inicio de nuevo
    * Si instala la aplicación web AEM con el manager-gui, deberá aumentar el tamaño máximo de un archivo cargado, ya que el valor predeterminado solo permite un tamaño de carga de 50 MB. Para ello, abra el archivo web.xml de la aplicación web del administrador,
 
       `webapps/manager/WEB-INF/web.xml`
