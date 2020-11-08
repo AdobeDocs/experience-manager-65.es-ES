@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
+source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '1816'
 ht-degree: 2%
 
 ---
@@ -193,34 +193,6 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 No se convierten todas las imágenes. La imagen inteligente decide si la conversión es necesaria para mejorar el rendimiento. En algunos casos, cuando no hay una ganancia de rendimiento esperada o el formato no es JPEG o PNG, la imagen no se convierte.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-## ¿Cómo sé la ganancia de rendimiento? ¿Existe alguna forma de notar los beneficios de las imágenes inteligentes? {#performance-gain}
-
-**Acerca de los encabezados de imágenes inteligentes**
-
-Los valores del encabezado de imagen inteligente solo funcionan cuando las solicitudes que no son de caché se sirven hasta ahora. Esto se realiza para mantener la caché actual compatible y evitar la necesidad de realizar cálculos cuando las imágenes se están sirviendo a través de la caché.
-
-Para utilizar encabezados de imagen inteligente, debe agregar el`cache=off`modificador en las solicitudes. Consulte[Caché en la API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html)de servicio y procesamiento de imágenes de Dynamic Media.
-
-Ejemplo de uso `cache=off` (solo con fines ilustrativos):
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-Después de utilizar una solicitud de este tipo, en la sección Encabezados de respuesta, puede ver el `-x-adobe-smart-imaging` encabezado. Consulte la siguiente captura de pantalla con `-x-adobe-smart-imaging` resaltado.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-Este valor de encabezado indica lo siguiente:
-
-* Las imágenes inteligentes funcionan para la compañía.
-* El valor positivo (>=0) indica que la conversión se realizó correctamente. En este caso, se devuelve una imagen nueva (webP aquí).
-* El valor negativo (&lt;0) indica que la conversión no se realizó correctamente. En este caso, se devuelve la imagen solicitada original (JPEG de forma predeterminada, si no se especifica).
-* El valor indica la diferencia en bytes entre la imagen solicitada y la nueva imagen. En este caso, los bytes guardados son 75048, lo que representa aproximadamente 75 KB para una imagen. 
-   * El valor negativo indica que la imagen solicitada era más pequeña que la nueva imagen. Se muestra la diferencia de tamaño negativa, pero la imagen servida es sólo la imagen solicitada original
-
-**¿Cuándo utilizar encabezados de imágenes inteligentes?**
-
-Los encabezados de respuesta de imágenes inteligentes están activados para la depuración o al mismo tiempo que se resaltan las ventajas de las imágenes inteligentes únicamente. El uso`cache=off`en situaciones normales puede afectar significativamente a los tiempos de carga.
 
 ## ¿Se puede desactivar Smart Imaging para cualquier solicitud? {#turning-off-smart-imaging}
 
