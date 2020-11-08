@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3904'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,10 @@ Realice los siguientes pasos para crear un formulario adaptable con firma:
    1. Especifique el **nombre** y el **título** del formulario adaptable.
 
    1. Seleccione el contenedor [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuración creado al configurar Adobe Sign con AEM Forms.
+
+      >[!NOTE]
+      >
+      >La lista desplegable Cloud Service **[!UICONTROL de]** Adobe Sign muestra los servicios en la nube configurados en el contenedor de configuración seleccionado en este campo. La lista desplegable **[!UICONTROL Adobe Sign Cloud Service]** está disponible en la sección Firma **** electrónica de las propiedades del formulario adaptable cuando se selecciona la opción **[!UICONTROL Activar Adobe Sign]** .
 
 1. En la ficha Modelo de **[!UICONTROL formulario]** , seleccione una de las siguientes opciones:
 
