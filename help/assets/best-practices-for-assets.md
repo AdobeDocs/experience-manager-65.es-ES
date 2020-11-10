@@ -3,10 +3,10 @@ title: Best Practices for [!DNL Assets]
 description: Mejora la estabilidad del sistema y el rendimiento bajo carga al identificar y cumplir con las optimizaciones que dependen de la implementación y la configuración.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 1%
+source-wordcount: '507'
+ht-degree: 0%
 
 ---
 
@@ -24,5 +24,5 @@ Después de revisar las siguientes guías, tendrá los conocimientos y las herra
 * Guía [de migración de](/help/assets/assets-migration-guide.md)recursos: Si desea migrar recursos de su sistema heredado a Recursos, puede seguir varios pasos para racionalizar el proceso de migración. La guía de migración incluye optimizaciones en cuanto a las tareas que realiza para llevar los recursos a [!DNL Experience Manager] cabo en fases. Esto incluye aplicar metadatos, generar representaciones y activar los recursos para publicar instancias.
 * El documento [de las consideraciones de red de](/help/assets/assets-network-considerations.md)Assets: Al administrar [!DNL Experience Manager] la implementación, es importante comprender la topología de red para comprender el rendimiento de la red, identificar puntos de interrupción y describir la experiencia esperada del usuario. El documento de consideraciones de red [!DNL Assets] analiza las consideraciones de red al diseñar la implementación de recursos.
 * Guía [de supervisión de](/help/assets/assets-monitoring-best-practices.md)Assets: Una vez implementada [!DNL Experience Manager] la implementación, debe monitorear ciertas tareas y el sistema en general para garantizar la integridad del sistema y la eficacia de las operaciones. La guía de monitoreo incluye optimizaciones para monitorear diversos aspectos del sistema.
-* [Prácticas recomendadas](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/introduction.translate.html)de la aplicación de escritorio de Experience Manager: [!DNL Experience Manager] la aplicación de escritorio vincula la solución de administración de recursos digitales (DAM) con el escritorio para que pueda abrir los archivos disponibles en la interfaz de usuario [!DNL Experience Manager] web directamente en el escritorio. El flujo de trabajo fácil de usar de la aplicación de escritorio se activa mediante la tecnología de uso compartido de red que proporcionan los sistemas operativos de escritorio. Esta guía explica las funciones clave y el uso recomendado de la aplicación de [!DNL Experience Manager] escritorio.
+* [Prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)de la aplicación de escritorio de Experience Manager: [!DNL Experience Manager] la aplicación de escritorio vincula la solución de administración de recursos digitales (DAM) con el escritorio para que pueda abrir los archivos disponibles en la interfaz de usuario [!DNL Experience Manager] web directamente en el escritorio. El flujo de trabajo fácil de usar de la aplicación de escritorio se activa mediante la tecnología de uso compartido de red que proporcionan los sistemas operativos de escritorio. Esta guía explica las funciones clave y el uso recomendado de la aplicación de [!DNL Experience Manager] escritorio.
 * [Prácticas](/help/assets/aem-cc-integration-best-practices.md)recomendadas para la integración de Experience Manager y Creative Cloud: Puede integrar su [!DNL Experience Manager] implementación con [!DNL Creative Cloud] varias formas. El seguir algunas prácticas recomendadas para optimizar los flujos de trabajo de integración y transferencia de recursos le ayuda a lograr la máxima eficacia. Esta guía incluye optimizaciones para la integración [!DNL Assets] con [!DNL Adobe Creative Cloud].
