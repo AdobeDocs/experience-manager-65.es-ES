@@ -3,9 +3,9 @@ title: Configuración del etiquetado de recursos mediante Smart Content Service
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2179'
 ht-degree: 26%
 
 ---
@@ -23,7 +23,7 @@ Antes de utilizar Smart Content Service, asegúrese de lo siguiente:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Instale el Service Pack [de](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager más reciente.
+* Instale el Service Pack [de](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager más reciente.
 
 ## Integración con Adobe Developer Console {#integrate-adobe-io}
 
@@ -281,12 +281,12 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 
    * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisas delgadas contra las tradicionales.
    * Imposibilidad de identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
-   * El etiquetado se admite en las configuraciones regionales que [!DNL Experience Manager] se admiten en. Para obtener una lista de idiomas, consulte las notas de la versión de [Smart Content Services](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * El etiquetado se admite en las configuraciones regionales que [!DNL Experience Manager] se admiten en. Para obtener una lista de idiomas, consulte las notas de la versión de [Smart Content Services](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
 * Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice Omniture (búsqueda de texto completo) [!DNL Assets] . No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 
 >[!MORELIKETHIS]
 >
 >* [Descripción general y cómo se enseñan las etiquetas inteligentes](enhanced-smart-tags.md)
->* [Tutorial de vídeo sobre cómo configurar etiquetas inteligentes](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
