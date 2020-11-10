@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
+source-git-commit: cc3a2ce7cb3dc020f5466a4b65cf5a9714e7a344
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1571'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Todas las funcionalidades se implementan usando los servicios web nativos de Sha
 
 >[!NOTE]
 >
->SharePoint Connector también es compatible con AEM 6.1 service pack 2. El conector ya no es compatible con el montaje del repositorio virtual y, por lo tanto, no se puede montar. Si desea acceder al repositorio de Sharepoint mediante las API de Java, utilice la implementación del repositorio JCR del conector de Sharepoint en su proyecto.
+>SharePoint Connector también es compatible con AEM Service Pack 2 6.1. El conector ya no es compatible con el montaje del repositorio virtual y, por lo tanto, no se puede montar. Si desea acceder al repositorio de Sharepoint mediante las API de Java, utilice la implementación del repositorio JCR del conector de Sharepoint en su proyecto.
 >
 >Las operaciones de instalación, configuración, administración y TI del servidor de SharePoint y de la infraestructura de TI relacionada están fuera del ámbito de este documento. Consulte la documentación del proveedor en [SharePoint](https://www.microsoft.com/sharepoint) para obtener información sobre estos temas. El conector requiere que estas partes de la infraestructura estén correctamente instaladas, configuradas y operadas.
 
@@ -45,10 +45,10 @@ Todas las funcionalidades se implementan usando los servicios web nativos de Sha
 Para comenzar con el conector, haga lo siguiente:
 
 * Asegúrese de que tiene al menos Java 7 instalado.
-* Descargue el archivo de distribución de paquetes de conector desde Package Share.
+* Descargue el archivo de distribución de paquetes de conector desde Distribución de software.
 * Copie un archivo *license.properties* válido en el directorio que contiene el archivo *cq-quickstart-6.4.0.jar* .
 
-* Toque o haga clic con el Doble en el archivo .jar para inicio de AEM o realice el inicio desde la línea de comandos.
+* Toque o haga clic con el doble en el archivo .jar para AEM de inicio o inicio desde la línea de comandos.
 * Instale el paquete de conector desde el Administrador de paquetes.
 * Configure las opciones del conector.
 
@@ -66,13 +66,13 @@ El conector requiere lo siguiente:
 * Credenciales de usuario y permisos para repositorios de CRX y SharePoint
 * [Plataformas admitidas](#supported-platforms)
 
-El conector de SharePoint está disponible para su descarga desde [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+El conector de SharePoint está disponible para su descarga desde [Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673)de software.
 
 ### Plataformas compatibles {#supported-platforms}
 
 El conector admite lo siguiente:
 
-* Versiones de AEM:
+* Versiones AEM:
 
    * AEM 6.4, 6.3
 
@@ -89,15 +89,14 @@ El conector admite lo siguiente:
 
 ### Instalación estándar {#standard-installation}
 
-Uso compartido de paquetes AEM se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la documentación [de Uso compartido de](/help/sites-administering/package-manager.md#package-share)paquetes.
+La distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la documentación [de distribución de](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)software.
 
-Para acceder a Uso compartido de paquetes en la página de bienvenida de AEM, toque o haga clic en **Herramientas** y, a continuación, seleccione Uso compartido **de paquetes**. Se requiere un Adobe ID válido que incluya la dirección de correo electrónico de la compañía. Además, después de iniciar sesión en su cuenta, solicite el acceso de Uso compartido de paquetes.
 
 #### Integración con AEM {#integrating-with-aem}
 
 Para instalar el paquete de contenido del conector.
 
-1. Abra un ticket de asistencia técnica de Adobe para solicitar la función de conector.
+1. Abra un ticket de Soporte de Adobe para solicitar la función de conector.
 1. Descargue el paquete cuando esté disponible y, a continuación, abra el Administrador de paquetes para su instancia de AEM.
 1. Toque o haga clic en **Instalar** en la página de descripción del paquete.
 1. En el cuadro de diálogo **Instalar paquete** , toque o haga clic en **Instalar**.
@@ -133,7 +132,7 @@ El conector también se puede configurar para varios espacios de trabajo. En est
 
 En AEM, realice un paso más aparte de los pasos de configuración anteriores. Lista de permitidos del paquete &#39;**com.day.cq.dam.cq-dam-jcr-conectores**&#39;.
 
-Para lista de permitidos de paquetes en AEM, realice los siguientes pasos:
+Para lista de permitidos de paquetes en AEM, lleve a cabo los siguientes pasos:
 
 1. Vaya a la Consola de administración de OSGi: http://localhost:4502/system/console/configMgr.
 1. Busque el servicio &quot;Apache Sling Login Admin Whitelist&quot;.
@@ -159,7 +158,7 @@ Después de configurar el conector, compruebe lo siguiente:
 
 ### Configuración de la sincronización DAM con el servidor de SharePoint {#configuring-dam-sync-with-the-sharepoint-server}
 
-Para sincronizar los recursos de SharePoint con AEM, lleve a cabo los siguientes pasos:
+Para sincronizar los recursos de SharePoint con AEM, realice los siguientes pasos:
 
 1. Vaya a la Consola de administración de OSGi: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Busque el servicio &quot;Default DAMAssetSynchronization&quot;.
@@ -186,21 +185,21 @@ Opcionalmente, puede configurar el retraso de sincronización entre diferentes c
 Sharepoint incluye los métodos de autenticación Clásica y Basada en notificaciones, ambos compatibles con los siguientes tipos de autenticación:
 
 * Básico
-* Basado en formularios
+* Basado en Forms
 
 En particular, están disponibles los siguientes tipos de autenticación:
 
 * Classic-Basic
 * Classic-Forms
 * Reclamaciones básicas
-* Reclamaciones basadas en formularios
+* Reclamaciones basadas en Forms
 
-Conector JCR de AEM para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0. admite la autenticación basada en notificaciones (que Microsoft sugiere), que funciona en los siguientes modos:
+Conector JCR AEM para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0. admite la autenticación basada en notificaciones (que Microsoft sugiere), que funciona en los siguientes modos:
 
 * **Autenticación** básica/NTLM: El conector primero intenta conectarse usando la autenticación básica. Si no está disponible, cambia a la autenticación basada en NTLM.
-* **Autenticación** basada en formularios: Sharepoint valida a los usuarios en función de las credenciales que escriben los usuarios en un formulario de inicio de sesión (generalmente una página web). El sistema emite un token para solicitudes autenticadas que contiene una clave para restablecer la identidad de solicitudes posteriores.
+* **Autenticación** basada en Forms: Sharepoint valida a los usuarios en función de las credenciales que escriben los usuarios en un formulario de inicio de sesión (generalmente una página web). El sistema emite un token para solicitudes autenticadas que contiene una clave para restablecer la identidad de solicitudes posteriores.
 
-**Configuración de la autenticación basada en formularios**
+**Configuración de la autenticación basada en Forms**
 
 Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
@@ -222,7 +221,7 @@ Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syste
 
 Solo un usuario autenticado tanto en AEM como en SharePoint puede acceder al contenido de SharePoint a través del conector.
 
-También puede utilizar la extensión de conector para la autenticación a fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de AEM a usuarios específicos de SharePoint. Cree usuarios de AEM correspondientes a usuarios de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia de conector.
+También puede utilizar la extensión de conector para la autenticación a fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de AEM a usuarios específicos de SharePoint. Cree AEM usuarios correspondientes a usuarios de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia de conector.
 
 Para crear un usuario en AEM:
 
@@ -245,7 +244,7 @@ Para agregar el usuario al grupo de administración:
 
 ### Deshabilitar la autenticación por token {#disable-token-authentication}
 
-1. Descargue e instale el paquete `basic auth`. `zip` desde Package Share.
+1. Descargue e instale el paquete `basic auth`. `zip` de Distribución de software.
 
 1. Cierre QuickStart.
 1. Abra el archivo *\crx-quickstart\repository\repository.xml*.
@@ -256,7 +255,7 @@ Para agregar el usuario al grupo de administración:
 
 #### Compatibilidad con diferentes métodos de autenticación del servidor de SharePoint {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-En su versión estándar, el conector admite la autenticación **Windows** (básica) estándar de IIS y la autenticación basada en formularios (basada en tokens). Los [otros métodos](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) de autenticación se pueden admitir a través del mecanismo de extensibilidad.
+En su versión estándar, el conector admite la autenticación **Windows** (básica) estándar de IIS y la autenticación basada en Forms (basada en token). Los [otros métodos](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) de autenticación se pueden admitir a través del mecanismo de extensibilidad.
 
 Los siguientes pasos proporcionan instrucciones para ampliar la autenticación estándar a fin de admitir varios métodos de autenticación del servidor de SharePoint:
 
