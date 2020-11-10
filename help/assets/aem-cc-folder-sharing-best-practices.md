@@ -3,9 +3,9 @@ title: Prácticas recomendadas [!DNL Adobe Creative Cloud] para compartir carpet
 description: ' [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] Configure el intercambio de carpetas con usuarios de Adobe Creative Cloud (CC).'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La función [!DNL Experience Manager] para compartir [!DNL Creative Cloud] carpetas está en desuso. Adobe recomienda encarecidamente el uso de las nuevas funciones, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager. Obtenga más información sobre las prácticas recomendadas [de integración de](/help/assets/aem-cc-integration-best-practices.md)Experience Manager y Creative Cloud.
+>La función [!DNL Experience Manager] para compartir [!DNL Creative Cloud] carpetas está en desuso. Adobe recomienda encarecidamente el uso de las nuevas funciones, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o la aplicación [de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)Experience Manager. Obtenga más información sobre las prácticas recomendadas [de integración de](/help/assets/aem-cc-integration-best-practices.md)Experience Manager y Creative Cloud.
 
 [!DNL Adobe Experience Manager] se puede configurar para permitir a los usuarios de [!DNL Assets] para que compartan carpetas con los usuarios de [!DNL Adobe Creative Cloud] las aplicaciones, de modo que estén disponibles como carpetas compartidas en el servicio de [!DNL Adobe Creative Cloud] recursos. La función se puede utilizar para intercambiar archivos entre equipos creativos y [!DNL Assets] usuarios, especialmente cuando los usuarios creativos no tienen acceso a la implementación (no están en la red empresarial) [!DNL Assets] .
 
@@ -39,7 +39,7 @@ En el diagrama siguiente se proporciona una descripción general de la integraci
 La integración incluye los siguientes elementos:
 
 * **[!DNL Experience Manager Assets]** implementada en la red empresarial (servicios administrados o in situ): El uso compartido de carpetas se inicia aquí.
-* **[!DNL Adobe Marketing Cloud Assets]servicio** principal: Actúa como intermediario entre [!DNL Experience Manager] y servicios de [!DNL Creative Cloud] almacenamiento. Un administrador de una organización que utiliza la integración necesita establecer una relación de confianza entre la organización de Marketing Cloud y la implementación [!DNL Assets] . También [definen una lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)Creative Cloud aprobados, que [!DNL Assets] los usuarios pueden compartir carpetas también para mayor seguridad.
+* **[!DNL Adobe Marketing Cloud Assets]servicio** principal: Actúa como intermediario entre [!DNL Experience Manager] y servicios de [!DNL Creative Cloud] almacenamiento. Un administrador de una organización que utiliza la integración necesita establecer una relación de confianza entre la organización de Marketing Cloud y la implementación [!DNL Assets] . También [definen una lista de colaboradores](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html)Creative Cloud aprobados, que [!DNL Assets] los usuarios pueden compartir carpetas también para mayor seguridad.
 
 * **[!DNL Creative Cloud]Servicios** web de recursos (interfaz de usuario web de almacenamiento y [!DNL Creative Cloud] archivos): Aquí es donde usuarios específicos de la aplicación Creative Cloud, con los que se compartió una [!DNL Assets] carpeta, podrían aceptar la invitación y ver la carpeta en el almacenamiento de su cuenta Creative Cloud.
 * **Aplicación** de escritorio Creative Cloud: (Opcional) Permite el acceso directo a carpetas o archivos compartidos desde el escritorio del usuario creativo mediante la sincronización con [!DNL Creative Cloud] Assets almacenamiento.
