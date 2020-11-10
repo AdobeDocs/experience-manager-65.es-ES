@@ -3,9 +3,9 @@ title: Administrar recursos de vídeo
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '807'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ De forma predeterminada, [!DNL Assets] no permite cargar recursos que superen lo
 Además de [!DNL Assets] la configuración, cambie las configuraciones siguientes para cargar recursos de gran tamaño:
 
 * Aumente el tiempo de caducidad del token. Consulte [!UICONTROL Adobe Granite CSRF Servlet] en la consola web en `https://[aem_server]:[port]/system/console/configMgr`. Para obtener más información, consulte Protección [de](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumente la `receiveTimeout` configuración de Dispatcher. Para obtener más información, consulte Configuración [de Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
+* Aumente la `receiveTimeout` configuración de Dispatcher. Para obtener más información, consulte Configuración [de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
 
 >[!NOTE]
 >
