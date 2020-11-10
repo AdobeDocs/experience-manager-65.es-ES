@@ -3,10 +3,10 @@ title: Activar perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas de Adobe (DTM) para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d13381d961f7663366b041168da369c0b01c9336
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 1%
+source-wordcount: '671'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ La administración dinámica de etiquetas de Adobe es una herramienta que activa
 
 >[!CAUTION]
 >
->La DTM de Adobe está en desuso en favor de Adobe Experience Platform Launch y pronto llegará al [final de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda que [utilice Launch para obtener perspectivas](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de recursos.
+>Adobe DTM está en desuso en favor de [!DNL Adobe Experience Platform Launch] y pronto llegará al [final de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda que [ [!DNL Launch] se utilice para las perspectivas](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de los recursos.
 
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM.
 
@@ -31,7 +31,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
    * Seleccione la ficha Propiedades **** web y, a continuación, haga clic en **[!UICONTROL Añadir propiedad]**.
 
-   * Actualice los campos según corresponda y haga clic en **[!UICONTROL Crear propiedad]**. Consulte [la documentación](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Actualice los campos según corresponda y haga clic en **[!UICONTROL Crear propiedad]**. Consulte [la documentación](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Crear, editar propiedad web](assets/Create-edit-web-property.png)
 
