@@ -3,9 +3,9 @@ title: Administrar recursos compuestos con referencias y varias páginas
 description: Aprenda a crear referencias a recursos digitales desde dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para vista de páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Las referencias se resuelven en función de la ruta de acceso, el ID de document
 
 Puede hacer referencia a recursos digitales existentes desde dentro de un [!DNL Adobe Illustrator] archivo.
 
-1. Con la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager, busque los recursos digitales en el sistema de archivos local. Navegue hasta la ubicación del sistema de archivos del recurso al que desee hacer referencia.
+1. Con la aplicación [[!DNL Experience Manager] de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)escritorio, busque los recursos digitales en el sistema de archivos local. Navegue hasta la ubicación del sistema de archivos del recurso al que desee hacer referencia.
 1. Arrastre el recurso desde la carpeta local hasta el [!DNL Illustrator] archivo.
 
 1. Guarde el [!DNL Illustrator] archivo en la unidad montada o [cárguelo](/help/assets/manage-assets.md#uploading-assets) en el [!DNL Experience Manager] repositorio.
@@ -68,7 +68,7 @@ Este procedimiento es similar a [agregar recursos digitales como referencias en 
 
 ## Añadir recursos digitales como referencias en [!DNL Adobe Photoshop] {#refps}
 
-1. Utilice [!DNL Experience Manager] la aplicación de escritorio para acceder a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Utilice la funcionalidad [!UICONTROL Colocar vinculado] en [!DNL Adobe Photoshop]. Consulte [Colocación de recursos en la aplicación](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de escritorio.
+1. Utilice [!DNL Experience Manager] la aplicación de escritorio para acceder a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Utilice la funcionalidad [!UICONTROL Colocar vinculado] en [!DNL Adobe Photoshop]. Consulte [Colocación de recursos en la aplicación](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de escritorio.
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
@@ -119,7 +119,7 @@ Por ejemplo, [!DNL InDesign]puede extraer páginas mediante [!DNL InDesign Serve
 
 Las siguientes opciones están disponibles en la barra de herramientas, en el carril izquierdo y en los controles del visor de páginas:
 
-* **[!UICONTROL Acciones]** de escritorio para abrir o mostrar un subrecurso específico mediante la aplicación de [!DNL Experience Manager] escritorio. Consulte cómo [configurar acciones](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) de escritorio si utiliza una aplicación [!DNL Experience Manager] de escritorio.
+* **[!UICONTROL Acciones]** de escritorio para abrir o mostrar un subrecurso específico mediante la aplicación de [!DNL Experience Manager] escritorio. Consulte cómo [configurar acciones](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) de escritorio si utiliza una aplicación [!DNL Experience Manager] de escritorio.
 
 * **[!UICONTROL La opción Propiedades]** abre la página [!UICONTROL Propiedades] del subrecurso específico.
 
@@ -135,8 +135,8 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 
 >[!MORELIKETHIS]
 >
->* [Uso de la aplicación de escritorio de Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Configurar acciones de escritorio en Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Uso de la aplicación de escritorio de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Configurar acciones de escritorio en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Creación de objetos inteligentes vinculados en Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Colocar gráficos en Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
