@@ -3,9 +3,9 @@ title: Administre los metadatos de sus recursos digitales en [!DNL Adobe Experie
 description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] cómo pueden organizarse y procesarse automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2421'
 ht-degree: 11%
 
 ---
@@ -243,7 +243,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 >
 >* [Conceptos y comprensión](metadata-concepts.md)de metadatos.
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importación y exportación de metadatos en recursos de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importación y exportación de metadatos en recursos de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
