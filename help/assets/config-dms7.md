@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ee527712b4d7f6ebf9ef2996de1405f6f9c3d335
+source-git-commit: 24ad36d3ff329885efff319404e0d5321e8ce46d
 workflow-type: tm+mt
-source-wordcount: '5964'
+source-wordcount: '5990'
 ht-degree: 6%
 
 ---
@@ -280,7 +280,7 @@ Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
-1. En la página **Adobe CQ Scene7 Asset MIME type Service** , haga clic en cualquier icono de signo más &lt;+>. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de MIME es trivial.
+1. En la página Servicio **MIME de tipo Scene7 Asset de** Adobe CQ, haga clic en el icono de signo más &lt;+>. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de MIME es trivial.
 
    ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
@@ -545,9 +545,7 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 
 1. En el campo **[!UICONTROL Número máximo de trabajos]** paralelos, cambie el número al valor deseado.
 
-   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número bueno que no sea 1 asignará el número de subprocesos de trabajo).
-
-   En la mayoría de los casos de uso, la configuración predeterminada de 0,5 es suficiente.
+   Puede aumentar el número máximo de trabajos paralelos para admitir correctamente la carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En determinados escenarios (es decir, una migración inicial o una carga masiva única) puede utilizar un valor grande. Sin embargo, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, debe probar y ajustar el valor en función de su caso de uso particular.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
