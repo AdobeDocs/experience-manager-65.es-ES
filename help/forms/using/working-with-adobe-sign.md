@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
+source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3949'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,8 @@ Realice los siguientes pasos para seleccionar un servicio en la nube y el orden 
 1. Seleccione un servicio en la nube de la lista ya configurada de Cloud Services de Adobe Sign.
 
    Si la lista de **Adobe Sign Cloud Service** está vacía, siga el artículo [Configurar Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) para configurar el servicio.
+
+   El menú desplegable lista los servicios de nube que existen en la `global` carpeta en Herramientas > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Además, el menú desplegable también lista los servicios en la nube que existen en la carpeta seleccionada en el campo Contenedor **[!UICONTROL de]** configuración al crear un formulario adaptable.
 
 1. Seleccione el orden de firma en el cuadro de diálogo **Los firmantes pueden firmar** . Los cantantes de Adobe Sign pueden firmar un formulario adaptable **secuencialmente** , uno tras otro firmante o **simultáneamente** , en cualquier orden.
 
