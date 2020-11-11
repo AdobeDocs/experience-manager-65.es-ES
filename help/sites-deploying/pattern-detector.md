@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Evaluación de la complejidad de la actualización con el detector de patrones{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Evaluación de la complejidad de la actualización con el detector de patrones
 
 ## Información general {#overview}
 
@@ -43,9 +43,10 @@ El detector de patrones se libera por separado como [un paquete](https://www.ado
 >* aumentar la velocidad de detección
 >* evitar cualquier desaceleración en instancias críticas del negocio
 
-
->al mismo tiempo, se recomienda ejecutarlo **en entornos** de ensayo lo más próximos posible a los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
 >
+>
+al mismo tiempo, se recomienda ejecutarlo **en entornos** de ensayo lo más próximos posible a los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
+
 Puede utilizar varios métodos para comprobar la salida del detector de patrones:
 
 * **A través de la consola de Felix Inventory:**
@@ -56,7 +57,6 @@ Puede utilizar varios métodos para comprobar la salida del detector de patrones
    ![captura de pantalla: detector de patrones 2-5-2-2018](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Mediante una interfaz JSON normal o basada en texto reactivo**
-
 * **Mediante una interfaz de líneas JSON reactiva, **que genera un documento JSON independiente en cada línea.
 
 Ambos métodos se detallan a continuación:
@@ -211,7 +211,8 @@ Con el resultado:
 ```
 
 >[!NOTE]
-El método recomendado es guardar todo el resultado de curl en el archivo y luego procesarlo a través `jq` o `grep` para filtrar el tipo de información.
+>
+>El método recomendado es guardar todo el resultado de curl en el archivo y luego procesarlo a través `jq` o `grep` para filtrar el tipo de información.
 
 ## Ámbito de detección {#scope}
 
@@ -224,5 +225,5 @@ El detector de patrones actual permite comprobar:
 * rep:Compatibilidad de nodos de usuario (en el contexto de la configuración de OAuth)
 
 >[!NOTE]
-Tenga en cuenta que el Detector de patrones intenta predecir con precisión las advertencias de actualización. Sin embargo, puede generar falsos positivos en algunos casos.
-
+>
+>Tenga en cuenta que el Detector de patrones intenta predecir con precisión las advertencias de actualización. Sin embargo, puede generar falsos positivos en algunos casos.
