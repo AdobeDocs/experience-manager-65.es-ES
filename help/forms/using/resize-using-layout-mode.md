@@ -1,40 +1,30 @@
 ---
-title: Uso del modo Diseño para cambiar el tamaño de los componentes
-seo-title: Uso del modo Diseño para cambiar el tamaño de los componentes
+title: Uso del modo Diseño para cambiar el tamaño de los componentes en formularios adaptables
 description: 'Definir la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño '
-seo-description: 'Definir la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño '
-uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
-contentOwner: anujkapo
-topic-tags: interactive-communications, author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
 
 
-# Uso del modo Diseño para cambiar el tamaño de los componentes{#use-layout-mode-to-resize-components}
+# Uso del modo Diseño para cambiar el tamaño de los componentes {#use-layout-mode-to-resize-components}
 
-La interfaz de creación de formularios adaptables y canal web de comunicación interactiva le permite cambiar el tamaño de los componentes mediante el modo Diseño. Arrastre y suelte puntos azules dentro de las columnas para definir el inicio y los puntos finales para colocar los componentes. Los puntos azules se muestran después de tocar el componente dentro de la cuadrícula adaptable. La cuadrícula adaptable consta de 12 columnas iguales. El sombreado de color blanco y azul en las columnas alternativas diferencia una columna de la otra.
+La interfaz de creación de formularios adaptables permite cambiar el tamaño de los componentes mediante el modo Diseño. Arrastre y suelte puntos azules dentro de las columnas para definir el inicio y los puntos finales para colocar los componentes. Los puntos azules se muestran después de tocar el componente dentro de la cuadrícula adaptable. La cuadrícula adaptable consta de 12 columnas iguales. El sombreado de color blanco y azul en las columnas alternativas diferencia una columna de la otra.
 
 Puede utilizar el modo Diseño para cambiar el tamaño de los componentes de todos los tipos de dispositivos, como el escritorio, la tablet, el teléfono y otros dispositivos más pequeños. La tablet deriva automáticamente la configuración de diseño de la versión de escritorio y los dispositivos más pequeños obtienen la configuración de diseño del teléfono. Sin embargo, puede anular las configuraciones derivadas automáticamente para definir una configuración diferente para cada tipo de dispositivo.
 
-Si va a crear el canal Web utilizando [Imprimir canal como maestro](../../forms/using/create-interactive-communication.md) para una comunicación interactiva, los componentes disponibles para el cambio de tamaño también incluyen los subformularios y los campos que se generan automáticamente en el canal Web mediante Imprimir canal. El canal web conserva la presentación de los elementos del canal de impresión en el modo Diseño.
-
 ## Modo de diseño de acceso {#access-layout-mode}
 
-Seleccione **Presentación** en la lista desplegable que aparece en la parte superior del formulario adaptable y de la interfaz de creación de comunicación interactiva junto a la opción de **Previsualización** . El formulario se muestra en el modo Presentación.
+Seleccione **Presentación** en la lista desplegable que aparece en la parte superior de la interfaz de creación de formularios adaptables junto a la opción de **Previsualización** . El formulario se muestra en el modo Presentación.
 
 1. Inicie sesión en la instancia de creación de AEM y vaya a **Adobe Experience Manager** > **Forms** > **Forms y Documentos**.
-1. [Cree un formulario adaptable nuevo](../../forms/using/create-interactive-communication.md) o abra uno existente o una comunicación interactiva.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Seleccione **Presentación** en la lista desplegable que aparece en la parte superior junto a la opción de **Previsualización** . El formulario se muestra en el modo Presentación.
 
-   ![Modo de diseño para comunicaciones interactivas](assets/layout_mode_ic_new.png)
+   ![Modo de diseño](assets/layout_mode_ic_new.png)
 
 ## Cambiar el tamaño de los componentes {#resize-components}
 
@@ -56,9 +46,9 @@ Seleccione **Presentación** en la lista desplegable que aparece en la parte sup
 
 ### Ejemplo {#example}
 
-**Objetivo:** Desea insertar un componente de tabla y un componente Imagen y colocarlos en paralelo en una comunicación interactiva.
+**Objetivo:** Desea insertar un componente de tabla y un componente Imagen y colocarlos en paralelo en un formulario adaptable.
 
-1. Inserte los componentes de tabla e imagen mediante el modo de edición en el canal web. El componente de imagen se muestra después del componente de tabla.
+1. Inserte los componentes de tabla e imagen mediante el modo de edición en el formulario adaptable. El componente de imagen se muestra después del componente de tabla.
 1. Cambie al modo Diseño y toque el componente Tabla. Los puntos azules para cambiar el tamaño del componente se muestran en las columnas 1 y 12.
 1. Arrastre y suelte el punto azul de la columna 12 a la columna 6 de la cuadrícula adaptable.
 
