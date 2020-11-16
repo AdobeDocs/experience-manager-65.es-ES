@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b23b66e9d57742f6771bc4b26753a47b334e06bc
+source-git-commit: c4e602a208fa5f66e79a5705a7f1f2f844fb23b5
 workflow-type: tm+mt
-source-wordcount: '4557'
+source-wordcount: '4574'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ Las principales funciones y mejoras introducidas en Adobe Experience Manager 6.5
 
 * [Se mejoró el almacenamiento en caché para páginas](../../help/forms/using/configure-adaptive-forms-cache.md)de formularios adaptables traducidas.
 
-* Compatibilidad con etiquetas de texto de [Adobe Sign en el servicio](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)de conversión automatizada de Forms.
+* Compatibilidad con etiquetas de texto de [Adobe Sign en el servicio](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)de Automated forms conversion.
 
 * Compatibilidad para [convertir formularios de color en formularios](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) adaptables mediante [!DNL Automated Forms Conversion service].
 
@@ -258,6 +258,12 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 ### Integraciones {#integrations-6560}
 
 * Las actividades con nombres largos no se sincronizan con [!DNL Adobe Target] (NPR-34254).
+
+* Al seleccionar una propiedad al crear una nueva configuración de inicio de Adobe, aparece el siguiente mensaje de error (NPR-33947):
+
+   ```javascript
+   GET http://hostname:Port/libs/cq/dtm-reactor/content/configurations/createcloudconfigwizard/jcr:content/body/items/form/items/wizard/items/general/items/fixedcolumns/items/container/items/general/items/property/data.html?query=&start=0&end=25&imsConfigurationId=Adobe%20Launch&companyId=&_charset_=utf-8 400 (Bad Request)
+   ```
 
 ### Proyectos de traducción {#translation-6560}
 
