@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
+source-git-commit: a99c5794cee88d11ca3fb9eeed443c4d0178c7b3
+workflow-type: tm+mt
+source-wordcount: '2731'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ## Introducción {#introduction}
 
-La capacidad de espera en frío del núcleo Tar Micro permite que una o más instancias de AEM en espera se conecten a una instancia principal. El proceso de sincronización es de una sola forma, lo que significa que solo se realiza desde las instancias principales a las de espera.
+La capacidad de espera en frío del núcleo Tar Micro permite que una o más instancias de AEM en espera se conecten a una instancia primaria. El proceso de sincronización es de una sola forma, lo que significa que solo se realiza desde las instancias principales a las de espera.
 
 El propósito de las instancias en espera es garantizar una copia de datos activa del repositorio principal y garantizar un cambio rápido sin pérdida de datos en caso de que el maestro no esté disponible por ningún motivo.
 
@@ -34,7 +37,7 @@ El contenido se sincroniza linealmente entre la instancia principal y las instan
 
 ## Cómo funciona {#how-it-works}
 
-En la instancia principal de AEM, se abre un puerto TCP que escucha los mensajes entrantes. Actualmente, hay dos tipos de mensajes que los esclavos enviarán al maestro:
+En la instancia de AEM principal, se abre un puerto TCP que escucha los mensajes entrantes. Actualmente, hay dos tipos de mensajes que los esclavos enviarán al maestro:
 
 * un mensaje que solicita el ID de segmento del encabezado actual
 * un mensaje que solicita datos de segmento con un ID especificado
@@ -43,7 +46,7 @@ El modo de espera solicita periódicamente la ID del segmento del encabezado act
 
 >[!NOTE]
 >
->Las instancias en espera no reciben ningún tipo de solicitudes, ya que se ejecutan en modo de solo sincronización. La única sección disponible en una instancia en espera es la consola web, para facilitar la configuración del paquete y los servicios.
+>Las instancias en espera no reciben ningún tipo de solicitudes, ya que se ejecutan en modo de solo sincronización. La única sección disponible en una instancia de espera es la consola web, para facilitar la configuración del paquete y los servicios.
 
 Una implementación típica de TarMK Cold Standby:
 
@@ -59,11 +62,11 @@ El flujo de datos está diseñado para detectar y gestionar automáticamente los
 
 La activación de TarMK Cold Standby en la instancia principal casi no tiene un impacto medible en el rendimiento. El consumo adicional de CPU es muy bajo y el E/S de red y el disco duro extra no deben producir problemas de rendimiento.
 
-En espera, puede esperar un alto consumo de CPU durante el proceso de sincronización. Debido a que el procedimiento no se multiproceso, no se puede acelerar utilizando varios núcleos. Si no se cambia o transfiere ningún dato, no habrá actividad medible. La velocidad de conexión variará según el hardware y el entorno de red, pero no depende del tamaño del repositorio o del uso de SSL. Debe tener esto en cuenta al calcular el tiempo necesario para una sincronización inicial o cuando se cambiaron muchos datos mientras tanto en el nodo principal.
+En espera, puede esperar un alto consumo de CPU durante el proceso de sincronización. Debido a que el procedimiento no se multiproceso, no se puede acelerar utilizando varios núcleos. Si no se cambia o transfiere ningún dato, no habrá actividad mensurable. La velocidad de conexión variará según el hardware y el entorno de red, pero no depende del tamaño del repositorio o del uso de SSL. Debe tener esto en cuenta al calcular el tiempo necesario para una sincronización inicial o cuando se cambiaron muchos datos mientras tanto en el nodo principal.
 
 #### Seguridad {#security}
 
-Suponiendo que todas las instancias se ejecutan en la misma zona de seguridad de intranet, el riesgo de una infracción de seguridad se reduce considerablemente. Sin embargo, puede agregar una capa de seguridad adicional habilitando conexiones SSL entre los esclavos y el maestro. Al hacerlo, se reduce la posibilidad de que los datos se vean comprometidos por un intermediario.
+Suponiendo que todas las instancias se ejecutan en la misma zona de seguridad de intranet, el riesgo de una infracción de seguridad se reduce considerablemente. Sin embargo, puede agregar una capa de seguridad adicional habilitando las conexiones SSL entre los esclavos y el maestro. Al hacerlo, se reduce la posibilidad de que los datos se vean comprometidos por un intermediario.
 
 Además, puede especificar las instancias en espera que pueden conectarse restringiendo la dirección IP de las solicitudes entrantes. Esto debería ayudar a garantizar que nadie en la intranet pueda copiar el repositorio.
 
@@ -71,19 +74,20 @@ Además, puede especificar las instancias en espera que pueden conectarse restri
 >
 >Se recomienda añadir un equilibrador de carga entre el despachante y los servidores que forman parte de la configuración de Coldy Standby. El equilibrador de carga debe configurarse para dirigir el tráfico del usuario únicamente a la instancia **principal** a fin de garantizar la coherencia y evitar que el contenido se copie en la instancia de espera por otros medios que no sean el mecanismo de espera en frío.
 
-## Creación de una configuración de AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
+## Creación de una configuración AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
->El PID para el almacén de nodos de segmentos y el servicio de almacenamiento en espera ha cambiado en AEM 6.3 en comparación con las versiones anteriores de la siguiente manera:
+>El PID para el almacén de nodos Segment y el servicio de almacenamiento en espera han cambiado en AEM 6.3 en comparación con las versiones anteriores de la siguiente manera:
 >
 >* de org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
->
->
- Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
 
-Para crear una configuración de TarMK en espera en frío, primero debe crear las instancias en espera realizando una copia del sistema de archivos de toda la carpeta de instalación del primario a una nueva ubicación. A continuación, puede iniciar cada instancia con un modo de ejecución que especifique su función ( `primary` o `standby`).
+>
+>
+Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
+
+Para crear una configuración de TarMK en espera en frío, primero debe crear las instancias en espera realizando una copia del sistema de archivos de toda la carpeta de instalación del primario a una nueva ubicación. A continuación, puede inicio cada instancia con un modo de ejecución que especifique su función ( `primary` o `standby`).
 
 A continuación se muestra el procedimiento que debe seguirse para crear una configuración con una instancia maestra y una de espera:
 
@@ -99,14 +103,16 @@ A continuación se muestra el procedimiento que debe seguirse para crear una con
    1. Cree las configuraciones necesarias para el almacén de nodos y el almacén de datos preferidos en `aem-primary/crx-quickstart/install/install.primary`
    1. Cree un archivo llamado `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` en la misma ubicación y configúrelo según corresponda. Para obtener más información sobre las opciones de configuración, consulte [Configuración](/help/sites-deploying/tarmk-cold-standby.md#configuration).
 
-   1. Si utiliza una instancia de AEM TarMK con un almacén de datos externo, cree una carpeta con el nombre `crx3` bajo `aem-primary/crx-quickstart/install``crx3`
+   1. Si utiliza una instancia de TarMK AEM con un almacén de datos externo, cree una carpeta con el nombre `crx3` bajo `aem-primary/crx-quickstart/install` `crx3`
 
    1. Coloque el archivo de configuración del almacén de datos en la `crx3` carpeta.
-   Si, por ejemplo, está ejecutando una instancia de AEM TarMK con un almacén de datos de archivos externo, necesita estos archivos de configuración:
+
+   Si, por ejemplo, está ejecutando una instancia AEM TarMK con un almacén de datos de archivos externo, necesita estos archivos de configuración:
 
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
    * `aem-primary/crx-quickstart/install/crx3/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`
+
    A continuación encontrará configuraciones de muestra para la instancia principal:
 
    **Ejemplo de** **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -133,14 +139,14 @@ A continuación se muestra el procedimiento que debe seguirse para crear una con
    minRecordLength=I"16384"
    ```
 
-1. Inicie el primario asegurándose de especificar el modo de ejecución principal:
+1. Inicio el principal asegurándose de especificar el modo de ejecución principal:
 
    ```shell
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
 1. Cree un nuevo registrador de registros de Apache Sling para el paquete **org.apache.jackrabbit.oak.segment** . Establezca el nivel de registro en &quot;Debug&quot; y dirija su salida de registro a un archivo de registro independiente, como */logs/tarmk-coldstandby.log*. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
-1. Vaya a la ubicación de la instancia de **espera** y comience con la ejecución del tarro.
+1. Vaya a la ubicación de la instancia de **espera** y inicio ejecutando el tarro.
 1. Cree la misma configuración de registro que para el principal. A continuación, detenga la instancia.
 1. A continuación, prepare la instancia de espera. Para ello, siga los mismos pasos que para la instancia principal:
 
@@ -157,6 +163,7 @@ A continuación se muestra el procedimiento que debe seguirse para crear una con
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
    1. Edite los archivos y cree las configuraciones necesarias.
+
    A continuación se muestran archivos de configuración de ejemplo para una instancia de espera típica:
 
    **Ejemplo de org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -189,7 +196,7 @@ A continuación se muestra el procedimiento que debe seguirse para crear una con
    minRecordLength=I"16384"
    ```
 
-1. Inicie la instancia de **espera** mediante el modo de ejecución en espera:
+1. Inicio de la instancia de **espera** mediante el modo de ejecución en espera:
 
    ```xml
    java -jar quickstart.jar -r standby,crx3,crx3tar
@@ -198,15 +205,14 @@ A continuación se muestra el procedimiento que debe seguirse para crear una con
 El servicio también se puede configurar mediante la consola web, mediante:
 
 1. Ir a la consola web en: *https://serveraddress:serverport/system/console/configMgr*
-1. Buscando un servicio llamado **Apache Jackrabbit Oak Segment Tar Cold Standby Service** y haga doble clic en él para editar la configuración.
+1. Buscando un servicio llamado **Apache Jackrabbit Oak Segment Tar Cold Standby Service** y doble haga clic en él para editar la configuración.
 1. Guarde la configuración y reinicie las instancias para que la nueva configuración surta efecto.
 
 >[!NOTE]
 >
 >Puede comprobar la función de una instancia en cualquier momento comprobando la presencia de los modos de ejecución **principal** o de **espera** en la consola web de configuración de Sling.
-
->Para ello, vaya a *https://localhost:4502/system/console/status-slingsettings* y marque la línea **&quot;Run Modes&quot;** .
 >
+>Para ello, vaya a *https://localhost:4502/system/console/status-slingsettings* y marque la línea **&quot;Run Modes&quot;** .
 
 ## Primera sincronización {#first-time-synchronization}
 
@@ -264,31 +270,34 @@ Además, al ejecutar con un archivo no compartido `FileDataStore`, mensajes como
 
 Los siguientes ajustes de OSGi están disponibles para el servicio de espera en frío:
 
-* **** Configuración de persistencia: si se habilita, almacenará la configuración en el repositorio en lugar de los archivos de configuración OSGi tradicionales. Se recomienda mantener esta configuración deshabilitada en los sistemas de producción para que la configuración principal no se recupere con la configuración en espera.
+* **Configuración de persistencia:** si se habilita, almacenará la configuración en el repositorio en lugar de los archivos de configuración OSGi tradicionales. Se recomienda mantener esta configuración deshabilitada en los sistemas de producción para que la configuración principal no se recupere con la configuración en espera.
 
-* **`mode`Modo (**): esto elegirá el modo de ejecución de la instancia.
+* **Modo (`mode`):** esto elegirá el modo de ejecución de la instancia.
 
-* **** Puerto (puerto): el puerto que se va a utilizar para la comunicación. El valor predeterminado es `8023`.
+* **Puerto (puerto):** el puerto que se va a utilizar para la comunicación. El valor predeterminado es `8023`.
 
-* **`primary.host`Host principal (**): - el host de la instancia principal. Esta configuración solo se aplica a la espera.
-* **`interval`Intervalo de sincronización (**): - esta configuración determina el intervalo entre la solicitud de sincronización y solo se aplica a la instancia de espera.
+* **Host principal (`primary.host`):** - el host de la instancia principal. Esta configuración solo se aplica a la espera.
+* **Intervalo de sincronización (`interval`):** - esta configuración determina el intervalo entre la solicitud de sincronización y solo se aplica a la instancia de espera.
 
-* **`primary.allowed-client-ip-ranges`Intervalos IP permitidos (**): - los intervalos IP desde los que el principal permitirá las conexiones.
-* **`secure`Seguro (**): Habilite el cifrado SSL. Para utilizar esta configuración, debe habilitarse en todas las instancias.
-* **`standby.readtimeout`Tiempo de espera de lectura en espera (**): Tiempo de espera para solicitudes emitidas desde la instancia de espera en milisegundos. El valor de tiempo de espera recomendado es 43200000. Generalmente se recomienda que establezca el tiempo de espera en un valor de al menos 12 horas.
+* **Intervalos IP permitidos (`primary.allowed-client-ip-ranges`):** - los intervalos IP desde los que el principal permitirá las conexiones.
+* **Seguro (`secure`):** Habilite el cifrado SSL. Para utilizar esta configuración, debe habilitarse en todas las instancias.
+* **Tiempo de espera de lectura en espera (`standby.readtimeout`):** Tiempo de espera para solicitudes emitidas desde la instancia de espera en milisegundos. El valor de tiempo de espera recomendado es 43200000. Generalmente se recomienda que establezca el tiempo de espera en un valor de al menos 12 horas.
 
-* **`standby.autoclean`Limpieza automática en espera (**): Llame al método de limpieza si el tamaño del almacén aumenta en un ciclo de sincronización.
+* **Limpieza automática en espera (`standby.autoclean`):** Llame al método de limpieza si el tamaño del almacén aumenta en un ciclo de sincronización.
 
 >[!NOTE]
-Se recomienda que el principal y el en espera tengan ID de repositorio diferentes para que sean independientes para servicios como Descarga.
-La mejor manera de asegurarse de que esto se cubre es eliminando el archivo *sling.id* en el modo de espera y reiniciando la instancia.
+>
+>Se recomienda que el principal y el en espera tengan ID de repositorio diferentes para que sean independientes para servicios como Descarga.
+>
+>La mejor manera de asegurarse de que esto se cubre es eliminando el archivo *sling.id* en el modo de espera y reiniciando la instancia.
 
 ## Procedimientos de conmutación por error {#failover-procedures}
 
-Si la instancia principal falla por cualquier motivo, puede configurar una de las instancias en espera para que asuma la función de principal cambiando el modo de ejecución inicial como se detalla a continuación:
+En caso de que la instancia principal falle por cualquier motivo, puede configurar una de las instancias en espera para que asuma la función de principal cambiando el modo de ejecución de inicio como se detalla a continuación:
 
 >[!NOTE]
-Los archivos de configuración también deben modificarse para que coincidan con la configuración utilizada para la instancia principal.
+>
+>Los archivos de configuración también deben modificarse para que coincidan con la configuración utilizada para la instancia principal.
 
 1. Vaya a la ubicación donde está instalada la instancia de espera y deténgalo.
 
@@ -301,8 +310,8 @@ Los archivos de configuración también deben modificarse para que coincidan con
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Agregue el nuevo principal al equilibrador de carga.
-1. Cree e inicie una nueva instancia de espera. Para obtener más información, consulte el procedimiento anterior sobre la [creación de una configuración](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)de AEM TarMK Cold Standby.
+1. Añada el nuevo principal al equilibrador de carga.
+1. Cree y inicio una nueva instancia de espera. Para obtener más información, consulte el procedimiento anterior sobre la [creación de una configuración AEM TarMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
 ## Aplicación de revisiones a una configuración en espera fría {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -316,8 +325,8 @@ Para ello, siga los pasos que se describen a continuación:
 1. Pruebe la instancia en busca de problemas después de la instalación.
 1. Elimine la instancia de espera en frío eliminando su carpeta de instalación.
 1. Detenga la instancia principal y clóquela realizando una copia del sistema de archivos de toda la carpeta de instalación en la ubicación del modo de espera en frío.
-1. Vuelva a configurar el clon recién creado para que actúe como una instancia de espera en frío. Para obtener más información, consulte [Creación de una configuración de AEM TarMK Cold Standby.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
-1. Inicie las instancias principal y en frío.
+1. Vuelva a configurar el clon recién creado para que actúe como una instancia de espera en frío. Para obtener más información, consulte [Creación de una configuración AEM TarMK en frío.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. Inicio las instancias principal y en frío.
 
 ## Monitoreo {#monitoring}
 
@@ -340,7 +349,7 @@ Este nodo tiene cinco atributos de solo lectura:
 
 También hay tres métodos invocables:
 
-* `start():` inicia el proceso de sincronización.
+* `start():` inicio el proceso de sincronización.
 * `stop():` detiene el proceso de sincronización.
 * `cleanup():` ejecuta la operación de limpieza en espera.
 
@@ -365,25 +374,27 @@ Además, se puede recuperar la información de hasta 10 clientes (instancias en 
 ### Limpieza de revisión {#revision-clean}
 
 >[!NOTE]
-Si ejecuta la limpieza de revisión [en línea](/help/sites-deploying/revision-cleanup.md) en la instancia principal, no es necesario el procedimiento manual que se presenta a continuación. Además, si utiliza la limpieza de revisión en línea, la operación en la instancia de espera se realizará `cleanup ()` automáticamente.
+>
+>Si ejecuta la limpieza de revisión [en línea](/help/sites-deploying/revision-cleanup.md) en la instancia principal, no es necesario el procedimiento manual que se presenta a continuación. Además, si utiliza la limpieza de revisión en línea, la operación en la instancia de espera se realizará `cleanup ()` automáticamente.
 
 >[!NOTE]
-No ejecute la limpieza de revisión sin conexión en espera. No es necesario y no reducirá el tamaño del almacén de segmentos.
+>
+>No ejecute la limpieza de revisión sin conexión en espera. No es necesario y no reducirá el tamaño del almacén de segmentos.
 
 Adobe recomienda ejecutar el mantenimiento de forma regular para evitar un crecimiento excesivo del repositorio con el paso del tiempo. Para realizar manualmente el mantenimiento del repositorio en espera en frío, siga los pasos a continuación:
 
 1. Detenga el proceso de espera en la instancia de espera yendo a la consola JMX y usando **org.apache.jackrabbit.oak: Judía de estado (&quot;en espera&quot;)** . Para obtener más información sobre cómo hacerlo, consulte la sección anterior sobre [supervisión](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
-1. Detenga la instancia principal de AEM.
+1. Detenga la instancia de AEM principal.
 1. Ejecute la herramienta de compactación de roble en la instancia principal. Para obtener más información, consulte [Mantenimiento del repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-1. Inicie la instancia principal.
-1. Inicie el proceso de espera en la instancia de espera utilizando el mismo grano JMX como se describe en el primer paso.
+1. Inicio de la instancia principal.
+1. Inicio el proceso de espera en la instancia de espera utilizando el mismo grano JMX como se describe en el primer paso.
 1. Observe los registros y espere a que se complete la sincronización. Es posible que en este momento se observe un crecimiento sustancial en el repositorio de reserva.
 1. Ejecute la `cleanup()` operación en la instancia de espera, utilizando el mismo grano JMX descrito en el primer paso.
 
 Puede que la instancia de espera tarde más de lo habitual en completar la sincronización con la compactación sin conexión principal, ya que la compactación sin conexión reescribe efectivamente el historial del repositorio, haciendo que el cálculo de los cambios en los repositorios tome más tiempo. También debe tenerse en cuenta que una vez que se complete este proceso, el tamaño del repositorio en espera será aproximadamente del mismo tamaño que el repositorio principal.
 
-Como alternativa, el repositorio principal puede copiarse en modo manual a la espera después de ejecutar la compactación en el repositorio principal, lo que básicamente es volver a generar el repositorio en espera cada vez que se ejecute la compactación.
+Como alternativa, el repositorio principal se puede copiar en modo manual al modo de espera después de ejecutar la compactación en el repositorio principal, lo que básicamente consiste en volver a generar el modo de espera cada vez que se ejecuta la compactación.
 
 ### Recolección de papelera del almacén de datos {#data-store-garbage-collection}
 
@@ -394,6 +405,8 @@ Es importante ejecutar la recolección de elementos no utilizados en instancias 
 
    * En el almacén de datos principal, ejecute la recopilación de elementos no utilizados del almacén de datos a través del elemento de base JMX correspondiente, tal como se describe en [este artículo](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * En espera, la recopilación de elementos no utilizados del almacén de datos solo está disponible mediante el MBean **BlobGarbageCollection** - `startBlobGC()`. El **RepositoryManagement **MBean no está disponible en espera.
+
    >[!NOTE]
-   En caso de que no utilice un almacén de datos compartido, la recolección de elementos no utilizados deberá ejecutarse primero en el almacén primario y, a continuación, en el modo de espera.
+   >
+   >En caso de que no utilice un almacén de datos compartido, la recolección de elementos no utilizados deberá ejecutarse primero en el almacén primario y, a continuación, en el modo de espera.
 
