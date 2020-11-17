@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 19a6a4f80e2af37b8de49080a977d02bf0e43507
 workflow-type: tm+mt
-source-wordcount: '6229'
+source-wordcount: '6198'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-El Panel de operaciones de AEM 6 ayuda a los operadores de sistema a supervisar el estado del sistema de AEM de un vistazo. También proporciona información de diagnóstico generada automáticamente sobre aspectos relevantes de AEM y permite configurar y ejecutar la automatización de mantenimiento independiente para reducir significativamente las operaciones del proyecto y los casos de soporte. El Panel de operaciones puede ampliarse con tareas de mantenimiento y comprobaciones de estado personalizadas. Además, se puede acceder a los datos del Panel de operaciones desde herramientas de supervisión externas a través de JMX.
+El Panel de Operaciones de AEM 6 ayuda a los operadores de sistemas a supervisar AEM estado del sistema de un vistazo. También proporciona información de diagnóstico generada automáticamente sobre aspectos relevantes de la AEM y permite configurar y ejecutar la automatización de mantenimiento independiente para reducir significativamente las operaciones de los proyectos y los casos de apoyo. El Panel de operaciones puede ampliarse con tareas de mantenimiento y comprobaciones de estado personalizadas. Además, se puede acceder a los datos del Panel de operaciones desde herramientas de supervisión externas a través de JMX.
 
 **El Panel de Operaciones:**
 
@@ -40,7 +40,7 @@ Se puede acceder a ella desde la pantalla de bienvenida de AEM, en **Herramienta
 
 ## Informes de estado {#health-reports}
 
-El sistema de informes de estado proporciona información sobre el estado de una instancia de AEM a través de Sling Health Checks. Esto se puede realizar mediante solicitudes OSGI, JMX, HTTP (a través de JSON) o mediante la IU táctil. oferta las medidas y el umbral de ciertos contadores configurables y, en algunos casos, oferta información sobre cómo resolver el problema.
+El sistema de informes de estado proporciona información sobre el estado de una instancia de AEM a través de Sling Health Checks. Esto se puede realizar mediante solicitudes OSGI, JMX, HTTP (a través de JSON) o mediante la IU táctil. Oferta las medidas y el umbral de ciertos contadores configurables y, en algunos casos, oferta información sobre cómo resolver el problema.
 
 Tiene varias características, que se describen a continuación.
 
@@ -48,7 +48,7 @@ Tiene varias características, que se describen a continuación.
 
 Los Informes **de** estado son un sistema de tarjetas que indica la buena o mala salud con respecto a una área específica del producto. Estas tarjetas son visualizaciones de Sling Health Checks, que acumulada datos de JMX y otras fuentes y expone información procesada nuevamente como MBeans. Estos MBeans también se pueden inspeccionar en la consola [web](/help/sites-administering/jmx-console.md)JMX, bajo el dominio **org.apache.sling.healthCheck** .
 
-Se puede acceder a la interfaz Informes de estado a través del menú **Herramientas** - **Operaciones** - Informes **de** estado en la pantalla de bienvenida de AEM o directamente a través de la siguiente URL:
+Se puede acceder a la interfaz Informes de estado a través del menú **Herramientas** - **Operaciones** - Informes **de** estado en la pantalla de bienvenida de AEM o directamente a través de la siguiente dirección URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -60,7 +60,7 @@ El sistema de tarjetas expone tres estados posibles: **OK**, **ADVERTENCIA** y *
 
 ### Tipos de comprobación de estado {#health-check-types}
 
-Existen dos tipos de controles de estado en AEM 6:
+Existen dos tipos de controles de salud en el AEM 6:
 
 1. Comprobaciones de estado individuales
 1. Comprobaciones de estado compuestas
@@ -194,7 +194,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
   </tr>
   <tr>
    <td>Rendimiento de consultas</td>
-   <td><p>Esta comprobación de estado se simplificó <strong>en AEM 6.4</strong>y ahora comprueba el <code>Oak QueryStats</code> MBean refactorizado recientemente, más específicamente el <code>SlowQueries </code>atributo. Si las estadísticas contienen consultas lentas, la comprobación de estado devuelve una advertencia. De lo contrario, devuelve el estado OK.<br /> </p> <p>El MBean de esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>Esta comprobación de estado se simplificó <strong>en AEM 6.4</strong>, y ahora comprueba el <code>Oak QueryStats</code> MBean refactorizado recientemente, más específicamente el <code>SlowQueries </code>atributo. Si las estadísticas contienen consultas lentas, la comprobación de estado devuelve una advertencia. De lo contrario, devuelve el estado OK.<br /> </p> <p>El MBean de esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Longitud de la cola de observación</td>
@@ -202,11 +202,11 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
     <ul>
      <li>devuelve el estado Crítico si el <code>queueSize</code> valor supera el <code>maxQueueSize</code> valor (es decir, cuando se eliminarían eventos)</li>
      <li>devuelve Advertencia si el <code>queueSize</code> valor está por encima del <code>maxQueueSize * WARN_THRESHOLD</code> (el valor predeterminado es 0,75) </li>
-    </ul> <p>La longitud máxima de cada cola proviene de configuraciones independientes (Oak y AEM) y no se puede configurar desde esta comprobación de estado. El MBean de esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>La longitud máxima de cada cola proviene de configuraciones separadas (Oak y AEM), y no se puede configurar desde esta comprobación de estado. El MBean de esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Límites de recorrido de la consulta</td>
-   <td><p>Límites de recorrido de Consulta comprueba el <code>QueryEngineSettings</code> MB, más específicamente los atributos <code>LimitInMemory</code> y <code>LimitReads</code> , y devuelve el siguiente estado:</p>
+   <td><p>Límites de recorrido de consulta comprueba el <code>QueryEngineSettings</code> MB, más específicamente los atributos <code>LimitInMemory</code> y <code>LimitReads</code> , y devuelve el siguiente estado:</p>
     <ul>
      <li>devuelve el estado de advertencia si uno de los límites es igual o superior a la variable <code>Integer.MAX_VALUE</code></li>
      <li>devuelve el estado de advertencia si uno de los límites es menor que 10000 (la configuración recomendada de Oak)</li>
@@ -233,7 +233,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
        <li>devuelve el estado correcto si hace menos de 45 minutos </li>
       </ul> </li>
      <li>si no se cumple ninguna de estas condiciones, devuelve el estado Aceptar</li>
-    </ul> <p>Se pueden configurar los umbrales de estado Crítico y Advertir. El grano para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Esta comprobación de estado está disponible con AEM 6.4 y ha sido compatible con AEM 6.3.0.1.</p> </td>
+    </ul> <p>Se pueden configurar los umbrales de estado Crítico y Advertir. El grano para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Esta comprobación de estado está disponible con AEM 6.4 y se ha rebasado a AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Índices grandes de Lucene</td>
@@ -241,7 +241,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
     <ul>
      <li>un estado de advertencia si hay un índice con más de mil millones de documentos</li>
      <li>un estado crítico si existe un índice con más de 1.500 millones de documentos</li>
-    </ul> <p>Los umbrales son configurables y el MBean para la comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>Esta comprobación está disponible con AEM 6.4 y se ha admitido como AEM 6.3.2.0.</p> </td>
+    </ul> <p>Los umbrales son configurables y el MBean para la comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>Esta comprobación está disponible con AEM 6.4 y ha sido retroportada a AEM 6.3.2.0.</p> </td>
   </tr>
   <tr>
    <td>Mantenimiento del sistema</td>
@@ -250,7 +250,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
      <li>cada tarea de mantenimiento va acompañada de un chequeo médico asociado</li>
      <li>si no se agrega una tarea a una ventana de mantenimiento, su comprobación de estado devolverá Crítico</li>
      <li>debe configurar las tareas de mantenimiento Registro de auditoría y Depuración de flujo de trabajo o quitarlas de las ventanas de mantenimiento. Si se deja sin configurar, estas tareas fallarán en el primer intento de ejecución, por lo que la comprobación de mantenimiento del sistema devolverá el estado crítico.</li>
-     <li><strong>Con AEM 6.4</strong>, también se puede comprobar la tarea de mantenimiento <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">de</a> Lucene Binaries</li>
+     <li><strong>Con AEM 6.4</strong>, también hay un cheque para la tarea de mantenimiento <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">de</a> Lucene Binaries</li>
      <li>en AEM 6.2 y versiones posteriores, la comprobación de mantenimiento del sistema devuelve un estado de advertencia justo después del inicio porque las tareas no se ejecutan nunca. A partir de la versión 6.3, se devolverán correctamente si no se ha alcanzado la primera ventana de mantenimiento.</li>
     </ul> <p>El MBean de esta revisión de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemcheck,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -296,7 +296,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
   </tr>
   <tr>
    <td>Comprobaciones de seguridad</td>
-   <td><p>La comprobación de seguridad es un compuesto que agrega los resultados de varias comprobaciones relacionadas con la seguridad. Estas comprobaciones de estado individuales abordan diferentes preocupaciones de la lista de comprobación de seguridad disponible en la página de documentación de la lista de comprobación de <a href="/help/sites-administering/security-checklist.md">seguridad.</a> La comprobación es útil como prueba de humo de seguridad cuando se inicia la instancia. </p> <p>El MBean de esta revisión de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">security check,type=HealthCheck</a></p> </td>
+   <td><p>La comprobación de seguridad es un compuesto que agrega los resultados de varias comprobaciones relacionadas con la seguridad. Estas comprobaciones de estado individuales abordan diferentes preocupaciones de la lista de comprobación de seguridad disponible en la página de documentación de la lista de comprobación de <a href="/help/sites-administering/security-checklist.md">seguridad.</a> La comprobación es útil como prueba de humo de seguridad cuando se inicia la instancia. </p> <p>El MBean de esta revisión de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securityChecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Paquetes activos</td>
@@ -359,7 +359,7 @@ El Panel Health Check se puede integrar con Nagios a través de los granitos JMX
    }
    ```
 
-1. Instale Nagios y NRPE en el servidor AEM.
+1. Instale Nagios y NRPE en el servidor de AEM.
 1. Instale el complemento [check_http_json](https://github.com/phrawzty/check_http_json) en ambos servidores.
 1. Defina un comando de comprobación JSON genérico en ambos servidores:
 
@@ -389,7 +389,7 @@ El Panel Health Check se puede integrar con Nagios a través de los granitos JMX
        }
    ```
 
-1. Compruebe su panel Nagios para el servicio recién creado:
+1. Compruebe su panel Nagios para ver el servicio recién creado:
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -438,7 +438,7 @@ Ejemplos:
 
 >[!NOTE]
 >
->**Con AEM 6.4**, las tareas de mantenimiento se eliminan de la sesión en un formato más informativo en el nivel de información. Esto permite una mejor visibilidad en el estado de las tareas de mantenimiento.
+>**Con AEM 6.4**, las tareas de mantenimiento se desconectan de la caja en un formato más informativo y enriquecido a nivel de la información. Esto permite una mejor visibilidad en el estado de las tareas de mantenimiento.
 >
 >Si utiliza herramientas de terceros (como Splunk) para supervisar y reaccionar ante la actividad de tarea de mantenimiento, puede utilizar las siguientes sentencias de registro:
 
@@ -483,7 +483,7 @@ La página muestra:
 
 Para cualquier consulta dada, Oak intenta averiguar la mejor manera de ejecutar según los índices Oak definidos en el repositorio bajo el nodo **oak:index** . Según la consulta, Oak puede elegir diferentes índices. Comprender cómo Oak está ejecutando una consulta es el primer paso para optimizar la consulta.
 
-La Consulta Explicar es una herramienta que explica cómo Oak está ejecutando una consulta. Se puede acceder a ella desde la pantalla de bienvenida de AEM, en **Herramientas - Operaciones - Diagnóstico** , haciendo clic en Rendimiento **de** Consulta y pasando a la ficha **Explicar Consulta** .
+La Consulta Explicar es una herramienta que explica cómo Oak está ejecutando una consulta. Se puede acceder a ella desde la pantalla de bienvenida de AEM, en **Herramientas - Operaciones - Diagnóstico** , y luego haciendo clic en Rendimiento **de** Consulta y pasando a la ficha **Explicar Consulta** .
 
 **Características**
 
@@ -538,7 +538,7 @@ También puede descargar una instantánea del montón para analizarla más adela
 
 La página Tareas de mantenimiento automatizadas es un lugar donde puede realizar la vista y el seguimiento de tareas de mantenimiento recomendadas programadas para su ejecución periódica. Las tareas están integradas con el sistema de comprobación de estado. Las tareas también se pueden ejecutar manualmente desde la interfaz.
 
-Para acceder a la página Mantenimiento en el Panel de operaciones, debe ir a **Herramientas - Operaciones - Panel - Mantenimiento** desde la pantalla de bienvenida de AEM o seguir directamente este vínculo:
+Para llegar a la página Mantenimiento en el Panel de operaciones, debe ir a **Herramientas - Operaciones - Panel - Mantenimiento** desde la pantalla de bienvenida de AEM o seguir directamente este vínculo:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -572,7 +572,7 @@ Mediante la tarea de limpieza de binarios de Lucene, puede purgar los binarios d
 Aunque la tarea de mantenimiento se desarrolló para reducir la basura de revisión relacionada con Lucene, hay mejoras generales de eficiencia al ejecutar la tarea:
 
 * La ejecución semanal de la tarea de recolección de elementos no utilizados del almacén de datos se completará más rápidamente
-* También puede mejorar ligeramente el rendimiento general de AEM
+* También puede mejorar ligeramente el rendimiento AEM general
 
 Puede acceder a la tarea de limpieza de binarios de Lucene desde: **AEM > Herramientas > Operaciones > Mantenimiento > Ventana de mantenimiento diario > Limpieza** de binarios de Lucene.
 
@@ -582,7 +582,7 @@ Para obtener más información sobre la recopilación de elementos no utilizados
 
 ### Workflow purge {#workflow-purge}
 
-Los Flujos de trabajo también se pueden purgar del Panel de mantenimiento. Para ejecutar la tarea Depuración del flujo de trabajo, debe:
+Los flujos de trabajo también se pueden purgar del Panel de mantenimiento. Para ejecutar la tarea Depuración del flujo de trabajo, debe:
 
 1. Haga clic en la página Ventana **Mantenimiento** Semanal.
 1. En la página siguiente, haga clic en el botón **Reproducir** de la tarjeta de depuración **del flujo de trabajo** .
@@ -772,7 +772,7 @@ También puede descargar un `JSON` archivo que resume la información del panel 
    <td>Instancia</td>
    <td>
     <ul>
-     <li>la versión de AEM</li>
+     <li>la versión AEM</li>
      <li>lista de los modos de ejecución</li>
      <li>la fecha en que se inició la instancia</li>
     </ul> </td>
