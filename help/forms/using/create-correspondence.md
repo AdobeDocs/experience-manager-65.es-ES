@@ -9,7 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '3720'
+ht-degree: 0%
 
 ---
 
@@ -41,21 +44,22 @@ Seleccione la letra a previsualización siguiendo los pasos siguientes:
 
    * formularios-usuarios (para la previsualización en la instancia de autor)
    * cm-agent-users (para representaciones en instancias de publicación)
+
    Si no dispone de los permisos necesarios, solicite al administrador el acceso adecuado. Para obtener más información sobre cómo crear y agregar usuarios a grupos, consulte [Añadir usuarios o grupos a un grupo](/help/sites-administering/security.md). Si intenta procesar una correspondencia sin tener los permisos adecuados, aparece la página de error 404.
 
 1. Si ha seleccionado **Previsualización** > **Personalizado**, se abre un cuadro de diálogo. En el cuadro de diálogo, seleccione un archivo de datos, correspondiente al diccionario de datos, para previsualización de la letra con y, a continuación, seleccione **Previsualización**. Se crea un archivo de datos basado en un diccionario de datos para una letra específica. Para obtener más información sobre el archivo de datos, consulte Diccionario [de datos](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
 
-   ![Carta de Previsualización](assets/8_previewcustomdatafile.png)
+   ![Carta de previsualización](assets/8_previewcustomdatafile.png)
 
 1. La previsualización HTML de la letra (previsualización de formularios móviles) se abre con la ficha Datos en foco de forma predeterminada.
 
-   Para obtener más información sobre los formularios móviles y las funciones que admiten, consulte Diferenciación de [funciones entre formularios móviles y formularios](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)PDF.
+   Para obtener más información sobre los formularios móviles y las funciones que admiten, consulte Diferenciación de [funciones entre Forms móvil y PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
    Hay tres fichas: datos, contenido y datos adjuntos. Si no hay elementos de datos (variables de marcador de posición y campos de diseño), la letra se abre directamente con la ficha Contenido que se muestra. La ficha Archivos adjuntos solo está disponible cuando los archivos adjuntos están presentes o el acceso a la biblioteca está habilitado.
 
    >[!NOTE]
-
-   >Para obtener más información sobre el cambio entre el modo de representación HTML o PDF de la previsualización de letras, consulte [Cambio del modo de representación de letras](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Gestión de correspondencia y AEM, consulte [Interrupción de los complementos del navegador NPAPI y su impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) y formularios [PDF en formularios](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)HTML5.
+   >
+   >Para obtener más información sobre el cambio entre el modo de representación HTML o PDF de la previsualización de letras, consulte [Cambio del modo de representación de letras](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del navegador NPAPI y su impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) y [PDF forms en HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Enter data {#enterdata}
 
@@ -126,6 +130,7 @@ En la ficha de contenido, administre el contenido como fragmentos de documento y
    * Símbolos monetarios como €, ¥y £
    * Matemáticas como la adrenalina, el rey, el rey, el rey y el símbolo ^
    * Símbolos de puntuación como ‟ y&quot;
+
    ![caracteres especiales](assets/specialcharacters.png)
 
    Correspondence Management ha incorporado compatibilidad con 210 caracteres especiales. El administrador puede [añadir compatibilidad con más caracteres especiales personalizados personalizándolos](../../forms/using/custom-special-characters.md).
@@ -156,6 +161,7 @@ En la ficha de contenido, administre el contenido como fragmentos de documento y
    * Campos obligatorios.
    * Campos de diseño si son obligatorios y están enlazados al usuario.
    * Solo instancias de variables únicas. Si un módulo, área de destinatario o plantilla de carta contiene dos o más instancias de la misma variable, el recuento se muestra como 1 (uno). Sin embargo, para cada una de las instancias, el recuento se muestra como 1.
+
    El recuento de variables no rellenadas no incluye los módulos no seleccionados. Si un módulo se incluye en una plantilla de carta pero no está en la letra, no se muestra el recuento de variables no rellenadas en este módulo.
 
    Para el área de destinatario, el módulo y la variable, el recuento se muestra a la derecha de cada objeto en la plantilla de letras. Sin embargo, para la plantilla completa, el recuento se muestra en la barra de estado Crear correspondencia.
@@ -165,7 +171,8 @@ En la ficha de contenido, administre el contenido como fragmentos de documento y
    * **Texto** Muestra la suma de las variables únicas de marcador de posición sin rellenar y los elementos de diccionario de datos contenidos en el módulo de texto.
    * **Condición** Muestra la suma de las variables de condición únicas no rellenadas incluidas en la condición y las variables incluidas en los módulos resultantes.
    * **Lista** Muestra la suma de todas las variables únicas sin rellenar contenidas en los módulos asignados a la lista.
-   * **Área** de Destinatario Muestra la suma de todas las variables únicas sin rellenar contenidas en los módulos asignados al área de destinatario.
+   * **Área** de destinatario Muestra la suma de todas las variables únicas sin rellenar contenidas en los módulos asignados al área de destinatario.
+
    Tenga en cuenta lo siguiente con respecto a las variables con valores predeterminados:
 
    * El valor predeterminado de un campo de variable booleano es *false*. Sin embargo, se considera que la variable no está rellenada. Esto implica que el recuento de variables incluye todos los campos de variables booleanas con el valor *false*.
@@ -193,11 +200,11 @@ En la ficha de contenido, administre el contenido como fragmentos de documento y
 * Editar (sólo módulos de texto): Abra el editor de texto enriquecido para editar el módulo de texto.
 * Panel de datos (módulos de texto y condición): Abra todas las variables del módulo.
 
-**Módulo Lista**
+**Módulo lista**
 
 * Insertar línea en blanco: Inserta una nueva línea en blanco.
 * Biblioteca de contenido: Abre la biblioteca de contenido para agregar módulos a la lista.
-* Configuración de Lista (solo lista anidada):
+* Configuración de lista (solo lista anidada):
 * Bloqueo de pedido (información): Indica que no se puede cambiar el orden de los elementos de lista.
 
 ### Administrar archivos adjuntos {#manage-attachments}
@@ -264,7 +271,7 @@ Puede realizar cambios en el diseño y en el contenido para asegurarse de que la
 
    Después de realizar los cambios necesarios, puede enviar la carta desde la previsualización HTML5 o tocar de nuevo la Previsualización para revisar el resultado del PDF acoplado.
 
-   Para obtener información sobre las diferencias entre formularios HTML5 y PDF, consulte [Diferenciación de funciones entre formularios HTML5 y formularios](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md)PDF.
+   Para obtener información sobre las diferencias entre formularios HTML5 y PDF forms, consulte [Diferenciación de funciones entre formularios HTML5 y PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Guardar borradores y enviar instancias de carta {#savingdrafts}
 
@@ -290,7 +297,7 @@ Las instancias de letras se guardan en la instancia de publicación y se replica
 
 ### Almacenamiento remoto {#remote-save}
 
-Esta opción existe para las personas que tienen problemas con el almacenamiento de datos de usuario en instancias de publicación, que en general están fuera del cortafuegos corporativo. Cuando se activa la opción de guardar de forma remota, las instancias de letras no se guardan en la instancia de publicación pero se guardan de forma remota en el autor de procesamiento especificado mediante las configuraciones del SDK de LiveCycle Client.
+Esta opción existe para las personas que tienen problemas con el almacenamiento de datos de usuario en instancias de publicación, que en general están fuera del cortafuegos corporativo. Cuando se activa la opción de guardar de forma remota, las instancias de letras no se guardan en la instancia de publicación pero se guardan de forma remota en el autor de procesamiento especificado mediante las configuraciones del SDK de cliente de LiveCycle.
 
 #### Habilitar almacenamiento remoto {#enable-remote-save}
 
@@ -302,9 +309,9 @@ Esta opción existe para las personas que tienen problemas con el almacenamiento
 
 1. En AEM, abra la configuración de la consola web de Adobe Experience Manager para su servidor mediante la siguiente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
-   ![Configuración de la consola web de Adobe Experience Manager](assets/2configmanager.png)
+   ![Configuración de Adobe Experience Manager Web Console](assets/2configmanager.png)
 
-1. En esta página, localice la configuración del SDK de Adobe LiveCycle Client y amplíela haciendo clic en ella.
+1. En esta página, localice la configuración del SDK del cliente de Adobe LiveCycle y amplíela haciendo clic en ella.
 
 1. En la URL del servidor de procesamiento, introduzca el nombre del servidor de LiveCycle, proporcione la información de inicio de sesión y, a continuación, haga clic en **Guardar**.
 
@@ -312,16 +319,16 @@ Esta opción existe para las personas que tienen problemas con el almacenamiento
 
 1. Si es necesario, configure el nombre de usuario y la contraseña con los que desea acceder al servidor.
 
-#### envío de datos adjuntos {#attachmentdelivery}
+#### Envío de datos adjuntos {#attachmentdelivery}
 
 * Los archivos adjuntos de la carta están disponibles en el proceso posterior del PDF, que se crea después del envío de la carta.
 * Cuando la carta se procesa con las API del lado del servidor como un PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos PDF adjuntos.
 * Cuando se carga un proceso de publicación asociado a una plantilla de carta como parte de las operaciones Enviar o completar correspondencia mediante la interfaz de usuario Crear correspondencia, los archivos adjuntos se pasan como la Lista&lt;com.adobe.idp.Documento> en el parámetro AttachmentDocs.
 * Los mecanismos de envío predeterminados, como correo electrónico e impresión, también proporcionan archivos adjuntos junto con el PDF de la correspondencia generada.
 
-## Modos de representación de la previsualización de letras: previsualización de formularios móviles y previsualización PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Modos de representación de la previsualización de letras: Previsualización de formularios móviles y previsualización PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-La administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la revertir a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre el cambio entre el modo de previsualización HTML y PDF, consulte [Cambio del modo de letra](#changerenditionmode)de representación.
+La Administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la reversión a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre el cambio entre el modo de previsualización HTML y PDF, consulte [Cambio del modo de letra](#changerenditionmode)de representación.
 
 A continuación se describen las ventajas y la funcionalidad disponibles en la previsualización de HTML y PDF.
 
@@ -332,12 +339,13 @@ A continuación se describen las ventajas y la funcionalidad disponibles en la p
 * **Compatibilidad** con exploradores: Los navegadores retiran gradualmente la compatibilidad con NPAPI, lo que afecta a la previsualización de letras en PDF. Los formularios HTML/móviles no afectan a la previsualización de letras.
 * **Resalte el contenido editable en una letra**: En la interfaz de usuario Crear correspondencia, puede tocar Resaltar contenido editable para resaltar todo el contenido editable de la letra en gris. Para obtener más información, consulte [Administrar contenido](#managecontent).
 
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>``<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>``<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Ventajas de la previsualización de archivos PDF**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Ventajas de la previsualización de PDF**
 
 * **Salto** de página: En la previsualización PDF, se puede realizar una vista exacta de cómo los saltos de página de la letra afectan a su salida.
-* **previsualización** final: En la previsualización PDF, puede realizar una vista del formato y el aspecto exactos de la letra, ya que la letra aparecerá en su salida.
+* **Previsualización** final: En la previsualización PDF, puede realizar una vista del formato y el aspecto exactos de la letra, ya que la letra aparecerá en su salida.
 
-Para obtener información sobre la compatibilidad con secuencias de comandos en formularios PDF, consulte Compatibilidad con [secuencias de comandos](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+Para obtener información sobre la compatibilidad con secuencias de comandos en PDF forms, consulte Compatibilidad con [secuencias de comandos](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 
 Para obtener más información sobre la compatibilidad con secuencias de comandos en formularios HTML5, consulte Compatibilidad con [secuencias de comandos para formularios](/help/forms/using/scripting-support.md)HTML5.
 
