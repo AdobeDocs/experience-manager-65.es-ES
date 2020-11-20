@@ -1,8 +1,8 @@
 ---
 title: Configuración del seguimiento de videos para Adobe Analytics
 seo-title: Configuración del seguimiento de videos para Adobe Analytics
-description: Obtenga información sobre la configuración del seguimiento de videos para SiteCatalyst.
-seo-description: Obtenga información sobre la configuración del seguimiento de videos para SiteCatalyst.
+description: Obtenga información sobre la configuración del seguimiento de vídeo para SiteCatalyst.
+seo-description: Obtenga información sobre la configuración del seguimiento de vídeo para SiteCatalyst.
 uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
@@ -21,19 +21,19 @@ ht-degree: 1%
 
 # Configuración del seguimiento de videos para Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Existen varios métodos disponibles para el seguimiento de eventos de vídeo, dos de los cuales son opciones heredadas para versiones anteriores de Adobe Analytics. Estas opciones heredadas son: Hitos heredados y segundos heredados.
+Existen varios métodos disponibles para rastrear eventos de vídeo, dos de los cuales son opciones heredadas para versiones anteriores de Adobe Analytics. Estas opciones heredadas son: Hitos heredados y segundos heredados.
 
 >[!NOTE]
 >
->Antes de continuar, asegúrese de **que tiene un** vídeo reproducible** cargado en AEM.
-
->Para asegurarse de que los vídeos se reproducen en la página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)**para obtener información sobre cómo transcodificar archivos de vídeo en AEM.
+>Antes de continuar, asegúrese de que tiene un vídeo **** reproducible cargado en AEM.
+>
+>Para asegurarse de que los vídeos se reproducen en la página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)** para obtener información sobre cómo transcodificar archivos de vídeo en AEM.
 
 Utilice el procedimiento siguiente para configurar un marco para el seguimiento de vídeo con cada método.
 
 >[!NOTE]
 >
->Para nuevas implementaciones, se recomienda **no utilizar** las opciones heredadas para el seguimiento de vídeo. En su lugar, utilice el método **Hitos** .
+>En implementaciones nuevas, se recomienda **no utilizar** las opciones heredadas para el seguimiento de vídeo. En su lugar, utilice el método **Hitos** .
 
 ## Pasos comunes {#common-steps}
 
@@ -52,7 +52,7 @@ Utilice el procedimiento siguiente para configurar un marco para el seguimiento 
    * [Hitos heredados](/help/sites-administering/adobeanalytics.md)
    * [Segundos heredados](/help/sites-administering/adobeanalytics.md)
 
-1. Al seleccionar un método de seguimiento, la lista de las variables de CQ cambia en consecuencia. Utilice las secciones siguientes para obtener información sobre cómo seguir configurando el componente y asignar las variables de CQ con las propiedades de Adobe Analytics.
+1. Al seleccionar un método de seguimiento, la lista de las variables de CQ cambia en consecuencia. Utilice las secciones siguientes para obtener información sobre cómo seguir configurando el componente y asignar las variables de CQ con propiedades de Adobe Analytics.
 
 ## Milestones {#milestones}
 
@@ -98,7 +98,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Se envía cada vez que se activa un hito, junto con este evento, el número de segundos que el usuario ha pasado viendo el segmento determinado. por ejemplo: eventX=21<br /> </td>
+   <td>Se envía cada vez que se activa un hito, junto con este evento, el número de segundos que el usuario ha pasado viendo el segmento determinado. p. ej. eventX=21<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
@@ -114,7 +114,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Enviado en cada hito; aparece como pev3 en la llamada de Analytics de Adobe, generalmente enviada como "video"<br /> </td>
+   <td>Enviado en cada hito; aparece como pev3 en la llamada de Adobe Analytics, generalmente enviada como "video"<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -334,7 +334,7 @@ Este método es similar al método Hitos con la diferencia de que los hitos espe
 
    * *Segundos totales reproducidos* : el número total de segundos que se reprodujo el vídeo (*25*)
 
-   * *Marca de hora* de Inicio: Marca de hora que identifica cuándo se inició la reproducción del vídeo (*1331035567*)
+   * *Marca de hora* de inicio: Marca de hora que identifica cuándo se inició la reproducción del vídeo (*1331035567*)
 
    * *Sesión* de reproducción: los detalles de la sesión de reproducción. Este campo indica cómo interactuó el usuario con el vídeo. Esto puede incluir datos como dónde empezaron a reproducir el vídeo, si utilizaron el control deslizante para avanzar en el vídeo y dónde dejaron de reproducirlo (*L10E24S58L58 - el vídeo se detuvo en segundos. 25 de la sección L10, luego se omitió a seg. 48*)
 
