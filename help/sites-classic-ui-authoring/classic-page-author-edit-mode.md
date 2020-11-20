@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '6169'
+ht-degree: 89%
 
 ---
 
@@ -152,7 +155,8 @@ Están disponibles en dos fichas:
 Especificar una ruta manualmente o con el selector. Deje esta opción en blanco para utilizar la página actual como página principal.
       * **Opciones de Lista fija**
 
-         * **Páginas** Seleccione una lista de páginas. Utilice `+` para agregar más entradas y los botones de subida y bajada para ajustar el orden.
+         * **Páginas** Seleccione una lista de páginas. Usar 
+`+` para agregar más entradas y los botones de subida y bajada para ajustar el orden.
       * **Opciones de Buscar**
 
          * **Iniciar en** Indique una ruta de inicio manualmente o con el selector.
@@ -161,7 +165,8 @@ Especificar una ruta manualmente o con el selector. Deje esta opción en blanco 
       * **Opciones de Búsqueda avanzada**
 
          * **Anotación predicada Querybuilder** Es posible introducir una consulta de búsqueda utilizando una anotación predicada QueryBuilder. Por ejemplo, puede introducir &quot;fulltext=Marketing&quot; para que se muestren todas las páginas en cuyo contenido aparezca &quot;Marketing&quot; en el Carrusel. Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
-   * **Ordenar por** selección `jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` desde el menú desplegable.
+   * **Ordenar por** selección 
+`jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` en el menú desplegable.
 
    * **Límite** Máximo de elementos que se pueden utilizar en el Carrusel; es opcional.
 
@@ -306,8 +311,7 @@ Es posible arrastrar y soltar una imagen del [Buscador de contenido](/help/sites
 >[!NOTE]
 El progreso de la carga no puede supervisarse con Internet Explorer.
 Los usuarios de Internet Explorer deben cargar la imagen, hacer clic en **Aceptar** y volver a abrir la imagen para ver el archivo cargado en la previsualización y para poder realizar modificaciones (p. ej. recortar).
-
->See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
@@ -394,7 +398,7 @@ Especifique una ruta manualmente o con el selector. Deje esta opción en blanco 
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda mediante notación de predicado de QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
@@ -428,7 +432,7 @@ Especifique una ruta manualmente o con el selector. Deje esta opción en blanco 
 
 En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede mostrar una lista de páginas secundarias, con el diseño controlado mediante las definiciones CSS personalizadas del diseño del sitio.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_lista_use](assets/dc_list_use.png)
 
 ### Inicio de sesión {#login}
 
@@ -520,7 +524,7 @@ El componente Búsqueda añade la capacidad de búsqueda a la página.
 
 Puede configurar:
 
-* Búsqueda
+* Búsqueda  
 
    * **Tipos de nodo**
 
@@ -708,7 +712,7 @@ Puede configurar:
 
    * **Vincular a**
 
-      Especifique una ruta de destino.
+      Especifique una ruta de destinatario.
 
    * **Descripción**
 
@@ -747,7 +751,7 @@ En el siguiente ejemplo se muestra un componente **Título**; el diseño se dete
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### El vídeo {#video}
+### Vídeo {#video}
 
 El componente **Vídeo** permite colocar un elemento de vídeo predefinido, listo para utilizar en una página.
 
@@ -769,7 +773,7 @@ Después de colocar un ejemplo de componente en su página, puede configurar:
 Los formatos aceptados son:
 * `.mp4`
 * `Ogg`
-* `FLV` (Vídeo Flash)
+* `FLV` (vídeo de Flash)
 
 
 
@@ -1084,7 +1088,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
 
          * **El posible cliente se eliminará de esta lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posible cliente requerida.
 
 
 
