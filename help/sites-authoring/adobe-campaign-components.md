@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '2854'
+ht-degree: 81%
 
 ---
 
@@ -22,9 +25,9 @@ Cuando integre un elemento con Adobe Campaign, tendrá componentes disponibles p
 
 >[!CAUTION]
 >
->Los componentes de correo electrónico de AEM han quedado obsoletos. Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada por AEM se vuelven de uso limitado para los clientes debido a la necesidad de implementar estilos personalizados en los componentes necesarios para los proyectos.
+>Los componentes de correo electrónico AEM han quedado obsoletos. Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada por AEM se vuelven de uso limitado para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
 >
->Los componentes de correo electrónico se pueden implementar en el nivel de proyecto y los componentes de correo electrónico de AEM obsoletos ilustran cómo se puede lograr. Sin embargo, estos componentes desaprobados no deben usarse en proyectos.
+>Los componentes de correo electrónico se pueden implementar a nivel de proyecto y los componentes de correo electrónico AEM obsoletos ilustran cómo se puede lograr. Sin embargo, estos componentes desaprobados no deben usarse en proyectos.
 
 ## Componentes del boletín de Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -88,9 +91,9 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 >[!NOTE]
 >
 >El editor de la aplicación utiliza el tamaño original y la relación de aspecto de la imagen cuando se edita. También es posible especificar las propiedades de altura y anchura. Cualquier restricción de tamaño y de relación de aspecto se aplica cuando se guardan los cambios de edición.
-
->Según el caso, las restricciones mínimas y máximas se pueden imponer también mediante el [diseño de la página](/help/sites-developing/designer.md); se desarrollan durante la implementación del proyecto.
 >
+>Según el caso, las restricciones mínimas y máximas se pueden imponer también mediante el [diseño de la página](/help/sites-developing/designer.md); se desarrollan durante la implementación del proyecto.
+
 Dispone de varias opciones adicionales en el modo de edición de pantalla completa; por ejemplo, mapa y zoom: 
 
 ![](do-not-localize/chlimage_1-11.png)
@@ -120,8 +123,10 @@ Para rotar una imagen, seleccione Rotar. Utilícelo repetidamente hasta que la i
 * **Tamaño** Configure la altura y la anchura de la imagen.
 
 >[!NOTE]
-Debe introducir la información en el campo **Texto alternativo** de la ficha **Avanzado**, o la imagen no se podrá guardar y verá el siguiente mensaje de error:
-`Validation failed. Verify the values of the marked fields.`
+>
+>Debe introducir la información en el campo **Texto alternativo** de la ficha **Avanzado**, o la imagen no se podrá guardar y verá el siguiente mensaje de error:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 En el siguiente ejemplo se muestra el componente Imagen (Campaign) que se está visualizando.
@@ -138,13 +143,16 @@ Puede configurar lo siguiente en las fichas **Visualización**, **Información d
 
 * **Información sobre herramientas del vínculo** Añade información adicional sobre cómo utilizar el vínculo.
 
-* **Tipo de vínculo** En la lista desplegable, seleccione entre una **Dirección URL personalizada** y un **Documento adaptable**. Este campo es obligatorio. Si selecciona una dirección URL personalizada, puede proporcionar la URL del vínculo. Si selecciona el documento adaptable, puede proporcionar la ruta de acceso del documento.
+* **LinkType** En la lista desplegable, seleccione entre una 
+**Dirección URL** personalizada y un Documento **** adaptable. Este campo es obligatorio. Si selecciona una dirección URL personalizada, puede proporcionar la URL del vínculo. Si selecciona el documento adaptable, puede proporcionar la ruta de acceso del documento.
 
 * **Parámetro de URL adicional** Añada cualquier parámetro de URL adicional. Haga clic en Añadir elemento para añadir varios elementos.
 
 >[!NOTE]
-You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
-`Validation failed. Verify the values of the marked fields.`
+>
+>You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 En el siguiente ejemplo se muestra el componente Vínculo (Campaign) que se está visualizando.
@@ -211,8 +219,10 @@ Permite especificar lo siguiente:
    * **Tamaño** Configure la altura y la anchura de la imagen.
 
 >[!NOTE]
-El campo **Texto alternativo** de la ficha **Avanzado** es necesario; de lo contrario, no se podrá guardar el componente y verá el siguiente mensaje de error:
-`Validation failed. Verify the values of the marked fields.`
+>
+>El campo **Texto alternativo** de la ficha **Avanzado** es necesario; de lo contrario, no se podrá guardar el componente y verá el siguiente mensaje de error:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 En el siguiente ejemplo se muestra el componente Texto e imagen (Campaign) que se está visualizando.
@@ -230,15 +240,19 @@ Una selección de iconos le permitirá dar formato a su texto, incluyendo las ca
 En el editor directo puede añadir texto, cambiar la justificación, añadir y quitar vínculos, añadir campos de contexto o bloques de personalización y entrar en el modo de pantalla completa. Cuando haya terminado de añadir y personalizar elementos, seleccione la marca de verificación para guardar los cambios (o pulse x para cancelar). See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
 
 >[!NOTE]
-* Los campos de personalización estarán disponibles dependiendo de la plantilla de Adobe Campaign a la que está vinculada el boletín.
-* Después de seleccionar una persona de ContextHub, los campos de personalización se sustituyen automáticamente con datos del perfil seleccionado.
+>
+>* Los campos de personalización estarán disponibles dependiendo de la plantilla de Adobe Campaign a la que está vinculada el boletín.
+>* Después de seleccionar una persona de ContextHub, los campos de personalización se sustituyen automáticamente con datos del perfil seleccionado.
 
+>
+>
 Consulte [Insertar personalización](/help/sites-authoring/campaign.md#inserting-personalization).
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
-Solo los campos definidos en **nms:seedMember** o en una de sus extensiones se tienen en cuentan. Los atributos de las tablas vinculadas a **nms:seedMember** no están disponibles.
+>
+>Solo los campos definidos en **nms:seedMember** o en una de sus extensiones se tienen en cuentan. Los atributos de las tablas vinculadas a **nms:seedMember** no están disponibles.
 
 ## Componentes del formulario de Adobe Campaign {#adobe-campaign-form-components}
 
@@ -278,7 +292,7 @@ En la tabla siguiente se describen los componentes que pueden visualizar y modif
   <tr>
    <td><p>Casilla (Campaign)</p> </td>
    <td><p>boolean</p> </td>
-   <td><p>Ya no hay contacto (por ningún canal)</p> </td>
+   <td><p>Ya no hay contacto (por cualquier canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de fecha (Campaign)</p> <p>Campo de fecha/HTML 5 (Campaign)</p> </td>
@@ -394,7 +408,7 @@ En el siguiente ejemplo se muestra el componente Visualización de error (Campai
 
 ### Clave de reconciliación oculta (Campaign) {#hidden-reconciliation-key-campaign}
 
-El componente Clave de reconciliación oculta (Campaign) permite agregar campos ocultos como parte de la clave de reconciliación a un formulario.
+El componente Clave de reconciliación oculta (Campaña) permite agregar campos ocultos como parte de la clave de reconciliación a un formulario.
 
 Puede configurar lo siguiente en el componente Clave de reconciliación oculta (Campaign):
 
@@ -439,7 +453,8 @@ Utilice el componente **Lista de comprobación de suscripciones (Campaign)** par
 Cuando se añade a un formulario, este componente muestra todas las suscripciones disponibles a modo de casillas, y permite al usuario seleccionar las suscripciones que desee. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
 
 >[!NOTE]
-El componente no comprueba a qué servicios está suscrito el usuario ni de cuáles canceló la suscripción.
+>
+>El componente no comprueba a qué servicios está suscrito el usuario ni de cuáles canceló la suscripción.
 
 Puede [configurar las opciones comunes a la mayoría de componentes de Adobe Campaign](#settings-common-to-most-components) en el componente Lista de comprobación de suscripciones (Campaign). (No hay ninguna configuración de Adobe Campaign disponible para este componente).
 
