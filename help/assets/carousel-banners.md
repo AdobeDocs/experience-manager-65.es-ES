@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
-source-wordcount: '4803'
+source-wordcount: '4802'
 ht-degree: 4%
 
 ---
@@ -255,8 +255,7 @@ Consulte [(Opcional) Vista previa de letreros de carrusel.](#optional-previewing
 >[!NOTE]
 >
 >Cuando se agregan zonas interactivas a una imagen en una imagen [interactiva](/help/assets/interactive-images.md) o una pancarta de carrusel, la información de puntos interactivos se almacena en la misma ubicación de metadatos, en relación con la ubicación y el mdashindependientemente de si se trata de una imagen interactiva o de una pancarta de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen (junto con los datos de puntos interactivos definidos) en cualquier visor.
-
->Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
+Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
 
 >[!NOTE]
 Si está editando imágenes interactivas con zonas interactivas y recortando la imagen, las zonas interactivas se eliminan.
