@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62d2d639499c128fd4cafa5f9c39307ae9a607d
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 87%
@@ -46,16 +46,20 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 >[!NOTE]
 >
 >Los tipos de actividades estarán disponibles dependiendo de lo siguiente:
-
+>
 >* Si la opción **xt_only** está habilitada en el inquilino de Adobe Target (clientcode) que se usa en el lado AEM para conectar con Adobe Target, **solo** puede crear actividades de XT en AEM.
    >
+   >
 * Si las opciones **xt_only** **no** están habilitadas en el inquilino de Adobe Target (clientcode), puede crear **ambas** actividades de XT y de pruebas A/B en AEM.
-
+>
+>
 **Nota adicional:** las opciones de **xt_only** son una configuración aplicada en un inquilino de Target (clientcode) y sólo se pueden modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
 
 >[!CAUTION]
-You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
-See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
+>
+>You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>
+>See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 
 ## Crear una marca mediante la consola de actividades {#creating-a-brand-using-the-activities-console}
 
@@ -89,8 +93,10 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Métrica de objetivo:** Si Adobe Target está seleccionado como motor de determinación de objetivos, puede agregar métricas de éxito a la actividad. Se requiere una métrica de éxito.
 
 >[!NOTE]
-Es necesario ***crear*** nuevas actividades de Adobe Target en el editor de contenido segmentado, no en la consola **Actividades**, ya que la sincronización con Adobe Target fallará.
-Sin embargo, puede editar las actividades existentes de Adobe Target en la consola.
+>
+>Es necesario ***crear*** nuevas actividades de Adobe Target en el editor de contenido segmentado, no en la consola **Actividades**, ya que la sincronización con Adobe Target fallará.
+>
+>Sin embargo, puede editar las actividades existentes de Adobe Target en la consola.
 
 Para añadir una actividad:
 
@@ -135,14 +141,16 @@ Para añadir una actividad:
 1. Haga clic o pulse **Guardar**.
 
    >[!NOTE]
-   Después de crear una actividad, debe publicarla de forma que esté disponible.
+   >
+   >Después de crear una actividad, debe publicarla de forma que esté disponible.
 
 ## Publicar y cancelar la publicación de actividades {#publishing-and-unpublishing-activities}
 
 Debe publicar actividades para que puedan estar disponibles. Por el contrario, es posible que no quiera que las actividades estén disponibles al cancelar su publicación.
 
 >[!NOTE]
-Al cancelar la publicación de una actividad, el estado de la actividad no cambia a menos que actualice la página.
+>
+>Al cancelar la publicación de una actividad, el estado de la actividad no cambia a menos que actualice la página.
 
 Para publicar o cancelar la publicación de actividades:
 
@@ -223,7 +231,10 @@ Este problema también puede ocurrir en las siguientes circunstancias:
 Para evitar problemas de sincronización, use siempre nombres exclusivos para las actividades. Si una actividad no se sincroniza, puede eliminar la campaña en Adobe Target que utilice el mismo nombre si dicha campaña no se está utilizando.
 
 >[!NOTE]
-When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; Por lo tanto, los nombres de campaña no pueden reutilizarse en diferentes tipos de campaña.
-Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
-Si al sincronizar se muestra el mensaje de error “Se ha producido un error en la solicitud. `thirdPartyId` ya existe”, cambie el nombre de la campaña y vuelva a sincronizar.
+>
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; Por lo tanto, los nombres de campaña no pueden reutilizarse en diferentes tipos de campaña.
+>
+>Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
+>
+>Si al sincronizar se muestra el mensaje de error “Se ha producido un error en la solicitud. `thirdPartyId` ya existe”, cambie el nombre de la campaña y vuelva a sincronizar.
 
