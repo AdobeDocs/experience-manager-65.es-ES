@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 88%
 
 ---
 
 
 # Creación: Entorno y herramientas {#authoring-the-environment-and-tools}
 
-El entorno de creación de AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde las distintas consolas y editores de página.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
 
 ## Administración de sitios {#site-administration}
 
@@ -96,13 +99,13 @@ Después de crear un párrafo apropiado (por ejemplo, Flash) en la página, pued
 
 Esta ficha enumera los productos. Después de crear un párrafo apropiado (por ejemplo, Producto) en la página, puede arrastrar un elemento y colocarlo dentro del párrafo.
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### Búsqueda de páginas {#finding-pages}
 
-Esta ficha muestra todas las páginas. Haga doble clic en cualquier página para abrirla y editarla.
+Esta ficha muestra todas las páginas. Haga clic con el doble en cualquier página para abrirla y editarla.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 ### Referencia a párrafos de otras páginas {#referencing-paragraphs-from-other-pages}
 
@@ -161,7 +164,7 @@ Para mostrar referencias de páginas directas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Seleccione** Mostrar referencias... AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +187,7 @@ Se puede acceder al **registro de auditoría** desde la ficha **Información** d
 
 The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
 
-## Modos de página {#page-modes}
+## Modos de página   {#page-modes}
 
 Al editar una página con la IU clásica hay varios modos a los que se puede acceder mediante los iconos en la parte inferior de la barra de tareas:
 
@@ -202,12 +205,11 @@ En este modo, puede configurar los componentes accesibles para editar el diseño
 >[!NOTE]
 >
 >Hay otras opciones disponibles:
-
+>
 >* [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
-* Sitios web: abrirá la consola Sitios web
-* Volver a cargar: actualizará la página.
-
+>* Sitios web: abrirá la consola Sitios web
+>* Volver a cargar: actualizará la página.
 
 
 ## Métodos abreviados del teclado {#keyboard-shortcuts}
