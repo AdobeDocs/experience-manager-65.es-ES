@@ -105,7 +105,7 @@ Complete los siguientes pasos para agregar una propiedad personalizada a todos l
 
    >[!NOTE]
    >
-   >Las propiedades comunes de todos los recursos que agregue aparecerán en la ficha básica de las propiedades del recurso. De forma predeterminada, las propiedades comunes agregadas para todos los recursos aparecen en la página de propiedades, así como en la página de creación de recursos. Para ocultar las propiedades comunes, debe <!--link to show / hide properties]-->.
+   >Las propiedades comunes de todos los recursos que agregue aparecerán en la ficha básica de las propiedades del recurso. De forma predeterminada, las propiedades comunes agregadas para todos los recursos aparecen en la página de propiedades, así como en la página de creación de recursos. Para ocultar las propiedades comunes, debe.
 
 ### Escenario: Añadir valores y listas desplegables personalizados en un campo o propiedad personalizada {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
