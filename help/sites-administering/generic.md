@@ -1,5 +1,5 @@
 ---
-ttitle: Administering generic eCommerce
+title: Administración de comercio electrónico genérico
 seo-title: Administración de comercio electrónico genérico
 description: La solución genérica de AEM proporciona métodos para administrar la información comercial que se encuentra en el repositorio.
 seo-description: La solución genérica de AEM proporciona métodos para administrar la información comercial que se encuentra en el repositorio.
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 06d6696a5493f0e166e400bcd9a379b7be062c1e
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3011'
 ht-degree: 4%
 
 ---
@@ -106,7 +106,7 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 #### Importación de productos: IU clásica {#importing-products-classic-ui}
 
 1. Con la consola **Herramientas** , abra la carpeta **Comercio** .
-1. Haga clic con el Doble para abrir el Importador **de productos**:
+1. Haga clic con el doble para abrir el Importador **de productos**:
 
    ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -356,7 +356,7 @@ La integración de Search&amp;Promote le permite:
 
 Para obtener más información, consulte [Alimentación](/help/sites-administering/product-feed.md)de productos.
 
-### Controlador de Evento para actualizaciones de productos {#event-handler-for-product-updates}
+### Controlador de evento para actualizaciones de productos {#event-handler-for-product-updates}
 
 Hay un controlador de Evento que registra un evento cuando se agrega, modifica o elimina un producto y cuando se agrega, modifica o elimina una página de producto. Existen los siguientes eventos OSGi:
 
