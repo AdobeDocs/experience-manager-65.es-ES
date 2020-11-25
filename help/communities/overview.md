@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 4533fa42fa3fa9f157d5ca8fee1251005b1d587e
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1446'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 3%
 
 Las comunidades de Adobe Experience Manager (AEM) ofrecen la posibilidad de crear rápidamente un sitio de comunidad local que tenga un rendimiento y una gestión mejorados, y que anime a los visitantes a convertirse en miembros valiosos de la comunidad.
 
-Póngase en contacto con el representante de cuentas para obtener información sobre la licencia de AEM Communities, así como sobre las licencias adicionales para funciones de habilitación y Adobe Analytics.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## Funciones de comunidades {#communities-features}
 
