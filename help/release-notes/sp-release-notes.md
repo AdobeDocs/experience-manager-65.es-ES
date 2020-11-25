@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3796'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * Una vez aplicado un estilo de artículo a un contenido, no se puede eliminar (NPR-34486).
 
-* Todas las copias en vivo y las copias de un fragmento de experiencias apuntan al mismo ID de [!DNL Adobe Target] oferta (NPR-34469).
+* Todas las copias en vivo y las copias de un fragmento de experiencia apuntan al mismo ID de [!DNL Adobe Target] oferta (NPR-34469).
 
 * Los elementos de lista con viñetas se muestran además de la lista numerada (NPR-34455).
 
@@ -139,7 +139,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 [!DNL Adobe Experience Manager] 6.5.7.0 [!DNL Assets] corrige los siguientes problemas y proporciona las siguientes mejoras.
 
-* Se han realizado las siguientes mejoras para la accesibilidad en [!DNL Experience Manager Assets]:
+* En esta versión se han realizado las siguientes mejoras para la accesibilidad [!DNL Experience Manager Assets] . Para obtener más información, consulte Funciones [de accesibilidad en [!DNL Assets]](/help/assets/accessibility.md).
 
    * Al navegar por la línea de tiempo con un teclado, la `Esc` tecla puede contraer la opción [!UICONTROL Mostrar todo] sin perder el enfoque (CQ-4293598).
    * Al navegar con la tecla de tabulación del teclado, después de quitar la última etiqueta de las etiquetas agregadas, el campo de etiqueta conserva el enfoque (NPR-35109).
@@ -193,7 +193,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* Las siguientes mejoras importantes se realizan para la accesibilidad en [!DNL Dynamic Media] (CQ-4290306). Para obtener más información, consulte Funciones de accesibilidad en [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* Las siguientes mejoras se realizan para la accesibilidad en [!DNL Dynamic Media] (CQ-4290306). Para obtener más información, consulte Funciones [de accesibilidad en [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
    * Los lectores de pantalla (JAWS, Narrador) narran el nombre, la función y el estado de los elementos de menú en la opción de menú Tamaño incrustado (CQ-4290927).
    * Los usuarios pueden navegar por el cuadro de diálogo Vínculo de correo electrónico mediante la `Tab` tecla (CQ-4290926).
