@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Adobe Experience Manager] Notas de la versión de Service Pack 6.5.'
-description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 7.
+title: '[!DNL Adobe Experience Manager] Notas de la versión de Service Pack 6.5'
+description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 7
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 5%
@@ -83,7 +83,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
 
 * Una vez aplicado un estilo de artículo a un contenido, no se puede eliminar (NPR-34486).
 
-* Todas las copias en vivo y las copias de un fragmento de experiencia apuntan al mismo ID de [!DNL Adobe Target] oferta (NPR-34469).
+* Todas las copias en vivo y las copias de un fragmento de experiencias apuntan al mismo ID de [!DNL Adobe Target] oferta (NPR-34469).
 
 * Los elementos de lista con viñetas se muestran además de la lista numerada (NPR-34455).
 
