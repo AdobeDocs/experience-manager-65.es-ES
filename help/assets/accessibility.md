@@ -3,9 +3,9 @@ title: Accesibilidad en [!DNL Experience Manager Assets]
 description: Conocer las funciones de accesibilidad [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] para ayudar a los usuarios con discapacidades.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 00f5a6194c8c29d358f362441c155c9c2a52cac7
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1919'
 ht-degree: 2%
 
 ---
@@ -42,8 +42,7 @@ Possible topics to cover in this article are below.
 
 Para leer un informe con detalles del nivel de cumplimiento, consulte la página del informe [de conformidad de](https://www.adobe.com/accessibility/compliance.html) accesibilidad (ACR).
 
-<!-- TBD: Add link after release.
-To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
+Para saber cómo [!DNL Dynamic Media] es accesible, consulte [Accesibilidad en [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Tecnologías de asistencia {#at-support}
 
@@ -224,7 +223,8 @@ Para proporcionar comentarios, formular preguntas y solicitar mejoras del produc
 
 >[!MORELIKETHIS]
 >
->* [Notas de la versión de las mejoras realizadas en cada versión](/help/release-notes/new-features-latest-service-pack.md).
+>* [Funciones de accesibilidad en [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+>* [Notas de la versión de las mejoras realizadas en cada versión](/help/release-notes/new-features-latest-service-pack.md)de Service Pack.
 >* [[!DNL Adobe Experience Manager] guía](/help/managing/web-accessibility.md)de accesibilidad.
 >* [Informes de conformidad (ACR) y listado de VPAT para soluciones](https://www.adobe.com/accessibility/compliance.html)de Adobe.
 
