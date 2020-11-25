@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 752f8a305f689a9aa1377533108d28c714da8afd
+source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
 workflow-type: tm+mt
-source-wordcount: '5776'
+source-wordcount: '5769'
 ht-degree: 5%
 
 ---
@@ -411,9 +411,9 @@ Puede hacer lo siguiente con los recursos en los que ha buscado [!DNL Experience
 
 ### Ordenar resultados de búsqueda {#sort}
 
-Ordene los resultados de la búsqueda para descubrir los recursos necesarios con mayor rapidez. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
+Ordene los resultados de la búsqueda para descubrir los recursos necesarios con mayor rapidez. Puede ordenar los resultados de búsqueda únicamente cuando selecciona **[[!UICONTROL Archivos]](#searchui)** en el panel **[!UICONTROL Filtros]** . [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
-En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, Dimension, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
+Puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, Dimension, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
 
 Para ver las limitaciones de la funcionalidad de ordenación, consulte [Limitaciones](#limitations).
 
