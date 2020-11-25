@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1898'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## Lista de comprobación de instalación {#installation-checklist}
 
-**Para la plataforma[AEM](/help/sites-deploying/deploy.md#what-is-aem)**
+**Para la plataforma [AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
 * Instalar las últimas actualizaciones de [AEM 6.5](#aem64updates)
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 * [Replicar la clave criptográfica](#replicate-the-crypto-key)
 * Si admite globalización, [configure la traducción](/help/sites-administering/translation.md)automatizada (se proporciona configuración de muestra para el desarrollo)
 
-**Para la capacidad de[Comunidades](/help/communities/overview.md)**
+**Para la capacidad de [Comunidades](/help/communities/overview.md)**
 
 * Si implementa un conjunto de servidores [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm)publicación, [identifique al editor principal](#primary-publisher)
 
