@@ -7,9 +7,9 @@ user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '585'
 ht-degree: 39%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 39%
 + [[!DNL Experience Manager] Notas de la versión de 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
++ [Accesibilidad en [!DNL Assets]](accessibility.md)
 + Uso de recursos Experience Manager {#using}
    + [[!DNL Assets] Experiencia de página de inicio](assets-home-page.md)
    + [Buscar recursos digitales](search-assets.md)
