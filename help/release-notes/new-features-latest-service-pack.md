@@ -4,9 +4,9 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -32,9 +32,9 @@ Ahora puede realizar los movimientos de página y los despliegues de MSM como op
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Los usuarios pueden ordenar recursos digitales en vistas de tarjetas y columnas.
+* [!DNL Assets] y [!DNL Dynamic Media] proporcionar varias mejoras de accesibilidad. Las mejoras están relacionadas con la navegación mediante el teclado, el uso de lectores de pantalla y mejoras similares para permitir el uso de tecnologías de asistencia (AT). Consulte [[!DNL Assets] mejoras](/help/release-notes/sp-release-notes.md#assets-6570) y [[!DNL Dynamic Media] mejoras](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
 
-* [!DNL Assets] y [!DNL Dynamic Media] proporcionar varias mejoras de accesibilidad. Las mejoras están relacionadas con la navegación mediante el teclado, el uso de lectores de pantalla y mejoras similares para permitir el uso de tecnologías de asistencia (AT). Consulte [Mejoras](/help/release-notes/sp-release-notes.md#assets-6570) y [[!DNL Dynamic Media] mejoras](/help/release-notes/sp-release-notes.md#dynamic-media-6570)de recursos. <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
+* Los usuarios pueden ordenar recursos digitales en vistas de tarjetas y columnas.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
