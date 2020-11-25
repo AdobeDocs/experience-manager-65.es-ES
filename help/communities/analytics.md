@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2743'
 ht-degree: 4%
 
 ---
@@ -123,7 +123,11 @@ Al iniciar sesión en [Adobe Experience Cloud](https://docs.adobe.com/content/he
 
 Si utiliza un **nuevo grupo** de informes, tenga en cuenta que un nuevo grupo de informes solo puede tener 4 eVars y 6 variables de evento, mientras que para las comunidades se requieren 11 eVars y 7 variables de evento.
 
-Si se utiliza un grupo **de informes** existente, puede que sea necesario [modificar la asignación](#modifying-analytics-variable-mapping) de variables antes de activar el marco de Analytics para un sitio de comunidad. Póngase en contacto con el representante de cuentas para conocer cualquier inquietud relacionada con las variables dedicadas a las comunidades.
+Si se utiliza un grupo **de informes** existente, puede que sea necesario [modificar la asignación](#modifying-analytics-variable-mapping) de variables antes de activar el marco de Analytics para un sitio de comunidad.
+
+<!--
+Contact your account representative for any concerns regarding the variables dedicated to Communities.
+-->
 
 >[!CAUTION]
 >
@@ -241,7 +245,6 @@ Para guardar la configuración:
 
       * Verifique que las entradas no contengan espacios de interlineado.
       * Pruebe con otro centro de datos.
-      * Póngase en contacto con su representante de cuentas.
 
 * Seleccione **Aceptar**.
 
