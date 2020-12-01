@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
+source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3789'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 5%
 
 Las principales funciones y mejoras introducidas en [!DNL Adobe Experience Manager] 6.5.7.0 incluyen:
 
-* Ordenar las páginas de Live Copy disponibles para la implementación con las propiedades [!UICONTROL Nombre], [!UICONTROL Fecha de] última modificación y Fecha [!UICONTROL de] última implementación.
+* Ordenar las páginas de Live Copy disponibles para la implementación con las propiedades [!UICONTROL Nombre], Fecha de [!UICONTROL última modificación,] y Fecha [!UICONTROL de la] última implementación.
 
 * Realizar los movimientos de página y los despliegues de MSM como operaciones asincrónicas para reducir su impacto en el rendimiento del tiempo de ejecución.
 
@@ -145,7 +145,7 @@ A continuación se muestra la lista de correcciones que se proporcionan en la ve
    * Al navegar con la tecla de tabulación del teclado, después de quitar la última etiqueta de las etiquetas agregadas, el campo de etiqueta conserva el enfoque (NPR-35109).
    * [!DNL Experience Manager] los componentes ahora contienen la información adecuada sobre el nombre, la función y el valor que deben utilizar los lectores de pantalla (NPR-34255).
    * Después de eliminar el cuadro combinado Tipo/Tamaño, el cuadro combinado Vínculo, el cuadro combinado Idioma o el cuadro de edición de texto, el enfoque del teclado vuelve a los elementos de la interfaz de usuario siguiente o anterior o a un elemento de la interfaz de usuario más relevante (CQ-4293585).
-   * Al pasar el puntero por encima de varias opciones, aparecerán las sugerencias como Seleccionar y Descargar. Los usuarios que utilizan la ampliación de la pantalla pueden tener dificultades para ver las miniaturas de los archivos debido al contenido que se muestra al pasar el ratón por encima. Ahora es posible conservar el enfoque, después de eliminar la opción con una `Escape` tecla (CQ-4293554).
+   * Al pasar el puntero sobre las opciones, aparecen sugerencias como Seleccionar y Descargar. Es posible que los usuarios que utilizan un ampliador de pantalla no vean las miniaturas de los archivos debido a estas sugerencias. Ahora, es posible conservar el enfoque, después de eliminar la opción con `Escape` clave. (CQ-4293554).
    * Al seleccionar una celda de cuadrícula de la cuadrícula presente en la página, el enfoque se desplaza a la barra de acciones que aparece en la pantalla (CQ-4282127).
    * Los usuarios visuales pueden diferenciar entre texto normal y un vínculo, ya que se muestran pistas visuales (subrayado y icono de chevron) para los vínculos a todas las soluciones en [!DNL Experience Manager] página de inicio (CQ-4282072).
 
@@ -405,7 +405,7 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integraciones | La pantalla de inclusión **[!UICONTROL de servicios de nube de]** AEM ya no se utiliza. Con la integración de AEM y Destinatario actualizada en AEM 6.5 para admitir la API de Target Standard, que utiliza la autenticación mediante IMS y E/S de Adobe, y el creciente papel de Inicio de Adobe para instrumentar páginas AEM para análisis y personalización, el asistente para la inclusión se ha vuelto funcionalmente irrelevante. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones de E/S de Adobe mediante los respectivos servicios de nube de AEM. |
+| Integraciones | La pantalla de inclusión **[!UICONTROL de servicios de nube de]** AEM ya no se utiliza. Con la integración de AEM y Destinatario actualizada en AEM 6.5 para admitir la API de Target Standard, que utiliza la autenticación mediante IMS y E/S de Adobe, y el creciente papel de Inicio de Adobe para instrumentar páginas AEM para análisis y personalización, el asistente para la inclusión se ha vuelto funcionalmente irrelevante. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones de Adobe I/O mediante los respectivos servicios de nube de AEM. |
 | Conectores | El conector JCR de Adobe para Microsoft SharePoint 2010 y Microsoft SharePoint 2013 está en desuso para AEM 6.5. | N/D |
 
 ## Problemas conocidos {#known-issues}
