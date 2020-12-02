@@ -26,12 +26,12 @@ Smart Imaging también se beneficia del aumento de rendimiento añadido de la in
 
 Los siguientes ejemplos de recursos de imagen muestran la optimización de imágenes inteligentes añadida:
 
-| Image<br>(URL) | Miniatura    | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
+| Imagen<br>(URL) | Miniatura    | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
 |---|---|---|---|---|
-| [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
-| [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
-| [Imagen 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
-| [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
+| [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38 % |
+| [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63 % |
+| [Imagen 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59 % |
+| [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44 % |
 |  |  |  |  | Promedio = 51% |
 
 De manera similar a lo anterior, Adobe también ejecutó una prueba con 7009 direcciones URL de sitios de clientes activos, y logró una optimización del tamaño de archivo JPEG de un 38% más y una optimización del tamaño de archivo de un 31% más para PNG con formato WebP, debido a la capacidad de las imágenes inteligentes.
@@ -47,7 +47,7 @@ Mejoras en la versión más reciente de Imágenes inteligentes:
 * Las imágenes inteligentes se pueden desactivar con el parámetro de URL &quot;bfc&quot;.
 * TTL (Tiempo de vivir) independiente. Anteriormente, era obligatorio un TTL mínimo de 12 horas para que funcionara la imagen inteligente.
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y era un proceso de dos pasos para invalidar la caché. En las últimas imágenes inteligentes, solo los derivados se almacenan en caché, lo que permite un proceso de invalidación de caché de un solo paso.
-* Los clientes que utilicen encabezados personalizados en su conjunto de reglas (por ejemplo, &quot;Origen de permitir temporización&quot; o &quot;Robot X&quot;, como se sugiere al [Añadir un valor de encabezado personalizado en las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarán de la última imagen inteligente, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de la imagen inteligente.
+* Los clientes que utilicen encabezados personalizados en su conjunto de reglas (por ejemplo, &quot;Origen de permitir temporización&quot;, &quot;Robot X&quot;, como se sugiere en [Añadir un valor de encabezado personalizado en respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarán de la última imagen inteligente, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de Imágenes inteligentes.
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -121,11 +121,11 @@ Las imágenes inteligentes funcionan con imágenes enviadas a través de HTTP o 
 Para utilizar las imágenes inteligentes, los medios dinámicos de su compañía (Dynamic Media Classic o Dynamic Media) en AEM cuenta deben cumplir los siguientes requisitos:
 
 * Use la CDN (Red de Envío de contenido) incluida en el Adobe como parte de su licencia.
-* Utilice un dominio dedicado (por ejemplo, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico (por ejemplo, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
+* Utilice un dominio dedicado (por ejemplo, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico (por ejemplo, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
 
 Para encontrar los dominios, inicie sesión en la cuenta o cuentas de compañía.
 
-Tap **[!UICONTROL Setup > Application Setup > General Settings.]** Busque el campo denominado Nombre del servidor **[!UICONTROL publicado.]** Si actualmente está utilizando un dominio genérico, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
+Puntee **[!UICONTROL Ajustes > Ajustes de aplicación > Configuración general.]** Busque el campo denominado Nombre del servidor  **[!UICONTROL publicado.]** Si actualmente está utilizando un dominio genérico, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
 
 El primer dominio personalizado no tiene costo adicional con una licencia de Dynamic Media.
 
@@ -143,7 +143,7 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
 
       Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral.]**
 
-      Busque el campo denominado Nombre del servidor **[!UICONTROL publicado.]**
+      Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado.]**
    1. Compruebe que está utilizando la CDN mediante Adobe y que no se administra con una relación directa.
    1. Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com`, y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
@@ -151,7 +151,7 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
 
       Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral.]**
 
-      Busque el campo denominado Nombre del servidor **[!UICONTROL publicado.]** Si actualmente está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición.
+      Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado.]** Si actualmente está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición.
    1. Indique si también necesita que esto funcione con HTTP/2.
 
 1. La asistencia técnica le agregará a la Lista de espera del cliente de Smart Imaging en función del orden en que se enviaron las solicitudes.
@@ -160,8 +160,8 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
 1. Se le notifica después de completarlo mediante soporte técnico.
 1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el Tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo los recursos se almacenan en caché en la CDN. Para cambiar esta configuración:
 
-   1. Si utiliza Dynamic Media Classic, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes.]** Establezca el valor **[!UICONTROL Predeterminado de Tiempo de espera de cliente en Activo]** en 24 o más.
-   1. Si utiliza Dynamic Media, siga [estas instrucciones](config-dynamic.md). Establezca el valor **[!UICONTROL Caducidad]** en 24 horas o más.
+   1. Si utiliza Dynamic Media Classic, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes.]** Establezca el tiempo  **[!UICONTROL predeterminado de caché de cliente en]** Livevalue en 24 o más.
+   1. Si utiliza Dynamic Media, siga [estas instrucciones](config-dynamic.md). Establezca el valor **[!UICONTROL Caducidad]** 24 horas o más.
 
 ## ¿Cuándo puedo esperar que mi cuenta esté habilitada con Imágenes inteligentes? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -179,12 +179,12 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 ## ¿Cómo puedo verificar si las imágenes inteligentes funcionan correctamente?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Una vez configurada la cuenta con imágenes inteligentes, cargue una URL de imagen de Dynamic Media Classic (Scene7)/Dynamic Media en el navegador.
-1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL Vista > Desarrollador > Herramientas]** para desarrolladores en el navegador. O bien, elija la herramienta de desarrollo de navegador que desee.
+1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL Vista > Desarrollador > Herramientas para desarrolladores]** en el explorador. O bien, elija la herramienta de desarrollo de navegador que desee.
 
 1. Asegúrese de que la caché está deshabilitada cuando las herramientas de desarrollo están abiertas.
 
-   * En Windows: vaya a la configuración del panel de herramientas del desarrollador y, a continuación, seleccione la casilla de verificación **[!UICONTROL Deshabilitar caché (mientras devtools está abierto)]** .
-   * On Mac – in the developer pane, under the **[!UICONTROL Network]** tab, select **[!UICONTROL disable cache]** .
+   * En Windows: vaya a la configuración del panel de herramientas del desarrollador y seleccione la casilla **[!UICONTROL Deshabilitar caché (mientras devtools está abierto)]**.
+   * En Mac: en el panel del desarrollador, en la ficha **[!UICONTROL Red]**, seleccione **[!UICONTROL deshabilitar caché]**.
 
 1. Observe que el tipo de contenido se transforma al formato adecuado. La siguiente captura de pantalla muestra una imagen PNG que se está convirtiendo dinámicamente a WebP en Chrome.
 1. Repita esta prueba en diferentes exploradores y condiciones de usuario.
@@ -196,7 +196,7 @@ No se convierten todas las imágenes. La imagen inteligente decide si la convers
 
 ## ¿Se puede desactivar Smart Imaging para cualquier solicitud? {#turning-off-smart-imaging}
 
-Sí. Puede desactivar las imágenes inteligentes agregando el modificador `bfc=off` a la URL.
+Sí. Puede desactivar las imágenes inteligentes agregando el modificador `bfc=off` a la dirección URL.
 
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? (#tuning-settings)
 
