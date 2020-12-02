@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Personalización de acciones de Tarea {#customizing-task-actions}
 
-El espacio de trabajo AEM Forms permite a los usuarios personalizar las acciones de tarea. Antes de personalizar las acciones de tarea, asegúrese de seguir los pasos que se indican en Pasos [genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
+El espacio de trabajo de AEM Forms permite a los usuarios personalizar las acciones de tarea. Antes de personalizar las acciones de tarea, asegúrese de seguir los pasos enumerados en [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Personalización del estilo de texto {#customizing-text-style}
 
-Para personalizar el estilo de texto, agregue el siguiente fragmento de código en el `/apps/ws/css/newStyle.css` archivo:
+Para personalizar el estilo de texto, agregue el siguiente fragmento de código en el archivo `/apps/ws/css/newStyle.css`:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -111,7 +111,7 @@ Para personalizar el estilo de texto, agregue el siguiente fragmento de código 
 
 ## Personalización de imágenes {#customizing-images}
 
-Para personalizar las imágenes, agregue el siguiente fragmento de código en el `/apps/ws/css/newStyle.css` archivo. El siguiente fragmento de código personaliza la imagen para la acción de *bloqueo* :
+Para personalizar las imágenes, agregue el siguiente fragmento de código en el archivo `/apps/ws/css/newStyle.css`. El siguiente fragmento de código personaliza la imagen para la acción *lock*:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -134,13 +134,13 @@ Para personalizar las imágenes, agregue el siguiente fragmento de código en el
 
 ## Mostrar solo imágenes para acciones {#showing-only-images-for-actions}
 
-Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas en las acciones de ruta. Para obtener información detallada, consulte [Imágenes para acciones](/help/forms/using/images-route-actions.md)de ruta.
+Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas en las acciones de ruta. Para obtener información detallada, consulte [Imágenes para acciones de ruta](/help/forms/using/images-route-actions.md).
 
-### Menú emergente de acción de tarea de Lista de Tarea {#task-list-task-action-nbsp-pop-up-menu}
+### Menú emergente de acción de tarea de Lista de tarea {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Se requiere un paquete de desarrollo para personalizar los elementos del menú emergente de acción de tarea de lista del espacio de trabajo AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Se requiere un paquete de desarrollo para personalizar los elementos del menú emergente de acción de tarea de lista de espacio de trabajo de AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Generación de código de área de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. Copie /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`reemplazar el siguiente fragmento de código:
+1. Copie /libs/ws/js/runtime/templates/task.html en `/apps/ws/js/runtime/templates/task.html`reemplazar el siguiente fragmento de código:
 
    ```html
    // Orignal code
@@ -213,7 +213,7 @@ Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas 
        </div>
    ```
 
-1. Elimine del `/apps/ws/css/newStyle.css` archivo la anchura fija asignada a una etiqueta de anclaje:
+1. Elimine el ancho fijo asignado a una etiqueta de anclaje del archivo `/apps/ws/css/newStyle.css`:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -263,11 +263,11 @@ Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas 
    }
    ```
 
-### Menú emergente de acción de tarea Detalles de Tarea {#task-details-task-action-pop-up-menu}
+### Menú emergente de acción de tarea Detalles de tarea {#task-details-task-action-pop-up-menu}
 
 Siga estos pasos para personalizar el menú emergente Acciones de tarea de detalles:
 
-* Copie el archivo /libs/ws/js/runtime/templates/taskdetails.html en la `/apps/ws/js/runtime/templates/` carpeta:
+* Copie el archivo /libs/ws/js/runtime/templates/taskdetails.html en la carpeta `/apps/ws/js/runtime/templates/`:
 * Encapsular etiqueta de icono dentro de la etiqueta de anclaje en lugar de texto. Por ejemplo, el *nuevo código* que se muestra a continuación encapsula la etiqueta de icono dentro de la etiqueta de anclaje:
 
 ```html
