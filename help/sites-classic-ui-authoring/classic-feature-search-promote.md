@@ -12,6 +12,9 @@ discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 86%
 
 ---
 
@@ -32,24 +35,24 @@ Las facetas se configuran en el servidor de Search&amp;Promote, al igual que la 
 <table>
  <tbody>
   <tr>
-   <th>Componente Search&amp;Promote</th>
+   <th>Search&amp;Promote, componente</th>
    <th>Descripción</th>
   </tr>
   <tr>
-   <td>Banners</td>
-   <td>Muestra anuncios de letreros. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td>
+   <td>Pancartas</td>
+   <td>Muestra anuncios de letreros. Los letreros se seleccionan en función de los datos recopilados mediante Search&amp;Promote.<br /> </td>
   </tr>
   <tr>
    <td>Rutas de exploración</td>
    <td>Muestra la palabra clave de búsqueda y la secuencia de filtros que el usuario ha aplicado a los resultados de búsqueda.</td>
   </tr>
   <tr>
-   <td>Casilla de verificación: faceta</td>
-   <td>Una lista de casillas de verificación para seleccionar facetas para filtrar resultados de búsqueda.</td>
+   <td>Lista de casilla de verificación-Faceta</td>
+   <td>Lista de casillas de verificación para seleccionar facetas para filtrar los resultados de búsqueda.</td>
   </tr>
   <tr>
    <td>Faceta desplegable</td>
-   <td>Lista desplegable de facetas para filtrar los resultados de búsqueda.</td>
+   <td>Una lista desplegable de facetas para filtrar los resultados de búsqueda.</td>
   </tr>
   <tr>
    <td>Faceta de lista de vínculo</td>
@@ -64,8 +67,8 @@ Las facetas se configuran en el servidor de Search&amp;Promote, al igual que la 
    <td>Muestra los resultados de una búsqueda de palabras clave.</td>
   </tr>
   <tr>
-   <td>Búsqueda</td>
-   <td>Agrega un campo de búsqueda a la página.</td>
+   <td>Búsqueda  </td>
+   <td>Añade un campo de búsqueda en la página.</td>
   </tr>
  </tbody>
 </table>
@@ -91,9 +94,9 @@ Puede configurar las siguientes propiedades de componente en modo Edición para 
 
 ### Activación del filtro de resultados por facetas {#enabling-the-filtering-of-results-by-facets}
 
-Puede permitir a los usuarios filtrar resultados de búsqueda por facetas. The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components enable users to select one or more facets for filtering. Si se utilizan estos componentes, debe incluir el componente **Rutas de exploración**. Las rutas de exploración indican los filtros actuales que se utilizan.
+Puede permitir a los usuarios filtrar resultados de búsqueda por facetas. Los componentes **Faceta de Lista de casilla de verificación**, **Faceta desplegable** y **Faceta de Lista de vínculo** permiten a los usuarios seleccionar una o varias facetas para filtrar. Si se utilizan estos componentes, debe incluir el componente **Rutas de exploración**. Las rutas de exploración indican los filtros actuales que se utilizan.
 
-The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components each have the following properties that you configure in **Edit** mode:
+Los componentes **Faceta de Lista de casilla de verificación**, **Faceta desplegable** y **Faceta de Lista de vínculo** tienen las siguientes propiedades que se configuran en el modo **Editar**:
 
 * **Nombre de faceta**: el nombre de la faceta que se utiliza en los filtros.
 
@@ -126,7 +129,7 @@ Puede configurar las siguientes propiedades para las rutas de exploración en mo
 * Delimitador: define el carácter o la cadena de caracteres que funcionará como delimitador entre cada ruta de exploración. El campo Delimitador acepta cualquier cadena de caracteres como entrada. El valor predeterminado es: &quot;>&quot; (sin las comillas)
 * Delimitador final: define un carácter o una cadena de caracteres que se va a mostrar en el extremo de las rutas de exploración. El campo de delimitador final acepta cualquier cadena de caracteres como entrada. El valor predeterminado es *blanco* (es decir, no se muestra nada en el extremo de la línea de la ruta de exploración)
 
-### Adición de cuadros de búsqueda {#adding-search-boxes}
+### Adición de cuadros de búsqueda  {#adding-search-boxes}
 
 El componente de búsqueda permite a los clientes realizar búsquedas de palabras claves. Añada componentes de búsqueda a cada página en la que se desee proporcionar acceso a búsquedas. 
 
@@ -139,7 +142,7 @@ Configure las siguientes propiedades en el modo Edición para controlar el compo
 
 ### Adición de titulares {#adding-banners}
 
-El componente Titulares muestra publicidades de titular según las búsquedas de Search&amp;Promote del cliente. La lógica en el servidor de Search&amp;Replace determina qué titular se muestra. Por ejemplo, una búsqueda de tejanos puede hacer que aparezca un titular relacionado con la moda. Filtrar por el departamento Hombres podría ajustar aún más la opción de titular.
+El componente Titulares muestra los anuncios de letreros según las búsquedas de Search&amp;Promote del cliente. La lógica en el servidor de Search&amp;Replace determina qué titular se muestra. Por ejemplo, una búsqueda de tejanos puede hacer que aparezca un titular relacionado con la moda. Filtrar por el departamento Hombres podría ajustar aún más la opción de titular.
 
 El componente de titulares proporciona una propiedad configurable llamada Área de banner. En el modo Edición, seleccione uno de los valores de propiedad para especificar cómo aparecerá el titular. El servicio de Search&amp;Promote determina la lista de valores entre los que puede seleccionar.
 
