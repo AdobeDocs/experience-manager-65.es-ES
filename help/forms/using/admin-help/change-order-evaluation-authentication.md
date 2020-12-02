@@ -1,8 +1,8 @@
 ---
 title: Cambiar el orden de evaluación para la autenticación
 seo-title: Cambiar el orden de evaluación para la autenticación
-description: Puede cambiar el orden en que los formularios AEM evalúan varios proveedores de autenticación.
-seo-description: Puede cambiar el orden en que los formularios AEM evalúan varios proveedores de autenticación.
+description: Puede cambiar el orden en que AEM formularios evalúa varios proveedores de autenticación.
+seo-description: Puede cambiar el orden en que AEM formularios evalúa varios proveedores de autenticación.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Cambiar el orden de evaluación para la autenticación {#change-the-order-of-evaluation-for-authentication}
 
-Si ha configurado varios proveedores de autenticación, puede cambiar el orden en que los formularios AEM los evalúan para la autenticación. El orden de los proveedores de autenticación enumerados en el archivo config.xml determina el orden de evaluación para la autenticación.
+Si ha configurado varios proveedores de autenticación, puede cambiar el orden en que AEM formularios los evalúa para la autenticación. El orden de los proveedores de autenticación enumerados en el archivo config.xml determina el orden de evaluación para la autenticación.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Importar y exportar archivos de configuración.
 1. Para exportar la configuración actual a un archivo, haga clic en Exportar y guarde el archivo de configuración en otra ubicación.
