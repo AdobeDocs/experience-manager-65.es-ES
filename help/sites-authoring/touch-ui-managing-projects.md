@@ -1,6 +1,6 @@
 ---
-title: Administración de Proyectos
-seo-title: Administración de Proyectos
+title: Administración de proyectos
+seo-title: Administración de proyectos
 description: Los proyectos le permiten organizar el proyecto agrupando los recursos en una entidad que se puede obtener acceso y administrar en la consola Proyectos
 seo-description: Los proyectos le permiten organizar el proyecto agrupando los recursos en una entidad que se puede obtener acceso y administrar en la consola Proyectos
 uuid: ac937582-181f-429b-9404-3c71d1241495
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 79%
 
 ---
 
@@ -35,9 +38,9 @@ En Proyectos, puede crear un proyecto, asociar recursos al proyecto y, además, 
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and **/home/groups**.
+>Para que los usuarios de los proyectos puedan ver otros usuarios o grupos mientras utilizan la funcionalidad Proyectos, como crear proyectos, crear tareas/flujos de trabajo, ver y administrar el equipo, esos usuarios necesitan tener acceso de lectura en **/home/users** y **/home/groups**. La manera más fácil de implementar esto es darle al grupo **usuarios de proyectos** acceso de lectura a **/inicio/usuarios** y **/inicio/grupos**.
 
-## Creación de un proyecto {#creating-a-project}
+## Creación de un proyecto    {#creating-a-project}
 
 En la versión básica, AEM proporciona estas plantillas para elegir al crear un proyecto:
 
@@ -46,20 +49,20 @@ En la versión básica, AEM proporciona estas plantillas para elegir al crear un
 * Proyecto de sesión fotográfica del producto
 * Proyecto de traducción
 
-El procedimiento de creación de un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-authoring/projects.md) y los [ flujos de trabajo](/help/sites-authoring/projects-with-workflows.md) disponibles.  Para crear un proyecto nuevo:
+El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-authoring/projects.md) y los [flujos de trabajo](/help/sites-authoring/projects-with-workflows.md) disponibles. Para crear un nuevo proyecto:
 
-1. En **Proyectos**, toque o haga clic en **Crear** para abrir el asistente **Crear proyecto**:
-1. Seleccione una plantilla. Out of the box, Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md), and [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) are available and click **Next**.
+1. En **Proyectos**, pulse o haga clic en **Crear** y abrirá el asistente **Crear proyecto**:
+1. Seleccione una plantilla. De forma predeterminada, Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md) y [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) están disponibles y hacen clic en **Next**.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. También puede añadir o eliminar a usuarios y al grupo al que pertenecen. Además, puede hacer clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
+1. Defina el **Título** y la **Descripción** y agregue una **Imagen en miniatura** si es necesario. También puede añadir o eliminar a usuarios y al grupo al que pertenecen. Además, puede hacer clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
 
    ![chlimage_1-257](assets/chlimage_1-257.png)
 
 1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el proyecto nuevo o regresar a la consola.
 
-### Asociación de recursos al proyecto {#associating-resources-with-your-project}
+### Asociación de recursos al proyecto  {#associating-resources-with-your-project}
 
 Dado que los proyectos le permiten agrupar los recursos en una entidad, puede asociar recursos al proyecto. Estos recursos se denominan **Mosaicos**. Los tipos de recursos que puede añadir se describen en [Mosaicos de proyecto](/help/sites-authoring/projects.md#project-tiles).
 
@@ -92,7 +95,7 @@ Para eliminar un proyecto desde la consola o un recurso vinculado desde el proye
 
 >[!NOTE]
 >
->Al crear el proyecto y añadir a usuarios a las distintas funciones, se crean automáticamente los grupos asociados al proyecto para gestionar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tiene tres propietarios **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminan automáticamente. Un administrador tiene que eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
+>Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador tiene que eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
 
 ### Adición de elementos a un mosaico {#adding-items-to-a-tile}
 
@@ -100,7 +103,7 @@ En algunos mosaicos, puede que desee añadir más de un elemento. Por ejemplo, p
 
 Para añadir elementos a un mosaico:
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. En **Proyectos**, vaya al proyecto y haga clic en el icono Añadir + del mosaico al que desee agregar un elemento.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -124,19 +127,19 @@ Para abrir un mosaico para que pueda ver o modificar elementos:
 
 ## Visualización de estadísticas del proyecto {#viewing-project-statistics}
 
-Para ver las estadísticas del proyecto, en la consola **Proyectos**, haga clic en **Mostrar vista de estadísticas**. Se muestra el nivel de finalización de cada proyecto. Click **Show Statistics View** again to go to the **Projects** console.
+Para ver las estadísticas del proyecto, en la consola **Proyectos**, haga clic en **Mostrar vista de estadísticas**. Se muestra el nivel de finalización de cada proyecto. Haga clic en **Mostrar Vista de estadísticas** nuevamente para ir a la consola **Proyectos**.
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
 ### Visualización de una línea de tiempo del proyecto {#viewing-a-project-timeline}
 
-La línea de tiempo del proyecto proporciona información sobre cuándo se utilizaron por última vez los recursos del proyecto. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. Los recursos se muestran en el panel izquierdo. Click/tap **Timeline** to return to the **Projects** console.
+La línea de tiempo del proyecto proporciona información sobre cuándo se utilizaron por última vez los recursos del proyecto. Para realizar la vista de la línea de tiempo del proyecto, toque o haga clic en **Línea de tiempo**, luego ingrese al modo de selección y seleccione el proyecto. Los recursos se muestran en el panel izquierdo. Toque o haga clic **Línea de tiempo** para volver a la consola **Proyectos**.
 
 ![chlimage_1-264](assets/chlimage_1-264.png)
 
 ### Visualización de proyectos activos/inactivos {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. Si el icono tiene una marca junto a él, muestra los proyectos activos.
+Para alternar entre los proyectos activos e inactivos, en la consola **Proyectos**, haga clic en **Alternar proyectos activos**. Si el icono tiene una marca junto a él, muestra los proyectos activos.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
@@ -155,7 +158,7 @@ Para hacer que un proyecto sea inactivo (o activo):
    >[!NOTE]
    Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
-1. Tap/click **Edit**.
+1. Toque o haga clic **Editar**.
 1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).
 
    ![chlimage_1-267](assets/chlimage_1-267.png)
