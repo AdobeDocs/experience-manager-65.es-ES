@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 0%
 
 ---
 
 
 # Herramienta de conversión de cuadro de diálogo{#dialog-conversion-tool}
 
-La herramienta de conversión de cuadro de diálogo se proporciona para ayudar a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica (basada en ExtJS) o basado en la IU de Granite y Coral 2. La herramienta utiliza el cuadro de diálogo original para crear un cuadro de diálogo duplicado diseñado para la interfaz de usuario estándar, basado en la interfaz de usuario de Granite y Coral 3.
+La herramienta de conversión de cuadro de diálogo se proporciona para ayudar a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica (basada en ExtJS) o basado en la IU de Granite y Coral 2. La herramienta utiliza el cuadro de diálogo original para crear un cuadro de diálogo de duplicado diseñado para la interfaz de usuario estándar, basado en la interfaz de usuario de Granite y Coral 3.
 
-El objetivo de esta herramienta es automatizar la actualización en la medida de lo posible, aumentar la eficiencia y reducir los errores. Sin embargo, como la herramienta no puede abarcar todos los escenarios, el proceso no puede automatizarse completamente y el usuario debe revisar los diálogos convertidos y posiblemente realizar ajustes adicionales. La herramienta está pensada como una ayuda para ayudarle a iniciar el proceso de conversión, pero no para tomar el control total de la conversión.
+El objetivo de esta herramienta es automatizar la actualización en la medida de lo posible, aumentar la eficiencia y reducir los errores. Sin embargo, como la herramienta no puede abarcar todos los escenarios, el proceso no puede automatizarse completamente y el usuario debe revisar los diálogos convertidos y posiblemente realizar ajustes adicionales. La herramienta está pensada como una ayuda para ayudarle a realizar el inicio del proceso de conversión, pero no para tomar el control total de la conversión.
 
 La herramienta creará el nuevo cuadro de diálogo utilizando la IU granita estándar y la IU basada en Coral 3, pero omitirá lo que no puede convertir. Por lo tanto, el cuadro de diálogo resultante puede contener nodos del cuadro de diálogo original copiados tal cual, si ninguna regla coincide con ese componente específico. Además, un componente convertido puede tener algunas propiedades sin convertir, ya que no había ninguna regla apropiada para convertirlas.
 
@@ -42,30 +45,30 @@ CÓDIGO DE GITHUB
 Puede encontrar el código de esta página en GitHub
 
 * [Abrir un proyecto de conversión de diálogo aem en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion)
-* Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/archive/master.zip)
+* Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/archive/master.zip)
 
 >[!NOTE]
 >
->AEM no se envía con la herramienta de conversión de cuadro de diálogo. Debe descargarlo e instalarlo para utilizarlo.
+>AEM se envía con la herramienta de conversión de cuadro de diálogo. Debe descargarlo e instalarlo para utilizarlo.
 
 Siga estos pasos para instalar la herramienta de conversión de cuadro de diálogo.
 
-1. Descargue el paquete del proyecto [GitHub de la herramienta de conversión de](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/releases)diálogos.
+1. Descargue el paquete del proyecto [Dialog Conversion Tool GitHub](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/releases).
 1. Instale el paquete en su instancia. Para obtener más información sobre la administración de paquetes, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
 ## Conversión de un cuadro de diálogo {#converting-a-dialog}
 
-La herramienta convierte los cuadros de diálogo mediante la creación de una interfaz de usuario de Granite/Coral 3 correspondiente en la misma ubicación que el cuadro de diálogo original en el árbol de contenido. En el caso de los cuadros de diálogo Interfaz de usuario de Granite/Coral 2, se copian en una ubicación de copia de seguridad (se agrega un `.coral2` sufijo al nombre del nodo de cuadro de diálogo) para que no se sobrescriban. La herramienta puede convertir diálogos de diseño y editar diálogos.
+La herramienta convierte los cuadros de diálogo mediante la creación de una interfaz de usuario de Granite/Coral 3 correspondiente en la misma ubicación que el cuadro de diálogo original en el árbol de contenido. En el caso de los cuadros de diálogo Interfaz de usuario de Granite / Coral 2, se copian en una ubicación de copia de seguridad (se agrega un sufijo `.coral2` al nombre del nodo de cuadro de diálogo) para que no se sobrescriban. La herramienta puede convertir diálogos de diseño y editar diálogos.
 
 Siga estos pasos para convertir uno o varios cuadros de diálogo:
 
-1. Abra la consola **Conversión** de cuadro de diálogo, a la que puede acceder desde Navegación **** global -> **Herramientas** -> **Operaciones**:
+1. Abra la consola **Conversión de cuadro de diálogo**, a la que se puede acceder desde **Navegación global** -> **Herramientas** -> **Operaciones**:
 
    `https://<hostname>:<port>/libs/cq/dialogconversion/content/console.html`
 
    ![chlimage_1-18](assets/chlimage_1-18a.png)
 
-1. Introduzca la ruta de acceso necesaria, como `/apps/geometrixx/components`. También puede introducir una ruta directa a un único cuadro de diálogo, como `/apps/geometrixx/components/lead`.
+1. Escriba la ruta de acceso requerida como `/apps/geometrixx/components`. También puede introducir una ruta directa a un único cuadro de diálogo como `/apps/geometrixx/components/lead`.
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
@@ -73,21 +76,22 @@ Siga estos pasos para convertir uno o varios cuadros de diálogo:
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
-   En la tabla se muestran todos los cuadros de diálogo preexistentes debajo de la ruta introducida. Cada cuadro de diálogo tiene su tipo en la lista. Los tipos incluyen:
+   La tabla lista todos los cuadros de diálogo heredados existentes debajo de la ruta introducida. Cada cuadro de diálogo tiene su tipo en la lista. Los tipos incluyen:
 
-   * **** Clásico: Nodos de tipo `cq:Dialog` que tienen nombre de nodo `dialog` o `design_dialog`
-   * **** Coral 2: Nodos con nombre `cq:dialog` o `cq:design_dialog` que tienen una interfaz de usuario de Granite/tipo de recurso Coral 2 en el nodo de contenido secundario
-   Cada fila contiene un vínculo para ver el cuadro de diálogo y un vínculo a CRXDE Lite para ver su estructura de nodos.
+   * **Classic:** nodos de tipo  `cq:Dialog` que tienen nombre de nodo  `dialog` o  `design_dialog`
+   * **Coral 2:** Nodos con nombre  `cq:dialog` o  `cq:design_dialog` que tienen una interfaz de usuario de Granite / tipo de recurso Coral 2 en el nodo de contenido secundario
+
+   Cada fila contiene un vínculo para la vista del cuadro de diálogo y un vínculo al CRXDE Lite para la vista de su estructura de nodos.
 
    >[!NOTE]
    >
    >Los componentes que no tienen un cuadro de diálogo para la IU clásica o Coral 2 en absoluto (es decir, diseñados con la IU de Granite / Coral 3) no aparecen en la lista.
 
-1. Seleccione uno o varios cuadros de diálogo para la conversión y toque o haga clic en **Convertir cuadros de diálogo X para iniciar el proceso de conversión** .
+1. Seleccione uno o varios cuadros de diálogo para la conversión y toque o haga clic **Convertir cuadros de diálogo X** para inicio del proceso de conversión.
 
-   ![chlimage_1-21](assets/chlimage_1-21a.png)
+   ![chlimage_1-29](assets/chlimage_1-21a.png)
 
-1. Los cuadros de diálogo seleccionados se muestran con los resultados de sus conversiones. Si la conversión se ha realizado correctamente, la fila contiene vínculos para ver el cuadro de diálogo convertido o para abrirlo en CRXDE Lite.
+1. Los cuadros de diálogo seleccionados se muestran con los resultados de sus conversiones. Si la conversión se ha realizado correctamente, la fila contiene vínculos para la vista del cuadro de diálogo convertido o para abrirlo en CRXDE Lite.
 
    Toque o haga clic en **Atrás** para volver a la herramienta de conversión de cuadro de diálogo.
 
@@ -97,7 +101,7 @@ Siga estos pasos para convertir uno o varios cuadros de diálogo:
 
    ![chlimage_1-23](assets/chlimage_1-23a.png)
 
-1. Active la opción **Mostrar cuadros de diálogo** convertidos para mostrar los cuadros de diálogo ubicados en la ruta especificada que ya se han convertido.
+1. Marque la opción **Mostrar cuadros de diálogo convertidos** para mostrar los cuadros de diálogo ubicados en la ruta especificada que ya se han convertido.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
@@ -105,7 +109,7 @@ Siga estos pasos para convertir uno o varios cuadros de diálogo:
 
 ## Reglas de reescritura de cuadro de diálogo {#dialog-rewrite-rules}
 
-La herramienta de conversión de cuadro de diálogo se basa en el concepto de reescritura **de** gráficos, que consiste en transformar un gráfico de temas mediante la aplicación de reglas de reescritura. Una regla de reescritura es el emparejamiento de un patrón con un gráfico de reemplazo. La regla coincide con las incidencias de un determinado subgráfico en el gráfico de temas y posteriormente los reemplaza. Consulte también [https://en.wikipedia.org/wiki/Graph_rewriting](https://en.wikipedia.org/wiki/Graph_rewriting) para obtener más información sobre la reescritura de gráficos.
+La herramienta de conversión de cuadro de diálogo se basa en el concepto de **reescritura de gráficos**, que consiste en transformar un gráfico de temas mediante la aplicación de reglas de reescritura. Una regla de reescritura es el emparejamiento de un patrón con un gráfico de reemplazo. La regla coincide con las incidencias de un determinado subgráfico en el gráfico de temas y posteriormente los reemplaza. Consulte también [https://en.wikipedia.org/wiki/Graph_rewriting](https://en.wikipedia.org/wiki/Graph_rewriting) para obtener más información sobre la reescritura de gráficos.
 
 La herramienta de conversión de cuadro de diálogo utiliza este método para reescribir un árbol de diálogo heredado (IU clásica o granita / Coral 2) en su contraparte de Granite UI / Coral 3. Esto tiene la ventaja de que la conversión es muy flexible y puede tener en cuenta incluso componentes complejos, ya que la coincidencia se realiza en subárboles reales y no solo en nodos o propiedades únicos.
 
@@ -113,23 +117,23 @@ La herramienta de conversión de cuadro de diálogo utiliza este método para re
 
 El algoritmo de reescritura toma como parámetro el árbol que se va a reescribir y un conjunto de reglas de reescritura. Pasa por el árbol en orden previo y, para cada nodo, comprueba si se aplica una regla para el subárbol que se origina en ese nodo. La primera regla que coincide se aplica a ese subárbol para reescribirla. A continuación, el recorrido se reinicia desde la raíz. El algoritmo se detiene tan pronto como se ha atravesado todo el árbol y ninguna regla ha coincidido con ningún subárbol. Como medida de optimización, el algoritmo rastrea un conjunto de nodos que son finales y, por lo tanto, no es necesario volver a comprobar las coincidencias en los posteriores pasos. Depende de las reglas de reescritura definir qué nodos del árbol reescrito son finales y cuáles deben ser revisados por futuras pasadas del algoritmo.
 
-El punto de entrada para la conversión es el `DialogConversionServlet`, que se registra en las solicitudes POST a `/libs/cq/dialogconversion/content/convert.json`. Acepta un parámetro de solicitud de ruta, que es una matriz que contiene las rutas a los cuadros de diálogo que se deben convertir. Para cada cuadro de diálogo, el servlet vuelve a escribir el árbol de diálogo correspondiente aplicando todas las reglas de reescritura de cuadro de diálogo definidas.
+El punto de entrada para la conversión es `DialogConversionServlet`, que se registra en las solicitudes de POST a `/libs/cq/dialogconversion/content/convert.json`. Acepta un parámetro de solicitud de ruta, que es una matriz que contiene las rutas a los cuadros de diálogo que se deben convertir. Para cada cuadro de diálogo, el servlet vuelve a escribir el árbol de diálogo correspondiente aplicando todas las reglas de reescritura de cuadro de diálogo definidas.
 
 ### Reescribir tipos de reglas {#rewrite-rule-types}
 
 Las reglas de reescritura se pueden definir de dos formas diferentes:
 
-* Estructuras de nodos JCR: reglas de reescritura basadas en [nodos](/help/sites-developing/dialog-conversion.md#node-based-rewrite-rules)
+* Estructuras de nodos JCR: [Reglas de reescritura basadas en nodos](/help/sites-developing/dialog-conversion.md#node-based-rewrite-rules)
 
-* Clases de Java que implementan una interfaz específica: Reglas de reescritura basadas en [Java](/help/sites-developing/dialog-conversion.md#java-based-rewrite-rules)
+* Clases de Java que implementan una interfaz específica: [Reglas de reescritura basadas en Java](/help/sites-developing/dialog-conversion.md#java-based-rewrite-rules)
 
-Algunas se [proporcionan de forma predeterminada](#provided-rewrite-rules), pero también puede definir sus propias reglas personalizadas. [También hay disponibles reglas](/help/sites-developing/dialog-conversion.md#sample-rewrite-rules) de reescritura de muestra.
+Algunos [se proporcionan listos para usar](#provided-rewrite-rules), pero también puede definir sus propias reglas personalizadas. [También están disponibles ](/help/sites-developing/dialog-conversion.md#sample-rewrite-rules) reglas de reescritura de muestra.
 
 Normalmente, una sola regla de reescritura de cuadro de diálogo es responsable de reescribir un solo elemento de cuadro de diálogo, por ejemplo, el campo de entrada del navegador de rutas de acceso.
 
 >[!CAUTION]
 >
->El algoritmo no detecta bucles de reescritura, por lo tanto las reglas de **reescritura no deben reescribir árboles de forma** circular.
+>El algoritmo no detecta los bucles de reescritura, por lo tanto **las reglas de reescritura no deben reescribir los árboles de forma circular**.
 
 ### Reglas de reescritura basadas en nodos {#node-based-rewrite-rules}
 
@@ -163,9 +167,9 @@ Si la propiedad a la que se hace referencia no existe en el árbol original, se 
 
 `${<path>:<default>}`
 
-Las propiedades que contienen caracteres &#39; `:`&#39; se pueden citar con comillas simples para evitar conflictos al proporcionar un valor predeterminado. Las propiedades booleanas se anulan si el prefijo de la expresión es &#39; `!`&#39;. Las propiedades asignadas se pueden multivalor, en cuyo caso se les asignará el valor de la primera propiedad que exista en el árbol coincidente.
+Las propiedades que contienen caracteres &#39; `:`&#39; pueden estar entre comillas simples para evitar conflictos al proporcionar un valor predeterminado. Las propiedades booleanas se anulan si la expresión lleva el prefijo &#39; `!`&#39;. Las propiedades asignadas se pueden multivalor, en cuyo caso se les asignará el valor de la primera propiedad que exista en el árbol coincidente.
 
-Por ejemplo, se `one` asignará a la siguiente propiedad el valor de la propiedad `./two/three` del árbol original coincidente.
+Por ejemplo, a la siguiente propiedad `one` se le asignará el valor de la propiedad `./two/three` del árbol original coincidente.
 
 ```xml
 ...
@@ -185,7 +189,7 @@ Las reglas también admiten las siguientes propiedades opcionales.
 
 * `cq:rewriteRanking` (integer)
 
-   Establezca esta propiedad en el nodo de regla para que afecte al orden en que se aplican las reglas. Esto puede resultar útil para garantizar que las reglas que gestionan estructuras más específicas no se sobrescriban con otras más generales. Las reglas con una clasificación más baja tienen prioridad sobre las que tienen una clasificación más alta. De forma predeterminada, todas las reglas se reciben `Integer.MAX_VALUE` como su clasificación.
+   Establezca esta propiedad en el nodo de regla para que afecte al orden en que se aplican las reglas. Esto puede resultar útil para garantizar que las reglas que gestionan estructuras más específicas no se sobrescriban con otras más generales. Las reglas con una clasificación más baja tienen prioridad sobre las que tienen una clasificación más alta. De forma predeterminada, todas las reglas reciben `Integer.MAX_VALUE` como su clasificación.
 
 El árbol de reemplazo también admite las siguientes propiedades especiales (cuyo nombre comienza por `cq:rewrite`):
 
@@ -193,21 +197,21 @@ El árbol de reemplazo también admite las siguientes propiedades especiales (cu
 
    El nodo que contiene esta propiedad recibirá una copia de los elementos secundarios del nodo en el árbol original al que hace referencia el valor de propiedad (p. ej. `cq:rewriteMapChildren=./items`).
 
-* `cq:rewriteFinal` (boolean)
+* `cq:rewriteFinal` (booleano)
 
-   Se trata de una medida de optimización que indica al algoritmo que el nodo que contiene esta propiedad es final y no es necesario volver a comprobar si hay reglas de reescritura coincidentes. Cuando se coloca en el nodo de reemplazo mismo, todo el árbol de reemplazo se considera final.
-* `cq:rewriteCommonAttrs` (boolean)
+   Se trata de una medida de optimización que indica al algoritmo que el nodo que contiene esta propiedad es final y no es necesario volver a comprobar si hay reglas de reescritura coincidentes. Cuando se coloca en el propio nodo de reemplazo, todo el árbol de reemplazo se considera final.
+* `cq:rewriteCommonAttrs` (booleano)
 
-   Establezca esta propiedad en el nodo de reemplazo ( `rule`/ `replacement`) para asignar propiedades relevantes del nodo raíz original a los equivalentes de atributos comunes Granite en la raíz de copia. Administrará los atributos de datos copiando/creando el `granite:data` subnodo en el destino y escribiendo `data-*` las propiedades allí.
-* `cq:rewriteRenderCondition` (boolean)
+   Establezca esta propiedad en el nodo de reemplazo ( `rule`/ `replacement`) para asignar las propiedades relevantes del nodo raíz original a los equivalentes de atributos comunes Granite en la raíz de copia. Administrará los atributos de datos copiando/creando el subnodo `granite:data` en el destinatario y escribiendo las propiedades `data-*` allí.
+* `cq:rewriteRenderCondition` (booleano)
 
-   Establezca esta propiedad en el nodo de reemplazo ( `rule`/ `replacement`) para copiar cualquier condición de procesamiento de Granite ( `rendercondition` o `granite:rendercondition``granite:rendercondition` ) nodo secundario del nodo raíz original en un elemento secundario de la raíz de copia.
+   Establezca esta propiedad en el nodo de reemplazo ( `rule`/ `replacement`) para copiar cualquier condición de procesamiento de Granite ( `rendercondition` o `granite:rendercondition`) nodo secundario del nodo raíz original en un `granite:rendercondition` nodo secundario de la raíz de copia.
 
-Además, se puede agregar un `cq:rewriteProperties` nodo a un nodo de reemplazo para definir reescrituras de cadenas para propiedades asignadas en el resultado. El nodo se elimina del reemplazo. Las propiedades del `cq:rewriteProperties` nodo deben tener el mismo nombre que las que están reescribiendo y aceptar una matriz de cadenas con dos parámetros:
+Además, se puede agregar un nodo `cq:rewriteProperties` a un nodo de reemplazo para definir las reescrituras de cadenas para las propiedades asignadas en el resultado. El nodo se elimina del reemplazo. Las propiedades del nodo `cq:rewriteProperties` deben tener el mismo nombre que las que están reescribiendo y aceptar una matriz de cadenas con dos parámetros:
 
-* `pattern`:: Regex para comparar, p. ej. `"(?:coral-Icon-)(.+)"`
+* `pattern`:: Regex para comparar, p. ej.  `"(?:coral-Icon-)(.+)"`
 
-* `replacement`:: Proporcionado a la función de coincidencia `replaceAll` , por ejemplo: `"$1"`
+* `replacement`:: Proporcionado a la  `replaceAll` función de coincidencia, por ejemplo:  `"$1"`
 
 A continuación se muestra un ejemplo de reescritura de las propiedades del icono Coral 2 en los equivalentes de Coral 3:
 
@@ -236,7 +240,7 @@ Estas reglas se pueden sobrescribir proporcionando un conjunto de reglas en:
 
 `/apps/cq/dialogconversion/rules`
 
-Puede copiar `/libs/cq/dialogconversion/rules` para `/apps` luego modificar las reglas existentes y/o agregar nuevas reglas a esta nueva instancia &quot;.
+Puede copiar `/libs/cq/dialogconversion/rules` en `/apps` y luego modificar las reglas existentes y/o agregar nuevas reglas a esta nueva instancia &quot;.
 
 ### Reglas de reescritura basadas en Java {#java-based-rewrite-rules}
 
@@ -250,15 +254,15 @@ Node applyTo(Node root, Set<Node> finalNodes) throws DialogRewriteException, Rep
 int getRanking();
 ```
 
-El `matches` método debe devolver `true` si la regla coincide con el subárbol raíz del nodo raíz proporcionado. Si la regla coincide, el algoritmo de reescritura de árbol llamará posteriormente al `applyTo` método, que debe reescribir el subárbol que se origina en el nodo raíz especificado. Normalmente, este método cambiará temporalmente el nombre del árbol original, generará el nuevo árbol como un nuevo elemento secundario del nodo principal del árbol original (con sus nodos y propiedades) y, finalmente, eliminará el árbol original. Encontrará información más detallada en el Javadoc de la `com.adobe.cq.dialogconversion.DialogRewriteRule` interfaz.
+El método `matches` debe devolver `true` si la regla coincide con el subárbol raíz del nodo raíz proporcionado. Si la regla coincide, el algoritmo de reescritura de árbol llamará posteriormente al método `applyTo`, que debe reescribir el subárbol que se origina en el nodo raíz especificado. Normalmente, este método cambiará temporalmente el nombre del árbol original, generará el nuevo árbol como un nuevo elemento secundario del nodo principal del árbol original (con sus nodos y propiedades) y, finalmente, eliminará el árbol original. Encontrará información más detallada en el Javadoc de la interfaz `com.adobe.cq.dialogconversion.DialogRewriteRule`.
 
 #### Más información: Javadocs {#further-information-javadocs}
 
-Para obtener más información, consulte la sección Javadocs de [`com.adobe.cq.dialogconversion`](https://adobe-marketing-cloud.github.io/aem-touchui-dialogconversion-samples/javadoc/).
+Para obtener más información, consulte Javadocs para [`com.adobe.cq.dialogconversion`](https://adobe-marketing-cloud.github.io/aem-touchui-dialogconversion-samples/javadoc/).
 
 #### Definición de sus propias reglas de reescritura basadas en Java {#defining-your-own-java-based-rewrite-rules}
 
-La clase siguiente muestra un ejemplo de una regla de reescritura personalizada que implementa la `com.adobe.cq.dialogconversion.DialogRewriteRule` interfaz.
+La siguiente clase muestra un ejemplo de una regla de reescritura personalizada que implementa la interfaz `com.adobe.cq.dialogconversion.DialogRewriteRule`.
 
 ```java
 @Component
@@ -280,7 +284,7 @@ public class CustomDialogRewriteRule implements DialogRewriteRule {
 }
 ```
 
-También puede ampliarse `com.adobe.cq.dialogconversion.AbstractDialogRewriteRule` como se muestra a continuación. La clase abstracta implementa el `getRanking` método y utiliza la propiedad `service.ranking` OSGi del servicio para determinar la clasificación de la regla.
+Como alternativa, puede extender `com.adobe.cq.dialogconversion.AbstractDialogRewriteRule` como se muestra a continuación. La clase abstracta implementa el método `getRanking` y utiliza la propiedad OSGi `service.ranking` del servicio para determinar la clasificación de la regla.
 
 ```java
 @Component
@@ -303,7 +307,7 @@ public class CustomDialogRewriteRule extends AbstractDialogRewriteRule {
 
 ### Reglas de reescritura proporcionadas {#provided-rewrite-rules}
 
-El `cq-dialog-conversion-content` paquete contiene varias reglas de reescritura predefinidas. Para obtener más información sobre los widgets de IU clásicos, consulte [Uso de xtypes](/help/sites-developing/xtypes.md) ).
+El paquete `cq-dialog-conversion-content` contiene varias reglas de reescritura predefinidas. Para obtener más información sobre las utilidades clásicas de la interfaz de usuario, consulte [Uso de xtypes](/help/sites-developing/xtypes.md).
 
 <table>
  <tbody>
@@ -314,8 +318,8 @@ El `cq-dialog-conversion-content` paquete contiene varias reglas de reescritura 
   </tr>
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.CqDialogRewriteRule</code></td>
-   <td>Nodo de tipo <code>cq:Dialog</code>, gestiona diferentes subestructuras</td>
-   <td><p>Un <code>granite/ui/components/foundation/container</code> uso de una <code>fixedcolumns</code> o <code>tabs</code> maquetación</p> <p>Los componentes reales del cuadro de diálogo se copian y se vuelven a escribir en las pasadas posteriores del algoritmo.</p> </td>
+   <td>El nodo de tipo <code>cq:Dialog</code> gestiona diferentes subestructuras</td>
+   <td><p>Un <code>granite/ui/components/foundation/container</code> con una presentación <code>fixedcolumns</code> o <code>tabs</code></p> <p>Los componentes reales del cuadro de diálogo se copian y se vuelven a escribir en las pasadas posteriores del algoritmo.</p> </td>
   </tr>
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.IncludeRule</code></td>
@@ -325,7 +329,7 @@ El `cq-dialog-conversion-content` paquete contiene varias reglas de reescritura 
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.MultifieldRewriteRule</code></td>
    <td>xtype = <code>multifield</code></td>
-   <td><p>A <code>granite/ui/components/coral/foundation/form/multifield</code></p> <p>El nodo secundario (si lo hay) <code>fieldConfig</code> se reescribe por separado, sin limitar los componentes admitidos.</p> </td>
+   <td><p>A <code>granite/ui/components/coral/foundation/form/multifield</code></p> <p>El nodo secundario <code>fieldConfig</code> (si lo hay) se reescribe por separado, por lo que no se limitan los componentes admitidos.</p> </td>
   </tr>
   <tr>
    <td><code>/libs/cq/dialogconversion/rules/classic</code></td>
@@ -400,5 +404,5 @@ CÓDIGO DE GITHUB
 Puede encontrar el código de esta página en GitHub
 
 * [Abrir el proyecto aem-touchui-dialogconversion-samples en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples)
-* Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples/archive/master.zip)
+* Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples/archive/master.zip)
 
