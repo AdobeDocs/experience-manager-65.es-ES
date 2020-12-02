@@ -36,21 +36,21 @@ La función de foro QnA (preguntas y respuestas) proporciona un área para que l
 La documentación describe:
 
 * Añadir la función de foro QnA en un sitio AEM.
-* Configuración del `QnA`componente.
+* Configuración del componente `QnA`.
 
 ## Añadir un foro de preguntas y respuestas a una página {#adding-a-q-a-forum-to-a-page}
 
-Para agregar un `QnA` componente a una página en modo de autor, utilice el navegador de componentes para ubicarlo `Communities / QnA` y arrastrarlo hasta su lugar en una página en la que debería aparecer el foro de control de calidad.
+Para agregar un componente `QnA` a una página en modo de autor, utilice el navegador de componentes para ubicar `Communities / QnA` y arrástrelo a su lugar en una página donde debería aparecer el foro QnA.
 
-Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](/help/communities/basics.md).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/qna-essentials.md#essentials-for-client-side) necesarias, así es como aparece el `QnA` componente:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](/help/communities/qna-essentials.md#essentials-for-client-side), así es como aparece el componente `QnA`:
 
 ![qna-component](assets/qna-component.png)
 
 ### Configuración de QnA {#configuring-qna}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `QnA` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `QnA` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
@@ -58,7 +58,7 @@ Seleccione el componente colocado al que desea acceder y seleccione el `QnA` `Co
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **Configuración** , especifique la configuración de los temas (preguntas) y las respuestas (respuestas):
+En la ficha **Configuración**, especifique la configuración de los temas (preguntas) y las respuestas (respuestas):
 
 * **Permitir la miniatura del archivo adjunto**
 
@@ -94,7 +94,7 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 * **Permitir etiquetado**
 
-   Si está activada, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha Campo **** de etiqueta). El valor predeterminado no está seleccionado.
+   Si está activada, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha **Campo de etiqueta**). El valor predeterminado no está seleccionado.
 
 * **Permitir cargas de archivos**
 
@@ -102,7 +102,7 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 * **Permitir seguimiento**
 
-   Si se selecciona, incluya la siguiente función para las publicaciones en el foro, que permite que se [notifique](/help/communities/notifications.md) a los miembros de las nuevas publicaciones. El valor predeterminado no está seleccionado.
+   Si se selecciona, incluya la siguiente función para las publicaciones del foro, que permite que los miembros [reciban una notificación](/help/communities/notifications.md) de las nuevas publicaciones. El valor predeterminado no está seleccionado.
 
 * **Permitir fijación**
 
@@ -110,15 +110,15 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 * **Permitir suscripciones por correo electrónico**
 
-   Si está activada, permita que se notifique a los miembros de los anuncios nuevos por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere permitir que se marque la opción Seguir y se configure [el](/help/communities/email.md)correo electrónico. El valor predeterminado no está seleccionado.
+   Si se selecciona, permita que se notifique a los miembros de los nuevos anuncios por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere permitir que se marque la opción Siguiente y [se configure el mensaje de correo electrónico](/help/communities/email.md). El valor predeterminado no está seleccionado.
 
 * **Tamaño máximo de archivo**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+   Solo es pertinente si se comprueba `Allow File Uploads`. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Lista de extensiones de archivo separadas por coma con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permite cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
+   Solo es pertinente si se comprueba `Allow File Uploads`. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permite cargar los no especificados. El valor predeterminado no es ninguno, por lo que se permiten** **todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -149,11 +149,11 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
    Si se selecciona, la primera respuesta que se muestra es una respuesta seleccionada. El valor predeterminado no está seleccionado.
 * **Mostrar insignias**
 
-   Si está activada, muestre [los distintivos](/help/communities/implementing-scoring.md) obtenidos y asignados con una entrada de blog de miembro. El valor predeterminado no está seleccionado.
+   Si está marcado, muestre [distintivos](/help/communities/implementing-scoring.md) obtenidos y asignados con una entrada de blog de miembro. El valor predeterminado no está seleccionado.
 
 * **Permitir contenido destacado**
 
-   si se selecciona, la idea se puede identificar como contenido [](/help/communities/featured.md)destacado. El valor predeterminado no está seleccionado.
+   si se selecciona, la idea puede identificarse como [contenido destacado](/help/communities/featured.md). El valor predeterminado no está seleccionado.
 
 * **Habilitar la mención**
 
@@ -169,7 +169,7 @@ En la ficha **Configuración** , especifique la configuración de los temas (pre
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha Moderación **del** usuario, especifique cómo se administran los temas publicados (preguntas) y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+En la ficha **Moderación del usuario**, especifique cómo se administran los temas publicados (preguntas) y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
 * **Denegar respuestas**
 
@@ -179,7 +179,8 @@ En la ficha Moderación **del** usuario, especifique cómo se administran los te
 
    Si se selecciona, los moderadores de miembros de confianza pueden cerrar una pregunta (tema) para ediciones y respuestas adicionales, y también volver a abrir una pregunta. El valor predeterminado no está seleccionado.
 
-* **Mover temas** Si está activado, permita que los moderadores del lado de publicación muevan las preguntas. El valor predeterminado no está seleccionado.
+* **Mover**
+temasSi está activada, permita que los moderadores del lado de publicación muevan las preguntas. El valor predeterminado no está seleccionado.
 
 * **Marcar entradas**
 
@@ -203,11 +204,11 @@ En la ficha Moderación **del** usuario, especifique cómo se administran los te
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
-En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración** , están limitadas según las Áreas de nombres elegidas.
+En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración**, están limitadas según las Áreas de nombres elegidas.
 
 * **Espacios de nombres permitidos**
 
-   Relevante si `Allow Tagging` se marca en la ficha **Configuración** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
+   Relevante si `Allow Tagging` está marcado en la ficha **Configuración**. Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -215,7 +216,7 @@ En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se p
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
-En la ficha **Ordenar configuración** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **Ordenar configuración**, especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **Ordenar por**
 
@@ -233,11 +234,11 @@ En la ficha **Ordenar configuración** , especifique cómo se ordenan los coment
 
 ### Identificación de respuestas {#identifying-answers}
 
-Una respuesta se puede marcar como una respuesta correcta o útil mediante el `Select Answer` botón. Una vez que una pregunta se marca como respondida, no se puede seleccionar otra respuesta hasta que se anule la selección de la primera mediante el `Unmark Chosen Answer` botón.
+Una respuesta se puede marcar como una respuesta correcta o útil mediante el botón `Select Answer`. Una vez que una pregunta se marca como respondida, no se puede seleccionar otra respuesta hasta que se anule la selección de la primera mediante el botón `Unmark Chosen Answer`.
 
-Una vez seleccionada como una respuesta viable, se puede anular la selección mediante el `Unmark Chosen Answer` botón.
+Una vez seleccionada como una respuesta viable, se puede anular la selección mediante el botón `Unmark Chosen Answer`.
 
-Una vez seleccionada una respuesta como respuesta viable, se muestra una indicación de que la pregunta se ha `Answered` mostrado junto al tema de la pregunta en la página principal de control de calidad.
+Una vez seleccionada una respuesta como respuesta viable, se muestra una indicación de que la pregunta se ha `Answered` junto al tema de la pregunta en la página principal de control de calidad.
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
@@ -260,8 +261,8 @@ Los visitantes del sitio que no iniciaron sesión sólo pueden leer las pregunta
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página de [QnA Essentials](/help/communities/qna-essentials.md) para desarrolladores.
+Encontrará más información en la página [QnA Essentials](/help/communities/qna-essentials.md) para desarrolladores.
 
-Para obtener información sobre la moderación de los temas y comentarios publicados, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+Para obtener información sobre la moderación de los temas y comentarios publicados, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido](/help/communities/tag-ugc.md)generado por el usuario.
+Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido generado por el usuario](/help/communities/tag-ugc.md).
