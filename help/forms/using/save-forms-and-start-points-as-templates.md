@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
@@ -22,10 +25,10 @@ A veces, cuando los usuarios rellenan un formulario, las entradas de algunos cam
 Realice los siguientes pasos para crear una plantilla:
 
 1. Abra un formulario y seleccione o rellene los campos con valores casi idénticos cada vez que lo utilice. Puede incluir un archivo adjunto con la plantilla que suele agregar al rellenar el formulario.
-1. Toque el icono **Guardar como plantilla** ![save_as_](assets/save_as_template.png)templateicon. Aparece un cuadro de diálogo para especificar el nombre de la plantilla.
+1. Puntee en el icono **Guardar como plantilla** ![save_as_template](assets/save_as_template.png). Aparece un cuadro de diálogo para especificar el nombre de la plantilla.
 1. Especifique el nombre de la plantilla y toque **Guardar**. La plantilla aparece en la carpeta de plantillas.
 
-   Si existe una plantilla con el mismo nombre, aparece un cuadro de diálogo para confirmar que se sobrescribe la plantilla existente. Para reemplazar la plantilla existente por una nueva plantilla, toque **Continuar** o para guardar la plantilla con un nombre diferente, toque **Cancelar**.
+   Si existe una plantilla con el mismo nombre, aparece un cuadro de diálogo para confirmar que se sobrescribe la plantilla existente. Para reemplazar la plantilla existente con una nueva plantilla, toque **Continuar** o para guardar la plantilla con un nombre diferente, toque **Cancelar**.
 
 Ahora puede abrir la plantilla guardada. Cada vez que se abre una plantilla, se crea un nuevo formulario o tarea y el formulario muestra los datos y las opciones guardadas. Con las plantillas, puede editar los datos precargados, agregar un archivo adjunto, guardarlo como borrador, enviar la tarea o crear otra plantilla que lo utilice. Las plantillas son específicas de los dispositivos móviles y no se sincronizan con el servidor de Adobe Experience Manager Forms.
 
