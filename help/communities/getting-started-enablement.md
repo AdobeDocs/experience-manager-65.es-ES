@@ -22,13 +22,13 @@ ht-degree: 0%
 
 AEM Communities ayuda a las marcas a crear experiencias coherentes en canales digitales y en persona, ya que facilita la activación entre empleados y clientes con un catálogo de recursos de activación, contenido asignado y recomendaciones dinámicas, todo ello dentro de una comunidad social para fomentar la participación.
 
-A continuación se muestra un tutorial sobre la configuración rápida de una comunidad [de](overview.md#enablement-community) habilitación para fines de demostración o desarrollo.
+A continuación se muestra un tutorial sobre la configuración rápida de una [comunidad de habilitación](overview.md#enablement-community) para fines de demostración o desarrollo.
 
-Para ver un tutorial sobre la configuración rápida de una comunidad [de](overview.md#engagement-community)participación, visite [Introducción a AEM Communities](getting-started.md).
+Para ver un tutorial sobre la configuración rápida de una [comunidad de participación](overview.md#engagement-community), visite [Introducción a AEM Communities](getting-started.md).
 
 >[!NOTE]
 >
->Este tutorial supone la instalación del paquete de funciones 1 [o posterior de](deploy-communities.md#latestfeaturepack) Communities.
+>En este tutorial se asume la instalación del [paquete de funciones de Comunidades 1](deploy-communities.md#latestfeaturepack) o posterior.
 
 * [Configuración inicial](enablement-setup.md)
 
