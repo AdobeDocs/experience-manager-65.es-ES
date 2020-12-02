@@ -11,11 +11,14 @@ topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
 
-# Inicio de sesión único y controladores de tiempo de espera {#single-sign-on-and-timeout-handlers}
+# Controladores de inicio de sesión único y tiempo de espera {#single-sign-on-and-timeout-handlers}
 
 El espacio de trabajo de AEM Forms está habilitado para SSO. Si un usuario ha iniciado sesión en una aplicación de AEM Forms como Forms Manager o la interfaz de usuario de PDF Generator y accede al espacio de trabajo de AEM Forms en la misma sesión del explorador, el usuario ha iniciado sesión en el espacio de trabajo de AEM Forms y viceversa.
 
@@ -23,11 +26,11 @@ El espacio de trabajo de AEM Forms está habilitado para SSO. Si un usuario ha i
 
 El tiempo de espera de sesión de un usuario se puede configurar en la Consola de administración.
 
-Para establecer el tiempo de espera, inicie sesión en `https://'[server]:[port]'/adminui`, vaya a **Configuración > Administración de usuarios > Configuración > Configurar atributos** avanzados del sistema y realice los ajustes que desee.
+Para establecer el tiempo de espera, inicie sesión en `https://'[server]:[port]'/adminui`, vaya a **Configuración > Administración de usuarios > Configuración > Configurar atributos avanzados del sistema** y realice la configuración deseada.
 
-En el espacio de trabajo de AEM Forms, el tiempo de espera se gestiona de la siguiente manera:
+En el espacio de trabajo de AEM Forms, el tiempo de espera se gestiona como:
 
-* La duración de la sesión de un usuario está disponible como respuesta a una `initialize` llamada que inicializa la sesión del usuario.
+* La duración de la sesión de un usuario está disponible como respuesta a una llamada `initialize` que inicializa la sesión del usuario.
 * Un cuadro de diálogo emergente notifica al usuario que la sesión está a punto de caducar, 15 segundos antes de que caduque la sesión.
 
 En este cuadro de diálogo emergente:
