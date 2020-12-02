@@ -12,6 +12,9 @@ discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +40,7 @@ También se puede realizar lo siguiente:
 En esta sección se describe cómo crear, editar y promocionar (y, si fuera necesario[ eliminar](/help/sites-authoring/launches-creating.md#deleting-a-launch)) páginas de lanzamiento dentro de la consola Sitios o la [consola Lanzamientos](#the-launches-console):
 
 * [Creación de lanzamientos](/help/sites-authoring/launches-creating.md)
-* [Edición de lanzamientos](/help/sites-authoring/launches-editing.md) 
+* [Edición de lanzamientos](/help/sites-authoring/launches-editing.md)
 * [Promoción de lanzamientos](/help/sites-authoring/launches-promoting.md) 
 
 ## Lanzamientos: orden de eventos {#launches-the-order-of-events}
@@ -46,18 +49,19 @@ Los lanzamientos permiten desarrollar contenido con eficacia para una versión f
 
 Los lanzamientos permiten realizar lo siguiente:
 
-* Crear una copia de las páginas de origen:
+* Cree una copia de las páginas de origen:
 
-   * La copia es el lanzamiento.
-   * Las páginas de origen de nivel superior se conocen como páginas de **producción**.
+   * La copia es su lanzamiento.
+   * Las páginas de origen de nivel superior se denominan **Producción**.
 
       * Las páginas de origen puedan obtenerse de varias ramas (separadas).
+
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-* Editar la configuración del lanzamiento:
+* Edite la configuración de lanzamiento:
 
    * Adición o eliminación de páginas o ramas en el lanzamiento.
-   * Edición de las propiedades del lanzamiento. Por ejemplo, los indicadores **Título**, **Fecha de lanzamiento** y **Producción lista**.
+   * Editar propiedades de lanzamiento; como **Título**, **Fecha de lanzamiento** e indicador **Listo para la producción**.
 
 * Es posible promocionar y publicar el contenido de forma manual o automática:
 
@@ -79,12 +83,14 @@ Los lanzamientos permiten realizar lo siguiente:
 
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
    * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 * [Crear un lanzamiento anidado](/help/sites-authoring/launches-creating.md#creating-a-nested-launch): lanzamiento dentro de un lanzamiento.
 
    * El origen es un lanzamiento existente.
    * Puede [promocionar un lanzamiento anidado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a cualquier destino; esto puede ser un lanzamiento principal o bien las páginas de origen de nivel superior (producción).
+
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
    >[!CAUTION]
@@ -93,7 +99,7 @@ Los lanzamientos permiten realizar lo siguiente:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La creación y edición de inicios requiere derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
 
@@ -103,7 +109,7 @@ En la consola Lanzamientos se proporciona información general sobre los lanzami
 
 * La consola **Herramientas**: **Herramientas**, **Sitios** **Lanzamientos**.
 
-* Or directly with [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* O directamente con [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Lanzamientos en las referencias (consola Sitios) {#launches-in-references-sites-console}
 
