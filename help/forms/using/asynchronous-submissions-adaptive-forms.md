@@ -31,19 +31,19 @@ Continúe leyendo para obtener más información sobre el envío asincrónico en
 Para configurar el envío asincrónico para un formulario adaptable:
 
 1. En el modo de creación de formularios adaptables, seleccione el objeto Contenedor Formulario y toque ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
-1. En la sección Propiedades de **[!UICONTROL envío]** , habilite **[!UICONTROL Usar envío]** asincrónico.
-1. En la sección **[!UICONTROL Al enviar]** , seleccione una de las siguientes opciones para realizar el envío correcto del formulario.
+1. En la sección **[!UICONTROL Propiedades de envío]**, habilite **[!UICONTROL Usar envío asincrónico]**.
+1. En la sección **[!UICONTROL Al enviar]**, seleccione una de las siguientes opciones para realizar el envío correcto del formulario.
 
-   * **[!UICONTROL Redirigir a URL]**: Redirige a la página o dirección URL especificada en el envío del formulario. Puede especificar una dirección URL o buscar para elegir la ruta a una página en el campo **[!UICONTROL Redireccionar dirección URL/Ruta]** .
+   * **[!UICONTROL Redirigir a URL]**: Redirige a la página o dirección URL especificada en el envío del formulario. Puede especificar una dirección URL o examinar para elegir la ruta a una página en el campo **[!UICONTROL Dirección URL de redireccionamiento/Ruta]**.
    * **[!UICONTROL Mostrar mensaje]**: Muestra un mensaje al enviar el formulario. Puede escribir un mensaje en el campo de texto debajo de la opción Mostrar mensaje. El campo de texto admite el formato de texto enriquecido.
 
 1. Toque ![check-button1](assets/check-button1.png) para guardar las propiedades.
 
-## Funcionamiento del envío asincrónico {#how-asynchronous-submission-works}
+## Cómo funciona el envío asincrónico {#how-asynchronous-submission-works}
 
 AEM Forms proporciona controladores de éxito y de error predeterminados para los envíos de formularios. Los controladores son funciones del lado del cliente que se ejecutan en función de la respuesta del servidor. Cuando se envía un formulario, los datos se transmiten al servidor para su validación, lo que devuelve una respuesta al cliente con información sobre el evento de éxito o error para el envío. La información se pasa como parámetros al controlador pertinente para ejecutar la función.
 
-Además, los autores y desarrolladores de formularios pueden escribir reglas en el nivel de formulario para anular los controladores predeterminados. Para obtener más información, consulte [Anulación de controladores predeterminados mediante reglas](#custom).
+Además, los autores y desarrolladores de formularios pueden escribir reglas en el nivel de formulario para anular los controladores predeterminados. Para obtener más información, consulte [Anular los controladores predeterminados mediante reglas](#custom).
 
 En primer lugar, analicemos la respuesta del servidor en busca de eventos de éxito y error.
 
@@ -93,16 +93,16 @@ La respuesta del servidor en caso de error en el envío del formulario incluye:
 
 El controlador de errores lee la respuesta del servidor y, en consecuencia, muestra el mensaje de error en el formulario.
 
-## Anular controladores predeterminados mediante reglas {#custom}
+## Omitir controladores predeterminados mediante reglas {#custom}
 
-Los desarrolladores y autores de formularios pueden escribir reglas, a nivel de formulario, en el editor de código para anular los controladores predeterminados. La respuesta del servidor para los eventos de éxito y error se expone en el nivel de formulario, al que los desarrolladores pueden acceder mediante reglas `$event.data` en.
+Los desarrolladores y autores de formularios pueden escribir reglas, a nivel de formulario, en el editor de código para anular los controladores predeterminados. La respuesta del servidor para eventos de éxito y error se expone en el nivel de formulario, al que los desarrolladores pueden acceder mediante `$event.data` reglas.
 
 Realice los siguientes pasos para escribir reglas en el editor de código para gestionar eventos de éxito y error.
 
 1. Abra el formulario adaptable en modo de creación, seleccione cualquier objeto de formulario y toque ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Formulario]** en el árbol Objetos de formulario y toque **[!UICONTROL Crear]**.
-1. Seleccione Editor **[!UICONTROL de código]** en la lista desplegable de selección de modo.
+1. Seleccione **[!UICONTROL Editor de código]** en la lista desplegable de selección de modo.
 1. En el editor de código, toque **[!UICONTROL Editar código]**. Toque **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
-1. Seleccione Envío **** correcto o **[!UICONTROL Error en envío]** en la lista desplegable **[!UICONTROL Evento]** .
-1. Escriba una regla para el evento seleccionado y toque **[!UICONTROL Listo]** para guardarla.
+1. Elija **[!UICONTROL Envío correcto]** o **[!UICONTROL Error en envío]** en la lista desplegable **[!UICONTROL Evento]**.
+1. Escriba una regla para el evento seleccionado y toque **[!UICONTROL Listo]** para guardar la regla.
 
