@@ -14,16 +14,16 @@ ht-degree: 0%
 ---
 
 
-# Protect un documento en nombre de otro usuario {#protect-a-document-on-behalf-of-another-user}
+# Protect es un documento en nombre de otro usuario {#protect-a-document-on-behalf-of-another-user}
 
 El SDK de Java de AEM Forms Documento Security proporciona API que permiten a una cuenta de usuario proteger un documento en nombre de otro usuario sin obtener los permisos para editar el documento. Puede utilizar las API en un proceso de flujo de trabajo o programáticamente como un servicio de documento. Las nuevas API son:
 
-* **protectedDocumentUtilice** la API ProtectDocument para aplicar una política a un documento en nombre de
+* **** protectedDocumentUtilice la API ProtectDocument para aplicar una política a un documento en nombre de
 
    otra cuenta de usuario. Los permisos de la cuenta de usuario utilizada para aplicar la política siguen estando limitados a la protección del documento. No obtiene derechos para abrir y vista el documento. RMSecureDocumentResult protectedDocument(Documento enDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
-* **createLicenseUtilice** la API CreateLicense para crear una licencia para una directiva en nombre de otra cuenta de usuario. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
-* **protectedDocumentWithCoverPageUtilice** la API ProtectDocumentWithCoverPage para aplicar una política y agregar una portada a un documento en nombre de otro usuario. Los permisos de la cuenta de usuario utilizada para aplicar la política siguen estando limitados a la protección del documento. No alcanza los derechos de abrir y vista el documento. RMSecureDocumentResult protectedDocumentWithCoverPage(Documento enDoc, String documentName, String policySetName, String policyName, Documento coverDoc, booleano bExactMatchForNames)
+* **** createLicenseUtilice la API CreateLicense para crear una licencia para una directiva en nombre de otra cuenta de usuario. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
+* **** protectedDocumentWithCoverPageUtilice la API ProtectDocumentWithCoverPage para aplicar una política y agregar una portada a un documento en nombre de otro usuario. Los permisos de la cuenta de usuario utilizada para aplicar la política siguen estando limitados a la protección del documento. No alcanza los derechos de abrir y vista el documento. RMSecureDocumentResult protectedDocumentWithCoverPage(Documento enDoc, String documentName, String policySetName, String policyName, Documento coverDoc, booleano bExactMatchForNames)
 
 ## Uso de las API para proteger un documento en nombre de otro usuario {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
