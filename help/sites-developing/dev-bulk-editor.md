@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 1%
 
 ---
 
 
-# Desarrollo del editor en masa{#developing-the-bulk-editor}
+# Desarrollo del Editor masivo{#developing-the-bulk-editor}
 
-En esta sección se describe cómo desarrollar la herramienta de edición masiva y cómo ampliar el componente Lista de productos, que se basa en el editor masivo.
+Esta sección describe cómo desarrollar la herramienta de edición masiva y cómo extender el componente de Lista de productos, que se basa en el editor masivo.
 
-## Parámetros de consulta del Editor masivo {#bulk-editor-query-parameters}
+## Parámetros de Consulta del Editor masivo {#bulk-editor-query-parameters}
 
-Al trabajar con el editor masivo, hay varios parámetros de consulta que puede agregar a la dirección URL para llamar al editor masivo con una configuración específica. Si desea que el editor masivo siempre se utilice con una configuración determinada, por ejemplo, como en el componente Lista de productos, deberá modificar bulkeditor.jsp (ubicado en /libs/wcm/core/components/bulkeditor) o crear un componente con la configuración específica. Los cambios realizados con parámetros de consulta no son permanentes.
+Al trabajar con el editor masivo, hay varios parámetros de consulta que puede agregar a la URL para llamar al editor masivo con una configuración específica. Si desea que el editor masivo siempre se utilice con una configuración determinada, por ejemplo, como en el componente Lista de productos, deberá modificar bulkeditor.jsp (ubicado en /libs/wcm/core/components/bulkeditor) o crear un componente con la configuración específica. Los cambios realizados con parámetros de consulta no son permanentes.
 
 Por ejemplo, si escribe lo siguiente en la dirección URL del explorador:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-el editor masivo se muestra sin el campo Ruta **** raíz, ya que hrp=true oculta el campo. Con el parámetro hrp=false, se muestra el campo (el valor predeterminado).
+el editor masivo se muestra sin el campo **Ruta de raíz** como hrp=true oculta el campo. Con el parámetro hrp=false, se muestra el campo (el valor predeterminado).
 
 A continuación se muestra una lista de los parámetros de consulta del editor masivo:
 
@@ -48,7 +51,7 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
    <td> Descripción <br /> </td>
   </tr>
   <tr>
-   <td> rootPath/rp<br /> </td>
+   <td> rootPath / rp<br /> </td>
    <td> Cadena </td>
    <td> ruta raíz de búsqueda</td>
   </tr>
@@ -60,7 +63,7 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
   <tr>
    <td> contentMode / cm<br /> </td>
    <td> Booleano</td>
-   <td> cuando el valor es true, el modo de contenido se activa<br /> </td>
+   <td> cuando es true, el modo de contenido está habilitado<br /> </td>
   </tr>
   <tr>
    <td> ixValue / cv<br /> </td>
@@ -85,7 +88,7 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
   <tr>
    <td> showGridOnly / sgo<br /> </td>
    <td> Booleano</td>
-   <td> cuando es true, muestra únicamente la cuadrícula y no el panel de búsqueda <br /> </td>
+   <td> cuando es true, muestra solamente la cuadrícula y no el panel de búsqueda <br /> </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed / spc</td>
@@ -160,18 +163,18 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
  </tbody>
 </table>
 
-### Desarrollo de un componente basado en un editor masivo: el componente Product List {#developing-a-bulk-editor-based-component-the-product-list-component}
+### Desarrollo de un componente basado en un editor masivo: el componente Lista del producto {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Esta sección proporciona información general sobre cómo utilizar el editor masivo y proporciona una descripción del componente Geometrixx existente basada en el editor masivo: el componente Product List.
+Esta sección proporciona información general sobre cómo utilizar el editor masivo y proporciona una descripción del componente de Geometrixx existente basada en el editor masivo: el componente Lista del producto.
 
-El componente Lista de productos permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista de productos para representar los productos de un catálogo. La información se presenta en una tabla HTML estándar y cualquier edición se realiza en el cuadro de diálogo **Editar** , que contiene un widget de Editor masivo. (Este Editor masivo es exactamente el mismo que el accesible en /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista de productos se ha configurado para la funcionalidad específica del editor masivo. Se pueden configurar todas las partes del editor masivo (o los componentes derivados del editor masivo).
+El componente Lista del producto permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista del producto para representar los productos de un catálogo. La información se presenta en una tabla HTML estándar y cualquier edición se realiza en el cuadro de diálogo **Editar**, que contiene un widget de Editor masivo. (Este Editor masivo es exactamente el mismo que el accesible en /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista del producto se ha configurado para la funcionalidad específica del editor masivo. Se pueden configurar todas las partes del editor masivo (o los componentes derivados del editor masivo).
 
-Con el editor masivo, puede agregar, modificar, eliminar, filtrar y exportar las filas, guardar las modificaciones e importar un conjunto de filas. Cada fila se almacena como un nodo en la propia instancia del componente Product List. Cada celda es una propiedad de cada nodo. Se trata de una opción de diseño que se puede cambiar fácilmente; por ejemplo, se pueden almacenar nodos en otro lugar del repositorio. La función del servlet de consulta es devolver la lista de nodos que se van a mostrar; la ruta de búsqueda se define como una instancia de Product List.
+Con el editor masivo, puede agregar, modificar, eliminar, filtrar y exportar las filas, guardar las modificaciones e importar un conjunto de filas. Cada fila se almacena como nodo en la propia instancia del componente Lista del producto. Cada celda es una propiedad de cada nodo. Se trata de una opción de diseño que se puede cambiar fácilmente; por ejemplo, se pueden almacenar nodos en otro lugar del repositorio. La función del servlet de consulta es devolver la lista de los nodos que se van a mostrar; la ruta de búsqueda se define como una instancia de Lista de productos.
 
-El código fuente del componente Lista de productos está disponible en el repositorio en /apps/geometrixx/components/productlist y consta de varias partes, como todos los componentes de AEM:
+El código fuente del componente Lista del producto está disponible en el repositorio en /apps/geometrixx/components/productlist y consta de varias partes, como todos los componentes AEM:
 
-* Representación HTML: el procesamiento se realiza en un archivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). El JSP lee los subnodos del componente Lista de productos actual y muestra cada uno de ellos como una fila de una tabla HTML.
-* Cuadro de diálogo Editar, donde se define la configuración del Editor masivo. Configure el cuadro de diálogo para que coincida con las necesidades del componente: columnas disponibles y posibles acciones realizadas en la cuadrícula o en la búsqueda. Consulte Propiedades [de configuración del editor](#bulk-editor-configuration-properties) masivo para obtener información sobre todas las propiedades de configuración.
+* Representación HTML: el procesamiento se realiza en un archivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). El JSP lee los subnodos del componente de Lista de productos actual y muestra cada uno de ellos como una fila de una tabla HTML.
+* Cuadro de diálogo Editar, donde se define la configuración del Editor masivo. Configure el cuadro de diálogo para que coincida con las necesidades del componente: columnas disponibles y posibles acciones realizadas en la cuadrícula o en la búsqueda. Consulte [propiedades de configuración del editor masivo](#bulk-editor-configuration-properties) para obtener información sobre todas las propiedades de configuración.
 
 Esta es una representación XML de los subnodos de cuadro de diálogo:
 
@@ -264,9 +267,9 @@ Esta es una representación XML de los subnodos de cuadro de diálogo:
         </editor>
 ```
 
-### Propiedades de configuración del Editor masivo {#bulk-editor-configuration-properties}
+### Propiedades de configuración del editor masivo {#bulk-editor-configuration-properties}
 
-Se pueden configurar todas las partes del editor masivo. En la tabla siguiente se enumeran todas las propiedades de configuración del editor masivo.
+Se pueden configurar todas las partes del editor masivo. La siguiente tabla lista todas las propiedades de configuración del editor masivo.
 
 <table>
  <tbody>
@@ -510,7 +513,7 @@ El siguiente ejemplo se encuentra en el componente de lista de productos (/apps/
 
 **Casilla de verificación**
 
-Si la propiedad de configuración de la casilla de verificación está establecida en true, todas las celdas de la columna se procesan como casillas de verificación. Una casilla de verificación envía **true** al servlet Guardar del servidor; en caso contrario, **false** . En el menú de encabezado, también puede **seleccionar todo** o **seleccionar ninguno**. Estas opciones se activan si el encabezado seleccionado es el encabezado de una columna de casilla de verificación.
+Si la propiedad de configuración de la casilla de verificación está establecida en true, todas las celdas de la columna se procesan como casillas de verificación. Una casilla de verificación envía **true** al servidor Guardar servlet, **false** en caso contrario. En el menú de encabezado, también puede **seleccionar todo** o **seleccionar ninguno**. Estas opciones se activan si el encabezado seleccionado es el encabezado de una columna de casilla de verificación.
 
 En el ejemplo anterior, la columna de selección solo contiene casillas de verificación como checkboxes=&quot;true&quot;.
 
@@ -522,13 +525,13 @@ En el ejemplo anterior, la columna de selección es la primera columna como forc
 
 ### Servlet de consulta {#query-servlet}
 
-De forma predeterminada, el servlet Consulta se encuentra en `/libs/wcm/core/components/bulkeditor/json.java`. Puede configurar otra ruta para recuperar los datos.
+De forma predeterminada, el servlet de Consulta se encuentra en `/libs/wcm/core/components/bulkeditor/json.java`. Puede configurar otra ruta para recuperar los datos.
 
-El servlet Consulta funciona de la siguiente manera: recibe una consulta GQL y las columnas que se van a devolver, calcula los resultados y envía los resultados al editor masivo como flujo JSON.
+El servlet de Consulta funciona de la siguiente manera: recibe una consulta GQL y las columnas que se van a devolver, calcula los resultados y envía los resultados al editor masivo como flujo JSON.
 
-En el caso del componente Lista de productos, los dos parámetros enviados al servlet Consulta son los siguientes:
+En el caso del componente Lista del producto, los dos parámetros enviados al servlet de Consulta son los siguientes:
 
-*  consulta: &quot;path:/content/geometrixx/es/customers/jcr:content/par/productlist Cube&quot;
+* consulta: &quot;path:/content/geometrixx/es/customers/jcr:content/par/product-list Cubo&quot;
 * Todos: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 y el flujo JSON devuelto es el siguiente:
@@ -550,11 +553,11 @@ y el flujo JSON devuelto es el siguiente:
 
 Cada visita individual corresponde a un nodo y sus propiedades, y se muestra como una fila en la cuadrícula.
 
-Puede ampliar el servlet Consulta para devolver un modelo de herencia complejo o nodos de retorno almacenados en un lugar lógico específico. El servlet Consulta se puede utilizar para realizar cualquier tipo de cálculo complejo. A continuación, la cuadrícula puede mostrar filas que son un agregado de varios nodos en el repositorio. En ese caso, la modificación y el guardado de estas filas deben ser administrados por el servlet Guardar.
+Puede extender el servlet de Consulta para devolver un modelo de herencia complejo o nodos de retorno almacenados en un lugar lógico específico. El servlet de Consulta puede utilizarse para realizar cualquier tipo de cálculo complejo. A continuación, la cuadrícula puede mostrar filas que son acumuladas de varios nodos en el repositorio. En ese caso, la modificación y el guardado de estas filas deben ser administrados por el servlet Guardar.
 
 ### Guardar servlet {#save-servlet}
 
-En la configuración predeterminada del editor masivo, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El editor masivo mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se genera una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta POST a cada ruta con los valores de propiedades actualizados. Esta es la base del concepto Sling y funciona bien si cada celda es una propiedad del nodo. Pero si el servlet Consulta está implementado para realizar el cálculo de herencia, este modelo no puede funcionar como una propiedad devuelta por el servlet Consulta puede heredarse de otro nodo.
+En la configuración predeterminada del editor masivo, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El editor masivo mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se genera una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta de POST a cada ruta con los valores de propiedades actualizados. Esta es la base del concepto Sling y funciona bien si cada celda es una propiedad del nodo. Sin embargo, si el servlet de Consulta se implementa para realizar el cálculo de herencia, este modelo no puede funcionar como una propiedad devuelta por el servlet de Consulta puede heredarse de otro nodo.
 
 El concepto de servlet Guardar es que las modificaciones no se publican directamente en cada nodo, sino que se publican en un servlet que realiza el trabajo de guardado. Esto proporciona a este servlet la posibilidad de analizar las modificaciones y guardar las propiedades en el nodo derecho.
 
@@ -570,6 +573,6 @@ Cada propiedad actualizada se envía al servlet en el siguiente formato:
 
 El servlet necesita saber dónde se almacena la propiedad catalogCode.
 
-La implementación predeterminada del servlet Guardar está disponible en /libs/wcm/bulkeditor/save/POST.jsp y se utiliza en el componente Lista de productos. Toma todos los parámetros de la solicitud (con un formato &lt;jcr path>/&lt;property name>) y escribe las propiedades en los nodos mediante la API de JCR. También crea nodos si no existen (filas insertadas en la cuadrícula).
+La implementación predeterminada del servlet Guardar está disponible en /libs/wcm/bulkeditor/save/POST.jsp y se utiliza en el componente Lista del producto. Toma todos los parámetros de la solicitud (con un formato &lt;jcr path>/&lt;property name>) y escribe las propiedades en los nodos mediante la API de JCR. También crea nodos si no existen (filas insertadas en la cuadrícula).
 
-El código predeterminado no debe utilizarse tal cual, ya que vuelve a implementar lo que hace el servidor de forma nativa (una POST en &lt;jcr path>/&lt;property name>) y, por lo tanto, es sólo un buen punto de partida para crear un servlet Guardar que administrará un modelo de herencia de propiedades.
+El código predeterminado no debe utilizarse tal cual, ya que vuelve a implementar lo que hace el servidor de forma nativa (un POST en &lt;jcr path>/&lt;property name>) y, por lo tanto, es sólo un buen punto de partida para crear un servlet Guardar que administrará un modelo de herencia de propiedades.
