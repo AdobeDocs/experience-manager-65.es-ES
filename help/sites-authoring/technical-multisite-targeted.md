@@ -1,6 +1,6 @@
 ---
-title: Cómo se estructura la administración de diversos sitios para el contenido objetivo
-seo-title: Cómo se estructura la administración de diversos sitios para el contenido objetivo
+title: Estructurar la administración de diversos sitios para el contenido segmentado
+seo-title: Estructurar la administración de diversos sitios para el contenido segmentado
 description: En un diagrama se muestra la estructuración de la compatibilidad con el uso de varios sitios para contenido de destino
 seo-description: En un diagrama se muestra la estructuración de la compatibilidad con el uso de varios sitios para contenido de destino
 uuid: 2d30cdf0-ab77-490d-aac0-db3a0d417a58
@@ -11,15 +11,18 @@ topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 89%
 
 ---
 
 
-# Cómo se estructura la administración de diversos sitios para el contenido objetivo{#how-multisite-management-for-targeted-content-is-structured}
+# Estructurar la administración de diversos sitios para el contenido segmentado{#how-multisite-management-for-targeted-content-is-structured}
 
 En el siguiente diagrama se muestra la estructuración de la compatibilidad con el uso de varios sitios para contenido de destino
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. Cada área tiene su propio conjunto de actividades, experiencias y ofertas.
+Las áreas aparecen debajo de **/content/campañas/&lt;marca>** y, de forma predeterminada, cada marca tiene un área maestra, que se crea automáticamente. Cada área tiene su propio conjunto de actividades, experiencias y ofertas.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
