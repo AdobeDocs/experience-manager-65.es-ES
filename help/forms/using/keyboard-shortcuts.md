@@ -30,7 +30,7 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 | Guardar cambios en el navegador de propiedades para el componente de formulario adaptable seleccionado | Ctrl + S | Comando+S |
 | Editar regla para el componente de formulario adaptable seleccionado | Ctrl + Alt + Intro | Comando+Alt+Retorno |
 | Alternar entre la Previsualización y el modo seleccionado actualmente (por ejemplo, Editar, Andamiaje, etc.) | Ctrl + Mayús + M | Ctrl+Mayús+M&amp;ast; |
-| Deshacer el último cambio | Ctrl+Z | Ctrl+Z&amp;ast; |
+| Deshacer el último cambio | Ctrl + Z | Ctrl+Z&amp;ast; |
 | Rehacer el último cambio | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Seleccionar varios componentes | Mayús + clic | Mayús + clic |
 | Copiar componente seleccionado | Ctrl-C | Ctrl-C&amp;ast; |
@@ -63,7 +63,7 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 |---|---|---|
 | Abrir el navegador de propiedades del componente seleccionado en un tema | Alt + Intro | Alt + Retorno |
 | Cerrar el navegador de propiedades del componente seleccionado en un tema | Ctrl + Alt + W | Comando+Alt+W |
-| Deshacer el último cambio | Ctrl+Z | Ctrl+Z&amp;ast; |
+| Deshacer el último cambio | Ctrl + Z | Ctrl+Z&amp;ast; |
 | Rehacer el último cambio | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Guardar cambios en el navegador de propiedades para el componente seleccionado en un tema | Ctrl + S | Ctrl+S&amp;ast; |
 
@@ -71,7 +71,7 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 >
 >Los métodos abreviados marcados con &#39;&amp;ast;&#39; funcionan con las teclas Ctrl y Comando en Mac OS.
 
-## Explorador de contenido  {#contentbrowser}
+## Explorador de contenido {#contentbrowser}
 
 | **Acción** | **Método abreviado en Windows** | **Método abreviado en Mac OS** |
 |---|---|---|
@@ -83,16 +83,16 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 | Seleccione el elemento anterior en el árbol Objetos de Forms | Flecha hacia arriba | Flecha hacia arriba |
 
 [1] Reemplaza Ctrl + Flecha derecha para Windows y Comando + Flecha derecha para Mac OS.\
-[2] Reemplaza Ctrl + Flecha izquierda para Windows y Comando + Flecha izquierda para Mac OS.
+[2 ] Reemplaza Ctrl + Flecha izquierda para Windows y Comando + Flecha izquierda para Mac OS.
 
 ## Administración de correspondencia {#correspondence-management}
 
 Esta sección lista varios teclados y accesos directos de accesibilidad que puede utilizar en el editor de texto de la Administración de correspondencia. Puede utilizar estos métodos abreviados mientras:
 
-* Creación o edición de un recurso de [texto](texts-interactive-communications.md)
+* Creación o edición de un recurso [de texto](texts-interactive-communications.md)
 * Edición de un módulo de texto después de tocar el icono Editar correspondiente ( ![edittextmodule](assets/edittextmodule.png)) al [crear una correspondencia](/help/forms/using/create-correspondence.md).
 
-### Selección de texto y desplazamiento del cursor {#text-selection-and-moving-the-cursor-around}
+### Selección de texto y desplazamiento del cursor por {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -129,7 +129,7 @@ Esta sección lista varios teclados y accesos directos de accesibilidad que pued
   <tr>
    <td><p>Mover el cursor al principio de la siguiente palabra</p> </td> 
    <td><p>Ctrl + flecha derecha</p> </td> 
-   <td>Opción + flecha derecha <em><sup>[1]</sup></em></td> 
+   <td>Opción+Flecha derecha <em><sup>[1]</sup></em></td> 
   </tr>
   <tr>
    <td><p>Mover el cursor al principio de la palabra anterior</p> </td> 
@@ -189,7 +189,7 @@ Esta sección lista varios teclados y accesos directos de accesibilidad que pued
   <tr>
    <td><p>Seleccionar texto desde la posición actual hasta el final (del módulo)</p> </td> 
    <td><p>Mayús+Ctrl+Fin</p> </td> 
-   <td>Comando + Mayús + flecha abajo<br /> </td> 
+   <td>Comando+Mayús+Flecha abajo<br /> </td> 
   </tr>
   <tr>
    <td><p>Seleccionar texto desde la posición actual hasta el inicio (del módulo)</p> </td> 
@@ -210,7 +210,7 @@ Esta sección lista varios teclados y accesos directos de accesibilidad que pued
 </table>
 
 
-### Alineación del texto {#text-alignment}
+### Alineación de texto {#text-alignment}
 
 <table> 
  <tbody>
@@ -242,7 +242,7 @@ Esta sección lista varios teclados y accesos directos de accesibilidad que pued
  </tbody>
 </table>
 
-### Acciones de deshacer y rehacer {#undo-and-redo-actions}
+### Deshacer y rehacer acciones {#undo-and-redo-actions}
 
 <table> 
  <tbody>
