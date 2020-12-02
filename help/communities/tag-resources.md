@@ -22,19 +22,19 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-El etiquetado de los recursos de habilitación permite filtrar los recursos y las rutas de aprendizaje a medida que los miembros exploran [los catálogos](functions.md#catalog-function).
+El etiquetado de los recursos de habilitación permite filtrar los recursos y las rutas de aprendizaje a medida que los miembros exploran [catálogos](functions.md#catalog-function).
 
 Esencialmente:
 
-* [Creación de una Área de nombres](../../help/sites-administering/tags.md#creating-a-namespace) de etiquetas para cada catálogo
+* [Crear un espacio de ](../../help/sites-administering/tags.md#creating-a-namespace) nombres de etiqueta para cada catálogo
 
    * [Definir permisos de etiquetas](../../help/sites-administering/tags.md#setting-tag-permissions)
    * Solo para miembros de la comunidad (comunidad cerrada)
 
-      * Permitir acceso de lectura para el grupo de miembros del sitio de [comunidad](users.md#publish-group-roles)
+      * Permitir acceso de lectura para el grupo de miembros del [sitio de la comunidad](users.md#publish-group-roles)
    * Para cualquier visitante del sitio, ya sea de inicio de sesión o anónimo (comunidad abierta)
 
-      * Permitir acceso de lectura para el `Everyone` grupo
+      * Permitir acceso de lectura para el grupo `Everyone`
    * [Publicación de las etiquetas](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -44,21 +44,21 @@ Esencialmente:
    * [Configurar los catálogos que existen en la estructura del sitio](functions.md#catalog-function)
 
       * Puede agregar etiquetas a la instancia de catálogo para controlar la lista de las etiquetas presentadas en los filtros de interfaz de usuario.
-      * Puede agregar filtros [previos](catalog-developer-essentials.md#pre-filters)para restringir los recursos incluidos en un catálogo.
+      * Puede agregar [filtros previos](catalog-developer-essentials.md#pre-filters) para restringir los recursos incluidos de un catálogo.
 
 * [Publicar el sitio de la comunidad](sites-console.md#publishing-the-site)
-* [Aplicar etiquetas a los recursos](resources.md#create-a-resource) de habilitación para que se puedan filtrar categóricamente
+* [Aplicar etiquetas a ](resources.md#create-a-resource) los recursos de habilitación para que se puedan filtrar por categorías
 * [Publicación de los recursos de habilitación](resources.md#publish)
 
 ## Etiquetas del sitio de la comunidad {#community-site-tags}
 
-Al crear o editar un sitio de comunidad, la opción [Etiquetado](sites-console.md#tagging) establece el ámbito de las etiquetas disponibles para las funciones del sitio seleccionando un subconjunto de Áreas de nombres de etiquetas existentes.
+Al crear o editar un sitio de comunidad, la configuración [Etiquetado](sites-console.md#tagging) establece el ámbito de las etiquetas disponibles para las características del sitio seleccionando un subconjunto de Áreas de nombres de etiquetas existentes.
 
 Aunque las etiquetas se pueden crear y agregar al sitio de la comunidad en cualquier momento, se recomienda diseñar una taxonomía de antemano, de manera similar a diseñar una base de datos. Consulte [Uso de etiquetas](../../help/sites-authoring/tags.md).
 
 Cuando más tarde se agregan etiquetas a un sitio de comunidad existente, es necesario guardar la edición antes de poder agregar la nueva etiqueta a una función de catálogo en la estructura del sitio.
 
-Para un sitio de comunidad, una vez que se haya publicado el sitio y las etiquetas, es necesario habilitar el acceso de lectura para los miembros de la comunidad. Consulte [Configuración de permisos](../../help/sites-administering/tags.md#setting-tag-permissions)de etiquetas.
+Para un sitio de comunidad, una vez que se haya publicado el sitio y las etiquetas, es necesario habilitar el acceso de lectura para los miembros de la comunidad. Consulte [Configuración de permisos de etiquetas](../../help/sites-administering/tags.md#setting-tag-permissions).
 
 A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tags/ski-catalog` para el grupo `Community Enable Members`.
 
@@ -74,15 +74,15 @@ La función Catálogo incluye un ajuste de etiqueta que define las etiquetas que
 
 ## Aplicación de etiquetas a los recursos de habilitación {#applying-tags-to-enablement-resources}
 
-Los recursos de habilitación y las rutas de aprendizaje aparecerán en todo el catálogo cuando `Show in Catalog` se marque. Añadir las etiquetas a los recursos y las rutas de aprendizaje permitirá realizar un filtrado previo en catálogos específicos, así como en la interfaz de usuario del catálogo.
+Los recursos de habilitación y las rutas de aprendizaje aparecerán en todo el catálogo cuando `Show in Catalog` esté marcado. Añadir las etiquetas a los recursos y las rutas de aprendizaje permitirá realizar un filtrado previo en catálogos específicos, así como en la interfaz de usuario del catálogo.
 
-La restricción de recursos de habilitación y rutas de aprendizaje a catálogos específicos se logra mediante la creación de filtros [previos](catalog-developer-essentials.md#pre-filters).
+La restricción de recursos de habilitación y rutas de aprendizaje a catálogos específicos se logra mediante la creación de [filtros previos](catalog-developer-essentials.md#pre-filters).
 
 La interfaz de usuario del catálogo permite que los visitantes apliquen un filtro de etiquetas a la lista de recursos y rutas de aprendizaje que aparecen en ese catálogo.
 
 El administrador que aplique las etiquetas a los recursos de habilitación debe tener en cuenta las Áreas de nombres de etiquetas asociadas con los catálogos, así como la taxonomía para seleccionar una subetiqueta para una categorización más refinada.
 
-Por ejemplo, si se crea una `ski-catalog` Área de nombres y se establece en un catálogo denominado `Ski Catalog`, puede tener dos etiquetas secundarias: `lesson-1` y `lesson-2`.
+Por ejemplo, si se crea una Área de nombres `ski-catalog` y se establece en un catálogo denominado `Ski Catalog`, puede tener dos etiquetas secundarias: `lesson-1` y `lesson-2`.
 
 Por lo tanto, cualquier recurso de habilitación etiquetado con uno de los siguientes elementos:
 
@@ -93,7 +93,7 @@ aparecerá en `Ski Catalog` una vez que se haya publicado el recurso de habilita
 
 ![basic-info](assets/applytags-basicinfo.png)
 
-## Visualización del catálogo al publicar {#viewing-catalog-on-publish}
+## Visualización del catálogo en la publicación {#viewing-catalog-on-publish}
 
 Una vez que todo se haya configurado desde el entorno del autor y se haya publicado, la experiencia de utilizar el catálogo para encontrar recursos de activación se puede experimentar en el entorno de publicación.
 
