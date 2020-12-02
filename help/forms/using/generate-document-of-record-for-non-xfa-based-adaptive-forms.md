@@ -34,16 +34,19 @@ En este artículo se explica cómo se puede generar un documento de registros pa
 
 Cuando se crea un formulario adaptable, se puede seleccionar un modelo de formulario. Sus opciones son:
 
-* [Plantillas](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)de formularioPermite seleccionar una plantilla XFA para el formulario adaptable. Al seleccionar una plantilla XFA, puede utilizar el archivo XDP asociado para el documento del registro como se describe anteriormente.
+* [Plantillas ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
+de formularioPermite seleccionar una plantilla XFA para el formulario adaptable. Al seleccionar una plantilla XFA, puede utilizar el archivo XDP asociado para el documento del registro como se describe anteriormente.
 
-* [ESQUEMA](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)XML Permite seleccionar una definición de esquema XML para el formulario adaptable. Al seleccionar un esquema XML para el formulario adaptable, puede:
+* [Esquema ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+XMLPermite seleccionar una definición de esquema XML para el formulario adaptable. Al seleccionar un esquema XML para el formulario adaptable, puede:
 
    * Asocie una plantilla XFA para el documento del registro. Asegúrese de que la plantilla XFA asociada utiliza el mismo esquema XML que el formulario adaptable
    * Generar documento de registro automáticamente
 
-* NingunoPermite crear un formulario adaptable sin un modelo de formulario. El documento de registro se genera automáticamente para el formulario adaptable.
+* Ninguno
+Permite crear un formulario adaptable sin un modelo de formulario. El documento de registro se genera automáticamente para el formulario adaptable.
 
-Al seleccionar un modelo de formulario, configure el documento del registro mediante las opciones disponibles en Documento de la Configuración de la plantilla de registro. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+Al seleccionar un modelo de formulario, configure el documento del registro mediante las opciones disponibles en Documento de la Configuración de la plantilla de registro. Consulte [Documento de configuración de plantilla de registro](#document-of-record-template-configuration).
 
 ## Documento generado automáticamente del registro {#automatically-generated-document-of-record}
 
@@ -57,25 +60,25 @@ El documento del registro generado automáticamente tiene las siguientes ventaja
 * Le permite probar diferentes estilos y apariencia utilizando diferentes plantillas base y elegir el mejor estilo y apariencia para el Documento de Grabar. Las apariencias de estilo son opcionales y, si no especifica estilo, los estilos del sistema se definen como predeterminados.
 * Garantiza que cualquier cambio en la forma se refleje inmediatamente en el documento de registro.
 
-## Componentes para generar automáticamente un documento de registro {#components-to-automatically-generate-a-document-of-record}
+## Componentes para generar automáticamente un documento del registro {#components-to-automatically-generate-a-document-of-record}
 
 Para generar un documento de registros para formularios adaptables, necesita los siguientes componentes:
 
-**Formulario** adaptable Formulario adaptable para el que se desea generar un documento de registro.
+**Formulario adaptable** Formulario adaptable para el que se desea generar un documento de registro.
 
-**Plantilla base (recomendada)** Plantilla XFA (archivo XDP) creada en AEM Designer. La plantilla base se utiliza para especificar la información de estilo y marca para el documento de la plantilla de registro.
+**Plantilla base (recomendada)Plantilla** XFA (archivo XDP) creada en AEM Designer. La plantilla base se utiliza para especificar la información de estilo y marca para el documento de la plantilla de registro.
 
-Consulte Plantilla [base de un documento de registro](#base-template-of-a-document-of-record)
+Consulte [Plantilla base de un documento de registro](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
 >La plantilla base de un documento de registro también se denomina metaplantilla de un documento de registro.
 
-**Documento de plantilla** de registro XFA (archivo XDP) generada a partir de un formulario adaptable.
+**Documento de** plantilla de registroPlantilla XFA (archivo XDP) generada a partir de un formulario adaptable.
 
-See [Document of Record Template Configuration](#document-of-record-template-configuration).
+Consulte [Documento de configuración de plantilla de registro](#document-of-record-template-configuration).
 
-**Información de datos** de formulario rellenada por un usuario en el formulario adaptable. Se combina con el documento de la plantilla de registro para generar el documento de registro.
+**Datos** del formularioInformación rellenada por un usuario en el formulario adaptable. Se combina con el documento de la plantilla de registro para generar el documento de registro.
 
 ## Asignación de elementos de formulario adaptables {#mapping-of-adaptive-form-elements}
 
@@ -172,7 +175,7 @@ Las siguientes secciones describen cómo aparecen los elementos de formulario ad
  </tbody>
 </table>
 
-### Containers {#containers}
+### Contenedores {#containers}
 
 <table>
  <tbody>
@@ -208,7 +211,7 @@ Los componentes de la tabla de formularios adaptables, como el encabezado, el pi
 
 La plantilla base proporciona información de estilo y apariencia para el documento del registro. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, desea agregar el logotipo de compañía en el encabezado y la información de copyright en el pie del documento del registro. La página de formato de la plantilla base se utiliza como página de formato para el documento de la plantilla de registro. La página de formato puede tener información como encabezado de página, pie de página y número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento del registro mediante la plantilla base para la generación automática del documento del registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
 
-Siga las convenciones [de plantilla](#base-template-conventions) base al diseñar la plantilla base.
+Siga [Convenciones de plantilla base](#base-template-conventions) al diseñar la plantilla base.
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
@@ -218,23 +221,23 @@ Se utiliza una plantilla base para definir el encabezado, pie de página, estilo
 
 * En la plantilla base, debe asignar un nombre al subformulario raíz como `AF_METATEMPLATE` y a la página de formato como `AF_MASTERPAGE`.
 
-* Se da preferencia a la página de formato con el nombre `AF_MASTERPAGE` ubicado debajo del subformulario `AF_METATEMPLATE` raíz para extraer información de encabezado, pie de página y estilo.
+* Se da preferencia a la página de formato con el nombre `AF_MASTERPAGE` ubicado en el subformulario raíz `AF_METATEMPLATE` para extraer información de encabezado, pie de página y estilo.
 
-* Si `AF_MASTERPAGE` está ausente, se utiliza la primera página de formato presente en la plantilla base.
+* Si `AF_MASTERPAGE` no existe, se utiliza la primera página de formato presente en la plantilla base.
 
 **Convenciones de estilo para campos**
 
-* Para aplicar estilo a los campos en el documento del registro, la plantilla base proporciona campos ubicados en el subformulario `AF_FIELDSSUBFORM` debajo del subformulario `AF_METATEMPLATE` raíz.
+* Para aplicar estilo en los campos del documento del registro, la plantilla base proporciona campos ubicados en el subformulario `AF_FIELDSSUBFORM` en el subformulario raíz `AF_METATEMPLATE`.
 
-* Las propiedades de estos campos se aplican a los campos en el documento del registro. Estos campos deben seguir la convención de `AF_<name of field in all caps>_XFO` nomenclatura. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
+* Las propiedades de estos campos se aplican a los campos en el documento del registro. Estos campos deben seguir la convención de nombre `AF_<name of field in all caps>_XFO`. Por ejemplo, el nombre del campo para la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
 
 Para crear una plantilla base, haga lo siguiente en AEM Designer.
 
 1. Haga clic en **Archivo > Nuevo**.
-1. Seleccione la opción **Basado en una plantilla** .
+1. Seleccione la opción **Basado en una plantilla**.
 
-1. Seleccione la categoría **Forms - Documento de registro** .
-1. Seleccione **Plantilla** base de DoR.
+1. Seleccione la categoría **Forms - Documento de registro**.
+1. Seleccione **Plantilla base de DoR**.
 1. Haga clic en **Siguiente** y proporcione la información requerida.
 
 1. (Opcional) Modifique el estilo y el aspecto de los campos que desea aplicar a los campos en el documento del registro.
@@ -259,23 +262,23 @@ Configure el documento de la plantilla de registro del formulario para que los c
 Realice los siguientes pasos para configurar un documento de registros para formularios adaptables:
 
 1. En AEM instancia de autor, haga clic en **Forms > Forms y Documentos.**
-1. Seleccione un formulario y haga clic en Propiedades **de la Vista**.
-1. En la ventana Propiedades, toque Modelo **de formulario**.
+1. Seleccione un formulario y haga clic en **Propiedades de la Vista**.
+1. En la ventana Propiedades, toque **Modelo de formulario**.
 También puede seleccionar un modelo de formulario al crear un formulario.
 
    >[!NOTE]
    >
-   >En la ficha Modelo de formulario, asegúrese de seleccionar **Esquema** o **Ninguno** en la lista desplegable **Seleccionar desde** . **[!UICONTROL No se admite el documento de registros en formularios basados en XFA o adaptables con la plantilla de formulario como modelo de formulario.]**
+   >En la ficha Modelo de formulario, asegúrese de seleccionar **Esquema** o **Ninguno** en la lista desplegable **Seleccionar de**. **[!UICONTROL No se admite el documento de registros en formularios basados en XFA o adaptables con la plantilla de formulario como modelo de formulario.]**
 
 1. En la sección Documento de la configuración de la plantilla de registro de la ficha Modelo de formulario, seleccione una de las siguientes opciones.
 
-   **Ninguno** Seleccione esta opción si no desea configurar el documento de registro para el formulario.
+   **** NingunoSeleccione esta opción si no desea configurar el documento de registro para el formulario.
 
-   **Asociar plantilla de formulario como Documento de plantilla** de registro Seleccione esta opción si tiene un archivo XDP que desea utilizar como plantilla para el documento de registros. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo adecuado.
+   **Asociar plantilla de formulario como Documento de** plantilla de registroSeleccione esta opción si tiene un archivo XDP que desea utilizar como plantilla para el documento de registros. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo adecuado.
 
    El archivo XDP seleccionado se asocia al formulario adaptable.
 
-   **Generar Documento de registro** Seleccione esta opción para utilizar un archivo XDP como plantilla base para definir el estilo y el aspecto del documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo adecuado.
+   **Generar Documento de** registroSeleccione esta opción para utilizar un archivo XDP como plantilla base para definir el estilo y el aspecto del documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo adecuado.
 
    >[!NOTE]
    >
@@ -284,18 +287,18 @@ También puede seleccionar un modelo de formulario al crear un formulario.
    >
    >
    >    * El formulario adaptable se basa en esquemas
-   >    * Está utilizando la opción **Asociar plantilla de formulario como Documento de la plantilla** de registro para el documento del registro
+   >    * Está utilizando la opción **Asociar plantilla de formulario como Documento de la plantilla de registro** para el documento del registro
 
 
-1. Haga clic en **Finalizado.**
+1. Haga clic en **Listo.**
 
-## Personalización de la información de marca en documento del registro {#customize-the-branding-information-in-document-of-record}
+## Personalice la información de marca en documento del registro {#customize-the-branding-information-in-document-of-record}
 
 Al generar un documento de registro, puede cambiar la información de marca para el documento de registro en la ficha Documento de registro. La ficha Documento de registro incluye opciones como logotipo, apariencia, diseño, encabezado y pie de página, renuncia de responsabilidad y si desea incluir o no las opciones de casilla de verificación y botón de radio no seleccionadas.
 
 Para localizar la información de marca que especifica en la ficha Documento de registro, debe asegurarse de que la configuración regional del explorador se establece correctamente. Para personalizar la información de marca de documento de registro, siga los pasos siguientes:
 
-1. Seleccione un panel (panel raíz) en el documento del registro y toque ![Configurar](assets/configure.png).
+1. Seleccione un panel (panel raíz) en el documento del registro y toque ![configurar](assets/configure.png).
 1. Toque ![dortab](assets/dortab.png). Aparece la ficha Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento del registro. Si selecciona la plantilla predeterminada, aparece una previsualización en miniatura del documento de registro debajo de la lista desplegable Plantilla.
 
@@ -337,7 +340,7 @@ Para localizar la información de marca que especifica en la ficha Documento de 
 
 1. Para guardar los cambios de marca, toque Finalizado.
 
-## Diseños de tabla y columna para paneles en Documento de Grabar {#table-and-column-layouts-for-panels-in-document-of-record}
+## Diseños de tabla y columna para paneles en Documento de Registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
 El formulario adaptable puede ser largo con varios campos de formulario. Es posible que no desee guardar un documento del registro como una copia exacta del formulario adaptable. Ahora puede elegir una presentación de tabla o columna para guardar uno o varios paneles de formulario adaptables en el documento de PDF de registro.
 
@@ -359,15 +362,15 @@ El documento de la configuración de registro de un componente está disponible 
 
 **Configuración de nivel de campo**
 
-* **Excluir Del Documento Del Registro**: Al establecer la propiedad true, se excluye el campo del documento del registro. Se trata de una propiedad con nombre `excludeFromDoR`. Su comportamiento depende de la propiedad **Excluir campos de DoR si está oculta** en el nivel de formulario.
+* **Excluir Del Documento Del Registro**: Al establecer la propiedad true, se excluye el campo del documento del registro. Es una propiedad que se puede usar en secuencias de comandos denominada `excludeFromDoR`. Su comportamiento depende de la propiedad **Excluir campos del documento de trabajo si está oculta** a nivel de formulario.
 
 * **Mostrar panel como tabla:** Al establecer la propiedad, se muestra el panel como tabla en documento del registro si el panel tiene menos de 6 campos. Aplicable solo para panel.
-* **Excluir título del Documento de registro:** Al establecer la propiedad, se excluye el título del panel o la tabla del documento del registro. Aplicable solo para panel y tabla.
-* **Excluir descripción del Documento de registro:** Al establecer la propiedad, se excluye la descripción del panel o la tabla del documento del registro. Aplicable solo para panel y tabla.
+* **Excluir título del Documento de registro:al** establecer la propiedad se excluye el título del panel o la tabla del documento del registro. Aplicable solo para panel y tabla.
+* **Excluir descripción del Documento de registro:al** establecer la propiedad se excluye la descripción del panel o la tabla del documento del registro. Aplicable solo para panel y tabla.
 
 **Configuración del nivel de formulario**
 
-* **Incluir campos no enlazados en DoR:** La configuración de la propiedad incluye campos independientes de un formulario adaptable basado en Esquemas en documento de registro. De forma predeterminada, es true.
+* **Incluir campos no enlazados en DoR:al** establecer la propiedad se incluyen campos no enlazados de un formulario adaptable basado en Esquema en documento de registro. De forma predeterminada, es true.
 * **Excluir campos de DoR si están ocultos:** Al establecer la propiedad se anula el comportamiento de la propiedad de nivel de campo &quot;Excluir del Documento de registro&quot; cuando no es true. Si los campos están ocultos en el momento del envío del formulario, se excluirán del documento de registro si la propiedad se establece como true, siempre que no se establezca la propiedad &quot;Excluir del Documento de registro&quot;.
 
 ## Consideraciones clave al trabajar con el documento del registro {#key-considerations-when-working-with-document-of-record}
