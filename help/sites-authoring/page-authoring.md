@@ -12,6 +12,9 @@ discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 100%
 
 ---
 
@@ -38,13 +41,13 @@ Para ayudarle a crear páginas, el entorno de creación dispone de funciones com
 
 * **Edición in situ** Los componentes Texto e Imagen se pueden editar directamente en la página web sin abrir un cuadro de diálogo o iniciar una acción explícita de almacenamiento.
 
-* **[Explorador de componentes](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**En la parte izquierda de una página editable se puede abrir un explorador deslizante; puede arrastrar componentes del navegador a la página y editarlos.
+* **[Explorador de componentes](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)** En la parte izquierda de una página editable se puede abrir un explorador deslizante; puede arrastrar componentes del navegador a la página y editarlos.
 
-* **[Explorador de recursos](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**En la parte izquierda de una página editable se puede abrir un explorador deslizante; desde aquí puede arrastrar activos a la página, por ejemplo, para colocar activos o crear vínculos a otras páginas.
+* **[Explorador de recursos](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)** En la parte izquierda de una página editable se puede abrir un explorador deslizante; desde aquí puede arrastrar activos a la página, por ejemplo, para colocar activos o crear vínculos a otras páginas.
 
 * **Barra de herramientas de componentes** Un toque o clic único o dos clics o toques lentos mostrarán la barra de herramientas adecuada (único para la barra de herramientas de edición directa y doble lento para la barra de herramientas completa).
 
-* **[Diseño interactivo](/help/sites-authoring/responsive-layout.md)**Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva.
+* **[Diseño interactivo](/help/sites-authoring/responsive-layout.md)** Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva.
 
 * **Buscar al escribir** En ciertos casos (por ejemplo, al seleccionar rutas de acceso en los cuadros de diálogo de edición), al buscar contenido mediante la interfaz de AEM, se muestran coincidencias dinámicas cuando se escribe la consulta.
 
