@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Determinación de si los Documentos son compatibles con PDF/A {#determining-whether-documents-are-pdf-a-compliant}
+# Determinación de si los Documentos cumplen los requisitos de PDF/A {#determining-whether-documents-are-pdf-a-compliant}
 
 Puede determinar si un documento PDF es compatible con PDF/A mediante el servicio Ensamblador. Un documento PDF/A existe como formato de archivo para la conservación a largo plazo del contenido del documento. Las fuentes se incrustan en el documento y el archivo se descomprime. Como resultado, un documento PDF/A suele ser mayor que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
 
@@ -36,21 +36,21 @@ A los efectos de este análisis, supongamos que se utiliza el siguiente document
  </DDX>
 ```
 
-Dentro de este documento DDX, el `DocumentInformation` elemento indica al servicio Ensamblador que devuelva información sobre el documento PDF de entrada. Dentro del `DocumentInformation` elemento, el `PDFAValidation` elemento indica al servicio Ensamblador que indique si el documento PDF de entrada es compatible con PDF/A.
+Dentro de este documento DDX, el elemento `DocumentInformation` ordena al servicio Ensamblador que devuelva información sobre el documento PDF de entrada. Dentro del elemento `DocumentInformation`, el elemento `PDFAValidation` ordena al servicio Ensamblador que indique si el documento PDF de entrada es compatible con PDF/A.
 
-El servicio Ensamblador devuelve información que especifica si el documento PDF de entrada es compatible con PDF/A en un documento XML que contiene un `PDFAConformance` elemento. Si el documento PDF de entrada es compatible con PDF/A, el valor del `PDFAConformance` atributo `isCompliant` del elemento es `true`. Si el documento PDF no es compatible con PDF/A, el valor del `PDFAConformance` atributo `isCompliant` del elemento es `false`.
-
->[!NOTE]
->
->Dado que el documento DDX especificado en esta sección contiene un `DocumentInformation` elemento, el servicio Ensamblador devuelve datos XML en lugar de un documento PDF. Es decir, el servicio Ensamblador no monta ni desmonta un documento PDF; devuelve información sobre el documento PDF de entrada dentro de un documento XML.
+El servicio Ensamblador devuelve información que especifica si el documento PDF de entrada es compatible con PDF/A en un documento XML que contiene un elemento `PDFAConformance`. Si el documento PDF de entrada es compatible con PDF/A, el valor del atributo `PDFAConformance` del elemento `isCompliant` es `true`. Si el documento PDF no es compatible con PDF/A, el valor del atributo `PDFAConformance` del elemento `isCompliant` es `false`.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio de ensamblador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Dado que el documento DDX especificado en esta sección contiene un elemento `DocumentInformation`, el servicio Ensamblador devuelve datos XML en lugar de un documento PDF. Es decir, el servicio Ensamblador no monta ni desmonta un documento PDF; devuelve información sobre el documento PDF de entrada dentro de un documento XML.
 
 >[!NOTE]
 >
->Para obtener más información sobre un documento DDX, consulte [Servicio de ensamblador y Referencia](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
+>Para obtener más información sobre el servicio de ensamblador, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
+>[!NOTE]
+>
+>Para obtener más información sobre un documento DDX, consulte [Servicio de ensamblador y Referencia DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -73,10 +73,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
-* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
-si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Crear un cliente de ensamblador de PDF**
 
@@ -84,7 +84,7 @@ Antes de realizar una operación de ensamblador mediante programación, debe cre
 
 **Hacer referencia a un documento DDX existente**
 
-Se debe hacer referencia a un documento DDX para realizar una operación de servicio de ensamblador. Para determinar si un documento PDF de entrada es compatible con PDF/A, asegúrese de que el documento DDX contenga el `PDFAValidation` elemento dentro de un `DocumentInformation` elemento. El `PDFAValidation` elemento ordena al servicio Ensamblador que devuelva un documento XML que especifica si el documento PDF de entrada es compatible con PDF/A.
+Se debe hacer referencia a un documento DDX para realizar una operación de servicio de ensamblador. Para determinar si un documento PDF de entrada es compatible con PDF/A, asegúrese de que el documento DDX contenga el elemento `PDFAValidation` dentro de un elemento `DocumentInformation`. El elemento `PDFAValidation` indica al servicio Ensamblador que devuelva un documento XML que especifica si el documento PDF de entrada es compatible con PDF/A.
 
 **Referencia a un documento PDF utilizado para determinar la conformidad con PDF/A**
 
@@ -92,11 +92,11 @@ Se debe hacer referencia a un documento PDF y pasarlo al servicio Ensamblador pa
 
 **Definición de opciones de tiempo de ejecución**
 
-Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de la `AssemblerOptionSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de clase `AssemblerOptionSpec` en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Recuperar información sobre el documento PDF**
 
-Después de crear el cliente del servicio Ensamblador, hacer referencia al documento DDX, hacer referencia a un documento PDF interactivo y definir las opciones de tiempo de ejecución, puede invocar la `invokeDDX` operación. Dado que el documento DDX contiene el `DocumentInformation` elemento, el servicio Ensamblador devuelve datos XML en lugar de un documento PDF.
+Después de crear el cliente del servicio Ensamblador, hacer referencia al documento DDX, hacer referencia a un documento PDF interactivo y definir las opciones de tiempo de ejecución, puede invocar la operación `invokeDDX`. Dado que el documento DDX contiene el elemento `DocumentInformation`, el servicio Ensamblador devuelve datos XML en lugar de un documento PDF.
 
 **Guardar el documento XML devuelto**
 
@@ -130,50 +130,50 @@ Determine si un documento PDF es compatible con PDF/A mediante la API de servici
 
 1. Cree un cliente de ensamblador de PDF.
 
-   * Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión.
-   * Cree un `AssemblerServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un `java.io.FileInputStream` objeto que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX. Para determinar si el documento PDF es compatible con PDF/A, asegúrese de que el documento DDX contenga el `PDFAValidation` elemento que se encuentra dentro de un `DocumentInformation` elemento.
-   * Cree un `com.adobe.idp.Document` objeto utilizando su constructor y pasando el `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX. Para determinar si el documento PDF es compatible con PDF/A, asegúrese de que el documento DDX contenga el elemento `PDFAValidation` que se encuentra dentro de un elemento `DocumentInformation`.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Haga referencia a un documento PDF utilizado para determinar la compatibilidad con PDF/A.
 
-   * Cree un `java.io.FileInputStream` objeto utilizando su constructor y pasando la ubicación de un documento PDF que se utiliza para determinar la compatibilidad con PDF/A.
-   * Cree un `com.adobe.idp.Document` objeto utilizando su constructor y pasando el `java.io.FileInputStream` objeto que contiene el documento PDF.
-   * Cree un `java.util.Map` objeto que se utilice para almacenar el documento PDF de entrada mediante un `HashMap` constructor.
-   * Añada una entrada al `java.util.Map` objeto invocando su `put` método y pasando los siguientes argumentos:
+   * Cree un objeto `java.io.FileInputStream` utilizando su constructor y pasando la ubicación de un documento PDF que se utiliza para determinar la compatibilidad con PDF/A.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream` que contiene el documento PDF.
+   * Cree un objeto `java.util.Map` que se utilice para almacenar el documento PDF de entrada mediante un constructor `HashMap`.
+   * Añada una entrada al objeto `java.util.Map` invocando su método `put` y pasando los siguientes argumentos:
 
       * Un valor de cadena que representa el nombre de la clave. Este valor debe coincidir con el valor del elemento de origen especificado en el documento DDX. Por ejemplo, el valor del elemento de origen ubicado en el documento DDX que se introduce en esta sección es Loan.pdf.
-      * Un `com.adobe.idp.Document` objeto que contiene el documento PDF de entrada.
+      * Un objeto `com.adobe.idp.Document` que contiene el documento PDF de entrada.
 
 1. Configure las opciones de tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` objeto que almacene opciones de tiempo de ejecución mediante su constructor.
-   * Configure las opciones de tiempo de ejecución para cumplir los requisitos comerciales invocando un método que pertenece al `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, invoque el `AssemblerOptionSpec` método del `setFailOnError` objeto y pase `false`.
+   * Cree un objeto `AssemblerOptionSpec` que almacene las opciones de tiempo de ejecución mediante su constructor.
+   * Configure las opciones de tiempo de ejecución para satisfacer los requisitos comerciales invocando un método que pertenece al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, invoque el método `AssemblerOptionSpec` del objeto `setFailOnError` y pase `false`.
 
 1. Recupere información sobre el documento PDF.
 
-   Invoque el `AssemblerServiceClient` método del `invokeDDX` objeto y pase los siguientes valores obligatorios:
+   Invoque el método `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores obligatorios:
 
-   * Un `com.adobe.idp.Document` objeto que representa el documento DDX que se va a utilizar
-   * Un `java.util.Map` objeto que contiene el archivo PDF de entrada que se utiliza para determinar la compatibilidad con PDF/A
-   * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones de tiempo de ejecución
+   * Un objeto `com.adobe.idp.Document` que representa el documento DDX que se va a utilizar
+   * Un objeto `java.util.Map` que contiene el archivo PDF de entrada que se utiliza para determinar la compatibilidad con PDF/A
+   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones de tiempo de ejecución
 
-   El `invokeDDX` método devuelve un `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contiene datos XML que especifica si el documento PDF de entrada es compatible con PDF/A.
+   El método `invokeDDX` devuelve un objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene datos XML que especifica si el documento PDF de entrada es compatible con PDF/A.
 
 1. Guarde el documento XML devuelto.
 
    Para obtener datos XML que especifican si el documento PDF de entrada es un documento PDF/A, realice las siguientes acciones:
 
-   * Invocar el `AssemblerResult` método del `getDocuments` objeto. Esto devuelve un `java.util.Map` objeto.
-   * Repita el `java.util.Map` objeto hasta que encuentre el `com.adobe.idp.Document` objeto resultante.
-   * Invocar el `com.adobe.idp.Document` método del `copyToFile` objeto para extraer el documento XML. Asegúrese de guardar los datos XML como un archivo XML.
+   * Invocar el método `AssemblerResult` del objeto `getDocuments`. Esto devuelve un objeto `java.util.Map`.
+   * Repita el objeto `java.util.Map` hasta que encuentre el objeto `com.adobe.idp.Document` resultante.
+   * Invoque el método `com.adobe.idp.Document` del objeto `copyToFile` para extraer el documento XML. Asegúrese de guardar los datos XML como un archivo XML.
 
 **Consulte también**
 
-[Inicio rápido (modo SOAP): Determinación de si un documento es compatible con PDF/A mediante la API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) de Java (modo SOAP)
+[Inicio rápido (modo SOAP): Determinación de si un documento es compatible con PDF/A mediante la API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)  de Java (modo SOAP)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -189,14 +189,14 @@ Determine si un documento PDF es compatible con PDF/A mediante la API de servici
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` por la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que aloja AEM Forms.
 
 1. Cree un cliente de ensamblador de PDF.
 
-   * Cree un `AssemblerServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `AssemblerServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
-   * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `AssemblerServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `AssemblerServiceClient.Endpoint.Binding`. Convierta el valor devuelto a `BasicHttpBinding`.
+   * Establezca el campo `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
       * Asigne el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -206,47 +206,47 @@ Determine si un documento PDF es compatible con PDF/A mediante la API de servici
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento DDX.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
-   * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
-   * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
+   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento DDX.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
+   * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
 
 1. Haga referencia a un documento PDF utilizado para determinar la compatibilidad con PDF/A.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento PDF de entrada.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF de entrada y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
-   * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
-   * Rellene el `BLOB` objeto asignando su `MTOM` propiedad con el contenido de la matriz de bytes.
-   * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Este objeto de colección se utiliza para almacenar el documento PDF.
-   * Create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
-   * Asigne un valor de cadena que represente el nombre clave al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `key` objeto. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX.
-   * Asigne el `BLOB` objeto que almacena el documento PDF al `MyMapOf_xsd_string_To_xsd_anyType_Item` campo del `value` objeto.
-   * Añada el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto al `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invocar el `MyMapOf_xsd_string_To_xsd_anyType` método del `Add` objeto y pasar el `MyMapOf_xsd_string_To_xsd_anyType` objeto.
+   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento PDF de entrada.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento PDF de entrada y el modo en que se abre el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
+   * Rellene el objeto `BLOB` asignando su propiedad `MTOM` con el contenido de la matriz de bytes.
+   * Cree un objeto `MyMapOf_xsd_string_To_xsd_anyType`. Este objeto de colección se utiliza para almacenar el documento PDF.
+   * Cree un objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Asigne un valor de cadena que represente el nombre clave al campo `MyMapOf_xsd_string_To_xsd_anyType_Item` del objeto `key`. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX.
+   * Asigne el objeto `BLOB` que almacena el documento PDF al campo `MyMapOf_xsd_string_To_xsd_anyType_Item` del objeto `value`.
+   * Añada el objeto `MyMapOf_xsd_string_To_xsd_anyType_Item` al objeto `MyMapOf_xsd_string_To_xsd_anyType`. Invoque el método `MyMapOf_xsd_string_To_xsd_anyType` object&#39; `Add` y pase el objeto `MyMapOf_xsd_string_To_xsd_anyType`.
 
 1. Configure las opciones de tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` objeto que almacene opciones de tiempo de ejecución mediante su constructor.
-   * Configure las opciones de tiempo de ejecución para cumplir los requisitos comerciales asignando un valor a un miembro de datos que pertenece al `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, asigne `false` al miembro de datos del `AssemblerOptionSpec` objeto `failOnError` .
+   * Cree un objeto `AssemblerOptionSpec` que almacene las opciones de tiempo de ejecución mediante su constructor.
+   * Configure las opciones de tiempo de ejecución para satisfacer los requisitos comerciales asignando un valor a un miembro de datos que pertenece al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, asigne `false` al miembro de datos `AssemblerOptionSpec` del objeto `failOnError`.
 
 1. Recupere información sobre el documento PDF.
 
-   Invoque el `AssemblerServiceService` método del `invoke` objeto y pase los valores siguientes:
+   Invoque el método `AssemblerServiceService` del objeto `invoke` y pase los siguientes valores:
 
-   * Un `BLOB` objeto que representa el documento DDX.
-   * El `MyMapOf_xsd_string_To_xsd_anyType` objeto que contiene el documento PDF de entrada. Sus claves deben coincidir con los nombres de los archivos de origen PDF y sus valores deben ser el `BLOB` objeto que corresponde al archivo PDF de entrada.
-   * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución.
+   * Un objeto `BLOB` que representa el documento DDX.
+   * El objeto `MyMapOf_xsd_string_To_xsd_anyType` que contiene el documento PDF de entrada. Sus claves deben coincidir con los nombres de los archivos de origen PDF y sus valores deben ser el objeto `BLOB` que corresponde al archivo PDF de entrada.
+   * Un objeto `AssemblerOptionSpec` que especifica opciones de tiempo de ejecución.
 
-   El `invoke` método devuelve un `AssemblerResult` objeto que contiene datos XML que especifica si el documento PDF de entrada es un documento PDF/A.
+   El método `invoke` devuelve un objeto `AssemblerResult` que contiene datos XML que especifica si el documento PDF de entrada es un documento PDF/A.
 
 1. Guarde el documento XML devuelto.
 
    Para obtener datos XML que especifican si el documento PDF de entrada es un documento PDF/A, realice las siguientes acciones:
 
-   * Acceda al `AssemblerResult` campo del `documents` objeto, que es un `Map` objeto que contiene los datos XML que especifica si el documento PDF de entrada es un documento PDF/A.
-   * Repita el `Map` objeto para obtener cada documento resultante. A continuación, convierta el valor del miembro de la matriz en un `BLOB`.
-   * Extraiga los datos binarios que representan los datos XML accediendo al campo de su `BLOB` objeto `MTOM` . Este campo almacena una matriz de bytes a los que puede escribir como archivo XML.
+   * Acceda al campo `AssemblerResult` del objeto `documents`, que es un objeto `Map` que contiene los datos XML que especifica si el documento PDF de entrada es un documento PDF/A.
+   * Repita el objeto `Map` para obtener cada documento resultante. A continuación, convierta el valor del miembro de la matriz en un `BLOB`.
+   * Extraiga los datos binarios que representan los datos XML accediendo al campo `BLOB` del objeto `MTOM`. Este campo almacena una matriz de bytes a los que puede escribir como archivo XML.
 
 **Consulte también**
 
