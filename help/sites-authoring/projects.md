@@ -21,11 +21,11 @@ ht-degree: 85%
 
 # Proyectos{#projects}
 
-Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, recursos, flujos de trabajo y otros tipos de información, como se describe en detalle en [Mosaico del proyecto.](#project-tiles)
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and**/home/groups**.
+>Para que los usuarios de los proyectos puedan ver otros usuarios o grupos mientras utilizan la funcionalidad Proyectos, como crear proyectos, crear tareas/flujos de trabajo, ver y administrar el equipo, esos usuarios necesitan tener acceso de lectura en **/home/users** y **/home/groups**. La manera más fácil de implementar esto es darle al grupo **usuarios de proyectos** acceso de lectura a **/inicio/usuarios** y**/inicio/grupos**.
 
 Como usuario, puede hacer lo siguiente:
 
@@ -88,7 +88,7 @@ Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/he
 
 Para añadir una colección, haga clic en **Agregar colección** y seleccione la colección adecuada de la lista.
 
-### Experiencias {#experiences}
+### Experiencias  {#experiences}
 
 El mosaico **Experiencias** permite añadir aplicación móvil, un sitio web o una publicación al proyecto.
 
@@ -126,7 +126,7 @@ En el mosaico Trabajo de traducción puede iniciar una traducción y también pu
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
+Haga clic en los puntos suspensivos en la parte inferior de la tarjeta **Trabajo de traducción** para vista de los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -148,7 +148,7 @@ El mosaico **Páginas de aterrizaje** permite solicitar una nueva página de ate
 
 Este flujo de trabajo se describe en [Creación de un flujo de trabajo de página de aterrizaje](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
-### Correo electrónico {#emails}
+### Correo electrónico  {#emails}
 
 El mosaico **Correo electrónico** permite administrar las solicitudes por correo electrónico. Inicia la ventana Solicitud de correo electrónico.
 
@@ -174,7 +174,7 @@ El mosaico Lanzamientos muestra los lanzamientos que se hayan solicitado con un 
 
 ### Tareas {#tasks}
 
-En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
+En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan en detalle en [Uso de Tareas](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -184,12 +184,12 @@ En AEM se incluyen tres plantillas predefinidas de fábrica:
 
 * Un proyecto simple: muestra de referencia para cualquier proyecto que no encaje en otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
 * Un proyecto de medios: un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Fotografía del producto (para administrar la fotografía relacionada con el producto)
-* [Proyecto](/help/sites-authoring/managing-product-information.md) de sesión fotográfica del producto: muestra de referencia para administrar la fotografía del producto relacionada con el comercio electrónico. Incluye funciones para fotógrafos, editores, retocadores, propietarios, directores creativos, comerciales de redes sociales, directores de marketing, revisores y observadores.
+* [Proyecto](/help/sites-authoring/managing-product-information.md)  de sesión fotográfica del producto: muestra de referencia para administrar la fotografía del producto relacionada con el comercio electrónico. Incluye funciones para fotógrafos, editores, retocadores, propietarios, directores creativos, comerciales de redes sociales, directores de marketing, revisores y observadores.
 * [Proyecto de traducción](/help/sites-administering/translation.md): una muestra de referencia para la administración de las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
 
 En función de la plantilla seleccionada, dispone de distintas opciones en relación con las funciones de usuario y los flujos de trabajo.
 
-## Funciones de usuario en un proyecto {#user-roles-in-a-project}
+## Funciones de usuario en un proyecto  {#user-roles-in-a-project}
 
 Las diferentes funciones de usuario se establecen en una plantilla de proyecto y se utilizan por dos motivos principales:
 
