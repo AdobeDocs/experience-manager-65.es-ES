@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Elementos esenciales del foro {#forum-essentials}
+# Forum Essentials {#forum-essentials}
 
 Esta página proporciona la información esencial para trabajar con la función de foro.
 
@@ -48,7 +48,7 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte Función <a href="forum.md">Foro</a></td>
+   <td>Consulte <a href="forum.md">Función de foro</a></td>
   </tr>
  </tbody>
 </table>
@@ -65,21 +65,21 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ### Función Foro {#forum-function}
 
-Una estructura de sitio de comunidad que incluye la función [](functions.md#forum-function)Foro, incluye un `forum` componente configurado, así como configuraciones que afectan a la moderación, el etiquetado y la traducción.
+Una estructura de sitio de comunidad que incluye la [función de foro](functions.md#forum-function), incluye un componente `forum` configurado, así como configuraciones que afectan a la moderación, el etiquetado y la traducción.
 
 ### Acceso a anuncios de foro (UGC) {#accessing-forum-posts-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
