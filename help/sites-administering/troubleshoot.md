@@ -1,6 +1,6 @@
 ---
-title: Solución de problemas de AEM
-seo-title: Solución de problemas de AEM
+title: Resolución de problemas AEM
+seo-title: Resolución de problemas AEM
 description: Obtenga información sobre la resolución de problemas con AEM.
 seo-description: Obtenga información sobre la resolución de problemas con AEM.
 uuid: 72379531-915c-45d0-ba70-42b212665272
@@ -12,17 +12,20 @@ discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 10%
 
 ---
 
 
 # Solución de problemas de AEM {#troubleshooting-aem}
 
-En la siguiente sección se explican algunos problemas que puede encontrar al utilizar AEM, así como sugerencias sobre cómo solucionarlos.
+La siguiente sección trata algunos problemas que puede encontrar al utilizar AEM, junto con sugerencias sobre cómo solucionarlos.
 
 >[!NOTE]
 >
->Si está solucionando problemas de creación en AEM, consulte [Solución de problemas de creación.](/help/sites-authoring/troubleshooting.md)
+>Si está solucionando problemas de creación en AEM, consulte [Resolución de problemas para autores.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
@@ -40,7 +43,7 @@ En la tabla siguiente se proporciona una descripción general de los problemas q
   </tr>
   <tr>
    <td>Administrador de sistemas</td>
-   <td><p>Al hacer doble clic en el frasco de inicio rápido no se produce ningún efecto o se abre el archivo jar con otro programa (por ejemplo, el administrador de archivos)</p> </td>
+   <td><p>Al hacer clic en el tarro de inicio rápido no se produce ningún efecto o se abre el archivo jar con otro programa (por ejemplo, el administrador de archivos)</p> </td>
   </tr>
   <tr>
    <td><p>Administrador de sistemas</p> </td>
@@ -48,7 +51,7 @@ En la tabla siguiente se proporciona una descripción general de los problemas q
   </tr>
   <tr>
    <td><p>Administrador de sistemas</p> </td>
-   <td><p>La pantalla de bienvenida de AEM no se muestra en el navegador después de hacer doble clic en Inicio rápido de AEM CM</p> </td>
+   <td><p>La pantalla de bienvenida de AEM no se muestra en el navegador después de hacer clic con el doble en AEM inicio rápido de CM</p> </td>
   </tr>
   <tr>
    <td><p>Administrador de sistemas</p> <p>admin user</p> </td>
@@ -63,30 +66,30 @@ En la tabla siguiente se proporciona una descripción general de los problemas q
 
 ## Problemas de instalación {#installation-issues}
 
-Consulte [Problemas](/help/sites-deploying/troubleshooting.md#common-installation-issues) comunes de instalación para obtener información sobre los siguientes escenarios de solución de problemas:
+Consulte [Problemas comunes de instalación](/help/sites-deploying/troubleshooting.md#common-installation-issues) para obtener información sobre los siguientes escenarios de solución de problemas:
 
 * Cuando se hace doble clic en el archivo JAR de inicio rápido, no sucede nada o el archivo se abre con otro programa (como un gestor de archivos).
 * Las aplicaciones que se ejecutan en CRX devuelven errores de memoria insuficiente.
 * La pantalla de bienvenida de AEM no se muestra en el navegador después de hacer doble clic en el inicio rápido de AEM.
 
-## Métodos para el análisis de resolución de problemas {#methods-for-troubleshooting-analysis}
+## Métodos para solucionar problemas de Análisis {#methods-for-troubleshooting-analysis}
 
-### Realización de un volcado de subprocesos {#making-a-thread-dump}
+### Realización de un volcado de subproceso {#making-a-thread-dump}
 
 El volcado de subprocesos es una lista de todos los subprocesos de Java que están activos actualmente. Si AEM no responde correctamente, el volcado de subprocesos puede ayudarle a identificar interbloqueos u otros problemas.
 
-### Uso del tapón de rosca Sling {#using-sling-thread-dumper}
+### Uso del Dumper de subproceso Sling {#using-sling-thread-dumper}
 
-1. Abra la consola **web de** AEM; por ejemplo, en `https://localhost:4502/system/console/`.
-1. Seleccione los **hilos** en **la ficha Estado** .
+1. Abra la **Consola Web de AEM**; por ejemplo, en `https://localhost:4502/system/console/`.
+1. Seleccione la ficha **Subprocesos** en **Estado**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### Uso de jstack (línea de comandos) {#using-jstack-command-line}
 
-1. Busque el PID (id. de proceso) de la instancia de AEM Java.
+1. Busque el PID (id. de proceso) de la instancia de Java AEM.
 
-   Por ejemplo, puede usar `ps -ef` o `jps`.
+   Por ejemplo, puede utilizar `ps -ef` o `jps`.
 
 1. Ejecutar:
 
@@ -96,28 +99,28 @@ El volcado de subprocesos es una lista de todos los subprocesos de Java que est�
 
 >[!NOTE]
 >
->Puede anexar los volcados de subproceso a un archivo de registro utilizando la redirección de salida `>>` :
+>Puede anexar los volcados de subproceso a un archivo de registro utilizando la redirección de salida `>>`:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte la documentación de [Cómo tomar descargas de subprocesos de una JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) para obtener más información
+Consulte la [documentación Cómo tomar los volcados de subprocesos de una JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) para obtener más información
 
-### Comprobación de sesiones JCR no cerradas {#checking-for-unclosed-jcr-sessions}
+### Comprobando sesiones JCR no cerradas {#checking-for-unclosed-jcr-sessions}
 
-Cuando se desarrolla la funcionalidad para AEM WCM, se pueden abrir sesiones JCR (comparable a la apertura de una conexión de base de datos). Si las sesiones abiertas nunca se cierran, su sistema puede experimentar los siguientes síntomas:
+Cuando se desarrolla la funcionalidad para AEM WCM, se pueden abrir sesiones JCR (comparables a la apertura de una conexión de base de datos). Si las sesiones abiertas nunca se cierran, su sistema puede experimentar los siguientes síntomas:
 
 * El sistema se vuelve más lento.
 * Se puede ver un montón de CacheManager: resizeTodas las entradas del archivo de registro; el siguiente número (size=&lt;x>) muestra el número de cachés, cada sesión abre varias cachés.
 * De vez en cuando el sistema se queda sin memoria (después de unas horas, días o semanas, según la gravedad).
 
-Para analizar las sesiones no cerradas y averiguar qué código no cierra una sesión, consulte el artículo de la Base de conocimiento [Analizar sesiones](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html)no cerradas.
+Para analizar las sesiones sin cerrar y averiguar qué código no cierra una sesión, consulte el artículo de la Base de conocimiento [Analizar sesiones sin cerrar](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html).
 
-### Uso de la consola web de Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
+### Uso de Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 
 El estado de los paquetes OSGi también puede dar una indicación temprana de los posibles problemas.
 
-1. Abra la consola **web de** AEM; por ejemplo, en `https://localhost:4502/system/console/`.
-1. Seleccione **Paquetes** en la ficha **OSGI** .
+1. Abra la **Consola Web de AEM**; por ejemplo, en `https://localhost:4502/system/console/`.
+1. Seleccione **Paquetes** en la ficha **OSGI**.
 1. Comprobar:
 
    * el estado de los paquetes. Si alguno está inactivo o insatisfecho, intente detener y reiniciar el paquete. Si el problema persiste, es posible que tenga que investigar más a fondo usando otros métodos.
