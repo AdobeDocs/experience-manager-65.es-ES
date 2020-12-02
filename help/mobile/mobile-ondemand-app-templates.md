@@ -1,8 +1,8 @@
 ---
-title: Creación y adición de plantillas y componentes
-seo-title: Creación y adición de plantillas y componentes
-description: Siga esta página para obtener información sobre la creación y adición de plantillas y componentes a la aplicación. La página utiliza la aplicación ilimitada de Geometrixx como aplicación que contiene una plantilla de aplicación de ejemplo y plantillas de página.
-seo-description: Siga esta página para obtener información sobre la creación y adición de plantillas y componentes a la aplicación. La página utiliza la aplicación ilimitada de Geometrixx como aplicación que contiene una plantilla de aplicación de ejemplo y plantillas de página.
+title: Creación y Añade de plantillas y componentes
+seo-title: Creación y Añade de plantillas y componentes
+description: Siga esta página para obtener información sobre la creación y adición de plantillas y componentes a la aplicación. La página utiliza la aplicación Geometrixx Unlimited como aplicación que contiene una plantilla de aplicación de ejemplo y plantillas de página.
+seo-description: Siga esta página para obtener información sobre la creación y adición de plantillas y componentes a la aplicación. La página utiliza la aplicación Geometrixx Unlimited como aplicación que contiene una plantilla de aplicación de ejemplo y plantillas de página.
 uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
@@ -10,11 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
 
-# Creación y adición de plantillas y componentes {#creating-and-adding-templates-and-components}
+# Creación y Añade de plantillas y componentes {#creating-and-adding-templates-and-components}
 
 >[!NOTE]
 >
@@ -22,21 +25,21 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 AEM Mobile On-Demand proporciona una plantilla de aplicación totalmente configurada, una plantilla de artículo y componentes de artículo.
 
-La aplicación We.Unlimited es una plantilla de ejemplo que representa el shell de una aplicación On-Demand de AEM Mobile totalmente configurable y administrable.
+La aplicación We.Unlimited es una plantilla de muestra que representa el shell de una aplicación AEM Mobile On-Demand totalmente configurable y administrable.
 
-Al seleccionar esta plantilla de ejemplo al crear una aplicación nueva, se ofrece un panel con muchas funciones de AEM Mobile.
+Al seleccionar esta plantilla de ejemplo al crear una aplicación nueva, se obtiene un panel enriquecido de las funciones de AEM Mobile.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
 >[!NOTE]
 >
->Para gestionar el contenido de la aplicación y de la aplicación móvil desde el Centro de control de aplicaciones de AEM Mobile, consulte el panel de control de aplicaciones de [AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Para administrar el contenido de la aplicación y de la aplicación móvil desde el Centro de control de aplicaciones de AEM Mobile, consulte el [Panel de la aplicación de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 ## Creación de plantillas de aplicación {#creating-app-templates}
 
 Una plantilla de aplicación se utiliza para crear una aplicación nueva y actúa como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación. La plantilla marca algunas propiedades fundamentales para dirigir la aplicación de la forma adecuada. En general, un cliente no crearía demasiadas aplicaciones en total.
 
-Las plantillas de aplicación proporcionan una manera sencilla de aprovechar los diseños existentes creados por los desarrolladores, que se utilizan para crear nuevas aplicaciones en AEM.
+Las plantillas de aplicación proporcionan una manera sencilla de aprovechar los diseños existentes creados por los desarrolladores, que se utilizan para crear nuevas aplicaciones dentro de AEM.
 
 Al crear una aplicación nueva basada en la plantilla de otra aplicación, obtendrá una aplicación que tenga un punto de partida representativo de la aplicación desde la que se creó.
 
@@ -45,68 +48,68 @@ Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 1. Vaya al catálogo de aplicaciones de AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Seleccione **Crear** —> **Aplicación** como se muestra a continuación
 
-Una vez que haya creado una aplicación con esta plantilla, podrá añadir artículos, pancartas y colecciones a la aplicación. Para volver a visitar, crear artículos, pancartas y colecciones, consulte Acciones [de administración de](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)contenido.
+Una vez que haya creado una aplicación con esta plantilla, podrá añadir artículos, pancartas y colecciones a la aplicación. Para volver a visitar, crear artículos, pancartas y colecciones, consulte [Acciones de Gestor de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
->Como alternativa, también puede seleccionar una plantilla de aplicación de ejemplo, por ejemplo, la aplicación **We.Unlimited** , que un desarrollador de AEM pone a su disposición. Si utiliza esta plantilla de ejemplo para su aplicación, obtendrá algunos artículos y colecciones de muestra en los que trabajar. Tendrá la opción de utilizar las plantillas y los componentes de ejemplo, personalizar los existentes o crear otros nuevos para su aplicación.
+>También puede seleccionar una plantilla de aplicación de ejemplo, por ejemplo, la aplicación **We.Unlimited**, que un desarrollador de AEM pone a su disposición. Si utiliza esta plantilla de ejemplo para su aplicación, obtendrá algunos artículos y colecciones de muestra en los que trabajar. Tendrá la opción de utilizar las plantillas y los componentes de ejemplo, personalizar los existentes o crear otros nuevos para su aplicación.
 
 >[!CAUTION]
 >
->Definición de la propiedad ***redirectTarget***
+>Estableciendo la propiedad ***redirectTarget***
 >
->Mientras utiliza una de las plantillas de aplicación, el desarrollador define el contenido de la aplicación. Sin embargo, el desarrollador debe saber dónde se crea la aplicación en el jcr y el valor de la propiedad ***redirectTarget*** .
+>Mientras utiliza una de las plantillas de aplicación, el desarrollador define el contenido de la aplicación. Sin embargo, el desarrollador debe saber dónde se crea la aplicación en el jcr y el valor de la propiedad ***redirectTarget***.
 >
->El ***redirectTarget*** se calcula como parte de la operación de creación de la aplicación e intenta resolver una ruta, si hay una propiedad redirectTarget disponible como parte de la plantilla de la aplicación y el valor de redirectTarget se define como relativo. Cuando el proceso de creación de la aplicación encuentra un valor relativo para redirectTarget en la plantilla de la aplicación, el valor se anexa a la ubicación resuelta de donde se creó la aplicación.
+>El ***redirectTarget*** se calcula como parte de la operación de creación de aplicaciones e intenta resolver una ruta, si hay una propiedad redirectTarget disponible como parte de la plantilla de la aplicación, y el valor de redirectTarget se define como relativo. Cuando el proceso de creación de la aplicación encuentra un valor relativo para redirectTarget en la plantilla de la aplicación, el valor se anexa a la ubicación resuelta de donde se creó la aplicación.
 >
->Por ejemplo, si una plantilla de aplicación define un ***redirectTarget*** con el valor &quot;*language-masters/en*&quot; y la aplicación se creó en &quot;*/content/mobileapps/fooApp*&quot;, el valor final para redirectTarget después de crear la aplicación será &quot;*/content/mobileapps/fooApp/language-masters/es*&quot;.
+>Por ejemplo, si una plantilla de aplicación define un ***redirectTarget*** con un valor de &quot;*idioma-masters/en*&quot; y la aplicación se creó en &quot;*/content/mobileapps/fooApp*&quot;, el valor final de redirectTarget después de crear la aplicación será &quot;*/content/mobileapps/fooApp/language-masters/en*&quot;.
 
 
 ## Creación de plantillas de contenido {#creating-content-templates}
 
 Cada tipo de entidad tiene dos plantillas listas para usar. Estos son:
 
-* **** Plantillas predeterminadas: se utiliza para la creación de contenido con propiedades/estructura predeterminadas aplicables
-* **** Plantillas importadas: se utiliza para importar contenido de AEM Mobile con las propiedades/estructura predeterminadas aplicables
+* **Plantillas predeterminadas:** utilizadas para la creación de contenido con propiedades/estructura predeterminadas aplicables
+* **Plantillas importadas:** utilizadas para importar contenido de AEM Mobile con propiedades/estructura predeterminadas aplicables
 
 ### Plantillas de artículo {#article-templates}
 
-El artículo ilimitado es una plantilla de ejemplo que representa un diseño de artículo bajo demanda típico de AEM Mobile.
+El artículo ilimitado es una plantilla de ejemplo que representa un diseño típico de artículo bajo demanda de AEM Mobile.
 
-1. Haga clic en **+** en **Administrar artículos** para crear un nuevo artículo. Puede elegir un artículo **** ilimitado o un artículo **de texto** enriquecido. La siguiente imagen muestra la opción que le permite elegir entre cualquiera de estas dos plantillas de artículo.
+1. Haga clic en **+** en **Administrar artículos** para crear un nuevo artículo. Puede elegir un **Artículo ilimitado** o un **Artículo de texto enriquecido**. La siguiente imagen muestra la opción que le permite elegir entre cualquiera de estas dos plantillas de artículo.
 
-1. Haga clic en **Siguiente** para definir los metadatos del artículo, como Nombre o título del artículo, Descripción, Autor, Síntesis, Departamento, Imagen en miniatura, Acceso al artículo, etc.
+1. Haga clic en **Siguiente** para definir los metadatos del artículo, como Nombre/Título del artículo, Descripción, Autor, Síntesis, Departamento, Imagen en miniatura, Acceso al artículo, etc.
 1. Haga clic en **Siguiente** para completar las Propiedades del anuncio.
-1. Haga clic en **Siguiente** para introducir la imagen del artículo o la imagen de los medios sociales
-1. Haga clic en **Siguiente** para elegir un vínculo de colección a este nuevo artículo.
-1. Haga clic en **Siguiente** para introducir los detalles de uso compartido en redes sociales.
-1. Haga clic en **Crear** para finalizar el proceso de creación de un artículo con el ejemplo. Puede hacer clic en **Finalizado** o en **Editar artículo** para editar las propiedades de este artículo.
+1. Haga clic en **Siguiente** para introducir la imagen del artículo o la imagen de medios sociales
+1. Haga clic en **Siguiente** para elegir un vínculo de recopilación para este nuevo artículo.
+1. Haga clic en **Siguiente** para introducir los detalles del uso compartido en redes sociales.
+1. Haga clic en **Crear** para finalizar el proceso de creación de un artículo con el ejemplo. Puede hacer clic en **Listo** o **Editar artículo** para editar las propiedades de este artículo.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
-### Adición de componentes al artículo {#adding-components-to-article}
+### Añadir componentes en el artículo {#adding-components-to-article}
 
-Una vez creado, un autor puede editar el contenido de un artículo agregando componentes como texto e imágenes. Los artículos son una extensión de las plantillas de página de AEM.
+Una vez creado, un autor puede editar el contenido de un artículo agregando componentes como texto e imágenes. Los artículos son una extensión de AEM plantillas de página.
 
-Seleccione un artículo que desee editar y haga clic en **Editar** para agregar componentes al artículo.
+Seleccione un artículo, desee editarlo y haga clic en **Editar** para agregar componentes al artículo.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
-Elija &#39;**+**&#39; en el panel izquierdo para añadir componentes al artículo.
+Elija &#39;**+**&#39; en el panel izquierdo para agregar componentes al artículo.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
 ### Creación de plantillas integradas {#creating-out-of-the-box-templates}
 
-No hay plantillas de artículo integradas, pero hay una plantilla predeterminada que las plantillas personalizadas deben ampliarse. Consulte el ejemplo [de plantilla de](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)artículo de aplicación ilimitada de Geometrixx.
+No hay plantillas de artículo integradas, pero hay una plantilla predeterminada que las plantillas personalizadas deben ampliarse. Consulte la [muestra de plantilla de artículo](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) de la aplicación Geometrixx Unlimited.
 
-Entre las propiedades clave más allá de la plantilla normal de AEM se incluyen:
+Entre las propiedades clave más allá de la plantilla de AEM normal se incluyen:
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
-Esta propiedad garantiza que la página de AEM se reconozca como página de artículos con destino a AEM Mobile.
+Esta propiedad garantiza que la página de AEM se reconozca como una página de artículos con destino a AEM Mobile.
 
-Según las plantillas de AEM, puede añadir cualquier propiedad o nodo secundario predeterminados a ***jcr:content*** de la plantilla.
+Según AEM plantillas, puede agregar cualquier propiedad predeterminada o nodo secundario a la plantilla ***jcr:content***.
 
 ### Plantillas de pancarta y colección {#banner-and-collection-templates}
 
@@ -114,44 +117,44 @@ Según las plantillas de AEM, puede añadir cualquier propiedad o nodo secundari
 >
 >Los letreros y las colecciones no tienen contenido, por lo que su creación no admite plantillas personalizadas.
 
-## Creación y adición de componentes {#creating-and-adding-components}
+## Crear y Añadir componentes {#creating-and-adding-components}
 
 Los componentes utilizan y permiten el acceso a los widgets, que se utilizan para representar el contenido.
 
-Se incluye un componente sencillo en el repositorio de código, cuya fuente se encuentra en AEM. Posteriormente, también se puede abrir localmente en CRXDE Lite.
+Se incluye un componente simple en el repositorio de código, cuya fuente se encuentra en AEM. Posteriormente, también se puede abrir localmente en CRXDE Lite.
 
 >[!NOTE]
 >
->Actualmente no hay componentes integrados para AEM Mobile.
+>Actualmente no se proporcionan componentes listos para usar para AEM Mobile.
 
 
-Puede agregar componentes a la página. Es posible que cualquier componente se pueda utilizar en una aplicación de AEM Mobile pero, cuando se aplique, no se represente correctamente.
+Puede agregar componentes a la página. Cualquier componente se puede usar en una aplicación de AEM Mobile, pero al aplicarlo, puede que no se represente correctamente.
 
-Sin embargo, es posible que los componentes personalizados no exporten ni carguen correctamente a AEM Mobile On-Demand Services sin un controlador de sincronización de contenido de exportación personalizado que se procese en AEM.
+Sin embargo, es posible que los componentes personalizados no exporten ni carguen correctamente a AEM Mobile On-demand Services sin un controlador de sincronización de contenido de exportación personalizado que se procese en AEM.
 
-Una vez que el componente ya se haya incluido en una página de AEM, junto con otros componentes de bloque de creación, puede añadir otro componente a la página o editar uno existente.
+Una vez que el componente ya se haya incluido en una página AEM, junto con otros componentes de bloque de creación, puede agregar otro componente a la página o editar uno existente.
 
 **Para agregar otro componente a la página:**
 
 1. Elija esa página y asegúrese de que está en el modo de edición, mediante el menú desplegable en la parte superior derecha del encabezado del Editor
 1. Alternar el panel lateral con el icono situado más a la izquierda en el encabezado del Editor
-1. Select the **Components** tab
+1. Seleccione la ficha **Componentes**
 1. Arrastre y suelte uno de los componentes disponibles en la página
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
 **Para editar un componente existente:**
 
-1. Elija esa página y asegúrese de que se encuentra en el modo de **edición** y seleccione el componente
+1. Elija esa página y asegúrese de que está en el modo **Editar** y seleccione el componente
 1. Toque el icono de la llave inglesa para configurar el componente
 
 >[!NOTE]
 >
->Puede crear un componente en AEM y personalizarlo mediante [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Una vez que haya personalizado el componente existente como sus necesidades, puede agregarlo a la página mediante la opción **Editar** en **Administrar artículos** , como se muestra en la figura anterior.
+>Puede crear un componente en AEM y personalizarlo utilizando [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Una vez que haya personalizado el componente existente como sus necesidades, puede agregarlo a su página mediante la opción **Editar** en **Administrar artículos** como se muestra en la figura anterior.
 
 >[!NOTE]
 >
->Consulte Prácticas [recomendadas para el desarrollo](/help/mobile/best-practices-aem-mobile.md) de plantillas y componentes en AEM Mobile.
+>Consulte [Prácticas recomendadas para el desarrollo de plantillas y componentes](/help/mobile/best-practices-aem-mobile.md) en AEM Mobile.
 
 ### Pasos siguientes {#the-next-steps}
 
