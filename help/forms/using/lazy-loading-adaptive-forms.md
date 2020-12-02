@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Mejore el rendimiento de los formularios grandes con carga lenta{#improve-performance-of-large-forms-with-lazy-loading}
+# Mejorar el rendimiento de los formularios grandes con carga diferida{#improve-performance-of-large-forms-with-lazy-loading}
 
 ## Introducción a la carga diferida {#introduction-to-lazy-loading}
 
@@ -29,15 +29,18 @@ Primero comprendamos los requisitos y los pasos preparatorios antes de configura
 
 Antes de configurar la carga diferida de fragmentos en el formulario adaptable, es importante definir estrategias para crear fragmentos, identificar valores que se utilizan en secuencias de comandos o que se mencionan en otros fragmentos y definir reglas para controlar la visibilidad de los campos en fragmentos cargados de forma diferida.
 
-* **Identificar y crear fragmentos** Solo puede configurar fragmentos de formulario adaptables para la carga diferida. Un fragmento es un segmento independiente que reside fuera de un formulario adaptable y puede reutilizarse en todos los formularios. Por lo tanto, el primer paso para implementar la carga diferida es identificar las secciones lógicas de un formulario y convertirlas en fragmentos. Puede crear un fragmento desde cero o guardar un panel de formulario existente como fragmento.
+* **Identificar y crear**
+fragmentosSolo puede configurar fragmentos de formulario adaptables para la carga diferida. Un fragmento es un segmento independiente que reside fuera de un formulario adaptable y puede reutilizarse en todos los formularios. Por lo tanto, el primer paso para implementar la carga diferida es identificar las secciones lógicas de un formulario y convertirlas en fragmentos. Puede crear un fragmento desde cero o guardar un panel de formulario existente como fragmento.
 
-   Para obtener más información sobre la creación de fragmentos, consulte Fragmentos de formulario [adaptables](../../forms/using/adaptive-form-fragments.md).
+   Para obtener más información sobre la creación de fragmentos, consulte [Fragmentos de formulario adaptables](../../forms/using/adaptive-form-fragments.md).
 
-* **Identifique y marque valores globalesLas transacciones basadas en** Forms involucran elementos dinámicos para capturar datos relevantes de los usuarios y procesarlos para simplificar la experiencia de cumplimentación de formularios. Por ejemplo, el formulario tiene el campo A en el fragmento X, cuyo valor determina la validez del campo B en otro fragmento. En este caso, si el fragmento X está marcado para la carga diferida, el valor del campo A debe estar disponible para validar el campo B incluso cuando no se haya cargado el fragmento X. Para lograrlo, puede marcar el campo A como global, lo que garantiza que su valor esté disponible para validar el campo B cuando no se cargue el fragmento X.
+* **Identificar y marcar**
+valores globalesLas transacciones basadas en formularios implican elementos dinámicos para capturar datos relevantes de los usuarios y procesarlos para simplificar la experiencia de cumplimentación de formularios. Por ejemplo, el formulario tiene el campo A en el fragmento X, cuyo valor determina la validez del campo B en otro fragmento. En este caso, si el fragmento X está marcado para la carga diferida, el valor del campo A debe estar disponible para validar el campo B incluso cuando no se haya cargado el fragmento X. Para lograrlo, puede marcar el campo A como global, lo que garantiza que su valor esté disponible para validar el campo B cuando no se cargue el fragmento X.
 
-   Para obtener información sobre cómo convertir un valor de campo en global, consulte [Configuración de la carga](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)diferida.
+   Para obtener información sobre cómo convertir un valor de campo en global, consulte [Configuración de la carga diferida](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **Reglas de escritura para controlar la visibilidad de los campos** Forms incluye algunos campos y secciones que no se aplican a todos los usuarios y en todas las condiciones. Los autores y desarrolladores de Forms utilizan la visibilidad o las reglas de mostrar y ocultar para controlar su visibilidad en función de las entradas del usuario. Por ejemplo, el campo Dirección de oficina no se muestra a los usuarios que eligen Desempleado en el campo Estado de empleo de un formulario. Para obtener más información sobre la escritura de reglas, consulte [Uso del editor](../../forms/using/rule-editor.md)de reglas.
+* **Escribir reglas para controlar la visibilidad de**
+los camposLos formularios incluyen algunos campos y secciones que no son aplicables a todos los usuarios y en todas las condiciones. Los autores y desarrolladores de Forms utilizan la visibilidad o las reglas de mostrar y ocultar para controlar su visibilidad en función de las entradas del usuario. Por ejemplo, el campo Dirección de oficina no se muestra a los usuarios que eligen Desempleado en el campo Estado de empleo de un formulario. Para obtener más información sobre cómo escribir reglas, consulte [Uso del editor de reglas](../../forms/using/rule-editor.md).
 
    Puede aprovechar las reglas de visibilidad en los fragmentos cargados de forma diferida para que los campos condicionales solo se muestren cuando sean necesarios. Asimismo, marque el campo condicional global para hacer referencia a él en la expresión de visibilidad del fragmento cargado de forma diferida.
 
@@ -47,7 +50,7 @@ Siga estos pasos para activar la carga diferida en un fragmento de formulario ad
 
 1. Abra el formulario adaptable en modo de creación que contiene el fragmento que desea activar para la carga diferida.
 1. Seleccione el fragmento de formulario adaptable y toque ![cmppr](assets/cmppr.png).
-1. En la barra lateral, active **[!UICONTROL Cargar fragmento]** de forma diferida y toque **Listo**.
+1. En la barra lateral, habilite **[!UICONTROL Cargar fragmento de forma flotante]** y toque **Listo**.
 
    ![Habilitar la carga diferida para el fragmento de formulario adaptable](assets/lazy-loading-fragment.png)
 
@@ -56,19 +59,19 @@ Siga estos pasos para activar la carga diferida en un fragmento de formulario ad
 Puede marcar los valores de los objetos en el fragmento cargado de forma diferida como globales para que estén disponibles en secuencias de comandos cuando no se cargue el fragmento que los contiene. Haga lo siguiente:
 
 1. Abra el fragmento de formulario adaptable en modo de creación.
-1. Puntee en el campo cuyo valor desee marcar como global y, a continuación, toque ![cmppr](assets/cmppr.png).
-1. En la barra lateral, active **Usar valor durante la carga** diferida.
+1. Toque el campo cuyo valor desee marcar como global y, a continuación, toque ![cmppr](assets/cmppr.png).
+1. En la barra lateral, habilite **Usar valor durante la carga diferida**.
 
    ![Campo de carga diferido en la barra lateral](assets/enable-lazy-loading.png)
 
    El valor ahora está marcado como global y estará disponible para su uso en secuencias de comandos incluso cuando se descargue el fragmento que lo contiene.
 
-## Consideraciones y prácticas recomendadas para configurar la carga lenta {#considerations-and-best-practices-for-configuring-lazy-loading}
+## Consideraciones y prácticas recomendadas para configurar la carga diferida {#considerations-and-best-practices-for-configuring-lazy-loading}
 
 Algunas limitaciones, recomendaciones y puntos importantes que hay que tener en cuenta al trabajar con la carga diferida son las siguientes:
 
 * Se recomienda utilizar formularios adaptables basados en esquema XSD en formularios adaptables basados en XFA para configurar la carga diferida en formularios grandes. El aumento de rendimiento debido a la implementación de carga lenta en formularios adaptables basados en XFA es relativamente menor que ganancia en formularios adaptables basados en XSD.
-* No configure la carga diferida en fragmentos en un formulario adaptable que utilicen **[!UICONTROL Responsivo -todo en una página sin presentación de navegación]** para el panel raíz. Como resultado de la configuración de diseño interactivo, todos los fragmentos se cargan simultáneamente en un formulario adaptable. También puede provocar una degradación del rendimiento.
+* No configure la carga diferida en fragmentos en un formulario adaptable que utilice **[!UICONTROL Responsivo -todo en una página sin el diseño de navegación]** para el panel raíz. Como resultado de la configuración de diseño interactivo, todos los fragmentos se cargan simultáneamente en un formulario adaptable. También puede provocar una degradación del rendimiento.
 * Se recomienda no configurar la carga diferida en fragmentos en el primer panel que se procesa al cargar el formulario adaptable.
 * La carga diferida se admite hasta dos niveles en la jerarquía de fragmentos.
 * Asegúrese de que los campos marcados como globales son únicos en un formulario adaptable.
