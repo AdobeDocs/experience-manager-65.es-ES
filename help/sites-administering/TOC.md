@@ -18,7 +18,7 @@ ht-degree: 17%
 # Guía del usuario de administración de AEM 6.5 {#administering}
 
 + [Información general sobre la Guía del usuario de administración](home.md)
-+ Funciones del sitio {#introduction}
++ Características del sitio {#introduction}
    + [Administración de sitios web](msm-and-translation.md) 
    + [Trabajos asincrónicos](asynchronous-jobs.md)
    + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
@@ -149,14 +149,14 @@ ht-degree: 17%
    + [Integración con el Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuración manual de la integración con Adobe Target](target-configuring.md)
    + [Requisitos previos para la integración con Adobe Target](target-requirements.md)
-   + [Integración con Adobe Target mediante E/S de Adobe](integration-ims-adobe-io.md)
+   + [Integración con Adobe Target mediante Adobe I/O](integration-ims-adobe-io.md)
    + [Clasificaciones de Adobes](adobeanalytics-classifications.md)
    + [Integración con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integración de soluciones](integration.md)
    + [Exportación de fragmentos de experiencia a Adobe Target](experience-fragments-target.md)
    + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
    + [Integración con Livefyre](livefyre.md)
-+ Prácticas recomendadas   {#bestpractices}
++ Prácticas recomendadas    {#bestpractices}
    + [Prácticas recomendadas  ](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)
    + [Prácticas recomendadas de MSM](msm-best-practices.md)
