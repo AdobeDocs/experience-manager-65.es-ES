@@ -1,6 +1,6 @@
 ---
 title: Estado de la función de IU táctil
-description: Notas de la versión específicas [!DNL Adobe Experience Manager] de la IU táctil.
+description: Notas de la versión específicas de [!DNL Adobe Experience Manager] IU táctil.
 translation-type: tm+mt
 source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
 workflow-type: tm+mt
@@ -12,19 +12,19 @@ ht-degree: 14%
 
 # Estado de la función de IU táctil {#touch-ui-feature-status}
 
-A partir de AEM 6.4, la IU [clásica está en desuso](../release-notes/deprecated-removed-features.md). Adobe no realizará más mejoras en la IU clásica y se recomienda a los usuarios que aprovechen las nuevas y potentes funciones disponibles en la IU táctil.
+A partir de AEM 6.4, la [IU clásica está en desuso](../release-notes/deprecated-removed-features.md). Adobe no realizará más mejoras en la IU clásica y se recomienda a los usuarios que aprovechen las nuevas y potentes funciones disponibles en la IU táctil.
 
-A partir de la versión 6.0, AEM una nueva interfaz de usuario denominada &quot;IU táctil&quot; (simplemente denominada &quot;IU táctil&quot;) que se alinea con las directrices generales de la interfaz de usuario de Adobe [!DNL Adobe Experience Cloud] y con ellas. Al alcanzarse casi la paridad de funciones, esta se ha convertido en la IU estándar en AEM con la interfaz heredada orientada al escritorio denominada &quot;IU clásica&quot;.
+A partir de la versión 6.0, AEM ha introducido una nueva interfaz de usuario denominada &quot;IU táctil&quot; (denominada simplemente &quot;IU táctil&quot;) que se alinea con [!DNL Adobe Experience Cloud] y con las directrices generales de la interfaz de usuario de Adobe. Al alcanzarse casi la paridad de funciones, esta se ha convertido en la IU estándar en AEM con la interfaz heredada orientada al escritorio denominada &quot;IU clásica&quot;.
 
 Aunque la mayoría de las funciones están presentes en la IU táctil, hay funciones que aún no se han completado y que se añadirán en versiones futuras.
 
 La siguiente lista muestra el estado actual de las capacidades tal como se implementaron en la AEM 6.5.
 
-Para obtener recomendaciones para clientes que actualizan a AEM 6.5, consulte Recomendaciones de interfaz [de usuario para clientes](/help/sites-deploying/ui-recommendations.md).
+Para obtener recomendaciones para clientes que actualizan a AEM 6.5, consulte [Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
->Esta página solo cubre la paridad de funciones con la IU clásica. Las funciones añadidas a la IU táctil y únicas que no están presentes en la IU clásica no aparecen en la lista.
+>Esta página solo cubre la paridad de funciones con la IU clásica. Las funciones añadidas y exclusivas a la IU táctil que no están presentes en la IU clásica no aparecen en la lista.
 
 >[!NOTE]
 >
@@ -40,11 +40,11 @@ Para obtener recomendaciones para clientes que actualizan a AEM 6.5, consulte Re
 
 ## Estado de la función: Administración de sitios {#feature-status-sites-admin}
 
-Es una lista de las funciones que tiene el administrador del sitio (`/siteadmin`) de la IU clásica y del estado en la IU táctil (`/sites.html`).
+Es una lista de las funciones que tiene la IU clásica Administración de sitios (`/siteadmin`) y el estado en la IU táctil (`/sites.html`).
 
 | Función | Estado | Comentario |
 |--- |--- |--- |
-| Navegar por la jerarquía del sitio | Completar | AEM 6.4 introdujo una vista [de árbol de](/help/sites-authoring/basic-handling.md#content-tree)contenido. |
+| Navegar por la jerarquía del sitio | Completar | AEM 6.4 introdujo una [vista de árbol de contenido](/help/sites-authoring/basic-handling.md#content-tree). |
 | Iniciar flujo de trabajo | Completar |  |
 | Crear nueva página | Completar |  |
 | Crear nuevo sitio | Completar |  |
@@ -78,7 +78,7 @@ Es una lista de las funciones que tiene el administrador del sitio (`/siteadmin`
 
 ## Estado de la función: Editor de páginas {#feature-status-page-editor}
 
-Es una lista de las funciones que tiene el Editor de páginas de la IU clásica (`/cf#`) y el estado en la IU táctil (`/editor.html`).
+Esta es una lista de las funciones que tiene el Editor de páginas de la IU clásica (`/cf#`) y el estado en la IU táctil (`/editor.html`).
 
 | Función | Estado | Comentario |
 |--- |--- |--- |
@@ -106,15 +106,15 @@ Es una lista de las funciones que tiene el Editor de páginas de la IU clásica 
 | Copiar página | Eliminado | Utilice Administración del sitio para [copiar páginas](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Mover página | Eliminado | Utilice Administración del sitio para [mover páginas](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | Eliminar página | Eliminado | Utilice Administración del sitio para [eliminar páginas](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| Mostrar referencias | Eliminado | Utilice Administración del sitio para ver la lista [de referencia](/help/sites-authoring/author-environment-tools.md#references)detallada. |
-| Registro de auditorías | Eliminado | Utilice Administración del sitio y [abra el carril](/help/sites-authoring/author-environment-tools.md#events-timeline)de actividad. |
+| Mostrar referencias | Eliminado | Use Administración del sitio para ver la [lista de referencia detallada](/help/sites-authoring/author-environment-tools.md#references). |
+| Registro de auditorías | Eliminado | Utilice Administración del sitio y [carril de actividad abierto](/help/sites-authoring/author-environment-tools.md#events-timeline). |
 | Crear versión | Eliminado | Utilice Administración del sitio para [crear nuevas versiones](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
 | Restaurar versión | Eliminado | Utilice Administración del sitio para [restaurar versiones](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
 | Interruptores de inicio | Eliminado | Utilice Administración del sitio para [cambiar entre inicios](/help/sites-authoring/launches-promoting.md). |
-| Traducir página | Eliminado | Utilice Administración del sitio para [agregar páginas a los proyectos](/help/sites-administering/tc-manage.md)de traducción. |
+| Traducir página | Eliminado | Utilice Administración del sitio para [agregar página a proyectos de traducción](/help/sites-administering/tc-manage.md). |
 | Deformación de tiempo (elija la fecha y hora y el sitio de navegación tal y como se vio a continuación) | Completar |  |
 | Definir permisos | Completar |  |
-| Interfaz de usuario de ClientContext | Reemplazado | Utilice la interfaz de usuario de [ContextHub](/help/sites-authoring/ch-previewing.md) en adelante. |
+| Interfaz de usuario de ClientContext | Reemplazado | Utilice la interfaz de usuario [ContextHub](/help/sites-authoring/ch-previewing.md) a partir de ahora. |
 | Buscador de contenido para los distintos tipos de medios | Completar |  |
 | Lista de componentes | Completar |  |
 | Copiar y pegar componentes | Completar |  |
@@ -130,7 +130,7 @@ Es una lista de las funciones que tienen el texto, la tabla y el editor de imág
 | Función | Estado | Comentario |
 |--- |--- |--- |
 | Editor de texto enriquecido | Completar | Se puede utilizar in-situ, en cuadro de diálogo y en pantalla completa. |
-| Habilitar/deshabilitar complementos RTE | Completar | Se puede realizar con el Editor [de plantillas](/help/sites-authoring/templates.md). |
+| Habilitar/deshabilitar complementos RTE | Completar | Se puede hacer con el [Editor de plantillas](/help/sites-authoring/templates.md). |
 | Usar RTE para texto sin formato | Completar |  |
 | Complemento RTE: Vínculos y anclaje | Completar |  |
 | Complemento RTE: Mapa de caracteres | Completar |  |
@@ -151,7 +151,7 @@ Es una lista de las funciones que tienen el texto, la tabla y el editor de imág
 | Editor de tablas | Completar | Se puede utilizar in-situ, en cuadro de diálogo y en pantalla completa. |
 | Arrastrar imagen a celda de tabla | Completar | Utilizable en línea |
 | Editor de imágenes | Completar | Se puede utilizar in-situ, en cuadro de diálogo y en pantalla completa. |
-| Habilitar/deshabilitar complementos IPE | Completar | AEM 6.3 ha introducido una interfaz de usuario en el Editor [de plantillas](/help/sites-authoring/templates.md). |
+| Habilitar/deshabilitar complementos IPE | Completar | AEM 6.3 introdujo una interfaz de usuario en el [Editor de plantillas](/help/sites-authoring/templates.md). |
 | Complemento IPE: Recortar | Completar |  |
 | Complemento IPE: Voltear | Completar |  |
 | Complemento IPE: Deshacer/Rehacer | Completar |  |
