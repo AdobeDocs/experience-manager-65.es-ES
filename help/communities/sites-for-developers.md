@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Elementos esenciales del sitio de la comunidad {#community-site-essentials}
+# Community Site Essentials {#community-site-essentials}
 
 ## Plantilla de sitio personalizada {#custom-site-template}
 
@@ -29,7 +29,7 @@ Para ello:
 * Cree una plantilla personalizada.
 * Superponga la ruta de la plantilla de sitio predeterminada.
 * Añada la plantilla personalizada en la ruta de superposición.
-* Especifique la plantilla personalizada agregando una `page-template` propiedad al `configuration` nodo.
+* Especifique la plantilla personalizada agregando una propiedad `page-template` al nodo `configuration`.
 
 **Plantilla** predeterminada:
 
@@ -43,7 +43,7 @@ Para ello:
 
 **Tipo**: Cadena
 
-**Valor**: `template-name` (sin extensión)
+**Valor**:  `template-name` (sin extensión)
 
 **Nodo** de configuración:
 
@@ -53,7 +53,7 @@ Por ejemplo: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Todos los nodos de la ruta superpuesta solo deben ser de tipo `Folder`.
+>Todos los nodos de la ruta superpuesta sólo deben ser del tipo `Folder`.
 
 >[!CAUTION]
 >
@@ -61,19 +61,20 @@ Por ejemplo: `/content/sites/engage/en/configuration`
 
 ### Ejemplo de plantilla de sitio personalizada {#custom-site-template-example}
 
-Por ejemplo, `vertical-sitepage.hbs` es una plantilla de sitio que resulta en la colocación de vínculos de menú verticalmente hacia abajo en el lado izquierdo de la página, en lugar de horizontalmente debajo de la pancarta.
+Como ejemplo, `vertical-sitepage.hbs` es una plantilla de sitio que resulta en la colocación de vínculos de menú verticalmente en el lado izquierdo de la página, en lugar de horizontalmente debajo del titular.
 
-[Obtener archivo](assets/vertical-sitepage.hbs)Coloque la plantilla de sitio personalizada en la carpeta de superposiciones:
+[Obtener ](assets/vertical-sitepage.hbs)
+archivoColoque la plantilla de sitio personalizada en la carpeta de superposiciones:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identifique la plantilla personalizada agregando una `page-template` propiedad al nodo de configuración:
+Identifique la plantilla personalizada agregando una propiedad `page-template` al nodo de configuración:
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Asegúrese de **guardar todo** y replicar código personalizado en todas las instancias de AEM (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
+Asegúrese de **Guardar todo** y replicar código personalizado en todas las instancias de AEM (el código personalizado no se incluye cuando el contenido del sitio de comunidad se publica desde la consola).
 
 La práctica recomendada para replicar código personalizado es [crear un paquete](../../help/sites-administering/package-manager.md#creating-a-new-package) e implementarlo en todas las instancias.
 
@@ -81,15 +82,15 @@ La práctica recomendada para replicar código personalizado es [crear un paquet
 
 Una vez creado un sitio de comunidad, es posible exportar el sitio como paquete de AEM almacenado en el administrador de paquetes y disponible para su descarga y carga.
 
-Esta opción está disponible en la consola Sitios de [comunidades](sites-console.md#exporting-the-site).
+Esto está disponible en la consola [Sitios de comunidades](sites-console.md#exporting-the-site).
 
 Tenga en cuenta que UGC y el código personalizado no se incluyen en el paquete del sitio de la comunidad.
 
-Para exportar UGC, utilice la herramienta [de migración UGC de](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, una herramienta de migración de código abierto disponible en GitHub.
+Para exportar UGC, utilice la [Herramienta de migración UGC de AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), una herramienta de migración de código abierto disponible en GitHub.
 
 ## Eliminación de un sitio de comunidad {#deleting-a-community-site}
 
-A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece al pasar el ratón sobre el sitio de la comunidad desde la consola **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]** . Durante el desarrollo, si desea eliminar un sitio de comunidad y un inicio nuevo, puede utilizar esta funcionalidad. Al eliminar un sitio de comunidad, se eliminan los siguientes elementos asociados con dicho sitio:
+A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece al pasar el ratón por encima del sitio de la comunidad desde la consola **[!UICONTROL Communities]** > **[!UICONTROL Sites]**. Durante el desarrollo, si desea eliminar un sitio de comunidad y un inicio nuevo, puede utilizar esta funcionalidad. Al eliminar un sitio de comunidad, se eliminan los siguientes elementos asociados con dicho sitio:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuarios](#community-user-groups)
@@ -100,17 +101,17 @@ A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece 
 
 Para identificar la ID única del sitio asociada con el sitio de la comunidad, utilice CRXDE:
 
-* Navegue hasta la raíz de idioma del sitio, por ejemplo `/content/sites/*<site name>*/en/rep:policy`.
+* Navegue hasta la raíz de idioma del sitio, como `/content/sites/*<site name>*/en/rep:policy`.
 
-* Busque el `allow<#>` nodo con un `rep:principalName` en este formato `rep:principalName = *community-enable-nrh9h-members*`.
+* Busque el nodo `allow<#>` con un `rep:principalName` en este formato `rep:principalName = *community-enable-nrh9h-members*`.
 
 * La ID del sitio es el tercer componente de `rep:principalName`
 
    Por ejemplo, si `rep:principalName = community-enable-nrh9h-members`
 
-   * **nombre** del sitio = *habilitar*
-   * **ID** del sitio = *nrh9h*
-   * **ID** de sitio único = *enable-nrh9h*
+   * **site name** =  *enable*
+   * **ID**  del sitio=  *nrh9h*
+   * **ID**  de sitio único=  *enable-nrh9h*
 
 ### Contenido generado por el usuario {#user-generated-content}
 
@@ -124,14 +125,14 @@ Se puede eliminar todo el contenido generado por usuarios o para un sitio espec�
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Esto solo elimina el contenido generado por el usuario (introducido en la publicación) y no el contenido creado (introducido en el autor). Por lo tanto, los nodos [de](srp.md#shadownodes) sombra no se ven afectados.
+Esto solo elimina el contenido generado por el usuario (introducido en la publicación) y no el contenido creado (introducido en el autor). Por lo tanto, [nodos de sombra](srp.md#shadownodes) no se ven afectados.
 
 ### Grupos de usuarios de la comunidad {#community-user-groups}
 
-En todas las instancias de creación y publicación, desde la consola [de](../../help/sites-administering/security.md)seguridad, busque y elimine los grupos [de](users.md) usuarios que:
+En todas las instancias de creación y publicación, desde la [consola de seguridad](../../help/sites-administering/security.md), busque y elimine los [grupos de usuarios](users.md) que son:
 
 * Prefijo con `community`
-* Seguido por una ID de sitio [única](#community-unique-site-id)
+* Seguido por [identificación única del sitio](#community-unique-site-id)
 
 Por ejemplo, `community-engage-x0e11-members`.
 
@@ -139,10 +140,10 @@ Por ejemplo, `community-engage-x0e11-members`.
 
 Desde la consola principal:
 
-* Select **[!UICONTROL Assets]**.
-* Introduzca el modo **[!UICONTROL Seleccionar]** .
-* Seleccione la carpeta con el nombre del ID [de sitio](#community-unique-site-id)único.
-* Seleccione **[!UICONTROL Eliminar]** (puede que sea necesario seleccionar de **[!UICONTROL Más...]**).
+* Seleccione **[!UICONTROL Recursos]**.
+* Introduzca el modo **[!UICONTROL Seleccionar]**.
+* Seleccione la carpeta con el [identificador único del sitio](#community-unique-site-id).
+* Seleccione **[!UICONTROL Eliminar]** (puede que necesite seleccionar entre **[!UICONTROL Más...]**).
 
 ### Registros de base de datos {#database-records}
 
