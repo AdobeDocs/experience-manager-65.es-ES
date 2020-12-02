@@ -1,30 +1,30 @@
 ---
-title: Guía del usuario de funciones de AEM 6.5
-seo-title: Guía del usuario de funciones de AEM 6.5
-description: Información general sobre las funciones esenciales de AEM 6.5
-seo-description: Información general sobre las funciones esenciales de AEM 6.5
+title: Guía del usuario de capacidades de AEM 6.5
+seo-title: Guía del usuario de capacidades de AEM 6.5
+description: Una visión general de las capacidades esenciales de la AEM 6.5
+seo-description: Una visión general de las capacidades esenciales de la AEM 6.5
 translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 45%
 
 ---
 
 
-# Guías del usuario de funciones de AEM 6.5 {#aem-65-capabilities-user-guides}
+# AEM 6.5 Capacidades Guías del usuario {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida la implementación en la nube de Adobes Managed Services.
+[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida la implementación en la nube de Adobe Managed Services.
 
-[Obtenga información sobre cómo administrar un proyecto](/help/managing/home.md)de AEM.
+[Obtenga información sobre cómo administrar un proyecto de AEM](/help/managing/home.md).
 
 ## AEM Sites {#aem-sites}
 
-[Aprenda conceptos clave para crear contenido y crear contenido en AEM](/help/sites-authoring/home.md).
+[Aprenda conceptos clave para crear contenido en AEM](/help/sites-authoring/home.md).
 
-[Obtenga información sobre la administración de AEM](/help/sites-administering/home.md).
+[Obtenga más información sobre la administración de AEM](/help/sites-administering/home.md).
 
 ## AEM Assets {#aem-assets}
 
