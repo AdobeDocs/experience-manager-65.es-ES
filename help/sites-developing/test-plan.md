@@ -12,6 +12,9 @@ discoiquuid: 82b8a5f4-583b-47ba-9579-b47364b56aa2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: da08613be784f43ad3e3c3652b7e015640a48a9d
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ En algún momento puede asignar el equipo de prueba adecuado o una persona de pr
 
 **Resumen o Información general**
 
-Para los informes, debe proporcionar una visión general de los resultados de la prueba:
+Para fines de sistema de informes, debe proporcionar una descripción general de los resultados de la prueba:
 
 * Porcentaje de pruebas ya cubiertas.
 * Porcentaje de éxito/error.
