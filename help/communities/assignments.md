@@ -12,20 +12,23 @@ discoiquuid: 2de88b55-dda9-4ccf-ad4d-dd67943ef610
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 1%
 
 ---
 
 
-# Función Asignaciones {#assignments-feature}
+# Función de asignaciones {#assignments-feature}
 
-Los componentes Asignaciones de habilitación y Catálogo [de](/help/communities/catalog.md) habilitación que se encuentran en el grupo Comunidades en el navegador de componentes son componentes de una comunidad [de](/help/communities/overview.md#enablement-community)habilitación.
+Los componentes Asignaciones de habilitación y [Catálogo de habilitación](/help/communities/catalog.md) que se encuentran en el grupo Comunidades en el navegador de componentes son componentes de una [comunidad de habilitación](/help/communities/overview.md#enablement-community).
 
-El componente Asignaciones de habilitación permite que el miembro de la comunidad que ha iniciado sesión (alumno) acceda a los recursos [de](/help/communities/resources.md)habilitación asignados.
+El componente Asignaciones de habilitación permite que el miembro de la comunidad que ha iniciado sesión (alumno) acceda a los [recursos de habilitación](/help/communities/resources.md) asignados.
 
-En el tutorial [Introducción a Comunidades de AEM para la habilitación](/help/communities/getting-started-enablement.md) , consulte la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio](/help/communities/enablement-published-site.md) publicado.
+En el tutorial [Introducción a AEM Communities para habilitar](/help/communities/getting-started-enablement.md), vea la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio publicado](/help/communities/enablement-published-site.md).
 
 ## Información adicional {#additional-information}
 
-Para obtener más información, consulte la página [Asignaciones esenciales](/help/communities/essentials-assignments.md) para desarrolladores.
+Para obtener más información, consulte la página [Assignments Essentials](/help/communities/essentials-assignments.md) para desarrolladores.
 
-La función [](/help/communities/functions.md#assignments-function) asignaciones está disponible al crear un sitio [de](/help/communities/sites-console.md)comunidad.
+La [función de asignaciones](/help/communities/functions.md#assignments-function) está disponible al crear un [sitio de comunidad](/help/communities/sites-console.md).
