@@ -1,6 +1,6 @@
 ---
-title: 'AEM Mobile: preparación para RGPD'
-seo-title: 'AEM Mobile: preparación para RGPD'
+title: AEM Mobile - Preparación para RGPD
+seo-title: AEM Mobile - Preparación para RGPD
 description: nulo
 seo-description: nulo
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
@@ -8,11 +8,14 @@ contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 translation-type: tm+mt
 source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+workflow-type: tm+mt
+source-wordcount: '694'
+ht-degree: 1%
 
 ---
 
 
-# AEM Mobile: preparación para RGPD {#aem-mobile-gdpr-readiness}
+# AEM Mobile - Preparación para RGPD {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -20,19 +23,19 @@ source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
 
 ## Compatibilidad con GDPR de AEM Mobile {#aem-mobile-gdpr-support}
 
-AEM Mobile está listo para ayudar a los clientes con sus obligaciones de cumplimiento de GDPR. No se almacenan datos personales en AEM Mobile. Si está aprovisionado, puede iniciar sesión en Adobe Experience Mobile con su Adobe ID.
+AEM Mobile está preparado para ayudar a los clientes con sus obligaciones de cumplimiento de RGPD. No se almacenan datos personales en AEM Mobile. Si está aprovisionado, puede iniciar sesión en Adobe Experience Mobile con su Adobe ID.
 
 [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html)
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-El producto de publicación digital de Adobe (que precede a AEM Mobile) es compatible con las iniciativas de preparación para el RGPD de Adobe. Consulte [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). A continuación se proporcionan detalles específicos sobre la compatibilidad con las funciones relevantes del RGPD en el producto de Digital Publishing Suite, incluida la forma de trabajar con Adobe para iniciar solicitudes del RGPD.
+El producto de publicación digital de Adobe (que precede a AEM Mobile) admite las iniciativas de preparación para RGPD de Adobe. Consulte [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). A continuación se proporcionan detalles específicos sobre la compatibilidad con las funciones relevantes del RGPD en el producto de Digital Publishing Suite, incluida la forma de trabajar con Adobe para iniciar solicitudes del RGPD.
 
-Para asegurarse de que no confunde AEM Mobile con el producto anterior de Digital Publishing Suite, puede iniciar sesión en el producto de Digital Publishing Suite aquí:
+Para asegurarse de que no confunde a AEM Mobile con el producto anterior de Digital Publishing Suite, puede iniciar sesión en el producto de Digital Publishing Suite aquí:
 
 [https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
-### Inicio de una solicitud de RGPD {#initiating-a-gdpr-request}
+### Iniciando una solicitud de RGPD {#initiating-a-gdpr-request}
 
 Póngase en contacto con el servicio de atención al cliente de Adobe para iniciar una solicitud de RGPD para Digital Publishing Suite.
 
@@ -48,15 +51,15 @@ Proporcione al menos 1 de los siguientes datos:
 * Para los usuarios de la aplicación de Windows, el ID de App Store del usuario final: *dpsc-windowsAppStoreId*
 * La dirección de correo electrónico que el usuario final utilizó para interactuar con la aplicación de DPS: *correo electrónico*
 
-### Preguntas más frecuentes {#frequently-asked-questions-faq}
+### Preguntas más frecuentes (FAQ) {#frequently-asked-questions-faq}
 
-**¿Adobe eliminará mis compras de App Store al iniciar una solicitud de ELIMINACIÓN?**
+**¿Eliminará Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
 
-Adobe eliminará la información que tiene de las compras de App Store (suscripciones, etc.) pero las compras seguirán registrándose en las tiendas de aplicaciones. Si la aplicación (usuario final) ha iniciado sesión en el App Store, esos recibos se recuperarán y se enviarán de nuevo a Adobe y, posteriormente, se considerarán nuevas compras y la aplicación los restaurará para que tengan acceso de nuevo.
+El Adobe eliminará la información que tiene de las compras de App Store (suscripciones, etc.) pero las compras seguirán registrándose en las tiendas de aplicaciones. Si la aplicación (usuario final) ha iniciado sesión en el App Store, esos recibos se recuperarán de nuevo y se enviarán a Adobe y, posteriormente, se considerarán nuevas compras y la aplicación los restaurará para tener acceso de nuevo.
 
-**¿Adobe eliminará los derechos proporcionados por el cliente al iniciar una solicitud de ELIMINACIÓN?**
+**¿Adobe eliminará los derechos proporcionados por el cliente al iniciar una solicitud de DELETE?**
 
-Adobe eliminará la información que tiene de las asignaciones de asignación de derechos directas adicionales del cliente. Si la aplicación (usuario final) inicia sesión en el mecanismo OAuth que ha utilizado el cliente, enviará información a Adobe y los servicios recogerán los derechos adicionales de nuevo.
+Adobe eliminará la información que tiene de las asignaciones de asignación directa de derechos adicionales del cliente. Si la aplicación (usuario final) inicia sesión en el mecanismo de OAuth que ha utilizado el cliente, enviará información a Adobe y los servicios recogerán los derechos adicionales de nuevo.
 
 **¿Qué se espera del usuario final?**
 
