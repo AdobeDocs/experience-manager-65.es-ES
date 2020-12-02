@@ -43,7 +43,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 >[!NOTE]
 >
->Los inicios rápidos ubicados en Programación con formularios AEM se basan en el servidor Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+>Los inicios rápidos ubicados en Programación con formularios AEM se basan en el servidor Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ El siguiente ejemplo de Java implementa un componente basado en un archivo JAR d
 
 ## Inicio rápido (modo SOAP): Configuración del contexto de ejecución de un servicio mediante la API de Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-El siguiente ejemplo de código Java establece el contexto de ejecución de Run-As Invoker en un servicio de ejemplo llamado *EncryptDocument*.
+El siguiente ejemplo de código Java establece el contexto de ejecución de Run-As Invoker en un servicio de ejemplo denominado *EncryptDocument*.
 
 ```java
  /* 
@@ -414,7 +414,7 @@ El siguiente ejemplo de código Java inicio un servicio llamado *SendEmailServic
  
 ```
 
-## Inicio rápido (modo SOAP): Modificación de los valores de configuración de servicios mediante la API de Java {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
+## Inicio rápido (modo SOAP): Modificación de valores de configuración de servicios mediante la API de Java {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
 
 El siguiente ejemplo de Java modifica los valores de configuración que pertenecen a SendEmail Service.
 
