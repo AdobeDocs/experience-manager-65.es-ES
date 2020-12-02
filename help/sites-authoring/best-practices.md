@@ -1,6 +1,6 @@
 ---
-title: Prácticas recomendadas
-seo-title: Prácticas recomendadas
+title: 'Prácticas recomendadas  '
+seo-title: 'Prácticas recomendadas  '
 description: Cómo utilizar AEM del modo más eficiente y efectivo posible
 seo-description: Cómo utilizar AEM del modo más eficiente y efectivo posible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 83%
 
 ---
 
 
-# Prácticas recomendadas{#best-practices}
+# Prácticas recomendadas  {#best-practices}
 
 Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 
 Existe documentación sobre prácticas recomendadas en relación con las áreas siguientes:
 
-* [Recursos](#assets)
-* [Sitios](#sites)
-* [Formularios](#forms)
+* [Assets](#assets)
+* [Sites](#sites)
+* [Forms](#forms)
 
 Para conocer las prácticas recomendadas sobre administración, implementación y mantenimiento o desarrollo, consulte uno de estos documentos:
 
@@ -33,7 +36,7 @@ Para conocer las prácticas recomendadas sobre administración, implementación 
 
 Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
-## Recursos {#assets}
+## Assets {#assets}
 
 Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
 
@@ -62,7 +65,7 @@ Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic M
  </tbody>
 </table>
 
-## Sitios {#sites}
+## Sites {#sites}
 
 Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
 
@@ -71,7 +74,7 @@ Para administrar y crear contenido en un sitio web, hay que seguir estas prácti
 | Herramientas de creación | [Entorno y herramientas de creación](/help/sites-authoring/author-environment-tools.md) | Proporciona información general sobre las herramientas utilizadas para crear páginas. |
 | Organización de páginas | [Crear y organizar páginas](/help/sites-authoring/managing-pages.md) | Proporciona información general sobre cómo organizar mejor las páginas, incluidas las convenciones de nombres. |
 
-## Formularios {#forms}
+## Forms {#forms}
 
 |  |  |  |
 |---|---|---|
