@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 0%
 
 ---
 
@@ -18,12 +21,12 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 La opción Guardar como borrador guarda una instantánea de una tarea o formulario junto con los datos rellenados en el formulario asociado. También puede crear un borrador a partir de una plantilla. Los borradores se guardan en el dispositivo móvil y se sincronizan con el servidor de Adobe Experience Manager Forms para una recuperación posterior.
 
-Puede [actualizar el formulario](/help/forms/using/working-with-form.md), [anotarlo](/help/forms/using/add-attachments.md) con fotografías y garabatear notas. A medida que continúa actualizando un formulario, se recomienda guardarlo como borrador. En el caso de situaciones en las que decida enviar un formulario rellenado más adelante, es útil guardarlo como borrador.
+Puede [actualizar el formulario](/help/forms/using/working-with-form.md), [anotarlo](/help/forms/using/add-attachments.md) con fotografías y garabatos. A medida que continúa actualizando un formulario, se recomienda guardarlo como borrador. En el caso de situaciones en las que decida enviar un formulario rellenado más adelante, es útil guardarlo como borrador.
 
-Para activar la función Guardar como borrador en formularios guardados en el portal de formularios, consulte [Guardar un formulario HTML5 como borrador](/help/forms/using/saving-html5-form-draft.md).
-Para configurar el envío de formularios adaptables, consulte el componente [](/help/forms/using/draft-submission-component.md)Borradores y envíos. (No válido para formularios sincronizados con el servidor JEE de AEM Forms).
+Para habilitar la función Guardar como borrador para formularios guardados en el portal de formularios, consulte [Guardado de un formulario HTML5 como borrador](/help/forms/using/saving-html5-form-draft.md).
+Para configurar el envío de formularios adaptables, consulte [Componente Borradores y envíos](/help/forms/using/draft-submission-component.md). (No válido para formularios sincronizados con el servidor JEE de AEM Forms).
 
-Para crear un borrador, abra el formulario y toque **Guardar como borrador** para ![guardar como borrador](assets/save-as-draft.png). Proporcione el nombre del borrador y toque **Guardar**. El borrador se guarda en la carpeta Borradores y se sincroniza con el servidor. Se guarda en la carpeta Bandeja de salida si la aplicación está sin conexión.
+Para crear un borrador, abra el formulario y toque **Guardar como borrador** ![guardar como borrador](assets/save-as-draft.png). Proporcione el nombre del borrador y toque **Guardar**. El borrador se guarda en la carpeta Borradores y se sincroniza con el servidor. Se guarda en la carpeta Bandeja de salida si la aplicación está sin conexión.
 
 Si actualiza el formulario correspondiente posteriormente, los cambios se reflejan inmediatamente. Al sincronizar la aplicación de AEM Forms con el servidor de AEM Forms, el borrador se carga en el servidor de AEM Forms. Además, el borrador se mueve de la Bandeja de salida a la carpeta Tareas o Borradores. Aparece un icono de edición junto a él.
 
@@ -39,7 +42,7 @@ Puede descartar los borradores tanto en modo sin conexión como en modo en líne
 
 Siga los pasos siguientes para eliminar un borrador:
 
-1. En la aplicación AEM Forms, vaya a **Forms.**
+1. En la aplicación de AEM Forms, vaya a **Forms.**
 1. Seleccione **Borradores** en la lista desplegable situada junto a Buscar.
 1. Un formulario con el icono de edición ![edit-draft-app](assets/edit-draft-app.png) indica un borrador. Puntee en las elipsis horizontales junto al borrador.
-1. En las opciones que aparecen cuando toca los puntos suspensivos horizontales, toque **Eliminar borrador**.
+1. En las opciones que aparecen al tocar los puntos suspensivos horizontales, toque **Eliminar borrador**.
