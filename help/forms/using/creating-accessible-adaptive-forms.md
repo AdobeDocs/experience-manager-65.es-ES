@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Los formularios adaptables incluyen una serie de funciones y capacidades que mejoran la facilidad de uso para los usuarios con diferentes capacidades. La generación de accesibilidad en formularios adaptables no sólo permite la mayor audiencia posible para el contenido, sino que también es un requisito para el suministro de documentos en áreas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. Los AEM Forms ayudan a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
+Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Forms adaptable incluye una serie de funciones y funciones que mejoran el uso para usuarios con diferentes capacidades. La generación de accesibilidad en formularios adaptables no sólo permite la mayor audiencia posible para el contenido, sino que también es un requisito para proporcionar documentos en áreas geográficas donde se exige el cumplimiento de los estándares de accesibilidad. Los desarrolladores de formularios de ayuda de AEM Forms cumplen los estándares de accesibilidad.
 
 Durante la creación de un formulario adaptable, el autor debe tener en cuenta los siguientes puntos para crear un formulario adaptable accesible:
 
@@ -33,7 +33,7 @@ Durante la creación de un formulario adaptable, el autor debe tener en cuenta l
 
 ## Requisitos previos
 
-Se requiere una herramienta de accesibilidad como Nombre **accesible e Inspector de descripción (ANDI)** y un tema de formulario **adaptable desarrollado para solucionar problemas** relacionados con la accesibilidad para crear un formulario adaptable accesible.
+Se requiere una herramienta de accesibilidad como **Inspector de nombre y descripción accesible (ANDI)** y un **tema de formulario adaptable desarrollado para solucionar problemas relacionados con la accesibilidad** para crear un formulario adaptable accesible.
 
 ### Descargar e instalar la herramienta de prueba de accesibilidad
 
@@ -44,15 +44,15 @@ La herramienta de identificación accesible (ANDI) le ayuda a identificar y corr
 * Detecta problemas de accesibilidad del teclado y contraste del color
 * Identifica claramente el contenido del lector de pantalla de conformidad con los estándares
 
-ANDI trabaja con todos los exploradores de Internet más importantes. Consulte la documentación [de](https://www.ssa.gov/accessibility/andi/help/install.html) ANDI para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
+ANDI trabaja con todos los exploradores de Internet más importantes. Consulte la [documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
 
 ### Descargar e instalar el tema Ultramarine-Accessible
 
-El tema Ultramarine-Accesible es un tema de referencia. Ayuda a demostrar cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear un tema personalizado para el entorno de producción en función de los estilos aprobados por su organización. Siga estos pasos para cargar el tema en la instancia de AEM:
+El tema Ultramarine-Accesible es un tema de referencia. Ayuda a demostrar cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear un tema personalizado para el entorno de producción en función de los estilos aprobados por su organización. Realice los siguientes pasos para cargar el tema en la instancia de AEM:
 
 1. Descargue el paquete de temas.
-1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formularios]** en la instancia de AEM.
-1. Toque **[!UICONTROL Crear]** > Cargar **[!UICONTROL archivo]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Carga el tema en la instancia de AEM.
+1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** en la instancia de AEM.
+1. Toque **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivo]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Carga el tema en la instancia de AEM.
 
 ## Hacer accesible un formulario adaptable
 
@@ -63,8 +63,8 @@ Debe centrarse en cuatro aspectos clave: navegación mediante el teclado, contra
 Aplique el tema Ultramarina-Accesible a su formulario adaptable existente. Para aplicar el tema:
 
 1. Abra el formulario adaptable para editarlo.
-1. Seleccione un componente y toque el icono principal. En el menú contextual, toque el Contenedor **[!UICONTROL Formulario]** adaptable y, a continuación, el icono de configuración.
-1. Seleccione el tema Ultramarina accesible en el navegador de propiedades y toque el icono **[!UICONTROL Guardar]** .
+1. Seleccione un componente y toque el icono principal. En el menú contextual, toque **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, toque el icono de configuración.
+1. Seleccione el tema Ultramarina accesible en el navegador de propiedades y toque el icono **[!UICONTROL Guardar]**.
 1. Actualice la ventana del explorador. El tema se aplica al formulario adaptable.
 
 Después de aplicar un tema accesible, realice las siguientes correcciones adicionales. Las correcciones se añaden a las correcciones de accesibilidad que se tratan en el tema accesible:
@@ -95,7 +95,7 @@ Después de aplicar un tema accesible, realice las siguientes correcciones adici
 
 1. Añada el texto de accesibilidad personalizado en todas las celdas de solo lectura de las tablas. Además, deshabilite todas las celdas de sólo lectura de las tablas.
 
-1. Elimine los campos de firma de garabatos, si los hay, en el formulario adaptable. Configure el formulario adaptable para que utilice Adobe Sign para una experiencia de firma digital sin problemas.
+1. Elimine los campos de firma de garabatos, si los hay, en el formulario adaptable. Configure el formulario adaptable para que utilice Adobe Sign para una experiencia de firma digital optimizada.
 
 ### 2. Proporcionar etiquetas adecuadas para los controles de formulario {#provide-proper-labels-for-form-controls}
 
@@ -112,15 +112,15 @@ Para utilizar la opción Accesibilidad, siga estos pasos:
 
 ![Opciones de accesibilidad en componentes de formulario](assets/accessibility-options.png)
 
-**Los autores de formularios de texto** personalizados proporcionan el contenido en la opción de accesibilidad Campo de texto personalizado. La tecnología de asistencia, como los lectores de pantalla, utiliza este texto personalizado. El uso del ajuste Título es la mejor opción en la mayoría de los escenarios. Considere la posibilidad de crear texto personalizado del lector de pantalla solo cuando utilice el título o una breve descripción no sea posible.
+**Los autores** de formularios de texto personalizados proporcionan el contenido en la opción de accesibilidad Campo de texto personalizado. La tecnología de asistencia, como los lectores de pantalla, utiliza este texto personalizado. El uso del ajuste Título es la mejor opción en la mayoría de los escenarios. Considere la posibilidad de crear Texto personalizado del Reader de pantalla solo cuando utilice el Título o no sea posible una descripción breve.
 
-**Breve descripción** Para la mayoría de los componentes, la breve descripción aparece en tiempo de ejecución cuando el usuario sitúa el puntero sobre el componente. Puede definir esta opción en el campo de descripción breve, en la opción de contenido de ayuda.
+**Breve** descripciónPara la mayoría de los componentes, la breve descripción aparece en tiempo de ejecución cuando el usuario sitúa el puntero sobre el componente. Puede definir esta opción en el campo de descripción breve, en la opción de contenido de ayuda.
 
-**Título** Utilice esta opción para permitir que los AEM Forms utilicen la etiqueta visual asociada al campo de formulario como texto del lector de pantalla.
+**** TítuloUtilice esta opción para permitir que AEM Forms utilice la etiqueta visual asociada al campo de formulario como texto del lector de pantalla.
 
-**Nombre** Puede especificar un valor en el campo Nombre de la ficha Enlace. El nombre no puede contener espacios.
+**** NombrePuede especificar un valor en el campo Nombre de la ficha Enlace. El nombre no puede contener espacios.
 
-**Ninguna** Al seleccionar Ninguno, el objeto de formulario no tiene un nombre en el formulario publicado. Ninguno no es una configuración recomendada para los controles de formulario.
+**** NingunoAl seleccionar Ninguno, el objeto de formulario no tiene un nombre en el formulario publicado. Ninguno no es una configuración recomendada para los controles de formulario.
 
 >[!NOTE]
 >
@@ -146,9 +146,9 @@ Los usuarios con deficiencias visuales se basan en un alto contraste entre el te
 
 Se recomienda utilizar los colores predeterminados de fuente y fondo (contenido en color negro sobre fondo blanco). Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o viceversa.
 
-Consulte [Creación de temáticas personalizadas para formularios](/help/forms/using/creating-custom-adaptive-form-themes.md)adaptables para obtener más información sobre cómo cambiar el color de contraste y el tema de los formularios adaptables.
+Consulte [Creación de temáticas personalizadas para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md) para obtener más información sobre cómo cambiar el color del contraste y el tema de los formularios adaptables.
 
-### 5. Asegúrese de que los controles de formulario son accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
+### 5. Asegúrese de que los controles de formulario sean accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulario accesible se puede rellenar completamente utilizando solo el teclado o un dispositivo de entrada equivalente. Los usuarios con movilidad reducida o con problemas de visión pueden no tener más opción que utilizar el teclado y muchos usuarios que pueden utilizar el ratón prefieren la entrada del teclado. Al permitir los distintos métodos de entrada, no solo se crean formularios accesibles, sino que también se crean formularios que se adaptan mejor a las preferencias de todos los usuarios.
 
@@ -168,5 +168,5 @@ Los siguientes métodos abreviados de teclado están disponibles en AEM Forms.
 El Inspector de nombre y descripción accesible (ANDI) ayuda a identificar y corregir problemas relacionados con el cumplimiento de la accesibilidad en un formulario adaptable. Para utilizar la herramienta ANDI para encontrar los problemas de accesibilidad en un formulario adaptable:
 
 1. Abra el formulario adaptable en modo de previsualización.
-1. Haga clic en el icono de la herramienta ANDI con marcador. La herramienta ANDI analiza el formulario adaptable y muestra problemas de accesibilidad. Para obtener más información sobre cómo utilizar la herramienta, consulte la documentación [de](https://www.ssa.gov/accessibility/andi/help/howtouse.html)ANDI.
+1. Haga clic en el icono de la herramienta ANDI con marcador. La herramienta ANDI analiza el formulario adaptable y muestra problemas de accesibilidad. Para obtener más información sobre cómo utilizar la herramienta, consulte la [documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
 1. Revise y corrija los problemas informados por ANDI.
