@@ -1,8 +1,8 @@
 ---
 title: Personalización de fichas para una tarea
 seo-title: Personalización de fichas para una tarea
-description: Cómo personalizar los nombres de las fichas de sus tareas, en el espacio de trabajo AEM Forms de LiveCycle.
-seo-description: Cómo personalizar los nombres de las fichas de sus tareas, en el espacio de trabajo AEM Forms de LiveCycle.
+description: Cómo personalizar los nombres de las fichas de sus tareas, en el espacio de trabajo de LiveCycle AEM Forms.
+seo-description: Cómo personalizar los nombres de las fichas de sus tareas, en el espacio de trabajo de LiveCycle AEM Forms.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Personalización de fichas para una tarea {#customizing-tabs-for-a-task}
 
-Puede personalizar los nombres de fichas del `Start Process` componente en la vista `Start Process` Uber y del `Task Details` componente en la vista `ToDo` Uber.
+Puede personalizar los nombres de fichas para el componente `Start Process` en la vista `Start Process` Uber y el componente `Task Details` en la vista `ToDo` Uber.
 
-1. Siga los pasos [Genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo AEM Forms.
-1. Cambie el valor de `tabname`en el `translation.json` archivo.
+1. Siga los [pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Cambie el valor de `tabname`en el archivo `translation.json`.
 
-   Por ejemplo, cambie `/apps/ws/locales/en-US/translation.json` para inglés a lo siguiente.
+   Por ejemplo, cambie `/apps/ws/locales/en-US/translation.json` para inglés por el siguiente.
 
-   * Para tareas iniciadas en el proceso de inicio, utilice el siguiente fragmento del `"startprocess" : {}` bloque.
+   * Para tareas iniciadas en el proceso de inicio, utilice el siguiente fragmento del bloque `"startprocess" : {}`.
 
    ```json
    "tabname" : {
@@ -37,7 +37,7 @@ Puede personalizar los nombres de fichas del `Start Process` componente en la vi
            }
    ```
 
-   * Para tareas en Tareas pendientes, utilice el siguiente fragmento del `"todo" : {}` bloque.
+   * Para tareas en Tareas pendientes, utilice el siguiente fragmento del bloque `"todo" : {}`.
 
    ```json
    "tabname" : {
