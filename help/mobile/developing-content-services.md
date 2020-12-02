@@ -1,6 +1,6 @@
 ---
 title: Content Services
-seo-title: Content Services
+seo-title: Servicios de contenido
 description: nulo
 seo-description: nulo
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
@@ -43,7 +43,7 @@ Content Services puede entregar el contenido como recursos, HTML empaquetado (HT
 >
 >Antes de empezar a usar los servicios de contenido, asegúrese de activar el indicador de los servicios de contenido. Para habilitar la creación y la administración de modelos en la aplicación, debe activar los modelos de datos en el navegador de configuración.
 >
->Consulte **[Administración de servicios](/help/mobile/developing-content-services.md)** de contenido y la documentación [del navegador](/help/sites-administering/configurations.md) de configuración para obtener más información.
+>Consulte **[Administración de Content Services](/help/mobile/developing-content-services.md)** y la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
