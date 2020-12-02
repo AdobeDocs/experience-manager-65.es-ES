@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Lightbox es un tipo especial de colección que facilita el acceso a los recursos. Puede acceder rápidamente a Lightbox para agregar o eliminar recursos. Sirve como su galería de imágenes personal.
 
-Si es un [!DNL Adobe Experience Manager Assets] usuario, Lightbox se crea automáticamente la primera vez que inicia sesión en la aplicación. Es exclusivo para su inicio de sesión. Otros usuarios no pueden acceder a su Lightbox.
+Si es un usuario [!DNL Adobe Experience Manager Assets], Lightbox se crea automáticamente la primera vez que inicia sesión en la aplicación. Es exclusivo para su inicio de sesión. Otros usuarios no pueden acceder a su Lightbox.
 
-## Añadir recursos en Lightbox {#adding-assets-to-lightbox}
+## Añadir recursos a lightbox {#adding-assets-to-lightbox}
 
-1. En la interfaz de usuario, seleccione los recursos que desea agregar a Lightbox. [!DNL Assets]
-1. Arrastre los recursos a la zona **[!UICONTROL Colocar en Lightbox]** . Se libera cuando la zona de colocación se active y su etiqueta cambie a **[!UICONTROL Colocar para Añadir]**.
+1. En la interfaz de usuario [!DNL Assets], seleccione los recursos que desee agregar a Lightbox.
+1. Arrastre los recursos a la zona **[!UICONTROL Colocar en Lightbox]**. Se libera cuando la zona de colocación se active y su etiqueta cambie a **[!UICONTROL Colocar para Añadir]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
@@ -37,4 +37,4 @@ Si es un [!DNL Adobe Experience Manager Assets] usuario, Lightbox se crea autom�
 1. Vaya a la consola Colecciones y haga clic en Lightbox para realizar la vista de sus recursos.
 1. Seleccione los recursos que desee eliminar.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Eliminar]**.
-1. En el cuadro de diálogo, haga clic en **[!UICONTROL Eliminar]** para confirmar la acción de eliminación. Los recursos se eliminan de Lightbox.
+1. En el cuadro de diálogo, haga clic en **[!UICONTROL Eliminar]** para confirmar la acción de eliminar. Los recursos se eliminan de Lightbox.
