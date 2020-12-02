@@ -14,7 +14,7 @@ ht-degree: 84%
 ---
 
 
-# AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
+# Guía del usuario de creación de IU clásica de AEM 6.5 {#classic-ui}
 
 + [Introducción a la Guía de creación de IU clásica](home.md)
 + Introducción a la creación de IU clásica {#introduction}
