@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 
-# Mejora del rendimiento del monitor de mantenimiento{#fine-tuning-health-monitor-performance}
+# Mejora del rendimiento del monitor de estado{#fine-tuning-health-monitor-performance}
 
-La recopilación de las estadísticas del sistema que rellenan el Monitor de estado tiene cierto impacto en el rendimiento del entorno de formularios de AEM. Este impacto se puede controlar configurando las opciones de Java que se enumeran a continuación en el servidor de aplicaciones.
+La recopilación de estadísticas del sistema que rellenan el Monitor de estado tiene cierto impacto en el rendimiento del entorno de formularios AEM. Este impacto se puede controlar configurando las opciones de Java que se enumeran a continuación en el servidor de aplicaciones.
 
 <table>
  <thead>
@@ -29,7 +32,7 @@ La recopilación de las estadísticas del sistema que rellenan el Monitor de est
  </thead>
  <tbody>
   <tr>
-   <td><p>adobe.santhmonitor.enabled</p></td>
+   <td><p>adobe.healthmonitor.enabled</p></td>
    <td><p>Activar o desactivar el subproceso del monitor de estado</p></td>
    <td><p>verdadero</p></td>
   </tr>
@@ -39,7 +42,7 @@ La recopilación de las estadísticas del sistema que rellenan el Monitor de est
    <td><p>verdadero</p></td>
   </tr>
   <tr>
-   <td><p>adobe.healthmonitor.refresh-range</p></td>
+   <td><p>adobe.healthmonitor.refresh-interval</p></td>
    <td><p>Intervalo en milisegundos después del cual el subproceso del monitor de estado recopila las estadísticas</p></td>
    <td><p>10 minutos (600.000 milisegundos)</p></td>
   </tr>
@@ -54,7 +57,7 @@ La recopilación de las estadísticas del sistema que rellenan el Monitor de est
    <td><p>600000</p></td>
   </tr>
   <tr>
-   <td><p>adobe.workmanager.santhmonitor.enabled</p></td>
+   <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
    <td><p>Esta propiedad habilita o deshabilita la recopilación de estadísticas de Work Manager, como el recuento de elementos de trabajo o de trabajo.</p></td>
    <td><p>verdadero</p></td>
   </tr>
@@ -64,16 +67,16 @@ La recopilación de las estadísticas del sistema que rellenan el Monitor de est
 ## Añadir las opciones de Java a JBoss {#add-java-options-to-jboss}
 
 1. Detenga el servidor de aplicaciones JBoss.
-1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java que necesite.
+1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java según sea necesario.
 1. Reinicie el servidor.
 
 ## Añadir las opciones de Java a WebLogic {#add-java-options-to-weblogic}
 
-1. Inicio la consola de administración WebLogic escribiendo https://[nombre]de host:&#39;puerto&#39;/consola en la línea URL de un explorador Web.
+1. Inicio la consola de administración WebLogic escribiendo https://[nombre de host]:&#39;puerto&#39;/consola en la línea URL de un explorador Web.
 1. Escriba el nombre de usuario y la contraseña que creó para el dominio de WebLogic Server y haga clic en Registro en Centro de cambios, haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
 1. En la pantalla siguiente, haga clic en la ficha Configuración > Inicio del servidor.
-1. En el cuadro Argumentos, anexe los argumentos necesarios al final del contenido actual. Por ejemplo, si agrega - `Dadobe.healthmonitor.enabled=false` deshabilita el Monitor de estado.
+1. En el cuadro Argumentos, anexe los argumentos necesarios al final del contenido actual. Por ejemplo, si agrega - `Dadobe.healthmonitor.enabled=false` se deshabilita el Monitor de estado.
 1. Haga clic en Guardar y, a continuación, en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
