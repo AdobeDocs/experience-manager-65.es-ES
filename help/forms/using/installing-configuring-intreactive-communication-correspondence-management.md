@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# Instalación y configuración de Interactive Communications{#install-and-configure-interactive-communications}
+# Instalar y configurar Interactive Communications{#install-and-configure-interactive-communications}
 
 ## Introducción {#introduction}
 
@@ -24,13 +24,13 @@ AEM formulario tiene la capacidad de centralizar la creación, el montaje, la ge
 
 Puede utilizar la capacidad de comunicación interactiva para producir comunicaciones en varios formatos. Por ejemplo, web y PDF. Puede integrar la comunicación interactiva con AEM flujo de trabajo para procesar y entregar la comunicación ensamblada a los clientes en el canal que deseen. Por ejemplo, enviar una comunicación al usuario final por correo electrónico.
 
-Si está actualizando desde una versión anterior y ya ha invertido en la gestión de correspondencia, puede instalar el paquete [de](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) compatibilidad para continuar utilizando la gestión de correspondencia. Para obtener información sobre las diferencias entre la comunicación interactiva y la administración de correspondencia, consulte Información general sobre la comunicación [interactiva](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+Si está actualizando desde una versión anterior y ya ha invertido en la administración de correspondencia, puede instalar el [paquete de compatibilidad](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) para continuar usando la administración de correspondencia. Para obtener información sobre las diferencias entre la comunicación interactiva y la administración de correspondencia, consulte [Información general de comunicación interactiva](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
-AEM Forms es una potente plataforma de clase empresarial. La comunicación interactiva es sólo una de las funciones de AEM Forms. Para obtener la lista completa de las funciones, consulte [Introducción a AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms es una potente plataforma de clase empresarial. La comunicación interactiva es sólo una de las funciones de AEM Forms. Para obtener la lista completa de las capacidades, consulte [Introducción a AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Topología de implementación {#deployment-topology}
 
-El paquete de complementos de AEM Forms es una aplicación implementada en AEM. Solo se necesita un mínimo de una instancia de AEM Author and Processing para ejecutar la función de comunicaciones interactivas. La siguiente topología es una topología indicativa para ejecutar AEM Forms Interactive Communications, Correspondence Management, la captura de datos de AEM Forms y el flujo de trabajo Forms-Centric en funcionalidades OSGi. Para obtener información detallada sobre la topología, consulte [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+El paquete de complementos de AEM Forms es una aplicación implementada en AEM. Solo se necesita un mínimo de una instancia de AEM Author and Processing para ejecutar la función de comunicaciones interactivas. La siguiente topología es una topología indicativa para ejecutar AEM Forms Interactive Communications, Correspondence Management, la captura de datos de AEM Forms y el flujo de trabajo Forms-Centric en funcionalidades OSGi. Para obtener información detallada sobre la topología, consulte [Topologías de arquitectura e implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![topología recomendada](assets/recommended-topology.png)
 
@@ -40,13 +40,13 @@ AEM Forms Interactive Communications ejecuta interfaces de usuario de administra
 
 Antes de comenzar a instalar y configurar las capacidades interactivas de comunicación y administración de correspondencia de AEM Forms, asegúrese de que:
 
-* La infraestructura de hardware y software está establecida. Para obtener una lista detallada del hardware y el software admitidos, consulte los requisitos [técnicos](/help/sites-deploying/technical-requirements.md).
+* La infraestructura de hardware y software está establecida. Para obtener una lista detallada del hardware y el software admitidos, consulte [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 * La ruta de instalación de la instancia de AEM no contiene espacios en blanco.
 * Se está ejecutando una instancia de AEM. En AEM terminología, una &quot;instancia&quot; es una copia de AEM que se ejecuta en un servidor en el modo de autor o publicación. Se requieren al menos una instancia de AEM (Autor o Procesamiento) para ejecutar las funciones de comunicación interactiva y administración de correspondencia de AEM Forms:
 
    * **Autor**: Instancia de AEM utilizada para crear, cargar y editar contenido y administrar el sitio web. Una vez que el contenido está listo para activarse, se replica en la instancia de publicación.
-   * **Procesamiento:** Una instancia de procesamiento es una instancia de AEM Author [](/help/forms/using/hardening-securing-aem-forms-environment.md) endurecida. Puede configurar una instancia de Autor y endurecerla después de realizar la instalación.
+   * **Procesamiento:** una instancia de procesamiento es una instancia de AEM  [endurecida ](/help/forms/using/hardening-securing-aem-forms-environment.md) Authorinstance. Puede configurar una instancia de Autor y endurecerla después de realizar la instalación.
 
    * **Publicar**: Una instancia de AEM que sirve el contenido publicado al público a través de Internet o de una red interna.
 
@@ -86,22 +86,22 @@ Antes de comenzar a instalar y configurar las capacidades interactivas de comuni
  </tbody>
 </table>
 
-## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
+## Instalación del paquete de complementos de AEM Forms {#install-aem-forms-add-on-package}
 
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene las funciones de comunicación interactiva, administración de correspondencia y otras de AEM Forms. Realice los siguientes pasos para instalar el paquete de complemento:
 
-1. Abra Distribución [de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
-1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
-1. En la sección **[!UICONTROL Filtros]** :
-   1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]** .
+1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
+1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
+1. En la sección **[!UICONTROL Filtros]**:
+   1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y escriba el paquete. También puede utilizar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
-1. Toque el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar los términos]** del EULA y toque **[!UICONTROL Descargar]**.
-1. Abra el Administrador [de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
-1. Select the package and click **[!UICONTROL Install]**.
+1. Toque el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar los términos del EULA]** y toque **[!UICONTROL Descargar]**.
+1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
-   También puede descargar el paquete a través del vínculo directo que aparece en el artículo de la versión [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+   También puede descargar el paquete a través del vínculo directo que aparece en el artículo [AEM Forms releases](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
 
-1. Después de instalar el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTER dejen de aparecer en el archivo [AEM-Installation-Directory]/crx-quickstart/logs/error.log y el registro sea estable.
+1. Después de instalar el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTER dejen de aparecer en el archivo  [AEM-Installation-Directory]/crx-quickstart/logs/error.log y el registro sea estable.
 1. Repita los pasos del 1 al 7 en todas las instancias de Autor y Publicación.
 
 ## Configuraciones posteriores a la instalación {#post-installation-configurations}
@@ -110,14 +110,14 @@ AEM Forms tiene algunas configuraciones obligatorias y opcionales. Las configura
 
 ### Configuraciones posteriores a la instalación obligatorias {#mandatory-post-installation-configurations}
 
-#### Configuración de bibliotecas RSA y BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
+#### Configurar las bibliotecas RSA y BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
 
 Realice los siguientes pasos en todas las instancias de Autor y Publicación para iniciar las bibliotecas delegadas:
 
 1. Detenga la instancia de AEM subyacente.
-1. Abra el archivo [AEM directorio]\crx-quickstart\conf\sling.properties de instalación para editarlo.
+1. Abra el archivo [AEM directorio de instalación]\crx-quickstart\conf\sling.properties para editarlo.
 
-   Si ha utilizado [AEM directorio]de instalación \crx-quickstart\bin\start.bat en inicio AEM, edite el archivo sling.properties ubicado en [AEM_root]\crx-quickstart\.
+   Si ha utilizado [AEM directorio de instalación]\crx-quickstart\bin\start.bat en inicio AEM, edite el archivo sling.properties ubicado en [AEM_root]\crx-quickstart\.
 
 1. Añada las siguientes propiedades en el archivo sling.properties:
 
@@ -134,14 +134,14 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 
 1. Abra AEM Administrador de configuración en una ventana del explorador. La dirección URL predeterminada es https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Busque y abra **Deserialization Firewall Configuration**.
-1. Añada el paquete **sun.util.calendar** al campo de **lista de permitidos** . Haga clic en Guardar.
+1. Añada el paquete **sun.util.calendar** al campo **lista de permitidos**. Haga clic en Guardar.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación.
 
 ### Configuraciones posteriores a la instalación opcionales {#optional-post-installation-configurations}
 
 #### Instalar paquete de compatibilidad {#install-compatibility-package}
 
-La comunicación interactiva es el método predeterminado y recomendado para crear comunicaciones de clientes en AEM 6.5 Forms. Si ha actualizado o migrado desde una versión anterior y planea seguir utilizando letras (Gestión de correspondencia), instale el paquete [de compatibilidad con](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)AEMFD.
+La comunicación interactiva es el método predeterminado y recomendado para crear comunicaciones de clientes en AEM 6.5 Forms. Si ha actualizado o migrado desde una versión anterior y planea continuar utilizando letras (Administración de correspondencia), instale el [paquete de compatibilidad con AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
 El paquete de compatibilidad AEMFD le permite utilizar los siguientes recursos de AEM 6.4 Forms, AEM 6.3 Forms y AEM 6.2 Forms en AEM 6.5 Forms:
 
@@ -160,11 +160,11 @@ Dispatcher es una herramienta de almacenamiento en caché y/o equilibrio de carg
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Guarde y cierre el archivo. Para obtener información detallada sobre filtros, consulte la documentación de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Guarde y cierre el archivo. Para obtener información detallada sobre filtros, consulte [documentación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configure el servicio de filtros de remitente del reenvío:
 
-   Inicie sesión en el administrador de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es https://&#39;server&#39;:[port_number]/system/console/configMgr. En el menú **Configuraciones** , seleccione la opción Filtro **de Remitente del reenvío Sling de** Apache. En el campo Permitir hosts, escriba el nombre de host del despachante para que se pueda utilizar como remitente del reenvío y haga clic en **Guardar**. El formato de la entrada es https://&#39;[server]:[port]&#39;.
+   Inicie sesión en el administrador de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es https://&#39;server&#39;:[número_puerto]/system/console/configMgr. En el menú **Configuraciones**, seleccione la opción **Filtro de Remitente del reenvío Sling de Apache**. En el campo Permitir hosts, escriba el nombre de host del despachante para que se lo permita como remitente del reenvío y haga clic en **Guardar**. El formato de la entrada es https://&#39;[server]:[port]&#39;.
 
 #### Integrar Adobe Target {#integrate-adobe-target}
 
@@ -172,13 +172,13 @@ Es probable que sus clientes abandonen una comunicación interactiva si la exper
 
 AEM formularios se integra con Adobe Target, una solución de Adobe Marketing Cloud, para ofrecer experiencias personalizadas y atractivas a los clientes en varios canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, [integre Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
-#### Configurar la comunicación SSL para el modelo de datos de formulario  {#configure-ssl-communcation-for-form-data-model}
+#### Configurar la comunicación SSL para el modelo de datos de formulario {#configure-ssl-communcation-for-form-data-model}
 
 Puede habilitar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar cualquier instancia de AEM Forms, agregue certificados al almacén de confianza de Java de todas las instancias. Puede ejecutar el comando siguiente para agregar los certificados:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
-## Pasos siguientes {#next-steps}
+## Próximos pasos {#next-steps}
 
 Ha configurado un entorno para utilizar las funciones interactivas de comunicación y administración de correspondencia. Ahora, los pasos hacia el uso de la capacidad son:
 
