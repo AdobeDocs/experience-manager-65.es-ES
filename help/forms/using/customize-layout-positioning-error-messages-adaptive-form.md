@@ -11,6 +11,9 @@ discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 0%
 
 ---
 
@@ -32,8 +35,8 @@ Puede personalizar la presentación de un solo campo o de todos los campos para 
 
 Siga estos pasos para aplicar un diseño personalizado a un solo campo:
 
-1. Abra el formulario en modo **Estilo** . Para abrir el formulario en modo de estilo, en la barra de herramientas de la página toque ![lienzo-desplegable](assets/canvas-drop-down.png) > **Estilo**.
-1. En la barra lateral, en Objetos **de** formulario, seleccione el campo y toque el botón de edición ![Editar](assets/edit-button.png).
+1. Abra el formulario en modo **Estilo**. Para abrir el formulario en modo de estilo, en la barra de herramientas de la página toque ![menú desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
+1. En la barra lateral, en **Objetos de formulario**, seleccione el campo y toque el botón de edición ![botón de edición](assets/edit-button.png).
 1. Seleccione el estado del campo que desea personalizar y especifique el estilo para ese estado.
 
    ![Especificación del estilo en línea de un campo](assets/edit-error-state.png)
@@ -45,10 +48,10 @@ Con AEM Forms, ahora puede crear un tema y aplicarlo al formulario. El editor de
 Cree un tema con el Editor de temas para personalizar la presentación de todos los campos del formulario. Después de crear un tema, realice los siguientes pasos para aplicarlo a un formulario:
 
 1. Abra el formulario en modo de edición.
-1. En el modo de edición, seleccione un componente, toque ![campo](assets/field-level.png) > Contenedor **de formulario** adaptable y, a continuación, toque ![cmppr](assets/cmppr.png).
+1. En el modo de edición, seleccione un componente, toque ![nivel de campo](assets/field-level.png) > **Contenedor de formulario adaptable** y, a continuación, toque ![cmppr](assets/cmppr.png).
 1. En la barra lateral, en Tema de formulario adaptable, seleccione el tema que ha creado con el Editor de temas.
 
-## Creación de un diseño de campo personalizado {#create-a-custom-field-layout}
+## Crear un diseño de campo personalizado {#create-a-custom-field-layout}
 
 1. Abra la lista CRXDE. La dirección URL predeterminada es https://&#39;[server]:[port]&#39;/crx/de.
 1. Copie un diseño de campo del nodo /libs/fd/af/layouts/field (por ejemplo, defaultFieldLayout) al nodo /apps (por ejemplo, /apps/af-field-layout).
@@ -80,7 +83,7 @@ Cree un tema con el Editor de temas para personalizar la presentación de todos 
    ```
 
 1. Para mejorar el aspecto y el comportamiento, incluya la biblioteca de cliente creada en el archivo de diseño (errorOnRight.jsp).
-1. Abra el cuadro de diálogo de edición del campo, seleccione la ficha **Estilo** . En el cuadro desplegable **Configurar diseño** de campo, seleccione el diseño recién creado y haga clic en **Aceptar**.
+1. Abra el cuadro de diálogo de edición del campo, seleccione la ficha **Estilo**. En el cuadro desplegable **Configurar diseño de campo**, seleccione el diseño recién creado y haga clic en **Aceptar**.
 
 El paquete ErrorOnRight.zip contiene código para mostrar mensajes de error en el lado derecho de los campos.
 
