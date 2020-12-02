@@ -12,6 +12,9 @@ discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 translation-type: tm+mt
 source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +63,7 @@ Para cambiar el período de informe de una página Perspectiva de contenido:
 
 1. Para cambiar la fecha de finalización del período de informe, arrastre el círculo que aparece en la parte derecha del área sombreada a la fecha de finalización deseada.
 
-#### Cambio de la granularidad del período de informe {#changing-the-granularity-of-the-reporting-period}
+#### Cambio de la granularidad del período de informe  {#changing-the-granularity-of-the-reporting-period}
 
 Cambie la cantidad de tiempo que cada punto de datos abarca en un informe. Por ejemplo, al seleccionar la granularidad Semana, cada punto de datos del informe Vistas representa la cantidad de vistas realizadas durante una semana.
 
@@ -74,7 +77,7 @@ La granularidad afecta a los informes que asignan datos a valores temporales, co
 
 1. Toque o haga clic en la granularidad que desee. Una vez seleccionado, el informe se actualiza automáticamente para reflejar la granularidad.
 
-### Asignación de tareas para Recomendaciones de SEO {#assigning-tasks-for-seo-recommendations}
+### Asignación de tareas para Recomendaciones de SEO  {#assigning-tasks-for-seo-recommendations}
 
 Utilice el informe Recomendaciones de SEO para crear tareas para mejorar la visibilidad de la página para los motores de búsqueda. Para cada recomendación del informe que no tenga una marca, puede crear una tarea que asigna a un usuario para realizar el trabajo necesario.
 
@@ -84,7 +87,7 @@ El estado de la recomendación de SEO indica cuándo se ha creado la tarea, pero
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Una vez creada, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre las tareas, consulte [Trabajo con tareas](/help/sites-authoring/task-content.md).
+Una vez creada, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre tareas, consulte [Uso de Tareas](/help/sites-authoring/task-content.md).
 
 Siga el procedimiento que aparece a continuación para crear una tarea para una recomendación de SEO.
 
@@ -94,7 +97,7 @@ Siga el procedimiento que aparece a continuación para crear una tarea para una 
 
 1. Haga clic en el icono de triángulo dentro del círculo que aparece al lado del icono de información.
 
-   ![chlimage_1-135](assets/chlimage_1-131.png)
+   ![chlimage_1-131](assets/chlimage_1-131.png)
 
 1. Rellene los campos del formulario que aparecen y, a continuación, toque Crear:
 
@@ -104,6 +107,7 @@ Siga el procedimiento que aparece a continuación para crear una tarea para una 
    * Descripción: una descripción de la actividad necesaria para completar la tarea. La descripción predeterminada es la información que acompaña a la recomendación de SEO.
    * Prioridad de tareas: la prioridad de la tarea.
    * Fecha de caducidad: la fecha en la que la tarea debe terminarse.
+
    **Nota**: la tarea creada también incluye la ruta de acceso a la página a la que se aplica la recomendación de SEO.
 
 1. Toque o haga clic en Hecho para cerrar el mensaje Tarea creada.
