@@ -1,8 +1,8 @@
 ---
 title: Herramienta Servidor proxy (proxy.jar)
 seo-title: Herramienta Servidor proxy (proxy.jar)
-description: Obtenga información sobre la herramienta de servidor proxy en AEM.
-seo-description: Obtenga información sobre la herramienta de servidor proxy en AEM.
+description: Obtenga información sobre la herramienta Servidor proxy en AEM.
+seo-description: Obtenga información sobre la herramienta Servidor proxy en AEM.
 uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,6 +12,9 @@ discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 0%
 
 ---
 
@@ -32,11 +35,11 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 * SMTP para mensajes de correo electrónico
 * LDAP para administración de usuarios
 
-Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualesquiera que se comuniquen a través de una red TCP/IP; Por ejemplo, un navegador web y AEM. Esto le permite supervisar exactamente qué sucede cuando solicita una página de AEM.
+Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualesquiera que se comuniquen a través de una red TCP/IP; Por ejemplo, un explorador Web y un AEM. Esto le permite monitorear exactamente lo que sucede cuando solicita una página AEM.
 
-## Inicio de la herramienta Servidor proxy {#starting-the-proxy-server-tool}
+## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
-La herramienta se encuentra en la carpeta /opt/helpers de la instalación de AEM. Para iniciarlo, escriba:
+La herramienta se encuentra en la carpeta /opt/helpers de la instalación de AEM. Para inicio, escriba:
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
@@ -45,24 +48,24 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Opciones {#options}
 
 * **q (modo silencioso)** No escribe las solicitudes en la ventana de la consola. Utilícelo si no desea ralentizar la conexión o si registra la salida en un archivo (consulte la opción -logfile).
-* **b (modo binario)** Si busca combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contendrá la salida hexadecimal y de caracteres.
-* **t (entradas de registro de marca de hora)** Agrega una marca de hora a cada salida del registro. La marca de hora se marca en segundos, por lo que puede que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
-* **logfile &lt;filename> (escribir en archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
-* **i &lt;numIndentions> (agregar sangría)** Cada conexión activa se sangra para mejorar la legibilidad. El valor predeterminado es 16 niveles. (Nuevo en proxy.jar versión 1.16).
+* **b (modo binario)** Si está buscando combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contendrá la salida hexadecimal y de caracteres.
+* **t (entradas de registro de marca de hora)** Añade una marca de hora a cada salida de registro. La marca de hora se marca en segundos, por lo que puede que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
+* **logfile  &lt;filename> (escribir en archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
+* **i  &lt;numindentions> (agregar sangría)** Cada conexión activa tiene una sangría para una mejor legibilidad. El valor predeterminado es 16 niveles. (Nuevo en proxy.jar versión 1.16).
 
-## Usos de la herramienta Servidor proxy {#uses-of-the-proxy-server-tool}
+## Usos de la herramienta de servidor proxy {#uses-of-the-proxy-server-tool}
 
 Los siguientes escenarios ilustran algunos de los propósitos para los que se puede utilizar la herramienta de servidor proxy:
 
 **Comprobar las cookies y sus valores**
 
-El siguiente ejemplo de entrada de registro muestra todas las cookies y sus valores enviados por el cliente en la sexta conexión abierta desde el inicio del proxy:
+El siguiente ejemplo de entrada de registro muestra todas las cookies y sus valores enviados por el cliente en la sexta conexión abierta desde el inicio proxy:
 
 ```xml
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Comprobación de encabezados y sus valores** En el siguiente ejemplo de entrada de registro se muestra que el servidor puede establecer una conexión permanente y que el encabezado de longitud de contenido está configurado correctamente:
+**Comprobación de encabezados y sus** valoresEl siguiente ejemplo de entrada de registro muestra que el servidor puede establecer una conexión permanente y que el encabezado de longitud de contenido se estableció correctamente:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -72,11 +75,11 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Comprobación de si la función Mantener activo funciona**
 
-**Mantener activo** significa que un cliente reutiliza la conexión con el servidor para transportar varios archivos (el código de página, las imágenes, las hojas de estilo, etc.). Sin el mantenimiento, el cliente tiene que establecer una nueva conexión para cada solicitud.
+**Keep-** Alivemans significa que un cliente reutiliza la conexión con el servidor para transportar varios archivos (el código de página, las imágenes, las hojas de estilo, etc.). Sin el mantenimiento, el cliente tiene que establecer una nueva conexión para cada solicitud.
 
 Para comprobar si la función Mantener viva funciona:
 
-1. Inicie el servidor proxy.
+1. Inicio del servidor proxy.
 1. Solicite una página.
 
 * Si la función Mantener vivo funciona, el contador de conexiones nunca debe superar las 5 a 10 conexiones.
@@ -86,17 +89,17 @@ Para comprobar si la función Mantener viva funciona:
 
 Si pierde solicitudes en un servidor complejo, por ejemplo con un servidor de seguridad y un distribuidor, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. En el caso de un servidor de seguridad:
 
-1. Iniciar un proxy antes de un servidor de seguridad
-1. Iniciar otro proxy después de un servidor de seguridad
+1. Inicio de un proxy antes de un servidor de seguridad
+1. Inicio de otro proxy después de un servidor de seguridad
 1. Utilícelos para ver hasta dónde llegan las solicitudes.
 
 **Solicitudes en cola**
 
 Si experimenta solicitudes de bloqueo de vez en cuando:
 
-1. Inicie un proxy.jar.
+1. Inicio un proxy.jar.
 1. Espere o escriba el registro de acceso en un archivo; cada entrada tiene una marca de tiempo.
-1. Cuando la solicitud empieza a colgar, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
+1. Cuando el inicio de la solicitud se encuentra suspendido, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
 
 ## El formato de los mensajes de registro {#the-format-of-log-messages}
 
@@ -113,9 +116,9 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 ```
 
 * C significa que esta entrada proviene del cliente (es una solicitud para una página Web)
-* 0 es el número de conexión (el contador de conexiones comienza en 0)
-* &#x200B;# 00000 el desplazamiento en el flujo de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
-* [GET &lt;?>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
+* 0 es el número de conexión (el contador de conexiones inicio en 0)
+* # 00000 el desplazamiento en el flujo de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
+* [GET  &lt;?>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:
 
@@ -142,13 +145,13 @@ Revisaremos una plantilla simple que produzca el siguiente código cuando se sol
 </html>
 ```
 
-Si AEM se está ejecutando en localhost:4303, inicie el servidor proxy como se indica a continuación:
+Si AEM se está ejecutando en localhost:4303, inicio el servidor proxy de la siguiente manera:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Puede acceder al servidor (`localhost:4303`) sin el servidor proxy, pero si accede a él a través `localhost:4444`, el servidor proxy registrará la comunicación. Abra un navegador y acceda a una página creada con la plantilla anterior. Después de eso, mire el archivo de registro.
+Puede acceder al servidor (`localhost:4303`) sin el servidor proxy, pero si accede a él a través de `localhost:4444`, el servidor proxy registrará la comunicación. Abra un navegador y acceda a una página creada con la plantilla anterior. Después de eso, mire el archivo de registro.
 
 >[!NOTE]
 >
@@ -161,7 +164,7 @@ starting proxy for localhost:4303 on port 4444
 using logfile: C:\CQUnify355default\opt\helpers\test.log
 ```
 
-Los siguientes campos de encabezado se enumeran al principio de la primera conexión (0), que solicita la página HTML principal:
+Los siguientes campos de encabezado se enumeran en el inicio de la primera conexión (0), que solicita la página HTML principal:
 
 ```xml
 C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102936796533 HTTP/1.1 ]
@@ -202,7 +205,7 @@ S-0-#000158 -> [Set-Cookie: JSESSIONID=4161a56b-f193-d8-88a5-e09c5ff7ef2a;Path=/
 S-0-#000232 -> [ ]
 ```
 
-Aquí, el servidor comienza a enviar el código HTML en la conexión 0:
+Aquí, el servidor inicio el envío del código HTML en la conexión 0:
 
 ```xml
 S-0-#000234 -> [<html> ]
@@ -223,7 +226,7 @@ C-0-Finished: 516 bytes (0.0 kb/s)
 S-0-Finished: 374 bytes (0.0 kb/s)
 ```
 
-Ahora, la salida comienza para la conexión 1, que descarga la imagen contenida en el código HTML:
+Ahora, los inicios de salida para la conexión 1, que descarga la imagen contenida en el código HTML:
 
 ```xml
 C-1-#000000 -> [GET /author/logo.gif HTTP/1.1 ]
