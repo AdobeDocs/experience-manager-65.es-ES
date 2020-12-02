@@ -11,21 +11,24 @@ discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 1%
 
 ---
 
 
-# Actualización de la configuración general{#updating-general-settings}
+# Actualizando configuración general{#updating-general-settings}
 
-La configuración general de la aplicación de AEM Forms permite especificar la configuración, como la captura de archivos adjuntos, el modo sin conexión, la pantalla de aterrizaje, la categoría predeterminada y la frecuencia de guardado automático.
+La configuración general de la aplicación de AEM Forms le permite especificar opciones de configuración como la captura de archivos adjuntos, el modo sin conexión, la pantalla de aterrizaje, la categoría predeterminada y la frecuencia de guardado automático.
 
 ## Actualización de la configuración general en la aplicación {#working-with-the-form}
 
 Al sincronizar la aplicación con el servidor de AEM Forms, todos los formularios y tareas definidas se descargan en el dispositivo móvil.
 
-La solución de la aplicación AEM Forms integrada no descarga los archivos adjuntos asociados a cada formulario cuando la aplicación está sincronizada.
+La solución integrada de aplicaciones de AEM Forms no descarga los archivos adjuntos asociados a cada formulario cuando la aplicación está sincronizada.
 
-En la ficha General, cambie los datos adjuntos de descarga, el modo sin conexión, la pantalla de aterrizaje, el guardado automático y la configuración de sincronización. Puede cambiar la pantalla de [inicio](../../forms/using/home-screen.md) de la aplicación.
+En la ficha General, cambie los datos adjuntos de descarga, el modo sin conexión, la pantalla de aterrizaje, el guardado automático y la configuración de sincronización. Puede cambiar la [pantalla principal](../../forms/using/home-screen.md) de la aplicación.
 
 **Vaya a la ficha General de la pantalla Configuración**
 
@@ -45,18 +48,18 @@ En la ficha General, cambie los datos adjuntos de descarga, el modo sin conexió
 Puede realizar los siguientes cambios en la configuración de la aplicación.
 
 * **Buscar adjuntos** de tarea: Para especificar si desea descargar o no los archivos adjuntos asociados cuando se descargue cada tarea en la aplicación.
-* **Modo** sin conexión: Para activar o desactivar el servicio sin conexión para la aplicación de AEM Forms. Consulte [Uso del modo](/help/forms/using/work-offline-mode.md) sin conexión para obtener más información.
-* **Pantalla** de aterrizaje: Para definir la ubicación del inicio (pantalla[de inicio](../../forms/using/home-screen.md)) para la aplicación.
+* **Modo** sin conexión: Para activar o desactivar el servicio sin conexión para la aplicación de AEM Forms. Consulte [Uso del modo sin conexión](/help/forms/using/work-offline-mode.md) para obtener más información.
+* **Pantalla** de aterrizaje: Para definir la ubicación del inicio (pantalla [de inicio](../../forms/using/home-screen.md)) para la aplicación.
 Opciones disponibles:
 
    * Forms
    * Tareas
    * Favoritos
 
-* **categoría** predeterminada: Permite seleccionar la categoría de los formularios que se mostrarán en la pantalla de inicio. Cuando selecciona Todo, puede ver todos los formularios en la pantalla de inicio. Las Categorías se rellenan en función de los formularios cargados en la aplicación. Los formularios están disponibles en la aplicación según la configuración de formulario especificada en el servidor de AEM Forms.
+* **Categoría** predeterminada: Permite seleccionar la categoría de los formularios que se mostrarán en la pantalla de inicio. Cuando selecciona Todo, puede ver todos los formularios en la pantalla de inicio. Las categorías se rellenan en función de los formularios cargados en la aplicación. Forms está disponible en la aplicación en función de la configuración de formulario especificada en el servidor de AEM Forms.
 
-* **Frecuencia** de guardado automático: Para definir la frecuencia con la que la aplicación [móvil guarda los datos](../../forms/using/autosave-data-app.md) del formulario localmente.
-* **Frecuencia** de sincronización: Para definir la frecuencia con la que la aplicación [móvil se sincroniza](../../forms/using/sync-app.md) con el servidor de AEM Forms en modo en línea.
+* **Frecuencia** de guardado automático: Para definir la frecuencia con la que la aplicación  [móvil guarda los datos ](../../forms/using/autosave-data-app.md) de forma local.
+* **Frecuencia** de sincronización: Para definir la frecuencia con la que la aplicación  [móvil se ](../../forms/using/sync-app.md) sincroniza con el servidor de AEM Forms en modo en línea.
    **Borrar datos** locales: Borre la base de datos, incluida la configuración y los datos locales de todos los usuarios y el almacenamiento de archivos desde el dispositivo.
 
 >[!NOTE]
