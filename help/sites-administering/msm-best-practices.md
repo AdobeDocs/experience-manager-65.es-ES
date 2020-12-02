@@ -24,12 +24,12 @@ ht-degree: 1%
 
 MSM es un marco configurable para automatizar la implementación de contenido. Las implementaciones suelen incluir partes importantes de un sitio web y abarcan organizaciones y regiones geográficas. Por lo tanto, es muy recomendable planificar las implementaciones de MSM con el cuidado con que planifica el sitio web:
 
-* Antes de iniciar la implementación, **planifique cuidadosamente la estructura y los flujos** de contenido.
+* **estructura del plan y flujos de contenido** cuidadosamente antes de iniciar la implementación.
 * **Personalice tanto como sea necesario, pero tan poco como sea posible.** Aunque MSM admite un alto grado de personalización (por ejemplo, configuraciones de implementación), la mejor práctica para el rendimiento, la fiabilidad y la actualización del sitio Web es minimizar la personalización.
-* Establezca un modelo de **gobernanza** pronto y capacite a los usuarios en consecuencia para garantizar el éxito. Una práctica recomendada desde un punto de vista de la gobernanza es **minimizar la autoridad que los productores de contenido local tienen** para asignar/conectar contenido a otros usuarios locales y sus respectivas copias en vivo. Esto se debe a que las herencias encadenadas y no gobernadas pueden aumentar significativamente la complejidad de una estructura de MSM y comprometer su rendimiento y fiabilidad.
+* Establezca un modelo **de administración** antes y capacite a los usuarios en consecuencia para garantizar el éxito. Una práctica recomendada desde un punto de vista de la administración es **minimizar la autoridad que los productores de contenido local tienen** para asignar/conectar contenido a otros usuarios locales y sus respectivas copias en vivo. Esto se debe a que las herencias encadenadas y no gobernadas pueden aumentar significativamente la complejidad de una estructura de MSM y comprometer su rendimiento y fiabilidad.
 
-* Una vez que existe un plan para su estructura, los flujos de contenido, la automatización y la gobernanza: **cree prototipos y realice pruebas exhaustivas del sistema** antes de iniciar la implementación en directo.
-* Tenga en cuenta que la consultoría de **Adobe y los integradores** líderes del sistema cuentan con una amplia experiencia en la planificación e implementación de la automatización de contenido con MSM, de modo que pueden ayudarle a iniciarse en el proyecto MSM y en toda su implementación.
+* Una vez que existe un plan para su estructura, los flujos de contenido, la automatización y la gobernanza: **prototipo y prueba minuciosamente su sistema**, antes de iniciar la implementación en vivo.
+* Tenga en cuenta que **Consultoría de Adobe e integradores de sistemas líderes** tienen una amplia experiencia en la planificación e implementación de la automatización de contenido con MSM, de modo que pueden ayudarle a comenzar con su proyecto MSM y a lo largo de toda su implementación.
 
 >[!NOTE]
 >
@@ -44,22 +44,22 @@ MSM es un marco configurable para automatizar la implementación de contenido. L
 
 >[!NOTE]
 >
->También puede utilizar el componente [](/help/sites-authoring/default-components-foundation.md#reference) Referencia para reutilizar una sola página o párrafo. Sin embargo, tenga en cuenta:
+>También puede utilizar el [componente Referencia](/help/sites-authoring/default-components-foundation.md#reference) para reutilizar una sola página o párrafo. Sin embargo, tenga en cuenta:
 >
 >* MSM es más flexible y permite un control preciso sobre qué contenido se sincroniza y cuándo.
->* [Ahora se recomiendan los componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales a lo largo de los componentes básicos.
+>* [Ahora se recomiendan ](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) los componentes principales en los componentes básicos.
 
 >
 
 
 
-## Fuentes de Live Copy y configuraciones de modelo {#live-copy-sources-and-blueprint-configurations}
+## Orígenes de Live Copy y configuraciones de modelo {#live-copy-sources-and-blueprint-configurations}
 
-Tenga en cuenta que una Live Copy se puede crear con páginas [](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) regulares o con una configuración [de](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)modelo. Ambos son casos de uso válidos.
+Tenga en cuenta que se puede crear una Live Copy utilizando [páginas regulares](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) o una [configuración de modelo](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Ambos son casos de uso válidos.
 
 Las ventajas adicionales del uso de una configuración de modelo son que:
 
-* Permita que el autor utilice la opción **Desplegar** en un modelo; para (explícitamente) insertar modificaciones en las copias en vivo que hereden de este modelo.
+* Permita que el autor utilice la opción **Desplegar** en un modelo: para (explícitamente) insertar modificaciones en las copias en vivo que heredan de este modelo.
 * Permitir al autor utilizar **Crear sitio**; esto permite al usuario seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
 * Defina una configuración de implementación predeterminada para las copias en vivo que tengan una relación con el modelo.
 
@@ -67,7 +67,7 @@ En el caso de que no se haga referencia a una configuración de modelo, solo se 
 
 Al crear un nuevo sitio con Live Copy, resulta ventajoso crear configuraciones de modelo para garantizar la disponibilidad del conjunto completo de funciones de MSM.
 
-## Sincronización de componentes y Contenedor {#components-and-container-synchronization}
+## Componentes y sincronización de Contenedor {#components-and-container-synchronization}
 
 En general, la regla de implementación en MSM con respecto a la sincronización de componentes es:
 
@@ -80,25 +80,25 @@ Para admitir el anidado de componentes de modo que los componentes agregados loc
 
 >[!NOTE]
 >
->Añada la propiedad `cq:isContainer` al componente para designarla como contenedor.
+>Añada la propiedad `cq:isContainer` al componente para designarlo como contenedor.
 
 ## Crear sitio {#create-site}
 
 Tenga en cuenta que AEM tiene dos métodos principales para crear copias en vivo:
 
-* When [creating a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+* Cuando [crea una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
    Este enfoque puede considerarse más genérico y le permite crear copias en vivo desde cualquier página. La estructura de contenido de una Live Copy coincide exactamente con el origen.
 
-* Al [crear un sitio](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* Cuando [crea un sitio](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
    Se trata de un enfoque más especializado, principalmente para crear sitios web con una estructura multilingüe.
 
 A continuación se indican algunas consideraciones que deben tenerse en cuenta al crear un sitio:
 
-* Para crear un nuevo sitio, necesita una configuración [de modelo](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Para crear un nuevo sitio, necesita una [configuración de modelo](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Para permitir la selección de rutas de idioma que se van a crear en un nuevo sitio, las raíces de idioma correspondientes deben existir en el modelo (origen).
-* Una vez que se ha creado un [nuevo sitio como Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mediante **Crear**, luego **Sitio**), los dos primeros niveles de esta Live Copy son *poco profundos*. Los elementos secundarios de la página no pertenecen a la relación activa, pero un despliegue seguirá descendiendo si se encuentra una relación activa que coincida con el activador.
+* Una vez que un [nuevo sitio se ha creado como una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mediante **Crear**, luego **Sitio**), los dos primeros niveles de esta Live Copy son *superficiales*. Los elementos secundarios de la página no pertenecen a la relación activa, pero un despliegue seguirá descendiendo si se encuentra una relación activa que coincida con el activador.
 
    Ayuda a evitar:
 
@@ -112,7 +112,7 @@ MSM puede ayudar en la creación de sitios web multilingües de dos maneras:
 
 * Al crear maestros de idioma.
 
-   * Aunque MSM **no proporciona traducción** de contenido, puede integrarse con conectores de traducción de terceros que sí lo hacen. Tenga en cuenta que:
+   * Aunque el propio MSM **no proporciona traducción de contenido**, puede integrarse con conectores de traducción de terceros que sí lo hacen. Tenga en cuenta que:
 
       * MSM permite cancelar la herencia en el nivel de página y/o componente. Esto ayuda a evitar la sobrescritura de contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en la próxima implementación.
       * Algunos conectores de traducción de terceros automatizan esta administración de las herencias de MSM.
@@ -125,17 +125,17 @@ MSM puede ayudar en la creación de sitios web multilingües de dos maneras:
 
    * Por ejemplo, desde el maestro de francés a sitios específicos de países, como Francia/francés, Canadá/francés, Suiza/francés.
 
-Para obtener más información, consulte [Traducción de contenido para sitios](/help/sites-administering/translation.md) multilingües y Prácticas recomendadas [de](/help/sites-administering/tc-bp.md)traducción.
+Para obtener más información, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) y las [Prácticas recomendadas de traducción](/help/sites-administering/tc-bp.md).
 
-## Cambios y versiones de estructura {#structure-changes-and-rollouts}
+## Cambios y despliegues de estructura {#structure-changes-and-rollouts}
 
 Las modificaciones en la estructura de contenido de un modelo o árbol de origen se reflejan de forma diferente en una Live Copy. Esto depende del tipo de modificación:
 
-* **La creación** de nuevas páginas en un modelo dará como resultado que las páginas correspondientes se creen en Live Copies después de la implementación con la configuración de implementación estándar.
+* **Al** crear nuevas páginas en un modelo, se crearán las páginas correspondientes en Live Copies después de la implementación con la configuración de implementación estándar.
 
-* **Al eliminar** páginas en un modelo, las páginas correspondientes se eliminarán de las Live Copies después de la implementación con la configuración de implementación estándar.
+* **Al** eliminar páginas en un modelo, las páginas correspondientes se eliminarán de las Live Copies después de la implementación con la configuración de implementación estándar.
 
-* **Si mueve** páginas en un modelo, **no se moverán** las páginas correspondientes en Live Copy después de la implementación con la configuración de implementación estándar:
+* **El** desplazamiento de páginas en un modelo  **** no dará como resultado que las páginas correspondientes se muevan en Live Copy después de la implementación con la configuración de implementación estándar:
 
    * El motivo de este comportamiento es que un movimiento de página incluye implícitamente una eliminación de página. Esto podría provocar un comportamiento inesperado al publicar, ya que al eliminar páginas del autor, se desactiva automáticamente el contenido correspondiente al publicar. Esto también puede tener un efecto de contagio en elementos relacionados como vínculos, marcadores y otros.
    * La herencia de contenido en las páginas de Live Copy respectivas se actualiza para reflejar la nueva ubicación de sus orígenes en el modelo.
@@ -143,7 +143,7 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de origen
 
 >[!NOTE]
 >
->Esto solo funcionará con el activador [](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers)Al desplegar.
+>Esto solo funcionará con el [activador de despliegue de activación](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
 
 * Cree una configuración de implementación personalizada:
 
@@ -167,20 +167,20 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de origen
          Esto garantizará que no se elimine ningún contenido de la Live Copy ni se desactive de la publicación.
 
 
-## Personalización de grupos de trabajo {#customizing-rollouts}
+## Personalización de los lanzamientos {#customizing-rollouts}
 
-Las configuraciones de implementación de MSM son altamente personalizables. Debe tener en cuenta que la automatización de las implementaciones puede tener consecuencias de gran alcance. Como práctica recomendada, debe planear *muy* cuidadosamente antes, por ejemplo:
+Las configuraciones de implementación de MSM son altamente personalizables. Debe tener en cuenta que la automatización de las implementaciones puede tener consecuencias de gran alcance. Como práctica recomendada, debe planificar *muy* cuidadosamente antes, por ejemplo:
 
-* automatización de implementaciones; por ejemplo, con los activadores [onModify](#onmodify),
-* personalizar tipos y propiedades [de nodos](#node-types-properties),
+* automatización de implementaciones; por ejemplo, con [activadores onModify](#onmodify),
+* personalizar [tipos/propiedades de nodo](#node-types-properties),
 * iniciar flujos de trabajo subsiguientes,
 * y/o activar contenido como parte de los lanzamientos.
 
 ### onModify {#onmodify}
 
-Al utilizar el [activador](/help/sites-administering/msm-sync.md#rollout-triggers) de despliegue `onModify` debe tener en cuenta lo siguiente:
+Al utilizar el [activador de despliegue](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` debe tener en cuenta lo siguiente:
 
-* La automatización de los despliegues con `onModify` activadores puede tener un impacto negativo en el rendimiento de la creación, ya que activan los despliegues después de *cada* modificación de página.
+* La automatización de los despliegues con `onModify` activadores puede tener un impacto negativo en el rendimiento de la creación, ya que activan los despliegues después de *cada* modificación de la página.
 
 * El resultado de la implementación puede diferir del esperado, ya que:
 
@@ -189,13 +189,13 @@ Al utilizar el [activador](/help/sites-administering/msm-sync.md#rollout-trigger
 
 * El uso de una configuración de implementación de este tipo podría provocar conflictos de confirmación si se producen actualizaciones simultáneas del mismo recurso.
 
-Por lo tanto, se recomienda que *solo* utilice `onModify` activadores si los beneficios de la iniciación automática de la implementación superan cualquier problema de rendimiento potencial.
+Por lo tanto, se recomienda que *sólo* utilice `onModify` activadores si los beneficios de la iniciación automática de la implementación superan cualquier posible problema de performance.
 
 ### Tipos de nodo/Propiedades {#node-types-properties}
 
 Recuerde que:
 
-* Además de personalizar las acciones de implementación, MSM también permite personalizar las propiedades de nodo que se están implementando. La configuración OSGi de [MSM le permite excluir los tipos](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) de nodos de la copia desde el origen a la Live Copy.
+* Además de personalizar las acciones de implementación, MSM también permite personalizar las propiedades de nodo que se están implementando. La configuración OSGi de [MSM permite excluir los tipos de nodo](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) de la copia desde el origen a la Live Copy.
 
 ## Información adicional {#further-information}
 
