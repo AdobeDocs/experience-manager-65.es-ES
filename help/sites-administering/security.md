@@ -46,7 +46,7 @@ Por lo tanto, los grupos tienden a permanecer estables, mientras que los usuario
 
 Con la planificación y una estructura limpia, el uso de grupos puede reflejar su estructura, proporcionando una visión general clara y un mecanismo eficaz para las actualizaciones.
 
-### Built-in Users and Groups {#built-in-users-and-groups}
+### Usuarios y grupos integrados {#built-in-users-and-groups}
 
 AEM WCM instala varios usuarios y grupos. Esto se puede ver cuando accede por primera vez a la consola de seguridad después de la instalación.
 
@@ -55,7 +55,7 @@ Las siguientes tablas lista cada elemento junto con:
 * una breve descripción
 * cualquier recomendación sobre los cambios necesarios
 
-*Cambie todas las contraseñas* predeterminadas (si no elimina la cuenta en determinadas circunstancias).
+*Cambie todas las contraseñas*  predeterminadas (si no elimina la cuenta en determinadas circunstancias).
 
 <table>
  <tbody>
@@ -145,15 +145,15 @@ AEM utiliza ACL para determinar qué acciones puede realizar un usuario o grupo 
 
 ### Permisos y ACL {#permissions-and-acls}
 
-Los permisos definen quién puede realizar las acciones en un recurso. Los permisos son el resultado de evaluaciones de [control de acceso](#access-control-lists-and-how-they-are-evaluated) .
+Los permisos definen quién puede realizar las acciones en un recurso. Los permisos son el resultado de evaluaciones de [control de acceso](#access-control-lists-and-how-they-are-evaluated).
 
-Puede cambiar los permisos concedidos o denegados a un usuario determinado seleccionando o borrando las casillas de verificación de las [acciones](security.md#actions)de AEM individuales. Una marca de verificación indica que se permite una acción. Ninguna marca de verificación indica que se ha denegado una acción.
+Puede cambiar los permisos concedidos o denegados a un usuario determinado seleccionando o borrando las casillas de verificación de las acciones [AEM individuales](security.md#actions). Una marca de verificación indica que se permite una acción. Ninguna marca de verificación indica que se ha denegado una acción.
 
 Cuando la marca de verificación se encuentra en la cuadrícula, también indica qué permisos tienen los usuarios en qué ubicaciones de AEM (es decir, qué rutas).
 
 ### Acciones {#actions}
 
-Las acciones se pueden realizar en una página (recurso). Para cada página de la jerarquía, puede especificar qué acción puede realizar el usuario en esa página. [Los permisos](#permissions-and-acls) le permiten permitir o denegar una acción.
+Las acciones se pueden realizar en una página (recurso). Para cada página de la jerarquía, puede especificar qué acción puede realizar el usuario en esa página. [](#permissions-and-acls) Permiso para permitir o denegar una acción.
 
 <table>
  <tbody>
@@ -178,7 +178,7 @@ Las acciones se pueden realizar en una página (recurso). Para cada página de l
    <td><p>El usuario puede:</p>
     <ul>
      <li>cree una página nueva o una página secundaria.</li>
-    </ul> <p>Si se deniega la <strong>modificación</strong> , los subárboles situados debajo de jcr:content se excluyen específicamente porque la creación de jcr:content y sus nodos secundarios se consideran una modificación de página. Esto solo se aplica a los nodos que definen un nodo secundario jcr:content.</p> </td>
+    </ul> <p>Si se deniega <strong>modificar</strong>, los subárboles situados debajo de jcr:content se excluyen específicamente porque la creación de jcr:content y sus nodos secundarios se consideran una modificación de página. Esto solo se aplica a los nodos que definen un nodo secundario jcr:content.</p> </td>
   </tr>
   <tr>
    <td>Eliminar</td>
@@ -186,7 +186,7 @@ Las acciones se pueden realizar en una página (recurso). Para cada página de l
     <ul>
      <li>elimine los párrafos existentes de la página o de cualquier página secundaria.</li>
      <li>elimine una página o página secundaria.</li>
-    </ul> <p>Si se deniega la <strong>modificación</strong> , se excluye específicamente cualquier subárbol debajo de jcr:content al eliminar jcr:content y sus nodos secundarios se consideran una modificación de página. Esto solo se aplica a los nodos que definen un nodo secundario jcr:content.</p> </td>
+    </ul> <p>Si se deniega <strong>modificar</strong> cualquier subárbol por debajo de jcr:content se excluye específicamente al eliminar jcr:content y sus nodos secundarios se consideran una modificación de página. Esto solo se aplica a los nodos que definen un nodo secundario jcr:content.</p> </td>
   </tr>
   <tr>
    <td>Leer ACL</td>
@@ -205,7 +205,7 @@ Las acciones se pueden realizar en una página (recurso). Para cada página de l
 
 >[!NOTE]
 >
->AEM genera automáticamente grupos de usuarios para la asignación de funciones (Propietario, Editor, Visor) en [colecciones](/help/assets/manage-collections.md). Sin embargo, la adición manual de ACL para estos grupos puede introducir vulnerabilidades de seguridad dentro de AEM. Adobe recomienda que evite agregar ACL manualmente.
+>AEM genera automáticamente grupos de usuarios para la asignación de funciones (Propietario, Editor, Visor) en [Colecciones](/help/assets/manage-collections.md). Sin embargo, la adición manual de ACL para estos grupos puede introducir vulnerabilidades de seguridad dentro de AEM. Adobe recomienda que evite agregar ACL manualmente.
 
 ### listas de control de acceso y cómo se evalúan {#access-control-lists-and-how-they-are-evaluated}
 
@@ -215,11 +215,11 @@ Las Listas de control de acceso están compuestas por los permisos individuales 
 
 >[!NOTE]
 >
->Hay ACL que se incluyen con los ejemplos. Se recomienda que revise y determine qué es lo adecuado para sus aplicaciones. Para revisar las ACL incluidas, vaya a **CRXDE **y seleccione la ficha **Control de acceso** para los siguientes nodos:
+>Hay ACL que se incluyen con los ejemplos. Se recomienda que revise y determine qué es lo adecuado para sus aplicaciones. Para revisar las ACL incluidas, vaya a **CRXDE **y seleccione la ficha **Control de acceso** para los nodos siguientes:
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`:: Permite que todos lean el acceso.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`:: Permite que todos lean el acceso.
->`/home/users/geometrixx-outdoors`:: Permite a todos leer el acceso para `*/profile*` y
+>`/home/users/geometrixx-outdoors`:: Permite que todos lean acceso para `*/profile*` y
 >`*/social/relationships/following/*`.
 >
 >La aplicación personalizada puede establecer el acceso para otras relaciones, como `*/social/relationships/friend/*` o `*/social/relationships/pending-following/*`.
@@ -232,9 +232,9 @@ Las Listas de control de acceso están compuestas por los permisos individuales 
 >
 >Para usuarios de CQ 5.3:
 >
->A diferencia de las versiones anteriores de CQ, **crear** y **eliminar** ya no debería concederse si un usuario solo necesita modificar páginas. En su lugar, conceda la acción de **modificación** solo si desea que los usuarios puedan crear, modificar o eliminar componentes en páginas existentes.
+>A diferencia de las versiones anteriores de CQ, **create** y **delete** ya no deben concederse si un usuario solo necesita modificar páginas. En su lugar, conceda la acción **modificar** sólo si desea que los usuarios puedan crear, modificar o eliminar componentes en páginas existentes.
 >
->Por motivos de compatibilidad con versiones anteriores, las pruebas de acciones no tienen en cuenta el tratamiento especial de los nodos que definen **jcr:content** .
+>Por razones de compatibilidad con versiones anteriores, las pruebas de acciones no tienen en cuenta el tratamiento especial de los nodos que definen **jcr:content**.
 
 | **Acción** | **Descripción** |
 |---|---|
@@ -292,9 +292,9 @@ A continuación se ofrecen recomendaciones sobre la administración de listas de
 
    El uso de denegar puede producir efectos inesperados si los permisos se aplican en un orden distinto al esperado. Si un usuario es miembro de más de un grupo, las instrucciones Denegar de un grupo pueden cancelar la instrucción Permitir de otro grupo o viceversa. Es difícil mantener una visión general cuando esto sucede y puede llevar fácilmente a resultados imprevistos, mientras que Permitir asignaciones no provoca tales conflictos.
 
-   Adobe recomienda trabajar con Permitir en lugar de Denegar para ver [optimizaciones](#best-practices).
+   Adobe recomienda trabajar con Permitir en lugar de Denegar, consulte [Optimizaciones](#best-practices).
 
-Antes de modificar cualquiera de los permisos, asegúrese de comprender cómo funcionan y cómo se interrelacionan. Consulte la documentación de CRX para ilustrar cómo AEM WCM [evalúa los derechos](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) de acceso y ejemplos de configuración de listas de control de acceso.
+Antes de modificar cualquiera de los permisos, asegúrese de comprender cómo funcionan y cómo se interrelacionan. Consulte la documentación de CRX para ilustrar cómo AEM WCM [evalúa los derechos de acceso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) y ejemplos de configuración de listas de control de acceso.
 
 ### Permisos    {#permissions}
 
@@ -306,13 +306,13 @@ Para permitir o denegar permisos, seleccione o desactive las casillas de verific
 
 ![cqsecuritypermistab](assets/cqsecuritypermissionstab.png)
 
-### Visualización de información detallada sobre permisos {#viewing-detailed-permission-information}
+### Visualización de información detallada de permisos {#viewing-detailed-permission-information}
 
 Junto con la vista de cuadrícula, AEM proporciona una vista detallada de los permisos para un usuario o grupo seleccionado en una ruta determinada. La vista de detalles proporciona información adicional.
 
 Además de ver información, también puede incluir o excluir al usuario o grupo actual de un grupo. Consulte [Añadir usuarios o grupos al Añadir permisos](#adding-users-or-groups-while-adding-permissions). Los cambios realizados aquí se reflejan inmediatamente en la parte superior de la vista detallada.
 
-Para acceder a la vista de detalles, en la ficha **Permisos** , haga clic en **Detalles** de cualquier grupo o usuario y ruta seleccionados.
+Para acceder a la vista de detalles, en la ficha **Permisos**, haga clic en **Detalles** para cualquier grupo/usuario y ruta seleccionados.
 
 ![detalles del permiso](assets/permissiondetails.png)
 
@@ -342,7 +342,7 @@ Los detalles se dividen en dos partes:
 
 ### Suplantar a otro usuario {#impersonating-another-user}
 
-With the [Impersonate functionality](/help/sites-authoring/user-properties.md#user-settings) a user can work on behalf of another user.
+Con la [funcionalidad de suplantar](/help/sites-authoring/user-properties.md#user-settings) un usuario puede trabajar en nombre de otro usuario.
 
 Esto significa que una cuenta de usuario puede especificar otras cuentas que pueden funcionar con su cuenta. En otras palabras, si se permite que el usuario B suplantara al usuario A, el usuario B puede realizar acciones utilizando los detalles completos de la cuenta del usuario A.
 
@@ -350,7 +350,7 @@ Esto permite que las cuentas del suplantador completen tareas como si estuvieran
 
 >[!NOTE]
 >
->Para que el suplantador funcione para usuarios no administradores, se requiere que el suplantador (en el caso anterior, user-B) tenga permisos READ en la `/home/users` ruta.
+>Para que el suplantador funcione para usuarios no administradores, se requiere que el suplantador (en el caso anterior, user-B) tenga permisos READ en la ruta `/home/users`.
 >
 >Para obtener más información sobre cómo lograr esto, consulte [Permisos en AEM](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -364,7 +364,7 @@ Esto permite que las cuentas del suplantador completen tareas como si estuvieran
 >
 >Las páginas no se pueden bloquear al suplantar al usuario que ha bloqueado la página.
 
-### Prácticas recomendadas   {#best-practices}
+### Prácticas recomendadas    {#best-practices}
 
 A continuación se describen las prácticas recomendadas para trabajar con permisos y privilegios:
 
@@ -376,7 +376,7 @@ A continuación se describen las prácticas recomendadas para trabajar con permi
 | *Probar* | Utilice una instalación de prueba para practicar y asegurarse de comprender las relaciones entre los distintos usuarios y grupos. |
 | *Usuarios/Grupos predeterminados* | Actualice siempre los usuarios y grupos predeterminados inmediatamente después de la instalación para evitar problemas de seguridad. |
 
-## Managing Users and Groups {#managing-users-and-groups}
+## Administración de usuarios y grupos {#managing-users-and-groups}
 
 Entre los usuarios se incluyen personas que utilizan el sistema y sistemas extranjeros que realizan solicitudes al sistema.
 
@@ -414,49 +414,49 @@ Las fichas proporcionan acceso a varias configuraciones:
 | Ocultar usuarios | Un conmutador que ocultará a todos los usuarios de la lista, dejando solo grupos. Consulte [Ocultar usuarios y grupos](#hiding-users-and-groups). |
 | Ocultar grupos | Un conmutador que ocultará todos los grupos enumerados, dejando solo a los usuarios. Consulte [Ocultar usuarios y grupos](#hiding-users-and-groups). |
 | Editar | Menú que permite crear y eliminar, así como activar y desactivar usuarios o grupos. Consulte [Creación de usuarios y grupos](#creating-users-and-groups) y [Eliminación de usuarios y grupos](#deleting-users-and-groups). |
-| Propiedades | Lista información sobre el usuario o grupo que puede incluir información de correo electrónico, una descripción e información de nombre. También le permite cambiar la contraseña de un usuario. Consulte [Creación de usuarios y grupos](#creating-users-and-groups), [Modificación de las propiedades](#modifying-user-and-group-properties) de usuario y grupo y [Cambio de la contraseña](#changing-a-user-password)de usuario. |
+| Propiedades | Lista información sobre el usuario o grupo que puede incluir información de correo electrónico, una descripción e información de nombre. También le permite cambiar la contraseña de un usuario. Consulte [Creación de usuarios y grupos](#creating-users-and-groups), [Modificación de las propiedades de usuario y grupo](#modifying-user-and-group-properties) y [Cambio de una contraseña de usuario](#changing-a-user-password). |
 | Grupos | Lista todos los grupos a los que pertenece el usuario o grupo seleccionado. Puede asignar el usuario o los grupos seleccionados a grupos adicionales o eliminarlos de los grupos. Consulte [Grupos](#adding-users-or-groups-to-a-group). |
 | Miembros | Disponible solo para grupos. Lista a los miembros de un grupo en particular. Consulte [Miembros](#members-adding-users-or-groups-to-a-group). |
-| Permisos    | Puede asignar permisos a un usuario o grupo. Permite controlar lo siguiente:<ul><li>Permisos relacionados con páginas/nodos particulares. Consulte [Configuración de permisos](#setting-permissions). </li><li>Permisos relacionados con la creación y eliminación de páginas y modificación de jerarquía. ??? le permite [asignar privilegios](#settingprivileges), como la modificación de jerarquía, que le permite crear y eliminar páginas,</li><li>Permisos relacionados con los privilegios [de](#setting-replication-privileges) replicación (normalmente de autor a publicación) según una ruta.</li></ul> |
-| Suplantadores | Permite a otro usuario suplantar la cuenta. Resulta útil cuando necesita que un usuario actúe en nombre de otro usuario. Consulte [Suplantación de usuarios](#impersonating-another-user). |
-| Preferencias | Establece [las preferencias del grupo o del usuario](#setting-user-and-group-preferences). Por ejemplo, las preferencias de idioma. |
+| Permisos    | Puede asignar permisos a un usuario o grupo. Permite controlar lo siguiente:<ul><li>Permisos relacionados con páginas/nodos particulares. Consulte [Configuración de permisos](#setting-permissions). </li><li>Permisos relacionados con la creación y eliminación de páginas y modificación de jerarquía. ??? le permite [asignar privilegios](#settingprivileges), como la modificación de jerarquía, que le permite crear y eliminar páginas,</li><li>Permisos relacionados con [privilegios de replicación](#setting-replication-privileges) (generalmente de autor a publicación) según una ruta.</li></ul> |
+| Suplantadores | Permite a otro usuario suplantar la cuenta. Resulta útil cuando necesita que un usuario actúe en nombre de otro usuario. Consulte [Suplantar usuarios](#impersonating-another-user). |
+| Preferencias | Establece [preferencias para el grupo o usuario](#setting-user-and-group-preferences). Por ejemplo, las preferencias de idioma. |
 
-### Filtering Users and Groups {#filtering-users-and-groups}
+### Filtrado de usuarios y grupos {#filtering-users-and-groups}
 
-Puede filtrar la lista introduciendo una expresión de filtro que oculte todos los usuarios y grupos que no coincidan con la expresión. También puede ocultar usuarios y grupos mediante los botones [Ocultar usuario y Ocultar grupo](#hiding-users-and-groups) .
+Puede filtrar la lista introduciendo una expresión de filtro que oculte todos los usuarios y grupos que no coincidan con la expresión. También puede ocultar usuarios y grupos mediante los botones [Ocultar usuario y Ocultar grupo](#hiding-users-and-groups).
 
 Para filtrar usuarios o grupos:
 
-1. En la lista del árbol izquierdo, escriba la expresión del filtro en el espacio proporcionado. Por ejemplo, si se introduce **admin** , se mostrarán todos los usuarios y grupos que contengan esta cadena.
+1. En la lista del árbol izquierdo, escriba la expresión del filtro en el espacio proporcionado. Por ejemplo, al introducir **admin** se muestran todos los usuarios y grupos que contienen esta cadena.
 1. Haga clic en la lupa para filtrar la lista.
 
    ![cqsecurityfilter](assets/cqsecurityfilter.png)
 
-1. Haga clic en la **x** cuando desee eliminar todos los filtros.
+1. Haga clic en **x** cuando desee eliminar todos los filtros.
 
-### Hiding Users and Groups {#hiding-users-and-groups}
+### Ocultar usuarios y grupos {#hiding-users-and-groups}
 
 Ocultar usuarios o grupos es otra forma de filtrar la lista de todos los usuarios y grupos de un sistema. Existen dos mecanismos de conmutación. Al hacer clic en Ocultar usuario se ocultan todos los usuarios de la vista y al hacer clic en Ocultar grupos se ocultan todos los grupos de la vista (no se pueden ocultar tanto los usuarios como los grupos al mismo tiempo). Para filtrar la lista mediante una expresión de filtro, consulte [Filtrado de usuarios y grupos](#filtering-users-and-groups).
 
 Para ocultar usuarios y grupos:
 
-1. En la consola **Seguridad** , haga clic en **Ocultar usuarios** u **Ocultar grupos**. El botón seleccionado aparece resaltado.
+1. En la consola **Seguridad**, haga clic en **Ocultar usuarios** o **Ocultar grupos**. El botón seleccionado aparece resaltado.
 
    ![cqsecurityhideusers](assets/cqsecurityhideusers.png)
 
 1. Para que vuelvan a aparecer usuarios o grupos, vuelva a hacer clic en el botón correspondiente.
 
-### Creating Users and Groups {#creating-users-and-groups}
+### Creación de usuarios y grupos {#creating-users-and-groups}
 
 Para crear un nuevo usuario o grupo:
 
-1. En la lista de árbol de la consola **Seguridad** , haga clic en **Editar** y, a continuación, en **Crear usuario** o **Crear grupo**.
+1. En la lista del árbol de la consola **Seguridad**, haga clic en **Editar** y, a continuación, haga clic en **Crear usuario** o **Crear grupo**.
 
    ![cqseruityeditcontextmenu](assets/cqseruityeditcontextmenu.png)
 
 1. Introduzca los detalles requeridos, según si está creando un usuario o un grupo.
 
-   * Si selecciona **Crear usuario,** introduzca el ID de inicio de sesión, el nombre y los apellidos, la dirección de correo electrónico y la contraseña. De forma predeterminada, AEM crea una ruta basada en la primera letra del apellido, pero puede seleccionar otra ruta.
+   * Si selecciona **Crear usuario,** debe introducir el ID de inicio de sesión, el nombre y los apellidos, la dirección de correo electrónico y una contraseña. De forma predeterminada, AEM crea una ruta basada en la primera letra del apellido, pero puede seleccionar otra ruta.
 
    ![createuserdialog](assets/createuserdialog.png)
 
@@ -466,21 +466,21 @@ Para crear un nuevo usuario o grupo:
 
 1. Haga clic en **Crear**. El usuario o grupo que ha creado aparece en la lista de árbol.
 
-### Deleting Users and Groups {#deleting-users-and-groups}
+### Eliminación de usuarios y grupos {#deleting-users-and-groups}
 
 Para eliminar un usuario o grupo:
 
-1. En la consola **Seguridad** , seleccione el usuario o grupo que desee eliminar. Si desea eliminar varios elementos, pulse Mayús+clic o Control+clic para seleccionarlos.
-1. Haga clic en **Editar,** luego seleccione Eliminar. AEM WCM le preguntará si desea eliminar el usuario o grupo.
+1. En la consola **Seguridad**, seleccione el usuario o grupo que desee eliminar. Si desea eliminar varios elementos, pulse Mayús+clic o Control+clic para seleccionarlos.
+1. Haga clic en **Editar,** y seleccione Eliminar. AEM WCM le preguntará si desea eliminar el usuario o grupo.
 1. Haga clic en **Aceptar** para confirmar o en Cancelar para cancelar la acción.
 
-### Modificación de las propiedades de usuario y grupo {#modifying-user-and-group-properties}
+### Modificación de las propiedades de grupo y usuario {#modifying-user-and-group-properties}
 
 Para modificar las propiedades de usuario y grupo:
 
-1. En la consola **Seguridad** , haga clic con el doble en el nombre de usuario o grupo que desee modificar.
+1. En la consola **Seguridad**, haga clic con el doble en el nombre de usuario o grupo que desee modificar.
 
-1. Haga clic en la ficha **Propiedades** , realice los cambios necesarios y haga clic en **Guardar**.
+1. Haga clic en la ficha **Propiedades**, realice los cambios necesarios y haga clic en **Guardar**.
 
    ![cqsecurityuserprops](assets/cqsecurityuserprops.png)
 
@@ -494,18 +494,18 @@ Siga el procedimiento siguiente para modificar la contraseña de un usuario.
 
 >[!NOTE]
 >
->No puede utilizar la consola Seguridad para cambiar la contraseña de administrador. Para cambiar la contraseña de la cuenta de administrador, utilice la consola [](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) Usuarios que proporciona Granite Operations.
+>No puede utilizar la consola Seguridad para cambiar la contraseña de administrador. Para cambiar la contraseña de la cuenta de administrador, utilice la [consola de usuarios](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) que proporciona Granite Operations.
 >
 >Si utiliza AEM Forms en JEE, no utilice las instrucciones siguientes para cambiar la contraseña, sino que utilice AEM Forms en la consola de administración de JEE (/adminui) para cambiar la contraseña.
 
-1. En la consola **Seguridad** , haga clic con el doble en el nombre de usuario para el que desee cambiar la contraseña.
+1. En la consola **Seguridad**, haga clic con el doble en el nombre de usuario para el que desee cambiar la contraseña.
 1. Haga clic en la ficha **Propiedades** (si no está activa).
 1. Haga clic en **Establecer contraseña**. Se abre la ventana Configurar contraseña, donde puede cambiar la contraseña.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
 1. Introduzca la nueva contraseña dos veces; como no se muestran en texto sin formato, se trata de una confirmación; si no coinciden, el sistema muestra un error.
-1. Haga clic en **Establecer** para activar la nueva contraseña de la cuenta.
+1. Haga clic en **Configurar** para activar la nueva contraseña para la cuenta.
 
 ### Añadir usuarios o grupos a un grupo {#adding-users-or-groups-to-a-group}
 
@@ -520,24 +520,24 @@ AEM ofertas de tres formas diferentes de agregar usuarios o grupos a un grupo ex
 La ficha **Grupos** muestra a qué grupos pertenece la cuenta actual. Puede utilizarla para agregar la cuenta seleccionada a un grupo:
 
 1. Haga clic con el doble en el nombre de la cuenta (usuario o grupo) que desee asignar a un grupo.
-1. Click the **Groups** tab. Verá una lista de grupos a los que la cuenta ya pertenece.
-1. En la lista de árbol, haga clic en el nombre del grupo al que desee agregar la cuenta y arrástrelo al panel **Grupos** . (Si desea agregar varios usuarios, pulse Mayús+clic o Control+clic en esos nombres y arrástrelos).
+1. Haga clic en la ficha **Grupos**. Verá una lista de grupos a los que la cuenta ya pertenece.
+1. En la lista de árbol, haga clic en el nombre del grupo que desee agregar a la cuenta y arrástrelo al panel **Grupos**. (Si desea agregar varios usuarios, pulse Mayús+clic o Control+clic en esos nombres y arrástrelos).
 
    ![cqsecurityaddusertogroup](assets/cqsecurityaddusertogroup.png)
 
-1. Click **Save** to save your changes.
+1. Haga clic en **Guardar** para guardar los cambios.
 
 ### Miembros: Añadir usuarios o grupos a un grupo {#members-adding-users-or-groups-to-a-group}
 
 La ficha **Miembros** solo funciona para grupos y muestra los usuarios y grupos que pertenecen al grupo actual. Puede utilizarla para agregar cuentas a un grupo:
 
 1. Haga clic con el botón doble en el nombre del grupo al que desee agregar miembros.
-1. Click the **Members** tab. Verá una lista de miembros que ya pertenecen a este grupo.
-1. En la lista de árbol, haga clic en el nombre del miembro que desee agregar al grupo y arrástrelo al panel **Miembros** . (Si desea agregar varios usuarios, pulse Mayús+clic o Control+clic en esos nombres y arrástrelos).
+1. Haga clic en la ficha **Miembros**. Verá una lista de miembros que ya pertenecen a este grupo.
+1. En la lista de árbol, haga clic en el nombre del miembro que desee agregar al grupo y arrástrelo al panel **Miembros**. (Si desea agregar varios usuarios, pulse Mayús+clic o Control+clic en esos nombres y arrástrelos).
 
    ![cqsecurityadduserasmiembro](assets/cqsecurityadduserasmember.png)
 
-1. Click **Save** to save your changes.
+1. Haga clic en **Guardar** para guardar los cambios.
 
 ### Añadir usuarios o grupos al Añadir permisos {#adding-users-or-groups-while-adding-permissions}
 
@@ -545,16 +545,16 @@ Para agregar miembros a un grupo en una ruta determinada:
 
 1. Haga clic con el doble en el nombre del grupo o usuario al que desee agregar usuarios.
 
-1. Click the **Permissions** tab.
+1. Haga clic en la ficha **Permisos**.
 
 1. Vaya a la ruta a la que desee agregar permisos y haga clic en **Detalles**. La parte inferior de la ventana de detalles proporciona información sobre quién tiene permisos para esa página.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. Seleccione la casilla de verificación de la columna **Miembro** para los miembros que desee que tengan permisos en esa ruta. Desactive la casilla de verificación del miembro para el que desea quitar permisos. Aparece un triángulo rojo en la celda en la que ha realizado cambios.
+1. Seleccione la casilla de verificación de la columna **Miembro** para los miembros que desea que tengan permisos para esa ruta. Desactive la casilla de verificación del miembro para el que desea quitar permisos. Aparece un triángulo rojo en la celda en la que ha realizado cambios.
 1. Haga clic en **Aceptar** para guardar los cambios.
 
-### Eliminación de usuarios o grupos de grupos {#removing-users-or-groups-from-groups}
+### Eliminando usuarios o grupos de grupos {#removing-users-or-groups-from-groups}
 
 AEM ofertas de tres formas diferentes de eliminar usuarios o grupos de un grupo:
 
@@ -562,29 +562,29 @@ AEM ofertas de tres formas diferentes de eliminar usuarios o grupos de un grupo:
 * Cuando se encuentra en el perfil de miembros, puede eliminar miembros de los grupos.
 * Cuando esté trabajando en Permisos, puede quitar miembros de los grupos.
 
-### Grupos: eliminación de usuarios o grupos de grupos {#groups-removing-users-or-groups-from-groups}
+### Grupos - Eliminación de usuarios o grupos de grupos {#groups-removing-users-or-groups-from-groups}
 
 Para eliminar una cuenta de usuario o grupo de un grupo:
 
 1. Haga clic con el doble en el nombre del grupo o cuenta de usuario que desee eliminar de un grupo.
-1. Click the **Groups** tab. Verá a qué grupos pertenece la cuenta seleccionada.
-1. En el panel **Grupos** , haga clic en el nombre del usuario o grupo que desee eliminar del grupo y haga clic en **Eliminar**. (Si desea eliminar varias cuentas, pulse Mayús+clic o Control+clic en esos nombres y haga clic en **Quitar**).
+1. Haga clic en la ficha **Grupos**. Verá a qué grupos pertenece la cuenta seleccionada.
+1. En el panel **Grupos**, haga clic en el nombre del usuario o grupo que desee eliminar del grupo y haga clic en **Eliminar**. (Si desea eliminar varias cuentas, pulse Mayús+clic o Control+clic en esos nombres y haga clic en **Eliminar**).
 
    ![cqsecurityremoveuserfromgrp](assets/cqsecurityremoveuserfromgrp.png)
 
-1. Click **Save** to save your changes.
+1. Haga clic en **Guardar** para guardar los cambios.
 
-### Miembros: eliminación de usuarios o grupos de grupos {#members-removing-users-or-groups-from-groups}
+### Miembros: Quitando usuarios o grupos de los grupos {#members-removing-users-or-groups-from-groups}
 
 Para eliminar cuentas de un grupo:
 
 1. Haga clic con el botón doble en el nombre del grupo del que desee quitar miembros.
-1. Click the **Members** tab. Verá una lista de miembros que ya pertenecen a este grupo.
-1. En el panel **Miembros** , haga clic en el nombre del miembro que desee eliminar del grupo y haga clic en **Eliminar**. (Si desea eliminar varios usuarios, pulse Mayús+clic o Control+clic en esos nombres y haga clic en **Eliminar**).
+1. Haga clic en la ficha **Miembros**. Verá una lista de miembros que ya pertenecen a este grupo.
+1. En el panel **Miembros**, haga clic en el nombre del miembro que desee eliminar del grupo y haga clic en **Eliminar**. (Si desea eliminar varios usuarios, pulse Mayús+clic o Control+clic en esos nombres y haga clic en **Eliminar**).
 
    ![cqsecurityremovemember](assets/cqsecurityremovemember.png)
 
-1. Click **Save** to save your changes.
+1. Haga clic en **Guardar** para guardar los cambios.
 
 ### Eliminación de usuarios o grupos al Añadir permisos {#removing-users-or-groups-while-adding-permissions}
 
@@ -592,20 +592,20 @@ Para eliminar miembros de un grupo en una ruta determinada:
 
 1. Haga clic con el doble en el nombre del grupo o usuario del que desee quitar usuarios.
 
-1. Click the **Permissions** tab.
+1. Haga clic en la ficha **Permisos**.
 
 1. Vaya a la ruta a la que desee quitar permisos y haga clic en **Detalles**. La parte inferior de la ventana de detalles proporciona información sobre quién tiene permisos para esa página.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. Seleccione la casilla de verificación de la columna **Miembro** para los miembros que desee que tengan permisos en esa ruta. Desactive la casilla de verificación del miembro para el que desea quitar permisos. Aparece un triángulo rojo en la celda en la que ha realizado cambios.
+1. Seleccione la casilla de verificación de la columna **Miembro** para los miembros que desea que tengan permisos para esa ruta. Desactive la casilla de verificación del miembro para el que desea quitar permisos. Aparece un triángulo rojo en la celda en la que ha realizado cambios.
 1. Haga clic en **Aceptar** para guardar los cambios.
 
 ### Sincronización de usuarios {#user-synchronization}
 
-Cuando la implementación es un conjunto de servidores [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm)publicación, los usuarios y grupos deben sincronizarse entre todos los nodos de publicación.
+Cuando la implementación es un [conjunto de servidores de publicación](/help/sites-deploying/recommended-deploys.md#tarmk-farm), los usuarios y grupos deben sincronizarse entre todos los nodos de publicación.
 
-Para obtener más información sobre la sincronización de usuarios y cómo habilitarla, consulte Sincronización [de usuarios](/help/sites-administering/sync.md).
+Para obtener más información sobre la sincronización de usuarios y cómo habilitarla, consulte [Sincronización de usuarios](/help/sites-administering/sync.md).
 
 ## Administración de permisos {#managing-permissions}
 
@@ -621,15 +621,15 @@ Los permisos permiten a los usuarios realizar determinadas acciones en los recur
 
 Para agregar, modificar o eliminar permisos:
 
-1. En la consola **Seguridad** , haga clic con el botón doble en el nombre del usuario o grupo para el que desee establecer permisos o [buscar nodos](#searching-for-nodes).
+1. En la consola **Seguridad**, haga clic con el botón doble en el nombre del usuario o grupo para el que desee establecer permisos o [buscar nodos](#searching-for-nodes).
 
-1. Click the **Permissions** tab.
+1. Haga clic en la ficha **Permisos**.
 
    ![cquserpermissions](assets/cquserpermissions.png)
 
 1. En la cuadrícula de árbol, active una casilla de verificación para permitir que el usuario o grupo seleccionado realice una acción o desactive una casilla de verificación para denegar al usuario o grupo seleccionado la realización de una acción. Para obtener más información, haga clic en **Detalles**.
 
-1. When finished, click **Save**.
+1. Cuando termine, haga clic en **Guardar**.
 
 ### Configuración de Privilegios de Replicación {#setting-replication-privileges}
 
@@ -647,16 +647,16 @@ El privilegio de replicación es el derecho a publicar contenido y se puede esta
 
 Para establecer privilegios de replicación:
 
-1. Seleccione el usuario o grupo en la lista, haga clic con el botón doble para abrirlo y haga clic en **Permisos**.
+1. Seleccione el usuario o grupo en la lista, haga clic con el botón doble para abrir y haga clic en **Permisos**.
 1. En la cuadrícula, navegue a la ruta donde desee que el usuario tenga privilegios de replicación o [busque nodos.](#searching-for-nodes)
 
-1. En la columna **Replicar** de la ruta seleccionada, active una casilla de verificación para agregar el privilegio de replicación para ese usuario o grupo, o desactive la casilla de verificación para eliminar el privilegio de replicación. AEM muestra un triángulo rojo en cualquier lugar donde haya realizado cambios que aún no se hayan guardado.
+1. En la columna **Replicar** en la ruta seleccionada, active una casilla de verificación para agregar el privilegio de replicación para ese usuario o grupo, o desactive la casilla de verificación para eliminar el privilegio de replicación. AEM muestra un triángulo rojo en cualquier lugar donde haya realizado cambios que aún no se hayan guardado.
 
    ![cquserreplicatepermissions](assets/cquserreplicatepermissions.png)
 
-1. Click **Save** to save your changes.
+1. Haga clic en **Guardar** para guardar los cambios.
 
-### Búsqueda de nodos {#searching-for-nodes}
+### Buscando nodos {#searching-for-nodes}
 
 Al agregar o quitar permisos, puede buscar o explorar el nodo.
 
@@ -680,7 +680,7 @@ En el cuadro de búsqueda, puede hacer lo siguiente:
 
 Para realizar una búsqueda en rutas o texto completo:
 
-1. En la consola Seguridad, seleccione un usuario o grupo y, a continuación, haga clic en la ficha **Permisos** .
+1. En la consola Seguridad, seleccione un usuario o grupo y, a continuación, haga clic en la ficha **Permisos**.
 
 1. En el cuadro Buscar, escriba un término para buscar.
 
@@ -698,7 +698,7 @@ Hay varios escenarios en los que puede que desee utilizar esta funcionalidad, en
 Para suplantar un usuario existente:
 
 1. En la lista de árbol, seleccione el nombre de la persona a la que desea asignar otros usuarios para que se suplanten. Haga clic con el doble para abrir.
-1. Click the **Impersonators** tab.
+1. Haga clic en la ficha **Suplantadores**.
 1. Haga clic en el usuario que desea que pueda suplantar al usuario seleccionado. Arrastre el usuario (que suplantará) desde la lista al panel Suplantar. El nombre aparece en la lista.
 
    ![chlimage_1-114](assets/chlimage_1-115.png)
@@ -710,13 +710,13 @@ Para suplantar un usuario existente:
 Para establecer las preferencias de usuario y grupo, incluido el idioma, la administración de ventanas y las preferencias de la barra de herramientas:
 
 1. Seleccione el usuario o grupo cuyas preferencias desee cambiar en el árbol izquierdo. Para seleccionar varios usuarios o grupos, pulse Ctrl+clic o Mayús+clic en las selecciones.
-1. Click the **Preferences** tab.
+1. Haga clic en la ficha **Preferencias**.
 
    ![cqsecuritypreferencias](assets/cqsecuritypreferences.png)
 
 1. Realice los cambios necesarios en las preferencias de grupo o usuario y haga clic en **Guardar** cuando termine.
 
-### Configuración de usuarios o administradores para que tengan el privilegio de administrar otros usuarios {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
+### Configurar usuarios o administradores para que tengan el privilegio de administrar otros usuarios {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
 
 Para configurar a los usuarios o administradores para que tengan privilegios para eliminar, activar o desactivar otros usuarios:
 
@@ -724,7 +724,7 @@ Para configurar a los usuarios o administradores para que tengan privilegios par
 
    ![cqsecurityadmembertoadmin](assets/cqsecurityaddmembertoadmin.png)
 
-1. En la ficha **Permisos** del usuario, vaya a &quot;/&quot; y, en la columna Replicar, active la casilla de verificación para permitir la replicación en &quot;/&quot; y haga clic en **Guardar**.
+1. En la ficha **Permisos** del usuario, navegue a &quot;/&quot; y, en la columna Replicar, active la casilla de verificación para permitir la replicación en &quot;/&quot; y haga clic en **Guardar**.
 
    ![cqsecurityreplicatepermissions](assets/cqsecurityreplicatepermissions.png)
 
@@ -736,11 +736,11 @@ Si planea implementar privilegios específicos de la aplicación, en la siguient
 
 El privilegio de modificación de jerarquía está cubierto por una combinación de jcr-privilegios. El privilegio de replicación se denomina **crx:replicate** que se almacena/evalúa junto con otros privilegios en el repositorio jcr. Sin embargo, no se aplica a nivel jcr.
 
-La definición y registro de privilegios personalizados forma parte oficialmente de la [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) a partir de la versión 2.4 (consulte también [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). El uso adicional está cubierto por la administración de Controles de acceso JCR, tal como se define en [JSR 283](https://jcp.org/en/jsr/detail?id=283) (sección 16). Además, la API de Jackrabbit define un par de extensiones.
+La definición y el registro de privilegios personalizados forman parte oficialmente de la [API de Jackrabbit](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) a partir de la versión 2.4 (consulte también [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). El uso adicional está cubierto por la Administración de Controles de acceso JCR, tal como se define en [JSR 283](https://jcp.org/en/jsr/detail?id=283) (sección 16). Además, la API de Jackrabbit define un par de extensiones.
 
-El mecanismo de registro de privilegios se refleja en la interfaz de usuario en Configuración **del** repositorio.
+El mecanismo de registro de privilegios se refleja en la interfaz de usuario en **Configuración del repositorio**.
 
-El registro de nuevos privilegios (personalizados) está protegido por un privilegio integrado que debe concederse a nivel de repositorio (en JCR: pasando &#39;null&#39; como el parámetro &#39;absPath&#39; en la API mgt de ac, consulte jsr 333 para obtener más información). De forma predeterminada, el **administrador** y todos los miembros de los administradores tienen ese privilegio concedido.
+El registro de nuevos privilegios (personalizados) está protegido por un privilegio integrado que debe concederse a nivel de repositorio (en JCR: pasando &#39;null&#39; como el parámetro &#39;absPath&#39; en la API mgt de ac, consulte jsr 333 para obtener más información). De forma predeterminada, **admin** y todos los miembros de los administradores tienen ese privilegio concedido.
 
 >[!NOTE]
 >
