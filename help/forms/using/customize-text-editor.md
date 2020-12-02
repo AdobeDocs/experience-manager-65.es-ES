@@ -43,7 +43,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta denominada config con una ruta/estructura similar a la carpeta de configuración, que se encuentra en libs/fd/cm/config, siguiendo los pasos siguientes:
 
-   1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/config`
 
@@ -70,11 +70,11 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
       `apps/fd/cm/config`
 
-   1. El nombre del archivo pegado, de forma predeterminada, es `copy of tbxeditor-config.xml.` Cambiar el nombre del archivo a `tbxeditor-config.xml` y hacer clic en **Guardar todo**.
+   1. El nombre del archivo pegado, de forma predeterminada, es `copy of tbxeditor-config.xml.` Cambie el nombre del archivo a `tbxeditor-config.xml` y haga clic en **Guardar todo**.
 
 1. Abra el archivo tbxeditor-config.xml en apps/fd/cm/config y, a continuación, realice los cambios necesarios.
 
-   1. Haga clic con el botón Doble en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abre el archivo.
+   1. Haga clic con el botón doble en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abre el archivo.
 
       ```xml
       <editorConfig>
@@ -168,7 +168,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
       * Valores predeterminados de familia y tamaño de fuente, altura, espaciado entre letras y formato de fecha
       * Sangrías de viñeta
 
-      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el ordenador cliente para acceder a la personalización de fuentes y trabajar con ella. Para obtener más información, consulte [Añadir fuentes personalizadas al equipo](#addcustomfonts)cliente.
+      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el ordenador cliente para acceder a la personalización de fuentes y trabajar con ella. Para obtener más información, consulte [Añadir fuentes personalizadas al equipo cliente](#addcustomfonts).
 
       También puede cambiar los valores predeterminados para varios aspectos del texto y, al eliminar las entradas, quitar las fuentes del editor de texto.
 
@@ -186,9 +186,9 @@ Para obtener más información sobre la instalación de fuentes, consulte:
 
 ## Acceso a las personalizaciones de fuentes {#access-font-customizations}
 
-Después de realizar cambios en las fuentes del archivo tbxeditor-config.xml en CRX e instalar las fuentes necesarias en el ordenador cliente que se utiliza para acceder a los AEM Forms, los cambios aparecerán en el editor de texto.
+Después de realizar cambios en las fuentes del archivo tbxeditor-config.xml en CRX e instalar las fuentes necesarias en el ordenador cliente que se utiliza para acceder a AEM Forms, los cambios aparecerán en el editor de texto.
 
-Por ejemplo, la fuente Sazanami Mincho Medium agregada en el archivo [Personalizar fuentes editando el archivo tbxeditor-config.xml en el procedimiento CRX](#customizefonts) aparece en la interfaz de usuario del editor de texto de la siguiente manera:
+Por ejemplo, la fuente Sazanami Mincho Medium agregada en la [Personalice fuentes editando el archivo tbxeditor-config.xml en el procedimiento CRX](#customizefonts) aparece en la interfaz de usuario del editor de texto de la siguiente manera:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
