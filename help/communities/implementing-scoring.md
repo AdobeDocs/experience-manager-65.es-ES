@@ -28,13 +28,13 @@ La función de puntuación y distintivos de AEM Communities permite identificar 
 
 Los principales aspectos de la puntuación y las insignias son:
 
-* [Asigne distintivos](#assign-and-revoke-badges) para identificar la función de un miembro en la comunidad.
+* [Asigne ](#assign-and-revoke-badges) distintivos para identificar la función de un miembro en la comunidad.
 
-* [Asignación básica de distintivos](#enable-scoring) a los miembros para fomentar su participación (cantidad de contenido creado).
+* [Concesión básica de ](#enable-scoring) distintivos a los miembros para fomentar su participación (cantidad de contenido creado).
 
-* [Concesión avanzada de distintivos](/help/communities/advanced.md) para identificar a los miembros como expertos (calidad del contenido creado).
+* [Concesión avanzada de ](/help/communities/advanced.md) distintivos para identificar a los miembros como expertos (calidad del contenido creado).
 
-**Tenga en cuenta** que la asignación de distintivos [no está habilitada de forma predeterminada](/help/communities/implementing-scoring.md#main-pars-text-237875536).
+**** Tenga en cuenta que la concesión de distintivos  [no está habilitada de forma predeterminada](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Los distintivos se diferencian en UGC en cuanto a si fueron asignados o ganados 
 
 ### Interfaz de usuario de administración de distintivos {#badge-management-ui}
 
-La consola [de](/help/communities/badges.md) distintivos de comunidades permite agregar distintivos personalizados que se pueden mostrar para un miembro cuando se ganan (se otorgan) o cuando asumen un papel específico en la comunidad (se asignan).
+La consola Communities [Badges](/help/communities/badges.md) permite agregar distintivos personalizados que se pueden mostrar para un miembro cuando se ganan (se otorgan) o cuando asumen un rol específico en la comunidad (se asignan).
 
 ### Distintivos asignados {#assigned-badges}
 
@@ -78,14 +78,14 @@ En la versión se incluyen tres distintivos basados en funciones:
 
    ![distintivos asignados](assets/assigned-badges.png)
 
-### Distintivos adjudicados {#awarded-badges}
+### Distintivos otorgados {#awarded-badges}
 
 El servicio de puntaje otorga insignias basadas en premios a los miembros de la comunidad según las reglas aplicadas a su actividad en la comunidad.
 
 Para que las insignias aparezcan como recompensa por la actividad, hay dos cosas que deben suceder:
 
-* El distintivo debe estar [habilitado](#enableforcomponent) para el componente de función.
-* Las reglas de puntuación y de marcado deben [aplicarse](#applytopage) a la página (o antecesor) en la que se coloca el componente.
+* La identificación debe estar [habilitada](#enableforcomponent) para el componente de la función.
+* Las reglas de puntuación y de identificación deben [aplicarse](#applytopage) a la página (o antecesor) en la que se coloca el componente.
 
 En la versión se incluyen tres distintivos basados en premios:
 
@@ -107,11 +107,11 @@ En la versión se incluyen tres distintivos basados en premios:
 >
 >Las reglas de puntuación se pueden configurar para asignar puntos negativos para anuncios marcados como inapropiados y, por lo tanto, afectar al valor de puntuación. Sin embargo, una vez obtenido un distintivo, no se eliminará automáticamente debido a la reducción de puntos de puntuación o a los cambios en las reglas de puntuación.
 >
->Las insignias otorgadas pueden ser revocadas de la misma manera que las insignias asignadas. Consulte la sección [Asignar y revocar distintivos](#assign-and-revoke-badges) . Las futuras mejoras incluirán una interfaz de usuario para administrar las insignias de los miembros.
+>Las insignias otorgadas pueden ser revocadas de la misma manera que las insignias asignadas. Consulte la sección [Asignar y revocar distintivos](#assign-and-revoke-badges). Las futuras mejoras incluirán una interfaz de usuario para administrar las insignias de los miembros.
 
 ### Distintivos personalizados {#custom-badges}
 
-Las insignias personalizadas se pueden instalar mediante la consola [](/help/communities/badges.md) Insignias y se pueden asignar o especificar en las reglas de identificación.
+Los distintivos personalizados se pueden instalar mediante la consola [Badges](/help/communities/badges.md) y se pueden asignar o especificar en las reglas de distintivo.
 
 Cuando se instalan desde la consola Insignias, los distintivos personalizados se replican automáticamente en el entorno de publicación.
 
@@ -119,13 +119,13 @@ Cuando se instalan desde la consola Insignias, los distintivos personalizados se
 
 La puntuación no está habilitada de forma predeterminada. Los pasos básicos para configurar y habilitar la puntuación y la concesión de insignias son:
 
-* Identifique las reglas para obtener puntos (reglas[de](#scoring-rules)puntuación).
-* Para los puntos acumulados por reglas de puntuación, asigne [insignias](#badges) (reglas[de](#badging-rules)insignia).
+* Identifique las reglas para obtener puntos ([reglas de puntuación](#scoring-rules)).
+* Para los puntos acumulados por reglas de puntuación, asigne [distintivos](#badges) ([reglas de identificación](#badging-rules)).
 
-* [Aplique las reglas de puntuación y de identificación a un sitio](#apply-rules-to-content)de la comunidad.
-* [Habilite el distintivo para las funciones](#enable-badges-for-component)de la comunidad.
+* [Aplique las reglas de puntuación y de identificación a un sitio](#apply-rules-to-content) de la comunidad.
+* [Habilite el distintivo para las funciones](#enable-badges-for-component) de la comunidad.
 
-Consulte la sección Prueba [](#quick-test) rápida para habilitar la puntuación para un sitio de comunidad mediante las reglas de puntuación y de identificación predeterminadas para los foros y comentarios.
+Consulte la sección [Prueba rápida](#quick-test) para habilitar la puntuación para un sitio de la comunidad mediante las reglas de puntuación y marca predeterminadas para los foros y comentarios.
 
 ### Aplicar reglas al contenido {#apply-rules-to-content}
 
@@ -135,22 +135,22 @@ Si el sitio ya está publicado, después de aplicar todas las reglas y activar l
 
 Las reglas que se aplican a un componente habilitado para distintivos son las del nodo actual o su antecesor.
 
-Si el nodo es de tipo `cq:Page` (recomendado), con CRXDE|Lite, agregue las propiedades a su `jcr:content` nodo.
+Si el nodo es de tipo `cq:Page` (recomendado), con CRXDE|Lite, agregue las propiedades a su nodo `jcr:content`.
 
 | **Propiedad** | **Tipo** | **Descripción** |
 |---|---|---|
-| badgingRules | Cadena | una lista de matriz de reglas de [marcado](#badging-rules) |
-| scoringRules | Cadena | una lista de matriz de reglas de [puntuación](#scoring-rules) |
+| badgingRules | Cadena | una lista de matriz de [reglas de identificación](#badging-rules) |
+| scoringRules | Cadena | una lista de matriz de [reglas de puntuación](#scoring-rules) |
 
 >[!NOTE]
 >
->Si una regla de puntuación parece no tener ningún efecto en la concesión de distintivos, asegúrese de que la propiedad scoringRules de la regla de puntuación no haya bloqueado la regla de puntuación. Consulte la sección titulada Reglas [de asignación de distintivos](#badging-rules).
+>Si una regla de puntuación parece no tener ningún efecto en la concesión de distintivos, asegúrese de que la propiedad scoringRules de la regla de puntuación no haya bloqueado la regla de puntuación. Consulte la sección titulada [Reglas de Badging](#badging-rules).
 
 ### Habilitar distintivos para el componente {#enable-badges-for-component}
 
-Las reglas de puntuación y de clasificación solo se aplican a las instancias de componentes que han habilitado la creación de distintivos mediante la edición de la configuración del componente en el modo [de](/help/communities/author-communities.md)creación.
+Las reglas de puntuación y de clasificación solo se aplican a las instancias de componentes que han habilitado la identificación mediante la edición de la configuración de componentes en [modo de creación](/help/communities/author-communities.md).
 
-Una propiedad booleana, `allowBadges`, activa o desactiva la visualización de distintivos para una instancia de componente. Se puede configurar en el cuadro de diálogo [de edición de](/help/communities/author-communities.md) componentes para componentes de foro, control de calidad y comentarios mediante una casilla de verificación rotulada **Mostrar distintivos**.
+Una propiedad booleana, `allowBadges`, habilita o deshabilita la visualización de distintivos para una instancia de componente. Se puede configurar en el [cuadro de diálogo de edición de componentes](/help/communities/author-communities.md) para los componentes forum, QnA y comment mediante una casilla de verificación rotulada **Display Badges**.
 
 #### Ejemplo: allowBadges para la instancia del componente Foro {#example-allowbadges-for-forum-component-instance}
 
@@ -177,7 +177,7 @@ Las reglas de puntuación se heredan pero no son aditivas. Por ejemplo:
 
 Cuando hay más de una regla de puntuación, las puntuaciones se mantienen por separado para cada regla.
 
-Las reglas de puntuación son nodos de tipo `cq:Page` con propiedades en su `jcr:content` nodo que especifican la lista de subreglas que la definen.
+Las reglas de puntuación son nodos de tipo `cq:Page` con propiedades en su nodo `jcr:content` que especifican la lista de subreglas que la definen.
 
 Las puntuaciones se almacenan en SRP.
 
@@ -187,7 +187,7 @@ Las puntuaciones se almacenan en SRP.
 >
 >Los nombres de las reglas de puntuación deben ser únicos globalmente; no deben terminar con el mismo nombre.
 >
->Un ejemplo de lo que *no* se debe hacer:
+>Un ejemplo de lo que *no* debe hacer:
 >
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
@@ -202,16 +202,16 @@ Cada subregla de puntuación identifica:
 * ¿Qué función de comunidad específica está involucrada?
 * ¿Cuántos puntos se conceden?
 
-De forma predeterminada, los puntos se otorgan al miembro que realiza la acción, a menos que la subregla especifique que el propietario del contenido recibe los puntos ( `forOwner`).
+De forma predeterminada, los puntos se otorgan al miembro que realiza la acción, a menos que la subregla especifique el propietario del contenido como receptor de los puntos ( `forOwner`).
 
 Cada subregla puede incluirse en una o varias reglas de puntuación.
 
-El nombre de la subregla suele seguir el patrón de uso de un *asunto* , *objeto* y *verbo*. Por ejemplo:
+El nombre de la subregla suele seguir el patrón de utilizar un *sujeto*, *objeto* y *verbo*. Por ejemplo:
 
 * miembro-comentario-crear
 * miembro-recibo-voto
 
-Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`nodo que especifican los [verbos y los temas](#topics-and-verbs) .
+Las subreglas son nodos de tipo `cq:Page` con propiedades en su nodo `jcr:content`que especifican los [verbos y temas](#topics-and-verbs).
 
 <table>
  <tbody>
@@ -268,7 +268,7 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`nod
       </ul> </li>
      <li>si "avanzado", especifica el motor de puntuación en función de la calidad y la cantidad
       <ul>
-       <li>requiere un paquete <a href="/help/communities/advanced.md">adicional</a></li>
+       <li>requiere un <a href="/help/communities/advanced.md">paquete adicional</a></li>
       </ul> </li>
      <li>el valor predeterminado es "basic"</li>
     </ul> </td>
@@ -276,23 +276,31 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`nod
  </tbody>
 </table>
 
-### Reglas y subreglas de puntuación incluidas {#included-scoring-rules-and-sub-rules}
+### Se incluyeron reglas de puntuación y subreglas {#included-scoring-rules-and-sub-rules}
 
-En la versión se incluyen dos reglas de puntuación para la función [](/help/communities/functions.md#forum-function) Foro (una para los componentes Foro y otra para los comentarios de la función Foro):
+En la versión se incluyen dos reglas de puntuación para la [Función de foro](/help/communities/functions.md#forum-function) (una para los componentes Foro y Comentarios de la función Foro):
 
 1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/miembro-comment-create/libs/settings/community/scoring/rules/sub-rules/miembro-welcome-vote/libs/settings/scoring/rules/sub-rules/miembro-dar-voto/libs/settings/community/scoring/rules/sub-rules/miembro-is-moderated
+   * subRules[] =
+/libs/settings/community/scoring/rules/sub-rules/miembro-comment-create
+/libs/settings/community/scoring/rules/sub-rules/miembro-recibo-voto
+/libs/settings/community/scoring/rules/sub-rules/miembro-dar-voto
+/libs/settings/community/scoring/rules/sub-rules/miembro-es-moderado
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/miembro-forum-create/libs/settings/community/scoring/rules/sub-rules/miembro-welcome-vote/libs/settings/scoring/rules/sub-rules/miembro-dar-voto/libs/settings/community/scoring/rules/sub-rules/miembro-is-moderated
+   * subRules[] =
+/libs/settings/community/scoring/rules/sub-rules/miembro-forum-create
+/libs/settings/community/scoring/rules/sub-rules/miembro-recibo-voto
+/libs/settings/community/scoring/rules/sub-rules/miembro-dar-voto
+/libs/settings/community/scoring/rules/sub-rules/miembro-es-moderado
 
 **Notas:**
 
-* Los nodos `rules` y `sub-rules` los nodos son de tipo cq:Page.
+* Los nodos `rules` y `sub-rules` son de tipo cq:Page.
 
-* `subRules` es un atributo de tipo String[] en el `jcr:content` nodo de la regla.
+* `subRules` es un atributo de tipo [] Cadena en el  `jcr:content` nodo de la regla.
 
 * `sub-rules` puede compartirse entre varias reglas de puntuación.
 * `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
@@ -310,9 +318,9 @@ Las reglas de asignación de distintivos vinculan las reglas de puntuación a lo
 * Regla de puntuación
 * Puntuación necesaria para que se le conceda una insignia específica
 
-Las reglas de asignación de distintivos son nodos de tipo `cq:Page` con propiedades en su `jcr:content` nodo que correlacionan las reglas de puntuación con puntuaciones y distintivos.
+Las reglas de asignación de distintivos son nodos de tipo `cq:Page` con propiedades en su nodo `jcr:content` que correlacionan las reglas de puntuación con puntuaciones y distintivos.
 
-Las reglas para la identificación consisten en una `thresholds` propiedad obligatoria que es una lista ordenada de puntuaciones asignadas a distintivos. Las puntuaciones deben ordenarse en valor creciente. Por ejemplo:
+Las reglas para el marcado consisten en una propiedad `thresholds` obligatoria que es una lista ordenada de puntuaciones asignadas a distintivos. Las puntuaciones deben ordenarse en valor creciente. Por ejemplo:
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -328,7 +336,7 @@ Las reglas para la identificación consisten en una `thresholds` propiedad oblig
 
 Las reglas de asignación de distintivos están emparejadas con reglas de puntuación que determinan la acumulación de puntos. Consulte la sección titulada [Aplicar reglas al contenido](#apply-rules-to-content).
 
-La `scoringRules` propiedad de una regla de distintivo simplemente restringe qué reglas de puntuación se pueden emparejar con esa regla de distintivo en particular.
+La propiedad `scoringRules` de una regla de marcado simplemente restringe qué reglas de puntuación se pueden emparejar con esa regla de marcado en particular.
 
 >[!NOTE]
 >
@@ -341,12 +349,12 @@ La `scoringRules` propiedad de una regla de distintivo simplemente restringe qu�
   <tr>
    <th>Propiedad</th>
    <th>Tipo</th>
-   <th>Value Descripción</th>
+   <th>Valor Descripción</th>
   </tr>
   <tr>
    <td>umbrales</td>
    <td>Cadena</td>
-   <td><em>(obligatorio)</em> Una cadena de varios valores del formulario 'number|path'
+   <td><em>(requerido)</em> Una cadena de varios valores del formulario 'number|path'
     <ul>
      <li>number = score</li>
      <li>| = el carácter de línea vertical (U+007C)</li>
@@ -356,7 +364,7 @@ La `scoringRules` propiedad de una regla de distintivo simplemente restringe qu�
   <tr>
    <td>badgingType</td>
    <td>Cadena</td>
-   <td><em>(opcional)</em> Identifica el motor de puntuación como "básico" o "avanzado". Si desea el motor de puntuación avanzado, consulte Puntuación <a href="/help/communities/advanced.md">avanzada y distintivos</a>. El valor predeterminado es "basic".</td>
+   <td><em>(opcional)</em> Identifica el motor de puntuación como "básico" o "avanzado". Si desea el motor de puntuación avanzado, consulte <a href="/help/communities/advanced.md">Puntuación avanzada y distintivos</a>. El valor predeterminado es "basic".</td>
   </tr>
   <tr>
    <td>scoringRules</td>
@@ -368,7 +376,7 @@ La `scoringRules` propiedad de una regla de distintivo simplemente restringe qu�
 
 ### Reglas de identificación incluidas {#included-badging-rules}
 
-En la versión se incluyen dos reglas de asignación de distintivos que corresponden a las reglas [de puntuación de](#includedscoringrules)foros y comentarios.
+En la versión se incluyen dos reglas de identificación que corresponden a las [reglas de puntuación de los foros y comentarios](#includedscoringrules).
 
 * `/libs/settings/community/badging/rules/comments-badging`
 
@@ -381,21 +389,21 @@ En la versión se incluyen dos reglas de asignación de distintivos que correspo
 
    * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
-### Activación de reglas de distintivo personalizadas {#activating-custom-badging-rules}
+### Activación de reglas de identificación personalizadas {#activating-custom-badging-rules}
 
 Cualquier cambio o adición que se realice en las reglas de marcado o en las imágenes realizadas en el entorno del autor debe instalarse en la publicación.
 
 ## Asignar y revocar distintivos {#assign-and-revoke-badges}
 
-Los distintivos pueden asignarse a miembros mediante la consola [de](/help/communities/members.md#badges-tab) miembros o mediante comandos cURL programáticamente.
+Los distintivos pueden asignarse a miembros mediante la consola [miembros](/help/communities/members.md#badges-tab) o mediante programación mediante comandos cURL.
 
 Los siguientes comandos cURL muestran lo que es necesario para una solicitud HTTP para asignar y revocar distintivos. El formato básico es:
 
-cURL -i -X POST -H *header* -u *inicio de sesión* -F *operación* -F *distintivo* *miembro-perfil-url*
+cURL -i -X POST -H *encabezado* -u *inicio de sesión* -F *operación* -F *distintivo* *miembro-perfil-url*
 
-*header* = &quot;Accept:application/json&quot;encabezado personalizado para pasar al servidor (requerido)
+*header* = &quot;Accept:application/json&quot; encabezado personalizado para pasar al servidor (requerido)
 
-*signin* = admin-id:password, por ejemplo: admin:admin
+*sign* = admin-id:password, por ejemplo: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
 
@@ -403,14 +411,14 @@ cURL -i -X POST -H *header* -u *inicio de sesión* -F *operación* -F *distintiv
 
 *badge-image-file* = la ubicación del archivo de imagen del distintivo en el repositorio, por ejemplo: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*miembro-perfil-url* = el punto final del perfil del miembro en la publicación, por ejemplo: https://&lt;servidor>:&lt;puerto>/home/users/community/riley/profile.social.json
+*miembro-perfil-url* = el punto final del perfil del miembro al publicar, por ejemplo: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
 >El *miembro-perfil-url*:
 >
->* Puede hacer referencia a una instancia de autor si el servicio [de túnel](/help/communities/users.md#tunnel-service) está habilitado.
->* Puede ser un nombre oscuro y aleatorio; consulte Lista de comprobación [de seguridad](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) con respecto a un ID autorizado.
+>* Puede hacer referencia a una instancia de autor si el [servicio de túnel](/help/communities/users.md#tunnel-service) está habilitado.
+>* Puede ser un nombre oscuro y aleatorio; consulte [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) con respecto al ID autorizado.
 
 
 ### Ejemplos: {#examples}
@@ -439,15 +447,16 @@ Las reglas de puntuación y de distintivo se pueden crear para componentes perso
 
 Cuando los miembros interactúan con las funciones de la comunidad, se envían eventos que pueden activar oyentes asincrónicos, como notificaciones y puntuación.
 
-La instancia de SocialEvent de un componente registra los eventos `actions` que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb` asociado a la acción. Hay una relación *n-1* entre `actions` y `verbs`.
+La instancia de SocialEvent de un componente registra los eventos como `actions` que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb` asociado a la acción. Existe una relación *n-1* entre `actions` y `verbs`.
 
-Para los componentes de comunidades entregados, las siguientes tablas describen la `verbs` definición de cada uno de los `topic` disponibles para su uso en las [subreglas](#scoring-sub-rules)de puntuación.
+Para los componentes de comunidades entregados, las tablas siguientes describen el `verbs` definido para cada `topic` disponible para su uso en [subreglas de puntuación](#scoring-sub-rules).
 
 >[!NOTE]
 >
->Una nueva propiedad booleana, `allowBadges`, activa o desactiva la visualización de distintivos para una instancia de componente. Se puede configurar en los cuadros de diálogo [de edición de](/help/communities/author-communities.md) componentes actualizados mediante una casilla de verificación rotulada **Mostrar distintivos**.
+>Una nueva propiedad booleana, `allowBadges`, habilita o deshabilita la visualización de distintivos para una instancia de componente. Se puede configurar en [cuadros de diálogo de edición de componentes](/help/communities/author-communities.md) actualizados mediante una casilla de verificación rotulada **Insignias de visualización**.
 
-**[Calendario Componente](/help/communities/calendar.md)** SocialEvent `topic`= com/adobe/cq/social/calendar
+**[Calendario](/help/communities/calendar.md)**
+ComponenteSocialEvent  `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -456,7 +465,8 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 | ACTUALIZAR | se edita el evento o comentario del calendario del miembro |
 | ELIMINAR | se elimina el evento o comentario del calendario del miembro |
 
-**[Componente](/help/communities/comments.md)** ComentariosSocialEvent `topic`= com/adobe/cq/social/comment
+**[Comments](/help/communities/comments.md)**
+ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -465,7 +475,8 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 | ACTUALIZAR | se edita el comentario del miembro |
 | ELIMINAR | se elimina el comentario del miembro |
 
-**[Componente](/help/communities/file-library.md)** Biblioteca de archivosSocialEvent `topic`= com/adobe/cq/social/fileLibrary
+**[File Library](/help/communities/file-library.md)**
+ComponentSocialEvent  `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -474,7 +485,8 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 | ACTUALIZAR | Un miembro actualiza una carpeta o un archivo |
 | ELIMINAR | elimina una carpeta o un archivo |
 
-**[Foro Componente](/help/communities/forum.md)** SocialEvent `topic`= com/adobe/cq/social/forum
+**[Foro](/help/communities/forum.md)**
+ComponenteSocialEvent  `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -483,7 +495,8 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 | ACTUALIZAR | se edita el tema o la respuesta del foro del miembro |
 | ELIMINAR | se elimina el tema o la respuesta del foro del miembro |
 
-**[Componente](/help/communities/blog-feature.md)** historialSocialEvent `topic`= com/adobe/cq/social/historial
+**[Historial](/help/communities/blog-feature.md)**
+ComponentSocialEvent  `topic`= com/adobe/cq/social/historial
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -492,7 +505,8 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 | ACTUALIZAR | se edita el artículo o comentario del blog del miembro |
 | ELIMINAR | se elimina el artículo o comentario del blog del miembro |
 
-**[QnA Component](/help/communities/working-with-qna.md)** SocialEvent `topic` = com/adobe/cq/social/qna
+**[QnA](/help/communities/working-with-qna.md)**
+ComponentSocialEvent  `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -503,7 +517,8 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 | DESSELECCIONAR | se anula la selección de la respuesta del miembro |
 | ELIMINAR | se elimina la pregunta o la respuesta de control de calidad del miembro |
 
-**[Reseñas del componente](/help/communities/reviews.md)** SocialEvent `topic`= com/adobe/cq/social/review
+**[Revisa](/help/communities/reviews.md)**
+ComponentSocialEvent  `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -511,21 +526,24 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 | ACTUALIZAR | se edita la revisión del miembro |
 | ELIMINAR | se elimina la revisión del miembro |
 
-**[Componente](/help/communities/rating.md)** de clasificación SocialEvent `topic`= com/adobe/cq/social/tally/rating
+**[Rating](/help/communities/rating.md)**
+ComponentSocialEvent  `topic`= com/adobe/cq/social/tally/rating
 
 | **Verbo** | **Descripción** |
 |---|---|
 | AÑADIR CLASIFICACIÓN | el contenido del miembro se ha valorado |
 | QUITAR CLASIFICACIÓN | el contenido del miembro se ha reducido |
 
-**[Componente](/help/communities/voting.md)** de votaciónSocialEvent `topic`= com/adobe/cq/social/tally/vote
+**[Votación](/help/communities/voting.md)**
+ComponentSocialEvent  `topic`= com/adobe/cq/social/tally/vote
 
 | **Verbo** | **Descripción** |
 |---|---|
 | AÑADIR VOTACIÓN | el contenido de los miembros ha sido votado |
 | ELIMINAR VOTACIÓN | el contenido de los miembros ha sido rechazado |
 
-**Componentes** habilitados para moderaciónSocialEvent `topic`= com/adobe/cq/social/moderation
+**Componentes habilitados para moderación**
+SocialEvent  `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -538,9 +556,9 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 
 ### Eventos de componentes personalizados {#custom-component-events}
 
-Para un componente personalizado, se crea una instancia de SocialEvent para registrar los eventos del componente `actions` como los que se producen para un `topic`.
+Para un componente personalizado, se crea una instancia de SocialEvent para registrar los eventos del componente como `actions` que se producen para un `topic`.
 
-Para admitir la puntuación, el evento de SocialEvent tendría que anular el método de `getVerb()` modo que se `verb` devuelva un valor apropiado para cada `action`. El `verb` resultado de una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Hay una relación *n-1* entre `actions` y `verbs`.
+Para admitir la puntuación, el evento de SocialEvent tendría que anular el método `getVerb()` para que se devuelva un `verb` apropiado para cada `action`. El `verb` devuelto para una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Existe una relación *n-1* entre `actions` y `verbs`.
 
 ## Solución de problemas {#troubleshooting}
 
@@ -554,9 +572,9 @@ Consulte [Habilitar distintivos para el componente](#enable-badges-for-component
 
 Si se han aplicado reglas de puntuación y de identificación al contenido del sitio web, y se están adjudicando insignias para algunas acciones, pero no para otras, compruebe que la regla de insignia no haya restringido las reglas de puntuación a las que se aplica.
 
-Consulte la `scoringRules` propiedad de las reglas de [asignación de distintivos](#badging-rules).
+Consulte la propiedad `scoringRules` de [Reglas de identificación](#badging-rules).
 
-### Typo sensible a mayúsculas y minúsculas {#case-sensitive-typo}
+### Tipo con distinción entre mayúsculas y minúsculas {#case-sensitive-typo}
 
 La mayoría de las propiedades y los valores, especialmente los verbos, distinguen entre mayúsculas y minúsculas. Los verbos deben ser todos MAYÚSCULAS cuando se utilizan en una subregla de puntuación.
 
@@ -564,7 +582,7 @@ Si la función no funciona correctamente, asegúrese de que los datos se hayan i
 
 ## Prueba rápida {#quick-test}
 
-Es posible probar rápidamente la puntuación y la identificación mediante el sitio [Tutorial](/help/communities/getting-started.md) de introducción (participación):
+Es posible probar rápidamente la puntuación y la identificación mediante el sitio [Tutorial de introducción](/help/communities/getting-started.md) (participación):
 
 * CRXDE Lite de acceso al autor.
 * Vaya a la página base:
@@ -575,22 +593,22 @@ Es posible probar rápidamente la puntuación y la identificación mediante el s
 
    * **Nombre**: `badgingRules`
    * **Tipo**: `String`
-   * Seleccionar **varios**
-   * Seleccionar **Añadir**
-   * Enter `/libs/settings/community/badging/rules/forums-badging`
+   * Seleccione **Multi**
+   * Seleccione **Añadir**
+   * Escriba `/libs/settings/community/badging/rules/forums-badging`
    * Seleccione **+**
-   * Enter `/libs/settings/community/badging/rules/comments-badging`
+   * Escriba `/libs/settings/community/badging/rules/comments-badging`
    * Seleccione **Aceptar**
 
 * Añada la propiedad scoringRules:
 
    * **Nombre**: `scoringRules`
    * **Tipo**: `String`
-   * Seleccionar **varios**
-   * Seleccionar **Añadir**
-   * Enter `/libs/settings/community/scoring/rules/forums-scoring`
+   * Seleccione **Multi**
+   * Seleccione **Añadir**
+   * Escriba `/libs/settings/community/scoring/rules/forums-scoring`
    * Seleccione **+**
-   * Enter `/libs/settings/community/scoring/rules/comments-scoring`
+   * Escriba `/libs/settings/community/scoring/rules/comments-scoring`
    * Seleccione **Aceptar**
 
 * Seleccione **Guardar todo**.
@@ -608,11 +626,11 @@ A continuación, asegúrese de que los componentes de foro y comentarios permite
 
    * **Nombre**: `allowBadges`
    * **Tipo**: `Boolean`
-   * **Valor**: `true`
+   * **Valor**:  `true`
 
 ![test-forum-component](assets/test-forum-component.png)
 
-A continuación, [vuelva a publicar](/help/communities/sites-console.md#publishing-the-site) el sitio de la comunidad.
+A continuación, [vuelva a publicar](/help/communities/sites-console.md#publishing-the-site) el sitio de comunidad.
 
 Finalmente,
 
@@ -631,8 +649,8 @@ Esto debería ganar al miembro de la comunidad una insignia de bronce visible co
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [Puntuación y distintivos esenciales](/help/communities/configure-scoring.md) para desarrolladores.
+Puede encontrar más información en la página [Esenciales de puntuación y distintivos](/help/communities/configure-scoring.md) para desarrolladores.
 
-Para obtener información sobre el motor de puntuación avanzado, consulte Puntuación [avanzada y distintivos](/help/communities/advanced.md).
+Para obtener información sobre el motor de puntuación avanzado, consulte [Puntuación avanzada y distintivos](/help/communities/advanced.md).
 
-El [componente](/help/communities/enabling-leaderboard.md) y la [función](/help/communities/functions.md#leaderboard-function) configurables de la tabla de clasificación simplifica la visualización de los miembros y sus puntuaciones en un sitio de la comunidad.
+El Leaderboard configurable [component](/help/communities/enabling-leaderboard.md) y [function](/help/communities/functions.md#leaderboard-function) simplifica la visualización de los miembros y sus puntuaciones en un sitio de la comunidad.
