@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ El servicio informativo del sistema proporciona un conjunto de API de REST para 
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties`</p></td>
-   <td><p>Esta API es un envoltorio para la API <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">de Java system.getProperties</a> . Recupera la configuración del entorno de trabajo actual. </p></td>
+   <td><p>Esta API es un envoltorio para la API de Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Recupera la configuración del entorno de trabajo actual. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -51,7 +54,7 @@ El servicio informativo del sistema proporciona un conjunto de API de REST para 
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://'[servidor]:[puerto]'/rest/services/ SystemInfo.services</p></td>
-   <td><p>Recupera el estado y los parámetros de configuración de los servicios de formularios AEM.</p></td>
+   <td><p>Recupera el estado y los parámetros de configuración de AEM servicios de formularios.</p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td>
