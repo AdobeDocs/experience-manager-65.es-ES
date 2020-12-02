@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Personalización del lado del cliente  {#client-side-customization}
+# Personalización del lado del cliente {#client-side-customization}
 
 | **[Elementos básicos de las funciones de ⇐](essentials.md)** | **[Personalización del lado del servidor](server-customize.md)** |
 |---|---|
@@ -28,37 +28,37 @@ Para personalizar el aspecto y/o el comportamiento de un componente de AEM Commu
 
 Dos enfoques principales son superponer o ampliar un componente.
 
-[Al superponer](#overlays) un componente, se cambia el componente predeterminado y se afectan todas las referencias al mismo.
+[Al ](#overlays) superponer un componente, se cambia el componente predeterminado y se afectan todas las referencias al mismo.
 
-[La extensión](#extensions) de un componente, con un nombre exclusivo, limita el alcance de los cambios. El término &#39;extender&#39; se utiliza indistintamente con &#39;anular&#39;.
+[La ](#extensions) extensión de un componente, con un nombre exclusivo, limita el alcance de los cambios. El término &#39;extender&#39; se utiliza indistintamente con &#39;anular&#39;.
 
 ## Superposiciones {#overlays}
 
 La superposición de un componente es un método para realizar modificaciones en un componente predeterminado y afectar a todas las instancias que lo utilicen.
 
-La superposición se realiza modificando una copia del componente predeterminado en el directorio /**apps** , en lugar de modificar el componente original en el directorio /**libs** . El componente se construye con una ruta relativa idéntica, excepto que &#39;libs&#39; se sustituye por &#39;apps&#39;.
+La superposición se realiza modificando una copia del componente predeterminado en el directorio /**apps**, en lugar de modificar el componente original en el directorio /**libs**. El componente se construye con una ruta relativa idéntica, excepto que &#39;libs&#39; se sustituye por &#39;apps&#39;.
 
 El directorio /apps es el primer lugar en el que se busca para resolver solicitudes y, si no se encuentra, se utiliza la versión predeterminada ubicada en el directorio /libs.
 
 El componente predeterminado en el directorio /libs nunca debe modificarse, ya que los parches futuros y las actualizaciones son libres de alterar el directorio /libs de cualquier manera necesaria mientras se mantienen las interfaces públicas.
 
-Esto es diferente a [ampliar](#extensions) un componente predeterminado donde el deseo es realizar modificaciones para un uso específico, crear una ruta única al componente y confiar en hacer referencia al componente predeterminado original en el directorio /libs como tipo de recurso superior.
+Esto es diferente a [ampliar](#extensions) un componente predeterminado donde el deseo es realizar modificaciones para un uso específico, crear una ruta única al componente y confiar en hacer referencia al componente predeterminado original en el directorio /libs como el tipo de recurso superior.
 
-Para ver un ejemplo rápido de superposición del componente de comentarios, pruebe el tutorial [](overlay-comments.md)Overlay Comments Component.
+Para ver un ejemplo rápido de superposición del componente de comentarios, pruebe el tutorial [Overlay Comments Component](overlay-comments.md).
 
 ## Extensiones {#extensions}
 
 Ampliar (anular) un componente es un método para realizar modificaciones para un uso específico sin afectar a todas las instancias que utilizan el valor predeterminado. El componente extendido tiene un nombre exclusivo en la carpeta /apps y hace referencia al componente predeterminado de la carpeta /libs, por lo que el diseño y el comportamiento predeterminados del componente no se modifican.
 
-Esto es diferente de [superponer](#overlays) el componente predeterminado en el que la naturaleza de Sling resuelve las referencias relativas a las aplicaciones o la carpeta antes de buscar en la carpeta libs/, por lo que el diseño o el comportamiento de un componente se modifica globalmente.
+Esto es diferente de [superponer](#overlays) el componente predeterminado donde la naturaleza de Sling resuelve referencias relativas a las aplicaciones o la carpeta antes de buscar en la carpeta libs/, por lo tanto el diseño o el comportamiento de un componente se modifica de forma global.
 
-Para ver un ejemplo rápido de ampliación del componente de comentarios, pruebe el tutorial [](extend-comments.md)Ampliar componente de comentarios.
+Para ver un ejemplo rápido de cómo ampliar el componente de comentarios, pruebe el [tutorial Extend Comments Component](extend-comments.md).
 
 ## Enlace Javascript {#javascript-binding}
 
 La secuencia de comandos de HBS para el componente debe enlazarse a los objetos, modelos y vistas de JavaScript que implementan esta función.
 
-El valor del `data-scf-component` atributo puede ser el valor predeterminado, como **`social/tally/components/hbs/rating`** o un componente extendido (personalizado) para la funcionalidad personalizada, como **weretail/components/hbs/rating**.
+El valor del atributo `data-scf-component` puede ser el valor predeterminado, como **`social/tally/components/hbs/rating`**, o un componente extendido (personalizado) para la funcionalidad personalizada, como **weretail/components/hbs/rating**.
 
 Para enlazar un componente, toda la secuencia de comandos del componente debe estar encerrada dentro de un elemento &lt;div> con los atributos siguientes:
 
@@ -66,7 +66,7 @@ Para enlazar un componente, toda la secuencia de comandos del componente debe es
 
    se resuelve en la propiedad id del contexto
 
-* `data-scf-component`=&quot;*&lt;resourceType>*
+* `data-scf-component`=&quot;*&lt;resourcetype>*
 
 Por ejemplo, desde `/apps/weretail/components/hbs/rating/rating.hbs`:
 
@@ -107,7 +107,7 @@ Los estilos personalizados ahora anularán los estilos de marco predeterminados 
 >
 >Cualquier nombre de clase CSS con el prefijo `scf-js` tiene un uso específico en el código javascript. Estas clases afectan al estado de un componente (por ejemplo, alternar entre oculto y visible) y no deben superarse ni eliminarse.
 >
->Aunque las `scf-js` clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, puede haber efectos secundarios.
+>Aunque las clases `scf-js` no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, puede haber efectos secundarios.
 
 ## Ampliación de Javascript {#extending-javascript}
 
@@ -119,7 +119,7 @@ Para ampliar una implementación de componentes de Javascript, debe:
 1. Amplíe el método.
 1. Utilice SCF.registerComponent() para registrar todos los métodos con los valores predeterminados o con los objetos y vistas personalizados.
 
-### forum.js: Extensión de muestra del foro - HBS  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Extensión de muestra del foro - HBS {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -152,16 +152,16 @@ Las etiquetas de script de los scripts SCF no deben eliminarse al superponer o a
 
 ## Clientlibs para SCF {#clientlibs-for-scf}
 
-El uso de las bibliotecas [del lado del](../../help/sites-developing/clientlibs.md) cliente (clientlibs), proporciona un medio para organizar y optimizar el Javascript y CSS utilizado para procesar contenido en el cliente.
+El uso de [bibliotecas del lado del cliente](../../help/sites-developing/clientlibs.md) (clientlibs), proporciona un medio para organizar y optimizar el JavaScript y CSS utilizado para procesar contenido en el cliente.
 
 Los clientlibs para SCF siguen un patrón de nombres muy específico para dos variantes, que varía solamente por la presencia de &quot;autor&quot; en el nombre de la categoría:
 
 | Clientlib Variant | Patrón de la propiedad Categorías |
 |--- |--- |
-| clientlib completa | cq.social.hbs.&lt;nombre del componente> |
-| clientlib autor | cq.social.author.hbs.&lt;nombre del componente> |
+| clientlib completa | cq.social.hbs.&lt;component name=&quot;&quot;> |
+| clientlib autor | cq.social.author.hbs.&lt;component name=&quot;&quot;> |
 
-### Completar Clientlibs {#complete-clientlibs}
+### Clientes totales {#complete-clientlibs}
 
 Los clientlibs completos (no autores) incluyen dependencias y son convenientes para incluirlos con ui:includeClientLib.
 
@@ -174,9 +174,9 @@ Por ejemplo:
 * Nodo de carpeta de cliente: `/etc/clientlibs/social/hbs/forum`
 * Categorías, propiedad: `cq.social.hbs.forum`
 
-La guía [Componentes de](components-guide.md) comunidad lista todos los clientes requeridos para cada componente SCF.
+La [guía de componentes de comunidad](components-guide.md) lista los clientlibs completos requeridos para cada componente SCF.
 
-[Clientlibs for Communities Components](clientlibs.md) describe cómo agregar clientlibs a una página.
+[Clientlibs for Communities ](clientlibs.md) Componentsdescribe cómo agregar clientlibs a una página.
 
 ### Author Clientlibs {#author-clientlibs}
 
@@ -195,7 +195,7 @@ Por ejemplo:
 
 Nota: aunque los clientlibs de autor nunca incorporan otras bibliotecas, sí que lista sus dependencias. Cuando se incrustan en otras bibliotecas, las dependencias no se extraen automáticamente y también se deben incrustar.
 
-Los clientlibs de creación requeridos pueden identificarse insertando &quot;author&quot; en los clientlibs enumerados para cada componente SCF en la guía [Componentes de](components-guide.md)comunidad.
+Los clientlibs de creación requeridos se pueden identificar insertando &quot;author&quot; en los clientlibs enumerados para cada componente SCF en la [Guía de componentes de comunidad](components-guide.md).
 
 ### Consideraciones de uso {#usage-considerations}
 
