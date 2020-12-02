@@ -33,8 +33,8 @@ Para asociar un grupo de revisores a un formulario, edite el esquema de metadato
 
 Para editar el esquema de metadatos:
 
-1. En el modo de autor, en Experience Manager, haga clic en **Herramientas** > **Recursos** > Esquemas **** de metadatos.
-1. En la página Formularios de Esquema, vaya a **Formularios** > **Formularios creados en AEM.**
+1. En el modo de creación, en Experience Manager, haga clic en **Herramientas** > **Recursos** > **Esquemas de metadatos**.
+1. En la página de Forms de Esquema, vaya a **Forms** > **Forms Authored in AEM.**
 
    La dirección URL de la página es:
 
@@ -43,9 +43,9 @@ Para editar el esquema de metadatos:
     schemalist.html/forms/aem-authored
    ```
 
-1. Seleccione Formulario **** adaptable y haga clic en **Editar**.
-1. En la página Editar formulario, haga clic en **Avanzadas**.
-1. En la ficha Avanzado, arrastre y suelte el componente Texto **** de una sola línea disponible en Formulario de compilación.
+1. Seleccione **Formulario adaptable** y haga clic en **Editar**.
+1. En la página Editar formulario, haga clic en **Avanzado**.
+1. En la ficha Avanzado, arrastre y suelte el componente **Texto de una sola línea** disponible en Formulario de compilación.
 1. Seleccione el componente de texto agregado para ver su configuración.
 
    En Configuración, introduzca `./jcr:content/metadata/form-submission-reviewer-group` en el campo Asignar a propiedad.
@@ -60,21 +60,21 @@ Los grupos de usuarios permiten asociar diferentes conjuntos de revisores de env
 Antes de realizar los siguientes pasos, consulte [Requisito previo](../../forms/using/adding-reviewers-form.md#prerequisite).
 
 Para crear un grupo y agregarle miembros, vaya a **Herramientas** > **Operaciones** > **Seguridad** > **Grupos**.
-Para obtener más información, consulte Administración [de usuarios y servicios](/help/sites-administering/security.md).
-Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios se envía con AEM Forms y garantiza que los usuarios se agreguen como revisores de envío.
+Para obtener más información, consulte [Administración de usuarios y servicios](/help/sites-administering/security.md).
+Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **formularios-submit-reviewers**. Este grupo de usuarios se envía con AEM Forms y garantiza que los usuarios se agreguen como revisores de envío.
 
 Para asociar grupos de usuarios con un formulario adaptable:
 
-1. En el modo de creación, vaya a **Formularios** > **Formularios y Documentos**.
-1. Utilice la opción **Seleccionar **para seleccionar un formulario adaptable y haga clic en Propiedades de **Vista**.
-1. En la ventana Propiedades del formulario, haga clic en **Editar** y, a continuación, en **AVANZADO**.
-1. Introduzca el grupo en el campo de grupo de revisor de envío y haga clic en **Finalizado**.
+1. En el modo de creación, vaya a **Forms** > **Forms &amp; Documentos**.
+1. Utilice la opción **Seleccionar **para seleccionar un formulario adaptable y haga clic en **Propiedades de la Vista**.
+1. En la ventana Propiedades del formulario, haga clic en **Editar** y, a continuación, haga clic en **AVANZADO**.
+1. Escriba el grupo en el campo del grupo del revisor de envío y haga clic en **Listo**.
 
    El campo de grupo de revisor de envío aparece con el nombre especificado en el esquema de metadatos editado de los formularios adaptables.
 
 >[!NOTE]
 >
->Replicar usuarios y formularios para garantizar la disponibilidad de los usuarios y formularios en la implementación remota de AEM Forms.
+>Replique usuarios y formularios para garantizar la disponibilidad de los usuarios y formularios en la implementación remota de AEM Forms.
 >
 >Asegúrese de que todos los usuarios se replican como miembros revisores de los grupos de usuarios en la implementación remota.
 
