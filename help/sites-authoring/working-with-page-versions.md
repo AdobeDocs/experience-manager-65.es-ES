@@ -96,7 +96,7 @@ Para volver a una versión anterior:
 
 1. Seleccione **Revertir a esta versión**. Se restaurará la versión seleccionada y se actualizará la información en la línea de tiempo.
 
-## Vista previa de una versión   {#previewing-a-version}
+## Vista previa de una versión    {#previewing-a-version}
 
 Puede previsualizar una versión específica:
 
@@ -129,7 +129,7 @@ Para comparar una versión anterior con la página actual:
 
 1. Seleccione **Comparar con actual**. Se abrirá [Diferencias de página](/help/sites-authoring/page-diff.md) para mostrar las diferencias.
 
-## Deformación de tiempo   {#timewarp}
+## Deformación de tiempo    {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
 
