@@ -11,41 +11,44 @@ discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 0%
 
 ---
 
 
-# Configuración de la configuración de AEM DS{#configuring-aem-ds-settings}
+# Configuración de AEM DS{#configuring-aem-ds-settings}
 
-En este artículo se describe cómo configurar el servicio **** de configuración de AEM DS. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
+En este artículo se describe cómo configurar **AEM Servicio de configuración de DS**. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
 
 * En la gestión de correspondencia
 
-   * Para configurar el flujo de trabajo de AEM Forms
+   * Para configurar AEM Forms Workflow
    * Mientras se utiliza el portal de formularios para guardar de forma remota el borrador o el envío
 
 * En formularios adaptables para casos en los que el formulario adaptable se envía desde una instancia de publicación
 
-A continuación se indican los pasos para configurar la configuración de **[!UICONTROL AEM DS]**:
+A continuación se indican los pasos para configurar la **[!UICONTROL Configuración de AEM DS]**:
 
 1. Abra el Administrador de configuración en la instancia de publicación mediante la URL:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![Configuración de la consola web de AEM](assets/web_configuration_console_new.png)
+   ![Configuración de AEM consola web](assets/web_configuration_console_new.png)
 
-1. En la ventana Configuración **[!UICONTROL de la consola web de]** Adobe Experience Manager, busque y haga clic en la opción Configuración **[!UICONTROL de]** AEM DS.
+1. En la ventana **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, busque y haga clic en la opción **[!UICONTROL Configuración de AEM DS]**.
 
    ![Configuración de DS](assets/ds_settings_new.png)
 
-1. La ventana del servicio **[!UICONTROL de configuración de]** AEM DS muestra la configuración común de los componentes de AEM DS.
+1. La ventana **[!UICONTROL Servicio de configuración AEM DS]** muestra las opciones de configuración comunes para AEM componentes DS.
 
    ![Servicio de configuración de DS](assets/ds_settings_service_new.png)
 
-1. Agregue la siguiente información en los campos correspondientes:
+1. Añada la siguiente información en los campos correspondientes:
 
    **[!UICONTROL Dirección URL]** del servidor de procesamiento: El servidor de procesamiento es el servidor en el que se debe activar el flujo de trabajo de Forms o AEM. Puede ser la misma que la URL de la instancia de creación de AEM o de la otra URL de servidor (es decir, https://localhost:port/).
 
-   **[!UICONTROL Nombre]** de usuario del servidor de procesamiento: Nombre de usuario del usuario del flujo de trabajo [basado en la dirección URL del servidor que se está utilizando]
+   **[!UICONTROL Nombre]** de usuario del servidor de procesamiento: Nombre de usuario del usuario del flujo de trabajo  [basado en la dirección URL del servidor que se está utilizando]
 
    **[!UICONTROL Contraseña]** del servidor de procesamiento: Contraseña del usuario del flujo de trabajo
 
@@ -54,6 +57,6 @@ A continuación se indican los pasos para configurar la configuración de **[!UI
    >
    >    
    >    
-   >    * Al utilizar los flujos de trabajo de Forms o AEM, antes de realizar ningún envío desde el servidor de publicación, es necesario configurar el servicio de configuración de DS. De lo contrario, fallará el envío del formulario.
+   >    * Al utilizar flujos de trabajo de Forms o AEM, antes de realizar un envío desde el servidor de publicación, es necesario configurar el servicio de configuración de DS. De lo contrario, fallará el envío del formulario.
 
 
