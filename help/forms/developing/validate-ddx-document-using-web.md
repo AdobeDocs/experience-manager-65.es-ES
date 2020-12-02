@@ -1,6 +1,6 @@
 ---
-title: Validación de un documento DDX mediante la API de servicio Web
-seo-title: Validación de un documento DDX mediante la API de servicio Web
+title: Validación de un documento DDX mediante la API de servicio web
+seo-title: Validación de un documento DDX mediante la API de servicio web
 description: nulo
 seo-description: nulo
 uuid: f6125746-6138-4e46-a1c4-fb24fd7399c5
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 0%
 
 ---
 
 
-# Validación de un documento DDX mediante la API de servicio Web {#validate-a-ddx-document-using-theweb-service-api}
+# Validar un documento DDX mediante la API de servicio Web {#validate-a-ddx-document-using-theweb-service-api}
 
-Valide un documento DDX mediante la API de servicio de ensamblador (servicio Web):
+Valide un documento DDX mediante la API de servicio de ensamblador (servicio web):
 
 1. Incluir archivos de proyecto.
 
@@ -29,10 +32,10 @@ Valide un documento DDX mediante la API de servicio de ensamblador (servicio Web
 
 1. Cree un cliente de ensamblador de PDF.
 
-   * Cree un `AssemblerServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
-   * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `AssemblerServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
-   * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `AssemblerServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio.
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `AssemblerServiceClient.Endpoint.Binding`. Convierta el valor devuelto a `BasicHttpBinding`.
+   * Establezca el campo `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
       * Asigne el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -42,40 +45,42 @@ Valide un documento DDX mediante la API de servicio de ensamblador (servicio Web
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento DDX.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento DDX y el modo en el que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
-   * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
-   * Rellene el `BLOB` objeto asignando su `MTOM` propiedad con el contenido de la matriz de bytes.
+   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento DDX.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
+   * Rellene el objeto `BLOB` asignando su propiedad `MTOM` con el contenido de la matriz de bytes.
 
 1. Configure las opciones de tiempo de ejecución para validar el documento DDX.
 
-   * Cree un `AssemblerOptionSpec` objeto que almacene opciones de tiempo de ejecución mediante su constructor.
-   * Defina la opción de tiempo de ejecución que indica al servicio Ensamblador que valide el documento DDX asignando el valor true al miembro de `AssemblerOptionSpec` datos del `validateOnly` objeto.
-   * Configure la cantidad de información que el servicio Ensamblador escribe en el archivo de registro asignando un valor de cadena al miembro de `AssemblerOptionSpec` datos del `logLevel` objeto. al validar un documento DDX, desea que se escriba más información en el archivo de registro que le ayudará en el proceso de validación. Como resultado, puede especificar el valor `FINE` o `FINER`. Para obtener información sobre las opciones de tiempo de ejecución que puede definir, consulte la referencia de la `AssemblerOptionSpec` clase en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+   * Cree un objeto `AssemblerOptionSpec` que almacene las opciones de tiempo de ejecución mediante su constructor.
+   * Establezca la opción de tiempo de ejecución que indica al servicio Ensamblador que valide el documento DDX asignando el valor true al miembro de datos `AssemblerOptionSpec` del objeto `validateOnly`.
+   * Configure la cantidad de información que el servicio Ensamblador escribe en el archivo de registro asignando un valor de cadena al miembro de datos `AssemblerOptionSpec` del objeto `logLevel`. al validar un documento DDX, desea que se escriba más información en el archivo de registro que le ayudará en el proceso de validación. Como resultado, puede especificar el valor `FINE` o `FINER`. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de clase `AssemblerOptionSpec` en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Realice la validación.
 
-   Invoque el `AssemblerServiceClient` método del `invokeDDX` objeto y pase los valores siguientes:
+   Invoque el método `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores:
 
-   * Un `BLOB` objeto que representa el documento DDX.
-   * Valor `null` del `Map` objeto que normalmente almacena documentos PDF.
-   * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución.
-   El `invokeDDX` método devuelve un `AssemblerResult` objeto que contiene información que especifica si el documento DDX es válido.
+   * Un objeto `BLOB` que representa el documento DDX.
+   * El valor `null` del objeto `Map` que generalmente almacena documentos PDF.
+   * Un objeto `AssemblerOptionSpec` que especifica opciones de tiempo de ejecución.
+
+   El método `invokeDDX` devuelve un objeto `AssemblerResult` que contiene información que especifica si el documento DDX es válido.
 
 1. Guarde los resultados de validación en un archivo de registro.
 
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo de registro y el modo en el que se abre el archivo. Asegúrese de que la extensión del nombre de archivo sea .xml.
-   * Cree un `BLOB` objeto que almacene información de registro obteniendo el valor del miembro de datos del `AssemblerResult` objeto `jobLog` .
-   * Cree una matriz de bytes que almacene el contenido del `BLOB` objeto. Rellene la matriz de bytes obteniendo el valor del `BLOB` campo del `MTOM` objeto.
-   * Cree un `System.IO.BinaryWriter` objeto invocando su constructor y pasando el `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el `System.IO.BinaryWriter` método `Write` del objeto y pasando la matriz de bytes.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo de registro y el modo en el que se abrirá el archivo. Asegúrese de que la extensión del nombre de archivo sea .xml.
+   * Cree un objeto `BLOB` que almacene información de registro obteniendo el valor del miembro de datos `AssemblerResult` del objeto `jobLog`.
+   * Cree una matriz de bytes que almacene el contenido del objeto `BLOB`. Rellene la matriz de bytes obteniendo el valor del campo `BLOB` del objeto `MTOM`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
+
    >[!NOTE]
    >
-   >Si el documento DDX no es válido, se `OperationException` genera un error. Dentro de la sentencia catch, puede obtener el valor del `OperationException` miembro del `jobLog` objeto.
+   >Si el documento DDX no es válido, se genera un `OperationException`. Dentro de la sentencia catch, puede obtener el valor del miembro `OperationException` del objeto `jobLog`.
 
 **Consulte también**
 
-[Validación de documentos DDX](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
+[Validación de Documentos DDX](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
