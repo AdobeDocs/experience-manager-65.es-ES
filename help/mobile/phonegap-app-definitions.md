@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 860dde0b-7cb4-4668-9fac-6f954f1ec0a7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
@@ -29,11 +32,11 @@ Las definiciones de aplicación permiten identificar qué espacios y otras confi
 
 ## Creación de una nueva definición de aplicación {#creating-a-new-app-definition}
 
-1. Seleccione **Móvil** en la consola de navegación de AEM.
+1. Elija **Móvil** en la Consola de navegación de AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Elija **Aplicaciones** en **Mobile** y haga clic en **Crear.**
+1. Elija **Aplicaciones** de **Mobile** y haga clic en **Crear.**
 
    Elija **Aplicación** para crear su nueva aplicación e introduzca los detalles necesarios.
 
@@ -47,7 +50,7 @@ Una vez familiarizado con las definiciones de aplicación, obtenga más informac
 * [Creación de una nueva aplicación mediante el Asistente para crear aplicación](/help/mobile/phonegap-create-new-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los siguientes recursos:
 
