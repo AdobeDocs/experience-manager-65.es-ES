@@ -29,7 +29,7 @@ El contenido asociado proporciona la conexión para que los recursos (es decir, 
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
-Para crear la asociación, primero debe [agregar los recursos de medios a una colección](/help/assets/manage-collections.md#adding-assets-to-a-collection). Una vez hecho esto, puede:
+Para hacer la asociación, primero debe [agregar sus recursos de medios a una colección](/help/assets/manage-collections.md#adding-assets-to-a-collection). Una vez hecho esto, puede:
 
 1. Abra el fragmento y seleccione **Contenido asociado** en el panel lateral.
 
@@ -50,8 +50,8 @@ Para crear la asociación, primero debe [agregar los recursos de medios a una co
 
 Una vez asociada una colección, puede:
 
-* **Elimine** la asociación.
-* **Añadir recursos** a la colección.
+* **** Elimine la asociación.
+* **Añadir recursos** en la colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
 
