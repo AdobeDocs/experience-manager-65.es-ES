@@ -37,7 +37,7 @@ Actualmente, las insignias que un miembro de la comunidad obtiene o se asigna ap
 
 En el entorno del autor, vaya a la consola Insignias:
 
-* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Insignios]**
+* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Distintivos]**
 
 Esta consola muestra las insignias disponibles actualmente y desde las cuales se pueden agregar nuevas insignias.
 
@@ -47,28 +47,28 @@ Esta consola muestra las insignias disponibles actualmente y desde las cuales se
 
 Para crear un distintivo, cargue una imagen pequeña adecuada (72 ppp con una altura de entre 26 y 32 píxeles) y proporcione un nombre. La imagen del distintivo se almacena en el repositorio en `/libs/settings/community/badging/images` y se replica automáticamente en el entorno de publicación.
 
-Si el entorno de publicación es un conjunto de editores, es necesario configurar la sincronización [de](/help/communities/sync.md)usuarios.
+Si el entorno de publicación es un conjunto de editores, es necesario configurar [sincronización de usuario](/help/communities/sync.md).
 
 ![create-badge](assets/create-badge.png)
 
 * **Cargar imagen**
 
-   (*Requerido*) Imagen de un distintivo con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
+   (*Requerido*) Una imagen de insignia con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
 
 * **Nombre**
 
-   (*Requerido*) El nombre del distintivo. Es el nombre predeterminado `Display Name` así como el nombre del nodo del repositorio. Si el nombre `Name` no es un nombre de nodo de repositorio válido, se modificará.
+   (*Requerido*) El nombre del distintivo. Es el `Display Name` predeterminado, así como el nombre del nodo del repositorio. Si `Name` no es un nombre de nodo de repositorio válido, se modificará.
 
 * **Nombre para mostrar**
 
-   (*Opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para el `Name`.
+   (*Opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para `Name`.
 
 * **Descripción**
 
-   (*Opcional*) Descripción del distintivo.
+   (*Opcional*) Una descripción para el distintivo.
 
 ## Información adicional {#additional-information}
 
-Para obtener más información sobre la configuración de las reglas de puntuación y marca, consulte [Puntuación y distintivos](/help/communities/implementing-scoring.md).
+Para obtener más información sobre la configuración de las reglas de puntuación y de distintivo, consulte [Puntuación y distintivos](/help/communities/implementing-scoring.md).
 
-Para administrar distintivos para miembros, consulte Consola [](/help/communities/members.md)de miembros.
+Para administrar las insignias de los miembros, consulte [Consola de miembros](/help/communities/members.md).
