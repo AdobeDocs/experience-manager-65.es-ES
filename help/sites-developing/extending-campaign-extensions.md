@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 translation-type: tm+mt
 source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 2%
 
 ---
 
 
 # Creación de extensiones personalizadas{#creating-custom-extensions}
 
-Generalmente, al implementar un proyecto, tiene código personalizado tanto en AEM como en Adobe Campaign. Con el uso de la API existente, puede llamar a su código personalizado en Adobe Campaign desde AEM o desde AEM a Adobe Campaign. Este documento describe cómo hacerlo.
+Generalmente, al implementar un proyecto, tiene código personalizado tanto en AEM como en Adobe Campaign. Con el uso de la API existente, puede llamar a su código personalizado en Adobe Campaign desde AEM o desde AEM hasta Adobe Campaign. Este documento describe cómo hacerlo.
 
 ## Requisitos previos {#prerequisites}
 
@@ -26,25 +29,25 @@ Debe tener instalado lo siguiente:
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-See [Integrating AEM with Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) for more information.
+Consulte [Integración de AEM con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) para obtener más información.
 
 ## Ejemplo 1: AEM a Adobe Campaign {#example-aem-to-adobe-campaign}
 
-La integración estándar entre AEM y Campaign se basa en JSON y JSSP (JavaScript Server Page). Estos archivos JSSP se pueden encontrar en la consola Campaña y todos comienzan con **amc** (Adobe Marketing Cloud).
+La integración estándar entre AEM y Campaña se basa en JSON y JSSP (JavaScript Server Page). Estos archivos JSSP se pueden encontrar en la consola de Campaña y en todos los inicios con **amc** (Adobe Marketing Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[Para ver este ejemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Uso compartido de paquetes.
+>[Para este ejemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Uso compartido de paquetes.
 
-En este ejemplo, creamos un nuevo archivo JSSP personalizado y lo llamamos desde el lado de AEM para recuperar el resultado. Se puede utilizar, por ejemplo, para recuperar datos de Adobe Campaign o para guardarlos en Adobe Campaign.
+En este ejemplo, creamos un nuevo archivo JSSP personalizado y lo llamamos desde el lado AEM para recuperar el resultado. Esto se puede utilizar, por ejemplo, para recuperar datos de Adobe Campaign o para guardar datos en Adobe Campaign.
 
-1. En Adobe Campaign, para crear un nuevo archivo JSSP, haga clic en el icono **Nuevo** .
+1. En Adobe Campaign, para crear un nuevo archivo JSSP, haga clic en el icono **Nuevo**.
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Escriba el nombre de este archivo JSSP. En este ejemplo, utilizamos **cus:custom.jssp** (lo que significa que estará en el espacio de nombres **cus** ).
+1. Escriba el nombre de este archivo JSSP. En este ejemplo, utilizamos **cus:custom.jssp** (lo que significa que estará en la Área de nombres **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -57,11 +60,12 @@ En este ejemplo, creamos un nuevo archivo JSSP personalizado y lo llamamos desde
    %>
    ```
 
-1. Guarde su trabajo. El trabajo restante se realiza en AEM.
-1. Cree un servlet sencillo en el lado de AEM para llamar a este JSSP. En este ejemplo, suponemos lo siguiente:
+1. Guarde su trabajo. El trabajo restante está en AEM.
+1. Cree un servlet simple en el lado AEM para llamar a este JSSP. En este ejemplo, suponemos lo siguiente:
 
-   * La conexión funciona entre AEM y Campaign
-   * El servicio de nube de campañas está configurado en **/content/geometrixx-outdoors**
+   * Tiene la conexión funcionando entre AEM y Campaña
+   * El servicio de nube de campaña está configurado en **/content/geometrixx-outdoors**
+
    El objeto más importante de este ejemplo es **GenericCampaignConnector**, que le permite llamar (obtener y publicar) archivos jssp en el lado de Adobe Campaign.
 
    Este es un pequeño fragmento de código:
@@ -76,7 +80,7 @@ En este ejemplo, creamos un nuevo archivo JSSP personalizado y lo llamamos desde
    return results.bodyAsString();
    ```
 
-1. Como puede ver en este ejemplo, debe pasar las credenciales a la llamada. Esto se puede obtener mediante el método getCredentials(), donde se pasa una página que tiene configurado el servicio de nube de Campaign.
+1. Como puede ver en este ejemplo, debe pasar las credenciales a la llamada. Esto se puede obtener mediante el método getCredentials(), donde se pasa una página que tiene configurado el servicio de nube de Campañas.
 
    ```xml
    // page containing the cloudservice for Adobe Campaign
@@ -161,13 +165,13 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 
 ## Ejemplo 2: Adobe Campaign para AEM {#example-adobe-campaign-to-aem}
 
-AEM ofrece API predeterminadas para recuperar los objetos disponibles en cualquier lugar de la vista del explorador siteadmin.
+AEM ofertas de las API integradas para recuperar los objetos disponibles en cualquier parte de la vista de SiteAdmin Explorer.
 
 ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 >[!NOTE]
 >
->[Para ver este ejemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Uso compartido de paquetes.
+>[Para este ejemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Uso compartido de paquetes.
 
 Para cada nodo del explorador hay una API vinculada a él. Por ejemplo, para el nodo:
 
@@ -177,7 +181,7 @@ la API es:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-El final de la dirección URL **.1.json** se puede reemplazar por **.2.json**, **.3.json**, según el número de subniveles que le interese obtener. Para obtener todos ellos, se puede utilizar la palabra clave **infinito** :
+El final de la dirección URL **.1.json** se puede reemplazar por **.2.json**, **.3.json**, según el número de subniveles que le interese obtener Para obtener todos ellos, se puede utilizar la palabra clave **infinito**:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
