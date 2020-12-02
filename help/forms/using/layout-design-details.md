@@ -18,12 +18,12 @@ ht-degree: 0%
 ---
 
 
-# Diseño de maquetación{#layout-design}
+# Diseño de diseño{#layout-design}
 
 Las plantillas de formulario XFA o XDP son las plantillas para:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Imprimir canal](/help/forms/using/web-channel-print-channel.md#printchannel) de comunicaciones [interactivas](/help/forms/using/interactive-communications-overview.md)
+* [Imprimir ](/help/forms/using/web-channel-print-channel.md#printchannel) canal de comunicaciones  [interactivas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de diseños
 
@@ -56,94 +56,94 @@ Una vez analizada la presentación necesaria para crear la comunicación interac
 
 >[!NOTE]
 >
->Añada contenido en el canal de impresión de la comunicación interactiva en lugar de agregar contenido al componente de subformulario en la plantilla XDP. Añada contenido en las áreas de destinatario del canal Imprimir mediante fragmentos de [documento, gráficos, imágenes](create-interactive-communication.md#step2)y fragmentos de diseño.
+>Añada contenido en el canal de impresión de la comunicación interactiva en lugar de agregar contenido al componente de subformulario en la plantilla XDP. Añada contenido en las áreas de destinatario del canal de impresión mediante [fragmentos de documento, gráficos, imágenes](create-interactive-communication.md#step2) y fragmentos de diseño.
 
 Siga estos pasos para utilizar subformulario en una plantilla XDP:
 
-1. Abra Forms Designer, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario** en blanco, toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de plantillas.
+1. Abra Forms Designer, seleccione **Archivo** > **Nuevo** > **Usar un formulario en blanco**, toque **Siguiente** y, a continuación, toque **Finalizar** para abrir el formulario para la creación de plantillas.
 
-   Asegúrese de que las opciones Biblioteca **de** objetos y **Objeto** están seleccionadas en el menú **Ventana** .
+   Asegúrese de que las opciones **Biblioteca de objetos** y **Objeto** están seleccionadas en el menú **Ventana**.
 
-1. Arrastre y suelte el componente **Subformulario** desde la biblioteca **de** objetos al formulario.
+1. Arrastre y suelte el componente **Subformulario** desde la **Biblioteca de objetos** al formulario.
 
    ![Diseñador de componentes](assets/subform_component_designer_new.png)
 
 1. Seleccione el subformulario para mostrar las opciones del subformulario en la ventana **Objeto** del panel derecho.
-1. Seleccione la ficha **Subformulario** y seleccione **De posición variable** en la lista desplegable **Contenido** . Arrastre el extremo izquierdo del subformulario para ajustar la longitud.
+1. Seleccione la ficha **Subformulario** y seleccione **De posición variable** en la lista desplegable **Contenido**. Arrastre el extremo izquierdo del subformulario para ajustar la longitud.
 
    ![Subformulario de posición variable](assets/object_subform_flowed_new.png)
 
-1. En la ficha **Enlace** :
+1. En la ficha **Enlace**:
 
-   1. Especifique un nombre para el subformulario en el campo **Nombre** .
-   1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+   1. Especifique un nombre para el subformulario en el campo **Nombre**.
+   1. Seleccione **Ningún enlace de datos** en la lista desplegable **Enlace de datos**.
 
 1. Del mismo modo, seleccione el subformulario raíz en el panel izquierdo.
 
    ![Subformulario raíz](assets/root_subform_designer_new.png)
 
-1. Seleccione la ficha **Subformulario** y seleccione **De posición variable** en la lista desplegable **Contenido** . En la ficha **Enlaces** :
+1. Seleccione la ficha **Subformulario** y seleccione **De posición variable** en la lista desplegable **Contenido**. En la ficha **Enlaces**:
 
-   1. Especifique un nombre para el subformulario en el campo **Nombre** .
-   1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+   1. Especifique un nombre para el subformulario en el campo **Nombre**.
+   1. Seleccione **Ningún enlace de datos** en la lista desplegable **Enlace de datos**.
 
-   Repita los pasos del 2 al 5 para agregar más subformularios a la plantilla XDP. Añada [texto, fragmentos de documento, imágenes y gráficos](create-interactive-communication.md#step2) en las áreas de destinatario solo durante la creación de la comunicación interactiva.
+   Repita los pasos del 2 al 5 para agregar más subformularios a la plantilla XDP. Añada [texto, fragmentos de documento, imágenes y gráficos](create-interactive-communication.md#step2) en las áreas de destinatario solo mientras crea la Comunicación interactiva.
 
 1. Seleccione **Archivo** > **Guardar como** para guardar el archivo en el sistema de archivos local:
 
    1. Vaya a la ubicación para guardar el archivo y especifique un nombre para la plantilla XDP.
-   1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo** .
+   1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo**.
 
    1. Toque **Guardar**.
 
-### Uso del componente Campo de imagen en una plantilla XDP {#use-image-field-component-in-an-xdp-template}
+### Usar el componente Campo de imagen en una plantilla XDP {#use-image-field-component-in-an-xdp-template}
 
 Utilice el componente Campo de imagen o Subformulario en la plantilla XDP y agregue una imagen durante la creación de la comunicación interactiva.
 
 >[!NOTE]
 >
->Añada la imagen en el canal de impresión de la comunicación interactiva en lugar de agregar la imagen al campo de imagen o al componente Subformulario en la plantilla XDP. Para obtener más información, consulte [Añadir contenido a la comunicación](../../forms/using/create-interactive-communication.md#step2)interactiva.
+>Añada la imagen en el canal de impresión de la comunicación interactiva en lugar de agregar la imagen al campo de imagen o al componente Subformulario en la plantilla XDP. Para obtener más información, consulte [Añadir contenido a la comunicación interactiva](../../forms/using/create-interactive-communication.md#step2).
 
 Siga estos pasos para utilizar el componente Campo de imagen en una plantilla XDP:
 
-1. Arrastre y suelte el componente Campo **de** imagen desde la biblioteca **de** objetos al formulario.
+1. Arrastre y suelte el componente **Campo de imagen** desde la **Biblioteca de objetos** al formulario.
 1. Seleccione el subformulario para mostrar las opciones del subformulario en la ventana **Objeto** del panel derecho.
-1. En la ficha **Enlace** :
+1. En la ficha **Enlace**:
 
-   1. Especifique un nombre para el campo de imagen en el campo **Nombre** .
-   1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+   1. Especifique un nombre para el campo de imagen en el campo **Nombre**.
+   1. Seleccione **Ningún enlace de datos** en la lista desplegable **Enlace de datos**.
 
-### Creación de una plantilla XDP para fragmentos de diseño {#xdplayoutfragments}
+### Crear una plantilla XDP para fragmentos de diseño {#xdplayoutfragments}
 
 Utilice el componente Tabla de Forms Designer para crear fragmentos de diseño y, a continuación, utilizarlos para crear tablas mientras crea el canal Imprimir de Comunicación interactiva. El uso de fragmentos de diseño para crear tablas garantiza que el contenido de la tabla conserva la estructura cuando el canal web se genera automáticamente mediante el canal de impresión.
 
 >[!NOTE]
 >
->Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos](create-interactive-communication.md#step2) del modelo de datos del formulario únicamente durante la creación de la comunicación interactiva.
+>Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos del modelo de datos de formulario](create-interactive-communication.md#step2) solo durante la creación de la comunicación interactiva.
 
 Siga estos pasos para utilizar el componente Tabla en la plantilla XDP con Forms Designer:
 
-1. Arrastre y suelte el componente **Tabla** desde la biblioteca **de** objetos al formulario.
-1. En el cuadro de diálogo **Insertar tabla** :
+1. Arrastre y suelte el componente **Tabla** desde la **Biblioteca de objetos** al formulario.
+1. En el cuadro de diálogo **Insertar tabla**:
 
    1. Especifique el número de filas y columnas de la tabla.
-   1. Seleccione la casilla de verificación **Incluir fila de encabezado en tabla** para incluir una fila para el encabezado de tabla.
+   1. Seleccione la casilla **Incluir fila de encabezado en tabla** para incluir una fila para el encabezado de tabla.
    1. Toque **Aceptar**.
 
-1. Toque **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón derecho en los nombres de celda incluidos en el encabezado y otras filas y seleccione **Cambiar nombre de objeto** para cambiar el nombre de las celdas de la tabla.
-1. Haga clic en los campos de texto del encabezado de tabla de la Vista **** Diseño y cámbieles el nombre.
-1. Arrastre y suelte el componente Campo **de** texto de la biblioteca **de** objetos en cada celda de la tabla de la Vista **** Diseño. Siga este paso para poder enlazar celdas de tabla con los objetos del modelo de datos de formulario durante la creación de la comunicación interactiva.
+1. Toque **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón derecho en los nombres de celda incluidos en el encabezado y otras filas y seleccione **Cambiar el nombre del objeto** para cambiar el nombre de las celdas de la tabla.
+1. Haga clic en los campos de texto del encabezado de tabla en la **Vista de diseño** y cámbieles el nombre.
+1. Arrastre y suelte el componente **Campo de texto** de la **Biblioteca de objetos** a cada celda de tabla de la **Vista de diseño**. Siga este paso para poder enlazar celdas de tabla con los objetos del modelo de datos de formulario durante la creación de la comunicación interactiva.
 
    ![Campos de texto en una tabla](assets/text_fields_table_new.png)
 
-1. Seleccione el nombre de la fila en el panel izquierdo y seleccione **Objeto** > **Enlace** > **Repetir fila para cada elemento** de datos. Realice este paso para asegurarse de que si se crea un enlace entre las celdas de tabla de esta fila con objetos del modelo de datos de formulario de tipo colección, la fila de tabla se repite automáticamente para cada elemento de datos disponible en la base de datos.
+1. Seleccione el nombre de la fila en el panel izquierdo y seleccione **Objeto** > **Enlace** > **Repetir fila para cada elemento de datos**. Realice este paso para asegurarse de que si se crea un enlace entre las celdas de tabla de esta fila con objetos del modelo de datos de formulario de tipo colección, la fila de tabla se repite automáticamente para cada elemento de datos disponible en la base de datos.
 
-   Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos](create-interactive-communication.md#step2) del modelo de datos del formulario únicamente durante la creación de la comunicación interactiva.
+   Introduzca texto en las celdas de la tabla o [cree un enlace con los objetos del modelo de datos de formulario](create-interactive-communication.md#step2) solo durante la creación de la comunicación interactiva.
 
 1. Seleccione **Archivo** > **Guardar como** para guardar el archivo en el sistema de archivos local:
 
    1. Vaya a la ubicación para guardar el archivo y especifique el nombre de la plantilla XDP.
-   1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo** .
+   1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo**.
 
    1. Toque **Guardar**.
 
@@ -151,8 +151,8 @@ Siga estos pasos para utilizar el componente Tabla en la plantilla XDP con Forms
 
 Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
 
-1. Seleccione **Forms** > **Forms y Documentos**.
-1. Toque **Crear** > Cargar **archivo**.
+1. Seleccione **Forms** > **Forms &amp; Documentos**.
+1. Toque **Crear** > **Carga de archivo**.
 1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y toque **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
 ## Uso de esquema {#using-schema}
@@ -229,9 +229,9 @@ Utilice un campo si desea capturar datos de módulos o datos de elementos de dic
 
 Cuando elementos como el logotipo y la dirección de su organización aparezcan en todas las páginas de una carta o comunicación interactiva, cree campos de formulario para esos elementos y colóquelos en la página de formato. Utilice el enlace Nombre (Nombre del campo) para estos campos.
 
-## Especificar el formato de procesamiento del servidor {#specify-the-server-nbsp-render-format}
+## Especifique el formato de procesamiento del servidor {#specify-the-server-nbsp-render-format}
 
 Utilice el formato de procesamiento del servidor de la presentación en Formulario XML dinámico; de lo contrario, las letras o comunicaciones interactivas basadas en este diseño no se pueden procesar correctamente. De forma predeterminada, el formato de procesamiento del servidor en Forms Designer se establece en Formulario XML dinámico. Para asegurarse de que está utilizando el formato correcto:
 
-* En Designer, haga clic en **Archivo** > Propiedades **del** formulario > **Predeterminados** y asegúrese de que la configuración de Formato/procesamiento de PDF está definida en Formulario XML dinámico.
+* En Designer, haga clic en **Archivo** > **Propiedades del formulario** > **Predeterminados** y asegúrese de que la configuración de Procesamiento/Formato de PDF está establecida en Formulario XML dinámico.
 
