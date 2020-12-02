@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Puede utilizar las páginas web de PDF Generator para convertir archivos.
 
-## Creación de un archivo PDF {#create-a-pdf-file}
+## Crear un archivo PDF {#create-a-pdf-file}
 
 1. En la consola de administración, haga clic en Servicios > Generador de PDF > Crear archivo PDF.
 1. Haga clic en Examinar para buscar y seleccionar el archivo.
@@ -33,25 +33,25 @@ Puede utilizar las páginas web de PDF Generator para convertir archivos.
 
 1. En Configuración, seleccione Usar configuración personalizada o Cargar archivo de configuración.
 
-   * Si utiliza una configuración personalizada, seleccione una configuración de Adobe PDF, una configuración de seguridad y una configuración de tipo de archivo, y especifique un tiempo de espera.
+   * Si utiliza una configuración personalizada, seleccione una configuración de Adobe PDF, una configuración de seguridad y una configuración de tipo de archivo y especifique un tiempo de espera.
 
       La configuración de Adobe PDF solo se aplica a las conversiones de PS a PDF, de EPS a PDF, de PRN a PDF, de imagen a PDF con OCR activado y de nativo a PDF. La configuración de tiempo de espera especifica el tiempo máximo que tarda la conversión en completarse. El valor predeterminado es de 270 segundos. Esta configuración no se utiliza durante las conversiones de imagen a PDF y de OpenOffice a PDF.
 
    * Si está cargando un archivo de configuración, escriba su ruta y nombre en el cuadro o haga clic en Examinar para buscar y seleccionar el archivo.
 
-1. (Opcional) En Archivo de metadatos XMP, escriba la ruta y el nombre del archivo XMP o haga clic en Examinar para buscar y seleccionar el archivo. Se puede utilizar un archivo XMP para incluir información de metadatos estándar. (Consulte [Acerca de los archivos](converting-files-using-pdf-generator.md#about-xmp-files)XMP.)
+1. (Opcional) En XMP archivo de metadatos, escriba la ruta y el nombre del archivo XMP o haga clic en Examinar para buscar y seleccionar el archivo. Se puede utilizar un archivo XMP para incluir información de metadatos estándar. (Consulte [Acerca de XMP archivos](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Haga clic en Crear. Cuando se crea el archivo, aparece un vínculo a él. Si se produce un error durante la conversión, aparece una advertencia. Si está creando un archivo Postscript, la advertencia también contiene un vínculo al archivo de registro.
 1. Haga clic en el vínculo del archivo PDF. El archivo se abre en Acrobat.
 
-### Acerca de los archivos XMP {#about-xmp-files}
+### Acerca de XMP archivos {#about-xmp-files}
 
-Los documentos PDF que PDF Generator crea en Acrobat 5.0 o posterior contienen metadatos de documento en formato XML. *Los metadatos* incluyen información sobre el documento y su contenido, como el nombre del autor, las palabras clave y la información de copyright que las utilidades de búsqueda pueden utilizar.
+Los documentos PDF que PDF Generator crea en Acrobat 5.0 o posterior contienen metadatos de documento en formato XML. ** Metadatos incluye información sobre el documento y su contenido, como el nombre del autor, las palabras clave y la información de copyright que pueden utilizar las utilidades de búsqueda.
 
-Los metadatos de documento contienen (pero no se limitan a) información que también aparece en la ficha Descripción del cuadro de diálogo Propiedades de Documento en Acrobat. Los cambios realizados en la ficha Descripción se reflejan en los metadatos del documento. Los metadatos de Documento se pueden ampliar y modificar mediante el uso de productos de terceros.
+Los metadatos de documento contienen (pero no se limitan a) información que también aparece en la ficha Descripción del cuadro de diálogo Propiedades de Documento en Acrobat. Los cambios realizados en la ficha Descripción se reflejan en los metadatos del documento. Los metadatos de documento se pueden ampliar y modificar mediante el uso de productos de terceros.
 
-Adobe Extensible Metadata Platform (XMP) proporciona a las aplicaciones de Adobe un marco XML común que estandariza la creación, el procesamiento y el intercambio de metadatos de documento entre flujos de trabajo de publicación. Puede guardar e importar el código fuente XML de metadatos de documento en formato XMP, lo que facilita el uso compartido de metadatos entre varios documentos. Para obtener más información sobre los archivos XMP, consulte [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) y [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
+Adobe Extensible Metadata Platform (XMP) proporciona a las aplicaciones de Adobe un marco XML común que estandariza la creación, el procesamiento y el intercambio de metadatos de documento entre flujos de trabajo de publicación. Puede guardar e importar el código fuente XML de metadatos de documento en formato XMP, lo que facilita el uso compartido de metadatos entre varios documentos. Para obtener más información sobre XMP archivos, consulte [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) y [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
 
-Puede crear archivos XMP en Acrobat.
+Puede crear archivos de XMP en Acrobat.
 
 ## Convertir un archivo HTML o ZIP a PDF {#convert-an-html-file-or-zip-file-to-pdf}
 
@@ -99,27 +99,27 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de la je
    * Para utilizar la configuración personalizada, seleccione Usar configuración personalizada, especifique la configuración de seguridad y el tipo de archivo y un valor de tiempo de espera. El valor predeterminado es 270 segundos.
    >[!NOTE]
    >
-   >Si ha configurado el servicio Generar PDF para utilizar Acrobat WebCapture, la configuración de tipo de archivo seleccionada en esta página no afectará al PDF generado. En su lugar, realice los cambios correspondientes a la versión de Acrobat que esté instalada en el servidor.
+   >Si ha configurado el servicio Generar PDF para utilizar Acrobat WebCapture, la configuración de tipo de archivo seleccionada en esta página no afectará al PDF generado. En su lugar, realice los cambios correspondientes a la versión de Acrobat que está instalada en el servidor.
 
    * Para utilizar un archivo de configuración existente, seleccione Cargar archivo de configuración y haga clic en Examinar para ir a la ubicación del archivo.
 
 
-1. Para cargar un archivo XMP, haga clic en Examinar y vaya a la ubicación del archivo. Se puede utilizar un archivo XMP para incluir información de metadatos estándar. (Consulte [Acerca de los archivos](converting-files-using-pdf-generator.md#about-xmp-files)XMP.)
+1. Para cargar un archivo XMP, haga clic en Examinar y vaya a la ubicación del archivo. Se puede utilizar un archivo XMP para incluir información de metadatos estándar. (Consulte [Acerca de XMP archivos](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Haga clic en Crear. Cuando se crea el archivo, aparece un vínculo al archivo PDF.
 1. Haga clic en el vínculo para vista del documento PDF en Acrobat.
 
 ## Exportar un archivo PDF a otro formato de archivo (solo Windows) {#export-a-pdf-file-to-another-file-format-windows-only}
 
-Puede exportar archivos PDF a varios formatos de archivo, tal como se describe en el capítulo Generar servicio PDF de Referencia [de](https://www.adobe.com/go/learn_aemforms_services_63)servicios.
+Puede exportar archivos PDF a varios formatos de archivo, tal como se describe en el capítulo Generar servicio PDF de [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Exportar PDF.
+1. En la consola de administración, haga clic en Servicios > Generador de PDF > Export PDF.
 1. Haga clic en Examinar para buscar el archivo PDF que desea exportar.
-1. En Exportar archivo PDF a lista, seleccione el formato al que desea exportar el archivo PDF.
+1. En el archivo Export PDF a la lista, seleccione el formato al que desea exportar el archivo PDF.
 1. En el cuadro Especificar un tiempo de espera, introduzca el tiempo de espera antes de que se agote el tiempo de espera de la aplicación. El valor predeterminado es 270 segundos.
 
    El tiempo de conversión que se muestra cuando se convierte el archivo puede ser mayor que el valor que especifique aquí. El tiempo de conversión incluye el tiempo que se tarda en esperar al subproceso o proceso, el tiempo que se tarda en convertir el archivo y el tiempo que tarda el convertidor de reserva (si corresponde). time. El valor Especificar un tiempo de espera es sólo el tiempo que se tarda en convertir el archivo.
 
-1. (Opcional) En la opción **Especificar perfil** de verificación previa personalizado, haga clic en Examinar y seleccione un perfil [de verificación previa](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)personalizado. Los perfiles de verificación previa solo se utilizan al convertir documentos a formato de archivo PDF (PDF/A).
+1. (Opcional) En la opción **Especificar perfil de verificación previa personalizado**, haga clic en Examinar y seleccione un [perfil de verificación previa personalizado](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Los perfiles de verificación previa solo se utilizan al convertir documentos a formato de archivo PDF (PDF/A).
 1. Haga clic en Exportar. Cuando se completa la conversión, aparece un vínculo al archivo exportado.
 1. Haga clic en el vínculo para vista del archivo convertido.
 
@@ -131,7 +131,7 @@ PDF Generator permite reducir el tamaño de los archivos PDF.
 >
 >Al optimizar un documento firmado digitalmente, se eliminan e invalidan las firmas digitales.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Optimizar PDF.
+1. En la consola de administración, haga clic en Servicios > Generador de PDF > Optimize PDF.
 1. Haga clic en Examinar para buscar el archivo PDF que desea optimizar.
 1. Especifique la configuración:
 
