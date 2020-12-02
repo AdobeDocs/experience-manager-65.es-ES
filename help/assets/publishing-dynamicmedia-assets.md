@@ -16,14 +16,14 @@ ht-degree: 3%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# Publicación de recursos de Dynamic Media {#publishing-dynamic-media-assets}
 
-Para publicar los recursos de Dynamic Media, seleccione los recursos que ya haya cargado y toque **[!UICONTROL Publicar]** o **[!UICONTROL Publicación rápida.]** Una vez publicados los recursos de Dynamic Media, estarán disponibles para incluirlos en una página web mediante una URL o incrustando el código en la página.
+Para publicar los recursos de Dynamic Media, seleccione los recursos que ya ha cargado y toque **[!UICONTROL Publicar]** o **[!UICONTROL Publicación rápida.]** Una vez publicados los recursos de Dynamic Media, estarán disponibles para incluirlos en una página web mediante una URL o incrustando el código en la página.
 
 También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media: modo Scene7.](config-dms7.md)
-O bien, puede publicar recursos en Dynamic Media de forma selectiva o en AEM, mutuamente excluyentes entre sí, mediante Publicación **** selectiva en el nivel de carpeta. See [Working with Selective Publish in Dynamic Media.](/help/assets/selective-publishing.md)
+O bien, puede publicar recursos en Dynamic Media o en AEM, mutuamente excluyentes entre sí, mediante  **[!UICONTROL Publicación]** selectiva en el nivel de carpeta. Consulte [Uso de la publicación selectiva en Dynamic Media.](/help/assets/selective-publishing.md)
 
-En la Vista **[!UICONTROL de]** tarjeta, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
+En la **[!UICONTROL Vista de tarjeta]**, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ En la Vista **[!UICONTROL de]** tarjeta, aparece un pequeño icono de globo terr
 
 Si tiene intención de publicar recursos de vídeo inmediatamente después de codificarlos, asegúrese de que la codificación está completa. Cuando se siguen codificando los vídeos, el sistema le permite saber que hay un flujo de trabajo de procesamiento de vídeo en curso. Cuando haya terminado la codificación de vídeo, debería poder realizar la previsualización de las representaciones de vídeo. En ese momento, puede publicar los vídeos sin incurrir en errores de publicación.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+Consulte también [Vinculación de direcciones URL a su Aplicación web](linking-urls-to-yourwebapplication.md).
 
-See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed-code.md)
+Consulte también [Incrustación del visor de imágenes o vídeo de Dynamic Media en una página web](embed-code.md)
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 
 
-Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publicación de recursos.](manage-assets.md)
+Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publishing Assets.](manage-assets.md)
 
-## ENVÍO HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## ENVÍO HTTP/2 de los recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
-Consulte el envío [HTTP/2 del contenido de las preguntas](/help/sites-administering/scene7-http2faq.md) más frecuentes para obtener más información.
+Consulte [HTTP/2 envío de contenido de preguntas más frecuentes](/help/sites-administering/scene7-http2faq.md) para obtener más información.
