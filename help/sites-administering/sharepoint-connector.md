@@ -46,7 +46,7 @@ Para comenzar con el conector, haga lo siguiente:
 
 * Asegúrese de que tiene al menos Java 7 instalado.
 * Descargue el archivo de distribución de paquetes de conector desde Distribución de software.
-* Copie un archivo *license.properties* válido en el directorio que contiene el archivo *cq-quickstart-6.4.0.jar* .
+* Copie un archivo *license.properties* válido en el directorio que contiene el archivo *cq-quickstart-6.4.0.jar*.
 
 * Toque o haga clic con el doble en el archivo .jar para AEM de inicio o inicio desde la línea de comandos.
 * Instale el paquete de conector desde el Administrador de paquetes.
@@ -54,7 +54,8 @@ Para comenzar con el conector, haga lo siguiente:
 
 ## Instalación del conector de SharePoint {#installing-sharepoint-connector}
 
-El conector es un paquete de contenido que facilita la instalación. Instale el paquete mediante el Administrador de paquetes y, a continuación, establezca la URL del servidor de SharePoint y otras opciones de configuración. El contenido de SharePoint está disponible en el repositorio de AEM.
+El conector es un paquete de contenido que facilita la instalación. Instale el paquete mediante el Administrador de paquetes y, a continuación, establezca la dirección URL del servidor de SharePoint
+y otras opciones de configuración. El contenido de SharePoint está disponible en el repositorio de AEM.
 
 ### Requisitos de instalación {#installation-requirements}
 
@@ -66,7 +67,7 @@ El conector requiere lo siguiente:
 * Credenciales de usuario y permisos para repositorios de CRX y SharePoint
 * [Plataformas admitidas](#supported-platforms)
 
-El conector de SharePoint está disponible para su descarga desde [Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673)de software.
+El conector de SharePoint está disponible para su descarga desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Plataformas compatibles {#supported-platforms}
 
@@ -85,11 +86,11 @@ El conector admite lo siguiente:
 
 >[!NOTE]
 >
->El conector solo admite configuraciones oficialmente admitidas por Microsoft. Consulte los requisitos [del sistema MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) y [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx) .
+>El conector solo admite configuraciones oficialmente admitidas por Microsoft. Consulte [Requisitos del sistema para MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) y [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx).
 
 ### Instalación estándar {#standard-installation}
 
-La distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la documentación [de distribución de](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)software.
+La distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
 
 
 #### Integración con AEM {#integrating-with-aem}
@@ -98,12 +99,12 @@ Para instalar el paquete de contenido del conector.
 
 1. Abra un ticket de Soporte de Adobe para solicitar la función de conector.
 1. Descargue el paquete cuando esté disponible y, a continuación, abra el Administrador de paquetes para su instancia de AEM.
-1. Toque o haga clic en **Instalar** en la página de descripción del paquete.
-1. En el cuadro de diálogo **Instalar paquete** , toque o haga clic en **Instalar**.
+1. Toque o haga clic **Instalar** desde la página de descripción del paquete.
+1. En el cuadro de diálogo **Instalar paquete**, toque o haga clic en **Instalar**.
 
    **Nota**: Asegúrese de haber iniciado sesión como administrador.
 
-1. Cuando el paquete esté instalado, toque o haga clic en **Cerrar**.
+1. Cuando se instale el paquete, toque o haga clic en **Cerrar**.
 
 ## Configuración del conector de SharePoint {#configuring-sharepoint-connector}
 
@@ -116,10 +117,10 @@ Configure la URL del servidor de SharePoint para que el repositorio de SharePoin
 Para establecer la dirección URL del servidor de SharePoint y las opciones avanzadas, lleve a cabo estos pasos:
 
 1. Vaya a la Consola de administración de OSGi: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Busque el **conector JCR de día para el paquete de Microsoft Sharepoint** .
+1. Busque el paquete **Day JCR Connector for Microsoft Sharepoint**.
 1. Edite los valores de configuración.
-1. Establezca la URL de SharePoint Server como el valor de **Workspaces**.
-1. Tap/click **Save**.
+1. Configure la URL de SharePoint Server como el valor de **Workspaces**.
+1. Toque o haga clic en **Guardar**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -128,7 +129,9 @@ Parámetros &#39;Workspaces&#39; y &#39;Default Workspace Name&#39;:
 De forma predeterminada, el conector expone un solo espacio de trabajo JCR. El servidor de SharePoint expuesto por este espacio de trabajo se establece mediante el parámetro de configuración &#39;URL del servidor de SharePoint&#39;.
 
 El conector también se puede configurar para varios espacios de trabajo. En este caso, cada área de trabajo está asociada con la dirección URL del servidor de SharePoint correspondiente que se muestra a través del área de trabajo. Para agregar un espacio de trabajo, agregue una definición de espacio de trabajo al parámetro Workspaces. Una definición de espacio de trabajo tiene el siguiente formato:
-`<name>`= `<url>` donde`<name>``<url>` es el nombre del espacio de trabajo JCR y es la dirección URL del servidor de SharePoint para ese espacio de trabajo.
+`<name>`= `<url>` donde
+`<name>` es el nombre del espacio de trabajo JCR y
+`<url>` es la dirección URL del servidor de SharePoint para ese espacio de trabajo.
 
 En AEM, realice un paso más aparte de los pasos de configuración anteriores. Lista de permitidos del paquete &#39;**com.day.cq.dam.cq-dam-jcr-conectores**&#39;.
 
@@ -211,10 +214,10 @@ Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syste
 
 **Configuración de la autenticación básica (Windows)**
 
-1. [Deshabilitar la autenticación](#disable-token-authentication)por token.
+1. [Deshabilitar la autenticación](#disable-token-authentication) por token.
 1. Vaya a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Haga clic en OSGI > Configuración.
-1. Busque **Day JCR Connector for Microsoft Sharepoint**.
+1. Busque **Conector JCR de día para Microsoft Sharepoint**.
 1. Haga clic `Edit the configuration values`.
 1. Establezca el valor de la Fábrica de conexiones de Sharepoint en `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Haga clic en **Guardar**.
@@ -239,10 +242,10 @@ Para agregar el usuario al grupo de administración:
 1. Vaya a Administración de grupos.
 1. Haga clic en el nodo ‘a’.
 1. Haga clic en ‘administradores’.
-1. Escriba el ID de usuario creado arriba en el cuadro de texto antes del botón **Examinar** .
+1. Escriba el ID de usuario creado arriba en el cuadro de texto antes del botón **Examinar**.
 1. Haga clic en el símbolo de visto verde para agregar el usuario al grupo de administración.
 
-### Deshabilitar la autenticación por token {#disable-token-authentication}
+### Deshabilitar la autenticación de token {#disable-token-authentication}
 
 1. Descargue e instale el paquete `basic auth`. `zip` de Distribución de software.
 
@@ -255,14 +258,14 @@ Para agregar el usuario al grupo de administración:
 
 #### Compatibilidad con diferentes métodos de autenticación del servidor de SharePoint {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-En su versión estándar, el conector admite la autenticación **Windows** (básica) estándar de IIS y la autenticación basada en Forms (basada en token). Los [otros métodos](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) de autenticación se pueden admitir a través del mecanismo de extensibilidad.
+En su versión estándar, el conector admite la autenticación estándar IIS **Windows** (Básica) y la autenticación basada en Forms (basada en token). Los [otros métodos de autenticación](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) pueden admitirse a través del mecanismo de extensibilidad.
 
 Los siguientes pasos proporcionan instrucciones para ampliar la autenticación estándar a fin de admitir varios métodos de autenticación del servidor de SharePoint:
 
-1. Implementar `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` para gestionar el cliente del proceso de autenticación específico.
-1. Instale la `SharepointConnectionFactory` implementación como un paquete de fragmentos con el host de fragmentos `com.day.crx.spi.crx2sharepoint-bundle`.
+1. Implemente `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` para manejar el lado del cliente del proceso de autenticación específico.
+1. Instale la implementación `SharepointConnectionFactory` como un paquete de fragmentos con el host de fragmentos `com.day.crx.spi.crx2sharepoint-bundle`.
 
-   Al utilizar Maven, adapte la siguiente configuración de la `maven-bundle-plugin` a los requisitos del proyecto:
+   Al utilizar Maven, adapte la siguiente configuración de `maven-bundle-plugin` a los requisitos del proyecto:
 
    ```xml
               <plugin>
@@ -283,7 +286,7 @@ Los siguientes pasos proporcionan instrucciones para ampliar la autenticación e
               </plugin>
    ```
 
-1. Registre la implementación `SharepointConnectionFactory` en la configuración del conector. En la ventana de configuración del conector, haga clic en Opciones **avanzadas**. En el campo correspondiente a **la Fábrica** de conexiones de Sharepoint, especifique el nombre de la implementación `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
+1. Registre la implementación `SharepointConnectionFactory` en la configuración del conector. En la ventana de configuración del conector, haga clic en **Opciones avanzadas**. En el campo for **Sharepoint Connection Factory**, especifique el nombre de la implementación `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
 
 1. Reinicie el conector.
 
