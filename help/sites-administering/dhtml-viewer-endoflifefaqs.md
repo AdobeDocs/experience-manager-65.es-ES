@@ -77,7 +77,7 @@ Para determinar si el visor que utiliza su compañía es DHTML y, por tanto, se 
 
    Busque la inclusión de JS de &quot;sj_deviceDetect.js&quot; en el código.
 
-   Esto se ha sustituido por el nuevo código de detección de dispositivos JS aquí: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers) .
+   Esto se ha sustituido por el nuevo código de detección de dispositivos JS aquí: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers).
 
 **¿Cuál es la plataforma de visor de sustitución?**
 
@@ -131,4 +131,4 @@ Aunque todavía puede estar en producción con visores basados en DHTML, es impo
 
 **¿Con quién puedo contactar para obtener más información?**
 
-Si esta pregunta frecuente no responde a todas sus preguntas, [utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de asistencia o póngase en contacto con el administrador de cuentas de Adobe.
+Si esta pregunta frecuente no responde a todas sus preguntas, [utilice al Admin Console para crear un caso de soporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) o póngase en contacto con su administrador de cuentas de Adobe.
