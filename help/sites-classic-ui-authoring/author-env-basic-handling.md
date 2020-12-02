@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 93%
 
 ---
 
@@ -22,8 +25,9 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 >* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación AEM. Utiliza la consola **Sitios** como base. 
    >
    >
-* Algunas funciones no están disponibles en todas las consolas u otras funciones están disponibles en determinadas consolas. La información específica sobre consolas individuales y sus funciones se tratará en más detalle en otras páginas.
+* Algunas funciones no están disponibles en todas las consolas u otras funciones están disponibles en determinadas consolas. La información específica sobre consolas concretas y sus funciones se tratará en más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [al editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+
 >
 
 
@@ -160,7 +164,7 @@ Hay disponibles las opciones siguientes; se muestra un subconjunto de estos camp
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
-   <td>Miniatura</td>
+   <td>Miniatura   </td>
    <td>Muestra una miniatura de la página.</td>
   </tr>
   <tr>
@@ -204,7 +208,7 @@ Hay disponibles las opciones siguientes; se muestra un subconjunto de estos camp
    <td>Muestra si una página se ha bloqueado y qué cuenta de usuario la ha bloqueado.</td>
   </tr>
   <tr>
-   <td>Live Copy</td>
+   <td>Live Copy   </td>
    <td>Indica si la página forma parte de una Live Copy.</td>
   </tr>
  </tbody>
