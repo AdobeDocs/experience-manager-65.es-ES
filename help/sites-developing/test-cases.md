@@ -12,6 +12,9 @@ discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 translation-type: tm+mt
 source-git-commit: da08613be784f43ad3e3c3652b7e015640a48a9d
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -36,9 +39,9 @@ Los ensayos deberán definir claramente:
 * Resultados esperados.
 * Criterios claros para aprobar o fallar.
 
-La perspectiva de automatizar casos de prueba es obviamente atractiva, ya que puede eliminar tareas repetitivas.
+El cliente potencial de automatizar los casos de prueba es obviamente atractivo ya que puede eliminar tareas repetitivas.
 
-## Pruebas manuales frente a automatizadas {#manual-versus-automated-tests}
+## Pruebas manuales versus automatizadas {#manual-versus-automated-tests}
 
 Sin embargo, la automatización de los casos de prueba es una inversión importante, por lo que deben considerarse algunos aspectos:
 
@@ -49,18 +52,20 @@ Sin embargo, la automatización de los casos de prueba es una inversión importa
 
 ## Prueba de aspectos específicos {#testing-specific-aspects}
 
-Al probar AEM, algunos detalles específicos son de particular interés:
+Cuando se realizan pruebas AEM algunos detalles específicos son de particular interés:
 
 **Entornos de creación y publicación**
 
-Aunque se trata en [entornos](/help/sites-developing/the-basics.md#environments) , vale la pena destacar un factor decisivo de AEM con respecto a las pruebas.
+Aunque, abarcado en [Entornos](/help/sites-developing/the-basics.md#environments), vale la pena destacar un factor decisivo de AEM con respecto a las pruebas.
 
 Debe considerar AEM como dos aplicaciones:
 
-* entorno *Autor* Esta instancia permite a los autores introducir y publicar contenido.
+* el entorno *Autor*
+Esta instancia permite a los autores introducir y publicar contenido.
 Esto tiene un conjunto pequeño (er) y predecible de usuarios, para los que es crucial una funcionalidad y un rendimiento específicos.
 
-* entorno de *publicación* Esta instancia presenta el sitio web en su formulario publicado para que los visitantes puedan acceder a él.
+* el entorno *Publish*
+Esta instancia presenta el sitio web en su forma publicada para el acceso de los visitantes.
 Generalmente, este grupo de usuarios es mayor, ya que el volumen de tráfico no siempre es 100% predecible. El rendimiento sigue siendo crucial cuando se responde a las solicitudes. También se debe considerar el almacenamiento en caché y el equilibrio de carga.
 
 Aunque el mismo software como tal:
@@ -85,19 +90,24 @@ La mayoría de los proyectos instalarán Dispatcher para almacenamiento en cach�
 
 La prueba es difícil (el almacenamiento en caché se realiza en varios niveles y en varias ubicaciones) y debe realizarse en forma de caja negra. Los aspectos clave para probar son:
 
-* **La precisión** garantiza que el visitante del sitio web vea las actualizaciones de contenido.
+* **Con**
+precisión, asegúrese de que el visitante del sitio web vea las actualizaciones de contenido.
 
-* **La continuidad** garantiza que el sitio web siga estando disponible cuando se cierra un servidor.
+* **Asegúrese**
+continuamente de que el sitio web siga estando disponible cuando se cierre un servidor.
 
-* **Los clústeres** se utilizan para proporcionar:
+* ****
+ClustersClusters se utilizan para proporcionar:
 
-   * **Failover** Si un servidor falla, otros servidores del clúster se harán cargo del procesamiento.
+   * ****
+FailoverSi un servidor falla, otros servidores del clúster se harán cargo del procesamiento.
 
-   * **El equilibrio de**carga de rendimiento con failover completo aumenta el rendimiento de un clúster.
+   * **El equilibrio**
+PerformanceLoad con failover completo aumenta el rendimiento de un clúster.
 Cuando se utiliza para un proyecto de cliente, se debe probar el clúster para confirmar el funcionamiento correcto de la configuración.
 
 ## Prueba de software de terceros {#testing-third-party-software}
 
-Se hará referencia a cualquier software de terceros que interactúe con AEM en las Especificaciones detalladas de requisitos.
+Cualquier software de terceros interconectado a AEM será referenciado en las Especificaciones detalladas de requisitos.
 
 Todas las pruebas requeridas (según el ámbito definido) deben analizarse y obtenerse pruebas limpias.
