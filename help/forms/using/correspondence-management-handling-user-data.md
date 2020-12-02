@@ -23,11 +23,11 @@ Cuando un usuario comercial o un agente guarda una correspondencia como borrador
 
 >[!NOTE]
 >
->En AEM 6.5 Forms, la administración de correspondencia no está disponible de forma predeterminada. Si está actualizando desde una versión anterior de AEM Forms, instale el paquete de compatibilidad y migre los recursos de administración de correspondencia para seguir usándolos en AEM Forms 6.5. Para obtener más información, consulte Paquete [de compatibilidad](/help/forms/using/compatibility-package.md).
+>En AEM 6.5 Forms, la administración de correspondencia no está disponible de forma predeterminada. Si está actualizando desde una versión anterior de AEM Forms, instale el paquete de compatibilidad y migre los recursos de administración de correspondencia para seguir usándolos en AEM Forms 6.5. Para obtener más información, consulte [Paquete de compatibilidad](/help/forms/using/compatibility-package.md).
 
-## Almacenes de datos y datos de usuarios {#data}
+## Almacenes de datos y datos del usuario {#data}
 
-La administración de correspondencia almacena datos para las cartas de borrador y enviadas en AEM repositorio solo si la instancia de publicación está configurada para administrar instancias de carta. Para obtener más información acerca de la configuración, consulte Propiedades [de configuración de Administración de](/help/forms/using/cm-configuration-properties.md)correspondencia.
+La administración de correspondencia almacena datos para las cartas de borrador y enviadas en AEM repositorio solo si la instancia de publicación está configurada para administrar instancias de carta. Para obtener más información acerca de la configuración, consulte [Propiedades de configuración de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 Según la persistencia del almacén de datos configurada para la implementación de AEM, los borradores y los datos de correspondencia enviados se almacenan en las siguientes ubicaciones.
 
@@ -57,7 +57,7 @@ En la ubicación del repositorio de AEM especificada anteriormente:
 * `[node-id]` es el ID asignado a la carpeta que contiene la letra
 * `[letter-instance-name]` es el nombre especificado al guardar o enviar una carta
 
-En el nodo [letter-instance-name] , se crea la siguiente estructura de nodos y los datos de cada instancia de letra se almacenan en el repositorio de AEM:
+En el nodo [letter-instance-name], se crea la siguiente estructura de nodos y los datos de cada instancia de letra se almacenan en el repositorio de AEM:
 
 | Nodo | Descripción |
 |---|---|
@@ -70,11 +70,11 @@ En el nodo [letter-instance-name] , se crea la siguiente estructura de nodos y l
 
 Puede acceder a los datos de envío y borrador de la correspondencia en los almacenes de datos configurados y, si es necesario, eliminarlos.
 
-### Acceso a los datos de usuario {#access-user-data}
+### Obtener acceso a los datos de usuario {#access-user-data}
 
-La administración de correspondencia proporciona API que puede utilizar para buscar y acceder a instancias de cartas de borrador y envío. Mediante las API, puede buscar y abrir instancias de carta utilizando el ID de instancia de carta o el usuario que guardó o envió la correspondencia. Para obtener más información, consulte [API para acceder a instancias](/help/forms/using/cm-apis-to-access-letter-instances.md)de letras.
+La administración de correspondencia proporciona API que puede utilizar para buscar y acceder a instancias de cartas de borrador y envío. Mediante las API, puede buscar y abrir instancias de carta utilizando el ID de instancia de carta o el usuario que guardó o envió la correspondencia. Para obtener más información, consulte [API para acceder a instancias de letras](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-También puede desplazarse a la instancia de carta en AEM repositorio mediante CRX DELite. Consulte Almacenes [de datos y datos de](/help/forms/using/correspondence-management-handling-user-data.md#data) usuario para obtener información sobre los datos almacenados y la ubicación del repositorio.
+También puede desplazarse a la instancia de carta en AEM repositorio mediante CRX DELite. Consulte [Almacenes de datos y datos de usuario](/help/forms/using/correspondence-management-handling-user-data.md#data) para obtener información sobre la ubicación del repositorio y los datos almacenados.
 
 ### Eliminar datos de usuario {#delete-user-data}
 
