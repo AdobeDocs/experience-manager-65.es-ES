@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Automatización de pruebas de formularios adaptables{#automate-testing-of-adaptive-forms}
+# Automatizar la prueba de formularios adaptables{#automate-testing-of-adaptive-forms}
 
 ## Información general {#overview}
 
 Los formularios adaptables son esenciales para las interacciones con los clientes. Es importante probar los formularios adaptables con todos los cambios que realice en ellos, como cuando se despliega un nuevo paquete de correcciones o se cambia una regla del formulario. Sin embargo, la prueba funcional de los formularios adaptables y de todos los campos de los mismos puede resultar tediosa.
 
-Calvin le permite automatizar la prueba de sus formularios adaptables en el navegador web. Calvin utiliza la interfaz de usuario de [Hobbes](/help/sites-developing/hobbes.md)para ejecutar las pruebas y proporciona las siguientes herramientas:
+Calvin le permite automatizar la prueba de sus formularios adaptables en el navegador web. Calvin utiliza la interfaz de usuario de [Hobbes](/help/sites-developing/hobbes.md) para ejecutar las pruebas y proporciona las siguientes herramientas:
 
 * Una API de JavaScript para crear pruebas.
 * Una interfaz de usuario para ejecutar pruebas.
@@ -58,7 +58,7 @@ Con Calvin, puede crear casos de prueba en CRXDE y ejecutar pruebas de interfaz 
    <td><p>Reglas de expresión</p> <p> </p> </td>
    <td>
     <ul>
-     <li>¿Las expresiones asociadas con objetos de formulario, como calculate, visible, ejecutan secuencias de comandos después de salir de un campo, y se ejecutan después de realizar las operaciones de interfaz de usuario correspondientes?<br /> </li>
+     <li>¿Las expresiones asociadas con objetos de formulario, como calculate, visible, ejecutan secuencias de comandos después de salir de un campo, y se ejecutan después de realizar las operaciones de IU relevantes?<br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -93,7 +93,7 @@ Antes de utilizar este artículo para crear los casos de prueba, debe saber lo s
 * [Hobbes JavaScript API](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [API de JavaScript de Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## Ejemplo: Creación de un grupo de pruebas para un formulario adaptable mediante Hobbes como marco de prueba {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## Ejemplo: Crear un grupo de pruebas para un formulario adaptable usando Hobbes como marco de pruebas {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas para probar varios formularios adaptables. Debe crear un caso de prueba independiente para cada formulario que necesite probar. Si sigue pasos similares a los siguientes y modifica el código JavaScript en el paso 11, puede crear su propio grupo de pruebas para probar los formularios adaptables.
 
@@ -138,8 +138,8 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    js.txt
    ```
 
-1. Haga clic en **Guardar todo** y, a continuación, cierre el archivo js.txt.
-1. Haga clic con el botón secundario en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **Crear** > **Crear archivo**. Asigne un nombre al archivo init.js y haga clic en **Aceptar**.
+1. Haga clic en **Guardar todo** y cierre el archivo js.txt.
+1. Haga clic con el botón derecho en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **Crear** > **Crear archivo**. Asigne un nombre al archivo init.js y haga clic en **Aceptar**.
 1. Copie el siguiente código en el archivo init.js y haga clic en **Guardar todo**:
 
    ```javascript
@@ -156,9 +156,9 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    }(window, window.hobs));
    ```
 
-   El código anterior crea un grupo de pruebas denominado Formulario **adaptable - Prueba** de demostración. Para crear un grupo de pruebas con un nombre diferente, cambie el nombre según corresponda.
+   El código anterior crea un grupo de pruebas denominado **Formulario adaptable - Prueba de demostración**. Para crear un grupo de pruebas con un nombre diferente, cambie el nombre según corresponda.
 
-1. Haga clic en **Crear** > **Crear nodo** para crear un nodo en la carpeta clientlib para cada formulario que desee probar. En este ejemplo se utiliza un nodo llamado **testForm** para probar un formulario adaptable denominado **testForm**. Especifique las siguientes propiedades y haga clic en **Aceptar**:
+1. Haga clic en **Crear** > **Crear nodo** para crear un nodo en la carpeta clientlib para cada formulario que desee probar. En este ejemplo se utiliza un nodo denominado **testForm** para probar un formulario adaptable denominado **testForm**. Especifique las siguientes propiedades y haga clic en **Aceptar**:
 
    * Nombre: testForm (su nombre de formulario)
    * Tipo: cq:ClientLibraryFolder
@@ -176,9 +176,9 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
-1. Haga clic con el botón derecho en la carpeta que ha creado para el formulario de prueba (aquí testForm) y seleccione **Crear** > **Crear archivo**. Asigne un nombre al archivo scriptingTest.js, añada el siguiente código al archivo y haga clic en **Guardar todo.**
+1. Haga clic con el botón derecho en la carpeta que ha creado para el formulario de prueba (aquí testForm) y seleccione **Crear** > **Crear archivo**. Asigne un nombre al archivo scriptingTest.js y agregue el siguiente código al archivo y haga clic en **Guardar todo.**
 
-   Para utilizar el siguiente código para probar otro formulario adaptable, cambie la ruta y el nombre del formulario en **navigateTo** (líneas 11, 36 y 62) y los respectivos casos de prueba. Para obtener más información sobre las API para probar diferentes aspectos de los formularios y los objetos de formulario, consulte las API de [Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Para utilizar el siguiente código para probar otro formulario adaptable, cambie la ruta y el nombre del formulario en **navigateTo** (líneas 11, 36 y 62) y los respectivos casos de prueba. Para obtener más información sobre las API para probar diferentes aspectos de formularios y objetos de formulario, consulte [API de Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```javascript
    (function(window, hobs) {
@@ -272,7 +272,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
     }(window, window.hobs));
    ```
 
-   Se crea el caso de prueba. Proceda a ejecutar el caso de prueba para probar los formularios adaptables a través de Hobbes. Para ver los pasos para ejecutar los casos de prueba, consulte [Ejecución de pruebas en la prueba de la interfaz de usuario mediante pruebas](/help/sites-developing/hobbes.md)automatizadas.
+   Se crea el caso de prueba. Proceda a ejecutar el caso de prueba para probar los formularios adaptables a través de Hobbes. Para ver los pasos para ejecutar los casos de prueba, consulte [Ejecución de pruebas en la prueba de la interfaz de usuario mediante pruebas automatizadas](/help/sites-developing/hobbes.md).
 
 También puede instalar el paquete en el archivo adjunto SampleTestPackage.zip para obtener los mismos resultados que con los pasos explicados en Ejemplo: Cree un grupo de pruebas para un formulario adaptable utilizando Hobbes como marco de prueba.
 
@@ -306,7 +306,7 @@ Para ejecutar un grupo de pruebas:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-Los pasos para probar los formularios adaptables AEM son similares a los pasos para probar la IU AEM. Para obtener más información sobre la prueba de formularios adaptables, consulte los siguientes temas en [Prueba de la interfaz de usuario](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+Los pasos para probar los formularios adaptables AEM son similares a los pasos para probar la IU AEM. Para obtener más información sobre la prueba de los formularios adaptables, consulte los siguientes temas en [Prueba de la interfaz de usuario](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Visualización de grupos de pruebas
 * Ejecución de varias pruebas
