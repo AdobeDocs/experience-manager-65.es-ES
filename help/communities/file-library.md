@@ -27,26 +27,26 @@ La función de biblioteca de archivos proporciona un lugar para que los visitant
 
 Esta sección de la documentación describe:
 
-* Añadir la función de biblioteca de archivos en un sitio de AEM.
-* Configuración del `File Library` componente.
+* Añadir la función de biblioteca de archivos en un sitio AEM.
+* Configuración del componente `File Library`.
 
 ### Añadir una biblioteca de archivos en una página {#adding-a-file-library-to-a-page}
 
-Para agregar un `File Library` componente a una página en modo de autor, ubique el componente:
+Para agregar un componente `File Library` a una página en modo de autor, busque el componente:
 
 * `Communities / File Library`
 
 y arrástrelo a su lugar en una página.
 
-Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](/help/communities/basics.md).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) necesarias, así es como aparecerá el `File Library` componente:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](/help/communities/essentials-file-library.md#essentials-for-client-side), así es como aparecerá el componente `File Library`:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ### Configuración de la biblioteca de archivos {#configuring-file-library}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `File Library` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `File Library` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-431](assets/chlimage_1-431.png)
 
@@ -54,7 +54,7 @@ Seleccione el componente colocado al que desea acceder y seleccione el `File Lib
 
 #### Ficha Comentarios {#comments-tab}
 
-En la ficha **Comentarios** , especifique si se mostrarán los comentarios de los archivos cargados y cómo se mostrarán:
+En la ficha **Comentarios**, especifique si aparecen los comentarios de los archivos cargados y cómo aparecen:
 
 * **Permitir comentarios sobre los archivos**
 
@@ -74,7 +74,7 @@ En la ficha **Comentarios** , especifique si se mostrarán los comentarios de lo
 
 * **Tipos de archivo permitidos**
 
-   lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Editor de texto enriquecido**
 
@@ -102,7 +102,7 @@ En la ficha **Comentarios** , especifique si se mostrarán los comentarios de lo
 
 * **Permitir seguimiento**
 
-   Si está activada, incluya la siguiente función para los artículos de blog, que permite que se [notifique](/help/communities/notifications.md) a los miembros de los nuevos anuncios. El valor predeterminado no está marcado.
+   Si se selecciona, incluya la siguiente función para los artículos de blog, que permite que los miembros reciban [notificación](/help/communities/notifications.md) de los nuevos anuncios. El valor predeterminado no está marcado.
 
 * **Habilitar la mención**
 
@@ -122,7 +122,7 @@ En la ficha **Comentarios** , especifique si se mostrarán los comentarios de lo
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha Moderación **** del usuario, configure la moderación de los comentarios si se permiten los comentarios:
+En la ficha **Moderación del usuario**, configure la moderación de los comentarios, si se permiten los comentarios:
 
 * **Moderación previa**
 
@@ -158,7 +158,7 @@ En la ficha Moderación **** del usuario, configure la moderación de los coment
 
 * **Límite de indicación**
 
-   Especifique el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al umbral **de moderación**. El valor predeterminado es 5.
+   Escriba el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al **Umbral de moderación**. El valor predeterminado es 5.
 
 ### Ficha Ordenar configuración {#sort-settings-tab}
 
@@ -170,6 +170,6 @@ Establecer como predeterminado
 
 Puede encontrar más información en la página [File Library Essentials](/help/communities/essentials-file-library.md) para desarrolladores.
 
-Para obtener información sobre la moderación de los temas y comentarios publicados, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+Para obtener información sobre la moderación de los temas y comentarios publicados, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido](/help/communities/tag-ugc.md)generado por el usuario.
+Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido generado por el usuario](/help/communities/tag-ugc.md).
