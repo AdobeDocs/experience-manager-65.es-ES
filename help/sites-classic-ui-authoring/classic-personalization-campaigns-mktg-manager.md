@@ -12,6 +12,9 @@ discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +35,7 @@ Por ejemplo:
 
 Desde MCM podrá acceder al:
 
-* **[Tablero](#dashboard)**Se divide en cuatro paneles:
+* **[Tablero](#dashboard)** Se divide en cuatro paneles:
 
    * [Listas](#lists)En este panel se muestran las listas que ya ha creado y el número de posibles clientes de la lista. Desde este panel podrá crear una lista nueva directamente o importar posibles clientes para crear una lista nueva.
 Si selecciona una lista específica, pasará a la sección [Listas](#lists), que le mostrará detalles de la lista.
@@ -45,26 +48,26 @@ Si se selecciona un informe, se abrirá la página de informes.
 
    * [Campañas](#campaigns)En este panel se enumeran sus experiencias de campaña, como [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) y [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Posibles clientes](#leads)**Desde aquí, podrá administrar los posibles clientes. Puede crear o importar posibles clientes, editar detalles específicos de posibles clientes o eliminarlos cuando ya no los necesite. También puede agrupar los posibles clientes en listas.**Nota:**Adobe no tiene previsto mejorar esta capacidad.
-La recomendación es[aprovechar Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
+* **[Posibles clientes](#leads)** Desde aquí, podrá administrar los posibles clientes. Puede crear o importar posibles clientes, editar detalles específicos de posibles clientes o eliminarlos cuando ya no los necesite. También puede agrupar los posibles clientes en listas. **Nota:** Adobe no tiene previsto mejorar esta capacidad.
+La recomendación es [ aprovechar Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
 
-* **[Listas](#lists)**Desde aquí podrá administrar sus listas (de posibles clientes).**Nota:**Adobe no tiene previsto mejorar esta capacidad.
-La recomendación es[aprovechar Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
+* **[Listas](#lists)** Desde aquí podrá administrar sus listas (de posibles clientes).**Nota:** Adobe no tiene previsto mejorar esta capacidad.
+La recomendación es [ aprovechar Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
 
-* **[Campañas](#campaigns)**Desde aquí podrá administrar sus marcas, campañas y experiencias.
+* **[Campañas](#campaigns)** Desde aquí podrá administrar sus marcas, campañas y experiencias.
 
 ## Tablero {#dashboard}
 
 El tablero muestra cuatro paneles que le ofrecen información general de sus listas (de posibles clientes), segmentos, informes y campañas. Aquí también hay disponible funcionalidad básica para estas opciones.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_panel](assets/mcm_dashboard.png)
 
 ### Posibles clientes {#leads}
 
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar aún más esta capacidad (Gestión de posibles clientes).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign y la integración en AEM](/help/sites-administering/campaign.md).
 
 En AEM MCM, es posible organizar y añadir posibles clientes introduciéndolos manualmente o importando una lista separada por comas; por ejemplo, una lista de correo. Las formas adicionales de generar posibles clientes consisten en los registros a boletines y comunidades (si se configuran, pueden generar un flujo de trabajo que rellene los posibles clientes). Los posibles clientes se suelen categorizar y situar en una lista para que más adelante se puedan realizar operaciones en toda la lista como, por ejemplo, enviar un correo electrónico personalizado a una lista concreta.
 
@@ -81,7 +84,7 @@ En el panel izquierdo de **Posibles clientes** podrá crear, importar, editar y 
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar aún más esta capacidad (Gestión de listas).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign y la integración en AEM](/help/sites-administering/campaign.md).
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo determinado de usuarios; por ejemplo, puede enviar un boletín dirigido a una lista.
 
@@ -130,11 +133,11 @@ Desde aquí puede:
 
 * Abrir la información general de la campaña (haga doble clic en una campaña o haga clic en el panel izquierdo).
 
-#### Información general de la campaña {#campaign-overview}
+#### Información general de la campaña  {#campaign-overview}
 
 Hay dos vistas disponibles para las campañas individuales:
 
-1. **Vista Calendario**
+1. **Vista de calendario**
 
    Utilice el icono:
 
@@ -164,7 +167,7 @@ Hay dos vistas disponibles para las campañas individuales:
 
    Desde aquí puede:
 
-   * **Crear un** nuevo... experiencia; por ejemplo, ofertas, teasers y newsletters de Adobe Target.
+   * Crear un **Nuevo...** experiencia; por ejemplo, ofertas de Adobe Target, teasers y newsletters.
    * **Editar** los detalles de una página de teaser o newsletter específica (también se puede hacer doble clic).
    * Definir las **Propiedades...** de una página de teaser o newsletter específica.
    * **Simular** el aspecto de una experiencia (página de teaser o newsletter).
@@ -176,7 +179,7 @@ Cuando la página simulada esté abierta podrá abrir la barra de tareas para ca
    * **Buscar** texto (se buscará en el campo Título de la experiencia).
    * Utilice la búsqueda **Avanzada** para aplicar filtros a la búsqueda.
 
-### Simulación de las experiencias de su campaña. {#simulating-your-campaign-experiences}
+### Simulación de las experiencias de su campaña.  {#simulating-your-campaign-experiences}
 
 En MCM, haga clic en **Campañas**. Compruebe que la vista de lista esté activa, seleccione la experiencia de campaña correspondiente y haga clic en **Simular**. Se abrirá el touchpoint (página de teaser o newsletter) para mostrar la experiencia seleccionada, tal como la verá el visitante.
 
@@ -184,7 +187,7 @@ En MCM, haga clic en **Campañas**. Compruebe que la vista de lista esté activa
 
 Desde aquí también podrá abrir la barra de tareas (haga clic en la flecha pequeña hacia abajo) para cambiar al modo de edición para actualizar la página.
 
-### Análisis de las experiencia de su campaña {#analyzing-your-campaign-experiences}
+### Análisis de las experiencia de su campaña  {#analyzing-your-campaign-experiences}
 
 En MCM, haga clic en **Campañas**. Compruebe que la vista de lista esté activa, seleccione la experiencia de campaña correspondiente y seleccione **Analizar...**. Se mostrará un gráfico de las impresiones de la página en el tiempo.
 
