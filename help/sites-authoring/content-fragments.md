@@ -136,7 +136,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **Gestionar encabezados como sus propios párrafos**
 
-### Conexión rápida con el editor de fragmentos  {#quick-connection-to-fragment-editor}
+### Conexión rápida con el editor de fragmentos   {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md). 
 
@@ -144,7 +144,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-### Añadir contenido intermedio       {#adding-in-between-content}
+### Añadir contenido intermedio        {#adding-in-between-content}
 
 Cuando se añade a la página un fragmento de contenido específico, se dispone de un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -184,7 +184,7 @@ Por este motivo, es posible que parezca que la posición relativa ha cambiado, y
 
 
 
-### Uso de contenido asociado       {#using-associated-content}
+### Uso de contenido asociado        {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](#adding-in-between-content).
 
@@ -204,7 +204,7 @@ Desde aquí podrá arrastrar los recursos a la ubicación requerida (en un compo
 
 ### Recursos insertados en el fragmento {#assets-inserted-into-the-fragment}
 
-Si se insertan recursos (p. ej. imágenes) en el propio fragmento, las opciones para editarlos en el editor de páginas son limitadas. <!-- Removed link as it was a 404 on helpx -->
+Si se insertan recursos (p. ej. imágenes) en el propio fragmento, las opciones para editarlos en el editor de páginas son limitadas.  <!-- Removed link as it was a 404 on helpx -->
 
 Por ejemplo, para una imagen puede
 
