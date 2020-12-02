@@ -10,13 +10,16 @@ content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 2%
 
 ---
 
 
 # Consola web{#web-console}
 
-La consola web de AEM se basa en la consola [](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)de administración web Apache Felix. Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de trabajo OSGi y los servicios estándar.
+La consola web de AEM se basa en la [consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de trabajo OSGi y los servicios estándar.
 
 >[!NOTE]
 >
@@ -24,11 +27,11 @@ La consola web de AEM se basa en la consola [](https://felix.apache.org/document
 >
 >AEM tiene sus propios valores predeterminados, por lo que los valores predeterminados establecidos pueden diferir de los documentados en la consola.
 
-La consola web ofrece una selección de fichas para mantener los paquetes OSGi, que incluyen:
+La consola web oferta una selección de fichas para mantener los paquetes OSGi, que incluyen:
 
-* [Configuración](#configuration): se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros del sistema AEM
+* [Configuración](#configuration): se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros AEM sistema
 * [Paquetes](#bundles): utilizado para instalar paquetes
-* [Componentes](#components): se utiliza para controlar el estado de los componentes necesarios para AEM
+* [Componentes](#components): se utiliza para controlar el estado de los componentes necesarios para la AEM
 
 Cualquier cambio realizado se aplica inmediatamente al sistema en ejecución. No es necesario reiniciar.
 
@@ -38,11 +41,11 @@ Se puede acceder a la consola desde `../system/console`; por ejemplo:
 
 ## Configuración {#configuration}
 
-La ficha **Configuración** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros del sistema AEM.
+La ficha **Configuration** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar AEM parámetros del sistema.
 
 >[!NOTE]
 >
->Consulte Configuración de [OSGi con la consola](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web para obtener más detalles.
+>Consulte [Configuración de OSGi con la Consola Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obtener más detalles.
 
 Se puede acceder a la ficha **Configuración** desde:
 
@@ -54,7 +57,7 @@ Se puede acceder a la ficha **Configuración** desde:
 
    `http://localhost:4502/system/console/configMgr`
 
-Se mostrará una lista de configuraciones:
+Se mostrará una lista de las configuraciones:
 
 ![screen_shot_2012-02-15at52308pm-1](assets/screen_shot_2012-02-15at52308pm-1.png)
 
@@ -103,7 +106,7 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
 ## Paquetes {#bundles}
 
-La ficha **Paquetes** es el mecanismo para instalar los paquetes OSGi necesarios para AEM. Se puede acceder a la ficha mediante cualquiera de los siguientes métodos:
+La ficha **Bundles** es el mecanismo para instalar los paquetes OSGi necesarios para AEM. Se puede acceder a la ficha mediante cualquiera de los siguientes métodos:
 
 * Menú desplegable:
 
@@ -121,7 +124,7 @@ Con esta ficha puede:
 
 * **Instalar o actualizar**
 
-   Puede **examinar** para buscar el archivo que contiene el paquete y especificar si debe **iniciarse** inmediatamente y en qué nivel **de** inicio.
+   Puede **Examinar** para encontrar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en qué **nivel de Inicio**.
 
 * **Volver a cargar**
 
@@ -135,7 +138,7 @@ Con esta ficha puede:
 
 * **Inicial**
 
-   Inicia un paquete según el nivel inicial especificado.
+   Inicio un paquete según el nivel de inicio especificado.
 
 * **Detener**
 
@@ -151,7 +154,7 @@ Con esta ficha puede:
 
 >[!NOTE]
 >
->Después de la **actualización** , se recomienda realizar una **actualización de paquetes**.
+>Después de **Actualizar** se recomienda realizar un **Actualizar paquetes**.
 
 ## Componentes {#components}
 
@@ -165,7 +168,7 @@ La ficha **Componentes** permite activar y/o desactivar los distintos componente
 
    `http://localhost:4502/system/console/components`
 
-Se mostrará una lista de componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir detalles de configuración para un componente específico.
+Se mostrará una lista de los componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir detalles de configuración para un componente específico.
 
 ![screen_shot_2012-02-15at52144pm-1](assets/screen_shot_2012-02-15at52144pm-1.png)
 
