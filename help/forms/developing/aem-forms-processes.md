@@ -53,7 +53,7 @@ Cuando se invoca este proceso de corta duración, realiza las siguientes accione
 1. Codifica el documento PDF con una contraseña. El nombre del parámetro de entrada para este proceso es `inDoc` y el tipo de datos es documento.
 1. Guarda el documento PDF con contraseña cifrada como archivo PDF en el sistema de archivos local. Este proceso devuelve el documento PDF cifrado como un valor de salida. El nombre del parámetro de salida para este proceso es `outDoc` y el tipo de datos es documento.
 
-   Este proceso se completa sincrónicamente en el mismo subproceso de ejecución desde el que se invocó. El nombre de este proceso de corta duración es `MyApplication/EncryptDocument`y su funcionamiento es `invoke`.
+   Este proceso se completa sincrónicamente en el mismo subproceso de ejecución desde el que se invocó. El nombre de este proceso de corta duración es `MyApplication/EncryptDocument`y su operación es `invoke`.
 
    >[!NOTE]
    >
@@ -61,21 +61,21 @@ Cuando se invoca este proceso de corta duración, realiza las siguientes accione
 
    *La programación con* formularios de AEM describe las siguientes formas en las que puede invocar mediante programación este proceso de corta duración:
 
-   * [Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (con una aplicación Flex)
-   * [Invocación de un proceso de corta duración mediante la API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) de invocación (Java Invocation API)
-   * [Invocación de AEM Forms mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (ejemplo de servicio Web)
-   * [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (ejemplo de servicio web)
+   * [Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  (con una aplicación de Flex)
+   * [Invocación de un proceso de corta duración mediante la API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)  de invocación (Java Invocation API)
+   * [Invocación de AEM Forms mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  Base64 (ejemplo de servicio Web)
+   * [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  (ejemplo de servicio web)
    * [Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (ejemplo de servicio web)
-   * [Invocación de AEM Forms mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (ejemplo de servicio web)
-   * [Invocación de AEM Forms mediante DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (ejemplo de servicio web)
+   * [Invocación de AEM Forms mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  (ejemplo de servicio web)
+   * [Invocación de AEM Forms mediante DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)  (ejemplo de servicio web)
    * [Invocación del proceso MyApplication/EncryptDocument mediante REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Ejemplo de proceso de larga duración**
 
 La siguiente ilustración es un ejemplo de un proceso duradero.
 
-Este proceso se invoca cuando un solicitante presenta un formulario de préstamo. El proceso no se completa hasta que un funcionario de préstamos apruebe o rechace la solicitud de préstamo. El nombre de este proceso de larga duración es *FirstAppSolution/PreLoanProcess* y su funcionamiento es `invoke_Async`. Este proceso debe invocarse de forma asíncrona. Para obtener información sobre cómo invocar mediante programación este proceso de larga duración, consulte [Invocación de procesos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)de larga duración centrados en el ser humano.
+Este proceso se invoca cuando un solicitante presenta un formulario de préstamo. El proceso no se completa hasta que un funcionario de préstamos apruebe o rechace la solicitud de préstamo. El nombre de este proceso de larga duración es *FirstAppSolution/PreLoanProcess* y su operación es `invoke_Async`. Este proceso debe invocarse de forma asíncrona. Para obtener información sobre cómo invocar mediante programación este proceso de larga duración, consulte [Invocación de procesos de larga duración centrados en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >
->Este proceso se puede crear siguiendo el tutorial especificado en [Creación de la primera aplicación](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)de AEM Forms.
+>Este proceso se puede crear siguiendo el tutorial especificado en [Creación de la primera aplicación de AEM Forms](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
