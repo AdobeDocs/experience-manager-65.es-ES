@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 En este tema se describe cómo puede utilizar la API de servicio de Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
 
-Puede cambiar manualmente la configuración desde la interfaz de usuario del administrador. Para cambiar las opciones, vaya a `Home>Settings>User Management> Configuration>Manual Configuration`. Importar `config.xml` después de realizar los cambios, observará que se pierden todos los cambios excepto los realizados en el nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist` . La vista previa de Importación y exportación de administración de usuarios no admite el cambio de la configuración de otros componentes. Ahora, estos cambios se pueden realizar mediante `PreferencesManagerServiceClient` API.
+Puede cambiar manualmente la configuración desde la interfaz de usuario del administrador. Para cambiar las opciones, vaya a `Home>Settings>User Management> Configuration>Manual Configuration`. Importe `config.xml` después de realizar los cambios, observará que se pierden todos los cambios excepto los realizados en el nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist`. La previsualización de Importación y exportación de Administración de usuarios no admite el cambio de la configuración de otros componentes. Ahora, estos cambios se pueden realizar mediante `PreferencesManagerServiceClient` API.
 
 **Resumen de** pasosPara administrar mediante programación los nodos de preferencias, lleve a cabo los siguientes pasos:
 
