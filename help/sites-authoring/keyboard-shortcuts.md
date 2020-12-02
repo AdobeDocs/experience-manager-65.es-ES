@@ -1,6 +1,6 @@
 ---
-title: Métodos abreviados de teclado para las consolas
-seo-title: Métodos abreviados del teclado para las consolas
+title: 'Métodos abreviados del teclado para las consolas  '
+seo-title: 'Métodos abreviados del teclado para las consolas  '
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 seo-description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 100%
 
 ---
 
 
-# Métodos abreviados del teclado para las consolas{#keyboard-shortcuts-for-consoles}
+# Métodos abreviados del teclado para las consolas  {#keyboard-shortcuts-for-consoles}
 
 Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la [edición de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -38,7 +41,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 |  | `Esc` | Mover hacia arriba una lista de páginas en el mismo nivel |
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-authoring/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-authoring/basic-handling.md#rail-selector) se debe ver |
 |  | ` | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
