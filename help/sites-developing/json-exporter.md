@@ -1,8 +1,8 @@
 ---
 title: JSON Exporter for Content Services
 seo-title: JSON Exporter for Content Services
-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
-seo-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
+description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que pueden ser consumidos por cualquier cliente.
+seo-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que pueden ser consumidos por cualquier cliente.
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -18,11 +18,11 @@ ht-degree: 4%
 ---
 
 
-# JSON Exporter for Content Services{#json-exporter-for-content-services}
+# Exportador JSON para servicios de contenido{#json-exporter-for-content-services}
 
-Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web.
+Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM más allá del enfoque en las páginas web.
 
-Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
+Proporcionan el envío de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que pueden ser consumidos por cualquier cliente. Estos canales pueden incluir:
 
 * [Aplicaciones de una sola página](spa-walkthrough.md)
 * Aplicaciones móviles nativas
@@ -32,13 +32,13 @@ Con los fragmentos de contenido que utilizan contenido estructurado, puede propo
 
 >[!NOTE]
 >
->La funcionalidad descrita aquí está disponible para todos los componentes principales desde la [versión 1.1.0 de los componentes](https://docs.adobe.com/content/docs/en/core-components/v1.html)principales.
+>La funcionalidad descrita aquí está disponible para todos los componentes principales desde la [versión 1.1.0 de los componentes principales](https://docs.adobe.com/content/docs/en/core-components/v1.html).
 
 ## Exportador JSON con componentes principales de fragmento de contenido {#json-exporter-with-content-fragment-core-components}
 
-Con el exportador JSON de AEM, puede entregar el contenido de una(y) página AEM en formato de modelo de datos JSON. Esto puede ser consumido por sus propias aplicaciones.
+Con el exportador JSON de AEM puede entregar el contenido de una(y) página AEM en formato de modelo de datos JSON. Esto puede ser consumido por sus propias aplicaciones.
 
-Dentro de AEM, el envío se logra mediante el selector `model` y la `.json` extensión.
+Dentro de AEM el envío se logra mediante la extensión `model` y `.json` del selector.
 
 `.model.json`
 
@@ -50,11 +50,11 @@ Dentro de AEM, el envío se logra mediante el selector `model` y la `.json` exte
 
 1. Entregará contenido como:
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 También puede ofrecer el contenido de un fragmento de contenido estructurado segmentándolo específicamente.
 
-Esto se realiza utilizando toda la ruta del fragmento (a través del `jcr:content`); por ejemplo, con un sufijo como.
+Esto se realiza mediante la ruta completa del fragmento (mediante `jcr:content`); por ejemplo, con un sufijo como.
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -72,11 +72,11 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
    >[!NOTE]
    >
-   >Puede [adaptar sus propios componentes](/help/sites-developing/json-exporter-components.md) para acceder a estos datos y utilizarlos.
+   >Puede [adaptar sus propios componentes](/help/sites-developing/json-exporter-components.md) para acceder y utilizar estos datos.
 
    >[!NOTE]
    >
-   >Aunque no es una implementación estándar, se admiten [varios selectores,](json-exporter-components.md#multiple-selectors) pero `model` debe ser el primero.
+   >Aunque no es una implementación estándar, [se admiten varios selectores,](json-exporter-components.md#multiple-selectors) pero `model` debe ser el primero.
 
 ### Información adicional {#further-information}
 
@@ -94,15 +94,15 @@ Consulte también:
 
    * [Obtención de información de la página en formato JSON](/help/sites-developing/pageinfo.md)
 
-## Related Documentation {#related-documentation}
+## Documentación relacionada {#related-documentation}
 
 Para obtener más información, consulte:
 
-* Tema Fragmentos [de contenido en la guía del usuario Recursos](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* El tema [Fragmentos de contenido en la guía del usuario de Recursos](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 * [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales y el componente Fragmento [de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principales ](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) y el componente Fragmento  [de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
