@@ -1,8 +1,8 @@
 ---
 title: Emuladores
 seo-title: Emuladores
-description: AEM permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página
-seo-description: AEM permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página
+description: AEM permite a los autores realizar la vista de una página en un emulador que simula el entorno en el que un usuario final realizará la vista de la página
+seo-description: AEM permite a los autores realizar la vista de una página en un emulador que simula el entorno en el que un usuario final realizará la vista de la página
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página, por ejemplo, en un dispositivo móvil o en un cliente de correo electrónico.
+Adobe Experience Manager (AEM) permite a los autores crear vistas de una página en un emulador que simula el entorno en el que un usuario final vista la página, por ejemplo, en un dispositivo móvil o en un cliente de correo electrónico.
 
 El marco del emulador de AEM:
 
@@ -43,7 +46,7 @@ Un emulador:
 * Su aspecto está regulado mediante CSS.
 * Admite complementos (por ejemplo, el complemento de rotación del dispositivo móvil).
 * Solo está activo en el autor.
-* Su componente base está en `/libs/wcm/emulator/components/base`.
+* Su componente base es `/libs/wcm/emulator/components/base`.
 
 ### Cómo el emulador transforma el contenido {#how-the-emulator-transforms-the-content}
 
@@ -89,11 +92,11 @@ Se han agregado dos etiquetas div:
 
 * el div con id `cq-emulator` que contiene el emulador como un todo y
 
-* el div con ID `cq-emulator-content` que representa la ventanilla del dispositivo, la pantalla o el área de contenido donde reside el contenido de la página.
+* el div con el identificador `cq-emulator-content` que representa la ventanilla del dispositivo, la pantalla o el área de contenido donde reside el contenido de la página.
 
 Las nuevas clases CSS también se asignan a los nuevos divs del emulador: representan el nombre del emulador actual.
 
-Los complementos de un emulador pueden ampliar aún más la lista de clases CSS asignadas, como en el ejemplo del complemento de rotación, insertando una clase &quot;vertical&quot; u &quot;horizontal&quot; en función de la rotación actual del dispositivo.
+Los complementos de un emulador pueden ampliar aún más la lista de las clases CSS asignadas, como en el ejemplo del complemento de rotación, insertando una clase &quot;vertical&quot; u &quot;horizontal&quot; en función de la rotación actual del dispositivo.
 
 De este modo, la apariencia completa del emulador se puede controlar teniendo clases CSS correspondientes a los ID y las clases CSS de los divs del emulador.
 
@@ -112,11 +115,11 @@ Los emuladores móviles existentes:
 
 Cuando el componente de página depende del componente de página móvil ( `/libs/wcm/mobile/components/page`), la funcionalidad del emulador se integra automáticamente en la página a través del siguiente mecanismo:
 
-* El componente de página móvil `head.jsp` incluye el componente de inicio del emulador asociado al grupo de dispositivos (solo en modo de autor) y la representación de CSS del grupo de dispositivos mediante:
+* El componente de página móvil `head.jsp` incluye el componente de inicio del emulador asociado al grupo de dispositivos (solo en modo de autor) y el CSS de procesamiento del grupo de dispositivos mediante:
 
    `deviceGroup.drawHead(pageContext);`
 
-* El método `DeviceGroup.drawHead(pageContext)` incluye el componente init del emulador, es decir, llama al `init.html.jsp` del componente del emulador. Si el componente del emulador no tiene su propio `init.html.jsp` y depende del emulador de base móvil ( `wcm/mobile/components/emulators/base)`, se llama a la secuencia de comandos de inicio del emulador de base móvil ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* El método `DeviceGroup.drawHead(pageContext)` incluye el componente init del emulador, es decir, llama a `init.html.jsp` del componente del emulador. Si el componente del emulador no tiene su propio `init.html.jsp` y depende del emulador de base móvil ( `wcm/mobile/components/emulators/base)`, se llama a la secuencia de comandos de inicio del emulador de base móvil ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * La secuencia de comandos de inicio del emulador de base móvil se define mediante Javascript:
 
@@ -135,9 +138,9 @@ Para crear un emulador móvil personalizado:
 
 1. A continuación `/apps/myapp/components/emulators` cree el componente `myemulator` (tipo de nodo: `cq:Component`).
 
-1. Establezca la `sling:resourceSuperType` propiedad en `/libs/wcm/mobile/components/emulators/base`
+1. Establezca la propiedad `sling:resourceSuperType` en `/libs/wcm/mobile/components/emulators/base`
 
-1. Defina una biblioteca de cliente CSS con categoría `cq.wcm.mobile.emulator` para el aspecto del emulador: name = `css`, node type = `cq:ClientLibrary`
+1. Defina una biblioteca de cliente CSS con la categoría `cq.wcm.mobile.emulator` para el aspecto del emulador: name = `css`, tipo de nodo = `cq:ClientLibrary`
 
    Como ejemplo, puede hacer referencia al nodo `/libs/wcm/mobile/components/emulators/iPhone/css`
 
@@ -150,5 +153,6 @@ Para crear un emulador móvil personalizado:
    * Nombre = `canRotate`, Tipo = `Boolean`, Valor = `true`: para incluir la funcionalidad de rotación.
 
    * Nombre = `touchScrolling`, Tipo = `Boolean`, Valor = `true`: para incluir la funcionalidad de desplazamiento táctil.
+
    Se pueden agregar más funcionalidades definiendo sus propios complementos.
 
