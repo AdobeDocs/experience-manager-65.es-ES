@@ -37,7 +37,7 @@ La solución genérica AEM proporciona métodos para administrar la información
 >
 >Actualmente, se ha diseñado para fines de demostración o como base básica de una implementación personalizada según sus necesidades.
 
-## Productos y variaciones de producto {#products-and-product-variations}
+## Productos y variaciones del producto {#products-and-product-variations}
 
 >[!NOTE]
 >
@@ -62,12 +62,12 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 >
 >Puede crear una nueva definición de producto en cualquier lugar sin ninguna configuración adicional.
 
-### Importing Products {#importing-products}
+### Importación de productos {#importing-products}
 
 #### Importación de productos: IU táctil {#importing-products-touch-optimized-ui}
 
-1. Navegue hasta la consola **Productos** , a través de **Comercio**.
-1. Con la consola **Productos** vaya a la ubicación requerida.
+1. Vaya a la consola **Productos**, a través de **Comercio**.
+1. Con la consola **Products** navegue a la ubicación requerida.
 1. Utilice el icono **Importar productos** para abrir el asistente.
 
    ![chlimage_1-1](do-not-localize/chlimage_1-13.png)
@@ -76,7 +76,7 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 
    * **Importador**
 
-      El importador del proveedor [de](/help/sites-administering/concepts.md#commerce-providers)comercio específico, de forma predeterminada `Geometrixx`.
+      El importador para el [proveedor de comercio](/help/sites-administering/concepts.md#commerce-providers) específico, de forma predeterminada `Geometrixx`.
 
    * **Origen**
 
@@ -91,7 +91,7 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
    >
    >Se puede definir un importador personalizado para que funcione según sea necesario.
 
-1. Seleccione **Siguiente** para importar los productos y se mostrará un registro de las acciones realizadas.
+1. Seleccione **Siguiente** para importar los productos, se mostrará un registro de las acciones realizadas.
 
    >[!NOTE]
    >
@@ -99,14 +99,14 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 
    >[!NOTE]
    >
-   >Si se utiliza repetidamente **Siguiente** y **Atrás** , se importarán las definiciones del producto. Sin embargo, como tienen los mismos SKU, la información existente en el repositorio simplemente se sobrescribirá.
+   >Si se utiliza repetidamente **Siguiente** y **Atrás**, se importarán repetidamente las definiciones del producto. Sin embargo, como tienen los mismos SKU, la información existente en el repositorio simplemente se sobrescribirá.
 
 1. Seleccione **Listo** para cerrar el asistente.
 
 #### Importación de productos: IU clásica {#importing-products-classic-ui}
 
-1. Con la consola **Herramientas** , abra la carpeta **Comercio** .
-1. Haga clic con el doble para abrir el Importador **de productos**:
+1. Mediante la consola **Tools**, abra la carpeta **Commerce**.
+1. Haga clic con el doble para abrir el **Importador de productos**:
 
    ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -120,7 +120,7 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 
    * **Proveedor comercial**
 
-      El importador de su proveedor [comercial](/help/sites-administering/concepts.md#commerce-providers); de forma predeterminada, Geometrixx.
+      El importador de su [proveedor de comercio](/help/sites-administering/concepts.md#commerce-providers); de forma predeterminada, Geometrixx.
 
    * **Archivo de origen**
 
@@ -136,29 +136,29 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 
 >[!NOTE]
 >
->La administración de productos estándar es básica, ya que el conjunto de productos Geometrixx-exterior se ha mantenido básico. La complejidad se basa en el [andamiaje](/help/sites-authoring/scaffolding.md)del producto, por lo que con su propio andamiaje de productos es posible conseguir una edición más sofisticada.
+>La administración de productos estándar es básica, ya que el conjunto de productos Geometrixx-exterior se ha mantenido básico. La complejidad se basa en el producto [scaffolding](/help/sites-authoring/scaffolding.md), por lo que con su propio scaffolding de producto es posible lograr una edición más sofisticada.
 
 #### Creación de información del producto: IU táctil {#creating-product-information-touch-optimized-ui}
 
 1. Con la consola **Productos** (a través de **Comercio**) navegue a la ubicación requerida.
-1. Utilice el icono **Crear** para seleccionar una de estas opciones (según la estructura y la ubicación):
+1. Utilice el icono **Crear** para seleccionar cualquiera de los dos (según la estructura y la ubicación):
 
    * **Crear el producto**
    * **Crear variación de producto**
 
    ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
 
-1. Se abrirá el asistente. Utilice las fichas **Básico** y **Producto** para introducir los atributos [del](/help/sites-administering/concepts.md#product-attributes) producto para la nueva variante de producto o producto.
+1. Se abrirá el asistente. Utilice las **Fichas de producto** y **Básicas** para ingresar los [atributos de producto](/help/sites-administering/concepts.md#product-attributes) para el nuevo producto o variante de producto.
 
    >[!NOTE]
    >
-   >**Título** y **SKU** son los requisitos mínimos para crear un producto o una variante.
+   >**** Titular y  **** SKU son el mínimo requerido para crear un producto o una variante.
 
 1. Seleccione **Crear** para guardar la información.
 
 >[!NOTE]
 >
->Muchos productos se ofrecen en una gama de colores y/o tamaños. La información sobre el producto básico y las variantes de producto relacionadas se pueden administrar desde la consola **Productos** .
+>Muchos productos se ofrecen en una gama de colores y/o tamaños. La información sobre el producto básico y las variantes de producto relacionadas se pueden administrar desde la consola **Productos**.
 >
 >Los productos y sus variantes se almacenan como una estructura de árbol, la información del producto se encuentra en la parte superior, con las variantes debajo (esta estructura la impone la interfaz de usuario).
 
@@ -170,27 +170,27 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 >
 >`/etc/commerce/products/...`
 >
->Esto significa que, de forma predeterminada, el [despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)los bloquea, por lo que debe configurarlos según sea necesario.
+>Esto significa que, de forma predeterminada, el [despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) los bloquea, por lo que debe configurarlos según sea necesario.
 
 #### Edición de la información del producto: IU táctil {#editing-product-information-touch-optimized-ui}
 
-1. Con la consola **Productos** (a través de **Comercio**) vaya a la información del producto.
+1. Con la consola **Productos** (a través de **Comercio**), navegue a la información del producto.
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Seleccione el icono **Vista de datos** del producto:
+   Seleccione el icono **Datos del producto de Vista**:
 
    ![climage_1-3](do-not-localize/chlimage_1-15.png)
 
-1. Se mostrarán los atributos [](/help/sites-administering/concepts.md#product-attributes) del producto. Utilice **Editar** y **Listo** para realizar cualquier cambio.
+1. Se mostrarán los [atributos del producto](/help/sites-administering/concepts.md#product-attributes). Utilice **Editar** y **Listo** para realizar cualquier cambio.
 
-### Visualización de referencias del producto {#showing-product-references}
+### Mostrando referencias de producto {#showing-product-references}
 
-#### Showing Product References - Touch-optimized UI {#showing-product-references-touch-optimized-ui}
+#### Visualización de referencias del producto: IU táctil {#showing-product-references-touch-optimized-ui}
 
-1. Con la consola **Productos** (a través de **Comercio**) vaya a la información del producto.
+1. Con la consola **Productos** (a través de **Comercio**), navegue a la información del producto.
 1. Abra el carril secundario de Referencias con el icono:
 
    ![climage_1-4](do-not-localize/chlimage_1-16.png)
@@ -207,9 +207,9 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold corresp
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
-### Search for Products {#search-for-products}
+### Buscar productos {#search-for-products}
 
-1. Navegue hasta la consola **Productos** , a través de **Comercio**.
+1. Vaya a la consola **Productos**, a través de **Comercio**.
 1. Abra el carril secundario para la búsqueda con el icono:
 
    ![](do-not-localize/chlimage_1-17.png)
@@ -228,8 +228,8 @@ Puede modificar una faceta existente o agregar otras nuevas mediante CRXDE Lite:
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. Puede modificar, por ejemplo, los tamaños que aparecerán en la página de búsqueda de productos. Haga clic en el `sizegroup` nodo.
-1. Haga clic en `items` nodo y, a continuación, haga clic en `propertypredicate` nodo.
+1. Puede modificar, por ejemplo, los tamaños que aparecerán en la página de búsqueda de productos. Haga clic en el nodo `sizegroup`.
+1. Haga clic en el nodo `items` y, a continuación, haga clic en el nodo `propertypredicate`.
 1. Puede modificar el `propertyValues`. Por ejemplo, puede agregar XS, XXL o quitar un tamaño.
 1. Haga clic en **Guardar todo** y vaya a la página de búsqueda de productos. Deben aparecer los cambios.
 
@@ -243,33 +243,33 @@ Puede agregar varios recursos en el componente de producto y luego especificar e
 
 #### Añadir varios recursos {#adding-multiple-assets}
 
-1. Navegue hasta la consola **Productos** , a través de **Comercio**.
-1. Con la consola **Productos** , vaya al producto requerido.
+1. Vaya a la consola **Productos**, a través de **Comercio**.
+1. Con la consola **Productos**, navegue hasta el producto requerido.
 
    >[!NOTE]
    >
    >Debe estar en el nivel de producto, no en el nivel de variante.
 
-1. Toque o haga clic en el icono **Vista de datos** de producto con el modo de selección o acciones rápidas.
+1. Toque o haga clic en el icono **Vista de datos del producto** con el modo de selección o acciones rápidas.
 1. Toque o haga clic en el icono Editar.
-1. Desplácese para **Añadir**.
+1. Desplácese a **Añadir**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Toque o haga clic en **Añadir**. Aparece un nuevo marcador de posición de recurso.
+1. Toque o haga clic **Añadir**. Aparece un nuevo marcador de posición de recurso.
 1. Al tocar/hacer clic **Cambiar **se abre un cuadro de diálogo que le permite elegir un recurso.
 1. Seleccione el recurso que desee agregar.
 
    >[!NOTE]
    >
-   >Los recursos que puede seleccionar proceden de [Recursos](https://helpx.adobe.com/experience-manager/aem-previous-versions.html#assets).
+   >Los recursos que puede seleccionar proceden de [Assets](https://helpx.adobe.com/experience-manager/aem-previous-versions.html#assets).
 
 1. Toque o haga clic en el icono Listo.
 
 Dos recursos se almacenan ahora en el componente de producto. Puede configurar cuál aparecerá en la página del producto. Esto funciona con un sistema de categoría. En primer lugar, debe agregar una categoría a los recursos individuales:
 
-1. Toque o haga clic en **Vista de datos** de producto.
-1. Escriba una Categoría **de** recurso debajo de los recursos, por ejemplo `cat1` y `cat2`.
+1. Toque o haga clic en **Vista de datos del producto**.
+1. Escriba una **Categoría de recursos** en los recursos, por ejemplo `cat1` y `cat2`.
 
    >[!NOTE]
    >
@@ -300,28 +300,28 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 #### Página de productos {#product-page}
 
 1. Vaya a la página de productos.
-1. **Edite** el componente de producto.
-1. Escriba la Categoría **** de imagen que ha elegido ( `cat1` por ejemplo).
-1. Toque o haga clic en **Hecho**. Se actualizará la página y se mostrará el recurso correcto.
+1. **** Edite el componente de producto.
+1. Escriba la **Categoría de imagen** que eligió ( `cat1` por ejemplo).
+1. Toque o haga clic **Listo**. Se actualizará la página y se mostrará el recurso correcto.
 
 #### Catálogo  {#catalog}
 
 1. Vaya al catálogo.
-1. Toque o haga clic en Propiedades **de Vista**.
-1. Tap/click **Edit**.
-1. Toque o haga clic en la ficha **Recursos** .
-1. Escriba la Categoría **de recursos** del producto requerida.
-1. Toque o haga clic en **Hecho**.
-1. [Despliegue](#rolling-out-a-catalog) los cambios.
+1. Toque o haga clic en **Propiedades de la Vista**.
+1. Toque o haga clic **Editar**.
+1. Toque o haga clic en la ficha **Recursos**.
+1. Escriba la **Categoría de recursos del producto** requerida.
+1. Toque o haga clic **Listo**.
+1. [](#rolling-out-a-catalog) Resuma los cambios.
 
 #### Consola de productos {#products-console}
 
-1. Con la consola **Productos** , vaya al producto requerido.
-1. Toque o haga clic en **Vista de datos** de producto.
-1. Tap/click **Edit**.
-1. Escriba una Categoría **de recurso** predeterminada.
-1. Toque o haga clic en **Hecho**.
-1. [Despliegue](#rolling-out-a-catalog) los cambios.
+1. Con la consola **Productos**, navegue hasta el Producto requerido.
+1. Toque o haga clic en **Vista de datos del producto**.
+1. Toque o haga clic **Editar**.
+1. Escriba una **Categoría de recursos predeterminada**.
+1. Toque o haga clic **Listo**.
+1. [](#rolling-out-a-catalog) Resuma los cambios.
 
 ### Publicación/Cancelación de la publicación de información del producto {#publishing-unpublishing-product-information}
 
@@ -333,19 +333,19 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 >
 >En casos especiales, AEM también admite la publicación directa a partir de los datos del producto.
 
-1. Con la consola **Productos** (a través de **Comercio**) vaya a la información del producto.
+1. Con la consola **Productos** (a través de **Comercio**), navegue a la información del producto.
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Seleccione el icono **Publicar** o **Cancelar publicación** según sea necesario:
+   Seleccione el icono **Publicar** o **Cancelar la publicación** según sea necesario:
 
    ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
 
    La información del producto se publicará o dejará de publicarse según corresponda.
 
-### Product Feed {#product-feed}
+### Alimentación de productos {#product-feed}
 
 La integración de Search&amp;Promote le permite:
 
@@ -354,7 +354,7 @@ La integración de Search&amp;Promote le permite:
 * aproveche la función de control remoto de Search&amp;Promote para realizar solicitudes a petición o programadas de la fuente de productos
 * generación de fuentes para distintas cuentas de Search&amp;Promote, configuradas como configuraciones de servicios en la nube.
 
-Para obtener más información, consulte [Alimentación](/help/sites-administering/product-feed.md)de productos.
+Para obtener más información, lea [Alimentación de productos](/help/sites-administering/product-feed.md).
 
 ### Controlador de evento para actualizaciones de productos {#event-handler-for-product-updates}
 
@@ -367,7 +367,7 @@ Hay un controlador de Evento que registra un evento cuando se agrega, modifica o
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_MODIFIED`
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_DELETED`
 
-Para los `PRODUCT_*` eventos, la ruta apunta al producto base en `/etc/commerce/products`. Para los `PRODUCT_PAGE_*` eventos, la ruta apunta al `cq:Page` nodo.
+Para los eventos `PRODUCT_*`, la ruta apunta al producto base en `/etc/commerce/products`. Para los eventos `PRODUCT_PAGE_*`, la ruta apunta al nodo `cq:Page`.
 
 Puede verlos en la consola web en eventos OSGI ( `/system/console/events`), por ejemplo:
 
@@ -375,7 +375,7 @@ Puede verlos en la consola web en eventos OSGI ( `/system/console/events`), por 
 
 >[!NOTE]
 >
->Lea también la gestión de [Eventos en AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Lea también [administración de Eventos en AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### Imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
 
@@ -385,7 +385,7 @@ Al hacer clic en la zona interactiva se abre un cuadro de diálogo que permite e
 
 1. Vaya a la página donde desee agregar el componente.
 1. Arrastre y suelte el componente en la página.
-1. Arrastre y coloque una imagen en el componente desde el navegador [de](/help/sites-authoring/author-environment-tools.md#assets-browser)recursos.
+1. Arrastre y suelte una imagen en el componente desde el [navegador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Puede:
 
    * haga clic en el componente y, a continuación, en el icono Editar
@@ -405,7 +405,7 @@ Al hacer clic en la zona interactiva se abre un cuadro de diálogo que permite e
 
 1. Modifique y mueva la forma según sea necesario.
 1. Haga clic en la forma.
-1. Al hacer clic en el icono Examinar, se abre el selector de [recursos](../assets/search-assets.md#assetpicker).
+1. Al hacer clic en el icono Examinar se abre el [Selector de recursos](../assets/search-assets.md#assetpicker).
 
    >[!NOTE]
    >
@@ -418,8 +418,8 @@ Al hacer clic en la zona interactiva se abre un cuadro de diálogo que permite e
 
    ![](do-not-localize/chlimage_1-22.png)
 
-1. Switch to [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) mode.
-1. Haga clic en el punto interactivo +. Se abre un cuadro de diálogo en el que puede elegir el tamaño y la cantidad del producto introducido en **Ruta**.
+1. Cambie al modo [previsualización](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui).
+1. Haga clic en el punto interactivo +. Se abre un cuadro de diálogo en el que puede elegir el tamaño y la cantidad del producto especificado en **Ruta**.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -427,7 +427,7 @@ Al hacer clic en la zona interactiva se abre un cuadro de diálogo que permite e
 1. Haga clic en el botón Añadir al carro de compras. El cuadro de diálogo se cierra.
 1. Vaya al carro de compras. El producto debería estar aquí.
 
-#### Configuration Options {#configuration-options}
+#### Opciones de configuración {#configuration-options}
 
 Puede configurar el aspecto del cuadro de diálogo al hacer clic en el punto interactivo:
 
@@ -435,7 +435,7 @@ Puede configurar el aspecto del cuadro de diálogo al hacer clic en el punto int
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
-1. Desplazar hacia abajo. Hay una ficha **AÑADIR AL CARRO** .
+1. Desplazar hacia abajo. Hay una ficha **AÑADIR A CARRO**.
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -463,53 +463,53 @@ Para generar un catálogo:
 
    ![](do-not-localize/chlimage_1-23.png)
 
-1. From the list select **Create Catalog**, the Create Catalog wizard will open.
+1. En la lista seleccione **Crear catálogo**, se abrirá el asistente Crear catálogo.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. Vaya al modelo de catálogo requerido.
 1. Toque o haga clic en el botón **Seleccionar** y toque o haga clic en el modelo de catálogo requerido.
-1. Tap/click **Next**.
+1. Toque o haga clic **Siguiente**.
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
 1. Escriba un **Título** y un **Nombre**.
-1. Toque o haga clic en el botón **Crear** . Se crea el catálogo y se abre un cuadro de diálogo.
+1. Toque o haga clic en el botón **Crear**. Se crea el catálogo y se abre un cuadro de diálogo.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
-1. Al tocar o hacer clic en el botón **Listo** , volverá a la consola Sitios, donde podrá ver el catálogo.
+1. Al tocar o hacer clic en el botón **Listo** volverá a la consola Sitios, donde podrá ver el catálogo.
 
-   Al tocar o hacer clic en el botón **Abrir catálogo** se abre el catálogo (por ejemplo `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Al tocar o hacer clic en el botón **Abrir catálogo** se abre el catálogo (por ejemplo, `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generación de un catálogo: IU clásica {#generating-a-catalog-classic-ui}
 
 >[!NOTE]
 >
->El catálogo hará referencia a los datos [del producto](#products-and-product-variants).
+>El catálogo hará referencia a los [datos del producto](#products-and-product-variants).
 
-1. Con la consola **Sitios** web, vaya al modelo **de catálogo** y, a continuación, al catálogo base.
+1. Con la consola **Sitios web**, navegue a su **modelo de catálogo** y luego al catálogo base.
 
    Por ejemplo:
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
-1. Cree una nueva página con la plantilla **de modelo de sección** .
+1. Cree una nueva página con la plantilla **Esquema de sección**.
 
    Por ejemplo, `Swimwear`.
 
-1. Abra la nueva `Swimwear` página y haga clic en **Editar modelo** para abrir el cuadro de diálogo **Propiedades** , donde puede configurar la selección de **Productos** .
+1. Abra la nueva página `Swimwear` y haga clic en **Editar modelo** para abrir el cuadro de diálogo **Propiedades**, donde puede configurar la selección **Productos**.
 
-   Por ejemplo, abra el campo **Etiquetas/Palabras clave** para seleccionar Actividad y, a continuación, Nadar en la sección Geometrixx exteriores.
+   Por ejemplo, abra el campo **Etiquetas/Palabras clave** para seleccionar la Actividad y, a continuación, Nadar en la sección Geometrixx exteriores.
 
-1. Haga clic en **Aceptar** para guardar las propiedades; los productos de ejemplo se mostrarán bajo los criterios **de selección de** productos en la página de modelo.
-1. Haga clic en **Desplegar cambios...**, seleccione **Desplegar página y todas las páginas** secundarias y, a continuación, haga clic en **Siguiente** y, a continuación, en **Desplegar**. Una vez que la implementación se haya completado correctamente, el indicador de **estado** se mostrará en verde.
+1. Haga clic en **Aceptar** para guardar las propiedades; los productos de ejemplo se mostrarán bajo los **Criterios de selección de productos** en la página de modelo.
+1. Haga clic en **Desplegar cambios...**, seleccione **Página de despliegue y todas las páginas secundarias**, luego haga clic en **Siguiente** y luego **Despliegue**. Una vez que la implementación se haya completado correctamente, el indicador **Estado** se mostrará como verde.
 1. Ahora puede hacer clic en **Cerrar** y comprobar la nueva sección del catálogo; por ejemplo, en y debajo:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. De nuevo, en la página de modelos, haga clic en **Editar modelo** y, en el cuadro de diálogo **Propiedades** , abra la ficha Página **** generada. En el campo lista de pancarta, seleccione la imagen que desee mostrar; por ejemplo, `summer.jpg`
-1. Haga clic en **Aceptar** para guardar las propiedades; la información de la pancarta se mostrará bajo los criterios **de selección de** productos en la página de modelo.
+1. Nuevamente en la página de modelos, haga clic en **Editar modelo** y en el cuadro de diálogo **Propiedades** abra la ficha **Página generada**. En el campo lista de pancarta, seleccione la imagen que desee mostrar; por ejemplo, `summer.jpg`
+1. Haga clic en **Aceptar** para guardar las propiedades; la información del letrero se mostrará en los **Criterios de selección de productos** en la página de modelo.
 1. Despliegue estos nuevos cambios.
 
 ### Despliegue de un catálogo {#rolling-out-a-catalog}
@@ -518,19 +518,19 @@ Para generar un catálogo:
 
 Para desplegar un catálogo:
 
-1. Vaya a la consola **Catálogos** , a través de **Comercio**.
+1. Vaya a la consola **Catálogos**, a través de **Comercio**.
 1. Vaya al catálogo que desee desplegar.
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Seleccione el icono **Desplegar cambios** :
+   Seleccione el icono **Cambios de despliegue**:
 
    ![](do-not-localize/chlimage_1-24.png)
 
-1. En el asistente, establezca la implementación según sea necesario y toque o haga clic en **Desplegar cambios**.
-1. Se abre un cuadro de diálogo. Toque o haga clic en **Hecho** cuando el proceso haya finalizado.
+1. En el asistente, configure la implementación según sea necesario y toque/haga clic **Despliegue de cambios**.
+1. Se abre un cuadro de diálogo. Toque o haga clic **Listo** cuando finalice el proceso.
 
 #### Despliegue de un catálogo: IU clásica {#rolling-out-a-catalog-classic-ui}
 
@@ -548,9 +548,9 @@ Para desplegar un catálogo:
 
 #### Importador de modelo: IU táctil {#blueprint-importer-touch-optimized-ui}
 
-1. Vaya a la consola **Catálogos** , a través de **Comercio**.
+1. Vaya a la consola **Catálogos**, a través de **Comercio**.
 1. Vaya a la ubicación en la que desea importar el modelo de catálogo.
-1. Toque o haga clic en el icono **Importar modelos** .
+1. Toque o haga clic en el icono **Importar modelos**.
 
    ![](do-not-localize/chlimage_1-13.png)
 
@@ -558,17 +558,17 @@ Para desplegar un catálogo:
 
    ![chlimage_1-340](assets/chlimage_1-102.png)
 
-1. Toque o haga clic en **Finalizado** una vez finalizada la importación.
+1. Toque o haga clic **Listo** una vez finalizada la importación.
 
 #### Importador de modelo: IU clásica {#blueprint-importer-classic-ui}
 
-1. Con la consola **Herramientas** , vaya a **Comercio**.
+1. Con la consola **Herramientas**, navegue a **Comercio**.
 
    Por ejemplo:
 
    `http://localhost:4502/miscadmin#/etc/commerce`
 
-1. Abra el Importador **de modelos de** catálogo.
+1. Abra el **Importador de modelo de catálogo**.
 1. Configure la importación según sea necesario.
 1. Haga clic en **Importar modelos de catálogo**.
 
@@ -580,23 +580,23 @@ Para desplegar un catálogo:
 
 >[!NOTE]
 >
->El siguiente ejemplo trata de una promoción que se realiza directamente en una [campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md); se utiliza para los comprobantes.
+>El siguiente ejemplo trata de una promoción que se realiza directamente en una [campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md), que se utiliza para los comprobantes.
 >
 >Una promoción también puede estar en una [experiencia](/help/sites-authoring/personalization.md) dentro de una campaña.
 >
->Para obtener más información, consulte [Promociones y Cupones](#promotions-and-vouchers).
+>Para obtener más información, consulte [Promociones y cupones](#promotions-and-vouchers).
 
-1. Abra la consola **Sitios** web de la instancia de creación.
-1. En el panel izquierdo, seleccione la **Campaña** requerida.
+1. Abra la consola **Sitios web** de la instancia de autor.
+1. En el panel izquierdo, seleccione su **Campaña** requerida.
 1. Haga clic en **Nuevo**, seleccione la plantilla **Promoción** y luego especifique un **Título** (y **Nombre** si es necesario) para la nueva licencia.
 1. Haga clic en **Crear**. La nueva página de promoción se mostrará en el panel derecho.
 
-1. Edite las **propiedades** mediante:
+1. Edite las **Propiedades** mediante:
 
    * abrir la página y, a continuación, hacer clic en el botón Editar para abrir el cuadro de diálogo Propiedades
-   * seleccionando la página en la consola Sitios web, luego utilizando el menú contextual (generalmente el botón secundario del ratón) para seleccionar **Propiedades...** y abrir el cuadro de diálogo de propiedades
+   * seleccionando la página en la consola Sitios web, luego utilizando el menú contextual (generalmente el botón secundario del ratón) para seleccionar **Propiedades...** y abra el cuadro de diálogo de propiedades
 
-   Especifique el tipo **de** promoción, el tipo **de** descuento, el valor **de** descuento y cualquier otro campo que sea necesario.
+   Especifique los campos **Tipo de promoción**, **Tipo de descuento**, **Valor de descuento** y cualquier otro campo según sea necesario.
 
 1. Haga clic en **Aceptar** para guardar.
 
@@ -608,9 +608,9 @@ Para desplegar un catálogo:
 
 #### Creación de un cupón: IU clásica {#creating-a-voucher-classic-ui}
 
-1. Abra la consola **Sitios** web de la instancia de creación.
-1. En el panel izquierdo, seleccione la **Campaña** requerida.
-1. Haga clic en **Nuevo**, seleccione la plantilla **Cupón** y, a continuación, especifique un **Título** (y **Nombre** , si es necesario) para el nuevo cupón.
+1. Abra la consola **Sitios web** de la instancia de autor.
+1. En el panel izquierdo, seleccione su **Campaña** requerida.
+1. Haga clic en **Nuevo**, seleccione la plantilla **Asiento** y, a continuación, especifique un **Título** (y **Nombre** si es necesario) para el nuevo asiento.
 1. Haga clic en **Crear**. La nueva página de asiento se mostrará en el panel derecho.
 
 1. Abra la nueva página de cupones con un doble-clic y haga clic en **Editar** para configurar la información según sea necesario.
@@ -620,24 +620,24 @@ Para desplegar un catálogo:
 
 ### Eliminando cupones {#removing-vouchers}
 
-#### Eliminación de cupones: IU clásica {#removing-vouchers-classic-ui}
+#### Quitando cupones: IU clásica {#removing-vouchers-classic-ui}
 
 Para que un vale no esté disponible para los clientes, puede:
 
 * Desactive la licencia: permanecerá disponible en el entorno de creación para que pueda reactivarla posteriormente.
 * Eliminarlo por completo.
 
-Ambas acciones se pueden realizar desde la consola **Sitios** web.
+Ambas acciones se pueden realizar desde la consola **Sitios web**.
 
-### Modificación de comprobantes {#modifying-vouchers}
+### Modificación de cupones {#modifying-vouchers}
 
 #### Modificación de cupones: IU clásica {#modifying-vouchers-classic-ui}
 
-Para cambiar las propiedades de una licencia o promoción, puede hacer clic con el doble en ella en la consola **Sitios** web y hacer clic en **Editar**. Después de guardarlo, debe activarlo para que los cambios se inserten en las instancias de publicación.
+Para cambiar las propiedades de una licencia o promoción, puede hacer clic con el doble en ella en la consola **Sitios web** y hacer clic en **Editar**. Después de guardarlo, debe activarlo para que los cambios se inserten en las instancias de publicación.
 
-### Añadir cupones a un carro {#adding-vouchers-to-a-cart}
+### Añadir cupones a un carro de compras {#adding-vouchers-to-a-cart}
 
-Para permitir a los usuarios agregar cupones a sus carros, puede utilizar el componente integrado **Cupones** (categoría de comercio). Debe agregarlo a la misma página en la que se muestra el carro de compras (pero no es obligatorio). El componente de cupones es simplemente un formulario en el que el usuario puede introducir un código de asiento, es el componente de carro de compras el que muestra la lista de los cupones aplicados y su descuento.
+Para permitir que los usuarios agreguen asientos a sus carros, puede utilizar el componente **Cupones** integrado (categoría de comercio). Debe agregarlo a la misma página en la que se muestra el carro de compras (pero no es obligatorio). El componente de cupones es simplemente un formulario en el que el usuario puede introducir un código de asiento, es el componente de carro de compras el que muestra la lista de los cupones aplicados y su descuento.
 
 En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formulario de cupones en la página del carro de compras, debajo del carro de compras real.
 
@@ -658,16 +658,16 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 >
 >La información del pedido del cliente se guarda en sus directorios principales y se expone en el historial de pedidos de su cuenta. Esta información se publica junto con el resto de su directorio de inicio.
 
-### Creación de la información del pedido {#creating-order-information}
+### Creando información de pedido {#creating-order-information}
 
 #### Creación de información de pedido: IU táctil {#creating-order-information-touch-optimized-ui}
 
-1. Con la consola **Pedidos** , navegue a la ubicación requerida.
+1. Con la consola **Orders** navegue a la ubicación requerida.
 1. Utilice el icono **Crear** para seleccionar **Crear pedido**.
 
    ![](do-not-localize/chlimage_1-14.png)
 
-1. Se abrirá el asistente. Utilice las fichas **Básico**, **Contenido**, **Pago** y **Cumplimiento** para introducir la [información sobre el nuevo pedido](/help/sites-administering/concepts.md#order-information).
+1. Se abrirá el asistente. Utilice las fichas **Basic**, **Content**, **Payment** y **Fulfillment** para ingresar la [información sobre el nuevo pedido](/help/sites-administering/concepts.md#order-information).
 
 1. Seleccione **Crear** para guardar la información.
 
@@ -675,15 +675,15 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 
 #### Edición de la información del pedido: IU táctil {#editing-order-information-touch-optimized-ui}
 
-1. Con la consola **Pedidos** , navegue hasta el orden.
+1. Con la consola **Orders** navegue al pedido.
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Seleccione el icono Datos **de pedido de** Vista:
+   Seleccione el icono **Datos de pedido de Vista**:
 
    ![](do-not-localize/chlimage_1-15.png)
 
-1. Se mostrará la información [del](/help/sites-administering/concepts.md#order-information) pedido. Utilice **Editar** y **Listo** para realizar cualquier cambio.
+1. Se mostrará la [información de pedido](/help/sites-administering/concepts.md#order-information). Utilice **Editar** y **Listo** para realizar cualquier cambio.
 
