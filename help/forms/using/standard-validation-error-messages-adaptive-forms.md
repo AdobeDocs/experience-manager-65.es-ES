@@ -58,21 +58,21 @@ Donde:
 * `originCode` contiene el código de error devuelto por el servicio externo
 * `originMessage` contiene los datos de error sin procesar devueltos por el servicio externo
 
-## Configuración del envío de formularios adaptables para agregar controladores personalizados {#configure-adaptive-form-submission}
+## Configurar el envío de formularios adaptables para agregar controladores personalizados {#configure-adaptive-form-submission}
 
 Si el mensaje de error de validación del servidor no se muestra en el formato estándar, puede activar el envío asincrónico y agregar un controlador de error personalizado en el envío de formulario adaptable para convertir el mensaje en un formato estándar.
 
-### Configuración del envío asíncrono de formularios adaptables {#configure-asynchronous-adaptive-form-submission}
+### Configurar el envío asincrónico de formularios adaptables {#configure-asynchronous-adaptive-form-submission}
 
 Antes de agregar un controlador personalizado, debe configurar el formulario adaptable para el envío asincrónico. Siga estos pasos:
 
-1. En el modo de creación de formularios adaptables, seleccione el objeto Contenedor de formulario y toque las propiedades ![del formulario](assets/configure_icon.png) adaptable para abrir sus propiedades.
-1. En la sección Propiedades de **[!UICONTROL envío]** , habilite **[!UICONTROL Usar envío]** asincrónico.
+1. En el modo de creación de formularios adaptables, seleccione el objeto Contenedor de formulario y toque ![propiedades de formulario adaptables](assets/configure_icon.png) para abrir sus propiedades.
+1. En la sección **[!UICONTROL Propiedades de envío]**, habilite **[!UICONTROL Usar envío asincrónico]**.
 1. Seleccione **[!UICONTROL Revalidate en el servidor]** para validar los valores de campo de entrada en el servidor antes del envío.
 1. Seleccione la acción Enviar:
 
-   * Seleccione **[!UICONTROL Enviar con el modelo]** de datos de formulario y seleccione el modelo de datos adecuado si utiliza el modelo [de datos de](work-with-form-data-model.md) formulario basado en RESTful como origen de datos.
-   * Seleccione **[!UICONTROL Enviar al extremo]** REST y especifique la URL o ruta **[!UICONTROL de]** redirección si utiliza los servicios Web RESTful como origen de datos.
+   * Seleccione **[!UICONTROL Enviar con el modelo de datos de formulario]** y seleccione el modelo de datos adecuado si utiliza el modelo de datos de formulario [basado en el servicio Web RESTful](work-with-form-data-model.md) como origen de datos.
+   * Seleccione **[!UICONTROL Enviar al extremo REST]** y especifique la **[!UICONTROL dirección URL/ruta de redireccionamiento]**, si utiliza los servicios Web RESTful como fuente de datos.
 
    ![propiedades de envío de formulario adaptable](assets/af_submission_properties.png)
 
@@ -129,23 +129,23 @@ if (data) {
 }
 ```
 
-La `var som_map` lista la expresión SOM de los campos de formulario adaptables que desea transformar en el formato estándar. Puede realizar la vista de la expresión SOM de cualquier campo en un formulario adaptable tocando el campo y seleccionando la Expresión **[!UICONTROL SOM de]** Vista.
+La `var som_map` lista la expresión SOM de los campos de formulario adaptables que desea transformar en el formato estándar. Puede vista de la expresión SOM de cualquier campo en un formulario adaptable tocando el campo y seleccionando **[!UICONTROL Expresión SOM de Vista]**.
 
-Con este controlador de errores personalizado, el formulario adaptable convierte los campos enumerados en `var som_map` al formato de mensaje de error estándar. Como resultado, los mensajes de error de validación se muestran a nivel de campo en el formulario adaptable.
+Con este controlador de error personalizado, el formulario adaptable convierte los campos enumerados en `var som_map` al formato de mensaje de error estándar. Como resultado, los mensajes de error de validación se muestran a nivel de campo en el formulario adaptable.
 
 ## Añadir controlador personalizado mediante la acción Invoke Service
 
-Ejecute los siguientes pasos para agregar un controlador de error para convertir una estructura de error personalizada en la estructura de error estándar mediante la acción Invocar servicio del Editor [de reglas](rule-editor.md) :
+Ejecute los siguientes pasos para agregar un controlador de error para convertir una estructura de error personalizada en la estructura de error estándar mediante la acción [Invocar servicio del Editor de reglas](rule-editor.md):
 
-1. Abra el formulario adaptable en modo de creación, seleccione cualquier objeto de formulario y toque el Editor ![de](assets/rule_editor_icon.png) reglas para abrir el editor de reglas.
+1. Abra el formulario adaptable en modo de creación, seleccione cualquier objeto de formulario y toque ![Editor de reglas](assets/rule_editor_icon.png) para abrir el editor de reglas.
 1. Toque **[!UICONTROL Crear]**.
-1. Cree una condición en la sección **[!UICONTROL Cuándo]** de la regla. Por ejemplo,[WhenName del campo] se cambia. La selección **[!UICONTROL se cambia]** desde la lista desplegable **[!UICONTROL Seleccionar estado]** para cumplir esta condición.
-1. En la sección **[!UICONTROL Entonces]** , seleccione **[!UICONTROL Invocar servicio]** en la lista desplegable **[!UICONTROL Seleccionar acción]** .
-1. Seleccione un servicio de anuncio y sus enlaces de datos correspondientes en la sección **[!UICONTROL Entrada]** . Por ejemplo, si desea validar los campos **Nombre**, **ID** y **Estado** en el formulario adaptable, seleccione un servicio de publicación (mascota) y seleccione pet.name, pet.id y pet.status en la sección **[!UICONTROL Entrada]** .
+1. Cree una condición en la sección **[!UICONTROL Cuándo]** de la regla. Por ejemplo, cuando[Nombre del campo] se cambia. Seleccione **[!UICONTROL se cambia]** en la lista desplegable **[!UICONTROL Seleccionar estado]** para lograr esta condición.
+1. En la sección **[!UICONTROL Entonces]**, seleccione **[!UICONTROL Invocar servicio]** en la lista desplegable **[!UICONTROL Seleccionar acción]**.
+1. Seleccione un servicio Post y sus enlaces de datos correspondientes en la sección **[!UICONTROL Entrada]**. Por ejemplo, si desea validar los campos **Nombre**, **ID** y **Estado** en el formulario adaptable, seleccione un servicio de publicación (mascota) y seleccione pet.name, pet.id y pet.status en la sección **[!UICONTROL Entrada]**.
 
-Como resultado de esta regla, los valores introducidos para los campos **Nombre**, **ID** y **Estado** se validan en cuanto se cambia el campo definido en el paso 2 y se elimina el tabulador del campo en el formulario.
+Como resultado de esta regla, los valores introducidos para los campos **Nombre**, **ID** y **Estado** se validan en cuanto se cambie el campo definido en el paso 2 y se separe del campo en el formulario.
 
-1. Seleccione Editor **[!UICONTROL de código]** en la lista desplegable de selección de modo.
+1. Seleccione **[!UICONTROL Editor de código]** en la lista desplegable de selección de modo.
 1. Toque **[!UICONTROL Editar código]**.
 1. Elimine la línea siguiente del código existente:
 
@@ -198,7 +198,7 @@ Por ejemplo, agregue el siguiente código de ejemplo al final para convertir una
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   La `var som_map` lista la expresión SOM de los campos de formulario adaptables que desea transformar en el formato estándar. Puede vista de la expresión SOM de cualquier campo en un formulario adaptable tocando el campo y seleccionando **[!UICONTROL Vista Expresión]** SOM en el menú **[!UICONTROL Más opciones]** (...).
+   La `var som_map` lista la expresión SOM de los campos de formulario adaptables que desea transformar en el formato estándar. Puede vista de la expresión SOM de cualquier campo en un formulario adaptable tocando el campo y seleccionando **[!UICONTROL Expresión SOM de Vista]** en el menú **[!UICONTROL Más opciones]** (...).
 
    Asegúrese de copiar la línea siguiente del código de muestra en el controlador de errores personalizado:
 
@@ -208,4 +208,4 @@ Por ejemplo, agregue el siguiente código de ejemplo al final para convertir una
 
    La API executeOperation incluye los parámetros `null` y `errorHandler` basados en el nuevo controlador de errores personalizado.
 
-   Con este controlador de errores personalizado, el formulario adaptable convierte los campos enumerados en `var som_map` al formato de mensaje de error estándar. Como resultado, los mensajes de error de validación se muestran a nivel de campo en el formulario adaptable.
+   Con este controlador de error personalizado, el formulario adaptable convierte los campos enumerados en `var som_map` al formato de mensaje de error estándar. Como resultado, los mensajes de error de validación se muestran a nivel de campo en el formulario adaptable.
