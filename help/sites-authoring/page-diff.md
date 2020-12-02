@@ -75,7 +75,7 @@ Tenga en cuenta que los colores de componente modificado y movido son los mismos
 >
 >Al comparar copias de idioma, el resaltado está desactivado, ya que en una traducción cambia todo y el resaltado no proporcionará ninguna ventaja.
 
-### Pantalla completa y salida   {#fullscreen-and-exiting}
+### Pantalla completa y salida    {#fullscreen-and-exiting}
 
 Para centrarse en un contenido específico, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del navegador.
 
@@ -91,7 +91,7 @@ También puede cerrar la vista de pantalla completa haciendo clic en el icono pa
 
 Puede salir de la comparación de diferencias en paralelo en cualquier momento haciendo clic en el botón Cerrar del encabezado.
 
-## Restricciones   {#limitations}
+## Restricciones    {#limitations}
 
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
