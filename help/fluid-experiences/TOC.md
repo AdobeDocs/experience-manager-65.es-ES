@@ -13,6 +13,6 @@ ht-degree: 0%
 ---
 
 
-# AEM experiencias fluidas {#aem-fluid-experiences}
+# Experiencias AEM fluidas {#aem-fluid-experiences}
 
 + [Lista de funciones](/help/fluid-experiences/feature-list.md)
