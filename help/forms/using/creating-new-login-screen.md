@@ -27,7 +27,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 1. Inicie sesión en `/lc/crx/de` con permisos de administrador.
 1. Realice las siguientes acciones:
 
-   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/content` en `/apps/livecycle/core/content`.
+   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/content` a `/apps/livecycle/core/content`.
 
       Mantenga las mismas propiedades (nodo/carpeta) y el mismo control de acceso.
 
@@ -37,11 +37,11 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 
       hasta: `/apps/livecycle/core`.
 
-   1. Elimine el contenido de la `/apps/livecycle/core` carpeta.
+   1. Elimine el contenido de la carpeta `/apps/livecycle/core`.
 
 1. Realice estas acciones:
 
-   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/components/login` en `/apps/livecycle/core/components/login`. Mantenga las mismas propiedades (nodo/carpeta) y el mismo control de acceso.
+   1. Replicar la estructura jerárquica: de `/libs/livecycle/core/components/login` a `/apps/livecycle/core/components/login`. Mantenga las mismas propiedades (nodo/carpeta) y el mismo control de acceso.
 
    1. Copie la carpeta components: de `/libs/livecycle/core` a `/apps/livecycle/core`.
 
@@ -49,21 +49,21 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 
 ### Añadir una nueva configuración regional {#adding-a-new-locale}
 
-1. Copie la `i18n` carpeta:
+1. Copie la carpeta `i18n`:
 
    * de `/libs/livecycle/core/components/login`
    * hasta `/apps/livecycle/core/components/login`
 
-1. Elimine todas las carpetas de dentro `i18n` excepto una, por ejemplo `en`.
+1. Elimine todas las carpetas dentro de `i18n` excepto una, digamos `en`.
 
 1. En la carpeta `en`, realice las siguientes acciones:
 
    1. Cambie el nombre de la carpeta por el nombre de configuración regional que desee admitir. Por ejemplo, `ar`.
 
-   1. Cambie el valor de la propiedad `jcr:language` a `ar`(para la `ar` carpeta).
+   1. Cambie el valor de la propiedad `jcr:language` a `ar` (para la carpeta `ar`).
    >[!NOTE]
    >
-   >Si la configuración regional es una combinación de código de país de idioma, por ejemplo, `ar-DZ`, cambie el nombre de la carpeta y el valor de la propiedad a `ar-DZ`.
+   >Si locale es una combinación de código de país-idioma, por ejemplo, `ar-DZ`, cambie el nombre de la carpeta y el valor de la propiedad a `ar-DZ`.
 
 1. Copiar `login.jsp`:
 
@@ -198,22 +198,22 @@ String browserLocale = "en";
 
 ### Añadir texto nuevo o modificar texto existente {#adding-new-text-or-modifying-existing-text}
 
-1. Copiar `i18n` carpeta:
+1. Copiar carpeta `i18n`:
 
    * de `/libs/livecycle/core/components/login`
    * hasta `/apps/livecycle/core/components/login`
 
-1. Ahora modifique el valor de la propiedad `sling:message` del nodo (en la carpeta de código de configuración regional deseada) para el que desea cambiar el texto. La traducción se realiza mediante la clave mencionada en el valor de la `sling:key` propiedad del nodo.
+1. Ahora modifique el valor de la propiedad `sling:message` del nodo (debajo de la carpeta de código de configuración regional deseada) para la que desea cambiar el texto. La traducción se realiza mediante la clave mencionada en el valor de la propiedad `sling:key` del nodo.
 
 1. Para agregar un nuevo par clave-valor, realice las siguientes acciones. Compruebe un ejemplo en la captura de pantalla siguiente.
 
-   1. Cree un nodo de tipo `sling:MessageEntry`, o copie un nodo existente y cámbiele el nombre, en todas las carpetas de configuración regional.
+   1. Cree un nodo de tipo `sling:MessageEntry` o copie un nodo existente y cambie su nombre en todas las carpetas de configuración regional.
    1. Copiar `login.jsp` :
 
       * de `/libs/livecycle/core/components/login`
 
       * hasta `/apps/livecycle/core/components/login`
-   1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar el texto recientemente agregado.
+   1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar el texto recientemente agregado.
 
    ![Añadir nuevo par clave-valor](assets/capture_new.png)
 
@@ -240,12 +240,12 @@ String browserLocale = "en";
 
 ### Añadir estilo nuevo o modificar estilo existente {#adding-new-style-or-modifying-existing-style}
 
-1. Copy `login` node:
+1. Copiar nodo `login`:
 
    * de `/libs/livecycle/core/content`
    * hasta `/apps/livecycle/core/content`
 
-1. Eliminar archivos `login.js` y `jquery-1.8.0.min.js`, del nodo `/apps/livecycle/core/content/login.`
+1. Eliminar archivos `login.js` y `jquery-1.8.0.min.js` del nodo `/apps/livecycle/core/content/login.`
 1. Modifique los estilos del archivo CSS.
 1. Para agregar nuevos estilos:
 
@@ -255,7 +255,7 @@ String browserLocale = "en";
       * de `/libs/livecycle/core/components/login`
 
       * hasta `/apps/livecycle/core/components/login`
-   1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar los estilos recién añadidos.
+   1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar los estilos recién agregados.
 
 
 
@@ -290,15 +290,15 @@ css.newLoginContentArea {
 ### Añadir nuevas imágenes {#add-new-images}
 
 1. Siga los pasos para Añadir un nuevo estilo o modificar un estilo existente (documentados anteriormente).
-1. Añada imágenes nuevas en `/apps/livecycle/core/content/login`. Para agregar una imagen:
+1. Añada nuevas imágenes en `/apps/livecycle/core/content/login`. Para agregar una imagen:
 
    1. Instale el cliente WebDAV.
-   1. Navegue a `/apps/livecycle/core/content/login` la carpeta mediante el cliente webDAV. Para obtener más información, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navegue a la carpeta `/apps/livecycle/core/content/login` mediante el cliente webDAV. Para obtener más información, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    1. Añadir imágenes nuevas.
 
-1. Añada nuevos estilos en `/apps/livecycle/core/content/login/login.css,` relación con las nuevas imágenes agregadas en `/apps/livecycle/core/content/login`.
-1. Utilice los nuevos estilos en `login.jsp` at `/apps/livecycle/core/components`.
+1. Añada nuevos estilos en `/apps/livecycle/core/content/login/login.css,` correspondientes a las nuevas imágenes agregadas en `/apps/livecycle/core/content/login`.
+1. Utilice los nuevos estilos en `login.jsp` en `/apps/livecycle/core/components`.
 
 Por ejemplo:
 
