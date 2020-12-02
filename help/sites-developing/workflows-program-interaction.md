@@ -1,6 +1,6 @@
 ---
-title: Interactuar con flujos de trabajo mediante programación
-seo-title: Interactuar con flujos de trabajo mediante programación
+title: Interactuar con Flujos de trabajo mediante programación
+seo-title: Interactuar con Flujos de trabajo mediante programación
 description: nulo
 seo-description: nulo
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
 source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
 
-# Interactuar con flujos de trabajo mediante programación{#interacting-with-workflows-programmatically}
+# Interactuar con Flujos de trabajo mediante programación{#interacting-with-workflows-programmatically}
 
-Al [personalizar y ampliar los flujos de trabajo](/help/sites-developing/workflows-customizing-extending.md) , puede acceder a los objetos de flujo de trabajo:
+Al [personalizar y ampliar sus flujos de trabajo](/help/sites-developing/workflows-customizing-extending.md) puede acceder a los objetos del flujo de trabajo:
 
 * [Uso de la API de Java de workflow](#using-the-workflow-java-api)
 * [Obtención de objetos de flujo de trabajo en secuencias de comandos de ECMA](#obtaining-workflow-objects-in-ecma-scripts)
 * [Uso de la API de flujo de trabajo REST](#using-the-workflow-rest-api)
 
-## Uso de la API de Java de workflow {#using-the-workflow-java-api}
+## Uso de la API de Java de flujo de trabajo {#using-the-workflow-java-api}
 
-La API de Java de flujo de trabajo consiste en el [`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) paquete y varios subpaquetes. El miembro más significativo de la API es la `com.adobe.granite.workflow.WorkflowSession` clase. La `WorkflowSession` clase proporciona acceso a objetos de flujo de trabajo de tiempo de diseño y tiempo de ejecución:
+La API de Java de flujo de trabajo consiste en el paquete [`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) y varios subpaquetes. El miembro más significativo de la API es la clase `com.adobe.granite.workflow.WorkflowSession`. La clase `WorkflowSession` proporciona acceso a objetos de flujo de trabajo de tiempo de diseño y tiempo de ejecución:
 
 * modelos de flujo de trabajo
 * elementos de trabajo
@@ -46,9 +49,9 @@ La siguiente tabla proporciona vínculos a la documentación de referencia de va
 
 ## Obtención de objetos de flujo de trabajo en secuencias de comandos de ECMA {#obtaining-workflow-objects-in-ecma-scripts}
 
-Como se describe en [Localización de secuencias de comandos](/help/sites-developing/the-basics.md#locating-the-script), AEM (mediante Apache Sling) proporciona un motor de secuencias de comandos ECMA que ejecuta secuencias de comandos ECMA del lado del servidor. La [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) clase está disponible inmediatamente para las secuencias de comandos como la `sling` variable.
+Como se describe en [Localización de la secuencia de comandos](/help/sites-developing/the-basics.md#locating-the-script), AEM (a través de Apache Sling) proporciona un motor de secuencias de comandos ECMA que ejecuta secuencias de comandos ECMA del lado del servidor. La clase [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) está inmediatamente disponible para sus secuencias de comandos como la variable `sling`.
 
-La `ScriptHelper` clase proporciona acceso al objeto `SlingHttpServletRequest` que se puede utilizar para obtener finalmente el `WorkflowSession` objeto; por ejemplo:
+La clase `ScriptHelper` proporciona acceso a `SlingHttpServletRequest` que puede utilizar para obtener finalmente el objeto `WorkflowSession`; por ejemplo:
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
@@ -64,18 +67,18 @@ La consola Flujo de trabajo utiliza en gran medida la API de REST; esta página 
 
 Las siguientes acciones son compatibles con la API de REST:
 
-* iniciar o detener un servicio de flujo de trabajo
+* inicio o parada de un servicio de flujo de trabajo
 * crear, actualizar o eliminar modelos de flujo de trabajo
-* [iniciar, suspender, reanudar o finalizar instancias de flujo de trabajo](/help/sites-administering/workflows.md#workflow-status-and-actions)
+* [inicio, suspensión, reanudación o finalización de instancias de flujo de trabajo](/help/sites-administering/workflows.md#workflow-status-and-actions)
 * completar o delegar elementos de trabajo
 
 >[!NOTE]
 >
->Al utilizar Firebug, una extensión de Firefox para el desarrollo web, es posible seguir el tráfico HTTP cuando se opera la consola. Por ejemplo, puede comprobar los parámetros y los valores enviados al servidor AEM con una `POST` solicitud.
+>Al utilizar Firebug, una extensión de Firefox para el desarrollo web, es posible seguir el tráfico HTTP cuando la consola está en funcionamiento. Por ejemplo, puede comprobar los parámetros y los valores enviados al servidor de AEM con una solicitud `POST`.
 
-En esta página se da por hecho que AEM se ejecuta en localhost en el puerto `4502` y que el contexto de instalación es &quot; `/`&quot; (raíz). Si no es el caso de su instalación, los URI, a los que se aplican las solicitudes HTTP, deben adaptarse en consecuencia.
+En esta página se supone que AEM se ejecuta en localhost en el puerto `4502` y que el contexto de instalación es &quot; `/`&quot; (raíz). Si no es el caso de su instalación, los URI, a los que se aplican las solicitudes HTTP, deben adaptarse en consecuencia.
 
-El procesamiento admitido para `GET` las solicitudes es el procesamiento JSON. Las direcciones URL para `GET` deben tener la `.json` extensión, por ejemplo:
+El procesamiento admitido para solicitudes `GET` es el procesamiento JSON. Las direcciones URL para `GET` deben tener la extensión `.json`, por ejemplo:
 
 `http://localhost:4502/etc/workflow.json`
 
@@ -93,16 +96,16 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Muestra las instancias de flujo de trabajo disponibles.</td>
+   <td>Lista las instancias de flujo de trabajo disponibles.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crea una nueva instancia de flujo de trabajo. Los parámetros son:<br /> - <code>model</code>: el ID (URI) del modelo<br /> de flujo de trabajo correspondiente: <code>payloadType</code>: que contiene el tipo de carga útil (por ejemplo, <code>JCR_PATH</code> o dirección URL).<br /> La carga útil se envía como parámetro <code>payload</code>. Se devuelve una respuesta <code>201</code> (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso de instancia de flujo de trabajo.</p> </td>
+   <td><p>Crea una nueva instancia de flujo de trabajo. Los parámetros son:<br /> - <code>model</code>: el ID (URI) del modelo de flujo de trabajo correspondiente<br /> - <code>payloadType</code>: que contiene el tipo de carga útil (por ejemplo, <code>JCR_PATH</code> o URL).<br /> La carga útil se envía como parámetro  <code>payload</code>. Se devuelve una respuesta <code>201</code> (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso de instancia de flujo de trabajo.</p> </td>
   </tr>
  </tbody>
 </table>
 
-#### Administración de una instancia de flujo de trabajo según su estado {#managing-a-workflow-instance-by-its-state}
+#### Administración de una instancia de flujo de trabajo por su estado {#managing-a-workflow-instance-by-its-state}
 
 Los siguientes métodos de solicitud HTTP se aplican a:
 
@@ -110,7 +113,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
 
 | Método de solicitud HTTP | Acciones |
 |---|---|
-| `GET` | Enumera las instancias de flujo de trabajo disponibles y sus estados ( `RUNNING`, `SUSPENDED`, `ABORTED` o `COMPLETED`) |
+| `GET` | Lista las instancias de flujo de trabajo disponibles y sus estados ( `RUNNING`, `SUSPENDED`, `ABORTED` o `COMPLETED`) |
 
 #### Administración de una instancia de flujo de trabajo por su ID {#managing-a-workflow-instance-by-its-id}
 
@@ -130,7 +133,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Cambia el estado de la instancia. El nuevo estado se envía como parámetro <code>state</code> y debe tener uno de los siguientes valores: <code>RUNNING</code>, <code>SUSPENDED</code>o <code>ABORTED</code>.<br /> Si el nuevo estado no está disponible (por ejemplo, al suspender una instancia terminada), se devuelve una <code>409</code> (<code>CONFLICT</code>) respuesta al cliente.</td>
+   <td>Cambia el estado de la instancia. El nuevo estado se envía como parámetro <code>state</code> y debe tener uno de los siguientes valores: <code>RUNNING</code>, <code>SUSPENDED</code> o <code>ABORTED</code>.<br /> Si el nuevo estado no está disponible (por ejemplo, al suspender una instancia terminada), se devuelve una respuesta  <code>409</code> (<code>CONFLICT</code>) al cliente.</td>
   </tr>
  </tbody>
 </table>
@@ -149,16 +152,16 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Enumera los modelos de flujo de trabajo disponibles.</td>
+   <td>Lista los modelos de flujo de trabajo disponibles.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Crea un nuevo modelo de flujo de trabajo. Si <code>title</code> se envía el parámetro, se crea un nuevo modelo con el título especificado. Al adjuntar una definición de modelo JSON como parámetro, <code>model</code> se crea un nuevo modelo de flujo de trabajo según la definición proporcionada.<br /> Se devuelve una <code>201</code> respuesta (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso del modelo de flujo de trabajo.<br /> Lo mismo ocurre cuando se adjunta una definición de modelo como un parámetro de archivo denominado <code>modelfile</code>.<br /> Tanto en el caso de los parámetros <code>model</code> como en el <code>modelfile</code> , se requiere un parámetro adicional denominado <code>type</code> para definir el formato de serialización. Los nuevos formatos de serialización se pueden integrar mediante la API OSGI. Se entrega un serializador JSON estándar con el motor de flujo de trabajo. Su tipo es JSON. Consulte a continuación un ejemplo del formato.</td>
+   <td>Crea un nuevo modelo de flujo de trabajo. Si se envía el parámetro <code>title</code>, se crea un nuevo modelo con el título especificado. Al adjuntar una definición de modelo JSON como parámetro <code>model</code>, se crea un nuevo modelo de flujo de trabajo según la definición proporcionada.<br /> Se devuelve una  <code>201</code> respuesta (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso del modelo de flujo de trabajo.<br /> Lo mismo ocurre cuando se adjunta una definición de modelo como un parámetro de archivo denominado  <code>modelfile</code>.<br /> Tanto en el caso de los  <code>model</code> parámetros  <code>modelfile</code> como en el de los parámetros,  <code>type</code> se requiere un parámetro adicional denominado para definir el formato de serialización. Los nuevos formatos de serialización se pueden integrar mediante la API OSGI. Se entrega un serializador JSON estándar con el motor de flujos de trabajo. Su tipo es JSON. Consulte a continuación un ejemplo del formato.</td>
   </tr>
  </tbody>
 </table>
 
-Ejemplo: en el navegador, una solicitud para `http://localhost:4502/etc/workflow/models.json` generar una respuesta json similar a la siguiente:
+Ejemplo: en el explorador, una solicitud a `http://localhost:4502/etc/workflow/models.json` genera una respuesta json similar a la siguiente:
 
 ```
 [
@@ -224,7 +227,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
 
 `http://localhost:4502*{uri}*`
 
-Dónde `*{uri}*` está la ruta al nodo de modelo en el repositorio.
+Donde `*{uri}*` es la ruta al nodo de modelo en el repositorio.
 
 <table>
  <tbody>
@@ -234,24 +237,24 @@ Dónde `*{uri}*` está la ruta al nodo de modelo en el repositorio.
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Obtiene la <code>HEAD</code> versión del modelo (definición y metadatos).</td>
+   <td>Obtiene la versión <code>HEAD</code> del modelo (definición y metadatos).</td>
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>Actualiza la <code>HEAD</code> versión del modelo (crea una nueva versión).<br /> La definición completa del modelo para la nueva versión del modelo debe agregarse como un parámetro llamado <code>model</code>. Además, se necesita un <code>type</code> parámetro como al crear nuevos modelos y debe tener el valor <code>JSON</code>.<br /> </td>
+   <td>Actualiza la versión <code>HEAD</code> del modelo (crea una nueva versión).<br /> La definición completa del modelo para la nueva versión del modelo debe agregarse como un parámetro llamado  <code>model</code>. Además, se necesita un parámetro <code>type</code> como al crear nuevos modelos y debe tener el valor <code>JSON</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>El mismo comportamiento que con PUT. Necesario porque las utilidades de AEM no admiten <code>PUT</code> operaciones.</td>
+   <td>El mismo comportamiento que con el PUT. Necesario porque AEM utilidades no admiten operaciones <code>PUT</code>.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>Elimina el modelo. Para resolver los problemas de firewall o proxy, también se aceptará como <code>POST</code> solicitud una entrada de encabezado que contenga una entrada <code>X-HTTP-Method-Override</code> con valor <code>DELETE</code> <code>DELETE</code> .</td>
+   <td>Elimina el modelo. Para resolver los problemas de firewall/proxy, también se aceptará como solicitud <code>DELETE</code> una <code>POST</code> que contenga una entrada de encabezado <code>X-HTTP-Method-Override</code> con el valor <code>DELETE</code>.</td>
   </tr>
  </tbody>
 </table>
 
-Ejemplo: en el navegador, una solicitud para `http://localhost:4502/var/workflow/models/publish_example.json` devolver una `json` respuesta similar al siguiente código:
+Ejemplo: en el explorador, una solicitud para `http://localhost:4502/var/workflow/models/publish_example.json` devuelve una respuesta `json` similar al siguiente código:
 
 ```shell
 {
@@ -329,7 +332,7 @@ Ejemplo: en el navegador, una solicitud para `http://localhost:4502/var/workflow
 ]}
 ```
 
-#### Administración de un modelo de flujo de trabajo según su versión {#managing-a-workflow-model-by-its-version}
+#### Administración de un modelo de flujo de trabajo por su versión {#managing-a-workflow-model-by-its-version}
 
 Los siguientes métodos de solicitud HTTP se aplican a:
 
@@ -353,11 +356,11 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Enumera los elementos de trabajo que se encuentran en la bandeja de entrada del usuario, que se identifican mediante los encabezados de autenticación HTTP.</td>
+   <td>Lista los elementos de trabajo que se encuentran en la bandeja de entrada del usuario, que se identifica mediante los encabezados de autenticación HTTP.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completa el elemento de trabajo cuyo URI se envía como parámetro <code>item</code> y avanza la instancia de flujo de trabajo de acuerdo a los nodos siguientes, que se definen mediante el parámetro <code>route</code> o <code>backroute</code> en caso de retroceder un paso.<br /> Si <code>delegatee</code> se envía el parámetro, el elemento de trabajo identificado por el parámetro <code>item</code> se delega al participante especificado.</td>
+   <td>Completa el elemento de trabajo cuyo URI se envía como parámetro <code>item</code> y avanza la instancia de flujo de trabajo de acuerdo a los nodos siguientes, que se define mediante el parámetro <code>route</code> o <code>backroute</code> en caso de retroceder un paso.<br /> Si  <code>delegatee</code> se envía el parámetro, el elemento de trabajo identificado por el parámetro  <code>item</code> se delega al participante especificado.</td>
   </tr>
  </tbody>
 </table>
@@ -370,17 +373,17 @@ Los siguientes métodos de solicitud HTTP se aplican a:
 
 | Método de solicitud HTTP | Acciones |
 |---|---|
-| `GET` | Obtiene los datos (definición y metadatos) de la bandeja de entrada `WorkItem` identificados por su ID. |
+| `GET` | Obtiene los datos (definición y metadatos) de la bandeja de entrada `WorkItem` identificada por su ID. |
 
 ## Ejemplos {#examples}
 
-### Cómo obtener una lista de todos los flujos de trabajo en ejecución con sus ID {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
+### Cómo obtener una Lista de todos los Flujos de trabajo en ejecución con sus ID {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-Para obtener una lista de todos los flujos de trabajo en ejecución, realice una de las siguientes acciones:
+Para obtener una lista de todos los flujos de trabajo en ejecución, haga una GET para:
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
-#### Cómo obtener una lista de todos los flujos de trabajo en ejecución con sus ID: REST mediante curl {#how-to-get-a-list-of-all-running-workflows-with-their-ids-rest-using-curl}
+#### Cómo obtener una Lista de todos los Flujos de trabajo en ejecución con sus ID: REST mediante curl {#how-to-get-a-list-of-all-running-workflows-with-their-ids-rest-using-curl}
 
 Ejemplo con curl:
 
@@ -388,7 +391,7 @@ Ejemplo con curl:
 curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 ```
 
-El `uri` que se muestra en los resultados puede utilizarse como instancia `id` en otros comandos; por ejemplo:
+El `uri` mostrado en los resultados puede utilizarse como instancia `id` en otros comandos; por ejemplo:
 
 ```shell
 [
@@ -398,20 +401,20 @@ El `uri` que se muestra en los resultados puede utilizarse como instancia `id` e
 
 >[!NOTE]
 >
->Este `curl` comando se puede utilizar con cualquier estado [de](/help/sites-administering/workflows.md#workflow-status-and-actions) flujo de trabajo en lugar de `RUNNING`.
+>Este comando `curl` puede utilizarse con cualquier estado de [flujo de trabajo](/help/sites-administering/workflows.md#workflow-status-and-actions) en lugar de `RUNNING`.
 
 ### Cómo cambiar el título del flujo de trabajo {#how-to-change-the-workflow-title}
 
-Para cambiar el Título **del** flujo de trabajo que se muestra en la ficha **Instancias** de la consola de flujo de trabajo, envíe un `POST` comando:
+Para cambiar el **Título del flujo de trabajo** que se muestra en la ficha **Instancias** de la consola del flujo de trabajo, envíe un comando `POST`:
 
 * hasta: `http://localhost:4502/etc/workflow/instances/{id}`
 
 * con los parámetros siguientes:
 
-   * `action`:: su valor debe ser: `UPDATE`
+   * `action`:: su valor debe ser:  `UPDATE`
    * `workflowTitle`:: el título del flujo de trabajo
 
-#### Cómo cambiar el título del flujo de trabajo - REST mediante curl {#how-to-change-the-workflow-title-rest-using-curl}
+#### Cómo cambiar el título del flujo de trabajo - REST usando curl {#how-to-change-the-workflow-title-rest-using-curl}
 
 Ejemplo con curl:
 
@@ -422,13 +425,13 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
 ```
 
-### Cómo enumerar todos los modelos de flujo de trabajo {#how-to-list-all-workflow-models}
+### Cómo realizar la Lista de todos los modelos de flujo de trabajo {#how-to-list-all-workflow-models}
 
-Para obtener una lista de todos los modelos de flujo de trabajo disponibles, realice una operación GET para:
+Para obtener una lista de todos los modelos de flujo de trabajo disponibles, realice un GET para:
 
 `http://localhost:4502/etc/workflow/models.json`
 
-#### Cómo enumerar todos los modelos de flujo de trabajo: REST mediante curl {#how-to-list-all-workflow-models-rest-using-curl}
+#### Lista de todos los modelos de flujo de trabajo: REST mediante curl {#how-to-list-all-workflow-models-rest-using-curl}
 
 Ejemplo con curl:
 
@@ -438,15 +441,15 @@ curl -u admin:admin http://localhost:4502/etc/workflow/models.json
 
 >[!NOTE]
 >
->Consulte también [Administración de modelos](#managing-workflow-models)de flujo de trabajo.
+>Consulte también [Administración de modelos de flujo de trabajo](#managing-workflow-models).
 
 ### Obtención de un objeto WorkflowSession {#obtaining-a-workflowsession-object}
 
-La `com.adobe.granite.workflow.WorkflowSession` clase se puede adaptar desde un `javax.jcr.Session` objeto o un `org.apache.sling.api.resource.ResourceResolver` objeto.
+La clase `com.adobe.granite.workflow.WorkflowSession` se puede adaptar desde un objeto `javax.jcr.Session` o un objeto `org.apache.sling.api.resource.ResourceResolver`.
 
 #### Obtención de un objeto WorkflowSession: Java {#obtaining-a-workflowsession-object-java}
 
-En una secuencia de comandos JSP (o código Java para una clase servlet), utilice el objeto de solicitud HTTP para obtener un `SlingHttpServletRequest` objeto, que proporciona acceso a un `ResourceResolver` objeto. Adaptar el `ResourceResolver` objeto a `WorkflowSession`.
+En una secuencia de comandos JSP (o código Java para una clase servlet), utilice el objeto de solicitud HTTP para obtener un objeto `SlingHttpServletRequest`, que proporciona acceso a un objeto `ResourceResolver`. Adapte el objeto `ResourceResolver` a `WorkflowSession`.
 
 ```java
 <%
@@ -462,7 +465,7 @@ WorkflowSession wfSession = slingReq.getResourceResolver().adaptTo(WorkflowSessi
 
 #### Obtención de un objeto WorkflowSession: secuencia de comandos de ECMA {#obtaining-a-workflowsession-object-ecma-script}
 
-Utilice la `sling` variable para obtener el `SlingHttpServletRequest` objeto que utiliza para obtener un `ResourceResolver` objeto. Adaptar el `ResourceResolver` objeto al `WorkflowSession` objeto.
+Utilice la variable `sling` para obtener el objeto `SlingHttpServletRequest` que utiliza para obtener un objeto `ResourceResolver`. Adapte el objeto `ResourceResolver` al objeto `WorkflowSession`.
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
@@ -472,37 +475,38 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 Los siguientes ejemplos muestran cómo acceder a los modelos de flujo de trabajo:
 
-* El código para Java y secuencias de comandos ECMA utiliza el `WorkflowSession.createNewModel` método .
+* El código para Java y la secuencia de comandos ECMA utiliza el método `WorkflowSession.createNewModel`.
 * El comando curl accede al modelo directamente mediante su URL.
 
 Los ejemplos utilizados:
 
-1. Cree un modelo (con el ID `/var/workflow/models/mymodel/jcr:content/model`).
+1. Cree un modelo (con la ID `/var/workflow/models/mymodel/jcr:content/model`).
 1. Elimine el modelo.
 
 >[!NOTE]
 >
->Al eliminar el modelo, se establece la `deleted` propiedad del nodo secundario del `metaData` modelo en `true`.
+>Al eliminar el modelo, se establece la propiedad `deleted` del nodo secundario `metaData` del modelo en `true`.
 >
 >La eliminación no elimina el nodo de modelo.
 
 Al crear un modelo nuevo:
 
-* El editor de modelos de flujo de trabajo requiere que los modelos utilicen una estructura de nodos específica a continuación `/var/workflow/models`. El nodo principal del modelo debe ser del tipo `cq:Page` que tenga un `jcr:content` nodo con los siguientes valores de propiedad:
+* El editor de modelos de flujo de trabajo requiere que los modelos utilicen una estructura de nodos específica por debajo de `/var/workflow/models`. El nodo principal del modelo debe ser del tipo `cq:Page` que tenga un nodo `jcr:content` con los siguientes valores de propiedad:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
-   Al crear un modelo, primero debe crear este `cq:Page` nodo y utilizar su `jcr:content` nodo como el nodo principal del modelo.
+   * `cq:template`::  `/libs/cq/workflow/templates/model`
 
-* El `id` argumento que algunos métodos requieren para identificar el modelo es la ruta absoluta del nodo de modelo en el repositorio:
+   Al crear un modelo, primero debe crear este nodo `cq:Page` y utilizar su nodo `jcr:content` como principal del nodo del modelo.
+
+* El argumento `id` que algunos métodos requieren para identificar el modelo es la ruta absoluta del nodo de modelo en el repositorio:
 
    `/var/workflow/models/<*model_name>*/jcr:content/model`
 
    >[!NOTE]
    >
-   >Consulte [Cómo enumerar todos los modelos](#how-to-list-all-workflow-models)de flujo de trabajo.
+   >Consulte [Lista de todos los modelos de flujo de trabajo](#how-to-list-all-workflow-models).
 
-#### Creación, lectura o eliminación de modelos de flujo de trabajo: Java {#creating-reading-or-deleting-workflow-models-java}
+#### Creación, lectura o eliminación de modelos de flujo de trabajo - Java {#creating-reading-or-deleting-workflow-models-java}
 
 ```java
 <%@include file="/libs/foundation/global.jsp"%><%
@@ -543,7 +547,7 @@ var model = wfSession.createNewModel("My Model", modelId);
 var model = wfSession.deleteModel(modelId);
 ```
 
-#### Eliminación de un modelo de flujo de trabajo: REST mediante cursiva {#deleting-a-workflow-model-rest-using-curl}
+#### Eliminación de un modelo de flujo de trabajo: REST con curl {#deleting-a-workflow-model-rest-using-curl}
 
 ```shell
 # deleting the model by its id
@@ -554,9 +558,9 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 >
 >Debido al nivel de detalle requerido, el curl no se considera práctico para crear y/o leer un modelo.
 
-### Filtrar flujos de trabajo del sistema al comprobar el estado del flujo de trabajo {#filtering-out-system-workflows-when-checking-workflow-status}
+### Filtrar Flujos de trabajo del sistema al comprobar el estado del flujo de trabajo {#filtering-out-system-workflows-when-checking-workflow-status}
 
-Puede utilizar la API [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) WorkflowStatus para recuperar información sobre el estado del flujo de trabajo de un nodo.
+Puede utilizar la [API WorkflowStatus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) para recuperar información sobre el estado del flujo de trabajo de un nodo.
 
 Varios métodos tienen el parámetro:
 
@@ -564,14 +568,14 @@ Varios métodos tienen el parámetro:
 
 Este parámetro se puede establecer en `true` para indicar que los flujos de trabajo del sistema deben excluirse de los resultados relevantes.
 
-Se [puede actualizar la configuración](/help/sites-deploying/configuring-osgi.md) OSGi **Adobe Granite Workflow PayloadMapCache** que especifica el flujo de trabajo `Models` que se considerará como flujos de trabajo del sistema. Los modelos de flujo de trabajo predeterminados (tiempo de ejecución) son:
+[puede actualizar la configuración de OSGi](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** que especifica el flujo de trabajo `Models` que debe considerarse como flujos de trabajo del sistema. Los modelos de flujo de trabajo predeterminados (tiempo de ejecución) son:
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
 
-### Avance automático del participante tras un tiempo de espera {#auto-advance-participant-step-after-a-timeout}
+### Avance automático del participante Paso después de un tiempo de espera {#auto-advance-participant-step-after-a-timeout}
 
-Si necesita avanzar automáticamente un paso de **participante** que no se haya completado en un tiempo predefinido, puede:
+Si necesita avanzar automáticamente un paso **Participante** que no se haya completado dentro de un tiempo predefinido, puede:
 
 1. Implemente un detector de eventos OSGI para escuchar la creación y modificación de tareas.
 1. Especifique un tiempo de espera (fecha límite) y, a continuación, cree un trabajo de sling programado para que se active en ese momento.
@@ -619,7 +623,7 @@ wfSession.resumeWorkflow(workflow);
 wfSession.terminateWorkflow(workflow);
 ```
 
-#### Interactuar con instancias de flujo de trabajo: REST con curl {#interacting-with-workflow-instances-rest-using-curl}
+#### Interactuar con instancias de flujo de trabajo: REST mediante curl {#interacting-with-workflow-instances-rest-using-curl}
 
 * **Inicio de un flujo de trabajo**
 
@@ -638,7 +642,7 @@ wfSession.terminateWorkflow(workflow);
    curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
    ```
 
-   Se enumerarán todas las instancias; por ejemplo:
+   Esto lista todas las instancias; por ejemplo:
 
    ```shell
    [
@@ -649,7 +653,7 @@ wfSession.terminateWorkflow(workflow);
 
    >[!NOTE]
    >
-   >Consulte [Cómo obtener una lista de todos los flujos de trabajo](#how-to-get-a-list-of-all-running-workflows-with-their-ids) en ejecución con sus ID para enumerar las instancias con un estado específico.
+   >Consulte [Cómo obtener una Lista de todos los Flujos de trabajo en ejecución](#how-to-get-a-list-of-all-running-workflows-with-their-ids) con sus ID para enumerar las instancias con un estado específico.
 
 * **Suspensión de un flujo de trabajo**
 
@@ -685,7 +689,7 @@ wfSession.terminateWorkflow(workflow);
 
 A continuación se proporcionan ejemplos básicos de cómo interactuar (de forma programada) con elementos de trabajo.
 
-#### Interactuar con elementos de trabajo: Java {#interacting-with-work-items-java}
+#### Interactuar con elementos de trabajo - Java {#interacting-with-work-items-java}
 
 ```java
 // querying work items
@@ -703,7 +707,7 @@ wfSession.delegateWorkItem(workItem, delegatees.get(0));
 wfSession.complete(workItem, routes.get(0));
 ```
 
-#### Interactuar con elementos de trabajo: secuencia de comandos de ECMA {#interacting-with-work-items-ecma-script}
+#### Interactuar con elementos de trabajo - Secuencia de comandos ECMA {#interacting-with-work-items-ecma-script}
 
 ```
 // querying work items
@@ -721,7 +725,7 @@ wfSession.delegateWorkItem(workItem, delegatees.get(0));
 wfSession.complete(workItem, routes.get(0));
 ```
 
-#### Interactuar con elementos de trabajo: REST mediante cursiva {#interacting-with-work-items-rest-using-curl}
+#### Interactuar con elementos de trabajo: REST con curl {#interacting-with-work-items-rest-using-curl}
 
 * **Lista de elementos de trabajo de la bandeja de entrada**
 
@@ -790,7 +794,7 @@ wfSession.complete(workItem, routes.get(0));
 
    >[!NOTE]
    >
-   >La opción `delegatee` debe ser válida para el paso del flujo de trabajo.
+   >El `delegatee` debe ser una opción válida para el paso del flujo de trabajo.
 
 * **Cómo completar o avanzar elementos de trabajo al paso siguiente**
 
@@ -805,9 +809,9 @@ wfSession.complete(workItem, routes.get(0));
    curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
    ```
 
-### Escucha de eventos de flujo de trabajo {#listening-for-workflow-events}
+### Escuchar Eventos de flujo de trabajo {#listening-for-workflow-events}
 
-Utilice el marco de eventos OSGi para escuchar los eventos que define la [ `com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) clase. Esta clase también proporciona varios métodos útiles para obtener información sobre el tema del evento. Por ejemplo, el `getWorkItem` método devuelve el `WorkItem` objeto del elemento de trabajo que participa en el evento.
+Utilice la estructura de evento OSGi para detectar eventos que define la clase [ `com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Esta clase también proporciona varios métodos útiles para obtener información sobre el tema del evento. Por ejemplo, el método `getWorkItem` devuelve el objeto `WorkItem` del elemento de trabajo que está involucrado en el evento.
 
 El siguiente código de ejemplo define un servicio que escucha eventos de flujo de trabajo y realiza tareas según el tipo de evento.
 
