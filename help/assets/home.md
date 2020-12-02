@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # Guía de Assets
 
-Esta guía abarca todas [!DNL Experience Manager Assets] las tareas, como la creación, la gestión, la entrega y la optimización de recursos digitales.
+Esta guía abarca todas las tareas [!DNL Experience Manager Assets], como la creación, administración, entrega y optimización de recursos digitales.
 
 ## Artículos clave [!DNL Experience Manager]
 
@@ -40,7 +40,7 @@ Esta guía abarca todas [!DNL Experience Manager Assets] las tareas, como la cre
 | [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Obtenga información sobre cómo crear la implementación de Experience Manager. |
 | [Administración de la guía del usuario](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de Experience Manager. |
 | [Guía del usuario móvil](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con [!DNL Livefyre]. |
+| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía le muestra cómo compartir contenido generado por el usuario con [!DNL Livefyre]. |
 
 ## Recursos clave [!DNL Experience Manager]
 
