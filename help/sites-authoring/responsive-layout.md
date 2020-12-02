@@ -1,6 +1,6 @@
 ---
 title: Diseño adaptable
-seo-title: Diseño interactivo
+seo-title: Diseño adaptable
 description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
 seo-description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '1795'
+ht-degree: 92%
 
 ---
 
 
-# Diseño interactivo{#responsive-layout}
+# Diseño adaptable {#responsive-layout}
 
 AEM le permite disponer de un diseño interactivo para sus páginas mediante el uso del componente **Contenedor de diseño**.
 
-Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. The component is used in conjunction with the [**Layout **mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), which allows you to create and edit your responsive layout dependent on device.
+Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. Este componente se utiliza en combinación con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar el diseño interactivo en función del dispositivo.
 
 El contenedor de diseños:
 
@@ -38,15 +41,15 @@ El usuario puede utilizar el emulador para ver cómo se representará el conteni
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
-* [**Contenedor **](#adding-a-layout-container-and-its-content-edit-mode)de diseño, componente
+* Componente [**Contenedor de diseño**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   This component is available in the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. También se puede establecer como sistema de párrafos predeterminado en la página.
+   Este componente está disponible en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
 
-* [**Modo de diseño **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**Modo de diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
+   Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
 
-* [**Emulador **](#selecting-a-device-to-emulate)Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
+* [**Emulador**](#selecting-a-device-to-emulate) Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
 Estos mecanismos de cuadrícula interactiva le permiten:
 
@@ -56,15 +59,15 @@ Estos mecanismos de cuadrícula interactiva le permiten:
 * Ocultar componentes de diseños de dispositivo específicos.
 * Realizar el control de columnas.
 
-Según el proyecto, el contenedor de diseños se puede usar como sistema de párrafos predeterminado para las páginas o como componente disponible para agregarse a la página a través del navegador de componentes (o ambos).
+En función del proyecto, el contenedor de diseño se puede utilizar como sistema de párrafos predeterminado para las páginas o como componente disponible para añadirse a su página mediante el explorador de componentes (o ambos).
 
 >[!NOTE]
 >
->Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example when creating static HTML mock-ups for a future AEM site.
+>Adobe proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede entregar a los desarrolladores de interfaces de usuario, lo cual les permite usar la cuadrícula de AEM fuera de AEM como, por ejemplo, para crear maquetas HTML estáticas para un sitio de AEM futuro.
 
 >[!NOTE]
 >
->El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. Consulte [Configuración del diseño interactivo](/help/sites-administering/configuring-responsive-layout.md) para obtener más información.
 
 ## Definiciones de diseños, emulación de dispositivos y puntos de interrupción {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -72,7 +75,7 @@ Al crear el contenido de su sitio web desea asegurarse de que el contenido se mu
 
 AEM le permite definir diseños en función de la anchura del dispositivo:
 
-* El emulador le permite emular estos diseños en una serie de dispositivos. In addition to the device type, the orientation, selected by the **Rotate device** option, can impact the breakpoint selected as the width changes.
+* El emulador le permite emular estos diseños en una serie de dispositivos. Además del tipo de dispositivo, la orientación, que se selecciona mediante la opción **Rotar dispositivo**, puede afectar al punto de interrupción seleccionado a medida que cambia la anchura.
 * Los puntos de interrupción son puntos que separan las definiciones de diseño.
 
    * Definen efectivamente la anchura máxima (en píxeles) de cualquier dispositivo que utilice un diseño específico.
@@ -109,24 +112,29 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
    * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
+
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Seleccionar dispositivo**: le permite definir un dispositivo específico para emular de una lista (consulte el paso siguiente para obtener detalles)
+
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Al seleccionar un dispositivo específico para emular, puede efectuar cualquiera de las siguientes acciones:
 
    * Utilizar el icono Seleccionar dispositivo y seleccionarlo de un selector desplegable.
    * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
+
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
 1. Una vez que haya seleccionado un dispositivo específico, puede:
 
-   * See the active marker for the selected device, such as **iPad.**
-   * See the active marker for the appropriate [breakpoint](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) such as **Tablet.**
+   * Ver el marcador activo del dispositivo seleccionado; por ejemplo, **iPad.**
+   * Ver el marcador activo del [punto de interrupción](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) adecuado; por ejemplo, **Tableta.**
+
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
    * La línea discontinua azul representa el *pliegue* para el dispositivo seleccionado (en este caso, un **iPhone 6**).
+
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
    * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mostrar qué parte del contenido verá el usuario en el dispositivo antes de efectuar el desplazamiento.
@@ -145,9 +153,9 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 >[!NOTE]
 >
->Si todavía no está disponible, el **contenedor de diseño** debe [activarse específicamente para un sistema de párrafos o página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, usando el modo de [**diseño **](/help/sites-authoring/default-components-designmode.md)).
+>Si todavía no está disponible, el **contenedor de diseño** debe [activarse específicamente para un sistema de párrafos o página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, usando el modo de [**diseño**](/help/sites-authoring/default-components-designmode.md)).
 
-1. El **contenedor de diseños**[ está disponible como componente estándar en el navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). Puede arrastrarlo desde aquí hasta la ubicación deseada de la página. Después verá el marcador de posición **Arrastrar componentes aquí**.
+1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
 1. A continuación, puede agregar componentes al contenedor de diseño. Estos componentes albergarán el contenido real:
 
    ![screen_shot_2018-03-23at085500](assets/screen_shot_2018-03-23at085500.png)
@@ -164,7 +172,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
-   You need to select the **Parent** option.
+   Debe seleccionar la opción **Principal**.
 
    ![](do-not-localize/screen_shot_2018-03-23at085417.png)
 
@@ -175,9 +183,10 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
    * El contenedor de diseños anidado en la parte inferior se mostrará en negro.
    * El siguiente contenedor de diseños anidado se mostrará de color gris oscuro.
    * Cada contenedor sucesivo aparecerá en un tono más claro de gris.
+
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
-1. De esta forma se resaltará toda la cuadrícula con su contenido. The action toolbar will be shown, from where you can select an action such as **Delete.**
+1. De esta forma se resaltará toda la cuadrícula con su contenido. Se muestra la barra de herramientas de acciones, desde donde puede seleccionar una acción, como, por ejemplo, **Eliminar.**
 
    ![screen_shot_2018-03-23at085724](assets/screen_shot_2018-03-23at085724.png)
 
@@ -187,14 +196,14 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 >
 >Puede definir un diseño distinto para cada [punto de interrupción](#layout-definitions-device-emulation-and-breakpoints) (tal y como determinan el tipo y la orientación del dispositivo emulado).
 
-To configure the layout of a responsive grid implemented with the Layout Container you need to use the **Layout** mode.
+Para configurar el diseño de una cuadrícula interactiva implementada con el contenedor de diseño, debe usar el modo **Diseño**.
 
 El modo **Diseño** puede iniciarse de dos formas.
 
-* By using the [mode menu in the toolbar](/help/sites-authoring/author-environment-tools.md#page-modes) and choosing **Layout** mode
+* Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-authoring/author-environment-tools.md#page-modes) y seleccionando el modo **Diseño**.
 
-   * Select the **Layout** mode just as you would switch to **Edit** mode or **Targeting** mode.
-   * **El modo Diseño** permanece y no sale del modo **Presentación** hasta que se selecciona otro modo mediante el selector de modo.
+   * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
+   * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
 
 * Al [editar un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
@@ -226,30 +235,37 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
       El componente se volverá invisible (se puede restaurar desde la barra de herramientas del contenedor de diseño).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* In **Layout** mode you can tap/click on the **Drag components here** to select the entire component. Esto hará que se muestre la barra de herramientas de este modo.
+* En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Esto hará que se muestre la barra de herramientas de este modo.
 
    La barra de herramientas mostrará distintas opciones en función del estado del componente del diseño y de los componentes que pertenecen a él. Por ejemplo:
 
-   * **Principal** : seleccione el componente principal.
+   * **Principal**: seleccione el componente principal.
+
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes** ocultos: muestra todos o algunos componentes. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
+   * **Mostrar componentes**  ocultos: muestra todos o algunos componentes. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
+
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Revertir diseño** de punto de interrupción: vuelva al diseño predeterminado. Esto significa que no se impondrá ningún diseño personalizado.
+   * **Revertir diseño del punto de interrupción**: permite recuperar el diseño predeterminado. Es decir, no se aplicará ningún diseño personalizado.
+
    ![](do-not-localize/screen_shot_2018-03-23at091013.png)
 
-   * **Flotar a una nueva línea** : Mueva el componente hacia arriba en una posición si el espaciado lo permite.
+   * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
+
    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
-   * **Ocultar componente** : permite ocultar el componente actual.
+   * **Ocultar componente**: oculte el componente actual.
+
    ![](do-not-localize/screen_shot_2018-03-23at090834.png)
 
    >[!NOTE]
    >
    >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar los componentes:** permite seleccionar los componentes principales para mostrar la barra de herramientas de acciones con la opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
+   * **Mostrar**
+componentesSeleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
+**Mostrar** componentes ocultos, opción. En este ejemplo, hay dos componentes ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
