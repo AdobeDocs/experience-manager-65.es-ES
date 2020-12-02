@@ -19,11 +19,11 @@ Para poder extraer o registrar recursos, necesita tener acceso de escritura en e
 
 Esta función ayuda a evitar que otros usuarios anulen los cambios realizados por un autor en los que varios usuarios colaboran en la edición de flujos de trabajo entre equipos.
 
-## Comprobación de recursos {#checking-out-assets}
+## Comprobar recursos {#checking-out-assets}
 
-1. En la interfaz de usuario, seleccione el recurso que desee desproteger. [!DNL Assets] También puede seleccionar varios recursos para retirarlos.
+1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desee extraer. También puede seleccionar varios recursos para retirarlos.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**.
-La opción **[!UICONTROL Cierre]** de compra cambia a **[!UICONTROL Proteger]**.
+La opción **[!UICONTROL Cierre de compra]** cambia a **[!UICONTROL Proteger]**.
 Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inicie sesión como un usuario diferente. Aparece un símbolo de bloqueo en la miniatura del recurso que ha extraído.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -32,7 +32,7 @@ Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inic
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Puede hacer clic en Propiedades **[!UICONTROL de]** Vista para editar los metadatos del recurso bloqueado.
+   Puede hacer clic en **[!UICONTROL Propiedades de Vista]** para editar los metadatos del recurso bloqueado.
 
 1. Haga clic en **[!UICONTROL Editar]** para abrir el recurso en modo de edición.
 
@@ -44,14 +44,14 @@ Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inic
 
    También puede elegir anotar o publicar el recurso.
 
-1. Seleccione el recurso editado en la [!DNL Assets] interfaz y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en [!DNL Assets] y está disponible para su edición para otros usuarios.
+1. Seleccione el recurso editado en la interfaz [!DNL Assets] y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en [!DNL Assets] y está disponible para su edición por otros usuarios.
 
 ## Registro forzado {#forced-check-in}
 
 Los administradores pueden proteger recursos que otros usuarios han extraído.
 
-1. Inicie sesión como [!DNL Assets] administrador.
-1. En la interfaz de usuario, seleccione uno o varios recursos que hayan sido desprotegidos por otros usuarios. [!DNL Assets]
+1. Inicie sesión en [!DNL Assets] como administrador.
+1. En la interfaz de usuario [!DNL Assets] seleccione uno o varios recursos que hayan sido desprotegidos por otros usuarios.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
@@ -59,7 +59,7 @@ Los administradores pueden proteger recursos que otros usuarios han extraído.
 
 ## Prácticas recomendadas y limitaciones {#tips-limitations}
 
-* Es posible eliminar una *carpeta* que contenga archivos de recursos extraídos. Antes de eliminar una carpeta, asegúrese de que los usuarios no hayan extraído ningún recurso digital.
+* Es posible eliminar una *carpeta* que contiene archivos de recursos extraídos. Antes de eliminar una carpeta, asegúrese de que los usuarios no hayan extraído ningún recurso digital.
 
 >[!MORELIKETHIS]
 >
