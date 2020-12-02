@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# Aspectos básicos de &quot;Me gusta&quot; {#liking-essentials}
+# Aspectos esenciales de &quot;Me gusta&quot; {#liking-essentials}
 
-El componente &quot;Me gusta&quot;, una subclase [Tally](tally.md) , es una herramienta útil que permite a los miembros expresar una opinión positiva sobre un contenido en particular simplemente seleccionando el icono del corazón.
+El componente &quot;Me gusta&quot;, una subclase [tally](tally.md), es una herramienta útil que permite a los miembros expresar una opinión positiva sobre un contenido determinado simplemente seleccionando el icono del corazón.
 
-Se permite colocar varias instancias de un componente de &quot;Me gusta&quot; en la misma página; cada instancia debe configurarse con una `tally name` propiedad única.
+Se permite colocar varias instancias de un componente de &quot;Me gusta&quot; en la misma página; cada instancia debe configurarse con una propiedad `tally name` única.
 
 No se admite la publicación anónima de un &quot;Me gusta&quot;. Los visitantes del sitio deben registrarse e iniciar sesión para participar en el &quot;Me gusta&quot;. El visitante firmado (miembro) puede activarse y desactivarse en cualquier momento.
 
@@ -37,7 +37,7 @@ No se admite la publicación anónima de un &quot;Me gusta&quot;. Los visitantes
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
-   <td>Sí: las propiedades se pueden editar en <i>el </i>modo de diseño</td>
+   <td>Sí: las propiedades se pueden editar en el modo <i>de diseño </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -68,19 +68,19 @@ No se admite la publicación anónima de un &quot;Me gusta&quot;. Los visitantes
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
-### Acceso a voto registrado (UGC) {#accessing-posted-voting-ugc}
+### Acceso a Votación posteada (UGC) {#accessing-posted-voting-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación.
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con directrices de codificación SRP](accessing-ugc-with-srp.md) .
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
