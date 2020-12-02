@@ -20,29 +20,30 @@ ht-degree: 2%
 
 # Uso de clasificaciones {#using-ratings}
 
-El `Rating` componente se utiliza de forma independiente o junto con otras funciones de Comunidades. Este componente permite a los miembros de la comunidad con sesión iniciada expresar sus opiniones mediante la clasificación del contenido.
+El componente `Rating` se utiliza de forma independiente o junto con otras características de Communities. Este componente permite a los miembros de la comunidad con sesión iniciada expresar sus opiniones mediante la clasificación del contenido.
 
-## Adding a Rating to a Page {#adding-a-rating-to-a-page}
+## Añadir una clasificación en una página {#adding-a-rating-to-a-page}
 
-Para agregar un `Rating` componente a una página en modo de autor, ubique el componente `Communities / Rating` y arrástrelo a su lugar en una página, como una posición relativa a la función que deben clasificar los miembros.
+Para agregar un componente `Rating` a una página en modo de autor, localice el componente `Communities / Rating` y arrástrelo a su lugar en una página, como una posición relativa a la función que los miembros deben clasificar.
 
-Para obtener la información necesaria, visite [Communities Components Basics](basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
 
-Cuando se incluyen las bibliotecas [](rating-basics.md#essentials-for-client-side) requeridas del lado del cliente, así es como aparecerá el `Rating` componente.
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](rating-basics.md#essentials-for-client-side), así es como aparecerá el componente `Rating`.
 
 ![clasificación](assets/rating.png)
 
 ## Configuración de clasificación {#configuring-rating}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Rating` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Rating` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
-En la ficha **[!UICONTROL Textos y etiquetas]** , especifique el identificador interno de la clasificación.
+En la ficha **[!UICONTROL Textos y etiquetas]** debe especificar el identificador interno de la clasificación.
 
 ![nombre_de_talyname](assets/tallyname.png)
 
-**[!UICONTROL Tally Name]**(*Requerido*) Un nombre sencillo para el `Rating` que identifica de forma exclusiva esta instancia. Debe ser un nombre de nodo válido para el repositorio.
+**[!UICONTROL Tally Name]**
+(*Requerido*) Un nombre sencillo para la instancia  `Rating` que identifica exclusivamente a esta instancia. Debe ser un nombre de nodo válido para el repositorio.
 
 ## Experiencia de Visitante del sitio {#site-visitor-experience}
 
