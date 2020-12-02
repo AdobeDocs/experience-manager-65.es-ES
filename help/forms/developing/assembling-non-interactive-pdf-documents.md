@@ -35,25 +35,25 @@ A los efectos de este análisis, supongamos que se utiliza el siguiente document
  </DDX>
 ```
 
-En este documento DDX, observe que al atributo de origen se le asigna el valor `inDoc`. En situaciones en las que solo se pasa un documento PDF de entrada al servicio Compilador y se devuelve un documento PDF, y se invoca la `invokeOneDocument` operación, asigne el valor `inDoc` al atributo de origen PDF. Al invocar la `invokeOneDocument` operación, el `inDoc` valor es una clave predefinida que debe especificarse en el documento DDX.
+Dentro de este documento DDX, observe que al atributo de origen se le asigna el valor `inDoc`. En situaciones en las que solo se pasa un documento PDF de entrada al servicio Ensamblador y se devuelve un documento PDF y se invoca la operación `invokeOneDocument`, asigne el valor `inDoc` al atributo de origen PDF. Al invocar la operación `invokeOneDocument`, el valor `inDoc` es una clave predefinida que debe especificarse en el documento DDX.
 
-Por el contrario, al pasar dos o más documentos PDF de entrada al servicio Ensamblador, puede invocar la `invokeDDX` operación. En este caso, asigne el nombre de archivo del documento PDF de entrada al `source` atributo.
+Por el contrario, al pasar dos o más documentos PDF de entrada al servicio Ensamblador, puede invocar la operación `invokeDDX`. En este caso, asigne el nombre de archivo del documento PDF de entrada al atributo `source`.
 
-Este documento DDX contiene el `NoXFA` elemento , que indica al servicio Ensamblador que devuelva un documento PDF no interactivo.
+Este documento DDX contiene el elemento `NoXFA`, que indica al servicio Ensamblador que devuelva un documento PDF no interactivo.
 
-El servicio Ensamblador puede montar documentos PDF no interactivos sin que el servicio Output forme parte de la instalación de formularios AEM si el documento PDF de entrada se basa en un formulario de Acrobat o en un formulario XFA estático. Sin embargo, si el documento PDF de entrada es un formulario XFA dinámico, el servicio Output debe formar parte de la instalación de formularios AEM. Si el servicio Output no forma parte de la instalación de formularios AEM cuando se monta un formulario XFA dinámico, se genera una excepción. Consulte [Creación de flujos](/help/forms/developing/creating-document-output-streams.md)de salida de Documento.
-
->[!NOTE]
->
->Antes de leer esta sección, se recomienda familiarizarse con el ensamblado de documentos PDF mediante el servicio Ensamblador. En esta sección no se analizan los conceptos, como la creación de un objeto de colección que contiene documentos de entrada o el aprendizaje de cómo extraer los resultados del objeto de colección devuelto. (Consulte Compilación [programada de Documentos](/help/forms/developing/programmatically-assembling-pdf-documents.md)PDF).
+El servicio Ensamblador puede montar documentos PDF no interactivos sin que el servicio Output forme parte de la instalación de formularios AEM si el documento PDF de entrada se basa en un formulario Acrobat o en un formulario XFA estático. Sin embargo, si el documento PDF de entrada es un formulario XFA dinámico, el servicio Output debe formar parte de la instalación de AEM formularios. Si el servicio Output no forma parte de la instalación de formularios AEM cuando se monta un formulario XFA dinámico, se genera una excepción. Consulte [Creación de flujos de salida de Documento](/help/forms/developing/creating-document-output-streams.md).
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio de ensamblador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Antes de leer esta sección, se recomienda familiarizarse con el ensamblado de documentos PDF mediante el servicio Ensamblador. En esta sección no se analizan los conceptos, como la creación de un objeto de colección que contiene documentos de entrada o el aprendizaje de cómo extraer los resultados del objeto de colección devuelto. (Consulte [Compilación programada de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)).
 
 >[!NOTE]
 >
->Para obtener más información sobre un documento DDX, consulte [Servicio de ensamblador y Referencia](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
+>Para obtener más información sobre el servicio de ensamblador, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
+>[!NOTE]
+>
+>Para obtener más información sobre un documento DDX, consulte [Servicio de ensamblador y Referencia DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -76,8 +76,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
-* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms.
 
@@ -87,7 +87,7 @@ Antes de realizar una operación de ensamblador mediante programación, debe cre
 
 **Hacer referencia a un documento DDX existente**
 
-Se debe hacer referencia a un documento DDX para montar un documento PDF. Este documento DDX debe contener el `NoXFA` elemento , que indica al servicio Ensamblador que devuelva un documento PDF no interactivo.
+Se debe hacer referencia a un documento DDX para montar un documento PDF. Este documento DDX debe contener el elemento `NoXFA`, que indica al servicio Ensamblador que devuelva un documento PDF no interactivo.
 
 **Referencia a un documento PDF interactivo**
 
@@ -99,11 +99,11 @@ Puede definir opciones en tiempo de ejecución que controlen el comportamiento d
 
 **Compilación del documento PDF**
 
-Después de crear el cliente del servicio Ensamblador, hacer referencia al documento DDX, hacer referencia a un documento PDF interactivo y definir las opciones de tiempo de ejecución, puede invocar la `invokeOneDocument` operación. Dado que solo se pasa un documento PDF de entrada al servicio de ensamblador y se devuelve un solo documento, puede utilizar la `invokeOneDocument` operación en lugar de la `invokeDDX` operación.
+Después de crear el cliente del servicio Ensamblador, hacer referencia al documento DDX, hacer referencia a un documento PDF interactivo y definir las opciones de tiempo de ejecución, puede invocar la operación `invokeOneDocument`. Dado que solo se pasa un documento PDF de entrada al servicio Ensamblador y se devuelve un solo documento, puede utilizar la operación `invokeOneDocument` en lugar de la operación `invokeDDX`.
 
 **Guardar el documento PDF no interactivo**
 
-Si solo se pasa un documento PDF al servicio Ensamblador, el servicio Ensamblador devuelve un solo documento en lugar de un objeto de colección. Es decir, al invocar la `invokeOneDocument` operación, se devuelve un solo documento. Dado que el documento DDX al que se hace referencia en esta sección contiene instrucciones para crear un documento PDF no interactivo, el servicio Ensamblador devuelve un documento PDF no interactivo que se puede guardar como archivo PDF.
+Si solo se pasa un documento PDF al servicio Ensamblador, el servicio Ensamblador devuelve un solo documento en lugar de un objeto de colección. Es decir, al invocar la operación `invokeOneDocument`, se devuelve un solo documento. Dado que el documento DDX al que se hace referencia en esta sección contiene instrucciones para crear un documento PDF no interactivo, el servicio Ensamblador devuelve un documento PDF no interactivo que se puede guardar como archivo PDF.
 
 **Consulte también**
 
@@ -123,42 +123,42 @@ Monte un documento PDF no interactivo mediante la API de servicio de ensamblador
 
 1. Cree un cliente de ensamblador.
 
-   * Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión.
-   * Cree un `AssemblerServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un `java.io.FileInputStream` objeto que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
-   * Cree un `com.adobe.idp.Document` objeto utilizando su constructor y pasando el `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Haga referencia a un documento PDF interactivo.
 
-   * Cree un `java.io.FileInputStream` objeto utilizando su constructor y pasando la ubicación de un documento PDF interactivo.
-   * Cree un `com.adobe.idp.Document` objeto y pase el `java.io.FileInputStream` objeto que contiene el documento PDF. Este `com.adobe.idp.Document` objeto se pasa al `invokeOneDocument` método .
+   * Cree un objeto `java.io.FileInputStream` utilizando su constructor y pasando la ubicación de un documento PDF interactivo.
+   * Cree un objeto `com.adobe.idp.Document` y pase el objeto `java.io.FileInputStream` que contiene el documento PDF. Este objeto `com.adobe.idp.Document` se pasa al método `invokeOneDocument`.
 
 1. Configure las opciones de tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` objeto que almacene opciones de tiempo de ejecución mediante su constructor.
-   * Configure las opciones de tiempo de ejecución para cumplir los requisitos comerciales invocando un método que pertenece al `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, invoque el `AssemblerOptionSpec` método del `setFailOnError` objeto y pase `false`.
+   * Cree un objeto `AssemblerOptionSpec` que almacene las opciones de tiempo de ejecución mediante su constructor.
+   * Configure las opciones de tiempo de ejecución para satisfacer los requisitos comerciales invocando un método que pertenece al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, invoque el método `AssemblerOptionSpec` del objeto `setFailOnError` y pase `false`.
 
 1. Monte el documento PDF.
 
-   Invoque el `AssemblerServiceClient` método del `invokeOneDocument` objeto y pase los valores siguientes:
+   Invoque el método `AssemblerServiceClient` del objeto `invokeOneDocument` y pase los siguientes valores:
 
-   * Un `com.adobe.idp.Document` objeto que representa el documento DDX. Asegúrese de que este documento DDX contenga el valor `inDoc` del elemento de origen PDF.
-   * Un `com.adobe.idp.Document` objeto que contiene el documento PDF interactivo.
-   * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos.
+   * Un objeto `com.adobe.idp.Document` que representa el documento DDX. Asegúrese de que este documento DDX contenga el valor `inDoc` para el elemento de origen PDF.
+   * Un objeto `com.adobe.idp.Document` que contiene el documento PDF interactivo.
+   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución, incluido el nivel predeterminado de fuente y registro de trabajos.
 
-   El `invokeOneDocument` método devuelve un `com.adobe.idp.Document` objeto que contiene un documento PDF no interactivo.
+   El método `invokeOneDocument` devuelve un objeto `com.adobe.idp.Document` que contiene un documento PDF no interactivo.
 
 1. Guarde el documento PDF no interactivo.
 
-   * Cree un `java.io.File` objeto y asegúrese de que la extensión del nombre de archivo sea .pdf.
-   * Invocar el `Document` método del `copyToFile` objeto para copiar el contenido del `Document` objeto en el archivo. Asegúrese de utilizar el `Document` objeto que devolvió el `invokeOneDocument` método.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión del nombre de archivo sea .pdf.
+   * Invoque el método `Document` del objeto `copyToFile` para copiar el contenido del objeto `Document` en el archivo. Asegúrese de utilizar el objeto `Document` que devolvió el método `invokeOneDocument`.
 
 * &quot;Inicio rápido (modo SOAP): Compilación de un documento PDF no interactivo mediante la API de Java&quot;
 
-## Compilación de un documento PDF no interactivo mediante la API de servicio web {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
+## Compilación de un documento PDF no interactivo mediante la API de servicio Web {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
 Monte un documento PDF no interactivo mediante la API de servicio de ensamblador (servicio web):
 
@@ -168,14 +168,14 @@ Monte un documento PDF no interactivo mediante la API de servicio de ensamblador
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` por la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que aloja AEM Forms.
 
 1. Cree un cliente de ensamblador.
 
-   * Cree un `AssemblerServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
-   * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `AssemblerServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
-   * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `AssemblerServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio.
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `AssemblerServiceClient.Endpoint.Binding`. Convierta el valor devuelto a `BasicHttpBinding`.
+   * Establezca el campo `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
       * Asigne el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -185,41 +185,41 @@ Monte un documento PDF no interactivo mediante la API de servicio de ensamblador
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento DDX.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
-   * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto. Pase la matriz de bytes, la posición inicial y la longitud del flujo para leerlos.
-   * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
+   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento DDX.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read`. Pase la matriz de bytes, la posición inicial y la longitud del flujo para leerlos.
+   * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
 
 1. Haga referencia a un documento PDF interactivo.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento PDF de entrada. Este `BLOB` objeto se pasa al `invokeOneDocument` como argumento.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF de entrada y el modo en el que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
-   * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto. Pase la matriz de bytes, la posición inicial y la longitud del flujo para leerlos.
-   * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
+   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento PDF de entrada. Este objeto `BLOB` se pasa a `invokeOneDocument` como argumento.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF de entrada y el modo en el que se abre el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read`. Pase la matriz de bytes, la posición inicial y la longitud del flujo para leerlos.
+   * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
 
 1. Configure las opciones de tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` objeto que almacene opciones de tiempo de ejecución mediante su constructor.
-   * Configure las opciones de tiempo de ejecución para cumplir los requisitos comerciales asignando un valor a un miembro de datos que pertenece al `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, asigne `false` al miembro de datos del `AssemblerOptionSpec` objeto `failOnError` .
+   * Cree un objeto `AssemblerOptionSpec` que almacene las opciones de tiempo de ejecución mediante su constructor.
+   * Configure las opciones de tiempo de ejecución para satisfacer los requisitos comerciales asignando un valor a un miembro de datos que pertenece al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, asigne `false` al miembro de datos `AssemblerOptionSpec` del objeto `failOnError`.
 
 1. Monte el documento PDF.
 
-   Invoque el `AssemblerServiceClient` método del `invokeOneDocument` objeto y pase los valores siguientes:
+   Invoque el método `AssemblerServiceClient` del objeto `invokeOneDocument` y pase los siguientes valores:
 
-   * Un `BLOB` objeto que representa el documento DDX
-   * Un `BLOB` objeto que representa el documento PDF interactivo
-   * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución
+   * Un objeto `BLOB` que representa el documento DDX
+   * Un objeto `BLOB` que representa el documento PDF interactivo
+   * Un objeto `AssemblerOptionSpec` que especifica opciones de tiempo de ejecución
 
-   El `invokeOneDocument` método devuelve un `BLOB` objeto que contiene un documento PDF no interactivo.
+   El método `invokeOneDocument` devuelve un objeto `BLOB` que contiene un documento PDF no interactivo.
 
 1. Guarde el documento PDF no interactivo.
 
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF no interactivo y el modo en el que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `BLOB` objeto devuelto por el `invokeOneDocument` método. Rellene la matriz de bytes obteniendo el valor del `BLOB` campo del `MTOM` objeto.
-   * Cree un `System.IO.BinaryWriter` objeto invocando su constructor y pasando el `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el `System.IO.BinaryWriter` método `Write` del objeto y pasando la matriz de bytes.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento PDF no interactivo y el modo en el que se abre el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `BLOB` que el método `invokeOneDocument` devolvió. Rellene la matriz de bytes obteniendo el valor del campo `BLOB` del objeto `MTOM`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
 * &quot;Inicio rápido (MTOM): Compilación de un documento PDF no interactivo mediante la API de servicio web&quot;.
 
