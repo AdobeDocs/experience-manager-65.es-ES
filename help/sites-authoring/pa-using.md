@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 translation-type: tm+mt
 source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 93%
 
 ---
 
@@ -61,7 +64,7 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 >
 >Cuando un árbol de páginas contiene elementos secundarios asociados a distintas configuraciones de la nube de Adobe Analytics, no puede configurar las columnas de datos disponibles para las páginas.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
+1. En la Vista de Lista, utilice los selectores de vista (derecha de la barra de herramientas), seleccione **Configuración de Vista** y, a continuación, **Añada Datos de análisis personalizados**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -73,14 +76,14 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 
 ### Abrir la información del contenido desde Sitios {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+Abra [Content Insight](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
 
 1. En la consola de Sitios, seleccione la página en la cual quiera ver la información del contenido.
 1. En la barra de herramientas, haga clic en el icono de análisis y recomendaciones.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Análisis visible desde el editor de páginas (mapa de actividad) {#analytics-visible-from-the-page-editor-activity-map}
+## Análisis visible desde el editor de páginas (mapa de actividad)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
