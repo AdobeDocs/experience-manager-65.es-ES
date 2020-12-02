@@ -12,6 +12,9 @@ discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
@@ -34,9 +37,9 @@ Para superponer comentarios, deberá:
 
 **Correos electrónicos de notificaciones de superposición**
 
-Supongamos que desea personalizar el mensaje de las notificaciones por correo electrónico, puede [superponer](/help/communities/client-customize.md#overlays) las plantillas en **/libs/settings/community/templates/email/html**.
+Supongamos que desea personalizar el mensaje de las notificaciones por correo electrónico, puede hacerlo [superponiendo](/help/communities/client-customize.md#overlays) las plantillas en **/libs/settings/community/templates/email/html**.
 
-Por ejemplo, para modificar las notificaciones de mensajes de correo electrónico de menciones (para un componente de comunidades específicas en el que se crea ugc), agregue una condición **if** para la **mención** verbo en las plantillas de los componentes para los que habilitó la compatibilidad con **@mentions** .
+Por ejemplo, para modificar las notificaciones de correo electrónico de menciones (para un componente de comunidades específicas en el que se crea ugc) agregue una condición **if** para verb **uncia** en las plantillas de los componentes para los que habilitó la compatibilidad con **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\
