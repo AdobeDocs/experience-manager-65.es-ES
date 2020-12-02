@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# Descarga de trabajos{#offloading-jobs}
+# Trabajos de descarga{#offloading-jobs}
 
 ## Introducción {#introduction}
 
 La descarga distribuye tareas de procesamiento entre instancias de Experience Manager en una topología. Con la descarga, puede utilizar instancias de Experience Manager específicas para realizar tipos de procesamiento específicos. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
 
-La descarga se basa en las funciones [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) y Sling JobManager. Para utilizar la descarga, agregue clústeres de Experience Manager a una topología e identifique los temas de trabajo que procesa el clúster. Los grupos constan de una o varias instancias de Experience Manager, de modo que una sola instancia se considera un clúster.
+La descarga se basa en las características [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) y Sling JobManager. Para utilizar la descarga, agregue clústeres de Experience Manager a una topología e identifique los temas de trabajo que procesa el clúster. Los grupos constan de una o varias instancias de Experience Manager, de modo que una sola instancia se considera un clúster.
 
 Para obtener información sobre cómo agregar instancias a una topología, consulte [Administración de topologías](/help/sites-deploying/offloading.md#administering-topologies).
 
-### Distribución de trabajos {#job-distribution}
+### Distribución de trabajo {#job-distribution}
 
 Sling JobManager y JobConsumer permiten la creación de trabajos procesados en una topología:
 
@@ -40,9 +40,9 @@ Cuando JobManager crea un trabajo, el marco de descargas selecciona un clúster 
 * El clúster debe incluir una o varias instancias que ejecuten un JobConsumer registrado para el tema del trabajo.
 * El tema debe estar habilitado para al menos una instancia del clúster.
 
-Consulte [Configuración del consumo](/help/sites-deploying/offloading.md#configuring-topic-consumption) de temas para obtener información sobre cómo refinar la distribución de trabajos.
+Consulte [Configuración del consumo del tema](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obtener información sobre cómo refinar la distribución de trabajos.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-189](assets/chlimage_1-109.png)
 
 Cuando el marco de descarga selecciona un clúster para ejecutar un trabajo y el clúster está compuesto de varias instancias, Sling Distribution determina qué instancia del clúster ejecuta el trabajo.
 
@@ -104,11 +104,11 @@ Utilice el procedimiento siguiente para abrir la página Administración de topo
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Configuración de la pertenencia a la topología {#configuring-topology-membership}
+### Configuración de la pertenencia a topología {#configuring-topology-membership}
 
 El servicio de detección basado en recursos de Apache Sling se ejecuta en cada instancia para controlar cómo interactúan las instancias de Experience Manager con una topología.
 
-El servicio de detección envía solicitudes POST periódicas (latidos) a los servicios de Topology Connector para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista de permitidos de direcciones IP o nombres de host que pueden unirse a la topología:
+El servicio de detección envía solicitudes de POST periódicas (latidos) a los servicios de Topology Connector para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista de permitidos de direcciones IP o nombres de host que pueden unirse a la topología:
 
 * Para unir una instancia a una topología, especifique la dirección URL del servicio Conector de topología del miembro raíz.
 * Para habilitar una instancia para que se una a una topología, agregue la instancia a la lista de permitidos del servicio Topology Connector del miembro raíz.
@@ -148,9 +148,9 @@ Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>lista de permitidos del conector de topología</td>
+   <td>Lista de permitidos del conector de topología</td>
    <td>topologíaConnectorWhitelist</td>
-   <td>lista de direcciones IP o nombres de host que permite el servicio Conector de topología local en la topología. </td>
+   <td>Lista de direcciones IP o nombres de host que permite el servicio Conector de topología local en la topología. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
   </tr>
   <tr>
@@ -176,7 +176,7 @@ Realice el siguiente procedimiento en el miembro raíz de la topología. El proc
 1. Haga clic en Configurar servicio de detección.
 1. Para cada miembro de la topología, agregue un elemento a la propiedad de lista de permitidos Conector de topología y especifique el nombre de host o la dirección IP del miembro de la topología.
 
-## Configuración del consumo de temas {#configuring-topic-consumption}
+## Configuración del consumo del tema {#configuring-topic-consumption}
 
 Utilice el navegador de descarga para configurar el consumo de temas para las instancias de Experience Manager en la topología. Para cada instancia, puede especificar los temas que consume. Por ejemplo, para configurar la topología de modo que solo una instancia consuma temas de un tipo específico, deshabilite el tema en todas las instancias excepto en una.
 
@@ -201,7 +201,7 @@ Los trabajos se distribuyen entre las instancias que tienen activado el tema aso
    * Deshabilitado: Esta instancia no consume trabajos de este tema.
    * Exclusivo: Esta instancia solo consume trabajos de este tema.
 
-   **Nota:** Al seleccionar Exclusivo para un tema, todos los demás temas se establecen automáticamente como Deshabilitado.
+   **Nota:** Cuando selecciona Exclusivo para un tema, todos los demás temas se definen automáticamente como Desactivado.
 
 ### Consumidores de trabajos instalados {#installed-job-consumers}
 
@@ -220,28 +220,28 @@ Hay varias implementaciones de JobConsumer instaladas con Experience Manager. Lo
 
 El servicio Apache Sling Job Consumer Manager proporciona propiedades de lista de permitidos y lista de bloqueados de temas. Configure estas propiedades para habilitar o deshabilitar el procesamiento de temas específicos en una instancia de Experience Manager.
 
-**Nota:** Si la instancia pertenece a una topología, también puede utilizar el Explorador de descargas en cualquier equipo de la topología para habilitar o deshabilitar temas.
+**Nota:** Si la instancia pertenece a una topología, también puede utilizar el navegador de descarga en cualquier equipo de la topología para habilitar o deshabilitar temas.
 
-La lógica que crea la lista de los temas habilitados primero permite todos los temas que están en la lista de permitidos y, a continuación, elimina los temas que están en la lista de bloqueados. De forma predeterminada, todos los temas están activados (el valor de lista de permitidos es `*`) y no hay temas desactivados (la lista de bloqueados no tiene valor).
+La lógica que crea la lista de los temas habilitados primero permite todos los temas que están en la lista de permitidos y, a continuación, elimina los temas que están en la lista de bloqueados. De forma predeterminada, todos los temas están activados (el valor de lista de permitidos es `*`) y no hay temas deshabilitados (la lista de bloqueados no tiene valor).
 
-Utilice la consola web o un `sling:OsgiConfig` nodo para configurar las siguientes propiedades. Para `sling:OsgiConfig` los nodos, el PID del servicio Job Consumer Manager es org.apache.sling.evento.impl.job.JobConsumerManager.
+Utilice la consola web o un nodo `sling:OsgiConfig` para configurar las siguientes propiedades. Para los nodos `sling:OsgiConfig`, el PID del servicio de Job Consumer Manager es org.apache.sling.evento.impl.job.JobConsumerManager.
 
 | Nombre de propiedad en la consola web | ID de OSGi | Descripción |
 |---|---|---|
-| lista de permitidos del tema | job.consumermanager.whitelist | lista de temas que procesa el servicio local de JobManager. El valor predeterminado de &amp;ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
-| lista de bloqueados del tema | job.consumermanager.blacklist | lista de temas que no se procesan en el servicio local de JobManager. |
+| Lista de permitidos del tema | job.consumermanager.whitelist | Lista de temas que procesa el servicio local de JobManager. El valor predeterminado de &amp;ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
+| Lista de bloqueados del tema | job.consumermanager.blacklist | Lista de temas que no se procesan en el servicio local de JobManager. |
 
-## Creación De Agentes De Replicación Para Descarga {#creating-replication-agents-for-offloading}
+## Creación de Agentes de Replicación para Descarga {#creating-replication-agents-for-offloading}
 
 El marco de descarga utiliza la replicación para transportar recursos entre el autor y el trabajador. El marco de descarga crea automáticamente agentes de replicación cuando las instancias se unen a la topología. Los agentes se crean con valores predeterminados. Debe cambiar manualmente la contraseña que utilizan los agentes para la autenticación.
 
 >[!CAUTION]
 >
->Un problema conocido con los agentes de replicación generados automáticamente requiere que cree manualmente nuevos agentes de replicación. Siga el procedimiento que se describe en [Problemas al utilizar los agentes](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) de replicación generados automáticamente antes de crear los agentes para la descarga.
+>Un problema conocido con los agentes de replicación generados automáticamente requiere que cree manualmente nuevos agentes de replicación. Siga el procedimiento que se describe en [Problemas al utilizar los agentes de replicación generados automáticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) antes de crear los agentes para la descarga.
 
 Cree los agentes de replicación que transportan cargas de trabajo entre instancias para la descarga. La siguiente ilustración muestra los agentes que se deben descargar del autor a una instancia de trabajo. El autor tiene un Sling ID de 1 y la instancia de trabajo tiene un Sling ID de 2:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 Esta configuración requiere los tres agentes siguientes:
 
@@ -261,13 +261,13 @@ Utilice un formato específico para la propiedad ***Name*** de los agentes de re
 
 **Asignación de nombres al agente saliente en la instancia de creación:**
 
-`offloading_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
+`offloading_<slingid>`, donde  `<slingid>` es el Sling ID de la instancia de trabajo.
 
 Ejemplo: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Asignación de un nombre al agente inverso en la instancia de creación:**
 
-`offloading_reverse_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
+`offloading_reverse_<slingid>`, donde  `<slingid>` es el Sling ID de la instancia de trabajo.
 
 Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -277,7 +277,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creación del agente saliente {#creating-the-outgoing-agent}
 
-1. Cree un agente **de replicación** en el autor. (Consulte la [documentación de los agentes](/help/sites-deploying/replication.md)de replicación). Especifique cualquier **título**. El **nombre** debe seguir la convención de nombre.
+1. Cree un **Agente de replicación** en el autor. (Consulte la [documentación de los agentes de replicación](/help/sites-deploying/replication.md)). Especifique cualquier **Título**. El **Nombre** debe seguir la convención de nombres.
 1. Cree el agente con las siguientes propiedades:
 
    | Propiedad | Value |
@@ -291,23 +291,23 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creación del agente inverso {#creating-the-reverse-agent}
 
-1. Cree un agente **de replicación** inversa en el autor. (Consulte la [documentación de los agentes](/help/sites-deploying/replication.md)de replicación.) Especifique cualquier **título**. El **nombre** debe seguir la convención de nombre.
+1. Cree un **Agente de replicación inversa** en el autor. (Consulte la [documentación de los agentes de replicación](/help/sites-deploying/replication.md)). Especifique cualquier **Título**. El **Nombre** debe seguir la convención de nombres.
 1. Cree el agente con las siguientes propiedades:
 
-   | Propiedad | Value |
+   | Propiedad | Valor |
    |---|---|
    | Configuración > Tipo de serialización | Predeterminado |
    | Transporte > URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transporte > Usuario de transporte | Usuario de replicación en instancia de destinatario |
    | Transporte > Contraseña de transporte | Contraseña de usuario de replicación en la instancia de destinatario |
-   | Extended > Método HTTP | OBTENER |
+   | Extended > Método HTTP | GET |
 
 ### Creación del agente de salida {#creating-the-outbox-agent}
 
-1. Cree un agente **de** replicación en la instancia de trabajo. (Consulte la [documentación de los agentes](/help/sites-deploying/replication.md)de replicación.) Especifique cualquier **título**. El **nombre** debe ser `offloading_outbox`.
+1. Cree un **Agente de replicación** en la instancia de trabajo. (Consulte la [documentación de los agentes de replicación](/help/sites-deploying/replication.md)). Especifique cualquier **Título**. El **Nombre** debe ser `offloading_outbox`.
 1. Cree el agente con las siguientes propiedades.
 
-   | Propiedad | Value |
+   | Propiedad | Valor |
    |---|---|
    | Configuración > Tipo de serialización | Predeterminado |
    | Transporte > URI de transporte | repo://var/replication/outbox |
@@ -356,4 +356,4 @@ The following procedure assumes the following characteristics for the offloading
 
 Además de los detalles presentados en esta página, también puede leer lo siguiente:
 
-* Para obtener información sobre el uso de las API de Java para crear trabajos y para los consumidores de trabajos, consulte [Creación y consumo de trabajos para la descarga](/help/sites-developing/dev-offloading.md).
+* Para obtener información sobre el uso de las API de Java para crear trabajos y para los consumidores de trabajos, consulte [Creación y consumo de trabajos para descarga](/help/sites-developing/dev-offloading.md).
