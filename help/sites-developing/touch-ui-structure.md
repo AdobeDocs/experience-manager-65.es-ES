@@ -1,8 +1,8 @@
 ---
-title: Estructura de la IU táctil de AEM
-seo-title: Estructura de la IU táctil de AEM
-description: La IU táctil, tal como se implementa en AEM, tiene varios principios subyacentes y está formada por varios elementos clave
-seo-description: La IU táctil, tal como se implementa en AEM, tiene varios principios subyacentes y está formada por varios elementos clave
+title: Estructura de la IU táctil AEM
+seo-title: Estructura de la IU táctil AEM
+description: La IU táctil, tal como se ha implementado en AEM, tiene varios principios subyacentes y está formada por varios elementos clave
+seo-description: La IU táctil, tal como se ha implementado en AEM, tiene varios principios subyacentes y está formada por varios elementos clave
 uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 1%
 
 ---
 
 
-# Estructura de la IU táctil de AEM{#structure-of-the-aem-touch-enabled-ui}
+# Estructura de la IU táctil AEM{#structure-of-the-aem-touch-enabled-ui}
 
-La IU táctil de AEM tiene varios principios subyacentes y está formada por varios elementos clave:
+La IU táctil AEM tiene varios principios subyacentes y está formada por varios elementos clave:
 
 ## Consolas {#consoles}
 
 ### Diseño básico y cambio de tamaño {#basic-layout-and-resizing}
 
-La interfaz de usuario se ocupa de los dispositivos móviles y de escritorio, pero en lugar de crear dos estilos, Adobe ha decidido utilizar un estilo que funcione para todas las pantallas y dispositivos.
+La interfaz de usuario se ocupa de los dispositivos móviles y de escritorio, pero en lugar de crear dos estilos, el Adobe ha decidido utilizar un estilo que funcione para todas las pantallas y dispositivos.
 
-Todos los módulos utilizan el mismo diseño básico; en AEM, esto se puede ver como:
+Todos los módulos utilizan el mismo diseño básico, en AEM esto puede verse como:
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -41,8 +44,8 @@ Por ejemplo, cuando la resolución es inferior a 1024 px (como en un dispositivo
 
 La barra de encabezado muestra elementos globales que incluyen:
 
-* el logotipo y el producto o solución específicos que está utilizando actualmente; para AEM, esto también forma un vínculo a la navegación global
-* Búsqueda
+* el logotipo y el producto o solución específicos que está utilizando actualmente; para AEM esto también forma un vínculo a la navegación global
+* Búsqueda  
 * icono para acceder a los recursos de ayuda
 * icono para acceder a otras soluciones
 * un indicador (y acceso a) cualquier alerta o elemento de la Bandeja de entrada que le esté esperando
@@ -68,7 +71,7 @@ El carril izquierdo se puede abrir u ocultar según sea necesario para mostrar:
 * **Referencias**
 * **Filtro**
 
-El valor predeterminado es Solo **** contenido (carril oculto).
+El valor predeterminado es **Solo contenido** (carril oculto).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -84,11 +87,11 @@ El marco de contenido se encuentra en la sección derecha de la ventana, debajo 
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Marco del editor {#editor-frame}
+### Marco de editor {#editor-frame}
 
 El marco del editor obtiene las funciones de edición.
 
-El marco del editor es un contenedor (abstracto) para todos los elementos *de creación de* páginas. Vive sobre el marco de contenido e incluye:
+El marco del editor es un contenedor (abstracto) para todos los *elementos de creación de páginas*. Vive sobre el marco de contenido e incluye:
 
 * barra de herramientas superior
 * panel lateral
@@ -140,7 +143,7 @@ Una capa es un paquete de funcionalidad independiente que se puede activar para:
 
 Las capas proporcionan una funcionalidad sofisticada para toda la página, en lugar de acciones específicas para un componente individual.
 
-AEM viene con varias capas ya implementadas para la creación de páginas; por ejemplo, editar, previsualizar y anotar.
+AEM viene con varias capas ya implementadas para la creación de páginas; por ejemplo, editar, previsualización o anotar.
 
 >[!NOTE]
 >
@@ -154,9 +157,9 @@ El mezclador de capas está disponible como una lista desplegable desde la barra
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Component Toolbar {#component-toolbar}
+### Barra de herramientas del componente {#component-toolbar}
 
-Cada instancia de un componente mostrará su barra de herramientas cuando se haga clic en él (ya sea una vez o con un doble clic lento). La barra de herramientas contiene las acciones específicas (por ejemplo, copiar, pegar, abrir-editor) disponibles para la instancia de componente (editable) en la página.
+Cada instancia de un componente mostrará su barra de herramientas cuando se haga clic en él (una vez o con un doble lento al hacer clic). La barra de herramientas contiene las acciones específicas (por ejemplo, copiar, pegar, abrir-editor) disponibles para la instancia de componente (editable) en la página.
 
 Según el espacio disponible, las barras de herramientas del componente se colocan en la esquina superior o inferior derecha del componente correspondiente.
 
@@ -164,7 +167,7 @@ Según el espacio disponible, las barras de herramientas del componente se coloc
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre los conceptos relacionados con la IU táctil, consulte el artículo [Conceptos de la IU](/help/sites-developing/touch-ui-concepts.md)táctil de AEM.
+Para obtener más información sobre los conceptos relacionados con la IU táctil, consulte el artículo [Conceptos de la IU táctil AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obtener más información técnica, consulte el conjunto [de documentación de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) JS para el editor de páginas táctil.
+Para obtener más información técnica, consulte el [conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.
 
