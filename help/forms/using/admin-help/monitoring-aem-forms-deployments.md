@@ -1,8 +1,8 @@
 ---
 title: Supervisión de las implementaciones de formularios AEM
 seo-title: Supervisión de las implementaciones de formularios AEM
-description: Puede supervisar las implementaciones de formularios AEM tanto a nivel del sistema como a nivel interno. Obtenga más información sobre la supervisión de las implementaciones de formularios AEM desde este documento.
-seo-description: Puede supervisar las implementaciones de formularios AEM tanto a nivel del sistema como a nivel interno. Obtenga más información sobre la supervisión de las implementaciones de formularios AEM desde este documento.
+description: Puede supervisar las implementaciones de formularios AEM desde un nivel de sistema y desde un nivel interno. Obtenga más información sobre la supervisión de la implementación de formularios AEM en este documento.
+seo-description: Puede supervisar las implementaciones de formularios AEM desde un nivel de sistema y desde un nivel interno. Obtenga más información sobre la supervisión de la implementación de formularios AEM en este documento.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
@@ -18,20 +18,20 @@ ht-degree: 0%
 ---
 
 
-# Supervisión de las implementaciones de formularios AEM {#monitoring-aem-forms-deployments}
+# Monitoreo de las implementaciones de formularios AEM {#monitoring-aem-forms-deployments}
 
-Puede supervisar las implementaciones de formularios AEM tanto a nivel del sistema como a nivel interno. Puede utilizar herramientas de administración especializadas como HP OpenView, IBM Tivoli y CA UniCenter y un monitor JMX de terceros llamado *JConsole* para monitorear específicamente la actividad de Java. La implementación de una estrategia de supervisión mejora la disponibilidad, fiabilidad y rendimiento de las implementaciones de formularios AEM.
+Puede supervisar las implementaciones de formularios AEM desde un nivel de sistema y desde un nivel interno. Puede utilizar herramientas de administración especializadas como HP OpenView, IBM Tivoli y CA UniCenter y un monitor JMX de terceros denominado *JConsole* para monitorear específicamente la actividad de Java. La implementación de una estrategia de monitoreo mejora la disponibilidad, fiabilidad y rendimiento de las implementaciones de formularios AEM.
 
-Para obtener más información sobre la supervisión de las implementaciones de formularios AEM, consulte [Una guía técnica para supervisar las implementaciones](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf)de formularios AEM.
+Para obtener más información sobre la supervisión de la implementación de formularios AEM, consulte [Una guía técnica para la supervisión de la implementación de formularios AEM](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
 
 ## Monitoreo con MBeans {#monitoring-using-mbeans}
 
-Los formularios AEM proporcionan dos MBeans registrados que proporcionan información estadística y de navegación. Estos son los únicos MBeans que se admiten para integración e inspección:
+AEM formularios proporciona dos MBeans registrados que proporcionan información estadística y de navegación. Estos son los únicos MBeans que se admiten para integración e inspección:
 
-* **ServiceStatistics:** Este MBean proporciona información sobre el nombre del servicio y su versión.
-* **OperationStatistics:** Este MBean proporciona la estadística de cada servicio del servidor de formularios. Aquí es donde los administradores pueden obtener información sobre un servicio en particular, como tiempo de invocación, número de errores, etc.
+* **ServiceStatistics:** este MBean proporciona información sobre el nombre del servicio y su versión.
+* **OperationStatistics:** este MBean proporciona la estadística de cada servicio del servidor de formularios. Aquí es donde los administradores pueden obtener información sobre un servicio en particular, como tiempo de invocación, número de errores, etc.
 
-### Interfaces públicas de ServiceStatisticsMedia {#servicestatisticmbean-public-interfaces}
+### Interfaces públicas de ServiceStatisticsMail {#servicestatisticmbean-public-interfaces}
 
 Se puede acceder a estas interfaces públicas de ServiceStatistics MBean con fines de prueba:
 
@@ -41,7 +41,7 @@ Se puede acceder a estas interfaces públicas de ServiceStatistics MBean con fin
  public int getMinorVersion();
 ```
 
-### Interfaces públicas OperationStatisticsMbean {#operationstatisticmbean-public-interfaces}
+### Interfaces públicas de OperationStatisticsMail {#operationstatisticmbean-public-interfaces}
 
 Se puede acceder a estas interfaces públicas de OperationStatistics MBean con fines de prueba:
 
@@ -75,11 +75,11 @@ Con una consola JMX (JConsole), hay disponibles estadísticas de OperationStatis
 
 **árbol MBean**
 
-**Nombre de dominio de Adobe:** Depende del servidor de aplicaciones. Si Application Server no define el dominio, el valor predeterminado es adobe.com.
+**Nombre de dominio de Adobe:** depende del servidor de aplicaciones. Si Application Server no define el dominio, el valor predeterminado es adobe.com.
 
 **ServiceType:** AdobeService es el nombre que se utiliza para la lista de todos los servicios.
 
-**AdobeServiceName:** Nombre del servicio o ID del servicio.
+**AdobeServiceName:Nombre** del servicio o ID del servicio.
 
 **Versión:** Versión del servicio.
 
@@ -87,21 +87,21 @@ Con una consola JMX (JConsole), hay disponibles estadísticas de OperationStatis
 
 **Tiempo de invocación:** Tiempo empleado para la ejecución del método. Esto no incluye la hora de serialización, transferencia de cliente a servidor y deserialización de la solicitud.
 
-**Recuento de invocaciones:** Número de veces que se invoca el servicio.
+**Recuento de invocaciones:** el número de veces que se invoca el servicio.
 
-**Tiempo medio de invocación:** Promedio de tiempo de todas las invocaciones que se han ejecutado desde que se inició el servidor.
+**Tiempo medio de invocación: tiempo** medio de todas las invocaciones que se han ejecutado desde que se inició el servidor.
 
-**Tiempo máximo de invocación:** Duración de la invocación más larga que se ha ejecutado desde que se inició el servidor.
+**Tiempo máximo de invocación:** la duración de la invocación más larga que se ha ejecutado desde que se inició el servidor.
 
-**Tiempo mínimo de invocación:** Duración de la invocación más corta que se ha ejecutado desde que se inició el servidor.
+**Tiempo mínimo de invocación:** la duración de la invocación más corta que se ha ejecutado desde que se inició el servidor.
 
-**Recuento de excepciones:** Número de invocaciones que han producido errores.
+**Recuento de excepciones:** número de invocaciones que han producido errores.
 
-**Mensaje de excepción:** Mensaje de error de la última excepción que se produjo.
+**Mensaje de excepción:** El mensaje de error de la última excepción que se produjo.
 
-**Hora de la fecha de la última muestra:** La fecha de la última invocación.
+**Hora de la última fecha de muestra:** la fecha de la última invocación.
 
-**Unidad de tiempo:** El valor predeterminado es milisegundo.
+**Unidad de tiempo: el** valor predeterminado es milisegundos.
 
 Para habilitar la supervisión de JMX, los servidores de aplicaciones generalmente necesitan cierta configuración. Consulte la documentación del servidor de aplicaciones para obtener información específica.
 
@@ -120,7 +120,7 @@ Para vista de MBeans desde JConsole, configure los parámetros de inicio JVM del
 
 **WebLogic 9.2 /10 - configurar el inicio de JVM**
 
-1. Edite el archivo startWebLogic.bat que se encuentra debajo `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
+1. Edite el archivo startWebLogic.bat ubicado en `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Busque la línea JAVA_OPTS y agregue lo siguiente:
 
    ```shell
