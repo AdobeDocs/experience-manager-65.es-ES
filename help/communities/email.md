@@ -30,20 +30,20 @@ De forma predeterminada, la función de correo electrónico no funciona, ya que 
 
 >[!CAUTION]
 >
->El correo electrónico para las notificaciones y suscripciones solo debe configurarse en el editor [principal](deploy-communities.md#primary-publisher).
+>El correo electrónico para las notificaciones y suscripciones solo debe configurarse en el [publicador principal](deploy-communities.md#primary-publisher).
 
 ## Configuración predeterminada del servicio de correo {#default-mail-service-configuration}
 
 El servicio de correo predeterminado es necesario tanto para las notificaciones como para las suscripciones.
 
-* Inicie sesión en el editor principal con privilegios de administrador y acceda a la consola [web](../../help/sites-deploying/configuring-osgi.md):
+* Inicie sesión en el editor principal con privilegios de administrador y acceda a la [Consola Web](../../help/sites-deploying/configuring-osgi.md):
 
-   * Por ejemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Por ejemplo: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Busque el `Day CQ Mail Service`.
 * Seleccione el icono de edición.
 
-Esto se basa en la documentación de [Configuración de notificaciones](../../help/sites-administering/notification.md)por correo electrónico, pero con una diferencia en que el campo `"From" address` ** no es obligatorio y debe dejarse vacío.
+Esto se basa en la documentación de [Configuración de notificación de correo electrónico](../../help/sites-administering/notification.md), pero con una diferencia en que el campo `"From" address` es *no* requerido y debe dejarse vacío.
 
 Por ejemplo (rellenado con valores únicamente para fines ilustrativos):
 
@@ -77,49 +77,49 @@ Por ejemplo (rellenado con valores únicamente para fines ilustrativos):
 
 ## Configuración de correo electrónico de AEM Communities {#aem-communities-email-configuration}
 
-Una vez configurado el servicio [de correo](#default-mail-service-configuration) predeterminado, las dos instancias existentes de la configuración de `AEM Communities Email Reply Configuration` OSGi, incluidas en la versión, funcionan.
+Una vez configurado el [servicio de correo predeterminado](#default-mail-service-configuration), las dos instancias existentes de la `AEM Communities Email Reply Configuration` configuración OSGi, incluidas en la versión, se vuelven funcionales.
 
 Solo la instancia de suscripciones debe configurarse más al permitir la respuesta por correo electrónico.
 
-1. [Instancia de correo electrónico](#configuration-for-notifications) :
+1. [](#configuration-for-notifications) Emailinstance:
 
    En el caso de las notificaciones, que no admiten correo electrónico de respuesta y no deben modificarse.
 
-1. [Suscripciones-instancia de correo electrónico](#configuration-for-subscriptions) :
+1. [Suscripciones-](#configuration-for-subscriptions) emailinstance:
 
    Requiere configuración para habilitar completamente la creación de publicaciones a partir del correo electrónico de respuesta.
 
 Para llegar a las instancias de configuración de correo electrónico de Comunidades:
 
-* Inicie sesión en el editor principal con privilegios de administrador y acceda a la consola [web](../../help/sites-deploying/configuring-osgi.md)
+* Inicie sesión en el editor principal con privilegios de administrador y acceda a la [Consola Web](../../help/sites-deploying/configuring-osgi.md)
 
-   * Por ejemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Por ejemplo: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localizar `AEM Communities Email Reply Configuration`.
+* Localice `AEM Communities Email Reply Configuration`.
 
 ![email-response-config](assets/email-reply-config.png)
 
 ### Configuración de notificaciones {#configuration-for-notifications}
 
-La instancia de configuración de `AEM Communities Email Reply Configuration` OSGi con el correo electrónico Nombre es la función de notificaciones. Esta función no incluye la respuesta por correo electrónico.
+La instancia de `AEM Communities Email Reply Configuration` configuración OSGi con el correo electrónico Nombre es la función de notificaciones. Esta función no incluye la respuesta por correo electrónico.
 
 Esta configuración no debe modificarse.
 
 * Busque el `AEM Communities Email Reply Configuration`.
 * Seleccione el icono de edición.
-* Verifique que el **nombre** sea `email`.
+* Verifique que el **Nombre** sea `email`.
 
-* Verifique que **Crear anuncio desde correo electrónico** de respuesta sea `unchecked`.
+* Verifique que **Crear anuncio a partir del correo electrónico de respuesta** sea `unchecked`.
 
 ![configure-email-response](assets/configure-email-reply.png)
 
-### Configuración de Suscripciones {#configuration-for-subscriptions}
+### Configuración para Suscripciones {#configuration-for-subscriptions}
 
 En el caso de suscripciones de comunidades, es posible activar o desactivar la capacidad de un miembro para publicar contenido respondiendo a un mensaje de correo electrónico.
 
 * Busque el `AEM Communities Email Reply Configuration`.
 * Seleccione el icono de edición.
-* Verifique que el **nombre** sea `subscriptions-email`.
+* Verifique que el **Nombre** sea `subscriptions-email`.
 
    ![configure-email-suscripción](assets/configure-email-subscriptions.png)
 
@@ -154,7 +154,7 @@ En el caso de suscripciones de comunidades, es posible activar o desactivar la c
 
    Si se agrega la identificación del rastreador al cuerpo del mensaje, se utilizará este prefijo. El valor predeterminado es `Please do not remove this:`.
 
-* **[!UICONTROL Correo electrónico como HTML]**: Si se selecciona, el tipo de contenido del correo electrónico se establecerá como `"text/html;charset=utf-8"`. El valor predeterminado está marcado.
+* **[!UICONTROL Correo electrónico como HTML]**: Si se selecciona, el tipo de contenido del correo electrónico se establecerá como  `"text/html;charset=utf-8"`. El valor predeterminado está marcado.
 
 * **[!UICONTROL Nombre de usuario predeterminado]**
 
@@ -164,7 +164,7 @@ En el caso de suscripciones de comunidades, es posible activar o desactivar la c
 
    El correo electrónico se genera mediante la plantilla almacenada en esta ruta raíz. El valor predeterminado es `/etc/community/templates/subscriptions-email`.
 
-## Configurar importador de encuestas {#configure-polling-importer}
+## Configurar el importador de encuestas {#configure-polling-importer}
 
 Para que el correo electrónico se introduzca en el repositorio, es necesario configurar un importador de encuestas y configurar sus propiedades en el repositorio de forma manual.
 
@@ -172,15 +172,15 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 * Inicie sesión en el editor principal con privilegios de administrador y vaya a la consola del importador de encuestas:
 
-   Por ejemplo, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+   Por ejemplo: [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Seleccionar **[!UICONTROL Añadir]**
+* Seleccione **[!UICONTROL Añadir]**
 
    ![polling-importer](assets/polling-importer.png)
 
 * **[!UICONTROL Tipo]**
 
-   *(Requerido)* Despliegue para seleccionar `POP3 (over SSL)`.
+   *(Requerido)* Desplegar para seleccionar  `POP3 (over SSL)`.
 
 * **[!UICONTROL URL]**
 
@@ -188,7 +188,8 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 * **[!UICONTROL Importar a ruta]**&amp;ast;
 
-   *(Requerido)* Configure en `/content/usergenerated/mailFolder/postEmails`buscando en la `postEmails`carpeta y seleccione **Aceptar**.
+   *(Requerido)* Configure en  `/content/usergenerated/mailFolder/postEmails`
+buscando en la  `postEmails`carpeta y seleccione  **Aceptar**.
 
 * **[!UICONTROL Actualizar intervalo en segundos]**
 
@@ -204,17 +205,17 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 * Seleccione **[!UICONTROL Aceptar]**.
 
-### Ajustar protocolo para nuevo importador de encuestas {#adjust-protocol-for-new-polling-importer}
+### Ajustar el protocolo para el nuevo importador de encuestas {#adjust-protocol-for-new-polling-importer}
 
 Una vez guardada la nueva configuración de sondeo, es necesario modificar las propiedades del importador de correo electrónico de suscripción para cambiar el protocolo de `POP3` a `emailreply`.
 
-Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Usando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Inicie sesión en el editor principal con privilegios de administrador y vaya a [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importadores/encuestas](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
+* Inicie sesión en el editor principal con privilegios de administrador y vaya a [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importing/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Seleccione la configuración recién creada y modifique las siguientes propiedades:
 
-   * **feedType**: Reemplazar `pop3s` por **`emailreply`**
-   * **source**: Reemplazar el protocolo del origen `pop3s://` por **`emailreply://`**
+   * **feedType**: Reemplazar  `pop3s` por  **`emailreply`**
+   * **source**: Reemplazar el protocolo del origen  `pop3s://` por  **`emailreply://`**
 
 ![sondeo-protocolo](assets/polling-protocol.png)
 
