@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Puede especificar las fuentes que siempre se incrustan o que nunca se incrustan 
 
 >[!NOTE]
 >
->Si ha especificado un archivo XCI personalizado para Output, la opción de incrustar fuente en el archivo XCI anula esta configuración. (Consulte [Especificación de ubicaciones de archivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+>Si ha especificado un archivo XCI personalizado para Output, la opción de incrustar fuente en el archivo XCI anula esta configuración. (Consulte [Especificar ubicaciones de archivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 
 1. En la consola de administración, haga clic en Servicios > salida.
 1. En Configuración de incrustación de fuentes, en el cuadro Incrustar siempre fuentes, escriba los nombres de las fuentes que desee incrustar con los formularios, separados por comas. Las fuentes que especifique solo se incrustarán en el formulario generado si se utilizan en el formulario. Esta configuración se ignora si la opción de incrustar fuente se ha activado en el archivo XCI que se pasa al servicio. En ese caso, todas las fuentes utilizadas en el PDF siempre se incrustan.
