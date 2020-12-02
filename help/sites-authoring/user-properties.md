@@ -1,6 +1,6 @@
 ---
-title: Configuración del entorno de la cuenta
-seo-title: Configuración del entorno de la cuenta
+title: 'Configuración del entorno de la cuenta  '
+seo-title: 'Configuración del entorno de la cuenta  '
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
 seo-description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
@@ -12,11 +12,14 @@ discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 99%
 
 ---
 
 
-# Configuración del entorno de la cuenta{#configuring-your-account-environment}
+# Configuración del entorno de la cuenta  {#configuring-your-account-environment}
 
 AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 
@@ -100,8 +103,9 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
    AEM admite varios métodos abreviados del teclado para mejorar la eficiencia de la creación de contenido.
 
-   * [Métodos abreviados del teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+   * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
+
    Esta opción habilita los métodos abreviados del teclado. De manera predeterminada, los métodos abreviados están habilitados, pero se pueden deshabilitar; por ejemplo, si un usuario tiene determinados requisitos de accesibilidad.
 
 * **Usar experiencia de autoría clásica**
