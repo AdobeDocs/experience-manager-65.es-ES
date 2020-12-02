@@ -11,13 +11,16 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 0%
 
 ---
 
 
 # Integración de Form Bridge con un portal personalizado para formularios HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge es una API de puente de formularios HTML5 que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte Referencia [de la API de](/help/forms/using/form-bridge-apis.md)FormBridge.
+FormBridge es una API de puente de formularios HTML5 que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Puede utilizar la API de FormBridge para obtener o establecer los valores de los campos de formulario desde la página HTML y enviar el formulario. Por ejemplo, puede utilizar API para crear una experiencia similar a un asistente.
 
@@ -82,15 +85,15 @@ Una aplicación HTML existente puede aprovechar la API de FormBridge para intera
 
    ![portal](assets/portal.jpg)
 
-   La parte izquierda forma parte de la página **** HTML. El lado derecho que contiene los campos es el formulario **** xfa.
+   El lado izquierdo es parte de la **página HTML**. El lado derecho que contiene los campos es el **formulario xfa**.
 
 1. **Acceso a los campos del formulario desde la página**
 
    A continuación se muestra una secuencia de comandos de ejemplo que puede agregar para definir valores en un campo de formulario.
 
-   Por ejemplo, si desea establecer **EmployeeName** con los valores de los campos **Nombre** y **Apellido**, llame a la función **window.formBridge.setFieldValue** .
+   Por ejemplo, si desea establecer **NombreEmpleado** utilizando los valores de la función Campos **Nombre** y **Apellido**, llame a la función **window.formBridge.setFieldValue**.
 
-   Del mismo modo, puede leer el valor llamando a la API **window.formBridge.getFieldValue** .
+   Del mismo modo, puede leer el valor llamando a la API **window.formBridge.getFieldValue**.
 
    ```javascript
    $(function() {
