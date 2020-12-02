@@ -11,11 +11,14 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 1%
 
 ---
 
 
-# Caracteres especiales personalizados en la administración de correspondencias{#custom-special-characters-in-correspondence-management}
+# Caracteres especiales personalizados en Administración de correspondencia{#custom-special-characters-in-correspondence-management}
 
 ## Información general {#overview}
 
@@ -29,31 +32,31 @@ Por ejemplo, puede insertar los siguientes caracteres especiales:
 
 Puede insertar caracteres especiales en letras:
 
-* En el editor de [texto](/help/forms/using/document-fragments.md#createtext)
+* En el [editor de texto](/help/forms/using/document-fragments.md#createtext)
 * En un módulo en línea [editable en una correspondencia](../../forms/using/create-correspondence.md#managecontent)
 
 ![especialcaracterissinlinemodulo](assets/specialcharactersinlinemodule.png)
 
 El administrador puede añadir compatibilidad con más caracteres especiales personalizados personalizándolos. Este artículo proporciona las instrucciones sobre cómo agregar compatibilidad para caracteres especiales personalizados adicionales.
 
-## Añadir o modificar la compatibilidad con caracteres especiales personalizados en la Administración de correspondencia {#creatingfolderstructure}
+## Añadir o modificar la compatibilidad con caracteres especiales personalizados en Administración de correspondencia {#creatingfolderstructure}
 
 Siga estos pasos para añadir compatibilidad con caracteres especiales personalizados:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta con el nombre de **[!UICONTROL caracteres]** especiales con una ruta/estructura similar a la carpeta de caracteres especiales (ubicada en la carpeta textEditorConfig en libs):
+1. En la carpeta de aplicaciones, cree una carpeta con el nombre **[!UICONTROL caracteres especiales]** con una ruta/estructura similar a la carpeta de caracteres especiales (ubicada en la carpeta textEditorConfig en libs):
 
-   1. Haga clic con el botón derecho en la carpeta de **caracteres** especiales de la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta **caracteres especiales** en la siguiente ruta y seleccione **Nodo superpuesto**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **Ruta:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter
+      **Ruta:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/caracteres especiales
 
       **Ubicación de superposición:** /apps/
 
-      **Coincidir tipos de nodo:** Verificado
+      **Coincidir tipos de nodo:** activado
 
       >[!NOTE]
       >
@@ -66,7 +69,7 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
       >    * Instalación de un paquete de funciones
 
 
-   1. Haga clic en **Aceptar** y, a continuación, en **Guardar todo**. La carpeta de caracteres especiales se crea en la ruta de acceso especificada.
+   1. Haga clic en **Aceptar** y, a continuación, haga clic en **Guardar todo**. La carpeta de caracteres especiales se crea en la ruta de acceso especificada.
 
       Después de crear la superposición, compruebe las etiquetas de estructura de nodos. Cada nodo creado en /apps que utiliza la superposición debe tener la misma clase y las mismas propiedades que se definen en /libs para ese nodo. Si falta alguna propiedad o etiqueta en la estructura de nodos en la ubicación /apps, sincronice sus etiquetas con el nodo correspondiente en /libs.
 
@@ -79,7 +82,7 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
    | cmConfigurationType | Cadena | cmTextEditorConfiguration |
    | cssPath | Cadena | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Haga clic con el botón secundario en la carpeta de caracteres **[!UICONTROL especiales]** de la siguiente ruta y seleccione **Crear > Nodo** secundario y, a continuación, haga clic en **Guardar todo**:
+1. Haga clic con el botón secundario en la carpeta **[!UICONTROL caracteres especiales]** en la siguiente ruta y seleccione **Crear > Nodo secundario** y, a continuación, haga clic en **Guardar todo**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter/&lt;YourChildNode>
 
