@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Esta sección incluye información detallada sobre los registros disponibles para ayudarle a solucionar los problemas y también incluye información sobre algunos de los problemas que podría encontrar con AEM.
 
-## Resolución de problemas de rendimiento del autor {#troubleshoot-author-performance}
+## Solución de problemas de rendimiento del autor {#troubleshoot-author-performance}
 
 Analizar el rendimiento lento en la instancia de creación puede resultar bastante complejo. Como primer paso, es necesario averiguar en qué nivel de pila de tecnología disminuye el rendimiento.
 
@@ -36,7 +36,7 @@ El siguiente árbol de decisión proporciona orientación para reducir el cuello
 
 ## Configuración de archivos de registro y registros de auditoría {#configuring-log-files-and-audit-logs}
 
-AEM registros detallados que puede que desee configurar para solucionar problemas de instalación. Para obtener más información, consulte la sección [Trabajo con registros de auditoría y archivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de registro.
+AEM registros detallados que puede que desee configurar para solucionar problemas de instalación. Para obtener más información, consulte la sección [Trabajo con registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Uso de la opción Verbose {#using-the-verbose-option}
 
@@ -48,7 +48,7 @@ La opción &quot;verbose&quot; muestra algunos de los resultados del registro de
 
 En la siguiente sección se describen algunos problemas de instalación y sus soluciones.
 
-### Al hacer clic en el tarro de inicio rápido no se produce ningún efecto o se abre el archivo jar con otro programa (por ejemplo, el administrador de archivos) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
+### Al hacer clic en el tarro de inicio rápido no se produce ningún efecto o se abre el archivo jar con otro programa (por ejemplo, archive manager) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 Esto suele indicar un problema con la configuración del entorno de escritorio del sistema operativo para abrir archivos con la extensión .jar. También puede indicar que no tiene Java instalado o que está utilizando una versión no compatible de Java.
 
@@ -69,7 +69,7 @@ Para solucionar problemas, haga lo siguiente:
 
 >[!NOTE]
 >
->Consulte también [Analizar problemas](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)de memoria.
+>Consulte también [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
 El propio CRX tiene una huella de memoria muy baja. Si la aplicación que se ejecuta dentro de CRX tiene requisitos de memoria mayores o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM en la que se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
@@ -106,15 +106,15 @@ Si todo lo demás falla, compruebe los registros para averiguar qué ha pasado.
 
 Cuando una solicitud a la página geometrixx-outdoors/en devuelve un valor 404 (Página no encontrada), puede volver a comprobar que ha establecido la propiedad sling adicional en el archivo sling.properties necesaria para estos servidores de aplicaciones específicos.
 
-Consulte los detalles en los pasos *Implementar AEM aplicación* web.
+Consulte los pasos *Implementar AEM aplicación Web* para obtener más información.
 
 ### El tamaño del encabezado de respuesta puede ser bueno de 4 Kb {#response-header-size-can-be-greater-than-kb}
 
 Los errores 502 pueden indicar que el servidor web no puede gestionar el tamaño del encabezado de respuesta HTTP AEM. AEM generar encabezados de respuesta HTTP que incluyen cookies de tamaño bueno superior a 4 Kb. Asegúrese de que el contenedor del servlet esté configurado para que el tamaño máximo del encabezado de respuesta pueda superar los 4 kb.
 
-Por ejemplo, para Tomcat 7.0, el atributo maxHttpHeaderSize del conector [](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) HTTP controla las limitaciones del tamaño del encabezado.
+Por ejemplo, para Tomcat 7.0, el atributo maxHttpHeaderSize de [HTTP Connector](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controla las limitaciones del tamaño del encabezado.
 
-## Uninstalling Adobe Experience Manager {#uninstalling-adobe-experience-manager}
+## Desinstalación de Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
 Debido a que AEM instala en un único directorio, no es necesario instalar una utilidad de desinstalación. La desinstalación puede ser tan simple como eliminar todo el directorio de instalación, aunque la forma de desinstalarlo AEM depende de lo que desee lograr y del almacenamiento persistente que utilice.
 
@@ -128,4 +128,5 @@ Si la instalación de AEM utiliza almacenamiento externo, por ejemplo, un servid
 
 ### Los archivos JSP no se compilan en JBoss {#jsp-files-are-not-compiled-on-jboss}
 
-Si instala o actualiza archivos JSP al Experience Manager en JBoss y no se compilan los servlets correspondientes, asegúrese de que el compilador JBoss JSP esté correctamente configurado. Para obtener más información, consulte el artículo Problemas de compilación del[JSP en JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) .
+Si instala o actualiza archivos JSP al Experience Manager en JBoss y no se compilan los servlets correspondientes, asegúrese de que el compilador JBoss JSP esté correctamente configurado. Para obtener más información, consulte la
+[Artículo Problemas de compilación JSP en JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
