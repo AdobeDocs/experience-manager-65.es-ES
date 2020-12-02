@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Base de datos de Microsoft SQL Server: Ajustar la configuración {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
-Debe cambiar la configuración predeterminada al utilizar Microsoft SQL Server. Haga clic con el botón derecho en el servidor local de Oracle Enterprise Manager para acceder al cuadro de diálogo de propiedades.
+Debe cambiar la configuración predeterminada al utilizar Microsoft SQL Server. Haga clic con el botón secundario en el servidor local de Oracle Enterprise Manager para acceder al cuadro de diálogo de propiedades.
 
 ## Configuración de memoria {#memory-settings}
 
