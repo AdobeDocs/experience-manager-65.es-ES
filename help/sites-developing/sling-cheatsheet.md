@@ -1,6 +1,6 @@
 ---
-title: Hoja De Cálculo De Sling
-seo-title: Hoja De Cálculo De Sling
+title: Hoja de referencia de Sling
+seo-title: Hoja de referencia de Sling
 description: Una sencilla referencia Sling
 seo-description: Una sencilla referencia Sling
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
@@ -13,13 +13,13 @@ translation-type: tm+mt
 source-git-commit: c6b1d651940b5c556dea81d19354aac36d14b423
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
 
-# Hoja De Cálculo De Sling{#sling-cheatsheet}
+# Hoja de referencia de Sling{#sling-cheatsheet}
 
 ![Explicación de la resolución del script Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Uso de SlingPostServlet: es el controlador predeterminado para las solicitudes POST; puede hacer casi cualquier cosa.](assets/sling-cheatsheet-02.png)
+![Uso de SlingPostServlet: es el controlador predeterminado para las solicitudes de POST; puede hacer casi cualquier cosa.](assets/sling-cheatsheet-02.png)
