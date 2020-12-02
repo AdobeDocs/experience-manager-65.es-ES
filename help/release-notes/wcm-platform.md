@@ -17,25 +17,25 @@ ht-degree: 56%
 ### Repositorio {#repository}
 
 * Adobe Experience Manager 6.5 se basa en versiones actualizadas de la arquitectura creada a partir de OSGi (Apache Sling y Apache Felix) y el repositorio de contenido Java: Apache Jackrabbit Oak 1.10.2.
-* Para obtener información general sobre los problemas solucionados, consulte [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) y [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
+* Para obtener una visión general de los problemas solucionados, consulte [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) y [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
->La nueva versión de Oak Segment Tar disponible a partir de la versión 6.3 de AEM requiere realizar una migración del repositorio. Este paso es obligatorio si está actualizando desde una versión anterior de TarMK o desea cambiar la nueva barra de segmentos de otro tipo de persistencia. For more information on what the benefits of the new Segment Tar are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>La nueva versión de Oak Segment Tar disponible a partir de la versión 6.3 de AEM requiere realizar una migración del repositorio. Este paso es obligatorio si está actualizando desde una versión anterior de TarMK o desea cambiar la nueva barra de segmentos de otro tipo de persistencia. Para obtener más información sobre los beneficios de la nueva barra de segmentos, consulte las [Preguntas más frecuentes sobre la migración a la barra de segmentos Oak](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 ### Compatibilidad con Java {#java-support}
 
 * Nueva compatibilidad con Java 11, así como para Java 8.
 * Para obtener un rendimiento óptimo, anule los valores GC predeterminados con otros valores. Para obtener más información, consulte la sección [Instalar y actualizar](/help/sites-deploying/custom-standalone-install.md).
-* Las actualizaciones de mantenimiento de Java 11 y Java 8 se distribuyen por Adobe para el uso del cliente en proyectos relacionados con AEM, cuando no están disponibles públicamente desde Oracle.
+* Las actualizaciones de mantenimiento de Java 11 y Java 8 se distribuyen por Adobe para el uso del cliente en proyectos relacionados con AEM, cuando no están disponibles para el público desde Oracle.
 
 ### OSGI {#osgi}
 
-* Bibliotecas de utilidades Añadidas OSGi Promises y Converter.
+* Bibliotecas de utilidades añadidas OSGi Promises y Converter.
 
 ### Proyectos y flujos de trabajo {#projects-and-workflows}
 
-* New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced `OR` and `AND` splits.
+* Se ha mejorado el nuevo editor del modelo de flujo de trabajo introducido en la versión 6.4 para incluir más operaciones como Copiar y publicar, compatibilidad con variables en los pasos del flujo de trabajo y divisiones `OR` y `AND` mejoradas.
 
 ### Búsqueda {#searching}
 
@@ -58,14 +58,14 @@ Se han realizado varias mejoras en la interfaz de usuario para que sea más prod
 
 >[!CAUTION]
 >
->Adobe no realizará más mejoras en la IU clásica. Experience Manager 6.5 incluye la IU clásica para la compatibilidad con versiones anteriores. Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+>Adobe no realizará más mejoras en la IU clásica. Experience Manager 6.5 incluye la IU clásica para la compatibilidad con versiones anteriores. La IU clásica sigue siendo totalmente compatible mientras está en desuso [Más información](/help/sites-deploying/ui-recommendations.md).
 
 ### Actualización {#upgrade}
 
 * El procedimiento de actualización es el mismo en la versión 6.5.
 * Adobe admite las funciones de compatibilidad retroactiva, de evaluación de la complejidad de las actualizaciones y las actualizaciones sostenibles introducidas en la versión 6.4. Se han realizado actualizaciones específicas de la versión en las áreas en las que era necesario.
 * Se ha simplificado el paquete del detector de patrones y habrá un paquete que evaluará las actualizaciones a la versión 6.5 para las versiones de origen disponibles.
-* Para obtener más información sobre el procedimiento de actualización, consulte la documentación [de](/help/sites-deploying/upgrade.md)actualización.
+* Para obtener más información sobre el procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
 
 ### Servidor web {#web-server}
 
