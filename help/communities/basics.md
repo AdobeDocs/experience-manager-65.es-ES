@@ -18,31 +18,31 @@ ht-degree: 1%
 ---
 
 
-# Conceptos básicos de los componentes de comunidades {#communities-components-basics}
+# Conceptos básicos de componentes de comunidades {#communities-components-basics}
 
 ## Información general {#overview}
 
 La sección de creación de la documentación describe cómo agregar funciones de Comunidades a AEM sitios en modo de edición de autor, así como la descripción de las configuraciones de componentes.
 
-Los componentes pueden explorarse con una instancia de AEM y la guía [interactiva](components-guide.md)Community Components.
+Los componentes pueden explorarse con una instancia de AEM y la [guía interactiva de componentes de la comunidad](components-guide.md).
 
 ## Acceso a componentes de comunidades {#accessing-communities-components}
 
 Al crear contenido de página, si la plantilla subyacente permite cambios en el diseño de la página, es posible activar componentes que no están disponibles en el navegador de componentes como parte del diseño del sitio.
 
-Los componentes de Comunidades disponibles se enumeran [aquí](author-communities.md#available-communities-components).
+Los componentes de Communities disponibles se enumeran [aquí](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >
->Para obtener información general sobre la creación, consulte la guía [rápida de creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Para obtener información general sobre la creación, consulte la [guía rápida de creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Si no está familiarizado con AEM, vista la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md)básica.
+>Si no está familiarizado con AEM, vista la documentación sobre [administración básica](../../help/sites-authoring/basic-handling.md).
 
-### Introducción al modo de diseño {#entering-design-mode}
+### Entrada al modo de diseño {#entering-design-mode}
 
-Si no se encuentra un componente de **Comunidades** en el navegador de componentes (barra de tareas), será necesario introducir `Design Mode` para agregar otros componentes de Comunidades. [También es posible que sea necesario agregar bibliotecas](#required-clientlibs) de cliente (clientlibs) requeridas.
+Si no se encuentra un componente **Communities** en el navegador de componentes (barra de tareas), será necesario introducir `Design Mode` para agregar otros componentes de Communities. [Es posible que también sea necesario agregar bibliotecas](#required-clientlibs)  obligatorias del lado del cliente (clientlibs).
 
-Para obtener más información, consulte [Configuración de componentes en modo](../../help/sites-authoring/default-components-designmode.md)de diseño.
+Para obtener más información, consulte [Configuración de componentes en modo de diseño](../../help/sites-authoring/default-components-designmode.md).
 
 A continuación se muestran imágenes de la selección de algunos componentes de Communities y su visualización en el navegador de componentes:
 
@@ -54,7 +54,7 @@ Los componentes seleccionados ya están disponibles en el navegador de component
 
 ## Clientlibs requeridos {#required-clientlibs}
 
-[Las bibliotecas](../../help/sites-developing/clientlibs.md) del lado del cliente (clientlibs) son necesarias para el correcto funcionamiento (JavaScript) y el estilo (CSS) de un componente.
+[Las bibliotecas](../../help/sites-developing/clientlibs.md)  del lado del cliente (clientlibs) son necesarias para el correcto funcionamiento (JavaScript) y el estilo (CSS) de un componente.
 
 Cuando se agrega un componente Comunidades a una página, si el resultado es un error o una apariencia inesperada, lo primero que se debe intentar es agregar los clientes necesarios para el componente Comunidades. Para obtener más información, consulte [Clientlibs for Communities Components](clientlibs.md).
 
@@ -70,11 +70,11 @@ Cuando se agrega un componente Comunidades a una página, si el resultado es un 
 
 Muchas funciones de Comunidades se pueden configurar para permitir que los miembros etiqueten el contenido introducido (publicado) en el entorno de publicación.
 
-Si se permite el etiquetado, la configuración del sitio de la comunidad puede establecerse para limitar las Áreas de nombres presentadas a los miembros en el entorno de publicación. Consulte la consola Sitios [de comunidad](sites-console.md#tagging).
+Si se permite el etiquetado, la configuración del sitio de la comunidad puede establecerse para limitar las Áreas de nombres presentadas a los miembros en el entorno de publicación. Consulte la consola [Community Sites](sites-console.md#tagging).
 
-Características que permiten el etiquetado: [blog](blog-feature.md), [calendario](calendar.md), biblioteca [](file-library.md)de archivos, [foro](forum.md)
+Características que permiten el etiquetado: [blog](blog-feature.md), [calendario](calendar.md), [biblioteca de archivos](file-library.md), [foro](forum.md)
 
-Funciones que utilizan etiquetas: [catálogo](catalog.md), [búsqueda](search.md), nube de etiquetas [sociales](tagcloud.md)
+Funciones que utilizan etiquetas: [catálogo](catalog.md), [búsqueda](search.md), [nube de etiquetas sociales](tagcloud.md)
 
 Para obtener información sobre la creación:
 
