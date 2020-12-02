@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 91%
 
 ---
 
@@ -27,12 +30,12 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 | Ubicación | Método abreviado | Descripción |
 |---|---|---|
-| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)* |
+| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista preliminar** y el [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> seleccionado actualmente (p. ej., **Editar**, **Diseño**, etc.).* |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |
 |  | `Ctrl-c` | Copiar párrafos seleccionados |
-|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecerán en la interfaz de usuario hasta que se pegue) |
+|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecen en la interfaz de usuario hasta que se pegue el copiado) |
 |  | `Ctrl-v` | Pegar párrafos previamente cortados o copiados |
 |  | `Ctrl-Backspace` | Eliminar párrafos seleccionados |
 | **Modo de edición:** editor de texto enriquecido | `Ctrl-b` | Negrita |
@@ -41,7 +44,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
+>&amp;ast; Una vez que el usuario inicio interactuar con la página en el modo de Previsualización, el acceso directo `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 
@@ -51,7 +54,7 @@ También hay varios métodos abreviados del teclado disponibles para los usuario
 
 ## Teclas modificadoras específicas del sistema operativo {#os-specific-modifier-keys}
 
-Las teclas modificadoras utilizadas para los métodos abreviados de teclado varían según el sistema operativo que utilice el cliente.
+Las teclas modificadoras utilizadas para los atajos de teclado varían en función del sistema operativo que utilice el cliente.
 
 | Windows y Linux | macOS |
 |---|---|
