@@ -1,8 +1,8 @@
 ---
 title: Integración con Adobe Campaign
 seo-title: Integración con Adobe Campaign
-description: Obtenga información sobre cómo integrar AEM con Adobe Campaign.
-seo-description: Obtenga información sobre cómo integrar AEM con Adobe Campaign.
+description: Aprenda a integrar AEM con Adobe Campaign.
+seo-description: Aprenda a integrar AEM con Adobe Campaign.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 24%
 
 ---
 
@@ -24,7 +27,7 @@ Puede integrar esta versión de AEM con una de las siguientes versiones de Adobe
 * Adobe Campaign 6.1, que es la solución de instalación local.
 * Adobe Campaign Standard, que es la solución basada en suscripción.
 
-En esta documentación se describe cómo integrar AEM con Adobe Campaign. Dependiendo de si dispone de la solución basada en suscripciones o in situ, los pasos de integración variarán ligeramente.
+Esta documentación describe cómo integrar AEM con Adobe Campaign. Dependiendo de si dispone de una solución basada en suscripciones o in situ, los pasos de integración variarán ligeramente.
 
 * [Integración con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md)
 * [Integración con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
@@ -33,5 +36,5 @@ En esta documentación se describe cómo integrar AEM con Adobe Campaign. Depend
 
 >[!NOTE]
 >
->Para consultar un artículo relacionado de la comunidad de AEM, consulte: [Integración de Adobe Experience Manager y Adobe Campaign Standard para crear newsletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
+>Para revisar un artículo relacionado de la comunidad AEM, consulte: [Integración de Adobe Experience Manager y Adobe Campaign Standard para crear Newletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
 
