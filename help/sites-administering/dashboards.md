@@ -1,8 +1,8 @@
 ---
 title: Tableros
 seo-title: Tableros
-description: Obtenga información sobre cómo crear, configurar y desarrollar nuevos tableros de AEM.
-seo-description: Obtenga información sobre cómo crear, configurar y desarrollar nuevos tableros de AEM.
+description: Aprenda a crear, configurar y desarrollar nuevos paneles de AEM.
+seo-description: Aprenda a crear, configurar y desarrollar nuevos paneles de AEM.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 58%
 
 ---
 
@@ -23,7 +26,7 @@ Al utilizar AEM, podrá administrar mucho contenido de distintos tipos (p. ej. p
 >
 >Los tableros AEM se crean para cada usuario, para que cada uno pueda acceder a su propio tablero.
 >
->However, [Dashboard templates](#creating-a-dashboard-template) can be used to share common configuration and Dashboard layout.
+>Sin embargo, [las plantillas de Panel](#creating-a-dashboard-template) se pueden usar para compartir la configuración común y el diseño de Panel.
 
 ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -34,7 +37,7 @@ Al utilizar AEM, podrá administrar mucho contenido de distintos tipos (p. ej. p
 Para crear un tablero nuevo, realice las acciones siguientes:
 
 1. En la sección **Herramientas**, haga clic en **Consola de configuración**.
-1. In the tree, Double-Click **Dashboard**.
+1. En el árbol, Doble-Haga clic **Panel**.
 1. Haga clic en **Nuevo tablero**.
 1. Especifique el **Título** (p. ej. Mi tablero) y el **Nombre**.
 1. Haga clic en **Crear**.
@@ -52,7 +55,7 @@ Es posible que quiera tener varios tableros para ver información sobre el conte
 
 1. Especifique el **Nombre** del nuevo tablero.
 
-### Eliminación de un tablero {#removing-a-dashboard}
+### Eliminación de un tablero  {#removing-a-dashboard}
 
 1. En la sección **Herramientas**, haga clic en **Consola de configuración**.
 
@@ -63,15 +66,15 @@ Es posible que quiera tener varios tableros para ver información sobre el conte
 
 1. Haga clic en **Sí** para confirmar.
 
-## Componentes del tablero {#dashboard-components}
+## Componentes del tablero  {#dashboard-components}
 
 ### Información general {#overview}
 
-Los componentes de tablero no son más que componentes [normales de](/help/sites-developing/developing-components-samples.md)AEM. En esta sección se describen los componentes de informe que se envían con AEM.
+Los componentes de panel no son más que [componentes de AEM](/help/sites-developing/developing-components-samples.md) normales. En esta sección se describen los componentes de informe que se envían con AEM.
 
-### Componentes de informes analíticos web {#web-analytics-reporting-components}
+### Componentes de informes analíticos web  {#web-analytics-reporting-components}
 
-AEM incluye un conjunto de componentes que procesan varias métricas de los datos de [SiteCatalyst](/help/sites-administering/adobeanalytics.md) . Estos componentes se enumeran en la barra de tareas de la sección **Tablero**.
+AEM incluye un conjunto de componentes que procesan varias métricas de sus datos [de SiteCatalyst](/help/sites-administering/adobeanalytics.md). Estos componentes se enumeran en la barra de tareas de la sección **Tablero**.
 
 Cada componente de informe dispone de tres fichas como mínimo:
 
@@ -82,13 +85,13 @@ Cada componente de informe dispone de tres fichas como mínimo:
 
 Los componentes de informe se inician con una configuración predeterminada que le ayuda a configurar el tablero con rapidez.
 
-#### Configuración básica {#basic-configuration}
+#### Configuración básica  {#basic-configuration}
 
 La ficha **Básico** permite acceder a las entradas de configuración siguientes:
 
-**Título** El título que se muestra en el tablero.
+**** TítuloEl título que se muestra en el panel.
 
-**Tipo** de solicitud El modo en que se solicitan los datos.
+**Tipo** de solicitudEl modo en que se solicitan los datos.
 
 **Configuración de SiteCatalyst (opcional)** La configuración que desea utilizar para conectarse a SiteCatalyst. Si no se define, se asumirá que ya está configurada en la página Panel (mediante las propiedades de página).
 
@@ -102,57 +105,57 @@ Para mostrar las estadísticas de web, debe definir el intervalo de fechas para 
 >
 >Si se elige un intervalo de fechas muy grande, se reducirá el nivel de respuesta del tablero.
 
-**Fecha a partir** de la fecha absoluta o relativa desde la cual se recuperan los datos.
+**Fecha** desdeFecha absoluta o relativa desde la que se recuperan los datos.
 
-**Fecha hasta** la fecha absoluta o relativa a la que se recuperan los datos.
+**Fecha** aFecha absoluta o relativa a la que se recuperan los datos.
 
 Cada componente también define ajustes específicos.
 
-#### Informe de tiempo extra {#overtime-report}
+#### Informe de tiempo extra  {#overtime-report}
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularidad** de fecha Unidad de tiempo del eje X (por ejemplo: día, hora).
+**Fecha** GranularidadUnidad de tiempo del eje X (por ejemplo: día, hora).
 
-**Métricas** La lista de eventos que desea mostrar.
+**** MétricasLa lista de eventos que desea mostrar.
 
-**Elementos** Lista de elementos que desglosa los datos de métricas en el gráfico.
+**** ElementosLa lista de elementos que desglosa los datos de métricas en el gráfico.
 
 #### Informe de lista clasificada {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**Elementos** El elemento que desglosa los datos de métricas en el gráfico.
+**** ElementosElemento que desglosa los datos de métricas en el gráfico.
 
-**Métricas** El evento que desea mostrar.
+**** MétricasEl evento que desea mostrar.
 
-**No. de elementos** principales Número de elementos mostrados por el informe.
+**No. de elementos principales** Número de elementos mostrados por el informe.
 
 #### Informe clasificado {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
-**Métricas** El evento que desea mostrar.
+**** MétricasEl evento que desea mostrar.
 
-**Elementos** El elemento que desglosa los datos de métricas en el gráfico.
+**** ElementosElemento que desglosa los datos de métricas en el gráfico.
 
 #### Informe de sección de sitio principal {#top-site-section-report}
 
 Este componente muestra un gráfico sobre la sección más visitada del sitio web según la configuración siguiente.
 
-![chlimage_1-29](assets/chlimage_1-29a.png)
+![chlimage_1-21](assets/chlimage_1-29a.png)
 
-**No. de los elementos** principales Número de sección que se muestra en el informe.
+**No. de elementos principales** Número de sección mostrada por en el informe.
 
 #### Informe de tendencias {#trended-report}
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularidad** de fecha Unidad de tiempo del eje X (por ejemplo: día, hora).
+**Fecha** GranularidadUnidad de tiempo del eje X (por ejemplo: día, hora).
 
-**Métricas** El evento que desea mostrar.
+**** MétricasEl evento que desea mostrar.
 
-**Elementos** El elemento que desglosa los datos de métricas en el gráfico.
+**** ElementosElemento que desglosa los datos de métricas en el gráfico.
 
 ## Ampliación del tablero {#extending-dashboard}
 
@@ -160,25 +163,25 @@ Este componente muestra un gráfico sobre la sección más visitada del sitio we
 
 Los tableros son páginas normales (`cq:Page`), por lo que puede utilizarse cualquier componente para crearlos.
 
-There is a default component group `Dashboard` containing analytics reporting components which are enabled on the template by default.
+Hay un grupo de componentes predeterminado `Dashboard` que contiene componentes de sistema de informes de análisis que están activados en la plantilla de forma predeterminada.
 
 ### Creación de una plantilla de tablero {#creating-a-dashboard-template}
 
 Una plantilla define el contenido predeterminado de un tablero nuevo. Puede utilizar varias plantillas para crear diferentes tipos de tableros.
 
-Dashboard templates are created like other page templates, except that they are stored under `/libs/cq/dashboards/templates/`. Consulte la sección [Creación de plantillas](/help/sites-developing/website.md#creating-the-contentpage-template) de página de contenido.
+Las plantillas de panel se crean como otras plantillas de página, excepto que se almacenan en `/libs/cq/dashboards/templates/`. Consulte la sección [Creación de una plantilla de página de contenido](/help/sites-developing/website.md#creating-the-contentpage-template).
 
 >[!NOTE]
 >
 >Las plantillas de tablero se comparten entre usuarios.
 
-### Desarrollo de un componente de tablero {#developing-a-dashboard-component}
+### Desarrollo de un componente de tablero  {#developing-a-dashboard-component}
 
 El desarrollo de un componente de tablero consiste en la creación de un componente de AEM normal. En esta sección se describe un ejemplo de un componente que muestra los 10 colaboradores principales.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-The top author components is stored in the repository at `/apps/geometrixx-outdoors/components/reporting` and is composed of :
+Los componentes de creación principales se almacenan en el repositorio en `/apps/geometrixx-outdoors/components/reporting` y están compuestos por:
 
 1. un archivo `jsp` que lee datos jcr y define el marcador de posición `html`.
 
@@ -186,9 +189,9 @@ The top author components is stored in the repository at `/apps/geometrixx-outdo
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-El siguiente archivo Javascript se define en la Biblioteca `geout.reporting.topauthors` de [](/help/sites-developing/clientlibs.md) clientes como un elemento secundario del propio componente.
+El siguiente archivo Javascript se define en la `geout.reporting.topauthors` [Biblioteca de clientes](/help/sites-developing/clientlibs.md) como un elemento secundario del propio componente.
 
-El [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consultar el repositorio para leer `cq:AuditEvent` nodos. El resultado de la consulta es un objeto JSON desde el que se extraen las contribuciones de autor.
+El [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consulta del repositorio para leer los nodos `cq:AuditEvent`. El resultado de la consulta es un objeto JSON desde el que se extraen las contribuciones de autor.
 
 #### top_author.js {#top-authors-js}
 
@@ -235,7 +238,7 @@ $.ajax({
 });
 ```
 
-El `JSP` incluye `global.jsp` y `clientlib`.
+El `JSP` incluye tanto `global.jsp` como `clientlib`.
 
 #### top_author.jsp {#top-authors-jsp}
 
