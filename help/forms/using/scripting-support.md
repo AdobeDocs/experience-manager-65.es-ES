@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con secuencias de comandos para formularios HTML5
 seo-title: Compatibilidad con secuencias de comandos para formularios HTML5
-description: JavaScript, propiedades de FormCalc y otros métodos que se admiten en formularios HTML5 Forms.
-seo-description: JavaScript, propiedades de FormCalc y otros métodos que se admiten en formularios HTML5 Forms.
+description: JavaScript, propiedades de FormCalc y otros métodos admitidos en HTML5 Forms.
+seo-description: JavaScript, propiedades de FormCalc y otros métodos admitidos en HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -48,11 +48,11 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr>
    <td><code>newtext</code></td>
    <td>Especifica el contenido del campo después de los cambios determinados por las acciones de un usuario.</td>
-   <td><p>La <code>newText</code> propiedad no funciona correctamente en los siguientes casos:</p>
+   <td><p>La propiedad <code>newText</code> no funciona correctamente en los siguientes casos:</p>
     <ul>
      <li>Al seleccionar y reemplazar textos</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir algunas claves de caracteres especiales (por ejemplo $, (, ), &amp;, @, etc.) en los campos Numéricos<br /> </li>
+     <li>Al escribir algunas claves de caracteres especiales (por ejemplo $, (, ), &amp;, @, etc.) en los campos numéricos<br /> </li>
      <li>Al utilizar la combinación mayús+alfanumérica. </li>
      <li>Al usar campos de fecha y hora.</li>
     </ul>
@@ -67,7 +67,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
     <ul>
      <li>Al seleccionar y reemplazar textos</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir algunas claves de caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos Numéricos<br /> </li>
+     <li>Al escribir algunas claves de caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos numéricos<br /> </li>
      <li>Al utilizar la combinación mayús+alfanumérica. </li>
      <li>Al usar campos de fecha y hora.</li>
     </ul> <p>No se admite la configuración del valor mediante script.</p> </td>
@@ -131,7 +131,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Specifies whether validation scripts will execute.<br /> </td>
+   <td>Especifica si se ejecutarán las secuencias de comandos de validación.<br /> </td>
    <td>Ninguna</td>
   </tr>
   <tr>
@@ -204,17 +204,17 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr>
    <td><code>formattedValue</code></td>
    <td>Especifica el valor con formato para este campo.</td>
-   <td>No se admite la configuración <code>formattedValue</code> mediante script.</td>
+   <td>No se admite la configuración de <code>formattedValue</code> mediante script.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Especifica el valor de edición de este campo.</td>
-   <td>No se admite la configuración <code>editValue </code>mediante script.</td>
+   <td>No se admite la configuración de <code>editValue </code>mediante script.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Especifica la cadena del mensaje de validación de formato para este campo.</td>
-   <td>No se admite la configuración <code>formatMessage </code>mediante script.</td>
+   <td>No se admite la configuración de <code>formatMessage </code>mediante script.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -637,7 +637,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr>
    <td>edge</td>
    <td>El objeto edge describe un arco, una línea o un lado del borde de un rectángulo.<br /> </td>
-   <td>No se admiten atributos como color, gorro, etc.<br /> </td>
+   <td>No se admiten atributos como color, gorro y más.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -825,7 +825,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
  </tbody>
 </table>
 
-## imageEdit {#imageedit}
+## imageEdit  {#imageedit}
 
 | **Propiedad** | **Descripción** | **Excepción** |
 |---|---|---|
@@ -1117,7 +1117,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
 
 ### Funciones admitidas por FormCalc {#formcalc-supported-functions}
 
-### Compatibilidad con la Expresión de FormCalc {#formcalc-expression-support}
+### Compatibilidad con Expresión de FormCalc {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1137,7 +1137,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
    <td>var a<br /> var a=3<br /> a=3</td>
   </tr>
   <tr>
-   <td>expresión lógica</td>
+   <td>Expresión lógica</td>
    <td>
     <ul>
      <li>Lógica (y/o)</li>
@@ -1158,7 +1158,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   <tr>
    <td>para</td>
    <td><br type="_moz" /> </td>
-   <td>para i = 100 downto 1 <br /> do s = s + i endfor</td>
+   <td>for i = 100 downto 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>para cada</td>
@@ -1173,7 +1173,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
  </tbody>
 </table>
 
-### Compatibilidad con la API de Acrobat {#acrobat-api-support}
+### Compatibilidad con API de Acrobat {#acrobat-api-support}
 
 1. **Funciones aritméticas**
 
@@ -1313,11 +1313,11 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   <tr>
    <td>app.calculate</td>
    <td>Si es true (el valor predeterminado), se pueden realizar cálculos. Si es false, no se permiten cálculos.</td>
-   <td>Siempre es true para formularios HTMl5.</td>
+   <td>Siempre es true para HTMl5 Forms.</td>
   </tr>
   <tr>
    <td>app.constants</td>
-   <td>Un objeto envolvente para mantener varios valores constantes. Actualmente, esta propiedad devuelve un objeto con una sola propiedad, align.</td>
+   <td>Objeto envolvente para mantener varios valores constantes. Actualmente, esta propiedad devuelve un objeto con una sola propiedad, align.</td>
    <td>Los formularios HTML5 devuelven un objeto de alineación vacío.</td>
   </tr>
   <tr>
@@ -1338,7 +1338,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
  </tbody>
 </table>
 
-## eventos XFA admitidos {#supported-xfa-events}
+## Eventos XFA admitidos {#supported-xfa-events}
 
 Se admiten los siguientes eventos XFA del lado del cliente:
 
@@ -1353,4 +1353,4 @@ Se admiten los siguientes eventos XFA del lado del cliente:
 
 >[!NOTE]
 >
->Los formularios HTML5 se representan en el lado del cliente (navegador). Se recomienda utilizar secuencias de comandos de **validación** y **cálculo** del lado del cliente en lugar de secuencias de comandos del lado del servidor.
+>Los formularios HTML5 se representan en el lado del cliente (navegador). Se recomienda utilizar secuencias de comandos **validate** y **calculate** del lado del cliente en lugar de secuencias de comandos del lado del servidor.
