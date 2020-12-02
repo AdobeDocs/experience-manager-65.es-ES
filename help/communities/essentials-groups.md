@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Elementos esenciales del grupo de la comunidad  {#community-group-essentials}
+# Community Group Essentials {#community-group-essentials}
 
 La función de grupos de comunidad es la capacidad para que una subcomunidad sea creada dinámicamente dentro de un sitio de comunidad por usuarios autorizados desde los entornos de publicación y creación.
 
-A partir del paquete de [funciones 1](deploy-communities.md#latestfeaturepack)de Comunidades, es posible anidar grupos dentro de otros grupos
+A partir del paquete de funciones 1](deploy-communities.md#latestfeaturepack) de Communities [es posible que los grupos se aniden dentro de otros grupos
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -48,7 +48,7 @@ A partir del paquete de [funciones 1](deploy-communities.md#latestfeaturepack)de
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td>Consulte Grupo <a href="creating-groups.md">de la comunidad</a></td>
+   <td>Consulte <a href="creating-groups.md">Grupo de la comunidad</a></td>
   </tr>
  </tbody>
 </table>
@@ -66,7 +66,7 @@ A partir del paquete de [funciones 1](deploy-communities.md#latestfeaturepack)de
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>
@@ -88,15 +88,15 @@ A partir del paquete de [funciones 1](deploy-communities.md#latestfeaturepack)de
 
 ### Función Grupos {#groups-function}
 
-Una estructura de sitio de comunidad que incluya una función [](functions.md#groups-function) Grupos admitirá la creación de nuevos elementos `community groups` a partir de los entornos de publicación y autor. El grupo de comunidad creado incluirá un `community groups member list` componente que hará listas a los miembros del grupo.
+Una estructura de sitio de comunidad que incluye una [función de grupos](functions.md#groups-function) admitirá la creación de nuevos `community groups` desde los entornos de publicación y creación. El grupo de comunidad creado incluirá un componente `community groups member list` que lista a los miembros del grupo.
 
-Una o más plantillas [de grupo de](tools-groups.md)comunidad, que proporcionan el diseño de las páginas de grupo de comunidad, pueden configurarse para la función Grupos cuando la función se agrega a una plantilla [de sitio de](sites.md) comunidad o se anida dentro de una plantilla de grupo de comunidad.
+Una o más [plantillas de grupo de comunidad](tools-groups.md), que proporcionan el diseño de las páginas de grupo de comunidad, pueden configurarse para la función Grupos cuando la función se agrega a una [plantilla de sitio de comunidad](sites.md) o se anida dentro de una plantilla de grupo de comunidad.
 
-La inclusión de varias plantillas de grupo de comunidad da como resultado que se presente una opción de diseño al usuario autorizado en el momento en que se crea un nuevo grupo de comunidad para el sitio de comunidad, como se muestra en la sección sobre grupos [de](creating-groups.md) comunidad para autores.
+La inclusión de varias plantillas de grupo de comunidad da como resultado que se presente una opción de diseño al usuario autorizado en el momento en que se crea un nuevo grupo de comunidad para el sitio de comunidad, como se muestra en la sección sobre [grupos de comunidad](creating-groups.md) para autores.
 
 ### Grupos anidados {#nested-groups}
 
-A partir del [primer](deploy-communities.md#latestfeaturepack)PM de Comunidades, es posible incluir una función de Grupos en una plantilla de grupo, permitiendo así los grupos anidados (subcomunidades).
+En el caso de Communities [FP1](deploy-communities.md#latestfeaturepack), es posible incluir una función Groups en una plantilla de grupo, permitiendo así que los grupos anidados (subcomunidades).
 
 Cuando una plantilla de grupo o sitio de comunidad incluye la función Grupos, es posible:
 
