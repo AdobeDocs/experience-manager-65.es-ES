@@ -20,29 +20,29 @@ ht-degree: 0%
 
 # Base de datos IBM DB2: Ejecución de comandos para mantenimiento regular {#ibm-db-database-running-commands-for-regular-maintenance}
 
-Se recomiendan los siguientes comandos IBM DB2 para el mantenimiento regular de la base de datos de formularios AEM. Para obtener información detallada sobre el mantenimiento y el ajuste del performance de la base de datos DB2, consulte Guía *de administración de DB2 de* IBM.
+Se recomiendan los siguientes comandos IBM DB2 para el mantenimiento regular de la base de datos de formularios AEM. Para obtener información detallada sobre el mantenimiento y el ajuste del performance de la base de datos DB2, consulte *Guía de administración de IBM DB2*.
 
-* **runstats:** Este comando actualiza las estadísticas que describen las características físicas de una tabla de base de datos, junto con sus índices asociados. Las sentencias SQL dinámicas generadas por los formularios AEM utilizan automáticamente estas estadísticas actualizadas, pero las sentencias SQL estáticas generadas dentro de una base de datos requieren que el comando se ejecute también. `db2rbind`
-* **db2rbind:** Este comando reune todos los paquetes de la base de datos. Utilice este comando después de ejecutar la `runstats` utilidad para revalidar todos los paquetes de la base de datos.
+* **runstats:** Este comando actualiza las estadísticas que describen las características físicas de una tabla de base de datos, junto con sus índices asociados. Las sentencias SQL dinámicas generadas por AEM formularios utilizan automáticamente estas estadísticas actualizadas, pero las sentencias SQL estáticas generadas dentro de una base de datos requieren que el comando `db2rbind` también se ejecute.
+* **db2rbind:** Este comando reune todos los paquetes de la base de datos. Utilice este comando después de ejecutar la utilidad `runstats` para revalidar todos los paquetes de la base de datos.
 * **reorganizar tabla o índice:** Este comando comprueba si es necesario reorganizar algunas tablas e índices.
 
    A medida que las bases de datos crecen y cambian, es fundamental volver a calcular las estadísticas de las tablas para mejorar el rendimiento de las bases de datos y se deben realizar con regularidad. Estos comandos se pueden ejecutar manualmente mediante secuencias de comandos o mediante un trabajo cron.
 
 >[!NOTE]
 >
->Antes de ejecutar el `runstats` comando, la base de datos debe contener datos y se debe realizar al menos una sincronización de directorio.
+>Antes de ejecutar el comando `runstats`, la base de datos debe contener datos y se debe realizar al menos una sincronización de directorio.
 
-Para una base de datos pequeña, como para 10.000 usuarios o 2.500 grupos, es suficiente invocar el `runstats` comando para reducir los tiempos de sincronización.
+Para una base de datos pequeña, como para 10.000 usuarios o 2.500 grupos, es suficiente invocar el comando `runstats` para reducir los tiempos de sincronización.
 
-Para bases de datos más grandes, como por ejemplo para 100.000 usuarios o 10.000 grupos, ejecute el `reorg` comando antes de ejecutar el `runstats` comando.
+Para bases de datos más grandes, como por ejemplo para 100.000 usuarios o 10.000 grupos, ejecute el comando `reorg` antes de ejecutar el comando `runstats`.
 
-## Utilice el comando runstats en la base de datos de formularios AEM {#use-the-runstats-command-on-your-aem-forms-database}
+## Utilice el comando runstats de la base de datos de formularios AEM {#use-the-runstats-command-on-your-aem-forms-database}
 
-Ejecute el `runstats` comando en las siguientes tablas e índices de base de datos de formularios AEM.
+Ejecute el comando `runstats` en las siguientes tablas e índices de la base de datos de formularios AEM.
 
 >[!NOTE]
 >
->El `runstats` comando solo debe ejecutarse durante la primera sincronización de base de datos. Sin embargo, debe ejecutarse dos veces durante ese proceso: una vez durante la sincronización de Usuarios y Grupos y luego durante la sincronización de Miembros del Grupo. Asegúrese de que la secuencia de comandos se ejecuta completamente cada vez que la ejecute.
+>El comando `runstats` sólo debe ejecutarse durante la primera sincronización de la base de datos. Sin embargo, debe ejecutarse dos veces durante ese proceso: una vez durante la sincronización de Usuarios y Grupos y luego durante la sincronización de Miembros del Grupo. Asegúrese de que la secuencia de comandos se ejecuta completamente cada vez que la ejecute.
 
 Para obtener información sobre la sintaxis y el uso correctos, consulte la documentación del fabricante de la base de datos. A continuación, `<schema>` se utiliza para denotar el esquema asociado con el nombre de usuario de DB2. Si tiene una simple instalación de DB2 predeterminada, éste es el nombre del esquema de la base de datos.
 
@@ -68,9 +68,9 @@ Para obtener información sobre la sintaxis y el uso correctos, consulte la docu
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## Ejecutar el comando reorganizar en la base de datos de formularios de AEM {#run-the-reorg-command-on-your-aem-forms-database}
+## Ejecute el comando reorganizar en la base de datos de formularios AEM {#run-the-reorg-command-on-your-aem-forms-database}
 
-Ejecute el `reorg` comando en las siguientes tablas e índices de base de datos de formularios AEM. Para obtener información sobre la sintaxis y el uso correctos, consulte la documentación del fabricante de la base de datos.
+Ejecute el comando `reorg` en las siguientes tablas e índices de la base de datos de formularios AEM. Para obtener información sobre la sintaxis y el uso correctos, consulte la documentación del fabricante de la base de datos.
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
