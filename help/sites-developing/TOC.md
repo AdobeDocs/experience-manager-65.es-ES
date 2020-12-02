@@ -41,7 +41,7 @@ ht-degree: 13%
    + [Bibliotecas de etiquetas](taglib.md)
    + Plantillas{#templates}
       + [Plantillas](templates.md)
-      + [Plantillas de página: editables ](page-templates-editable.md)
+      + [Plantillas de página: editables  ](page-templates-editable.md)
       + [Plantillas de página: estáticas](page-templates-static.md)
       + [Plantillas de fragmento de contenido](content-fragment-templates.md)
       + [Representación de plantilla adaptable](templates-adaptive-rendering.md)
@@ -94,7 +94,7 @@ ht-degree: 13%
       + [Internacionalización de cadenas de IU](i18n-dev.md)
       + [Uso del traductor para administrar diccionarios](i18n-translator.md)
       + [Extracción de cadenas para traducir](i18n-extract.md)
-   + Componentes de la interfaz de usuario clásica{#classic-ui-components}
+   + Componentes de la IU clásica{#classic-ui-components}
       + [Desarrollo de componentes de AEM (IU clásica)](developing-components-classic.md)
       + [Uso y ampliación de utilidades (IU clásica)](widgets.md)
       + [Uso de xtypes (IU clásica)](xtypes.md)
