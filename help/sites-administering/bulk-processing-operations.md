@@ -10,6 +10,9 @@ discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 3%
 
 ---
 
@@ -22,9 +25,9 @@ Con la versión más reciente de AEM, el botón Seleccionar todo se ha ampliado 
 
 Se habilitaron acciones clave para la operación masiva: **Mover**, **Eliminar** y **Copiar**. Un nuevo cuadro de diálogo permitirá a los clientes saber para qué acciones no está disponible el procesamiento masivo.
 
-## How To Use {#how-to-use}
+## Cómo usar {#how-to-use}
 
-Se ha agregado un nuevo botón llamado **Seleccionar todo** a las vistas de tarjeta, lista o columna. Este botón se puede utilizar en cualquiera de las vistas para seleccionar todos los elementos del conjunto de datos.
+Se ha agregado un nuevo botón llamado **Seleccionar todo** a las vistas de tarjeta, Lista o columna. Este botón se puede utilizar en cualquiera de las vistas para seleccionar todos los elementos del conjunto de datos.
 
 En versiones anteriores de AEM, la selección estaba limitada a lo que se cargaba en el navegador del cliente. Estos nuevos cambios se han introducido para evitar confusiones en cuanto al número de elementos en los que se está realizando una operación masiva.
 
@@ -43,21 +46,21 @@ A continuación, elija una de las vistas, como se muestra a continuación:
 
 ![](assets/unu.png)
 
-### Selección masiva en la vista de tarjeta {#bulk-selection-in-card-view}
+### Selección masiva en la Vista de tarjetas {#bulk-selection-in-card-view}
 
 Los recursos o las páginas se pueden seleccionar de forma masiva mediante el botón **Seleccionar todo** en la parte superior derecha:
 
 ![](assets/doi.png) ![](assets/trei.png)
 
-### Vista de lista {#list-view}
+### Vista de lista    {#list-view}
 
-Lo mismo ocurre con la vista de lista:
+Lo mismo ocurre con la Vista de Lista:
 
 ![](assets/patru_modified.png)
 
-### Bulk Selection in List View {#bulk-selection-in-list-view}
+### Selección masiva en Vista de Lista {#bulk-selection-in-list-view}
 
-En la vista de lista, utilice el botón **Seleccionar todo** o la casilla de verificación de la izquierda para la selección masiva.
+En la Vista de Lista, utilice el botón **Seleccionar todo** o utilice la casilla de verificación de la izquierda para la selección masiva.
 
 ![](assets/cinci.png) ![](assets/sase.png)
 
@@ -65,11 +68,11 @@ En la vista de lista, utilice el botón **Seleccionar todo** o la casilla de ver
 
 ![](assets/sapte.png)
 
-### Selección masiva en la vista de columnas {#bulk-selection-in-column-view}
+### Selección masiva en Vista de columna {#bulk-selection-in-column-view}
 
 ![](assets/opt.png)
 
-## Operaciones con activación masiva {#bulk-enabled-operations}
+## Operaciones habilitadas por lotes {#bulk-enabled-operations}
 
 Tras la selección, se puede realizar una de las tres acciones habilitadas de forma masiva: **Mover**, **Copiar** o **Eliminar**.
 
@@ -77,6 +80,6 @@ Aquí, la operación **Mover** se realiza en los recursos seleccionados arriba. 
 
 ![](assets/noua.png)
 
-Para otras operaciones que no están habilitadas de forma masiva, como **Descargar,** se mostrará una advertencia indicando que solo se incluirán en la operación los elementos cargados en el explorador.
+Para otras operaciones que no están habilitadas de forma masiva, como **Descargar,** se mostrará una advertencia que indica que solo se incluirán en la operación los elementos cargados en el explorador.
 
 ![](assets/zece.png)
