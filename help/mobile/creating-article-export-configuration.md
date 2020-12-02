@@ -1,8 +1,8 @@
 ---
 title: Creación de la configuración de exportación de artículos
 seo-title: Creación de la configuración de exportación de artículos
-description: Siga esta página para obtener información sobre la exportación de contenido desde Adobe Experience Manager (AEM) para cargarlo en AEM Mobile.
-seo-description: Siga esta página para obtener información sobre la exportación de contenido desde Adobe Experience Manager (AEM) para cargarlo en AEM Mobile.
+description: Siga esta página para obtener información sobre la exportación de contenido de Adobe Experience Manager (AEM) para cargarlo en AEM Mobile.
+seo-description: Siga esta página para obtener información sobre la exportación de contenido de Adobe Experience Manager (AEM) para cargarlo en AEM Mobile.
 uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
@@ -25,41 +28,42 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >**Requisitos previos**:
 >
->Antes de aprender a crear y modificar recursos compartidos, consulte Sincronización [de contenido](/help/mobile/mobile-ondemand-contentsync.md) para comprender los conceptos básicos.
+>Antes de aprender a crear y modificar recursos compartidos, consulte [Sincronización de contenido](/help/mobile/mobile-ondemand-contentsync.md) para comprender los conceptos básicos.
 
 Los usuarios de AEM Mobile utilizan la sincronización de contenido para exportar contenido en directo a contenido estático y utilizarlo en aplicaciones móviles. Esta exportación se produce cuando el contenido se carga en Mobile On-Demand Services desde AEM Mobile.
 
 La propiedad ***dps-exportTemplate*** mencionada en la tabla anterior define la ruta a las configuraciones de exportación de la aplicación. Establezca esta propiedad para crear y modificar recursos compartidos.
 
-Los siguientes recursos describen la exportación de contenido desde Adobe Experience Manager (AEM) para cargarlo en AEM Mobile.
+Los siguientes recursos describen la exportación de contenido de Adobe Experience Manager (AEM) para cargarlo en AEM Mobile.
 
 Los artículos tienen contenido que se debe exportar y cargar. Parte de este contenido se puede compartir entre artículos.
 
-Utilice [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para reunir el contenido y crear un paquete de recursos ****** compartidos.
+Utilice [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para reunir el contenido y crear un paquete ***Shared Resources***.
 
 La configuración de ContentSync que se encuentra en **&lt;dps-exportTemplate>/dps-article>** debe configurarse para exportar todo el contenido que un artículo requiere para la representación estática de propiedades en el dispositivo.
 
 >[!CAUTION]
 >
->Puede realizar los pasos siguientes para ver los recursos compartidos de muestra, solo si tiene:
+>Puede realizar los pasos siguientes para vista de recursos compartidos de muestra, solo si tiene:
 >
 >* se instaló el contenido de muestra
->* ejecución de una instancia de AEM
+>* ejecución de AEM instancia
 >* no hay contexto personalizado configurado o un puerto diferente
+
 >
 
 
 
-Para ver un recurso compartido de muestra, consulte los pasos siguientes:
+Para vista de recursos compartidos de muestra, consulte los pasos siguientes:
 
-1. Abra CRXDE Lite en su servidor AEM.
-1. Vaya a esta ruta [/etc/contentsync/templates/dps-we-less-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article)para ver los recursos compartidos de muestra.
+1. Abra el CRXDE Lite en el servidor AEM.
+1. Vaya a esta ruta [/etc/contentsync/templates/dps-we-ilimitado-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) para vista de los recursos compartidos de muestra.
 
-   Puede ver todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:
+   Puede realizar la vista de todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
->Los artículos deben cargarse o exportarse a On-Demand Services de AEM Mobile cuando cambie el contenido de los artículos.
+>Los artículos deben cargarse o exportarse a AEM Mobile On-demand Services cuando el contenido de los artículos cambia.
 
