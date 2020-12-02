@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
 source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 4%
 
 ---
 
 
-# Elementos básicos de gráficos sociales {#social-graph-essentials}
+# Social Graph Essentials {#social-graph-essentials}
 
-La capacidad de un miembro de la Comunidad para seguir [las actividades](essentials-activities.md) y seguir las mismas se establece mediante dos componentes:
+La capacidad de un miembro de la comunidad para seguir [actividades](essentials-activities.md) y seguir se establece mediante dos componentes:
 
-El `following` componente debe estar asociado con otro recurso, y esta asociación ya está establecida para los miembros existentes de Comunidades y funciones en un sitio [de](overview.md#communitiessites)comunidad.
+El componente `following` debe asociarse con otro recurso y esta asociación ya está establecida para los miembros y funciones existentes de Communities en un [sitio de comunidad](overview.md#communitiessites).
 
-El `following` componente lista los miembros que siguen al miembro actual o que siguen el miembro actual. Este gráfico social de las relaciones entre los miembros se incluye en el perfil de usuario creado para un sitio de comunidad.
+El componente `following` lista los miembros que siguen al miembro actual o que siguen el miembro actual. Este gráfico social de las relaciones entre los miembros se incluye en el perfil de usuario creado para un sitio de comunidad.
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -51,20 +54,20 @@ El `following` componente lista los miembros que siguen al miembro actual o que 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="socialgraph.md">Uso de gráficos sociales</a></td>
+   <td>Consulte <a href="socialgraph.md">Uso de Social Graph</a></td>
   </tr>
   <tr>
-   <td><strong> opcional<br /> , propiedad</strong></td>
+   <td><strong> opcional<br />, propiedad</strong></td>
    <td>
     <ul>
      <li>Nombre: <strong><code>outgoing</code></strong></li>
      <li>Tipo: Boolean (booleano)</li>
      <li>Value:<br />
       <ul>
-       <li><i>Verdadero </i>- El <code>following</code> componente lista a los miembros que el miembro que ha iniciado sesión en ese momento <code>follows</code></li>
-       <li><i>False </i>- El <code>following</code> componente lista los miembros que <code>follow </code>el miembro que ha iniciado sesión en ese momento</li>
+       <li><i>Verdadero  </i>- El  <code>following</code> componente lista a los miembros que son el miembro que ha iniciado sesión en ese momento <code>follows</code></li>
+       <li><i>Falso  </i>- El  <code>following</code> componente lista a los miembros que  <code>follow </code>el miembro que ha iniciado sesión en ese momento</li>
       </ul> </li>
-    </ul> <p>El valor predeterminado es <i>true</i> si falta la propiedad. Actualmente, no es posible establecer esta propiedad mediante el cuadro de diálogo de edición en modo de autor. La propiedad debe agregarse a una instancia del <code>following </code>nodo mediante <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>El valor predeterminado es <i>true</i> si falta la propiedad. Actualmente, no es posible establecer esta propiedad mediante el cuadro de diálogo de edición en modo de autor. La propiedad debe agregarse a una instancia del nodo <code>following </code>mediante <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -73,8 +76,8 @@ El `following` componente lista los miembros que siguen al miembro actual o que 
 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
-| [**inclusible **](scf.md#add-or-include-a-communities-component) | No |
-| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| [**inclusible**](scf.md#add-or-include-a-communities-component) | No |
+| **plantillas** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Personalizaciones del lado del cliente](client-customize.md)
