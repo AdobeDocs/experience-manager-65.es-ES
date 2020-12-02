@@ -23,8 +23,8 @@ ht-degree: 84%
 
 Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o marcas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el contenido relacionado.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como también sobre las etiquetas de contenido que se han aplicado.
+* Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de etiquetado, así como sobre la inclusión y ampliación de etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}
 
@@ -45,7 +45,7 @@ A la hora de diseñar la estructura de contenido para un sitio y el esquema de m
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
+Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en la ventana **Propiedades de la página** utilice el campo **Etiquetas** y la ventana **Seleccionar etiquetas**. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
 
 ![Ventana Seleccionar etiquetas; utilizar el botón X para anular la selección de las etiquetas seleccionadas](assets/chlimage_1-41.png)
 
