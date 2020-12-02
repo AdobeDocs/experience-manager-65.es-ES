@@ -18,11 +18,11 @@ ht-degree: 5%
 ---
 
 
-# Inicio de sesión en flujos de trabajo AEM Forms{#logging-in-aem-forms-workflows}
+# Inicio de sesión en flujos de trabajo de AEM Forms{#logging-in-aem-forms-workflows}
 
-Los pasos del flujo de trabajo de formularios proporcionan registros detallados para depurar convenientemente los problemas relacionados con el flujo de trabajo. Habilite el registro de depuración para flujos de trabajo de AEM Forms para la vista de los registros.
+Los pasos del flujo de trabajo de Forms proporcionan registros detallados para depurar convenientemente los problemas relacionados con el flujo de trabajo. Habilite el registro de depuración para flujos de trabajo de AEM Forms para la vista de los registros.
 
-De forma predeterminada, toda la información de registro está disponible en el archivo **error.log** en el directorio */crx-repository/logs/* .
+De forma predeterminada, toda la información de registro está disponible en el archivo **error.log** del directorio */crx-Repository/logs/*.
 
 Los registros de depuración de los flujos de trabajo de formularios incluyen:
 
@@ -77,21 +77,21 @@ Utilice los registros para evaluar que:
 
 Si hay una excepción, puede realizar la vista del seguimiento completo de la pila para evaluar la causa del error.
 
-## Habilitar el registro de depuración para flujos de trabajo AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
+## Habilitar el registro de depuración para flujos de trabajo de AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Realice los siguientes pasos para habilitar el registro de depuración para flujos de trabajo AEM Forms:
+Realice los siguientes pasos para habilitar el registro de depuración para flujos de trabajo de AEM Forms:
 
-1. Vaya al administrador de configuración de la consola web de AEM en:
+1. Vaya a AEM administrador de configuración de consola web en:
 
    https://&#39;[server]:[port]&#39;/system/console/configMgr
 
-1. Seleccione **[!UICONTROL Sling]** > Compatibilidad con **[!UICONTROL registro]**.
+1. Seleccione **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
 1. Toque **[!UICONTROL Añadir nuevo registrador.]**
-1. Seleccione **[!UICONTROL Depurar]** como nivel **[!UICONTROL de registro]**.
+1. Seleccione **[!UICONTROL Depurar]** como **[!UICONTROL Nivel de registro]**.
 1. Especifique la ubicación del archivo de registro. La ubicación predeterminada para el archivo de registro es: *logs\error.log*
-1. Especifique el nombre del paquete como **com.adobe.granite.workflow.core** en la columna **[!UICONTROL Logger]** .
+1. Especifique el nombre del paquete como **com.adobe.granite.workflow.core** en la columna **[!UICONTROL Logger]**.
 
-   La ejecución de estos pasos permite almacenar los registros de depuración para el paquete **com.adobe.granite.workflow.core** . Toque **[!UICONTROL +]** y agregue los siguientes nombres de paquete a la lista:
+   La ejecución de estos pasos permite almacenar los registros de depuración para el paquete **com.adobe.granite.workflow.core**. Toque **[!UICONTROL +]** y agregue los siguientes nombres de paquete a la lista:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace
