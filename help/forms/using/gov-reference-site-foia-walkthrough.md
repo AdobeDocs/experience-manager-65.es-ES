@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Recorrido por FOIA del sitio de referencia We.Gov {#we-gov-reference-site-foia-walkthrough}
+# Recorrido FOIA del sitio de referencia We.Gov {#we-gov-reference-site-foia-walkthrough}
 
 ## Situación de la Ley de libertad de información del sitio de referencia {#reference-site-freedom-of-information-act-scenario}
 
@@ -28,7 +28,7 @@ We.Gov es una organización estatal que permite a los padres adoptivos inscribir
 * Departamento de la Marina
 * Organismo de Protección del Medio Ambiente
 
-Para obtener más información sobre la Ley de libertad de información, consulte [www.foia.gov](https://www.foia.gov).
+Para obtener más información sobre la Ley de libertad de información, véase [www.foia.gov](https://www.foia.gov).
 
 El escenario incluye las siguientes personas:
 
@@ -36,7 +36,7 @@ El escenario incluye las siguientes personas:
 * John Jacobs, la persona que maneja la solicitud, la envía al departamento correspondiente
 * Gloria Rios, la empleada del gobierno que facilita la información según la solicitud
 
-## Sarah inicia una solicitud de información en el marco de FOIA {#sarah-initiates-request-for-information-under-foia}
+## Sarah inicia la solicitud de información en FOIA {#sarah-initiates-request-for-information-under-foia}
 
 Según la Ley de Libertad de Información, Sarah solicita copia de los registros de casos de la Administración para Niños y Familias durante años (año fiscal) 2013 a 2016. Sarah presenta esta solicitud al Departamento de Justicia - Oficina de Política de Información y también significa que está dispuesta a pagar hasta 100 dólares de los EE.UU. por los gastos de impresión y franqueo.
 
@@ -44,11 +44,11 @@ Según la Ley de Libertad de Información, Sarah solicita copia de los registros
 
 ### Véalo usted mismo {#see-it-yourself}
 
-In your browser, open `https://<hostname>:<PublishPort>/wegov`. En el sitio Web We.Gov, toque Aplicaciones > Todas las aplicaciones. En la página Todas las aplicaciones, toque Aplicar en Aplicación para Solicitud FOIA.
+En el explorador, abra `https://<hostname>:<PublishPort>/wegov`. En el sitio Web We.Gov, toque Aplicaciones > Todas las aplicaciones. En la página Todas las aplicaciones, toque Aplicar en Aplicación para Solicitud FOIA.
 
-## Sarah inicio su solicitud de información para FOIA {#sarah-starts-her-application-for-information-under-foia}
+## Sarah inicio su solicitud de información en FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah hace clic en **Aplicar** y en la página de Solicitud de Ley de Libertad de Información, Sarah introduce información que incluye lo siguiente:
+Sarah hace clic en **Aplicar** y en la página de Solicitud de Ley de Libertad de Información, Sarah ingresa información que incluye lo siguiente:
 
 * **Agencia:** Sarah especifica la agencia a la que se dirigió la solicitud como Departamento de Justicia - Oficina de Política de Información.
 
@@ -75,7 +75,7 @@ Cuando Sarah rellena y envía la solicitud FOIA, se envía un registro de la sol
 
 ### Véalo usted mismo {#see-it-yourself-1}
 
-Puede acceder a la bandeja de entrada AEM en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la bandeja de entrada AEM, utilizando jjacobs/password como nombre de usuario/contraseña para John Jacobs, y consulte la aplicación FOIA. Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de flujo de trabajo centradas en formularios, consulte [Administrar aplicaciones y tareas de Forms en AEM Bandeja de entrada](/help/forms/using/manage-applications-inbox.md).
+Puede acceder a la bandeja de entrada AEM en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la bandeja de entrada AEM, utilizando jjacobs/password como nombre de usuario/contraseña para John Jacobs, y consulte la aplicación FOIA. Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de flujo de trabajo centradas en formularios, consulte [Administración de aplicaciones y tareas de Forms en AEM Bandeja de entrada](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -99,7 +99,7 @@ Después de que John Jacobs rellene la información requerida y apruebe la solic
 
 Cuando John Jacobs aprueba la solicitud FOIA, se crea un PDF o Documento de registro de la aplicación y se envía a la bandeja de entrada de Gloria Rios. Gloria puede vista de la solicitud enviada y aprobarla o rechazarla.
 
-### Véalo usted mismo {#see-for-yourself}
+### Consulte usted mismo {#see-for-yourself}
 
 Puede acceder a la bandeja de entrada AEM en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la bandeja de entrada AEM con grios/password como nombre de usuario/contraseña para Gloria Rios, y consulte la solicitud FOIS.
 
@@ -107,7 +107,7 @@ Gloria abre la solicitud y examina los detalles de la solicitud FOIA. Después d
 
 ![gloriariosaprueba](assets/gloriariosapproves.png)
 
-## Sarah recibe una notificación de que su solicitud ha sido aprobada {#sarah-receives-notification-that-her-request-is-approved}
+## Sarah recibe la notificación de que su solicitud ha sido aprobada {#sarah-receives-notification-that-her-request-is-approved}
 
 Después de que Gloria apruebe la solicitud de FOIA, Sarah recibe un correo electrónico que le notifica que su solicitud ha sido aprobada. El correo electrónico también incluye la información sobre la cronología provisional para proporcionar el documento y los detalles de contacto para el seguimiento de la solicitud.
 
