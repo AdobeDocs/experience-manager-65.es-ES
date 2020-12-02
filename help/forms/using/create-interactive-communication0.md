@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
-Este tutorial es un paso en la [serie Crear una primera comunicación](/help/forms/using/create-your-first-interactive-communication.md) interactiva. Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
+Este tutorial es un paso en la serie [Crear su primera comunicación interactiva](/help/forms/using/create-your-first-interactive-communication.md). Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
 
 Una vez que haya creado todos los componentes básicos, como modelo de datos de formulario, fragmentos de documento, plantillas y temáticas para la versión web, puede crear un inicio para crear una comunicación interactiva.
 
@@ -39,24 +39,24 @@ Este tutorial le guiará por los pasos para crear comunicaciones interactivas pa
 
 A continuación se muestra la lista de recursos que ya se han creado en este tutorial y que son necesarios al crear la comunicación interactiva para el canal de impresión:
 
-**Imprimir plantilla:** [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
+**Plantilla de impresión:** [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
 
 **Modelo de datos de formulario:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Fragmentos de Documento:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_loads_first_ic](../../forms/using/create-document-fragments.md)
+**Fragmentos de documento:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_loads_first_ic](../../forms/using/create-document-fragments.md)
 
 **Fragmentos de diseño:** [table_lf](../../forms/using/create-templates-print-web.md)
 
 **Imágenes:** PayNow y ValueAddedServices
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
-1. Toque **Crear** y seleccione Comunicación **** interactiva. Se muestra el asistente **Crear comunicación** interactiva.
-1. Especifique **create_first_ic** en el campo **Título** y **Nombre** . Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
-1. En el asistente de **Canales** :
+1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documentos]**.
+1. Toque **Crear** y seleccione **Comunicación interactiva**. Se muestra el asistente **Crear comunicación interactiva**.
+1. Especifique **create_first_ic** en el campo **Título** y el campo **Nombre**. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
+1. En el asistente para **Canales**:
 
-   1. Especifique **create_first_ic_print_template** como plantilla de impresión y toque **Seleccionar**. Asegúrese de que la casilla de verificación **Usar impresión como Canal** principal no está seleccionada.
+   1. Especifique **create_first_ic_print_template** como plantilla de impresión y toque **Seleccionar**. Asegúrese de que la casilla **Usar impresión como principal para Canal Web** no está seleccionada.
 
-   1. Especifique la carpeta **Create_First_IC_templates** > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
+   1. Especifique **Create_First_IC_templates** carpeta > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
 
    1. Toque **Crear**.
 
@@ -73,34 +73,34 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    | bill_summary_first_ic | Resumen de factura |
    | summary_loads_first_interactive_Communication | Cargos |
 
-   ![Fragmentos de Documento para comunicaciones interactivas](assets/create_first_ic_doc_fragments_new.png)
+   ![Fragmentos de documento para comunicaciones interactivas](assets/create_first_ic_doc_fragments_new.png)
 
-1. Toque **destinatario Gráficos** y toque **+** para agregar un componente **Gráfico** .
-1. Puntee en el componente Gráfico y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
+1. Toque **Área de destinatario de gráficos** y toque **+** para agregar un componente **Gráfico**.
+1. Toque el componente Gráfico y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
 
    1. Especifique un nombre para el gráfico.
-   1. Seleccione **Circular** en la lista desplegable Tipo **de** gráfico.
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección del eje **** X. Toque ![done_icon](assets/done_icon.png).
-   1. Seleccione **Frecuencia** en la lista desplegable **Función** .
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección eje **** Y. Toque ![done_icon](assets/done_icon.png).
+   1. Seleccione **Gráfico** en la lista desplegable **Tipo de gráfico**.
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **eje X**. Toque ![done_icon](assets/done_icon.png).
+   1. Seleccione **Frecuencia** en la lista desplegable **Función**.
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Y-axis**. Toque ![done_icon](assets/done_icon.png).
    1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
-1. Vaya a la ficha **Recursos** y aplique el filtro para mostrar solo los fragmentos de diseño en el panel izquierdo. Arrastre el fragmento de diseño **table_lf** y suéltelo en el área de destinatario Llamadas **** ordenadas.
+1. Vaya a la ficha **Recursos** y aplique el filtro para mostrar solo los fragmentos de diseño en el panel izquierdo. Arrastre y suelte el fragmento de diseño **table_lf** en el área de destinatario **Llamadas por elemento**.
 1. Seleccione el Campo de texto en la columna **Fecha** y toque ![configure_icon](assets/configure_icon.png) (Configurar).
-1. Seleccione Objeto **** de modelo de datos en la lista desplegable Tipo **de** enlace y seleccione **llamadas** > **fecha** de llamada. Toque ![done_icon](assets/done_icon.png) dos veces para guardar las propiedades.
+1. Seleccione **Objeto del modelo de datos** en la lista desplegable **Tipo de enlace** y seleccione **llamadas** > **fecha de llamada**. Toque ![done_icon](assets/done_icon.png) dos veces para guardar las propiedades.
 
-   Del mismo modo, cree enlaces con **llamada**, **número** de llamada, duración **de** llamada y **cargas** de llamada para los campos de texto en las columnas **Tiempo************** , Número, Duracióny Gastos.
+   Del mismo modo, cree un enlace con **calltime**, **callnumber**, **callduration** y **callloads** para campos de texto en los campos **Time**, **Number**, **Columnas Duración** y **Cargos** respectivamente.
 
-1. Toque **Pagar ahora** el área de destinatario y toque **+** para agregar un componente **Imagen** .
+1. Toque **PagarAhora** área de destinatario y toque **+** para agregar un componente **Imagen**.
 1. Toque el componente Imagen y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades de imagen se muestran en el panel izquierdo:
 
-   1. Especifique **PayNow** como nombre de la imagen en el campo **Nombre** .
+   1. Especifique **PayNow** como nombre de la imagen en el campo **Name**.
    1. Toque **Cargar**, seleccione la imagen guardada en el sistema de archivos local y toque **Abrir**.
    1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades de la imagen.
 
-1. Repita los pasos 13 y 14 para agregar la imagen **ValueAddedServices** al área de destinatario **ValueAddedServices** .
+1. Repita los pasos 13 y 14 para agregar **ValueAddedServices** imagen al área de destinatario **ValueAddedServices**.
 
-### Create Interactive Communication for Web channel {#create-interactive-communication-for-web-channel}
+### Crear comunicación interactiva para canal Web {#create-interactive-communication-for-web-channel}
 
 A continuación se muestra la lista de recursos que ya se han creado en este tutorial y que son necesarios al crear la comunicación interactiva para el canal web:
 
@@ -108,18 +108,18 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
 **Modelo de datos de formulario:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Fragmentos de Documento:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_loads_first_ic](../../forms/using/create-document-fragments.md)
+**Fragmentos de documento:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_loads_first_ic](../../forms/using/create-document-fragments.md)
 
 **Imágenes:** PayNowWeb y ValueAddedServicesWeb
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
-1. Toque **Crear** y seleccione Comunicación **** interactiva. Se muestra el asistente **Crear comunicación** interactiva.
-1. Especifique **create_first_ic** en el campo **Título** y **Nombre** . Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
-1. En el asistente de **Canales** :
+1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documentos]**.
+1. Toque **Crear** y seleccione **Comunicación interactiva**. Se muestra el asistente **Crear comunicación interactiva**.
+1. Especifique **create_first_ic** en el campo **Título** y el campo **Nombre**. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
+1. En el asistente para **Canales**:
 
-   1. Especifique **create_first_ic_print_template** como plantilla de impresión y toque **Seleccionar**. Asegúrese de que la casilla de verificación **Usar impresión como Canal** principal no está seleccionada.
+   1. Especifique **create_first_ic_print_template** como plantilla de impresión y toque **Seleccionar**. Asegúrese de que la casilla **Usar impresión como principal para Canal Web** no está seleccionada.
 
-   1. Especifique la carpeta **Create_First_IC_templates** > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
+   1. Especifique **Create_First_IC_templates** carpeta > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
 
    1. Toque **Crear**.
 
@@ -137,66 +137,66 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    | bill_summary_first_ic | Resumen de factura |
    | summary_loads_first_interactive_Communication | Cargos |
 
-1. Puntee en **Resumen del área de destinatario Cargos** y toque **+** para agregar un componente **Gráfico** .
-1. Puntee en el componente Gráfico y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
+1. Toque **Resumen de cargos** área de destinatario y toque **+** para agregar un componente **Gráfico**.
+1. Toque el componente Gráfico y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades del gráfico se muestran en el panel izquierdo:
 
    1. Especifique un nombre para el gráfico.
-   1. Seleccione **Circular** en la lista desplegable Tipo **de** gráfico.
+   1. Seleccione **Gráfico** en la lista desplegable **Tipo de gráfico**.
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección del eje **** X. Toque ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **eje X**. Toque ![done_icon](assets/done_icon.png).
 
-   1. Seleccione **Frecuencia** en la lista desplegable **Función** .
+   1. Seleccione **Frecuencia** en la lista desplegable **Función**.
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos de **llamadas** en la sección eje **** Y. Toque ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Y-axis**. Toque ![done_icon](assets/done_icon.png).
 
    1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
-1. Seleccione la ficha Fuentes **de** datos en el panel izquierdo y arrastre y suelte el objeto del modelo de datos de **llamadas** en el área de destinatario Llamadas **** ordenadas. Todas las propiedades del objeto del modelo de datos de **llamadas** se muestran como columnas de tabla en el área de destinatario Llamadas **** por elemento del panel derecho.
+1. Seleccione la ficha **Fuentes de datos** en el panel izquierdo y arrastre y suelte el objeto del modelo de datos **llamadas** en el área de destinatario **Llamadas por elementos**. Todas las propiedades del objeto del modelo de datos **llamadas** se muestran como columnas de tabla en el área de destinatario **Llamadas por elemento** del panel derecho.
 
    En función del caso de uso, se requieren las columnas Fecha de llamada, Hora de llamada, Número de llamada, Duración de llamada y Cargos de llamada en la tabla.
 
    ![Tabla de comunicación interactiva](assets/table_ic_web_new.png)
 
-1. Seleccione el encabezado de la columna de la tabla **Móvil** y seleccione **Más opciones** > **Eliminar columna**. Del mismo modo, elimine la columna **Tipo** de llamada.
-1. Seleccione el encabezado de la columna de la tabla **Calldate** y toque ![Editar](assets/edit.png) (Editar) para cambiar el nombre del texto a Fecha **de** llamada. Del mismo modo, cambie el nombre de otros encabezados de columna en la tabla.
+1. Seleccione el encabezado de la columna de la tabla **Mobile** y seleccione **Más opciones** > **Eliminar columna**. Del mismo modo, elimine la columna **Tipo de llamada**.
+1. Seleccione el encabezado de la columna de la tabla **Calldate** y toque ![edit](assets/edit.png) (Editar) para cambiar el nombre del texto a **Call Date**. Del mismo modo, cambie el nombre de otros encabezados de columna en la tabla.
 1. En función del caso de uso, inserte un botón **Pagar ahora** en la Comunicación interactiva que proporciona al usuario una opción para realizar el pago haciendo clic en el botón. Siga los pasos siguientes para insertar el botón:
 
-   1. Puntee en el área de destinatario **Pagar ahora** y toque **+** para agregar un componente de **texto** .
+   1. Toque **Pagar ahora** área de destinatario y toque **+** para agregar un componente **Texto**.
 
-   1. Toque el componente de texto y toque ![Editar](assets/edit.png) (Editar).
+   1. Toque el componente de texto y toque ![editar](assets/edit.png) (Editar).
    1. Cambie el nombre del texto a **Pagar ahora**.
    1. Seleccione el texto y toque el icono Hipervínculo.
-   1. Especifique la URL de pago en el campo **Ruta** .
-   1. Seleccione **Nueva ficha** en la lista desplegable **Destinatario** .
+   1. Especifique la URL de pago en el campo **Ruta**.
+   1. Seleccione **Nueva ficha** en la lista desplegable **Destinatario**.
 
    1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del hipervínculo.
 
-1. Seleccione **Estilo** en la lista desplegable situada junto a la opción **Previsualización** .
+1. Seleccione **Estilo** en la lista desplegable al lado de la opción **Previsualización**.
 
    ![Seleccionar modo de estilo para la comunicación interactiva](assets/select_style_ic_web_new.png)
 
 1. Defina el estilo del texto del hipervínculo para que se muestre como un botón en la Comunicación interactiva siguiendo los pasos siguientes:
 
-   1. Toque el componente de texto y seleccione ![Editar](assets/edit.png) (Editar).
-   1. En la sección **Borde** , especifique **1,5 px** como Ancho **** del borde, seleccione **Sólido** como Estilo ******** **** del borde y especifique 46 pxcomo Radio del borde.
+   1. Toque el componente de texto y seleccione ![editar](assets/edit.png) (Editar).
+   1. En la sección **Borde**, especifique **1,5px** como **Ancho del borde**, seleccione **Sólido** como **Estilo del borde** y especifique **46px** como &lt;a1>. 2/>Radio del borde **.**
 
-   1. Seleccione Rojo como color de fondo para el botón en la sección **Fondo** .
-   1. En el campo **Margen** de la sección **Dimensiones y posición** , toque el icono **Editar simultáneamente** y defina el margen **Derecho** como **450 px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
+   1. Seleccione Rojo como color de fondo para el botón en la sección **Fondo**.
+   1. En el campo **Margen** de la sección **Dimension y posición**, toque el icono **Editar simultáneamente** y establezca el margen **Derecha** como **450px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
 
    ![Insertar hipervínculo en comunicación interactiva](assets/ic_web_hyperlink_new.png)
 
-1. Toque **Pagar ahora** área de destinatario y toque **+** para agregar un componente **Imagen** .
+1. Toque **Pagar ahora** área de destinatario y toque **+** para agregar un componente **Imagen**.
 1. Toque el componente Imagen y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). Las propiedades de imagen se muestran en el panel izquierdo:
 
-   1. Especifique **PayNow** como nombre de la imagen en el campo **Nombre** .
+   1. Especifique **PayNow** como nombre de la imagen en el campo **Name**.
 
    1. Toque **Cargar**, seleccione la imagen **PayNowWeb** guardada en el sistema de archivos local y toque **Abrir**.
 
    1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades de la imagen.
 
-1. En función del caso de uso, inserte un botón **Suscribirse** en la Comunicación interactiva que ofrece al usuario la opción de suscribirse a los servicios de valor añadido haciendo clic en el botón.
+1. En función del caso de uso, inserte un botón **Suscribirse** en la Comunicación interactiva que proporciona al usuario una opción para suscribirse a los servicios de valor agregado haciendo clic en el botón.
 
-   Repita los pasos 13 a 17 para agregar un botón **Suscribirse** al área de destinatario de servicios **** Valor Añadido y agregar la imagen **ValueAddedServicesWeb** .
+   Repita los pasos 13 a 17 para agregar un botón **Suscribirse** al área de destinatario **Servicios Añadidos de valor** y agregar la imagen **ValueAddedServicesWeb**.
 
 ## Crear comunicaciones interactivas para impresión y Web con sincronización automática {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
@@ -204,32 +204,32 @@ También puede crear una comunicación interactiva habilitando la sincronizació
 
 Ejecute los siguientes pasos para derivar el contenido del canal web mediante el canal de impresión:
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
-1. Toque **Crear** y seleccione Comunicación **** interactiva. Se muestra el asistente **Crear comunicación** interactiva.
-1. Especifique **create_first_ic** en el campo **Título** y **Nombre** . Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
-1. En el asistente de **Canales** :
+1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documentos]**.
+1. Toque **Crear** y seleccione **Comunicación interactiva**. Se muestra el asistente **Crear comunicación interactiva**.
+1. Especifique **create_first_ic** en el campo **Título** y el campo **Nombre**. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
+1. En el asistente para **Canales**:
 
    1. Especifique **create_first_ic_print_template** como plantilla de impresión y toque **Seleccionar**.
 
-   1. Active la casilla de verificación **Usar Imprimir como Canal** principal para Web.
-   1. Especifique la carpeta **Create_First_IC_templates** > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
+   1. Seleccione la casilla **Usar Imprimir como Canal principal para Web**.
+   1. Especifique **Create_First_IC_templates** carpeta > **Create_First_IC_Web_Template** como plantilla Web y toque **Seleccionar**.
 
    1. Toque **Crear**.
 
    Se muestra un mensaje de confirmación de que la comunicación interactiva se ha creado correctamente.
 
 1. Toque **Editar** para abrir la comunicación interactiva en el panel derecho.
-1. Ejecute los pasos 6 a 15 de la sección [Crear comunicación interactiva para el canal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) de impresión.
-1. Toque la ficha **Canales** del panel izquierdo y toque **Web** para generar automáticamente contenido para el canal web desde el canal Imprimir.
-1. Como la casilla de verificación **Usar impresión como Canal** principal para Web está seleccionada en el paso 4, el contenido y los enlaces se generan automáticamente para el canal Web desde el canal Imprimir.
+1. Ejecute los pasos 6 a 15 de la sección [Crear comunicación interactiva para canal de impresión](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel).
+1. Toque la ficha **Canales** del panel izquierdo y toque **Web** para generar automáticamente contenido para el canal Web desde el canal Imprimir.
+1. Como la casilla **Usar Imprimir como Canal principal para Web** está seleccionada en el paso 4, el contenido y los enlaces se generan automáticamente para el canal Web desde el canal Imprimir.
 
    El contenido del canal de impresión se inserta debajo del contenido de la plantilla de canal web. Para modificar el contenido del canal web que se ha generado automáticamente desde el canal de impresión, puede cancelar la herencia de cualquier área de destinatario.
 
-   Pase el ratón sobre el área de destinatario relevante en el canal web, seleccione ![cancelar herencia](assets/cancelinheritance.png) (Cancelar herencia) y, a continuación, en el cuadro de diálogo **Cancelar herencia** , toque **Sí**.
+   Pase el ratón sobre el área de destinatario relevante en el canal web y seleccione ![cancelación de herencia](assets/cancelinheritance.png) (Cancelar herencia) y, a continuación, en el cuadro de diálogo **Cancelar herencia**, toque **Sí**.
 
    ![Cancelar herencia](assets/cancel_inheritance_web_channel_new.png)
 
-   Si ha cancelado la herencia de un componente, puede volver a activarlo. Para volver a habilitar la herencia, pase el ratón sobre el límite del área de destinatario correspondiente, que incluye el componente, y toque ![volver a habilitar la herencia](assets/reenableinheritance.png).
+   Si ha cancelado la herencia de un componente, puede volver a activarlo. Para volver a habilitar la herencia, pase el ratón sobre el límite del área de destinatario pertinente, que incluye el componente, y toque ![rehabilitar herencia](assets/reenableinheritance.png).
 
 1. Seleccione la ficha **Contenido** en el panel izquierdo.
 1. Arrastre y suelte el contenido del canal web generado automáticamente en los paneles existentes de la plantilla web mediante el árbol de contenido. A continuación se muestra la lista de los componentes que deben reorganizarse:
@@ -242,5 +242,5 @@ Ejecute los siguientes pasos para derivar el contenido del canal web mediante el
 
    ![Árbol de contenido web](assets/ic_web_content_tree_new.png)
 
-1. Repita los pasos 13 a 18 de [Crear comunicación interactiva para canal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) web para insertar los hipervínculos **Pagar ahora** y **Suscribirse** en el canal web de la comunicación interactiva.
+1. Repita los pasos 13 a 18 de [Crear comunicación interactiva para canal Web](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) para insertar los hipervínculos **Pagar ahora** y **Suscribirse** en el canal Web de la Comunicación interactiva.
 
