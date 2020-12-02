@@ -10,17 +10,20 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 9%
 
 ---
 
 
-# Descripción del objeto JSON del espacio de trabajo de AEM Forms {#aem-forms-workspace-json-object-description}
+# Descripción del objeto JSON del área de trabajo de AEM Forms {#aem-forms-workspace-json-object-description}
 
 Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a continuación.
 
 1. Categoría
 
-   Las Categorías están presentes en la ficha de proceso de inicio del espacio de trabajo. Estas categorías se utilizan para clasificar los puntos de partida.
+   Las categorías están presentes en la ficha de proceso de inicio del espacio de trabajo. Estas categorías se utilizan para clasificar los puntos de partida.
 
 <table>
  <tbody>
@@ -32,17 +35,17 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>name</td>
    <td>F</td>
-   <td>Nombre de Categoría</td>
+   <td>Nombre de categoría</td>
   </tr>
   <tr>
    <td>id</td>
    <td>F</td>
-   <td>Category ID<br type="_moz" /> </td>
+   <td>ID de categoría<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>Descripción<br type="_moz" /> </td>
    <td>F</td>
-   <td>Descripción de la Categoría<br type="_moz" /> </td>
+   <td>Descripción de la categoría<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>parentOid<br type="_moz" /> </td>
@@ -57,7 +60,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>categoryList</td>
    <td>T</td>
-   <td>Contiene la lista de categorías secundarias directas de una categoría<br type="_moz" /> </td>
+   <td>Contiene lista de categorías secundarias directas de una categoría<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -85,13 +88,13 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
 
 1. Tarea
 
-   Las Tareas se asignan a usuarios o grupos e incluyen una interfaz de usuario (un formulario o una guía (obsoleta)) que se puede rellenar con datos. Cuando se asigna una tarea a los usuarios, se les proporciona el formulario o la Guía para completar y enviar.
+   Las tareas se asignan a usuarios o grupos e incluyen una interfaz de usuario (un formulario o una guía (obsoleta)) que se puede rellenar con datos. Cuando se asigna una tarea a los usuarios, se les proporciona el formulario o la Guía para completar y enviar.
 
 <table>
  <tbody>
   <tr>
    <td>Propiedad<br /> </td>
-   <td>Client Only<br /> </td>
+   <td>Solo cliente<br /> </td>
    <td>Comentarios<br /> </td>
   </tr>
   <tr>
@@ -102,7 +105,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>completeTime<br /> </td>
    <td>F</td>
-   <td>Contiene la marca de hora cuando se completa la tarea.<br /> </td>
+   <td>Contiene la marca de hora cuando se completó la tarea.<br /> </td>
   </tr>
   <tr>
    <td>queryGroupId<br /> </td>
@@ -117,7 +120,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>creatingId<br /> </td>
    <td>F</td>
-   <td>Contiene la identificación del usuario que creó la tarea.<br /> </td>
+   <td>Contiene el identificador del usuario que creó la tarea.<br /> </td>
   </tr>
   <tr>
    <td>currentAssignment<br /> </td>
@@ -127,7 +130,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>fecha límite<br /> </td>
    <td>F</td>
-   <td>Contiene la marca de hora en la que una tarea alcanzará su fecha límite.<br /> </td>
+   <td>Contiene la marca de hora que indica cuándo una tarea alcanzará su fecha límite.<br /> </td>
   </tr>
   <tr>
    <td>Descripción<br /> </td>
@@ -145,7 +148,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
    <td>Contiene la ID de un grupo al que se puede reenviar la tarea. Se configura durante el proceso de diseño.<br /> </td>
   </tr>
   <tr>
-   <td>instructions<br /> </td>
+   <td>Instrucciones<br /> </td>
    <td>F</td>
    <td>Contiene instrucciones para una tarea.<br /> </td>
   </tr>
@@ -162,7 +165,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>isOpenFullScreen<br /> </td>
    <td>F</td>
-   <td>Si es true, al abrir la tarea, el formulario se muestra en pantalla completa por primera vez.<br /> </td>
+   <td>Si el valor es true, al abrir la tarea, el formulario se muestra en pantalla completa por primera vez.<br /> </td>
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td>
@@ -172,7 +175,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>isShowAttachments<br /> </td>
    <td>F</td>
-   <td>Los datos adjuntos se muestran si es true.<br /> </td>
+   <td>Los datos adjuntos se muestran si es verdadero.<br /> </td>
   </tr>
   <tr>
    <td>isStartTask<br /> </td>
@@ -192,7 +195,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>priority<br /> </td>
    <td>F</td>
-   <td>Contiene la prioridad de la tarea.<br /> 1 = Prioridad<br /> más alta 2 = Prioridad<br /> alta 3 = Prioridad<br /> normal 4 = Prioridad<br /> baja 5 = PrioridadMás baja<br /> </td>
+   <td>Contiene la prioridad de la tarea.<br /> 1 = Prioridad<br /> 2 más alta = Prioridad<br /> alta 3 = Prioridad<br />  normal 4 = Prioridad<br /> baja 5 = PrioridadMás baja<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -202,7 +205,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>processInstanceStatus<br /> </td>
    <td>F</td>
-   <td>Estado de la instancia de proceso de la tarea.<br /> </td>
+   <td>Estado de la instancia de proceso de tarea.<br /> </td>
   </tr>
   <tr>
    <td>recordatorioCount<br /> </td>
@@ -212,7 +215,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>routeList<br /> </td>
    <td>F</td>
-   <td>Contiene lista de las rutas asociadas con la tarea. El usuario puede completar la tarea seleccionando cualquiera de las rutas de la lista de rutas.<br /> </td>
+   <td>Contiene lista de las rutas asociadas con la tarea. El usuario puede completar la tarea seleccionando cualquiera de las rutas de la lista de ruta.<br /> </td>
   </tr>
   <tr>
    <td>selectedRoute<br /> </td>
@@ -222,17 +225,17 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>serializedImageTicket<br /> </td>
    <td>F</td>
-   <td>Contiene un ticket de imagen correspondiente a la tarea. Este ticket de imagen se utiliza en el campo imageUrl de tarea para obtener una imagen para la tarea desde el servidor.<br /> <br /> </td>
+   <td>Contiene un ticket de imagen correspondiente a la tarea. Este vale de imagen se utiliza en el campo imageUrl de tarea para obtener una imagen para la tarea desde el servidor.<br /> <br /> </td>
   </tr>
   <tr>
    <td>serviceName<br /> </td>
    <td>F</td>
-   <td>Contiene el nombre del servicio de tarea.<br /> </td>
+   <td>Contiene el nombre del servicio para la tarea.<br /> </td>
   </tr>
   <tr>
    <td>serviceTitle<br /> </td>
    <td>F</td>
-   <td>Contiene el título del servicio de tarea.<br /> </td>
+   <td>Contiene el título del servicio para la tarea.<br /> </td>
   </tr>
   <tr>
    <td>estado<br /> </td>
@@ -247,12 +250,12 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>summaryUrl<br /> </td>
    <td>F</td>
-   <td>Contiene la dirección URL de resumen de la tarea.<br /> </td>
+   <td>Contiene la dirección URL de resumen de tarea.<br /> </td>
   </tr>
   <tr>
    <td>taskACL<br /> </td>
    <td>F</td>
-   <td>Es lista de control de acceso para una tarea.<br /> </td>
+   <td>Es una lista de control de acceso para una tarea.<br /> </td>
   </tr>
   <tr>
    <td>taskId<br /> </td>
@@ -272,7 +275,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>Contiene el tipo de formulario de tarea. Con este campo, la tarea se procesa en el cliente como pdf para, swf form, etc.<br /> </td>
+   <td>Contiene el tipo de formulario de tarea. Con este campo, la tarea se procesa en el cliente como pdf para, swf form etc.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -282,7 +285,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>showACLActions<br /> </td>
    <td>T</td>
-   <td>Si el valor es true, las acciones como forward, query y share son visibles en el espacio de trabajo.<br /> </td>
+   <td>Si el valor es true, acciones como forward, query y share son visibles en el espacio de trabajo.<br /> </td>
   </tr>
   <tr>
    <td>supportOffline<br /> </td>
@@ -297,7 +300,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>readerSubmitOptions<br /> </td>
    <td>T</td>
-   <td>Este objeto contiene opciones que se utilizan para enviar formularios PDF mediante un lector en caso de que el formulario PDF no contenga un botón de envío.<br /> </td>
+   <td>Este objeto contiene opciones que se utilizan para enviar formularios PDF por medio de un lector en caso de que el formulario PDF no contenga ningún botón de envío.<br /> </td>
   </tr>
   <tr>
    <td>isDefaultImage<br /> </td>
@@ -312,12 +315,12 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>isOwner<br /> </td>
    <td>T</td>
-   <td>True si el usuario que ha iniciado sesión es propietario de la tarea.<br /> </td>
+   <td>True si el usuario que ha iniciado sesión es el propietario de la tarea.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands<br /> </td>
    <td>T</td>
-   <td>Contiene todas las acciones que se pueden realizar en tarea.<br /> </td>
+   <td>Contiene todas las acciones que se pueden realizar en la tarea.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.directCommands<br /> </td>
@@ -337,7 +340,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>processInstanceInfo<br /> </td>
    <td>T</td>
-   <td>Contiene información sobre la instancia de proceso de la tarea.<br /> </td>
+   <td>Contiene información sobre la instancia de proceso de tarea.<br /> </td>
   </tr>
   <tr>
    <td>processVariables<br /> </td>
@@ -347,7 +350,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>pendingTasks<br /> </td>
    <td>T</td>
-   <td>Contiene la lista de tareas pendientes para la instancia de proceso de la tarea.<br /> </td>
+   <td>Contiene lista de tareas pendientes para la instancia de proceso de la tarea.<br /> </td>
   </tr>
   <tr>
    <td>userActions<br /> </td>
@@ -365,12 +368,12 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
    <td>Esta es la configuración para formularios de aplicaciones de terceros.<br /> </td>
   </tr>
   <tr>
-   <td>submitted<br /> </td>
+   <td>enviado<br /> </td>
    <td>T</td>
    <td>True si se envía la tarea.<br /> </td>
   </tr>
   <tr>
-   <td>attachments<br /> </td>
+   <td>datos adjuntos<br /> </td>
    <td>T</td>
    <td>Lista de datos adjuntos para una tarea.<br /> </td>
   </tr>
@@ -406,7 +409,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>qid</td>
    <td>F</td>
-   <td>Id de la cola.<br type="_moz" /> </td>
+   <td>Id. de la cola.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>tipo</td>
@@ -445,7 +448,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td>
    <td>F</td>
-   <td>True si no hay una designación principal en caso de que el usuario no esté en el servicio.<br type="_moz" /> </td>
+   <td>True si no hay una designación principal en caso de que el usuario no esté en el cargo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
@@ -455,15 +458,15 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td>
    <td>F</td>
-   <td>Contiene los detalles del usuario asignado como principal designado por usuario.<br type="_moz" /> </td>
+   <td>Contiene detalles del usuario que el usuario asigna como designado principal.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
    <td>F</td>
-   <td>Contiene una matriz de objetos para la designación fuera de la oficina específica del proceso. En cada objeto designado específico del proceso, processName contiene el nombre del proceso, isNotDesignated es true si no se asigna ningún usuario al proceso correspondiente y userDesignated es null si no se asigna ningún otro usuario a los detalles del usuario asignados al proceso correspondiente.<br type="_moz" /> </td>
+   <td>Contiene una matriz de objetos para la designación fuera de la oficina específica del proceso. En cada objeto designado específico del proceso, processName contiene el nombre del proceso, isNotDesignated es true si no se asigna ningún usuario al proceso correspondiente y userDesignated es nulo si no se asigna ningún otro usuario a los detalles del usuario asignados al proceso correspondiente.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>processes<br type="_moz" /> </td>
+   <td>procesa<br type="_moz" /> </td>
    <td>T</td>
    <td>Contiene una lista de todos los procesos disponibles para el usuario.<br type="_moz" /> </td>
   </tr>
@@ -475,7 +478,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td>
    <td>T</td>
-   <td>Contiene una configuración fuera de la oficina modificada.<br type="_moz" /> </td>
+   <td>Contiene la configuración fuera de la oficina modificada.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
@@ -514,17 +517,17 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>processCompleteTime<br type="_moz" /> </td>
    <td>F</td>
-   <td>Marca de hora cuando se complete el proceso.<br type="_moz" /> </td>
+   <td>Marca de hora cuando se completó el proceso.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceId<br type="_moz" /> </td>
    <td>F</td>
-   <td>ID de la instancia de proceso.<br type="_moz" /> </td>
+   <td>ID de instancia de proceso.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Iniciado<br /> 1 = Ejecución<br /> 2 = Completado<br /> 3 = Finalización<br /> 4 = Terminado<br /> 5 = Terminación<br /> 6 = Suspendido<br /> 7 = Suspendido<br /> 8 = Sin suspensión<br type="_moz" /> </td>
+   <td>0 = Iniciado<br /> 1 = Ejecutando<br /> 2 = Completado<br /> 3 = Finalizando<br /> 4 = Terminado<br /> 5 = Terminando<br /> 6 = Suspendido<br /> 7 = Suspendiendo<br /> 8 = Sin suspender<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
@@ -542,7 +545,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
    <td>Matriz de objetos de variables de proceso. Cada objeto de variable de proceso contiene el nombre que es el nombre de la variable de proceso, el valor que es el valor de la variable de proceso y el tipo que es el tipo de variable de proceso.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>lista de tareas<br type="_moz" /> </td>
+   <td>tasklist<br type="_moz" /> </td>
    <td>T</td>
    <td>Tareas generadas por esta instancia de proceso.<br type="_moz" /> </td>
   </tr>
@@ -586,9 +589,9 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
  </tbody>
 </table>
 
-1. Objeto de asignación de Tarea
+1. Objeto de asignación de tarea
 
-   El objeto de asignación de Tarea contiene información sobre la asignación de tarea. A continuación se indican las propiedades de la asignación de tarea.
+   El objeto de asignación de tarea contiene información sobre la asignación de tarea. A continuación se indican las propiedades de la asignación de tarea.
 
 <table>
  <tbody>
@@ -605,7 +608,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>AssignmentType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Asignación<br /> inicial 1 = Reenvío (la Tarea se ha reenviado al propietario actual de la tarea).<br /> 2 = Devuelta (la Tarea ha sido devuelta al propietario actual de la tarea por el propietario anterior de la tarea).<br /> 3 = Reclamado (la Tarea ha sido reclamada por el propietario actual de la tarea).<br /> 4 = Escalación (la Tarea se ha asignado al propietario actual de la tarea después de la escalación).<br /> 5 = Administrador asignado (el administrador ha asignado la Tarea al propietario actual de la tarea).<br /> 6 = Consultado ( se ha consultado la Tarea al propietario actual de la tarea).<br type="_moz" /> </td>
+   <td>0 = Asignación inicial<br /> 1 = Reenvío (la Tarea se ha reenviado al propietario actual de la tarea).<br /> 2 = Devuelta (la Tarea ha sido devuelta al propietario actual de la tarea por el propietario anterior de la tarea).<br /> 3 = Reclamado (la Tarea ha sido reclamada por el propietario actual de la tarea).<br /> 4 = Escalación (la Tarea se ha asignado al propietario actual de la tarea después de la escalación).<br /> 5 = Administrador asignado (el administrador ha asignado la Tarea al propietario actual de la tarea).<br /> 6 = Consultado ( se ha consultado la Tarea al propietario actual de la tarea).<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>AssignmentUpdateTime<br type="_moz" /> </td>
@@ -615,7 +618,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>queueId<br type="_moz" /> </td>
    <td>F</td>
-   <td>ID de cola del propietario actual de la tarea.<br type="_moz" /> </td>
+   <td>Id. de cola del propietario actual de la tarea.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueOwner<br type="_moz" /> </td>
@@ -630,9 +633,9 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
  </tbody>
 </table>
 
-1. Objeto ACL de Tarea
+1. Objeto ACL de tarea
 
-   El objeto ACL de Tarea contiene información sobre permisos como reenviar, compartir, consultar, etc. de una tarea. A continuación se describen las propiedades de la ACL de la tarea.
+   El objeto ACL de tarea contiene información sobre permisos como reenviar, compartir, consultar, etc. de una tarea. A continuación se describen las propiedades de la ACL de la tarea.
 
 <table>
  <tbody>
@@ -644,7 +647,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>canAddAttachments<br type="_moz" /> </td>
    <td>F</td>
-   <td>Si es true, los archivos adjuntos se pueden agregar a la tarea.<br type="_moz" /> </td>
+   <td>Si el valor es true, los archivos adjuntos se pueden agregar a la tarea.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canAddNotes<br type="_moz" /> </td>
@@ -659,12 +662,12 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>canConsult<br type="_moz" /> </td>
    <td>F</td>
-   <td>Si es verdadero, se puede consultar la tarea.<br type="_moz" /> </td>
+   <td>Si es true, se puede consultar la tarea.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td>
    <td>F</td>
-   <td>Si es true, se puede reenviar la tarea.<br type="_moz" /> </td>
+   <td>Si es true, la tarea se puede reenviar.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canShare<br type="_moz" /> </td>
@@ -674,7 +677,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
  </tbody>
 </table>
 
-1. Datos adjuntos de Tarea
+1. Datos adjuntos de tarea
 
    Los archivos adjuntos se pueden agregar a una tarea. Los datos adjuntos pueden ser del tipo adjunto y nota. A continuación se describen las propiedades del objeto de datos adjuntos.
 
@@ -686,7 +689,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
    <td><strong>Comentarios</strong></td>
   </tr>
   <tr>
-   <td>creationDate<br type="_moz" /> </td>
+   <td>creatingDate<br type="_moz" /> </td>
    <td>F</td>
    <td>Marca de hora al crear datos adjuntos.<br type="_moz" /> </td>
   </tr>
@@ -703,7 +706,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>Descripción<br type="_moz" /> </td>
    <td>F</td>
-   <td>Descripción del adjunto.<br type="_moz" /> </td>
+   <td>Descripción del archivo adjunto.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>fileName<br type="_moz" /> </td>
@@ -728,7 +731,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>permissions<br type="_moz" /> </td>
    <td>F</td>
-   <td>Permisos asociados a un archivo adjunto. allowRead es para permiso de lectura, allowWrite es para permiso de escritura, allowDelete está para permiso de eliminación.<br type="_moz" /> </td>
+   <td>Permisos asociados a un archivo adjunto. El campo allowRead está para permiso de lectura, allowWrite está para permiso de escritura, allowDelete está para permiso de eliminación.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>size<br type="_moz" /> </td>
@@ -738,7 +741,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>taskId<br type="_moz" /> </td>
    <td>F</td>
-   <td>ID de la tarea a la que se añade el adjunto.<br type="_moz" /> </td>
+   <td>ID de tarea a la que se ha agregado el archivo adjunto.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>tipo<br type="_moz" /> </td>
@@ -835,7 +838,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
    <td>Dirección postal del usuario.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>telephone<br type="_moz" /> </td>
+   <td>phone<br type="_moz" /> </td>
    <td>F</td>
    <td>Número de contacto del usuario.<br type="_moz" /> </td>
   </tr>
