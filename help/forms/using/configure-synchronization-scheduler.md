@@ -11,6 +11,9 @@ discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -25,13 +28,13 @@ Realice los siguientes pasos para cambiar el intervalo del Planificador de sincr
 
 1. Inicie sesión en AEM Configuration Manager. La dirección URL de Configuration Manager es `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Busque y abra el paquete **FormsManagerConfiguration** .
+1. Busque y abra el paquete **FormsManagerConfiguration**.
 
-1. Especifique un nuevo valor para la opción Frecuencia **del Planificador de** sincronización.
+1. Especifique un nuevo valor para la opción **Frecuencia del Planificador de sincronización**.
 
    La unidad de frecuencia es minutos. Por ejemplo, para configurar el Planificador para que se ejecute cada 60 minutos, especifique 60.
 
-## Sincronización de recursos {#synchronizing-assets}
+## Sincronizando recursos {#synchronizing-assets}
 
 Puede utilizar la opción **Sincronizar recursos del repositorio** para sincronizar manualmente los recursos. Realice los siguientes pasos para sincronizar manualmente los recursos:
 
@@ -39,19 +42,19 @@ Puede utilizar la opción **Sincronizar recursos del repositorio** para sincroni
 
    ![Interfaz de usuario de AEM Forms](assets/aem_forms_ui.png)
 
-   **Figura:** Interfaz de usuario de *AEM Forms*
+   **Figura:interfaz de usuario de** *AEM Forms*
 
 1. Haga clic en el icono ![aem6forms_sync](assets/aem6forms_sync.png) de la barra de herramientas. Si no tiene recursos en la última ruta configurada, utilice el cuadro de diálogo como se muestra a continuación. Haga clic en **Inicio** para iniciar la sincronización.
 
    ![Cuadro de diálogo Sincronización](assets/migrate-and-syncronize.png)
 
-   **Figura:** Cuadro de diálogo *Sincronización*
+   **Figura:cuadro** *de diálogo Sincronización*
 
-## Solución de problemas de sincronización {#troubleshooting-synchronization-error}
+## Solución de problemas de error de sincronización {#troubleshooting-synchronization-error}
 
 Puede crear nuevas aplicaciones en el diseñador del flujo de trabajo (LiveCycle Workbench).
 
-Si la aplicación recién creada y una carpeta en /content/dam/formsanddocuments tienen el mismo nombre, aparecerá el mensaje de error &quot;*Ya existe un recurso con el mismo nombre que esta aplicación en el nivel raíz.*&quot; está registrado.
+Si la aplicación recién creada y una carpeta en /content/dam/formsanddocuments tienen el mismo nombre, ya existe un error &quot;*Un recurso con el mismo nombre que esta aplicación en el nivel raíz.*&quot; está registrado.
 
 Para resolver el conflicto, cambie el nombre de la aplicación y sincronice manualmente los recursos.
 
