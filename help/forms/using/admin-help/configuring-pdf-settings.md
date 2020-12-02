@@ -1,8 +1,8 @@
 ---
 title: Configuración de la configuración de Adobe PDF
 seo-title: Configuración de la configuración de Adobe PDF
-description: Obtenga información sobre cómo configurar los ajustes de Adobe PDF.
-seo-description: Obtenga información sobre cómo configurar los ajustes de Adobe PDF.
+description: Obtenga información sobre cómo configurar la configuración de Adobe PDF.
+seo-description: Obtenga información sobre cómo configurar la configuración de Adobe PDF.
 uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
@@ -11,30 +11,33 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '7276'
+ht-degree: 0%
 
 ---
 
 
-# Configuración de la configuración de Adobe PDF{#configuring-adobe-pdf-settings}
+# Configuración de Adobe PDF{#configuring-adobe-pdf-settings}
 
-La página Configuración de Adobe PDF muestra la configuración de conversión que se puede especificar para las fuentes que se van a utilizar. Puede utilizar cualquiera de los ajustes predefinidos de PDF o crear los suyos propios. La configuración de PDF determina con precisión cómo se convierten los archivos y la estructura y las funciones de PDF resultantes. La configuración de Adobe PDF se conocía anteriormente como parámetros o opciones de trabajo de Distiller®.
+La página Configuración de Adobe PDF muestra la configuración de conversión que se puede especificar para las fuentes que se van a utilizar. Puede utilizar cualquiera de los ajustes predefinidos de PDF o crear los suyos propios. La configuración de PDF determina con precisión cómo se convierten los archivos y la estructura y las funciones de PDF resultantes. La configuración de Adobe PDF se conocía anteriormente como parámetros de Distiller® u opciones de trabajo.
 
 En la página Configuración de Adobe PDF, puede realizar las siguientes tareas:
 
-* Vista de la configuración de PDF predefinida. (Consulte [Acerca de la configuración](configuring-pdf-settings.md#about-the-predefined-pdf-settings)de PDF predefinida).
-* Cree una configuración de PDF o edite una que haya creado anteriormente. (Consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF).
-* Especifique la configuración predeterminada de PDF. (Consulte [Cambio de la configuración](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)predeterminada)
-* Cargue un archivo de configuración de PDF al servidor. (Consulte [Cargar configuración](configuring-pdf-settings.md#upload-pdf-settings)de PDF).
-* Elimine la configuración de PDF personalizada. (Consulte [Eliminar configuración](configuring-pdf-settings.md#delete-pdf-settings)de PDF).
-* Cargue y descargue archivos de prólogo y epílogo. (Consulte [Carga y descarga de archivos](configuring-pdf-settings.md#uploading-and-downloading-prologue-and-epilogue-files)de prólogo y epílogo).
+* Vista de la configuración de PDF predefinida. (Consulte [Acerca de la configuración de PDF predeterminada](configuring-pdf-settings.md#about-the-predefined-pdf-settings)).
+* Cree una configuración de PDF o edite una que haya creado anteriormente. (Consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings)).
+* Especifique la configuración predeterminada de PDF. (Consulte [Cambio de la configuración predeterminada](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings))
+* Cargue un archivo de configuración de PDF al servidor. (Consulte [Cargar configuración de PDF](configuring-pdf-settings.md#upload-pdf-settings)).
+* Elimine la configuración de PDF personalizada. (Consulte [Eliminar configuración de PDF](configuring-pdf-settings.md#delete-pdf-settings)).
+* Cargue y descargue archivos de prólogo y epílogo. (Consulte [Carga y descarga de archivos de prólogo y epílogo](configuring-pdf-settings.md#uploading-and-downloading-prologue-and-epilogue-files)).
 
 La configuración de Adobe PDF solo se aplica a las conversiones basadas en PDFMaker. Estas incluyen las siguientes conversiones:
 
-* documento de Microsoft Word (DOC, DOCX, RTF, TXT)
-* documento de Microsoft Excel (XLS, XLSX)
-* documento de Microsoft PowerPoint (PPT, PPTX)
+* Documento de Microsoft Word (DOC, DOCX, RTF, TXT)
+* Documento de Microsoft Excel (XLS, XLSX)
+* Documento de Microsoft PowerPoint (PPT, PPTX)
 * Microsoft Project documento (MPP)
-* documento de Microsoft Visio (VSD)
+* Documento de Microsoft Visio (VSD)
 
 >[!NOTE]
 >
@@ -42,9 +45,9 @@ La configuración de Adobe PDF solo se aplica a las conversiones basadas en PDFM
 
 ## Acerca de la configuración de PDF predefinida {#about-the-predefined-pdf-settings}
 
-PDF Generator proporciona varios ajustes de PDF predefinidos para su uso. No puede modificar esta configuración predefinida; sin embargo, puede crear una configuración basada en una existente editando la configuración y guardarla con un nombre nuevo.
+PDF Generator proporciona varios ajustes predefinidos de PDF para su uso. No puede modificar esta configuración predefinida; sin embargo, puede crear una configuración basada en una existente editando la configuración y guardarla con un nombre nuevo.
 
-**Impresión de alta calidad:** Crea archivos PDF para obtener una salida de alta calidad. Esta configuración:
+**Imprimir de alta calidad:** crea archivos PDF para obtener una salida de alta calidad. Esta configuración:
 
 * disminuye la resolución de las imágenes en color y escala de grises a 300 ppp
 * disminuye la resolución de las imágenes monocromas a 1200 ppp
@@ -53,15 +56,15 @@ PDF Generator proporciona varios ajustes de PDF predefinidos para su uso. No pue
 
 Estos archivos PDF se pueden abrir en Adobe Acrobat 5 y Adobe Acrobat Reader® 5 o posterior.
 
-**Páginas de gran tamaño:** Crea documentos PDF que son adecuados para una visualización e impresión fiables de dibujos de ingeniería de más de 200 x 200 pulgadas. Los documentos PDF creados se pueden abrir en Adobe Acrobat Professional y Acrobat Standard, versión 7 o posterior, y en Adobe Reader 7 o posterior.
+**Páginas de gran tamaño:** crea documentos PDF que permiten una visualización e impresión fiables de dibujos de ingeniería de más de 200 x 200 pulgadas. Los documentos PDF creados se pueden abrir en Adobe Acrobat Professional y Acrobat Standard, versión 7 o posterior, y en Adobe Reader 7 o posterior.
 
-**PDF/A-1B CMYK 2005 / PDF/A-1B RGB 2005:** Comprueba que los trabajos entrantes sean compatibles con el estándar ISO para la conservación (archivado) a largo plazo de documentos electrónicos y crea archivos PDF/A solo si son compatibles. Estos archivos se utilizan principalmente para archivar. Los archivos compatibles solo pueden contener texto, imágenes rasterizadas y objetos vectoriales; no pueden contener codificación ni secuencias de comandos. Además, todas las fuentes deben incrustarse para que los documentos se puedan abrir y ver como se crearon. PDF/A-1b utiliza PDF 1.4 y convierte todos los colores a CMYK o RGB, según el estándar que elija. Los archivos PDF creados con este archivo de configuración se pueden abrir en Acrobat 5 y Acrobat Reader 5 y posterior. Para obtener más información sobre PDF/A, consulte Adobe y los estándares del sector.
+**PDF/A-1B 2005 CMYK / PDF/A-1B RGB 2005:** comprueba la conformidad de los trabajos entrantes con el estándar ISO para la conservación (archivo) a largo plazo de documentos electrónicos y crea archivos PDF/A solo si son compatibles. Estos archivos se utilizan principalmente para archivar. Los archivos compatibles solo pueden contener texto, imágenes rasterizadas y objetos vectoriales; no pueden contener codificación ni secuencias de comandos. Además, todas las fuentes deben incrustarse para que los documentos se puedan abrir y ver como se crearon. PDF/A-1b utiliza PDF 1.4 y convierte todos los colores a CMYK o RGB, según el estándar que elija. Los archivos PDF creados con este archivo de configuración se pueden abrir en Acrobat 5 y Acrobat Reader 5 y posterior. Para obtener más información sobre PDF/A, consulte Adobe y estándares del sector.
 
-**PDF/X-1a 2001:** Comprueba la compatibilidad con PDF/X-1a de los trabajos entrantes y crea archivos PDF solo si son compatibles. PDF/X-1a es un estándar ISO para el intercambio de contenido gráfico. PDF/X-1a requiere que todas las fuentes estén incrustadas, que se especifiquen los cuadros PDF correspondientes y que el color aparezca como CMYK o tintas planas. Los archivos PDF que cumplen los requisitos de PDF/X-1a están dirigidos a una condición de salida específica, como la impresión de desplazamiento de Web según las especificaciones de las publicaciones de contrapartida Web. Para obtener más información sobre PDF/X, consulte Adobe y los estándares del sector.
+**PDF/X-1a 2001:** comprueba los trabajos entrantes para comprobar la compatibilidad con PDF/X-1a y crea archivos PDF solo si son compatibles. PDF/X-1a es un estándar ISO para el intercambio de contenido gráfico. PDF/X-1a requiere que todas las fuentes estén incrustadas, que se especifiquen los cuadros PDF correspondientes y que el color aparezca como CMYK o tintas planas. Los archivos PDF que cumplen los requisitos de PDF/X-1a están dirigidos a una condición de salida específica, como la impresión de desplazamiento de Web según las especificaciones de las publicaciones de contrapartida Web. Para obtener más información sobre PDF/X, consulte Adobe y estándares del sector.
 
-**PDF/X-3 2002:** Comprueba la compatibilidad con PDF/X-3 de los trabajos entrantes y crea archivos PDF solo si son compatibles. Al igual que PDF/X-1a, PDF/X-3 es un estándar ISO para el intercambio de contenido gráfico. La principal diferencia es que PDF/X-3 admite color independiente del dispositivo.
+**PDF/X-3 2002:** comprueba los trabajos entrantes para comprobar la compatibilidad con PDF/X-3 y crea archivos PDF solo si son compatibles. Al igual que PDF/X-1a, PDF/X-3 es un estándar ISO para el intercambio de contenido gráfico. La principal diferencia es que PDF/X-3 admite color independiente del dispositivo.
 
-**Calidad de prensa:** Crea archivos PDF para una producción de impresión de alta calidad (por ejemplo, en una fotocomponedora o una platesetter). En este caso, el tamaño del archivo no es una consideración. El objetivo es mantener toda la información de un archivo PDF que una impresora comercial o un proveedor de servicio de preimpresión necesita para imprimir el documento correctamente. Este conjunto de opciones:
+**Calidad de prensa:** crea archivos PDF para una producción de impresión de alta calidad (por ejemplo, en una fotocomponedora o una platesetter). En este caso, el tamaño del archivo no es una consideración. El objetivo es mantener toda la información de un archivo PDF que una impresora comercial o un proveedor de servicio de preimpresión necesita para imprimir el documento correctamente. Este conjunto de opciones:
 
 * disminuye la resolución de las imágenes en color y escala de grises a 300 ppp
 * disminuye la resolución de las imágenes monocromas a 1200 ppp
@@ -70,23 +73,23 @@ Estos archivos PDF se pueden abrir en Adobe Acrobat 5 y Adobe Acrobat Reader® 5
 * no rota automáticamente las páginas en función de la orientación del texto o de los comentarios de las convenciones de estructuración de documentos (DSC)
 * utiliza otros ajustes para conservar la cantidad máxima de información sobre el documento original.
 
-Los trabajos de impresión fallan si tienen fuentes que no se pueden incrustar. These PDF files can be opened in Acrobat 5 and Acrobat Reader 5 and later.
+Los trabajos de impresión fallan si tienen fuentes que no se pueden incrustar. Estos archivos PDF se pueden abrir en Acrobat 5 y Acrobat Reader 5 y versiones posteriores.
 
 >[!NOTE]
 >
->Before you create a PDF file to send to a commercial printer or prepress service provider, determine the output resolution and other settings, or request a .joboptions file with the recommended settings. Es posible que deba personalizar la configuración de Adobe PDF para un proveedor determinado y, a continuación, proporcionar un archivo .joboptions propio.
+>Antes de crear un archivo PDF para enviarlo a una impresora comercial o a un proveedor de servicio de preimpresión, determine la resolución de salida y otros ajustes, o bien solicite un archivo .joboptions con los ajustes recomendados. Es posible que deba personalizar la configuración de Adobe PDF para un proveedor determinado y, a continuación, proporcionar un archivo .joboptions propio.
 
-**Tamaño de archivo más pequeño:** Crea archivos PDF para mostrarlos en la web o en una intranet, o para distribuirlos a través de un sistema de correo electrónico para visualizarlos en pantalla. Este conjunto de opciones utiliza compresión, disminución de resolución y una resolución de imagen relativamente baja. It converts all colors to sRGB and does not embed fonts unless necessary. También optimiza los archivos para el servicio de bytes. Estos archivos PDF se pueden abrir en Acrobat 5 y Acrobat Reader 5.0 y posterior.
+**Tamaño de archivo más pequeño:** crea archivos PDF para mostrarlos en la Web o en una intranet, o para distribuirlos a través de un sistema de correo electrónico para visualizarlos en pantalla. Este conjunto de opciones utiliza compresión, disminución de resolución y una resolución de imagen relativamente baja. Convierte todos los colores a sRGB y no incrusta fuentes a menos que sea necesario. También optimiza los archivos para el servicio de bytes. Estos archivos PDF se pueden abrir en Acrobat 5 y Acrobat Reader 5.0 y posterior.
 
-**Estándar:** Crea archivos PDF para imprimirlos en impresoras de escritorio o fotocopiadoras digitales, publicarlos en un CD o enviarlos a un cliente como prueba de publicación. This set of options uses compression and downsampling to reduce the file size. It also embeds subsets of all fonts that are used in the file, converts all colors to sRGB, and prints to a medium resolution to create a reasonably accurate rendition of the original document. Notice that Microsoft Windows font subsets are not embedded by default. These PDF files can be opened in Acrobat 5 and Acrobat Reader 5.0 and later.
+**Estándar:** Crea archivos PDF para imprimir en impresoras de escritorio o fotocopiadoras digitales, para publicar en un CD o para enviarlos a un cliente como prueba de publicación. Este conjunto de opciones utiliza compresión y disminución de resolución para reducir el tamaño del archivo. También incrusta subconjuntos de todas las fuentes utilizadas en el archivo, convierte todos los colores a sRGB e imprime a una resolución media para crear una representación razonablemente precisa del documento original. Tenga en cuenta que los subconjuntos de fuentes de Microsoft Windows no están incrustados de forma predeterminada. Estos archivos PDF se pueden abrir en Acrobat 5 y Acrobat Reader 5.0 y posterior.
 
-## Add or edit PDF settings {#add-or-edit-pdf-settings}
+## Añadir o editar la configuración de PDF {#add-or-edit-pdf-settings}
 
 La configuración de PDF determina con precisión cómo se convierten los archivos y la estructura y las funciones de PDF resultantes. Defina una nueva configuración de PDF o edite una que haya creado anteriormente. No puede modificar la configuración predefinida, pero puede crear una configuración basada en una existente editando la configuración y guardarla con un nombre nuevo.
 
 1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
-1. Either click New or click the name of an existing setting.
-1. On the New/Edit Adobe PDF Setting page, complete the required information in these sections:
+1. Haga clic en Nuevo o en el nombre de una configuración existente.
+1. En la página Nueva/Editar configuración de Adobe PDF, complete la información requerida en estas secciones:
 
    [Opciones generales](configuring-pdf-settings.md#general-options)
 
@@ -98,7 +101,7 @@ La configuración de PDF determina con precisión cómo se convierten los archiv
 
    [Opciones avanzadas](configuring-pdf-settings.md#advanced-options)
 
-   [sistema de informes de normas y opciones de cumplimiento](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Sistema de informes de normas y opciones de cumplimiento](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
    [Opciones de vista inicial](configuring-pdf-settings.md#initial-view-options)
 
@@ -110,8 +113,8 @@ La configuración de PDF determina con precisión cómo se convierten los archiv
 
 Puede tener la configuración de PDF disponible en el servidor de PDF Generator cargándolos desde un equipo local o una ubicación de red.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF y, a continuación, haga clic en Cargar.
-1. On the Upload Adobe PDF Setting page, click Browse, locate the PDF settings file, and click Open.
+1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF y, a continuación, en Cargar.
+1. En la página Cargar configuración de Adobe PDF, haga clic en Examinar, busque el archivo de configuración de PDF y haga clic en Abrir.
 1. Haga clic en Aceptar y, a continuación, en Aceptar nuevamente.
 
 ## Eliminar configuración de PDF {#delete-pdf-settings}
@@ -124,11 +127,11 @@ Puede eliminar de forma permanente la configuración de PDF si ya no es necesari
 
 ## Opciones generales {#general-options}
 
-Utilice las opciones generales para especificar la versión de Acrobat que se va a utilizar para la compatibilidad de archivos y otras opciones de archivos y dispositivos. Para obtener instrucciones sobre cómo acceder a las opciones Generales, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
+Utilice las opciones generales para especificar la versión de Acrobat que se utilizará para la compatibilidad de archivos y otras opciones de archivos y dispositivos. Para obtener instrucciones sobre cómo acceder a las opciones generales, consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 ### Opciones de archivo {#file-options}
 
-**Compatibilidad:** Nivel de compatibilidad del archivo PDF. Para documentos que se distribuirán ampliamente, considere la posibilidad de seleccionar Acrobat 4 (PDF 1.3) o Acrobat 5 (PDF 1.4) para garantizar que todos los usuarios puedan realizar vistas e imprimir el documento. Si crea archivos con compatibilidad con Acrobat 5 o posterior, es posible que no sean compatibles con versiones anteriores de Acrobat. Las subsecciones siguientes muestran algunas de las diferencias entre los archivos PDF que se crean con diferentes niveles de compatibilidad con Acrobat.
+**Compatibilidad:** el nivel de compatibilidad del archivo PDF. Para documentos que se distribuirán ampliamente, considere la posibilidad de seleccionar Acrobat 4 (PDF 1.3) o Acrobat 5 (PDF 1.4) para garantizar que todos los usuarios puedan vista e imprimir el documento. Si crea archivos con compatibilidad con Acrobat 5 o posterior, es posible que no sean compatibles con versiones anteriores de Acrobat. Las subsecciones siguientes muestran algunas de las diferencias entre los archivos PDF que se crean con diferentes niveles de compatibilidad con Acrobat.
 
 <table>
  <tbody>
@@ -146,9 +149,9 @@ Utilice las opciones generales para especificar la versión de Acrobat que se va
   </tr>
   <tr>
    <td><p>No puede contener ilustraciones que utilicen efectos de transparencia activos. Cualquier transparencia debe acoplarse antes de convertir a PDF 1.3.</p> </td>
-   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función de Acrobat Distiller acopla la transparencia).</p> </td>
-   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función de Acrobat Distiller acopla la transparencia).</p> </td>
-   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función de Acrobat Distiller acopla la transparencia).</p> </td>
+   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función Acrobat Distiller aplana la transparencia).</p> </td>
+   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función Acrobat Distiller aplana la transparencia).</p> </td>
+   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función Acrobat Distiller aplana la transparencia).</p> </td>
   </tr>
   <tr>
    <td><p>Las capas no son compatibles.</p> </td>
@@ -163,7 +166,7 @@ Utilice las opciones generales para especificar la versión de Acrobat que se va
    <td><p>Se admite el espacio de color DeviceN con hasta 31 colorantes.</p> </td>
   </tr>
   <tr>
-   <td><p>Se pueden incrustar fuentes multibyte. (Distiller converts the fonts when embedding.)</p> </td>
+   <td><p>Se pueden incrustar fuentes multibyte. (Distiller convierte las fuentes al incrustar.)</p> </td>
    <td><p>Se pueden incrustar fuentes multibyte.</p> </td>
    <td><p>Se pueden incrustar fuentes multibyte.</p> </td>
    <td><p>Se pueden incrustar fuentes multibyte.</p> </td>
@@ -177,53 +180,53 @@ Utilice las opciones generales para especificar la versión de Acrobat que se va
  </tbody>
 </table>
 
-**Compresión de nivel de objeto:** Consolida objetos pequeños (cada uno de los cuales no se puede comprimir por sí mismo) en flujos que se pueden comprimir de forma eficaz.
+**Compresión de nivel de objeto:** consolida objetos pequeños (cada uno de los cuales no se puede comprimir a sí mismo) en flujos que se pueden comprimir de forma eficaz.
 
-**Desactivado:** No comprime ninguna información estructural en el documento PDF. Seleccione esta opción si desea que los usuarios realicen vistas, naveguen e interactúen con marcadores y otra información estructural mediante Acrobat 5 y posterior.
+**Desactivado:** no comprime ninguna información estructural en el documento PDF. Seleccione esta opción si desea que los usuarios realicen vistas, naveguen e interactúen con marcadores y otra información estructural mediante Acrobat 5 y versiones posteriores.
 
-**Sólo etiquetas:** Comprime la información estructural del documento PDF. Si utiliza esta opción, se abre un archivo PDF que se puede imprimir con Acrobat 5. Los usuarios no pueden realizar vistas de la información de accesibilidad, estructura o PDF con etiquetas en Acrobat 5 o Acrobat Reader 5.0, pero sí pueden realizar vistas de esta información en Acrobat 6 y Adobe Reader 6.0.
+**Solo etiquetas:** comprime la información estructural en el documento PDF. Si utiliza esta opción, se abre un archivo PDF que se puede imprimir con Acrobat 5. Los usuarios no pueden realizar vistas de la información de accesibilidad, estructura o PDF con etiquetas en Acrobat 5 o Acrobat Reader 5.0, pero sí pueden vista de esta información en Acrobat 6 y Adobe Reader 6.0.
 
-**Rotar páginas automáticamente:** Define la rotación automática de las páginas en función de la orientación del texto o de los comentarios de DSC. Por ejemplo: algunas páginas (como páginas que contienen tablas) pueden requerir que el usuario las ponga de lado para leerlas. Seleccione Individualmente para rotar cada página en función de la dirección del texto en esa página. Seleccione Colectivamente por archivo para rotar todas las páginas del documento en función de la orientación de la mayoría del texto.
-
->[!NOTE]
->
->Si se selecciona Procesar comentarios DSC en la configuración avanzada y se incluyen los comentarios %%Ver orientación, estos comentarios tendrán prioridad al determinar la orientación de la página.
-
-**Enlace:** Especifica si se muestra un archivo PDF con enlace a la izquierda o a la derecha. Esta configuración afecta a la visualización de las páginas en la página opuesta: presentación continua y visualización de miniaturas una al lado de la otra.
-
-**Resolution:** Sets the emulation for the resolution of a printer for input files that adjust their behavior according to the resolution of the printer they are printing to. Para la mayoría de los archivos de entrada, una configuración de resolución más alta da como resultado archivos PDF más grandes pero de mayor calidad, y una configuración más baja da como resultado archivos PDF más pequeños pero de menor calidad. Normalmente, la resolución determina el número de pasos en un degradado o una mezcla. You can enter a value from 72 to 4000. Keep this setting as the default unless you plan to print the PDF file to a specific printer and you want to emulate the resolution defined in the original input file.
+**Rotar automáticamente páginas:** establece la rotación automática de las páginas en función de la orientación del texto o de los comentarios de DSC. Por ejemplo: algunas páginas (como páginas que contienen tablas) pueden requerir que el usuario las ponga de lado para leerlas. Seleccione Individualmente para rotar cada página en función de la dirección del texto en esa página. Seleccione Colectivamente por archivo para rotar todas las páginas del documento en función de la orientación de la mayoría del texto.
 
 >[!NOTE]
 >
->Increasing the resolution setting increases file size and may slightly increase the time required to process some files.
+>Si se selecciona Procesar comentarios DSC en la configuración avanzada y se incluyen los comentarios %%Visualización de orientación, estos comentarios tienen prioridad a la hora de determinar la orientación de la página.
 
-**All Pages or Pages From:** Specifies which pages to convert. Leave the To box empty to create a range from the page number you enter in the From box to the end of the file.
+**Enlace:** especifica si se muestra un archivo PDF con enlace a la izquierda o a la derecha. Esta configuración afecta a la visualización de las páginas en la página opuesta: presentación continua y visualización de miniaturas una al lado de la otra.
 
-**Optimize For Fast Web View:** Restructures the file for page-at-a-time downloading (byte serving) from web servers. This option compresses text and line art, regardless of what you selected as compression settings on the Images tab. Compression results in faster access and viewing when downloading the file from the web or a network. De forma predeterminada, esta opción no está activada.
+**Resolución:** establece la emulación de la resolución de una impresora para los archivos de entrada que ajustan su comportamiento según la resolución de la impresora a la que se van a imprimir. Para la mayoría de los archivos de entrada, una configuración de resolución más alta da como resultado archivos PDF más grandes pero de mayor calidad, y una configuración más baja da como resultado archivos PDF más pequeños pero de menor calidad. Normalmente, la resolución determina el número de pasos en un degradado o una mezcla. Puede introducir un valor de 72 a 4000. Mantenga esta configuración como predeterminada a menos que tenga pensado imprimir el archivo PDF en una impresora específica y desee emular la resolución definida en el archivo de entrada original.
 
-### Default Page Size {#default-page-size}
+>[!NOTE]
+>
+>Al aumentar la configuración de resolución, aumenta el tamaño del archivo y puede aumentar ligeramente el tiempo necesario para procesar algunos archivos.
 
-Las opciones Tamaño de página predeterminado especifican el tamaño de página que se debe utilizar cuando no se especifica ninguno en el archivo original. Normalmente, los archivos PostScript de Adobe incluyen esta información, excepto los archivos PostScript encapsulados (EPS), que proporcionan un tamaño de cuadro delimitador pero no un tamaño de página. El tamaño máximo de página permitido es de 31.800.000 pulgadas (15.000.000 cm) en cualquier dirección. Estas opciones configuran el tamaño de página predeterminado:
+**Todas las páginas o páginas de:** especifica las páginas que se van a convertir. Deje el cuadro Para vacío para crear un rango desde el número de página que introduzca en el cuadro Desde hasta el final del archivo.
 
-**Ancho:** Ancho de la página
+**Optimizar para Vista rápida en Web:** reestructura el archivo para la descarga de página a página (servicio de bytes) desde servidores Web. Esta opción comprime texto y arte lineal, independientemente de lo que haya seleccionado como configuración de compresión en la ficha Imágenes. La compresión agiliza el acceso y la visualización del archivo al descargarlo de la web o de una red. De forma predeterminada, esta opción no está activada.
 
-**Height:** Height of the page
+### Tamaño de página predeterminado {#default-page-size}
+
+Las opciones Tamaño de página predeterminado especifican el tamaño de página que se debe utilizar cuando no se especifica ninguno en el archivo original. Normalmente, los archivos de Adobe PostScript incluyen esta información, excepto los archivos PostScript encapsulados (EPS), que proporcionan un tamaño de cuadro delimitador pero no un tamaño de página. El tamaño máximo de página permitido es de 31.800.000 pulgadas (15.000.000 cm) en cualquier dirección. Estas opciones configuran el tamaño de página predeterminado:
+
+**Anchura:** Anchura de la página
+
+**Altura:** Altura de la página
 
 **Unidades:** Unidades que se utilizarán para la configuración de anchura y altura
 
-## Images options {#images-options}
+## Opciones de imágenes {#images-options}
 
-The Images options specify compression and resampling for images. You can experiment with these options to find an appropriate balance between file size and image quality. For instructions about accessing the Images settings, see [Add or edit PDF settings](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+Las opciones Imágenes especifican la compresión y el remuestreo de las imágenes. Puede experimentar con estas opciones para encontrar un equilibrio adecuado entre el tamaño del archivo y la calidad de la imagen. Para obtener instrucciones sobre cómo acceder a la configuración de imágenes, consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-These options configure color, grayscale, and monochrome images:
+Estas opciones configuran imágenes en color, escala de grises y monocromo:
 
-**Downsample:** Set a value for each type of image. To downsample color, grayscale, or monochrome images, PDF Generator combines pixels in a sample area to make one larger pixel. Provide the resolution of your output device in dots per inch (dpi) and enter a resolution in dpi in the For Images Above box. For images with a resolution above this threshold, PDF Generator combines pixels, as needed, to reduce the resolution of the image (pixels per inch) to the specified dpi setting. To turn off downsampling, select Off. Here are the options:
+**Disminuir resolución:** defina un valor para cada tipo de imagen. Para reducir la resolución de las imágenes en color, escala de grises o monocromo, PDF Generator combina píxeles en un área de muestra para aumentar el tamaño de un píxel. Proporcione la resolución del dispositivo de salida en puntos por pulgada (ppp) e introduzca una resolución en ppp en el cuadro Para imágenes arriba. Para las imágenes con una resolución por encima de este umbral, el generador de PDF combina píxeles, según sea necesario, para reducir la resolución de la imagen (píxeles por pulgada) a la configuración de ppp especificada. Para desactivar la disminución de resolución, seleccione Desactivado. Estas son las opciones:
 
-**Disminuir resolución promedio a:** Promedio de los píxeles de un área de muestra y reemplaza toda el área con el color medio de píxeles en la resolución especificada.
+**Promedio de disminución de resolución a:** Promedio de los píxeles de un área de muestra y reemplaza toda el área con el color medio de píxeles en la resolución especificada.
 
-**Disminución De Muestreo Bicúbico A:** Utiliza una media ponderada para determinar el color del píxel y normalmente produce mejores resultados que el método simple de cálculo de medias de la disminución de resolución. Bicúbico es el método más lento pero más preciso y da como resultado las gradaciones tonales más suaves.
+**Disminución de resolución bicúbica a:** utiliza una media ponderada para determinar el color de los píxeles y normalmente produce mejores resultados que el método sencillo de reducción de resolución promedio. Bicúbico es el método más lento pero más preciso y da como resultado las gradaciones tonales más suaves.
 
-**Submuestreo a:** Selecciona un píxel en el centro del área de muestra y reemplaza toda el área con ese píxel en la resolución especificada. El submuestreo reduce significativamente el tiempo de conversión en comparación con la disminución de resolución, pero resulta en imágenes menos suaves y continuas.
+**Submuestreo a:** selecciona un píxel en el centro del área de muestra y reemplaza todo el área con ese píxel en la resolución especificada. El submuestreo reduce significativamente el tiempo de conversión en comparación con la disminución de resolución, pero resulta en imágenes menos suaves y continuas.
 
 La configuración de resolución para color y escala de grises debe ser de 1,5 a 2 veces la configuración de la pantalla de línea en la que se imprimirá el archivo. (Siempre que no se sitúe por debajo de esta configuración de resolución recomendada, las imágenes que no contengan líneas rectas o patrones geométricos o repetitivos no se verán afectadas por una resolución menor). La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida. Sin embargo, tenga en cuenta que al guardar una imagen monocroma con una resolución superior a 1500 ppp, se aumenta el tamaño del archivo sin mejorar significativamente la calidad de la imagen.
 
@@ -265,26 +268,26 @@ Esta tabla muestra los tipos de impresoras y su resolución medida en ppp, su re
  </tbody>
 </table>
 
-**Compresión:** Establezca un valor para aplicarlo a imágenes en color, escala de grises y monocromo. Para las imágenes en color y escala de grises, defina también la calidad de la imagen:
+**Compresión:** defina un valor para aplicarlo a imágenes en color, escala de grises y monocromas. Para las imágenes en color y escala de grises, defina también la calidad de la imagen:
 
 * Para imágenes en color o escala de grises, seleccione ZIP para aplicar compresión que funcione bien en imágenes que tengan grandes áreas de color único o patrones repetitivos. Algunos ejemplos son capturas de pantalla, imágenes simples creadas con programas de pintura e imágenes monocromas que contienen patrones repetitivos. Seleccione JPEG, de calidad mínima a máxima, para aplicar compresión adecuada para imágenes en escala de grises o en color, como fotografías en tono continuo que contengan más detalles que los que se pueden reproducir en pantalla o en impresión. Seleccione Automático (JPEG) para determinar automáticamente la mejor calidad de las imágenes en color y escala de grises.
 * Para las imágenes monocromas, seleccione la compresión Grupo 4 CCITT, Grupo 3 CCITT, ZIP, JPEG200, Automático (JPEG2000) o Longitud de ejecución.
 
 Asegúrese de que las imágenes monocromas se escanean como monocromas y no como escala de grises. El texto digitalizado a veces se guarda como imágenes en escala de grises de forma predeterminada. El texto en escala de grises que se comprime con el método de compresión JPEG no es claro y puede ser ilegible.
 
-**Calidad de imagen:** Configura la calidad de imagen para las imágenes en color y escala de grises. Las opciones son mínima, baja, media, alta y máxima.
+**Calidad de imagen:** configura la calidad de imagen para imágenes en color y escala de grises. Las opciones son mínima, baja, media, alta y máxima.
 
-**Suavizar a gris:** Suaviza los bordes dentados en imágenes monocromas. Seleccione 2 bits, 4 bits u 8 bits para especificar 4, 16 o 256 niveles de gris. (El suavizado puede desenfocar líneas pequeñas o finas).
+**Suavizado a gris:** Suaviza los bordes dentados en imágenes monocromas. Seleccione 2 bits, 4 bits u 8 bits para especificar 4, 16 o 256 niveles de gris. (El suavizado puede desenfocar líneas pequeñas o finas).
 
 >[!NOTE]
 >
 >La compresión de texto y arte lineal siempre está activada.
 
-**Política de imagen:** Defina una política para las imágenes en color, escala de grises y monocromo. Si la resolución de la imagen es inferior a la resolución especificada, puede seleccionar continuar (Omitir), proporcionar un mensaje de advertencia o cancelar el trabajo.
+**Política de imagen:** defina una política para imágenes en color, escala de grises y monocromas. Si la resolución de la imagen es inferior a la resolución especificada, puede seleccionar continuar (Omitir), proporcionar un mensaje de advertencia o cancelar el trabajo.
 
 ## Opciones de fuentes {#fonts-options}
 
-Las opciones de Fuentes especifican qué fuentes se incrustarán en un archivo PDF y si se incrustará un subconjunto de caracteres que se utilizarán en el archivo PDF. Para obtener instrucciones sobre cómo acceder a las opciones de fuentes, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
+Las opciones de Fuentes especifican qué fuentes se incrustarán en un archivo PDF y si se incrustará un subconjunto de caracteres que se utilizarán en el archivo PDF. Para obtener instrucciones sobre cómo acceder a las opciones de fuentes, consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 >[!NOTE]
 >
@@ -292,13 +295,13 @@ Las opciones de Fuentes especifican qué fuentes se incrustarán en un archivo P
 
 **Incrustar todas las fuentes:** Incrusta todas las fuentes utilizadas en el archivo. La incrustación de fuentes es necesaria para la compatibilidad con PDF/X.
 
-**Subconjunto De Fuentes Incrustadas Cuando El Porcentaje De Caracteres Utilizados Es Menor Que:** Si selecciona esta opción, especifique un porcentaje de umbral para incrustar solo un subconjunto de las fuentes. Por ejemplo, si el umbral es 35 y se utiliza menos del 35 % de los caracteres, el generador de PDF incrusta solo esos caracteres. Solo se incrustan las fuentes con los bits de permiso adecuados.
+**Subconjunto de fuentes incrustadas cuando el porcentaje de caracteres utilizado es menor que:** si selecciona esta opción, especifique un porcentaje de umbral para incrustar solo un subconjunto de las fuentes. Por ejemplo, si el umbral es 35 y se utiliza menos del 35 % de los caracteres, el generador de PDF incrusta solo esos caracteres. Solo se incrustan las fuentes con los bits de permiso adecuados.
 
-**Cuando Falla La Incrustación:** Especifica cómo responde PDF Generator si no encuentra una fuente para incrustar al procesar un archivo. Puede hacer que el generador de PDF ignore la solicitud y sustituya la fuente, avise y sustituya la fuente o cancele el procesamiento del trabajo actual.
+**Cuando falla la incrustación:** especifica cómo responde PDF Generator si no encuentra una fuente para incrustar al procesar un archivo. Puede hacer que el generador de PDF ignore la solicitud y sustituya la fuente, avise y sustituya la fuente o cancele el procesamiento del trabajo actual.
 
-**Fuente:** Ubicación de las fuentes que utiliza PDF Generator.
+**Fuente:** La ubicación de las fuentes que utiliza el generador de PDF.
 
-### Especificar las fuentes que se van a incrustar {#specify-which-fonts-to-embed}
+### Especifique las fuentes que desea incrustar {#specify-which-fonts-to-embed}
 
 1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
 1. Haga clic en Nuevo o en el nombre de una configuración.
@@ -314,141 +317,141 @@ Las opciones de Fuentes especifican qué fuentes se incrustarán en un archivo P
 
 >[!NOTE]
 >
->Las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes del cliente, asegúrese de reiniciar el sistema en el que están instalados los formularios AEM.
+>Las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes del cliente, asegúrese de reiniciar el sistema en el que se instalan AEM formularios.
 
 ## Opciones de color {#color-options}
 
-Las opciones de color definen toda la información de gestión de color para el generador de PDF. Para obtener instrucciones sobre cómo acceder a las opciones de color, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
+Las opciones de color definen toda la información de gestión de color para el generador de PDF. Para obtener instrucciones sobre cómo acceder a las opciones de color, consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-### Configuración de color de Adobe {#adobe-color-settings}
+### Configuración de Adobe Color {#adobe-color-settings}
 
-**Archivo de configuración:** Esta lista contiene una lista de los ajustes de color que también se utilizan en las principales aplicaciones gráficas, como Adobe Photoshop y Adobe Illustrator. La configuración de color que seleccione determina el resto de la configuración de color de Adobe en esta página. Por ejemplo, si selecciona una configuración que no sea Ninguno, todas las opciones que no sean Datos dependientes del dispositivo estarán predefinidas y atenuadas. Puede editar los ajustes Directivas de administración de color y Espacios de trabajo solo si selecciona Ninguno en Archivo de configuración.
+**Archivo de configuración:** Esta lista contiene una lista de la configuración de color que también se utiliza en las principales aplicaciones gráficas, como Adobe Photoshop y Adobe Illustrator. La configuración de color que seleccione determina el resto de la configuración de color del Adobe en esta página. Por ejemplo, si selecciona una configuración que no sea Ninguno, todas las opciones que no sean Datos dependientes del dispositivo estarán predefinidas y atenuadas. Puede editar los ajustes Directivas de administración de color y Espacios de trabajo solo si selecciona Ninguno en Archivo de configuración.
 
 ### Directivas de administración de color {#color-management-policies}
 
 Si seleccionó Ninguno para el archivo de configuración, el área Directivas de administración de color especifica cómo convierte PDF Generator el color no administrado en un archivo PostScript.
 
-**No cambiar el color:** Mantiene los colores dependientes del dispositivo sin cambios y conserva los colores independientes del dispositivo como el equivalente más cercano posible en PDF. Esta opción resulta útil para imprimir tiendas que han calibrado todos sus dispositivos, utilizado esa información para especificar el color del archivo y solo genera resultados para dichos dispositivos.
+**No cambiar color:** deja los colores dependientes del dispositivo sin modificar y conserva los colores independientes del dispositivo como el equivalente más cercano posible en PDF. Esta opción resulta útil para imprimir tiendas que han calibrado todos sus dispositivos, utilizado esa información para especificar el color del archivo y solo muestra la salida a esos dispositivos.
 
-**Etiquete todo para la administración de color:** Incrusta un perfil de International Color Consortium al convertir archivos y calibrar el color de las imágenes, lo que hace que los colores de los archivos PDF resultantes sean independientes del dispositivo si selecciona la compatibilidad con Acrobat 4 (PDF 1.3) o posterior. Sin embargo, los espacios de color dependientes del dispositivo en archivos (RGB, escala de grises y CMYK) se convierten en espacios de color independientes del dispositivo (CalRGB, CalGray y LAB).
+**Etiquetar todo para la gestión de color:** Incrusta un perfil de International Color Consortium al destilar archivos y calibrar el color de las imágenes, lo que hace que los colores de los archivos PDF resultantes sean independientes del dispositivo si selecciona la compatibilidad con Acrobat 4 (PDF 1.3) o posterior. Sin embargo, los espacios de color dependientes del dispositivo en archivos (RGB, escala de grises y CMYK) se convierten en espacios de color independientes del dispositivo (CalRGB, CalGray y LAB).
 
-**Etiquetar solo imágenes para la administración de color:** Incrusta perfiles ICC únicamente en imágenes, no en texto ni en gráficos, al convertir archivos si ha seleccionado la compatibilidad con Acrobat 4 (PDF 1.3). Esta opción evita que el texto negro experimente cualquier cambio de color. Sin embargo, los espacios de color dependientes del dispositivo en imágenes (RGB, escala de grises y CMYK) se convierten en espacios de color independientes del dispositivo (CalRGB, CalGray y LAB). El texto y los gráficos no se convierten.
+**Etiquetar solo imágenes para la gestión de color:** Incrusta perfiles ICC solo en imágenes, no en texto ni en gráficos, al convertir archivos si ha seleccionado la compatibilidad con Acrobat 4 (PDF 1.3). Esta opción evita que el texto negro experimente cualquier cambio de color. Sin embargo, los espacios de color dependientes del dispositivo en imágenes (RGB, escala de grises y CMYK) se convierten en espacios de color independientes del dispositivo (CalRGB, CalGray y LAB). El texto y los gráficos no se convierten.
 
-**Convertir todos los colores a sRGB o Convertir todos los colores a CMYK:** Calibra el color del archivo, haciendo que el color sea independiente del dispositivo, similar a Etiquetar todo para la administración del color. Si ha seleccionado la compatibilidad con Acrobat 4 (PDF 1.3) o posterior y la conversión a sRGB, las imágenes CMYK y RGB se convierten a sRGB.
+**Convertir todos los colores a sRGB o Convertir todos los colores a CMYK:** calibra el color del archivo, haciendo que el color sea independiente del dispositivo, similar a Etiquetar todo para la gestión de color. Si ha seleccionado la compatibilidad con Acrobat 4 (PDF 1.3) o posterior y la conversión a sRGB, las imágenes CMYK y RGB se convierten a sRGB.
 
 Independientemente de la opción de compatibilidad que seleccione, las imágenes en escala de grises no cambian. Esto generalmente reduce el tamaño y aumenta la velocidad de visualización de los archivos PDF porque se necesita menos información para describir imágenes RGB que para describir imágenes CMYK. Debido a que RGB es el espacio de color nativo que se utiliza en los monitores, no es necesaria ninguna conversión de color durante la visualización, lo que contribuye a una visualización rápida en línea. Esta opción se recomienda si el archivo PDF se utiliza en línea o con impresoras de baja resolución.
 
-**Calidad de representación de Documento:** Método para asignar colores entre espacios de color. El resultado de cualquier método en particular depende de los perfiles de los espacios de color. Por ejemplo, algunos perfiles producen resultados idénticos con métodos diferentes. Las opciones disponibles son:
+**Calidad de representación de documentos:** el método para asignar colores entre espacios de color. El resultado de cualquier método en particular depende de los perfiles de los espacios de color. Por ejemplo, algunos perfiles producen resultados idénticos con métodos diferentes. Las opciones disponibles son:
 
 >[!NOTE]
 >
 >En todos los casos, las operaciones de administración de color que se producen tras la creación del archivo PDF pueden ignorar o anular las intenciones.
 
-**Conservar:** Significa que la intención se especifica en el dispositivo de salida en lugar de en el archivo PDF. En muchos dispositivos de salida, la opción Colorimétrica relativa es la calidad predeterminada.
+**Conservar:** significa que la intención se especifica en el dispositivo de salida en lugar de en el archivo PDF. En muchos dispositivos de salida, la opción Colorimétrica relativa es la calidad predeterminada.
 
-**Perceptual:** Mantiene los valores de color relativos entre los píxeles originales a medida que se asignan a la gama de destino. Este método conserva la relación visual entre los colores, aunque los valores de color pueden cambiar.
+**Perceptual:** mantiene los valores de color relativos entre los píxeles originales a medida que se asignan a la gama de destino. Este método conserva la relación visual entre los colores, aunque los valores de color pueden cambiar.
 
-**Saturación:** Mantiene los valores de saturación relativos de los píxeles originales. Este método es adecuado para gráficos empresariales, donde la relación exacta entre colores no es tan importante como tener colores brillantes saturados.
+**Saturación:** mantiene los valores de saturación relativos de los píxeles originales. Este método es adecuado para gráficos empresariales, donde la relación exacta entre colores no es tan importante como tener colores brillantes saturados.
 
-**Colorimétrico relativo:** Reasigna el punto blanco del espacio de origen al punto blanco del espacio de destino.
+**Colorimétrico relativo:** reasigna el punto blanco del espacio de origen al punto blanco del espacio de destino.
 
-**Colorimétrico absoluto:** Desactiva la coincidencia de puntos blancos y negros al convertir colores. Este método no se recomienda a menos que deba conservar los colores de firma, como los utilizados en marcas comerciales o logotipos.
+**Colorimétrico absoluto:** desactiva la coincidencia de puntos blancos y negros al convertir colores. Este método no se recomienda a menos que deba conservar los colores de firma, como los utilizados en marcas comerciales o logotipos.
 
 ### Espacios de trabajo {#working-spaces}
 
 Para todos los valores de la lista en Directivas de administración de color, excepto Dejar color sin modificar, seleccione entre las listas del área de trabajo para especificar qué perfiles ICC se utilizan para definir y calibrar los espacios de color de escala de grises, RGB y CMYK en los archivos PDF destilados. Las opciones disponibles son:
 
-**Gris:** Define el espacio de color de todas las imágenes en escala de grises de los archivos. Esta opción solo está disponible si selecciona Etiquetar todo para la administración de color o Etiquetar solo imágenes para la administración de color. El perfil ICC predeterminado para imágenes grises es Gray Gamma 2.2. También puede seleccionar Ninguno para evitar que las imágenes en escala de grises se conviertan.
+**Gris:** define el espacio de color de todas las imágenes en escala de grises de los archivos. Esta opción solo está disponible si selecciona Etiquetar todo para la administración de color o Etiquetar solo imágenes para la administración de color. El perfil ICC predeterminado para imágenes grises es Gray Gamma 2.2. También puede seleccionar Ninguno para evitar que las imágenes en escala de grises se conviertan.
 
-**RGB:** Define el espacio de color de todas las imágenes RGB de los archivos. El valor predeterminado, sRGB IEC61966-2.1, es generalmente una buena opción porque se está convirtiendo en un estándar de la industria y muchos dispositivos de salida lo reconocen. También puede seleccionar Ninguno para evitar que las imágenes RGB se conviertan.
+**RGB:** define el espacio de color de todas las imágenes RGB de los archivos. El valor predeterminado, sRGB IEC61966-2.1, es generalmente una buena opción porque se está convirtiendo en un estándar de la industria y muchos dispositivos de salida lo reconocen. También puede seleccionar Ninguno para evitar que las imágenes RGB se conviertan.
 
-**CMYK:** Define el espacio de color de todas las imágenes CMYK de los archivos. El valor predeterminado es U.S. Web Coated (SWOP) v2. También puede seleccionar Ninguno para evitar que las imágenes CMYK se conviertan.
+**CMYK:** define el espacio de color de todas las imágenes CMYK de los archivos. El valor predeterminado es U.S. Web Coated (SWOP) v2. También puede seleccionar Ninguno para evitar que las imágenes CMYK se conviertan.
 
 >[!NOTE]
 >
 >La selección de Ninguno para los tres espacios de trabajo tiene el mismo efecto que seleccionar Dejar color sin modificar.
 
-**Conservar valores CMYK para espacios de color CMYK calibrados:** Cuando se selecciona, los valores CMYK independientes del dispositivo se tratan como valores dependientes del dispositivo (DeviceCMYK), los espacios de color independientes del dispositivo se descartan y los archivos PDF/X-1a utilizan el valor Convertir todos los colores a CMYK. Si no se selecciona, los espacios de color independientes del dispositivo se convierten a CMYK si la política de gestión de color está establecida en Convertir todos los colores a CMYK.
+**Conservar valores CMYK para espacios de color CMYK calibrados:** cuando se selecciona, los valores CMYK independientes del dispositivo se tratan como valores dependientes del dispositivo (DeviceCMYK), los espacios de color independientes del dispositivo se descartan y los archivos PDF/X-1a utilizan el valor Convertir todos los colores a CMYK. Si no se selecciona, los espacios de color independientes del dispositivo se convierten a CMYK si la política de gestión de color está establecida en Convertir todos los colores a CMYK.
 
 ### Datos dependientes del dispositivo {#device-dependent-data}
 
-Estas opciones se aplican si trabaja con documentos creados con aplicaciones gráficas y de documentación de gama alta, como Adobe Illustrator y Adobe InDesign. Para obtener más información, consulte la documentación incluida con la aplicación.
+Estas opciones se aplican si trabaja con documentos creados con aplicaciones gráficas y de documentación de alto nivel, como Adobe Illustrator y Adobe InDesign. Para obtener más información, consulte la documentación incluida con la aplicación.
 
 Las funciones de transferencia se utilizan para el efecto artístico y para ajustar las especificaciones de un dispositivo de salida específico. Por ejemplo, un archivo que se va a generar en una fotocomponedora concreta puede contener funciones de transferencia que compensen la ganancia de puntos inherente a esa impresora.
 
-**Conservar En Eliminación De Color Y Generación De Negro:** Conserva esta configuración si existe en el archivo PostScript. La generación de negro calcula la cantidad de negro que se utilizará cuando se intente reproducir un color determinado. La eliminación de color bajo (UCR) reduce la cantidad de componentes cian, magenta y amarillo para compensar la cantidad de negro que agregó la generación de negro. Dado que utiliza menos tinta, el UCR se utiliza generalmente para papel de periódico y material sin estucar.
+**Conservar en Eliminación de color y Generación de negro:** conserva esta configuración si existe en el archivo PostScript. La generación de negro calcula la cantidad de negro que se utilizará cuando se intente reproducir un color determinado. La eliminación de color bajo (UCR) reduce la cantidad de componentes cian, magenta y amarillo para compensar la cantidad de negro que agregó la generación de negro. Dado que utiliza menos tinta, el UCR se utiliza generalmente para papel de periódico y material sin estucar.
 
-**Cuando Se Encuentran Funciones De Transferencia:** Determina qué hacer cuando se encuentran funciones de transferencia:
+**Cuando se encuentran funciones de transferencia:** determina qué hacer cuando se encuentran funciones de transferencia:
 
-**Conservar:** Conserva las funciones de transferencia que se utilizan tradicionalmente para compensar la ganancia de puntos o la pérdida de puntos que puede producirse cuando se transfiere una imagen a una película. La ganancia de puntos se produce cuando los puntos de tinta que conforman una imagen impresa son más grandes (por ejemplo, debido a la propagación en papel) que en la pantalla de semitonos; la pérdida de puntos se produce cuando los puntos se imprimen más pequeños. Con esta opción, las funciones de transferencia se conservan como parte del archivo y se aplican al archivo cuando se genera el archivo.
+**Conservar:** conserva las funciones de transferencia que se utilizan tradicionalmente para compensar la ganancia de puntos o la pérdida de puntos que puede producirse cuando se transfiere una imagen a una película. La ganancia de puntos se produce cuando los puntos de tinta que conforman una imagen impresa son más grandes (por ejemplo, debido a la propagación en papel) que en la pantalla de semitonos; la pérdida de puntos se produce cuando los puntos se imprimen más pequeños. Con esta opción, las funciones de transferencia se conservan como parte del archivo y se aplican al archivo cuando se genera el archivo.
 
-**Aplicar:** No mantiene la función de transferencia pero la aplica al archivo, que cambia los colores del archivo. Esta opción es útil para crear efectos de color en un archivo. De forma predeterminada, esta opción está seleccionada para los nuevos ajustes.
+**Aplicar:** No conserva la función de transferencia pero la aplica al archivo, que cambia los colores del archivo. Esta opción es útil para crear efectos de color en un archivo. De forma predeterminada, esta opción está seleccionada para los nuevos ajustes.
 
-**Eliminar:** Quita las funciones de transferencia aplicadas. Elimine las funciones de transferencia aplicadas a menos que el archivo PDF se envíe al mismo dispositivo para el que se creó el archivo PostScript de origen.
+**Eliminar:** Quita todas las funciones de transferencia aplicadas. Elimine las funciones de transferencia aplicadas a menos que el archivo PDF se envíe al mismo dispositivo para el que se creó el archivo PostScript de origen.
 
-**Conservar información de semitonos:** Conserva la información de semitonos en los archivos. La información de semitonos consiste en puntos que controlan cuánto depositan los dispositivos de semitonos de tinta en una ubicación específica del papel. La variación del tamaño y la densidad del punto crea la ilusión de variaciones de color gris o continuo. Para una imagen CMYK, se utilizan cuatro pantallas de semitonos, una para cada tinta que se utiliza en el proceso de impresión.
+**Conservar información de semitonos:** conserva toda la información de semitonos de los archivos. La información de semitonos consiste en puntos que controlan cuánto depositan los dispositivos de semitonos de tinta en una ubicación específica del papel. La variación del tamaño y la densidad del punto crea la ilusión de variaciones de color gris o continuo. Para una imagen CMYK, se utilizan cuatro pantallas de semitonos, una para cada tinta que se utiliza en el proceso de impresión.
 
 En la producción de impresión tradicional, se produce un semitono colocando una pantalla de semitonos entre una pieza de película y la imagen, y luego exponiendo la película. Los equivalentes electrónicos, como en Adobe Photoshop, permiten a los usuarios especificar los atributos de la pantalla de semitonos antes de producir la película o el papel. La información de semitonos está destinada a utilizarse con un dispositivo de salida concreto.
 
 ## Opciones avanzadas {#advanced-options}
 
-Las opciones avanzadas especifican qué convenciones de estructura de Documento (DSC) se guardan en el archivo PDF y cómo se definen otras opciones que afectan a la conversión desde PostScript. En un archivo PostScript, los comentarios de DSC contienen información sobre el archivo (como la aplicación de origen, la fecha de creación y la orientación de la página). También proporcionan una estructura para las descripciones de página en el archivo (como las instrucciones de inicio y finalización para una sección de prólogo). Los comentarios de DSC pueden ser útiles cuando el documento va a imprimir o presionar. Para obtener instrucciones sobre cómo acceder a las opciones avanzadas, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
+Las opciones avanzadas especifican qué convenciones de estructura de Documento (DSC) se guardan en el archivo PDF y cómo se definen otras opciones que afectan a la conversión desde PostScript. En un archivo PostScript, los comentarios de DSC contienen información sobre el archivo (como la aplicación de origen, la fecha de creación y la orientación de la página). También proporcionan una estructura para las descripciones de página en el archivo (como las instrucciones de inicio y finalización para una sección de prólogo). Los comentarios de DSC pueden ser útiles cuando el documento va a imprimir o presionar. Para obtener instrucciones sobre cómo acceder a las opciones avanzadas, consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 Al trabajar con las opciones avanzadas, resulta útil conocer el lenguaje PostScript y cómo se traduce a PDF. (Consulte [Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html).)
 
-**Permitir que el archivo PostScript anule la configuración de Adobe PDF:** Utiliza los ajustes almacenados en un archivo PostScript en lugar del archivo de configuración de Adobe PDF actual. Antes de procesar un archivo PostScript, puede colocar parámetros en el archivo para controlar los siguientes aspectos:
+**Permitir que el archivo PostScript anule la configuración de Adobe PDF:** utiliza la configuración almacenada en un archivo PostScript en lugar del archivo de configuración actual de Adobe PDF. Antes de procesar un archivo PostScript, puede colocar parámetros en el archivo para controlar los siguientes aspectos:
 
 * compresión de texto y gráficos
 * disminución de resolución y codificación de imágenes muestreadas
 * incrustación de fuentes Type 1 e instancias de fuentes Type 1 Multiple Master
 
-**Permitir XObject PostScript:** Los objetos XObject de PostScript almacenan información que aparece en muchas páginas del mismo archivo, como una imagen de fondo o información de encabezado y pie de página. El uso de XObject PostScript puede resultar en una impresión más rápida, pero requiere más memoria de impresora. Para evitar que se creen objetos XObject de PostScript, anule la selección de esta opción si crea archivos PDF con compatibilidad con Acrobat 5 (PDF 1.4) o posterior.
+**Permitir XObject de PostScript:XObject de** PostScript almacena información que aparece en muchas páginas del mismo archivo, como una imagen de fondo o información de encabezado y pie de página. El uso de XObject PostScript puede resultar en una impresión más rápida, pero requiere más memoria de impresora. Para evitar que se creen objetos XObject de PostScript, anule la selección de esta opción si crea archivos PDF con compatibilidad con Acrobat 5 (PDF 1.4) o posterior.
 
-**Convertir degradados en sombras suaves:** Convierte las mezclas en sombras suaves para Acrobat 4 y posterior, lo que reduce el tamaño de los archivos PDF y mejora potencialmente la calidad de la salida final. PDF Generator convierte los degradados de Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress y Microsoft PowerPoint.
+**Convertir degradados en sombras suaves:** convierte las mezclas en sombras suaves para Acrobat 4 y versiones posteriores, reduciendo el tamaño de los archivos PDF y mejorando potencialmente la calidad de la salida final. PDF Generator convierte los degradados de Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress y Microsoft PowerPoint.
 
-**Convertir líneas suaves en curvas:** Reduce la cantidad de puntos de control utilizados para crear curvas en dibujos CAD, lo que da como resultado archivos PDF más pequeños y una representación en pantalla más rápida.
+**Convertir líneas suaves en curvas:** reduce la cantidad de puntos de control utilizados para crear curvas en dibujos CAD, lo que da como resultado archivos PDF más pequeños y un procesamiento en pantalla más rápido.
 
-**Conservar semánticos de copypage de nivel 2:** Utiliza el operador copypage definido en PostScript de LanguageLevel 2 en lugar de PostScript de LanguageLevel 3. Si tiene un archivo PostScript y selecciona esta opción, un operador de copypage copia la página. Si esta opción no está seleccionada, se ejecuta el equivalente de una operación showpage, pero el estado gráfico no se reinicia.
+**Conservar semánticos de copypage de nivel 2:** utiliza el operador de copypage definido en PostScript de nivel 2 de lenguaje en lugar de en PostScript de nivel 3 de lenguaje. Si tiene un archivo PostScript y selecciona esta opción, un operador de copypage copia la página. Si esta opción no está seleccionada, se ejecuta el equivalente de una operación showpage, pero el estado gráfico no se reinicia.
 
-**Conservar configuración de sobreimpresión:** Conserva cualquier configuración de sobreimpresión en los archivos que se van a convertir a PDF. Los colores sobreimpresos son dos o más tintas impresas una encima de la otra. Por ejemplo, cuando una tinta cian se imprime sobre una tinta amarilla, la sobreimpresión resultante es de color verde. Sin sobreimpresión, el amarillo subyacente no se imprimiría, lo que resultaría en un color cian.
+**Conservar configuración de sobreimpresión:** conserva cualquier configuración de sobreimpresión en los archivos que se van a convertir a PDF. Los colores sobreimpresos son dos o más tintas impresas una encima de la otra. Por ejemplo, cuando una tinta cian se imprime sobre una tinta amarilla, la sobreimpresión resultante es de color verde. Sin sobreimpresión, el amarillo subyacente no se imprimiría, lo que resultaría en un color cian.
 
-**El Valor Predeterminado De Sobreimpresión Es Distinto De Cero:** Evita que los objetos sobreimpresos con valores CMYK cero oculten los objetos CMYK que están debajo de ellos. Este efecto se logra insertando el parámetro de estado de gráficos OPM 1 en el archivo PDF donde esté presente el operador de sobreimpresión.
+**Sobreimpresión predeterminada no es cero:** evita que los objetos sobreimpresos con valores CMYK cero cuelguen los objetos CMYK que están debajo de ellos. Este efecto se logra insertando el parámetro de estado de gráficos OPM 1 en el archivo PDF donde esté presente el operador de sobreimpresión.
 
-**Guardar configuración de Adobe PDF en archivo PDF:** Incrusta el archivo de configuración que se utiliza para crear el archivo PDF. Puede abrir y vista el archivo de configuración (que tiene una extensión de nombre de archivo .joboptions) en el cuadro de diálogo Archivos adjuntos de Acrobat. El archivo de configuración de Adobe PDF se convierte en un elemento del árbol EmbeddedFiles dentro del archivo PDF.
+**Guardar configuración de Adobe PDF en archivo PDF:** incrusta el archivo de configuración que se utiliza para crear el archivo PDF. Puede abrir y vista el archivo de configuración (que tiene una extensión de nombre de archivo .joboptions) en el cuadro de diálogo Archivos adjuntos de Acrobat. El archivo de configuración de Adobe PDF se convierte en un elemento del árbol EmbeddedFiles dentro del archivo PDF.
 
-**Guardar imágenes JPEG originales en PDF si es posible:** Procesa las imágenes JPEG comprimidas (imágenes que ya están comprimidas con codificación DCT) sin volver a comprimirlas. Si esta opción está seleccionada, el generador de PDF descomprime las imágenes JPEG para asegurarse de que no están dañadas. Sin embargo, no vuelve a comprimir las imágenes válidas, por lo tanto, procesa la imagen original sin modificar. Con esta opción seleccionada, el rendimiento mejora porque solo se produce la descompresión (no la recompresión) y se conservan los datos y metadatos de la imagen.
+**Guardar imágenes JPEG originales en PDF Si es posible:** procesa las imágenes JPEG comprimidas (imágenes que ya están comprimidas con codificación DCT) sin volver a comprimirlas. Si esta opción está seleccionada, el generador de PDF descomprime las imágenes JPEG para asegurarse de que no están dañadas. Sin embargo, no vuelve a comprimir las imágenes válidas, por lo tanto, procesa la imagen original sin modificar. Con esta opción seleccionada, el rendimiento mejora porque solo se produce la descompresión (no la recompresión) y se conservan los datos y metadatos de la imagen.
 
-**Guardar vale de trabajo portátil en archivo PDF:** Conserva un vale de trabajo PostScript en un archivo PDF. El vale de trabajo contiene información sobre el archivo PostScript, como el tamaño de página, la resolución y la información de reventado, en lugar de información sobre el contenido. Esta información se puede utilizar más adelante en un flujo de trabajo o para imprimir el PDF.
+**Guardar vale de trabajo portátil en archivo PDF:** conserva un ticket de trabajo de PostScript en un archivo PDF. El vale de trabajo contiene información sobre el archivo PostScript, como el tamaño de página, la resolución y la información de reventado, en lugar de información sobre el contenido. Esta información se puede utilizar más adelante en un flujo de trabajo o para imprimir el PDF.
 
-**Utilice Prolog.ps y Epilog.ps:** Envía un archivo de prólogo y epílogo con cada trabajo. Estos archivos tienen muchos propósitos. Por ejemplo, los archivos de prólogo se pueden editar para especificar las páginas de portada. Los archivos Epilog se pueden editar para resolver una serie de procedimientos en un archivo PostScript. Puede cargar o descargar los archivos. (Consulte Carga y descarga de archivos de prólogo y epílogo).
+**Utilice Prolog.ps y Epilog.ps:** envía un archivo de prólogo y epílogo con cada trabajo. Estos archivos tienen muchos propósitos. Por ejemplo, los archivos de prólogo se pueden editar para especificar las páginas de portada. Los archivos Epilog se pueden editar para resolver una serie de procedimientos en un archivo PostScript. Puede cargar o descargar los archivos. (Consulte Carga y descarga de archivos de prólogo y epílogo).
 
-**Procesar comentarios de DSC:** Mantiene la información de DSC de un archivo PostScript. Estas subopciones están disponibles:
+**Procesar comentarios de DSC:** mantiene la información de DSC de un archivo PostScript. Estas subopciones están disponibles:
 
-**Advertencias de DSC de registro:** Muestra mensajes de advertencia sobre los comentarios DSC problemáticos durante el procesamiento y los agrega a un archivo de registro.
+**Registrar advertencias de DSC:** muestra mensajes de advertencia sobre los comentarios de DSC problemáticos durante el procesamiento y los agrega a un archivo de registro.
 
-**Conservar información de EPS de DSC:** Conserva información, como la aplicación de origen y la fecha de creación de un archivo EPS. Si esta opción no está seleccionada, el tamaño y el centro de la página se basan en la esquina superior izquierda del objeto superior izquierdo y en la esquina inferior derecha del objeto inferior derecho de la página.
+**Conservar información EPS de DSC:** retiene información, como la aplicación de origen y la fecha de creación de un archivo EPS. Si esta opción no está seleccionada, el tamaño y el centro de la página se basan en la esquina superior izquierda del objeto superior izquierdo y en la esquina inferior derecha del objeto inferior derecho de la página.
 
-**Conservar comentarios OPI:** Conserva la información necesaria para reemplazar una imagen o comentario Solo para colocación (FPO) por la imagen de alta resolución ubicada en servidores que admiten las versiones 1.3 y 2.0 de Open Prepress Interface (OPI).
+**Conservar comentarios OPI:** conserva la información necesaria para reemplazar una imagen o comentario solo para colocación (FPO) por la imagen de alta resolución ubicada en servidores que admiten las versiones 1.3 y 2.0 de Open Prepress Interface (OPI).
 
-**Conservar información de Documento de DSC:** Conserva información como el título, la fecha de creación y la hora. Al abrir un archivo PDF en Acrobat, esta información aparece en el panel Descripción de las propiedades de Documento.
+**Conservar información de Documento de DSC:** conserva información como el título, la fecha de creación y la hora. Al abrir un archivo PDF en Acrobat, esta información aparece en el panel Descripción de las propiedades de Documento.
 
-**Cambiar el tamaño de la página y centrar ilustraciones para archivos EPS:** Centra una imagen EPS y cambia el tamaño de la página para que se ajuste a la imagen. Esta opción solo se aplica a los trabajos que constan de un solo archivo EPS.
+**Cambiar el tamaño de la página y centrar la ilustración para archivos EPS:** centra una imagen EPS y cambia el tamaño de la página para que se ajuste a la imagen. Esta opción solo se aplica a los trabajos que constan de un solo archivo EPS.
 
-## sistema de informes de normas y opciones de cumplimiento {#standards-reporting-and-compliance-options}
+## Opciones de sistema de informes y cumplimiento de normas {#standards-reporting-and-compliance-options}
 
 PDF Generator puede comprobar el contenido de documento en un archivo PostScript para asegurarse de que cumple los criterios estándar de PDF/X-1a, PDF/X-3 o PDF/A antes de crear el archivo PDF. Para archivos compatibles con PDF/X, también puede requerir que el archivo PostScript cumpla criterios adicionales seleccionando otras opciones en &quot;sistema de informes y cumplimiento de normas&quot;. La disponibilidad de las opciones depende del estándar que seleccione.
 
 Los archivos compatibles con PDF/X se utilizan principalmente como un formato estandarizado para el intercambio de archivos PDF destinados a la producción de impresión de alta resolución. A menos que esté creando un documento PDF para la producción de impresión, puede ignorar los estándares de compatibilidad con PDF/X.
 
-Los archivos compatibles con PDF/A se utilizan principalmente para archivar. Dado que el objetivo es la preservación a largo plazo, el documento debe contener sólo lo necesario para abrirlo y verlo durante toda la vida prevista del documento. Por ejemplo, los archivos compatibles con PDF/A solo pueden contener texto, imágenes rasterizadas y objetos vectoriales; no pueden contener codificación ni secuencias de comandos. Además, todas las fuentes deben incrustarse para que los documentos se puedan abrir y ver como se crearon. En otras palabras, los documentos compatibles con PDF/A son *más delgados* que los de PDF/X, que están destinados a la producción de gama alta.
+Los archivos compatibles con PDF/A se utilizan principalmente para archivar. Dado que el objetivo es la preservación a largo plazo, el documento debe contener sólo lo necesario para abrirlo y verlo durante toda la vida prevista del documento. Por ejemplo, los archivos compatibles con PDF/A solo pueden contener texto, imágenes rasterizadas y objetos vectoriales; no pueden contener codificación ni secuencias de comandos. Además, todas las fuentes deben incrustarse para que los documentos se puedan abrir y ver como se crearon. En otras palabras, los documentos compatibles con PDF/A son *más delgados* que sus equivalentes de PDF/X, que están destinados a la producción de high-end.
 
 >[!NOTE]
 >
 >Si configura una carpeta vigilada para crear archivos compatibles con PDF/A, asegúrese de no agregar seguridad a la carpeta; el estándar PDF/A no permite la codificación.
 
-Para obtener instrucciones sobre cómo acceder al sistema de informes de normas y a las opciones de cumplimiento, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
+Para obtener instrucciones sobre cómo acceder al sistema de informes de normas y a las opciones de cumplimiento, consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-**Estándar de cumplimiento:** Seleccione un estándar para generar un informe que indique si el archivo cumple con los requisitos y, si no, qué problemas se han encontrado. When Compatibility on the General Settings page is set to Acrobat 4.0, the following options are enabled. Cuando Compatibilidad se establece en Acrobat 5.0, solo se pueden seleccionar las opciones de Acrobat 5.0. When Compatibility is set to an alternative option, the following options are dimmed:
+**Estándar de cumplimiento:** seleccione un estándar para generar un informe que indique si el archivo cumple los requisitos y, de no ser así, qué problemas se han encontrado. Cuando Compatibilidad en la página Configuración general se establece en Acrobat 4.0, se activan las siguientes opciones. Cuando Compatibilidad se establece en Acrobat 5.0, solo las opciones de Acrobat 5.0 están disponibles para seleccionar. Cuando Compatibilidad se establece en una opción alternativa, las siguientes opciones aparecen atenuadas:
 
 * PDF/X-1a (compatible con Acrobat 4.0)
 * PDF/X-3 (compatible con Acrobat 4.0)
@@ -456,95 +459,95 @@ Para obtener instrucciones sobre cómo acceder al sistema de informes de normas 
 * PDF/X-3 (compatible con Acrobat 5.0)
 * PDF/A-1b (compatible con Acrobat 5.0)
 
-### Options for PDF/X standards {#options-for-pdf-x-standards}
+### Opciones para estándares PDF/X {#options-for-pdf-x-standards}
 
-**Cuando no sea compatible:** Especifica si se creará el archivo PDF si el archivo PostScript no cumple los requisitos de PDF/X. This option is available when Compliance Standard on the Standards Reporting and Compliance page is set to an option other than None.
+**Cuando no es compatible:** especifica si se debe crear el archivo PDF si el archivo PostScript no cumple los requisitos de PDF/X. Esta opción está disponible cuando la Norma de cumplimiento de normas de la página Sistema de informes de normas y cumplimiento de normas está configurada en una opción distinta a Ninguna.
 
-**Continue:** Creates a PDF file.
+**Continuar:** Crea un archivo PDF.
 
-**Cancel Job:** Creates a PDF file only if the PostScript file meets the PDF/X requirements of the selected report options and is otherwise valid. If both PDF/X report options are selected and the PostScript file meets only one set of the PDF/X criteria (for example, PDF/X-3), PDF Generator creates the compliant file.
+**Cancelar trabajo:** crea un archivo PDF solo si el archivo PostScript cumple los requisitos de PDF/X de las opciones de informe seleccionadas y, por lo demás, es válido. Si se seleccionan ambas opciones de informe PDF/X y el archivo PostScript cumple solo un conjunto de criterios PDF/X (por ejemplo, PDF/X-3), PDF Generator crea el archivo compatible.
 
-**If Neither TrimBox Nor ArtBox Are Specified:** Available when Compliance Standard on the Standards Reporting and Compliance page is set to an option other than None.
+**Si no se especifica TrimBox ni ArtBox:** disponible cuando el estándar de cumplimiento de normas de la página Sistema de informes de estándares y cumplimiento está establecido en una opción distinta a Ninguno.
 
-**Report As Error:** Flags the PostScript file as noncompliant if one of the reporting options is selected and a trim box or art box is missing from any page.
+**Informe como error:** marca el archivo PostScript como no conforme si se selecciona una de las opciones de sistema de informes y falta un rectángulo de corte o un cuadro de arte en cualquier página.
 
-**Set TrimBox To MediaBox With Offsets:** Computes values in points for the trim box based on the offsets for the media box of respective pages if neither the trim box nor art box is specified. The trim box is always as small or smaller than the enclosing media box.
+**Definir TrimBox como MediaBox con desplazamientos:** calcula los valores en puntos del rectángulo de corte en función de los desplazamientos del cuadro de medios de las páginas respectivas si no se especifica ni el rectángulo de corte ni el cuadro de arte. El rectángulo de guarnecido siempre es tan pequeño o más pequeño que el rectángulo del soporte que lo rodea.
 
-**If BleedBox Is Not Specified:** Available when Compliance Standard on the Standards Reporting and Compliance page is set to an option other than None.
+**Si no se especifica BleedBox:** disponible cuando el estándar de cumplimiento de normas de la página Sistema de informes de estándares y cumplimiento está establecido en una opción distinta a Ninguno.
 
-**Set BleedBox To MediaBox:** Uses the media box values for the bleed box if the bleed box is not specified.
+**Definir BleedBox como MediaBox:** utiliza los valores de los cuadros de medios para el cuadro de sangrado si no se especifica el cuadro de sangrado.
 
-**Set BleedBox To TrimBox With Offsets:** Computes values in points for the bleed box based on the offsets for the trim box of respective pages if the bleed box is not specified. El cuadro de sangrado siempre es tan grande o mayor que el cuadro de guarnecido que se incluye.
+**Definir BleedBox como TrimBox con desplazamientos:** calcula los valores en puntos del cuadro de sangrado en función de los desplazamientos del cuadro de corte de las páginas respectivas si no se especifica el cuadro de sangrado. El cuadro de sangrado siempre es tan grande o mayor que el cuadro de guarnecido que se incluye.
 
-**Default Values If Not Specified In The Document:** This option is available when Compliance Standard on the Standards Reporting and Compliance page is set to an option other than None.
+**Valores predeterminados si no se especifica en el Documento:** esta opción está disponible cuando Estándar de cumplimiento en la página Sistema de informes de normas y Cumplimiento de normas está configurada en una opción distinta a Ninguno.
 
-**Output Intent Profile Name:** Indicates the characterized printing condition that the document is prepared for. Si un documento no especifica un nombre de OutputIntent, PDF Generator utiliza el valor seleccionado en este menú. You can select one of the names that are supplied or enter a name in the space provided. If your workflow requires that the document specify the output intent, select None. Any document that does not meet the requirement fails compliance checking.
+**Nombre de Perfil de calidad de salida:** indica la condición de impresión caracterizada para la que está preparado el documento. Si un documento no especifica un nombre de OutputIntent, PDF Generator utiliza el valor seleccionado en este menú. Puede seleccionar uno de los nombres que se proporcionan o escribir un nombre en el espacio proporcionado. Si el flujo de trabajo requiere que el documento especifique la calidad de salida, seleccione Ninguno. Cualquier documento que no cumpla con los requisitos falla en la comprobación de conformidad.
 
-**Output Condition Identifier:** Indicates the reference name specified by the registry of the output intent profile name.
+**Identificador de condición de salida:** indica el nombre de referencia especificado por el Registro del nombre del perfil de calidad de salida.
 
-**Output Condition:** Describes the intended printing condition. This entry can be useful for the intended receiver of the PDF document.
+**Condición de salida:** describe la condición de impresión deseada. Esta entrada puede ser útil para el receptor deseado del documento PDF.
 
-**Registry Name (URL):** Indicates the web address for more information about the registry. The URL is automatically entered for ICC registry names.
+**Nombre del Registro (URL):** indica la dirección web para obtener más información sobre el Registro. La dirección URL se introduce automáticamente para los nombres de registro ICC.
 
-**Trapped:** Indicates the state of trapping in the document. PDF/X compliance requires a value of True or False. If the document does not specify the trapped state, the value provided here is used. If your workflow requires that the document specifies the trapped state, select Leave Undefined. Cualquier documento que no cumpla con los requisitos falla en la comprobación de conformidad.
+**Reventado:** indica el estado del reventado en el documento. La compatibilidad con PDF/X requiere un valor de True o False. Si el documento no especifica el estado de reventado, se utiliza el valor proporcionado aquí. Si el flujo de trabajo requiere que el documento especifique el estado de reventado, seleccione Dejar sin definir. Cualquier documento que no cumpla con los requisitos falla en la comprobación de conformidad.
 
-### Opciones de PDF/A estándar {#options-for-pdf-a-standard}
+### Opciones para PDF/A estándar {#options-for-pdf-a-standard}
 
 Estas opciones se activan cuando Compatibilidad (en el área General) se establece en Acrobat 4 (PDF 1.3) o Acrobat 5 (PDF 1.4).
 
-**Cuando no sea compatible:** Especifica si se creará el archivo PDF si el archivo PostScript no cumple los requisitos de PDF/A.
+**Cuando no es compatible:** especifica si se debe crear el archivo PDF si el archivo PostScript no cumple los requisitos de PDF/A.
 
-**Continue:** Creates a PDF file even if the PostScript file does not meet the requirements of the standard.
+**Continuar:** Crea un archivo PDF aunque el archivo PostScript no cumpla los requisitos del estándar.
 
-**Cancel Job:** Creates a PDF file only if the PostScript file meets PDF/A requirements and is otherwise valid.
+**Cancelar trabajo:** crea un archivo PDF solo si el archivo PostScript cumple los requisitos de PDF/A y es válido en caso contrario.
 
-**Output Intent Profile Name:** Indicates the characterized printing condition for which the document has been prepared and is required for PDF/A compliance. Si el flujo de trabajo requiere que el documento especifique la información de calidad de salida, seleccione &quot;Ninguno&quot;. Si no se proporciona esta información, el documento no verificará el cumplimiento.
+**Nombre de Perfil de calidad de salida:** indica la condición de impresión caracterizada para la que se ha preparado el documento y es necesaria para la compatibilidad con PDF/A. Si el flujo de trabajo requiere que el documento especifique la información de calidad de salida, seleccione &quot;Ninguno&quot;. Si no se proporciona esta información, el documento no verificará el cumplimiento.
 
-**Condición de salida:** Describe la condición de impresión deseada. Esta entrada no es obligatoria, pero puede utilizarse para proporcionar información útil al destinatario previsto del documento PDF.
+**Condición de salida:** describe la condición de impresión deseada. Esta entrada no es obligatoria, pero puede utilizarse para proporcionar información útil al destinatario previsto del documento PDF.
 
 ## Opciones de vista inicial {#initial-view-options}
 
-Estas opciones están organizadas en tres áreas: Opciones de Documento, Opciones de ventana y Opciones de interfaz de usuario. Para obtener instrucciones sobre cómo acceder a las opciones de vista inicial, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
+Estas opciones están organizadas en tres áreas: Opciones de documento, Opciones de ventana y Opciones de interfaz de usuario. Para obtener instrucciones sobre cómo acceder a las opciones de vista inicial, consulte [Añadir o editar la configuración de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 Para utilizar cualquier opción, seleccione Establecer configuración de Vista inicial.
 
-### Opciones de Documento {#document-options}
+### Opciones de documento {#document-options}
 
 Las opciones de documento controlan el aspecto del documento dentro de la ventana de documento, como el nivel de ampliación y cómo se desplaza.
 
-**Mostrar:** Determina qué paneles y fichas se muestran en la ventana de la aplicación de forma predeterminada. Panel de marcadores y página abre el panel documento y muestra la ficha Marcadores.
+**Mostrar:** determina qué paneles y fichas se muestran en la ventana de la aplicación de forma predeterminada. Panel de marcadores y página abre el panel documento y muestra la ficha Marcadores.
 
-**Diseño de página:** Determina si el documento se ve en modo de página opuesta, página continua o página opuesta continua.
+**Diseño de página:** determina si el documento se ve en modo de página opuesta, página continua o página opuesta continua.
 
-**Ampliación:** Define el nivel de zoom utilizado para mostrar el documento al abrirlo. El valor predeterminado utiliza el valor de ampliación configurado por el usuario en las preferencias de Acrobat o Adobe Reader.
+**Ampliación:** establece el nivel de zoom utilizado para mostrar el documento al abrirlo. El valor predeterminado utiliza el valor de ampliación configurado por el usuario en las preferencias de Acrobat o Adobe Reader.
 
-**Abrir en número de página:** Establece la página en la que se abre el documento, que suele ser la página 1.
+**Abrir en número de página:** establece la página en la que se abre el documento, que suele ser la página 1.
 
 >[!NOTE]
 >
->La configuración predeterminada de las opciones de ampliación y presentación de página utiliza la configuración de usuario individual en las preferencias de Presentación de página de Acrobat o Adobe Reader.
+>La opción Predeterminado para las opciones de ampliación y presentación de página utiliza la configuración de usuario individual en las preferencias de Presentación de página de Acrobat o Adobe Reader.
 
 ### Opciones de ventana {#window-options}
 
 Las opciones de la ventana determinan cómo se ajusta la ventana en el área de la pantalla cuando un usuario abre el documento. Sin embargo, las opciones no tienen ningún efecto cuando se ve un documento PDF dentro de un navegador web.
 
-**Cambiar El Tamaño De La Ventana A La Página Inicial:** Ajusta la ventana de documento para que se ajuste perfectamente a la página de apertura, según las opciones seleccionadas en Opciones de Documento.
+**Cambiar el tamaño de la ventana a la página inicial:** ajusta la ventana de documento para que se ajuste perfectamente a la página de apertura, según las opciones seleccionadas en Opciones de Documento.
 
-**Centrar ventana en pantalla:** Coloca la ventana en el centro del área de la pantalla.
+**Ventana central en pantalla:** coloca la ventana en el centro del área de la pantalla.
 
-**Abrir en modo de pantalla completa:** Maximiza la ventana de documento y muestra el documento sin la barra de menús, la barra de herramientas o los controles de ventana.
+**Abrir en modo de pantalla completa:** maximiza la ventana de documento y muestra el documento sin la barra de menús, la barra de herramientas o los controles de ventana.
 
-**Mostrar:** El nombre de archivo muestra el nombre de archivo en la barra de título de la ventana. El título del Documento muestra el título del documento en la barra de título de la ventana.
+**Mostrar:** Nombre de archivo muestra el nombre de archivo en la barra de título de la ventana. El título del documento muestra el título del documento en la barra de título de la ventana.
 
 ### Opciones de interfaz de usuario {#user-interface-options}
 
 Las opciones de la interfaz de usuario determinan qué controles se muestran u ocultan cuando el usuario abre el documento.
 
-**Ocultar barra de menús:** Si se selecciona, oculta la barra de menús
+**Ocultar barra de menús:** si está seleccionada, oculta la barra de menús
 
-**Ocultar barras de herramientas:** Si se selecciona, oculta las barras de herramientas
+**Ocultar barras de herramientas:** si se selecciona, oculta las barras de herramientas
 
-**Ocultar controles de ventana:** Si se selecciona, oculta los controles de ventana
+**Ocultar controles de ventana:** si se selecciona, oculta los controles de ventana
 
 >[!NOTE]
 >
@@ -563,7 +566,7 @@ Estos archivos tienen muchos propósitos. Por ejemplo, los archivos de prólogo 
 1. Haga clic en Avanzadas y, a continuación, junto a la opción Utilizar Prolog.ps y Epilog.ps, haga clic en Descargar.
 1. En la página Descargar archivos de prólogo y epilog, haga clic en Prolog.ps o Epilog.ps y haga clic en Guardar.
 
-### Carga de un archivo de prólogo o epílogo {#upload-a-prologue-or-epilogue-file}
+### Cargar un archivo de prólogo o epílogo {#upload-a-prologue-or-epilogue-file}
 
 1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
 1. Haga clic en Nuevo o en el nombre de una configuración.
