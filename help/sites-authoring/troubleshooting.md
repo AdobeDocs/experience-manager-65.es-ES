@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
@@ -42,10 +45,10 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
    * Hay varias posibilidades:
    * Confirme que la página se haya replicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
-   * Add `?` to the end of the page URL. For example:
+   * Añada `?` al final de la URL de la página. Por ejemplo:
 
       * `http://localhost:4502/sites.html/content?`
-      * Esta acción solicitará la página directamente desde AEM y omitirá el despachante. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
+      * Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
    * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
 
 
