@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 translation-type: tm+mt
 source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 95%
 
 ---
 
@@ -66,7 +69,7 @@ Los tres iconos situados en la parte izquierda permiten minimizar la anotación 
 
 >[!NOTE]
 >
->Las anotaciones no se pueden agregar a una página que haya sido bloqueada por otro usuario.
+>Las anotaciones no se pueden agregar a una página que otro usuario haya bloqueado.
 
 ## Anotación de bocetos {#annotation-sketches}
 
@@ -76,6 +79,7 @@ Los tres iconos situados en la parte izquierda permiten minimizar la anotación 
 >
 >* El icono no se mostrará.
 >* Los bocetos existentes, creados en otro navegador, no aparecerán.
+
 >
 
 
@@ -84,7 +88,7 @@ Los bocetos son una función de las anotaciones que permiten crear sencillos gr�
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* El cursor cambiará a una cruz cuando se esté en modo de boceto. Se pueden dibujar varias líneas distintas .
+* El cursor cambiará a una cruz cuando se esté en modo de boceto. Puede dibujar varias líneas distintas.
 * Las líneas del boceto reflejan el color de la anotación y pueden ser:
 
    * A mano alzada.
