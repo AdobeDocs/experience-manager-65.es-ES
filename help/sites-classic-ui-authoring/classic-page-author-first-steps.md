@@ -40,11 +40,11 @@ El contenido de su sitio web se distribuye en una estructura de árbol. Para cre
 
 Antes de editar, debe [crear una página nueva](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
-### Abrir una página {#opening-a-page}
+### Abrir una página  {#opening-a-page}
 
 Para muchas acciones, como la edición, debe [abrir una página](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
-### Editar una página {#editing-a-page}
+### Editar una página  {#editing-a-page}
 
 Tanto si la instancia ya tiene páginas como si acaba de crear una página nueva, puede [editar una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) mediante estos procedimientos:
 
@@ -58,11 +58,11 @@ Tanto si la instancia ya tiene páginas como si acaba de crear una página nueva
 * [Bloquear una página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### Publicar una página {#publishing-a-page}
+### Publicar una página  {#publishing-a-page}
 
 Cuando haya terminado de editar la página, la tiene que [publicar (o activar)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) de modo que esté disponible para los visitantes del sitio web.
 
-## Más acciones {#further-actions}
+## Más acciones  {#further-actions}
 
 Además de los pasos básicos, hay muchas otras acciones disponibles durante la creación.
 
@@ -74,7 +74,7 @@ A veces es más fácil [copiar una página](/help/sites-classic-ui-authoring/cla
 
 Para [mover páginas y cambiarles el nombre](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page), se utiliza la misma acción.
 
-### Cancelar la publicación de una página {#unpublishing-a-page}
+### Cancelar la publicación de una página  {#unpublishing-a-page}
 
 Para hacer que el contenido previamente publicado (o activado) deje de estar disponible en el sitio web público, tiene que [cancelar la publicación de la página (o desactivarla)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
@@ -82,14 +82,14 @@ Para hacer que el contenido previamente publicado (o activado) deje de estar dis
 
 Si ya no necesita una página, la puede [eliminar](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#deleting-a-page).
 
-### Definir las propiedades de página {#setting-the-page-properties}
+### Definir las propiedades de página  {#setting-the-page-properties}
 
 Cada [página tiene propiedades](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) que puede definir para determinar aspectos de su funcionamiento.
 
-### Crear una versión de una página {#creating-a-version-of-a-page}
+### Crear una versión de una página  {#creating-a-version-of-a-page}
 
 Puede [crear una versión de una página](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) y luego, si es necesario, [regresar a una versión anterior](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
-## Más información {#more-information}
+## Más información  {#more-information}
 
 Encontrará más información sobre la creación en [Creación de páginas](/help/sites-classic-ui-authoring/classic-page-author.md) y en [Uso del entorno de creación](/help/sites-classic-ui-authoring/author-env.md).
