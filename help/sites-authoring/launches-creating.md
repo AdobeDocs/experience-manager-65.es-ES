@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 93%
 
 ---
 
@@ -20,11 +23,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
+* El título aparece en el carril [References](/help/sites-authoring/author-environment-tools.md#references), desde donde los autores pueden acceder a ellos para trabajar en ellos.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar solo una página de origen.
 * De forma predeterminada, [Live Copy](/help/sites-administering/msm.md) actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos.
 
-Opcionalmente, puede especificar la **Fecha de lanzamiento** (y la hora) para definir cuándo se van a promocionar y activar las páginas de lanzamiento. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
+De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para establecer cuándo se promocionarán y activarán las páginas. Sin embargo, la **fecha de lanzamiento** solo funciona en combinación con el indicador **Producción lista** (consulte [Edición de la configuración de un lanzamiento](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); para que las acciones se produzcan de forma automática, se deben configurar ambas.
 
 ## Creación de un lanzamiento {#creating-a-launch}
 
@@ -41,13 +44,14 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
    * **Lanzamientos**:
 
       1. Seleccione **Crear lanzamiento** en la barra de herramientas para abrir el asistente.
-   * **Sitios**:
+   * **Sites**:
 
       1. Seleccione **Crear** en la barra de herramientas para abrir el cuadro de selección.
       1. Aquí, seleccione **Crear lanzamiento** para abrir el asistente.
+
    >[!NOTE]
    >
-   >En la consola **Sitios**, también puede utilizar el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar una página antes de seleccionar **Crear**.
+   >En la consola de **Sites** también puede utilizar el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar una página antes de hace clic en **Crear**.
    >
    >La página seleccionada se utilizará como página de origen inicial.
 
@@ -55,6 +59,7 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
 
    * Vaya a la ubicación requerida.
    * Seleccione la(s) página(s) de origen y confírmela(s) (marca).
+
    Repita el proceso tantas veces como sea necesario.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
    * **Incluir páginas secundarias**:
 
       * Especifique si desea crear un lanzamiento con o sin las páginas secundarias.  De forma predeterminada, se incluyen estas subpáginas.
+
    Continúe con **Siguiente**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -79,19 +85,20 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
    * **Título del lanzamiento**: el nombre del lanzamiento. El nombre debería tener sentido para los autores.
    * **con contenido existente**: el contenido original se utilizará para crear el lanzamiento.
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
-   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Esta opción logra esto haciendo que el lanzamiento sea una [Live Copy](/help/sites-administering/msm.md).
 
       De forma predeterminada, está opción está seleccionada.
 
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Utilice **Crear** para completar el proceso y crear el lanzamiento nuevo. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
 
    Si vuelve a la consola (con **Hecho**), puede ver el lanzamiento (y acceder a él) desde:
 
-   * La [****consola Lanzamientos](/help/sites-authoring/launches.md#the-launches-console)
-   * la sección [**Referencias **de la consola** Sitios **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * La [**** consola Lanzamientos](/help/sites-authoring/launches.md#the-launches-console)
+   * la sección [**Referencias** de la consola **Sitios**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}
 
@@ -128,10 +135,10 @@ Crear un lanzamiento anidado (un lanzamiento dentro de otro lanzamiento) le ofre
 
 #### Creación de un lanzamiento anidado: consola Lanzamientos {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+Crear un inicio anidado desde la consola **Lanzamientos** es básicamente lo mismo que crear cualquier otra forma de inicio, con la excepción de que necesita navegar a la rama `/content/launches` de lanzamientos:
 
 1. En la consola **Lanzamientos**, seleccione **Crear**.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Seleccione el lanzamiento requerido y confírmelo con **Seleccionar**:
+1. Seleccione **Agregar páginas** y, a continuación, vaya a la rama de lanzamientos especificando `/content/launches` en el filtro. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
@@ -150,7 +157,7 @@ Para crear un lanzamiento anidado desde la consola **Sitios** basado en un lanza
 
 1. Utilice **Crear** para completar el proceso y crear el lanzamiento nuevo. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
 
-   If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
+   Si selecciona **Listo**, volverá al carril **Referencias** de la **consola de Sites**, si selecciona la página adecuada en la que se muestra el nuevo lanzamiento.
 
 ### Eliminación de un lanzamiento {#deleting-a-launch}
 
