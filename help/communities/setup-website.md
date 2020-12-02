@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Configuración de la estructura del sitio web {#setup-website-structure}
+# Configuración de la estructura del sitio Web {#setup-website-structure}
 
 Para configurar el sitio web, las instrucciones siguientes describen las carpetas que se van a crear en las ubicaciones siguientes:
 
@@ -34,7 +34,7 @@ Para configurar el sitio web, las instrucciones siguientes describen las carpeta
 
    Aquí es donde residen las páginas Web descargables.
 
-El código de este tutorial dependerá de que el nombre de la carpeta principal sea el mismo para la aplicación, el diseño y el contenido. Si elige otro nombre para el sitio web, reemplace siempre `an-scf-sandbox` por el nombre que haya elegido.
+El código de este tutorial dependerá de que el nombre de la carpeta principal sea el mismo para la aplicación, el diseño y el contenido. Si elige otro nombre para su sitio Web, entonces reemplace siempre `an-scf-sandbox` por el nombre que ha elegido.
 
 >[!NOTE]
 >
@@ -50,34 +50,34 @@ El código de este tutorial dependerá de que el nombre de la carpeta principal 
    >   * el guión bajo se convierte en &#39;_005f&#39;
 
 
-## Configuración del directorio de aplicaciones (/apps) {#setup-the-application-directory-apps}
+## Configure el Directorio de aplicaciones (/apps) {#setup-the-application-directory-apps}
 
 El directorio /apps del repositorio contiene el código con implementa el comportamiento y la representación de las páginas servidas desde el directorio /content.
 
 El directorio /apps está protegido y no es accesible al público, al igual que los directorios /content y /etc/designs.
 
-1. Create `/apps/an-scf-sandbox` folder.
+1. Crear carpeta `/apps/an-scf-sandbox`.
 
-   Uso del **[!UICONTROL CRXDE Lite]** en el panel del explorador
+   Usando **[!UICONTROL CRXDE Lite]**, en el panel del explorador
 
-   1. Seleccione la `/apps` carpeta.
-   1. Haga clic con el botón secundario en **[!UICONTROL Crear]**... o tire hacia abajo de **[!UICONTROL Crear...]** del menú.
+   1. Seleccione la carpeta `/apps`.
+   1. Haga clic con el botón derecho **[!UICONTROL Crear]**... o bien, tire hacia abajo de **[!UICONTROL Crear...]**.
    1. Seleccione **[!UICONTROL Crear carpeta...]**.
-   1. En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , introduzca `an-scf-sandbox`.
+   1. En el cuadro de diálogo **[!UICONTROL Crear carpeta]**, introduzca `an-scf-sandbox`.
    1. Haga clic en **[!UICONTROL Aceptar]**.
 
-1. Crear subcarpeta **[!UICONTROL de componentes]** .
+1. Crear subcarpeta **[!UICONTROL componentes]**.
 
-   1. Seleccione la `/apps/an-scf-sandbox` carpeta.
+   1. Seleccione la carpeta `/apps/an-scf-sandbox`.
    1. Haga clic en **[!UICONTROL Crear > Crear carpeta]**.
-   1. En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , introduzca **[!UICONTROL componentes]**.
+   1. En el cuadro de diálogo **[!UICONTROL Crear carpeta]**, introduzca **[!UICONTROL componentes]**.
    1. Haga clic en **[!UICONTROL Aceptar]**.
 
-1. Cree una subcarpeta **[!UICONTROL de plantillas]** .
+1. Crear subcarpeta **[!UICONTROL plantillas]**.
 
-   1. Seleccione la `/apps/an-scf-sandbox` carpeta.
+   1. Seleccione la carpeta `/apps/an-scf-sandbox`.
    1. Haga clic en **[!UICONTROL Crear > Crear carpeta]**.
-   1. En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , introduzca **[!UICONTROL plantillas]**.
+   1. En el cuadro de diálogo **[!UICONTROL Crear carpeta]**, introduzca **[!UICONTROL plantillas]**.
    1. Haga clic en **[!UICONTROL Aceptar]**.
    1. Vuelva a seleccionar `/apps/an-scf-sandbox`.
    1. Seleccione **[!UICONTROL Guardar todo]**.
@@ -88,21 +88,21 @@ El directorio /apps está protegido y no es accesible al público, al igual que 
 
    ![crxde-template](assets/crxde-template.png)
 
-## Configuración del directorio de diseño (/etc/designs) {#setup-the-design-directory-etc-designs}
+## Configure el Directorio de diseño (/etc/designs) {#setup-the-design-directory-etc-designs}
 
 El directorio /etc/designs contiene las imágenes, secuencias de comandos y hojas de estilo que se van a descargar junto con el contenido de la página.
 
 1. Para utilizar la herramienta Designer en la IU clásica, vaya a [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Nota: Si utiliza CRXDE Lite para crear un Nodo de tipo `cq:Page`, el Control de acceso y la replicación no se establecerían en la configuración predeterminada de una página.
+   Nota: Si utiliza CRXDE Lite para crear un Nodo de tipo `cq:Page`, el Control de acceso y la replicación no se configurarán en la configuración predeterminada de una página.
 
-1. En el panel del explorador, seleccione la carpeta **[!UICONTROL Diseños]** y, a continuación, haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
+1. En el panel del explorador, seleccione la carpeta **[!UICONTROL Diseños]** y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
 
    Intro:
 
-   * Título: **[!UICONTROL Un Simulador Simulado Para Pruebas SCF]**
+   * Título: **[!UICONTROL Simulador para pruebas SCF]**
    * Nombre: **[!UICONTROL an-scf-sandbox]**
-   * Seleccionar plantilla de página **[!UICONTROL de diseño]**
+   * Seleccione **[!UICONTROL Plantilla de página de diseño]**
 
    Haga clic en **[!UICONTROL Crear]**.
 
@@ -116,8 +116,8 @@ El directorio /etc/designs contiene las imágenes, secuencias de comandos y hoja
 
    ![crxde-configure-template](assets/crxde-configure-template.png)
 
-## Configuración del directorio de contenido (/content) {#setup-the-content-directory-content}
+## Configure el Directorio de contenido (/content) {#setup-the-content-directory-content}
 
 El directorio /content del repositorio es donde reside el contenido del sitio web. Las rutas de acceso de /content comprenden las rutas de la dirección URL para las solicitudes del explorador.
 
-*Después* de crear la plantilla [de](initial-app.md#createthepagetemplate) página como parte de la aplicación inicial, el contenido de la página inicial se puede crear en función de la plantilla.... [**FINLANDO**](initial-app.md)
+** Después de crear la  [plantilla de ](initial-app.md#createthepagetemplate) página como parte de la aplicación inicial, el contenido de la página inicial se puede crear en función de la plantilla....  [**FINLANDO**](initial-app.md)
