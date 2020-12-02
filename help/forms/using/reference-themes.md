@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Temáticas de referencia{#reference-themes}
 
-[Las Temáticas](../../forms/using/themes.md) permiten aplicar estilo a los formularios sin tener un conocimiento profundo de CSS. Además del tema predeterminado, puede obtener las siguientes temáticas instalando el paquete [AEM-FORMS-REFERENCE-TEMÁTICAS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+[](../../forms/using/themes.md) El tema le permite aplicar estilo a sus formularios sin tener un conocimiento profundo de CSS. Además del tema predeterminado, puede obtener las siguientes temáticas instalando el paquete [AEM-FORMS-REFERENCE-TEMÁTICAS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES):
 
 * Beryl
 * Exec
@@ -34,7 +34,7 @@ Cada tema contiene un estilo único y elegante que puede utilizar para crear for
 
 ![Temáticas de referencia](assets/ref-themes.png)
 
-Las Temáticas incluidas en este paquete responden y el estilo de estas temáticas se define para las pantallas móviles y de escritorio. La mayoría de los navegadores modernos de diversos dispositivos pueden procesar formularios aplicados con una de estas temáticas sin ningún problema.
+Las temáticas incluidas en este paquete responden y el estilo de estas temáticas se define para las pantallas móviles y de escritorio. La mayoría de los navegadores modernos de diversos dispositivos pueden procesar formularios aplicados con una de estas temáticas sin ningún problema.
 
 Para obtener más información sobre la instalación del paquete, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
@@ -68,7 +68,7 @@ El tema Exec Light utiliza el espacio en blanco para crear una experiencia sin f
 
 ](assets/exec-light-1.png)-->
 
-## Libertad {#liberty}
+## Liberty {#liberty}
 
 El tema de la libertad usa un enfoque minimalista para resaltar lo importante. Por ejemplo, el color de fuente de la ficha visitada cambia a verde. Sólo puede ver el contorno inferior del cuadro de texto que emula el aspecto de un formulario basado en papel con líneas. El cuadro de texto activo tiene un contorno inferior negro, mientras que otros obtienen un contorno inferior gris claro.
 
