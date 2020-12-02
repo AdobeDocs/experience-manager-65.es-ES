@@ -1,8 +1,8 @@
 ---
 title: Edición del contenido de una página
 seo-title: Edición del contenido de una página
-description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar in situ, mover o eliminar.
-seo-description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar in situ, mover o eliminar.
+description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar local, mover o eliminar.
+seo-description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar local, mover o eliminar.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,15 +12,18 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
 
-# Edición del contenido de una página{#editing-page-content}
+# Editar el contenido de una página{#editing-page-content}
 
 Después de crear una página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
 
-El contenido se añade mediante los [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (adecuados para el tipo de contenido), que se pueden arrastrar hacia la página. Después estos se pueden editar in situ, mover o eliminar.
+El contenido se añade mediante los [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (adecuados para el tipo de contenido), que se pueden arrastrar hacia la página. Después estos se pueden editar local, mover o eliminar.
 
 >[!NOTE]
 >
@@ -76,6 +79,7 @@ Para insertar un nuevo componente:
 
    * Arrastrar un componente desde la barra de herramientas flotante (denominada barra de tareas) para insertar un nuevo párrafo.
    * Hacer clic con el botón derecho en un párrafo existente y seleccionar **Nuevo...** (se abre la barra de herramientas Insertar nuevo componente). Seleccione un componente y haga clic en **Aceptar**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. Tanto en la barra de tareas como en la barra de herramientas **Insertar nuevo componente**, se ve una lista de los componentes (tipos de párrafo) disponibles. Pueden estar divididos en varias secciones (por ejemplo, General, Columnas, etc.), que pueden expandirse según se requiera.
@@ -84,7 +88,7 @@ Para insertar un nuevo componente:
 
 1. Inserte el componente que desee en la página. A continuación, haga doble clic en el párrafo, y se abrirá una ventana que permite configurar el párrafo y agregar contenido.
 
-### Insertar un componente utilizando el buscador de contenido {#inserting-a-component-using-the-content-finder}
+### Insertar un componente utilizando el buscador de contenido  {#inserting-a-component-using-the-content-finder}
 
 También puede agregar un componente nuevo a la página arrastrando un activo desde el [buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). De este modo, se crea automáticamente un componente nuevo del tipo correspondiente que contiene el activo.
 
@@ -103,7 +107,7 @@ Esta opción es válida para los siguientes tipos de activo (algunos dependen de
 
 Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
-1. Asegúrese de que la página se encuentra en el modo de [**edición **.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
+1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 1. Abra el [buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Arrastre el activo correspondiente hasta la posición final. El [marcador de posición de componente](#componentplaceholder) le muestra dónde se colocará este.
 
@@ -111,7 +115,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Si es necesario, [edite](#editmovecopypastedelete) el componente.
 
-## Editar un componente (contenido y propiedades) {#editing-a-component-content-and-properties}
+## Editar un componente (contenido y propiedades)  {#editing-a-component-content-and-properties}
 
 Para editar un párrafo existente, haga una de las siguientes acciones:
 
@@ -185,9 +189,11 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
    Si un componente forma parte de una Live Copy o un lanzamiento, esta situación se indica mediante un icono de cerrojo. Puede hacer clic en el cerrojo para cancelar la herencia.
 
    * El icono de cerrojo se mostrará cuando el componente esté seleccionado; por ejemplo:
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
    * El cerrojo también se muestra en el cuadro de diálogo de los componentes; por ejemplo:
+
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **Un sistema de párrafos heredado**
@@ -200,7 +206,7 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
 
 [Las anotaciones](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permiten que el resto de los autores hagan comentarios sobre el contenido. Esta opción acostumbra a utilizarse para revisiones y validaciones.
 
-## Previsualizar páginas {#previewing-pages}
+## Previsualizar páginas    {#previewing-pages}
 
 Hay dos iconos en el borde inferior de la barra de tareas que son importantes para previsualizar las páginas:
 
@@ -220,7 +226,7 @@ Hay dos iconos en el borde inferior de la barra de tareas que son importantes pa
 
 ## Buscar y reemplazar {#find-replace}
 
-Para ediciones a mayor escala de la misma frase, la opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**permite buscar y reemplazar varias instancias de una cadena en una sección del sitio web.
+Para ediciones a mayor escala de la misma frase, la opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite buscar y reemplazar varias instancias de una cadena en una sección del sitio web.
 
 ## Bloquear una página {#locking-a-page}
 
@@ -282,6 +288,7 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* Rehacer acciones siempre y cuando no haya realizado ninguna edición en la página desde que usó el comando Deshacer por última vez.
 >* Deshacer un máximo de 20 acciones de edición (configuración predeterminada).
 >* Utilizar [los métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para deshacer y rehacer.
+
 >
 
 
