@@ -11,11 +11,14 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 0%
 
 ---
 
 
-# Cambio de los estilos predeterminados de los formularios HTML5{#changing-default-styles-of-html-forms}
+# Cambio de los estilos predeterminados de formularios HTML5{#changing-default-styles-of-html-forms}
 
 Los formularios HTML5 se procesan con funciones HTML5 y el estilo del formulario procesado se realiza con CSS. El aspecto predeterminado de los formularios HTML5 es similar al de su representación en PDF. Los desarrolladores pueden utilizar CSS personalizada para cambiar el aspecto predeterminado de los formularios HTML5.
 
@@ -29,7 +32,7 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
 1. **Elija un perfil para agregar estilos personalizados**
 
-   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un nuevo Perfil](/help/forms/using/custom-profile.md)
+   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para saber cómo crear un perfil, consulte [Creación de un nuevo Perfil](/help/forms/using/custom-profile.md)
 
 1. **Creación de una hoja de estilo CSS para aplicar estilo a los formularios HTML5**
 
@@ -40,6 +43,7 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
    1. En el cuadro de diálogo Crear archivo, introduzca el nombre de la hoja de estilo. Asegúrese de utilizar la extensión .css (por ejemplo, stylesheet.css)
    1. En el panel de navegación, abra el archivo CSS que ha creado.
    1. Defina las clases CSS de los componentes a los que desea aplicar estilo y agregue estilos en dichas clases.
+
    Para saber qué clases CSS crear para un componente concreto en los formularios HTML5, consulte [Introducción a los estilos](/help/forms/using/css-styles.md).
 
 1. **Incluir la hoja de estilo en el procesador de Perfil**
@@ -48,10 +52,10 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
    1. Busque la línea siguiente en la página del procesador:
 
-      &lt;cq:includeClientLib categorías=&quot;xfaforms.perfil&quot; />
+      &lt;cq:includeclientlib categories=&quot;xfaforms.profile&quot; />
 
    1. Inserte lo siguiente debajo de la línea anterior para incluir la hoja de estilo:
 
-      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
+      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; />
 
    1. Guarde el archivo.
