@@ -1,6 +1,6 @@
 ---
 title: Notas de la versión de [!DNL Adobe Experience Manager Assets] 6.5.
-description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
+description: Las nuevas capacidades y mejoras de [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
 source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
@@ -10,43 +10,43 @@ ht-degree: 41%
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] notas de la versión {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] notas de la versión  {#aem-assets-release-notes}
 
-Here are the key features and highlights of the [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] release.
+Estas son las características clave y los aspectos destacados de la [!DNL Adobe Experience Manager] versión 6.5 [!DNL Assets].
 
-## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
+## Integración con [!DNL Adobe Creative Cloud] y flujos de trabajo creativos {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
 [!DNL Adobe Experience Manager] ofrece varias formas de integración con y permite compartir recursos para usarlos en flujos de trabajo en los que los equipos creativos, de marketing o de negocios colaboran estrechamente.[!DNL Adobe Creative Cloud] [!DNL Experience Manager] 6.5 continúa mejorando la integración y la optimiza para ofrecer más oportunidades y agilizar los métodos existentes.
 
-Read on to know the specific capabilities and integrations of [!DNL Experience Manager] 6.5 that you can leverage to best support your content velocity use cases.
+Continúe leyendo para conocer las capacidades e integraciones específicas de [!DNL Experience Manager] 6.5 que puede aprovechar para admitir mejor los casos de uso de velocidad de contenido.
 
 ### Adobe Asset Link {#aal}
 
-[!DNL Adobe Asset Link] fortalece la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
+[!DNL Adobe Asset Link] fortalece la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Los elementos creativos pueden acceder al contenido almacenado en [!DNL Experience Manager Assets] sin dejar las aplicaciones con las que están más familiarizados. Los elementos creativos pueden examinar, buscar, extraer y registrar recursos sin problemas mediante el panel integrado en la aplicación de las aplicaciones [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] y [!DNL Adobe InDesign].
 
-[!DNL Adobe Asset Link] forma parte de la oferta de [Creative Cloud para empresas](https://www.adobe.com/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] es parte de un  [Creative Cloud de ](https://www.adobe.com/creativecloud/business/enterprise.html) oferta empresarial. Para obtener más información al respecto, incluida la configuración necesaria de la implementación [!DNL Experience Manager], consulte [Vínculo de recursos de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
 
 ![Buscar recursos en Adobe Photoshop](assets/asset_search_photoshop.png)
 
-### [!DNL Adobe Stock] integración {#stock}
+### [!DNL Adobe Stock] integración  {#stock}
 
-Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for your creative and marketing projects. You can quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in Experience Manager, using the powerful DAM capabilities of [!DNL Experience Manager].
+Su organización puede utilizar su [!DNL Adobe Stock] plan empresarial dentro de [!DNL Experience Manager Assets] para garantizar que los activos con licencia estén disponibles en general para sus proyectos creativos y de mercadotecnia. Puede encontrar, previsualización y obtener licencias [!DNL Adobe Stock] rápidamente de los recursos que se guardan en Experience Manager, mediante las potentes capacidades de DAM de [!DNL Experience Manager].
 
 [!DNL Adobe Stock]El servicio proporciona a diseñadores y empresas acceso a millones de fotos, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, verificados y libres de derechos de autor para todos sus proyectos creativos.
 
-For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+Para obtener más información, consulte [Uso de recursos de Adobe Stock en Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Previsualización de imágenes y licencias de Adobe Stock desde Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
-*Figura: Previsualización[!DNL Adobe Stock]imagen y licencia desde dentro[!DNL Experience Manager Assets].*
+*Figura: Previsualización de  [!DNL Adobe Stock] imagen y licencia desde dentro  [!DNL Experience Manager Assets].*
 
 ![Buscar y filtrar las imágenes de Adobe Stock con licencia en Experience Manager](assets/aem-search-filters2.jpg)
 
-*Figura: Busque y filtre las[!DNL Adobe Stock]imágenes con licencia en[!DNL Experience Manager].*
+*Figura: Busque y filtre las  [!DNL Adobe Stock] imágenes con licencia en  [!DNL Experience Manager].*
 
-### Dynamic references in [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
+### Referencias dinámicas en [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
 
-[!DNL Experience Manager Assets] se utilizan en [!DNL Adobe InDesign] archivos dinámicos. Las referencias se actualizan automáticamente si los recursos a los que se hace referencia se mueven en el repositorio. Para obtener más información, consulte [cómo administrar recursos](/help/assets/managing-linked-subassets.md)compuestos.
+[!DNL Experience Manager Assets] se utilizan en  [!DNL Adobe InDesign] archivos dinámicos. Las referencias se actualizan automáticamente si los recursos a los que se hace referencia se mueven en el repositorio. Para obtener más información, consulte [cómo administrar recursos compuestos](/help/assets/managing-linked-subassets.md).
 
 ## Capacidades de Brand Portal {#brand-portal-capabilities}
 
@@ -58,23 +58,23 @@ Para obtener más información, consulte [Novedades de Brand Portal](https://hel
 
 En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales necesarios residen en distintos silos.
 
-[!DNL Experience Manager Sites] ofrece capacidades de crear páginas web y es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web.[!DNL Experience Manager Assets] [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración [!DNL Sites] y [!DNL Assets]. Consulte [cómo configurar y utilizar la función](/help/assets/use-assets-across-connected-assets-instances.md)Recursos conectados.
+[!DNL Experience Manager Sites] ofrece capacidades de crear páginas web y es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web.[!DNL Experience Manager Assets] [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración  [!DNL Sites] y  [!DNL Assets]. Consulte [cómo configurar y utilizar la función Recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
 
-![Arrastre un recurso desde una [!DNL Experience Manager] implementación en una [!DNL Sites] página de una implementación diferente [!DNL Experience Manager]](assets/connected-assets-drag-and-drop-only.gif)
+![Arrastre un recurso desde una  [!DNL Experience Manager] implementación en una  [!DNL Sites] página de otra  [!DNL Experience Manager] implementación](assets/connected-assets-drag-and-drop-only.gif)
 
-*Figura: Arrastre un recurso desde una[!DNL Experience Manager]implementación en una[!DNL Sites]página en otra[!DNL Experience Manager]implementación.*
+*Figura: Arrastre un recurso desde una  [!DNL Experience Manager] implementación en una  [!DNL Sites] página en una  [!DNL Experience Manager] implementación diferente.*
 
 ## Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] proporciona envío y creación de medios enriquecidos mejorados [!DNL Experience Manager Assets] para impulsar experiencias de vanguardia que son envolventes y personalizadas. Al cargar un único recurso maestro de alta calidad y utilizar nuestros visores y procesamiento avanzados en la nube, puede distribuir cualquier combinación de representaciones sobre la marcha para respaldar la estrategia de medios de su organización.
+[!DNL Dynamic Media] proporciona envío y creación de medios enriquecidos mejorados  [!DNL Experience Manager Assets] para impulsar experiencias de vanguardia que son envolventes y personalizadas. Al cargar un único recurso maestro de alta calidad y utilizar nuestros visores y procesamiento avanzados en la nube, puede distribuir cualquier combinación de representaciones sobre la marcha para respaldar la estrategia de medios de su organización.
 
-For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Para obtener más información sobre las nuevas [!DNL Dynamic Media] funciones, consulte [Notas de la versión de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
-### 360 video support {#video-support}
+### Compatibilidad con video de 360 {#video-support}
 
-Manage your 360-video files directly in [!DNL Experience Manager] using the cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. Para obtener más información, consulte [Uso de vídeos 360](/help/assets/360-video.md).
+Administre sus archivos de 360 vídeos directamente en [!DNL Experience Manager] mediante los visores más avanzados para ofrecer experiencias de VR a equipos de escritorio, dispositivos móviles y auriculares VR. Para obtener más información, consulte [Uso de vídeos 360](/help/assets/360-video.md).
 
-### Custom video thumbnails {#custom-video-thumbnails}
+### Miniaturas de vídeo personalizadas {#custom-video-thumbnails}
 
 Ahora puede personalizar las miniaturas de sus recursos de vídeo utilizando fotogramas del propio vídeo u otro contenido almacenado en DAM. Para obtener instrucciones adicionales, consulte [Acerca de las miniaturas de vídeo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -92,7 +92,7 @@ Ahora puede personalizar las miniaturas de sus recursos de vídeo utilizando fot
 
 ## Mejora de la capacidad de uso {#usability-enhancement}
 
-Ahora puede seleccionar todos los recursos cargados dentro de una carpeta o desde un resultado de búsqueda con una sola acción. Esto le permite administrar varios recursos rápidamente. The check box selects all the assets that fits the scenario, say a search result and not just the assets that are visible in the [!DNL Experience Manager] interface.
+Ahora puede seleccionar todos los recursos cargados dentro de una carpeta o desde un resultado de búsqueda con una sola acción. Esto le permite administrar varios recursos rápidamente. La casilla de verificación selecciona todos los recursos que se ajustan al escenario, como un resultado de búsqueda y no sólo los recursos que están visibles en la interfaz [!DNL Experience Manager].
 
 ![Utilice la opción Seleccionar todo para seleccionar todos los recursos cargados con un solo clic.](assets/select-all-in-aem-assets.gif)
 
@@ -102,7 +102,7 @@ Ahora puede seleccionar todos los recursos cargados dentro de una carpeta o desd
 
 [!DNL Assets] le permite crear esquemas de metadatos para carpetas de recursos, que definen el diseño y los metadatos mostrados en las páginas de propiedades de las carpetas. Ahora puede asignar un esquema de metadatos de carpeta a una carpeta existente o al crear una carpeta nueva. Para obtener más información, consulte [Esquema de metadatos de carpeta](/help/assets/metadata-config.md#folder-metadata-schema).
 
-Al especificar los metadatos en cascada, las opciones se pueden cargar desde un archivo JSON en tiempo de ejecución, en lugar de escribir manualmente en el formulario. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
+Al especificar los metadatos en cascada, las opciones se pueden cargar desde un archivo JSON en tiempo de ejecución, en lugar de escribir manualmente en el formulario. Para obtener más información, consulte [metadatos en cascada](/help/assets/metadata-schemas.md#cascading-metadata).
 
 ## Mejoras en los informes {#reporting-enhancements}
 
