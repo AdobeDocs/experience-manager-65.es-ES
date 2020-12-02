@@ -13,13 +13,13 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1124'
+ht-degree: 10%
 
 ---
 
 
-# Función de la idea {#ideation-feature}
+# Característica de ideación {#ideation-feature}
 
 ## Introducción {#introduction}
 
@@ -32,26 +32,26 @@ La función de ideación proporciona un área para los visitantes del sitio con 
 
 Esta sección de la documentación describe:
 
-* Añadir la función de ideación en un sitio de AEM.
+* Añadir la función de ideación en un sitio AEM.
 * Configuración del componente Ideación.
 
-### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
+### Añadir una idea en una página {#adding-a-ideation-to-a-page}
 
-Para agregar un `Ideation` componente a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Ideation` a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Ideation`
 
 y arrástrelo a su lugar en una página donde debería aparecer la idea.
 
-Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](/help/communities/basics.md).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](/help/communities/ideation.md#essentials-for-client-side) necesarias, así es como aparecerá el `Ideation` componente:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](/help/communities/ideation.md#essentials-for-client-side), así es como aparecerá el componente `Ideation`:
 
 ![ideación](assets/ideation.png)
 
 ### Configuración de una idea {#configuring-an-ideation}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Ideation` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Ideation` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
@@ -59,7 +59,7 @@ Seleccione el componente colocado al que desea acceder y seleccione el `Ideation
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **[!UICONTROL Configuración]** , especifique la configuración de las ideas y los comentarios:
+En la ficha **[!UICONTROL Configuración]**, especifique la configuración de las ideas y los comentarios:
 
 * **Permitir la miniatura del archivo adjunto**
 * **Tamaño máximo de la miniatura del archivo adjunto**
@@ -93,7 +93,7 @@ En la ficha **[!UICONTROL Configuración]** , especifique la configuración de l
 
 * **Permitir etiquetado**
 
-   Si está activada, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha Campo **** de etiqueta). El valor predeterminado no está marcado.
+   Si está activada, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha **[!UICONTROL Campo de etiqueta]**). El valor predeterminado no está marcado.
 
 * **Permitir cargas de archivos**
 
@@ -101,11 +101,11 @@ En la ficha **[!UICONTROL Configuración]** , especifique la configuración de l
 
 * **Tamaño máximo de archivo**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+   Solo es pertinente si se comprueba `Allow File Uploads`. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es pertinente si se comprueba `Allow File Uploads`. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -125,11 +125,11 @@ En la ficha **[!UICONTROL Configuración]** , especifique la configuración de l
 
 * **Permitir seguimiento**
 
-   Si está activada, incluya la siguiente función para anuncios de ideas, que permite que se [notifique](/help/communities/notifications.md) a los miembros de los anuncios nuevos. El valor predeterminado no está marcado.
+   Si está activada, incluya la siguiente función para anuncios de ideas, que permite que los miembros reciban [notificaciones](/help/communities/notifications.md) de anuncios nuevos. El valor predeterminado no está marcado.
 
 * **Permitir suscripciones por correo electrónico**
 
-   Si está activada, permita que se notifique a los miembros de los anuncios nuevos por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se marque y se configure [el](/help/communities/email.md)correo electrónico. El valor predeterminado no está marcado.
+   Si se selecciona, permita que se notifique a los miembros de los nuevos anuncios por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere que `Allow Following` se compruebe y [se configure el correo electrónico](/help/communities/email.md). El valor predeterminado no está marcado.
 
 * **Habilitar la votación**
 
@@ -137,13 +137,13 @@ En la ficha **[!UICONTROL Configuración]** , especifique la configuración de l
 
 * **Mostrar insignias**
 
-   Si está activada, muestre [los distintivos](/help/communities/implementing-scoring.md) obtenidos y asignados con la idea de un miembro. El valor predeterminado no está marcado.
+   Si está marcado, muestre [distintivos](/help/communities/implementing-scoring.md) obtenidos y asignados con la idea de un miembro. El valor predeterminado no está marcado.
 
 * **No obtener respuestas en la página de listado**
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, la idea se puede identificar como contenido [](/help/communities/featured.md)destacado. El valor predeterminado no está marcado.
+   Si se selecciona, la idea se puede identificar como [contenido destacado](/help/communities/featured.md). El valor predeterminado no está marcado.
 
 * **Habilitar la mención**
 * **Menciones máximas**
@@ -151,7 +151,7 @@ En la ficha **[!UICONTROL Configuración]** , especifique la configuración de l
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha Moderación **** del usuario, especifique cómo se administran las ideas y los comentarios publicados (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+En la ficha **[!UICONTROL Moderación del usuario]**, especifique cómo se administran las ideas y los comentarios publicados (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
 * **Denegar entradas**
 
@@ -183,11 +183,11 @@ En la ficha Moderación **** del usuario, especifique cómo se administran las i
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
-En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se permiten en la ficha **[!UICONTROL Configuración]** , están limitadas según las Áreas de nombres elegidas.
+En la ficha **[!UICONTROL Campo de etiqueta]**, las etiquetas que se pueden aplicar, si se permiten en la ficha **[!UICONTROL Configuración]**, están limitadas según las Áreas de nombres elegidas.
 
 * **Espacios de nombres permitidos**
 
-   Relevante si `Allow Tagging` se marca en la ficha **[!UICONTROL Configuración]** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
+   Relevante si `Allow Tagging` se comprueba en la ficha **[!UICONTROL Configuración]**. Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -195,7 +195,7 @@ En la ficha Campo **** de etiqueta, las etiquetas que se pueden aplicar, si se p
 
 #### Ficha Ordenar configuración {#sort-settings-tab}
 
-En la ficha **[!UICONTROL Ordenar configuración]** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **[!UICONTROL Ordenar configuración]**, especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **Ordenar por**
 
@@ -221,17 +221,17 @@ Una vez que haya iniciado sesión, un miembro puede crear una nueva idea.
 
 Antes de enviar la idea, es posible que el miembro guarde un borrador.
 
-Al seleccionar el `Save as Draft` botón, se guarda un borrador.
+Al seleccionar el botón `Save as Draft`, se guarda un borrador.
 
 ![save-idea](assets/save-idea.png)
 
-Cuando visualice borradores guardados en la `My Drafts` ficha, seleccione `Read More` para volver a entrar en el modo de edición:
+Cuando visualice borradores guardados en la ficha `My Drafts`, seleccione `Read More` para volver a entrar en el modo de edición:
 
 ![edit-idea](assets/edit-idea.png)
 
 #### Proporcionar comentarios {#providing-feedback}
 
-Una vez publicada la idea, otros miembros pueden iniciar sesión, abrir la idea ( `Read More`) y darle gusto, añadiendo así al recuento de votos, y hacer comentarios.
+Una vez publicada la idea, otros miembros pueden iniciar sesión, abrir la idea ( `Read More`) y darle gusto, agregando así al recuento de votos, y hacer comentarios.
 
 ![comentarios](assets/feedback-idea.png)
 
@@ -239,6 +239,6 @@ Una vez publicada la idea, otros miembros pueden iniciar sesión, abrir la idea 
 
 Puede encontrar más información en la página [Ideation Essentials](/help/communities/ideation.md) para desarrolladores.
 
-Para obtener información sobre la moderación de los temas y comentarios publicados, consulte [Moderación del contenido](/help/communities/moderate-ugc.md)generado por el usuario.
+Para obtener información sobre la moderación de los temas y comentarios publicados, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido](/help/communities/tag-ugc.md)generado por el usuario.
+Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido generado por el usuario](/help/communities/tag-ugc.md).
