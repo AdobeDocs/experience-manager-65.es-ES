@@ -29,7 +29,7 @@ AEM Forms proporciona API que puede utilizar para la consulta de datos de formul
 
 Devuelve una lista de todos los formularios elegibles.
 
-### URL parameters {#url-parameters}
+### Parámetros de URL {#url-parameters}
 
 Esta API no requiere parámetros adicionales.
 
@@ -59,11 +59,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmission {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET /content/forms/portal/submission.review.json?func=getAllSubsions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Devuelve detalles de todos los formularios enviados. Sin embargo, puede utilizar parámetros de URL para limitar los resultados.
 
-### URL parameters {#url-parameters-1}
+### Parámetros de URL {#url-parameters-1}
 
 Especifique los siguientes parámetros en la dirección URL de la solicitud:
 
@@ -87,11 +87,11 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (opcional)</td>
-   <td>Especifica la propiedad para ordenar los resultados. El valor predeterminado es <strong>jcr:lastModified</strong>, que ordena los resultados en función de la hora de la última modificación.</td>
+   <td>Especifica la propiedad para ordenar los resultados. El valor predeterminado es <strong>jcr:lastModified</strong>, que ordena los resultados en función de la última vez que se modificó.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (opcional)</td>
-   <td>Especifica el orden para ordenar los resultados. El valor predeterminado es <strong>desc</strong>, que ordena los resultados en orden descendente. Puede especificar <code>asc</code> que los resultados se ordenen en orden ascendente.</td>
+   <td>Especifica el orden para ordenar los resultados. El valor predeterminado es <strong>desc</strong>, que ordena los resultados en orden descendente. Puede especificar <code>asc</code> para ordenar los resultados en orden ascendente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (opcional)</td>
@@ -133,7 +133,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 Añade un comentario en la instancia de envío especificada.
 
-### URL parameters {#url-parameters-2}
+### Parámetros de URL {#url-parameters-2}
 
 Especifique los siguientes parámetros en la dirección URL de la solicitud:
 
@@ -164,7 +164,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 Devuelve todos los comentarios publicados en la instancia de envío especificada.
 
-### URL parameters {#url-parameters-3}
+### Parámetros de URL {#url-parameters-3}
 
 Especifique el siguiente parámetro en la dirección URL de la solicitud:
 
@@ -202,7 +202,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 Actualiza el valor de la propiedad especificada de la instancia de formulario enviada especificada.
 
-### URL parameters {#url-parameters-4}
+### Parámetros de URL {#url-parameters-4}
 
 Especifique los siguientes parámetros en la dirección URL de la solicitud:
 
