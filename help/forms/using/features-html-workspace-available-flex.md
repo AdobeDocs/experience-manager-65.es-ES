@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +26,19 @@ A continuación se ofrece una descripción general rápida de estas funciones. P
 
 ## Compatibilidad con un panel de resumen para tareas {#support-for-a-summary-pane-for-tasks}
 
-Cuando se abre una tarea, antes de que se abra el formulario, un panel permite mostrar información sobre la tarea mediante una dirección URL externa. Al utilizar el panel Resumen de Tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Consulte [Mostrar página](/help/forms/using/displaying-information-task-summary-pane.md) de resumen para obtener los detalles de implementación.
+Cuando se abre una tarea, antes de que se abra el formulario, un panel permite mostrar información sobre la tarea mediante una dirección URL externa. Al utilizar el panel Resumen de Tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Consulte [Mostrar página de resumen](/help/forms/using/displaying-information-task-summary-pane.md) para obtener detalles de implementación.
 
 ## Compatibilidad con la Vista del administrador {#support-for-manager-view}
 
-Esta capacidad permite a los administradores acceder a los informes o actuar en función de sus tareas. Los administradores también pueden explorar en profundidad, en la jerarquía de la organización, las tareas de sus informes indirectos. Consulte [Administración de tareas en una jerarquía organizativa mediante la Vista](/help/forms/using/tasks-organizational-hierarchy-using-manager.md) del administrador para obtener más información.
+Esta capacidad permite a los administradores acceder a los informes o actuar en función de sus tareas. Los administradores también pueden explorar en profundidad, en la jerarquía de la organización, las tareas de sus informes indirectos. Consulte [Administración de tareas en una jerarquía organizativa mediante la Vista del administrador](/help/forms/using/tasks-organizational-hierarchy-using-manager.md) para obtener más detalles.
 
 ## Compatibilidad con avatares del usuario {#support-for-user-avatars}
 
-Las imágenes o avatares para el usuario que ha iniciado sesión ahora se pueden mostrar en la esquina superior derecha del espacio de trabajo de AEM Forms. Además, en la Vista Administrador, se pueden mostrar avatares de usuario para mostrar las imágenes de los administradores y sus informes. Consulte [Visualización del avatar](/help/forms/using/displaying-user-avatar.md) del usuario para obtener más información.
+Las imágenes, o avatares, para el usuario que ha iniciado sesión ahora se pueden mostrar en la esquina superior derecha del espacio de trabajo de AEM Forms. Además, en la Vista Administrador, se pueden mostrar avatares de usuario para mostrar las imágenes de los administradores y sus informes. Consulte [Visualización del avatar del usuario](/help/forms/using/displaying-user-avatar.md) para obtener más información.
 
-## Compatibilidad con la integración de aplicaciones de terceros {#support-for-integrating-third-party-applications}
+## Soporte para la integración de aplicaciones de terceros {#support-for-integrating-third-party-applications}
 
-La capacidad de integración con aplicaciones de terceros se puede utilizar para llevar los flujos de trabajo por completo al espacio de trabajo de AEM Forms. Por ejemplo, puede procesar las plantillas de cartas de Correspondence Management como tareas en la propia ventana del espacio de trabajo de AEM Forms. Por lo tanto, puede completar la tarea sin salir del espacio de trabajo de AEM Forms. Consulte [Integración de la gestión de correspondencia en el espacio de trabajo](/help/forms/using/integrating-correspondence-management-html-workspace.md) de AEM Forms para obtener instrucciones detalladas.
+La capacidad de integración con aplicaciones de terceros se puede utilizar para llevar sus flujos de trabajo al espacio de trabajo de AEM Forms. Por ejemplo, puede procesar las plantillas de cartas de Correspondence Management como tareas dentro de la propia ventana del espacio de trabajo de AEM Forms. Por lo tanto, puede completar la tarea sin salir del espacio de trabajo de AEM Forms. Consulte [Integración de la administración de correspondencia en el área de trabajo de AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md) para obtener instrucciones detalladas.
 
 ## Compatibilidad con el procesamiento de tareas personalizadas en función del dispositivo del usuario final {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
