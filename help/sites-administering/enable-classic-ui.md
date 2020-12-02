@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 20%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 Con la funcionalidad táctil que alcanza la paridad con la IU clásica y la supera en muchas áreas de AEM, el acceso a la interfaz clásica a través de la interfaz táctil ahora está deshabilitado de forma predeterminada. Las siguientes páginas explican cómo volver a habilitar este acceso si es necesario.
 
 * [Editor](/help/sites-administering/enable-classic-ui-editor.md)
-* [Consolas de administración](/help/sites-administering/enable-classic-ui-admin.md)
+* [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)
 
 >[!NOTE]
 >
