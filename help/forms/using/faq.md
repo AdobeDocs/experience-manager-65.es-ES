@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Preguntas más frecuentes para formularios HTML5{#frequently-asked-questions-faq-for-html-forms}
+# Preguntas más frecuentes (FAQ) para formularios HTML5{#frequently-asked-questions-faq-for-html-forms}
 
 Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad con secuencias de comandos y el ámbito de los formularios HTML5.
 
@@ -27,11 +27,11 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Por qué los códigos de barras y los campos de firma no aparecen en mi formulario?
 
-   Respuesta: Los campos de códigos de barras y firmas no son relevantes en los escenarios HTML o móviles. Estos campos aparecen como un área no interactiva. Sin embargo, AEM Forms Designer proporciona un nuevo campo de creación de secuencias de comandos de firma que se puede utilizar en lugar de un campo de firma. También se puede agregar una utilidad [](../../forms/using/custom-widgets.md) personalizada para códigos de barras e integrarla.
+   Respuesta: Los campos de códigos de barras y firmas no son relevantes en los escenarios HTML o móviles. Estos campos aparecen como un área no interactiva. Sin embargo, AEM Forms Designer proporciona un nuevo campo de creación de secuencias de comandos de firma que se puede utilizar en lugar de un campo de firma. También se puede agregar una [utilidad personalizada](../../forms/using/custom-widgets.md) para códigos de barras e integrarla.
 
-1. Is Rich Text supported for the XFA Text Field?
+1. ¿Se admite texto enriquecido para el campo de texto XFA?
 
-   Answer: The XFA field, which allows rich content in AEM Forms Designer, is not supported and is rendered as normal text without support for styling the text from the user interface. Also, XFA fields with comb property are displayed as a normal field, though there are still restrictions on number of allowed characters based on the value of comb digits.
+   Respuesta: El campo XFA, que permite contenido enriquecido en AEM Forms Designer, no se admite y se procesa como texto normal sin que sea posible aplicar estilo al texto desde la interfaz de usuario. Además, los campos XFA con propiedad comb se muestran como un campo normal, aunque todavía hay restricciones en el número de caracteres permitidos según el valor de los dígitos comb.
 
 1. ¿Existen limitaciones en cuanto al uso de subformularios repetibles?
 
@@ -39,7 +39,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    1. Establezca el recuento inicial del subformulario repetible en 1.
 
-      ![intial-count](assets/intial-count.png)
+      ![recuento inicial](assets/intial-count.png)
 
    1. Utilice el evento initialize del formulario para ocultar la instancia principal del subformulario. Por ejemplo, el código siguiente oculta la instancia principal del subformulario al inicializarlo. También verifica el tipo de aplicación para asegurarse de que la secuencia de comandos se ejecuta únicamente en el lado del cliente:
 
@@ -91,11 +91,11 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Por qué parte del texto se trunca o se muestra incorrectamente en HTML5?
 
-   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista de diseño de AEM Forms Designer. Aunque este truncamiento se puede gestionar en los archivos PDF, no se puede gestionar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño del Diseñador de AEM Forms.
+   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista de diseño de AEM Forms Designer. Aunque este truncamiento se puede gestionar en los archivos PDF, no se puede gestionar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño de AEM Forms Designer.
 
 1. Estoy observando problemas de diseño relacionados con la falta de contenido o la superposición de contenido. ¿Cuál es la razón?
 
-   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se produce más adelante en el orden de documento (en la vista Jerarquía de Designer AEM Forms). PDF admite capas transparentes, pero los navegadores/HTML no admiten capas transparentes.
+   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se produce más adelante en el orden de documento (en la vista Jerarquía de AEM Forms Designer). PDF admite capas transparentes, pero los navegadores/HTML no admiten capas transparentes.
 
 1. ¿Por qué se muestran algunas fuentes en el formulario HTML diferentes de las utilizadas al diseñar el formulario?
 
@@ -117,7 +117,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    Se requieren muchas estructuras de datos intermedias y objetos como el uso de formularios, el uso de datos y el uso de diseños para procesar un XDP en un formulario HTML.
 
-   Para PDF forms, Adobe Acrobat dispone de un motor XTG integrado para crear estructuras de datos y objetos intermedios. Acrobat también se ocupa del diseño y las secuencias de comandos.
+   Para PDF forms, Adobe Acrobat tiene un motor XTG integrado para crear estructuras de datos y objetos intermedios. Acrobat también se encarga del diseño y de los scripts.
 
    En el caso de los formularios HTML5, los exploradores no tienen un motor XTG integrado para crear estructuras de datos intermedias ni objetos a partir de bytes XDP sin procesar. Por lo tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, la secuencia de comandos y el motor de diseño basados en JavaScript utilizan estas estructuras intermedias.
 
@@ -125,7 +125,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Hay alguna limitación con respecto al uso de tablas en mi xdp?
 
-   Respuesta: Las tablas complejas causan problemas en el procesamiento.
+   Respuesta: Las tablas complejas producen problemas en el procesamiento.
 
    * No se admite la sección (SubformSet) dentro de una tabla.
    * Las filas de encabezado o pie de página de algunas tablas se marcan para la repetición. La división de estas tablas en varias páginas puede causar algunos problemas.
@@ -136,7 +136,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    * No se admiten las tablas anidadas ni los subformularios dentro de una tabla.
    * Los encabezados solo se admiten para las columnas superior o izquierda de la tabla. Los encabezados no son compatibles con los elementos de la tabla intermedia. Puede aplicar encabezados a varios encabezados de columna y fila siempre que todas estas filas y columnas estén junto con la fila superior o la columna situada más a la izquierda de la tabla.
-   * `Rowspan`y `colspan`desde una ubicación aleatoria dentro de la tabla no se admite.
+   * `Rowspan`y  `colspan`desde una ubicación aleatoria dentro de la tabla no se admite.
 
    * No se puede agregar o quitar dinámicamente una instancia de filas que contenga elementos con un valor de envergadura bueno a 1.
 
@@ -174,34 +174,34 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 ### Creación de secuencias de comandos {#scripting}
 
-1. ¿Hay alguna limitación en la implementación de JavaScript para formularios HTML?
+1. ¿Hay alguna limitación en la implementación de JavaScript para HTML Forms?
 
    Respuesta:
 
-   * La compatibilidad con la secuencia de comandos xfa.connectionSet es limitada. Para connectionSet, solo se admite la invocación del servicio Web por parte del servidor. Para obtener información detallada, consulte Compatibilidad con [secuencias de comandos](/help/forms/using/scripting-support.md).
+   * La compatibilidad con la secuencia de comandos xfa.connectionSet es limitada. Para connectionSet, solo se admite la invocación del servicio Web por parte del servidor. Para obtener información detallada, consulte [Compatibilidad con secuencias de comandos](/help/forms/using/scripting-support.md).
    * No se admite $record y $data en scripts del lado del cliente. Sin embargo, si las secuencias de comandos se escriben en un bloque formReady, layoutReady, las secuencias de comandos seguirán funcionando porque estos eventos se ejecutan en el servidor.
    * No se admiten secuencias de comandos específicas de elementos XFA Draw, como cambiar el texto Dibujar (o el texto Rótulo en caso de campos).
 
 1. ¿Hay alguna limitación en el uso de formCalc?
 
-   Respuesta: Actualmente solo se implementa un subconjunto de las secuencias de comandos formCalc. Para obtener información detallada, consulte Compatibilidad con [secuencias de comandos](/help/forms/using/scripting-support.md).
+   Respuesta: Actualmente solo se implementa un subconjunto de las secuencias de comandos formCalc. Para obtener información detallada, consulte [Compatibilidad con secuencias de comandos](/help/forms/using/scripting-support.md).
 
 1. ¿Existe alguna convención de nombres recomendada y hay palabras clave reservadas que evitar?
 
    * En AEM Forms Designer, se recomienda no empezar el nombre de un objeto (como un subformulario o un campo de texto) con un subrayado (_). Para utilizar subrayado al principio del nombre, agregue un prefijo después del subrayado, _&lt;prefix>&lt;objectname>.
-   * Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md).
+   * Todas las API de formularios HTML5 son palabras clave reservadas. Para las API/funciones personalizadas, utilice un nombre que no sea idéntico a [API de formularios HTML5](/help/forms/using/scripting-support.md).
 
 1. ¿Los formularios HTML5 admiten campos flotantes?
 
-   Sí, los formularios HTML5 admiten campos flotantes. Para habilitar los campos flotantes, agregue la siguiente propiedad al perfil de procesamiento:
+   Sí, HTML5 Forms admite campos flotantes. Para habilitar los campos flotantes, agregue la siguiente propiedad al perfil de procesamiento:
 
    >[!NOTE]
    >
    >De forma predeterminada, los campos no están habilitados para flotar. Puede utilizar Forms Designer para establecer la propiedad flotante de los campos.
 
-   1. Abra la lista CRXde y navegue hasta el `/content/xfaforms/profiles/default` nodo.
-   1. Añada una propiedad `mfDataDependentFloatingField`de tipo String y defina el valor de la propiedad en `true`.
-   1. Haga clic en **Guardar todo**. Ahora los campos flotantes están activados para los formularios HTML mediante el perfil de procesamiento actualizado.
+   1. Abra la lista CRXde y vaya al nodo `/content/xfaforms/profiles/default`.
+   1. Añada una propiedad `mfDataDependentFloatingField`de tipo String y establezca el valor de la propiedad en `true`.
+   1. Haga clic en **Guardar todo**. Ahora los campos flotantes están activados para el Forms HTML mediante el perfil de procesamiento actualizado.
 
       >[!NOTE]
       >
@@ -215,4 +215,4 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Hay palabras clave reservadas en los formularios HTML5?
 
-   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comienzan con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. Añadir un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`
+   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las API/funciones personalizadas, utilice un nombre que no sea idéntico a [API de formularios HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comienzan con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. Añadir un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`
