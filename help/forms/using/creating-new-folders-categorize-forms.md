@@ -10,21 +10,24 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 0%
 
 ---
 
 
-# Crear nuevas carpetas para categorizar formularios {#create-new-folders-to-categorize-forms}
+# Crear nuevas carpetas para categorizar los formularios {#create-new-folders-to-categorize-forms}
 
-Puede organizar mejor los recursos con carpetas. Dado que AEM Forms admite varios tipos de recursos (plantillas de formulario, archivos PDF, documentos, recursos y formularios adaptables, con varios metadatos), puede utilizar carpetas para clasificar los formularios según los criterios deseados.
+Puede organizar mejor los recursos con carpetas. Dado que AEM Forms admite varios tipos de recursos (plantillas de formulario, archivos PDF, documentos, recursos y formularios adaptables, con varios metadatos), puede utilizar las carpetas para clasificar los formularios según los criterios deseados.
 
 AEM Forms permite cambiar el título de una carpeta. El título no es el mismo que el nombre del nodo en el que se almacena la carpeta en el repositorio. En su lugar, el título se mantiene como metadatos para la carpeta. Si cambia el título de una carpeta, la ruta de cualquier recurso que se encuentre dentro de ella no se verá afectada.
 
-## Crear una carpeta {#create-a-folder}
+## Cree una carpeta  . {#create-a-folder}
 
 Puede crear una carpeta en AEM Forms de una de las siguientes formas:
 
-* Cargar un archivo ZIP que contenga recursos en la estructura de carpetas deseada (consulte [Obtención de documentos XDP y PDF en AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* Cargue un archivo ZIP que contenga recursos en la estructura de carpetas deseada (consulte [Obtención de documentos XDP y PDF en AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
 * Crear una nueva carpeta vacía
 
@@ -34,8 +37,9 @@ Puede crear una carpeta en AEM Forms de una de las siguientes formas:
 
 1. Introduzca los siguientes detalles:
 
-   * **** Título: Nombre para mostrar de la carpeta
-   * **** Nombre: *(Obligatorio)* El nombre del nodo en el que desea almacenar la carpeta en el repositorio
+   * **Título:** Nombre para mostrar de la carpeta
+   * **Nombre:** *(obligatorio)* El nombre del nodo en el que desea almacenar la carpeta en el repositorio
+
    >[!NOTE]
    >
    >De forma predeterminada, el valor del campo de nombre se rellena automáticamente desde el título. El nombre sólo puede contener caracteres alfanuméricos o caracteres especiales de guión (-) y subrayado (_). Cualquier otro carácter especial introducido en el título se sustituye automáticamente por un guión y se le solicita que confirme el nuevo nombre. Puede elegir continuar con el nombre sugerido o editarlo más adelante.
@@ -44,12 +48,12 @@ Puede crear una carpeta en AEM Forms de una de las siguientes formas:
 
    En la ubicación actual de la lista de recursos se muestra una nueva carpeta con el título definido.
 
-   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el ratón sobre el icono ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece junto al campo de nombre.
+   Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede vista del mensaje de error pasando el ratón sobre el icono de error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece junto al campo de nombre.
 
 ### Editar el título de la carpeta {#edit-the-folder-title-br}
 
 1. Seleccione la carpeta cuyo título desee editar.
-1. Haga clic en el icono Editar ![aem6forms_edit](assets/aem6forms_edit.png) de la barra de herramientas.
+1. Haga clic en el icono Editar ![aem6formularios_edit](assets/aem6forms_edit.png) en la barra de herramientas.
 1. Escriba el nuevo título. El campo de texto se rellena previamente con el valor actual del título de la carpeta. Puede cambiarlo a un nuevo valor.
 1. Haga clic en **[!UICONTROL Enviar].**
 
