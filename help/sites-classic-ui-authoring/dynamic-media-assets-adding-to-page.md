@@ -20,7 +20,7 @@ ht-degree: 55%
 
 # Agregar recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y Medios interactivos son inteligentes; es decir, saben si va a añadir una imagen o un vídeo, y las opciones disponibles cambian según corresponda.
+Para agregar la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** directamente en la página. Para ello, introduzca el modo [!UICONTROL Diseño] y habilite los componentes de medios dinámicos. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y Medios interactivos son inteligentes; es decir, saben si va a añadir una imagen o un vídeo, y las opciones disponibles cambian según corresponda.
 
 Puede agregar recursos de medios dinámicos directamente a la página si está utilizando AEM como WCM.
 
@@ -28,33 +28,33 @@ Puede agregar recursos de medios dinámicos directamente a la página si está u
 >
 >Para los titulares de carrusel, hay mapas de imágenes disponibles de fábrica.
 
-## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
+## Añadir un componente de Dynamic Media en una página {#adding-a-dynamic-media-component-to-a-page}
 
-Adding the [!UICONTROL Dynamic Media] or [!UICONTROL Interactive Media] component to a page is the same as adding a component to any page. The [!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] components are described in detail in the following sections.
+Añadir el componente [!UICONTROL Medios dinámicos] o [!UICONTROL Medios interactivos] en una página es lo mismo que agregar un componente a cualquier página. Los componentes [!UICONTROL Medios dinámicos] y [!UICONTROL Medios interactivos] se describen en detalle en las siguientes secciones.
 
 Para añadir un componente o visor de Dynamic Media a una página:
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
-1. If no Dynamic Media component is available, click the ruler in the [!UICONTROL Sidekick] to enter **[!UICONTROL Design]** mode, click **[!UICONTROL Edit]** parsys, and select **[!UICONTROL Dynamic Media]** to make the Dynamic Media components available.
+1. Si no hay ningún componente de Dynamic Media disponible, haga clic en la regla de la [!UICONTROL barra de tareas] para entrar al modo **[!UICONTROL Diseño]**, haga clic en **[!UICONTROL Editar]** parsys y seleccione **[!UICONTROL Medios dinámicos]** para que los componentes de Dynamic Media estén disponibles.
 
    >[!NOTE]
    >
    >Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
 
-1. Return to **[!UICONTROL Edit]** mode by clicking the pencil icon in the [!UICONTROL Sidekick].
-1. Drag the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component from the **[!UICONTROL Other]** group in the sidekick onto the page in the desired location.
+1. Vuelva al modo **[!UICONTROL Editar]** haciendo clic en el icono de lápiz en la [!UICONTROL barra de tareas].
+1. Arrastre el componente **[!UICONTROL Medios dinámicos]** o **[!UICONTROL Medios interactivos]** del grupo **[!UICONTROL Otros]** de la barra de tareas a la página en la ubicación deseada.
 1. Haga clic en **[!UICONTROL Editar]** para abrir el componente.
 1. [](#dynamic-media-component)Edite el componente según sea necesario y haga clic en **[!UICONTROL Aceptar]** para guardar los cambios.
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Los medios] dinámicos y los medios [!UICONTROL interactivos] están disponibles en la [!UICONTROL barra de tareas] en Medios **[!UICONTROL dinámicos.]** El componente de **[!UICONTROL Medios interactivos]** se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Medios dinámicos ] y  [!UICONTROL medios ] interactivos están disponibles en el   Sidekickunder Medios  **[!UICONTROL dinámicos.]** El componente de **[!UICONTROL Medios interactivos]** se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y se deben seleccionar en el modo Diseño para que se puedan usar. [Una vez que estén disponibles en el modo](/help/sites-authoring/default-components-designmode.md)Diseño, puede agregar los componentes a la página como lo haría con cualquier otro componente AEM.
+>Estos componentes no están disponibles de forma predeterminada y se deben seleccionar en el modo Diseño para que se puedan usar. [Una vez que estén disponibles en el modo](/help/sites-authoring/default-components-designmode.md) Diseño, puede agregar los componentes a la página como lo haría con cualquier otro componente AEM.
 
 ### Componente de Dynamic Media {#dynamic-media-component}
 
@@ -62,7 +62,7 @@ El componente Dynamic Media es inteligente, ya sea que agregue una imagen o un v
 
 >[!NOTE]
 >
->When you add the [!UICONTROL Dynamic Media] component, and **[!UICONTROL Dynamic Media Settings]** is blank or you cannot add an asset properly, check the following:
+>Cuando agregue el componente [!UICONTROL Dynamic Media] y **[!UICONTROL Configuración de Dynamic Media]** esté en blanco o no pueda agregar un recurso correctamente, compruebe lo siguiente:
 >
 >* [Dynamic Media](/help/assets/config-dynamic.md) se ha activado. Dynamic Media está desactivado de forma predeterminada.
 >* La imagen tiene un archivo TIFF piramidal. Las imágenes importadas antes de la activación de Dynamic Media no tienen un archivo TIFF piramidal.
@@ -73,29 +73,29 @@ El componente Dynamic Media es inteligente, ya sea que agregue una imagen o un v
 
 #### Uso de imágenes {#when-working-with-images}
 
-The [!UICONTROL Dynamic Media] component lets you add dynamic images, including image sets, spin sets, and mixed media sets. Puede acercar, alejar y, si procede, girar una imagen en un conjunto de giros o seleccionar una imagen de otro tipo de conjunto.
+El componente [!UICONTROL Dynamic Media] permite agregar imágenes dinámicas, incluidos conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos. Puede acercar, alejar y, si procede, girar una imagen en un conjunto de giros o seleccionar una imagen de otro tipo de conjunto.
 
 También puede configurar el ajuste preestablecido de visor, el ajuste preestablecido de imagen o el formato de imagen directamente en el componente. Para hacer que en una imagen sea interactiva, puede establecer puntos de interrupción o aplicar un ajuste preestablecido de imagen interactiva.
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-You can edit the following Dynamic Media settings by clicking **[!UICONTROL Edit]** in the component and then clicking the **[!UICONTROL Dynamic Media Settings]** tab.
+Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTROL Editar]** en el componente y luego en la ficha **[!UICONTROL Configuración de Dynamic Media]**.
 
 ![chlimage_1-73](assets/chlimage_1-73a.png)
 
 >[!NOTE]
 >
->De forma predeterminada, el componente de imagen Dynamic Media es adaptable. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]** properties.
+>De forma predeterminada, el componente de imagen Dynamic Media es adaptable. Si desea convertirlo en un tamaño fijo, configúrelo en la ficha **[!UICONTROL Avanzado]** con las propiedades **[!UICONTROL Ancho]** y **[!UICONTROL Altura]**.
 
-**[!UICONTROL Ajuste preestablecido]** de visor: seleccione un ajuste preestablecido de visor existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
+**[!UICONTROL Ajuste preestablecido]**  de visor: seleccione un ajuste preestablecido de visor existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
 
 Esta es la única opción disponible al visualizar conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos de visor que se muestran también son inteligentes; solo aparecen los ajustes preestablecidos de visor relevantes.
 
-**[!UICONTROL Ajuste preestablecido]** de imagen: seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que busca no está visible, es posible que tenga que hacerlo visible. Consulte [Administración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md). No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
+**[!UICONTROL Ajuste preestablecido]**  de imagen: seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que busca no está visible, es posible que tenga que hacerlo visible. Consulte [Administración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md). No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-**[!UICONTROL Modificadores]** de imagen: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificadores]**  de imagen: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales. Se describen en [Administración de ajustes preestablecidos de imagen](/help/assets/managing-viewer-presets.md) y en la [referencia de comando](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -103,35 +103,35 @@ Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos 
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
+Puede editar la siguiente [!UICONTROL Configuración avanzada] haciendo clic en **[!UICONTROL Editar]** en el componente.
 
 **[!UICONTROL Título]** : cambie el título de la imagen.
 
-**[!UICONTROL Texto]** alternativo: Añada un título a la imagen para los usuarios que tienen los gráficos desactivados.
+**[!UICONTROL Texto]**  alternativo: Añada un título a la imagen para los usuarios que tienen los gráficos desactivados.
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-**[!UICONTROL URL, Abrir en]** : puede definir un recurso desde para abrir un vínculo. Set the **[!UICONTROL URL]** and **[!UICONTROL Open in]** to indicate whether you want it to open in the same window or a new window.
+**[!UICONTROL URL, Abrir en]** : puede definir un recurso desde para abrir un vínculo. Configure las **[!UICONTROL URL]** y **[!UICONTROL Abrir en]** para indicar si desea que se abra en la misma ventana o en una nueva.
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 **[!UICONTROL Anchura y altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si deja estos valores en blanco, hace que el recurso sea adaptable.
 
-#### When working with video {#when-working-with-video}
+#### Al trabajar con vídeo {#when-working-with-video}
 
-Use the [!UICONTROL Dynamic Media] component to add dynamic video to your web pages. Cuando edita el componente, tiene la opción de usar un ajuste preestablecido de visor de vídeo predefinido para reproducir el vídeo en la página.
+Utilice el componente [!UICONTROL Dynamic Media] para agregar vídeo dinámico a las páginas Web. Cuando edita el componente, tiene la opción de usar un ajuste preestablecido de visor de vídeo predefinido para reproducir el vídeo en la página.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-You can edit the following [!UICONTROL Dynamic Media Settings] by clicking **[!UICONTROL Edit]** in the component.
+Puede editar la siguiente [!UICONTROL Configuración de Dynamic Media] haciendo clic en **[!UICONTROL Editar]** en el componente.
 
 >[!NOTE]
 >
->De forma predeterminada, el componente de vídeo de Dynamic Media es adaptable. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
+>De forma predeterminada, el componente de vídeo de Dynamic Media es adaptable. Si desea que sea un tamaño fijo, configúrelo en el componente con la **[!UICONTROL anchura]** y **[!UICONTROL altura]** en la ficha **[!UICONTROL Avanzado]**.
 
-**[!UICONTROL Ajuste preestablecido]** de visor: seleccione un ajuste preestablecido de visor de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
+**[!UICONTROL Ajuste preestablecido]**  de visor: seleccione un ajuste preestablecido de visor de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
 
-You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONTROL Edit]** in the component.
+Puede editar la siguiente configuración [!UICONTROL Avanzada] haciendo clic en **[!UICONTROL Editar]** en el componente.
 
 **[!UICONTROL Título]** : cambie el título del vídeo.
 
@@ -147,13 +147,13 @@ Para obtener más información sobre el envío de vídeo seguro y el uso del atr
 
 El componente de Medios interactivos es para los recursos que tienen elementos interactivos integrados en ellos, como puntos interactivos o mapas de imágenes. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el componente de **[!UICONTROL Medios interactivos]**.
 
-The [!UICONTROL Interactive Media] component is smart – depending on whether you add an image or a video, you have various options. Además, el visor responde. Es decir, el tamaño de la pantalla cambia automáticamente en función del tamaño de la pantalla. Todos los visores son visores basados en HTML5.
+El componente [!UICONTROL Medios interactivos] es inteligente, ya que, dependiendo de si agrega una imagen o un vídeo, tiene varias opciones. Además, el visor responde. Es decir, el tamaño de la pantalla cambia automáticamente en función del tamaño de la pantalla. Todos los visores son visores basados en HTML5.
 
 ![chlimage_1-75](assets/chlimage_1-75a.png)
 
 Puede editar las siguientes opciones de configuración **[!UICONTROL General]** al hacer clic en **[!UICONTROL Editar]** en el componente.
 
-**[!UICONTROL Ajuste preestablecido]** de visor: seleccione un ajuste preestablecido de visor existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte Administración de ajustes preestablecidos de visor. 
+**[!UICONTROL Ajuste preestablecido]**  de visor: seleccione un ajuste preestablecido de visor existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte Administración de ajustes preestablecidos de visor. 
 
 **[!UICONTROL Título]** : cambie el título del vídeo.
 
@@ -161,8 +161,8 @@ Puede editar las siguientes opciones de configuración **[!UICONTROL General]** 
 
 Puede editar las siguientes opciones de configuración **[!UICONTROL Añadir a carro]** al hacer clic en **[!UICONTROL Editar]** en el componente.
 
-**[!UICONTROL Mostrar recurso]** de producto: este valor está seleccionado de forma predeterminada. El recurso del producto muestra una imagen del producto, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el recurso del producto.
+**[!UICONTROL Mostrar recurso]**  de producto: este valor está seleccionado de forma predeterminada. El recurso del producto muestra una imagen del producto, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el recurso del producto.
 
-**[!UICONTROL Mostrar precio]** del producto: este valor está seleccionado de forma predeterminada. El precio del producto muestra el precio del artículo, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el precio del producto.
+**[!UICONTROL Mostrar precio]**  del producto: este valor está seleccionado de forma predeterminada. El precio del producto muestra el precio del artículo, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el precio del producto.
 
-**[!UICONTROL Mostrar formulario]** de producto: de forma predeterminada, este valor no está seleccionado. En el formulario del producto se incluye las variantes de producto, como talla y color. Desactive la casilla para no mostrar las variantes del producto.
+**[!UICONTROL Mostrar formulario]**  de producto: de forma predeterminada, este valor no está seleccionado. En el formulario del producto se incluye las variantes de producto, como talla y color. Desactive la casilla para no mostrar las variantes del producto.
