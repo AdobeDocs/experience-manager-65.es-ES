@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Elementos esenciales del contenido destacado  {#featured-content-essentials}
+# Elementos esenciales del contenido destacado {#featured-content-essentials}
 
 Esta página proporciona la información esencial para trabajar con contenido destacado.
 
@@ -51,7 +51,7 @@ A diferencia de fijar una publicación en la parte superior de un foro, esta fun
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Ver contenido <a href="featured.md">destacado</a></td>
+   <td>Consulte <a href="featured.md">Contenido destacado</a></td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ A diferencia de fijar una publicación en la parte superior de un foro, esta fun
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de comunidad que incluye la función [Contenido](functions.md#featured-content-function)destacado incluye un `featured content` componente configurado.
+Una estructura de sitio de comunidad que incluye la [función Contenido destacado](functions.md#featured-content-function), incluye un componente configurado `featured content`.
