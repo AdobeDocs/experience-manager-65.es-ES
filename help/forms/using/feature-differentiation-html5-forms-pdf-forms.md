@@ -1,8 +1,8 @@
 ---
-title: Diferenciación de funciones entre formularios HTML5 y PDF
-seo-title: Diferenciación de funciones entre formularios HTML5 y PDF
-description: Función admitida en formularios HTML5 y formularios PDF
-seo-description: Función admitida en formularios HTML5 y formularios PDF
+title: Diferenciación de funciones entre formularios HTML5 y PDF forms
+seo-title: Diferenciación de funciones entre formularios HTML5 y PDF forms
+description: Función admitida en formularios y PDF forms HTML5
+seo-description: Función admitida en formularios y PDF forms HTML5
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -12,13 +12,16 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 3%
 
 ---
 
 
-# Diferenciación de funciones entre formularios HTML5 y PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Diferenciación de funciones entre formularios HTML5 y PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-La siguiente tabla especifica la compatibilidad con funciones de los formularios HTML5 y los formularios PDF:
+La siguiente tabla especifica la compatibilidad con funciones para formularios y PDF forms HTML5:
 
 <table>
  <tbody>
@@ -34,8 +37,8 @@ La siguiente tabla especifica la compatibilidad con funciones de los formularios
   </tr>
   <tr>
    <td>Campo de firma<br /> </td>
-   <td><strong>Las firmas</strong> digitales no son compatibles, pero se agrega un nuevo campo de firma <strong>de</strong> garabatos para las firmas en papel como las firmas. Puede garabatear su firma en el formulario mediante el campo Firma <strong>de</strong> garabatos. La firma se guarda en el formulario como una imagen. Puede guardar la información de geolocalización en el campo Firma <strong>de</strong> garabatos.</td>
-   <td>Campo de firma disponible para firmas <strong>digitales</strong>.</td>
+   <td><strong>No se admiten </strong> las firmas digitales, pero se agrega un nuevo  <strong>campo de firma </strong> manuscrita para el papel como las firmas. Puede garabatear su firma en el formulario mediante el campo <strong>Firma de garabatos</strong>. La firma se guarda en el formulario como una imagen. Puede guardar la información de geolocalización en el campo <strong>Firma de garabatos</strong>.</td>
+   <td>Campo de firma disponible para <strong>firmas digitales</strong>.</td>
   </tr>
   <tr>
    <td>Combinación de datos</td>
@@ -49,7 +52,7 @@ La siguiente tabla especifica la compatibilidad con funciones de los formularios
   </tr>
   <tr>
    <td>Paginación<br /> </td>
-   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los formularios PDF. El tamaño de la página se calcula de forma dinámica. Si se elimina o se marca como oculto todo el contenido de una página en un formulario HTML5, la página en blanco se oculta y no se muestra un espacio vacío (espacio en blanco) entre las páginas situadas encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o las secuencias de comandos agregan contenido a una página, la longitud de la página se expande para dar cabida al contenido recién agregado. No se agregan páginas nuevas al formulario para dar cabida al contenido recién agregado. </p> <p><strong>Nota:</strong> Cuando se elimina o se marca como oculta todo el contenido de una página en un formulario HTML5, la página en blanco (espacio en blanco) permanece visible entre la primera y la segunda página, pero no entre otras páginas.</p> </td>
+   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los PDF forms. El tamaño de la página se calcula de forma dinámica. Si se elimina o se marca como oculto todo el contenido de una página en un formulario HTML5, la página en blanco se oculta y no se muestra un espacio vacío (espacio en blanco) entre las páginas situadas encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o las secuencias de comandos agregan contenido a una página, la longitud de la página se expande para dar cabida al contenido recién agregado. No se agregan páginas nuevas al formulario para dar cabida al contenido recién agregado. </p> <p><strong>Nota:</strong> Cuando se eliminan o se marcan ocultos todos los contenidos de una página en un formulario HTML5, la página en blanco (espacio en blanco) permanece visible entre la primera y la segunda página, pero no entre otras páginas.</p> </td>
    <td>La paginación en PDF depende del contenido de datos combinado o del contenido del usuario, y el recuento de páginas aumenta o reduce en función de ello.</td>
   </tr>
   <tr>
@@ -60,17 +63,17 @@ La siguiente tabla especifica la compatibilidad con funciones de los formularios
   <tr>
    <td>Widgets personalizados</td>
    <td>Se pueden personalizar utilidades para mejorar la experiencia del usuario en dispositivos móviles.<br /> </td>
-   <td>Todas las utilidades están bloqueadas y no se puede conectar ninguna utilidad personalizada.<br /> </td>
+   <td>Todos los widgets están bloqueados y no se puede conectar ningún widget personalizado.<br /> </td>
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Admite las construcciones de secuencias de comandos XFA más utilizadas. Para obtener más información sobre la lista de construcciones admitidas, consulte Compatibilidad con <a href="/help/forms/using/scripting-support.md">secuencias de comandos</a>.</td>
+   <td>Admite las construcciones de secuencias de comandos XFA más utilizadas. Para obtener más información sobre la lista de construcciones admitidas, consulte <a href="/help/forms/using/scripting-support.md">compatibilidad con secuencias de comandos</a>.</td>
    <td>Admite todas las construcciones de secuencias de comandos XFA.</td>
   </tr>
   <tr>
-   <td>API de secuencias de comandos de Acrobat </td>
-   <td>Los formularios HTML5 admiten las API más utilizadas. Para obtener más información, consulte Compatibilidad con <a href="/help/forms/using/scripting-support.md">secuencias de comandos</a>.</td>
-   <td>Si el archivo PDF se abre en Acrobat o Reader, también admite todas las API de secuencias de comandos que proporciona Acrobat.</td>
+   <td>API de Acrobat Script </td>
+   <td>Los formularios HTML5 admiten las API más utilizadas. Para obtener más información, consulte <a href="/help/forms/using/scripting-support.md">compatibilidad con secuencias de comandos</a>.</td>
+   <td>Si el archivo PDF se abre dentro de Acrobat o Reader, también admite todas las API de script que proporciona Acrobat.</td>
   </tr>
   <tr>
    <td>Compatibilidad con idiomas de derecha a izquierda </td>
