@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 72%
 
 ---
 
@@ -33,26 +36,26 @@ El contenido puede personalizarse específicamente para satisfacer las necesidad
 
 Los segmentos se definen en [Configurar segmentación](/help/sites-administering/campaign-segmentation.md). Se utilizan para dirigir el contenido real que visualiza un público objetivo concreto.
 
-## Terminología de segmentación {#segmentation-terminology}
+## Terminología de segmentación  {#segmentation-terminology}
 
 Al analizar la segmentación, se emplea la siguiente terminología:
 
-**Visitante** Un visitante es una persona que visita un sitio web. La visita de esa persona se suele iniciar desde una página de referencia y después se mueve a una o varias vistas de página en su propio sitio web. Se puede crear un perfil de comportamiento a partir de la información de la visita de esa persona.
+**** VisitanteUn visitante es una persona que visita un sitio Web. La visita de esa persona se suele iniciar desde una página de referencia y después se mueve a una o varias vistas de página en su propio sitio web. Se puede crear un perfil de comportamiento a partir de la información de la visita de esa persona.
 
-**Usuario** Un usuario es un visitante que se registra en el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan identificación adicional como, por ejemplo, una dirección de correo electrónico y el género, entre otros datos. La información adicional también se puede recopilar, incluyendo la actividad de la comunidad y los modelos de compra, entre otros datos. En función de la información proporcionada en el perfil, se puede crear un perfil demográfico.
+**** UsuarioUn usuario es un visitante que se registra en el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan identificación adicional como, por ejemplo, una dirección de correo electrónico y el género, entre otros datos. La información adicional también se puede recopilar, incluyendo la actividad de la comunidad y los modelos de compra, entre otros datos. En función de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 
-**Característica** Una característica es una característica o propiedad de un visitante que puede utilizarse para determinar la pertenencia a un segmento específico.
+**** CaracterísticaUna característica es una propiedad o característica de un visitante que puede utilizarse para determinar la pertenencia a un segmento específico.
 
-**Segmento** Un segmento es una colección de visitantes que comparten ciertas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
+**** SegmentoUn segmento es una colección de visitantes que comparten ciertas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 
-**Características** del comportamiento Las características del comportamiento son aquellas que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
+**Características del comportamientoLas** características del comportamiento son aquellas que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
 
 * El interés en el sitio web, incluyendo las páginas y los productos comprados.
 * Interés en el sitio web de referencia, incluyendo los términos de búsqueda utilizados o los anuncios en los que se ha hecho clic.
 * Interés en otros sitios; se determina con herramientas como Spyjax.
 * Fidelidad del visitante; duración de la visita, frecuencia de las visitas.
 
-**Características demográficas** Estas son características demográficas seleccionadas, entre ellas:
+**Características** demográficasEstas son características de población seleccionadas que incluyen:
 
 * Edad
 * Ingresos
@@ -67,17 +70,17 @@ Algunas características demográficas son difíciles de determinar sin registro
 
 Por ejemplo, la combinación de la dirección URL de referencia (como característica de comportamiento) con datos demográficos (adquiridos con herramientas como [Google Ad Planner](https://www.google.com/adplanner/)) permite que los propietarios del sitio obtengan características demográficas de los visitantes.
 
-**Subsegmento** Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
+**** SubsegmentoUn segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
 
-**Página** de teaser Una página de teaser está dirigida a una audiencia específica. Incluye contenido reutilizable que se puede emplear en el párrafo de teaser.
+**Página** de teaserUna página de teaser está dirigida a una audiencia específica. Incluye contenido reutilizable que se puede emplear en el párrafo de teaser.
 
-**Campaña** Una campaña es una colección de páginas de teaser y páginas de mercadotecnia por correo electrónico, como newsletters o invitaciones. Una campaña se suele llevar a cabo durante un período limitado y está precedida de otra campaña.
+**** CampañaUna campaña es una colección de páginas de teaser y páginas de mercadotecnia por correo electrónico, como newsletters o invitaciones. Una campaña se suele llevar a cabo durante un período limitado y está precedida de otra campaña.
 
-**Párrafo** de teaser Es un párrafo que extrae contenido de otra página en función de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
+**Párrafo** de teaserSe trata de un párrafo que extrae contenido de otra página en función de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
 
-**Lista** Se extrae una lista de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
+**** ListaUna lista se extrae de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
 
 >[!NOTE]
 >
->Please see [Segmentation](/help/sites-administering/campaign-segmentation.md) for further information on segments in AEM.
+>Consulte [Segmentación](/help/sites-administering/campaign-segmentation.md) para obtener más información sobre los segmentos en AEM.
 
