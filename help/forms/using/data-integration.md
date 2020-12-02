@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# [!DNL AEM Forms] Integración de datos {#aem-forms-data-integration}
+# [!DNL AEM Forms] Integración de datos  {#aem-forms-data-integration}
 
 ![](do-not-localize/data-integeration.png)
 
@@ -32,7 +32,7 @@ Si bien un sistema modular y distribuido tiene sus propios beneficios, el desaf�
 
 ![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] La integración de datos permite configurar y conectar distintas fuentes de datos con [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de las entidades comerciales y los servicios a través de las fuentes de datos conectadas. La representación unificada se denomina modelo de datos de formulario, extensión de esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos del modelo de datos. Un modelo de datos de formulario permite:
+[!DNL AEM Forms] La integración de datos permite configurar y conectar distintas fuentes de datos con  [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de las entidades comerciales y los servicios a través de las fuentes de datos conectadas. La representación unificada se denomina modelo de datos de formulario, extensión de esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos del modelo de datos. Un modelo de datos de formulario permite:
 
 * Acceda a objetos, propiedades y servicios del modelo de datos desde orígenes de datos conectados.
 * Creación de propiedades y objetos del modelo de datos personalizado
