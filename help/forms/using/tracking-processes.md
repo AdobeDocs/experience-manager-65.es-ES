@@ -11,11 +11,14 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
 
-# Seguimiento de procesos {#tracking-processes}
+# Procesos de seguimiento {#tracking-processes}
 
 En la página Seguimiento, puede buscar los procesos activos o completados que inició o en los que participó y realizar la vista de los detalles del proceso. Los detalles del proceso muestran las tareas, asignaciones y formularios que formaban parte del proceso. También puede inicio nuevos procesos mediante datos de formulario de un proceso que haya iniciado anteriormente.
 
@@ -37,9 +40,9 @@ Puede establecer qué columnas aparecen en los resultados de la búsqueda.
 ### Buscar una tarea con una plantilla de búsqueda {#search-for-a-task-using-a-search-template}
 
 1. En la página Seguimiento, en la lista de la izquierda, seleccione **Buscar plantillas** y seleccione una plantilla de búsqueda.
-1. Si la plantilla admite parámetros de búsqueda, para reducir los parámetros de búsqueda, rellene los campos de la plantilla y, a continuación, haga clic en **Buscar**. Muestra una lista de todas las tareas en las que participó, que coinciden con los criterios de búsqueda.
+1. Si la plantilla admite parámetros de búsqueda, para reducir los parámetros de búsqueda, rellene los campos de la plantilla y haga clic en **Buscar**. Muestra una lista de todas las tareas en las que participó, que coinciden con los criterios de búsqueda.
 
-## Detalles del proceso de Vista {#view-process-details}
+## Detalles del proceso de vista {#view-process-details}
 
 En la página Seguimiento, puede seleccionar un proceso y vista sus detalles. Puede buscar los procesos en función de varios parámetros para vista de los detalles de la tarea. También puede realizar la vista de la ficha Estado para procesos que tienen varios usuarios recibiendo tareas en paralelo, donde las herramientas para revisar documentos están habilitadas.
 
