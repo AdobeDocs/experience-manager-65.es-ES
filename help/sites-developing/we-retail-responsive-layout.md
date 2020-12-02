@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 7%
 
 ---
 
 
-# Intentando un diseño adaptable en We.Retail{#trying-out-responsive-layout-in-we-retail}
+# Intentando un diseño interactivo en We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseños proporciona un sistema de párrafos que le permite colocar componentes dentro de una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
+Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes dentro de una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. El componente se utiliza junto con el modo **Layout** en el editor de páginas, que le permite crear y editar el diseño interactivo en función del dispositivo.
 
 ## Intentándolo {#trying-it-out}
 
@@ -25,7 +28,7 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Cambie a **Vista previa** para ver la página tal como se representaría para un visitante del sitio web. Desplácese hacia abajo hasta el contenido del artículo *Aloha espirits en el norte de Noruega*.
+1. Cambie a **Previsualización** para ver la página tal como se representaría en un visitante del sitio Web. Desplácese hacia abajo hasta el contenido del artículo *Espíritus de Aloha en el norte de Noruega*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -45,4 +48,4 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
 ## Información adicional {#further-information}
 
-Para obtener más información, consulte el documento de creación [Diseño](/help/sites-authoring/responsive-layout.md) adaptable o el documento de administrador [Configuración del contenedor de diseño y el modo](/help/sites-administering/configuring-responsive-layout.md) de diseño para obtener detalles técnicos completos.
+Para obtener más información, consulte el documento de creación [Diseño adaptable](/help/sites-authoring/responsive-layout.md) o el documento del administrador [Configuración del Contenedor de diseño y el modo de diseño](/help/sites-administering/configuring-responsive-layout.md) para obtener información técnica completa.
