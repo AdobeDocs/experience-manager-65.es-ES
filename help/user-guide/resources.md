@@ -1,15 +1,18 @@
 ---
-title: Recursos adicionales de AEM 6.5
-seo-title: Recursos adicionales de AEM 6.5
-description: Notas de la versión, certificaciones y recursos adicionales de AEM 6.5
-seo-description: Notas de la versión, certificaciones y recursos adicionales de AEM 6.5
+title: AEM 6.5 Recursos adicionales
+seo-title: AEM 6.5 Recursos adicionales
+description: Notas de la versión de AEM 6.5, certificaciones y recursos adicionales
+seo-description: Notas de la versión de AEM 6.5, certificaciones y recursos adicionales
 translation-type: tm+mt
 source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 8%
 
 ---
 
 
-# Recursos adicionales de AEM 6.5 {#aem-64-additional-resources}
+# AEM 6.5 Recursos adicionales {#aem-64-additional-resources}
 
 ## Notas de la versión 6.5 de AEM {#aem-64-release-notes}
 
@@ -30,4 +33,4 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## Experience League {#experience-leauge}
 
-[Vea los recursos de aprendizaje para AEM en Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#dashboard)
+[Recursos de aprendizaje de vista para AEM en Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
