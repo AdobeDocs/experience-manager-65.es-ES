@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Inicio rápido de la API de Java del servicio de utilidades de PDF (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
+# INICIO rápido de la API de Java del servicio de utilidades de PDF (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
 Los siguientes Inicios rápidos están disponibles para el servicio Utilidades de PDF.
 
@@ -32,15 +32,15 @@ Los siguientes Inicios rápidos están disponibles para el servicio Utilidades d
 
 [Inicio rápido (modo SOAP): Anidación de documentos PDF](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->Los Inicios rápidos ubicados en Programación con formularios AEM se basan en el sistema operativo Forms Server. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+>Los Inicios rápidos ubicados en Programación con formularios AEM se basan en el sistema operativo Forms Server. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Inicio rápido (modo SOAP): Conversión de un documento PDF a un documento XDP mediante la API de Java {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
-El siguiente ejemplo de código convierte un documento PDF en un documento XDP. (Consulte [Conversión de Documentos PDF en Documentos](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents)XDP.
+El siguiente ejemplo de código convierte un documento PDF en un documento XDP. (Consulte [Conversión de Documentos PDF en Documentos XDP](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
 ```java
  /*
@@ -141,7 +141,7 @@ El siguiente ejemplo de código convierte un documento PDF en un documento XDP. 
 
 ## Inicio rápido (modo SOAP): Conversión de un documento XDP a un documento PDF mediante la API de Java {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código convierte un documento XDP en un documento PDF. (Consulte [Conversión de Documentos XDP en Documentos](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents)PDF).
+El siguiente ejemplo de código convierte un documento XDP en un documento PDF. (Consulte [Conversión de Documentos XDP en Documentos PDF](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents)).
 
 ```java
  /*
@@ -241,7 +241,7 @@ El siguiente ejemplo de código convierte un documento XDP en un documento PDF. 
 
 ## Inicio rápido (modo SOAP): Recuperación de propiedades de documento PDF mediante la API de Java {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-El siguiente ejemplo de código determina si el documento es un documento PDF y, si es así, la versión más antigua de Acrobat que puede leerlo. (Consulte [Recuperación de propiedades](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)de Documento PDF).
+El siguiente ejemplo de código determina si el documento es un documento PDF y, si es así, la versión más antigua de Acrobat que puede leerlo. (Consulte [Recuperación de propiedades de Documento PDF](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
 ```java
  /*
@@ -356,9 +356,9 @@ El siguiente ejemplo de código determina si el documento es un documento PDF y,
  
 ```
 
-## Inicio rápido (modo SOAP): Configuración del estilo de guardado de un documento PDF mediante la API de Java {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
+## Inicio rápido (modo SOAP): Configuración del estilo de guardado para un documento PDF mediante la API de Java {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-En el siguiente ejemplo de código se establece el modo de guardado para una visualización rápida de Web y, a continuación, se pasa el documento PDF al servicio de cifrado donde está cifrado. El documento PDF cifrado que se guarda para una visualización rápida de la Web se guarda como un archivo PDF denominado* FastWebViewLoan.pdf*. (Consulte [Configuración de los modos](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)de guardado de Documento PDF).
+En el siguiente ejemplo de código se establece el modo de guardado para una visualización rápida de Web y, a continuación, se pasa el documento PDF al servicio de cifrado donde está cifrado. El documento PDF cifrado que se guarda para una visualización rápida de la Web se guarda como un archivo PDF denominado* FastWebViewLoan.pdf*. (Consulte [Configuración de los modos de guardado de Documento PDF](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)).
 
 ```java
  /*
@@ -498,7 +498,7 @@ En el siguiente ejemplo de código se establece el modo de guardado para una vis
 
 ## Inicio rápido (modo SOAP): Conversión de un documento a un documento PDF/A-2b mediante la API de Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
 
-El siguiente ejemplo de código Java convierte un documento PDF llamado *Loan.pdf* en un documento PDF/A-2b que se guarda como un archivo PDF llamado *LoanArchive.pdf*. (Consulte [Conversión de Documentos a Documentos](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A).
+El siguiente ejemplo de código Java convierte un documento PDF denominado *Loan.pdf* en un documento PDF/A-2b que se guarda como archivo PDF denominado *LoanArchive.pdf*. (Consulte [Conversión de Documentos a Documentos PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)).
 
 ```java
 /*
@@ -584,9 +584,9 @@ public class CreatePDFADocument {
 }
 ```
 
-## Inicio rápido (modo SOAP): Anidación de documentos PDF {#quick-start-soap-mode-sanitizing-pdf-documents}
+## Inicio rápido (modo SOAP): Sanitización de documentos PDF {#quick-start-soap-mode-sanitizing-pdf-documents}
 
-El siguiente ejemplo de código Java saniza un documento PDF llamado *Loan.pdf*.
+En el siguiente ejemplo de código Java se sanea un documento PDF denominado *Loan.pdf*.
 
 ```java
 /*
