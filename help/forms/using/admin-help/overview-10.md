@@ -1,8 +1,8 @@
 ---
 title: Información general sobre Workspace
 seo-title: Información general sobre Workspace
-description: El espacio de trabajo permite a los usuarios iniciar, participar y realizar el seguimiento de procesos empresariales. Aprendamos más sobre el espacio de trabajo.
-seo-description: El espacio de trabajo permite a los usuarios iniciar, participar y realizar el seguimiento de procesos empresariales. Aprendamos más sobre el espacio de trabajo.
+description: El espacio de trabajo permite a los usuarios realizar el inicio, la participación y el seguimiento de los procesos empresariales. Aprendamos más sobre el espacio de trabajo.
+seo-description: El espacio de trabajo permite a los usuarios realizar el inicio, la participación y el seguimiento de los procesos empresariales. Aprendamos más sobre el espacio de trabajo.
 uuid: 25374641-a70b-485a-8d34-5d7b156c08e8
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 0%
 
 ---
 
 
 # Información general sobre Workspace {#overview-of-workspace}
 
-Workspace permite a los usuarios iniciar, participar y realizar el seguimiento de procesos empresariales.
+Workspace permite a los usuarios realizar el inicio, la participación y el seguimiento de los procesos empresariales.
 
 En las páginas Espacio de trabajo de la consola de administración, puede realizar las siguientes tareas:
 
@@ -27,7 +30,7 @@ En las páginas Espacio de trabajo de la consola de administración, puede reali
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
 >[!NOTE]
 >
