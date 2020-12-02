@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Requisitos previos {#prerequisite}
 
-Antes de crear una acción de barra de herramientas personalizada, familiarícese con [el uso de bibliotecas](/help/sites-developing/clientlibs.md) del lado del cliente y el [desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Antes de crear una acción de barra de herramientas personalizada, familiarícese con [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md) y [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Qué es una acción {#what-is-an-action-br}
 
@@ -36,24 +36,24 @@ Además del conjunto de acciones proporcionado de forma predeterminada, puede cr
 
 Para ilustrar la creación de una acción de barra de herramientas personalizada, los siguientes pasos le guían para crear un botón que permita a los usuarios finales revisar todos los campos del formulario adaptable antes de enviar un formulario rellenado.
 
-1. Todas las acciones predeterminadas admitidas por los formularios adaptables están presentes en la `/libs/fd/af/components/actions` carpeta. En CRXDE, copie el `fileattachmentlisting` nodo de `/libs/fd/af/components/actions/fileattachmentlisting` a `/apps/customaction`.
+1. Todas las acciones predeterminadas admitidas por los formularios adaptables están presentes en la carpeta `/libs/fd/af/components/actions`. En CRXDE, copie el nodo `fileattachmentlisting` de `/libs/fd/af/components/actions/fileattachmentlisting` a `/apps/customaction`.
 
-1. Después de copiar el nodo en la `apps/customaction` carpeta, cambie el nombre del nodo a `reviewbeforesubmit`. Además, cambie las propiedades `jcr:title` y `jcr:description` del nodo.
+1. Después de copiar el nodo a la carpeta `apps/customaction`, cambie el nombre del nodo a `reviewbeforesubmit`. Además, cambie las propiedades `jcr:title` y `jcr:description` del nodo.
 
-   La `jcr:title` propiedad contiene el nombre de la acción que se muestra en el cuadro de diálogo de la barra de herramientas. La `jcr:description` propiedad contiene más información que se muestra cuando un usuario sitúa el puntero sobre la acción.
+   La propiedad `jcr:title` contiene el nombre de la acción que se muestra en el cuadro de diálogo de la barra de herramientas. La propiedad `jcr:description` contiene más información que se muestra cuando un usuario sitúa el puntero sobre la acción.
 
    ![Jerarquía de nodos para la personalización de la barra de herramientas](assets/action3.png)
 
-1. Seleccione `cq:template` el nodo en el `reviewbeforesubmit` nodo. Asegúrese de que el valor de la `guideNodeClass` propiedad es `guideButton` y cambie `jcr:title` la propiedad en consecuencia.
-1. Cambie la propiedad type en el `cq:Template` nodo. En el ejemplo actual, cambie la propiedad type a button.
+1. Seleccione el nodo `cq:template` en el nodo `reviewbeforesubmit`. Asegúrese de que el valor de la propiedad `guideNodeClass` es `guideButton` y cambie la propiedad `jcr:title` en consecuencia.
+1. Cambie la propiedad type en el nodo `cq:Template`. En el ejemplo actual, cambie la propiedad type a button.
 
    El valor de tipo se agrega como una clase CSS en el HTML generado para el componente. Los usuarios pueden utilizar esa clase CSS para aplicar estilo a sus acciones. El estilo predeterminado para los dispositivos móviles y de escritorio se proporciona para los valores de botón, envío, restablecimiento y guardado.
 
 1. Seleccione la acción personalizada en el cuadro de diálogo de la barra de herramientas de edición de formularios adaptables. Se muestra un botón Revisar en la barra de herramientas del panel.
 
-   ![La acción personalizada está disponible en la barra de herramientas](assets/custom_action_available_in_toolbar.png) ![Mostrar la acción de la barra de herramientas creada a medida](assets/action7.png)
+   ![La acción personalizada está disponible en la ](assets/custom_action_available_in_toolbar.png) ![barra de herramientasVisualización de la acción de la barra de herramientas personalizada](assets/action7.png)
 
-1. Para proporcionar funcionalidad al botón Revisar, agregue código JavaScript y CSS y código del lado del servidor en el archivo init.jsp, presentes dentro del `reviewbeforesubmit` nodo.
+1. Para proporcionar funcionalidad al botón Revisar, agregue código JavaScript y CSS y código del lado del servidor en el archivo init.jsp, presente en el nodo `reviewbeforesubmit`.
 
    Añada el siguiente código en `init.jsp`.
 
@@ -113,7 +113,7 @@ Para ilustrar la creación de una acción de barra de herramientas personalizada
    </div><!-- /.modal -->
    ```
 
-   Añada el siguiente código en el `ReviewBeforeSubmit.js` archivo.
+   Añada el siguiente código en el archivo `ReviewBeforeSubmit.js`.
 
    ```javascript
    /*anonymous function to handle show of review before submit view */
@@ -148,7 +148,7 @@ Para ilustrar la creación de una acción de barra de herramientas personalizada
    });
    ```
 
-   Añada el siguiente código en el `ReviewBeforeSubmit.css` archivo.
+   Añada el siguiente código al archivo `ReviewBeforeSubmit.css`.
 
    ```css
    .modal-list .reviewlabel {
