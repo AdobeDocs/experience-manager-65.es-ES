@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 translation-type: tm+mt
 source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
@@ -23,12 +26,12 @@ Puede configurar manualmente el archivo FontManagerResources.properties para asi
 >
 >La configuración de fuentes de reserva también se aplica al servicio de ensamblador.
 
-1. Vaya al archivo adobe-livecycle-*`[appserver]`*.ear en el directorio *`[aem-forms root]`*/configurationManager/export, realice una copia de seguridad y desempaquete el original.
+1. Vaya al archivo adobe-livecycle-*`[appserver]`*.ear en el directorio *`[aem-forms root]`*/configurationManager/export, haga una copia de seguridad y desempaquete el original.
 1. Busque el archivo adobe-fontmanager.jar y desempaquéelo.
 1. Busque el archivo FontManagerResources.properties y ábralo en un editor de texto.
 1. Modifique los nombres y las ubicaciones de fuentes genéricas y de reserva según sea necesario y guarde el archivo.
 
-   Las entradas de fuente del archivo FontManagerResources.properties son relativas al directorio *`[aem-forms root]`*/fonts. Si especifica fuentes que no son fuentes de formularios AEM predeterminadas, debe instalar dichas fuentes en esta estructura de directorio (ya sea dentro de un directorio existente o en uno recién creado).
+   Las entradas de fuente del archivo FontManagerResources.properties son relativas al directorio *`[aem-forms root]`*/fonts. Si especifica fuentes que no son predeterminadas AEM fuentes de formularios, debe instalar dichas fuentes dentro de esta estructura de directorio (ya sea dentro de un directorio existente o en uno recién creado).
 
    >[!NOTE]
    >
@@ -43,5 +46,5 @@ Puede configurar manualmente el archivo FontManagerResources.properties para asi
 
 >[!NOTE]
 >
->No utilice Configuration Manager para volver a empaquetar el archivo adobe-livecycle-`[appserver]`.ear, ya que sobrescribirá las modificaciones con los valores predeterminados de los formularios de AEM.
+>No utilice Configuration Manager para volver a empaquetar el archivo adobe-livecycle-`[appserver]`.ear porque sobrescribirá las modificaciones con los valores predeterminados de los formularios AEM.
 
