@@ -48,7 +48,7 @@ La plantilla incluye los siguientes flujos de trabajo:
 
 ## Crear un proyecto de sesión fotográfica del producto {#create-a-product-photo-shoot-project}
 
-1. In the **Projects** console, tap/click **Create** and then choose **Create Project** from the list.
+1. En la consola **Proyectos**, toque o haga clic en **Crear** y, a continuación, elija **Crear proyecto** en la lista.
 
    ![chlimage_1-132](assets/chlimage_1-132a.png)
 
@@ -61,13 +61,13 @@ La plantilla incluye los siguientes flujos de trabajo:
    ![chlimage_1-134](assets/chlimage_1-134a.png)
 
 1. Toque o haga clic en **Crear**. Un mensaje de confirmación notifica que el proyecto se ha creado.
-1. Tap/click **Done** to return to the **Projects** console. Alternatively, tap/click **Open** to view the assets within the photoshoot project.
+1. Toque o haga clic **Listo** para volver a la consola **Proyectos**. O bien, toque o haga clic en **Abrir** para vista de los recursos dentro del proyecto de sesión fotográfica.
 
 ## Comenzar a trabajar en un proyecto de sesión fotográfica del producto {#starting-work-in-a-product-photo-shoot-project}
 
 Para iniciar una solicitud de sesión fotográfica, toque o haga clic en un proyecto y, a continuación, toque o haga clic en **Añadir trabajo** en la página de detalles del proyecto para iniciar un flujo de trabajo.
 
-![chlimage_1-135](assets/chlimage_1-135a.png)
+![chlimage_1-133](assets/chlimage_1-135a.png)
 
 Un proyecto de sesión fotográfica del producto incluye los siguientes flujos de trabajo listos para usarse:
 
@@ -102,7 +102,7 @@ Ambos flujos de trabajo incluyen pasos para vincular productos a los recursos ap
 * Iniciar un flujo de trabajo del proyecto: explica cómo iniciar una sesión fotográfica del producto.
 * Información sobre las tareas de flujo de trabajo: proporciona información sobre las tareas disponibles en el flujo de trabajo.
 
-## Seguimiento del progreso del proyecto {#tracking-project-progress}
+## Seguimiento del progreso del proyecto  {#tracking-project-progress}
 
 Para realizar un seguimiento del progreso de un proyecto, puede controlar las tareas activas/terminadas de un proyecto.
 
@@ -131,12 +131,12 @@ Esta tarea consiste en asignar pasos del flujo de trabajo a los usuarios según 
 
 Para configurar el flujo de trabajo de la **sesión fotográfica del producto**:
 
-1. Navigate to **Tools** > **Workflows**, and then tap the **Models** tile to open the **Workflow Models** page.
-1. Select the **Product Photo Shoot** workflow, and the tap the **Edit** icon from the toolbar to open it in edit mode.
+1. Vaya a **Herramientas** > **Flujos de trabajo** y, a continuación, toque el mosaico **Modelos** para abrir la página **Modelos de flujo de trabajo**.
+1. Seleccione el flujo de trabajo **Captura de fotos del producto** y toque el icono **Editar** en la barra de herramientas para abrirlo en modo de edición.
 
    ![chlimage_1-138](assets/chlimage_1-138a.png)
 
-1. In the **Product Photo Shoot Workflow** page, open a project task. Por ejemplo, abra la tarea **Cargar lista de tomas**.
+1. En la página **Flujo de trabajo de sesión fotográfica del producto**, abra una tarea del proyecto. Por ejemplo, abra la tarea **Cargar lista de tomas**.
 
    ![chlimage_1-139](assets/chlimage_1-139a.png)
 
@@ -157,14 +157,14 @@ Para configurar el flujo de trabajo de la **sesión fotográfica del producto**:
    * Revisión de sesión fotográfica
    * Mover a producción
 
-   Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
+   Realice un procedimiento similar para configurar las tareas en el flujo de trabajo **Product Photo Shoot (Commerce Integration)**.
 
 En esta sección se describe cómo integrar la administración de la información del producto en su proyecto creativo.
 
-## Iniciar un flujo de trabajo del proyecto {#starting-a-project-workflow}
+## Iniciar un flujo de trabajo del proyecto  {#starting-a-project-workflow}
 
-1. Navigate to a Product Photo Shoot project, and tap/click the **Add Work** icon on the **Workflows** card.
-1. Seleccione la tarjeta del flujo de trabajo de la **sesión fotográfica del producto (integración del comercio)** para iniciar el flujo de trabajo de la sesión fotográfica del producto (integración del comercio). If the product information isn&#39;t available under /etc/commerce, select the **Product Photo Shoot** workflow and start the Product Photo Shoot workflow.
+1. Vaya a un proyecto de sesión fotográfica de producto y toque o haga clic en el icono **Añadir trabajo** de la tarjeta **Flujos de trabajo**.
+1. Seleccione la tarjeta del flujo de trabajo de la **sesión fotográfica del producto (integración del comercio)** para iniciar el flujo de trabajo de la sesión fotográfica del producto (integración del comercio). Si la información del producto no está disponible en /etc/commerce, seleccione el flujo de trabajo **Captura de fotos del producto** y inicio el flujo de trabajo de sesión fotográfica del producto.
 
    ![chlimage_1-140](assets/chlimage_1-140a.png)
 
@@ -181,15 +181,15 @@ En esta sección se describe cómo integrar la administración de la informació
 
 El flujo de trabajo de la sesión fotográfica incluye varias tareas. Cada una de ellas se asigna a un grupo de usuarios en función de la configuración definida para la tarea.
 
-#### Tarea Crear lista de tomas {#create-shot-list-task}
+#### Tarea Crear lista de tomas  {#create-shot-list-task}
 
 La tarea **Crear lista de tomas** permite al propietario del proyecto seleccionar los productos para los que se requieren imágenes. De acuerdo con la opción seleccionada por el usuario, se genera un archivo CSV que contiene la información del producto básica.
 
-1. In the project folder, tap/click the ellipses in the [Tasks Card](#tracking-project-progress) to view the task item in the workflow.
+1. En la carpeta del proyecto, toque o haga clic en las elipses de la [Tarjeta de Tareas](#tracking-project-progress) para vista del elemento de tarea en el flujo de trabajo.
 
    ![chlimage_1-143](assets/chlimage_1-143a.png)
 
-1. Select the **Create Shot List** task, and then tap/click the **Open** icon from the toolbar.
+1. Seleccione la tarea **Crear Lista de toma** y, a continuación, toque o haga clic en el icono **Abrir** de la barra de herramientas.
 
    ![chlimage_1-144](assets/chlimage_1-144a.png)
 
@@ -201,8 +201,8 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
 
    ![chlimage_1-146](assets/chlimage_1-146a.png)
 
-1. Tap/click the **Add To Shotlist** icon to create a CSV file that contains a list of all such products. Un mensaje confirma que se ha creado la lista de tomas para los productos seleccionados. Haga clic en **Cerrar** para completar el flujo de trabajo.
-1. Después de crear una lista de tomas, se muestra el vínculo **Ver lista de tomas**. To add more products to the shot list, tap/click **Add to Shot List**. En este caso, los datos se añaden a la lista de tomas creada inicialmente.
+1. Toque o haga clic en el icono **Añadir a lista de tomas** para crear un archivo CSV que contenga una lista de todos esos productos. Un mensaje confirma que se ha creado la lista de tomas para los productos seleccionados. Haga clic en **Cerrar** para completar el flujo de trabajo.
+1. Después de crear una lista de tomas, se muestra el vínculo **Ver lista de tomas**. Para agregar más productos a la lista de toma, toque/haga clic **Añadir a la Lista de toma**. En este caso, los datos se añaden a la lista de tomas creada inicialmente.
 
    ![chlimage_1-147](assets/chlimage_1-147a.png)
 
@@ -210,13 +210,13 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
 
    ![chlimage_1-148](assets/chlimage_1-148a.png)
 
-   Para editar los datos existentes o añadir datos nuevos, toque o haga clic en **Editar** en la barra de herramientas. Only the **Product **and **Description** fields are editable.
+   Para editar los datos existentes o añadir datos nuevos, toque o haga clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product **and **Description**.
 
    ![chlimage_1-149](assets/chlimage_1-149a.png)
 
-   After you update the file, tap/click **Save** on toolbar to save the file.
+   Después de actualizar el archivo, toque o haga clic en **Guardar** en la barra de herramientas para guardar el archivo.
 
-1. After adding the products, tap/click the **Complete** icon on the **Create Shot List **task details page to mark the task as completed. Puede añadir un comentario opcional.
+1. Después de agregar los productos, toque o haga clic en el icono **Completar** en la página **Crear Lista de toma **Detalles de tarea para marcar la tarea como completada. Puede añadir un comentario opcional.
 
    La finalización de la tarea presenta los siguientes cambios en el proyecto:
 
@@ -226,7 +226,7 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
 
    Cargar lista de tomas es la primera tarea del flujo de trabajo de la sesión fotográfica del producto (sin integración del comercio). Toque o haga clic en **Cargar lista de tomas** para cargar un archivo **shotlist.csv**. El archivo CSV debe contener el identificador del producto. Los demás campos son opcionales. Puede utilizarlos para asignar recursos a los productos.
 
-### Tarea Cargar lista de tomas {#upload-shot-list-task}
+### Tarea Cargar lista de tomas  {#upload-shot-list-task}
 
 Esta tarea forma parte del flujo de trabajo de la sesión fotográfica del producto. Esta tarea se realiza si la información del producto no está disponible en AEM. En este caso, se carga una lista de productos en un archivo CSV para el que se necesitan recursos de imagen. En función de los detalles del archivo CSV, los recursos de imagen se asignan a los productos.
 
@@ -238,52 +238,52 @@ Un producto puede pertenecer a una categoría determinada. La categoría del pro
 
 >[!NOTE]
 >
->The name of images to be uploaded should start with &quot;**&lt;ProductId>_&quot;** where Product ID is referenced from the **Id** field in the *shotlist.csv* file. For example, for a product in the shot list with **Id 397122**, you can upload files with names **397122_highcontrast.jpg**, **397122_lowlight.png**, and so on.
+>El nombre de las imágenes que se van a cargar debe tener el inicio &quot;**&lt;ProductId>_&quot;** donde se hace referencia al ID de producto desde el campo **Id** del archivo *shotlist.csv*. Por ejemplo, para un producto de la lista de toma con **Id. 397122**, puede cargar archivos con nombres **397122_high-Contraste.jpg**, **397122_lowlight.png**, etc.
 
-1. In the project folder, tap/click the ellipses in the [Tasks Card](#tracking-project-progress) to view the list of tasks in the workflow.
-1. Select the **Upload Shot List** task, and then tap/click the **Open** icon from the toolbar.
+1. En la carpeta del proyecto, toque o haga clic en las elipses de la [Tarjeta de Tareas](#tracking-project-progress) para vista de la lista de tareas en el flujo de trabajo.
+1. Seleccione la tarea **Cargar Lista de toma** y, a continuación, toque o haga clic en el icono **Abrir** de la barra de herramientas.
 
    ![chlimage_1-150](assets/chlimage_1-150a.png)
 
-1. Review the task details and then tap/click the **Upload Shot List** button.
+1. Revise los detalles de la tarea y, a continuación, toque o haga clic en el botón **Cargar Lista de toma**.
 
    ![chlimage_1-151](assets/chlimage_1-151a.png)
 
-1. Tap/click the **Upload Shot List** button to upload the CSV file with filename shotlist.csv. El flujo de trabajo reconoce este archivo como origen que se utilizará para extraer los datos del producto para la tarea siguiente.
-1. Cargue un archivo CSV que contenga la información del producto en el formato adecuado. The **View Uploaded Assets** link appears under the card after the CSV file is uploaded.
+1. Toque o haga clic en el botón **Cargar Lista de toma** para cargar el archivo CSV con el nombre de archivo shotlist.csv. El flujo de trabajo reconoce este archivo como origen que se utilizará para extraer los datos del producto para la tarea siguiente.
+1. Cargue un archivo CSV que contenga la información del producto en el formato adecuado. El vínculo **Vista de recursos cargados** aparece debajo de la tarjeta después de cargar el archivo CSV.
 
    ![chlimage_1-152](assets/chlimage_1-152a.png)
 
-   Click the **Complete** icon to complete the task.
+   Haga clic en el icono **Completar** para completar la tarea.
 
-1. Tap/click the **Complete** icon to complete the task.
+1. Toque o haga clic en el icono **Completar** para completar la tarea.
 
 ### Tarea Cargar sesión fotográfica {#upload-photo-shoot-task}
 
-If you are an Editor, you can upload shots for the products listed in the **shotlist.csv** file that is created or uploaded in the previous task.
+Si es un editor, puede cargar las tomas de los productos enumerados en el archivo **shotlist.csv** que se crea o carga en la tarea anterior.
 
-The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot;** where Product ID is referenced from the **Id** field in the **shotlist.csv** file. Por ejemplo, para un producto con un **identificador 397122** en la lista de tomas, puede cargar archivos con nombres **397122_highcontrast.jpg**, **397122_lowlight.png**, etcétera.
+El nombre de las imágenes que se van a cargar debe comenzar por **&quot;&lt;productId>_&quot;** donde se hace referencia al ID de producto desde el campo **Id** del archivo **shotlist.csv**. Por ejemplo, para un producto con un **identificador 397122** en la lista de tomas, puede cargar archivos con nombres **397122_highcontrast.jpg**, **397122_lowlight.png**, etcétera.
 
 Puede cargar las imágenes directamente o cargar un archivo ZIP que contenga las imágenes. De acuerdo con sus nombres, las imágenes se encuentran en carpetas de productos respectivas dentro de la carpeta **Sesión fotográfica**.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Upload Photo Shoot** task, and then tap/click the **Open** icon from the toolbar.
+1. En la carpeta del proyecto, toque o haga clic en las elipses de la [tarjeta de Tarea](#tracking-project-progress) para vista del elemento de tarea en el flujo de trabajo.
+1. Seleccione la tarea **Cargar sesión fotográfica** y, a continuación, toque o haga clic en el icono **Abrir** de la barra de herramientas.
 
    ![chlimage_1-153](assets/chlimage_1-153a.png)
 
-1. Tap/click **Upload Photo Shoot** and upload the photo shoot images.
+1. Toque o haga clic **Cargar sesión fotográfica** y cargue las imágenes de la sesión fotográfica.
 1. Toque o haga clic en el icono **Completar** de la barra de herramientas para completar la tarea.
 
-### Tarea Retocar sesión fotográfica {#retouch-photo-shoot-task}
+### Tarea Retocar sesión fotográfica  {#retouch-photo-shoot-task}
 
 Si tiene derechos de edición, realice la tarea Retocar sesión fotográfica para editar las imágenes cargadas en la carpeta de la sesión fotográfica.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Retouch Photo Shoot** task, and then tap/click the **Open** icon from the toolbar.
+1. En la carpeta del proyecto, toque o haga clic en las elipses de la [tarjeta de Tarea](#tracking-project-progress) para vista del elemento de tarea en el flujo de trabajo.
+1. Seleccione la tarea **Retocar sesión fotográfica** y, a continuación, toque o haga clic en el icono **Abrir** de la barra de herramientas.
 
    ![chlimage_1-154](assets/chlimage_1-154a.png)
 
-1. Tap/click the **View Uploaded Assets** link in the **Retouch Photo Shoot** page to browse the uploaded images.
+1. Toque o haga clic en el vínculo **Vista de recursos cargados** en la página **Retocar sesión fotográfica** para examinar las imágenes cargadas.
 
    ![chlimage_1-155](assets/chlimage_1-155a.png)
 
@@ -297,12 +297,12 @@ Si tiene derechos de edición, realice la tarea Retocar sesión fotográfica par
 
 En esta tarea, las imágenes de la sesión fotográfica cargadas por un fotógrafo se revisan y se marcan como aprobadas para usarse.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Review &amp; Approve** task, and then tap/click the **Open** icon from the toolbar.
+1. En la carpeta del proyecto, toque o haga clic en las elipses de la [tarjeta de Tarea](#tracking-project-progress) para vista del elemento de tarea en el flujo de trabajo.
+1. Seleccione la tarea **Revisar y aprobar** y, a continuación, toque o haga clic en el icono **Abrir** de la barra de herramientas.
 
    ![chlimage_1-157](assets/chlimage_1-157a.png)
 
-1. In the **Review &amp; Approve** page, assign the review task to role, for example Reviewers, and then tap/click **Review **to start reviewing the uploaded product images.
+1. En la página **Revisar y aprobar**, asigne la tarea de revisión a la función, por ejemplo los revisores, y luego toque o haga clic en **Revisar **al inicio para revisar las imágenes del producto cargadas.
 
    ![chlimage_1-158](assets/chlimage_1-158a.png)
 
@@ -326,12 +326,12 @@ Creative Project asocia los recursos aprobados al producto utilizado como refere
 >[!NOTE]
 En el flujo de trabajo de la sesión fotográfica del producto (sin integración del comercio), las imágenes aprobadas no están asociadas a los productos.
 
-### Mover a la tarea de producción {#move-to-production-task}
+### Mover a la tarea de producción  {#move-to-production-task}
 
 Esta tarea mueve los recursos aprobados a la carpeta lista para la producción para que estén disponibles para usarse.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Move to Production** task, and then tap/click the **Open** icon from the toolbar.
+1. En la carpeta del proyecto, toque o haga clic en las elipses de la [tarjeta de Tarea](#tracking-project-progress) para vista del elemento de tarea en el flujo de trabajo.
+1. Seleccione la tarea **Mover a producción** y, a continuación, toque o haga clic en el icono **Abrir** de la barra de herramientas.
 
    ![chlimage_1-160](assets/chlimage_1-160a.png)
 
@@ -339,31 +339,31 @@ Esta tarea mueve los recursos aprobados a la carpeta lista para la producción p
 
    ![chlimage_1-161](assets/chlimage_1-161a.png)
 
-1. Enter the path of the production-ready folder in the **Move To** field.
+1. Introduzca la ruta de la carpeta lista para producción en el campo **Mover a**.
 
    ![chlimage_1-162](assets/chlimage_1-162a.png)
 
-   Tap/click **Move to Production**. Cierre el mensaje de confirmación. Los recursos se desplazan a la ruta de acceso mencionada y se crea automáticamente un conjunto de giros para los recursos aprobados para cada producto de acuerdo con la jerarquía de carpetas.
+   Toque o haga clic en **Mover a producción**. Cierre el mensaje de confirmación. Los recursos se desplazan a la ruta de acceso mencionada y se crea automáticamente un conjunto de giros para los recursos aprobados para cada producto de acuerdo con la jerarquía de carpetas.
 
 1. Toque o haga clic en el icono **Completar** de la barra de herramientas. El flujo de trabajo termina cuando el último paso se marca como completado.
 
-## Visualización de los metadatos de recursos DAM {#viewing-dam-asset-metadata}
+## Visualización de los metadatos de recursos DAM  {#viewing-dam-asset-metadata}
 
 Una vez los apruebe, los recursos se vinculan a los productos correspondientes. La [página de propiedades](/help/assets/manage-assets.md#editing-properties) de los recursos aprobados ahora tiene una pestaña **Datos de producción (información del producto vinculada)** adicional. En esta pestaña se muestra la información del producto, el número de SKU y otros datos relacionados con el producto que vinculan el recurso. Toque o haga clic en el icono **Editar** para actualizar las propiedades de un recurso. La información relacionada con el producto es de solo lectura.
 
 Toque o haga clic en el vínculo que aparece para desplazarse a la página correspondiente de información del producto en la consola de productos a la que el recurso está asociado.
 
-## Personalizar los flujos de trabajo de la sesión fotográfica del proyecto {#customizing-the-project-photo-shoot-workflows}
+## Personalizar los flujos de trabajo de la sesión fotográfica del proyecto  {#customizing-the-project-photo-shoot-workflows}
 
 Puede personalizar los flujos de trabajo de la sesión fotográfica del proyecto en función de los requisitos. Esta es una tarea opcional, basada en las funciones, que se lleva a cabo para establecer el valor de una variable dentro del proyecto. Posteriormente, se puede utilizar el valor configurado para tomar una decisión.
 
-1. Click/tap the AEM logo, and then navigate to **Tools** > **Workflow** > **Models** to open the Workflow Models page.
+1. Toque o haga clic en el logotipo de AEM y, a continuación, vaya a **Herramientas** > **Flujo de trabajo** > **Modelos** para abrir la página Modelos de flujo de trabajo.
 1. Seleccione el flujo de trabajo de la **sesión fotográfica del producto (integración del comercio)** o el flujo de trabajo de la **sesión fotográfica del producto** y toque o haga clic en **Editar** en la barra de herramientas para abrir el flujo de trabajo en modo de edición.
 1. Abra las tareas **Proyectos** en la barra de tareas y arrastre el paso **Crear tarea de proyecto basada en funciones** al flujo de trabajo.
 
    ![chlimage_1-163](assets/chlimage_1-163a.png)
 
-1. Open the **Role Based Task** step.
+1. Abra el paso **Tarea basada en roles**.
 1. En la pestaña **Tarea**, especifique un nombrepara la tarea que se mostrará en la lista **Tarea**. También puede asignar la tarea a una función, establecer la prioridad predeterminada, proporcionar una descripción y especificar una hora en la que vence la tarea.
 
    ![chlimage_1-164](assets/chlimage_1-164a.png)
@@ -372,12 +372,12 @@ Puede personalizar los flujos de trabajo de la sesión fotográfica del proyecto
 
    ![chlimage_1-165](assets/chlimage_1-165a.png)
 
-1. After adding the options click **OK** to add the changes to the step.
+1. Después de agregar las opciones, haga clic en **Aceptar** para agregar los cambios al paso.
 
    >[!NOTE]
-   Tapping/clicking **OK** does not save the changes in the workflow. To save changes in the workflow, tap/click **Save**.
+   Al tocar o hacer clic **Aceptar** no se guardan los cambios en el flujo de trabajo. Para guardar los cambios en el flujo de trabajo, toque o haga clic en **Guardar**.
 
-1. Open the **Workflow** tasks from side kick, and add a **Goto** task.
+1. Abra las tareas **Workflow** desde la barra lateral y agregue una tarea **Goto**.
 1. Abra la tarea **Ir a** y toque o haga clic en la pestaña **Proceso**.
 1. Especifique el código siguiente en el cuadro **Script**:
 
@@ -402,17 +402,17 @@ Puede personalizar los flujos de trabajo de la sesión fotográfica del proyecto
 ```
 
 >[!NOTE]
-For details around scripting in workflow steps, see [Defining a Rule for an OR Split](/help/sites-developing/workflows-models.md).
+Para obtener más información sobre las secuencias de comandos en los pasos del flujo de trabajo, consulte [Definición de una regla para una división OR](/help/sites-developing/workflows-models.md).
 
 ![chlimage_1-166](assets/chlimage_1-166a.png)
 
-1. Tap/click **OK**.
+1. Toque o haga clic **Aceptar**.
 
-1. Tap/click **Save** to save the workflow.
+1. Toque o haga clic en **Guardar** para guardar el flujo de trabajo.
 
    ![chlimage_1-167](assets/chlimage_1-167a.png)
 
-1. A new Project owner acceptance task now comes up after the [Move to Production task](#move-to-production-task) is completed and is assigned to the owner.
+1. Una nueva tarea de aceptación del propietario del proyecto ahora aparece después de que [Mover a la tarea de producción](#move-to-production-task) se complete y se asigne al propietario.
 
    El usuario con la función de propietario puede completar la tarea y seleccionar una acción (de la lista de acciones añadidas a las opciones de configuración del paso del flujo de trabajo) en la lista de la ventana emergente de comentarios.
 
@@ -421,5 +421,5 @@ For details around scripting in workflow steps, see [Defining a Rule for an OR S
    Seleccione la opción adecuada y haga clic en **Completar** para ejecutar el **paso Ir a** en el flujo de trabajo.
 
 >[!NOTE]
-When you start a server, the Project task list servlet caches the mappings between task types and URLs defined under `/libs/cq/core/content/projects/tasktypes`. You can then perform the usual overlay and add custom task types by placing them under `/apps/cq/core/content/projects/tasktypes`.
+Cuando se inicio un servidor, el servlet de lista de tarea del proyecto almacena en caché las asignaciones entre tipos de tarea y direcciones URL definidas en `/libs/cq/core/content/projects/tasktypes`. A continuación, puede realizar la superposición habitual y agregar tipos de tarea personalizados colocándolos en `/apps/cq/core/content/projects/tasktypes`.
 
