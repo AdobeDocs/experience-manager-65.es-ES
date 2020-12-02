@@ -1,6 +1,6 @@
 ---
-title: Actualización a AEM 6.5 Forms
-seo-title: Actualización a AEM 6.5 Forms
+title: Actualizar a AEM 6.5 Forms
+seo-title: Actualizar a AEM 6.5 Forms
 description: Puede realizar una actualización directa de AEM 6.3 Forms y AEM 6.4 Forms a AEM 6.5 Forms.
 seo-description: Puede realizar una actualización directa de AEM 6.3 Forms y AEM 6.4 Forms a AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Actualización a AEM 6.5 Forms{#upgrade-to-aem-forms}
+# Actualizar a AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-AEM 6.5 Forms incluye varias funciones y mejoras nuevas que optimizan la creación, la gestión y la experiencia del usuario con los formularios y las correspondencias. Para obtener más información sobre las nuevas funciones y mejoras de AEM 6.5 Forms, consulte el documento [de resumen de](../../forms/using/whats-new.md)nuevas funciones.
+AEM 6.5 Forms incluye varias funciones y mejoras nuevas que optimizan la creación, administración y experiencia del usuario con formularios y correspondencia. Para obtener más información sobre todas las nuevas funciones y mejoras de AEM 6.5 Forms, consulte [documento de resumen de nuevas funciones](../../forms/using/whats-new.md).
 
-Puede actualizar la instalación existente de LiveCycle o AEM Forms para obtener las nuevas funciones y mejoras ofrecidas en los formularios de AEM 6.5 y mantener intactos los datos, procesos y recursos existentes. Al actualizar, también se conservan los metadatos y el estado de los procesos. Puede elegir una ruta de actualización para comenzar con la actualización.
+Puede actualizar la instalación existente de LiveCycle o AEM Forms para obtener nuevas funciones y mejoras ofrecidas en AEM 6.5 Forms, manteniendo intactos los datos, procesos y recursos existentes. Al actualizar, también se conservan los metadatos y el estado de los procesos. Puede elegir una ruta de actualización para comenzar con la actualización.
 
-El diagrama siguiente muestra las rutas de actualización disponibles para los AEM Forms en OSGi:
+El diagrama siguiente muestra las rutas de actualización disponibles para AEM Forms en OSGi:
 
 ![](do-not-localize/osgi-upgrade-path.png)
 
