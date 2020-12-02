@@ -75,7 +75,7 @@ Puede agregar una descripción de la tabla para explicar cómo se organiza la in
 
 1. Seleccione la tabla y toque ![cmppr](assets/cmppr.png) para ver sus propiedades en la barra lateral.
 1. Especifique un resumen en la ficha Accesibilidad.
-1. Haga clic en **Finalizado**.
+1. Haga clic en **Listo**.
 
 ### Ordenar columnas en una tabla {#sortcolumnstable}
 
@@ -91,13 +91,13 @@ Para aplicar el orden en las columnas de la tabla, las celdas de la columna de l
 
 Para habilitar la clasificación:
 
-1. Seleccione la tabla y toque ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el navegador de **contenido** de la barra de tareas de la comunicación interactiva.
-1. Seleccione **Activar ordenación**.
+1. Seleccione la tabla y toque ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el navegador **Contenido** en la barra de tareas de la Comunicación interactiva.
+1. Seleccione **Habilitar ordenación**.
 1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, en los encabezados de columna representan que la clasificación se ha activado.
 
    ![Habilitar ordenación](assets/enable_sorting_new.png)
 
-1. Cambie al modo de **Previsualización** para vista de la salida. La tabla se ordena automáticamente en función de la primera columna de la tabla.
+1. Cambie al modo **Previsualización** para vista de la salida. La tabla se ordena automáticamente en función de la primera columna de la tabla.
 1. Haga clic en el encabezado de columna para ordenar los valores en función de la columna.
 
    Un encabezado de columna con una flecha hacia arriba representa que la tabla se ordena en función de esa columna. Además, los valores de la columna se muestran en orden ascendente.
@@ -106,7 +106,7 @@ Para habilitar la clasificación:
 
    Del mismo modo, un encabezado de columna con una flecha hacia abajo representa que los valores de la columna se muestran en orden descendente.
 
-   También puede realizar cambios en la tabla en el modo de **Previsualización** y volver a hacer clic en el encabezado de la columna para ordenar los valores de la columna.
+   También puede realizar cambios en la tabla en el modo **Previsualización** y volver a hacer clic en el encabezado de columna para ordenar los valores de columna.
 
 ## Configurar estilo de tabla {#configure}
 
@@ -114,7 +114,7 @@ Puede definir el estilo de una tabla mediante el modo Estilo de la barra de herr
 
 1. En la barra de herramientas de la página, antes de la Previsualización, toque ![lienzo-desplegable](assets/canvas-drop-down.png) > **Estilo**.
 
-1. En la barra lateral, seleccione la tabla y toque el botón ![Editar](assets/edit-button.png).
+1. En la barra lateral, seleccione la tabla y toque el botón de edición ![botón de edición](assets/edit-button.png).
 Puede ver las propiedades de estilo en la barra lateral.
 
 ![Propiedades de estilo de una tabla](assets/style-table.png)
@@ -123,15 +123,15 @@ Puede ver las propiedades de estilo en la barra lateral.
 >
 >Puede cambiar el tema de color de las filas de encabezado y de trabajo cambiando los valores de las variables LESS. Para obtener más información, consulte [Temáticas en AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
-## Añadir o eliminar una fila dinámicamente {#add-or-delete-a-row-dynamically}
+## Añadir o eliminar dinámicamente una fila {#add-or-delete-a-row-dynamically}
 
 Las tablas proporcionan compatibilidad inmediata para agregar o eliminar filas de forma dinámica durante la ejecución.
 
 1. Seleccione una fila de tabla y toque ![cmppr](assets/cmppr.png).
 1. En la ficha Ajustes de repetición, especifique los recuentos mínimo y máximo para limitar el número de filas de la tabla.
-1. Haga clic en **Finalizado**.
+1. Haga clic en **Listo**.
 
-En tiempo de ejecución, verá **+** y *-* para agregar o eliminar una fila.
+En tiempo de ejecución, verá los botones **+** y *-* para agregar o eliminar una fila.
 
 ![add-delete-rows-dinámicamente](assets/add-delete-rows-dynamically.png)
 
@@ -139,14 +139,14 @@ En tiempo de ejecución, verá **+** y *-* para agregar o eliminar una fila.
 >
 >No se admite añadir o eliminar una fila dinámicamente en los encabezados en el diseño de tablas para móviles a la izquierda.
 
-## Expresiones de una tabla {#expressions-in-a-table}
+## Expresiones en una tabla {#expressions-in-a-table}
 
 Las tablas de formularios adaptables permiten escribir expresiones en JavaScript para inducir comportamientos, como mostrar u ocultar una tabla o una fila, agregar todos los números y mostrar el total en una celda, habilitar o deshabilitar una celda, validar la entrada del usuario, etc. Estas expresiones utilizan API de modelos de secuencias de comandos de formularios adaptables.
 
 Mientras que las tablas y las filas solo admiten expresiones de visibilidad para controlar su visibilidad en función del valor devuelto por una expresión, las celdas admiten las siguientes expresiones:
 
 * **Secuencia de comandos de inicialización:** para realizar una acción al inicializar un campo.
-* **Secuencia de comandos de confirmación de valor:** para cambiar los componentes de un formulario después de cambiar el valor de un campo.
+* **Secuencia de comandos de confirmación de valores:** para cambiar los componentes de un formulario después de cambiar el valor de un campo.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Mientras que las tablas y las filas solo admiten expresiones de visibilidad para
 
 La expresión de visibilidad de una tabla o fila se puede definir en la ficha Propiedades del panel del cuadro de diálogo del componente Editar correspondiente. Las expresiones de una celda se pueden definir en la ficha Secuencia de comandos del cuadro de diálogo Editar componente.
 
-Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adaptables.
+Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Diseños móviles {#mobile-layouts}
 
@@ -167,7 +167,7 @@ Las tablas de formularios adaptables proporcionan una experiencia incomparable p
 
 Puede configurar un diseño móvil para una tabla desde la ficha Estilo del cuadro de diálogo Editar componente para una tabla.
 
-### Headers on left {#headers-on-left}
+### Encabezados a la izquierda {#headers-on-left}
 
 En el diseño Encabezados de la izquierda, el encabezado de la tabla se transpone a la izquierda y solo aparece una celda contra un encabezado. Cada fila de este diseño aparece como una sección distinta. Las siguientes imágenes comparan una tabla de un escritorio con la de un dispositivo móvil.
 
@@ -209,9 +209,9 @@ En este ejemplo, la propiedad Nombre de elemento para:
 
 * la fila es **Fila1**
 * la celda body en Fecha de transacción es **tableItem1**
-* la celda body en Descripción es **tableItem2**
-* la celda de cuerpo en Tipo de transacción es **tipo**
-* la celda body debajo de Importe en USD es **tableItem3**
+* la celda de cuerpo bajo Descripción es **tableItem2**
+* la celda de cuerpo del tipo Transaction es **type**
+* la celda de cuerpo debajo de Amount en USD es **tableItem3**
 
 El archivo XML que contiene datos con el siguiente formato:
 
@@ -271,9 +271,9 @@ El archivo XML que contiene datos con el siguiente formato:
 </afData>
 ```
 
-En el XML de ejemplo, los datos de una fila se definen mediante las `<Row1>` etiquetas, que es el nombre del elemento de la fila de la tabla. Dentro de la `<Row1>` etiqueta, los datos de cada celda se definen dentro de la etiqueta para el nombre del elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`y `<type>`.
+En el XML de ejemplo, los datos de una fila se definen mediante las etiquetas `<Row1>`, que es el nombre del elemento de la fila de la tabla. Dentro de la etiqueta `<Row1>`, los datos de cada celda se definen dentro de la etiqueta para su nombre de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>` y `<type>`.
 
-Para combinar estos datos con la tabla en tiempo de ejecución, es necesario que señalemos el formulario adaptable que contiene la tabla a la ubicación XML absoluta con wcmmode desactivado. Por ejemplo, si el formulario adaptable se encuentra en *https://localhost:4502/myForms/bankTransaction.html* y el archivo XML de datos se guarda en *C:/myTransactions/bankSummary.xml*, puede vista de la tabla con datos en la siguiente URL:
+Para combinar estos datos con la tabla en tiempo de ejecución, es necesario que señalemos el formulario adaptable que contiene la tabla a la ubicación XML absoluta con wcmmode desactivado. Por ejemplo, si el formulario adaptable se encuentra en *https://localhost:4502/myForms/bankTransaction.html* y el archivo XML de datos se guarda en *C:/myTransactions/bankSummary.xml*, puede vista de la tabla con datos en la siguiente dirección URL:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
