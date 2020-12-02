@@ -27,15 +27,15 @@ Para acceder a la consola de herramientas de Communities, inicie sesión en la i
 
    ![comunidades](assets/communities-home.png)
 
-* [Plantillas](sites.md) de sitio: Consola para la creación y administración de plantillas de sitio.
+* [Plantillas](sites.md)  de sitio: Consola para la creación y administración de plantillas de sitio.
 
-* [Plantillas](tools-groups.md) de grupo: consola para la creación y administración de plantillas de grupo.
+* [Plantillas](tools-groups.md)  de grupo: consola para la creación y administración de plantillas de grupo.
 
-* [Funciones](functions.md) de comunidad: consola para la creación y administración de funciones de comunidad.
+* [Funciones](functions.md)  de comunidad: consola para la creación y administración de funciones de comunidad.
 
-* [Configuración](srp-config.md) de almacenamiento: consola para la configuración y selección del [SRP](working-with-srp.md)predeterminado.
+* [Configuración](srp-config.md)  de almacenamiento: consola para la configuración y selección del  [SRP](working-with-srp.md) predeterminado.
 
-* [Guía](components-guide.md) de componentes: abre un sitio interactivo que permite experimentar el funcionamiento de los componentes de SCF y la configuración o personalización de los mismos.
+* [Guía](components-guide.md)  de componentes: abre un sitio interactivo que permite experimentar el funcionamiento de los componentes de SCF y la configuración o personalización de los mismos.
 
-* [Distintivos](badges.md) : consola desde la que se pueden añadir distintivos personalizados para utilizarlos en las reglas de [puntuación y marca](implementing-scoring.md)
+* [Insignias](badges.md) : consola desde la que se pueden agregar insignias personalizadas para utilizarlas en las reglas de  [puntuación y marca](implementing-scoring.md)
 
