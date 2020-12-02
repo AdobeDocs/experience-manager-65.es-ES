@@ -32,9 +32,9 @@ AEM Forms proporciona varias API para enviar formularios, procesar documentos y 
 
 Las API de facturación no tienen en cuenta el número de páginas, la longitud de un documento o formulario o el formato final del documento procesado. Un informe de transacciones divide las transacciones en dos categorías: Documentos procesados y Forms enviado.
 
-* **Forms enviado:** Cuando los datos se envían desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio o base de datos de almacenamiento de datos, se considera envío de formulario. Por ejemplo, enviar un formulario adaptable, Formulario HTML5, PDF forms y conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto de formularios, el servicio de sistema de informes de transacciones lo cuenta como 5 envíos.
+* **Forms Enviado:** cuando se envían datos desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio de almacenamiento de datos o base de datos, se considera envío de formulario. Por ejemplo, enviar un formulario adaptable, Formulario HTML5, PDF forms y conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto de formularios, el servicio de sistema de informes de transacciones lo cuenta como 5 envíos.
 
-* **Documentos procesados:** La generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digital de un documento, el uso de una API de servicios de documento facturable para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos procesados.
+* **Documentos procesados:** la generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digital de un documento, el uso de una API de servicios de documento facturable para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos procesados.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
  </tbody>
 </table>
 
-### Documento del servicio de registro (servicio DoR) {#document-of-record-service-dor-service}
+### Documento de Servicio de Registro (Servicio de DoR) {#document-of-record-service-dor-service}
 
 <table>
  <tbody>
@@ -179,7 +179,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Combina datos y plantillas para crear un conjunto de documentos PDF.</td>
    <td>Documentos procesados</td>
-   <td> La API generatePDFOutputBatch combina una plantilla de formulario con un registro y genera un PDF. Cuando se procesa un lote de registros, el servicio de sistema de informes de transacciones cuenta cada registro como una representación PDF independiente. <br> Puede utilizar el indicador <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> para combinar varias representaciones en un único archivo PDF. Independientemente del estado del indicador, el servicio cuenta cada registro como una representación PDF independiente. </td>
+   <td> La API generatePDFOutputBatch combina una plantilla de formulario con un registro y genera un PDF. Cuando se procesa un lote de registros, el servicio de sistema de informes de transacciones cuenta cada registro como una representación PDF independiente. <br> Puede utilizar el indicador  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilespara combinar varias representaciones en un único archivo PDF. Independientemente del estado del indicador, el servicio cuenta cada registro como una representación PDF independiente. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
@@ -197,7 +197,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Convierte un conjunto de documentos XDP y PDF en un conjunto de formatos de archivo PostScript (PS), Printer Command Language (PCL) y ZPL. </td>
    <td>Documentos procesados</td>
-   <td> La API generatePDFOutputBatch combina una plantilla de formulario con un registro y genera un PDF. Cuando se procesa un lote de registros, el servicio de sistema de informes de transacciones cuenta cada registro como una representación PDF independiente. <br> Puede utilizar el indicador <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> para combinar varias representaciones en un único archivo PDF. Independientemente del estado del indicador, el servicio cuenta cada registro como una representación PDF independiente. </td>
+   <td> La API generatePDFOutputBatch combina una plantilla de formulario con un registro y genera un PDF. Cuando se procesa un lote de registros, el servicio de sistema de informes de transacciones cuenta cada registro como una representación PDF independiente. <br> Puede utilizar el indicador  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilespara combinar varias representaciones en un único archivo PDF. Independientemente del estado del indicador, el servicio cuenta cada registro como una representación PDF independiente. </td>
   </tr>
  </tbody>
 </table>
@@ -283,7 +283,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td>
-   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">EnsemblerResult</a> que contiene los documentos resultantes. </td>
+   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblyResult</a> que contiene los documentos resultantes. </td>
    <td>Documentos procesados</td>
    <td>Las siguientes operaciones no se contabilizan como transacciones:
     <ul>
@@ -293,7 +293,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
-   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">EnsemblerResult</a> que contiene los documentos resultantes. </td>
+   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblyResult</a> que contiene los documentos resultantes. </td>
    <td>Documentos procesados</td>
    <td>Todos los formatos de archivo de entrada que los servicios de generación de archivos PDF, Forms y Output admiten, el servicio Ensamblador admite todos esos formatos como formatos de archivo de salida. </td>
   </tr>
@@ -315,7 +315,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 
 
-### Servicio de utilidades de PDF  {#pdf-utility-service}
+### Servicio de utilidad PDF {#pdf-utility-service}
 
 <table>
  <tbody>
@@ -336,7 +336,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 ## API de captura de datos facturables {#billable-data-capture-apis}
 
-Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la API [del grabador de](record-transaction-custom-implementation.md) transacciones proporcionada para registrar un envío de PDF forms como una transacción.
+Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la [API de registro de transacciones](record-transaction-custom-implementation.md) proporcionada para registrar un envío de PDF forms como una transacción.
 
 ### Formularios adaptables {#adaptive-forms}
 
@@ -428,7 +428,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### Comunicación interactiva: Canal de impresión {#interactive-communication-print-channel}
 
 <table>
  <tbody>
@@ -439,7 +439,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
    <td>Información adicional</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">procesar</a> (convertir a PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">procesar</a>  (convertir a PDF)</td>
    <td>Genera la versión PDF de una comunicación interactiva.</td>
    <td>Documentos procesados</td>
    <td>
@@ -449,7 +449,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
  </tbody>
 </table>
 
-### Flujos de trabajo de AEM centrados en el formulario en OSGi  {#form-centric-aem-workflows-on-osgi}
+### Flujos de trabajo de AEM centrados en el formulario en OSGi {#form-centric-aem-workflows-on-osgi}
 
 <table>
  <tbody>
