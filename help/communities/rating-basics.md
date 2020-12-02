@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
 source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
 
 
-# Clasificaciones esenciales {#rating-essentials}
+# Elementos esenciales de clasificación {#rating-essentials}
 
-El componente de clasificación, una subclase [tally](tally.md) , permite a los miembros de la comunidad que inicien sesión clasificar una función en el sitio web.
+El componente de clasificación, una subclase [tally](tally.md), permite a los miembros de la comunidad que inicien sesión clasificar una función en el sitio web.
 
-Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con una `tally name` propiedad única.
+Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con una propiedad `tally name` única.
 
 No se admite la publicación anónima de una clasificación. Los visitantes del sitio deben registrarse e iniciar sesión para participar en una clasificación solo una vez. El visitante firmado (miembro) puede cambiar su calificación en cualquier momento.
 
@@ -33,7 +36,7 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
-   <td>Sí: las propiedades se pueden editar en <i>el </i>modo de diseño</td>
+   <td>Sí: las propiedades se pueden editar en el modo <i>de diseño </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -49,7 +52,7 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td><p>Consulte <a href="rating.md">Uso de la clasificación</a></p> </td>
+   <td><p>Consulte <a href="rating.md">Uso de Clasificación</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -67,16 +70,16 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
 ### Acceso a clasificaciones contabilizadas (UGC) {#accessing-posted-ratings-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación.
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con directrices de codificación SRP](accessing-ugc-with-srp.md) .
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
