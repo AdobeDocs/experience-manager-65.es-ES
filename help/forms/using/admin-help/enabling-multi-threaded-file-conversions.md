@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Activación de las conversiones de archivos con subprocesos múltiples {#enabling-multi-threaded-file-conversions}
+# Habilitación de conversiones de archivos con subprocesos múltiples {#enabling-multi-threaded-file-conversions}
 
 PDF Generator permite habilitar las conversiones de archivos con subprocesos múltiples para determinados tipos de archivos. La conversión de archivos con subprocesos múltiples mejora el rendimiento de PDF Generator permitiéndole realizar varias conversiones al mismo tiempo.
 
@@ -40,15 +40,15 @@ En la página Cuentas de usuario de la consola de administración, puede especif
 
 Al agregar usuarios para OpenOffice, Microsoft Word o Microsoft PowerPoint en Windows Server 2003 o 2008, o para OpenOffice en Linux o Sun™ Solaris™, descarte los cuadros de diálogo de activación iniciales para todos los usuarios.
 
-### Añadir el derecho a reemplazar el token de nivel de proceso {#add-the-right-to-replace-the-process-level-token}
+### Añada el derecho a reemplazar el token de nivel de proceso {#add-the-right-to-replace-the-process-level-token}
 
 En un sistema operativo Windows, las cuentas de usuario de administrador que se utilizan para la conversión a PDF (usuarios de PDFG) deberán reemplazar los privilegios de token de nivel de proceso. Puede agregar este derecho mediante el Editor de directivas de grupo:
 
 1. En el menú Inicio de Windows, haga clic en Ejecutar y, a continuación, introduzca gpedit.msc.
-1. Haga clic en Directiva de equipo local > Configuración de equipo > Configuración de Windows > Configuración de seguridad > Directivas locales > Asignación de derechos de usuario. Edite la directiva de *reemplazo de tokens* de nivel de proceso para incluir el grupo Administradores.
+1. Haga clic en Directiva de equipo local > Configuración de equipo > Configuración de Windows > Configuración de seguridad > Directivas locales > Asignación de derechos de usuario. Edite la directiva *Reemplazar un token de nivel de proceso* para incluir el grupo Administradores.
 1. Añada al usuario a la entrada Reemplazar un token de nivel de proceso.
 
-### Se requiere una configuración adicional para OpenOffice, Microsoft Word y Microsoft PowerPoint en Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
+### Se requiere configuración adicional para OpenOffice, Microsoft Word y Microsoft PowerPoint en Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
 
 Si está ejecutando OpenOffice, Microsoft Word o Microsoft PowerPoint en Windows Server 2008, deshabilite UAC para cada usuario agregado.
 
@@ -58,9 +58,9 @@ Si está ejecutando OpenOffice, Microsoft Word o Microsoft PowerPoint en Windows
 
 ### Se requiere una configuración adicional para OpenOffice en Linux o Solaris {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. Añadir cuentas de usuario. (Consulte [Añadir una cuenta](enabling-multi-threaded-file-conversions.md#add-a-user-account)de usuario.)
+1. Añadir cuentas de usuario. (Consulte [Añadir una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
 1. A continuación, realizará cambios en el archivo /etc/sudoers. El permiso predeterminado para este archivo es 440. Cambie el permiso de este archivo a grabable.
-1. Añada entradas para usuarios adicionales (que no sean el administrador que ejecuta el servidor de formularios) en el archivo /etc/sudoers. Por ejemplo, si está ejecutando formularios AEM como un usuario llamado lcadm y un servidor llamado myhost y desea suplantar user1 y user2, agregue las siguientes entradas a /etc/sudoers:
+1. Añada entradas para usuarios adicionales (que no sean el administrador que ejecuta el servidor de formularios) en el archivo /etc/sudoers. Por ejemplo, si está ejecutando AEM formularios como un usuario llamado lcadm y un servidor llamado myhost, y desea suplantar user1 y user2, agregue las siguientes entradas a /etc/sudoers:
 
    ```shell
     lcadm myhost=(user1) NOPASSWD: ALL
@@ -71,7 +71,7 @@ Si está ejecutando OpenOffice, Microsoft Word o Microsoft PowerPoint en Windows
 
    >[!NOTE]
    >
-   >Asegúrese de que ha asignado las funciones de usuario del sistema y de usuario de PDFG a &quot;user1&quot; y &quot;user2&quot;. Para asignar una función de PDFG a un usuario, consulte [Añadir una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Asegúrese de que ha asignado las funciones de usuario del sistema y de usuario de PDFG a &quot;user1&quot; y &quot;user2&quot;. Para asignar la función de PDFG a un usuario, consulte [Añadir una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. También en el archivo /etc/sudoers, localice y comente esta línea agregando un signo de número (#) al principio de la línea:
 
@@ -82,7 +82,7 @@ Si está ejecutando OpenOffice, Microsoft Word o Microsoft PowerPoint en Windows
    Esto le permite agregar usuarios de Linux.
 
 1. Vuelva a cambiar el permiso del archivo etc/sudoers a 440.
-1. Permite que todos los usuarios agregados mediante [Añadir una cuenta](enabling-multi-threaded-file-conversions.md#add-a-user-account) de usuario realicen conexiones con el servidor de formularios. Por ejemplo, para permitir que un usuario local llamado user1 tenga permiso para realizar la conexión con el servidor de formularios, utilice el siguiente comando
+1. Permita que todos los usuarios agregados mediante [Añadan una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account) para realizar conexiones con el servidor de formularios. Por ejemplo, para permitir que un usuario local llamado user1 tenga permiso para realizar la conexión con el servidor de formularios, utilice el siguiente comando
 
    `xhost +local:user1@`
 
