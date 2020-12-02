@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Los usuarios y administradores utilizan las páginas web de seguridad de documen
 
 >[!NOTE]
 >
->También puede iniciar sesión en documento security a través de Acrobat y otras aplicaciones cliente mediante su cuenta de inicio de sesión de usuario. (Consulte [Configuración del acceso a la seguridad de documento desde las aplicaciones](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)cliente).
+>También puede iniciar sesión en documento security a través de Acrobat y otras aplicaciones cliente mediante su cuenta de inicio de sesión de usuario. (Consulte [Configuración del acceso a la seguridad de documento desde aplicaciones cliente](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)).
 
 Para abrir las páginas web, necesita un navegador, la dirección URL y la información de inicio de sesión para la seguridad del documento. La dirección URL de los usuarios es diferente de la URL de los administradores.
 
@@ -29,7 +32,7 @@ Debido a que la seguridad de documento hace referencia a los directorios existen
 
 Para iniciar sesión como administrador, debe tener asignada la función de administrador. Puede utilizar la cuenta de superadministrador predeterminada que se crea durante el proceso de instalación.
 
-## Inicie sesión en las páginas web {#log-in-to-the-web-pages}
+## Inicie sesión en las páginas Web {#log-in-to-the-web-pages}
 
 Para iniciar sesión en las páginas web con un navegador, necesita la URL de seguridad de documento y una cuenta. La dirección URL de los usuarios es diferente de la URL de los administradores. Los administradores también pueden iniciar sesión en las páginas de usuario para crear políticas.
 
@@ -41,11 +44,11 @@ Para los administradores, se crea una cuenta de superadministrador predeterminad
 
 >[!NOTE]
 >
->También puede acceder a las páginas web desde Acrobat y otras aplicaciones cliente. Consulte la Ayuda de Acrobat o la Ayuda de las extensiones de Acrobat Reader DC correspondientes para obtener más información.
+>También puede acceder a las páginas web desde Acrobat y otras aplicaciones cliente. Consulte la Ayuda de Acrobat o la Ayuda de extensiones de Acrobat Reader DC correspondiente para obtener más información.
 
 1. Escriba la dirección URL en el explorador:
 
-   URL de seguridad de Documento: `https://[host]:[port]/edc`
+   URL de seguridad de documento: `https://[host]:[port]/edc`
 
    o URL de la Consola de administración: `https://[host]:[port]/adminui`
 
@@ -82,9 +85,9 @@ Utilice estos vínculos para acceder a las distintas páginas, donde puede crear
 
 ## Configuración del acceso a la seguridad de documento desde las aplicaciones cliente {#setting-up-access-to-document-security-from-client-applications}
 
-Las aplicaciones cliente deben configurarse para conectarse a la seguridad de documento a fin de proteger documentos, abrir documentos protegidos por políticas y conectarse a las páginas web de seguridad de documento. Consulte la Ayuda *de* Acrobat o la Ayuda *correspondiente de* RightsManagementExtension para obtener información sobre la configuración de la conexión dentro de la aplicación cliente.
+Las aplicaciones cliente deben configurarse para conectarse a la seguridad de documento a fin de proteger documentos, abrir documentos protegidos por políticas y conectarse a las páginas web de seguridad de documento. Consulte *Ayuda de Acrobat* o la *Ayuda de RightsManagementExtension* correspondiente para obtener información sobre la configuración de la conexión dentro de la aplicación cliente.
 
-Se puede acceder a la seguridad de Documento a través de Secure Sockets Layer (SSL). Debe instalar el certificado del sitio web en el almacén de certificados para poder acceder a la seguridad de documento a través de las aplicaciones cliente.
+Se puede acceder a la seguridad de documento a través de Secure Sockets Layer (SSL). Debe instalar el certificado del sitio web en el almacén de certificados para poder acceder a la seguridad de documento a través de las aplicaciones cliente.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 
@@ -92,12 +95,12 @@ Estas instrucciones son específicas de Internet Explorer, pero puede instalar e
 
 **Instalar el certificado del servidor mediante Internet Explorer**
 
-1. Abra el explorador Web y escriba la URL base para la seguridad de documento en el cuadro Dirección. For example, type `https://[host]:[port]`. Aparece un cuadro de diálogo Alerta de seguridad.
+1. Abra el explorador Web y escriba la URL base para la seguridad de documento en el cuadro Dirección. Por ejemplo, escriba `https://[host]:[port]`. Aparece un cuadro de diálogo Alerta de seguridad.
 1. Haga clic en Certificado de Vista y, a continuación, haga clic en Instalar certificado y seleccione los valores predeterminados para la instalación. El certificado debe instalarse en las entidades emisoras de certificados raíz de confianza.
 1. Cierre la sesión del explorador.
 1. Abra otra ventana del explorador y escriba la misma dirección URL en el cuadro Dirección. No debería aparecer un cuadro de diálogo de alerta de seguridad. Esta prueba confirma que el certificado está correctamente instalado.
 
-## Cerrar sesión en las páginas web {#log-out-of-the-web-pages}
+## Cierre la sesión de las páginas Web {#log-out-of-the-web-pages}
 
 Cierre la sesión cuando termine de utilizar las páginas web para que pueda utilizar el explorador web con seguridad para otros fines. Según la configuración de la seguridad de documento, es posible que deba cerrar el explorador para cerrar la sesión por completo.
 
