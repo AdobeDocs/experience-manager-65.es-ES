@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +48,7 @@ Puede llevar a cabo las siguientes acciones para procesar un elemento de trabajo
 
 ### Notificaciones de las acciones del flujo de trabajo asignado {#notifications-of-assigned-workflow-actions}
 
-Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**), aparecen varias alertas y notificaciones:
+Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**), aparecen varias alertas o notificaciones:
 
 * La columna **Estado** de la consola Sitios web indica si una página está en un flujo de trabajo.
 
@@ -68,7 +71,7 @@ Una vez haya realizado la acción indicada, puede finalizar el elemento de traba
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Delegación de una etapa de participante {#delegating-a-participant-step}
+### Delegación de una etapa de participante  {#delegating-a-participant-step}
 
 Utilice el siguiente procedimiento para delegar el elemento de trabajo.
 
@@ -79,7 +82,7 @@ Utilice el siguiente procedimiento para delegar el elemento de trabajo.
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Realización de un paso hacia atrás en un paso de participante {#performing-step-back-on-a-participant-step}
+### Realización de un paso hacia atrás en un paso de participante  {#performing-step-back-on-a-participant-step}
 
 Utilice el siguiente procedimiento para volver al paso anterior.
 
