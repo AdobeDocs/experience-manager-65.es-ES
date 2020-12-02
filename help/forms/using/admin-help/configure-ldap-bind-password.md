@@ -18,13 +18,13 @@ ht-degree: 3%
 ---
 
 
-# Configuración de la contraseña de enlace LDAP{#configure-the-ldap-bind-password}
+# Configurar la contraseña de enlace LDAP{#configure-the-ldap-bind-password}
 
 Para evitar riesgos de seguridad, no se ha configurado el campo bind password en el archivo de configuración exportado (config.xml). Antes de importar el archivo de configuración a otro sistema, asegúrese de configurar esta contraseña. Esta contraseña anula una contraseña existente almacenada en la base de datos. Una contraseña nula no anula un valor de contraseña no nula existente.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Importar y exportar archivos de configuración.
 1. Para exportar la configuración actual a un archivo, haga clic en Exportar y guarde el archivo de configuración en otra ubicación.
-1. En el archivo, busque el nodo `Domains` > *[Nombre]* de dominio > `DirectoryConfigs` > `LDAPGroupConfig` . He aquí un ejemplo:
+1. En el archivo, busque el nodo `Domains` > *[Nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig`. He aquí un ejemplo:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -39,7 +39,7 @@ Para evitar riesgos de seguridad, no se ha configurado el campo bind password en
 
    Escriba un valor para `bindpassword` y guarde los cambios.
 
-1. En el archivo, busque el nodo `Domains` > *[Nombre]* de dominio > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` . He aquí un ejemplo:
+1. En el archivo, busque el nodo `Domains` > *[Nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. He aquí un ejemplo:
 
    ```xml
     <node name="LDAPUserConfig">
