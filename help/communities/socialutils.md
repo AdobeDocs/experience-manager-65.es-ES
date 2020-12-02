@@ -24,9 +24,9 @@ ht-degree: 0%
 
 El paquete `com.adobe.cq.social.ugcbase.SocialUtils` quedó obsoleto en AEM 6.1.
 
-En las tablas siguientes se lista los métodos que se deben utilizar en lugar de `SocialUtils` los métodos.
+En las tablas siguientes se lista los métodos que se deben utilizar en lugar de los métodos `SocialUtils`.
 
-## Paquete SocialResourceUtilities  {#socialresourceutilities-package}
+## Paquete SocialResourceUtilities {#socialresourceutilities-package}
 
 | Métodos de com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -44,13 +44,13 @@ En las tablas siguientes se lista los métodos que se deben utilizar en lugar de
 | String UGCToResourcePath(String ugcPath) | firma de método cambiada |
 | String UGCToResourcePath(String ugcPath, resolver ResourceResolver) | nuevo |
 
-| Métodos en `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
+| Métodos de `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
 | SocialResourceProvider getSocialResourceProvider(recurso de recurso) | reemplaza a SocialResourceProvider getConfiguradoProvider(recurso de recurso) |
 
 ## Paquete SCFUtilities {#scfutilities-package}
 
-| Métodos en `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
+| Métodos de `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
 | String getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, int size) |
@@ -60,7 +60,7 @@ En las tablas siguientes se lista los métodos que se deben utilizar en lugar de
 | String getSocialProfileURL(Nombre de usuario de la cadena, resolución de ResourceResolver, página) |
 | UserProperties getUserProperties(resolución de ResourceResolver, cadena userId) |
 
-## For Internal Use Only {#for-internal-use-only}
+## Sólo para uso interno {#for-internal-use-only}
 
 | boolean canAddNode(Session session, String path) |
 |---|
