@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con XFA en formularios adaptables basados en XDP
 seo-title: Compatibilidad con XFA en formularios adaptables basados en XDP
-description: Las Listas admitían eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
-seo-description: Las Listas admitían eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
+description: Las listas admitían eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
+seo-description: Las listas admitían eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -141,7 +141,7 @@ La siguiente tabla captura el comportamiento de varias secuencias de comandos XF
    <td><p>Asignado a la propiedad short description en formato adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>rótulo<em> (todos los tipos de campo)</em></p> </td>
+   <td><p>caption<em> (todos los tipos de campo)</em></p> </td>
    <td><p>Asignado a la propiedad Title en forma adaptable.</p> </td>
   </tr>
   <tr>
@@ -153,19 +153,19 @@ La siguiente tabla captura el comportamiento de varias secuencias de comandos XF
    <td><p>Asignado a la propiedad value en el formulario adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>elementos<em> (casilla de Lista, casilla de verificación)</em></p> </td>
+   <td><p>items<em> (casilla de verificación, casilla de verificación)</em></p> </td>
    <td><p>Asignado a la propiedad options en formato adaptable. Puede anularlo mediante la expresión Opciones.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (campo de texto)</em></p> </td>
+   <td><p>maxChar<em> (Campo de texto)</em></p> </td>
    <td><p>Asignado a la propiedad Máximo de caracteres permitido en un formulario adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>multilínea<em> (campo de texto)</em></p> </td>
+   <td><p>multiline<em> (campo de texto)</em></p> </td>
    <td><p>Asignado a la propiedad Permitir líneas múltiples en formato adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (campo numérico, campo decimal)</em></p> </td>
+   <td><p>fracDigit<em> (Campo numérico, Campo decimal)</em></p> </td>
    <td><p>Asignado a la propiedad Dígitos Frac en formato adaptable.</p> </td>
   </tr>
   <tr>
@@ -186,7 +186,7 @@ La siguiente tabla captura el comportamiento de varias secuencias de comandos XF
 <table>
  <tbody>
   <tr>
-   <td><p><strong>eventos de secuencias de comandos XFA</strong></p> </td>
+   <td><p><strong>Eventos de secuencias de comandos XFA</strong></p> </td>
    <td><p><strong>Comportamiento correspondiente en formularios adaptables</strong></p> </td>
   </tr>
   <tr>
