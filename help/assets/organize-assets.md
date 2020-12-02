@@ -17,12 +17,12 @@ Todos los recursos digitales, los metadatos y el contenido de los documentos de 
 
 [!DNL Experience Manager Assets] admite varias formas de organizar contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad-hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
 
-## Organización de recursos en carpetas {#organize-using-folders}
+## Organizar recursos en carpetas {#organize-using-folders}
 
-La forma más básica de organizar los recursos es guardarlos en carpetas. Es similar a organizar archivos en carpetas en nuestro sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Gestión de recursos](manage-assets.md). La forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos dentro de estas carpetas puede tener un impacto significativo en la forma en que se procesan dichos recursos. Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con buenas prácticas de metadatos, puede aprovechar al máximo el repositorio de recursos digitales.
+La forma más básica de organizar los recursos es guardarlos en carpetas. Es similar a organizar archivos en carpetas en nuestro sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Administrar recursos](manage-assets.md). La forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos dentro de estas carpetas puede tener un impacto significativo en la forma en que se procesan dichos recursos. Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con buenas prácticas de metadatos, puede aprovechar al máximo el repositorio de recursos digitales.
 
 * En la mayoría de los casos, el repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de metadatos, la estructura de carpetas y la nominación de archivos al principio del ciclo de creación de contenido.
-* Utilice las carpetas únicamente para imponer una estructura de almacenamiento uniforme a los recursos digitales. Esta coherencia ayuda a procesar y administrar mejor los recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar [perfiles adecuados para el procesamiento](processing-profiles.md)de recursos:
+* Utilice las carpetas únicamente para imponer una estructura de almacenamiento uniforme a los recursos digitales. Esta coherencia ayuda a procesar y administrar mejor los recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar los [perfiles adecuados para el procesamiento de recursos](processing-profiles.md):
 
    * **Carpetas** de desarrollo: contiene recursos digitales en los que está trabajando.
    * **Carpetas** de cliente: contiene recursos digitales basados en nombres de clientes o proyectos.
@@ -35,9 +35,9 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es si
    * **Carpetas** basadas en fecha: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no es probable que cambien para que la personalización o la automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
-* Si ya se ha publicado un recurso, se utiliza [!DNL Experience Manager] para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación del recurso original publicado seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se *pierde* [!DNL Experience Manager] y no se puede cancelar su publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a otra carpeta.
+* Si ya se ha publicado un recurso, utilice [!DNL Experience Manager] para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación original del recurso publicado seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se *pierde* en [!DNL Experience Manager] y no se puede cancelar la publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a otra carpeta.
 
-## Organización de recursos con etiquetas {#use-tags-to-organize-assets}
+## Organizar recursos con etiquetas {#use-tags-to-organize-assets}
 
 Mediante el uso de etiquetas como metadatos, puede buscar fácilmente recursos, crear colecciones utilizando los resultados de búsqueda, mejorar la clasificación de la búsqueda de algunos recursos y aprovechar los algoritmos de IA de Adobe Sensei para la detección de recursos.
 
@@ -53,7 +53,7 @@ Para obtener más información, consulte los siguientes artículos:
 
 Con las colecciones de recursos en [!DNL Experience Manager Assets], puede optimizar la capacidad de crear, editar y compartir recursos entre usuarios. Cree varios tipos de colecciones en función de su uso, incluidas las colecciones que contienen una lista de referencia estática de recursos, carpetas y colecciones, así como las colecciones que extraen recursos en función de criterios de búsqueda.  También puede crear colecciones con recursos de distintas ubicaciones y compartirlas con varios usuarios con diferentes niveles de acceso, visualización y edición de privilegios.
 
-Para obtener más información, consulte [Gestión de colecciones](manage-collections.md)
+Para obtener más información, consulte [administración de colecciones](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
@@ -70,6 +70,6 @@ La estandarización del uso de metadatos, la nominación de archivos y la estruc
 >
 >* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
 >* [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles).
->* [Perfiles](video-profiles.md)de vídeo.
->* [Perfiles](image-profiles.md)de imagen de Dynamic Media.
+>* [Perfiles](video-profiles.md) de vídeo.
+>* [Perfiles](image-profiles.md) de imagen de Dynamic Media.
 
