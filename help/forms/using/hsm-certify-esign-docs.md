@@ -29,9 +29,9 @@ Adobe Experience Manager Forms puede utilizar las credenciales almacenadas en un
 1. Cree un alias para el HSM o dispositivo de activación en AEM consola web.
 1. Utilice las API de servicio DocAssurance para firmar o certificar los documentos con claves digitales almacenadas en el dispositivo.
 
-## Antes de configurar los dispositivos HSM o de activación con AEM Forms {#configurehsmetoken}
+## Antes de configurar el HSM o los dispositivos de activación con AEM Forms {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) package.
+* Instale el paquete [AEM Forms Add-on](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
 * Instale y configure el software de cliente HSM o Token en el mismo equipo que AEM servidor. El software cliente es necesario para comunicarse con el HSM y los dispositivos de activación.
 * (Solo Microsoft Windows) Configure la variable de entorno JAVA_HOME_32 para que señale al directorio en el que está instalada la versión de 32 bits de Java 8 Development Kit (JDK 8). La ruta predeterminada del directorio es C:\Program Files(x86)\Java\jdk&lt;version>
 * (Solo AEM Forms en OSGi) Instale el certificado raíz en el almacén de confianza. Es necesario verificar el PDF firmado
@@ -40,7 +40,7 @@ Adobe Experience Manager Forms puede utilizar las credenciales almacenadas en un
 >
 >En Microsoft Windows, solo se admiten clientes LunaSA o EToken de 32 bits.
 
-## Habilitar el servicio DocAssurance {#configuredocassurance}
+## Habilite el servicio DocAssurance {#configuredocassurance}
 
 De forma predeterminada, el servicio DocAssurance no está habilitado. Realice los siguientes pasos para habilitar el servicio:
 
@@ -69,23 +69,23 @@ Realice los siguientes pasos para configurar los certificados:
 
 1. Inicie sesión en la instancia de AEM Author como administrador.
 
-1. **Haga clic en Experience Manager** de Adobe en la barra de navegación global. Vaya a **Herramientas** > **Seguridad** > **Usuarios**.
-1. Haga clic en el campo **nombre** de la cuenta de usuario. Se abre la página **Editar configuración** de usuario.
+1. Haga clic **Adobe Experience Manager** en la barra de navegación global. Vaya a **Herramientas** > **Seguridad** > **Usuarios**.
+1. Haga clic en el campo **nombre** de la cuenta de usuario. Se abre la página **Editar configuración de usuario**.
 1. En la instancia de AEM Author, los certificados residen en un KeyStore. Si no ha creado un KeyStore anteriormente, haga clic en **Crear KeyStore** y defina una nueva contraseña para el KeyStore. Si el servidor ya contiene un KeyStore, omita este paso.
 
-1. En la página **Editar configuración** de usuario, haga clic en **Administrar almacén de claves**.
+1. En la página **Editar configuración de usuario**, haga clic en **Administrar KeyStore**.
 
-1. En el cuadro de diálogo Administración de KeyStore, expanda la opción **Añadir clave privada del archivo** Almacén de claves y proporcione un alias. El alias se utiliza para realizar la operación Extensiones de Reader.
-1. Para cargar el archivo de certificado, haga clic en **Seleccionar archivo** de almacén de claves y cargue un `.pfx` archivo.
-1. Añada la contraseña **del almacén de** claves, la contraseña **de clave** privada y el alias **de clave** privada asociados al certificado en los campos correspondientes. Haga clic en **Enviar**.
-
-   >[!NOTE]
-   >
-   >Para determinar el alias **de clave** privada de un certificado, puede utilizar el comando de la herramienta de clave de Java: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+1. En el cuadro de diálogo Administración de KeyStore, expanda la opción **Añadir clave privada del archivo de almacén de claves** y proporcione un alias. El alias se utiliza para realizar la operación Extensiones de Reader.
+1. Para cargar el archivo de certificado, haga clic en **Seleccionar archivo de almacén de claves** y cargue un archivo `.pfx`.
+1. Añada la **Contraseña del almacén de claves**,**Contraseña de clave privada** y **Alias de clave privada** que está asociado con el certificado en los campos respectivos. Haga clic en **Enviar**.
 
    >[!NOTE]
    >
-   >En los campos Contraseña **del almacén de** claves y Contraseña **de clave** privada, especifique la contraseña proporcionada con el archivo de certificado.
+   >Para determinar el alias P **de clave privada** de un certificado, puede utilizar el comando de la herramienta clave de Java: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+
+   >[!NOTE]
+   >
+   >En los campos **Contraseña del almacén de claves** y **Contraseña de clave privada**, especifique la contraseña proporcionada con el archivo de certificado.
 
 >[!NOTE]
 >
@@ -95,12 +95,12 @@ Realice los siguientes pasos para configurar los certificados:
 >
 >Al pasar al entorno de producción, reemplace las credenciales de evaluación por las credenciales de producción. Asegúrese de eliminar las credenciales antiguas de las extensiones de Reader antes de actualizar una credencial de evaluación o caducada.
 
-## Creación de un alias para el dispositivo {#configuredeviceinaemconsole}
+## Crear un alias para el dispositivo {#configuredeviceinaemconsole}
 
 El alias contiene todos los parámetros que requiere un HSM o una cookie. Siga las instrucciones que se indican a continuación para crear un alias para cada credencial de HSM o de activación que utilice eSign o Digital Signatures:
 
 1. Abra AEM consola. La dirección URL predeterminada de AEM consola es https://&lt;host>:&lt;puerto>/system/console/configMgr
-1. Abra el servicio **de configuración de credenciales de** HSM y especifique los valores de los campos siguientes:
+1. Abra el **servicio de configuración de credenciales de HSM** y especifique los valores para los siguientes campos:
 
    * **Alias** de credencial: Especifique una cadena utilizada para identificar el alias. Este valor se utiliza como propiedad para algunas operaciones de firmas digitales, como la operación Firmar campo de firma.
    * **Ruta** de DLL: Especifique la ruta completa de su HSM o biblioteca de cliente activada en el servidor. Por ejemplo, C:\Program Files\LunaSA\cryptoki.dll. En un entorno agrupado, esta ruta debe ser idéntica para todos los servidores del clúster.
