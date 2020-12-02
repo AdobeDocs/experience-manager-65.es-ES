@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Esenciales de votación {#voting-essentials}
 
-El componente de voto, una subclase [de recuento](tally.md) , es una herramienta útil que permite a los miembros calificar un contenido en particular simplemente seleccionando flechas arriba o abajo para indicar su opinión.
+El componente de voto, una subclase [tally](tally.md), es una herramienta útil que permite a los miembros clasificar un contenido determinado simplemente seleccionando flechas arriba o abajo para indicar su opinión.
 
-Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con una `tally name` propiedad única.
+Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con una propiedad `tally name` única.
 
 No se admite la publicación anónima de un voto. Los visitantes del sitio deben registrarse e iniciar sesión para participar en la votación una sola vez. El visitante firmado (miembro) puede cambiar su voto en cualquier momento.
 
@@ -36,7 +36,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
-   <td>Sí: las propiedades se pueden editar en <i>el </i>modo de diseño</td>
+   <td>Sí: las propiedades se pueden editar en el modo <i>de diseño </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -52,7 +52,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td><p>Consulte <a href="voting.md">Uso de la votación</a></p> </td>
+   <td><p>Consulte <a href="voting.md">Uso de Votación</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -67,19 +67,19 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
-### Acceso a voto registrado (UGC) {#accessing-posted-voting-ugc}
+### Acceso a Votación posteada (UGC) {#accessing-posted-voting-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación.
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con directrices de codificación SRP](accessing-ugc-with-srp.md) .
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
