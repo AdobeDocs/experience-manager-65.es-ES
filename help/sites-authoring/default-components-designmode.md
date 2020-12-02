@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +36,7 @@ Además de estos, también hay otros componentes disponibles. Se puede utilizar 
 >
 >El modo de diseño solo está disponible para las configuraciones de diseño almacenadas como contenido en ( `/etc`).
 >
->Starting in AEM 6.4, it is recommended to store designs as configuration data under `/apps` to support continuous deployment scenarios. Designs stored under `/apps` are not editable at runtime and the Design mode will not be available to non-admin users for such templates.
+>A partir de AEM 6.4, se recomienda almacenar diseños como datos de configuración en `/apps` para admitir escenarios de implementación continua. Los diseños almacenados en `/apps` no se pueden editar en tiempo de ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para dichas plantillas.
 
 Esto implica añadir o quitar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos (`parsys`) es un componente compuesto que contiene todos los demás componentes de párrafos. El sistema de párrafos permite a los autores añadir componentes de distintos tipos a una página, ya que contiene todos los demás componentes de párrafos. Cada tipo de párrafo se representa como un componente.
 
@@ -66,7 +69,7 @@ Para activar o desactivar un componente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. Toque o haga clic en el icono **Principal**.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -86,15 +89,17 @@ Para activar o desactivar un componente:
 
    * Componentes permitidos
    * Configuración
+
    **Componentes permitidos**
 
-   On the **Allowed Components** tab, you define which components are available for the parsys.
+   En la ficha **Componentes permitidos**, se definen los componentes disponibles para parsys.
 
    * Los componentes se agrupan por grupos de componentes, que se pueden expandir y contraer.
    * Es posible seleccionar un grupo completo marcando la casilla del nombre del grupo, y se puede anular la selección de todo desactivando la casilla de verificación.
    * Un signo menos indica se ha seleccionado al menos uno, pero no todos los elementos de un grupo.
    * Puede realizar búsquedas filtrando por el nombre de los componentes.
    * Los recuentos que aparecen a la derecha del nombre del grupo de componentes representan el número total de componentes seleccionados de dichos grupos, independientemente del filtro.
+
    La configuración se define por el componente de la página. Si en las páginas infantiles se utiliza la misma plantilla y/o componente de la página (normalmente en formato alineado), se aplicará la misma configuración al sistema de párrafos correspondiente.
 
    >[!NOTE]
@@ -105,7 +110,7 @@ Para activar o desactivar un componente:
 
    En la ficha **Configuración**, puede definir opciones adicionales como, por ejemplo, para dibujar un anclaje para cada componente y definir el margen de celdas de cada contenedor.
 
-1. Select **Done** to save your configuration.
+1. Seleccione **Listo** para guardar la configuración.
 
 ## Configuración del diseño de un componente {#configuring-the-design-of-a-component}
 
@@ -130,6 +135,7 @@ Para activar o desactivar un componente:
    * Principal
    * Características
    * Estilos
+
    **Propiedades**
 
    La ficha **Propiedades** le permite configurar los parámetros de diseño importantes del componente. Por ejemplo, para un componente de imagen, puede definir el tamaño máximo y mínimo permitido de la imagen.
@@ -148,7 +154,7 @@ Para activar o desactivar un componente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilice el icono** Eliminar **para eliminar una entrada de una lista de cuadros de diálogo de entrada múltiple.
+   Utilice el icono** Eliminar **para eliminar una entrada de una lista de cuadro de diálogo de varias entradas.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 
