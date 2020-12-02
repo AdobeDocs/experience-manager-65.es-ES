@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
 
-# Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
+# Configurar la administración de usuarios para un servidor LDAP habilitado para SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 Para que la sincronización funcione correctamente en LDAPS, los certificados LDAP emitidos por la autoridad de certificación (CA) deben estar presentes en el entorno de tiempo de ejecución de Java (JRE) del servidor de aplicaciones. Importe el certificado en el archivo cacerts JRE del servidor de aplicaciones, que suele estar en el directorio *[JAVA_HOME]*/jre/lib/security/cacerts.
 
@@ -23,7 +26,7 @@ Para que la sincronización funcione correctamente en LDAPS, los certificados LD
 1. Exporte un certificado de cliente desde el servidor de directorio.
 1. Utilice el programa keytool para importar el archivo de certificado de cliente en el almacén de certificados predeterminado de la máquina virtual Java (JVM™) del servidor de aplicaciones de formularios AEM. El procedimiento para esta tarea varía según las rutas de instalación de JVM y cliente. Por ejemplo, si utiliza BEA WebLogic Server con JDK 1.5, desde un símbolo del sistema, escriba este texto:
 
-   `keytool -import -alias`*alias *`-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
+   `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. Cuando se le solicite, escriba la contraseña. (Para Java, la contraseña predeterminada es `changeit`). Aparece un mensaje que indica que el certificado se ha importado correctamente.
 1. Cuando se le solicite, escriba `Yes` para confiar en el certificado.
