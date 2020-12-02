@@ -10,35 +10,36 @@ ht-degree: 66%
 ---
 
 
-# AEM Communities release notes {#aem-communities-release-notes}
+# Notas de la versión de AEM Communities {#aem-communities-release-notes}
 
 Continúe leyendo para conocer las mejoras en AEM Communities desde la versión 6.4. Para obtener más información sobre las nuevas funciones con mayor detalle, consulte la [Guía del usuario de AEM 6.5 Communities](https://helpx.adobe.com/es/experience-manager/6-4/communities/user-guide.html).
 
-To obtain the latest release, see the [Deploying Communities](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) section of the documentation.
+Para obtener la versión más reciente, consulte la sección [Implementación de comunidades](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) de la documentación.
 
 ## Mejoras importantes {#major-enhancements}
 
 ### Mejoras en el compromiso de la comunidad {#enhancements-to-community-engagement}
 
-**@Mentions ahora permite a los usuarios registrados etiquetar (mencionar) otros miembros registrados para atraer su atención en Contenido generado por el usuario**. A continuación, se notificará a los miembros etiquetados (mencionados) con una vinculación profunda al contenido que creó el usuario correspondiente. Sin embargo, los usuarios pueden optar por activar o desactivar las notificaciones web y de correo electrónico.
+**@Mentions**
+supportAEM Communities ahora permite a los usuarios registrados etiquetar (mencionar) a otros miembros registrados para atraer su atención, en Contenido generado por el usuario. A continuación, se notificará a los miembros etiquetados (mencionados) con una vinculación profunda al contenido que creó el usuario correspondiente. Sin embargo, los usuarios pueden optar por activar o desactivar las notificaciones web y de correo electrónico.
 
 ![Compatibilidad con menciones](assets/at-mentions.png)
 
 Los usuarios de la comunidad no necesitan buscar su nombre, apellido o nombre de usuario para ver si alguien los ha contactado o si necesita su atención. Además, permite que los autores de UGC busquen respuestas de usuarios específicos registrados que pueden abordar el problema y añadir entradas.
 
-The community administrators need to **Enable Mention** on community components to allow registered users use the functionality on those components.
+Los administradores de la comunidad deben **Habilitar Mención** en los componentes de la comunidad para permitir que los usuarios registrados utilicen la funcionalidad en esos componentes.
 
 **Mensajería de grupo**
 
-Los miembros registrados de la comunidad ahora pueden enviar mensajes masivos directos a los grupos mediante una sola composición de correo electrónico, en lugar de enviar el mismo mensaje individualmente a los miembros del grupo. To allow [group messaging](/help/communities/configure-messaging.md), enable both the instances of [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
+Los miembros registrados de la comunidad ahora pueden enviar mensajes masivos directos a los grupos mediante una sola composición de correo electrónico, en lugar de enviar el mismo mensaje individualmente a los miembros del grupo. Para permitir [mensajes de grupo](/help/communities/configure-messaging.md), habilite ambas instancias de [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
 
 ![Mensajería de grupo](assets/group-messaging.png)
 
 ### Mejoras de la moderación masiva {#enhancements-to-bulk-moderation}
 
-filtros personalizados en moderación masiva
+Filtros personalizados en moderación masiva
 
-[Los filtros](/help/communities/moderation.md#custom-filters) personalizados ahora se pueden desarrollar y agregar a la IU de moderación masiva.
+[Los ](/help/communities/moderation.md#custom-filters) filtros personalizados ahora se pueden desarrollar y agregar a la IU de moderación masiva.
 
 En [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) encontrará un [proyecto de muestra](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) del filtrado mediante etiquetas. Este proyecto se puede utilizar como base para desarrollar filtros personalizados similares.
 
@@ -64,10 +65,10 @@ Los administradores del sitio pueden crear un grupo en cualquier nivel de jerarq
 
 **Compatibilidad con SCORM 2017.1**
 
-The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
+La funcionalidad de habilitación de AEM comunidades 6.5 admite el motor Modelo de referencia de objetos de contenido compartible [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Compatibilidad con la navegación por teclado en los componentes de habilitación
-* Los componentes de habilitación (por ejemplo, Catálogo y Reproducción de cursos, Asignaciones, Biblioteca de archivos) de los AEM Communities admiten la navegación mediante el teclado para mejorar la accesibilidad.
+* Los componentes de habilitación (por ejemplo, Catálogo y Reproducción de cursos, Asignaciones, Biblioteca de archivos) de AEM Communities admiten la navegación mediante el teclado para mejorar la accesibilidad.
 
 ### Otras mejoras {#other-enhancements}
 
