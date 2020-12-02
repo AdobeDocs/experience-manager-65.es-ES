@@ -1,8 +1,8 @@
 ---
 title: Búsqueda de formularios y recursos
 seo-title: Búsqueda de formularios y recursos
-description: Puede buscar formularios y recursos en la instancia de AEM mediante la búsqueda de AEM. La búsqueda básica y avanzada le permite localizar rápidamente sus recursos.
-seo-description: Puede buscar formularios y recursos en la instancia de AEM mediante la búsqueda de AEM. La búsqueda básica y avanzada le permite localizar rápidamente sus recursos.
+description: Puede buscar formularios y recursos en la instancia de AEM mediante AEM búsqueda. La búsqueda básica y avanzada le permite localizar rápidamente sus recursos.
+seo-description: Puede buscar formularios y recursos en la instancia de AEM mediante AEM búsqueda. La búsqueda básica y avanzada le permite localizar rápidamente sus recursos.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,23 +11,26 @@ discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 4%
 
 ---
 
 
 # Búsqueda de formularios y recursos{#searching-for-forms-and-assets}
 
-Puede buscar los formularios o recursos de formulario mediante una cadena de texto o una cadena de texto junto con los comodines. También puede limitar la búsqueda utilizando los criterios disponibles en varias categorías en el panel Buscar.
+Puede buscar los formularios o recursos de formulario mediante una cadena de texto o una cadena de texto junto con los comodines. También puede limitar la búsqueda utilizando los criterios disponibles en varias categorías del panel Buscar.
 
 Cuando selecciona uno o más criterios y también especifica una cadena de texto, la intersección del texto y los criterios se devuelven como resultados de búsqueda. Los resultados de la búsqueda son tan buenos como los metadatos del formulario y el recurso proporcionados.
 
-Haga clic en ![aem6forms_search](assets/aem6forms_search.png)para mostrar u ocultar el panel de búsqueda.
+Haga clic en ![aem6forms_search](assets/aem6forms_search.png) para mostrar u ocultar el panel de búsqueda.
 
 ## Búsqueda básica {#basic-search}
 
-Una búsqueda básica es la búsqueda predeterminada, ejecutada sin especificar ningún filtro. AEM Forms lleva a cabo una búsqueda de texto completo en las propiedades de metadatos.
+Una búsqueda básica es la búsqueda predeterminada, ejecutada sin especificar ningún filtros. AEM Forms realiza una búsqueda de texto completo en las propiedades de metadatos.
 
-Para ejecutar una búsqueda básica, introduzca la consulta de búsqueda en el campo de texto y pulse el retorno. También puede introducir el carácter comodín (*) para que coincida con cualquier número de caracteres.
+Para ejecutar una búsqueda básica, introduzca la consulta de búsqueda en el campo de texto y pulse en return. También puede introducir el carácter comodín (*) para que coincida con cualquier número de caracteres.
 
 Adobe Experience Manager busca el texto introducido en las propiedades de metadatos y devuelve los resultados correspondientes. Si escribe más de una palabra, la operación de búsqueda coincidirá con el texto completo para la búsqueda.
 
@@ -35,20 +38,20 @@ Tenga en cuenta los siguientes puntos sobre la búsqueda básica:
 
 * La búsqueda se lleva a cabo utilizando las propiedades de metadatos del formulario y del recurso.
 * Si escribe más de una palabra, la operación de búsqueda coincidirá con el texto completo para la búsqueda.
-* La búsqueda no distingue entre mayúsculas y minúsculas. Por ejemplo, al escribir `geometrixx`, los recursos con títulos `Geometrixx``GEOMETRIXX`y `GeoMetRixx` se muestran en los resultados de la búsqueda.
+* La búsqueda no distingue entre mayúsculas y minúsculas. Por ejemplo, cuando escribe `geometrixx`, los recursos con títulos `Geometrixx`, `GEOMETRIXX` y `GeoMetRixx` se muestran en los resultados de la búsqueda.
 
 * No se admiten las coincidencias parciales de una palabra. Para buscar mediante cadenas parciales, utilice el carácter comodín *. Sin embargo, si la consulta de búsqueda coincide con una palabra completa, se muestra el formulario o recurso correspondiente.
 * Los espacios adicionales se respetan y no se recortan durante la búsqueda. Por ejemplo: `My form` no es la misma consulta de búsqueda que `My form`.
 
 * Si los datos y los valores de visualización de los campos en las propiedades de metadatos son diferentes, no puede utilizar valores de visualización como parámetros de búsqueda. Por ejemplo, no se puede buscar en función de un estado, como Modificado o Publicado, ya que estas propiedades se almacenan en un formato diferente.
 
-## Advanced search {#advanced-search}
+## Búsqueda avanzada {#advanced-search}
 
-En los criterios de búsqueda, además de la consulta, puede especificar algunos parámetros de búsqueda para que la búsqueda básica sea más eficiente y centrada.
+En los criterios de búsqueda, además de la consulta puede especificar algunos parámetros de búsqueda para que la búsqueda básica sea más eficiente y centrada.
 
-![Campo de búsqueda y parámetros o filtros para la búsqueda de recursos y formularios de AEM](assets/search_forms_assets.png)
+![Campo de búsqueda y parámetros o filtros para AEM búsqueda de recursos y formularios](assets/search_forms_assets.png)
 
-Campo de búsqueda y parámetros o filtros para la búsqueda de recursos y formularios de AEM
+Campo de búsqueda y parámetros o filtros para AEM búsqueda de recursos y formularios
 
 ### Ruta de recursos {#asset-path}
 
@@ -87,7 +90,7 @@ Puede seleccionar cualquier número de tipos de recursos. La búsqueda devuelve 
   </tr>
   <tr>
    <td>Plantilla de formulario<br /> </td> 
-   <td>Busque en todas las plantillas de formulario.<br /> </td> 
+   <td>Buscar en todas las plantillas de formulario.<br /> </td> 
   </tr>
   <tr>
    <td>Formulario PDF</td> 
@@ -95,7 +98,7 @@ Puede seleccionar cualquier número de tipos de recursos. La búsqueda devuelve 
   </tr>
   <tr>
    <td>Documento</td> 
-   <td>Busque en todos los documentos.</td> 
+   <td>Buscar en todos los documentos.</td> 
   </tr>
   <tr>
    <td>Formulario adaptable<br /> </td> 
@@ -103,7 +106,7 @@ Puede seleccionar cualquier número de tipos de recursos. La búsqueda devuelve 
   </tr>
   <tr>
    <td>Medio</td> 
-   <td>Busque en todos los recursos.<br /> </td> 
+   <td>Buscar en todos los recursos.<br /> </td> 
   </tr>
  </tbody>
 </table>
