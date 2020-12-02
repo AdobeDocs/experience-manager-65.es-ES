@@ -1,8 +1,8 @@
 ---
 title: Marco de apariencia para formularios adaptables y HTML5
 seo-title: Marco de apariencia para formularios adaptables y HTML5
-description: Los formularios móviles representan las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos.
-seo-description: Los formularios móviles representan las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos.
+description: Forms móvil procesa las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos.
+seo-description: Forms móvil procesa las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 3%
 
 ---
 
 
-# Marco de apariencia para formularios adaptables y HTML5 {#appearance-framework-for-adaptive-and-html-forms}
+# Marco de aspecto para formularios adaptables y HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-Los formularios (formularios adaptables y formularios HTML5) utilizan las bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) y [Underscore.js](https://underscorejs.org/) para apariencia y secuencias de comandos. Los formularios también utilizan la arquitectura [jQuery UI](https://jqueryui.com/) **Widgets** para todos los elementos interactivos (como campos y botones) del formulario. Esta arquitectura permite al desarrollador de formularios utilizar un conjunto enriquecido de utilidades y complementos jQuery disponibles en Forms. También puede implementar lógica específica del formulario al capturar datos de usuarios como las restricciones de leadDigits/trackDigits o la implementación de cláusulas de imagen. Los desarrolladores de formularios pueden crear y utilizar apariencias personalizadas para mejorar la experiencia de captura de datos y hacerla más sencilla.
+Forms (formularios adaptables y formularios HTML5) utiliza bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) y [Underscore.js](https://underscorejs.org/) para apariencia y secuencias de comandos. Los formularios también utilizan la arquitectura [jQuery UI](https://jqueryui.com/) **Widgets** para todos los elementos interactivos (como campos y botones) del formulario. Esta arquitectura permite al desarrollador de formularios utilizar un completo conjunto de utilidades y complementos jQuery disponibles en Forms. También puede implementar lógica específica del formulario al capturar datos de usuarios como las restricciones de leadDigits/trackDigits o la implementación de cláusulas de imagen. Los desarrolladores de formularios pueden crear y utilizar apariencias personalizadas para mejorar la experiencia de captura de datos y hacerla más sencilla.
 
 Este artículo está dirigido a los desarrolladores con suficiente conocimiento de las utilidades jQuery y jQuery. Proporciona una visión detallada del marco de trabajo de apariencia y permite a los desarrolladores crear un aspecto alternativo para un campo de formulario.
 
@@ -50,7 +53,7 @@ Las siguientes son las opciones globales definidas. Estas opciones están dispon
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Los lectores de pantalla utilizan este valor para contar información sobre el campo. El formulario proporciona el valor y se puede omitir.<br /> </td>
+   <td>Los Reader de pantalla utilizan este valor para contar información sobre el campo. El formulario proporciona el valor y puede sobrescribirlo.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -99,24 +102,24 @@ Para interactuar con la estructura de formularios, una utilidad activa algunos e
   </tr>
   <tr>
    <td>XFA_ENTER_EVENTO</td>
-   <td>Este evento se activa cada vez que el campo está activo. Permite que la secuencia de comandos "enter" se ejecute en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENTO)<br /> </td>
+   <td>Este evento se activa cada vez que el campo está activo. Permite que la secuencia de comandos "enter" se ejecute en el campo. La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENTO)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENTO</td>
-   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su secuencia de comandos "exit". La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENTO)<br /> </td>
+   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su secuencia de comandos "exit". La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENTO)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENTO</td>
-   <td>Este evento se activa para permitir que el motor ejecute la secuencia de comandos de "cambio" escrita en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENTO)<br /> </td>
+   <td>Este evento se activa para permitir que el motor ejecute la secuencia de comandos de "cambio" escrita en el campo. La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENTO)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENTO</td>
-   <td>Este evento se activa cada vez que se hace clic en el campo. permite al motor ejecutar la secuencia de comandos de "clic" escrita en el campo. La sintaxis para activar el evento es<br /> (widget)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENTO)<br /> </td>
+   <td>Este evento se activa cada vez que se hace clic en el campo. permite al motor ejecutar la secuencia de comandos de "clic" escrita en el campo. La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENTO)<br /> </td>
   </tr>
  </tbody>
 </table>
 
-#### API implementadas por widget {#apis-implemented-by-widget}
+#### API implementadas por la utilidad {#apis-implemented-by-widget}
 
 La estructura de apariencia llama a algunas funciones de la utilidad que se implementan en las utilidades personalizadas. La utilidad debe implementar las siguientes funciones:
 
@@ -135,7 +138,7 @@ La estructura de apariencia llama a algunas funciones de la utilidad que se impl
    <td>Centra la atención en el campo y llama a XFA_CLICK_EVENTO.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: cadena </em>que representa el error<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Nota</strong>: Aplicable solo para formularios HTML5.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: cadena </em>que representa el error<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Nota</strong>: Aplicable solo para formularios HTML5.</p> </td>
    <td>Envía un mensaje de error y un tipo de error a la utilidad. La utilidad muestra el error.</td>
   </tr>
   <tr>
@@ -186,11 +189,11 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Matriz de objetos que se mostrarán como opciones. Cada objeto contiene dos propiedades -<br /> save: valor para guardar, mostrar: para mostrar.<br /> <br /> </td>
+   <td>Matriz de objetos que se mostrarán como opciones. Cada objeto contiene dos propiedades:<br /> save: valor para guardar, mostrar: valor para mostrar.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>editable</p> <p><strong>Nota</strong>: Aplicable solo para formularios HTML5.<br /> </p> </td>
-   <td>Si el valor es true, la entrada de texto personalizada se activa en la utilidad.<br /> </td>
+   <td>Si el valor es true, la entrada de texto personalizada está habilitada en la utilidad.<br /> </td>
   </tr>
   <tr>
    <td>displayValue<br /> </td>
@@ -212,11 +215,11 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contiene el valor de visualización y guardado <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;guardar valor&gt;}</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contiene el valor de visualización y guardado <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td>
    <td>Añade un elemento a la lista.</td>
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice del elemento que se va a eliminar de la lista<br /> </em><br /><br /> </td>
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice del elemento que se va a quitar de la lista<br /> </em><br /> <br /> </td>
    <td>Elimina una opción de la lista.</td>
   </tr>
   <tr>
@@ -246,7 +249,7 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
   </tr>
   <tr>
    <td>values</td>
-   <td><p>Matriz de valores (activado/desactivado/neutro).</p> <p>Es una matriz de valores para los diferentes estados de checkButton. values[0] es el valor cuando el estado está activado, values[1] es el valor cuando el estado está desactivado,<br /> values[2] es el valor cuando el estado es NEUTRAL. La longitud de la matriz de valores es igual al valor de la opción de estado.<br /> </p> </td>
+   <td><p>Matriz de valores (activado/desactivado/neutro).</p> <p>Es una matriz de valores para los diferentes estados de checkButton. values[0] es el valor cuando el estado está activado, values[1] es el valor cuando el estado está desactivado,<br /> valores[2] es el valor cuando el estado es NEUTRAL. La longitud de la matriz de valores es igual al valor de la opción de estado.<br /> </p> </td>
   </tr>
   <tr>
    <td>estados</td>
