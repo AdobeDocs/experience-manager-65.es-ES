@@ -1,8 +1,8 @@
 ---
 title: Configuración del Conector para IBM Content Manager
 seo-title: Configuración del Conector para IBM Content Manager
-description: Configure Connector for IBM Content Manager para habilitar la comunicación entre los formularios AEM y IBM Content Manager.
-seo-description: Configure Connector for IBM Content Manager para habilitar la comunicación entre los formularios AEM y IBM Content Manager.
+description: Configure Connector for IBM Content Manager para habilitar la comunicación entre AEM formularios y IBM Content Manager.
+seo-description: Configure Connector for IBM Content Manager para habilitar la comunicación entre AEM formularios y IBM Content Manager.
 uuid: 3d55169d-93e3-4d4e-b18b-2a3394e1de3b
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
 # Configuración del Conector para IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
-Connector for IBM Content Manager permite la comunicación entre formularios AEM y IBM Content Manager. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia](https://www.adobe.com/go/learn_aemforms_services_63)de servicios.
+Connector for IBM Content Manager permite la comunicación entre AEM formularios y IBM Content Manager. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Configurar la conexión de IBM Content Manager {#configure-the-ibm-content-manager-connection}
 
@@ -32,6 +35,6 @@ Connector for IBM Content Manager permite la comunicación entre formularios AEM
 
 Si introduce un alias dataStore, un nombre de usuario o una contraseña incorrectos, obtendrá los siguientes resultados, en función de si el conector del repositorio de contenido para IBM Content Manager se está ejecutando actualmente:
 
-* Si se detiene el servicio, al guardar la información de configuración del servicio no aparece ningún error. Sin embargo, la próxima vez que inicie el servicio, se generará una excepción y el servicio no se iniciará.
+* Si se detiene el servicio, al guardar la información de configuración del servicio no aparece ningún error. Sin embargo, la próxima vez que inicio el servicio, se generará una excepción y el servicio no se inicio.
 * Si se inicia el servicio, al guardar la información de configuración del servicio, el servicio intenta validar la información de las credenciales inmediatamente. En este caso, se produce un error y la información de configuración no se guarda.
 
