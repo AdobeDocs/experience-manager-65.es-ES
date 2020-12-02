@@ -37,19 +37,19 @@ A los efectos de este análisis, supongamos que se utiliza el siguiente document
  </DDX>
 ```
 
-En este documento DDX, observe que al atributo de origen se le asigna el valor `inDoc`. En situaciones en las que solo se pasa un documento PDF de entrada al servicio Compilador y se devuelve un documento PDF, y se invoca la `invokeOneDocument` operación, asigne el valor `inDoc` al atributo de origen PDF. Al invocar la `invokeOneDocument` operación, el `inDoc` valor es una clave predefinida que debe especificarse en el documento DDX.
+Dentro de este documento DDX, observe que al atributo de origen se le asigna el valor `inDoc`. En situaciones en las que solo se pasa un documento PDF de entrada al servicio Ensamblador y se devuelve un documento PDF y se invoca la operación `invokeOneDocument`, asigne el valor `inDoc` al atributo de origen PDF. Al invocar la operación `invokeOneDocument`, el valor `inDoc` es una clave predefinida que debe especificarse en el documento DDX.
 
-Por el contrario, al pasar dos o más documentos PDF de entrada al servicio Ensamblador, puede invocar la `invokeDDX` operación. En este caso, asigne el nombre de archivo del documento PDF de entrada al `source` atributo.
+Por el contrario, al pasar dos o más documentos PDF de entrada al servicio Ensamblador, puede invocar la operación `invokeDDX`. En este caso, asigne el nombre de archivo del documento PDF de entrada al atributo `source`.
 
-El servicio de cifrado no tiene que formar parte de la instalación de formularios AEM para cifrar un documento PDF con una contraseña. Consulte [Codificación y descifrado de Documentos](/help/forms/developing/encrypting-decrypting-pdf-documents.md)PDF.
-
->[!NOTE]
->
->Para obtener más información sobre el servicio de ensamblador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+El servicio de cifrado no tiene que formar parte de la instalación de AEM formularios para cifrar un documento PDF con una contraseña. Consulte [Cifrar y descifrar Documentos PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
 
 >[!NOTE]
 >
->Para obtener más información sobre un documento DDX, consulte [Servicio de ensamblador y Referencia](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
+>Para obtener más información sobre el servicio de ensamblador, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
+>[!NOTE]
+>
+>Para obtener más información sobre un documento DDX, consulte [Servicio de ensamblador y Referencia DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -72,10 +72,10 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requerido si los AEM Forms están implementados en JBoss)
-* jbossall-client.jar (requerido si los AEM Forms se implementan en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
-si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
+si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Crear un cliente de ensamblado**
 
@@ -83,7 +83,7 @@ Antes de realizar una operación de ensamblador mediante programación, debe cre
 
 **Hacer referencia a un documento DDX existente**
 
-Se debe hacer referencia a un documento DDX para montar un documento PDF. Por ejemplo, considere el documento DDX que se introdujo en esta sección. Para cifrar un documento PDF, el documento DDX debe contener el `PasswordEncryptionProfile` elemento .
+Se debe hacer referencia a un documento DDX para montar un documento PDF. Por ejemplo, considere el documento DDX que se introdujo en esta sección. Para cifrar un documento PDF, el documento DDX debe contener el elemento `PasswordEncryptionProfile`.
 
 **Hacer referencia a un documento PDF no seguro**
 
@@ -91,15 +91,15 @@ Se debe hacer referencia a un documento PDF no seguro y pasarlo al servicio del 
 
 **Definición de opciones de tiempo de ejecución**
 
-Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de la `AssemblerOptionSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de clase `AssemblerOptionSpec` en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Cifrar el documento**
 
-Después de crear el cliente del servicio Ensamblador, haga referencia al documento DDX que contiene información de codificación, haga referencia a un documento PDF no seguro y defina las opciones de tiempo de ejecución, puede invocar la `invokeOneDocument` operación. Dado que solo se está pasando un documento PDF de entrada al servicio de ensamblador (y se devuelve un documento), puede utilizar la `invokeOneDocument` operación en lugar de la `invokeDDX` .
+Después de crear el cliente del servicio Ensamblador, haga referencia al documento DDX que contiene información de codificación, haga referencia a un documento PDF no seguro y defina las opciones de tiempo de ejecución, puede invocar la operación `invokeOneDocument`. Dado que solo se está pasando un documento PDF de entrada al servicio Ensamblador (y se devuelve un documento), puede utilizar la operación `invokeOneDocument` en lugar de la operación `invokeDDX`.
 
 **Guardar el documento PDF codificado**
 
-Si solo se pasa un documento PDF al servicio Ensamblador, el servicio Ensamblador devuelve un solo documento en lugar de un objeto de colección. Es decir, al invocar la `invokeOneDocument` operación, se devuelve un solo documento. Dado que el documento DDX al que se hace referencia en esta sección contiene información de codificación, el servicio Ensamblador devuelve un documento PDF cifrado con una contraseña.
+Si solo se pasa un documento PDF al servicio Ensamblador, el servicio Ensamblador devuelve un solo documento en lugar de un objeto de colección. Es decir, al invocar la operación `invokeOneDocument`, se devuelve un solo documento. Dado que el documento DDX al que se hace referencia en esta sección contiene información de codificación, el servicio Ensamblador devuelve un documento PDF cifrado con una contraseña.
 
 **Consulte también**
 
@@ -117,44 +117,44 @@ Si solo se pasa un documento PDF al servicio Ensamblador, el servicio Ensamblado
 
 1. Cree un cliente de ensamblador.
 
-   * Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión.
-   * Cree un `AssemblerServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un `java.io.FileInputStream` objeto que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
-   * Cree un `com.adobe.idp.Document` objeto utilizando su constructor y pasando el `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Haga referencia a un documento PDF no seguro.
 
-   * Cree un `java.io.FileInputStream` objeto utilizando su constructor y pasando la ubicación de un documento PDF no seguro.
-   * Cree un `com.adobe.idp.Document` objeto y pase el `java.io.FileInputStream` objeto que contiene el documento PDF. Este `com.adobe.idp.Document` objeto se pasa al `invokeOneDocument` método .
+   * Cree un objeto `java.io.FileInputStream` utilizando su constructor y pasando la ubicación de un documento PDF no seguro.
+   * Cree un objeto `com.adobe.idp.Document` y pase el objeto `java.io.FileInputStream` que contiene el documento PDF. Este objeto `com.adobe.idp.Document` se pasa al método `invokeOneDocument`.
 
 1. Configure las opciones de tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` objeto que almacene opciones de tiempo de ejecución mediante su constructor.
-   * Configure las opciones de tiempo de ejecución para cumplir los requisitos comerciales invocando un método que pertenece al `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, invoque el `AssemblerOptionSpec` método del `setFailOnError` objeto y pase `false`.
+   * Cree un objeto `AssemblerOptionSpec` que almacene las opciones de tiempo de ejecución mediante su constructor.
+   * Configure las opciones de tiempo de ejecución para satisfacer los requisitos comerciales invocando un método que pertenece al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, invoque el método `AssemblerOptionSpec` del objeto `setFailOnError` y pase `false`.
 
 1. Cifrar el documento.
 
-   Invoque el `AssemblerServiceClient` método del `invokeOneDocument` objeto y pase los valores siguientes:
+   Invoque el método `AssemblerServiceClient` del objeto `invokeOneDocument` y pase los siguientes valores:
 
-   * Un `com.adobe.idp.Document` objeto que representa el documento DDX. Asegúrese de que este documento DDX contenga el valor `inDoc` del elemento de origen PDF.
-   * Un `com.adobe.idp.Document` objeto que contiene el documento PDF no seguro.
-   * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos.
+   * Un objeto `com.adobe.idp.Document` que representa el documento DDX. Asegúrese de que este documento DDX contenga el valor `inDoc` para el elemento de origen PDF.
+   * Un objeto `com.adobe.idp.Document` que contiene el documento PDF no seguro.
+   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución, incluido el nivel predeterminado de fuente y registro de trabajos.
 
-   El `invokeOneDocument` método devuelve un `com.adobe.idp.Document` objeto que contiene un documento PDF con contraseña cifrada.
+   El método `invokeOneDocument` devuelve un objeto `com.adobe.idp.Document` que contiene un documento PDF con contraseña cifrada.
 
 1. Guarde el documento PDF cifrado.
 
-   * Cree un `java.io.File` objeto y asegúrese de que la extensión del nombre de archivo sea .pdf.
-   * Invocar el `Document` método del `copyToFile` objeto para copiar el contenido del `Document` objeto en el archivo. Asegúrese de utilizar el `Document` objeto que devolvió el `invokeOneDocument` método.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión del nombre de archivo sea .pdf.
+   * Invoque el método `Document` del objeto `copyToFile` para copiar el contenido del objeto `Document` en el archivo. Asegúrese de utilizar el objeto `Document` que devolvió el método `invokeOneDocument`.
 
 **Consulte también**
 
 [Inicio rápido (modo SOAP): Compilación de un documento PDF cifrado mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-## Compilación de un documento PDF cifrado mediante la API de servicio web {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
+## Compilación de un documento PDF cifrado mediante la API de servicio Web {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 
 1. Incluir archivos de proyecto.
 
@@ -162,14 +162,14 @@ Si solo se pasa un documento PDF al servicio Ensamblador, el servicio Ensamblado
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` por la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que aloja AEM Forms.
 
 1. Cree un cliente de ensamblador.
 
-   * Cree un `AssemblerServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
-   * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `AssemblerServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
-   * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `AssemblerServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio.
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `AssemblerServiceClient.Endpoint.Binding`. Convierta el valor devuelto a `BasicHttpBinding`.
+   * Establezca el campo `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
       * Asigne el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -179,41 +179,41 @@ Si solo se pasa un documento PDF al servicio Ensamblador, el servicio Ensamblado
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento DDX.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
-   * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
-   * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
+   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento DDX.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en el que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
+   * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
 
 1. Haga referencia a un documento PDF no seguro.
 
-   * Cree un `BLOB` objeto con su constructor. El `BLOB` objeto se utiliza para almacenar el documento PDF de entrada. Este `BLOB` objeto se pasa al `invokeOneDocument` como argumento.
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF de entrada y el modo en el que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la `System.IO.FileStream` propiedad del `Length` objeto.
-   * Rellene la matriz de bytes con datos de flujo invocando el `System.IO.FileStream` método `Read` del objeto y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
-   * Rellene el `BLOB` objeto asignando su `MTOM` campo con el contenido de la matriz de bytes.
+   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento PDF de entrada. Este objeto `BLOB` se pasa a `invokeOneDocument` como argumento.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF de entrada y el modo en el que se abre el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de flujo que se va a leer.
+   * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
 
 1. Configure las opciones de tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` objeto que almacene opciones de tiempo de ejecución mediante su constructor.
-   * Configure las opciones de tiempo de ejecución para cumplir los requisitos comerciales asignando un valor a un miembro de datos que pertenece al `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, asigne `false` al miembro de datos del `AssemblerOptionSpec` objeto `failOnError` .
+   * Cree un objeto `AssemblerOptionSpec` que almacene las opciones de tiempo de ejecución mediante su constructor.
+   * Configure las opciones de tiempo de ejecución para satisfacer los requisitos comerciales asignando un valor a un miembro de datos que pertenece al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Ensamblador que continúe procesando un trabajo cuando se produzca un error, asigne `false` al miembro de datos `AssemblerOptionSpec` del objeto `failOnError`.
 
 1. Cifrar el documento.
 
-   Invoque el `AssemblerServiceClient` método del `invokeOneDocument` objeto y pase los valores siguientes:
+   Invoque el método `AssemblerServiceClient` del objeto `invokeOneDocument` y pase los siguientes valores:
 
-   * Un `BLOB` objeto que representa el documento DDX
-   * Un `BLOB` objeto que representa el documento PDF no seguro
-   * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución
+   * Un objeto `BLOB` que representa el documento DDX
+   * Un objeto `BLOB` que representa el documento PDF no seguro
+   * Un objeto `AssemblerOptionSpec` que especifica opciones de tiempo de ejecución
 
-   El `invokeOneDocument` método devuelve un `BLOB` objeto que contiene un documento PDF cifrado.
+   El método `invokeOneDocument` devuelve un objeto `BLOB` que contiene un documento PDF cifrado.
 
 1. Guarde el documento PDF cifrado.
 
-   * Cree un `System.IO.FileStream` objeto invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF cifrado y el modo en el que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `BLOB` objeto devuelto por el `invokeOneDocument` método. Rellene la matriz de bytes obteniendo el valor del miembro de `BLOB` datos del `MTOM` objeto.
-   * Cree un `System.IO.BinaryWriter` objeto invocando su constructor y pasando el `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el `System.IO.BinaryWriter` método `Write` del objeto y pasando la matriz de bytes.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento PDF cifrado y el modo en el que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `BLOB` que el método `invokeOneDocument` devolvió. Rellene la matriz de bytes obteniendo el valor del miembro de datos `BLOB` del objeto `MTOM`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
 **Consulte también**
 
