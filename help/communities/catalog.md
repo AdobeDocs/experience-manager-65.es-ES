@@ -20,14 +20,14 @@ ht-degree: 1%
 
 # Función de catálogo {#catalog-feature}
 
-Los componentes [`Enablement Assignments`](assignments.md) y `Enablement Catalog` del grupo Comunidades en el navegador de componentes son componentes de una comunidad [de](overview.md#enablement-community)habilitación.
+Los componentes [`Enablement Assignments`](assignments.md) y `Enablement Catalog` que se encuentran en el grupo Comunidades en el navegador de componentes son componentes de una [comunidad de habilitación](overview.md#enablement-community).
 
-El `Enablement Catalog` componente permite a los miembros de la comunidad acceder a un catálogo de recursos [de](resources.md)habilitación. El uso de etiquetas AEM es una parte importante de la administración de la lista de recursos de activación de un catálogo (consulte [Etiquetado de recursos](tag-resources.md)de habilitación).
+El componente `Enablement Catalog` permite a los miembros de la comunidad acceder a un catálogo de [recursos de habilitación](resources.md). El uso de etiquetas AEM es una parte importante de la administración de la lista de recursos de habilitación de un catálogo (consulte [Etiquetado de recursos de habilitación](tag-resources.md)).
 
-En el tutorial [Introducción a AEM Communities para la habilitación](getting-started-enablement.md) , consulte la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio](enablement-published-site.md) publicado.
+En el tutorial [Introducción a AEM Communities para habilitar](getting-started-enablement.md), vea la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio publicado](enablement-published-site.md).
 
 ## Información adicional {#additional-information}
 
 Puede encontrar más información en la página [Catalog Essentials](catalog-developer-essentials.md) para desarrolladores.
 
-La función [de](functions.md#catalog-function) catálogo está disponible al crear un sitio [de](sites-console.md)comunidad.
+La [función de catálogo](functions.md#catalog-function) está disponible al crear un [sitio de comunidad](sites-console.md).
