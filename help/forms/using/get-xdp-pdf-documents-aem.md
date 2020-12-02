@@ -1,8 +1,8 @@
 ---
 title: Obtención de documentos XDP y PDF en AEM Forms
 seo-title: Obtención de documentos XDP y PDF en AEM Forms
-description: AEM Forms permite cargar formularios y recursos admitidos para su uso con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
-seo-description: AEM Forms permite cargar formularios y recursos admitidos para su uso con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
+description: AEM Forms permite cargar formularios y recursos admitidos para utilizarlos con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
+seo-description: AEM Forms permite cargar formularios y recursos admitidos para utilizarlos con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,6 +11,9 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -19,23 +22,23 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ## Información general {#overview}
 
-Puede importar los formularios desde el sistema de archivos local al repositorio de CRX cargándolos en AEM Forms. La operación de carga es compatible con los siguientes tipos de recursos:
+Puede importar los formularios desde el sistema de archivos local al repositorio de CRX, cargándolos en AEM Forms. La operación de carga es compatible con los siguientes tipos de recursos:
 
 * Plantillas de formulario (formularios XFA)
-* Formularios PDF
+* PDF forms
 * Documento (documentos PDF planos)
 
 Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. Puede cargar un recurso del tipo `Resource`, solo junto con un formulario XFA en un archivo ZIP.
 
 >[!NOTE]
 >
->Asegúrese de que es miembro del `form-power-users` grupo para poder cargar archivos XDP. Póngase en contacto con el administrador para convertirse en miembro del grupo.
+>Asegúrese de que es miembro del grupo `form-power-users` para poder cargar archivos XDP. Póngase en contacto con el administrador para convertirse en miembro del grupo.
 
 ## Carga de formularios {#uploading-forms}
 
-1. Para iniciar sesión en la interfaz de usuario de AEM Forms, acceda a `https://'[server]:[port]'/aem/forms.html`.
+1. Inicie sesión en la interfaz de usuario de AEM Forms accediendo a `https://'[server]:[port]'/aem/forms.html`.
 1. Vaya a la carpeta en la que desea cargar el formulario o la carpeta que contiene los formularios.
-1. En la barra de herramientas de acciones, toque **Crear > Carga** de archivos.
+1. En la barra de herramientas de acciones, toque **Crear > Carga de archivo**.
 
    ![Archivos de la opción de almacenamiento local en Crear](assets/step.png)
 
@@ -61,19 +64,19 @@ Una vez completada la carga, un flujo de trabajo en segundo plano genera miniatu
 
 ### Modo protegido {#protected-mode}
 
-El servidor de AEM Forms permite ejecutar código JavaScript. Un código JavaScript malintencionado puede dañar un entorno de AEM Forms. El modo protegido restringe el uso de AEM Forms para ejecutar archivos XDP solo desde ubicaciones y recursos de confianza. Todos los XDP disponibles en la interfaz de usuario de AEM Forms se consideran recursos de confianza.
+El servidor de AEM Forms le permite ejecutar código JavaScript. Un código JavaScript malicioso puede dañar un entorno de AEM Forms. El modo protegido restringe a AEM Forms para que ejecute archivos XDP únicamente desde ubicaciones y recursos de confianza. Todos los XDP disponibles en la interfaz de usuario de AEM Forms se consideran recursos de confianza.
 
 El modo protegido está activado de forma predeterminada. Si es necesario, puede desactivar el modo protegido:
 
-1. Inicie sesión en AEM Web Console como administrador. La dirección URL es https://&#39;[server]:[port]&#39;/system/console/configMgr
-1. Abra Configuraciones de formularios móviles para editarlas.
+1. Inicie sesión en AEM consola web como administrador. La dirección URL es https://&#39;[server]:[port]&#39;/system/console/configMgr
+1. Abra Configuraciones móviles de Forms para editarlas.
 1. Anule la selección de la opción Modo protegido y haga clic en **Guardar**. El modo protegido está desactivado.
 
-## Actualización de formularios XFA a los que se hace referencia {#updating-referenced-xfa-forms}
+## Actualización de formularios XFA referenciados {#updating-referenced-xfa-forms}
 
 En AEM Forms, una plantilla de formulario XFA puede ser referida por un formulario adaptable u otra plantilla de formulario XFA. Además, una plantilla puede hacer referencia a un recurso u otra plantilla XFA.
 
-Un formulario adaptable que hace referencia a un XFA tiene sus campos enlazados con los campos disponibles en el XFA. Al actualizar una plantilla de formulario, el formulario adaptable asociado intenta sincronizarse con el XFA. Para obtener más información, consulte [Sincronización de formularios adaptables con el XFA](../../forms/using/synchronizing-adaptive-forms-xfa.md)asociado.
+Un formulario adaptable que hace referencia a un XFA tiene sus campos enlazados con los campos disponibles en el XFA. Al actualizar una plantilla de formulario, el formulario adaptable asociado intenta sincronizarse con el XFA. Para obtener más información, consulte [Sincronización de formularios adaptables con el XFA](../../forms/using/synchronizing-adaptive-forms-xfa.md) asociado.
 
 La eliminación de una plantilla de formulario daña el formulario adaptable o la plantilla de formulario dependientes. Este tipo de formulario adaptable se conoce a veces informalmente como un formulario sucio. En la interfaz de usuario de AEM Forms, puede encontrar los formularios sucios de las dos formas siguientes.
 
@@ -82,7 +85,7 @@ La eliminación de una plantilla de formulario daña el formulario adaptable o l
 
 ![Advertencia para un formulario adaptable sin sincronizar después de actualizar el XFA asociado](assets/dirtyaf.png)
 
-Se mantiene un indicador para indicar si un formulario adaptable está sucio. Esta información está disponible en la página de propiedades del formulario, junto con los metadatos del formulario. Solo para formularios adaptables sucios, una propiedad de metadatos `Model Refresh` muestra `Recommended` el valor.
+Se mantiene un indicador para indicar si un formulario adaptable está sucio. Esta información está disponible en la página de propiedades del formulario, junto con los metadatos del formulario. Solo para formularios adaptables sucios, una propiedad de metadatos `Model Refresh` muestra el valor `Recommended`.
 
 ![Indicación de que un formulario adaptable no está sincronizado con el modelo XFA](assets/model-refresh.png)
 
