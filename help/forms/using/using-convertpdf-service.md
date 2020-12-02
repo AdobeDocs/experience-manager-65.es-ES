@@ -1,8 +1,8 @@
 ---
 title: Servicio ConvertPDF
 seo-title: Servicio ConvertPDF
-description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos PostScript o de imagen.
-seo-description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos PostScript o de imagen.
+description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos de imagen o PostScript.
+seo-description: Utilice el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos de imagen o PostScript.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -30,7 +30,7 @@ Puede realizar lo siguiente con el servicio Convertir PDF:
 
 ## Configurar propiedades del servicio   {#properties}
 
-Puede utilizar el servicio **** AEMFD ConvertPDF en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola de AEM es `https://[host]:'port'/system/console/configMgr`.
+Puede utilizar el **servicio AEMFD ConvertPDF** en AEM consola para configurar las propiedades de este servicio. La dirección URL predeterminada de AEM consola es `https://[host]:'port'/system/console/configMgr`.
 
 ## Uso del servicio {#using-the-service}
 
@@ -131,11 +131,13 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Uso del servicio ConvertPDF con flujos de trabajo AEM {#using-convertpdf-service-with-aem-workflows}
+### Uso del servicio ConvertPDF con flujos de trabajo de AEM {#using-convertpdf-service-with-aem-workflows}
 
 La ejecución del servicio ConvertPDF desde un flujo de trabajo es similar a la ejecución desde JSP/Servlet.
 
-La única diferencia estriba en ejecutar el servicio desde JSP/Servlet, el objeto documento recupera automáticamente una instancia del objeto ResourceResolver desde el objeto ResourceResolverHelper. Este mecanismo automático no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Documento utiliza el objeto ResourceResolver proporcionado para leer contenido del repositorio.
+La única diferencia estriba en ejecutar el servicio desde JSP/Servlet, el objeto documento recupera automáticamente una instancia del objeto ResourceResolver desde el objeto ResourceResolverHelper. Este mecanismo automático
+no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Documento utiliza
+se proporcionó el objeto ResourceResolver para leer el contenido del repositorio.
 
 El siguiente proceso de flujo de trabajo de muestra convierte el documento de entrada en un documento PostScript. El código se escribe en ECMAScript y el documento se pasa como carga útil del flujo de trabajo:
 
