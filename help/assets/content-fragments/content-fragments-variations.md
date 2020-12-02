@@ -21,21 +21,21 @@ ht-degree: 15%
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-[Las variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para utilizarlas en canales o escenarios específicos.
+[Las ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) variaciones son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para utilizarlas en canales o escenarios específicos.
 
 Desde la ficha **Variaciones** puede:
 
-* [Introduzca el contenido](#authoring-your-content) del fragmento
-* [Crear y administrar variaciones](#managing-variations) del contenido **principal**
+* [Introduzca el ](#authoring-your-content) contenido del fragmento
+* [Crear y administrar ](#managing-variations) variaciones del  **** contenido principal
 
 Realizar una serie de otras acciones en función del tipo de datos que se esté editando; por ejemplo:
 
-* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
-* Seleccione Texto [](#rich-text)enriquecido, Texto [](#plain-text) sin formato y [Marcado](#markdown) para editar
+* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment)  (imágenes)
+* Seleccione entre [Texto enriquecido](#rich-text), [Texto sin formato](#plain-text) y [Markdown](#markdown) para editarlo
 
 * [Cargar contenido](#uploading-content)
 
-* [Estadísticas](#viewing-key-statistics) de clave de vista (acerca de texto multilínea)
+* [Estadísticas](#viewing-key-statistics)  de clave de vista (acerca de texto multilínea)
 * [Resumir texto](#summarizing-text)
 
 * [Sincronizar variaciones con contenido principal](#synchronizing-with-master)
@@ -46,15 +46,15 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 ## Creación de contenido {#authoring-your-content}
 
-Cuando abra el fragmento de contenido para editarlo, la ficha **Variaciones** estará abierta de forma predeterminada. Aquí puede crear el contenido, para el formato principal o cualquier variación que tenga. Puede hacer lo siguiente:
+Cuando abra el fragmento de contenido para editarlo, la ficha **Variaciones** se abrirá de forma predeterminada. Aquí puede crear el contenido, para el formato principal o cualquier variación que tenga. Puede hacer lo siguiente:
 
 * realice ediciones directamente en la ficha **Variaciones**
-* abra el editor [de pantalla](#full-screen-editor) completa para:
+* abra el [editor de pantalla completa](#full-screen-editor) para:
 
-   * seleccione el [formato](#formats)
-   * consulte más opciones de edición (para formato de texto [](#rich-text) enriquecido)
+   * seleccione el [Formato](#formats)
+   * consulte más opciones de edición (para formato [Texto enriquecido](#rich-text))
 
-   * acceder a una serie de [acciones](#actions)
+   * acceder a un rango de [acciones](#actions)
 
 Por ejemplo:
 
@@ -66,11 +66,11 @@ Por ejemplo:
 
 * Edición de un fragmento con contenido estructurado
 
-   Un fragmento estructurado contiene varios campos, de varios tipos de datos, que se definieron en el modelo de contenido. Para cualquier campo multilínea, está disponible el editor [de pantalla](#full-screen-editor) completa.
+   Un fragmento estructurado contiene varios campos, de varios tipos de datos, que se definieron en el modelo de contenido. Para cualquier campo multilínea, está disponible el [editor de pantalla completa](#full-screen-editor).
 
    ![cfm-6420-16](assets/cfm-6420-16.png)
 
-### Editor en pantalla completa {#full-screen-editor}
+### Editor de pantalla completa {#full-screen-editor}
 
 Al editar un campo de texto de varias líneas, puede abrir el editor de pantalla completa:
 
@@ -79,22 +79,22 @@ Al editar un campo de texto de varias líneas, puede abrir el editor de pantalla
 El editor de pantalla completa proporciona:
 
 * Acceso a varias [acciones](#actions)
-* Según el [formato](#formats), opciones de formato adicionales (texto[](#rich-text)enriquecido)
+* Según el [formato](#formats), opciones de formato adicionales ([Texto enriquecido](#rich-text))
 
 ### Acciones {#actions}
 
-También están disponibles las siguientes acciones (para todos los [formatos](#formats)) cuando está abierto el editor de pantalla completa (es decir, texto multilínea):
+También están disponibles las siguientes acciones (para todos los formatos [](#formats)) cuando está abierto el editor de pantalla completa (es decir, texto multilínea):
 
-* Seleccione el [formato](#formats) (Texto[](#rich-text)enriquecido, Texto [sin formato,](#plain-text) [Marcado](#markdown))
+* Seleccione el [formato](#formats) ([texto enriquecido](#rich-text), [texto sin formato,](#plain-text) [Markdown](#markdown))
 
 * [Mostrar estadísticas de texto](#viewing-key-statistics)
 
 * [Cargar contenido](#uploading-content)
-* [Sincronizar con formato principal](#synchronizing-with-master) (al editar una variación)
+* [Sincronizar con formato principal](#synchronizing-with-master)  (al editar una variación)
 * [Resumir texto](#summarizing-text)
-* [Anotar](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) el texto
+* [](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) Anotar el texto
 
-* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
+* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment)  (imágenes)
 
 ### Formatos {#formats}
 
@@ -129,11 +129,11 @@ La edición de texto enriquecido le permite dar formato:
    * Corrector ortográfico
    * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 
-También se puede acceder a [las acciones](#actions) desde el editor de pantalla completa.
+También se puede acceder a las [acciones](#actions) desde el editor de pantalla completa.
 
 ### Texto sin formato {#plain-text}
 
-El texto sin formato permite una rápida entrada de contenido sin formato ni información de marcas. También puede abrir el editor de pantalla completa para realizar más [acciones](#actions).
+El texto sin formato permite una rápida entrada de contenido sin formato ni información de marcas. También puede abrir el editor en pantalla completa para más [acciones](#actions).
 
 >[!CAUTION]
 >
@@ -143,7 +143,7 @@ El texto sin formato permite una rápida entrada de contenido sin formato ni inf
 
 >[!NOTE]
 >
->Para obtener más información, consulte la documentación de [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) .
+>Para obtener más información, consulte la documentación de [Markdown](/help/assets/content-fragments/content-fragments-markdown.md).
 
 Esto le permite dar formato al texto mediante el uso de la marca. Puede definir:
 
@@ -157,7 +157,7 @@ Esto le permite dar formato al texto mediante el uso de la marca. Puede definir:
 * Bloques de código
 * Escapes de barra invertida
 
-También puede abrir el editor de pantalla completa para realizar más [acciones](#actions).
+También puede abrir el editor en pantalla completa para más [acciones](#actions).
 
 >[!CAUTION]
 >
@@ -234,9 +234,9 @@ Para realizar anotaciones en un fragmento:
 
 1. Se abrirá un cuadro de diálogo: Aquí puede introducir la anotación.
 
-1. Cierre el editor de pantalla completa y **guarde** el fragmento.
+1. Cierre el editor de pantalla completa y **Guarde** el fragmento.
 
-### Visualización, Edición, Eliminación De Anotaciones {#viewing-editing-deleting-annotations}
+### Visualización, edición y eliminación de anotaciones {#viewing-editing-deleting-annotations}
 
 Anotaciones:
 
@@ -248,27 +248,27 @@ Anotaciones:
 
 * Al eliminar todo el texto al que se aplicó la anotación, ésta también se elimina.
 
-* Se puede enumerar y eliminar seleccionando la ficha **Anotaciones** en el editor de fragmentos.
+* Puede enumerarse y eliminarse seleccionando la ficha **Anotaciones** en el editor de fragmentos.
 
    ![cfm-6420-25](assets/cfm-6420-25.png)
 
-* Se puede ver y eliminar en la [línea de tiempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) del fragmento seleccionado.
+* Se puede ver y eliminar en [Línea de tiempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) para el fragmento seleccionado.
 
 ### Inserción de recursos en el fragmento {#inserting-assets-into-your-fragment}
 
-Para facilitar el proceso de creación de fragmentos de contenido, puede añadir [Recursos](/help/assets/manage-assets.md) (imágenes) directamente al fragmento.
+Para facilitar el proceso de creación de fragmentos de contenido, puede agregar [Recursos](/help/assets/manage-assets.md) (imágenes) directamente al fragmento.
 
-Se añadirán a la secuencia de párrafos del fragmento sin ningún formato; el formato se puede realizar cuando se utiliza o hace referencia al [fragmento en una página](/help/sites-authoring/content-fragments.md).
+Se añadirán a la secuencia de párrafos del fragmento sin ningún formato; el formato se puede realizar cuando se utiliza o hace referencia al fragmento [en una página](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >
 >Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe realizarse en el editor de fragmentos.
 >
->Sin embargo, el formato del recurso (por ejemplo, el tamaño) debe realizarse en el editor [de](/help/sites-authoring/content-fragments.md)páginas. La representación del recurso en el editor de fragmentos se realiza únicamente para crear el flujo de contenido.
+>Sin embargo, el formato del recurso (por ejemplo, el tamaño) debe realizarse en el [editor de páginas](/help/sites-authoring/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza únicamente para crear el flujo de contenido.
 
 >[!NOTE]
 >
->There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>Existen varios métodos para agregar [imágenes](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o a la página.
 
 1. Coloque el cursor en la posición en la que desee agregar la imagen.
 1. Utilice el icono **Insertar recurso** para abrir el cuadro de diálogo de búsqueda.
@@ -308,7 +308,7 @@ Para crear una nueva variación:
 
    >[!NOTE]
    >
-   >Cuando se crea una nueva variación, siempre es **Master** el que se copia, no la variación que está abierta actualmente.
+   >Cuando se crea una nueva variación, siempre se copia **Master**, no la variación que está abierta actualmente.
 
 ### Edición de una variación {#editing-a-variation}
 
@@ -323,25 +323,25 @@ Puede realizar cambios en el contenido de la variación después de:
 
 Para cambiar el nombre de una variación existente:
 
-1. Open your fragment and select **Variations** from the side panel.
+1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccione **Cambiar nombre** en la lista desplegable **Acciones** .
+1. Seleccione **Cambiar nombre** en la lista desplegable **Acciones**.
 
 1. Introduzca el nuevo **Título** o **Descripción** en el cuadro de diálogo resultante.
 
-1. Confirme la acción **Cambiar nombre** .
+1. Confirme la acción **Cambiar nombre**.
 
 >[!NOTE]
 >
->Esto solo afecta al **título** de la variación.
+>Esto solo afecta a la variación **Título**.
 
 ### Eliminación de una variación {#deleting-a-variation}
 
 Para eliminar una variación existente:
 
-1. Open your fragment and select **Variations** from the side panel.
+1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccione **Eliminar** en la lista desplegable **Acciones** .
+1. Seleccione **Eliminar** en la lista desplegable **Acciones**.
 
 1. Confirme la acción **Eliminar** en el cuadro de diálogo.
 
@@ -349,9 +349,9 @@ Para eliminar una variación existente:
 >
 >No puede eliminar **Master**.
 
-### Sincronización con el maestro {#synchronizing-with-master}
+### Sincronizando con el maestro {#synchronizing-with-master}
 
-**Master** es una parte integral de un fragmento de contenido y, por definición, contiene la copia maestra del contenido, mientras que las variaciones contienen las versiones individuales actualizadas y adaptadas de dicho contenido. Cuando Master se actualiza, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, tengan que propagarse a ellas.
+**** Masteris es una parte integral de un fragmento de contenido y, por definición, contiene la copia maestra del contenido, mientras que las variaciones contienen las versiones individuales actualizadas y adaptadas de dicho contenido. Cuando Master se actualiza, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, tengan que propagarse a ellas.
 
 Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Master. Esto le permite copiar automáticamente los cambios realizados en Master en la variación requerida.
 
@@ -365,12 +365,12 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 >
 >No está disponible como opción la transferencia de cambios *de una variación **a Principal***.
 
-1. Abra el fragmento de contenido en el editor de fragmentos. Asegúrese de que se ha editado la **página maestra** .
+1. Abra el fragmento de contenido en el editor de fragmentos. Asegúrese de que **Master** se ha editado.
 1. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
 
-   * el selector desplegable **Acciones** - **Sincronizar el elemento actual con el maestro**
+   * el selector desplegable **Acciones** - **Sincronizar el elemento actual con master**
 
-   * la barra de herramientas del editor de pantalla completa: **Sincronizar con el editor maestro**
+   * la barra de herramientas del editor de pantalla completa: **Sincronizar con master**
 
 1. El patrón y la variación se mostrarán en paralelo:
 
