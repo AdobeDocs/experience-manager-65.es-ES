@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +35,7 @@ En las siguientes páginas se proporcionan enlaces rápidos a algunas de las pri
 
 * [Componentes para la creación de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   Los componentes utilizados para crear contenido de página estándar se encuentran principalmente en los grupos **General**, **Columnas** y **Forms**.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 
