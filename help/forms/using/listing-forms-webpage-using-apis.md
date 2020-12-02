@@ -1,8 +1,8 @@
 ---
 title: Lista de formularios en una página web mediante API
 seo-title: Lista de formularios en una página web mediante API
-description: consulta mediante programación de Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas web.
-seo-description: consulta mediante programación de Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas web.
+description: Consulta mediante programación de Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas web.
+seo-description: Consulta mediante programación de Forms Manager para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas web.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 AEM Forms proporciona una API de búsqueda basada en REST que los desarrolladores web pueden utilizar para realizar consultas y recuperar un conjunto de formularios que cumplen los criterios de búsqueda. Las API se pueden utilizar para buscar formularios basados en diversos filtros. El objeto response contiene atributos de formulario, propiedades y puntos finales de procesamiento de los formularios.
 
-Para buscar formularios con la API de REST, envíe una solicitud GET al servidor en `https://'[server]:[port]'/libs/fd/fm/content/manage.json` los parámetros de consulta que se describen a continuación.
+Para buscar formularios con la API de REST, envíe una solicitud de GET al servidor en `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con los parámetros de consulta que se describen a continuación.
 
-## Query parameters {#query-parameters}
+## Parámetros de consulta {#query-parameters}
 
 <table>
  <tbody>
@@ -33,7 +33,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Especifica la función que se va a llamar. Para buscar formularios, establezca el valor del <code>func </code>atributo en <code>searchForms</code>.</p> <p>Por ejemplo, <code class="code">
+   <td><p>Especifica la función que se va a llamar. Para buscar formularios, establezca el valor del atributo <code>func </code>en <code>searchForms</code>.</p> <p>Por ejemplo, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Este parámetro es obligatorio.</em><br /> </p> </td>
   </tr>
@@ -94,7 +94,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
        <li>INTERRUPTOR DE ENCENDIDO: A termina con B si B es la parte final de A</li>
        <li>LIKE - Implementa el operador LIKE</li>
        <li>AND - Combinar varias afirmaciones</li>
-      </ul> <p><strong>Nota:</strong> <em>Los operadores GT, LT, GTEQ y LTEQ son aplicables a propiedades de tipo lineal como LONG, DOBLE y DATE.</em></p> </li>
+      </ul> <p><strong>Nota:los operadores </strong> <em>GT, LT, GTEQ y LTEQ son aplicables a propiedades de tipo lineal como LONG, DOBLE y DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -116,7 +116,7 @@ Para buscar formularios con la API de REST, envíe una solicitud GET al servidor
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Especifica si se recupera el contenido binario o no. El <code>includeXdp</code> atributo es aplicable a recursos de tipo <code>FORM</code>, <code>PDFFORM</code>y <code>PRINTFORM</code>.</td>
+   <td>Especifica si se recupera el contenido binario o no. El atributo <code>includeXdp</code> se aplica a los recursos de tipo <code>FORM</code>, <code>PDFFORM</code> y <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
