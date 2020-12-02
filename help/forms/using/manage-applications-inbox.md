@@ -52,20 +52,20 @@ Las tareas asignadas a un grupo aparecen en la Bandeja de entrada de todos los m
 
 1. Realice una de las acciones siguientes:
 
-   * Para delegar la tarea, toque **[!UICONTROL Delegar]**. Se Abre El Cuadro De Diálogo Delegar Elemento. Seleccione un usuario, agregue un comentario de forma opcional y toque **[!UICONTROL Aceptar]**.
+   * Para delegar la tarea, toque **[!UICONTROL Delegar]**. Se Abre El Cuadro De Diálogo Delegar Elemento. Seleccione un usuario, opcionalmente agregue un comentario y toque **[!UICONTROL Aceptar]**.
 
    ![delegate](assets/delegate.png)
 
-   * Para solicitar la tarea, toque **[!UICONTROL Abrir]**. Se abre el cuadro de diálogo Asignar a sí mismo. Toque **[!UICONTROL Continuar]** para reclamar la tarea. La tarea reclamada aparece con usted como el usuario asignado en la Bandeja de entrada.
+   * Para reclamar la tarea, toque **[!UICONTROL Abrir]**. Se abre el cuadro de diálogo Asignar a sí mismo. Toque **[!UICONTROL Continuar]** para reclamar la tarea. La tarea reclamada aparece con usted como el usuario asignado en la Bandeja de entrada.
 
    ![reclamar](assets/claim.png)
 
-### Detalles de vista y realización de acciones en tareas {#view-details-and-perform-actions-on-tasks}
+### Detalles de vista y realizar acciones en tareas {#view-details-and-perform-actions-on-tasks}
 
 Al abrir una tarea, puede realizar vistas de los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en el paso Asignar tarea del flujo de trabajo de Forms asociado.
 
 1. Toque para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
-1. Toque **Abrir** en detalles de tarea de vista y realice acciones. Se abre la vista de tarea detallada. En esta vista, puede realizar vistas en los detalles de tarea y realizar acciones en la tarea.
+1. Toque **Abrir** para ver los detalles de la tarea de vista y tome medidas. Se abre la vista de tarea detallada. En esta vista, puede realizar vistas en los detalles de tarea y realizar acciones en la tarea.
 
    >[!NOTE]
    >
@@ -77,28 +77,28 @@ La vista detallada de la tarea comprende las siguientes secciones:
 
 * Detalles de tarea
 * Formulario 
-* Detalles del flujo de trabajo
+* Detalles de flujo de trabajo
 * Barra de herramientas Acciones
 
-#### Task details {#task-details}
+#### Detalles de tarea {#task-details}
 
-La sección Detalles de Tarea muestra información sobre la tarea. La información mostrada depende de la configuración del paso [](/help/sites-developing/workflows-step-ref.md) Asignar tarea en el flujo de trabajo. En el ejemplo anterior se muestra la descripción, el estado, la fecha de inicio y el flujo de trabajo utilizados para la tarea. También permite adjuntar un archivo a la tarea.
+La sección Detalles de Tarea muestra información sobre la tarea. La información mostrada depende de la configuración del [paso Asignar tarea](/help/sites-developing/workflows-step-ref.md) del flujo de trabajo. En el ejemplo anterior se muestra la descripción, el estado, la fecha de inicio y el flujo de trabajo utilizados para la tarea. También permite adjuntar un archivo a la tarea.
 
 #### Formulario {#form}
 
 La ficha Formulario del área de contenido principal muestra los datos adjuntos del formulario y del campo enviados, si los hay.
 
-#### Workflow details {#workflow-details}
+#### Detalles de flujo de trabajo {#workflow-details}
 
-La ficha Detalles del flujo de trabajo de la parte superior muestra el progreso de la tarea en varias etapas del flujo de trabajo. Muestra las etapas completadas, actuales y pendientes de la tarea. Las etapas de un flujo de trabajo se definen en el paso [](/help/sites-developing/workflows-step-ref.md) Asignar tarea del flujo de trabajo asociado.
+La ficha Detalles del flujo de trabajo de la parte superior muestra el progreso de la tarea en varias etapas del flujo de trabajo. Muestra las etapas completadas, actuales y pendientes de la tarea. Las etapas de un flujo de trabajo se definen en el [paso Asignar tarea](/help/sites-developing/workflows-step-ref.md) del flujo de trabajo asociado.
 
-Además, la ficha muestra el historial de tareas de cada etapa completada en el flujo de trabajo. Puede tocar Detalles **[!UICONTROL de]** Vista en una etapa completa para conocer los detalles de esa etapa. Muestra comentarios, datos adjuntos de formulario y tarea, estado, fechas de inicio y finalización, etc., sobre la tarea.
+Además, la ficha muestra el historial de tareas de cada etapa completada en el flujo de trabajo. Puede tocar **[!UICONTROL Detalles de Vista]** para una etapa completa para conocer los detalles de esa etapa. Muestra comentarios, datos adjuntos de formulario y tarea, estado, fechas de inicio y finalización, etc., sobre la tarea.
 
 ![workflow-details](assets/workflow-details.png)
 
-#### Actions toolbar {#actions-toolbar}
+#### Barra de herramientas Acciones {#actions-toolbar}
 
-La barra de herramientas Acciones muestra todas las opciones disponibles para la tarea. Mientras Guardar, Restablecer y Delegar son acciones predeterminadas, otras acciones disponibles se configuran en el paso [](/help/sites-developing/workflows-step-ref.md)Asignar tarea. En el ejemplo anterior, Aprobar y Rechazar están configurados en el flujo de trabajo.
+La barra de herramientas Acciones muestra todas las opciones disponibles para la tarea. Mientras Guardar, Restablecer y Delegar son acciones predeterminadas, otras acciones disponibles se configuran en [Asignar paso de tarea](/help/sites-developing/workflows-step-ref.md). En el ejemplo anterior, Aprobar y Rechazar están configurados en el flujo de trabajo.
 
 A medida que realiza una acción en la tarea, esta continúa en el flujo de trabajo.
 
@@ -106,20 +106,20 @@ A medida que realiza una acción en la tarea, esta continúa en el flujo de trab
 
 AEM bandeja de entrada solo muestra tareas activas. Las tareas completadas no aparecen en la lista. Sin embargo, puede utilizar filtros de la Bandeja de entrada para filtrar tareas en función de varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización, etc. Para vista tareas completadas:
 
-1. En AEM Bandeja de entrada, toque ![alternar panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
-1. Toque el acordeón Estado **[!UICONTROL de]** Tarea y seleccione **[!UICONTROL Completar]**. Aparecerán todas las tareas completadas.
+1. En AEM Bandeja de entrada, toque ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
+1. Toque **[!UICONTROL Estado de Tarea]** acordeón y seleccione **[!UICONTROL Completar]**. Aparecerán todas las tareas completadas.
 
    ![filter](assets/filter.png)
 
 1. Toque para seleccionar una tarea y haga clic en **[!UICONTROL Abrir]**.
 
-La tarea se abre para mostrar el documento o el formulario adaptable asociado con la tarea. En el caso de los formularios adaptables, la tarea muestra el formulario adaptable de sólo lectura o su documento de registro en PDF, tal como se ha configurado en la ficha Formulario/Documento del paso [del flujo de trabajo](/help/sites-developing/workflows-step-ref.md)Asignar Tarea.
+La tarea se abre para mostrar el documento o el formulario adaptable asociado con la tarea. En el caso de los formularios adaptables, la tarea muestra el formulario adaptable de sólo lectura o su documento de registro en PDF, tal como se ha configurado en la ficha Formulario/Documento del [paso del flujo de trabajo Asignar Tarea](/help/sites-developing/workflows-step-ref.md).
 
 La sección Detalles de la tarea muestra información como la acción realizada, el estado de la tarea, la fecha de inicio y la fecha de finalización.
 
 ![tarea completada](assets/completed-task.png)
 
-La ficha Detalles **[!UICONTROL del]** flujo de trabajo muestra cada paso del flujo de trabajo. Toque los detalles **[!UICONTROL de la]** Vista para obtener información detallada.
+La ficha **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del flujo de trabajo. Toque **[!UICONTROL Detalles de la Vista]** para obtener información detallada.
 
 ![complete-tarea-workflow](assets/completed-task-workflow.png)
 
@@ -131,7 +131,7 @@ El propietario de un modelo de flujo de trabajo no puede vista elementos relacio
 
 1. Utilice uno de los siguientes métodos para agregar índices:
 
-   * Cree los siguientes nodos en CRX DE en `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` con las propiedades respectivas especificadas en la tabla siguiente:
+   * Cree los siguientes nodos en CRX DE en `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` con las propiedades correspondientes, tal como se especifica en la tabla siguiente:
 
       | Nodo | Propiedad | Tipo |
       |---|---|---|
@@ -142,7 +142,7 @@ El propietario de un modelo de flujo de trabajo no puede vista elementos relacio
       | allowExpliedSharing | allowExpliedSharing | BOOLEANO |
 
 
-   * Implemente los índices mediante un paquete AEM. Puede utilizar un proyecto [AEM de Archetype](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype) para crear un paquete de AEM implementable. Utilice el siguiente código de muestra para agregar índices a un proyecto de Arquetipo AEM:
+   * Implemente los índices mediante un paquete AEM. Puede utilizar un proyecto [AEM Archetype](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype) para crear un paquete de AEM implementable. Utilice el siguiente código de muestra para agregar índices a un proyecto de Arquetipo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
