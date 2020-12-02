@@ -26,13 +26,13 @@ Este enfoque difiere fundamentalmente de la forma en que la plataforma AEM gesti
 
 La plataforma AEM utiliza un almacén de nodos que replica el contenido del sitio del autor para publicarlo, mientras que AEM Communities utiliza un único almacén común para UGC que nunca se replica.
 
-Para el almacén UGC común, es necesario elegir un proveedor de recursos de [almacenamiento (SRP)](working-with-srp.md). Las opciones recomendadas son:
+Para el almacén UGC común, es necesario elegir un [proveedor de recursos de almacenamiento (SRP)](working-with-srp.md). Las opciones recomendadas son:
 
 * [DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional](dsrp.md)
 * [MSRP - Proveedor de recursos de Almacenamiento MongoDB](msrp.md)
 * [ASRP - Proveedor de recursos de Almacenamiento de Adobe](asrp.md)
 
-Otra opción SRP, [JSRP - Proveedor](jsrp.md)de recursos de Almacenamiento JCR, no admite un almacén UGC común para el autor y entornos de publicación para ambos accesos.
+Otra opción de SRP, [JSRP - Proveedor de recursos de Almacenamiento JCR](jsrp.md), no admite un almacén UGC común para el autor y entornos de publicación para ambos accesos.
 
 Requerir un almacén común resulta en las siguientes topologías recomendadas.
 
@@ -40,12 +40,12 @@ Requerir un almacén común resulta en las siguientes topologías recomendadas.
 >
 >Para AEM Communities, [UGC nunca se replica](working-with-srp.md#ugc-never-replicated).
 >
->Cuando la implementación no incluye un almacén [](working-with-srp.md)común, UGC solo estará visible en la instancia de publicación o autor AEM en la que se introdujo.
+>Cuando la implementación no incluye un [almacén común](working-with-srp.md), UGC solo estará visible en la instancia de publicación o autor AEM en la que se introdujo.
 
 
 >[!NOTE]
 >
->Para obtener más información sobre la plataforma AEM, consulte Implementaciones [](../../help/sites-deploying/recommended-deploys.md) recomendadas e [Introducción a la plataforma](../../help/sites-deploying/data-store-config.md)AEM.
+>Para obtener más información sobre la plataforma de AEM, consulte [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md) y [Introducción a la plataforma de AEM](../../help/sites-deploying/data-store-config.md).
 
 ## Para producción {#for-production}
 
@@ -53,15 +53,15 @@ El establecimiento de un almacén común para UGC es esencial y, por lo tanto, e
 
 Dos ejemplos:
 
-1. Si el volumen previsto de UGC es alto y es posible una instancia local de MongoDB, entonces la elección sería [MSRP](msrp.md).
+1. Si el volumen previsto de UGC es alto y es posible una instancia local de MongoDB, la opción sería [MSRP](msrp.md).
 
-1. Para un rendimiento óptimo del contenido de la página, la elección de un conjunto de servidores [de](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) publicación y [ASRP](asrp.md) proporcionaría una escala óptima de UGC con operaciones relativamente simples.
+1. Para un rendimiento óptimo del contenido de la página, la elección de [conjunto de servidores de publicación](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) y [ASRP](asrp.md) proporcionaría una escala óptima de UGC con operaciones relativamente simples.
 
 Para ambos, la implementación puede estar basada en cualquier micronúcleo OAK.
 
 Para elegir el almacén común apropiado, considere cuidadosamente las [características](working-with-srp.md#characteristics-of-srp-options) únicas de cada uno.
 
-Para obtener más información sobre los microkernals de Oak, visite Implementaciones [](../../help/sites-deploying/recommended-deploys.md)recomendadas.
+Para obtener más información sobre los microkernals de Oak, visite [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md).
 
 ### Granja de publicación TarMK {#tarmk-publish-farm}
 
@@ -86,7 +86,7 @@ Cuando la topología es un conjunto de servidores de publicación, los temas rel
 | Granja TarMK (predeterminada) | JCR | JCR | JSRP | No |
 | Oak Cluster | JCR | JCR | JSRP | Solo para entorno de publicación |
 
-## Para el desarrollo {#for-development}
+## Para desarrollo {#for-development}
 
 Para entornos que no son de producción, [JSRP](jsrp.md) proporciona simplicidad en la configuración de un entorno de desarrollo con una instancia de autor y una instancia de publicación.
 
@@ -102,7 +102,7 @@ Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, ta
 
    Explica las funciones de los usuarios y los grupos de usuarios en los entornos de creación y publicación.
 
-* Tienda [común UGC](working-with-srp.md)
+* UGC [almacén común](working-with-srp.md)
 
    Describe el almacenamiento de contenido de comunidad independiente del contenido del sitio.
 
