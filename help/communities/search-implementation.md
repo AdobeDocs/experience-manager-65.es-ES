@@ -18,11 +18,11 @@ ht-degree: 5%
 ---
 
 
-# Esenciales de búsqueda {#search-essentials}
+# Search Essentials {#search-essentials}
 
 ## Información general {#overview}
 
-La función de búsqueda es una característica esencial de AEM Communities. Además de las funciones de búsqueda [de plataforma](../../help/sites-deploying/queries-and-indexing.md) AEM, AEM Communities proporciona la API [de búsqueda](#ugc-search-api) UGC para buscar contenido generado por el usuario (UGC). UGC tiene propiedades únicas, ya que se introducen y almacenan por separado de otros datos de usuario y de contenido de AEM.
+La función de búsqueda es una característica esencial de AEM Communities. Además de las capacidades [AEM de búsqueda en la plataforma](../../help/sites-deploying/queries-and-indexing.md), AEM Communities proporciona la [API de búsqueda UGC](#ugc-search-api) con el propósito de buscar contenido generado por el usuario (UGC). UGC tiene propiedades únicas, ya que se introducen y almacenan por separado de otros datos de usuario y de contenido de AEM.
 
 En el caso de las comunidades, las dos cosas que generalmente se buscan son:
 
@@ -38,7 +38,7 @@ Esta sección de la documentación es de interés para los desarrolladores que c
 
 ## Nodos de seguridad y sombra {#security-and-shadow-nodes}
 
-Para un componente personalizado, es necesario utilizar los métodos [SocialResourceUtilities](socialutils.md#socialresourceutilities-package) . Los métodos de utilidad que crean y buscan UGC establecerán los nodos [de](srp.md#about-shadow-nodes-in-jcr) sombra necesarios y garantizarán que el miembro tenga los permisos correctos para la solicitud.
+Para un componente personalizado, es necesario utilizar los métodos [SocialResourceUtilities](socialutils.md#socialresourceutilities-package). Los métodos de utilidad que crean y buscan UGC establecerán los [nodos de sombra](srp.md#about-shadow-nodes-in-jcr) necesarios y asegurarán que el miembro tenga los permisos correctos para la solicitud.
 
 Lo que no se administra mediante las utilidades de SRP son propiedades relacionadas con la moderación.
 
@@ -46,55 +46,55 @@ Consulte [SRP y UGC Essentials](srp-and-ugc.md) para obtener información sobre 
 
 ## API de búsqueda UGC {#ugc-search-api}
 
-El almacén [común](working-with-srp.md) UGC lo proporciona uno de los diversos proveedores de recursos de almacenamiento (SRP), cada uno de los cuales posiblemente tenga un idioma de consulta nativo diferente. Por lo tanto, independientemente del SRP elegido, el código personalizado debe utilizar métodos del paquete [de API de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) UGC (*com.adobe.cq.social.ugc.api*) que invocarán el lenguaje de consulta apropiado para el SRP seleccionado.
+El [almacén común de UGC](working-with-srp.md) lo proporciona uno de una variedad de proveedores de recursos de almacenamiento (SRP), cada uno de los cuales posiblemente tenga un idioma de consulta nativo diferente. Por lo tanto, independientemente del SRP elegido, el código personalizado debe utilizar métodos del [paquete de API UGC](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) que invocarán el lenguaje de consulta apropiado para el SRP seleccionado.
 
 ### Búsquedas ASRP {#asrp-searches}
 
-Para [ASRP](asrp.md), UGC se almacena en la nube de Adobe. Aunque UGC no está visible en CRX, la [moderación](moderate-ugc.md) está disponible tanto en los entornos de autor como de publicación. El uso de la API [de búsqueda](#ugc-search-api) UGC funciona para ASRP igual que para otros SRP.
+Para [ASRP](asrp.md), UGC se almacena en la nube de Adobe. Aunque UGC no está visible en CRX, [moderación](moderate-ugc.md) está disponible tanto en los entornos de autor como de publicación. El uso de la [API de búsqueda UGC](#ugc-search-api) funciona para ASRP igual que para otros SRP.
 
 Actualmente no existen herramientas para administrar las búsquedas ASRP.
 
-Al crear propiedades personalizadas en las que se pueden realizar búsquedas, es necesario cumplir los requisitos [de](#naming-of-custom-properties)nomenclatura.
+Al crear propiedades personalizadas en las que se pueden realizar búsquedas, es necesario cumplir los [requisitos de nomenclatura](#naming-of-custom-properties).
 
 ### Búsquedas del MSRP {#msrp-searches}
 
-Para [MSRP](msrp.md), UGC se almacena en MongoDB configurado para utilizar Solr para la búsqueda. UGC no estará visible en CRX, pero la [moderación](moderate-ugc.md) está disponible tanto en los entornos de autor como de publicación.
+Para [MSRP](msrp.md), UGC se almacena en MongoDB configurado para utilizar Solr para la búsqueda. UGC no estará visible en CRX, pero [moderación](moderate-ugc.md) está disponible desde los entornos de creación y publicación.
 
 Respecto del MSRP y Solr:
 
 * El Solr incrustado para la plataforma AEM no se utiliza para MSRP.
 * Si se utiliza un Solr remoto para la plataforma AEM, puede compartirse con el MSRP, pero deben utilizar colecciones diferentes.
 * Solr se puede configurar para la búsqueda estándar o para la búsqueda multilingüe (MLS).
-* Para obtener más información sobre la configuración, consulte [Configuración](msrp.md#solr-configuration) de Solr para MSRP.
+* Para obtener más información sobre la configuración, consulte [Configuración de Solr](msrp.md#solr-configuration) para MSRP.
 
-Las funciones de búsqueda personalizada deben utilizar la API [de búsqueda de](#ugc-search-api)UGC.
+Las características de búsqueda personalizada deben utilizar la [API de búsqueda UGC](#ugc-search-api).
 
-Al crear propiedades personalizadas en las que se pueden realizar búsquedas, es necesario cumplir los requisitos [de](#naming-of-custom-properties)nomenclatura.
+Al crear propiedades personalizadas en las que se pueden realizar búsquedas, es necesario cumplir los [requisitos de nomenclatura](#naming-of-custom-properties).
 
 ### Búsquedas JSRP {#jsrp-searches}
 
 Para [JSRP](jsrp.md), UGC se almacena en [Oak](../../help/sites-deploying/platform.md) y solo se puede ver en el repositorio de la instancia de creación o publicación AEM en la que se introdujo.
 
-Dado que, normalmente, se introduce UGC en el entorno de publicación, para los sistemas de producción de varios publicadores es necesario configurar un clúster [de](topologies.md)publicación, no un conjunto de servidores de publicación, de modo que el contenido introducido esté visible desde todos los editores.
+Dado que UGC suele introducirse en el entorno de publicación, para los sistemas de producción de varios publicadores es necesario configurar un [clúster de publicación](topologies.md), no un conjunto de servidores de publicación, de modo que el contenido introducido esté visible desde todos los editores.
 
 Para JSRP, la UGC introducida en el entorno de publicación nunca estará visible en el entorno de creación. Por lo tanto, todas las tareas de [moderación](moderate-ugc.md) se producen en el entorno de publicación.
 
-Las funciones de búsqueda personalizada deben utilizar la API [de búsqueda de](#ugc-search-api)UGC.
+Las características de búsqueda personalizada deben utilizar la [API de búsqueda UGC](#ugc-search-api).
 
 #### Indexación de roble {#oak-indexing}
 
 Aunque los índices Oak no se crean automáticamente para la búsqueda de la plataforma AEM, a partir de AEM 6.2 se han agregado para AEM Communities para mejorar el rendimiento y proporcionar compatibilidad con la paginación al presentar los resultados de búsqueda UGC.
 
-Si las propiedades personalizadas están en uso y las búsquedas son lentas, será necesario crear índices adicionales para las propiedades personalizadas a fin de aumentar su rendimiento. Para mantener la portabilidad, cumpla los requisitos [de](#naming-of-custom-properties) nomenclatura al crear propiedades personalizadas en las que se pueden realizar búsquedas.
+Si las propiedades personalizadas están en uso y las búsquedas son lentas, será necesario crear índices adicionales para las propiedades personalizadas a fin de aumentar su rendimiento. Para mantener la portabilidad, cumpla los [requisitos de nomenclatura](#naming-of-custom-properties) al crear propiedades personalizadas en las que se pueden realizar búsquedas.
 
-Para modificar índices existentes o crear índices personalizados, consulte Consultas [Oak e Indexación](../../help/sites-deploying/queries-and-indexing.md).
+Para modificar índices existentes o crear índices personalizados, consulte [Consultas Oak e indización](../../help/sites-deploying/queries-and-indexing.md).
 
-El [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) está disponible en ACS AEM Commons. Proporciona:
+El [Administrador de índices Oak](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) está disponible en ACS AEM Commons. Proporciona:
 
 * Una vista de índices existentes.
 * Capacidad para iniciar la reindexación.
 
-Para vista de los índices Oak existentes en el [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), la ubicación es:
+Para vista de los índices Oak existentes en [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), la ubicación es:
 
 * `/oak:index/socialLucene`
 
@@ -138,7 +138,7 @@ A continuación se indican algunas de las propiedades que se pueden buscar y que
 
 ### Asignación de nombres a las propiedades personalizadas {#naming-of-custom-properties}
 
-Al agregar propiedades personalizadas, para que dichas propiedades puedan ser visibles a la hora de ordenar y buscar con la API [de búsqueda](#ugc-search-api)UGC, es *necesario* agregar un sufijo al nombre de la propiedad.
+Al agregar propiedades personalizadas, para que esas propiedades sean visibles para ordenar y buscar creadas con la [API de búsqueda UGC](#ugc-search-api), es *necesario* agregar un sufijo al nombre de la propiedad.
 
 El sufijo es para los idiomas de consulta que utilizan un esquema:
 
@@ -158,7 +158,7 @@ Solr es un ejemplo de lenguaje de consulta que utiliza un esquema.
 
 **Notas:**
 
-* *El texto* es una cadena con token, *la cadena* no. Use *Texto* para búsquedas borrosas (más o menos así).
+* ** Texto es una cadena con token, no  ** Stringis. Use *Texto* para búsquedas borrosas (más o menos así).
 
 * Para tipos de varios valores, añada ‘s’ al sufijo, por ejemplo:
 
@@ -167,7 +167,7 @@ Solr es un ejemplo de lenguaje de consulta que utiliza un esquema.
 
 ## Filtros {#filters}
 
-Los componentes que incluyen el sistema [de](essentials-comments.md) comentarios admiten el parámetro de filtro además de sus extremos.
+Los componentes que incluyen el [sistema de comentarios](essentials-comments.md) admiten la adición del parámetro de filtro a sus extremos.
 
 La sintaxis del filtro para la lógica Y y O se expresa de la siguiente manera (se muestra antes de ser codificada con la dirección URL):
 
@@ -179,7 +179,7 @@ La sintaxis del filtro para la lógica Y y O se expresa de la siguiente manera (
 
    * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-La implementación predeterminada del componente [](search.md) Buscar utiliza esta sintaxis como se puede ver en la dirección URL que abre la página Resultados de la búsqueda en la guía [Componentes de la](components-guide.md)comunidad. Para experimentar, vaya a [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
+La implementación predeterminada del [componente de búsqueda](search.md) utiliza esta sintaxis como se puede ver en la dirección URL que abre la página Resultados de la búsqueda en la [Guía de componentes de la comunidad](components-guide.md). Para experimentar, vaya a [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
 Los operadores de filtro son:
 
@@ -227,13 +227,13 @@ La consulta Solr real se mostrará con la dirección URL codificada en el regist
 
 La consulta a solr es: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
 
-El valor del `q` parámetro es la consulta. Una vez descodificada la codificación de la URL, la consulta se puede pasar a la herramienta Consulta de administración de Solr para depurar más.
+El valor del parámetro `q` es la consulta. Una vez descodificada la codificación de la URL, la consulta se puede pasar a la herramienta Consulta de administración de Solr para depurar más.
 
 ## Medios relacionados {#related-resources}
 
-* [Almacenamiento](working-with-srp.md) de contenido de la comunidad: analiza las opciones de SRP disponibles para una tienda común UGC.
+* [Almacenamiento](working-with-srp.md)  de contenido de la comunidad: analiza las opciones de SRP disponibles para una tienda común UGC.
 * [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización](socialutils.md) de SocialUtils: métodos de utilidad para SRP que reemplazan a SocialUtils.
-* [Componentes](search.md) de búsqueda y resultados de búsqueda: Añadir la función de búsqueda UGC en una plantilla.
+* [SocialUtils Refactoring](socialutils.md) : métodos de utilidad para SRP que reemplazan a SocialUtils.
+* [Componentes](search.md)  de búsqueda y resultados de búsqueda: Añadir la función de búsqueda UGC en una plantilla.
 
