@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# Panoramic images{#panoramic-images}
+# Imágenes panorámicas{#panoramic-images}
 
 En esta sección se describe cómo trabajar con el visor de imágenes panorámicas para procesar imágenes panorámicas esféricas y así disfrutar de una experiencia de visualización inmersiva de 360° de una habitación, propiedad, ubicación o paisaje.
 
-See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
+Consulte también [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panorámico-image2](assets/panoramic-image2.png)
 
 ## Carga de recursos para su uso con el visor de imágenes panorámicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -33,11 +33,11 @@ Para que un recurso cargado se considere una imagen panorámica esférica que se
 Puede anular la configuración de proporción de aspecto predeterminada de 2 en CRXDE Lite de la siguiente manera:
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-* Etiquetado con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-authoring/tags.md).
+* Se etiqueta con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-authoring/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente `Panoramic Media` WCM.
 
-Para cargar recursos para utilizarlos con el visor de imágenes panorámicas, consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
+Para cargar recursos para usarlos con el visor de imágenes panorámicas, consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
 ## Configuración de Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
 
@@ -46,10 +46,10 @@ Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe 
 1. [Inicie sesión en la instancia de Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de compañía.
 
 1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes.]**
-1. En la página Publicación del servidor de imágenes, en el menú desplegable **[!UICONTROL Publicar contexto]** cerca de la parte superior, seleccione Servicio **[!UICONTROL de imágenes.]**
+1. En la página Publicación del servidor de imágenes, en el menú desplegable **[!UICONTROL Publicar contexto]** cerca de la parte superior, seleccione **[!UICONTROL Servicio de imágenes.]**
 
-1. En la misma página de publicación de Image Server, busque el encabezado Atributos de **[!UICONTROL solicitud.]**
-1. En el encabezado Atributos de solicitud, busque Límite de tamaño de imagen de **[!UICONTROL respuesta.]** A continuación, en los campos de anchura y altura asociados, aumente el tamaño máximo permitido de imagen para las imágenes panorámicas.
+1. En la misma página de publicación de Image Server, busque el encabezado **[!UICONTROL Atributos de solicitud.]**
+1. Bajo el encabezado Atributos de solicitud, localice **[!UICONTROL Límite de tamaño de imagen de respuesta.]** A continuación, en los campos de anchura y altura asociados, aumente el tamaño máximo permitido de imagen para las imágenes panorámicas.
 
    Dynamic Media Classic (Scene7) tiene un límite de 25.000.000 píxeles. El tamaño máximo permitido para imágenes con una proporción de aspecto de 2:1 es de 7000 x 3500. Sin embargo, para las pantallas de escritorio típicas, 4096 x 2048 píxeles es suficiente.
 
@@ -72,11 +72,11 @@ Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe 
 
 Si ha colocado una imagen en el componente de medios panorámicos de WCM y el marcador de posición del componente se ha contraído, es posible que desee solucionar los problemas siguientes:
 
-* Si se produce un error 403 Prohibido, es posible que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de Límite **[!UICONTROL de tamaño de imagen de]** respuesta en [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Si se produce un error 403 Prohibido, es posible que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de **[!UICONTROL Responder al límite de tamaño de imagen]** en [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Para ver un &quot;bloqueo no válido&quot; en el recurso o &quot;error de análisis&quot; en la página, marque el modo de confusión de solicitudes y el modo de bloqueo de solicitudes para asegurarse de que están desactivados.
 * Si se produce un error de lienzo contaminado, configure una ruta de archivo de definición de conjunto de reglas e Invalide CTN para las solicitudes anteriores del recurso de imagen.
-* Si la calidad de la imagen es muy baja después de una solicitud de imagen con un tamaño superior al límite admitido, compruebe que el ajuste Atributos de codificación **[!UICONTROL JPEG > Calidad]** no esté vacío. Una configuración típica del campo **[!UICONTROL Calidad]** es `95`. La configuración se encuentra en la página Servidor de imágenes. Para acceder a la página, consulte [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Si la calidad de imagen es muy baja después de una solicitud de imagen con un tamaño superior al límite admitido, compruebe que la configuración **[!UICONTROL Atributos de codificación JPEG > Calidad]** no esté vacía. Una configuración típica del campo **[!UICONTROL Calidad]** es `95`. La configuración se encuentra en la página Servidor de imágenes. Para acceder a la página, consulte [Configuración de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Vista previa de imágenes panorámicas {#previewing-panoramic-images}
 
@@ -84,4 +84,4 @@ Consulte [Vista previa de recursos](/help/assets/previewing-assets.md).
 
 ## Publicación de imágenes panorámicas {#publishing-panoramic-images}
 
-Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md).
+Consulte [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).
