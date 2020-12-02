@@ -10,6 +10,9 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+workflow-type: tm+mt
+source-wordcount: '2322'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +25,7 @@ Conocimiento de CSS y del marco LESS.
 
 ## Qué se puede personalizar {#what-can-be-customized}
 
-El artículo enumera las clases css de formularios adaptables disponibles públicamente. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como cuadros de diálogo y barras de estado que muestran advertencias, está fuera del alcance de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Menos) solo cuando no pueda aplicar estilo a los componentes con el editor [de](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)temas.
+El artículo lista clases css de formularios adaptables disponibles al público. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como cuadros de diálogo y barras de estado que muestran advertencias, está fuera del alcance de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Menos) solo cuando no pueda aplicar estilo a los componentes con [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalización de estilos en formularios adaptables {#customizing-styles-in-adaptive-forms}
 
@@ -53,7 +56,7 @@ Actualmente, las variables LESS se definen solo para estas propiedades de los di
 
 ## Cambio del estilo de componente {#changing-component-style}
 
-Puede realizar cambios en el aspecto, el diseño, la posición y la visibilidad de los elementos. Para realizar esta tarea, cree o actualice los archivos .css personalizados para incluir las construcciones de estilo que se enumeran en este artículo.
+Puede realizar cambios en el aspecto, el diseño, la posición y la visibilidad de los elementos. Para lograr esta tarea, cree o actualice los archivos .css personalizados para incluir las construcciones de estilo enumeradas en este artículo.
 
 Para aplicar un estilo a un formulario adaptable, abra el formulario adaptable en para editarlo y abra las propiedades del contenedor de formularios adaptables, especifique la ruta de acceso del archivo CSS personalizado en la ficha básica. Las construcciones de estilo predeterminadas del formulario adaptable y sustituidas por las construcciones enumeradas en el archivo .css personalizado.
 
@@ -90,7 +93,7 @@ Un contenedor es el componente de nivel superior. Otros paneles y campos se encu
   </tr>
   <tr>
    <td><p><code>container-margin</code></p> </td>
-   <td><p>Margen para el contenedor</p> </td>
+   <td><p>Margen del contenedor</p> </td>
   </tr>
   <tr>
    <td><p><code>container-fontColor</code></p> </td>
@@ -137,7 +140,7 @@ Los campos incluyen etiquetas, utilidades, descripción de la ayuda (descripció
 
 ## Estilo de etiqueta {#label-styling}
 
-La **etiqueta** de elemento HTML utilizada para el campo incluye las clases **izquierda** o **arriba** , dependiendo de si la etiqueta está en la parte superior o izquierda.
+El elemento HTML **label** utilizado para el campo incluye las clases **left** o **top** según si la etiqueta está en la parte superior o en la izquierda.
 
 <table>
  <tbody>
@@ -168,7 +171,7 @@ La **etiqueta** de elemento HTML utilizada para el campo incluye las clases **iz
   </tr>
   <tr>
    <td><p><code>label-font-weight</code></p> </td>
-   <td>Propiedad de grosor de fuente CSS para la etiqueta de campo </td>
+   <td>Propiedad de peso de fuente CSS para la etiqueta de campo </td>
   </tr>
   <tr>
    <td><p><code>label-margin</code></p> </td>
@@ -177,11 +180,11 @@ La **etiqueta** de elemento HTML utilizada para el campo incluye las clases **iz
  </tbody>
 </table>
 
-Las reglas CSS de la etiqueta se aplican mediante la etiqueta **guideFieldLabel** . Si es un autor, sobrescriba esta regla para que los cambios personalizados sean visibles.
+Las reglas CSS de la etiqueta se aplican mediante la etiqueta **guideFieldLabel**. Si es un autor, sobrescriba esta regla para que los cambios personalizados sean visibles.
 
 ## Estilo de utilidades {#widgets-styling}
 
-Según el tipo, las utilidades también incluyen clases. Normalmente, los widgets incluyen la `guideFieldWidget` clase. Los widgets que se envían con HTML normalmente utilizan la entrada y selección de elementos HTML estándar. El estilo se realiza en consecuencia. No se puede aplicar estilo a una utilidad personalizada cambiando las variables.
+Según el tipo, las utilidades también incluyen clases. Normalmente, los widgets incluyen la clase `guideFieldWidget`. Los widgets que se envían con HTML normalmente utilizan la entrada y selección de elementos HTML estándar. El estilo se realiza en consecuencia. No se puede aplicar estilo a una utilidad personalizada cambiando las variables.
 
 <table>
  <tbody>
@@ -326,9 +329,9 @@ Un autor puede especificar el contenido de la Ayuda en los campos mediante los c
  </tbody>
 </table>
 
-## Terms and Conditions {#terms-and-conditions}
+## Términos y condiciones {#terms-and-conditions}
 
-La utilidad Términos y condiciones (TnC `` ``) permite especificar términos y condiciones. Puede personalizar la utilidad mediante las variables descritas en la tabla siguiente.
+La utilidad Términos y condiciones (TnC `` ``) permite especificar términos y condiciones. Puede personalizar la utilidad con las variables descritas en la tabla siguiente.
 
 <table>
  <tbody>
@@ -351,7 +354,7 @@ La utilidad Términos y condiciones (TnC `` ``) permite especificar términos y 
 
 Los botones también son widgets. Sin embargo, su estilo es ligeramente distinto al de los widgets. En los formularios adaptables, cualquiera de los siguientes elementos constituye un botón:
 
-* [inputtype = text]
+* input[type = text]
 * botón
 * elemento con clase .button
 
@@ -558,7 +561,7 @@ El widget de archivos adjuntos de formularios adaptables permite cargar archivos
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>Color del icono Vista previa (icono de Bootstrap) en el widget</p> </td>
+   <td><p>Color del icono de Previsualización (icono de Bootstrap) del widget</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
@@ -638,7 +641,7 @@ El siguiente es el código HTML del elemento de navegador de fichas (similar a l
 
 `</div>`
 
-Puede cambiar el estilo del navegador mediante reglas CSS que seleccionan los elementos con selectores **descendientes** . Por ejemplo, para agregar un estilo de decoración de texto a la etiqueta de anclaje:
+Puede cambiar el estilo del navegador mediante reglas CSS que seleccionan los elementos mediante selectores **descendant**. Por ejemplo, para agregar un estilo de decoración de texto a la etiqueta de anclaje:
 
 Navegador de fichas en la parte superior:
 
@@ -718,7 +721,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
 
 >[!NOTE]
 >
->Puede cambiar el icono de un navegador concreto proporcionando una clase CSS en el panel de creación, como por ejemplo &lt;CLASS_NAME>. Debe agregar un **&lt;CLASS_NAME>_nav** para el icono del navegador.
+>Puede cambiar el icono de un navegador concreto proporcionando una clase CSS en el panel de creación, como por ejemplo &lt;CLASS_NAME>. Agregue un **&lt;CLASS_NAME>_nav** para el icono del navegador.
 
 <table>
  <tbody>
@@ -764,7 +767,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr>
   <tr>
    <td><p><code>tabs-completed-font-color</code></p> </td>
-   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve true</p> </td>
+   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve verdadero</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-stepped-bg-color</code></p> </td>
@@ -828,7 +831,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr>
   <tr>
    <td><p><code>wizard-tabs-active-font-color</code></p> </td>
-   <td><p>Color de fuente cuando el panel está enfocado (centrado)</p> </td>
+   <td><p>Color de fuente cuando el panel está enfocado (enfocado)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td>
@@ -836,7 +839,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td>
-   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve true</p> </td>
+   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve verdadero</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td>
@@ -939,13 +942,13 @@ Un panel incluye una barra de herramientas opcional y su contenido.
  </tbody>
 </table>
 
-El nodo del panel se divide en navegadores y contenido. No `` `` hay un componente de estilo independiente para el contenido. Las variables descritas se aplican tanto al navegador como al contenido.
+El nodo del panel se divide en navegadores y contenido. No existe `` `` un componente de estilo independiente para el contenido. Las variables descritas se aplican tanto al navegador como al contenido.
 
 El panel superior (RootPanel) no tiene esta clase.
 
 ## Estilo móvil {#mobile-styling}
 
-## Header bar {#header-bar}
+## Barra de encabezado {#header-bar}
 
 Estas variables influyen en la barra de encabezado que está visible en un dispositivo móvil o en dispositivos de pantalla pequeña que contienen el título del panel y los navegadores siguiente y posterior.
 
@@ -1073,7 +1076,7 @@ Estas variables de la tabla siguiente influyen en el diseño de la barra de herr
 
 ## Variable específica del tema {#theme-specific-variable}
 
-El tema de inscripción **** simple en /etc/clientlibs/fd/af/guide/simpleEnregistration y la categoría `guide.theme.simpleEnrollment` también presentan algunas variables. Si desea crear un tema que mejore la inscripción simple, puede utilizar las siguientes &quot;variables adicionales&quot;:
+El tema de **inscripción simple** en /etc/clientlibs/fd/af/guide/simpleEnregistration y la categoría `guide.theme.simpleEnrollment` también presentan algunas variables. Si desea crear un tema que mejore la inscripción simple, puede utilizar las siguientes &quot;variables adicionales&quot;:
 
 <table>
  <tbody>
@@ -1115,7 +1118,7 @@ El tema de inscripción **** simple en /etc/clientlibs/fd/af/guide/simpleEnregis
   </tr>
   <tr>
    <td><p><code>tabs-bifercating-border-color</code></p> </td>
-   <td><p>Color de borde bifurcar contenedor en navegadores y panel</p> </td>
+   <td><p>Contenedor de bifurcación de color de borde en navegadores y panel</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-navigator-separator-color</code></p> </td>
