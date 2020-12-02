@@ -11,15 +11,15 @@ ht-degree: 11%
 ---
 
 
-# Extend Asset Editor {#extending-asset-editor}
+# Ampliar editor de recursos {#extending-asset-editor}
 
 El Editor de recursos es la página que se abre cuando se hace clic en un recurso encontrado a través del recurso compartido, lo que permite al usuario editar aspectos del recurso como metadatos, miniaturas, título y etiquetas.
 
-La configuración del editor mediante los componentes de edición predefinidos se trata en [Creación y configuración de una página](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)del editor de recursos.
+La configuración del editor que utiliza los componentes de edición predefinidos se trata en [Creación y configuración de una página del editor de recursos](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-Además de utilizar componentes de editor preexistentes, los desarrolladores también pueden crear sus [!DNL Adobe Experience Manager] propios componentes.
+Además de utilizar componentes de editor preexistentes, los desarrolladores [!DNL Adobe Experience Manager] también pueden crear sus propios componentes.
 
-## Creación de una plantilla de editor de recursos {#creating-an-asset-editor-template}
+## Crear una plantilla de editor de recursos {#creating-an-asset-editor-template}
 
 En Geometrixx se incluyen las siguientes páginas de muestra:
 
@@ -29,19 +29,19 @@ En Geometrixx se incluyen las siguientes páginas de muestra:
 
 ### Configurar Clientlib {#configuring-clientlib}
 
-[!DNL Assets] los componentes utilizan una extensión de la clientlib de edición de WCM. Los clientes suelen estar cargados en `init.jsp`.
+[!DNL Assets] los componentes utilizan una extensión de la clientlib de edición de WCM. Los clientlibs generalmente se cargan en `init.jsp`.
 
-En comparación con la carga de clientlib predeterminada (en core `init.jsp`), una [!DNL Assets] plantilla debe tener lo siguiente:
+En comparación con la carga de clientlib predeterminada (en el `init.jsp` del núcleo), una plantilla [!DNL Assets] debe tener lo siguiente:
 
-* La plantilla debe incluir la `cq.dam.edit` clientlib (en lugar de `cq.wcm.edit`).
+* La plantilla debe incluir la clientlib `cq.dam.edit` (en lugar de `cq.wcm.edit`).
 
 * La clientlib también debe incluirse en el modo WCM desactivado (por ejemplo, cargado en la **publicación**) para poder procesar los predicados, las acciones y las lentes.
 
-En la mayoría de los casos, la copia de la muestra existente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) debe satisfacer estas necesidades.
+En la mayoría de los casos, copiar la muestra existente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) debe satisfacer estas necesidades.
 
 ### Configurar acciones de JS {#configuring-js-actions}
 
-Algunos de los [!DNL Assets] componentes requieren funciones JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
+Algunos de los componentes [!DNL Assets] requieren funciones JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,7 +51,7 @@ El ejemplo carga este origen JavaScript en `head.jsp`(`/apps/geometrixx/componen
 
 ### Hojas de estilo adicionales {#additional-style-sheets}
 
-Algunos de los [!DNL Assets] componentes utilizan la biblioteca de widgets. Para procesarse correctamente en el contexto de contenido, se debe cargar una hoja de estilo adicional. El componente de acción de etiqueta requiere uno más.
+Algunos de los componentes [!DNL Assets] utilizan la biblioteca de widgets. Para procesarse correctamente en el contexto de contenido, se debe cargar una hoja de estilo adicional. El componente de acción de etiqueta requiere uno más.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -59,9 +59,9 @@ Algunos de los [!DNL Assets] componentes utilizan la biblioteca de widgets. Para
 
 ### Hoja de estilo de Geometrixx {#geometrixx-style-sheet}
 
-Los componentes de página de ejemplo requieren que todos los selectores tengan inicio con `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Práctica recomendada: Copie todos los `.asseteditor` selectores en la hoja de estilo y ajuste las reglas como desee.
+Los componentes de la página de muestra requieren que todos los selectores inicios con `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Práctica recomendada: Copie todos los selectores `.asseteditor` en la hoja de estilo y ajuste las reglas como desee.
 
-### FormChooser: Ajustes para recursos eventualmente cargados {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser: Ajustes para recursos cargados con el tiempo {#formchooser-adjustments-for-eventually-loaded-resources}
 
 El Editor de recursos utiliza el Selector de formularios, que le permite editar recursos (en este caso, recursos) en la misma página de formulario simplemente agregando un selector de formularios y la ruta del formulario a la dirección URL del recurso.
 
@@ -70,7 +70,7 @@ Por ejemplo:
 * Página de formato normal: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * Recurso cargado en la página de formulario: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-Los controladores de muestra `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) hacen lo siguiente:
+Los controladores de muestra de `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) hacen lo siguiente:
 
 * Detectan si se carga un recurso o si se debe mostrar el formulario sin formato.
 * Si se carga un recurso, se desactiva el modo WCM, ya que parsys solo se puede editar en una página de formulario sin formato.
@@ -120,11 +120,11 @@ En la parte HTML, utilice el conjunto de títulos anterior (ya sea un recurso o 
 <title><%= title %></title>
 ```
 
-## Creación de un componente de campo de formulario sencillo {#creating-a-simple-form-field-component}
+## Crear un componente de campo de formulario simple {#creating-a-simple-form-field-component}
 
 En este ejemplo se describe cómo crear un componente que muestre y muestre los metadatos de un recurso cargado.
 
-1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo `/apps/geometrixx/components/samplemeta`.
+1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo, `/apps/geometrixx/components/samplemeta`.
 1. Añada `content.xml` con el siguiente fragmento:
 
    ```xml
@@ -195,15 +195,15 @@ En este ejemplo se describe cómo crear un componente que muestre y muestre los 
    </div>
    ```
 
-1. Para que el componente esté disponible, hace falta poder editarlo. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. So that you can remove paragraphs, add a multi-value property `cq:actions` with a single value of `DELETE`.
+1. Para que el componente esté disponible, hace falta poder editarlo. Para hacer que un componente sea editable, en CRXDE Lite, agregue un nodo `cq:editConfig` de tipo primario `cq:EditConfig`. Para poder eliminar párrafos, agregue una propiedad de varios valores `cq:actions` con un valor único de `DELETE`.
 
-1. Vaya al navegador y, en la página de muestra (por ejemplo, `asseteditor.html`), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos.
+1. Vaya a su navegador y, en la página de muestra (por ejemplo, `asseteditor.html`), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos.
 
 1. En el modo de **edición**, el nuevo componente (por ejemplo, **Metadatos de muestra**) ya está disponible en la barra de tareas (que se encuentra en el grupo **Editor de recursos**). Inserte el componente. Para poder almacenar los metadatos, estos se deben agregar al formulario de metadatos.
 
 ## Modificar opciones de metadatos {#modifying-metadata-options}
 
-Puede modificar las Áreas de nombres disponibles en el formulario [de](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)metadatos.
+Puede modificar las Áreas de nombres disponibles en el [formulario de metadatos](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
 Los metadatos disponibles actualmente se definen en `/libs/dam/options/metadata`:
 
