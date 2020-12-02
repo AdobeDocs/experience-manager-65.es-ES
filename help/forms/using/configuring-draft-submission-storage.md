@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -32,17 +35,17 @@ Además del método predeterminado mencionado anteriormente, también hay una im
 
 >[!NOTE]
 >
->Cuando se utiliza la acción de envío de Forms Portal o se activa la opción Almacenar datos en el portal de formularios en un formulario adaptable, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar los datos de formulario en borrador o enviados en el repositorio de AEM. En su lugar, debe integrar los borradores y el componente de envío con un almacenamiento seguro como la base de datos de empresa para almacenar borradores y datos de formularios enviados.
+>Cuando se utiliza la acción de envío de Forms Portal o se activa la opción Almacenar datos en el portal de formularios en un formulario adaptable, los datos del formulario se almacenan en AEM repositorio. En un entorno de producción, se recomienda no almacenar datos de formulario borrador o enviados en AEM repositorio. En su lugar, debe integrar los borradores y el componente de envío con un almacenamiento seguro como la base de datos de empresa para almacenar borradores y datos de formularios enviados.
 >
->Para obtener más información, consulte [Ejemplo para integrar el componente de borradores y envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md).
+>Para obtener más información, consulte [Ejemplo para integrar los borradores y el componente de envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md).
 
 ## Configuración de los servicios de borradores y envíos de Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-En Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir el borrador del portal de **formularios y la configuración** de envío en modo de edición.
+En la Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir **Forms Portal Draft and Submission Configuration** en modo de edición.
 
 Especifique los valores de las propiedades en función de sus requisitos, tal como se describe a continuación:
 
-### Servicios predeterminados para almacenar datos en una instancia de publicación {#out-of-the-box-services-to-store-data-on-publish-instance}
+### Servicios predeterminados para almacenar datos en la instancia de publicación {#out-of-the-box-services-to-store-data-on-publish-instance}
 
 Los datos se replican de forma inversa en la instancia de autor configurada.
 
@@ -53,11 +56,11 @@ Los datos se replican de forma inversa en la instancia de autor configurada.
    <th>Value</th>
   </tr>
   <tr>
-   <td>Servicio de datos de borrador de Forms Portal(Identificador para el servicio de datos de borrador (<strong>draft.data.service</strong>))</td>
+   <td>Servicio de datos de borrador de Forms Portal(identificador para servicio de datos de borrador (<strong>draft.data.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de metadatos de borrador de Forms Portal (identificador para el servicio de metadatos de borrador (<strong>draft.metadata.service</strong>))</td>
+   <td>Servicio de metadatos de borrador de Forms Portal (identificador para el servicio de metadatos de borrador (<strong>draft.metadata.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td>
   </tr>
   <tr>
@@ -79,14 +82,14 @@ Los datos se insertan directamente en la instancia remota configurada
  <tbody>
   <tr>
    <th>Propiedad</th>
-   <th>Value</th>
+   <th>Valor</th>
   </tr>
   <tr>
-   <td>Servicio de datos de borrador de Forms Portal(Identificador para el servicio de datos de borrador (<strong>draft.data.service</strong>))</td>
+   <td>Servicio de datos de borrador de Forms Portal(identificador para servicio de datos de borrador (<strong>draft.data.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de metadatos de borrador de Forms Portal (identificador para el servicio de metadatos de borrador (<strong>draft.metadata.service</strong>))</td>
+   <td>Servicio de metadatos de borrador de Forms Portal (identificador para el servicio de metadatos de borrador (<strong>draft.metadata.service</strong>)</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
@@ -102,7 +105,7 @@ Los datos se insertan directamente en la instancia remota configurada
 
 Aparte de la configuración especificada arriba, proporcione información sobre la instancia de procesamiento remoto configurada.
 
-En Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir el servicio **de configuración de** AEM DS en modo de edición. En el cuadro de diálogo Servicio de configuración de AEM DS, proporcione información sobre el procesamiento de la URL del servidor, el nombre de usuario del servidor de procesamiento y la contraseña.
+En la Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir **AEM Servicio de configuración de DS** en modo de edición. En el cuadro de diálogo Servicio de configuración de AEM DS, proporcione información sobre el procesamiento de la dirección URL del servidor, el procesamiento del nombre de usuario del servidor y la contraseña.
 
 >[!NOTE]
 >
