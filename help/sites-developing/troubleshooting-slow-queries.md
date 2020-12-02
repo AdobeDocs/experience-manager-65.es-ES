@@ -20,23 +20,23 @@ ht-degree: 0%
 
 # Resolución de problemas de Consultas lentas{#troubleshooting-slow-queries}
 
-## Clasificaciones de Consulta lenta {#slow-query-classifications}
+## Clasificaciones de Consultas lentas {#slow-query-classifications}
 
 Existen tres clasificaciones principales de consultas lentas en AEM, enumeradas por gravedad:
 
-1. **consultas sin índice**
+1. **Consultas sin índice**
 
    * Consultas que **no** se resuelven en un índice y atraviesan el contenido del JCR para recopilar resultados
 
-1. **consultas poco restringidas (o con ámbito)**
+1. **Consultas poco restringidas (o con ámbito)**
 
    * Consultas que se resuelven en un índice, pero que deben recorrer todas las entradas de índice para recopilar resultados
 
-1. **consultas de conjuntos de resultados grandes**
+1. **Consultas de conjuntos de resultados grandes**
 
    * Consultas que devuelven un gran número de resultados
 
-Las dos primeras clasificaciones de consultas (sin índice y mal restringidas) son lentas, ya que obligan al motor de consulta Oak a inspeccionar cada resultado **potencial** (nodo de contenido o entrada de índice) para identificar qué pertenece al conjunto de resultados **real** .
+Las dos primeras clasificaciones de consultas (sin índice y mal restringidas) son lentas, porque obligan al motor de consulta Oak a inspeccionar cada **resultado potencial** (nodo de contenido o entrada de índice) para identificar qué pertenece al conjunto de resultados **real**.
 
 El acto de inspeccionar cada posible resultado es lo que se conoce como Traversing.
 
@@ -50,29 +50,29 @@ En AEM 6.3, de forma predeterminada, cuando se alcanza un recorrido de 100.000, 
 
 #### Durante el desarrollo {#during-development}
 
-Explicar **todas** las consultas y asegurarse de que sus planes de consulta no contengan el **/&amp;ast; en ellos se puede encontrar** una explicación. Ejemplo de plan de consulta de recorrido:
+Explicar **todas** consultas y asegurarse de que sus planes de consulta no contengan la **/&amp;ast; explicación de traverse** en ellos. Ejemplo de plan de consulta de recorrido:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
 #### Post-implementación {#post-deployment}
 
-* Monitoree las consultas `error.log` de recorrido sin índice:
+* Monitoree el `error.log` para consultas de recorrido sin índice:
 
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Este mensaje solo se registra si no hay ningún índice disponible y si la consulta potencialmente atraviesa muchos nodos. Los mensajes no se registran si hay un índice disponible, pero la cantidad que se va a recorrer es pequeña y, por lo tanto, rápida.
 
-* Visite la consola de operaciones de rendimiento [de](/help/sites-administering/operations-dashboard.md#query-performance) Consulta de AEM y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) las consultas lentas que buscan explicaciones de consulta de índice o transversales.
+* Visite la consola de operaciones [Rendimiento de Consulta](/help/sites-administering/operations-dashboard.md#query-performance) de AEM y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) consultas lentas que buscan explicaciones de consulta de índice o de recorrido.
 
-### Detección de Consultas con restricciones deficientes {#detecting-poorly-restricted-queries}
+### Detección de Consultas mal restringidas {#detecting-poorly-restricted-queries}
 
 #### Durante el desarrollo {#during-development-1}
 
 Explicar todas las consultas y asegurarse de que se resuelven en un índice ajustado para coincidir con las restricciones de propiedad de la consulta.
 
-* La cobertura del plan de consulta ideal tiene `indexRules` para todas las restricciones de propiedad, y como mínimo para las restricciones de propiedad más estrictas de la consulta.
-* Las Consultas que ordenan los resultados deben resolverse en un índice de propiedades de Lucene con reglas de índice para las propiedades ordenadas por las que se configuran `orderable=true.`
+* La cobertura del plan de consulta ideal tiene `indexRules` para todas las restricciones de propiedad y, como mínimo, para las restricciones de propiedad más estrictas de la consulta.
+* Las consultas que ordenan los resultados deben resolverse en un Índice de propiedades de Lucene con reglas de índice para las propiedades ordenadas por propiedades que establecen `orderable=true.`
 
-#### Por ejemplo, el valor predeterminado `cqPageLucene` no tiene una regla de índice para `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
+#### Por ejemplo: el `cqPageLucene` predeterminado no tiene una regla de índice para `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
 
 Antes de agregar la regla de índice cq:tags
 
@@ -80,7 +80,7 @@ Antes de agregar la regla de índice cq:tags
 
    * No existe de forma predeterminada
 
-* **consulta Consulta Builder**
+* **Consulta consulta Builder**
 
    ```js
    type=cq:Page
@@ -88,11 +88,11 @@ Antes de agregar la regla de índice cq:tags
    property.value=my:tag
    ```
 
-* **Plan de Consulta**
+* **Plan de consulta**
 
    `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-Esta consulta se resuelve en el `cqPageLucene` índice, pero como no existe ninguna regla de índice de propiedades para `jcr:content` o `cq:tags`, cuando se evalúa esta restricción, todos los registros del `cqPageLucene` índice se comprueban para determinar una coincidencia. Esto significa que si el índice contiene 1 millón `cq:Page` de nodos, se comprueba 1 millón de registros para determinar el conjunto de resultados.
+Esta consulta se resuelve en el índice `cqPageLucene`, pero como no existe ninguna regla de índice de propiedad para `jcr:content` o `cq:tags`, cuando se evalúa esta restricción, todos los registros del índice `cqPageLucene` se comprueban para determinar una coincidencia. Esto significa que si el índice contiene 1 millón de nodos `cq:Page`, entonces se verifican 1 millón de registros para determinar el conjunto de resultados.
 
 Después de agregar la regla de índice cq:tags
 
@@ -104,7 +104,7 @@ Después de agregar la regla de índice cq:tags
    @propertyIndex=true
    ```
 
-* **consulta Consulta Builder**
+* **Consulta consulta Builder**
 
    ```js
    type=cq:Page
@@ -112,29 +112,29 @@ Después de agregar la regla de índice cq:tags
    property.value=myTagNamespace:myTag
    ```
 
-* **Plan de Consulta**
+* **Plan de consulta**
 
    `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-La adición de indexRule para `jcr:content/cq:tags` en el `cqPageLucene` índice permite almacenar `cq:tags` los datos de forma optimizada.
+La adición de indexRule para `jcr:content/cq:tags` en el índice `cqPageLucene` permite que los datos `cq:tags` se almacenen de manera optimizada.
 
-Cuando se realiza una consulta con la `jcr:content/cq:tags` restricción, el índice puede buscar los resultados por valor. Esto significa que si 100 `cq:Page` nodos tienen `myTagNamespace:myTag` como valor, sólo se devuelven esos 100 resultados, y los otros 999.000 se excluyen de las comprobaciones de restricción, lo que mejora el rendimiento en un factor de 10.000.
+Cuando se realiza una consulta con la restricción `jcr:content/cq:tags`, el índice puede buscar los resultados por valor. Esto significa que si 100 `cq:Page` nodos tienen `myTagNamespace:myTag` como valor, sólo se devuelven esos 100 resultados y los otros 999.000 se excluyen de las comprobaciones de restricción, lo que mejora el rendimiento en un factor de 10.000.
 
 Por supuesto, las restricciones de consulta adicionales reducen los conjuntos de resultados elegibles y optimizan aún más la optimización de la consulta.
 
-Del mismo modo, sin una regla de índice adicional para la `cq:tags` propiedad, incluso una consulta de texto completo con una restricción de `cq:tags` funcionaría mal, ya que los resultados del índice devolverían todas las coincidencias de texto completo. La restricción de las etiquetas cq:se filtraría después.
+De manera similar, sin una regla de índice adicional para la propiedad `cq:tags`, incluso una consulta de texto completo con una restricción en `cq:tags` tendría un mal rendimiento, ya que los resultados del índice devolverían todas las coincidencias de texto completo. La restricción de las etiquetas cq:se filtraría después.
 
 Otra causa del filtrado posterior al índice son las Listas de Control de acceso, que a menudo se pierden durante el desarrollo. Intente asegurarse de que la consulta no devuelve rutas de acceso inaccesibles para el usuario. Esto generalmente se puede hacer mediante una mejor estructura de contenido y proporcionando una restricción de ruta relevante en la consulta.
 
-Una manera útil de identificar si el índice Lucene devuelve muchos resultados para devolver un subconjunto muy pequeño como resultado de la consulta es habilitar los registros DEBUG `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` y ver cuántos documentos se cargan desde el índice. El número de resultados finales frente al número de documentos cargados no debería ser desproporcionado. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
+Una manera útil de identificar si el índice Lucene devuelve muchos resultados para devolver un subconjunto muy pequeño como resultado de la consulta es habilitar los registros DEBUG para `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` y ver cuántos documentos se cargan desde el índice. El número de resultados finales frente al número de documentos cargados no debería ser desproporcionado. Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md).
 
 #### Post-implementación {#post-deployment-1}
 
-* Monitoree las consultas `error.log` de recorrido:
+* Monitoree el `error.log` para consultas transversales:
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* Visite la consola de operaciones Rendimiento [de](/help/sites-administering/operations-dashboard.md#query-performance) Consulta de AEM y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) consultas lentas que buscan planes de consulta que no resuelvan las restricciones de propiedad de consulta para indexar reglas de propiedad.
+* Visite la consola de operaciones [Rendimiento de Consulta](/help/sites-administering/operations-dashboard.md#query-performance) de AEM y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) consultas lentas que buscan planes de consulta que no resuelvan las restricciones de propiedades de consulta a las reglas de propiedades de índice.
 
 ### Detección de Consultas de conjuntos de resultados grandes {#detecting-large-result-set-queries}
 
@@ -165,7 +165,7 @@ En AEM 6.3, los 2 parámetros anteriores están preconfigurados de forma predete
 
 Más información disponible en : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
-## Ajuste del rendimiento de la Consulta {#query-performance-tuning}
+## Ajuste del rendimiento de la consulta {#query-performance-tuning}
 
 El lema de la optimización del rendimiento de consulta en AEM es:
 
@@ -173,7 +173,7 @@ El lema de la optimización del rendimiento de consulta en AEM es:
 
 A continuación se describen los ajustes recomendados para garantizar el rendimiento de la consulta. Ajuste primero la consulta, una actividad menos complicada y, si es necesario, ajuste las definiciones de índice.
 
-### Ajuste de la declaración de Consulta {#adjusting-the-query-statement}
+### Ajuste de la instrucción de Consulta {#adjusting-the-query-statement}
 
 AEM admite los siguientes idiomas de consulta:
 
@@ -185,14 +185,14 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
 1. Añada una restricción nodetype para que la consulta se resuelva en un índice de propiedades Lucene existente.
 
-* **consulta no optimizada**
+* **Consulta no optimizada**
 
    ```js
    property=jcr:content/contentType
    property.value=article-page
    ```
 
-* **consulta optimizada**
+* **Consulta optimizada**
 
    ```js
    type=cq:Page
@@ -200,13 +200,13 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
    property.value=article-page
    ```
 
-   Las Consultas que carecen de una restricción de tipo de nodo obligan a AEM a asumir el `nt:base` tipo de nodo, que cada nodo de AEM es un subtipo de, lo que resulta en una restricción de tipo de nodo.
+   Las consultas que carecen de una restricción de tipo de nodo obligan a AEM a asumir el tipo de nodo `nt:base`, que cada nodo de AEM es un subtipo de, lo que resulta en una restricción de tipo de nodo.
 
-   La configuración `type=cq:Page` restringe esta consulta solo a `cq:Page` nodos y resuelve la consulta a AEM cqPageLucene, limitando los resultados a un subconjunto de nodos (solo `cq:Page` nodos) en AEM.
+   La configuración `type=cq:Page` restringe esta consulta sólo a `cq:Page` nodos y resuelve la consulta a AEM cqPageLucene, limitando los resultados a un subconjunto de nodos (sólo `cq:Page` nodos) en AEM.
 
 1. Ajuste la restricción nodetype de la consulta para que la consulta se resuelva en un índice de propiedades Lucene existente.
 
-* **consulta no optimizada**
+* **Consulta no optimizada**
 
    ```js
    type=nt:hierarchyNode
@@ -214,7 +214,7 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
    property.value=article-page
    ```
 
-* **consulta optimizada**
+* **Consulta optimizada**
 
    ```js
    type=cq:Page
@@ -222,35 +222,35 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
    property.value=article-page
    ```
 
-   `nt:hierarchyNode` es el tipo de nodo principal de `cq:Page`, y suponiendo que `jcr:content/contentType=article-page` se aplique solamente a `cq:Page` los nodos a través de nuestra aplicación personalizada, esta consulta sólo devolverá `cq:Page` nodos donde `jcr:content/contentType=article-page`. Sin embargo, esta es una restricción subóptima porque:
+   `nt:hierarchyNode` es el tipo de nodo principal de  `cq:Page`y, suponiendo que solo  `jcr:content/contentType=article-page` se aplique a  `cq:Page` los nodos a través de nuestra aplicación personalizada, esta consulta sólo devolverá  `cq:Page` nodos donde  `jcr:content/contentType=article-page`. Sin embargo, esta es una restricción subóptima porque:
 
    * Otros nodos heredan de `nt:hierarchyNode` (p. ej. `dam:Asset`) añadiendo innecesariamente al conjunto de posibles resultados.
    * No existe un índice proporcionado por AEM para `nt:hierarchyNode`, pero sí un índice proporcionado para `cq:Page`.
-   La configuración `type=cq:Page` restringe esta consulta solo a `cq:Page` nodos y resuelve la consulta a AEM cqPageLucene, limitando los resultados a un subconjunto de nodos (solo nodos cq:Page) en AEM.
+   La configuración `type=cq:Page` restringe esta consulta a sólo nodos `cq:Page` y resuelve la consulta a AEM cqPageLucene, limitando los resultados a un subconjunto de nodos (sólo nodos cq:Page) en AEM.
 
 1. O bien, ajuste las restricciones de propiedad para que la consulta se resuelva en un índice de propiedades existente.
 
-* **consulta no optimizada**
+* **Consulta no optimizada**
 
    ```js
    property=jcr:content/contentType
    property.value=article-page
    ```
 
-* **consulta optimizada**
+* **Consulta optimizada**
 
    ```js
    property=jcr:content/sling:resourceType
    property.value=my-site/components/structure/article-page
    ```
 
-   Si se cambia la restricción de propiedad de `jcr:content/contentType` (un valor personalizado) a la propiedad bien conocida, la consulta `sling:resourceType` puede resolver en el índice de propiedades `slingResourceType` que indexa todo el contenido por `sling:resourceType`.
+   Si se cambia la restricción de propiedad de `jcr:content/contentType` (un valor personalizado) a la propiedad conocida `sling:resourceType`, la consulta puede resolver el índice de propiedad `slingResourceType` que indexa todo el contenido por `sling:resourceType`.
 
-   Los índices de propiedades (a diferencia de los índices de propiedades de Lucene) se utilizan mejor cuando la consulta no se detecta por nodetype y una única restricción de propiedad domina el conjunto de resultados.
+   Los índices de propiedades (a diferencia de los índices de propiedades de Lucene) se utilizan mejor cuando la consulta no se detecta por tipo de nodo y una única restricción de propiedad domina el conjunto de resultados.
 
-1. Añada la restricción de ruta más estricta posible para la consulta. Por ejemplo, preferir `/content/my-site/us/en` por encima `/content/my-site`o `/content/dam` por encima `/`.
+1. Añada la restricción de ruta más estricta posible para la consulta. Por ejemplo, prefiera `/content/my-site/us/en` por encima de `/content/my-site` o `/content/dam` por encima de `/`.
 
-* **consulta no optimizada**
+* **Consulta no optimizada**
 
    ```js
    type=cq:Page
@@ -259,7 +259,7 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
    property.value=article-page
    ```
 
-* **consulta optimizada**
+* **Consulta optimizada**
 
    ```js
    type=cq:Page
@@ -268,13 +268,13 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
    property.value=article-page
    ```
 
-   Al aplicar una escala `path=/content`a la restricción de ruta, `path=/content/my-site/us/en` los índices pueden reducir el número de entradas de índice que deben inspeccionarse. Cuando la consulta puede restringir la ruta muy bien, más allá de solo `/content` o `/content/dam`, asegúrese de que el índice tiene `evaluatePathRestrictions=true`.
+   Al establecer la restricción de ruta de `path=/content`a `path=/content/my-site/us/en`, los índices pueden reducir el número de entradas de índice que se deben inspeccionar. Cuando la consulta puede restringir la ruta muy bien, más allá de `/content` o `/content/dam`, asegúrese de que el índice tenga `evaluatePathRestrictions=true`.
 
-   Tenga en cuenta que el uso `evaluatePathRestrictions` aumenta el tamaño del índice.
+   Tenga en cuenta que el uso de `evaluatePathRestrictions` aumenta el tamaño del índice.
 
-1. Cuando sea posible, evite las funciones y operaciones de consulta, como: `LIKE` y `fn:XXXX` a medida que sus costos se escalan con el número de resultados basados en restricciones.
+1. Cuando sea posible, evite las funciones y operaciones de consulta, como: `LIKE` y `fn:XXXX` a medida que sus costos escalan con el número de resultados basados en restricciones.
 
-* **consulta no optimizada**
+* **Consulta no optimizada**
 
    ```js
    type=cq:Page
@@ -283,7 +283,7 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
    property.value=%article%
    ```
 
-* **consulta optimizada**
+* **Consulta optimizada**
 
    ```js
    type=cq:Page
@@ -297,16 +297,16 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
 1. ***Este ajuste es específico del Generador de Consultas y no se aplica a JCR-SQL2 o XPath.***
 
-   Utilice el valor de [Consulta BuilderTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) cuando el conjunto completo de resultados **no sea** inmediatamente necesario.
+   Utilice [generador de Consultas&#39; adivinenTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) cuando el conjunto completo de resultados sea **no** inmediatamente necesario.
 
-   * **consulta no optimizada**
+   * **Consulta no optimizada**
 
       ```js
       type=cq:Page
       path=/content
       ```
 
-   * **consulta optimizada**
+   * **Consulta optimizada**
 
       ```js
       type=cq:Page
@@ -323,7 +323,7 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 1. De lo contrario, la consulta debería resolver en un índice de propiedades de Lucene. Si no se puede resolver ningún índice, vaya a Creación de un nuevo índice.
 1. Si es necesario, convierta la consulta a XPath o JCR-SQL2.
 
-   * **consulta Consulta Builder**
+   * **Consulta consulta Builder**
 
       ```js
       query type=cq:Page
@@ -340,7 +340,7 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
       /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
       ```
 
-1. Proporcione el XPath (o JCR-SQL2) al generador [de definiciones de índice](https://oakutils.appspot.com/generate/index) Oak para generar la definición optimizada del índice de propiedades de Lucene.
+1. Proporcione XPath (o JCR-SQL2) a [Generador de definiciones de índices Oak](https://oakutils.appspot.com/generate/index) para generar la definición optimizada del índice de propiedades de Lucene.
 
    **Definición del índice de propiedades de Lucene generada**
 
@@ -372,7 +372,7 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 1. Compruebe que la consulta no se resuelve en un índice de propiedades de Lucene existente. Si es así, consulte la sección anterior sobre ajuste e índice existente.
 1. Si es necesario, convierta la consulta a XPath o JCR-SQL2.
 
-   * **consulta Consulta Builder**
+   * **Consulta consulta Builder**
 
       ```js
       type=myApp:Author
@@ -386,7 +386,7 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
       //element(*, myApp:Page)[@firstName = 'ira']
       ```
 
-1. Proporcione el XPath (o JCR-SQL2) al generador [de definiciones de índice](https://oakutils.appspot.com/generate/index) Oak para generar la definición optimizada del índice de propiedades de Lucene.
+1. Proporcione XPath (o JCR-SQL2) a [Generador de definiciones de índices Oak](https://oakutils.appspot.com/generate/index) para generar la definición optimizada del índice de propiedades de Lucene.
 
    **Definición del índice de propiedades de Lucene generada**
 
@@ -415,9 +415,9 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
 Debido a AEM arquitectura de contenido flexible, es difícil predecir y asegurar que las transversales de las estructuras de contenido no evolucionen con el tiempo para ser inaceptablemente grandes.
 
-Por lo tanto, asegúrese de que los índices cumplen las consultas, excepto si la combinación de restricción de ruta y restricción de tipo de nodo garantiza que se recorran **menos de 20 nodos.**
+Por lo tanto, asegúrese de que los índices cumplen las consultas, excepto si la combinación de restricción de ruta y restricción de tipo de nodo garantiza que **menos de 20 nodos se hayan recorrido nunca.**
 
-## Herramientas de desarrollo de Consulta {#query-development-tools}
+## Herramientas de desarrollo de consulta {#query-development-tools}
 
 ### Adobe admitido {#adobe-supported}
 
@@ -433,7 +433,7 @@ Por lo tanto, asegúrese de que los índices cumplen las consultas, excepto si l
 
 * **[Explicar la consulta](/help/sites-administering/operations-dashboard.md#explain-query)**
 
-   * Un panel de operaciones AEM que proporciona una explicación detallada (plan de Consulta, tiempo de consulta y cantidad de resultados) para cualquier consulta XPATH o JCR-SQL2 dada.
+   * Un panel de operaciones de AEM que proporciona una explicación detallada (plan de Consulta, tiempo de consulta y cantidad de resultados) para cualquier consulta XPATH o JCR-SQL2 dada.
 
 * **[Consultas lentas/populares](/help/sites-administering/operations-dashboard.md#query-performance)**
 
@@ -445,7 +445,7 @@ Por lo tanto, asegúrese de que los índices cumplen las consultas, excepto si l
 
 * **[Registro](/help/sites-administering/operations-dashboard.md#log-messages)**
 
-   * Registro de Consulta Builder
+   * Registro de consulta Builder
 
       * `DEBUG @ com.day.cq.search.impl.builder.QueryImpl`
    * Registro de ejecución de consultas Oak
@@ -461,7 +461,7 @@ Por lo tanto, asegúrese de que los índices cumplen las consultas, excepto si l
 * **NodoContador de granos JMX**
 
    * MBean de JMX utilizado para estimar el número de nodos en los árboles de contenido de AEM.
-   * Ubicado en AEM en [/system/console/jmx/org.apache.jackrabbit.oak%3Nombre%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * Ubicado en AEM en [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Comunidad admitida {#community-supported}
 
