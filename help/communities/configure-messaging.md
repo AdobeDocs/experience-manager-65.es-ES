@@ -23,13 +23,13 @@ ht-degree: 4%
 
 Además de las interacciones públicamente visibles que se producen en los foros y comentarios, la función de mensajería de AEM Communities permite a los miembros de la comunidad interactuar entre sí de forma más privada.
 
-Esta función se puede incluir cuando se crea un sitio [de](/help/communities/overview.md#communitiessites) comunidad.
+Esta función se puede incluir cuando se crea un [sitio de comunidad](/help/communities/overview.md#communitiessites).
 
 La función de mensajería permite:
 
 **A** : enviar un mensaje a uno o varios miembros de la comunidad
 
-**B** : enviar mensajes directos en [masa a los grupos miembros de la comunidad](/help/communities/messaging.md#group-messaging)
+**B** : enviar mensajes directos en  [masa a los grupos de miembros de la comunidad](/help/communities/messaging.md#group-messaging)
 
 **C** : enviar un mensaje con datos adjuntos
 
@@ -47,42 +47,42 @@ La función de mensajería permite:
 
 Para habilitar y modificar la función de mensajería, consulte:
 
-* [Configuración de la mensajería](/help/communities/messaging.md) para administradores
-* [Esenciales](/help/communities/essentials-messaging.md) de mensajería para desarrolladores
+* [Configurar ](/help/communities/messaging.md) mensajería para administradores
+* [Messaging ](/help/communities/essentials-messaging.md) Essentials para desarrolladores
 
 >[!NOTE]
 >
->No se pueden agregar `Compose Message, Message, or Message List` componentes (que se encuentran en el grupo de `Communities`componentes) a una página en modo de edición de autor.
+>No se admite la adición de `Compose Message, Message, or Message List` componentes (que se encuentra en `Communities`grupo de componentes) a una página en modo de edición de autor.
 
-## Configuración de componentes de mensajería {#configure-messaging-components}
+## Configurar componentes de mensajería {#configure-messaging-components}
 
 Cuando se habilita la mensajería para un sitio de comunidad, se configura sin necesidad de ninguna configuración adicional. La información se proporciona si es necesario cambiar la configuración predeterminada.
 
-### Configuración de la Lista de mensajes (cuadro de mensaje) {#configure-message-list-message-box}
+### Configurar la Lista de mensajes (cuadro de mensaje) {#configure-message-list-message-box}
 
-Para modificar la configuración de la lista de mensajes para las páginas **Bandeja de entrada**, Elementos **** enviados y **Papelera** de la función de mensajería, abra el sitio en modo [de edición de](/help/communities/sites-console.md#authoring-site-content)autor.
+Para modificar la configuración de la lista de mensajes para las páginas **Bandeja de entrada**, **Elementos enviados** y **Papelera** de la función de mensajería, abra el sitio en [modo de edición del autor](/help/communities/sites-console.md#authoring-site-content).
 
-1. En `Preview` modo, seleccione el vínculo **Mensajes** para abrir la página de mensajes principal. A continuación, seleccione **Bandeja de entrada**, Elementos **enviados** o **Papelera** para configurar el componente para esa lista de mensajes.
+1. En el modo `Preview`, seleccione el vínculo **Mensajes** para abrir la página de mensajería principal. A continuación, seleccione **Bandeja de entrada**, **Elementos enviados** o **Papelera** para configurar el componente para esa lista de mensajes.
 
-1. En `Edit` modo, seleccione el componente en la página.
-1. Para acceder al cuadro de diálogo de configuración, seleccione el icono para cancelar la herencia `link` .
+1. En el modo `Edit`, seleccione el componente en la página.
+1. Para acceder al cuadro de diálogo de configuración, seleccione el icono `link` para cancelar la herencia.
 Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
 
-1. Una vez completada la configuración, es necesario restaurar la herencia seleccionando el `broken link` icono .
+1. Una vez completada la configuración, es necesario restaurar la herencia seleccionando el icono `broken link`.
 
 ![configure-message-lista](assets/configure-message-list.png)
 
-#### Basic tab {#basic-tab}
+#### Ficha básica {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
 * **Selector de servicio**
 
-   (*Necesario*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** desde el servicio [de operaciones de mensajería de](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
+   (*Requerido*) Establezca esto en el valor de la propiedad **`serviceSelector.name`** del [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 * **Componer página**
 
-   (*Requerido*) La página que se abrirá cuando un miembro haga clic en el **`Reply`** botón. La página destinatario debe contener el formulario **Redactar mensaje** .
+   (*Requerido*) La página que se abrirá cuando un miembro haga clic en el botón **`Reply`**. La página de destinatario debe contener el formulario **Redactar mensaje**.
 
 * **Responder/Ver como medio**
 
@@ -98,27 +98,27 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Rutas de carpeta**
 
-   (*Obligatorio*) Al hacer referencia a los valores establecidos para **inbox.path.name** y **sentitems.path.name** en el servicio [de operaciones de mensajería de](/help/communities/messaging.md#messaging-operations-service)AEM Communities. Al configurar para un `Inbox`, agregue una entrada usando el valor de **inbox.path.name**. Al configurar para un `Outbox`, agregue una entrada usando el valor de **sentitómesis.path.name**. Al configurar para `Trash`, agregue dos entradas con ambos valores.
+   (*Requerido*) Al hacer referencia a los valores establecidos para **inbox.path.name** y **sentiitems.path.name** en el [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service). Al configurar para un `Inbox`, agregue una entrada usando el valor de **inbox.path.name**. Al configurar para un `Outbox`, agregue una entrada usando el valor de **sentiitems.path.name**. Al configurar para `Trash`, agregue dos entradas con ambos valores.
 
-#### Ficha Mostrar {#display-tab}
+#### Mostrar ficha {#display-tab}
 
 ![display-tab-message-lista](assets/display-tab-message-list.png)
 
 * **Marcar botón de lectura**
 
-   Si se selecciona, muestra un `Read`botón que permite marcar un mensaje como leído.
+   Si se selecciona, muestra un botón `Read`que permite marcar un mensaje como leído.
 
 * **Botón Marcar no leído**
 
-   Si se selecciona, muestra un `Mark Unread` botón que permite marcar un mensaje como leído.
+   Si se selecciona, muestra un botón `Mark Unread` que permite marcar un mensaje como leído.
 
 * **Botón Eliminar**
 
-   Si se selecciona, muestra un `Delete` botón que permite marcar un mensaje como leído. Duplicado la funcionalidad de eliminación si también **`Message Options`** está marcada.
+   Si se selecciona, muestra un botón `Delete` que permite marcar un mensaje como leído. Duplicado la funcionalidad de eliminación si también se selecciona **`Message Options`**.
 
 * **Opciones de mensaje**
 
-   Si se selecciona, muestra **`Reply`**, **`Reply All`****`Forward`** y **`Delete`** botones que permiten que un mensaje se vuelva a enviar o se elimine. Duplicado la funcionalidad de eliminación si también **`Delete Button`** está marcada.
+   Si se selecciona, muestra los botones **`Reply`**, **`Reply All`**, **`Forward`** y **`Delete`**, lo que permite enviar o eliminar un mensaje. Duplicado la funcionalidad de eliminación si también se selecciona **`Delete Button`**.
 
 * **Mensajes por página**
 
@@ -134,19 +134,19 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 ### Configurar mensaje de composición {#configure-compose-message}
 
-Para modificar la configuración de la página de mensaje de composición, abra el sitio en modo [de edición de](/help/communities/sites-console.md#authoring-site-content)autor.
+Para modificar la configuración de la página de mensaje de composición, abra el sitio en [modo de edición del autor](/help/communities/sites-console.md#authoring-site-content).
 
-* En `Preview` modo, seleccione el vínculo **Mensajes** para abrir la página de mensajes principal. A continuación, seleccione el botón Nuevo mensaje para abrir la `Compose Message` página.
+* En el modo `Preview`, seleccione el vínculo **Mensajes** para abrir la página de mensajería principal. A continuación, seleccione el botón Nuevo mensaje para abrir la página `Compose Message`.
 
-* En `Edit` modo, seleccione el componente principal en la página que contiene el cuerpo del mensaje.
-* Para acceder al cuadro de diálogo de configuración, seleccione el icono para cancelar la herencia `link` .
+* En el modo `Edit`, seleccione el componente principal en la página que contiene el cuerpo del mensaje.
+* Para acceder al cuadro de diálogo de configuración, seleccione el icono `link` para cancelar la herencia.
 Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
 
-* Una vez completada la configuración, es necesario restaurar la herencia seleccionando el `broken link` icono .
+* Una vez completada la configuración, es necesario restaurar la herencia seleccionando el icono `broken link`.
 
 ![config-compose-message](assets/config-compose-message.png)
 
-#### Basic tab {#basic-tab-1}
+#### Ficha básica {#basic-tab-1}
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
@@ -168,35 +168,35 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Selector de servicio**
 
-   (*Necesario*) Establezca este valor en el valor de la propiedad **`serviceSelector.name`** desde el servicio [de operaciones de mensajería de](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
+   (*Requerido*) Establezca esto en el valor de la propiedad **`serviceSelector.name`** del [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
-#### Ficha Mostrar {#display-tab-1}
+#### Mostrar ficha {#display-tab-1}
 
 ![display-tab-compose](assets/display-tab-compose.png)
 
 * **Mostrar campo de asunto**
 
-   Si se selecciona, muestre el `Subject` campo y habilite la adición de un asunto al mensaje. El valor predeterminado no está marcado.
+   Si se selecciona, muestre el campo `Subject` y habilite la adición de un asunto al mensaje. El valor predeterminado no está marcado.
 
 * **Etiqueta de asunto**
 
-   Introduzca el texto que desea mostrar junto al `Subject` campo. El valor predeterminado es `Subject`.
+   Escriba el texto que desea mostrar junto al campo `Subject`. El valor predeterminado es `Subject`.
 
 * **Mostrar el campo Adjuntar archivo**
 
-   Si se selecciona, muestre el `Attachment` campo y habilite la adición de archivos adjuntos al mensaje. El valor predeterminado no está marcado.
+   Si se selecciona, muestre el campo `Attachment` y habilite la adición de archivos adjuntos al mensaje. El valor predeterminado no está marcado.
 
 * **Etiqueta de archivo adjunto**
 
-   Introduzca el texto que desea mostrar junto al `Attachment` campo. El valor predeterminado es **`Attach File`**.
+   Escriba el texto que desea mostrar junto al campo `Attachment`. El valor predeterminado es **`Attach File`**.
 
 * **Mostrar campo de contenido**
 
-   Si se selecciona, muestre el `Content` campo y habilite la adición de un cuerpo de mensaje. El valor predeterminado no está marcado.
+   Si se selecciona, muestre el campo `Content` y habilite la adición de un cuerpo de mensaje. El valor predeterminado no está marcado.
 
 * **Etiqueta de contenido**
 
-   Introduzca el texto que desea mostrar junto al `Content` campo. El valor predeterminado es **`Body`**.
+   Escriba el texto que desea mostrar junto al campo `Content`. El valor predeterminado es **`Body`**.
 
 * **Con editor de texto enriquecido**
 
