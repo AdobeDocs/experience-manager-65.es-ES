@@ -11,6 +11,9 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '3137'
+ht-degree: 1%
 
 ---
 
@@ -19,14 +22,14 @@ source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
 
 Habilitar el acceso a un repositorio de CRX implica varios temas:
 
-* [Derechos](#how-access-rights-are-evaluated) de acceso: conceptos de cómo se definen y evalúan
-* [Administración](#user-administration) de usuarios: administración de cuentas individuales utilizadas para el acceso
-* [Administración](#group-administration) de grupos: simplifique la administración de usuarios mediante la formación de grupos
-* [Administración](#access-right-management) de derechos de acceso: definición de políticas que controlan la forma en que estos usuarios y grupos pueden acceder a los recursos
+* [Derechos](#how-access-rights-are-evaluated)  de acceso: los conceptos de cómo se definen y evalúan
+* [Administración](#user-administration)  de usuarios: administración de cuentas individuales utilizadas para el acceso
+* [Administración](#group-administration)  de grupos: simplifique la administración de usuarios mediante la formación de grupos
+* [Administración](#access-right-management)  de derechos de acceso: definición de políticas que controlan la forma en que estos usuarios y grupos pueden acceder a los recursos
 
 Los elementos básicos son:
 
-**Cuentas** de usuario CRX autentica el acceso identificando y verificando a un usuario (por esa persona u otra aplicación) según los detalles que se encuentren en la cuenta de usuario.
+**User** AccountsCRX autentica el acceso identificando y verificando a un usuario (por esa persona u otra aplicación) según los detalles que se encuentren en la cuenta de usuario.
 
 En CRX, cada cuenta de usuario es un nodo del espacio de trabajo. Una cuenta de usuario de CRX tiene las siguientes propiedades:
 
@@ -39,7 +42,7 @@ En CRX, cada cuenta de usuario es un nodo del espacio de trabajo. Una cuenta de 
 
    Sin embargo, para simplificar la administración, recomendamos que (en la mayoría de los casos) asigne derechos de acceso a las cuentas de grupo. La asignación de derechos de acceso para cada usuario individual se torna muy difícil de administrar rápidamente (las excepciones son ciertos usuarios del sistema cuando solo existen una o dos instancias).
 
-**Las cuentas** de grupo son colecciones de usuarios y/o de otros grupos. Se utilizan para simplificar la administración, ya que un cambio en los derechos de acceso asignados a un grupo se aplica automáticamente a todos los usuarios de ese grupo. Un usuario no tiene que pertenecer a ningún grupo, pero a menudo pertenece a varios.
+**Cuentas** de grupoLas cuentas de grupo son colecciones de usuarios y/u otros grupos. Se utilizan para simplificar la administración, ya que un cambio en los derechos de acceso asignados a un grupo se aplica automáticamente a todos los usuarios de ese grupo. Un usuario no tiene que pertenecer a ningún grupo, pero a menudo pertenece a varios.
 
 En CRX, un grupo tiene las siguientes propiedades:
 
@@ -49,7 +52,7 @@ En CRX, un grupo tiene las siguientes propiedades:
 * La agrupación jerárquica se puede lograr con relaciones de miembros. No puede colocar un grupo directamente debajo de otro grupo en el repositorio.
 * Puede definir los derechos de acceso para todos los miembros del grupo.
 
-**Access Rights** CRX utiliza los derechos de acceso para controlar el acceso a áreas específicas del repositorio.
+**Access** RightsCRX utiliza los derechos de acceso para controlar el acceso a áreas específicas del repositorio.
 
 Esto se realiza asignando privilegios para permitir o denegar el acceso a un recurso (nodo o ruta) en el repositorio. Dado que se pueden asignar varios privilegios, deben evaluarse para determinar qué combinación es aplicable a la solicitud actual.
 
@@ -59,7 +62,7 @@ CRX le permite configurar los derechos de acceso tanto para las cuentas de usuar
 
 >[!NOTE]
 >
->CRX implementa el control de [acceso tal como se define en JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa [control de acceso tal como se define en JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Se ha configurado una instalación estándar de un repositorio CRX para utilizar listas de control de acceso basadas en recursos. Esta es una posible implementación del control de acceso JSR-283 y una de las implementaciones presentes con Jackrabbit.
 
@@ -87,14 +90,14 @@ CRX utiliza dos conceptos clave al evaluar los derechos de acceso:
       Todos los derechos asignados a cualquiera de los grupos a los que pertenece el usuario.
    El resultado se utiliza para permitir o denegar el acceso al recurso solicitado.
 
-#### Recopilación de la lista de derechos de acceso para un sujeto {#compiling-the-list-of-access-rights-for-a-subject}
+#### Compilación de la lista de derechos de acceso para un sujeto {#compiling-the-list-of-access-rights-for-a-subject}
 
 En CRX, el sujeto depende de:
 
 * el principal del usuario
 * todas las entidades principales de grupo asociadas a ese usuario
 
-La lista de derechos de acceso aplicables al sujeto se elabora a partir de:
+La lista de los derechos de acceso aplicables al sujeto se basa en:
 
 * los derechos que asigne directamente a la cuenta de usuario
 * más todos los derechos asignados a cualquiera de los grupos a los que pertenece el usuario
@@ -106,25 +109,26 @@ La lista de derechos de acceso aplicables al sujeto se elabora a partir de:
 >* CRX no tiene en cuenta ninguna jerarquía de usuarios cuando compila la lista.
 >* CRX utiliza una jerarquía de grupos solo cuando se incluye un grupo como miembro de otro grupo. No hay herencia automática de los permisos de grupo.
 >* El orden en que especifique los grupos no afecta a los derechos de acceso.
+
 >
 
 
 
 ### Resolución de solicitudes y derechos de acceso {#resolving-request-and-access-rights}
 
-Cuando CRX gestiona la solicitud, compara la solicitud de acceso del sujeto con la lista de control de acceso del nodo del repositorio:
+Cuando CRX gestiona la solicitud, compara la solicitud de acceso del sujeto con la lista de control de acceso en el nodo del repositorio:
 
-Si Linda solicita actualizar el `/features` nodo en la siguiente estructura de repositorio:
+Si Linda solicita actualizar el nodo `/features` en la siguiente estructura de repositorio:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-### Orden de precedencia {#order-of-precedence}
+### Orden de prioridad {#order-of-precedence}
 
 Los derechos de acceso en CRX se evalúan de la siguiente manera:
 
 * Las entidades de seguridad de usuario siempre tienen prioridad sobre las entidades de seguridad de grupo, independientemente de:
 
-   * su orden en la lista de control de acceso
+   * su orden en la lista control de acceso
    * su posición en la jerarquía de nodos
 
 * Para una entidad de seguridad determinada existe (como máximo) 1 denegación y 1 permitir la entrada en un nodo determinado. La implementación siempre borra las entradas redundantes y se asegura de que el mismo privilegio no aparezca en las entradas de permitir y denegar.
@@ -133,7 +137,7 @@ Los derechos de acceso en CRX se evalúan de la siguiente manera:
 >
 >Este proceso de evaluación es adecuado para el control de acceso basado en recursos de una instalación CRX estándar.
 
-Tomando dos ejemplos en los que el usuario `aUser` es miembro del grupo `aGroup`:
+Tomando dos ejemplos donde el usuario `aUser` es miembro del grupo `aGroup`:
 
 ```xml
    + parentNode
@@ -147,7 +151,7 @@ Tomando dos ejemplos en los que el usuario `aUser` es miembro del grupo `aGroup`
 
 En el caso anterior:
 
-* `aUser` no se le concede permiso de escritura en `grandChildNode`.
+* `aUser` no se le concede permiso de escritura en  `grandChildNode`.
 
 ```xml
    + parentNode
@@ -162,14 +166,14 @@ En el caso anterior:
 
 En este caso:
 
-* `aUser` no se le concede permiso de escritura en `grandChildNode`.
+* `aUser` no se le concede permiso de escritura en  `grandChildNode`.
 * La segunda ACE para `aUser` es redundante.
 
 Los derechos de acceso de varias entidades principales de grupo se evalúan en función de su orden, tanto dentro de la jerarquía como dentro de una única lista de control de acceso.
 
-### Prácticas recomendadas {#best-practices}
+### Prácticas recomendadas   {#best-practices}
 
-En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomendadas:
+En la tabla siguiente se lista algunas recomendaciones y prácticas recomendadas:
 
 <table>
  <tbody>
@@ -189,7 +193,7 @@ En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomenda
   </tr>
   <tr>
    <td><i>Ser positivo</i></td>
-   <td><p>Utilice siempre las instrucciones Allow para especificar los derechos de acceso de la entidad de seguridad del grupo (siempre que sea posible). Evite utilizar una instrucción Denegar.</p> <p>Las entidades principales de grupo se evalúan en orden, tanto dentro de la jerarquía como dentro de una lista única de control de acceso.</p> </td>
+   <td><p>Utilice siempre las instrucciones Allow para especificar los derechos de acceso de la entidad de seguridad del grupo (siempre que sea posible). Evite utilizar una instrucción Denegar.</p> <p>Las entidades principales de grupo se evalúan en orden, tanto dentro de la jerarquía como dentro de una sola lista de control de acceso.</p> </td>
   </tr>
   <tr>
    <td><i>Manténgalo simple</i></td>
@@ -208,11 +212,11 @@ En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomenda
 
 ## Administración de usuarios {#user-administration}
 
-Se utiliza un cuadro de diálogo estándar para la administración **de usuarios**.
+Se utiliza un cuadro de diálogo estándar para **Administración de usuarios**.
 
 Debe iniciar sesión en el espacio de trabajo correspondiente y, a continuación, puede acceder al cuadro de diálogo desde ambos:
 
-* vínculo Administración **de** usuarios en la consola principal de CRX
+* el vínculo **Administración de usuarios** en la Consola principal de CRX
 * el menú **Seguridad** del Explorador de CRX
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
@@ -241,7 +245,7 @@ Debe iniciar sesión en el espacio de trabajo correspondiente y, a continuación
 
 Muestra todos los grupos a los que pertenece la cuenta. La columna Heredada indica la pertenencia que se ha heredado como resultado de la pertenencia a otro grupo.
 
-Al hacer clic en un GroupID (cuando esté disponible) se abrirá la Administración [de](#group-administration) grupos para ese grupo.
+Al hacer clic en un GroupID (cuando esté disponible) se abrirá la [Administración de grupos](#group-administration) para ese grupo.
 
 **Suplantadores**
 
@@ -249,27 +253,27 @@ Con la funcionalidad Suplantar un usuario puede trabajar en nombre de otro usuar
 
 Esto significa que una cuenta de usuario puede especificar otras cuentas (usuario o grupo) que pueden funcionar con su cuenta. En otras palabras, si se permite que el usuario B suplantara al usuario A, el usuario B puede realizar acciones utilizando todos los detalles de la cuenta del usuario A (incluidos el ID, el nombre y los derechos de acceso).
 
-Esto permite a las cuentas del suplantador completar tareas como si estuvieran utilizando la cuenta que están suplantando; por ejemplo, durante una ausencia o para compartir una carga excesiva a corto plazo.
+Esto permite que las cuentas del suplantador completen tareas como si estuvieran utilizando la cuenta que están suplantando; por ejemplo, durante una ausencia o para compartir una carga excesiva a corto plazo.
 
 Si una cuenta se hace pasar por otra es muy difícil de ver. Los archivos de registro no contienen información sobre el hecho de que se ha producido una suplantación en los eventos. Por lo tanto, si el usuario B se está suplantando al usuario A, todos los eventos se verán como si fueran realizados personalmente por el usuario A.
 
 ### Creación de una cuenta de usuario {#creating-a-user-account}
 
-1. Abra el cuadro de diálogo Administración **de usuarios** .
+1. Abra el cuadro de diálogo **Administración de usuarios**.
 1. Haga clic en **Crear usuario**.
 1. A continuación, puede introducir las propiedades:
 
-   * **UserID** utilizado como nombre de cuenta.
-   * **Se necesita una contraseña** al iniciar sesión.
-   * **Nombre** principal para proporcionar un nombre de texto completo.
-   * **Ruta** intermedia que puede utilizarse para formar una estructura de árbol.
+   * **** UserIDused como nombre de cuenta.
+   * **** Contraseña necesaria al iniciar sesión.
+   * **Nombre principal** para proporcionar un nombre de texto completo.
+   * **Rutas intermedias** que se pueden utilizar para formar una estructura de árbol.
 
 1. Haga clic en Guardar (símbolo de visto verde).
 1. El cuadro de diálogo se expandirá para que pueda:
 
-   1. Configure **Properties**.
-   1. Consulte Pertenencia **al grupo**.
-   1. Definir **suplantadores**.
+   1. Configure **Propiedades**.
+   1. Consulte **Pertenencia al grupo**.
+   1. Defina **Suplantadores**.
 
 >[!NOTE]
 >
@@ -277,21 +281,22 @@ Si una cuenta se hace pasar por otra es muy difícil de ver. Los archivos de reg
 >
 >* usuarios
 >* grupos con muchos miembros
+
 >
 
 
 
 ### Actualización de una cuenta de usuario {#updating-a-user-account}
 
-1. Con el cuadro de diálogo Administración de **usuarios** , abra la vista de lista de todas las cuentas.
+1. Con el cuadro de diálogo **Administración de usuarios** abra la vista de lista de todas las cuentas.
 1. Navegue por la estructura de árbol.
 1. Haga clic en la cuenta requerida para abrirla y editarla.
 1. Realice un cambio y haga clic en Guardar (símbolo de marca de verificación verde) para esa entrada.
-1. **Haga clic en** Cerrar **para finalizar o en** Lista... para volver a la lista de todas las cuentas de usuario.
+1. Haga clic en **Cerrar** para finalizar o **Lista...** para volver a la lista de todas las cuentas de usuario.
 
 ### Eliminación de una cuenta de usuario {#removing-a-user-account}
 
-1. Con el cuadro de diálogo Administración de **usuarios** , abra la vista de lista de todas las cuentas.
+1. Con el cuadro de diálogo **Administración de usuarios** abra la vista de lista de todas las cuentas.
 1. Navegue por la estructura de árbol.
 1. Seleccione la cuenta requerida y haga clic en **Eliminar usuario**; la cuenta se eliminará inmediatamente.
 
@@ -305,9 +310,9 @@ Si una cuenta se hace pasar por otra es muy difícil de ver. Los archivos de reg
 
 Puede definir **Propiedades** para cuentas nuevas o existentes:
 
-1. Abra el cuadro de diálogo Administración de **usuarios** para la cuenta correspondiente.
-1. Defina un nombre **de propiedad** .
-1. Select the **Type** from the drop-down list.
+1. Abra el cuadro de diálogo **Administración de usuarios** para la cuenta adecuada.
+1. Defina un nombre de **Propiedad**.
+1. Seleccione **Tipo** en la lista desplegable.
 1. Defina el **valor**.
 1. Haga clic en Guardar (símbolo de clic verde) para la nueva propiedad.
 
@@ -317,15 +322,15 @@ A excepción de la contraseña, las propiedades no se pueden editar, se deben el
 
 #### Cambio de la contraseña {#changing-the-password}
 
-La **contraseña** es una propiedad especial que se puede cambiar haciendo clic en el vínculo **Cambiar contraseña** .
+La **Contraseña** es una propiedad especial que se puede cambiar haciendo clic en el vínculo **Cambiar contraseña**.
 
-También puede cambiar la contraseña a su propia cuenta de usuario desde el menú **Seguridad** del Explorador de CRX.
+También puede cambiar la contraseña a su propia cuenta de usuario desde el menú **Seguridad** en el Explorador de CRX.
 
 ### Definición de un suplantador {#defining-an-impersonator}
 
 Puede definir los suplantadores para cuentas nuevas o existentes:
 
-1. Abra el cuadro de diálogo Administración de **usuarios** para la cuenta correspondiente.
+1. Abra el cuadro de diálogo **Administración de usuarios** para la cuenta adecuada.
 1. Especifique la cuenta a la que se permitirá suplantar esa cuenta.
 
    Puede utilizar Examinar... para seleccionar una cuenta existente.
@@ -334,11 +339,11 @@ Puede definir los suplantadores para cuentas nuevas o existentes:
 
 ## Administración de grupos {#group-administration}
 
-Se utiliza un cuadro de diálogo estándar para la administración **de grupos**.
+Se utiliza un cuadro de diálogo estándar para **Administración de grupos**.
 
 Debe iniciar sesión en el espacio de trabajo correspondiente y, a continuación, puede acceder al cuadro de diálogo desde ambos:
 
-* el vínculo Administración **de** grupos en la consola principal de CRX
+* el vínculo **Administración de grupos** en la Consola principal de CRX
 * el menú **Seguridad** del Explorador de CRX
 
 ![chlimage_1-8](assets/chlimage_1-8.jpeg)
@@ -367,41 +372,41 @@ Al hacer clic en un GroupID se abrirá el cuadro de diálogo para ese grupo.
 
 **Miembros**
 
-Enumera todas las cuentas (usuarios y/o grupos) que son miembros del grupo actual.
+Lista todas las cuentas (usuarios y/o grupos) que son miembros del grupo actual.
 
 La columna **Heredada** indica la pertenencia heredada como resultado de la pertenencia a otro grupo.
 
 >[!NOTE]
 >
->Cuando se asigna la función Propietario, Editor o Visor a un usuario en cualquier carpeta de recursos, se crea un nuevo grupo. El nombre del grupo es del formato `mac-default-<foldername>` para cada carpeta en la que se definen las funciones.
+>Cuando se asigna la función Propietario, Editor o Visor a un usuario en cualquier carpeta de recursos, se crea un nuevo grupo. El nombre del grupo tiene el formato `mac-default-<foldername>` para cada carpeta en la que se definen las funciones.
 
 ### Creación de una cuenta de grupo {#creating-a-group-account}
 
-1. Abra el cuadro de diálogo Administración **de grupos** .
+1. Abra el cuadro de diálogo **Administración de grupos**.
 1. Haga clic en **Crear grupo**.
 1. A continuación, puede introducir las propiedades:
 
-   * **Nombre** principal para proporcionar un nombre de texto completo.
-   * **Ruta** intermedia que puede utilizarse para formar una estructura de árbol.
+   * **Nombre principal** para proporcionar un nombre de texto completo.
+   * **Rutas intermedias** que se pueden utilizar para formar una estructura de árbol.
 
 1. Haga clic en Guardar (símbolo de visto verde).
 1. El cuadro de diálogo se expandirá para que pueda:
 
-   1. Configure **Properties**.
-   1. Consulte Pertenencia **al grupo**.
-   1. Administrar **miembros**.
+   1. Configure **Propiedades**.
+   1. Consulte **Pertenencia al grupo**.
+   1. Administrar **Miembros**.
 
 ### Actualización de una cuenta de grupo {#updating-a-group-account}
 
-1. Con el cuadro de diálogo Administración **de** grupos, abra la vista de lista de todas las cuentas.
+1. Con el cuadro de diálogo **Administración de grupos** abra la vista de lista de todas las cuentas.
 1. Navegue por la estructura de árbol.
 1. Haga clic en la cuenta requerida para abrirla y editarla.
 1. Realice un cambio y haga clic en Guardar (símbolo de marca de verificación verde) para esa entrada.
-1. **Haga clic en** Cerrar **para finalizar o en** Lista... para volver a la lista de todas las cuentas de grupo.
+1. Haga clic en **Cerrar** para finalizar o **Lista...** para volver a la lista de todas las cuentas de grupo.
 
 ### Eliminación de una cuenta de grupo {#removing-a-group-account}
 
-1. Con el cuadro de diálogo Administración **de** grupos, abra la vista de lista de todas las cuentas.
+1. Con el cuadro de diálogo **Administración de grupos** abra la vista de lista de todas las cuentas.
 1. Navegue por la estructura de árbol.
 1. Seleccione la cuenta requerida y haga clic en **Eliminar grupo**; la cuenta se eliminará inmediatamente.
 
@@ -415,9 +420,9 @@ La columna **Heredada** indica la pertenencia heredada como resultado de la pert
 
 Puede definir Propiedades para cuentas nuevas o existentes:
 
-1. Abra el cuadro de diálogo Administración **de** grupos para la cuenta adecuada.
-1. Defina un nombre **de propiedad** .
-1. Select the **Type** from the drop-down list.
+1. Abra el cuadro de diálogo **Administración de grupos** para la cuenta adecuada.
+1. Defina un nombre de **Propiedad**.
+1. Seleccione **Tipo** en la lista desplegable.
 1. Defina el **valor**.
 1. Haga clic en Guardar (símbolo de visto verde) para la nueva propiedad.
 
@@ -427,11 +432,11 @@ Las propiedades existentes se pueden eliminar con el símbolo de papelera.
 
 Puede agregar miembros al grupo actual:
 
-1. Abra el cuadro de diálogo Administración **de** grupos para la cuenta adecuada.
+1. Abra el cuadro de diálogo **Administración de grupos** para la cuenta adecuada.
 1. O bien:
 
    * Introduzca el nombre del miembro requerido (cuenta de usuario o de grupo).
-   * **O utilice** Examinar... para buscar y seleccionar el principal (cuenta de usuario o de grupo) que desea agregar.
+   * O utilice **Examinar...** para buscar y seleccionar el principal (cuenta de usuario o de grupo) que desee agregar.
 
 1. Haga clic en Guardar (símbolo de visto verde) para la nueva propiedad.
 
@@ -439,15 +444,15 @@ O elimine un miembro existente con el símbolo de papelera.
 
 ## Administración de derechos de acceso {#access-right-management}
 
-Con la ficha Control **de** acceso de CRXDE Lite puede definir las políticas de control de acceso y asignar los privilegios relacionados.
+Con la ficha **Control de acceso** del CRXDE Lite puede definir las directivas de control de acceso y asignar los privilegios relacionados.
 
-Por ejemplo, para Ruta **** actual, seleccione el recurso necesario en el panel izquierdo, la ficha Control de acceso en el panel inferior derecho:
+Por ejemplo, para **Ruta actual** seleccione el recurso necesario en el panel izquierdo, la ficha Control de acceso en el panel inferior derecho:
 
 ![crx_accescontrol_tab](assets/crx_accesscontrol_tab.png)
 
 Las políticas se clasifican según:
 
-* **Directivas de control de acceso aplicables**
+* **Políticas de Control de acceso aplicables**
 
    Estas políticas se pueden aplicar.
 
@@ -461,7 +466,7 @@ Las políticas se clasifican según:
 
 * **Políticas de control de acceso efectivas**
 
-   Son las directivas de control de acceso que están actualmente en vigor para cualquier solicitud de acceso. Muestran las directivas agregadas derivadas de las políticas locales y de cualquier heredado del elemento principal.
+   Estas son las directivas de control de acceso que están actualmente en vigor para cualquier solicitud de acceso. Muestran las directivas agregadas derivadas de las políticas locales y de cualquier heredado del elemento principal.
 
 ### Selección de directivas {#policy-selection}
 
@@ -473,15 +478,15 @@ Las directivas se pueden seleccionar para:
 
 * **Repositorio**
 
-   Selecciona el control de acceso a nivel de repositorio. Por ejemplo, al configurar el `jcr:namespaceManagement` privilegio, que solo es relevante para el repositorio, no para un nodo.
+   Selecciona el control de acceso de nivel de repositorio. Por ejemplo, al configurar el privilegio `jcr:namespaceManagement`, que solo es relevante para el repositorio, no para un nodo.
 
 * **Principal**
 
    Principal registrado en el repositorio.
 
-   Puede escribir el nombre de la **entidad de seguridad** o hacer clic en el icono situado a la derecha del campo para abrir el cuadro de diálogo **Seleccionar entidad de seguridad** .
+   Puede escribir el nombre **Principal** o hacer clic en el icono a la derecha del campo para abrir el cuadro de diálogo **Seleccionar entidad de seguridad**.
 
-   Esto le permite **buscar** un **usuario** o un **grupo**. Seleccione la entidad de seguridad requerida en la lista resultante y, a continuación, haga clic en **Aceptar** para devolver el valor al cuadro de diálogo anterior.
+   Esto le permite **buscar** un **usuario** o **grupo**. Seleccione el principal requerido de la lista resultante y haga clic en **Aceptar** para volver a llevar el valor al cuadro de diálogo anterior.
 
 ![crx_accescontrol_selectmain](assets/crx_accesscontrol_selectprincipal.png)
 
@@ -493,7 +498,7 @@ Las directivas se pueden seleccionar para:
 
 ### Privilegios {#privileges}
 
-Los siguientes privilegios están disponibles para selección al agregar una entrada de control de acceso (consulte la API [de](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) seguridad para obtener más información):
+Los siguientes privilegios están disponibles para selección al agregar una entrada de control de acceso (consulte la [API de seguridad](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para obtener más información):
 
 <table>
  <tbody>
@@ -507,14 +512,14 @@ Los siguientes privilegios están disponibles para selección al agregar una ent
   </tr>
   <tr>
    <td><code>rep:write</code></td>
-   <td>Es un privilegio de agregado específico de jackrabbit de jcr:write y jcr:nodeTypeManagement.<br /> </td>
+   <td>Es un privilegio acumulado específico de jackrabbit de jcr:write y jcr:nodeTypeManagement.<br /> </td>
   </tr>
   <tr>
    <td><code>jcr:all</code></td>
-   <td>Es un privilegio agregado que contiene todos los demás privilegios predefinidos.</td>
+   <td>Es un privilegio acumulado que contiene todos los demás privilegios predefinidos.</td>
   </tr>
   <tr>
-   <td><strong>Avanzado</strong></td>
+   <td><strong>Avanzado </strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -543,7 +548,7 @@ Los siguientes privilegios están disponibles para selección al agregar una ent
   </tr>
   <tr>
    <td><code>jcr:namespaceManagement</code></td>
-   <td>Registrar, anular el registro y modificar definiciones de espacio de nombres.</td>
+   <td>Registre, anule el registro y modifique las definiciones de Área de nombres.</td>
   </tr>
   <tr>
    <td><code>jcr:nodeTypeDefinitionManagement</code></td>
@@ -551,7 +556,7 @@ Los siguientes privilegios están disponibles para selección al agregar una ent
   </tr>
   <tr>
    <td><code>jcr:nodeTypeManagement</code></td>
-   <td>Agregue y elimine tipos de nodos de mezcla y cambie el tipo de nodo principal de un nodo. Esto también incluye todas las llamadas a los métodos de importación de Node.addNode y XML en las que se especifica explícitamente la mezcla o el tipo principal del nuevo nodo.</td>
+   <td>Añada y elimine los tipos de nodos de mezcla y cambie el tipo de nodo principal de un nodo. Esto también incluye todas las llamadas a los métodos de importación de Node.addNode y XML en las que se especifica explícitamente la mezcla o el tipo principal del nuevo nodo.</td>
   </tr>
   <tr>
    <td><code>jcr:readAccessControl</code></td>
@@ -579,7 +584,7 @@ Los siguientes privilegios están disponibles para selección al agregar una ent
   </tr>
   <tr>
    <td><code>jcr:write</code></td>
-   <td><br /> Es un privilegio agregado que contiene: - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td>
+   <td>Es un privilegio acumulado que contiene:<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td>
   </tr>
   <tr>
    <td><code>rep:privilegeManagement</code></td>
@@ -588,11 +593,11 @@ Los siguientes privilegios están disponibles para selección al agregar una ent
  </tbody>
 </table>
 
-### Registro de nuevos privilegios {#registering-new-privileges}
+### Registro de Nuevos Privilegios {#registering-new-privileges}
 
 También puede registrar nuevos privilegios:
 
-1. En la barra de herramientas, seleccione **Herramientas** y, a continuación, **Privilegios** para mostrar los privilegios registrados actualmente.
+1. En la barra de herramientas, seleccione **Herramientas**, luego **Privilegios** para mostrar los privilegios registrados actualmente.
 
    ![ac_privilegios](assets/ac_privileges.png)
 
@@ -602,15 +607,15 @@ También puede registrar nuevos privilegios:
 
 1. Haga clic en **Aceptar** para guardar. El privilegio ahora estará disponible para su selección.
 
-### Adición de una entrada de control de acceso {#adding-an-access-control-entry}
+### Añadir una entrada de Control de acceso {#adding-an-access-control-entry}
 
-1. Seleccione el recurso y abra la ficha Control **de** acceso.
+1. Seleccione el recurso y abra la ficha **Control de acceso**.
 
-1. Para agregar una nueva directiva **de control de acceso** local, haga clic en el icono **+** situado a la derecha de la lista de directivas **de control de acceso** aplicables:
+1. Para agregar una nueva **Directivas de Control de acceso local**, haga clic en el icono **+** a la derecha de la lista **Directiva de Control de acceso aplicable**:
 
    ![crx_accescontrol_aplicable](assets/crx_accesscontrol_applicable.png)
 
-1. Aparece una nueva entrada en Directivas de control de acceso **local:**
+1. Aparece una nueva entrada en **Directivas de Control de acceso local:**
 
    ![crx_accescontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
 
@@ -626,29 +631,29 @@ También puede registrar nuevos privilegios:
 
 1. Defina la directiva de control de acceso y haga clic en **Aceptar** para guardar. La nueva directiva:
 
-   * se enumerarán en Directiva de control de acceso **local**
-   * los cambios se reflejarán en las políticas **** efectivas de control de acceso.
+   * debe aparecer en **Política de Control de acceso local**
+   * los cambios se reflejarán en las **Políticas de Control de acceso efectivas**.
 
 CRX validará su selección; para una entidad de seguridad determinada existe (como máximo) 1 denegación y 1 permitir la entrada en un nodo determinado. La implementación siempre borra las entradas redundantes y se asegura de que el mismo privilegio no aparezca en las entradas de permitir y denegar.
 
-### Ordering Local Access Control Policies {#ordering-local-access-control-policies}
+### Ordenar directivas de Control de acceso local {#ordering-local-access-control-policies}
 
 El orden de la lista indica el orden en que se aplican las políticas.
 
-1. En la tabla Directivas **de control de acceso** local, seleccione la entrada requerida y arrástrela a la nueva posición de la tabla.
+1. En la tabla de **Directivas de Control de acceso local**, seleccione la entrada requerida y arrástrela a la nueva posición de la tabla.
 
    ![crx_accescontrol_reorder](assets/crx_accesscontrol_reorder.png)
 
-1. Los cambios se mostrarán tanto en las tablas de **Local** como en las Políticas **de Control de Acceso** Efectivo.
+1. Los cambios se mostrarán en las tablas de **Local** y **Políticas de Control de acceso efectivas**.
 
-### Eliminación de una directiva de control de acceso {#removing-an-access-control-policy}
+### Eliminación de una directiva de Control de acceso {#removing-an-access-control-policy}
 
-1. En la tabla Directivas **de control de acceso** local, haga clic en el icono rojo (-) a la derecha de la entrada.
-1. La entrada se eliminará de las tablas de **Local** y de Directivas **de control de acceso** efectivas.
+1. En la tabla de **Directivas de Control de acceso local** haga clic en el icono rojo (-) a la derecha de la entrada.
+1. La entrada se eliminará de las tablas **Local** y **Políticas de Control de acceso efectivas**.
 
-### Prueba de una directiva de control de acceso {#testing-an-access-control-policy}
+### Prueba de una directiva de Control de acceso {#testing-an-access-control-policy}
 
-1. **En la barra de herramientas de CRXDE Lite, seleccione** Herramientas **, luego** Probar control de acceso... .
+1. En la barra de herramientas del CRXDE Lite, seleccione **Herramientas**, luego **Control de acceso de prueba...**.
 1. Se abre un nuevo cuadro de diálogo en el panel superior derecho. Seleccione la **ruta** y/o **entidad de seguridad** que desee probar.
 1. Haga clic en **Prueba** para ver los resultados de la selección:
 
