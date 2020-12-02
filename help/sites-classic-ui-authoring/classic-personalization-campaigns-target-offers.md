@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 70%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Haga clic en **Nuevo…**
-1. You can specify the **Title**, **Name** and type of experience to be created; in this case, Test&amp;Target Offer.
+1. Puede especificar el **Título**, **Nombre** y el tipo de experiencia que se creará; en este caso, Oferta de Test&amp;Destinatario.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -37,4 +40,4 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Integración con Adobe Target {#integrating-with-adobe-target}
 
-See [Integrate with Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) for full details.
+Consulte [Integración con Adobe](/help/sites-administering/target.md) [Destinatario](/help/sites-administering/target.md) para obtener más información.
