@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 74%
 
 ---
 
@@ -23,12 +26,12 @@ Un lanzamiento se crea para permitir que se realicen cambios preparados para una
 
 >[!NOTE]
 >
->The theory behind launches is described in detail under [Launches](/help/sites-authoring/launches.md) in the standard authoring documentation.
+>La teoría detrás de los lanzamientos se describe en detalle en [Lanzamientos](/help/sites-authoring/launches.md) en la documentación de creación estándar.
 >
->Information specific to using launches in the classic UI can be found in the following documentation together with [Creating Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md), and [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>La información específica sobre el uso de lanzamientos en la IU clásica se encuentra en la siguiente documentación junto con [Creación de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edición de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-editing.md) y [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >En la IU clásica no es posible tener varias ramas de origen para un lanzamiento.
 
-The Launches console can be directly accessed with [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+Se puede acceder directamente a la consola Lanzamientos desde [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
