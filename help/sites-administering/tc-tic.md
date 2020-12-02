@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Configuración del módulo de integración de traducción{#configuring-the-translation-integration-framework}
 
-El módulo de integración de traducción se integra con los servicios de traducción de terceros para organizar la traducción del contenido de AEM.
+El módulo de integración de traducción se integra con los servicios de traducción de terceros para orquestar la traducción de AEM contenido.
 
 * Conéctese al proveedor de servicio de traducción.
 * Cree una configuración del módulo de integración de traducción.
 * Asocie las configuraciones de nube con sus páginas.
 
-Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios](/help/sites-administering/translation.md)multilingües.
+Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md).
 
 ## Conexión a un Proveedor de servicio de traducción {#connecting-to-a-translation-service-provider}
 
@@ -51,8 +51,8 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 >Para encontrar la última lista de proveedores de traducción automática y humana, eche un vistazo a estas páginas:
 >
 >
->* [Traducción humana de AEM](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM Machine Translation](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM traducción humana](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [AEM traducción automática](https://www.adobe.com/go/aem-machine-translation-connectors)
 
 >
 
@@ -78,7 +78,7 @@ Cuando diferentes secciones del sitio web tengan diferentes requisitos de traduc
 
 Después de configurar un marco de integración de traducción, puede [asociarlo con las páginas](/help/sites-administering/tc-prep.md) que lo utilizan.
 
-**Nota:** Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios](/help/sites-administering/translation.md)multilingües.
+**Nota:** Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte  [Traducción de contenido para sitios](/help/sites-administering/translation.md) multilingües.
 
 Una sola configuración del marco controla cómo traducir el contenido de la página, el contenido de la comunidad y los recursos.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -116,7 +116,7 @@ Las propiedades Sitios controlan cómo se realiza la traducción del contenido d
   </tr>
   <tr>
    <td>Traducir recursos de la página</td>
-   <td><p>Seleccione cómo traducir recursos que se agregan a componentes del sistema de archivos o a los que se hace referencia desde Recursos:</p>
+   <td><p>Seleccione cómo traducir recursos que se han agregado a componentes del sistema de archivos o a los que se hace referencia desde Recursos:</p>
     <ul>
      <li>No traducir: Los recursos de página no se traducen.</li>
      <li>Uso del flujo de trabajo de traducción de sitios: Los recursos se gestionan según las propiedades de configuración de la ficha Sitios.</li>
@@ -132,13 +132,13 @@ Las propiedades Sitios controlan cómo se realiza la traducción del contenido d
 
 ### Propiedades de configuración de comunidades {#communities-configuration-properties}
 
-Las propiedades de comunidades controlan cómo se realiza la traducción del contenido generado por el usuario. La traducción del contenido generado por el usuario siempre utiliza la traducción automática. Para obtener más información, consulte [Traducción de contenido](/help/communities/translate-ugc.md)generado por el usuario.
+Las propiedades de comunidades controlan cómo se realiza la traducción del contenido generado por el usuario. La traducción del contenido generado por el usuario siempre utiliza la traducción automática. Para obtener más información, consulte [Traducción de contenido generado por el usuario](/help/communities/translate-ugc.md).
 
 | Propiedad | Descripción |
 |---|---|
 | Proveedor de traducciones | Seleccione el proveedor de traducción para realizar la traducción. El proveedor para el que se crean las configuraciones de nube aparece en la lista. |
-| Categoría de contenido | categoría que describe el contenido que está traduciendo. La categoría puede afectar a la elección de terminología y frases al traducir contenido. |
-| Elija Una Configuración Regional Para Utilizarla Como Tienda Compartida Global | (Opcional) Al seleccionar una configuración regional para almacenar UGC, las publicaciones de todas las copias de idioma aparecerán en una conversación global. Por convención, elija la configuración regional para el idioma [](/help/communities/sites-console.md#translation) base del sitio web. Si elige Sin tienda común, se deshabilitará la traducción global. De forma predeterminada, la traducción global está deshabilitada. |
+| Categoría de contenido | Categoría que describe el contenido que está traduciendo. La categoría puede afectar a la elección de terminología y frases al traducir contenido. |
+| Elija Una Configuración Regional Para Utilizarla Como Tienda Compartida Global | (Opcional) Al seleccionar una configuración regional para almacenar UGC, las publicaciones de todas las copias de idioma aparecerán en una conversación global. Por convención, elija la configuración regional para el [idioma base](/help/communities/sites-console.md#translation) del sitio Web. Si elige Sin tienda común, se deshabilitará la traducción global. De forma predeterminada, la traducción global está deshabilitada. |
 
 ### Propiedades de configuración de recursos {#assets-configuration-properties}
 
@@ -186,7 +186,7 @@ Las propiedades de recursos controlan cómo configurar los recursos. Para obtene
  </tbody>
 </table>
 
-1. En la barra lateral, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
+1. En la barra lateral, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Services.
 1. En el área Integración de traducción, si se ha creado alguna configuración determina qué vínculo aparece:
 
    * Si no se ha creado ninguna configuración, toque o haga clic en Configurar ahora.
@@ -199,7 +199,7 @@ Las propiedades de recursos controlan cómo configurar los recursos. Para obtene
 
 Para configurar la traducción de las páginas de origen a otros idiomas, asocie las páginas con las siguientes configuraciones de nube:
 
-* La configuración de nube que conecta AEM con su proveedor de traducción.
+* La configuración de nube que se conecta AEM con su proveedor de traducción.
 * Marco de integración de traducción que configura los detalles de la traducción.
 
 Tenga en cuenta que la configuración de nube de la estructura de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicio. Cuando asocia una página de origen con una configuración de nube de estructura, la página debe asociarse con la configuración de nube de proveedor de servicio que utiliza la configuración de nube de estructura.
@@ -208,23 +208,23 @@ Al asociar una página con una configuración de nube, los descendientes de la p
 
 Si es necesario, puede anular la asociación en una página de descendientes. Por ejemplo: el contenido de un sitio Web se trata principalmente de ropa. Sin embargo, una rama de páginas describe la compañía. La página raíz del sitio está asociada con un módulo de integración de traducción que especifica la traducción automática mediante la categoría Ropa. La rama que describe la compañía utiliza un marco que realiza la traducción automática mediante la categoría General.
 
-Además, para cualquier comunidad de componentes [](/help/communities/scf.md) SCF en las páginas, el contenido generado por el usuario (UGC) incluirá la capacidad de los usuarios para traducir contenido. Para obtener más información, consulte [Traducción de contenido](/help/communities/translate-ugc.md)generado por el usuario.
+Además, para todas las comunidades [componentes SCF](/help/communities/scf.md) de las páginas, el contenido generado por el usuario (UGC) incluirá la capacidad de los usuarios para traducir contenido. Para obtener más información, consulte [Traducción de contenido generado por el usuario](/help/communities/translate-ugc.md).
 
 ### Asociación de una página con un proveedor de traducción {#associating-a-page-with-a-translation-provider}
 
 Asocie una página con el proveedor de traducción que está utilizando para traducir la página y las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desee configurar y toque o haga clic en Propiedades de la Vista.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Service.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Services.
 1. Toque o haga clic en Añadir configuración > Integración de traducción.
 1. Seleccione el proveedor de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
 
-### Asociación de páginas con un marco de integración de traducción {#associating-pages-with-a-translation-integration-framework}
+### Asociación de páginas con un módulo de integración de traducción {#associating-pages-with-a-translation-integration-framework}
 
 Asocie una página con el módulo de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desee configurar y toque o haga clic en Propiedades de la Vista.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Service.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Services.
 1. Toque o haga clic en Añadir configuración > Integración de traducción.
 1. Seleccione el marco de integración de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
 
