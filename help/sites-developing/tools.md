@@ -12,6 +12,9 @@ discoiquuid: 3cf0fd8d-7fc8-468a-bb1e-1debb68a82a5
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 AEM proporciona:
 
-* [un marco para probar la interfaz de usuario](/help/sites-developing/hobbes.md)del componente.
+* [un marco para probar la interfaz de usuario](/help/sites-developing/hobbes.md) del componente.
 * [un mecanismo para probar y depurar componentes](/help/sites-developing/developer-mode.md).
 
 Las siguientes son dos herramientas de prueba de código abierto:
@@ -51,7 +54,7 @@ Un sistema de seguimiento de errores que puede configurarse según sus propios r
 
 **Hojas de cálculo**
 
-Aunque no se trata específicamente de una herramienta de seguimiento de errores, las hojas de cálculo suelen utilizarse ** incorrectamente con este fin, ya que son fáciles de comprender y la mayoría de los usuarios tienen experiencia en su funcionalidad.
+Aunque no se trata específicamente de una herramienta de seguimiento de errores, las hojas de cálculo suelen *mis* utilizarse para este fin, ya que son fáciles de comprender y la mayoría de los usuarios tienen experiencia en su funcionalidad.
 
 Si se utilizan para el seguimiento, entonces:
 
@@ -60,6 +63,6 @@ Si se utilizan para el seguimiento, entonces:
 * deben actualizarse periódicamente.
 * sólo se debe mantener una copia maestra y todos deben saber dónde está la copia maestra.
 * deben ser accesibles para todos los miembros del proyecto.
-* si la seguridad es un problema (a menudo ocurre en grandes empresas) y el acceso común no es posible, las copias se pueden distribuir siempre que todos entiendan que se trata de copias y no se puedan actualizar.
+* si la seguridad es un problema (a menudo ocurre en grandes compañías) y no es posible el acceso común, las copias se pueden distribuir siempre que todos entiendan que se trata de copias y no se puedan actualizar.
 
 Nuevamente, existen muchas herramientas de propiedad para rastrear errores y requisitos de características.
