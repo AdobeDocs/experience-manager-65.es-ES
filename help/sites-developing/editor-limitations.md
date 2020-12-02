@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
 source-git-commit: 844d42ed50da153077423190684aa85265bce12f
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -25,13 +28,13 @@ Un autor puede encontrar las siguientes limitaciones funcionales al utilizar el 
 
 ### Vínculos no activos {#links-not-active}
 
-Al [editar una página](/help/sites-authoring/editing-content.md), los vínculos no están activos.
+Cuando [edita una página](/help/sites-authoring/editing-content.md), los vínculos no están activos.
 
-* [Cambie al modo **Previsualización**](/help/sites-authoring/editing-content.md#preview-mode) para navegar con los vínculos del contenido.
+* [Cambie a  **** ](/help/sites-authoring/editing-content.md#preview-mode) Vista previa para navegar con los vínculos del contenido.
 
 ### Páginas de estructura {#structure-pages}
 
-No se pueden asignar nombres a las páginas `structure`. Las páginas con nombre `structure` no se podrán editar en el editor de páginas.
+No se puede asignar un nombre a las páginas `structure`. Las páginas con el nombre `structure` no se podrán editar en el editor de páginas.
 
 ## Limitaciones de CSS {#css-limitations}
 
@@ -45,15 +48,15 @@ Los elementos con posición absoluta pueden causar problemas en la posición de 
 
 ### unidades de vh {#vh-units}
 
-`vh` no se admiten las unidades porque AEM debe ajustar automáticamente la altura del iframe.
+`vh` no se admiten las unidades porque la altura del iframe debe ajustarse automáticamente por AEM.
 
 ### Imágenes de fondo fijas {#fixed-background-images}
 
 Es posible que las imágenes de fondo fijas no se muestren como fijas al desplazarse debido a que se incrustan en un iframe.
 
-* Si selecciona **Vista de página como Publicada** en las acciones de la barra de encabezado, se muestra la página correctamente.
+* Si selecciona **Página de Vista como Publicada** en las acciones de la barra de encabezado, la página se muestra correctamente.
 
-### 100% Height {#height}
+### Altura del 100% {#height}
 
 El elemento body de una página no admite una altura del 100 %.
 
