@@ -19,9 +19,9 @@ ht-degree: 3%
 
 # Personalización de la lista de instancias de proceso {#customizing-the-listing-of-process-instances}
 
-La lista de instancia de proceso se muestra en la ficha Seguimiento del espacio de trabajo AEM Forms.
+La lista de la instancia de proceso se muestra en la ficha Seguimiento del espacio de trabajo de AEM Forms.
 
-En la lista de instancias de proceso, para cada instancia de proceso, el espacio de trabajo AEM Forms muestra algunas propiedades de esa instancia. Las siguientes propiedades están disponibles para cada instancia de proceso. Estas propiedades se almacenan como atributos en el modelo de componentes de instancia de proceso y están disponibles para su uso en su vista y plantilla.
+En la lista de instancias de proceso, para cada instancia de proceso, el espacio de trabajo de AEM Forms muestra algunas propiedades de esa instancia. Las siguientes propiedades están disponibles para cada instancia de proceso. Estas propiedades se almacenan como atributos en el modelo de componentes de instancia de proceso y están disponibles para su uso en su vista y plantilla.
 
 <table>
  <tbody>
@@ -51,7 +51,7 @@ En la lista de instancias de proceso, para cada instancia de proceso, el espacio
   </tr>
   <tr>
    <td>processInstanceStatus</td>
-   <td>0 = Iniciado<br /> 1 = Ejecución<br /> 2 = Completado<br /> 3 = Finalización<br /> 4 = Terminado<br /> 5 = Terminación<br /> 6 = Suspendido<br /> 7 = Suspendido<br /> 8 = Sin suspensión</td>
+   <td>0 = Iniciado<br /> 1 = Ejecutando<br /> 2 = Completado<br /> 3 = Finalizando<br /> 4 = Terminado<br /> 5 = Terminando<br /> 6 = Suspendido<br /> 7 = Suspendiendo<br /> 8 = Sin suspender</td>
   </tr>
   <tr>
    <td>processName</td>
@@ -63,16 +63,16 @@ En la lista de instancias de proceso, para cada instancia de proceso, el espacio
   </tr>
   <tr>
    <td>processVariables</td>
-   <td>Matriz de objetos de variables de proceso. Cada objeto de variable de proceso contiene <strong>nombre</strong> (el nombre de la variable de proceso), <strong>valor</strong> (el valor de la variable de proceso) y tipo<strong></strong> (el tipo de variable de proceso).</td>
+   <td>Matriz de objetos de variables de proceso. Cada objeto de variable de proceso contiene <strong>nombre</strong> (el nombre de la variable de proceso), <strong>valor</strong> (valor de la variable de proceso) y<strong> tipo</strong> (el tipo de variable de proceso).</td>
   </tr>
  </tbody>
 </table>
 
 **Ejemplo:**
 
-Para mostrar la `description` propiedad de la instancia de proceso en la tarjeta de instancia de proceso, lleve a cabo los siguientes pasos.
+Para mostrar la propiedad `description` de la instancia de proceso en la tarjeta de instancia de proceso, lleve a cabo los siguientes pasos.
 
-1. Siga los pasos [Genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo AEM Forms.
+1. Siga los [pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Haga lo siguiente:
 
    1. Copie /libs/ws/js/runtime/templates/processinstance.html a/apps/ws/js/Runtime/templates/, si no existe. Haga clic en **Guardar todo**.
@@ -85,7 +85,7 @@ Para mostrar la `description` propiedad de la instancia de proceso en la tarjeta
 1. Haga lo siguiente:
 
    1. Abra /apps/ws/js/registry.js para editar.
-   1. Busque y reemplace `text!/lc/libs/ws/js/runtime/templates/processinstance.html`por `text!/lc/`**las aplicaciones **/ws/js/runtime/templates/processinstance.html.
+   1. Busque y reemplace `text!/lc/libs/ws/js/runtime/templates/processinstance.html`por `text!/lc/`**aplicaciones**/ws/js/runtime/templates/processinstance.html.
 
 1. Los cambios anteriores pueden requerir una actualización del archivo CSS mediante la adición de una entrada en la hoja de estilo /apps/ws/css/newStyle.css de la siguiente manera:
 
