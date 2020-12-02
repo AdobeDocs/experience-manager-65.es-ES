@@ -41,32 +41,32 @@ Los autores de formularios pueden utilizar el servicio reCAPTCHA de Google para 
 
 Para implementar el servicio reCAPTCHA en AEM Forms:
 
-1. Obtenga el par [de claves de la API de](https://www.google.com/recaptcha/admin) reCAPTCHA de Google. Incluye una clave del sitio y un secreto.
+1. Obtenga [par de claves de API de reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Incluye una clave del sitio y un secreto.
 1. Crear contenedor de configuración para servicios en la nube.
 
-   1. Vaya a **[!UICONTROL Herramientas > General > Navegador]** de configuración.
-      * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+   1. Vaya a **[!UICONTROL Herramientas > General > Navegador de configuración]**.
+      * Consulte la documentación de [Configuration Browser](/help/sites-administering/configurations.md) para obtener más información.
    1. Haga lo siguiente para habilitar la carpeta global para las configuraciones de nube o omita este paso para crear y configurar otra carpeta para las configuraciones de servicio en la nube.
 
-      1. En el navegador de configuración, seleccione la carpeta **[!UICONTROL global]** y toque **[!UICONTROL Propiedades]**.
+      1. En el Explorador de configuración, seleccione la carpeta **[!UICONTROL global]** y toque **[!UICONTROL Propiedades]**.
 
-      1. En el cuadro de diálogo Propiedades de configuración, habilite Configuraciones **[!UICONTROL de nube]**.
+      1. En el cuadro de diálogo Propiedades de configuración, habilite **[!UICONTROL Configuraciones de nube]**.
       1. Toque **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
-   1. En el navegador de configuración, toque **[!UICONTROL Crear]**.
-   1. En el cuadro de diálogo Crear configuración, especifique un título para la carpeta y habilite Configuraciones **[!UICONTROL de nube]**.
+   1. En el Explorador de configuración, toque **[!UICONTROL Crear]**.
+   1. En el cuadro de diálogo Crear configuración, especifique un título para la carpeta y habilite **[!UICONTROL Configuraciones de nube]**.
    1. Toque **[!UICONTROL Crear]** para crear la carpeta habilitada para las configuraciones de servicio en la nube.
 
 
 1. Configure el servicio en la nube para reCAPTCHA.
 
-   1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. En la instancia de autor AEM, vaya a ![tools-1](assets/tools-1.png) > **Cloud Services**.
    1. Toque **[!UICONTROL reCAPTCHA]**. Se abre la página Configuraciones. Seleccione el contenedor de configuración creado en el paso anterior y toque **[!UICONTROL Crear]**.
    1. Especifique Nombre, Clave del sitio y Clave secreta para el servicio reCAPTCHA y toque **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
-   1. En el cuadro de diálogo Editar componente, especifique el sitio y las claves secretas obtenidas en el paso 1. Toque **Guardar configuración** y, a continuación, toque **Aceptar** para completar la configuración.
+   1. En el cuadro de diálogo Editar componente, especifique el sitio y las claves secretas obtenidas en el paso 1. Toque **Guardar configuración** y luego toque **Aceptar** para completar la configuración.
 
-   Una vez configurado el servicio reCAPTCHA, estará disponible para su uso en formularios adaptables. Para obtener más información, consulte [Uso de CAPTCHA en formularios](#using-captcha)adaptables.
+   Una vez configurado el servicio reCAPTCHA, estará disponible para su uso en formularios adaptables. Para obtener más información, consulte [Uso de CAPTCHA en formularios adaptables](#using-captcha).
 
-## Utilizar CAPTCHA en formularios adaptables {#using-captcha}
+## Utilice CAPTCHA en formularios adaptables {#using-captcha}
 
 Para utilizar CAPTCHA en formularios adaptables:
 
@@ -87,12 +87,12 @@ Para utilizar CAPTCHA en formularios adaptables:
    >Captcha diferencia el tiempo y caduca en aproximadamente un minuto. Por lo tanto, se recomienda colocar el componente Captcha justo antes del botón Enviar en el formulario adaptable.
 
 1. Seleccione el componente Captcha que ha agregado y toque ![cmppr](assets/cmppr.png) para editar sus propiedades.
-1. Especifique un título para la utilidad CAPTCHA. The default value is **Captcha**. Seleccione **Ocultar título** si no desea que aparezca el título.
-1. En la lista desplegable del servicio **** Captcha, seleccione **reCaptcha** para habilitar el servicio reCAPTCHA si lo configuró como se describe en el servicio [ReCAPTCHA de Google](#google-recaptcha). Seleccione una configuración en la lista desplegable Configuración. Además, seleccione el tamaño como **Normal** o **Compacto** para la utilidad reCAPTCHA.
+1. Especifique un título para la utilidad CAPTCHA. El valor predeterminado es **Captcha**. Seleccione **Ocultar título** si no desea que aparezca el título.
+1. En la lista desplegable **Servicio Captcha**, seleccione **reCaptcha** para habilitar el servicio reCAPTCHA si lo configuró como se describe en [servicio ReCAPTCHA de Google](#google-recaptcha). Seleccione una configuración en la lista desplegable Configuración. Además, seleccione el tamaño como **Normal** o **Compacto** para la utilidad reCAPTCHA.
 
    >[!NOTE]
    >
-   >No seleccione **[!UICONTROL Predeterminado]** en la lista desplegable Servicio Captcha porque el servicio AEM CAPTCHA predeterminado está obsoleto.
+   >No seleccione **[!UICONTROL Predeterminado]** en la lista desplegable del servicio Captcha porque el servicio AEM CAPTCHA predeterminado está obsoleto.
 
 1. Guarde las propiedades.
 
