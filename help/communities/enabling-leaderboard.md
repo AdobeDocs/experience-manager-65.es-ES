@@ -19,28 +19,28 @@ ht-degree: 9%
 ---
 
 
-# Función de tabla de clasificación {#leaderboard-feature}
+# Característica de tabla de clasificación {#leaderboard-feature}
 
 ## Introducción {#introduction}
 
-El `Leaderboard` componente proporciona la capacidad de obtener una idea de cómo interactúan los miembros dentro de la comunidad mediante la clasificación de los miembros según los puntos ganados (puntuación básica) o su experiencia (puntuación avanzada).
+El componente `Leaderboard` proporciona la capacidad de obtener una idea de cómo interactúan los miembros dentro de la comunidad mediante la clasificación de los miembros según los puntos ganados (puntuación básica) o su experiencia (puntuación avanzada).
 
-Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar la Puntuación de [comunidades y los distintivos](/help/communities/implementing-scoring.md).
+Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar [Puntuación de comunidades y distintivos](/help/communities/implementing-scoring.md).
 
 Esta sección de la documentación describe:
 
-* Añadir el `Leaderboard` componente en un sitio [de](/help/communities/overview.md#community-sites)comunidad.
-* Configuración del `Leaderboard` componente.
+* Añadir el componente `Leaderboard` en un [sitio de comunidad](/help/communities/overview.md#community-sites).
+* Configuración del componente `Leaderboard`.
 
-### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+### Añadir un Leaderboard en una página {#adding-a-leaderboard-to-a-page}
 
-Para agregar un `Leaderboard` componente a una página en modo de autor, ubique el componente
+Para agregar un componente `Leaderboard` a una página en modo de autor, busque el componente
 
 * `Communities / Leaderboard`
 
 y arrástrelo a su lugar en una página.
 
-Para obtener la información necesaria, visite [Communities Components Basics](/help/communities/basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](/help/communities/basics.md).
 
 Cuando se coloca por primera vez en una página de un sitio de comunidad, así es como aparece el componente:
 
@@ -48,7 +48,7 @@ Cuando se coloca por primera vez en una página de un sitio de comunidad, así e
 
 ### Configuración de la tabla de clasificación {#configuring-leaderboard}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Leaderboard` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Leaderboard` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -56,12 +56,12 @@ Seleccione el componente colocado al que desea acceder y seleccione el `Leaderbo
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **[!UICONTROL Configuración]** , especifique qué información relacionada con el miembro se muestra:
+En la ficha **[!UICONTROL Configuración]**, especifique qué información relacionada con el miembro se muestra:
 
 * **Nombre para mostrar**
 
    Nombre descriptivo que se mostrará en el tablero, que refleja las reglas seleccionadas para mostrar distintivos y puntuaciones.
-El valor predeterminado es `Leaderboard`si no se ha introducido nada.
+El valor predeterminado es `Leaderboard`, si no se ha introducido nada.
 
 * **Distintivo**
 
@@ -80,7 +80,7 @@ El valor predeterminado no está marcado.
 
 #### Ficha Reglas {#rules-tab}
 
-Bajo la ficha **Reglas** , el sitio de la comunidad y sus reglas de puntuación y de distintivo
+En la ficha **Reglas**, el sitio de la comunidad y sus reglas de puntuación y de distintivo
 
 * **Ubicación de la regla**
 
@@ -98,7 +98,7 @@ Bajo la ficha **Reglas** , el sitio de la comunidad y sus reglas de puntuación 
 
    Número de miembros que mostrar por página.El valor predeterminado es 10.
 
-### Ejemplo: Mesa de liderazgo de los participantes {#example-participants-leaderboard}
+### Ejemplo: Panel de liderazgo de los participantes {#example-participants-leaderboard}
 
 Este marcador de posición indica los resultados de la aplicación de reglas de puntuación básicas.
 
@@ -131,7 +131,7 @@ Configuración del componente de la tabla de clasificación:
 * Ficha Configuración:
 
    * Nombre para mostrar = `Expertise Board`
-   * `checked`:
+   * `checked`::
 
       * Distintivo
       * Usar avatar
@@ -149,4 +149,4 @@ Configuración del componente de la tabla de clasificación:
 
 Puede encontrar más información en la página [Leaderboard Essentials](/help/communities/leaderboard.md) para desarrolladores.
 
-Las instrucciones para crear reglas se proporcionan en la página Puntuación de [comunidades y distintivos](/help/communities/implementing-scoring.md) para administradores.
+Las instrucciones para crear reglas se proporcionan en la página [Puntuación de comunidades y distintivos](/help/communities/implementing-scoring.md) para administradores.
