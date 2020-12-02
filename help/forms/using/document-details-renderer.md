@@ -32,7 +32,7 @@ Este documento explica el trabajo de estos procesadores desde la perspectiva de 
 
 ## PDF forms {#pdf-forms}
 
-Los PDF forms son procesados por `PdfTaskForm View`.
+Los PDF forms se representan con `PdfTaskForm View`.
 
 Cuando un formulario XDP se procesa como PDF, el servicio FormsAugmenter agrega un `FormBridge` JavaScript™. Este JavaScript™ (dentro del formulario PDF) ayuda a realizar acciones como enviar formularios, guardarlos o desconectarlos.
 
@@ -44,7 +44,7 @@ Se comunica mediante `window.postMessage` / `window.attachEvent('message')`
 
 Este método es la forma estándar de comunicación entre un marco principal y un iframe. Los oyentes de evento existentes de PDF forms abiertos anteriormente se eliminan antes de agregar uno nuevo. Esta depuración también tiene en cuenta el cambio entre la ficha de formulario y la ficha de historial en la vista de detalles de tarea.
 
-**pdf.html:`FormBridge`javascript dentro del PDF procesado**
+**pdf.html:  `FormBridge`javascript dentro del PDF procesado**
 
 Se comunica mediante `pdfObject.postMessage` / `pdfObject.messageHandler`
 
@@ -70,11 +70,11 @@ Este JavaScript es diferente del mencionado en los PDF forms anteriores, pero ti
 
 SwfTaskForm representa Flex Forms y las guías las Vistas HtmlTaskForm respectivamente.
 
-En el espacio de trabajo de AEM Forms, estas vistas se comunican con el SWF real que conforma el formulario/guía flexible mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+En el espacio de trabajo de AEM Forms, estas vistas se comunican con el SWF real que conforma el formulario/guía flexible mediante un SWF intermedio que se encuentra en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
-La comunicación se produce usando `swfObject.postMessage` / `window.flexMessageHandler`.
+La comunicación se produce utilizando `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Este protocolo está definido por el `WsNextAdapter.swf`. El objeto `flexMessageHandlers`de ventana existente, de formularios SWF previamente abiertos, se elimina antes de agregar uno nuevo. La lógica también tiene en cuenta el cambio entre la ficha de formulario y la ficha de historial en la vista de detalles de tarea. `WsNextAdapter.swf` se utiliza para realizar varias acciones de formulario como guardar o enviar.
+Este protocolo está definido por `WsNextAdapter.swf`. El objeto `flexMessageHandlers`existente en la ventana, de los formularios SWF previamente abiertos, se elimina antes de agregar uno nuevo. La lógica también tiene en cuenta el cambio entre la ficha de formulario y la ficha de historial en la vista de detalles de tarea. `WsNextAdapter.swf` se utiliza para realizar varias acciones de formulario como guardar o enviar.
 
 >[!NOTE]
 >
@@ -88,12 +88,12 @@ Las aplicaciones de terceros se representan mediante la vista ExtAppTaskForm.
 
 El espacio de trabajo de AEM Forms escucha en `window.global.postMessage([Message],[Payload])`
 
-[El mensaje] puede ser una cadena especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`en el `runtimeMap`. Las aplicaciones de terceros deben utilizar esta interfaz para notificar el espacio de trabajo de AEM Forms según sea necesario. El uso de esta interfaz es obligatorio, ya que el espacio de trabajo de AEM Forms debe saber que cuando se envía la tarea para que pueda limpiar la ventana de tarea.
+[] Messageccan puede ser una cadena especificada como  `SubmitMessage`|  `CancelMessage`|  `ErrorMessage`|  `actionEnabledMessage`en el  `runtimeMap`. Las aplicaciones de terceros deben utilizar esta interfaz para notificar el espacio de trabajo de AEM Forms según sea necesario. El uso de esta interfaz es obligatorio, ya que el espacio de trabajo de AEM Forms debe saber que cuando se envía la tarea para que pueda limpiar la ventana de tarea.
 
 **Comunicación del espacio de trabajo de AEM Forms con aplicaciones de terceros**
 
-Si los botones de acción directa del espacio de trabajo de AEM Forms están visibles, llama `window.[External-App-Name].getMessage([Action])`, donde `[Action]` se lee desde el `routeActionMap`. La aplicación de terceros debe escuchar esta interfaz y, a continuación, notificar el espacio de trabajo de AEM Forms mediante la `postMessage ()` API.
+Si los botones de acción directa del espacio de trabajo de AEM Forms están visibles, llama a `window.[External-App-Name].getMessage([Action])`, donde `[Action]` se lee desde `routeActionMap`. La aplicación de terceros debe escuchar en esta interfaz y, a continuación, notificar al espacio de trabajo de AEM Forms mediante la API `postMessage ()`.
 
-Por ejemplo, una aplicación de Flex puede definir `ExternalInterface.addCallback('getMessage', listener)` para admitir esta comunicación. Si la aplicación de terceros desea gestionar el envío de formularios mediante sus propios botones, debe especificarlo `hideDirectActions = true() in the runtimeMap` y puede omitir este detector. Por lo tanto, esta construcción es opcional.
+Por ejemplo, una aplicación de Flex puede definir `ExternalInterface.addCallback('getMessage', listener)` para admitir esta comunicación. Si la aplicación de terceros desea controlar el envío de formularios mediante sus propios botones, debe especificar `hideDirectActions = true() in the runtimeMap` y puede omitir este detector. Por lo tanto, esta construcción es opcional.
 
-Puede leer más sobre la integración de aplicaciones de terceros con respecto a la administración de correspondencia en [Integración de la administración de correspondencia en el espacio de trabajo](/help/forms/using/integrating-correspondence-management-html-workspace.md)de AEM Forms.
+Puede leer más sobre la integración de aplicaciones de terceros con respecto a la Administración de correspondencia en [Integración de la Administración de correspondencia en el área de trabajo de AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).
