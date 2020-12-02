@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Convertir Inicio rápido de la API de Java del servicio PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+# Convertir Inicio rápido de API de Java del servicio PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 Los siguientes Inicios rápidos están disponibles para la API de servicio Convertir PDF.
 
@@ -148,7 +148,7 @@ El siguiente ejemplo de código convierte un documento PDF llamado *Loan.pdf* en
 
 ## Inicio rápido (modo SOAP): Conversión de un documento PDF a archivos JPEG mediante la API de Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-El siguiente ejemplo de código Java convierte un documento PDF llamado *Loan.pdf* en un conjunto de archivos JPEG y los almacena en el directorio C:\Adobe directory. Cada archivo recibe un nombre `tempFile[index].jpg`, donde el nombre del primer archivo de imagen es *tempFile0.jpg*. (Consulte [Conversión de Documentos PDF a formatos](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)de imagen).
+El siguiente ejemplo de código Java convierte un documento PDF llamado *Loan.pdf* en un conjunto de archivos JPEG y los almacena en el directorio C:\Adobe directory. Cada archivo se denomina `tempFile[index].jpg`, donde el nombre del primer archivo de imagen es *tempFile0.jpg*. (Consulte [Conversión de Documentos PDF a formatos de imagen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)).
 
 ```java
  /*
