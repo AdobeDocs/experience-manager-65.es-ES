@@ -34,7 +34,7 @@ El componente de comentarios establece un sistema de comentarios de modo que cad
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
-   <td>Sí: las propiedades se pueden editar en <i>el </i>modo de diseño</td>
+   <td>Sí: las propiedades se pueden editar en el modo <i>de diseño </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -89,16 +89,16 @@ Esto se aplica a cualquier componente que extienda un sistema de comentarios.
 ### Acceso a los comentarios enviados (UGC) {#accessing-posted-comments-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
