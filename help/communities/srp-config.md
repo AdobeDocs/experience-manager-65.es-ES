@@ -35,16 +35,16 @@ Para consultar las opciones de almacenamiento y las topologías de implementaci�
 
 En el entorno de creación, para llegar a la consola de configuración de almacenamiento.
 
-* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > Configuración de **[!UICONTROL Almacenamiento]**
+* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuración de Almacenamiento]**
 
 Para seleccionar una opción de almacenamiento distinta del JCR predeterminado:
 
 * Seleccione una opción
 * Configurar correctamente
 
-   * Ver detalles para [seleccionar MSRP](msrp.md#select-msrp)
-   * Ver detalles para [seleccionar DSRP](dsrp.md#select-dsrp)
-   * Ver detalles para [seleccionar ASRP](asrp.md#select-asrp)
+   * Consulte los detalles para [seleccionar MSRP](msrp.md#select-msrp)
+   * Consulte los detalles para [seleccionar DSRP](dsrp.md#select-dsrp)
+   * Consulte los detalles para [seleccionar ASRP](asrp.md#select-asrp)
 
 * Seleccione **[!UICONTROL Enviar]**.
 
@@ -52,10 +52,10 @@ Para seleccionar una opción de almacenamiento distinta del JCR predeterminado:
 
 Tenga en cuenta que si no se realiza ninguna selección, el valor predeterminado es el repositorio de AEM, JCR.
 
-JCR *no es* un almacén común compartido por el autor y los entornos de publicación. El contenido de la comunidad solo estará visible desde el entorno de creación o publicación en el que se creó.
+JCR es *no* un almacén común compartido por el autor y los entornos de publicación. El contenido de la comunidad solo estará visible desde el entorno de creación o publicación en el que se creó.
 
-Visite la tienda [JCR](jsrp.md) para obtener más información.
+Visite [JCR Store](jsrp.md) para obtener más información.
 
 >[!NOTE]
 >
->La ausencia del nodo `srpc` en `/etc/socialconfig` indica el almacén [](jsrp.md)JCR predeterminado.
+>La ausencia del nodo `srpc` en `/etc/socialconfig` indica el almacén [JCR](jsrp.md) predeterminado.
