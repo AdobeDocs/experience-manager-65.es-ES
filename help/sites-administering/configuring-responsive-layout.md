@@ -21,19 +21,19 @@ ht-degree: 9%
 
 # Configuración del Contenedor de diseño y el modo de diseño{#configuring-layout-container-and-layout-mode}
 
-[Diseño](/help/sites-authoring/responsive-layout.md) interactivo es un mecanismo para realizar diseños [web](https://en.wikipedia.org/wiki/Responsive_web_design)interactivos. Esto permite al usuario crear páginas web con un diseño y unas dimensiones que dependen de los dispositivos que utilizan los usuarios.
+[El ](/help/sites-authoring/responsive-layout.md) diseño adaptable es un mecanismo para realizar diseños [ web ](https://en.wikipedia.org/wiki/Responsive_web_design)interactivos. Esto permite al usuario crear páginas web con un diseño y unas dimensiones que dependen de los dispositivos que utilizan los usuarios.
 
 >[!NOTE]
 >
->Esto se puede comparar con los mecanismos web [](/help/sites-developing/mobile-web.md) móviles, que utilizan el diseño web adaptable (principalmente para la IU clásica).
+>Esto se puede comparar con los mecanismos [Web móvil](/help/sites-developing/mobile-web.md), que utilizan el diseño web adaptable (principalmente para la IU clásica).
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
-* Componente [**Contenedor de diseño **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
+* Componente [**Contenedor de diseño**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
    Este componente proporciona un sistema de párrafos de cuadrícula que le permite añadir y colocar componentes en una cuadrícula interactiva. Se puede utilizar como parsys predeterminado para la página y/o ponerlo a disposición de los autores en el navegador de componentes.
 
-   * El componente **Diseño predeterminado de Contenedor** se define en:
+   * El componente predeterminado **Contenedor de diseño** se define en:
 
       /libs/wcm/foundation/components/responsivegrid
 
@@ -45,14 +45,15 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
          Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de este; por ejemplo, para obtener el control de columna.
 
-* **[Modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de diseño Una vez colocado el contenedor de diseño en la página, puede utilizar la variable
-**Modo de diseño** para colocar el contenido dentro de la cuadrícula adaptable.
+* **[](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
+Modo de diseñoUna vez que el contenedor de diseño se encuentra en la página, puede utilizar la variable 
+**** Modo de diseño para colocar el contenido en la cuadrícula adaptable.
 
-* [**Emulador **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Esta opción le permite crear y editar sitios web adaptables que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
+* [**Emulador**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) Esta opción le permite crear y editar sitios web adaptables que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
 >[!CAUTION]
 >
->Although the **Layout Container** component is available in the classic UI, its full functionality is only available in the touch-enabled UI.
+>Aunque el componente **Contenedor de diseño** está disponible en la IU clásica, su funcionalidad completa solo está disponible en la IU táctil.
 
 Estos mecanismos de cuadrícula interactiva le permiten:
 
@@ -63,23 +64,23 @@ Estos mecanismos de cuadrícula interactiva le permiten:
 
 >[!NOTE]
 >
->En una instalación lista para usar, se ha configurado un diseño interactivo para el sitio [de referencia](/help/sites-developing/we-retail.md)We.Retail. Aún debe [activar el componente](#enable-the-layout-container-component-for-page) Contenedor de diseño para otras páginas.
+>En una instalación lista para usar, se ha configurado un diseño interactivo para el [sitio de referencia de We.Retail](/help/sites-developing/we-retail.md). Aún debe [activar el componente Contenedor de diseño](#enable-the-layout-container-component-for-page) para otras páginas.
 
 ## Configuración del emulador interactivo {#configuring-the-responsive-emulator}
 
 Estas tareas le permiten ver el **emulador** interactivo en su sitio.
 
-### Registrar los componentes de la página para emulación {#register-your-page-components-for-emulation}
+### Registre los componentes de la página para emulación {#register-your-page-components-for-emulation}
 
-Para habilitar el emulador para admitir las páginas, debe registrar los componentes de la página. Consulte [Registro de componentes de página para obtener Simulaciones](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+Para habilitar el emulador para admitir las páginas, debe registrar los componentes de la página. Consulte [Registro de componentes de página para Simulación](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
 
-### Especificar los grupos de dispositivos {#specify-the-device-groups}
+### Especifique los grupos de dispositivos {#specify-the-device-groups}
 
-Para especificar los grupos de dispositivos que aparecen en la lista Dispositivos del emulador, consulte [Especificación de los grupos](/help/sites-developing/responsive.md#specifying-the-device-groups)de dispositivos.
+Para especificar los grupos de dispositivos que aparecen en la lista Dispositivos del emulador, consulte [Especificación de los grupos de dispositivos](/help/sites-developing/responsive.md#specifying-the-device-groups).
 
 ### Vincular el sitio a los grupos de dispositivos especificados {#link-your-site-to-the-specified-device-groups}
 
-Para incluir el administrador, debe vincular el sitio a los grupos de dispositivos. Consulte [Añadir la Lista](/help/sites-developing/responsive.md#adding-the-devices-list) Dispositivos (tanto para la IU clásica como la táctil).
+Para incluir el administrador, debe vincular el sitio a los grupos de dispositivos. Consulte [Añadir la Lista Dispositivos](/help/sites-developing/responsive.md#adding-the-devices-list) (tanto para la IU clásica como la táctil optimizada).
 
 ## Activar el modo de diseño del sitio {#activate-layout-mode-for-your-site}
 
@@ -102,9 +103,9 @@ Estos procedimientos se utilizan para habilitar el modo **Diseño** en el sitio.
 
 * Son visibles como marcadores en la parte superior del editor de páginas cuando se utiliza el emulador.
 * Se heredan de la jerarquía del nodo principal y se pueden anular a voluntad.
-* Hay un punto de interrupción predeterminado (predeterminado) que cubre todo lo que se encuentra por encima del último punto de interrupción *configurado* .
+* Hay un punto de interrupción predeterminado (predeterminado) que cubre todo lo que esté por encima del último *punto de interrupción configurado*.
 
-Se pueden definir con CRXDE Lite o XML.
+Pueden definirse mediante CRXDE Lite o XML.
 
 >[!NOTE]
 >
@@ -122,14 +123,14 @@ Si va a migrar un proyecto existente (con contenido existente), debe:
 >  
 Como la herencia está en funcionamiento, puede limitarla a la página raíz del contenido.
 
-#### Configuración de puntos de interrupción con CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
+#### Configuración de puntos de interrupción mediante el CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Con CRXDE Lite (o equivalente), navegue hasta:
+1. Con el CRXDE Lite (o equivalente), navegue hasta:
 
    * La definición de la plantilla.
-   * El `jcr:content` nodo de la página.
+   * El nodo `jcr:content` de la página.
 
-1. En `jcr:content` Crear el nodo:
+1. En `jcr:content` cree el nodo:
 
    * Nombre: `cq:responsive`
    * Tipo: `nt:unstructured`
@@ -148,7 +149,7 @@ Como la herencia está en funcionamiento, puede limitarla a la página raíz del
 
 #### Configuración de puntos de interrupción mediante XML {#configuring-breakpoints-using-xml}
 
-Los puntos de interrupción se encuentran dentro de la `<jcr:content>` sección de la `.context.html` carpeta de plantilla (o contenido) correspondiente.
+Los puntos de interrupción se encuentran dentro de la sección `<jcr:content>` de la `.context.html` en la carpeta de plantilla (o contenido) correspondiente.
 
 Una definición de ejemplo:
 
@@ -167,15 +168,15 @@ Una definición de ejemplo:
 >
 >Esto solo es necesario si el componente de página no se basa en el componente de página de base.
 
-Copie la siguiente estructura de `cq:infoProviders` nodos en el componente de página principal:
+Copie la siguiente estructura de nodos `cq:infoProviders` en el componente de página principal:
 
 `/libs/foundation/components/page/cq:infoProviders/responsive`
 
 ## Habilitar el cambio de tamaño del componente para la página {#enable-component-resizing-for-the-page}
 
-Estos procedimientos son necesarios para poder cambiar el tamaño de los componentes en el modo **Diseño** .
+Estos procedimientos son necesarios para poder cambiar el tamaño de los componentes en el modo **Diseño**.
 
-### Definir Contenedor de diseño como Parsys principal {#set-layout-container-as-main-parsys}
+### Definir el Contenedor de diseño como Parsys principal {#set-layout-container-as-main-parsys}
 
 Para que el parámetro principal de la página sea un contenedor de diseño, debe definir parsys como:
 
@@ -200,13 +201,13 @@ Los dos ejemplos siguientes ilustran la definición:
    <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
    ```
 
-### Incluir el CSS adaptable {#include-the-responsive-css}
+### Incluir CSS adaptable {#include-the-responsive-css}
 
-#### CSS para puntos de interrupción que utilizan MENOS {#css-for-breakpoints-using-less}
+#### CSS para puntos de interrupción que usan LESS {#css-for-breakpoints-using-less}
 
 AEM utiliza MENOS para generar partes de la CSS necesaria, que deben incluirse en los proyectos.
 
-También deberá crear una biblioteca [de](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) cliente para proporcionar configuración adicional y llamadas a funciones. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
+También deberá crear una [biblioteca de cliente](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) para proporcionar configuración adicional y llamadas a funciones. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -238,7 +239,7 @@ La definición de cuadrícula base se encuentra en:
 
 `/libs/wcm/foundation/clientlibs/grid/grid_base.less`
 
-#### Consideraciones sobre el estilo {#styling-considerations}
+#### Consideraciones de estilo {#styling-considerations}
 
 Los componentes contenidos en un contenedor interactivo se cambiarán de tamaño (junto con sus respectivos elementos DOM HTML) según el tamaño de cuadrícula adaptable. Por lo tanto, en estas circunstancias, se recomienda evitar (o actualizar) definiciones de elementos DOM de ancho fijo (contenidos).
 
@@ -252,7 +253,7 @@ Por ejemplo:
 
    * `max-width=100px`
 
-#### Cambio de tamaño y compatibilidad con imágenes adaptables {#resizing-and-adaptive-image-compliance}
+#### Redimensionamiento y compatibilidad con imágenes adaptables {#resizing-and-adaptive-image-compliance}
 
 Si cambia el tamaño de un componente dentro de la cuadrícula, se activarán los siguientes oyentes, según corresponda:
 
@@ -262,7 +263,7 @@ Si cambia el tamaño de un componente dentro de la cuadrícula, se activarán lo
 
 * `afterchildedit`
 
-Para cambiar el tamaño y actualizar correctamente el contenido de una imagen adaptable incluida en una cuadrícula adaptable, debe agregar un `afterEdit` conjunto para `REFRESH_PAGE` oyente al `EditConfig` archivo de cada componente contenido.
+Para cambiar el tamaño y actualizar correctamente el contenido de una imagen adaptable incluida en una cuadrícula adaptable, debe agregar un `afterEdit` conjunto en `REFRESH_PAGE` listener al archivo `EditConfig` de cada componente contenido.
 
 Por ejemplo:
 
@@ -276,7 +277,7 @@ El mecanismo de imagen adaptable está disponible mediante una secuencia de coma
 
 ## Habilitar el componente Contenedor de diseño para la página {#enable-the-layout-container-component-for-page}
 
-Estas tareas permiten a los autores arrastrar instancias del componente Contenedor **de** diseño a la página.
+Estas tareas permiten a los autores arrastrar instancias del componente **Contenedor de diseño** a la página.
 
 ### Habilitar el componente Contenedor de diseño para la edición de páginas {#enable-the-layout-container-component-for-page-editing}
 
@@ -284,13 +285,13 @@ Para permitir que los autores agreguen cuadrículas adaptables adicionales a las
 
 * **Entorno de creación**
 
-   Utilice el modo [](/help/sites-authoring/default-components-designmode.md) Diseño para activar el componente **Contenedor** de capa para una página.
+   Utilice el [modo de diseño](/help/sites-authoring/default-components-designmode.md) para activar el componente **Contenedor de capa** para una página.
 
 * **Definición de componente**
 
    Utilice `allowedComponent` o una inclusión estática al definir el componente.
 
-### Configuración de la cuadrícula del Contenedor Diseño {#configure-the-grid-of-the-layout-container}
+### Configurar la cuadrícula del Contenedor de diseño {#configure-the-grid-of-the-layout-container}
 
 Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño:
 
@@ -298,7 +299,7 @@ Puede configurar el número de columnas disponibles para cada instancia específ
 
    Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño.
 
-   Para ello, utilice el modo [](/help/sites-authoring/default-components-designmode.md)Diseño y, a continuación, abra el cuadro de diálogo de diseño para el contenedor requerido. Aquí puede especificar cuántas columnas estarán disponibles para la colocación y el tamaño. El valor predeterminado es 12.
+   Para ello, utilice [modo de diseño](/help/sites-authoring/default-components-designmode.md) y, a continuación, abra el cuadro de diálogo de diseño del contenedor requerido. Aquí puede especificar cuántas columnas estarán disponibles para la colocación y el tamaño. El valor predeterminado es 12.
 
 1. **XML**
 
