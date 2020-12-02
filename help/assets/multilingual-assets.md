@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Para automatizar los flujos de trabajo de traducción, integre proveedores de servicio de traducción con [!DNL Experience Manager] y cree proyectos para traducir recursos a varios idiomas. [!DNL Experience Manager] admite flujos de trabajo de traducción humana y automática.
 
-Traducción humana: Los recursos traducidos se devuelven e importan en [!DNL Experience Manager]. Cuando el proveedor de traducción está integrado con [!DNL Experience Manager], los recursos se envían automáticamente entre [!DNL Experience Manager] y el proveedor de traducción.
+Traducción humana: Los recursos traducidos se devuelven e importan a [!DNL Experience Manager]. Cuando su proveedor de traducción está integrado con [!DNL Experience Manager], los recursos se envían automáticamente entre [!DNL Experience Manager] y el proveedor de traducción.
 
 Traducción automática: El servicio de traducción automática traduce inmediatamente los metadatos y las etiquetas de los recursos.
 
@@ -29,6 +29,6 @@ La traducción de recursos incluye lo siguiente:
 1. [Aplicar servicios de traducción en la nube a las carpetas](transition-cloud-services.md)
 1. [Creación de proyectos de traducción](translation-projects.md)
 
-Si el proveedor de servicio de traducción no proporciona un conector con el que realizar la integración [!DNL Experience Manager], utilice un proceso [](/help/sites-administering/tc-manage.md#exporting-a-translation-job)alternativo.
+Si el proveedor de servicio de traducción no proporciona un conector para la integración con [!DNL Experience Manager], utilice un [proceso alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Consulte también [Creación de proyectos de traducción para fragmentos](creating-translation-projects-for-content-fragments.md)de contenido.
+Consulte también [Creación de proyectos de traducción para fragmentos de contenido](creating-translation-projects-for-content-fragments.md).
