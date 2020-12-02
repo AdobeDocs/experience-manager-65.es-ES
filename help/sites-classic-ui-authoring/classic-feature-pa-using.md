@@ -12,6 +12,9 @@ discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 87%
 
 ---
 
@@ -30,4 +33,4 @@ Los datos de análisis de la página se muestran en la consola Sitios. Cuando lo
 
 >[!NOTE]
 >
->La visualización de datos de análisis del sitio directamente en la consola solo está disponible en la IU táctil. See [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md) in the standard authoring documentation for details.
+>La visualización de datos de análisis del sitio directamente en la consola solo está disponible en la IU táctil. Consulte [Visualización de datos de análisis de página](/help/sites-authoring/page-analytics-using.md) en la documentación de creación estándar para obtener más información.
