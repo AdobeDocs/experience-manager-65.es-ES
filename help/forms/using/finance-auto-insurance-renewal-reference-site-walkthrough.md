@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Recorrido por el sitio de referencia de la renovación automática de seguros de We.Finance{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
+# Recorrido del sitio de referencia de la renovación automática de seguros de We.Finance{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Escenario de sitio de referencia de We.Finance  {#we-finance-reference-site-scenario}
+## Escenario del sitio de referencia de We.Finance {#we-finance-reference-site-scenario}
 
 El sitio Web de We.Finance es un sitio de servicios financieros diseñado para ayudarle a aprender las capacidades de comunicación interactivas de AEM Forms.
 
@@ -38,7 +38,7 @@ El escenario de la aplicación de seguros automáticos We.Finance es una narraci
 
 ### Gloria envía una comunicación de renovación de pólizas de seguros desde We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria inicia sesión en AEM instancia, hace clic en Renovación **automática de seguros y,** a continuación, hace clic en **Abrir interfaz de usuario del agente.** El clic se muestra como prefijo al documento de seguro con los detalles de póliza de Sarah Rose. Gloria hace clic **en Enviar** y aparece un mensaje en la pantalla &quot;Envío iniciado&quot; y, a continuación, en pocos segundos &quot;Enviado correctamente&quot;.
+Gloria inicia sesión en AEM instancia, hace clic en **Renovación automática de seguros,** y luego hace clic en **Abrir interfaz de usuario del agente.** El clic se muestra como prefijo al documento de seguro con los detalles de póliza de Sarah Rose. Gloria hace clic **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y luego en pocos segundos &quot;Enviado correctamente&quot;.
 
 Sarah recibe un correo electrónico con el asunto &quot;Su renovación automática del seguro&quot;.
 
@@ -46,15 +46,15 @@ Sarah recibe un correo electrónico con el asunto &quot;Su renovación automáti
 
 #### Véalo usted mismo {#see-it-yourself}
 
-Vaya a **Adobe Experience Manager** > **Forms** > **Forms &amp; Documentos** > **We.Finance** > **Auto Insurance**. Seleccione la comunicación **** interactiva Renovación automática de seguros y haga clic en **Abrir interfaz de usuario** del agente. La comunicación interactiva se abre en la interfaz de usuario del agente. Introduzca una dirección de correo electrónico válida para recibir el correo electrónico con el documento de directiva adjunto y haga clic en Enviar.
+Vaya a **Adobe Experience Manager** > **Forms** > **Forms &amp; Documentos** > **We.Finance** > **Auto Insurance**. Seleccione la Renovación automática de seguros **comunicación interactiva** y haga clic en **Abrir interfaz de usuario del agente**. La comunicación interactiva se abre en la interfaz de usuario del agente. Introduzca una dirección de correo electrónico válida para recibir el correo electrónico con el documento de directiva adjunto y haga clic en Enviar.
 
-Puede acceder a la comunicación interactiva Renovación automática de seguros y revisarla directamente desde `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Puede acceder y revisar la comunicación interactiva de renovación automática de seguros directamente desde `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
-### Sarah recibe una comunicación de renovación de pólizas de seguros de We.Finance y decide renovar la póliza {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
+### Sarah recibe una comunicación de renovación de pólizas de seguros de We.Finance y decide renovar {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
 Sarah recibe un correo electrónico con un archivo adjunto de We.Finance que le recuerda que su póliza de Seguro Automático está a punto de caducar. El archivo adjunto es la versión impresa de su carta de seguro automático.
 
-Sarah hace clic en **Renovar ahora** y se dirige a la versión web de su carta de seguro automático. Además de esta carta, Sarah encuentra la cantidad de días que le quedan a su política para que caduque. La página proporciona a Sarah una visión general básica de los detalles de su póliza de seguro, como el número de póliza, el importe adeudado y otra información como ofertas de descuento y recompensas por lealtad. Sarah de nuevo hace clic en **Renovar ahora** en la parte inferior de la política.
+Sarah hace clic en **Renovar ahora** y se dirige a la versión web de su carta de seguro automático. Además de esta carta, Sarah encuentra la cantidad de días que le quedan a su política para que caduque. La página proporciona a Sarah una visión general básica de los detalles de su póliza de seguro, como el número de póliza, el importe adeudado y otra información como ofertas de descuento y recompensas por lealtad. Sarah nuevamente hace clic en **Renovar ahora** en la parte inferior de la directiva.
 
 ![ref1](assets/ref1.png)
 
@@ -66,9 +66,9 @@ El botón Renovar ahora del correo electrónico está vinculado a la aplicación
 
 #### Véalo usted mismo {#see-it-yourself-1}
 
-Debe haber recibido un correo electrónico con un PDF adjunto. El PDF es una versión impresa de la carta de seguro automático. Haga clic en **Renovar ahora** para acceder a la versión web de la directiva. Compruebe su información personal y los detalles de las políticas y haga clic en **Renovar ahora** , que lo lleva a otra comunicación interactiva.
+Debe haber recibido un correo electrónico con un PDF adjunto. El PDF es una versión impresa de la carta de seguro automático. Haga clic en **Renovar ahora** para llegar a la versión web de la directiva. Compruebe su información personal y los detalles de la política y haga clic en **Renovar ahora**, que lo lleva a otra comunicación interactiva.
 
-El botón **Renovar ahora** del correo electrónico dirige a Sarah a la versión web de la política. Puede visitar la siguiente dirección URL:
+El botón **Renovar ahora** del correo electrónico dirige a Sarah a la versión web de la directiva. Puede visitar la siguiente dirección URL:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
@@ -84,7 +84,7 @@ El botón Renovar ahora dirige a Sarah a la página de pago. La página de pago 
 
 #### Véalo usted mismo {#see-it-yourself-2}
 
-Haga clic en **Renovar ahora** para acceder a la página Pago. Rellene la información de su tarjeta de crédito y haga clic en **Realizar pago**.
+Haga clic en **Renovar ahora** para llegar a la página Pago. Rellene la información de su tarjeta de crédito y haga clic en **Realizar pago**.
 
 Puede acceder a la página de pago en la instancia de creación en
 
@@ -92,7 +92,7 @@ Puede acceder a la página de pago en la instancia de creación en
 
 ### Sarah hace el pago y completa el proceso {#sarah-makes-the-payment-and-completes-the-process}
 
-Sarah rellena los detalles de su tarjeta de crédito y hace clic en **Realizar pago**.
+Sarah rellena los detalles de su tarjeta de crédito y hace clic **Realizar pago**.
 
 #### Cómo funciona {#how-it-works-2}
 
