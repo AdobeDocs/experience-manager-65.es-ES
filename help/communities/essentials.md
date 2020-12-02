@@ -18,15 +18,15 @@ ht-degree: 17%
 ---
 
 
-# Componentes, funciones y características esenciales  {#component-function-and-feature-essentials}
+# Componentes, funciones y características esenciales {#component-function-and-feature-essentials}
 
-Las funciones del AEM Communities requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el sitio [de la](overview.md#communitiessites) comunidad antes de poder publicar contenido. Por lo tanto, las plantillas [de sitio de](sites.md)comunidad, a partir de las cuales se [crea](sites-console.md)un sitio de comunidad, están diseñadas para incluir una función de inicio de sesión, así como perfiles de usuario, mensajes, búsqueda, moderación y traducción.
+Las funciones de AEM Communities requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el [sitio de la comunidad](overview.md#communitiessites) antes de poder publicar contenido. Por lo tanto, [las plantillas de sitio de comunidad](sites.md), desde las que se [crea](sites-console.md) un sitio de comunidad, están diseñadas para incluir una función de inicio de sesión, así como perfiles de usuario, mensajes, búsqueda, moderación y traducción.
 
-Un sitio de comunidad admitirá a los miembros que crean grupos de la comunidad cuando la función [de grupos de](functions.md#groups-function) comunidad se incluya en la plantilla de sitio de la comunidad seleccionada.
+Un sitio de comunidad admitirá a los miembros que crean grupos de comunidad cuando la función [de grupos de comunidad](functions.md#groups-function) se incluya en la plantilla de sitio de comunidad seleccionada.
 
 A continuación encontrará enlaces a información esencial para los componentes, funciones y características de Communities.
 
-## Componentes básicos {#base-components}
+## Componentes base {#base-components}
 
 * [Comentarios](essentials-comments.md)
 * [Críticas](reviews-basics.md)
@@ -41,7 +41,7 @@ A continuación encontrará enlaces a información esencial para los componentes
 
 * [Flujos de actividad](essentials-activities.md)
 * [Asignaciones](essentials-assignments.md)
-* [Blog](blog-developer-basics.md) ( `Journal`)
+* [Blog](blog-developer-basics.md) (  `Journal`)
 
 * [Calendario](calendar-basics-for-developers.md)
 * [Catálogo](catalog-developer-essentials.md)
@@ -64,16 +64,16 @@ A continuación encontrará enlaces a información esencial para los componentes
 * [Puntuación y distintivos](configure-scoring.md)
 * [Buscar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Proveedor de recursos de Almacenamiento](srp-and-ugc.md) `(SRP)`
+* [Proveedor de recursos de almacenamiento](srp-and-ugc.md) `(SRP)`
 
 * [Etiquetado](tag.md)
 
 ## Javadocs {#javadocs}
 
-Los javadocs [en](../../help/sites-developing/reference-materials.md) línea reflejan las API disponibles en la versión 6.3 de AEM.
+Los [javadocs en línea](../../help/sites-developing/reference-materials.md) reflejan las API disponibles en la versión AEM 6.3.
 Las API de Communities están en `com.adobe.cq.social.*` paquetes.
 
-Para cada [paquete](deploy-communities.md#latestfeaturepack)de funciones, hay disponible un tarro de javadoc. Para obtener más información, visite [Uso de Maven para comunidades](maven.md#javadocs).
+Para cada [paquete de funciones](deploy-communities.md#latestfeaturepack), hay disponible un tarro de javadoc. Para obtener más información, visite [Uso de Maven para comunidades](maven.md#javadocs).
 
 ## Información adicional {#additional-information}
 
@@ -81,7 +81,7 @@ Para cada [paquete](deploy-communities.md#latestfeaturepack)de funciones, hay di
 
    * [Personalizaciones del lado del cliente](client-customize.md)
    * [Personalizaciones del lado del servidor](server-customize.md)
-   * [Información general del proveedor de recursos de Almacenamiento](srp.md)
+   * [Información general del proveedor de recursos de almacenamiento](srp.md)
 
 * [Directrices de codificación](code-guide.md)
 * [Tutoriales](tutorials.md)
