@@ -12,13 +12,16 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 44%
 
 ---
 
 
 # Consolas de herramientas{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. Actualmente hay dos tipos de consola **Herramientas** que dependen de la IU que utilice:
+Las consolas de **herramientas** permiten acceder a toda una serie de herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos tipos de consola **Herramientas** que dependen de la IU que utilice:
 
 * [Herramientas: IU táctil](#tools-touch-optimized-ui)
 * [Herramientas: IU clásica](#tools-classic-ui)
@@ -27,7 +30,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
 
 >[!NOTE]
 >
->Se puede acceder a estas consolas desde el panel [Herramientas de navegación](/help/sites-authoring/basic-handling.md#tools-panel)global.
+>Se puede acceder a estas consolas desde el [panel Herramientas de navegación global](/help/sites-authoring/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
@@ -140,12 +143,12 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Trabajos</td>
   </tr>
   <tr>
-   <td>Sitios</td>
+   <td>Sites</td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Modelos</td>
+   <td>Planes</td>
   </tr>
   <tr>
    <td> </td>
@@ -160,7 +163,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Comprobador de vínculos externos<br /> </td>
   </tr>
   <tr>
-   <td>Recursos</td>
+   <td>Assets</td>
    <td> </td>
   </tr>
   <tr>
@@ -257,7 +260,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Permisos</td>
+   <td>Permisos   </td>
   </tr>
   <tr>
    <td> </td>
@@ -272,16 +275,16 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Configuraciones de IMS de Adobe</td>
   </tr>
   <tr>
-   <td>Servicios de nube<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Servicios en la nube heredados</td>
+   <td>Cloud Services heredados</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Servicios de traducción en la nube</td>
+   <td>Cloud Services de traducción</td>
   </tr>
   <tr>
    <td> </td>
@@ -376,7 +379,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Configuraciones de contexto de cliente<br /> </td>
-   <td>ClientContext representa una colección de datos de usuario que se ensambla dinámicamente. Aquí se conservan las configuraciones predeterminadas y de Marketing Cloud.<br /> </td>
+   <td>ClientContext representa una colección de datos de usuario que se ensambla dinámicamente. Las configuraciones predeterminadas y de Marketing Cloud se conservan aquí.<br /> </td>
   </tr>
   <tr>
    <td>Configuración de servicios de nube<br /> </td>
@@ -396,7 +399,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Tableros</td>
-   <td>Permite crear tableros de informes; proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
+   <td>Permite crear paneles de sistema de informes; proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
   </tr>
   <tr>
    <td>Documentación personalizada</td>
@@ -408,7 +411,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Envíos de formulario</td>
-   <td>Contiene la lista de envíos de formularios recibidos.</td>
+   <td>Contiene la lista de los envíos de formularios recibidos.</td>
   </tr>
   <tr>
    <td>Importadores </td>
@@ -424,7 +427,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Paquetes</td>
-   <td>Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para AEM WCM. Similar a la información que se muestra en el Administrador de paquetes de CRX.</td>
+   <td>Vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para AEM WCM. Similar a la información que se muestra en el Administrador de paquetes de CRX.</td>
   </tr>
   <tr>
    <td>Replicación: Agentes de replicación</td>
@@ -432,7 +435,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Informes</td>
-   <td>AEM proporciona una serie de informes personalizados, le permite crear informes personalizados y/o desarrollar sus propios informes.</td>
+   <td>AEM ofrece una variedad de informes personalizados, le permite crear informes personalizados y/o desarrollar los suyos propios.</td>
   </tr>
   <tr>
    <td>Andamiaje de página predeterminada</td>
@@ -444,7 +447,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Segmentación</td>
-   <td>Los visitantes del sitio tienen diferentes intereses y objetivos cuando acceden al sitio. Comprender estos objetivos y cumplir las expectativas son importantes factores de éxito para el marketing en línea. Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td>
+   <td>Los visitantes del sitio tienen diferentes intereses y objetivos cuando acceden al sitio. Comprender estos objetivos y cumplir las expectativas son importantes factores de éxito para el marketing en línea. La segmentación ayuda a lograr esto analizando y caracterizando los detalles de un visitante.<br /> </td>
   </tr>
   <tr>
    <td>inquilinos</td>
