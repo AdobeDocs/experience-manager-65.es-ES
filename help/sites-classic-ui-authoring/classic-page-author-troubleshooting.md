@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
@@ -42,11 +45,11 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
    * Hay varias posibilidades:
    * Confirme que la página se haya replicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
-   * Add `?` to the end of the page URL. For example:
+   * Añada `?` al final de la URL de la página. Por ejemplo:
 
       `http://localhost:4502/sites.html/content?`
 
-      Esta acción solicitará la página directamente desde AEM y omitirá el despachante. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
+      Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
 
    * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
 
@@ -68,7 +71,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Problema:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Al utilizar la opción **Buscar y reemplazar** puede suceder que no todas las instancias del término `find` se reemplacen en una página.
 
 * **Motivo**:
 
