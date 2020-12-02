@@ -25,28 +25,28 @@ La administración de un proyecto para implementar Adobe Experience Manager (AEM
 
 Para ayudarle, las prácticas recomendadas consisten en:
 
-* Lista [de comprobación](/help/managing/best-practices-checklist.md) interactiva que le permite realizar un seguimiento y un seguimiento del progreso con estas prácticas recomendadas.
+* Una [lista de comprobación interactiva](/help/managing/best-practices-checklist.md) que le permite rastrear y monitorear su progreso con estas optimizaciones.
 
    * Define las entradas y los resultados según la fase, el hito y la persona.
    * Proporciona información general automatizada (calidad, salud e integridad) para indicar el progreso y el estado del proyecto.
 
-* Documentación, basada directamente en la [lista](/help/managing/best-practices-checklist.md)de comprobación, que detalla:
+* Documentación, basada directamente en la [lista de comprobación](/help/managing/best-practices-checklist.md), que detalla:
 
-   * [Análisis de Project Heartbeat](#projectheartbeat) .
-   * [Información general de estado por función](#status-by-role) .
+   * [Análisis de ](#projectheartbeat) latidos del proyecto.
+   * [Estado por ](#status-by-role) información general de resumen.
    * [Fases e hitos](#phases-and-milestones).
-   * [Persona](#persona) clave y su participación en cada etapa (pertinente).
-   * Un [Glosario](/help/managing/best-practices-glossary.md) de los Documentos y productos [requeridos](#required-documents-and-deliverables).
+   * [Personal clave ](#persona) y su participación en cada etapa (pertinente).
+   * Un [Glosario](/help/managing/best-practices-glossary.md) de los [Documentos y entregables requeridos](#required-documents-and-deliverables).
 
-* [Material de referencia](/help/managing/best-practices-further-reference.md) adicional para proporcionar más detalles sobre áreas específicas.
+* [Otros ](/help/managing/best-practices-further-reference.md) materiales de referencia para proporcionar más detalles sobre áreas específicas.
 
 ## Panel de latidos del proyecto {#project-heartbeat-dashboard}
 
-La hoja de cálculo de **Project Heartbeat** proporciona una visión general gráfica de las métricas críticas de su proyecto:
+La hoja de cálculo **Project Heartbeat** proporciona una visión general gráfica de las métricas críticas para el proyecto:
 
 * **Calidad de fase**
 
-   * Indica la calidad de los Documentos [requeridos y los elementos entregables](#required-documents-and-deliverables) en todo el proyecto.
+   * Indica la calidad de los [Documentos y productos requeridos](#required-documents-and-deliverables) en todo el proyecto.
 
 * **Estado de fase**
 
@@ -58,13 +58,13 @@ La hoja de cálculo de **Project Heartbeat** proporciona una visión general gr�
 
 ## Estado por función {#status-by-role}
 
-La hoja de cálculo **Estado por Función** muestra un desglose detallado de [**Salud**, **Calidad** y **Completidad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** **[](#persona)** y Persona.
+La hoja de cálculo **Estado por función** muestra un desglose detallado de [**estado**, **calidad** y **integridad**](#projectheartbeat) por **[fase](#phases-and-milestones)** y **[personal](#persona)**.
 
 ## Fases e hitos {#phases-and-milestones}
 
 El plan del proyecto se divide en distintas fases (de alto nivel).
 
-Cada fase contiene sus propios hitos. Para cada [persona](#persona) (o función), se enumeran los hitos relevantes, junto con los documentos que se requieren para producir los productos definidos.
+Cada fase contiene sus propios hitos. Para cada [persona](#persona) (o función), se enumeran los hitos relevantes, junto con los documentos necesarios para producir los productos definidos.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Los Cuatro Factores:
 
 ![projectSolo_fourzones](assets/projectphases_fourphases.png)
 
-#### Milestones {#milestones}
+#### Hitos {#milestones}
 
 * **Validación**
 
@@ -124,7 +124,7 @@ Los Cuatro Factores:
 
 La planificación del proyecto consolida la preparación. Aquí tiene que tener en inicio convertir los objetivos y las expectativas en una hoja de ruta bien definida, compuesta de tareas concretas, unidas por una comunicación clara, con revisiones rigurosas para medir los progresos.
 
-#### Milestones {#milestones-1}
+#### Hitos {#milestones-1}
 
 * **Entrega**
 
@@ -162,7 +162,7 @@ La planificación del proyecto consolida la preparación. Aquí tiene que tener 
 
 Planificar el desarrollo es clave para garantizar que el proyecto se construya sobre un diseño sólido por parte de un equipo que tenga los conocimientos necesarios.
 
-#### Milestones {#milestones-2}
+#### Hitos {#milestones-2}
 
 * **Personal y capacitación del equipo de desarrollo**
 
@@ -182,16 +182,16 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
    La arquitectura del sistema define la vista conceptual de su sistema; incluida (entre otros datos):
 
-   * [Estructura](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) del sistema para todos los entornos necesarios
+   * [Estructura ](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) del sistema para todos los entornos necesarios
    * Subsistemas
    * Sistemas de terceros
    * Interfaces; hardware, software e interacción humana
-   * Servidores para cada entorno; consulte los requisitos [técnicos](/help/sites-deploying/technical-requirements.md) y las directrices de cambio de tamaño [de hardware](/help/managing/hardware-sizing-guidelines.md)
+   * Servidores para cada entorno; consulte [Requisitos técnicos](/help/sites-deploying/technical-requirements.md) y [Pautas de cambio de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
 
    * Procesos para cada entorno; por ejemplo, los requisitos de despliegue y mantenimiento
    * Actividades de mantenimiento (Almacén de datos GC, optimización de TarPM, etc.)
    * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Almacenamiento en caché de Dispatcher
-   * [Publicación/Uso compartido autorizado de clústeres](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
+   * [](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) ClusteringPublish/Authorshare
    * Rendimiento del lado del cliente (JS minify, concat, sprites css, número total de solicitudes http y otras)
 
 * **Arquitectura de aplicaciones**
@@ -217,12 +217,12 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
    La integración del sistema requiere que planifique (y luego implemente):
 
-   * Cómo se unirán todos los subsistemas y las integraciones [de](/help/sites-administering/integration.md) soluciones para funcionar como un sistema coherente
+   * Cómo se unirán todos los subsistemas y [integraciones de soluciones](/help/sites-administering/integration.md) para funcionar como un sistema coherente
    * c) Cómo se integrarán los sistemas de terceros; junto con cualquier consideración especial, como la administración sin conexión/en línea, del lado del cliente/del navegador o de la sustitución cuando un sistema de terceros está inactivo
 
 * **Concepto de prueba**
 
-   Antes de comenzar el desarrollo, debe elaborar un concepto exhaustivo y exhaustivo de todos los requisitos de [prueba](/help/sites-developing/planning.md) para su proyecto.
+   Antes de comenzar el desarrollo, debe elaborar un concepto exhaustivo y exhaustivo de todos los requisitos [pruebas](/help/sites-developing/planning.md) para su proyecto.
 
    Esto debería incluir (entre otros):
 
@@ -242,13 +242,13 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
 
    Antes del desarrollo, deben establecerse todos los procesos de soporte necesarios para implementar, lanzar, probar y notificar problemas.
 
-   Consulte también el Portal de asistencia técnica de [Adobe](https://helpx.adobe.com/es/marketing-cloud/contact-support.html).
+   Consulte también el [Portal de soporte técnico de Adobe](https://helpx.adobe.com/es/marketing-cloud/contact-support.html).
 
 ### Planificación y operaciones de operaciones {#operations-planning-and-operations}
 
 De manera similar, las operaciones deben planificarse correctamente para asegurarse de que tiene los entornos que necesita para todas las etapas del ciclo de vida del proyecto. También necesita los procesos adecuados para mantenerlos.
 
-#### Milestones {#milestones-3}
+#### Hitos {#milestones-3}
 
 * **Permisos**
 
@@ -260,9 +260,9 @@ De manera similar, las operaciones deben planificarse correctamente para asegura
 
    * Definición del uso de privilegios que afectan al entorno de publicación; por ejemplo, `replicate`
    * Para los usuarios con privilegios mínimos, deben definirse flujos de trabajo
-   * Los usuarios del `editor` grupo no deben tener `admin` derechos ni formar parte del `administrators` grupo
+   * Los usuarios del grupo `editor` no deben tener `admin` derechos ni formar parte del grupo `administrators`
 
-   For more information, see [User Administration and Security](/help/sites-administering/security.md).
+   Para obtener más información, consulte [Administración de usuarios y seguridad](/help/sites-administering/security.md).
 
 * **Supervisión y mantenimiento**
 
@@ -271,7 +271,7 @@ De manera similar, las operaciones deben planificarse correctamente para asegura
    * Qué necesita supervisión
    * Tareas de mantenimiento; tanto en casos ordinarios como especiales
 
-   Consulte también [Supervisión y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
+   Consulte también [Monitoreo y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
 
 * **Migración**
 
@@ -285,7 +285,7 @@ De manera similar, las operaciones deben planificarse correctamente para asegura
 
 El desarrollo es una fase crucial que requiere algo más que simplemente codificar.
 
-#### Milestones {#milestones-4}
+#### Hitos {#milestones-4}
 
 * **Entorno de desarrollo**
 
@@ -325,15 +325,15 @@ El desarrollo es una fase crucial que requiere algo más que simplemente codific
    * Secuencia de implementación
    * Integración/dependencias de software de terceros
    * Configuración de seguridad
-   * Rendimiento de línea de base verificado mediante la ejecución de pruebas [de día](/help/sites-developing/tough-day.md) duro en la configuración de producción
-   * Requisitos para las pruebas de rendimiento; consulte Prácticas [recomendadas para garantizar la calidad](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * El rendimiento previsto se verifica ejecutando las [pruebas de días difíciles](/help/sites-developing/tough-day.md) en la configuración de producción
+   * Requisitos para las pruebas de rendimiento; consulte [Prácticas recomendadas para garantizar la calidad](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integración**
 
-   Planifique, documento y pruebe todos los aspectos de la integración [del sistema y la](/help/sites-administering/integration.md)solución, incluidos:
+   Planifique, documento y pruebe todos los aspectos del sistema y la [integración de soluciones](/help/sites-administering/integration.md), incluyendo:
 
    * Una estrategia de prueba automatizada
-   * Procesos automatizados para [mover las aplicaciones de desarrollo a prueba y luego producción](/help/managing/enterprise-devops.md#code-movement)
+   * Procesos automatizados para [mover aplicaciones de desarrollo a prueba y luego producción](/help/managing/enterprise-devops.md#code-movement)
    * Procesos automatizados para [mover contenido de producción a prueba y desarrollo](/help/managing/enterprise-devops.md#content-movement)
 
 * **Migración**
@@ -357,7 +357,7 @@ El desarrollo es una fase crucial que requiere algo más que simplemente codific
 
 ### Rendimiento y pruebas {#performance-and-testing}
 
-Una vez que la nueva aplicación esté disponible, tendrá que someterse a pruebas rigurosas, tanto de funcionalidad como de [rendimiento](/help/sites-deploying/configuring-performance.md).
+Una vez que la nueva aplicación esté disponible, tendrá que someterse a pruebas rigurosas, tanto para funcionalidad como para [performance](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >
@@ -365,11 +365,11 @@ Una vez que la nueva aplicación esté disponible, tendrá que someterse a prueb
 >
 >El director del proyecto tiene la responsabilidad de evaluar las consecuencias de los resultados y decidir las medidas apropiadas.
 
-#### Milestones {#milestones-5}
+#### Hitos {#milestones-5}
 
 * **Prueba de aceptación del usuario final**
 
-   [La prueba](/help/sites-developing/acceptance-signoff.md) de aceptación del usuario (UAT) es crucial para garantizar que:
+   [La prueba](/help/sites-developing/acceptance-signoff.md)  de aceptación del usuario (UAT) es crucial para garantizar que:
 
    * La solución cumple los requisitos de usuario y cliente
    * El cliente o los usuarios aceptan la solución (función, diseño y rendimiento)
@@ -394,7 +394,7 @@ Una vez que la nueva aplicación esté disponible, tendrá que someterse a prueb
 
 La implementación de la nueva aplicación requiere una planificación cuidadosa para garantizar una fácil puesta en marcha. Esto incluye confirmar un alto nivel de seguridad, capacitar a todos los usuarios potenciales y realizar múltiples pruebas para confirmar que todos los problemas han sido tratados.
 
-#### Milestones {#milestones-6}
+#### Hitos {#milestones-6}
 
 * **Preparación**
 
@@ -430,13 +430,13 @@ La implementación de la nueva aplicación requiere una planificación cuidadosa
 
    Para garantizar la seguridad de su solución, realice pruebas de penetración específicas, junto con una gama más amplia de pruebas de seguridad.
 
-   Consulte la lista de comprobación [de seguridad](/help/sites-administering/security-checklist.md) para obtener más información.
+   Consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) para obtener más detalles.
 
 ### Go Live {#go-live}
 
 Quieres que Go Live sea lo más suave posible. Nuevamente, los pasos finales necesitan planear una ejecución limpia.
 
-#### Milestones {#milestones-7}
+#### Hitos {#milestones-7}
 
 * **Preparación**
 
@@ -466,7 +466,7 @@ Quieres que Go Live sea lo más suave posible. Nuevamente, los pasos finales nec
 
 Las listas de comprobación están diseñadas por persona. Estas son las funciones que tienen una participación significativa en el ciclo de vida del proyecto.
 
-También hay [otra persona](#other-persona) involucrada en tareas específicas.
+También hay alguna [otra persona](#other-persona) que participa en tareas específicas.
 
 ### Patrocinador del proyecto {#project-sponsor}
 
@@ -511,7 +511,7 @@ El analista de negocios:
    * Criterios para el éxito.
    * KPI (basados tanto en el negocio como en el rendimiento).
 
-### Líder en desarrollo {#development-lead}
+### Líder de desarrollo {#development-lead}
 
 La iniciativa de desarrollo:
 
@@ -551,7 +551,7 @@ El líder de seguridad:
 * Es responsable del concepto general de seguridad de la solución, asegurándose de que esté alineada con cualquier requerimiento y política del cliente.
 * Ofrece un concepto de seguridad, operaciones de seguridad y recomendaciones para cualquier concepto de seguridad basado en hardware; como zonas y servidores de seguridad.
 
-### Otras personas {#other-persona}
+### Otro personal {#other-persona}
 
 * Partes interesadas
 
@@ -579,29 +579,29 @@ El líder de seguridad:
 
 ## Documentos y entregables requeridos {#required-documents-and-deliverables}
 
-Las listas de comprobación cubren los Documentos **y** productos **** necesarios para cada hito.
+Las listas de comprobación cubren los **Documentos requeridos** y **entregables** para cada hito.
 
 * No hay una relación 1:1 entre estos; por ejemplo, un grupo de documentos requeridos puede resultar en una única entrega.
 * Una entrega de una persona puede ser un documento requerido para otra persona durante el mismo hito.
 
 ### Documentos requeridos {#required-documents}
 
-Los Documentos **** requeridos son necesarios para la persona adecuada cuando se producen sus productos.
+Los **Documentos requeridos** son necesarios para la persona adecuada cuando se producen sus productos.
 
-Para cada Documento **** requerido, la persona debe indicar:
+Para cada **Documento requerido** la persona debe indicar:
 
 * **Y/N**: si se ha recibido.
 * **1-3**: una indicación de la calidad del documento recibido.
 
-### Elementos que entregar {#deliverables}
+### Entregables {#deliverables}
 
 Para cada hito, la persona adecuada es responsable de la realización de documentos específicos y, por lo tanto, de cumplir con sus responsabilidades para un hito específico.
 
-Para cada **entrega** , la persona debe indicar:
+Por cada **Entregable** persona debe indicar:
 
 * **Y/N**: si se ha completado.
 
-Los elementos entregables se utilizan a menudo como Documentos **** requeridos para el hito actual o posterior.
+Los elementos entregables a menudo se utilizan como **Documentos requeridos** para el hito actual o posterior.
 
 ## Prácticas recomendadas relacionadas {#related-best-practices}
 
@@ -612,14 +612,15 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
    * [Operaciones de desarrollo empresarial](/help/managing/enterprise-devops.md)
    * [Recomendaciones para la administración de direcciones URL y SEO](/help/managing/seo-and-url-management.md) 
    * [AEM y las directrices de accesibilidad web](/help/managing/web-accessibility.md) 
-   * [Reglamento](/help/managing/data-protection-and-privacy.md)general de protección de datos* [Implementación y mantenimiento de las mejores prácticas](/help/sites-deploying/best-practices.md)
+   * [Reglamento](/help/managing/data-protection-and-privacy.md) general de protección de datos*  [Implementación y mantenimiento de las mejores prácticas](/help/sites-deploying/best-practices.md)
 * [Prácticas recomendadas sobre administración](/help/sites-administering/administer-best-practices.md)
 * [Prácticas recomendadas sobre desarrollo](/help/sites-developing/best-practices.md)
 * [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
 
 ## Áreas de documentación clave {#key-documentation-areas}
 
-* Documentación AEM Además, las siguientes secciones de AEM documentación son de particular interés (sin embargo, esta lista no es exhaustiva):
+* Documentación AEM
+Además, las siguientes secciones de AEM documentación son de particular interés (sin embargo, esta lista no es exhaustiva):
 
    * [Seguridad](/help/sites-developing/security.md)
    * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
@@ -633,5 +634,5 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
 * Documentación relacionada
 
-   * Adobe Experience Cloud: [Planificación del Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * Adobe Experience Cloud - [Planificación para el Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
 
