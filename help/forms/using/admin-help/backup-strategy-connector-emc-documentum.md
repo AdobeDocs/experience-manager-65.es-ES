@@ -11,21 +11,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 0%
 
 ---
 
 
-# Estrategia de Backup para Usuarios de Connector para Documentum de EMC {#backup-strategy-for-connector-for-emc-documentum-users}
+# Estrategia de backup para usuarios de Connector para Documentum de EMC {#backup-strategy-for-connector-for-emc-documentum-users}
 
 Si tiene instalado Connector para Documentum de EMC, además de las instrucciones de este capítulo, su estrategia de backup y recuperación debe incluir backup (o recuperación) del equipo en el que está instalado el sistema ECM correspondiente. (Consulte la documentación de Documentum de ECM).
 
 Realice una copia de seguridad del entorno de formularios AEM mediante el repositorio de ECM y las siguientes tareas:
 
-* Realice una copia de seguridad de los formularios AEM siguiendo las instrucciones descritas en este documento.
-* Haga backup de su sistema Documentum de ECM siguiendo las instrucciones de [Backup de Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server)de Documentum de EMC.
+* Realice una copia de seguridad de AEM formularios siguiendo las instrucciones descritas en este documento.
+* Haga backup de su sistema Documentum de EMC siguiendo las instrucciones de [Backup de Content Server de Documentum de EMC](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
-Restaure el entorno de formularios AEM utilizando el repositorio de ECM y realizando las siguientes tareas:
+Restaure AEM entorno de formularios mediante el repositorio de ECM y realice las siguientes tareas:
 
-* Restaure su sistema ECM correspondiente siguiendo las instrucciones de [Restore de Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server)de Documentum de EMC.
-* Restaure los formularios de AEM siguiendo las instrucciones descritas en este documento.
+* Restaure su sistema ECM correspondiente siguiendo las instrucciones de [Restore de Content Server de Documentum de EMC](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
+* Restaure AEM formularios siguiendo las instrucciones descritas en este documento.
 
