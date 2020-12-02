@@ -45,11 +45,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 >[!NOTE]
 
-Los inicios rápidos ubicados en Programación con formularios AEM se basan en Forms Server que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+Los inicios rápidos ubicados en Programación con formularios AEM se basan en Forms Server que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Creación de espacios de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Creación de espacios de Content Services mediante la API de Java (desaprobada) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java crea un nuevo espacio denominado *Directorio* de pruebas ubicado en Inicio de Compañía. El valor de identificación del nuevo espacio se escribe en la consola.
+El siguiente ejemplo de código Java crea un nuevo espacio denominado *Directorio de pruebas* en el Inicio de Compañía. El valor de identificación del nuevo espacio se escribe en la consola.
 
 ```java
  /*
@@ -143,7 +143,7 @@ El siguiente ejemplo de código Java crea un nuevo espacio denominado *Directori
  
 ```
 
-## Inicio rápido (modo SOAP): Eliminación del contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Eliminar el contenido de Content Services mediante la API de Java (desaprobada) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 En el siguiente ejemplo de código Java se elimina un espacio denominado /Compañía Home/Test Directory.
 
@@ -245,7 +245,7 @@ En el siguiente ejemplo de código Java se elimina un espacio denominado /Compa�
 
 ## Inicio rápido (modo SOAP): Añadir contenido a Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java agrega un archivo PDF llamado *MortgageForm.pdf* a una carpeta llamada /Compañía Home/Test Directory. Se establecen los atributos de creador y descripción. El valor de identificación del nuevo contenido se escribe en la consola.
+El siguiente ejemplo de código Java agrega un archivo PDF denominado *FormularioHipoteca.pdf* a una carpeta denominada /Directorio de inicio/prueba de Compañía. Se establecen los atributos de creador y descripción. El valor de identificación del nuevo contenido se escribe en la consola.
 
 ```java
  /*
@@ -474,7 +474,7 @@ El siguiente ejemplo de código Java recupera un archivo PDF denominado *Mortgag
 
 ## Inicio rápido (modo SOAP): Mover el contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java mueve un archivo PDF llamado *MortgageForm.pdf* de /Compañía Home/Test Directory a /Compañía Home. El valor de identificación del contenido movido se escribe en la consola.
+El siguiente ejemplo de código Java mueve un archivo PDF con el nombre *FormularioHipoteca.pdf* de /Inicio de Compañía/Directorio de pruebas a /Inicio de Compañía. El valor de identificación del contenido movido se escribe en la consola.
 
 ```java
  /*
@@ -573,7 +573,7 @@ El siguiente ejemplo de código Java mueve un archivo PDF llamado *MortgageForm.
  
 ```
 
-## Inicio rápido (modo SOAP): Lista del contenido de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Lista del contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 El siguiente ejemplo de código Java lista el contenido ubicado en /Compañía Home. Se muestra cada tipo de nodo y nombre de nodo.
 
@@ -686,7 +686,7 @@ El siguiente ejemplo de código Java lista el contenido ubicado en /Compañía H
  
 ```
 
-## Inicio rápido (modo SOAP): Buscar contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Buscar contenido de Content Services mediante la API de Java (desaprobada) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 El siguiente código Java busca en /Compañía Home un documento que contenga el texto MortgageForm. También se buscan las subcarpetas.
 
@@ -906,7 +906,7 @@ El siguiente ejemplo de código Java establece un permiso para un usuario con el
  
 ```
 
-## Inicio rápido (modo SOAP): Creación de asociaciones mediante la API de Java (obsoleto) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Creación de asociaciones mediante la API de Java (desaprobada) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
 El siguiente código Java crea una asociación entre un archivo de datos XML y un formulario PDF. Este tipo de asociación se denomina LinkedBy.El documento PDF debe tener aplicada la vinculación de aspecto.
 
