@@ -23,21 +23,23 @@ ht-degree: 0%
 
 AEM Forms permite a los desarrolladores de formularios incrustar sin problemas formularios adaptables y comunicaciones interactivas en una página de AEM Sites o en una página web alojada fuera de AEM. El formulario adaptable incrustado y la comunicación interactiva son totalmente funcionales y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
 
-Para obtener información sobre la incrustación de un formulario adaptable en una página web externa, consulte [Incrustar formulario adaptable en una página](/help/forms/using/embed-adaptive-form-external-web-page.md)web externa.
+Para obtener información sobre la incrustación de un formulario adaptable en una página Web externa, consulte [Incrustar formulario adaptable en una página Web externa](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 En la página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante:
 
-* **[Componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** AEM Forms Contenedor AEM Forms proporciona un componente que puede agregar a las páginas del sitio. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable y una comunicación interactiva.
+* **[AEM Forms Contenedor](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+ComponentAEM Forms proporciona un componente que puede añadir a las páginas del sitio. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable y una comunicación interactiva.
 
-* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** de recursos Todos los formularios y las comunicaciones interactivas que cree estarán disponibles en Recursos. Puede arrastrar y soltar el formulario como recurso en la página.
+* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+de recursosTodos los formularios y las comunicaciones interactivas que cree estarán disponibles en Recursos. Puede arrastrar y soltar el formulario como recurso en la página.
 
 ## Requisitos previos {#prerequisites}
 
-Para incrustar un formulario adaptable o una comunicación interactiva en una página de sitios AEM que utilice una plantilla editable, asegúrese de que el componente Formulario AEM está configurado como un componente permitido en la plantilla asociada. Para obtener más información, consulte **Directiva y propiedades (Contenedor de diseño)** en [Creación de plantillas](/help/sites-authoring/templates.md)de página.
+Para incrustar un formulario adaptable o una comunicación interactiva en una página de sitios AEM que utilice una plantilla editable, asegúrese de que el componente Formulario AEM está configurado como un componente permitido en la plantilla asociada. Para obtener más información, consulte la sección **Políticas y propiedades (Contenedor de diseño)** en [Creación de plantillas de página](/help/sites-authoring/templates.md).
 
 En el caso de una página Sitios que utilice una plantilla estática, debe configurarla en el sistema de párrafos de la página del sitio. Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
 
-## Incrustación de un formulario adaptable o una comunicación interactiva {#af-component}
+## Incrustación de un formulario adaptable o comunicación interactiva {#af-component}
 
 Para incrustar un formulario adaptable o una comunicación interactiva mediante el componente Contenedor de AEM Forms:
 
@@ -50,12 +52,12 @@ Para incrustar un formulario adaptable o una comunicación interactiva mediante 
    >
    >No se admiten varios componentes de AEM Forms Contenedor en una página.
 
-1. Toque el componente de Contenedor de AEM Forms incrustado en la página Sitios y, a continuación, toque ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar Contenedor]** de AEM Forms.
+1. Toque el componente de Contenedor de AEM Forms incrustado en la página de sitios y, a continuación, toque ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar Contenedor de AEM Forms]**.
 1. En el cuadro de diálogo Editar Contenedor de AEM Forms, especifique lo siguiente.
 
-   * **Tipo de recurso:** Seleccione el tipo de recurso que desea incrustar. Las opciones son formulario adaptable y comunicación interactiva
+   * **Tipo de recurso:** seleccione el tipo de recurso que desea incrustar. Las opciones son formulario adaptable y comunicación interactiva
    * **Ruta** del recurso: Busque y seleccione el formulario adaptable o la comunicación interactiva que desea incrustar. Se rellena automáticamente si se ha soltado desde el navegador de recursos.
-   * (Solo formulario adaptable) Envío **posterior**: Seleccione la acción que se activará al enviar el formulario. Puede elegir mostrar un mensaje de agradecimiento o una página de agradecimiento.
+   * (Sólo formulario adaptable) **Envío de anuncio**: Seleccione la acción que se activará al enviar el formulario. Puede elegir mostrar un mensaje de agradecimiento o una página de agradecimiento.
 
       * **Mensaje** de agradecimiento: Escriba un mensaje con el editor de texto enriquecido para mostrarlo en el envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
       * **Página** de agradecimiento: Explore y seleccione la página que desea mostrar al enviar el formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
@@ -82,13 +84,13 @@ AEM página de sitios mantiene una referencia al formulario adaptable y la comun
 Para modificar cualquier configuración o propiedad del formulario adaptable incrustado y la comunicación interactiva, realice una de las acciones siguientes.
 
 * Abra el formulario original en formularios adaptables o comunicación interactiva en los editores respectivos y modifíquelo.
-* Toque el formulario adaptable o la comunicación interactiva desde la página del sitio en modo de edición y, a continuación, toque **[!UICONTROL Editar en una ventana]** nueva. El formulario original se abre en modo de edición que puede modificar.
+* Toque el formulario adaptable o la comunicación interactiva desde la página del sitio en modo de edición y, a continuación, toque **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abre en modo de edición que puede modificar.
 
 >[!NOTE]
 >
 >Los cambios realizados en el formulario adaptable original o en la comunicación interactiva se reflejan automáticamente en el formulario incrustado. Sin embargo, vuelva a publicar el formulario adaptable, la comunicación interactiva o la página del sitio para reflejar los cambios en la página publicada.
 
-## Considerations and best practices {#considerations-and-best-practices}
+## Consideraciones y prácticas recomendadas {#considerations-and-best-practices}
 
 Tenga en cuenta los siguientes puntos al incrustar formularios adaptables en páginas de sitios AEM:
 
