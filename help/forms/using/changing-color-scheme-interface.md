@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 
-# Cambio de la combinación de colores de la interfaz {#changing-the-color-scheme-of-the-interface}
+# Cambio del esquema de colores de la interfaz {#changing-the-color-scheme-of-the-interface}
 
-Puede modificar la combinación de colores de las partes de la interfaz de usuario del espacio de trabajo de AEM Forms para adaptarlas a sus necesidades. A continuación se muestran algunos ejemplos de personalizaciones representativas de combinaciones de colores. Además de los pasos descritos en este artículo, consulte Pasos [genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
+Puede modificar la combinación de colores de las partes de la interfaz de usuario del espacio de trabajo de AEM Forms para adaptarlas a sus necesidades. A continuación se muestran algunos ejemplos de personalizaciones representativas de combinaciones de colores. Además de los pasos descritos en este artículo, consulte [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
-## Top navigation bar {#top-navigation-bar}
+## Barra de navegación superior {#top-navigation-bar}
 
 ### Uso de la imagen de fondo {#using-background-image}
 
@@ -40,7 +43,7 @@ Para actualizar la barra de navegación en la parte superior del espacio de trab
    }
    ```
 
-### Uso de la propiedad color en CSS {#using-color-property-in-css}
+### Uso de la propiedad de color en CSS {#using-color-property-in-css}
 
 1. Añada el siguiente estilo en newStyle.css en /apps/ws/css
 
@@ -51,10 +54,10 @@ Para actualizar la barra de navegación en la parte superior del espacio de trab
    }
    ```
 
-## Componente de Categoría {#category-component}
+## Componente de categoría {#category-component}
 
-El componente Categoría muestra las distintas categorías de sus tareas en el panel izquierdo. Para cambiar su color, defina el color de fondo en `.category` el elemento del archivo CSS.
+El componente categoría muestra las distintas categorías de sus tareas en el panel izquierdo. Para cambiar su color, defina el color de fondo en el elemento `.category` del archivo CSS.
 
-## Componente de Tarea {#task-component}
+## Componente de tarea {#task-component}
 
-Las Tareas se muestran en el panel central denominado Componente TaskList. Para cambiar el color, modifique el estilo asociado con el selector de tarea .en la hoja de estilo.
+Las tareas se muestran en el panel central denominado Componente TaskList. Para cambiar el color, modifique el estilo asociado con el selector de tarea .en la hoja de estilo.
