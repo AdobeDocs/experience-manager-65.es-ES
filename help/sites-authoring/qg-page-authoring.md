@@ -12,6 +12,9 @@ discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 translation-type: tm+mt
 source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+workflow-type: tm+mt
+source-wordcount: '1590'
+ht-degree: 97%
 
 ---
 
@@ -42,7 +45,7 @@ Antes de proporcionar la descripción general de los detalles, a continuación s
 
 * Reordenar las páginas en una carpeta
 
-   * This can be done in [List View](/help/sites-authoring/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+   * Esto se puede hacer en la [vista de lista](/help/sites-authoring/basic-handling.md#list-view). Los cambios se aplican y quedan visibles en otras vistas.
 
 #### Creación de páginas {#page-authoring}
 
@@ -51,7 +54,7 @@ Antes de proporcionar la descripción general de los detalles, a continuación s
    * ***No se puede navegar con vínculos*** cuando se está en el modo **Edición**. Para navegar con vínculos debe [acceder a una vista previa de la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante una de las acciones siguientes:
 
       * [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode)
-      * [Ver tal y como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
+      * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
 
 * Las versiones no se inician ni se crean en el editor de páginas; ahora se realiza desde la consola de sitios (a través de la opción **Crear** o la [línea de tiempo](/help/sites-authoring/basic-handling.md#timeline) de un recurso seleccionado).
 
@@ -60,7 +63,8 @@ Antes de proporcionar la descripción general de los detalles, a continuación s
 >Existen varios métodos abreviados del teclado que pueden hacer que la experiencia de creación sea más sencilla.
 >
 >* [Métodos abreviados de teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [Métodos abreviados de teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
+>* [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
+
 >
 
 
@@ -75,7 +79,7 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), which allows you to return to the selected location:
+1. Desplácese hacia arriba en el árbol mediante [la ruta de exploración del encabezado](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs); esto permite volver a la ubicación seleccionada:
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -87,14 +91,14 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
 Para [crear una nueva página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Desplácese hasta la ubicación](#finding-your-page) en la que desee crear la nueva página.
+1. [Desplácese hasta la ubicación en la que desee crear la nueva página.](#finding-your-page)
 1. Elija el icono **Crear** y seleccione **Página** en la lista:
 
    ![qgtap-02](assets/qgtap-02.png)
 
 1. Se abrirá el asistente que le guiará para recopilar la información necesaria cuando [cree su nueva página](/help/sites-authoring/managing-pages.md#creating-a-new-page). Siga las instrucciones que se muestran en la pantalla.
 
-### Seleccionar su página para ejecutar acciones adicionales {#selecting-your-page-for-further-action}
+### Seleccionar su página para ejecutar acciones adicionales   {#selecting-your-page-for-further-action}
 
 Puede seleccionar una página para llevar a cabo otras acciones. Seleccionar una página permitirá actualizar automáticamente la barra de herramientas para mostrar las medidas relevantes para ese recurso.
 
@@ -114,6 +118,7 @@ Cómo seleccionar una página depende de la vista que se utilice en el panel:
 
       * Dispositivo móvil: mantener pulsado
       * Escritorio: el icono de marca de verificación de [acción rápida](/help/sites-authoring/basic-handling.md#quick-actions):
+
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
    * En la tarjeta se superpondrá una marca de verificación que indica que se ha seleccionado la página.
@@ -142,7 +147,7 @@ Para editar la página:
    Puede acceder desde:
 
    * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
-   * La barra de herramientas, cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
+   * La barra de herramientas cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
 
 1. Cuando se abre el editor puede:
 
@@ -151,6 +156,7 @@ Para editar la página:
       * Abrir el panel lateral
       * Seleccionar la pestaña de componentes (el [buscador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
       * Arrastrar el componente requerido a su página
+
       El panel lateral se puede abrir (y cerrar) con:
    ![](do-not-localize/screen_shot_2018-03-21at160738.png)
 
@@ -159,6 +165,7 @@ Para editar la página:
       * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
       * Abra el editor para el componente haciendo clic y aguantando el puntero o con un doble clic. Se mostrarán las acciones disponibles (para algunos componentes se trata de una selección limitada).
       * Para ver todas las acciones disponibles, acceda al modo de pantalla completa utilizando:
+
    ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar las propiedades de un componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
@@ -167,41 +174,44 @@ Para editar la página:
    * [Desplazar un componente](/help/sites-authoring/editing-content.md#moving-a-component) mediante las siguientes opciones:
 
       * Arrastre el componente requerido hasta su nueva ubicación.
-      * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Cortar** y **Pegar** donde sea necesario.
    * [Copiar (y Pegar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
+      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Copiar** y **Pegar** cuando sea necesario.
    >[!NOTE]
    >
    >Puede **pegar** componentes en la misma página o en otra página. Si pega el componente en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, tendrá que actualizase la página. 
 
    * [Eliminar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Open the component toolbar with either tap or click, then use the **Delete** icon.
+      * Abra la barra de herramientas de componentes haciendo clic sobre ella y utilice el icono **Eliminar.**
    * [Añadir anotaciones](/help/sites-authoring/annotations.md#annotations) a la página:
 
       * Seleccione el modo **Anotar** (icono de bocadillo). Añada anotaciones utilizando el icono **Añadir anotación** (signo más). Salga del modo Anotar utilizando la X en la parte superior derecha.
+
    ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Vista previa de una página](/help/sites-authoring/editing-content.md#preview-mode) (para ver cómo aparecerá en el entorno donde se publicará):
 
       * Seleccione **Vista previa** en la barra de herramientas.
    * Volver al modo de edición (o seleccionar otro modo) haciendo clic en **Editar** en el selector desplegable.
+
    >[!NOTE]
    >
    >Para navegar mediante los vínculos en el contenido debe utilizar el [modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode).
 
-### Editar las Propiedades de la página {#editing-the-page-properties}
+### Editar las Propiedades de la página    {#editing-the-page-properties}
 
 Existen dos métodos (principales) para [editar las propiedades de la página](/help/sites-authoring/editing-page-properties.md):
 
-* Desde la consola **Sitios:**
+* Desde la consola **Sitios**:
 
    1. [Desplácese hasta la página](#finding-your-page) que quiera publicar.
    1. Seleccione el icono **Propiedades** desde:
 
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
-      * La barra de herramientas, cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
+      * La barra de herramientas cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
+
    ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
    1. Se mostrarán las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
@@ -211,28 +221,31 @@ Existen dos métodos (principales) para [editar las propiedades de la página](/
 
    1. Abra el menú **Información de la página.**
    1. Seleccione **Abrir propiedades** para abrir el cuadro de diálogo y editar las propiedades.
+
    ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Publicar su página (o eliminar la publicación) {#publishing-your-page-or-unpublishing}
 
 Existen dos métodos principales para [publicar su página](/help/sites-authoring/publishing-pages.md) (y también para eliminar la publicación):
 
-* Desde la consola **Sitios:**
+* Desde la consola **Sitios**:
 
    1. [Desplácese hasta la página](#finding-your-page) que quiera publicar.
-   1. Select the **Quick Publish** icon from either:
+   1. Seleccione el icono **Publicación rápida** desde:
 
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
       * La barra de herramientas cuando su [página se haya seleccionado](#selectiingyourpageforfurtheraction) (también permite el acceso a [Publicar posteriormente](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
+
    ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Cuando [edite su página](#editing-your-page-content):
 
    1. Abra el menú **Información de la página.**
    1. Seleccione **Publicar página**.
+
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
-* La cancelación de la publicación de una página desde la consola solo se puede realizar a través de la opción de **Administrar publicación**, que solo está disponible en la barra de herramientas (no a través de las acciones rápidas).
+* La cancelación de la publicación de una página desde la consola solo se puede realizar mediante la opción **Administrar publicación**, que solo está disponible en la barra de herramientas (no a través de las acciones rápidas).
 
    La opción **Cancelar la publicación de página** todavía está disponible mediante el menú **Información de página del editor**.
 
@@ -240,15 +253,16 @@ Existen dos métodos principales para [publicar su página](/help/sites-authorin
 
    Consulte [Publicación de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obtener más información.
 
-### Mover, copiar y pegar o eliminar su página {#move-copy-and-paste-or-delete-your-page}
+### Mover, copiar y pegar o eliminar su página    {#move-copy-and-paste-or-delete-your-page}
 
 Todas estas acciones pueden activarse del siguiente modo:
 
 1. [Desplácese hasta la página](#finding-your-page) que quiera mover, copiar, pegar o eliminar.
-1. Seleccione el icono Copiar (y después, Pegar), Mover o Eliminar mediante:
+1. Seleccione el icono de copiar (y luego pegar), mover o eliminar según sea necesario mediante:
 
    * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso necesario.
-   * La barra de herramientas, cuando [su página se haya seleccionado](#selecting-your-page-for-further-action).
+   * La barra de herramientas cuando su [página se haya seleccionado](#selecting-your-page-for-further-action).
+
    A continuación, depende de la acción:
 
    * Copiar:
@@ -264,11 +278,11 @@ Todas estas acciones pueden activarse del siguiente modo:
    >
    >La opción Eliminar no se encuentra disponible como Acción rápida.
 
-### Locking Your Page (then Unlocking) {#locking-your-page-then-unlocking}
+### Bloquear y desbloquear su página {#locking-your-page-then-unlocking}
 
-[Bloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) impide a otros autores que trabajen en ella al mismo tiempo que usted. El botón o icono Bloquear (y Desbloquear) se puede encontrar en:
+[Bloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) impide que otros autores trabajen en ella al mismo tiempo que usted. El icono/botón Bloquear (y Desbloquear) se encuentra en:
 
-* La barra de herramientas, cuando [su página se haya seleccionado](#selecting-your-page-for-further-action).
+* La barra de herramientas cuando su [página se haya seleccionado](#selecting-your-page-for-further-action).
 * Menú desplegable [Información de la página](#editing-the-page-properties) cuando edita la página.
 * Barra de herramientas de la página cuando edita la página (cuando está bloqueada).
 
@@ -290,11 +304,11 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 1. Haga clic en el tipo de referencia requerido para mostrar más detalles y (cuando sea adecuado) poder llevar a cabo otras acciones.
 
-### Crear una versión de su página {#creating-a-version-of-your-page}
+### Crear una versión de su página    {#creating-a-version-of-your-page}
 
 Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) de la página:
 
-1. Para abrir el carril de línea de tiempo, seleccione **[Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)**con el icono de la barra de herramientas (antes o después de[seleccionar su página](#selecting-your-page-for-further-action)):
+1. Para abrir el raíl de cronología, seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)** con el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -308,7 +322,7 @@ Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) d
 
 Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan versiones de su página:
 
-1. Seleccione **[Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)**mediante el icono de la barra de herramientas (antes o después de[seleccionar su página](#selecting-your-page-for-further-action)):
+1. Seleccione **[Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
