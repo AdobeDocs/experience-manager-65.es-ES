@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Adobe Experience Manager Fluid Experiences se basa en los potentes conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para el envío de contenido sin encabezado.
 
-AEM Experiencias fluidas se diferencia de la AEM clásica en que sólo se aborda el caso de uso del envío sin cabeza. Con las soluciones [completas de AEM Sites, Recursos y Medios dinámicos, se ofrece una gran compatibilidad con la creación de contenido y el envío de contenido, así como AEM soporte sólido para casos de uso híbrido.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Experiencias fluidas se diferencia de la AEM clásica en que sólo se aborda el caso de uso del envío sin cabeza. Con las soluciones [completas de AEM Sites, Assets y Dynamic Media, se ofrece una gran capacidad de creación y envío de contenido, así como AEM soporte para casos de uso híbrido.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 Las siguientes tablas definen las características de AEM Experiencias fluidas y enlazan a la documentación de soporte pertinente.
 
@@ -37,7 +37,7 @@ Las siguientes tablas definen las características de AEM Experiencias fluidas y
 | [Representaciones de imágenes](/help/assets/image-presets.md) |
 | [Gestión de etiquetas y metadatos](/help/assets/metadata.md) |
 | [Buscar](/help/assets/manage-assets.md) |
-| [Colecciones](/help/assets/manage-assets.md) y [Lightbox](/help/assets/light-box.md) |
+| [](/help/assets/manage-assets.md) Colecciones y  [caja de luz](/help/assets/light-box.md) |
 | [Perfiles](/help/assets/processing-profiles.md) |
 | [Control de versiones](/help/assets/manage-assets.md) |
 | [Detección de duplicados](/help/assets/duplicate-detection.md) |
