@@ -22,7 +22,7 @@ ht-degree: 62%
    + [Lista de comprobación](best-practices-checklist.md)
    + [Glosario](best-practices-glossary.md)
    + [Lista de comprobación: más referencia](best-practices-further-reference.md)
-+ Administración - Más referencia {#managing-further-reference}
++ Administración: más referencia {#managing-further-reference}
    + [Pautas para configurar el tamaño del hardware](hardware-sizing-guidelines.md) 
    + [Operaciones de desarrollo empresarial](enterprise-devops.md)
    + [Recomendaciones para la administración de direcciones URL y SEO](seo-and-url-management.md) 
