@@ -11,11 +11,14 @@ topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
 source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 0%
 
 ---
 
 
-# Introducción al espacio de trabajo de AEM Forms {#getting-started-with-aem-forms-workspace}
+# Introducción al área de trabajo de AEM Forms {#getting-started-with-aem-forms-workspace}
 
 Puede utilizar el espacio de trabajo de AEM Forms para realizar las siguientes tareas:
 
@@ -25,7 +28,7 @@ Puede utilizar el espacio de trabajo de AEM Forms para realizar las siguientes t
 
 ## Navegación por el espacio de trabajo de AEM Forms {#navigating-html-workspace}
 
-Se muestran diferentes elementos en la interfaz de usuario del espacio de trabajo de AEM Forms en función del proceso y la tarea en los que esté trabajando. Puede ver o no las fichas Resumen, Formularios, Detalles, Historial, Anexos o Notas, o todos los botones que se describen en esta Ayuda en todo momento.
+Se muestran diferentes elementos en la interfaz de usuario del espacio de trabajo de AEM Forms según el proceso y la tarea en que esté trabajando. Puede ver o no las fichas Resumen, Forms, Detalles, Historial, Anexos o Notas, o todos los botones que se describen en esta Ayuda en todo momento.
 
 Puede desplazarse por la interfaz de usuario principal del espacio de trabajo de AEM Forms mediante cualquiera de los siguientes métodos:
 
@@ -44,37 +47,37 @@ El espacio de trabajo de AEM Forms es una aplicación HTML basada en web y es co
 Para utilizar el espacio de trabajo de AEM Forms con un lector de pantalla, tenga en cuenta estos puntos:
 
 * El espacio de trabajo de AEM Forms es una aplicación HTML estándar que cumple con cualquier herramienta de lectura de pantalla estándar. No necesita ningún script específico para ejecutar una herramienta de lectura de pantalla.
-* Toda la navegación en el espacio de trabajo de AEM Forms se realiza mediante etiquetas delimitadoras, a las que se puede acceder fácilmente mediante fichas.
-* Los formularios pueden tardar unos segundos en cargarse. El lector de pantalla no le informa de forma auditiva de que el formulario se está cargando y de que debe esperar.
+* Toda la navegación en el espacio de trabajo de AEM Forms se realiza mediante etiquetas de anclaje, a las que se puede acceder fácilmente a través de fichas.
+* Forms puede tardar unos segundos en cargarse. El lector de pantalla no le informa de forma auditiva de que el formulario se está cargando y de que debe esperar.
 
-## Navegación por el espacio de trabajo de AEM Forms mediante un teclado {#navigating-html-workspace-using-a-keyboard}
+## Desplazamiento por el espacio de trabajo de AEM Forms mediante un teclado {#navigating-html-workspace-using-a-keyboard}
 
-Al navegar por el espacio de trabajo de AEM Forms mediante un teclado, la navegación se ajusta a las convenciones de accesibilidad HTML. En determinadas situaciones, el orden de tabulación no sigue el orden convencional habitual. Las siguientes sugerencias le ayudan a navegar por la interfaz:
+Cuando navega por el espacio de trabajo de AEM Forms mediante un teclado, la navegación se ajusta a las convenciones de accesibilidad HTML. En determinadas situaciones, el orden de tabulación no sigue el orden convencional habitual. Las siguientes sugerencias le ayudan a navegar por la interfaz:
 
 * Si tiene problemas al desplazarse por las barras de herramientas de la parte superior del explorador, pulse Ctrl+Tab para desplazarse por el contenido de la ventana del explorador.
-* La Ayuda del espacio de trabajo de AEM Forms se abre en una ventana independiente del explorador. Tras la vista de la Ayuda, el enfoque vuelve a la ventana del navegador que contiene el espacio de trabajo de AEM Forms. El menú Ayuda permanece enfocado cuando vuelve el enfoque.
+* La Ayuda del espacio de trabajo de AEM Forms se abre en una ventana separada del explorador. Tras la vista de la Ayuda, el enfoque vuelve a la ventana del explorador que contiene el espacio de trabajo de AEM Forms. El menú Ayuda permanece enfocado cuando vuelve el enfoque.
 * Al abrir un formulario para inicio de un proceso o completar una tarea, el enfoque permanece en el elemento existente y no cambia al formulario. Utilice la ficha para mover el enfoque al formulario y navegar por él. El orden de tabulación a través del formulario depende del tipo y el diseño del formulario.
 
-   En el caso de los formularios PDF, cuando se desplaza el cursor hasta el final del formulario o se envía el formulario, el cursor se desplaza a la barra de direcciones del explorador. Para ir a los botones de acción del formulario, como Guardar como borrador y Completar, debe volver a desplazarse por los menús mediante el tabulador (pero no por todo el formulario). Si el formulario sigue abierto, también puede tabular más allá de los botones y volver al formulario.
+   Para los PDF forms, cuando se desplaza el cursor hasta el final del formulario o se envía el formulario, el cursor se desplaza a la barra de direcciones del explorador. Para ir a los botones de acción del formulario, como Guardar como borrador y Completar, debe volver a desplazarse por los menús mediante el tabulador (pero no por todo el formulario). Si el formulario sigue abierto, también puede tabular más allá de los botones y volver al formulario.
 
 ## Administración de preferencias {#managing-preferences}
 
 Puede definir las distintas preferencias del espacio de trabajo de AEM Forms en las siguientes categorías:
 
-**Fuera de la oficina:** Configure las preferencias para controlar cómo se asignan las tareas a otras personas mientras se encuentra fuera de la oficina. Consulte [Configuración de las preferencias](todo-lists.md#setting-out-of-office-preferences)fuera de la oficina.
+**Fuera de la oficina:** defina las preferencias para controlar cómo se asignan las tareas a otras personas mientras se encuentra fuera de la oficina. Consulte [Configuración de preferencias fuera de la oficina](todo-lists.md#setting-out-of-office-preferences).
 
-**Colas:** Defina las preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Uso de tareas de colas](todo-lists.md#working-with-tasks-from-group-and-shared-queues)compartidas y de grupos.
+**Colas:** defina las preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Trabajo con tareas de grupos y colas compartidas](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Configuración de la interfaz de usuario:** Defina las preferencias para la forma en que interactúa con el espacio de trabajo de AEM Forms. Consulte [Configuración de las preferencias](#set-user-interface-preferences)de la interfaz de usuario.
+**Configuración de interfaz de usuario:** defina las preferencias para la forma en que interactúa con el espacio de trabajo de AEM Forms. Consulte [Configuración de las preferencias de la interfaz de usuario](#set-user-interface-preferences).
 
-### Configuración de las preferencias de la interfaz de usuario {#set-user-interface-preferences}
+### Establecer las preferencias de la interfaz de usuario {#set-user-interface-preferences}
 
 Defina las preferencias de la interfaz de usuario en la ficha Preferencias > Configuración de la interfaz de usuario. Están disponibles las siguientes preferencias.
 
-* **Ubicación del Inicio:** Especifica la página que aparece al iniciar sesión en el espacio de trabajo de AEM Forms. Las cuatro opciones disponibles son Proceso de Inicio, Tareas pendientes, Seguimiento y Favoritos.
-* **Mensaje de cierre de sesión:** Especifica si se le solicita que confirme que desea cerrar la sesión después de hacer clic en Cerrar sesión.
-* **Formato de fecha:** Especifica el formato de visualización de fecha utilizado en el espacio de trabajo de AEM Forms.
+* **Ubicación de inicio:** especifica la página que aparece al iniciar sesión en el espacio de trabajo de AEM Forms. Las cuatro opciones disponibles son Proceso de Inicio, Tareas pendientes, Seguimiento y Favoritos.
+* **Mensaje de cierre de sesión:** especifica si se le solicita que confirme que desea cerrar la sesión después de hacer clic en Cerrar sesión.
+* **Formato de fecha:** especifica el formato de visualización de fecha utilizado en el espacio de trabajo de AEM Forms.
 * **Formato** de hora: Especifica el formato de visualización de tiempo utilizado en el espacio de trabajo de AEM Forms.
-* **Notificar Eventos de Tarea por correo electrónico:** Especifica si recibe notificaciones por correo electrónico para eventos de tarea, incluidas asignaciones de tarea, recordatorios y plazos para tareas en la lista de tareas pendientes y en listas de trabajo de grupo a las que pertenece.
-* **Adjuntar formularios en correo electrónico:** Especifica si se adjunta una copia del formulario a los mensajes de notificación por correo electrónico. Los archivos adjuntos solo se admiten para formularios PDF y XDP.
-* **Guardar borrador periódicamente:** Especifica si los borradores de formulario se guardan automáticamente de forma periódica o no. Para guardar los borradores periódicamente, habilite esta opción y defina la duración del guardado automático de 1 a 30 minutos. Cuando el guardado automático está activado y un usuario está trabajando en un borrador, el borrador se guarda periódicamente después del número especificado de minutos. El borrador se guarda automáticamente solo cuando se produce un cambio en el borrador desde la última vez que se guarda o se guarda automáticamente. Cuando se guarda el borrador, aparece un mensaje de alerta en la pantalla.
+* **Notificar Eventos de Tarea por correo electrónico:** especifica si recibe notificaciones por correo electrónico de eventos de tarea, incluidas asignaciones de tarea, recordatorios y plazos para tareas en la lista de tareas pendientes y en listas de tareas pendientes de grupo a las que pertenece.
+* **Adjuntar Forms en correo electrónico:** especifica si una copia del formulario está adjunta a los mensajes de notificación por correo electrónico. Los archivos adjuntos solo se admiten para formularios PDF y XDP.
+* **Guardar borrador periódicamente:** especifica si los borradores de formulario se guardan automáticamente de forma periódica o no. Para guardar los borradores periódicamente, habilite esta opción y defina la duración del guardado automático de 1 a 30 minutos. Cuando el guardado automático está activado y un usuario está trabajando en un borrador, el borrador se guarda periódicamente después del número especificado de minutos. El borrador se guarda automáticamente solo cuando se produce un cambio en el borrador desde la última vez que se guarda o se guarda automáticamente. Cuando se guarda el borrador, aparece un mensaje de alerta en la pantalla.
