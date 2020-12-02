@@ -21,34 +21,35 @@ ht-degree: 1%
 
 ## Información general de muestra {#sample-overview}
 
-Los borradores del portal de AEM Forms y el componente de envíos permiten a los usuarios guardar sus formularios como borradores y enviarlos más tarde desde cualquier dispositivo. Además, los usuarios pueden vista los formularios enviados en el portal. Para habilitar esta funcionalidad, AEM Forms proporciona servicios de datos y metadatos para almacenar los datos rellenados por un usuario en el formulario y los metadatos del formulario asociados a borradores y formularios enviados. De forma predeterminada, estos datos se almacenan en el repositorio de CRX. Sin embargo, como los usuarios interactúan con los formularios a través de la instancia de publicación de AEM, que generalmente está fuera del servidor de seguridad de la empresa, es posible que las organizaciones deseen personalizar el almacenamiento de datos para que sea más seguro y fiable.
+Los borradores y el componente de envíos del portal de AEM Forms permiten a los usuarios guardar los formularios como borradores y enviarlos posteriormente desde cualquier dispositivo. Además, los usuarios pueden vista los formularios enviados en el portal. Para habilitar esta funcionalidad, AEM Forms proporciona servicios de datos y metadatos para almacenar los datos rellenados por un usuario en el formulario y los metadatos del formulario asociados con borradores y formularios enviados. De forma predeterminada, estos datos se almacenan en el repositorio de CRX. Sin embargo, a medida que los usuarios interactúan con los formularios a través de AEM instancia de publicación, que generalmente está fuera del servidor de seguridad de la empresa, es posible que las organizaciones deseen personalizar el almacenamiento de datos para que sea más seguro y fiable.
 
 La muestra, analizada en este documento, es una implementación de referencia de servicios personalizados de metadatos y datos para integrar borradores y componentes de envíos con una base de datos. La base de datos utilizada en la implementación de muestra es **MySQL 5.6.24**. Sin embargo, puede integrar el componente de borradores y envíos con cualquier base de datos que desee.
 
 >[!NOTE]
 >
 >* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos apropiadamente por su sistema de base de datos.
->* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo Versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
->* El paquete de ejemplo solo funciona con acciones de envío de formularios adaptables.
+>* Asegúrese de que ha instalado la versión más reciente del paquete de complementos de AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo [AEM Forms releases](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
+>* El paquete de muestra solo funciona con acciones de envío de Forms adaptable.
 
 
-## Configurar y configurar el ejemplo {#set-up-and-configure-the-sample}
+## Configure y configure el ejemplo {#set-up-and-configure-the-sample}
 
 Realice los siguientes pasos, en todas las instancias de creación y publicación, para instalar y configurar el ejemplo:
 
-1. Descargue el siguiente paquete **aem-fp-db-integration-sample-pkg-6.1.2.zip** en el sistema de archivos.
+1. Descargue el siguiente paquete **aem-fp-db-integration-sample-pkg-6.1.2.zip** en su sistema de archivos.
 
    Paquete de muestra para la integración de bases de datos
 
    [Obtener archivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Vaya al administrador de paquetes de AEM en https://[*host*]:[*port*]/crx/packmgr/.
+1. Vaya a AEM administrador de paquetes en https://[*host*]:[*puerto*]/crx/packmgr/.
 1. Haga clic en **[!UICONTROL Cargar paquete]**.
 
 1. Busque y seleccione el paquete **aem-fp-db-integration-sample-pkg-6.1.2.zip** y haga clic en **[!UICONTROL Aceptar]**.
 1. Haga clic en **[!UICONTROL Instalar]** al lado del paquete para instalar el paquete.
-1. Vaya a la **[!UICONTROL página de configuración]** de la consola web de [*AEM en https://*] host [*:*] port/system/console/configMgr.
-1. Haga clic para abrir el borrador del portal de **[!UICONTROL formularios y la configuración]** de envío en modo de edición.
+1. Vaya a **[!UICONTROL Configuración de la consola web de AEM]**
+página en https://[*host*]:[*puerto*]/system/console/configMgr.
+1. Haga clic para abrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** en modo de edición.
 
 1. Especifique los valores de las propiedades como se describe en la tabla siguiente:
 
@@ -63,7 +64,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
 
    >[!NOTE]
    >
-   >Los servicios se resuelven con los nombres mencionados como valor para la `aem.formsportal.impl.prop` clave de la siguiente manera:
+   >Los servicios se resuelven con sus nombres mencionados como valor para la clave `aem.formsportal.impl.prop` de la siguiente manera:
 
    ```java
    @Service(value = {SubmitDataService.class, DraftDataService.class})
@@ -76,11 +77,11 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
 
    Para proporcionar un nombre diferente para la tabla de metadatos:
 
-   * En Configuración de consola web, busque y haga clic en Implementación de muestra del servicio de metadatos de Forms Portal. Puede cambiar los valores del origen de datos, los metadatos o el nombre de tabla de metadatos adicional.
+   * En Configuración de la consola web, busque y haga clic en Implementación de muestra del servicio de metadatos de Forms Portal. Puede cambiar los valores del origen de datos, los metadatos o el nombre de tabla de metadatos adicional.
 
    Para proporcionar un nombre diferente para la tabla de datos:
 
-   * En Configuración de la consola web, busque y haga clic en Implementación de muestra del servicio de datos de Forms Portal. Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
+   * En Configuración de la consola web, busque y haga clic en Implementación de muestra del servicio de datos del portal de Forms. Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
    >[!NOTE]
    >
    >Si cambia los nombres de tabla, indíquelos en la configuración de Form Portal.
@@ -98,7 +99,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
   </tr>
   <tr>
    <td>Nombre del origen de datos</td>
-   <td><p>Nombre de fuente de datos para filtrar controladores del grupo de fuentes de datos</p> <p><strong>Nota: </strong><em>La implementación de ejemplo utiliza FormsPortal como nombre del origen de datos.</em></p> </td>
+   <td><p>Nombre de fuente de datos para filtrar controladores del grupo de fuentes de datos</p> <p><strong>Nota:  </strong><em>La implementación de ejemplo utiliza FormsPortal como nombre del origen de datos.</em></p> </td>
   </tr>
   <tr>
    <td>Clase de controlador JDBC</td>
@@ -106,7 +107,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
   </tr>
   <tr>
    <td>URI de conexión JDBC<br /> </td>
-   <td>jdbc:mysql://[<em>host</em>]:[<em>puerto</em>]/[nombre_<em>esquema</em>]</td>
+   <td>jdbc:mysql://[<em>host</em>]:[<em>puerto</em>]/[<em>nombre_esquema</em>]</td>
   </tr>
   <tr>
    <td>Nombre de usuario</td>
@@ -308,15 +309,15 @@ La implementación de muestra ya está configurada, que puede utilizar para list
 
 Realice los siguientes pasos, en todas las instancias de creación y publicación, para instalar el archivo mysql-Connector-java-5.1.39-bin.jar:
 
-1. Busque `https://'[server]:[port]'/system/console/depfinder` y busque el paquete com.mysql.jdbc.
+1. Vaya a `https://'[server]:[port]'/system/console/depfinder` y busque el paquete com.mysql.jdbc.
 1. En la columna Exportado por, compruebe si el paquete lo exporta cualquier paquete.
 
    Proceda si el paquete no se exporta mediante ningún paquete.
 
 1. Vaya a `https://'[server]:[port]'/system/console/bundles` y haga clic en **[!UICONTROL Instalar/Actualizar]**.
-1. Haga clic en **[!UICONTROL Elegir archivo]** y busque para seleccionar el archivo mysql-Connector-java-5.1.39-bin.jar. Además, seleccione las casillas de verificación Paquete de **[!UICONTROL Inicio]** y **[!UICONTROL Actualizar paquetes]** .
+1. Haga clic en **[!UICONTROL Elija Archivo]** y busque para seleccionar el archivo mysql-Connector-java-5.1.39-bin.jar. Además, seleccione las casillas **[!UICONTROL Paquete de Inicio]** y **[!UICONTROL Actualizar paquetes]**.
 1. Haga clic en **[!UICONTROL Instalar o Actualizar]**. Una vez finalizado, reinicie el servidor.
-1. (Solo *Windows*) Desactive el cortafuegos del sistema para su sistema operativo.
+1. (*Solo Windows*) Desactive el cortafuegos del sistema para su sistema operativo.
 
 ## Código de ejemplo para el servicio de metadatos y datos del portal de formularios {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -324,11 +325,11 @@ El siguiente zip contiene `FormsPortalSampleDataServiceImpl` y `FormsPortalSampl
 
 [Obtener archivo](assets/sample_package.zip)
 
-## Verificar la longitud del nombre del archivo  {#verify-length-of-the-file-name}
+## Verificar la longitud del nombre de archivo {#verify-length-of-the-file-name}
 
 La implementación de la base de datos de Forms Portal utiliza una tabla de metadatos adicional. La tabla tiene una clave principal compuesta basada en las columnas Clave e ID de la tabla. MySQL permite claves primarias de hasta 255 caracteres. Puede utilizar la siguiente secuencia de comandos de validación del lado del cliente para comprobar la longitud del nombre de archivo adjunto al widget de archivo. La validación se ejecuta cuando se adjunta un archivo. La secuencia de comandos proporcionada en el siguiente procedimiento muestra un mensaje cuando el nombre del archivo es mayor que 150 (incluida la extensión). Puede modificar la secuencia de comandos para comprobar si hay un número diferente de caracteres.
 
-Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/clientlibs.md) de cliente y utilizar la secuencia de comandos:
+Siga los pasos siguientes para crear [una biblioteca de cliente](/help/sites-developing/clientlibs.md) y utilizar la secuencia de comandos:
 
 1. Inicie sesión en CRXDE y vaya a /etc/clientlibs/
 1. Cree un nodo de tipo **cq:ClientLibraryFolder** y proporcione el nombre del nodo. Por ejemplo, `validation`.
@@ -342,9 +343,9 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
     util.js
    ```
 
-   En el código anterior, `util` es el nombre de la carpeta y el `util.js` nombre del archivo en la `util` carpeta. La `util` carpeta y el `util.js` archivo se crean en los pasos siguientes.
+   En el código anterior, `util` es el nombre de la carpeta y `util.js` el nombre del archivo en la carpeta `util`. La carpeta `util` y el archivo `util.js` se crean en los pasos siguientes.
 
-1. Haga clic con el botón derecho en el nodo creado en el paso 2 y seleccione Crear > Crear carpeta. `cq:ClientLibraryFolder` Cree una carpeta con el nombre `util`. Haga clic en **[!UICONTROL Guardar todo]**. Haga clic con el botón derecho en la `util` carpeta y seleccione Crear > Crear archivo. Cree un archivo llamado `util.js`. Haga clic en **[!UICONTROL Guardar todo]**.
+1. Haga clic con el botón derecho en el nodo `cq:ClientLibraryFolder` creado en el paso 2, seleccione Crear > Crear carpeta. Cree una carpeta con el nombre `util`. Haga clic en **[!UICONTROL Guardar todo]**. Haga clic con el botón derecho en la carpeta `util` y seleccione Crear > Crear archivo. Cree un archivo denominado `util.js`. Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Añada el siguiente código al archivo util.js y haga clic en **[!UICONTROL Guardar todo]**. El código valida la longitud del nombre del archivo.
 
@@ -403,7 +404,7 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
    >
    >La secuencia de comandos está diseñada para el componente del widget de datos adjuntos (OOTB) listo para usar. Si ha personalizado la utilidad de datos adjuntos OOTB, cambie la secuencia de comandos anterior para incorporar los cambios correspondientes.
 
-1. Añada la siguiente propiedad en la carpeta creada en el paso 2 y haga clic en **[!UICONTROL Guardar todo]**.
+1. Añada la siguiente propiedad a la carpeta creada en el paso 2 y haga clic en **[!UICONTROL Guardar todo]**.
 
    * **[!UICONTROL Nombre:]** categorías
 
@@ -411,11 +412,11 @@ Siga los pasos siguientes para crear [una biblioteca](/help/sites-developing/cli
 
    * **[!UICONTROL Valor:]** fp.validation
 
-   * **[!UICONTROL opción múltiple:]** Habilitado
+   * **[!UICONTROL opción múltiple:]** activado
 
-1. Vaya a la propiedad embed `/libs/fd/af/runtime/clientlibs/guideRuntime`y anexe el `fp.validation` valor.
+1. Vaya a `/libs/fd/af/runtime/clientlibs/guideRuntime`y anexe el valor `fp.validation` a la propiedad embed.
 
-1. Vaya a /libs/fd/af/Runtime/clientlibs/guideRuntimeWithXFA y anexe el `fp.validation` valor a la propiedad embed.
+1. Vaya a /libs/fd/af/Runtime/clientlibs/guideRuntimeWithXFA y anexe el valor `fp.validation` a la propiedad embed.
 
    >[!NOTE]
    >
