@@ -27,19 +27,19 @@ A partir de AEM Communities 6.1, el contenido generado por el usuario (UGC) se a
 
 A diferencia de las versiones anteriores, no existe una replicación inversa/avanzada de UGC en AEM instancias. En su lugar, el SRP hace que UGC sea directamente accesible para crear, leer, actualizar y eliminar operaciones (CRUD) desde todas las instancias de creación y publicación, con una excepción para JSRP.
 
-A continuación se detallan las [características de cada opción](#characteristics-of-srp-options)de SRP, que es una información crucial para el proceso de decisión al elegir el SRP apropiado y la implementación [](/help/communities/topologies.md)subyacente.
+A continuación se detallan las [características de cada opción de SRP](#characteristics-of-srp-options), que es información crucial para el proceso de decisión al elegir el SRP apropiado y la [implementación subyacente](/help/communities/topologies.md).
 
-Para obtener más información sobre el uso de SRP para UGC, consulte Información general sobre el proveedor de recursos de [Almacenamiento](/help/communities/srp.md).
+Para obtener más información sobre el uso de SRP para UGC, consulte [Información general del proveedor de recursos de Almacenamiento](/help/communities/srp.md).
 
 >[!NOTE]
 >
->SRP se aplica solamente al contenido de la comunidad. No afecta al lugar donde se almacena el contenido del sitio (almacén[de](/help/sites-deploying/data-store-config.md)nodos) y no afecta a la gestión segura del registro de usuarios, perfiles de usuarios y grupos de usuarios entre instancias de AEM (consulte también [Administración de datos](#managing-user-data)de usuario).
+>SRP se aplica solamente al contenido de la comunidad. No afecta al lugar donde se almacena el contenido del sitio ([almacén de nodos](/help/sites-deploying/data-store-config.md)) y no afecta a la administración segura del registro de usuarios, perfiles de usuarios y grupos de usuarios entre instancias de AEM (consulte también [Administración de datos de usuario](#managing-user-data)).
 
 >[!CAUTION]
 >
 >A partir de AEM 6.1, [UGC nunca se replica](#ugc-never-replicated).
 >
->Cuando la implementación no incluye un almacén común, como la topología [JSRP](/help/communities/topologies.md#jsrp) predeterminada, UGC solo estará visible en la instancia de publicación o autor AEM en la que se introdujo. Solo si la topología incluye un clúster de publicación, el UGC estará visible en cualquier instancia de publicación.
+>Cuando la implementación no incluye un almacén común, como la topología predeterminada [JSRP](/help/communities/topologies.md#jsrp), UGC solo estará visible en la instancia de publicación o autor AEM en la que se introdujo. Solo si la topología incluye un clúster de publicación, el UGC estará visible en cualquier instancia de publicación.
 
 ## Características de las opciones de SRP {#characteristics-of-srp-options}
 
@@ -107,7 +107,7 @@ JSRP:
 
 ## Configuración de SRP {#configuring-srp}
 
-La especificación de la opción de almacenamiento predeterminada, basada en la implementación subyacente, se realiza a través de la consola [Configuración de](/help/communities/srp-config.md)Almacenamiento.
+La especificación de la opción de almacenamiento predeterminada, basada en la implementación subyacente, se realiza a través de la [consola de configuración de Almacenamiento](/help/communities/srp-config.md).
 
 Para obtener detalles de configuración de cada opción, consulte:
 
@@ -132,11 +132,11 @@ Mientras que el contenido del sitio se replica, el UGC nunca se replica.
 
 ### Administración de datos de usuario {#managing-user-data}
 
-También son de interés para CommunitiesIes [*los usuarios*, los grupos *de* usuarios y los perfiles *de*](/help/communities/users.md) usuarios. Estos datos relacionados con el usuario, cuando se crean y actualizan en el entorno de publicación, deben estar disponibles para otras instancias de publicación cuando la topología es un conjunto de [publicaciones](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+También son de interés para CommunitiesIes [*usuarios*, *grupos de usuarios* y *perfiles de usuarios*](/help/communities/users.md). Estos datos relacionados con el usuario, cuando se crean y actualizan en el entorno de publicación, deben estar disponibles para otras instancias de publicación cuando la topología es un [conjunto de servidores de publicación](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
-A partir de AEM Communities 6.1, los datos relacionados con el usuario se sincronizan mediante la distribución Sling en lugar de la replicación. Para obtener más información, visite Sincronización [de usuarios](/help/communities/sync.md).
+A partir de AEM Communities 6.1, los datos relacionados con el usuario se sincronizan mediante la distribución Sling en lugar de la replicación. Para obtener más información, visite [Sincronización de usuarios](/help/communities/sync.md).
 
-### Upgrading to AEM Communities 6.5 {#upgrading-to-aem-communities}
+### Actualización a AEM Communities 6.5 {#upgrading-to-aem-communities}
 
 Al actualizar a AEM comunidades 6.5, si es necesario conservar los UGC preexistentes, se deben tomar medidas en función de si la comunidad AEM 5.6.1 o AEM 6.0 ha utilizado almacenamientos de Adobe a petición o almacenamiento local de UGC.
 
