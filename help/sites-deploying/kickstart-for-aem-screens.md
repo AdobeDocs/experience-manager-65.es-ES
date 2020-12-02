@@ -10,6 +10,9 @@ noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/screens/using/kickstart-for-aem-screens
 translation-type: tm+mt
 source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+workflow-type: tm+mt
+source-wordcount: '11'
+ht-degree: 18%
 
 ---
 
