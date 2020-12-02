@@ -107,9 +107,9 @@ Si una página es parte de uno o varios [flujos de trabajo](/help/sites-authorin
 
 La notificación indica el flujo de trabajo que se está ejecutando con la página. Si el usuario participa en el paso actual del flujo de trabajo, también dispondrá de opciones para [afectar al estado del flujo de trabajo](/help/sites-authoring/workflows-participating.md) y obtener más información sobre el mismo, como por ejemplo:
 
-* **Completar** : abre el cuadro de diálogo **Completar elemento** de trabajo
+* **Completar** : abre el cuadro de diálogo  **Completar** elemento de trabajo
 
-* **Delegar** : abre el cuadro de diálogo **Completar elemento** de trabajo
+* **Delegado** : abre el cuadro de diálogo  **Completar** elemento de trabajo
 
 * **Ver detalles**: abre la ventana **Detalles** del flujo de trabajo.
 
@@ -312,7 +312,7 @@ Hay dos métodos para añadir y/o editar contenido en los componentes:
 * Abra el [cuadro de diálogo del componente para editarlo](#component-edit-dialog).
 * [Arrastre y coloque un recurso](#draganddropintocomponent) desde el navegador de recursos para agregar contenido directamente.
 
-### Cuadro de diálogo de edición de contenido   {#component-edit-dialog}
+### Cuadro de diálogo de edición de contenido    {#component-edit-dialog}
 
 Puede abrir un componente para editar su contenido mediante el icono de [edición (lápiz) de la barra de herramientas de componentes](#edit-configure-copy-cut-delete-paste).
 
@@ -355,7 +355,7 @@ Para tipos de componente específicos puede arrastrar y colocar recursos del nav
 | Vídeo | Flash |
 | Fragmento de contenido | Fragmento de contenido |
 
-## Editar (contenido) en modo de pantalla completa {#edit-content-full-screen-mode}
+## Editar (contenido) en modo de pantalla completa  {#edit-content-full-screen-mode}
 
 Se puede acceder y salir del modo de pantalla completa de todos los componentes con la siguiente opción:
 
@@ -454,11 +454,11 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
 
 Si la página se basa en una [plantilla editable](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar fácilmente al [editor de plantillas](/help/sites-authoring/templates.md#editing-templates-template-authors) seleccionando **Editar plantilla** en el [menú Información de página](/help/sites-authoring/author-environment-tools.md#page-information).
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+Si la página se basa en una [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar al [modo de diseño](/help/sites-authoring/default-components-designmode.md) mediante el [selector de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) de la barra de herramientas para habilitar o deshabilitar los componentes que se usarán en la página.
 
 Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-authoring/basic-handling.md#column-view) o en la [vista Lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Estado de Live Copy   {#live-copy-status}
+## Estado de Live Copy    {#live-copy-status}
 
 El [modo de la página de estado de Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) le permite echar un vistazo al estado de la Live Copy y ver los componentes que se han heredado o no:
 
@@ -473,7 +473,7 @@ Por ejemplo:
 
 [Las anotaciones](/help/sites-authoring/annotations.md) permiten que los revisores y otros autores hagan comentarios sobre el contenido. A menudo se utilizan para revisiones y validaciones.
 
-## Previsualizar páginas   {#previewing-pages}
+## Previsualizar páginas    {#previewing-pages}
 
 Existen dos métodos para visualizar la vista previa de una página:
 
@@ -511,7 +511,7 @@ Al crear proyectos, el modo de vista previa está disponible mediante el icono s
 
 La opción **Ver tal y como aparece publicado** se muestra disponible en el menú [Información de página](/help/sites-authoring/author-environment-tools.md#page-information). Esta opción abre la página en una nueva pestaña, actualiza el contenido y muestra la página exactamente como aparecerá en el entorno de publicación.
 
-## Bloquear una página   {#locking-a-page}
+## Bloquear una página    {#locking-a-page}
 
 AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esta función es útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
 
@@ -561,9 +561,9 @@ Los iconos siguientes le permiten deshacer o rehacer una acción. Se muestran en
 
 >[!NOTE]
 >
->The [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` is also availalbe to undo page edit actions.
+>El [método abreviado de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` también está disponible para deshacer las acciones de edición de página.
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>El método abreviado de teclado `Ctrl-Y` también está disponible para rehacer acciones de edición de página.
 
 >[!NOTE]
 >
