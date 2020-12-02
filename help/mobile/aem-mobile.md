@@ -1,8 +1,8 @@
 ---
-title: On-Demand de AEM Mobile
-seo-title: On-Demand de AEM Mobile
-description: Siga esta página para empezar a administrar la aplicación de servicios bajo demanda de AEM Mobile. Ofrece una descripción general de las funciones y responsabilidades de un administrador de AEM para los servicios bajo demanda.
-seo-description: Siga esta página para empezar a administrar la aplicación de servicios bajo demanda de AEM Mobile. Ofrece una descripción general de las funciones y responsabilidades de un administrador de AEM para los servicios bajo demanda.
+title: AEM Mobile On-Demand
+seo-title: AEM Mobile On-Demand
+description: Siga esta página para empezar a administrar AEM aplicación de servicios bajo demanda móvil. Proporciona una visión general de las funciones y responsabilidades de un administrador de AEM para los servicios bajo demanda.
+seo-description: Siga esta página para empezar a administrar AEM aplicación de servicios bajo demanda móvil. Proporciona una visión general de las funciones y responsabilidades de un administrador de AEM para los servicios bajo demanda.
 uuid: fd99c032-287a-489b-9690-b18980c55c29
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,11 +11,14 @@ topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 2%
 
 ---
 
 
-# On-Demand de AEM Mobile {#aem-mobile-on-demand}
+# AEM Mobile On-Demand {#aem-mobile-on-demand}
 
 >[!NOTE]
 >
@@ -23,7 +26,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Si no utiliza AEM como fuente de administración de contenido, consulte la Ayuda [de On-Demand Services de](https://helpx.adobe.com/digital-publishing-solution/topics.html)AEM Mobile.
+>Si no utiliza AEM como fuente de gestor de contenido, consulte [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Administrador de AEM {#aem-administrator}
 
@@ -31,30 +34,30 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >**Requisitos previos:**
 >
->Antes de empezar a configurar el entorno para los servicios bajo demanda de AEM Mobile, consulte el panel de aplicaciones de [AEM Mobile o el Centro](/help/mobile/mobile-apps-ondemand-application-dashboard.md)de control.
+>Antes de empezar a configurar el entorno para AEM Mobile On-demand Services, consulte [Panel de aplicaciones de AEM Mobile o el Centro de control](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un administrador ***de*** AEM es responsable de añadir una nueva aplicación al catálogo de AEM Mobile, ya sea creando una aplicación nueva con el asistente para la creación o importando una existente. Los administradores de AEM que crean una aplicación nueva mediante el asistente *de* creación de AEM Mobile suelen seleccionar una de las plantillas de aplicación deseadas, ya sea de nuestros ejemplos de referencia predeterminados o, en la mayoría de los casos, de una plantilla de aplicación personalizada creada por los desarrolladores de *AEM.*
+Un ***administrador de AEM*** es responsable de agregar una nueva aplicación al catálogo de AEM Mobile, ya sea creando una aplicación nueva mediante el asistente de creación o importando una aplicación existente. Los administradores de AEM que crean una aplicación nueva mediante el *asistente para la creación* de AEM Mobile suelen seleccionar una de las plantillas de aplicación deseadas, ya sea de nuestros ejemplos de referencia predeterminados o (en la mayoría de los casos) de una plantilla de aplicación personalizada creada por *desarrolladores de AEM.*
 
 >[!NOTE]
 >
->Para obtener más información sobre la configuración de los grupos y permisos de AEM, haga clic en [Creación de funciones de usuario y concesión de acceso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda en línea.
+>Para obtener más información sobre la configuración de grupos y permisos de AEM, haga clic en [Creación de roles de usuario y concesión de acceso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda en línea.
 
-Un administrador de AEM es responsable de las siguientes tareas al crear una aplicación mediante los servicios bajo demanda de AEM Mobile:
+Un administrador de AEM es responsable de las siguientes tareas al crear una aplicación mediante AEM Mobile On-demand Services:
 
 * [Configuración de AEM Mobile](/help/mobile/aem-mobile-setup.md), que cubre
 
    * AEM Mobile Provisioning
    * Creación de proyectos para AEM Mobile
    * Configuración de un conector de AEM Mobile
-   * Adición de funciones de usuario de AEM Mobile y asignación de permisos
+   * Añadir funciones de usuario de AEM Mobile y asignar permisos
 
 * [Configuración de los grupos de usuarios y usuarios](/help/mobile/aem-mobile-configure-users.md)
 * [Vista previa con verificación previa](/help/mobile/aem-mobile-manage-ondemand-services.md)
 * [Administración de servicios de contenido](//help/mobile/developing-content-services.md)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionales {#additional-resources}
 
-Para obtener más información sobre las otras dos funciones y responsabilidades para crear una aplicación de servicios bajo demanda de AEM Mobile, consulte los siguientes recursos:
+Para obtener más información sobre las otras dos funciones y responsabilidades para crear una aplicación de AEM Mobile On-demand Services, consulte los siguientes recursos:
 
-* [Desarrollo de contenido de AEM para los servicios bajo demanda de AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Creación de contenido de AEM para la aplicación de servicios bajo demanda de AEM Mobile](/help/mobile/mobile-apps-ondemand.md)
+* [Desarrollo de contenido AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Creación de contenido AEM para la aplicación AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
