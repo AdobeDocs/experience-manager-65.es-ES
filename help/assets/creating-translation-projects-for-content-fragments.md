@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Creación de proyectos de traducción para fragmentos de contenido {#creating-translation-projects-for-content-fragments}
 
-Además de los recursos, Adobe Experience Manager (AEM) Assets admite flujos de trabajo de copia de idioma para los fragmentos [de](/help/assets/content-fragments/content-fragments.md) contenido (incluidas las variaciones). No se requiere optimización adicional para ejecutar flujos de trabajo de copia de idioma en fragmentos de contenido. En cada flujo de trabajo, se envía todo el fragmento de contenido para su traducción.
+Además de los recursos, Adobe Experience Manager (AEM) Assets admite flujos de trabajo de copia de idioma para [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) (incluidas las variaciones). No se requiere optimización adicional para ejecutar flujos de trabajo de copia de idioma en fragmentos de contenido. En cada flujo de trabajo, se envía todo el fragmento de contenido para su traducción.
 
 Los tipos de flujos de trabajo que se pueden ejecutar en fragmentos de contenido son exactamente similares a los tipos de flujo de trabajo que se ejecutan para los recursos. Además, las opciones disponibles en cada tipo de flujo de trabajo coinciden con las opciones disponibles en los tipos de flujos de trabajo correspondientes para los recursos.
 
@@ -34,13 +34,13 @@ En este flujo de trabajo, los fragmentos de contenido que se van a traducir se c
 
 Cuando se actualiza o modifica el fragmento de contenido de origen, el fragmento de contenido específico de configuración regional/idioma correspondiente requiere una retraducción. El flujo de trabajo de copia del idioma de actualización traduce un grupo adicional de fragmentos de contenido y lo incluye en una copia del idioma para una configuración regional concreta. En este caso, los fragmentos de contenido traducido se agregan a la carpeta de destinatario que ya contiene fragmentos de contenido previamente traducidos.
 
-## Crear y traducir flujos de trabajo {#create-and-translate-workflow}
+## Crear y traducir flujo de trabajo {#create-and-translate-workflow}
 
 El flujo de trabajo Crear y traducir incluye las siguientes opciones. Los pasos de procedimiento asociados con cada opción son similares a los asociados con la opción correspondiente para los activos.
 
 * Crear solamente estructura: Para ver los pasos del procedimiento, consulte [Crear estructura solo para recursos](translation-projects.md#create-structure-only).
 * Cree un nuevo proyecto de traducción: Para ver los pasos del procedimiento, consulte [Creación de un nuevo proyecto de traducción para recursos](translation-projects.md#create-a-new-translation-project).
-* Añadir al proyecto de traducción existente: Para ver los pasos del procedimiento, consulte [Añadir a un proyecto de traducción existente para los recursos](translation-projects.md#add-to-existing-translation-project).
+* Añadir al proyecto de traducción existente: Para ver los pasos del procedimiento, consulte [Añadir a proyecto de traducción existente para recursos](translation-projects.md#add-to-existing-translation-project).
 
 ## Actualizar flujo de trabajo de copias de idioma {#update-language-copies-workflow}
 
@@ -59,20 +59,20 @@ Si el fragmento de contenido incluye una colección, los recursos de la colecci�
 
 Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero edite el marco de traducción predeterminado para permitir la traducción de recursos en línea y colecciones asociadas con fragmentos de contenido.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Service]**.
-1. Busque Integración **[!UICONTROL de]** traducción en **[!UICONTROL Adobe Marketing Cloud]** y toque o haga clic en **[!UICONTROL Mostrar configuraciones]**.
+1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
+1. Busque **[!UICONTROL Integración de traducción]** en **[!UICONTROL Adobe Marketing Cloud]** y toque o haga clic **[!UICONTROL Mostrar configuraciones]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. En la lista de configuraciones disponibles, toque o haga clic en Configuración **[!UICONTROL predeterminada (Configuración de integración de traducción)]** para abrir la página de configuración **** predeterminada.
+1. En la lista de configuraciones disponibles, toque o haga clic en **[!UICONTROL Configuración predeterminada (configuración de integración de traducción)]** para abrir la página **[!UICONTROL Configuración predeterminada]**.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
-1. Haga clic en **[!UICONTROL Editar]** en la barra de herramientas para mostrar el cuadro de diálogo Configuración **[!UICONTROL de]** traducción.
+1. Haga clic en **[!UICONTROL Editar]** en la barra de herramientas para mostrar el cuadro de diálogo **[!UICONTROL Config. traducción]**.
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Vaya a la ficha **[!UICONTROL Recursos]** y seleccione Recursos de medios **[!UICONTROL en línea y Colecciones]** asociadas en la lista **[!UICONTROL Traducir recursos]** de fragmentos de contenido. Click/tap **[!UICONTROL OK]** to save the changes.
+1. Vaya a la ficha **[!UICONTROL Recursos]** y elija **[!UICONTROL Recursos de medios en línea y colecciones asociadas]** en la lista **[!UICONTROL Traducir recursos de fragmento de contenido]**. Toque o haga clic **[!UICONTROL Aceptar]** para guardar los cambios.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -80,7 +80,7 @@ Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero 
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Insertar recurso]** .
+1. Toque o haga clic en el icono **[!UICONTROL Insertar recurso]**.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -88,44 +88,44 @@ Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero 
 
    ![insertar recurso en el fragmento de contenido](assets/column-view.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Asociar contenido]** .
+1. Toque o haga clic en el icono **[!UICONTROL Asociar contenido]**.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Toque o haga clic en **[!UICONTROL Asociar contenido]**.
+1. Toque o haga clic **[!UICONTROL Asociar contenido]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Seleccione una colección e inclúyala en el fragmento de contenido. Click/tap **[!UICONTROL Save]**.
+1. Seleccione una colección e inclúyala en el fragmento de contenido. Toque o haga clic en **[!UICONTROL Guardar]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Seleccione el fragmento de contenido y toque o haga clic en el icono de **[!UICONTROL GlobalNav]** .
-1. Seleccione **[!UICONTROL Referencias]** en el menú para mostrar el panel **[!UICONTROL Referencias]** .
+1. Seleccione el fragmento de contenido y toque o haga clic en el icono **[!UICONTROL GlobalNav]**.
+1. Seleccione **[!UICONTROL Referencias]** en el menú para mostrar el panel **[!UICONTROL Referencias]**.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Toque o haga clic en **[!UICONTROL Copias]** de idioma en **[!UICONTROL Copias]** para mostrar las copias de idioma.
+1. Toque o haga clic **[!UICONTROL Copias de idioma]** en **[!UICONTROL Copias]** para mostrar las copias de idioma.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Toque o haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior del panel para mostrar el cuadro de diálogo **[!UICONTROL Crear y traducir]** .
+1. Toque o haga clic **[!UICONTROL Crear y traducir]** en la parte inferior del panel para mostrar el cuadro de diálogo **[!UICONTROL Crear y traducir]**.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
-1. Seleccione el idioma del destinatario en la lista Idiomas **[!UICONTROL del]** Destinatario.
+1. Seleccione el idioma del destinatario en la lista **[!UICONTROL Idiomas del Destinatario]**.
 
    ![chlimage_1-457](assets/chlimage_1-457.png)
 
-1. Seleccione el tipo de proyecto de traducción en la lista **[!UICONTROL Proyecto]** .
+1. Seleccione el tipo de proyecto de traducción en la lista **[!UICONTROL Project]**.
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Especifique el título del proyecto en el cuadro Título **[!UICONTROL del]** proyecto y, a continuación, toque o haga clic en **Crear**.
+1. Especifique el título del proyecto en el cuadro **[!UICONTROL Título del proyecto]** y toque o haga clic **Crear**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
-1. Vaya a la consola **[!UICONTROL Proyectos]** y abra la carpeta del proyecto para el proyecto de traducción que ha creado.
+1. Vaya a la consola **[!UICONTROL Projects]** y abra la carpeta del proyecto para el proyecto de traducción que ha creado.
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
@@ -134,7 +134,7 @@ Para poder traducir fragmentos de contenido que incluyen medios mixtos, primero 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
 1. En el mosaico Trabajo de traducción, compruebe el número de recursos que se van a traducir.
-1. En el mosaico Trabajo **[!UICONTROL de]** traducción, inicio el trabajo de traducción.
+1. En el mosaico **[!UICONTROL Trabajo de traducción]**, inicio el trabajo de traducción.
 
    ![chlimage_1-462](assets/chlimage_1-462.png)
 
