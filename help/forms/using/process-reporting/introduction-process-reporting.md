@@ -11,11 +11,14 @@ discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 0%
 
 ---
 
 
-# Introducción al Sistema de informes de procesos{#introduction-to-process-reporting}
+# Introducción a Process Sistema de informes{#introduction-to-process-reporting}
 
 ![proceso-sistema de informes](assets/process-reporting.png)
 
@@ -25,7 +28,7 @@ El Sistema de informes de procesos proporciona un conjunto de informes predeterm
 
 Además, Process Sistema de informes proporciona una interfaz para ejecutar consultas ad hoc e integrar vistas de informes personalizadas en la interfaz de usuario de Process Sistema de informes.
 
-Para obtener la lista de los navegadores admitidos, consulte Plataformas [compatibles con formularios](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
+Para obtener la lista de los exploradores admitidos, consulte [Plataformas admitidas por AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 El Sistema de informes de procesos se basa en módulos que:
 
