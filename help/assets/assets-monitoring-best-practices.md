@@ -1,6 +1,6 @@
 ---
-title: Prácticas recomendadas para [!DNL Assets] supervisar la implementación
-description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la [!DNL Adobe Experience Manager] implementación después de implementarla.
+title: Prácticas recomendadas para monitorear [!DNL Assets] implementación
+description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la implementación [!DNL Adobe Experience Manager] después de implementarla.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
@@ -11,9 +11,9 @@ ht-degree: 1%
 ---
 
 
-# Prácticas recomendadas para supervisar la implementación [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
+# Prácticas recomendadas para monitorear la implementación [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
-Desde el [!DNL Experience Manager Assets] punto de vista de la vigilancia, ésta debe incluir la observación y el sistema de informes de los siguientes procesos y tecnologías:
+Desde el punto de vista [!DNL Experience Manager Assets], la supervisión debe incluir la observación y el sistema de informes de los siguientes procesos y tecnologías:
 
 * CPU del sistema
 * Uso de memoria del sistema
@@ -22,25 +22,25 @@ Desde el [!DNL Experience Manager Assets] punto de vista de la vigilancia, ésta
 * MBeans de JMX para la utilización del montón y procesos asincrónicos, como flujos de trabajo
 * Comprobaciones de estado de la consola OSGi
 
-Generalmente, [!DNL Experience Manager Assets] se puede monitorear de dos maneras: monitoreo en vivo y monitoreo a largo plazo.
+Generalmente, [!DNL Experience Manager Assets] se puede monitorear de dos maneras: monitoreo activo y monitoreo a largo plazo.
 
-## Monitoreo en directo {#live-monitoring}
+## Monitoreo en vivo {#live-monitoring}
 
 Debe realizar un monitoreo en vivo durante la fase de prueba de rendimiento de su desarrollo o durante situaciones de alta carga para comprender las características de rendimiento de su entorno. Normalmente, la supervisión en directo se debe realizar mediante un conjunto de herramientas. Estas son algunas recomendaciones:
 
-* [VM](https://visualvm.github.io/)visual: Visual VM permite la vista de información detallada de Java VM, incluyendo el uso de CPU y de memoria Java. Además, le permite tomar muestras y evaluar el código que se ejecuta en una implementación.
+* [VM](https://visualvm.github.io/) visual: Visual VM permite la vista de información detallada de Java VM, incluyendo el uso de CPU y de memoria Java. Además, le permite tomar muestras y evaluar el código que se ejecuta en una implementación.
 * [Superior](https://man7.org/linux/man-pages/man1/top.1.html): Arriba hay un comando Linux que abre un panel, que muestra las estadísticas de uso, incluyendo el uso de CPU, memoria y E/S. Proporciona información general de alto nivel sobre lo que sucede en una instancia.
-* [Superior](https://hisham.hm/htop/): Htop es un visor de procesos interactivo. Proporciona un uso detallado de la CPU y la memoria además de lo que Top puede proporcionar. Htop puede instalarse en la mayoría de los sistemas Linux usando `yum install htop` o `apt-get install htop`.
+* [Superior](https://hisham.hm/htop/): Htop es un visor de procesos interactivo. Proporciona un uso detallado de la CPU y la memoria además de lo que Top puede proporcionar. Htop puede instalarse en la mayoría de los sistemas Linux utilizando `yum install htop` o `apt-get install htop`.
 
-* Iotop: Iotop es un panel detallado para el uso de E/S de disco. Muestra barras y medidores que representan los procesos que utilizan la E/S de disco y la cantidad que utilizan. Iotop puede instalarse en la mayoría de los sistemas Linux usando `yum install iotop` o `apt-get install iotop`.
+* Iotop: Iotop es un panel detallado para el uso de E/S de disco. Muestra barras y medidores que representan los procesos que utilizan la E/S de disco y la cantidad que utilizan. Iotop puede instalarse en la mayoría de los sistemas Linux utilizando `yum install iotop` o `apt-get install iotop`.
 
-* [Ftop](https://www.ex-parrot.com/pdw/iftop/): Iftop muestra información detallada sobre el uso de Ethernet/red. Iftop muestra las estadísticas de canal de comunicaciones de las entidades que utilizan Ethernet y la cantidad de ancho de banda que utilizan. Si se puede instalar en la mayoría de los sistemas Linux usando `yum install iftop` o `apt-get install iftop`.
+* [Ftop](https://www.ex-parrot.com/pdw/iftop/): Iftop muestra información detallada sobre el uso de Ethernet/red. Iftop muestra las estadísticas de canal de comunicaciones de las entidades que utilizan Ethernet y la cantidad de ancho de banda que utilizan. Si se puede instalar en la mayoría de los sistemas Linux utilizando `yum install iftop` o `apt-get install iftop`.
 
-* Grabador de vuelos Java (JFR): Herramienta comercial de Oracle que puede utilizar libremente en entornos que no sean de producción. Para obtener más información, consulte [Cómo utilizar la grabadora de vuelos Java para diagnosticar problemas](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)de CQ Runtime.
-* [!DNL Experience Manager] `error.log` archivo: Puede investigar el [!DNL Experience Manager] archivo `error.log` para obtener detalles de los errores registrados en el sistema. Utilice el comando `tail -F quickstart/logs/error.log` para identificar los errores que desea investigar.
-* [Consola](/help/sites-administering/workflows.md)de flujo de trabajo: Aproveche la consola de flujo de trabajo para supervisar flujos de trabajo que se quedan atrás o se quedan atascados.
+* Grabador de vuelos Java (JFR): Una herramienta comercial de Oracle que se puede utilizar libremente en entornos que no sean de producción. Para obtener más información, consulte [Cómo utilizar el grabador de vuelos Java para diagnosticar problemas de tiempo de ejecución de CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* [!DNL Experience Manager] `error.log` archivo: Puede investigar el  [!DNL Experience Manager] `error.log` archivo para obtener detalles de los errores registrados en el sistema. Utilice el comando `tail -F quickstart/logs/error.log` para identificar los errores que se deben investigar.
+* [Consola](/help/sites-administering/workflows.md) de flujo de trabajo: Aproveche la consola de flujo de trabajo para supervisar flujos de trabajo que se quedan atrás o se quedan atascados.
 
-Normalmente, estas herramientas se utilizan juntas para obtener una idea completa del rendimiento de la [!DNL Experience Manager] implementación.
+Normalmente, estas herramientas se utilizan juntas para obtener una idea completa del rendimiento de la implementación [!DNL Experience Manager].
 
 >[!NOTE]
 >
@@ -54,13 +54,13 @@ Normalmente, estas herramientas se utilizan juntas para obtener una idea complet
 
 ## Monitoreo a largo plazo {#long-term-monitoring}
 
-La supervisión a largo plazo de una [!DNL Experience Manager] implementación implica la supervisión durante más tiempo de las mismas partes que se supervisan en directo. También incluye la definición de las alertas específicas de su entorno.
+El monitoreo a largo plazo de una implementación [!DNL Experience Manager] implica monitorear durante más tiempo las mismas partes que se monitorean en directo. También incluye la definición de las alertas específicas de su entorno.
 
-### Agregación y sistema de informes de registros {#log-aggregation-and-reporting}
+### Agregación de registros y sistema de informes {#log-aggregation-and-reporting}
 
-Existen varias herramientas disponibles para los registros acumulados, por ejemplo Splunk(TM) y Elastic Search, Logstash y Kabana (ELK). Para evaluar el tiempo de actividad de su [!DNL Experience Manager] implementación, es importante que comprenda los eventos de registro específicos del sistema y cree alertas basadas en ellos. Un buen conocimiento de las prácticas de desarrollo y operaciones puede ayudarle a comprender mejor cómo ajustar el proceso de agregación de registros para generar alertas críticas.
+Existen varias herramientas disponibles para los registros acumulados, por ejemplo Splunk(TM) y Elastic Search, Logstash y Kabana (ELK). Para evaluar el tiempo de actividad de la implementación [!DNL Experience Manager], es importante comprender los eventos de registro específicos del sistema y crear alertas basadas en ellos. Un buen conocimiento de las prácticas de desarrollo y operaciones puede ayudarle a comprender mejor cómo ajustar el proceso de agregación de registros para generar alertas críticas.
 
-### Supervisión de entornos {#environment-monitoring}
+### Monitoreo de entornos {#environment-monitoring}
 
 La supervisión del entorno incluye la supervisión de lo siguiente:
 
@@ -73,17 +73,17 @@ La supervisión del entorno incluye la supervisión de lo siguiente:
 
 Se requieren herramientas externas, como NewRelic(TM) y AppDynamics(TM), para supervisar cada elemento. Mediante estas herramientas, puede definir alertas específicas de su sistema, por ejemplo, alta utilización del sistema, respaldo del flujo de trabajo, errores de comprobación de estado o acceso no autenticado al sitio web. Adobe no recomienda ninguna herramienta en particular sobre otras. Encuentre la herramienta que funciona para usted y aproveche la herramienta para monitorear los elementos analizados.
 
-#### Supervisión interna de aplicaciones {#internal-application-monitoring}
+#### Monitoreo interno de aplicaciones {#internal-application-monitoring}
 
-La supervisión interna de las aplicaciones incluye el monitoreo de los componentes de la aplicación que componen la [!DNL Experience Manager] pila, incluyendo JVM, el repositorio de contenido y el monitoreo a través del código de la aplicación personalizado creado en la plataforma. En general, se realiza a través de los Mbeans JMX que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) y otras. Para sistemas que no admiten una conexión directa con JMX, puede escribir secuencias de comandos de shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que entiendan de forma nativa.
+El monitoreo interno de las aplicaciones incluye el monitoreo de los componentes de la aplicación que conforman la pila [!DNL Experience Manager], incluyendo JVM, el repositorio de contenido y el monitoreo a través del código de la aplicación personalizado creado en la plataforma. En general, se realiza a través de los Mbeans JMX que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) y otras. Para sistemas que no admiten una conexión directa con JMX, puede escribir secuencias de comandos de shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que entiendan de forma nativa.
 
-El acceso remoto a los mbeans de JMX no está habilitado de forma predeterminada. Para obtener más información sobre la supervisión a través de JMX, consulte [Monitoreo y administración con tecnología](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)JMX.
+El acceso remoto a los mbeans de JMX no está habilitado de forma predeterminada. Para obtener más información sobre la supervisión mediante JMX, consulte [Monitoreo y administración con tecnología JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
 En muchos casos, se requiere una base de referencia para monitorear eficazmente una estadística. Para crear una línea base, observe el sistema en condiciones de trabajo normales durante un período predeterminado y luego identifique la métrica normal.
 
 **Monitoreo de JVM**
 
-Como con cualquier pila de aplicaciones basada en Java, [!DNL Experience Manager] depende de los recursos que se le proporcionen a través de la máquina virtual Java subyacente. Puede monitorear el estado de muchos de estos recursos a través de los MXBeans de plataforma expuestos por JVM. Para obtener más información sobre MXBeans, consulte [Uso de MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)de plataforma y servidor MBean.
+Como con cualquier pila de aplicaciones basada en Java, [!DNL Experience Manager] depende de los recursos que se le proporcionen a través de la máquina virtual Java subyacente. Puede monitorear el estado de muchos de estos recursos a través de los MXBeans de plataforma expuestos por JVM. Para obtener más información sobre MXBeans, consulte [Uso de MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html) de plataforma y servidor MBean.
 
 Estos son algunos parámetros de línea de base que puede monitorear para JVM:
 
@@ -109,16 +109,16 @@ Subprocesos
 
 **Monitor[!DNL Experience Manager]**
 
-[!DNL Experience Manager] también expone un conjunto de estadísticas y operaciones a través de JMX. Esto puede ayudar a evaluar el estado del sistema e identificar los problemas potenciales antes de que afecten a los usuarios. Para obtener más información, consulte la [documentación](/help/sites-administering/jmx-console.md) sobre los MBeans de [!DNL Experience Manager] JMX.
+[!DNL Experience Manager] también expone un conjunto de estadísticas y operaciones a través de JMX. Esto puede ayudar a evaluar el estado del sistema e identificar los problemas potenciales antes de que afecten a los usuarios. Para obtener más información, consulte [documentación](/help/sites-administering/jmx-console.md) en [!DNL Experience Manager] MBeans de JMX.
 
-Estos son algunos parámetros de línea de base que puede supervisar para [!DNL Experience Manager]:
+Estos son algunos parámetros de línea de base que puede monitorear para [!DNL Experience Manager]:
 
 Agentes de replicación
 
 * MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
 * URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
 * Instancias: Un autor y todas las instancias de publicación (para agentes de vaciado)
-* Umbral de alarma: Cuando el valor de `QueueBlocked` es `true` o el valor de `QueueNumEntries` es bueno al 150% de la línea base.
+* Umbral de alarma: Cuando el valor de `QueueBlocked` es `true` o el valor de `QueueNumEntries` es bueno a más del 150% de la línea base.
 
 * Definición de alarma: Presencia de una cola bloqueada en el sistema que indica que el destinatario de replicación está inactivo o inaccesible. A menudo, los problemas de red o infraestructura hacen que se pongan en cola entradas excesivas, lo que puede afectar negativamente al rendimiento del sistema.
 
@@ -136,7 +136,7 @@ Contador de sesiones
 
 Comprobación del estado
 
-Las comprobaciones de estado disponibles en el panel [de](/help/sites-administering/operations-dashboard.md#health-reports) operaciones tienen los MBeans de JMX correspondientes para la supervisión. Sin embargo, puede escribir comprobaciones de estado personalizadas para exponer estadísticas adicionales del sistema.
+Las comprobaciones de estado disponibles en el [panel de operaciones](/help/sites-administering/operations-dashboard.md#health-reports) tienen los MBeans de JMX correspondientes para supervisión. Sin embargo, puede escribir comprobaciones de estado personalizadas para exponer estadísticas adicionales del sistema.
 
 Estas son algunas de las comprobaciones de estado integradas que son útiles para monitorear:
 
@@ -187,16 +187,16 @@ Estas son algunas de las comprobaciones de estado integradas que son útiles par
    * Umbral de alarma: Cuando el estado no es correcto
    * Definición de alarma: Hay errores en los archivos de registro. Consulte el atributo log para obtener más información sobre la causa del problema.
 
-## Cuestiones y resoluciones comunes  {#common-issues-and-resolutions}
+## Problemas y resoluciones comunes {#common-issues-and-resolutions}
 
-En el proceso de supervisión, si se producen problemas, se presentan algunas tareas de resolución de problemas que puede realizar para resolver problemas comunes con [!DNL Experience Manager] las implementaciones:
+En el proceso de monitoreo, si se encuentran problemas, aquí se presentan algunas tareas de solución de problemas que puede realizar para resolver problemas comunes con implementaciones [!DNL Experience Manager]:
 
 * Si utiliza TarMK, ejecute la compactación Tar con frecuencia. Para obtener más información, consulte [Mantener el repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Compruebe `OutOfMemoryError` los registros. Para obtener más información, consulte [Análisis de problemas](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)de memoria.
+* Compruebe los registros `OutOfMemoryError`. Para obtener más información, consulte [Análisis de problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 * Compruebe los registros para buscar referencias a consultas no indizadas, traverales de árbol o traverales de índice. Estos datos indican consultas no indizadas o consultas inadecuadamente indizadas. Para obtener información sobre las prácticas recomendadas para optimizar el rendimiento de consulta e indexación, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan correctamente. Si es posible, condense varios flujos de trabajo en un único flujo de trabajo.
 * Revisa el monitoreo en vivo y busca cuellos de botella adicionales o altos consumidores de cualquier recurso específico.
-* Investigue los puntos de salida desde la red del cliente y los puntos de entrada a la red de implementación, incluido el despachante. [!DNL Experience Manager] A menudo, estas son áreas de cuello de botella. Para obtener más información, consulte Consideraciones [de red de](/help/assets/assets-network-considerations.md)Assets.
-* Aumente el tamaño del [!DNL Experience Manager] servidor. Es posible que no tenga un tamaño adecuado para la [!DNL Experience Manager] implementación. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si su servidor tiene un tamaño inferior al normal.
-* Examine los `access.log` archivos y `error.log` los archivos en busca de entradas en el momento en que algo salió mal. Busque patrones que puedan indicar anomalías de código personalizado. Añada a la lista de eventos que supervise.
+* Investigue los puntos de salida desde la red del cliente y los puntos de entrada a la red de implementación [!DNL Experience Manager], incluido el despachante. A menudo, estas son áreas de cuello de botella. Para obtener más información, consulte [Consideraciones de la red de recursos](/help/assets/assets-network-considerations.md).
+* Aumente el tamaño del servidor [!DNL Experience Manager]. Es posible que no tenga un tamaño adecuado para la implementación [!DNL Experience Manager]. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si su servidor tiene un tamaño inferior al normal.
+* Examine los archivos `access.log` y `error.log` en busca de entradas en el momento en que algo salió mal. Busque patrones que puedan indicar anomalías de código personalizado. Añada a la lista de eventos que supervise.
