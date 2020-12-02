@@ -12,6 +12,9 @@ discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 96%
 
 ---
 
@@ -130,7 +133,7 @@ Para personalizar una newsletter y simular su aspecto:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar newsletters, compruebe la configuración de OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -218,7 +221,7 @@ El boletín se puede enviar desde el propio boletín o desde la lista. Se descri
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar newsletters, compruebe la configuración de OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -226,7 +229,7 @@ El boletín se puede enviar desde el propio boletín o desde la lista. Se descri
 >
 >Si actualiza los proveedores de correo electrónico, haga una prueba piloto o envíe un boletín; estas operaciones fallarán si el boletín no está publicado en la instancia Publicar o si esta instancia no está disponible. Asegúrese de publicar el boletín y de que la instancia Publicar funciona correctamente.
 
-### Enviar boletines desde una campaña {#sending-newsletters-from-a-campaign}
+### Enviar boletines desde una campaña  {#sending-newsletters-from-a-campaign}
 
 Para enviar un boletín desde la campaña:
 
@@ -253,7 +256,7 @@ Para enviar un boletín desde la campaña:
    >
    >Asegúrese de ser uno de los destinatarios para que pueda comprobar la recepción de la newsletter.
 
-### Envío de newsletters desde una lista {#sending-newsletters-from-a-list}
+### Envío de newsletters desde una lista  {#sending-newsletters-from-a-list}
 
 Para enviar un boletín desde una lista:
 
@@ -283,7 +286,7 @@ Para enviar un boletín desde una lista:
 
 En esta sección se describe cómo suscribirse a un boletín.
 
-### Suscripción al boletín {#subscribing-to-a-newsletter-1}
+### Suscripción al boletín  {#subscribing-to-a-newsletter-1}
 
 Para suscribirse a una newsletter (usando el sitio web de Geometrixx como ejemplo):
 
