@@ -25,14 +25,14 @@ ht-degree: 7%
 Para agregar un recurso de habilitación al nuevo sitio de comunidad:
 
 * Inicie sesión como administrador del sistema en la instancia de creación:
-   * Por ejemplo, [http://localhost:4502/](http://localhost:4503/)
+   * Por ejemplo: [http://localhost:4502/](http://localhost:4503/)
 * En la navegación global, seleccione **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
 
    ![medios](assets/resources.png)
 
    ![habilitación-recurso](assets/enablement-resource.png)
 * Seleccione el sitio de la comunidad al que se agregan los recursos de habilitación:
-   * Seleccione Tutorial **[!UICONTROL de habilitación]**.
+   * Seleccione **[!UICONTROL Tutorial de habilitación]**.
 * En el menú, seleccione **[!UICONTROL Crear]**.
 * Seleccione **[!UICONTROL Recurso]**.
 
@@ -46,7 +46,7 @@ Rellene la información básica del recurso:
 
    Establezca el nombre del sitio de comunidad seleccionado: Tutorial de habilitación
 
-* **[!UICONTROL Nombre&amp;amp de recurso;ast;]**
+* **[!UICONTROL Nombre&amp;ast del recurso;]**
 
    Lección de esquí 1
 
@@ -56,7 +56,7 @@ Rellene la información básica del recurso:
 
 * **[!UICONTROL Mostrar en el catálogo]**
 
-   Configúrelo en **Activado**.
+   Configúrelo en **On**.
 
 * **[!UICONTROL Descripción]**
 
@@ -74,7 +74,7 @@ Rellene la información básica del recurso:
 
 Aunque parece que se pueden seleccionar varios recursos, solo se permite uno.
 
-Seleccione el `'+' icon`, en la esquina superior derecha, para comenzar el proceso de selección del recurso identificando el origen.
+Seleccione `'+' icon`, en la esquina superior derecha, para comenzar el proceso de selección del recurso identificando el origen.
 
 ![add-content](assets/add-content.png)
 
@@ -100,15 +100,15 @@ Cargar un recurso. Si se trata de un recurso de vídeo, cargue una imagen person
 
    *(Opcional)* Deje en blanco.
 
-* **[!UICONTROL Resource Contact&amp;ast;]**
+* **[!UICONTROL Contacto&amp;ast de recursos;]**
 
-   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro `Quinn Harper`.
+   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro  `Quinn Harper`.
 
 * **[!UICONTROL Experto de medios]**
 
    *(Opcional)* Deje en blanco.
 
-   **Nota**: Si los usuarios o grupos no están visibles, compruebe que se han agregado al `Community Enable Members` grupo y que se han *guardado* en la instancia de publicación.
+   **Nota**: Si los usuarios o grupos no están visibles, compruebe que se han agregado al  `Community Enable Members` grupo y que se han  ** guardado en la instancia de publicación.
 
    ![habiliement-settings](assets/enablement-settings.png)
 
@@ -134,7 +134,7 @@ Para cargar una nueva versión del recurso de habilitación, se recomienda crear
 
 Antes de que los alumnos matriculados puedan ver el recurso asignado, debe publicarse:
 
-* Seleccione el icono mundial `Publish`
+* Seleccione el icono `Publish` del mundo
 
 La activación se confirma con un mensaje de éxito:
 
@@ -146,7 +146,7 @@ Repita los pasos anteriores para crear y publicar un segundo recurso de habilita
 
 ![add-resource](assets/add-resource.png)
 
-**Publique** el segundo recurso.
+**** Publicar el segundo recurso.
 
 Vuelva a la lista de tutoriales de habilitación de sus recursos.
 
@@ -159,11 +159,11 @@ Vuelva a la lista de tutoriales de habilitación de sus recursos.
 Una ruta de aprendizaje es una agrupación lógica de recursos de habilitación que forman un curso.
 
 * En la consola Recursos, seleccione `+ Create`
-* Seleccionar ruta **[!UICONTROL de aprendizaje]**
+* Seleccione **[!UICONTROL Ruta de aprendizaje]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-Añada la información **[!UICONTROL básica]**:
+Añada la **[!UICONTROL Información básica]**:
 
 * **[!UICONTROL Nombre de la ruta de aprendizaje]**
 
@@ -191,9 +191,9 @@ Omita el panel siguiente, ya que no hay rutas de aprendizaje previas que agregar
 
 En el panel Añadir recursos:
 
-* Seleccione `+ Add Resources` para seleccionar los 2 recursos de lecturas de esquí que desea agregar a la ruta de aprendizaje.
+* Seleccione `+ Add Resources` para seleccionar los 2 recursos de lecturas de esquí que se agregarán a la ruta de aprendizaje.
 
-   Nota: Solo se podrán seleccionar los recursos **publicados** .
+   Nota: Sólo se podrán seleccionar **recursos publicados**.
 
 >[!NOTE]
 >
@@ -211,11 +211,11 @@ En el panel Añadir recursos:
 
 * **[!UICONTROL Añadir usuarios asignados]**
 
-   Utilice el menú desplegable para seleccionar el `Community Ski Class` grupo, que debe incluir miembros `Riley Taylor` y `Sidney Croft.`
+   Utilice el menú desplegable para seleccionar el grupo `Community Ski Class`, que debe incluir miembros `Riley Taylor` y `Sidney Croft.`
 
-* **[!UICONTROL Ruta de acceso de aprendizaje: Contact&amp;ast;]**
+* **[!UICONTROL Contactar&amp;ste de ruta de aprendizaje;]**
 
-   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro `Quinn Harper`.
+   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro  `Quinn Harper`.
 
 * Seleccione **[!UICONTROL Crear]**.
 
@@ -223,5 +223,5 @@ En el panel Añadir recursos:
 
 La creación correcta de la ruta de aprendizaje regresa a la consola Recursos con la ruta de aprendizaje recién creada seleccionada. Desde esta consola, es posible publicar, añadir alumnos y cambiar otros ajustes.
 
-**Publique** la ruta de aprendizaje.
+**** Publicar la ruta de aprendizaje.
 
