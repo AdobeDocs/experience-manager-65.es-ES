@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Utilice xgettext-maven-plugin para extraer cadenas del código fuente que necesi
 * Archivos de origen Javascript
 * Representaciones XML de recursos SVN (nodos JCR)
 
-## Configuración de la extracción de cadenas {#configuring-string-extraction}
+## Configuración de la Extracción de cadena {#configuring-string-extraction}
 
 Configure cómo la herramienta xgettext-maven-plugin extrae cadenas para el proyecto.
 
@@ -46,14 +49,14 @@ Configure cómo la herramienta xgettext-maven-plugin extrae cadenas para el proy
 | Sección | Descripción |
 |---|---|
 | /filter | Identifica los archivos analizados. |
-| /parsers/vaultxml | Configura el análisis de los archivos Vault. Identifica los nodos JCR que contienen cadenas externalizadas y sugerencias de localización. También identifica los nodos JCR que se deben ignorar. |
+| /parsers/vaultxml | Configura el análisis de los archivos Vault. Identifica los nodos JCR que contienen cadenas y sugerencias de localización externalizadas. También identifica los nodos JCR que se deben ignorar. |
 | /parsers/javascript | Identifica las funciones de Javascript que externalizan cadenas. No es necesario cambiar esta sección. |
 | /parsers/regexp | Configura el análisis de los archivos de plantilla Java, JSP y ExtJS. No es necesario cambiar esta sección. |
 | /potenciales | Fórmula para detectar cadenas que se van a internacionalizar. |
 
 ### Identificación de los archivos que analizar {#identifying-the-files-to-parse}
 
-La sección /filter del archivo i18n.any identifica los archivos que analiza la herramienta xgettext-maven-plugin. Agregue varias reglas de inclusión y exclusión que identifican los archivos que se analizan e ignoran, respectivamente. Debe incluir todos los archivos y luego excluir los archivos que no desee analizar. Normalmente, excluye los tipos de archivo que no contribuyen a la interfaz de usuario o los archivos que definen la interfaz de usuario pero que no se están traduciendo. Las reglas de inclusión y exclusión tienen el siguiente formato:
+La sección /filter del archivo i18n.any identifica los archivos que analiza la herramienta xgettext-maven-plugin. Añada varias reglas de inclusión y exclusión que identifican los archivos analizados e ignorados, respectivamente. Debe incluir todos los archivos y luego excluir los archivos que no desee analizar. Normalmente, excluye los tipos de archivo que no contribuyen a la interfaz de usuario o los archivos que definen la interfaz de usuario pero que no se están traduciendo. Las reglas de inclusión y exclusión tienen el siguiente formato:
 
 ```
 { /include "pattern" }
@@ -65,10 +68,10 @@ La parte de patrón de una regla se utiliza para coincidir con los nombres de lo
 | Prefijo | Efecto |
 |---|---|
 | / | Indica una ruta JCR. Por lo tanto, este prefijo coincide con los archivos situados debajo del directorio jcr_root. |
-|  &amp;ast; | Indica un archivo normal en el sistema de archivos. |
+| &amp;ast; | Indica un archivo normal en el sistema de archivos. |
 | ninguno | Ningún prefijo, o patrón que comience por un nombre de archivo o carpeta, indica un archivo normal en el sistema de archivos. |
 
-Cuando se utiliza dentro de un patrón, el carácter / indica un subdirectorio y el &amp;ast; coincide con todos. En la tabla siguiente se enumeran varias reglas de ejemplo.
+Cuando se utiliza dentro de un patrón, el carácter / indica un subdirectorio y el &amp;ast; coincide con todos. La tabla siguiente lista varias reglas de ejemplo.
 
 <table>
  <tbody>
@@ -105,7 +108,7 @@ sin POM:
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-Con POM: Agregar esto al POM:
+Con POM: Añada esto a POM:
 
 ```xml
 <build>
@@ -134,7 +137,7 @@ mvn xgettext:extract
 ### Archivos de salida {#output-files}
 
 * `raw.xliff`:: cadenas extraídas
-* `warn.log`:: advertencias (si las hay), si `CQ.I18n.getMessage()` la API se utiliza incorrectamente. Siempre necesitan una corrección y luego una repetición.
+* `warn.log`:: advertencias (si las hay), si  `CQ.I18n.getMessage()` la API se utiliza incorrectamente. Siempre necesitan una corrección y luego una repetición.
 
 * `parserwarn.log`:: advertencias del analizador (si las hay), por ejemplo problemas con el analizador de js
 * `potentials.xliff`:: Los candidatos &quot;potenciales&quot; que no se extraen, pero que pueden ser cadenas legibles por el hombre que necesitan traducción (se puede ignorar, y aun así produce una gran cantidad de falsos positivos)
