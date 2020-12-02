@@ -24,18 +24,18 @@ ht-degree: 1%
 Los pasos genéricos para realizar cualquier personalización son:
 
 1. Inicie sesión en el CRXDE Lite accediendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Cree una carpeta denominada `ws`at `/apps`, si no existe. Haga clic en **[!UICONTROL Guardar todo]**.
-1. Vaya a `/apps/ws`la ficha **[!UICONTROL Control de acceso]** y desplácese hasta ella.
-1. En la lista **[!UICONTROL Control de acceso]** , haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Haga clic **[!UICONTROL +]** nuevamente.
-1. Busque y seleccione la entidad **PERM_WORKSPACE_USER** Principal.
+1. Cree una carpeta con el nombre `ws`en `/apps`, si no existe. Haga clic en **[!UICONTROL Guardar todo]**.
+1. Vaya a `/apps/ws` y vaya a la ficha **[!UICONTROL Control de acceso]**.
+1. En la lista **[!UICONTROL Control de acceso]**, haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Vuelva a hacer clic en **[!UICONTROL +]**.
+1. Busque y seleccione la **entidad de seguridad PERM_WORKSPACE_USER**.
 
    ![Seleccione el principal PERM_WORKSPACE_USER como parte de los pasos genéricos para personalizar HTML Workspace](assets/perm_workspace_user.png)
 
-1. Dar `jcr:read` privilegio al director.
+1. Otorgue `jcr:read` privilegios al director.
 1. Haga clic en **[!UICONTROL Guardar todo]**.
-1. Copie los `GET.jsp` archivos `html.jsp`y de la `/libs/ws`carpeta en la `/apps/ws` carpeta.
-1. Copie la `/libs/ws/locales` carpeta en la `/apps/ws` carpeta. Haga clic en **[!UICONTROL Guardar todo]**.
-1. Actualice las referencias y las rutas relativas en el `GET.jsp` archivo, como se muestra a continuación, y haga clic en **[!UICONTROL Guardar todo]**.
+1. Copie los archivos `GET.jsp` y `html.jsp`de la carpeta `/libs/ws`a la carpeta `/apps/ws`.
+1. Copie la carpeta `/libs/ws/locales` en la carpeta `/apps/ws`. Haga clic en **[!UICONTROL Guardar todo]**.
+1. Actualice las referencias y las rutas relativas en el archivo `GET.jsp`, como se muestra a continuación, y haga clic en **[!UICONTROL Guardar todo]**.
 
    ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -43,11 +43,11 @@ Los pasos genéricos para realizar cualquier personalización son:
 
 1. Para las personalizaciones de CSS, haga lo siguiente:
 
-   1. Vaya a la `/apps/ws` carpeta y cree una nueva carpeta con el nombre `css`.
+   1. Vaya a la carpeta `/apps/ws` y cree una nueva carpeta con el nombre `css`.
 
-   1. En la carpeta de `css`carpetas, cree un nuevo archivo denominado `newStyle.css`.
+   1. En la carpeta `css`, cree un nuevo archivo con el nombre `newStyle.css`.
 
-   1. Abrir `/apps/ws/html`.jsp y cambiar de
+   1. Abra `/apps/ws/html`.jsp y cambie de
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -86,7 +86,7 @@ Los pasos genéricos para realizar cualquier personalización son:
 
    1. Cree una carpeta con el nombre `jqueryui`en `/apps/ws/js/libs`. Haga clic en **[!UICONTROL Guardar todo]**.
 
-   1. Copiar `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` a `/apps/ws/js/libs/jqueryui`. Haga clic en **[!UICONTROL Guardar todo]**.
+   1. Copie `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` en `/apps/ws/js/libs/jqueryui`. Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Para las personalizaciones de HTML, haga lo siguiente:
 
@@ -94,10 +94,10 @@ Los pasos genéricos para realizar cualquier personalización son:
 
    1. En `/apps/ws/js/runtime`, cree una carpeta con el nombre `templates`. Haga clic en **[!UICONTROL Guardar todo]**.
 
-   1. Copiar `/libs/ws/js/main.js` a `/apps/ws/js/main.js`.
+   1. Copie `/libs/ws/js/main.js` en `/apps/ws/js/main.js`.
 
    1. Copie /libs/ws/js/registry.js en `/apps/ws/js/registry.js`.
 
-1. Haga clic en **[!UICONTROL Guardar todo]**, borre la caché y actualice el espacio de trabajo AEM Forms.
+1. Haga clic en **[!UICONTROL Guardar todo]**, borre la caché y actualice el espacio de trabajo de AEM Forms.
 
-   Acceda a la URL `https://'[server]:[port]'/lc/ws` e inicie sesión con credenciales de administrador/contraseña. El explorador redirige a `https://'[server]:[port]'/lc/apps/ws/index.html`.
+   Acceda a la dirección URL `https://'[server]:[port]'/lc/ws` e inicie sesión con credenciales de administrador/contraseña. El explorador redirige a `https://'[server]:[port]'/lc/apps/ws/index.html`.
