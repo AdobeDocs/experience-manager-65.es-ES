@@ -22,12 +22,12 @@ ht-degree: 39%
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
 + [Accesibilidad en [!DNL Assets]](accessibility.md)
-+ Uso de recursos Experience Manager {#using}
++ Utilizar recursos de Experience Manager {#using}
    + [[!DNL Assets] Experiencia de página de inicio](assets-home-page.md)
    + [Buscar recursos digitales](search-assets.md)
    + [Trabajo con metadatos de recursos](metadata.md)
    + [Recursos multilingües](multilingual-assets.md)
-   + [Uso [!DNL Adobe Stock] de recursos en recursos](aem-assets-adobe-stock.md)
+   + [Uso  [!DNL Adobe Stock] de recursos en recursos](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
    + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
@@ -87,11 +87,11 @@ ht-degree: 39%
    + [Personalizar y ampliar [!DNL Assets]](extending-assets.md)
    + [Procesar recursos con controladores de medios y flujos de trabajo](media-handlers.md)
    + [Ampliar la funcionalidad de búsqueda](searchx.md)
-   + [Instalación y [!DNL ImageMagick] configuración para trabajar con [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Instalación y  [!DNL ImageMagick] configuración para trabajar con [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrar recursos con flujo de actividad](extending-activity-stream.md)
    + [Ampliar editor de recursos](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Compatibilidad con fragmentos de contenido [!DNL Assets] en la API de HTTP](assets-api-content-fragments.md)
+   + [Compatibilidad con fragmentos de contenido  [!DNL Assets] en la API de HTTP](assets-api-content-fragments.md)
    + [[!DNL Assets] desarrollo de proxy](proxy.md)
 + Administrar recursos {#administer}
    + [Formatos de archivo compatibles](assets-formats.md)
@@ -141,7 +141,7 @@ ht-degree: 39%
    + [Fragmentos de contenido: Eliminar consideraciones](content-fragments/content-fragments-delete.md)
    + [Fragmentos de contenido: Markdown](content-fragments/content-fragments-markdown.md)
    + [Creación de proyectos de traducción para fragmentos de contenido](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Administrar recursos {#managing}
    + [Administre recursos digitales](manage-assets.md)
    + [Administrar colecciones](manage-collections.md)
    + [Habilitar detección de duplicado](duplicate-detection.md)
