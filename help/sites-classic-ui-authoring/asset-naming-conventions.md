@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 90%
 
 ---
 
 
 # Convenciones de nomenclatura de los recursos testing{#naming-conventions-for-assets-testing}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Sin embargo, Adobe Experience Manager impone otras convenciones para el nombre de los nodos del recurso.
+Los nodos del repositorio están sujetos a las convenciones de nombres del [Repositorio de contenido de Java](/help/sites-developing/the-basics.md#java-content-repository). Sin embargo, Adobe Experience Manager impone otras convenciones para el nombre de los nodos del recurso.
 
 ## IU clásica {#classic-ui}
 
