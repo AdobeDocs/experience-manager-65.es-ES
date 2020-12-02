@@ -21,25 +21,25 @@ Para el procesamiento de recursos, [!DNL Experience Manager] utiliza flujos de t
 
 ## Flujos de trabajo predeterminados disponibles en [!DNL Experience Manager] {#default-workflows}
 
-De forma predeterminada, todos los recursos cargados se procesan mediante el flujo de trabajo Actualizar recursos  DAM. El flujo de trabajo se ejecuta para cada recurso cargado y lleva a cabo tareas básicas de administración de recursos, como la generación de representaciones, la reescritura de metadatos, la extracción de páginas, la extracción de medios y la transcodificación.
+De forma predeterminada, todos los recursos cargados se procesan mediante el flujo de trabajo [!UICONTROL Recurso de actualización de DAM]. El flujo de trabajo se ejecuta para cada recurso cargado y lleva a cabo tareas básicas de administración de recursos, como la generación de representaciones, la reescritura de metadatos, la extracción de páginas, la extracción de medios y la transcodificación.
 
 Para ver los distintos modelos de flujo de trabajo disponibles de forma predeterminada, consulte **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]** en [!DNL Experience Manager].
 
 ![Parte del flujo de trabajo predeterminado](assets/aem-default-workflows.png)
 
-*Figura: Algunos de los flujos de trabajo predeterminados disponibles en [!DNL Experience Manager].*
+*Figura: Algunos de los flujos de trabajo predeterminados disponibles en  [!DNL Experience Manager].*
 
 ## Aplicar flujos de trabajo para procesar recursos {#applying-workflows-to-assets}
 
-La aplicación de flujos de trabajo a los recursos digitales es la misma que para las páginas del sitio web. Para obtener una guía completa sobre cómo crear y utilizar flujos de trabajo, consulte flujos de trabajo [de inicio](/help/sites-authoring/workflows-participating.md).
+La aplicación de flujos de trabajo a los recursos digitales es la misma que para las páginas del sitio web. Para obtener una guía completa sobre cómo crear y utilizar flujos de trabajo, consulte [flujos de trabajo de inicio](/help/sites-authoring/workflows-participating.md).
 
 Utilice flujos de trabajo en recursos digitales para activar el recurso o crear marcas de agua. Muchos de los flujos de trabajo de los recursos se activan automáticamente. Por ejemplo, el flujo de trabajo que crea automáticamente una representación después de editar una imagen se activa automáticamente.
 
 >[!NOTE]
 >
->Si un flujo de trabajo disponible en la IU clásica no está disponible en la IU táctil, como [!UICONTROL Solicitud de activación] y [!UICONTROL Solicitud de desactivación], consulte [Creación de modelos](/help/sites-developing/workflows-models.md#classic2touchui)de flujo de trabajo.
+>Si un flujo de trabajo disponible en la IU clásica no está disponible en la IU táctil, como [!UICONTROL Solicitud de activación] y [!UICONTROL Solicitud de desactivación], consulte [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md#classic2touchui).
 
-## Aplicación de un flujo de trabajo a un recurso {#apply-a-workflow-to-an-asset}
+## Aplicar un flujo de trabajo a un recurso {#apply-a-workflow-to-an-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -52,26 +52,26 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 
 1. Haga clic en **[!UICONTROL Acciones]** en la parte inferior para abrir la lista de acciones disponibles para el recurso.
 
-1. Haga clic en Flujo de trabajo **[!UICONTROL Inicio]** desde la lista.
+1. Haga clic en **[!UICONTROL Flujo de trabajo de Inicio]** desde la lista.
 
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+1. En el cuadro de diálogo **[!UICONTROL Flujo de trabajo de Inicio]**, seleccione un modelo de flujo de trabajo de la lista.
 
 1. (Opcional) Especifique un título para el flujo de trabajo que pueda utilizarse para hacer referencia a la instancia del flujo de trabajo.
 
    ![seleccione el flujo de trabajo, proporcione un título y haga clic en inicio](assets/start-workflow.png)
 
-1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, en **[!UICONTROL Continuar]**. Cada paso del flujo de trabajo se muestra en la cronología como un evento.
+1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, haga clic en **[!UICONTROL Continuar]**. Cada paso del flujo de trabajo se muestra en la cronología como un evento.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
-## Aplicación de un flujo de trabajo a varios recursos {#applying-a-workflow-to-multiple-assets}
+## Aplicar un flujo de trabajo a varios recursos {#applying-a-workflow-to-multiple-assets}
 
-1. Desde la [!DNL Assets] consola, desplácese hasta la ubicación de los recursos para los que desea realizar el inicio en un flujo de trabajo y seleccione los recursos. Seleccione **[!UICONTROL Línea de tiempo]** en el menú para mostrar la línea de tiempo.
+1. Desde la consola [!DNL Assets], navegue hasta la ubicación de los recursos para los que desea realizar el inicio de un flujo de trabajo y seleccione los recursos. Seleccione **[!UICONTROL Línea de tiempo]** en el menú para mostrar la línea de tiempo.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Haga clic en **[!UICONTROL Acciones]** , ![protector arriba](assets/do-not-localize/chevron-up-icon.png) en la parte inferior.
-1. Haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+1. Haga clic en **[!UICONTROL Acciones]** ![Chevron hacia arriba](assets/do-not-localize/chevron-up-icon.png) en la parte inferior.
+1. Haga clic en **[!UICONTROL Flujo de trabajo de Inicio]**. En el cuadro de diálogo **[!UICONTROL Flujo de trabajo de Inicio]**, seleccione un modelo de flujo de trabajo de la lista.
 
    ![Flujo de trabajo de inicio](assets/start-workflow.png)
 
@@ -80,25 +80,25 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 
 ## Aplicar un flujo de trabajo a varias carpetas {#applying-a-workflow-to-multiple-folders}
 
-El procedimiento para aplicar un flujo de trabajo a varias carpetas es similar al procedimiento para aplicar un flujo de trabajo a varios recursos. Seleccione las carpetas de la [!DNL Assets] interfaz y realice los pasos 2 a 7 del procedimiento para [aplicar un flujo de trabajo a varios recursos](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
+El procedimiento para aplicar un flujo de trabajo a varias carpetas es similar al procedimiento para aplicar un flujo de trabajo a varios recursos. Seleccione las carpetas en la interfaz [!DNL Assets] y realice los pasos 2 a 7 del procedimiento [aplicar un flujo de trabajo a varios recursos](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
-## Aplicación de un flujo de trabajo a una colección {#applying-a-workflow-to-a-collection}
+## Aplicar un flujo de trabajo a una colección {#applying-a-workflow-to-a-collection}
 
-Consulte [Aplicación de un flujo de trabajo a una colección](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
+Consulte [aplicación de un flujo de trabajo a una colección](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Inicio automático de un flujo de trabajo para procesar los recursos de forma condicional {#auto-execute-workflow-on-some-assets}
 
 Los administradores pueden configurar el flujo de trabajo para ejecutar y procesar automáticamente recursos en función de condiciones predefinidas. La funcionalidad es útil para usuarios de la línea de negocios y especialistas en mercadotecnia, por ejemplo, para crear un flujo de trabajo personalizado en carpetas específicas. Supongamos que todos los activos de la sesión fotográfica de una agencia se pueden marcar con agua o que todos los recursos cargados por un operador independiente se pueden procesar para crear representaciones específicas.
 
-Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de flujo de trabajo que lo ejecute. Un iniciador de flujo de trabajo supervisa los cambios en el repositorio de contenido y ejecuta el flujo de trabajo cuando se cumplen las condiciones predefinidas. Los administradores pueden proporcionar acceso a los especialistas en marketing para crear flujos de trabajo y configurar el iniciador. Los usuarios pueden modificar el flujo de trabajo predeterminado de recursos [!UICONTROL de actualización de] DAM para agregar los pasos adicionales necesarios para procesar recursos específicos. El flujo de trabajo se ejecuta en todos los recursos cargados recientemente. Utilice uno de los siguientes métodos para limitar la ejecución de los pasos adicionales en recursos específicos:
+Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de flujo de trabajo que lo ejecute. Un iniciador de flujo de trabajo supervisa los cambios en el repositorio de contenido y ejecuta el flujo de trabajo cuando se cumplen las condiciones predefinidas. Los administradores pueden proporcionar acceso a los especialistas en marketing para crear flujos de trabajo y configurar el iniciador. Los usuarios pueden modificar el flujo de trabajo predeterminado [!UICONTROL Recurso de actualización de DAM] para agregar los pasos adicionales necesarios para procesar recursos específicos. El flujo de trabajo se ejecuta en todos los recursos cargados recientemente. Utilice uno de los siguientes métodos para limitar la ejecución de los pasos adicionales en recursos específicos:
 
-* Realice una copia del flujo de trabajo de [!UICONTROL DAM Update Asset] y modifíquelo para que se ejecute en una jerarquía de carpetas específica. Este método resulta útil para algunas carpetas.
-* Los pasos de procesamiento adicionales se pueden agregar mediante una división [](/help/sites-developing/workflows-step-ref.md#or-split) O, según se requiera, para tantas carpetas como se necesiten.
+* Haga una copia del flujo de trabajo [!UICONTROL DAM Update Asset] y modifíquelo para que se ejecute en una jerarquía de carpetas específica. Este método resulta útil para algunas carpetas.
+* Los pasos de procesamiento adicionales se pueden agregar utilizando una [división OR](/help/sites-developing/workflows-step-ref.md#or-split) como condición aplicable a tantas carpetas como sea necesario.
 
 ## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
 
-* Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
-* De forma predeterminada, el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM incluye algunos pasos para crear miniaturas y representaciones web. Si se eliminan del flujo de trabajo las representaciones predeterminadas, la interfaz de usuario de [!DNL Assets] no se procesa correctamente.
+* Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y volver a cargarlos.
+* De forma predeterminada, el flujo de trabajo [!UICONTROL Recurso de actualización de DAM] incluye algunos pasos para crear miniaturas y representaciones web. Si se eliminan las representaciones predeterminadas del flujo de trabajo, la interfaz de usuario de [!DNL Assets] no se representa correctamente.
 
 >[!MORELIKETHIS]
 >
