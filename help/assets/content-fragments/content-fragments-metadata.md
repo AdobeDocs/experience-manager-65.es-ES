@@ -21,21 +21,21 @@ ht-degree: 11%
 
 # Metadatos: Propiedades del fragmento{#metadata-fragment-properties}
 
-## Edición de propiedades / metadatos {#editing-properties-meta-data}
+## Edición de propiedades/metadatos {#editing-properties-meta-data}
 
 Puede vista y edición de los metadatos (propiedades) de los fragmentos de contenido:
 
-1. En la consola **Recursos** , navegue a la ubicación del fragmento de contenido.
+1. En la consola **Assets** navegue a la ubicación del fragmento de contenido.
 1. O bien:
 
-   * Seleccione Propiedades [**de** Vista para abrir los cuadros de diálogo](/help/assets/manage-assets.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
-   * Abra el fragmento de [contenido para editar](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)y, a continuación, seleccione **Metadatos** en el panel lateral.
+   * Seleccione [**Propiedades de Vista** para abrir los cuadros de diálogo](/help/assets/manage-assets.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
+   * Abra el fragmento de contenido [para editar](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) y, a continuación, seleccione **Metadatos** en el panel lateral.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. La ficha **Básico** proporciona opciones que puede editar o vista:
+1. La ficha **Basic** proporciona opciones que puede editar o vista:
 
-   * Miniatura, para la cual puede **cargar la imagen**
+   * Miniatura, para la cual puede **Cargar imagen**
    * **Título**
    * **Descripción**
    * **Etiquetas**
