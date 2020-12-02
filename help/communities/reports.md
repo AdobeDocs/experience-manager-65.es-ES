@@ -29,7 +29,7 @@ En general, los diversos informes son los siguientes:
 
 * [Informe de asignaciones](#assignments-report)
 
-   Para una comunidad [de](/help/communities/overview.md#enablement-community)habilitación, proporciona una visión general del progreso de los alumnos en sus asignaciones, incluida una puntuación asociada si se implementa el estándar SCORM.
+   Para una [comunidad de habilitación](/help/communities/overview.md#enablement-community), proporciona una visión general del progreso de los alumnos en sus asignaciones, incluida una puntuación asociada si se implementa el estándar SCORM.
 
 * [Informe de vistas](#views-report)
 
@@ -39,11 +39,11 @@ En general, los diversos informes son los siguientes:
 
    Proporciona un gráfico de los distintos tipos de publicaciones de los miembros de la comunidad a cualquier sitio de la comunidad.
 
-Cuando [Adobe Analytics está habilitado](/help/communities/sites-console.md#analytics), los informes incluirán el número de vistas, reproducciones, comentarios y clasificaciones de cada recurso de habilitación a lo largo del tiempo.
+Cuando [Adobe Analytics está habilitado](/help/communities/sites-console.md#analytics), los informes incluirán el número de vistas, reproducciones, comentarios y clasificaciones para cada recurso de habilitación a lo largo del tiempo.
 
 Los informes tabulares se pueden exportar en formato .csv para su procesamiento posterior.
 
-## Consolas sistema de informes {#reporting-consoles}
+## Consolas de sistema de informes {#reporting-consoles}
 
 ### Informes para sitios de la comunidad {#reports-for-community-sites}
 
@@ -88,7 +88,7 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
       * Número de observaciones formuladas
       * Calificación de estrella dada
 
-Para obtener más información, consulte la sección [](/help/communities/resources.md#report) Informes de la consola Recursos.
+Para obtener más información, consulte la [sección Informes](/help/communities/resources.md#report) de la consola Recursos.
 
 ## Informe de asignaciones {#assignments-report}
 
@@ -120,7 +120,7 @@ Seleccione **Generar** para crear el informe:
 
 ## Informe de vistas {#views-report}
 
-La consola Vistas permite que los informes se generen en las vistas de página según las características de la comunidad durante un período de tiempo determinado.
+La consola Vistas permite generar informes en vistas de página según las características de la comunidad durante un período de tiempo determinado.
 
 ![vista-informe](assets/view-report.png)
 
@@ -184,6 +184,6 @@ Si no aparece ningún sitio de comunidad, asegúrese de que Adobe Analytics est�
 
 ### Los informes no se muestran en la instancia de AEM Author {#reports-do-not-show-in-aem-author-instance}
 
-Si los informes no aparecen en la instancia de AEM Author, compruebe si hay personalizaciones, como la asignación de URL en la instancia de Publish. Si la asignación de URL se realiza únicamente en la instancia de AEM Publish del sitio de comunidades, asegúrese de que la misma se ha configurado en la instancia de AEM Author en la configuración de la Fábrica **de componentes sociales del informe de tendencias** del sitio.
+Si los informes no aparecen en la instancia de AEM Author, compruebe si hay personalizaciones, como la asignación de URL en la instancia de Publish. Si la asignación de URL se realiza solamente en la instancia de AEM Publish del sitio de comunidades, asegúrese de que la misma se ha configurado en la instancia de AEM Author en la configuración **Informe de tendencias del sitio de la Fábrica de componentes sociales**.
 
 ![Asignación de URL en AEM Author](assets/sitetrend.png)
