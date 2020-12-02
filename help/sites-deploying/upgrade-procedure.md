@@ -36,7 +36,7 @@ Al actualizar sus entornos de AEM, debe tener en cuenta las diferencias de enfoq
 
 ## Nivel de creación de TarMK {#tarmk-author-tier}
 
-### Topología de inicio {#starting-topology}
+### Topología inicial {#starting-topology}
 
 La topología asumida para esta sección consiste en un servidor Autor que se ejecuta en TarMK con un espera en frío. La replicación se produce desde el servidor de creación al conjunto de publicaciones TarMK. Aunque no se ilustra aquí, este enfoque también se puede aprovechar para implementaciones que utilizan descarga. Asegúrese de actualizar o reconstruir la instancia de descarga en la nueva versión después de deshabilitar los agentes de replicación en la instancia de Autor y antes de volver a habilitarlos.
 
@@ -52,14 +52,14 @@ La topología asumida para esta sección consiste en un servidor Autor que se ej
 
 1. Deshabilitar los agentes de replicación en el autor
 
-1. Ejecute las tareas [de mantenimiento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)previas a la actualización.
+1. Ejecute las [tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
 ### Ejecución de la actualización {#upgrade-execution}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
-1. Ejecución de la actualización [in situ](/help/sites-deploying/in-place-upgrade.md)
-1. Actualizar el módulo de despachante *si es necesario*
+1. Ejecute la [actualización in-situ](/help/sites-deploying/in-place-upgrade.md)
+1. Actualice el módulo del despachante *si es necesario*
 
 1. El control de calidad valida la actualización
 
@@ -75,7 +75,7 @@ La topología asumida para esta sección consiste en un servidor Autor que se ej
 
 1. Inicio la instancia de Standby.
 
-### Si No Se Ha Realizado Correctamente (Reversión) {#if-unsuccessful-rollback}
+### Si no tiene éxito (Rollback) {#if-unsuccessful-rollback}
 
 ![rollback](assets/rollback.jpg)
 
@@ -85,7 +85,7 @@ La topología asumida para esta sección consiste en un servidor Autor que se ej
 
 ## MongoMK Author Cluster {#mongomk-author-cluster}
 
-### Topología de inicio {#starting-topology-1}
+### Topología inicial {#starting-topology-1}
 
 La topología asumida para esta sección consiste en un clúster de MongoMK Author con al menos dos instancias de AEM Author, respaldadas por al menos dos bases de datos MongoMK. Todas las instancias de Autor comparten un almacén de datos. Estos pasos deben aplicarse a los almacenes de datos S3 y File. La replicación se produce desde los servidores Author al conjunto de servidores TarMK Publish.
 
@@ -99,18 +99,18 @@ La topología asumida para esta sección consiste en un clúster de MongoMK Auth
 1. Clonar el almacén de datos para backup
 1. Detenga todas las instancias de AEM Author excepto una, su autor principal
 1. Elimine todos los nodos MongoDB excepto uno del conjunto de réplicas, la instancia principal de Mongo
-1. Actualice el `DocumentNodeStoreService.cfg` archivo en el Autor principal para que refleje el conjunto de réplicas de un solo miembro
+1. Actualice el archivo `DocumentNodeStoreService.cfg` en el autor principal para reflejar su conjunto de réplicas de un solo miembro
 1. Reinicie el autor principal para asegurarse de que se reinicia correctamente
 1. Deshabilitar los agentes de replicación en el autor principal
-1. Ejecutar tareas [de mantenimiento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) previas a la actualización en la instancia principal de Author
+1. Ejecute [tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) en la instancia principal de Author
 1. Si es necesario, actualice MongoDB en la instancia principal de Mongo a la versión 3.2 con WiredTiger
 
 ### Ejecución de la actualización {#Upgrade-execution-1}
 
 ![mongo-execute](assets/mongo-execution.jpg)
 
-1. Ejecutar una actualización [](/help/sites-deploying/in-place-upgrade.md) in-situ en el autor principal
-1. Actualizar el despachante o el módulo Web *si es necesario*
+1. Ejecute una [actualización en el lugar](/help/sites-deploying/in-place-upgrade.md) en el autor principal
+1. Actualice Dispatcher o Módulo Web *si es necesario*
 1. El control de calidad valida la actualización
 
 ### Si es correcto {#if-successful-1}
@@ -121,13 +121,13 @@ La topología asumida para esta sección consiste en un clúster de MongoMK Auth
 
 1. Vuelva a generar los nodos MongoDB que se eliminaron del clúster
 
-1. Actualice los `DocumentNodeStoreService.cfg` archivos para reflejar el conjunto completo de réplicas
+1. Actualice los archivos `DocumentNodeStoreService.cfg` para reflejar el conjunto completo de réplicas
 
 1. Reinicie las instancias de Autor de una en una
 
 1. Elimine el almacén de datos clonado.
 
-### Si No Se Ha Realizado Correctamente (Reversión)  {#if-unsuccessful-rollback-2}
+### Si no tiene éxito (Rollback) {#if-unsuccessful-rollback-2}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
@@ -139,7 +139,7 @@ La topología asumida para esta sección consiste en un clúster de MongoMK Auth
 
 1. Inicio de las instancias secundarias de Mongo con una de ellas como la nueva primaria
 
-1. Configure los `DocumentNodeStoreService.cfg` archivos en las instancias secundarias de Autor para que apunten al conjunto de réplicas de instancias de Mongo que aún no se han actualizado
+1. Configure los archivos `DocumentNodeStoreService.cfg` en las instancias secundarias de Autor para que señalen al conjunto de réplicas de instancias de Mongo que aún no se han actualizado
 
 1. Inicio de las instancias secundarias de Autor
 
@@ -151,16 +151,16 @@ La topología asumida para esta sección consiste en un clúster de MongoMK Auth
 
 La topología asumida para esta sección consiste en dos instancias de publicación TarMK, delante de los despachantes que, a su vez, están precedidas por un equilibrador de carga. La replicación se produce desde el servidor de creación al conjunto de servidores de publicación TarMK.
 
-![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
+![tarmk-pub-Farmv5](assets/tarmk-pub-farmv5.png)
 
 ### Ejecución de la actualización {#upgrade-execution-2}
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
 1. Detener el tráfico de la instancia de Publish 2 en el equilibrador de carga
-1. Ejecutar el mantenimiento [](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) previo a la actualización en la publicación 2
-1. Ejecutar una actualización [](/help/sites-deploying/in-place-upgrade.md) in-situ en Publish 2
-1. Actualizar el despachante o el módulo Web *si es necesario*
+1. Ejecute [mantenimiento previo a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) en la publicación 2
+1. Ejecute una [actualización in-situ](/help/sites-deploying/in-place-upgrade.md) en Publish 2
+1. Actualice Dispatcher o Módulo Web *si es necesario*
 1. Vaciar la caché de Dispatcher
 1. El control de calidad valida la publicación 2 a través del despachante, detrás del servidor de seguridad
 1. Cerrar publicación 2
@@ -175,12 +175,12 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. Detener el tráfico para publicar 1
 1. Detener la instancia de Publish 1
 1. Reemplazar la instancia de Publish 1 con una copia de Publish 2
-1. Actualizar el despachante o el módulo Web *si es necesario*
+1. Actualice Dispatcher o Módulo Web *si es necesario*
 1. Vaciar la caché de Dispatcher para la publicación 1
 1. Inicio Publish 1
 1. El control de calidad valida la publicación 1 a través del despachante, detrás del servidor de seguridad
 
-### Si No Se Ha Realizado Correctamente (Reversión) {#if-unsuccessful-rollback-1}
+### Si no tiene éxito (Rollback) {#if-unsuccessful-rollback-1}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
@@ -197,7 +197,7 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. El control de calidad realiza la validación final desde una dirección URL pública
 1. Habilitar agentes de replicación desde el entorno de creación
 1. Reanudar la creación de contenido
-1. Realice comprobaciones [posteriores a la](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)actualización.
+1. Realice [comprobaciones posteriores a la actualización](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 
 ![final](assets/final.jpg)
 
