@@ -18,13 +18,13 @@ ht-degree: 4%
 ---
 
 
-# Añadir propiedades personalizadas a recursos de Correspondencia Management{#add-custom-properties-to-correspondence-management-assets}
+# Añadir propiedades personalizadas a los recursos de Correspondence Management{#add-custom-properties-to-correspondence-management-assets}
 
 ## Información general {#overview}
 
 Puede personalizar la interfaz de usuario de Correspondence Management y presentar a los usuarios un conjunto personalizado de propiedades y fichas. Esta personalización incluye la adición de campos/propiedades y fichas personalizados a tipos/letras de recursos específicos o a todos los tipos de recursos y letras.
 
-## Añadir propiedades personalizadas a recursos de Correspondencia Management {#adding-custom-properties-to-correspondence-management-assets}
+## Añadir propiedades personalizadas a los recursos de Administración de correspondencia {#adding-custom-properties-to-correspondence-management-assets}
 
 Los escenarios siguientes muestran cómo se pueden agregar propiedades/fichas a los recursos y letras de Correspondence Management:
 
@@ -49,7 +49,7 @@ Complete los siguientes pasos para agregar una propiedad personalizada a todos l
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta denominada css con una ruta/estructura similar a la carpeta css (ubicada en la carpeta ccrui) siguiendo los pasos siguientes:
 
-   1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
@@ -71,15 +71,15 @@ Complete los siguientes pasos para agregar una propiedad personalizada a todos l
 
 1. En la carpeta de elementos recién creada, agregue un nodo para la propiedad personalizada en todo el recurso (Ejemplo: GeoLocation) mediante los siguientes pasos:
 
-   1. Haga clic con el botón derecho en la carpeta de elementos y seleccione **Crear** > **Crear nodo**.
+   1. Haga clic con el botón derecho en la carpeta items y seleccione **Crear** > **Crear nodo**.
 
       ![Crear nodo en CRX](assets/itemscreatenode.png)
 
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** GeoLocation (o el nombre que desea asignar a esta propiedad)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
       ![Crear nodo: GeoLocation](assets/geographicallocationcreatenode.png)
 
@@ -95,7 +95,7 @@ Complete los siguientes pasos para agregar una propiedad personalizada a todos l
 
    1. Haga clic en **Guardar todo**.
 
-1. Para vista de la personalización, pase el ratón sobre un recurso (texto, lista, condición o fragmento de diseño) o una letra, haga clic en Propiedades **de** Vista y, a continuación, haga clic en **Editar**. El nuevo campo (Ubicación de destinatarios) aparece en la ficha Básico de las propiedades de recurso/carta.
+1. Para vista de la personalización, pase el ratón sobre un recurso (texto, lista, condición o fragmento de diseño) o una letra, haga clic en **Propiedades de Vista** y haga clic en **Editar**. El nuevo campo (Ubicación de destinatarios) aparece en la ficha Básico de las propiedades de recurso/carta.
 
    >[!NOTE]
    >
@@ -105,18 +105,19 @@ Complete los siguientes pasos para agregar una propiedad personalizada a todos l
 
    >[!NOTE]
    >
-   >Las propiedades comunes de todos los recursos que agregue aparecerán en la ficha básica de las propiedades del recurso. De forma predeterminada, las propiedades comunes agregadas para todos los recursos aparecen en la página de propiedades, así como en la página de creación de recursos. Para ocultar las propiedades comunes, debe.
+   >Las propiedades comunes de todos los recursos que agregue aparecerán en la ficha básica de las propiedades del recurso. De forma predeterminada, las propiedades comunes agregadas para todos los recursos aparecen en la página de propiedades, así como en la página de creación de recursos. Para ocultar las propiedades comunes, debe <!--link to show / hide properties]-->.
 
-### Escenario: Añadir valores y listas desplegables personalizados en un campo o propiedad personalizada {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
+### Escenario: Añadir la lista desplegable y los valores personalizados a una propiedad o campo personalizados {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
 Este escenario muestra cómo se puede agregar una propiedad personalizada a todos los tipos de recursos y agregar valores desplegables.
 
-1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-1. Bajo el nodo de superposición recientemente creado (/apps/fd/cm/ma/gui/content/cmmetadataproperties/common properties/col1/items)Cree un nodo para cada una de las propiedades (campos) para las que necesita crear una lista desplegable (aquí `geographicallocation`) del tipo nt:unstructure.
-1. Añada las siguientes propiedades en el nodo (aquí asignación geográfica) y haga clic en **Guardar todo**:
+1. En el nodo de superposición recién creado (/apps/fd/cm/ma/gui/content/cmmetadataproperties/common properties/col1/items)
+Cree un nodo para cada una de las propiedades (campos) para las que necesita crear una lista desplegable (aquí `geographicallocation`) del tipo nt:unestructure.
+1. Añada las siguientes propiedades en el nodo (aquí geographiclocation) y haga clic en **Guardar todo**:
 
    <table>
    <tbody>
@@ -133,7 +134,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
    <tr>
       <td>name</td>
       <td>Cadena</td>
-      <td>./extendedproperties/geographiclocation (Mantenga el mismo valor que el nombre del campo creado en el nodo items)</td>
+      <td>./extendedproperties/geographiclocation (Mantenga el valor igual que el nombre del campo creado en el nodo items)</td>
    </tr>
    <tr>
       <td>representarReadOnly</td>
@@ -143,28 +144,28 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
    <tr>
       <td>sling:resourceType</td>
       <td>Cadena</td>
-      <td>granito/ui/componentes/coral/fundación/formulario/seleccionar<br /> </td>
+      <td>granito/ui/components/coral/foundation/form/select<br /> </td>
    </tr>
    </tbody>
    </table>
 
 1. En el nodo de propiedad (aquí asignación geográfica), agregue un nuevo nodo con el nombre `items`. En el nodo items, agregue un nodo para cada uno de los valores de la lista desplegable. Como práctica recomendada, agregue el primer nodo como en blanco para que sirva como valor predeterminado de la lista desplegable y una opción para que el usuario no especifique ningún valor para el campo. Para agregar varias opciones o valores desplegables, repita los siguientes pasos:
 
-   1. Haga clic con el botón derecho en el nodo de propiedad (aquí asignación geográfica) y seleccione **Crear** > **Crear nodo**.
-   1. Escriba el nombre del campo como tipo de `item1,` retención como nt:unestructure y haga clic en **Aceptar**.
-   1. Añada las siguientes propiedades al nodo recién creado (aquí elemento1) y haga clic en **Guardar todo**:
+   1. Haga clic con el botón derecho en el nodo de propiedad (aquí geographiclocation) y seleccione **Crear** > **Crear nodo**.
+   1. Escriba el nombre del campo como `item1,` retener tipo como nt:unestructure y haga clic en **Aceptar**.
+   1. Añada las siguientes propiedades al nodo recién creado (aquí item1) y haga clic en **Guardar todo**:
 
       <table>
          <tbody>
          <tr>
           <td><strong>Nombre</strong></td>
           <td><strong>Tipo</strong></td>
-          <td><strong>Value</strong></td>
+          <td><strong>Valor</strong></td>
          </tr>
          <tr>
           <td>text</td>
           <td>Cadena</td>
-          <td>Es el valor de la opción desplegable que está visible para el usuario. Déjelo en blanco para el valor en blanco (predeterminado) o introduzca el valor, como <strong>Internacional</strong> o <strong>En EE.UU</strong>.<br /> </td>
+          <td>Es el valor de la opción desplegable que está visible para el usuario. Déjelo en blanco para el valor en blanco (predeterminado) o introduzca el valor, como <strong>Internacional</strong> o <strong>En EE.UU.</strong>.<br /> </td>
          </tr>
          <tr>
           <td>seleccionado</td>
@@ -174,7 +175,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
          </tbody>
    </table>
 
-   ![personalización dropdownvaluescrxde](assets/customizationdropdownvaluescrxde.png)
+   ![personalizacióndropdownvaluescrxde](assets/customizationdropdownvaluescrxde.png)
 
 El menú desplegable personalizado aparece como sigue en las propiedades de los recursos:
 
@@ -191,7 +192,7 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta denominada cmmetadataproperties con una ruta o estructura similar a la carpeta cmmetadataproperties (ubicada en la carpeta de contenido) siguiendo estos pasos:
 
-   1. Haga clic con el botón derecho en la carpeta cmmetadataproperties en la siguiente ruta y seleccione Nodo **de** superposición:
+   1. Haga clic con el botón derecho en la carpeta cmmetadataproperties en la siguiente ruta y seleccione **Nodo superpuesto**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties`
 
@@ -217,11 +218,11 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
 
       ![Crear nodo](assets/cmmetadatapropertiescreatenode.png)
 
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** common tab (o el nombre que desea asignar a esta propiedad)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en el nuevo nodo que ha creado (aquí, ficha común). CRX muestra las propiedades del nodo.
    1. Añada las siguientes propiedades en el nodo (aquí, ficha común):
@@ -231,7 +232,7 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
          <tr>
           <td><strong>Nombre</strong></td>
           <td><strong>Tipo</strong></td>
-          <td><strong>Value</strong></td>
+          <td><strong>Valor</strong></td>
          </tr>
          <tr>
           <td>jcr:title</td>
@@ -241,7 +242,7 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
          <tr>
           <td>sling:resourceType</td>
           <td>Cadena</td>
-          <td>granito/ui/componentes/coral/cimientos/contenedor<br /> </td>
+          <td>granito/ui/componentes/coral/fundación/contenedor<br /> </td>
    </tr>
          </tbody>
        </table>
@@ -251,36 +252,36 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
 1. Para el nodo de ficha creado en el último paso (aquí, ficha en común), cree un nodo denominado elemento con el siguiente paso:
 
    1. Haga clic con el botón derecho en el nodo relevante (aquí, ficha común) y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** elementos
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en **Guardar todo:**
 
 1. En el nodo de elementos que creó en el paso anterior (en la ficha Completo), agregue un nodo para crear una columna (aquí Columna1) en la ficha personalizada (ficha Completo) siguiendo los pasos siguientes (para agregar más columnas, repita este paso):
 
-   1. Haga clic con el botón derecho en el nodo elementos y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en el nodo items y seleccione **Crear** > **Crear nodo**.
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** Columna1 (o el nombre que desea asignar al nodo; este nombre no aparece en la interfaz de usuario).
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
-   1. Añada la siguiente propiedad al nodo (Aquí Columna1) y, a continuación, haga clic en **Guardar todo**:
+   1. Añada la siguiente propiedad al nodo (Aquí Columna1) y haga clic en **Guardar todo**:
 
       <table>
          <tbody>
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Value</strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>sling:resourceType</td>
            <td>Cadena</td>
-           <td>granito/ui/componentes/coral/cimientos/contenedor<br /> </td>
+           <td>granito/ui/componentes/coral/fundación/contenedor<br /> </td>
          </tr>
          </tbody>
        </table>
@@ -288,26 +289,26 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
 1. En el nodo creado en el paso anterior (aquí Columna1), agregue un nodo denominado elementos mediante los siguientes pasos:
 
    1. Haga clic con el botón derecho en el nodo (aquí Columna1) y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** elementos
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en **Guardar todo**.
 
-1. Para crear un campo en la ficha personalizada (aquí Destinatarios), agregue un nodo (aquí GeographicLocation). Esta propiedad corresponde a la columna que ha creado. Siga los pasos siguientes para crear el campo (para crear más campos/nodos, repita estos pasos).:
+1. Para crear un campo en la ficha personalizada (aquí Destinatarios), agregue un nodo (aquí GeographicLocation). Esta propiedad corresponde a la columna que ha creado. Siga los pasos siguientes para crear el campo (para crear más campos/nodos, repita estos pasos).::
 
-   1. Haga clic con el botón derecho en el nodo elementos y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en el nodo items y seleccione **Crear** > **Crear nodo**.
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** GeographicLocation (u otro nombre para la propiedad field)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Añada las siguientes propiedades en el nodo de campo (aquí GeographicLocation) y haga clic en **Guardar todo**.
 
-      | **Nombre** | **Tipo** | **Value** |
+      | **Nombre** | **Tipo** | **Valor** |
       |---|---|---|
       | fieldLabel | Cadena | Ubicación de destinatarios (o el nombre que desea asignar al campo). |
       | name | Cadena | ./extendedproperties/GeographicLocation |
@@ -322,7 +323,7 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[assettype]/items/tabs/items`
 
-   1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
@@ -338,12 +339,12 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
 
 1. En la carpeta de elementos recién creada, agregue un nodo para la ficha personalizada del recurso (aquí mytab - este nombre no se muestra en la interfaz de usuario) mediante los siguientes pasos:
 
-   1. Haga clic con el botón derecho en la carpeta de elementos y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en la carpeta items y seleccione **Crear** > **Crear nodo**.
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** mytab (o el nombre que desea asignar a esta propiedad)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en el nuevo nodo que ha creado (aquí mytab). CRX muestra las propiedades del nodo.
    1. Añada las dos propiedades siguientes al nodo (aquí customtab):
@@ -353,7 +354,7 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Value</strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>path<br /> </td>
@@ -363,14 +364,14 @@ Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los
          <tr>
            <td>sling:resourceType</td>
            <td>Cadena</td>
-           <td>granite/ui/components/coral/foundation/include<br /> </td>
+           <td>granito/ui/components/coral/foundation/include<br /> </td>
          </tr>
          </tbody>
        </table>
 
    1. Haga clic en **Guardar todo**.
 
-1. Para vista de la personalización, pase el ratón sobre el recurso correspondiente (aquí una letra), haga clic en Propiedades de la Vista y, a continuación, haga clic en **Editar**. La nueva ficha (Destinatarios) y el nuevo campo (Ubicación de Destinatarios) aparecen en la interfaz de usuario.
+1. Para realizar la vista de la personalización, pase el ratón por encima del recurso relevante (aquí una letra), haga clic en Propiedades de la Vista y, a continuación, haga clic en **Editar**. La nueva ficha (Destinatarios) y el nuevo campo (Ubicación de Destinatarios) aparecen en la interfaz de usuario.
 
    >[!NOTE]
    >
@@ -398,11 +399,11 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
-   [AssetType] = texto, condición, lista, letra, datos adictivos o fragmento
+   [AssetType] = texto, condición, lista, letra, datadictivo o fragmento
 
    A continuación se indican los pasos para crear esta estructura de carpetas:
 
-   1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
@@ -414,7 +415,7 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **Ruta:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tab/items
+      **Ruta:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/[AssetType]/items/tab/items
 
       **Ubicación:** /apps/
 
@@ -426,17 +427,17 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 
 1. En la carpeta de elementos recién creada, agregue un nodo para la ficha personalizada en el recurso (Ejemplo: custom tab) siguiendo estos pasos:
 
-   1. Haga clic con el botón derecho en la carpeta de elementos y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en la carpeta items y seleccione **Crear** > **Crear nodo**.
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** customtab (o el nombre que desea asignar a esta propiedad)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en el nuevo nodo que ha creado (aquí customtab). CRX muestra las propiedades del nodo.
    1. Añada las dos propiedades siguientes al nodo (aquí customtab):
 
-      | **Nombre** | **Tipo** | **Value** |
+      | **Nombre** | **Tipo** | **Valor** |
       |---|---|---|
       | sling:resourceType | Cadena | granito/ui/componentes/coral/cimientos/contenedor |
       | jcr:title | Cadena | Nombre del campo en la interfaz de usuario (aquí Mi ficha) |
@@ -445,37 +446,37 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 
 1. En el nodo que creó en el paso anterior (aquí customtab), agregue un nodo denominado elementos mediante los siguientes pasos:
 
-   1. Haga clic con el botón derecho en el nodo (aquí personaliztab) y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en el nodo (aquí customtab) y seleccione **Crear** > **Crear nodo**.
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** elementos
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en **Guardar todo**.
 
 1. En el nodo de elementos que creó en el paso anterior (en la ficha personalizada), agregue un nodo para crear una columna (aquí Columna1) en la ficha personalizada mediante los siguientes pasos (para agregar más columnas, repita este paso):
 
-   1. Haga clic con el botón derecho en el nodo elementos y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en el nodo items y seleccione **Crear** > **Crear nodo**.
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** Columna1 (o el nombre que desea asignar al nodo)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
-   1. Añada la siguiente propiedad al nodo (Aquí Columna1) y, a continuación, haga clic en **Guardar todo**.
+   1. Añada la siguiente propiedad al nodo (Aquí Columna1) y haga clic en **Guardar todo**.
 
       <table>
          <tbody>
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Value</strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>sling:resourceType</td>
            <td>Cadena</td>
-           <td>granito/ui/componentes/coral/cimientos/contenedor<br /> </td>
+           <td>granito/ui/componentes/coral/fundación/contenedor<br /> </td>
          </tr>
          </tbody>
        </table>
@@ -483,33 +484,33 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 1. Para cada columna que cree (como se especifica en el paso anterior - aquí Columna1), cree un nodo denominado elemento mediante los siguientes pasos:
 
    1. Haga clic con el botón derecho en el nodo de columna correspondiente (aquí Columna1) y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** elementos
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en **Guardar todo:**
 
 1. Para cada una de las columnas creadas, cree un nodo en el nodo items para crear un campo en la nueva ficha de la interfaz de usuario. Repita este paso para crear más campos en la columna:
 
    1. Haga clic con el botón derecho en el nodo relevante (aquí elementos en Columna1) y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
-      **Nombre:** Un nombre de su elección (aquí GeoLocation)
+      **Nombre:** nombre de su elección (aquí GeoLocation)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
-   1. Añada las siguientes propiedades en el nodo y haga clic en **Guardar todo**.
+   1. Añada las siguientes propiedades al nodo y haga clic en **Guardar todo**.
 
-      | **Nombre** | **Tipo** | **Value** |
+      | **Nombre** | **Tipo** | **Valor** |
       |---|---|---|
       | fieldLabel | Cadena | Ubicación de destinatarios (o el nombre que desea asignar al campo). |
       | name | Cadena | `./extendedproperties/GeoLocation` |
       | representarReadOnly | Booleano | verdadero |
       | sling:resourceType | Cadena | granito/ui/componentes/coral/fundación/formulario/campo de texto |
 
-1. Para vista de la personalización, pase el ratón sobre el recurso correspondiente (aquí un texto), haga clic en Propiedades de la Vista y, a continuación, haga clic en **Editar**. La nueva ficha y campo (Ubicación de Destinatarios) aparecen en la interfaz de usuario.
+1. Para vista de la personalización, pase el ratón sobre el recurso relevante (aquí un texto), haga clic en Propiedades de la Vista y, a continuación, haga clic en **Editar**. La nueva ficha y campo (Ubicación de Destinatarios) aparecen en la interfaz de usuario.
 
    >[!NOTE]
    >
@@ -521,13 +522,13 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 
 De forma predeterminada, las propiedades personalizadas agregadas a las fichas nuevas solo son visibles en la página de propiedades y no en la página de creación de recursos, ya que la página de creación de recursos no tiene presentación de fichas. Para mostrar las propiedades personalizadas en la página de creación de recursos junto con otras propiedades, debe hacer lo siguiente:
 
-1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
    `/libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
 1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores, por letra. Para otros tipos de recursos, la ruta se indica en la tabla siguiente:
 
-   **Ruta:** /libs/fd/cm/ma/gui/content/createAsset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/properties/items/letterproperties/items
+   **Ruta:** /libs/fd/cm/ma/gui/content/create_asset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/properties/items/letterproperties/items
 
    **Ubicación:** /apps/
 
@@ -545,7 +546,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las fichas n
 
 1. Haga clic en **Aceptar**. La estructura de carpetas se crea en la carpeta de aplicaciones.
 
-1. En el nodo de elementos de superposición que ha creado, cree un nodo con el nombre col4 (o cualquier otro nombre) y haga clic en **Guardar todo**.
+1. Bajo el nodo elementos de superposición que ha creado, cree un nodo con el nombre col4 (o cualquier otro nombre) y haga clic en **Guardar todo**.
 
    Por ejemplo, a continuación se muestra el nodo de superposición creado para las letras.
 
@@ -558,7 +559,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las fichas n
   <tr>
    <td><strong>Nombre</strong></td>
    <td><strong>Tipo</strong></td>
-   <td><strong>Value</strong></td>
+   <td><strong>Valor</strong></td>
   </tr>
   <tr>
    <td>path</td>
@@ -572,7 +573,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las fichas n
   <tr>
    <td>sling:resourceType</td>
    <td>Cadena</td>
-   <td> granite/ui/components/coral/foundation/include<br /> </td>
+   <td> granito/ui/components/coral/foundation/include<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -581,7 +582,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las fichas n
 
 Propiedad personalizada, Idioma, que aparece en la interfaz de usuario para crear una carta
 
-## Personalizar la vista de lista para mostrar las propiedades personalizadas {#customize-the-list-view-to-show-custom-properties}
+## Personalice la vista de lista para mostrar propiedades personalizadas {#customize-the-list-view-to-show-custom-properties}
 
 Después de agregar una propiedad personalizada a los recursos de Administración de correspondencia, debe realizar más cambios en CRX/DE para asegurarse de que la propiedad personalizada se muestra en la interfaz de usuario de Administración de correspondencia.
 
@@ -594,13 +595,13 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
 
    A continuación se indican los pasos para crear esta estructura de carpetas:
 
-   1. Haga clic con el botón derecho en la carpeta de columnas de la siguiente ruta y seleccione Nodo **de** superposición:
+   1. Haga clic con el botón derecho en la carpeta columns en la siguiente ruta y seleccione **Overlay Node**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **Ruta:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/vistas/listas/columnas
+      **Ruta:** /libs/fd/cm/gui/content/cmassets/jcr:content/vistas/listas/columnas
 
       **Ubicación:** /apps/
 
@@ -612,21 +613,21 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
 
 1. Para cada una de las propiedades creadas, cree un nodo en el nodo de columnas para crear una columna en la interfaz de usuario. Repita este paso para crear más columnas en la interfaz de usuario:
 
-   1. Haga clic con el botón derecho en el nodo (columnas) correspondiente y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en el nodo (columnas) relevante y seleccione **Crear** > **Crear nodo**.
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
-      **Nombre:** Un nombre de su elección (aquí GeographicLocation)
+      **Nombre:** Nombre de su elección (aquí GeographicLocation)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
-   1. Añada las siguientes propiedades en el nodo y haga clic en **Guardar todo**.
+   1. Añada las siguientes propiedades al nodo y haga clic en **Guardar todo**.
 
       <table>
          <tbody>
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Value</strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>jcr:primaryType</td>
@@ -652,13 +653,13 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
 
    A continuación se indican los pasos para crear esta estructura de carpetas:
 
-   1. Haga clic con el botón derecho en la carpeta de columnas de la siguiente ruta y seleccione Nodo **de** superposición:
+   1. Haga clic con el botón derecho en la carpeta columns en la siguiente ruta y seleccione **Overlay Node**:
 
       `/libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage`
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **Ruta:** /libs/fd/cm/ma/gui/components/admin/child/pagerenderer/child-page
+      **Ruta:** /libs/fd/cm/ma/gui/components/admin/child-pagerenderer/child-pagePágina
 
       **Ubicación:** /apps/
 
@@ -730,7 +731,7 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
 
    La columna UI y la propiedad agregadas en este procedimiento se muestran para todos los tipos de recursos. Sin embargo, los valores de estas propiedades se pueden introducir y mostrar solo para los tipos de recursos para los que se agregó originalmente la propiedad personalizada.
 
-   Por ejemplo, con el escenario: Si Añade propiedades personalizadas para tipos de recursos específicos y agrega una propiedad personalizada a los recursos de texto, puede introducir propiedades personalizadas solo para los recursos de texto. Sin embargo, si muestra esa propiedad personalizada en la interfaz de usuario, la columna aparece para todos los tipos de recursos.
+   Por ejemplo, con el escenario: Si añade propiedades personalizadas para tipos de recursos específicos y agrega una propiedad personalizada a los recursos de texto, puede introducir propiedades personalizadas solo para los recursos de texto. Sin embargo, si muestra esa propiedad personalizada en la interfaz de usuario, la columna aparece para todos los tipos de recursos.
 
    ![custompropertyinlistview](assets/custompropertyinlistview.png)
 
@@ -741,7 +742,7 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
   <tr>
    <td><strong>Nombre</strong></td>
    <td><strong>Tipo</strong></td>
-   <td><strong>Value</strong></td>
+   <td><strong>Valor</strong></td>
   </tr>
   <tr>
    <td>sling:orderBefore</td>
@@ -770,27 +771,27 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 1. Vaya a `/oak:index/cmLucene`y agregue un nodo denominado **agregados** debajo de él.
 
    1. Haga clic con el botón derecho en la carpeta cmLucene y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** agregados
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en **Guardar todo**.
 
 1. En la carpeta de agregados recién creada, agregue un nodo cm:resource. Y en cm:resource, agregue un nodo llamado include0.
 
-   1. Haga clic con el botón derecho en la carpeta de agregados y seleccione **Crear** > **Crear nodo**. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en la carpeta de agregados y seleccione **Crear** > **Crear nodo**. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** cm:recurso
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
-   1. Haga clic con el botón derecho en la carpeta cm:resource y seleccione **Crear** > **Crear nodo**. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en la carpeta cm:resource y seleccione **Crear** > **Crear nodo**. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** include0
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en el nuevo nodo que ha creado (aquí include0). CRX muestra las propiedades del nodo.
    1. Añada la siguiente propiedad al nodo (aquí include0):
@@ -800,7 +801,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Value</strong></td>
+           <td><strong>Valor</strong></td>
          </tr>
          <tr>
            <td>path</td>
@@ -817,16 +818,16 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    Repita este paso para cada una de las propiedades personalizadas que desee agregar a la búsqueda.
 
    1. Haga clic con el botón derecho en la carpeta de propiedades y seleccione **Crear** > **Crear nodo**.
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los valores siguientes y haga clic en **Aceptar**:
 
       **Nombre:** ubicación (o el nombre de la propiedad personalizada que desea agregar a la búsqueda)
 
-      **Tipo:** nt:no estructurado
+      **Tipo:** nt:no estructurados
 
    1. Haga clic en el nuevo nodo que ha creado (aquí ubicación). CRX muestra las propiedades del nodo.
    1. Añada las siguientes propiedades en el nodo (aquí ubicación):
 
-      | **Nombre** | **Tipo** | **Value** |
+      | **Nombre** | **Tipo** | **Valor** |
       |---|---|---|
       | analizado | Cadena | verdadero |
       | name | Cadena | expandedProperties/location (o el nombre de la propiedad que desea agregar a la búsqueda) |
@@ -848,13 +849,13 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta con el nombre lista con una ruta/estructura similar a la carpeta de listas ubicada en /libs/granite/ui/content/shell/omnisearch/searchresults/singlerresults/vistas:
 
-   1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list`
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **Ruta:** /libs/granite/ui/content/shell/omnisearch/searchresults/singlerults/vistas/lista
+      **Ruta:** /libs/granite/ui/content/shell/omnisearch/searchresults/singlerresults/vistas/lista
 
       **Ubicación:** /apps/
 
@@ -871,7 +872,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Value</strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
@@ -881,20 +882,20 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    </tbody>
    </table>
 
-1. La personalización muestra los resultados de búsqueda en la vista de Listas para todas las consolas, incluidos Formularios y Documentos, Recursos y Sitios.
+1. La personalización muestra los resultados de búsqueda en la vista de Listas para todas las consolas, incluidos Forms y Documentos, Recursos y Sitios.
 
 ## Cambiar la vista predeterminada de la página de recursos {#change-default-view-of-the-assets-page}
 
 >[!NOTE]
 >
->Estos pasos cambian la vista predeterminada de todas las consolas, como Formularios y Documentos, Recursos y Sitios.
+>Estos pasos cambian la vista predeterminada de todas las consolas, como Forms y Documentos, Recursos y Sitios.
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta con el nombre lista con una ruta/estructura similar a la carpeta de listas ubicada en:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/vistas/
 
-   1. Haga clic con el botón derecho en la carpeta items de la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta items en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list`
 
@@ -917,7 +918,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Value</strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
@@ -934,14 +935,14 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 Para mostrar u ocultar las propiedades personalizadas, complete los siguientes pasos:
 
 1. Bajo el nodo de propiedad personalizado, como la asignación geográfica, cree un nuevo nodo con el nombre &quot;granite:rendercondition&quot; de tipo &quot;nt:unstructure&quot;.
-1. Añada la propiedad siguiente en el nodo y haga clic en **Guardar todo**:
+1. Añada la siguiente propiedad al nodo y haga clic en **Guardar todo**:
 
    <table>
    <tbody>
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Value</strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>sling:resourceType<br /> </td>
@@ -958,7 +959,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Value</strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>hideOnCreate<br /> </td>
@@ -975,7 +976,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Value</strong></td>
+      <td><strong>Valor</strong></td>
    </tr>
    <tr>
       <td>hideOnEdit<br /> </td>
@@ -985,4 +986,4 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    </tbody>
    </table>
 
-   Para volver a mostrar los valores, restablezca los valores de propiedad `false` o elimine las entradas de propiedad.
+   Para volver a mostrar los valores, restablezca los valores de propiedad a `false` o elimine las entradas de propiedad.
