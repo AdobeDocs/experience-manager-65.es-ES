@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 0%
 
 ---
 
@@ -30,13 +33,13 @@ El estándar HTTP especifica las caducidad de los archivos (consulte, por ejempl
 >
 >Esta configuración está completamente separada (y no funcionará para) el despachante.
 >
->El Dispatcher tiene como objetivo almacenar en caché los datos frente a AEM.
+>El propósito del despachante es almacenar en caché los datos delante de AEM.
 
 Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden y deben almacenarse en caché. La configuración del servidor Apache HTTPD podría tener el aspecto siguiente: según el entorno:
 
 >[!CAUTION]
 >
->Debe tener cuidado al definir el período de tiempo durante el cual un objeto se considera actualizado. Como *no hay comprobación hasta que el período de tiempo especificado haya caducado*, el cliente puede terminar presentando contenido antiguo de la caché.
+>Debe tener cuidado al definir el período de tiempo durante el cual un objeto se considera actualizado. Dado que *no hay comprobación hasta que el período de tiempo especificado haya caducado*, el cliente puede terminar presentando contenido antiguo de la caché.
 
 1. **Para una instancia de Autor:**
 
@@ -50,7 +53,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un mes, hasta que caduquen. Esto significa que no es necesario solicitarlas desde AEM ni desde el servidor web, pero sí que pueden permanecer en la caché del navegador.
+   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un mes, hasta que caduquen. Esto significa que no es necesario solicitarlas a AEM o al servidor web, pero sí pueden permanecer en la caché del explorador.
 
    Otras secciones del sitio no deben almacenarse en caché en una instancia de autor, ya que están sujetas a cambios en cualquier momento.
 
@@ -72,7 +75,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un día como máximo en las memorias caché del cliente. Aunque este ejemplo ilustra la configuración global de todo lo que se encuentra debajo `/content` y `/etc/designs`, debe hacerlo más granular.
+   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un día como máximo en las memorias caché del cliente. Aunque este ejemplo ilustra la configuración global de todo lo que está por debajo de `/content` y `/etc/designs`, debe hacerlo más granular.
 
    Según la frecuencia con la que se actualice el sitio, también puede considerar la posibilidad de almacenar en caché páginas HTML. Un período de tiempo razonable sería de 1 hora:
 
@@ -82,4 +85,4 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-Después de configurar los objetos estáticos, analice `request.log`la opción, mientras selecciona las páginas que contienen dichos objetos, para confirmar que no se están realizando solicitudes (innecesarias) para los objetos estáticos.
+Después de configurar los objetos estáticos, analice `request.log`, mientras selecciona las páginas que contienen dichos objetos, para confirmar que no se están realizando solicitudes (innecesarias) para los objetos estáticos.
