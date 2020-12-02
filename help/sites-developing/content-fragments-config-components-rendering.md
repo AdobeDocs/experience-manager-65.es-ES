@@ -1,8 +1,8 @@
 ---
-title: Fragmentos de contenido Configuración de componentes para procesamiento
-seo-title: Fragmentos de contenido Configuración de componentes para procesamiento
-description: Fragmentos de contenido Configuración de componentes para procesamiento
-seo-description: Fragmentos de contenido Configuración de componentes para procesamiento
+title: Fragmentos de contenido Configurar componentes para procesamiento
+seo-title: Fragmentos de contenido Configurar componentes para procesamiento
+description: Fragmentos de contenido Configurar componentes para procesamiento
+seo-description: Fragmentos de contenido Configurar componentes para procesamiento
 uuid: 3f5aaf36-e6a7-4a3c-b305-e35ebcc98d0d
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -11,19 +11,22 @@ discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 9%
 
 ---
 
 
-# Fragmentos de contenido Configuración de componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
+# Fragmentos de contenido Configurar componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
 
-Existen varios servicios [](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) avanzados relacionados con la representación de fragmentos de contenido. Para utilizar estos servicios, los tipos de recursos de dichos componentes deben darse a conocer al marco de fragmentos de contenido.
+Existen varios [servicios avanzados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relacionados con la representación de fragmentos de contenido. Para utilizar estos servicios, los tipos de recursos de dichos componentes deben darse a conocer al marco de fragmentos de contenido.
 
-Esto se realiza configurando la configuración [del componente de fragmento de contenido del servicio](#osgi-service-content-fragment-component-configuration)OSGi.
+Esto se lleva a cabo configurando la [Configuración del componente de fragmento de contenido del servicio OSGi](#osgi-service-content-fragment-component-configuration).
 
 >[!CAUTION]
 >
->Si no necesita los servicios [](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) avanzados que se describen a continuación, puede omitir esta configuración.
+>Si no necesita los [servicios avanzados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) que se describen a continuación, puede ignorar esta configuración.
 
 >[!CAUTION]
 >
@@ -35,14 +38,14 @@ Esto se realiza configurando la configuración [del componente de fragmento de c
 >
 >Por lo tanto, se recomienda utilizar los componentes principales.
 
-## Definición de servicios avanzados que requieren configuración {#definition-of-advanced-services-that-need-configuration}
+## Definición de los servicios avanzados que necesitan configuración {#definition-of-advanced-services-that-need-configuration}
 
 Los servicios que requieren el registro de un componente son:
 
 * Determinar las dependencias correctamente durante la publicación (es decir, asegurarse de que los fragmentos y modelos se pueden publicar automáticamente con una página si han cambiado desde la última publicación).
 * Compatibilidad con fragmentos de contenido en la búsqueda de texto completo.
-* Administración/administración de contenido intermedio *en el medio.*
-* Gestión y gestión de los recursos de medios *mixtos.*
+* Administración/administración de *contenido intermedio.*
+* Administración/administración de *recursos de medios mixtos.*
 * Despegue del despachante para fragmentos a los que se hace referencia (si se vuelve a publicar una página que contiene un fragmento).
 * Mediante el procesamiento basado en párrafos.
 
@@ -50,7 +53,7 @@ Si necesita una o más de estas funciones, entonces (normalmente) es más fácil
 
 ## Servicio OSGi - Configuración del componente de fragmento de contenido {#osgi-service-content-fragment-component-configuration}
 
-La configuración debe estar enlazada a la Configuración **del componente de fragmento de** contenido del servicio OSGi:
+La configuración debe enlazarse al servicio OSGi **Configuración del componente de fragmento de contenido**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
@@ -74,7 +77,7 @@ La configuración OSGi es:
   <tr>
    <td><strong>Tipo de medio</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>El tipo de recurso que se va a registrar;p. ej. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>El tipo de recurso que se va a registrar; p. ej. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Propiedad Reference</strong></td>
@@ -84,12 +87,12 @@ La configuración OSGi es:
   <tr>
    <td><strong>Propiedad Element(s)</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>El nombre de la propiedad que contiene los nombres de los elementos que se van a procesar;p. ej.<code>elementName</code></td>
+   <td>El nombre de la propiedad que contiene los nombres de los elementos que se van a procesar; p. ej.<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Propiedad de variación</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>El nombre de la propiedad que contiene el nombre de la variación que se va a procesar;p. ej.<code>variationName</code></td>
+   <td>El nombre de la propiedad que contiene el nombre de la variación que se va a procesar; p. ej.<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -104,15 +107,15 @@ Para algunas funciones (por ejemplo, para representar solo un rango de párrafos
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Una propiedad de cadena que define el rango de párrafos que se van a generar si se encuentra en el modo <em>de procesamiento de un elemento</em>único.</p> <p>Formato:</p>
+   <td><p>Una propiedad de cadena que define el rango de párrafos que se van a generar si se encuentra en <em>modo de procesamiento de un solo elemento</em>.</p> <p>Formato:</p>
     <ul>
      <li><code>1</code> o <code>1-3</code> o <code>1-3;6;7-8</code> o <code>*-3;5-*</code></li>
-     <li>solo se evalúa si <code>paragraphScope</code> se configura en <code>range</code></li>
+     <li>solo se evalúa si <code>paragraphScope</code> está establecido en <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Una propiedad de cadena que define cómo se van a generar los párrafos si se encuentran en el modo <em>de representación de un elemento</em>único.</p> <p>Valores:</p>
+   <td><p>Una propiedad de cadena que define cómo se van a generar los párrafos si se encuentra en <em>modo de procesamiento de un solo elemento</em>.</p> <p>Valores:</p>
     <ul>
      <li><code>all</code> :: para procesar todos los párrafos</li>
      <li><code>range</code> :: para representar el rango de párrafos proporcionado por <code>paragraphRange</code></li>
