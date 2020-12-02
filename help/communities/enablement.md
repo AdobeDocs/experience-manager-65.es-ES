@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Configuración de las funciones de habilitación {#configuring-enablement-features}
+# Configuración de las características de habilitación {#configuring-enablement-features}
 
 ## Información general {#overview}
 
-Las funciones de habilitación permiten crear comunidades [de](overview.md#enablement-community)habilitación.
+Las funciones de habilitación permiten crear [comunidades de habilitación](overview.md#enablement-community).
 
 * Esta función requiere licencias adicionales para su uso en un entorno de producción.
 
@@ -40,13 +40,13 @@ Instalación de:
 
 * **FFmpeg**
 
-   FFmpeg es una solución para convertir y transmitir audio y vídeo y, cuando se instala, se utiliza para una transcodificación adecuada de los recursos [de vídeo](../../help/sites-authoring/default-components-foundation.md#video). Para las comunidades de habilitación, se utiliza en el entorno del autor para obtener metadatos de los recursos cargados y generar una miniatura para mostrarla al enumerar el recurso.
+   FFmpeg es una solución para convertir y transmitir audio y vídeo y, cuando se instala, se utiliza para la transcodificación correcta de [Video Assets](../../help/sites-authoring/default-components-foundation.md#video). Para las comunidades de habilitación, se utiliza en el entorno del autor para obtener metadatos de los recursos cargados y generar una miniatura para mostrarla al enumerar el recurso.
 
 Configuración de:
 
 * **Administradores de la comunidad**
 
-   Para las comunidades de habilitación, solo se puede asignar la función de miembros del grupo de `Community Enablement Managers` usuarios `Community Site Enablement Manager`, cuyos permisos pueden incluir la creación de contenido, las asignaciones y la administración de miembros en el entorno de publicación.
+   Para las comunidades de habilitación, sólo se puede asignar la función de `Community Site Enablement Manager` a los miembros del grupo de usuarios `Community Enablement Managers`, cuyos permisos pueden incluir la creación de contenido, las asignaciones y la administración de miembros en el entorno de publicación.
 
 Configuración opcional de:
 
@@ -68,7 +68,7 @@ Cada paso enlaza a la documentación que proporciona los detalles necesarios.
 
    Utilizar consola web (paquetes): *http://localhost:4502/system/console/bundles*
 
-   Instalar *antes* de instalar el paquete SCORM
+   Instalar *antes de* instalar el paquete SCORM
 
 1. **[Instalación del paquete SCORM](deploy-communities.md#scorm-package)**
 
@@ -105,9 +105,9 @@ Cada paso enlaza a la documentación que proporciona los detalles necesarios.
 
 **En la instancia de autor:**
 
-1. (*Opcional*) **[Configurar el servicio Analytics](analytics.md)**
+1. (*Opcional*) **[Configurar el servicio de Analytics](analytics.md)**
 
-   Utilice la consola Herramientas, Implementación y Cloud Service: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Utilice la consola Herramientas, Implementación y Cloud Services: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[Configurar FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -130,4 +130,4 @@ Cada paso enlaza a la documentación que proporciona los detalles necesarios.
 
 ## Dispatcher {#dispatcher}
 
-Cuando la implementación incluye el Dispatcher [de](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, para que las funciones de habilitación funcionen correctamente, es necesario modificar las secciones `clientheader` y `filter` . Consulte [Configuración de Dispatcher para Comunidades](dispatcher.md#enablement).
+Cuando la implementación incluye [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que las características de habilitación funcionen correctamente, es necesario modificar las secciones `clientheader` y `filter`. Consulte [Configuración de Dispatcher para Comunidades](dispatcher.md#enablement).
