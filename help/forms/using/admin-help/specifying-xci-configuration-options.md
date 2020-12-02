@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +29,7 @@ Forms le permite especificar un archivo XCI personalizado que utilizará para el
 
 Puede seleccionar opciones que cancelen la anulación de las opciones enumeradas anteriormente, en cuyo caso Forms utilizará los valores especificados en el archivo XCI personalizado.
 
-1. En la consola de administración, haga clic en Servicios > Formularios.
+1. En la consola de administración, haga clic en Servicios > Forms.
 1. Active o desactive la casilla de verificación Usar opciones XCI predeterminadas del sistema. Cuando se selecciona esta opción, Forms utiliza sus valores predeterminados para los ajustes de paquetes, creador, productor y compressObjectStream. Cuando se anula la selección de esta opción, Forms utiliza los valores especificados en el archivo XCI personalizado.
 1. Haga clic en Guardar.
 
