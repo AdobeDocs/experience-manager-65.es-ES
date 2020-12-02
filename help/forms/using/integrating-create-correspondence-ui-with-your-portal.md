@@ -11,6 +11,9 @@ discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +37,7 @@ Por ejemplo: el portal personalizado prepararía la dirección URL como\
 
 >[!NOTE]
 >
->La llamada de este modo no es segura, ya que los parámetros necesarios se pasan como una solicitud GET, al exponer los mismos (claramente visibles) en la dirección URL.
+>La llamada de este modo no es segura, ya que los parámetros necesarios se pasan como una solicitud de GET, al exponer los mismos (claramente visibles) en la dirección URL.
 
 >[!NOTE]
 >
@@ -42,7 +45,7 @@ Por ejemplo: el portal personalizado prepararía la dirección URL como\
 
 ## Invocación basada en datos en línea {#inline-data-based-invocation}
 
-Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podría ser simplemente visitar la URL en https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, mientras se envían los parámetros y datos para llamar a la aplicación Crear correspondencia como una solicitud POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), lo que no era posible/ideal en el método anterior.
+Otra forma (y más segura) de llamar a la aplicación Crear correspondencia sería simplemente visitar la dirección URL en https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, mientras se enviaban los parámetros y datos para llamar a la aplicación Crear correspondencia como una solicitud de POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), lo que no era posible/ideal en el método anterior.
 
 ### Parámetros para especificar la letra {#parameters-for-specifying-letter}
 
@@ -94,7 +97,7 @@ El orden de los parámetros de la tabla especifica la preferencia de los paráme
   <tr>
    <td>cmPreview<br /> </td> 
    <td>Booleano</td> 
-   <td>True para abrir la letra en el modo de previsualización<br /> </td> 
+   <td>True para abrir la letra en modo de previsualización<br /> </td> 
   </tr>
   <tr>
    <td>Aleatorio</td> 
