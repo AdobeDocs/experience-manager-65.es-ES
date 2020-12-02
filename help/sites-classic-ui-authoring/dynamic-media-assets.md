@@ -1,6 +1,6 @@
 ---
-title: Trabajar con Dynamic Media
-seo-title: Trabajar con Dynamic Media
+title: Trabajo con Dynamic Media
+seo-title: Trabajo con Dynamic Media
 description: Dynamic Media ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento
 seo-description: Dynamic Media ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento
 uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
@@ -18,7 +18,7 @@ ht-degree: 57%
 ---
 
 
-# Trabajar con Dynamic Media{#working-with-dynamic-media}
+# Trabajo con Dynamic Media{#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
@@ -28,5 +28,5 @@ En la IU clásica, no es posible trabajar con Dynamic Media. Consulte [Uso de Dy
 
 >[!NOTE]
 >
->If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if [integrate Dynamic Media Classic into AEM](/help/sites-administering/scene7.md). See [enabling Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media está desactivado de forma predeterminada.
+>Si utiliza Dynamic Media, no puede utilizar cargas automáticas disponibles simultáneamente si [integra Dynamic Media Classic en AEM](/help/sites-administering/scene7.md). Consulte [activación de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media está desactivado de forma predeterminada.
 
