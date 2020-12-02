@@ -12,6 +12,9 @@ discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
@@ -28,21 +31,22 @@ La mejora permite auditar acciones de CRUD (Crear, Leer, Actualizar, Eliminar) e
 * Un usuario que se está agregando a un grupo
 * Cambios de permisos de un usuario o grupo existente
 
-De forma predeterminada, las entradas se escribirán en el `error.log` archivo. Para facilitar la supervisión, se recomienda que se redirijan a un archivo de registro independiente. Más información sobre cómo hacerlo en el párrafo siguiente.
+De forma predeterminada, las entradas se escribirán en el archivo `error.log`. Para facilitar la supervisión, se recomienda que se redirijan a un archivo de registro independiente. Más información sobre cómo hacerlo en el párrafo siguiente.
 
 ## Redireccionamiento del resultado a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
 
-Para redireccionar el resultado de registro a un archivo de registro independiente, deberá crear una nueva configuración del registrador de registros **Apache Sling** . Utilizaremos `useraudit.log` como nombre del archivo independiente en el ejemplo siguiente.
+Para redireccionar el resultado de registro a un archivo de registro independiente, deberá crear una nueva configuración de **registrador de registros de Apache Sling**. Utilizaremos `useraudit.log` como nombre del archivo independiente en el ejemplo siguiente.
 
 1. Vaya a la consola web navegando a *https://serveraddress:serverport/system/console/configMgr*
-1. Busque la configuración **del registrador de registros Sling de** Apache. A continuación, presione &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
+1. Busque **Configuración del registrador de registros de Apache Sling**. A continuación, presione &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
 1. Cree la siguiente configuración:
 
-   * **** Nivel de registro:Información
-   * **** Archivo de registro: logs/useraudit.log
-   * **** Patrón de mensajes: nivel predeterminado
-   * **** Registrador: com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
-   Para introducir ambos registradores en el campo **Registrador** , debe introducir el nombre del primero, luego crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
+   * **Nivel de registro:** información
+   * **Archivo de registro:** logs/useraudit.log
+   * **Patrón de mensajes:** nivel predeterminado
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
+   Para introducir ambos registros en el campo **Logger**, debe introducir el nombre del primero y luego crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
 
 ## Ejemplo de salida {#example-output}
 
