@@ -1,8 +1,8 @@
 ---
-title: Métodos abreviados de teclado para las consolas
-seo-title: Métodos abreviados del teclado para las consolas
-description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se usan en las consolas, mientras que otros se emplean para la edición de páginas.
-seo-description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se usan en las consolas, mientras que otros se emplean para la edición de páginas.
+title: 'Métodos abreviados del teclado para las consolas  '
+seo-title: 'Métodos abreviados del teclado para las consolas  '
+description: Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la edición de páginas.
+seo-description: Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la edición de páginas.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 100%
 
 ---
 
@@ -27,6 +30,7 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
    >
    >
 * Mac: **Cmd** + **clic** en los componentes necesarios.
+
 >
 
 
