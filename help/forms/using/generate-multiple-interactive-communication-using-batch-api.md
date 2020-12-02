@@ -68,7 +68,7 @@ Combina un registro con una plantilla de comunicación interactiva para producir
 
 ### Uso de la API por lotes con carpetas vigiladas {#using-the-batch-api-watched-folders}
 
-Para facilitar la experiencia de la API, los AEM Forms proporcionan un servicio de carpetas vigiladas configurado para utilizar la API de lotes de forma predeterminada. Puede acceder al servicio a través de la interfaz de usuario de AEM Forms para generar varias comunicaciones interactivas. También puede crear servicios personalizados según sus necesidades. Puede utilizar los métodos que se indican a continuación para utilizar la API por lotes con la carpeta Watched:
+Para facilitar la experiencia de la API, AEM Forms proporciona un servicio de carpetas vigiladas configurado para utilizar la API de lotes de forma predeterminada. Puede acceder al servicio a través de la interfaz de usuario de AEM Forms para generar varias comunicaciones interactivas. También puede crear servicios personalizados según sus necesidades. Puede utilizar los métodos que se indican a continuación para utilizar la API por lotes con la carpeta Watched:
 
 * Especificar datos de entrada (registros) en formato de archivo JSON para generar una comunicación interactiva
 * Utilizar datos de entrada (registros) guardados en un origen de datos externo y a los que se accede mediante un modelo de datos de formulario para generar una comunicación interactiva
@@ -79,15 +79,15 @@ Combina un registro con una plantilla de comunicación interactiva para producir
 
 Para crear una comunicación interactiva a partir de registros guardados en un archivo JSON:
 
-1. Cree una [carpeta](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) vigilada y configúrela para utilizar la API por lotes:
+1. Cree una [carpeta vigilada](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar la API por lotes:
    1. Inicie sesión en la instancia de creación de AEM Forms.
-   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Formularios]** > **[!UICONTROL Configurar carpeta]** vigilada. Toque **[!UICONTROL Nuevo]**.
+   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta vigilada]**. Toque **[!UICONTROL Nuevo]**.
    1. Especifique el **[!UICONTROL nombre]** y la **[!UICONTROL ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
-   1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]** .
-   1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo Nombre **** del servicio.
-   1. Especifique un patrón **[!UICONTROL de archivo]** de salida. Por ejemplo, el [patrón](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ especifica que la carpeta vigilada puede encontrar archivos de entrada en una subcarpeta de la carpeta Carpeta vigilada\input.
+   1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
+   1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre del servicio]**.
+   1. Especifique un patrón de **[!UICONTROL archivo de salida]**. Por ejemplo, el patrón %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) especifica que la carpeta vigilada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configurar parámetros avanzados:
-   1. Abra la ficha **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
+   1. Abra la ficha **[!UICONTROL Avanzado]** y agregue las siguientes propiedades personalizadas:
 
       | Propiedad | Tipo | Descripción |
       |--- |--- |--- |
@@ -97,19 +97,19 @@ Para crear una comunicación interactiva a partir de registros guardados en un a
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio incorporado no utiliza la opción de configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US |
 
-   1. Toque **[!UICONTROL Crear]** . Se crea la carpeta vigilada.
+   1. Puntee **[!UICONTROL Crear]** Se creará la carpeta vigilada.
 1. Utilice la carpeta controlada para generar una comunicación interactiva:
    1. Abra la carpeta vigilada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada y coloque el archivo JSON en la carpeta recién creada.
    1. Espere a que la carpeta vigilada procese el archivo. Cuando se procesan inicios, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta de ensayo.
    1. Abra la carpeta de salida para vista de la salida:
       * Al especificar la opción IMPRIMIR en Configuración de carpetas vigiladas, se genera la salida PDF para la comunicación interactiva.
-      * Cuando especifica la opción WEB en Configuración de carpetas vigiladas, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
+      * Cuando especifica la opción WEB en Configuración de carpetas vigiladas, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template).
       * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
 
 #### Utilice los datos de entrada guardados en un origen de datos externo y a los que se accede mediante el modelo de datos de formulario para generar una comunicación interactiva {#use-fdm-as-data-source}
 
-Los datos (registros) guardados en un origen de datos externo se combinan con una plantilla de comunicación interactiva para generar una comunicación interactiva. Cuando se crea una comunicación interactiva, se conecta a un origen de datos externo a través de un Modelo de datos de formulario (FDM) para acceder a los datos. Puede configurar el servicio de proceso por lotes Carpetas vigiladas para recuperar datos utilizando el mismo modelo de datos de formulario de un origen de datos externo. Para [crear una comunicación interactiva a partir de registros guardados en un origen](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html)de datos externo:
+Los datos (registros) guardados en un origen de datos externo se combinan con una plantilla de comunicación interactiva para generar una comunicación interactiva. Cuando se crea una comunicación interactiva, se conecta a un origen de datos externo a través de un Modelo de datos de formulario (FDM) para acceder a los datos. Puede configurar el servicio de proceso por lotes Carpetas vigiladas para recuperar datos utilizando el mismo modelo de datos de formulario de un origen de datos externo. Para [crear una comunicación interactiva a partir de registros guardados en un origen de datos externo](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
 
 1. Configure el modelo de datos de formulario de la plantilla:
    1. Abra el Modelo de datos de formulario asociado a la plantilla de comunicación interactiva.
@@ -141,15 +141,15 @@ Los datos (registros) guardados en un origen de datos externo se combinan con un
 
    1. Guarde y cierre el archivo.
 
-1. Cree una [carpeta](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) vigilada y configúrela para utilizar el servicio de API por lotes:
+1. Cree una [carpeta vigilada](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar el servicio de API por lotes:
    1. Inicie sesión en la instancia de creación de AEM Forms.
-   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Formularios]** > **[!UICONTROL Configurar carpeta]** vigilada. Toque **[!UICONTROL Nuevo]**.
+   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta vigilada]**. Toque **[!UICONTROL Nuevo]**.
    1. Especifique el **[!UICONTROL nombre]** y la **[!UICONTROL ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
-   1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]** .
-   1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo Nombre **** del servicio.
-   1. Especifique un patrón **[!UICONTROL de archivo]** de salida. Por ejemplo, el [patrón](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ especifica que la carpeta vigilada puede encontrar archivos de entrada en una subcarpeta de la carpeta Carpeta vigilada\input.
+   1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
+   1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre del servicio]**.
+   1. Especifique un patrón de **[!UICONTROL archivo de salida]**. Por ejemplo, el patrón %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) especifica que la carpeta vigilada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configurar parámetros avanzados:
-   1. Abra la ficha **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
+   1. Abra la ficha **[!UICONTROL Avanzado]** y agregue las siguientes propiedades personalizadas:
 
       | Propiedad | Tipo | Descripción |
       |--- |--- |--- |
@@ -159,25 +159,25 @@ Los datos (registros) guardados en un origen de datos externo se combinan con un
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio incorporado no utiliza la opción de configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
 
-   1. Toque **[!UICONTROL Crear]** . Se crea la carpeta vigilada.
+   1. Puntee **[!UICONTROL Crear]** Se creará la carpeta vigilada.
 1. Utilice la carpeta controlada para generar una comunicación interactiva:
    1. Abra la carpeta vigilada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada. Coloque el archivo JSON creado en el paso 2 en la carpeta recién creada.
    1. Espere a que la carpeta vigilada procese el archivo. Cuando se procesan inicios, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta de ensayo.
    1. Abra la carpeta de salida para vista de la salida:
       * Al especificar la opción IMPRIMIR en Configuración de carpetas vigiladas, se genera la salida PDF para la comunicación interactiva.
-      * Cuando especifica la opción WEB en Configuración de carpetas vigiladas, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
+      * Cuando especifica la opción WEB en Configuración de carpetas vigiladas, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template).
       * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
 
 ## Invocar la API de lote mediante solicitudes REST
 
-Puede invocar [la API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) de lote a través de solicitudes de transferencia de estado representativa (REST). Le permite proporcionar un extremo REST a otros usuarios para acceder a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. Puede desarrollar su propio servlet Java personalizado para implementar la API en su instancia de AEM.
+Puede invocar [la API por lotes](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) mediante solicitudes de transferencia de estado representativa (REST). Le permite proporcionar un extremo REST a otros usuarios para acceder a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. Puede desarrollar su propio servlet Java personalizado para implementar la API en la instancia de AEM.
 
 Antes de implementar el servlet Java, asegúrese de que dispone de una comunicación interactiva y de que los archivos de datos correspondientes están listos. Realice los siguientes pasos para crear e implementar el servlet Java:
 
-1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de muestra que se muestra a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
-1. [Cree e implemente un proyecto de AEM con Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) en su instancia de AEM.
-1. Añada el SDK de cliente de [AEM Forms versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior en la lista de dependencias del archivo POM de su proyecto AEM. Por ejemplo,
+1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de muestra que se indica a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
+1. [Cree e implemente un proyecto AEM con Apache ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) Mavenon en su instancia de AEM.
+1. Añada [AEM Forms Client SDK versión 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o posterior en la lista de dependencias del archivo POM de su proyecto AEM. Por ejemplo,
 
    ```xml
        <dependency>
@@ -324,20 +324,21 @@ Antes de implementar el servlet Java, asegúrese de que dispone de una comunicac
 
 1. En el código anterior, reemplace la ruta de la plantilla (setTemplatePath) por la ruta de la plantilla y establezca el valor de la API setBatchType:
    * Al especificar la opción IMPRIMIR, se genera la salida PDF para la comunicación interactiva.
-   * Al especificar la opción WEB, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web.
+   * Al especificar la opción WEB, se genera un archivo JSON por registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template).
    * Al especificar las opciones IMPRIMIR y WEB, se generan tanto documentos PDF como un archivo JSON por registro.
 
-1. [Utilice el comando muven para implementar el código actualizado en su instancia](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)de AEM.
-1. Invoque la API por lotes para generar la comunicación interactiva. La API por lotes imprime una secuencia de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla](#web-template)web. Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve una secuencia de archivos PDF y JSON.
+1. [Utilice maven para implementar el código actualizado en la instancia](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven) de AEM.
+1. Invoque la API por lotes para generar la comunicación interactiva. La API por lotes imprime una secuencia de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template). Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve una secuencia de archivos PDF y JSON.
 
-### Rellenar previamente una plantilla web {#web-template}
+### Rellenar previamente una plantilla Web {#web-template}
 
 Cuando establece batchType para procesar el Canal Web, la API genera un archivo JSON para cada registro de datos. Puede utilizar la siguiente sintaxis para combinar el archivo JSON con el Canal Web correspondiente para generar una comunicación interactiva:
 
 **Sintaxis**
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
-**Ejemplo**: si el archivo JSON está en `C:\batch\mergedJsonPath.json` y utiliza la siguiente plantilla de comunicación interactiva: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
+****
+EjemploSi el archivo JSON se encuentra  `C:\batch\mergedJsonPath.json` y utiliza la siguiente plantilla de comunicación interactiva:  `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 A continuación, la siguiente URL del nodo de publicación muestra el Canal Web de la comunicación interactiva
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
@@ -358,7 +359,7 @@ Además de guardar los datos en el sistema de archivos, los archivos JSON se alm
 
    SERVICE_NAME hace referencia al nombre del servicio de cumplimentación previa OSGI. Consulte Crear y ejecutar un servicio de relleno previo.
 
-   IDENTIFIER se refiere a cualquier metadato requerido por el servicio de rellenado previo OSGI para recuperar los datos de relleno previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
+   IDENTIFIER se refiere a cualquier metadato que requiera el servicio de rellenado previo OSGI para recuperar los datos de relleno previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
 
 * **Protocolo HTTP**
 
