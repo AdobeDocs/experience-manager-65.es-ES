@@ -27,9 +27,9 @@ La administración de usuarios es un componente JEE de AEM Forms que permite a l
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
-## Almacenes de datos y datos de usuarios {#user-data-and-data-stores}
+## Almacenes de datos y datos del usuario {#user-data-and-data-stores}
 
-La administración de usuarios almacena datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, cualquier usuario que haya iniciado sesión al menos una vez en las aplicaciones de Forms en AEM autor `https://'[server]:[port]'lc`, el usuario se crea en AEM repositorio. Por lo tanto, la administración de usuarios se almacena en los siguientes almacenes de datos:
+La administración de usuarios almacena datos de usuario en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, cualquier usuario que haya iniciado sesión al menos una vez en aplicaciones de Forms en AEM autor de `https://'[server]:[port]'lc`, el usuario se creará en AEM repositorio. Por lo tanto, la administración de usuarios se almacena en los siguientes almacenes de datos:
 
 * Base de datos
 * AEM repositorio
@@ -81,14 +81,14 @@ La administración de usuarios almacena datos de usuario en las siguientes tabla
   </tr>
   <tr>
    <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (bases de datos Oracle y MS SQL)</p> </td>
-   <td>Almacena valores de atributo antiguos y nuevos correspondientes a un principal.<br /> </td>
+   <td>Almacena valores de atributos nuevos y antiguos correspondientes a un principal.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### AEM repositorio {#aem-repository}
+### Repositorio de AEM {#aem-repository}
 
-Los datos de administración de usuarios para los usuarios que al menos una vez accedieron a las aplicaciones de Forms en `https://'[server]:[port]'lc` se almacenan también en AEM repositorio.
+Los datos de administración de usuarios para los usuarios que al menos una vez accedieron a las aplicaciones de Forms en `https://'[server]:[port]'lc` también se almacenan en AEM repositorio.
 
 ## Acceso y eliminación de datos de usuario {#access-and-delete-user-data}
 
@@ -96,9 +96,9 @@ Puede acceder a los datos de administración de usuarios y exportarlos para los 
 
 ### Base de datos {#database-1}
 
-Para exportar o eliminar datos de usuario de la base de datos de administración de usuarios, debe conectarse a la base de datos con un cliente de base de datos y averiguar el ID principal basado en alguna PII del usuario. Por ejemplo, para recuperar el ID principal de un usuario mediante un ID de inicio de sesión, ejecute el siguiente `select` comando en la base de datos.
+Para exportar o eliminar datos de usuario de la base de datos de administración de usuarios, debe conectarse a la base de datos con un cliente de base de datos y averiguar el ID principal basado en alguna PII del usuario. Por ejemplo, para recuperar el identificador principal de un usuario mediante un identificador de inicio de sesión, ejecute el siguiente comando `select` en la base de datos.
 
-En el `select` comando, reemplace el `<user_login_id>` por el ID de inicio de sesión del usuario cuyo ID principal desee recuperar.
+En el comando `select`, reemplace el `<user_login_id>` por el identificador de inicio de sesión del usuario cuyo identificador principal desee recuperar.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -108,22 +108,22 @@ Una vez que conozca el ID principal, puede exportar o eliminar los datos del usu
 
 #### Exportar datos de usuario {#export-user-data}
 
-Ejecute los siguientes comandos de base de datos para exportar datos de administración de usuarios para un ID principal desde tablas de base de datos. En el `select` comando, reemplace `<principal_id>` por el ID principal del usuario cuyos datos desee exportar.
+Ejecute los siguientes comandos de base de datos para exportar datos de administración de usuarios para un ID principal desde tablas de base de datos. En el comando `select`, reemplace `<principal_id>` por el identificador principal del usuario cuyos datos desee exportar.
 
 >[!NOTE]
 >
 >Los siguientes comandos utilizan nombres de tabla de base de datos en bases de datos My SQL e IBM DB2. Al ejecutar estos comandos en bases de datos Oracle y MS SQL, reemplace los siguientes nombres de tabla en los comandos:
 >
->* Replace `EdcPrincipalLocalAccountEntity` with `EdcPrincipalLocalAccount`
+>* Reemplazar `EdcPrincipalLocalAccountEntity` con `EdcPrincipalLocalAccount`
    >
    >
-* Replace `EdcPrincipalEmailAliasEntity` with `EdcPrincipalEmailAliasEn`
+* Reemplazar `EdcPrincipalEmailAliasEntity` con `EdcPrincipalEmailAliasEn`
    >
    >
-* Replace `EdcPrincipalMappingEntity` with `EdcPrincipalMappingEntit`
+* Reemplazar `EdcPrincipalMappingEntity` con `EdcPrincipalMappingEntit`
    >
    >
-* Replace `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+* Reemplazar `EdcPrincipalGrpCtmntEntity` con `EdcPrincipalGrpCtmntEnti`
 
 >
 
@@ -151,9 +151,9 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 Haga lo siguiente para eliminar los datos de administración de usuarios de un ID principal de las tablas de base de datos.
 
-1. Elimine los datos de usuario de AEM repositorio, si procede, tal como se describe en [Eliminar datos](/help/forms/using/user-management-handling-user-data.md#delete-aem)de usuario.
+1. Elimine los datos de usuario de AEM repositorio, si corresponde, tal como se describe en [Eliminar datos de usuario](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Cierre el servidor de AEM Forms.
-1. Ejecute los siguientes comandos de base de datos para eliminar los datos de administración de usuarios para un ID principal de las tablas de base de datos. En el `Delete` comando, reemplace `<principal_id>` por el identificador principal del usuario cuyos datos desee eliminar.
+1. Ejecute los siguientes comandos de base de datos para eliminar los datos de administración de usuarios para un ID principal de las tablas de base de datos. En el comando `Delete`, reemplace `<principal_id>` por el identificador principal del usuario cuyos datos desee eliminar.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -175,20 +175,20 @@ Haga lo siguiente para eliminar los datos de administración de usuarios de un I
 
 1. Inicio del servidor AEM Forms.
 
-### AEM repositorio {#aem-repository-1}
+### Repositorio de AEM {#aem-repository-1}
 
 Los usuarios de Forms JEE tienen sus datos en AEM repositorio si han accedido al menos a la instancia de creación de AEM Forms. Puede acceder a los datos de usuario y eliminarlos de AEM repositorio.
 
-#### Acceso a los datos de usuario {#access-user-data}
+#### Obtener acceso a los datos de usuario {#access-user-data}
 
-Para vista de usuarios creados en AEM repositorio, inicie sesión `https://'[server]:[port]'/lc/useradmin` con AEM credenciales de administrador. Tenga en cuenta que `server` y `port` en la URL son los de la instancia de creación de AEM. Aquí puede buscar usuarios con su nombre de usuario. Haga clic con el botón doble en un usuario para vista de información como propiedades, permisos y grupos para el usuario. La `Path` propiedad de un usuario especifica la ruta al nodo de usuario creado en AEM repositorio.
+Para vista de usuarios creados en AEM repositorio, inicie sesión en `https://'[server]:[port]'/lc/useradmin` con AEM credenciales de administrador. Tenga en cuenta que `server` y `port` en la dirección URL son los de la instancia de creación de AEM. Aquí puede buscar usuarios con su nombre de usuario. Haga clic con el botón doble en un usuario para vista de información como propiedades, permisos y grupos para el usuario. La propiedad `Path` de un usuario especifica la ruta al nodo de usuario creado en AEM repositorio.
 
 #### Eliminar datos de usuario {#delete-aem}
 
 Para eliminar un usuario:
 
 1. Vaya a `https://'[server]:[port]'/lc/useradmin` con AEM credenciales de administrador.
-1. Busque un usuario y haga clic con el botón doble en el nombre de usuario para abrir las propiedades del usuario. Copie la `Path` propiedad.
+1. Busque un usuario y haga clic con el botón doble en el nombre de usuario para abrir las propiedades del usuario. Copie la propiedad `Path`.
 1. Vaya a AEM CRX DELite en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
 1. Elimine la ruta y haga clic en **[!UICONTROL Guardar todo]** para eliminar permanentemente al usuario de AEM repositorio.
 
