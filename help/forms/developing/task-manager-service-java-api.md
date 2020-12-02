@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de la API de Java del servicio Administrador de Tareas (SOAP)
-seo-title: Inicio rápido de la API de Java del servicio Administrador de Tareas (SOAP)
+title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
+seo-title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
 description: nulo
 seo-description: nulo
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Inicio rápido de la API de Java del servicio Tarea Manager (SOAP) {#task-manager-service-java-api-quickstart-soap}
+# Inicio rápido de la API de Java del servicio tarea Manager (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
 Los siguientes Inicios rápidos están disponibles para el servicio Administrador de Tareas.
 
@@ -36,15 +36,15 @@ Los siguientes Inicios rápidos están disponibles para el servicio Administrado
 
 [Inicio rápido (modo SOAP): Recuperación de información de tarea mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->No puede buscar tareas asignadas a usuarios mediante la API de servicio Web. El motivo es que no se puede invocar el `taskList` método, que es una llamada de método necesaria para realizar esta tarea.
+>No puede buscar tareas asignadas a usuarios mediante la API de servicio Web. El motivo es que no puede invocar el método `taskList`, que es una llamada de método necesaria para realizar esta tarea.
 
 >[!NOTE]
 >
->El Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor de Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+>El Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Inicio rápido (modo SOAP): Asignación de tareas mediante la API de Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -396,7 +396,7 @@ El siguiente ejemplo de código Java recupera todas las tareas asignadas a un us
 
 ## Inicio rápido (modo SOAP): Recuperación de datos de formulario de tareas mediante la API de Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera datos de formulario de una tarea con el valor de identificador 304. Los datos del formulario se escriben en un archivo XML denominado *FormData.xml* , que se encuentra en C:\Adobe.
+El siguiente ejemplo de código Java recupera datos de formulario de una tarea con el valor de identificador 304. Los datos del formulario se escriben en un archivo XML denominado *FormData.xml* ubicado en C:\Adobe.
 
 ```java
  /*
@@ -502,7 +502,7 @@ El siguiente ejemplo de código Java recupera datos de formulario de una tarea c
 
 ## Inicio rápido (modo SOAP): Modificación de datos de formulario mediante la API de Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-El siguiente ejemplo de código Java actualiza un formulario con datos que se encuentra en el archivo *FormData.xml* .
+El siguiente ejemplo de código Java actualiza un formulario con datos que se encuentra en el archivo *FormData.xml*.
 
 ```java
  /*
@@ -716,7 +716,7 @@ El siguiente ejemplo de código Java recupera archivos adjuntos. Cada archivo ad
 
 ## Inicio rápido (modo SOAP): Recuperación de información de tarea mediante la API de Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *MortgageLoan - Prebuild*. Se comprueba el estado de cada tarea devuelta para asegurarse de que se trata de una tarea completada. Se recupera y se muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea.
+El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *Préstamo hipotecario - Pregenerado*. Se comprueba el estado de cada tarea devuelta para asegurarse de que se trata de una tarea completada. Se recupera y se muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea.
 
 ```java
  /*
