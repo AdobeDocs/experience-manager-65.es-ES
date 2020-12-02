@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ampliar componente de comentarios  {#extend-comments-component}
+# Ampliar componente de comentarios {#extend-comments-component}
 
 La intención de [ampliar](client-customize.md#extensions) un componente predeterminado es alterar el aspecto o el comportamiento de un componente para usos específicos.
 
@@ -26,7 +26,7 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 
 >[!NOTE]
 >
->No se admite la extensión de un componente [superpuesto](client-customize.md#overlays) .
+>No se admite la extensión de un componente [superpuesto](client-customize.md#overlays).
 
 ## Ejemplo {#example}
 
@@ -34,7 +34,7 @@ Supongamos que el encabezado del componente de comentario debe mostrarse con un 
 
 Para implementar esta solución, cree un nuevo componente que extienda (anule) el existente y modifique la secuencia de comandos Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la extendida, mientras que los sitios que utilizan la apariencia predeterminada no se verán afectados.
 
-El componente de comentarios es en realidad uno de los dos componentes que componen el sistema de comentarios. Por lo tanto, hay dos componentes que ampliar: *comentarios* y *comentarios*. La secuencia de comandos que se va a editar se encuentra en el archivo del componente de *comentarios* , mientras que el componente principal de `header.hbs` comentarios ** (el sistema de comentarios) es lo que un autor agrega realmente a la página.
+El componente de comentarios es en realidad uno de los dos componentes que componen el sistema de comentarios. Por lo tanto, hay dos componentes que ampliar: *comentarios* y *comentario*. La secuencia de comandos que se va a editar se encuentra en el archivo *comment* del componente `header.hbs`, mientras que el componente principal *comments* (el sistema de comentarios) es lo que un autor realmente agrega a la página.
 
 Para ampliar los comentarios deberá:
 
