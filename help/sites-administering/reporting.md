@@ -1,8 +1,8 @@
 ---
 title: Informes
 seo-title: Informes
-description: Aprenda a trabajar con Informes en AEM.
-seo-description: Aprenda a trabajar con Informes en AEM.
+description: Aprenda a trabajar con Sistema de informes en AEM.
+seo-description: Aprenda a trabajar con Sistema de informes en AEM.
 uuid: eee4befd-5fa9-4ebc-8eea-56e1534a6b9b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,16 @@ discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 5%
 
 ---
 
 
 # Informes {#reporting}
 
-Para ayudarle a supervisar y analizar el estado de su instancia, AEM proporciona una selección de informes predeterminados, que se pueden configurar según sus necesidades individuales:
+Para ayudarle a monitorear y analizar el estado de su instancia, AEM proporciona una selección de informes predeterminados, que se pueden configurar según sus necesidades individuales:
 
 * [Informe de componentes](#component-report)
 * [Uso del disco](#disk-usage)
@@ -29,13 +32,13 @@ Para ayudarle a supervisar y analizar el estado de su instancia, AEM proporciona
 * [Informe de instancia de flujo de trabajo](#workflow-instance-report)
 * [Informe de flujo de trabajo](#workflow-report)
 
-Se puede acceder a todos los informes desde la consola **Herramientas** . Seleccione **Informes** en el panel izquierdo y luego haga doble clic en el informe requerido en el panel derecho para abrirlo y/o configurarlo.
+Se puede acceder a todos los informes desde la consola **Herramientas**. Seleccione **Informes** en el panel izquierdo y, a continuación, haga clic con el doble en el informe requerido en el panel derecho para abrirlo y/o configurarlo.
 
-También se pueden crear nuevas instancias de un informe desde la consola **Herramientas** . **Seleccione** Informes **en el panel izquierdo y, a continuación,** Nuevo... de la barra de herramientas. Defina un **Título** y un **Nombre**, seleccione el tipo de informe que desee y haga clic en **Crear**. La nueva instancia del informe aparecerá en la lista. Haga doble clic en esto para abrirlo y, a continuación, arrastre un componente desde la barra de tareas para crear la primera columna e iniciar la definición del informe.
+También se pueden crear nuevas instancias de un informe desde la consola **Herramientas**. Seleccione **Informes** en el panel izquierdo, luego **Nuevo...** de la barra de herramientas. Defina un **Título** y **Nombre**, seleccione el tipo de informe que necesita y haga clic en **Crear**. La nueva instancia del informe aparecerá en la lista. Haga clic con el botón doble para abrir y, a continuación, arrastre un componente desde la barra de tareas para crear la primera columna y inicio la definición del informe.
 
 >[!NOTE]
 >
->Además de los informes estándar de AEM disponibles de forma predeterminada, puede [desarrollar sus propios informes](/help/sites-developing/dev-reports.md)(completamente nuevos).
+>Además de los informes de AEM estándar disponibles de forma predeterminada, puede [desarrollar sus propios informes (completamente nuevos)](/help/sites-developing/dev-reports.md).
 
 ## Conceptos básicos de la personalización de informes {#the-basics-of-report-customization}
 
@@ -52,9 +55,10 @@ Existen diversos formatos de informes disponibles. Los siguientes informes utili
 >Los siguientes informes tienen su propio formato y personalización:
 >
 >
->* [La comprobación](#health-check) de estado utiliza campos de selección para especificar los datos sobre los que desea crear un informe.
->* [Uso](#disk-usage) de disco utiliza vínculos para explorar en profundidad la estructura del repositorio.
->* [El informe](/help/sites-administering/reporting.md#workflow-report) Flujo de trabajo proporciona una visión general de los flujos de trabajo que se ejecutan en la instancia.
+>* [La ](#health-check) comprobación de estado utiliza los campos de selección para especificar los datos sobre los que desea crear un informe.
+>* [Disk ](#disk-usage) Usageutiliza vínculos para explorar en profundidad la estructura del repositorio.
+>* [Los ](/help/sites-administering/reporting.md#workflow-report) informes de flujo de trabajo proporcionan información general sobre los flujos de trabajo que se ejecutan en la instancia.
+
 >
 >
 Por lo tanto, los siguientes procedimientos para la configuración de columnas no son apropiados. Consulte las descripciones de los informes individuales para obtener detalles.
@@ -63,7 +67,7 @@ Por lo tanto, los siguientes procedimientos para la configuración de columnas n
 
 Las columnas se pueden agregar, cambiar de posición o eliminar de cualquiera de los informes, ya sea estándar o personalizado.
 
-La ficha **Componentes** de la barra de tareas (disponible en la página del informe) enumera todas las categorías de datos que se pueden seleccionar como columnas.
+La ficha **Componentes** de la barra de tareas (disponible en la página del informe) lista todas las categorías de datos que se pueden seleccionar como columnas.
 
 Para cambiar la selección de datos:
 
@@ -75,36 +79,36 @@ Para cambiar la selección de datos:
 * para mover una columna, haga clic en el encabezado, manténgalo presionado y arrastre hasta la nueva posición
 * para eliminar una columna, haga clic en el título de la columna, manténgala y arrástrela hacia arriba en el área del encabezado del informe (un símbolo rojo menos indicará que la posición no es válida); suelte el botón del ratón y el cuadro de diálogo Eliminar componentes solicitará confirmación de que realmente desea eliminar la columna.
 
-### Menú desplegable Columna {#column-drop-down-menu}
+### Menú desplegable de columna {#column-drop-down-menu}
 
 Cada columna del informe tiene un menú desplegable. Esto se hace visible cuando el cursor del ratón se mueve sobre la celda de título de la columna.
 
-Aparecerá un encabezado de flecha en el extremo derecho de la celda de título (no debe confundirse con el encabezado de flecha inmediatamente a la derecha del texto del título que indica el mecanismo [de ordenación](#sorting-the-data)actual).
+Aparecerá un encabezado de flecha en el extremo derecho de la celda de título (no debe confundirse con el encabezado de flecha inmediatamente a la derecha del texto de título que indica el [mecanismo de ordenación actual](#sorting-the-data)).
 
 ![reportcolumnsort](assets/reportcolumnsort.png)
 
 Las opciones disponibles en el menú dependerán de la configuración de la columna (como se hizo durante el desarrollo del proyecto), las opciones no válidas se atenuarán.
 
-### Ordenación de los datos {#sorting-the-data}
+### Ordenar los datos {#sorting-the-data}
 
 Los datos se pueden ordenar según una columna específica mediante:
 
 * hacer clic en el encabezado de columna correspondiente; el orden cambiará entre ascendente y descendente, indicado por un encabezado de flecha justo al lado del texto del título
-* utilice el menú [desplegable de la](#column-drop-down-menu) columna para seleccionar específicamente **Orden ascendente** u **Orden descendente**; nuevamente esto se indicará con una punta de flecha inmediatamente junto al texto del título
+* utilice el menú desplegable [de la columna](#column-drop-down-menu) para seleccionar específicamente **Ordenar De subida** o **Ordenar De bajada**; nuevamente esto se indicará con una punta de flecha inmediatamente junto al texto del título
 
 ### Grupos y el gráfico de datos actual {#groups-and-the-current-data-chart}
 
-En las columnas correspondientes, puede seleccionar **Agrupar por esta columna** en el menú [desplegable de la](#column-drop-down-menu)columna. Esto agrupará los datos según cada valor definido dentro de esa columna. Puede seleccionar más de una columna para agruparla. La opción aparecerá atenuada cuando los datos de la columna no sean adecuados; Es decir, cada entrada es distinta y única, de modo que no se pueden formar grupos, por ejemplo la columna ID de usuario del informe de usuario.
+En las columnas apropiadas puede seleccionar **Agrupar por esta columna** en el menú desplegable de la [columna](#column-drop-down-menu). Esto agrupará los datos según cada valor definido dentro de esa columna. Puede seleccionar más de una columna para agruparla. La opción aparecerá atenuada cuando los datos de la columna no sean adecuados; Es decir, cada entrada es distinta y única, de modo que no se pueden formar grupos, por ejemplo la columna ID de usuario del informe de usuario.
 
-Después de agrupar al menos una columna, se generará un gráfico circular de datos **** actuales, basado en este grupo. Si se agrupan varias columnas, esto también se indicará en el gráfico.
+Después de agrupar al menos una columna, se generará un gráfico circular de **datos actuales**, basado en este grupo. Si se agrupan varias columnas, esto también se indicará en el gráfico.
 
 ![reportuser](assets/reportuser.png)
 
-Si mueve el cursor sobre el gráfico circular, se mostrará el valor agregado del segmento correspondiente. Utiliza el agregado definido actualmente para la columna; por ejemplo, contar, mínimo, promedio, entre otros.
+Si mueve el cursor sobre el gráfico circular, se mostrará el valor agregado del segmento correspondiente. Utiliza el acumulado definido actualmente para la columna; por ejemplo, contar, mínimo, promedio, entre otros.
 
 ### Filtros y agregados {#filters-and-aggregates}
 
-En las columnas apropiadas también puede configurar Configuración **de** filtro y/o **Agregados** desde el menú [desplegable de la](#column-drop-down-menu)columna.
+En las columnas apropiadas también puede configurar **Configuración de filtro** y/o **Agregados** desde el menú desplegable de la [columna](#column-drop-down-menu).
 
 #### Filtros {#filters}
 
@@ -134,11 +138,11 @@ También puede seleccionar un método de agregación (esto puede variar en funci
 
 ### Propiedades de columna {#column-properties}
 
-Esta opción solo está disponible cuando se ha utilizado la columna [](#generic-column) Genérica en el informe [de usuario](#user-report).
+Esta opción solo está disponible cuando se ha utilizado la [columna genérica](#generic-column) en el [Informe de usuario](#user-report).
 
 ### Datos históricos {#historic-data}
 
-En Datos **** históricos se puede ver un gráfico del cambio en los datos a lo largo del tiempo. Esto se deriva de instantáneas tomadas a intervalos regulares.
+Se puede ver un gráfico del cambio en los datos a lo largo del tiempo en **Datos históricos**. Esto se deriva de instantáneas tomadas a intervalos regulares.
 
 Los datos son:
 
@@ -148,8 +152,8 @@ Los datos son:
 El informe se puede generar:
 
 1. Establezca **Agrupación** en la columna requerida.
-1. **Edite** la configuración para definir la frecuencia con la que deben realizarse las instantáneas; por hora o por día.
-1. **** Finalizar... la definición para iniciar la colección de instantáneas.
+1. **** Edite la configuración para definir la frecuencia con la que deben realizarse las instantáneas; por hora o por día.
+1. **Finalizar...** la definición para el inicio de la colección de instantáneas.
 
    El botón deslizante rojo/verde en la parte superior izquierda indica cuándo se recopilan las instantáneas.
 
@@ -172,30 +176,30 @@ Una vez iniciada la recopilación de datos, puede seleccionar:
    * Si el intervalo se establece en `Day`, cada instantánea se muestra como un valor único en el gráfico.
    * Si el intervalo se establece en `Month`, todas las instantáneas de febrero se agregan en un solo valor (se muestran como un solo &quot;punto&quot; en el gráfico).
 
-Seleccione los requisitos y haga clic en **Ir** para aplicarlos al informe. Para actualizar la visualización después de realizar más instantáneas, haga clic de nuevo en **Ir** .
+Seleccione los requisitos y haga clic en **Ir** para aplicarlos al informe. Para actualizar la visualización después de realizar más instantáneas, haga clic en **Ir** nuevamente.
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
 Cuando se recopilan instantáneas, puede:
 
-* **Usar** Fin... para volver a inicializar la colección.
+* Usar **Finalizar...** de nuevo para reinicializar la colección.
 
-   **Finalizar** &quot;bloquea&quot; la estructura del informe (es decir, las columnas asignadas al informe y que se agrupan, ordenan, filtran, etc.) y comienza a tomar instantáneas.
+   **Finalizar**  &quot;bloquea&quot; la estructura del informe (es decir, las columnas asignadas al informe y que se agrupan, ordenan, filtran, etc.) y inicios tomando instantáneas.
 
-* Abra el cuadro de diálogo **Editar** para seleccionar **Sin instantáneas** de datos para finalizar la recopilación hasta que sea necesario.
+* Abra el cuadro de diálogo **Editar** para seleccionar **Sin instantáneas de datos** para finalizar la recopilación hasta que sea necesario.
 
-   **Editar** solo activa o desactiva la toma de instantáneas. Si la toma de instantáneas se vuelve a activar, utiliza el estado del informe cuando se terminó por última vez para realizar más instantáneas.
+   **** Editonly activa o desactiva la toma de instantáneas. Si la toma de instantáneas se vuelve a activar, utiliza el estado del informe cuando se terminó por última vez para realizar más instantáneas.
 
 >[!NOTE]
 >
->Las instantáneas se almacenan en la `/var/reports/...` parte donde el resto de la ruta refleja la ruta del informe y la ID respectivos creados al finalizar el informe.
+>Las instantáneas se almacenan en `/var/reports/...`, donde el resto de la ruta refleja la ruta del informe y la ID respectivos creados al finalizar el informe.
 >
 >
 >Las instantáneas antiguas se pueden purgar manualmente si está completamente seguro de que ya no necesita dichas instancias.
 
 >[!NOTE]
 >
->Los informes preconfigurados no requieren un alto rendimiento, pero se recomienda utilizar instantáneas diarias en un entorno de producción. Si es posible, ejecute estas instantáneas diarias a una hora del día cuando no haya mucha actividad en el sitio web; esto se puede definir con el `Daily snapshots (repconf.hourofday)` parámetro de Configuración **de informes de** Day CQ; consulte Configuración [](/help/sites-deploying/configuring-osgi.md) OSGI para obtener más información sobre cómo configurarla.
+>Los informes preconfigurados no requieren un alto rendimiento, pero se recomienda utilizar instantáneas diarias en un entorno de producción. Si es posible, ejecute estas instantáneas diarias a una hora del día cuando no haya demasiada actividad en el sitio web; esto se puede definir con el parámetro `Daily snapshots (repconf.hourofday)` para **Configuración de Sistema de informes de CQ de día**; consulte [Configuración de OSGI](/help/sites-deploying/configuring-osgi.md) para obtener más información sobre cómo configurarla.
 
 #### Límites de visualización {#display-limits}
 
@@ -207,7 +211,7 @@ Cada línea horizontal se conoce como serie (y corresponde a una entrada en la l
 
 Para mantener el gráfico limpio durante períodos de tiempo más largos, se pueden establecer límites. Para los informes estándar, estos son:
 
-* serie horizontal: tanto el valor predeterminado como el máximo del sistema son `9`
+* serie horizontal: tanto el valor predeterminado como el máximo del sistema es `9`
 
 * instantáneas agregadas verticales: el valor predeterminado es `35` (por serie horizontal)
 
@@ -218,17 +222,17 @@ De modo que cuando se excedan los límites (adecuados), la variable:
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-Los informes personalizados también pueden mostrar el valor **total** de todas las series. Se muestra como una serie (línea horizontal y entrada en la leyenda).
+Los informes personalizados también pueden mostrar el valor **Total** para todas las series. Se muestra como una serie (línea horizontal y entrada en la leyenda).
 
 >[!NOTE]
 >
 >Para los informes personalizados, los límites se pueden establecer de forma diferente.
 
-### Edit (Report) {#edit-report}
+### Editar (informe) {#edit-report}
 
-El botón **Editar** abre el cuadro de diálogo **Editar informe** .
+El botón **Editar** abre el cuadro de diálogo **Editar informe**.
 
-Se trata de una ubicación en la que se define el período para recopilar instantáneas de datos [](#historic-data) históricos, pero también se pueden definir otros ajustes:
+Se trata de una ubicación en la que se define el período para recopilar instantáneas para [datos históricos](#historic-data), pero también se pueden definir otras opciones de configuración:
 
 ![reportedit](assets/reportedit.png)
 
@@ -240,7 +244,7 @@ Se trata de una ubicación en la que se define el período para recopilar instan
 
    Puede definir su propia descripción.
 
-* **Ruta** raíz (*solo activa para ciertos informes*)
+* **Ruta**  raíz (*solo activa para ciertos informes*)
 
    Utilícelo para limitar el informe a una (subsección) sección del repositorio.
 
@@ -256,17 +260,18 @@ Se trata de una ubicación en la que se define el período para recopilar instan
 
       Si selecciona esta opción, se indica que los datos del informe deben actualizarse manualmente cuando haya cambiado cualquier aspecto de la configuración del informe. También significa que tan pronto como cambie cualquier aspecto de la configuración, la tabla del informe quedará en blanco.
 
-      Cuando se selecciona esta opción, se muestra el botón **[Cargar datos](#load-data)**(junto a **Editar**en el informe).**Cargar datos**cargará los datos y actualizará los datos del informe que se muestran.
+      Cuando se selecciona esta opción, se muestra el botón **[Cargar datos](#load-data)** (junto a **Editar** en el informe). **Cargar** datos cargará los datos y actualizará los datos del informe que se muestran.
 
-* **Instantáneas** Puede definir la frecuencia con la que se deben realizar las instantáneas; diariamente, por hora o no.
+* ****
+InstantáneasPuede definir la frecuencia con la que se crean las instantáneas; diariamente, por hora o no.
 
 ### Cargar datos {#load-data}
 
-El botón **Cargar datos** solo está visible cuando se han seleccionado los datos **de actualización** manual en **[Editar](#edit-report)**.
+El botón **Cargar datos** sólo está visible cuando **actualizar manualmente los datos** se ha seleccionado desde **[Editar](#edit-report)**.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
-Al hacer clic en **Cargar datos** , se volverán a cargar los datos y se actualizará el informe que se muestra.
+Al hacer clic en **Cargar datos** se volverán a cargar los datos y se actualizará el informe que se muestra.
 
 Si selecciona actualizar manualmente los datos, significa que:
 
@@ -276,13 +281,13 @@ Si selecciona actualizar manualmente los datos, significa que:
 
 1. Si desea que los datos del informe se muestren nuevamente, deberá hacer clic en **Cargar datos** para volver a cargar los datos.
 
-### Finish (report) {#finish-report}
+### Finalizar (informe) {#finish-report}
 
-Al **finalizar** el informe:
+Cuando **Termine** el informe:
 
 * La definición del informe *a partir de ese momento* se utilizará para tomar las instantáneas (después puede continuar trabajando en una definición del informe ya que luego es independiente de las instantáneas).
 * Se quitarán todas las instantáneas existentes.
-* Se recopilan nuevas instantáneas para los datos [](#historic-data)históricos.
+* Se recopilan nuevas instantáneas para los [datos históricos](#historic-data).
 
 Con este cuadro de diálogo puede definir o actualizar su propio título y descripción para el informe resultante.
 
@@ -294,9 +299,9 @@ Con este cuadro de diálogo puede definir o actualizar su propio título y descr
 
 El informe de componentes proporciona información sobre cómo utiliza los componentes el sitio web.
 
-[Columnas de información](#selecting-and-positioning-the-data-columns) sobre:
+[Columnas de ](#selecting-and-positioning-the-data-columns) información sobre:
 
-* Creación
+* Autor
 * Ruta del componente
 * Tipo de componente
 * Última modificación
@@ -315,15 +320,15 @@ Significa que puede ver, por ejemplo:
 * Identifique las partes del sitio con cambios frecuentes o menos frecuentes.
 * Ver cómo se desarrolla el contenido de la página con el paso del tiempo.
 
-Todos los componentes están incluidos, son estándares de producto y específicos de proyecto. Con el cuadro de diálogo **Editar** , el usuario también puede establecer una ruta **** raíz que defina el punto de partida del informe; todos los componentes de esa raíz se consideran para el informe.
+Todos los componentes están incluidos, son estándares de producto y específicos de proyecto. Al utilizar el cuadro de diálogo **Editar**, el usuario también puede establecer una **ruta raíz** que define el punto de partida del informe; todos los componentes bajo esa raíz se consideran para el informe.
 
-![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png)
+![](assets/reportcomponent.png) ![reportcomponentreportcompentall](assets/reportcompentall.png)
 
 ### Uso del disco {#disk-usage}
 
 El informe de uso del disco muestra información sobre los datos almacenados en el repositorio.
 
-El informe comienza en la raíz ( / ) del repositorio; al hacer clic en una rama en particular puede explorar en profundidad dentro del repositorio (la ruta actual se reflejará en el título del informe).
+Los inicios del informe en la raíz ( / ) del repositorio; al hacer clic en una rama en particular puede explorar en profundidad dentro del repositorio (la ruta actual se reflejará en el título del informe).
 
 ![reportdiskusage](assets/reportdiskusage.png)
 
@@ -348,7 +353,7 @@ Para generar el informe puede especificar:
 
    Valor predeterminado: `50`
 
-* **max. Solicitudes**
+* **máx. Solicitudes**
 
    Número máximo de solicitudes que se analizarán.
 
@@ -358,21 +363,21 @@ Para generar el informe puede especificar:
 
    Enviar los resultados a una dirección de correo electrónico.
 
-   Opcional;Predeterminado: blank
+   Opcional; Predeterminado: blank
 
 * **Ejecutar cada día a las (hh:mm)**
 
    Especifique una hora para que el informe se ejecute automáticamente todos los días.
 
-   Opcional;Predeterminado: blank
+   Opcional; Predeterminado: blank
 
 ![informe](assets/reporthealth.png)
 
 ### Informe de actividad de la página {#page-activity-report}
 
-El informe de actividad de página enumera las páginas y las acciones realizadas en ellas.
+El informe de actividad de página lista las páginas y las acciones realizadas en ellas.
 
-[Columnas de información](#selecting-and-positioning-the-data-columns) sobre:
+[Columnas de ](#selecting-and-positioning-the-data-columns) información sobre:
 
 * Página
 * Hora
@@ -395,7 +400,7 @@ El informe de actividad de página toma toda la información del registro de aud
 
 Este informe proporciona información sobre el contenido generado por el usuario; sean comentarios, valoraciones o foros.
 
-[Columnas de información](#selecting-and-positioning-the-data-columns) sobre:
+[Columnas de ](#selecting-and-positioning-the-data-columns) información:
 
 * Fecha
 * Dirección IP
@@ -414,9 +419,9 @@ Permita:
 
 ### Informe del usuario {#user-report}
 
-Este informe proporciona información sobre todos los usuarios que han registrado una cuenta o un perfil; esto puede incluir tanto a los autores dentro de su organización como a los visitantes externos.
+Este informe proporciona información sobre todos los usuarios que han registrado una cuenta o un perfil; esto puede incluir tanto autores dentro de la organización como visitantes externos.
 
-[Columnas de información](#selecting-and-positioning-the-data-columns) (cuando estén disponibles) sobre:
+[Columnas de información](#selecting-and-positioning-the-data-columns)  (cuando estén disponibles) sobre:
 
 * Edad
 * País
@@ -439,9 +444,9 @@ Permita:
 
 ![reportusercanned](assets/reportusercanned.png)
 
-#### Generic Column {#generic-column}
+#### Columna genérica {#generic-column}
 
-La columna **Genérica** está disponible en el informe de usuario para que pueda acceder a información personalizada, generalmente desde los perfiles [de](/help/sites-administering/identity-management.md#profiles-and-user-accounts)usuario; por ejemplo, Color [favorito tal como se detalla en Adición de campos a la definición](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)de perfil.
+La columna **Generic** está disponible en el informe de usuario para que pueda acceder a la información personalizada, generalmente desde los [perfiles de usuario](/help/sites-administering/identity-management.md#profiles-and-user-accounts); por ejemplo, [Color favorito como se detalla en Añadir campos a la definición de Perfil](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
 
 El cuadro de diálogo Columna genérica se abrirá cuando:
 
@@ -450,7 +455,7 @@ El cuadro de diálogo Columna genérica se abrirá cuando:
 
 ![reportusrgenericcolm](assets/reportusrgenericcolm.png)
 
-From the **Definitions** tab you can define:
+En la ficha **Definiciones** puede definir:
 
 * **Título**
 
@@ -458,7 +463,7 @@ From the **Definitions** tab you can define:
 
 * **Propiedad**
 
-   El nombre de la propiedad tal como se almacena en el repositorio, normalmente dentro del perfil del usuario.
+   El nombre de la propiedad tal como se almacena en el repositorio, normalmente en el perfil del usuario.
 
 * **Ruta**
 
@@ -466,23 +471,23 @@ From the **Definitions** tab you can define:
 
 * **Tipo**
 
-   Seleccione el tipo de campo desde `String`, `Number`, `Integer`, `Date`.
+   Seleccione el tipo de campo de `String`, `Number`, `Integer`, `Date`.
 
-* **Agregado predeterminado**
+* **Acumulado predeterminado**
 
-   Esto define el agregado utilizado de forma predeterminada si la columna está desagrupada en un informe con al menos una columna agrupada. Seleccione el agregado requerido desde `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Esto define el acumulado que se utiliza de forma predeterminada si la columna está desagrupada en un informe con al menos una columna agrupada. Seleccione el acumulado requerido de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Por ejemplo, *Contar* para un `String` campo significa que se muestra el número de `String` valores distintos para la columna en el estado agregado.
+   Por ejemplo, *Count* para un campo `String` significa que se muestra el número de valores `String` distintos para la columna en el estado agregado.
 
-En la ficha **Ampliado** también puede definir los agregados y filtros disponibles:
+En la ficha **Extended** también puede definir los agregados y filtros disponibles:
 
 ![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
 ### Informe de instancia de flujo de trabajo {#workflow-instance-report}
 
-Esto le proporciona una descripción general concisa, que proporciona información sobre las instancias individuales de los flujos de trabajo, tanto en ejecución como finalizada.
+Esto le proporciona una visión general concisa, que proporciona información sobre las instancias individuales de flujos de trabajo, tanto en ejecución como finalizadas.
 
-[Columnas de información](#selecting-and-positioning-the-data-columns) sobre:
+[Columnas de ](#selecting-and-positioning-the-data-columns) información sobre:
 
 * Completado
 * Duración
@@ -504,13 +509,13 @@ Esto proporciona estadísticas clave sobre los flujos de trabajo que se ejecutan
 
 ![flujo de trabajo de informes](assets/reportworkflow.png)
 
-## Uso de informes en un entorno de publicación {#using-reports-in-a-publish-environment}
+## Uso de informes en un Entorno de publicación {#using-reports-in-a-publish-environment}
 
 Una vez configurados los informes según sus requisitos específicos, puede activarlos para transferir la configuración al entorno de publicación.
 
 >[!CAUTION]
 >
->Si desea datos **** históricos para el entorno de publicación, **finalice** el informe en el entorno de creación antes de activar la página.
+>Si desea **datos históricos** para el entorno de publicación, **Finalizar** el informe en el entorno de creación antes de activar la página.
 
 A continuación, se podrá acceder al informe correspondiente en
 
@@ -520,15 +525,15 @@ Por ejemplo: el informe Contenido generado por el usuario se encuentra en:
 
 `http://localhost:4503/etc/reports/ugcreport.html`
 
-Ahora se informará de los datos recopilados del entorno de publicación.
+Ahora se informará de los datos recopilados desde el entorno de publicación.
 
-Como no se permite ninguna configuración de informe en el entorno de publicación, los botones **Editar** y **Finalizar** no están disponibles. Sin embargo, si se recopilan instantáneas, puede seleccionar el **período** y el **intervalo** para los informes de datos **** históricos.
+Como no se permite la configuración de informes en el entorno de publicación, los botones **Editar** y **Finalizar** no están disponibles. Sin embargo, puede seleccionar los informes **Período** e **Intervalo** para los informes **Datos históricos** si se están recopilando las instantáneas.
 
 ![reportsucgpublish](assets/reportsucgpublish.png)
 
 >[!CAUTION]
 >
->El acceso a estos informes puede ser un problema de seguridad; por lo tanto, le recomendamos que configure el despachante para que no `/etc/reports` esté disponible para los visitantes externos. Consulte la lista de comprobación [de seguridad](security-checklist.md) para obtener más información.
+>El acceso a estos informes puede ser un problema de seguridad; por lo tanto, le recomendamos que configure el despachante para que `/etc/reports` no esté disponible para visitantes externos. Consulte la [Lista de comprobación de seguridad](security-checklist.md) para obtener más detalles.
 
 ## Permisos necesarios para ejecutar informes {#permissions-needed-for-running-reports}
 
@@ -537,7 +542,7 @@ Los permisos necesarios dependen de la acción:
 * Los datos del informe se recopilan básicamente con los privilegios del usuario actual.
 * Los datos históricos se recopilan con los privilegios del usuario que finalizó el informe.
 
-En una instalación estándar de AEM, los siguientes permisos están preestablecidos para los informes:
+En una instalación de AEM estándar, los siguientes permisos están preestablecidos para los informes:
 
 * **Informe del usuario**
 
@@ -559,4 +564,4 @@ En una instalación estándar de AEM, los siguientes permisos están preestablec
 
    `workflow-users` - leer y escribir
 
-Todos los miembros del `administrators` grupo tienen los derechos necesarios para crear nuevos informes.
+Todos los miembros del grupo `administrators` tienen los derechos necesarios para crear nuevos informes.
