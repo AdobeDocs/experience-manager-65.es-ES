@@ -37,7 +37,7 @@ Al final de este tutorial, podrá:
 * Crear una comunicación interactiva
 * Probar y publicar una comunicación interactiva
 
-## Use case {#use-case}
+## Caso de uso {#use-case}
 
 El viaje inicio con aprender el caso de uso:
 
@@ -50,9 +50,9 @@ Un operador de telecomunicaciones envía facturas mensuales a los clientes a tra
 ## Requisitos previos {#prerequisites}
 
 * Configure una instancia de autor AEM.
-* Instalación de [AEM Forms Add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de creación
+* Instalar [Complemento de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de creación
 * Configuración de la base de datos MYSQL
-* Obtenga el controlador de base de datos JDBC (archivo JAR) del proveedor de base de datos. Los ejemplos del tutorial se basan en la base de datos MySQL y utilizan el controlador [de base de datos JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html)MySQL de Oracle.
+* Obtenga el controlador de base de datos JDBC (archivo JAR) del proveedor de base de datos. Algunos ejemplos del tutorial se basan en la base de datos MySQL y utilizan el controlador de base de datos [MySQL JDBC de Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Paso 1: Planificar la comunicación interactiva {#step-plan-the-interactive-communication}
 
@@ -72,11 +72,11 @@ Para crear una anatomía para la comunicación interactiva con los siguientes mo
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
-## Step 2: Create form data model {#step-create-form-data-model}
+## Paso 2: Crear modelo de datos de formulario {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modelo de datos de formulario permite conectar una comunicación interactiva a orígenes de datos dispares. Por ejemplo, AEM perfil del usuario, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Un modelo de datos de formulario es un esquema de representación de datos unificado de las entidades comerciales y los servicios disponibles en los orígenes de datos conectados. Puede utilizar el modelo de datos de formulario con una comunicación interactiva para recuperar datos de orígenes de datos conectados. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de](/help/forms/using/data-integration.md)AEM Forms.
+Un modelo de datos de formulario permite conectar una comunicación interactiva a orígenes de datos dispares. Por ejemplo, AEM perfil del usuario, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Un modelo de datos de formulario es un esquema de representación de datos unificado de las entidades comerciales y los servicios disponibles en los orígenes de datos conectados. Puede utilizar el modelo de datos de formulario con una comunicación interactiva para recuperar datos de orígenes de datos conectados. Para obtener más información sobre el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
 **Objetivos:**
 
@@ -91,7 +91,7 @@ Un modelo de datos de formulario permite conectar una comunicación interactiva 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
-## Paso 3: Creación de fragmentos de documento {#step-create-document-fragments}
+## Paso 3: Crear fragmentos de documento {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -105,7 +105,7 @@ Los fragmentos de documento son componentes reutilizables de una correspondencia
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
-## Paso 4: Creación de plantillas {#step-create-templates}
+## Paso 4: Crear plantillas {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -154,7 +154,7 @@ Una vez que haya creado una comunicación interactiva, es importante que pruebe 
 * Crear casos de prueba
 * Ejecutar los casos de prueba
 
-## Paso 7: Publicación de la comunicación interactiva {#step-publish-your-interactive-communication}
+## Paso 7: Publicar su comunicación interactiva {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
