@@ -1,6 +1,6 @@
 ---
-title: Esenciales de la biblioteca de archivos
-seo-title: Esenciales de la biblioteca de archivos
+title: Elementos esenciales de la biblioteca de archivos
+seo-title: Elementos esenciales de la biblioteca de archivos
 description: Uso de la función de biblioteca de archivos
 seo-description: Uso de la función de biblioteca de archivos
 uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Esenciales de la biblioteca de archivos {#file-library-essentials}
+# File Library Essentials {#file-library-essentials}
 
 Esta página proporciona la información esencial para trabajar con la función de biblioteca de archivos.
 
@@ -48,7 +48,7 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte Función <a href="file-library.md">Biblioteca de archivos</a></td>
+   <td>Consulte <a href="file-library.md">Función de biblioteca de archivos</a></td>
   </tr>
  </tbody>
 </table>
@@ -65,21 +65,21 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de comunidad que incluye la función [Biblioteca de](functions.md#file-library-function)archivos incluye un `file library` componente configurado.
+Una estructura de sitio de comunidad que incluye la [función de biblioteca de archivos](functions.md#file-library-function), incluye un componente `file library` configurado.
 
 ### Acceso a los comentarios publicados para bibliotecas de archivos (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación.
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad SRP.
+* [Acceso a UGC con directrices de codificación SRP](accessing-ugc-with-srp.md) .
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
