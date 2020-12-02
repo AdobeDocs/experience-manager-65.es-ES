@@ -12,6 +12,9 @@ discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
 
 La consola Componentes permite examinar todos los componentes definidos para la instancia y ver información clave de cada componente.
 
-It can be accessed from **Tools ->** **General ->** **Components**. En la consola están disponibles las vistas de tarjeta y de lista. Como no hay una estructura de árbol para componentes, la vista de columna no está disponible.
+Se puede acceder a ella desde **Herramientas ->** **General ->** **Componentes**. En la consola, están disponibles la vista de tarjeta y la vista de lista. Como no hay una estructura de árbol para los componentes, la vista de columna no está disponible.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -53,7 +56,7 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
       * Si hace clic en el supertipo de recurso, se le dirigirá a dicho componente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
 
 * **Políticas**
 
@@ -69,7 +72,7 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
 * **Documentación**
 
-   Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), esta aparecerá en la pestaña **Documentación**. Si no hay documentación disponible, no se mostrará la pestaña **Documentación**.
+   Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), esta aparecerá en la pestaña **Documentación**. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
