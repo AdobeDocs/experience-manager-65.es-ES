@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
 source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
 
-# Naming Conventions {#naming-conventions}
+# Convenciones de nombres {#naming-conventions}
 
 ## Guiones en el nombre del paquete Java {#hyphens-in-java-package-name}
 
@@ -27,4 +30,4 @@ La plataforma CRX subyacente debe poder distinguir entre un guión bajo real `_ 
 
 Por ejemplo, si la ruta del repositorio es **/apps/my-example/component/info/Info.java**, el nombre del paquete debe ser `java package apps.my_002dexample.component.info;`
 
-Observe que un subrayado debe ser escapado de forma similar, de modo que `_` se convierta en `_005f`.
+Tenga en cuenta que un subrayado debe tener un carácter de escape similar, de modo que `_` se convierta en `_005f`.
