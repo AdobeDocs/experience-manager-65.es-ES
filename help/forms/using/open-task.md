@@ -10,15 +10,18 @@ topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
 
 # Apertura de una tarea {#opening-a-task}
 
-Si la aplicación de AEM Forms se sincroniza con un servidor de AEM Forms, puede trabajar con tareas asignadas. Las Tareas son pasos en el flujo de trabajo definido en el área de trabajo o en el editor de flujo de trabajo de AEM.
+Si la aplicación de AEM Forms se sincroniza con un servidor de AEM Forms, puede trabajar con tareas asignadas. Las tareas son pasos en el flujo de trabajo definido en el área de trabajo o en el editor de flujo de trabajo de AEM.
 
-Otros formularios se guardan como borrador en la ficha Borradores. Consulte [Guardar un borrador](/help/forms/using/save-as-draft.md).
+Otros formularios se guardan como borrador en la ficha Borradores. Consulte [Guardado de un borrador](/help/forms/using/save-as-draft.md).
 
 **Para abrir una tarea**
 
@@ -31,11 +34,11 @@ Otros formularios se guardan como borrador en la ficha Borradores. Consulte [Gua
 
 1. Toque la tarea para abrirla.
 
-   Puede tocar Resumen **de** Vista para vista de instrucciones adicionales especificadas en el proceso de Workbench.
+   Puede tocar **Resumen de Vista** para vista de instrucciones adicionales especificadas en el proceso de Workbench.
 
 **Para abrir una aplicación**
 
-1. Puntee en la **aplicación** en la ficha **Formularios** .
+1. Puntee en la **aplicación** en la ficha **Forms**.
 
    Cuando selecciona una aplicación, la descripción de la aplicación se muestra debajo del nombre de la aplicación. Después de la descripción, se muestran las acciones/acciones del usuario asociadas con la aplicación.
 
@@ -44,4 +47,4 @@ Otros formularios se guardan como borrador en la ficha Borradores. Consulte [Gua
 
 1. Toque la tarea para abrirla.
 
-   Puede tocar Resumen **de** Vista para vista de instrucciones adicionales especificadas para la aplicación.
+   Puede tocar **Resumen de Vista** para vista de las instrucciones adicionales especificadas para la aplicación.
