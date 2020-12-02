@@ -1,6 +1,6 @@
 ---
-title: Edición de las propiedades de página
-seo-title: Edición de las propiedades de página
+title: 'Edición de las propiedades de página  '
+seo-title: 'Edición de las propiedades de página  '
 description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 seo-description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -21,13 +24,13 @@ Puede definir las propiedades para una página. Estas pueden variar en función 
 
 ## Propiedades de página {#page-properties}
 
-Las propiedades se distribuyen entre varias fichas:
+Las propiedades se distribuyen entre varias pestañas:
 
 ### Básico {#basic}
 
 * **Título**
 
-   El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la ficha **Sitios web** y las vistas de lista o tarjeta **Sitios**.
+   El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
 
    Es un campo obligatorio.
 
@@ -79,7 +82,7 @@ Las propiedades se distribuyen entre varias fichas:
 
    Permite especificar una URL de vanidad para esta página. Esta opción le permitirá crear URL más cortas y expresivas.
 
-   Por ejemplo, si la URL de vanidad se establece en dos `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` entonces `ttp://example.com/welcome`será la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
+   Por ejemplo: si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio Web h `ttp://example.com,` entonces h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -93,7 +96,7 @@ Las propiedades se distribuyen entre varias fichas:
 
    Indica si desea que la página use la URL de vanidad.
 
-### Avanzado {#advanced}
+### Avanzado  {#advanced}
 
 * **Idioma**
 
@@ -131,7 +134,7 @@ Las propiedades se distribuyen entre varias fichas:
 
    Especificar una configuración de exportación.
 
-### Miniatura {#thumbnail}
+### Miniatura     {#thumbnail}
 
 * **Miniatura de la página**
 
@@ -145,9 +148,9 @@ Las propiedades se distribuyen entre varias fichas:
 
       Cargue una imagen para utilizarla como miniatura.
 
-### Servicios de nube {#cloud-services}
+### Cloud Services{#cloud-services}
 
-* **Servicios de nube**
+* **Cloud Services**
 
    Defina propiedades para [servicios de nube](/help/sites-developing/extending-cloud-config.md).
 
@@ -157,7 +160,7 @@ Las propiedades se distribuyen entre varias fichas:
 
    Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permisos {#permissions}
+### Permisos    {#permissions}
 
 * **Permisos** (IU táctil)
 
@@ -167,15 +170,15 @@ Las propiedades se distribuyen entre varias fichas:
 
 * **Modelo**
 
-   Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones a Live Copy.
+   Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy     {#live-copy}
 
 * **Live Copy**
 
    Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio {#site-structure}
+### Estructura del sitio     {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
