@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 A la hora de aplicar el flujo de trabajo, puede especificar la siguiente información:
 
-* El flujo de trabajo que desea aplicar.
+* Flujo de trabajo que se va a aplicar.
 
-   Puede aplicar cualquier flujo de trabajo (a los que tiene acceso, según la asignación del administrador de AEM).
+   Puede aplicar cualquier flujo de trabajo (al que tenga acceso, según lo haya asignado el administrador de AEM).
 * De forma opcional:
 
    * Un comentario que proporciona información sobre por qué se inició el flujo de trabajo.
@@ -35,7 +38,7 @@ A la hora de aplicar el flujo de trabajo, puede especificar la siguiente informa
 
 Los flujos de trabajo se pueden iniciar desde la consola sitios web o, al editar una página, desde la barra de tareas.
 
-The **Status** column in the **Websites** console indicates whether a workflow has been applied to a page:
+La columna **Estado** de la consola **Sitios web** indica si se ha aplicado un flujo de trabajo a una página:
 
 ![workflow status](assets/workflowstatus.png)
 
@@ -46,12 +49,12 @@ The **Status** column in the **Websites** console indicates whether a workflow h
 1. En la lista de la página, seleccione la página y, a continuación, haga clic en el flujo de trabajo.
 1. En el cuadro de diálogo Iniciar un flujo de trabajo, seleccione el flujo de trabajo que quiera. De forma opcional, escriba un comentario y un título. A continuación, haga clic en Inicio.
 
-### Iniciar un flujo de trabajo mediante la barra de tareas {#starting-a-workflow-using-sidekick}
+### Iniciar un flujo de trabajo mediante la barra de tareas  {#starting-a-workflow-using-sidekick}
 
 1. Abra la consola Sitios web. 
 1. Abra la página necesaria.
 1. Seleccione la ficha del flujo de trabajo de la barra de tareas.
-1. Expand the **Workflow** dialog, allowing you to select the **Workflow** and optionally enter **Workflow Title** and **Comment**.
+1. Expanda el cuadro de diálogo **Flujo de trabajo**, permitiéndole seleccionar el **Flujo de trabajo** y opcionalmente ingresar **Título de flujo de trabajo** y **Comentario**.
 
    ![workflow startsidebarra de tareas](assets/workflowstartsidekick.png)
 
