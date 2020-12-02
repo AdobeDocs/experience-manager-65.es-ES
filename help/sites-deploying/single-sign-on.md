@@ -39,26 +39,26 @@ Debe especificar el mismo nombre de atributo para ambos servicios. El atributo s
 
 ## Configuración de SSO {#configuring-sso}
 
-Para configurar SSO para una instancia de AEM, debe configurar el controlador de autenticación [SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Para configurar SSO para una instancia de AEM, debe configurar el [Controlador de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+1. Al trabajar con AEM existen varios métodos para gestionar los parámetros de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más detalles y las prácticas recomendadas.
 
    Por ejemplo, para el conjunto NTLM:
 
-   * **Ruta:** según sea necesario; por ejemplo, `/`
-   * **Nombres** de encabezados: `LOGON_USER`
-   * **Formato** de ID: `^<DOMAIN>\\(.+)$`
+   * **Ruta:** según sea necesario; por ejemplo,  `/`
+   * **Nombres** de encabezados:  `LOGON_USER`
+   * **Formato** de ID:  `^<DOMAIN>\\(.+)$`
 
       Donde `<*DOMAIN*>` se reemplaza por su propio nombre de dominio.
    Para CoSign:
 
-   * **Ruta:** según sea necesario; por ejemplo, `/`
+   * **Ruta:** según sea necesario; por ejemplo,  `/`
    * **Nombres** de encabezados: remote_user
    * **Formato de ID:** AsIs
 
    Para SiteMinder:
 
-   * **Ruta:** según sea necesario; por ejemplo, `/`
+   * **Ruta:** según sea necesario; por ejemplo,  `/`
    * **Nombres de encabezados:** SM_USER
    * **Formato** de ID: AsIs
 
@@ -83,7 +83,7 @@ Para configurar SSO para una instancia de AEM, debe configurar el controlador de
 
 >[!NOTE]
 >
->Si también está utilizando [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con Microsoft Internet Information Server (IIS), se necesitará una configuración adicional en:
+>Si también utiliza el [despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con el servidor de información de Internet de Microsoft (IIS), se necesitará una configuración adicional en:
 >
 >* `disp_iis.ini`
 >* IIS
@@ -91,7 +91,7 @@ Para configurar SSO para una instancia de AEM, debe configurar el controlador de
 >
 >
 En `disp_iis.ini` conjunto:
->(consulte [Instalación de Dispatcher con el servidor](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) de información de Internet de Microsoft para obtener más información)
+>(consulte [instalación del despachante con el servidor de información de Internet de Microsoft](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) para obtener más información)
 >
 >* `servervariables=1` (reenvía variables de servidor IIS como encabezados de solicitud a la instancia remota)
 >* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
@@ -100,26 +100,26 @@ En `disp_iis.ini` conjunto:
 >
 En IIS:
 >
->* deshabilitar el acceso **anónimo**
+>* deshabilitar **Acceso anónimo**
    >
    >
-* habilitar la autenticación **integrada de Windows**
+* habilitar **autenticación integrada de Windows**
 
 >
 
 
 
-Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido mediante la opción **Autenticador** de la consola Félix; por ejemplo:
+Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido mediante la opción **Autenticador** de la consola Felix; por ejemplo:
 
 `http://localhost:4502/system/console/slingauth`
 
-El controlador que mejor se adapte a la ruta se consulta primero. Por ejemplo, si configura handler-A para la ruta `/` y handler-B para la ruta `/content`, entonces una solicitud para `/content/mypage.html` será el controlador de consulta-B primero.
+El controlador que mejor se adapte a la ruta se consulta primero. Por ejemplo: si configura handler-A para la ruta `/` y handler-B para la ruta `/content`, una solicitud a `/content/mypage.html` primero consulta handler-B.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Ejemplo {#example}
 
-Para una solicitud de cookie (mediante la dirección URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Para una solicitud de cookie (con la dirección URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -131,13 +131,13 @@ Con la siguiente configuración:
 
 * **Ruta**: `/`
 
-* **Nombres** de encabezados: `TestHeader`
+* **Nombres** de encabezados:  `TestHeader`
 
-* **Nombres** de cookies: `TestCookie`
+* **Nombres** de cookies:  `TestCookie`
 
-* **Nombres** de parámetros: `TestParameter`
+* **Nombres** de parámetros:  `TestParameter`
 
-* **Formato** de ID: `AsIs`
+* **Formato** de ID:  `AsIs`
 
 La respuesta sería:
 
@@ -160,14 +160,14 @@ Transfer-Encoding: chunked
 Esto también funciona si solicita:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-O bien, puede utilizar el siguiente comando curl para enviar el `TestHeader` encabezado a `admin:`
+O bien, puede utilizar el siguiente comando curl para enviar el encabezado `TestHeader` a `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
 >Al utilizar el parámetro de solicitud en un navegador solo verá parte del HTML sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud.
 
-## Eliminación de vínculos de cierre de sesión AEM {#removing-aem-sign-out-links}
+## Eliminando vínculos de cierre de sesión de AEM {#removing-aem-sign-out-links}
 
 Cuando se utiliza SSO, el inicio de sesión y el cierre de sesión se gestionan externamente, por lo que AEM vínculos de cierre de sesión propios ya no son aplicables y deben eliminarse.
 
