@@ -12,17 +12,20 @@ discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 10%
 
 ---
 
 
 # Licencias de conector de SharePoint, avisos de copyright y renuncias de responsabilidad{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Esta sección enumera todas las licencias, avisos de copyright y renuncias de responsabilidad que deben indicarse explícitamente en relación con Day JCR Connector para MS SharePoint.
+Esta sección lista todas las licencias, avisos de copyright y renuncias de responsabilidad que deben indicarse explícitamente en relación con Day JCR Connector para MS SharePoint.
 
-## Descripción general de las bibliotecas de conectores de terceros {#overview-of-connector-rd-party-libraries}
+## Visión general de las bibliotecas de conectores de terceros {#overview-of-connector-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o los avisos de renuncia de responsabilidad que cubren:
+La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o los avisos de exención de responsabilidades que cubren:
 
 | Biblioteca | Tipo de licencia |
 |---|---|
@@ -39,8 +42,8 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las 
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| concurrente | [Simultáneo](#concurrent) (dominio público) |
-| geronimo-activation_1.1_Spec | [Apache](#apache) |
+| concurrente | [Simultáneo](#concurrent)  (dominio público) |
+| geronimo-activación_1.1_especificación | [Apache](#apache) |
 | geronimo-stax-api_1.0_Spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
@@ -63,7 +66,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las 
 
 ## Información general sobre las bibliotecas de terceros de CRX {#overview-of-crx-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas en CRX, junto con las licencias, avisos de copyright o exenciones de responsabilidad por las que están cubiertas:
+La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto con las licencias, avisos de copyright o renuncias de responsabilidad por las que están cubiertas:
 
 <table>
  <colgroup>
@@ -95,7 +98,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas en CRX, junto 
    <td><a href="#apache">Apache</a></td>
   </tr>
   <tr>
-   <td>simultáneo-1.3.4.jar</td>
+   <td>Simultáneamente-1.3.4.jar</td>
    <td><a href="#concurrent">Simultáneo</a></td>
   </tr>
   <tr>
@@ -153,9 +156,9 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas en CRX, junto 
  </tbody>
 </table>
 
-## Visión General de las Bibliotecas de Terceros CQSE {#overview-of-cqse-rd-party-libraries}
+## Visión General de Bibliotecas de Terceros CQSE {#overview-of-cqse-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas en el motor servlet del comunicado, junto con las licencias, avisos de copyright o declaraciones de renuncia de responsabilidad por las que están cubiertas:
+La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor servlet del comunicado, junto con las licencias, avisos de copyright o declaraciones de renuncia de responsabilidad por las que se cubren:
 
 <table>
  <colgroup>
@@ -424,7 +427,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas en el motor se
      limitations under the License.
 ```
 
-## Simultáneo {#concurrent}
+## Concurrente {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
