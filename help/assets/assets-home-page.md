@@ -1,52 +1,52 @@
 ---
-title: '[!DNL Assets] Experiencia de Página de inicio'
-description: Personalice [!DNL Experience Manager Assets] la página principal para disfrutar de una experiencia de pantalla de bienvenida completa, incluida una instantánea de las actividades recientes sobre los recursos.
+title: '[!DNL Assets] Experiencia de página de inicio'
+description: Personalice la Página de inicio [!DNL Experience Manager Assets] para disfrutar de una experiencia de pantalla de bienvenida completa, incluida una instantánea de las actividades recientes sobre los recursos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] Experiencia de página de inicio {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Experiencia de página de inicio  {#aem-assets-home-page-experience}
 
-Personalice la [!DNL Adobe Experience Manager Assets] página de inicio para disfrutar de una amplia experiencia en la pantalla de bienvenida, incluida una instantánea de las actividades recientes sobre los recursos.
+Personalice la página de inicio [!DNL Adobe Experience Manager Assets] para disfrutar de una experiencia de pantalla de bienvenida rica, incluida una instantánea de las actividades recientes sobre los recursos.
 
 [!DNL Assets] página de inicio ofrece una experiencia de pantalla de bienvenida completa y personalizada, que incluye una instantánea de actividades recientes, como recursos que se han visualizado o cargado recientemente.
 
-La [!DNL Assets] página de inicio está deshabilitada de forma predeterminada. Para habilitarlo, realice los siguientes pasos:
+La página de inicio [!DNL Assets] está deshabilitada de forma predeterminada. Para habilitarlo, realice los siguientes pasos:
 
 1. Abra [!DNL Experience Manager] Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra el servicio **[!UICONTROL Day CQ DAM Evento Recorder]** .
-1. Seleccione **[!UICONTROL Activar este servicio]** para activar la grabación de actividades.
+1. Abra el servicio **[!UICONTROL Grabador de Eventos CQ DAM]**.
+1. Seleccione **[!UICONTROL Habilitar este servicio]** para habilitar la grabación de actividad.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. En la lista **[!UICONTROL Tipos de evento]** , seleccione los eventos que desea registrar y guarde los cambios.
+1. En la lista **[!UICONTROL Tipos de evento]**, seleccione los eventos que se van a registrar y guarde los cambios.
 
    >[!CAUTION]
    >
    >Al habilitar las opciones de vista de recursos, de proyectos vistos y de colecciones, se aumenta considerablemente el número de eventos registrados.
 
-1. Abra el servicio Marca **[!UICONTROL de característica de Página de inicio de recursos]** DAM desde Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Seleccione la `isEnabled.name` opción para activar la función de [!DNL Assets] Página de inicio. Guarde los cambios.
+1. Abra el servicio **[!UICONTROL Marca de característica de Página de inicio de recursos de DAM]** desde Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Seleccione la opción `isEnabled.name` para habilitar la función de Página de inicio [!DNL Assets]. Guarde los cambios.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Abra el cuadro de diálogo Preferencias **[!UICONTROL de]** usuario y seleccione **[!UICONTROL Activar Página de inicio]** de recursos. Guarde los cambios.
+1. Abra el cuadro de diálogo **[!UICONTROL Preferencias del usuario]** y seleccione **[!UICONTROL Habilitar Página de inicio de recursos]**. Guarde los cambios.
 
    ![Activar página de inicio de recursos en el cuadro de diálogo Preferencias del usuario](assets/Annotation-color.png)
 
-Después de habilitar la [!DNL Assets] Página de inicio, navegue a la interfaz [!DNL Assets] de usuario desde la página de navegación o acceda a ella directamente desde la dirección URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
+Después de habilitar la Página de inicio [!DNL Assets], navegue a la interfaz de usuario [!DNL Assets] desde la página de navegación o acceda a ella directamente desde la dirección URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
 
 ![configurar vínculo de experiencia en la interfaz de usuario de Recursos](assets/config-experience-link.png)
 
-Haga clic en el **[!UICONTROL vínculo]** Haga clic aquí para configurar la experiencia y agregar el nombre de usuario, la imagen de fondo y la imagen de perfil.
+Haga clic en **[!UICONTROL Haga clic aquí para configurar el vínculo de experiencia]** para agregar el nombre de usuario, la imagen de fondo y la imagen de perfil.
 
-La [!DNL Assets] Página de inicio incluye las siguientes secciones:
+La Página de inicio [!DNL Assets] incluye las siguientes secciones:
 
 * Sección de bienvenida
 * Sección de utilidades
@@ -65,24 +65,24 @@ Esta sección aparece debajo de la sección de bienvenida y muestra los widgets 
 * Reciente
 * Descubrir
 
-**Actividad**: En esta sección, la utilidad **[!UICONTROL Mi Actividad]** muestra las actividades recientes realizadas por el usuario que ha iniciado sesión con los recursos (incluidos los recursos sin representaciones), como cargas de recursos, descargas, creación de recursos, ediciones, comentarios, anotaciones y compartidos.
+**Actividad**: En esta sección, la utilidad  **[!UICONTROL Mi]** actividad muestra actividades recientes realizadas por el usuario que ha iniciado sesión con recursos (incluidos recursos sin representaciones), por ejemplo, cargas de recursos, descargas, creación de recursos, ediciones, comentarios, anotaciones y compartidos.
 
-**Reciente**: La utilidad Vista **** recientemente de esta sección muestra las entidades a las que ha accedido recientemente el usuario que ha iniciado sesión, incluidas las carpetas, las colecciones y los proyectos.
+**Reciente**: La utilidad  **[!UICONTROL Vista]** reciente de esta sección muestra las entidades a las que ha accedido recientemente el usuario que ha iniciado sesión, incluidas las carpetas, las colecciones y los proyectos.
 
-**Discover**: La **[!UICONTROL nueva]** utilidad de esta sección muestra los recursos y las representaciones cargados recientemente en la [!DNL Assets] implementación.
+**Discover**: La  **** nueva utilidad de esta sección muestra los recursos y las representaciones cargados recientemente en la  [!DNL Assets] implementación.
 
-Para habilitar la depuración de datos de actividad de usuario, habilite el servicio **[!UICONTROL de depuración de Eventos]** DAM desde Configuration Manager. Después de habilitar este servicio, el sistema elimina las actividades del usuario que ha iniciado sesión y que exceden un número especificado.
+Para habilitar la depuración de datos de actividad de usuario, habilite el **[!UICONTROL servicio de depuración de Eventos DAM]** desde Configuration Manager. Después de habilitar este servicio, el sistema elimina las actividades del usuario que ha iniciado sesión y que exceden un número especificado.
 
 La pantalla de bienvenida proporciona ayuda para la navegación sencilla, por ejemplo, iconos en la barra de herramientas para acceder a carpetas, colecciones y catálogos.
 
 >[!NOTE]
 >
->Al habilitar los servicios [!UICONTROL Day CQ DAM Evento Recorder] y [!UICONTROL DAM Evento Purge] , aumentan las operaciones de escritura en JCR e indexación de búsqueda, lo que aumenta considerablemente la carga en el [!DNL Experience Manager] servidor. La carga adicional en el [!DNL Experience Manager] servidor puede afectar a su rendimiento.
+>Al habilitar los servicios [!UICONTROL Day CQ DAM Evento Recorder] y [!UICONTROL DAM Evento Purge], aumentan las operaciones de escritura en JCR e indexación de búsqueda, lo que aumenta significativamente la carga en el servidor [!DNL Experience Manager]. La carga adicional en el servidor [!DNL Experience Manager] puede afectar a su rendimiento.
 
 >[!CAUTION]
 >
->La captura, el filtrado y la depuración de actividades de usuario necesarias para la [!DNL Assets] página de inicio imponen una sobrecarga en el rendimiento. Por lo tanto, los administradores deben configurar la Página de inicio de forma eficaz para los usuarios de destinatario.
+>Capturar, filtrar y purgar las actividades de usuario necesarias para la página de inicio [!DNL Assets] impone una sobrecarga en el rendimiento. Por lo tanto, los administradores deben configurar la Página de inicio de forma eficaz para los usuarios de destinatario.
 >
->Adobe recomienda que los administradores y usuarios que realizan operaciones masivas eviten utilizar la función de Página de inicio de recursos para evitar un aumento de las actividades de los usuarios. Además, los administradores pueden excluir las actividades de grabación para usuarios específicos configurando el grabador [!UICONTROL de Evento CQ DAM] de Day desde [!UICONTROL Configuration Manager].
+>Adobe recomienda que los administradores y usuarios que realizan operaciones masivas eviten utilizar la función de Página de inicio de recursos para evitar un aumento de las actividades de los usuarios. Además, los administradores pueden excluir actividades de grabación para usuarios específicos configurando [!UICONTROL Grabador de Eventos DAM CQ de día] desde [!UICONTROL Configuration Manager].
 >
 >Si utiliza la función, Adobe recomienda programar la frecuencia de purga en función de la carga del servidor.
