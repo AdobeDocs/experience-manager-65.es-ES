@@ -18,21 +18,21 @@ ht-degree: 3%
 ---
 
 
-# Rich Text Editor Essentials {#rich-text-editor-essentials}
+# Elementos esenciales del editor de texto enriquecido {#rich-text-editor-essentials}
 
 ## Información general {#overview}
 
 Un editor de texto enriquecido (RTE) permite introducir texto con marcado.
 
-En el caso de los componentes Communities, aunque es similar al editor de texto [enriquecido del entorno](../../help/sites-authoring/rich-text-editor.md)de creación, afecta al texto introducido en el entorno de publicación.
+En el caso de los componentes Communities, aunque es similar al editor de texto enriquecido [del entorno de creación](../../help/sites-authoring/rich-text-editor.md), afecta al texto introducido en el entorno de publicación.
 
 ![rich-text-editor](assets/rich-text-editor.png)
 
-## Enabling Rich Text Editor {#enabling-rich-text-editor}
+## Habilitación del Editor de texto enriquecido {#enabling-rich-text-editor}
 
 Los componentes de comunidades que permiten contenido generado por el usuario (UGC) pueden habilitarse para permitir RTE. Dependiendo de si el componente se agregó a una página o se incluyó en una [función](functions.md), RTE puede habilitarse o no de forma predeterminada.
 
-Si no está activado, simplemente ingrese al modo [de edición del](sites-console.md#authoring-site-content)autor, seleccione el componente para editar y seleccione la `Rich Text Editor` casilla de verificación.
+Si no está activado, simplemente ingrese [modo de edición de autor](sites-console.md#authoring-site-content), seleccione el componente para editar y seleccione la casilla `Rich Text Editor`.
 
 RTE está disponible para los siguientes componentes de Comunidades:
 
@@ -49,7 +49,7 @@ RTE está disponible para los siguientes componentes de Comunidades:
 
 La personalización del editor de texto enriquecido es posible, ya que la implementación se basa en [CKEditor](https://www.ckeditor.com/).
 
-La configuración actual de los componentes de Communities está en la `cq.social.  scf   clientlib`, ubicada en el repositorio en
+La configuración actual de los componentes Communities se encuentra en `cq.social.  scf   clientlib`, en el repositorio de
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -61,7 +61,7 @@ Debido a problemas de seguridad, las opciones de hipervínculo no se incluyen en
 
 Para agregar las opciones de hipervínculo a la barra de herramientas:
 
-* Añadir una barra de herramientas con el nombre &quot; `links`&quot;
+* Añadir una barra de herramientas denominada &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Seleccione **[!UICONTROL Guardar todo]**
 
