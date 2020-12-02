@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # Contenido inicial del Simulador para pruebas {#initial-sandbox-content}
 
-En esta sección, se crean las páginas siguientes que utilizan la plantilla [de](initial-app.md#createthepagetemplate)página:
+En esta sección, se crean las páginas siguientes que utilizan la [plantilla de página](initial-app.md#createthepagetemplate):
 
 * Sitio de Simulador para pruebas SCF, que redireccionará a la versión en inglés de la página principal.
 
@@ -28,49 +28,49 @@ En esta sección, se crean las páginas siguientes que utilizan la plantilla [de
 
    * Reproducción SCF - Elemento secundario de la página principal en la que se va a reproducir.
 
-Aunque este tutorial no profundiza en las copias [de](../../help/sites-administering/tc-prep.md)idioma, está diseñado para que la página raíz pueda implementar la detección del idioma preferido para el usuario a través del encabezado HTML y redireccionar a la página principal correspondiente para el idioma. La convención es utilizar el código de país de dos letras para el nombre de nodo de la página, por ejemplo, &quot;en&quot; para inglés, &quot;fr&quot; para francés, etc.
+Aunque este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md), está diseñado para que la página raíz pueda implementar la detección del idioma preferido para el usuario a través del encabezado HTML y redireccionar a la página principal correspondiente para el idioma. La convención es utilizar el código de país de dos letras para el nombre de nodo de la página, por ejemplo, &quot;en&quot; para inglés, &quot;fr&quot; para francés, etc.
 
 ## Crear primeras páginas {#create-first-pages}
 
-Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, podemos establecer la página raíz del sitio web en el directorio /content.
+Ahora que existe una [plantilla de página](initial-app.md#createthepagetemplate), podemos establecer la página raíz del sitio Web en el directorio /content.
 
 1. La interfaz de usuario estándar actualmente proporciona modelos para crear sitios. Como este tutorial está creando un sitio sencillo, la IU clásica resulta útil.
 
-   Para cambiar a la IU clásica, seleccione la navegación global y coloque el puntero sobre el lado derecho del icono Proyectos. Seleccione el icono *Cambiar a la IU* clásica que aparece:
+   Para cambiar a la IU clásica, seleccione la navegación global y coloque el puntero sobre el lado derecho del icono Proyectos. Seleccione el icono *Cambiar a IU clásica* que aparece:
 
    ![classic-ui](assets/classic-ui.png)
 
-   Un administrador debe [habilitar la capacidad de cambiar a la IU clásica](../../help/sites-administering/enable-classic-ui.md).
+   La capacidad de cambiar a la IU clásica debe estar [habilitada por un administrador](../../help/sites-administering/enable-classic-ui.md).
 
-1. En la página [de bienvenida de la IU](http://localhost:4502/welcome.html)clásica, seleccione **[!UICONTROL Sitios]** web.
+1. En la [página de bienvenida de la IU clásica](http://localhost:4502/welcome.html), seleccione **[!UICONTROL Sitios web]**.
 
    ![classic-ui-website](assets/classic-ui-website.png)
 
-   También puede acceder directamente a la IU clásica para sitios web navegando hasta [/siteadmin.](http://localhost:4502/siteadmin)
+   También puede acceder a la IU clásica para sitios web directamente navegando a [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. En el panel del explorador, seleccione **[!UICONTROL Sitios]** web y, a continuación, en la barra de herramientas, seleccione **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
+1. En el panel del explorador, seleccione **[!UICONTROL Sitios web]** y, a continuación, en la barra de herramientas, seleccione **[!UICONTROL Nueva]** > **[!UICONTROL Nueva página]**.
 
-   En el cuadro de diálogo **[!UICONTROL Crear página]** , escriba lo siguiente:
+   En el cuadro de diálogo **[!UICONTROL Crear página]**, escriba lo siguiente:
 
    * Título: `SCF Sandbox Site`
    * Nombre: `an-scf-sandbox`
-   * Seleccionar **[!UICONTROL una plantilla de reproducción de Simulador para pruebas SCF]**
+   * Seleccione **[!UICONTROL Una plantilla de reproducción de Simulador para pruebas SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**:
+1. En el panel del explorador, seleccione la página que acaba de crear, `/Websites/SCF Sandbox Site`, y haga clic en **[!UICONTROL Nueva]** > **[!UICONTROL Nueva página]**:
 
    * Título: `SCF Sandbox`
    * Nombre: `en`
-   * Seleccionar **[!UICONTROL una plantilla de reproducción de Simulador para pruebas SCF]**
+   * Seleccione **[!UICONTROL Una plantilla de reproducción de Simulador para pruebas SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
-1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site/SCF Sandbox`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**
+1. En el panel del explorador, seleccione la página que acaba de crear, `/Websites/SCF Sandbox Site/SCF Sandbox`, y haga clic en **[!UICONTROL Nueva]** > **[!UICONTROL Nueva página]**
 
    * Título: `SCF Play`
    * Nombre: `play`
-   * Seleccionar **[!UICONTROL una plantilla de reproducción de Simulador para pruebas SCF]**
+   * Seleccione **[!UICONTROL Una plantilla de reproducción de Simulador para pruebas SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
 1. Así es como el sitio web aparece ahora en la consola Sitios web. Observe que las páginas secundarias del elemento seleccionado en el panel del explorador se muestran en el panel derecho donde se pueden administrar.
@@ -83,7 +83,7 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
 
 ## Añadir la ruta de diseño {#add-the-design-path}
 
-Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` se creó con la sección de diseños de la consola Herramientas, la propiedad &quot;
+Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` se creó mediante la sección de diseños de la consola Herramientas, la propiedad &quot;
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
@@ -96,7 +96,7 @@ Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
    * Tipo: `String`
    * Value: `/etc/designs/an-scf-sandbox`
 
-* Haga clic en el botón verde `[+] Add`
+* Haga clic en el `[+] Add` verde
 
 El texto del repositor será el siguiente:
 
@@ -108,4 +108,4 @@ Si hay algún problema al guardar la configuración, vuelva a iniciar sesión y 
 
 >[!NOTE]
 >
->El uso de `cq:designPath` es opcional y no está relacionado con el [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que son esencialmente obligatorios ya que los componentes de SCF utilizan [clientlibs](client-customize.md#clientlibs-for-scf) para administrar sus JS y CSS.
+>El uso de `cq:designPath` es opcional y no está relacionado con el [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que son esencialmente necesarios ya que los componentes de SCF utilizan [clientlibs](client-customize.md#clientlibs-for-scf) para administrar sus JS y CSS.
