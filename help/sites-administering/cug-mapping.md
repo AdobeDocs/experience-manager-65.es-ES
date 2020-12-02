@@ -53,7 +53,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## Comparación de los servicios de OSGi {#comparison-of-osgi-services}
+## Comparación de OSGi Services {#comparison-of-osgi-services}
 
 **Versiones anteriores AEM**
 
