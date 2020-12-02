@@ -1,8 +1,8 @@
 ---
 title: Vista y comprensión de los informes de análisis de AEM Forms
 seo-title: Vista y comprensión de los informes de análisis de AEM Forms
-description: AEM Forms se integra con Adobe Analytics y le proporciona un resumen y análisis detallado de los formularios adaptables publicados.
-seo-description: AEM Forms se integra con Adobe Analytics y le proporciona un resumen y análisis detallado de los formularios adaptables publicados.
+description: AEM Forms se integra con Adobe Analytics y proporciona un resumen y análisis detallados de los formularios adaptables publicados.
+seo-description: AEM Forms se integra con Adobe Analytics y proporciona un resumen y análisis detallados de los formularios adaptables publicados.
 uuid: b15ba5f3-aea7-40f5-893e-aaf3834cbc33
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,21 +11,24 @@ discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 0%
 
 ---
 
 
 # Vista y comprensión de los informes de análisis de AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms se integra con Adobe Analytics, que le permite capturar y rastrear métricas de rendimiento para los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas en base a los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
+Adobe Experience Manager Forms se integra con Adobe Analytics que le permite capturar y rastrear las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas en base a los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
 ## Configuración de análisis {#setting-up-analytics}
 
-La función de análisis de AEM Forms está disponible como parte del paquete de complementos de AEM Forms. Para obtener información sobre la instalación del paquete de complementos, consulte [Instalación y configuración de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
+La función de análisis de AEM Forms está disponible como parte del paquete del complemento AEM Forms. Para obtener información sobre la instalación del paquete de complemento, consulte [Instalación y configuración de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 Además del paquete de complemento, necesita una cuenta de Adobe Analytics. Para obtener información sobre la solución, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Una vez que tenga el paquete de complementos de AEM Forms y una cuenta de Adobe Analytics, integre la cuenta de Adobe Analytics con AEM Forms y habilite el seguimiento de sus formularios o documentos como se describe en [Configuración de análisis e informes](../../forms/using/configure-analytics-forms-documents.md).
+Una vez que tenga el paquete de complementos de AEM Forms y una cuenta de Adobe Analytics, integre la cuenta de Adobe Analytics con AEM Forms y habilite el seguimiento en los formularios o documentos como se describe en [Configuración de análisis e informes](../../forms/using/configure-analytics-forms-documents.md).
 
 ### Cómo se registra la información de interacción del usuario {#how-user-interaction-information-is-recorded}
 
@@ -50,19 +53,19 @@ Cuando un usuario interactúa con el formulario, las interacciones se registran 
 Realice los siguientes pasos para los informes de análisis de vista:
 
 1. Inicie sesión en el portal de AEM en `https://[hostname]:'port'`
-1. Haga clic en **Formularios > Formularios y Documentos**.
+1. Haga clic en **Forms > Forms y Documentos**.
 1. Seleccione el formulario para el que desea realizar la vista de los informes de análisis.
-1. Seleccione **Más > Informes** de Analytics.
+1. Seleccione **Más > Informes de Analytics**.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**A.** Informe de Analytics, comando
+**A.Informe** de Analytics, comando
 
-AEM Forms muestra informes de análisis para el formulario y para cada panel del formulario, como se muestra a continuación.
+AEM Forms muestra los informes de análisis del formulario y de cada panel del formulario, como se muestra a continuación.
 
 ![Informe de resumen de un formulario adaptable](assets/analyticsdashboard_callout.png)
 
-**A.** Conversiones **B.** Resumen a nivel de formulario **C.** Resumen a nivel de panel **D.** Exploradores de visitantes - filtro **E.** SO de visitantes - filtro **F.** Idioma de los visitantes: filtrar
+**A.** Conversiones  **B.Resumen a nivel de** formulario  **C.** Resumen a nivel de panel  **D.** Exploradores de visitantes - filtro  **E.** OS de visitantes - filtro  **** F.Lenguaje de visitantes - filtro
 
 De forma predeterminada, se muestra el informe de análisis de los últimos siete días. Puede vista de informes de los últimos 15 días, de un último mes, etc., o especificar un intervalo de fechas.
 
@@ -91,11 +94,11 @@ La sección de resumen de nivel de formulario proporciona una visión detallada 
 * **Borradores**: Número de veces que el formulario se ha guardado como borrador
 * **Envíos**: Número de veces que se ha enviado el formulario
 * **Anular**: Número de veces que los usuarios empezaron a rellenar el formulario y luego se fueron sin cumplimentar el formulario
-* **Visitantes**&#x200B;únicos: Número de veces que el formulario se &quot;procesa mediante visitantes únicos. Para obtener más información sobre visitantes únicos, consulte Visitantes [únicos, Visitas y comportamiento](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)del cliente.
+* **Visitantes** únicos: Número de veces que el formulario se &quot;procesa mediante visitantes únicos. Para obtener más información sobre visitantes únicos, consulte [Visitantes únicos, visitas y comportamiento del cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Informe de análisis de resumen de nivel de formulario ampliado](assets/analytics-report.png)
 
-### Panel report {#bottom-summary-report}
+### Informe de panel {#bottom-summary-report}
 
 La sección de resumen de nivel de panel proporciona la siguiente información sobre cada panel del formulario:
 
@@ -123,9 +126,9 @@ Puede desplazarse entre los paneles si hay varios paneles disponibles.
 
 Las tablas Distribución del explorador, Distribución del sistema operativo y Distribución de idioma muestran las representaciones, visitantes y envíos según los exploradores, el sistema operativo y el idioma de los usuarios del formulario. De forma predeterminada, estas tablas muestran un máximo de cinco entradas. Puede hacer clic en Mostrar más para mostrar más entradas y hacer clic en Mostrar menos para volver a las cinco entradas normales o menos.
 
-Para filtrar más los datos de análisis, puede hacer clic en una entrada de cualquiera de las tablas. Por ejemplo: si hace clic en Google Chrome en la tabla de distribución del explorador, el informe se procesa nuevamente con datos relevantes para el explorador Google Chrome de la siguiente manera:
+Para filtrar más los datos de análisis, puede hacer clic en una entrada de cualquiera de las tablas. Por ejemplo, si hace clic en Google Chrome en la tabla de distribución del explorador, el informe se procesa nuevamente con datos relevantes para el explorador Google Chrome de la siguiente manera:
 
-![Filtro aplicado al informe de Analytics - Google Chrome ](assets/filter-1.png)
+![Filtro aplicado al informe de Analytics - Google Chrome  ](assets/filter-1.png)
 
 Si vista el informe del panel después de aplicar un filtro, los datos del informe del panel también se muestran según el filtro aplicado.
 
@@ -141,4 +144,4 @@ Una vez aplicado el filtro:
 
 Si tiene habilitadas las pruebas A/B y configuradas para el formulario, la página del informe tiene una lista desplegable que puede utilizar para mostrar el informe de prueba A/B. El informe de prueba A/B muestra el rendimiento comparativo de dos versiones del formulario según se ha configurado.
 
-Para obtener más información sobre la prueba A/B, consulte [Creación y gestión de pruebas A/B para formularios](../../forms/using/ab-testing-adaptive-forms.md)adaptables.
+Para obtener más información sobre la prueba A/B, consulte [Creación y administración de pruebas A/B para formularios adaptables](../../forms/using/ab-testing-adaptive-forms.md).
