@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -21,21 +24,21 @@ Puede configurar un mensaje para que se muestre en la página de bienvenida de l
 
 Si es necesario, puede utilizar las etiquetas HTML admitidas por Adobe Flash® Player para dar formato al aspecto del texto:
 
-* &lt;a> Etiqueta delimitadora
-* &lt;b> Etiqueta Negrita
-* &lt;br> Etiqueta break
-* &lt;font> Etiqueta de fuente
+* &lt;a> Etiqueta delimitadora&lt;/a>
+* &lt;b> Etiqueta Negrita&lt;/b>
+* &lt;br> Etiqueta de salto
+* &lt;font> Etiqueta de fuente&lt;/font>
 * &lt;img> Etiqueta de imagen
-* &lt;i> Etiqueta cursiva
+* &lt;i> Etiqueta en cursiva&lt;/i>
 * &lt;li> Etiqueta de elemento de lista
 * &lt;p> Etiqueta de párrafo
-* Etiqueta &lt;span> Span
-* Etiqueta de formato de texto &lt;textformat>
-* &lt;u> Subrayar etiqueta
+* &lt;span> Etiqueta de expansión&lt;/span>
+* &lt;textformat> Etiqueta de formato de texto
+* &lt;u> Etiqueta Subrayado&lt;/u>
 
-Para obtener más información sobre las etiquetas admitidas, consulte la definición de la propiedad de la `htmlText` clase TextField en la Referencia [del lenguaje](https://www.adobe.com/support/documentation/en/flex/)Flex.
+Para obtener más información sobre las etiquetas admitidas, consulte la definición de la propiedad `htmlText` para la clase TextField en la [Referencia del lenguaje de Flex](https://www.adobe.com/support/documentation/en/flex/).
 
-## Configurar el mensaje del día {#set-the-message-of-the-day}
+## Configure el mensaje del día {#set-the-message-of-the-day}
 
 1. En la consola de administración, haga clic en Servicios > Espacio de trabajo > Mensaje del día.
 1. En el cuadro Mensaje del día, proporcione el texto que se mostrará en la pantalla de bienvenida.
@@ -43,5 +46,5 @@ Para obtener más información sobre las etiquetas admitidas, consulte la defini
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
