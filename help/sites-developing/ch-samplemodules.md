@@ -24,7 +24,7 @@ ContextHub proporciona varios módulos de interfaz de usuario de muestra que pue
 * Dónde encontrar el código fuente para poder abrirlo con fines de aprendizaje.
 * Cómo configurar el módulo de interfaz de usuario.
 
-Para obtener información sobre cómo agregar módulos de interfaz de usuario a ContextHub, consulte [Añadir un módulo](ch-configuring.md#adding-a-ui-module)de interfaz de usuario. Para obtener información sobre el desarrollo de módulos de interfaz de usuario, consulte [Creación de tipos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de módulos de interfaz de usuario de ContextHub.
+Para obtener información sobre cómo agregar módulos de interfaz de usuario a ContextHub, consulte [Añadir un módulo de interfaz de usuario](ch-configuring.md#adding-a-ui-module). Para obtener información sobre el desarrollo de módulos de interfaz de usuario, consulte [Creación de tipos de módulos de interfaz de usuario de ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
 ## Tipo de módulo de interfaz de usuario contexthub.base {#contexthub-base-ui-module-type}
 
@@ -32,10 +32,10 @@ El tipo de módulo de interfaz de usuario contexthub.base es el tipo base para t
 
 Están disponibles las siguientes funciones:
 
-* **Título e icono:** Especifique un título para el módulo de interfaz de usuario y un icono. Se puede hacer referencia al icono mediante una URL o desde la biblioteca de iconos de la interfaz de usuario de Coral.
-* **Almacenar datos:** Identifique uno o más almacenes desde los cuales recuperar datos.
-* **Contenido:** Especifique el contenido que aparece en el módulo de interfaz de usuario tal como aparece en la barra de herramientas de ContextHub.
-* **Contenido emergente:** Especifique el contenido que aparece en una ventana emergente cuando se hace clic o se toca el módulo de la interfaz de usuario.
+* **Título e icono:** especifique un título para el módulo de interfaz de usuario y un icono. Se puede hacer referencia al icono mediante una URL o desde la biblioteca de iconos de la interfaz de usuario de Coral.
+* **Almacenar datos:** Identifique uno o más almacenes desde los que recuperar datos.
+* **Contenido:** especifique el contenido que aparece en el módulo de interfaz de usuario tal como aparece en la barra de herramientas de ContextHub.
+* **Contenido emergente:** especifique el contenido que aparece en una ventana emergente cuando se hace clic o se toca el módulo de la interfaz de usuario.
 * **Modo de pantalla completa:** Controlar si se permite el modo de pantalla completa.
 
 El código fuente se encuentra en /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
@@ -44,33 +44,33 @@ El código fuente se encuentra en /libs/granite/contexthub/code/ui/container/js/
 
 Configure el módulo de interfaz de usuario contexthub.base con un objeto Javascript en formato JSON. Incluya cualquiera de las siguientes propiedades para configurar las funciones del módulo de interfaz de usuario:
 
-* **image:** Dirección URL de una imagen para mostrarla como icono.
-* **icono:** Nombre de una clase de icono [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral UI. Si especifica un valor tanto para las propiedades de icono como de imagen, se utilizará la imagen.
+* **imagen:** Una URL a una imagen para mostrarla como icono.
+* **icono:** nombre de una  [iconclase de interfaz de usuario de Coral ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) . Si especifica un valor tanto para las propiedades de icono como de imagen, se utilizará la imagen.
 
-* **title:** Un título para el módulo de interfaz de usuario. El título aparece cuando el puntero se pone en pausa sobre el icono del módulo de la interfaz de usuario.
-* **pantalla completa:** Valor booleano que indica si el módulo de interfaz de usuario admite el modo de pantalla completa. Se utiliza `true` para admitir la pantalla completa y `false` para evitar el modo de pantalla completa.
+* **título:** Un título para el módulo de interfaz de usuario. El título aparece cuando el puntero se pone en pausa sobre el icono del módulo de la interfaz de usuario.
+* **pantalla completa:** un valor booleano que indica si el módulo de interfaz de usuario admite el modo de pantalla completa. Utilice `true` para admitir la pantalla completa y `false` para evitar el modo de pantalla completa.
 
-* **plantilla:** Plantilla [Handlebars](https://handlebarsjs.com/) que especifica el contenido que se va a procesar en la barra de herramientas de ContextHub. Utilice como máximo dos `<p>` etiquetas.
+* **plantilla:** una  [](https://handlebarsjs.com/) plantilla de control que especifica el contenido que se va a procesar en la barra de herramientas de ContextHub. Utilice como máximo dos etiquetas `<p>`.
 
 * **storeMapping:** Asignación de clave/tienda. Utilice la clave de las plantillas de la barra de control para acceder a los datos asociados del almacén de ContextHub.
-* **lista:** Matriz de elementos que se mostrarán como listas en una ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya popoverTemplate. El valor es una matriz de objetos con las siguientes claves:
+* **lista:** matriz de elementos que se mostrarán como lista en una ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya popoverTemplate. El valor es una matriz de objetos con las siguientes claves:
 
    * title: Texto que se va a mostrar para este elemento
    * image: (Opcional) Dirección URL de una imagen que debe mostrarse a la izquierda
    * icono: (Opcional) Una clase de icono CUI que debe mostrarse a la izquierda; se omite si se especifica una imagen
-   * seleccionado: (Opcional) Un valor booleano que especifica si este elemento debe mostrarse como seleccionado (true=seleccionado). De forma predeterminada, los elementos seleccionados aparecen con una fuente en negrita. Utilice una `listType` propiedad para configurar otros aspectos visuales (consulte a continuación).
+   * seleccionado: (Opcional) Un valor booleano que especifica si este elemento debe mostrarse como seleccionado (true=seleccionado). De forma predeterminada, los elementos seleccionados aparecen con una fuente en negrita. Utilice una propiedad `listType` para configurar otros aspectos visuales (consulte a continuación).
 
-* **listType:** Estilo que se va a utilizar para los elementos de lista de la ventana emergente. Utilice uno de los siguientes valores:
+* **listType:** estilo que se va a utilizar para los elementos de lista emergente. Utilice uno de los siguientes valores:
 
    * marca de verificación
    * casilla de verificación
    * radio
 
-* **poverTemplate:** Una plantilla de Handlebars que especifica el contenido que se procesará en la ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya el `list` .
+* **poverTemplate:** una plantilla de Handlebars que especifica el contenido que se procesará en la ventana emergente cuando se haga clic en el módulo de la interfaz de usuario. Si incluye este elemento, no incluya el elemento `list`.
 
 ### Ejemplo {#example}
 
-En el ejemplo siguiente se configura un módulo de interfaz de usuario contexthub.base para mostrar información de una tienda [contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) . El `template` elemento muestra cómo obtener datos del almacén utilizando la clave que establece el `storeMapping` elemento.
+En el ejemplo siguiente se configura un módulo de interfaz de usuario contexthub.base para mostrar información de una tienda [contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate). El elemento `template` muestra cómo obtener datos del almacén utilizando la clave que establece el elemento `storeMapping`.
 
 ```xml
 {
@@ -87,7 +87,7 @@ En el ejemplo siguiente se configura un módulo de interfaz de usuario contexthu
 
 ## contexthub.browserinfo Tipo de módulo de interfaz de usuario {#contexthub-browserinfo-ui-module-type}
 
-El módulo de interfaz de usuario contexthub.browserinfo muestra información sobre el explorador web y el sistema operativo del cliente. La información se obtiene de la tienda surferinfo, basada en el [candidato de la tienda contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) .
+El módulo de interfaz de usuario contexthub.browserinfo muestra información sobre el explorador web y el sistema operativo del cliente. La información se obtiene de la tienda surferinfo, basada en el candidato de la tienda [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate).
 
 ![chlimage_1-77](assets/chlimage_1-77a.png)
 
@@ -106,9 +106,9 @@ Las instancias del módulo de interfaz de usuario contexthub.browserinfo no requ
 }
 ```
 
-## Tipo de módulo de interfaz de usuario contexthub.datetime {#contexthub-datetime-ui-module-type}
+## contexthub.datetime Tipo de módulo de interfaz de usuario {#contexthub-datetime-ui-module-type}
 
-El módulo de interfaz de usuario contexthub.datetime muestra la fecha y la hora almacenadas en una tienda denominada datetime que se basa en el candidato de [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) store.
+El módulo de interfaz de usuario contexthub.datetime muestra la fecha y la hora almacenadas en un almacén denominado datetime, que se basa en el candidato de almacenamiento [contextthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate).
 
 ![chlimage_1-78](assets/chlimage_1-78a.png)
 
@@ -133,7 +133,7 @@ Las instancias del módulo de interfaz de usuario contexthub.datetime no requier
 
 ## Tipo de módulo de interfaz de usuario contexthub.location {#contexthub-location-ui-module-type}
 
-El módulo de interfaz de usuario contexthub.location muestra la longitud y la latitud del cliente. El módulo proporciona una ventana emergente que muestra un mapa de Google en el que puede hacer clic para cambiar la ubicación actual. El módulo obtiene información de una tienda de ContextHub llamada geolocalización basada en el [candidato de la tienda de contexto.geolocalización](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) .
+El módulo de interfaz de usuario contexthub.location muestra la longitud y la latitud del cliente. El módulo proporciona una ventana emergente que muestra un mapa de Google en el que puede hacer clic para cambiar la ubicación actual. El módulo obtiene información de un almacén de ContextHub llamado geolocalización basada en el candidato de almacenamiento [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate).
 
 ![chlimage_1-80](assets/chlimage_1-80a.png)
 
@@ -176,7 +176,7 @@ Las instancias del módulo de interfaz de usuario contexthub.location no requier
 
 ## contexthub.screen-orientation UI Tipo de módulo {#contexthub-screen-orientation-ui-module-type}
 
-El módulo de IU contexthub.screen-orientation muestra la orientación actual de la pantalla del cliente. Aunque está deshabilitado de forma predeterminada, el módulo proporciona una ventana emergente que le permite seleccionar una orientación. El módulo obtiene información de una tienda de ContextHub denominada emuladores que se basa en el candidato de la tienda [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) .
+El módulo de IU contexthub.screen-orientation muestra la orientación actual de la pantalla del cliente. Aunque está deshabilitado de forma predeterminada, el módulo proporciona una ventana emergente que le permite seleccionar una orientación. El módulo obtiene información de un almacén de ContextHub denominado emuladores que se basa en el candidato de almacenamiento [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate).
 
 ![chlimage_1-81](assets/chlimage_1-81a.png)
 
@@ -184,7 +184,7 @@ El origen del módulo de interfaz de usuario se encuentra en /libs/granite/conte
 
 ### Configuración {#configuration-5}
 
-Las instancias del módulo de interfaz de usuario contexthub.screen-orientation no requieren un valor para la Configuración de detalles. El siguiente texto JSON representa la configuración predeterminada del módulo. Tenga en cuenta que la `clickable` propiedad está `false` predeterminada. Si anula la configuración predeterminada en la que desea configurarla, `clickable` al hacer clic en `true`el módulo se abre una ventana emergente en la que puede seleccionar la orientación.
+Las instancias del módulo de interfaz de usuario contexthub.screen-orientation no requieren un valor para la Configuración de detalles. El siguiente texto JSON representa la configuración predeterminada del módulo. Tenga en cuenta que la propiedad `clickable` es `false` de manera predeterminada. Si anula la configuración predeterminada para establecer `clickable` en `true`, al hacer clic en el módulo se muestra una ventana emergente en la que puede seleccionar la orientación.
 
 ```xml
 {
@@ -198,9 +198,9 @@ Las instancias del módulo de interfaz de usuario contexthub.screen-orientation 
 }
 ```
 
-## Tipo de módulo de interfaz de usuario contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
+## contexthub.tagcloud Tipo de módulo de interfaz de usuario {#contexthub-tagcloud-ui-module-type}
 
-El módulo de interfaz de usuario contexthub.tagcloud muestra información sobre las etiquetas. En la barra de herramientas, el módulo UI muestra el número de etiquetas. La ventana emergente muestra un tagcloud y un cuadro de texto para agregar nuevas etiquetas. El módulo UI obtiene información de una tienda de ContextHub denominada tagcloud basada en el candidato a la tienda [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) .
+El módulo de interfaz de usuario contexthub.tagcloud muestra información sobre las etiquetas. En la barra de herramientas, el módulo UI muestra el número de etiquetas. La ventana emergente muestra un tagcloud y un cuadro de texto para agregar nuevas etiquetas. El módulo UI obtiene información de una tienda de ContextHub denominada tagcloud basada en el candidato de la tienda [contextHub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store).
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
 
@@ -224,7 +224,7 @@ Las instancias del módulo de interfaz de usuario contexthub.tagcloud no requier
 
 ## tipo de módulo de interfaz de usuario de granite.perfil {#granite-profile-ui-module-type}
 
-El módulo de interfaz de usuario de granite.perfil ContextHub muestra el nombre para mostrar del usuario actual. La ventana emergente revela el nombre de inicio de sesión del usuario y le permite cambiar el valor del nombre para mostrar. El módulo de interfaz de usuario obtiene información de una tienda de ContextHub denominada perfil basada en el candidato de la tienda [granite.perfil](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) .
+El módulo de interfaz de usuario de granite.perfil ContextHub muestra el nombre para mostrar del usuario actual. La ventana emergente revela el nombre de inicio de sesión del usuario y le permite cambiar el valor del nombre para mostrar. El módulo de interfaz de usuario obtiene información de un almacén de ContextHub denominado perfil que se basa en el candidato de almacenamiento [granite.perfil](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
