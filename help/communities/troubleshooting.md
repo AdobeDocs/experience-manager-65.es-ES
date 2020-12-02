@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Esta sección contiene preocupaciones comunes y problemas conocidos.
 
 ## Problemas conocidos {#known-issues}
 
-### Error de recuperación del despachante {#dispatcher-refetch-fails}
+### Error al recuperar despachante {#dispatcher-refetch-fails}
 
 Al utilizar Dispatcher 4.1.5 con una versión más reciente de Jetty, una devolución puede resultar en &quot;No se puede recibir la respuesta del servidor remoto&quot; después de esperar a que la solicitud se agote.
 
@@ -29,9 +32,10 @@ El uso de Dispatcher 4.1.6 o posterior resolverá este problema.
 
 ### No se puede acceder a la publicación de foro después de actualizar desde CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Si se ha creado un foro en CQ 5.4 y se han publicado temas y, a continuación, el sitio se ha actualizado a AEM 5.6.1 o posterior, al intentar realizar la vista de las publicaciones existentes, se puede producir un error en la página:
+Si se ha creado un foro en CQ 5.4 y se han publicado temas, y luego se ha actualizado el sitio a AEM 5.6.1 o posterior, intentar vista de los anuncios existentes puede dar como resultado un error en la página:
 
-Carácter de patrón no válido &#39;a&#39;No se puede enviar la solicitud a `/content/demoforums/forum-test.html` en este servidor y los registros contienen lo siguiente:
+Carácter &#39;a&#39; de patrón no válido
+No se puede enviar la solicitud a `/content/demoforums/forum-test.html` en este servidor y los registros contienen lo siguiente:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -49,17 +53,17 @@ Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() deberá 
 
 El error es diferente al crear y publicar. Al autor, falla silenciosamente y simplemente no muestra los temas del foro. Al publicar, se produce un error en la página.
 
-Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obtener más información.
+Consulte la API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obtener más información.
 
-## Preocupaciones comunes {#common-concerns}
+## Problemas comunes {#common-concerns}
 
 ### Advertencia en registros: Manillares obsoletos {#warning-in-logs-handlebars-deprecated}
 
 Durante el inicio (no el primero, sino cada uno después de eso) se puede ver la siguiente advertencia en los registros:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` ha sido sustituido por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` se ha sustituido por  `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Esta advertencia se puede ignorar con seguridad ya que `jknack.handlebars.Handlebars`, usada por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. En inicio hacia arriba, se sustituye por un asistente específico de AEM [i18n](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
+Esta advertencia se puede ignorar con seguridad, ya que `jknack.handlebars.Handlebars`, utilizada por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda para i18n. En inicio hacia arriba, se reemplaza por un asistente específico para AEM [i18n](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
 
 ### Advertencia en registros: Proceso de OakResourceListenerOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
@@ -78,7 +82,7 @@ Estas advertencias se pueden ignorar de forma segura.
 
 ### Error en los registros: NoClassDefFoundError para IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Al actualizar AEM 5.6.1 GA a la última versión de cq-socialcommunities-pkg-1.4.x o a AEM 6.0, se producen errores en el archivo de registro durante el inicio de una condición que se resuelve a sí misma, como lo demuestra el error que no se ve al reiniciar.
+La actualización de AEM 5.6.1 GA a la última cq-socialcommunities-pkg-1.4.x o a la AEM 6.0 da como resultado errores en el archivo de registro durante el inicio para una condición que se resolverá a sí misma, como lo demuestra el error que no se ve al reiniciar.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
