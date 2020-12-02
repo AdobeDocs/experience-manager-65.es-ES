@@ -27,9 +27,9 @@ Se puede activar o iniciar un flujo de trabajo centrado en formularios mediante 
 * Uso de una carpeta vigilada
 * Envío de una comunicación interactiva o una carta
 
-Para obtener más información sobre las funciones y los flujos de trabajo de AEM centrados en Forms, consulte Flujo de trabajo centrado en [Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
+Para obtener más información acerca de los flujos de trabajo y capacidades de AEM centrados en Forms, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
-## Almacenes de datos y datos de usuarios {#user-data-and-data-stores}
+## Almacenes de datos y datos del usuario {#user-data-and-data-stores}
 
 Cuando se activa un flujo de trabajo, se genera automáticamente una carga útil para la instancia de flujo de trabajo. A cada instancia de flujo de trabajo se le asigna un ID de instancia único y un ID de carga útil asociado. La carga útil contiene las ubicaciones del repositorio para los datos de usuario y formulario asociados a una instancia de flujo de trabajo. Además, los borradores y los datos históricos de una instancia de flujo de trabajo también se almacenan en el repositorio de AEM.
 
@@ -78,13 +78,13 @@ Sin embargo, no puede identificar o los resultados pueden ser ambiguos al identi
 * **Flujo de trabajo desencadenado mediante una carpeta** vigilada: No se puede identificar una instancia de flujo de trabajo con su iniciador si el flujo de trabajo se activa mediante una carpeta vigilada. En este caso, la información del usuario se codifica en los datos almacenados.
 * **Flujo de trabajo iniciado desde la instancia** de publicación AEM: Todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables, comunicaciones interactivas o cartas desde AEM instancia de publicación. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de instancia del flujo de trabajo.
 
-### Acceso a los datos de usuario {#access}
+### Obtener acceso a los datos de usuario {#access}
 
 Para identificar y acceder a los datos de usuario almacenados para una instancia de flujo de trabajo, lleve a cabo los siguientes pasos:
 
 1. En AEM instancia de autor, vaya a `https://'[server]:[port]'/crx/de` y vaya a **[!UICONTROL Herramientas > Consulta]**.
 
-   Seleccione **[!UICONTROL SQL2]** en la lista desplegable **[!UICONTROL Tipo]** .
+   Seleccione **[!UICONTROL SQL2]** en la lista desplegable **[!UICONTROL Tipo]**.
 
 1. Según la información disponible, ejecute una de las siguientes consultas:
 
@@ -98,7 +98,7 @@ Para identificar y acceder a los datos de usuario almacenados para una instancia
 
    La consulta devuelve la ubicación de todas las instancias de flujo de trabajo para el iniciador de flujo de trabajo especificado o el usuario asignado del flujo de trabajo actual.
 
-   Por ejemplo, la siguiente consulta devuelve dos rutas de acceso de instancias de flujo de trabajo desde el `/var/workflow/instances` nodo cuyo iniciador de flujo de trabajo es `srose`.
+   Por ejemplo, la siguiente consulta devuelve dos rutas de acceso de instancias de flujo de trabajo desde el nodo `/var/workflow/instances` cuyo iniciador de flujo de trabajo es `srose`.
 
    ![workflow-instance](assets/workflow-instance.png)
 
@@ -106,7 +106,7 @@ Para identificar y acceder a los datos de usuario almacenados para una instancia
 
    ![estado](assets/status.png)
 
-1. En el nodo de instancia de flujo de trabajo, vaya a `data/payload/`. La `path` propiedad almacena la ruta de la carga útil de la instancia de flujo de trabajo. Puede desplazarse a la ruta para acceder a los datos almacenados en la carga útil.
+1. En el nodo de instancia de workflow, navegue a `data/payload/`. La propiedad `path` almacena la ruta de la carga útil para la instancia de flujo de trabajo. Puede desplazarse a la ruta para acceder a los datos almacenados en la carga útil.
 
    ![payload-path](assets/payload-path.png)
 
@@ -122,31 +122,31 @@ Para identificar y acceder a los datos de usuario almacenados para una instancia
 
    >[!NOTE]
    >
-   >AEM [!DNL Forms] aplicación también almacena datos en modo sin conexión. Es posible que los datos de una instancia de flujo de trabajo se almacenen localmente en dispositivos individuales y se envíen al [!DNL Forms] servidor cuando la aplicación se sincroniza con el servidor.
+   >AEM aplicación [!DNL Forms] también almacena datos en modo sin conexión. Es posible que los datos de una instancia de flujo de trabajo se almacenen localmente en dispositivos individuales y se envíen al servidor [!DNL Forms] cuando la aplicación se sincroniza con el servidor.
 
 ### Eliminar datos de usuario {#delete-user-data}
 
 Debe ser administrador AEM para eliminar datos de usuario de las instancias de flujo de trabajo mediante los siguientes pasos:
 
-1. Siga las instrucciones de [Access user data](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) y tenga en cuenta lo siguiente:
+1. Siga las instrucciones de [Acceso a datos de usuario](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) y tome nota de lo siguiente:
 
    * Rutas a instancias de flujo de trabajo asociadas con el usuario
    * Estado de las instancias de flujo de trabajo
    * Rutas a las cargas útiles para las instancias de flujo de trabajo
    * Rutas a borradores e historial para las instancias de flujo de trabajo
 
-1. Siga este paso para las instancias de flujo de trabajo en **EJECUCIÓN**, **SUSPENDIDO** o **ESTADO** :
+1. Siga este paso para instancias de flujo de trabajo en **EJECUTANDO**, **SUSPENDED** o en estado **STALE**:
 
    1. Vaya a `https://'[server]:[port]'/aem/start.html` e inicie sesión con las credenciales del administrador.
-   1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Instancias]**.
+   1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo> Instancias]**.
    1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y toque **[!UICONTROL Finalizar]** para finalizar las instancias en ejecución.
 
-      Para obtener más información sobre cómo trabajar con instancias de flujo de trabajo, consulte [Administración de instancias](/help/sites-administering/workflows-administering.md)de flujo de trabajo.
+      Para obtener más información sobre cómo trabajar con instancias de flujo de trabajo, consulte [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md).
 
-1. Vaya a [!DNL CRXDE Lite] la consola, vaya a la ruta de carga útil de una instancia de flujo de trabajo y elimine el `payload` nodo.
-1. Vaya a la ruta de borradores de una instancia de flujo de trabajo y elimine el `draft` nodo.
-1. Vaya a la ruta de historial de una instancia de flujo de trabajo y elimine el `history` nodo.
-1. Vaya a la ruta de la instancia de flujo de trabajo de una instancia de flujo de trabajo y elimine el `[workflow-instance-ID]` nodo del flujo de trabajo.
+1. Vaya a la consola [!DNL CRXDE Lite], vaya a la ruta de carga útil de una instancia de flujo de trabajo y elimine el nodo `payload`.
+1. Vaya a la ruta de borradores de una instancia de flujo de trabajo y elimine el nodo `draft`.
+1. Vaya a la ruta de historial de una instancia de flujo de trabajo y elimine el nodo `history`.
+1. Vaya a la ruta de instancia de flujo de trabajo de una instancia de flujo de trabajo y elimine el nodo `[workflow-instance-ID]` del flujo de trabajo.
 
    >[!NOTE]
    >
