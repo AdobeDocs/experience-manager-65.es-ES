@@ -16,11 +16,11 @@ ht-degree: 14%
 ---
 
 
-# About managing Dynamic Media assets {#managing-assets}
+# Acerca de la administración de recursos de Dynamic Media {#managing-assets}
 
 La administración de recursos de Dynamic Media (imágenes, vídeos y recursos interactivos después de cargarlos) implica muchas tareas, como la vista previa, la descarga o la publicación.
 
-Al obtener una vista previa, también puede aplicar ajustes preestablecidos de imagen (solo para imágenes) o ajustes preestablecidos de visor (para vídeo e imágenes). No se pueden aplicar ambos a un recurso. Consulte [Aplicación de ajustes preestablecidos](/help/assets/viewer-presets.md) de visor y [Aplicación de ajustes preestablecidos](/help/assets/image-sets.md)de imagen.
+Al obtener una vista previa, también puede aplicar ajustes preestablecidos de imagen (solo para imágenes) o ajustes preestablecidos de visor (para vídeo e imágenes). No se pueden aplicar ambos a un recurso. Consulte [Aplicación de ajustes preestablecidos de visor](/help/assets/viewer-presets.md) y [Aplicación de ajustes preestablecidos de imagen](/help/assets/image-sets.md).
 
 La información general sobre la administración de recursos se encuentra en [Administrar recursos](/help/assets/manage-assets.md).
 
