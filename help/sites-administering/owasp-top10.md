@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 10 primeros OWASP{#owasp-top}
+# OWASP Top 10{#owasp-top}
 
-El [Open Aplicación web Security Project](https://www.owasp.org) (OWASP) mantiene una lista de lo que consideran los 10 [Principales Riesgos](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)de Seguridad de Aplicaciones web.
+El [Proyecto de seguridad de Aplicación web abierta](https://www.owasp.org) (OWASP) mantiene una lista de lo que consideran los [principales riesgos de seguridad de las Aplicaciones web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
 A continuación se detallan estos temas, junto con una explicación de cómo CRX los trata.
 
@@ -38,7 +38,7 @@ XSS es una prioridad principal durante las pruebas y el desarrollo, y cualquier 
 
 ## 3. Autenticación y administración de sesiones dañadas {#broken-authentication-and-session-management}
 
-AEM utiliza técnicas de autenticación sólidas y probadas, basadas en [Apache Jackrabbit](https://jackrabbit.apache.org/) y [Apache Sling](https://sling.apache.org/). Las sesiones HTTP/explorador no se utilizan en AEM.
+AEM utiliza técnicas de autenticación de sonido y comprobadas, basándose en [Apache Jackrabbit](https://jackrabbit.apache.org/) y [Apache Sling](https://sling.apache.org/). Las sesiones HTTP/explorador no se utilizan en AEM.
 
 ## 4. Referencias de objeto directo inseguras {#insecure-direct-object-references}
 
@@ -46,15 +46,15 @@ Todo acceso a los objetos de datos está mediado por el repositorio y, por lo ta
 
 ## 5. Falsificación de solicitudes entre sitios (CSRF) {#cross-site-request-forgery-csrf}
 
-La falsificación de solicitudes entre sitios (CSRF) se mitiga mediante la inyección automática de un token criptográfico en todos los formularios y solicitudes AJAX y la verificación de este token en el servidor para cada POST.
+La falsificación de solicitudes entre sitios (CSRF) se mitiga mediante la inyección automática de un token criptográfico en todos los formularios y solicitudes de AJAX y la verificación de este token en el servidor para cada POST.
 
-Además, AEM incluye un filtro basado en encabezados de remitente del reenvío, que se puede configurar para *permitir* solosolicitudes POST de hosts específicos (definidas en una lista).
+Además, AEM incluye un filtro basado en encabezados de remitente del reenvío, que se puede configurar para *solo* permitir solicitudes de POST de hosts específicos (definidas en una lista).
 
-## 6. Error de configuración de seguridad {#security-misconfiguration}
+## 6. Fallo de configuración de seguridad {#security-misconfiguration}
 
-Es imposible garantizar que todo el software esté siempre correctamente configurado. Sin embargo, nos esforzamos por brindar la mayor orientación posible y hacer la configuración lo más simple posible. Además, AEM incluye comprobaciones de estado de seguridad [integradas](/help/sites-administering/operations-dashboard.md) que le ayudan a supervisar la configuración de seguridad de un vistazo.
+Es imposible garantizar que todo el software esté siempre correctamente configurado. Sin embargo, nos esforzamos por brindar la mayor orientación posible y hacer la configuración lo más simple posible. Además, AEM incluye [chequeos de seguridad integrados](/help/sites-administering/operations-dashboard.md) que le ayudan a monitorear la configuración de seguridad de un vistazo.
 
-Revise la lista [de comprobación de](/help/sites-administering/security-checklist.md) seguridad para obtener más información que le proporcione instrucciones de refuerzo paso a paso.
+Revise la [lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) para obtener más información que le proporcione instrucciones de refuerzo paso a paso.
 
 ## 7. Almacenamiento criptográfico no seguro {#insecure-cryptographic-storage}
 
@@ -64,7 +64,7 @@ Los datos confidenciales, como las credenciales de terceros, se almacenan en for
 
 ## 8. Error al restringir el acceso a URL {#failure-to-restrict-url-access}
 
-El repositorio permite la configuración de privilegios [finamente arraigados (según lo especificado por JCR)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo determinado en cualquier ruta, a través de entradas de control de acceso. El repositorio aplica las restricciones de acceso.
+El repositorio permite la configuración de [privilegios finamente arraigados (según lo especificado por JCR)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo determinado en una ruta determinada, a través de entradas de control de acceso. El repositorio aplica las restricciones de acceso.
 
 ## 9. Protección insuficiente de la capa de transporte {#insufficient-transport-layer-protection}
 
