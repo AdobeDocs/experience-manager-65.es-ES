@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor con formato para los símbolos numéricos, de texto y de fecha. Se admiten las siguientes Expresiones de cláusula Picture:
 
-* categoría(configuración regional){cláusula-imagen}| categoría(configuración regional){cláusula-imagen}| categoría(configuración regional){cláusula-imagen}
+* categoría(configuración regional){cláusula-imagen} | categoría(configuración regional){cláusula-imagen} | categoría(configuración regional){cláusula-imagen}
 * category.subcategory{}
 
 >[!NOTE]
@@ -53,11 +56,11 @@ Cláusula de expresión admitida para la imagen de fecha:
   </tr>
   <tr>
    <td>DD</td>
-   <td>Zero-padded two digit (01-31) day of the month.<br /> </td>
+   <td>Día del mes expresado con dos dígitos (01-31).<br /> </td>
   </tr>
   <tr>
    <td>M</td>
-   <td>1- or 2-digit (1-12) month of the year.<br /> </td>
+   <td>Mes del año de 1 o 2 dígitos (1-12).<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
@@ -73,7 +76,7 @@ Cláusula de expresión admitida para la imagen de fecha:
   </tr>
   <tr>
    <td>EEE</td>
-   <td>Nombre abreviado del día de la semana de la configuración regional actual<br /> </td>
+   <td>Nombre abreviado de día de semana de la configuración regional actual<br /> </td>
   </tr>
   <tr>
    <td>EEEE</td>
@@ -92,19 +95,19 @@ Cláusula de expresión admitida para la imagen de fecha:
 
 ## Cláusula de imagen numérica {#numeric-picture-clause}
 
-Los formularios HTML5 admiten símbolos de imagen numérica. Sin embargo, existe una diferencia en la compatibilidad entre los formularios PDF y los formularios HTML.
+Los formularios HTML5 admiten símbolos de imagen numérica. Sin embargo, hay una diferencia en la compatibilidad entre PDF forms y HTML Forms.
 
-En los formularios **** PDF, se aplica formato a un número independientemente del número de símbolos que tenga la cláusula Picture
+En **PDF forms**, se da formato a un número independientemente del número de símbolos de la cláusula Picture que tenga
 
-En los formularios **** HTML, un número solo tiene formato si el número tiene dígitos menores que el número de símbolos de la cláusula Picture.
+En **HTML Forms**, un número solo tiene formato si el número tiene dígitos inferiores al número de símbolos de la cláusula Picture.
 
 **Ejemplo**: Considere una cláusula Picture: num{zzz,zzz,zz9}.
 
-El número **10000** tiene un formato de **10.000** en formularios HTML y PDF.
+El número **10000** tiene el formato **10.000** tanto en HTML como en PDF forms.
 
-El número 1000000 tiene un formato de 1000.000 en formularios PDF. Sin embargo, en los formularios HTML, el número permanece sin formato como 1000000.
+El número 1000000 tiene un formato de 1000.000 en PDF forms. Sin embargo, en HTML Forms el número permanece sin formato como 1000000.
 
-Las expresiones admitidas para la cláusula de imagen numérica en los formularios **** HTML son:
+Las expresiones admitidas para la cláusula de imagen numérica en **HTML Forms** son:
 
 * num.integer{}
 * num.decimal{}
@@ -121,22 +124,22 @@ Las expresiones admitidas para la cláusula de imagen numérica en los formulari
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formato</strong>de salida: un solo dígito. O para el dígito cero si los datos de entrada están vacíos o si hay un espacio en la posición correspondiente.<br /> </td>
+   <td><strong>Formato</strong> de salida: un solo dígito. O para el dígito cero si los datos de entrada están vacíos o si hay un espacio en la posición correspondiente.<br /> </td>
    <td>Dígito sencillo</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>Formato</strong>de salida: un solo dígito. O para un espacio si los datos de entrada están vacíos, un espacio o el dígito cero en la posición correspondiente.<br /> </td>
+   <td><strong>Formato</strong> de salida: un solo dígito. O para un espacio si los datos de entrada están vacíos, un espacio o el dígito cero en la posición correspondiente.<br /> </td>
    <td>Un solo dígito o espacio</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Formato</strong>de salida: un solo dígito. O bien, si los datos de entrada están vacíos, si hay un espacio o el dígito cero en la posición correspondiente.<br /> </td>
+   <td><strong>Formato</strong> de salida: un solo dígito. O bien, para nada si los datos de entrada están vacíos, un espacio o el dígito cero en la posición correspondiente.<br /> </td>
    <td>Un solo dígito o nada</td>
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Formato</strong>de salida: la parte exponencial de un número de coma flotante formado por el símbolo exponencial (E). Seguido de un signo más o menos opcional. Seguido por el valor exponencial.<br /> </td>
+   <td><strong>Formato</strong> de salida: la parte exponencial de un número de coma flotante formado por el símbolo exponencial (E). Seguido de un signo más o menos opcional. Seguido por el valor exponencial.<br /> </td>
    <td>Igual que para el formato de salida</td>
   </tr>
   <tr>
