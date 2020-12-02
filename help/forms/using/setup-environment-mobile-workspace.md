@@ -12,11 +12,14 @@ discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 0%
 
 ---
 
 
-# Configuración de entorno para la aplicación de AEM Forms{#set-up-environment-for-aem-forms-app}
+# Configurar entorno para la aplicación de AEM Forms{#set-up-environment-for-aem-forms-app}
 
 Necesita el hardware, el software y las licencias siguientes para crear e implementar la aplicación de AEM Forms:
 
@@ -39,7 +42,7 @@ Necesita el hardware, el software y las licencias siguientes para crear e implem
 
 * Kit de herramientas de desarrollo de Android (paquete ADT) que se puede descargar de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Si el entorno está configurado en un sistema MAC, ADT debe estar instalado en la carpeta Aplicaciones.
-* Si ADT está instalado en cualquier otra ubicación de MAC, o si el entorno está configurado en un sistema Windows, la ruta del SDK de ADT debe actualizarse en el `local.properties` archivo que está disponible en la `src\android` carpeta del archivo de origen `mobileworkspace-src.zip`. En este archivo, señale la `sdk.dir` variable a la ubicación del SDK de ADT en el escritorio.
+* Si ADT está instalado en cualquier otra ubicación en MAC o si el entorno está configurado en un sistema Windows, la ruta del SDK de ADT debe actualizarse en el archivo `local.properties` que está disponible en la carpeta `src\android` del archivo de origen extraído `mobileworkspace-src.zip`. En este archivo, señale la variable `sdk.dir` a la ubicación del SDK de ADT en el escritorio.
 
 >[!NOTE]
 >
