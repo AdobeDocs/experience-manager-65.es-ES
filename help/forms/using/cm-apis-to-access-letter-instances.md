@@ -10,19 +10,22 @@ topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 1%
 
 ---
 
 
-# API para acceder a instancias de letras {#apis-to-access-letter-instances}
+# API para acceder a instancias de carta {#apis-to-access-letter-instances}
 
 ## Información general {#overview}
 
 Mediante la interfaz de usuario Crear correspondencia de la administración de correspondencia, puede guardar borradores de instancias de cartas en curso y se envían instancias de cartas.
 
-Correspondence Management le proporciona API que permiten crear la interfaz de listado para trabajar con las instancias de cartas enviadas o los borradores. Las API enumeran y abren las instancias de cartas enviadas y borrador de un agente, de modo que el agente pueda seguir trabajando en las instancias de cartas enviadas o en borrador.
+Correspondence Management le proporciona API que permiten crear la interfaz de listado para trabajar con las instancias de cartas enviadas o los borradores. La lista de API y las instancias de carta de borrador y envío abiertas de un agente, de modo que el agente pueda continuar trabajando en las instancias de carta de borrador o envío.
 
-## Obtención de instancias de letras {#fetching-letter-instances}
+## Obteniendo instancias de letras {#fetching-letter-instances}
 
 Correspondence Management expone a las API a recuperar instancias de letras a través del servicio LetterInstanceService.
 
@@ -39,9 +42,9 @@ Correspondence Management expone a las API a recuperar instancias de letras a tr
 
 ### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-La siguiente API busca las instancias de letras en función del objeto de consulta (tanto Enviado como Borrador). Si el objeto de consulta es nulo, devuelve todas las instancias de letras. Esta API devuelve una lista de objetos [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) , que se pueden utilizar para extraer información adicional de una instancia de carta
+La siguiente API busca las instancias de letras basadas en el objeto de consulta (tanto Enviada como Borrador). Si el objeto de consulta es nulo, devuelve todas las instancias de letras. Esta API devuelve la lista de [objetos LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que se pueden utilizar para extraer información adicional de la instancia de letra
 
-**Sintaxis**: `List getAllLetterInstances(Query query) throws ICCException;`
+**Sintaxis**:  `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table>
  <tbody>
@@ -56,7 +59,7 @@ La siguiente API busca las instancias de letras en función del objeto de consul
  </tbody>
 </table>
 
-#### Ejemplo 1: Buscar todas las instancias de letras del tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Ejemplo 1: Buscar todas las instancias de letras de tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 El siguiente código devuelve la lista de instancias de cartas enviadas. Para obtener solo borradores, cambie `LetterInstanceType.COMPLETE.name()` a `LetterInstanceType.DRAFT.name().`
 
@@ -106,7 +109,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 Recupere la instancia de letra identificada por la identificación de instancia de letra dada. Devuelve &quot;null si no coincide la identificación de instancia.
 
-**** Sintaxis: `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
+**Sintaxis:** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
 ```java
 @Reference
@@ -119,7 +122,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 Comprobar si existe una instancia de carta con el nombre dado
 
-**Sintaxis**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**Sintaxis**:  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Parámetro** | **Descripción** |
 |---|---|
@@ -132,14 +135,14 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## Abrir instancias de letras {#opening-letter-instances}
+## Abrir instancias de carta {#opening-letter-instances}
 
 La instancia de carta puede ser del tipo Enviado o Borrador. La apertura de ambos tipos de instancias de letras muestra diferentes comportamientos:
 
 * En el caso de la instancia de carta enviada, se abre un PDF que representa la instancia de carta. La instancia de carta enviada que persiste en el servidor también contiene el archivo dataXML y XDP procesado, que se puede utilizar para realizar y utilizar un caso personalizado como crear un archivo PDF/A.
 * En el caso de la instancia de borrador de carta, la interfaz de usuario de creación de correspondencia se vuelve a cargar con el estado anterior exacto, tal como era durante el tiempo en que se creó el borrador
 
-### Abrir instancia de letra borrador {#opening-draft-letter-instance-nbsp}
+### Abrir instancia de letra borrador  {#opening-draft-letter-instance-nbsp}
 
 La interfaz de usuario de CCR admite el parámetro cmLetterInstanceId, que se puede utilizar para volver a cargar la letra.
 
@@ -149,7 +152,7 @@ La interfaz de usuario de CCR admite el parámetro cmLetterInstanceId, que se pu
 >
 >No es necesario especificar cmLetterId o cmLetterName/State/Version al volver a cargar una correspondencia, ya que los datos enviados ya contienen todos los detalles sobre la correspondencia que se recarga. RandomNo se utiliza para evitar problemas con la caché del navegador, puede utilizar la marca de tiempo como un número aleatorio.
 
-### Abrir instancia de carta enviada {#opening-submitted-letter-instance}
+### Abriendo instancia de carta enviada {#opening-submitted-letter-instance}
 
 El PDF enviado se puede abrir directamente con el identificador de instancia de la carta:
 
