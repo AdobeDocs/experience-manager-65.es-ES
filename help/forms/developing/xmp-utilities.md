@@ -18,30 +18,30 @@ ht-degree: 1%
 ---
 
 
-# Uso de utilidades XMP {#working-with-xmp-utilities}
+# Uso de utilidades de XMP {#working-with-xmp-utilities}
 
-**Acerca del servicio de utilidades XMP**
+**Acerca del servicio de utilidades de XMP**
 
-Los documentos PDF contienen metadatos, que es información sobre el documento, tal como se distingue del contenido del documento, como texto y gráficos. Adobe Extensible Metadata Platform (XMP) es un estándar para gestionar metadatos de documento.
+Los documentos PDF contienen metadatos, que es información sobre el documento, tal como se distingue del contenido del documento, como texto y gráficos. Adobe Extensible Metadata Platform (XMP) es un estándar para el manejo de metadatos de documento.
 
-El servicio Utilidades XMP puede recuperar y guardar metadatos XMP de documentos PDF e importar metadatos XMP a documentos PDF.
+El servicio Utilidades de XMP puede recuperar y guardar XMP metadatos de documentos PDF e importar XMP metadatos en documentos PDF.
 
-Puede realizar estas tareas mediante el servicio Utilidades XMP:
+Puede realizar estas tareas mediante el servicio Utilidades de XMP:
 
-* Importe metadatos en documentos PDF. (Consulte [Importación de metadatos en Documentos](xmp-utilities.md#importing-metadata-into-pdf-documents)PDF).
-* Exporte metadatos de documentos PDF. (Consulte [Exportación de metadatos desde Documentos](xmp-utilities.md#exporting-metadata-from-pdf-documents)PDF).
+* Importe metadatos en documentos PDF. (Consulte [Importación de metadatos en Documentos PDF](xmp-utilities.md#importing-metadata-into-pdf-documents)).
+* Exporte metadatos de documentos PDF. (Consulte [Exportación de metadatos desde Documentos PDF](xmp-utilities.md#exporting-metadata-from-pdf-documents)).
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades XMP, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio Utilidades de XMP, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Importación de metadatos en Documentos PDF {#importing-metadata-into-pdf-documents}
 
-Puede utilizar las API de Java y de servicio Web de XMP Utilities para importar metadatos XMP en un documento PDF mediante programación. Los metadatos proporcionan información sobre un documento PDF, como el autor del documento y las palabras clave relacionadas con el documento. Los metadatos se pueden encontrar en el cuadro de diálogo Propiedades del Documento del documento, como se muestra en la siguiente ilustración.
+Puede utilizar las API de servicios web y Java de Utilidades de XMP para importar XMP metadatos en un documento PDF mediante programación. Los metadatos proporcionan información sobre un documento PDF, como el autor del documento y las palabras clave relacionadas con el documento. Los metadatos se pueden encontrar en el cuadro de diálogo Propiedades del Documento del documento, como se muestra en la siguiente ilustración.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 
-Para importar metadatos mediante programación a un documento PDF, puede utilizar un documento XML existente que especifique los valores de metadatos o un objeto de tipo `XMPUtilityMetadata`. (Consulte Referencia [de la API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
+Para importar metadatos mediante programación a un documento PDF, puede utilizar un documento XML existente que especifique los valores de metadatos o un objeto de tipo `XMPUtilityMetadata`. (Consulte [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
 
 >[!NOTE]
 >
@@ -114,15 +114,15 @@ El siguiente código XML contiene valores de metadatos que corresponden a la ilu
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades XMP, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio Utilidades de XMP, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary-of-steps}
 
-Para importar metadatos XMP a un documento PDF, realice los siguientes pasos:
+Para importar metadatos de XMP a un documento PDF, lleve a cabo los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Cree un cliente XMPUtilityService.
-1. Invocar la operación de importación de metadatos XMP.
+1. Invoque la operación de importación de metadatos de XMP.
 
 **Incluir archivos de proyecto**
 
@@ -130,25 +130,25 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una 
 
 **Creación de un cliente XMPUtilityService**
 
-Para poder realizar mediante programación una operación de Utilidades XMP, debe crear un cliente XMPUtilityService. Con la API de Java, esto se logra creando un `XMPUtilityServiceClient` objeto. Con la API de servicio Web, esto se logra mediante el uso de un `XMPUtilityServiceService` objeto.
+Para poder realizar mediante programación una operación de Utilidades de XMP, debe crear un cliente XMPUtilityService. Con la API de Java, esto se logra creando un objeto `XMPUtilityServiceClient`. Con la API de servicio Web, esto se logra mediante el uso de un objeto `XMPUtilityServiceService`.
 
-**Invocar la operación de importación de metadatos XMP**
+**Invocar la operación de importación de metadatos de XMP**
 
-Después de crear el cliente de servicio, puede invocar una de las operaciones de importación de metadatos XMP para importar los metadatos XMP en el documento PDF especificado.
+Después de crear el cliente de servicios, puede invocar una de las operaciones de importación de metadatos de XMP para importar los metadatos de XMP en el documento PDF especificado.
 
 **Consulte también**
 
-[Importación de metadatos XMP mediante la API de Java](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
+[Importación XMP metadatos mediante la API de Java](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
 
-[Importación de metadatos XMP mediante la API de servicio web](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
+[Importación de metadatos de XMP mediante la API de servicio web](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Importación de metadatos XMP mediante la API de Java {#import-xmp-metadata-using-the-java-api}
+### Importar metadatos de XMP mediante la API de Java {#import-xmp-metadata-using-the-java-api}
 
-Importe metadatos XMP mediante la API de utilidades XMP (Java):
+Importe metadatos de XMP mediante la API de utilidades de XMP (Java):
 
 1. Incluir archivos de proyecto
 
@@ -156,27 +156,27 @@ Importe metadatos XMP mediante la API de utilidades XMP (Java):
 
    >[!NOTE]
    >
-   >El archivo adobe-pdfutility-client.jar contiene clases que le permiten invocar mediante programación el servicio Utilidades XMP.
+   >El archivo adobe-pdfutility-client.jar contiene clases que le permiten invocar mediante programación el servicio Utilidades de XMP.
 
 1. Creación de un cliente XMPUtilityService
 
-   Cree un `XMPUtilityServiceClient` objeto utilizando su constructor y pasando un `ServiceClientFactory` objeto que contenga propiedades de conexión.
+   Cree un objeto `XMPUtilityServiceClient` utilizando su constructor y pasando un objeto `ServiceClientFactory` que contenga propiedades de conexión.
 
-1. Invocar la operación de importación de metadatos XMP
+1. Invocar la operación de importación de metadatos de XMP
 
-   Para modificar los metadatos XMP, invoque el `XMPUtilityServiceClient` método `importMetadata` del objeto o su `importXMP` método.
+   Para modificar los metadatos de XMP, invoque el método `XMPUtilityServiceClient` del objeto `importMetadata` o su método `importXMP`.
 
-   Si utiliza el `importMetadata` método, pase los siguientes valores:
+   Si utiliza el método `importMetadata`, pase los siguientes valores:
 
-   * Un `com.adobe.idp.Document` objeto que representa el archivo PDF.
-   * Un `XMPUtilityMetadata` objeto que contiene los metadatos que se van a importar.
+   * Un objeto `com.adobe.idp.Document` que representa el archivo PDF.
+   * Un objeto `XMPUtilityMetadata` que contiene los metadatos que se van a importar.
 
-   Si utiliza el `importXMP` método, pase los siguientes valores:
+   Si utiliza el método `importXMP`, pase los siguientes valores:
 
-   * Un `com.adobe.idp.Document` objeto que representa el archivo PDF.
-   * Un `com.adobe.idp.Document` objeto que representa un archivo XML que contiene los metadatos que se van a importar.
+   * Un objeto `com.adobe.idp.Document` que representa el archivo PDF.
+   * Un objeto `com.adobe.idp.Document` que representa un archivo XML que contiene los metadatos que se van a importar.
 
-   En cualquier caso, el valor devuelto es un `com.adobe.idp.Document` objeto que representa el archivo PDF con los metadatos recién importados. A continuación, puede guardar este objeto en el disco.
+   En cualquier caso, el valor devuelto es un objeto `com.adobe.idp.Document` que representa el archivo PDF con los metadatos recién importados. A continuación, puede guardar este objeto en el disco.
 
 **Consulte también**
 
@@ -186,34 +186,34 @@ Importe metadatos XMP mediante la API de utilidades XMP (Java):
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Importación de metadatos XMP mediante la API de servicio web {#importing-xmp-metadata-using-the-web-service-api}
+### Importación de metadatos de XMP mediante la API de servicio Web {#importing-xmp-metadata-using-the-web-service-api}
 
-Para importar metadatos XMP mediante programación mediante la API de servicio Web de Utilidades XMP, realice las siguientes tareas:
+Para importar metadatos de XMP mediante programación mediante la API del servicio web de utilidades de XMP, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto
 
-   * Cree un ensamblado de cliente de Microsoft .NET que utilice el archivo WSDL del servicio de utilidades XMP. (Consulte [Invocación de AEM Forms mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64).
-   * Haga referencia al ensamblado de cliente de Microsoft .NET. (Consulte [Creación de un ensamblado de cliente .NET que utilice codificación](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)Base64).
+   * Cree un ensamblado de cliente de Microsoft .NET que utilice el archivo WSDL del servicio de utilidades de XMP. (Consulte [Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)).
+   * Haga referencia al ensamblado de cliente de Microsoft .NET. (Consulte [Creación de un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
 
 1. Creación de un cliente XMPUtilityService
 
-   Cree un `XMPUtilityServiceService` objeto mediante el constructor de la clase proxy.
+   Cree un objeto `XMPUtilityServiceService` mediante el constructor de la clase proxy.
 
-1. Invocar la operación de importación de metadatos XMP
+1. Invocar la operación de importación de metadatos de XMP
 
-   Para modificar los metadatos XMP, invoque el `XMPUtilityServiceService` método `importMetadata` del objeto o su `importXMP` método.
+   Para modificar los metadatos de XMP, invoque el método `XMPUtilityServiceService` del objeto `importMetadata` o su método `importXMP`.
 
-   Si utiliza el `importMetadata` método, pase los siguientes valores:
+   Si utiliza el método `importMetadata`, pase los siguientes valores:
 
-   * Un `BLOB` objeto que representa el archivo PDF.
-   * Un `XMPUtilityMetadata` objeto que contiene los metadatos que se van a importar.
+   * Un objeto `BLOB` que representa el archivo PDF.
+   * Un objeto `XMPUtilityMetadata` que contiene los metadatos que se van a importar.
 
-   Si utiliza el `importXMP` método, pase los siguientes valores:
+   Si utiliza el método `importXMP`, pase los siguientes valores:
 
-   * Un `BLOB` objeto que representa el archivo PDF.
-   * Un `BLOB` objeto que representa un archivo XML que contiene los metadatos que se van a importar.
+   * Un objeto `BLOB` que representa el archivo PDF.
+   * Un objeto `BLOB` que representa un archivo XML que contiene los metadatos que se van a importar.
 
-   En cualquier caso, el valor devuelto es un `BLOB` objeto que representa el archivo PDF con los metadatos recién importados. A continuación, puede guardar este objeto en el disco.
+   En cualquier caso, el valor devuelto es un objeto `BLOB` que representa el archivo PDF con los metadatos recién importados. A continuación, puede guardar este objeto en el disco.
 
 **Consulte también**
 
@@ -221,25 +221,25 @@ Para importar metadatos XMP mediante programación mediante la API de servicio W
 
 <!--REVIEW: [Quick Start (Base64): Importing XMP metadata using the web service API](unresolvedlink-lc-qs-xmp-utilities-xu.xml#ws624e3cba99b79e12e69a9941333732bac8-7be8.2)-->
 
-[Invocación de AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creación de un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
 ## Exportación de metadatos desde Documentos PDF {#exporting-metadata-from-pdf-documents}
 
-Puede utilizar las API de Java y de servicio Web de Utilidades XMP para recuperar y guardar metadatos XMP mediante programación desde un documento PDF.
+Puede utilizar las API de servicio Web y Java de Utilidades de XMP para recuperar y guardar XMP metadatos mediante programación desde un documento PDF.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades XMP, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio Utilidades de XMP, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
-Para exportar metadatos XMP desde un documento PDF, lleve a cabo los siguientes pasos:
+Para exportar metadatos de XMP desde un documento PDF, lleve a cabo los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Cree un cliente XMPUtilityService.
-1. Invocar la operación de exportación de metadatos XMP.
+1. Invoque la operación de exportación de metadatos de XMP.
 
 **Incluir archivos de proyecto**
 
@@ -247,25 +247,25 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una 
 
 **Creación de un cliente XMPUtilityService**
 
-Para poder realizar mediante programación una operación de Utilidades XMP, debe crear un cliente XMPUtilityService. Con la AP de Java, esto se logra creando un `XMPUtilityServiceClient` objeto. Con la API de servicio Web, esto se logra utilizando un `XMPUtilityServiceService` objeto.
+Para poder realizar mediante programación una operación de Utilidades de XMP, debe crear un cliente XMPUtilityService. Con la AP de Java, esto se logra creando un objeto `XMPUtilityServiceClient`. Con la API de servicio Web, esto se logra mediante un objeto `XMPUtilityServiceService`.
 
-**Invocar la operación de exportación de metadatos XMP**
+**Invocar la operación de exportación de metadatos de XMP**
 
-Después de crear el cliente de servicio, puede invocar una de las operaciones de exportación de metadatos XMP, que se puede utilizar para inspeccionar los metadatos XMP o guardarlos en el disco.
+Después de crear el cliente de servicio, puede invocar una de las operaciones de exportación de metadatos de XMP, que se puede utilizar para inspeccionar los metadatos de XMP o guardarlos en disco.
 
 **Consulte también**
 
-[Importación de metadatos XMP mediante la API de Java](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
+[Importación XMP metadatos mediante la API de Java](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
 
-[Importación de metadatos XMP mediante la API de servicio web](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
+[Importación de metadatos de XMP mediante la API de servicio web](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Exportación de metadatos XMP mediante la API de Java {#export-xmp-metadata-using-the-java-api}
+### Exportar metadatos de XMP mediante la API de Java {#export-xmp-metadata-using-the-java-api}
 
-Exporte metadatos XMP mediante la API de utilidades XMP (Java):
+Exporte metadatos de XMP mediante la API de utilidades de XMP (Java):
 
 1. Incluir archivos de proyecto
 
@@ -273,17 +273,17 @@ Exporte metadatos XMP mediante la API de utilidades XMP (Java):
 
    >[!NOTE]
    >
-   >El archivo adobe-pdfutility-client.jar contiene clases que le permiten invocar mediante programación el servicio de utilidad XMP.
+   >El archivo adobe-pdfutility-client.jar contiene clases que le permiten invocar mediante programación el servicio XMP Utility.
 
 1. Creación de un cliente XMPUtilityService
 
-   Cree un `XMPUtilityServiceClient` objeto utilizando su constructor y pasando un `ServiceClientFactory` objeto que contenga propiedades de conexión.
+   Cree un objeto `XMPUtilityServiceClient` utilizando su constructor y pasando un objeto `ServiceClientFactory` que contenga propiedades de conexión.
 
-1. Invocar la operación de importación de metadatos XMP
+1. Invocar la operación de importación de metadatos de XMP
 
-   Para inspeccionar los metadatos XMP, invoque el `XMPUtilityServiceClient` método `exportMetadata` del objeto y pase un `com.adobe.idp.Document` objeto que represente el archivo PDF. El método devuelve un `XMPUtilityMetadata` objeto que contiene los metadatos recuperados.
+   Para inspeccionar los metadatos de XMP, invoque el método `XMPUtilityServiceClient` del objeto `exportMetadata` y pase un objeto `com.adobe.idp.Document` que represente el archivo PDF. El método devuelve un objeto `XMPUtilityMetadata` que contiene los metadatos recuperados.
 
-   Para recuperar y guardar los metadatos XMP, invoque el `XMPUtilityServiceClient` método `exportXMP` del objeto y pase un `com.adobe.idp.Document` objeto que represente el archivo PDF. El método devuelve un `com.adobe.idp.Document` objeto que contiene los metadatos recuperados, que se pueden guardar posteriormente en el disco como archivo XML.
+   Para recuperar y guardar los metadatos de XMP, invoque el método `XMPUtilityServiceClient` del objeto `exportXMP` y pase un objeto `com.adobe.idp.Document` que represente el archivo PDF. El método devuelve un objeto `com.adobe.idp.Document` que contiene los metadatos recuperados, que posteriormente puede guardar en disco como archivo XML.
 
 **Consulte también**
 
@@ -293,29 +293,29 @@ Exporte metadatos XMP mediante la API de utilidades XMP (Java):
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Exportación de metadatos XMP mediante la API de servicio web {#export-xmp-metadata-using-the-web-service-api}
+### Exportar metadatos de XMP mediante la API de servicio Web {#export-xmp-metadata-using-the-web-service-api}
 
-Exporte metadatos XMP mediante la API de utilidades XMP (servicio web):
+Exportar metadatos de XMP mediante la API de utilidades de XMP (servicio web):
 
 1. Incluir archivos de proyecto
 
-   * Cree un ensamblado de cliente de Microsoft .NET que utilice el archivo WSDL del servicio de utilidades XMP.
+   * Cree un ensamblado de cliente de Microsoft .NET que utilice el archivo WSDL del servicio de utilidades de XMP.
    * Haga referencia al ensamblado de cliente de Microsoft .NET.
 
 1. Creación de un cliente XMPUtilityService
 
-   Cree un `XMPUtilityServiceService` objeto mediante el constructor de la clase proxy.
+   Cree un objeto `XMPUtilityServiceService` mediante el constructor de la clase proxy.
 
-1. Invocar la operación de importación de metadatos XMP
+1. Invocar la operación de importación de metadatos de XMP
 
-   Para inspeccionar los metadatos XMP, invoque el `XMPUtilityServiceClient` método `exportMetadata` del objeto y pase un `BLOB` objeto que represente el archivo PDF. El método devuelve un `XMPUtilityMetadata` objeto que contiene los metadatos recuperados.
+   Para inspeccionar los metadatos de XMP, invoque el método `XMPUtilityServiceClient` del objeto `exportMetadata` y pase un objeto `BLOB` que represente el archivo PDF. El método devuelve un objeto `XMPUtilityMetadata` que contiene los metadatos recuperados.
 
-   Para recuperar y guardar los metadatos XMP, invoque el `XMPUtilityServiceClient` método `exportXMP` del objeto y pase un `BLOB` objeto que represente el archivo PDF. El método devuelve un `BLOB` objeto que contiene los metadatos recuperados, que se pueden guardar posteriormente en el disco como archivo XML.
+   Para recuperar y guardar los metadatos de XMP, invoque el método `XMPUtilityServiceClient` del objeto `exportXMP` y pase un objeto `BLOB` que represente el archivo PDF. El método devuelve un objeto `BLOB` que contiene los metadatos recuperados, que posteriormente puede guardar en disco como archivo XML.
 
 **Consulte también**
 
 [Exportación de metadatos desde Documentos PDF](xmp-utilities.md#exporting-metadata-from-pdf-documents)
 
-[Invocación de AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creación de un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
