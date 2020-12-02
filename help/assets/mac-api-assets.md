@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Assets] API HTTP.'
-description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
+description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
@@ -11,36 +11,36 @@ ht-degree: 1%
 ---
 
 
-# [!DNL Assets] API HTTP {#assets-http-api}
+# [!DNL Assets] API HTTP  {#assets-http-api}
 
 ## Información general {#overview}
 
-La API [!DNL Assets] HTTP permite operaciones de creación-lectura-actualización-eliminación (CRUD) en recursos digitales, incluidos metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de [!DNL Experience Manager] contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](/help/assets/assets-api-content-fragments.md)de contenido.
+La API HTTP [!DNL Assets] permite operaciones de creación-lectura-actualización-eliminación (CRUD) en recursos digitales, incluidos metadatos, representaciones y comentarios, junto con contenido estructurado que utiliza [!DNL Experience Manager] fragmentos de contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos de contenido](/help/assets/assets-api-content-fragments.md).
 
 Para acceder a la API:
 
 1. Abra el documento del servicio API en `https://[hostname]:[port]/api.json`.
-1. Siga el vínculo del [!DNL Assets] servicio que lleva a `https://[hostname]:[server]/api/assets.json`.
+1. Siga el vínculo de servicio [!DNL Assets] que lleva a `https://[hostname]:[server]/api/assets.json`.
 
 La respuesta de API es un archivo JSON para algunos tipos MIME y un código de respuesta para todos los tipos MIME. La respuesta JSON es opcional y puede que no esté disponible, por ejemplo, para archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
 
-Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles a través de la interfaz [!DNL Assets] web y de la API HTTP. La API devuelve un mensaje de error 404 si [!UICONTROL Tiempo] de activación está en el futuro o Tiempo de [!UICONTROL desactivación] está en el pasado.
+Después del [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles a través de la interfaz web [!DNL Assets] ni a través de la API HTTP. La API devuelve un mensaje de error 404 si el [!UICONTROL Tiempo de activación] está en el futuro o [!UICONTROL Tiempo de inactividad] está en el pasado.
 
 >[!CAUTION]
 >
->[La API HTTP actualiza las propiedades](#update-asset-metadata) de metadatos en la `jcr` Área de nombres. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos de la `dc` Área de nombres.
+>[La API HTTP actualiza las ](#update-asset-metadata) propiedades de metadatos de la  `jcr` Área de nombres. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos en la Área de nombres `dc`.
 
 ## Fragmentos de contenido {#content-fragments}
 
-Un fragmento [de](/help/assets/content-fragments/content-fragments.md) contenido es un tipo especial de recurso. Puede utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que hay varias diferencias con `standard` los recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la gestión de fragmentos de contenido.
+Un [fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un tipo especial de recurso. Puede utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que existen varias diferencias con los `standard` recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la administración de fragmentos de contenido.
 
-Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md)HTTP de Experience Manager Assets.
+Para obtener más información, consulte [Compatibilidad con fragmentos de contenido en la API HTTP de Experience Manager Assets](/help/assets/assets-api-content-fragments.md).
 
 ## modelo Data {#data-model}
 
-La API [!DNL Assets] HTTP expone dos elementos principales, carpetas y recursos (para recursos estándar).
+La API HTTP [!DNL Assets] expone dos elementos principales, carpetas y recursos (para recursos estándar).
 
-Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en fragmentos de contenido. Consulte Modelos [de datos de fragmento de contenido](/help/assets/assets-api-content-fragments.md#content-fragments) para obtener más información.
+Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en fragmentos de contenido. Consulte [Modelos de datos de fragmento de contenido](/help/assets/assets-api-content-fragments.md#content-fragments) para obtener más información.
 
 ### Carpetas {#folders}
 
@@ -55,9 +55,9 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 
 >[!NOTE]
 >
->Algunas propiedades de carpeta o recurso se asignan a un prefijo diferente. El `jcr` prefijo `jcr:title`, `jcr:description`y `jcr:language` se reemplazan con `dc` prefijo. Por lo tanto, en el JSON devuelto `dc:title` y `dc:description` contener los valores de `jcr:title` y `jcr:description`, respectivamente.
+>Algunas propiedades de carpeta o recurso se asignan a un prefijo diferente. El prefijo `jcr` de `jcr:title`, `jcr:description` y `jcr:language` se reemplazan con el prefijo `dc`. Por lo tanto, en el JSON devuelto, `dc:title` y `dc:description` contienen los valores de `jcr:title` y `jcr:description`, respectivamente.
 
-**Las carpetas de vínculos** exponen tres vínculos:
+**** VínculosCarpetas muestra tres vínculos:
 
 * `self`:: Vínculo a sí mismo.
 * `parent`:: Vínculo a la carpeta principal.
@@ -68,10 +68,10 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 En Experience Manager, un recurso contiene los siguientes elementos:
 
 * Propiedades y metadatos del recurso.
-* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de archivos PDF o [!DNL Adobe InDesign] archivos.
+* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de archivos PDF o [!DNL Adobe InDesign].
 * Comentarios opcionales.
 
-Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP de Recursos Experience Manager.
+Para obtener más información sobre los elementos de los fragmentos de contenido, consulte [Compatibilidad con fragmentos de contenido en la API HTTP de Experience Manager Assets](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
@@ -79,35 +79,35 @@ En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 * Propiedades.
 * Vínculos.
 
-La API [!DNL Assets] HTTP incluye las siguientes funciones:
+La API HTTP [!DNL Assets] incluye las siguientes funciones:
 
-* [Recupere una lista](#retrieve-a-folder-listing)de carpetas.
+* [Recupere una lista](#retrieve-a-folder-listing) de carpetas.
 * [Crear una carpeta](#create-a-folder).
 * [Cree un recurso](#create-an-asset).
-* [Actualizar binario](#update-asset-binary)de recursos.
-* [Actualice los metadatos](#update-asset-metadata)del recurso.
-* [Cree una representación](#create-an-asset-rendition)de recursos.
-* [Actualizar una representación](#update-an-asset-rendition)de recursos.
-* [Cree un comentario](#create-an-asset-comment)de recurso.
+* [Actualizar binario](#update-asset-binary) de recursos.
+* [Actualice los metadatos](#update-asset-metadata) del recurso.
+* [Cree una representación](#create-an-asset-rendition) de recursos.
+* [Actualizar una representación](#update-an-asset-rendition) de recursos.
+* [Cree un comentario](#create-an-asset-comment) de recurso.
 * [Copie una carpeta o un recurso](#copy-a-folder-or-asset).
 * [Mover una carpeta o un recurso](#move-a-folder-or-asset).
 * [Elimine una carpeta, recurso o representación](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Para facilitar la lectura, en los siguientes ejemplos se omite la notación completa de cURL. De hecho, la notación sí se correlaciona con [Resty](https://github.com/micha/resty) , que es un contenedor de secuencias de comandos para `cURL`.
+>Para facilitar la lectura, en los siguientes ejemplos se omite la notación completa de cURL. De hecho, la notación sí se correlaciona con [Resty](https://github.com/micha/resty), que es un contenedor de secuencias de comandos para `cURL`.
 
 **Requisitos previos**
 
 * Acceso `https://[aem_server]:[port]/system/console/configMgr`.
-* Vaya al Filtro **[!UICONTROL CSRF de]** Adobe Granite.
-* Asegúrese de que la propiedad Métodos **[!UICONTROL de]** filtro incluye: `POST`, `PUT`, `DELETE`.
+* Vaya al **[!UICONTROL Filtro CSRF de granito de Adobe]**.
+* Asegúrese de que la propiedad **[!UICONTROL Filter Methods]** incluye: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar una lista de carpetas {#retrieve-a-folder-listing}
 
 Recupera una representación sirena de una carpeta existente y de sus entidades secundarias (subcarpetas o recursos).
 
-**Solicitud**: `GET /api/assets/myFolder.json`
+**Solicitud**:  `GET /api/assets/myFolder.json`
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
@@ -115,15 +115,15 @@ Recupera una representación sirena de una carpeta existente y de sus entidades 
 * 404 - NO ENCONTRADO - la carpeta no existe o no es accesible.
 * 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-**Respuesta**: La clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la URL señalada por el vínculo con un `rel` de `self`.
+**Respuesta**: La clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la dirección URL señalada por el vínculo con un `rel` de `self`.
 
 ## Cree una carpeta  . {#create-a-folder}
 
-Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si `*` se proporciona un nombre en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
+Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si se proporciona un `*` en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, útiles para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
 
-Si no existe el nodo principal de la ruta proporcionada, se produce un error en una llamada de API con un código de respuesta `500` . Una llamada devuelve un código de respuesta `409` si la carpeta ya existe.
+Una llamada de API falla con un código de respuesta `500` si el nodo principal de la ruta proporcionada no existe. Una llamada devuelve un código de respuesta `409` si la carpeta ya existe.
 
-**Parámetros**: `name` es el nombre de la carpeta.
+**Parámetros**:  `name` es el nombre de la carpeta.
 
 **Solicitar**
 
@@ -139,9 +139,9 @@ Si no existe el nodo principal de la ruta proporcionada, se produce un error en 
 
 ## Crear un recurso {#create-an-asset}
 
-Coloque el archivo proporcionado en la ruta proporcionada para crear un recurso en el repositorio de DAM. Si `*` se proporciona un nombre en lugar de un nombre de nodo, el servlet utiliza el nombre de parámetro o el nombre de archivo como nombre de nodo.
+Coloque el archivo proporcionado en la ruta proporcionada para crear un recurso en el repositorio de DAM. Si se proporciona un `*` en lugar de un nombre de nodo, el servlet utiliza el nombre de parámetro o el nombre de archivo como nombre de nodo.
 
-**Parámetros**: Los parámetros son `name` para el nombre del recurso y `file` para la referencia del archivo.
+**Parámetros**: Los parámetros son  `name` para el nombre del recurso y  `file` para la referencia del archivo.
 
 **Solicitar**
 
@@ -159,7 +159,7 @@ Coloque el archivo proporcionado en la ruta proporcionada para crear un recurso 
 
 Actualiza el binario de un recurso (representación con el nombre original). Una actualización desencadena el flujo de trabajo predeterminado de procesamiento de recursos para ejecutarse, si está configurado.
 
-**Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
+**Solicitud**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
@@ -168,11 +168,11 @@ Actualiza el binario de un recurso (representación con el nombre original). Una
 * 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
 * 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-## Actualización de metadatos de recursos {#update-asset-metadata}
+## Actualizar metadatos de recursos {#update-asset-metadata}
 
-Actualiza las propiedades de metadatos del recurso. Si actualiza cualquier propiedad de la `dc:` Área de nombres, la API actualiza la misma propiedad en la `jcr` Área de nombres. La API no sincroniza las propiedades de las dos Áreas de nombres.
+Actualiza las propiedades de metadatos del recurso. Si actualiza cualquier propiedad de la Área de nombres `dc:`, la API actualiza la misma propiedad en la Área de nombres `jcr`. La API no sincroniza las propiedades de las dos Áreas de nombres.
 
-**Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
+**Solicitud**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
@@ -181,9 +181,9 @@ Actualiza las propiedades de metadatos del recurso. Si actualiza cualquier propi
 * 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
 * 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-### Sincronizar actualización de metadatos entre `dc` y `jcr` Área de nombres {#sync-metadata-between-namespaces}
+### Sincronizar actualización de metadatos entre la Área de nombres `dc` y `jcr` {#sync-metadata-between-namespaces}
 
-El método API actualiza las propiedades de metadatos de la `jcr` Área de nombres. Las actualizaciones realizadas mediante la interfaz de usuario cambian las propiedades de metadatos de la `dc` Área de nombres. Para sincronizar los valores de metadatos entre `dc` y la `jcr` Área de nombres, puede crear un flujo de trabajo y configurar un Experience Manager para que ejecute el flujo de trabajo tras la edición de recursos. Utilice una secuencia de comandos ECMA para sincronizar las propiedades de metadatos necesarias. La siguiente secuencia de comandos de ejemplo sincroniza la cadena de título entre `dc:title` y `jcr:title`.
+El método API actualiza las propiedades de metadatos en la Área de nombres `jcr`. Las actualizaciones realizadas mediante la interfaz de usuario cambian las propiedades de metadatos en la Área de nombres `dc`. Para sincronizar los valores de metadatos entre la Área de nombres `dc` y `jcr`, puede crear un flujo de trabajo y configurar un Experience Manager para que ejecute el flujo de trabajo tras la edición de recursos. Utilice una secuencia de comandos ECMA para sincronizar las propiedades de metadatos necesarias. La siguiente secuencia de comandos de ejemplo sincroniza la cadena de título entre `dc:title` y `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -202,11 +202,11 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 }
 ```
 
-## Creación de una representación de recursos {#create-an-asset-rendition}
+## Crear una representación de recursos {#create-an-asset-rendition}
 
 Cree una nueva representación de recursos para un recurso. Si no se proporciona el nombre del parámetro de solicitud, el nombre del archivo se utiliza como nombre de representación.
 
-**Parámetros**: Los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
+**Parámetros**: Los parámetros son  `name` para el nombre de la representación y  `file` como referencia de archivo.
 
 **Solicitar**
 
@@ -220,11 +220,11 @@ Cree una nueva representación de recursos para un recurso. Si no se proporciona
 * 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
 * 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-## Actualización de una representación de recursos {#update-an-asset-rendition}
+## Actualizar una representación de recursos {#update-an-asset-rendition}
 
 Las actualizaciones reemplazan respectivamente una representación de recursos con los nuevos datos binarios.
 
-**Solicitud**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
+**Solicitud**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
@@ -237,9 +237,9 @@ Las actualizaciones reemplazan respectivamente una representación de recursos c
 
 Crea un nuevo comentario de recurso.
 
-**Parámetros**: Los parámetros son `message` para el cuerpo del mensaje del comentario y `annotationData` para los datos de anotación en formato JSON.
+**Parámetros**: Los parámetros son  `message` para el cuerpo del mensaje del comentario y  `annotationData` para los datos de anotación en formato JSON.
 
-**Solicitud**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
+**Solicitud**:  `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
@@ -255,10 +255,10 @@ Copia una carpeta o un recurso disponible en la ruta proporcionada a un nuevo de
 **Encabezados** de solicitud: Los parámetros son:
 
 * `X-Destination` - un nuevo URI de destino dentro del ámbito de la solución API al que copiar el recurso.
-* `X-Depth` - `infinity` o `0`. Usar `0` sólo copia el recurso y sus propiedades, y no sus elementos secundarios.
-* `X-Overwrite` - Se utiliza `F` para evitar la sobrescritura de un recurso en el destino existente.
+* `X-Depth` -  `infinity` o  `0`. El uso de `0` sólo copia el recurso y sus propiedades y no sus elementos secundarios.
+* `X-Overwrite` - Se utiliza  `F` para evitar la sobrescritura de un recurso en el destino existente.
 
-**Solicitud**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
+**Solicitud**:  `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
@@ -274,12 +274,12 @@ Mueve una carpeta o un recurso de la ruta dada a un nuevo destino.
 **Encabezados** de solicitud: Los parámetros son:
 
 * `X-Destination` - un nuevo URI de destino dentro del ámbito de la solución API al que copiar el recurso.
-* `X-Depth` - `infinity` o `0`. Usar `0` sólo copia el recurso y sus propiedades, y no sus elementos secundarios.
-* `X-Overwrite` - Utilice `T` para forzar la eliminación de recursos existentes o `F` para evitar la sobrescritura de recursos existentes.
+* `X-Depth` -  `infinity` o  `0`. El uso de `0` sólo copia el recurso y sus propiedades y no sus elementos secundarios.
+* `X-Overwrite` - Utilice  `T` para forzar la eliminación de recursos existentes o  `F` para evitar la sobrescritura de recursos existentes.
 
-**Solicitud**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+**Solicitud**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-No usar `/content/dam` en la dirección URL. Un comando de ejemplo para mover recursos y sobrescribir los existentes es:
+No utilice `/content/dam` en la dirección URL. Un comando de ejemplo para mover recursos y sobrescribir los existentes es:
 
 ```shell
 curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
@@ -292,7 +292,7 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 * 412 - ERROR DE PRECONDICIÓN - si falta un encabezado de solicitud.
 * 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
 
-## Eliminación de una carpeta, un recurso o una representación {#delete-a-folder-asset-or-rendition}
+## Eliminar una carpeta, un recurso o una representación {#delete-a-folder-asset-or-rendition}
 
 Elimina un recurso (-tree) en la ruta proporcionada.
 
@@ -310,6 +310,6 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 ## Sugerencias y limitaciones {#tips-best-practices-limitations}
 
-* [La API HTTP actualiza las propiedades](#update-asset-metadata) de metadatos en la `jcr` Área de nombres. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos de la `dc` Área de nombres.
+* [La API HTTP actualiza las ](#update-asset-metadata) propiedades de metadatos de la  `jcr` Área de nombres. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos en la Área de nombres `dc`.
 
 * La API de recurso no devuelve los metadatos completos. En API, las Áreas de nombres están codificadas y solo se devuelven. Si necesita metadatos completos, consulte la ruta del recurso `/jcr_content/metadata.json`.
