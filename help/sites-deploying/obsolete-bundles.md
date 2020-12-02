@@ -1,8 +1,8 @@
 ---
 title: Lista de paquetes obsoletos desinstalados tras la actualización
 seo-title: Lista de paquetes obsoletos desinstalados tras la actualización
-description: Lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
-seo-description: Lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
+description: Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
+seo-description: Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
 
-# Lista de paquetes obsoletos desinstalados tras la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+# Lista de paquetes obsoletos desinstalados después de la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 >[!NOTE]
 >
->Si el código depende de estos paquetes, asegúrese de ponerse en contacto con el servicio de asistencia de Adobe y solicitar un paquete de compatibilidad para el área afectada.
+>Si el código depende de estos paquetes, asegúrese de ponerse en contacto con la asistencia de Adobe y solicitar un paquete de compatibilidad para el área afectada.
 
-Al actualizar a AEM 6.3, se desinstalarán automáticamente los siguientes paquetes, según la versión de AEM desde la que se realizó la actualización:
+Al actualizar a AEM 6.3, los siguientes paquetes se desinstalarán automáticamente, según la versión AEM que se haya realizado la actualización:
 
 **AEM 6.1:**
 
@@ -34,7 +37,7 @@ Al actualizar a AEM 6.3, se desinstalarán automáticamente los siguientes paque
 * com.adobe.cq.cq-creativecloud-cloudims, versión 0.0.10, Activo
 * com.adobe.cq.cq-creativecloud-commons, versión 0.0.8, Activo
 * com.adobe.cq.cq-creativecloud-filesync, versión 0.0.12, instalado
-* com.adobe.cq.cq-creativecloud-storage, versión 0.0.8, instalado
+* com.adobe.cq.cq-creativecloud-almacenamiento, versión 0.0.8, instalado
 * biz.Qute.bndlib, versión 1.43.0, Activo
 * com.day.cq.dam.commons.nekohtml, versión 0.9.5, Activo
 * com.day.cq.mcm.cq-mcm-silverpop-integration, versión 1.2.2, Activo
