@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 translation-type: tm+mt
 source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
@@ -29,11 +32,11 @@ Puede ejecutar keytool utilizando un único comando que incluya toda la informac
 
 1. En un símbolo del sistema, vaya a *`[JAVA HOME]`*/bin y escriba el siguiente comando para crear el certificado y el almacén de claves:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nombre *Host Nombre`, OU=`** Grupo Nombre `, O=`**Empresa Nombre`,L=`** Ciudad Nombre `, S=`**Estado Código`, C=`** `" -alias`**`-keypass``key`** ** `-keystore`**País&quot;LC&quot;Cert&quot;_contraseñaNombreclave`.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Nombre* `, OU=`*del host* `, O=`*Nombre del grupo Nombre de la empresa* `,L=`*Nombre de la ciudad* `, S=`** `, C=`*Nombre del estado Código* `" -alias`*del país&quot;Certificado LC&quot;* `-keypass` `key`*_* ** `-keystore`*contraseña nombredeclave* `.keystore`
 
    >[!NOTE]
    >
-   >Reemplace *`[JAVA_HOME]`con el directorio en el que está instalado JDK y reemplace el texto en cursiva por valores que correspondan a su entorno.*
+   >Reemplace *`[JAVA_HOME]`por el directorio donde está instalado el JDK y reemplace el texto en cursiva por valores que correspondan con su entorno.*
 
 1. Escriba `changeit` como contraseña. Esta contraseña es la predeterminada para una instalación de Java y es posible que el administrador del sistema la haya cambiado.
 
