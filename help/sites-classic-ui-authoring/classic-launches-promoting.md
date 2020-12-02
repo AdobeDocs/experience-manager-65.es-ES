@@ -1,6 +1,6 @@
 ---
-title: Promocionar lanzamientos
-seo-title: Promocionar lanzamientos
+title: Promoción de lanzamientos
+seo-title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada.
 seo-description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada.
 uuid: 91f1c6ac-8c4e-4459-aaab-feaa32befc45
@@ -12,11 +12,14 @@ discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
 
-# Promocionar lanzamientos{#promoting-launches}
+# Promoción de lanzamientos{#promoting-launches}
 
 Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles para promocionar una página de lanzamiento:
 
@@ -31,14 +34,14 @@ Para promocionar páginas, realice los pasos siguientes al editar la página de 
 1. En la ficha **Página** de la barra de tareas, haga clic en **Promocionar lanzamiento**.
 1. Especifique las páginas que desee promocionar:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
-   * To also promote the child pages of the current page, select **Include Sub Pages**.
+   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar cambios de página en la versión de producción**.
+   * Para promocionar también las páginas secundarias de la página actual, seleccione **Incluir páginas secundarias**.
    * Para promocionar todas las páginas del lanzamiento, seleccione **Promocionar lanzamiento completo en la versión de producción**.
 
 1. Para añadir las páginas de la producción a un paquete de flujo de trabajo, seleccione **Añadir al paquete del flujo de trabajo** y, a continuación, seleccione el paquete del flujo de trabajo.
 1. Haga clic en **Promocionar**.
 
-##  Procesamiento de páginas promocionadas mediante AEM Workflow {#processing-promoted-pages-using-aem-workflow}
+## Procesamiento de páginas promocionadas mediante el flujo de trabajo de AEM {#processing-promoted-pages-using-aem-workflow}
 
 Utilice modelos de flujo de trabajo para realizar procesamientos masivos de páginas de lanzamiento promocionadas:
 
