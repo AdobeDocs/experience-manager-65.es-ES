@@ -61,30 +61,30 @@ En ambos casos, tendrá que realizar lo siguiente:
 
 * [Especificar los detalles del flujo de trabajo en el asistente Crear flujo de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Inicio de un flujo de trabajo desde la barra de herramientas Sitios {#starting-a-workflow-from-the-sites-toolbar}
+### Inicio de un flujo de trabajo desde la barra de herramientas Sitios  {#starting-a-workflow-from-the-sites-toolbar}
 
-You can start a workflow from the toolbar of the **Sites** console:
+Puede inicio de un flujo de trabajo desde la barra de herramientas de la consola **Sites**:
 
 1. Busque y seleccione la página deseada. 
 
-1. From the **Create** option in the toolbar you can now select **Workflow**.
+1. En la opción **Crear** de la barra de herramientas, ahora puede seleccionar **Flujo de trabajo**.
 
    ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
 1. El asistente **Crear flujo de trabajo** le ayudará a [especificar los detalles del flujo de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Inicio de un flujo de trabajo desde la escala de tiempo {#starting-a-workflow-from-the-timeline}
+### Inicio de un flujo de trabajo desde la escala de tiempo  {#starting-a-workflow-from-the-timeline}
 
 Desde **Escala de tiempo**, puede iniciar un flujo de trabajo para aplicarlo al recurso seleccionado.
 
-1. [Seleccione el recurso](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) y abra la [línea de tiempo](/help/sites-authoring/basic-handling.md#timeline) (o abra la línea de tiempo y, a continuación, seleccione el recurso).
+1. [Seleccione el ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) recurso y abra la  [línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)  (o abra la línea de tiempo y, a continuación, seleccione el recurso).
 1. La punta de flecha junto al campo Comentario puede utilizarse para mostrar **Iniciar flujo de trabajo**:
 
    ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
 1. El asistente **Crear flujo de trabajo** le ayudará a [especificar los detalles del flujo de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Especificación de los detalles del flujo de trabajo en el asistente Crear flujo de trabajo {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Especificación de los detalles del flujo de trabajo en el asistente Crear flujo de trabajo  {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 El asistente **Crear flujo de trabajo** ayuda a seleccionar el flujo de trabajo y especificar los detalles necesarios.
 
@@ -118,7 +118,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Añadir contenido** para abrir el explorador [de](/help/sites-authoring/author-environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
+   * **Añadir** contenido para abrir el  [explorador de ](/help/sites-authoring/author-environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en  **** Seleccionar para añadir contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 
@@ -139,9 +139,9 @@ Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo 
    >
    >Si agrega recursos adicionales, puede utilizar **Atrás** para ajustar la configuración **Mantener flujo de trabajo del paquete** en el paso **Propiedades**.
 
-1. Use **Create** to close the wizard and create the workflow instance. Se muestra una notificación en la consola Sitios.
+1. Utilice **Crear** para cerrar el asistente y crear la instancia de flujo de trabajo. Se muestra una notificación en la consola Sitios.
 
-## Inicio de un flujo de trabajo desde el Editor de página {#starting-a-workflow-from-the-page-editor}
+## Inicio de un flujo de trabajo desde el Editor de página  {#starting-a-workflow-from-the-page-editor}
 
 Al editar una página, puede seleccionar **Información de la página** en la barra de herramientas. En el menú desplegable se incluye la opción **Iniciar en flujo de trabajo**. Se abrirá un cuadro de diálogo en el que puede especificar el flujo de trabajo necesario junto con un título, si fuera necesario: 
 
