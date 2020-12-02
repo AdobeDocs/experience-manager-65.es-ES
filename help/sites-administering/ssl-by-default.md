@@ -1,8 +1,8 @@
 ---
 title: SSL de forma predeterminada
 seo-title: SSL de forma predeterminada
-description: Aprenda a utilizar SSL de forma predeterminada en AEM.
-seo-description: Aprenda a utilizar SSL de forma predeterminada en AEM.
+description: Obtenga información sobre cómo utilizar SSL de forma predeterminada en AEM.
+seo-description: Obtenga información sobre cómo utilizar SSL de forma predeterminada en AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
 content-type: reference
@@ -12,19 +12,22 @@ discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
 
 # SSL de forma predeterminada{#ssl-by-default}
 
-Con el fin de mejorar continuamente la seguridad de AEM, Adobe ha introducido una función denominada SSL de forma predeterminada. El propósito es fomentar el uso de HTTPS para conectarse a instancias de AEM.
+En un esfuerzo por mejorar continuamente la seguridad de AEM, Adobe ha introducido una función llamada SSL de forma predeterminada. El propósito es fomentar el uso de HTTPS para conectarse a AEM instancias.
 
-## Habilitar SSL de forma predeterminada {#enabling-ssl-by-default}
+## Habilitando SSL de forma predeterminada {#enabling-ssl-by-default}
 
-Puede empezar a configurar SSL de forma predeterminada haciendo clic en el mensaje Bandeja de entrada correspondiente en la pantalla de inicio de AEM. Para acceder a la Bandeja de entrada, pulse el icono de la campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Ver todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
+Para configurar SSL de forma predeterminada, haga clic en el mensaje Bandeja de entrada correspondiente en la pantalla de inicio de AEM. Para acceder a la Bandeja de entrada, pulse el icono de la campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Vista de todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
 
-En la lista, seleccione y abra la alerta **Configurar HTTPS** :
+En la lista, seleccione y abra la alerta **Configurar HTTPS**:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -34,7 +37,7 @@ En la lista, seleccione y abra la alerta **Configurar HTTPS** :
 
 Se ha creado un usuario de servicio llamado **ssl-service** para esta función. Una vez que abra la alerta, se le guiará a través del siguiente asistente de configuración:
 
-1. Primero, configure las credenciales de la tienda. Son las credenciales del almacén de claves del usuario del sistema de **ssl-service** que contendrán la clave privada y el almacén de confianza para el detector HTTPS.
+1. Primero, configure las credenciales de la tienda. Estas son las credenciales del almacén de claves del usuario del sistema **ssl-service** que contendrán la clave privada y el almacén de confianza para el detector HTTPS.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
@@ -54,7 +57,7 @@ Se ha creado un usuario de servicio llamado **ssl-service** para esta función. 
 
 Existen tres maneras de automatizar SSL de manera predeterminada.
 
-### Mediante HTTP POST {#via-http-post}
+### Mediante el POST HTTP {#via-http-post}
 
 El primer método implica la publicación en el servidor SSLSetup que está utilizando el asistente de configuración:
 
@@ -62,7 +65,7 @@ El primer método implica la publicación en el servidor SSLSetup que está util
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Puede utilizar la siguiente carga útil en su POST para automatizar la configuración:
+Puede utilizar la siguiente carga útil en el POST para automatizar la configuración:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -91,11 +94,11 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-El servlet, como cualquier servlet sling POST, responderá con 200 OK o con un código de estado HTTP de error. Puede encontrar detalles sobre el estado en el cuerpo HTML de la respuesta.
+El servlet, como cualquier servlet POST sling, responderá con 200 OK o con un código de estado HTTP de error. Puede encontrar detalles sobre el estado en el cuerpo HTML de la respuesta.
 
 A continuación se muestran ejemplos de una respuesta correcta y de un error.
 
-**EJEMPLO** DE ÉXITO (estado = 200):
+**EJEMPLO**  DE ÉXITO(status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -126,7 +129,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**EJEMPLO** DE ERROR (status = 500):
+**EJEMPLO**  DE ERROR(status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -148,14 +151,14 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-### Vía paquete {#via-package}
+### Vía el paquete {#via-package}
 
 También puede automatizar la configuración de SSL cargando un paquete que ya contiene estos elementos necesarios:
 
 * El almacén de claves del usuario del servicio ssl. Se encuentra en */home/users/system/security/ssl-service/keystore* en el repositorio.
-* La `GraniteSslConnectorFactory` configuración
+* La configuración `GraniteSslConnectorFactory`
 
-### Generación de un par de clave/certificado privado para utilizarlo con el Asistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
+### Generación de un par de claves privadas/certificados para utilizarlo con el Asistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
 A continuación encontrará un ejemplo para crear un certificado autofirmado en formato DER que puede utilizar el Asistente para SSL.
 
@@ -188,7 +191,7 @@ Convertir la clave privada al formato DER. Esto se debe a que el asistente SSL r
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Finalmente, cargue **localhostprivate.der** como Private Key y **localhost.crt** como el certificado SSL en el paso 2 del Asistente gráfico SSL descrito al principio de esta página.
+Finalmente, cargue el **localhostprivate.der** como Clave privada y **localhost.crt** como certificado SSL en el paso 2 del Asistente gráfico SSL descrito al principio de esta página.
 
 ### Actualización de la configuración SSL mediante cURL {#updating-the-ssl-configuration-via-curl}
 
@@ -221,7 +224,7 @@ A continuación se muestran los parámetros que puede utilizar para cambiar las 
 >
 >La forma más rápida de ejecutar cURL para automatizar la configuración SSL es desde la carpeta donde se encuentran los archivos DER y CRT. También puede especificar la ruta completa en los argumentos `privatekeyFile` y certificateFile.
 >
->También es necesario autenticarse para realizar la actualización, por lo que debe adjuntar el comando cURL con el `-u user:passeword` parámetro .
+>También es necesario autenticarse para realizar la actualización, por lo que debe anexar el comando cURL con el parámetro `-u user:passeword`.
 >
 >Un comando cURL posterior correcto debería tener este aspecto:
 
