@@ -1,6 +1,6 @@
 ---
-title: Editar lanzamientos
-seo-title: Editar lanzamientos
+title: Edición de lanzamientos
+seo-title: Edición de lanzamientos
 description: Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede editar el contenido de la copia de lanzamiento de la página.
 seo-description: Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede editar el contenido de la copia de lanzamiento de la página.
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
@@ -12,11 +12,14 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 99%
 
 ---
 
 
-# Editar lanzamientos{#editing-launches}
+# Edición de lanzamientos{#editing-launches}
 
 ## Editar páginas de lanzamiento {#editing-launch-pages}
 
@@ -47,6 +50,7 @@ Tras crear un lanzamiento, puede cambiar el nombre y la fecha del lanzamiento. T
       * **Título**
       * **Fecha de lanzamiento**: equivale a la fecha de 
       * **La producción está lista**
+
       Consulte [Lanzamientos: orden de eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener información sobre la finalidad y la interacción de los campos.
 
    * En la ficha **Imagen**, puede cargar un archivo de imagen.
