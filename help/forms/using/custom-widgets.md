@@ -19,21 +19,21 @@ ht-degree: 0%
 ---
 
 
-# Creación de apariencias personalizadas en formularios HTML5{#create-custom-appearances-in-html-forms}
+# Crear apariencias personalizadas en formularios HTML5{#create-custom-appearances-in-html-forms}
 
-Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar las utilidades de jQuery existentes o desarrollar sus propias utilidades personalizadas mediante el marco de apariencias. El motor XFA utiliza varios widgets; consulte Marco de [apariencia para formularios](/help/forms/using/introduction-widgets.md) adaptables y HTML5 para obtener información detallada.
+Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar las utilidades de jQuery existentes o desarrollar sus propias utilidades personalizadas mediante el marco de apariencias. El motor XFA utiliza varios widgets, consulte [Marco de aspecto para formularios adaptables y HTML5](/help/forms/using/introduction-widgets.md) para obtener información detallada.
 
 ![Ejemplo de utilidad predeterminada y personalizada](assets/custom-widgets.jpg)
 
 Ejemplo de utilidad predeterminada y personalizada
 
-## Integración de widgets personalizados con formularios HTML5 {#integrating-custom-widgets-with-html-forms}
+## Integración de utilidades personalizadas con formularios HTML5 {#integrating-custom-widgets-with-html-forms}
 
 ### Crear un perfil  {#create-a-profile-nbsp}
 
-Puede crear un perfil o elegir un perfil existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Creación de Perfiles](/help/forms/using/custom-profile.md)personalizados.
+Puede crear un perfil o elegir un perfil existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Creación de Perfiles personalizados](/help/forms/using/custom-profile.md).
 
-### Creación de una utilidad {#create-a-widget}
+### Crear una utilidad {#create-a-widget}
 
 Los formularios HTML5 proporcionan una implementación de la estructura de utilidades que se puede ampliar para crear nuevas utilidades. La implementación es una utilidad jQuery *abstractWidget* que se puede ampliar para escribir una nueva utilidad. La nueva utilidad solo puede funcionar si amplía o anula las funciones mencionadas a continuación.
 
@@ -49,7 +49,7 @@ Los formularios HTML5 proporcionan una implementación de la estructura de utili
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> {<br /> desenfocar: XFA_EXIT_EVENTO,<br /> }<br /> Este ejemplo muestra que el desenfoque es un evento HTML y XFA_EXIT_EVENTO es el evento XFA correspondiente. </td>
+   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> {<br /> blur: XFA_EXIT_EVENTO,<br /> }<br /> Este ejemplo muestra que el desenfoque es un evento HTML y XFA_EXIT_EVENTO es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -78,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registro de utilidades personalizadas con el motor de secuencias de comandos XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Cuando el código de la utilidad personalizada esté listo, registre la utilidad con el motor de secuencias de comandos mediante `registerConfig`API para [Form Bridge](/help/forms/using/form-bridge-apis.md). Toma widgetConfigObject como entrada.
+Cuando el código de la utilidad personalizada esté listo, registre la utilidad con el motor de secuencias de comandos mediante `registerConfig`API para [Puente de formulario](/help/forms/using/form-bridge-apis.md). Toma widgetConfigObject como entrada.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -106,5 +106,5 @@ donde &quot;identificador&quot; es un selector CSS de jQuery que representa un c
 | Tipo de identificador | Identificador | Descripción |
 |---|---|---|
 | Campo particular con nombre de campo | Identificador:&quot;div.fieldname&quot; | Todos los campos con el nombre ‘nombre de campo’ se representan con la utilidad. |
-| Todos los campos de tipo ‘type’(donde type es NumericField, DateField, etc.): | Identificador: &quot;div.type&quot; | Para Campo de tiempo y Campo de tiempo, el tipo es campo de texto, ya que estos campos no son compatibles. |
+| Todos los campos de tipo ‘type’(donde type es NumericField, DateField, etc.):: | Identificador: &quot;div.type&quot; | Para Campo de tiempo y Campo de tiempo, el tipo es campo de texto, ya que estos campos no son compatibles. |
 | Todos los campos | Identificador: &quot;div.field&quot; |  |
