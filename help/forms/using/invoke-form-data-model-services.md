@@ -20,19 +20,19 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación de formularios invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la `guidelib.dataIntegrationUtils.executeOperation` API en el editor de código del editor [de](/help/forms/using/rule-editor.md)reglas.
+AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la API `guidelib.dataIntegrationUtils.executeOperation` en el editor de código del [editor de reglas](/help/forms/using/rule-editor.md).
 
-Este documento se centra en escribir un JavaScript usando la `guidelib.dataIntegrationUtils.executeOperation` API para invocar un servicio.
+Este documento se centra en escribir un JavaScript usando la API `guidelib.dataIntegrationUtils.executeOperation` para invocar un servicio.
 
 ## Uso de la API {#using-the-api}
 
-La `guidelib.dataIntegrationUtils.executeOperation` API invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
+La API `guidelib.dataIntegrationUtils.executeOperation` invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-La estructura de la `guidelib.dataIntegrationUtils.executeOperation` API especifica detalles sobre la operación de servicio. La sintaxis de la estructura es la siguiente:
+La estructura de la API `guidelib.dataIntegrationUtils.executeOperation` especifica detalles sobre la operación del servicio. La sintaxis de la estructura es la siguiente:
 
 ```javascript
 var operationInfo = {
@@ -76,7 +76,7 @@ La estructura de la API especifica los siguientes detalles sobre la operación d
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>Asigna uno o varios objetos de formulario a los valores de salida de la operación de servicio para rellenar los campos de formulario<br /> </td>
+   <td>Asigna uno o varios objetos de formulario a los valores de salida de la operación de servicio para rellenar campos de formulario<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
@@ -91,9 +91,9 @@ La estructura de la API especifica los siguientes detalles sobre la operación d
 
 ## Secuencia de comandos de ejemplo para invocar un servicio {#sample-script-to-invoke-a-service}
 
-La siguiente secuencia de comandos de ejemplo utiliza la `guidelib.dataIntegrationUtils.executeOperation` API para invocar la operación de `getAccountById` servicio configurada en el modelo de datos del `employeeAccount` formulario.
+La siguiente secuencia de comandos de ejemplo utiliza la API `guidelib.dataIntegrationUtils.executeOperation` para invocar la operación de servicio `getAccountById` configurada en el modelo de datos de formulario `employeeAccount`.
 
-La `getAccountById` operación toma el valor en el campo del `employeeID` formulario como entrada para el `empId` argumento y devuelve el nombre del empleado, el número de cuenta y el saldo de la cuenta del empleado correspondiente. Los valores de salida se rellenan en los campos de formulario especificados. Por ejemplo, el valor del `name` argumento se rellena en el elemento de `fullName` formulario y el valor del `accountNumber` argumento en el elemento `account` de formulario.
+La operación `getAccountById` toma el valor del campo de formulario `employeeID` como entrada para el argumento `empId` y devuelve el nombre del empleado, el número de cuenta y el saldo de la cuenta del empleado correspondiente. Los valores de salida se rellenan en los campos de formulario especificados. Por ejemplo, el valor del argumento `name` se rellena en el elemento de formulario `fullName` y el valor del argumento `accountNumber` en el elemento de formulario `account`.
 
 ```javascript
 var operationInfo = {
@@ -113,7 +113,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ## Uso de la API con la función de llamada de retorno {#using-the-api-callback}
 
-También puede invocar el servicio del modelo de datos de formulario mediante la `guidelib.dataIntegrationUtils.executeOperation` API con una función de llamada de retorno. La sintaxis de la API es la siguiente:
+También puede invocar el servicio del modelo de datos de formulario mediante la API `guidelib.dataIntegrationUtils.executeOperation` con una función de llamada de retorno. La sintaxis de la API es la siguiente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
@@ -121,15 +121,15 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 La función de llamada de retorno puede tener `success` y `failure` funciones de llamada de retorno.
 
-### Secuencia de comandos de muestra con funciones de llamada de retorno de éxito y error {#callback-function-success-failure}
+### Secuencia de comandos de muestra con funciones de devolución de llamada de éxito y error {#callback-function-success-failure}
 
-La siguiente secuencia de comandos de ejemplo utiliza la `guidelib.dataIntegrationUtils.executeOperation` API para invocar la operación de `GETOrder` servicio configurada en el modelo de datos del `employeeOrder` formulario.
+La siguiente secuencia de comandos de ejemplo utiliza la API `guidelib.dataIntegrationUtils.executeOperation` para invocar la operación de servicio `GETOrder` configurada en el modelo de datos de formulario `employeeOrder`.
 
-La `GETOrder` operación toma el valor del campo del `Order ID` formulario como entrada para el `orderId` argumento y devuelve el valor de cantidad de pedido en la función de llamada de retorno `success` .  Si la función de `success` llamada de retorno no devuelve la cantidad de pedido, la función de llamada de retorno `failure` muestra el `Error occured` mensaje.
+La operación `GETOrder` toma el valor del campo de formulario `Order ID` como entrada para el argumento `orderId` y devuelve el valor de cantidad de pedido en la función de devolución de llamada `success`.  Si la función de llamada de retorno `success` no devuelve la cantidad de pedido, la función de llamada de retorno `failure` muestra el mensaje `Error occured`.
 
 >[!NOTE]
 >
-> Si utiliza la función de `success` llamada de retorno, los valores de salida no se rellenan en los campos de formulario especificados.
+> Si utiliza la función de llamada de retorno `success`, los valores de salida no se rellenan en los campos de formulario especificados.
 
 ```javascript
 var operationInfo = {
