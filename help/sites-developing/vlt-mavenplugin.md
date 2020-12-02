@@ -10,7 +10,7 @@ ht-degree: 11%
 ---
 
 
-# Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
+# Complemento Maven del paquete de contenido de Adobe {#adobe-content-package-maven-plugin}
 
 Utilice el complemento Adobe Content Package Maven para integrar la implementación de paquetes y tareas de administración en sus proyectos de Maven.
 
@@ -20,9 +20,9 @@ La implementación de los paquetes construidos en AEM es llevada a cabo por el c
 >
 >Para obtener más información, consulte:
 >
->* El artículo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) de la AEM como una documentación de Cloud Service sobre cómo implementar AEM aplicaciones.
->* El artículo [AEM Estructura](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) del proyecto del AEM como Cloud Service documenta cómo estructurar los proyectos AEM modernos.
->* La documentación del [AEM arquetipo](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) del proyecto para saber cómo inicio de un nuevo proyecto AEM usando el arquetipo.
+>* El artículo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) de la AEM como documentación de Cloud Service para la implementación de aplicaciones AEM.
+>* El artículo [Estructura del proyecto de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) del AEM como una documentación Cloud Service sobre cómo estructurar los proyectos AEM modernos.
+>* La documentación de [AEM arquetipo del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) para ver cómo se inicio un nuevo proyecto AEM usando el arquetipo.
 
 >
 >
