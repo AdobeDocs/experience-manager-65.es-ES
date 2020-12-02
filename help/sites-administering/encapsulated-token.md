@@ -36,11 +36,11 @@ La solución para esto es configurar las conexiones adhesivas en el nivel de equ
 
 Si una instancia de publicación deja de estar disponible, todos los usuarios autenticados en esa instancia perderán su sesión. Esto se debe a que se necesita acceso al repositorio para validar la cookie de autenticación.
 
-## Autenticación sin estado con el token encapsulado {#stateless-authentication-with-the-encapsulated-token}
+## Autenticación sin estado con token encapsulado {#stateless-authentication-with-the-encapsulated-token}
 
 La solución para la escalabilidad horizontal es la autenticación sin estado con el uso de la nueva compatibilidad con Token encapsulado en AEM.
 
-El autentificador encapsulado es un fragmento de criptografía que permite a AEM crear y validar de forma segura la información de autenticación sin conexión, sin tener acceso al repositorio. De este modo, puede producirse una solicitud de autenticación en todas las instancias de publicación y sin necesidad de conexiones adhesivas. También tiene la ventaja de mejorar el rendimiento de la autenticación, ya que no es necesario acceder al repositorio para cada solicitud de autenticación.
+El Token encapsulado es un trozo de criptografía que permite a AEM crear y validar de forma segura la información de autenticación sin conexión, sin tener acceso al repositorio. De este modo, puede producirse una solicitud de autenticación en todas las instancias de publicación y sin necesidad de conexiones adhesivas. También tiene la ventaja de mejorar el rendimiento de la autenticación, ya que no es necesario acceder al repositorio para cada solicitud de autenticación.
 
 Puede ver cómo funciona esto en una implementación distribuida geográficamente con los autores de MongoMK y las instancias de publicación de TarMK a continuación:
 
@@ -61,7 +61,7 @@ Puede ver cómo funciona esto en una implementación distribuida geográficament
 >* Las sesiones adhesivas están activadas o
    >
    >
-* Los usuarios ya se crean en AEM cuando inicio la sincronización. Esto significa que los tokens encapsulados no se admitirán en situaciones en las que los controladores **creen** usuarios durante el proceso de sincronización.
+* Los usuarios ya se crean en AEM cuando la sincronización inicio. Esto significa que los tokens encapsulados no se admitirán en situaciones en las que los usuarios **creen** controladores durante el proceso de sincronización.
 
 
 Hay algunas cosas que debe tener en cuenta al configurar el token encapsulado:
@@ -69,19 +69,20 @@ Hay algunas cosas que debe tener en cuenta al configurar el token encapsulado:
 1. Debido a la criptografía involucrada, todas las instancias necesitan tener la misma clave HMAC. Desde AEM 6.3, el material clave ya no se almacena en el repositorio, sino en el sistema de archivos real. Con esto en mente, la mejor manera de replicar las claves es copiarlas del sistema de archivos de la instancia de origen a la de las instancias de destinatario a las que desee replicar las claves. Ver más información debajo de &quot;Replicando la clave HMAC&quot;.
 1. El token encapsulado debe estar habilitado. Esto se puede realizar a través de la consola web.
 
-### Replicar la clave HMAC {#replicating-the-hmac-key}
+### Replicando la clave HMAC {#replicating-the-hmac-key}
 
-La clave HMAC está presente como una propiedad binaria de `/etc/key` en el repositorio. Puede descargarlo por separado pulsando el vínculo de **vista** que hay junto a él:
+La clave HMAC está presente como una propiedad binaria de `/etc/key` en el repositorio. Puede descargarlo por separado pulsando el vínculo **vista** al lado:
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 Para replicar la clave entre instancias, debe:
 
-1. Acceda a la instancia de AEM, que suele ser una instancia de autor, que contiene el material clave que copiar;
-1. Busque el `com.adobe.granite.crypto.file` paquete en el sistema de archivos local. Por ejemplo, en esta ruta:
+1. Acceda a la instancia de AEM, normalmente una instancia de autor, que contiene el material clave que copiar;
+1. Busque el paquete `com.adobe.granite.crypto.file` en el sistema de archivos local. Por ejemplo, en esta ruta:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
-   El `bundle.info` archivo dentro de cada carpeta identificará el nombre del paquete.
+
+   El archivo `bundle.info` dentro de cada carpeta identificará el nombre del paquete.
 
 1. Vaya a la carpeta de datos. Por ejemplo:
 
@@ -93,7 +94,7 @@ Para replicar la clave entre instancias, debe:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Pegue los dos archivos que copió anteriormente.
-1. [Actualice el paquete](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) de cifrado si la instancia de destinatario ya se está ejecutando.
+1. [Actualice Crypto ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) Bundlesi la instancia de destinatario ya se está ejecutando.
 
 1. Repita los pasos anteriores para todas las instancias en las que desee replicar la clave.
 
@@ -102,6 +103,6 @@ Para replicar la clave entre instancias, debe:
 Una vez replicada la clave HMAC, puede habilitar el token encapsulado mediante la consola web:
 
 1. Elija el explorador para `https://serveraddress:port/system/console/configMgr`
-1. Busque una entrada denominada Controlador **de autentificación de autentificador CRX de** día y haga clic en ella.
-1. En la siguiente ventana, marque la casilla **Activar compatibilidad** con token encapsulado y pulse **Guardar**.
+1. Busque una entrada denominada **Controlador de autentificación de autentificador de autentificador CRX de día** y haga clic en ella.
+1. En la siguiente ventana, marque la casilla **Habilitar compatibilidad con token encapsulado** y presione **Guardar**.
 
