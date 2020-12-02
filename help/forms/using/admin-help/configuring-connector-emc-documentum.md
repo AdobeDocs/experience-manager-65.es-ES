@@ -1,8 +1,8 @@
 ---
 title: Configuración de Connector para Documentum de EMC
 seo-title: Configuración de Connector para Documentum de EMC
-description: Conozca cómo configurar Connector para Documentum de EMC para permitir la comunicación entre formularios AEM y Documentum de EMC.
-seo-description: Conozca cómo configurar Connector para Documentum de EMC para permitir la comunicación entre formularios AEM y Documentum de EMC.
+description: Conozca cómo configurar Connector para Documentum de EMC para permitir la comunicación entre AEM formularios y Documentum de EMC.
+seo-description: Conozca cómo configurar Connector para Documentum de EMC para permitir la comunicación entre AEM formularios y Documentum de EMC.
 uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
@@ -11,21 +11,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
 
-# Configuración de Connector para Documentum de EMC {#configuring-connector-for-emc-documentum}
+# Configuración del Conector para Documentum de EMC {#configuring-connector-for-emc-documentum}
 
-Connector for EMC Documentum permite la comunicación entre formularios AEM y Documentum de EMC. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia](https://www.adobe.com/go/learn_aemforms_services_63)de servicios.
+Connector for EMC Documentum permite la comunicación entre AEM formularios y Documentum de EMC. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Configurar Connector para Documentum de EMC implica configurar la conexión al servidor y las credenciales del repositorio.
 
 >[!NOTE]
 >
->En versiones anteriores, los recursos se podían almacenar en un repositorio de ECM. En la versión actual, los recursos se almacenan en el repositorio nativo de formularios AEM y los servicios del proveedor de repositorios se han quedado obsoletos. La migración de recursos de un repositorio de ECM al repositorio de formularios de AEM se realiza al realizar una actualización a los formularios de AEM. Para obtener más información, consulte la guía de actualización de formularios de AEM para su servidor de aplicaciones.
+>En versiones anteriores, los recursos se podían almacenar en un repositorio de ECM. En la versión actual, los recursos se almacenan en el repositorio nativo de formularios de AEM y los servicios del proveedor de repositorios se han quedado obsoletos. La migración de recursos de un repositorio de ECM al repositorio de formularios AEM se realiza cuando se realiza una actualización a AEM formularios. Para obtener más información, consulte la guía de actualización de formularios AEM para su servidor de aplicaciones.
 
-## Configuración de la conexión con el servidor {#configuring-the-server-connection}
+## Configuración de la conexión al servidor {#configuring-the-server-connection}
 
 En este tema se describen las tareas de Connector para Documentum de EMC que puede realizar en la página Configuración.
 
@@ -41,7 +44,7 @@ Debe configurar la información del servidor del agente de conexiones. Esta info
 1. En el área Información de configuración de Documentum, introduzca el nombre de host o la dirección IP y el número de puerto del agente de conexión. El número de puerto debe ser un entero positivo (por ejemplo, 1489).
 1. Haga clic en Guardar.
 
-### Configurar credenciales principales {#configure-principal-credentials}
+### Configurar las credenciales principales {#configure-principal-credentials}
 
 Al configurar las credenciales principales, el nombre del repositorio que proporcione dependerá de si se proporciona un nombre de repositorio explícito durante el inicio de sesión.
 
@@ -59,11 +62,11 @@ Si introduce un nombre de usuario o una contraseña incorrectos, obtendrá los s
 
 Puede configurar qué proveedor de servicio de repositorio utilizar con Documentum. Las llamadas al servicio de repositorio se delegan al proveedor que configure. Las opciones disponibles son las siguientes:
 
-**Nombre actual del Proveedor de servicio del repositorio:** Nombre del proveedor de servicio de repositorio actual
+**Nombre del Proveedor de servicio del repositorio actual:** El nombre del proveedor de servicio del repositorio actual
 
-**Proveedor de repositorio de Documentum de ECM:** Convierte al proveedor de repositorio de Documentum en el proveedor del repositorio. Esta opción está en desuso
+**Proveedor de repositorio de Documentum de EMC:** convierte al proveedor de repositorio de Documentum en el proveedor del repositorio para el repositorio. Esta opción está en desuso
 
-**proveedor de repositorio:** Convierte al proveedor de repositorio nativo en el proveedor del repositorio
+**proveedor de repositorio:** convierte al proveedor de repositorio nativo en el proveedor del repositorio
 
 >[!NOTE]
 >
@@ -101,11 +104,11 @@ Si se están ejecutando el Servicio de Repositorio de Contenido para Documentum 
 
 Si se están ejecutando el Servicio de Repositorio de Contenido para Documentum de EMC y/o el Servicio de Repositorio para Documentum de EMC, la información de credenciales se verifica con respecto al repositorio especificado antes de que se almacene en la base de datos. Si las credenciales no son válidas o existen, se muestra un mensaje de error.
 
-## Habilitar la solicitud para compartir colas de tareas de Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Habilitar la solicitud para compartir las colas de tareas de Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 Se requieren algunos pasos manuales para garantizar que la función Solicitud de uso compartido de cola de Tarea en Workspace funcione correctamente con Connector for EMC Documentum.
 
-1. Una vez implementados los formularios AEM y instalado Workbench, inicie sesión en Workbench y abra la vista Recursos. Determinará la ubicación del archivo QueueSharing.swf desde esta vista.
+1. Una vez que se hayan implementado AEM formularios y se haya instalado Workbench, inicie sesión en Workbench y abra la vista Recursos. Determinará la ubicación del archivo QueueSharing.swf desde esta vista.
 1. Arrastre el archivo QueueSharing.swf desde la Vista Recursos hasta el escritorio de Windows o una ubicación equivalente, según el sistema operativo.
 1. En la consola de administración, haga clic en Servicios > Conector para Documentum de EMC > Configuración.
 1. En Información del Proveedor de servicio de Repositorios, cambie el proveedor de repositorios configurado a Proveedor de Repositorios de Documentum de EMC.
