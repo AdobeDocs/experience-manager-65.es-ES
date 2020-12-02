@@ -10,7 +10,7 @@ ht-degree: 12%
 ---
 
 
-# Cómo construir AEM proyectos con Apache Maven {#how-to-build-aem-projects-using-apache-maven}
+# Cómo construir AEM proyectos usando Apache Maven {#how-to-build-aem-projects-using-apache-maven}
 
 AEM 6.5 se adhiere a las prácticas recomendadas más recientes para la gestión de paquetes y la estructura de proyectos, tal como se aplican en el último arquetipo del proyecto AEM para las implementaciones locales y AMS.
 
@@ -18,9 +18,9 @@ AEM 6.5 se adhiere a las prácticas recomendadas más recientes para la gestión
 >
 >Para obtener más información, consulte:
 >
->* El artículo [AEM Estructura](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) del proyecto del AEM como Cloud Service documenta cómo estructurar los proyectos AEM modernos.
->* La documentación del [AEM arquetipo](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) del proyecto para saber cómo inicio de un nuevo proyecto AEM usando el arquetipo.
->* El artículo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) de la AEM como una documentación de Cloud Service sobre cómo implementar AEM aplicaciones.
+>* El artículo [Estructura del proyecto de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) del AEM como una documentación Cloud Service sobre cómo estructurar los proyectos AEM modernos.
+>* La documentación de [AEM arquetipo del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) para ver cómo se inicio un nuevo proyecto AEM usando el arquetipo.
+>* El artículo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) de la AEM como documentación de Cloud Service para la implementación de aplicaciones AEM.
 
 >
 >
