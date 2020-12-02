@@ -10,23 +10,26 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
 
-# Mejoras en la traducción{#translation-enhancements}
+# Mejoras de traducción{#translation-enhancements}
 
-Esta página presenta mejoras y mejoras incrementales en las capacidades de administración de traducción de AEM.
+Esta página presenta mejoras y mejoras incrementales en las capacidades de administración de AEM traducción.
 
 ## Automatización del proyecto de traducción {#translation-project-automation}
 
 Se han agregado opciones para mejorar la productividad trabajando con proyectos de traducción, como promover y eliminar automáticamente lanzamientos de traducción y programar la ejecución recurrente de un proyecto de traducción.
 
-1. En el proyecto de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del mosaico Resumen **de** traducción.
+1. En el proyecto de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del mosaico **Resumen de traducción**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Cambie a la ficha **Avanzado** . En la parte inferior, puede seleccionar Promocionar **automáticamente inicios** de traducción.
+1. Cambie a la ficha **Avanzado**. En la parte inferior, puede seleccionar **Promocionar automáticamente inicios de traducción**.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -38,23 +41,23 @@ Se han agregado opciones para mejorar la productividad trabajando con proyectos 
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
-## Proyectos de traducción multilingües {#multilingual-translation-projects}
+## Proyectos de traducción multilingüe {#multilingual-translation-projects}
 
-Es posible configurar varios idiomas de destino en un proyecto de traducción, para reducir el número total de proyectos de traducción creados.
+Es posible configurar varios idiomas de destinatario en un proyecto de traducción, para reducir el número total de proyectos de traducción creados.
 
-1. En el proyecto de traducción, toque o haga clic en los puntos de la parte inferior del mosaico Resumen **de** traducción.
+1. En el proyecto de traducción, toque o haga clic en los puntos en la parte inferior del mosaico **Resumen de traducción**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Cambie a la ficha **Avanzado** . Puede agregar varios idiomas en Idioma **de** destino.
+1. Cambie a la ficha **Avanzado**. Puede agregar varios idiomas en **Idioma de Destinatario**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
-1. Como alternativa, si está iniciando la traducción mediante el carril de referencias en Sitios, agregue sus idiomas y seleccione **Crear proyecto** de traducción en varios idiomas.
+1. Como alternativa, si está iniciando la traducción mediante el carril de referencias en Sitios, agregue sus idiomas y seleccione **Crear proyecto de traducción en varios idiomas**.
 
    ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
-1. Los trabajos de traducción se crearán en el proyecto para cada idioma de destino. Pueden iniciarse una por una dentro del proyecto o de una vez ejecutando el proyecto de forma global en Administración de proyectos.
+1. Los trabajos de traducción se crearán en el proyecto para cada idioma de destinatario. Pueden iniciarse una por una dentro del proyecto o de una vez ejecutando el proyecto de forma global en Administración de proyectos.
 
    ![screen_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
 
@@ -62,21 +65,21 @@ Es posible configurar varios idiomas de destino en un proyecto de traducción, p
 
 Las ediciones manuales del contenido traducido se pueden sincronizar con el sistema de administración de traducciones (TMS) para capacitar su memoria de traducción.
 
-1. Desde la consola Sitios, después de actualizar el contenido de texto en una página traducida, seleccione **Actualizar memoria** de traducción.
+1. Desde la consola Sitios, después de actualizar el contenido de texto en una página traducida, seleccione **Actualizar la memoria de traducción**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Una vista de lista muestra una comparación paralela del origen y la traducción para cada componente de texto que se editó. Seleccione qué actualizaciones de traducción deben sincronizarse con la memoria de traducción y seleccione **Actualizar memoria**.
+1. Una vista de lista muestra una comparación paralela del origen y la traducción de cada componente de texto que se editó. Seleccione qué actualizaciones de traducción deben sincronizarse con la memoria de traducción y seleccione **Actualizar memoria**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
    >[!NOTE]
    >
-   >AEM devolverá las cadenas seleccionadas al sistema de administración de traducciones.
+   >AEM las cadenas seleccionadas se enviarán de vuelta al Sistema de administración de traducción.
 
 ## Copias de idioma en varios niveles {#language-copies-on-multiple-levels}
 
-Las raíces de idioma ahora pueden agruparse bajo nodos, por ejemplo por región, mientras se siguen reconociendo como raíces de las copias de idioma.
+Las raíces de idioma ahora se pueden agrupar en nodos, por ejemplo por región, mientras que se siguen reconociendo como raíces de las copias de idioma.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 
@@ -86,27 +89,28 @@ Las raíces de idioma ahora pueden agruparse bajo nodos, por ejemplo por región
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
+
 >
 >
-Esta copia de idioma no se detectará porque está a 2 niveles (América/Centroamérica) lejos del `es` `en` nodo.
+Esta copia de `es` idioma no se detectará porque está a 2 niveles (América/Centroamérica) lejos del nodo `en`.
 
 >[!NOTE]
 >
->Las raíces de idioma pueden tener cualquier nombre de página, en lugar de sólo el código ISO del idioma. AEM siempre comprobará primero la ruta y el nombre, pero si el nombre de la página no identifica un idioma, AEM comprobará la identificación del idioma en la propiedad cq:language de la página.
+>Las raíces de idioma pueden tener cualquier nombre de página, en lugar de sólo el código ISO del idioma. AEM siempre comprobará primero la ruta y el nombre, pero si el nombre de la página no identifica un idioma, AEM comprobará la propiedad cq:language de la página para la identificación del idioma.
 
-## Informes de estado de traducción {#translation-status-reporting}
+## Sistema de informes de estado de traducción {#translation-status-reporting}
 
-Ahora se puede seleccionar una propiedad en la vista de lista Sitios que muestra si una página se ha traducido, se está traduciendo o no se ha traducido. Para mostrarlo:
+Ahora se puede seleccionar una propiedad en la vista de lista Sitios que muestre si una página se ha traducido, se está traduciendo o no se ha traducido aún. Para mostrarlo:
 
-1. En Sitios, cambie a Vista **de lista.**
+1. En Sitios, cambie a **Vista de Lista.**
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Toque o haga clic en **Ver configuración**.
+1. Toque o haga clic en **Configuración de Vista**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Marque la casilla **Traducida** en **Traducción** y toque o haga clic en **Actualizar**.
+1. Marque la casilla **Traducida** en **Traducción** y toque/haga clic en **Actualizar**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
