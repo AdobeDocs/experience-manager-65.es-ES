@@ -29,41 +29,41 @@ La segmentación es una consideración clave al crear una campaña. Consulte [Ad
 
 En función de la información que ya haya recopilado sobre los visitantes del sitio y los objetivos que desee alcanzar, deberá definir los segmentos y estrategias necesarios para el contenido objetivo.
 
-Estos segmentos se utilizan para proporcionar un visitante con contenido dirigido específicamente. Este contenido se mantiene en la sección [Personalización](/help/sites-authoring/personalization.md) del sitio web. [Las actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
+Estos segmentos se utilizan para proporcionar un visitante con contenido dirigido específicamente. Este contenido se mantiene en la sección [Personalización](/help/sites-authoring/personalization.md) del sitio web. [Las ](/help/sites-authoring/activitylib.md) actividades definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
 AEM le permite personalizar fácilmente la experiencia de sus usuarios. También le permite verificar los resultados de las definiciones de segmentos.
 
 ## Acceso a segmentos {#accessing-segments}
 
-La consola [Audiencias](/help/sites-authoring/managing-audiences.md) se utiliza para administrar segmentos para ContextHub o Client Context, así como audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para los segmentos [](/help/sites-administering/campaign-segmentation.md) de ClientContext y de Adobe Target, consulte la documentación pertinente.
+La consola [Audiencias](/help/sites-authoring/managing-audiences.md) se utiliza para administrar segmentos para ContextHub o Client Context, así como audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
 
 Para acceder a los segmentos, en la navegación global seleccione **Navegación > Personalización > Audiencias**.
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![chlimage_1-311](assets/chlimage_1-310.png)
 
 ## Editor de segmentos {#segment-editor}
 
-El Editor **** de segmentos le permite modificar fácilmente un segmento. Para editar un segmento, seleccione un segmento en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en el botón **Editar** .
+El **Editor de segmentos** permite modificar fácilmente un segmento. Para editar un segmento, seleccione un segmento en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en el botón **Editar**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
-Con el navegador de componentes, puede agregar contenedores **Y** y **O** para definir la lógica del segmento, luego agregar componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) para definir el escenario exacto para seleccionar el segmento.
+Con el navegador de componentes puede agregar contenedores **AND** y **OR** para definir la lógica del segmento, luego agregar componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) para definir el escenario exacto para seleccionar el segmento.
 
-Cuando toda la instrucción se evalúa como true, el segmento se ha resuelto. En el evento de que se apliquen varios segmentos, también se utiliza el factor de **ampliación** . Consulte [Creación de un nuevo segmento](#creating-a-new-segment) para obtener más información sobre el factor de [ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Cuando toda la instrucción se evalúa como true, el segmento se ha resuelto. En el evento de que se apliquen varios segmentos, también se utiliza el factor **Ampliación**. Consulte [Creación de un nuevo segmento](#creating-a-new-segment) para obtener más información sobre el [factor de ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
 >El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al segmento A. Debe asegurarse de que los segmentos no contengan referencias circulares.
 
-### Containers {#containers}
+### Contenedores {#containers}
 
-Los siguientes contenedores están disponibles de forma predeterminada y permiten agrupar comparaciones y referencias para la evaluación booleana. Se pueden arrastrar del navegador de componentes al editor. Consulte la siguiente sección [Uso de los Contenedores](/help/sites-administering/segmentation.md#using-and-and-or-containers) Y y O para obtener más información.
+Los siguientes contenedores están disponibles de forma predeterminada y permiten agrupar comparaciones y referencias para la evaluación booleana. Se pueden arrastrar del navegador de componentes al editor. Consulte la siguiente sección [Uso de los Contenedores Y y O](/help/sites-administering/segmentation.md#using-and-and-or-containers) para obtener más información.
 
 <table>
  <tbody>
   <tr>
    <td>Contenedor Y<br /> </td>
-   <td>Operador Y booleano<br /> </td>
+   <td>El operador booleano AND<br /> </td>
   </tr>
   <tr>
    <td>Contenedor O<br /> </td>
@@ -79,7 +79,7 @@ Las siguientes comparaciones de segmentos están disponibles de forma predetermi
 <table>
  <tbody>
   <tr>
-   <td>Propiedad-Valor<br /> </td>
+   <td>Property-Value<br /> </td>
    <td>Compara una propiedad de un almacén con un valor definido<br /> </td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ Las siguientes comparaciones de segmentos están disponibles de forma predetermi
   </tr>
   <tr>
    <td>Referencia de propiedad-segmento</td>
-   <td>Compara una propiedad de un almacén con otro segmento al que se hace referencia<br /> </td>
+   <td>Compara una propiedad de una tienda con otro segmento al que se hace referencia<br /> </td>
   </tr>
   <tr>
    <td>Referencia de secuencias de comandos de propiedad</td>
@@ -107,9 +107,9 @@ Las siguientes comparaciones de segmentos están disponibles de forma predetermi
 >
 >`null < 30 // will return true`
 >
->Por lo tanto, al [crear un segmento](/help/sites-administering/segmentation.md#creating-a-new-segment), debe seleccionar un tipo **de** datos siempre que se conozcan los tipos de valores comparados. Por ejemplo:
+>Por lo tanto, cuando [cree un segmento](/help/sites-administering/segmentation.md#creating-a-new-segment), debe seleccionar un **tipo de datos** siempre que se conozcan los tipos de valores comparados. Por ejemplo:
 >
->Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado será **número**, por lo que incluso si no `profile/age` se establece, una comparación `profile/age` menor que 30 devolverá **falso**, como es de esperar.
+>Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado será **número**, por lo que incluso si `profile/age` no está establecido, una comparación `profile/age` menor que 30 devolverá **false**, como es de esperar.
 
 ### Referencias {#references}
 
@@ -123,39 +123,39 @@ Las siguientes referencias están disponibles de forma predeterminada para vincu
   </tr>
   <tr>
    <td>Referencia de script</td>
-   <td>Evalúe la secuencia de comandos a la que se hace referencia. Consulte la siguiente sección <a href="/help/sites-administering/segmentation.md#using-script-references">Uso de referencias</a> de secuencias de comandos para obtener más información.</td>
+   <td>Evalúe la secuencia de comandos a la que se hace referencia. Consulte la siguiente sección <a href="/help/sites-administering/segmentation.md#using-script-references">Uso de referencias de script</a> para obtener más información.</td>
   </tr>
  </tbody>
 </table>
 
-## Creating a New Segment {#creating-a-new-segment}
+## Creación de un nuevo segmento {#creating-a-new-segment}
 
 Para definir el nuevo segmento:
 
-1. Después de [acceder a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue a la carpeta](#organizing-segments) en la que desee crear el segmento o déjelo en la raíz.
+1. Después de [acceder a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue a la carpeta](#organizing-segments) donde desee crear el segmento o déjelo en la raíz.
 
-1. toque o haga clic en el botón Crear y seleccione **Crear segmento** de ContextHub.
+1. toque o haga clic en el botón Crear y seleccione **Crear segmento de ContextHub**.
 
-   ![chlimage_1-310](assets/chlimage_1-311.png)
+   ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. En el **nuevo segmento** de ContextHub, escriba un título para el segmento, así como un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
+1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento, así como un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
    Cada segmento tiene un parámetro de ampliación que se utiliza como factor de ponderación. Un número mayor indica que el segmento se seleccionará en lugar de un segmento con un número menor en las instancias en las que varios segmentos son válidos.
 
-   * Minimum value: `0`
-   * Maximum value: `1000000`
+   * Valor mínimo: `0`
+   * Valor máximo: `1000000`
 
 1. Arrastre una comparación o referencia al editor de segmentos que aparecerá en el contenedor Y predeterminado.
 1. Haga clic con el doble o toque la opción de configuración de la nueva referencia o segmento para editar los parámetros específicos. En este ejemplo, estamos probando personas en San José.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
-   Configure siempre un tipo **de** datos si es posible para asegurarse de que las comparaciones se evalúan correctamente. Consulte [Comparaciones](/help/sites-administering/segmentation.md#comparisons) para obtener más información.
+   Siempre configure un **Tipo de datos** si es posible, para asegurarse de que las comparaciones se evalúen correctamente. Consulte [Comparaciones](/help/sites-administering/segmentation.md#comparisons) para obtener más información.
 
-1. Click **OK** to save your definition:
-1. Agregue más componentes según sea necesario. Puede formular expresiones booleanas utilizando los componentes de contenedor para las comparaciones Y y O (consulte [Uso de Contenedores](/help/sites-administering/segmentation.md#using-and-and-or-containers) Y y O más adelante). Con el editor de segmentos puede eliminar componentes que ya no se necesitan o arrastrarlos a nuevas posiciones dentro de la instrucción.
+1. Haga clic en **Aceptar** para guardar la definición:
+1. Agregue más componentes según sea necesario. Puede formular expresiones booleanas utilizando los componentes de contenedor para las comparaciones Y y O (consulte [Uso de Y y O Contenedores](/help/sites-administering/segmentation.md#using-and-and-or-containers) más adelante). Con el editor de segmentos puede eliminar componentes que ya no se necesitan o arrastrarlos a nuevas posiciones dentro de la instrucción.
 
 ### Uso de Contenedores Y y O {#using-and-and-or-containers}
 
@@ -182,7 +182,7 @@ Mediante el componente Referencia de secuencia de comandos, la evaluación de un
 
 #### Definición de una secuencia de comandos para referencia {#defining-a-script-to-reference}
 
-1. Añadir archivo a `contexthub.segment-engine.scripts` clientlib.
+1. Añada el archivo a `contexthub.segment-engine.scripts` clientlib.
 1. Implemente una función que devuelva un valor. Por ejemplo:
 
    ```
@@ -216,23 +216,23 @@ Mediante el componente Referencia de secuencia de comandos, la evaluación de un
 
 1. Registre la secuencia de comandos con `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Si la secuencia de comandos depende de propiedades adicionales, la secuencia de comandos debe llamar `this.dependOn()`. Por ejemplo, si la secuencia de comandos depende de `profile/age`:
+Si la secuencia de comandos depende de propiedades adicionales, la secuencia de comandos debe llamar a `this.dependOn()`. Por ejemplo, si la secuencia de comandos depende de `profile/age`:
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 ```
 
-#### Referencia a un script {#referencing-a-script}
+#### Referencia a una secuencia de comandos {#referencing-a-script}
 
 1. Cree un segmento de ContextHub.
-1. Añada el componente Referencia **de** secuencia de comandos en el lugar deseado del segmento.
-1. Abra el cuadro de diálogo de edición del componente Referencia **de** secuencia de comandos. Si está [correctamente configurado](/help/sites-administering/segmentation.md#defining-a-script-to-reference), la secuencia de comandos debe estar disponible en la lista desplegable de nombres **de** secuencia de comandos.
+1. Añada el componente **Referencia de secuencia de comandos** en el lugar deseado del segmento.
+1. Abra el cuadro de diálogo de edición del componente **Referencia de secuencia de comandos**. Si [está configurado correctamente](/help/sites-administering/segmentation.md#defining-a-script-to-reference), la secuencia de comandos debe estar disponible en la lista desplegable **Nombre de la secuencia de comandos**.
 
 ## Organización de segmentos {#organizing-segments}
 
 Si tiene muchos segmentos, pueden resultar difíciles de administrar como una lista plana. En estos casos, puede resultar útil crear carpetas para administrar los segmentos.
 
-### Create a New Folder {#create-folder}
+### Crear una nueva carpeta {#create-folder}
 
 1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en el botón **Crear** y seleccione **Carpeta**.
 
@@ -240,8 +240,8 @@ Si tiene muchos segmentos, pueden resultar difíciles de administrar como una li
 
 1. Proporcione un **Título** y un **Nombre** para la carpeta.
    * El **Título** debe ser descriptivo.
-   * El **nombre** se convertirá en el nombre del nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las convenciones de nombres [AEM.](/help/sites-developing/naming-conventions.md)
+   * El **Nombre** se convertirá en el nombre del nodo en el repositorio.
+      * Se generará automáticamente en función del título y se ajustará en función de [convenciones de nombres de AEM.](/help/sites-developing/naming-conventions.md)
       * Puede ajustarse si es necesario.
 
    ![Crear carpeta](assets/contexthub-create-folder.png)
@@ -263,7 +263,7 @@ Si tiene muchos segmentos, pueden resultar difíciles de administrar como una li
 
 1. Toque o haga clic en **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
 
-1. Proporcione un nuevo título **de** carpeta y toque o haga clic en **Guardar**.
+1. Proporcione un nuevo **Título de la carpeta** y toque o haga clic en **Guardar**.
 
    ![Cambiar el nombre de la carpeta](assets/contexthub-rename-folder.png)
 
@@ -299,7 +299,7 @@ Si tiene muchos segmentos, pueden resultar difíciles de administrar como una li
 
 ## Prueba de la aplicación de un segmento {#testing-the-application-of-a-segment}
 
-Una vez definido el segmento, los posibles resultados se pueden probar con la ayuda de **[ContextHub](/help/sites-authoring/ch-previewing.md).**
+Una vez definido el segmento, los resultados potenciales se pueden probar con la ayuda de **[ContextHub](/help/sites-authoring/ch-previewing.md).**
 
 1. Previsualización de una página
 1. Haga clic en el icono de ContextHub para mostrar la barra de herramientas de ContextHub
@@ -318,9 +318,9 @@ O si no se resuelve:
 >
 >Todas las características se resuelven inmediatamente, aunque la mayoría solo cambia al volver a cargar la página.
 
-Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido de destino y **Actividades** y **experiencias** relacionadas.
+Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido dirigido y **Actividades** y **Experiencias** relacionadas.
 
-Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento de grupo de edad principal anterior, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad, consulte la [documentación relacionada con la creación de contenido](/help/sites-authoring/content-targeting-touch.md)de destino.
+Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento de grupo de edad principal anterior, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad, consulte la [documentación relacionada sobre la creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
 1. En el modo de edición de una página en la que haya configurado contenido de destino, puede ver que el contenido se dirige mediante un icono de flecha en el contenido.
 
@@ -336,4 +336,4 @@ Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento 
 
 ## Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan para dirigir el contenido real que ven audiencias de destinatario específicas. Consulte [Administración de Audiencias](/help/sites-authoring/managing-audiences.md) para obtener más información sobre audiencias y segmentos y [Creación de contenido](/help/sites-authoring/content-targeting-touch.md) de destino sobre el uso de audiencias y segmentos para destinatario de contenido.
+Los segmentos se utilizan para dirigir el contenido real que ven audiencias de destinatario específicas. Consulte [Administración de Audiencias](/help/sites-authoring/managing-audiences.md) para obtener más información sobre audiencias y segmentos y [Creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md) sobre el uso de audiencias y segmentos para contenido de destinatario.
