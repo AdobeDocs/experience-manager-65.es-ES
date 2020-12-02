@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +24,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->In the following tables, for the key combinations in the **Shortcut** column, both Ctrl and Command keys work on macOS.
+>En las siguientes tablas, para las combinaciones de teclas de la columna **Método abreviado**, las teclas Ctrl y Comando funcionan en macOS.
 
 >[!NOTE]
 >
@@ -29,11 +32,12 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 >
 >* Windows: Ctrl + clic en los componentes necesarios.
 >* Mac: Cmd + clic en los componentes necesarios.
+
 >
 
 
 
-## Editar métodos abreviados del teclado {#editing-keyboard-shortcuts}
+## Editar métodos abreviados de teclado {#editing-keyboard-shortcuts}
 
 <table>
  <tbody>
@@ -166,7 +170,7 @@ Existen otros métodos abreviados del teclado para los desarrolladores de escrit
   </tr>
   <tr>
    <td>Modo de edición</td>
-   <td><br /> Defina el sufijo siguiente en la URL: <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Establezca el siguiente sufijo en la dirección URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Para ver estadísticas de tiempo para la carga de páginas.</td>
   </tr>
  </tbody>
