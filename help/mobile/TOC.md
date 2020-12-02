@@ -17,7 +17,7 @@ ht-degree: 11%
 # Guía del usuario de AEM 6.5 Mobile {#mobile}
 
 + [Introducción a la Guía del usuario móvil](home.md)
-+ Introduction to AEM Mobile {#introduction}
++ Introducción a AEM Mobile {#introduction}
    + [Introducción a AEM Mobile](getting-started-aem-mobile.md)
    + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [Aplicaciones móviles](mobile-apps.md)
@@ -34,7 +34,7 @@ ht-degree: 11%
    + [Carga de recursos compartidos](mobile-on-demand-shared-resources.md)
    + [Configuración de nube](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Administración de pancartas](mobile-on-demand-managing-banners.md)
-+ Desarrollo de una aplicación de servicios bajo demanda {#developing}
++ Desarrollo de la aplicación de servicios bajo demanda {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [Plantillas y componentes de aplicación](app-templates-and-components1.md)
    + [Propiedades y nodos de contenido](content-properties.md)
