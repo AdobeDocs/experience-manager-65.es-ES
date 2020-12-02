@@ -1,8 +1,8 @@
 ---
 title: Eliminación de sitios de Geometrixx
 seo-title: Eliminación de sitios de Geometrixx
-description: Aprenda a eliminar el contenido de ejemplo de Geometrixx.
-seo-description: Aprenda a eliminar el contenido de ejemplo de Geometrixx.
+description: Obtenga información sobre cómo eliminar el contenido de muestra de Geometrixx.
+seo-description: Obtenga información sobre cómo eliminar el contenido de muestra de Geometrixx.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,16 @@ content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
 
 # Eliminación de sitios de Geometrixx{#removing-the-geometrixx-sites}
 
-AEM incluye un conjunto de sitios web de ejemplo de Geometrixx. Puede eliminar este contenido de muestra a través del Administrador **de paquetes**.
+AEM incluye un conjunto de sitios web de muestra de Geometrixx. Puede eliminar este contenido de muestra a través del **Administrador de paquetes**.
 
 Los paquetes individuales relacionados con geometrixx son:
 
@@ -36,7 +39,7 @@ También hay un súper paquete:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Este paquete incluye todos los paquetes individuales anteriores. Para eliminar todo el contenido relacionado con geometrixx a la vez, haga clic en **Desinstalar** en este paquete. El super-paquete pasará al estado desinstalado, y todos los paquetes individuales desaparecerán de la vista del administrador de paquetes.
+Este paquete incluye todos los paquetes individuales anteriores. Para eliminar todo el contenido relacionado con geometrixx a la vez, haga clic en **Desinstalar** en este paquete. El súper-paquete pasará al estado desinstalado, y todos los paquetes individuales desaparecerán de la vista del administrador de paquetes.
 
 Ahora tiene una instancia de AEM &quot;vacía&quot; sin ningún sitio de demostración.
 
