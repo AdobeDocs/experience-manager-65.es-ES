@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +27,11 @@ Las API de Java y Javascript permiten internacionalizar cadenas en los siguiente
 * Javascript en bibliotecas del lado del cliente o en el origen de la página.
 * Valores de propiedad de nodo JCR utilizados en cuadros de diálogo y propiedades de configuración de componentes.
 
-Para obtener una descripción general del proceso de internacionalización y localización, consulte [Internacionalización de componentes](/help/sites-developing/i18n.md).
+Para obtener una visión general del proceso de internacionalización y localización, consulte [Internacionalización de componentes](/help/sites-developing/i18n.md).
 
 ## Internacionalización de cadenas en código Java y JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-El paquete `com.day.cq.i18n` Java le permite mostrar cadenas localizadas en la interfaz de usuario. La `I18n` clase proporciona el `get` método que recupera las cadenas localizadas del diccionario AEM. El único parámetro requerido del `get` método es el literal de cadena en inglés. El inglés es el idioma predeterminado para la interfaz de usuario. El ejemplo siguiente localiza la palabra `Search`:
+El paquete Java `com.day.cq.i18n` le permite mostrar cadenas localizadas en la interfaz de usuario. La clase `I18n` proporciona el método `get` que recupera las cadenas localizadas del diccionario de AEM. El único parámetro requerido del método `get` es el literal de cadena en inglés. El inglés es el idioma predeterminado para la interfaz de usuario. El ejemplo siguiente localiza la palabra `Search`:
 
 `i18n.get("Search");`
 
@@ -56,7 +59,7 @@ Para presentar la cadena en el idioma especificado en la cuenta de usuario, util
 I18n i18n = new I18n(slingRequest);
 ```
 
-El constructor utiliza el `SlingHTTPRequest` para recuperar la configuración de idioma del usuario.
+El constructor utiliza la `SlingHTTPRequest` para recuperar la configuración de idioma del usuario.
 
 Para utilizar la configuración regional de la página para determinar el idioma, primero debe obtener ResourceBundle para el idioma de la página solicitada:
 
@@ -68,11 +71,11 @@ I18n i18n = new I18n(resourceBundle);
 
 #### Internacionalización de una cadena {#internationalizing-a-string}
 
-Utilice el `get` método del `I18n` objeto para internacionalizar una cadena. El único parámetro requerido del `get` método es la cadena que se va a internacionalizar. La cadena corresponde con una cadena en un diccionario de traductores. El método get busca la cadena en el diccionario y devuelve la traducción del idioma actual.
+Utilice el método `get` del objeto `I18n` para internacionalizar una cadena. El único parámetro requerido del método `get` es la cadena que se va a internacionalizar. La cadena corresponde con una cadena en un diccionario de traductores. El método get busca la cadena en el diccionario y devuelve la traducción del idioma actual.
 
-El primer argumento del `get` método debe cumplir las siguientes reglas:
+El primer argumento del método `get` debe cumplir las siguientes reglas:
 
-* El valor debe ser un literal de cadena. No se puede aceptar una variable de tipo `String` .
+* El valor debe ser un literal de cadena. No se puede aceptar una variable de tipo `String`.
 * El literal de cadena debe expresarse en una sola línea.
 * La cadena distingue entre mayúsculas y minúsculas.
 
@@ -82,9 +85,9 @@ i18n.get("Enter a search keyword");
 
 #### Uso de sugerencias de traducción {#using-translation-hints}
 
-Especifique la sugerencia [de](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) traducción de la cadena internacionalizada para distinguir entre cadenas duplicadas en el diccionario. Utilice el segundo parámetro opcional del `get` método para proporcionar la sugerencia de traducción. La sugerencia de traducción debe coincidir exactamente con la propiedad Comment del elemento del diccionario.
+Especifique la [sugerencia de traducción](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) de la cadena internacionalizada para distinguir entre cadenas de duplicado en el diccionario. Utilice el segundo parámetro opcional del método `get` para proporcionar la sugerencia de traducción. La sugerencia de traducción debe coincidir exactamente con la propiedad Comment del elemento del diccionario.
 
-Por ejemplo, el diccionario contiene la cadena `Request` dos veces: una vez como verbo y otra como sustantivo. El código siguiente incluye la sugerencia de traducción como argumento en el `get` método:
+Por ejemplo, el diccionario contiene la cadena `Request` dos veces: una vez como verbo y otra como sustantivo. El código siguiente incluye la sugerencia de traducción como un argumento en el método `get`:
 
 ```java
 i18n.get("Request","A noun, as in a request for a web page");
@@ -92,19 +95,19 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Inclusión de variables en frases localizadas {#including-variables-in-localized-sentences}
 
-Incluya variables en la cadena localizada para crear un significado contextual en una frase. Por ejemplo, después de iniciar sesión en una aplicación web, la página principal muestra el mensaje &quot;Welcome back Administrator&quot; (Bienvenido administrador). Tienes 2 mensajes en tu bandeja de entrada&quot;. El contexto de página determina el nombre de usuario y el número de mensajes.
+Incluya variables en la cadena localizada para crear un significado contextual en una frase. Por ejemplo, después de iniciar sesión en una aplicación web, la página de inicio muestra el mensaje &quot;Welcome back Administrator&quot; (Bienvenido al administrador). Tienes 2 mensajes en tu bandeja de entrada&quot;. El contexto de página determina el nombre de usuario y el número de mensajes.
 
-[En el diccionario](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), las variables se representan en cadenas como índices entre corchetes. Especifique los valores de las variables como argumentos del `get` método. Los argumentos se colocan siguiendo la sugerencia de traducción y los índices se corresponden con el orden de los argumentos:
+[En el diccionario](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), las variables se representan en cadenas como índices entre corchetes. Especifique los valores de las variables como argumentos del método `get`. Los argumentos se colocan siguiendo la sugerencia de traducción y los índices se corresponden con el orden de los argumentos:
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
 ```
 
-La cadena internacionalizada y la sugerencia de traducción deben coincidir exactamente con la cadena y el comentario del diccionario. Puede omitir la sugerencia de localización proporcionando un `null` valor como segundo argumento.
+La cadena internacionalizada y la sugerencia de traducción deben coincidir exactamente con la cadena y el comentario del diccionario. Puede omitir la sugerencia de localización proporcionando un valor `null` como segundo argumento.
 
 #### Uso del método Get estático {#using-the-static-get-method}
 
-La `I18N` clase define un `get` método estático que resulta útil cuando se necesita localizar un pequeño número de cadenas. Además de los parámetros del `get` método de un objeto, el método estático requiere el `SlingHttpRequest` objeto o el `ResourceBundle` que está utilizando, según cómo esté determinando el idioma preferido del usuario:
+La clase `I18N` define un método estático `get` que resulta útil cuando necesita localizar un pequeño número de cadenas. Además de los parámetros del método `get` de un objeto, el método estático requiere el objeto `SlingHttpRequest` o el `ResourceBundle` que esté utilizando, según cómo esté determinando el idioma preferido del usuario:
 
 * Utilice la preferencia de idioma del usuario: Proporcione SlingHttpRequest como el primer parámetro.
 
@@ -115,17 +118,17 @@ La `I18N` clase define un `get` método estático que resulta útil cuando se ne
 
 ### Internacionalización de cadenas en código Javascript {#internationalizing-strings-in-javascript-code}
 
-La API de Javascript permite localizar cadenas en el cliente. Al igual que con el código [Java y JSP](#internationalizing-strings-in-java-and-jsp-code) , la API de Javascript permite identificar cadenas para localizar, proporcionar sugerencias de localización e incluir variables en las cadenas localizadas.
+La API de Javascript permite localizar cadenas en el cliente. Al igual que con el código [Java y JSP](#internationalizing-strings-in-java-and-jsp-code), la API de Javascript permite identificar cadenas para localizar, proporcionar sugerencias de localización e incluir variables en las cadenas localizadas.
 
-La carpeta `granite.utils` de biblioteca de [](/help/sites-developing/clientlibs.md) cliente proporciona la API de JavaScript. Para utilizar la API, incluya esta carpeta de la biblioteca de cliente en la página. Las funciones de localización utilizan el `Granite.I18n` espacio de nombres.
+La `granite.utils` [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md) proporciona la API de Javascript. Para utilizar la API, incluya esta carpeta de la biblioteca de cliente en la página. Las funciones de localización utilizan la Área de nombres `Granite.I18n`.
 
-Antes de presentar cadenas localizadas, debe establecer la configuración regional mediante la `Granite.I18n.setLocale` función . La función requiere el código de idioma de la configuración regional como argumento:
+Antes de presentar cadenas localizadas, debe establecer la configuración regional mediante la función `Granite.I18n.setLocale`. La función requiere el código de idioma de la configuración regional como argumento:
 
 ```
 Granite.I18n.setLocale("fr");
 ```
 
-Para presentar una cadena localizada, utilice la `Granite.I18n.get` función:
+Para presentar una cadena localizada, utilice la función `Granite.I18n.get`:
 
 ```
 Granite.I18n.get("string to localize");
@@ -153,9 +156,9 @@ Granite.I18n.get("Welcome back {0}. You have {1} new messages in your inbox.", [
 
 ### Internacionalización de cadenas de nodos JCR {#internationalizing-strings-from-jcr-nodes}
 
-Las cadenas de interfaz de usuario suelen basarse en propiedades de nodo JCR. Por ejemplo, la `jcr:title` propiedad de una página generalmente se utiliza como contenido del `h1` elemento en el código de la página. La `I18n` clase proporciona el `getVar` método para localizar estas cadenas.
+Las cadenas de interfaz de usuario suelen basarse en propiedades de nodo JCR. Por ejemplo: la propiedad `jcr:title` de una página generalmente se usa como contenido del elemento `h1` en el código de la página. La clase `I18n` proporciona el método `getVar` para localizar estas cadenas.
 
-En el siguiente ejemplo, la secuencia de comandos JSP recupera la `jcr:title` propiedad del repositorio y muestra la cadena localizada en la página:
+El siguiente ejemplo de secuencia de comandos JSP recupera la propiedad `jcr:title` del repositorio y muestra la cadena localizada en la página:
 
 ```java
 <% title = properties.get("jcr:title", String.class);%>
@@ -164,11 +167,11 @@ En el siguiente ejemplo, la secuencia de comandos JSP recupera la `jcr:title` pr
 
 #### Especificación de sugerencias de traducción para nodos JCR {#specifying-translation-hints-for-jcr-nodes}
 
-De forma similar a las sugerencias de [traducción de la API](#using-translation-hints)de Java, puede proporcionar sugerencias de traducción para distinguir las cadenas duplicadas en el diccionario. Proporcione la sugerencia de traducción como una propiedad del nodo que contiene la propiedad internacionalizada. El nombre de la propiedad de sugerencia está compuesto por el nombre de la propiedad internacionalizada con el `_commentI18n` sufijo:
+De forma similar a [sugerencias de traducción en la API de Java](#using-translation-hints), puede proporcionar sugerencias de traducción para distinguir las cadenas de duplicado en el diccionario. Proporcione la sugerencia de traducción como una propiedad del nodo que contiene la propiedad internacionalizada. El nombre de la propiedad de sugerencia está compuesto por el nombre de la propiedad internacionalizada con el sufijo `_commentI18n`:
 
 `${prop}_commentI18n`
 
-Por ejemplo, un `cq:page` nodo incluye la propiedad jcr:title que se está localizando. La sugerencia se proporciona como el valor de la propiedad denominada jcr:title_commentI18n.
+Por ejemplo, un nodo `cq:page` incluye la propiedad jcr:title que se está localizando. La sugerencia se proporciona como el valor de la propiedad denominada jcr:title_commentI18n.
 
 ### Prueba de cobertura de internacionalización {#testing-internationalization-coverage}
 
@@ -176,7 +179,7 @@ Compruebe si ha internacionalizado todas las cadenas de la interfaz de usuario. 
 
 `USR_*Default-String*_尠`
 
-La siguiente imagen muestra la traducción de código auxiliar de la página de inicio de AEM:
+La siguiente imagen muestra la traducción de stub para la página de inicio AEM:
 
 ![chlimage_1](assets/chlimage_1a.jpeg)
 
