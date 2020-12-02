@@ -34,7 +34,7 @@ Forms Portal le permite utilizar metadatos personalizados en los listados de for
 
 Siga estos pasos para crear una plantilla personalizada para varios componentes de Forms Portal.
 
-## Creating a custom template {#creating-a-nbsp-custom-template}
+## Creación de una plantilla personalizada {#creating-a-nbsp-custom-template}
 
 1. Creación de un nodo sling:Folder en /apps
 
@@ -89,11 +89,11 @@ Forms Portal proporciona una sintaxis para que los marcadores de posición muest
 
 Para incluir una entrada repetible, configure el valor del atributo **data-repetible** en **true**.
 
-*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. La primera, con la clase CSS &quot;__FP_boxes-contenedor&quot;, funciona como un elemento de contenedor para los formularios que se muestran. El segundo, con la clase CSS &quot;__FP_boxes&quot;, es una plantilla para las entidades básicas, en este caso un formulario. El atributo **de datos repetitivos**presente en el elemento Div tiene el valor **true**.*
+*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. La primera, con la clase CSS &quot;__FP_boxes-contenedor&quot;, funciona como un elemento de contenedor para los formularios que se muestran. El segundo, con la clase CSS &quot;__FP_boxes&quot;, es una plantilla para las entidades básicas, en este caso un formulario. El atributo **repetible de datos**presente en el elemento Div tiene el valor **true**.*
 
-Cada marcador de posición tiene un conjunto exclusivo de metadatos OTB. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la propiedad **** ${metadata_prop} al lugar.
+Cada marcador de posición tiene un conjunto exclusivo de metadatos OTB. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la propiedad **${metadata_prop}** en el lugar.
 
-*En el ejemplo, la propiedad metadata se utiliza en varias instancias. Por ejemplo, se utiliza en **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**********, pdfStyle y path de la manera prescrita.*
+*En el ejemplo, la propiedad metadata se utiliza en varias instancias. Por ejemplo, se utiliza en **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**y &lt;a11. 2/>path **de la manera prescrita.***
 
 ## Metadatos predeterminados {#out-of-the-box-metadata}
 
@@ -106,9 +106,9 @@ Varios componentes de Forms Portal proporcionan conjuntos exclusivos de metadato
 * **descripción**: Descripción del formulario
 * **formUrl**: URL para procesar el formulario como HTML
 * **pdfUrl**: URL para procesar el formulario como PDF
-* **assetType**: Tipo del recurso. Los valores válidos son **Formulario**, Formulario **PDF**, **Imprimir formulario** y Formulario **adaptable**
+* **assetType**: Tipo del recurso. Los valores válidos incluyen **Formulario**,**Formulario PDF**, **Formulario de impresión** y **Formulario adaptable**
 
-* **htmlStyle** y **pdfStyle**: Estilo de visualización para los iconos HTML y PDF, respectivamente, utilizados para la representación. Los valores válidos son &quot;**__FP_display_none**&quot; o en blanco.
+* **htmlStyle** y  **pdfStyle**: Estilo de visualización para los iconos HTML y PDF, respectivamente, utilizados para la representación. Los valores válidos son &quot;**__FP_display_none**&quot; o blank.
 
 >[!NOTE]
 >
@@ -118,13 +118,13 @@ Varios componentes de Forms Portal proporcionan conjuntos exclusivos de metadato
 
 Compatibilidad con la localización, clasificación y uso de las propiedades de configuración en la interfaz de usuario (solo Search &amp; Lister):
 
-1. **Compatibilidad** con Localizaciones: Para localizar cualquier texto estático, utilice el atributo `${localize-YOUR_TEXT}` y haga que el valor localizado esté disponible, si no existe ya.
-   *En el ejemplo analizado, los atributos`${localize-Apply}`y`${localize-Download}`se utilizan para localizar el texto Aplicar y Descargar.*
+1. **Compatibilidad** con localizaciones: Para localizar cualquier texto estático, utilice el atributo  `${localize-YOUR_TEXT}` y haga que el valor localizado esté disponible, si no existe ya.
+   *En el ejemplo analizado, los atributos  `${localize-Apply}` y  `${localize-Download}` se utilizan para localizar el texto Aplicar y Descargar.*
 
 1. **Compatibilidad con la ordenación**: Haga clic en el elemento HTML para ordenar los resultados de búsqueda. Para implementar la ordenación en un diseño tabulado, agregue el atributo &quot;data-sortKey&quot; en el encabezado de tabla concreto. Además, añada su valor como metadatos para los que desea ordenar.
 Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, el valor del encabezado &quot;data-sortKey&quot; es &quot;título&quot;. Haga clic en el encabezado para ordenar los valores de una columna en particular.
 
-1. **Uso de las propiedades** de configuración: El componente Búsqueda y listado tiene varias configuraciones que puede utilizar en la interfaz de usuario. Por ejemplo, para mostrar texto de información sobre herramientas HTML guardado a través del cuadro de diálogo de edición, utilice el `${config-htmlLinkText}` atributo . **Del mismo modo, para el texto de información del objeto PDF, utilice el** `${config-pdfLinkText}` atributo .
+1. **Uso de las propiedades** de configuración: El componente Búsqueda y listado tiene varias configuraciones que puede utilizar en la interfaz de usuario. Por ejemplo, para mostrar texto de información sobre herramientas HTML guardado a través del cuadro de diálogo de edición, utilice el atributo `${config-htmlLinkText}`. **Del mismo modo, para el texto de información del objeto PDF, utilice** `${config-pdfLinkText}` el atributo .
 
 ### Componente de vínculo {#link-component}
 
@@ -143,7 +143,7 @@ Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, 
 * **submitID**: ID del envío que se muestra (se utiliza solo en la plantilla de la sección Envío).
 * **estado**: Estado del formulario enviado. (Se utiliza solo en la plantilla de la sección Envío).
 * **descripción**: Descripción del formulario adaptable asociado con el borrador o el envío.
-* **diffTime**: Diferencia entre la hora actual y la última acción de guardar del borrador. Alternativamente, diferencia entre la hora actual y la última acción de envío para el envío.
+* **diffTime**: Diferencia entre la hora actual y la última acción de guardar del borrador. Alternativamente, la diferencia entre la hora actual y la última acción de envío para el envío.
 * **iconClass**: Clase CSS utilizada para mostrar la primera letra del borrador/envío. Forms Portal incluye las siguientes clases, que proporcionan distintos fondos de color.
 * **propietario**: Usuario que creó el borrador/envío.
 * **Hoy**: Fecha de creación del borrador o envío en formato DD:MM:AAAA.
@@ -157,11 +157,11 @@ Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, 
 
 ![Nodo Borradores y envío](assets/raw-image-with-index.png)
 
-**A**. Elemento Contenedor
+**A**. Elemento contenedor
 
-**B.** metadatos de &quot;ruta&quot; con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
+**B.**  Metadatos de &quot;ruta&quot; con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
 
-**C.** Atributo repetible de datos utilizado para la sección de plantilla para cada formulario
+**C.Atributo** repetible de datos utilizado para la sección de plantilla para cada formulario
 
 **D.** Para localizar la cadena &quot;Aplicar&quot;
 
@@ -172,9 +172,9 @@ Por ejemplo, para el encabezado &quot;Título&quot; en la vista de cuadrícula, 
 ## Sugerencias, trucos y problemas conocidos {#tips-tricks-and-known-issues}
 
 1. No utilice comillas simples (&#39;) en ninguna plantilla personalizada.
-1. Para metadatos personalizados, almacene esta propiedad únicamente en el nodo **jcr:content/metadata** . Si lo almacena en cualquier otro lugar, Forms Portal no puede mostrar los metadatos.
+1. Para metadatos personalizados, almacene esta propiedad solo en el nodo **jcr:content/metadata**. Si lo almacena en cualquier otro lugar, Forms Portal no puede mostrar los metadatos.
 1. Asegúrese de que el nombre de los metadatos personalizados o los metadatos existentes no incluya dos puntos ( : ). Si lo hace, no puede mostrarlo en la interfaz de usuario.
-1. **los datos repetibles** no tienen importancia para un componente **de vínculo** . Adobe recomienda evitar el uso de esta propiedad en la plantilla de un componente de vínculo.
+1. **los datos** repetitivos no tienen importancia para un  **** componente de Linkcomponent. Adobe recomienda evitar el uso de esta propiedad en la plantilla de un componente de vínculo.
 
 ## Artículos relacionados
 
