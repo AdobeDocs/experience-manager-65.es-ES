@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 9%
 
 ---
 
 
 # Descripción de los componentes reutilizables {#description-of-reusable-components}
 
-El espacio de trabajo de AEM Forms se compone de componentes [reutilizables](/help/forms/using/integrating-html-ws-components-web.md) que están organizados en una estructura [de](/help/forms/using/folder-structure.md) carpetas específica de CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias de JavaScript™ en otros archivos de componentes, eventos escuchados por el componente y objetos JavaScript que activan estos eventos en el espacio de trabajo de AEM Forms. Aquí se proporciona la lista completa de los componentes reutilizables con nombres de archivo constituyentes y dependencias.
+El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizables](/help/forms/using/integrating-html-ws-components-web.md) que están organizados en una [estructura de carpetas](/help/forms/using/folder-structure.md) específica en CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias de JavaScript™ en otros archivos de componentes, eventos escuchados por el componente y objetos de JavaScript que activan estos eventos en el espacio de trabajo de AEM Forms. Aquí se proporciona la lista completa de los componentes reutilizables con nombres de archivo constituyentes y dependencias.
 
-## ListaDeTareas {#tasklist}
+## TaskList {#tasklist}
 
 <table>
  <tbody>
@@ -169,7 +172,7 @@ El espacio de trabajo de AEM Forms se compone de componentes [reutilizables](/he
    <td><p>Dependencias de JS</p> </td>
    <td>
     <ul>
-     <li><p>Campo: queue: { name, qid, isDefault, type}</p> </li>
+     <li><p>Campo: cola: { name, qid, isDefault, type}</p> </li>
      <li><p>Campo: consulta: string</p> </li>
      <li><p>Campo: parentView: vista de lista de filtros</p> </li>
      <li><p>Campo: parentModel: modelo de lista de tareas</p> </li>
@@ -263,7 +266,7 @@ El espacio de trabajo de AEM Forms se compone de componentes [reutilizables](/he
 >
 >TeamFilter obtiene el evento que indica qué tarea se ha seleccionado del componente TaskList. Aunque estos componentes comparten la clase de modelo, no hay otra dependencia.
 
-## Detalles de la tarea {#taskdetails}
+## Detalles de tarea {#taskdetails}
 
 <table>
  <tbody>
@@ -734,7 +737,7 @@ El espacio de trabajo de AEM Forms se compone de componentes [reutilizables](/he
 >
 >ProcessInstanceHistory espera un evento de ProcessInstanceList que indica qué historial de instancias de proceso se va a mostrar. Además de esta dependencia, el componente se puede utilizar de forma independiente.
 
-## Fuera de la oficina {#outofoffice}
+## OutofOffice {#outofoffice}
 
 <table>
  <tbody>
