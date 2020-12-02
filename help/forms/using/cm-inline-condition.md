@@ -36,11 +36,11 @@ Para obtener más información, consulte:
 
 Para condicionalizar una frase, un párrafo o una cadena de texto en una comunicación interactiva, puede crear una regla en el fragmento de documento de texto correspondiente. En el siguiente ejemplo se utiliza una regla para mostrar un número gratuito únicamente a los destinatarios de EE.UU. de la Comunicación interactiva.
 
-Para obtener más información, consulte Crear regla en texto en [Textos en Comunicaciones](../../forms/using/texts-interactive-communications.md)interactivas.
+Para obtener más información, consulte Crear regla en texto en [Textos en comunicaciones interactivas](../../forms/using/texts-interactive-communications.md).
 
 Una vez que se incluye el fragmento de texto en una comunicación interactiva y el agente utiliza la interfaz de usuario del agente para preparar una comunicación interactiva, se evalúan los datos (modelo de datos de formulario) de los destinatarios y el texto se muestra únicamente a los destinatarios de EE.UU.
 
-### Ejemplo: Utilizar una condición en línea en una carta para representar la dirección adecuada  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Ejemplo: Usar una condición en línea en una carta para representar la dirección adecuada {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 Puede insertar una condición en línea en una letra insertando la condición en línea en el módulo de texto correspondiente. El siguiente ejemplo utiliza dos condiciones para evaluar y mostrar la dirección adecuada, Sir o Ma&#39;am, en una carta basada en el elemento DD Sexo. Con pasos similares, puede crear otras condiciones.
 
@@ -58,7 +58,7 @@ Puede insertar una condición en línea en una letra insertando la condición en
 
    >[!NOTE]
    >
-   >No se puede guardar la expresión condicional vacía o no válida. Debe haber una expresión condicional válida dentro `${}` para guardar la expresión.
+   >No se puede guardar la expresión condicional vacía o no válida. Debe haber una expresión condicional válida dentro de `${}` para guardar la expresión.
 
 1. Para crear una condición para evaluar si el texto seleccionado/condicionalizado aparece en la letra y, a continuación, toque la marca de verificación para guardar la expresión, haga lo siguiente:
 
@@ -68,7 +68,7 @@ Puede insertar una condición en línea en una letra insertando la condición en
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   Para obtener más información sobre la creación de la expresión, consulte **Creación de expresiones y funciones remotas con el creador** de expresiones en el Generador [de](../../forms/using/expression-builder.md)Expresiones. El valor especificado en la expresión debe ser compatible con el elemento del diccionario de datos. Para obtener más información, consulte Diccionario [de datos](../../forms/using/data-dictionary.md).
+   Para obtener más información sobre la creación de la expresión, consulte **Creación de expresiones y funciones remotas con el creador de expresiones** en [Generador de Expresiones](../../forms/using/expression-builder.md). El valor especificado en la expresión debe ser compatible con el elemento del diccionario de datos. Para obtener más información, consulte [Diccionario de datos](../../forms/using/data-dictionary.md).
 
    Una vez insertada la condición, puede situar el cursor sobre el controlador situado a la izquierda de la condición para vista de la condición. Puede tocar el control para vista del menú emergente de la condición, que le permite editar o eliminar la condición.
 
@@ -85,7 +85,7 @@ Puede insertar una condición en línea en una letra insertando la condición en
    * Un archivo de datos XML de ejemplo creado en función del diccionario de datos relevante al obtener una vista previa de la carta con datos de ejemplo.
    * Un archivo de datos XML adjunto al diccionario de datos correspondiente.
 
-   Para obtener más información, consulte Diccionario [de datos](../../forms/using/data-dictionary.md).
+   Para obtener más información, consulte [Diccionario de datos](../../forms/using/data-dictionary.md).
 
    ![5_letteroutput](assets/5_letteroutput.png)
 
@@ -95,7 +95,7 @@ Puede tener información dinámica en la comunicación/carta interactiva, como l
 
 Además, puede especificar una regla o condición dentro de la construcción repetida para condicionalizar la información o las entradas que se procesan en la comunicación o letra interactiva.
 
-### Ejemplo: Uso de repetir en una comunicación interactiva para dar formato, estructurar y mostrar una lista de las transacciones con tarjeta de crédito {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Ejemplo: Uso de repetir en una comunicación interactiva para dar formato, estructurar y mostrar una lista de las transacciones de tarjetas de crédito {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 En el siguiente ejemplo se muestran los pasos para usar la opción de repetición para estructurar y procesar las transacciones de tarjetas de crédito en una comunicación interactiva.
 
@@ -139,7 +139,7 @@ En el siguiente ejemplo se muestran los pasos para usar la opción de repetició
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### Ejemplo: Usar la opción de repetición en una carta para dar formato, estructurar y mostrar una lista de las transacciones con tarjeta de crédito {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Ejemplo: Usando la opción de repetir en una carta para dar formato, estructurar y mostrar una lista de las transacciones con tarjeta de crédito {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 En el siguiente ejemplo se proporcionan los pasos para utilizar la opción de repetición para estructurar y procesar las transacciones de tarjetas de crédito en una carta. Con pasos similares, puede utilizar repetir en un escenario diferente.
 
@@ -202,7 +202,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar la opción de re
    * Un archivo de datos XML de ejemplo creado en función del diccionario de datos relevante al obtener una vista previa de la carta con datos de ejemplo.
    * Un archivo de datos XML adjunto al diccionario de datos correspondiente.
 
-   Para obtener más información, consulte Diccionario [de datos](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
+   Para obtener más información, consulte [Diccionario de datos](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_reiteroutputpreview](assets/6_repeatoutputpreview.png)
 
@@ -212,7 +212,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar la opción de re
    >
    >Puede insertar una condición y repetirla solo mientras crea o edita el módulo de texto relevante. Al obtener una vista previa de la carta, aunque puede realizar modificaciones en el módulo de texto, no puede insertar condición ni repetir.
 
-## Uso de condiciones en línea y repetición - algunos casos de uso  {#using-inline-condition-and-repeat-some-use-cases}
+## Uso de condiciones en línea y repetición - algunos casos de uso {#using-inline-condition-and-repeat-some-use-cases}
 
 ### Repetir dentro de la condición {#repeat-within-condition}
 
