@@ -10,38 +10,41 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 2%
 
 ---
 
 
 # Estilo en línea de los componentes de formularios adaptables {#inline-styling-of-adaptive-form-components}
 
-Puede definir el aspecto y el estilo generales de un formulario adaptable especificando estilos mediante el editor [de](../../forms/using/themes.md)temas. Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualizar los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
+Puede definir el aspecto y el estilo generales de un formulario adaptable especificando estilos mediante [editor de temas](../../forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualización los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
 
 ## Aplicar propiedades CSS en línea {#apply-inline-css-properties}
 
 Para agregar estilos en línea a un componente:
 
-1. Abra el formulario en el editor de formularios y cambie el modo a modo de estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, toque ![lienzo-desplegable](assets/canvas-drop-down.png) > **Estilo**.
-1. Seleccione un componente en la página y toque el botón de ![edición](assets/edit-button.png). Las propiedades de estilo se abren en la barra lateral.
+1. Abra el formulario en el editor de formularios y cambie el modo a modo de estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, toque ![lista desplegable de lienzos](assets/canvas-drop-down.png) > **Estilo**.
+1. Seleccione un componente en la página y toque el botón de edición ![botón de edición](assets/edit-button.png). Las propiedades de estilo se abren en la barra lateral.
 
    También puede seleccionar componentes del árbol de jerarquía de formularios en la barra lateral. El árbol de jerarquía de formularios está disponible como objetos de formulario en la barra lateral.
 
-   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes en Objetos de formulario. Sin embargo, la lista Objetos de formulario de la barra lateral enumera componentes como campos y paneles. Los campos y paneles son componentes genéricos que pueden contener componentes como cuadro de texto y botones de opción.
+   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes en Objetos de formulario. Sin embargo, la lista Objetos de formulario en los componentes de listas laterales, como campos y paneles. Los campos y paneles son componentes genéricos que pueden contener componentes como cuadro de texto y botones de opción.
 
    Cuando se selecciona un componente de la barra lateral, se muestran todos los subcomponentes enumerados y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
 
 1. Haga clic en una ficha de la barra lateral para especificar las propiedades de CSS. Puede especificar propiedades como:
 
-   * Dimensiones y posición (configuración de visualización, relleno, altura, anchura, margen, posición, índice z, flotante, borrar, desbordamiento)
-   * Texto (familia de fuentes, grosor, color, tamaño, altura de línea y alineación)
+   * Dimension y posición (configuración de visualización, relleno, altura, anchura, margen, posición, índice z, flotante, borrar, desbordamiento)
+   * Texto (familia de fuentes, peso, color, tamaño, altura de línea y alineación)
    * Fondo (imagen y degradado, color de fondo)
    * Borde (anchura, estilo, color, radio)
    * Efectos (Sombra, Opacidad)
    * Avanzado (le permite escribir CSS personalizada para el componente)
 
 1. Del mismo modo, se pueden aplicar estilos a otras partes de un componente, como Utilidad, Rótulo y Ayuda.
-1. Toque **Listo** para confirmar los cambios o **Cancelar** para descartarlos.
+1. Toque **Listo** para confirmar los cambios o **Cancelar** para descartar los cambios.
 
 ## Ejemplo: estilos en línea para un componente de campo {#example-inline-styles-for-a-field-component}
 
@@ -76,7 +79,7 @@ Observe el cambio en el estilo del cuadro de texto como se muestra en la siguien
   <tr>
    <td><p>Etiqueta</p> </td>
    <td><p>Dimensiones y posición &gt; anchura</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Corrige la anchura como 100 px para la etiqueta</p> </td>
   </tr>
   <tr>
