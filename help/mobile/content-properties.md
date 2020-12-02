@@ -11,11 +11,14 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
 source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 20%
 
 ---
 
 
-# Propiedades y nodos de contenido {#content-properties-and-nodes}
+# Propiedades de contenido y nodos {#content-properties-and-nodes}
 
 >[!NOTE]
 >
@@ -23,18 +26,18 @@ source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
 
 Los artículos, los letreros y las colecciones se representan como cq:Pages en AEM.
 
-Comparten las mismas propiedades comunes que se encuentran en cualquier cq:Page, además de otras que se muestran a continuación, que representan los metadatos de los servicios bajo demanda de Adobe Experience Manager (AEM) Mobile y las propiedades compatibles con la integración.
+Comparten las mismas propiedades comunes que se encuentran en cualquier cq:Page, además de otras que se muestran a continuación, que representan los metadatos de Adobe Experience Manager (AEM) Mobile On-Demand Services y las propiedades de compatibilidad con la integración.
 
 Las siguientes tablas describen las propiedades y los nodos de contenido.
 
-## Propiedades de integración comunes {#common-integration-properties}
+## Propiedades de integración común {#common-integration-properties}
 
 | **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** | **Descripción** |
 |---|---|---|---|
 | dps-id | Cadena |  | asignado por AEM Mobile y almacenado por AEM una vez cargado en AEM Mobile o importado de AEM Mobile |
 | dps-resourceType | Cadena | dps:Article | dps:Banner | dps:Collection | entity type, propiedad |
-| dps-version | Cadena |  | versión de la entidad de AEM Mobile (también incluida en el aemm-id completo) |
-| dps-lastSynced | Fecha |  | fecha de la última sincronización/importación de AEM Mobile a AEM |
+| dps-version | Cadena |  | versión de la entidad AEM Mobile (también incluida en el aemm-id completo) |
+| dps-lastSynced | Fecha |  | fecha de la última sincronización/importación de AEM Mobile en AEM |
 | dps-lastUploaded | Fecha |  | fecha de la última carga de AEM a AEM Mobile |
 | dps-lastUploadedBy | Cadena:userid |  | usuario de ID que realizó la última solicitud de carga de AEM a AEM Mobile |
 
@@ -89,7 +92,7 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | Nombre de nodo | Tipo | Valores predeterminados o esperados | Descripción |
 |--- |--- |--- |--- |
-| imagen | jcr:PrimaryType=nt: <br> sling no estructurado:resourceType=foundation/components/image |  |  |
+| image | jcr:PrimaryType=nt:unstructure <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entidades {#entities}
 
@@ -97,9 +100,9 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | Nombre de nodo | Tipo | Valores predeterminados de valores esperados | Descripción |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr:PrimaryType=nt: <br> sling no estructurado:resourceType=foundation/components/image |  |
+| social-share-image |  | jcr:PrimaryType=nt:unstructure <br> sling:resourceType=foundation/components/image |  |
 
-#### Banners {#banners-1}
+#### Pancartas {#banners-1}
 
 | Nombre de nodo | Tipo | Valores predeterminados de valores esperados | Descripción |
 |---|---|---|---|
@@ -109,4 +112,4 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | Nombre de nodo | Tipo | Valores predeterminados de valores esperados | Descripción |
 |--- |--- |--- |--- |
-| background-image | jcr:PrimaryType=nt: <br> sling no estructurado:resourceType=foundation/components/image |  |  |
+| background-image | jcr:PrimaryType=nt:unstructure <br> sling:resourceType=foundation/components/image |  |  |
