@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 0%
 
 ---
 
@@ -21,6 +24,6 @@ Utilice la página Administración de dominios para marcar un dominio existente 
 
 Si crea un dominio con el mismo nombre que un dominio eliminado, se restablece el dominio eliminado junto con la información que contiene. No se puede eliminar el dominio DefaultDom.
 
-1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de usuarios > Administración]** de dominios.
+1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de usuarios > Administración de dominios]**.
 1. Seleccione la casilla de verificación del dominio que desea eliminar, haga clic en **[!UICONTROL Eliminar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]**.
 
