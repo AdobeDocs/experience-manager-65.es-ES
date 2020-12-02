@@ -20,19 +20,19 @@ ht-degree: 4%
 
 # Plantillas de sitios {#site-templates}
 
-La consola Plantillas de sitio es muy similar a la consola Plantillas [de](tools-groups.md) grupo, que se centra en funciones de interés para grupos de la comunidad.
+La consola Plantillas de sitio es muy similar a la consola [Plantillas de grupo](tools-groups.md), que se centra en funciones de interés para los grupos de la comunidad.
 
 >[!NOTE]
 >
->Las consolas para la creación de sitios [de](sites-console.md)comunidad, plantillas [de sitio de](sites.md)comunidad, plantillas [de grupo de](tools-groups.md) comunidad y funciones [de](functions.md) comunidad solo se pueden usar en el entorno de creación.
+>Las consolas para la creación de [sitios de comunidad](sites-console.md), [plantillas de sitio de comunidad](sites.md), [plantillas de grupo de comunidad](tools-groups.md) y [funciones de comunidad](functions.md) sólo se pueden usar en el entorno de creación.
 
-## Consola Plantillas del sitio {#site-templates-console}
+## Consola de plantillas de sitio {#site-templates-console}
 
 En el entorno de creación, para llegar a la consola de sitios de comunidad:
 
 * Desde la navegación global: **[!UICONTROL Herramientas > Comunidades > Plantillas de sitio]**
 
-Esta consola muestra las plantillas desde las que se puede crear un sitio [de](sites-console.md) comunidad y permite crear nuevas plantillas de sitio.
+Esta consola muestra las plantillas desde las que se puede crear un [sitio de comunidad](sites-console.md) y permite crear nuevas plantillas de sitio.
 
 ![site-template](assets/site-template.png)
 
@@ -42,7 +42,7 @@ Para empezar a crear una nueva plantilla de sitio, seleccione `Create`.
 
 Esto mostrará el panel Editor del sitio, que contiene 3 subpaneles:
 
-### Basic info {#basic-info}
+### Información básica {#basic-info}
 
 ![site-template-basicinfo](assets/site-template-basicinfo.png)
 
@@ -72,7 +72,7 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
 Para agregar funciones de comunidad, arrástrelas de derecha a izquierda en el orden en que deberían aparecer los vínculos de menú del sitio. Los estilos se aplicarán a la plantilla durante la creación del sitio.
 
-Por ejemplo, si desea una página de inicio, arrastre la función Página de la biblioteca y suéltela debajo del generador de plantillas. Esto resultará en la apertura del cuadro de diálogo de configuración de página. Consulte la consola [de](functions.md) funciones para obtener información sobre los cuadros de diálogo de configuración.
+Por ejemplo, si desea una página de inicio, arrastre la función Página de la biblioteca y suéltela debajo del generador de plantillas. Esto resultará en la apertura del cuadro de diálogo de configuración de página. Consulte la [consola de funciones](functions.md) para obtener información sobre los cuadros de diálogo de configuración.
 
 Continúe arrastrando y soltando cualquier otra función de comunidad que desee para un sitio de comunidad basado en esta plantilla.
 
@@ -80,19 +80,19 @@ La función de página proporciona una página vacía. La función de grupos per
 
 >[!CAUTION]
 >
->La función de grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
+>La función de grupos debe *no* ser la *primera ni la única* función de la estructura del sitio.
 >
->Cualquier otra función, como la función [de](functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
+>Cualquier otra función, como la [función de página](functions.md#page-function), debe incluirse y enumerarse primero.
 
 ![site-editor](assets/site-editor.png)
 
-### Funciones de plantillas de grupo para grupos {#group-templates-for-groups-function}
+### Función Plantillas de grupo para grupos {#group-templates-for-groups-function}
 
 Al incluir una función de grupos en la plantilla de sitio, la configuración requiere la especificación de las opciones de plantilla de grupo permitidas cuando se crea un nuevo grupo en el entorno de publicación.
 
 >[!CAUTION]
 >
->La función Grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
+>La función Groups debe *no* ser la *primera ni la única* función de la estructura del sitio.
 
 ![site-features](assets/site-functions.png)
 
@@ -102,6 +102,6 @@ Al seleccionar dos o más plantillas de grupo de comunidad, se proporciona una o
 
 ## Editar plantilla del sitio{#edit-site-template}
 
-Al ver las plantillas de sitio en la consola [principal Plantillas](#site-templates-console)del sitio, es posible seleccionar una plantilla de sitio existente para editarla.
+Al ver las plantillas de sitio en la consola [Plantillas de sitio](#site-templates-console) principal, es posible seleccionar una plantilla de sitio existente para editarla.
 
-Este proceso proporciona los mismos paneles que [crear una plantilla](#create-site-template)de sitio.
+Este proceso proporciona los mismos paneles que [crear una plantilla de sitio](#create-site-template).
