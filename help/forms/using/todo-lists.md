@@ -12,6 +12,9 @@ discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '4025'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +27,9 @@ Cuando vista sus listas de tareas pendientes, es posible que vea tareas de un pr
 
 El espacio de trabajo de AEM Forms tiene los tres tipos siguientes de listas pendientes:
 
-* listas individuales, que contienen tareas que se le asignan directamente.
-* listas de grupo, que contienen tareas asignadas a un grupo. Cualquier miembro del grupo puede abrir y completar las tareas. Para abrir una tarea, un miembro de un grupo debe reclamar primero la tarea.
-* listas compartidas, que contienen tareas asignadas a un usuario que ha compartido su lista de tareas pendientes con usted y posiblemente con otros usuarios. Cualquiera de los usuarios que comparte una lista puede solicitar, abrir y completar tareas compartidas.
+* Listas individuales, que contienen tareas que se le asignan directamente.
+* Listas de grupo, que contienen tareas asignadas a un grupo. Cualquier miembro del grupo puede abrir y completar las tareas. Para abrir una tarea, un miembro de un grupo debe reclamar primero la tarea.
+* Listas compartidas, que contienen tareas asignadas a un usuario que ha compartido su lista de tareas pendientes con usted y posiblemente con otros usuarios. Cualquiera de los usuarios que comparte una lista puede solicitar, abrir y completar tareas compartidas.
 
 Puede realizar algunas acciones sin abrir la tarea haciendo clic en los iconos que aparecen cuando pasa el puntero sobre una tarea.
 
@@ -34,7 +37,7 @@ Puede realizar algunas acciones sin abrir la tarea haciendo clic en los iconos q
 >
 >Un icono de exclamación indica que la tarea es de alta prioridad.
 
-## tareas típicas {#typical-tasks}
+## Tareas típicas {#typical-tasks}
 
 Al abrir y trabajar en una tarea, las herramientas disponibles dependen de la tarea. Diferentes tareas requieren que realice diferentes acciones y, por este motivo, es posible que algunas herramientas estén o no disponibles para usted. Las tareas típicas que puede recibir se describen a continuación.
 
@@ -68,7 +71,7 @@ Si existe una URL de resumen de Tarea, la vista de resumen de Tarea se abre de f
 >
 >Cuando se abre una tarea, según los valores predeterminados de tarea, el formulario asociado puede mostrarse en vista completa.
 
-### Abrir y bloquear una tarea de su lista {#open-and-lock-a-task-from-your-list}
+### Abra y bloquee una tarea de su lista {#open-and-lock-a-task-from-your-list}
 
 Al abrir una tarea desde la lista Tareas pendientes, si se comparte la lista, puede bloquear la tarea para evitar que otro usuario que tenga acceso a la lista trabaje en la tarea.
 
@@ -97,14 +100,14 @@ Al abrir y reclamar una tarea de un grupo o una lista compartida, la tarea se mu
 1. En la página Tareas pendientes, en el panel izquierdo, seleccione un grupo o una lista de tareas compartidas. Todas las tareas se muestran en el panel central.
 1. Realice uno de estos pasos:
 
-   * Para reclamar una tarea, sin abrirla, de un grupo o de una lista de tareas pendientes compartida, haga clic en **Reclamar** pasando el puntero sobre la tarea. Como alternativa, cuando la tarea está abierta, el botón Reclamar está disponible en la barra de acciones debajo del panel tarea. Al reclamar, una tarea pasa del grupo o de la lista de tareas pendientes compartida a la lista.
+   * Para reclamar una tarea, sin abrirla, desde una lista de trabajo de grupo o compartida, haga clic en **Reclamar** pasando el puntero sobre la tarea. Como alternativa, cuando la tarea está abierta, el botón Reclamar está disponible en la barra de acciones debajo del panel tarea. Al reclamar, una tarea pasa del grupo o de la lista de tareas pendientes compartida a la lista.
    * Para reclamar y abrir una tarea de un grupo o de una lista de tareas pendientes compartida, haga clic en **Reclamar y abra**.
 
-## Working with tasks {#working-with-tasks}
+## Uso de tareas {#working-with-tasks}
 
 Después de abrir una tarea, las fichas que se muestran en el panel principal y las herramientas disponibles dependen de la tarea. Las fichas que puede ver se describen a continuación:
 
-**Resumen** de Tarea: Cuando se abre una tarea, el panel Resumen de Tarea permite mostrar información sobre la tarea, si existe, mediante una URL especificada en el proceso en el paso Asignar Tarea. Al utilizar el panel Resumen de Tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Esta ficha no está disponible si la URL de resumen de Tarea no existe.
+**Resumen** de tarea: Cuando se abre una tarea, el panel Resumen de Tarea permite mostrar información sobre la tarea, si existe, mediante una URL especificada en el proceso en el paso Asignar Tarea. Al utilizar el panel Resumen de Tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Esta ficha no está disponible si la URL de resumen de Tarea no existe.
 
 **Detalles**: Proporciona información sobre la tarea actual y el proceso al que pertenece.
 
@@ -133,6 +136,7 @@ Puede reenviar una tarea junto con cualquier nota o archivo adjunto a otro usuar
    * **Avanzar**
    * **Compartir**
    * **Consultar**
+
    >[!NOTE]
    >
    >Según la tarea, también puede realizar estas acciones desde la lista Tareas pendientes sin abrir la tarea.
@@ -141,7 +145,7 @@ Puede reenviar una tarea junto con cualquier nota o archivo adjunto a otro usuar
 
 ### Devolver una tarea {#return-a-task}
 
-1. En cualquier ficha, haga clic en **Regresar**. La tarea se devuelve a la lista de tareas pendientes del usuario que le ha enviado previamente la tarea o que ha compartido o consultado la tarea con usted.
+1. En cualquier ficha, haga clic en **Retorno**. La tarea se devuelve a la lista de tareas pendientes del usuario que le ha enviado previamente la tarea o que ha compartido o consultado la tarea con usted.
 
 ### Desconectar una tarea {#take-a-task-offline}
 
@@ -156,18 +160,18 @@ Es posible que pueda agregar, actualizar, eliminar o guardar archivos adjuntos l
 
 **Añadir un archivo adjunto**
 
-1. En la ficha **Archivos adjuntos** , haga clic en **Examinar** para seleccionar el archivo que desea adjuntar.
-1. Seleccione el nivel de **permisos** para los datos adjuntos de otros usuarios que participen en el proceso. Si selecciona **Leer**, otros usuarios pueden guardar el archivo localmente. Si selecciona uno de los permisos de edición, otros usuarios también pueden cargar un nuevo archivo para reemplazar los datos adjuntos.
+1. En la ficha **Archivos adjuntos**, haga clic en **Examinar** para seleccionar el archivo que desea adjuntar.
+1. Seleccione el nivel **Permisos** para los datos adjuntos de otros usuarios que participen en el proceso. Si selecciona **Leer**, otros usuarios pueden guardar el archivo localmente. Si selecciona uno de los permisos de edición, otros usuarios también pueden cargar un nuevo archivo para reemplazar los datos adjuntos.
 
    >[!NOTE]
    >
    >También puede agregar comentarios junto con los datos adjuntos.
 
-1. Click **Upload**. El archivo se adjunta al formulario.
+1. Haga clic en **Cargar**. El archivo se adjunta al formulario.
 
 **Vista de datos adjuntos**
 
-1. En la ficha **Archivos adjuntos** , haga clic en el nombre de archivo del archivo adjunto a la vista.
+1. En la ficha **Archivos adjuntos**, haga clic en el nombre del archivo adjunto de la vista.
 
 **Guardar un archivo adjunto localmente**
 
@@ -175,11 +179,11 @@ Es posible que pueda agregar, actualizar, eliminar o guardar archivos adjuntos l
 
 **Actualizar un archivo adjunto**
 
-1. Haga clic en **Editar** para el archivo adjunto. Seleccione el archivo con el que desea reemplazar los datos adjuntos existentes haciendo clic en **Examinar**.
+1. Haga clic en **Editar** para el archivo adjunto. Seleccione el archivo con el que desea reemplazar el archivo adjunto existente haciendo clic en **Examinar**.
 
 **Eliminar un archivo adjunto**
 
-1. Haga clic en **Eliminar** para ver un archivo adjunto.
+1. Haga clic en **Eliminar** para un archivo adjunto.
 
 ### Guarde su trabajo sin completar la tarea {#save-your-work-without-completing-the-task}
 
@@ -216,7 +220,7 @@ Puede completar una tarea de varias formas:
 
 >[!NOTE]
 >
->Esta opción está disponible si `isMustOpenToComplete` el campo no está seleccionado en el `Assign Task` paso de Workbench durante el diseño de un proceso.
+>Esta opción está disponible si el campo `isMustOpenToComplete` no está seleccionado en el paso `Assign Task` de Workbench mientras se diseña un proceso.
 
 * Por correo electrónico, si recibe notificaciones por correo electrónico
 
@@ -233,18 +237,19 @@ Al completar una tarea, según la tarea, puede aparecer un cuadro de diálogo de
    * Seleccione la tarea y haga clic en el botón correspondiente para el siguiente paso requerido en el proceso en la parte inferior de la lista.
    * Si el formulario no tiene botones y el botón de completado del espacio de trabajo de AEM Forms está disponible, haga clic en **Completar**.
    * Si el formulario tiene botones y el botón de completado del espacio de trabajo de AEM Forms no está disponible, haga clic en el botón correspondiente del formulario para el siguiente paso requerido en el proceso.
+
    Si el formulario no tiene botones y el botón de completado del espacio de trabajo de AEM Forms no está disponible, aparece un mensaje que indica que no se puede enviar el formulario.
 
 1. Si aparece un cuadro de diálogo de confirmación, realice una de estas acciones:
 
-   * Haga clic en **Aceptar** si ha completado la tarea y está listo para cerrar la sesión.
+   * Haga clic en **Aceptar** si ha completado la tarea y está listo para cerrar sesión en ella.
    * Haga clic en **Cancelar** si desea volver a la tarea y no está listo para cerrar sesión en ella.
 
 >[!NOTE]
 >
 >Puede ver un botón Enviar dentro de los formularios HTML cuando se utilizan propiedades de proceso en un formulario. Este botón no está visible cuando el mismo formulario se procesa como PDF. Para completar una tarea, haga clic en el botón Enviar disponible en la parte inferior del espacio de trabajo de AEM Forms, fuera del formulario y no en el botón Enviar dentro del formulario.
 
-### tareas de aprobación masiva {#bulk-approve-tasks}
+### Tareas de aprobación masiva {#bulk-approve-tasks}
 
 Puede enviar varias tareas desde la lista Tareas pendientes. Sólo se pueden enviar juntos tareas del mismo proceso, con los mismos nombres de tarea, y las mismas opciones de ruta.
 
@@ -253,7 +258,7 @@ Puede enviar varias tareas desde la lista Tareas pendientes. Sólo se pueden env
 >Esta opción está disponible si el campo isMustOpenToComplete no está seleccionado en el paso Asignar Tarea en Workbench mientras se diseña un proceso.
 
 1. En la página Tareas pendientes, en el panel izquierdo, seleccione la lista de tareas individuales. Todas las tareas se muestran en el panel central.
-1. Seleccione **Activar modo** masivo. Las casillas de verificación aparecen delante de las tareas de la lista.
+1. Seleccione **Activar modo masivo**. Las casillas de verificación aparecen delante de las tareas de la lista.
 
    >[!NOTE]
    >
@@ -271,15 +276,15 @@ Puede enviar varias tareas desde la lista Tareas pendientes. Sólo se pueden env
 
 Puede recibir y completar tareas por correo electrónico. La participación en tareas mediante correos electrónicos elimina la necesidad de comprobar rutinariamente la lista de tareas pendientes en busca de nuevas tareas o comprobar el estado de una tarea en la página de seguimiento.
 
-En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms para recibir notificaciones por correo electrónico. El espacio de trabajo de AEM Forms puede enviar notificaciones por correo electrónico para tareas en la lista de tareas pendientes o en cualquier lista de trabajo de grupo al que pertenezca. El administrador determina cuándo se envían los mensajes de notificación por correo electrónico y quién los recibe.
+En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms para recibir notificaciones por correo electrónico. El espacio de trabajo de AEM Forms puede enviar notificaciones por correo electrónico para tareas en la lista de tareas pendientes o en cualquier lista de trabajo de grupo a la que pertenezca. El administrador determina cuándo se envían los mensajes de notificación por correo electrónico y quién los recibe.
 
 Los mensajes de correo electrónico pueden contener un vínculo que abre la tarea en el espacio de trabajo de AEM Forms, un archivo adjunto del formulario que se utiliza para la tarea o acciones para completar la tarea por correo electrónico. Si se incluye un formulario en el mensaje de correo electrónico, puede abrirlo y completar la tarea si los botones para completar la tarea están creados en el formulario. Si las acciones para completar la tarea se incluyen en el mensaje de correo electrónico, puede completar la tarea haciendo clic en las acciones del correo electrónico o respondiendo al correo electrónico con la acción escrita como primera línea en el cuerpo del correo electrónico.
 
 >[!NOTE]
 >
->Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la Guía [de administración de JEE de](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms.
+>Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la [Guía del administrador de AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
-Cuando se completa una tarea por correo electrónico, la tarea se elimina de la lista de tareas pendientes en el espacio de trabajo de AEM Forms.
+Cuando completa una tarea por correo electrónico, la tarea se elimina de la lista de tareas pendientes en el espacio de trabajo de AEM Forms.
 
 >[!NOTE]
 >
@@ -292,8 +297,8 @@ Cuando se completa una tarea por correo electrónico, la tarea se elimina de la 
 ### Recibir mensajes de notificación por correo electrónico {#receive-email-notification-messages}
 
 1. Haga clic en **Preferencias**.
-1. En la lista **Notificar Eventos de Tarea por correo electrónico** , seleccione **Sí**.
-1. Para incluir el formulario y los datos con el mensaje de correo electrónico, en la lista **Adjuntar formularios en correo electrónico** , seleccione **Sí**.
+1. En la lista **Notificar Eventos de Tarea por correo electrónico**, seleccione **Sí**.
+1. Para incluir el formulario y los datos con el mensaje de correo electrónico, en la lista **Adjuntar Forms en correo electrónico**, seleccione **Sí**.
 
 ## Participación en tareas a través de dispositivos móviles {#participating-in-tasks-through-mobile-devices}
 
@@ -307,7 +312,7 @@ Un *recordatorio* le notifica de una tarea que requiere su atención. Los record
 
 El proceso comercial determina el comportamiento y el momento de los plazos y los recordatorios. No todos los procesos tienen plazos y recordatorios. El administrador especifica si se envían notificaciones por correo electrónico para los plazos y recordatorios. Puede establecer sus preferencias para recibir notificaciones por correo electrónico.
 
-## Trabajo con tareas de colas de grupo y compartidas {#working-with-tasks-from-group-and-shared-queues}
+## Trabajar con tareas de colas compartidas y de grupo {#working-with-tasks-from-group-and-shared-queues}
 
 Todas las tareas asignadas aparecerán en la lista Tareas pendientes (cola).
 
@@ -337,7 +342,7 @@ Tenga en cuenta que para que un usuario pueda ver una tarea en una cola comparti
 
 **Compartir la cola**
 
-1. En la ficha **Colas** de la ficha **Preferencias** , haga clic en el icono &#39;+&#39; para &#39;Usuarios que comparten mi cola actualmente&#39;.
+1. En la ficha **Colas** de la ficha **Preferencias**, haga clic en el icono &#39;+&#39; para &#39;Usuarios que comparten mi cola actualmente&#39;.
 1. Busque y seleccione el nombre del usuario.
 1. Haga clic en el botón **Compartir** para compartir la cola con el usuario seleccionado.
 1. Seleccione el nombre del usuario y haga clic en **Compartir**.
@@ -356,15 +361,15 @@ Si se le concede acceso a la lista de tareas pendientes de otro usuario, no podr
 
 **Acceso a otra cola**
 
-1. En la ficha **Preferencias** , abra la ficha **Colas** .
+1. En la ficha **Preferencias**, abra la ficha **Colas**.
 1. Haga clic en &#39;+&#39; para las &#39;colas de usuario a las que tengo acceso&#39;. Busque el nombre del usuario en el cuadro de diálogo emergente.
 1. Seleccione el nombre del usuario y haga clic en **Solicitud**.
 
    >[!NOTE]
    >
-   >Puede eliminar el acceso a otra lista de tareas pendientes seleccionando el nombre de usuario en las colas de usuarios a las que tengo acceso a lista y haciendo clic en **X** al final de la fila que menciona el nombre del usuario. No puede quitar el acceso a otra lista de tareas pendientes cuando la solicitud de acceso a la lista de tareas pendientes sigue pendiente.
+   >Puede eliminar el acceso a otra lista de tareas pendientes seleccionando el nombre de usuario en las colas de usuarios a las que tengo acceso a la lista y haciendo clic en **X** al final de la fila que menciona el nombre del usuario. No puede quitar el acceso a otra lista de tareas pendientes cuando la solicitud de acceso a la lista de tareas pendientes sigue pendiente.
 
-## Configuración de las preferencias fuera de la oficina {#setting-out-of-office-preferences}
+## Configuración de preferencias fuera de la oficina {#setting-out-of-office-preferences}
 
 Si planea estar fuera de la oficina, puede especificar lo que sucede con las tareas que se le han asignado para ese período.
 
@@ -378,18 +383,18 @@ Puede establecer una persona predeterminada a la que se envíen todas sus tareas
 
 ### Configurar las preferencias fuera de la oficina {#set-out-of-office-preferences}
 
-1. Haga clic en **Preferencias** y en **Fuera de la oficina**.
+1. Haga clic en **Preferencias** y haga clic en **Fuera de Office**.
 1. Para especificar cuándo está fuera de la oficina, realice uno de estos pasos:
 
-   * Para especificar que está fuera de la oficina ahora por un período de tiempo indefinido, en la lista **que estoy** , seleccione **Fuera de la oficina** pero no agregue un intervalo de fechas.
-   * Para especificar una fecha y hora de inicio que se encuentra fuera de la oficina y hacer clic en &#39;+&#39; en Programación **** fuera de la oficina. Utilice la lista de calendario y hora para especificar la fecha y hora del inicio. Si no especifica una fecha y hora de finalización, se le considerará fuera de la oficina indefinidamente desde la fecha y hora de inicio hasta que cambie sus preferencias.
+   * Para especificar que está fuera de la oficina ahora por un período de tiempo indefinido, en la lista **Actualmente estoy**, seleccione **Fuera de la oficina** pero no agregue un intervalo de fechas.
+   * Para especificar una fecha y hora de inicio que está fuera de la oficina y hacer clic en &#39;+&#39; para **Programación fuera de la oficina**. Utilice la lista de calendario y hora para especificar la fecha y hora del inicio. Si no especifica una fecha y hora de finalización, se le considerará fuera de la oficina indefinidamente desde la fecha y hora de inicio hasta que cambie sus preferencias.
 
-1. Para especificar cómo se deben gestionar las tareas de forma predeterminada, seleccione una de estas opciones en **Cuando esté fuera de la oficina: Usuario predeterminado para la lista de tareas** fuera de la oficina:
+1. Para especificar cómo se deben gestionar sus tareas de forma predeterminada, seleccione una de estas opciones en el cuadro de diálogo **Al salir de Office: Lista predeterminada Usuario para tareas fuera de la oficina**:
 
    * Seleccione **No asignar** para mantener tareas en la lista de tareas pendientes hasta que vuelva.
    * Seleccione **Buscar usuario** para buscar un usuario al que asignar sus tareas. Al seleccionar un usuario, también puede realizar la vista de su programación fuera de la oficina.
 
-1. Para establecer excepciones a la opción predeterminada, haga clic en + para Excepciones **de** proceso, seleccione el proceso para el que desea crear una excepción y, a continuación, seleccione otro usuario o seleccione **No asignar** de la lista **está asignado a la** lista.
+1. Para establecer excepciones al valor predeterminado, haga clic en + para **Excepciones de proceso**, seleccione el proceso para el que desea crear una excepción y, a continuación, seleccione otro usuario o seleccione **No asignar** de la lista **asignada a**.
 
    >[!NOTE]
    >
