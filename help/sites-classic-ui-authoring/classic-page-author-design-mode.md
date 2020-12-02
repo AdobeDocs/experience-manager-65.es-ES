@@ -12,6 +12,9 @@ discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 92%
 
 ---
 
@@ -47,7 +50,7 @@ En el modo Diseño, se minimiza la barra de tareas y se pueden configurar los co
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. Haga clic en **Editar** en el sistema de párrafos (**Diseño de par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -71,7 +74,7 @@ En el modo Diseño, también se pueden configurar los atributos de los component
 
 1. Se puede configurar el diseño de los componentes.
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   Por ejemplo, si hace clic en **Editar** en el componente Imagen (**Diseño de imagen**) puede configurar los parámetros específicos del componente:
 
    ![climage_1-5](assets/chlimage_1-5.png)
 
