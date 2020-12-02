@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# AEM Forms en grupos y privilegios OSGi{#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms en grupos OSGi y privilegios{#aem-forms-on-osgi-groups-and-privileges}
 
-Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
+Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez que instale el paquete [de complementos de](../../forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, los grupos mencionados en este artículo, como usuarios de formularios y usuarios avanzados, estarán disponibles automáticamente para su asignación. La siguiente tabla lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Una vez que instale [paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como usuarios de formularios y usuarios avanzados, estarán disponibles automáticamente para su asignación. La siguiente tabla lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
@@ -94,7 +94,7 @@ Una vez que instale el paquete [de complementos de](../../forms/using/installing
    <td>flujos de trabajo-usuarios</td> 
    <td>
     <ul> 
-     <li>Usar AEM aplicaciones<br /> de bandeja de entrada <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
+     <li>Utilice AEM aplicaciones de bandeja de entrada<br /> <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>
