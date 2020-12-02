@@ -19,7 +19,7 @@ ht-degree: 3%
 ---
 
 
-# Esenciales de mensajería {#messaging-essentials}
+# Messaging Essentials {#messaging-essentials}
 
 Esta página documentos los detalles de cómo trabajar con el componente Mensajería para incluir una función de mensajería en un sitio web.
 
@@ -71,7 +71,7 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
   </tr>
   <tr>
@@ -89,19 +89,19 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
  </tbody>
 </table>
 
-Consulte también Personalizaciones del lado del [cliente](/help/communities/client-customize.md)
+Consulte también [Personalizaciones del lado del cliente](/help/communities/client-customize.md)
 
 ## Esenciales para servidor {#essentials-for-server-side}
 
 * [Configuración de mensajes](/help/communities/configure-messaging.md)
-* [APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) de cliente de mensajería para componentes SCF
-* [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) de mensajería para el servicio
+* [API de cliente ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) de mensajería para componentes SCF
+* [API de mensajería ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para el servicio
 * [Extremos de mensajería](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizaciones del lado del servidor](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->El parámetro String *no debe* contener una barra diagonal final &quot;/&quot; para los siguientes métodos de MessageBuilder:
+>El parámetro String debe *no* contener una barra diagonal final &quot;/&quot; para los siguientes métodos de MessageBuilder:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -118,34 +118,34 @@ Por ejemplo:
 
 ### Sitio de la comunidad {#community-site}
 
-Una estructura de sitio de comunidad, creada con el asistente, incluye la función de mensajería cuando se selecciona. Consulte `User Management` Configuración de la consola [Sitios de](/help/communities/sites-console.md#user-management)comunidad.
+Una estructura de sitio de comunidad, creada con el asistente, incluye la función de mensajería cuando se selecciona. Consulte `User Management` configuración de [Consola de sitios de la comunidad](/help/communities/sites-console.md#user-management).
 
 ### Código de muestra: Notificación de mensaje recibido {#sample-code-message-received-notification}
 
-La función Mensajería social emite eventos para operaciones, por ejemplo `send`, `marking read``marking delete`. Estos eventos se pueden capturar y se pueden tomar medidas sobre los datos contenidos en el evento.
+La característica Mensajería social emite eventos para operaciones, por ejemplo `send`, `marking read`, `marking delete`. Estos eventos se pueden capturar y se pueden tomar medidas sobre los datos contenidos en el evento.
 
-El siguiente ejemplo es un controlador de evento que escucha el `message sent` evento y envía un correo electrónico a todos los destinatarios de mensajes que utilizan el `Day CQ Mail Service`.
+El siguiente ejemplo es de un controlador de evento que escucha el evento `message sent` y envía un correo electrónico a todos los destinatarios de mensajes mediante `Day CQ Mail Service`.
 
 Para probar el script de ejemplo del lado del servidor, necesita un entorno de desarrollo y la capacidad de crear un paquete OSGi:
 
-1. Inicie sesión como administrador para ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Cree una `bundle node`entrada `/apps/engage/install` con nombres arbitrarios, como:
+1. Inicie sesión como administrador en ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
+1. Cree un `bundle node`en `/apps/engage/install` con nombres arbitrarios, como:
 
    * Nombre simbólico: `com.engage.media.social.messaging.MessagingNotification`
    * Nombre: Notificación de mensajes de tutoriales de introducción
    * Descripción: Un servicio de muestra para enviar una notificación por correo electrónico a los usuarios cuando reciben un mensaje
    * Paquete: `com.engage.media.social.messaging.notification`
 
-1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`y, a continuación:
+1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` y, a continuación:
 
-   1. Elimine la `Activator.java` clase creada automáticamente.
+   1. Elimine la clase `Activator.java` creada automáticamente.
    1. Crear clase `MessageEventHandler.java`.
    1. Copie y pegue el código siguiente en `MessageEventHandler.java`.
 
 1. Haga clic en **Guardar todo**.
-1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`y agregue todas las instrucciones de importación tal como están escritas en el `MessageEventHandler.java` código.
+1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` y agregue todas las sentencias de importación tal como están escritas en el código `MessageEventHandler.java`.
 1. Cree el paquete.
-1. Asegúrese de que el servicio `Day CQ Mail Service`OSGi está configurado.
+1. Asegúrese de configurar el servicio `Day CQ Mail Service`OSGi.
 1. Inicie sesión como usuario de demostración y envíe un correo electrónico a otro usuario.
 1. El destinatario recibe un correo electrónico con respecto a un nuevo mensaje.
 
