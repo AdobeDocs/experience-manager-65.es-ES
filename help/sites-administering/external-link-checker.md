@@ -12,13 +12,16 @@ discoiquuid: d1ccd194-8549-4188-8932-7136be1e88a2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 0a94bf49a7136c5831c42eb274d07517c12014ec
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 1%
 
 ---
 
 
-# Comprobador de vínculos externos{#the-external-link-checker}
+# El Comprobador de vínculos externos{#the-external-link-checker}
 
-AEM proporciona un comprobador de vínculos externo. Comprobador de vínculos:
+En AEM se proporciona un comprobador de vínculos externo. Comprobador de vínculos:
 
 * analiza todas las páginas de contenido
 * genera una lista de todos los vínculos válidos y no válidos
@@ -28,8 +31,8 @@ AEM proporciona un comprobador de vínculos externo. Comprobador de vínculos:
 
 Para utilizar el comprobador de vínculos externo:
 
-1. Con **Navegación**, seleccione **Herramientas** y luego **Sitios**.
-1. Seleccione Comprobador de vínculos **externos** y se generará una lista de todos los vínculos externos.
+1. Mediante **Navegación**, seleccione **Herramientas** y luego **Sitios**.
+1. Seleccione **Comprobador de vínculos externos**, se genera una lista de todos los vínculos externos.
 1. Valide un vínculo específico seleccionándolo en la lista y luego haciendo clic en **Comprobar**:
 
    ![](assets/telc-01.png)
@@ -39,11 +42,11 @@ Para utilizar el comprobador de vínculos externo:
    * **Estado** del vínculo
    * **URL**
    * **Referencia**
-   * tiempo transcurrido desde la **última comprobación** del vínculo (validado)
-   * el **último estado** devuelto
+   * tiempo desde que el vínculo fue **Última comprobación** (validado)
+   * el **Último estado** devolvió
 
-   * tiempo transcurrido desde la **última disponibilidad del vínculo**
-   * tiempo transcurrido desde el **último acceso al vínculo**
+   * tiempo desde que el vínculo era **Última disponibilidad**
+   * tiempo transcurrido desde que el vínculo era **Último acceso**
 
 1. En las páginas de contenido individuales, los vínculos no válidos se mostrarán como rotos:
 
