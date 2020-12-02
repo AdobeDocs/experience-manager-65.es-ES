@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ El procesamiento de plantillas adaptables proporciona una forma de administrar u
 
 ## Información general {#overview}
 
-Las plantillas generalmente se crean en torno a una cuadrícula adaptable y las páginas creadas en función de estas plantillas responden plenamente, ajustándose automáticamente a la ventanilla del dispositivo cliente. Con la barra de herramientas del emulador del editor de páginas, los autores pueden dirigir los diseños a dispositivos específicos.
+Las plantillas generalmente se crean en torno a una cuadrícula adaptable y las páginas creadas en función de estas plantillas responden plenamente, ajustándose automáticamente a la ventanilla del dispositivo cliente. Mediante la barra de herramientas del emulador del editor de páginas, los autores pueden destinatario de diseños a dispositivos específicos.
 
 También es posible configurar plantillas para admitir el procesamiento adaptable. Cuando los grupos de dispositivos están configurados correctamente, la página se procesará con un selector diferente en la URL al seleccionar un dispositivo en el modo de emulador. Mediante un selector, se puede llamar directamente a una representación de página específica mediante la dirección URL.
 
@@ -34,21 +37,21 @@ Recuerde al configurar los grupos de dispositivos:
 
 >[!NOTE]
 >
->El grupo de dispositivos Dispositivos **** interactivos nunca tendrá un selector porque se supone que los dispositivos reconocidos como compatibles con el diseño interactivo no necesitan un diseño adaptable
+>El grupo de dispositivos **Dispositivos interactivos** nunca tendrá un selector porque se supone que los dispositivos reconocidos como compatibles con el diseño interactivo no necesitan un diseño adaptable
 
 ## Configuración {#configuration}
 
-Los selectores de procesamiento adaptables se pueden configurar para grupos de dispositivos existentes o para [grupos que usted mismo haya creado.](/help/sites-developing/mobile.md#device-groups)
+Los selectores de procesamiento adaptables pueden configurarse para grupos de dispositivos existentes o para [grupos que usted mismo haya creado.](/help/sites-developing/mobile.md#device-groups)
 
-Para este ejemplo, vamos a configurar el grupo de dispositivos existente de teléfonos **inteligentes** para que tenga un selector de procesamiento adaptable como parte de la plantilla de página **de** experiencia en We.Retail.
+Para este ejemplo, vamos a configurar el grupo de dispositivos existente **Teléfonos inteligentes** para que tenga un selector de procesamiento adaptable como parte de la plantilla **Página de experiencia** dentro de We.Retail.
 
 1. Editar el grupo de dispositivos que requiere un selector adaptable en `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
-   Defina la opción **Deshabilitar emulador** y guarde.
+   Configure la opción **Deshabilitar emulador** y guarde.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. El selector estará disponible para **Blackberry** e **iPhone 4** , siempre que el grupo de dispositivos **Smart Phone** se añada a la plantilla y a las estructuras de página en los pasos siguientes.
+1. El selector estará disponible para **Blackberry** y **iPhone 4** siempre que el grupo de dispositivos **Smartphone** se agregue a la plantilla y a las estructuras de página en los pasos siguientes.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -66,15 +69,15 @@ Para este ejemplo, vamos a configurar el grupo de dispositivos existente de tel�
 
    `/content/<your-site>/jcr:content`
 
-   Por ejemplo, si desea permitir el grupo de dispositivos **Smart Phone** :
+   Por ejemplo, si desea permitir el grupo de dispositivos **Smart Phone**:
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-Ahora, al usar el [emulador](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) en el editor de páginas (por ejemplo, al [modificar el diseño](/help/sites-authoring/responsive-layout.md)) y elegir un dispositivo del grupo de dispositivos configurado, la página se procesará con un selector como parte de la dirección URL.
+Ahora, al utilizar el [emulador](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) en el editor de páginas (por ejemplo, cuando [modifica el diseño](/help/sites-authoring/responsive-layout.md)) y elige un dispositivo del grupo de dispositivos configurado, la página se procesará con un selector como parte de la dirección URL.
 
-En nuestro ejemplo, al editar una página basada en la plantilla Página **de** experiencia y elegir iPhone 4 en el emulador, la página se procesa incluyendo el selector como `arctic-surfing-in-lofoten.smart.html` en lugar de `arctic-surfing-in-lofoten.html`
+En nuestro ejemplo, al editar una página basada en la plantilla **Página de experiencia** y elegir iPhone 4 en el emulador, la página se procesa incluyendo el selector como `arctic-surfing-in-lofoten.smart.html` en lugar de `arctic-surfing-in-lofoten.html`
 
 También se puede llamar a la página directamente con este selector.
 
