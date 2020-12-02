@@ -23,18 +23,18 @@ ht-degree: 0%
 
 AEM Forms permite guardar un formulario como borrador. La funcionalidad de borrador le permite mantener un formulario de trabajo en curso, que puede completar y enviar posteriormente desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el `/content/forms/fp` nodo de la instancia de Publish. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un almacén de datos.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo `/content/forms/fp` de la instancia de Publish. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un almacén de datos.
 
 ## Requisitos previos  {#prerequisites}
 
-* Habilitar componentes [del portal de formularios](/help/forms/using/enabling-forms-portal-components.md)
-* Creación de una página de portal de [formularios](/help/forms/using/creating-form-portal-page.md)
-* Habilitar formularios [adaptables para el portal de formularios](/help/forms/using/draft-submission-component.md)
-* Conozca los detalles [de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Habilitar [componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md)
+* Crear una [página de portal de formularios](/help/forms/using/creating-form-portal-page.md)
+* Habilitar [formularios adaptables para el portal de formularios](/help/forms/using/draft-submission-component.md)
+* Obtenga información sobre [detalles de implementación de almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## Servicio de borradores de datos {#draft-data-service}
+## Servicio de datos de borrador {#draft-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la `DraftDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la interfaz `DraftDataService`. El siguiente código de muestra describe los métodos y argumentos.
 
 ```java
 /**
@@ -103,7 +103,7 @@ public interface DraftDataService {
 
 ## Servicio de envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la `SubmitDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la interfaz `SubmitDataService`. El siguiente código de muestra describe los métodos y argumentos.
 
 ```java
 /**
