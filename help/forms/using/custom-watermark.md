@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Marca de agua personalizada en previsualización PDF de carta{#custom-watermark-in-letter-pdf-preview}
+# Marca de agua personalizada en previsualización PDF con letras{#custom-watermark-in-letter-pdf-preview}
 
 ## Información general {#overview}
 
@@ -26,18 +26,18 @@ En la interfaz de usuario Crear correspondencia, los usuarios del agente previsu
 
 Para evitar el uso no autorizado de estos datos, las organizaciones pueden imponer una marca de agua en el PDF de previsualización. La marca de agua predeterminada es &quot;PREVISUALIZACIÓN&quot;, que aparece en el PDF.
 
-Para habilitar la marca de agua en el PDF de previsualización, seleccione la opción **[!UICONTROL Aplicar marca de agua]** durante la Previsualización en Configuraciones **[!UICONTROL de administración de]** correspondencia en https://&#39;[server]:[port]&#39;/system/console/configMgr.
+Para habilitar la marca de agua en el PDF de previsualización, seleccione la opción **[!UICONTROL Aplicar marca de agua]** durante la Previsualización en **[!UICONTROL Configuraciones de administración de correspondencia]** en https://&#39;[servidor]:[puerto]&#39;/system/console/configMgr.
 
 ![default-watermark](assets/default-watermark.png)
 
 Puede seguir los pasos siguientes para personalizar el texto y el aspecto de la marca de agua:
 
-## Personalización de la marca de agua en la previsualización PDF en la interfaz de usuario Crear correspondencia {#customizewatermark-}
+## Personalice la marca de agua en la previsualización PDF en la interfaz de usuario Crear correspondencia {#customizewatermark-}
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada **[!UICONTROL previewwatermark]** con una ruta/estructura similar a la carpeta de marcas de agua de la vista previa en la carpeta libs:
+1. En la carpeta de aplicaciones, cree una carpeta con el nombre **[!UICONTROL previewwatermark]** con una ruta/estructura similar a la carpeta de marcas de agua de la vista previa en la carpeta libs:
 
-   1. Haga clic con el botón derecho en la carpeta **de marca de agua de la vista previa** en la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en la carpeta **previewwatermark** en la siguiente ruta y seleccione **Overlay Node**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -47,7 +47,7 @@ Puede seguir los pasos siguientes para personalizar el texto y el aspecto de la 
 
       **Ubicación de superposición:** /apps/
 
-      **Coincidir tipos de nodo:** Verificado
+      **Coincidir tipos de nodo:** activado
 
       >[!NOTE]
       >
@@ -60,7 +60,7 @@ Puede seguir los pasos siguientes para personalizar el texto y el aspecto de la 
       >    * Instalación de un paquete de funciones
 
 
-   1. Haga clic en **Aceptar** y, a continuación, en **Guardar todo**. La carpeta **[!UICONTROL de marca de agua de vista previa]** se crea en la ruta especificada.
+   1. Haga clic en **Aceptar** y, a continuación, haga clic en **Guardar todo**. La carpeta **[!UICONTROL previewwatermark]** se crea en la ruta especificada.
 
 
 
@@ -82,7 +82,7 @@ Puede seguir los pasos siguientes para personalizar el texto y el aspecto de la 
    </DDX>
    ```
 
-   Para obtener información sobre la personalización del aspecto, el texto y la alineación de las marcas de agua, consulte Añadir y quitar marcas de agua y fondos en el documento de referencia [DDX y el servicio de](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) ensambladores.
+   Para obtener información sobre la personalización del aspecto, el texto y la alineación de las marcas de agua, consulte Añadir y quitar marcas de agua y fondos en el documento [Servicio de ensamblador y Referencia DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >
