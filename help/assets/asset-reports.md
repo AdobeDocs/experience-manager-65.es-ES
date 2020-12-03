@@ -3,15 +3,15 @@ title: Informes sobre el uso y uso compartido de recursos
 description: Informes sobre los recursos en [!DNL Adobe Experience Manager Assets] que ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 10%
+source-wordcount: '1131'
+ht-degree: 9%
 
 ---
 
 
-# Informes del recurso {#asset-reports}
+# Informes de Asset {#asset-reports}
 
 El sistema de informes de recursos permite evaluar la utilidad de la implementación [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
 
@@ -152,3 +152,11 @@ Para eliminar los informes que ya no necesite, configure el servicio Depuración
 1. Abra la configuración **[!UICONTROL DAM Report Purge Service]**.
 1. Especifique la frecuencia (intervalo de tiempo) del servicio de depuración en el campo `scheduler.expression.name`. También puede configurar la edad y el umbral de cantidad para los informes.
 1. Guarde los cambios.
+
+## Información, sugerencias y limitaciones para la resolución de problemas {#best-practices-and-limitations}
+
+* Si algunos informes o números de los informes no están disponibles o no están disponibles según lo esperado, asegúrese de que el servicio [!UICONTROL Registro de Eventos DAM de CQ de día] esté habilitado.
+
+* Elimine los informes que ya no sean necesarios. Utilice las opciones de configuración del servicio Depuración de informes DAM para configurar los criterios para depurar informes.
+
+* Si el informe Uso de disco no se genera y utiliza [!DNL Dynamic Media], asegúrese de que todos los recursos se realicen correctamente. Para resolverlo, vuelva a procesar los recursos y, a continuación, vuelva a generar el informe.
