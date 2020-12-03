@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 99%
+source-wordcount: '579'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquie
 
 El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del navegador.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-189](assets/chlimage_1-109.png)
 
 La comparación de diferencias detecta los cambios en el nivel de componente y de HTML. Los elementos modificados se resaltan con colores diferentes.
 
@@ -61,10 +61,6 @@ La comparación de diferencias detecta los cambios en el nivel de componente y d
 
 * Verde claro: componente añadido
 * Rosa: componente eliminado
-* Azul: componente modificado
-* Azul: componente movido
-
-Tenga en cuenta que los colores de componente modificado y movido son los mismos.
 
 **Cambios en HTML** 
 
@@ -96,9 +92,7 @@ Puede salir de la comparación de diferencias en paralelo en cualquier momento h
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
 * Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
-* Para las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
-* Si se realizan cambios en una imagen, como la modificación de los atributos alt, title o src, estos se resaltan en azul como modificados. Sin embargo, en algunos casos, la imagen tiene una representación Base64 del atributo src y ambas imágenes tienen el mismo aspecto. La comparación diferencia una de otra debido a los atributos src dispares.
-* La comparación de diferencias no puede detectar la rotación de la imagen.
+* Para las versiones, la diferencia no vuelve a crear la directiva de control de acceso ni las relaciones de Live Copy.
 * Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
 
    * Si tiene problemas con una diferencia, compruebe la [línea de tiempo](/help/sites-authoring/basic-handling.md#timeline) para ver si la página se ha movido.
