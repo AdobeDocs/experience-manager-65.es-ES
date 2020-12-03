@@ -4,9 +4,9 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 55ef8af25887a59d9d13275645c1ec20f0c49380
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2807'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,23 @@ Ahora puede realizar los movimientos de página y los despliegues de MSM como op
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] los paquetes de complementos están disponibles una semana después del lanzamiento programado de  [!DNL Experience Manager] Service Pack. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) está programado para su lanzamiento el 26 de noviembre de 2020.
+>[!DNL Experience Manager Forms] los paquetes de complementos están disponibles una semana después del lanzamiento programado de  [!DNL Experience Manager] Service Pack.
+
+### Mejoras de rendimiento {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms mejora el rendimiento de:
+
+* Validando los valores de campo en el servidor al enviar un formulario adaptable.
+
+* Conversión de un formulario PDF a un formulario adaptable mediante [!DNL Automated Forms Conversion service].
+
+### Modelo de datos de formulario Configuración de cliente HTTP para optimizar el rendimiento {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] modelo de datos de formulario al integrarse con los servicios web RESTful como origen de datos ahora incluye configuraciones de cliente HTTP para la optimización del rendimiento.
+
+### Disponibilidad de la opción Restablecer para cada componente en el modo Diseño {#reset-option-layout-mode}
+
+Ahora puede utilizar la opción de restablecimiento para cada componente en el modo Diseño de un formulario adaptable. Al definir un diseño de varias columnas para un panel, puede utilizar esta función para restablecer componentes individuales dentro del panel.
 
 ## Características clave de los paquetes de servicios [!DNL Experience Manager] 6.5 anteriores {#key-features-previous-service-packs}
 
