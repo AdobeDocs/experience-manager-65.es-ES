@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 730a690bcbf5935ca00ed69c27ce108cb2664c22
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 3%
 
 ---
@@ -53,13 +53,13 @@ Más concretamente, se realizarán los siguientes cambios en la configuración c
 1. El paquete **Apache Sling Simple WebDAV Access to repositorios** ( `org.apache.sling.jcr.webdav`) sólo estará disponible en instancias de **autor**.
 
 1. Los usuarios recién creados deberán cambiar la contraseña en el primer inicio de sesión. Esto no se aplica al usuario administrador.
-1. **Genere** información de depuración deshabilitada para el controlador **de secuencias de comandos Java de** Apache.
+1. **Genere** información de depuración deshabilitada para el controlador de secuencias de comandos  **Apache Sling JavaScript**.
 
 1. **Contenido asignado** y  **Generar** información de depuración deshabilitada para el controlador de secuencias de comandos  **Apache Sling JSP**.
 
 1. El **Filtro CQ WCM de día** se establece en `edit` en **autor** y `disabled` en **instancias de publicación**.
 
-1. **El** administrador de la biblioteca HTML de Adobe Granite está configurado con la siguiente configuración:
+1. El **Administrador de biblioteca HTML de Adobe Granite** está configurado con la siguiente configuración:
 
    1. **Minimizar:** `enabled`
    1. **Depurar:** `disabled`
