@@ -4,9 +4,9 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
+source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
 workflow-type: tm+mt
-source-wordcount: '4201'
+source-wordcount: '4243'
 ht-degree: 5%
 
 ---
@@ -309,6 +309,10 @@ La siguiente es la lista de correcciones que se proporciona en la versión [!DNL
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] libera los paquetes de complementos una semana después de la fecha de lanzamiento programada de  [!DNL Experience Manager] Service Pack.
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] Service Pack no incluye correcciones para  [!DNL Forms]. Se entregan mediante un paquete de complemento [!DNL Forms] independiente. Además, se ha publicado un instalador acumulativo que incluye correcciones para [!DNL Experience Manager Forms] en JEE. Para obtener más información, consulte [Instalación de AEM Forms Add-on](#install-aem-forms-add-on-package) y [Instalación de AEM Forms en JEE](#install-aem-forms-jee-installer).
 
 **Formularios adaptables**
 
