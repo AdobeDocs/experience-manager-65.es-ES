@@ -27,10 +27,8 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 >Selección múltiple en un dispositivo de escritorio:
 >
 >* Windows: **Ctrl** + **clic** en los componentes necesarios.
-   >
-   >
-* Mac: **Cmd** + **clic** en los componentes necesarios.
-
+>
+>* Mac: **Cmd** + **clic** en los componentes necesarios.
 >
 
 
