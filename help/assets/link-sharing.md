@@ -3,9 +3,9 @@ title: Uso compartido de recursos mediante un vínculo
 description: Comparta recursos, carpetas y colecciones como URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f6da1c69ea3b3c3f07e8ac10fd8e1e9c7208158
+source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1056'
 ht-degree: 5%
 
 ---
@@ -57,9 +57,9 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    >
    >Si introduce un ID de correo electrónico de un usuario que no es miembro de su organización, las palabras [!UICONTROL Usuario externo] llevan el prefijo del ID de correo electrónico del usuario.
 
-1. En el campo **[!UICONTROL Subject]**, introduzca una línea de asunto.
+1. En el cuadro **[!UICONTROL Asunto]**, introduzca un asunto para el recurso que desea compartir.
 
-1. En el campo **[!UICONTROL Mensaje]**, introduzca un mensaje opcional.
+1. En el cuadro **[!UICONTROL Mensaje]**, escriba un mensaje opcional.
 
 1. En el campo **[!UICONTROL Caducidad]**, especifique una fecha y hora de caducidad para que el vínculo deje de funcionar. De forma predeterminada, la fecha de caducidad se establece para una semana a partir de la fecha en que comparta el vínculo.
 
@@ -69,9 +69,9 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios por correo electrónico.
 
-1. Para vista del recurso compartido, haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página **[!UICONTROL Adobe Marketing Cloud]**.
+1. Para vista del recurso compartido, haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página [!UICONTROL Adobe Marketing Cloud].
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Los recursos compartidos están disponibles en Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
 1. Para generar una previsualización del recurso, haga clic en el recurso compartido. Para cerrar la previsualización y volver a la página **[!UICONTROL Marketing Cloud]**, haga clic en **[!UICONTROL Atrás]** en la barra de herramientas. Si ha compartido una carpeta, haga clic en **[!UICONTROL Carpeta principal]** para volver a la carpeta principal.
 
@@ -83,7 +83,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
 1. Para descargar el recurso compartido, haga clic en **[!UICONTROL Seleccionar]** en la barra de herramientas, haga clic en el recurso y, a continuación, haga clic en **[!UICONTROL Descargar]** en la barra de herramientas.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![Opción de barra de herramientas para descargar el recurso compartido](assets/chlimage_1-547.png)
 
 1. Para vista de los recursos que ha compartido como vínculos, vaya a la interfaz de usuario [!DNL Assets] y haga clic en el logotipo [!DNL Experience Manager]. Elija **[!UICONTROL Navegación]**. En el panel Navegación, elija **[!UICONTROL Vínculos compartidos]** para mostrar una lista de recursos compartidos.
 
