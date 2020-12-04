@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
+source-git-commit: 4abfda568fc15f225510c79635387142aefddc72
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 0%
@@ -215,7 +215,8 @@ Además, un formulario adaptable habilitado para Adobe Sign se envía solamente 
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. -->
+>Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+-->
 
 La experiencia de firma de formularios está lista. Puede previsualización del formulario para comprobar la experiencia de firma. En el formulario publicado, los campos Bloque de Adobe Sign se muestran cuando un firmante recibe el formulario para firmar por correo electrónico. Esta experiencia también se conoce como experiencia de firma fuera de formulario. También puede configurar una experiencia de firma en el formulario para el primer firmante; para obtener más información, consulte [Creación de una experiencia de firma en el formulario](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
