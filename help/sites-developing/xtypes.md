@@ -34,7 +34,7 @@ Para averiguar en qué componentes se utiliza un xtype determinado en AEM, puede
 >
 >Esta página describe el uso de xtypes de ExtJS dentro de la IU clásica.
 >
->Adobe recomienda aprovechar la IU táctil estándar, moderna y [basada en [IU de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).](/help/sites-developing/touch-ui-concepts.md)
+>Adobe recomienda aprovechar la IU [estándar, moderna y](/help/sites-developing/touch-ui-concepts.md) táctil basada en la IU [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## xtypes {#xtypes}
 
