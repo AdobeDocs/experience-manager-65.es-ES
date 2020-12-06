@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 24%
@@ -50,7 +50,7 @@ Consulte también [Descripción general de caché en Dynamic Media Classic (Scen
    Si la plantilla solo contiene `<ID>`, Dynamic Media rellena `https://<server>/is/image` donde `<server>` es el nombre del servidor de publicación definido en Configuración general y &lt;ID> es el recurso seleccionado para invalidarse.
 
 1. En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Cerrar.]**
-1. En la interfaz de usuario de Dynamic Media Classic (Scene7), seleccione uno o varios recursos y haga clic en **[!UICONTROL Archivo > Invalidar CDN.]** Verá una lista de una o varias direcciones URL generadas a partir de la plantilla creada y de los recursos seleccionados. Utiliza la URL del servidor que aparece en &quot;Nombre del servidor publicado&quot; en Configuración general de la aplicación.
+1. En la interfaz de usuario de Dynamic Media Classic, seleccione uno o varios recursos y haga clic en **[!UICONTROL Archivo > Invalidar CDN.]** Verá una lista de una o varias direcciones URL generadas a partir de la plantilla creada y de los recursos seleccionados. Utiliza la URL del servidor que aparece en &quot;Nombre del servidor publicado&quot; en Configuración general de la aplicación.
 
    Por ejemplo, con la plantilla de invalidación de CDN definida en el paso anterior, supongamos que ha seleccionado una sola imagen de recurso de imagen con el nombre `Backpack_B`. Al hacer clic en **[!UICONTROL Archivo > Invalidar CDN]**, se genera la siguiente URL en la interfaz de usuario de Invalidación de CDN:
 
