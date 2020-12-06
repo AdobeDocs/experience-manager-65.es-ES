@@ -4,9 +4,9 @@ description: Sugerencias y directrices sobre [!DNL Experience Manager] configura
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2744'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Establecer una cola en la mitad de los procesadores disponibles es una solución
 
 ### Configuración de activos de actualización DAM {#dam-update-asset-configuration}
 
-El flujo de trabajo [!UICONTROL Recurso de actualización de DAM] contiene un conjunto completo de pasos configurados para tareas, como la generación de Scene7 PTIFF y la integración [!DNL Adobe InDesign Server]. Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo [!UICONTROL Recurso de actualización de DAM] y eliminar los pasos innecesarios. En este caso, actualice los lanzadores para [!UICONTROL Recurso de actualización de DAM] para que apunten al nuevo modelo.
+El flujo de trabajo [!UICONTROL Recurso de actualización de DAM] contiene un conjunto completo de pasos configurados para tareas, como la generación de Dynamic Media PTIFF y la integración [!DNL Adobe InDesign Server]. Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo [!UICONTROL Recurso de actualización de DAM] y eliminar los pasos innecesarios. En este caso, actualice los lanzadores para [!UICONTROL Recurso de actualización de DAM] para que apunten al nuevo modelo.
 
 La ejecución intensiva del flujo de trabajo [!UICONTROL Recurso de actualización de DAM] puede aumentar considerablemente el tamaño del almacén de datos del archivo. Los resultados de un experimento realizado por Adobe han demostrado que el tamaño del almacén de datos puede aumentar aproximadamente 400 GB si se realizan unos 5500 flujos de trabajo en un plazo de 8 horas.
 
@@ -180,7 +180,7 @@ Los clientes utilizan imágenes de diversos tamaños y formatos en su sitio web 
 
 Muchos clientes de Sitios implementan un servlet de imagen que cambia el tamaño y recorta las imágenes en el momento en que se solicitan, lo que impone una carga adicional en la instancia de publicación. Sin embargo, mientras estas imágenes se puedan almacenar en caché, el desafío se puede mitigar.
 
-Un método alternativo es utilizar la tecnología Scene7 para repartir por completo la manipulación de imágenes. Además, puede implementar Brand Portal que no solo se haga cargo de las responsabilidades de generación de representaciones de la infraestructura [!DNL Experience Manager], sino también de todo el nivel de publicación.
+Un enfoque alternativo es usar la tecnología de Dynamic Media para permitir la manipulación total de imágenes. Además, puede implementar Brand Portal que no solo se haga cargo de las responsabilidades de generación de representaciones de la infraestructura [!DNL Experience Manager], sino también de todo el nivel de publicación.
 
 #### ImageMagick {#imagemagick}
 
