@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '9565'
+source-wordcount: '9562'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Antes de cargar un recurso, asegúrese de que tiene un formato [](/help/assets/a
 
    ![Opción Crear para cargar recursos](assets/create-options.png)
 
-   Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
+   Para seleccionar varios archivos, seleccione la clave `Ctrl` o `Command` y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
    Puede pausar la carga de recursos grandes (buenos de 500 MB) y reanudarla más tarde desde la misma página. Haga clic en **[!UICONTROL Pausar]** junto a la barra de progreso que aparece cuando se produce un inicio de carga.
 
@@ -82,7 +82,7 @@ Al hacer clic en **[!UICONTROL Pausar]**, cambia a la opción **[!UICONTROL Repr
 
 ![Reanudar la carga de recursos en pausa](assets/resume-paused-upload.png)
 
-Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 
 La capacidad de reanudar la carga resulta especialmente útil en situaciones de bajo ancho de banda y problemas de red, donde la carga de un recurso de gran tamaño tarda mucho tiempo. Puede pausar la operación de carga y continuar más tarde cuando mejore la situación. Cuando se reanuda, se cargan inicios desde el punto en el que se detuvo.
 
@@ -355,13 +355,13 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 1. Desde la interfaz de usuario [!DNL Assets], navegue hasta el recurso deseado mediante `Tab` y las teclas de flecha.
 
-1. Pulse la tecla `Enter` del recurso deseado para abrirlo. Puede acercar los recursos al modo de previsualización.
+1. Seleccione la clave `Enter` en el recurso deseado para abrirlo. Puede acercar los recursos al modo de previsualización.
 
 1. Para acercar el recurso:
    1. Utilice la tecla `Tab` para mover el enfoque a la opción de acercar.
    1. Utilice la tecla `Enter` para acercar la imagen.
 
-   Para alejar, utilice la tecla `Tab` para mover el enfoque a la opción de alejamiento y pulse `Enter`.
+   Para alejar, utilice la tecla `Tab` para mover el enfoque a la opción de alejamiento y seleccione `Enter`.
 
 1. Utilice las teclas `Shift` + `Tab` para volver a centrar la atención en la imagen.
 
@@ -395,7 +395,7 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y hora de desactivación en el selector de fechas situado junto al campo **[!UICONTROL Tiempo de desactivación]**. La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web [!DNL Assets] ni a través de la API HTTP.
 
-1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en [!DNL Experience Manager]. [!DNL YouTube] requiere que las etiquetas se publiquen. Consulte [publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
+1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y seleccione `Enter`. La nueva etiqueta se guarda en [!DNL Experience Manager]. [!DNL YouTube] requiere que las etiquetas se publiquen. Consulte [publicación de vídeos en YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
