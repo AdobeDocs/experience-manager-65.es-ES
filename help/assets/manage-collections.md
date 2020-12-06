@@ -4,9 +4,9 @@ description: Obtenga información sobre tareas para administrar colecciones de r
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2176'
 ht-degree: 11%
 
 ---
@@ -80,7 +80,7 @@ Para crear una colección inteligente, siga los pasos:
 
 1. Vaya a la interfaz de usuario [!DNL Assets] y haga clic en buscar.
 
-1. Escriba la palabra clave de búsqueda en el cuadro Omniture y presione `Enter`. Abra el panel Filtros y aplique un filtro de búsqueda.
+1. Escriba la palabra clave de búsqueda en el cuadro Omniture y seleccione `Enter`. Abra el panel Filtros y aplique un filtro de búsqueda.
 
 1. En la lista **[!UICONTROL Files &amp; Folders]**, seleccione **[!UICONTROL Files]**.
 
@@ -120,7 +120,7 @@ También puede arrastrar el recurso al área **[!UICONTROL Colocar en colección
 Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la [búsqueda guardada](#saved-searches).
 
 1. En la interfaz de usuario [!DNL Assets], haga clic en la opción de búsqueda ![opción de búsqueda](assets/do-not-localize/search_icon.png) de la barra de herramientas.
-1. Con el cursor en el cuadro Omniture search, presione la tecla Retorno.
+1. Con el cursor en el cuadro Omniture search, seleccione la tecla `Return`.
 1. En la interfaz [!DNL Experience Manager], abra el panel Filtros.
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, seleccione la colección inteligente que desee modificar. El panel Buscar aparecen los filtros configurados para la búsqueda guardada.
 
@@ -249,7 +249,7 @@ Editar búsquedas guardadas es lo mismo que editar colecciones inteligentes. Par
 Para eliminar las búsquedas guardadas, siga estos pasos:
 
 1. En la interfaz de usuario [!DNL Assets], haga clic en buscar ![opción de búsqueda](assets/do-not-localize/search_icon.png).
-1. Con el cursor en el campo Omniture search, presione la tecla Retorno.
+1. Con el cursor en el campo Omniture search, seleccione la tecla `Return`.
 1. En la interfaz [!DNL Experience Manager], abra el panel Filtros.
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, haga clic en **[!UICONTROL Eliminar]** al lado de la colección inteligente que desee eliminar.
 
