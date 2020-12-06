@@ -3,9 +3,9 @@ title: '[!DNL Assets] guía de tamaño'
 description: Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Teniendo en cuenta estos factores, se requiere una metodología para calcular un
 1. Determine el tamaño y el número de recursos que se cargarán en el sistema.
 1. Obtenga una muestra representativa de los recursos que se van a cargar en [!DNL Experience Manager]. Por ejemplo, si planea cargar archivos PSD, JPG, AI y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y de la complejidad de las imágenes.
 1. Defina las representaciones que se utilizarán.
-1. Cree las representaciones en [!DNL Experience Manager] mediante aplicaciones [!DNL ImageMagick] o [!DNL Adobe Creative Cloud]. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Scene7, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en Experience Manager.
+1. Cree las representaciones en [!DNL Experience Manager] mediante aplicaciones [!DNL ImageMagick] o [!DNL Adobe Creative Cloud]. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Dynamic Media, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en Experience Manager.
 1. Si planea utilizar subrecursos, genérelos para los tipos de archivo correspondientes.
 1. Compare el tamaño de las imágenes de salida, las representaciones y los subrecursos con las imágenes originales. Permite generar un factor de crecimiento esperado cuando se carga el sistema. Por ejemplo, si genera representaciones y subrecursos con un tamaño combinado de 3 GB después de procesar 1 GB de activos, el factor de crecimiento de la representación es 3.
 1. Determine el tiempo máximo durante el cual se mantendrán las versiones de los recursos en el sistema.
