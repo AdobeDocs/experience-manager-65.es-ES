@@ -3,9 +3,9 @@ title: Migrar recursos de forma masiva
 description: Describe cómo incorporar recursos a [!DNL Adobe Experience Manager], aplicar metadatos, generar representaciones y activarlas para publicar instancias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1799'
 ht-degree: 8%
 
 ---
@@ -79,7 +79,7 @@ Dado que no es necesario transmitir los recursos a través de una red, el rendim
 
 ### Procesar representaciones {#processing-renditions}
 
-Después de cargar los recursos en el sistema, debe procesarlos mediante el flujo de trabajo [!UICONTROL Recurso de actualización de DAM] para extraer metadatos y generar representaciones. Antes de realizar este paso, debe realizar el duplicado y modificar el flujo de trabajo [!UICONTROL DAM Update Asset] para adaptarlo a sus necesidades. El flujo de trabajo integrado contiene muchos pasos que pueden no ser necesarios para usted, como la generación PTIFF de Scene7 o la integración [!DNL InDesign Server].
+Después de cargar los recursos en el sistema, debe procesarlos mediante el flujo de trabajo [!UICONTROL Recurso de actualización de DAM] para extraer metadatos y generar representaciones. Antes de realizar este paso, debe realizar el duplicado y modificar el flujo de trabajo [!UICONTROL DAM Update Asset] para adaptarlo a sus necesidades. El flujo de trabajo integrado contiene muchos pasos que puede no necesitar, como la generación de Dynamic Media PTIFF o la integración [!DNL InDesign Server].
 
 Después de configurar el flujo de trabajo según sus necesidades, tiene dos opciones para ejecutarlo:
 
