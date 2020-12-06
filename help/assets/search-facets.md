@@ -3,10 +3,10 @@ title: Facetas de búsqueda para filtrar los resultados de búsqueda
 description: Cómo crear, modificar y utilizar facetas de búsqueda en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 18%
+source-wordcount: '2424'
+ht-degree: 17%
 
 ---
 
@@ -38,15 +38,15 @@ Para las búsquedas de texto completo, agregue el predicado [!UICONTROL Texto co
    >
    >1. Vaya a `/conf/global/settings/dam/search/facets/assets/jcr:content/items` en CRXDE.
    >1. Elimine el nodo **type**.
-   >1. Desde la ruta */libs/settings/dam/search/facets/assets/jcr:content/items*, copie los nodos **asset, directory, typeor, excludepaths** y **searchtype** en la ruta mencionada en el paso 1.
+   >1. Desde la ruta `/libs/settings/dam/search/facets/assets/jcr:content/items`, copie los nodos `asset`, `directory`, `typeor`, `excludepaths` y `searchtype` a la ruta mencionada en el paso 1.
    >1. Guarde los cambios.
 
 
 1. En la página [!UICONTROL Editar búsqueda en Forms], arrastre un predicado de la ficha **[!UICONTROL Seleccionar predicado]** al panel principal. Por ejemplo, arrastre **[!UICONTROL Predicado de propiedades]**.
 
-   ![Pulse y mueva un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
+   ![Seleccionar y mover un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
 
-   *Figura: Pulse y mueva un predicado para personalizar los filtros de búsqueda.*
+   *Figura: Seleccione y mueva un predicado para personalizar los filtros de búsqueda.*
 
 1. En la ficha [!UICONTROL Configuración], introduzca una etiqueta de campo, texto de marcador de posición y descripción para el predicado. Especifique un nombre válido para la propiedad de metadatos que desea asociar con el predicado. La etiqueta de encabezado de la ficha [!UICONTROL Configuración] identifica el tipo del predicado seleccionado.
 
