@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
 workflow-type: tm+mt
 source-wordcount: '11812'
 ht-degree: 8%
@@ -991,13 +991,13 @@ Para vista de informes de vídeo:
 1. En la esquina superior izquierda de AEM, pulse el logotipo de AEM y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo.]**
 1. En la página Informes de vídeo, realice una de las acciones siguientes:
 
-   * Cerca de la esquina superior derecha, toque el icono **Actualizar informe de vídeo **1.
+   * Cerca de la esquina superior derecha, toque el icono **Actualizar informe de vídeo**.
 Sólo necesita utilizar Actualizar si la fecha de finalización del informe es el día actual. Esto garantiza que vea el seguimiento de videos que se ha producido desde la última vez que ejecutó el informe.
 
-   * Cerca de la esquina superior derecha, toque el icono **Selector de fecha ****.
+   * Cerca de la esquina superior derecha, toque el icono **Selector de fecha**.
 Especifique el intervalo de fechas de inicio y finalización para el que desea datos de vídeo y, a continuación, toque **[!UICONTROL Ejecutar informe.]**
 
-   El cuadro de grupo Métricas principales identifica varias medidas acumuladas para todos los *videos publicados en el sitio.
+   El cuadro de grupo Métricas principales identifica varias medidas acumuladas para todos los vídeos *publicados* en el sitio.
 
 1. En la tabla que lista los principales vídeos publicados, toque un nombre de vídeo para reproducir el vídeo y también vea el informe desplegable de retención de audiencias del vídeo.
 
