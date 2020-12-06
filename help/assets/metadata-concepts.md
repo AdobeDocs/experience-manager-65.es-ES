@@ -3,9 +3,9 @@ title: Conceptos de metadatos
 description: Obtenga información sobre la necesidad y los tipos de metadatos que facilitan la categorización y organización de los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2731'
 ht-degree: 6%
 
 ---
@@ -178,7 +178,7 @@ Además del DCMES, hay otros elementos de metadatos creados por la Iniciativa Du
 | Descripción | Más información sobre el recurso. |
 | format | Formato de archivo, medio físico o dimensiones del recurso. [!DNL Experience Manager] se utiliza  `dc:format` para denotar el tipo MIME del recurso. |
 | identifier | Una referencia única al recurso. |
-| language | Idioma del recurso (por ejemplo, en para inglés). |
+| language | El idioma del recurso (por ejemplo, `en` para inglés). |
 | publisher | Persona o compañía responsable de la disponibilidad del recurso. |
 | relation | Un recurso relacionado. |
 | derechos | Información sobre quién tiene los derechos de este recurso. |
