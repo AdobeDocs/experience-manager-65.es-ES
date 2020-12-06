@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1820'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Mejoras en la versión más reciente de Imágenes inteligentes:
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Las imágenes inteligentes se incluyen en la licencia existente de Dynamic Media Classic (Scene7) o AEM Dynamic Media (On Prem, AMS y AEM como Cloud Service).
+No. Las imágenes inteligentes se incluyen en la licencia existente de Dynamic Media Classic o Adobe Experience Manager - Dynamic Media (On Prem, AMS y AEM como Cloud Service).
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 
 ## ¿Cómo puedo verificar si las imágenes inteligentes funcionan correctamente?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Una vez configurada la cuenta con imágenes inteligentes, cargue una URL de imagen de Dynamic Media Classic (Scene7)/Dynamic Media en el navegador.
+1. Una vez configurada la cuenta con imágenes inteligentes, cargue una URL de imagen de Dynamic Media Classic o Adobe Experience Manager - Dynamic Media en el navegador.
 1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL Vista > Desarrollador > Herramientas para desarrolladores]** en el explorador. O bien, elija la herramienta de desarrollo de navegador que desee.
 
 1. Asegúrese de que la caché está deshabilitada cuando las herramientas de desarrollo están abiertas.
