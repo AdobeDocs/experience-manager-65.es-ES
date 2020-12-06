@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 17%
@@ -227,7 +227,7 @@ El valor exacto que devuelve el elemento de datos depende del contexto. Si el el
    * Utiliza el evento de prensa clave de la extensión Inicio de Adobe principal como activador.
    * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
 
-Ahora, supongamos que el usuario final carga la página web con los dos visores. En *viewer1*, se amplía al 50% de la escala; a continuación, en *viewer2*, se acercan a una escala del 25 %. En *viewer1*, recorren la imagen y finalmente presionan una tecla en el teclado.
+Ahora, supongamos que el usuario final carga la página web con los dos visores. En *viewer1*, se amplía al 50% de la escala; a continuación, en *viewer2*, se acercan a una escala del 25 %. En *viewer1*, recorren la imagen y, finalmente, seleccionan una tecla en el teclado.
 
 La actividad del usuario final resulta en que se realicen las dos llamadas de seguimiento siguientes a Adobe Analytics:
 
