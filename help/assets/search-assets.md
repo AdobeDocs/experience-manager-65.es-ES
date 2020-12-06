@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '5769'
+source-wordcount: '5767'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 5%
 | [](#limitations) Limitaciones y  [sugerencias](#tips) |  |  |
 | [Ejemplos ilustrados](#samples) |  |  |
 
-Busque recursos utilizando el campo Omniture en la parte superior de la interfaz Web [!DNL Experience Manager]. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en [!DNL Experience Manager], haga clic en ![search_icon](assets/do-not-localize/search_icon.png) en la barra superior, introduzca la palabra clave de búsqueda y pulse Retorno. Alternativamente, utilice el método abreviado de palabra clave `/` (barra diagonal) para abrir el campo Omnisearch. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. [!DNL Experience Manager] proporciona sugerencias a medida que el inicio escribe una palabra clave de búsqueda.
+Busque recursos utilizando el campo Omniture en la parte superior de la interfaz Web [!DNL Experience Manager]. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en [!DNL Experience Manager], haga clic en ![search_icon](assets/do-not-localize/search_icon.png) en la barra superior, introduzca la palabra clave de búsqueda y seleccione `Return`. Alternativamente, utilice el método abreviado de palabra clave `/` (barra diagonal) para abrir el campo Omnisearch. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. [!DNL Experience Manager] proporciona sugerencias a medida que el inicio escribe una palabra clave de búsqueda.
 
 Utilice el panel **[!UICONTROL Filtros]** para buscar recursos, carpetas, etiquetas y metadatos. Puede filtrar los resultados de la búsqueda en función de las distintas opciones (predicados), como el tipo de archivo, el tamaño del archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante [facetas de búsqueda](/help/assets/search-facets.md). El filtro [!UICONTROL Tipo de archivo] del panel [!UICONTROL Filtros] tiene casillas de verificación de varios estados. Por lo tanto, a menos que seleccione todos los predicados anidados (o formatos), las casillas de verificación de primer nivel se marcan parcialmente.
 
@@ -259,7 +259,7 @@ La capacidad de búsqueda en [!DNL Experience Manager Assets] tiene las siguient
 * No introduzca un espacio de interlineado en la consulta de búsqueda; de lo contrario, la búsqueda no funcionará.
 * [!DNL Experience Manager] puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso en los resultados de búsqueda y luego cancelar la búsqueda.  <!-- (CQ-4273540) -->
 * Al buscar carpetas o archivos y carpetas, los resultados de la búsqueda no se pueden ordenar según ningún parámetro.
-* Si presiona Retorno sin escribir en la barra de Omniture, [!DNL Experience Manager] devuelve una lista de sólo archivos y no carpetas. Si busca carpetas específicamente sin usar una palabra clave, [!DNL Experience Manager] no devuelve ningún resultado.
+* Si selecciona `Return` sin escribir en la barra de Omniture, [!DNL Experience Manager] devuelve una lista de sólo archivos y no carpetas. Si busca carpetas específicamente sin usar una palabra clave, [!DNL Experience Manager] no devuelve ningún resultado.
 
 La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitaciones:
 
