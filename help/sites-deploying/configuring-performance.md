@@ -677,7 +677,7 @@ La configuración AEM coloca el repositorio y el almacén de datos en el mismo v
 La siguiente tabla ilustra el tamaño de los volúmenes de datos que se utilizan en los análisis de rendimiento de backup. El contenido de la línea base inicial se instala primero y, a continuación, se añaden cantidades conocidas adicionales de datos para aumentar el tamaño del contenido del que se realiza una copia de seguridad. Las copias de seguridad se crearán en incrementos específicos para representar un gran aumento del contenido y lo que se puede producir en un día. La distribución del contenido (páginas, imágenes, etiquetas) se basará en términos generales en una composición de recursos de producción realista. Las páginas, imágenes y etiquetas estarán limitadas a un máximo de 800 páginas secundarias. Cada página incluirá los componentes de título, Flash, texto/imagen, vídeo, proyección de diapositivas, formulario, tabla, nube y carrusel. Las imágenes se cargarán desde un grupo de 400 archivos únicos de un tamaño de 37 kB a 594 kB.
 
 |Contenido|Nodos|Páginas|Imágenes|Etiquetas|
-|—|—|—|—|—|
+|---|---|---|---|---|
 |Instalación base|69 610|562|256|237|
 |Pequeño contenido para la copia de seguridad incremental||+100|+2|+2|
 |Contenido grande para copia de seguridad completa||+10 000|+100|+100|
