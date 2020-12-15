@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ MySQL Workbench debe descargarse e instalarse siguiendo las instrucciones del si
 
 Cuando MySQL Workbench se inicia por primera vez, a menos que ya se esté utilizando para otros fines, aún no mostrará ninguna conexión:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![mysqlconnection](assets/mysqlconnection.png)
 
 ### Nueva configuración de conexión {#new-connection-settings}
 
@@ -105,13 +105,13 @@ Cuando MySQL Workbench se inicia por primera vez, a menos que ya se esté utiliz
 
 #### Nueva conexión de comunidades {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![community-connection](assets/community-connection.png)
 
 ## Configuración de base de datos {#database-setup}
 
 Abra la conexión Comunidades para instalar la base de datos.
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![install-database](assets/install-database.png)
 
 ### Obtener el script SQL {#obtain-the-sql-script}
 
@@ -124,9 +124,9 @@ La secuencia de comandos SQL se obtiene del repositorio de AEM:
 1. Seleccione la carpeta /libs/social/config/datastore/dsrp/esquema
 1. Descargar `init-schema.sql`
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![database-esquema-crxde](assets/database-schema-crxde.png)
 
-Un método para descargar el esquema es
+Un método para descargar el esquema es:
 
 * Seleccione el nodo `jcr:content` para el archivo sql
 * Observe que el valor de la propiedad `jcr:data` es un vínculo de vista
@@ -143,10 +143,10 @@ Si se cambia el nombre de la base de datos en la secuencia de comandos, asegúre
 
 En el área de trabajo de MySQL
 
-* Desde el menú desplegable Archivo
-* Seleccione el `init_schema.sql` descargado
+* En el menú desplegable Archivo, seleccione la opción **[!UICONTROL Abrir script SQL]**
+* Seleccione la secuencia de comandos `init_schema.sql` descargada
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![select-sql-script](assets/select-sql-script.png)
 
 #### Paso 2: ejecutar SQL Script {#step-execute-sql-script}
 
@@ -154,13 +154,13 @@ En la ventana Workbench del archivo abierto en el paso 1, seleccione `lightening
 
 En la siguiente imagen, el archivo `init_schema.sql` está listo para ejecutarse:
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![execute-sql-script](assets/execute-sql-script.png)
 
 #### Actualizar {#refresh}
 
 Una vez ejecutada la secuencia de comandos, es necesario actualizar la sección `SCHEMAS` de `Navigator` para poder ver la nueva base de datos. Utilice el icono de actualización a la derecha de &#39;ESQUEMAS:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![refresh-esquema](assets/refresh-schema.png)
 
 ## Configurar la conexión JDBC {#configure-jdbc-connection}
 
@@ -179,7 +179,7 @@ Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del s
 * Busque el `Day Commons JDBC Connections Pool`
 * Seleccione el icono `+` para crear una nueva configuración de conexión.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * Introduzca los valores siguientes:
 
