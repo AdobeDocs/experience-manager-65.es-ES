@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 9%
@@ -44,15 +44,15 @@ Para obtener la información necesaria, visite [Conceptos básicos de los compon
 
 Cuando se coloca por primera vez en una página de un sitio de comunidad, así es como aparece el componente:
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![tabla de clasificación](assets/leaderboard.png)
 
 ### Configuración de la tabla de clasificación {#configuring-leaderboard}
 
 Seleccione el componente `Leaderboard` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![configure-leader-board](assets/configure-leaderboard.png)
 
 #### Ficha Configuración {#settings-tab}
 
@@ -120,7 +120,7 @@ Configuración del componente de la tabla de clasificación:
    * Regla de creación de distintivos = `/libs/settings/community/badging/rules//reference-badging`
    * Límite de visualización = `10`
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![participantes-tabla de clasificación](assets/participants-leaderboard.png)
 
 ### Ejemplo: Panel de liderazgo de expertos {#example-experts-leaderboard}
 
@@ -143,7 +143,7 @@ Configuración del componente de la tabla de clasificación:
    * Regla de creación de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Límite de visualización = `10`
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![experto: tabla de dirección](assets/experts-leaderboard.png)
 
 ### Información adicional {#additional-information}
 
