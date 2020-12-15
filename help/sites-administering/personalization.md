@@ -10,15 +10,15 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ffded9c4c08c68db59d05b341166bed92e741e1e
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1693'
 ht-degree: 16%
 
 ---
 
 
-# Personalización{#personalization}
+# Personalización {#personalization}
 
 ## ¿Qué es Personalización? {#what-is-personalization}
 
@@ -28,54 +28,54 @@ La personalización se centra en proporcionar al usuario un entorno personalizad
 
 Hay tres elementos principales involucrados en la personalización:
 
-**Usuarios**
+### Usuarios {#users}
 
-* tienen perfiles, tanto individuales como de grupo. Estos perfiles contienen características (como la descripción del trabajo, la ubicación o los intereses) que pueden utilizarse para personalizar el contenido que pueden ver.
-* realizar acciones. A continuación, se pueden analizar y comparar con reglas de comportamiento para adaptar el contenido que ven.
+* Tener perfiles, tanto individuales como de grupo. Estos perfiles contienen características (como la descripción del trabajo, la ubicación o los intereses) que pueden utilizarse para personalizar el contenido que pueden ver.
+* Tome medidas. A continuación, se pueden analizar y comparar con reglas de comportamiento para adaptar el contenido que ven.
 
-**Contenido**
+### Contenido {#content}
 
-* es lo que el usuario quiere ver. Preferiblemente contenido de interés y uso para ellos para cumplir sus tareas.
-* se pueden categorizar y, por lo tanto, poner a disposición de los usuarios de acuerdo con las reglas predefinidas. debe ser dinámico; en otras palabras, el contenido
-* de alguna manera, debe depender del usuario; si cada usuario viera el mismo contenido, la personalización sería redundante.
+* Es lo que el usuario quiere ver. Preferiblemente contenido de interés y uso para ellos para cumplir sus tareas.
+* Se puede categorizar y, por lo tanto, ponerlo a disposición de los usuarios según reglas predefinidas. debe ser dinámico; en otras palabras, el contenido
+* De alguna manera, debe depender del usuario; si cada usuario viera el mismo contenido, la personalización sería redundante.
 
-**Reglas**
+### Reglas {#rules}
 
-* definir cómo se produce realmente la personalización: qué contenido puede ver el usuario y cuándo.
+* Defina cómo sucede realmente la personalización: qué contenido puede ver el usuario y cuándo.
 
 La personalización puede ser:
 
-**Explícita**
+#### Explícita {#explicit}
 
 * Personalización: mediante la cual el usuario realiza selecciones de una selección de fuentes de contenido.
 
-**Implícito**
+#### Implícito {#implicit}
 
 * Basado en reglas: los administradores de negocios definen reglas específicas para acciones basadas en perfiles y/o comportamientos específicos.
 * Filtro simple: las selecciones se realizan en base a perfiles predefinidos a nivel de usuario y/o grupo.
 * Filtrado colaborativo/de recomendaciones: el comportamiento del usuario se registra según las reglas predefinidas. Estas reglas se basan en el comportamiento observado con personas con ideas afines. La información recopilada se utiliza para adaptar la información que se muestra al usuario, en particular en forma de recomendaciones.
 
-## ¿Cómo y cuándo se puede utilizar la Personalización? {#how-and-when-can-personalization-be-used}
+## ¿Cómo y cuándo se puede utilizar la personalización? {#how-and-when-can-personalization-be-used}
 
 La personalización se puede utilizar en muchos casos, por ejemplo:
 
-**Páginas de intranet**
+### Páginas de intranet {#intranet-pages}
 
 * El contenido se puede ofrecer en función de la ubicación, el departamento o la función de un usuario, ya definida en una red interna.
 * Según la opción disponible, el usuario puede realizar más selecciones.
 
-**Grupos de usuarios de destinatario específicos y limitados (extranets)**
+### Grupos de usuarios específicos, limitados y de Destinatario - Extranets {#extranets}
 
 * Los usuarios requieren un inicio de sesión para la autorización; se vinculará a un perfil que proporcione la información necesaria para la personalización; posiblemente detalles como su ubicación, relación con el producto, historial de uso, responsabilidades presupuestarias, etc.
 * Estas instancias pueden abarcar sitios como:
 * Compañías que proporcionan sitios web a una sección altamente especializada de su mercado, por ejemplo, una compañía farmacéutica que proporciona un sitio web especializado para médicos.
 * Compañías que proporcionan sitios web que permiten a sus clientes realizar vistas de la cuenta corriente y de la información de facturación; por ejemplo, proveedores de telefonía.
 
-**Sitio web de ventas y distribución**
+### Sitio Web de ventas y distribución {#sales-site}
 
 * Los sitios web de ventas y distribución, como Amazon, pueden combinar un perfil de usuario, el historial de ventas del usuario y su historial de exploración para hacer sugerencias sobre lo que podría interesar al usuario a continuación.
 
-**Buscar sitios web**
+### Buscar sitios Web {#search-site}
 
 * Muchos de los principales sitios Web de motores de búsqueda tienen herramientas analíticas muy poderosas que registran el comportamiento del usuario, los términos de búsqueda que utilizan y los sitios Web que visitan. A continuación, se utiliza para personalizar el contenido proporcionado, especialmente en lo que respecta a la visualización de anuncios.
 
@@ -93,31 +93,35 @@ A continuación se indican los motivos por los que se debe utilizar la personali
 
 Al utilizar la personalización, tenga en cuenta lo siguiente:
 
-**Actuación**
+#### Actuación {#performance}
 
 * Naturalmente, la análisis y la evaluación adicionales repercuten en el rendimiento. Sin embargo, los métodos utilizados son muy sofisticados y se pueden optimizar para minimizar el impacto.
 
-**Autorización**
+#### Autorización {#authorization}
 
 * La personalización requiere un mecanismo de inicio de sesión, ya que el sitio web debe poder identificar al usuario.
 
-**Almacenamiento en caché**
+#### Almacenamiento en caché {#caching}
 
 * El almacenamiento en caché es un aspecto que el usuario verá en cuanto al rendimiento y la precisión: la rapidez con la que el sitio web ofrece contenido personalizado y siempre está actualizado.
-* El almacenamiento en caché es una consideración clave a la hora de configurar la personalización y debe tomarse tiempo para garantizar que se utilice la implementación correcta. Esto se analizará más detalladamente más adelante.
+* El almacenamiento en caché es una consideración clave a la hora de configurar la personalización y debe tomarse tiempo para garantizar que se utilice la implementación correcta.
 
-**Precisión de las reglas**
+>[!TIP]
+>
+>El efecto de la personalización en el rendimiento y los temas relacionados con el almacenamiento en caché se analizan más a fondo en el documento [Optimización del rendimiento.](/help/sites-deploying/configuring-performance.md)
+
+#### Precisión de las reglas {#accuracy}
 
 * La personalización realizada mediante el seguimiento del comportamiento del usuario o la configuración de reglas basadas en el perfil del usuario debe ser precisa y lógica.
 * No hay nada más frustrante para el usuario que tener contenido forzado o negado a hacerlo debido a la lógica inexacta de una regla.
 * Por lo tanto, las reglas deben estar bien pensadas, con los requisitos del usuario en primer plano. Esto puede requerir mucho esfuerzo y no debe subestimarse; la definición de las reglas comerciales suele superar el esfuerzo técnico al implementar la personalización.
 
-**Cuándo usar**
+#### Cuándo usar {#when-to-use}
 
 * Al igual que muchas funciones de la web, la personalización debe usarse con cuidado. ¿Su uso beneficiará realmente al usuario? siempre debe ser la primera consideración -o si el objetivo deseado se puede lograr con menos esfuerzo por otro método. La personalización puede correr el riesgo de ser una función que los usuarios configuren una vez (para ver cómo funciona) y sólo una vez, ya que no les ofrece ninguna ventaja real.
 * La personalización solo es significativa cuando el contenido es dinámico, ya que depende del usuario de alguna manera. Si todos los usuarios ven el mismo contenido, la personalización es redundante.
 
-**Confidencialidad**
+#### Confidencialidad {#confidentiality}
 
 * Muchos usuarios están preocupados por la seguridad y protección de datos. En particular, los datos recuperados al rastrear su comportamiento al navegar por la web.
 
@@ -156,7 +160,7 @@ Se proporcionan varios componentes con AEM para la personalización. Algunos per
 | Nombre para mostrar en el perfil | Nombre para mostrar. |
 | Correo electrónico del perfil | Introducción de una dirección de correo electrónico. |
 | Género de perfil | Permite la introducción del género. |
-| Número de teléfono principal del perfil | Permite la introducción de un número de teléfono. |
+| Número de teléfono principal de perfil | Permite la introducción de un número de teléfono. |
 | URL principal del perfil | Permite la introducción de una dirección URL. |
 | Perfil General Text, propiedad | Propiedades del perfil. |
 | Inicio de sesión | Permite enviar un nombre de usuario y una contraseña al iniciar sesión. |
@@ -170,9 +174,9 @@ Las funciones de la comunidad como blogs, foros y calendarios resultan en la cre
 
 Con la extensión [AEM Communities 6.1](/help/communities/overview.md), este problema se resuelve mediante el uso de un [almacén común para UGC](/help/communities/working-with-srp.md). Por lo que respecta a la personalización, Communities incluye [Inicio de sesión en Social](/help/communities/social-login.md): la capacidad de proporcionar la opción para que los visitantes del sitio inicien sesión con Facebook y Twitter.
 
-Sin la extensión de Comunidades, varios métodos para explorar para abordar el problema de la coherencia de la UGC son:
+Sin la extensión de Comunidades, varios métodos para explorar para abordar el problema de la coherencia de los UGC son:
 
-* sincronizar varias instancias de publicación cuando sea necesario
-* enviar el UGC desde la instancia de publicación al entorno de creación, desde donde se puede publicar de forma similar a publicar el contenido de la página
+* Sincronice las varias instancias de publicación cuando sea necesario
+* Envíe el UGC desde la instancia de publicación al entorno de creación, desde donde se puede publicar de forma similar a como se publica el contenido de la página
 
 El método utilizado para lograr la coherencia UGC en un entorno de publicación que consta de varias instancias de publicación debe diseñarse y probarse cuidadosamente para comprobar el rendimiento y la coherencia.
