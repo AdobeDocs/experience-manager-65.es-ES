@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -51,15 +51,15 @@ Para obtener la información necesaria, visite [Conceptos básicos de los compon
 
 Cuando se incluyen las [bibliotecas requeridas del lado del cliente](essentials-featured.md#essentials-for-client-side), así es como aparecerá el componente `Featured Content`:
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![contenido de funciones](assets/featuredcontent.png)
 
 ## Configuración del contenido destacado {#configuring-featured-content}
 
 Seleccione el componente `Featured Content` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![feature content1](assets/featuredcontent1.png)
 
 ### Ficha Configuración {#settings-tab}
 
@@ -83,13 +83,13 @@ La capacidad de marcar el contenido como contenido destacado requiere privilegio
 
 Cuando un moderador vista el contenido publicado, tiene acceso a los indicadores de moderación en contexto, que incluyen el nuevo indicador `Feature`.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![site-visitante-experience](assets/site-visitor-experience.png)
 
 Una vez marcada como característica, el indicador de modelación se convierte en `Unfeature`.
 
 La página que contiene el componente `Featured Content` incluirá ahora esta publicación.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![site-visitante-experience1](assets/site-visitor-experience1.png)
 
 `Read More` es un vínculo al anuncio real.
 
