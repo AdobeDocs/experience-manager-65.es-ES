@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 1%
@@ -391,13 +391,13 @@ Por ejemplo, http://localhost:4503/system/console/configMgr
 * Seleccione esta opción para abrir la configuración y editarla.
 * Seleccione **[!UICONTROL Guardar]**.
 
-![chlimage_1-489](assets/chlimage_1-489.png)
+![graniteoauth](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
 >Tenga cuidado de no confundir el controlador de autenticación con una instancia de Facebook o Twitter de *Proveedor y aplicación OAuth de Adobe Granite*.
 
-![chlimage_1-490](assets/chlimage_1-490.png)
+![graniteoauth1](assets/graniteoauth1.png)
 
 ### Adobe Granite OAuth Application and Provider {#adobe-granite-oauth-application-and-provider}
 
@@ -414,7 +414,7 @@ Para localizar la instancia creada para una aplicación de Facebook o Twitter:
 
    * Busque la instancia donde **[!UICONTROL ID de cliente]** coincide con el **[!UICONTROL ID de aplicación]**.
 
-      ![chlimage_1-491](assets/chlimage_1-491.png)
+      ![graniteoauth2](assets/graniteoauth2.png)
 
       Salvo las siguientes propiedades, no modifique las demás propiedades de la configuración:
 
@@ -493,7 +493,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
 
 * Para el **nombre** `oauthid-123`, reemplace *123* por la ***ID de la aplicación*** o la clave ***de consumo (API) de Twitter*** que es el valor del **ID del cliente** en el Adobe &lt;a111/>Configuración de Granite OAuth Application y Provider](social-login.md#adobe-granite-oauth-application-and-provider).[
 
-   ![chlimage_1-492](assets/chlimage_1-492.png)
+   ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
 Para obtener información y herramientas adicionales, consulte [Consultas e indexación de roble](../../help/sites-deploying/queries-and-indexing.md).
 
