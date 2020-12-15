@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -35,7 +35,7 @@ Para llegar a la consola de funciones de comunidad en el entorno de creación:
 
 * Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Funciones de la comunidad]**.
 
-![chlimage_1-379](assets/chlimage_1-379.png)
+![funciones de comunidad](assets/community-functions.png)
 
 ## Funciones precompiladas {#pre-built-functions}
 
