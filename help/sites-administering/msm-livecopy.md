@@ -2,9 +2,9 @@
 title: Creación y sincronización de Live Copies
 description: Obtenga información sobre cómo crear y sincronizar Live Copies.
 translation-type: tm+mt
-source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
+source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4114'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Para crear una configuración de modelo:
 1. [](/help/sites-authoring/basic-handling.md#global-navigation) Navegue hasta el  **** menú Herramientas y, a continuación, seleccione el  **** menú Sitio.
 1. Seleccione **Modelos** para abrir la consola **Configuraciones de modelo**:
 
-   ![chlimage_1-209](assets/chlimage_1-209.png)
+   ![chlimage_1-209](assets/blueprint-configurations.png)
 
 1. Seleccione **Crear**.
 1. Seleccione la plantilla de modelo y, a continuación, **Siguiente** para continuar.
@@ -66,14 +66,12 @@ Puede editar o eliminar una configuración de modelo existente:
 1. [](/help/sites-authoring/basic-handling.md#global-navigation) Navegue hasta el  **** menú Herramientas y, a continuación, seleccione el  **** menú Sitio.
 1. Seleccione **Modelos** para abrir la consola **Configuraciones de modelo**:
 
-   ![chlimage_1-210](assets/chlimage_1-210.png)
+   ![chlimage_1-210](assets/blueprint-configurations.png)
 
 1. Seleccione la configuración de modelo requerida: las acciones correspondientes estarán disponibles en la barra de herramientas:
 
    * **Propiedades**; puede utilizarla para la vista y, a continuación, editar las propiedades de la configuración.
    * **Eliminar**
-
-   ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Creación de una copia activa {#creating-a-live-copy}
 
@@ -154,7 +152,7 @@ Para crear una Live Copy de un sitio a partir de una configuración de modelo:
 1. En la consola **Sitios**, seleccione **Crear** y luego **Sitio** en el selector desplegable.
 1. Seleccione la configuración de modelo que se utilizará como origen de la Live Copy y continúe con **Siguiente**:
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/blueprint-configuration-select.png)
 
 1. Utilice el selector **Idiomas iniciales** para especificar el idioma o los idiomas del sitio de modelo que se utilizarán para la Live Copy.
 
