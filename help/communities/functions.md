@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
+source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -51,7 +51,7 @@ Cuando se agrega una función de comunidad a una plantilla de sitio de comunidad
 
 #### Detalles de la función de configuración {#configuration-function-details}
 
-![chlimage_1-380](assets/chlimage_1-380.png)
+![title-url-details](assets/title-url-details.png)
 
 * **Título**
 
@@ -70,7 +70,7 @@ A continuación, la dirección URL de la página es https://localhost:4503/conte
 
 y el vínculo de menú de la página aparece como:
 
-![chlimage_1-381](assets/chlimage_1-381.png)
+![engagement-page](assets/engage-page.png)
 
 ### Función Secuencia de actividades {#activity-stream-function}
 
@@ -80,7 +80,7 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 #### Detalles de la función de configuración {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![function-details](assets/function-details.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -110,7 +110,7 @@ La función de blog es una página con un [componente de blog](/help/communities
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
-![chlimage_1-383](assets/chlimage_1-383.png)
+![blog-component](assets/blog-component.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -136,7 +136,7 @@ La función de calendario es una página con un [componente de calendario](/help
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![calendar-details](assets/calendar-details.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -201,7 +201,7 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 #### Detalles de la función de configuración {#configuration-function-details-2}
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![forum-component1](assets/forum-component1.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -243,7 +243,7 @@ A partir del paquete de funciones 1](/help/communities/deploy-communities.md#lat
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
-![chlimage_1-386](assets/chlimage_1-386.png)
+![group-template-config](assets/group-template-config.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
@@ -266,7 +266,7 @@ La función de ideación es una página con un [componente de ideación](/help/c
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que especifica los nombres predeterminados de Título y URL, así como la configuración de visualización predeterminada de la plantilla:
 
-![chlimage_1-387](assets/chlimage_1-387.png)
+![ideation-function](assets/ideation-function.png)
 
 * [Configuración de título y dirección URL](#title-and-url-settings)
 
