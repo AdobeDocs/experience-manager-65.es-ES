@@ -7,10 +7,10 @@ user-guide-title: Guía del usuario de administración de AEM 6.5
 breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 98180b630c991bc65ddfa275e0f8a97be3be6f7e
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 17%
    + [Configuración del componente Vídeo](config-video.md)
    + [Editor masivo](bulk-editor.md)
    + [Configuración de la notificación por correo electrónico](notification.md)
-   + [Comprobador de vínculos externos](external-link-checker.md)
+   + [Verificador de vínculos](external-link-checker.md)
    + [Resolución de problemas AEM](troubleshoot.md)
    + [Administración del acceso a los Flujos de trabajo](workflows-managing.md)
    + [Inicio de Flujos de trabajo](workflows-starting.md)
