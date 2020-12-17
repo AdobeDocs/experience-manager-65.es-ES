@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
+source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
 workflow-type: tm+mt
-source-wordcount: '6648'
-ht-degree: 1%
+source-wordcount: '6658'
+ht-degree: 2%
 
 ---
 
@@ -388,10 +388,10 @@ En ambos casos, puede definir el número esperado de transacciones por segundo c
 
 | Componente | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
-| Página principal de usuario único | Promedio | 1 | 3 |  |  |
+| Página principal de usuario único | Promedio | 1 | 1 |  |  |
 |  | Pico | 1 | 3 |  |  |
 | Página principal 100 usuarios | Promedio | 100 | 1 |  |  |
-|  | Pico | 100 | 3 |  |
+|  | Pico | 100 | 1 |  |
 
 #### Pruebas de componentes combinadas {#combined-component-tests}
 
@@ -400,7 +400,7 @@ Al probar los componentes en combinación, se refleja mejor el comportamiento de
 | Escenario | Componente | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Media mixta | Página principal | 10 | 1 |  |  |
-|  | Búsqueda   | 10 | 1 |  |  |
+|  | Búsqueda   | 10 | 3 |  |  |
 |  | Noticias | 10 | 2 |  |  |
 |  | Sucesos | 10 | 1 |  |  |
 |  | Activaciones | 10 | 1 |  | Simulación del comportamiento del autor. |
@@ -436,7 +436,7 @@ Al diseñar estas pruebas, hay que recordar que no todos los escenarios se produ
 | Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Sólo &amp;ast;&amp;ast;&amp;ast;;;; ast;; se buscan. |
 |  | Palabra de detención | 20 | 2 |  | Buscando una palabra de parada. |
 |  | Cadena vacía | 10 | 1 |  | Buscando una cadena vacía. |
-|  | Caracteres especiales | 10 | 1 |  | Buscando caracteres especiales. |
+|  | Caracteres especiales | 10 | 3 |  | Buscando caracteres especiales. |
 
 #### Pruebas de resistencia {#endurance-tests}
 
@@ -448,7 +448,7 @@ Algunos problemas sólo se encontrarán después de que el sistema haya estado f
 |  | Búsqueda   | 10 | 1 |  |  |
 |  | Noticias | 20 | 2 |  |  |
 |  | Sucesos | 10 | 1 |  |  |
-|  | Activaciones | 3 | 3 |  | Simulación del comportamiento del autor. |
+|  | Activaciones | 3 | 1 |  | Simulación del comportamiento del autor. |
 
 ### Optimización {#optimization}
 
@@ -676,11 +676,11 @@ La configuración AEM coloca el repositorio y el almacén de datos en el mismo v
 
 La siguiente tabla ilustra el tamaño de los volúmenes de datos que se utilizan en los análisis de rendimiento de backup. El contenido de la línea base inicial se instala primero y, a continuación, se añaden cantidades conocidas adicionales de datos para aumentar el tamaño del contenido del que se realiza una copia de seguridad. Las copias de seguridad se crearán en incrementos específicos para representar un gran aumento del contenido y lo que se puede producir en un día. La distribución del contenido (páginas, imágenes, etiquetas) se basará en términos generales en una composición de recursos de producción realista. Las páginas, imágenes y etiquetas estarán limitadas a un máximo de 800 páginas secundarias. Cada página incluirá los componentes de título, Flash, texto/imagen, vídeo, proyección de diapositivas, formulario, tabla, nube y carrusel. Las imágenes se cargarán desde un grupo de 400 archivos únicos de un tamaño de 37 kB a 594 kB.
 
-|Contenido|Nodos|Páginas|Imágenes|Etiquetas|
+| Contenido | Nodos | Páginas | Imágenes | Etiquetas |
 |---|---|---|---|---|
-|Instalación base|69 610|562|256|237|
-|Pequeño contenido para la copia de seguridad incremental||+100|+2|+2|
-|Contenido grande para copia de seguridad completa||+10 000|+100|+100|
+| Instalación básica | 69 610 | 562 | 256 | 237 |
+| Contenido pequeño para backup incremental |  | +100 | +2 | +2 |
+| Gran contenido para copia de seguridad completa |  | +10 000 | +100 | +100 |
 
 El parámetro de referencia de copia de seguridad se repite con los conjuntos de contenido adicionales agregados en cada repetición.
 
