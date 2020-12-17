@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: d621a612556f0bea032444c2e07be101868b1905
+source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3386'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,11 @@ Otros puntos a tener en cuenta son:
 * cuando se requiera el método (GET, POST), se especificará en mayúsculas según la especificación HTTP, por ejemplo: job.POST.esp (ver más abajo)
 * se admiten varios motores de secuencias de comandos:
 
-   * `.esp, .ecma`:: Páginas de ECMAScript (JavaScript) (ejecución en el servidor)
-   * `.jsp`:: Java Server Pages (ejecución en el servidor)
-   * `.java`:: Compilador de servlet Java (ejecución en el servidor)
-   * `.jst`:: Plantillas de JavaScript (ejecución del cliente)
+   * HTL (Lenguaje de plantilla HTML: sistema de plantillas de servidor preferido y recomendado por Adobe Experience Manager para HTML): `.html`
+   * Páginas de ECMAScript (JavaScript) (ejecución en el servidor): `.esp, .ecma`
+   * Páginas del servidor Java (ejecución en el servidor): `.jsp`
+   * Compilador de servlet Java (ejecución en el servidor): `.java`
+   * Plantillas de JavaScript (ejecución del cliente): `.jst`
 
 La lista de los motores de secuencias de comandos admitidos por la instancia de AEM dada se muestra en la Consola de administración Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
