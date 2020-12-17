@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 81707b4d57f7f15106459b91f95b1bc6ec333bf4
+source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 72%
+source-wordcount: '3250'
+ht-degree: 61%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 72%
 
 [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en la Web, dispositivos móviles, correo electrónico y pantallas e impresiones conectadas a Internet.
 
-Puede ver los recursos de AEM publicados en Scene7 en distintos visores:
+Puede vista de recursos Experience Manager publicados en Scene7 en varios visores:
 
 * Zoom
 * Flotante
@@ -31,13 +31,13 @@ Puede ver los recursos de AEM publicados en Scene7 en distintos visores:
 * Plantilla de imagen
 * Imagen
 
-Puede publicar recursos digitales directamente de AEM a Scene7 y de Scene7 a AEM.
+Puede publicar recursos digitales directamente de Experience Manager a Scene7 y puede publicar recursos digitales de Scene7 en Experience Manager.
 
-En este documento se describe cómo publicar recursos digitales de AEM a Scene7 y viceversa. Los visores también se describen en detalle. Para obtener información sobre la configuración de AEM para Scene7, consulte [Integración de Scene7 con AEM](/help/sites-administering/scene7.md).
+Este documento describe cómo publicar recursos digitales de Experience Manager a Scene7 y viceversa. Los visores también se describen en detalle. Para obtener información sobre la configuración de Experience Manager para Scene7, consulte [Integración de Scene7 con Experience Manager](/help/sites-administering/scene7.md).
 
 Consulte también [Adición de mapas de imagen](/help/assets/image-maps.md).
 
-Para obtener más información sobre el uso de componentes de vídeo con AEM, consulte lo siguiente:
+Para obtener más información sobre el uso de componentes de vídeo con Experience Manager, consulte lo siguiente:
 
 * [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
@@ -51,14 +51,14 @@ Puede publicar recursos digitales en Scene7 desde la consola Recursos en la inte
 
 >[!NOTE]
 >
->AEM publica en Scene7 de forma asíncrona. Después de hacer clic en **Publicar**, puede que deba esperar unos segundos hasta que el recurso se publique en Scene7.
+>Experience Manager publica en Scene7 de forma asíncrona. Después de hacer clic en **Publicar**, puede que deba esperar unos segundos hasta que el recurso se publique en Scene7.
 
 
 ### Publicación desde la consola Recursos {#publishing-from-the-assets-console}
 
 Para publicar en Scene7 desde la consola Recursos si los recursos se encuentran en una carpeta de destino de Scene7: 
 
-1. En la IU clásica AEM, haga clic en **Recursos digitales** para acceder al administrador de recursos digitales.
+1. En la IU clásica de Experience Manager, haga clic en **Recursos digitales** para acceder al administrador de recursos digitales.
 
 1. Seleccione el recurso (o los recursos) o la carpeta de la carpeta de destino que desea publicar en Scene7, haga clic con el botón derecho y seleccione **Publicar en Scene7**. También puede seleccionar **Publicar en Scene7** en el menú **Herramientas**.
 
@@ -80,7 +80,7 @@ Puede publicar manualmente un recurso siempre que este se encuentre en la carpet
 
 Para publicar en Scene7 directamente desde un recurso digital:
 
-1. En AEM, haga clic en **Recursos digitales** para acceder al administrador de recursos digitales.
+1. En Experience Manager, haga clic en **Recursos digitales** para acceder al administrador de recursos digitales.
 
 1. Haga doble clic en dicha opción para abrir un recurso.
 
@@ -92,7 +92,7 @@ Para publicar en Scene7 directamente desde un recurso digital:
 
    >[!NOTE]
    >
-   >Si el recurso no se publica correctamente en Scene7, el vínculo cambia a **Error de publicación**. Si el recurso ya se ha publicado en Scene7, el nombre del vínculo es **Volver a publicar en Scene7**. La función de volver a publicar permite realizar cambios en un recurso en AEM y volver a publicarlo.
+   >Si el recurso no se publica correctamente en Scene7, el vínculo cambia a **Error de publicación**. Si el recurso ya se ha publicado en Scene7, el nombre del vínculo es **Volver a publicar en Scene7**. La republicación permite realizar cambios en un recurso en el Experience Manager y volver a publicarlo.
 
 ### Publicación de recursos desde fuera de la carpeta de destino de CQ {#publishing-assets-from-outside-the-cq-target-folder}
 
@@ -106,7 +106,7 @@ En primer lugar, debe ajustar la configuración de nube de la página en la que 
 
 Para publicar los recursos que residen fuera de la carpeta de destino de CQ:
 
-1. En la interfaz de usuario clásica de AEM, haga clic en **Sitios web** y navegue a la página web a la que quiera añadir un recurso digital que aún no se haya publicado en Scene7. (Se aplican las reglas de herencia de página habituales).
+1. En Experience Manager en la IU clásica, haga clic en **Sitios web** y navegue a la página web en la que desee agregar un recurso digital que aún no se haya publicado en Scene7. (Se aplican las reglas de herencia de página habituales).
 
 1. En la barra de tareas, haga clic en el icono **Página** y, después, en **Propiedades de página**.
 
@@ -124,7 +124,7 @@ Para publicar los recursos que residen fuera de la carpeta de destino de CQ:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Haga clic en **Comprobar estado de publicación de Scene7**. Si los recursos no se han publicado, AEM los publica en Scene7. Una vez cargado, el recurso se encuentra en la carpeta ad hoc. De forma predeterminada, la carpeta personalizada está ubicada en **nombre_de_la_empresa/CQ5_adhoc**. Puede [configurarla, si es necesario](#configuringtheadhocfolder).
+1. Haga clic en **Comprobar estado de publicación de Scene7**. Si los recursos no están publicados, Experience Manager los publica en Scene7. Una vez cargado, el recurso se encuentra en la carpeta ad hoc. De forma predeterminada, la carpeta personalizada está ubicada en **nombre_de_la_empresa/CQ5_adhoc**. Puede [configurarla, si es necesario](#configuringtheadhocfolder).
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ Para publicar los recursos que residen fuera de la carpeta de destino de CQ:
 
 ## Componentes de Scene7  {#scene-components}
 
-Los siguientes componentes de Scene7 están disponibles en AEM:
+Los siguientes componentes de Scene7 están disponibles en Experience Manager:
 
 * Zoom
 * Flotante (zoom)
@@ -144,7 +144,7 @@ Los siguientes componentes de Scene7 están disponibles en AEM:
 >
 >Estos componentes no están disponibles de forma predeterminada y se deben seleccionar en el modo Diseño para que se puedan usar.
 
-Una vez que los haya activado en el modo Diseño, puede añadir los componentes a la página como cualquier otro componente de AEM. Los recursos que aún no se hayan publicado en Scene7 se publican finalmente en Scene7 si se encuentran en una carpeta sincronizada o en una página, o bien si tienen una configuración de nube de Scene7.
+Una vez que estén disponibles en el modo Diseño, puede añadir los componentes a la página como cualquier otro componente de Experience Manager. Los recursos que aún no se hayan publicado en Scene7 se publican finalmente en Scene7 si se encuentran en una carpeta sincronizada o en una página, o bien si tienen una configuración de nube de Scene7.
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Un componente de Scene7 se añade a una página de la misma manera que se añade
 
 Para añadir un componente o visor de Scene7 a una página en la interfaz de usuario clásica:
 
-1. En AEM, abra la página a la que quiera añadir el componente de Scene7.
+1. En Experience Manager, abra la página donde desee agregar el componente Scene7.
 
 1. Si no hay componentes de Scene7 disponibles, haga clic en la regla de la barra de tareas para acceder al modo **Diseño** y, después, en el parsys (sistema de párrafos) **Editar**. Entonces, seleccione todos los componentes de **Scene7** para que estén disponibles.
 
@@ -180,7 +180,7 @@ El diseño interactivo para sus recursos implica que estos se ajustan según el 
 
 Para añadir una experiencia de visualización interactiva a un sitio interactivo en la interfaz de usuario clásica:
 
-1. Inicie sesión en AEM y asegúrese de que tiene [Cloud Services de Adobe Scene7](/help/sites-administering/scene7.md#configuring-scene-integration) configurados y de que los componentes de Scene7 están disponibles.
+1. Inicie sesión en Experience Manager y asegúrese de que tiene [Cloud Services de Adobe Scene7](/help/sites-administering/scene7.md#configuring-scene-integration) configurados y de que los componentes de Scene7 están disponibles.
 
    >[!NOTE]
    >
@@ -227,7 +227,7 @@ En el componente Flotante HTML5, el recurso se muestra como una pantalla dividid
 
 ### Imagen {#image}
 
-El componente Imagen de Scene7 le permite añadir la funcionalidad de Scene7 a sus imágenes, como los modificadores de imagen de Scene7, los ajustes preestablecidos de visor o imagen, y el enfoque. El componente Imagen de Scene7 es similar a otros componentes de imagen de AEM, con la funcionalidad especial de Scene7. En este ejemplo, la imagen tiene aplicado el modificador URL de Scene7, **&amp;op_invert=1**.
+El componente Imagen de Scene7 le permite añadir la funcionalidad de Scene7 a sus imágenes, como los modificadores de imagen de Scene7, los ajustes preestablecidos de visor o imagen, y el enfoque. El componente de imagen de Scene7 es similar a otros componentes de imagen en Experience Manager con una funcionalidad Scene7 especial. En este ejemplo, la imagen tiene aplicado el modificador URL de Scene7, **&amp;op_invert=1**.
 
 ![](do-not-localize/chlimage_1-4.png)
 
@@ -253,7 +253,7 @@ El componente Imagen de Scene7 le permite añadir la funcionalidad de Scene7 a s
 
 ### Plantilla de imagen {#image-template}
 
-Las [plantillas de imagen de Scene7](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) son contenido de Photoshop con capas importado a Scene7, en que el contenido y las propiedades se han parametrizado para disponer de variabilidad. El componente **Plantilla de imagen** le permite importar imágenes y cambiar el texto de forma dinámica en AEM. Además, puede configurar el componente **Plantilla de imágenes** para utilizar valores de ClientContext, de modo que cada usuario experimenta la imagen de una forma personalizada.
+Las [plantillas de imagen de Scene7](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) son contenido de Photoshop con capas importado a Scene7, en que el contenido y las propiedades se han parametrizado para disponer de variabilidad. El componente **Plantilla de imagen** permite importar imágenes y cambiar el texto dinámicamente en Experience Manager. Además, puede configurar el componente **Plantilla de imágenes** para utilizar valores de ClientContext, de modo que cada usuario experimenta la imagen de una forma personalizada.
 
 Haga clic en **Editar** para configurar el componente. Puede configurar [opciones comunes a todos los componentes de Scene7](/help/sites-administering/scene7.md#settingscommontoallscene7components), así como otras opciones que se describen en esta sección.
 
@@ -327,15 +327,15 @@ Cuando se utiliza un conjunto de vídeos adaptables con el componente de vídeo 
 
 ## Navegador de contenido de Scene7 {#scene-content-browser}
 
-El navegador de contenido de Scene7 le permite ver el contenido de Scene7 directamente en AEM. Para acceder al navegador de contenido, en el Buscador de contenido, seleccione **Scene7** en la interfaz de usuario táctil o el icono **S7** en la interfaz de usuario clásica. La funcionalidad es idéntica en ambas interfaces de usuario.
+El navegador de contenido de Scene7 permite realizar vistas de contenido desde Scene7 directamente en Experience Manager. Para acceder al navegador de contenido, en el Buscador de contenido, seleccione **Scene7** en la interfaz de usuario táctil o el icono **S7** en la interfaz de usuario clásica. La funcionalidad es idéntica en ambas interfaces de usuario.
 
-Si tiene varias configuraciones, AEM muestra de forma predeterminada la [configuración predeterminada](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puede seleccionar diferentes configuraciones directamente en el navegador de contenido de Scene7 en el menú desplegable.
+Si tiene varias configuraciones, el Experience Manager muestra de forma predeterminada la [configuración predeterminada](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puede seleccionar diferentes configuraciones directamente en el navegador de contenido de Scene7 en el menú desplegable.
 
 >[!NOTE]
 >
 >* Los recursos que se encuentran en la carpeta personalizada no aparecerán en el navegador de contenido de Scene7.
 >* Cuando [se habilita la vista previa segura](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), los recursos publicados y no publicados de Scene7 aparecen en el navegador de contenido de Scene7.
->* Si no ve **Scene7** o el icono **S7** como una opción en el explorador de contenido, debe [configurar Scene7 para que funcione con AEM](/help/sites-administering/scene7.md).
+>* Si no ve **Scene7** o el icono **S7** como una opción en el explorador de contenido, debe [configurar Scene7 para que funcione con Experience Manager](/help/sites-administering/scene7.md).
 >* Por lo que respecta a vídeo, el navegador de contenido de Scene7 admite las opciones siguientes:
    >   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
    >   * Vídeo MP4 sencillo
@@ -368,7 +368,7 @@ De forma predeterminada, los recursos se muestran por el nombre de archivo. Tamb
 
 ### Búsqueda de recursos de Scene7 con el navegador de contenido {#searching-for-scene-assets-with-the-content-browser}
 
-La búsqueda de recursos de Scene7 es similar a la búsqueda de recursos de AEM, excepto que, al realizar una búsqueda, está viendo en realidad una vista remota de los recursos del sistema de Scene7, en lugar de importarlos directamente a AEM.
+La búsqueda de recursos de Scene7 es similar a la búsqueda de recursos de Experience Manager, excepto que al realizar una búsqueda, se ve una vista remota de los recursos en el sistema Scene7, en lugar de importarlos directamente en el Experience Manager.
 
 Puede utilizar la interfaz de usuario clásica o la optimizada para el uso táctil para ver y buscar recursos. Según la interfaz, la búsqueda es ligeramente diferente.
 
@@ -380,9 +380,9 @@ Al buscar en cualquier interfaz de usuario, puede filtrar según los criterios s
 
 **Carpeta/** rutaEl nombre de la carpeta que aparece se basa en la configuración seleccionada. Para ver los niveles inferiores, haga clic en el icono de carpeta, seleccione una subcarpeta y, a continuación, haga clic en la marca de verificación para seleccionarla.
 
-Si introduce una palabra clave y selecciona una carpeta, AEM realiza la búsqueda en esa carpeta y todas las subcarpetas. Sin embargo, si no introduce ninguna palabra clave cuando realice la búsqueda, al seleccionar la carpeta solo se mostrarán los recursos de esa carpeta y no se incluirá ninguna de las subcarpetas.
+Si introduce una palabra clave y selecciona una carpeta, el Experience Manager buscará esa carpeta y las subcarpetas. Sin embargo, si no introduce ninguna palabra clave cuando realice la búsqueda, al seleccionar la carpeta solo se mostrarán los recursos de esa carpeta y no se incluirá ninguna de las subcarpetas.
 
-De forma predeterminada, AEM realiza la búsqueda en la carpeta seleccionada y todas las subcarpetas.
+De forma predeterminada, el Experience Manager busca en la carpeta seleccionada y en todas las subcarpetas.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -394,7 +394,7 @@ De forma predeterminada, AEM realiza la búsqueda en la carpeta seleccionada y t
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Tipo de** recursoEn el navegador Scene7, puede filtrar los resultados para incluir cualquiera de los siguientes elementos: imágenes, plantillas, vídeos y conjuntos de vídeos adaptables. Si no selecciona ningún tipo de recurso, AEM busca de manera predeterminada todos los tipos de recursos.
+**Tipo de** recursoEn el navegador Scene7, puede filtrar los resultados para incluir cualquiera de los siguientes elementos: imágenes, plantillas, vídeos y conjuntos de vídeos adaptables. Si no selecciona ningún tipo de recurso, el Experience Manager buscará de forma predeterminada todos los tipos de recurso.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -404,10 +404,10 @@ De forma predeterminada, AEM realiza la búsqueda en la carpeta seleccionada y t
    >
    >
 * Al buscar vídeos, se busca una sola representación. Los resultados devuelven la representación original (solo *.mp4) y la representación codificada.
-* Al buscar un conjunto de vídeos adaptables, busca en la carpeta y en todas las subcarpetas, pero solo si ha agregado una palabra clave a la búsqueda. Si no ha añadido ninguna palabra clave, AEM no busca en las subcarpetas.
+* Al buscar un conjunto de vídeos adaptables, busca en la carpeta y en todas las subcarpetas, pero solo si ha agregado una palabra clave a la búsqueda. Si no ha agregado una palabra clave, el Experience Manager no busca en las subcarpetas.
 
 
 
-**Estado** de publicaciónPuede filtrar recursos en función del estado de publicación: No publicado o publicado. Si no selecciona ningún estado de publicación, AEM busca de manera predeterminada todos los estados de publicación.
+**Estado** de publicaciónPuede filtrar recursos en función del estado de publicación: No publicado o publicado. Si no selecciona ningún estado de publicación, el Experience Manager buscará de forma predeterminada todos los estados de publicación.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
