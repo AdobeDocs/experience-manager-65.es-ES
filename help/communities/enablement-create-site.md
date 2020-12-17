@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: e9d5a7acad04d841cbc7d62050163f3de998fab6
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 3%
@@ -70,9 +70,9 @@ Seleccione el estilo que desee aplicar a la plantilla. Cuando se selecciona, el 
 
 (Opcional) Cargue una imagen de pancarta para mostrarla en las páginas del sitio. La pancarta se fija en el borde izquierdo del explorador, entre el encabezado del sitio de la comunidad y el menú (vínculos de navegación). La altura de la pancarta se recorta a 120 píxeles. No se puede cambiar el tamaño del letrero para que se ajuste al ancho del navegador y a la altura de 120 píxeles.
 
-![chlimage_1-449](assets/chlimage_1-449.png)
+![site-branding1](assets/site-branding1.png)
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![site-branding2](assets/site-branding2.png)
 
 Seleccione **Siguiente**.
 
@@ -130,7 +130,7 @@ Por ejemplo,
 
 Acepte la configuración global predeterminada para [moderar](/help/communities/sites-console.md#moderation) contenido generado por el usuario (UGC).
 
-![chlimage_1-452](assets/chlimage_1-452.png)
+![moderación1](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
@@ -138,7 +138,7 @@ En la lista desplegable, seleccione el marco de servicios en la nube de Analytic
 
 La selección que se ve en la captura de pantalla, `Communities`, es el ejemplo del marco de trabajo de la documentación de configuración [.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-454](assets/chlimage_1-454.png)
+![análisis](assets/analytics.png)
 
 #### TRADUCCIÓN {#translation}
 
@@ -147,7 +147,7 @@ La [configuración de traducción](/help/communities/sites-console.md#translatio
 * Marque **Permitir traducción automática**
 * Usar la configuración predeterminada
 
-![chlimage_1-456](assets/chlimage_1-456.png)
+![traducción](assets/translation.png)
 
 #### HABILITACIÓN {#enablement}
 
@@ -163,7 +163,7 @@ Para una comunidad de habilitación, es necesario identificar uno o varios admin
 * **ID**
  de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir  [Video Heartbeat ](/help/communities/analytics.md#video-heartbeat-analytics) Analytics en el sistema de informes de habilitación.
 
-![chlimage_1-457](assets/chlimage_1-457.png)
+![habilitación](assets/enablement.png)
 
 Seleccione **Siguiente**.
 
@@ -171,7 +171,7 @@ Seleccione **Siguiente**.
 
 Seleccione **Crear.**
 
-![chlimage_1-458](assets/chlimage_1-458.png)
+![previsualización](assets/preview.png)
 
 Cuando se completa el proceso, la carpeta del nuevo sitio se muestra en la consola Comunidades > Sitios.
 
@@ -218,11 +218,11 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 
 Seleccione el icono del mundo para publicar el sitio de la comunidad.
 
-![chlimage_1-465](assets/chlimage_1-465.png)
+![publish-site](assets/publish-site.png)
 
 Habrá una indicación de que el sitio fue publicado.
 
-![chlimage_1-466](assets/chlimage_1-466.png)
+![sitio publicado](assets/site-published.png)
 
 ## Usuarios y grupos de usuarios de la comunidad {#community-users-user-groups}
 
@@ -251,7 +251,7 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 * Seleccione **Guardar**
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![edit-group-settings](assets/edit-group-settings.png)
 
 ## Configuraciones en la publicación {#configurations-on-publish}
 
@@ -317,13 +317,13 @@ Para empezar:
 >
 >Para deshabilitar, simplemente anteponga el valor de la propiedad `sling:match` con una &#39;x&#39; - `xlocalhost.4503/$` - y **Guardar todo**.
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![change-default-homepage](assets/change-default-homepage.png)
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
 Si no puede guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador de &#39;punto&#39; y no `localhost:4503` con un separador de &#39;dos puntos&#39;, ya que `localhost` no es un prefijo de Área de nombres válido.
 
-![chlimage_1-365](assets/chlimage_1-365.png)
+![error-map](assets/error-map.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
@@ -361,11 +361,11 @@ Seleccione el panel ESTRUCTURA para añadir un catálogo o modificar uno existen
 
 * Seleccione **Guardar**.
 
-![chlimage_1-299](assets/chlimage_1-299.png)
+![modify-site-structure](assets/modify-site-structure.png)
 
 Utilice el icono Posición para mover la función Catálogo a la segunda posición, después de Asignaciones.
 
-![chlimage_1-300](assets/chlimage_1-300.png)
+![move-catalog-func](assets/move-catalog-func.png)
 
 Seleccione **Guardar** en la esquina superior derecha para guardar los cambios en el sitio de comunidad.
 
