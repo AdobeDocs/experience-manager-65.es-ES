@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -287,6 +287,14 @@ Para ver un ejemplo, consulte:
 En la IU clásica con ExtJS, era habitual tener oyentes para una utilidad determinada en la estructura de contenido. Lograr lo mismo en la IU táctil es diferente ya que el código de escucha de JS (o cualquier código) ya no se define en el contenido.
 
 La estructura de contenido describe la estructura semántica; no debe implicar la naturaleza del widget subyacente. Al no tener el código JS en la estructura de contenido, puede cambiar los detalles de implementación sin tener que cambiar la estructura de contenido. En otras palabras, puede cambiar la biblioteca de utilidades sin necesidad de tocar la estructura de contenido.
+
+#### Detección de la disponibilidad del cuadro de diálogo {#dialog-ready}
+
+Si tiene un JavaScript personalizado que sólo debe ejecutarse cuando el cuadro de diálogo esté disponible y listo, debe escuchar el evento `dialog-ready`.
+
+Este evento se activa cada vez que se carga (o recarga) el cuadro de diálogo y está listo para usarse, lo que significa que siempre que haya un cambio (crear/actualizar) en el DOM del cuadro de diálogo.
+
+`dialog-ready` puede utilizarse para enlazar el código personalizado de JavaScript que realiza personalizaciones en los campos dentro de un cuadro de diálogo o tareas similares.
 
 ### Validación de campo {#field-validation}
 
