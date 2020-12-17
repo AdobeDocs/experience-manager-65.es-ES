@@ -1,6 +1,6 @@
 ---
 title: Administración de ajustes preestablecidos de imagen de Dynamic Media
-description: Obtenga información sobre los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y administrar ajustes preestablecidos de imagen
+description: Conozca los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: ae3e6b1c2d3dfa63b9ea5763ebedaa57f5c7bc85
 workflow-type: tm+mt
-source-wordcount: '3867'
+source-wordcount: '3866'
 ht-degree: 10%
 
 ---
@@ -38,7 +38,7 @@ Al igual que una macro, un ajuste preestablecido de imagen es una colección pre
 
 >[!NOTE]
 >
->En el modo Dynamic Media: Scene7, los ajustes preestablecidos de imagen solo son compatibles con los recursos de imagen.
+>En el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen solo son compatibles con los recursos de imagen.
 
 Puede crear dos ajustes preestablecidos de imagen: uno con 500 x 500 píxeles para la versión de escritorio y 150 x 150 píxeles para la versión móvil. Puede crear dos ajustes preestablecidos de imagen, uno denominado `Enlarge` para mostrar imágenes de 500 x 500 píxeles y otro denominado `Thumbnail` para mostrar imágenes de 150 x 150 píxeles. Para distribuir imágenes con los tamaños `Enlarge` y `Thumbnail`, AEM busca la definición del ajuste preestablecido de imagen Ampliar y el ajuste preestablecido de imagen en miniatura. A continuación, AEM genera dinámicamente una imagen con las especificaciones de tamaño y formato de cada ajuste preestablecido de imagen.
 
@@ -56,9 +56,9 @@ Para administrar los ajustes preestablecidos de imagen en AEM, toque o haga clic
 >
 >Los ajustes preestablecidos de imagen que cree también estarán disponibles como representaciones dinámicas cuando realice la previsualización o entrega de recursos.
 >
->En *Medios dinámicos: modo Scene7*, *no* necesita publicar ajustes preestablecidos de imagen cuando los ajustes preestablecidos de imagen se publican automáticamente.
+>En *Dynamic Media - modo Scene7*, *no* necesita publicar ajustes preestablecidos de imagen cuando los ajustes preestablecidos de imagen se publican automáticamente.
 >
->En *Dynamic Media: modo híbrido*, debe publicar manualmente los ajustes preestablecidos de imagen.
+>En *Dynamic Media - Modo híbrido*, debe publicar manualmente los ajustes preestablecidos de imagen.
 >
 >Consulte [Publicación de ajustes preestablecidos de imagen.](#publishing-image-presets)
 
@@ -191,7 +191,7 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 
 ## Configuración del tamaño de miniatura de la imagen {#configuring-image-thumbnail-size}
 
-Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (**[!UICONTROL Dynamic Media Process Image Assets]**) para los recursos de imagen dinámica y el otro (**[!UICONTROL Process Thumbnails]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
+Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (**[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**) para recursos de imagen dinámica y el otro (**[!UICONTROL Miniaturas de proceso]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
 
 Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
@@ -242,9 +242,9 @@ Los ajustes preestablecidos de imagen que cree estarán disponibles como represe
 1. En la propiedad limit, cambie el número al número deseado, por ejemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Toque **[!UICONTROL Guardar todo.]**
 
-## Creación de un ajuste preestablecido de imagen de Dynamic Media {#creating-image-presets}
+## Creación de un ajuste preestablecido de imagen para Dynamic Media {#creating-image-presets}
 
-La creación de un ajuste preestablecido de imagen de Dynamic Media le permite aplicar estos ajustes a cualquier imagen al realizar una vista previa o publicar.
+La creación de un ajuste preestablecido de imagen de Dynamic Media le permite aplicar estos ajustes a cualquier imagen al obtener una vista previa o al publicar.
 
 >[!NOTE]
 >
@@ -291,9 +291,9 @@ Si se dejan en blanco, AEM que este ajuste preestablecido de imagen responde. Pu
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
->En el modo Dynamic Media: Scene7, los ajustes preestablecidos de imagen y los recursos de imagen se publican automáticamente.
+>En el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen y los recursos de imagen se publican automáticamente.
 >
->En el modo Dynamic Media: híbrido, debe publicar manualmente ajustes preestablecidos de imagen y recursos de imagen.
+>En Dynamic Media: modo híbrido, debe publicar manualmente ajustes preestablecidos de imagen y recursos de imagen.
 
 ### Opciones de ajustes preestablecidos de imagen {#image-preset-options}
 
@@ -407,7 +407,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Enfoque de imágenes</a>.
+     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Enfoque de imágenes</a>.
     </div> </td>
   </tr>
   <tr>
@@ -436,7 +436,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Servicios de Dynamic Media no principales: SVG, procesamiento de imágenes y impresión virtual</li>
+     <li>Servicios no principales de Dynamic Media: SVG, procesamiento de imágenes y impresión virtual</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -503,9 +503,9 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
 
 ## Publicación de ajustes preestablecidos de imagen de Dynamic Media {#publishing-image-presets}
 
-Si está ejecutando el modo Dynamic Media: híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
+Si está ejecutando Dynamic Media en modo híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
 
-(Si está ejecutando Dynamic Media en modo Scene7, los ajustes preestablecidos de imagen se publican automáticamente; no necesita completar estos pasos).
+(Si está ejecutando el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen se publican automáticamente; no necesita completar estos pasos).
 
 **Para publicar ajustes preestablecidos de imagen en Dynamic Media: modo** híbrido:
 
