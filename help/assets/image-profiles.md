@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: ae3e6b1c2d3dfa63b9ea5763ebedaa57f5c7bc85
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2759'
 ht-degree: 13%
 
 ---
@@ -22,7 +22,7 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 >[!NOTE]
 >
->El recorte inteligente solo está disponible en el modo Dynamic Media: Scene7.
+>El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
 >[!IMPORTANT]
 >
@@ -65,7 +65,7 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
   <tr>
    <td>Muestra de color e imagen</td>
    <td>Genera de forma masiva una muestra de imagen para cada imagen.</td>
-   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización de la muestra utilizada en las pancartas de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una solicitud <code>req=userdata</code> con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, a continuación se muestra un recurso de muestra en Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la URL correspondiente del recurso de muestra <code>req=userdata</code>:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La respuesta <code>req=userdata</code> es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los letreros de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una solicitud <code>req=userdata</code> con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la URL correspondiente del recurso de muestra <code>req=userdata</code>:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La respuesta <code>req=userdata</code> es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -103,7 +103,7 @@ En **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtra
  </tbody>
 </table>
 
-El enfoque se describe en [Enfoque de imágenes](/help/assets/assets/s7_sharpening_images.pdf.
+El enfoque se describe en [Enfoque de imágenes](/help/assets/assets/sharpening_images.pdf.
 
 ## Creación de Perfiles de imagen de Dynamic Media {#creating-image-profiles}
 
@@ -136,7 +136,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
 1. Si está editando, guarde los cambios. Si elimina, confirme que desea eliminar el perfil.
 
-## Aplicación de un perfil de imagen de Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
+## Aplicación de un perfil de imagen Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
 
 Al asignar un perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de la carpeta principal. Esto significa que solo puede asignar un perfil de imagen a una carpeta. Como tal, considere cuidadosamente la estructura de carpetas en la que carga, almacena, utiliza y archiva los recursos.
 
@@ -158,7 +158,7 @@ Las carpetas que ya tienen un perfil asignado se indican mediante la visualizaci
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
-#### Aplicación de perfiles de imagen de Dynamic Media a las carpetas desde la interfaz de usuario de Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde la interfaz de usuario de Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Toque el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles de imagen.]**
 1. Seleccione el perfil de imagen que desea aplicar a una o varias carpetas.
@@ -181,7 +181,7 @@ Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma gl
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
-**Para aplicar un perfil de imagen de Dynamic Media de forma global**:
+**Para aplicar un perfil de imagen de Dynamic Media globalmente**:
 
 1. Realice una de las acciones siguientes:
 
@@ -199,7 +199,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 >[!NOTE]
 >
->El recorte inteligente solo está disponible en el modo Dynamic Media: Scene7.
+>El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
 Puede realinear o cambiar el tamaño de la ventana de recorte inteligente de una imagen manualmente para reducir aún más su punto focal.
 
