@@ -2,9 +2,9 @@
 title: Uso del modo Diseño para cambiar el tamaño de los componentes en formularios adaptables
 description: 'Definir la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño '
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,16 @@ Seleccione **Presentación** en la lista desplegable que aparece en la parte sup
 1. En el modo Diseño, toque el componente para cambiar el tamaño. Los puntos azules se muestran en el inicio y al final de la cuadrícula adaptable.
 1. Arrastre y suelte los puntos azules para definir la posición del componente en la cuadrícula interactiva.
 
-   ![Cambio de tamaño mediante el modo Diseño](assets/layout_mode_resize_new_updated.png)
+   ![Cambio de tamaño mediante el modo Diseño](assets/layout_mode_resize_new_updated1.png)
 
    La barra de herramientas que se muestra después de tocar componentes consta de las siguientes opciones:
 
    * **Principal:** seleccione el elemento principal de un componente.
    * **Flotar a una línea nueva:** Mueva el componente a la línea siguiente si hay varios componentes dentro de la misma línea.
 
-   Puede deshacer todos los cambios de tamaño y aplicar el diseño predeterminado al panel que contiene los componentes cuyo tamaño ha cambiado mediante la opción **[!UICONTROL Revertir diseño de punto de interrupción]** ( ![Revertir punto de interrupción](assets/reverttopreviouslypublishedversion.png)). Toque el elemento principal del componente cuyo tamaño ha cambiado para aplicar vista a la opción.
+   Además, puede deshacer todos los cambios de tamaño y aplicar el diseño predeterminado al panel que contiene los componentes cuyo tamaño ha cambiado mediante la opción **[!UICONTROL Revertir diseño de punto de interrupción]** ( ![Revertir punto de interrupción](assets/reverttopreviouslypublishedversion.png)). Toque el elemento principal del componente cuyo tamaño ha cambiado para aplicar vista a la opción.
+
+   Puede tocar el componente y utilizar la opción **[!UICONTROL Revertir diseño de punto de interrupción]** para deshacer todos los cambios de tamaño y aplicar el diseño predeterminado en el nivel del componente.
 
    >[!NOTE]
    >
