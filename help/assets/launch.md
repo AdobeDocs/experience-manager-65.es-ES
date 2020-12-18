@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
 workflow-type: tm+mt
 source-wordcount: '6605'
 ht-degree: 17%
@@ -34,7 +34,7 @@ Consulte [Extensión de Adobe](https://experienceleague.adobe.com/docs/launch/us
 * La integración de inicio de Adobe para visores de Dynamic Media no funciona en el nodo de creación de AEM. No puede ver ningún seguimiento de una página WCM hasta que se publique.
 * La integración de inicio de Adobe para visores de Dynamic Media no se admite en el modo de operación &quot;emergente&quot;, donde la URL del visor se obtiene mediante el botón &quot;URL&quot; de la página Detalles del recurso.
 * La integración de inicio de Adobe no se puede usar simultáneamente con la integración de Analytics de visores heredados (mediante el parámetro `config2=`).
-* La compatibilidad con el seguimiento de vídeo está limitada únicamente al seguimiento de reproducción principal, como se describe en [Información general de seguimiento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). En concreto, no se admite el seguimiento de QoS, anuncios, capítulos/segmentos o errores.
+* La compatibilidad con el seguimiento de vídeo se limita al seguimiento de &quot;reproducción básica&quot;, tal como se describe en [Información general de seguimiento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). En concreto, no se admite el seguimiento de QoS, anuncios, capítulos/segmentos o errores.
 * La configuración de duración de almacenamiento para elementos de datos no se admite para elementos de datos con la extensión *visores de Dynamic Media*. La duración del almacenamiento debe establecerse en **[!UICONTROL None]**.
 
 ### Casos de uso para la integración {#use-cases-for-the-integration}
@@ -141,7 +141,7 @@ Para realizar el seguimiento de los visores de Dynamic Media en AEM Sites, deben
 
 Después de realizar la configuración adecuada, cualquier visor de Dynamic Media que agregue a una página Sitios mediante un componente WCM admitido por Dynamic Media rastreará automáticamente los datos en Adobe Analytics, Adobe Analytics para vídeo o ambos.
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -155,7 +155,7 @@ Una vez configurada correctamente, puede añadir compatibilidad con Inicio de Ad
 
 Consulte [Añadir el código incrustado de inicio](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) para obtener más información sobre cómo utilizar el código incrustado de la biblioteca de inicio de Adobe.
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
 -->
 
@@ -221,8 +221,7 @@ El valor exacto que devuelve el elemento de datos depende del contexto. Si el el
    * Utiliza el evento de Dynamic Media Viewer **[!UICONTROL PAN]** como activador.
    * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
 
-* 
-   * **** TrackKeyRule con lo siguiente:
+* **** TrackKeyRule con lo siguiente:
 
    * Utiliza el evento de prensa clave de la extensión Inicio de Adobe principal como activador.
    * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
@@ -551,62 +550,62 @@ En la página Instalar extensión, introduzca la ID del grupo de informes en el 
 
 ![image2019-7-8_16-47-40](assets/image2019-7-8_16-47-40.png)
 
-*Configure el siguiente elemento solo si planea utilizar el seguimiento de vídeo:*
+*Configure el siguiente elemento solo si piensa utilizar el seguimiento de vídeo:*
 
-En la página **[!UICONTROL Instalar extensión]**, expanda **[!UICONTROL General]** y, a continuación, especifique el Servidor de seguimiento. El Servidor de seguimiento sigue la plantilla `<trackingNamespace>.sc.omtrdc.net`, donde `<trackingNamespace>` es la información obtenida en el correo electrónico de aprovisionamiento.
+En la página **[!UICONTROL Instalar extensión]**, expanda **[!UICONTROL General]** y, a continuación, especifique el Servidor de seguimiento. El servidor de seguimiento sigue la plantilla `<trackingNamespace>.sc.omtrdc.net`, donde `<trackingNamespace>` es la información obtenida en el correo electrónico de aprovisionamiento.
 
 Haga clic en **[!UICONTROL Guardar]**.
 
 Consulte [Extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
 
-* (Opcional; solo es necesario si se necesita el seguimiento de vídeo) *extensión de Adobe Media Analytics para audio y vídeo*
+* (Opcional; solo es necesario si se necesita el seguimiento de vídeo) *Adobe Media Analytics para la extensión Audio y Vídeo*
 
-Complete el campo del servidor de seguimiento. El servidor de seguimiento para la extensión *Adobe Media Analytics para audio y vídeo* es diferente del servidor de seguimiento utilizado para Adobe Analytics. Sigue la plantilla `<trackingNamespace>.hb.omtrdc.net`, donde `<trackingNamespace>` es la información del correo electrónico de aprovisionamiento.
+Rellene el campo del servidor de seguimiento. El servidor de seguimiento para la extensión *Adobe Media Analytics para audio y vídeo* es diferente del servidor de seguimiento utilizado para Adobe Analytics. Sigue la plantilla `<trackingNamespace>.hb.omtrdc.net`, donde `<trackingNamespace>` es la información del correo electrónico de aprovisionamiento.
 
 El resto de campos son opcionales.
 
 Consulte [Adobe Media Analytics para la extensión de audio y vídeo](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref).
 
-* (Requerido) *Extensión de visores de Dynamic Media*
+* (Necesario) *Extensión de visores de Dynamic Media*
 
 Seleccione **[!UICONTROL habilitar Adobe Analytics para vídeo]** para activar el seguimiento de Video Heartbeat.
 
-Tenga en cuenta que, en el momento de escribir esto, la extensión *Visores de Dynamic Media* solo está disponible si se crea la propiedad de inicio de Adobe para desarrollo.
+Tenga en cuenta que, en el momento de escribir este artículo, la extensión *Dynamic Media Viewers* solo está disponible si la propiedad Adobe Launch se crea para el desarrollo.
 
 Consulte [Creación de una propiedad en Inicio de Adobe](#creating-a-property-in-adobe-launch).
 
-Después de instalar y configurar las extensiones, al menos las siguientes cinco extensiones (cuatro si no realiza el seguimiento de vídeo) se enumerarán en el área Extensiones > Instalado.
+Después de instalar y configurar las extensiones, como mínimo, las cinco extensiones siguientes (cuatro si no realiza el seguimiento del vídeo) se mostrarán en el área Extensiones > Instalado.
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
-### Configuración de elementos de datos y reglas {#setting-up-data-elements-and-rules}
+### Configuración de elementos y reglas de datos {#setting-up-data-elements-and-rules}
 
-En Inicio de Adobe, cree elementos de datos y reglas que sean necesarios para rastrear los visores de Dynamic Media.
+En Inicio de Adobe, cree los elementos de datos y las reglas necesarias para realizar un seguimiento de los visores de Dynamic Media.
 
-Consulte [Cómo funciona el seguimiento de datos y eventos en la integración](#how-data-and-event-tracking-works-in-the-integration) para obtener una visión general del seguimiento con Adobe Launch.
+Consulte [Cómo funciona el seguimiento de datos y eventos en la integración](#how-data-and-event-tracking-works-in-the-integration) para obtener una descripción general del seguimiento con Inicio de Adobe.
 
-Consulte [Configuración de muestra](#sample-configuration) para obtener una configuración de muestra en Inicio de Adobe que muestra cómo rastrear un nombre de recurso al cargar el visor.
+Consulte [Configuración de muestra](#sample-configuration) para obtener una configuración de muestra en Inicio de Adobe que muestra cómo realizar un seguimiento del nombre de un recurso al cargar el visor.
 
 Consulte [Configuración de la extensión de visores de Dynamic Media](#configuring-the-dynamic-media-viewers-extension) para obtener información detallada sobre las capacidades de la extensión.
 
 ### Publicación de una biblioteca {#publishing-a-library}
 
-Para realizar cambios en la configuración de Inicio de Adobe (incluida la configuración de Propiedades, Extensiones, Reglas y Elementos de datos), debe *publicar* dichos cambios*.* La publicación en Adobe Launch se realiza desde la ficha Publicación, en la configuración Propiedad.
+Para realizar cambios en la configuración de Inicio de Adobe (incluidas la configuración de propiedades, extensiones, reglas y elementos de datos), debe *publicar* dichos cambios*.* La publicación en Inicio de Adobe se realiza desde la ficha Publicación en la configuración de propiedades.
 
-Adobe Launch puede tener varios entornos de desarrollo, un entorno de ensayo y un entorno de producción. De forma predeterminada, la configuración de la nube de inicio de Adobe en AEM señala el nodo AEM autor al entorno de fase de Inicio de Adobe y el nodo de publicación AEM al entorno de producción de Inicio de Adobe. Esta disposición significa que con la configuración de AEM predeterminada, es necesario publicar la biblioteca de inicio de Adobe en el entorno de ensayo para utilizarla en AEM autor y, a continuación, publicarla en el entorno de producción para que pueda utilizarse en AEM publicación.
+Adobe Launch puede tener varios entornos de desarrollo, un entorno de escenario y un entorno de producción. De forma predeterminada, la configuración de nube de inicio de Adobe en AEM dirige el nodo AEM autor al entorno del escenario de Inicio de Adobe y el nodo de publicación AEM al entorno de producción de Inicio de Adobe. Esta disposición significa que con la configuración de AEM predeterminada, es necesario publicar la biblioteca de inicio de Adobe en el entorno de escenario para utilizarla en AEM autor y, a continuación, publicarla en el entorno de producción para poder utilizarla en AEM publicación.
 
-Consulte [Entornos](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) para obtener más información sobre los entornos de inicio de Adobe.
+Consulte [Entornos](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) para obtener más información sobre los entornos de lanzamiento de Adobe.
 
 La publicación de una biblioteca implica los dos pasos siguientes:
 
 * Añadir y crear una nueva biblioteca incluyendo todos los cambios necesarios (nuevos y actualizaciones) en la biblioteca.
-* Subir la biblioteca por los diferentes niveles de entorno (de desarrollo a ensayo y producción)
+* Mover la biblioteca hacia arriba a través de los diferentes niveles de entorno (de desarrollo a escenario y producción)
 
-#### Añadir y crear una nueva biblioteca {#adding-and-building-a-new-library}
+#### Adición y creación de una nueva biblioteca {#adding-and-building-a-new-library}
 
-1. La primera vez que abra la ficha Publicación en Inicio de Adobe, la lista de biblioteca estará vacía.
+1. La primera vez que abra la ficha Publicación en Inicio de Adobe, la lista de bibliotecas estará vacía.
 
-   En la columna izquierda, haga clic en **[!UICONTROL Añadir nueva biblioteca]**.
+   En la columna de la izquierda, haga clic en **[!UICONTROL Agregar nueva biblioteca]**.
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
@@ -614,13 +613,13 @@ La publicación de una biblioteca implica los dos pasos siguientes:
 
    *DynamicMediaViewersLib*
 
-   En la lista desplegable Entorno, elija el nivel de Entorno. Inicialmente, solo el nivel de desarrollo está disponible para selección. Cerca del lado inferior izquierdo de la página, haga clic en **[!UICONTROL Añadir todos los recursos cambiados]**.
+   En la lista desplegable Entorno, elija el nivel de entorno. Inicialmente, solo se puede seleccionar el nivel de desarrollo. Cerca del lado inferior izquierdo de la página, haga clic en **[!UICONTROL Agregar todos los recursos cambiados]**.
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
 1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Guardar y crear para desarrollo]**.
 
-   En pocos minutos, la biblioteca se crea y está lista para usarse.
+   En unos minutos, la biblioteca se crea y está lista para usarse.
 
    ![image2019-7-15_15-3-34](assets/image2019-7-15_15-3-34.png)
 
@@ -629,23 +628,23 @@ La publicación de una biblioteca implica los dos pasos siguientes:
    >La próxima vez que realice cambios en la configuración de Adobe Launch, vaya a la pestaña **[!UICONTROL Publicación]** en la configuración de la **[!UICONTROL propiedad]** y, a continuación, haga clic en la biblioteca creada anteriormente.
    >
    >
-   >En la pantalla de publicación de la biblioteca, haga clic en **[!UICONTROL Añadir todos los recursos cambiados]** y, a continuación, haga clic en **[!UICONTROL Guardar y crear para desarrollo]**.
+   >En la pantalla de publicación de la biblioteca, haga clic en **[!UICONTROL Agregar todos los recursos cambiados]** y, a continuación, haga clic en **[!UICONTROL Guardar y crear para desarrollo]**.
 
-#### Subir una biblioteca a través de niveles de entorno {#moving-a-library-up-through-environment-levels}
+#### Mover una biblioteca hacia arriba a través de los niveles de entorno {#moving-a-library-up-through-environment-levels}
 
-1. Después de agregar una nueva biblioteca, se encuentra inicialmente en el entorno de desarrollo. Para moverlo al nivel de entorno Ensayo (que corresponde a la columna Enviado), en el menú desplegable de la biblioteca, haga clic en **[!UICONTROL Enviar para aprobación]**.
+1. Después de agregar una nueva biblioteca, se ubica inicialmente en el entorno de desarrollo. Para moverlo al nivel de entorno de escenario (que corresponde a la columna Enviado), en el menú desplegable de la biblioteca, haga clic en **[!UICONTROL Enviar para aprobación]**.
 
    ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
 1. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Enviar]**.
 
-   Una vez que la biblioteca se desplace a la columna Enviada, en el menú desplegable de la biblioteca, haga clic en **[!UICONTROL Generar para ensayo]**.
+   Cuando la biblioteca se mueva a la columna Enviados, en el menú desplegable de la biblioteca, haga clic en **[!UICONTROL Crear para escenario]**.
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
-1. Siga un proceso similar para mover la biblioteca del entorno Ensayo al entorno Producción (que es la columna Publicado).
+1. Siga un proceso similar para mover la biblioteca del entorno de escenario al entorno de producción (que es la columna Publicado).
 
-   Primero, en el menú desplegable, haga clic en **[!UICONTROL Aprobar para publicación]**.
+   En primer lugar, en el menú desplegable, haga clic en **[!UICONTROL Aprobar para publicación]**.
 
    ![image2019-7-15_16-7-39](assets/image2019-7-15_16-7-39.png)
 
@@ -659,9 +658,9 @@ La publicación de una biblioteca implica los dos pasos siguientes:
 
 Requisitos previos:
 
-* AEM ejecuta las instancias Autor y Publicar.
-* AEM nodo de creación está configurado en Dynamic Media: modo de ejecución de Scene7 (dynamicmedia_s7)
-* Los componentes de Dynamic Media WCM están activados en AEM Sites.
+* AEM ejecuta instancias de autor y de publicación.
+* AEM nodo de autor está configurado en Dynamic Media: modo de ejecución de Scene7 (dynamicmedia_s7)
+* Los componentes WCM de Dynamic Media están activados en AEM Sites.
 
 La configuración AEM consta de los dos pasos principales siguientes:
 
@@ -670,13 +669,13 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
 ### Configuración de AEM IMS {#configuring-aem-ims}
 
-1. En AEM autor, haga clic en el icono Herramientas (martillo) y, a continuación, haga clic en **[!UICONTROL Seguridad > Configuraciones de IMS de Adobe]**.
+1. En AEM autor, haga clic en el icono Herramientas (martillo) y, a continuación, haga clic en **[!UICONTROL Seguridad > Configuraciones de Adobe IMS]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
-1. En la página Configuración de IMC de Adobe, cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Crear]**.
+1. En la página Configuración de Adobe IMC, cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Crear]**.
 1. En la página **[!UICONTROL Configuración técnica de la cuenta de Adobe IMD]**, en la lista desplegable **[!UICONTROL Soluciones de nube]**, haga clic en **[!UICONTROL Adobe Launch]**.
-1. Habilite **[!UICONTROL Crear nuevo certificado]** y, a continuación, en el campo de texto, introduzca cualquier valor significativo para el certificado. Por ejemplo, *AdobeLaunchIMSCert*. Haga clic en **[!UICONTROL Crear certificado]**.
+1. Active **[!UICONTROL Crear nuevo certificado]** y, a continuación, en el campo de texto, introduzca cualquier valor significativo para el certificado. Por ejemplo, *AdobeLaunchIMSCert*. Haga clic en **[!UICONTROL Crear certificado]**.
 
    Se muestra el siguiente mensaje de información:
 
@@ -686,7 +685,7 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
-1. Haga clic en **[!UICONTROL Descargar clave pública]** para descargar un archivo de clave pública (*.crt) en el sistema local.
+1. Haga clic en **[!UICONTROL Descargar clave pública]** para descargar un archivo de clave pública (*.crt) en su sistema local.
 
    >[!NOTE]
    >
@@ -694,9 +693,9 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. En una nueva ficha del explorador, navegue a la [Consola de Adobe I/O](https://console.adobe.io/integrations).
+1. En una nueva ficha del navegador, vaya a la [Consola de Adobe I/O](https://console.adobe.io/integrations).
 
-1. En la página **[!UICONTROL Integraciones de la consola de Adobe I/O]**, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Nueva integración]**.
+1. En la página **[!UICONTROL Integraciones de la Consola de Adobe I/O]**, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Nueva integración]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear una nueva integración]**, compruebe que está seleccionado la opción **[!UICONTROL Acceder a una API]** y, a continuación, haga clic en **[!UICONTROL Continuar]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -705,17 +704,17 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
-1. En la tercera página **[!UICONTROL Cree una nueva integración]**, haga lo siguiente:
+1. En la tercera **[!UICONTROL página Crear una nueva integración]**, haga lo siguiente:
 
    * En el campo **[!UICONTROL Nombre]**, introduzca un nombre descriptivo. Por ejemplo, *DynamicMediaViewersIO*.
 
-   * En el campo **[!UICONTROL Descripción]**, introduzca una descripción para la integración.
+   * En el campo **[!UICONTROL Descripción]**, introduzca la descripción de la integración.
 
    * En el área **[!UICONTROL Certificados de clave pública]**, cargue el archivo de clave pública (*.crt) que descargó anteriormente en estos pasos.
 
    * En el encabezado **[!UICONTROL Seleccione una función para la API de Experience Platform Launch]**, seleccione **[!UICONTROL Administración]**.
 
-   * En el encabezado **[!UICONTROL Seleccione uno o varios perfiles de producto para la API de Experience Platform Launch]**, seleccione el perfil de producto denominado **[!UICONTROL Launch - &lt;your_compañía_name>]**.
+   * En el encabezado **[!UICONTROL Seleccione uno o más perfiles de productos para la API de Experience Platform Launch]**, seleccione el perfil de productos denominado **[!UICONTROL Launch - &lt;your_company_name>]**.
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
@@ -724,7 +723,7 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Aparece una página de detalles de Integraciones, **** similar a la siguiente:
+1. Aparece una página de detalles de integraciones, **** similar a la siguiente:
 
    >[!NOTE]
    >
@@ -732,7 +731,7 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
 
-   Detalles de la integración.
+   Página de detalles de la integración.
 
 1. Vuelva a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** que dejó abierta anteriormente. En la esquina superior derecha de la página, haga clic en **[!UICONTROL Siguiente]** para abrir la página **[!UICONTROL Cuenta]** en la ventana **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**.
 
@@ -742,7 +741,7 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    Configuración de cuenta técnica de Adobe IMS: página de certificado.
 
-1. La página **[!UICONTROL Cuenta]** tiene cinco campos que le requerirán que rellene con la información de la página Detalles de la integración del paso anterior.
+1. La página **[!UICONTROL Cuenta]** tiene cinco campos que le requerirán que rellene utilizando la información de la página Detalles de la integración del paso anterior.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
 
@@ -750,12 +749,12 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
 1. En la página **[!UICONTROL Cuenta]**, rellene los campos siguientes:
 
-   * **[!UICONTROL Título]** : introduzca un título de cuenta descriptivo.
-   * **[!UICONTROL Servidor]**  de autorización: regrese a la página de detalles de integración que abrió anteriormente. Haga clic en la ficha **[!UICONTROL JWT]**. Copie el nombre del servidor (sin la ruta de acceso) como se resalta a continuación.
+   * **[!UICONTROL Título]** : introduzca un título descriptivo de la cuenta.
+   * **[!UICONTROL Servidor]**  de autorización: regrese a la página de detalles de integración que haya abierto anteriormente. Haga clic en la ficha **[!UICONTROL JWT]**. Copie el nombre del servidor, sin la ruta, como se resalta a continuación.
 
-(el nombre del servidor de ejemplo es solo para fines ilustrativos)   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
+(El nombre del servidor de ejemplo es solo para fines ilustrativos)   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
 Por ejemplo, `https://ims-na1.adobelogin.com/`
-(el nombre del servidor de ejemplo es solo para fines ilustrativos)
+(El nombre del servidor de ejemplo es solo para fines ilustrativos)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 
@@ -767,13 +766,13 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
 
-   Detalles de la integración.
+   Página de detalles de la integración.
 
 1. **[!UICONTROL Secreto del cliente]**: Regrese a la página de detalles de la integración. En la pestaña **[!UICONTROL Información general]**, haga clic en **[!UICONTROL Recuperar secreto de cliente]**. A la derecha del campo **[!UICONTROL Secreto de cliente]**, haga clic en **[!UICONTROL Copiar]**.
 
    Vuelva a la página **[!UICONTROL Cuenta]** y pegue la clave en el campo correspondiente.
 
-1. **[!UICONTROL Carga útil]** : regrese a la página de detalles de integración. En la ficha **[!UICONTROL JWT]**, en el campo Carga útil JWT, copie todo el código de objeto JSON.
+1. **[!UICONTROL Carga útil]** : regrese a la página de detalles de integración. En la ficha **[!UICONTROL JWT]**, en el campo Carga de JWT, copie todo el código de objeto JSON.
 
    Vuelva a la página **[!UICONTROL Cuenta]** y pegue el código en el campo correspondiente.
 
@@ -781,13 +780,13 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    Página de detalles de integración: ficha JWT
 
-   La página Cuenta, con todos los campos completados, tendrá un aspecto similar al siguiente:
+   La página Cuenta, con todos los campos rellenados, tendrá un aspecto similar al siguiente:
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
 1. Cerca de la esquina superior derecha de la página **[!UICONTROL Cuenta]**, haga clic en **[!UICONTROL Crear]**.
 
-   Con AEM IMS configurado, ahora tiene un nuevo IMSAccount enumerado en **[!UICONTROL Configuraciones IMS de Adobe]**.
+   Con AEM IMS configurado, ahora tiene un nuevo IMSAccount en **[!UICONTROL Configuraciones IMS de Adobe]**.
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
@@ -797,9 +796,9 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-1. En la página **[!UICONTROL Configuraciones de inicio de Adobe]**, en el panel izquierdo, seleccione un sitio AEM para el cual desee aplicar la configuración de inicio de Adobe.
+1. En la página **[!UICONTROL Configuraciones de inicio de Adobe]**, en el panel izquierdo, seleccione un sitio AEM para el que desee aplicar la configuración de inicio de Adobe.
 
-   Sólo con fines ilustrativos, el **[!UICONTROL sitio We.Retail]** está seleccionado en la captura de pantalla siguiente.
+   Solo con fines ilustrativos, el **[!UICONTROL sitio de We.Retail]** está seleccionado en la captura de pantalla siguiente.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
@@ -808,11 +807,11 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Título]** : introduzca un título de configuración descriptivo. Por ejemplo, `We.Retail Launch cloud configuration`.
 
-   * **[!UICONTROL Configuración]**  de IMS de Adobe asociada: seleccione la configuración de IMS que creó anteriormente en  [Configuración de AEM IMS](#configuring-aem-ims).
+   * **[!UICONTROL Configuración]**  de IMS de Adobe asociado: seleccione la configuración de IMS que creó anteriormente en  [Configuración de AEM IMS](#configuring-aem-ims).
 
-   * **[!UICONTROL Compañía]** : en la lista desplegable  **** Empresa, seleccione la compañía del Experience Cloud. La lista se rellena automáticamente.
+   * **[!UICONTROL Empresa]** : en la lista desplegable  **** Empresa, seleccione su empresa Experience Cloud. La lista se rellena automáticamente.
 
-   * **[!UICONTROL Propiedad]** : en la lista desplegable Propiedad, seleccione la propiedad Inicio de Adobe que creó anteriormente. La lista se rellena automáticamente.
+   * **[!UICONTROL Propiedad]** : en la lista desplegable Propiedad, seleccione la propiedad Inicio de Adobe que haya creado anteriormente. La lista se rellena automáticamente.
    Después de completar todos los campos, la página **[!UICONTROL General]** tendrá un aspecto similar al siguiente:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
@@ -822,11 +821,11 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    En el campo **[!UICONTROL URI de biblioteca]**, compruebe la ubicación de la versión de ensayo de la biblioteca de Adobe Launch. AEM rellena este campo automáticamente.
 
-   Solo para fines ilustrativos, este paso utilizará bibliotecas de lanzamiento de Adobe implementadas en CDN de Adobe.
+   Solo para fines ilustrativos, este paso utilizará las bibliotecas de inicio de Adobe que se implementan en CDN de Adobe.
 
    >[!NOTE]
    >
-   >Compruebe que el URI de la biblioteca rellenado automáticamente (identificador uniforme de recursos) no esté mal formado. Si es necesario, corríjalo para que el URI represente un URI relativo al protocolo. Es decir, inicio de una barra diagonal de doble.
+   >Compruebe que el URI de biblioteca rellenado automáticamente (identificador de recurso uniforme) no esté mal formado. Si es necesario, corríjalo para que el URI represente un URI relativo al protocolo. Es decir, comienza con una barra diagonal doble.
    >
    >
    >Por ejemplo: `//assets.adobetm.com/launch-xxxx`.
@@ -839,16 +838,16 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 1. En la página **[!UICONTROL Producción]** (3/3 páginas) de la ventana **[!UICONTROL Crear configuración de Adobe Launch]**, si es necesario, corrija el URI de producción rellenado automáticamente de forma similar a como se hizo en la página anterior **[!UICONTROL Ensayo]**.
 1. Cerca de la esquina superior derecha, haga clic en **[!UICONTROL Crear]**.
 
-   La nueva configuración de Adobe Launch Cloud ahora se crea y se muestra junto a su sitio web de forma similar al siguiente ejemplo:
+   La nueva configuración de nube de inicio de Adobe ahora se crea y se muestra junto a su sitio web de forma similar al siguiente ejemplo:
 
-1. Seleccione la nueva configuración de la nube de inicio de Adobe (cuando está seleccionada, aparece una marca de verificación a la izquierda del título de configuración). En la barra de herramientas, haga clic en **[!UICONTROL Publicar]**.
+1. Seleccione su nueva configuración de nube de inicio de Adobe (cuando está seleccionada, aparece una marca de verificación a la izquierda del título de configuración). En la barra de herramientas, haga clic en **[!UICONTROL Publicar]**.
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
-Actualmente, AEM autor no admite la integración de visores de Dynamic Media con Adobe Launch.
+Actualmente, AEM autor no admite la integración de visores de Dynamic Media con Inicio de Adobe.
 
-Sin embargo, se admite en el nodo de publicación AEM. Con la configuración predeterminada de Adobe Launch Cloud Configuration, AEM publicación utiliza el entorno de producción de Adobe Launch. Como tal, es necesario insertar las actualizaciones de la biblioteca de lanzamiento de Adobe desde Desarrollo hasta el entorno de producción cada vez que se realice la prueba.
+Sin embargo, se admite en el nodo de publicación AEM. Con la configuración predeterminada de Adobe Launch Cloud Configuration, AEM publish utiliza el entorno de producción de Adobe Launch. Como tal, es necesario insertar las actualizaciones de la biblioteca de lanzamiento de Adobe desde Desarrollo hasta el entorno de producción cada vez que se realiza la prueba.
 
-Es posible solucionar esta limitación especificando la URL de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe en la configuración de Adobe Launch Cloud para AEM publicación anterior. Al hacer esto, el nodo de publicación AEM utiliza la versión de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe.
+Es posible solucionar esta limitación especificando la URL de desarrollo o de escenario de la biblioteca de inicio de Adobe en la configuración de Adobe Launch Cloud para AEM publicación anterior. Al hacerlo, el nodo de publicación AEM utiliza la versión de desarrollo o escenario de la biblioteca de inicio de Adobe.
 
-Consulte [Integración de AEM con Adobe Launch mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obtener más información sobre la configuración de la nube de Adobe Launch.
+Consulte [Integración de AEM con Inicio de Adobe mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obtener más información sobre la configuración de Adobe Launch Cloud.
