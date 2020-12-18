@@ -1,134 +1,134 @@
 ---
-title: Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML
-seo-title: Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML
-description: A partir del 31 de enero de 2014, la plataforma de visor DHTML de Scene7 dejará de funcionar oficialmente. Esta notificación le proporciona respuestas a las preguntas más frecuentes para que pueda prepararse para esta transición en nuestra nueva plataforma de visor HTML5.
-seo-description: A partir del 31 de enero de 2014, la plataforma de visor DHTML de Scene7 dejará de funcionar oficialmente. Esta notificación le proporciona respuestas a las preguntas más frecuentes para que pueda prepararse para esta transición en nuestra nueva plataforma de visor HTML5.
-uuid: a78c03b3-6513-42e1-881f-6a9551659769
+title: Final de vida útil del visor DHTML
+description: A partir del 31 de enero de 2014, la plataforma de visor DHTML dejará de funcionar oficialmente.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '42'
 ht-degree: 0%
 
 ---
 
 
-# Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML{#dhtml-viewer-end-of-life-faqs}
+# Fin de vida útil del visor DHTML {#dhtml-viewer-end-of-life}
 
-A partir del 31 de enero de 2014, la plataforma de visor DHTML de Scene7 dejará de funcionar oficialmente. Esta notificación le proporciona respuestas a las preguntas más frecuentes para que pueda prepararse para esta transición en nuestra nueva plataforma de visor HTML5.
+A partir del 31 de enero de 2014, la plataforma de visor DHTML dejará de funcionar oficialmente.
 
-**¿Cuál es el cambio?**
+Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) para obtener información sobre los últimos visores admitidos.
 
-A partir del 31 de enero de 2014, Scene7 dejará oficialmente de ofrecer soporte técnico para la plataforma de visor DHTML.
+<!-- OBSOLETE CONTENT **What is the change?**
 
-**¿Qué significa el fin de vida?**
+Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 
-El final de su vida útil significa que Scene7 (1) ya no agregará ninguna mejora de funciones a la plataforma de visor DHTML (2) ya no abordará ni lanzará correcciones de errores en la plataforma de visor DHTML y (3) el servicio de atención al cliente ya no solucionará problemas ni proporcionará asistencia para problemas o preguntas relacionados con el visor DHTML.
+**What does end-of-life mean?**
 
-**¿Por qué Scene7 está haciendo este cambio?**
+End-of-life means that Scene7 will (1) no longer add any feature enhancements to the DHTML viewer platform (2) no longer address or release any bug fixes on the DHTML viewer platform and (3) customer care will no longer be troubleshooting or providing support for any DHTML-related viewer issues or questions.
 
-Los estándares web evolucionan constantemente y DHTML es una tecnología de desarrollo web antigua que se está reemplazando rápidamente por HTML5. La mayor limitación de DHTML como plataforma es que no es capaz de crear la riqueza de experiencia que HTML5 ahora puede admitir de forma consistente y más sencilla en varios navegadores. Por ejemplo, estas limitaciones incluyen la falta de compatibilidad entre exploradores para:
+**Why is Scene7 making this change?**
 
-* Cursores personalizados
-* Esquinas redondeadas
-* Animaciones (como el volteo de página, la flexibilización del zoom)
-* Efectos (como sombras, resplandor)
-* Compatibilidad total con fuentes
-* Reproducción de vídeo sin complementos
+Web standards are constantly evolving and DHTML is an older web development technology that is rapidly being replaced by HTML5. The biggest limitation to DHTML as a platform is that it is not capable of creating the richness of experience that HTML5 now can consistently and more easily support cross-browser. For example such limitations include lack of cross-browser support for:
 
-Específicamente para la plataforma de visor DHTML de Scene7, tanto la solución basada en JSP como las API de Javascript no se han optimizado para dispositivos móviles para aprovechar las funciones de multitáctil y gesto. Y aunque los visores DHTML que se lanzaron en 2011/principios de 2012 están optimizados para dispositivos móviles, eran difíciles de personalizar y mantener debido a la falta de un marco de desarrollo flexible basado en componentes SDK.
+* Custom cursors
+* Rounded corners
+* Animations (such as page flipping, zoom easing)
+* Effects (such as shadows, glow)
+* Complete font support
+* Plugin-less video playback
 
-Debido a estas limitaciones en DHTML y a la rápida tracción del sector con HTML5 como estándar emergente tanto en equipos de escritorio como móviles, Scene7 ha decidido invertir en una plataforma de visor basada en HTML5. Esta inversión oferta a nuestros clientes una plataforma sólida con la que pueden crear visores interactivos más enriquecidos y atractivos que puedan llegar a los usuarios en varias pantallas, incluidos los dispositivos de escritorio, iOS y Android.
+Specific to the Scene7 DHTML viewer platform, both the JSP-based solution and the Javascript APIs were not optimized for mobile devices to take advantage of multi-touch and gesture capabilities. And even though DHTML viewers which were released in 2011/early 2012 are optimized for mobile, they were difficult to customize and maintain due to the lack of a flexible SDK component-based development framework.
 
-**¿Cómo sé si mi visor está usando la plataforma DHTML?**
+Driven by these limitations on DHTML and rapid industry traction with HTML5 as an emerging standard across both desktop and mobile, Scene7 has decided to invest in an HTML5-based viewer platform. This investment will offer our customers a robust platform against which they can build richer, more engaging interactive viewers that can reach users on multiple screens including desktop, iOS and Android devices.
 
-Para determinar si el visor que utiliza su compañía es DHTML y, por tanto, se ve afectado por este cambio, compruebe si:
+**How do I know if my viewer is using the DHTML platform?**
 
-1. Su compañía está utilizando un visor de Scene7 integrado en esta tabla, donde la &quot;Tecnología de visor&quot; se designa como &quot;DHTML&quot;:
+To determine if the viewer your company is using is DHTML and hence affected by this change, please check if:
 
-   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+1. Your company is using an out-of-box Scene7 viewer listed in this table where the "Viewer Technology" is designated as "DHTML":
 
-1. Su compañía está utilizando un visor que se creó como un nuevo ajuste preestablecido basado en un visor de Scene7 incorporado en esta tabla, donde la &quot;Tecnología de visor&quot; se designa como &quot;DHTML&quot;:
+    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
-   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+1. Your company is using a viewer that was created as a new preset based off an out-of-box Scene7 viewer in this table where the "Viewer Technology" is designated as "DHTML":
 
-1. La compañía está utilizando un visor personalizado creado a partir de la solución DHTML basada en JSP:
+    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
+1. Your company is using a custom viewer created from the JSP-based DHTML solution:
 
-1. La compañía utiliza un visor personalizado creado con la API de JavaScript:
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
+1. Your company is using a custom viewer created from the Javascript API:
 
-1. La compañía utiliza un visor personalizado creado con la API de flotación multipantalla DHTML:
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
+1. Your company is using a custom viewer created with the DHTML multi-screen flyout API:
 
-1. La compañía está utilizando un visor personalizado creado con la API flotante de escritorio DHTML:
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
+1. Your company is using a custom viewer created with the DHTML desktop flyout API:
 
-1. La compañía está utilizando una biblioteca de detección de dispositivos que forma parte del paquete de visores DHTML:
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
 
-   Busque la inclusión de JS de &quot;sj_deviceDetect.js&quot; en el código.
+1. Your company is using a device detection library that is part of the DHTML viewers package:
 
-   Esto se ha sustituido por el nuevo código de detección de dispositivos JS aquí: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers).
+   Look for JS include of "sj_deviceDetect.js" in your code.
 
-**¿Cuál es la plataforma de visor de sustitución?**
+   This has been replaced by new JS device detection code here: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers) .
 
-El reemplazo de DHTML es la plataforma de visor Scene7 HTML5, que consta de:
+**What is the replacement viewer platform?**
 
-* Los visores integrados en HTML5 incluyen interacciones optimizadas para dispositivos móviles en varios tipos de visor, incluidos zoom básico, zoom flotante, conjuntos de imágenes, conjuntos de muestras, giro multidimensional y medios mixtos. Para ver ejemplos actualizados de estos visores, consulte: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
-* SDK de visor HTML5 que permite una amplia personalización de los visores de Adobe Scene7 para sitios y dispositivos compatibles con HTML5 (como iOS y Android), lo que ofrece la máxima flexibilidad y creatividad para personalizar la apariencia del visor y la interactividad. Las ventajas de los componentes reutilizables optimizados para el rendimiento reducen el coste total del desarrollo del visor y aceleran el desarrollo personalizado.
+The replacement for DHTML is the Scene7 HTML5 viewer platform, consisting of both:
 
-**¿Cuándo tendrá la plataforma de visor HTML5 las funciones que necesito para la transición de la plataforma de visor DHTML?**
+* HTML5 out-of-box viewers featuring mobile optimized interactions across numerous viewer types including basic zoom, flyout zoom, image sets, swatch sets, multi-dimensional spin and mixed media. For full up-to-date examples of these viewers, please refer to: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+* HTML5 viewer SDK which enables extensive customization of Adobe Scene7 viewers for HTML5 supported sites and devices (such as iOS and Android), imparting the utmost flexibility and creativity to brand the viewer appearance and interactivity. The benefit of reusable performance-optimized components lower the overall cost of viewer development and accelerate custom development.
 
-Scene7 lanzó el primer SDK de visor HTML5 en otoño de 2011 con el lanzamiento de la versión 5.5. Desde entonces, hemos agregado numerosas funciones a la plataforma y hemos ampliado la compatibilidad para más y más tipos de visores. Para la mayoría de los requisitos habituales del visor, es probable que la plataforma de visor HTML5 ya cuente con las funciones que necesita migrar ahora. Y seguimos invirtiendo agresivamente en esta plataforma de visor con lanzamientos cada trimestre.
+**When will the HTML5 viewer platform have the features I need to transition off the DHTML viewer platform?**
 
-Para determinar si los requisitos del visor se pueden satisfacer hoy mismo con la plataforma de visor HTML5, consulte la siguiente documentación:
+Scene7 released the first HTML5 viewer SDK in Fall 2011 with the launch of version 5.5. Since then, we have added numerous features to the platform and extended support for more and more types of viewers. For most common viewer requirements, the HTML5 viewer platform likely already has the features you need to migrate now. And we continue to aggressively invest in this viewer platform with releases every quarter.
 
-[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (para funciones de visores originales y funciones de personalización)
+To determine if your viewer requirements can be met today with the HTML5 viewer platform, please refer to the following documentation:
 
-[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (para acceder a la documentación de la API de SDK)
+[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (for out of box viewers features and customization capabilities)
 
-Si no está seguro de si el SDK de visor HTML5 puede o no satisfacer sus necesidades, consulte con nuestro equipo de servicios profesionales.
+[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (to access the SDK API documentation)
 
-**¿Cómo se realiza la transición de mis visores a la plataforma HTML5?**
+If you are still unsure about whether or not the HTML5 viewer SDK can meet your requirements, please consult with our professional services team.
 
-Para transición de los visores a la plataforma HTML5, Scene7 oferta las siguientes opciones:
+**How do I transition my viewers over to the HTML5 platform?**
 
-1. Utilice uno de los visores Scene7 HTML5 predeterminados, cuyos ejemplos se pueden encontrar aquí: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
-1. Configure uno de los visores HTML5 predeterminados de Scene7 en la configuración de la aplicación de SPS. Esto le permitirá personalizar cierto comportamiento, como el tamaño del visor, las transiciones, el comportamiento de zoom, etc.: [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
-1. Personalice el aspecto de los visores HTML5 incorporados de Scene7 mediante la modificación de CSS para cambiar el diseño visual, como la ilustración con botones, la colocación, la transparencia, los colores de fondo, etc.: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
-1. Cree un visor HTML5 personalizado desde cero con el SDK, que se puede descargar aquí: [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). Puede contratar servicios profesionales para crear el visor personalizado o hacer que su propio equipo de desarrollo web lo cree.
+To transition your viewers to the HTML5 platform, Scene7 offers the following options:
 
-**¿Qué sucede con los exploradores que no admiten HTML5?**
+1. Use one of the Scene7 out-of-box HTML5 viewers, examples of which can be found here: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+1. Configure one of the Scene7 out-of-box HTML5 viewers under the SPS application setup. This will allow you to customize certain behavior such as viewer size, transitions, zoom behavior, etc: [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
+1. Customize look and feel of the Scene7 out-of-box HTML5 viewers by modifying CSS to change visual design such as button artwork, placement, transparency, background colors, etc: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
+1. Create a custom HTML5 viewer from scratch using the SDK which can be downloaded here: [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). You can engage with professional services to build the custom viewer or have your own web development team build it.
 
-HTML5 es compatible con muchos dispositivos móviles y navegadores web, y sigue ganando terreno. Actualmente, aunque HTML5 no es compatible con Internet Explorer 8 o versiones posteriores, Scene7 ha innovado nuestra plataforma de visor HTML5 para ampliar la compatibilidad incluso a IE 7 e IE 8. Con la plataforma de visor HTML5 de Scene7, puede llegar a la gran mayoría de los usuarios de escritorio y móviles con una única plataforma de desarrollo.
+**What about browsers that do not support HTML5?**
 
-Los requisitos actuales del sistema a partir de la versión 2.2.1 del SDK para HTML5 son:
+HTML5 is supported across many mobile devices and web browsers, and continues to gain traction. Currently, even though HTML5 is not supported on Internet Explorer 8 or below, Scene7 has innovated our HTML5 viewer platform to extend support even to IE 7 and IE 8. With the Scene7 HTML5 viewer platform , you can reach the overwhelming majority of both desktop and mobile users with a single development platform.
 
-* Microsoft® Windows® XP o posterior, Macintosh® OS X 10.6 o posterior
-* Firefox 17, Safari 5.1, Chrome 23, Internet Explorer 7 o posterior
-* iOS 3.2.2 o posterior
-* Certificado en iPhone3 o posterior y iPad1 o posterior (exploradores nativos)
-* Android OS 2.2 o posterior
+Current system requirements as of the HTML5 SDK version 2.2.1 are:
 
-Para comprobar si su navegador es compatible con nuestra plataforma de visor HTML5, inicie el siguiente visor de ejemplo:
+* Microsoft® Windows® XP or later, Macintosh® OS X 10.6 or later
+* Firefox 17, Safari 5.1, Chrome 23, Internet Explorer 7 or later
+* iOS 3.2.2 or later
+* Certified on iPhone3 or later and iPad1 or later (native browsers)
+* Android OS 2.2 or later
+
+To check if your browser is compatible with our HTML5 viewer platform, launch the following example viewer:
 
 [https://s7d1.scene7.com/s7viewers/html5/flyout.html?asset=Scene7SharedAssets/Sample%20Image](https://s7d1.scene7.com/s7viewers/html5/flyout.html?asset=Scene7SharedAssets/Sample%20Image)
 
-Si ve la imagen ampliada pasando el ratón o arrastrando el dedo sobre la imagen principal, se trata de un navegador o dispositivo compatible.
+If you see the zoomed-in image by hovering your mouse or dragging your finger over the main image, then it is a supported browser/device.
 
-**¿Qué opciones tengo si quiero seguir en producción con mi visor DHTML existente?**
+**What options do I have if I want to stay live in production with my existing DHTML viewer?**
 
-Aunque todavía puede estar en producción con visores basados en DHTML, es importante tener en cuenta que no habrá mejoras, correcciones de errores ni atención al cliente después del 31 de enero de 2014. Por lo tanto, recomendamos encarecidamente a todos los clientes que migren a nuestra plataforma de visor HTML5 más sólida. . Sin embargo, si su situación comercial impide dicha migración antes de la fecha de EOL, tiene la opción de contratar servicios profesionales para ampliar el período de tiempo de mantenimiento admitido. Para obtener más información, póngase en contacto con su administrador de cuentas.
+Although you can still be live in production with DHTML-based viewers, it is important to note that there will be no enhancements, bug fixes nor customer care after January 31, 2014. Hence, we strongly advise all customers to migrate over to our more robust HTML5 viewer platform. . However, if your business situation prevents such a migration by the EOL date, you have the option to contract with professional services to extend the supported maintenance time period. For more information, please contact your account manager.
 
-**¿Con quién puedo contactar para obtener más información?**
+**Who do I contact for more information?**
 
-Si esta pregunta frecuente no responde a todas sus preguntas, [utilice al Admin Console para crear un caso de soporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) o póngase en contacto con su administrador de cuentas de Adobe.
+If this FAQ did not answer all of your questions, please [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
+ -->
