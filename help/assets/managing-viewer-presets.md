@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4265'
 ht-degree: 15%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 15%
 
 Un ajuste preestablecido de visor es una colección de ajustes que determinan la forma en que los usuarios vista los recursos de medios enriquecidos en las pantallas de sus equipos y en los dispositivos móviles. Si es un administrador, puede crear ajustes preestablecidos de visor. Los ajustes están disponibles para una matriz de opciones de configuración del visor. Por ejemplo, puede cambiar el tamaño de visualización del visor o el comportamiento de zoom.
 
-Para obtener instrucciones sobre cómo crear y personalizar sus propios ajustes preestablecidos de visor HTML5, consulte el *SDK de visor HTML5 de Adobe Scene7*. El SDK está disponible en el servidor de publicación IS incrustado en el propio SDK. Cada versión de biblioteca tiene su propia documentación de SDK incluida.
+<!-- OBSOLETE CONTENT  For instructions on creating and customizing your own HTML5 viewer presets, see the *Adobe Scene7 HTML5 Viewer SDK*. The SDK is available on the IS publish server embedded in the SDK itself. Each library version has its own SDK documentation included.
 
-Ruta: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
-Por ejemplo, SDK 3.5: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
+Path: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
+For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html) -->
 
-Consulte también la [Guía de referencia de visores de Adobe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 En esta sección se describe cómo crear, editar y administrar ajustes preestablecidos de visor. Puede aplicar un ajuste preestablecido de visor a un recurso cada vez que lo previsualización. Consulte [Aplicación de ajustes preestablecidos de visor](#applying-a-viewer-preset-to-an-asset).
 
@@ -39,7 +39,7 @@ En esta sección se describe cómo crear, editar y administrar ajustes preestabl
 
 Todos los visores integrados admiten la accesibilidad del teclado.
 
-Consulte también [Accesibilidad y navegación del teclado](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
+Consulte también [Accesibilidad y navegación del teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
 ## Administración de ajustes preestablecidos de visor {#managing-viewer-presets-1}
 
@@ -117,7 +117,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
     <ul>
      <li>Proporción de aspecto de 2:1.</li>
      <li>Se etiqueta con las palabras clave <code>equirectangular</code>, o <code>spherical</code> y <code>panorama</code>, o <code>spherical </code>y <code>panoramic</code>. Consulte <a href="/help/sites-authoring/tags.md">Uso de etiquetas</a>.</li>
-    </ul> <p>Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM "Panoramic Media".</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media: Scene7.</p> </td>
+    </ul> <p>Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM "Panoramic Media".</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media - Scene7.</p> </td>
   </tr>
   <tr>
    <td><strong>Recorte inteligente de vídeos</strong><br /> </td>
@@ -129,7 +129,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
   </tr>
   <tr>
    <td><strong>Vídeo 360</strong></td>
-   <td><p>Utilice el visor de vídeo 360/VR para representar vídeos equirectangulares para una experiencia de visualización envolvente de una sala, propiedad, ubicación, paisaje o procedimiento médico.</p> <p>Durante la reproducción en una pantalla plana, el usuario controla el ángulo de visualización; la reproducción en dispositivos móviles suele aprovechar los controles giroscópicos integrados.</p> <p>El visor incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media: Scene7.</p> </td>
+   <td><p>Utilice el visor de vídeo 360/VR para representar vídeos equirectangulares para una experiencia de visualización envolvente de una sala, propiedad, ubicación, paisaje o procedimiento médico.</p> <p>Durante la reproducción en una pantalla plana, el usuario controla el ángulo de visualización; la reproducción en dispositivos móviles suele aprovechar los controles giroscópicos integrados.</p> <p>El visor incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.</p> <p><strong>Importante</strong>: Este visor solo está disponible en el modo Dynamic Media - Scene7.</p> </td>
   </tr>
   <tr>
    <td><strong>Vídeo</strong></td>
@@ -152,13 +152,13 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 ### Lista de ajustes preestablecidos de visor predeterminados {#list-of-out-of-the-box-viewer-presets}
 
-En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos e integrados con Dynamic Media.
+En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
 
 Consulte también [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Para obtener información sobre las versiones compatibles del navegador web y del sistema operativo para visores, consulte las Notas de la versión de los visores.
 
-Consulte &quot;Notas de la versión de los visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consulte &quot;Notas de la versión de los visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 >[!NOTE]
 >
@@ -408,7 +408,7 @@ AEM muestra una amplia variedad de ajustes preestablecidos de visor al ver recur
 
 La creación de ajustes preestablecidos de visor permite aplicar varios ajustes a la vista e interactuar con los recursos. Sin embargo, no es necesario crear nuevos ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visor predeterminados y listos para usar que ya vienen con AEM Assets.
 
-Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (definido como **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Interactive Media y siempre que se previsualización una imagen o un vídeo.
+Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (definido como **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Medios interactivos y siempre que se previsualización una imagen o un vídeo.
 
 Algunos ajustes preestablecidos de visor tienen una configuración exclusiva que puede afectar al uso y al comportamiento general del visor. Según el ajuste preestablecido de visor que esté creando, es posible que desee tener en cuenta estas consideraciones especiales.
 
@@ -438,13 +438,13 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
       El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Simplemente configure o ajuste cualquier propiedad para ver instantáneamente el efecto que tiene en el visor con la muestra a la izquierda del editor.
 
-      Las propiedades de estilo CSS de cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización del *`<viewer name>`* visor&quot; de la [Guía de referencia de visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html). Por ejemplo, si está creando un ajuste preestablecido de visor de tipo `Mixed_Media`, consulte [Personalización de visor de medios mixtos](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
+      Las propiedades de estilo CSS de cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización del *`<viewer name>`* visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si está creando un ajuste preestablecido de visor de tipo `Mixed_Media`, consulte [Personalización de visor de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
 
    * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS a AEM Assets. Toque **[!UICONTROL Importar CSS]** debajo del menú desplegable **[!UICONTROL Tipo seleccionado]** (puede que necesite desplazar el editor visual hacia arriba para verlo) para encontrar el archivo CSS cargado y asociarlo al ajuste preestablecido del visor.
 
       Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de zoom, todas las reglas CSS importadas deben definirse con el nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-      Puede importar CSS arbitrario hecho a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* visor&quot; de la [Guía de referencia de visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html). Por ejemplo, si desea leer sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+      Puede importar CSS arbitrario hecho a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si desea leer sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
    >[!NOTE]
    >
    >Si prefiere editar la CSS directamente en su formulario sin procesar, pulse **[!UICONTROL Mostrar/Ocultar CSS]** debajo del menú desplegable Tipo seleccionado (puede que necesite desplazar el editor visual hacia arriba para verlo).
@@ -460,7 +460,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
    Muchos componentes del editor visual tienen una descripción detallada asociada. Estas descripciones aparecen en cuadros azules cuando se expande un componente para mostrar sus parámetros asociados.
 
-   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
+   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
@@ -549,7 +549,7 @@ Los ajustes preestablecidos de visor disponibles en la interfaz de usuario depen
 
 ## Ajustes preestablecidos del visor de publicaciones {#publishing-viewer-presets}
 
-Al activar (o activar) el estado de un ajuste preestablecido de visor, se muestra visible en el componente Dynamic Media, en el componente Interactive Media y siempre que se vista un recurso.
+Al activar (o activar) el estado de un ajuste preestablecido de visor, se hace visible en el componente Dynamic Media, el componente de medios interactivos y siempre que se vista un recurso.
 
 Sin embargo, para entregar* *un recurso con un ajuste preestablecido de visualizador, también se debe publicar el ajuste preestablecido de visualizador. Todos los ajustes preestablecidos de visualizador se deben activar *y *publicar para obtener la URL o el código incrustado de un recurso. Debe activar y publicar todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
 
@@ -616,4 +616,4 @@ Si ya ha publicado el recurso y el visualizador seleccionado, los botones **[!UI
 
 Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a su Aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). Consulte también [Incrustación del visor de vídeos en una página Web](/help/assets/embed-code.md).
 
-Si utiliza AEM como WCM, puede añadir recursos con los ajustes preestablecidos de visor directamente en la página. Consulte [Añadir recursos de Dynamic Media en páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Si utiliza AEM como WCM, puede añadir recursos con los ajustes preestablecidos de visor directamente en la página. Consulte [Añadir recursos de Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
