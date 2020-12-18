@@ -4,7 +4,7 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
 source-wordcount: '4243'
 ht-degree: 5%
@@ -39,9 +39,9 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
 
 * [!DNL Assets] y  [!DNL Dynamic Media] proporcionar varias mejoras de accesibilidad. Las mejoras están relacionadas con la navegación mediante el teclado, el uso de lectores de pantalla y la posibilidad de que los usuarios utilicen una tecnología de asistencia similar (AT). Consulte [[!DNL Assets] mejoras](#assets-6570) y [[!DNL Dynamic Media] mejoras](#dynamic-media-6570).
 
-* Configuración del cliente HTTP del modelo de datos de formulario para optimizar el rendimiento.
+* [Modelo de datos de formulario ](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) Configuración del cliente HTTP para optimizar el rendimiento.
 
-* Disponibilidad de la opción Restablecer para cada componente en el modo Diseño
+* [Disponibilidad de la opción Restablecer para cada ](../../help/forms/using/resize-using-layout-mode.md#resize-components) componente en el modo Diseño
 
 * [!DNL Experience Manager] 6.5 Service Pack 7 Forms mejora el rendimiento de:
 
@@ -507,7 +507,7 @@ Para recuperar la copia del tiempo de ejecución, Adobe recomienda sincronizar l
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
    * La validación del lado del servidor de Formulario adaptable falla cuando se utilizan funciones acumuladas como SUM, MAX y MIN. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
-   * La zona interactiva de una imagen interactiva de Dynamic Media no está visible al obtener una vista previa del recurso a través del visor de pancarta de ventas.
+   * La zona interactiva de una imagen interactiva de Dynamic Media no está visible al obtener una vista previa del recurso mediante el visor de pancarta de ventas.
 
 ## Paquetes y paquetes de contenido OSGi incluidos {#osgi-bundles-and-content-packages-included}
 
