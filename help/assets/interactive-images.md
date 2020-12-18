@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '4334'
+source-wordcount: '4330'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ El tutorial ayuda a ilustrar los pasos para integrar imágenes interactivas en s
 
 Pasos de imágenes interactivas:
 
-1. **(Opcional) Identificación de variables**  de puntos interactivos: si utiliza AEM Assets y Dynamic Media de forma independiente, inicio identificando las variables dinámicas utilizadas en la implementación de QuickView existente para que pueda introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de puntos interactivos](#optional-identifying-hotspot-variables).
+1. **(Opcional) Identificación de variables**  de puntos interactivos: si utiliza AEM Assets y Dynamic Media de forma independiente, identifique las variables dinámicas utilizadas en la implementación de vista rápida existente para que pueda introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de puntos interactivos](#optional-identifying-hotspot-variables).
 Sin embargo, si utiliza AEM Sites, AEM comercio electrónico o ambos, este paso no es necesario.
 Consulte [conceptos de comercio electrónico en AEM Assets](/help/sites-administering/concepts.md).
 
@@ -62,7 +62,7 @@ Consulte [Carga de un letrero de imagen](#uploading-an-image-banner).
    * Consulte [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
 
 1. **Añadir una imagen interactiva en el sitio web o en el sitio web en**
-AEMIsi utiliza AEM Sites, AEM comercio electrónico o ambos, puede agregar la imagen interactiva directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de medios dinámicos en páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+AEMIsi utiliza AEM Sites, AEM comercio electrónico o ambos, puede agregar la imagen interactiva directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de Dynamic Media a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Si utiliza AEM Assets y Dynamic Media de forma independiente, debe copiar el código incrustado en el sitio web y luego integrarlo con la vista rápida existente. Consulte [Integración de una imagen interactiva con su sitio Web](#integrating-an-interactive-image-with-your-website).
 Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integración de una imagen interactiva con una vista rápida](#integrating-an-interactive-image-with-an-existing-quickview) existente.
 
@@ -128,7 +128,7 @@ Considere los siguientes ejemplos de direcciones URL de Quickview y sus variable
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena productId= de consulta y es claramente un valor de SKU. Por lo tanto, nuestros puntos interactivos solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena de consulta productId= y es claramente un valor de SKU. Por lo tanto, nuestros puntos interactivos solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU único, que se encuentra en la ruta de URL.</p> </td>
@@ -328,7 +328,7 @@ Puede utilizar la Previsualización para ver cómo se verá la imagen interactiv
 Cuando esté satisfecho con la imagen interactiva, puede publicarla.
 Consulte [Incrustación del visor de imágenes o vídeos en una página Web](/help/assets/embed-code.md).
 Consulte [Vinculación de direcciones URL a la aplicación Web](/help/assets/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
-Consulte [Añadir recursos de medios dinámicos en páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Consulte [Añadir Dynamic Media Assets a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 **Previsualización de imágenes interactivas**
 
@@ -345,7 +345,7 @@ Consulte [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) par
 
 Una vez que haya cargado una imagen de letrero, agregado zonas interactivas a la imagen y publicado la imagen interactiva, estará listo para agregarla a la página del sitio web.
 
-Si es cliente de AEM Sites, puede agregar la imagen interactiva arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de medios dinámicos en páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Si es cliente de AEM Sites, puede agregar la imagen interactiva arrastrando el componente Medios interactivos a la página. Consulte [Añadir Dynamic Media Assets a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 Si es cliente independiente de AEM Assets, puede agregar manualmente la imagen interactiva a su sitio web, tal como se describe en esta sección.
 
@@ -377,9 +377,9 @@ La integración es tan sencilla como quitar la etiqueta `IMG` y reemplazarla por
 
 Para aplicar un &quot;recorte&quot; a una imagen interactiva de ventas para un entorno interactivo, puede incluir el atributo de configuración de imagen interactiva `ZoomView.iscommand` en la ruta, donde `ZoomView` es el componente al que llamar y `iscommand` es el comando &quot;recortar&quot; del servicio de imágenes que aplica.
 
-Consulte el atributo de configuración [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Consulte el atributo de configuración [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
 
-Consulte el comando [recortar](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) servicio de imágenes.
+Consulte el comando [recortar](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) servicio de imágenes.
 
 Ya está listo para integrar la imagen interactiva con una vista rápida existente en su sitio web.
 
