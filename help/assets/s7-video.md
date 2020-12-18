@@ -8,19 +8,19 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 55%
+source-wordcount: '1582'
+ht-degree: 54%
 
 ---
 
 
 # Vídeo {#video}
 
-Assets permite gestionar recursos de vídeo centralizados, donde puede cargar vídeos directamente en Recursos para codificarlos automáticamente en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Recursos para la creación de páginas.
+Assets proporciona administración centralizada de recursos de vídeo, donde puede cargar vídeos directamente en Recursos para codificarlos automáticamente en Dynamic Media Classic y acceder a los vídeos de Dynamic Media Classic directamente desde Recursos para la creación de páginas.
 
-La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas (detección de ancho de banda y dispositivo automático).
+La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas (detección de ancho de banda y dispositivos automáticos).
 
 * El componente **[!UICONTROL Scene7 Video]** realiza automáticamente la detección del ancho de banda y el dispositivo para reproducir el formato correcto y el vídeo de calidad correcta en equipos de escritorio, tabletas y dispositivos móviles.
 * Assets: puede incluir conjuntos de vídeos adaptables en lugar de solo recursos de vídeo únicos. Un conjunto de vídeos adaptables es un contenedor para todas las representaciones de vídeo necesarias para reproducir vídeo sin problemas en varias pantallas. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. Un conjunto de vídeos adaptables, junto con el componente de vídeo de S7, se utiliza para trasmitir vídeo adaptable en varias pantallas, incluidos equipos de escritorio, iOS, Android, Blackberry y dispositivos móviles de Windows.
@@ -60,7 +60,7 @@ Si necesita un flujo de trabajo o una versión para los recursos, primero debe c
 1. En AEM, acceda a los recursos de vídeo de WCM en la pestaña **[!UICONTROL Películas]** del buscador de contenido.
 1. Autor con componente **[!UICONTROL Scene7 Video]** o **[!UICONTROL Foundation Video]**.
 
-### Si va a cargar el vídeo en Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
+### Si está cargando el vídeo a Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 Si no necesita un flujo de trabajo ni crear versiones de los recursos, debe cargarlos en Scene7. El flujo de trabajo siguiente es el recomendado:
 
@@ -135,7 +135,7 @@ En la tabla siguiente se proporciona una comparación de alto nivel de capacidad
 | Enfoque | Primer enfoque de HTML5. Flash solo se utiliza para la alternativa no HTML5. | Flash en la mayoría de los equipos de escritorio. HTML5 se utiliza para móviles y tabletas. |
 | Entrega | Progresivo | Transmisión adaptable |
 | Seguimiento | Sí | Sí |
-| Capacidad de ampliación | Sí | Sí (con el SDK del visor de Scene7) |
+| Capacidad de ampliación | Sí | No |
 | Vídeo móvil | Sí | Sí |
 
 ### Configuración  {#setting-up}
