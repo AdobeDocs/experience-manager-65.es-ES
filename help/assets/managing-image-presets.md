@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: ae3e6b1c2d3dfa63b9ea5763ebedaa57f5c7bc85
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '3866'
+source-wordcount: '3828'
 ht-degree: 10%
 
 ---
@@ -407,7 +407,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Enfoque de imágenes</a>.
+     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">Enfoque de imágenes</a>.
     </div> </td>
   </tr>
   <tr>
@@ -427,7 +427,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr>
   <tr>
    <td><strong>Modificador de imagen</strong></td>
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la referencia del comando <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Protocolo del servidor de imágenes</a>.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la referencia del comando <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">Protocolo del servidor de imágenes</a>.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
     <ul>
      <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
      <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li>
@@ -444,7 +444,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
 
 ## Definición de opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
 
-Además de las opciones disponibles en las fichas Básico y Avanzado, puede definir modificadores de imagen para proporcionar más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes de Scene7 y se define en detalle en la [Referencia del protocolo HTTP](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html).
+Además de las opciones disponibles en las fichas Básico y Avanzado, puede definir modificadores de imagen para proporcionar más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes depende de la API de procesamiento de imágenes que se define en detalle en la [Referencia del protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
 A continuación se proporcionan algunos ejemplos básicos de lo que se puede hacer con los modificadores de imagen.
 
@@ -452,7 +452,7 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
 >
 >Algunos modificadores de imagen [no se pueden usar en AEM](#advanced-tab-options).
 
-* [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html) : invierte cada componente de color para obtener un efecto de imagen negativo.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) : invierte cada componente de color para obtener un efecto de imagen negativo.
 
    ```xml
    &op_invert=1
@@ -460,7 +460,7 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) : aplica un filtro de desenfoque a la imagen.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) : aplica un filtro de desenfoque a la imagen.
 
    ```xml
    &op_blur=7
@@ -476,7 +476,7 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_bright](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) : reduce o aumenta el brillo.
+* [op_bright](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) : reduce o aumenta el brillo.
 
    ```xml
    &op_brightness=58
@@ -484,7 +484,7 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
 
    ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) : ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) : ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
 
    ```xml
    opac=29
